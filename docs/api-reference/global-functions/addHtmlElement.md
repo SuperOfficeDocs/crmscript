@@ -30,5 +30,5 @@ Returns the element that was added.
 | id | Integer | The ID of this HTML element. Normally not relevant. |
 | name | String | The unique name of this HTML element. Used for accessing it later. |
 | type | Integer | The type of this element. Types are documented under bLogic. |
-| config | Map OR<br>String | The map containing the configuration for the HTML element.<br>The configuration string for the HTML element. Line based, same as configuration text for elements in Screen definition. |
+| config | Map OR<br>String | The map containing the configuration for the HTML element.<br>The configuration string for the HTML element. Line-based, same as configuration text for elements in Screen definition. |
 | position | Integer | Optional. The zero-based position of the element in the list of elements for the screen. |

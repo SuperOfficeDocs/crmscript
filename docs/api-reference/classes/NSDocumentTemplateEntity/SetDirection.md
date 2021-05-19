@@ -1,23 +1,33 @@
 ﻿---
-uid: crmscript_ref_NSDocumentTemplateEntity_SetDirection
+uid: crmscript_class_nsdocumenttemplateentity_setdirection
 title: SetDirection(DocTmplDirection direction)
+description: CRMScript method in the NSDocumentTemplateEntity class that sets the direction of a document template
 intellisense: NSDocumentTemplateEntity.SetDirection
-keywords: NSDocumentTemplateEntity, GetDirection
+keywords: NSDocumentTemplateEntity, GetDirection, SetDirection(DocTmplDirection direction), SetDirection(NSDocTmplDirection)
 so.topic: reference
 ---
 
-1 = incoming, 2 = outgoing, see EAppntDirection
+# SetDirection()
 
-**Parameter:** 
- - **direction** DocTmplDirection
-     - Enum: 0 = Unknown 
-     - Enum: 1 = Incoming 
-     - Enum: 2 = Outgoing 
-     - Enum: 3 = SaintAll 
+## Parameter
+
+| Parameter | Type | Description |
+|---|---|---|
+| direction | DocTmplDirection | |
+
+| Enum | Direction |
+|---|---|
+| 0 | Unknown |
+| 1 | Incoming |
+| 2 | Outgoing |
+| 3 | SaintAll |
+
+See EAppntDirection
+
+## Examples
 
 ```crmscript
 NSDocumentTemplateEntity thing;
 DocTmplDirection direction;
 thing.SetDirection(direction);
 ```
-

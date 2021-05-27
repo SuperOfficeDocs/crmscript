@@ -3,7 +3,7 @@ uid: crmscript_class_nsversioninfo_setcheckedindate
 title: SetCheckedInDate()
 description: CRMScript method in the NSVersionInfo class that sets the date that this version was checked in
 intellisense: NSVersionInfo.SetCheckedInDate
-keywords: NSVersionInfo, GetCheckedInDate SetCheckedInDate(DateTime)
+keywords: NSVersionInfo, GetCheckedInDate, SetCheckedInDate(DateTime)
 so.topic: reference
 ---
 

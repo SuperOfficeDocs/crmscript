@@ -15,3 +15,10 @@ Runs the query and aggregation and stores the results. You can choose between st
 
 * StatLib.execute(Parser p)
 * StatLib.execute(StatResult sr)
+
+## Parameters
+
+| Parameter | Type | Description |
+|---|---|---|
+| p | Parser | The instance to store the results in |
+| sr | StatResult | The instance to store the results in |

@@ -28,3 +28,31 @@ Returns a `String` object.
 |---|---|---|
 | byteArray | Byte[] OR<br>NSStream | The bytes containing a string |
 | codepage | String | Optional. The codepage to use |
+
+## Examples
+
+```crmscript!
+String squash = "yellow crook neck";
+String favSquash = String(squash);
+String winterSquash = String("butternut");
+printLine("Summer favorite: " + favSquash + "\nFall favorite: " + winterSquash);
+```
+
+```crmscript!
+String fallTreat = "Roasted pumpkin seeds are awesome";
+Byte[] secret = fallTreat.toByteArray();
+String jackO = String(secret);
+printLine(jackO);
+```
+
+```crmscript!
+String hot = "Ghost";
+NSStream stream = decodeBase64AsStream(encodeBase64(hot.toByteArray()));
+String hotPepper = String(stream);
+printLine("Insanely hot chili pepper: " + hotPepper);
+```
+
+For more examples, see the [String datatype section][1].
+
+<!-- Referenced links -->
+[1]: ../../datatypes/string-type.md

@@ -17,4 +17,4 @@ Should this SaleEntity be published and visible to strangers?
 
 | Parameter | Type | Description |
 |---|---|---|
-| isPublished | Bool | |
+| isPublished | Bool | Publication is published |

@@ -20,7 +20,7 @@ Returns the address as LocalizedField[][].
 | Parameter | Type | Description |
 |---|---|---|
 | personId | Integer | The person ID |
-| countryId | Integer | |
+| countryId | Integer | The country ID |
 
 ## Examples
 

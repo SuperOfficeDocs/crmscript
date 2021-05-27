@@ -17,7 +17,7 @@ The date that this version was checked in and became official
 
 | Parameter | Type | Description |
 |---|---|---|
-| checkedInDate | DateTime | |
+| checkedInDate | DateTime | The date that this version was checked in and became official |
 
 ## Examples
 

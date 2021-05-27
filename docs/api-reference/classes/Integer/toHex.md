@@ -1,5 +1,5 @@
 ---
-uid: crmscript_class_Integer_toHex
+uid: crmscript_class_integer_tohex
 title: Integer.toHex()
 description: CRMScript method in class Integer that converts it to a hexadecimal representation
 intellisense: Integer.toHex

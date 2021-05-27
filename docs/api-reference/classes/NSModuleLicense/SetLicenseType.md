@@ -15,7 +15,7 @@ The entire system, per database, or per associate.
 
 | Parameter | Type | Description |
 |---|---|---|
-| licenseType | LicenseType | |
+| licenseType | LicenseType | The module license type |
 
 ### Types
 

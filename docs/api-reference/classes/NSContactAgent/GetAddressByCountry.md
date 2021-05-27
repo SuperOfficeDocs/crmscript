@@ -15,8 +15,10 @@ Gets the contact's localized address (LocalizedField[][]).
 
 ## Parameters
 
+| Parameter | Type | Description |
+|---|---|---|
 | contactId | Integer | The contact ID |
-| countryId | Integer | |
+| countryId | Integer | The country ID |
 
 ## Examples
 

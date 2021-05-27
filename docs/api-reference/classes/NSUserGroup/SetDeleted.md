@@ -17,7 +17,7 @@ Deleted equal to true means that this is a user group that no longer can be sele
 
 | Parameter | Type | Description |
 |---|---|---|
-| deleted | Bool | |
+| deleted | Bool | True when a user group is soft-deleted and no longer seen by users. Not permitted to permanently delete a UserGroup. |
 
 ## Examples
 

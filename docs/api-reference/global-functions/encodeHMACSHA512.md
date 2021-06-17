@@ -4,6 +4,7 @@ intellisense: Void.encodeHMACSHA512
 langref: 1
 keywords: encodeHMACSHA512(String,String)
 so.topic: reference
+so.version: 9.2 R11
 ---
 
 

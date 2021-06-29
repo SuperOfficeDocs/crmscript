@@ -13,7 +13,7 @@ Array of ids containing usergroups that will have access to this connection.
 
 ```crmscript
 NSQuoteConnection thing;
-Integer[]userGroupAccessIds  = thing.GetUserGroupAccessIds();
+Integer[] userGroupAccessIds  = thing.GetUserGroupAccessIds();
 ```
 
 

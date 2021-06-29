@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSQuoteAgent_DeleteQuoteLines
-title: Void DeleteQuoteLines(Integer[]quoteLineIds)
+title: Void DeleteQuoteLines(Integer[] quoteLineIds)
 intellisense: NSQuoteAgent.DeleteQuoteLines
 keywords: NSQuoteAgent, DeleteQuoteLines
 so.topic: reference
@@ -15,7 +15,7 @@ Delete the QuoteLines in the SuperOffice database
 
 ```crmscript
 NSQuoteAgent agent;
-Integer[]quoteLineIds;
+Integer uoteLineIds;
 Void res = agent.DeleteQuoteLines(quoteLineIds);
 ```
 

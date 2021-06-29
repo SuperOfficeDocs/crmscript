@@ -13,7 +13,7 @@ All persons with this EmailAddress stored in db is listed here
 
 ```crmscript
 NSEMailAddress thing;
-Integer[]duplicatePersonIds  = thing.GetDuplicatePersonIds();
+Integer[] duplicatePersonIds  = thing.GetDuplicatePersonIds();
 ```
 
 

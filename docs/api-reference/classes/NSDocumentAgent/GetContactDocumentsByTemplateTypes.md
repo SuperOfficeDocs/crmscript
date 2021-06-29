@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSDocumentAgent_GetContactDocumentsByTemplateTypes
-title: Document[] GetContactDocumentsByTemplateTypes(Integer contactId, DateTime startTime, DateTime endTime, Integer count, Integer[]documentTemplateIds)
+title: Document[] GetContactDocumentsByTemplateTypes(Integer contactId, DateTime startTime, DateTime endTime, Integer count, Integer[] documentTemplateIds)
 intellisense: NSDocumentAgent.GetContactDocumentsByTemplateTypes
 keywords: NSDocumentAgent, GetContactDocumentsByTemplateTypes
 so.topic: reference
@@ -23,7 +23,7 @@ Integer contactId;
 DateTime startTime;
 DateTime endTime;
 Integer count;
-Integer[]documentTemplateIds;
+Integer[] documentTemplateIds;
 Document[] res = agent.GetContactDocumentsByTemplateTypes(contactId, startTime, endTime, count, documentTemplateIds);
 ```
 

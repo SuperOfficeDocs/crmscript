@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSSelectionAgent_GetSelectionMembersArchiveRows
-title: ArchiveListItem[]GetSelectionMembersArchiveRows(Integer selectionId, String select)
+title: ArchiveListItem[] GetSelectionMembersArchiveRows(Integer selectionId, String select)
 intellisense: NSSelectionAgent.GetSelectionMembersArchiveRows
 keywords: NSSelectionAgent, GetSelectionMembersArchiveRows
 so.topic: reference

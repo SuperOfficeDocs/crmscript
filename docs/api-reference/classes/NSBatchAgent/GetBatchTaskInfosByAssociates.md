@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSBatchAgent_GetBatchTaskInfosByAssociates
-title: BatchTaskInfo[] GetBatchTaskInfosByAssociates(Integer[]associateIds)
+title: BatchTaskInfo[] GetBatchTaskInfosByAssociates(Integer[] associateIds)
 intellisense: NSBatchAgent.GetBatchTaskInfosByAssociates
 keywords: NSBatchAgent, GetBatchTaskInfosByAssociates
 so.topic: reference
@@ -15,7 +15,7 @@ Get an array of BatchTaskInfo for the provided associate id's.
 
 ```crmscript
 NSBatchAgent agent;
-Integer[]associateIds;
+Integer[] associateIds;
 BatchTaskInfo[] res = agent.GetBatchTaskInfosByAssociates(associateIds);
 ```
 

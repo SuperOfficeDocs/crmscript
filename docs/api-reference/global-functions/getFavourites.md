@@ -1,5 +1,5 @@
 ---
-description: Integer[]getFavourites(String table)
+description: Integer[] getFavourites(String table)
 intellisense: Void.getFavourites
 langref: 1
 keywords: getFavourites(String)

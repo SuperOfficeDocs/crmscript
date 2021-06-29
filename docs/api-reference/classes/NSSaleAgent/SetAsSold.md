@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSSaleAgent_SetAsSold
-title: Void SetAsSold(Integer[]saleIds)
+title: Void SetAsSold(Integer[] saleIds)
 intellisense: NSSaleAgent.SetAsSold
 keywords: NSSaleAgent, SetAsSold
 so.topic: reference

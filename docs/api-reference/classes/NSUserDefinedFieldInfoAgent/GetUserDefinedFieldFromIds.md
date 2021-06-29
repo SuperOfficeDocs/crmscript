@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSUserDefinedFieldInfoAgent_GetUserDefinedFieldFromIds
-title: UserDefinedFieldInfo[] GetUserDefinedFieldFromIds(Integer[]ids)
+title: UserDefinedFieldInfo[] GetUserDefinedFieldFromIds(Integer[] ids)
 intellisense: NSUserDefinedFieldInfoAgent.GetUserDefinedFieldFromIds
 keywords: NSUserDefinedFieldInfoAgent, GetUserDefinedFieldFromIds
 so.topic: reference
@@ -15,7 +15,7 @@ Return an given array of user defined field identified by the ids.
 
 ```crmscript
 NSUserDefinedFieldInfoAgent agent;
-Integer[]ids;
+Integer[] ids;
 UserDefinedFieldInfo[] res = agent.GetUserDefinedFieldFromIds(ids);
 ```
 

@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSPreferenceAgent_DeletePreferences
-title: Void DeletePreferences(Integer[]ids)
+title: Void DeletePreferences(Integer[] ids)
 intellisense: NSPreferenceAgent.DeletePreferences
 keywords: NSPreferenceAgent, DeletePreferences
 so.topic: reference
@@ -15,7 +15,7 @@ Delete some preferences by id
 
 ```crmscript
 NSPreferenceAgent agent;
-Integer[]ids;
+Integer[] ids;
 Void res = agent.DeletePreferences(ids);
 ```
 

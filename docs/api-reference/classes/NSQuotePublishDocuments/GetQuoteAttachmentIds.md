@@ -13,7 +13,7 @@ Array of id's of any attachments (standard + custom for this version)
 
 ```crmscript
 NSQuotePublishDocuments thing;
-Integer[]quoteAttachmentIds  = thing.GetQuoteAttachmentIds();
+Integer[] quoteAttachmentIds  = thing.GetQuoteAttachmentIds();
 ```
 
 

@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSPreferenceAgent_DeletePrefDescLinesByPrefDescIds
-title: Void DeletePrefDescLinesByPrefDescIds(Integer[]prefDescIds)
+title: Void DeletePrefDescLinesByPrefDescIds(Integer[] prefDescIds)
 intellisense: NSPreferenceAgent.DeletePrefDescLinesByPrefDescIds
 keywords: NSPreferenceAgent, DeletePrefDescLinesByPrefDescIds
 so.topic: reference
@@ -15,7 +15,7 @@ Delete the PrefDescLines associated with Preference Description Ids in the Super
 
 ```crmscript
 NSPreferenceAgent agent;
-Integer[]prefDescIds;
+Integer[] prefDescIds;
 Void res = agent.DeletePrefDescLinesByPrefDescIds(prefDescIds);
 ```
 

@@ -13,7 +13,7 @@ An array of ids with chat topics that this user is a member of
 
 ```crmscript
 NSChatPresence thing;
-Integer[]chatTopics  = thing.GetChatTopics();
+Integer[] chatTopics  = thing.GetChatTopics();
 ```
 
 

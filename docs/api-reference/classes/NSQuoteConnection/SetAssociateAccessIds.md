@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSQuoteConnection_SetAssociateAccessIds
-title: SetAssociateAccessIds(Integer[]associateAccessIds)
+title: SetAssociateAccessIds(Integer[] associateAccessIds)
 intellisense: NSQuoteConnection.SetAssociateAccessIds
 keywords: NSQuoteConnection, GetAssociateAccessIds
 so.topic: reference
@@ -13,7 +13,7 @@ Array of ids containing associates that will have access to this connection.
 
 ```crmscript
 NSQuoteConnection thing;
-Integer[]associateAccessIds;
+Integer[] associateAccessIds;
 thing.SetAssociateAccessIds(associateAccessIds);
 ```
 

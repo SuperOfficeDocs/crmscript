@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSDocumentAgent_GetPersonDocumentsByTemplateTypes
-title: Document[] GetPersonDocumentsByTemplateTypes(Integer personId, Bool includeProjectDocuments, DateTime startTime, DateTime endTime, Integer count, Integer[]documentTemplateIds)
+title: Document[] GetPersonDocumentsByTemplateTypes(Integer personId, Bool includeProjectDocuments, DateTime startTime, DateTime endTime, Integer count, Integer[] documentTemplateIds)
 intellisense: NSDocumentAgent.GetPersonDocumentsByTemplateTypes
 keywords: NSDocumentAgent, GetPersonDocumentsByTemplateTypes
 so.topic: reference
@@ -25,7 +25,7 @@ Bool includeProjectDocuments;
 DateTime startTime;
 DateTime endTime;
 Integer count;
-Integer[]documentTemplateIds;
+Integer[] documentTemplateIds;
 Document[] res = agent.GetPersonDocumentsByTemplateTypes(personId, includeProjectDocuments, startTime, endTime, count, documentTemplateIds);
 ```
 

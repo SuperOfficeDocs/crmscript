@@ -15,7 +15,6 @@ Delete the QuoteLines in the SuperOffice database
 
 ```crmscript
 NSQuoteAgent agent;
-Integer uoteLineIds;
+Integer quoteLineIds;
 Void res = agent.DeleteQuoteLines(quoteLineIds);
 ```
-

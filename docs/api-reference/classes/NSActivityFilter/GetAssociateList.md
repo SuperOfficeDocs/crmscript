@@ -13,5 +13,5 @@ The list of associates to filter on
 
 ```crmscript
 NSActivityFilter thing;
-SelectableMDOListItem[] associateList  = thing.GetAssociateList();
+NSSelectableMDOListItem[] associateList  = thing.GetAssociateList();
 ```

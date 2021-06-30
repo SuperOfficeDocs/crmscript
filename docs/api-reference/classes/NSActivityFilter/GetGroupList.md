@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSActivityFilter_GetGroupList
-title: SelectableMDOListItem[] GetGroupList()
+title: NSSelectableMDOListItem[] GetGroupList()
 intellisense: NSActivityFilter.GetGroupList
 keywords: NSActivityFilter, GetGroupList
 so.topic: reference
@@ -15,5 +15,4 @@ The list of groups to filter on
 NSActivityFilter thing;
 SelectableMDOListItem[] groupList  = thing.GetGroupList();
 ```
-
 

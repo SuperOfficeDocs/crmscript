@@ -8,11 +8,10 @@ so.topic: reference
 
 The list of groups to filter on
 
-**Returns:** SelectableMDOListItem[]
+**Returns:** NSSelectableMDOListItem[]
 
 
 ```crmscript
 NSActivityFilter thing;
 SelectableMDOListItem[] groupList  = thing.GetGroupList();
 ```
-

@@ -13,5 +13,5 @@ The list of groups to filter on
 
 ```crmscript
 NSActivityFilter thing;
-SelectableMDOListItem[] groupList  = thing.GetGroupList();
+NSSelectableMDOListItem[] groupList  = thing.GetGroupList();
 ```

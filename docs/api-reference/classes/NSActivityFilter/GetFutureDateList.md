@@ -8,12 +8,11 @@ so.topic: reference
 
 The list of future date selections. This is a static MDO list with standard values.
 
-**Returns:** MDOListItem[]
+**Returns:** NSMDOListItem[]
 
 
 ```crmscript
 NSActivityFilter thing;
 MDOListItem[] futureDateList  = thing.GetFutureDateList();
 ```
-
 

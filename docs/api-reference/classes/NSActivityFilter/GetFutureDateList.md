@@ -13,6 +13,5 @@ The list of future date selections. This is a static MDO list with standard valu
 
 ```crmscript
 NSActivityFilter thing;
-MDOListItem[] futureDateList  = thing.GetFutureDateList();
+NSMDOListItem[] futureDateList  = thing.GetFutureDateList();
 ```
-

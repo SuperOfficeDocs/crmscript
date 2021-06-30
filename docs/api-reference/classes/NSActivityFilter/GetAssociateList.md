@@ -8,11 +8,10 @@ so.topic: reference
 
 The list of associates to filter on
 
-**Returns:** SelectableMDOListItem[]
+**Returns:** NSSelectableMDOListItem[]
 
 
 ```crmscript
 NSActivityFilter thing;
 SelectableMDOListItem[] associateList  = thing.GetAssociateList();
 ```
-

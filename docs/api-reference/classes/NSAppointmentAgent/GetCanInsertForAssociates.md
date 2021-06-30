@@ -25,5 +25,5 @@ Returns an array of Bool corresponding to the associate array input parameter.
 ```crmscript
 NSAppointmentAgent agent;
 Integer[] associateIds;
-Boolean[] res = agent.GetCanInsertForAssociates(associateIds);
+Bool[] res = agent.GetCanInsertForAssociates(associateIds);
 ```

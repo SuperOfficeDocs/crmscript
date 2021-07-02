@@ -16,7 +16,7 @@ Accepting an appointment invitation and send an email confirmation to the meetin
      - Enum: 2 = ThisAndForward 
      - Enum: 9 = StopRecurrence 
 
-**Returns:** Updated AppointmentEntity
+**Returns:** Updated NSAppointmentEntity
 
 ```crmscript
 NSAppointmentAgent agent;

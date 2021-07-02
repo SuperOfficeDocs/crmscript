@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSPersonAgent_GetColleagues
-title: Person[] GetColleagues()
+title: NSPerson[] GetColleagues()
 intellisense: NSPersonAgent.GetColleagues
 keywords: NSPersonAgent, GetColleagues
 so.topic: reference
@@ -13,6 +13,6 @@ Gets the persons working in the same company as the logged on user.
 
 ```crmscript
 NSPersonAgent agent;
-Person[] res = agent.GetColleagues();
+NSPerson[] res = agent.GetColleagues();
 ```
 

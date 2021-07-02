@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSDashboardAgent_CreateNewFromTemplate
-title: DashboardTile CreateNewFromTemplate(Integer dashboardTileId, String caption, String description, Integer selectionId, VisibleFor[] visibleFor)
+title: DashboardTile CreateNewFromTemplate(Integer dashboardTileId, String caption, String description, Integer selectionId, NSVisibleFor[] visibleFor)
 intellisense: NSDashboardAgent.CreateNewFromTemplate
 keywords: NSDashboardAgent, CreateNewFromTemplate
 so.topic: reference
@@ -23,7 +23,7 @@ Integer dashboardTileId;
 String caption;
 String description;
 Integer selectionId;
-VisibleFor[] visibleFor;
+NSVisibleFor[] visibleFor;
 DashboardTile res = agent.CreateNewFromTemplate(dashboardTileId, caption, description, selectionId, visibleFor);
 ```
 

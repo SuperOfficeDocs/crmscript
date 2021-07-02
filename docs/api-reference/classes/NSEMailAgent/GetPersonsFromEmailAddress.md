@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSEMailAgent_GetPersonsFromEmailAddress
-title: Person[] GetPersonsFromEmailAddress(String emailAddress)
+title: NSPerson[] GetPersonsFromEmailAddress(String emailAddress)
 intellisense: NSEMailAgent.GetPersonsFromEmailAddress
 keywords: NSEMailAgent, GetPersonsFromEmailAddress
 so.topic: reference

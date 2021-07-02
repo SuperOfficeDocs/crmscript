@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSEMailAgent_CreateEMailFromDocumentEntity
-title: EMailEntity CreateEMailFromDocumentEntity(DocumentEntity documentEntity)
+title: NSEMailEntity CreateEMailFromDocumentEntity(NSDocumentEntity documentEntity)
 intellisense: NSEMailAgent.CreateEMailFromDocumentEntity
 keywords: NSEMailAgent, CreateEMailFromDocumentEntity
 so.topic: reference
@@ -11,11 +11,11 @@ Get an e-mail based on the provided DocumentEntity
 **Parameters:**
  - **documentEntity** DocumentEntity data
 
-**Returns:** The e-mail
+**Returns:** NSEMailEntity
 
 ```crmscript
 NSEMailAgent agent;
-DocumentEntity documentEntity;
-EMailEntity res = agent.CreateEMailFromDocumentEntity(documentEntity);
+NSDocumentEntity documentEntity;
+NSEMailEntity res = agent.CreateEMailFromDocumentEntity(documentEntity);
 ```
 

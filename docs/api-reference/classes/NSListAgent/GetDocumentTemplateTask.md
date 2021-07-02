@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSListAgent_GetDocumentTemplateTask
-title: Task GetDocumentTemplateTask(Integer documentTemplateId)
+title: NSTask GetDocumentTemplateTask(Integer documentTemplateId)
 intellisense: NSListAgent.GetDocumentTemplateTask
 keywords: NSListAgent, GetDocumentTemplateTask
 so.topic: reference
@@ -16,6 +16,6 @@ Returns a Document Template list item as a TaskListItem. The appointment's task 
 ```crmscript
 NSListAgent agent;
 Integer documentTemplateId;
-Task res = agent.GetDocumentTemplateTask(documentTemplateId);
+NSTask res = agent.GetDocumentTemplateTask(documentTemplateId);
 ```
 

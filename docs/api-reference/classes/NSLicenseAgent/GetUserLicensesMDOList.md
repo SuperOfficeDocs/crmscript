@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSLicenseAgent_GetUserLicensesMDOList
-title: SelectableMDOListItem[] GetUserLicensesMDOList()
+title: NSSelectableMDOListItem[] GetUserLicensesMDOList()
 intellisense: NSLicenseAgent.GetUserLicensesMDOList
 keywords: NSLicenseAgent, GetUserLicensesMDOList
 so.topic: reference
@@ -9,10 +9,10 @@ so.topic: reference
 Get all licenses in a MDOListItem structure.
 
 
-**Returns:** Hierarchical structure of user licenses.
+**Returns:** NSSelectableMDOListItem[]
 
 ```crmscript
 NSLicenseAgent agent;
-SelectableMDOListItem[] res = agent.GetUserLicensesMDOList();
+NSSelectableMDOListItem[] res = agent.GetUserLicensesMDOList();
 ```
 

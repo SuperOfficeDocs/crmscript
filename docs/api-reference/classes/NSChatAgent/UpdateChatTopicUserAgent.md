@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSChatAgent_UpdateChatTopicUserAgent
-title: ChatTopicAgent UpdateChatTopicUserAgent(Integer chatTopicId, String username, ChatTopicAgent useragent)
+title: NSChatTopicAgent UpdateChatTopicUserAgent(Integer chatTopicId, String username, NSChatTopicAgent useragent)
 intellisense: NSChatAgent.UpdateChatTopicUserAgent
 keywords: NSChatAgent, UpdateChatTopicUserAgent
 so.topic: reference
@@ -19,7 +19,7 @@ Update a user's role in a chat topic
 NSChatAgent agent;
 Integer chatTopicId;
 String username;
-ChatTopicAgent useragent;
-ChatTopicAgent res = agent.UpdateChatTopicUserAgent(chatTopicId, username, useragent);
+NSChatTopicAgent useragent;
+NSChatTopicAgent res = agent.UpdateChatTopicUserAgent(chatTopicId, username, useragent);
 ```
 

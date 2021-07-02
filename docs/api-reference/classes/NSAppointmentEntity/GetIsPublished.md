@@ -6,7 +6,7 @@ keywords: NSAppointmentEntity, GetIsPublished
 so.topic: reference
 ---
 
-Should this AppointmentEntity be published and visible to strangers?
+Should this NSAppointmentEntity be published and visible to strangers?
 
 **Returns:** Bool
 

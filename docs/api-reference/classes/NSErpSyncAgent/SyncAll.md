@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSErpSyncAgent_SyncAll
-title: PluginResponse SyncAll()
+title: NSPluginResponse SyncAll()
 intellisense: NSErpSyncAgent.SyncAll
 keywords: NSErpSyncAgent, SyncAll
 so.topic: reference
@@ -13,6 +13,6 @@ Sync all active connections
 
 ```crmscript
 NSErpSyncAgent agent;
-PluginResponse res = agent.SyncAll();
+NSPluginResponse res = agent.SyncAll();
 ```
 

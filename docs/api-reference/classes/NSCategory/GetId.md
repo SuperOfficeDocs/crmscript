@@ -8,7 +8,7 @@ so.topic: reference
 
 Get the primary key (id) for the Category
 
-**Returns:** Integer Category id.
+**Returns:** Integer
 
 ```crmscript
 NSCategory thing;

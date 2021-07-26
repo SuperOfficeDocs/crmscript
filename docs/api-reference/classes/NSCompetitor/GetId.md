@@ -8,7 +8,7 @@ so.topic: reference
 
 Get the primary key (id) for the Competitor
 
-**Returns:** Integer Competitor id.
+**Returns:** Integer
 
 ```crmscript
 NSCompetitor thing;

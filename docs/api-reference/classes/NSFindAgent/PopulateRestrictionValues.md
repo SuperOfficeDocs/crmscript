@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSFindAgent_PopulateRestrictionValues
-title: ArchiveRestrictionInfo[] PopulateRestrictionValues(ArchiveRestrictionInfo[] restrictions)
+title: NSArchiveRestrictionInfo[] PopulateRestrictionValues(NSArchiveRestrictionInfo[] restrictions)
 intellisense: NSFindAgent.PopulateRestrictionValues
 keywords: NSFindAgent, PopulateRestrictionValues
 so.topic: reference
@@ -15,7 +15,7 @@ Take an incoming set of Restrictions (name + operator + any user-entered values)
 
 ```crmscript
 NSFindAgent agent;
-ArchiveRestrictionInfo[] restrictions;
-ArchiveRestrictionInfo[] res = agent.PopulateRestrictionValues(restrictions);
+NSArchiveRestrictionInfo[] restrictions;
+NSArchiveRestrictionInfo[] res = agent.PopulateRestrictionValues(restrictions);
 ```
 

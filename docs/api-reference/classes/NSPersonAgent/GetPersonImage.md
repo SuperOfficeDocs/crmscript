@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSPersonAgent_GetPersonImage
-title: Image GetPersonImage(Integer personId)
+title: NSImage GetPersonImage(Integer personId)
 intellisense: NSPersonAgent.GetPersonImage
 keywords: NSPersonAgent, GetPersonImage
 so.topic: reference
@@ -16,6 +16,6 @@ Returns the person image that is displayed in the CRM application.
 ```crmscript
 NSPersonAgent agent;
 Integer personId;
-Image res = agent.GetPersonImage(personId);
+NSImage res = agent.GetPersonImage(personId);
 ```
 

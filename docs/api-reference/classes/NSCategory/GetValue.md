@@ -8,7 +8,7 @@ so.topic: reference
 
 Get the name of the Category.
 
-**Returns:** String Category name.
+**Returns:** String
 
 ```crmscript
 NSCategory thing;

@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSErpSyncAgent_ForceResync
-title: PluginResponse ForceResync(Integer erpConnectionId, Integer[] internalKeyIds)
+title: NSPluginResponse ForceResync(Integer erpConnectionId, Integer[] internalKeyIds)
 intellisense: NSErpSyncAgent.ForceResync
 keywords: NSErpSyncAgent, ForceResync
 so.topic: reference
@@ -18,6 +18,6 @@ Force resync from CRM or given Erp connection to all other connections
 NSErpSyncAgent agent;
 Integer erpConnectionId;
 Integer[] internalKeyIds;
-PluginResponse res = agent.ForceResync(erpConnectionId, internalKeyIds);
+NSPluginResponse res = agent.ForceResync(erpConnectionId, internalKeyIds);
 ```
 

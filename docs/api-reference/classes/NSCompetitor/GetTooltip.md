@@ -8,7 +8,7 @@ so.topic: reference
 
 Get the tooltip description for the Competitor list item.
 
-**Returns:** String Competitor tooltip description.
+**Returns:** String
 
 ```crmscript
 NSCompetitor thing;

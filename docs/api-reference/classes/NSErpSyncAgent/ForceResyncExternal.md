@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSErpSyncAgent_ForceResyncExternal
-title: PluginResponse ForceResyncExternal(Integer erpConnectionId, Integer erpActorType, String[] externalKeys)
+title: NSPluginResponse ForceResyncExternal(Integer erpConnectionId, Integer erpActorType, String[] externalKeys)
 intellisense: NSErpSyncAgent.ForceResyncExternal
 keywords: NSErpSyncAgent, ForceResyncExternal
 so.topic: reference
@@ -28,6 +28,6 @@ NSErpSyncAgent agent;
 Integer erpConnectionId;
 Integer erpActorType;
 String[] externalKeys;
-PluginResponse res = agent.ForceResyncExternal(erpConnectionId, erpActorType, externalKeys);
+NSPluginResponse res = agent.ForceResyncExternal(erpConnectionId, erpActorType, externalKeys);
 ```
 

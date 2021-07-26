@@ -6,7 +6,7 @@ keywords: NSLicenseAgent, GetUserLicensesMDOList
 so.topic: reference
 ---
 
-Get all licenses in a MDOListItem structure.
+Get all licenses in a NSMDOListItem structure.
 
 
 **Returns:** NSSelectableMDOListItem[]

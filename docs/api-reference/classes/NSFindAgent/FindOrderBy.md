@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSFindAgent_FindOrderBy
-title: FindResults FindOrderBy(String storageType, String providerName, String storageKey, Integer pageSize, Integer pageNumber, ArchiveOrderByInfo[] orderBy)
+title: FindResults FindOrderBy(String storageType, String providerName, String storageKey, Integer pageSize, Integer pageNumber, NSArchiveOrderByInfo[] orderBy)
 intellisense: NSFindAgent.FindOrderBy
 keywords: NSFindAgent, FindOrderBy
 so.topic: reference
@@ -25,7 +25,7 @@ String providerName;
 String storageKey;
 Integer pageSize;
 Integer pageNumber;
-ArchiveOrderByInfo[] orderBy;
+NSArchiveOrderByInfo[] orderBy;
 FindResults res = agent.FindOrderBy(storageType, providerName, storageKey, pageSize, pageNumber, orderBy);
 ```
 

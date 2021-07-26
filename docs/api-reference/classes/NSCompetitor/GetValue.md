@@ -8,7 +8,7 @@ so.topic: reference
 
 Get the name of the Competitor.
 
-**Returns:** String Competitor name.
+**Returns:** String
 
 ```crmscript
 NSCompetitor thing;

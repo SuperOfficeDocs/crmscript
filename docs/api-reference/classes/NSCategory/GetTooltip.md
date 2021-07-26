@@ -8,7 +8,7 @@ so.topic: reference
 
 Get the tooltip description for the Category list item.
 
-**Returns:** String Category tooltip description.
+**Returns:** String
 
 ```crmscript
 NSCategory thing;

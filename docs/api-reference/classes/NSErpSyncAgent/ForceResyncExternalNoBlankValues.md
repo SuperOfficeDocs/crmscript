@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSErpSyncAgent_ForceResyncExternalNoBlankValues
-title: PluginResponse ForceResyncExternalNoBlankValues(Integer erpConnectionId, Integer erpActorType, String[] externalKeys)
+title: NSPluginResponse ForceResyncExternalNoBlankValues(Integer erpConnectionId, Integer erpActorType, String[] externalKeys)
 intellisense: NSErpSyncAgent.ForceResyncExternalNoBlankValues
 keywords: NSErpSyncAgent, ForceResyncExternalNoBlankValues
 so.topic: reference
@@ -28,6 +28,6 @@ NSErpSyncAgent agent;
 Integer erpConnectionId;
 Integer erpActorType;
 String[] externalKeys;
-PluginResponse res = agent.ForceResyncExternalNoBlankValues(erpConnectionId, erpActorType, externalKeys);
+NSPluginResponse res = agent.ForceResyncExternalNoBlankValues(erpConnectionId, erpActorType, externalKeys);
 ```
 

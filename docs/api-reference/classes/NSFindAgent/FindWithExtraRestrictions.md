@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSFindAgent_FindWithExtraRestrictions
-title: FindResults FindWithExtraRestrictions(String storageType, String providerName, String storageKey, ArchiveRestrictionInfo[] extraRestrictions, ArchiveOrderByInfo[] orderBy, String[] desiredColumns, Integer pageSize, Integer pageNumber)
+title: FindResults FindWithExtraRestrictions(String storageType, String providerName, String storageKey, NSArchiveRestrictionInfo[] extraRestrictions, NSArchiveOrderByInfo[] orderBy, String[] desiredColumns, Integer pageSize, Integer pageNumber)
 intellisense: NSFindAgent.FindWithExtraRestrictions
 keywords: NSFindAgent, FindWithExtraRestrictions
 so.topic: reference
@@ -25,8 +25,8 @@ NSFindAgent agent;
 String storageType;
 String providerName;
 String storageKey;
-ArchiveRestrictionInfo[] extraRestrictions;
-ArchiveOrderByInfo[] orderBy;
+NSArchiveRestrictionInfo[] extraRestrictions;
+NSArchiveOrderByInfo[] orderBy;
 String[] desiredColumns;
 Integer pageSize;
 Integer pageNumber;

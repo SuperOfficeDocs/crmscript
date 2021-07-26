@@ -6,9 +6,9 @@ keywords: NSCustomerLanguage, GetId
 so.topic: reference
 ---
 
-Get the primary key (id) for the CustomerLanguage
+Get the primary key (id) for the NSCustomerLanguage
 
-**Returns:** Integer CustomerLanguage id.
+**Returns:** Integer NSCustomerLanguage id.
 
 ```crmscript
 NSCustomerLanguage thing;

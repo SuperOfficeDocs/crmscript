@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSFindAgent_GetDefaultOrderByFromDesiredColumns
-title: ArchiveOrderByInfo[] GetDefaultOrderByFromDesiredColumns(String providerName, String[] desiredColumns)
+title: NSArchiveOrderByInfo[] GetDefaultOrderByFromDesiredColumns(String providerName, String[] desiredColumns)
 intellisense: NSFindAgent.GetDefaultOrderByFromDesiredColumns
 keywords: NSFindAgent, GetDefaultOrderByFromDesiredColumns
 so.topic: reference
@@ -18,6 +18,6 @@ Calculate the default orderby columns for a given provider and a set of desired 
 NSFindAgent agent;
 String providerName;
 String[] desiredColumns;
-ArchiveOrderByInfo[] res = agent.GetDefaultOrderByFromDesiredColumns(providerName, desiredColumns);
+NSArchiveOrderByInfo[] res = agent.GetDefaultOrderByFromDesiredColumns(providerName, desiredColumns);
 ```
 

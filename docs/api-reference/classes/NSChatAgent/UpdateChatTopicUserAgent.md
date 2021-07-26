@@ -13,7 +13,7 @@ Update a user's role in a chat topic
  - **username** Associate username or associate id to get.
  - **useragent** User's updated role within the chat topic.
 
-**Returns:** The user's role within the chat topic.
+**Returns:** NSChatTopicAgent
 
 ```crmscript
 NSChatAgent agent;

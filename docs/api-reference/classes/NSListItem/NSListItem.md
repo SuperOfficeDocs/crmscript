@@ -6,7 +6,7 @@ keywords: NSListItem
 so.topic: reference
 ---
 
-Lightweight generic list item - similar to MDOListItem but without child items and stuff
+Lightweight generic list item - similar to NSMDOListItem but without child items and stuff
 
 1. autolist 
 

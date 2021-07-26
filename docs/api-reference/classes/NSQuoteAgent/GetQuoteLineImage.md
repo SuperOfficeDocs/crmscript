@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSQuoteAgent_GetQuoteLineImage
-title: Image GetQuoteLineImage(Integer quoteLineId, Integer rank)
+title: NSImage GetQuoteLineImage(Integer quoteLineId, Integer rank)
 intellisense: NSQuoteAgent.GetQuoteLineImage
 keywords: NSQuoteAgent, GetQuoteLineImage
 so.topic: reference
@@ -18,6 +18,6 @@ Gets an image connected to a quoteline, either from the ERPProvider or from the 
 NSQuoteAgent agent;
 Integer quoteLineId;
 Integer rank;
-Image res = agent.GetQuoteLineImage(quoteLineId, rank);
+NSImage res = agent.GetQuoteLineImage(quoteLineId, rank);
 ```
 

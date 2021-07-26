@@ -12,7 +12,7 @@ Request to send the session to another user. If the session does not belong to t
  - **chatSessionId** id of the chat session to send
  - **toAssociate** Associate username or associate id to send session to.
 
-**Returns:** The updated chat session
+**Returns:** NSChatSessionEntity
 
 ```crmscript
 NSChatAgent agent;

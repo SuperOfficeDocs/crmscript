@@ -6,7 +6,7 @@ keywords: NSListAgent, GetTicketPriorityList
 so.topic: reference
 ---
 
-Gets a vector of TicketPriority objects.
+Gets a vector of NSTicketPriority objects.
 
 **Parameters:**
  - **ticketPriorityIds** The identifiers of the NSTicketPriority objects

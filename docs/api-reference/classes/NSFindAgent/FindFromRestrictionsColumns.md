@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSFindAgent_FindFromRestrictionsColumns
-title: FindResults FindFromRestrictionsColumns(ArchiveRestrictionInfo[] restrictions, String providerName, String[] desiredColumns, Integer pageSize, Integer pageNumber)
+title: FindResults FindFromRestrictionsColumns(NSArchiveRestrictionInfo[] restrictions, String providerName, String[] desiredColumns, Integer pageSize, Integer pageNumber)
 intellisense: NSFindAgent.FindFromRestrictionsColumns
 keywords: NSFindAgent, FindFromRestrictionsColumns
 so.topic: reference
@@ -19,7 +19,7 @@ Execute a Find operation and return a page of results. <para/>The criteria for t
 
 ```crmscript
 NSFindAgent agent;
-ArchiveRestrictionInfo[] restrictions;
+NSArchiveRestrictionInfo[] restrictions;
 String providerName;
 String[] desiredColumns;
 Integer pageSize;

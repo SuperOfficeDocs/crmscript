@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSSelectionAgent_CreateNewEntry
-title: Integer CreateNewEntry(DuplicateEntry duplicate)
+title: Integer CreateNewEntry(NSDuplicateEntry duplicate)
 intellisense: NSSelectionAgent.CreateNewEntry
 keywords: NSSelectionAgent, CreateNewEntry
 so.topic: reference
@@ -15,7 +15,7 @@ Creates a new selection based on external duplicate
 
 ```crmscript
 NSSelectionAgent agent;
-DuplicateEntry duplicate;
+NSDuplicateEntry duplicate;
 Integer res = agent.CreateNewEntry(duplicate);
 ```
 

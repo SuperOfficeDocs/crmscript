@@ -6,7 +6,7 @@ keywords: NSListAgent, GetDocumentTemplateList
 so.topic: reference
 ---
 
-Gets a vector of DocumentTemplate objects.
+Gets a vector of NSDocumentTemplate objects.
 
 **Parameters:**
  - **documentTemplateIds** The identifiers of the NSDocumentTemplate objects

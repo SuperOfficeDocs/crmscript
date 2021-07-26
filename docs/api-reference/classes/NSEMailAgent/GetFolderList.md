@@ -12,7 +12,7 @@ Retrieve all folders for the mail account. String is separated in sections by th
  - **connectionInfo** All information needed to connect to the mailserver
  - **includeItemCount** If true, unread and total items are added to the foldername separated by a comma
 
-**Returns:** List of available folders as a string array
+**Returns:** String[]
 
 ```crmscript
 NSEMailAgent agent;

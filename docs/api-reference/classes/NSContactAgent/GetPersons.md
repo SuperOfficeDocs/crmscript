@@ -11,7 +11,7 @@ Returns an array of all the contact persons for the company card.
 **Parameters:**
  - **contactId** 
 
-**Returns:** Array of Persons
+**Returns:** NSPerson[]
 
 ```crmscript
 NSContactAgent agent;

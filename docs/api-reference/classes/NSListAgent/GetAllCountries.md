@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSListAgent_GetAllCountries
-title: Country[] GetAllCountries(Bool includeDeleted)
+title: NSCountry[] GetAllCountries(Bool includeDeleted)
 intellisense: NSListAgent.GetAllCountries
 keywords: NSListAgent, GetAllCountries
 so.topic: reference
@@ -16,6 +16,6 @@ Returns all available countries a contact or person could belong to.
 ```crmscript
 NSListAgent agent;
 Bool includeDeleted;
-Country[] res = agent.GetAllCountries(includeDeleted);
+NSCountry[] res = agent.GetAllCountries(includeDeleted);
 ```
 

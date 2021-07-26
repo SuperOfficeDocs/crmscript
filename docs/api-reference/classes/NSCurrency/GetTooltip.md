@@ -8,7 +8,7 @@ so.topic: reference
 
 Get the tooltip description for the Currency list item.
 
-**Returns:** String Currency tooltip description.
+**Returns:** String
 
 ```crmscript
 NSCurrency thing;

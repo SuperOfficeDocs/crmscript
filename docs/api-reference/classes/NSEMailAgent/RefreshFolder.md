@@ -12,7 +12,7 @@ Refresh the given folders - i.e., fetch data from the mail server and update the
  - **connectionInfo** Email connection info credentials
  - **folders** List of folder names to refresh
 
-**Returns:** Batch task id, or 0 if the processing was synchronous
+**Returns:** Integer
 
 ```crmscript
 NSEMailAgent agent;

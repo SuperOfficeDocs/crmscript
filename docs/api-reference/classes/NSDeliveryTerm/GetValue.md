@@ -8,7 +8,7 @@ so.topic: reference
 
 Get the name of the DeliveryTerm.
 
-**Returns:** String DeliveryTerm name.
+**Returns:** String
 
 ```crmscript
 NSDeliveryTerm thing;

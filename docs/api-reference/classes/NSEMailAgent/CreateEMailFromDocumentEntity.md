@@ -6,10 +6,10 @@ keywords: NSEMailAgent, CreateEMailFromDocumentEntity
 so.topic: reference
 ---
 
-Get an e-mail based on the provided DocumentEntity
+Get an e-mail based on the provided NSDocumentEntity
 
 **Parameters:**
- - **documentEntity** DocumentEntity data
+ - **documentEntity** NSDocumentEntity data
 
 **Returns:** NSEMailEntity
 

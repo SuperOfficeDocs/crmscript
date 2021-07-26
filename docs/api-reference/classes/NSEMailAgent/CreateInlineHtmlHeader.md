@@ -11,7 +11,7 @@ Create Outlook style HTML header to use in for instance reply entities and when 
 **Parameters:**
  - **email** The e-mail to generate header based on
 
-**Returns:** The generated HTML header
+**Returns:** String
 
 ```crmscript
 NSEMailAgent agent;

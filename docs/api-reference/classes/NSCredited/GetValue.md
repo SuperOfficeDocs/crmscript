@@ -8,7 +8,7 @@ so.topic: reference
 
 Get the name of the Credited.
 
-**Returns:** String Credited name.
+**Returns:** String
 
 ```crmscript
 NSCredited thing;

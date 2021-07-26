@@ -6,7 +6,7 @@ keywords: NSCategory, GetValue
 so.topic: reference
 ---
 
-Get the name of the Category.
+Get the name of the NSCategory.
 
 **Returns:** String
 

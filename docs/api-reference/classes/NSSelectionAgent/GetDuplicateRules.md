@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSSelectionAgent_GetDuplicateRules
-title: DuplicateRule[] GetDuplicateRules()
+title: NSDuplicateRule[] GetDuplicateRules()
 intellisense: NSSelectionAgent.GetDuplicateRules
 keywords: NSSelectionAgent, GetDuplicateRules
 so.topic: reference
@@ -13,6 +13,6 @@ Retrieve all available duplicate rules for selection
 
 ```crmscript
 NSSelectionAgent agent;
-DuplicateRule[] res = agent.GetDuplicateRules();
+NSDuplicateRule[] res = agent.GetDuplicateRules();
 ```
 

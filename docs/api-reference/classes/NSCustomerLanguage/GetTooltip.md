@@ -8,7 +8,7 @@ so.topic: reference
 
 Get the tooltip description for the NSCustomerLanguage list item.
 
-**Returns:** String NSCustomerLanguage tooltip description.
+**Returns:** String
 
 ```crmscript
 NSCustomerLanguage thing;

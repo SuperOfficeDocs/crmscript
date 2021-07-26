@@ -11,7 +11,7 @@ Authenticate against a mail server to send items with
 **Parameters:**
  - **connectionInfo** All information needed to connect to the mailserver
 
-**Returns:** True if authentication was succcesfull
+**Returns:** Bool
 
 ```crmscript
 NSEMailAgent agent;

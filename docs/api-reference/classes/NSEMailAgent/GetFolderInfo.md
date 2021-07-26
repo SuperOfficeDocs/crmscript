@@ -12,7 +12,7 @@ Retrieve information about folders.  If folders parameter is not specified(null)
  - **connectionInfo** All information needed to connect to the mailserver
  - **folders** Folders to get information about.
 
-**Returns:** Folder information
+**Returns:** NSEMailFolder[]
 
 ```crmscript
 NSEMailAgent agent;

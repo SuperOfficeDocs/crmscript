@@ -6,7 +6,7 @@ keywords: NSDocumentEntity, SetVisibleFor
 so.topic: reference
 ---
 
-Set the usergroups and/or users the DocumentEntity item is visible for.
+Set the usergroups and/or users the NSDocumentEntity item is visible for.
 
 **Parameter:** 
  - **visibleFor** NSVisibleFor[] of one or more users + usergroups.

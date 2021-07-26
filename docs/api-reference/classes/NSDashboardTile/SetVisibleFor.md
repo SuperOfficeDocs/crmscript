@@ -6,7 +6,7 @@ keywords: NSDashboardTile, SetVisibleFor
 so.topic: reference
 ---
 
-Set the usergroups and/or users the DashboardTile item is visible for.
+Set the usergroups and/or users the NSDashboardTile item is visible for.
 
 **Parameter:** 
  - **visibleFor** NSVisibleFor[] of one or more users + usergroups.

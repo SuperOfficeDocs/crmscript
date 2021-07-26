@@ -11,7 +11,7 @@ Get the associated billing and invoice quote version addresses. These addresses 
 **Parameters:**
  - **quoteVersionId** The version to get the addresses for.
 
-**Returns:** The quote version addresses. Invoice and billing address, in that order.
+**Returns:** NSAddress[]
 
 ```crmscript
 NSContactAgent agent;

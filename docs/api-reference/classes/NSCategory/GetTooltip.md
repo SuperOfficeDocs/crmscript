@@ -6,7 +6,7 @@ keywords: NSCategory, GetTooltip
 so.topic: reference
 ---
 
-Get the tooltip description for the Category list item.
+Get the tooltip description for the NSCategory list item.
 
 **Returns:** String
 

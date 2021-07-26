@@ -8,7 +8,7 @@ so.topic: reference
 
 Get the name of the Currency.
 
-**Returns:** String Currency name.
+**Returns:** String
 
 ```crmscript
 NSCurrency thing;

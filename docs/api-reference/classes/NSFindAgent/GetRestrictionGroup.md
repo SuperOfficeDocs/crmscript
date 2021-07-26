@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSFindAgent_GetRestrictionGroup
-title: ArchiveRestrictionGroup GetRestrictionGroup(String storageType, String providerName, String storageKey, Integer rank, String context)
+title: NSArchiveRestrictionGroup GetRestrictionGroup(String storageType, String providerName, String storageKey, Integer rank, String context)
 intellisense: NSFindAgent.GetRestrictionGroup
 keywords: NSFindAgent, GetRestrictionGroup
 so.topic: reference
@@ -24,6 +24,6 @@ String providerName;
 String storageKey;
 Integer rank;
 String context;
-ArchiveRestrictionGroup res = agent.GetRestrictionGroup(storageType, providerName, storageKey, rank, context);
+NSArchiveRestrictionGroup res = agent.GetRestrictionGroup(storageType, providerName, storageKey, rank, context);
 ```
 

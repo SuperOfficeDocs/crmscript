@@ -6,7 +6,7 @@ keywords: NSDocumentEntity, GetVisibleFor
 so.topic: reference
 ---
 
-Return the usergroups and/or users the DocumentEntity item is visible for.
+Return the usergroups and/or users the NSDocumentEntity item is visible for.
 
 **Returns:** NSVisibleFor[]
 

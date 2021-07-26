@@ -13,7 +13,7 @@ Get an e-mail based on an email in the archive system and attachment id
  - **attachmentIds** Id of the attachment. If multiple elements this is treated as attachment in attachemnts, e.g. [1, 2] means attachment 2 in attachment 1 of email.
  - **includeAttachments** Should we retrieve attachments embedded in the e-mail from the server
 
-**Returns:** The attachment as an e-mail
+**Returns:** NSEMailEntity
 
 ```crmscript
 NSEMailAgent agent;

@@ -11,7 +11,7 @@ Send the provided e-mails
 **Parameters:**
  - **emails** The e-mails to send
 
-**Returns:** The sent e-mails (updated with message id etc.)
+**Returns:** NSEMailEntity[]
 
 ```crmscript
 NSEMailAgent agent;

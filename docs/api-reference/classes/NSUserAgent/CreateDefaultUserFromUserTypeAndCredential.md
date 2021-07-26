@@ -6,7 +6,7 @@ keywords: NSUserAgent, CreateDefaultUserFromUserTypeAndCredential
 so.topic: reference
 ---
 
-Creates a PersonEntity with default values based on the contactId and credentials.
+Creates a NSPersonEntity with default values based on the contactId and credentials.
 
 **Parameters:**
  - **userType** Type of associate for the user

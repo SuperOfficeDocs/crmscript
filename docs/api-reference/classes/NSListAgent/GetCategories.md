@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSListAgent_GetCategories
-title: Category[] GetCategories()
+title: NSCategory[] GetCategories()
 intellisense: NSListAgent.GetCategories
 keywords: NSListAgent, GetCategories
 so.topic: reference
@@ -13,6 +13,6 @@ Returns all categories a contact could belong to
 
 ```crmscript
 NSListAgent agent;
-Category[] res = agent.GetCategories();
+NSCategory[] res = agent.GetCategories();
 ```
 

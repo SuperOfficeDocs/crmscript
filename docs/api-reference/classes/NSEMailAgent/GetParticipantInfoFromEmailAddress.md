@@ -12,7 +12,7 @@ Get participant data associated with the participant in the emails iCal attachme
  - **emailAddress** Email address of participant
  - **appointmentId** Appointment id of participant
 
-**Returns:** NSPerson information
+**Returns:** NSPerson
 
 ```crmscript
 NSEMailAgent agent;

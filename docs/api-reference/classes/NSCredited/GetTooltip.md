@@ -8,7 +8,7 @@ so.topic: reference
 
 Get the tooltip description for the Credited list item.
 
-**Returns:** String Credited tooltip description.
+**Returns:** String
 
 ```crmscript
 NSCredited thing;

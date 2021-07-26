@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSTicketAgent_GetAttachmentStream
-title: Stream GetAttachmentStream(Integer attachmentId)
+title: NSStream GetAttachmentStream(Integer attachmentId)
 intellisense: NSTicketAgent.GetAttachmentStream
 keywords: NSTicketAgent, GetAttachmentStream
 so.topic: reference
@@ -16,6 +16,6 @@ Get the content of an attachment
 ```crmscript
 NSTicketAgent agent;
 Integer attachmentId;
-Stream res = agent.GetAttachmentStream(attachmentId);
+NSStream res = agent.GetAttachmentStream(attachmentId);
 ```
 

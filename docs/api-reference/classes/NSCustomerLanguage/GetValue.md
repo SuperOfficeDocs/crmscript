@@ -8,7 +8,7 @@ so.topic: reference
 
 Get the name of the NSCustomerLanguage.
 
-**Returns:** String NSCustomerLanguage name.
+**Returns:** String
 
 ```crmscript
 NSCustomerLanguage thing;

@@ -16,7 +16,7 @@ Method that returns a set of initial contacts. This could be the contacts in a f
      - Enum: 4 = Favorites 
      - Enum: 7 = All 
 
-**Returns:** Arrayof contacts
+**Returns:** NSContact[]
 
 ```crmscript
 NSContactAgent agent;

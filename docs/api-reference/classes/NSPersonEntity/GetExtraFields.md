@@ -6,7 +6,7 @@ keywords: NSPersonEntity, GetExtraFields
 so.topic: reference
 ---
 
-Get the extra fields on PersonEntity as a map.
+Get the extra fields on NSPersonEntity as a map.
 
 **Returns:** Map containing extra field values by field name.
 

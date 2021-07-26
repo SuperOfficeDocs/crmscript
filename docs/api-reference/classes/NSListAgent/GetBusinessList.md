@@ -6,7 +6,7 @@ keywords: NSListAgent, GetBusinessList
 so.topic: reference
 ---
 
-Gets a vector of Business objects.
+Gets a vector of NSBusiness objects.
 
 **Parameters:**
  - **businessIds** The identifiers of the NSBusiness objects

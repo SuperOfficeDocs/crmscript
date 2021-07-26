@@ -12,7 +12,7 @@ Retrieve total/unread mail items in current folder
  - **connectionInfo** All information needed to connect to the mailserver
  - **onlyUnread** If true, only unread items are counted
 
-**Returns:** Number of mail items
+**Returns:** Integer
 
 ```crmscript
 NSEMailAgent agent;

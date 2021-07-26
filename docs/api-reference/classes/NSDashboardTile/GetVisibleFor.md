@@ -6,7 +6,7 @@ keywords: NSDashboardTile, GetVisibleFor
 so.topic: reference
 ---
 
-Return the usergroups and/or users the DashboardTile item is visible for.
+Return the usergroups and/or users the NSDashboardTile item is visible for.
 
 **Returns:** NSVisibleFor[]
 

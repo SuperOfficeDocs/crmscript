@@ -11,7 +11,7 @@ Get published appointment documents by project id.
 **Parameters:**
  - **projectId** The project id
 
-**Returns:** NSAppointment[]
+**Returns:** NSDocument[]
 
 ```crmscript
 NSDocumentAgent agent;

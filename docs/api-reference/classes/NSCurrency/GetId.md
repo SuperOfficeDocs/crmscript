@@ -8,7 +8,7 @@ so.topic: reference
 
 Get the primary key (id) for the Currency
 
-**Returns:** Integer Currency id.
+**Returns:** Integer
 
 ```crmscript
 NSCurrency thing;

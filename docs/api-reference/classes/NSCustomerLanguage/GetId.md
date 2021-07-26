@@ -8,7 +8,7 @@ so.topic: reference
 
 Get the primary key (id) for the NSCustomerLanguage
 
-**Returns:** Integer NSCustomerLanguage id.
+**Returns:** Integer
 
 ```crmscript
 NSCustomerLanguage thing;

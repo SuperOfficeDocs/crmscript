@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSListAgent_SetDocumentTemplateStream
-title: DocumentTemplateEntity SetDocumentTemplateStream(DocumentTemplateEntity documentTemplateEntity, Stream stream, String languageCode, Integer pluginId)
+title: DocumentTemplateEntity SetDocumentTemplateStream(DocumentTemplateEntity documentTemplateEntity, NSStream stream, String languageCode, Integer pluginId)
 intellisense: NSListAgent.SetDocumentTemplateStream
 keywords: NSListAgent, SetDocumentTemplateStream
 so.topic: reference
@@ -19,7 +19,7 @@ Store a document template from its stream. Since there is a potential for a name
 ```crmscript
 NSListAgent agent;
 DocumentTemplateEntity documentTemplateEntity;
-Stream stream;
+NSStream stream;
 String languageCode;
 Integer pluginId;
 DocumentTemplateEntity res = agent.SetDocumentTemplateStream(documentTemplateEntity, stream, languageCode, pluginId);

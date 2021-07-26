@@ -8,7 +8,7 @@ so.topic: reference
 
 Get the primary key (id) for the DeliveryTerm
 
-**Returns:** Integer DeliveryTerm id.
+**Returns:** Integer
 
 ```crmscript
 NSDeliveryTerm thing;

@@ -8,7 +8,7 @@ so.topic: reference
 
 Get the primary key (id) for the Credited
 
-**Returns:** Integer Credited id.
+**Returns:** Integer
 
 ```crmscript
 NSCredited thing;

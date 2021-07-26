@@ -11,7 +11,7 @@ Check if folder has received new items since previous access.
 **Parameters:**
  - **connectionInfo** All information needed to connect to the mailserver
 
-**Returns:** True if new mail is available.
+**Returns:** Bool
 
 ```crmscript
 NSEMailAgent agent;

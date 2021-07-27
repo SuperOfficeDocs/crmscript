@@ -14,7 +14,7 @@ Return all the restriction groups.
  - **storageKey** Storage key to be interpreted by the restriction storage provider, when it saves the restrictions as criteria
  - **context** Optional context that can be used by FindProvider
 
-**Returns:** The restriction groups.
+**Returns:** NSArchiveRestrictionGroup[]
 
 ```crmscript
 NSFindAgent agent;

@@ -9,7 +9,7 @@ so.topic: reference
 Sync all active connections even when automatic sync is off
 
 
-**Returns:** The response
+**Returns:** NSPluginResponse
 
 ```crmscript
 NSErpSyncAgent agent;

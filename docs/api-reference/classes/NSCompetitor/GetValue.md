@@ -6,7 +6,7 @@ keywords: NSCompetitor, GetValue
 so.topic: reference
 ---
 
-Get the name of the Competitor.
+Get the name of the NSCompetitor.
 
 **Returns:** String
 

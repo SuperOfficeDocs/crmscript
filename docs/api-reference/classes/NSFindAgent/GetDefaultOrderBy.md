@@ -13,7 +13,7 @@ Calculate the default orderby columns for a given provider and a search. The sea
  - **providerName** Provider name to calculate default orderby for
  - **storageKey** Storage key to be interpreted by the restriction storage provider, when it fetches criteria for the search
 
-**Returns:** Orderby information
+**Returns:** NSArchiveOrderByInfo[]
 
 ```crmscript
 NSFindAgent agent;

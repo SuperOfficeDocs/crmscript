@@ -11,11 +11,11 @@ Gets a vector of NSCountry objects.
 **Parameters:**
  - **countryIds** The identifiers of the NSCountry objects
 
-**Returns:** Vector of NSCountry objects
+**Returns:** NSCountry[]
 
 ```crmscript
 Integer[] ids;
 NSListAgent agent;
-agent.GetCountryList(ids);
+NSCountry[] res = agent.GetCountryList(ids);
 ```
 

@@ -6,7 +6,7 @@ keywords: NSDeliveryTerm, GetId
 so.topic: reference
 ---
 
-Get the primary key (id) for the DeliveryTerm
+Get the primary key (id) for the NSDeliveryTerm
 
 **Returns:** Integer
 

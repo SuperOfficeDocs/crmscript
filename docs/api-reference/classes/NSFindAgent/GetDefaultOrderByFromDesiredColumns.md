@@ -12,7 +12,7 @@ Calculate the default orderby columns for a given provider and a set of desired 
  - **providerName** Provider name to calculate default orderby for
  - **desiredColumns** Desired columns (return fields), used in the orderby calculation. You can generally only order by columns that have been set as 'desired'.
 
-**Returns:** Orderby information
+**Returns:** NSArchiveOrderByInfo[]
 
 ```crmscript
 NSFindAgent agent;

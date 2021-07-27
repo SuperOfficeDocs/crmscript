@@ -6,7 +6,7 @@ keywords: NSCredited, GetId
 so.topic: reference
 ---
 
-Get the primary key (id) for the Credited
+Get the primary key (id) for the NSCredited
 
 **Returns:** Integer
 

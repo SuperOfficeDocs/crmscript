@@ -6,7 +6,7 @@ keywords: NSCompetitor, GetTooltip
 so.topic: reference
 ---
 
-Get the tooltip description for the Competitor list item.
+Get the tooltip description for the NSCompetitor list item.
 
 **Returns:** String
 

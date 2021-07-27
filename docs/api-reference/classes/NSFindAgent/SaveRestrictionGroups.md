@@ -15,7 +15,7 @@ Save and rerank an array of restriction groups, returning the possibly modified 
  - **restrictionGroups** Information about a group of restrictions
  - **context** Optional context that can be used by FindProvider
 
-**Returns:** The new restriction group.
+**Returns:** NSArchiveRestrictionGroup[]
 
 ```crmscript
 NSFindAgent agent;

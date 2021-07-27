@@ -13,7 +13,7 @@ Calculate the default desired columns, i.e., the result columns for a given sear
  - **providerName** Name of the provider to calculate default desired columns for
  - **storageKey** Storage key to be interpreted by the restriction storage provider, when it fetches criteria for the search
 
-**Returns:** Column information for the default desired columns, fully populated. Percentage-specified column widths sum to exactly 100.
+**Returns:** NSArchiveColumnInfo[]
 
 ```crmscript
 NSFindAgent agent;

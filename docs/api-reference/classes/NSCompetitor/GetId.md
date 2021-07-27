@@ -6,7 +6,7 @@ keywords: NSCompetitor, GetId
 so.topic: reference
 ---
 
-Get the primary key (id) for the Competitor
+Get the primary key (id) for the NSCompetitor
 
 **Returns:** Integer
 

@@ -11,11 +11,11 @@ Gets a vector of NSTicketPriority objects.
 **Parameters:**
  - **ticketPriorityIds** The identifiers of the NSTicketPriority objects
 
-**Returns:** Vector of NSTicketPriority objects
+**Returns:** NSTicketPriority[]
 
 ```crmscript
 Integer[] ids;
 NSListAgent agent;
-agent.GetTicketPriorityList(ids);
+NSTicketPriority[] res = agent.GetTicketPriorityList(ids);
 ```
 

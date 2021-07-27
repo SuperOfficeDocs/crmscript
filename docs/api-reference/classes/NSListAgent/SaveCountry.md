@@ -11,7 +11,7 @@ Saves a country
 **Parameters:**
  - **country** The country to save
 
-**Returns:** The country that is saved
+**Returns:** NSCountry
 
 ```crmscript
 NSListAgent agent;

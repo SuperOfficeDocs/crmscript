@@ -9,7 +9,7 @@ so.topic: reference
 Gets a new country
 
 
-**Returns:** A new country with default values
+**Returns:** NSCountry
 
 ```crmscript
 NSListAgent agent;

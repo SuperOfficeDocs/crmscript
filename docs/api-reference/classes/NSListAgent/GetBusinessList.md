@@ -11,11 +11,11 @@ Gets a vector of NSBusiness objects.
 **Parameters:**
  - **businessIds** The identifiers of the NSBusiness objects
 
-**Returns:** Vector of NSBusiness objects
+**Returns:** NSBusiness[]
 
 ```crmscript
 Integer[] ids;
 NSListAgent agent;
-agent.GetBusinessList(ids);
+NSBusiness[] list = agent.GetBusinessList(ids);
 ```
 

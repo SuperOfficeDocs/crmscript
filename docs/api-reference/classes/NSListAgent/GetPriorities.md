@@ -9,7 +9,7 @@ so.topic: reference
 Returns all priorities an appointment could have.
 
 
-**Returns:** An array of all available priorities
+**Returns:** NSPriority[]
 
 ```crmscript
 NSListAgent agent;

@@ -6,7 +6,7 @@ keywords: NSFavourite
 so.topic: reference
 ---
 
-Favourite carrier.
+NSFavourite carrier.
 
 1. autolist 
 

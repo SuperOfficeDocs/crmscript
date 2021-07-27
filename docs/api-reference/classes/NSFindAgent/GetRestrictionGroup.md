@@ -15,7 +15,7 @@ Return the restriction group with given rank or a blank carrier.
  - **rank** Rank of the group to be deleted.
  - **context** Optional context that can be used by FindProvider
 
-**Returns:** The new restriction group.
+**Returns:** NSArchiveRestrictionGroup
 
 ```crmscript
 NSFindAgent agent;

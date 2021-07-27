@@ -11,7 +11,7 @@ Returns all available countries a contact or person could belong to.
 **Parameters:**
  - **includeDeleted** Include deleted items in result?
 
-**Returns:** An array of all available countries
+**Returns:** NSCountry[]
 
 ```crmscript
 NSListAgent agent;

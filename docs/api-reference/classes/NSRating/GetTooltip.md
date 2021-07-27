@@ -6,9 +6,9 @@ keywords: NSRating, GetTooltip
 so.topic: reference
 ---
 
-Get the tooltip description for the Rating list item.
+Get the tooltip description for the NSRating list item.
 
-**Returns:** String Rating tooltip description.
+**Returns:** String NSRating tooltip description.
 
 ```crmscript
 NSRating thing;

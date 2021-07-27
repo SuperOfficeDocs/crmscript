@@ -8,3 +8,9 @@ so.topic: reference
 
 
 
+**Returns:** NSCustomerLanguage[]
+
+```crmscript
+NSListAgent agent;
+NSCustomerLanguage[] res = agent.GetCustomerLanguages();
+```

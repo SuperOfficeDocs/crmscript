@@ -9,7 +9,7 @@ so.topic: reference
 Returns all appointment tasks
 
 
-**Returns:** An array of all available tasks
+**Returns:** NSTask[]
 
 ```crmscript
 NSListAgent agent;

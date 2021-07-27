@@ -6,7 +6,7 @@ keywords: NSFieldMetadataDictionary
 so.topic: reference
 ---
 
-Dictionary where key is string and value is a FieldMetadata
+Dictionary where key is string and value is a NSFieldMetadata
 
 1. autolist 
 

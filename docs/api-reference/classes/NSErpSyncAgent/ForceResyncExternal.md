@@ -21,7 +21,7 @@ Force resync from CRM or given Erp connection to all other connections, using ex
      - Enum: 7 = Sale 
  - **externalKeys** The internal keys of the entities to resync, or empty to resync all
 
-**Returns:** The response
+**Returns:** NSPluginResponse
 
 ```crmscript
 NSErpSyncAgent agent;

@@ -6,7 +6,7 @@ keywords: NSCurrency, GetValue
 so.topic: reference
 ---
 
-Get the name of the Currency.
+Get the name of the NSCurrency.
 
 **Returns:** String
 

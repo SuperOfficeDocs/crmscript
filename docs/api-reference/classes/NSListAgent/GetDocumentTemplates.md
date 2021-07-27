@@ -9,7 +9,7 @@ so.topic: reference
 Returns all available document templates
 
 
-**Returns:** Array of DocumentTemplates
+**Returns:** NSDocumentTemplate[]
 
 ```crmscript
 NSListAgent agent;

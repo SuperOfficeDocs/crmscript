@@ -11,7 +11,7 @@ Returns a Document Template list item as a TaskListItem. The appointment's task 
 **Parameters:**
  - **documentTemplateId** Id of the document template, i.e. the Appointment.TaskIdx
 
-**Returns:** Document Template item as TaskListItem.
+**Returns:** NSTask
 
 ```crmscript
 NSListAgent agent;

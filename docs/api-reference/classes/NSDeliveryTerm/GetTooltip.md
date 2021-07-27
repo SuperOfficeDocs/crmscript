@@ -6,7 +6,7 @@ keywords: NSDeliveryTerm, GetTooltip
 so.topic: reference
 ---
 
-Get the tooltip description for the DeliveryTerm list item.
+Get the tooltip description for the NSDeliveryTerm list item.
 
 **Returns:** String
 

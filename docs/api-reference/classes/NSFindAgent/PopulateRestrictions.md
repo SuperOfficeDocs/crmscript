@@ -12,7 +12,7 @@ Take an incoming set of minimally populated restrictions (name + operator is req
  - **providerName** Provider name to use for populating column information
  - **restrictions** Restrictions to populate. The Name and Operator fields have to have valid content, and Values should be set as appropriate. Other fields can be left blank or null. If a ColumnInfo is already set, it will not be overwritten.
 
-**Returns:** Fully populated restrictions in the same order as the incoming restrictions.
+**Returns:** NSArchiveRestrictionInfo[]
 
 ```crmscript
 NSFindAgent agent;

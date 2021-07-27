@@ -6,7 +6,7 @@ keywords: NSSaleTypeEntity, GetStages
 so.topic: reference
 ---
 
-Stages, those associated with this SaleType are selected.
+Stages, those associated with this NSSaleType are selected.
 
 **Returns:** NSSelectableMDOListItem[]
 

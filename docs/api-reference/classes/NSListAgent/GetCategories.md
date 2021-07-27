@@ -9,7 +9,7 @@ so.topic: reference
 Returns all categories a contact could belong to
 
 
-**Returns:** An array of all available categories
+**Returns:** NSCategory[]
 
 ```crmscript
 NSListAgent agent;

@@ -9,7 +9,7 @@ so.topic: reference
 Returns all available businesses that a contact could have.
 
 
-**Returns:** An array of all available businesses
+**Returns:** NSBusiness[]
 
 ```crmscript
 NSListAgent agent;

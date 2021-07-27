@@ -7,4 +7,9 @@ so.topic: reference
 ---
 
 
+**Returns:** NSTicketPriority[]
 
+```crmscript
+NSListAgent agent;
+NSTicketPriority[] thing = agent.GetTicketPriorities();
+```

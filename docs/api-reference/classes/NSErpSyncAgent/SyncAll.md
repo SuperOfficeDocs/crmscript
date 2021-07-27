@@ -9,7 +9,7 @@ so.topic: reference
 Sync all active connections
 
 
-**Returns:** The response
+**Returns:** NSPluginResponse
 
 ```crmscript
 NSErpSyncAgent agent;

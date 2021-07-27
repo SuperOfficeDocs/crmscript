@@ -8,7 +8,7 @@ so.topic: reference
 
 Get the name of the NSReason.
 
-**Returns:** String NSReason name.
+**Returns:** String
 
 ```crmscript
 NSReason thing;

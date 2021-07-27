@@ -9,7 +9,7 @@ so.topic: reference
 Gets the person info belonging to the currently logged on user.
 
 
-**Returns:** The NSPersonEntity
+**Returns:** NSPersonEntity
 
 ```crmscript
 NSPersonAgent agent;

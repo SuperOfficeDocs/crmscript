@@ -12,7 +12,7 @@ Returns the latest sales (that are sold) limited by their amount. The result is 
  - **amountLimit** The amount limit in the local currency.
  - **count** The maximum number of items to return. If -1 all are returned.
 
-**Returns:** Array of all recent sales.
+**Returns:** NSSale[]
 
 ```crmscript
 NSSaleAgent agent;

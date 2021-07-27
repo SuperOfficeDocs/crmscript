@@ -24,6 +24,6 @@ NSAppointmentAgent agent;
 Integer appointmentId;
 Integer updateMode;
 NSEMailConnectionInfo smtpEMailConnectionInfo;
-Void res = agent.AcceptWithSmtpEmailConfirmation(appointmentId, updateMode, smtpEMailConnectionInfo);
+agent.AcceptWithSmtpEmailConfirmation(appointmentId, updateMode, smtpEMailConnectionInfo);
 ```
 

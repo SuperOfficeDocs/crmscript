@@ -12,7 +12,7 @@ Returns a single list item
  - **listName** Conceptual name of the MDO list
  - **id** Id of list item
 
-**Returns:** Single MDO list item
+**Returns:** NSMDOListItem
 
 ```crmscript
 NSMDOAgent agent;

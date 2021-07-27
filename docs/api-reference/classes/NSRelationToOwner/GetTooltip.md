@@ -8,7 +8,7 @@ so.topic: reference
 
 Get the tooltip description for the NSRelationToOwner list item.
 
-**Returns:** String NSRelationToOwner tooltip description.
+**Returns:** String
 
 ```crmscript
 NSRelationToOwner thing;

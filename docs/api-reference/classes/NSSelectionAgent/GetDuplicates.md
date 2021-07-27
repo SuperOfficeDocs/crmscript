@@ -11,7 +11,7 @@ Get duplicates(exact or similar in the database) based on the name
 **Parameters:**
  - **name** Name used for lookup
 
-**Returns:** Any records matching the specified name
+**Returns:** NSDuplicateEntry[]
 
 ```crmscript
 NSSelectionAgent agent;

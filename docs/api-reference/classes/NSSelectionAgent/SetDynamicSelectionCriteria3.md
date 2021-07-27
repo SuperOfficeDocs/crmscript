@@ -13,7 +13,7 @@ Update the criteria for this dynamic selection. Use criteria as either restricti
  - **criteria** Criteria defining the selection result. Pass NULL if using the filter string instead.
  - **filter** Criteria defining the selection result in OData filter form: `category in (1,2,3) and name = 'foo'`. Pass NULL or empty string '' if using the criteria objects.
 
-**Returns:** Criteria defining the selection result. NULL if this is not a dynamic selection.
+**Returns:** NSArchiveRestrictionInfo[]
 
 ```crmscript
 NSSelectionAgent agent;

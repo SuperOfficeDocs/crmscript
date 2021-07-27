@@ -9,7 +9,7 @@ so.topic: reference
 Retrieve all available duplicate rules for selection
 
 
-**Returns:** All available duplicate rules
+**Returns:** NSDuplicateRule[]
 
 ```crmscript
 NSSelectionAgent agent;

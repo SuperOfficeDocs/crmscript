@@ -11,7 +11,7 @@ Returning all phones that belong to a person, ordered by the phone type.
 **Parameters:**
  - **personId** The person id
 
-**Returns:** An array of Phones
+**Returns:** NSEntityElement[]
 
 ```crmscript
 NSPersonAgent agent;

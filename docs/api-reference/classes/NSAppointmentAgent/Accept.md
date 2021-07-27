@@ -22,6 +22,6 @@ Accepting an appointment invitation.
 NSAppointmentAgent agent;
 Integer appointmentId;
 Integer updateMode;
-Void res = agent.Accept(appointmentId, updateMode);
+agent.Accept(appointmentId, updateMode);
 ```
 

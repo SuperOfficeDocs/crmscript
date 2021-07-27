@@ -11,7 +11,7 @@ Find all roles with a given functional right. The roles matched must contain the
 **Parameters:**
  - **functionalRightName** Functional right name to search for
 
-**Returns:** Roles that contains the given functional right
+**Returns:** NSMDOListItem[]
 
 ```crmscript
 NSUserAgent agent;

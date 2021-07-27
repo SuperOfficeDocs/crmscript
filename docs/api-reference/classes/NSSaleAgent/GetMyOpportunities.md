@@ -11,7 +11,7 @@ Returning the opportunities (open sales) belonging to the user currently logged 
 **Parameters:**
  - **count** The number of sales that is returned. -1 returns all.
 
-**Returns:** Array of open sales (opportunities).
+**Returns:** NSSale[]
 
 ```crmscript
 NSSaleAgent agent;

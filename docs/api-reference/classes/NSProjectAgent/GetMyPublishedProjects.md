@@ -9,7 +9,7 @@ so.topic: reference
 Get published projects from the logged in user.
 
 
-**Returns:** Projects
+**Returns:** NSProject[]
 
 ```crmscript
 NSProjectAgent agent;

@@ -17,7 +17,7 @@ Get available credential types that can be used for the specified user type.
      - Enum: 4 = AnonymousAssociate 
      - Enum: 5 = SystemAssociate 
 
-**Returns:** Credential types that can be used for authentication
+**Returns:** NSCredentialType[]
 
 ```crmscript
 NSUserAgent agent;

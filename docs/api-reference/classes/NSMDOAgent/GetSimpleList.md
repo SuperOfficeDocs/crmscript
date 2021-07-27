@@ -11,7 +11,7 @@ Method returns a simple flat MDO List.
 **Parameters:**
  - **name** Conceptual name of the MDO list-
 
-**Returns:** Array of NSMDOListItem
+**Returns:** NSMDOListItem[]
 
 ```crmscript
 NSMDOAgent agent;

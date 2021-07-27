@@ -12,7 +12,7 @@ Update the criteria for this dynamic selection. Replaces existing criteria with 
  - **selectionId** The id of the selection to add members
  - **criteria** Criteria groups defining the selection result. Empty array is legal, simply means no criteria have been set
 
-**Returns:** Criteria groups defining the selection result. NULL if this is not a dynamic selection.
+**Returns:** NSArchiveRestrictionInfo[]
 
 ```crmscript
 NSSelectionAgent agent;

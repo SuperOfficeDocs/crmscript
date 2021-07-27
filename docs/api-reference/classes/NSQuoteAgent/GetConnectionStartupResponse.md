@@ -11,7 +11,7 @@ Returns the PluginResponseInfo for the connection initialization. Does not initi
 **Parameters:**
  - **quoteConnectionId** Primary key of the connection
 
-**Returns:** PluginResponseInfo for the connection initialization.
+**Returns:** NSPluginResponse[]
 
 ```crmscript
 NSQuoteAgent agent;

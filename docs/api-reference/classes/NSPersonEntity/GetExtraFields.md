@@ -8,7 +8,7 @@ so.topic: reference
 
 Get the extra fields on NSPersonEntity as a map.
 
-**Returns:** Map containing extra field values by field name.
+**Returns:** Map
 
 ```crmscript
 NSPersonEntity thing;

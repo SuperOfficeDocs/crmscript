@@ -20,7 +20,7 @@ Returns all sales within a time period. The sales array can be limited by amount
      - Enum: 4 = Stalled 
      - Enum: 1000 = SaintAll 
 
-**Returns:** Array of sales.
+**Returns:** NSSale[]
 
 ```crmscript
 NSSaleAgent agent;

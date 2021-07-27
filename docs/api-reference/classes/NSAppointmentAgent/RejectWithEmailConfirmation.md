@@ -24,6 +24,6 @@ NSAppointmentAgent agent;
 Integer appointmentId;
 String rejectReason;
 Integer updateMode;
-Void res = agent.RejectWithEmailConfirmation(appointmentId, rejectReason, updateMode);
+agent.RejectWithEmailConfirmation(appointmentId, rejectReason, updateMode);
 ```
 

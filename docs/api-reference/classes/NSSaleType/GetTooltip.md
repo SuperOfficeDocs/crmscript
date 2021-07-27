@@ -8,7 +8,7 @@ so.topic: reference
 
 Get the tooltip description for the NSSaleType list item.
 
-**Returns:** String NSSaleType tooltip description.
+**Returns:** String
 
 ```crmscript
 NSSaleType thing;

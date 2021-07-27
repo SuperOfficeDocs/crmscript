@@ -11,7 +11,7 @@ Returns all projects where the given contact has projectmembers.
 **Parameters:**
  - **contactId** The contact id
 
-**Returns:** ProjectListEntity
+**Returns:** NSProject[]
 
 ```crmscript
 NSProjectAgent agent;

@@ -9,7 +9,7 @@ so.topic: reference
 Returning the projects where an user is project member.
 
 
-**Returns:** The list of projects.
+**Returns:** NSProject[]
 
 ```crmscript
 NSProjectAgent agent;

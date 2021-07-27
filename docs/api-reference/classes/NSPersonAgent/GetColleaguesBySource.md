@@ -11,13 +11,13 @@ Gets the persons working in the same company as the logged on user. The list of 
 **Parameters:**
  - **sourceType** The “source” the colleagues should be retrieved from. <see cref="AssociateSourceType"/> for more information.
      - Enum: 0 = Unknown 
-     - Enum: 1 = History 
+     - Enum: 1 = NSHistory 
      - Enum: 2 = DiaryViewList 
      - Enum: 4 = Department 
      - Enum: 7 = All 
  - **count** 
 
-**Returns:** Colleagues.
+**Returns:** NSPerson[]
 
 ```crmscript
 NSPersonAgent agent;

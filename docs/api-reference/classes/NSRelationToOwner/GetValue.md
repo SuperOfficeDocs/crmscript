@@ -8,7 +8,7 @@ so.topic: reference
 
 Get the name of the NSRelationToOwner.
 
-**Returns:** String NSRelationToOwner name.
+**Returns:** String
 
 ```crmscript
 NSRelationToOwner thing;

@@ -9,7 +9,7 @@ so.topic: reference
 Returns an array of PluginResponseInfos for all failed connection initializations.
 
 
-**Returns:** Array of PluginResponseInfos for each failed connection initialization.
+**Returns:** NSPluginResponse[]
 
 ```crmscript
 NSQuoteAgent agent;

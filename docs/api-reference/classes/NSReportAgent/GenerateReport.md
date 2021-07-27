@@ -16,7 +16,7 @@ Generates the report in PDF format
  - **fileType** 
  - **restrictions** Use restrictions to provide additional restrictions when generating the report.
 
-**Returns:** Batch task id, as string. Used to be path to the generated report, but no more.
+**Returns:** String
 
 ```crmscript
 NSReportAgent agent;

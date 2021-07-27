@@ -8,7 +8,7 @@ so.topic: reference
 
 Get the primary key (id) for the NSRelationToOwner
 
-**Returns:** Integer NSRelationToOwner id.
+**Returns:** Integer
 
 ```crmscript
 NSRelationToOwner thing;

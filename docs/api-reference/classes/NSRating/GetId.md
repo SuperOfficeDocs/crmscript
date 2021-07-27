@@ -8,7 +8,7 @@ so.topic: reference
 
 Get the primary key (id) for the NSRating
 
-**Returns:** Integer NSRating id.
+**Returns:** Integer
 
 ```crmscript
 NSRating thing;

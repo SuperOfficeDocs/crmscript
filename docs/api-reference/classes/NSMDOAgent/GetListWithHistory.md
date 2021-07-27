@@ -15,7 +15,7 @@ Method to get a MDO list with own history list.
  - **historyItems** An array of ids, used to get the history list
  - **onlyHistory** If true, return only history items
 
-**Returns:** Array of NSMDOListItem
+**Returns:** NSMDOListItem[]
 
 ```crmscript
 NSMDOAgent agent;

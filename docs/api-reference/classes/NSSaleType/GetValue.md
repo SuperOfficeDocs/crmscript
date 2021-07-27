@@ -8,7 +8,7 @@ so.topic: reference
 
 Get the name of the NSSaleType.
 
-**Returns:** String NSSaleType name.
+**Returns:** String
 
 ```crmscript
 NSSaleType thing;

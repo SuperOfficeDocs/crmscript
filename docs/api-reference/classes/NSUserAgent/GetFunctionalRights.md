@@ -11,7 +11,7 @@ Get all functional rights for the given role. Functional rights not set on the r
 **Parameters:**
  - **roleId** The role id to get the functional rights for.
 
-**Returns:** FunctionRight items with name and description. Code name for function right is in the extra-info property.
+**Returns:** NSSelectableMDOListItem[]
 
 ```crmscript
 NSUserAgent agent;

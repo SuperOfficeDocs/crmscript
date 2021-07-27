@@ -11,7 +11,7 @@ Returns the person image that is displayed in the CRM application.
 **Parameters:**
  - **personId** The person id of the person the image belongs to.
 
-**Returns:** The image as a System.Drawing.Image. (If the the image is returned over webservices, the stream is returned as a Base64 encoded string.)
+**Returns:** NSImage
 
 ```crmscript
 NSPersonAgent agent;

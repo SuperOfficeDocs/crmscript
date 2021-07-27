@@ -8,7 +8,7 @@ so.topic: reference
 
 Get the primary key (id) for the NSSaleType
 
-**Returns:** Integer NSSaleType id.
+**Returns:** Integer
 
 ```crmscript
 NSSaleType thing;

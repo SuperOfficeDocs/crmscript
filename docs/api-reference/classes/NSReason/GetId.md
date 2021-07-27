@@ -8,7 +8,7 @@ so.topic: reference
 
 Get the primary key (id) for the NSReason
 
-**Returns:** Integer NSReason id.
+**Returns:** Integer
 
 ```crmscript
 NSReason thing;

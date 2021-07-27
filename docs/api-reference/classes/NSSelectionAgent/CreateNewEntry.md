@@ -11,7 +11,7 @@ Creates a new selection based on external duplicate
 **Parameters:**
  - **duplicate** The duplicate to create a new entry based upon
 
-**Returns:** The database identity of the newly created entry
+**Returns:** Integer
 
 ```crmscript
 NSSelectionAgent agent;

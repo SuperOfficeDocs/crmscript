@@ -9,7 +9,7 @@ so.topic: reference
 Get available credential types that can be used for authentication
 
 
-**Returns:** Credential types that can be used for authentication
+**Returns:** NSCredentialType[]
 
 ```crmscript
 NSUserAgent agent;

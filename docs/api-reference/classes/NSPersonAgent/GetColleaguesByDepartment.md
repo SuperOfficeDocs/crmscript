@@ -11,7 +11,7 @@ Gets the persons working in a specific department in the same company as the log
 **Parameters:**
  - **departmentId** The department id.
 
-**Returns:** PersonList with colleagues.
+**Returns:** NSPerson[]
 
 ```crmscript
 NSPersonAgent agent;

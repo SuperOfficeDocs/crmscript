@@ -15,7 +15,7 @@ Returns the sales representative for an external user. If this method is accesse
  - **emailAddress** The email address of the person requesting his sales representative. May be empty if phone, or contact and person name is provided.
  - **phoneNumber** The phone number of the person requesting his sales representative. May be empty if email, or contact and person name is provided.
 
-**Returns:** The NSPersonEntity of the sales rep.
+**Returns:** NSPersonEntity
 
 ```crmscript
 NSPersonAgent agent;

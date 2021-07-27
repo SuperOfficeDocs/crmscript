@@ -11,7 +11,7 @@ Get the content of an attachment
 **Parameters:**
  - **attachmentId** The id of the attachment to retrieve
 
-**Returns:** A stream to the attachment content
+**Returns:** NSStream
 
 ```crmscript
 NSTicketAgent agent;

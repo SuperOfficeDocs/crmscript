@@ -22,6 +22,6 @@ Accepting an appointment invitation and send an email confirmation to the meetin
 NSAppointmentAgent agent;
 Integer appointmentId;
 Integer updateMode;
-Void res = agent.AcceptWithEmailConfirmation(appointmentId, updateMode);
+agent.AcceptWithEmailConfirmation(appointmentId, updateMode);
 ```
 

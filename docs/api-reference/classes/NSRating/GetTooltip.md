@@ -8,7 +8,7 @@ so.topic: reference
 
 Get the tooltip description for the NSRating list item.
 
-**Returns:** String NSRating tooltip description.
+**Returns:** String
 
 ```crmscript
 NSRating thing;

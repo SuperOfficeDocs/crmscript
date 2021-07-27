@@ -8,7 +8,7 @@ so.topic: reference
 
 Get the tooltip description for the Task list item.
 
-**Returns:** String NSTask tooltip description.
+**Returns:** String
 
 ```crmscript
 NSTask thing;

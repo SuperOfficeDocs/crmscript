@@ -12,7 +12,7 @@ Returns all sales for the contact provided.
  - **contactId** The ID of the contact whose sales we want.
  - **onlyOpenSales** If true, only get open sales.
 
-**Returns:** List of sales matching query
+**Returns:** NSSale[]
 
 ```crmscript
 NSSaleAgent agent;

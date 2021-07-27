@@ -13,13 +13,12 @@ Saves the image connected to a quoteline in the SuperOffice database
  - **image** The image.
  - **rank** The rank of the image.
 
-**Returns:** Nothing
 
 ```crmscript
 NSQuoteAgent agent;
 Integer quoteLineId;
 NSImage image;
 Integer rank;
-Void res = agent.SaveQuoteLineImage(quoteLineId, image, rank);
+agent.SaveQuoteLineImage(quoteLineId, image, rank);
 ```
 

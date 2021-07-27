@@ -12,7 +12,7 @@ Update the criteria for this dynamic selection. Replaces existing criteria with 
  - **selectionId** The id of the selection to add members
  - **criteria** Criteria defining the selection result.
 
-**Returns:** Criteria defining the selection result. NULL if this is not a dynamic selection.
+**Returns:** NSArchiveRestrictionInfo[]
 
 ```crmscript
 NSSelectionAgent agent;

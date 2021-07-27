@@ -8,7 +8,7 @@ so.topic: reference
 
 Get the primary key (id) for the NSTicketCategory
 
-**Returns:** Integer NSTicketCategory id.
+**Returns:** Integer
 
 ```crmscript
 NSTicketCategory thing;

@@ -11,7 +11,7 @@ Get published projects where person  is a member
 **Parameters:**
  - **personId** The person id
 
-**Returns:** Array of project
+**Returns:** NSProject[]
 
 ```crmscript
 NSProjectAgent agent;

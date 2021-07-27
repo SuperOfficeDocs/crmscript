@@ -24,6 +24,6 @@ NSAppointmentAgent agent;
 Integer appointmentId;
 String rejectReason;
 Integer updateMode;
-Void res = agent.Reject(appointmentId, rejectReason, updateMode);
+agent.Reject(appointmentId, rejectReason, updateMode);
 ```
 

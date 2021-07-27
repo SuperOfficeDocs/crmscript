@@ -8,7 +8,7 @@ so.topic: reference
 
 Get the name of the NSRating.
 
-**Returns:** String NSRating name.
+**Returns:** String
 
 ```crmscript
 NSRating thing;

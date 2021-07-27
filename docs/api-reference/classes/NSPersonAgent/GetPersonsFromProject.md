@@ -11,7 +11,7 @@ Returns all the persons belonging to a project.
 **Parameters:**
  - **projectId** The project id
 
-**Returns:** The persons belonging to a project.
+**Returns:** NSPerson[]
 
 ```crmscript
 NSPersonAgent agent;

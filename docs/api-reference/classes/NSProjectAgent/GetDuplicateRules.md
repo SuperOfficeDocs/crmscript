@@ -9,7 +9,7 @@ so.topic: reference
 Retrieve all available duplicate rules for project
 
 
-**Returns:** All available duplicate rules
+**Returns:** NSDuplicateRule[]
 
 ```crmscript
 NSProjectAgent agent;

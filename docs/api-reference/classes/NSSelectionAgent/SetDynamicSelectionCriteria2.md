@@ -12,7 +12,7 @@ Update the criteria for this dynamic selection using string. Criteria are parsed
  - **selectionId** The id of the selection to add members
  - **filter** Criteria defining the selection result in OData filter form: `category in (1,2,3) and name = 'foo'` 
 
-**Returns:** Criteria defining the selection result. NULL if this is not a dynamic selection.
+**Returns:** NSArchiveRestrictionInfo[]
 
 ```crmscript
 NSSelectionAgent agent;

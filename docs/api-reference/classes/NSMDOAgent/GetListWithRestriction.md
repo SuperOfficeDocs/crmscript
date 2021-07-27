@@ -13,7 +13,7 @@ Method to get a MDO list with restrictions.
  - **additionalInfo** Additional info to the MDO provider
  - **searchValue** the value used to restrict the list
 
-**Returns:** Array of NSMDOListItem
+**Returns:** NSMDOListItem[]
 
 ```crmscript
 NSMDOAgent agent;

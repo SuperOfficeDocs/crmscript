@@ -8,7 +8,7 @@ so.topic: reference
 
 Get the name of the NSTicketCategory.
 
-**Returns:** String NSTicketCategory name.
+**Returns:** String
 
 ```crmscript
 NSTicketCategory thing;

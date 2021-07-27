@@ -11,7 +11,7 @@ Get the criteria for this dynamic selection. This call supports multiple criteri
 **Parameters:**
  - **selectionId** The id of the selection to add members
 
-**Returns:** Criteria groups defining the selection result. NULL if selection does not exist, or if this is not a dynamic selection.
+**Returns:** NSArchiveRestrictionGroup[]
 
 ```crmscript
 NSSelectionAgent agent;

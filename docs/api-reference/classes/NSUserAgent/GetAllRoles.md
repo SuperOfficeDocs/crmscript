@@ -15,7 +15,7 @@ Get a list of all roles for the given type of role. MDO List name = 'Roles', ext
      - Enum: 2 = Anonymous 
      - Enum: 3 = System 
 
-**Returns:** FunctionRight items with name and description. Code name for function right is in the extra-info property.
+**Returns:** NSSelectableMDOListItem[]
 
 ```crmscript
 NSUserAgent agent;

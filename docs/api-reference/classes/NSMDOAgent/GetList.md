@@ -14,7 +14,7 @@ Method to get a MDO list.
  - **additionalInfo** Additional info to the MDO provider
  - **onlyHistory** If true, return only history items
 
-**Returns:** Array of NSMDOListItem
+**Returns:** NSMDOListItem[]
 
 ```crmscript
 NSMDOAgent agent;

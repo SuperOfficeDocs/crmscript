@@ -11,7 +11,7 @@ Return all projects where the person is project member.
 **Parameters:**
  - **personId** The person id
 
-**Returns:** ProjectListEntity
+**Returns:** NSProject[]
 
 ```crmscript
 NSProjectAgent agent;

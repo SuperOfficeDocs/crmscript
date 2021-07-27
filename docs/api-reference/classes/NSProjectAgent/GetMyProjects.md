@@ -11,7 +11,7 @@ Returning the projects belonging to an associate. If memberProjects is false onl
 **Parameters:**
  - **includeMemberProjects** True to include projects where the user is project member.
 
-**Returns:** The list of projects
+**Returns:** NSProject[]
 
 ```crmscript
 NSProjectAgent agent;

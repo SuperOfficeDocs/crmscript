@@ -26,6 +26,6 @@ Integer appointmentId;
 String rejectReason;
 Integer updateMode;
 NSEMailConnectionInfo smtpEMailConnectionInfo;
-Void res = agent.RejectWithSmtpEmailConfirmation(appointmentId, rejectReason, updateMode, smtpEMailConnectionInfo);
+agent.RejectWithSmtpEmailConfirmation(appointmentId, rejectReason, updateMode, smtpEMailConnectionInfo);
 ```
 

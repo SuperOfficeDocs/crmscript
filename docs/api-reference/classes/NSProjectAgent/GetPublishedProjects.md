@@ -11,7 +11,7 @@ Get published projects by project ids.
 **Parameters:**
  - **projectIds** The array of project ids
 
-**Returns:** Projects
+**Returns:** NSProject[]
 
 ```crmscript
 NSProjectAgent agent;

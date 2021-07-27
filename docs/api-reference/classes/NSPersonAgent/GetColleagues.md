@@ -9,7 +9,7 @@ so.topic: reference
 Gets the persons working in the same company as the logged on user.
 
 
-**Returns:** Colleagues.
+**Returns:** NSPerson[]
 
 ```crmscript
 NSPersonAgent agent;

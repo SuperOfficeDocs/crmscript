@@ -19,6 +19,6 @@ NSDocumentAgent agent;
 String filename;
 Bool personal;
 NSStream stream;
-Void res = agent.SetTemplateStream(filename, personal, stream);
+agent.SetTemplateStream(filename, personal, stream);
 ```
 

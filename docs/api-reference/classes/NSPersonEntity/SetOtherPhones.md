@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSPersonEntity_SetOtherPhones
-title: SetOtherPhones(EntityElementArray otherPhones)
+title: SetOtherPhones(NSEntityElement[] otherPhones)
 intellisense: NSPersonEntity.SetOtherPhones
 keywords: NSPersonEntity, GetOtherPhones
 so.topic: reference
@@ -9,11 +9,11 @@ so.topic: reference
 Returns a collection of pagers that belong to the contact person.
 
 **Parameter:** 
- - **otherPhones** EntityElementArray
+ - **otherPhones** NSEntityElement[]
 
 ```crmscript
 NSPersonEntity thing;
-EntityElementArray otherPhones;
+NSEntityElement[] otherPhones;
 thing.SetOtherPhones(otherPhones);
 ```
 

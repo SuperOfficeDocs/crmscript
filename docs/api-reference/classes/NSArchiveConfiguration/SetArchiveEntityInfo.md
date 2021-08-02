@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSArchiveConfiguration_SetArchiveEntityInfo
-title: SetArchiveEntityInfo(SelectableMDOListItemArray archiveEntityInfo)
+title: SetArchiveEntityInfo(NSSelectableMDOListItem[] archiveEntityInfo)
 intellisense: NSArchiveConfiguration.SetArchiveEntityInfo
 keywords: NSArchiveConfiguration, GetArchiveEntityInfo
 so.topic: reference
@@ -9,11 +9,11 @@ so.topic: reference
 
 
 **Parameter:** 
- - **archiveEntityInfo** SelectableMDOListItemArray
+ - **archiveEntityInfo** NSSelectableMDOListItem[]
 
 ```crmscript
 NSArchiveConfiguration thing;
-SelectableMDOListItemArray archiveEntityInfo;
+NSSelectableMDOListItem[] archiveEntityInfo;
 thing.SetArchiveEntityInfo(archiveEntityInfo);
 ```
 

@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSPersonEntity_GetInternetPhones
-title: EntityElementArray GetInternetPhones()
+title: NSEntityElement[] GetInternetPhones()
 intellisense: NSPersonEntity.GetInternetPhones
 keywords: NSPersonEntity, GetInternetPhones
 so.topic: reference
@@ -8,12 +8,12 @@ so.topic: reference
 
 
 
-**Returns:** EntityElementArray
+**Returns:** NSEntityElement[]
 
 
 ```crmscript
 NSPersonEntity thing;
-EntityElementArray internetPhones  = thing.GetInternetPhones();
+NSEntityElement[] internetPhones  = thing.GetInternetPhones();
 ```
 
 

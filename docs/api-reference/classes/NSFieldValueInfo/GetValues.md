@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSFieldValueInfo_GetValues
-title: StringArray GetValues()
+title: String[] GetValues()
 intellisense: NSFieldValueInfo.GetValues
 keywords: NSFieldValueInfo, GetValues
 so.topic: reference
@@ -8,12 +8,12 @@ so.topic: reference
 
 The values to be set on this field on this bulkupdate
 
-**Returns:** StringArray
+**Returns:** String[]
 
 
 ```crmscript
 NSFieldValueInfo thing;
-StringArray values  = thing.GetValues();
+String[] values  = thing.GetValues();
 ```
 
 

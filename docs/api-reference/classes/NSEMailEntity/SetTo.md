@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSEMailEntity_SetTo
-title: SetTo(EMailAddressArray to)
+title: SetTo(NSEMailAddress[] to)
 intellisense: NSEMailEntity.SetTo
 keywords: NSEMailEntity, GetTo
 so.topic: reference
@@ -9,11 +9,11 @@ so.topic: reference
 To recipients of e-mail
 
 **Parameter:** 
- - **to** EMailAddressArray
+ - **to** NSEMailAddress[]
 
 ```crmscript
 NSEMailEntity thing;
-EMailAddressArray to;
+NSEMailAddress[] to;
 thing.SetTo(to);
 ```
 

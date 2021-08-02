@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSTicketAgent_SendTicketMessage
-title: Void SendTicketMessage(Integer ticketMessageEntityId, StringArray to, StringArray cc, StringArray bcc, String subject, Integer replyTemplateId, String gdprSource)
+title: Void SendTicketMessage(Integer ticketMessageEntityId, String[] to, String[] cc, String[] bcc, String subject, Integer replyTemplateId, String gdprSource)
 intellisense: NSTicketAgent.SendTicketMessage
 keywords: NSTicketAgent, SendTicketMessage
 so.topic: reference
@@ -17,17 +17,15 @@ Send a message to recipients, e.g. by email or sms
  - **replyTemplateId** Optional ID of reply template to merge message with. <= 0 to skip.
  - **gdprSource** Optional GdprSource string which will be stored for newly created Persons. Blank value will give Gdpr source: API.
 
-**Returns:** This method has no return value
-
 ```crmscript
 NSTicketAgent agent;
 Integer ticketMessageEntityId;
-StringArray to;
-StringArray cc;
-StringArray bcc;
+String[] to;
+String[] cc;
+String[] bcc;
 String subject;
 Integer replyTemplateId;
 String gdprSource;
-Void res = agent.SendTicketMessage(ticketMessageEntityId, to, cc, bcc, subject, replyTemplateId, gdprSource);
+agent.SendTicketMessage(ticketMessageEntityId, to, cc, bcc, subject, replyTemplateId, gdprSource);
 ```
 

@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSEMailEntity_SetCc
-title: SetCc(EMailAddressArray cc)
+title: SetCc(NSEMailAddress[] cc)
 intellisense: NSEMailEntity.SetCc
 keywords: NSEMailEntity, GetCc
 so.topic: reference
@@ -9,11 +9,11 @@ so.topic: reference
 Cc recipients of e-mail
 
 **Parameter:** 
- - **cc** EMailAddressArray
+ - **cc** NSEMailAddress[]
 
 ```crmscript
 NSEMailEntity thing;
-EMailAddressArray cc;
+NSEMailAddress[] cc;
 thing.SetCc(cc);
 ```
 

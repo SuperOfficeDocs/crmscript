@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSParticipantSyncData_SetPhonePrivate
-title: SetPhonePrivate(StringArray phonePrivate)
+title: SetPhonePrivate(String[] phonePrivate)
 intellisense: NSParticipantSyncData.SetPhonePrivate
 keywords: NSParticipantSyncData, GetPhonePrivate
 so.topic: reference
@@ -9,11 +9,11 @@ so.topic: reference
 Returns a collection of phone numbers that belong to the contact person.
 
 **Parameter:** 
- - **phonePrivate** StringArray
+ - **phonePrivate** String[]
 
 ```crmscript
 NSParticipantSyncData thing;
-StringArray phonePrivate;
+String[] phonePrivate;
 thing.SetPhonePrivate(phonePrivate);
 ```
 

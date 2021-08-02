@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSFindResults_SetArchiveColumns
-title: SetArchiveColumns(ArchiveColumnInfoArray archiveColumns)
+title: SetArchiveColumns(NSArchiveColumnInfo[] archiveColumns)
 intellisense: NSFindResults.SetArchiveColumns
 keywords: NSFindResults, GetArchiveColumns
 so.topic: reference
@@ -9,11 +9,11 @@ so.topic: reference
 Array of ColumnInfo column specifications
 
 **Parameter:** 
- - **archiveColumns** ArchiveColumnInfoArray
+ - **archiveColumns** NSArchiveColumnInfo[]
 
 ```crmscript
 NSFindResults thing;
-ArchiveColumnInfoArray archiveColumns;
+NSArchiveColumnInfo[] archiveColumns;
 thing.SetArchiveColumns(archiveColumns);
 ```
 

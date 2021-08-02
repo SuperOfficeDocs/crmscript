@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSQuoteConnection_GetAssociateAccessIds
-title: IntegerArray GetAssociateAccessIds()
+title: Integer[] GetAssociateAccessIds()
 intellisense: NSQuoteConnection.GetAssociateAccessIds
 keywords: NSQuoteConnection, GetAssociateAccessIds
 so.topic: reference
@@ -8,12 +8,12 @@ so.topic: reference
 
 Array of ids containing associates that will have access to this connection.
 
-**Returns:** IntegerArray
+**Returns:** Integer[]
 
 
 ```crmscript
 NSQuoteConnection thing;
-IntegerArray associateAccessIds  = thing.GetAssociateAccessIds();
+Integer[] associateAccessIds  = thing.GetAssociateAccessIds();
 ```
 
 

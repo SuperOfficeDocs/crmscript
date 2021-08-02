@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSHierarchyEntity_GetChildren
-title: HierarchyEntityArray GetChildren()
+title: NSHierarchyEntity[] GetChildren()
 intellisense: NSHierarchyEntity.GetChildren
 keywords: NSHierarchyEntity, GetChildren
 so.topic: reference
@@ -8,12 +8,12 @@ so.topic: reference
 
 Sub-items, if any.
 
-**Returns:** HierarchyEntityArray
+**Returns:** NSHierarchyEntity[]
 
 
 ```crmscript
 NSHierarchyEntity thing;
-HierarchyEntityArray children  = thing.GetChildren();
+NSHierarchyEntity[] children  = thing.GetChildren();
 ```
 
 

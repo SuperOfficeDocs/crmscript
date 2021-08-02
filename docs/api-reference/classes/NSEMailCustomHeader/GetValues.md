@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSEMailCustomHeader_GetValues
-title: StringArray GetValues()
+title: String[] GetValues()
 intellisense: NSEMailCustomHeader.GetValues
 keywords: NSEMailCustomHeader, GetValues
 so.topic: reference
@@ -8,12 +8,12 @@ so.topic: reference
 
 
 
-**Returns:** StringArray
+**Returns:** String[]
 
 
 ```crmscript
 NSEMailCustomHeader thing;
-StringArray values  = thing.GetValues();
+String[] values  = thing.GetValues();
 ```
 
 

@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSParticipantSyncData_GetEMail
-title: StringArray GetEMail()
+title: String[] GetEMail()
 intellisense: NSParticipantSyncData.GetEMail
 keywords: NSParticipantSyncData, GetEMail
 so.topic: reference
@@ -8,12 +8,12 @@ so.topic: reference
 
 
 
-**Returns:** StringArray
+**Returns:** String[]
 
 
 ```crmscript
 NSParticipantSyncData thing;
-StringArray eMail  = thing.GetEMail();
+String[] eMail  = thing.GetEMail();
 ```
 
 

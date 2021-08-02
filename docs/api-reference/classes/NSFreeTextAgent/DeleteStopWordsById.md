@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSFreeTextAgent_DeleteStopWordsById
-title: Void DeleteStopWordsById(IntegerArray stopWordIds)
+title: Void DeleteStopWordsById(Integer[] stopWordIds)
 intellisense: NSFreeTextAgent.DeleteStopWordsById
 keywords: NSFreeTextAgent, DeleteStopWordsById
 so.topic: reference
@@ -11,11 +11,9 @@ Delete the stop words with these ids
 **Parameters:**
  - **stopWordIds** The ids of the stopwords to delete
 
-**Returns:** This method has no return value
-
 ```crmscript
 NSFreeTextAgent agent;
-IntegerArray stopWordIds;
-Void res = agent.DeleteStopWordsById(stopWordIds);
+Integer[] stopWordIds;
+agent.DeleteStopWordsById(stopWordIds);
 ```
 

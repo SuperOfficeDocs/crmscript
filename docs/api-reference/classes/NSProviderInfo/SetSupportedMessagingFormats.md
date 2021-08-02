@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSProviderInfo_SetSupportedMessagingFormats
-title: SetSupportedMessagingFormats(StringArray supportedMessagingFormats)
+title: SetSupportedMessagingFormats(String[] supportedMessagingFormats)
 intellisense: NSProviderInfo.SetSupportedMessagingFormats
 keywords: NSProviderInfo, GetSupportedMessagingFormats
 so.topic: reference
@@ -9,11 +9,11 @@ so.topic: reference
 This value can typically be "sms/160", "sms/mms", "smtp/rfc822"
 
 **Parameter:** 
- - **supportedMessagingFormats** StringArray
+ - **supportedMessagingFormats** String[]
 
 ```crmscript
 NSProviderInfo thing;
-StringArray supportedMessagingFormats;
+String[] supportedMessagingFormats;
 thing.SetSupportedMessagingFormats(supportedMessagingFormats);
 ```
 

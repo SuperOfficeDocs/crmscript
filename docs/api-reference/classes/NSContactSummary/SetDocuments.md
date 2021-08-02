@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSContactSummary_SetDocuments
-title: SetDocuments(ActivitySummaryItemArray documents)
+title: SetDocuments(NSActivitySummaryItem[] documents)
 intellisense: NSContactSummary.SetDocuments
 keywords: NSContactSummary, GetDocuments
 so.topic: reference
@@ -9,11 +9,11 @@ so.topic: reference
 Recent documents on contact
 
 **Parameter:** 
- - **documents** ActivitySummaryItemArray
+ - **documents** NSActivitySummaryItem[]
 
 ```crmscript
 NSContactSummary thing;
-ActivitySummaryItemArray documents;
+NSActivitySummaryItem[] documents;
 thing.SetDocuments(documents);
 ```
 

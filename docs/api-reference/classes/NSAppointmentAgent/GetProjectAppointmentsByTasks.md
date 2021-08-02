@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSAppointmentAgent_GetProjectAppointmentsByTasks
-title: AppointmentArray GetProjectAppointmentsByTasks(Integer projectId, DateTime startTime, DateTime endTime, Integer count, IntegerArray taskIds)
+title: NSAppointment[] GetProjectAppointmentsByTasks(Integer projectId, DateTime startTime, DateTime endTime, Integer count, Integer[] taskIds)
 intellisense: NSAppointmentAgent.GetProjectAppointmentsByTasks
 keywords: NSAppointmentAgent, GetProjectAppointmentsByTasks
 so.topic: reference
@@ -15,7 +15,7 @@ Method that returns a specified number of appointments matching the list of appo
  - **count** The maximum number of appointments that should be returned. -1 means no count restrictions.
  - **taskIds** The task ids as an integer array. Task represents the different types of activities, like “Phone call”, “Meeting” and so on.
 
-**Returns:** Array of Appointments.
+**Returns:** NSAppointment[]
 
 ```crmscript
 NSAppointmentAgent agent;
@@ -23,7 +23,7 @@ Integer projectId;
 DateTime startTime;
 DateTime endTime;
 Integer count;
-IntegerArray taskIds;
-AppointmentArray res = agent.GetProjectAppointmentsByTasks(projectId, startTime, endTime, count, taskIds);
+Integer[] taskIds;
+NSAppointment[] res = agent.GetProjectAppointmentsByTasks(projectId, startTime, endTime, count, taskIds);
 ```
 

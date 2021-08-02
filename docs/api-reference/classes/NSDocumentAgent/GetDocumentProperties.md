@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSDocumentAgent_GetDocumentProperties
-title: StringDictionary GetDocumentProperties(Integer documentId, StringArray requestedProperties)
+title: StringDictionary GetDocumentProperties(Integer documentId, String[] requestedProperties)
 intellisense: NSDocumentAgent.GetDocumentProperties
 keywords: NSDocumentAgent, GetDocumentProperties
 so.topic: reference
@@ -12,12 +12,12 @@ Get plugin-dependent properties for the document. A number of standard propertie
  - **documentId** SuperOffice document ID
  - **requestedProperties** Array of property names whose values are being requested.
 
-**Returns:** Dictionary of name=value pairs, corresponding to the requested properties.
+**Returns:** StringDictionary
 
 ```crmscript
 NSDocumentAgent agent;
 Integer documentId;
-StringArray requestedProperties;
+String[] requestedProperties;
 StringDictionary res = agent.GetDocumentProperties(documentId, requestedProperties);
 ```
 

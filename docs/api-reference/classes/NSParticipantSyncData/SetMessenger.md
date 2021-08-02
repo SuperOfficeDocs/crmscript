@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSParticipantSyncData_SetMessenger
-title: SetMessenger(StringArray messenger)
+title: SetMessenger(String[] messenger)
 intellisense: NSParticipantSyncData.SetMessenger
 keywords: NSParticipantSyncData, GetMessenger
 so.topic: reference
@@ -9,11 +9,11 @@ so.topic: reference
 
 
 **Parameter:** 
- - **messenger** StringArray
+ - **messenger** String[]
 
 ```crmscript
 NSParticipantSyncData thing;
-StringArray messenger;
+String[] messenger;
 thing.SetMessenger(messenger);
 ```
 

@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSAppointmentAgent_GetPublishedAppointments
-title: AppointmentArray GetPublishedAppointments(IntegerArray appointmentIds)
+title: NSAppointment[] GetPublishedAppointments(Integer[] appointmentIds)
 intellisense: NSAppointmentAgent.GetPublishedAppointments
 keywords: NSAppointmentAgent, GetPublishedAppointments
 so.topic: reference
@@ -9,13 +9,13 @@ so.topic: reference
 Get published appointments by appointment ids.
 
 **Parameters:**
- - **appointmentIds** The array of appointment ids
+ - **appointmentIds** The array of appointment IDs
 
-**Returns:** Array of Appointment
+**Returns:** NSAppointment[]
 
 ```crmscript
 NSAppointmentAgent agent;
-IntegerArray appointmentIds;
-AppointmentArray res = agent.GetPublishedAppointments(appointmentIds);
+Integer[] appointmentIds;
+NSAppointment[] res = agent.GetPublishedAppointments(appointmentIds);
 ```
 

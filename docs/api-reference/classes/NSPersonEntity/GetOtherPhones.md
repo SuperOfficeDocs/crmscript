@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSPersonEntity_GetOtherPhones
-title: EntityElementArray GetOtherPhones()
+title: NSEntityElement[] GetOtherPhones()
 intellisense: NSPersonEntity.GetOtherPhones
 keywords: NSPersonEntity, GetOtherPhones
 so.topic: reference
@@ -8,12 +8,12 @@ so.topic: reference
 
 Returns a collection of pagers that belong to the contact person.
 
-**Returns:** EntityElementArray
+**Returns:** NSEntityElement[]
 
 
 ```crmscript
 NSPersonEntity thing;
-EntityElementArray otherPhones  = thing.GetOtherPhones();
+NSEntityElement[] otherPhones  = thing.GetOtherPhones();
 ```
 
 

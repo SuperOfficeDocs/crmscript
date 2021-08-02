@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSFreeTextAgent_GetStopWordList
-title: StringArray GetStopWordList()
+title: String[] GetStopWordList()
 intellisense: NSFreeTextAgent.GetStopWordList
 keywords: NSFreeTextAgent, GetStopWordList
 so.topic: reference
@@ -9,10 +9,10 @@ so.topic: reference
 Returns the list of stop words
 
 
-**Returns:** The list of stop words
+**Returns:** String[]
 
 ```crmscript
 NSFreeTextAgent agent;
-StringArray res = agent.GetStopWordList();
+String[] res = agent.GetStopWordList();
 ```
 

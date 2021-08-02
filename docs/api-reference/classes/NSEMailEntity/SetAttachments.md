@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSEMailEntity_SetAttachments
-title: SetAttachments(EMailAttachmentArray attachments)
+title: SetAttachments(NSEMailAttachment[] attachments)
 intellisense: NSEMailEntity.SetAttachments
 keywords: NSEMailEntity, GetAttachments
 so.topic: reference
@@ -9,11 +9,11 @@ so.topic: reference
 
 
 **Parameter:** 
- - **attachments** EMailAttachmentArray
+ - **attachments** NSEMailAttachment[]
 
 ```crmscript
 NSEMailEntity thing;
-EMailAttachmentArray attachments;
+NSEMailAttachment[] attachments;
 thing.SetAttachments(attachments);
 ```
 

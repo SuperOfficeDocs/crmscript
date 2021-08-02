@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSDocumentAgent_ExecuteDocumentCommand
-title: ReturnInfo ExecuteDocumentCommand(Integer documentId, String versionId, StringArray allowedReturnTypes, String command, StringArray additionalData)
+title: NSReturnInfo ExecuteDocumentCommand(Integer documentId, String versionId, String[] allowedReturnTypes, String command, String[] additionalData)
 intellisense: NSDocumentAgent.ExecuteDocumentCommand
 keywords: NSDocumentAgent, ExecuteDocumentCommand
 so.topic: reference
@@ -15,15 +15,15 @@ Execute a custom command on a particular document, optionally a particular versi
  - **command** Command name, generally matching one of those returned from the GetDocumentCommands service. However, it is legal for document plugins to support commands that are not declared through GetDocumentCommands, for instance if a custom GUI needs to access plugin functionality.
  - **additionalData** Any additional data that the document command needs. This parameter can be used as a tunnel between a custom-programmed GUI and its plugin.<br/>It is suggested that the format is name=value, with one such pair per array item.
 
-**Returns:** Return information, including possible requests for further processing ("Return Action"). Return actions are constrained by the allowedReturnTypes parameter.
+**Returns:** NSReturnInfo
 
 ```crmscript
 NSDocumentAgent agent;
 Integer documentId;
 String versionId;
-StringArray allowedReturnTypes;
+String[] allowedReturnTypes;
 String command;
-StringArray additionalData;
-ReturnInfo res = agent.ExecuteDocumentCommand(documentId, versionId, allowedReturnTypes, command, additionalData);
+String[] additionalData;
+NSReturnInfo res = agent.ExecuteDocumentCommand(documentId, versionId, allowedReturnTypes, command, additionalData);
 ```
 

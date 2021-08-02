@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSParticipantSyncData_GetPhoneFax
-title: StringArray GetPhoneFax()
+title: String[] GetPhoneFax()
 intellisense: NSParticipantSyncData.GetPhoneFax
 keywords: NSParticipantSyncData, GetPhoneFax
 so.topic: reference
@@ -8,12 +8,12 @@ so.topic: reference
 
 Returns a collection of fax numbers that belong to the contact person.
 
-**Returns:** StringArray
+**Returns:** String[]
 
 
 ```crmscript
 NSParticipantSyncData thing;
-StringArray phoneFax  = thing.GetPhoneFax();
+String[] phoneFax  = thing.GetPhoneFax();
 ```
 
 

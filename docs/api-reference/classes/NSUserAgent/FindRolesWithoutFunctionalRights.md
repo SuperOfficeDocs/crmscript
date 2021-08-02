@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSUserAgent_FindRolesWithoutFunctionalRights
-title: IntegerArray FindRolesWithoutFunctionalRights(StringArray functionalRightNames)
+title: Integer[] FindRolesWithoutFunctionalRights(String[] functionalRightNames)
 intellisense: NSUserAgent.FindRolesWithoutFunctionalRights
 keywords: NSUserAgent, FindRolesWithoutFunctionalRights
 so.topic: reference
@@ -11,11 +11,11 @@ Find all roles without a given set of functional rights. The roles matched must 
 **Parameters:**
  - **functionalRightNames** An array of functional rights names to search for
 
-**Returns:** Role ids that without your functional rights
+**Returns:** Integer[]
 
 ```crmscript
 NSUserAgent agent;
-StringArray functionalRightNames;
-IntegerArray res = agent.FindRolesWithoutFunctionalRights(functionalRightNames);
+String[] functionalRightNames;
+Integer[] res = agent.FindRolesWithoutFunctionalRights(functionalRightNames);
 ```
 

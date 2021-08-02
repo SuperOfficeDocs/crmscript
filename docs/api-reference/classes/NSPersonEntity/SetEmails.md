@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSPersonEntity_SetEmails
-title: SetEmails(EntityElementArray emails)
+title: SetEmails(NSEntityElement[] emails)
 intellisense: NSPersonEntity.SetEmails
 keywords: NSPersonEntity, GetEmails
 so.topic: reference
@@ -9,11 +9,11 @@ so.topic: reference
 A collection of the person's emails
 
 **Parameter:** 
- - **emails** EntityElementArray
+ - **emails** NSEntityElement[]
 
 ```crmscript
 NSPersonEntity thing;
-EntityElementArray emails;
+NSEntityElement[] emails;
 thing.SetEmails(emails);
 ```
 

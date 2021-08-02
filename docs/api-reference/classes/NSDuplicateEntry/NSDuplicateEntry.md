@@ -7,10 +7,4 @@ so.topic: reference
 ---
 
 
-Carrier object for DuplicateEntry.
-
-
-
-
-1. autolist
-
+Carrier object for NSDuplicateEntry.

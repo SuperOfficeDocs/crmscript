@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSContactAgent_SetDuplicateRulesStatus
-title: Void SetDuplicateRulesStatus(DuplicateRuleArray rules)
+title: Void SetDuplicateRulesStatus(NSDuplicateRule[] rules)
 intellisense: NSContactAgent.SetDuplicateRulesStatus
 keywords: NSContactAgent, SetDuplicateRulesStatus
 so.topic: reference

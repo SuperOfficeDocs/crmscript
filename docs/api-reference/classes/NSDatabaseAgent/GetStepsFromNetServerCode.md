@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSDatabaseAgent_GetStepsFromNetServerCode
-title: DictionaryStepInformationArray GetStepsFromNetServerCode()
+title: NSDictionaryStepInformation[] GetStepsFromNetServerCode()
 intellisense: NSDatabaseAgent.GetStepsFromNetServerCode
 keywords: NSDatabaseAgent, GetStepsFromNetServerCode
 so.topic: reference
@@ -13,6 +13,6 @@ Get information about the dictionary steps that NetServer was generated for
 
 ```crmscript
 NSDatabaseAgent agent;
-DictionaryStepInformationArray res = agent.GetStepsFromNetServerCode();
+NSDictionaryStepInformation[] res = agent.GetStepsFromNetServerCode();
 ```
 

@@ -1,19 +1,19 @@
 ﻿---
 uid: crmscript_ref_NSSaleTypeEntity_SetStages
-title: SetStages(SelectableMDOListItemArray stages)
+title: SetStages(NSSelectableMDOListItem[] stages)
 intellisense: NSSaleTypeEntity.SetStages
 keywords: NSSaleTypeEntity, GetStages
 so.topic: reference
 ---
 
-Stages, those associated with this SaleType are selected.
+Stages, those associated with this NSSaleType are selected.
 
 **Parameter:** 
- - **stages** SelectableMDOListItemArray
+ - **stages** NSSelectableMDOListItem[]
 
 ```crmscript
 NSSaleTypeEntity thing;
-SelectableMDOListItemArray stages;
+NSSelectableMDOListItem[] stages;
 thing.SetStages(stages);
 ```
 

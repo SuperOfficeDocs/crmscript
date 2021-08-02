@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSDocumentAgent_CheckinDocument
-title: ReturnInfo CheckinDocument(Integer documentId, StringArray allowedReturnTypes, String versionDescription, StringArray versionExtraFields)
+title: NSReturnInfo CheckinDocument(Integer documentId, String[] allowedReturnTypes, String versionDescription, String[] versionExtraFields)
 intellisense: NSDocumentAgent.CheckinDocument
 keywords: NSDocumentAgent, CheckinDocument
 so.topic: reference
@@ -14,14 +14,14 @@ Check in a currently checked-out document
  - **versionDescription** Optional textual description related to this version of the document; may be blank, and is discarded if the document/plugin do not support versioning.
  - **versionExtraFields** Optional extra metadata related to the new version (as opposed to metadata related to the document as a whole). Discarded if the document/plugin do not support versioning.
 
-**Returns:** Return information, including possible requests for further processing ("Return Action"). Return actions are constrained by the allowedReturnTypes parameter.
+**Returns:** NSReturnInfo
 
 ```crmscript
 NSDocumentAgent agent;
 Integer documentId;
-StringArray allowedReturnTypes;
+String[] allowedReturnTypes;
 String versionDescription;
-StringArray versionExtraFields;
-ReturnInfo res = agent.CheckinDocument(documentId, allowedReturnTypes, versionDescription, versionExtraFields);
+String[] versionExtraFields;
+NSReturnInfo res = agent.CheckinDocument(documentId, allowedReturnTypes, versionDescription, versionExtraFields);
 ```
 

@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSPersonSummary_SetSales
-title: SetSales(SaleSummaryItemArray sales)
+title: SetSales(NSSaleSummaryItem[] sales)
 intellisense: NSPersonSummary.SetSales
 keywords: NSPersonSummary, GetSales
 so.topic: reference
@@ -9,11 +9,11 @@ so.topic: reference
 Recent sales on person
 
 **Parameter:** 
- - **sales** SaleSummaryItemArray
+ - **sales** NSSaleSummaryItem[]
 
 ```crmscript
 NSPersonSummary thing;
-SaleSummaryItemArray sales;
+NSSaleSummaryItem[] sales;
 thing.SetSales(sales);
 ```
 

@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSEMailAgent_FindContactOrPersonByEmailName
-title: ContactOrPersonFromEmailArray FindContactOrPersonByEmailName(String name, String emailAddress)
+title: ContactOrPersonFromEmail[] FindContactOrPersonByEmailName(String name, String emailAddress)
 intellisense: NSEMailAgent.FindContactOrPersonByEmailName
 keywords: NSEMailAgent, FindContactOrPersonByEmailName
 so.topic: reference
@@ -12,12 +12,12 @@ so.topic: reference
  - **name** The sender name
  - **emailAddress** The sender email address
 
-**Returns:** Contacts and persons matching emailaddress and name
+**Returns:** ContactOrPersonFromEmail[]
 
 ```crmscript
 NSEMailAgent agent;
 String name;
 String emailAddress;
-ContactOrPersonFromEmailArray res = agent.FindContactOrPersonByEmailName(name, emailAddress);
+ContactOrPersonFromEmail[] res = agent.FindContactOrPersonByEmailName(name, emailAddress);
 ```
 

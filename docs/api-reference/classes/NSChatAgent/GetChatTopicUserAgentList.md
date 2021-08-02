@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSChatAgent_GetChatTopicUserAgentList
-title: ChatTopicAgentArray GetChatTopicUserAgentList(Integer chatTopicId)
+title: NSChatTopicAgent[] GetChatTopicUserAgentList(Integer chatTopicId)
 intellisense: NSChatAgent.GetChatTopicUserAgentList
 keywords: NSChatAgent, GetChatTopicUserAgentList
 so.topic: reference
@@ -9,13 +9,14 @@ so.topic: reference
 Get list of users assigned to a chat topic
 
 **Parameters:**
- - **chatTopicId** Id of the chat topic
 
-**Returns:** List of user agents assigned to chat topic.
+- **chatTopicId** ID of the chat topic
+
+**Returns:** NSChatTopicAgent[]
 
 ```crmscript
 NSChatAgent agent;
 Integer chatTopicId;
-ChatTopicAgentArray res = agent.GetChatTopicUserAgentList(chatTopicId);
+NSChatTopicAgent[] res = agent.GetChatTopicUserAgentList(chatTopicId);
 ```
 

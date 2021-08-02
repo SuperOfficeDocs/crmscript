@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSQuoteConnection_SetUserGroupAccessIds
-title: SetUserGroupAccessIds(IntegerArray userGroupAccessIds)
+title: SetUserGroupAccessIds(Integer[] userGroupAccessIds)
 intellisense: NSQuoteConnection.SetUserGroupAccessIds
 keywords: NSQuoteConnection, GetUserGroupAccessIds
 so.topic: reference
@@ -9,11 +9,11 @@ so.topic: reference
 Array of ids containing usergroups that will have access to this connection.
 
 **Parameter:** 
- - **userGroupAccessIds** IntegerArray
+ - **userGroupAccessIds** Integer[]
 
 ```crmscript
 NSQuoteConnection thing;
-IntegerArray userGroupAccessIds;
+Integer[] userGroupAccessIds;
 thing.SetUserGroupAccessIds(userGroupAccessIds);
 ```
 

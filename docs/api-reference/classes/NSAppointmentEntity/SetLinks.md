@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSAppointmentEntity_SetLinks
-title: SetLinks(LinkArray links)
+title: SetLinks(NSLink[] links)
 intellisense: NSAppointmentEntity.SetLinks
 keywords: NSAppointmentEntity, GetLinks
 so.topic: reference
@@ -9,11 +9,11 @@ so.topic: reference
 List of all elements linked to the appointment.
 
 **Parameter:** 
- - **links** LinkArray
+ - **links** NSLink[]
 
 ```crmscript
 NSAppointmentEntity thing;
-LinkArray links;
+NSLink[] links;
 thing.SetLinks(links);
 ```
 

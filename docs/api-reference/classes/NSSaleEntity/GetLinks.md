@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSSaleEntity_GetLinks
-title: LinkArray GetLinks()
+title: NSLink[] GetLinks()
 intellisense: NSSaleEntity.GetLinks
 keywords: NSSaleEntity, GetLinks
 so.topic: reference
@@ -8,12 +8,12 @@ so.topic: reference
 
 List of all elements linked to the sale.
 
-**Returns:** LinkArray
+**Returns:** NSLink[]
 
 
 ```crmscript
 NSSaleEntity thing;
-LinkArray links  = thing.GetLinks();
+NSLink[] links  = thing.GetLinks();
 ```
 
 

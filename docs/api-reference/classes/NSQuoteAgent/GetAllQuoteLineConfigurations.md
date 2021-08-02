@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSQuoteAgent_GetAllQuoteLineConfigurations
-title: QuoteLineConfigurationArray GetAllQuoteLineConfigurations()
+title: NSQuoteLineConfiguration[] GetAllQuoteLineConfigurations()
 intellisense: NSQuoteAgent.GetAllQuoteLineConfigurations
 keywords: NSQuoteAgent, GetAllQuoteLineConfigurations
 so.topic: reference
@@ -9,10 +9,10 @@ so.topic: reference
 Returns all the configuration fields
 
 
-**Returns:** Array of QuoteLineConfigurations
+**Returns:** NSQuoteLineConfiguration[]
 
 ```crmscript
 NSQuoteAgent agent;
-QuoteLineConfigurationArray res = agent.GetAllQuoteLineConfigurations();
+NSQuoteLineConfiguration[] res = agent.GetAllQuoteLineConfigurations();
 ```
 

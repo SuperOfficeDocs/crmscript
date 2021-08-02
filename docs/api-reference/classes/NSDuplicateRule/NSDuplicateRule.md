@@ -6,10 +6,4 @@ sortOrder: 2732
 so.topic: reference
 ---
 
-Carrier object for DuplicateRule.
-
-
-
-
-1. autolist
-
+Carrier object for NSDuplicateRule.

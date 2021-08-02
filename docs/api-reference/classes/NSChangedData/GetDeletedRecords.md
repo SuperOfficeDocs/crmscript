@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSChangedData_GetDeletedRecords
-title: ChangedDataItemArray GetDeletedRecords()
+title: NSChangedDataItem[] GetDeletedRecords()
 intellisense: NSChangedData.GetDeletedRecords
 keywords: NSChangedData, GetDeletedRecords
 so.topic: reference
@@ -8,12 +8,12 @@ so.topic: reference
 
 Ids of deleted records.
 
-**Returns:** ChangedDataItemArray
+**Returns:** NSChangedDataItem[]
 
 
 ```crmscript
 NSChangedData thing;
-ChangedDataItemArray deletedRecords  = thing.GetDeletedRecords();
+NSChangedDataItem[] deletedRecords  = thing.GetDeletedRecords();
 ```
 
 

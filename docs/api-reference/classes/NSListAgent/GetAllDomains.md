@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSListAgent_GetAllDomains
-title: DomainArray GetAllDomains()
+title: Integer[] GetAllDomains()
 intellisense: NSListAgent.GetAllDomains
 keywords: NSListAgent, GetAllDomains
 so.topic: reference
@@ -13,6 +13,6 @@ Get list of all domains
 
 ```crmscript
 NSListAgent agent;
-DomainArray res = agent.GetAllDomains();
+Integer[] res = agent.GetAllDomains();
 ```
 

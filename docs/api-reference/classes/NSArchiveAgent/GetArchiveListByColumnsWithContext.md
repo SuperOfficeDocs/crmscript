@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSArchiveAgent_GetArchiveListByColumnsWithContext
-title: ArchiveListItemArray GetArchiveListByColumnsWithContext(String providerName, StringArray columns, ArchiveOrderByInfoArray sortOrder, ArchiveRestrictionInfoArray restriction, StringArray entities, Integer page, Integer pageSize, String context)
+title: NSArchiveListItem[] GetArchiveListByColumnsWithContext(String providerName, String[] columns, NSArchiveOrderByInfo[] sortOrder, NSArchiveRestrictionInfo[] restriction, String[] entities, Integer page, Integer pageSize, String context)
 intellisense: NSArchiveAgent.GetArchiveListByColumnsWithContext
 keywords: NSArchiveAgent, GetArchiveListByColumnsWithContext
 so.topic: reference
@@ -23,13 +23,13 @@ Get a page of results for an archive list with context parameter, explicitly spe
 ```crmscript
 NSArchiveAgent agent;
 String providerName;
-StringArray columns;
-ArchiveOrderByInfoArray sortOrder;
-ArchiveRestrictionInfoArray restriction;
-StringArray entities;
+String[] columns;
+NSArchiveOrderByInfo[] sortOrder;
+NSArchiveRestrictionInfo[] restriction;
+String[] entities;
 Integer page;
 Integer pageSize;
 String context;
-ArchiveListItemArray res = agent.GetArchiveListByColumnsWithContext(providerName, columns, sortOrder, restriction, entities, page, pageSize, context);
+NSArchiveListItem[] res = agent.GetArchiveListByColumnsWithContext(providerName, columns, sortOrder, restriction, entities, page, pageSize, context);
 ```
 

@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSArchiveConfiguration_GetArchiveColumnInfo
-title: ArchiveColumnInfoArray GetArchiveColumnInfo()
+title: NSArchiveColumnInfo[] GetArchiveColumnInfo()
 intellisense: NSArchiveConfiguration.GetArchiveColumnInfo
 keywords: NSArchiveConfiguration, GetArchiveColumnInfo
 so.topic: reference
@@ -8,12 +8,12 @@ so.topic: reference
 
 
 
-**Returns:** ArchiveColumnInfoArray
+**Returns:** NSArchiveColumnInfo[]
 
 
 ```crmscript
 NSArchiveConfiguration thing;
-ArchiveColumnInfoArray archiveColumnInfo  = thing.GetArchiveColumnInfo();
+NSArchiveColumnInfo[] archiveColumnInfo  = thing.GetArchiveColumnInfo();
 ```
 
 

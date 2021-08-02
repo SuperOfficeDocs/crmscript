@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSEMailAgent_FindContactOrPersonByEmailNameWithLimit
-title: ContactOrPersonFromEmailArray FindContactOrPersonByEmailNameWithLimit(String name, String emailAddress, Integer numberOfContacts, Integer numberOfPersons)
+title: ContactOrPersonFromEmail[] FindContactOrPersonByEmailNameWithLimit(String name, String emailAddress, Integer numberOfContacts, Integer numberOfPersons)
 intellisense: NSEMailAgent.FindContactOrPersonByEmailNameWithLimit
 keywords: NSEMailAgent, FindContactOrPersonByEmailNameWithLimit
 so.topic: reference
@@ -14,7 +14,7 @@ so.topic: reference
  - **numberOfContacts** Maximum returned number of contacts
  - **numberOfPersons** Maximum returned number of persons
 
-**Returns:** Contacts and persons matching emailaddress and name
+**Returns:** ContactOrPersonFromEmail[]
 
 ```crmscript
 NSEMailAgent agent;
@@ -22,6 +22,6 @@ String name;
 String emailAddress;
 Integer numberOfContacts;
 Integer numberOfPersons;
-ContactOrPersonFromEmailArray res = agent.FindContactOrPersonByEmailNameWithLimit(name, emailAddress, numberOfContacts, numberOfPersons);
+ContactOrPersonFromEmail[] res = agent.FindContactOrPersonByEmailNameWithLimit(name, emailAddress, numberOfContacts, numberOfPersons);
 ```
 

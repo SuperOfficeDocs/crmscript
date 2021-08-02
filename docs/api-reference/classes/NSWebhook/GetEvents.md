@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSWebhook_GetEvents
-title: StringArray GetEvents()
+title: String[] GetEvents()
 intellisense: NSWebhook.GetEvents
 keywords: NSWebhook, GetEvents
 so.topic: reference
@@ -8,12 +8,12 @@ so.topic: reference
 
 Array of event names that trigger this webhook: ['contact.created', 'sale.changed'] 
 
-**Returns:** StringArray
+**Returns:** String[]
 
 
 ```crmscript
 NSWebhook thing;
-StringArray events  = thing.GetEvents();
+String[] events  = thing.GetEvents();
 ```
 
 

@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSEMailCustomHeader_SetValues
-title: SetValues(StringArray values)
+title: SetValues(String[] values)
 intellisense: NSEMailCustomHeader.SetValues
 keywords: NSEMailCustomHeader, GetValues
 so.topic: reference
@@ -9,11 +9,11 @@ so.topic: reference
 
 
 **Parameter:** 
- - **values** StringArray
+ - **values** String[]
 
 ```crmscript
 NSEMailCustomHeader thing;
-StringArray values;
+String[] values;
 thing.SetValues(values);
 ```
 

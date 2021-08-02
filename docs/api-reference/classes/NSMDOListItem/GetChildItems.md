@@ -1,19 +1,19 @@
 ﻿---
 uid: crmscript_ref_NSMDOListItem_GetChildItems
-title: MDOListItemArray GetChildItems()
+title: NSMDOListItem[] GetChildItems()
 intellisense: NSMDOListItem.GetChildItems
 keywords: NSMDOListItem, GetChildItems
 so.topic: reference
 ---
 
-The child items of the MDOListItem
+The child items of the NSMDOListItem
 
-**Returns:** MDOListItemArray
+**Returns:** NSMDOListItem[]
 
 
 ```crmscript
 NSMDOListItem thing;
-MDOListItemArray childItems  = thing.GetChildItems();
+NSMDOListItem[] childItems  = thing.GetChildItems();
 ```
 
 

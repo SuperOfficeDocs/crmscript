@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSTicketAgent_GetTickets
-title: TicketArray GetTickets(IntegerArray ticketIds)
+title: Ticket[] GetTickets(Integer[] ticketIds)
 intellisense: NSTicketAgent.GetTickets
 keywords: NSTicketAgent, GetTickets
 so.topic: reference
@@ -11,11 +11,11 @@ Get multiple tickets
 **Parameters:**
  - **ticketIds** The ids of tickets to get
 
-**Returns:** Returns array of tickets in same order as input ids
+**Returns:** Ticket[]
 
 ```crmscript
 NSTicketAgent agent;
-IntegerArray ticketIds;
-TicketArray res = agent.GetTickets(ticketIds);
+Integer[] ticketIds;
+Ticket[] res = agent.GetTickets(ticketIds);
 ```
 

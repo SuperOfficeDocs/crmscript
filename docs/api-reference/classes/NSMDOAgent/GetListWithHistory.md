@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSMDOAgent_GetListWithHistory
-title: MDOListItemArray GetListWithHistory(String name, Bool forceFlatList, String additionalInfo, IntegerArray historyItems, Bool onlyHistory)
+title: NSMDOListItem[] GetListWithHistory(String name, Bool forceFlatList, String additionalInfo, Integer[] historyItems, Bool onlyHistory)
 intellisense: NSMDOAgent.GetListWithHistory
 keywords: NSMDOAgent, GetListWithHistory
 so.topic: reference
@@ -15,15 +15,15 @@ Method to get a MDO list with own history list.
  - **historyItems** An array of ids, used to get the history list
  - **onlyHistory** If true, return only history items
 
-**Returns:** Array of MDOListItem
+**Returns:** NSMDOListItem[]
 
 ```crmscript
 NSMDOAgent agent;
 String name;
 Bool forceFlatList;
 String additionalInfo;
-IntegerArray historyItems;
+Integer[] historyItems;
 Bool onlyHistory;
-MDOListItemArray res = agent.GetListWithHistory(name, forceFlatList, additionalInfo, historyItems, onlyHistory);
+NSMDOListItem[] res = agent.GetListWithHistory(name, forceFlatList, additionalInfo, historyItems, onlyHistory);
 ```
 

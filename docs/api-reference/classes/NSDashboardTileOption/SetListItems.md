@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSDashboardTileOption_SetListItems
-title: SetListItems(MDOListItemArray listItems)
+title: SetListItems(NSMDOListItem[] listItems)
 intellisense: NSDashboardTileOption.SetListItems
 keywords: NSDashboardTileOption, GetListItems
 so.topic: reference
@@ -9,11 +9,11 @@ so.topic: reference
 List options given directly, not via MDO list name
 
 **Parameter:** 
- - **listItems** MDOListItemArray
+ - **listItems** NSMDOListItem[]
 
 ```crmscript
 NSDashboardTileOption thing;
-MDOListItemArray listItems;
+NSMDOListItem[] listItems;
 thing.SetListItems(listItems);
 ```
 

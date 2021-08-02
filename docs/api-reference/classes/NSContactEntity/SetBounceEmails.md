@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSContactEntity_SetBounceEmails
-title: SetBounceEmails(StringArray bounceEmails)
+title: SetBounceEmails(String[] bounceEmails)
 intellisense: NSContactEntity.SetBounceEmails
 keywords: NSContactEntity, GetBounceEmails
 so.topic: reference
@@ -9,11 +9,11 @@ so.topic: reference
 Email addresses with a positive bounce counter.
 
 **Parameter:** 
- - **bounceEmails** StringArray
+ - **bounceEmails** String[]
 
 ```crmscript
 NSContactEntity thing;
-StringArray bounceEmails;
+String[] bounceEmails;
 thing.SetBounceEmails(bounceEmails);
 ```
 

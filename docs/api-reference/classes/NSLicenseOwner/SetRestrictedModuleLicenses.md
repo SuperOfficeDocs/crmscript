@@ -1,6 +1,6 @@
 ﻿---
 uid: crmscript_ref_NSLicenseOwner_SetRestrictedModuleLicenses
-title: SetRestrictedModuleLicenses(ModuleLicenseLinkArray restrictedModuleLicenses)
+title: SetRestrictedModuleLicenses(NSModuleLicenseLink[] restrictedModuleLicenses)
 intellisense: NSLicenseOwner.SetRestrictedModuleLicenses
 keywords: NSLicenseOwner, GetRestrictedModuleLicenses
 so.topic: reference
@@ -9,11 +9,11 @@ so.topic: reference
 
 
 **Parameter:** 
- - **restrictedModuleLicenses** ModuleLicenseLinkArray
+ - **restrictedModuleLicenses** NSModuleLicenseLink[]
 
 ```crmscript
 NSLicenseOwner thing;
-ModuleLicenseLinkArray restrictedModuleLicenses;
+NSModuleLicenseLink[] restrictedModuleLicenses;
 thing.SetRestrictedModuleLicenses(restrictedModuleLicenses);
 ```
 

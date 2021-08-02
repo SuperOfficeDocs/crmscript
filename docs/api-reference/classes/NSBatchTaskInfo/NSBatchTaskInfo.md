@@ -1,4 +1,4 @@
-﻿---
+---
 uid: crmscript_ref_NSBatchTaskInfo
 title: NSBatchTaskInfo
 intellisense: Void.NSBatchTaskInfo
@@ -7,6 +7,3 @@ so.topic: reference
 ---
 
 NSBatchTaskInfo contains information about one batch task.
-
-1. autolist 
-

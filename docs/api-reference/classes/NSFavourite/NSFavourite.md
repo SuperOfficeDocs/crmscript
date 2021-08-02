@@ -1,4 +1,4 @@
-﻿---
+---
 uid: crmscript_ref_NSFavourite
 title: NSFavourite
 intellisense: Void.NSFavourite
@@ -7,6 +7,3 @@ so.topic: reference
 ---
 
 NSFavourite carrier.
-
-1. autolist 
-

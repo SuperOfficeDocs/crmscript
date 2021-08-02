@@ -1,4 +1,4 @@
-﻿---
+---
 uid: crmscript_ref_NSListItem
 title: NSListItem
 intellisense: Void.NSListItem
@@ -7,6 +7,3 @@ so.topic: reference
 ---
 
 Lightweight generic list item - similar to NSMDOListItem but without child items and stuff
-
-1. autolist 
-

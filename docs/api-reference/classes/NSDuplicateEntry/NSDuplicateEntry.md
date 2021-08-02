@@ -8,9 +8,3 @@ so.topic: reference
 
 
 Carrier object for NSDuplicateEntry.
-
-
-
-
-1. autolist
-

@@ -1,4 +1,4 @@
-﻿---
+---
 uid: crmscript_ref_NSFieldMetadataDictionary
 title: NSFieldMetadataDictionary
 intellisense: Void.NSFieldMetadataDictionary
@@ -7,6 +7,3 @@ so.topic: reference
 ---
 
 Dictionary where key is string and value is a NSFieldMetadata
-
-1. autolist 
-

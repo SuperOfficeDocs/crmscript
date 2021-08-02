@@ -7,9 +7,3 @@ so.topic: reference
 ---
 
 Carrier object for NSDuplicateRule.
-
-
-
-
-1. autolist
-

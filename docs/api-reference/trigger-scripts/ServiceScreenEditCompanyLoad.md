@@ -11,10 +11,11 @@ keywords:
 Runs for `HtmlPage.lang_ticket_newCompany` screen.
 
 ## Input values
-
-* `button` = HtmlSubmitButton element value
-* `x.value` = element x value
-* `x.displayValue` = element x display value
+|Variable|Description|
+|---|---|
+| `button` | HtmlSubmitButton element value|
+| `x.value` | element x value|
+| `x.displayValue` | element x display value|
 
 All HTML elements in the screen are added to the input values.
 

@@ -1,14 +1,15 @@
 ---
 title: triggerscripts
 description: Trigger scripts
-so.author: Christian Mogensen
-so.date: 11.11.2020
+so.author: Michel Krohn-Dale
+so.date: 06.08.2021
 keywords:
 ---
 
-# ServiceScreenEditExtraTableLoad (510)
+# ServiceScreenNewTicketLoad (500)
 
 ## Input values
+
 |Variable|Description|
 |---|---|
 | `button` | HtmlSubmitButton element value|
@@ -21,5 +22,5 @@ All HTML elements in the screen are added to the input values.
 
 ```crmscript
 #setLanguageLevel 3;
-String param1 = getVariable("customerId");
+String param1 = getVariable("button");
 ```

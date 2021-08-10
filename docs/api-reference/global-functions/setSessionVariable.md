@@ -8,6 +8,8 @@ keywords: setSessionVariable(String,String)
 so.topic: reference
 ---
 
+# setSessionVariable
+
 ## String setSessionVariable()
 
 Writes a SessionObject entry to the database. This function makes it possible to store variables in the database which the web application can use as long as a session lives. That is until a user logs out.

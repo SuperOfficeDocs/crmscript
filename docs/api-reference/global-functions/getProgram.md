@@ -1,4 +1,5 @@
 ---
+title: getProgram
 description: String getProgram(Integer progId)
 intellisense: Void.getProgram
 langref: 1
@@ -6,10 +7,10 @@ keywords: getProgram(Integer)
 so.topic: reference
 ---
 
+# getProgram
 
 Returns the url of the program module specified by progId.
 progId can be:
-
 
     modNull        = 0x00000000,
     modTicket      = 0x00000001,
@@ -36,11 +37,8 @@ progId can be:
 
 These numbers are in hexadecimal notation. Convert to decimal before use.
 
-
 * **progId:** The id of the program to return.
 * **Returns:** The url for the given program.
-
-
 
     Integer modTicket = 1;
     Integer modAdmin = 2;
@@ -63,5 +61,4 @@ These numbers are in hexadecimal notation. Convert to decimal before use.
     Integer modSms = 262144;
     Integer modBlogic = 524288;
     Integer modRetail = 1048576;
-
 

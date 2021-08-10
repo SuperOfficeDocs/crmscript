@@ -1,4 +1,5 @@
 ---
+title: getScreenElementType
 description: Integer getScreenElementType(Integer index)
 intellisense: Void.getScreenElementType
 langref: 1
@@ -6,14 +7,13 @@ keywords: getScreenElementType(Integer)
 so.topic: reference
 ---
 
+# getScreenElementType
 
 This function can only be called from a screen definition, it will fail if called from a regular script.
-
 
 It returns the type of the screen element with the given index in the current screen definition.
 
 The index can be retrieved with `getHtmlElementIndex(elementName)`.
-
 
 * **index:** The index of the element
 * **Returns:** An integer defining the type of the element
@@ -92,5 +92,4 @@ TypeVerticalTable = 205,
 
 -- Group end marker
 TypeGroupEnd = 301
-
 

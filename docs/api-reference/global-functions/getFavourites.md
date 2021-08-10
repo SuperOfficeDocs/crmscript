@@ -1,4 +1,5 @@
 ---
+title: getFavourites
 description: Integer[] getFavourites(String table)
 intellisense: Void.getFavourites
 langref: 1
@@ -6,18 +7,13 @@ keywords: getFavourites(String)
 so.topic: reference
 ---
 
+# getFavourites
 
 Returns an array containing the ids of all favourites in the given table.
 
-
-
-
 ## Parameters
-
 
 - table: Name of table
 
-
 Returns: Integer array containing ids of favourites
-
 

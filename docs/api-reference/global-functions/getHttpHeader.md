@@ -1,4 +1,5 @@
 ---
+title: getHttpHeader
 description: String getHttpHeader(String headerName)
 intellisense: Void.getHttpHeader
 langref: 1
@@ -6,18 +7,15 @@ keywords: getHttpHeader(String headerName)
 so.topic: reference
 ---
 
+# getHttpHeader
+
 Returns the value of the specified header name.
 
 ## Example
 
-
     String method = getHttpHeader("REQUEST-METHOD");
 
-
-
-
 ## Parameters
-
 
  - ACCEPT-*
  - ACCESS-CONTROL-REQUEST-METHOD

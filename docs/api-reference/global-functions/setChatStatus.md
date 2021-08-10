@@ -1,4 +1,5 @@
 ---
+title: setChatStatus
 description: Void setChatStatus(Integer sessionId, Integer status)
 intellisense: Void.setChatStatus
 langref: 1
@@ -6,7 +7,7 @@ keywords: setChatStatus(Integer,Integer)
 so.topic: reference
 ---
 
-
+# setChatStatus
    
 **This function allows you to change the status of a chat session. The available statuses are:**   
     StatusInvalid = 0,
@@ -21,5 +22,4 @@ so.topic: reference
     StatusClosed = 9,
     StatusRequestPosted = 10,
     StatusClosedFromQueue = 11
-
 

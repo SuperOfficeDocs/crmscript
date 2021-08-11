@@ -1,5 +1,5 @@
 ---
-title: getExternalProgramBlogic
+title: String getExternalProgramBlogic()
 description: String getExternalProgramBlogic()
 intellisense: Void.getExternalProgramBlogic
 langref: 1
@@ -7,9 +7,8 @@ keywords: getExternalProgramBlogic()
 so.topic: reference
 ---
 
-# getExternalProgramBlogic
+# String getExternalProgramBlogic()
 
-Returns the external url of the program module specified after getProgram.
+Returns the external URL of the program module specified after getProgram.
 
-* **Returns:** The external url for the given program.
-
+* **Returns:** The external URL for the given program.

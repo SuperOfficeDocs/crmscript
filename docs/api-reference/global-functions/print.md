@@ -1,5 +1,5 @@
 ---
-title: print
+title: print(String s)
 description: Void print(String s)
 intellisense: Void.print
 langref: 1
@@ -7,9 +7,8 @@ keywords: print(String)
 so.topic: reference
 ---
 
-# print
+# print(String s)
 
 Prints the string to the screen. Will only work in certain contexts (i.e. when there is a screen to print to).
 
 * **s:** The string to print.
-

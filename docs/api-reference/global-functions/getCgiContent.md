@@ -1,5 +1,5 @@
 ---
-title: getCgiContent
+title: String getCgiContent()
 description: String getCgiContent()
 intellisense: Void.getCgiContent
 langref: 1
@@ -7,7 +7,6 @@ keywords: getCgiContent()
 so.topic: reference
 ---
 
-# getCgiContent
+# String getCgiContent()
 
 Return the raw content of the HTTP request.
-

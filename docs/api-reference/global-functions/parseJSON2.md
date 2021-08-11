@@ -1,5 +1,5 @@
 ---
-title: parseJSON2
+title: XMLNode parseJSON2(String jsonDocument)
 description: XMLNode parseJSON2(String jsonDocument)
 intellisense: Void.parseJSON2
 langref: 1
@@ -7,9 +7,9 @@ keywords: parseJSON2(String)
 so.topic: reference
 ---
 
-# parseJSON2
+# XMLNode parseJSON2(String jsonDocument)
 
-Parse an JSON document and generate a tree of XMLNode's.
+Parse a JSON document and generate a tree of XMLNode's.
 
 ## Example
 
@@ -76,4 +76,3 @@ For example the following JSON document:
   \</menu>
 \</root>
 */
-

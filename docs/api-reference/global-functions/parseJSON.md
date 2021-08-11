@@ -1,5 +1,5 @@
 ---
-title: parseJSON
+title: XMLNode parseJSON(String jsonDocument)
 description: XMLNode parseJSON(String jsonDocument)
 intellisense: Void.parseJSON
 langref: 1
@@ -7,9 +7,9 @@ keywords: parseJSON(String)
 so.topic: reference
 ---
 
-# parseJSON
+# XMLNode parseJSON(String jsonDocument)
 
-Parse an JSON document and generate a tree of XMLNode's.
+Parse a JSON document and generate a tree of XMLNode's.
 
 NOTE: This function has a bug. Empty arrays will still return one child. We recommend using `parseJSON2()` instead where this bug has been fixed. Except for the fix, the function is identical. It is available from 8.4R03.
 
@@ -78,4 +78,3 @@ For example the following JSON document:
   \</menu>
 \</root>
 */
-

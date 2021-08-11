@@ -1,5 +1,5 @@
 ---
-title: getScreenElementName
+title: String getScreenElementName(Integer index)
 description: String getScreenElementName(Integer index)
 intellisense: Void.getScreenElementName
 langref: 1
@@ -7,7 +7,7 @@ keywords: getScreenElementName(Integer)
 so.topic: reference
 ---
 
-# getScreenElementName
+# String getScreenElementName(Integer index)
 
 This function can only be called from a screen definition, it will fail if called from a regular script.
 
@@ -17,4 +17,3 @@ The index can be retrieved with `getHtmlElementIndex(elementName)`.
 
 * **index:** The index of the element
 * **Returns:** An integer defining the type of the element
-

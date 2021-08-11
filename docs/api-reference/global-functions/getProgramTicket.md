@@ -1,5 +1,5 @@
 ---
-title: getProgramTicket
+title: String getProgramTicket()
 description: String getProgramTicket()
 intellisense: Void.getProgramTicket
 langref: 1
@@ -7,9 +7,8 @@ keywords: getProgramTicket()
 so.topic: reference
 ---
 
-# getProgramTicket
+# String getProgramTicket()
 
-Returns the url of the program module specified after getProgram.
+Returns the URL of the program module specified after getProgram.
 
-* **Returns:** The url for the given program.
-
+* **Returns:** The URL for the given program.

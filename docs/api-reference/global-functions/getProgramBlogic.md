@@ -1,5 +1,5 @@
 ---
-title: getProgramBlogic
+title: String getProgramBlogic()
 description: String getProgramBlogic()
 intellisense: Void.getProgramBlogic
 langref: 1
@@ -7,9 +7,8 @@ keywords: getProgramBlogic()
 so.topic: reference
 ---
 
-# getProgramBlogic
+# String getProgramBlogic()
 
-Returns the url of the program module specified after getProgram.
+Returns the URL of the program module specified after getProgram.
 
-* **Returns:** The url for the given program.
-
+* **Returns:** The URL for the given program.

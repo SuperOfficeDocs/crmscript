@@ -1,5 +1,5 @@
 ---
-title: getStatusIdFromName
+title: Integer getStatusIdFromName(String p0)
 description: Integer getStatusIdFromName(String p0)
 intellisense: Void.getStatusIdFromName
 langref: 1
@@ -7,10 +7,9 @@ keywords: getStatusIdFromName(String)
 so.topic: reference
 ---
 
-# getStatusIdFromName
+# Integer getStatusIdFromName(String p0)
 
-Returns the id of the status with the given name.
+Returns the ID of the status with the given name.
 
 * **name:** Name of the document
-* **Returns:** The id of the status
-
+* **Returns:** The ID of the status

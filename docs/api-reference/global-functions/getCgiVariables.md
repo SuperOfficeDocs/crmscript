@@ -1,5 +1,5 @@
 ---
-title: getCgiVariables
+title: Map getCgiVariables()
 description: Map getCgiVariables()
 intellisense: Void.getCgiVariables
 langref: 1
@@ -7,9 +7,8 @@ keywords: getCgiVariables()
 so.topic: reference
 ---
 
-# getCgiVariables
+# Map getCgiVariables()
 
-Returns a map of all cgi variables
+Returns a map of all CGI variables
 
-* **Returns:** Map containing all cgi variables
-
+* **Returns:** Map containing all CGI variables

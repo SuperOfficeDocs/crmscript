@@ -1,5 +1,5 @@
 ---
-title: getScreenElementId
+title: Integer getScreenElementId(Integer index)
 description: Integer getScreenElementId(Integer index)
 intellisense: Void.getScreenElementId
 langref: 1
@@ -7,7 +7,7 @@ keywords: getScreenElementId(Integer)
 so.topic: reference
 ---
 
-# getScreenElementId
+# Integer getScreenElementId(Integer index)
 
 This function can only be called from a screen definition, it will fail if called from a regular script.
 
@@ -17,4 +17,3 @@ The index can be retrieved with `getHtmlElementIndex(elementName)`.
 
 * **index:** The id of the element
 * **Returns:** The id of the element
-

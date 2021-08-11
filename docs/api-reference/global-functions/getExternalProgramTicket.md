@@ -1,5 +1,5 @@
 ---
-title: getExternalProgramTicket
+title: String getExternalProgramTicket()
 description: String getExternalProgramTicket()
 intellisense: Void.getExternalProgramTicket
 langref: 1
@@ -7,9 +7,8 @@ keywords: getExternalProgramTicket()
 so.topic: reference
 ---
 
-# getExternalProgramTicket
+# String getExternalProgramTicket()
 
-Returns the external url of the program module specified after getProgram.
+Returns the external URL of the program module specified after getProgram.
 
-* **Returns:** The external url for the given program.
-
+* **Returns:** The external URL for the given program.

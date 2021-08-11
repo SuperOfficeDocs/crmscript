@@ -1,5 +1,5 @@
 ---
-title: idToLang
+title: String idToLang(Integer langId)
 description: String idToLang(Integer langId)
 intellisense: Void.idToLang
 langref: 1
@@ -7,10 +7,9 @@ keywords: idToLang(Integer)
 so.topic: reference
 ---
 
-# idToLang
+# String idToLang(Integer langId)
 
-Returns the code of the given language id.
+Returns the code of the given language ID.
 
-* **langId:** Language id
-* **Returns:** Language code of the given language id
-
+* **langId:** Language ID
+* **Returns:** Language code of the given language ID

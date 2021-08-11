@@ -1,5 +1,5 @@
 ---
-title: getProgramHelp
+title: String getProgramHelp()
 description: String getProgramHelp()
 intellisense: Void.getProgramHelp
 langref: 1
@@ -7,9 +7,8 @@ keywords: getProgramHelp()
 so.topic: reference
 ---
 
-# getProgramHelp
+# String getProgramHelp()
 
-Returns the url of the program module specified after getProgram.
+Returns the URL of the program module specified after getProgram.
 
-* **Returns:** The url for the given program.
-
+* **Returns:** The URL for the given program.

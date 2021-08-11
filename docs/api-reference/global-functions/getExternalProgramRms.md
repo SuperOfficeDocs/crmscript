@@ -1,5 +1,5 @@
 ---
-title: getExternalProgramRms
+title: String getExternalProgramRms()
 description: String getExternalProgramRms()
 intellisense: Void.getExternalProgramRms
 langref: 1
@@ -7,9 +7,8 @@ keywords: getExternalProgramRms()
 so.topic: reference
 ---
 
-# getExternalProgramRms
+# String getExternalProgramRms()
 
-Returns the external url of the program module specified after getProgram.
+Returns the external URL of the program module specified after getProgram.
 
-* **Returns:** The external url for the given program.
-
+* **Returns:** The external URL for the given program.

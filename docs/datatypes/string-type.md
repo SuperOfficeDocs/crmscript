@@ -4,7 +4,7 @@ title: String data type
 author:
 so.date:
 keywords:
-so.topic:
+so.topic: concept
 ---
 
 # String data type

@@ -6,6 +6,7 @@ intellisense: Void.XMLNode
 langref: 1
 keywords: XMLNode(XMLNode), XMLNode(String)
 so.topic: reference
+so.yml: 1
 ---
 
 # XMLNode XMLNode()

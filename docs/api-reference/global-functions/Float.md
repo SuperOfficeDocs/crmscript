@@ -6,6 +6,7 @@ intellisense: Void.Float
 langref: 1
 keywords: Float(Float), Float(String), Float(Integer)
 so.topic: reference
+so.yml: 1
 ---
 
 # Float Float()

@@ -1,11 +1,12 @@
 ---
 uid: crmscript_global_datetime
 title: DateTime()
-description: CRMScript DateTime constructor
+description: CRMScript DateTime class
 intellisense: Void.DateTime
 langref: 1
 keywords: DateTime(DateTime), DateTime(String), DateTime(Integer,Integer,Integer,Integer,Integer,Integer)
 so.topic: reference
+so.yml: 1
 ---
 
 # DateTime DateTime()

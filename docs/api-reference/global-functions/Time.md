@@ -6,6 +6,7 @@ intellisense: Void.Time
 langref: 1
 keywords: Time(Time), Time(String)
 so.topic: reference
+so.yml: 1
 ---
 
 # Time Time()

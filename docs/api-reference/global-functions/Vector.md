@@ -5,6 +5,7 @@ intellisense: Void.Vector
 langref: 1
 keywords: Vector(IntegerArray)
 so.topic: reference
+so.yml: 1
 ---
 
 # Vector Vector(Integer[] values)
@@ -15,4 +16,4 @@ A Vector constructor that converts an Integer[] into a Vector.
 
 * values: Integer[] of values to be converted
 
-Returns: Vector object object
+Returns: Vector object

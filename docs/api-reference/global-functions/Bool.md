@@ -5,9 +5,10 @@ intellisense: Void.Bool
 langref: 1
 keywords: Bool(Bool)
 so.topic: reference
+so.yml: 1
 ---
 
-# Bool(Bool value)
+# Bool Bool(Bool value)
 
 Bool constructor
 

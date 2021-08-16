@@ -6,6 +6,7 @@ intellisense: Void.String
 langref: 1
 keywords: String(String), String(Byte[]), String(NSStream), String(Byte[],String), String(NSStream,String)
 so.topic: reference
+so.yml: 1
 ---
 
 # String String()

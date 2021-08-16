@@ -1,11 +1,12 @@
 ---
 uid: crmscript_global_date
 title: Date()
-description: CRMScript Date constructor
+description: CRMScript Date class
 intellisense: Void.Date
 langref: 1
 keywords: Date(Date), Date(String)
 so.topic: reference
+so.yml: 1
 ---
 
 # Date Date()

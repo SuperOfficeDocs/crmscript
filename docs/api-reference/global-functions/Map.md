@@ -6,6 +6,7 @@ intellisense: Void.Map
 langref: 1
 keywords: Map(), Map(String)
 so.topic: reference
+so.yml: 1
 ---
 
 # Map Map()

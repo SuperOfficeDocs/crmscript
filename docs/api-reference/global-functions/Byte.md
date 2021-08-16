@@ -5,6 +5,7 @@ intellisense: Void.Byte
 langref: 1
 keywords: Byte(Integer)
 so.topic: reference
+so.yml: 1
 ---
 
 # Byte(Integer value)

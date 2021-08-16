@@ -6,6 +6,7 @@ intellisense: Void.Integer
 langref: 1
 keywords: Integer(Integer), Integer(String value)
 so.topic: reference
+so.yml: 1
 ---
 
 # Integer Integer()

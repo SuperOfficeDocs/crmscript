@@ -1,0 +1,415 @@
+### YamlMime:ManagedReference
+items:
+- uid: CRMScript.Global.Generic
+  commentId: T:CRMScript.Global.Generic
+  id: Generic
+  langs:
+  - crmscript
+  children:
+  - CRMScript.Global.Generic.getTypeName(Generic)
+  - CRMScript.Global.Generic.getGenericValue(String)
+  - CRMScript.Global.Generic.GenericToBool(Generic)
+  - CRMScript.Global.Generic.GenericToInteger(Generic)
+  - CRMScript.Global.Generic.GenericToFloat(Generic)
+  - CRMScript.Global.Generic.GenericToString(Generic)
+  - CRMScript.Global.Generic.GenericToDate(Generic)
+  - CRMScript.Global.Generic.GenericToDateTime(Generic)
+  - CRMScript.Global.Generic.GenericToTime(Generic)
+  - CRMScript.Global.Generic.toArray(Generic)
+  - CRMScript.Global.Generic.getTypeDimensions(Generic)
+  - CRMScript.Global.Generic.typeIsStruct(Generic)
+  - CRMScript.Global.Generic.getStructMembers(String)
+  - CRMScript.Global.Generic.convertGenericToString(Generic)
+  - CRMScript.Global.Generic.setGenericFromString(Generic, String)
+  name: Generic
+  nameWithType: Generic
+  fullName: CRMScript.Global.Generic
+  type: Class
+  summary: "\nGeneric is the base type of all other intrinsic CRMScript data types. Any variable can be up-casted to Generic.<p></p>\nThere's a close connection between Generic and structs.\n"
+- uid: CRMScript.Global.Generic.getTypeName(Generic)
+  commentId: M:CRMScript.Global.Generic.getTypeName(Generic)
+  id: getTypeName(Generic)
+  langs:
+  - crmscript
+  parent: CRMScript.Global.Generic
+  name: getTypeName(Generic)
+  nameWithType: Generic.getTypeName(Generic)
+  fullName: CRMScript.Global.Generic.getTypeName(Generic)
+  type: Method
+  summary: "\nReturns the type of a variable.\n"
+  example:
+  - "\n<pre><code>printLine(getTypeName(getCurrentDateTime()));</code></pre>\n"
+  syntax:
+    content: String getTypeName(Generic generic)
+    parameters:
+    - id: value
+      type: CRMScript.Global.Generic
+      description: A variable of unknown type
+    return:
+      type: CRMScript.Global.String
+- uid: CRMScript.Global.Generic.getGenericValue(String)
+  commentId: M:CRMScript.Global.Generic.getGenericValue(String)
+  id: getGenericValue(String)
+  langs:
+  - crmscript
+  parent: CRMScript.Global.Generic
+  name: getGenericValue(String)
+  nameWithType: Generic.getGenericValue(String)
+  fullName: CRMScript.Global.Generic.getGenericValue(String)
+  type: Method
+  summary: "\nReturns a variable from the run-time environment given its name and independent of its type.\n"
+  example:
+  - "\n<pre><code>Integer age = 42;\nGeneric g = getGenericValue(&quot;age&quot;);\nprintLine(GenericToInteger(g).toString());</code></pre>\n"
+  syntax:
+    content: Generic getGenericValue(String name)
+    parameters:
+    - id: name
+      type: CRMScript.Global.String
+      description: A variable name.
+    return:
+      type: CRMScript.Global.Generic
+- uid: CRMScript.Global.Generic.GenericToBool(Generic)
+  commentId: M:CRMScript.Global.Generic.GenericToBool(Generic)
+  id: GenericToBool(Generic)
+  langs:
+  - crmscript
+  parent: CRMScript.Global.Generic
+  name: GenericToBool(Generic)
+  nameWithType: Generic.GenericToBool(Generic)
+  fullName: CRMScript.Global.Generic.GenericToBool(Generic)
+  type: Method
+  summary: "\nConverts a Generic variable to a Bool.\n"
+  syntax:
+    content: Bool GenericToBool(Generic value)
+    parameters:
+    - id: value
+      type: CRMScript.Global.Generic
+      description: The variable to down-cast.
+    return:
+      type: CRMScript.Global.Bool
+- uid: CRMScript.Global.Generic.GenericToInteger(Generic)
+  commentId: M:CRMScript.Global.Generic.GenericToInteger(Generic)
+  id: GenericToInteger(Generic)
+  langs:
+  - crmscript
+  parent: CRMScript.Global.Generic
+  name: GenericToInteger(Generic)
+  nameWithType: Generic.GenericToInteger(Generic)
+  fullName: CRMScript.Global.Generic.GenericToInteger(Generic)
+  type: Method
+  summary: "\nConverts a Generic variable to a Integer.\n"
+  syntax:
+    content: Integer GenericToInteger(Generic value)
+    parameters:
+    - id: value
+      type: CRMScript.Global.Generic
+      description: The variable to down-cast.
+    return:
+      type: CRMScript.Global.Integer
+- uid: CRMScript.Global.Generic.GenericToFloat(Generic)
+  commentId: M:CRMScript.Global.Generic.GenericToFloat(Generic)
+  id: GenericToFloat(Generic)
+  langs:
+  - crmscript
+  parent: CRMScript.Global.Generic
+  name: GenericToFloat(Generic)
+  nameWithType: Generic.GenericToFloat(Generic)
+  fullName: CRMScript.Global.Generic.GenericToFloat(Generic)
+  type: Method
+  summary: "\nConverts a Generic variable to a Float.\n"
+  syntax:
+    content: Float GenericToFloat(Generic value)
+    parameters:
+    - id: value
+      type: CRMScript.Global.Generic
+      description: The variable to down-cast.
+    return:
+      type: CRMScript.Global.Float
+- uid: CRMScript.Global.Generic.GenericToString(Generic)
+  commentId: M:CRMScript.Global.Generic.GenericToString(Generic)
+  id: GenericToString(Generic)
+  langs:
+  - crmscript
+  parent: CRMScript.Global.Generic
+  name: GenericToString(Generic)
+  nameWithType: Generic.toString(Generic)
+  fullName: CRMScript.Global.Generic.GenericToString(Generic)
+  type: Method
+  summary: "\nConverts a Generic variable to a String.\n"
+  syntax:
+    content: String GenericToString(Generic value)
+    parameters:
+    - id: value
+      type: CRMScript.Global.Generic
+      description: The variable to down-cast.
+    return:
+      type: CRMScript.Global.String
+- uid: CRMScript.Global.Generic.GenericToDateTime(Generic)
+  commentId: M:CRMScript.Global.Generic.GenericToDateTime(Generic)
+  id: GenericToDateTime(Generic)
+  langs:
+  - crmscript
+  parent: CRMScript.Global.Generic
+  name: GenericToDateTime(Generic)
+  nameWithType: Generic.toDateTime(Generic)
+  fullName: CRMScript.Global.Generic.GenericToDateTime(Generic)
+  type: Method
+  summary: "\nConverts a Generic variable to a DateTime.\n"
+  syntax:
+    content: DateTime GenericToDateTime(Generic value)
+    parameters:
+    - id: value
+      type: CRMScript.Global.Generic
+      description: The variable to down-cast.
+    return:
+      type: CRMScript.Global.DateTime
+- uid: CRMScript.Global.Generic.GenericToDate(Generic)
+  commentId: M:CRMScript.Global.Generic.GenericToDate(Generic)
+  id: GenericToDate(Generic)
+  langs:
+  - crmscript
+  parent: CRMScript.Global.Generic
+  name: GenericToDate(Generic)
+  nameWithType: Generic.GenericToDate(Generic)
+  fullName: CRMScript.Global.Generic.GenericToDate(Generic)
+  type: Method
+  summary: "\nConverts a Generic variable to a Date.\n"
+  syntax:
+    content: Date GenericToDate(Generic value)
+    parameters:
+    - id: value
+      type: CRMScript.Global.Generic
+      description: The variable to down-cast.
+    return:
+      type: CRMScript.Global.Date
+- uid: CRMScript.Global.Generic.GenericToTime(Generic)
+  commentId: M:CRMScript.Global.Generic.GenericToTime(Generic)
+  id: GenericToTime(Generic)
+  langs:
+  - crmscript
+  parent: CRMScript.Global.Generic
+  name: GenericToTime(Generic)
+  nameWithType: Generic.GenericToTime(Generic)
+  fullName: CRMScript.Global.Generic.GenericToTime(Generic)
+  type: Method
+  summary: "\nConverts a Generic variable to a Time.\n"
+  syntax:
+    content: Time GenericToTime(Generic value)
+    parameters:
+    - id: value
+      type: CRMScript.Global.Generic
+      description: The variable to down-cast.
+    return:
+      type: CRMScript.Global.Time
+# Todo: TimeSpan GenericToTimeSpan(Generic generic)
+# Todo: Byte GenericToByte(Generic generic)
+- uid: CRMScript.Global.Generic.toArray(Generic)
+  commentId: M:CRMScript.Global.Generic.toArray(Generic)
+  id: toArray(Generic)
+  langs:
+  - crmscript
+  parent: CRMScript.Global.Generic
+  name: toArray(Generic)
+  nameWithType: Generic.toArray(Generic)
+  fullName: CRMScript.Global.Generic.toArray(Generic)
+  type: Method
+  summary: "\nConverts a Generic variable to an Array.\n"
+  syntax:
+    content: Generic[] GenericToArray(Generic value)
+    parameters:
+    - id: value
+      type: CRMScript.Global.Generic
+      description: The variable to down-cast.
+    return:
+      type: CRMScript.Global.Generic[]
+- uid: CRMScript.Global.Generic.getTypeDimensions(Generic)
+  commentId: M:CRMScript.Global.Generic.getTypeDimensions(Generic)
+  id: getTypeDimensions(Generic)
+  langs:
+  - crmscript
+  parent: CRMScript.Global.Generic
+  name: getTypeDimensions(Generic)
+  nameWithType: Generic.getTypeDimensions(Generic)
+  fullName: CRMScript.Global.Generic.getTypeDimensions(Generic)
+  type: Method
+  summary: "\nReturns the number of array dimensions for a variable. The argument is automatically up-casted to a Generic.\n"
+  example:
+  - "\n<pre><code>Integer[][] i;\nprintLine(getTypeDimensions(i).toString())</code></pre>\n"
+  remarks: "\nThis is the number of dimensions in, not the length of, the array!\n"
+  syntax:
+    content: Integer getTypeDimensions(Generic value)
+    parameters:
+    - id: value
+      type: CRMScript.Global.Generic
+      description: The variable.
+    return:
+      type: CRMScript.Global.Integer
+- uid: CRMScript.Global.Generic.typeIsStruct(Generic)
+  commentId: M:CRMScript.Global.Generic.typeIsStruct(Generic)
+  id: typeIsStruct(Generic)
+  langs:
+  - crmscript
+  parent: CRMScript.Global.Generic
+  name: typeIsStruct(Generic)
+  nameWithType: Generic.typeIsStruct(Generic
+  fullName: CRMScript.Global.Generic.typeIsStruct(Generic)
+  type: Method
+  summary: "\nChecks whether a variable is a struct or not. The argument is automatically up-casted to a Generic.\n"
+  example:
+  - "\n<pre><code>struct Person {\n\tString name;\n\tInteger age;\n};\n\nPerson p;\nif (typeIsStruct(p)) {\n\tprintLine(&quot;10-4&quot;);\n}</code></pre>\n"
+  syntax:
+    content: Bool typeIsStruct(Generic generic)
+    parameters:
+    - id: value
+      type: CRMScript.Global.Generic
+      description: The variable to check.
+    return:
+      type: CRMScript.Global.Bool
+- uid: CRMScript.Global.Generic.getStructMembers(String)
+  commentId: M:CRMScript.Global.Generic.getStructMembers(String)
+  id: getStructMembers(String)
+  langs:
+  - crmscript
+  parent: CRMScript.Global.Generic
+  name: getStructMembers(String)
+  nameWithType: Generic.getStructMembers(String
+  fullName: CRMScript.Global.Generic.getStructMembers(String)
+  type: Method
+  summary: "\nReturns the variable names of a struct given its name.\n"
+  remarks: "\nThis is the names, not the actual values. To get those, call getGenericValue() using the member names.\n"
+  syntax:
+    content: String[] getStructMembers(String name)
+    parameters:
+    - id: name
+      type: CRMScript.Global.String
+      description: Name of struct to find.
+    return:
+      type: CRMScript.Global.String[]
+- uid: CRMScript.Global.Generic.convertGenericToString(Generic)
+  commentId: M:CRMScript.Global.Generic.convertGenericToString(Generic)
+  id: convertGenericToString(Generic)
+  langs:
+  - crmscript
+  parent: CRMScript.Global.Generic
+  name: convertGenericToString(Generic)
+  nameWithType: Generic.convertGenericToString(Generic)
+  fullName: CRMScript.Global.Generic.convertGenericToString(Generic)
+  type: Method
+  summary: "\nReturns the string representation of a variable. The argument is automatically be up-casted to a Generic.\n"
+  example:
+  - "\n<pre><code>Integer age = 42;\nString s = convertGenericToString(age);\nprintLine(s);</code></pre>\n"
+  syntax:
+    content: String convertGenericToString(Generic variable)
+    parameters:
+    - id: variable
+      type: CRMScript.Global.Generic
+      description: The variable to convert.
+    return:
+      type: CRMScript.Global.String
+- uid: CRMScript.Global.Generic.setGenericFromString(Generic, String)
+  commentId: M:CRMScript.Global.Generic.setGenericFromString(Generic, String)
+  id: setGenericFromString(Generic, String)
+  langs:
+  - crmscript
+  parent: CRMScript.Global.Generic
+  name: setGenericFromString(Generic, String)
+  nameWithType: Generic.setGenericFromString(Generic, String)
+  fullName: CRMScript.Global.Generic.setGenericFromString(Generic, String)
+  type: Method
+  summary: "\nSets the value of a variable from a string. It supports only basic types. Attempting to set an array or a complex type will throw an exception.\n"
+  remarks: "\nThe value must be formatted according to the constructor of that type. Specifically, Date, DateTime, and Time must be on the YYYY-MM-DD HH:MI:SS format.\n"
+  syntax:
+    content: Void setGenericFromString(Generic generic, String value)
+    parameters:
+    - id: generic
+      type: CRMScript.Global.Generic
+      description: The variable to set.
+    - id: value
+      type: CRMScript.Global.String
+      description: The the constructor data for the Generic.
+    return:
+references:
+- uid: CRMScript.Global.Generic
+  commentId: T:CRMScript.Global.Generic
+  isExternal: true
+  name: Generic
+  nameWithType: Generic
+  fullName: CRMScript.Global.Generic
+- uid: CRMScript.Global.Integer
+  commentId: T:CRMScript.Global.Integer
+  isExternal: true
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Global.Integer
+- uid: CRMScript.Global.Float
+  commentId: T:CRMScript.Global.Float
+  isExternal: true
+  name: Float
+  nameWithType: Float
+  fullName: CRMScript.Global.Float
+- uid: CRMScript.Global.String
+  commentId: T:CRMScript.Global.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: CRMScript.Global.String
+- uid: CRMScript.Global.Bool
+  commentId: T:CRMScript.Global.Bool
+  isExternal: true
+  name: Bool
+  nameWithType: Bool
+  fullName: CRMScript.Global.Bool
+- uid: CRMScript.Global.Date
+  commentId: T:CRMScript.Global.Date
+  isExternal: true
+  name: Date
+  nameWithType: Date
+  fullName: CRMScript.Global.Date
+- uid: CRMScript.Global.Time
+  commentId: T:CRMScript.Global.Time
+  isExternal: true
+  name: Time
+  nameWithType: Time
+  fullName: CRMScript.Global.Time
+- uid: CRMScript.Global.DateTime
+  commentId: T:CRMScript.Global.DateTime
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: CRMScript.Global.DateTime
+- uid: CRMScript.Global.Map
+  commentId: T:CRMScript.Global.Map
+  isExternal: true
+  name: Map
+  nameWithType: Map
+  fullName: CRMScript.Global.Map
+- uid: CRMScript.Global.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: CRMScript.Global.String[]
+  spec.crmscript:
+  - uid: CRMScript.Global.String
+    name: String
+    nameWithType: String
+    fullName: CRMScript.Global.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.Global.Generic[]
+  isExternal: true
+  name: Generic[]
+  nameWithType: Generic[]
+  fullName: CRMScript.Global.Generic[]
+  spec.crmscript:
+  - uid: CRMScript.Global.Generic
+    name: Generic
+    nameWithType: Generic
+    fullName: CRMScript.Global.Generic
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+# Todo add Byte and Timestamp

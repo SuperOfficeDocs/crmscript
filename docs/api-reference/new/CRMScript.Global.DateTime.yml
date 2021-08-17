@@ -21,6 +21,18 @@ items:
     - CRMScript.Global.DateTime.addMin(Integer)
     - CRMScript.Global.DateTime.addSec(Integer)
     - CRMScript.Global.DateTime.setTime(Time)
+    - CRMScript.Global.DateTime.moveToDayStart()
+    - CRMScript.Global.DateTime.moveToDayEnd()
+    - CRMScript.Global.DateTime.moveToWeekStart()
+    - CRMScript.Global.DateTime.moveToWeekEnd()
+    - CRMScript.Global.DateTime.moveToMonthStart()
+    - CRMScript.Global.DateTime.moveToMonthEnd()
+    - CRMScript.Global.DateTime.moveToQuarterStart()
+    - CRMScript.Global.DateTime.moveToQuarterEnd()
+    - CRMScript.Global.DateTime.moveToYearStart()
+    - CRMScript.Global.DateTime.moveToYearEnd()
+    - CRMScript.Global.DateTime.moveToHourStart()
+    - CRMScript.Global.DateTime.moveToHourEnd()
     - CRMScript.Global.DateTime.getMDay()
     - CRMScript.Global.DateTime.getMonth()
     - CRMScript.Global.DateTime.getWeek()
@@ -41,6 +53,7 @@ items:
 - uid: CRMScript.Global.DateTime.#ctor(DateTime)
   commentId: M:CRMScript.Global.DateTime.#ctor(DateTime)
   id: '#ctor(DateTime)'
+  so.intellisense: Void.DateTime
   langs:
   - crmscript
   parent: CRMScript.Global.DateTime
@@ -62,6 +75,7 @@ items:
 - uid: CRMScript.Global.DateTime.#ctor(Integer, Integer, Integer, Integer, Integer, Integer)
   commentId: M:CRMScript.Global.DateTime.#ctor(Integer, Integer, Integer, Integer, Integer, Integer)
   id: DateTime(Integer, Integer, Integer, Integer, Integer, Integer)
+  so.intellisense: Void.DateTime
   langs:
   - crmscript
   parent: CRMScript.Global.DateTime
@@ -98,6 +112,7 @@ items:
 - uid: CRMScript.Global.DateTime.#ctor(String)
   commentId: M:CRMScript.Global.DateTime.#ctor(String)
   id: '#ctor(String)'
+  so.intellisense: Void.DateTime
   langs:
   - crmscript
   parent: CRMScript.Global.DateTime
@@ -119,6 +134,7 @@ items:
 - uid: CRMScript.Global.DateTime.toString()
   commentId: M:CRMScript.Global.DateTime.toString()
   id: toString()
+  so.intellisense: DateTime.toString
   langs:
   - crmscript
   parent: CRMScript.Global.DateTime
@@ -127,6 +143,7 @@ items:
   fullName: CRMScript.Global.DateTime.toString()
   type: Method
   summary: "\nConverts a DateTime value to its string representation.<p></p>\nOne of the most frequently used methods, typically when you are going to output something.\n"
+  remarks: "\nIf you do not want the name of the months and the days, use the toString-function with only one parameter, toString(String format)\n"
   example:
   - "\n<pre><code>DateTime dt;\nprintLine(dt.toString());</code></pre>\n"
   syntax:
@@ -137,6 +154,7 @@ items:
 - uid: CRMScript.Global.DateTime.toString(String)
   commentId: M:CRMScript.Global.DateTime.toString(String)
   id: toString(String)
+  so.intellisense: DateTime.toString
   langs:
   - crmscript
   parent: CRMScript.Global.DateTime
@@ -144,7 +162,8 @@ items:
   nameWithType: DateTime.toString(String)
   fullName: CRMScript.Global.DateTime.toString(String)
   type: Method
-  summary: "\nA variant of toString() that takes a string with formatting codes. You can also include white-space and punctuation marks.\n"
+  summary: "\nA variant of toString() that takes a string with one or more formatting codes. You can also include white-space and punctuation marks.\n"
+  remarks: "\nAvailable codes: ISOW1, ISOW2, ISOWY2, ISOWY4, YY2, YY4, MM1, MM2, DD1, DD2, WEEKDAY, MONTH, WDAY, H24, HH24, H12, HH12, MI2, SS2. For details, see the CRMScript docs.\n"
   example:
   - "\n<pre><code>DateTime dt;\nprintLine(dt.toString(&quot;HH12:MI2 AMPM&quot;));</code></pre>\n"
   syntax:
@@ -158,6 +177,7 @@ items:
 - uid: CRMScript.Global.DateTime.toString(String, String, String)
   commentId: M:CRMScript.Global.DateTime.toString(String, String, String)
   id: toString(String, String, String)
+  so.intellisense: DateTime.toString
   langs:
   - crmscript
   parent: CRMScript.Global.DateTime
@@ -165,8 +185,8 @@ items:
   nameWithType: DateTime.toString(String, String, String)
   fullName: CRMScript.Global.DateTime.toString(String, String, String)
   type: Method
-  summary: "\nA variant of toString() that takes a string with formatting codes. You can also include white-space and punctuation marks.\n"
-  remarks: "\nIf you don't include codes MONTH, WDAY, or both - use toString(String format) instead. If you include only 1 of them, send an empty string for the one you don't use.\n"
+  summary: "\nA variant of toString() that takes a string with one or more formatting codes. You can also include white-space and punctuation marks.\n"
+  remarks: "\nIf you don't include codes MONTH, WDAY, or both - use toString(String format) instead. If you include only 1 of them, send an empty string for the one you don't use.<p></p>\nAvailable codes: ISOW1, ISOW2, ISOWY2, ISOWY4, YY2, YY4, MM1, MM2, DD1, DD2, WEEKDAY, MONTH, WDAY, H24, HH24, H12, HH12, MI2, SS2. For details, see the CRMScript docs.\n"
   example:
   - "\n<pre><code>DateTime dt;\nString days=&quot;søndag,mandag,tirsdag,onsdag,torsdag,fredag,lørdag&quot;;\nprintLine(dt.toString(&quot;WDAY uke ISOW1&quot;,&quot;&quot;,days));</code></pre>\n"
   syntax:
@@ -186,6 +206,7 @@ items:
 - uid: CRMScript.Global.DateTime.toString(Integer, Integer, Bool)
   commentId: M:CRMScript.Global.DateTime.toString(Integer, Integer, Bool)
   id: toString(Integer, Integer, Bool)
+  so.intellisense: DateTime.toString
   langs:
   - crmscript
   parent: CRMScript.Global.DateTime
@@ -207,12 +228,13 @@ items:
       description: 0 = Norwegian; 1 = English; 2 = German; 3 = Swedish; 4 = Danish; 5 = Dutch
     - id: 24HourMode
       type: CRMScript.Global.Bool
-      description: Indicator for 12- or 24-hour clock.
+      description: Indicator for 12- or 24-hour clock. True = 24h, false = 12h.
     return:
       type: CRMScript.Global.String
 - uid: CRMScript.Global.DateTime.addDay(Integer)
   commentId: M:CRMScript.Global.DateTime.addDay(Integer)
   id: addDay(Integer)
+  so.intellisense: DateTime.addDay
   langs:
   - crmscript
   parent: CRMScript.Global.DateTime
@@ -234,6 +256,7 @@ items:
 - uid: CRMScript.Global.DateTime.addMonth(Integer)
   commentId: M:CRMScript.Global.DateTime.addMonth(Integer)
   id: addMonth(Integer)
+  so.intellisense: DateTime.addMonth
   langs:
   - crmscript
   parent: CRMScript.Global.DateTime
@@ -256,6 +279,7 @@ items:
 - uid: CRMScript.Global.DateTime.addYear(Integer)
   commentId: M:CRMScript.Global.DateTime.addYear(Integer)
   id: addYear(Integer)
+  so.intellisense: DateTime.addYear
   langs:
   - crmscript
   parent: CRMScript.Global.DateTime
@@ -277,6 +301,7 @@ items:
 - uid: CRMScript.Global.DateTime.addHour(Integer)
   commentId: M:CRMScript.Global.DateTime.addHour(Integer)
   id: addHour(Integer)
+  so.intellisense: DateTime.addHour
   langs:
   - crmscript
   parent: CRMScript.Global.DateTime
@@ -298,6 +323,7 @@ items:
 - uid: CRMScript.Global.DateTime.addMin(Integer)
   commentId: M:CRMScript.Global.DateTime.addMin(Integer)
   id: addMin(Integer)
+  so.intellisense: DateTime.addMin
   langs:
   - crmscript
   parent: CRMScript.Global.DateTime
@@ -319,6 +345,7 @@ items:
 - uid: CRMScript.Global.DateTime.addSec(Integer)
   commentId: M:CRMScript.Global.DateTime.addSec(Integer)
   id: addSec(Integer)
+  so.intellisense: DateTime.addSec
   langs:
   - crmscript
   parent: CRMScript.Global.DateTime
@@ -340,6 +367,7 @@ items:
 - uid: CRMScript.Global.DateTime.setTime(Time)
   commentId: M:CRMScript.Global.DateTime.setTime(Time)
   id: setTime(Time)
+  so.intellisense: DateTime.setTime
   langs:
   - crmscript
   parent: CRMScript.Global.DateTime
@@ -355,12 +383,13 @@ items:
     parameters:
     - id: theTime
       type: CRMScript.Global.Time
-      description: A Time object.
+      description: The time to set.
     return:
       type: CRMScript.Global.DateTime
 - uid: CRMScript.Global.DateTime.getMDay()
   commentId: M:CRMScript.Global.DateTime.getMDay()
   id: getMDay()
+  so.intellisense: DateTime.getMDay
   langs:
   - crmscript
   parent: CRMScript.Global.DateTime
@@ -379,6 +408,7 @@ items:
 - uid: CRMScript.Global.DateTime.getMonth()
   commentId: M:CRMScript.Global.DateTime.getMonth()
   id: getMonth()
+  so.intellisense: DateTime.getMonth
   langs:
   - crmscript
   parent: CRMScript.Global.DateTime
@@ -397,6 +427,7 @@ items:
 - uid: CRMScript.Global.DateTime.getWeek()
   commentId: M:CRMScript.Global.DateTime.getWeek()
   id: getWeek()
+  so.intellisense: DateTime.getWeek
   langs:
   - crmscript
   parent: CRMScript.Global.DateTime
@@ -405,6 +436,7 @@ items:
   fullName: CRMScript.Global.DateTime.getWeek()
   type: Method
   summary: "\nReturns the number of the week as an Integer [1-53].\n"
+  remarks: "\nSee http://en.wikipedia.org/wiki/ISO_8601 for detailed info on ISO week numbers.\n"
   example:
   - "\n<pre><code>DateTime dt;\nprint(dt.getWeek().toString());</code></pre>\n"
   syntax:
@@ -415,6 +447,7 @@ items:
 - uid: CRMScript.Global.DateTime.getWeekDay()
   commentId: M:CRMScript.Global.DateTime.getWeekDay()
   id: getWeekDay()
+  so.intellisense: DateTime.getWeekDay
   langs:
   - crmscript
   parent: CRMScript.Global.DateTime
@@ -434,6 +467,7 @@ items:
 - uid: CRMScript.Global.DateTime.getYear()
   commentId: M:CRMScript.Global.DateTime.getYear()
   id: getYear()
+  so.intellisense: DateTime.getYear
   langs:
   - crmscript
   parent: CRMScript.Global.DateTime
@@ -452,6 +486,7 @@ items:
 - uid: CRMScript.Global.DateTime.getTime()
   commentId: M:CRMScript.Global.DateTime.getTime()
   id: getTime()
+  so.intellisense: DateTime.getTime
   langs:
   - crmscript
   parent: CRMScript.Global.DateTime
@@ -470,6 +505,7 @@ items:
 - uid: CRMScript.Global.DateTime.diff(DateTime)
   commentId: M:CRMScript.Global.DateTime.diff(DateTime)
   id: diff(DateTime)
+  so.intellisense: DateTime.diff
   langs:
   - crmscript
   parent: CRMScript.Global.DateTime
@@ -488,9 +524,11 @@ items:
       description: The timestamp to subtract from the DateTime object you invoked diff() on.
     return:
       type: CRMScript.Global.Integer
+      description: The number is negative if the input DateTime is the greatest.
 - uid: CRMScript.Global.DateTime.setUnix(Integer)
   commentId: M:CRMScript.Global.DateTime.setUnix(Integer)
   id: setUnix(Integer)
+  so.intellisense: DateTime.setUni
   langs:
   - crmscript
   parent: CRMScript.Global.DateTime
@@ -510,6 +548,7 @@ items:
 - uid: CRMScript.Global.DateTime.getUnix()
   commentId: M:CRMScript.Global.DateTime.getUnix()
   id: getUnix()
+  so.intellisense: DateTime.getUnix
   langs:
   - crmscript
   parent: CRMScript.Global.DateTime
@@ -525,6 +564,7 @@ items:
 - uid: CRMScript.Global.DateTime.isNull()
   commentId: M:CRMScript.Global.DateTime.isNull()
   id: isNull()
+  so.intellisense: DateTime.isNull
   langs:
   - crmscript
   parent: CRMScript.Global.DateTime
@@ -533,6 +573,7 @@ items:
   fullName: CRMScript.Global.DateTime.isNull()
   type: Method
   summary: "\nReturns true if it has no value and false if it does.\n"
+  remarks: "\nA NULL/NUL/NIL DateTime is different from zero, in that it is conceptually without a value.\n"
   example:
   - "\n<pre><code>DateTime dt;\nprint(dt.isNull().toString());</code></pre>\n"
   syntax:
@@ -540,6 +581,210 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.Bool
+- uid: CRMScript.Global.DateTime.moveToDayStart()
+  commentId: M:CRMScript.Global.DateTime.moveToDayStart()
+  id: moveToDayStart()
+  so.intellisense: DateTime.moveToDayStart
+  langs:
+  - crmscript
+  parent: CRMScript.Global.DateTime
+  name: moveToDayStart()
+  nameWithType: DateTime.moveToDayStart()
+  fullName: CRMScript.Global.DateTime.moveToDayStart()
+  type: Method
+  summary: "\nMoves the current DateTime to the start of the day, (00:00 o'clock). Returns a reference to itself.\n"
+  syntax:
+    content: DateTime moveToDayStart()
+    parameters: []
+    return:
+      type: CRMScript.Global.DateTime
+- uid: CRMScript.Global.DateTime.moveToHourStart()
+  commentId: M:CRMScript.Global.DateTime.moveToHourStart()
+  id: moveToHourStart()
+  so.intellisense: DateTime.moveToHourStart
+  langs:
+  - crmscript
+  parent: CRMScript.Global.DateTime
+  name: moveToHourStart()
+  nameWithType: DateTime.moveToHourStart()
+  fullName: CRMScript.Global.DateTime.moveToHourStart()
+  type: Method
+  summary: "\nMoves the current DateTime to the start of the current hour. Returns a reference to itself.\n"
+  syntax:
+    content: DateTime moveToHourStart()
+    parameters: []
+    return:
+      type: CRMScript.Global.DateTime
+- uid: CRMScript.Global.DateTime.moveToMonthStart()
+  commentId: M:CRMScript.Global.DateTime.moveToMonthStart()
+  id: moveToMonthStart()
+  so.intellisense: DateTime.moveToMonthStart
+  langs:
+  - crmscript
+  parent: CRMScript.Global.DateTime
+  name: moveToMonthStart()
+  nameWithType: DateTime.moveToMonthStart()
+  fullName: CRMScript.Global.DateTime.moveToMonthStart()
+  type: Method
+  summary: "\nMoves the current DateTime to the first second in the current month. Returns a reference to itself.\n"
+  syntax:
+    content: DateTime moveToMonthStart()
+    parameters: []
+    return:
+      type: CRMScript.Global.DateTime
+- uid: CRMScript.Global.DateTime.moveToQuarterStart()
+  commentId: M:CRMScript.Global.DateTime.moveToQuarterStart()
+  id: moveToQuarterStart()
+  so.intellisense: DateTime.moveToQuarterStart
+  langs:
+  - crmscript
+  parent: CRMScript.Global.DateTime
+  name: moveToQuarterStart()
+  nameWithType: DateTime.moveToQuarterStart()
+  fullName: CRMScript.Global.DateTime.moveToQuarterStart()
+  type: Method
+  summary: "\nMoves the current DateTime to the start of the current quarter (1. of January, 1. of April, 1. of July, or 1. of October). Returns a reference to itself.\n"
+  syntax:
+    content: DateTime moveToQuarterStart()
+    parameters: []
+    return:
+      type: CRMScript.Global.DateTime
+- uid: CRMScript.Global.DateTime.moveToWeekStart()
+  commentId: M:CRMScript.Global.DateTime.moveToWeekStart()
+  id: moveToWeekStart()
+  so.intellisense: DateTime.moveToWeekStart
+  langs:
+  - crmscript
+  parent: CRMScript.Global.DateTime
+  name: moveToWeekStart()
+  nameWithType: DateTime.moveToWeekStart()
+  fullName: CRMScript.Global.DateTime.moveToWeekStart()
+  type: Method
+  summary: "\nMoves the current DateTime back to 00:00:00 on monday in the current week. Returns a reference to itself.\n"
+  syntax:
+    content: DateTime moveToWeekStart()
+    parameters: []
+    return:
+      type: CRMScript.Global.DateTime
+- uid: CRMScript.Global.DateTime.moveToYearStart()
+  commentId: M:CRMScript.Global.DateTime.moveToYearStart()
+  id: moveToYearStart()
+  so.intellisense: DateTime.moveToYearStart
+  langs:
+  - crmscript
+  parent: CRMScript.Global.DateTime
+  name: moveToYearStart()
+  nameWithType: DateTime.moveToYearStart()
+  fullName: CRMScript.Global.DateTime.moveToYearStart()
+  type: Method
+  summary: "\nMoves the current DateTime to the first second in the current year. Returns a reference to itself.\n"
+  syntax:
+    content: DateTime moveToYearStart()
+    parameters: []
+    return:
+      type: CRMScript.Global.DateTime
+- uid: CRMScript.Global.DateTime.moveToDayEnd()
+  commentId: M:CRMScript.Global.DateTime.moveToDayEnd()
+  id: moveToDayEnd()
+  so.intellisense: DateTime.moveToDayEnd
+  langs:
+  - crmscript
+  parent: CRMScript.Global.DateTime
+  name: moveToDayEnd()
+  nameWithType: DateTime.moveToDayEnd()
+  fullName: CRMScript.Global.DateTime.moveToDayEnd()
+  type: Method
+  summary: "\nMoves the current DateTime to the end of the day (23:59:59). Returns a reference to itself.\n"
+  syntax:
+    content: DateTime moveToDayEnd()
+    parameters: []
+    return:
+      type: CRMScript.Global.DateTime
+- uid: CRMScript.Global.DateTime.moveToHourEnd()
+  commentId: M:CRMScript.Global.DateTime.moveToHourEnd()
+  id: moveToHourEnd()
+  so.intellisense: DateTime.moveToHourEnd
+  langs:
+  - crmscript
+  parent: CRMScript.Global.DateTime
+  name: moveToHourEnd()
+  nameWithType: DateTime.moveToHourEnd()
+  fullName: CRMScript.Global.DateTime.moveToHourEnd()
+  type: Method
+  summary: "\nMoves the current DateTime to the end of the current hour. Returns a reference to itself.\n"
+  syntax:
+    content: DateTime moveToHourEnd()
+    parameters: []
+    return:
+      type: CRMScript.Global.DateTime
+- uid: CRMScript.Global.DateTime.moveToMonthEnd()
+  commentId: M:CRMScript.Global.DateTime.moveToMonthEnd()
+  id: moveToMonthEnd()
+  so.intellisense: DateTime.moveToMonthEnd
+  langs:
+  - crmscript
+  parent: CRMScript.Global.DateTime
+  name: moveToMonthEnd()
+  nameWithType: DateTime.moveToMonthEnd()
+  fullName: CRMScript.Global.DateTime.moveToMonthEnd()
+  type: Method
+  summary: "\nMoves the current DateTime to the last second in the current month. Returns a reference to itself.\n"
+  syntax:
+    content: DateTime moveToMonthEnd()
+    parameters: []
+    return:
+      type: CRMScript.Global.DateTime
+- uid: CRMScript.Global.DateTime.moveToQuarterEnd()
+  commentId: M:CRMScript.Global.DateTime.moveToQuarterEnd()
+  id: moveToQuarterEnd()
+  so.intellisense: DateTime.moveToQuarterEnd
+  langs:
+  - crmscript
+  parent: CRMScript.Global.DateTime
+  name: moveToQuarterEnd()
+  nameWithType: DateTime.moveToQuarterEnd()
+  fullName: CRMScript.Global.DateTime.moveToQuarterEnd()
+  type: Method
+  summary: "\nMoves the current DateTime to the end of current quarter: 31. of Mars, 30. of June, 30 of September or 31. of December. Time is set to 23:59:59.  Returns a reference to itself.\n"
+  syntax:
+    content: DateTime moveToQuarterEnd()
+    parameters: []
+    return:
+      type: CRMScript.Global.DateTime
+- uid: CRMScript.Global.DateTime.moveToWeekEnd()
+  commentId: M:CRMScript.Global.DateTime.moveToWeekEnd()
+  id: moveToWeekEnd()
+  so.intellisense: DateTime.moveToWeekEnd
+  langs:
+  - crmscript
+  parent: CRMScript.Global.DateTime
+  name: moveToWeekEnd()
+  nameWithType: DateTime.moveToWeekEnd()
+  fullName: CRMScript.Global.DateTime.moveToWeekEnd()
+  type: Method
+  summary: "\nMoves the current DateTime forward to 23:59:59 on Sunday of the current week. Returns a reference to itself.\n"
+  syntax:
+    content: DateTime moveToWeekEnd()
+    parameters: []
+    return:
+      type: CRMScript.Global.DateTime
+- uid: CRMScript.Global.DateTime.moveToYearEnd()
+  commentId: M:CRMScript.Global.DateTime.moveToYearEnd()
+  id: moveToYearEnd()
+  so.intellisense: DateTime.moveToYearEnd
+  langs:
+  - crmscript
+  parent: CRMScript.Global.DateTime
+  name: moveToYearEnd()
+  nameWithType: DateTime.moveToYearEnd()
+  fullName: CRMScript.Global.DateTime.moveToYearEnd()
+  type: Method
+  summary: "\nMoves the current DateTime to the last second in the current year. Returns a reference to itself.\n"
+  syntax:
+    content: DateTime moveToYearEnd()
+    parameters: []
+    return:
+      type: CRMScript.Global.DateTime
 references:
 - uid: CRMScript.Global.DateTime
   commentId: T:CRMScript.Global.DateTime

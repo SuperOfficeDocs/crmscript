@@ -8,6 +8,7 @@ keywords:
 
 # ServiceScreenEditExtraTableLoad (510)
 
+Called when screen is constructed, useful for setting default values into HTML elements
 ## Input values
 |Variable|Description|
 |---|---|

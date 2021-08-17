@@ -6,9 +6,9 @@ so.date: 06.08.2021
 keywords:
 ---
 
-# ServiceScreenListTicketMessagesLoad (502)
+# ServiceScreenEditCustomerBeforeSubmit (606)
 
-Called when screen is constructed, useful for setting default values into HTML elements
+Called before screen is submitted and values are saved, useful for validations with blocking of save.
 ## Input values
 
 |Variable|Description|

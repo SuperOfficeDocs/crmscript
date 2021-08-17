@@ -8,7 +8,7 @@ keywords:
 
 # ServiceScreenNewQuickTicketBeforeSubmit (601)
 
-
+Called before screen is submitted and values are saved, useful for validations with blocking of save.
 
 ## Input values
 |Variable|Description|

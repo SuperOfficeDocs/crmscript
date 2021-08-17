@@ -9,6 +9,7 @@ keywords:
 # ServiceScreenEditCompanyLoad (508)
 
 Runs for `HtmlPage.lang_ticket_newCompany` screen.
+Called when screen is constructed, useful for setting default values into HTML elements
 
 ## Input values
 |Variable|Description|

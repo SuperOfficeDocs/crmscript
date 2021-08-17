@@ -8,7 +8,7 @@ keywords:
 
 # ServiceScreenEditTicketLoad (504)
 
-
+Called when screen is constructed, useful for setting default values into HTML elements
 
 ## Input values
 |Variable|Description|

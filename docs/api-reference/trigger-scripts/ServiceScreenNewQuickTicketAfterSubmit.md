@@ -6,11 +6,11 @@ so.date: 06.08.2021
 keywords:
 ---
 
-# ServiceScreenListTicketMessagesLoad (502)
+# ServiceScreenNewQuickTicketAfterSubmit (701)
 
-Called when screen is constructed, useful for setting default values into HTML elements
+Called after screen is submitted and values are saved, useful for performing after processing.
+
 ## Input values
-
 |Variable|Description|
 |---|---|
 | `button` | HtmlSubmitButton element value|

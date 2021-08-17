@@ -4,9 +4,10 @@ title: Integer
 intellisense: Void.Integer
 sortOrder: 422
 so.topic: reference
+so.yml: 1
 ---
 
 # Integer
 
 A class for representing integers as objects.
-Constructor can take an integer, and returns integer.
+Constructor can take an integer and returns an integer.

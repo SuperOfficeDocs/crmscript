@@ -5,11 +5,11 @@ intellisense: Float.isNull
 sortOrder: 356
 keywords: isNull()
 so.topic: reference
+so.yml: 1
 ---
 
 # Float.isNull()
 
 Returns true if the float is NULL/NUL/NIL
 
-A NULL/NUL/NIL Float is different from zero, in that it is conceptually without a value. However, when a null Float  is used naively, ejScript is usually forgiving and interprets it as zero.
-
+A NULL/NUL/NIL Float is different from zero, in that it is conceptually without a value. However, when a null Float is used naively, ejScript is usually forgiving and interprets it as zero.

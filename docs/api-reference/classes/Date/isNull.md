@@ -5,6 +5,7 @@ intellisense: Date.isNull
 sortOrder: 196
 keywords: isNull()
 so.topic: reference
+so.yml: 1
 ---
 
 # Date.isNull()
@@ -13,4 +14,3 @@ so.topic: reference
 
 A NULL/NUL/NIL Date is different from zero, in that it is conceptually
 without a value.
-

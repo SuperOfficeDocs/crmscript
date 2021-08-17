@@ -4,6 +4,7 @@ title: Bool
 intellisense: Void.Bool
 sortOrder: 129
 so.topic: reference
+so.yml: 1
 ---
 
 # Bool

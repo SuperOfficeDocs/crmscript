@@ -5,9 +5,9 @@ intellisense: DateTime.getMDay
 sortOrder: 230
 keywords: getMDay()
 so.topic: reference
+so.yml: 1
 ---
 
 # DateTime.getMDay()
 
-Returns the day part of the DateTime (day in month) as an integer.
-
+Returns the day part of the DateTime (day in the month) as an integer.

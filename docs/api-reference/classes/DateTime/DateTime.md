@@ -4,6 +4,7 @@ title: DateTime
 intellisense: Void.DateTime
 sortOrder: 206
 so.topic: reference
+so.yml: 1
 ---
 
 # DateTime

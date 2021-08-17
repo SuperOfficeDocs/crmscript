@@ -5,9 +5,9 @@ intellisense: DateTime.moveToWeekStart
 sortOrder: 225
 keywords: moveToWeekStart()
 so.topic: reference
+so.yml: 1
 ---
 
 # DateTime.moveToWeekStart()
 
 This method will move the current DateTime back to 00:00:00 on monday in the current week. Returns a reference to itself.
-

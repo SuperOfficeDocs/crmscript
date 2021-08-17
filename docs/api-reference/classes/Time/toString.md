@@ -4,9 +4,9 @@ title: Time.toString()
 intellisense: Time.toString
 keywords: toString()
 so.topic: reference
+so.yml: 1
 ---
 
 # Time.toString()
 
 * **Returns:** A string representation of the Time.
-

@@ -5,6 +5,7 @@ intellisense: Float.toString
 sortOrder: 360
 keywords: toString(Integer)
 so.topic: reference
+so.yml: 1
 ---
 
 # Float.toString(Integer decimals)
@@ -13,5 +14,4 @@ Returns a string representation of the Float, with "decimals" number of decimals
 
 ## Parameters
 
- - decimals: number of decimals
-
+* decimals: number of decimals

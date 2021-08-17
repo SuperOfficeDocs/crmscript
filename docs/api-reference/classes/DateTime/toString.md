@@ -6,6 +6,7 @@ intellisense: DateTime.toString
 sortOrder: 236
 keywords: toString(), toString(String), toString(String,String,String), toString(Integer,Integer,Bool)
 so.topic: reference
+so.yml: 1
 ---
 
 # String toString()

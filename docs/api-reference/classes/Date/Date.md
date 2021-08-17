@@ -4,12 +4,13 @@ title: Date
 intellisense: Void.Date
 sortOrder: 194
 so.topic: reference
+so.yml: 1
 ---
 
 # Date
 
 A class for representing dates as objects.
-Constructor can take a Date, and returns a Date.
+Constructor can take a Date and returns a Date.
 The default date is now.
 
 ## Example

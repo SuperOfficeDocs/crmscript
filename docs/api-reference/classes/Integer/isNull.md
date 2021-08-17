@@ -5,18 +5,18 @@ intellisense: Integer.isNull
 sortOrder: 424
 keywords: isNull()
 so.topic: reference
+so.yml: 1
 ---
 
 # Integer.isNull()
 
 This function returns true if the Integer is NULL/NUL/NIL.
 
-A NULL/NUL/NIL Integer is different from zero, in that it is conceptually without a value. However, when a null Integer is used naively, ejScript is usually forgiving and interprets it as zero.
+A NULL/NUL/NIL Integer is different from zero, in that it is conceptually without a value. However, when a null Integer is used naively, CRMScript is usually forgiving and interprets it as zero.
 
 ## Example
-    
+
     Integer i = 3;
     print(i.isNull().toString());
     
     Prints false.
-

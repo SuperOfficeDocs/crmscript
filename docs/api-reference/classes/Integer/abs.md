@@ -5,6 +5,7 @@ intellisense: Integer.abs
 sortOrder: 426
 keywords: abs()
 so.topic: reference
+so.yml: 1
 ---
 
 # Integer.abs()
@@ -12,4 +13,3 @@ so.topic: reference
 This function returns the absolute value of the integer.
 
 Integers 20 and -20 will both return 20.
-

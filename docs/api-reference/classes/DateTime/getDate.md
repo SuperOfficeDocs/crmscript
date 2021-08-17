@@ -5,6 +5,7 @@ intellisense: DateTime.getDate
 sortOrder: 209
 keywords: getDate()
 so.topic: reference
+so.yml: 1
 ---
 
 # DateTime.getDate()

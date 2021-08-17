@@ -10,4 +10,3 @@ so.topic: reference
 # Date.toString()
 
 This function returns a string representation of the date, in ISO format.
-

@@ -5,6 +5,7 @@ intellisense: DateTime.addDay
 sortOrder: 210
 keywords: addDay(Integer)
 so.topic: reference
+so.yml: 1
 ---
 
 # DateTime.addDay(Integer num)
@@ -13,7 +14,6 @@ Adds num days to the date and returns datetime object.
 
 ## Parameters
 
- - num: the number of days to add.
+* num: the number of days to add.
 
 Returns a copy of the datetime after adding the wanted days
-

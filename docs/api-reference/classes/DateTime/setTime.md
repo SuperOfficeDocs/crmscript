@@ -5,6 +5,7 @@ intellisense: DateTime.setTime
 sortOrder: 241
 keywords: setTime(Time)
 so.topic: reference
+so.yml: 1
 ---
 
 # DateTime.setTime(Time theTime)
@@ -13,5 +14,4 @@ Sets the time-part of the datetime
 
 ## Parameters
 
- - theTime: the time to set
-
+* theTime: the time to set

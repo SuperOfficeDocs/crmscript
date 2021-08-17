@@ -5,9 +5,9 @@ intellisense: Bool.toInteger
 sortOrder: 131
 keywords: toInteger()
 so.topic: reference
+so.yml: 1
 ---
 
 # Bool.toInteger()
 
 Returns an integer representation of the bool value. False equals 0 and true equals 1.
-

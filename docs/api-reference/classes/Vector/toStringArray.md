@@ -4,6 +4,7 @@ title: Vector.toStringArray()
 intellisense: Vector.toStringArray
 keywords: toStringArray()
 so.topic: reference
+so.yml: 1
 ---
 
 # Vector.toStringArray()
@@ -11,4 +12,3 @@ so.topic: reference
 Convert a vector to a string array.
 
 * **Returns:** Vector as a String[]
-

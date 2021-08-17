@@ -5,9 +5,9 @@ intellisense: DateTime.moveToDayStart
 sortOrder: 217
 keywords: moveToDayStart()
 so.topic: reference
+so.yml: 1
 ---
 
 # DateTime.moveToDayStart()
 
 Moves the datetime to the start of the day, (00:00 o'clock). Returns a reference to itself.
-

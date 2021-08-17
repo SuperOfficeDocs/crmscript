@@ -6,6 +6,7 @@ intellisense: Integer.toHex
 sortOrder: 427
 keywords: toHex(), toHex(Integer)
 so.topic: reference
+so.yml: 1
 ---
 
 # Integer.toHex()

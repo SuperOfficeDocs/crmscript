@@ -5,6 +5,7 @@ intellisense: Byte.toBool
 sortOrder: 135
 keywords: toBool()
 so.topic: reference
+so.yml: 1
 ---
 
 # Byte.toBool()
@@ -15,4 +16,3 @@ Returns a boolean value of the Byte.
       return true;
     else
       return false;
-

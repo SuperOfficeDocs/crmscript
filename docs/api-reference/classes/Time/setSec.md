@@ -4,6 +4,7 @@ title: Time.setSec(Integer sec)
 intellisense: Time.setSec
 keywords: setSec(Integer)
 so.topic: reference
+so.yml: 1
 ---
 
 # Time.setSec(Integer sec)
@@ -13,11 +14,10 @@ This function sets the seconds of the time.
 * **Seconds:** to set
 
 ## Example
-    
+
     Time t;
     t.setHour(10);
     t.setMin(15);
     t.setSec(30);
     
     10:15:30
-

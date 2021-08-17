@@ -5,6 +5,7 @@ intellisense: DateTime.diff
 sortOrder: 229
 keywords: diff(DateTime)
 so.topic: reference
+so.yml: 1
 ---
 
 # DateTime.diff(DateTime otherDateTime)
@@ -13,7 +14,6 @@ Returns the difference in number of seconds between the input-parameter and the 
 
 ## Parameters
 
- - otherDateTime: The datetime to subtract
+* otherDateTime: The datetime to subtract
 
 Returns the number of seconds between the datetime and the input datetime. The number is negative if the input datetime is the greatest.
-

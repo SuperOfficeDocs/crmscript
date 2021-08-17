@@ -4,6 +4,7 @@ title: Vector.removeAt(Integer index)
 intellisense: Vector.removeAt
 keywords: removeAt(Integer)
 so.topic: reference
+so.yml: 1
 ---
 
 # Vector.removeAt(Integer index)
@@ -11,4 +12,3 @@ so.topic: reference
 This method will remove an element at the specified index.
 
 * **index:** The index of the element to remove from the vector.
-

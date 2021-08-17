@@ -5,6 +5,7 @@ intellisense: DateTime.setUnix
 sortOrder: 228
 keywords: setUnix(Integer)
 so.topic: reference
+so.yml: 1
 ---
 
 # DateTime.setUnix(Integer number)
@@ -13,5 +14,4 @@ Sets the datetime to the number of the seconds since 01.01.1970 00:00:00
 
 ## Parameters
 
- - number of seconds since 01.01.1970 00:00:00 you want to set the datetime
-
+* number of seconds since 01.01.1970 00:00:00 you want to set the datetime

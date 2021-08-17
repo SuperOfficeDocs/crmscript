@@ -21,4 +21,3 @@ Returns the integer floor of the float.
 **Output:**
 
 "13"
-

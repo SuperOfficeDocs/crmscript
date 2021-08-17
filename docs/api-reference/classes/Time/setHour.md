@@ -4,20 +4,20 @@ title: Time.setHour(Integer hour)
 intellisense: Time.setHour
 keywords: setHour(Integer)
 so.topic: reference
+so.yml: 1
 ---
 
 # Time.setHour(Integer hour)
 
-Thsi function ssets the hour of the time.
+This function sets the hour of the time.
 
 * **Hour:** to set
 
 ## Example
-    
+
     Time t;
     t.setHour(10);
     t.setMin(15);
     t.setSec(30);
     
     10:15:30
-

@@ -5,9 +5,9 @@ intellisense: DateTime.getWeekDay
 sortOrder: 234
 keywords: getWeekDay()
 so.topic: reference
+so.yml: 1
 ---
 
 # DateTime.getWeekDay()
 
 Returns the weekDay as an Integer. 0 is Monday, ... 6 is Sunday
-

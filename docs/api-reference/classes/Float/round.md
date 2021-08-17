@@ -5,6 +5,7 @@ intellisense: Float.round
 sortOrder: 359
 keywords: round()
 so.topic: reference
+so.yml: 1
 ---
 
 # Float.round()
@@ -21,4 +22,3 @@ Returns the integer round of the float
 **Output:**
 
 "14"
-

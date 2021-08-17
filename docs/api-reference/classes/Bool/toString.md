@@ -5,9 +5,9 @@ intellisense: Bool.toString
 sortOrder: 132
 keywords: toString()
 so.topic: reference
+so.yml: 1
 ---
 
 # Bool.toString()
 
 Returns a string representation of the bool, either "true" or "false".
-

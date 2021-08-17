@@ -5,6 +5,7 @@ intellisense: DateTime.addMonth
 sortOrder: 213
 keywords: addMonth(Integer)
 so.topic: reference
+so.yml: 1
 ---
 
 # DateTime.addMonth(Integer num)
@@ -13,7 +14,6 @@ Adds num months to the date and returns datetime object.
 
 ## Parameters
 
- - num: The number of months to add
+* num: The number of months to add
 
 Returns a copy of the datetime after adding the wanted months.
-

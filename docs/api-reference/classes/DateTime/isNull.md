@@ -5,12 +5,11 @@ intellisense: DateTime.isNull
 sortOrder: 208
 keywords: isNull()
 so.topic: reference
+so.yml: 1
 ---
 
 # DateTime.isNull()
 
 Returns true if the DateTime is NULL/NUL/NIL
 
-A NULL/NUL/NIL DateTime is different from zero, in that it is conceptually
-without a value.
-
+A NULL/NUL/NIL DateTime is different from zero, in that it is conceptually without a value.

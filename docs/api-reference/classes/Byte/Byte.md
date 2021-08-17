@@ -4,6 +4,7 @@ title: Byte
 intellisense: Void.Byte
 sortOrder: 133
 so.topic: reference
+so.yml: 1
 ---
 
 # Byte

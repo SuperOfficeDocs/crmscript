@@ -4,6 +4,7 @@ title: Time.isNull()
 intellisense: Time.isNull
 keywords: isNull()
 so.topic: reference
+so.yml: 1
 ---
 
 # Time.isNull()
@@ -12,4 +13,3 @@ so.topic: reference
 
 A NULL/NUL/NIL Time is different from zero, in that it is conceptually
 without a value.
-

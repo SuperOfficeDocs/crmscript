@@ -5,9 +5,9 @@ intellisense: DateTime.moveToMonthStart
 sortOrder: 221
 keywords: moveToMonthStart()
 so.topic: reference
+so.yml: 1
 ---
 
 # DateTime.moveToMonthStart()
 
 This method will move the current DateTime to the first second in the current month. Returns a reference to itself.
-

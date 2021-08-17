@@ -4,6 +4,7 @@ title: Vector.toIntegerArray()
 intellisense: Vector.toIntegerArray
 keywords: toIntegerArray()
 so.topic: reference
+so.yml: 1
 ---
 
 # Vector.toIntegerArray()
@@ -11,4 +12,3 @@ so.topic: reference
 Convert a vector to an integer array. Invalid values will be represented as null.
 
 * **Returns:** Vector as a Integer[]
-

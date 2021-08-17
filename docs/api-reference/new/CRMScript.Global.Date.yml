@@ -29,6 +29,7 @@ items:
 - uid: CRMScript.Global.Date.#ctor(Date)
   commentId: M:CRMScript.Global.Date.#ctor(Date)
   id: '#ctor(Date)'
+  so.intellisense: Void.Date
   langs:
   - crmscript
   parent: CRMScript.Global.Date
@@ -73,6 +74,7 @@ items:
 - uid: CRMScript.Global.Date.toString()
   commentId: M:CRMScript.Global.Date.toString()
   id: toString()
+  so.intellisense: Date.toString
   langs:
   - crmscript
   parent: CRMScript.Global.Date
@@ -80,7 +82,7 @@ items:
   nameWithType: Date.toString()
   fullName: CRMScript.Global.Date.toString()
   type: Method
-  summary: "\nConverts a date value to its string representation.<p></p>\nOne of the most frequently used methods, typically when you are going to output something.\n"
+  summary: "\nConverts a date value to its string representation, in ISO format.<p></p>\nOne of the most frequently used methods, typically when you are going to output something.\n"
   example:
   - "\n<pre><code>Date d;\nString s = d.toString();</code></pre>\n"
   syntax:
@@ -91,6 +93,7 @@ items:
 - uid: CRMScript.Global.Date.addDay(Integer)
   commentId: M:CRMScript.Global.Date.addDay(Integer)
   id: addDay(Integer)
+  so.intellisense: Date.addDay
   langs:
   - crmscript
   parent: CRMScript.Global.Date
@@ -98,7 +101,8 @@ items:
   nameWithType: Date.addDay(Integer)
   fullName: CRMScript.Global.Date.addDay(Integer)
   type: Method
-  summary: "\nAdjusts the currently set date with the given number of days.\n"
+  summary: "\nAdjusts the currently set date with the given number of days. The original object will be modified, and a copy is returned.\n"
+  remarks: "\nIf the number is negative, the days are subtracted.\n"
   example:
   - "\n<pre><code>Date d;\nd.addDay(3);\nprintLine(&quot;Three days from now: &quot; + d.toString());</code></pre>\n"
   syntax:
@@ -112,6 +116,7 @@ items:
 - uid: CRMScript.Global.Date.addMonth(Integer)
   commentId: M:CRMScript.Global.Date.addMonth(Integer)
   id: addMonth(Integer)
+  so.intellisense: Date.addMonth
   langs:
   - crmscript
   parent: CRMScript.Global.Date
@@ -134,6 +139,7 @@ items:
 - uid: CRMScript.Global.Date.addYear(Integer)
   commentId: M:CRMScript.Global.Date.addYear(Integer)
   id: addYear(Integer)
+  so.intellisense: Date.addYear
   langs:
   - crmscript
   parent: CRMScript.Global.Date
@@ -142,6 +148,7 @@ items:
   fullName: CRMScript.Global.Date.addYear(Integer)
   type: Method
   summary: "\nAdjusts the currently set date with the given number of years.\n"
+  remarks: "\nThe original object will be modified, and a copy is returned.\n"
   example:
   - "\n<pre><code>Date d;\nd.addYear(1);\nprintLine(&quot;A year from now: &quot; + d.toString());</code></pre>\n"
   syntax:
@@ -155,6 +162,7 @@ items:
 - uid: CRMScript.Global.Date.getMDay()
   commentId: M:CRMScript.Global.Date.getMDay()
   id: getMDay()
+  so.intellisense: Date.getMDay
   langs:
   - crmscript
   parent: CRMScript.Global.Date
@@ -173,6 +181,7 @@ items:
 - uid: CRMScript.Global.Date.getMonth()
   commentId: M:CRMScript.Global.Date.getMonth()
   id: getMonth()
+  so.intellisense: Date.getMonth
   langs:
   - crmscript
   parent: CRMScript.Global.Date
@@ -191,6 +200,7 @@ items:
 - uid: CRMScript.Global.Date.getWeek()
   commentId: M:CRMScript.Global.Date.getWeek()
   id: getWeek()
+  intellisense: Date.getWeek
   langs:
   - crmscript
   parent: CRMScript.Global.Date
@@ -198,7 +208,8 @@ items:
   nameWithType: Date.getWeek()
   fullName: CRMScript.Global.Date.getWeek()
   type: Method
-  summary: "\nReturns the number of the week as an Integer [1-53].\n"
+  summary: "\nReturns the ISO number of the week as an Integer [1-53].\n"
+  remarks: "\nSee http://en.wikipedia.org/wiki/ISO_8601 for detailed info on ISO week numbers.\n"
   example:
   - "\n<pre><code>Date d;\nprint(d.getWeek().toString());</code></pre>\n"
   syntax:
@@ -209,6 +220,7 @@ items:
 - uid: CRMScript.Global.Date.getWeekDay()
   commentId: M:CRMScript.Global.Date.getWeekDay()
   id: getWeekDay()
+  so.intellisense: Date.getWeekDay
   langs:
   - crmscript
   parent: CRMScript.Global.Date
@@ -216,7 +228,7 @@ items:
   nameWithType: Date.getWeekDay()
   fullName: CRMScript.Global.Date.getWeekDay()
   type: Method
-  summary: "\nReturns the day of the week as an Integer [0-6].\n"
+  summary: "\nReturns the ISO day of the week as an Integer [0-6].\n"
   remarks: "\nThe 1st day of the week is Monday and has index 0!\n"
   example:
   - "\n<pre><code>Date d;\nprint(d.getWeekDay().toString());</code></pre>\n"
@@ -228,6 +240,7 @@ items:
 - uid: CRMScript.Global.Date.getYear()
   commentId: M:CRMScript.Global.Date.getYear()
   id: getYear()
+  so.intellisense: Date.getYear
   langs:
   - crmscript
   parent: CRMScript.Global.Date
@@ -246,6 +259,7 @@ items:
 - uid: CRMScript.Global.Date.isNull()
   commentId: M:CRMScript.Global.Date.isNull()
   id: isNull()
+  so.intellisense: Date.isNull
   langs:
   - crmscript
   parent: CRMScript.Global.Date
@@ -254,6 +268,7 @@ items:
   fullName: CRMScript.Global.Date.isNull()
   type: Method
   summary: "\nReturns true if it has no value and false if it does.\n"
+  remarks: "\nA NULL/NUL/NIL Date is different from zero, in that it is conceptually without a value.\n"
   example:
   - "\n<pre><code>Date d;\nprint(d.isNull().toString());</code></pre>\n"
   syntax:

@@ -13,7 +13,7 @@
 |AppointmentEntity.Contact.ActiveErpLinks|Has active Erp links|
 |AppointmentEntity.Contact.Address.*|Contact Address variables|
 |AppointmentEntity.Contact.*|Contact variables|
-|AppointmentEntity.CreatedBy.*|Created by Associate variables|
+|AppointmentEntity.CreatedBy.*|Associate variables|
 |AppointmentEntity.CreatedDate|Created date|
 |AppointmentEntity.Description|Description|
 |AppointmentEntity.EndDate|End date|

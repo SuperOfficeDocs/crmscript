@@ -10,4 +10,4 @@
 |CurrentEntityName| Current sale name|
 |IsNew|Is new|
 |MainEntity.*|MainEntity variables
-|NewMembers|"§" separated rows, each containing '\|' separated columns: ID, contact ID, contact name, person ID, person name, projectmember role ID
+|NewMembers|"§" separated rows, each containing '\|' separated columns: ID, contact ID, contact name, person ID, person name, selectionmember role ID

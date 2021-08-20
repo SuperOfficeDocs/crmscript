@@ -13,7 +13,7 @@ keywords:
 |---|---|
 | `customerId` | person ID|
 
-Output values:
+## Output values:
 |Variable|Description|
 |---|---|
 | `errorMessage`||

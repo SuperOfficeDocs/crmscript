@@ -22,6 +22,6 @@ EventData ed = getEventData();
 String[] param1 = ed.getInputValue("NewMembers").split("§");
 for(Integer i = 0; i < param1.length(); i++)
 {
-//Do something with each new member
+    //Do something with each new member
 }
-``
+```

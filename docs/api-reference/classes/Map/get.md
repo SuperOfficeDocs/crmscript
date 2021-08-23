@@ -5,6 +5,7 @@ intellisense: Map.get
 sortOrder: 530
 keywords: get(String)
 so.topic: reference
+so.yml: 1
 ---
 
 # Map.get(String key)
@@ -13,5 +14,4 @@ This function returns the value for the given key.
 
 ## Parameters
 
- - key: The key to return the value for.
-
+* key: The key to return the value for.

@@ -28,12 +28,13 @@ items:
   nameWithType: Map
   fullName: CRMScript.Global.Map
   type: Class
-  summary: "\nA map is a collection of key-value pairs. Both the key and the value are strings.<p></p>\nThe elements in a map are automatically sorted on their keys.\n"
+  summary: "\nA map is a collection of key-value pairs. Both the key and the value are strings.<p></p>\nThe elements in a map are automatically sorted on their keys.<p></p>\nThe Map class supports two constructors. The default constructor accepts no parameters and initializes a Map with an empty key-value pair collection. The other constructor accepts a String.\n"
   example:
   - "\n<pre><code>Map m = Map(&quot;height=25\\nwidth=10&quot;);\nm.first();\nwhile (!m.eof()){\n\tprintLine(m.getKey() + &quot; = &quot; + m.getVal());\n\tm.next();\n}</code></pre>\n"
 - uid: CRMScript.Global.Map.#ctor()
   commentId: M:CRMScript.Global.Map.#ctor()
   id: '#ctor()'
+  so.intellisense: Void.Map
   langs:
   - crmscript
   parent: CRMScript.Global.Map
@@ -41,15 +42,17 @@ items:
   nameWithType: Map.Map()
   fullName: CRMScript.Global.Map.Map()
   type: Constructor
-  summary: "\nCalled with no parameters, it creates an empty Map.\n"
+  summary: "\nThe default constructor. Called with no parameters, it creates an empty Map.\n"
   syntax:
     content: Map Map()
     parameters: []
     return:
       type: CRMScript.Global.Map
+      description: The new Map with an empty key-value pair collection.
 - uid: CRMScript.Global.Map.#ctor(String)
   commentId: M:CRMScript.Global.Map.#ctor(String)
   id: '#ctor(String)'
+  so.intellisense: Void.Map
   langs:
   - crmscript
   parent: CRMScript.Global.Map
@@ -69,9 +72,11 @@ items:
       description: A String containing key-value pairs."
     return:
       type: CRMScript.Global.Map
+      description: The new Map populated with a collection of key-value pairs.
 - uid: CRMScript.Global.Map.insert(String, String)
   commentId: M:CRMScript.Global.Map.insert(String, String)
   id: insert(String, String)
+  so.intellisense: Map.insert
   langs:
   - crmscript
   parent: CRMScript.Global.Map
@@ -80,6 +85,7 @@ items:
   fullName: CRMScript.Global.Map.insert(String, String)s
   type: Method
   summary: "\nAdds a new key-value pair to the map.\n"
+  remarks: "\nThis function will reset the internal iterator in the map.\n"
   example:
   - "\n<pre><code>Map m;\nm.insert(&quot;Super&quot;, &quot;Office&quot;);</code></pre>\n"
   syntax:
@@ -92,10 +98,12 @@ items:
       type: CRMScript.Global.String
       description: The value belonging to the key.
     return:
-    type: CRMScript.Global.Map
+      type: CRMScript.Global.Map
+      description: A reference to itself.
 - uid: CRMScript.Global.Map.exists(String)
   commentId: M:CRMScript.Global.Map.exists(String)
   id: exists(String)
+  so.intellisense: Map.exists
   langs:
   - crmscript
   parent: CRMScript.Global.Map
@@ -114,9 +122,11 @@ items:
       description: The key to search for.
     return:
       type: CRMScript.Global.Bool
+      description: True if the key exists in the map.
 - uid: CRMScript.Global.Map.size()
   commentId: M:CRMScript.Global.Map.size()
   id: size()
+  so.intellisense: Map.size
   langs:
   - crmscript
   parent: CRMScript.Global.Map
@@ -133,9 +143,11 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.Integer
+      description: The number of elements in the map.
 - uid: CRMScript.Global.Map.get(String)
   commentId: M:CRMScript.Global.Map.get(String)
   id: get(String)
+  so.intellisense: Map.get
   langs:
   - crmscript
   parent: CRMScript.Global.Map
@@ -154,9 +166,11 @@ items:
       description: The key to look up a value for.
     return:
       type: CRMScript.Global.String
+      description: The value for the given key.
 - uid: CRMScript.Global.Map.getKey()
   commentId: M:CRMScript.Global.Map.getKey()
   id: getKey()
+  so.intellisense: Map.getKey
   langs:
   - crmscript
   parent: CRMScript.Global.Map
@@ -172,9 +186,11 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
+      description: The key pointed to by the internal iterator.
 - uid: CRMScript.Global.Map.getVal()
   commentId: M:CRMScript.Global.Map.getVal()
   id: getVal()
+  so.intellisense: Map.getVal
   langs:
   - crmscript
   parent: CRMScript.Global.Map
@@ -190,9 +206,11 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
+      description: The value pointed to by the internal iterator.
 - uid: CRMScript.Global.Map.increaseValueForKey(String, Integer)
   commentId: M:CRMScript.Global.Map.increaseValueForKey(String, Integer)
   id: increaseValueForKey(String, Integer)
+  so.intellisense: Map.increaseValueForKey
   langs:
   - crmscript
   parent: CRMScript.Global.Map
@@ -201,6 +219,7 @@ items:
   fullName: CRMScript.Global.MAp.increaseValueForKey(String, Integer)
   type: Method
   summary: "\nWhen working with numeric strings, you can increment values stored in the map. Provide the key to look up the element and the value to add to the currently stored value.\n"
+  remarks: "\nYou can pass the increment as either Integer or Float.\n"
   example:
   - "\n<pre><code>Map m = Map(&quot;height=25\\nwidth=10&quot;);\nm.increaseValueForKey(&quot;height&quot;, -5);</code></pre>\n"
   syntax:
@@ -211,11 +230,13 @@ items:
       description: The key to look up.
     - id: value
       type: CRMScript.Global.Integer
-      description: The value to add to the current value.
+      description: The amount to add to the current value.
     return:
+      type: CRMScript.Global.Void
 - uid: CRMScript.Global.Map.increaseValueForKey(String, Float)
   commentId: M:CRMScript.Global.Map.increaseValueForKey(String, Float)
   id: increaseValueForKey(String, Float)
+  so.intellisense: Map.increaseValueForKey
   langs:
   - crmscript
   parent: CRMScript.Global.Map
@@ -224,6 +245,7 @@ items:
   fullName: CRMScript.Global.MAp.increaseValueForKey(String, Float)
   type: Method
   summary: "\nWhen working with numeric strings, you can increment values stored in the map. Provide the key to look up the element and the value to add to the currently stored value.\n"
+  remarks: "\nYou can pass the increment as either Integer or Float.\n"
   example:
   - "\n<pre><code>Map m = Map(&quot;height=25\\nwidth=10&quot;);\nm.increaseValueForKey(&quot;height&quot;, 2.5);</code></pre>\n"
   syntax:
@@ -234,11 +256,13 @@ items:
       description: The key to look up.
     - id: value
       type: CRMScript.Global.Float
-      description: The value to add to the current value.
+      description: The amount to add to the current value.
     return:
+      type: CRMScript.Global.Void
 - uid: CRMScript.Global.Map.remove(String)
   commentId: M:CRMScript.Global.Map.remove(String)
   id: remove(String)
+  so.intellisense: Map.remove
   langs:
   - crmscript
   parent: CRMScript.Global.Map
@@ -254,11 +278,13 @@ items:
     parameters:
     - id: key
       type: CRMScript.Global.String
-      description: The key to remove.
+      description: The key matching the element to remove to remove.
     return:
+      type: CRMScript.Global.Void
 - uid: CRMScript.Global.Map.clear()
   commentId: M:CRMScript.Global.Map.clear()
   id: clear()
+  so.intellisense: Map.clear
   langs:
   - crmscript
   parent: CRMScript.Global.Map
@@ -271,14 +297,13 @@ items:
   - "\n<pre><code>Map m = Map(&quot;roses = red\\nviolets = blue&quot;);\nm.clear();</code></pre>\n"
   syntax:
     content: Void clear()
-    parameters:
-    - id: key
-      type: CRMScript.Global.String
-      description: The key to remove.
+    parameters: []
     return:
+      type: CRMScript.Global.Void
 - uid: CRMScript.Global.Map.eof()
   commentId: M:CRMScript.Global.Map.eof()
   id: eof()
+  so.intellisense: Map.eof
   langs:
   - crmscript
   parent: CRMScript.Global.Map
@@ -295,9 +320,11 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.Bool
+      description: True if the internal iterator is past the end of the map, otherwise False.
 - uid: CRMScript.Global.Map.first()
   commentId: M:CRMScript.Global.Map.first()
   id: first()
+  so.intellisense: Map.first
   langs:
   - crmscript
   parent: CRMScript.Global.Map
@@ -313,9 +340,11 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.Bool
+      description: True if map is not empty, otherwise false.
 - uid: CRMScript.Global.Map.next()
   commentId: M:CRMScript.Global.Map.next()
   id: next()
+  so:intellisense: Map.next
   langs:
   - crmscript
   parent: CRMScript.Global.Map
@@ -331,9 +360,11 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.Bool
+      description: False if eof(), otherwise true.
 - uid: CRMScript.Global.Map.toJson()
   commentId: M:CRMScript.Global.Map.toJson()
   id: toJson()
+  so.intellisense: Map.toJson
   langs:
   - crmscript
   parent: CRMScript.Global.Map
@@ -349,9 +380,11 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
+      description: The Map represented as JSON string.
 - uid: CRMScript.Global.Map.fromJson(String)
   commentId: M:CRMScript.Global.Map.fromJson(String)
   id: fromJson(String)
+  so.intellisense: Map.fromJson
   langs:
   - crmscript
   parent: CRMScript.Global.Map
@@ -369,6 +402,7 @@ items:
       type: CRMScript.Global.String
       description: The Json-formatted string of key-value pairs to add.
     return:
+      type: CRMScript.Global.Void
 references:
 - uid: CRMScript.Global.Map
   commentId: T:CRMScript.Global.Map

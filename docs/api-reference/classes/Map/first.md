@@ -9,7 +9,6 @@ so.topic: reference
 
 # Map.first()
 
-Rewind internal iterator to first element.
+Rewind the internal iterator to the first element.
 
-Returns true if map is not empty, otherwise false.
-
+Returns true if the Map is not empty, otherwise false.

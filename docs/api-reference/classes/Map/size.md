@@ -5,9 +5,9 @@ intellisense: Map.size
 sortOrder: 528
 keywords: size()
 so.topic: reference
+so.yml: 1
 ---
 
 # Map.size()
 
 Returns the number of elements in the map.
-

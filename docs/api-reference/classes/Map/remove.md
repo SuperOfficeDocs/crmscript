@@ -13,5 +13,4 @@ Will remove the element with the given key.
 
 ## Parameters
 
- - key: the key matching the element to remove
-
+* key: the key matching the element to remove

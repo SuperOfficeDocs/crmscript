@@ -6,6 +6,7 @@ intellisense: Map.increaseValueForKey
 sortOrder: 536
 keywords: increaseValueForKey(String,Float), increaseValueForKey(String,Integer)
 so.topic: reference
+so.yml: 1
 ---
 
 # increaseValueForKey()

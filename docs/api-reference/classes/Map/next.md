@@ -12,4 +12,3 @@ so.topic: reference
 Move internal iterator to next position.
 
 Returns false if `eof()`, otherwise true.
-

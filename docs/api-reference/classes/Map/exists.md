@@ -5,6 +5,7 @@ intellisense: Map.exists
 sortOrder: 525
 keywords: exists(String)
 so.topic: reference
+so.yml: 1
 ---
 
 # Map.exists(String key)
@@ -13,7 +14,6 @@ Checks if the given key exists in the map.
 
 ## Parameters
 
- - key: The key to check
+* key: The key to check
 
 Returns true if the key exists in the map.
-

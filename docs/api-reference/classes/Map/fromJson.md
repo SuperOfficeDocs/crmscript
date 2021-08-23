@@ -11,4 +11,3 @@ so.topic: reference
 
 Will populate the map with the content of the jSon String.
 The jSon string is like this: {"key": "value", "foo": "bar"}
-

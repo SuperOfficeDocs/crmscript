@@ -6,6 +6,7 @@ langref: 1
 sortOrder: 30
 keywords: GenericToByte(Generic)
 so.topic: reference
+so.yml: 1
 ---
 
 # Generic.GenericToByte(Generic generic)

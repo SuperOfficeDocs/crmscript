@@ -6,6 +6,7 @@ langref: 1
 sortOrder: 120
 keywords: convertGenericToString(Generic)
 so.topic: reference
+so.yml: 1
 ---
 
 # Generic.convertGenericToString(Generic generic)

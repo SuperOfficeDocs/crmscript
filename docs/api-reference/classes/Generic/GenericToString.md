@@ -6,6 +6,7 @@ langref: 1
 sortOrder: 130
 keywords: GenericToString(Generic)
 so.topic: reference
+so.yml: 1
 ---
 
 # Generic.GenericToString(Generic generic)

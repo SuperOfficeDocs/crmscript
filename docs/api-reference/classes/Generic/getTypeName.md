@@ -6,6 +6,7 @@ langref: 1
 sortOrder: 140
 keywords: getTypeName(Generic)
 so.topic: reference
+so.yml: 1
 ---
 
 # Generic.getTypeName(Generic generic)

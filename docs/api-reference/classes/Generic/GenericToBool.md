@@ -6,6 +6,7 @@ langref: 1
 sortOrder: 10
 keywords: GenericToBool(Generic)
 so.topic: reference
+so.yml: 1
 ---
 
 # Generic.GenericToBool(Generic generic)

@@ -6,6 +6,7 @@ langref: 1
 sortOrder: 170
 keywords: setGenericFromString(Generic,String)
 so.topic: reference
+so.yml: 1
 ---
 
 # Generic.setGenericFromString(Generic generic, String value)

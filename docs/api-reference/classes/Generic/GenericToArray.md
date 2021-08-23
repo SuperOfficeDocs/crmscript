@@ -6,6 +6,7 @@ langref: 1
 sortOrder: 90
 keywords: GenericToArray(Generic)
 so.topic: reference
+so.yml: 1
 ---
 
 # Generic.GenericToArray(Generic generic)

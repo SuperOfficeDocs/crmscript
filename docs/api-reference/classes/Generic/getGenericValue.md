@@ -7,6 +7,7 @@ langref: 1
 sortOrder: 70
 keywords: getGenericValue(String), getGenericValue(Generic,String)
 so.topic: reference
+so.yml: 1
 ---
 
 # getGenericValue()

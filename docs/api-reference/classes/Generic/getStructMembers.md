@@ -6,6 +6,7 @@ langref: 1
 sortOrder: 145
 keywords: getStructMembers(String)
 so.topic: reference
+so.yml: 1
 ---
 
 # Generic.getStructMembers(String name)
@@ -25,6 +26,7 @@ Building BuildingGeneric(String json){
   
   return b;
 }
+```
 
 * **value:** String Name of struct, for example "Person"
 * **Returns:** String[] array of member names, for example ["name", "age", "dob"]

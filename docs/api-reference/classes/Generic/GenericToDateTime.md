@@ -6,6 +6,7 @@ langref: 1
 sortOrder: 50
 keywords: GenericToDateTime(Generic)
 so.topic: reference
+so.yml: 1
 ---
 
 # Generic.GenericToDateTime(Generic generic)

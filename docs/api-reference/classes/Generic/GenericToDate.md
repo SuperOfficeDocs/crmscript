@@ -6,6 +6,7 @@ langref: 1
 sortOrder: 40
 keywords: GenericToDate(Generic)
 so.topic: reference
+so.yml: 1
 ---
 
 # Generic.GenericToDate(Generic generic)

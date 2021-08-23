@@ -4,6 +4,7 @@ title: Generic
 intellisense: Void.Generic
 sortOrder: 360
 so.topic: reference
+so.yml: 1
 ---
 
 # Generic

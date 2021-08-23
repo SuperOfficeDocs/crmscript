@@ -6,6 +6,7 @@ langref: 1
 sortOrder: 20
 keywords: typeIsStruct(Generic)
 so.topic: reference
+so.yml: 1
 ---
 
 # Generic.typeIsStruct(Generic generic)

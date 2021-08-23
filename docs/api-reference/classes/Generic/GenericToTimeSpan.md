@@ -6,6 +6,7 @@ langref: 1
 sortOrder: 160
 keywords: GenericToTimeSpan(Generic)
 so.topic: reference
+so.yml: 1
 ---
 
 # Generic.GenericToTimeSpan(Generic generic)

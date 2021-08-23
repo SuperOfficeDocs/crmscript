@@ -6,6 +6,7 @@ langref: 1
 sortOrder: 60
 keywords: GenericToFloat(Generic)
 so.topic: reference
+so.yml: 1
 ---
 
 # Generic.GenericToFloat(Generic generic)

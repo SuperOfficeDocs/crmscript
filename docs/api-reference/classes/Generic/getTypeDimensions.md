@@ -6,6 +6,7 @@ langref: 1
 sortOrder: 110
 keywords: getTypeDimensions(Generic)
 so.topic: reference
+so.yml: 1
 ---
 
 # Generic.getTypeDimensions(Generic generic)

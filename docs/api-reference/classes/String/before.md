@@ -4,10 +4,10 @@ title: String.before(String searchText)
 intellisense: String.before
 keywords: before(String)
 so.topic: reference
+so.yml: 1
 ---
 
 # String.before(String searchText)
 
 * **searchText:** The text to search for
-* **Returns:** The part of the string preceeding the search text
-
+* **Returns:** The part of the string preceding the search text

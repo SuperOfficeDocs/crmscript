@@ -4,6 +4,7 @@ title: String.toInteger()
 intellisense: String.toInteger
 keywords: toInteger()
 so.topic: reference
+so.yml: 1
 ---
 
 # String.toInteger()
@@ -11,4 +12,3 @@ so.topic: reference
 Returns an integer from a string representation of a number.
 
 * **Returns:** The integer value of a string.
-

@@ -4,11 +4,11 @@ title: String.htmlDecode()
 intellisense: String.htmlDecode
 keywords: htmlDecode()
 so.topic: reference
+so.yml: 1
 ---
 
 # String.htmlDecode()
 
-Html decode the string.
+HTML decode the string.
 
-* **Returns:** An html decoded version of the String.
-
+* **Returns:** An HTML decoded version of the String.

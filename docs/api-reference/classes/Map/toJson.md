@@ -5,7 +5,7 @@ intellisense: Map.toJson
 sortOrder: 533
 keywords: toJson()
 so.topic: reference
-so.yml:1
+so.yml: 1
 ---
 
 # Map.toJson()

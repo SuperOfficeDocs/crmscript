@@ -3,12 +3,13 @@ uid: crmscript_ref_String
 title: String
 intellisense: Void.String
 so.topic: reference
+so.yml: 1
 ---
 
 # String
 
 A class for representing strings as objects.
-Constructor can take a string, and returns a string.
+Constructor can take a string and returns a string.
 
 ## Example
 

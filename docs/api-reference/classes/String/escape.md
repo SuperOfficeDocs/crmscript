@@ -4,6 +4,7 @@ title: String.escape(String chars)
 intellisense: String.escape
 keywords: escape(String)
 so.topic: reference
+so.yml: 1
 ---
 
 # String.escape(String chars)
@@ -12,4 +13,3 @@ Escape special characters of a string. Special characters are given as a paramet
 
 * **chars:** Special characters which will be escaped with a backslash
 * **Returns:** The escaped coded string
-

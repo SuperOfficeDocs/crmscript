@@ -8,9 +8,9 @@ so.topic: reference
 
 # String.caseCompare(String p_0)
 
-Compare this string with another String, disregarding case.
+Compare this string with another String, disregarding the case.
+
 Returns \<0 if this is lexically smaller than s, 0 if equal, and >0 if this is lexically larger than s
 
-* **The** string to compare with.
+* The string to compare with.
 * **Returns:** \<0 if this is lexically smaller than s, 0 if equal, and >0 if this is lexically larger than s
-

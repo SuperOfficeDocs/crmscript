@@ -10,5 +10,4 @@ so.topic: reference
 
 * **Returns:** The UTF-8 representation of the string
 
-The characters are coded using the utf-8 format, and the string returned consists of only ascii characters, encoding the unicode characters (outside ASCII/Latin-1) in utf-8 format.
-
+The characters are coded using the UTF-8 format, and the string returned consists of only ASCII characters, encoding the Unicode characters (outside ASCII/Latin-1) in UTF-8 format.

@@ -5,6 +5,7 @@ description: CRMScript method in the String class that appends a character or st
 intellisense: String.append
 keywords: append(Byte)
 so.topic: reference
+so.yml: 1
 ---
 
 # append()

@@ -10,6 +10,5 @@ so.topic: reference
 
 Compare two string a returns true if they are equal.
 
-* **The** string to compare with.
+* The string to compare with.
 * **Returns:** true if they are equal
-

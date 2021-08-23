@@ -4,13 +4,13 @@ title: String.substitute(String src, String dest)
 intellisense: String.substitute
 keywords: substitute(String,String)
 so.topic: reference
+so.yml: 1
 ---
 
 # String.substitute(String src, String dest)
 
-Replace a substring with a new substring. All occurences will be replaced.
+Replace a substring with a new substring. All occurrences will be replaced.
 
 * **src:** Substring to search for.
 * **dest:** Substring to replace/substitute with.
 * **Returns:** The substituted string
-

@@ -4,6 +4,7 @@ title: String.isUpper()
 intellisense: String.isUpper
 keywords: isUpper()
 so.topic: reference
+so.yml: 1
 ---
 
 # String.isUpper()
@@ -11,4 +12,3 @@ so.topic: reference
 Determine if the string contains only uppercase characters.
 
 * **Returns:** Return true if the string only contains uppercase characters.
-

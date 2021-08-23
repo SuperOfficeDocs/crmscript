@@ -10,10 +10,9 @@ so.topic: reference
 
 Return a numbered word from a string
 
-This function returnes word number num from the string. Word 0 is the first word
-in the string, even if it's after some leading whitespace.
-E.g. `String("  this is a test")`.getWord(1) yields "is".
+This function returns the word number num from the string. Word 0 is the first word in the string, even if it's after some leading whitespace.
+
+For example, `String("  this is a test")`.getWord(1) yields "is".
 
 * **The:** number of the word to return, starting at 0
 * **Returns:** The word
-

@@ -4,6 +4,7 @@ title: String.getLength()
 intellisense: String.getLength
 keywords: getLength()
 so.topic: reference
+so.yml: 1
 ---
 
 # String.getLength()
@@ -11,4 +12,3 @@ so.topic: reference
 Returns the length of the string.
 
 * **Returns:** The length of the string in characters.
-

@@ -4,6 +4,7 @@ title: String.toFloat()
 intellisense: String.toFloat
 keywords: toFloat()
 so.topic: reference
+so.yml: 1
 ---
 
 # String.toFloat()
@@ -13,7 +14,8 @@ Returns a float from a string representation of a number.
 * **Returns:** The float value of a string.
 
 ## Example
-    
-    String s = "150,3";
-    s.toFloat();
 
+```crmscript
+String s = "150,3";
+s.toFloat();
+```

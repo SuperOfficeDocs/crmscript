@@ -4,11 +4,11 @@ title: String.urlEncode()
 intellisense: String.urlEncode
 keywords: urlEncode()
 so.topic: reference
+so.yml: 1
 ---
 
 # String.urlEncode()
 
-Url-encode the string.
+URL-encode the string.
 
-* **Returns:** An url encoded version of the String.
-
+* **Returns:** An URL encoded version of the String.

@@ -4,10 +4,10 @@ title: String.findLast(String p_0)
 intellisense: String.findLast
 keywords: findLast(String)
 so.topic: reference
+so.yml: 1
 ---
 
 # String.findLast(String p_0)
 
-* **p0::** The string to match
-* **Returns:** The position of the last occurence of the string to match
-
+* **p0:** The string to match
+* **Returns:** The position of the last occurrence of the string to match

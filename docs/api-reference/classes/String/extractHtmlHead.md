@@ -4,11 +4,11 @@ title: String.extractHtmlHead(Bool stripTitle)
 intellisense: String.extractHtmlHead
 keywords: extractHtmlHead(Bool)
 so.topic: reference
+so.yml: 1
 ---
 
 # String.extractHtmlHead(Bool stripTitle)
 
-Extracts the head content of a string containing a html document.
+Extracts the head content of a string containing an HTML document.
 
 If the stripTitle parameter is true, the title tag will be excluded.
-

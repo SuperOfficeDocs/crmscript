@@ -4,6 +4,7 @@ title: String.isValidEmail()
 intellisense: String.isValidEmail
 keywords: isValidEmail()
 so.topic: reference
+so.yml: 1
 ---
 
 # String.isValidEmail()
@@ -11,4 +12,3 @@ so.topic: reference
 Checks if the string is a valid email address.
 
 * **Returns:** True if the string is a valid email address.
-

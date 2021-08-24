@@ -4,6 +4,7 @@ title: String.equals(String p_0)
 intellisense: String.equals
 keywords: equals(String)
 so.topic: reference
+so.yml: 1
 ---
 
 # String.equals(String p_0)

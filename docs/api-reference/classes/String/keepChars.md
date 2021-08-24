@@ -4,10 +4,10 @@ title: String.keepChars(String charsToKeep)
 intellisense: String.keepChars
 keywords: keepChars(String)
 so.topic: reference
+so.yml: 1
 ---
 
 # String.keepChars(String charsToKeep)
 
 * **charsToKeep:** A string of characters to keep
 * **Returns:** String stripped from all other characters
-

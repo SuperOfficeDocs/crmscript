@@ -4,11 +4,13 @@ title: String.quote(String quoteString)
 intellisense: String.quote
 keywords: quote(String)
 so.topic: reference
+so.yml: 1
 ---
 
 # String.quote(String quoteString)
 
-This function will quote the String with the quoteString.  Each line of the String will start with quoteString, after calling quote.
+This function will quote the String with the quoteString. Each line of the String will start with quoteString, after calling quote.
 
-\params quoteString The String to use as a quote, example >
+## Parameters
 
+* **quoteString:** The String to use as a quote, example >

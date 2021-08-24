@@ -4,6 +4,7 @@ title: String.wrap(Integer length, Bool ignoreQuote)
 intellisense: String.wrap
 keywords: wrap(Integer,Bool)
 so.topic: reference
+so.yml: 1
 ---
 
 # String.wrap(Integer length, Bool ignoreQuote)
@@ -12,4 +13,3 @@ This function will wrap the String in lines of wanted length.
 
 * **length:** The number of characters per line after wrapping
 * **ignoreQuote:** True if you do not want quoted lines to be wrapped, else false.
-

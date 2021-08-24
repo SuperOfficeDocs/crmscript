@@ -4,6 +4,7 @@ title: String.utf8Encode()
 intellisense: String.utf8Encode
 keywords: utf8Encode()
 so.topic: reference
+so.yml: 1
 ---
 
 # String.utf8Encode()

@@ -13,8 +13,10 @@ Constructor can take a string and returns a string.
 
 ## Example
 
-    String s = "47882255";
-    
-    if (s.isDigit() && s.getLength() == 8){
-       print(s + " is a valid phone number");
-    }
+```crmscript
+String s = "47882255";
+
+if (s.isDigit() && s.getLength() == 8){
+  print(s + " is a valid phone number");
+}
+```

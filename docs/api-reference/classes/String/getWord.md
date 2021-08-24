@@ -4,6 +4,7 @@ title: String.getWord(Integer num)
 intellisense: String.getWord
 keywords: getWord(Integer)
 so.topic: reference
+so.yml: 1
 ---
 
 # String.getWord(Integer num)

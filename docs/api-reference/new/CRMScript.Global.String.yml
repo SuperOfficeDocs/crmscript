@@ -16,7 +16,7 @@ items:
     - CRMScript.Global.String.toUpper()
     - CRMScript.Global.String.isLower()
     - CRMScript.Global.String.isUpper()
-#    - CRMScript.Global.String.escape()
+    - CRMScript.Global.String.escape(String)
     - CRMScript.Global.String.equals(String)
     - CRMScript.Global.String.equalsIgnoreCase(String)
     - CRMScript.Global.String.beginsWith(String)
@@ -26,10 +26,10 @@ items:
     - CRMScript.Global.String.compare(String)
     - CRMScript.Global.String.caseCompare(String)
     - CRMScript.Global.String.append(String)
-#    - CRMScript.Global.String.append(Byte)
+    - CRMScript.Global.String.append(Byte)
     - CRMScript.Global.String.substitute(String, String)
     - CRMScript.Global.String.find(String)
-#    - CRMScript.Global.String.findCase(String)
+    - CRMScript.Global.String.findCase(String)
     - CRMScript.Global.String.findLast(String)
     - CRMScript.Global.String.subString(Integer, Integer)
     - CRMScript.Global.String.until(String)
@@ -44,27 +44,37 @@ items:
     - CRMScript.Global.String.isNumber()
     - CRMScript.Global.String.isNull()
     - CRMScript.Global.String.isEmpty()
-#    - CRMScript.Global.String.toBool()
-#    - CRMScript.Global.String.toInteger()
-#    - CRMScript.Global.String.toFloat()
-#    - CRMScript.Global.String.toByteArray()
-#    - CRMScript.Global.String.toDate()
-#    - CRMScript.Global.String.toDateTime()
-#    - CRMScript.Global.String.toTime()
-#    - CRMScript.Global.String.extractHtmlBody(Bool)
-#    - CRMScript.Global.String.extractHtmlHead(Bool)
-#    - CRMScript.Global.String.htmlDecode()
-#    - CRMScript.Global.String.htmlEncode()
-#    - CRMScript.Global.String.getEmails()
-#    - CRMScript.Global.String.isValidEmail()
-#    - CRMScript.Global.String.getLine()
-#    - CRMScript.Global.String.getWord(Integer)
-#    - CRMScript.Global.String.urlDecode()
-#    - CRMScript.Global.String.urlEncode()
-#    - CRMScript.Global.String.utf8Decode()
-#    - CRMScript.Global.String.utf8Encode()
-#    - CRMScript.Global.String.xmlDecode()
-#    - CRMScript.Global.String.xmlEncode()
+    - CRMScript.Global.String.toBool()
+    - CRMScript.Global.String.toInteger()
+    - CRMScript.Global.String.toFloat()
+    - CRMScript.Global.String.toByteArray()
+    - CRMScript.Global.String.toDate()
+    - CRMScript.Global.String.toDateTime()
+    - CRMScript.Global.String.toTime()
+    - CRMScript.Global.String.extractHtmlBody(Bool)
+    - CRMScript.Global.String.extractHtmlHead(Bool)
+    - CRMScript.Global.String.htmlDecode()
+    - CRMScript.Global.String.htmlEncode()
+    - CRMScript.Global.String.getEmails()
+    - CRMScript.Global.String.isValidEmail()
+    - CRMScript.Global.String.getLine()
+    - CRMScript.Global.String.getWord(Integer)
+    - CRMScript.Global.String.urlDecode()
+    - CRMScript.Global.String.urlEncode()
+    - CRMScript.Global.String.utf8Decode()
+    - CRMScript.Global.String.utf8Encode()
+    - CRMScript.Global.String.xmlDecode()
+    - CRMScript.Global.String.xmlEncode()
+    - CRMScript.Global.String.keepChars(String)
+    - CRMScript.Global.String.parseCSV(String)
+    - CRMScript.Global.String.parseSOMultiLanguageString(Integer)
+    - CRMScript.Global.String.prettyChop(Integer)
+    - CRMScript.Global.String.regexp(String)
+    - CRMScript.Global.String.quote(String)
+    - CRMScript.Global.String.wrap(Integer, Bool)
+    - CRMScript.Global.String.stripLeading(String)
+    - CRMScript.Global.String.stripLeadingAndTrailing(String)
+    - CRMScript.Global.String.stripTrailing(String)
   name: String
   nameWithType: String
   fullName: CRMScript.Global.String
@@ -1273,6 +1283,221 @@ items:
     return:
       type: CRMScript.Global.String
       description: An XML encoded version of the string.
+- uid: CRMScript.Global.String.keepChars(String)
+  commentId: M:CRMScript.Global.String.keepChars(String)
+  id: keepChars(String)
+  so.intellisense: String.keepChars
+  langs:
+  - crmscript
+  parent: CRMScript.Global.String
+  name: keepChars(String)
+  nameWithType: String.keepChars(String)
+  fullName: CRMScript.Global.String.keepChars(String)
+  type: Method
+  summary: "\nRemoves all characters except those listed from the string.\n"
+  syntax:
+    content: String keepChars(String charsToKeep)
+    parameters:
+    - id: charsToKeep
+      type: CRMScript.Global.String
+      description: A string of characters to keep
+    return:
+      type: CRMScript.Global.String
+      description: String stripped from all other characters
+- uid: CRMScript.Global.String.parseCSV(String)
+  commentId: M:CRMScript.Global.String.parseCSV(String)
+  id: parseCSV(String)
+  so.intellisense: String.parseCSV
+  langs:
+  - crmscript
+  parent: CRMScript.Global.String
+  name: parseCSV(String)
+  nameWithType: String.parseCSV(String)
+  fullName: CRMScript.Global.String.parseCSV(String)
+  type: Method
+  summary: "\nSplits the current line separated with a delimiter.\n"
+  remarks: "\nThe delimiter must be a single character.\n"
+  syntax:
+    content: String[] parseCSV(String delimiter)
+    parameters:
+    - id: delimiter
+      type: CRMScript.Global.String
+      description: The delimiter (1 character) for where to split the string.
+    return:
+      type: CRMScript.Global.String[]
+- uid: CRMScript.Global.String.parseSOMultiLanguageString(Integer)
+  commentId: M:CRMScript.Global.String.parseSOMultiLanguageString(Integer)
+  id: parseSOMultiLanguageString(Integer)
+  intellisense: String.parseSOMultiLanguageString
+  langs:
+  - crmscript
+  parent: CRMScript.Global.String
+  name: parseSOMultiLanguageString(Integer)
+  nameWithType: String.parseSOMultiLanguageString(Integer)
+  fullName: CRMScript.Global.String.parseSOMultiLanguageString(Integer)
+  type: Method
+  summary: "\nReturns the string part of the specified culture from the multi-language string. These strings are typically used in SuperOffice list and description data.\n"
+  remarks: "\nAvailable languages: Norwegian = 0, English = 1, German = 2, Swedish = 3, Danish = 4, Dutch = 5, French = 6, Spanish = 7, Italian = 8, Czech = 9, Finnish = 10, Polish = 11\n"
+  example:
+  - "\nString from PrefDesc table: US:&quot;Location and size&quot;;GE:&quot;Position und Größe&quot;;NO:&quot;Posisjon og størrelse&quot;\n"
+  syntax:
+    content: String parseSOMultiLanguageString(Integer language)
+    parameters:
+    - id: language
+      type: CRMScript.Global.Integer
+      description: Language code
+    return:
+      type: CRMScript.Global.String
+- uid: CRMScript.Global.String.prettyChop(Integer)
+  commentId: M:CRMScript.Global.String.prettyChop(Integer)
+  id: prettyChop(Integer)
+  so.intellisense: String.prettyChop
+  langs:
+  - crmscript
+  parent: CRMScript.Global.String
+  name: prettyChop(Integer)
+  nameWithType: String.prettyChop(Integer)
+  fullName: CRMScript.Global.String.prettyChop(Integer)
+  type: Method
+  summary: "\nThis function will chop the current string after the specified number of characters and return the result. It will also append three dots at the end of the string. It will not change the current string.\n"
+  syntax:
+    content: String prettyChop(Integer length)
+    parameters:
+    - id: length
+      type: CRMScript.Global.Integer
+      description: The number of characters to keep.
+    return:
+      type: CRMScript.Global.String
+      description: The chopped version of the string, including three dots at the end.
+- uid: CRMScript.Global.String.quote(String)
+  commentId: M:CRMScript.Global.String.quote(String)
+  id: quote(String)
+  so.intellisense: String.quote
+  langs:
+  - crmscript
+  parent: CRMScript.Global.String
+  name: quote(String)
+  nameWithType: String.quote(String)
+  fullName: CRMScript.Global.String.quote(String)
+  type: Method
+  summary: "\nThis function will quote the String with the quoteString. Each line of the String will start with quoteString, after calling quote.\n"
+  syntax:
+    content: String quote(String quoteString)
+    parameters:
+    - id: quoteString
+      type: CRMScript.Global.String
+      description: The String to use as a quote, such as &quot;>&quot;
+    return:
+      type: CRMScript.Global.String
+- uid: CRMScript.Global.String.regexp(String)
+  commentId: M:CRMScript.Global.String.regexp(String)
+  id: regexp(String)
+  so.intellisense: String.regexp
+  langs:
+  - crmscript
+  parent: CRMScript.Global.String
+  name: regexp(String)
+  nameWithType: String.regexp(String)
+  fullName: CRMScript.Global.String.regexp(String)
+  type: Method
+  summary: "\nUses regexp pattern on the String object. Support for sub-expressions is also present.<p></p>\nNo matches will result in an array with length 0. res[0] will point to the entire matched string. res[1 ... n-1] will point to the matches of the sub-expressions.\n"
+  remarks: "\nThe regexp is case-insensitive.\n"
+  example:
+  - "\n<pre><code>String s;\ns=&quot;blabla 1234-4567-7890-1111 asdfasdfasdf&quot;;\nString[] res = s.regexp(&quot;(\\\\d{4})-(\\\\d{4})-(\\\\d{4})-(\\{4})&quot;);\nfor (Integer i=0;i&gt;res.length(); i++)\n{\n\tprint(&quot;Result: &quot; + res[i] + &quot;\n&quot;);\n}</code></pre>\n"
+  syntax:
+    content: String[] regexp(String pattern)
+    parameters:
+    - id: pattern
+      type: CRMScript.Global.String
+      description: The regexp pattern to use on the String.
+    return:
+      type: CRMScript.Global.String[]
+- uid: CRMScript.Global.String.stripLeading(String)
+  commentId: M:CRMScript.Global.String.stripLeading(String)
+  id: stripLeading(String)
+  intellisense: String.stripLeading
+  langs:
+  - crmscript
+  parent: CRMScript.Global.String
+  name: stripLeading(String)
+  nameWithType: String.stripLeading(String)
+  fullName: CRMScript.Global.String.stripLeading(String)
+  type: Method
+  summary: "\nRemove all characters given by the parameter at the beginning of the String.\n"
+  syntax:
+    content: String stripLeading(String characters)
+    parameters:
+    - id: characters
+      type: CRMScript.Global.String
+      description: The characters to strip.
+    return:
+      type: CRMScript.Global.String
+      description: The string without the leading characters.
+- uid: CRMScript.Global.String.stripLeadingAndTrailing(String)
+  commentId: M:CRMScript.Global.String.stripLeadingAndTrailing(String)
+  id: stripLeadingAndTrailing(String)
+  intellisense: String.stripLeadingAndTrailing
+  langs:
+  - crmscript
+  parent: CRMScript.Global.String
+  name: stripLeadingAndTrailing(String)
+  nameWithType: String.stripLeadingAndTrailing(String)
+  fullName: CRMScript.Global.String.stripLeadingAndTrailing(String)
+  type: Method
+  summary: "\nRemove all characters given by the parameter at the beginning and the end of the String.\n"
+  syntax:
+    content: String stripLeadingAndTrailing(String characters)
+    parameters:
+    - id: characters
+      type: CRMScript.Global.String
+      description: The characters to strip.
+    return:
+      type: CRMScript.Global.String
+      description: The string without the leading and trailing characters.
+- uid: CRMScript.Global.String.stripTrailing(String)
+  commentId: M:CRMScript.Global.String.stripTrailing(String)
+  id: stripTrailing(String)
+  intellisense: String.stripTrailing
+  langs:
+  - crmscript
+  parent: CRMScript.Global.String
+  name: stripTrailing(String)
+  nameWithType: String.stripTrailing(String)
+  fullName: CRMScript.Global.String.stripTrailing(String)
+  type: Method
+  summary: "\nRemove all characters given by the parameter at the end of the String.\n"
+  syntax:
+    content: String stripTrailing(String characters)
+    parameters:
+    - id: characters
+      type: CRMScript.Global.String
+      description: The characters to strip.
+    return:
+      type: CRMScript.Global.String
+      description: The string without the trailing characters.
+- uid: CRMScript.Global.String.wrap(Integer, Bool)
+  commentId: M:CRMScript.Global.String.wrap(Integer, Bool)
+  id: wrap(Integer, Bool)
+  so.intellisense: String.wrap
+  langs:
+  - crmscript
+  parent: CRMScript.Global.String
+  name: wrap(Integer, Bool)
+  nameWithType: String.wrap(Integer, Bool)
+  fullName: CRMScript.Global.String.wrap(Integer, Bool)
+  type: Method
+  summary: "\nThis function will wrap the String in lines of wanted length\n"
+  syntax:
+    content: String wrap(Integer length, Bool ignoreQuote)
+    parameters:
+    - id: length
+      type: CRMScript.Global.Integer
+      description: The number of characters per line after wrapping.
+    - id: ignoreQuote
+      type: CRMScript.Global.Bool
+      description: True if you do not want quoted lines to be wrapped, else false.
+    return:
+      type: CRMScript.Global.String
 references:
 - uid: CRMScript.Global.String
   commentId: T:CRMScript.Global.String

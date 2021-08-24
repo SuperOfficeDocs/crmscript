@@ -4,9 +4,9 @@ title: String.parseCSV(String delim)
 intellisense: String.parseCSV
 keywords: parseCSV(String)
 so.topic: reference
+so.yml: 1
 ---
 
 # String.parseCSV(String delim)
 
 Splits the current line separated with delim (delim must be one character).
-

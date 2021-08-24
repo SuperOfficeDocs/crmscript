@@ -4,6 +4,7 @@ title: String.xmlEncode()
 intellisense: String.xmlEncode
 keywords: xmlEncode()
 so.topic: reference
+so.yml: 1
 ---
 
 # String.xmlEncode()

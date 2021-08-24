@@ -4,6 +4,7 @@ title: String.isAlphanumeric()
 intellisense: String.isAlphanumeric
 keywords: isAlphanumeric()
 so.topic: reference
+so.yml: 1
 ---
 
 # String.isAlphanumeric()

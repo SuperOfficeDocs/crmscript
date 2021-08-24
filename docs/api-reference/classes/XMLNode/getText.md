@@ -4,18 +4,20 @@ title: XMLNode.getText()
 intellisense: XMLNode.getText
 keywords: getText()
 so.topic: reference
+so.yml: 1
 ---
 
 # XMLNode.getText()
 
-Get the text between two tags. For example \<TAG>Returns this text\</TAG>
+Get the text between two tags. For example, \<TAG>Returns this text\</TAG>.
 
 ## Example
-    
-    XMLNode xml = XMLNode("root");
-    xml.setName("Root");
-    xml.setParameter("type", "object");
-    xml.setText("Example text");
-    
-    print(xml.getText());
 
+```crmscript
+XMLNode xml = XMLNode("root");
+xml.setName("Root");
+xml.setParameter("type", "object");
+xml.setText("Example text");
+
+print(xml.getText());
+```

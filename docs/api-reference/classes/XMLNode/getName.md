@@ -4,19 +4,21 @@ title: XMLNode.getName()
 intellisense: XMLNode.getName
 keywords: getName()
 so.topic: reference
+so.yml: 1
 ---
 
 # XMLNode.getName()
 
-Gets the name of the xml tag.
+Gets the name of the XML tag.
 
 ## Example
-    
-    XMLNode xml = XMLNode("root");
-    xml.setName("Root");
-    xml.setParameter("type", "object");
-    
-    print(xml.getName());
-    
-    Prints "Root".
 
+```crmscript
+XMLNode xml = XMLNode("root");
+xml.setName("Root");
+xml.setParameter("type", "object");
+
+print(xml.getName());
+
+//Prints "Root".
+```

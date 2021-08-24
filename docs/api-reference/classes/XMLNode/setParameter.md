@@ -4,6 +4,7 @@ title: XMLNode.setParameter(String name, String value)
 intellisense: XMLNode.setParameter
 keywords: setParameter(String,String)
 so.topic: reference
+so.yml: 1
 ---
 
 # XMLNode.setParameter(String name, String value)
@@ -12,13 +13,14 @@ Sets a parameter with name and value. A node can have any number of parameters b
 
 ## Parameters
 
- - name: Parameter name
- - value: Parameter value
+* **name:** Parameter name
+* **value:** Parameter value
 
 ## Example
-    
-    XMLNode xml = XMLNode("root");
-    xml.setName("Root");
-    xml.setParameter("type", "object");
-    xml.setParameter("type1", "object1");
 
+```crmscript
+XMLNode xml = XMLNode("root");
+xml.setName("Root");
+xml.setParameter("type", "object");
+xml.setParameter("type1", "object1");
+```

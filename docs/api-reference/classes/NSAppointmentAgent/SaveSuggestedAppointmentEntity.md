@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSSuggestedAppointmentEntity SaveSuggestedAppointmentEntity(NSSuggestedAppointmentEntity suggestedAppointmentEntity);
-	  
+
 Updates the existing NSSuggestedAppointmentEntity or creates a new NSSuggestedAppointmentEntity if the id parameter is 0
-	  
+
 **Parameters**:
  - **suggestedAppointmentEntity** The NSSuggestedAppointmentEntity to save.
 

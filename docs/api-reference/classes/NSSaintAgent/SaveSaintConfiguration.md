@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSSaintConfiguration SaveSaintConfiguration(NSSaintConfiguration saintConfiguration);
-	  
+
 Updates the existing NSSaintConfiguration or creates a new NSSaintConfiguration if the id parameter is 0
-	  
+
 **Parameters**:
  - **saintConfiguration** The NSSaintConfiguration to save.
 

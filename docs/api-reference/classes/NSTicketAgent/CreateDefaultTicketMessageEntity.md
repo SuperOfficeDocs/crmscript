@@ -7,10 +7,10 @@ so.topic: reference
 ---
 
 # NSTicketMessageEntity CreateDefaultTicketMessageEntity()
-	  
+
 Set default values into a new NSTicketMessageEntity.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance
-	  
+
 **Returns:** NSTicketMessageEntity
 
 ```crmscript

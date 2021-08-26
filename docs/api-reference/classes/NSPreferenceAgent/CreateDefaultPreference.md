@@ -7,10 +7,10 @@ so.topic: reference
 ---
 
 # NSPreference CreateDefaultPreference()
-	  
+
 Set default values into a new NSPreference.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance
-	  
+
 **Returns:** NSPreference
 
 ```crmscript

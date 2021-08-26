@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSStatusMonitorPeriods SaveStatusMonitorPeriods(NSStatusMonitorPeriods statusMonitorPeriods);
-	  
+
 Updates the existing NSStatusMonitorPeriods or creates a new NSStatusMonitorPeriods if the id parameter is 0
-	  
+
 **Parameters**:
  - **statusMonitorPeriods** The NSStatusMonitorPeriods to save.
 

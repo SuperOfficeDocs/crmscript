@@ -7,10 +7,10 @@ so.topic: reference
 ---
 
 # NSSuggestedDocumentEntity CreateDefaultSuggestedDocumentEntity()
-	  
+
 Set default values into a new NSSuggestedDocumentEntity.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance
-	  
+
 **Returns:** NSSuggestedDocumentEntity
 
 ```crmscript

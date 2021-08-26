@@ -7,10 +7,10 @@ so.topic: reference
 ---
 
 # NSContactEntity CreateDefaultContactEntity()
-	  
+
 Set default values into a new NSContactEntity.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance
-	  
+
 **Returns:** NSContactEntity
 
 ```crmscript

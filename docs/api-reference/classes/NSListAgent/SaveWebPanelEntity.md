@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSWebPanelEntity SaveWebPanelEntity(NSWebPanelEntity webPanelEntity);
-	  
+
 Updates the existing NSWebPanelEntity or creates a new NSWebPanelEntity if the id parameter is 0
-	  
+
 **Parameters**:
  - **webPanelEntity** The NSWebPanelEntity to save.
 

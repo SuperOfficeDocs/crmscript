@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSTicketMessageEntity SaveTicketMessageEntity(NSTicketMessageEntity ticketMessageEntity);
-	  
+
 Updates the existing NSTicketMessageEntity or creates a new NSTicketMessageEntity if the id parameter is 0
-	  
+
 **Parameters**:
  - **ticketMessageEntity** The NSTicketMessageEntity to save.
 

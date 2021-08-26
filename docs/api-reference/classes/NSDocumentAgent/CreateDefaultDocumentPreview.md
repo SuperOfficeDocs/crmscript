@@ -7,10 +7,10 @@ so.topic: reference
 ---
 
 # NSDocumentPreview CreateDefaultDocumentPreview()
-	  
+
 Set default values into a new NSDocumentPreview.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance
-	  
+
 **Returns:** NSDocumentPreview
 
 ```crmscript

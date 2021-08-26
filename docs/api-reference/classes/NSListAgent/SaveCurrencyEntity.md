@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSCurrencyEntity SaveCurrencyEntity(NSCurrencyEntity currencyEntity);
-	  
+
 Updates the existing NSCurrencyEntity or creates a new NSCurrencyEntity if the id parameter is 0
-	  
+
 **Parameters**:
  - **currencyEntity** The NSCurrencyEntity to save.
 

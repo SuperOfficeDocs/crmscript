@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSDocumentTemplateEntity SaveDocumentTemplateEntity(NSDocumentTemplateEntity documentTemplateEntity);
-	  
+
 Updates the existing NSDocumentTemplateEntity or creates a new NSDocumentTemplateEntity if the id parameter is 0
-	  
+
 **Parameters**:
  - **documentTemplateEntity** The NSDocumentTemplateEntity to save.
 

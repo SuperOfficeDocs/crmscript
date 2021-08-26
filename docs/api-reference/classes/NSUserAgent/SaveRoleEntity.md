@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSRoleEntity SaveRoleEntity(NSRoleEntity roleEntity);
-	  
+
 Updates the existing NSRoleEntity or creates a new NSRoleEntity if the id parameter is 0
-	  
+
 **Parameters**:
  - **roleEntity** The NSRoleEntity to save.
 

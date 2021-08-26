@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSSuggestedDocumentEntity SaveSuggestedDocumentEntity(NSSuggestedDocumentEntity suggestedDocumentEntity);
-	  
+
 Updates the existing NSSuggestedDocumentEntity or creates a new NSSuggestedDocumentEntity if the id parameter is 0
-	  
+
 **Parameters**:
  - **suggestedDocumentEntity** The NSSuggestedDocumentEntity to save.
 

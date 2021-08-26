@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSAmountClassEntity SaveAmountClassEntity(NSAmountClassEntity amountClassEntity);
-	  
+
 Updates the existing NSAmountClassEntity or creates a new NSAmountClassEntity if the id parameter is 0
-	  
+
 **Parameters**:
  - **amountClassEntity** The NSAmountClassEntity to save.
 

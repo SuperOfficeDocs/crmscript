@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSTicketEntity SaveTicketEntity(NSTicketEntity ticketEntity);
-	  
+
 Updates the existing NSTicketEntity or creates a new NSTicketEntity if the id parameter is 0
-	  
+
 **Parameters**:
  - **ticketEntity** The NSTicketEntity to save.
 

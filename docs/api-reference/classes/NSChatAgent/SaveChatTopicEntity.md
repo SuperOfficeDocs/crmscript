@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSChatTopicEntity SaveChatTopicEntity(NSChatTopicEntity chatTopicEntity);
-	  
+
 Updates the existing NSChatTopicEntity or creates a new NSChatTopicEntity if the id parameter is 0
-	  
+
 **Parameters**:
  - **chatTopicEntity** The NSChatTopicEntity to save.
 

@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSEMailAccount SaveEMailAccount(NSEMailAccount eMailAccount);
-	  
+
 Updates the existing NSEMailAccount or creates a new NSEMailAccount if the id parameter is 0
-	  
+
 **Parameters**:
  - **eMailAccount** The NSEMailAccount to save.
 

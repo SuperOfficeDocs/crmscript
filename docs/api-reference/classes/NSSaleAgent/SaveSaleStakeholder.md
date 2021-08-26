@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSSaleStakeholder SaveSaleStakeholder(NSSaleStakeholder saleStakeholder);
-	  
+
 Updates the existing NSSaleStakeholder or creates a new NSSaleStakeholder if the id parameter is 0
-	  
+
 **Parameters**:
  - **saleStakeholder** The NSSaleStakeholder to save.
 

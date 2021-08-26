@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSQuoteAlternative SaveQuoteAlternative(NSQuoteAlternative quoteAlternative);
-	  
+
 Updates the existing NSQuoteAlternative or creates a new NSQuoteAlternative if the id parameter is 0
-	  
+
 **Parameters**:
  - **quoteAlternative** The NSQuoteAlternative to save.
 

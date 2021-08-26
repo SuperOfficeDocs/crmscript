@@ -7,10 +7,10 @@ so.topic: reference
 ---
 
 # NSSuggestedAppointmentEntity CreateDefaultSuggestedAppointmentEntity()
-	  
+
 Set default values into a new NSSuggestedAppointmentEntity.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance
-	  
+
 **Returns:** A new NSSuggestedAppointmentEntity with default values.
 
 ```crmscript

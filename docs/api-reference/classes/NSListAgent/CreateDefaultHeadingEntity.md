@@ -7,10 +7,10 @@ so.topic: reference
 ---
 
 # NSHeadingEntity CreateDefaultHeadingEntity()
-	  
+
 Set default values into a new NSHeadingEntity.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance
-	  
+
 **Returns:** NSHeadingEntity
 
 ```crmscript

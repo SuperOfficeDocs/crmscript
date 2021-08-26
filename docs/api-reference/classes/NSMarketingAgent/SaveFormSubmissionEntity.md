@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSFormSubmissionEntity SaveFormSubmissionEntity(NSFormSubmissionEntity formSubmissionEntity);
-	  
+
 Updates the existing NSFormSubmissionEntity or creates a new NSFormSubmissionEntity if the id parameter is 0
-	  
+
 **Parameters**:
  - **formSubmissionEntity** The NSFormSubmissionEntity to save.
 

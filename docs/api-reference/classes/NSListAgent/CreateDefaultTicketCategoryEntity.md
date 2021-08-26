@@ -7,10 +7,10 @@ so.topic: reference
 ---
 
 # NSTicketCategoryEntity CreateDefaultTicketCategoryEntity()
-	  
+
 Set default values into a new NSTicketCategoryEntity.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance
-	  
+
 **Returns:** NSTicketCategoryEntity
 
 ```crmscript

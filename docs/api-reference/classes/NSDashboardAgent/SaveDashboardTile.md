@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSDashboardTile SaveDashboardTile(NSDashboardTile dashboardTile);
-	  
+
 Updates the existing NSDashboardTile or creates a new NSDashboardTile if the id parameter is 0
-	  
+
 **Parameters**:
  - **dashboardTile** The NSDashboardTile to save.
 

@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSExtAppEntity SaveExtAppEntity(NSExtAppEntity extAppEntity);
-	  
+
 Updates the existing NSExtAppEntity or creates a new NSExtAppEntity if the id parameter is 0
-	  
+
 **Parameters**:
  - **extAppEntity** The NSExtAppEntity to save.
 

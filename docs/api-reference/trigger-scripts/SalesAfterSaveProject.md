@@ -19,6 +19,4 @@ Called after a project is saved. EventData contains all variables passed by data
 ```crmscript
 // Get the variables in the current context
 EventData ed = getEventData();
-
-
 ```

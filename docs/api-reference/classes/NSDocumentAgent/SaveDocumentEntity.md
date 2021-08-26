@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSDocumentEntity SaveDocumentEntity(NSDocumentEntity documentEntity);
-	  
+
 Updates the existing NSDocumentEntity or creates a new NSDocumentEntity if the id parameter is 0
-	  
+
 **Parameters**:
  - **documentEntity** The NSDocumentEntity to save.
 

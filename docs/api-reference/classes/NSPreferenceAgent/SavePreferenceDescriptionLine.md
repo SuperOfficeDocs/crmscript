@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSPreferenceDescriptionLine SavePreferenceDescriptionLine(NSPreferenceDescriptionLine preferenceDescriptionLine);
-	  
+
 Updates the existing NSPreferenceDescriptionLine or creates a new NSPreferenceDescriptionLine if the id parameter is 0
-	  
+
 **Parameters**:
  - **preferenceDescriptionLine** The NSPreferenceDescriptionLine to save.
 

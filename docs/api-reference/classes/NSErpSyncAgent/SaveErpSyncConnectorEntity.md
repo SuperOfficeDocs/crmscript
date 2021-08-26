@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSErpSyncConnectorEntity SaveErpSyncConnectorEntity(NSErpSyncConnectorEntity erpSyncConnectorEntity);
-	  
+
 Updates the existing NSErpSyncConnectorEntity or creates a new NSErpSyncConnectorEntity if the id parameter is 0
-	  
+
 **Parameters**:
  - **erpSyncConnectorEntity** The NSErpSyncConnectorEntity to save.
 

@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSTicketStatusEntity SaveTicketStatusEntity(NSTicketStatusEntity ticketStatusEntity);
-	  
+
 Updates the existing NSTicketStatusEntity or creates a new NSTicketStatusEntity if the id parameter is 0
-	  
+
 **Parameters**:
  - **ticketStatusEntity** The NSTicketStatusEntity to save.
 

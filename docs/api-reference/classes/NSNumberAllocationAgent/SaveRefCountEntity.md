@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSRefCountEntity SaveRefCountEntity(NSRefCountEntity refCountEntity);
-	  
+
 Updates the existing NSRefCountEntity or creates a new NSRefCountEntity if the id parameter is 0
-	  
+
 **Parameters**:
  - **refCountEntity** The NSRefCountEntity to save.
 

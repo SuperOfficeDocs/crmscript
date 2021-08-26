@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSRelationDefinitionEntity SaveRelationDefinitionEntity(NSRelationDefinitionEntity relationDefinitionEntity);
-	  
+
 Updates the existing NSRelationDefinitionEntity or creates a new NSRelationDefinitionEntity if the id parameter is 0
-	  
+
 **Parameters**:
  - **relationDefinitionEntity** The NSRelationDefinitionEntity to save.
 

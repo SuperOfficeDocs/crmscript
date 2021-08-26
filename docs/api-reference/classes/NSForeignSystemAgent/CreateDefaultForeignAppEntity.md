@@ -7,10 +7,10 @@ so.topic: reference
 ---
 
 # NSForeignAppEntity CreateDefaultForeignAppEntity()
-	  
+
 Set default values into a new NSForeignAppEntity.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance
-	  
+
 **Returns:** NSForeignAppEntity
 
 ```crmscript

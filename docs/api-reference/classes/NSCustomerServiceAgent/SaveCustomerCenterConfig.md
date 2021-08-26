@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSCustomerCenterConfig SaveCustomerCenterConfig(NSCustomerCenterConfig customerCenterConfig);
-	  
+
 Updates the existing NSCustomerCenterConfig or creates a new NSCustomerCenterConfig if the id parameter is 0
-	  
+
 **Parameters**:
  - **customerCenterConfig** The NSCustomerCenterConfig to save.
 

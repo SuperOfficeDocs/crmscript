@@ -7,10 +7,10 @@ so.topic: reference
 ---
 
 # NSChatSessionEntity CreateDefaultChatSessionEntity()
-	  
+
 Set default values into a new NSChatSessionEntity.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance
-	  
+
 **Returns:** NSChatSessionEntity
 
 ```crmscript

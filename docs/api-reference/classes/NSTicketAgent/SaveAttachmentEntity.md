@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSAttachmentEntity SaveAttachmentEntity(NSAttachmentEntity attachmentEntity);
-	  
+
 Updates the existing NSAttachmentEntity or creates a new NSAttachmentEntity if the id parameter is 0
-	  
+
 **Parameters**:
  - **attachmentEntity** The NSAttachmentEntity to save.
 

@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSHierarchyEntity SaveHierarchyEntity(NSHierarchyEntity hierarchyEntity);
-	  
+
 Updates the existing NSHierarchyEntity or creates a new NSHierarchyEntity if the id parameter is 0
-	  
+
 **Parameters**:
  - **hierarchyEntity** The NSHierarchyEntity to save.
 

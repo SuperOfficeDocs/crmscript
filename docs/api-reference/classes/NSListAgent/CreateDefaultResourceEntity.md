@@ -7,10 +7,10 @@ so.topic: reference
 ---
 
 # NSResourceEntity CreateDefaultResourceEntity()
-	  
+
 Set default values into a new NSResourceEntity.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance
-	  
+
 **Returns:** NSResourceEntity
 
 ```crmscript

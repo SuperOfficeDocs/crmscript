@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSMailboxEntity SaveMailboxEntity(NSMailboxEntity mailboxEntity);
-	  
+
 Updates the existing NSMailboxEntity or creates a new NSMailboxEntity if the id parameter is 0
-	  
+
 **Parameters**:
  - **mailboxEntity** The NSMailboxEntity to save.
 

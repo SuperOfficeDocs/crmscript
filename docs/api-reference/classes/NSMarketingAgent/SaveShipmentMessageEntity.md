@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSShipmentMessageEntity SaveShipmentMessageEntity(NSShipmentMessageEntity shipmentMessageEntity);
-	  
+
 Updates the existing NSShipmentMessageEntity or creates a new NSShipmentMessageEntity if the id parameter is 0
-	  
+
 **Parameters**:
  - **shipmentMessageEntity** The NSShipmentMessageEntity to save.
 

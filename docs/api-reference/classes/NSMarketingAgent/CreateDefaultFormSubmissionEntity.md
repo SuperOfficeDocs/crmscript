@@ -7,10 +7,10 @@ so.topic: reference
 ---
 
 # NSFormSubmissionEntity CreateDefaultFormSubmissionEntity()
-	  
+
 Set default values into a new NSFormSubmissionEntity.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance
-	  
+
 **Returns:** NSFormSubmissionEntity
 
 ```crmscript

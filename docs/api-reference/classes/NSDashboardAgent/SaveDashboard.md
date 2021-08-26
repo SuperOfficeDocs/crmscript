@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSDashboard SaveDashboard(NSDashboard dashboard);
-	  
+
 Updates the existing NSDashboard or creates a new NSDashboard if the id parameter is 0
-	  
+
 **Parameters**:
  - **dashboard** The NSDashboard to save.
 

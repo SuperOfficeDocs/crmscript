@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSTicketPriorityEntity SaveTicketPriorityEntity(NSTicketPriorityEntity ticketPriorityEntity);
-	  
+
 Updates the existing NSTicketPriorityEntity or creates a new NSTicketPriorityEntity if the id parameter is 0
-	  
+
 **Parameters**:
  - **ticketPriorityEntity** The NSTicketPriorityEntity to save.
 

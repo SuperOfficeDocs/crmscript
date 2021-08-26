@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSConsentPerson SaveConsentPerson(NSConsentPerson consentPerson);
-	  
+
 Updates the existing NSConsentPerson or creates a new NSConsentPerson if the id parameter is 0
-	  
+
 **Parameters**:
  - **consentPerson** The NSConsentPerson to save.
 

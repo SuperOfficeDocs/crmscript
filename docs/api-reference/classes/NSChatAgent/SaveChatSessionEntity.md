@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSChatSessionEntity SaveChatSessionEntity(NSChatSessionEntity chatSessionEntity);
-	  
+
 Updates the existing NSChatSessionEntity or creates a new NSChatSessionEntity if the id parameter is 0
-	  
+
 **Parameters**:
  - **chatSessionEntity** The NSChatSessionEntity to save.
 

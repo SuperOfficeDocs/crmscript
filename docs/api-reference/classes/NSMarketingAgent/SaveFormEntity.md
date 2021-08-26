@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSFormEntity SaveFormEntity(NSFormEntity formEntity);
-	  
+
 Updates the existing NSFormEntity or creates a new NSFormEntity if the id parameter is 0
-	  
+
 **Parameters**:
  - **formEntity** The NSFormEntity to save.
 

@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSTicketCategoryEntity SaveTicketCategoryEntity(NSTicketCategoryEntity ticketCategoryEntity);
-	  
+
 Updates the existing NSTicketCategoryEntity or creates a new NSTicketCategoryEntity if the id parameter is 0
-	  
+
 **Parameters**:
  - **ticketCategoryEntity** The NSTicketCategoryEntity to save.
 

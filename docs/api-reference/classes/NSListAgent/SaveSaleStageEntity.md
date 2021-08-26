@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSSaleStageEntity SaveSaleStageEntity(NSSaleStageEntity saleStageEntity);
-	  
+
 Updates the existing NSSaleStageEntity or creates a new NSSaleStageEntity if the id parameter is 0
-	  
+
 **Parameters**:
  - **saleStageEntity** The NSSaleStageEntity to save.
 

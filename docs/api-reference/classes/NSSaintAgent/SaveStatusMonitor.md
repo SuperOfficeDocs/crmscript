@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSStatusMonitor SaveStatusMonitor(NSStatusMonitor statusMonitor);
-	  
+
 Updates the existing NSStatusMonitor or creates a new NSStatusMonitor if the id parameter is 0
-	  
+
 **Parameters**:
  - **statusMonitor** The NSStatusMonitor to save.
 

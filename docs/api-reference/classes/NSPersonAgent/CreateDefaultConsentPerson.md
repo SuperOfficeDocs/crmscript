@@ -7,10 +7,10 @@ so.topic: reference
 ---
 
 # NSConsentPerson CreateDefaultConsentPerson()
-	  
+
 Set default values into a new NSConsentPerson.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance
-	  
+
 **Returns:** A new NSConsentPerson with default values.
 
 ```crmscript

@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSWebhook SaveWebhook(NSWebhook webhook);
-	  
+
 Updates the existing NSWebhook or creates a new NSWebhook if the id parameter is 0
-	  
+
 **Parameters**:
  - **webhook** The NSWebhook to save.
 

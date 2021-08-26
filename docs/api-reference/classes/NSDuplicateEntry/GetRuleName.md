@@ -11,5 +11,3 @@ so.topic: reference
 
 Identifying name for rule
 
-    	///
-

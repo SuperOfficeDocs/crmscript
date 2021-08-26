@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSPriceList SavePriceList(NSPriceList priceList);
-	  
+
 Updates the existing NSPriceList or creates a new NSPriceList if the id parameter is 0
-	  
+
 **Parameters**:
  - **priceList** The NSPriceList to save.
 

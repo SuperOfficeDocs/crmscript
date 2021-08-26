@@ -7,10 +7,10 @@ so.topic: reference
 ---
 
 # NSDiaryViewEntity CreateDefaultDiaryViewEntity()
-	  
+
 Set default values into a new NSDiaryViewEntity.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance
-	  
+
 **Returns:** NSDiaryViewEntity
 
 ```crmscript

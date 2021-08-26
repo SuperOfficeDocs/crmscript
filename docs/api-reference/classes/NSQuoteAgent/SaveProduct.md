@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSProduct SaveProduct(NSProduct product);
-	  
+
 Updates the existing NSProduct or creates a new NSProduct if the id parameter is 0
-	  
+
 **Parameters**:
  - **product** The NSProduct to save.
 

@@ -7,10 +7,10 @@ so.topic: reference
 ---
 
 # NSShipmentMessageEntity CreateDefaultShipmentMessageEntity()
-	  
+
 Set default values into a new NSShipmentMessageEntity.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance
-	  
+
 **Returns:** NSShipmentMessageEntity
 
 ```crmscript

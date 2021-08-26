@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSProjectTypeEntity SaveProjectTypeEntity(NSProjectTypeEntity projectTypeEntity);
-	  
+
 Updates the existing NSProjectTypeEntity or creates a new NSProjectTypeEntity if the id parameter is 0
-	  
+
 **Parameters**:
  - **projectTypeEntity** The NSProjectTypeEntity to save.
 

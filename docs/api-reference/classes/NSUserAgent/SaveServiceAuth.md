@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSServiceAuth SaveServiceAuth(NSServiceAuth serviceAuth);
-	  
+
 Updates the existing NSServiceAuth or creates a new NSServiceAuth if the id parameter is 0
-	  
+
 **Parameters**:
  - **serviceAuth** The NSServiceAuth to save.
 

@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSSmsConfig SaveSmsConfig(NSSmsConfig smsConfig);
-	  
+
 Updates the existing NSSmsConfig or creates a new NSSmsConfig if the id parameter is 0
-	  
+
 **Parameters**:
  - **smsConfig** The NSSmsConfig to save.
 

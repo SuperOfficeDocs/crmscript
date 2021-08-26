@@ -7,10 +7,10 @@ so.topic: reference
 ---
 
 # NSEMailConnectionInfoExtended CreateDefaultEMailConnectionInfoExtended()
-	  
+
 Set default values into a new NSEMailConnectionInfoExtended.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance
-	  
+
 **Returns:** NSEMailConnectionInfoExtended
 
 ```crmscript

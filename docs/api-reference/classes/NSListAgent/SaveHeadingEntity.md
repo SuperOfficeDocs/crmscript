@@ -7,9 +7,9 @@ so.topic: reference
 ---
 
 # NSHeadingEntity SaveHeadingEntity(NSHeadingEntity headingEntity);
-	  
+
 Updates the existing NSHeadingEntity or creates a new NSHeadingEntity if the id parameter is 0
-	  
+
 **Parameters**:
  - **headingEntity** The NSHeadingEntity to save.
 

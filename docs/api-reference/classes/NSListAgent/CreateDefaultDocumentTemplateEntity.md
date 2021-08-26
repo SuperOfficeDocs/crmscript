@@ -7,10 +7,10 @@ so.topic: reference
 ---
 
 # NSDocumentTemplateEntity CreateDefaultDocumentTemplateEntity()
-	  
+
 Set default values into a new NSDocumentTemplateEntity.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance
-	  
+
 **Returns:** NSDocumentTemplateEntity
 
 ```crmscript

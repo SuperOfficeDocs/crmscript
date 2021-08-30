@@ -10,6 +10,8 @@ so.topic: reference
 
 Contact (company) data services.
 
+## Example
+
 ```crmscript
 NSContactAgent agent;
 agent.callMethod(arg1, arg2);

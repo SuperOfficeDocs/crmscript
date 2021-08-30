@@ -8,7 +8,9 @@ so.topic: reference
 
 # NSPreferenceAgent
 
-Preferences, user interface tab configuration
+Preferences, user interface tab configuration.
+
+## Example
 
 ```crmscript
 NSPreferenceAgent agent;

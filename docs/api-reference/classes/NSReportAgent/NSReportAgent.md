@@ -8,7 +8,9 @@ so.topic: reference
 
 # NSReportAgent
 
-Run reports, set favourites, labels
+Run reports, set favorites, labels.
+
+## Example
 
 ```crmscript
 NSReportAgent agent;

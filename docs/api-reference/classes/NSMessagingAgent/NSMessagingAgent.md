@@ -8,7 +8,9 @@ so.topic: reference
 
 # NSMessagingAgent
 
-SMS and other external messaging systems
+SMS and other external messaging systems.
+
+## Example
 
 ```crmscript
 NSMessagingAgent agent;

@@ -8,7 +8,9 @@ so.topic: reference
 
 # NSSentryAgent
 
-Data and function right queries
+Data and function right queries.
+
+## Example
 
 ```crmscript
 NSSentryAgent agent;

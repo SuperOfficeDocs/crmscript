@@ -13,10 +13,10 @@ This function will return a subset of the data for a cached table based on a fil
 
 ## Parameters
 
- - p\_db: The database
- - p\_tableId: The table to return
- - p\_filterField: The field to use for filtering
- - p\_filterValue: The value to compare p\_filterField with to include a row
+ - p_db: The database
+ - p_tableId: The table to return
+ - p_filterField: The field to use for filtering
+ - p_filterValue: The value to compare p_filterField with to include a row
 
-Returns the rows from the table where p\_filterField = p\_filterValue
+Returns the rows from the table where p_filterField = p_filterValue
 

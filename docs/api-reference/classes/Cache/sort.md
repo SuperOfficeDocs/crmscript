@@ -13,6 +13,6 @@ Sorts the cached data by given field in given order.
 
 ## Parameters
 
- - p\_field: The field to sort by
- - p\_order: Boolean. False will sort in an ascending order, true in a descending order.
+ - p_field: The field to sort by
+ - p_order: Boolean. False will sort in an ascending order, true in a descending order.
 

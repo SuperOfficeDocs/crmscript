@@ -8,7 +8,9 @@ so.topic: reference
 
 # NSTooltipsAgent
 
-Tooltip system, hint to text transformation
+Tooltip system, hint to text transformation.
+
+## Example
 
 ```crmscript
 NSTooltipsAgent agent;

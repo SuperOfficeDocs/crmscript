@@ -10,6 +10,8 @@ so.topic: reference
 
 Navigator stuff.
 
+## Example
+
 ```crmscript
 NSNavigatorAgent agent;
 agent.callMethod(arg1, arg2);

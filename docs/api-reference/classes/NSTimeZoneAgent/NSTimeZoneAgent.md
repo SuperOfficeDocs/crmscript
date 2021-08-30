@@ -8,7 +8,9 @@ so.topic: reference
 
 # NSTimeZoneAgent
 
-TimeZone maintenance
+TimeZone maintenance.
+
+## Example
 
 ```crmscript
 NSTimeZoneAgent agent;

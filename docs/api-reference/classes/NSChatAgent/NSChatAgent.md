@@ -8,7 +8,9 @@ so.topic: reference
 
 # NSChatAgent
 
-Chat functions. Manage chat channels, sessions and messages.
+Chat functions. Manage chat channels, sessions, and messages.
+
+## Example
 
 ```crmscript
 NSChatAgent agent;

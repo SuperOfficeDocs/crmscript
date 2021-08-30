@@ -8,7 +8,9 @@ so.topic: reference
 
 # NSImportAgent
 
-This agent can be used to import data into the system
+This agent can be used to import data into the system.
+
+## Example
 
 ```crmscript
 NSImportAgent agent;

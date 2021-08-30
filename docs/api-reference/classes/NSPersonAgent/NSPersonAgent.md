@@ -10,6 +10,8 @@ so.topic: reference
 
 Person data services.
 
+## Example
+
 ```crmscript
 NSPersonAgent agent;
 agent.callMethod(arg1, arg2);

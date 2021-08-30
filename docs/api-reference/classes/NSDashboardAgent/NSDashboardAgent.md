@@ -8,7 +8,9 @@ so.topic: reference
 
 # NSDashboardAgent
 
-Agent lets you configure dashboard tiles and retrieve dashboard data
+Agent lets you configure dashboard tiles and retrieve dashboard data.
+
+## Example
 
 ```crmscript
 NSDashboardAgent agent;

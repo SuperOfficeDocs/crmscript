@@ -8,7 +8,9 @@ so.topic: reference
 
 # NSDatabaseAgent
 
-Database schema queries and changes
+Database schema queries and changes.
+
+## Example
 
 ```crmscript
 NSDatabaseAgent agent;

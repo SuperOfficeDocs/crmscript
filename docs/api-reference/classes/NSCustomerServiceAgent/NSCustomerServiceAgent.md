@@ -8,7 +8,9 @@ so.topic: reference
 
 # NSCustomerServiceAgent
 
-Agent used for Customer Service methods
+Agent used for Customer Service methods.
+
+## Example
 
 ```crmscript
 NSCustomerServiceAgent agent;

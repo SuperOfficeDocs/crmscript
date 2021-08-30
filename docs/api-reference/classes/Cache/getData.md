@@ -13,6 +13,6 @@ This function will return data from a cached table.
 
 ## Parameters
 
- - p\_db: The database
- - p\_tableId: The table to return
+ - p_db: The database
+ - p_tableId: The table to return
 

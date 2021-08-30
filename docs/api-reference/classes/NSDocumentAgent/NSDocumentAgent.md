@@ -8,7 +8,9 @@ so.topic: reference
 
 # NSDocumentAgent
 
-Collection of all services that works with Document data. This is services for the document information, not the physical document themselves. These are handled by the BLOB service methods.
+Collection of all services that work with Document data. This is services for the document information, not the physical document themselves. These are handled by the BLOB service methods.
+
+## Example
 
 ```crmscript
 NSDocumentAgent agent;

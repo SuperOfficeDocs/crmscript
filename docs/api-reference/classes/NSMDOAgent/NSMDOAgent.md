@@ -10,6 +10,8 @@ so.topic: reference
 
 MDO Lists, reading, searching, and item lookup.
 
+## Example
+
 ```crmscript
 NSMDOAgent agent;
 agent.callMethod(arg1, arg2);

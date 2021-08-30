@@ -8,7 +8,9 @@ so.topic: reference
 
 # NSLicenseAgent
 
-License query, download, activation
+License query, download, activation.
+
+## Example
 
 ```crmscript
 NSLicenseAgent agent;

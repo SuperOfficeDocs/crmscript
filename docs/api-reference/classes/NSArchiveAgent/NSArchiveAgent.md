@@ -8,7 +8,9 @@ so.topic: reference
 
 # NSArchiveAgent
 
-ArchiveList functions of all kinds
+ArchiveList functions of all kinds.
+
+## Example
 
 ```crmscript
 NSArchiveAgent agent;

@@ -8,7 +8,9 @@ so.topic: reference
 
 # NSErpSyncAgent
 
-Services for the ERP Integration Services feature
+Services for the ERP Integration Services feature.
+
+## Example
 
 ```crmscript
 NSErpSyncAgent agent;

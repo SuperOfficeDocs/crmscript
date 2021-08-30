@@ -10,6 +10,8 @@ so.topic: reference
 
 Manage and execute CRMScript functions.
 
+## Example
+
 ```crmscript
 NSCRMScriptAgent agent;
 agent.callMethod(arg1, arg2);

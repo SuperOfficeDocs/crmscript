@@ -8,7 +8,9 @@ so.topic: reference
 
 # NSConfigurationAgent
 
-User interface configuration - XMLs and other elements such as inter-client URLs
+User interface configuration - XML and other elements such as inter-client URLs.
+
+## Example
 
 ```crmscript
 NSConfigurationAgent agent;

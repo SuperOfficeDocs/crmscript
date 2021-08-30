@@ -10,6 +10,7 @@ so.topic: reference
 
 Returns information about user-defined fields, like field type, field size, field label text, default value. Does not return the actual values in the user-defined fields. The values are returned on the entity objects.
 
+## Example
 ```crmscript
 NSUserDefinedFieldInfoAgent agent;
 agent.callMethod(arg1, arg2);

@@ -8,7 +8,9 @@ so.topic: reference
 
 # NSReplicationAgent
 
-Replication/Travel administration
+Replication/Travel administration.
+
+## Example
 
 ```crmscript
 NSReplicationAgent agent;

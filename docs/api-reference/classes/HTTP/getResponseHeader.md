@@ -14,5 +14,5 @@ The header search is case insensitive.
 
 Parameters
 
-- p\_header: The header to get
+- p_header: The header to get
 

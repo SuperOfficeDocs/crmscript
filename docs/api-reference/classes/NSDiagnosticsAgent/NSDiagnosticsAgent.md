@@ -8,7 +8,9 @@ so.topic: reference
 
 # NSDiagnosticsAgent
 
-Diagnostics, usage data collection, caches and flushing
+Diagnostics, usage data collection, caches, and flushing
+
+## Example
 
 ```crmscript
 NSDiagnosticsAgent agent;

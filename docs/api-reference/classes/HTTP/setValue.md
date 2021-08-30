@@ -13,8 +13,8 @@ This function add a cgi variable and its according value to the HTTP request.
 
 ## Parameters
 
- - p\_cgiVariable: The variable to set
- - p\_value: The value
+ - p_cgiVariable: The variable to set
+ - p_value: The value
 
 ## Example
 

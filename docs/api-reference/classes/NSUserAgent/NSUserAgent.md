@@ -8,7 +8,9 @@ so.topic: reference
 
 # NSUserAgent
 
-User administration
+User administration.
+
+## Example
 
 ```crmscript
 NSUserAgent agent;

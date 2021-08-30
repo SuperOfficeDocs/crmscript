@@ -8,7 +8,9 @@ so.topic: reference
 
 # NSBLOBAgent
 
-Collection of all services that works with binary objects (BLOBS), e.g. Images and documents.
+Collection of all services that work with binary objects (BLOBS). For example, images and documents.
+
+## Example
 
 ```crmscript
 NSBLOBAgent agent;

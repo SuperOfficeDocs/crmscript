@@ -8,7 +8,9 @@ so.topic: reference
 
 # NSEMailAgent
 
-Email connection, reading, sending
+Email connection, reading, sending.
+
+## Example
 
 ```crmscript
 NSEMailAgent agent;

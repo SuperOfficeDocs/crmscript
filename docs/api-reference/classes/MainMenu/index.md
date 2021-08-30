@@ -13,8 +13,7 @@ so.topic: reference
 
 # MainMenu
 
-The CRMScript **MainMenu** class is used to control the main (left-side) menu of SuperOffice CRM.
-Customizing the main menu means modifying the corresponding **trigger**.
+The CRMScript **MainMenu** class is used to control the main (left-side) menu of SuperOffice CRM. Customizing the main menu means modifying the corresponding **trigger**.
 
 ## How the main menu is organized
 

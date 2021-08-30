@@ -8,7 +8,9 @@ so.topic: reference
 
 # NSViewStateAgent
 
-User interface view state, history, currentXXX values
+User interface view state, history, currentXXX values.
+
+## Example
 
 ```crmscript
 NSViewStateAgent agent;

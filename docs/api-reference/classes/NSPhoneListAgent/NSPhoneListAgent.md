@@ -10,6 +10,8 @@ so.topic: reference
 
 Collection of all services for searching for person or contact (company) phone numbers.
 
+## Example
+
 ```crmscript
 NSPhoneListAgent agent;
 agent.callMethod(arg1, arg2);

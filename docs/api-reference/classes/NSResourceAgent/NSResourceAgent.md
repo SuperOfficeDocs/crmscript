@@ -10,6 +10,8 @@ so.topic: reference
 
 String resource substitution management.
 
+## Example
+
 ```crmscript
 NSResourceAgent agent;
 agent.callMethod(arg1, arg2);

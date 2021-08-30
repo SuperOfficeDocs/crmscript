@@ -8,7 +8,9 @@ so.topic: reference
 
 # NSPreviewsAgent
 
-Get preview strings from a hint
+Get preview strings from a hint.
+
+## Example
 
 ```crmscript
 NSPreviewsAgent agent;

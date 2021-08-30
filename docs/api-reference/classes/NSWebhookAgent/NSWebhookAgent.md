@@ -8,7 +8,9 @@ so.topic: reference
 
 # NSWebhookAgent
 
-Webhook definitions - webhooks signal other systems about events inside NetServer
+Webhook definitions - webhooks signal other systems about events inside NetServer.
+
+## Example
 
 ```crmscript
 NSWebhookAgent agent;

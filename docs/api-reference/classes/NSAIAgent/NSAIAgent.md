@@ -8,7 +8,9 @@ so.topic: reference
 
 # NSAIAgent
 
-AI services, such as Translation, Statistics, Sentiment analysis, backed by calls to Public Cloud providers
+AI services, such as Translation, Statistics, Sentiment analysis, backed by calls to Public Cloud providers.
+
+## Example
 
 ```crmscript
 NSAIAgent agent;

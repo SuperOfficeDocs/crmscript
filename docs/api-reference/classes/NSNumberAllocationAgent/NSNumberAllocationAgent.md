@@ -8,7 +8,9 @@ so.topic: reference
 
 # NSNumberAllocationAgent
 
-This agent can be used to manage number allocation
+This agent can be used to manage number allocation.
+
+## Example
 
 ```crmscript
 NSNumberAllocationAgent agent;

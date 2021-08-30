@@ -8,7 +8,9 @@ so.topic: reference
 
 # NSTicketAgent
 
-Agent used for Ticket functions
+Agent used for Ticket functions.
+
+## Example
 
 ```crmscript
 NSTicketAgent agent;

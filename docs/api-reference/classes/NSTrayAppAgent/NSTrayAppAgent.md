@@ -7,4 +7,4 @@ so.topic: reference
 
 # NSTrayAppAgent
 
-Interface for the TrayApp Agent
+Interface for the TrayApp Agent.

@@ -8,7 +8,9 @@ so.topic: reference
 
 # NSAudienceAgent
 
-Services specific to the Audience client
+Services specific to the Audience client.
+
+## Example
 
 ```crmscript
 NSAudienceAgent agent;

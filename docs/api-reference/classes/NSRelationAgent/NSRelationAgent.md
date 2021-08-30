@@ -8,7 +8,9 @@ so.topic: reference
 
 # NSRelationAgent
 
-Contact/Person relations
+Contact/Person relations.
+
+## Example
 
 ```crmscript
 NSRelationAgent agent;

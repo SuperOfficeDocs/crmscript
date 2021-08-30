@@ -8,7 +8,9 @@ so.topic: reference
 
 # NSFreeTextAgent
 
-This agent can be used to manage the free text system
+This agent can be used to manage the free text system.
+
+## Example
 
 ```crmscript
 NSFreeTextAgent agent;

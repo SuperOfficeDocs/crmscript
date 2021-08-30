@@ -8,7 +8,9 @@ so.topic: reference
 
 # NSSaintAgent
 
-Administration and maintenance of SAINT counters and statuses
+Administration and maintenance of SAINT counters and statuses.
+
+## Example
 
 ```crmscript
 NSSaintAgent agent;

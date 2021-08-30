@@ -8,7 +8,9 @@ so.topic: reference
 
 # NSBatchAgent
 
-Start, stop and monitor predefined batch tasks
+Start, stop and monitor predefined batch tasks.
+
+## Example
 
 ```crmscript
 NSBatchAgent agent;

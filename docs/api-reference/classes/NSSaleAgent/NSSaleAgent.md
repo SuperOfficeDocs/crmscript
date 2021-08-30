@@ -8,7 +8,9 @@ so.topic: reference
 
 # NSSaleAgent
 
-Sale data services
+Sale data services.
+
+## Example
 
 ```crmscript
 NSSaleAgent agent;

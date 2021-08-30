@@ -8,7 +8,9 @@ so.topic: reference
 
 # NSQuoteAgent
 
-Services for the Quote Management feature, part of the Sale module
+Services for the Quote Management feature, part of the Sale module.
+
+## Example
 
 ```crmscript
 NSQuoteAgent agent;

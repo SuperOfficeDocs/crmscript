@@ -8,7 +8,9 @@ so.topic: reference
 
 # NSBulkUpdateAgent
 
-Agent used for bulk update methods
+Agent used for bulk update methods.
+
+## Example
 
 ```crmscript
 NSBulkUpdateAgent agent;

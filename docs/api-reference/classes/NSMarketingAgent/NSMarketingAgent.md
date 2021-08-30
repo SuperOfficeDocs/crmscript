@@ -8,7 +8,9 @@ so.topic: reference
 
 # NSMarketingAgent
 
-Agent used for Marketing functions, such as Forms
+Agent used for Marketing functions, such as Forms.
+
+## Example
 
 ```crmscript
 NSMarketingAgent agent;

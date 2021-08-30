@@ -13,6 +13,6 @@ This function will write a table row.
 
 ## Parameters
 
- - p0: p\_table, the table
- - p1: p\_row, the row data
+ - p0: p_table, the table
+ - p1: p_row, the row data
 

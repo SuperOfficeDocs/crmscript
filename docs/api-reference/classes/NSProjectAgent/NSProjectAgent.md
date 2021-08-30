@@ -8,7 +8,9 @@ so.topic: reference
 
 # NSProjectAgent
 
-Collection of all services that works with Project data.
+Collection of all services that work with Project data.
+
+## Example
 
 ```crmscript
 NSProjectAgent agent;

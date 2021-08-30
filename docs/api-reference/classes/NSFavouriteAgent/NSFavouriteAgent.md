@@ -8,7 +8,9 @@ so.topic: reference
 
 # NSFavouriteAgent
 
-Agent used for retrieveing and setting favourites
+Agent used for retrieving and setting favorites.
+
+## Example
 
 ```crmscript
 NSFavouriteAgent agent;

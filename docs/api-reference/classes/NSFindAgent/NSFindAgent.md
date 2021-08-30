@@ -8,7 +8,9 @@ so.topic: reference
 
 # NSFindAgent
 
-Find functions
+Find functions.
+
+## Example
 
 ```crmscript
 NSFindAgent agent;

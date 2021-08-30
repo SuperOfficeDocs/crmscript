@@ -8,7 +8,9 @@ so.topic: reference
 
 # NSPocketAgent
 
-Agent with Pocket specific functionality
+Agent with Pocket specific functionality.
+
+## Example
 
 ```crmscript
 NSPocketAgent agent;

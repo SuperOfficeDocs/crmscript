@@ -8,7 +8,9 @@ so.topic: reference
 
 # NSAssociateAgent
 
-Associate utilities, notes, not user admininstration
+Associate utilities, notes, not user admininstration.
+
+## Example
 
 ```crmscript
 NSAssociateAgent agent;

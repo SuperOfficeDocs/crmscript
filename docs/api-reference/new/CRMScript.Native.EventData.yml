@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: CRMScript.Native.EventData
+  commentId: T:CRMScript.Native.EventData
+  id: EventData
+  so.intellisense: Void.EventData
+  langs:
+  - crmscript
+  children:
+  name: EventData
+  nameWithType: EventData
+  fullName: CRMScript.Native.EventData
+  type: Class
+  summary: "\n<strong>EventData</strong>gives you access to contextual information in an<strong>event handler</strong>. For example, the name of a created company or the amount of a sale.<p></p>\nYou can also check<code>EventData</code>properties after the event handler has run, to for example display a message or prevent an entity from being saved.\n"
+  example: 
+  - "\n<pre><code>EventData ed = getEventData();</code></pre><pre><code>Map sourceIds;\nsourceIds.insert(&quot;11&quot;, &quot;&quot;);\nsourceIds.insert(&quot;128&quot;, &quot;&quot;);\nsourceIds.insert(&quot;135&quot;, &quot;&quot;);\n\nif (sourceIds.exists(sourceId.toString())){\n  // ...\n}</code></pre>Check if a sale has a high enough value. Return a message and block the sale for values &lt; 100. Set for the event &quot;Before save sale&quot;.<p></p>\n<pre><code>EventData ed = getEventData();\n\nif (ed.getInputValue(&quot;SaleEntity.Amount&quot;).toInteger() &lt; 100)\n{\n  ed.setBlockExecution(true); // Prevents save\n  ed.setMessage(&quot;Amount too low&quot;);\n}</code></pre>\n"
+references:
+- uid: CRMScript.Native.EventData
+  commentId: T:CRMScript.Native.EventData
+  isExternal: true
+  name: EventData
+  nameWithType: EventData
+  fullName: CRMScript.Native.EventData

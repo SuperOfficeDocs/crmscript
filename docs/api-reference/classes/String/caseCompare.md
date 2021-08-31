@@ -4,7 +4,7 @@ title: String.caseCompare(String p_0)
 intellisense: String.caseCompare
 keywords: caseCompare(String)
 so.topic: reference
-so.xml: 1
+so.yml: 1
 ---
 
 # String.caseCompare(String p_0)

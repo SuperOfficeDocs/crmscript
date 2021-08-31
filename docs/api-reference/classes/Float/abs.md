@@ -5,6 +5,7 @@ intellisense: Float.abs
 sortOrder: 357
 keywords: abs()
 so.topic: reference
+so.yml: 1
 ---
 
 # Float.abs()

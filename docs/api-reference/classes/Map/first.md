@@ -5,6 +5,7 @@ intellisense: Map.first
 sortOrder: 526
 keywords: first()
 so.topic: reference
+so.yml: 1
 ---
 
 # Map.first()

@@ -5,6 +5,7 @@ intellisense: Map.remove
 sortOrder: 538
 keywords: remove(String)
 so.topic: reference
+so.yml: 1
 ---
 
 # Map.remove(String key)

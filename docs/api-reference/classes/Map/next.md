@@ -5,6 +5,7 @@ intellisense: Map.next
 sortOrder: 527
 keywords: next()
 so.topic: reference
+so.yml: 1
 ---
 
 # Map.next()

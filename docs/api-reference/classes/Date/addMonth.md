@@ -5,6 +5,7 @@ intellisense: Date.addMonth
 sortOrder: 198
 keywords: addMonth(Integer)
 so.topic: reference
+so.yml: 1
 ---
 
 # Date.addMonth(Integer num)

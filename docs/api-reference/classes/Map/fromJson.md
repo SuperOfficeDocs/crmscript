@@ -5,6 +5,7 @@ intellisense: Map.fromJson
 sortOrder: 535
 keywords: fromJson(String)
 so.topic: reference
+so.yml: 1
 ---
 
 # Map.fromJson(String pJson)

@@ -5,6 +5,7 @@ intellisense: Date.toString
 sortOrder: 205
 keywords: toString()
 so.topic: reference
+so.yml: 1
 ---
 
 # Date.toString()

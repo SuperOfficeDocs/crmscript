@@ -5,6 +5,7 @@ intellisense: Float.floor
 sortOrder: 358
 keywords: floor()
 so.topic: reference
+so.yml: 1
 ---
 
 # Float.floor()

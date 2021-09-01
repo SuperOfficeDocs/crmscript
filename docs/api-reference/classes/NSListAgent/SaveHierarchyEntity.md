@@ -11,7 +11,7 @@ so.topic: reference
 Updates the existing NSHierarchyEntity or creates a new NSHierarchyEntity if the id parameter is 0
 
 **Parameters**:
- - **hierarchyEntity** The NSHierarchyEntity to save.
+* **hierarchyEntity** The NSHierarchyEntity to save.
 
 **Returns:** NSHierarchyEntity
 

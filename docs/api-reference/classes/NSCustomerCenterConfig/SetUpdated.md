@@ -11,7 +11,7 @@ so.topic: reference
 Last updated when
 
 **Parameter:** 
- - **updated** DateTime
+* **updated** DateTime
 
 ```crmscript
 NSCustomerCenterConfig thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Min value (if type 1); list extra id (if type 5)
 
 **Parameter:** 
- - **minValue** Integer
+* **minValue** Integer
 
 ```crmscript
 NSPreferenceDescription thing;

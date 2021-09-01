@@ -11,7 +11,7 @@ so.topic: reference
 Updates the existing NSMailboxEntity or creates a new NSMailboxEntity if the id parameter is 0
 
 **Parameters**:
- - **mailboxEntity** The NSMailboxEntity to save.
+* **mailboxEntity** The NSMailboxEntity to save.
 
 **Returns:** NSMailboxEntity
 

@@ -11,7 +11,7 @@ so.topic: reference
 The alternative that is considered most likely to be accepted. Used to calculate probable income.
 
 **Parameter:** 
- - **likelyQuoteAlternativeId** Integer
+* **likelyQuoteAlternativeId** Integer
 
 ```crmscript
 NSQuoteVersion thing;

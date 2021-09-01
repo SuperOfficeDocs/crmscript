@@ -11,7 +11,7 @@ so.topic: reference
 Is this override active
 
 **Parameter:** 
- - **isActive** Bool
+* **isActive** Bool
 
 ```crmscript
 NSResourceOverride thing;

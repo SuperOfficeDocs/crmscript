@@ -10,12 +10,14 @@ so.topic: reference
 
 Execute a request that gives an immediate, reasonably sized response. Use the Stream operations for large responses.
 
+## Parameters
+
 * **taskId:** Unique identifier of the current task.
 * **parentModuleName:** Module name of the client module that initiated the request.
 * **parentModuleVersion:** Module version of the client module that initiated the request.
-* **parentModuleData
-\param** p4 communicationModuleName: Module name of the client communication module that initiated the request. This is sent to make sure the correct version of the communication server module is loaded.
+* **parentModuleData:**
+* **communicationModuleName:** Module name of the client communication module that initiated the request. This is sent to make sure the correct version of the communication server module is loaded.
 * **communicationModuleVersion:** Module version of the client communication module that initiated the request. This is sent to make sure the correct version of the communication server module is loaded.
 * **communicationModuleData:** Serialized data from the communiction client module that initiated this operation.
-* **Returns:** Returns a RequestResponseData object serialized to a string
 
+* **Returns:** Returns a RequestResponseData object serialized to a string

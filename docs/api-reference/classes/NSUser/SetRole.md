@@ -11,7 +11,7 @@ so.topic: reference
 Users role for role-based security. Determines permissions and access rights for the user.
 
 **Parameter:** 
- - **role** Role
+* **role** Role
 
 ```crmscript
 NSUser thing;

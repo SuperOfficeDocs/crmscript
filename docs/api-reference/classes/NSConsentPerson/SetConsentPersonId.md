@@ -11,7 +11,7 @@ so.topic: reference
 ConsentPerson ID
 
 **Parameter:** 
- - **consentPersonId** Integer
+* **consentPersonId** Integer
 
 ```crmscript
 NSConsentPerson thing;

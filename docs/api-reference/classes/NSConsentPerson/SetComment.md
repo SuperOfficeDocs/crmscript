@@ -11,7 +11,7 @@ so.topic: reference
 Comment regarding this specific consent
 
 **Parameter:** 
- - **comment** String
+* **comment** String
 
 ```crmscript
 NSConsentPerson thing;

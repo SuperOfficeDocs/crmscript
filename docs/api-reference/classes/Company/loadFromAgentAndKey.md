@@ -15,8 +15,8 @@ This function will load a company (possibly overwriting existing values) from th
 
 ## Parameters
 
- - agent: The id of the agent that "owns" this company.
- - key: The external key of this company.
+* agent: The id of the agent that "owns" this company.
+* key: The external key of this company.
 
 Returns true if operation was successful, false if the company does not exist.
 

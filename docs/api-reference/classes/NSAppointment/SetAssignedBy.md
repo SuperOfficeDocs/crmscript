@@ -11,7 +11,7 @@ so.topic: reference
 Who (last) assigned this appointment to associate_id?
 
 **Parameter:** 
- - **assignedBy** Integer
+* **assignedBy** Integer
 
 ```crmscript
 NSAppointment thing;

@@ -11,7 +11,7 @@ so.topic: reference
 The secondary persons this ticket is connected to
 
 **Parameter:** 
- - **secondaryPersons** NSPerson[]
+* **secondaryPersons** NSPerson[]
 
 ```crmscript
 NSTicketEntity thing;

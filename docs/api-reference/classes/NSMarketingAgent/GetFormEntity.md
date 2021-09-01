@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSFormEntity object.
 
-**Parameters:**
- - **formEntityId** The identifier of the NSFormEntity object
+## Parameters
+
+* **formEntityId** The identifier of the NSFormEntity object
 
 **Returns:** NSFormEntity
 

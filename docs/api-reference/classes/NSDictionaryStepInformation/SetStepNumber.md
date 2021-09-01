@@ -11,7 +11,7 @@ so.topic: reference
 Generation number of step
 
 **Parameter:** 
- - **stepNumber** Integer
+* **stepNumber** Integer
 
 ```crmscript
 NSDictionaryStepInformation thing;

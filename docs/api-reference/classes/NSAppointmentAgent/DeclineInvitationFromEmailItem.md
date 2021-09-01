@@ -10,6 +10,7 @@ so.topic: reference
 
 Declining an appointment invitation where no tentative appointments have been created.
 
-**Parameters:**
- - **emailItemId** The emailItemId.
- - **rejectReason** The reason the invitation was rejected.
+## Parameters
+
+* **emailItemId** The emailItemId.
+* **rejectReason** The reason the invitation was rejected.

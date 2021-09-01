@@ -11,7 +11,7 @@ so.topic: reference
 A description that is entered by the user, and visible to the user
 
 **Parameter:** 
- - **description** String
+* **description** String
 
 ```crmscript
 NSBlobEntity thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Is this credentials currently active.
 
 **Parameter:** 
- - **isActive** Bool
+* **isActive** Bool
 
 ```crmscript
 NSUntrustedCredentials thing;

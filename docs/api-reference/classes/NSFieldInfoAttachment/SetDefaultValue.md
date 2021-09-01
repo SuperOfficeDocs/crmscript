@@ -11,7 +11,7 @@ so.topic: reference
 Default attachment id value
 
 **Parameter:** 
- - **defaultValue** Integer
+* **defaultValue** Integer
 
 ```crmscript
 NSFieldInfoAttachment thing;

@@ -11,7 +11,7 @@ so.topic: reference
 The column name to show, can be a resource identifier string.
 
 **Parameter:** 
- - **displayName** String
+* **displayName** String
 
 ```crmscript
 NSArchiveColumnInfo thing;

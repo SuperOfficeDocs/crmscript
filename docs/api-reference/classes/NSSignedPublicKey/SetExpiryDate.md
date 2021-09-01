@@ -11,7 +11,7 @@ so.topic: reference
 Date when the signature expires. No Timezone.
 
 **Parameter:** 
- - **expiryDate** DateTime
+* **expiryDate** DateTime
 
 ```crmscript
 NSSignedPublicKey thing;

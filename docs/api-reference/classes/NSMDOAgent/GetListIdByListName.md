@@ -10,8 +10,9 @@ so.topic: reference
 
 Retrieve the UdListDefinition id of a list, by its name. Not all lists have such an ID, but those that are based on tables do (the list name is then the same as the table name)
 
-**Parameters:**
- - **name** The list name, same as the table name for lists that are backed by tables
+## Parameters
+
+* **name** The list name, same as the table name for lists that are backed by tables
 
 **Returns:** Integer
 

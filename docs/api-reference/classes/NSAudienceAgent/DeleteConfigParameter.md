@@ -10,6 +10,7 @@ so.topic: reference
 
 Deletes an Audience configuration parameter belonging to a Audience layout
 
-**Parameters:**
- - **layoutName** Name of the Audience layout instance
- - **parameterName** The name of the Audience configuration parameter
+## Parameters
+
+* **layoutName** Name of the Audience layout instance
+* **parameterName** The name of the Audience configuration parameter

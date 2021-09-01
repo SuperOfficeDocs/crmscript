@@ -11,7 +11,7 @@ so.topic: reference
 Length of the second counter period
 
 **Parameter:** 
- - **period2** Integer
+* **period2** Integer
 
 ```crmscript
 NSSaintConfiguration thing;

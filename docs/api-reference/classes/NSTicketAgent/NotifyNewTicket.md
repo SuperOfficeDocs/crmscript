@@ -10,8 +10,9 @@ so.topic: reference
 
 Notify user agents about the creation of a new ticket
 
-**Parameters:**
- - **ticketEntityId** The id of the ticket to notify about
+## Parameters
+
+* **ticketEntityId** The id of the ticket to notify about
 
 ```crmscript
 NSTicketAgent agent;

@@ -11,7 +11,7 @@ so.topic: reference
 The person that last updated this foreign application.
 
 **Parameter:** 
- - **updatedBy** NSAssociate
+* **updatedBy** NSAssociate
 
 ```crmscript
 NSForeignAppEntity thing;

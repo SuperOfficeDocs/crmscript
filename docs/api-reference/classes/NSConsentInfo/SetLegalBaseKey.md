@@ -11,7 +11,7 @@ so.topic: reference
 Key for the NSLegalBase associated with this consent
 
 **Parameter:** 
- - **legalBaseKey** String
+* **legalBaseKey** String
 
 ```crmscript
 NSConsentInfo thing;

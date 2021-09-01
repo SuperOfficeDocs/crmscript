@@ -10,8 +10,9 @@ so.topic: reference
 
 Get the file extension for the document template
 
-**Parameters:**
- - **documentTemplateId** The primary key of the document template
+## Parameters
+
+* **documentTemplateId** The primary key of the document template
 
 **Returns:** String
 

@@ -8,9 +8,10 @@ so.topic: reference
 
 # NSAppointment[] GetDiaryByGroup(Integer groupId, Integer groupType, DateTime startTime, DateTime endTime, Integer count)
 
-**Parameters:**
- - **groupId** 
- - **groupType** 
- - **startTime** 
- - **endTime** 
- - **count** 
+## Parameters
+
+* **groupId** 
+* **groupType** 
+* **startTime** 
+* **endTime** 
+* **count** 

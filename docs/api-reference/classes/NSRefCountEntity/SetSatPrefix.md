@@ -11,7 +11,7 @@ so.topic: reference
 size of prefix for Satellite use of this counter
 
 **Parameter:** 
- - **satPrefix** Integer
+* **satPrefix** Integer
 
 ```crmscript
 NSRefCountEntity thing;

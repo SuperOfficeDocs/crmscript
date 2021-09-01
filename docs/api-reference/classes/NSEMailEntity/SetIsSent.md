@@ -11,7 +11,7 @@ so.topic: reference
 Is this a sent e-mail (not new)
 
 **Parameter:** 
- - **isSent** Bool
+* **isSent** Bool
 
 ```crmscript
 NSEMailEntity thing;

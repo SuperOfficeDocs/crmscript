@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSSaleStageEntity object.
 
-**Parameters:**
- - **saleStageEntityId** The identifier of the NSSaleStageEntity object
+## Parameters
+
+* **saleStageEntityId** The identifier of the NSSaleStageEntity object
 
 **Returns:** NSSaleStageEntity
 

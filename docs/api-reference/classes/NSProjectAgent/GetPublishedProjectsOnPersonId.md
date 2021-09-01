@@ -10,8 +10,9 @@ so.topic: reference
 
 Get published projects where person  is a member
 
-**Parameters:**
- - **personId** The person id
+## Parameters
+
+* **personId** The person id
 
 **Returns:** NSProject[]
 

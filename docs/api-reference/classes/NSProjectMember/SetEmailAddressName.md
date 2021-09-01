@@ -11,7 +11,7 @@ so.topic: reference
 The e-mail address description
 
 **Parameter:** 
- - **emailAddressName** String
+* **emailAddressName** String
 
 ```crmscript
 NSProjectMember thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Name of the appointments priority
 
 **Parameter:** 
- - **priorityName** String
+* **priorityName** String
 
 ```crmscript
 NSAppointment thing;

@@ -10,9 +10,10 @@ so.topic: reference
 
 Get the list of filters to be used for processing the configuration data for this application.
 
-**Parameters:**
- - **application** The application name, for instance 'SixWeb'
- - **instance** The instance name for the application, like 'MainInstance'
+## Parameters
+
+* **application** The application name, for instance 'SixWeb'
+* **instance** The instance name for the application, like 'MainInstance'
 
 **Returns:** String
 

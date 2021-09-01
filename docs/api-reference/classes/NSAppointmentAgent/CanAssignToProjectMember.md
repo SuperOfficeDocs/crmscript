@@ -8,6 +8,7 @@ so.topic: reference
 
 # Bool CanAssignToProjectMember(Integer projectId, Integer suggestedAppointmentId)
 
-**Parameters:**
- - **projectId** 
- - **suggestedAppointmentId** 
+## Parameters
+
+* **projectId** 
+* **suggestedAppointmentId** 

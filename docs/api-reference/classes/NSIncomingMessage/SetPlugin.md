@@ -11,7 +11,7 @@ so.topic: reference
 Name of plugin
 
 **Parameter:** 
- - **plugin** String
+* **plugin** String
 
 ```crmscript
 NSIncomingMessage thing;

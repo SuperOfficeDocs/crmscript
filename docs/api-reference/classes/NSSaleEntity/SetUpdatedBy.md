@@ -11,7 +11,7 @@ so.topic: reference
 Who updated the sale
 
 **Parameter:** 
- - **updatedBy** NSAssociate
+* **updatedBy** NSAssociate
 
 ```crmscript
 NSSaleEntity thing;

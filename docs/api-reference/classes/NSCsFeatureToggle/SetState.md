@@ -11,7 +11,7 @@ so.topic: reference
 Describes if the feature toggle is turned on or off
 
 **Parameter:** 
- - **state** Bool
+* **state** Bool
 
 ```crmscript
 NSCsFeatureToggle thing;

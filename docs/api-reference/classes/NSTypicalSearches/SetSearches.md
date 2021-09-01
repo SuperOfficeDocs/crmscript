@@ -11,7 +11,7 @@ so.topic: reference
 The TypicalSearch structures (including criteria) to import
 
 **Parameter:** 
- - **searches** TypicalSearch[]
+* **searches** TypicalSearch[]
 
 ```crmscript
 NSTypicalSearches thing;

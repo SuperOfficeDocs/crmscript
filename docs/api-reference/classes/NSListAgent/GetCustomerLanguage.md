@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSCustomerLanguage object.
 
-**Parameters:**
- - **customerLanguageId** The identifier of the NSCustomerLanguage object
+## Parameters
+
+* **customerLanguageId** The identifier of the NSCustomerLanguage object
 
 **Returns:** NSCustomerLanguage
 

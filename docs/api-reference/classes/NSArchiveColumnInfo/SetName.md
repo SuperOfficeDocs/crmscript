@@ -11,7 +11,7 @@ so.topic: reference
 Unique identity of this column (in this particular context); the name to be used when requesting the column from a provider, setting restrictions or order by criteria
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSArchiveColumnInfo thing;

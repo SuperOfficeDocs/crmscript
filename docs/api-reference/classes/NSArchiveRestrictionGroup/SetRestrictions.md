@@ -11,7 +11,7 @@ so.topic: reference
 Array of NSArchiveRestrictionInfo restriction specifications
 
 **Parameter:** 
- - **restrictions** NSArchiveRestrictionInfo[]
+* **restrictions** NSArchiveRestrictionInfo[]
 
 ```crmscript
 NSArchiveRestrictionGroup thing;

@@ -11,7 +11,7 @@ so.topic: reference
 The id of the prefdesc this preference is connected to
 
 **Parameter:** 
- - **prefDescId** Integer
+* **prefDescId** Integer
 
 ```crmscript
 NSPreference thing;

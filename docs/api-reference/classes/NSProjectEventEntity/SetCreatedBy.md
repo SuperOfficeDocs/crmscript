@@ -11,7 +11,7 @@ so.topic: reference
 The person that created the projectevent
 
 **Parameter:** 
- - **createdBy** NSAssociate
+* **createdBy** NSAssociate
 
 ```crmscript
 NSProjectEventEntity thing;

@@ -11,7 +11,7 @@ so.topic: reference
 The type of the ListItem. Custom field.
 
 **Parameter:** 
- - **type** String
+* **type** String
 
 ```crmscript
 NSSelectableMDOListItem thing;

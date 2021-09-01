@@ -11,7 +11,7 @@ so.topic: reference
 True if the connector is deleted
 
 **Parameter:** 
- - **deleted** Bool
+* **deleted** Bool
 
 ```crmscript
 NSErpSyncConnectorEntity thing;

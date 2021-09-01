@@ -10,6 +10,7 @@ so.topic: reference
 
 Set subscription on or off on a set of folders
 
-**Parameters:**
- - **connectionInfo** All information needed to connect to the mailserver
- - **folders** Folders to set subscription value on
+## Parameters
+
+* **connectionInfo** All information needed to connect to the mailserver
+* **folders** Folders to set subscription value on

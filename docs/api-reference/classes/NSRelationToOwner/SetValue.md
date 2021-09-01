@@ -11,7 +11,7 @@ so.topic: reference
 Set the name of the NSRelationToOwner item.
 
 **Parameter:** 
- - **value** String NSRelationToOwner name.
+* **value** String NSRelationToOwner name.
 
 ```crmscript
 NSRelationToOwner thing;

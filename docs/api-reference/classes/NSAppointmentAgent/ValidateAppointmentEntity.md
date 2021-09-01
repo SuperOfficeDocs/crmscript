@@ -10,8 +10,9 @@ so.topic: reference
 
 Check that entity is ready for saving.
 
-**Parameters:**
- - **appointmentEntity** Entity to be checked.
+## Parameters
+
+* **appointmentEntity** Entity to be checked.
 
 **Returns:** Error messages tagged by field.
 

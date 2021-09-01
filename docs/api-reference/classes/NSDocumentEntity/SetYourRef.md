@@ -11,7 +11,7 @@ so.topic: reference
 Your reference
 
 **Parameter:** 
- - **yourRef** String
+* **yourRef** String
 
 ```crmscript
 NSDocumentEntity thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Id of the DiaryView
 
 **Parameter:** 
- - **diaryViewId** Integer
+* **diaryViewId** Integer
 
 ```crmscript
 NSDiaryViewEntity thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Whether the message has been read by the customer or not.
 
 **Parameter:** 
- - **readByCustomer** Integer
+* **readByCustomer** Integer
 
 ```crmscript
 NSChatMessage thing;

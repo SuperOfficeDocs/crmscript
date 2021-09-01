@@ -11,7 +11,7 @@ so.topic: reference
 True if all day event
 
 **Parameter:** 
- - **isAlldayEvent** Bool
+* **isAlldayEvent** Bool
 
 ```crmscript
 NSAppointment thing;

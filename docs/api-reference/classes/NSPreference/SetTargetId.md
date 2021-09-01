@@ -11,7 +11,7 @@ so.topic: reference
 The id of the target row. The table it points at is specified by the preference type.
 
 **Parameter:** 
- - **targetId** Integer
+* **targetId** Integer
 
 ```crmscript
 NSPreference thing;

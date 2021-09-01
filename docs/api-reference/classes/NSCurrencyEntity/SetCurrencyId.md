@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **currencyId** Integer
+* **currencyId** Integer
 
 ```crmscript
 NSCurrencyEntity thing;

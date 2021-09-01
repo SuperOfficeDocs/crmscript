@@ -11,7 +11,7 @@ so.topic: reference
 If true, the connection has been deleted and should not be shown to the users.
 
 **Parameter:** 
- - **deleted** Bool
+* **deleted** Bool
 
 ```crmscript
 NSErpConnection thing;

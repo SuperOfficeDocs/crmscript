@@ -9,7 +9,7 @@ so.topic: reference
 # SetCurrent(NSLicenseInfo current)
 
 **Parameter:** 
- - **current** NSLicenseInfo
+* **current** NSLicenseInfo
 
 ```crmscript
 NSExtendedLicenseInfo thing;

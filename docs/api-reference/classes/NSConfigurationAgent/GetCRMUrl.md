@@ -10,10 +10,11 @@ so.topic: reference
 
 Returns a valid url based in the soprotocol provided
 
-**Parameters:**
- - **soProtocol** SoProtocol to display. Eg. contact.activityarchive.minipreview
- - **currents** currents to set. Eg. contact_id=100&person_id=299
- - **frameless** If true frame is not rendered( Navigationbar, buttonbar and menu )
+## Parameters
+
+* **soProtocol** SoProtocol to display. Eg. contact.activityarchive.minipreview
+* **currents** currents to set. Eg. contact_id=100&person_id=299
+* **frameless** If true frame is not rendered( Navigationbar, buttonbar and menu )
 
 **Returns:** String
 

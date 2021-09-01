@@ -11,7 +11,7 @@ so.topic: reference
 The documents name
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSDocumentPreview thing;

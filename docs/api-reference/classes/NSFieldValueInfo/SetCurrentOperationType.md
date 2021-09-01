@@ -11,7 +11,7 @@ so.topic: reference
 The selected operation to execute on this field
 
 **Parameter:** 
- - **currentOperationType** String
+* **currentOperationType** String
 
 ```crmscript
 NSFieldValueInfo thing;

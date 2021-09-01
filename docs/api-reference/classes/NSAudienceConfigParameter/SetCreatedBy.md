@@ -11,7 +11,7 @@ so.topic: reference
 Name of the person that created the configuration parameter
 
 **Parameter:** 
- - **createdBy** String
+* **createdBy** String
 
 ```crmscript
 NSAudienceConfigParameter thing;

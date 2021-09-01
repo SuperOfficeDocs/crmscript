@@ -10,8 +10,9 @@ so.topic: reference
 
 Save an array of NSCustomerCenterConfig entities to the database
 
-**Parameters:**
- - **custConfigs** The NSCustomerCenterConfig entities to be saved. If the id does not exists, a new one will be created. Unknown ids will be skipped
+## Parameters
+
+* **custConfigs** The NSCustomerCenterConfig entities to be saved. If the id does not exists, a new one will be created. Unknown ids will be skipped
 
 ```crmscript
 NSCustomerServiceAgent agent;

@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a vector of NSPosition objects.
 
-**Parameters:**
- - **positionIds** The identifiers of the NSPosition objects
+## Parameters
+
+* **positionIds** The identifiers of the NSPosition objects
 
 **Returns:** NSPosition[]
 

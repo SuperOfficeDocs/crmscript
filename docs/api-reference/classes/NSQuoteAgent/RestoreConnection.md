@@ -10,8 +10,9 @@ so.topic: reference
 
 Restores a connection marked as deleted.
 
-**Parameters:**
- - **quoteConnectionId** Primary key of the connection to restore
+## Parameters
+
+* **quoteConnectionId** Primary key of the connection to restore
 
 ```crmscript
 NSQuoteAgent agent;

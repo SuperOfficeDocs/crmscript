@@ -11,7 +11,7 @@ so.topic: reference
 Offline message shown in widget
 
 **Parameter:** 
- - **offlineMessage** String
+* **offlineMessage** String
 
 ```crmscript
 NSChatWidgetSettings thing;

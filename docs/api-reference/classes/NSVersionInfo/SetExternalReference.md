@@ -11,7 +11,7 @@ so.topic: reference
 The document plugin's key that uniquely identifies a document; stored in the externalReference field of the document table
 
 **Parameter:** 
- - **externalReference** String
+* **externalReference** String
 
 ```crmscript
 NSVersionInfo thing;

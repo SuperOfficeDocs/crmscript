@@ -11,7 +11,7 @@ so.topic: reference
 Content-Disposition
 
 **Parameter:** 
- - **disposition** String
+* **disposition** String
 
 ```crmscript
 NSEMailAttachment thing;

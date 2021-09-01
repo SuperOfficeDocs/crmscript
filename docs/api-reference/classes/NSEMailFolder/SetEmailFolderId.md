@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **emailFolderId** Integer
+* **emailFolderId** Integer
 
 ```crmscript
 NSEMailFolder thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Identity of document to be used as merge draft.
 
 **Parameter:** 
- - **documentId** Integer
+* **documentId** Integer
 
 ```crmscript
 NSMailMergeSettings thing;

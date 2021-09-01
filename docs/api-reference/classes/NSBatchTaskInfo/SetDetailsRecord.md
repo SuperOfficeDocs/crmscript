@@ -11,7 +11,7 @@ so.topic: reference
 Record Id of a row in the DetailsTable containing more info about the task.
 
 **Parameter:** 
- - **detailsRecord** Integer
+* **detailsRecord** Integer
 
 ```crmscript
 NSBatchTaskInfo thing;

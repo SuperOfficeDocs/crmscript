@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSTicketEntity object.
 
-**Parameters:**
- - **ticketEntityId** The identifier of the NSTicketEntity object
+## Parameters
+
+* **ticketEntityId** The identifier of the NSTicketEntity object
 
 **Returns:** NSTicketEntity
 

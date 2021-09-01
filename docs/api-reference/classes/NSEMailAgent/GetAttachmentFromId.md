@@ -10,9 +10,10 @@ so.topic: reference
 
 Retrieve an attachment from an e-mail
 
-**Parameters:**
- - **mailItemId** Unique ID for the e-mail to retrieve the attachment from
- - **attachmentId** Id of the attachment in the e-mail
+## Parameters
+
+* **mailItemId** Unique ID for the e-mail to retrieve the attachment from
+* **attachmentId** Id of the attachment in the e-mail
 
 **Returns:** NSEMailAttachment
 

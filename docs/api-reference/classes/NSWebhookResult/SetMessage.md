@@ -11,7 +11,7 @@ so.topic: reference
 Headers and body of response from webhook
 
 **Parameter:** 
- - **message** String
+* **message** String
 
 ```crmscript
 NSWebhookResult thing;

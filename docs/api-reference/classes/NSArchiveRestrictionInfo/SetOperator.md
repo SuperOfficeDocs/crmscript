@@ -11,7 +11,7 @@ so.topic: reference
 The operator, such as =, etc
 
 **Parameter:** 
- - **operator** String
+* **operator** String
 
 ```crmscript
 NSArchiveRestrictionInfo thing;

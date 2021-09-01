@@ -10,5 +10,6 @@ so.topic: reference
 
 Delete a batch task from the database.
 
-**Parameters:**
- - **batchTaskId** The batchTask ids to delete.
+## Parameters
+
+* **batchTaskId** The batchTask ids to delete.

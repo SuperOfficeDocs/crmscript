@@ -11,7 +11,7 @@ so.topic: reference
 The list item
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSProjectTypeEntity thing;

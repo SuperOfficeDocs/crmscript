@@ -11,7 +11,7 @@ so.topic: reference
 Task progress, in percent of estimated total
 
 **Parameter:** 
- - **progressPercent** Integer
+* **progressPercent** Integer
 
 ```crmscript
 NSBatchTaskInfo thing;

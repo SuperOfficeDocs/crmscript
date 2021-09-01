@@ -11,7 +11,7 @@ so.topic: reference
 Identifier for a document
 
 **Parameter:** 
- - **documentId** Integer
+* **documentId** Integer
 
 ```crmscript
 NSTemplateVariablesParameters thing;

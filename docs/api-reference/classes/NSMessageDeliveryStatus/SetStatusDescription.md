@@ -11,7 +11,7 @@ so.topic: reference
 String describing the current message status.
 
 **Parameter:** 
- - **statusDescription** String
+* **statusDescription** String
 
 ```crmscript
 NSMessageDeliveryStatus thing;

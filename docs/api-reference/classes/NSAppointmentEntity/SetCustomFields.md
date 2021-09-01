@@ -11,7 +11,7 @@ so.topic: reference
 Set the user-defined and extra fields on a NSAppointmentEntity with a map.
 
 **Parameter:** 
- - **udefs** Map user defined field and extra field values encoded as strings.
+* **udefs** Map user defined field and extra field values encoded as strings.
 
 ```crmscript
 NSAppointmentEntity thing;

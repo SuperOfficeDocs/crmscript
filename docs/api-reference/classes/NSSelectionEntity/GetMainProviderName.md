@@ -8,7 +8,7 @@ so.topic: reference
 
 # String GetMainProviderName()
 
-The name of the Archive Provider that will deliver the content of the archive - the actual entity rows
+The name of the Archive Provider that will deliver the content of the archive* the actual entity rows
 
 **Returns:** String
 

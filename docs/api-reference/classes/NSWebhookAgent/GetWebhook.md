@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSWebhook object.
 
-**Parameters:**
- - **webhookId** The identifier of the NSWebhook object
+## Parameters
+
+* **webhookId** The identifier of the NSWebhook object
 
 **Returns:** NSWebhook
 

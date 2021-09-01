@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSDiaryViewEntity object.
 
-**Parameters:**
- - **diaryViewEntityId** The identifier of the NSDiaryViewEntity object
+## Parameters
+
+* **diaryViewEntityId** The identifier of the NSDiaryViewEntity object
 
 **Returns:** NSDiaryViewEntity
 

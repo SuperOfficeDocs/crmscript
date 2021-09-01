@@ -11,7 +11,7 @@ so.topic: reference
 Updates the existing NSReportEntity or creates a new NSReportEntity if the id parameter is 0
 
 **Parameters**:
- - **reportEntity** The NSReportEntity to save.
+* **reportEntity** The NSReportEntity to save.
 
 **Returns:** NSReportEntity
 

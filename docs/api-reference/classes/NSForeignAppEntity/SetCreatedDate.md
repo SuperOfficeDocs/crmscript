@@ -11,7 +11,7 @@ so.topic: reference
 Registered when
 
 **Parameter:** 
- - **createdDate** DateTime
+* **createdDate** DateTime
 
 ```crmscript
 NSForeignAppEntity thing;

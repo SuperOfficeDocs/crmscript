@@ -11,7 +11,7 @@ so.topic: reference
 Content, or body, of the message.
 
 **Parameter:** 
- - **content** String
+* **content** String
 
 ```crmscript
 NSOutgoingMessage thing;

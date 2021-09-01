@@ -10,10 +10,11 @@ so.topic: reference
 
 Get substitutions for some or all resources for one culture
 
-**Parameters:**
- - **resourceNames** Array of names of resources for which overrides are sought; if empty, then get all
- - **culture** .NET culture string; if empty, then get all
- - **activeOnly** If true, then only resources with active substitutions will be returned; if false then ALL existing overrides will be returned
+## Parameters
+
+* **resourceNames** Array of names of resources for which overrides are sought; if empty, then get all
+* **culture** .NET culture string; if empty, then get all
+* **activeOnly** If true, then only resources with active substitutions will be returned; if false then ALL existing overrides will be returned
 
 **Returns:** NSResourceOverride[]
 

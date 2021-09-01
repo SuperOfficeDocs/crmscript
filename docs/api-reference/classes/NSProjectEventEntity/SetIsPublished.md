@@ -11,7 +11,7 @@ so.topic: reference
 Publish to external users? When true, the event/project information is visible to external users through the Audience portal. You can control the publish duration using the PublishFrom/PublishTo properties.
 
 **Parameter:** 
- - **isPublished** Bool
+* **isPublished** Bool
 
 ```crmscript
 NSProjectEventEntity thing;

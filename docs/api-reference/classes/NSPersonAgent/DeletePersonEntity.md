@@ -10,8 +10,9 @@ so.topic: reference
 
 Deletes the NSPersonEntity
   
-**Parameters:**
- - **personEntityId** The identity of the NSPersonEntity to delete.
+## Parameters
+
+* **personEntityId** The identity of the NSPersonEntity to delete.
 
 ```crmscript
 NSPersonAgent agent;

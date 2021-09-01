@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets the tab order.
 
-**Parameters:**
- - **tabName** Name of the tab control
+## Parameters
+
+* **tabName** Name of the tab control
 
 **Returns:** NSTabOrder
 

@@ -11,7 +11,7 @@ so.topic: reference
 Message to be shown in a pre-chat
 
 **Parameter:** 
- - **preFormMessage** String
+* **preFormMessage** String
 
 ```crmscript
 NSChatWidgetSettings thing;

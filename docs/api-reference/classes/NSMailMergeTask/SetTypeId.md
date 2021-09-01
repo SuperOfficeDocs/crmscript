@@ -11,7 +11,7 @@ so.topic: reference
 Type identity to set on task
 
 **Parameter:** 
- - **typeId** Integer
+* **typeId** Integer
 
 ```crmscript
 NSMailMergeTask thing;

@@ -12,10 +12,10 @@ The encoding of the URL
 
 **Returns:** Integer
 
-     - Enum: 0 = Unknown 
-     - Enum: 1 = None 
-     - Enum: 2 = ANSI 
-     - Enum: 3 = Unicode 
+* Enum: 0 = Unknown 
+* Enum: 1 = None 
+* Enum: 2 = ANSI 
+* Enum: 3 = Unicode 
 
 ```crmscript
 NSWebPanelEntity thing;

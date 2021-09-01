@@ -10,9 +10,10 @@ so.topic: reference
 
 Create or Update the CRMScript information
 
-**Parameters:**
- - **uniqueIdentifier** Global unique reference to script (independent of installation)
- - **crmscript** Information about the CRMScript
+## Parameters
+
+* **uniqueIdentifier** Global unique reference to script (independent of installation)
+* **crmscript** Information about the CRMScript
 
 **Returns:** Information about the CRMScript as saved in the database
 

@@ -11,7 +11,7 @@ so.topic: reference
 The external name for this category, used for the customer frontend.
 
 **Parameter:** 
- - **externalName** String
+* **externalName** String
 
 ```crmscript
 NSTicketCategoryEntity thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Tooltip/description of the DiaryView
 
 **Parameter:** 
- - **tooltip** String
+* **tooltip** String
 
 ```crmscript
 NSDiaryViewEntity thing;

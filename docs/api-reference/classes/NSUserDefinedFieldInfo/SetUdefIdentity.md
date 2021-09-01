@@ -11,7 +11,7 @@ so.topic: reference
 Unique number used to track field identity across layout changes
 
 **Parameter:** 
- - **udefIdentity** Integer
+* **udefIdentity** Integer
 
 ```crmscript
 NSUserDefinedFieldInfo thing;

@@ -11,7 +11,7 @@ so.topic: reference
 The person that last updated the person object
 
 **Parameter:** 
- - **updatedBy** NSAssociate
+* **updatedBy** NSAssociate
 
 ```crmscript
 NSPersonEntity thing;

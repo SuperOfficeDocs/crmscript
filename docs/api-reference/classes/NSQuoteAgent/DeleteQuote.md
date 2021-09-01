@@ -10,5 +10,6 @@ so.topic: reference
 
 Delete a Quote
 
-**Parameters:**
- - **quoteId** QuoteId of the Quote to delete.
+## Parameters
+
+* **quoteId** QuoteId of the Quote to delete.

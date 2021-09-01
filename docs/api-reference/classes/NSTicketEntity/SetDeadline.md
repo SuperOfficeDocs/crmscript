@@ -11,7 +11,7 @@ so.topic: reference
 Deadline for ticket.
 
 **Parameter:** 
- - **deadline** DateTime
+* **deadline** DateTime
 
 ```crmscript
 NSTicketEntity thing;

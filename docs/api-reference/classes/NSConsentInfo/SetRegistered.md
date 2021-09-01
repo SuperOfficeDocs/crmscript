@@ -11,7 +11,7 @@ so.topic: reference
 When this consent record was created
 
 **Parameter:** 
- - **registered** DateTime
+* **registered** DateTime
 
 ```crmscript
 NSConsentInfo thing;

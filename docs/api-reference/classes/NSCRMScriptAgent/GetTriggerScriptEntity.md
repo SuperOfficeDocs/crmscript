@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSTriggerScriptEntity object.
 
-**Parameters:**
- - **triggerScriptEntityId** The identifier of the NSTriggerScriptEntity object
+## Parameters
+
+* **triggerScriptEntityId** The identifier of the NSTriggerScriptEntity object
 
 **Returns:** NSTriggerScriptEntity
 

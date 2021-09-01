@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a vector of NSRating objects.
 
-**Parameters:**
- - **ratingIds** The identifiers of the NSRating objects
+## Parameters
+
+* **ratingIds** The identifiers of the NSRating objects
 
 **Returns:** NSRating[]
 

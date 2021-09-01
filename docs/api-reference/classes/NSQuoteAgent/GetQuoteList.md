@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a named list from the connector Return array of QuoteListItems. Return NULL if the given list is not supported.
 
-**Parameters:**
- - **quoteListType** The name of the requested list, for instance: ProductCategory, ProductFamily, ProductType, PaymentTerms, PaymentType, DeliveryTerms, DeliveryType.
+## Parameters
+
+* **quoteListType** The name of the requested list, for instance: ProductCategory, ProductFamily, ProductType, PaymentTerms, PaymentType, DeliveryTerms, DeliveryType.
 
 **Returns:** NSQuoteListItem[]
 

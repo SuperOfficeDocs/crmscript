@@ -11,7 +11,7 @@ so.topic: reference
 The contact email address
 
 **Parameter:** 
- - **emailAddress** String
+* **emailAddress** String
 
 ```crmscript
 NSContact thing;

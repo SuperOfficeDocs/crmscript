@@ -11,7 +11,7 @@ so.topic: reference
 Content-ID
 
 **Parameter:** 
- - **id** String
+* **id** String
 
 ```crmscript
 NSEMailAttachment thing;

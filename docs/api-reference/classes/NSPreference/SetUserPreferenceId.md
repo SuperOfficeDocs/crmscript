@@ -11,7 +11,7 @@ so.topic: reference
 The id of the user preference
 
 **Parameter:** 
- - **userPreferenceId** Integer
+* **userPreferenceId** Integer
 
 ```crmscript
 NSPreference thing;

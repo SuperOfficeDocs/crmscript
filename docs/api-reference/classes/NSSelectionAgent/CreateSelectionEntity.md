@@ -10,8 +10,9 @@ so.topic: reference
 
 Create (but do not save) a new selection entity, for the current user and the given target table; other fields populated as by CreateDefaultSelectionEntity()
 
-**Parameters:**
- - **targetTableName** The name of the target table, such as 'contact' or 'appointment'; any table for which Selection functionality is enabled
+## Parameters
+
+* **targetTableName** The name of the target table, such as 'contact' or 'appointment'; any table for which Selection functionality is enabled
 
 **Returns:** NSSelectionEntity
 

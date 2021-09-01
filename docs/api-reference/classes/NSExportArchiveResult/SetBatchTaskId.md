@@ -11,7 +11,7 @@ so.topic: reference
 Id of the BatchTask created. <=0 if no BatchTask was created.
 
 **Parameter:** 
- - **batchTaskId** Integer
+* **batchTaskId** Integer
 
 ```crmscript
 NSExportArchiveResult thing;

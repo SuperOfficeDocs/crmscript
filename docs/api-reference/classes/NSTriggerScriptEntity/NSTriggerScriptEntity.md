@@ -8,4 +8,4 @@ so.topic: reference
 
 # NSTriggerScriptEntity
 
-CRM Trigger Script - The script runs when a given event fires.
+CRM Trigger Script* The script runs when a given event fires.

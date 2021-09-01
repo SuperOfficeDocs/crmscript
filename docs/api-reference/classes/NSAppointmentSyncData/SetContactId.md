@@ -11,7 +11,7 @@ so.topic: reference
 The contacts identifier
 
 **Parameter:** 
- - **contactId** Integer
+* **contactId** Integer
 
 ```crmscript
 NSAppointmentSyncData thing;

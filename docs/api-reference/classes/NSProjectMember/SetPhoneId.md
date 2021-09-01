@@ -11,7 +11,7 @@ so.topic: reference
 The phone id
 
 **Parameter:** 
- - **phoneId** Integer
+* **phoneId** Integer
 
 ```crmscript
 NSProjectMember thing;

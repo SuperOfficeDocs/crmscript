@@ -11,7 +11,7 @@ so.topic: reference
 Password for the username
 
 **Parameter:** 
- - **password** String
+* **password** String
 
 ```crmscript
 NSEMailConnectionInfoExtended thing;

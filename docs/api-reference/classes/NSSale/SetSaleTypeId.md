@@ -11,7 +11,7 @@ so.topic: reference
 The sale's type id
 
 **Parameter:** 
- - **saleTypeId** Integer
+* **saleTypeId** Integer
 
 ```crmscript
 NSSale thing;

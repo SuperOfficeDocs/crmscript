@@ -10,8 +10,9 @@ so.topic: reference
 
 Get all documents that are linked to the person. I.e. the documents that are listed in the person dialog.
 
-**Parameters:**
- - **personId** The person id.
+## Parameters
+
+* **personId** The person id.
 
 **Returns:** NSDocument[]
 

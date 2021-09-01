@@ -10,8 +10,9 @@ so.topic: reference
 
 Deletes the NSHierarchyEntity
   
-**Parameters:**
- - **hierarchyEntityId** The identity of the NSHierarchyEntity to delete.
+## Parameters
+
+* **hierarchyEntityId** The identity of the NSHierarchyEntity to delete.
 
 ```crmscript
 NSListAgent agent;

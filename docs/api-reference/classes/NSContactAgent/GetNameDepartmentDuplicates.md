@@ -10,9 +10,10 @@ so.topic: reference
 
 Get duplicates based on the contact name and department
 
-**Parameters:**
- - **name** Name used for lookup
- - **department** Department used for lookup (if any)
+## Parameters
+
+* **name** Name used for lookup
+* **department** Department used for lookup (if any)
 
 **Returns:** NSDuplicateEntry[]
 

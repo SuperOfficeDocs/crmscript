@@ -11,7 +11,7 @@ so.topic: reference
 The contact's owner
 
 **Parameter:** 
- - **associateFullName** String
+* **associateFullName** String
 
 ```crmscript
 NSContactActivity thing;

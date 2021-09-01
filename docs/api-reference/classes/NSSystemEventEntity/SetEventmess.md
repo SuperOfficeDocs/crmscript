@@ -11,7 +11,7 @@ so.topic: reference
 Message to be shown, entered by administrator
 
 **Parameter:** 
- - **eventmess** String
+* **eventmess** String
 
 ```crmscript
 NSSystemEventEntity thing;

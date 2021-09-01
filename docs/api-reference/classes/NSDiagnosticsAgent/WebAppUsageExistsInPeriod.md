@@ -10,10 +10,11 @@ so.topic: reference
 
 Returns true if viewState has been clicked at least once since FromDate, if asscoiateId < 0 or FromDate is DateTime.MinValue no restriction given for those parameters
 
-**Parameters:**
- - **associateId** The asscoiate id to look for webapp usage
- - **viewState** The viewState to search for
- - **fromDate** The datetime to restrict webapp usage on
+## Parameters
+
+* **associateId** The asscoiate id to look for webapp usage
+* **viewState** The viewState to search for
+* **fromDate** The datetime to restrict webapp usage on
 
 **Returns:** Bool
 

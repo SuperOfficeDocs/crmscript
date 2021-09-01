@@ -11,7 +11,7 @@ so.topic: reference
 The associate who created this ticket
 
 **Parameter:** 
- - **createdBy** NSAssociate
+* **createdBy** NSAssociate
 
 ```crmscript
 NSTicketEntity thing;

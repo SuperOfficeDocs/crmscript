@@ -11,7 +11,7 @@ so.topic: reference
 Contact ID of person who is the project member
 
 **Parameter:** 
- - **contactId** Integer
+* **contactId** Integer
 
 ```crmscript
 NSProjectMember thing;

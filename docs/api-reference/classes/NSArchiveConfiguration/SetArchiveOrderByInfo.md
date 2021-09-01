@@ -9,7 +9,7 @@ so.topic: reference
 # SetArchiveOrderByInfo(NSArchiveOrderByInfo[] archiveOrderByInfo)
 
 **Parameter:** 
- - **archiveOrderByInfo** NSArchiveOrderByInfo[]
+* **archiveOrderByInfo** NSArchiveOrderByInfo[]
 
 ```crmscript
 NSArchiveConfiguration thing;

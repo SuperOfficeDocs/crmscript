@@ -10,8 +10,9 @@ so.topic: reference
 
 Get the saved user blocks to be used in a shipment/mailing message
 
-**Parameters:**
- - **associateId** The associate id to get the user blocks. 0 will get all saved blocks
+## Parameters
+
+* **associateId** The associate id to get the user blocks. 0 will get all saved blocks
 
 **Returns:** NSShipmentMessageBlockEntity[]
 

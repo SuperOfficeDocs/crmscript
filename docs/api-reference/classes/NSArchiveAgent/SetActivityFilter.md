@@ -10,5 +10,6 @@ so.topic: reference
 
 Set activity filter for the specified list.
 
-**Parameters:**
- - **activityFilter** New activity filter
+## Parameters
+
+* **activityFilter** New activity filter

@@ -11,7 +11,7 @@ so.topic: reference
 Set the name of the DeliveryType item.
 
 **Parameter:** 
- - **value** String DeliveryType name.
+* **value** String DeliveryType name.
 
 ```crmscript
 NSDeliveryType thing;

@@ -10,9 +10,10 @@ so.topic: reference
 
 Save (adds/replaces) current credential of the same type for the user.
 
-**Parameters:**
- - **userId** Primary key of the user (i.e. associate)
- - **credential** Credentials supported for authentication
+## Parameters
+
+* **userId** Primary key of the user (i.e. associate)
+* **credential** Credentials supported for authentication
 
 **Returns:** Bool
 

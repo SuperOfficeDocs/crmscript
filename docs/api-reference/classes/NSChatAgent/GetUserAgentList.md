@@ -10,9 +10,10 @@ so.topic: reference
 
 Get list of users that can be assigned to chat topics. Users with Chat-CALs from the MDO list 'chatuser'
 
-**Parameters:**
- - **flat** Return flat list instead of grouping by usergroup.
- - **onlyPresent** Only show users who are present
+## Parameters
+
+* **flat** Return flat list instead of grouping by usergroup.
+* **onlyPresent** Only show users who are present
 
 **Returns:** NSMDOListItem[]
 

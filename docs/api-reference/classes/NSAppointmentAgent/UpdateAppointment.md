@@ -10,10 +10,11 @@ so.topic: reference
 
 Updates an appointment record.
 
-**Parameters:**
- - **id** 
- - **startTime** 
- - **endTime** 
- - **status** 
- - **type** 
- - **associateId** The appointment owner's id (associate id)
+## Parameters
+
+* **id** 
+* **startTime** 
+* **endTime** 
+* **status** 
+* **type** 
+* **associateId** The appointment owner's id (associate id)

@@ -11,7 +11,7 @@ so.topic: reference
 The id of the connection
 
 **Parameter:** 
- - **erpConnectionId** Integer
+* **erpConnectionId** Integer
 
 ```crmscript
 NSErpConnectionData thing;

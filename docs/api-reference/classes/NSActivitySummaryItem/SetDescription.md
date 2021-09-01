@@ -11,7 +11,7 @@ so.topic: reference
 The appointment's textbox; document title
 
 **Parameter:** 
- - **description** String
+* **description** String
 
 ```crmscript
 NSActivitySummaryItem thing;

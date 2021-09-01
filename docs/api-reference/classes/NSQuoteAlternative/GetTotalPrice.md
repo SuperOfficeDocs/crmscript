@@ -8,7 +8,7 @@ so.topic: reference
 
 # Float GetTotalPrice()
 
-Sum of the QuoteLines.TotalPrice - AlternativeDiscount or QuoteLines.TotalCost + Earning based on what, if anything, the user has entered last. Shall be calculated by the connector.
+Sum of the QuoteLines.TotalPrice* AlternativeDiscount or QuoteLines.TotalCost + Earning based on what, if anything, the user has entered last. Shall be calculated by the connector.
 
 **Returns:** Float
 

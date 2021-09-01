@@ -9,7 +9,7 @@ so.topic: reference
 # SetIsTentative(Bool isTentative)
 
 **Parameter:** 
- - **isTentative** Bool
+* **isTentative** Bool
 
 ```crmscript
 NSAppointmentSyncData thing;

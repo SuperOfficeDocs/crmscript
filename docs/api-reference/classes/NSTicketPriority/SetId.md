@@ -11,7 +11,7 @@ so.topic: reference
 Set the primary key (id) for the NSTicketPriority
 
 **Parameter:** 
- - **id** Integer
+* **id** Integer
 
 ```crmscript
 NSTicketPriority thing;

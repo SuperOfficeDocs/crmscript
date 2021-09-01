@@ -11,7 +11,7 @@ so.topic: reference
 Country of invoice address, typically copied from contact record
 
 **Parameter:** 
- - **invoiceCountryId** Integer
+* **invoiceCountryId** Integer
 
 ```crmscript
 NSQuoteVersion thing;

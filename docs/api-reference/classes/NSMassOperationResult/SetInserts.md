@@ -11,7 +11,7 @@ so.topic: reference
 Number of rows inserted
 
 **Parameter:** 
- - **inserts** Integer
+* **inserts** Integer
 
 ```crmscript
 NSMassOperationResult thing;

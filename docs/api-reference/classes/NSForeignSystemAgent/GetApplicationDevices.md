@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets all devices that belong to a foreign application.
 
-**Parameters:**
- - **applicationName** The foreign application name
+## Parameters
+
+* **applicationName** The foreign application name
 
 **Returns:** NSForeignDevice[]
 

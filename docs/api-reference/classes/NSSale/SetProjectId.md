@@ -11,7 +11,7 @@ so.topic: reference
 Optional project reference
 
 **Parameter:** 
- - **projectId** Integer
+* **projectId** Integer
 
 ```crmscript
 NSSale thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Updates the existing NSAmountClassEntity or creates a new NSAmountClassEntity if the id parameter is 0
 
 **Parameters**:
- - **amountClassEntity** The NSAmountClassEntity to save.
+* **amountClassEntity** The NSAmountClassEntity to save.
 
 **Returns:** NSAmountClassEntity
 

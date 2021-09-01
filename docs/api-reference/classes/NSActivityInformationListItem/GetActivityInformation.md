@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSActivitySummary GetActivityInformation()
 
-Activity information summary - number of free and busy activities.
+Activity information summary* number of free and busy activities.
 
 **Returns:** NSActivitySummary
 

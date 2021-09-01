@@ -11,7 +11,7 @@ so.topic: reference
 Collect consent to store from user
 
 **Parameter:** 
- - **collectConsent** Bool
+* **collectConsent** Bool
 
 ```crmscript
 NSChatTopicEntity thing;

@@ -8,10 +8,10 @@ so.topic: reference
 
 # SetMemberTabHeading(String memberTabHeading)
 
-'Companies', or whatever else is appropriate - the plural form of the entity name; this string will contain resource references
+'Companies', or whatever else is appropriate* the plural form of the entity name; this string will contain resource references
 
 **Parameter:** 
- - **memberTabHeading** String
+* **memberTabHeading** String
 
 ```crmscript
 NSSelectionEntity thing;

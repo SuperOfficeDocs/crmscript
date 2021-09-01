@@ -11,7 +11,7 @@ so.topic: reference
 Path where the programfile is located; if empty, PATH is used
 
 **Parameter:** 
- - **path** String
+* **path** String
 
 ```crmscript
 NSExtAppEntity thing;

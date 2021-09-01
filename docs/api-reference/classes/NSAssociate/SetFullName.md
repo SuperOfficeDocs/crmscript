@@ -11,7 +11,7 @@ so.topic: reference
 The associate's culture formatted fullname (firstname, middleName and lastname)
 
 **Parameter:** 
- - **fullName** String
+* **fullName** String
 
 ```crmscript
 NSAssociate thing;

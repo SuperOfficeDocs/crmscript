@@ -11,7 +11,7 @@ so.topic: reference
 Localized field name – shown in the GUI
 
 **Parameter:** 
- - **displayName** String
+* **displayName** String
 
 ```crmscript
 NSFieldMetadata thing;

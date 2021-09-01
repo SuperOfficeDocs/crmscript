@@ -11,7 +11,7 @@ so.topic: reference
 Is Sign On functionality enabled
 
 **Parameter:** 
- - **signOn** Bool
+* **signOn** Bool
 
 ```crmscript
 NSProjectEventEntity thing;

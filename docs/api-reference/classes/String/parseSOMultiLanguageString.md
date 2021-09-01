@@ -21,7 +21,7 @@ US:"Location and size";GE:"Position und Größe";NO:"Posisjon og størrelse"
 
 ## Parameters
 
-* **language:** - the following languages are available:
+* **language:*** the following languages are available:
 
 * Norwegian = 0
 * English = 1

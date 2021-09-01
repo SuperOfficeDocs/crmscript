@@ -10,9 +10,10 @@ so.topic: reference
 
 Retrieve total/unread mail items in current folder
 
-**Parameters:**
- - **connectionInfo** All information needed to connect to the mailserver
- - **onlyUnread** If true, only unread items are counted
+## Parameters
+
+* **connectionInfo** All information needed to connect to the mailserver
+* **onlyUnread** If true, only unread items are counted
 
 **Returns:** Integer
 

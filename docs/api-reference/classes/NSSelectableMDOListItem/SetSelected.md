@@ -11,7 +11,7 @@ so.topic: reference
 True if the ListItem is selected
 
 **Parameter:** 
- - **selected** Bool
+* **selected** Bool
 
 ```crmscript
 NSSelectableMDOListItem thing;

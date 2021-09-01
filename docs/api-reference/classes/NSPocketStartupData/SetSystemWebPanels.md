@@ -11,7 +11,7 @@ so.topic: reference
 Web panels defined in Admin client, set to be shown in Pocket client
 
 **Parameter:** 
- - **systemWebPanels** NSWebPanelEntity[]
+* **systemWebPanels** NSWebPanelEntity[]
 
 ```crmscript
 NSPocketStartupData thing;

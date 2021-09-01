@@ -11,7 +11,7 @@ so.topic: reference
 Id of the task.
 
 **Parameter:** 
- - **id** Integer
+* **id** Integer
 
 ```crmscript
 NSBatchTaskInfo thing;

@@ -11,7 +11,7 @@ so.topic: reference
 The list of future date selections. This is a static MDO list with standard values.
 
 **Parameter:** 
- - **futureDateList** NSMDOListItem[]
+* **futureDateList** NSMDOListItem[]
 
 ```crmscript
 NSActivityFilter thing;

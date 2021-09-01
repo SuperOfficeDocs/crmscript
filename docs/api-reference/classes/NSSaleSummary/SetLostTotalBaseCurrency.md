@@ -11,7 +11,7 @@ so.topic: reference
 Summed amount for all lost within the period in default currency for the installation
 
 **Parameter:** 
- - **lostTotalBaseCurrency** Float
+* **lostTotalBaseCurrency** Float
 
 ```crmscript
 NSSaleSummary thing;

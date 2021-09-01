@@ -11,7 +11,7 @@ so.topic: reference
 This a simple field for adding information that the Connector can provide, and that the qoute document need to display.
 
 **Parameter:** 
- - **extraField1** String
+* **extraField1** String
 
 ```crmscript
 NSQuoteLine thing;

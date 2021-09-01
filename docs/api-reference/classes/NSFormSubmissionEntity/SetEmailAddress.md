@@ -11,7 +11,7 @@ so.topic: reference
 The email address of the person who submitted
 
 **Parameter:** 
- - **emailAddress** String
+* **emailAddress** String
 
 ```crmscript
 NSFormSubmissionEntity thing;

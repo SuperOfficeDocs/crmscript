@@ -11,7 +11,7 @@ so.topic: reference
 The description of the module license
 
 **Parameter:** 
- - **description** String
+* **description** String
 
 ```crmscript
 NSModuleLicenseLink thing;

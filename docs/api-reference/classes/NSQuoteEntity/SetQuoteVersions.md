@@ -11,7 +11,7 @@ so.topic: reference
 Array og QuoteVersions connected to the quote.
 
 **Parameter:** 
- - **quoteVersions** NSQuoteVersion[]
+* **quoteVersions** NSQuoteVersion[]
 
 ```crmscript
 NSQuoteEntity thing;

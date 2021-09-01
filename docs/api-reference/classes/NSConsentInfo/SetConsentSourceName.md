@@ -11,7 +11,7 @@ so.topic: reference
 Name of the NSConsentSource associated with this consent
 
 **Parameter:** 
- - **consentSourceName** String
+* **consentSourceName** String
 
 ```crmscript
 NSConsentInfo thing;

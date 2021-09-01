@@ -8,7 +8,8 @@ so.topic: reference
 
 # Bool HasGuideActivities(Integer projectId)
 
-**Parameters:**
- - **projectId** Project id
+## Parameters
+
+* **projectId** Project id
 
 **Returns:** Bool

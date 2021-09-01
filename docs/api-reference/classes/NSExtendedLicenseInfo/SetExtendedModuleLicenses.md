@@ -9,7 +9,7 @@ so.topic: reference
 # SetExtendedModuleLicenses(NSExtendedModuleLicense[] extendedModuleLicenses)
 
 **Parameter:** 
- - **extendedModuleLicenses** NSExtendedModuleLicense[]
+* **extendedModuleLicenses** NSExtendedModuleLicense[]
 
 ```crmscript
 NSExtendedLicenseInfo thing;

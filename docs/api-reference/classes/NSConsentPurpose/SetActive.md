@@ -11,7 +11,7 @@ so.topic: reference
 Is the consent purpose active or not
 
 **Parameter:** 
- - **active** Integer
+* **active** Integer
 
 ```crmscript
 NSConsentPurpose thing;

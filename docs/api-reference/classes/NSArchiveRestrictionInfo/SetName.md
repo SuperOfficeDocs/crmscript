@@ -11,7 +11,7 @@ so.topic: reference
 The programmatic column name, including any required prefixes
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSArchiveRestrictionInfo thing;

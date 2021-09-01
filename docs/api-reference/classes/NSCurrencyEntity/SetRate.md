@@ -11,7 +11,7 @@ so.topic: reference
 Exchange rate
 
 **Parameter:** 
- - **rate** Float
+* **rate** Float
 
 ```crmscript
 NSCurrencyEntity thing;

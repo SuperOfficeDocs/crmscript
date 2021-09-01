@@ -11,7 +11,7 @@ so.topic: reference
 Name of this hierarchy folder.
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSHierarchyEntity thing;

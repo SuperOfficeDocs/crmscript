@@ -11,7 +11,7 @@ so.topic: reference
 The unique key on the field
 
 **Parameter:** 
- - **key** String
+* **key** String
 
 ```crmscript
 NSFieldValueInfo thing;

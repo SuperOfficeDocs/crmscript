@@ -9,7 +9,7 @@ so.topic: reference
 # SetFreetextEnabeled(Bool freetextEnabeled)
 
 **Parameter:** 
- - **freetextEnabeled** Bool
+* **freetextEnabeled** Bool
 
 ```crmscript
 NSArea thing;

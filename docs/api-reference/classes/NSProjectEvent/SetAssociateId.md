@@ -11,7 +11,7 @@ so.topic: reference
 Id of the person that ows the event (i.e. project)
 
 **Parameter:** 
- - **associateId** Integer
+* **associateId** Integer
 
 ```crmscript
 NSProjectEvent thing;

@@ -11,7 +11,7 @@ so.topic: reference
 The provider these tokens belong to
 
 **Parameter:** 
- - **provider** String
+* **provider** String
 
 ```crmscript
 NSTokenManagementInfo thing;

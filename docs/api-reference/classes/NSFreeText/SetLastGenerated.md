@@ -11,7 +11,7 @@ so.topic: reference
 Last time search has been generated
 
 **Parameter:** 
- - **lastGenerated** DateTime
+* **lastGenerated** DateTime
 
 ```crmscript
 NSFreeText thing;

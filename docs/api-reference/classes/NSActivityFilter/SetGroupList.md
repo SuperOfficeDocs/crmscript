@@ -11,7 +11,7 @@ so.topic: reference
 The list of groups to filter on
 
 **Parameter:** 
- - **groupList** NSSelectableMDOListItem[]
+* **groupList** NSSelectableMDOListItem[]
 
 ```crmscript
 NSActivityFilter thing;

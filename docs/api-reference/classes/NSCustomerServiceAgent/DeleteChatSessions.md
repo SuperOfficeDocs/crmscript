@@ -10,8 +10,9 @@ so.topic: reference
 
 Deletes the specified chat sessions.
 
-**Parameters:**
- - **ids** The ids of the chat sessions to delete
+## Parameters
+
+* **ids** The ids of the chat sessions to delete
 
 ```crmscript
 NSCustomerServiceAgent agent;

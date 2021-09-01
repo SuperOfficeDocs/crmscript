@@ -11,7 +11,7 @@ so.topic: reference
 Kana last name, used in Japanese versions only
 
 **Parameter:** 
- - **kanalname** String
+* **kanalname** String
 
 ```crmscript
 NSPersonEntity thing;

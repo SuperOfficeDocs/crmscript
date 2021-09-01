@@ -10,10 +10,11 @@ so.topic: reference
 
 Update a NSPreferenceDescription based on the section and key
 
-**Parameters:**
- - **section** The NSPreferenceDescription-section
- - **key** The NSPreferenceDescription-key
- - **preferenceDescription** The NSPreferenceDescription to save.
+## Parameters
+
+* **section** The NSPreferenceDescription-section
+* **key** The NSPreferenceDescription-key
+* **preferenceDescription** The NSPreferenceDescription to save.
 
 **Returns:** NSPreferenceDescription
 

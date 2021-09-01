@@ -11,7 +11,7 @@ so.topic: reference
 Number of all open within the period 
 
 **Parameter:** 
- - **open** Integer
+* **open** Integer
 
 ```crmscript
 NSSaleSummary thing;

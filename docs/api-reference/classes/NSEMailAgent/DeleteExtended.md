@@ -8,6 +8,7 @@ so.topic: reference
 
 # Void DeleteExtended(EMailConnectionInfoExtended connectionInfoExtended, String[] messageIds)
 
-**Parameters:**
- - **connectionInfoExtended** 
- - **messageIds** 
+## Parameters
+
+* **connectionInfoExtended** 
+* **messageIds** 

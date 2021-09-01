@@ -11,7 +11,7 @@ so.topic: reference
 Updates the existing NSListEntity or creates a new NSListEntity if the id parameter is 0
 
 **Parameters**:
- - **listEntity** The NSListEntity to save.
+* **listEntity** The NSListEntity to save.
 
 **Returns:** NSListEntity
 

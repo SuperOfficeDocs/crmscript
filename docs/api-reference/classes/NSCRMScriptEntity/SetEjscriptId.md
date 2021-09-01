@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **ejscriptId** Integer
+* **ejscriptId** Integer
 
 ```crmscript
 NSCRMScriptEntity thing;

@@ -10,9 +10,10 @@ so.topic: reference
 
 List of list items that is selected if under this heading
 
-**Parameters:**
- - **udListDefinitionId** The id of the list. Negative numbers indicate TableNumber value instead of UDListDefId. e.g. -64 = category.
- - **headingId** The id of the heading
+## Parameters
+
+* **udListDefinitionId** The id of the list. Negative numbers indicate TableNumber value instead of UDListDefId. e.g. -64 = category.
+* **headingId** The id of the heading
 
 **Returns:** NSSelectableMDOListItem[]
 

@@ -10,8 +10,9 @@ so.topic: reference
 
 Deletes the NSDocumentEntity
   
-**Parameters:**
- - **documentEntityId** The identity of the NSDocumentEntity to delete.
+## Parameters
+
+* **documentEntityId** The identity of the NSDocumentEntity to delete.
 
 ```crmscript
 NSDocumentAgent agent;

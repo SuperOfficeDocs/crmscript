@@ -8,7 +8,7 @@ so.topic: reference
 
 # Integer GetProjectMemberTypeId()
 
-NSProjectMember Type Id - from the ProjectMemberType list.
+NSProjectMember Type Id* from the ProjectMemberType list.
 
 **Returns:** Integer
 

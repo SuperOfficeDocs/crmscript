@@ -13,7 +13,7 @@ Load an entry from the address book with the specified id. Returns true if load 
 
 ## Parameters
 
- - p0: id of the entry to load.
+* p0: id of the entry to load.
 
 ## Example
 

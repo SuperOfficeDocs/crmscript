@@ -11,7 +11,7 @@ so.topic: reference
 Maps to the startcount field in the batchtask table.
 
 **Parameter:** 
- - **startCount** Integer
+* **startCount** Integer
 
 ```crmscript
 NSBatchTaskInfo thing;

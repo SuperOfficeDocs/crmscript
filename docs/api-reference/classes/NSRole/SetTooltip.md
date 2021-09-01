@@ -11,7 +11,7 @@ so.topic: reference
 Set the tooltip description for the Role list item.
 
 **Parameter:** 
- - **tooltip** String Role tooltip description.
+* **tooltip** String Role tooltip description.
 
 ```crmscript
 NSRole thing;

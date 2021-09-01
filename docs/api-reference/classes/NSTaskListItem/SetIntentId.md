@@ -11,7 +11,7 @@ so.topic: reference
 Link to the intention of this kind of task (used by SAINT)
 
 **Parameter:** 
- - **intentId** Integer
+* **intentId** Integer
 
 ```crmscript
 NSTaskListItem thing;

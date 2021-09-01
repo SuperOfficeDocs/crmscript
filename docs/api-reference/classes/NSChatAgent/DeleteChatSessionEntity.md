@@ -10,8 +10,9 @@ so.topic: reference
 
 Deletes the NSChatSessionEntity
   
-**Parameters:**
- - **chatSessionEntityId** The identity of the NSChatSessionEntity to delete.
+## Parameters
+
+* **chatSessionEntityId** The identity of the NSChatSessionEntity to delete.
 
 ```crmscript
 NSChatAgent agent;

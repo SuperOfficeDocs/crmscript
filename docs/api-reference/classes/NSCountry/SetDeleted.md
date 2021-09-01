@@ -11,7 +11,7 @@ so.topic: reference
 true if the country is deleted
 
 **Parameter:** 
- - **deleted** Bool
+* **deleted** Bool
 
 ```crmscript
 NSCountry thing;

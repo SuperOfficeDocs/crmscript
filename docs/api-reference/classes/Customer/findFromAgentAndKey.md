@@ -15,8 +15,8 @@ This function will find a customer entry in the database based on an agent id an
 
 ## Parameters
 
- - agent: The agent id for the external entry. Implicitly defines the external datasource.
- - key: The primary key of the external entry.
+* agent: The agent id for the external entry. Implicitly defines the external datasource.
+* key: The primary key of the external entry.
 
 Returns the id for the customer entry in the database, or -1 if not found.
 

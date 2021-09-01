@@ -11,7 +11,7 @@ so.topic: reference
 Optional tooltip text for this field
 
 **Parameter:** 
- - **tooltip** String
+* **tooltip** String
 
 ```crmscript
 NSUserDefinedFieldInfo thing;

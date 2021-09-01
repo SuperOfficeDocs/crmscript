@@ -11,7 +11,7 @@ so.topic: reference
 Support priority ID
 
 **Parameter:** 
- - **supportLanguageId** Integer
+* **supportLanguageId** Integer
 
 ```crmscript
 NSPerson thing;

@@ -10,8 +10,9 @@ so.topic: reference
 
 Get a user, with lookup based on user name.
 
-**Parameters:**
- - **userName** User name of the user to get.
+## Parameters
+
+* **userName** User name of the user to get.
 
 **Returns:** NSUser
 

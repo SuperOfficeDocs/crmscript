@@ -9,7 +9,7 @@ so.topic: reference
 # SetTabOrder(NSTabOrder tabOrder)
 
 **Parameter:** 
- - **tabOrder** NSTabOrder
+* **tabOrder** NSTabOrder
 
 ```crmscript
 NSPreference thing;

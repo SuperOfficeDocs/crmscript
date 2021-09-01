@@ -11,7 +11,7 @@ so.topic: reference
 Set the extra field values on NSContactEntity with a map.
 
 **Parameter:** 
- - **extras** Map containing extra field values encoded as strings.
+* **extras** Map containing extra field values encoded as strings.
 
 ```crmscript
 NSContactEntity thing;

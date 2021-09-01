@@ -10,6 +10,7 @@ so.topic: reference
 
 Send a push notification to one or more associates
 
-**Parameters:**
- - **associateIds** The associates to send the push notification message to
- - **message** The message to send
+## Parameters
+
+* **associateIds** The associates to send the push notification message to
+* **message** The message to send

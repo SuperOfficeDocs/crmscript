@@ -11,7 +11,7 @@ so.topic: reference
 Subject to use if document template is an email.
 
 **Parameter:** 
- - **emailSubject** String
+* **emailSubject** String
 
 ```crmscript
 NSDocumentTemplateEntity thing;

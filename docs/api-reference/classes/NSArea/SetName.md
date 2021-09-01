@@ -11,7 +11,7 @@ so.topic: reference
 Area name
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSArea thing;

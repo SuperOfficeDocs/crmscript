@@ -11,7 +11,7 @@ so.topic: reference
 The author of the message.
 
 **Parameter:** 
- - **author** String
+* **author** String
 
 ```crmscript
 NSChatMessage thing;

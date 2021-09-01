@@ -11,7 +11,7 @@ so.topic: reference
 Set the primary key (id) for the NSPosition
 
 **Parameter:** 
- - **id** Integer NSPosition id.
+* **id** Integer NSPosition id.
 
 ```crmscript
 NSPosition thing;

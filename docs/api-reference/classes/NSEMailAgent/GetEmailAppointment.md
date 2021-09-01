@@ -10,8 +10,9 @@ so.topic: reference
 
 Get appointment data contained in the emails iCal attachment
 
-**Parameters:**
- - **mailItemId** Id identifying the email
+## Parameters
+
+* **mailItemId** Id identifying the email
 
 **Returns:** NSEMailAppointment
 

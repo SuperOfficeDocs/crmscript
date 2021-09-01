@@ -11,7 +11,7 @@ so.topic: reference
 Current status message from the engine
 
 **Parameter:** 
- - **statusMessage** String
+* **statusMessage** String
 
 ```crmscript
 NSErpSyncEngineStatus thing;

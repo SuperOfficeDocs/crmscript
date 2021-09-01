@@ -11,7 +11,7 @@ so.topic: reference
 Last updated
 
 **Parameter:** 
- - **updatedDate** DateTime
+* **updatedDate** DateTime
 
 ```crmscript
 NSSaleEntity thing;

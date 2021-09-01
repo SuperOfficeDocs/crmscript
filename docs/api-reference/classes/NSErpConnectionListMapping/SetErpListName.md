@@ -11,7 +11,7 @@ so.topic: reference
 The ERP list name, if the field has a list of values supplied by the ERP Connector
 
 **Parameter:** 
- - **erpListName** String
+* **erpListName** String
 
 ```crmscript
 NSErpConnectionListMapping thing;

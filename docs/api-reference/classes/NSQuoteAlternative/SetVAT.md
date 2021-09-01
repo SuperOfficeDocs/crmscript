@@ -8,10 +8,10 @@ so.topic: reference
 
 # SetVAT(Float vAT)
 
-Tax/VAT - THIS IS AN AMOUNT, available as a merge field in the quote document. The SuperOffice quote connector will calculate this field based on the vat PERCENTAGES on the individual lines; other connectors may implement other algorithms at will.
+Tax/VAT* THIS IS AN AMOUNT, available as a merge field in the quote document. The SuperOffice quote connector will calculate this field based on the vat PERCENTAGES on the individual lines; other connectors may implement other algorithms at will.
 
 **Parameter:** 
- - **vAT** Float
+* **vAT** Float
 
 ```crmscript
 NSQuoteAlternative thing;

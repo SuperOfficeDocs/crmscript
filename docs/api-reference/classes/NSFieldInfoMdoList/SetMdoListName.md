@@ -11,7 +11,7 @@ so.topic: reference
 MDO list name used to populate this list. (Read-only)
 
 **Parameter:** 
- - **mdoListName** String
+* **mdoListName** String
 
 ```crmscript
 NSFieldInfoMdoList thing;

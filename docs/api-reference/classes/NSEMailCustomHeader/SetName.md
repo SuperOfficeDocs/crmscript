@@ -11,7 +11,7 @@ so.topic: reference
 Name of header
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSEMailCustomHeader thing;

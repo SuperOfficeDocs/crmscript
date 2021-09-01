@@ -9,7 +9,7 @@ so.topic: reference
 # SetRestrictedModuleLicenses(NSModuleLicenseLink[] restrictedModuleLicenses)
 
 **Parameter:** 
- - **restrictedModuleLicenses** NSModuleLicenseLink[]
+* **restrictedModuleLicenses** NSModuleLicenseLink[]
 
 ```crmscript
 NSLicenseOwner thing;

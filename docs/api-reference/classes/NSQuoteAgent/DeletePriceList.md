@@ -10,8 +10,9 @@ so.topic: reference
 
 Deletes the NSPriceList
   
-**Parameters:**
- - **priceListId** The identity of the PriceList to delete.
+## Parameters
+
+* **priceListId** The identity of the PriceList to delete.
 
 ```crmscript
 NSQuoteAgent agent;

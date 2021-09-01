@@ -9,7 +9,7 @@ so.topic: reference
 # SetUserGroupName(String userGroupName)
 
 **Parameter:** 
- - **userGroupName** String
+* **userGroupName** String
 
 ```crmscript
 NSUserInfo thing;

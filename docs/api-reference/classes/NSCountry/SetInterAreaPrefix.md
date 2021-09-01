@@ -11,7 +11,7 @@ so.topic: reference
 International prefix
 
 **Parameter:** 
- - **interAreaPrefix** String
+* **interAreaPrefix** String
 
 ```crmscript
 NSCountry thing;

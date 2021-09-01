@@ -11,7 +11,7 @@ so.topic: reference
 The name of the priority that the mailbox is connected to
 
 **Parameter:** 
- - **priorityName** String
+* **priorityName** String
 
 ```crmscript
 NSMailbox thing;

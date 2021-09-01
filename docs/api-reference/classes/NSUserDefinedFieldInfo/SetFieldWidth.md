@@ -11,7 +11,7 @@ so.topic: reference
 field width in pixels, 0 = 'enough' (from font)
 
 **Parameter:** 
- - **fieldWidth** Integer
+* **fieldWidth** Integer
 
 ```crmscript
 NSUserDefinedFieldInfo thing;

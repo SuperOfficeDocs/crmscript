@@ -11,7 +11,7 @@ so.topic: reference
 Default task text for this status
 
 **Parameter:** 
- - **defaultTaskText** String
+* **defaultTaskText** String
 
 ```crmscript
 NSStatusMonitor thing;

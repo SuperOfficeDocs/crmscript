@@ -11,7 +11,7 @@ so.topic: reference
 Identifier for a contact
 
 **Parameter:** 
- - **contactId** Integer
+* **contactId** Integer
 
 ```crmscript
 NSTemplateVariablesParameters thing;

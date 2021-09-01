@@ -11,7 +11,7 @@ so.topic: reference
 Which day the usage was logged
 
 **Parameter:** 
- - **timestamp** DateTime
+* **timestamp** DateTime
 
 ```crmscript
 NSWebAppUsage thing;

@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSArea object.
 
-**Parameters:**
- - **areaId** The identifier of the NSArea object
+## Parameters
+
+* **areaId** The identifier of the NSArea object
 
 **Returns:** NSArea
 

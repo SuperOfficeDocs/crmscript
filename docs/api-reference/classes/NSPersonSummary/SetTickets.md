@@ -11,7 +11,7 @@ so.topic: reference
 Recent tickets on person
 
 **Parameter:** 
- - **tickets** NSTicketSummaryItem[]
+* **tickets** NSTicketSummaryItem[]
 
 ```crmscript
 NSPersonSummary thing;

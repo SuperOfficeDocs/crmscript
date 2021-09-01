@@ -11,7 +11,7 @@ so.topic: reference
 The mimetype of the stream
 
 **Parameter:** 
- - **type** String
+* **type** String
 
 ```crmscript
 NSDocumentPreview thing;

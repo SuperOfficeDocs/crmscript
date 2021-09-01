@@ -11,7 +11,7 @@ so.topic: reference
 The description of this category.
 
 **Parameter:** 
- - **description** String
+* **description** String
 
 ```crmscript
 NSKbCategory thing;

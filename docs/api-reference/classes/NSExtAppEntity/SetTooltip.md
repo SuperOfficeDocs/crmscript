@@ -11,7 +11,7 @@ so.topic: reference
 The tooltip of the web panel
 
 **Parameter:** 
- - **tooltip** String
+* **tooltip** String
 
 ```crmscript
 NSExtAppEntity thing;

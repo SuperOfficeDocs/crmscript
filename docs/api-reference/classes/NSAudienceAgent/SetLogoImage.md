@@ -8,6 +8,7 @@ so.topic: reference
 
 # Void SetLogoImage(String layoutName, NSImage image)
 
-**Parameters:**
- - **layoutName** 
- - **image** 
+## Parameters
+
+* **layoutName** 
+* **image** 

@@ -10,8 +10,9 @@ so.topic: reference
 
 Deletes a connection from the database.
 
-**Parameters:**
- - **erpConnectionId** Primary key of the connection
+## Parameters
+
+* **erpConnectionId** Primary key of the connection
 
 ```crmscript
 NSErpSyncAgent agent;

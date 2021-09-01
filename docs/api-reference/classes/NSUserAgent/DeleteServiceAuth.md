@@ -10,8 +10,9 @@ so.topic: reference
 
 Deletes the NSServiceAuth
   
-**Parameters:**
- - **serviceAuthId** The identity of the ServiceAuth to delete.
+## Parameters
+
+* **serviceAuthId** The identity of the ServiceAuth to delete.
 
 ```crmscript
 NSUserAgent agent;

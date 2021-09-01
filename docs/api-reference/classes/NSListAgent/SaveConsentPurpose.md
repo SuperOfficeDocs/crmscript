@@ -10,8 +10,9 @@ so.topic: reference
 
 Save a NSConsentPurpose object
 
-**Parameters:**
- - **consentPurpose** The NSConsentPurpose object to save
+## Parameters
+
+* **consentPurpose** The NSConsentPurpose object to save
 
 **Returns:** NSConsentPurpose
 

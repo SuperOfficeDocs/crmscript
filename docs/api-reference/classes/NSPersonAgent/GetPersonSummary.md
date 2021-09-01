@@ -10,9 +10,10 @@ so.topic: reference
 
 Get summary of person and recent activity.
 
-**Parameters:**
- - **personId** The person id to summarize.
- - **limit** Max number of items to include in summary lists.
+## Parameters
+
+* **personId** The person id to summarize.
+* **limit** Max number of items to include in summary lists.
 
 **Returns:** NSPersonSummary
 

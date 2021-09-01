@@ -11,7 +11,7 @@ so.topic: reference
 The persons company name
 
 **Parameter:** 
- - **contactName** String
+* **contactName** String
 
 ```crmscript
 NSPerson thing;

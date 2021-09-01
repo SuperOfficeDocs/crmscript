@@ -11,7 +11,7 @@ so.topic: reference
 The number of links clicked in the mailing.
 
 **Parameter:** 
- - **linkClicks** Integer
+* **linkClicks** Integer
 
 ```crmscript
 NSPreviewMailing thing;

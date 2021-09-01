@@ -11,11 +11,11 @@ so.topic: reference
 The source of the relation
 
 **Parameter:** 
- - **source** Integer
-     - Enum: 0 = None 
-     - Enum: 1 = Contact 
-     - Enum: 2 = Person 
-     - Enum: 3 = Both 
+* **source** Integer
+* Enum: 0 = None 
+* Enum: 1 = Contact 
+* Enum: 2 = Person 
+* Enum: 3 = Both 
 
 ```crmscript
 NSRelationDefinitionEntity thing;

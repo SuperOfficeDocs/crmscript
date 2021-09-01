@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets an Audience layout by it's instance name
 
-**Parameters:**
- - **layoutName** Name of the Audience layout instance
+## Parameters
+
+* **layoutName** Name of the Audience layout instance
 
 **Returns:** Audience layout entity
 

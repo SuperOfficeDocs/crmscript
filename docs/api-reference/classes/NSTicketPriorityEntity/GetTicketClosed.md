@@ -12,10 +12,10 @@ This field indicates what to do with the escalation chain when the request is cl
 
 **Returns:** Integer
 
-     - Enum: -1 = None 
-     - Enum: 0 = Stop 
-     - Enum: 1 = Continue 
-     - Enum: 2 = Restart 
+* Enum: -1 = None 
+* Enum: 0 = Stop 
+* Enum: 1 = Continue 
+* Enum: 2 = Restart 
 
 ```crmscript
 NSTicketPriorityEntity thing;

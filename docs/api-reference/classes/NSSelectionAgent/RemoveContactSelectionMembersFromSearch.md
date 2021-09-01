@@ -10,9 +10,10 @@ so.topic: reference
 
 Removes members from the selection using the search result.
 
-**Parameters:**
- - **selectionId** The id of the selection to remove members.
- - **storageKey** Storage key to be interpreted by the restriction storage provider, when it fetches criteria for the search.
+## Parameters
+
+* **selectionId** The id of the selection to remove members.
+* **storageKey** Storage key to be interpreted by the restriction storage provider, when it fetches criteria for the search.
 
 **Returns:** Integer
 

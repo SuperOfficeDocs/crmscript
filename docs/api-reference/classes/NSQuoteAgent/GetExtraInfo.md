@@ -10,8 +10,9 @@ so.topic: reference
 
 Converts an xml string into an object representation.
 
-**Parameters:**
- - **quoteLineExtraData** The extra data as xml.
+## Parameters
+
+* **quoteLineExtraData** The extra data as xml.
 
 **Returns:** NSProductExtraDataField[]
 

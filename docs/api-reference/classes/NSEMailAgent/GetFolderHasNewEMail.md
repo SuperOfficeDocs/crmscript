@@ -10,8 +10,9 @@ so.topic: reference
 
 Check if folder has received new items since previous access.
 
-**Parameters:**
- - **connectionInfo** All information needed to connect to the mailserver
+## Parameters
+
+* **connectionInfo** All information needed to connect to the mailserver
 
 **Returns:** Bool
 

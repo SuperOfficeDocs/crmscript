@@ -11,7 +11,7 @@ so.topic: reference
 Set the tooltip description for the Priority list item.
 
 **Parameter:** 
- - **tooltip** String Priority tooltip description.
+* **tooltip** String Priority tooltip description.
 
 ```crmscript
 NSPriority thing;

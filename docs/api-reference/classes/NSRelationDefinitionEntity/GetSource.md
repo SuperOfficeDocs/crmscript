@@ -12,10 +12,10 @@ The source of the relation
 
 **Returns:** Integer
 
-     - Enum: 0 = None 
-     - Enum: 1 = Contact 
-     - Enum: 2 = Person 
-     - Enum: 3 = Both 
+* Enum: 0 = None 
+* Enum: 1 = Contact 
+* Enum: 2 = Person 
+* Enum: 3 = Both 
 
 ```crmscript
 NSRelationDefinitionEntity thing;

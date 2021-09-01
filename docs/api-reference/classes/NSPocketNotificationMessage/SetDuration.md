@@ -11,7 +11,7 @@ so.topic: reference
 Specify duration of the event
 
 **Parameter:** 
- - **duration** TimeSpan
+* **duration** TimeSpan
 
 ```crmscript
 NSPocketNotificationMessage thing;

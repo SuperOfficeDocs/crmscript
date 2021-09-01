@@ -11,7 +11,7 @@ so.topic: reference
 The phone number of the customer, if provided
 
 **Parameter:** 
- - **customerPhone** String
+* **customerPhone** String
 
 ```crmscript
 NSChatSessionEntity thing;

@@ -10,8 +10,9 @@ so.topic: reference
 
 Validate a CRMScript. This will check that the syntax is correct
 
-**Parameters:**
- - **cRMScriptUniqueId** The unique id of the CRMScript to validate
+## Parameters
+
+* **cRMScriptUniqueId** The unique id of the CRMScript to validate
 
 **Returns:** True of the syntax is correct
 

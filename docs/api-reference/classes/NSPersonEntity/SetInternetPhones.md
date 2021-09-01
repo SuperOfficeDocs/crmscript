@@ -9,7 +9,7 @@ so.topic: reference
 # SetInternetPhones(NSEntityElement[] internetPhones)
 
 **Parameter:** 
- - **internetPhones** NSEntityElement[]
+* **internetPhones** NSEntityElement[]
 
 ```crmscript
 NSPersonEntity thing;

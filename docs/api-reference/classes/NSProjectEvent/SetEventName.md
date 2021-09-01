@@ -11,7 +11,7 @@ so.topic: reference
 The name of the event (i.e. the project name)
 
 **Parameter:** 
- - **eventName** String
+* **eventName** String
 
 ```crmscript
 NSProjectEvent thing;

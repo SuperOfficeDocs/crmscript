@@ -11,7 +11,7 @@ so.topic: reference
 Suggested 'header'
 
 **Parameter:** 
- - **header** String
+* **header** String
 
 ```crmscript
 NSSuggestedDocumentEntity thing;

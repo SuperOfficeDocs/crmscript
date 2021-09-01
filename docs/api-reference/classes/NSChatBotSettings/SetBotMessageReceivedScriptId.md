@@ -11,7 +11,7 @@ so.topic: reference
 Script id to run when new messages received from customer.
 
 **Parameter:** 
- - **botMessageReceivedScriptId** Integer
+* **botMessageReceivedScriptId** Integer
 
 ```crmscript
 NSChatBotSettings thing;

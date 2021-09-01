@@ -10,8 +10,9 @@ so.topic: reference
 
 Saves true or false if Automatically create new counters for new document templates
 
-**Parameters:**
- - **setValue** true or false if Automatically create new counters for new document templates
+## Parameters
+
+* **setValue** true or false if Automatically create new counters for new document templates
 
 ```crmscript
 NSNumberAllocationAgent agent;

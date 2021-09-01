@@ -11,7 +11,7 @@ so.topic: reference
 Information about the action for the update prices button.
 
 **Parameter:** 
- - **updatePricesButton** QuoteVersionButtonState
+* **updatePricesButton** QuoteVersionButtonState
 
 ```crmscript
 NSQuoteVersionWorkflowState thing;

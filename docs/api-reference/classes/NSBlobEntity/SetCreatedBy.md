@@ -11,7 +11,7 @@ so.topic: reference
 The person that first created the document. The property is read-only.
 
 **Parameter:** 
- - **createdBy** NSAssociate
+* **createdBy** NSAssociate
 
 ```crmscript
 NSBlobEntity thing;

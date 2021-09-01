@@ -8,7 +8,7 @@ so.topic: reference
 
 # Float GetTotalPrice()
 
-TotalPrice  = SubTotal - DiscountAmount or TotalPrice = (UnitCost * Quantity) + EarningAmount, according to what the user changed last.
+TotalPrice  = SubTotal* DiscountAmount or TotalPrice = (UnitCost * Quantity) + EarningAmount, according to what the user changed last.
 
 **Returns:** Float
 

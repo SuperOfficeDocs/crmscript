@@ -11,7 +11,7 @@ so.topic: reference
 The QuoteAlternatives for the NSQuoteVersion
 
 **Parameter:** 
- - **quoteAlternatives** NSQuoteAlternative[]
+* **quoteAlternatives** NSQuoteAlternative[]
 
 ```crmscript
 NSQuoteVersion thing;

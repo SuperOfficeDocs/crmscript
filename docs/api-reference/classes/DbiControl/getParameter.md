@@ -13,5 +13,5 @@ This function returns the value of the given parameter.
 
 ## Parameters
 
- - name: Name of the parameter you want the value of
+* name: Name of the parameter you want the value of
 

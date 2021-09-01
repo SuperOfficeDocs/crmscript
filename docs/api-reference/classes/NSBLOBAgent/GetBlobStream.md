@@ -10,8 +10,9 @@ so.topic: reference
 
 Get the binary object as a stream
 
-**Parameters:**
- - **blobEntityId** The ID of the BLOB entity object that refers to the binary data
+## Parameters
+
+* **blobEntityId** The ID of the BLOB entity object that refers to the binary data
 
 **Returns:** NSStream
 

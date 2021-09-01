@@ -11,7 +11,7 @@ so.topic: reference
 The username
 
 **Parameter:** 
- - **username** String
+* **username** String
 
 ```crmscript
 NSServiceAuth thing;

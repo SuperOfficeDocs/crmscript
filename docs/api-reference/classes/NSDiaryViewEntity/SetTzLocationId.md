@@ -11,7 +11,7 @@ so.topic: reference
 Default timezone location for this view
 
 **Parameter:** 
- - **tzLocationId** Integer
+* **tzLocationId** Integer
 
 ```crmscript
 NSDiaryViewEntity thing;

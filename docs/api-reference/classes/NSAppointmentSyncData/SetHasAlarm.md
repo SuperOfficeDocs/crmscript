@@ -11,7 +11,7 @@ so.topic: reference
 Does this appointment have an alarm
 
 **Parameter:** 
- - **hasAlarm** Bool
+* **hasAlarm** Bool
 
 ```crmscript
 NSAppointmentSyncData thing;

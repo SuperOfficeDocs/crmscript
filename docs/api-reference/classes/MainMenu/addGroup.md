@@ -38,11 +38,7 @@ In addition, you can specify on-click JavaScript code. Use this to create clicka
 ```crmscript
 MainMenu menu = getMainMenu();
 menu.addGroup("My label", "http://..../graphics/picture.png");
-```
-
-```crmscript
-MainMenu menu = getMainMenu();
-menu.addGroup("My label", "http://..../graphics/picture.png, 3");
+menu.addGroup("My label2", "http://..../graphics/picture.png, 3");
 ```
 
 Add the following javascript code: `"window.location='http://www.superoffice.com'"`

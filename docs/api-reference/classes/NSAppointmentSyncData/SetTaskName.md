@@ -9,7 +9,7 @@ so.topic: reference
 # SetTaskName(String taskName)
 
 **Parameter:** 
- - **taskName** String
+* **taskName** String
 
 ```crmscript
 NSAppointmentSyncData thing;

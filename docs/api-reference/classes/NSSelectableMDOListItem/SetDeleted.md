@@ -11,7 +11,7 @@ so.topic: reference
 The deleted status of the ListItem
 
 **Parameter:** 
- - **deleted** Bool
+* **deleted** Bool
 
 ```crmscript
 NSSelectableMDOListItem thing;

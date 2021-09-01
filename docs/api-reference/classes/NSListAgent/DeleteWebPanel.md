@@ -10,8 +10,9 @@ so.topic: reference
 
 Hard-delete (real, permanent DELETE in the database) the given web panel. Use with care!
 
-**Parameters:**
- - **id** Database id of web panel to delete
+## Parameters
+
+* **id** Database id of web panel to delete
 
 ```crmscript
 NSListAgent agent;

@@ -11,7 +11,7 @@ so.topic: reference
 Sale identity to set on task
 
 **Parameter:** 
- - **saleId** Integer
+* **saleId** Integer
 
 ```crmscript
 NSMailMergeTask thing;

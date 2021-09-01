@@ -11,7 +11,7 @@ so.topic: reference
 The person id this key is related to. May be null.
 
 **Parameter:** 
- - **personId** Integer
+* **personId** Integer
 
 ```crmscript
 NSTemporaryKeyInfo thing;

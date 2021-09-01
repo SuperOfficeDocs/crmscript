@@ -11,7 +11,7 @@ so.topic: reference
 Spam filter. Indicates if this person should retrieve advertising.
 
 **Parameter:** 
- - **noMailing** Bool
+* **noMailing** Bool
 
 ```crmscript
 NSPersonEntity thing;

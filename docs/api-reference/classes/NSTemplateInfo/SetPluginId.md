@@ -11,7 +11,7 @@ so.topic: reference
 ID of plugin that stores this template, so it can be retrieved
 
 **Parameter:** 
- - **pluginId** Integer
+* **pluginId** Integer
 
 ```crmscript
 NSTemplateInfo thing;

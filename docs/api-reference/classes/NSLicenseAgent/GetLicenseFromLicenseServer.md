@@ -8,7 +8,8 @@ so.topic: reference
 
 # NSExtendedLicenseInfo GetLicenseFromLicenseServer(String ownerName)
 
-**Parameters:**
- - **ownerName** 
+## Parameters
+
+* **ownerName** 
 
 **Returns:** NSExtendedLicenseInfo

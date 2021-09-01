@@ -11,7 +11,7 @@ so.topic: reference
 Indicates if this is a custom list or a standard list
 
 **Parameter:** 
- - **isCustomList** Bool
+* **isCustomList** Bool
 
 ```crmscript
 NSListEntity thing;

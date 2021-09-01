@@ -11,7 +11,7 @@ so.topic: reference
 Custom values to inject into JSON body of webhook call.
 
 **Parameter:** 
- - **properties** StringObjectDictionary
+* **properties** StringObjectDictionary
 
 ```crmscript
 NSWebhook thing;

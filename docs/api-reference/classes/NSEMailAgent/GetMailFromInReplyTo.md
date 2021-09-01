@@ -10,8 +10,9 @@ so.topic: reference
 
 Get email from db based on In-Reply-To Message Id
 
-**Parameters:**
- - **messageId** The message id
+## Parameters
+
+* **messageId** The message id
 
 **Returns:** NSEMailEntity
 

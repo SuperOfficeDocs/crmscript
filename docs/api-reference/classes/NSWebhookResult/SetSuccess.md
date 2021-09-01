@@ -11,7 +11,7 @@ so.topic: reference
 Was call to webhook successful? (200 OK)
 
 **Parameter:** 
- - **success** Bool
+* **success** Bool
 
 ```crmscript
 NSWebhookResult thing;

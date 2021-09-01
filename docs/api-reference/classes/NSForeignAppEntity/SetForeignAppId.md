@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **foreignAppId** Integer
+* **foreignAppId** Integer
 
 ```crmscript
 NSForeignAppEntity thing;

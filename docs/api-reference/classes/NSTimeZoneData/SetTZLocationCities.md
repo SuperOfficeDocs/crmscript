@@ -11,7 +11,7 @@ so.topic: reference
 Cities associated with location
 
 **Parameter:** 
- - **tZLocationCities** String
+* **tZLocationCities** String
 
 ```crmscript
 NSTimeZoneData thing;

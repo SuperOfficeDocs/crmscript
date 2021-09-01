@@ -8,7 +8,8 @@ so.topic: reference
 
 # Bool Authenticate(EMailConnectionInfoExtended connectionInfoExtended)
 
-**Parameters:**
- - **connectionInfoExtended** 
+## Parameters
+
+* **connectionInfoExtended** 
 
 **Returns:** Bool

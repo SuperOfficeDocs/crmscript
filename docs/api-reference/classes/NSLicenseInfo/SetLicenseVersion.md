@@ -11,7 +11,7 @@ so.topic: reference
 The url that will provide keycodes for all modules owned by this owner
 
 **Parameter:** 
- - **licenseVersion** String
+* **licenseVersion** String
 
 ```crmscript
 NSLicenseInfo thing;

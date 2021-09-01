@@ -8,7 +8,7 @@ so.topic: reference
 
 # Integer GetProjectId()
 
-Parent project - the project this project member belongs to.
+Parent project* the project this project member belongs to.
 
 **Returns:** Integer
 

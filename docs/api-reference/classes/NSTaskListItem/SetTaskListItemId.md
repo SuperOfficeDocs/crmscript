@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **taskListItemId** Integer
+* **taskListItemId** Integer
 
 ```crmscript
 NSTaskListItem thing;

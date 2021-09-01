@@ -11,7 +11,7 @@ so.topic: reference
 The sale reason
 
 **Parameter:** 
- - **reason** NSReason
+* **reason** NSReason
 
 ```crmscript
 NSSaleEntity thing;

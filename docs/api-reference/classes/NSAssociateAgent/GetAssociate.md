@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSAssociate object.
 
-**Parameters:**
- - **associateId** The identifier of the NSAssociate object
+## Parameters
+
+* **associateId** The identifier of the NSAssociate object
 
 **Returns:** NSAssociate
 

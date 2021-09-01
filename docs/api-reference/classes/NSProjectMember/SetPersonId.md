@@ -8,10 +8,10 @@ so.topic: reference
 
 # SetPersonId(Integer personId)
 
-The person's id - primary key
+The person's id* primary key
 
 **Parameter:** 
- - **personId** Integer
+* **personId** Integer
 
 ```crmscript
 NSProjectMember thing;

@@ -11,7 +11,7 @@ so.topic: reference
 A small image of the product, typically used to show in a list. Base64 encoded png.
 
 **Parameter:** 
- - **thumbnail** String
+* **thumbnail** String
 
 ```crmscript
 NSQuoteLine thing;

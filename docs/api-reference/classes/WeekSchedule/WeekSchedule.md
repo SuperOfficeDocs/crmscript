@@ -7,4 +7,4 @@ so.topic: reference
 
 # WeekSchedule
 
-This class is used to represent a week schedule - what hours a day are "active" for each day, etc.
+This class is used to represent a week schedule* what hours a day are "active" for each day, etc.

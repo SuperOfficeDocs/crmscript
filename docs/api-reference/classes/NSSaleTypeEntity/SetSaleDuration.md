@@ -11,7 +11,7 @@ so.topic: reference
 Expected number of dales from initiation to close of sale
 
 **Parameter:** 
- - **saleDuration** Integer
+* **saleDuration** Integer
 
 ```crmscript
 NSSaleTypeEntity thing;

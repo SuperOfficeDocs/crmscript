@@ -11,7 +11,7 @@ so.topic: reference
 The name of the web panel
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSWebPanelEntity thing;

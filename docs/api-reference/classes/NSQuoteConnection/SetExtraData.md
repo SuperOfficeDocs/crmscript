@@ -11,7 +11,7 @@ so.topic: reference
 Optional extra data, in XML format, for configuring the connector. Connector-specific!
 
 **Parameter:** 
- - **extraData** String
+* **extraData** String
 
 ```crmscript
 NSQuoteConnection thing;

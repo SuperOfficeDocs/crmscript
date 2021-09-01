@@ -10,9 +10,10 @@ so.topic: reference
 
 Return the NSTableRight from the relationship between the current user and the given user and group.
 
-**Parameters:**
- - **tableName** Name of the table to get the TableRights from.
- - **contactId** The owner contact.
+## Parameters
+
+* **tableName** Name of the table to get the TableRights from.
+* **contactId** The owner contact.
 
 **Returns:** NSTableRight
 

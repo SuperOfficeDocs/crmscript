@@ -11,7 +11,7 @@ so.topic: reference
 Associate id of the user who performed the checkin
 
 **Parameter:** 
- - **checkedInByAssociateId** Integer
+* **checkedInByAssociateId** Integer
 
 ```crmscript
 NSVersionInfo thing;

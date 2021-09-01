@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSSelectionEntity object.
 
-**Parameters:**
- - **selectionEntityId** The identifier of the NSSelectionEntity object
+## Parameters
+
+* **selectionEntityId** The identifier of the NSSelectionEntity object
 
 **Returns:** NSSelectionEntity
 

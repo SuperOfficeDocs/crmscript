@@ -10,8 +10,9 @@ so.topic: reference
 
 Returns the specified connection.
 
-**Parameters:**
- - **quoteConnectionId** Primary key of the connection
+## Parameters
+
+* **quoteConnectionId** Primary key of the connection
 
 **Returns:** NSQuoteConnection
 

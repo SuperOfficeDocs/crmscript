@@ -11,7 +11,7 @@ so.topic: reference
 Project name
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSProjectEntity thing;

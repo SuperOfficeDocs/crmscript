@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSLanguageInfo object.
 
-**Parameters:**
- - **languageInfoId** The identifier of the NSLanguageInfo object
+## Parameters
+
+* **languageInfoId** The identifier of the NSLanguageInfo object
 
 **Returns:** NSLanguageInfo
 

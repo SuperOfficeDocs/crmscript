@@ -11,7 +11,7 @@ so.topic: reference
 Identifier for a selection
 
 **Parameter:** 
- - **selectionId** Integer
+* **selectionId** Integer
 
 ```crmscript
 NSTemplateVariablesParameters thing;

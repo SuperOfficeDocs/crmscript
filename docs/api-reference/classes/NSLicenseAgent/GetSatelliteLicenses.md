@@ -10,8 +10,9 @@ so.topic: reference
 
 Obtain information about satellite module licenses
 
-**Parameters:**
- - **satelliteId** Satellite id to check for satellite module licenses
+## Parameters
+
+* **satelliteId** Satellite id to check for satellite module licenses
 
 **Returns:** NSLicenseOwner
 

@@ -11,7 +11,7 @@ so.topic: reference
 The original chart name
 
 **Parameter:** 
- - **chartName** String
+* **chartName** String
 
 ```crmscript
 NSDashboardTile thing;

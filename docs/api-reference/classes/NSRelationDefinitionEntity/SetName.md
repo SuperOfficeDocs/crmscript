@@ -11,7 +11,7 @@ so.topic: reference
 Active text
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSRelationDefinitionEntity thing;

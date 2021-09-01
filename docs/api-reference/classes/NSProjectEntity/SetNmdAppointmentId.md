@@ -11,7 +11,7 @@ so.topic: reference
 ID of appointment that "caused" the nextMilestoneDate, can be 0
 
 **Parameter:** 
- - **nmdAppointmentId** Integer
+* **nmdAppointmentId** Integer
 
 ```crmscript
 NSProjectEntity thing;

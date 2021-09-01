@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSSuggestedAppointmentEntity object.
 
-**Parameters:**
- - **suggestedAppointmentEntityId** The identifier of the NSSuggestedAppointmentEntity object
+## Parameters
+
+* **suggestedAppointmentEntityId** The identifier of the NSSuggestedAppointmentEntity object
 
 **Returns:** NSSuggestedAppointmentEntity
 

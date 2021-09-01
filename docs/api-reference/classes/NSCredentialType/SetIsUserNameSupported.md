@@ -9,7 +9,7 @@ so.topic: reference
 # SetIsUserNameSupported(Bool isUserNameSupported)
 
 **Parameter:** 
- - **isUserNameSupported** Bool
+* **isUserNameSupported** Bool
 
 ```crmscript
 NSCredentialType thing;

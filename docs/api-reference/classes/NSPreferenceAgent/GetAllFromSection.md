@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets all NSPreferenceDescription-items in the specified section
 
-**Parameters:**
- - **section** The PreferenceDescription-section
+## Parameters
+
+* **section** The PreferenceDescription-section
 
 **Returns:** NSPreferenceDescription[]
 

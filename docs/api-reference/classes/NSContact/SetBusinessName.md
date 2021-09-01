@@ -11,7 +11,7 @@ so.topic: reference
 The business list item name
 
 **Parameter:** 
- - **businessName** String
+* **businessName** String
 
 ```crmscript
 NSContact thing;

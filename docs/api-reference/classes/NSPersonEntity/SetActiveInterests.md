@@ -11,7 +11,7 @@ so.topic: reference
 The number of active interests.
 
 **Parameter:** 
- - **activeInterests** Integer
+* **activeInterests** Integer
 
 ```crmscript
 NSPersonEntity thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Array of ColumnInfo column specifications
 
 **Parameter:** 
- - **archiveColumns** NSArchiveColumnInfo[]
+* **archiveColumns** NSArchiveColumnInfo[]
 
 ```crmscript
 NSFindResults thing;

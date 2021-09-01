@@ -11,7 +11,7 @@ so.topic: reference
 When was approval granted or rejected
 
 **Parameter:** 
- - **approvedRegisteredDate** DateTime
+* **approvedRegisteredDate** DateTime
 
 ```crmscript
 NSQuoteVersion thing;

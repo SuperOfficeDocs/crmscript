@@ -11,7 +11,7 @@ so.topic: reference
 Language/culture id as a numeric .NET code
 
 **Parameter:** 
- - **lCID** Integer
+* **lCID** Integer
 
 ```crmscript
 NSLanguageInfo thing;

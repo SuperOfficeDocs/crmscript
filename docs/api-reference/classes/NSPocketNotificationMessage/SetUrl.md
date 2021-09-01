@@ -11,7 +11,7 @@ so.topic: reference
 An url associated with the notification that will be handled by Pocket
 
 **Parameter:** 
- - **url** String
+* **url** String
 
 ```crmscript
 NSPocketNotificationMessage thing;

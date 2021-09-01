@@ -9,7 +9,7 @@ so.topic: reference
 # SetRowsInfo(NSEntityName[] rowsInfo)
 
 **Parameter:** 
- - **rowsInfo** NSEntityName[]
+* **rowsInfo** NSEntityName[]
 
 ```crmscript
 NSDataRights thing;

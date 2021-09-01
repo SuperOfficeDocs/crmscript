@@ -10,8 +10,9 @@ so.topic: reference
 
 Deletes the NSResourceEntity
   
-**Parameters:**
- - **resourceEntityId** The identity of the ResourceEntity to delete.
+## Parameters
+
+* **resourceEntityId** The identity of the ResourceEntity to delete.
 
 ```crmscript
 NSListAgent agent;

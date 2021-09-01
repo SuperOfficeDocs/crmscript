@@ -11,7 +11,7 @@ so.topic: reference
 When opening hours start on Thursdays. Only time-part is used.
 
 **Parameter:** 
- - **thuStart** TimeSpan
+* **thuStart** TimeSpan
 
 ```crmscript
 NSChatOpeningHours thing;

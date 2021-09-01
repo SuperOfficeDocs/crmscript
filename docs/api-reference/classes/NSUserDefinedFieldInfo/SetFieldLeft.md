@@ -11,7 +11,7 @@ so.topic: reference
 X pixel coordinate of field
 
 **Parameter:** 
- - **fieldLeft** Integer
+* **fieldLeft** Integer
 
 ```crmscript
 NSUserDefinedFieldInfo thing;

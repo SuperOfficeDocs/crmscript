@@ -11,7 +11,7 @@ so.topic: reference
 The associate who owns this ticket
 
 **Parameter:** 
- - **ownedBy** NSAssociate
+* **ownedBy** NSAssociate
 
 ```crmscript
 NSTicketEntity thing;

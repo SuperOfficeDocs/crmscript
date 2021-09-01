@@ -10,8 +10,9 @@ so.topic: reference
 
 Set or change the delivery status on an outgoing messsage.
 
-**Parameters:**
- - **plugin** Name of plugin
- - **externalMessageId** External message id known to plugin.
- - **status** Delivery status
- - **statusDescription** String describing delivery status.
+## Parameters
+
+* **plugin** Name of plugin
+* **externalMessageId** External message id known to plugin.
+* **status** Delivery status
+* **statusDescription** String describing delivery status.

@@ -11,11 +11,11 @@ so.topic: reference
 The encoding of the URL
 
 **Parameter:** 
- - **urlEncoding** Integer
-     - Enum: 0 = Unknown 
-     - Enum: 1 = None 
-     - Enum: 2 = ANSI 
-     - Enum: 3 = Unicode 
+* **urlEncoding** Integer
+* Enum: 0 = Unknown 
+* Enum: 1 = None 
+* Enum: 2 = ANSI 
+* Enum: 3 = Unicode 
 
 ```crmscript
 NSWebPanelEntity thing;

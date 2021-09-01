@@ -9,7 +9,7 @@ so.topic: reference
 # SetRights(NSDataRight[][] rights)
 
 **Parameter:** 
- - **rights** NSDataRight[][]
+* **rights** NSDataRight[][]
 
 ```crmscript
 NSDataRights thing;

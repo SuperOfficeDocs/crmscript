@@ -11,7 +11,7 @@ so.topic: reference
 The column tooltip, used in the column list and in the column headings
 
 **Parameter:** 
- - **displayTooltip** String
+* **displayTooltip** String
 
 ```crmscript
 NSArchiveColumnInfo thing;

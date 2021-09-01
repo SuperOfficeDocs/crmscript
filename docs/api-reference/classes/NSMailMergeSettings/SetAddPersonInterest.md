@@ -11,7 +11,7 @@ so.topic: reference
 Add this person interest to each person recipient.
 
 **Parameter:** 
- - **addPersonInterest** Integer
+* **addPersonInterest** Integer
 
 ```crmscript
 NSMailMergeSettings thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **amountClassId** Integer
+* **amountClassId** Integer
 
 ```crmscript
 NSAmountClassEntity thing;

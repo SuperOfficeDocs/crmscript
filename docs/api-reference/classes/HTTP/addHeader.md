@@ -13,8 +13,8 @@ Adds a new header. The new header will be placed after other existing headers.
 
 ## Parameters
 
- - p_name: name of header
- - p_value: value of header
+* p_name: name of header
+* p_value: value of header
 
 ## Example
 

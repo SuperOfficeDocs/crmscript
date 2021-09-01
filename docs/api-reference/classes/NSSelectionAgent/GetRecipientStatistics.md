@@ -10,8 +10,9 @@ so.topic: reference
 
 Returns a NSRecipientStatistics object with a count of addresses, emailaddresses and emailaddresses.
 
-**Parameters:**
- - **selectionId** The id of the selection to get the statistics for.
+## Parameters
+
+* **selectionId** The id of the selection to get the statistics for.
 
 **Returns:** NSRecipientStatistics
 

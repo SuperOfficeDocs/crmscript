@@ -11,7 +11,7 @@ so.topic: reference
 The position. This is a predefined SuperOffice value, different from Title
 
 **Parameter:** 
- - **personPosition** String
+* **personPosition** String
 
 ```crmscript
 NSParticipantSyncData thing;

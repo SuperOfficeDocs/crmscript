@@ -12,9 +12,9 @@ The confidentiality of appointments is shown as different types of “private”
 
 **Returns:** Integer
 
-     - Enum: 0 = Public 
-     - Enum: 1 = PrivateUser 
-     - Enum: 2 = PrivateGroup 
+* Enum: 0 = Public 
+* Enum: 1 = PrivateUser 
+* Enum: 2 = PrivateGroup 
 
 ```crmscript
 NSAppointmentEntity thing;

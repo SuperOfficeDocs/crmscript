@@ -10,10 +10,11 @@ so.topic: reference
 
 Retrieve an e-mail optionally stripping attachments as a stream
 
-**Parameters:**
- - **connectionInfo** All information needed to connect to the mailserver
- - **messageServerId** Unique ID for the e-mail to retrieve
- - **stripAttachments** If true, do not include attachments in stream
+## Parameters
+
+* **connectionInfo** All information needed to connect to the mailserver
+* **messageServerId** Unique ID for the e-mail to retrieve
+* **stripAttachments** If true, do not include attachments in stream
 
 **Returns:** NSStream
 

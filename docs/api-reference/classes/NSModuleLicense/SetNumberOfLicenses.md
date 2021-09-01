@@ -11,7 +11,7 @@ so.topic: reference
 Number of licenses purchased.
 
 **Parameter:** 
- - **numberOfLicenses** Integer
+* **numberOfLicenses** Integer
 
 ```crmscript
 NSModuleLicense thing;

@@ -10,8 +10,9 @@ so.topic: reference
 
 Sets freetext search to enabled (true) or disabled (false)
 
-**Parameters:**
- - **enabled** If enabled true, else false
+## Parameters
+
+* **enabled** If enabled true, else false
 
 ```crmscript
 NSFreeTextAgent agent;

@@ -11,7 +11,7 @@ so.topic: reference
 Postal address, used in Japanese versions only
 
 **Parameter:** 
- - **post1** String
+* **post1** String
 
 ```crmscript
 NSPerson thing;

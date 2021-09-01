@@ -8,10 +8,10 @@ so.topic: reference
 
 # SetAssociate(NSAssociate associate)
 
-The owner of the document - the associate whose checklist the document is in.
+The owner of the document* the associate whose checklist the document is in.
 
 **Parameter:** 
- - **associate** NSAssociate
+* **associate** NSAssociate
 
 ```crmscript
 NSDocumentEntity thing;

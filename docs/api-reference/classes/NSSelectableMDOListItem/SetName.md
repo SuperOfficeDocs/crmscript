@@ -11,7 +11,7 @@ so.topic: reference
 The name of the ListItem
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSSelectableMDOListItem thing;

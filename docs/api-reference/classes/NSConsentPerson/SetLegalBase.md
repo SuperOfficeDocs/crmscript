@@ -11,7 +11,7 @@ so.topic: reference
 The legal base
 
 **Parameter:** 
- - **legalBase** NSLegalBase
+* **legalBase** NSLegalBase
 
 ```crmscript
 NSConsentPerson thing;

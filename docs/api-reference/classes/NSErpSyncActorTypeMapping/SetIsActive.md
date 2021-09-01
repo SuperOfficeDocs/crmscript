@@ -11,7 +11,7 @@ so.topic: reference
 Is this sync mapping active
 
 **Parameter:** 
- - **isActive** Bool
+* **isActive** Bool
 
 ```crmscript
 NSErpSyncActorTypeMapping thing;

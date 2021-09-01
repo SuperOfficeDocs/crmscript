@@ -11,7 +11,7 @@ so.topic: reference
 Blob id that contains logo image
 
 **Parameter:** 
- - **logoBlobId** Integer
+* **logoBlobId** Integer
 
 ```crmscript
 NSChatWidgetSettings thing;

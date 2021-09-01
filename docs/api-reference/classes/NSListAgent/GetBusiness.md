@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSBusiness object.
 
-**Parameters:**
- - **businessId** The identifier of the NSBusiness object
+## Parameters
+
+* **businessId** The identifier of the NSBusiness object
 
 **Returns:** NSBusiness
 

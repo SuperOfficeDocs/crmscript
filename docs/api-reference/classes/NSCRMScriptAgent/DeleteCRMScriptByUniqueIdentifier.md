@@ -10,8 +10,9 @@ so.topic: reference
 
 Delete the CRMScript
 
-**Parameters:**
- - **uniqueIdentifier** Global unique reference to script (independent of installation)
+## Parameters
+
+* **uniqueIdentifier** Global unique reference to script (independent of installation)
 
 ```crmscript
 NSCRMScriptAgent agent;

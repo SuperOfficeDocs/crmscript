@@ -11,7 +11,7 @@ so.topic: reference
 True if this in use by one or more udfields
 
 **Parameter:** 
- - **inUseByUserDefinedFields** Bool
+* **inUseByUserDefinedFields** Bool
 
 ```crmscript
 NSListEntity thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **formSubmissionId** Integer
+* **formSubmissionId** Integer
 
 ```crmscript
 NSFormSubmissionEntity thing;

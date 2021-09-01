@@ -9,7 +9,7 @@ so.topic: reference
 # SetCanLogon(Bool canLogon)
 
 **Parameter:** 
- - **canLogon** Bool
+* **canLogon** Bool
 
 ```crmscript
 NSUserInfo thing;

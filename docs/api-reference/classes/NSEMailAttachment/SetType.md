@@ -11,7 +11,7 @@ so.topic: reference
 Attachment Content-Type
 
 **Parameter:** 
- - **type** String
+* **type** String
 
 ```crmscript
 NSEMailAttachment thing;

@@ -9,7 +9,7 @@ so.topic: reference
 # SetPersonFormalName(String personFormalName)
 
 **Parameter:** 
- - **personFormalName** String
+* **personFormalName** String
 
 ```crmscript
 NSAppointmentSyncData thing;

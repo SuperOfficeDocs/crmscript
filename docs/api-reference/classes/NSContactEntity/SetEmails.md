@@ -11,7 +11,7 @@ so.topic: reference
 The contact's email
 
 **Parameter:** 
- - **emails** NSEntityElement[]
+* **emails** NSEntityElement[]
 
 ```crmscript
 NSContactEntity thing;

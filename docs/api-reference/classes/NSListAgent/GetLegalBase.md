@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSLegalBase object.
 
-**Parameters:**
- - **legalBaseId** The identifier of the NSLegalBase object
+## Parameters
+
+* **legalBaseId** The identifier of the NSLegalBase object
 
 **Returns:** NSLegalBase
 

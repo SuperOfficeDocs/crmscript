@@ -10,10 +10,11 @@ so.topic: reference
 
 Toggle the 'included' state of a quote version attachment; will throw exceptions if called on locked versions
 
-**Parameters:**
- - **quoteVersionId** The ID of the Quote version
- - **documentId** The ID of the document
- - **include** Desired state
+## Parameters
+
+* **quoteVersionId** The ID of the Quote version
+* **documentId** The ID of the document
+* **include** Desired state
 
 **Returns:** Bool
 

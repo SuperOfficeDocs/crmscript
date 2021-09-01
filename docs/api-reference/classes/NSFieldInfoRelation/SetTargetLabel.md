@@ -11,7 +11,7 @@ so.topic: reference
 Display name on target entity.
 
 **Parameter:** 
- - **targetLabel** String
+* **targetLabel** String
 
 ```crmscript
 NSFieldInfoRelation thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Name of the ERP system (programmatic).
 
 **Parameter:** 
- - **eRPName** String
+* **eRPName** String
 
 ```crmscript
 NSQuoteConnection thing;

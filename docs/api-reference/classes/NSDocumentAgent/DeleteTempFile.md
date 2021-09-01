@@ -10,5 +10,6 @@ so.topic: reference
 
 Delete a temporary file created with CreateTempFile.
 
-**Parameters:**
- - **filename** Name of temporary file to delete.
+## Parameters
+
+* **filename** Name of temporary file to delete.

@@ -11,7 +11,7 @@ so.topic: reference
 Reference to definition
 
 **Parameter:** 
- - **relationDefinitionId** Integer
+* **relationDefinitionId** Integer
 
 ```crmscript
 NSContactRelationEntity thing;

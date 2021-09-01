@@ -11,7 +11,7 @@ so.topic: reference
 Answer to the question / An indication if the operation went well.
 
 **Parameter:** 
- - **isOk** Bool
+* **isOk** Bool
 
 ```crmscript
 NSPluginResponse thing;

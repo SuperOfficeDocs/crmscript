@@ -10,8 +10,9 @@ so.topic: reference
 
 Get a product with the given key
 
-**Parameters:**
- - **quoteConnectionId** The connection this product comes from.
- - **eRPProductKey** Primary key of the NSProduct in the ProductProvider
+## Parameters
+
+* **quoteConnectionId** The connection this product comes from.
+* **eRPProductKey** Primary key of the NSProduct in the ProductProvider
 
 **Returns:** NSProduct

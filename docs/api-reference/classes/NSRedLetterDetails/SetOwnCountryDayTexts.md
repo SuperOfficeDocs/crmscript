@@ -8,10 +8,10 @@ so.topic: reference
 
 # SetOwnCountryDayTexts(String[] ownCountryDayTexts)
 
-Array - possibly empty - of the texts related to one day in the redletter system.
+Array* possibly empty* of the texts related to one day in the redletter system.
 
 **Parameter:** 
- - **ownCountryDayTexts** String[]
+* **ownCountryDayTexts** String[]
 
 ```crmscript
 NSRedLetterDetails thing;

@@ -10,9 +10,10 @@ so.topic: reference
 
 Get a list of foreignkeys ('app.device.key') and their values ('123') that belong to the specified entity.
 
-**Parameters:**
- - **entityType** Entity type (table name): 'contact', 'project' etc.
- - **entityId** Primary key of Entity
+## Parameters
+
+* **entityType** Entity type (table name): 'contact', 'project' etc.
+* **entityId** Primary key of Entity
 
 **Returns:** StringDictionary
 

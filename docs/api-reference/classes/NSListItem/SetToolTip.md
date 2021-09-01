@@ -11,7 +11,7 @@ so.topic: reference
 Description
 
 **Parameter:** 
- - **toolTip** String
+* **toolTip** String
 
 ```crmscript
 NSListItem thing;

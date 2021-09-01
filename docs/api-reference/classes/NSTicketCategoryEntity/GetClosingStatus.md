@@ -12,10 +12,10 @@ An integer indicating if new requests should have the &apos;close request&apos; 
 
 **Returns:** Integer
 
-     - Enum: 0 = UserDefined 
-     - Enum: 1 = Active 
-     - Enum: 2 = Closed 
-     - Enum: 3 = Postponed 
+* Enum: 0 = UserDefined 
+* Enum: 1 = Active 
+* Enum: 2 = Closed 
+* Enum: 3 = Postponed 
 
 ```crmscript
 NSTicketCategoryEntity thing;

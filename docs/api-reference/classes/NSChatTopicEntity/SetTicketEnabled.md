@@ -11,7 +11,7 @@ so.topic: reference
 Enable ticket submission in offline mode
 
 **Parameter:** 
- - **ticketEnabled** Bool
+* **ticketEnabled** Bool
 
 ```crmscript
 NSChatTopicEntity thing;

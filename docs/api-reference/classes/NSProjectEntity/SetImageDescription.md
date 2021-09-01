@@ -11,7 +11,7 @@ so.topic: reference
 Description of the project image if it exists. (This is the image that is displayed in the CRM client)
 
 **Parameter:** 
- - **imageDescription** String
+* **imageDescription** String
 
 ```crmscript
 NSProjectEntity thing;

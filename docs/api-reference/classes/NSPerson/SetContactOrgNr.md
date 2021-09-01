@@ -11,7 +11,7 @@ so.topic: reference
 The persons contact organization number
 
 **Parameter:** 
- - **contactOrgNr** String
+* **contactOrgNr** String
 
 ```crmscript
 NSPerson thing;

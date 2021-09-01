@@ -9,7 +9,7 @@ so.topic: reference
 # SetPersonName(String personName)
 
 **Parameter:** 
- - **personName** String
+* **personName** String
 
 ```crmscript
 NSEMailAddress thing;

@@ -11,7 +11,7 @@ so.topic: reference
 A log of what happened during processing
 
 **Parameter:** 
- - **processingLog** String
+* **processingLog** String
 
 ```crmscript
 NSFormSubmissionEntity thing;

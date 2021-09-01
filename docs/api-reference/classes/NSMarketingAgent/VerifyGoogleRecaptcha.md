@@ -10,9 +10,10 @@ so.topic: reference
 
 This method will try to verify a Google recaptcha token. The token is gained from the recaptcha frontend component
 
-**Parameters:**
- - **token** The token to be verified
- - **optionalSecretKey** Use an optional secret key instead of the system wide
+## Parameters
+
+* **token** The token to be verified
+* **optionalSecretKey** Use an optional secret key instead of the system wide
 
 **Returns:** Bool
 

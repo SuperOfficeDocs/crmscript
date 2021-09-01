@@ -11,7 +11,7 @@ so.topic: reference
 The caption for this dashboard
 
 **Parameter:** 
- - **caption** String
+* **caption** String
 
 ```crmscript
 NSDashboard thing;

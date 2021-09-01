@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSDocumentTemplate object.
 
-**Parameters:**
- - **documentTemplateId** The identifier of the NSDocumentTemplate object
+## Parameters
+
+* **documentTemplateId** The identifier of the NSDocumentTemplate object
 
 **Returns:** NSDocumentTemplate
 

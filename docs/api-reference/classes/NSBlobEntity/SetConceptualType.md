@@ -11,7 +11,7 @@ so.topic: reference
 The type, for instance PHOTO, PERSONPHOTO, or whatever, that is descriptive of what kind of image or data this is
 
 **Parameter:** 
- - **conceptualType** String
+* **conceptualType** String
 
 ```crmscript
 NSBlobEntity thing;

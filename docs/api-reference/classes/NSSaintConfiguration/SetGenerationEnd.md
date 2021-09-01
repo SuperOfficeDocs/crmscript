@@ -11,7 +11,7 @@ so.topic: reference
 When was the last regeneration finished
 
 **Parameter:** 
- - **generationEnd** DateTime
+* **generationEnd** DateTime
 
 ```crmscript
 NSSaintConfiguration thing;

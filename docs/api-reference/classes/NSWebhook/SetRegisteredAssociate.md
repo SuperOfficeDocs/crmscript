@@ -11,7 +11,7 @@ so.topic: reference
 The user that created the webhook.
 
 **Parameter:** 
- - **registeredAssociate** NSAssociate
+* **registeredAssociate** NSAssociate
 
 ```crmscript
 NSWebhook thing;

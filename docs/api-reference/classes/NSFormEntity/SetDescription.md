@@ -11,7 +11,7 @@ so.topic: reference
 Detailed description
 
 **Parameter:** 
- - **description** String
+* **description** String
 
 ```crmscript
 NSFormEntity thing;

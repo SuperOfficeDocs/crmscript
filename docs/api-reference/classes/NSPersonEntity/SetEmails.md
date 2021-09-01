@@ -11,7 +11,7 @@ so.topic: reference
 A collection of the person's emails
 
 **Parameter:** 
- - **emails** NSEntityElement[]
+* **emails** NSEntityElement[]
 
 ```crmscript
 NSPersonEntity thing;

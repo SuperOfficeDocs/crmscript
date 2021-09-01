@@ -11,7 +11,7 @@ so.topic: reference
 The associate that first created the SystemEvent.
 
 **Parameter:** 
- - **activatedBy** NSAssociate
+* **activatedBy** NSAssociate
 
 ```crmscript
 NSSystemEventEntity thing;

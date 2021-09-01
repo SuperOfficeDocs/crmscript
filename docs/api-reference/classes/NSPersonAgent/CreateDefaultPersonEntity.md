@@ -9,6 +9,7 @@ so.topic: reference
 # NSPersonEntity CreateDefaultPersonEntity()
 
 Set default values into a new NSPersonEntity.
+
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance
 
 **Returns:** A new NSPersonEntity with default values.
@@ -18,4 +19,3 @@ NSPersonAgent agent;
 NSPersonEntity thing = agent.CreateDefaultPersonEntity();
 thing = agent.SavePersonEntity(thing);
 ```
-

@@ -10,9 +10,10 @@ so.topic: reference
 
 Get a user assigned to a topic
 
-**Parameters:**
- - **chatTopicId** Id of the chat topic
- - **username** Associate username or associate id to get.
+## Parameters
+
+* **chatTopicId** Id of the chat topic
+* **username** Associate username or associate id to get.
 
 **Returns:** NSChatTopicAgent
 

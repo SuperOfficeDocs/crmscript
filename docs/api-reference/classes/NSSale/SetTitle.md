@@ -11,7 +11,7 @@ so.topic: reference
 Sale heading (short description?)
 
 **Parameter:** 
- - **title** String
+* **title** String
 
 ```crmscript
 NSSale thing;

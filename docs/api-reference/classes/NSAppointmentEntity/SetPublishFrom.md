@@ -11,5 +11,5 @@ so.topic: reference
 Set the publish from date on a NSAppointmentEntity.
 
 **Parameter:** 
- - **publishFrom** DateTime.
+* **publishFrom** DateTime.
 

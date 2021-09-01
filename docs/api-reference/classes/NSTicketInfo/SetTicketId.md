@@ -11,7 +11,7 @@ so.topic: reference
 The id of the created ticket
 
 **Parameter:** 
- - **ticketId** Integer
+* **ticketId** Integer
 
 ```crmscript
 NSTicketInfo thing;

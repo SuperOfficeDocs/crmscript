@@ -11,7 +11,7 @@ so.topic: reference
 Group quote lines by this field
 
 **Parameter:** 
- - **groupQuoteLinesBy** Integer
+* **groupQuoteLinesBy** Integer
 
 ```crmscript
 NSSaleTypeEntity thing;

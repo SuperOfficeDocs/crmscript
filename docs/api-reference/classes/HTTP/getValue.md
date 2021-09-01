@@ -8,7 +8,7 @@ so.topic: reference
 ---
 
 # HTTP.getValue(String name)
-   
-**General function which returns various values from the instance. Supported values are:**   
-- <b>"statusCode"</b>: Will return the status code from the HTTP request (e.g. "404", "200"). Supported from v8.0sr3.
 
+General function which returns various values from the instance. Supported values are:
+
+* **statusCode:** Will return the status code from the HTTP request (e.g. "404", "200"). Supported from v8.0sr3.

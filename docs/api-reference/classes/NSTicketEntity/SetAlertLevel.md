@@ -11,7 +11,7 @@ so.topic: reference
 The alert level for the ticket. Matches the level value of the ticket_alert table.
 
 **Parameter:** 
- - **alertLevel** Integer
+* **alertLevel** Integer
 
 ```crmscript
 NSTicketEntity thing;

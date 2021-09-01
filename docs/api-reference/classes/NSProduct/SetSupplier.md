@@ -11,7 +11,7 @@ so.topic: reference
 In SuperOffice, an id from the contact table, when saved as an ERP cache, the name of the supplier
 
 **Parameter:** 
- - **supplier** String
+* **supplier** String
 
 ```crmscript
 NSProduct thing;

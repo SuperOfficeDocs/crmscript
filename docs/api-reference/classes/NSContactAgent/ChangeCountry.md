@@ -10,6 +10,7 @@ so.topic: reference
 
 Change country regenerates the default values and localized information such as phone number and address format
 
-**Parameters:**
- - **contactEntity** 
- - **toCountryId** The country to switch to
+## Parameters
+
+* **contactEntity** 
+* **toCountryId** The country to switch to

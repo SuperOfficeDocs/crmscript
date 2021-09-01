@@ -8,7 +8,8 @@ so.topic: reference
 
 # NSAppointment[] GetAssociatesDiary(Integer[] associateIds, DateTime startTime, DateTime endTime)
 
-**Parameters:**
- - **associateIds** 
- - **startTime** 
- - **endTime** 
+## Parameters
+
+* **associateIds** 
+* **startTime** 
+* **endTime** 

@@ -11,7 +11,7 @@ so.topic: reference
 Sort order, indexed so it can used for sorting in the query
 
 **Parameter:** 
- - **rank** Integer
+* **rank** Integer
 
 ```crmscript
 NSHistory thing;

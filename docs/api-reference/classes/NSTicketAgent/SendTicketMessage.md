@@ -10,14 +10,15 @@ so.topic: reference
 
 Send a message to recipients, e.g. by email or sms
 
-**Parameters:**
- - **ticketMessageEntityId** The id of the ticket message to send
- - **to** The To-recipients. Each recipient must be in correct format
- - **cc** The Cc-recipients. Each recipient must be in correct format
- - **bcc** The Bcc-recipients. Each recipient must be in correct format
- - **subject** The subject
- - **replyTemplateId** Optional ID of reply template to merge message with. <= 0 to skip.
- - **gdprSource** Optional GdprSource string which will be stored for newly created Persons. Blank value will give Gdpr source: API.
+## Parameters
+
+* **ticketMessageEntityId** The id of the ticket message to send
+* **to** The To-recipients. Each recipient must be in correct format
+* **cc** The Cc-recipients. Each recipient must be in correct format
+* **bcc** The Bcc-recipients. Each recipient must be in correct format
+* **subject** The subject
+* **replyTemplateId** Optional ID of reply template to merge message with. <= 0 to skip.
+* **gdprSource** Optional GdprSource string which will be stored for newly created Persons. Blank value will give Gdpr source: API.
 
 ```crmscript
 NSTicketAgent agent;

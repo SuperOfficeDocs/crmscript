@@ -10,8 +10,9 @@ so.topic: reference
 
 Deletes the NSChatTopicEntity
   
-**Parameters:**
- - **chatTopicEntityId** The identity of the NSChatTopicEntity to delete.
+## Parameters
+
+* **chatTopicEntityId** The identity of the NSChatTopicEntity to delete.
 
 ```crmscript
 NSChatAgent agent;

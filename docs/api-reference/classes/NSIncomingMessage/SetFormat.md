@@ -11,7 +11,7 @@ so.topic: reference
 Format of the content
 
 **Parameter:** 
- - **format** String
+* **format** String
 
 ```crmscript
 NSIncomingMessage thing;

@@ -12,5 +12,5 @@ Adds a CRM list of project members to shipment.
 
 ## Parameters
 
- - p0: id, id of list to add
+* p0: id, id of list to add
 

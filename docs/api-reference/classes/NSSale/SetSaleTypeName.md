@@ -11,7 +11,7 @@ so.topic: reference
 The sale's type name
 
 **Parameter:** 
- - **saleTypeName** String
+* **saleTypeName** String
 
 ```crmscript
 NSSale thing;

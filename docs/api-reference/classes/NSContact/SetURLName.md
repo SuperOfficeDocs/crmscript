@@ -11,7 +11,7 @@ so.topic: reference
 Visible field
 
 **Parameter:** 
- - **uRLName** String
+* **uRLName** String
 
 ```crmscript
 NSContact thing;

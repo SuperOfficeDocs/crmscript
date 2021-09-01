@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSLink object.
 
-**Parameters:**
- - **linkId** The identifier of the NSLink object
+## Parameters
+
+* **linkId** The identifier of the NSLink object
 
 **Returns:** NSLink
 

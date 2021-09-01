@@ -10,8 +10,9 @@ so.topic: reference
 
 Saves a quote version
 
-**Parameters:**
- - **quoteVersion** The quote version to save
+## Parameters
+
+* **quoteVersion** The quote version to save
 
 **Returns:** NSQuoteVersion
 

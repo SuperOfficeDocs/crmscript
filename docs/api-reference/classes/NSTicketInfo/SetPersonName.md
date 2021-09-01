@@ -11,7 +11,7 @@ so.topic: reference
 The name of the person/customer connected to the ticket
 
 **Parameter:** 
- - **personName** String
+* **personName** String
 
 ```crmscript
 NSTicketInfo thing;

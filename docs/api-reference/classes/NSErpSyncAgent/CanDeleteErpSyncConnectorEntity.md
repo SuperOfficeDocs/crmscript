@@ -10,8 +10,9 @@ so.topic: reference
 
 Can we delete the connector?
 
-**Parameters:**
- - **erpSyncConnectorId** The ID of the ErpSync connector to check if can be deleted
+## Parameters
+
+* **erpSyncConnectorId** The ID of the ErpSync connector to check if can be deleted
 
 **Returns:** Integer
 

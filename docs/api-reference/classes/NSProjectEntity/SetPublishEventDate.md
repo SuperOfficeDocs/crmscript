@@ -11,5 +11,5 @@ so.topic: reference
 Publish event date on ProjectEntity.
 
 **Parameter:** 
- - **publishDate** DateTime.
+* **publishDate** DateTime.
 

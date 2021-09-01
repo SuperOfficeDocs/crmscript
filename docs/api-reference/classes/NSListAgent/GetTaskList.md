@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a vector of Task objects.
 
-**Parameters:**
- - **taskIds** The identifiers of the NSTask objects
+## Parameters
+
+* **taskIds** The identifiers of the NSTask objects
 
 **Returns:** NSTask[]
 

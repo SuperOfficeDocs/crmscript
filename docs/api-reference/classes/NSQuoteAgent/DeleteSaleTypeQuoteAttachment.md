@@ -10,5 +10,6 @@ so.topic: reference
 
 Deletes the sale type quote attachment with the given id
 
-**Parameters:**
- - **saleTypeQuoteAttachmentId** The ID of the sale type quote attachment row to delete
+## Parameters
+
+* **saleTypeQuoteAttachmentId** The ID of the sale type quote attachment row to delete

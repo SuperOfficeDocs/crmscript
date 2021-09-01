@@ -10,8 +10,9 @@ so.topic: reference
 
 Deletes the NSSaleEntity
   
-**Parameters:**
- - **saleEntityId** The identity of the SaleEntity to delete.
+## Parameters
+
+* **saleEntityId** The identity of the SaleEntity to delete.
 
 ```crmscript
 NSSaleAgent agent;

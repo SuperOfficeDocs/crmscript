@@ -11,7 +11,7 @@ so.topic: reference
 Set the name of the Task item.
 
 **Parameter:** 
- - **value** String Task name.
+* **value** String Task name.
 
 ```crmscript
 NSTask thing;

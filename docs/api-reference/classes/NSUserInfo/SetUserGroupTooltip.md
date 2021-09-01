@@ -9,7 +9,7 @@ so.topic: reference
 # SetUserGroupTooltip(String userGroupTooltip)
 
 **Parameter:** 
- - **userGroupTooltip** String
+* **userGroupTooltip** String
 
 ```crmscript
 NSUserInfo thing;

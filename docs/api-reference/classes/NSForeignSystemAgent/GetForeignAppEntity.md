@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSForeignAppEntity object.
 
-**Parameters:**
- - **foreignAppEntityId** The identifier of the NSForeignAppEntity object
+## Parameters
+
+* **foreignAppEntityId** The identifier of the NSForeignAppEntity object
 
 **Returns:** NSForeignAppEntity
 

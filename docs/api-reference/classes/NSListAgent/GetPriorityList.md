@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a vector of Priority objects.
 
-**Parameters:**
- - **priorityIds** The identifiers of the NSPriority objects
+## Parameters
+
+* **priorityIds** The identifiers of the NSPriority objects
 
 **Returns:** NSPriority[]
 

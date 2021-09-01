@@ -11,7 +11,7 @@ so.topic: reference
 Id of the associates primary group at storage time
 
 **Parameter:** 
- - **groupId** Integer
+* **groupId** Integer
 
 ```crmscript
 NSDashboardTile thing;

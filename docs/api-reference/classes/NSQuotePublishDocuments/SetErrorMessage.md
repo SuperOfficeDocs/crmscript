@@ -11,7 +11,7 @@ so.topic: reference
 If something went wrong, show this message and do not continue
 
 **Parameter:** 
- - **errorMessage** String
+* **errorMessage** String
 
 ```crmscript
 NSQuotePublishDocuments thing;

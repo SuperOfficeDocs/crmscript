@@ -11,7 +11,7 @@ so.topic: reference
 Updates the existing NSShipmentMessageBlockEntity or creates a new NSShipmentMessageBlockEntity if the id parameter is 0
 
 **Parameters**:
- - **shipmentMessageBlockEntity** The NSShipmentMessageBlockEntity to save.
+* **shipmentMessageBlockEntity** The NSShipmentMessageBlockEntity to save.
 
 **Returns:** NSShipmentMessageBlockEntity
 

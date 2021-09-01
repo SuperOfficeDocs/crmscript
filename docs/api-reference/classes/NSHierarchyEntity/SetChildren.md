@@ -11,7 +11,7 @@ so.topic: reference
 Sub-items, if any.
 
 **Parameter:** 
- - **children** NSHierarchyEntity[]
+* **children** NSHierarchyEntity[]
 
 ```crmscript
 NSHierarchyEntity thing;

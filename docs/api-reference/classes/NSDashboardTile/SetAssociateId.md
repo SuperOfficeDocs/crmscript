@@ -11,7 +11,7 @@ so.topic: reference
 Id of the associate who owns this tile
 
 **Parameter:** 
- - **associateId** Integer
+* **associateId** Integer
 
 ```crmscript
 NSDashboardTile thing;

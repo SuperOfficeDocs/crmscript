@@ -11,7 +11,7 @@ so.topic: reference
 Optional default value for String fields
 
 **Parameter:** 
- - **fieldDefault** String
+* **fieldDefault** String
 
 ```crmscript
 NSUserDefinedFieldInfo thing;

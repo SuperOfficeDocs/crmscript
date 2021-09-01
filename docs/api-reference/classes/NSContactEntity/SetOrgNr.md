@@ -11,7 +11,7 @@ so.topic: reference
 VAT number or similar
 
 **Parameter:** 
- - **orgNr** String
+* **orgNr** String
 
 ```crmscript
 NSContactEntity thing;

@@ -10,9 +10,10 @@ so.topic: reference
 
 Return the application configuration. This is a list of pages, with information about the name, main panel and preference mappings of each page.
 
-**Parameters:**
- - **application** The application name, for instance 'SixWeb'
- - **instance** The instance name for the application, like 'MainInstance'
+## Parameters
+
+* **application** The application name, for instance 'SixWeb'
+* **instance** The instance name for the application, like 'MainInstance'
 
 **Returns:** String
 

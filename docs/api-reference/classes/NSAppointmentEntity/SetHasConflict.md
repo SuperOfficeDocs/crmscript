@@ -11,7 +11,7 @@ so.topic: reference
 Does the appointment overlap with another appointment in the user's diary?
 
 **Parameter:** 
- - **hasConflict** Bool
+* **hasConflict** Bool
 
 ```crmscript
 NSAppointmentEntity thing;

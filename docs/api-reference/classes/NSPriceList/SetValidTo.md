@@ -11,7 +11,7 @@ so.topic: reference
 The date (inclusive) the pricelist ends to be valid. This can be DateTime.MaxValue to signal that it doesn't have a specific end date.
 
 **Parameter:** 
- - **validTo** DateTime
+* **validTo** DateTime
 
 ```crmscript
 NSPriceList thing;

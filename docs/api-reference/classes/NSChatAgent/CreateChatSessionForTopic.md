@@ -10,8 +10,9 @@ so.topic: reference
 
 Create a new session on a chat topic
 
-**Parameters:**
- - **chatTopicId** Id of the chat topic
+## Parameters
+
+* **chatTopicId** Id of the chat topic
 
 **Returns:** NSChatSessionEntity
 

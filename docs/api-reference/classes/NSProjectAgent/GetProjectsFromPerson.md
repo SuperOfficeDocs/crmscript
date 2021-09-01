@@ -10,8 +10,9 @@ so.topic: reference
 
 Return all projects where the person is project member.
 
-**Parameters:**
- - **personId** The person id
+## Parameters
+
+* **personId** The person id
 
 **Returns:** NSProject[]
 

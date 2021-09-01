@@ -11,7 +11,7 @@ so.topic: reference
 Integration agent (eJournal)
 
 **Parameter:** 
- - **dbiAgentId** Integer
+* **dbiAgentId** Integer
 
 ```crmscript
 NSContactEntity thing;

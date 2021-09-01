@@ -10,8 +10,9 @@ so.topic: reference
 
 Deletes the NSProduct
   
-**Parameters:**
- - **productId** The identity of the Product to delete.
+## Parameters
+
+* **productId** The identity of the Product to delete.
 
 ```crmscript
 NSQuoteAgent agent;

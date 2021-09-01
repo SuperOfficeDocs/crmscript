@@ -12,10 +12,10 @@ Checkout state
 
 **Returns:** Integer
 
-     - Enum: 0 = NotCheckedOut 
-     - Enum: 1 = CheckedOutOwn 
-     - Enum: 2 = CheckedOutOther 
-     - Enum: 3 = LockingNotSupported 
+* Enum: 0 = NotCheckedOut 
+* Enum: 1 = CheckedOutOwn 
+* Enum: 2 = CheckedOutOther 
+* Enum: 3 = LockingNotSupported 
 
 ```crmscript
 NSCheckoutInfo thing;

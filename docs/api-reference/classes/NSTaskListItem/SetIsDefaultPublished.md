@@ -11,7 +11,7 @@ so.topic: reference
 Published to external persons
 
 **Parameter:** 
- - **isDefaultPublished** Bool
+* **isDefaultPublished** Bool
 
 ```crmscript
 NSTaskListItem thing;

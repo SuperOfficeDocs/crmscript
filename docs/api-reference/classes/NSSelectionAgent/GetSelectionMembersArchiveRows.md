@@ -10,9 +10,10 @@ so.topic: reference
 
 Get the list of members in this selection. The type of members depends on the target table of the selection.
 
-**Parameters:**
- - **selectionId** The selectionId we want selection members for.
- - **select** (optional) Comma separated Column names to include in result. List of columns varies depending on the selection's TargetTable. e.g. 'name', 'firstname', 'startTime'
+## Parameters
+
+* **selectionId** The selectionId we want selection members for.
+* **select** (optional) Comma separated Column names to include in result. List of columns varies depending on the selection's TargetTable. e.g. 'name', 'firstname', 'startTime'
 
 **Returns:** NSArchiveListItem[]
 

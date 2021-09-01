@@ -10,10 +10,11 @@ so.topic: reference
 
 Sets tile in the given dashboard position
 
-**Parameters:**
- - **dashboardId** Dashboard Id
- - **tileId** Tile Id
- - **position** Tile position in the dashboard
+## Parameters
+
+* **dashboardId** Dashboard Id
+* **tileId** Tile Id
+* **position** Tile position in the dashboard
 
 **Returns:** The new dashboard is returned after the tile change
 

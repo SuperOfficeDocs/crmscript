@@ -11,7 +11,7 @@ so.topic: reference
 If true, the selection is a temporary selection that can be deleted later.
 
 **Parameter:** 
- - **isTemporarySelection** Bool
+* **isTemporarySelection** Bool
 
 ```crmscript
 NSMailMergeSettings thing;

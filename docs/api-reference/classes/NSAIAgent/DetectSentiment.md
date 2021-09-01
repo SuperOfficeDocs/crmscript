@@ -10,8 +10,9 @@ so.topic: reference
 
 Detect the sentiment of a (reasonably short) text. Sentiment analysis may cause a translation to be made, since sentiment analysis only supports a limited set of languages
 
-**Parameters:**
- - **text** Text to be analyzed
+## Parameters
+
+* **text** Text to be analyzed
 
 **Returns:** The sentiment information: score (-100 to +100) and confidence
 

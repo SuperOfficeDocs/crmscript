@@ -11,7 +11,7 @@ so.topic: reference
 The time spent (minutes) for this message.
 
 **Parameter:** 
- - **timeSpent** Integer
+* **timeSpent** Integer
 
 ```crmscript
 NSTicketMessageEntity thing;

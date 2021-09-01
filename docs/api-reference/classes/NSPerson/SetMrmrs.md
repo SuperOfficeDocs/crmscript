@@ -11,7 +11,7 @@ so.topic: reference
 e.g. Mrs   sex_title
 
 **Parameter:** 
- - **mrmrs** String
+* **mrmrs** String
 
 ```crmscript
 NSPerson thing;

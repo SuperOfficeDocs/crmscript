@@ -11,7 +11,7 @@ so.topic: reference
 Id of the record this favourite belongs to.
 
 **Parameter:** 
- - **recordId** Integer
+* **recordId** Integer
 
 ```crmscript
 NSFavourite thing;

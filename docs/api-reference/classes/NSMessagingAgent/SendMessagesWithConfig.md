@@ -10,10 +10,11 @@ so.topic: reference
 
 Send an array of messages using given config
 
-**Parameters:**
- - **plugin** Name of plugin to use.
- - **outgoingMessages** Array of outgoing messages you want to send.
- - **config** Config values used by the plugin.
+## Parameters
+
+* **plugin** Name of plugin to use.
+* **outgoingMessages** Array of outgoing messages you want to send.
+* **config** Config values used by the plugin.
 
 **Returns:** NSMessageDeliveryStatus[]
 

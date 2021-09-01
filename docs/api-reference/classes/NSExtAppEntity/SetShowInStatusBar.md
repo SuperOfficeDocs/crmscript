@@ -11,7 +11,7 @@ so.topic: reference
 Does the webpanel have a status bar
 
 **Parameter:** 
- - **showInStatusBar** Bool
+* **showInStatusBar** Bool
 
 ```crmscript
 NSExtAppEntity thing;

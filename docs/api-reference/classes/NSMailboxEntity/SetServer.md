@@ -11,7 +11,7 @@ so.topic: reference
 The email server to connect to
 
 **Parameter:** 
- - **server** String
+* **server** String
 
 ```crmscript
 NSMailboxEntity thing;

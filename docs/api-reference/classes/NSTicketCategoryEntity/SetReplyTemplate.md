@@ -11,7 +11,7 @@ so.topic: reference
 Reply template to merge with messages posted in this category
 
 **Parameter:** 
- - **replyTemplate** Integer
+* **replyTemplate** Integer
 
 ```crmscript
 NSTicketCategoryEntity thing;

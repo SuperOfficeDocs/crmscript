@@ -11,7 +11,7 @@ so.topic: reference
 Table name, transformed to and from numeric table id by the service layer
 
 **Parameter:** 
- - **tableName** String
+* **tableName** String
 
 ```crmscript
 NSForeignKey thing;

@@ -11,7 +11,7 @@ so.topic: reference
 When the session was accepted by a user.
 
 **Parameter:** 
- - **whenStarted** DateTime
+* **whenStarted** DateTime
 
 ```crmscript
 NSChatSessionEntity thing;

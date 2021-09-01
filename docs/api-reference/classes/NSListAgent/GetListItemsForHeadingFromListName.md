@@ -10,9 +10,10 @@ so.topic: reference
 
 List of list items that is selected if under this heading
 
-**Parameters:**
- - **udListDefinitionName** The name of the list definition.
- - **headingId** The id of the heading
+## Parameters
+
+* **udListDefinitionName** The name of the list definition.
+* **headingId** The id of the heading
 
 **Returns:** NSSelectableMDOListItem[]
 

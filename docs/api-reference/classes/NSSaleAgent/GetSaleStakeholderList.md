@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a vector of SaleStakeholder objects.
 
-**Parameters:**
- - **saleStakeholderIds** The identifiers of the NSSaleStakeholder objects
+## Parameters
+
+* **saleStakeholderIds** The identifiers of the NSSaleStakeholder objects
 
 **Returns:** NSSaleStakeholder[]
 

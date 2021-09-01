@@ -8,10 +8,10 @@ so.topic: reference
 
 # SetRedLetterInformation(NSRedLetterSummary redLetterInformation)
 
-Summary of redletter day information - holiday in own country, and in other countries known to the system.
+Summary of redletter day information* holiday in own country, and in other countries known to the system.
 
 **Parameter:** 
- - **redLetterInformation** NSRedLetterSummary
+* **redLetterInformation** NSRedLetterSummary
 
 ```crmscript
 NSDayInformationListItem thing;

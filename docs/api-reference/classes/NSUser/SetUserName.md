@@ -11,7 +11,7 @@ so.topic: reference
 User name, a.k.a. Login name. This might be an e-mail address.
 
 **Parameter:** 
- - **userName** String
+* **userName** String
 
 ```crmscript
 NSUser thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Number of minutes we shall override the assignment if a customer sends consecutive messages to this category
 
 **Parameter:** 
- - **assignmentLag** Integer
+* **assignmentLag** Integer
 
 ```crmscript
 NSTicketCategoryEntity thing;

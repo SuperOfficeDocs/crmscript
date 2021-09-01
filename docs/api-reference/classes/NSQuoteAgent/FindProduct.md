@@ -10,10 +10,11 @@ so.topic: reference
 
 Gets a product, from the ProductProvider
 
-**Parameters:**
- - **quoteAlternativeId** Quote alternative to search in.
- - **userInput** search string
- - **priceListKey** If the pricelist is null or empty, the function will search in all active pricelists.
+## Parameters
+
+* **quoteAlternativeId** Quote alternative to search in.
+* **userInput** search string
+* **priceListKey** If the pricelist is null or empty, the function will search in all active pricelists.
 
 **Returns:** NSProduct[]
 

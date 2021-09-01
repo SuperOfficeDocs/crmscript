@@ -9,7 +9,7 @@ so.topic: reference
 # SetCanCreatePerson(Bool canCreatePerson)
 
 **Parameter:** 
- - **canCreatePerson** Bool
+* **canCreatePerson** Bool
 
 ```crmscript
 NSCredentialType thing;

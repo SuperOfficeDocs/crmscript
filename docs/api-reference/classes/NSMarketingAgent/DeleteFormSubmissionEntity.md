@@ -10,8 +10,9 @@ so.topic: reference
 
 Deletes the NSFormSubmissionEntity
   
-**Parameters:**
- - **formSubmissionEntityId** The identity of the FormSubmissionEntity to delete.
+## Parameters
+
+* **formSubmissionEntityId** The identity of the FormSubmissionEntity to delete.
 
 ```crmscript
 NSMarketingAgent agent;

@@ -11,7 +11,7 @@ so.topic: reference
 Specifies how many minutes the message should be valid
 
 **Parameter:** 
- - **timeToLive** Integer
+* **timeToLive** Integer
 
 ```crmscript
 NSPocketNotificationMessage thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Ticket priority ID
 
 **Parameter:** 
- - **ticketPriorityId** Integer
+* **ticketPriorityId** Integer
 
 ```crmscript
 NSPerson thing;

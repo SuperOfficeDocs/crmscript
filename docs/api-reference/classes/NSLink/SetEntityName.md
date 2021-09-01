@@ -11,7 +11,7 @@ so.topic: reference
 Name of the entity the link points to (The destination/target entity)
 
 **Parameter:** 
- - **entityName** String
+* **entityName** String
 
 ```crmscript
 NSLink thing;

@@ -11,7 +11,7 @@ so.topic: reference
 UDefFieldId this field had in the previous version, 0 = field is new in this version
 
 **Parameter:** 
- - **lastVersionId** Integer
+* **lastVersionId** Integer
 
 ```crmscript
 NSUserDefinedFieldInfo thing;

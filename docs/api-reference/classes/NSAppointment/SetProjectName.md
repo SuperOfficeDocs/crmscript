@@ -11,7 +11,7 @@ so.topic: reference
 The name of the project this appointment belong to. Blank if no project is connected.
 
 **Parameter:** 
- - **projectName** String
+* **projectName** String
 
 ```crmscript
 NSAppointment thing;

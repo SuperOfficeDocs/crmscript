@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSResourceEntity object.
 
-**Parameters:**
- - **resourceEntityId** The identifier of the NSResourceEntity object
+## Parameters
+
+* **resourceEntityId** The identifier of the NSResourceEntity object
 
 **Returns:** NSResourceEntity
 

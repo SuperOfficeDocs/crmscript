@@ -11,7 +11,7 @@ so.topic: reference
 The person's available and selected shipment types.
 
 **Parameter:** 
- - **shipmentTypes** NSSelectableMDOListItem[]
+* **shipmentTypes** NSSelectableMDOListItem[]
 
 ```crmscript
 NSPersonEntity thing;

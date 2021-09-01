@@ -11,7 +11,7 @@ so.topic: reference
 Descriptive messages; errors, etc.
 
 **Parameter:** 
- - **message** String
+* **message** String
 
 ```crmscript
 NSExportArchiveResult thing;

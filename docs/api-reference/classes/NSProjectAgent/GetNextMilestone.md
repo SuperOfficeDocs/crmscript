@@ -10,8 +10,9 @@ so.topic: reference
 
 Next upcoming milestone appointment
 
-**Parameters:**
- - **projectId** Project id - primary key
+## Parameters
+
+* **projectId** Project id* primary key
 
 **Returns:** NSAppointment
 

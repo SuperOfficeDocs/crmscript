@@ -11,7 +11,7 @@ so.topic: reference
 The primary key (auto-incremented)
 
 **Parameter:** 
- - **hierarchyId** Integer
+* **hierarchyId** Integer
 
 ```crmscript
 NSHierarchyEntity thing;

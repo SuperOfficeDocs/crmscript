@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **statusMonitorId** Integer
+* **statusMonitorId** Integer
 
 ```crmscript
 NSStatusMonitor thing;

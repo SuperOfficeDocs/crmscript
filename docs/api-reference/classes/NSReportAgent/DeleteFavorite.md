@@ -10,5 +10,6 @@ so.topic: reference
 
 Deletes the report favorite.
 
-**Parameters:**
- - **reportEntityId** The id of the report favorite to delete.
+## Parameters
+
+* **reportEntityId** The id of the report favorite to delete.

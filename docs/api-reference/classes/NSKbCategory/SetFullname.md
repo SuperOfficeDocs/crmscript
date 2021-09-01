@@ -11,7 +11,7 @@ so.topic: reference
 The full name of this category, i.e. Foo/bar/test.
 
 **Parameter:** 
- - **fullname** String
+* **fullname** String
 
 ```crmscript
 NSKbCategory thing;

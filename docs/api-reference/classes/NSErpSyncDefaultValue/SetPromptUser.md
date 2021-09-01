@@ -11,7 +11,7 @@ so.topic: reference
 Should the field be shown in the first-sync GUI; independent of whether a default value should be set
 
 **Parameter:** 
- - **promptUser** Bool
+* **promptUser** Bool
 
 ```crmscript
 NSErpSyncDefaultValue thing;

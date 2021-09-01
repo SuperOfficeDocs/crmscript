@@ -11,7 +11,7 @@ so.topic: reference
 When should the system next check with the license issuer
 
 **Parameter:** 
- - **nextCheckDate** DateTime
+* **nextCheckDate** DateTime
 
 ```crmscript
 NSLicenseInfo thing;

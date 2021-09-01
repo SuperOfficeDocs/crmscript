@@ -11,7 +11,7 @@ so.topic: reference
 ??
 
 **Parameter:** 
- - **aggregateBin** Integer
+* **aggregateBin** Integer
 
 ```crmscript
 NSWebAppUsage thing;

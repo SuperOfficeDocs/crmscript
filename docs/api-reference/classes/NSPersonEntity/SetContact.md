@@ -11,7 +11,7 @@ so.topic: reference
 The contact the contact person is registered on. This is required unless the 'MandatoryContactOnPerson' preference is set.
 
 **Parameter:** 
- - **contact** NSContact
+* **contact** NSContact
 
 ```crmscript
 NSPersonEntity thing;

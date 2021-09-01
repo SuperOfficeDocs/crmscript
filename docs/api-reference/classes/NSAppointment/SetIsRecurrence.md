@@ -11,7 +11,7 @@ so.topic: reference
 True if the appointment is part of a recurring pattern.
 
 **Parameter:** 
- - **isRecurrence** Bool
+* **isRecurrence** Bool
 
 ```crmscript
 NSAppointment thing;

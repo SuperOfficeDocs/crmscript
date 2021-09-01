@@ -11,7 +11,7 @@ so.topic: reference
 TargetTableName contains the name of the table in lowercase. defines the type of selection members this selection contains. e.g. 'contact', or 'project' or 'sale'
 
 **Parameter:** 
- - **targetTableName** String
+* **targetTableName** String
 
 ```crmscript
 NSSelectionEntity thing;

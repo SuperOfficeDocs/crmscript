@@ -11,7 +11,7 @@ so.topic: reference
 The id of the login row
 
 **Parameter:** 
- - **loginId** Integer
+* **loginId** Integer
 
 ```crmscript
 NSCsSessionKey thing;

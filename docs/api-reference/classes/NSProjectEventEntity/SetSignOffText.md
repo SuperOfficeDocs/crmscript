@@ -11,7 +11,7 @@ so.topic: reference
 Default text for the activity created when signing off.
 
 **Parameter:** 
- - **signOffText** String
+* **signOffText** String
 
 ```crmscript
 NSProjectEventEntity thing;

@@ -10,8 +10,9 @@ so.topic: reference
 
 Pings a webhook with a 'test' event, returns SUCCESS(true) or FAILURE(false) + the response from the webhook target.
 
-**Parameters:**
- - **webhook** NSWebhook definition to ping. Must contain a valid TargetUrl.
+## Parameters
+
+* **webhook** NSWebhook definition to ping. Must contain a valid TargetUrl.
 
 **Returns:** NSWebhookResult
 

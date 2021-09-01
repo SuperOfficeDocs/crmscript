@@ -11,7 +11,7 @@ so.topic: reference
 If an error occured, this member will contain a description of the error
 
 **Parameter:** 
- - **errorMessage** String
+* **errorMessage** String
 
 ```crmscript
 NSSmtpTestResult thing;

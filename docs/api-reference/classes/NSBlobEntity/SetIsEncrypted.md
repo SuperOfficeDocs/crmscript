@@ -11,7 +11,7 @@ so.topic: reference
 Has the data been encrypted.
 
 **Parameter:** 
- - **isEncrypted** Bool
+* **isEncrypted** Bool
 
 ```crmscript
 NSBlobEntity thing;

@@ -13,18 +13,18 @@ Get a value from the attachment class. Returns the value as a string.
 
 The current implementation supports the following values as the name parameter.
 
- - id: the attachment id
- - contentType: content descriptor
- - name: the filename
- - size: size in bytes
- - key: authentication key
- - charset
- - dbiAgentId
- - dbiKey
- - dbiLastModified
- - dbiLastSyncronized
+* id: the attachment id
+* contentType: content descriptor
+* name: the filename
+* size: size in bytes
+* key: authentication key
+* charset
+* dbiAgentId
+* dbiKey
+* dbiLastModified
+* dbiLastSyncronized
 
 ## Parameters
 
- - name: Value to receive
+* name: Value to receive
 

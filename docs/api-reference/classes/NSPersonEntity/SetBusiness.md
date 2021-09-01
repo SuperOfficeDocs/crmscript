@@ -8,10 +8,10 @@ so.topic: reference
 
 # SetBusiness(NSBusiness business)
 
-Person's business - usually blank. Use Contact.NSBusiness instead. Intended for use when individual persons are created. (i.e. when Person.Contact is blank)
+Person's business* usually blank. Use Contact.NSBusiness instead. Intended for use when individual persons are created. (i.e. when Person.Contact is blank)
 
 **Parameter:** 
- - **business** NSBusiness
+* **business** NSBusiness
 
 ```crmscript
 NSPersonEntity thing;

@@ -11,7 +11,7 @@ so.topic: reference
 City corresponding to zip code
 
 **Parameter:** 
- - **city** String
+* **city** String
 
 ```crmscript
 NSContact thing;

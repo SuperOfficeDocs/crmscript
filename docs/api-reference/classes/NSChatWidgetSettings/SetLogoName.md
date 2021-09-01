@@ -11,7 +11,7 @@ so.topic: reference
 filename/description of logo (from blob)
 
 **Parameter:** 
- - **logoName** String
+* **logoName** String
 
 ```crmscript
 NSChatWidgetSettings thing;

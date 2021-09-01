@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSWebPanelEntity object.
 
-**Parameters:**
- - **webPanelEntityId** The identifier of the NSWebPanelEntity object
+## Parameters
+
+* **webPanelEntityId** The identifier of the NSWebPanelEntity object
 
 **Returns:** NSWebPanelEntity
 

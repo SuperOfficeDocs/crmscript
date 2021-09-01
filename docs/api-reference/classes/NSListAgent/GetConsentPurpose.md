@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSConsentPurpose object.
 
-**Parameters:**
- - **consentPurposeId** The identifier of the NSConsentPurpose object
+## Parameters
+
+* **consentPurposeId** The identifier of the NSConsentPurpose object
 
 **Returns:** NSConsentPurpose
 

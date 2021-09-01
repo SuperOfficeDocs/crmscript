@@ -11,7 +11,7 @@ so.topic: reference
 Is the application visible when user is on travel
 
 **Parameter:** 
- - **onTravel** Bool
+* **onTravel** Bool
 
 ```crmscript
 NSExtAppEntity thing;

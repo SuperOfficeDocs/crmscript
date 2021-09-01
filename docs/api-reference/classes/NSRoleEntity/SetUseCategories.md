@@ -11,7 +11,7 @@ so.topic: reference
 Apply role category membership to users
 
 **Parameter:** 
- - **useCategories** Integer
+* **useCategories** Integer
 
 ```crmscript
 NSRoleEntity thing;

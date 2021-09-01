@@ -11,7 +11,7 @@ so.topic: reference
 The session key created in the login table
 
 **Parameter:** 
- - **key** String
+* **key** String
 
 ```crmscript
 NSCsSessionKey thing;

@@ -11,7 +11,7 @@ so.topic: reference
 The JSON-formatted recipe of this form
 
 **Parameter:** 
- - **recipe** String
+* **recipe** String
 
 ```crmscript
 NSFormEntity thing;

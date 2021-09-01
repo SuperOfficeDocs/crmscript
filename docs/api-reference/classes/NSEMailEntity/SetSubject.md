@@ -11,7 +11,7 @@ so.topic: reference
 Subject of the e-mail
 
 **Parameter:** 
- - **subject** String
+* **subject** String
 
 ```crmscript
 NSEMailEntity thing;

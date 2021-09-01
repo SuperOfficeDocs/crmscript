@@ -11,7 +11,7 @@ so.topic: reference
 Description text record id
 
 **Parameter:** 
- - **textId** Integer
+* **textId** Integer
 
 ```crmscript
 NSSelectionEntity thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Set the name of the ReasonStalled item.
 
 **Parameter:** 
- - **value** String ReasonStalled name.
+* **value** String ReasonStalled name.
 
 ```crmscript
 NSReasonStalled thing;

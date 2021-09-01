@@ -11,7 +11,7 @@ so.topic: reference
 Person ID of person the appointment is with, may be 0
 
 **Parameter:** 
- - **personId** Integer
+* **personId** Integer
 
 ```crmscript
 NSAppointmentSyncData thing;

@@ -10,8 +10,9 @@ so.topic: reference
 
 Lookup the name / email of an event-organizer
 
-**Parameters:**
- - **motherAppointmentId** The id of the mother-appointment.
+## Parameters
+
+* **motherAppointmentId** The id of the mother-appointment.
 
 **Returns:** The displayed name of the organizer: name or email
 

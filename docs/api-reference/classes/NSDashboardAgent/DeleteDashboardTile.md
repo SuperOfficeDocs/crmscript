@@ -10,8 +10,9 @@ so.topic: reference
 
 Deletes the NSDashboardTile
   
-**Parameters:**
- - **dashboardTileId** The identity of the NSDashboardTile to delete.
+## Parameters
+
+* **dashboardTileId** The identity of the NSDashboardTile to delete.
 
 ```crmscript
 NSDashboardAgent agent;

@@ -11,7 +11,7 @@ so.topic: reference
 Settings for chatbot: trigger script ids to run on bot events
 
 **Parameter:** 
- - **botSettings** NSChatBotSettings
+* **botSettings** NSChatBotSettings
 
 ```crmscript
 NSChatTopicEntity thing;

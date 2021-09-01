@@ -8,10 +8,10 @@ so.topic: reference
 
 # SetMotherAssociate(NSAssociate motherAssociate)
 
-The owner of the mother appointment - the associate whose diary/checklist the mother appointment is in.  The mother appointment is the one identified by the mother_id. If the mother_id is 0 or the same as this appointment_id, then the master associate will be the same as the 'ordinary' associate.
+The owner of the mother appointment* the associate whose diary/checklist the mother appointment is in.  The mother appointment is the one identified by the mother_id. If the mother_id is 0 or the same as this appointment_id, then the master associate will be the same as the 'ordinary' associate.
 
 **Parameter:** 
- - **motherAssociate** NSAssociate
+* **motherAssociate** NSAssociate
 
 ```crmscript
 NSAppointmentEntity thing;

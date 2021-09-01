@@ -11,7 +11,7 @@ so.topic: reference
 The identity of the external app
 
 **Parameter:** 
- - **extAppId** Integer
+* **extAppId** Integer
 
 ```crmscript
 NSExtAppEntity thing;

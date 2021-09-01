@@ -11,7 +11,7 @@ so.topic: reference
 <template variable> <other template variable>
 
 **Parameter:** 
- - **parameters** String
+* **parameters** String
 
 ```crmscript
 NSExtAppEntity thing;

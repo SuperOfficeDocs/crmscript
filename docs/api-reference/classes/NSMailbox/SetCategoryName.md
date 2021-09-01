@@ -11,7 +11,7 @@ so.topic: reference
 The name of the category that the mailbox is connected to
 
 **Parameter:** 
- - **categoryName** String
+* **categoryName** String
 
 ```crmscript
 NSMailbox thing;

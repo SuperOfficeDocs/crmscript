@@ -11,7 +11,7 @@ so.topic: reference
 Passive text for the relation.
 
 **Parameter:** 
- - **passiveText** String
+* **passiveText** String
 
 ```crmscript
 NSContactRelationEntity thing;

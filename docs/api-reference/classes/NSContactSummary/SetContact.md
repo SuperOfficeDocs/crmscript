@@ -11,7 +11,7 @@ so.topic: reference
 Simple Contact data.
 
 **Parameter:** 
- - **contact** NSContact
+* **contact** NSContact
 
 ```crmscript
 NSContactSummary thing;

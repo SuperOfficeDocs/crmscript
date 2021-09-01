@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSHistory object.
 
-**Parameters:**
- - **historyId** The identifier of the NSHistory object
+## Parameters
+
+* **historyId** The identifier of the NSHistory object
 
 **Returns:** NSHistory
 

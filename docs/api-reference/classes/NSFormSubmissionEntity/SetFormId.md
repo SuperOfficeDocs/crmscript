@@ -11,7 +11,7 @@ so.topic: reference
 The id of the parent form.
 
 **Parameter:** 
- - **formId** Integer
+* **formId** Integer
 
 ```crmscript
 NSFormSubmissionEntity thing;

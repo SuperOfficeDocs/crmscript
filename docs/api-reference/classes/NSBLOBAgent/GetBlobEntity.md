@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSBlobEntity object.
 
-**Parameters:**
- - **blobEntityId** The identifier of the NSBlobEntity object
+## Parameters
+
+* **blobEntityId** The identifier of the NSBlobEntity object
 
 **Returns:** NSBlobEntity
 

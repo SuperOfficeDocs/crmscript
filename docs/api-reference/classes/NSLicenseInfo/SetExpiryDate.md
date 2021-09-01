@@ -11,7 +11,7 @@ so.topic: reference
 Expiration date, 0 = forever
 
 **Parameter:** 
- - **expiryDate** DateTime
+* **expiryDate** DateTime
 
 ```crmscript
 NSLicenseInfo thing;

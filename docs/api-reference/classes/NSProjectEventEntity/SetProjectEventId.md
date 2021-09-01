@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **projectEventId** Integer
+* **projectEventId** Integer
 
 ```crmscript
 NSProjectEventEntity thing;

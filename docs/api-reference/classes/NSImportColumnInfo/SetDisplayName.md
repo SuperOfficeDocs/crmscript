@@ -11,7 +11,7 @@ so.topic: reference
 Display name of the column
 
 **Parameter:** 
- - **displayName** String
+* **displayName** String
 
 ```crmscript
 NSImportColumnInfo thing;

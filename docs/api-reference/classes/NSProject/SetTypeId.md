@@ -9,7 +9,7 @@ so.topic: reference
 # SetTypeId(Integer typeId)
 
 **Parameter:** 
- - **typeId** Integer
+* **typeId** Integer
 
 ```crmscript
 NSProject thing;

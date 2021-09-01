@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a vector of NSDocument objects.
 
-**Parameters:**
- - **documentIds** The identifiers of the NSDocument objects
+## Parameters
+
+* **documentIds** The identifiers of the NSDocument objects
 
 **Returns:** NSDocument[]
 

@@ -11,7 +11,7 @@ so.topic: reference
 Session key used for threading.
 
 **Parameter:** 
- - **sessionKey** String
+* **sessionKey** String
 
 ```crmscript
 NSIncomingMessage thing;

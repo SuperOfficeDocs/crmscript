@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSEMailAccount object.
 
-**Parameters:**
- - **eMailAccountId** The identifier of the NSEMailAccount object
+## Parameters
+
+* **eMailAccountId** The identifier of the NSEMailAccount object
 
 **Returns:** NSEMailAccount
 

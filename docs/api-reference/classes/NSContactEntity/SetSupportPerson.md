@@ -9,7 +9,7 @@ so.topic: reference
 # SetSupportPerson(NSPerson supportPerson)
 
 **Parameter:** 
- - **supportPerson** NSPerson
+* **supportPerson** NSPerson
 
 ```crmscript
 NSContactEntity thing;

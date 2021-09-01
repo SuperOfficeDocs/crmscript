@@ -8,7 +8,8 @@ so.topic: reference
 
 # Bool HasStakeholderSetting(Integer saleId)
 
-**Parameters:**
- - **saleId** 
+## Parameters
+
+* **saleId** 
 
 **Returns:** Bool

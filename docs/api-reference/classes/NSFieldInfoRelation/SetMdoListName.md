@@ -8,10 +8,10 @@ so.topic: reference
 
 # SetMdoListName(String mdoListName)
 
-MDO list name used to populate this list. (Read-only - derived from TargetTable)
+MDO list name used to populate this list. (Read-only* derived from TargetTable)
 
 **Parameter:** 
- - **mdoListName** String
+* **mdoListName** String
 
 ```crmscript
 NSFieldInfoRelation thing;

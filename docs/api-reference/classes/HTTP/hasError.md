@@ -10,4 +10,3 @@ so.topic: reference
 # HTTP.hasError()
 
 Returns true if there was an error in the environment, false if not.
-

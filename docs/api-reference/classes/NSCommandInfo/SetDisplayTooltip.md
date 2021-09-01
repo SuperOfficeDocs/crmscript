@@ -8,10 +8,10 @@ so.topic: reference
 
 # SetDisplayTooltip(String displayTooltip)
 
-Tooltip string associate with the command - can be a literal or a tooltip hint.
+Tooltip string associate with the command* can be a literal or a tooltip hint.
 
 **Parameter:** 
- - **displayTooltip** String
+* **displayTooltip** String
 
 ```crmscript
 NSCommandInfo thing;

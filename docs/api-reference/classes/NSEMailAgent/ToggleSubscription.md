@@ -10,6 +10,7 @@ so.topic: reference
 
 Set subscription on or off on a set of folders
 
-**Parameters:**
- - **folderId** The folder id to set subscription value on
- - **subscriptionStatus** The subscription status to set
+## Parameters
+
+* **folderId** The folder id to set subscription value on
+* **subscriptionStatus** The subscription status to set

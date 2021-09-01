@@ -10,9 +10,10 @@ so.topic: reference
 
 Create a new document template language based on an existing template
 
-**Parameters:**
- - **documentTemplateId** The id of the document template
- - **languageCode** The language code ('en-US, 'nb-NO', etc)
+## Parameters
+
+* **documentTemplateId** The id of the document template
+* **languageCode** The language code ('en-US, 'nb-NO', etc)
 
 ```crmscript
 NSListAgent agent;

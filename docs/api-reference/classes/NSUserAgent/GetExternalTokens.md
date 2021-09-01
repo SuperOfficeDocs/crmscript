@@ -10,8 +10,9 @@ so.topic: reference
 
 Retrieve the tokens from the DB based on the given key
 
-**Parameters:**
- - **key** Token retrievel key
+## Parameters
+
+* **key** Token retrievel key
 
 **Returns:** NSTokenManagementInfo
 

@@ -11,7 +11,7 @@ so.topic: reference
 Access token
 
 **Parameter:** 
- - **accessToken** String
+* **accessToken** String
 
 ```crmscript
 NSTokenManagementInfo thing;

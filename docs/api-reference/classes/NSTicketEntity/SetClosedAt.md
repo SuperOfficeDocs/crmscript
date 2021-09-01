@@ -11,7 +11,7 @@ so.topic: reference
 When the ticket was closed.
 
 **Parameter:** 
- - **closedAt** DateTime
+* **closedAt** DateTime
 
 ```crmscript
 NSTicketEntity thing;

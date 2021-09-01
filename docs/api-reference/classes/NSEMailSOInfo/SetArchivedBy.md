@@ -11,7 +11,7 @@ so.topic: reference
 The associate who archived this email
 
 **Parameter:** 
- - **archivedBy** Integer
+* **archivedBy** Integer
 
 ```crmscript
 NSEMailSOInfo thing;

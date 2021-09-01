@@ -12,9 +12,9 @@ Get or set the inter-restriction operator that describes how this restriction is
 
 **Returns:** Integer
 
-     - Enum: 0 = None 
-     - Enum: 1 = And 
-     - Enum: 2 = Or 
+* Enum: 0 = None 
+* Enum: 1 = And 
+* Enum: 2 = Or 
 
 ```crmscript
 NSArchiveRestrictionInfo thing;

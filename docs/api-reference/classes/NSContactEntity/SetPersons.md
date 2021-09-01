@@ -11,7 +11,7 @@ so.topic: reference
 The persons belonging to the contact.
 
 **Parameter:** 
- - **persons** NSPerson[]
+* **persons** NSPerson[]
 
 ```crmscript
 NSContactEntity thing;

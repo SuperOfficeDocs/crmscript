@@ -11,7 +11,7 @@ so.topic: reference
 Key used for access verification
 
 **Parameter:** 
- - **accessKey** String
+* **accessKey** String
 
 ```crmscript
 NSShipmentMessageEntity thing;

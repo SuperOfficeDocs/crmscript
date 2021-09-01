@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a vector of NSBusiness objects.
 
-**Parameters:**
- - **businessIds** The identifiers of the NSBusiness objects
+## Parameters
+
+* **businessIds** The identifiers of the NSBusiness objects
 
 **Returns:** NSBusiness[]
 

@@ -11,7 +11,7 @@ so.topic: reference
 True for products that should currently be offered, false when the product is discontinued and should not ordinarily be offered. When false the product no longer appears in search results.
 
 **Parameter:** 
- - **inAssortment** Bool
+* **inAssortment** Bool
 
 ```crmscript
 NSProduct thing;

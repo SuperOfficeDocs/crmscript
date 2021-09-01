@@ -11,7 +11,7 @@ so.topic: reference
 Public key held by module owner.
 
 **Parameter:** 
- - **key** NSDSAParameters
+* **key** NSDSAParameters
 
 ```crmscript
 NSSignedPublicKey thing;

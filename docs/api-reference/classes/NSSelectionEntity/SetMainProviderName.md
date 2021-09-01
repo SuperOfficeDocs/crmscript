@@ -8,10 +8,10 @@ so.topic: reference
 
 # SetMainProviderName(String mainProviderName)
 
-The name of the Archive Provider that will deliver the content of the archive - the actual entity rows
+The name of the Archive Provider that will deliver the content of the archive* the actual entity rows
 
 **Parameter:** 
- - **mainProviderName** String
+* **mainProviderName** String
 
 ```crmscript
 NSSelectionEntity thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Start/Document date
 
 **Parameter:** 
- - **date** DateTime
+* **date** DateTime
 
 ```crmscript
 NSActivitySummaryItem thing;

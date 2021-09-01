@@ -11,7 +11,7 @@ so.topic: reference
 The reference to the ticket_priority table.
 
 **Parameter:** 
- - **priority** Integer
+* **priority** Integer
 
 ```crmscript
 NSTicket thing;

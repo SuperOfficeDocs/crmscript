@@ -11,7 +11,7 @@ so.topic: reference
 The primary person that this ticket is connected to
 
 **Parameter:** 
- - **person** NSPerson
+* **person** NSPerson
 
 ```crmscript
 NSTicketEntity thing;

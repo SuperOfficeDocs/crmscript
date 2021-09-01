@@ -11,7 +11,7 @@ so.topic: reference
 Set the tooltip description for the NSRelationToOwner list item.
 
 **Parameter:** 
- - **tooltip** String NSRelationToOwner tooltip description.
+* **tooltip** String NSRelationToOwner tooltip description.
 
 ```crmscript
 NSRelationToOwner thing;

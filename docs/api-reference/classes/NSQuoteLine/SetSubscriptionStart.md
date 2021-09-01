@@ -11,7 +11,7 @@ so.topic: reference
 Start date for subscription, as offered
 
 **Parameter:** 
- - **subscriptionStart** DateTime
+* **subscriptionStart** DateTime
 
 ```crmscript
 NSQuoteLine thing;

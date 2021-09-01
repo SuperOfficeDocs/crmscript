@@ -11,7 +11,7 @@ so.topic: reference
 Active status monitor identity with the lowest rank for contact
 
 **Parameter:** 
- - **activeStatusMonitorId** Integer
+* **activeStatusMonitorId** Integer
 
 ```crmscript
 NSContactEntity thing;

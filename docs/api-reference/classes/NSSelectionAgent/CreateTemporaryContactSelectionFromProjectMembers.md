@@ -10,8 +10,9 @@ so.topic: reference
 
 Creates a temporary selection with members from an existing project.
 
-**Parameters:**
- - **projectId** The id of the project to add members from.
+## Parameters
+
+* **projectId** The id of the project to add members from.
 
 **Returns:** NSSelectionEntity
 

@@ -11,7 +11,7 @@ so.topic: reference
 Tablename/recordid of data changed by this method, that the client may need to reload
 
 **Parameter:** 
- - **changes** NSChangedData
+* **changes** NSChangedData
 
 ```crmscript
 NSPluginUrlResponse thing;

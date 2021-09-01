@@ -11,7 +11,7 @@ so.topic: reference
 Updates the existing NSResourceEntity or creates a new NSResourceEntity if the id parameter is 0
 
 **Parameters**:
- - **resourceEntity** The NSResourceEntity to save.
+* **resourceEntity** The NSResourceEntity to save.
 
 **Returns:** NSResourceEntity
 

@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **saleStakeholderId** Integer
+* **saleStakeholderId** Integer
 
 ```crmscript
 NSSaleStakeholder thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Default integer value
 
 **Parameter:** 
- - **defaultValue** Integer
+* **defaultValue** Integer
 
 ```crmscript
 NSFieldInfoInt thing;

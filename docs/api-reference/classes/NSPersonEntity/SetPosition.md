@@ -11,7 +11,7 @@ so.topic: reference
 The position. This is a predefined SuperOffice value, different from Title
 
 **Parameter:** 
- - **position** NSPosition
+* **position** NSPosition
 
 ```crmscript
 NSPersonEntity thing;

@@ -10,9 +10,10 @@ so.topic: reference
 
 Gets a NSForeignDevice with deviceName that belongs to the application with applicationName.
 
-**Parameters:**
- - **applicationName** The name of the foreign application.
- - **deviceName** The name of the foreign device.
+## Parameters
+
+* **applicationName** The name of the foreign application.
+* **deviceName** The name of the foreign device.
 
 **Returns:** NSForeignDevice
 

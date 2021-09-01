@@ -10,6 +10,7 @@ so.topic: reference
 
 Delete all items in folder specified in the connection object
 
-**Parameters:**
- - **connectionInfo** All information needed to connect to the mailserver
- - **moveToFolder** If set, move deleted items to this folder
+## Parameters
+
+* **connectionInfo** All information needed to connect to the mailserver
+* **moveToFolder** If set, move deleted items to this folder

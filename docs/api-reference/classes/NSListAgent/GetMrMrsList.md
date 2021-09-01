@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a vector of NSMrMrs objects.
 
-**Parameters:**
- - **mrMrsIds** The identifiers of the NSMrMrs objects
+## Parameters
+
+* **mrMrsIds** The identifiers of the NSMrMrs objects
 
 **Returns:** NSMrMrs[]
 

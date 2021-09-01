@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **suggestedAppointmentId** Integer
+* **suggestedAppointmentId** Integer
 
 ```crmscript
 NSSuggestedAppointment thing;

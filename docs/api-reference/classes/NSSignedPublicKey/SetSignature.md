@@ -8,10 +8,10 @@ so.topic: reference
 
 # SetSignature(String signature)
 
-Signature - Base64 encoded value
+Signature* Base64 encoded value
 
 **Parameter:** 
- - **signature** String
+* **signature** String
 
 ```crmscript
 NSSignedPublicKey thing;

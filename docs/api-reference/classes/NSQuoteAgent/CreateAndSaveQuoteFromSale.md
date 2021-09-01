@@ -10,9 +10,10 @@ so.topic: reference
 
 Creates a copy the active version with connected alternatives and quotelines from another sale.
 
-**Parameters:**
- - **copyFromSaleId** Id of the sale to copy the active quote from.
- - **copyToSaleId** Id of the sale to copy the active quote to.
+## Parameters
+
+* **copyFromSaleId** Id of the sale to copy the active quote from.
+* **copyToSaleId** Id of the sale to copy the active quote to.
 
 **Returns:** NSQuoteEntity
 

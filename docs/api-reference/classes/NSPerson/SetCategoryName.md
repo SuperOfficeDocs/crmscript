@@ -11,7 +11,7 @@ so.topic: reference
 The category list item name
 
 **Parameter:** 
- - **categoryName** String
+* **categoryName** String
 
 ```crmscript
 NSPerson thing;

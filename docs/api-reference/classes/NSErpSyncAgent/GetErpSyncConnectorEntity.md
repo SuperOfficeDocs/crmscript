@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSErpSyncConnectorEntity object.
 
-**Parameters:**
- - **erpSyncConnectorEntityId** The identifier of the NSErpSyncConnectorEntity object
+## Parameters
+
+* **erpSyncConnectorEntityId** The identifier of the NSErpSyncConnectorEntity object
 
 **Returns:** NSErpSyncConnectorEntity
 

@@ -10,8 +10,9 @@ so.topic: reference
 
 Get all documents that are linked to the sale. I.e. the documents that are listed in the sale dialog.
 
-**Parameters:**
- - **saleId** The sale id.
+## Parameters
+
+* **saleId** The sale id.
 
 **Returns:** NSDocument[]
 

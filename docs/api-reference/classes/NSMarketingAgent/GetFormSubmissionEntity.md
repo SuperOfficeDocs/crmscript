@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSFormSubmissionEntity object.
 
-**Parameters:**
- - **formSubmissionEntityId** The identifier of the NSFormSubmissionEntity object
+## Parameters
+
+* **formSubmissionEntityId** The identifier of the NSFormSubmissionEntity object
 
 **Returns:** NSFormSubmissionEntity
 

@@ -11,7 +11,7 @@ so.topic: reference
 Is this a milestone activity
 
 **Parameter:** 
- - **isMilestone** Bool
+* **isMilestone** Bool
 
 ```crmscript
 NSSuggestedAppointmentEntity thing;

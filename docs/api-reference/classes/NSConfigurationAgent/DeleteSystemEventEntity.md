@@ -10,8 +10,9 @@ so.topic: reference
 
 Deletes the NSSystemEventEntity
   
-**Parameters:**
- - **systemEventEntityId** The identity of the SystemEventEntity to delete.
+## Parameters
+
+* **systemEventEntityId** The identity of the SystemEventEntity to delete.
 
 ```crmscript
 NSConfigurationAgent agent;

@@ -11,7 +11,7 @@ so.topic: reference
 Text describing task
 
 **Parameter:** 
- - **description** String
+* **description** String
 
 ```crmscript
 NSMailMergeTask thing;

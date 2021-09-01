@@ -11,7 +11,7 @@ so.topic: reference
 Id of the destination contact. The value is mandatory.
 
 **Parameter:** 
- - **destinationContactId** Integer
+* **destinationContactId** Integer
 
 ```crmscript
 NSContactRelationEntity thing;

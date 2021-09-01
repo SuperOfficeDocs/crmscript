@@ -11,7 +11,7 @@ so.topic: reference
 Updates the existing NSPreferenceDescriptionLine or creates a new NSPreferenceDescriptionLine if the id parameter is 0
 
 **Parameters**:
- - **preferenceDescriptionLine** The NSPreferenceDescriptionLine to save.
+* **preferenceDescriptionLine** The NSPreferenceDescriptionLine to save.
 
 **Returns:** NSPreferenceDescriptionLine
 

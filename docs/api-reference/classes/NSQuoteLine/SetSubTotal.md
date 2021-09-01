@@ -11,7 +11,7 @@ so.topic: reference
 Value to help the user interface, is equal to 'Quantity * ListPrice'
 
 **Parameter:** 
- - **subTotal** Float
+* **subTotal** Float
 
 ```crmscript
 NSQuoteLine thing;

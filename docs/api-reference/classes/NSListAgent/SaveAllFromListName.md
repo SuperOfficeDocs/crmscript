@@ -10,9 +10,10 @@ so.topic: reference
 
 Save all list items for the specified list defintion
 
-**Parameters:**
- - **udListDefinitionName** The name of the list definition, indicating which list to save the items to.
- - **items** The list items
+## Parameters
+
+* **udListDefinitionName** The name of the list definition, indicating which list to save the items to.
+* **items** The list items
 
 **Returns:** NSListItemEntity[]
 

@@ -10,11 +10,12 @@ so.topic: reference
 
 Do the batchupdate on selected
 
-**Parameters:**
- - **fieldValueInfos** The name of the wanted tablename
- - **tableName** The name of the table to bulk update
- - **context** Where is the function called from
- - **ids** Comma separated string of the ids of the entities to update
+## Parameters
+
+* **fieldValueInfos** The name of the wanted tablename
+* **tableName** The name of the table to bulk update
+* **context** Where is the function called from
+* **ids** Comma separated string of the ids of the entities to update
 
 **Returns:** Integer
 

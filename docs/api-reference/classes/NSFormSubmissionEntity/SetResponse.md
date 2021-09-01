@@ -11,7 +11,7 @@ so.topic: reference
 The JSON-formatted response from this form
 
 **Parameter:** 
- - **response** String
+* **response** String
 
 ```crmscript
 NSFormSubmissionEntity thing;

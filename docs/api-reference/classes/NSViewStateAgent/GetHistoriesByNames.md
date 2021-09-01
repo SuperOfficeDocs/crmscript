@@ -10,8 +10,9 @@ so.topic: reference
 
 Returns the named history lists that belong to the currently logged in user
 
-**Parameters:**
- - **historyNames** String array of list names
+## Parameters
+
+* **historyNames** String array of list names
 
 **Returns:** NSHistory[]
 

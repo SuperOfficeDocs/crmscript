@@ -9,7 +9,7 @@ so.topic: reference
 # SetCanBeActivated(Bool canBeActivated)
 
 **Parameter:** 
- - **canBeActivated** Bool
+* **canBeActivated** Bool
 
 ```crmscript
 NSExtendedLicenseInfo thing;

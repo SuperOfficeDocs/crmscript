@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSAssociate GetAssociate()
 
-The associate owning this person (similar to contact.Associate) - usually blank. Use the Person.Contact.Associate instead.  Intended for use when individual persons are created (i.e. when Person.Contact is blank)
+The associate owning this person (similar to contact.Associate)* usually blank. Use the Person.Contact.Associate instead.  Intended for use when individual persons are created (i.e. when Person.Contact is blank)
 
 **Returns:** NSAssociate
 

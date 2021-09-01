@@ -11,7 +11,7 @@ so.topic: reference
 Earning as percent of total
 
 **Parameter:** 
- - **earningPercent** Float
+* **earningPercent** Float
 
 ```crmscript
 NSSaleEntity thing;

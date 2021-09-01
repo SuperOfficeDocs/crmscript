@@ -11,7 +11,7 @@ so.topic: reference
 Rules for standard time
 
 **Parameter:** 
- - **timeZoneSTDRules** NSTimeZoneRuleDictionary
+* **timeZoneSTDRules** NSTimeZoneRuleDictionary
 
 ```crmscript
 NSTimeZoneData thing;

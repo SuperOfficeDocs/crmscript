@@ -11,7 +11,7 @@ so.topic: reference
 True if the email signature should be added in bottom of mail if this an email template
 
 **Parameter:** 
- - **includeSignature** Bool
+* **includeSignature** Bool
 
 ```crmscript
 NSDocumentTemplateEntity thing;

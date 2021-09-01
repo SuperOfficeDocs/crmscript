@@ -11,7 +11,7 @@ so.topic: reference
 Name to identify this webhook. Does not have to be unique.
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSWebhook thing;

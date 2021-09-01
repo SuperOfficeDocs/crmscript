@@ -11,7 +11,7 @@ so.topic: reference
 True if this appointment is a booking.
 
 **Parameter:** 
- - **isBooking** Bool
+* **isBooking** Bool
 
 ```crmscript
 NSAppointment thing;

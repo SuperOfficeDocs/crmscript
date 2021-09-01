@@ -10,8 +10,9 @@ so.topic: reference
 
 Delete some preferences by id
 
-**Parameters:**
- - **ids** The ids of the preference to delete
+## Parameters
+
+* **ids** The ids of the preference to delete
 
 ```crmscript
 NSPreferenceAgent agent;

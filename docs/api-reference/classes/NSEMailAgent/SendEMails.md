@@ -10,10 +10,11 @@ so.topic: reference
 
 Send the provided e-mails
 
-**Parameters:**
- - **outgoingConnectionInfo** All information needed to connect to the mailserver
- - **emails** The e-mails to send
- - **sentItemsConnectionInfo** If provided, save sent item(s) in the folder specified.  May be null.
+## Parameters
+
+* **outgoingConnectionInfo** All information needed to connect to the mailserver
+* **emails** The e-mails to send
+* **sentItemsConnectionInfo** If provided, save sent item(s) in the folder specified.  May be null.
 
 **Returns:** NSEMailEntity[]
 

@@ -11,10 +11,10 @@ so.topic: reference
 Access restrictions on the field
 
 **Parameter:** 
- - **access** Integer
-     - Enum: 0 = Normal 
-     - Enum: 1 = Mandatory 
-     - Enum: 2 = ReadOnly 
+* **access** Integer
+* Enum: 0 = Normal 
+* Enum: 1 = Mandatory 
+* Enum: 2 = ReadOnly 
 
 ```crmscript
 NSFieldMetadata thing;

@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSSystemEventEntity object.
 
-**Parameters:**
- - **systemEventEntityId** The identifier of the NSSystemEventEntity object
+## Parameters
+
+* **systemEventEntityId** The identifier of the NSSystemEventEntity object
 
 **Returns:** NSSystemEventEntity
 

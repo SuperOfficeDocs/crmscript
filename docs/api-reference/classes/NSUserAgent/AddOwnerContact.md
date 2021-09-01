@@ -8,5 +8,6 @@ so.topic: reference
 
 # Void AddOwnerContact(Integer contactId)
 
-**Parameters:**
- - **contactId** Id of the contact to add as a owner contact
+## Parameters
+
+* **contactId** Id of the contact to add as a owner contact

@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSProjectMember object.
 
-**Parameters:**
- - **projectMemberId** The identifier of the NSProjectMember object
+## Parameters
+
+* **projectMemberId** The identifier of the NSProjectMember object
 
 **Returns:** NSProjectMember
 

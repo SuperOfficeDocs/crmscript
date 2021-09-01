@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSDocument object.
 
-**Parameters:**
- - **documentId** The identifier of the NSDocument object
+## Parameters
+
+* **documentId** The identifier of the NSDocument object
 
 **Returns:** NSDocument
 

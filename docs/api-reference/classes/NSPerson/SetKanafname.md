@@ -11,7 +11,7 @@ so.topic: reference
 Kana first name, used in Japanese versions only
 
 **Parameter:** 
- - **kanafname** String
+* **kanafname** String
 
 ```crmscript
 NSPerson thing;

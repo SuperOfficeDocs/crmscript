@@ -11,7 +11,7 @@ so.topic: reference
 Multi-language name
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSPreferenceDescription thing;

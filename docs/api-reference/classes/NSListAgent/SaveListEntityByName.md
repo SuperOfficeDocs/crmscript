@@ -10,9 +10,10 @@ so.topic: reference
 
 Save a NSListEntity resolved by the provided name.
 
-**Parameters:**
- - **name** The name of the list to save.
- - **listEntity** The NSListEntity to save.
+## Parameters
+
+* **name** The name of the list to save.
+* **listEntity** The NSListEntity to save.
 
 **Returns:** NSListEntity
 

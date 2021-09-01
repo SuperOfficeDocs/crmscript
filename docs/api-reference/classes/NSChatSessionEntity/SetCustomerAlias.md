@@ -11,7 +11,7 @@ so.topic: reference
 The alias for the customer.
 
 **Parameter:** 
- - **customerAlias** String
+* **customerAlias** String
 
 ```crmscript
 NSChatSessionEntity thing;

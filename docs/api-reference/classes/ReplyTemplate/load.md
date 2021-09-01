@@ -12,7 +12,7 @@ This function loads a reply template to the object.
 
 ## Parameters
 
- - Reply Template ID
+* Reply Template ID
 
 Returns true if Reply Template with given ID loaded successfully
 

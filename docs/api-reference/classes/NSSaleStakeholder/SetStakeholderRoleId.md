@@ -8,10 +8,10 @@ so.topic: reference
 
 # SetStakeholderRoleId(Integer stakeholderRoleId)
 
-Stakeholde role list id - Primary key
+Stakeholde role list id* Primary key
 
 **Parameter:** 
- - **stakeholderRoleId** Integer
+* **stakeholderRoleId** Integer
 
 ```crmscript
 NSSaleStakeholder thing;

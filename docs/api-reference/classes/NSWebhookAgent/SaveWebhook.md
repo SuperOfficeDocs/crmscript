@@ -11,7 +11,7 @@ so.topic: reference
 Updates the existing NSWebhook or creates a new NSWebhook if the id parameter is 0
 
 **Parameters**:
- - **webhook** The NSWebhook to save.
+* **webhook** The NSWebhook to save.
 
 **Returns:** New or updated NSWebhook
 

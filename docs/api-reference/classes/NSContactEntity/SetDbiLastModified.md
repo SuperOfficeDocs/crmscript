@@ -11,7 +11,7 @@ so.topic: reference
 When the entry was last modified.
 
 **Parameter:** 
- - **dbiLastModified** DateTime
+* **dbiLastModified** DateTime
 
 ```crmscript
 NSContactEntity thing;

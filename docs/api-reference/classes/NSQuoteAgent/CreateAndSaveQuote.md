@@ -10,10 +10,11 @@ so.topic: reference
 
 Creates a new quote on a sale.
 
-**Parameters:**
- - **saleId** SaleId of the connected sale
- - **connectionId** ConnectionId
- - **firstAlternativeName** Name to be given to the default alternative
+## Parameters
+
+* **saleId** SaleId of the connected sale
+* **connectionId** ConnectionId
+* **firstAlternativeName** Name to be given to the default alternative
 
 **Returns:** NSQuoteEntity
 

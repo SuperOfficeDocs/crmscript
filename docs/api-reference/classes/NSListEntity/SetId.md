@@ -11,7 +11,7 @@ so.topic: reference
 The identity of the list
 
 **Parameter:** 
- - **id** Integer
+* **id** Integer
 
 ```crmscript
 NSListEntity thing;

@@ -10,8 +10,9 @@ so.topic: reference
 
 Does this sale have a sale guide associated with its sale type?
 
-**Parameters:**
- - **saleId** Sale id
+## Parameters
+
+* **saleId** Sale id
 
 **Returns:** Bool
 

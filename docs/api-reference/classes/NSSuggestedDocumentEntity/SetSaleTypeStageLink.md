@@ -11,7 +11,7 @@ so.topic: reference
 Sale type and stage link info.
 
 **Parameter:** 
- - **saleTypeStageLink** NSSaleTypeStageLink
+* **saleTypeStageLink** NSSaleTypeStageLink
 
 ```crmscript
 NSSuggestedDocumentEntity thing;

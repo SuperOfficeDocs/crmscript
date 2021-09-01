@@ -9,7 +9,7 @@ so.topic: reference
 # SetSuggestedSessionKey(String suggestedSessionKey)
 
 **Parameter:** 
- - **suggestedSessionKey** String
+* **suggestedSessionKey** String
 
 ```crmscript
 NSOutgoingMessage thing;

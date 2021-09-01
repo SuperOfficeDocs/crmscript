@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **reportLabelLayoutId** Integer
+* **reportLabelLayoutId** Integer
 
 ```crmscript
 NSReportLabelLayoutEntity thing;

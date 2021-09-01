@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **legalBaseId** Integer
+* **legalBaseId** Integer
 
 ```crmscript
 NSLegalBase thing;

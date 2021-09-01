@@ -11,7 +11,7 @@ so.topic: reference
 The dialog, panel or whatever that owns this record
 
 **Parameter:** 
- - **ownerWindow** String
+* **ownerWindow** String
 
 ```crmscript
 NSWindowPosSize thing;

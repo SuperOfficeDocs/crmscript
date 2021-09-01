@@ -11,7 +11,7 @@ so.topic: reference
 Tooltip for the field name.
 
 **Parameter:** 
- - **displayDescription** String
+* **displayDescription** String
 
 ```crmscript
 NSFieldMetadata thing;

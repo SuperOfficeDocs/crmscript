@@ -11,7 +11,7 @@ so.topic: reference
 Checks if the person object is an associate. The property is read-only.
 
 **Parameter:** 
- - **isAssociate** Bool
+* **isAssociate** Bool
 
 ```crmscript
 NSPersonEntity thing;

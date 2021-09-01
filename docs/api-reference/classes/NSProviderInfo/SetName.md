@@ -11,7 +11,7 @@ so.topic: reference
 Unique name of the provider plugin
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSProviderInfo thing;

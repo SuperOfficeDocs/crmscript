@@ -11,7 +11,7 @@ so.topic: reference
 Updates the existing NSStatusMonitor or creates a new NSStatusMonitor if the id parameter is 0
 
 **Parameters**:
- - **statusMonitor** The NSStatusMonitor to save.
+* **statusMonitor** The NSStatusMonitor to save.
 
 **Returns:** NSStatusMonitor
 

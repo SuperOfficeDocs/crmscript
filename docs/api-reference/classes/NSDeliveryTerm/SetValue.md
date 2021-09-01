@@ -11,7 +11,7 @@ so.topic: reference
 Set the name of the NSDeliveryTerm item.
 
 **Parameter:** 
- - **value** String NSDeliveryTerm name.
+* **value** String NSDeliveryTerm name.
 
 ```crmscript
 NSDeliveryTerm thing;

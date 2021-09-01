@@ -9,7 +9,7 @@ so.topic: reference
 # SetPrerequisiteModuleName(String prerequisiteModuleName)
 
 **Parameter:** 
- - **prerequisiteModuleName** String
+* **prerequisiteModuleName** String
 
 ```crmscript
 NSModuleLicenseLink thing;

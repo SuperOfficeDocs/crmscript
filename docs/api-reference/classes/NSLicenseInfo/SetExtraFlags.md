@@ -11,7 +11,7 @@ so.topic: reference
 Unspecified extra flags of license, part of checksum
 
 **Parameter:** 
- - **extraFlags** Integer
+* **extraFlags** Integer
 
 ```crmscript
 NSLicenseInfo thing;

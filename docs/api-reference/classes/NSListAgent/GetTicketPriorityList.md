@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a vector of NSTicketPriority objects.
 
-**Parameters:**
- - **ticketPriorityIds** The identifiers of the NSTicketPriority objects
+## Parameters
+
+* **ticketPriorityIds** The identifiers of the NSTicketPriority objects
 
 **Returns:** NSTicketPriority[]
 

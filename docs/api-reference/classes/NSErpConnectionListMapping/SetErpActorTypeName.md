@@ -11,7 +11,7 @@ so.topic: reference
 The actorType belonging to the ListMapping
 
 **Parameter:** 
- - **erpActorTypeName** String
+* **erpActorTypeName** String
 
 ```crmscript
 NSErpConnectionListMapping thing;

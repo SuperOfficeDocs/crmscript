@@ -11,7 +11,7 @@ so.topic: reference
 Typically used in a tooltip.
 
 **Parameter:** 
- - **displayDescription** String
+* **displayDescription** String
 
 ```crmscript
 NSQuoteListItem thing;

@@ -10,12 +10,13 @@ so.topic: reference
 
 Do the actual import
 
-**Parameters:**
- - **importLines** The rows that will be imported
- - **columnDefinition** An array of the columndefinitions, like firstname, lastname, ...
- - **createSelection** true if a selection of the imported entities shall be made
- - **culture** The current culture used in the import. Used to match language specific strings
- - **context** Optional context for the import.
+## Parameters
+
+* **importLines** The rows that will be imported
+* **columnDefinition** An array of the columndefinitions, like firstname, lastname, ...
+* **createSelection** true if a selection of the imported entities shall be made
+* **culture** The current culture used in the import. Used to match language specific strings
+* **context** Optional context for the import.
 
 **Returns:** Integer[]
 

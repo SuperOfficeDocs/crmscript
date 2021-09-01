@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a vector of NSConsentPurpose objects.
 
-**Parameters:**
- - **consentPurposeIds** The identifiers of the NSConsentPurpose objects
+## Parameters
+
+* **consentPurposeIds** The identifiers of the NSConsentPurpose objects
 
 **Returns:** NSConsentPurpose[]
 

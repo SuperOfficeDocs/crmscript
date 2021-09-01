@@ -10,8 +10,9 @@ so.topic: reference
 
 Updates a NSProjectMember row.
 
-**Parameters:**
- - **projectMember** NSProjectMember to update
+## Parameters
+
+* **projectMember** NSProjectMember to update
 
 **Returns:** NSProjectMember
 

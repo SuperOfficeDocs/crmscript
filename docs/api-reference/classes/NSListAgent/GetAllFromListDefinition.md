@@ -10,9 +10,10 @@ so.topic: reference
 
 Get all list items for the specified list defintion
 
-**Parameters:**
- - **udListDefinitionId** The id of the list definition, indicating which list to get the item from. Negative numbers indicate TableNumber value instead of UDListDefId. e.g. -64 = category.
- - **includeDeleted** Include deleted items in result?
+## Parameters
+
+* **udListDefinitionId** The id of the list definition, indicating which list to get the item from. Negative numbers indicate TableNumber value instead of UDListDefId. e.g. -64 = category.
+* **includeDeleted** Include deleted items in result?
 
 **Returns:** NSListItemEntity[]
 

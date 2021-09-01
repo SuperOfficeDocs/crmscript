@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSRelationDefinitionEntity object.
 
-**Parameters:**
- - **relationDefinitionEntityId** The identifier of the NSRelationDefinitionEntity object
+## Parameters
+
+* **relationDefinitionEntityId** The identifier of the NSRelationDefinitionEntity object
 
 **Returns:** NSRelationDefinitionEntity
 

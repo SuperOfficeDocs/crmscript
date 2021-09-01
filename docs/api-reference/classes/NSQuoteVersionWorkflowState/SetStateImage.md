@@ -11,7 +11,7 @@ so.topic: reference
 Information about the state image for the current quote version.
 
 **Parameter:** 
- - **stateImage** QuoteVersionButtonState
+* **stateImage** QuoteVersionButtonState
 
 ```crmscript
 NSQuoteVersionWorkflowState thing;

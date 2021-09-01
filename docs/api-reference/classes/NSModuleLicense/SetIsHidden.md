@@ -11,7 +11,7 @@ so.topic: reference
 If true, then this module should not appear in GUI and is not assignable by users
 
 **Parameter:** 
- - **isHidden** Bool
+* **isHidden** Bool
 
 ```crmscript
 NSModuleLicense thing;

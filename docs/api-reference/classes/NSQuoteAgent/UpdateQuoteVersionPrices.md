@@ -10,8 +10,9 @@ so.topic: reference
 
 Update price on the all the quotelines for each alternative in the current quote version
 
-**Parameters:**
- - **quoteVersionId** The version to be update prices for
+## Parameters
+
+* **quoteVersionId** The version to be update prices for
 
 **Returns:** NSQuoteVersionValidated
 

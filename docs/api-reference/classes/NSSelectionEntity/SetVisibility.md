@@ -11,7 +11,7 @@ so.topic: reference
 Obsolete, but still maintained denormalization of visiblefor
 
 **Parameter:** 
- - **visibility** Integer
+* **visibility** Integer
 
 ```crmscript
 NSSelectionEntity thing;

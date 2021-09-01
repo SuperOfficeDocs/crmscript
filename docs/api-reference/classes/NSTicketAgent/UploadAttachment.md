@@ -10,6 +10,7 @@ so.topic: reference
 
 Upload an attachment and return the attachment id
 
-**Parameters:**
- - **attachmentId** The id of the attachment row, for which to attach the upload data
- - **content** A stream to the content to be uploaded
+## Parameters
+
+* **attachmentId** The id of the attachment row, for which to attach the upload data
+* **content** A stream to the content to be uploaded

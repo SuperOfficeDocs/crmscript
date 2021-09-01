@@ -8,8 +8,9 @@ so.topic: reference
 
 # NSConsentSource SaveConsentSource(NSConsentSource consentSource)
 
-**Parameters:**
- - **consentSource** 
+## Parameters
+
+* **consentSource** 
 
 **Returns:** NSConsentSource
 

@@ -10,9 +10,10 @@ so.topic: reference
 
 Remove a user from a topic
 
-**Parameters:**
- - **chatTopicId** Id of the chat topic
- - **username** Associate username or associate id to delete.
+## Parameters
+
+* **chatTopicId** Id of the chat topic
+* **username** Associate username or associate id to delete.
 
 **Returns:** This method has no return value
 

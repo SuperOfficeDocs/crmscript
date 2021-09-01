@@ -10,8 +10,9 @@ so.topic: reference
 
 Tests to see if we can establish a connection with the given config fields
 
-**Parameters:**
- - **erpConnectionId** The id of the connection
+## Parameters
+
+* **erpConnectionId** The id of the connection
 
 **Returns:** Bool
 

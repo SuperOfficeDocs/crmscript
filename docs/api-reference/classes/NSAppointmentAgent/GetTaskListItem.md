@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSTaskListItem object.
 
-**Parameters:**
- - **taskListItemId** The identifier of the NSTaskListItem object
+## Parameters
+
+* **taskListItemId** The identifier of the NSTaskListItem object
 
 **Returns:** NSTaskListItem
 

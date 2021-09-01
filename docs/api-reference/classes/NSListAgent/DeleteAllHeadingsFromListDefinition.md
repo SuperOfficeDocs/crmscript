@@ -10,8 +10,9 @@ so.topic: reference
 
 Delete all headings for list resolved by the provided id.
 
-**Parameters:**
- - **id** The id of the list to look up.
+## Parameters
+
+* **id** The id of the list to look up.
 
 ```crmscript
 NSListAgent agent;

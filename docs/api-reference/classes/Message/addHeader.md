@@ -14,6 +14,5 @@ The headers will be shown at the view request page, listed at the message.
 
 ## Parameters
 
- - Type of header as a String, examples are To, Cc, SMS, Bcc
- - The header to add as a String, common values are recpients of the message as a commaseparated String.
-
+* Type of header as a String, examples are To, Cc, SMS, Bcc
+* The header to add as a String, common values are recpients of the message as a commaseparated String.

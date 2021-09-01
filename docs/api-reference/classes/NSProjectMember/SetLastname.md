@@ -11,7 +11,7 @@ so.topic: reference
 Last name
 
 **Parameter:** 
- - **lastname** String
+* **lastname** String
 
 ```crmscript
 NSProjectMember thing;

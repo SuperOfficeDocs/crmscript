@@ -11,7 +11,7 @@ so.topic: reference
 Should this field be shown to external users via customer center?
 
 **Parameter:** 
- - **isExternal** Bool
+* **isExternal** Bool
 
 ```crmscript
 NSFieldInfoBase thing;

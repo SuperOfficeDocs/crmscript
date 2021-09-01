@@ -8,7 +8,7 @@ so.topic: reference
 
 # String GetResourceName()
 
-The name of the resource, without any brackets or braces - example: SR_CONTACT
+The name of the resource, without any brackets or braces* example: SR_CONTACT
 
 **Returns:** String
 

@@ -11,7 +11,7 @@ so.topic: reference
 Rank field for ordering sections, and keys within sections
 
 **Parameter:** 
- - **rank** Integer
+* **rank** Integer
 
 ```crmscript
 NSPreferenceDescription thing;

@@ -8,4 +8,4 @@ so.topic: reference
 
 # DbiControl
 
-This class is used for communicating with DBI agents - to share data with external systems.
+This class is used for communicating with DBI agents* to share data with external systems.

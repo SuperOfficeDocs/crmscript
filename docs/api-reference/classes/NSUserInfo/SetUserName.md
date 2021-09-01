@@ -11,7 +11,7 @@ so.topic: reference
 Initials, also login name, possibly database user name
 
 **Parameter:** 
- - **userName** String
+* **userName** String
 
 ```crmscript
 NSUserInfo thing;

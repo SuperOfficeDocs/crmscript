@@ -11,7 +11,7 @@ so.topic: reference
 Who the task should be visible for
 
 **Parameter:** 
- - **visibleFor** VisibleFor
+* **visibleFor** VisibleFor
 
 ```crmscript
 NSMailMergeTask thing;

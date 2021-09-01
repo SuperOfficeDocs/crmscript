@@ -11,7 +11,7 @@ so.topic: reference
 Start date/time in ICS file.
 
 **Parameter:** 
- - **dtStart** DateTime
+* **dtStart** DateTime
 
 ```crmscript
 NSEMailAppointment thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Name of user defined ticket status
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSTicketStatusEntity thing;

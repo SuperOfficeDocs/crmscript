@@ -11,7 +11,7 @@ so.topic: reference
 Phone number
 
 **Parameter:** 
- - **phone** String
+* **phone** String
 
 ```crmscript
 NSProjectMember thing;

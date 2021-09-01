@@ -12,6 +12,6 @@ Adds a timespan to the schedule.
 
 ## Parameters
 
- - start: Start time for calculation
- - add: The timespan to add (2 days, 1 hours, 5 minutes, 30 seconds...)
+* start: Start time for calculation
+* add: The timespan to add (2 days, 1 hours, 5 minutes, 30 seconds...)
 

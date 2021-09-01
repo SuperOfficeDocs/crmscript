@@ -11,7 +11,7 @@ so.topic: reference
 The badge header of the chat topic
 
 **Parameter:** 
- - **badgeHeader** String
+* **badgeHeader** String
 
 ```crmscript
 NSChatTopicEntity thing;

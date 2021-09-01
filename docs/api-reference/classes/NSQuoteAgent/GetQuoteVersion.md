@@ -10,8 +10,9 @@ so.topic: reference
 
 Get a NSQuoteVersion
 
-**Parameters:**
- - **quoteVersionId** QuoteVersionId to get information from
+## Parameters
+
+* **quoteVersionId** QuoteVersionId to get information from
 
 **Returns:** NSQuoteVersion
 

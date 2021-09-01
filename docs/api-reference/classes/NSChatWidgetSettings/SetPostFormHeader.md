@@ -11,7 +11,7 @@ so.topic: reference
 Header text to show in post chat form
 
 **Parameter:** 
- - **postFormHeader** String
+* **postFormHeader** String
 
 ```crmscript
 NSChatWidgetSettings thing;

@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSSaleStakeholder object.
 
-**Parameters:**
- - **saleStakeholderId** The identifier of the NSSaleStakeholder object
+## Parameters
+
+* **saleStakeholderId** The identifier of the NSSaleStakeholder object
 
 **Returns:** NSSaleStakeholder
 

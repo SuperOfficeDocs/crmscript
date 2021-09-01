@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSDashboard object.
 
-**Parameters:**
- - **dashboardId** The identifier of the NSDashboard object
+## Parameters
+
+* **dashboardId** The identifier of the NSDashboard object
 
 **Returns:** NSDashboard
 

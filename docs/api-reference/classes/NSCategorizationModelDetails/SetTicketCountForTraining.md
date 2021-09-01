@@ -11,7 +11,7 @@ so.topic: reference
 Number of tickets used to train the model
 
 **Parameter:** 
- - **ticketCountForTraining** Integer
+* **ticketCountForTraining** Integer
 
 ```crmscript
 NSCategorizationModelDetails thing;

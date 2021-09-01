@@ -12,6 +12,6 @@ Set the variable with the given name to the given value in the Parser instance. 
 
 ## Parameters
 
- - name: The name of the variable to set.
- - value: The value to set.
+* name: The name of the variable to set.
+* value: The value to set.
 

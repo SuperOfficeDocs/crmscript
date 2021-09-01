@@ -10,8 +10,9 @@ so.topic: reference
 
 Delete a trigger CRMScript.
 
-**Parameters:**
- - **triggerScriptUniqueId** The unique id of the CRMScript to validate
+## Parameters
+
+* **triggerScriptUniqueId** The unique id of the CRMScript to validate
 
 ```crmscript
 NSCRMScriptAgent agent;

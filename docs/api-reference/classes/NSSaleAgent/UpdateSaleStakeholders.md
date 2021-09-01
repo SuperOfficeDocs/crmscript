@@ -8,7 +8,8 @@ so.topic: reference
 
 # NSSaleStakeholder[] UpdateSaleStakeholders(NSSaleStakeholder[] stakeholders)
 
-**Parameters:**
- - **stakeholders** 
+## Parameters
+
+* **stakeholders** 
 
 **Returns:** NSSaleStakeholder[]

@@ -11,7 +11,7 @@ so.topic: reference
 Record in the referenced table
 
 **Parameter:** 
- - **recordId** Integer
+* **recordId** Integer
 
 ```crmscript
 NSForeignKey thing;

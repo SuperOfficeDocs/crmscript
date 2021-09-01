@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a vector of NSCurrency objects.
 
-**Parameters:**
- - **currencyIds** The identifiers of the NSCurrency objects
+## Parameters
+
+* **currencyIds** The identifiers of the NSCurrency objects
 
 **Returns:** NSCurrency[]
 

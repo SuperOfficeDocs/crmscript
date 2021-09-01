@@ -11,7 +11,7 @@ so.topic: reference
 Set the tooltip description for the NSCustomerLanguage list item.
 
 **Parameter:** 
- - **tooltip** String NSCustomerLanguage tooltip description.
+* **tooltip** String NSCustomerLanguage tooltip description.
 
 ```crmscript
 NSCustomerLanguage thing;

@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets the standard tile (not personal tile) corresponding to the given chart id
 
-**Parameters:**
- - **chartId** The ChartId of the wanted chart/tile
+## Parameters
+
+* **chartId** The ChartId of the wanted chart/tile
 
 **Returns:** NSDashboardTile
 

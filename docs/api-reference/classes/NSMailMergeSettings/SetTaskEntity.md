@@ -11,7 +11,7 @@ so.topic: reference
 If specified, register a task on recipients using properties from this object.
 
 **Parameter:** 
- - **taskEntity** NSMailMergeTask
+* **taskEntity** NSMailMergeTask
 
 ```crmscript
 NSMailMergeSettings thing;

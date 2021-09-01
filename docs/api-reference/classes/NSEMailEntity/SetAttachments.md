@@ -9,7 +9,7 @@ so.topic: reference
 # SetAttachments(NSEMailAttachment[] attachments)
 
 **Parameter:** 
- - **attachments** NSEMailAttachment[]
+* **attachments** NSEMailAttachment[]
 
 ```crmscript
 NSEMailEntity thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Set the name of the NSReason item.
 
 **Parameter:** 
- - **value** String NSReason name.
+* **value** String NSReason name.
 
 ```crmscript
 NSReason thing;

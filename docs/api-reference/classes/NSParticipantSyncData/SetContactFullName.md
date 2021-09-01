@@ -9,7 +9,7 @@ so.topic: reference
 # SetContactFullName(String contactFullName)
 
 **Parameter:** 
- - **contactFullName** String
+* **contactFullName** String
 
 ```crmscript
 NSParticipantSyncData thing;

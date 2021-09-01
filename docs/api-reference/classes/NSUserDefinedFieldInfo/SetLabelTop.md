@@ -11,7 +11,7 @@ so.topic: reference
 Y pixel coordinate of label
 
 **Parameter:** 
- - **labelTop** Integer
+* **labelTop** Integer
 
 ```crmscript
 NSUserDefinedFieldInfo thing;

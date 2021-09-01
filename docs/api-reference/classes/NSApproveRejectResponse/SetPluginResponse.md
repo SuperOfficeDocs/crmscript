@@ -11,7 +11,7 @@ so.topic: reference
 The response from the operation.
 
 **Parameter:** 
- - **pluginResponse** NSPluginResponse
+* **pluginResponse** NSPluginResponse
 
 ```crmscript
 NSApproveRejectResponse thing;

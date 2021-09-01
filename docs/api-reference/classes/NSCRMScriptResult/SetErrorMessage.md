@@ -11,7 +11,7 @@ so.topic: reference
 Contains the error message for a non-valide CRMScript
 
 **Parameter:** 
- - **errorMessage** String
+* **errorMessage** String
 
 ```crmscript
 NSCRMScriptResult thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Set the primary key (id) for the NSSaleType
 
 **Parameter:** 
- - **id** Integer NSSaleType id.
+* **id** Integer NSSaleType id.
 
 ```crmscript
 NSSaleType thing;

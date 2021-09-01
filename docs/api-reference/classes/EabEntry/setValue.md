@@ -13,20 +13,20 @@ Sets the value of the given field in the EabEntry instance.
 
 ## Available fields
 
- - name
- - email
- - sms
- - folderId
- - dbi\_agent_id
- - dbi\_key
- - dbi\_last_syncronized
- - dbi\_last_modified
- - dbi\_delete
+* name
+* email
+* sms
+* folderId
+* dbi\_agent_id
+* dbi\_key
+* dbi\_last_syncronized
+* dbi\_last_modified
+* dbi\_delete
 
 ## Parameters
 
- - p0: The name of the field.
- - p1: The value to set.
+* p0: The name of the field.
+* p1: The value to set.
 
 ## Example
 

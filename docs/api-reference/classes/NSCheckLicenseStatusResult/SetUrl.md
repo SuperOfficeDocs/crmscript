@@ -11,7 +11,7 @@ so.topic: reference
 Url to show to the user.  This is relevant when LinkType is 60.
 
 **Parameter:** 
- - **url** String
+* **url** String
 
 ```crmscript
 NSCheckLicenseStatusResult thing;

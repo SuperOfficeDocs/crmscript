@@ -11,7 +11,7 @@ so.topic: reference
 Number of attachments in the message
 
 **Parameter:** 
- - **numAttachments** Integer
+* **numAttachments** Integer
 
 ```crmscript
 NSTicketMessage thing;

@@ -11,7 +11,7 @@ so.topic: reference
 SMS version of this message
 
 **Parameter:** 
- - **smsMessage** String
+* **smsMessage** String
 
 ```crmscript
 NSShipmentMessageEntity thing;

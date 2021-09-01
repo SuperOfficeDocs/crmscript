@@ -11,7 +11,7 @@ so.topic: reference
 Should we save a reference to the merge document on each recipient.
 
 **Parameter:** 
- - **saveDocument** Bool
+* **saveDocument** Bool
 
 ```crmscript
 NSMailMergeSettings thing;

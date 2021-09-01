@@ -10,12 +10,13 @@ so.topic: reference
 
 Creates an associate of type external user.
 
-**Parameters:**
- - **personId** The personId to create an external user for.
- - **userName** Login username.
- - **password** Login password.
- - **roleId** Id of role for the external user. The role must be a role of type external users.
- - **isActive** Set isActive to true to enable the external user to log in.
+## Parameters
+
+* **personId** The personId to create an external user for.
+* **userName** Login username.
+* **password** Login password.
+* **roleId** Id of role for the external user. The role must be a role of type external users.
+* **isActive** Set isActive to true to enable the external user to log in.
 
 **Returns:** Integer
 

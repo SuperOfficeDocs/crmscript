@@ -11,7 +11,7 @@ so.topic: reference
 The projects status
 
 **Parameter:** 
- - **status** String
+* **status** String
 
 ```crmscript
 NSProject thing;

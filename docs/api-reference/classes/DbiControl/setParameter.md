@@ -13,6 +13,6 @@ This function allows you to set parameter values that is sent to the external DB
 
 ## Parameters
 
- - name: The name of the parameter - for instance "resultSet.size"
- - val: A string representation of the value - for instance "100".
+* name: The name of the parameter* for instance "resultSet.size"
+* val: A string representation of the value* for instance "100".
 

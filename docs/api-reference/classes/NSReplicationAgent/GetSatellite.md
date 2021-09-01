@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSSatellite object.
 
-**Parameters:**
- - **satelliteId** The identifier of the NSSatellite object
+## Parameters
+
+* **satelliteId** The identifier of the NSSatellite object
 
 **Returns:** NSSatellite
 

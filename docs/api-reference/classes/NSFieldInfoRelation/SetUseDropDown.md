@@ -11,7 +11,7 @@ so.topic: reference
 Show as dropdown list on target?
 
 **Parameter:** 
- - **useDropDown** Bool
+* **useDropDown** Bool
 
 ```crmscript
 NSFieldInfoRelation thing;

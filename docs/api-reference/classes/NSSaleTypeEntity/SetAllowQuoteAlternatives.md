@@ -11,7 +11,7 @@ so.topic: reference
 Can quotes linked to sales of this type, have multiple Alternatives
 
 **Parameter:** 
- - **allowQuoteAlternatives** Bool
+* **allowQuoteAlternatives** Bool
 
 ```crmscript
 NSSaleTypeEntity thing;

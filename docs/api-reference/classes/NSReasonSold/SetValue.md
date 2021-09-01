@@ -11,7 +11,7 @@ so.topic: reference
 Set the name of the ReasonSold item.
 
 **Parameter:** 
- - **value** String ReasonSold name.
+* **value** String ReasonSold name.
 
 ```crmscript
 NSReasonSold thing;

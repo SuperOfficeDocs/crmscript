@@ -11,7 +11,7 @@ so.topic: reference
 Default currency for this country
 
 **Parameter:** 
- - **currencyId** Integer
+* **currencyId** Integer
 
 ```crmscript
 NSCountry thing;

@@ -11,7 +11,7 @@ so.topic: reference
 True if the entity shall be imported, false if the entity shall be ignored
 
 **Parameter:** 
- - **selected** Bool
+* **selected** Bool
 
 ```crmscript
 NSImportLine thing;

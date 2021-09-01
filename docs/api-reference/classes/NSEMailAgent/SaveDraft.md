@@ -10,8 +10,9 @@ so.topic: reference
 
 Save the Email entity to the drafts folder
 
-**Parameters:**
- - **entity** The entity to save
+## Parameters
+
+* **entity** The entity to save
 
 **Returns:** NSEMailEntity
 

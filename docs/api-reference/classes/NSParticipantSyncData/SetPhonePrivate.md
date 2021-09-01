@@ -11,7 +11,7 @@ so.topic: reference
 Returns a collection of phone numbers that belong to the contact person.
 
 **Parameter:** 
- - **phonePrivate** String[]
+* **phonePrivate** String[]
 
 ```crmscript
 NSParticipantSyncData thing;

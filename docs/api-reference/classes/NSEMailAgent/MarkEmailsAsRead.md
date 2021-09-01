@@ -10,6 +10,7 @@ so.topic: reference
 
 Mark one or more e-mails as (un)read
 
-**Parameters:**
- - **ids** The e-mails to handle
- - **read** If true mails are marked as read. If false mails are marked as unread.
+## Parameters
+
+* **ids** The e-mails to handle
+* **read** If true mails are marked as read. If false mails are marked as unread.

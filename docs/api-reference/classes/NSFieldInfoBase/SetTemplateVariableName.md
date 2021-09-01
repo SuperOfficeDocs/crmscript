@@ -11,7 +11,7 @@ so.topic: reference
 Template variable name: 'cs01', 'cl02' etc. Null for extra fields.
 
 **Parameter:** 
- - **templateVariableName** String
+* **templateVariableName** String
 
 ```crmscript
 NSFieldInfoBase thing;

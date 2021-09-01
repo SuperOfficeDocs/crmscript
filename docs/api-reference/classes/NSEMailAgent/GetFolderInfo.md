@@ -10,9 +10,10 @@ so.topic: reference
 
 Retrieve information about folders.  If folders parameter is not specified(null), information about all subscribed folders will be returned.
 
-**Parameters:**
- - **connectionInfo** All information needed to connect to the mailserver
- - **folders** Folders to get information about.
+## Parameters
+
+* **connectionInfo** All information needed to connect to the mailserver
+* **folders** Folders to get information about.
 
 **Returns:** NSEMailFolder[]
 

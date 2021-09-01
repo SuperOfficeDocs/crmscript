@@ -11,7 +11,7 @@ so.topic: reference
 Recent documents on person
 
 **Parameter:** 
- - **documents** NSActivitySummaryItem[]
+* **documents** NSActivitySummaryItem[]
 
 ```crmscript
 NSPersonSummary thing;

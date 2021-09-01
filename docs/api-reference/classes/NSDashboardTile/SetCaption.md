@@ -11,7 +11,7 @@ so.topic: reference
 The tile caption
 
 **Parameter:** 
- - **caption** String
+* **caption** String
 
 ```crmscript
 NSDashboardTile thing;

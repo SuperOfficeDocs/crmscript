@@ -10,8 +10,9 @@ so.topic: reference
 
 Check if a CS session is valid
 
-**Parameters:**
- - **csSessionKey** The CS session key to check
+## Parameters
+
+* **csSessionKey** The CS session key to check
 
 **Returns:** Bool
 

@@ -10,7 +10,8 @@ so.topic: reference
 
 Returns the user associated with the supplied person id
 
-**Parameters:**
- - **personId** 
+## Parameters
+
+* **personId** 
 
 **Returns:** NSUser

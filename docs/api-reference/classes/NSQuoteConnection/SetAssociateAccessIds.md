@@ -11,7 +11,7 @@ so.topic: reference
 Array of ids containing associates that will have access to this connection.
 
 **Parameter:** 
- - **associateAccessIds** Integer[]
+* **associateAccessIds** Integer[]
 
 ```crmscript
 NSQuoteConnection thing;

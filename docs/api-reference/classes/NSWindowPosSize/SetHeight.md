@@ -11,7 +11,7 @@ so.topic: reference
 The height of the widget
 
 **Parameter:** 
- - **height** Integer
+* **height** Integer
 
 ```crmscript
 NSWindowPosSize thing;

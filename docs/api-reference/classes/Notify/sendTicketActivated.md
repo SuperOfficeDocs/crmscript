@@ -12,5 +12,5 @@ This method will send a notification about a ticket being activated, according t
 
 ## Parameters
 
- - ticketId: The id of the ticket to be notified about
+* ticketId: The id of the ticket to be notified about
 

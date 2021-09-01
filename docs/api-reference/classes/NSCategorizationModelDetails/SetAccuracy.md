@@ -11,7 +11,7 @@ so.topic: reference
 Accuracy of the trained model
 
 **Parameter:** 
- - **accuracy** Float
+* **accuracy** Float
 
 ```crmscript
 NSCategorizationModelDetails thing;

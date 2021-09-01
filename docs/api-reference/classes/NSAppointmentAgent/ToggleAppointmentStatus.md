@@ -10,8 +10,9 @@ so.topic: reference
 
 Sets an appointment's status to Completed if the appointment had a different status, or sets the status to started if already set to completed.
 
-**Parameters:**
- - **appointmentId** The appointment id.
+## Parameters
+
+* **appointmentId** The appointment id.
 
 **Returns:** The new AppointmentStatus
 

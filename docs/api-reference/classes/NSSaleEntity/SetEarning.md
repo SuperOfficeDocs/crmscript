@@ -11,7 +11,7 @@ so.topic: reference
 Earning on sale
 
 **Parameter:** 
- - **earning** Float
+* **earning** Float
 
 ```crmscript
 NSSaleEntity thing;

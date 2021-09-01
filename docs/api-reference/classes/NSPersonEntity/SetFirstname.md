@@ -11,7 +11,7 @@ so.topic: reference
 First name
 
 **Parameter:** 
- - **firstname** String
+* **firstname** String
 
 ```crmscript
 NSPersonEntity thing;

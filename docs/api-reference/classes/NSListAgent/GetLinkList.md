@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a vector of Link objects.
 
-**Parameters:**
- - **linkIds** The identifiers of the NSLink objects
+## Parameters
+
+* **linkIds** The identifiers of the NSLink objects
 
 **Returns:** NSLink[]
 

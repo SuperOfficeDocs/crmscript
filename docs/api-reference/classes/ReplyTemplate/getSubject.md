@@ -12,7 +12,7 @@ Returns the Reply template subject, in the language given by language. The reply
 
 ## Parameters
 
- - language as an integer, see below
+* language as an integer, see below
 
 ## Languages
 

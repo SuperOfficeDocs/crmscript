@@ -10,9 +10,10 @@ so.topic: reference
 
 Returns all sales for the person provided.
 
-**Parameters:**
- - **personId** The ID of the person whose sales we want.
- - **onlyOpenSales** If true, only get open sales.
+## Parameters
+
+* **personId** The ID of the person whose sales we want.
+* **onlyOpenSales** If true, only get open sales.
 
 **Returns:** NSSale[]
 

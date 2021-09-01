@@ -11,7 +11,7 @@ so.topic: reference
 Tooltip for this consent source
 
 **Parameter:** 
- - **tooltip** String
+* **tooltip** String
 
 ```crmscript
 NSConsentSource thing;

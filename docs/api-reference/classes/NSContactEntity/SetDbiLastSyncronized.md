@@ -11,7 +11,7 @@ so.topic: reference
 Last external syncronization.
 
 **Parameter:** 
- - **dbiLastSyncronized** DateTime
+* **dbiLastSyncronized** DateTime
 
 ```crmscript
 NSContactEntity thing;

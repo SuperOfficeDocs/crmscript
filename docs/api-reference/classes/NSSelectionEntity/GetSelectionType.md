@@ -12,9 +12,9 @@ Static/Dynamic/Combined?
 
 **Returns:** Integer
 
-     - Enum: 0 = Static 
-     - Enum: 1 = Dynamic 
-     - Enum: 2 = Combined 
+* Enum: 0 = Static 
+* Enum: 1 = Dynamic 
+* Enum: 2 = Combined 
 
 ```crmscript
 NSSelectionEntity thing;

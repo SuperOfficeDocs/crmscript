@@ -10,8 +10,9 @@ so.topic: reference
 
 Get all preference description lines from a prefDesc_id
 
-**Parameters:**
- - **prefDescId** The id of the preference description this line is connected to
+## Parameters
+
+* **prefDescId** The id of the preference description this line is connected to
 
 **Returns:** NSPreferenceDescriptionLine[]
 

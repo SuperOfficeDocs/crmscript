@@ -11,7 +11,7 @@ so.topic: reference
 Name of the project this project member belongs to.
 
 **Parameter:** 
- - **projectName** String
+* **projectName** String
 
 ```crmscript
 NSProjectMember thing;

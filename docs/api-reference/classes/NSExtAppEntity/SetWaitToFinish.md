@@ -11,7 +11,7 @@ so.topic: reference
 True if the application shall wait for fininsh event
 
 **Parameter:** 
- - **waitToFinish** Bool
+* **waitToFinish** Bool
 
 ```crmscript
 NSExtAppEntity thing;

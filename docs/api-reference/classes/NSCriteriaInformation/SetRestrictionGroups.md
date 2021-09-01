@@ -11,7 +11,7 @@ so.topic: reference
 Array of restrictiongroups, including the default first group of restrictions
 
 **Parameter:** 
- - **restrictionGroups** NSArchiveRestrictionGroup[]
+* **restrictionGroups** NSArchiveRestrictionGroup[]
 
 ```crmscript
 NSCriteriaInformation thing;

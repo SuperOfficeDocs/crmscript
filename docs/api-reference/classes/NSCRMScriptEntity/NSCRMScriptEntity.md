@@ -8,4 +8,4 @@ so.topic: reference
 
 # NSCRMScriptEntity
 
-CRM Scripts - stored in the ejScript table, including source code.
+CRM Scripts* stored in the ejScript table, including source code.

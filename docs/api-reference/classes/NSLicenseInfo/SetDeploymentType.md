@@ -11,7 +11,7 @@ so.topic: reference
 Type of deployment
 
 **Parameter:** 
- - **deploymentType** Integer
+* **deploymentType** Integer
 
 ```crmscript
 NSLicenseInfo thing;

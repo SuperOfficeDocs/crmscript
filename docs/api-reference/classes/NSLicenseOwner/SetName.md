@@ -11,7 +11,7 @@ so.topic: reference
 The name of the license owner
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSLicenseOwner thing;

@@ -10,8 +10,9 @@ so.topic: reference
 
 Returns all connections available for the specified user.
 
-**Parameters:**
- - **associateId** Primary key of the user
+## Parameters
+
+* **associateId** Primary key of the user
 
 **Returns:** NSQuoteConnection[]
 

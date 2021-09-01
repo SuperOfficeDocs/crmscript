@@ -11,7 +11,7 @@ so.topic: reference
 When the session was ended.
 
 **Parameter:** 
- - **whenEnded** DateTime
+* **whenEnded** DateTime
 
 ```crmscript
 NSChatSessionEntity thing;

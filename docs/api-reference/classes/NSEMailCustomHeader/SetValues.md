@@ -9,7 +9,7 @@ so.topic: reference
 # SetValues(String[] values)
 
 **Parameter:** 
- - **values** String[]
+* **values** String[]
 
 ```crmscript
 NSEMailCustomHeader thing;

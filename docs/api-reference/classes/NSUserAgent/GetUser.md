@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSUser object.
 
-**Parameters:**
- - **userId** The identifier of the NSUser object
+## Parameters
+
+* **userId** The identifier of the NSUser object
 
 **Returns:** NSUser
 

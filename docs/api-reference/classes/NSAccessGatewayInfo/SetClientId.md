@@ -11,7 +11,7 @@ so.topic: reference
 This is the registered client_id for AccessGateway OIDC
 
 **Parameter:** 
- - **clientId** String
+* **clientId** String
 
 ```crmscript
 NSAccessGatewayInfo thing;

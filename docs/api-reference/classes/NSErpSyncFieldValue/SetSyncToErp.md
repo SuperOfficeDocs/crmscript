@@ -11,7 +11,7 @@ so.topic: reference
 Should value changes in CRM be automatically transferred to ERP
 
 **Parameter:** 
- - **syncToErp** Bool
+* **syncToErp** Bool
 
 ```crmscript
 NSErpSyncFieldValue thing;

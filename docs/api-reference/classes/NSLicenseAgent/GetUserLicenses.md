@@ -10,8 +10,9 @@ so.topic: reference
 
 Obtain information about associate module licenses
 
-**Parameters:**
- - **associateId** Associate id to check for associate module licenses
+## Parameters
+
+* **associateId** Associate id to check for associate module licenses
 
 **Returns:** NSLicenseOwner[]
 

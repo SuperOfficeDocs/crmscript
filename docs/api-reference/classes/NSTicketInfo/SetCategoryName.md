@@ -11,7 +11,7 @@ so.topic: reference
 The name of the category for the request
 
 **Parameter:** 
- - **categoryName** String
+* **categoryName** String
 
 ```crmscript
 NSTicketInfo thing;

@@ -10,8 +10,9 @@ so.topic: reference
 
 Get all user groups
 
-**Parameters:**
- - **includeDeleted** Include user groups with Deleted set to true
+## Parameters
+
+* **includeDeleted** Include user groups with Deleted set to true
 
 **Returns:** NSUserGroup[]
 

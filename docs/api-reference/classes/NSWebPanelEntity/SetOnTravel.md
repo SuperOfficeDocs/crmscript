@@ -11,7 +11,7 @@ so.topic: reference
 Is the webpanel visible when user is on travel
 
 **Parameter:** 
- - **onTravel** Bool
+* **onTravel** Bool
 
 ```crmscript
 NSWebPanelEntity thing;

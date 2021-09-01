@@ -11,7 +11,7 @@ so.topic: reference
 If true, a task should be created when the external user signs off an event
 
 **Parameter:** 
- - **signOffTaskEnable** Bool
+* **signOffTaskEnable** Bool
 
 ```crmscript
 NSProjectEvent thing;

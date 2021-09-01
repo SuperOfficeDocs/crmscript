@@ -11,7 +11,7 @@ so.topic: reference
 Does the webpanel have a menu bar
 
 **Parameter:** 
- - **showInMenuBar** Bool
+* **showInMenuBar** Bool
 
 ```crmscript
 NSWebPanelEntity thing;

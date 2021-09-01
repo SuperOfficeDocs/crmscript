@@ -11,7 +11,7 @@ so.topic: reference
 The  primary key for the row
 
 **Parameter:** 
- - **primaryKey** Integer
+* **primaryKey** Integer
 
 ```crmscript
 NSArchiveListItem thing;

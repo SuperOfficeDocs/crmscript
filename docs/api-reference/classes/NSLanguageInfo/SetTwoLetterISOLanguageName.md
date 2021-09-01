@@ -11,7 +11,7 @@ so.topic: reference
 ISO 2-letter abbreviation
 
 **Parameter:** 
- - **twoLetterISOLanguageName** String
+* **twoLetterISOLanguageName** String
 
 ```crmscript
 NSLanguageInfo thing;

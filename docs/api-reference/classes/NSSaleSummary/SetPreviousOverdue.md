@@ -11,7 +11,7 @@ so.topic: reference
 Number of all open sales with date before this period
 
 **Parameter:** 
- - **previousOverdue** Integer
+* **previousOverdue** Integer
 
 ```crmscript
 NSSaleSummary thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Number of all overdue sales within the period
 
 **Parameter:** 
- - **currentOverdue** Integer
+* **currentOverdue** Integer
 
 ```crmscript
 NSSaleSummary thing;

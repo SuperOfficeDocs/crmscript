@@ -11,7 +11,7 @@ so.topic: reference
 True if the web panel is marked as deleted
 
 **Parameter:** 
- - **deleted** Bool
+* **deleted** Bool
 
 ```crmscript
 NSWebPanelEntity thing;

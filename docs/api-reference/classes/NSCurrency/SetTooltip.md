@@ -11,7 +11,7 @@ so.topic: reference
 Set the tooltip description for the NSCurrency list item.
 
 **Parameter:** 
- - **tooltip** String NSCurrency tooltip description.
+* **tooltip** String NSCurrency tooltip description.
 
 ```crmscript
 NSCurrency thing;

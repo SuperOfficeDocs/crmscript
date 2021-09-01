@@ -10,8 +10,9 @@ so.topic: reference
 
 Get License from the license server for a particular module owner.
 
-**Parameters:**
- - **ownerName** Name of the module owner to get license from.
+## Parameters
+
+* **ownerName** Name of the module owner to get license from.
 
 **Returns:** NSCheckLicenseStatusResult
 

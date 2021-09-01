@@ -11,7 +11,7 @@ so.topic: reference
 After this datetime, the form will become inactive
 
 **Parameter:** 
- - **expires** DateTime
+* **expires** DateTime
 
 ```crmscript
 NSFormEntity thing;

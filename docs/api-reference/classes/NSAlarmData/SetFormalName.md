@@ -11,7 +11,7 @@ so.topic: reference
 The associate's culture formatted formalname (firstname, middleName and lastname, title, mrmrs)
 
 **Parameter:** 
- - **formalName** String
+* **formalName** String
 
 ```crmscript
 NSAlarmData thing;

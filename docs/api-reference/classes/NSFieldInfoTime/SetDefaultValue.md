@@ -11,7 +11,7 @@ so.topic: reference
 Default Time value
 
 **Parameter:** 
- - **defaultValue** DateTime
+* **defaultValue** DateTime
 
 ```crmscript
 NSFieldInfoTime thing;

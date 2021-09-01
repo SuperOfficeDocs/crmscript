@@ -11,7 +11,7 @@ so.topic: reference
 Descriptive text for the current stage
 
 **Parameter:** 
- - **progressDescription** String
+* **progressDescription** String
 
 ```crmscript
 NSBatchTaskInfo thing;

@@ -11,7 +11,7 @@ so.topic: reference
 The table that is the owning entity
 
 **Parameter:** 
- - **ownerTable** Integer
+* **ownerTable** Integer
 
 ```crmscript
 NSSaintConfiguration thing;

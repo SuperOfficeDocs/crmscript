@@ -11,7 +11,7 @@ so.topic: reference
 The font used in the widget
 
 **Parameter:** 
- - **font** String
+* **font** String
 
 ```crmscript
 NSChatWidgetSettings thing;

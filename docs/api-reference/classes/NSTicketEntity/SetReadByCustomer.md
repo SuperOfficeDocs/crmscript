@@ -11,7 +11,7 @@ so.topic: reference
 The datetime for when the ticket was read by the customer.
 
 **Parameter:** 
- - **readByCustomer** DateTime
+* **readByCustomer** DateTime
 
 ```crmscript
 NSTicketEntity thing;

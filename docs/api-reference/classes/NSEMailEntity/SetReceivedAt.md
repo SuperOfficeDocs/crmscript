@@ -11,7 +11,7 @@ so.topic: reference
 Received date time
 
 **Parameter:** 
- - **receivedAt** DateTime
+* **receivedAt** DateTime
 
 ```crmscript
 NSEMailEntity thing;

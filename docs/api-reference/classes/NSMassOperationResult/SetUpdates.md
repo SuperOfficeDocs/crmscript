@@ -11,7 +11,7 @@ so.topic: reference
 Number of rows updated
 
 **Parameter:** 
- - **updates** Integer
+* **updates** Integer
 
 ```crmscript
 NSMassOperationResult thing;

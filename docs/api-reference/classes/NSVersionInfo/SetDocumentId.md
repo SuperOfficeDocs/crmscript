@@ -11,7 +11,7 @@ so.topic: reference
 The document Id that uniquely identifies the document within the SuperOffice database
 
 **Parameter:** 
- - **documentId** Integer
+* **documentId** Integer
 
 ```crmscript
 NSVersionInfo thing;

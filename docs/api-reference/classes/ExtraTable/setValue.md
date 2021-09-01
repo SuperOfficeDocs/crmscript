@@ -13,8 +13,8 @@ This function sets the value of a given field if it exists.
 
 ## Parameters
 
- - fieldname: Name of field to set
- - value: A string representation of the value to be assigned to the field.
+* fieldname: Name of field to set
+* value: A string representation of the value to be assigned to the field.
 
 ## Example
 

@@ -9,7 +9,7 @@ so.topic: reference
 # SetIsBusy(Bool isBusy)
 
 **Parameter:** 
- - **isBusy** Bool
+* **isBusy** Bool
 
 ```crmscript
 NSAppointmentSyncData thing;

@@ -11,7 +11,7 @@ so.topic: reference
 URL to product information web page.
 
 **Parameter:** 
- - **url** String
+* **url** String
 
 ```crmscript
 NSProduct thing;

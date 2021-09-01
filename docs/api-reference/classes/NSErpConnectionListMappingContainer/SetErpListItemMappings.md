@@ -11,7 +11,7 @@ so.topic: reference
 Array of NSErpConnectionListMapping
 
 **Parameter:** 
- - **erpListItemMappings** NSErpConnectionListMapping[]
+* **erpListItemMappings** NSErpConnectionListMapping[]
 
 ```crmscript
 NSErpConnectionListMappingContainer thing;

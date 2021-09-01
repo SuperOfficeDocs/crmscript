@@ -11,7 +11,7 @@ so.topic: reference
 Id of record, should never be 0
 
 **Parameter:** 
- - **recordId** Integer
+* **recordId** Integer
 
 ```crmscript
 NSChangedDataItem thing;

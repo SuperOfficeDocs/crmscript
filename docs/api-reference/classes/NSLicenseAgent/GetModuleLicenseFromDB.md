@@ -10,9 +10,10 @@ so.topic: reference
 
 Get license information for one particular license module.
 
-**Parameters:**
- - **ownerName** Name of the module owner.
- - **moduleName** Name of the license module.
+## Parameters
+
+* **ownerName** Name of the module owner.
+* **moduleName** Name of the license module.
 
 **Returns:** NSModuleLicense
 

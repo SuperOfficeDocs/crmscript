@@ -10,8 +10,9 @@ so.topic: reference
 
 Send the provided e-mails
 
-**Parameters:**
- - **emails** The e-mails to send
+## Parameters
+
+* **emails** The e-mails to send
 
 **Returns:** NSEMailEntity[]
 

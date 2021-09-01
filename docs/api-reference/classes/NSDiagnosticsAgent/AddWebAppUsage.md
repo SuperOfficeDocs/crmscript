@@ -10,5 +10,6 @@ so.topic: reference
 
 Adds WebApp usage to existing log
 
-**Parameters:**
- - **webAppUsages** Web app usage.
+## Parameters
+
+* **webAppUsages** Web app usage.

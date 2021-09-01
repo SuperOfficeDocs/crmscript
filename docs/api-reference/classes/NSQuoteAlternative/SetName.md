@@ -11,7 +11,7 @@ so.topic: reference
 Name of Alternative. Shown in tab in user interface, intentionally kept short
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSQuoteAlternative thing;

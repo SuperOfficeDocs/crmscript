@@ -8,9 +8,10 @@ so.topic: reference
 
 # NSUser[] GetUserFromEjUserId(Integer ejUserId)
 
-Get user from ejUserId - used for eJournal Legacy Support.
+Get user from ejUserId* used for eJournal Legacy Support.
 
-**Parameters:**
- - **ejUserId** ejUserId - 
+## Parameters
+
+* **ejUserId** ejUserId* 
 
 **Returns:** NSUser

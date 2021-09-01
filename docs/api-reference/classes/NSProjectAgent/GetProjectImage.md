@@ -10,8 +10,9 @@ so.topic: reference
 
 Returns the project image that is displayed in the CRM application.
 
-**Parameters:**
- - **projectId** The project id of the project the image belongs to.
+## Parameters
+
+* **projectId** The project id of the project the image belongs to.
 
 **Returns:** NSImage
 

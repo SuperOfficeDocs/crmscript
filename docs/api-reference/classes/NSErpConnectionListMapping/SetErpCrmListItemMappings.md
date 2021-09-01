@@ -11,7 +11,7 @@ so.topic: reference
 Array of all the list item mappings
 
 **Parameter:** 
- - **erpCrmListItemMappings** NSErpCrmListItemMapping[]
+* **erpCrmListItemMappings** NSErpCrmListItemMapping[]
 
 ```crmscript
 NSErpConnectionListMapping thing;

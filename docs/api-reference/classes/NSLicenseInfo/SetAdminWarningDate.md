@@ -11,7 +11,7 @@ so.topic: reference
 When should nagging begin (for instance, during login to SoAdmin)
 
 **Parameter:** 
- - **adminWarningDate** DateTime
+* **adminWarningDate** DateTime
 
 ```crmscript
 NSLicenseInfo thing;

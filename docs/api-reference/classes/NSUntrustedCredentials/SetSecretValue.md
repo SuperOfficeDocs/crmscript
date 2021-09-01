@@ -11,7 +11,7 @@ so.topic: reference
 Data stored encrypted in the db. Typically a password. Max 70 characters.
 
 **Parameter:** 
- - **secretValue** String
+* **secretValue** String
 
 ```crmscript
 NSUntrustedCredentials thing;

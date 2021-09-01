@@ -10,12 +10,13 @@ so.topic: reference
 
 Method to get a Selectable MDO list with own history list.
 
-**Parameters:**
- - **name** Conceptual name of the MDO list.
- - **forceFlatList** Force the list to be flat
- - **additionalInfo** Additional info to the MDO provider
- - **historyItems** An array of ids, used to get the history list
- - **onlyHistory** If true, return only history items
+## Parameters
+
+* **name** Conceptual name of the MDO list.
+* **forceFlatList** Force the list to be flat
+* **additionalInfo** Additional info to the MDO provider
+* **historyItems** An array of ids, used to get the history list
+* **onlyHistory** If true, return only history items
 
 **Returns:** NSSelectableMDOListItem[]
 

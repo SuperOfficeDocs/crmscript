@@ -10,14 +10,15 @@ so.topic: reference
 
 Assigning an appointment to another person.
 
-**Parameters:**
- - **appointmentId** The appointmentId. Both master and child record ids are accepted.
- - **participant** 
- - **updateMode** Update mode for a recurring appointment.
-     - Enum: 0 = Unknown 
-     - Enum: 1 = OnlyThis 
-     - Enum: 2 = ThisAndForward 
-     - Enum: 9 = StopRecurrence 
+## Parameters
+
+* **appointmentId** The appointmentId. Both master and child record ids are accepted.
+* **participant** 
+* **updateMode** Update mode for a recurring appointment.
+* Enum: 0 = Unknown 
+* Enum: 1 = OnlyThis 
+* Enum: 2 = ThisAndForward 
+* Enum: 9 = StopRecurrence 
 
 **Returns:** Updated NSAppointmentEntity
 

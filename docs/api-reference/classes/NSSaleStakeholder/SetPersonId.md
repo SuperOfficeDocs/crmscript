@@ -8,10 +8,10 @@ so.topic: reference
 
 # SetPersonId(Integer personId)
 
-Person id - Primary key
+Person id* Primary key
 
 **Parameter:** 
- - **personId** Integer
+* **personId** Integer
 
 ```crmscript
 NSSaleStakeholder thing;

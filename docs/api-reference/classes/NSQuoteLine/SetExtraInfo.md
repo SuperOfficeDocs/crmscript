@@ -11,7 +11,7 @@ so.topic: reference
 Extra information, supplied by QuoteConnector, used by a future dynamic GUI extension
 
 **Parameter:** 
- - **extraInfo** NSProductExtraDataField[]
+* **extraInfo** NSProductExtraDataField[]
 
 ```crmscript
 NSQuoteLine thing;

@@ -10,9 +10,10 @@ so.topic: reference
 
 Send the provided e-mail and create tmp document ready to archive
 
-**Parameters:**
- - **email** The e-mail to send
- - **stripAttachments** If true, do not include attachments in tmp document
+## Parameters
+
+* **email** The e-mail to send
+* **stripAttachments** If true, do not include attachments in tmp document
 
 **Returns:** String
 

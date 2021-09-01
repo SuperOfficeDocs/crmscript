@@ -10,8 +10,9 @@ so.topic: reference
 
 Deletes a project status
 
-**Parameters:**
- - **projectStatusId** The project status id to delete
+## Parameters
+
+* **projectStatusId** The project status id to delete
 
 ```crmscript
 NSListAgent agent;

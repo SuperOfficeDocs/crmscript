@@ -11,7 +11,7 @@ so.topic: reference
 The tooltip of the country
 
 **Parameter:** 
- - **tooltip** String
+* **tooltip** String
 
 ```crmscript
 NSCountry thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Extra information for this favourite.
 
 **Parameter:** 
- - **extraInfo** String
+* **extraInfo** String
 
 ```crmscript
 NSFavourite thing;

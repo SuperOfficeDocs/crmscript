@@ -11,7 +11,7 @@ so.topic: reference
 Set the tooltip description for the Department list item.
 
 **Parameter:** 
- - **tooltip** String Department tooltip description.
+* **tooltip** String Department tooltip description.
 
 ```crmscript
 NSDepartment thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Optional unique id of device (Palm pilot device ID, etc)
 
 **Parameter:** 
- - **deviceIdentifier** String
+* **deviceIdentifier** String
 
 ```crmscript
 NSForeignDevice thing;

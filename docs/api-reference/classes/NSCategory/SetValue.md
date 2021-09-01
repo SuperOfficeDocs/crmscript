@@ -11,7 +11,7 @@ so.topic: reference
 Set the name of the NSCategory item.
 
 **Parameter:** 
- - **value** String NSCategory name.
+* **value** String NSCategory name.
 
 ```crmscript
 NSCategory thing;

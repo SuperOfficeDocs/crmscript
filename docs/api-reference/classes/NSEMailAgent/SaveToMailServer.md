@@ -10,8 +10,9 @@ so.topic: reference
 
 Save the passed e-mail back to the mail server
 
-**Parameters:**
- - **email** The e-mail to save
+## Parameters
+
+* **email** The e-mail to save
 
 **Returns:** NSEMailEntity
 

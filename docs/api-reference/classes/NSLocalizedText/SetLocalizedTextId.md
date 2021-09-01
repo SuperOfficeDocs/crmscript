@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **localizedTextId** Integer
+* **localizedTextId** Integer
 
 ```crmscript
 NSLocalizedText thing;

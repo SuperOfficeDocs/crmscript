@@ -11,7 +11,7 @@ so.topic: reference
 Name of folder
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSEMailFolder thing;

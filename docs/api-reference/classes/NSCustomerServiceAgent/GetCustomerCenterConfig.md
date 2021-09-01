@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSCustomerCenterConfig object.
 
-**Parameters:**
- - **customerCenterConfigId** The identifier of the NSCustomerCenterConfig object
+## Parameters
+
+* **customerCenterConfigId** The identifier of the NSCustomerCenterConfig object
 
 **Returns:** NSCustomerCenterConfig
 

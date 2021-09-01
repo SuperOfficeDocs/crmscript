@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a vector of SelectionCategory objects.
 
-**Parameters:**
- - **selectionCategoryIds** The identifiers of the NSSelectionCategory objects
+## Parameters
+
+* **selectionCategoryIds** The identifiers of the NSSelectionCategory objects
 
 **Returns:** NSSelectionCategory[]
 

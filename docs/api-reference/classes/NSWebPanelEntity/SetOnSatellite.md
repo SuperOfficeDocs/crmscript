@@ -11,7 +11,7 @@ so.topic: reference
 Is the webpanel visible when user is on a satellite
 
 **Parameter:** 
- - **onSatellite** Bool
+* **onSatellite** Bool
 
 ```crmscript
 NSWebPanelEntity thing;

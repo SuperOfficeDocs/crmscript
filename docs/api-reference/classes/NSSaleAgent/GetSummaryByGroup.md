@@ -8,9 +8,10 @@ so.topic: reference
 
 # NSSaleSummary GetSummaryByGroup(Integer groupId, DateTime fromDate, DateTime toDate)
 
-**Parameters:**
- - **groupId** 
- - **fromDate** 
- - **toDate** 
+## Parameters
+
+* **groupId** 
+* **fromDate** 
+* **toDate** 
 
 **Returns:** NSSaleSummary

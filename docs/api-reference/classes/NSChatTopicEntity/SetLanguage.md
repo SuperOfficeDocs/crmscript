@@ -11,7 +11,7 @@ so.topic: reference
 Customer language used in this topic. Optional.
 
 **Parameter:** 
- - **language** NSCustomerLanguage
+* **language** NSCustomerLanguage
 
 ```crmscript
 NSChatTopicEntity thing;

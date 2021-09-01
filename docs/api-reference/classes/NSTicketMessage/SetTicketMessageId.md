@@ -11,7 +11,7 @@ so.topic: reference
 The primary key (auto-incremented)
 
 **Parameter:** 
- - **ticketMessageId** Integer
+* **ticketMessageId** Integer
 
 ```crmscript
 NSTicketMessage thing;

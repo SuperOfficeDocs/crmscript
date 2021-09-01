@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **tabOrderId** Integer
+* **tabOrderId** Integer
 
 ```crmscript
 NSTabOrder thing;

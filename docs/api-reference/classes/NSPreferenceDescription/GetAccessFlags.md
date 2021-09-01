@@ -12,11 +12,11 @@ so.topic: reference
 
 **Returns:** Integer
 
-     - Enum: 0 = Unknown 
-     - Enum: 1 = WizardMode 
-     - Enum: 2 = Level0 
-     - Enum: 4 = adminGUI 
-     - Enum: 8 = CRMGUI 
+* Enum: 0 = Unknown 
+* Enum: 1 = WizardMode 
+* Enum: 2 = Level0 
+* Enum: 4 = adminGUI 
+* Enum: 8 = CRMGUI 
 
 ```crmscript
 NSPreferenceDescription thing;

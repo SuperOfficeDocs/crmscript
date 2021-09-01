@@ -11,7 +11,7 @@ so.topic: reference
 Description of the contact. Usually shown as a postit note.
 
 **Parameter:** 
- - **description** String
+* **description** String
 
 ```crmscript
 NSContactEntity thing;

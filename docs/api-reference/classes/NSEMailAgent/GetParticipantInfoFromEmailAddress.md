@@ -10,9 +10,10 @@ so.topic: reference
 
 Get participant data associated with the participant in the emails iCal attachment
 
-**Parameters:**
- - **emailAddress** Email address of participant
- - **appointmentId** Appointment id of participant
+## Parameters
+
+* **emailAddress** Email address of participant
+* **appointmentId** Appointment id of participant
 
 **Returns:** NSPerson
 

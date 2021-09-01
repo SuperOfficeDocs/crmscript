@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSPreferenceDescription object.
 
-**Parameters:**
- - **preferenceDescriptionId** The identifier of the NSPreferenceDescription object
+## Parameters
+
+* **preferenceDescriptionId** The identifier of the NSPreferenceDescription object
 
 **Returns:** NSPreferenceDescription
 

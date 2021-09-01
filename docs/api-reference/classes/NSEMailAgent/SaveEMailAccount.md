@@ -11,7 +11,7 @@ so.topic: reference
 Updates the existing NSEMailAccount or creates a new NSEMailAccount if the id parameter is 0
 
 **Parameters**:
- - **eMailAccount** The NSEMailAccount to save.
+* **eMailAccount** The NSEMailAccount to save.
 
 **Returns:** NSEMailAccount
 

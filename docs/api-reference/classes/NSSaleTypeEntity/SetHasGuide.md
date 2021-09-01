@@ -11,7 +11,7 @@ so.topic: reference
 Does this sale type have a guide attached
 
 **Parameter:** 
- - **hasGuide** Bool
+* **hasGuide** Bool
 
 ```crmscript
 NSSaleTypeEntity thing;

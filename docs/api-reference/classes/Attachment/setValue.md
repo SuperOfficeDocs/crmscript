@@ -26,5 +26,5 @@ The current implementation supports the following values for the name parameter.
 
 ## Parameters
 
- - name: Name of the parameter to write
+* name: Name of the parameter to write
 

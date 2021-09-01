@@ -11,7 +11,7 @@ so.topic: reference
 Name of country in english
 
 **Parameter:** 
- - **englishName** String
+* **englishName** String
 
 ```crmscript
 NSCountry thing;

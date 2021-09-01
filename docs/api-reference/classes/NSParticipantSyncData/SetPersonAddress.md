@@ -9,7 +9,7 @@ so.topic: reference
 # SetPersonAddress(NSAddressSyncData personAddress)
 
 **Parameter:** 
- - **personAddress** NSAddressSyncData
+* **personAddress** NSAddressSyncData
 
 ```crmscript
 NSParticipantSyncData thing;

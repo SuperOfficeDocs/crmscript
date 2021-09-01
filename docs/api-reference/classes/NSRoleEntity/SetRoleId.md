@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **roleId** Integer
+* **roleId** Integer
 
 ```crmscript
 NSRoleEntity thing;

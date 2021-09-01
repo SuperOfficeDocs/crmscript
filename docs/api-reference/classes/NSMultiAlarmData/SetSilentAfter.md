@@ -9,7 +9,7 @@ so.topic: reference
 # SetSilentAfter(Integer silentAfter)
 
 **Parameter:** 
- - **silentAfter** Integer
+* **silentAfter** Integer
 
 ```crmscript
 NSMultiAlarmData thing;

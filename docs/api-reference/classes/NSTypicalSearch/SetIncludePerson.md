@@ -11,7 +11,7 @@ so.topic: reference
 For selection-of-company: state of the Include Main Contact checkbox
 
 **Parameter:** 
- - **includePerson** Integer
+* **includePerson** Integer
 
 ```crmscript
 NSTypicalSearch thing;

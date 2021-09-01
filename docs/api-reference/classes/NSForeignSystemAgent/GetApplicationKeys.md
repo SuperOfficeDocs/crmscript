@@ -10,8 +10,9 @@ so.topic: reference
 
 Returns all ForeignKeys that belong to an application.
 
-**Parameters:**
- - **applicationName** The name of the foreign application.
+## Parameters
+
+* **applicationName** The name of the foreign application.
 
 **Returns:** NSForeignKey[]
 

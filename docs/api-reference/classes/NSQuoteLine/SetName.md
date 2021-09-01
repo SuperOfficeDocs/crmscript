@@ -11,7 +11,7 @@ so.topic: reference
 The name of the product. Is stored here if the user changes the value from the product in the pricelist, or just enters a QuoteLine without a product link.
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSQuoteLine thing;

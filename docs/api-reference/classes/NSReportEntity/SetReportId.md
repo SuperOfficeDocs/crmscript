@@ -11,7 +11,7 @@ so.topic: reference
 The id of the report. 
 
 **Parameter:** 
- - **reportId** Integer
+* **reportId** Integer
 
 ```crmscript
 NSReportEntity thing;

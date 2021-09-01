@@ -10,9 +10,10 @@ so.topic: reference
 
 Get a list item for the specified list defintion
 
-**Parameters:**
- - **id** The identity of the list item to load
- - **udListDefinitionId** The id of the list definition, indicating which list to get the item from. Negative numbers indicate TableNumber value instead of UDListDefId. e.g. -64 = category.
+## Parameters
+
+* **id** The identity of the list item to load
+* **udListDefinitionId** The id of the list definition, indicating which list to get the item from. Negative numbers indicate TableNumber value instead of UDListDefId. e.g. -64 = category.
 
 **Returns:** NSListItemEntity
 

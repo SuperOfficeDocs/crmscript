@@ -11,10 +11,10 @@ so.topic: reference
 The type of the message (plaintext/html).
 
 **Parameter:** 
- - **type** TicketMessageType
-     - Enum: 0 = Unknown 
-     - Enum: 1 = Plain 
-     - Enum: 2 = Html 
+* **type** TicketMessageType
+* Enum: 0 = Unknown 
+* Enum: 1 = Plain 
+* Enum: 2 = Html 
 
 ```crmscript
 NSTicketMessageEntity thing;

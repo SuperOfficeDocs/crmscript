@@ -11,7 +11,7 @@ so.topic: reference
 Name shown in the list
 
 **Parameter:** 
- - **displayName** String
+* **displayName** String
 
 ```crmscript
 NSErpSyncConnectorEntity thing;

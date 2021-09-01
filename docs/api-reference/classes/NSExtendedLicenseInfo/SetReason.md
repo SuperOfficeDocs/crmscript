@@ -9,7 +9,7 @@ so.topic: reference
 # SetReason(String reason)
 
 **Parameter:** 
- - **reason** String
+* **reason** String
 
 ```crmscript
 NSExtendedLicenseInfo thing;

@@ -10,8 +10,9 @@ so.topic: reference
 
 Update listItems that will be visible for this usergroup
 
-**Parameters:**
- - **udListDefinitionName** The name of the list definition.
- - **usergroupId** The id of the userGroup
- - **listItemsID** The id of the list items.
- - **enable** True to enable, false to disable
+## Parameters
+
+* **udListDefinitionName** The name of the list definition.
+* **usergroupId** The id of the userGroup
+* **listItemsID** The id of the list items.
+* **enable** True to enable, false to disable

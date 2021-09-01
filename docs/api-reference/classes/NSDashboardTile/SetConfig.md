@@ -11,7 +11,7 @@ so.topic: reference
 The tile config
 
 **Parameter:** 
- - **config** String
+* **config** String
 
 ```crmscript
 NSDashboardTile thing;

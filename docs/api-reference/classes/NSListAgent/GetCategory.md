@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSCategory object.
 
-**Parameters:**
- - **categoryId** The identifier of the NSCategory object
+## Parameters
+
+* **categoryId** The identifier of the NSCategory object
 
 **Returns:** NSCategory
 

@@ -11,7 +11,7 @@ so.topic: reference
 Read-only extra information in plain text, supplied by QuoteConnector, used by a future dynamic GUI extension
 
 **Parameter:** 
- - **rawExtraInfo** String
+* **rawExtraInfo** String
 
 ```crmscript
 NSQuoteLine thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Is there a limit, in earning as percent of total, on quotes linked to sales of this type
 
 **Parameter:** 
- - **minEarningPercentSet** Bool
+* **minEarningPercentSet** Bool
 
 ```crmscript
 NSSaleTypeEntity thing;

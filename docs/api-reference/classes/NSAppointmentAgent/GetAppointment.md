@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSAppointment object.
 
-**Parameters:**
- - **appointmentId** The identifier of the NSAppointment object
+## Parameters
+
+* **appointmentId** The identifier of the NSAppointment object
 
 **Returns:** NSAppointment
 

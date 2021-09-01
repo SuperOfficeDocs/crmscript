@@ -11,7 +11,7 @@ so.topic: reference
 The ERP Connection that this Quote connection is an extension of
 
 **Parameter:** 
- - **erpConnectionId** Integer
+* **erpConnectionId** Integer
 
 ```crmscript
 NSQuoteConnection thing;

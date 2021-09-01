@@ -11,7 +11,7 @@ so.topic: reference
 Is push notification configured and enabled in Netserver
 
 **Parameter:** 
- - **isPushNotificationEnabled** Bool
+* **isPushNotificationEnabled** Bool
 
 ```crmscript
 NSPocketStartupData thing;

@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSDepartment object.
 
-**Parameters:**
- - **departmentId** The identifier of the NSDepartment object
+## Parameters
+
+* **departmentId** The identifier of the NSDepartment object
 
 **Returns:** NSDepartment
 

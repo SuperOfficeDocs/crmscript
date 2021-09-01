@@ -11,7 +11,7 @@ so.topic: reference
 The key used to uniquely identify this legal base
 
 **Parameter:** 
- - **key** String
+* **key** String
 
 ```crmscript
 NSLegalBase thing;

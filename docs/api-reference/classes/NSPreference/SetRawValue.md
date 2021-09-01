@@ -11,7 +11,7 @@ so.topic: reference
 Preference value
 
 **Parameter:** 
- - **rawValue** String
+* **rawValue** String
 
 ```crmscript
 NSPreference thing;

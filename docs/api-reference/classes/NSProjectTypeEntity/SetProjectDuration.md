@@ -11,7 +11,7 @@ so.topic: reference
 Expected duration of project, in given units
 
 **Parameter:** 
- - **projectDuration** Integer
+* **projectDuration** Integer
 
 ```crmscript
 NSProjectTypeEntity thing;

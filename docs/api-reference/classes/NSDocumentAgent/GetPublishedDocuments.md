@@ -10,8 +10,9 @@ so.topic: reference
 
 Get the published documents from an array of doucment ids.
 
-**Parameters:**
- - **documentIds** Array of document ids.
+## Parameters
+
+* **documentIds** Array of document ids.
 
 **Returns:** NSDocument[]
 

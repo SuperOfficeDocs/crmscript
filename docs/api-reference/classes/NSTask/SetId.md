@@ -11,7 +11,7 @@ so.topic: reference
 Set the primary key (id) for the Task
 
 **Parameter:** 
- - **id** Integer Task id.
+* **id** Integer Task id.
 
 ```crmscript
 NSTask thing;

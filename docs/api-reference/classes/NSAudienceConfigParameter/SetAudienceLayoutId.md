@@ -11,7 +11,7 @@ so.topic: reference
 The id of the Audience layout this configuration setting belongs to
 
 **Parameter:** 
- - **audienceLayoutId** Integer
+* **audienceLayoutId** Integer
 
 ```crmscript
 NSAudienceConfigParameter thing;

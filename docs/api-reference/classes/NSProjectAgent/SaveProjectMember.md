@@ -11,7 +11,7 @@ so.topic: reference
 Updates the existing NSProjectMember or creates a new NSProjectMember if the id parameter is 0
 
 **Parameters**:
- - **projectMember** The NSProjectMember to save.
+* **projectMember** The NSProjectMember to save.
 
 **Returns:** NSProjectMember
 

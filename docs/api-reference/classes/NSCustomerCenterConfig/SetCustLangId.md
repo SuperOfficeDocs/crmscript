@@ -11,7 +11,7 @@ so.topic: reference
 The customer language which this config belongs to. 0 indicates that the config is global
 
 **Parameter:** 
- - **custLangId** Integer
+* **custLangId** Integer
 
 ```crmscript
 NSCustomerCenterConfig thing;

@@ -11,7 +11,7 @@ so.topic: reference
 DiaryView rank.
 
 **Parameter:** 
- - **rank** Integer
+* **rank** Integer
 
 ```crmscript
 NSDiaryViewEntity thing;

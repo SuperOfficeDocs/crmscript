@@ -11,7 +11,7 @@ so.topic: reference
 Type of the suggested appointment
 
 **Parameter:** 
- - **taskId** Integer
+* **taskId** Integer
 
 ```crmscript
 NSSuggestedAppointment thing;

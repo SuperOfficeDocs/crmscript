@@ -10,8 +10,9 @@ so.topic: reference
 
 Method that logs off associates that are logged on to the win client
 
-**Parameters:**
- - **associateIds** The ids of the associates that shall be logged off
+## Parameters
+
+* **associateIds** The ids of the associates that shall be logged off
 
 **Returns:** A void return
 

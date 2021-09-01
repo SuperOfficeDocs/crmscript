@@ -10,15 +10,16 @@ so.topic: reference
 
 Get a user from the user name.
 
-**Parameters:**
- - **user** User name of the user to get.
- - **userType** 
-     - Enum: 0 = Unknown 
-     - Enum: 1 = InternalAssociate 
-     - Enum: 2 = ResourceAssociate 
-     - Enum: 3 = ExternalAssociate 
-     - Enum: 4 = AnonymousAssociate 
-     - Enum: 5 = SystemAssociate 
+## Parameters
+
+* **user** User name of the user to get.
+* **userType** 
+* Enum: 0 = Unknown 
+* Enum: 1 = InternalAssociate 
+* Enum: 2 = ResourceAssociate 
+* Enum: 3 = ExternalAssociate 
+* Enum: 4 = AnonymousAssociate 
+* Enum: 5 = SystemAssociate 
 
 **Returns:** NSUser
 

@@ -11,7 +11,7 @@ so.topic: reference
 The time of the last sync
 
 **Parameter:** 
- - **lastSync** DateTime
+* **lastSync** DateTime
 
 ```crmscript
 NSErpSyncConnectionSummary thing;

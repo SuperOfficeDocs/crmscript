@@ -13,18 +13,18 @@ Retrieves the value of the given field in the category.
 
 ## Available fields
 
- - id: The id of the category.
- - parent: The id of the parent category.
- - name: The name of the category.
- - fullname: The full name of the category (e.g. "Support/Product A/bugs").
- - externalName: The external name of the category.
- - categoryMaster: The id of the category master.
- - children: A comma separated list of children ids.
- - notificationEmail: The value of the email Notification field
+* id: The id of the category.
+* parent: The id of the parent category.
+* name: The name of the category.
+* fullname: The full name of the category (e.g. "Support/Product A/bugs").
+* externalName: The external name of the category.
+* categoryMaster: The id of the category master.
+* children: A comma separated list of children ids.
+* notificationEmail: The value of the email Notification field
 
 ## Parameters
 
- - field: The field to get.
+* field: The field to get.
 
 ## Example
 

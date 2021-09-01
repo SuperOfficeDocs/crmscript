@@ -11,7 +11,7 @@ so.topic: reference
 Optional tooltip text for this field
 
 **Parameter:** 
- - **description** String
+* **description** String
 
 ```crmscript
 NSFieldInfoBase thing;

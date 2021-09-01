@@ -11,7 +11,7 @@ so.topic: reference
 The number of replies (messages) to the customer for this request.
 
 **Parameter:** 
- - **numReplies** Integer
+* **numReplies** Integer
 
 ```crmscript
 NSTicket thing;

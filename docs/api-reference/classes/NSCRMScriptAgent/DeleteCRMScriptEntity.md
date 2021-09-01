@@ -10,8 +10,9 @@ so.topic: reference
 
 Deletes the NSCRMScriptEntity
   
-**Parameters:**
- - **cRMScriptEntityId** The identity of the CRMScriptEntity to delete.
+## Parameters
+
+* **cRMScriptEntityId** The identity of the CRMScriptEntity to delete.
 
 ```crmscript
 NSCRMScriptAgent agent;

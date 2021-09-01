@@ -11,7 +11,7 @@ so.topic: reference
 Email address to put in the From header of the messages
 
 **Parameter:** 
- - **fromAddress** String
+* **fromAddress** String
 
 ```crmscript
 NSPreviewMailing thing;

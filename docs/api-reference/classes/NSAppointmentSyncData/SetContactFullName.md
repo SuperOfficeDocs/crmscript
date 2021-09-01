@@ -11,7 +11,7 @@ so.topic: reference
 The entire name of the contact, including department name
 
 **Parameter:** 
- - **contactFullName** String
+* **contactFullName** String
 
 ```crmscript
 NSAppointmentSyncData thing;

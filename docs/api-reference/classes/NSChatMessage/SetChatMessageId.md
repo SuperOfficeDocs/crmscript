@@ -11,7 +11,7 @@ so.topic: reference
 The primary key (auto-incremented)
 
 **Parameter:** 
- - **chatMessageId** Integer
+* **chatMessageId** Integer
 
 ```crmscript
 NSChatMessage thing;

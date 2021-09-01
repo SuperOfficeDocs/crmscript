@@ -11,7 +11,7 @@ so.topic: reference
 Middle name or 'van' etc.
 
 **Parameter:** 
- - **middleName** String
+* **middleName** String
 
 ```crmscript
 NSSaleStakeholder thing;

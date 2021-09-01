@@ -10,8 +10,9 @@ so.topic: reference
 
 Deletes the QuoteLine in the SuperOffice database
 
-**Parameters:**
- - **quoteLineId** Primary key of the quoteline to delete
+## Parameters
+
+* **quoteLineId** Primary key of the quoteline to delete
 
 ```crmscript
 NSQuoteAgent agent;

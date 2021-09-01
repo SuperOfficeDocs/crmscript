@@ -8,10 +8,10 @@ so.topic: reference
 
 # SetPerson(NSPerson person)
 
-Customer person in this session - could be empty if we don't know exactly.
+Customer person in this session* could be empty if we don't know exactly.
 
 **Parameter:** 
- - **person** NSPerson
+* **person** NSPerson
 
 ```crmscript
 NSChatSessionEntity thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Is the engine currently running
 
 **Parameter:** 
- - **isRunning** Bool
+* **isRunning** Bool
 
 ```crmscript
 NSErpSyncEngineStatus thing;

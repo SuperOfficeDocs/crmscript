@@ -11,7 +11,7 @@ so.topic: reference
 Remove this company interest on each company recipient.
 
 **Parameter:** 
- - **removeCompanyInterest** Integer
+* **removeCompanyInterest** Integer
 
 ```crmscript
 NSMailMergeSettings thing;

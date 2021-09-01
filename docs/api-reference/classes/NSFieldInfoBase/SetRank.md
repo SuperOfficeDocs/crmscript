@@ -11,7 +11,7 @@ so.topic: reference
 Tab order, ranking within the custom fields.
 
 **Parameter:** 
- - **rank** Integer
+* **rank** Integer
 
 ```crmscript
 NSFieldInfoBase thing;

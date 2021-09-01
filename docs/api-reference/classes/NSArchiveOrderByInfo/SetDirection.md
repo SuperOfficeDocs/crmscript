@@ -11,9 +11,9 @@ so.topic: reference
 Direction to order.
 
 **Parameter:** 
- - **direction** Integer
-     - Enum: 0 = ASC 
-     - Enum: 1 = DESC 
+* **direction** Integer
+* Enum: 0 = ASC 
+* Enum: 1 = DESC 
 
 ```crmscript
 NSArchiveOrderByInfo thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Last updated by user
 
 **Parameter:** 
- - **updatedBy** NSAssociate
+* **updatedBy** NSAssociate
 
 ```crmscript
 NSRoleEntity thing;

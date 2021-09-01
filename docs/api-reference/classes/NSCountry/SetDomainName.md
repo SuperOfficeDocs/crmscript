@@ -11,7 +11,7 @@ so.topic: reference
 Domain name of the country
 
 **Parameter:** 
- - **domainName** String
+* **domainName** String
 
 ```crmscript
 NSCountry thing;

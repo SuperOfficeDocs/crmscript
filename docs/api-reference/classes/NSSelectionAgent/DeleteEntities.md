@@ -10,5 +10,6 @@ so.topic: reference
 
 Deletes all entities from a selection. If an entity does not have delete rights, it will be skipped.
 
-**Parameters:**
- - **selectionId** Id of the selection the delete operation will be performed.
+## Parameters
+
+* **selectionId** Id of the selection the delete operation will be performed.

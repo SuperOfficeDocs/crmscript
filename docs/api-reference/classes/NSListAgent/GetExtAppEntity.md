@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSExtAppEntity object.
 
-**Parameters:**
- - **extAppEntityId** The identifier of the NSExtAppEntity object
+## Parameters
+
+* **extAppEntityId** The identifier of the NSExtAppEntity object
 
 **Returns:** NSExtAppEntity
 

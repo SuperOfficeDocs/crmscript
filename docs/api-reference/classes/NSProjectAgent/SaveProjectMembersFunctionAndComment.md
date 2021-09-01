@@ -10,7 +10,8 @@ so.topic: reference
 
 Saves role and comment on an array of projectmembers represented by ids
 
-**Parameters:**
- - **projectMemberIds** 
- - **roleId** 
- - **comment** 
+## Parameters
+
+* **projectMemberIds** 
+* **roleId** 
+* **comment** 

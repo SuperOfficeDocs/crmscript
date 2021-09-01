@@ -11,7 +11,7 @@ so.topic: reference
 Number of CounterValue rows generated for this entity
 
 **Parameter:** 
- - **rowsGenerated** Integer
+* **rowsGenerated** Integer
 
 ```crmscript
 NSSaintConfiguration thing;

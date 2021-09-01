@@ -10,9 +10,10 @@ so.topic: reference
 
 Add a person to the given contact
 
-**Parameters:**
- - **contactId** Contact to add person to
- - **newPersonEntity** Person object to add
+## Parameters
+
+* **contactId** Contact to add person to
+* **newPersonEntity** Person object to add
 
 **Returns:** Updated person object
 

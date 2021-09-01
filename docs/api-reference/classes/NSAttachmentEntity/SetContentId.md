@@ -11,7 +11,7 @@ so.topic: reference
 The content_id of this attachment, used for inline images
 
 **Parameter:** 
- - **contentId** String
+* **contentId** String
 
 ```crmscript
 NSAttachmentEntity thing;

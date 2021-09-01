@@ -11,7 +11,7 @@ so.topic: reference
 Key value
 
 **Parameter:** 
- - **value** String
+* **value** String
 
 ```crmscript
 NSForeignKey thing;

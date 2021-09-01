@@ -11,7 +11,7 @@ so.topic: reference
 Enable pre-chat form for anonymous users
 
 **Parameter:** 
- - **preFormEnabled** Bool
+* **preFormEnabled** Bool
 
 ```crmscript
 NSChatWidgetSettings thing;

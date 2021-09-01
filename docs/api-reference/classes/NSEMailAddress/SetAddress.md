@@ -9,7 +9,7 @@ so.topic: reference
 # SetAddress(String address)
 
 **Parameter:** 
- - **address** String
+* **address** String
 
 ```crmscript
 NSEMailAddress thing;

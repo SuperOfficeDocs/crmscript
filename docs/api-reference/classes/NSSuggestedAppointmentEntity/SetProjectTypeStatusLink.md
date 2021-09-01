@@ -11,7 +11,7 @@ so.topic: reference
 Project type and project status link info
 
 **Parameter:** 
- - **projectTypeStatusLink** NSProjectTypeStatusLink
+* **projectTypeStatusLink** NSProjectTypeStatusLink
 
 ```crmscript
 NSSuggestedAppointmentEntity thing;

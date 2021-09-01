@@ -11,7 +11,7 @@ so.topic: reference
 Id of the created follow up.
 
 **Parameter:** 
- - **createdAppointmentId** Integer
+* **createdAppointmentId** Integer
 
 ```crmscript
 NSApproveRejectResponse thing;

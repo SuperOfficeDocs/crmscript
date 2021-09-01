@@ -11,7 +11,7 @@ so.topic: reference
 When was this status last generated (i.e., statusValue rows created)
 
 **Parameter:** 
- - **lastGenerated** DateTime
+* **lastGenerated** DateTime
 
 ```crmscript
 NSStatusMonitor thing;

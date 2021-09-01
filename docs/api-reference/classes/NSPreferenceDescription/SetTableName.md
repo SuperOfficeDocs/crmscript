@@ -11,7 +11,7 @@ so.topic: reference
 If valueType = 5, then TableName contains the table referenced by the preference
 
 **Parameter:** 
- - **tableName** String
+* **tableName** String
 
 ```crmscript
 NSPreferenceDescription thing;

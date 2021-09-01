@@ -8,10 +8,10 @@ so.topic: reference
 
 # SetAssociate(NSAssociate associate)
 
-The owner of the appointment - the associate whose diary/checklist the appointment is in.
+The owner of the appointment* the associate whose diary/checklist the appointment is in.
 
 **Parameter:** 
- - **associate** NSAssociate
+* **associate** NSAssociate
 
 ```crmscript
 NSAppointmentEntity thing;

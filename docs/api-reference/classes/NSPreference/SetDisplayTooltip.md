@@ -11,7 +11,7 @@ so.topic: reference
 Display tooltip, populated when asked for. Suitable for binding display-datasource in lists, etc. Formatted using CultureDataFormatter.
 
 **Parameter:** 
- - **displayTooltip** String
+* **displayTooltip** String
 
 ```crmscript
 NSPreference thing;

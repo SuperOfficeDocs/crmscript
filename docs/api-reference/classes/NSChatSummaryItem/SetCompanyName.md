@@ -11,7 +11,7 @@ so.topic: reference
 The name of the customers company, if provided
 
 **Parameter:** 
- - **companyName** String
+* **companyName** String
 
 ```crmscript
 NSChatSummaryItem thing;

@@ -8,7 +8,7 @@ so.topic: reference
 
 # Integer GetEmailId()
 
-E-mail address id - Primary key
+E-mail address id* Primary key
 
 **Returns:** Integer
 

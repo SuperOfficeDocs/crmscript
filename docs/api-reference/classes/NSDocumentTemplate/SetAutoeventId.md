@@ -11,7 +11,7 @@ so.topic: reference
 Which document plugin is responsible for the documents generated from this template
 
 **Parameter:** 
- - **autoeventId** Integer
+* **autoeventId** Integer
 
 ```crmscript
 NSDocumentTemplate thing;

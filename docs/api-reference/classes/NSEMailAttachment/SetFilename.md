@@ -11,7 +11,7 @@ so.topic: reference
 Filename
 
 **Parameter:** 
- - **filename** String
+* **filename** String
 
 ```crmscript
 NSEMailAttachment thing;

@@ -11,7 +11,7 @@ so.topic: reference
 The projectId for the project this projectEvent belongs to
 
 **Parameter:** 
- - **projectId** Integer
+* **projectId** Integer
 
 ```crmscript
 NSProjectEventEntity thing;

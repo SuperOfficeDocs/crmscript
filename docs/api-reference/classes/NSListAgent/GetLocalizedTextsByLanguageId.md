@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets all localized text belonging to a specific language.
 
-**Parameters:**
- - **languageId** The LCID number of the language.
+## Parameters
+
+* **languageId** The LCID number of the language.
 
 **Returns:** NSLocalizedText[]
 

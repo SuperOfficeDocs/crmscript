@@ -11,7 +11,7 @@ so.topic: reference
 The contact associated with the appointment.
 
 **Parameter:** 
- - **contactName** String
+* **contactName** String
 
 ```crmscript
 NSAppointment thing;

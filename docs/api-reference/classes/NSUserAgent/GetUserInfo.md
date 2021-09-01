@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSUserInfo object.
 
-**Parameters:**
- - **userInfoId** The identifier of the NSUserInfo object
+## Parameters
+
+* **userInfoId** The identifier of the NSUserInfo object
 
 **Returns:** NSUserInfo
 

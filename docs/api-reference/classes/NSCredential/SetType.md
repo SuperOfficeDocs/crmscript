@@ -11,7 +11,7 @@ so.topic: reference
 Description of credential type
 
 **Parameter:** 
- - **type** NSCredentialType
+* **type** NSCredentialType
 
 ```crmscript
 NSCredential thing;

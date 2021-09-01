@@ -11,7 +11,7 @@ so.topic: reference
 Stages (project statuses), those associated with this ProjType are selected.
 
 **Parameter:** 
- - **stages** NSSelectableMDOListItem[]
+* **stages** NSSelectableMDOListItem[]
 
 ```crmscript
 NSProjectTypeEntity thing;

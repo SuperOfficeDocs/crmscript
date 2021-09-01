@@ -11,7 +11,7 @@ so.topic: reference
 The project's internet adresses
 
 **Parameter:** 
- - **urls** NSEntityElement[]
+* **urls** NSEntityElement[]
 
 ```crmscript
 NSProjectEntity thing;

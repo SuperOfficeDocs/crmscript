@@ -9,16 +9,12 @@ so.topic: reference
 # Profile.getListTicketsFields(Integer p_user)
 
     String[] getListTicketsFields(Integer p_user)
-    
+
 This function is deprecated from version 7.
 
-This function returns a String[] containing information about a user's profile for
-the list-tickets tables.
-The fields are returned in a SearchEngine- and DataTable-friendly way.
+This function returns a String[] containing information about a user's profile for the list-tickets tables. The fields are returned in a SearchEngine- and DataTable-friendly way.
 
-The returned array is on the following form:
-
-headerField, databaseField, chop, headerField, databaseField, chop, ....
+The returned array is on the following form: headerField, databaseField, chop, headerField, databaseField, chop, ....
 
 ## Example for use in the constuction script for the Screen Element DataTable
 
@@ -26,7 +22,7 @@ headerField, databaseField, chop, headerField, databaseField, chop, ....
     Profile p;
     String[] fields = p.getListTicketsFields(getVariable("activeUser").toInteger());
     Integer c = 0;
-    for (Integer i = 0; i < (fields.length() - 2); i = i+3)
+    for (Integer i = 0; i < (fields.length()* 2); i = i+3)
     {
       config.insert("fields." + c.toString() + ".label", fields[i]);
       config.insert("fields." + c.toString() + ".field", fields[i+1]);

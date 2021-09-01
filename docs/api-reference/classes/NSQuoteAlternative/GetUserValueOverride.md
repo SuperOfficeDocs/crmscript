@@ -12,12 +12,12 @@ Has the pre-calculated (from ERP) price information been overridden, and how. If
 
 **Returns:** Integer
 
-     - Enum: 0 = None 
-     - Enum: 1 = Total 
-     - Enum: 2 = DiscountPercent 
-     - Enum: 3 = DiscountAmount 
-     - Enum: 4 = EarningPercent 
-     - Enum: 5 = EarningAmount 
+* Enum: 0 = None 
+* Enum: 1 = Total 
+* Enum: 2 = DiscountPercent 
+* Enum: 3 = DiscountAmount 
+* Enum: 4 = EarningPercent 
+* Enum: 5 = EarningAmount 
 
 ```crmscript
 NSQuoteAlternative thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Indicate if the button should be enabled or disabled
 
 **Parameter:** 
- - **enabled** Bool
+* **enabled** Bool
 
 ```crmscript
 NSQuoteVersionButtonState thing;

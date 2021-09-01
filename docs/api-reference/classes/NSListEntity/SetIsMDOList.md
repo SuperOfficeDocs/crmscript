@@ -11,7 +11,7 @@ so.topic: reference
 Indicates if this is a MDO list
 
 **Parameter:** 
- - **isMDOList** Bool
+* **isMDOList** Bool
 
 ```crmscript
 NSListEntity thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Global unique identifier, accross customers/tenants
 
 **Parameter:** 
- - **uniqueIdentifier** String
+* **uniqueIdentifier** String
 
 ```crmscript
 NSScript thing;

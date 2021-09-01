@@ -8,7 +8,7 @@ so.topic: reference
 
 # Integer GetStakeholderRoleId()
 
-Stakeholde role list id - Primary key
+Stakeholde role list id* Primary key
 
 **Returns:** Integer
 

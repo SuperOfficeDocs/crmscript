@@ -11,7 +11,7 @@ so.topic: reference
 Sale amount converted to the base currency.
 
 **Parameter:** 
- - **amountInBaseCurrency** Float
+* **amountInBaseCurrency** Float
 
 ```crmscript
 NSSaleSummaryItem thing;

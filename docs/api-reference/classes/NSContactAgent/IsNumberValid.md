@@ -10,8 +10,9 @@ so.topic: reference
 
 Checks if the number is unique or required.  The setting is configured from admin under system options.
 
-**Parameters:**
- - **contactId** 
- - **number** 
+## Parameters
+
+* **contactId** 
+* **number** 
 
 **Returns:** Bool

@@ -10,8 +10,9 @@ so.topic: reference
 
 Get an e-mail based on the provided MIME-message
 
-**Parameters:**
- - **mimeMessage** string representing a MIME-formatted message
+## Parameters
+
+* **mimeMessage** string representing a MIME-formatted message
 
 **Returns:** NSEMailEntity
 

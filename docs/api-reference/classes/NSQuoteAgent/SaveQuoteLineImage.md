@@ -10,10 +10,11 @@ so.topic: reference
 
 Saves the image connected to a quoteline in the SuperOffice database
 
-**Parameters:**
- - **quoteLineId** Primary key of the quoteline
- - **image** The image.
- - **rank** The rank of the image.
+## Parameters
+
+* **quoteLineId** Primary key of the quoteline
+* **image** The image.
+* **rank** The rank of the image.
 
 ```crmscript
 NSQuoteAgent agent;

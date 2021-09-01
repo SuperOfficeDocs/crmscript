@@ -10,8 +10,9 @@ so.topic: reference
 
 Returns the contact with all the contact persons belonging to the contact
 
-**Parameters:**
- - **contactId** The id of the contact.
+## Parameters
+
+* **contactId** The id of the contact.
 
 **Returns:** NSContactEntity
 

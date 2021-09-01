@@ -11,7 +11,7 @@ so.topic: reference
 The key that uniquely identifies this pricelist in the ERP system
 
 **Parameter:** 
- - **eRPPriceListKey** String
+* **eRPPriceListKey** String
 
 ```crmscript
 NSPriceList thing;

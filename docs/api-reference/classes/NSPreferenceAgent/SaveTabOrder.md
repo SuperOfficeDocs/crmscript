@@ -10,8 +10,9 @@ so.topic: reference
 
 Saves the tab order. The order is saved pr. user.
 
-**Parameters:**
- - **tabOrder** Name of the tab control
+## Parameters
+
+* **tabOrder** Name of the tab control
 
 ```crmscript
 NSPreferenceAgent agent;

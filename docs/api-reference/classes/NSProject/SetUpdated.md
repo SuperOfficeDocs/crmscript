@@ -11,7 +11,7 @@ so.topic: reference
 Last updated date
 
 **Parameter:** 
- - **updated** DateTime
+* **updated** DateTime
 
 ```crmscript
 NSProject thing;

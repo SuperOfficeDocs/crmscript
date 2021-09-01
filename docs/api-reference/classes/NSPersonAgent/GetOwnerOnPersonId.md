@@ -10,8 +10,9 @@ so.topic: reference
 
 Get the owner of the person by id.
 
-**Parameters:**
- - **personId** 
+## Parameters
+
+* **personId** 
 
 **Returns:** NSPerson
 

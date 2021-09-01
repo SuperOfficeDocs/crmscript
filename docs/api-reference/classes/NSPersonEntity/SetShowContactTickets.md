@@ -11,7 +11,7 @@ so.topic: reference
 Should tickets related to the company be shown to this person
 
 **Parameter:** 
- - **showContactTickets** Integer
+* **showContactTickets** Integer
 
 ```crmscript
 NSPersonEntity thing;

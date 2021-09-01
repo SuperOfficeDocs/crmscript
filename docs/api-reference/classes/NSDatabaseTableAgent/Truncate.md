@@ -10,8 +10,9 @@ so.topic: reference
 
 Drop all rows in a table. This clearance is not individually logged in TravelTransactionlog or Webhook/script calls
 
-**Parameters:**
- - **tableName** Name of table to be truncated
+## Parameters
+
+* **tableName** Name of table to be truncated
 
 **Returns:** NSMassOperationResult
 

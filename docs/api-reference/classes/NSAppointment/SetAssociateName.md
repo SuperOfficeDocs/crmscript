@@ -11,7 +11,7 @@ so.topic: reference
 The associate's name
 
 **Parameter:** 
- - **associateName** String
+* **associateName** String
 
 ```crmscript
 NSAppointment thing;

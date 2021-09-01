@@ -10,6 +10,7 @@ so.topic: reference
 
 Stores the default country flag image that is displayed in Audience when no person image is found. The image is set on a specific Audience layout instance.
 
-**Parameters:**
- - **layoutName** Name of the Audience layout instance
- - **image** The default country image to be stored for this Audience layout instance (System.Drawing.Image)
+## Parameters
+
+* **layoutName** Name of the Audience layout instance
+* **image** The default country image to be stored for this Audience layout instance (System.Drawing.Image)

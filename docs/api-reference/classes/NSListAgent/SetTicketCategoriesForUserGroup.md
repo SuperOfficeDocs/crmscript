@@ -10,9 +10,10 @@ so.topic: reference
 
 Set ticket categories for one user group
 
-**Parameters:**
- - **userGroupId** The ids of the user groups we want tickets categories from
- - **categoryIds** The ids of the user groups we want tickets categories from
+## Parameters
+
+* **userGroupId** The ids of the user groups we want tickets categories from
+* **categoryIds** The ids of the user groups we want tickets categories from
 
 ```crmscript
 NSListAgent agent;

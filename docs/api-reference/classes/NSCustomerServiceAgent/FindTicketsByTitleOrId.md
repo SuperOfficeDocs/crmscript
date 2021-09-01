@@ -10,9 +10,10 @@ so.topic: reference
 
 This method wil search for tickets matching title or id
 
-**Parameters:**
- - **titleOrId** The search string. If this is a number, it will also search for a matching ticket id
- - **maxRows** The maximum number of rows to be returned
+## Parameters
+
+* **titleOrId** The search string. If this is a number, it will also search for a matching ticket id
+* **maxRows** The maximum number of rows to be returned
 
 **Returns:** NSTicketInfo[]
 

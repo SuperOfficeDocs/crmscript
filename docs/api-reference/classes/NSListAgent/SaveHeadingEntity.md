@@ -11,7 +11,7 @@ so.topic: reference
 Updates the existing NSHeadingEntity or creates a new NSHeadingEntity if the id parameter is 0
 
 **Parameters**:
- - **headingEntity** The NSHeadingEntity to save.
+* **headingEntity** The NSHeadingEntity to save.
 
 **Returns:** NSHeadingEntity
 

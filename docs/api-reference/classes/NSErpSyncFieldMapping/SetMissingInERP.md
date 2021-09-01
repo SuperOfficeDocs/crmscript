@@ -11,7 +11,7 @@ so.topic: reference
 This field existed previously, but now the connection no longer supports it. Probably not a good sign, unmap it...
 
 **Parameter:** 
- - **missingInERP** Bool
+* **missingInERP** Bool
 
 ```crmscript
 NSErpSyncFieldMapping thing;

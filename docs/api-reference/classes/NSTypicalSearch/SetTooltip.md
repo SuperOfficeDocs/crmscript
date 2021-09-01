@@ -11,7 +11,7 @@ so.topic: reference
 The tooltip for the typical search (multilingual)
 
 **Parameter:** 
- - **tooltip** String
+* **tooltip** String
 
 ```crmscript
 NSTypicalSearch thing;

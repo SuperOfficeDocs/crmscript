@@ -11,7 +11,7 @@ so.topic: reference
 The person that last updated the project
 
 **Parameter:** 
- - **updatedBy** NSAssociate
+* **updatedBy** NSAssociate
 
 ```crmscript
 NSProjectEntity thing;

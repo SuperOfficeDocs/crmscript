@@ -10,8 +10,9 @@ so.topic: reference
 
 Delete a user, with lookup based on the user name.
 
-**Parameters:**
- - **userName** User name of the user to delete.
+## Parameters
+
+* **userName** User name of the user to delete.
 
 ```crmscript
 NSUserAgent agent;

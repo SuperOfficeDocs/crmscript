@@ -11,7 +11,7 @@ so.topic: reference
 String containing error message from handler system if it failed
 
 **Parameter:** 
- - **exception** String
+* **exception** String
 
 ```crmscript
 NSEventData thing;

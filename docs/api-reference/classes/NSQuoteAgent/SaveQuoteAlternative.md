@@ -11,7 +11,7 @@ so.topic: reference
 Updates the existing NSQuoteAlternative or creates a new NSQuoteAlternative if the id parameter is 0
 
 **Parameters**:
- - **quoteAlternative** The NSQuoteAlternative to save.
+* **quoteAlternative** The NSQuoteAlternative to save.
 
 **Returns:** NSQuoteAlternative
 

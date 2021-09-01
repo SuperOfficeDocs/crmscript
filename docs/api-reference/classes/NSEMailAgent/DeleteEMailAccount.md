@@ -10,8 +10,9 @@ so.topic: reference
 
 Deletes the NSEMailAccount
   
-**Parameters:**
- - **eMailAccountId** The identity of the NSEMailAccount to delete.
+## Parameters
+
+* **eMailAccountId** The identity of the NSEMailAccount to delete.
 
 ```crmscript
 NSEMailAgent agent;

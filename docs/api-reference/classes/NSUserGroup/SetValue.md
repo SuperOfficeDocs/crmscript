@@ -11,7 +11,7 @@ so.topic: reference
 UserGroup name
 
 **Parameter:** 
- - **value** String
+* **value** String
 
 ```crmscript
 NSUserGroup thing;

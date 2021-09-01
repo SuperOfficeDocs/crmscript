@@ -11,7 +11,7 @@ so.topic: reference
 Name of the person's owner
 
 **Parameter:** 
- - **associateName** String
+* **associateName** String
 
 ```crmscript
 NSPerson thing;

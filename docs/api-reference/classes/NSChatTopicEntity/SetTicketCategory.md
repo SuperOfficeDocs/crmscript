@@ -11,7 +11,7 @@ so.topic: reference
 Category on ticket created from off-line request
 
 **Parameter:** 
- - **ticketCategory** NSTicketCategory
+* **ticketCategory** NSTicketCategory
 
 ```crmscript
 NSChatTopicEntity thing;

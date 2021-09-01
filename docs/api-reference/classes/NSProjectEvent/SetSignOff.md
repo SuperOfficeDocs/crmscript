@@ -11,7 +11,7 @@ so.topic: reference
 If true, it is possible to sign off the event.
 
 **Parameter:** 
- - **signOff** Bool
+* **signOff** Bool
 
 ```crmscript
 NSProjectEvent thing;

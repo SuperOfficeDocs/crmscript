@@ -8,7 +8,7 @@ so.topic: reference
 
 # DataRights GetDataRights()
 
-Data rights matrix - defines role's access to data owned by current user, users in same group, and other users.
+Data rights matrix* defines role's access to data owned by current user, users in same group, and other users.
 
 **Returns:** DataRights
 

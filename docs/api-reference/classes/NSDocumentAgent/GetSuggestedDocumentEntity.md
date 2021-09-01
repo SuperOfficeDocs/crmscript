@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSSuggestedDocumentEntity object.
 
-**Parameters:**
- - **suggestedDocumentEntityId** The identifier of the NSSuggestedDocumentEntity object
+## Parameters
+
+* **suggestedDocumentEntityId** The identifier of the NSSuggestedDocumentEntity object
 
 **Returns:** NSSuggestedDocumentEntity
 

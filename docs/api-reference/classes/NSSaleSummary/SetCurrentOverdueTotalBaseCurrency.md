@@ -11,7 +11,7 @@ so.topic: reference
 Summed amount for all overdue sales within the period in default currency for the installation
 
 **Parameter:** 
- - **currentOverdueTotalBaseCurrency** Float
+* **currentOverdueTotalBaseCurrency** Float
 
 ```crmscript
 NSSaleSummary thing;

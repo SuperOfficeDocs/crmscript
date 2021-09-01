@@ -11,7 +11,7 @@ so.topic: reference
 The child items of the NSMDOListItem
 
 **Parameter:** 
- - **childItems** NSMDOListItem[]
+* **childItems** NSMDOListItem[]
 
 ```crmscript
 NSMDOListItem thing;

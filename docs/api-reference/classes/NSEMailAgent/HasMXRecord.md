@@ -10,8 +10,9 @@ so.topic: reference
 
 Return true if there is one or more MX records in DNS for the given mail domain
 
-**Parameters:**
- - **mailDomain** The mail domain to check. Normally this is the part after @ in an email address
+## Parameters
+
+* **mailDomain** The mail domain to check. Normally this is the part after @ in an email address
 
 **Returns:** Bool
 

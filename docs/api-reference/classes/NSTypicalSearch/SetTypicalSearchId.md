@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **typicalSearchId** Integer
+* **typicalSearchId** Integer
 
 ```crmscript
 NSTypicalSearch thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Script id to run on new session.
 
 **Parameter:** 
- - **botSessionCreatedScriptId** Integer
+* **botSessionCreatedScriptId** Integer
 
 ```crmscript
 NSChatBotSettings thing;

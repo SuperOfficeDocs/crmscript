@@ -11,7 +11,7 @@ so.topic: reference
 The web part layout as a serialized string
 
 **Parameter:** 
- - **instanceLayout** String
+* **instanceLayout** String
 
 ```crmscript
 NSAudienceLayoutEntity thing;

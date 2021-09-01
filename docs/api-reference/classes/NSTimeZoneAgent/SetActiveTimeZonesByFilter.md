@@ -10,6 +10,7 @@ so.topic: reference
 
 Toggles active state of a single row in the TZLocation table
 
-**Parameters:**
- - **filter** Filter timezones
- - **active** Set active to true or false
+## Parameters
+
+* **filter** Filter timezones
+* **active** Set active to true or false

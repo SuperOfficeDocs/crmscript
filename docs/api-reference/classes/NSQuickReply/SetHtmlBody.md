@@ -11,7 +11,7 @@ so.topic: reference
 The html body of the quick reply
 
 **Parameter:** 
- - **htmlBody** String
+* **htmlBody** String
 
 ```crmscript
 NSQuickReply thing;

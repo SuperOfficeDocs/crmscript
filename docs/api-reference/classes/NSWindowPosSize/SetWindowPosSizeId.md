@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **windowPosSizeId** Integer
+* **windowPosSizeId** Integer
 
 ```crmscript
 NSWindowPosSize thing;

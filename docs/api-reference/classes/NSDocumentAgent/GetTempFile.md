@@ -10,8 +10,9 @@ so.topic: reference
 
 Get data stream for temporary file created with CreateTempFile.
 
-**Parameters:**
- - **filename** Name of temporary file to retrieve.
+## Parameters
+
+* **filename** Name of temporary file to retrieve.
 
 **Returns:** NSStream
 

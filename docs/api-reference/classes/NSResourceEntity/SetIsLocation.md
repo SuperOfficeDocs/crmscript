@@ -11,7 +11,7 @@ so.topic: reference
 If true the resource is a location
 
 **Parameter:** 
- - **isLocation** Bool
+* **isLocation** Bool
 
 ```crmscript
 NSResourceEntity thing;

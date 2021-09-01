@@ -11,7 +11,7 @@ so.topic: reference
 Account credentials for smtp
 
 **Parameter:** 
- - **outgoingCredentials** NSServiceAuth
+* **outgoingCredentials** NSServiceAuth
 
 ```crmscript
 NSEMailAccount thing;

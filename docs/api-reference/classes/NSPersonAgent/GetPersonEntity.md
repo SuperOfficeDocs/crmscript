@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSPersonEntity object.
 
-**Parameters:**
- - **personEntityId** The identifier of the NSPersonEntity object
+## Parameters
+
+* **personEntityId** The identifier of the NSPersonEntity object
 
 **Returns:** NSPersonEntity
 

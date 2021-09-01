@@ -10,8 +10,9 @@ so.topic: reference
 
 Get published project by project id.
 
-**Parameters:**
- - **projectId** The project id.
+## Parameters
+
+* **projectId** The project id.
 
 **Returns:** NSProject
 

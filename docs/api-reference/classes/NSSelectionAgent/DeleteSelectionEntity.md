@@ -10,8 +10,9 @@ so.topic: reference
 
 Deletes the NSSelectionEntity
   
-**Parameters:**
- - **selectionEntityId** The identity of the SelectionEntity to delete.
+## Parameters
+
+* **selectionEntityId** The identity of the SelectionEntity to delete.
 
 ```crmscript
 NSSelectionAgent agent;

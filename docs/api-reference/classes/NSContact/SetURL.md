@@ -11,7 +11,7 @@ so.topic: reference
 The internet address to this contact
 
 **Parameter:** 
- - **uRL** String
+* **uRL** String
 
 ```crmscript
 NSContact thing;

@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets all takslist items
 
-**Parameters:**
- - **includeDeleted** Include deleted items
+## Parameters
+
+* **includeDeleted** Include deleted items
 
 **Returns:** NSTaskListItem[]
 

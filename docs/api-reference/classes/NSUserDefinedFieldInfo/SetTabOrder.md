@@ -11,7 +11,7 @@ so.topic: reference
 Tab order value, sets the field processing sequence
 
 **Parameter:** 
- - **tabOrder** Integer
+* **tabOrder** Integer
 
 ```crmscript
 NSUserDefinedFieldInfo thing;

@@ -11,7 +11,7 @@ so.topic: reference
 If the message is about some event happening at a specific date and time
 
 **Parameter:** 
- - **date** DateTime
+* **date** DateTime
 
 ```crmscript
 NSPocketNotificationMessage thing;

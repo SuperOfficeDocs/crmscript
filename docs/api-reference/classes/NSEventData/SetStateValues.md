@@ -11,7 +11,7 @@ so.topic: reference
 Values kept between event handlers
 
 **Parameter:** 
- - **stateValues** StringDictionary
+* **stateValues** StringDictionary
 
 ```crmscript
 NSEventData thing;

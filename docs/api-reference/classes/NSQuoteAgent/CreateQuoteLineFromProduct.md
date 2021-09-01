@@ -10,9 +10,10 @@ so.topic: reference
 
 Create a quoteline based on a product.
 
-**Parameters:**
- - **quoteAlternativeId** Primary key of the alternative
- - **product** NSProduct carrier
+## Parameters
+
+* **quoteAlternativeId** Primary key of the alternative
+* **product** NSProduct carrier
 
 **Returns:** NSQuoteLine
 

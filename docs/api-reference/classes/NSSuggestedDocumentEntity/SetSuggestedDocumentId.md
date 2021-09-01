@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **suggestedDocumentId** Integer
+* **suggestedDocumentId** Integer
 
 ```crmscript
 NSSuggestedDocumentEntity thing;

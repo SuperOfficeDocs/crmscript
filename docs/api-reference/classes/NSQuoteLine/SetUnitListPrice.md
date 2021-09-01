@@ -11,7 +11,7 @@ so.topic: reference
 The standard list price; as given by ERP Connector, OR overridden by user
 
 **Parameter:** 
- - **unitListPrice** Float
+* **unitListPrice** Float
 
 ```crmscript
 NSQuoteLine thing;

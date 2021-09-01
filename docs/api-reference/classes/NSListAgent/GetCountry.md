@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSCountry object.
 
-**Parameters:**
- - **countryId** The identifier of the NSCountry object
+## Parameters
+
+* **countryId** The identifier of the NSCountry object
 
 **Returns:** NSCountry
 

@@ -11,7 +11,7 @@ so.topic: reference
 The total number of messages for this request.
 
 **Parameter:** 
- - **numMessages** Integer
+* **numMessages** Integer
 
 ```crmscript
 NSTicketEntity thing;

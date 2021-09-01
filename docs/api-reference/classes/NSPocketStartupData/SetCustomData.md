@@ -11,7 +11,7 @@ so.topic: reference
 Custom data for Pocket, in JSON format
 
 **Parameter:** 
- - **customData** String
+* **customData** String
 
 ```crmscript
 NSPocketStartupData thing;

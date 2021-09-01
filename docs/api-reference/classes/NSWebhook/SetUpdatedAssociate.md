@@ -11,7 +11,7 @@ so.topic: reference
 The user that last updated the webhook.
 
 **Parameter:** 
- - **updatedAssociate** NSAssociate
+* **updatedAssociate** NSAssociate
 
 ```crmscript
 NSWebhook thing;

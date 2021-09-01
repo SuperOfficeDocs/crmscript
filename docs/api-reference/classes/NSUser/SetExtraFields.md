@@ -11,7 +11,7 @@ so.topic: reference
 Set the extra field values on User with a map.
 
 **Parameter:** 
- - **extras** Map
+* **extras** Map
 
 ```crmscript
 NSUser thing;

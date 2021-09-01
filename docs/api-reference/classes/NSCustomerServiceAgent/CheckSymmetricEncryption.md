@@ -10,8 +10,9 @@ so.topic: reference
 
 Do a test to check that we are using the same encryption keys
 
-**Parameters:**
- - **encryptedString** An encrypted version of the string
+## Parameters
+
+* **encryptedString** An encrypted version of the string
 
 **Returns:** String
 

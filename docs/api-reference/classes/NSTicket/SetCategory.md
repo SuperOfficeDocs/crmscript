@@ -11,7 +11,7 @@ so.topic: reference
 The id of the category a ticket is in.
 
 **Parameter:** 
- - **category** Integer
+* **category** Integer
 
 ```crmscript
 NSTicket thing;

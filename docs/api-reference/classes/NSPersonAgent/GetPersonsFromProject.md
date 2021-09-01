@@ -10,8 +10,9 @@ so.topic: reference
 
 Returns all the persons belonging to a project.
 
-**Parameters:**
- - **projectId** The project id
+## Parameters
+
+* **projectId** The project id
 
 **Returns:** NSPerson[]
 

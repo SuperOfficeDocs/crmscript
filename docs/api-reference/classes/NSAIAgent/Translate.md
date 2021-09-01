@@ -10,9 +10,10 @@ so.topic: reference
 
 Translate a text from one language to another. Language of the text is automatically detected.
 
-**Parameters:**
- - **text** Text to be translated. Language of the text is automatically detected.
- - **targetLanguage** ISO Language code (such as FR) to translate the text into.
+## Parameters
+
+* **text** Text to be translated. Language of the text is automatically detected.
+* **targetLanguage** ISO Language code (such as FR) to translate the text into.
 
 **Returns:** Translated text
 

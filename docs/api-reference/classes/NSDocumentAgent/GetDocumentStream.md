@@ -10,8 +10,9 @@ so.topic: reference
 
 Get the document content as a stream
 
-**Parameters:**
- - **documentId** SuperOffice document id
+## Parameters
+
+* **documentId** SuperOffice document id
 
 **Returns:** NSStream
 

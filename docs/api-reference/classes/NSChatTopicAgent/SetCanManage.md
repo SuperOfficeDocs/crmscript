@@ -11,7 +11,7 @@ so.topic: reference
 True if the user is a manager for this topic
 
 **Parameter:** 
- - **canManage** Bool
+* **canManage** Bool
 
 ```crmscript
 NSChatTopicAgent thing;

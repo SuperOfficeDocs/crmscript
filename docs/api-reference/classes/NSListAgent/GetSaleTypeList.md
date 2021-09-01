@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a vector of NSSaleType objects.
 
-**Parameters:**
- - **saleTypeIds** The identifiers of the NSSaleType objects
+## Parameters
+
+* **saleTypeIds** The identifiers of the NSSaleType objects
 
 **Returns:** NSSaleType[]
 

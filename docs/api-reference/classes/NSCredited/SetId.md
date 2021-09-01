@@ -11,7 +11,7 @@ so.topic: reference
 Set the primary key (id) for the NSCredited
 
 **Parameter:** 
- - **id** Integer NSCredited id.
+* **id** Integer NSCredited id.
 
 ```crmscript
 NSCredited thing;

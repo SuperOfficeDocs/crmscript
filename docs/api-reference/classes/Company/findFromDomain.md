@@ -13,7 +13,7 @@ Find and load company object given a domain.
 
 ## Parameters
 
- - domain of the company
+* domain of the company
 
 Returns a boolean of the load result, true if successfully loaded.
 

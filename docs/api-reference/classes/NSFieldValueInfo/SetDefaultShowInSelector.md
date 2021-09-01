@@ -11,7 +11,7 @@ so.topic: reference
 Default show in selector?
 
 **Parameter:** 
- - **defaultShowInSelector** Bool
+* **defaultShowInSelector** Bool
 
 ```crmscript
 NSFieldValueInfo thing;

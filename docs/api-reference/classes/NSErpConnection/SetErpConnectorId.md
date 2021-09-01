@@ -11,7 +11,7 @@ so.topic: reference
 The connector that this connection should call
 
 **Parameter:** 
- - **erpConnectorId** Integer
+* **erpConnectorId** Integer
 
 ```crmscript
 NSErpConnection thing;

@@ -10,8 +10,9 @@ so.topic: reference
 
 Sync the given account
 
-**Parameters:**
- - **syncUserAccount** Account to sync
+## Parameters
+
+* **syncUserAccount** Account to sync
 
 ```crmscript
 NSEMailAgent agent;

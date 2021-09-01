@@ -11,7 +11,7 @@ so.topic: reference
 The template list item
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSDocumentTemplateEntity thing;

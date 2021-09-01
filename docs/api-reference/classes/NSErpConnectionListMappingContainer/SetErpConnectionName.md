@@ -11,7 +11,7 @@ so.topic: reference
 The name of the erp connection
 
 **Parameter:** 
- - **erpConnectionName** String
+* **erpConnectionName** String
 
 ```crmscript
 NSErpConnectionListMappingContainer thing;

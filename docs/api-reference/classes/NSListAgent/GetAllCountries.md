@@ -10,8 +10,9 @@ so.topic: reference
 
 Returns all available countries a contact or person could belong to.
 
-**Parameters:**
- - **includeDeleted** Include deleted items in result?
+## Parameters
+
+* **includeDeleted** Include deleted items in result?
 
 **Returns:** NSCountry[]
 

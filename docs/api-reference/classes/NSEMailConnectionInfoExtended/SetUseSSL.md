@@ -11,7 +11,7 @@ so.topic: reference
 Use a secure connection with the server
 
 **Parameter:** 
- - **useSSL** Bool
+* **useSSL** Bool
 
 ```crmscript
 NSEMailConnectionInfoExtended thing;

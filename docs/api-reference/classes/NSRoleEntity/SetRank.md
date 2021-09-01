@@ -11,7 +11,7 @@ so.topic: reference
 Sorting rank of this role in lists
 
 **Parameter:** 
- - **rank** Integer
+* **rank** Integer
 
 ```crmscript
 NSRoleEntity thing;

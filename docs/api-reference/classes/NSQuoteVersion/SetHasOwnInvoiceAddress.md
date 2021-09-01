@@ -11,7 +11,7 @@ so.topic: reference
 The quote has an address for Invoicing. This will typically be copied from the company's addresses. 
 
 **Parameter:** 
- - **hasOwnInvoiceAddress** Bool
+* **hasOwnInvoiceAddress** Bool
 
 ```crmscript
 NSQuoteVersion thing;

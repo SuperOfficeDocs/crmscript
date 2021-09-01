@@ -13,7 +13,7 @@ Load object with values from category with given id.
 
 ## Parameters
 
- - id: The id of the category to load.
+* id: The id of the category to load.
 
 Returns true if the category exists, otherwise false.
 

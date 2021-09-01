@@ -11,7 +11,7 @@ so.topic: reference
 Key used to authenticate the session.
 
 **Parameter:** 
- - **sessionKey** String
+* **sessionKey** String
 
 ```crmscript
 NSChatSessionEntity thing;

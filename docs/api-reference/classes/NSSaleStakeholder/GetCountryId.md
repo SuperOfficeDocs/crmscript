@@ -8,7 +8,7 @@ so.topic: reference
 
 # Integer GetCountryId()
 
-Country id - primary key
+Country id* primary key
 
 **Returns:** Integer
 

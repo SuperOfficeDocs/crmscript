@@ -11,7 +11,7 @@ so.topic: reference
 Category of sale type, copied to sale
 
 **Parameter:** 
- - **saleTypeCatId** Integer
+* **saleTypeCatId** Integer
 
 ```crmscript
 NSSaleTypeEntity thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Our support contact for this person
 
 **Parameter:** 
- - **supportAssociateId** Integer
+* **supportAssociateId** Integer
 
 ```crmscript
 NSPerson thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Name of the feature toggle
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSCsFeatureToggle thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **documentTemplateId** Integer
+* **documentTemplateId** Integer
 
 ```crmscript
 NSDocumentTemplate thing;

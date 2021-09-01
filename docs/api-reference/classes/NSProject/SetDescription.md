@@ -11,7 +11,7 @@ so.topic: reference
 The projects description
 
 **Parameter:** 
- - **description** String
+* **description** String
 
 ```crmscript
 NSProject thing;

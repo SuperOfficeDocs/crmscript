@@ -8,9 +8,10 @@ so.topic: reference
 
 # NSSaleSummary GetSummaryByContact(Integer contactId, DateTime fromDate, DateTime toDate)
 
-**Parameters:**
- - **contactId** 
- - **fromDate** 
- - **toDate** 
+## Parameters
+
+* **contactId** 
+* **fromDate** 
+* **toDate** 
 
 **Returns:** NSSaleSummary

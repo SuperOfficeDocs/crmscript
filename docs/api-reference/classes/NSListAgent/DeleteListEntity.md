@@ -10,8 +10,9 @@ so.topic: reference
 
 Deletes the NSListEntity
   
-**Parameters:**
- - **listEntityId** The identity of the NSListEntity to delete.
+## Parameters
+
+* **listEntityId** The identity of the NSListEntity to delete.
 
 ```crmscript
 NSListAgent agent;

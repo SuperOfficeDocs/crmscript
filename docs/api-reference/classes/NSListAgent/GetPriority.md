@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSPriority object.
 
-**Parameters:**
- - **priorityId** The identifier of the NSPriority object
+## Parameters
+
+* **priorityId** The identifier of the NSPriority object
 
 **Returns:** NSPriority
 

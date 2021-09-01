@@ -11,7 +11,7 @@ so.topic: reference
 The display name of the group to display to the user.
 
 **Parameter:** 
- - **displayName** String
+* **displayName** String
 
 ```crmscript
 NSCredentialsGroup thing;

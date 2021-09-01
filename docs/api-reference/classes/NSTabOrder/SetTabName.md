@@ -11,7 +11,7 @@ so.topic: reference
 Name of tab control
 
 **Parameter:** 
- - **tabName** String
+* **tabName** String
 
 ```crmscript
 NSTabOrder thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Does this project type have a guide attached
 
 **Parameter:** 
- - **hasGuide** Bool
+* **hasGuide** Bool
 
 ```crmscript
 NSProjectTypeEntity thing;

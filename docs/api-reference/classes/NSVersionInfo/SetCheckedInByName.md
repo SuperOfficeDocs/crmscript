@@ -11,7 +11,7 @@ so.topic: reference
 Name (nicely formatted) of the user/person who performed the checkin
 
 **Parameter:** 
- - **checkedInByName** String
+* **checkedInByName** String
 
 ```crmscript
 NSVersionInfo thing;

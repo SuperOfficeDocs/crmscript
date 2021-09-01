@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSSource object.
 
-**Parameters:**
- - **sourceId** The identifier of the NSSource object
+## Parameters
+
+* **sourceId** The identifier of the NSSource object
 
 **Returns:** NSSource
 

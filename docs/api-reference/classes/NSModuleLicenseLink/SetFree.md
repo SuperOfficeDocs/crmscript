@@ -11,7 +11,7 @@ so.topic: reference
 The number of licenses that are free to be assigned
 
 **Parameter:** 
- - **free** Integer
+* **free** Integer
 
 ```crmscript
 NSModuleLicenseLink thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **emailItemId** Integer
+* **emailItemId** Integer
 
 ```crmscript
 NSEMailEntity thing;

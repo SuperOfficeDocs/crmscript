@@ -11,7 +11,7 @@ so.topic: reference
 Postit text record id.
 
 **Parameter:** 
- - **postitTextId** Integer
+* **postitTextId** Integer
 
 ```crmscript
 NSSelectionEntity thing;

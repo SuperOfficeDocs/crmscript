@@ -11,7 +11,7 @@ so.topic: reference
 Did the operation succeed
 
 **Parameter:** 
- - **success** Bool
+* **success** Bool
 
 ```crmscript
 NSMassOperationResult thing;

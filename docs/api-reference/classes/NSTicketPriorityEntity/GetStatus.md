@@ -12,9 +12,9 @@ The status (normal/deleted) of the priority.
 
 **Returns:** Integer
 
-     - Enum: 0 = Unknown 
-     - Enum: 1 = Normal 
-     - Enum: 2 = Deleted 
+* Enum: 0 = Unknown 
+* Enum: 1 = Normal 
+* Enum: 2 = Deleted 
 
 ```crmscript
 NSTicketPriorityEntity thing;

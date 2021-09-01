@@ -8,4 +8,4 @@ so.topic: reference
 
 # NSQuotePublishDocuments
 
-Prepare the documents required to publish a quote - Email, main document as pdf, quoted products as pdf, attachments
+Prepare the documents required to publish a quote* Email, main document as pdf, quoted products as pdf, attachments

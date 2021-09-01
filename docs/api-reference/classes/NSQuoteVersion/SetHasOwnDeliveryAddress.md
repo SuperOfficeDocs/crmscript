@@ -11,7 +11,7 @@ so.topic: reference
 The delivery address is not the same as the contact's Street address
 
 **Parameter:** 
- - **hasOwnDeliveryAddress** Bool
+* **hasOwnDeliveryAddress** Bool
 
 ```crmscript
 NSQuoteVersion thing;

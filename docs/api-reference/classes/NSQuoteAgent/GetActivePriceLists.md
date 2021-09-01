@@ -10,9 +10,10 @@ so.topic: reference
 
 Gets the available active PriceLists in a specific currency. Will return empty array if there is no PriceList with the stated currency available.
 
-**Parameters:**
- - **quoteConnectionId** Primary key of the connection
- - **currency** Iso currency like: USD or NOK. See http://www.currency-iso.org/dl_iso_table_a1.xls for details. Case insensitive. Will return empty array if there is no PriceList with the stated currency available.
+## Parameters
+
+* **quoteConnectionId** Primary key of the connection
+* **currency** Iso currency like: USD or NOK. See http://www.currency-iso.org/dl_iso_table_a1.xls for details. Case insensitive. Will return empty array if there is no PriceList with the stated currency available.
 
 **Returns:** NSPriceList[]
 

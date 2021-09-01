@@ -11,7 +11,7 @@ so.topic: reference
 Set the tooltip description for the DeliveryType list item.
 
 **Parameter:** 
- - **tooltip** String DeliveryType tooltip description.
+* **tooltip** String DeliveryType tooltip description.
 
 ```crmscript
 NSDeliveryType thing;

@@ -10,8 +10,9 @@ so.topic: reference
 
 Creates a new or updates an existing contact relation.
 
-**Parameters:**
- - **contactRelationEntity** Relation to save
+## Parameters
+
+* **contactRelationEntity** Relation to save
 
 **Returns:** NSContactRelationEntity
 

@@ -10,8 +10,9 @@ so.topic: reference
 
 This method will execute event handlers in CRMScript for a given event.
 
-**Parameters:**
- - **eventData** The NSEventData instance sent to the event handler
+## Parameters
+
+* **eventData** The NSEventData instance sent to the event handler
 
 **Returns:** NSEventData
 

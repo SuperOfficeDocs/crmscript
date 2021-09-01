@@ -11,7 +11,7 @@ so.topic: reference
 Name of legal base
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSLegalBase thing;

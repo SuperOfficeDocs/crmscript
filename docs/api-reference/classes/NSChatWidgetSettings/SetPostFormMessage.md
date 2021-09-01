@@ -11,7 +11,7 @@ so.topic: reference
 Message text to show in post chat form
 
 **Parameter:** 
- - **postFormMessage** String
+* **postFormMessage** String
 
 ```crmscript
 NSChatWidgetSettings thing;

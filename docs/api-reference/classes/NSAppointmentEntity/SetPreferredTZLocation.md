@@ -11,7 +11,7 @@ so.topic: reference
 Appoinmtments preferred timezone location.
 
 **Parameter:** 
- - **preferredTZLocation** Integer
+* **preferredTZLocation** Integer
 
 ```crmscript
 NSAppointmentEntity thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Contains the user notify time in minutes
 
 **Parameter:** 
- - **warnNewChatMinutes** Integer
+* **warnNewChatMinutes** Integer
 
 ```crmscript
 NSChatTopicEntity thing;

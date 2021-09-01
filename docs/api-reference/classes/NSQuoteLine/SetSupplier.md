@@ -11,7 +11,7 @@ so.topic: reference
 The name of the supplier. Is stored here if the user changes the value from the product in the pricelist, or just enters a QuoteLine without a product link.
 
 **Parameter:** 
- - **supplier** String
+* **supplier** String
 
 ```crmscript
 NSQuoteLine thing;

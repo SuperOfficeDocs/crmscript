@@ -11,7 +11,7 @@ so.topic: reference
 Number of all lost within the period
 
 **Parameter:** 
- - **lost** Integer
+* **lost** Integer
 
 ```crmscript
 NSSaleSummary thing;

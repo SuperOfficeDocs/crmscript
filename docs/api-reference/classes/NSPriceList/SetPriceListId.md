@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **priceListId** Integer
+* **priceListId** Integer
 
 ```crmscript
 NSPriceList thing;

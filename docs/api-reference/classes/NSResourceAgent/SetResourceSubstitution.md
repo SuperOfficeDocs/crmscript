@@ -10,11 +10,12 @@ so.topic: reference
 
 Create or update a resource substitution
 
-**Parameters:**
- - **resourceName** The name of the resource, without any brackets
- - **resourceValues** The new value of the resource
- - **culture** The .NET culture string
- - **isActive** Is the subsitution now active
+## Parameters
+
+* **resourceName** The name of the resource, without any brackets
+* **resourceValues** The new value of the resource
+* **culture** The .NET culture string
+* **isActive** Is the subsitution now active
 
 ```crmscript
 NSResourceAgent agent;

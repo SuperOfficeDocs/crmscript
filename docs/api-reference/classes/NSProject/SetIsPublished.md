@@ -9,7 +9,7 @@ so.topic: reference
 # SetIsPublished(Bool isPublished)
 
 **Parameter:** 
- - **isPublished** Bool
+* **isPublished** Bool
 
 ```crmscript
 NSProject thing;

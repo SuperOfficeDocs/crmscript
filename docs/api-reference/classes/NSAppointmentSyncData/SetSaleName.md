@@ -11,7 +11,7 @@ so.topic: reference
 Sale heading (short description?)
 
 **Parameter:** 
- - **saleName** String
+* **saleName** String
 
 ```crmscript
 NSAppointmentSyncData thing;

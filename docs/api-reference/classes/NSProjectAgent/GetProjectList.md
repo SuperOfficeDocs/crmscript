@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a vector of Project objects.
 
-**Parameters:**
- - **projectIds** The identifiers of the NSProject objects
+## Parameters
+
+* **projectIds** The identifiers of the NSProject objects
 
 **Returns:** NSProject[]
 

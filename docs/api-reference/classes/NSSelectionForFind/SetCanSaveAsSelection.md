@@ -11,7 +11,7 @@ so.topic: reference
 Most Find entities support saving the search as a Dynamic Selection: this bool indicates if that is the case
 
 **Parameter:** 
- - **canSaveAsSelection** Bool
+* **canSaveAsSelection** Bool
 
 ```crmscript
 NSSelectionForFind thing;

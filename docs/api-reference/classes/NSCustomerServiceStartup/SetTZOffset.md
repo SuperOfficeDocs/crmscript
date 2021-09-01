@@ -11,7 +11,7 @@ so.topic: reference
 The offset in minutes compared with UTC, calculated for DateTime.Now
 
 **Parameter:** 
- - **tZOffset** Integer
+* **tZOffset** Integer
 
 ```crmscript
 NSCustomerServiceStartup thing;

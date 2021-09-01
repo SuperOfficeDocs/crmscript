@@ -11,7 +11,7 @@ so.topic: reference
 Text with comments on why approval was granted (or rejected)
 
 **Parameter:** 
- - **approvedText** String
+* **approvedText** String
 
 ```crmscript
 NSQuoteVersion thing;

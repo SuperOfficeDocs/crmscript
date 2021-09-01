@@ -44,9 +44,6 @@ In addition, you can specify JavaScript to run when the item is clicked and set 
 ```crmscript
 MainMenu menu = getMainMenu();
 menu.addItem("List equipment", getProgram(1) + "&action=listExtraTable&extraTable=y_equipment");
-```
 
-```crmscript
-MainMenu menu = getMainMenu();
 menu.addItem("New unit", getProgram(1) + "&action=editExtraTableEntry&extraTable=y_equipment", 1, 1);
 ```

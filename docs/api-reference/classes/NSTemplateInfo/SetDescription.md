@@ -11,7 +11,7 @@ so.topic: reference
 Document description, shown as a tooltip or in some extended description area
 
 **Parameter:** 
- - **description** String
+* **description** String
 
 ```crmscript
 NSTemplateInfo thing;

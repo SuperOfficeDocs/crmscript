@@ -11,7 +11,7 @@ so.topic: reference
 The sale rating
 
 **Parameter:** 
- - **rating** NSRating
+* **rating** NSRating
 
 ```crmscript
 NSSaleEntity thing;

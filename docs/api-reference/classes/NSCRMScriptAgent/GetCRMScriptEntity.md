@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSCRMScriptEntity object.
 
-**Parameters:**
- - **cRMScriptEntityId** The identifier of the NSCRMScriptEntity object
+## Parameters
+
+* **cRMScriptEntityId** The identifier of the NSCRMScriptEntity object
 
 **Returns:** NSCRMScriptEntity
 

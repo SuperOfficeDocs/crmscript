@@ -11,7 +11,7 @@ so.topic: reference
 Where the context should naviate afterwards
 
 **Parameter:** 
- - **navigateTo** String
+* **navigateTo** String
 
 ```crmscript
 NSEventData thing;

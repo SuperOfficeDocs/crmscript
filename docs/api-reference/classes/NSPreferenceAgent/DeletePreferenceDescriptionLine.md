@@ -10,8 +10,9 @@ so.topic: reference
 
 Deletes the NSPreferenceDescriptionLine
   
-**Parameters:**
- - **preferenceDescriptionLineId** The identity of the PreferenceDescriptionLine to delete.
+## Parameters
+
+* **preferenceDescriptionLineId** The identity of the PreferenceDescriptionLine to delete.
 
 ```crmscript
 NSPreferenceAgent agent;

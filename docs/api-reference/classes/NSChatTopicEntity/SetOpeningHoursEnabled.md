@@ -11,7 +11,7 @@ so.topic: reference
 Whether to use opening hours or not.
 
 **Parameter:** 
- - **openingHoursEnabled** Bool
+* **openingHoursEnabled** Bool
 
 ```crmscript
 NSChatTopicEntity thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **historyId** Integer
+* **historyId** Integer
 
 ```crmscript
 NSHistory thing;

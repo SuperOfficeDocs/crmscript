@@ -11,7 +11,7 @@ so.topic: reference
 URL link value. May contain CS tags to be replaced.
 
 **Parameter:** 
- - **linkValue** String
+* **linkValue** String
 
 ```crmscript
 NSFieldInfoDynamicLink thing;

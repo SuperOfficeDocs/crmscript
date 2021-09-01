@@ -11,7 +11,7 @@ so.topic: reference
 Image to be shown
 
 **Parameter:** 
- - **imageHint** String
+* **imageHint** String
 
 ```crmscript
 NSQuoteVersionButtonState thing;

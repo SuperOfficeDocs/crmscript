@@ -11,7 +11,7 @@ so.topic: reference
 The name to use in the user interface.
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSProduct thing;

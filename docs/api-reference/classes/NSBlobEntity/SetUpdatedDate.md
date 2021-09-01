@@ -11,7 +11,7 @@ so.topic: reference
 Last updated when
 
 **Parameter:** 
- - **updatedDate** DateTime
+* **updatedDate** DateTime
 
 ```crmscript
 NSBlobEntity thing;

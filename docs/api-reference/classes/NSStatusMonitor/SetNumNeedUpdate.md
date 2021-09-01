@@ -11,7 +11,7 @@ so.topic: reference
 Number of targets that had this status, but have their needsUpdate bit set due to some change
 
 **Parameter:** 
- - **numNeedUpdate** Integer
+* **numNeedUpdate** Integer
 
 ```crmscript
 NSStatusMonitor thing;

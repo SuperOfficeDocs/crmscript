@@ -11,7 +11,7 @@ so.topic: reference
 Updates the existing NSUserDefinedFieldInfo or creates a new NSUserDefinedFieldInfo if the id parameter is 0
 
 **Parameters**:
- - **userDefinedFieldInfo** The NSUserDefinedFieldInfo to save.
+* **userDefinedFieldInfo** The NSUserDefinedFieldInfo to save.
 
 **Returns:** NSUserDefinedFieldInfo
 

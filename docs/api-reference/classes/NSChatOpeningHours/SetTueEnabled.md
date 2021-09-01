@@ -11,7 +11,7 @@ so.topic: reference
 Whether open on Tuesdays.
 
 **Parameter:** 
- - **tueEnabled** Bool
+* **tueEnabled** Bool
 
 ```crmscript
 NSChatOpeningHours thing;

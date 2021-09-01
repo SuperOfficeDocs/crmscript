@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets the persons working in a specific department in the same company as the logged on user. Departments can be retrieved with the PhoneList.DepartmentList service.
 
-**Parameters:**
- - **departmentId** The department id.
+## Parameters
+
+* **departmentId** The department id.
 
 **Returns:** NSPerson[]
 

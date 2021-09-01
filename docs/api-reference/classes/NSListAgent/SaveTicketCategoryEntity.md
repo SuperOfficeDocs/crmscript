@@ -11,7 +11,7 @@ so.topic: reference
 Updates the existing NSTicketCategoryEntity or creates a new NSTicketCategoryEntity if the id parameter is 0
 
 **Parameters**:
- - **ticketCategoryEntity** The NSTicketCategoryEntity to save.
+* **ticketCategoryEntity** The NSTicketCategoryEntity to save.
 
 **Returns:** NSTicketCategoryEntity
 

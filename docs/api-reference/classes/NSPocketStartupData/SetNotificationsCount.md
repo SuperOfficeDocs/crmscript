@@ -11,7 +11,7 @@ so.topic: reference
 Number of new invitations
 
 **Parameter:** 
- - **notificationsCount** Integer
+* **notificationsCount** Integer
 
 ```crmscript
 NSPocketStartupData thing;

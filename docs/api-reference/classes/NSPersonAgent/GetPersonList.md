@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a vector of NSPerson objects.
 
-**Parameters:**
- - **personIds** The identifiers of the NSPerson objects
+## Parameters
+
+* **personIds** The identifiers of the NSPerson objects
 
 **Returns:** NSPerson[]
 

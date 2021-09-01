@@ -11,7 +11,7 @@ so.topic: reference
 The rank of the web panel
 
 **Parameter:** 
- - **rank** Integer
+* **rank** Integer
 
 ```crmscript
 NSWebPanelEntity thing;

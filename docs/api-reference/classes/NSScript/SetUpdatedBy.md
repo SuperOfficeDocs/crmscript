@@ -11,7 +11,7 @@ so.topic: reference
 Who updated this script
 
 **Parameter:** 
- - **updatedBy** String
+* **updatedBy** String
 
 ```crmscript
 NSScript thing;

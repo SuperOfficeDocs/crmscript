@@ -10,8 +10,9 @@ so.topic: reference
 
 Find all roles with a given functional right. The roles matched must contain the specified functional right. 
 
-**Parameters:**
- - **functionalRightName** Functional right name to search for
+## Parameters
+
+* **functionalRightName** Functional right name to search for
 
 **Returns:** NSMDOListItem[]
 

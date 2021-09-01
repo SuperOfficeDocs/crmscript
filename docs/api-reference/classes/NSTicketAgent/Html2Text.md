@@ -10,8 +10,9 @@ so.topic: reference
 
 Create a plain text version of the html, suitable for email
 
-**Parameters:**
- - **content** The html version
+## Parameters
+
+* **content** The html version
 
 **Returns:** The plain text version
 

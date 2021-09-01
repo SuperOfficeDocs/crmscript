@@ -10,8 +10,9 @@ so.topic: reference
 
 Deletes the NSProjectEventEntity
   
-**Parameters:**
- - **projectEventEntityId** The identity of the NSProjectEventEntity to delete.
+## Parameters
+
+* **projectEventEntityId** The identity of the NSProjectEventEntity to delete.
 
 ```crmscript
 NSProjectAgent agent;

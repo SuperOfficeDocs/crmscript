@@ -11,7 +11,7 @@ so.topic: reference
 The country this contact person is located in.
 
 **Parameter:** 
- - **personCountry** String
+* **personCountry** String
 
 ```crmscript
 NSParticipantSyncData thing;

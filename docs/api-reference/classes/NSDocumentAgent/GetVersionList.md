@@ -10,8 +10,9 @@ so.topic: reference
 
 Get a list of existing, committed  versions for a given document
 
-**Parameters:**
- - **documentId** SuperOffice document Id
+## Parameters
+
+* **documentId** SuperOffice document Id
 
 **Returns:** NSVersionInfo[]
 

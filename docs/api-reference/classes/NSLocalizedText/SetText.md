@@ -11,7 +11,7 @@ so.topic: reference
 The text string itself
 
 **Parameter:** 
- - **text** String
+* **text** String
 
 ```crmscript
 NSLocalizedText thing;

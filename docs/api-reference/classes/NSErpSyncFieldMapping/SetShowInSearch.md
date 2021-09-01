@@ -11,7 +11,7 @@ so.topic: reference
 Should this field be shown in searches
 
 **Parameter:** 
- - **showInSearch** Bool
+* **showInSearch** Bool
 
 ```crmscript
 NSErpSyncFieldMapping thing;

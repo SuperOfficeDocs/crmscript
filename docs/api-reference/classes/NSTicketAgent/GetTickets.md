@@ -10,8 +10,9 @@ so.topic: reference
 
 Get multiple tickets
 
-**Parameters:**
- - **ticketIds** The ids of tickets to get
+## Parameters
+
+* **ticketIds** The ids of tickets to get
 
 **Returns:** Ticket[]
 

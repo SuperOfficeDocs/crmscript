@@ -11,7 +11,7 @@ so.topic: reference
 The reference to the associated chat session.
 
 **Parameter:** 
- - **chatSessionId** Integer
+* **chatSessionId** Integer
 
 ```crmscript
 NSChatMessage thing;

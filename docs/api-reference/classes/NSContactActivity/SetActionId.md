@@ -11,7 +11,7 @@ so.topic: reference
 Id of the last element an activity was found on. I.e. AppointmentId, ContactId, or PersonId
 
 **Parameter:** 
- - **actionId** Integer
+* **actionId** Integer
 
 ```crmscript
 NSContactActivity thing;

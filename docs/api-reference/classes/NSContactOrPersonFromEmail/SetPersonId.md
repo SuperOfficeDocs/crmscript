@@ -11,7 +11,7 @@ so.topic: reference
 The id of the person
 
 **Parameter:** 
- - **personId** Integer
+* **personId** Integer
 
 ```crmscript
 NSContactOrPersonFromEmail thing;

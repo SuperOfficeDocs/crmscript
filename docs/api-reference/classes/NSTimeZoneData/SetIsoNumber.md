@@ -9,7 +9,7 @@ so.topic: reference
 # SetIsoNumber(Integer isoNumber)
 
 **Parameter:** 
- - **isoNumber** Integer
+* **isoNumber** Integer
 
 ```crmscript
 NSTimeZoneData thing;

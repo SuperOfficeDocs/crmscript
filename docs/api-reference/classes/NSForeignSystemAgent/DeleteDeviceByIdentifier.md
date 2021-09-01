@@ -10,10 +10,11 @@ so.topic: reference
 
 Delete a NSForeignDevice with deviceName and deviceIdentifier that belongs to the application with applicationName.
 
-**Parameters:**
- - **applicationName** The name of the foreign application.
- - **deviceName** The name of the foreign device.
- - **deviceIdentifier** Unique id of device (Palm pilot device ID, version number, etc)
+## Parameters
+
+* **applicationName** The name of the foreign application.
+* **deviceName** The name of the foreign device.
+* **deviceIdentifier** Unique id of device (Palm pilot device ID, version number, etc)
 
 ```crmscript
 NSForeignSystemAgent agent;

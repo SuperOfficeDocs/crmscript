@@ -8,7 +8,7 @@ so.topic: reference
 
 # String GetExtraInfo()
 
-Extra information - show state, or whatever is required
+Extra information* show state, or whatever is required
 
 **Returns:** String
 

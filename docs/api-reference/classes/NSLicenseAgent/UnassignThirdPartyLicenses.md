@@ -10,10 +10,11 @@ so.topic: reference
 
 Unassign (remove) third party licenses
 
-**Parameters:**
- - **associateId** User to unassign third party licenses for
- - **moduleOwner** Name of the module owner to unassign license for
- - **moduleLicenseNames** Name of module licenses to unassign (remove)
+## Parameters
+
+* **associateId** User to unassign third party licenses for
+* **moduleOwner** Name of the module owner to unassign license for
+* **moduleLicenseNames** Name of module licenses to unassign (remove)
 
 **Returns:** NSModuleLicenseLink[]
 

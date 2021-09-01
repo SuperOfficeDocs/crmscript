@@ -11,7 +11,7 @@ so.topic: reference
 The id of the field that is using the lists. Readonly
 
 **Parameter:** 
- - **erpFieldId** Integer
+* **erpFieldId** Integer
 
 ```crmscript
 NSErpConnectionListMapping thing;

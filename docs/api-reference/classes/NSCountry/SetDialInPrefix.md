@@ -11,7 +11,7 @@ so.topic: reference
 Dial in prefix
 
 **Parameter:** 
- - **dialInPrefix** String
+* **dialInPrefix** String
 
 ```crmscript
 NSCountry thing;

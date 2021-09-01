@@ -11,7 +11,7 @@ so.topic: reference
 Indicates wether or not the message will vibrate/play a sound when delivered
 
 **Parameter:** 
- - **silent** Bool
+* **silent** Bool
 
 ```crmscript
 NSPocketNotificationMessage thing;

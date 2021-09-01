@@ -11,7 +11,7 @@ so.topic: reference
 The debug info for the message.
 
 **Parameter:** 
- - **debugInfo** String
+* **debugInfo** String
 
 ```crmscript
 NSTicketMessageEntity thing;

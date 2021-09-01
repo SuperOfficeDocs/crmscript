@@ -10,9 +10,10 @@ so.topic: reference
 
 Fast check for new mail in the database
 
-**Parameters:**
- - **mailItemId** The last known mailitemid
- - **folderId** The folderId for the folder to check for new mail
+## Parameters
+
+* **mailItemId** The last known mailitemid
+* **folderId** The folderId for the folder to check for new mail
 
 **Returns:** Bool
 

@@ -10,6 +10,7 @@ so.topic: reference
 
 Delete a row from a table
 
-**Parameters:**
- - **tableName** The name of the table to delete from; in the current release this must be an 'extratable'. Use the database name, on the form y_aTable
- - **id** The id of the row to delete
+## Parameters
+
+* **tableName** The name of the table to delete from; in the current release this must be an 'extratable'. Use the database name, on the form y_aTable
+* **id** The id of the row to delete

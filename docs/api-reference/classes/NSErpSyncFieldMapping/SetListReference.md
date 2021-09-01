@@ -11,7 +11,7 @@ so.topic: reference
 Field is read-only, for lookup in gui
 
 **Parameter:** 
- - **listReference** String
+* **listReference** String
 
 ```crmscript
 NSErpSyncFieldMapping thing;

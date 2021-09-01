@@ -11,7 +11,7 @@ so.topic: reference
 Owner of the selection
 
 **Parameter:** 
- - **associate** NSAssociate
+* **associate** NSAssociate
 
 ```crmscript
 NSSelectionEntity thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Initials, also login name, possibly database user name
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSResourceEntity thing;

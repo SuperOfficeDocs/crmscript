@@ -11,7 +11,7 @@ so.topic: reference
 Array of visible buttons with defined actions in the quote verson dialog.
 
 **Parameter:** 
- - **actionButtons** QuoteVersionButtonState[]
+* **actionButtons** QuoteVersionButtonState[]
 
 ```crmscript
 NSQuoteVersionWorkflowState thing;

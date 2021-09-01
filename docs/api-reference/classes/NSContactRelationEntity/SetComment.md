@@ -11,7 +11,7 @@ so.topic: reference
 Comment for relation
 
 **Parameter:** 
- - **comment** String
+* **comment** String
 
 ```crmscript
 NSContactRelationEntity thing;

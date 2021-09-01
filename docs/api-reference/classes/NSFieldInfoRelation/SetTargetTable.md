@@ -11,7 +11,7 @@ so.topic: reference
 Name of target table: 'contact', 'y_equipment'
 
 **Parameter:** 
- - **targetTable** String
+* **targetTable** String
 
 ```crmscript
 NSFieldInfoRelation thing;

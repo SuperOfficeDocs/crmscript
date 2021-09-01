@@ -10,6 +10,7 @@ so.topic: reference
 
 Delete a usergroup and move its members to another usergroup
 
-**Parameters:**
- - **userGroupToDelete** The id of the userGroup to delete
- - **userGroupToMoveTo** The id of the userGroup to move the members to
+## Parameters
+
+* **userGroupToDelete** The id of the userGroup to delete
+* **userGroupToMoveTo** The id of the userGroup to move the members to

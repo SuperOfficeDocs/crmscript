@@ -11,7 +11,7 @@ so.topic: reference
 Set the primary key (id) for the NSRelationToOwner
 
 **Parameter:** 
- - **id** Integer RelationToOwner id.
+* **id** Integer RelationToOwner id.
 
 ```crmscript
 NSRelationToOwner thing;

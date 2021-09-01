@@ -10,6 +10,7 @@ so.topic: reference
 
 Copy selection members from selection into an existing selection.
 
-**Parameters:**
- - **fromSelectionId** The id of the selection to copy members from.
- - **toSelectionId** The id of the selection to copy members to.
+## Parameters
+
+* **fromSelectionId** The id of the selection to copy members from.
+* **toSelectionId** The id of the selection to copy members to.

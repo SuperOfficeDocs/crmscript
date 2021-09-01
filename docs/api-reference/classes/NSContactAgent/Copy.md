@@ -10,11 +10,12 @@ so.topic: reference
 
 Copy a contact. Activities and related data will be ignored
 
-**Parameters:**
- - **sourceContactId** The id of the contact to copy
- - **destinationContactName** The name of the destination contact
- - **destinationContactDepartment** The department of the destination contact
- - **copyPersons** If true, persons will be copied from source contact
+## Parameters
+
+* **sourceContactId** The id of the contact to copy
+* **destinationContactName** The name of the destination contact
+* **destinationContactDepartment** The department of the destination contact
+* **copyPersons** If true, persons will be copied from source contact
 
 **Returns:** Id of copied contact
 

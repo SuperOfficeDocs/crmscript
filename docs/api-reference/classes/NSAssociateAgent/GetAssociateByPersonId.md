@@ -10,8 +10,9 @@ so.topic: reference
 
 Returns the associate that belongs to this person if the person is an associate.
 
-**Parameters:**
- - **personId** The person id
+## Parameters
+
+* **personId** The person id
 
 **Returns:** NSAssociate
 

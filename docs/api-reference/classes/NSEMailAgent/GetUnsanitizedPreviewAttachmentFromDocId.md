@@ -10,9 +10,10 @@ so.topic: reference
 
 Retrieve an attachment from an e-mail stored in the document archive. The returned data is intended to be use for a preview. The returned data is not sanitized.
 
-**Parameters:**
- - **docId** Unique ID for the e-mail in the document archive to retrieve the attachment from
- - **attachmentId** Id of the attachment in the e-mail
+## Parameters
+
+* **docId** Unique ID for the e-mail in the document archive to retrieve the attachment from
+* **attachmentId** Id of the attachment in the e-mail
 
 **Returns:** NSEMailAttachment
 

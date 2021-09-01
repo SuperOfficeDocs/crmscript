@@ -11,7 +11,7 @@ so.topic: reference
 The base color of the widget
 
 **Parameter:** 
- - **color** String
+* **color** String
 
 ```crmscript
 NSChatWidgetSettings thing;

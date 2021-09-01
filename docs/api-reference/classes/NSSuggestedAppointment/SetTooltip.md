@@ -11,7 +11,7 @@ so.topic: reference
 Tooltip / description
 
 **Parameter:** 
- - **tooltip** String
+* **tooltip** String
 
 ```crmscript
 NSSuggestedAppointment thing;

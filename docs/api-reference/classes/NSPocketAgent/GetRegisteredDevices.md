@@ -10,5 +10,6 @@ so.topic: reference
 
 Retrieve all registered devices for an associate
 
-**Parameters:**
- - **associateId** The user to get devices for
+## Parameters
+
+* **associateId** The user to get devices for

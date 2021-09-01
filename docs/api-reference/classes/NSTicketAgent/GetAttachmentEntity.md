@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSAttachmentEntity object.
 
-**Parameters:**
- - **attachmentEntityId** The identifier of the NSAttachmentEntity object
+## Parameters
+
+* **attachmentEntityId** The identifier of the NSAttachmentEntity object
 
 **Returns:** NSAttachmentEntity
 

@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a vector of UserGroup objects.
 
-**Parameters:**
- - **userGroupIds** The identifiers of the NSUserGroup objects
+## Parameters
+
+* **userGroupIds** The identifiers of the NSUserGroup objects
 
 **Returns:** NSUserGroup[]
 

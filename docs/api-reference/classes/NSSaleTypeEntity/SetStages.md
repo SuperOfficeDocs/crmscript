@@ -11,7 +11,7 @@ so.topic: reference
 Stages, those associated with this NSSaleType are selected.
 
 **Parameter:** 
- - **stages** NSSelectableMDOListItem[]
+* **stages** NSSelectableMDOListItem[]
 
 ```crmscript
 NSSaleTypeEntity thing;

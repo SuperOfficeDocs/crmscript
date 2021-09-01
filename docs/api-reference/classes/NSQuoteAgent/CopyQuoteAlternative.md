@@ -10,10 +10,11 @@ so.topic: reference
 
 Copy a quote alternative from the same sale and adds it to a version.
 
-**Parameters:**
- - **quoteVersionId** QuoteVersionId of the version to copy the alternative to.
- - **quoteAlternativeId** QuoteAlternativeId of the alternative to make a copy of.
- - **quoteAlternativeName** The name to set on the new alternative.
+## Parameters
+
+* **quoteVersionId** QuoteVersionId of the version to copy the alternative to.
+* **quoteAlternativeId** QuoteAlternativeId of the alternative to make a copy of.
+* **quoteAlternativeName** The name to set on the new alternative.
 
 **Returns:** NSQuoteAlternative
 

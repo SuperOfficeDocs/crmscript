@@ -11,7 +11,7 @@ so.topic: reference
 The associate that first created the appointment. The property is read-only.
 
 **Parameter:** 
- - **createdBy** NSAssociate
+* **createdBy** NSAssociate
 
 ```crmscript
 NSAppointmentEntity thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Account Id
 
 **Parameter:** 
- - **accountId** Integer
+* **accountId** Integer
 
 ```crmscript
 NSEMailEntity thing;

@@ -10,8 +10,9 @@ so.topic: reference
 
 Saves a set of window and dialog position and size settings.
 
-**Parameters:**
- - **windowPosSizes** The items that are saved
+## Parameters
+
+* **windowPosSizes** The items that are saved
 
 **Returns:** NSWindowPosSize[]
 

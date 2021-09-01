@@ -10,10 +10,11 @@ so.topic: reference
 
 Save the Email as a tmp document ready to archive
 
-**Parameters:**
- - **email** The e-mail to save
- - **folderId** The folder id where the email is
- - **stripAttachments** If true, do not include attachments in tmp document
+## Parameters
+
+* **email** The e-mail to save
+* **folderId** The folder id where the email is
+* **stripAttachments** If true, do not include attachments in tmp document
 
 **Returns:** String
 

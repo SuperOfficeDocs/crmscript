@@ -11,7 +11,7 @@ so.topic: reference
 Set the primary key (id) for the Role
 
 **Parameter:** 
- - **id** Integer Role id.
+* **id** Integer Role id.
 
 ```crmscript
 NSRole thing;

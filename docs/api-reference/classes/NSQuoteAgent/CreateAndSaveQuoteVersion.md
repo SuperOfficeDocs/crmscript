@@ -10,8 +10,9 @@ so.topic: reference
 
 Created a new NSQuoteVersion based on another NSQuoteVersion on the same Quote.
 
-**Parameters:**
- - **quoteVersionId** QuoteVersionId of the version to copy the contents from.
+## Parameters
+
+* **quoteVersionId** QuoteVersionId of the version to copy the contents from.
 
 **Returns:** NSQuoteVersion
 

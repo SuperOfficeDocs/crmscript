@@ -11,7 +11,7 @@ so.topic: reference
 If true, the Task list item is deleted
 
 **Parameter:** 
- - **deleted** Bool
+* **deleted** Bool
 
 ```crmscript
 NSTaskListItem thing;

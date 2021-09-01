@@ -12,7 +12,7 @@ Returns the Reply template html body, in the language given by language
 
 ## Parameters
 
- - language as an integer, see below
+* language as an integer, see below
 
 ## Languages
 

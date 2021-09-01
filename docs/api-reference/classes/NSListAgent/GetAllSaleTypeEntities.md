@@ -10,8 +10,9 @@ so.topic: reference
 
 Returns all sale types as entities with stakeholders, guide and quote properties
 
-**Parameters:**
- - **includeDeleted** Include deleted items in result?
+## Parameters
+
+* **includeDeleted** Include deleted items in result?
 
 **Returns:** NSSaleTypeEntity[]
 

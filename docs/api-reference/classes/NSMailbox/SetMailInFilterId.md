@@ -11,7 +11,7 @@ so.topic: reference
 The primary key (auto-incremented)
 
 **Parameter:** 
- - **mailInFilterId** Integer
+* **mailInFilterId** Integer
 
 ```crmscript
 NSMailbox thing;

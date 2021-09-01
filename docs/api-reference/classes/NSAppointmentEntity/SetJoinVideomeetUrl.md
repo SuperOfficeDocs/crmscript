@@ -11,7 +11,7 @@ so.topic: reference
 Blank when not a video meeting. Filled with Join Meeting URL when created.
 
 **Parameter:** 
- - **joinVideomeetUrl** String
+* **joinVideomeetUrl** String
 
 ```crmscript
 NSAppointmentEntity thing;

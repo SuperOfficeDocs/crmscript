@@ -11,7 +11,7 @@ so.topic: reference
 Is the report published?
 
 **Parameter:** 
- - **published** Bool
+* **published** Bool
 
 ```crmscript
 NSReportEntity thing;

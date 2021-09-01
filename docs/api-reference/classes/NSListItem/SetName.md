@@ -11,7 +11,7 @@ so.topic: reference
 Display text name
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSListItem thing;

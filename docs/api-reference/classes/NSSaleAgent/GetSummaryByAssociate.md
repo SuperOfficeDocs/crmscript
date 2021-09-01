@@ -8,9 +8,10 @@ so.topic: reference
 
 # NSSaleSummary GetSummaryByAssociate(Integer associateId, DateTime fromDate, DateTime toDate)
 
-**Parameters:**
- - **associateId** 
- - **fromDate** 
- - **toDate** 
+## Parameters
+
+* **associateId** 
+* **fromDate** 
+* **toDate** 
 
 **Returns:** NSSaleSummary

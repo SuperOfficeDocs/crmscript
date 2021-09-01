@@ -11,7 +11,7 @@ so.topic: reference
 Updates the existing NSChatSessionEntity or creates a new NSChatSessionEntity if the id parameter is 0
 
 **Parameters**:
- - **chatSessionEntity** The NSChatSessionEntity to save.
+* **chatSessionEntity** The NSChatSessionEntity to save.
 
 **Returns:** NSChatSessionEntity
 

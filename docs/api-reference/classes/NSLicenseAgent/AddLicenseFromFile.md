@@ -10,8 +10,9 @@ so.topic: reference
 
 Load and activate a new license from file/string if the new license is valid.
 
-**Parameters:**
- - **fileContent** Content of the license file as XML.
+## Parameters
+
+* **fileContent** Content of the license file as XML.
 
 **Returns:** NSExtendedLicenseInfo
 

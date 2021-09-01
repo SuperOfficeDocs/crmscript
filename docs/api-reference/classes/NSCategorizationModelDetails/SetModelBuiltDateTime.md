@@ -11,7 +11,7 @@ so.topic: reference
 Time the training finished
 
 **Parameter:** 
- - **modelBuiltDateTime** DateTime
+* **modelBuiltDateTime** DateTime
 
 ```crmscript
 NSCategorizationModelDetails thing;

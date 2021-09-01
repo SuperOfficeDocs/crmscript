@@ -13,8 +13,8 @@ Used in conjunction with DBI. Load an entry with the specified key from the spec
 
 ## Parameters
 
- - p0: id of the agent this eab entry belongs to
- - p1: external key for the eab entry
+* p0: id of the agent this eab entry belongs to
+* p1: external key for the eab entry
 
 Returns a boolean, true if it was found else false.
 

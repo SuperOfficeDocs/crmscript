@@ -10,8 +10,9 @@ so.topic: reference
 
 Get information about a script from a unique identifier
 
-**Parameters:**
- - **uniqueIdentifier** Global unique reference to script (independent of installation)
+## Parameters
+
+* **uniqueIdentifier** Global unique reference to script (independent of installation)
 
 **Returns:** String
 

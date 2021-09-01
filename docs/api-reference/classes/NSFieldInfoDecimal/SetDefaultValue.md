@@ -11,7 +11,7 @@ so.topic: reference
 Default decimal (double precision) value
 
 **Parameter:** 
- - **defaultValue** Float
+* **defaultValue** Float
 
 ```crmscript
 NSFieldInfoDecimal thing;

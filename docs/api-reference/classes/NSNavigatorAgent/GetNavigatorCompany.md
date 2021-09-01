@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSNavigatorCompany object.
 
-**Parameters:**
- - **navigatorCompanyId** The identifier of the NSNavigatorCompany object
+## Parameters
+
+* **navigatorCompanyId** The identifier of the NSNavigatorCompany object
 
 **Returns:** NSNavigatorCompany
 

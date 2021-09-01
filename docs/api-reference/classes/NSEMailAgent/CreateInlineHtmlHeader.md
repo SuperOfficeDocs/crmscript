@@ -10,8 +10,9 @@ so.topic: reference
 
 Create Outlook style HTML header to use in for instance reply entities and when printing
 
-**Parameters:**
- - **email** The e-mail to generate header based on
+## Parameters
+
+* **email** The e-mail to generate header based on
 
 **Returns:** String
 

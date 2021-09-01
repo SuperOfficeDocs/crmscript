@@ -10,8 +10,9 @@ so.topic: reference
 
 Remove harmful HTML tags and attributes from an email
 
-**Parameters:**
- - **content** The email content to sanitize
+## Parameters
+
+* **content** The email content to sanitize
 
 **Returns:** String
 

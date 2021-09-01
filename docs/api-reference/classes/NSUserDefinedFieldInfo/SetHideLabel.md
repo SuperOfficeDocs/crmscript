@@ -11,7 +11,7 @@ so.topic: reference
 Hide the label if 1
 
 **Parameter:** 
- - **hideLabel** Bool
+* **hideLabel** Bool
 
 ```crmscript
 NSUserDefinedFieldInfo thing;

@@ -11,7 +11,7 @@ so.topic: reference
 The sender of the SMS messages. This text will appear on the recipient's mobile phone.
 
 **Parameter:** 
- - **nsPluginSender** String
+* **nsPluginSender** String
 
 ```crmscript
 NSSmsConfig thing;

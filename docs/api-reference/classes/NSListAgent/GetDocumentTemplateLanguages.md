@@ -10,8 +10,9 @@ so.topic: reference
 
 Get the supported language variations for a document template
 
-**Parameters:**
- - **documentTemplateId** The id of the document template
+## Parameters
+
+* **documentTemplateId** The id of the document template
 
 **Returns:** String[]
 

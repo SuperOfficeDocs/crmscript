@@ -11,7 +11,7 @@ so.topic: reference
 Name of table, standardized to lowercase
 
 **Parameter:** 
- - **tablename** String
+* **tablename** String
 
 ```crmscript
 NSChangedDataItem thing;

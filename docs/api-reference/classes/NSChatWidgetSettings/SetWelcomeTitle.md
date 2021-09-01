@@ -11,7 +11,7 @@ so.topic: reference
 Short welcome message when user initiates a chat
 
 **Parameter:** 
- - **welcomeTitle** String
+* **welcomeTitle** String
 
 ```crmscript
 NSChatWidgetSettings thing;

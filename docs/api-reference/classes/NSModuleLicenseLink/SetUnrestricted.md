@@ -11,7 +11,7 @@ so.topic: reference
 Is this module license restricted or unrestricted
 
 **Parameter:** 
- - **unrestricted** Bool
+* **unrestricted** Bool
 
 ```crmscript
 NSModuleLicenseLink thing;

@@ -8,10 +8,10 @@ so.topic: reference
 
 # SetPerson(NSPerson person)
 
-A sale may also be connected to a person - this must be a contact person registered on the current contact. This does not mean that a person is required.
+A sale may also be connected to a person* this must be a contact person registered on the current contact. This does not mean that a person is required.
 
 **Parameter:** 
- - **person** NSPerson
+* **person** NSPerson
 
 ```crmscript
 NSSaleEntity thing;

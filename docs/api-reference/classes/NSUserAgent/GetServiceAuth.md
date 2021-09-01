@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSServiceAuth object.
 
-**Parameters:**
- - **serviceAuthId** The identifier of the NSServiceAuth object
+## Parameters
+
+* **serviceAuthId** The identifier of the NSServiceAuth object
 
 **Returns:** NSServiceAuth
 

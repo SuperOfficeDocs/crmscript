@@ -8,5 +8,6 @@ so.topic: reference
 
 # Void DeleteSaleStakeholders(Integer[] saleStakeholderIds)
 
-**Parameters:**
- - **saleStakeholderIds** 
+## Parameters
+
+* **saleStakeholderIds** 

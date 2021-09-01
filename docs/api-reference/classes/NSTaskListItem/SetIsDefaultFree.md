@@ -11,7 +11,7 @@ so.topic: reference
 True if free, false if busy
 
 **Parameter:** 
- - **isDefaultFree** Bool
+* **isDefaultFree** Bool
 
 ```crmscript
 NSTaskListItem thing;

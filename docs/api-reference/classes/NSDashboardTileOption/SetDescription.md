@@ -11,7 +11,7 @@ so.topic: reference
 Option description, visible to users
 
 **Parameter:** 
- - **description** String
+* **description** String
 
 ```crmscript
 NSDashboardTileOption thing;

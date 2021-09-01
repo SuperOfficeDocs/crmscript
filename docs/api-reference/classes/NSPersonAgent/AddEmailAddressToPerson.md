@@ -10,7 +10,8 @@ so.topic: reference
 
 Sets the primary email address on person, possibly re-ranking email addresses accordingly.
 
-**Parameters:**
- - **personId** Person id of the person
- - **emailAddress** The email address to set as primary email address
- - **setAsPrimaryEmail** True if the address shall be primary email address (have rank == 1)
+## Parameters
+
+* **personId** Person id of the person
+* **emailAddress** The email address to set as primary email address
+* **setAsPrimaryEmail** True if the address shall be primary email address (have rank == 1)

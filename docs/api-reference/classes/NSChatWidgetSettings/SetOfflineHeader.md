@@ -11,7 +11,7 @@ so.topic: reference
 Offline text shown in widget header
 
 **Parameter:** 
- - **offlineHeader** String
+* **offlineHeader** String
 
 ```crmscript
 NSChatWidgetSettings thing;

@@ -10,8 +10,9 @@ so.topic: reference
 
 Get information about default value for an ERP field
 
-**Parameters:**
- - **erpFieldId** The id of the ERP field
+## Parameters
+
+* **erpFieldId** The id of the ERP field
 
 **Returns:** NSErpSyncDefaultValue
 

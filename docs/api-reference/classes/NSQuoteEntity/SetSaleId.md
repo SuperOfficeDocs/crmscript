@@ -11,7 +11,7 @@ so.topic: reference
 The foreign key to the corresponding sale
 
 **Parameter:** 
- - **saleId** Integer
+* **saleId** Integer
 
 ```crmscript
 NSQuoteEntity thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Configuration settings provided by the SMS provider. Typically contains newline-delimited settings such as username and password.
 
 **Parameter:** 
- - **nsPluginConfig** StringDictionary
+* **nsPluginConfig** StringDictionary
 
 ```crmscript
 NSSmsConfig thing;

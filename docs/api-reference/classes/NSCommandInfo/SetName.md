@@ -11,7 +11,7 @@ so.topic: reference
 The programmatic name of the command, uniquely identifying this command for the document plugin.
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSCommandInfo thing;

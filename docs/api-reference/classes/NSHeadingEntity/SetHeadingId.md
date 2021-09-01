@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **headingId** Integer
+* **headingId** Integer
 
 ```crmscript
 NSHeadingEntity thing;

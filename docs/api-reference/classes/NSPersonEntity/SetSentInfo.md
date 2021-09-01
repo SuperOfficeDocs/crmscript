@@ -11,7 +11,7 @@ so.topic: reference
 Has information on username/password been sent (ejournal)
 
 **Parameter:** 
- - **sentInfo** Integer
+* **sentInfo** Integer
 
 ```crmscript
 NSPersonEntity thing;

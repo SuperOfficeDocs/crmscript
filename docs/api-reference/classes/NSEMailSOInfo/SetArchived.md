@@ -11,7 +11,7 @@ so.topic: reference
 Is this e-mail archived in SuperOffice
 
 **Parameter:** 
- - **archived** Bool
+* **archived** Bool
 
 ```crmscript
 NSEMailSOInfo thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Identifier for an appointment
 
 **Parameter:** 
- - **appointmentId** Integer
+* **appointmentId** Integer
 
 ```crmscript
 NSTemplateVariablesParameters thing;

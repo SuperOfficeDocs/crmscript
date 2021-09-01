@@ -11,5 +11,5 @@ so.topic: reference
 
 Sets the internal iterator to the given date.
 
- - d: The date to set the internal iterator to.
+* d: The date to set the internal iterator to.
 

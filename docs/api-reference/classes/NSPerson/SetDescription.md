@@ -11,7 +11,7 @@ so.topic: reference
 Info text/description on person. 
 
 **Parameter:** 
- - **description** String
+* **description** String
 
 ```crmscript
 NSPerson thing;

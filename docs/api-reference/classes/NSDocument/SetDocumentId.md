@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **documentId** Integer
+* **documentId** Integer
 
 ```crmscript
 NSDocument thing;

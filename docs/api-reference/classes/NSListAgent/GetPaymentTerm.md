@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSPaymentTerm object.
 
-**Parameters:**
- - **paymentTermId** The identifier of the NSPaymentTerm object
+## Parameters
+
+* **paymentTermId** The identifier of the NSPaymentTerm object
 
 **Returns:** NSPaymentTerm
 

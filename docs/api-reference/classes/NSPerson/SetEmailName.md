@@ -11,7 +11,7 @@ so.topic: reference
 E-mail description
 
 **Parameter:** 
- - **emailName** String
+* **emailName** String
 
 ```crmscript
 NSPerson thing;

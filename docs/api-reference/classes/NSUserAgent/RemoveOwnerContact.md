@@ -10,5 +10,6 @@ so.topic: reference
 
 Remove a contact from the ownercontactlink table
 
-**Parameters:**
- - **contactId** The id of the contact to remove
+## Parameters
+
+* **contactId** The id of the contact to remove

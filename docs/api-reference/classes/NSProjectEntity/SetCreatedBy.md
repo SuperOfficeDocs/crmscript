@@ -11,7 +11,7 @@ so.topic: reference
 The person that created the project
 
 **Parameter:** 
- - **createdBy** NSAssociate
+* **createdBy** NSAssociate
 
 ```crmscript
 NSProjectEntity thing;

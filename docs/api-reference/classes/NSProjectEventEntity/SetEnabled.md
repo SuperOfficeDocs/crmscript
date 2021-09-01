@@ -11,7 +11,7 @@ so.topic: reference
 Is the event enabled
 
 **Parameter:** 
- - **enabled** Bool
+* **enabled** Bool
 
 ```crmscript
 NSProjectEventEntity thing;

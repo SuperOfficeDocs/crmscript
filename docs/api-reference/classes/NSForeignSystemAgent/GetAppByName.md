@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets the ForeignApp with the given name.
 
-**Parameters:**
- - **applicationName** The name of the foreign application.
+## Parameters
+
+* **applicationName** The name of the foreign application.
 
 **Returns:** NSForeignAppEntity
 

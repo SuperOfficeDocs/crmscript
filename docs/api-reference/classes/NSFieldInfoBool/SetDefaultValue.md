@@ -11,7 +11,7 @@ so.topic: reference
 Default boolean value
 
 **Parameter:** 
- - **defaultValue** Bool
+* **defaultValue** Bool
 
 ```crmscript
 NSFieldInfoBool thing;

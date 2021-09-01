@@ -12,11 +12,11 @@ Fields required to start a chat
 
 **Returns:** NSWidgetRequiredFields
 
-     - Enum: 0 = None 
-     - Enum: 1 = Email 
-     - Enum: 2 = Name 
-     - Enum: 4 = Company 
-     - Enum: 8 = Phone 
+* Enum: 0 = None 
+* Enum: 1 = Email 
+* Enum: 2 = Name 
+* Enum: 4 = Company 
+* Enum: 8 = Phone 
 
 ```crmscript
 NSChatWidgetSettings thing;

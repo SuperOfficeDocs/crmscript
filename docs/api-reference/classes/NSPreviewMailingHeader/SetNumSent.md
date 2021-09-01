@@ -11,7 +11,7 @@ so.topic: reference
 Number of emails sent at the current time.
 
 **Parameter:** 
- - **numSent** Integer
+* **numSent** Integer
 
 ```crmscript
 NSPreviewMailingHeader thing;

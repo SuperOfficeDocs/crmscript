@@ -8,7 +8,7 @@ so.topic: reference
 
 # TimeSpan GetLagTime()
 
-as leadtime, but after the end - time blocked for travel etc.
+as leadtime, but after the end* time blocked for travel etc.
 
 **Returns:** TimeSpan
 

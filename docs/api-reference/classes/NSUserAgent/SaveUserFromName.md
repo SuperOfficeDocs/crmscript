@@ -10,9 +10,10 @@ so.topic: reference
 
 Save a user, with lookup based on the user name.
 
-**Parameters:**
- - **userName** User name of the user to get.
- - **user** User object to save.
+## Parameters
+
+* **userName** User name of the user to get.
+* **user** User object to save.
 
 **Returns:** NSUser
 

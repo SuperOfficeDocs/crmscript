@@ -11,7 +11,7 @@ so.topic: reference
 Current value of counter
 
 **Parameter:** 
- - **currentValue** Integer
+* **currentValue** Integer
 
 ```crmscript
 NSRefCountEntity thing;

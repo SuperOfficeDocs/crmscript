@@ -12,10 +12,10 @@ The role type. Note that changing this field has no effect, so treat this as a r
 
 **Returns:** Integer
 
-     - Enum: 0 = Employee 
-     - Enum: 1 = ExternalUser 
-     - Enum: 2 = Anonymous 
-     - Enum: 3 = System 
+* Enum: 0 = Employee 
+* Enum: 1 = ExternalUser 
+* Enum: 2 = Anonymous 
+* Enum: 3 = System 
 
 ```crmscript
 NSRoleEntity thing;

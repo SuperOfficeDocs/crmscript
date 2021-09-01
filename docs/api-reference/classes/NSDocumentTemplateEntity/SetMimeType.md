@@ -11,7 +11,7 @@ so.topic: reference
 The mime type
 
 **Parameter:** 
- - **mimeType** String
+* **mimeType** String
 
 ```crmscript
 NSDocumentTemplateEntity thing;

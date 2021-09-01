@@ -11,7 +11,7 @@ so.topic: reference
 Paper height in twips
 
 **Parameter:** 
- - **paperHeight** Integer
+* **paperHeight** Integer
 
 ```crmscript
 NSReportLabelLayoutEntity thing;

@@ -10,8 +10,9 @@ so.topic: reference
 
 Get a heading for the specified list defintion
 
-**Parameters:**
- - **udListDefinitionId** The id of the list definition, indicating which list to get the item from
+## Parameters
+
+* **udListDefinitionId** The id of the list definition, indicating which list to get the item from
 
 **Returns:** NSHeadingEntity
 

@@ -11,7 +11,7 @@ so.topic: reference
 The work hour start for Fridays. Note that only the time part of the DateTime is used
 
 **Parameter:** 
- - **friStart** DateTime
+* **friStart** DateTime
 
 ```crmscript
 NSTicketPriorityEntity thing;

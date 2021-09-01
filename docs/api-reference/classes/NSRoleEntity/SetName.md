@@ -11,7 +11,7 @@ so.topic: reference
 Visible role name
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSRoleEntity thing;

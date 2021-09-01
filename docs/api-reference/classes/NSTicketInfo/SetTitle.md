@@ -11,7 +11,7 @@ so.topic: reference
 The title/subject of the created ticket
 
 **Parameter:** 
- - **title** String
+* **title** String
 
 ```crmscript
 NSTicketInfo thing;

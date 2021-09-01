@@ -11,7 +11,7 @@ so.topic: reference
 Person id of the associate owning this window setting
 
 **Parameter:** 
- - **personId** Integer
+* **personId** Integer
 
 ```crmscript
 NSWindowPosSize thing;

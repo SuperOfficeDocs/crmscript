@@ -9,7 +9,7 @@ so.topic: reference
 # SetDisplayValue(String displayValue)
 
 **Parameter:** 
- - **displayValue** String
+* **displayValue** String
 
 ```crmscript
 NSVisibleFor thing;

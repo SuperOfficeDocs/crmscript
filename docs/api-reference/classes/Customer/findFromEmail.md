@@ -15,7 +15,7 @@ This function will try to lookup a Customer entry in the primary database based 
 
 ## Parameters
 
- - email: The address to look up. Has to be address alone ("alias@domain").
+* email: The address to look up. Has to be address alone ("alias@domain").
 
 Returns true if found, false if not found.
 

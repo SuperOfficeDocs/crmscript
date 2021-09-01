@@ -11,7 +11,7 @@ so.topic: reference
 Is timezone enabled
 
 **Parameter:** 
- - **timezoneEnabled** Bool
+* **timezoneEnabled** Bool
 
 ```crmscript
 NSCustomerServiceStartup thing;

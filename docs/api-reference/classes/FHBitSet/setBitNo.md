@@ -13,8 +13,8 @@ This function sets a specific bit.
 
 ## Parameters
 
- - number: Index of the bit to set
- - val: Value to set this bit to - (True/False - 1/0)
+* number: Index of the bit to set
+* val: Value to set this bit to* (True/False* 1/0)
 
 ## Example
     

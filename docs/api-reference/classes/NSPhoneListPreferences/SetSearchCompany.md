@@ -11,7 +11,7 @@ so.topic: reference
 True if you want to search for Companies by their name.
 
 **Parameter:** 
- - **searchCompany** Bool
+* **searchCompany** Bool
 
 ```crmscript
 NSPhoneListPreferences thing;

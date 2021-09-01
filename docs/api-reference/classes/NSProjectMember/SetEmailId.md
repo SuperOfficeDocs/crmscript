@@ -11,7 +11,7 @@ so.topic: reference
 The person's email address id
 
 **Parameter:** 
- - **emailId** Integer
+* **emailId** Integer
 
 ```crmscript
 NSProjectMember thing;

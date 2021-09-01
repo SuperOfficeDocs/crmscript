@@ -10,8 +10,9 @@ so.topic: reference
 
 Create a new empty import row with x count of values
 
-**Parameters:**
- - **countColumns** The count of values that will can be filled out
+## Parameters
+
+* **countColumns** The count of values that will can be filled out
 
 **Returns:** NSImportLine
 

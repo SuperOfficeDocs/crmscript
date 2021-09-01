@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets the blob entity that represents the product image binary object.
 
-**Parameters:**
- - **productId** The product id
+## Parameters
+
+* **productId** The product id
 
 **Returns:** NSBlobEntity
 

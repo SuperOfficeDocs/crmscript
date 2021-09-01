@@ -11,7 +11,7 @@ so.topic: reference
 .NET-style culture code, such as NB-NO or EN-UK
 
 **Parameter:** 
- - **culture** String
+* **culture** String
 
 ```crmscript
 NSResourceOverride thing;

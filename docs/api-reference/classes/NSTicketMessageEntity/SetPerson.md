@@ -11,7 +11,7 @@ so.topic: reference
 If this is an incoming message, this will contain the person
 
 **Parameter:** 
- - **person** NSPerson
+* **person** NSPerson
 
 ```crmscript
 NSTicketMessageEntity thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Array with custom tags and values. Array may be of unlimited height, but need to be exactly 2 in width.
 
 **Parameter:** 
- - **customTags** String[]
+* **customTags** String[]
 
 ```crmscript
 NSTemplateVariablesParameters thing;

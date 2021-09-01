@@ -10,9 +10,10 @@ so.topic: reference
 
 List of User groups that this list item is visible for
 
-**Parameters:**
- - **udListDefinitionName** The name of the list definition.
- - **listItemId** The id of the list item
+## Parameters
+
+* **udListDefinitionName** The name of the list definition.
+* **listItemId** The id of the list item
 
 **Returns:** NSSelectableMDOListItem[]
 

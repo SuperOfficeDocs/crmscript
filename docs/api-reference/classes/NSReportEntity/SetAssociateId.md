@@ -11,7 +11,7 @@ so.topic: reference
 The owner of the report.
 
 **Parameter:** 
- - **associateId** Integer
+* **associateId** Integer
 
 ```crmscript
 NSReportEntity thing;

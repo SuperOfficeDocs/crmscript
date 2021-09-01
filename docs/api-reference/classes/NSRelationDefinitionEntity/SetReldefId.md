@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **reldefId** Integer
+* **reldefId** Integer
 
 ```crmscript
 NSRelationDefinitionEntity thing;

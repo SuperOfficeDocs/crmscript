@@ -11,7 +11,7 @@ so.topic: reference
 Number of rows
 
 **Parameter:** 
- - **countRows** Integer
+* **countRows** Integer
 
 ```crmscript
 NSReportLabelLayoutEntity thing;

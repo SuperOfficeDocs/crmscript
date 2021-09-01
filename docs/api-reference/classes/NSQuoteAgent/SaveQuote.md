@@ -10,8 +10,9 @@ so.topic: reference
 
 Saves a NSQuote
 
-**Parameters:**
- - **quote** The NSQuote to save
+## Parameters
+
+* **quote** The NSQuote to save
 
 **Returns:** NSQuote
 

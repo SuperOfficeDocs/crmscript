@@ -11,7 +11,7 @@ so.topic: reference
 All persons with this EmailAddress stored in db is listed here
 
 **Parameter:** 
- - **duplicatePersonIds** IntegerArray
+* **duplicatePersonIds** IntegerArray
 
 ```crmscript
 NSEMailAddress thing;

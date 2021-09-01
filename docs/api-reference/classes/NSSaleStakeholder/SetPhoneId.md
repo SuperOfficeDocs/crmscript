@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **phoneId** Integer
+* **phoneId** Integer
 
 ```crmscript
 NSSaleStakeholder thing;

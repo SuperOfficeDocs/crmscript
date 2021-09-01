@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSTask object.
 
-**Parameters:**
- - **taskId** The identifier of the NSTask object
+## Parameters
+
+* **taskId** The identifier of the NSTask object
 
 **Returns:** NSTask
 

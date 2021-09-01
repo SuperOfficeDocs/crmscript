@@ -10,8 +10,9 @@ so.topic: reference
 
 Returns an array of phone list items with the in-parameter as restriction. The in-parameter must be a valid department id (UserGroupId).
 
-**Parameters:**
- - **departmentId** The department to get the phone list for
+## Parameters
+
+* **departmentId** The department to get the phone list for
 
 **Returns:** NSPhoneListItem[]
 

@@ -9,7 +9,7 @@ so.topic: reference
 # SetIsInvitation(Bool isInvitation)
 
 **Parameter:** 
- - **isInvitation** Bool
+* **isInvitation** Bool
 
 ```crmscript
 NSAppointmentSyncData thing;

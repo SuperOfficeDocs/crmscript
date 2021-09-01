@@ -11,7 +11,7 @@ so.topic: reference
 Is the connection deleted
 
 **Parameter:** 
- - **deleted** Bool
+* **deleted** Bool
 
 ```crmscript
 NSErpSyncConnectionSummary thing;

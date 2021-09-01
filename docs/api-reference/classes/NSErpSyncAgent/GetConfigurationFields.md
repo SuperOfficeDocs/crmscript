@@ -10,8 +10,9 @@ so.topic: reference
 
 Returns all fields needed to connect to the given connector
 
-**Parameters:**
- - **erpConnectorId** The id of the erp connector
+## Parameters
+
+* **erpConnectorId** The id of the erp connector
 
 **Returns:** The fields
 

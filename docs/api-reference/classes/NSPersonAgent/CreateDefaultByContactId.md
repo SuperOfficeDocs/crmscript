@@ -10,5 +10,6 @@ so.topic: reference
 
 Creates a NSPersonEntity with default values based on the contactId.
 
-**Parameters:**
- - **contactId** Contact id of the person
+## Parameters
+
+* **contactId** Contact id of the person

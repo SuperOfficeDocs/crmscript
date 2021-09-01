@@ -11,7 +11,7 @@ so.topic: reference
 Text used in passive direction
 
 **Parameter:** 
- - **passiveText** String
+* **passiveText** String
 
 ```crmscript
 NSRelationDefinitionEntity thing;

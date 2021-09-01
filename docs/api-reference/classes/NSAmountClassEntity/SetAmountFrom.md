@@ -11,7 +11,7 @@ so.topic: reference
 Lower limit of this amount class
 
 **Parameter:** 
- - **amountFrom** Float
+* **amountFrom** Float
 
 ```crmscript
 NSAmountClassEntity thing;

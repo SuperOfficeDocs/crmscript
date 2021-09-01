@@ -11,7 +11,7 @@ so.topic: reference
 Set the primary key (id) for the NSDeliveryTerm
 
 **Parameter:** 
- - **id** Integer NSDeliveryTerm id.
+* **id** Integer NSDeliveryTerm id.
 
 ```crmscript
 NSDeliveryTerm thing;

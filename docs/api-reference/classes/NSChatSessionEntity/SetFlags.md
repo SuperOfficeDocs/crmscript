@@ -11,9 +11,9 @@ so.topic: reference
 Various flags for the chat session
 
 **Parameter:** 
- - **flags** NSChatSessionFlags
-     - Enum: 0 = CustomerIsTyping 
-     - Enum: 1 = UserIsTyping 
+* **flags** NSChatSessionFlags
+* Enum: 0 = CustomerIsTyping 
+* Enum: 1 = UserIsTyping 
 
 ```crmscript
 NSChatSessionEntity thing;

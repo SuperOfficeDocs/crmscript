@@ -11,7 +11,7 @@ so.topic: reference
 List of who is to be credited for the sale.
 
 **Parameter:** 
- - **credited** NSCredited
+* **credited** NSCredited
 
 ```crmscript
 NSSaleEntity thing;

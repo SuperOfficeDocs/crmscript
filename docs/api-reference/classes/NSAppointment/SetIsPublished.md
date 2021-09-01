@@ -11,7 +11,7 @@ so.topic: reference
 True if appointment have an entry in published table
 
 **Parameter:** 
- - **isPublished** Bool
+* **isPublished** Bool
 
 ```crmscript
 NSAppointment thing;

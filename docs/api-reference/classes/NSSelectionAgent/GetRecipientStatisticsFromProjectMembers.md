@@ -10,8 +10,9 @@ so.topic: reference
 
 Returns a NSRecipientStatistics object with a count of addresses, emailaddresses and emailaddresses based on members in a project.
 
-**Parameters:**
- - **projectId** The id of the project to get the member statistics for.
+## Parameters
+
+* **projectId** The id of the project to get the member statistics for.
 
 **Returns:** NSRecipientStatistics
 

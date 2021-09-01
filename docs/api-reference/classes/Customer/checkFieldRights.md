@@ -13,8 +13,8 @@ Use this function to see if the current user has access to the field.
 
 fieldRight might be:
 
- - read
- - write
+* read
+* write
 
 ## Example
 

@@ -11,7 +11,7 @@ so.topic: reference
 Set the tooltip description for the Source list item.
 
 **Parameter:** 
- - **tooltip** String Source tooltip description.
+* **tooltip** String Source tooltip description.
 
 ```crmscript
 NSSource thing;

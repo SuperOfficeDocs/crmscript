@@ -11,7 +11,7 @@ so.topic: reference
 The from-address used when this ticket got created, e.g. by email
 
 **Parameter:** 
- - **fromAddress** String
+* **fromAddress** String
 
 ```crmscript
 NSTicket thing;

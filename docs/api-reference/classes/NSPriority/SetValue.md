@@ -11,7 +11,7 @@ so.topic: reference
 Set the name of the Priority item.
 
 **Parameter:** 
- - **value** String Priority name.
+* **value** String Priority name.
 
 ```crmscript
 NSPriority thing;

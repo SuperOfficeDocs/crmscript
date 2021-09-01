@@ -13,7 +13,7 @@ Loads the extra table entry with the given id
 
 ## Parameters
 
- - id: Id of the extra table entry you want to load.
+* id: Id of the extra table entry you want to load.
 
 Returns true if the entry was found and loaded.
 

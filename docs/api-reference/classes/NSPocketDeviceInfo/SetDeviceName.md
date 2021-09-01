@@ -11,7 +11,7 @@ so.topic: reference
 A friendly display name for the device. Ex: 'Bobbys iPhone 5S'
 
 **Parameter:** 
- - **deviceName** String
+* **deviceName** String
 
 ```crmscript
 NSPocketDeviceInfo thing;

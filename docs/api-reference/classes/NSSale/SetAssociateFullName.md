@@ -11,7 +11,7 @@ so.topic: reference
 The sale's owner
 
 **Parameter:** 
- - **associateFullName** String
+* **associateFullName** String
 
 ```crmscript
 NSSale thing;

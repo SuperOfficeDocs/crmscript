@@ -8,10 +8,10 @@ so.topic: reference
 
 # SetCountryId(Integer countryId)
 
-Country id - primary key
+Country id* primary key
 
 **Parameter:** 
- - **countryId** Integer
+* **countryId** Integer
 
 ```crmscript
 NSSaleStakeholder thing;

@@ -10,8 +10,9 @@ so.topic: reference
 
 Adds the words in the string to the stop word list
 
-**Parameters:**
- - **stopWords** The stop words to add
+## Parameters
+
+* **stopWords** The stop words to add
 
 ```crmscript
 NSFreeTextAgent agent;

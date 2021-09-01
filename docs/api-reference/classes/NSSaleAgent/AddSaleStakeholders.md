@@ -8,6 +8,7 @@ so.topic: reference
 
 # Void AddSaleStakeholders(Integer saleId, NSSaleStakeholder[] saleStakeholders)
 
-**Parameters:**
- - **saleId** 
- - **saleStakeholders** 
+## Parameters
+
+* **saleId** 
+* **saleStakeholders** 

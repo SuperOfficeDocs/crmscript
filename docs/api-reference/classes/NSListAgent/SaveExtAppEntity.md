@@ -11,7 +11,7 @@ so.topic: reference
 Updates the existing NSExtAppEntity or creates a new NSExtAppEntity if the id parameter is 0
 
 **Parameters**:
- - **extAppEntity** The NSExtAppEntity to save.
+* **extAppEntity** The NSExtAppEntity to save.
 
 **Returns:** NSExtAppEntity
 

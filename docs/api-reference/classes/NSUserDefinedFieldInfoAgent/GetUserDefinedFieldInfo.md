@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSUserDefinedFieldInfo object.
 
-**Parameters:**
- - **userDefinedFieldInfoId** The identifier of the NSUserDefinedFieldInfo object
+## Parameters
+
+* **userDefinedFieldInfoId** The identifier of the NSUserDefinedFieldInfo object
 
 **Returns:** NSUserDefinedFieldInfo
 

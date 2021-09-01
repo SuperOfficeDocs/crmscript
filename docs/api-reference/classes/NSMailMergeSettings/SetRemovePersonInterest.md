@@ -11,7 +11,7 @@ so.topic: reference
 Remove this person interest on each person recipient.
 
 **Parameter:** 
- - **removePersonInterest** Integer
+* **removePersonInterest** Integer
 
 ```crmscript
 NSMailMergeSettings thing;

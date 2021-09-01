@@ -10,9 +10,10 @@ so.topic: reference
 
 Can the connector provide the capability
 
-**Parameters:**
- - **quoteConnectionId** Primary key of the connection
- - **capabilityName** Capability name
+## Parameters
+
+* **quoteConnectionId** Primary key of the connection
+* **capabilityName** Capability name
 
 **Returns:** Bool
 

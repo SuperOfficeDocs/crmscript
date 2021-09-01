@@ -8,7 +8,7 @@ so.topic: reference
 
 # Integer GetDocumentId()
 
-Document id - 0 if not a document
+Document id* 0 if not a document
 
 **Returns:** Integer
 

@@ -10,8 +10,9 @@ so.topic: reference
 
 Get all quote alternatives for a quote version
 
-**Parameters:**
- - **quoteVersionId** QuoteVersionId of the revison to get alternatives for.
+## Parameters
+
+* **quoteVersionId** QuoteVersionId of the revison to get alternatives for.
 
 **Returns:** NSQuoteAlternative[]
 

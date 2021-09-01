@@ -10,8 +10,9 @@ so.topic: reference
 
 Get published appointment documents by project id.
 
-**Parameters:**
- - **projectId** The project id
+## Parameters
+
+* **projectId** The project id
 
 **Returns:** NSDocument[]
 

@@ -10,8 +10,9 @@ so.topic: reference
 
 Saves the NSQuoteLine in the SuperOffice database
 
-**Parameters:**
- - **quoteLine** The NSQuoteLine to save.
+## Parameters
+
+* **quoteLine** The NSQuoteLine to save.
 
 **Returns:** NSQuoteLine
 

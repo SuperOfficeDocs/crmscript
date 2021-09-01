@@ -9,7 +9,7 @@ so.topic: reference
 # SetSynchronous(Bool synchronous)
 
 **Parameter:** 
- - **synchronous** Bool
+* **synchronous** Bool
 
 ```crmscript
 NSMailMergeSettings thing;

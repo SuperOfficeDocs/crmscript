@@ -11,7 +11,7 @@ so.topic: reference
 Programmatic name of the Connector plugin that implements this kind of connection
 
 **Parameter:** 
- - **connectorName** String
+* **connectorName** String
 
 ```crmscript
 NSQuoteConnection thing;

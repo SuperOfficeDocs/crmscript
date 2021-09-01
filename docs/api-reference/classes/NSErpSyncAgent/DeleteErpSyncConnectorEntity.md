@@ -10,8 +10,9 @@ so.topic: reference
 
 Deletes the NSErpSyncConnectorEntity
   
-**Parameters:**
- - **erpSyncConnectorEntityId** The identity of the ErpSyncConnectorEntity to delete.
+## Parameters
+
+* **erpSyncConnectorEntityId** The identity of the ErpSyncConnectorEntity to delete.
 
 ```crmscript
 NSErpSyncAgent agent;

@@ -11,7 +11,7 @@ so.topic: reference
 Extra header fields added to mail. Must be formatted correctly
 
 **Parameter:** 
- - **headerField** String
+* **headerField** String
 
 ```crmscript
 NSShipmentMessageEntity thing;

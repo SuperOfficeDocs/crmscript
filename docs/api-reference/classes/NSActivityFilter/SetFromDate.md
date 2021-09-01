@@ -11,7 +11,7 @@ so.topic: reference
 The filtering From date
 
 **Parameter:** 
- - **fromDate** DateTime
+* **fromDate** DateTime
 
 ```crmscript
 NSActivityFilter thing;

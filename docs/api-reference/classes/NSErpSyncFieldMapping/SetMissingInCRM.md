@@ -11,7 +11,7 @@ so.topic: reference
 This field existed previously, but now CRM no longer supports it (udef change?). Probably not a good sign, unmap it...
 
 **Parameter:** 
- - **missingInCRM** Bool
+* **missingInCRM** Bool
 
 ```crmscript
 NSErpSyncFieldMapping thing;

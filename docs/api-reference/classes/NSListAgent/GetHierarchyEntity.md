@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSHierarchyEntity object.
 
-**Parameters:**
- - **hierarchyEntityId** The identifier of the NSHierarchyEntity object
+## Parameters
+
+* **hierarchyEntityId** The identifier of the NSHierarchyEntity object
 
 **Returns:** NSHierarchyEntity
 

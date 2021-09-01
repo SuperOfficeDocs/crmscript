@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **foreignDeviceId** Integer
+* **foreignDeviceId** Integer
 
 ```crmscript
 NSForeignDevice thing;

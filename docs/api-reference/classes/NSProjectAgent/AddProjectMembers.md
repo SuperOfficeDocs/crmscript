@@ -10,6 +10,7 @@ so.topic: reference
 
 Add multiple project members to a project
 
-**Parameters:**
- - **projectEntityId** Project to add members to
- - **projectMembers** Project members to add
+## Parameters
+
+* **projectEntityId** Project to add members to
+* **projectMembers** Project members to add

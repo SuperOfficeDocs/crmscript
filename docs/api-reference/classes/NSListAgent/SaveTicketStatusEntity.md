@@ -11,7 +11,7 @@ so.topic: reference
 Updates the existing NSTicketStatusEntity or creates a new NSTicketStatusEntity if the id parameter is 0
 
 **Parameters**:
- - **ticketStatusEntity** The NSTicketStatusEntity to save.
+* **ticketStatusEntity** The NSTicketStatusEntity to save.
 
 **Returns:** NSTicketStatusEntity
 

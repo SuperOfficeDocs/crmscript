@@ -11,7 +11,7 @@ so.topic: reference
 Number of all sold within the period
 
 **Parameter:** 
- - **sold** Integer
+* **sold** Integer
 
 ```crmscript
 NSSaleSummary thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Tooltip/description shown to user; multi-language support
 
 **Parameter:** 
- - **displayDescription** String
+* **displayDescription** String
 
 ```crmscript
 NSErpSyncConnectionSummary thing;

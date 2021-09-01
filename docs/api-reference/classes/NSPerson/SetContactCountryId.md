@@ -11,7 +11,7 @@ so.topic: reference
 The persons contact country id
 
 **Parameter:** 
- - **contactCountryId** Integer
+* **contactCountryId** Integer
 
 ```crmscript
 NSPerson thing;

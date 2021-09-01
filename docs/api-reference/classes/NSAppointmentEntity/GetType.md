@@ -12,16 +12,16 @@ The different types of appointment, if the appointment is supposed to be shown i
 
 **Returns:** Integer
 
-     - Enum: 0 = Unknown 
-     - Enum: 1 = inDiary 
-     - Enum: 2 = inChecklist 
-     - Enum: 3 = Note 
-     - Enum: 4 = Document 
-     - Enum: 5 = SavedReport 
-     - Enum: 6 = BookingForDiary 
-     - Enum: 7 = BookingForChecklist 
-     - Enum: 8 = MergeDraft 
-     - Enum: 9 = MergeFinal 
+* Enum: 0 = Unknown 
+* Enum: 1 = inDiary 
+* Enum: 2 = inChecklist 
+* Enum: 3 = Note 
+* Enum: 4 = Document 
+* Enum: 5 = SavedReport 
+* Enum: 6 = BookingForDiary 
+* Enum: 7 = BookingForChecklist 
+* Enum: 8 = MergeDraft 
+* Enum: 9 = MergeFinal 
 
 ```crmscript
 NSAppointmentEntity thing;

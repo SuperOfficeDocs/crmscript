@@ -11,7 +11,7 @@ so.topic: reference
 Set the primary key (id) for the ReasonSold
 
 **Parameter:** 
- - **id** Integer ReasonSold id.
+* **id** Integer ReasonSold id.
 
 ```crmscript
 NSReasonSold thing;

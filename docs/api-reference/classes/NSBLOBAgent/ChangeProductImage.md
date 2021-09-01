@@ -8,6 +8,7 @@ so.topic: reference
 
 # Void ChangeProductImage(Integer productId, Integer blobId)
 
-**Parameters:**
- - **productId** The product the image is linked to
- - **blobId** The Binary object id. If the Binary object id is 0, any image link is removed from the product.
+## Parameters
+
+* **productId** The product the image is linked to
+* **blobId** The Binary object id. If the Binary object id is 0, any image link is removed from the product.

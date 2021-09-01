@@ -11,7 +11,7 @@ so.topic: reference
 The currency the sale object was sold in
 
 **Parameter:** 
- - **currency** NSCurrency
+* **currency** NSCurrency
 
 ```crmscript
 NSSaleEntity thing;

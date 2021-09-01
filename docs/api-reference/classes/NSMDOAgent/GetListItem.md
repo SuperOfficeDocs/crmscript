@@ -10,9 +10,10 @@ so.topic: reference
 
 Returns a single list item
 
-**Parameters:**
- - **listName** Conceptual name of the MDO list
- - **id** Id of list item
+## Parameters
+
+* **listName** Conceptual name of the MDO list
+* **id** Id of list item
 
 **Returns:** NSMDOListItem
 

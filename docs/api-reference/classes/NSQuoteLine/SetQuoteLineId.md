@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **quoteLineId** Integer
+* **quoteLineId** Integer
 
 ```crmscript
 NSQuoteLine thing;

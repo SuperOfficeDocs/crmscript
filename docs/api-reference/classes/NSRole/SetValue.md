@@ -11,7 +11,7 @@ so.topic: reference
 Set the name of the Role item.
 
 **Parameter:** 
- - **value** String Role name.
+* **value** String Role name.
 
 ```crmscript
 NSRole thing;

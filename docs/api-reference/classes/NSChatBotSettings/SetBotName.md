@@ -11,7 +11,7 @@ so.topic: reference
 Chatbot name
 
 **Parameter:** 
- - **botName** String
+* **botName** String
 
 ```crmscript
 NSChatBotSettings thing;

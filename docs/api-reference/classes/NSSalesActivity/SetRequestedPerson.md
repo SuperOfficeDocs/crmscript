@@ -11,7 +11,7 @@ so.topic: reference
 The person that matches the request.
 
 **Parameter:** 
- - **requestedPerson** NSPerson
+* **requestedPerson** NSPerson
 
 ```crmscript
 NSSalesActivity thing;

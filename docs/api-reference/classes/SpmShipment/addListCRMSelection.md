@@ -12,5 +12,5 @@ Adds a CRM selection to shipment.
 
 ## Parameters
 
- - p0: id, id of selection to add
+* p0: id, id of selection to add
 

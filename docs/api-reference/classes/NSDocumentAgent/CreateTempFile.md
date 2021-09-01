@@ -10,9 +10,10 @@ so.topic: reference
 
 Create a new temporary file based on the provided stream.  Specified filename may be overridden, and actual name is returned.
 
-**Parameters:**
- - **filename** Wanted name of file.
- - **dataStream** Data to be added to the file.
+## Parameters
+
+* **filename** Wanted name of file.
+* **dataStream** Data to be added to the file.
 
 **Returns:** String
 

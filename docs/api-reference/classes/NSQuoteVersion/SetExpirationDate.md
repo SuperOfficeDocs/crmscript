@@ -11,7 +11,7 @@ so.topic: reference
 Last date the quote Version is valid, expiration is at midnight end of this day.
 
 **Parameter:** 
- - **expirationDate** DateTime
+* **expirationDate** DateTime
 
 ```crmscript
 NSQuoteVersion thing;

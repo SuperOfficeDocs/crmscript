@@ -11,7 +11,7 @@ so.topic: reference
 Name of selection, freetext indexed
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSSelectionEntity thing;

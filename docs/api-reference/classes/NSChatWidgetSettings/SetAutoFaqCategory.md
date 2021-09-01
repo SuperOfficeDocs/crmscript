@@ -11,7 +11,7 @@ so.topic: reference
 Root folder for FAQ suggestions
 
 **Parameter:** 
- - **autoFaqCategory** NSKbCategory
+* **autoFaqCategory** NSKbCategory
 
 ```crmscript
 NSChatWidgetSettings thing;

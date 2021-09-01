@@ -11,7 +11,7 @@ so.topic: reference
 Returns the fax phone that belong to the contact person.
 
 **Parameter:** 
- - **faxPhone** String
+* **faxPhone** String
 
 ```crmscript
 NSPerson thing;

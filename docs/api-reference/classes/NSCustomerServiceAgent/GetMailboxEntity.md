@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSMailboxEntity object.
 
-**Parameters:**
- - **mailboxEntityId** The identifier of the NSMailboxEntity object
+## Parameters
+
+* **mailboxEntityId** The identifier of the NSMailboxEntity object
 
 **Returns:** NSMailboxEntity
 

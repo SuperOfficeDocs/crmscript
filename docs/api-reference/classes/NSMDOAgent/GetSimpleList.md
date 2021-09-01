@@ -10,8 +10,9 @@ so.topic: reference
 
 Method returns a simple flat MDO List.
 
-**Parameters:**
- - **name** Conceptual name of the MDO list-
+## Parameters
+
+* **name** Conceptual name of the MDO list-
 
 **Returns:** NSMDOListItem[]
 

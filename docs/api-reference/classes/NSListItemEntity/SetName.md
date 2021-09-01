@@ -11,7 +11,7 @@ so.topic: reference
 The name of the list item
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSListItemEntity thing;

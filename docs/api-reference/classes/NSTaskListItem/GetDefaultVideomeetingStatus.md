@@ -12,9 +12,9 @@ Default video-meeting status for meetings created in SuperOffice CRM.
 
 **Returns:** Integer
 
-     - Enum: 0 = NoChange 
-     - Enum: 1 = VideoMeetingOn 
-     - Enum: 2 = VideoMeetingOff 
+* Enum: 0 = NoChange 
+* Enum: 1 = VideoMeetingOn 
+* Enum: 2 = VideoMeetingOff 
 
 ```crmscript
 NSTaskListItem thing;

@@ -9,7 +9,7 @@ so.topic: reference
 # SetValue(String value)
 
 **Parameter:** 
- - **value** String
+* **value** String
 
 ```crmscript
 NSErpSyncFieldValue thing;

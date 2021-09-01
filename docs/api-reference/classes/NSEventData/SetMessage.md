@@ -11,7 +11,7 @@ so.topic: reference
 A message to be presented to the user
 
 **Parameter:** 
- - **message** String
+* **message** String
 
 ```crmscript
 NSEventData thing;

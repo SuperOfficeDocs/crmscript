@@ -8,10 +8,10 @@ so.topic: reference
 
 # SetDisplayValues(String[] displayValues)
 
-Display representation of value(s) - list ID's are decoded to display texts, other values are represented in a format suitable for decoding and display through the CultureDataFormatter.
+Display representation of value(s)* list ID's are decoded to display texts, other values are represented in a format suitable for decoding and display through the CultureDataFormatter.
 
 **Parameter:** 
- - **displayValues** String[]
+* **displayValues** String[]
 
 ```crmscript
 NSArchiveRestrictionInfo thing;

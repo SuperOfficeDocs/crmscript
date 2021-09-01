@@ -10,5 +10,6 @@ so.topic: reference
 
 Toggles active state of a single row in the TZLocation table
 
-**Parameters:**
- - **id** Id of row to toggle active state on
+## Parameters
+
+* **id** Id of row to toggle active state on

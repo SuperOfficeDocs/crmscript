@@ -11,7 +11,7 @@ so.topic: reference
 Bcc recipient of e-mail
 
 **Parameter:** 
- - **bcc** NSEMailAddress[]
+* **bcc** NSEMailAddress[]
 
 ```crmscript
 NSEMailEntity thing;

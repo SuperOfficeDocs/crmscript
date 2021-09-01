@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **id** Integer
+* **id** Integer
 
 ```crmscript
 NSUserGroup thing;

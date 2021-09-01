@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSProjectEvent object.
 
-**Parameters:**
- - **projectEventId** The identifier of the NSProjectEvent object
+## Parameters
+
+* **projectEventId** The identifier of the NSProjectEvent object
 
 **Returns:** NSProjectEvent
 

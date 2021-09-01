@@ -9,7 +9,7 @@ so.topic: reference
 # SetListProviderPrimaryKeyName(String listProviderPrimaryKeyName)
 
 **Parameter:** 
- - **listProviderPrimaryKeyName** String
+* **listProviderPrimaryKeyName** String
 
 ```crmscript
 NSControlInfo thing;

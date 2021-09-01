@@ -11,7 +11,7 @@ so.topic: reference
 The user that created the contact
 
 **Parameter:** 
- - **createdBy** NSAssociate
+* **createdBy** NSAssociate
 
 ```crmscript
 NSContactEntity thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Name of the document, shown in lists etc to the user
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSTemplateInfo thing;

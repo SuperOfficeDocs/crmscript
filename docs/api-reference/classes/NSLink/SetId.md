@@ -11,7 +11,7 @@ so.topic: reference
 Id of the entity the link points to (The destination/target entity primary key)
 
 **Parameter:** 
- - **id** Integer
+* **id** Integer
 
 ```crmscript
 NSLink thing;

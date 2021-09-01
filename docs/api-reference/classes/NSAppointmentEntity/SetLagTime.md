@@ -8,10 +8,10 @@ so.topic: reference
 
 # SetLagTime(TimeSpan lagTime)
 
-as leadtime, but after the end - time blocked for travel etc.
+as leadtime, but after the end* time blocked for travel etc.
 
 **Parameter:** 
- - **lagTime** TimeSpan
+* **lagTime** TimeSpan
 
 ```crmscript
 NSAppointmentEntity thing;

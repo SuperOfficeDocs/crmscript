@@ -11,7 +11,7 @@ so.topic: reference
 The restrictions (can be multiple groups) that make up the TypicalSearch
 
 **Parameter:** 
- - **restrictionGroups** NSArchiveRestrictionGroup[]
+* **restrictionGroups** NSArchiveRestrictionGroup[]
 
 ```crmscript
 NSTypicalSearch thing;

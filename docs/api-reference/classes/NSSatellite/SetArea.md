@@ -9,7 +9,7 @@ so.topic: reference
 # SetArea(NSArea area)
 
 **Parameter:** 
- - **area** NSArea
+* **area** NSArea
 
 ```crmscript
 NSSatellite thing;

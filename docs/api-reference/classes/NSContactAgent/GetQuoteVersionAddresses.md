@@ -10,8 +10,9 @@ so.topic: reference
 
 Get the associated billing and invoice quote version addresses. These addresses might be address on the contact, or a custom address.
 
-**Parameters:**
- - **quoteVersionId** The version to get the addresses for.
+## Parameters
+
+* **quoteVersionId** The version to get the addresses for.
 
 **Returns:** NSAddress[]
 

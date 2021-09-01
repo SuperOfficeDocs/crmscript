@@ -11,7 +11,7 @@ so.topic: reference
 date + start time planned
 
 **Parameter:** 
- - **startTime** DateTime
+* **startTime** DateTime
 
 ```crmscript
 NSAlarmData thing;

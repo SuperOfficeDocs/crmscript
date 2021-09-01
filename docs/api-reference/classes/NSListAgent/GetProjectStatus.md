@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSProjectStatus object.
 
-**Parameters:**
- - **projectStatusId** The identifier of the NSProjectStatus object
+## Parameters
+
+* **projectStatusId** The identifier of the NSProjectStatus object
 
 **Returns:** NSProjectStatus
 

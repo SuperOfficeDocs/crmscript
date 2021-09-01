@@ -11,7 +11,7 @@ so.topic: reference
 The name of the history list, for instance contact. Represents the history table's TableId field
 
 **Parameter:** 
- - **historyName** String
+* **historyName** String
 
 ```crmscript
 NSHistory thing;

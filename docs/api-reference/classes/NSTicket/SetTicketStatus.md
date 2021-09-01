@@ -11,7 +11,7 @@ so.topic: reference
 User defined ticket status
 
 **Parameter:** 
- - **ticketStatus** Integer
+* **ticketStatus** Integer
 
 ```crmscript
 NSTicket thing;

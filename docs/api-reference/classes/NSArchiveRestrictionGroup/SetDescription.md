@@ -11,7 +11,7 @@ so.topic: reference
 Description of group
 
 **Parameter:** 
- - **description** String
+* **description** String
 
 ```crmscript
 NSArchiveRestrictionGroup thing;

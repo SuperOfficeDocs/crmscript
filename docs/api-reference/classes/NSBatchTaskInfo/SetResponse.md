@@ -11,7 +11,7 @@ so.topic: reference
 Maps to the response field in the batchtask table.
 
 **Parameter:** 
- - **response** String
+* **response** String
 
 ```crmscript
 NSBatchTaskInfo thing;

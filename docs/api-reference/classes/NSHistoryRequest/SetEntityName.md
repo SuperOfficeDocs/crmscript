@@ -11,7 +11,7 @@ so.topic: reference
 Name of entity to get history for
 
 **Parameter:** 
- - **entityName** String
+* **entityName** String
 
 ```crmscript
 NSHistoryRequest thing;

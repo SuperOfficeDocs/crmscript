@@ -10,8 +10,9 @@ so.topic: reference
 
 Returns a NSTableRight for a new row based on tableName parameter.
 
-**Parameters:**
- - **tableName** Name of the table to get the TableRights from
+## Parameters
+
+* **tableName** Name of the table to get the TableRights from
 
 **Returns:** NSTableRight
 

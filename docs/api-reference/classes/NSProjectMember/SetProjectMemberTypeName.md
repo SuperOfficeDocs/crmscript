@@ -11,7 +11,7 @@ so.topic: reference
 The projectmembers type name: 'secretary', 'member', etc.
 
 **Parameter:** 
- - **projectMemberTypeName** String
+* **projectMemberTypeName** String
 
 ```crmscript
 NSProjectMember thing;

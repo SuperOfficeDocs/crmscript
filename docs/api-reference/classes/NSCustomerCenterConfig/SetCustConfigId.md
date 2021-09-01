@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **custConfigId** Integer
+* **custConfigId** Integer
 
 ```crmscript
 NSCustomerCenterConfig thing;

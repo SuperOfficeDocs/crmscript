@@ -11,7 +11,7 @@ so.topic: reference
 Code associated with location
 
 **Parameter:** 
- - **tZLocationCode** String
+* **tZLocationCode** String
 
 ```crmscript
 NSTimeZoneData thing;

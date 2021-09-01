@@ -9,7 +9,7 @@ so.topic: reference
 # SetType(String type)
 
 **Parameter:** 
- - **type** String
+* **type** String
 
 ```crmscript
 NSControlInfo thing;

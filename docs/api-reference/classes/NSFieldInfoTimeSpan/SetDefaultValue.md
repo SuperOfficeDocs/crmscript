@@ -8,10 +8,10 @@ so.topic: reference
 
 # SetDefaultValue(Integer defaultValue)
 
-Default Timespan value - number of minutes.
+Default Timespan value* number of minutes.
 
 **Parameter:** 
- - **defaultValue** Integer
+* **defaultValue** Integer
 
 ```crmscript
 NSFieldInfoTimeSpan thing;

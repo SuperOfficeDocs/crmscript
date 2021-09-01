@@ -11,7 +11,7 @@ so.topic: reference
 English name of this language (Norwegian)
 
 **Parameter:** 
- - **englishName** String
+* **englishName** String
 
 ```crmscript
 NSLanguageInfo thing;

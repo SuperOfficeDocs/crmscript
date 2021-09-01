@@ -11,7 +11,7 @@ so.topic: reference
 The result set
 
 **Parameter:** 
- - **result** NSArchiveListResult
+* **result** NSArchiveListResult
 
 ```crmscript
 NSTileData thing;

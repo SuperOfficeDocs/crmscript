@@ -10,11 +10,12 @@ so.topic: reference
 
 Method to get a Selectable MDO list.
 
-**Parameters:**
- - **name** Conceptual name of the MDO list.
- - **forceFlatList** Force the list to be flat
- - **additionalInfo** Additional info to the MDO provider
- - **onlyHistory** If true, return only history items
+## Parameters
+
+* **name** Conceptual name of the MDO list.
+* **forceFlatList** Force the list to be flat
+* **additionalInfo** Additional info to the MDO provider
+* **onlyHistory** If true, return only history items
 
 **Returns:** NSSelectableMDOListItem[]
 

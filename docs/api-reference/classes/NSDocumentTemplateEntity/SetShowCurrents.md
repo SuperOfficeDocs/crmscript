@@ -11,7 +11,7 @@ so.topic: reference
 True if when using this template there should be shown a place for editing current choices of person, compant, sale, project etc
 
 **Parameter:** 
- - **showCurrents** Bool
+* **showCurrents** Bool
 
 ```crmscript
 NSDocumentTemplateEntity thing;

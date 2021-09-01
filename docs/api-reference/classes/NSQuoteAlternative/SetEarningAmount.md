@@ -11,7 +11,7 @@ so.topic: reference
 Earning on this alternative, as an absolute amount
 
 **Parameter:** 
- - **earningAmount** Float
+* **earningAmount** Float
 
 ```crmscript
 NSQuoteAlternative thing;

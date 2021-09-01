@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **uDefFieldId** Integer
+* **uDefFieldId** Integer
 
 ```crmscript
 NSUserDefinedFieldInfo thing;

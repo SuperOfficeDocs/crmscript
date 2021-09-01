@@ -11,7 +11,7 @@ so.topic: reference
 Is the module license assigned to a given user
 
 **Parameter:** 
- - **assigned** Bool
+* **assigned** Bool
 
 ```crmscript
 NSModuleLicenseLink thing;

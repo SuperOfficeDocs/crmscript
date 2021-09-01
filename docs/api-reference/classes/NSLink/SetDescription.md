@@ -11,7 +11,7 @@ so.topic: reference
 Link description.
 
 **Parameter:** 
- - **description** String
+* **description** String
 
 ```crmscript
 NSLink thing;

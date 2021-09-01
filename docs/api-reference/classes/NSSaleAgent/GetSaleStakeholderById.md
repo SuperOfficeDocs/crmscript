@@ -8,7 +8,8 @@ so.topic: reference
 
 # NSSaleStakeholder[] GetSaleStakeholderById(Integer[] saleStakeholderIds)
 
-**Parameters:**
- - **saleStakeholderIds** 
+## Parameters
+
+* **saleStakeholderIds** 
 
 **Returns:** NSSaleStakeholder[]

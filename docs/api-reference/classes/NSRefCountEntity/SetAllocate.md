@@ -11,7 +11,7 @@ so.topic: reference
 Allocate numbers automatically
 
 **Parameter:** 
- - **allocate** Bool
+* **allocate** Bool
 
 ```crmscript
 NSRefCountEntity thing;

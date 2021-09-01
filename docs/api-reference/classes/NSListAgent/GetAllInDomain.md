@@ -10,18 +10,19 @@ so.topic: reference
 
 Get all items in a domain
 
-**Parameters:**
- - **domain** Type of items to get (scripts, extra tables, etc)
-     - Enum: 0 = Unknown 
-     - Enum: 1 = ExtraTables 
-     - Enum: 2 = ScreenDefinitions 
-     - Enum: 3 = Scripts 
-     - Enum: 4 = Selections 
-     - Enum: 5 = ExternalDocuments 
-     - Enum: 6 = UserGroups 
-     - Enum: 7 = ExternalDocumentRelatedToSpmMessage 
-     - Enum: 8 = Dashboards 
- - **children** Include sub-items?
+## Parameters
+
+* **domain** Type of items to get (scripts, extra tables, etc)
+* Enum: 0 = Unknown 
+* Enum: 1 = ExtraTables 
+* Enum: 2 = ScreenDefinitions 
+* Enum: 3 = Scripts 
+* Enum: 4 = Selections 
+* Enum: 5 = ExternalDocuments 
+* Enum: 6 = UserGroups 
+* Enum: 7 = ExternalDocumentRelatedToSpmMessage 
+* Enum: 8 = Dashboards 
+* **children** Include sub-items?
 
 **Returns:** NSHierarchyEntity[]
 

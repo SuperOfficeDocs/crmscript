@@ -11,13 +11,13 @@ so.topic: reference
 What platform does this device belong to
 
 **Parameter:** 
- - **platform** Integer
-     - Enum: 0 = Apple 
-     - Enum: 1 = Google 
-     - Enum: 2 = Microsoft 
-     - Enum: 3 = AppleDeveloper 
-     - Enum: 4 = AppleAdHoc 
-     - Enum: 5 = GoogleDeveloper 
+* **platform** Integer
+* Enum: 0 = Apple 
+* Enum: 1 = Google 
+* Enum: 2 = Microsoft 
+* Enum: 3 = AppleDeveloper 
+* Enum: 4 = AppleAdHoc 
+* Enum: 5 = GoogleDeveloper 
 
 ```crmscript
 NSPocketDeviceInfo thing;

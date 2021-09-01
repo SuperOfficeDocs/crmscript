@@ -8,6 +8,7 @@ so.topic: reference
 
 # Void ChangePersonImage(Integer personId, Integer blobId)
 
-**Parameters:**
- - **personId** The person the image is linked to
- - **blobId** The Binary object id. If the Binary object id is 0, any image link is removed from the person.
+## Parameters
+
+* **personId** The person the image is linked to
+* **blobId** The Binary object id. If the Binary object id is 0, any image link is removed from the person.

@@ -10,8 +10,9 @@ so.topic: reference
 
 Given a ticket's id, guess the ticket category it should be placed in. Currently this is based on the first message in the ticket
 
-**Parameters:**
- - **ticketId** Id of ticket to guess category for
+## Parameters
+
+* **ticketId** Id of ticket to guess category for
 
 **Returns:** Suggested ticket category ID
 

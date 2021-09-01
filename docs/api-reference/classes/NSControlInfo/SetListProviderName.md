@@ -9,7 +9,7 @@ so.topic: reference
 # SetListProviderName(String listProviderName)
 
 **Parameter:** 
- - **listProviderName** String
+* **listProviderName** String
 
 ```crmscript
 NSControlInfo thing;

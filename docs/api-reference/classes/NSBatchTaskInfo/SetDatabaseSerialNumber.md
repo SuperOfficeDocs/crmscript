@@ -11,7 +11,7 @@ so.topic: reference
 Serial number of the database the task is to run on.
 
 **Parameter:** 
- - **databaseSerialNumber** String
+* **databaseSerialNumber** String
 
 ```crmscript
 NSBatchTaskInfo thing;

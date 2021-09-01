@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a vector of NSLegalBase objects.
 
-**Parameters:**
- - **legalBaseIds** The identifiers of the NSLegalBase objects
+## Parameters
+
+* **legalBaseIds** The identifiers of the NSLegalBase objects
 
 **Returns:** NSLegalBase[]
 

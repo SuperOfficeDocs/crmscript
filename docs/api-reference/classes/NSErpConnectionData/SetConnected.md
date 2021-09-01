@@ -11,7 +11,7 @@ so.topic: reference
 True if this entity instance has syncronized connection
 
 **Parameter:** 
- - **connected** Bool
+* **connected** Bool
 
 ```crmscript
 NSErpConnectionData thing;

@@ -11,7 +11,7 @@ so.topic: reference
 The devices that belong to this foreign app.
 
 **Parameter:** 
- - **devices** NSForeignDevice[]
+* **devices** NSForeignDevice[]
 
 ```crmscript
 NSForeignAppEntity thing;

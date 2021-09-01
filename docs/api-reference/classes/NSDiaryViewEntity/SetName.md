@@ -11,7 +11,7 @@ so.topic: reference
 Name of the DiaryView.
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSDiaryViewEntity thing;

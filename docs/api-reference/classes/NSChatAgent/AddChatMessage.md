@@ -10,9 +10,10 @@ so.topic: reference
 
 Add a new message to a chat session
 
-**Parameters:**
- - **chatSessionId** id of the chat session to add message to
- - **message** Message to add
+## Parameters
+
+* **chatSessionId** id of the chat session to add message to
+* **message** Message to add
 
 **Returns:** NSChatMessage
 

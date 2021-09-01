@@ -11,7 +11,7 @@ so.topic: reference
 Sequence number in ICS file.
 
 **Parameter:** 
- - **sequence** Integer
+* **sequence** Integer
 
 ```crmscript
 NSEMailAppointment thing;

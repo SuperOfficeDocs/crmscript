@@ -11,7 +11,7 @@ so.topic: reference
 Return value, may be blank.
 
 **Parameter:** 
- - **value** String
+* **value** String
 
 ```crmscript
 NSReturnInfo thing;

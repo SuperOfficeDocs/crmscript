@@ -11,7 +11,7 @@ so.topic: reference
 Set the primary key (id) for the NSReason
 
 **Parameter:** 
- - **id** Integer NSReason id.
+* **id** Integer NSReason id.
 
 ```crmscript
 NSReason thing;

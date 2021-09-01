@@ -11,7 +11,7 @@ so.topic: reference
 Label resource string.
 
 **Parameter:** 
- - **label** String
+* **label** String
 
 ```crmscript
 NSQuoteLineConfiguration thing;

@@ -9,7 +9,7 @@ so.topic: reference
 # SetIsVisibleForPersonInterests(Bool isVisibleForPersonInterests)
 
 **Parameter:** 
- - **isVisibleForPersonInterests** Bool
+* **isVisibleForPersonInterests** Bool
 
 ```crmscript
 NSProjectEventEntity thing;

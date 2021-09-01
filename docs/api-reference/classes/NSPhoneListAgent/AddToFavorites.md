@@ -10,8 +10,9 @@ so.topic: reference
 
 Adds a new contact to the history/favorites. Returns the rank of the new history item. If the contact already existed in the history, it isn't added but the rank is updated.
 
-**Parameters:**
- - **contactId** The contact id
+## Parameters
+
+* **contactId** The contact id
 
 **Returns:** Integer
 

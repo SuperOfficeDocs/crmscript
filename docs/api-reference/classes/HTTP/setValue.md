@@ -13,8 +13,8 @@ This function add a cgi variable and its according value to the HTTP request.
 
 ## Parameters
 
- - p_cgiVariable: The variable to set
- - p_value: The value
+* p_cgiVariable: The variable to set
+* p_value: The value
 
 ## Example
 
@@ -29,4 +29,3 @@ This function add a cgi variable and its according value to the HTTP request.
       print(h.getErrorMessage());
     else
       print(String(b));
-

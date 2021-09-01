@@ -9,7 +9,7 @@ so.topic: reference
 # SetAppointment(NSAppointment appointment)
 
 **Parameter:** 
- - **appointment** NSAppointment
+* **appointment** NSAppointment
 
 ```crmscript
 NSSaleEntity thing;

@@ -11,7 +11,7 @@ so.topic: reference
 How many days into the future the appointment should be scheduled
 
 **Parameter:** 
- - **daysFuture** Integer
+* **daysFuture** Integer
 
 ```crmscript
 NSSuggestedAppointment thing;

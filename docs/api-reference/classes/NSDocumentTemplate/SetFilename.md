@@ -11,7 +11,7 @@ so.topic: reference
 Relative to TemplatePath
 
 **Parameter:** 
- - **filename** String
+* **filename** String
 
 ```crmscript
 NSDocumentTemplate thing;

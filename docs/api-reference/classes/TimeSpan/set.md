@@ -12,9 +12,9 @@ This function is used to initialize a timespan object.
 
 ## Parameters
 
- - years: Number of years
- - days: Number of days
- - hours: Number of hours
- - minutes: Number of minutes
- - seconds: Number of seconds
+* years: Number of years
+* days: Number of days
+* hours: Number of hours
+* minutes: Number of minutes
+* seconds: Number of seconds
 

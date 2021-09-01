@@ -11,7 +11,7 @@ so.topic: reference
 The color indicator of the ListItem color block
 
 **Parameter:** 
- - **colorBlock** Integer
+* **colorBlock** Integer
 
 ```crmscript
 NSMDOListItem thing;

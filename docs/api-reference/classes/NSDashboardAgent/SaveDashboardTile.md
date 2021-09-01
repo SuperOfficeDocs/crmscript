@@ -11,7 +11,7 @@ so.topic: reference
 Updates the existing NSDashboardTile or creates a new NSDashboardTile if the id parameter is 0
 
 **Parameters**:
- - **dashboardTile** The NSDashboardTile to save.
+* **dashboardTile** The NSDashboardTile to save.
 
 **Returns:** NSDashboardTile
 

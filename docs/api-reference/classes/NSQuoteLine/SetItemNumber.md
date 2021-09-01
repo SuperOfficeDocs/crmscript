@@ -11,7 +11,7 @@ so.topic: reference
 Norwegian: «Postnummer». Specific numbers from some hierarchy, for instance '1.4.3.2'. Is stored here if the user changes the value from the product in the pricelist, or just enters a QuoteLine without a product link.
 
 **Parameter:** 
- - **itemNumber** String
+* **itemNumber** String
 
 ```crmscript
 NSQuoteLine thing;

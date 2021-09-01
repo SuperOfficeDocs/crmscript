@@ -11,7 +11,7 @@ so.topic: reference
 Reference to foregin application (device type)
 
 **Parameter:** 
- - **foreignAppId** Integer
+* **foreignAppId** Integer
 
 ```crmscript
 NSForeignDevice thing;

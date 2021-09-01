@@ -11,7 +11,7 @@ so.topic: reference
 The other groups this user is a member of, apart from the main user group.
 
 **Parameter:** 
- - **otherGroups** NSUserGroup[]
+* **otherGroups** NSUserGroup[]
 
 ```crmscript
 NSUser thing;

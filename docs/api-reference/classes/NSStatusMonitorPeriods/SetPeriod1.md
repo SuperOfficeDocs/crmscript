@@ -11,7 +11,7 @@ so.topic: reference
 Days in the first period
 
 **Parameter:** 
- - **period1** Integer
+* **period1** Integer
 
 ```crmscript
 NSStatusMonitorPeriods thing;

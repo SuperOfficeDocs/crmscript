@@ -11,7 +11,7 @@ so.topic: reference
 The reference to the associated chat topic.
 
 **Parameter:** 
- - **topicId** Integer
+* **topicId** Integer
 
 ```crmscript
 NSChatTopicAgent thing;

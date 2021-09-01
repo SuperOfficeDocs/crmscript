@@ -11,7 +11,7 @@ so.topic: reference
 Project name
 
 **Parameter:** 
- - **projectName** String
+* **projectName** String
 
 ```crmscript
 NSAppointmentSyncData thing;

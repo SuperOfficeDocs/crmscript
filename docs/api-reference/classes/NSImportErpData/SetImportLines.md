@@ -11,7 +11,7 @@ so.topic: reference
 An array of Import lines
 
 **Parameter:** 
- - **importLines** NSImportLine[]
+* **importLines** NSImportLine[]
 
 ```crmscript
 NSImportErpData thing;

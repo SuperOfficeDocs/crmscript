@@ -10,8 +10,9 @@ so.topic: reference
 
 Returns the PluginResponseInfo for the connection initialization. Does not initialize the connection, just returns what happened when initialize was called.
 
-**Parameters:**
- - **quoteConnectionId** Primary key of the connection
+## Parameters
+
+* **quoteConnectionId** Primary key of the connection
 
 **Returns:** NSPluginResponse[]
 

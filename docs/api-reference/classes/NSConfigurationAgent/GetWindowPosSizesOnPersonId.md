@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets the window and dialog position and size settings belonging to the specified person
 
-**Parameters:**
- - **personId** Person id of the associate owning these window settings
+## Parameters
+
+* **personId** Person id of the associate owning these window settings
 
 **Returns:** NSWindowPosSize[]
 

@@ -11,7 +11,7 @@ so.topic: reference
 Same as time_to_reply, but not calculated based on priority.
 
 **Parameter:** 
- - **realTimeToReply** Integer
+* **realTimeToReply** Integer
 
 ```crmscript
 NSTicket thing;

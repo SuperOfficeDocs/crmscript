@@ -8,7 +8,7 @@ so.topic: reference
 
 # String GetSelectionEntityHeading()
 
-'Companies', or whatever else is appropriate - the plural form of the entity name, intended for the Selection.Details tab before it is saved (!!); this string will contain resource references
+'Companies', or whatever else is appropriate* the plural form of the entity name, intended for the Selection.Details tab before it is saved (!!); this string will contain resource references
 
 **Returns:** String
 

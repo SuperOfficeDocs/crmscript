@@ -11,7 +11,7 @@ so.topic: reference
 Exchange unit scale (0.01, 0.1, 1, 10, 100 etc)
 
 **Parameter:** 
- - **units** Float
+* **units** Float
 
 ```crmscript
 NSCurrencyEntity thing;

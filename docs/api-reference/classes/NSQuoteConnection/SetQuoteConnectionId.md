@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **quoteConnectionId** Integer
+* **quoteConnectionId** Integer
 
 ```crmscript
 NSQuoteConnection thing;

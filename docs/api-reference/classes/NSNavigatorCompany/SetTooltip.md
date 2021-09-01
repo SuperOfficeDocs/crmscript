@@ -11,7 +11,7 @@ so.topic: reference
 Set the tooltip description for the NSNavigatorCompany list item.
 
 **Parameter:** 
- - **tooltip** String NavigatorCompany tooltip description.
+* **tooltip** String NavigatorCompany tooltip description.
 
 ```crmscript
 NSNavigatorCompany thing;

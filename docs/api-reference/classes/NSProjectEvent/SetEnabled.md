@@ -11,7 +11,7 @@ so.topic: reference
 If true the event is enabled (visible)
 
 **Parameter:** 
- - **enabled** Bool
+* **enabled** Bool
 
 ```crmscript
 NSProjectEvent thing;

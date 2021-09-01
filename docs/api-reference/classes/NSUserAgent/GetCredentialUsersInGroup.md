@@ -10,8 +10,9 @@ so.topic: reference
 
 Get credential users within a user group
 
-**Parameters:**
- - **type** Type of credentials, corresponding to name of plugin and type in the credentials table.
- - **groupName** Name of user group needed to discover the users.
+## Parameters
+
+* **type** Type of credentials, corresponding to name of plugin and type in the credentials table.
+* **groupName** Name of user group needed to discover the users.
 
 **Returns:** NSCredentialsGroupUsers

@@ -11,7 +11,7 @@ so.topic: reference
 Updates the existing NSPreferenceDescription or creates a new NSPreferenceDescription if the id parameter is 0
 
 **Parameters**:
- - **preferenceDescription** The NSPreferenceDescription to save.
+* **preferenceDescription** The NSPreferenceDescription to save.
 
 **Returns:** NSPreferenceDescription
 

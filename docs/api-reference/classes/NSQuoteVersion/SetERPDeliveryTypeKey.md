@@ -11,7 +11,7 @@ so.topic: reference
 Either a List id to an id from a connector provided list, or, if the connection doesn’t support lists, a text. For instance: ‘Air’.
 
 **Parameter:** 
- - **eRPDeliveryTypeKey** String
+* **eRPDeliveryTypeKey** String
 
 ```crmscript
 NSQuoteVersion thing;

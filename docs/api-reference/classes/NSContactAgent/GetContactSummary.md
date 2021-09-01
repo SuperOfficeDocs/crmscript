@@ -10,9 +10,10 @@ so.topic: reference
 
 Get summary of contact and its recent activity.
 
-**Parameters:**
- - **contactId** The contact id to summarize.
- - **limit** Max number of items to include in summary lists.
+## Parameters
+
+* **contactId** The contact id to summarize.
+* **limit** Max number of items to include in summary lists.
 
 **Returns:** NSContactSummary
 

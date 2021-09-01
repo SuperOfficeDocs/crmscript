@@ -11,7 +11,7 @@ so.topic: reference
 Set the user-defined fields on the SaleEntity as a map.
 
 **Parameter:** 
- - **udefs** Map
+* **udefs** Map
 
 ```crmscript
 NSSaleEntity thing;

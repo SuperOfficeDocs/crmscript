@@ -11,7 +11,7 @@ so.topic: reference
 The work hour start for Saturdays. Note that only the time part of the DateTime is used
 
 **Parameter:** 
- - **satStart** DateTime
+* **satStart** DateTime
 
 ```crmscript
 NSTicketPriorityEntity thing;

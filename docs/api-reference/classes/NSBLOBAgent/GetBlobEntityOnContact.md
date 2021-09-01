@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets the blob entity that represents the contact image binary object.
 
-**Parameters:**
- - **contactId** The Contact id
+## Parameters
+
+* **contactId** The Contact id
 
 **Returns:** NSBlobEntity
 

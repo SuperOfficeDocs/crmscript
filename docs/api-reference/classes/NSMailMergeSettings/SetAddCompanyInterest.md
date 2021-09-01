@@ -11,7 +11,7 @@ so.topic: reference
 Add this company interest to each company recipient.
 
 **Parameter:** 
- - **addCompanyInterest** Integer
+* **addCompanyInterest** Integer
 
 ```crmscript
 NSMailMergeSettings thing;

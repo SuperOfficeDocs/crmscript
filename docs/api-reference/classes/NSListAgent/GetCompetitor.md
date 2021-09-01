@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSCompetitor object.
 
-**Parameters:**
- - **competitorId** The identifier of the NSCompetitor object
+## Parameters
+
+* **competitorId** The identifier of the NSCompetitor object
 
 **Returns:** NSCompetitor
 

@@ -10,5 +10,6 @@ so.topic: reference
 
 Remove favourite using favourite id 
 
-**Parameters:**
- - **favouriteIds** Ids of favourite rows to delete
+## Parameters
+
+* **favouriteIds** Ids of favourite rows to delete

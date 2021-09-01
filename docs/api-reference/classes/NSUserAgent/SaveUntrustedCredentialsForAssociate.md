@@ -10,7 +10,8 @@ so.topic: reference
 
 Save credentials for a specified user.
 
-**Parameters:**
- - **associateId** Id of user to save credentials for.
- - **type** Type of credential(Ex: "imap", "smtp")
- - **credentials** Credentials to save.
+## Parameters
+
+* **associateId** Id of user to save credentials for.
+* **type** Type of credential(Ex: "imap", "smtp")
+* **credentials** Credentials to save.

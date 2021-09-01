@@ -16,7 +16,7 @@ You can optionally do one of the following:
 
 * Merge with reply template in the settings of the submitted category ID.
 
-* Using the given subject, and a given heading for the body part - the body heading may be empty for no heading, or null for default heading (same as not using this parameter).
+* Using the given subject, and a given heading for the body part* the body heading may be empty for no heading, or null for default heading (same as not using this parameter).
 
 Returns true if everything is OK, otherwise false.
 

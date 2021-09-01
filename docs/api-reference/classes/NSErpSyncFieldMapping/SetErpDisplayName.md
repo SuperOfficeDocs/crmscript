@@ -11,7 +11,7 @@ so.topic: reference
 Display name of ERP field; ignored on Save
 
 **Parameter:** 
- - **erpDisplayName** String
+* **erpDisplayName** String
 
 ```crmscript
 NSErpSyncFieldMapping thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Document data
 
 **Parameter:** 
- - **stream** NSStream
+* **stream** NSStream
 
 ```crmscript
 NSDocumentPreview thing;

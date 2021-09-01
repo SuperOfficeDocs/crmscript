@@ -9,7 +9,7 @@ so.topic: reference
 # SetListLeadText(String listLeadText)
 
 **Parameter:** 
- - **listLeadText** String
+* **listLeadText** String
 
 ```crmscript
 NSControlInfo thing;

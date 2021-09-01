@@ -10,9 +10,10 @@ so.topic: reference
 
 Delete the document contents
 
-**Parameters:**
- - **documentId** document primary key
- - **allowedReturnType** List of return types that the client is prepared to handle, in case the document plugin needs to request additional processing. Standard allowed return types include 'None', 'Message', 'SoProtocol', 'CustomGui', 'Other'.<br/>An empty array implies that the client places no restriction on possible return action requests
+## Parameters
+
+* **documentId** document primary key
+* **allowedReturnType** List of return types that the client is prepared to handle, in case the document plugin needs to request additional processing. Standard allowed return types include 'None', 'Message', 'SoProtocol', 'CustomGui', 'Other'.<br/>An empty array implies that the client places no restriction on possible return action requests
 
 **Returns:** NSReturnInfo
 

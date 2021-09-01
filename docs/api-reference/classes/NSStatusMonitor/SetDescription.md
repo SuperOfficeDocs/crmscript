@@ -11,7 +11,7 @@ so.topic: reference
 Description of the status monitor
 
 **Parameter:** 
- - **description** String
+* **description** String
 
 ```crmscript
 NSStatusMonitor thing;

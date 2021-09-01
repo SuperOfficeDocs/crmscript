@@ -9,7 +9,7 @@ so.topic: reference
 # SetSaleType(NSSaleType saleType)
 
 **Parameter:** 
- - **saleType** NSSaleType
+* **saleType** NSSaleType
 
 ```crmscript
 NSSaleEntity thing;

@@ -11,7 +11,7 @@ so.topic: reference
 The name of the table in the database
 
 **Parameter:** 
- - **tableName** String
+* **tableName** String
 
 ```crmscript
 NSEntityName thing;

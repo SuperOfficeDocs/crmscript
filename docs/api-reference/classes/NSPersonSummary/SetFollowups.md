@@ -11,7 +11,7 @@ so.topic: reference
 Recent follow-ups on person
 
 **Parameter:** 
- - **followups** NSActivitySummaryItem[]
+* **followups** NSActivitySummaryItem[]
 
 ```crmscript
 NSPersonSummary thing;

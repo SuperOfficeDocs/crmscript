@@ -11,7 +11,7 @@ so.topic: reference
 Description of this pricelist , will be used as tool-tip in the user interface.
 
 **Parameter:** 
- - **description** String
+* **description** String
 
 ```crmscript
 NSPriceList thing;

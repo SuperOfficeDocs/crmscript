@@ -11,7 +11,7 @@ so.topic: reference
 The displayname of the field
 
 **Parameter:** 
- - **encodedDisplayName** String
+* **encodedDisplayName** String
 
 ```crmscript
 NSFieldValueInfo thing;

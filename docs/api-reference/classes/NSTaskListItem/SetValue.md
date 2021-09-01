@@ -11,7 +11,7 @@ so.topic: reference
 The list item
 
 **Parameter:** 
- - **value** String
+* **value** String
 
 ```crmscript
 NSTaskListItem thing;

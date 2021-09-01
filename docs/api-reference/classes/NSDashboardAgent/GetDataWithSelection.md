@@ -10,10 +10,11 @@ so.topic: reference
 
 Get data for this tile
 
-**Parameters:**
- - **dashboardTileId** Tile Id
- - **selectionId** Selection Id
- - **restrictions** Replacement restrictions
+## Parameters
+
+* **dashboardTileId** Tile Id
+* **selectionId** Selection Id
+* **restrictions** Replacement restrictions
 
 **Returns:** NSTileData[]
 

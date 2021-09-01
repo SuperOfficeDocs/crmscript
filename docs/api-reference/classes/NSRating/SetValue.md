@@ -11,7 +11,7 @@ so.topic: reference
 Set the name of the NSRating item.
 
 **Parameter:** 
- - **value** String Rating name.
+* **value** String Rating name.
 
 ```crmscript
 NSRating thing;

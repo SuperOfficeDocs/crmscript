@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSTicketPriorityEntity object.
 
-**Parameters:**
- - **ticketPriorityEntityId** The identifier of the NSTicketPriorityEntity object
+## Parameters
+
+* **ticketPriorityEntityId** The identifier of the NSTicketPriorityEntity object
 
 **Returns:** NSTicketPriorityEntity
 

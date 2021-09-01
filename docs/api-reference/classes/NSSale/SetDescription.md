@@ -11,7 +11,7 @@ so.topic: reference
 The sales description
 
 **Parameter:** 
- - **description** String
+* **description** String
 
 ```crmscript
 NSSale thing;

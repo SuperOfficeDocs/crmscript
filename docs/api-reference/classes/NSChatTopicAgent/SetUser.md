@@ -11,7 +11,7 @@ so.topic: reference
 The associate that is the user agent.
 
 **Parameter:** 
- - **user** NSAssociate
+* **user** NSAssociate
 
 ```crmscript
 NSChatTopicAgent thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Plain message text of this message
 
 **Parameter:** 
- - **plainMessage** String
+* **plainMessage** String
 
 ```crmscript
 NSShipmentMessageEntity thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Optional description of what this script is used for.
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSTriggerScriptEntity thing;

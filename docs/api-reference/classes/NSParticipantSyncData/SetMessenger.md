@@ -9,7 +9,7 @@ so.topic: reference
 # SetMessenger(String[] messenger)
 
 **Parameter:** 
- - **messenger** String[]
+* **messenger** String[]
 
 ```crmscript
 NSParticipantSyncData thing;

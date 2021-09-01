@@ -11,7 +11,7 @@ so.topic: reference
 Updates the existing NSStatusMonitorPeriods or creates a new NSStatusMonitorPeriods if the id parameter is 0
 
 **Parameters**:
- - **statusMonitorPeriods** The NSStatusMonitorPeriods to save.
+* **statusMonitorPeriods** The NSStatusMonitorPeriods to save.
 
 **Returns:** NSStatusMonitorPeriods
 

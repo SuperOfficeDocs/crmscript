@@ -11,7 +11,7 @@ so.topic: reference
 The module licenses.
 
 **Parameter:** 
- - **moduleLicenses** NSModuleLicense[]
+* **moduleLicenses** NSModuleLicense[]
 
 ```crmscript
 NSLicenseInfo thing;

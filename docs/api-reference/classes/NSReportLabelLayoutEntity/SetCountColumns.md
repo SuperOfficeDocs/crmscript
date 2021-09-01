@@ -11,7 +11,7 @@ so.topic: reference
 Number og columns
 
 **Parameter:** 
- - **countColumns** Integer
+* **countColumns** Integer
 
 ```crmscript
 NSReportLabelLayoutEntity thing;

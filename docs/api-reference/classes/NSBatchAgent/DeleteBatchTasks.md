@@ -10,5 +10,6 @@ so.topic: reference
 
 Delete batch tasks from the database.
 
-**Parameters:**
- - **batchTaskIds** Array of batchTask ids to delete.
+## Parameters
+
+* **batchTaskIds** Array of batchTask ids to delete.

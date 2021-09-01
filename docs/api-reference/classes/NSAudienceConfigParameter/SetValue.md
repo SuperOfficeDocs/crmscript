@@ -11,7 +11,7 @@ so.topic: reference
 The value of the configuration parameter
 
 **Parameter:** 
- - **value** String
+* **value** String
 
 ```crmscript
 NSAudienceConfigParameter thing;

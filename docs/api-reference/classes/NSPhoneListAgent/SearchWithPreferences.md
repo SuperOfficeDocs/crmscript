@@ -10,9 +10,10 @@ so.topic: reference
 
 Searching the phone list. Search is based on the supplied preferences.
 
-**Parameters:**
- - **searchString** The search string.
- - **preferences** The search preferences
+## Parameters
+
+* **searchString** The search string.
+* **preferences** The search preferences
 
 **Returns:** The resulting phone list.
 

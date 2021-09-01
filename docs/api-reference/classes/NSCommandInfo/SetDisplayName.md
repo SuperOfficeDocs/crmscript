@@ -11,7 +11,7 @@ so.topic: reference
 Display name, shown in menus, command lists and similar GUI elements.
 
 **Parameter:** 
- - **displayName** String
+* **displayName** String
 
 ```crmscript
 NSCommandInfo thing;

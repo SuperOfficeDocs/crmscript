@@ -10,8 +10,9 @@ so.topic: reference
 
 Check if we are right now within the opening hours of the given topic. Will use timezones to calculate if configured.
 
-**Parameters:**
- - **chatTopicId** The id of the topic to check
+## Parameters
+
+* **chatTopicId** The id of the topic to check
 
 **Returns:** Bool
 

@@ -11,7 +11,7 @@ so.topic: reference
 All Pocket specific preferences, including WebPanels defined by the user in Pocket
 
 **Parameter:** 
- - **pocketPreferences** NSPreference[]
+* **pocketPreferences** NSPreference[]
 
 ```crmscript
 NSPocketStartupData thing;

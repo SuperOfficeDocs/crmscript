@@ -11,7 +11,7 @@ so.topic: reference
 Context for the executing task.
 
 **Parameter:** 
- - **context** String
+* **context** String
 
 ```crmscript
 NSBatchTaskInfo thing;

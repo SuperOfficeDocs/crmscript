@@ -11,7 +11,7 @@ so.topic: reference
 Number of minutes bias relative to UTC time
 
 **Parameter:** 
- - **tZOffset** Integer
+* **tZOffset** Integer
 
 ```crmscript
 NSTimeZoneRule thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Rank/Version number, starts at 1
 
 **Parameter:** 
- - **rank** Integer
+* **rank** Integer
 
 ```crmscript
 NSQuoteVersion thing;

@@ -25,4 +25,3 @@ Returns the last error message.
       print(h.getErrorMessage());
     else
       print(String(b));
-

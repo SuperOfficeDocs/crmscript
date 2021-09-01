@@ -11,7 +11,7 @@ so.topic: reference
 The notification message body
 
 **Parameter:** 
- - **message** String
+* **message** String
 
 ```crmscript
 NSPocketNotificationMessage thing;

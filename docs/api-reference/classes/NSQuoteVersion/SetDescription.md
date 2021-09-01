@@ -11,7 +11,7 @@ so.topic: reference
 Description of Version. Potentially longer text description, typically used in a tooltip. Max 2K.
 
 **Parameter:** 
- - **description** String
+* **description** String
 
 ```crmscript
 NSQuoteVersion thing;

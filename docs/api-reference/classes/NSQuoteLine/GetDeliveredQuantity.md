@@ -8,7 +8,7 @@ so.topic: reference
 
 # Float GetDeliveredQuantity()
 
-How many units have been delivered - updated by ERP system.
+How many units have been delivered* updated by ERP system.
 
 **Returns:** Float
 

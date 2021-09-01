@@ -10,8 +10,9 @@ so.topic: reference
 
 Save a collection of QuoteLineConfigurations. It is not possible to add a new configurations.
 
-**Parameters:**
- - **quoteLineConfigurations** The QuoteLineConfigurations to save.
+## Parameters
+
+* **quoteLineConfigurations** The QuoteLineConfigurations to save.
 
 **Returns:** NSQuoteLineConfiguration[]
 

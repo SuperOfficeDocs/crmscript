@@ -11,7 +11,7 @@ so.topic: reference
 Recent sales on person
 
 **Parameter:** 
- - **sales** NSSaleSummaryItem[]
+* **sales** NSSaleSummaryItem[]
 
 ```crmscript
 NSPersonSummary thing;

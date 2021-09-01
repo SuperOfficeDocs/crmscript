@@ -11,7 +11,7 @@ so.topic: reference
 The label (lead text)
 
 **Parameter:** 
- - **fieldLabel** String
+* **fieldLabel** String
 
 ```crmscript
 NSUserDefinedFieldInfo thing;

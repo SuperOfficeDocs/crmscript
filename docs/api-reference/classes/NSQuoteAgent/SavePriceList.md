@@ -11,7 +11,7 @@ so.topic: reference
 Updates the existing NSPriceList or creates a new NSPriceList if the id parameter is 0
 
 **Parameters**:
- - **priceList** The NSPriceList to save.
+* **priceList** The NSPriceList to save.
 
 **Returns:** NSPriceList
 

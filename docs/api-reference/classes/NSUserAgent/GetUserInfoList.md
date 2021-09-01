@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a vector of NSUserInfo objects.
 
-**Parameters:**
- - **userInfoIds** The identifiers of the NSUserInfo objects
+## Parameters
+
+* **userInfoIds** The identifiers of the NSUserInfo objects
 
 **Returns:** NSUserInfo[]
 

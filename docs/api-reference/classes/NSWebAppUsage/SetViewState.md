@@ -11,7 +11,7 @@ so.topic: reference
 The SoProtocol(ViewState)
 
 **Parameter:** 
- - **viewState** String
+* **viewState** String
 
 ```crmscript
 NSWebAppUsage thing;

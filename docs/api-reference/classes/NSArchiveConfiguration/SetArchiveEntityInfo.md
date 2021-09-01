@@ -9,7 +9,7 @@ so.topic: reference
 # SetArchiveEntityInfo(NSSelectableMDOListItem[] archiveEntityInfo)
 
 **Parameter:** 
- - **archiveEntityInfo** NSSelectableMDOListItem[]
+* **archiveEntityInfo** NSSelectableMDOListItem[]
 
 ```crmscript
 NSArchiveConfiguration thing;

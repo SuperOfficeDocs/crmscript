@@ -10,8 +10,9 @@ so.topic: reference
 
 Toggle the 'default included' state of a sale type quote attachment
 
-**Parameters:**
- - **saleTypeQuoteAttachmentId** The ID of the sale type quote attachment row
+## Parameters
+
+* **saleTypeQuoteAttachmentId** The ID of the sale type quote attachment row
 
 **Returns:** Bool
 

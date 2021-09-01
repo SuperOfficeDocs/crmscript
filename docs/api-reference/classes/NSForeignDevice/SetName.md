@@ -11,7 +11,7 @@ so.topic: reference
 Name of device
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSForeignDevice thing;

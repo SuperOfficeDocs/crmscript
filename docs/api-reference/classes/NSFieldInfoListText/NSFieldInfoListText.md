@@ -8,4 +8,4 @@ so.topic: reference
 
 # NSFieldInfoListText
 
-Text string with a list of item choices - custom database field.
+Text string with a list of item choices* custom database field.

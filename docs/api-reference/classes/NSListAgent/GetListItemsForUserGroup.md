@@ -10,9 +10,10 @@ so.topic: reference
 
 List of list items that is visible in the usergroup
 
-**Parameters:**
- - **udListDefinitionId** The id of the list. Negative numbers indicate TableNumber value instead of UDListDefId. e.g. -64 = category.
- - **groupId** The id of the usergroup
+## Parameters
+
+* **udListDefinitionId** The id of the list. Negative numbers indicate TableNumber value instead of UDListDefId. e.g. -64 = category.
+* **groupId** The id of the usergroup
 
 **Returns:** NSSelectableMDOListItem[]
 

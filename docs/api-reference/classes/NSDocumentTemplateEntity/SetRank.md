@@ -11,7 +11,7 @@ so.topic: reference
 Rank order
 
 **Parameter:** 
- - **rank** Integer
+* **rank** Integer
 
 ```crmscript
 NSDocumentTemplateEntity thing;

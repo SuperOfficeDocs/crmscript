@@ -9,7 +9,7 @@ so.topic: reference
 # SetIsVisibleForCategories(Bool isVisibleForCategories)
 
 **Parameter:** 
- - **isVisibleForCategories** Bool
+* **isVisibleForCategories** Bool
 
 ```crmscript
 NSProjectEventEntity thing;

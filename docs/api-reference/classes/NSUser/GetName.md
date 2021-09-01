@@ -8,7 +8,7 @@ so.topic: reference
 
 # String GetName()
 
-Initials, UserId - also used as login name for on-site installations. Identifies user in archives.
+Initials, UserId* also used as login name for on-site installations. Identifies user in archives.
 
 **Returns:** String
 

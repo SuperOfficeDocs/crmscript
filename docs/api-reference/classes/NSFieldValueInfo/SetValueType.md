@@ -11,7 +11,7 @@ so.topic: reference
 Describes the expected value array
 
 **Parameter:** 
- - **valueType** String
+* **valueType** String
 
 ```crmscript
 NSFieldValueInfo thing;

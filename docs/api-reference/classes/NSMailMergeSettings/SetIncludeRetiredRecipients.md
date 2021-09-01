@@ -11,7 +11,7 @@ so.topic: reference
 Include recipients that are marked as retired
 
 **Parameter:** 
- - **includeRetiredRecipients** Bool
+* **includeRetiredRecipients** Bool
 
 ```crmscript
 NSMailMergeSettings thing;

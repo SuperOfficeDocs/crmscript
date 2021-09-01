@@ -11,7 +11,7 @@ so.topic: reference
 Does the sale stage advance automatically, when the last guided activity in a stage is completed?
 
 **Parameter:** 
- - **isAutoAdvance** Bool
+* **isAutoAdvance** Bool
 
 ```crmscript
 NSSaleTypeEntity thing;

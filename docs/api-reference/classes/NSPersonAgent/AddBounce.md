@@ -10,5 +10,6 @@ so.topic: reference
 
 Add a bounce count on the email address if it exists
 
-**Parameters:**
- - **emailAddress** The email address which we want to add a bounce count to
+## Parameters
+
+* **emailAddress** The email address which we want to add a bounce count to

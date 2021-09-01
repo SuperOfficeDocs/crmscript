@@ -10,5 +10,6 @@ so.topic: reference
 
 Deletes all appointments(within the appointmentIds array) with status BookingDeleted.
 
-**Parameters:**
- - **appointmentIds** 
+## Parameters
+
+* **appointmentIds** 

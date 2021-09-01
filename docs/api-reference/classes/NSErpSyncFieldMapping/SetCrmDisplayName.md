@@ -11,7 +11,7 @@ so.topic: reference
 Display name of CRM field; ignored on Save
 
 **Parameter:** 
- - **crmDisplayName** String
+* **crmDisplayName** String
 
 ```crmscript
 NSErpSyncFieldMapping thing;

@@ -8,4 +8,4 @@ so.topic: reference
 
 # NSPreferenceDescription
 
-Preference description, drives the Preference GUI. Maintenance client - controls all preferences in SuperOffice.
+Preference description, drives the Preference GUI. Maintenance client* controls all preferences in SuperOffice.

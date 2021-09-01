@@ -10,9 +10,10 @@ so.topic: reference
 
 Get all or some of the messages in a chat session
 
-**Parameters:**
- - **chatSessionId** id of the chat session to reset
- - **after** Return messages after this message id
+## Parameters
+
+* **chatSessionId** id of the chat session to reset
+* **after** Return messages after this message id
 
 **Returns:** NSChatMessage[]
 

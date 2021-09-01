@@ -10,8 +10,9 @@ so.topic: reference
 
 Get a web panel using the ProgId key that was specified when it was created
 
-**Parameters:**
- - **progId** String key that can be used to uniquely retrieve the panel, set in the NSWebPanelEntity when saving
+## Parameters
+
+* **progId** String key that can be used to uniquely retrieve the panel, set in the NSWebPanelEntity when saving
 
 **Returns:** NSWebPanelEntity
 

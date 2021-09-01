@@ -11,7 +11,7 @@ so.topic: reference
 The address itself
 
 **Parameter:** 
- - **personEmail** String
+* **personEmail** String
 
 ```crmscript
 NSPhoneListItem thing;

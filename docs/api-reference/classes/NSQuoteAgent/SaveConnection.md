@@ -10,8 +10,9 @@ so.topic: reference
 
 Saves a connection to the database.
 
-**Parameters:**
- - **connection** The connection to save.
+## Parameters
+
+* **connection** The connection to save.
 
 **Returns:** NSQuoteConnection
 

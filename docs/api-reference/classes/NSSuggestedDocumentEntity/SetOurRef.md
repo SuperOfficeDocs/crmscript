@@ -11,7 +11,7 @@ so.topic: reference
 Suggested 'our reference'
 
 **Parameter:** 
- - **ourRef** String
+* **ourRef** String
 
 ```crmscript
 NSSuggestedDocumentEntity thing;

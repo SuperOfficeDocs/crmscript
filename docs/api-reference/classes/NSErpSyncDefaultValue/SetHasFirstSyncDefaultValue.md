@@ -11,7 +11,7 @@ so.topic: reference
 Should a default value be set on first sync
 
 **Parameter:** 
- - **hasFirstSyncDefaultValue** Bool
+* **hasFirstSyncDefaultValue** Bool
 
 ```crmscript
 NSErpSyncDefaultValue thing;

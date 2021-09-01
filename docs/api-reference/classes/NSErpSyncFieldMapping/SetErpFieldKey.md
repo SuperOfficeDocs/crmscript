@@ -11,7 +11,7 @@ so.topic: reference
 The ERP field key
 
 **Parameter:** 
- - **erpFieldKey** String
+* **erpFieldKey** String
 
 ```crmscript
 NSErpSyncFieldMapping thing;

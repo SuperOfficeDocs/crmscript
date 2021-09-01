@@ -8,7 +8,7 @@ so.topic: reference
 
 # String GetMdoListName()
 
-MDO list name used to populate this list. (Read-only - derived from TargetTable)
+MDO list name used to populate this list. (Read-only* derived from TargetTable)
 
 **Returns:** String
 

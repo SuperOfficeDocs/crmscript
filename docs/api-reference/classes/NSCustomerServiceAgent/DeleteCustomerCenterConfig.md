@@ -10,8 +10,9 @@ so.topic: reference
 
 Deletes the NSCustomerCenterConfig
   
-**Parameters:**
- - **customerCenterConfigId** The identity of the NSCustomerCenterConfig to delete.
+## Parameters
+
+* **customerCenterConfigId** The identity of the NSCustomerCenterConfig to delete.
 
 ```crmscript
 NSCustomerServiceAgent agent;

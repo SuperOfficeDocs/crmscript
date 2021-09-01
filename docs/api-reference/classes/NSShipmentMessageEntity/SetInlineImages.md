@@ -11,7 +11,7 @@ so.topic: reference
 Should images be included inline?
 
 **Parameter:** 
- - **inlineImages** Bool
+* **inlineImages** Bool
 
 ```crmscript
 NSShipmentMessageEntity thing;

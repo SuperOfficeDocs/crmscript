@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSSelectionCategory object.
 
-**Parameters:**
- - **selectionCategoryId** The identifier of the NSSelectionCategory object
+## Parameters
+
+* **selectionCategoryId** The identifier of the NSSelectionCategory object
 
 **Returns:** NSSelectionCategory
 

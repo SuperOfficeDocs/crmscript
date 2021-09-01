@@ -13,7 +13,7 @@ This function will update a table row, that's already integrated with CRM. It on
 
 ## Parameters
 
- - p0: p_table, the table
- - p1:  p_row, the row data, converted and massaged to fit into the NetServer schema
- - p2: p_fieldMapping
+* p0: p_table, the table
+* p1:  p_row, the row data, converted and massaged to fit into the NetServer schema
+* p2: p_fieldMapping
 

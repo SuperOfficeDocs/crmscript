@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **consentSourceId** Integer
+* **consentSourceId** Integer
 
 ```crmscript
 NSConsentSource thing;

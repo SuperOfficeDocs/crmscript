@@ -11,7 +11,7 @@ so.topic: reference
 Date of the event. Event is not visible after this date.
 
 **Parameter:** 
- - **eventDate** DateTime
+* **eventDate** DateTime
 
 ```crmscript
 NSProjectEvent thing;

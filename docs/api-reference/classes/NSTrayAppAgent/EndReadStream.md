@@ -15,4 +15,3 @@ Called when finisheded reading a stream.
 * **communicationModuleVersion:** Module version of the client communication module that initiated the request. This is sent to make sure the correct version of the communication server module is loaded.
 * **communicationModuleData:** Serialized data from the communiction client module that initiated this operation.
 * **Returns:** Return an empty string, or a error message if something went wrong.
-

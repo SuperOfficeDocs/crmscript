@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSForeignDevice object.
 
-**Parameters:**
- - **foreignDeviceId** The identifier of the NSForeignDevice object
+## Parameters
+
+* **foreignDeviceId** The identifier of the NSForeignDevice object
 
 **Returns:** NSForeignDevice
 

@@ -11,7 +11,7 @@ so.topic: reference
 date + start time planned
 
 **Parameter:** 
- - **date** DateTime
+* **date** DateTime
 
 ```crmscript
 NSDocumentEntity thing;

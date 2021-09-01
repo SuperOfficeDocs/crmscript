@@ -11,7 +11,7 @@ so.topic: reference
 1 = This row populated and maintained by SuperOffice
 
 **Parameter:** 
- - **isBuiltin** Bool
+* **isBuiltin** Bool
 
 ```crmscript
 NSPreferenceDescription thing;

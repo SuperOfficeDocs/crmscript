@@ -11,7 +11,7 @@ so.topic: reference
 0 = read/write, 1 = readonly (don't combine with mandatory  8-) )
 
 **Parameter:** 
- - **isReadOnly** Bool
+* **isReadOnly** Bool
 
 ```crmscript
 NSUserDefinedFieldInfo thing;

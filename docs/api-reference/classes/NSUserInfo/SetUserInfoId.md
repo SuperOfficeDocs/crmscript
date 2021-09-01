@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **userInfoId** Integer
+* **userInfoId** Integer
 
 ```crmscript
 NSUserInfo thing;

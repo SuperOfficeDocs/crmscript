@@ -8,15 +8,15 @@ so.topic: reference
 
 # SetType(Integer type)
 
-The type of option - integer, list, boolean (checkbox) etc.
+The type of option* integer, list, boolean (checkbox) etc.
 
 **Parameter:** 
- - **type** Integer
-     - Enum: 0 = None 
-     - Enum: 1 = String 
-     - Enum: 2 = Integer 
-     - Enum: 3 = Boolean 
-     - Enum: 4 = List 
+* **type** Integer
+* Enum: 0 = None 
+* Enum: 1 = String 
+* Enum: 2 = Integer 
+* Enum: 3 = Boolean 
+* Enum: 4 = List 
 
 ```crmscript
 NSDashboardTileOption thing;

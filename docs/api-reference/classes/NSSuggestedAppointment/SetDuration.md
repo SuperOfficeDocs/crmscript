@@ -11,7 +11,7 @@ so.topic: reference
 Duration in minutes of suggested appointment
 
 **Parameter:** 
- - **duration** Integer
+* **duration** Integer
 
 ```crmscript
 NSSuggestedAppointment thing;

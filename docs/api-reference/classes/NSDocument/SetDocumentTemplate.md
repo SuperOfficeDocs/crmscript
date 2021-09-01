@@ -9,7 +9,7 @@ so.topic: reference
 # SetDocumentTemplate(String documentTemplate)
 
 **Parameter:** 
- - **documentTemplate** String
+* **documentTemplate** String
 
 ```crmscript
 NSDocument thing;

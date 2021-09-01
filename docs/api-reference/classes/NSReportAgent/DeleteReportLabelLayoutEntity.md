@@ -10,8 +10,9 @@ so.topic: reference
 
 Deletes the NSReportLabelLayoutEntity
   
-**Parameters:**
- - **reportLabelLayoutEntityId** The identity of the ReportLabelLayoutEntity to delete.
+## Parameters
+
+* **reportLabelLayoutEntityId** The identity of the ReportLabelLayoutEntity to delete.
 
 ```crmscript
 NSReportAgent agent;

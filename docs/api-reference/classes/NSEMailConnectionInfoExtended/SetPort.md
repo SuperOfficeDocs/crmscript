@@ -9,7 +9,7 @@ so.topic: reference
 # SetPort(Integer port)
 
 **Parameter:** 
- - **port** Integer
+* **port** Integer
 
 ```crmscript
 NSEMailConnectionInfoExtended thing;

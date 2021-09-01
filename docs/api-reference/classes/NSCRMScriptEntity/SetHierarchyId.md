@@ -11,7 +11,7 @@ so.topic: reference
 The script is inside this hierarchy folder
 
 **Parameter:** 
- - **hierarchyId** Integer
+* **hierarchyId** Integer
 
 ```crmscript
 NSCRMScriptEntity thing;

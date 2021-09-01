@@ -11,7 +11,7 @@ so.topic: reference
 If 1, the SignOff task should be created as an Assigned task, triggering the invitation dialog
 
 **Parameter:** 
- - **signOffTriggersAssign** Bool
+* **signOffTriggersAssign** Bool
 
 ```crmscript
 NSProjectEventEntity thing;

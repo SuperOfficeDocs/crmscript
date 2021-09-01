@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **countryId** Integer
+* **countryId** Integer
 
 ```crmscript
 NSCountry thing;

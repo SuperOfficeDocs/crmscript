@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSDeliveryType object.
 
-**Parameters:**
- - **deliveryTypeId** The identifier of the NSDeliveryType object
+## Parameters
+
+* **deliveryTypeId** The identifier of the NSDeliveryType object
 
 **Returns:** NSDeliveryType
 

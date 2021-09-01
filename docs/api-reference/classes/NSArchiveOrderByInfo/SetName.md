@@ -11,7 +11,7 @@ so.topic: reference
 Programmatic name of the column to order by, semantically the same as the NSArchiveColumnInfo.Name.
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSArchiveOrderByInfo thing;

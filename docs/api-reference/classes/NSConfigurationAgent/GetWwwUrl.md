@@ -10,8 +10,9 @@ so.topic: reference
 
 Will get the default URL used for the logo, from the [NetServices] PageUrl preferencec, with tags substituted.
 
-**Parameters:**
- - **client** The name for the client application, like 'CS' or 'SM.web', used for the <clie> variable
+## Parameters
+
+* **client** The name for the client application, like 'CS' or 'SM.web', used for the <clie> variable
 
 **Returns:** String
 

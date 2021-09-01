@@ -11,7 +11,7 @@ so.topic: reference
 Default string value
 
 **Parameter:** 
- - **defaultValue** String
+* **defaultValue** String
 
 ```crmscript
 NSFieldInfoShortText thing;

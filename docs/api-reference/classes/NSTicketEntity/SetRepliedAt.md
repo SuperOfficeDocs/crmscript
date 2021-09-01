@@ -11,7 +11,7 @@ so.topic: reference
 The datetime for when the ticket was replied to. I.e. the first external message added to the ticket.
 
 **Parameter:** 
- - **repliedAt** DateTime
+* **repliedAt** DateTime
 
 ```crmscript
 NSTicketEntity thing;

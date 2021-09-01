@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSTicket GetTicket()
 
-Ticket the session is connected to - could be empty if we don't know exactly.
+Ticket the session is connected to* could be empty if we don't know exactly.
 
 **Returns:** Ticket
 

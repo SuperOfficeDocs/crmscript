@@ -11,7 +11,7 @@ so.topic: reference
 The unrestricted module licenses that this license owner
 
 **Parameter:** 
- - **unrestrictedModuleLicenses** NSModuleLicenseLink[]
+* **unrestrictedModuleLicenses** NSModuleLicenseLink[]
 
 ```crmscript
 NSLicenseOwner thing;

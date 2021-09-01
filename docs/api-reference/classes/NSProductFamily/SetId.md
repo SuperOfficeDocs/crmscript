@@ -11,7 +11,7 @@ so.topic: reference
 Set the primary key (id) for the NSProductFamily
 
 **Parameter:** 
- - **id** Integer NSProductFamily id.
+* **id** Integer NSProductFamily id.
 
 ```crmscript
 NSProductFamily thing;

@@ -9,7 +9,7 @@ so.topic: reference
 # SetIsCompleted(Bool isCompleted)
 
 **Parameter:** 
- - **isCompleted** Bool
+* **isCompleted** Bool
 
 ```crmscript
 NSAppointmentSyncData thing;

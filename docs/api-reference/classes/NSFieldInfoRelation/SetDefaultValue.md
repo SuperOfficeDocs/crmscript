@@ -11,7 +11,7 @@ so.topic: reference
 Default record id.
 
 **Parameter:** 
- - **defaultValue** Integer
+* **defaultValue** Integer
 
 ```crmscript
 NSFieldInfoRelation thing;

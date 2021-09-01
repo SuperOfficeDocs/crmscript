@@ -10,7 +10,8 @@ so.topic: reference
 
 Get all WebAppUsages for a given period, that match an optional search term
 
-**Parameters:**
- - **fromDate** 
- - **toDate** 
- - **searchTerm** ViewState search term. '%' is the wildcard character, for example 'Pocket%' will match all viewstates starting with 'Pocket'. If empty, all viewstates will be matched
+## Parameters
+
+* **fromDate** 
+* **toDate** 
+* **searchTerm** ViewState search term. '%' is the wildcard character, for example 'Pocket%' will match all viewstates starting with 'Pocket'. If empty, all viewstates will be matched

@@ -10,9 +10,10 @@ so.topic: reference
 
 Update the criteria for this dynamic selection. Replaces existing criteria with the new values.
 
-**Parameters:**
- - **selectionId** The id of the selection to add members
- - **criteria** Criteria defining the selection result.
+## Parameters
+
+* **selectionId** The id of the selection to add members
+* **criteria** Criteria defining the selection result.
 
 **Returns:** NSArchiveRestrictionInfo[]
 

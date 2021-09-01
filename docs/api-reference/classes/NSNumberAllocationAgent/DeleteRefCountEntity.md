@@ -10,8 +10,9 @@ so.topic: reference
 
 Deletes the NSRefCountEntity
   
-**Parameters:**
- - **refCountEntityId** The identity of the RefCountEntity to delete.
+## Parameters
+
+* **refCountEntityId** The identity of the RefCountEntity to delete.
 
 ```crmscript
 NSNumberAllocationAgent agent;

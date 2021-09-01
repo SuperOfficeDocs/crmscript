@@ -11,7 +11,7 @@ so.topic: reference
 Should custom attention always be used? If false, only use custom attention where there is no default.
 
 **Parameter:** 
- - **alwaysUseCustomAttention** Bool
+* **alwaysUseCustomAttention** Bool
 
 ```crmscript
 NSMailMergeSettings thing;

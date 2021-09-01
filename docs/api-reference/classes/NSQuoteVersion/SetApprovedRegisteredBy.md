@@ -11,7 +11,7 @@ so.topic: reference
 Id of associate who actually entered the approval; might be different from ApprovedBy (f.x. due to telephone consultation/approval)
 
 **Parameter:** 
- - **approvedRegisteredBy** Integer
+* **approvedRegisteredBy** Integer
 
 ```crmscript
 NSQuoteVersion thing;

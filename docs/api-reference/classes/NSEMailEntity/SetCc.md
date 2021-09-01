@@ -11,7 +11,7 @@ so.topic: reference
 Cc recipients of e-mail
 
 **Parameter:** 
- - **cc** NSEMailAddress[]
+* **cc** NSEMailAddress[]
 
 ```crmscript
 NSEMailEntity thing;

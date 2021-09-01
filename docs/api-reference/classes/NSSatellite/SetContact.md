@@ -9,7 +9,7 @@ so.topic: reference
 # SetContact(NSContact contact)
 
 **Parameter:** 
- - **contact** NSContact
+* **contact** NSContact
 
 ```crmscript
 NSSatellite thing;

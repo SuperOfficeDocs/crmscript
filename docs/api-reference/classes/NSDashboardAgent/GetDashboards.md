@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets all dashboards for an associate
 
-**Parameters:**
- - **associateId** Associate Id
+## Parameters
+
+* **associateId** Associate Id
 
 **Returns:** NSDashboard[]
 

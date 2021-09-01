@@ -11,7 +11,7 @@ so.topic: reference
 Timezone location ID
 
 **Parameter:** 
- - **tZLocationID** Integer
+* **tZLocationID** Integer
 
 ```crmscript
 NSTimeZoneData thing;

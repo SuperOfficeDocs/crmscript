@@ -11,7 +11,7 @@ so.topic: reference
 Request Ticket Categories assigned to the user. 
 
 **Parameter:** 
- - **ticketCategories** NSMDOListItem[]
+* **ticketCategories** NSMDOListItem[]
 
 ```crmscript
 NSUser thing;

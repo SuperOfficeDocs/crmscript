@@ -8,11 +8,12 @@ so.topic: reference
 
 # ContactOrPersonFromEmail[] FindContactOrPersonByEmailNameWithLimit(String name, String emailAddress, Integer numberOfContacts, Integer numberOfPersons)
 
-**Parameters:**
- - **name** The sender name
- - **emailAddress** The sender email address
- - **numberOfContacts** Maximum returned number of contacts
- - **numberOfPersons** Maximum returned number of persons
+## Parameters
+
+* **name** The sender name
+* **emailAddress** The sender email address
+* **numberOfContacts** Maximum returned number of contacts
+* **numberOfPersons** Maximum returned number of persons
 
 **Returns:** ContactOrPersonFromEmail[]
 

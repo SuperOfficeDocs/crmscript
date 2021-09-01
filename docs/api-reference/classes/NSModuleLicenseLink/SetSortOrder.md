@@ -9,7 +9,7 @@ so.topic: reference
 # SetSortOrder(Integer sortOrder)
 
 **Parameter:** 
- - **sortOrder** Integer
+* **sortOrder** Integer
 
 ```crmscript
 NSModuleLicenseLink thing;

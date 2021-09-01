@@ -10,8 +10,9 @@ so.topic: reference
 
 Automatically enable freetext search for new travel areas? true or false
 
-**Parameters:**
- - **autoEnable** If true, auto enable
+## Parameters
+
+* **autoEnable** If true, auto enable
 
 ```crmscript
 NSFreeTextAgent agent;

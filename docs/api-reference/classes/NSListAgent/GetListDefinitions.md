@@ -8,10 +8,11 @@ so.topic: reference
 
 # NSListEntity[] GetListDefinitions(Bool includeDeleted)
 
-Get a list of the lists - built-in and user-defined.
+Get a list of the lists* built-in and user-defined.
 
-**Parameters:**
- - **includeDeleted** Include deleted items in result?
+## Parameters
+
+* **includeDeleted** Include deleted items in result?
 
 **Returns:** NSListEntity[]
 

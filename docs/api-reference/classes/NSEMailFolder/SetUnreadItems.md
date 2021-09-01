@@ -11,7 +11,7 @@ so.topic: reference
 Number of unread messages in the folder
 
 **Parameter:** 
- - **unreadItems** Integer
+* **unreadItems** Integer
 
 ```crmscript
 NSEMailFolder thing;

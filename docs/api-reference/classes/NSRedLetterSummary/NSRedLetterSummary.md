@@ -8,4 +8,4 @@ so.topic: reference
 
 # NSRedLetterSummary
 
-Summary of redletter day information - holiday in own country, and in other countries known to the system.
+Summary of redletter day information* holiday in own country, and in other countries known to the system.

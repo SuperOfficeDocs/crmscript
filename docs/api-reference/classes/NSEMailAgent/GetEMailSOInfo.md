@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSEMailSOInfo object.
 
-**Parameters:**
- - **eMailSOInfoId** The identifier of the NSEMailSOInfo object
+## Parameters
+
+* **eMailSOInfoId** The identifier of the NSEMailSOInfo object
 
 **Returns:** NSEMailSOInfo
 

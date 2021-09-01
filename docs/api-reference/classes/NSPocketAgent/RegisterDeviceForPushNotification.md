@@ -10,5 +10,6 @@ so.topic: reference
 
 Register a device that should receive push notifications when notable events occour
 
-**Parameters:**
- - **deviceInfo** Properties for the device to register
+## Parameters
+
+* **deviceInfo** Properties for the device to register

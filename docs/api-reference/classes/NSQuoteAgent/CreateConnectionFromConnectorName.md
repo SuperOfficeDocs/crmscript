@@ -10,8 +10,9 @@ so.topic: reference
 
 Create a new connection.
 
-**Parameters:**
- - **connectorName** The name of the connector to create this connection for.
+## Parameters
+
+* **connectorName** The name of the connector to create this connection for.
 
 **Returns:** NSQuoteConnection
 

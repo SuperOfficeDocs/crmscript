@@ -10,9 +10,10 @@ so.topic: reference
 
 Save headings for list resolved by the provided name.
 
-**Parameters:**
- - **name** The name of the list to look up.
- - **entities** The headings to save
+## Parameters
+
+* **name** The name of the list to look up.
+* **entities** The headings to save
 
 **Returns:** NSHeadingEntity[]
 

@@ -10,6 +10,7 @@ so.topic: reference
 
 Turn off consent for a specified person and purpose.
 
-**Parameters:**
- - **personId** The person id
- - **purpose** The key of the purpose to remove. (e.g. 'STORE' or 'EMARKETING')
+## Parameters
+
+* **personId** The person id
+* **purpose** The key of the purpose to remove. (e.g. 'STORE' or 'EMARKETING')

@@ -11,7 +11,7 @@ so.topic: reference
 Is direction reversed relative to definition
 
 **Parameter:** 
- - **reversed** Integer
+* **reversed** Integer
 
 ```crmscript
 NSContactRelationEntity thing;

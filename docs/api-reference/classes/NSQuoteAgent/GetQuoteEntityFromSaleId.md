@@ -10,8 +10,9 @@ so.topic: reference
 
 Get a Quote for a sale
 
-**Parameters:**
- - **saleId** SaleId of the Quote to get.
+## Parameters
+
+* **saleId** SaleId of the Quote to get.
 
 **Returns:** NSQuoteEntity
 

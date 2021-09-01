@@ -11,7 +11,7 @@ so.topic: reference
 Property setting a unique id indicating if this is a person or contact
 
 **Parameter:** 
- - **uniqueId** String
+* **uniqueId** String
 
 ```crmscript
 NSPhoneListItem thing;

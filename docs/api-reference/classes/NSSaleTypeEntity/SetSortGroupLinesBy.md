@@ -11,7 +11,7 @@ so.topic: reference
 Sort group lines by this field
 
 **Parameter:** 
- - **sortGroupLinesBy** Integer
+* **sortGroupLinesBy** Integer
 
 ```crmscript
 NSSaleTypeEntity thing;

@@ -13,7 +13,7 @@ Load message with given id, returns true if successful or false if not successfu
 
 ## Parameters
 
- - Integer id of message
+* Integer id of message
 
 Returns a bool with the load result, true if message loads successfully.
 

@@ -11,7 +11,7 @@ so.topic: reference
 Id of the item's owner (Associate id)
 
 **Parameter:** 
- - **associateId** Integer
+* **associateId** Integer
 
 ```crmscript
 NSPerson thing;

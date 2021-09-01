@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a vector of NSLanguageInfo objects.
 
-**Parameters:**
- - **languageInfoIds** The identifiers of the NSLanguageInfo objects
+## Parameters
+
+* **languageInfoIds** The identifiers of the NSLanguageInfo objects
 
 **Returns:** NSLanguageInfo[]
 

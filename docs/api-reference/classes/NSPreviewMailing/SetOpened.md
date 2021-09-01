@@ -11,7 +11,7 @@ so.topic: reference
 Date/time the customer read the mailing.
 
 **Parameter:** 
- - **opened** DateTime
+* **opened** DateTime
 
 ```crmscript
 NSPreviewMailing thing;

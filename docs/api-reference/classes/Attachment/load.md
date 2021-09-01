@@ -13,7 +13,7 @@ Load in eJournal attachment from disk.
 
 ## Parameters
 
- - Attachment id
+* Attachment id
 
 Returns true if load was successful, false if not.
 

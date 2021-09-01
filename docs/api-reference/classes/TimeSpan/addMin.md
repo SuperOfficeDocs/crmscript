@@ -12,5 +12,5 @@ This function will add the given number of minutes to the currently set timespan
 
 ## Parameters
 
- - num: Number of minutes to add to the timespan
+* num: Number of minutes to add to the timespan
 

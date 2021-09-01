@@ -10,8 +10,9 @@ so.topic: reference
 
 Flushes all NetServer caches named
 
-**Parameters:**
- - **cacheNames** Name of the cahcnes to flush
+## Parameters
+
+* **cacheNames** Name of the cahcnes to flush
 
 ```crmscript
 NSDiagnosticsAgent agent;

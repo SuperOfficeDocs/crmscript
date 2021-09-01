@@ -11,7 +11,7 @@ so.topic: reference
 HTML formatted text of this message
 
 **Parameter:** 
- - **htmlMessage** String
+* **htmlMessage** String
 
 ```crmscript
 NSShipmentMessageEntity thing;

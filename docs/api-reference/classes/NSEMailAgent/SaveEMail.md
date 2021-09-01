@@ -10,9 +10,10 @@ so.topic: reference
 
 Save the passed e-mail back to the server
 
-**Parameters:**
- - **connectionInfo** All information needed to connect to the mailserver
- - **email** The e-mail to save
+## Parameters
+
+* **connectionInfo** All information needed to connect to the mailserver
+* **email** The e-mail to save
 
 **Returns:** NSEMailEntity
 

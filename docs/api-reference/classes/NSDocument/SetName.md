@@ -11,7 +11,7 @@ so.topic: reference
 File name
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSDocument thing;

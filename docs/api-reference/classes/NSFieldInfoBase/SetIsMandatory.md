@@ -11,7 +11,7 @@ so.topic: reference
 0 = no, 1 = yes (field must be filled out)
 
 **Parameter:** 
- - **isMandatory** Bool
+* **isMandatory** Bool
 
 ```crmscript
 NSFieldInfoBase thing;

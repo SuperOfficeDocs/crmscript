@@ -10,6 +10,7 @@ so.topic: reference
 
 Deletes a foreign device from an application
 
-**Parameters:**
- - **foreignDevice** foreign device to delete
- - **applicationName** Name of application to delete from
+## Parameters
+
+* **foreignDevice** foreign device to delete
+* **applicationName** Name of application to delete from

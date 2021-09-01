@@ -11,7 +11,7 @@ so.topic: reference
 Content-Transfer-Encoding
 
 **Parameter:** 
- - **encoding** String
+* **encoding** String
 
 ```crmscript
 NSEMailAttachment thing;

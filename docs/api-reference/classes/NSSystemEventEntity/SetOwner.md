@@ -11,7 +11,7 @@ so.topic: reference
 0, 0, group_id, assoc id (see over)
 
 **Parameter:** 
- - **owner** Integer
+* **owner** Integer
 
 ```crmscript
 NSSystemEventEntity thing;

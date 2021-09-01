@@ -11,7 +11,7 @@ so.topic: reference
 The name of the owner which the request was assigned to
 
 **Parameter:** 
- - **ownerName** String
+* **ownerName** String
 
 ```crmscript
 NSTicketInfo thing;

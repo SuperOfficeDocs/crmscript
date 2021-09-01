@@ -11,7 +11,7 @@ so.topic: reference
 The date and time the Audience layout was created
 
 **Parameter:** 
- - **createdDate** DateTime
+* **createdDate** DateTime
 
 ```crmscript
 NSAudienceLayoutEntity thing;

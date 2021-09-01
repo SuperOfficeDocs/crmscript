@@ -14,7 +14,7 @@ so.topic: reference
 * **short:** True if you want short version of text (e.g. "m" instead of "minutes").
 * **Returns:** A string representation of the timespan, on the given format and in the given language
 
-Modes - These integers can be used for mode and maxMode parameters:
+Modes* These integers can be used for mode and maxMode parameters:
 Mode2Year = 0
 Mode2Day = 1
 Mode2Hour = 2

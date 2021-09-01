@@ -11,7 +11,7 @@ so.topic: reference
 Is the application visible when user is on a satellite
 
 **Parameter:** 
- - **onSatellite** Bool
+* **onSatellite** Bool
 
 ```crmscript
 NSExtAppEntity thing;

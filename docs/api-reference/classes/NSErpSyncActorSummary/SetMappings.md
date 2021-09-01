@@ -11,7 +11,7 @@ so.topic: reference
 A summary of fields that have mappings to or from the ERP system
 
 **Parameter:** 
- - **mappings** String
+* **mappings** String
 
 ```crmscript
 NSErpSyncActorSummary thing;

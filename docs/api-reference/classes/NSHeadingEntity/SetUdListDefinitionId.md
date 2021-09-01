@@ -11,7 +11,7 @@ so.topic: reference
 The id of the list which this heading belongs to
 
 **Parameter:** 
- - **udListDefinitionId** Integer
+* **udListDefinitionId** Integer
 
 ```crmscript
 NSHeadingEntity thing;

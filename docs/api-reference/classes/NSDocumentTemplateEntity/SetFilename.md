@@ -11,7 +11,7 @@ so.topic: reference
 Relative to TemplatePath, or extref for other document plugins. i.e URL or full path.
 
 **Parameter:** 
- - **filename** String
+* **filename** String
 
 ```crmscript
 NSDocumentTemplateEntity thing;

@@ -10,9 +10,10 @@ so.topic: reference
 
 Creates a temporary selection with members from a collection of entity id's.
 
-**Parameters:**
- - **ids** A collection of Ids to copy into the temporary selection as members. The ids are primary keys of entities defined by the targetTableNumber parameter.
- - **targetTableNumber** The type of selection to create.
+## Parameters
+
+* **ids** A collection of Ids to copy into the temporary selection as members. The ids are primary keys of entities defined by the targetTableNumber parameter.
+* **targetTableNumber** The type of selection to create.
 
 **Returns:** NSSelectionEntity
 

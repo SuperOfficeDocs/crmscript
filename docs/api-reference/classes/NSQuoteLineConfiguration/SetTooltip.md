@@ -11,7 +11,7 @@ so.topic: reference
 Tooltip resource string.
 
 **Parameter:** 
- - **tooltip** String
+* **tooltip** String
 
 ```crmscript
 NSQuoteLineConfiguration thing;

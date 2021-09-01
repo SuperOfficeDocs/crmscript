@@ -11,7 +11,7 @@ so.topic: reference
 NSCurrency the sale was made in.
 
 **Parameter:** 
- - **currency** String
+* **currency** String
 
 ```crmscript
 NSSale thing;

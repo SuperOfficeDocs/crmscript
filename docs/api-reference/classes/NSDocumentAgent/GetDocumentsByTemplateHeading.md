@@ -10,8 +10,9 @@ so.topic: reference
 
 Method that returns document appointments, filtered by the document template heading. The heading represents a grouping or filtering of document templates.
 
-**Parameters:**
- - **templateHeadingId** The document template heading id. The heading represents a grouping or filtering of document templates.
+## Parameters
+
+* **templateHeadingId** The document template heading id. The heading represents a grouping or filtering of document templates.
 
 **Returns:** NSDocument[]
 

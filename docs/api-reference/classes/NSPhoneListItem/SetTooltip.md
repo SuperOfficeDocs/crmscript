@@ -9,7 +9,7 @@ so.topic: reference
 # SetTooltip(String tooltip)
 
 **Parameter:** 
- - **tooltip** String
+* **tooltip** String
 
 ```crmscript
 NSPhoneListItem thing;

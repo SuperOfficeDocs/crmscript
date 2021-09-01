@@ -17,10 +17,10 @@ The max is good, because one normally never works more than 8 hours pr. day :)
 
 ## Parameters
 
- - day: The day to get the load for
- - start: When to start calculating.
- - stop: When to stop calculating.
- - max: The maximum time returned.
+* day: The day to get the load for
+* start: When to start calculating.
+* stop: When to stop calculating.
+* max: The maximum time returned.
 
 Returns the calculated load for the given day
 

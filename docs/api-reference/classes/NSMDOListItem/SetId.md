@@ -11,7 +11,7 @@ so.topic: reference
 The Id of the ListItem
 
 **Parameter:** 
- - **id** Integer
+* **id** Integer
 
 ```crmscript
 NSMDOListItem thing;

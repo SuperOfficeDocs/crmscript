@@ -10,9 +10,10 @@ so.topic: reference
 
 Add a user to a chat topic
 
-**Parameters:**
- - **chatTopicId** Id of the chat topic
- - **useragent** User's role within the chat topic to add to topic.
+## Parameters
+
+* **chatTopicId** Id of the chat topic
+* **useragent** User's role within the chat topic to add to topic.
 
 **Returns:** NSChatTopicAgent
 

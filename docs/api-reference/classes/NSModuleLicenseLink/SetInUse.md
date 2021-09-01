@@ -11,7 +11,7 @@ so.topic: reference
 The total number of licenses (of a given license module) that are occupied
 
 **Parameter:** 
- - **inUse** Integer
+* **inUse** Integer
 
 ```crmscript
 NSModuleLicenseLink thing;

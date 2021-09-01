@@ -10,5 +10,6 @@ so.topic: reference
 
 Change the interval for each run of the Sync Engine
 
-**Parameters:**
- - **interval** The run interval for the engine
+## Parameters
+
+* **interval** The run interval for the engine

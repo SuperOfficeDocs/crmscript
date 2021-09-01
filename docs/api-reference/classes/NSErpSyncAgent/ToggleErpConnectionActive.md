@@ -10,8 +10,9 @@ so.topic: reference
 
 Toggles the Active state of the connection
 
-**Parameters:**
- - **erpConnectionId** Primary key of the erp connection
+## Parameters
+
+* **erpConnectionId** Primary key of the erp connection
 
 **Returns:** String[]
 

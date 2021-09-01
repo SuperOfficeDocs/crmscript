@@ -11,7 +11,7 @@ so.topic: reference
 The associate that owns this block
 
 **Parameter:** 
- - **associateId** Integer
+* **associateId** Integer
 
 ```crmscript
 NSShipmentMessageBlockEntity thing;

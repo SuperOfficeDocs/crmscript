@@ -10,9 +10,10 @@ so.topic: reference
 
 Get all active status monitors for a specified target
 
-**Parameters:**
- - **id** Identity of target type(contact identity, project identity etc.)
- - **type** Type to get status monitors for("contact", "project", etc.)
+## Parameters
+
+* **id** Identity of target type(contact identity, project identity etc.)
+* **type** Type to get status monitors for("contact", "project", etc.)
 
 **Returns:** NSStatusMonitor[]
 

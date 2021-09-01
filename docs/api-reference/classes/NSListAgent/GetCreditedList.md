@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a vector of NSCredited objects.
 
-**Parameters:**
- - **creditedIds** The identifiers of the NSCredited objects
+## Parameters
+
+* **creditedIds** The identifiers of the NSCredited objects
 
 **Returns:** NSCredited[]
 

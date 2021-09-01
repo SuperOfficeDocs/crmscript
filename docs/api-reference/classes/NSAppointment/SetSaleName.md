@@ -11,7 +11,7 @@ so.topic: reference
 Heading of Owning sale, if any. (may be blank)
 
 **Parameter:** 
- - **saleName** String
+* **saleName** String
 
 ```crmscript
 NSAppointment thing;

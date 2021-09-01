@@ -11,7 +11,7 @@ so.topic: reference
 The unique nick name for this user. Used in Service as an alias, similar to Name/Initials.
 
 **Parameter:** 
- - **nickName** String
+* **nickName** String
 
 ```crmscript
 NSUser thing;

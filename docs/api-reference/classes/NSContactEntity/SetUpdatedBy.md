@@ -11,7 +11,7 @@ so.topic: reference
 The user that last updated the contact
 
 **Parameter:** 
- - **updatedBy** NSAssociate
+* **updatedBy** NSAssociate
 
 ```crmscript
 NSContactEntity thing;

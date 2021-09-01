@@ -11,7 +11,7 @@ so.topic: reference
 Array of id's of any attachments (standard + custom for this version)
 
 **Parameter:** 
- - **quoteAttachmentIds** IntegerArray
+* **quoteAttachmentIds** IntegerArray
 
 ```crmscript
 NSQuotePublishDocuments thing;

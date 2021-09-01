@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **languageInfoId** Integer
+* **languageInfoId** Integer
 
 ```crmscript
 NSLanguageInfo thing;

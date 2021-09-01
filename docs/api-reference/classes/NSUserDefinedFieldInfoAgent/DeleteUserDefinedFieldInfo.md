@@ -10,8 +10,9 @@ so.topic: reference
 
 Deletes the NSUserDefinedFieldInfo
   
-**Parameters:**
- - **userDefinedFieldInfoId** The identity of the UserDefinedFieldInfo to delete.
+## Parameters
+
+* **userDefinedFieldInfoId** The identity of the UserDefinedFieldInfo to delete.
 
 ```crmscript
 NSUserDefinedFieldInfoAgent agent;

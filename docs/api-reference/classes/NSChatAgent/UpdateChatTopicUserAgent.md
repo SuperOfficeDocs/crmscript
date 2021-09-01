@@ -10,10 +10,11 @@ so.topic: reference
 
 Update a user's role in a chat topic
 
-**Parameters:**
- - **chatTopicId** Id of the chat topic
- - **username** Associate username or associate id to get.
- - **useragent** User's updated role within the chat topic.
+## Parameters
+
+* **chatTopicId** Id of the chat topic
+* **username** Associate username or associate id to get.
+* **useragent** User's updated role within the chat topic.
 
 **Returns:** NSChatTopicAgent
 

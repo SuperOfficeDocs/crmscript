@@ -11,7 +11,7 @@ so.topic: reference
 Registered when
 
 **Parameter:** 
- - **registered** DateTime
+* **registered** DateTime
 
 ```crmscript
 NSWebhook thing;

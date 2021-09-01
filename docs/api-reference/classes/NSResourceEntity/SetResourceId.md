@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **resourceId** Integer
+* **resourceId** Integer
 
 ```crmscript
 NSResourceEntity thing;

@@ -11,7 +11,7 @@ so.topic: reference
 The Person birth date as Date
 
 **Parameter:** 
- - **birthDate** DateTime
+* **birthDate** DateTime
 
 ```crmscript
 NSPersonEntity thing;

@@ -10,9 +10,10 @@ so.topic: reference
 
 Gets the string value of an Audience configuration parameter with the specified configuration parameter name on the person specified
 
-**Parameters:**
- - **parameterName** The name of the Audience configuration parameter
- - **personId** Id of the person the parameter belongs to
+## Parameters
+
+* **parameterName** The name of the Audience configuration parameter
+* **personId** Id of the person the parameter belongs to
 
 **Returns:** The string value of the Audience configuration parameter.
 

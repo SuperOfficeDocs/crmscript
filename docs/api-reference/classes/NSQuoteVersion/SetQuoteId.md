@@ -11,7 +11,7 @@ so.topic: reference
 Foreign key to CRM quote (the conceptual parent). Owning Quote of this Quote Version.
 
 **Parameter:** 
- - **quoteId** Integer
+* **quoteId** Integer
 
 ```crmscript
 NSQuoteVersion thing;

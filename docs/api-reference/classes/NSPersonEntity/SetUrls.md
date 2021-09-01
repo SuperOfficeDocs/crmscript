@@ -11,7 +11,7 @@ so.topic: reference
 The urls related to this person.
 
 **Parameter:** 
- - **urls** NSEntityElement[]
+* **urls** NSEntityElement[]
 
 ```crmscript
 NSPersonEntity thing;

@@ -11,7 +11,7 @@ so.topic: reference
 The mail subject field of the message
 
 **Parameter:** 
- - **subject** String
+* **subject** String
 
 ```crmscript
 NSShipmentMessageEntity thing;

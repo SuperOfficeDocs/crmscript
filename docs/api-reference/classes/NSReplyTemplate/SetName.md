@@ -11,7 +11,7 @@ so.topic: reference
 The name for this reply template.
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSReplyTemplate thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **productId** Integer
+* **productId** Integer
 
 ```crmscript
 NSProduct thing;

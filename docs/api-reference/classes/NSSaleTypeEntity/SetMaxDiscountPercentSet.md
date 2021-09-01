@@ -11,7 +11,7 @@ so.topic: reference
 Is there a limit, in percent, to the total discount on quotes linked to sales of this type
 
 **Parameter:** 
- - **maxDiscountPercentSet** Bool
+* **maxDiscountPercentSet** Bool
 
 ```crmscript
 NSSaleTypeEntity thing;

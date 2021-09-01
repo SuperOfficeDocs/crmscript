@@ -11,7 +11,7 @@ so.topic: reference
 Icon hint, which should resolve to an icon that is compatible in size with a standard menu or dropdown list font. May be blank.
 
 **Parameter:** 
- - **iconHint** String
+* **iconHint** String
 
 ```crmscript
 NSCommandInfo thing;

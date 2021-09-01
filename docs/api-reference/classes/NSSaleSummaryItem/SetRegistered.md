@@ -11,7 +11,7 @@ so.topic: reference
 Registered date
 
 **Parameter:** 
- - **registered** DateTime
+* **registered** DateTime
 
 ```crmscript
 NSSaleSummaryItem thing;

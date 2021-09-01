@@ -9,7 +9,7 @@ so.topic: reference
 # SetFullName(String fullName)
 
 **Parameter:** 
- - **fullName** String
+* **fullName** String
 
 ```crmscript
 NSContact thing;

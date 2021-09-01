@@ -11,7 +11,7 @@ so.topic: reference
 The person that last updated the appointment.
 
 **Parameter:** 
- - **updatedBy** NSAssociate
+* **updatedBy** NSAssociate
 
 ```crmscript
 NSBlobEntity thing;

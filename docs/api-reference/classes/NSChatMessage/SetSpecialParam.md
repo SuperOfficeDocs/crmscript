@@ -11,7 +11,7 @@ so.topic: reference
 Special parameter for the special_type.
 
 **Parameter:** 
- - **specialParam** String
+* **specialParam** String
 
 ```crmscript
 NSChatMessage thing;

@@ -11,7 +11,7 @@ so.topic: reference
 QuoteLines can be re-ordered, so we must track the ordering.
 
 **Parameter:** 
- - **rank** Integer
+* **rank** Integer
 
 ```crmscript
 NSQuoteLine thing;

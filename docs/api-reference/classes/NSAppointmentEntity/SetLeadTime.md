@@ -11,7 +11,7 @@ so.topic: reference
 Time blocked (minutes) BEFORE starttime
 
 **Parameter:** 
- - **leadTime** TimeSpan
+* **leadTime** TimeSpan
 
 ```crmscript
 NSAppointmentEntity thing;

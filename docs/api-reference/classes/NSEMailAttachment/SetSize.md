@@ -11,7 +11,7 @@ so.topic: reference
 Size of attachment
 
 **Parameter:** 
- - **size** Integer
+* **size** Integer
 
 ```crmscript
 NSEMailAttachment thing;

@@ -10,9 +10,10 @@ so.topic: reference
 
 Get all stored fields for a given tablename/entity and context
 
-**Parameters:**
- - **tablename** The name of the wanted tablename
- - **context** Where is the function called for
+## Parameters
+
+* **tablename** The name of the wanted tablename
+* **context** Where is the function called for
 
 **Returns:** NSFieldValueInfo[]
 

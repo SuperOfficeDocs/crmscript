@@ -11,7 +11,7 @@ so.topic: reference
 Current model information
 
 **Parameter:** 
- - **currentModel** CategorizationModelDetails
+* **currentModel** CategorizationModelDetails
 
 ```crmscript
 NSCategorizationStatusResponse thing;

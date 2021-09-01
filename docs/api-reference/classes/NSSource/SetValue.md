@@ -11,7 +11,7 @@ so.topic: reference
 Set the name of the Source item.
 
 **Parameter:** 
- - **value** String Source name.
+* **value** String Source name.
 
 ```crmscript
 NSSource thing;

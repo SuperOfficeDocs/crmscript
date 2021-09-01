@@ -10,8 +10,9 @@ so.topic: reference
 
 Get state icon and name for the Quote version dialog header.
 
-**Parameters:**
- - **quoteVersionId** Id of the quote version to get the version state for.
+## Parameters
+
+* **quoteVersionId** Id of the quote version to get the version state for.
 
 **Returns:** NSQuoteVersionButtonState
 

@@ -10,5 +10,6 @@ so.topic: reference
 
 Method to save all quick replies for a given associate
 
-**Parameters:**
- - **quickReplies** Array of quick replies
+## Parameters
+
+* **quickReplies** Array of quick replies

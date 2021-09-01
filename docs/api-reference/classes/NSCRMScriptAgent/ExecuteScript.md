@@ -10,9 +10,10 @@ so.topic: reference
 
 Execute a CRMScript with parameters, returning printed output value.
 
-**Parameters:**
- - **cRMScriptId** The id of the CRMScript to execute
- - **parameters** Parameters passed as variables to the CRMScript
+## Parameters
+
+* **cRMScriptId** The id of the CRMScript to execute
+* **parameters** Parameters passed as variables to the CRMScript
 
 **Returns:** String
 

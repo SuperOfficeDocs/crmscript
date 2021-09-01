@@ -11,7 +11,7 @@ so.topic: reference
 Whether this screen chooser is enabled or not
 
 **Parameter:** 
- - **enabled** Bool
+* **enabled** Bool
 
 ```crmscript
 NSTriggerScriptEntity thing;

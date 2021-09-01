@@ -10,9 +10,10 @@ so.topic: reference
 
 Gets the all PriceLists in all currencies, including those inactive. Will return empty array if there is no PriceList available.
 
-**Parameters:**
- - **quoteConnectionId** Primary key of the connection
- - **currencyId** SuperOffice currency id.
+## Parameters
+
+* **quoteConnectionId** Primary key of the connection
+* **currencyId** SuperOffice currency id.
 
 **Returns:** NSPriceList[]
 

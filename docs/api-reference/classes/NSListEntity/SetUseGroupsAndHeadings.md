@@ -11,7 +11,7 @@ so.topic: reference
 Indicates if this list should use groups and headings
 
 **Parameter:** 
- - **useGroupsAndHeadings** Bool
+* **useGroupsAndHeadings** Bool
 
 ```crmscript
 NSListEntity thing;

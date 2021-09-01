@@ -11,7 +11,7 @@ so.topic: reference
 True if this is a mandatory field
 
 **Parameter:** 
- - **mandatory** Bool
+* **mandatory** Bool
 
 ```crmscript
 NSFieldValueInfo thing;

@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSShipmentMessageEntity object.
 
-**Parameters:**
- - **shipmentMessageEntityId** The identifier of the NSShipmentMessageEntity object
+## Parameters
+
+* **shipmentMessageEntityId** The identifier of the NSShipmentMessageEntity object
 
 **Returns:** NSShipmentMessageEntity
 

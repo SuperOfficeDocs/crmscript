@@ -11,7 +11,7 @@ so.topic: reference
 Set the name of the NSProductFamily item.
 
 **Parameter:** 
- - **value** String NSProductFamily name.
+* **value** String NSProductFamily name.
 
 ```crmscript
 NSProductFamily thing;

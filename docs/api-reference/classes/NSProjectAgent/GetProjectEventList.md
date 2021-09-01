@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a vector of NSProjectEvent objects.
 
-**Parameters:**
- - **projectEventIds** The identifiers of the NSProjectEvent objects
+## Parameters
+
+* **projectEventIds** The identifiers of the NSProjectEvent objects
 
 **Returns:** NSProjectEvent[]
 

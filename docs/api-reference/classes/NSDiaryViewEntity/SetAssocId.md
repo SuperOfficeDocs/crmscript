@@ -11,7 +11,7 @@ so.topic: reference
 Owning associate id for the DiaryView.
 
 **Parameter:** 
- - **assocId** Integer
+* **assocId** Integer
 
 ```crmscript
 NSDiaryViewEntity thing;

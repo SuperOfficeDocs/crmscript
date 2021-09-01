@@ -10,12 +10,13 @@ so.topic: reference
 
 Get a list of all roles for the given type of role. MDO List name = 'Roles', extra='0' (roleType) 
 
-**Parameters:**
- - **roleType** Type of role (Employee/External/Anonymous/System)
-     - Enum: 0 = Employee 
-     - Enum: 1 = ExternalUser 
-     - Enum: 2 = Anonymous 
-     - Enum: 3 = System 
+## Parameters
+
+* **roleType** Type of role (Employee/External/Anonymous/System)
+* Enum: 0 = Employee 
+* Enum: 1 = ExternalUser 
+* Enum: 2 = Anonymous 
+* Enum: 3 = System 
 
 **Returns:** NSSelectableMDOListItem[]
 

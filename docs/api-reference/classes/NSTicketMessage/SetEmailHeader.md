@@ -11,7 +11,7 @@ so.topic: reference
 The email header is saved in this field as raw text
 
 **Parameter:** 
- - **emailHeader** String
+* **emailHeader** String
 
 ```crmscript
 NSTicketMessage thing;

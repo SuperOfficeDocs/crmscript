@@ -10,6 +10,7 @@ so.topic: reference
 
 Removes members from the selection as  specified in the collection of entity ids. The ids are selection member ids (selection member primary key)
 
-**Parameters:**
- - **selectionId** The id of the selection where to members will be removed.
- - **selectionMemberIds** Selection member primary keys
+## Parameters
+
+* **selectionId** The id of the selection where to members will be removed.
+* **selectionMemberIds** Selection member primary keys

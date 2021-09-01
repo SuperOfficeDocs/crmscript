@@ -11,7 +11,7 @@ so.topic: reference
 Summed amount for all open within the period in default currency for the installation
 
 **Parameter:** 
- - **openTotalBaseCurrency** Float
+* **openTotalBaseCurrency** Float
 
 ```crmscript
 NSSaleSummary thing;

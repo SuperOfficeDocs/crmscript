@@ -11,7 +11,7 @@ so.topic: reference
 Set the tooltip description for the NSMrMrs list item.
 
 **Parameter:** 
- - **tooltip** String NSMrMrs tooltip description.
+* **tooltip** String NSMrMrs tooltip description.
 
 ```crmscript
 NSMrMrs thing;

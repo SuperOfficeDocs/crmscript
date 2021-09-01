@@ -11,7 +11,7 @@ so.topic: reference
 MDO List provider name for list fields
 
 **Parameter:** 
- - **listName** String
+* **listName** String
 
 ```crmscript
 NSFieldMetadata thing;

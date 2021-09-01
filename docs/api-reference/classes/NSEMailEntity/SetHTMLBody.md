@@ -11,7 +11,7 @@ so.topic: reference
 Body formatted in HTML
 
 **Parameter:** 
- - **hTMLBody** String
+* **hTMLBody** String
 
 ```crmscript
 NSEMailEntity thing;

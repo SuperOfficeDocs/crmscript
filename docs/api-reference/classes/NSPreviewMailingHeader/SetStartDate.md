@@ -11,7 +11,7 @@ so.topic: reference
 The date and time when to start this shipment
 
 **Parameter:** 
- - **startDate** DateTime
+* **startDate** DateTime
 
 ```crmscript
 NSPreviewMailingHeader thing;

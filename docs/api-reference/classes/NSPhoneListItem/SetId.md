@@ -11,7 +11,7 @@ so.topic: reference
 The contact or person's id
 
 **Parameter:** 
- - **id** Integer
+* **id** Integer
 
 ```crmscript
 NSPhoneListItem thing;

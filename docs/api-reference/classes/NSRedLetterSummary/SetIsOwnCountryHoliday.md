@@ -11,7 +11,7 @@ so.topic: reference
 If true, this day is a holiday in the country of the given associate.
 
 **Parameter:** 
- - **isOwnCountryHoliday** Bool
+* **isOwnCountryHoliday** Bool
 
 ```crmscript
 NSRedLetterSummary thing;

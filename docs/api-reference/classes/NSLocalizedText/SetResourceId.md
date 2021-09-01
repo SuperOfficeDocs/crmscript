@@ -11,7 +11,7 @@ so.topic: reference
 Resource ID
 
 **Parameter:** 
- - **resourceId** Integer
+* **resourceId** Integer
 
 ```crmscript
 NSLocalizedText thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Used to store additional information for the delivery systems. 
 
 **Parameter:** 
- - **extraInfo** String
+* **extraInfo** String
 
 ```crmscript
 NSMailMergeSettings thing;

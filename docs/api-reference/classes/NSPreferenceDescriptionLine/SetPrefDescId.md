@@ -11,7 +11,7 @@ so.topic: reference
 Preference description (parent)
 
 **Parameter:** 
- - **prefDescId** Integer
+* **prefDescId** Integer
 
 ```crmscript
 NSPreferenceDescriptionLine thing;

@@ -10,8 +10,9 @@ so.topic: reference
 
 Get published appointments by appointment ids.
 
-**Parameters:**
- - **appointmentIds** The array of appointment IDs
+## Parameters
+
+* **appointmentIds** The array of appointment IDs
 
 **Returns:** NSAppointment[]
 

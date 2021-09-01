@@ -10,5 +10,6 @@ so.topic: reference
 
 Remove a login session for a CS user
 
-**Parameters:**
- - **loginId** The login id to remove
+## Parameters
+
+* **loginId** The login id to remove

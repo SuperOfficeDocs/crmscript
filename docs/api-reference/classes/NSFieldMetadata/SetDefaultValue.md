@@ -11,7 +11,7 @@ so.topic: reference
 A default value for the field.
 
 **Parameter:** 
- - **defaultValue** String
+* **defaultValue** String
 
 ```crmscript
 NSFieldMetadata thing;

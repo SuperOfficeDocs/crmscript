@@ -10,8 +10,9 @@ so.topic: reference
 
 Toggle the completed status for an activity. Activity may be sale, document or appointment. The changes are saved immediately. 
 
-**Parameters:**
- - **activityIdentifier** May contain of a mix of appointment_id, sale_id, document_id and todo_id
+## Parameters
+
+* **activityIdentifier** May contain of a mix of appointment_id, sale_id, document_id and todo_id
 
 **Returns:** What the result after toggling was.
 

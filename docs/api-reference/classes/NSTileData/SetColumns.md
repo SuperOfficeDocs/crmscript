@@ -11,7 +11,7 @@ so.topic: reference
 Column information
 
 **Parameter:** 
- - **columns** NSArchiveColumnInfo[]
+* **columns** NSArchiveColumnInfo[]
 
 ```crmscript
 NSTileData thing;

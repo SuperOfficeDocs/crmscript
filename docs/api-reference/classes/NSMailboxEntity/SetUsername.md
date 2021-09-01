@@ -11,7 +11,7 @@ so.topic: reference
 The username used to log onto the mail account
 
 **Parameter:** 
- - **username** String
+* **username** String
 
 ```crmscript
 NSMailboxEntity thing;

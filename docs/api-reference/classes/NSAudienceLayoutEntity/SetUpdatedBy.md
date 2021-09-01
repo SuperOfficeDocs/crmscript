@@ -11,7 +11,7 @@ so.topic: reference
 Name of the person that last updated the Audience layout
 
 **Parameter:** 
- - **updatedBy** NSAssociate
+* **updatedBy** NSAssociate
 
 ```crmscript
 NSAudienceLayoutEntity thing;

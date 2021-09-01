@@ -11,7 +11,7 @@ so.topic: reference
 The value for the data value
 
 **Parameter:** 
- - **value** Float
+* **value** Float
 
 ```crmscript
 NSStatisticsDataValue thing;

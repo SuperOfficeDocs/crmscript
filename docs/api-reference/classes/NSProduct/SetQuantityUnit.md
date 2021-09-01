@@ -11,7 +11,7 @@ so.topic: reference
 What is the unit (meter, ton, bushel, microsecond, gradus, τρυβλίον, 五合枡, دونم or whatever); Connector handles conversion relative to PriceUnit if they are different
 
 **Parameter:** 
- - **quantityUnit** String
+* **quantityUnit** String
 
 ```crmscript
 NSProduct thing;

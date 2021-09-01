@@ -11,7 +11,7 @@ so.topic: reference
 Alphanumeric user field
 
 **Parameter:** 
- - **number1** String
+* **number1** String
 
 ```crmscript
 NSContactEntity thing;

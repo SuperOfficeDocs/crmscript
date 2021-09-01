@@ -11,7 +11,7 @@ so.topic: reference
 If true, then this field cannot be set readwrite or mandatory: It's bound to be readonly
 
 **Parameter:** 
- - **restrictEdit** Bool
+* **restrictEdit** Bool
 
 ```crmscript
 NSQuoteLineConfiguration thing;

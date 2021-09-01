@@ -10,9 +10,10 @@ so.topic: reference
 
 Change country regenerates the default values and localized information such as phone number and address format for this entity.
 
-**Parameters:**
- - **personEntity** The NSPersonEntity to change country on
- - **toCountryId** The country to switch to
+## Parameters
+
+* **personEntity** The NSPersonEntity to change country on
+* **toCountryId** The country to switch to
 
 **Returns:** The NSPersonEntity
 

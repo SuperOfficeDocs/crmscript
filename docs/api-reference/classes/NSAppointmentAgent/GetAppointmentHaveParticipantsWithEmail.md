@@ -10,8 +10,9 @@ so.topic: reference
 
 GetAppointmentHaveParticipantsWithEmail will check if any of the participants is marked to receive emails on this appointment. If no participants are defined, false will be returned.
 
-**Parameters:**
- - **appointmentId** The appointmentId.
+## Parameters
+
+* **appointmentId** The appointmentId.
 
 **Returns:** Return true or false.
 

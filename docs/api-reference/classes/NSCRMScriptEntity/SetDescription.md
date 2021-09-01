@@ -11,7 +11,7 @@ so.topic: reference
 Optional description of what this script is used for.
 
 **Parameter:** 
- - **description** String
+* **description** String
 
 ```crmscript
 NSCRMScriptEntity thing;

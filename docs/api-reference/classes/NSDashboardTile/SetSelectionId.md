@@ -11,7 +11,7 @@ so.topic: reference
 The selection that defines the data filter/restrictions
 
 **Parameter:** 
- - **selectionId** Integer
+* **selectionId** Integer
 
 ```crmscript
 NSDashboardTile thing;

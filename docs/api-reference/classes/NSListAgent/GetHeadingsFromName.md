@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets headings for list resolved by the provided name.
 
-**Parameters:**
- - **name** The name of the list to look up.
+## Parameters
+
+* **name** The name of the list to look up.
 
 **Returns:** NSHeadingEntity[]
 

@@ -11,7 +11,7 @@ so.topic: reference
 This carrier is currently not used
 
 **Parameter:** 
- - **dummy** String
+* **dummy** String
 
 ```crmscript
 NSCategoryGuess thing;

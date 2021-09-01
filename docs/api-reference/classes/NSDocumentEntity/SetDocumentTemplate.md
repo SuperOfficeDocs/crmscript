@@ -11,7 +11,7 @@ so.topic: reference
 The template type of the document.
 
 **Parameter:** 
- - **documentTemplate** NSDocumentTemplate
+* **documentTemplate** NSDocumentTemplate
 
 ```crmscript
 NSDocumentEntity thing;

@@ -9,7 +9,7 @@ so.topic: reference
 # SetAlarms(NSAlarmData[] alarms)
 
 **Parameter:** 
- - **alarms** NSAlarmData[]
+* **alarms** NSAlarmData[]
 
 ```crmscript
 NSMultiAlarmData thing;

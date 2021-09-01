@@ -11,7 +11,7 @@ so.topic: reference
 Is this a mandatory field?
 
 **Parameter:** 
- - **mandatory** Bool
+* **mandatory** Bool
 
 ```crmscript
 NSQuoteLineConfiguration thing;

@@ -11,7 +11,7 @@ so.topic: reference
 The SM document used as template for this mailing
 
 **Parameter:** 
- - **documentMessage** Integer
+* **documentMessage** Integer
 
 ```crmscript
 NSShipmentMessageEntity thing;

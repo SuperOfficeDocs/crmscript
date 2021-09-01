@@ -11,7 +11,7 @@ so.topic: reference
 Set the primary key (id) for the SelectionCategory
 
 **Parameter:** 
- - **id** Integer SelectionCategory id.
+* **id** Integer SelectionCategory id.
 
 ```crmscript
 NSSelectionCategory thing;

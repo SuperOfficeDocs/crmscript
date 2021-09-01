@@ -10,9 +10,10 @@ so.topic: reference
 
 Method that returns a array of associate , based on DiaryGroupType and groupId. The different types are, Userdefined, Usergroup and ResourceHeadings
 
-**Parameters:**
- - **groupId** Id of the group
- - **type** The type of group. See DiaryGroupType
+## Parameters
+
+* **groupId** Id of the group
+* **type** The type of group. See DiaryGroupType
 
 **Returns:** NSAssociate[]
 

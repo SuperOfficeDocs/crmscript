@@ -11,7 +11,7 @@ so.topic: reference
 ej users request signature
 
 **Parameter:** 
- - **requestSignature** String
+* **requestSignature** String
 
 ```crmscript
 NSUser thing;

@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a vector of Department objects.
 
-**Parameters:**
- - **departmentIds** The identifiers of the NSDepartment objects
+## Parameters
+
+* **departmentIds** The identifiers of the NSDepartment objects
 
 **Returns:** NSDepartment[]
 

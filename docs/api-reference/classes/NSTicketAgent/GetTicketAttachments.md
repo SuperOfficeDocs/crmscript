@@ -10,8 +10,9 @@ so.topic: reference
 
 Get attachment infos for all attachments connected to messages in specified ticket
 
-**Parameters:**
- - **ticketEntityId** The id of the ticket to get attachment infos from
+## Parameters
+
+* **ticketEntityId** The id of the ticket to get attachment infos from
 
 **Returns:** NSAttachmentEntity[]
 

@@ -11,7 +11,7 @@ so.topic: reference
 Preference key name
 
 **Parameter:** 
- - **key** String
+* **key** String
 
 ```crmscript
 NSPreferenceDescription thing;

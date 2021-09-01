@@ -10,8 +10,9 @@ so.topic: reference
 
 Get a summary of the current ErpSync configuration/setup
 
-**Parameters:**
- - **erpSyncConnectionId** The ID of the ErpSync connection for which information is sought
+## Parameters
+
+* **erpSyncConnectionId** The ID of the ErpSync connection for which information is sought
 
 **Returns:** NSErpSyncConnectionSummary
 

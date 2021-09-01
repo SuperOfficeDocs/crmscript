@@ -12,8 +12,8 @@ What kind of data is in this row
 
 **Returns:** Integer
 
-     - Enum: 0 = Style 
-     - Enum: 1 = Options 
+* Enum: 0 = Style 
+* Enum: 1 = Options 
 
 ```crmscript
 NSCustomerCenterConfig thing;

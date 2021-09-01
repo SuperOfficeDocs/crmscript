@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a vector of ReasonStalled objects.
 
-**Parameters:**
- - **reasonStalledIds** The identifiers of the NSReasonStalled objects
+## Parameters
+
+* **reasonStalledIds** The identifiers of the NSReasonStalled objects
 
 **Returns:** NSReasonStalled[]
 

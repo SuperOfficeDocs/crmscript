@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a vector of NSNavigatorCompany objects.
 
-**Parameters:**
- - **navigatorCompanyIds** The identifiers of the NSNavigatorCompany objects
+## Parameters
+
+* **navigatorCompanyIds** The identifiers of the NSNavigatorCompany objects
 
 **Returns:** NSNavigatorCompany[]
 

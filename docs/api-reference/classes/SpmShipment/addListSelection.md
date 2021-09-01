@@ -12,5 +12,5 @@ Adds a selection list to shipment.
 
 ## Parameters
 
- - p0: id, id of selection list to add
+* p0: id, id of selection list to add
 

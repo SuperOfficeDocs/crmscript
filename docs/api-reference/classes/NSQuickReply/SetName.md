@@ -11,7 +11,7 @@ so.topic: reference
 The short name of the quick reply
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSQuickReply thing;

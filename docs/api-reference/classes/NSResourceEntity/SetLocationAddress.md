@@ -11,7 +11,7 @@ so.topic: reference
 Address of location, if this is a resource that is a location
 
 **Parameter:** 
- - **locationAddress** String
+* **locationAddress** String
 
 ```crmscript
 NSResourceEntity thing;

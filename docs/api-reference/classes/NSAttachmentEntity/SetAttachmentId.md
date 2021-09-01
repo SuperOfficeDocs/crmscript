@@ -11,7 +11,7 @@ so.topic: reference
 The primary key (auto-incremented)
 
 **Parameter:** 
- - **attachmentId** Integer
+* **attachmentId** Integer
 
 ```crmscript
 NSAttachmentEntity thing;

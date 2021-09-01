@@ -10,10 +10,11 @@ so.topic: reference
 
 Recalculates the amount to the new currency.
 
-**Parameters:**
- - **amount** The amount in the old currency
- - **fromCurrency** The old currency name
- - **toCurrency** The new currency name
+## Parameters
+
+* **amount** The amount in the old currency
+* **fromCurrency** The old currency name
+* **toCurrency** The new currency name
 
 **Returns:** Float
 

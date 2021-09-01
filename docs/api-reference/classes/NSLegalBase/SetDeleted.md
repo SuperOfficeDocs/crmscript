@@ -11,7 +11,7 @@ so.topic: reference
 true if the LegalBase is deleted
 
 **Parameter:** 
- - **deleted** Bool
+* **deleted** Bool
 
 ```crmscript
 NSLegalBase thing;

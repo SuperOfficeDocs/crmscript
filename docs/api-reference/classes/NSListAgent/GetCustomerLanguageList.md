@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a vector of NSCustomerLanguage objects.
 
-**Parameters:**
- - **customerLanguageIds** The identifiers of the NSCustomerLanguage objects
+## Parameters
+
+* **customerLanguageIds** The identifiers of the NSCustomerLanguage objects
 
 **Returns:** NSCustomerLanguage[]
 

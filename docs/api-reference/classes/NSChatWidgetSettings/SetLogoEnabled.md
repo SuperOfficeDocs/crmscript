@@ -11,7 +11,7 @@ so.topic: reference
 Indicates if the logo should be shown in the widget
 
 **Parameter:** 
- - **logoEnabled** Bool
+* **logoEnabled** Bool
 
 ```crmscript
 NSChatWidgetSettings thing;

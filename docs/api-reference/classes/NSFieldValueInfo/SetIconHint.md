@@ -11,7 +11,7 @@ so.topic: reference
 The iconhint of the field
 
 **Parameter:** 
- - **iconHint** String
+* **iconHint** String
 
 ```crmscript
 NSFieldValueInfo thing;

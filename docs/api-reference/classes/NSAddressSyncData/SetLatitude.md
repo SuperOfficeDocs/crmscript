@@ -9,7 +9,7 @@ so.topic: reference
 # SetLatitude(Float latitude)
 
 **Parameter:** 
- - **latitude** Float
+* **latitude** Float
 
 ```crmscript
 NSAddressSyncData thing;

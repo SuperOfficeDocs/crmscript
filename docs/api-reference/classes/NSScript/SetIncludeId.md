@@ -11,7 +11,7 @@ so.topic: reference
 A unique name used for including this script in another
 
 **Parameter:** 
- - **includeId** String
+* **includeId** String
 
 ```crmscript
 NSScript thing;

@@ -11,7 +11,7 @@ so.topic: reference
 List to use for populating dropdown or listbox
 
 **Parameter:** 
- - **uDListDefinitionId** Integer
+* **uDListDefinitionId** Integer
 
 ```crmscript
 NSUserDefinedFieldInfo thing;

@@ -10,9 +10,10 @@ so.topic: reference
 
 Get the best language for this person on this template
 
-**Parameters:**
- - **personId** The id of the person
- - **templateId** The id of the template to find languages on
+## Parameters
+
+* **personId** The id of the person
+* **templateId** The id of the template to find languages on
 
 **Returns:** String
 

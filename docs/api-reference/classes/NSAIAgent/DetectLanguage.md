@@ -10,8 +10,9 @@ so.topic: reference
 
 Given a (reasonably short) text, detect the language it is written in
 
-**Parameters:**
- - **text** Text to be analyzed; there may be a cost-per-character so do not send a book here
+## Parameters
+
+* **text** Text to be analyzed; there may be a cost-per-character so do not send a book here
 
 **Returns:** ISO Language code, such as NO, US, ES, FR
 

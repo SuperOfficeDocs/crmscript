@@ -11,7 +11,7 @@ so.topic: reference
 Project status is a list defined by the database administrator. Different statuses of a project may be: “In planning”, “Started”, “Finished” and so on
 
 **Parameter:** 
- - **projectStatus** NSProjectStatus
+* **projectStatus** NSProjectStatus
 
 ```crmscript
 NSProjectEntity thing;

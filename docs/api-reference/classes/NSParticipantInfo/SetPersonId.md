@@ -11,7 +11,7 @@ so.topic: reference
 Person id of the participant if the participant is a person
 
 **Parameter:** 
- - **personId** Integer
+* **personId** Integer
 
 ```crmscript
 NSParticipantInfo thing;

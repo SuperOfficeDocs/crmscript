@@ -11,7 +11,7 @@ so.topic: reference
 Default currency for the installation
 
 **Parameter:** 
- - **baseCurrency** String
+* **baseCurrency** String
 
 ```crmscript
 NSSaleSummary thing;

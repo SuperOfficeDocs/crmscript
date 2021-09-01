@@ -11,7 +11,7 @@ so.topic: reference
 Link to document
 
 **Parameter:** 
- - **documentId** Integer
+* **documentId** Integer
 
 ```crmscript
 NSQuoteVersionAttachment thing;

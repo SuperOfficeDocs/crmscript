@@ -11,7 +11,7 @@ so.topic: reference
 The key used to refer to this purpose, like #Process, #Emarketing etc.
 
 **Parameter:** 
- - **key** String
+* **key** String
 
 ```crmscript
 NSConsentPurpose thing;

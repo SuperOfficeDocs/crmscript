@@ -11,7 +11,7 @@ so.topic: reference
 Last updated by whom
 
 **Parameter:** 
- - **updatedAssociateId** Integer
+* **updatedAssociateId** Integer
 
 ```crmscript
 NSShipmentMessageEntity thing;

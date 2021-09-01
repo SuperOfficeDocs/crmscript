@@ -11,7 +11,7 @@ so.topic: reference
 Id of associate who approved (or rejected approval) for this version
 
 **Parameter:** 
- - **approvedBy** Integer
+* **approvedBy** Integer
 
 ```crmscript
 NSQuoteVersion thing;

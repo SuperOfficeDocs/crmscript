@@ -8,10 +8,10 @@ so.topic: reference
 
 # SetDataRights(DataRights dataRights)
 
-Data rights matrix - defines role's access to data owned by current user, users in same group, and other users.
+Data rights matrix* defines role's access to data owned by current user, users in same group, and other users.
 
 **Parameter:** 
- - **dataRights** DataRights
+* **dataRights** DataRights
 
 ```crmscript
 NSRoleEntity thing;

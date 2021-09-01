@@ -11,7 +11,7 @@ so.topic: reference
 Last name
 
 **Parameter:** 
- - **personLastname** String
+* **personLastname** String
 
 ```crmscript
 NSTicket thing;

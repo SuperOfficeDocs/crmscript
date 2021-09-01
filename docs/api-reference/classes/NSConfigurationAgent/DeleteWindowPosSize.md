@@ -10,5 +10,6 @@ so.topic: reference
 
 Deletes a window and dialog position and size setting.
 
-**Parameters:**
- - **windowPosSizeId** Id of the window and dialog position and size settings item.
+## Parameters
+
+* **windowPosSizeId** Id of the window and dialog position and size settings item.

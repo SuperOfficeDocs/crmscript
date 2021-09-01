@@ -11,7 +11,7 @@ so.topic: reference
 True if the list item is marked as deleted
 
 **Parameter:** 
- - **deleted** Bool
+* **deleted** Bool
 
 ```crmscript
 NSListItemEntity thing;

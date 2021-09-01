@@ -12,10 +12,10 @@ The type of booking the appointment represents
 
 **Returns:** Integer
 
-     - Enum: 0 = Unknown 
-     - Enum: 1 = None 
-     - Enum: 2 = Owner 
-     - Enum: 3 = Participant 
+* Enum: 0 = Unknown 
+* Enum: 1 = None 
+* Enum: 2 = Owner 
+* Enum: 3 = Participant 
 
 ```crmscript
 NSAppointment thing;

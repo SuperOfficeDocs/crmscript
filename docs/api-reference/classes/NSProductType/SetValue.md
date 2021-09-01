@@ -11,7 +11,7 @@ so.topic: reference
 Set the name of the NSProductType item.
 
 **Parameter:** 
- - **value** String NSProductType name.
+* **value** String NSProductType name.
 
 ```crmscript
 NSProductType thing;

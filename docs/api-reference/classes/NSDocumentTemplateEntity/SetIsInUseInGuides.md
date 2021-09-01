@@ -11,7 +11,7 @@ so.topic: reference
 True if the template is in use in a project or sales guide
 
 **Parameter:** 
- - **isInUseInGuides** Bool
+* **isInUseInGuides** Bool
 
 ```crmscript
 NSDocumentTemplateEntity thing;

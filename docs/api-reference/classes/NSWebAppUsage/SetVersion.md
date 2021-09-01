@@ -11,7 +11,7 @@ so.topic: reference
 ??
 
 **Parameter:** 
- - **version** Integer
+* **version** Integer
 
 ```crmscript
 NSWebAppUsage thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Include recipients that are marked with NoMailings
 
 **Parameter:** 
- - **includeNoMailingsRecipient** Bool
+* **includeNoMailingsRecipient** Bool
 
 ```crmscript
 NSMailMergeSettings thing;

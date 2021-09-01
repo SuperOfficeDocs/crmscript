@@ -11,7 +11,7 @@ so.topic: reference
 The relevant or current revision of the quote in the CRM system, if applicable.
 
 **Parameter:** 
- - **cRMQuoteVersion** NSQuoteVersion
+* **cRMQuoteVersion** NSQuoteVersion
 
 ```crmscript
 NSQuoteContext thing;

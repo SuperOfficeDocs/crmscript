@@ -9,7 +9,7 @@ so.topic: reference
 # SetParticipants(ParticipantSyncData[] participants)
 
 **Parameter:** 
- - **participants** ParticipantSyncData[]
+* **participants** ParticipantSyncData[]
 
 ```crmscript
 NSAppointmentSyncData thing;

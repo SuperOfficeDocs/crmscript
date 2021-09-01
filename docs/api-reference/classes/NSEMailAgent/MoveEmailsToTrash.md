@@ -10,5 +10,6 @@ so.topic: reference
 
 Delete specified mail items and move to the Trash folder
 
-**Parameters:**
- - **ids** The e-mails to handle
+## Parameters
+
+* **ids** The e-mails to handle

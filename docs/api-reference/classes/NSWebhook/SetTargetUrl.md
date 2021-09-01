@@ -11,7 +11,7 @@ so.topic: reference
 Destination to POST event info to. URL for webhooks. Id for CRM scripts
 
 **Parameter:** 
- - **targetUrl** String
+* **targetUrl** String
 
 ```crmscript
 NSWebhook thing;

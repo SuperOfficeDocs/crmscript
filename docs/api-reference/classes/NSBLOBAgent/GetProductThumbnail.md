@@ -10,8 +10,9 @@ so.topic: reference
 
 Returns the product thumbnail that is displayed in the CRM application.
 
-**Parameters:**
- - **productId** The product id of the product the thumbnail belongs to.
+## Parameters
+
+* **productId** The product id of the product the thumbnail belongs to.
 
 **Returns:** NSImage
 

@@ -10,8 +10,9 @@ so.topic: reference
 
 Get all available fields for a given tablename/entity
 
-**Parameters:**
- - **tablename** The name of the wanted tablename
+## Parameters
+
+* **tablename** The name of the wanted tablename
 
 **Returns:** NSFieldValueInfo[]
 

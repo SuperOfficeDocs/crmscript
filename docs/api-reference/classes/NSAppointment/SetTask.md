@@ -11,7 +11,7 @@ so.topic: reference
 Task comprises the different types of activities, like “Phone call”, “Meeting” and so on.
 
 **Parameter:** 
- - **task** String
+* **task** String
 
 ```crmscript
 NSAppointment thing;

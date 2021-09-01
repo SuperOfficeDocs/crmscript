@@ -10,10 +10,11 @@ so.topic: reference
 
 Gets a selectable MDO list of the headings for this list item
 
-**Parameters:**
- - **udListDefinitionName** The name of the list definition, indicating which list to delete the items from.
- - **listItemId** The id of the list item
- - **showDeleted** Set to true if you want deleted headings
+## Parameters
+
+* **udListDefinitionName** The name of the list definition, indicating which list to delete the items from.
+* **listItemId** The id of the list item
+* **showDeleted** Set to true if you want deleted headings
 
 **Returns:** NSSelectableMDOListItem[]
 

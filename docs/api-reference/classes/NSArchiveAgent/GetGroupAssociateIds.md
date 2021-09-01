@@ -10,8 +10,9 @@ so.topic: reference
 
 Returns the  associate ids that belongs to the given groups
 
-**Parameters:**
- - **groupIds** Array of group ids
+## Parameters
+
+* **groupIds** Array of group ids
 
 **Returns:** Array of associate ids
 

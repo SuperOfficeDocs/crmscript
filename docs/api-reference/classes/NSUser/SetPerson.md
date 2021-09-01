@@ -11,7 +11,7 @@ so.topic: reference
 The person associated with this user. Detailed information about the user
 
 **Parameter:** 
- - **person** NSPerson
+* **person** NSPerson
 
 ```crmscript
 NSUser thing;

@@ -9,7 +9,7 @@ so.topic: reference
 # SetIsAssignment(Bool isAssignment)
 
 **Parameter:** 
- - **isAssignment** Bool
+* **isAssignment** Bool
 
 ```crmscript
 NSAppointmentSyncData thing;

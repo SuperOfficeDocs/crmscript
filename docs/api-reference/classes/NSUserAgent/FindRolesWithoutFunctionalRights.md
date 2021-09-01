@@ -10,8 +10,9 @@ so.topic: reference
 
 Find all roles without a given set of functional rights. The roles matched must not contain any of the specified functional rights. 
 
-**Parameters:**
- - **functionalRightNames** An array of functional rights names to search for
+## Parameters
+
+* **functionalRightNames** An array of functional rights names to search for
 
 **Returns:** Integer[]
 

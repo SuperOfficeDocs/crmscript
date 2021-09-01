@@ -11,7 +11,7 @@ so.topic: reference
 The hostname or IP address for the customer.
 
 **Parameter:** 
- - **customerHost** String
+* **customerHost** String
 
 ```crmscript
 NSChatSessionEntity thing;

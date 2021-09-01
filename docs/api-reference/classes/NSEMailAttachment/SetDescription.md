@@ -11,7 +11,7 @@ so.topic: reference
 Name/description
 
 **Parameter:** 
- - **description** String
+* **description** String
 
 ```crmscript
 NSEMailAttachment thing;

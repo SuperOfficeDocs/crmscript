@@ -9,7 +9,7 @@ so.topic: reference
 
 # SetColumnData()
 
-Dictionary of column name - column data items. Each column data item contains a display value, a tooltip hint, a link hint, and an ORDERBY value.
+Dictionary of column name* column data items. Each column data item contains a display value, a tooltip hint, a link hint, and an ORDERBY value.
 
 The display value is encoded by the **CultureDataFormatter** and can be decoded or localized by that class. All other values are optional.
 

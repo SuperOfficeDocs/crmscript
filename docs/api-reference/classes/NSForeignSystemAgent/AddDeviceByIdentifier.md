@@ -10,10 +10,11 @@ so.topic: reference
 
 Adds a new NSForeignDevice with deviceName that belongs to the application with applicationName, with an optional device-specific identifier.
 
-**Parameters:**
- - **applicationName** The name of the foreign application.
- - **deviceName** The name of the foreign device.
- - **deviceIdentifier** Unique id of device (Palm pilot device ID, version number, etc)
+## Parameters
+
+* **applicationName** The name of the foreign application.
+* **deviceName** The name of the foreign device.
+* **deviceIdentifier** Unique id of device (Palm pilot device ID, version number, etc)
 
 **Returns:** NSForeignDevice.
 

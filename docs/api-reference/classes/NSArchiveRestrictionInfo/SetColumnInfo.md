@@ -11,7 +11,7 @@ so.topic: reference
 Optional complete NSArchiveColumnInfo for this restriction; in that case, ColumnInfo.Name == this.Name will always be true
 
 **Parameter:** 
- - **columnInfo** NSArchiveColumnInfo
+* **columnInfo** NSArchiveColumnInfo
 
 ```crmscript
 NSArchiveRestrictionInfo thing;

@@ -11,13 +11,13 @@ so.topic: reference
 The sale's status, indicating whether the sale is open(1), sold(2) or lost(3).
 
 **Parameter:** 
- - **status** Integer
-     - Enum: 0 = Unknown 
-     - Enum: 1 = Open 
-     - Enum: 2 = Sold 
-     - Enum: 3 = Lost 
-     - Enum: 4 = Stalled 
-     - Enum: 1000 = SaintAll 
+* **status** Integer
+* Enum: 0 = Unknown 
+* Enum: 1 = Open 
+* Enum: 2 = Sold 
+* Enum: 3 = Lost 
+* Enum: 4 = Stalled 
+* Enum: 1000 = SaintAll 
 
 ```crmscript
 NSSaleSummaryItem thing;

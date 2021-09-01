@@ -11,7 +11,7 @@ so.topic: reference
 The date the version was sent to the customer.
 
 **Parameter:** 
- - **sentDate** DateTime
+* **sentDate** DateTime
 
 ```crmscript
 NSQuoteVersion thing;

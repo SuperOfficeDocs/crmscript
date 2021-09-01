@@ -11,7 +11,7 @@ so.topic: reference
 If the sale has been changed, the carrier will be added.
 
 **Parameter:** 
- - **changedSale** NSSale
+* **changedSale** NSSale
 
 ```crmscript
 NSQuoteVersionValidated thing;

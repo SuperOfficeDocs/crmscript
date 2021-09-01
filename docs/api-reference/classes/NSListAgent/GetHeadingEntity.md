@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSHeadingEntity object.
 
-**Parameters:**
- - **headingEntityId** The identifier of the NSHeadingEntity object
+## Parameters
+
+* **headingEntityId** The identifier of the NSHeadingEntity object
 
 **Returns:** NSHeadingEntity
 

@@ -10,9 +10,10 @@ so.topic: reference
 
 Set rank order on status monitors
 
-**Parameters:**
- - **type** Type of status monitors to reorder ("contact", "project", etc.)
- - **itemsIds** The ids of the items in the order you want
+## Parameters
+
+* **type** Type of status monitors to reorder ("contact", "project", etc.)
+* **itemsIds** The ids of the items in the order you want
 
 ```crmscript
 NSSaintAgent agent;

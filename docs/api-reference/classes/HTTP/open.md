@@ -13,7 +13,7 @@ This function opens an url and returns the result as a Byte array.
 
 ## Parameters
 
- - p_url: The url to open. http://.....
+* p_url: The url to open. http://.....
 
 ## Example
 
@@ -25,4 +25,3 @@ This function opens an url and returns the result as a Byte array.
       print(h.getErrorMessage());
     else
       print(String(b));
-

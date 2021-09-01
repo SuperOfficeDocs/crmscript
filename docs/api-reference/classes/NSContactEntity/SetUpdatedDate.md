@@ -11,7 +11,7 @@ so.topic: reference
 Date last updated
 
 **Parameter:** 
- - **updatedDate** DateTime
+* **updatedDate** DateTime
 
 ```crmscript
 NSContactEntity thing;

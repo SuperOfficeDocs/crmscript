@@ -11,7 +11,7 @@ so.topic: reference
 If 1, use person's address for mailing instead of company address
 
 **Parameter:** 
- - **usePersonAddress** Bool
+* **usePersonAddress** Bool
 
 ```crmscript
 NSPerson thing;

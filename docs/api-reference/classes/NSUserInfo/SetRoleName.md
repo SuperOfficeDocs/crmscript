@@ -9,7 +9,7 @@ so.topic: reference
 # SetRoleName(String roleName)
 
 **Parameter:** 
- - **roleName** String
+* **roleName** String
 
 ```crmscript
 NSUserInfo thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Updates the existing NSUser or creates a new NSUser if the id parameter is 0
 
 **Parameters**:
- - **user** The NSUser to save.
+* **user** The NSUser to save.
 
 **Returns:** NSUser
 

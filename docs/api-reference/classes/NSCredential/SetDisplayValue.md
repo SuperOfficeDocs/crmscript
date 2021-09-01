@@ -11,7 +11,7 @@ so.topic: reference
 The value displayed to the user. this will typically be the users login name in active directory.
 
 **Parameter:** 
- - **displayValue** String
+* **displayValue** String
 
 ```crmscript
 NSCredential thing;

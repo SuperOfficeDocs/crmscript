@@ -11,7 +11,7 @@ so.topic: reference
 Associate who owns this tab order
 
 **Parameter:** 
- - **associateId** Integer
+* **associateId** Integer
 
 ```crmscript
 NSTabOrder thing;

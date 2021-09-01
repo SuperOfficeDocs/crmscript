@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **screenChooserId** Integer
+* **screenChooserId** Integer
 
 ```crmscript
 NSTriggerScriptEntity thing;

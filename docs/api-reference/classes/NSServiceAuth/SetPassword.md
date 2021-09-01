@@ -11,7 +11,7 @@ so.topic: reference
 The (decrypted) password or token
 
 **Parameter:** 
- - **password** String
+* **password** String
 
 ```crmscript
 NSServiceAuth thing;

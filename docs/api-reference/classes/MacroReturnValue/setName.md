@@ -13,5 +13,5 @@ This function sets the name of the macro return value.
 
 ## Parameters
 
- - p0: the name
+* p0: the name
 

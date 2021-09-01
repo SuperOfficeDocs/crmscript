@@ -11,7 +11,7 @@ so.topic: reference
 The primary key (auto-incremented)
 
 **Parameter:** 
- - **replyTemplateId** Integer
+* **replyTemplateId** Integer
 
 ```crmscript
 NSReplyTemplate thing;

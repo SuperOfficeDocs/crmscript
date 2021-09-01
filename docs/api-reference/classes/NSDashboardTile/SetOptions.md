@@ -11,7 +11,7 @@ so.topic: reference
 The tile options
 
 **Parameter:** 
- - **options** NSDashboardTileOption[]
+* **options** NSDashboardTileOption[]
 
 ```crmscript
 NSDashboardTile thing;

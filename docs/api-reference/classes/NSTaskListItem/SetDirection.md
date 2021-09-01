@@ -11,11 +11,11 @@ so.topic: reference
 1 = incoming, 2 = outgoing, see EAppntDirection
 
 **Parameter:** 
- - **direction** Integer
-     - Enum: 0 = Unknown 
-     - Enum: 1 = Incoming 
-     - Enum: 2 = Outgoing 
-     - Enum: 3 = SaintAll 
+* **direction** Integer
+* Enum: 0 = Unknown 
+* Enum: 1 = Incoming 
+* Enum: 2 = Outgoing 
+* Enum: 3 = SaintAll 
 
 ```crmscript
 NSTaskListItem thing;

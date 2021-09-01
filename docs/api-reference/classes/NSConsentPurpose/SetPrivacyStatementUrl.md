@@ -11,7 +11,7 @@ so.topic: reference
 Url referencing the actual privacy statement
 
 **Parameter:** 
- - **privacyStatementUrl** String
+* **privacyStatementUrl** String
 
 ```crmscript
 NSConsentPurpose thing;

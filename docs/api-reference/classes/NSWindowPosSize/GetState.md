@@ -12,9 +12,9 @@ Normal = 0, Maximized = 1, Minimized = 2
 
 **Returns:** Integer
 
-     - Enum: 0 = Normal 
-     - Enum: 1 = Maximized 
-     - Enum: 2 = Minimized 
+* Enum: 0 = Normal 
+* Enum: 1 = Maximized 
+* Enum: 2 = Minimized 
 
 ```crmscript
 NSWindowPosSize thing;

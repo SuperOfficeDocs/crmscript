@@ -10,8 +10,9 @@ so.topic: reference
 
 Return an given array of user defined field identified by the ids.
 
-**Parameters:**
- - **ids** Array of user defined field ids
+## Parameters
+
+* **ids** Array of user defined field ids
 
 **Returns:** NSUserDefinedFieldInfo[]
 

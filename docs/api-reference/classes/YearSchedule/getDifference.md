@@ -12,8 +12,8 @@ Get difference between two given times. The function returns a timespan.
 
 ## Parameters
 
- - from: Count from this date
- - to: Count to this date
+* from: Count from this date
+* to: Count to this date
 
 Counting will skip inactive periodes, defined by the different weekschedules that may be crossed.
 

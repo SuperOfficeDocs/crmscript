@@ -12,10 +12,10 @@ A bitmask of flags.
 
 **Returns:** Integer
 
-     - Enum: 0 = Unknown 
-     - Enum: 1 = External 
-     - Enum: 2 = Default 
-     - Enum: 4 = AlertSchedule 
+* Enum: 0 = Unknown 
+* Enum: 1 = External 
+* Enum: 2 = Default 
+* Enum: 4 = AlertSchedule 
 
 ```crmscript
 NSTicketPriorityEntity thing;

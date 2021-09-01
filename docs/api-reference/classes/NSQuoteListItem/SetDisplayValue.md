@@ -11,7 +11,7 @@ so.topic: reference
 List item text to display.
 
 **Parameter:** 
- - **displayValue** String
+* **displayValue** String
 
 ```crmscript
 NSQuoteListItem thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Register message views?
 
 **Parameter:** 
- - **registerViews** Bool
+* **registerViews** Bool
 
 ```crmscript
 NSShipmentMessageEntity thing;

@@ -20,4 +20,3 @@ Supports both http and https. Returns the result in a NSStream.
       print(h.getErrorMessage());
     else
       print(String(b));
-

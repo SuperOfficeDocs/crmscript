@@ -10,8 +10,9 @@ so.topic: reference
 
 This entity supports Soft Delete. Call this method to Undelete a previously soft-deleted record
 
-**Parameters:**
- - **id** The primary key of the entity to undelete
+## Parameters
+
+* **id** The primary key of the entity to undelete
 
 **Returns:**
 

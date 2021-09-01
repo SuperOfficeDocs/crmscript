@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSSaleType object.
 
-**Parameters:**
- - **saleTypeId** The identifier of the NSSaleType object
+## Parameters
+
+* **saleTypeId** The identifier of the NSSaleType object
 
 **Returns:** NSSaleType
 

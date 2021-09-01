@@ -9,7 +9,7 @@ so.topic: reference
 # SetVisibleId(Integer visibleId)
 
 **Parameter:** 
- - **visibleId** Integer
+* **visibleId** Integer
 
 ```crmscript
 NSVisibleFor thing;

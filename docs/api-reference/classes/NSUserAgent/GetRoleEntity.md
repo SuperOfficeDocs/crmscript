@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSRoleEntity object.
 
-**Parameters:**
- - **roleEntityId** The identifier of the NSRoleEntity object
+## Parameters
+
+* **roleEntityId** The identifier of the NSRoleEntity object
 
 **Returns:** NSRoleEntity
 

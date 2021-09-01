@@ -11,7 +11,7 @@ so.topic: reference
 Filter out duplicate members based on company?
 
 **Parameter:** 
- - **companyUnique** Bool
+* **companyUnique** Bool
 
 ```crmscript
 NSSelectionEntity thing;

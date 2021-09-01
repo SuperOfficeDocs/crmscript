@@ -12,8 +12,8 @@ Type of publishing action, 0 = Unknown, 1 = to external persons
 
 **Returns:** Integer
 
-     - Enum: 0 = Undefined 
-     - Enum: 1 = External 
+* Enum: 0 = Undefined 
+* Enum: 1 = External 
 
 ```crmscript
 NSProjectEventEntity thing;

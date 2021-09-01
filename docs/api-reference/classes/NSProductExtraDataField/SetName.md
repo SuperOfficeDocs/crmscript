@@ -11,7 +11,7 @@ so.topic: reference
 Label for the field
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSProductExtraDataField thing;

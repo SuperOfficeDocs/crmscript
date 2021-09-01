@@ -11,7 +11,7 @@ so.topic: reference
 The CRMscript code for this event handler
 
 **Parameter:** 
- - **source** String
+* **source** String
 
 ```crmscript
 NSTriggerScriptEntity thing;

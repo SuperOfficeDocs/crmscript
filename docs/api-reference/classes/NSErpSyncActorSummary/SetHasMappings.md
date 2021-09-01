@@ -11,7 +11,7 @@ so.topic: reference
 Does this actor type have field mappings
 
 **Parameter:** 
- - **hasMappings** Bool
+* **hasMappings** Bool
 
 ```crmscript
 NSErpSyncActorSummary thing;

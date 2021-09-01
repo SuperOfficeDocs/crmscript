@@ -11,7 +11,7 @@ so.topic: reference
 The owner of the suggested activity. Always the same as the sales owner.
 
 **Parameter:** 
- - **associate** NSAssociate
+* **associate** NSAssociate
 
 ```crmscript
 NSSuggestedAppointment thing;

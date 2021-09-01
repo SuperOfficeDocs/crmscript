@@ -10,5 +10,6 @@ so.topic: reference
 
 Removes the binary objects linked to the batch task, the links themselves and the batch task.
 
-**Parameters:**
- - **batchTaskId** The ID of the batchtask that created the output data
+## Parameters
+
+* **batchTaskId** The ID of the batchtask that created the output data

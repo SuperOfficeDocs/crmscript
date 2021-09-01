@@ -10,8 +10,9 @@ so.topic: reference
 
 Get a product with the given database id
 
-**Parameters:**
- - **productId** The database id of the product
+## Parameters
+
+* **productId** The database id of the product
 
 **Returns:** NSProduct
 

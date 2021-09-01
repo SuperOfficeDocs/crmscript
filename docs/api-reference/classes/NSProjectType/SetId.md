@@ -11,7 +11,7 @@ so.topic: reference
 Set the primary key (id) for the NSProjectType
 
 **Parameter:** 
- - **id** Integer NSProjectType id.
+* **id** Integer NSProjectType id.
 
 ```crmscript
 NSProjectType thing;

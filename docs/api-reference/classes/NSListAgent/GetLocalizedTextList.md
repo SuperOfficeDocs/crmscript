@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a vector of NSLocalizedText objects.
 
-**Parameters:**
- - **localizedTextIds** The identifiers of the NSLocalizedText objects
+## Parameters
+
+* **localizedTextIds** The identifiers of the NSLocalizedText objects
 
 **Returns:** NSLocalizedText[]
 

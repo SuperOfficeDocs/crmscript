@@ -11,7 +11,7 @@ so.topic: reference
 The iso currency code, like 'USD' or 'NOK'.
 
 **Parameter:** 
- - **currency** String
+* **currency** String
 
 ```crmscript
 NSPriceList thing;

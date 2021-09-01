@@ -10,8 +10,9 @@ so.topic: reference
 
 Get status info for the Quote version dialog header. Collects most important warnings/errors from across all quotelines/alternatives in this quote version.
 
-**Parameters:**
- - **quoteVersionId** Id of the quote version to get the status info for.
+## Parameters
+
+* **quoteVersionId** Id of the quote version to get the status info for.
 
 **Returns:** NSQuoteVersionStatusInformation
 

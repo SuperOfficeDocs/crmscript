@@ -11,7 +11,7 @@ so.topic: reference
 Array of column definitions
 
 **Parameter:** 
- - **columnInfos** NSImportColumnInfo[]
+* **columnInfos** NSImportColumnInfo[]
 
 ```crmscript
 NSImportErpData thing;

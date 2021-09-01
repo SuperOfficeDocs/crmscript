@@ -11,7 +11,7 @@ so.topic: reference
 When the message was posted (UTC timestamp).
 
 **Parameter:** 
- - **whenPosted** DateTime
+* **whenPosted** DateTime
 
 ```crmscript
 NSChatMessage thing;

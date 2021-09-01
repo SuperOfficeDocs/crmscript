@@ -11,5 +11,5 @@ so.topic: reference
 Publish event date on NSDocumentEntity.
 
 **Parameter:** 
- - **publishDate** DateTime.
+* **publishDate** DateTime.
 

@@ -11,7 +11,7 @@ so.topic: reference
 Identifier for a project
 
 **Parameter:** 
- - **projectId** Integer
+* **projectId** Integer
 
 ```crmscript
 NSTemplateVariablesParameters thing;

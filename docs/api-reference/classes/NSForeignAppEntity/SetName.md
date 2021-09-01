@@ -11,7 +11,7 @@ so.topic: reference
 Name of foreign application
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSForeignAppEntity thing;

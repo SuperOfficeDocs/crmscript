@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSSale GetSale()
 
-Sale the session is connected to - could be empty if we don't know exactly.
+Sale the session is connected to* could be empty if we don't know exactly.
 
 **Returns:** NSSale
 

@@ -10,8 +10,9 @@ so.topic: reference
 
 Update the NetServices preferences with values contained in the content from the Status URL
 
-**Parameters:**
- - **xmlOrJson** The text that was returned by getting the Status URL
+## Parameters
+
+* **xmlOrJson** The text that was returned by getting the Status URL
 
 ```crmscript
 NSPreferenceAgent agent;

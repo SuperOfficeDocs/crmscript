@@ -11,7 +11,7 @@ so.topic: reference
 Language id as LCID value
 
 **Parameter:** 
- - **languageId** Integer
+* **languageId** Integer
 
 ```crmscript
 NSLocalizedText thing;

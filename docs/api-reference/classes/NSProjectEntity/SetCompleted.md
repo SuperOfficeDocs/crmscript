@@ -11,7 +11,7 @@ so.topic: reference
 Done (0=false, 1=true). Status implies changes in which fields are shown in GUI, as well as which fields can be updated
 
 **Parameter:** 
- - **completed** Bool
+* **completed** Bool
 
 ```crmscript
 NSProjectEntity thing;

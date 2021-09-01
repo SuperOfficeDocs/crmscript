@@ -11,7 +11,7 @@ so.topic: reference
 The validated NSQuoteVersion
 
 **Parameter:** 
- - **changedQuoteVersion** NSQuoteVersion
+* **changedQuoteVersion** NSQuoteVersion
 
 ```crmscript
 NSQuoteVersionValidated thing;

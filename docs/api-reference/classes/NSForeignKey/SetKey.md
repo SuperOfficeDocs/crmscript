@@ -11,7 +11,7 @@ so.topic: reference
 Subkey (optional)
 
 **Parameter:** 
- - **key** String
+* **key** String
 
 ```crmscript
 NSForeignKey thing;

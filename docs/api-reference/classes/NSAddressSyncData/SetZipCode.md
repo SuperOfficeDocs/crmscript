@@ -9,7 +9,7 @@ so.topic: reference
 # SetZipCode(String zipCode)
 
 **Parameter:** 
- - **zipCode** String
+* **zipCode** String
 
 ```crmscript
 NSAddressSyncData thing;

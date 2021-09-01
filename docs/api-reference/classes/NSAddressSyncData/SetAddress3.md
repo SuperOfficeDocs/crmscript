@@ -9,7 +9,7 @@ so.topic: reference
 # SetAddress3(String address3)
 
 **Parameter:** 
- - **address3** String
+* **address3** String
 
 ```crmscript
 NSAddressSyncData thing;

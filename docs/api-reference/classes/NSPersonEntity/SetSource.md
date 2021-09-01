@@ -11,7 +11,7 @@ so.topic: reference
 How did we get this person? For future integration needs
 
 **Parameter:** 
- - **source** Integer
+* **source** Integer
 
 ```crmscript
 NSPersonEntity thing;

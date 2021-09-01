@@ -11,7 +11,7 @@ so.topic: reference
 List of credentials registered for this user. i.e. valid authentication methods.
 
 **Parameter:** 
- - **credentials** NSCredential[]
+* **credentials** NSCredential[]
 
 ```crmscript
 NSUser thing;

@@ -11,7 +11,7 @@ so.topic: reference
 The operating system version. Ex: 'iOS v10.2'
 
 **Parameter:** 
- - **oSVersion** String
+* **oSVersion** String
 
 ```crmscript
 NSPocketDeviceInfo thing;

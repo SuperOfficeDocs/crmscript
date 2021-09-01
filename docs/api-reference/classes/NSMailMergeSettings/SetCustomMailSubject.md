@@ -11,7 +11,7 @@ so.topic: reference
 If specified, use this value as default mail subject.
 
 **Parameter:** 
- - **customMailSubject** String
+* **customMailSubject** String
 
 ```crmscript
 NSMailMergeSettings thing;

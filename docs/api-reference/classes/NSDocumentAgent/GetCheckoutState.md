@@ -10,8 +10,9 @@ so.topic: reference
 
 Get the current checkout state for a document, relative to the user perforing the call.
 
-**Parameters:**
- - **documentId** SuperOffice document ID
+## Parameters
+
+* **documentId** SuperOffice document ID
 
 **Returns:** NSCheckoutInfo
 

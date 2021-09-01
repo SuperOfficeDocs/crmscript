@@ -10,11 +10,12 @@ so.topic: reference
 
 Preview the import
 
-**Parameters:**
- - **importLines** The rows that will be manipulated and according to Import rules
- - **columnDefinition** An array of the columndefinitions, like firstname, lastname, ...
- - **culture** The current culture used in the import. Used to match language specific strings
- - **context** Optional context for the import.
+## Parameters
+
+* **importLines** The rows that will be manipulated and according to Import rules
+* **columnDefinition** An array of the columndefinitions, like firstname, lastname, ...
+* **culture** The current culture used in the import. Used to match language specific strings
+* **context** Optional context for the import.
 
 **Returns:** NSImportLine[]
 

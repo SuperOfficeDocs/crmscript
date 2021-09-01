@@ -10,8 +10,9 @@ so.topic: reference
 
 Saves the PreferenceDescriptionLine array in the SuperOffice database
 
-**Parameters:**
- - **preferenceDescriptionLines** The NSPreferenceDescriptionLine array to save.
+## Parameters
+
+* **preferenceDescriptionLines** The NSPreferenceDescriptionLine array to save.
 
 **Returns:** NSPreferenceDescriptionLine[]
 

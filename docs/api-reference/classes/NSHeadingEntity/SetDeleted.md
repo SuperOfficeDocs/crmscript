@@ -11,7 +11,7 @@ so.topic: reference
 True if the heading is marked as deleted
 
 **Parameter:** 
- - **deleted** Bool
+* **deleted** Bool
 
 ```crmscript
 NSHeadingEntity thing;

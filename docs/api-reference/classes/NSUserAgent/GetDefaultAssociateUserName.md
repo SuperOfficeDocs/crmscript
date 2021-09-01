@@ -10,7 +10,8 @@ so.topic: reference
 
 Get the default username for a person
 
-**Parameters:**
- - **user** 
+## Parameters
+
+* **user** 
 
 **Returns:** String

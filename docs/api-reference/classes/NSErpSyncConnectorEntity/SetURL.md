@@ -11,7 +11,7 @@ so.topic: reference
 The URL where the connector is located and can be called
 
 **Parameter:** 
- - **uRL** String
+* **uRL** String
 
 ```crmscript
 NSErpSyncConnectorEntity thing;

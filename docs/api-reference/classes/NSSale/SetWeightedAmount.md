@@ -11,7 +11,7 @@ so.topic: reference
 The weighted amount ( amount *  probability / 100)
 
 **Parameter:** 
- - **weightedAmount** Float
+* **weightedAmount** Float
 
 ```crmscript
 NSSale thing;

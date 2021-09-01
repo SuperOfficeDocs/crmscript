@@ -10,18 +10,19 @@ so.topic: reference
 
 Remove a hierarchy item and its children from a path
 
-**Parameters:**
- - **domain** Type of items to get
-     - Enum: 0 = Unknown 
-     - Enum: 1 = ExtraTables 
-     - Enum: 2 = ScreenDefinitions 
-     - Enum: 3 = Scripts 
-     - Enum: 4 = Selections 
-     - Enum: 5 = ExternalDocuments 
-     - Enum: 6 = UserGroups 
-     - Enum: 7 = ExternalDocumentRelatedToSpmMessage 
-     - Enum: 8 = Dashboards 
- - **path** Hierarchy path to item to delete
+## Parameters
+
+* **domain** Type of items to get
+* Enum: 0 = Unknown 
+* Enum: 1 = ExtraTables 
+* Enum: 2 = ScreenDefinitions 
+* Enum: 3 = Scripts 
+* Enum: 4 = Selections 
+* Enum: 5 = ExternalDocuments 
+* Enum: 6 = UserGroups 
+* Enum: 7 = ExternalDocumentRelatedToSpmMessage 
+* Enum: 8 = Dashboards 
+* **path** Hierarchy path to item to delete
 
 ```crmscript
 NSListAgent agent;

@@ -11,7 +11,7 @@ so.topic: reference
 Should the time-span be counted in minutes?
 
 **Parameter:** 
- - **useMinutes** Bool
+* **useMinutes** Bool
 
 ```crmscript
 NSFieldInfoTimeSpan thing;

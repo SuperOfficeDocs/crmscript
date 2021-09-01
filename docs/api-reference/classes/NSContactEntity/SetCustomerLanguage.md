@@ -11,7 +11,7 @@ so.topic: reference
 customerlanguage
 
 **Parameter:** 
- - **customerLanguage** NSCustomerLanguage
+* **customerLanguage** NSCustomerLanguage
 
 ```crmscript
 NSContactEntity thing;

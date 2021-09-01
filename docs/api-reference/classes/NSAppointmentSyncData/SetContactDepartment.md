@@ -11,7 +11,7 @@ so.topic: reference
 The department of the contact connected to the appointment
 
 **Parameter:** 
- - **contactDepartment** String
+* **contactDepartment** String
 
 ```crmscript
 NSAppointmentSyncData thing;

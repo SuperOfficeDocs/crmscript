@@ -8,5 +8,6 @@ so.topic: reference
 
 # NSEMailEntity GetEMailFromTemp(String fileName)
 
-**Parameters:**
- - **fileName** 
+## Parameters
+
+* **fileName** 

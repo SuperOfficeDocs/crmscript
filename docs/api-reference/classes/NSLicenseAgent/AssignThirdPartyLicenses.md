@@ -10,10 +10,11 @@ so.topic: reference
 
 Assign third party licenses
 
-**Parameters:**
- - **associateId** User to assign third party licenses for
- - **moduleOwner** Name of the module owner to assign license for
- - **moduleLicenseNames** Name of module licenses to assign
+## Parameters
+
+* **associateId** User to assign third party licenses for
+* **moduleOwner** Name of the module owner to assign license for
+* **moduleLicenseNames** Name of module licenses to assign
 
 **Returns:** NSModuleLicenseLink[]
 

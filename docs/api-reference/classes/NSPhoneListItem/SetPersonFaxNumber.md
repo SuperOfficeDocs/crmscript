@@ -11,7 +11,7 @@ so.topic: reference
 Actual phone number as eneterd by the user
 
 **Parameter:** 
- - **personFaxNumber** String
+* **personFaxNumber** String
 
 ```crmscript
 NSPhoneListItem thing;

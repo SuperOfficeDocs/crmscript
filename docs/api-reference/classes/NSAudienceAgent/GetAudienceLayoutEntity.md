@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSAudienceLayoutEntity object.
 
-**Parameters:**
- - **audienceLayoutEntityId** The identifier of the NSAudienceLayoutEntity object
+## Parameters
+
+* **audienceLayoutEntityId** The identifier of the NSAudienceLayoutEntity object
 
 **Returns:** NSAudienceLayoutEntity
 

@@ -10,6 +10,7 @@ so.topic: reference
 
 Gets the next (not deleted) sale stage id if the current stage is deleted. If the current stage is not deleted, the CurrentStageId is returned
 
-**Parameters:**
- - **saleId** 
- - **includeCurrentStage** 
+## Parameters
+
+* **saleId** 
+* **includeCurrentStage** 

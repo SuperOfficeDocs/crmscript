@@ -9,7 +9,7 @@ so.topic: reference
 # SetDisplayName(String displayName)
 
 **Parameter:** 
- - **displayName** String
+* **displayName** String
 
 ```crmscript
 NSErpSyncFieldValue thing;

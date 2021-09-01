@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a vector of NSCountry objects.
 
-**Parameters:**
- - **countryIds** The identifiers of the NSCountry objects
+## Parameters
+
+* **countryIds** The identifiers of the NSCountry objects
 
 **Returns:** NSCountry[]
 

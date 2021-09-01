@@ -10,8 +10,9 @@ so.topic: reference
 
 Check that entity is ready for saving, return error messages by field.
 
-**Parameters:**
- - **documentEntity** Entity to be checked for errors.
+## Parameters
+
+* **documentEntity** Entity to be checked for errors.
 
 **Returns:** StringDictionary
 

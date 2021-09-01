@@ -15,8 +15,8 @@ This function will load a customer (possibly overwriting existing values) from t
 
 ## Parameters
 
- - agent: The id of the agent that "owns" this customer.
- - key: The external key of this customer.
+* agent: The id of the agent that "owns" this customer.
+* key: The external key of this customer.
 
 Returns true if operation was successful, false if the customer does not exist.
 

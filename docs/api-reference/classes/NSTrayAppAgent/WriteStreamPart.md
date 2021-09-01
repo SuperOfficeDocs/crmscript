@@ -16,4 +16,3 @@ Write a part of a stream.
 * **communicationModuleData:** Serialized data from the communiction client module that initiated this operation.
 * **streamData:** Serialized StreamData object containing data to write to the stream.
 * **Returns:** Return an empty string, or a error message if something went wrong.
-

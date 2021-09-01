@@ -11,7 +11,7 @@ so.topic: reference
 A newer invitation exists
 
 **Parameter:** 
- - **superseded** Bool
+* **superseded** Bool
 
 ```crmscript
 NSEMailAppointment thing;

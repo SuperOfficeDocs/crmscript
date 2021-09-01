@@ -11,7 +11,7 @@ so.topic: reference
 The Icon hint of the ListItem. Custom field.
 
 **Parameter:** 
- - **iconHint** String
+* **iconHint** String
 
 ```crmscript
 NSMDOListItem thing;

@@ -9,7 +9,7 @@ so.topic: reference
 # SetCounty(String county)
 
 **Parameter:** 
- - **county** String
+* **county** String
 
 ```crmscript
 NSAddressSyncData thing;

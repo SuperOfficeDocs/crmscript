@@ -12,9 +12,9 @@ Enum containing the type of the design
 
 **Returns:** Integer
 
-     - Enum: 0 = Unknown 
-     - Enum: 1 = SOEditor 
-     - Enum: 2 = Unlayer 
+* Enum: 0 = Unknown 
+* Enum: 1 = SOEditor 
+* Enum: 2 = Unlayer 
 
 ```crmscript
 NSShipmentMessageEntity thing;

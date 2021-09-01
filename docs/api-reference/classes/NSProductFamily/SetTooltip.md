@@ -11,7 +11,7 @@ so.topic: reference
 Set the tooltip description for the NSProductFamily list item.
 
 **Parameter:** 
- - **tooltip** String NSProductFamily tooltip description.
+* **tooltip** String NSProductFamily tooltip description.
 
 ```crmscript
 NSProductFamily thing;

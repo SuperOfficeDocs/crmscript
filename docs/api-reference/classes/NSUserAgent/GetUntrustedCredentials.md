@@ -10,8 +10,9 @@ so.topic: reference
 
 Get a set of credentials of a specified type for authenticated user.
 
-**Parameters:**
- - **type** Type of credential(Ex: "imap", "smtp").
+## Parameters
+
+* **type** Type of credential(Ex: "imap", "smtp").
 
 **Returns:** NSUntrustedCredentials[]
 

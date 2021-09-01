@@ -11,7 +11,7 @@ so.topic: reference
 Default text for the activity created when signing on.
 
 **Parameter:** 
- - **signOnText** String
+* **signOnText** String
 
 ```crmscript
 NSProjectEvent thing;

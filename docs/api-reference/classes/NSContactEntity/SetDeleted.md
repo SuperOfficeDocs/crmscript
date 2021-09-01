@@ -11,7 +11,7 @@ so.topic: reference
 If nonzero, then this contact is 'deleted' and should generally not be shown
 
 **Parameter:** 
- - **deleted** Integer
+* **deleted** Integer
 
 ```crmscript
 NSContactEntity thing;

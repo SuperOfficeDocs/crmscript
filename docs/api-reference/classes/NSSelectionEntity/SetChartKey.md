@@ -11,7 +11,7 @@ so.topic: reference
 ID/key of the last-used chart tile on this selection
 
 **Parameter:** 
- - **chartKey** String
+* **chartKey** String
 
 ```crmscript
 NSSelectionEntity thing;

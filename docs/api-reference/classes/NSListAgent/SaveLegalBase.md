@@ -8,5 +8,6 @@ so.topic: reference
 
 # NSLegalBase SaveLegalBase(NSLegalBase legalBase)
 
-**Parameters:**
- - **legalBase** 
+## Parameters
+
+* **legalBase** 

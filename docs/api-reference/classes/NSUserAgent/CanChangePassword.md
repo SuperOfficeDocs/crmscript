@@ -10,8 +10,9 @@ so.topic: reference
 
 Check if the current assoicate can change the password for an associate
 
-**Parameters:**
- - **associateId** AssociateId of the user to check if password can be changed
+## Parameters
+
+* **associateId** AssociateId of the user to check if password can be changed
 
 **Returns:** Bool
 
@@ -20,4 +21,3 @@ NSUserAgent agent;
 Integer associateId;
 Bool res = agent.CanChangePassword(associateId);
 ```
-

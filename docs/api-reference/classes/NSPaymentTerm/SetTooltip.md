@@ -11,7 +11,7 @@ so.topic: reference
 Set the tooltip description for the NSPaymentTerm list item.
 
 **Parameter:** 
- - **tooltip** String NSPaymentTerm tooltip description.
+* **tooltip** String NSPaymentTerm tooltip description.
 
 ```crmscript
 NSPaymentTerm thing;

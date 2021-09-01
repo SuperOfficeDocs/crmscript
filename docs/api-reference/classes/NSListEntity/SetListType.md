@@ -11,7 +11,7 @@ so.topic: reference
 The type of this list, often indicated by the database name, but not necessarily
 
 **Parameter:** 
- - **listType** String
+* **listType** String
 
 ```crmscript
 NSListEntity thing;

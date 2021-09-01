@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a vector of Contact objects.
 
-**Parameters:**
- - **contactIds** The identifiers of the NSContact objects
+## Parameters
+
+* **contactIds** The identifiers of the NSContact objects
 
 **Returns:** NSContact[]
 

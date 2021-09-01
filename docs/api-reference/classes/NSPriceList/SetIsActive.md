@@ -11,7 +11,7 @@ so.topic: reference
 Is the list active (as opposed to being worked on, suddenly canceled, etc.
 
 **Parameter:** 
- - **isActive** Bool
+* **isActive** Bool
 
 ```crmscript
 NSPriceList thing;

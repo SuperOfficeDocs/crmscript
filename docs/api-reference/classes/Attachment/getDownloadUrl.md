@@ -13,6 +13,6 @@ Construct an download url for the attachment. There are two kinds of urls first 
 
 ## Parameters
 
- - external: Is the url to be used by a customer or an user.
- - saveToDisk: Is this a link used to hint to the web browser with http headers that the file is not to be opened, but saved to disk.
+* external: Is the url to be used by a customer or an user.
+* saveToDisk: Is this a link used to hint to the web browser with http headers that the file is not to be opened, but saved to disk.
 

@@ -11,7 +11,7 @@ so.topic: reference
 Array of the available operations for this field
 
 **Parameter:** 
- - **operationInfos** NSOperationInfo[]
+* **operationInfos** NSOperationInfo[]
 
 ```crmscript
 NSFieldValueInfo thing;

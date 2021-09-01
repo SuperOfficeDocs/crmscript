@@ -10,8 +10,9 @@ so.topic: reference
 
 Get recurrence data contained in the email iCal attachment
 
-**Parameters:**
- - **mailItemId** Id identifying the email
+## Parameters
+
+* **mailItemId** Id identifying the email
 
 **Returns:** NSRecurrenceInfo
 

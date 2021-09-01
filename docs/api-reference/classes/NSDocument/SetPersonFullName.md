@@ -11,7 +11,7 @@ so.topic: reference
 The full name of the person this document belongs to.
 
 **Parameter:** 
- - **personFullName** String
+* **personFullName** String
 
 ```crmscript
 NSDocument thing;

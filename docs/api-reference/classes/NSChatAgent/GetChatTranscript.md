@@ -10,9 +10,10 @@ so.topic: reference
 
 Get the chat transcript, formatted as plain text or html
 
-**Parameters:**
- - **chatSessionId** id of the chat session to get the transcript for
- - **html** Get transcript as HTML
+## Parameters
+
+* **chatSessionId** id of the chat session to get the transcript for
+* **html** Get transcript as HTML
 
 **Returns:** String
 

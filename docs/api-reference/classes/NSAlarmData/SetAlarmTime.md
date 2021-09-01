@@ -9,7 +9,7 @@ so.topic: reference
 # SetAlarmTime(DateTime alarmTime)
 
 **Parameter:** 
- - **alarmTime** DateTime
+* **alarmTime** DateTime
 
 ```crmscript
 NSAlarmData thing;

@@ -10,7 +10,8 @@ so.topic: reference
 
 Remove a credentials entry for a specified user.
 
-**Parameters:**
- - **associateId** Id of user to remove credentials for.
- - **type** Type of credential(Ex: "imap", "smtp")
- - **publicValue** PublicValue field of credentials to remove.
+## Parameters
+
+* **associateId** Id of user to remove credentials for.
+* **type** Type of credential(Ex: "imap", "smtp")
+* **publicValue** PublicValue field of credentials to remove.

@@ -11,7 +11,7 @@ so.topic: reference
 Primary group membership, see UserGroupLink for secondary memberships
 
 **Parameter:** 
- - **userGroupId** Integer
+* **userGroupId** Integer
 
 ```crmscript
 NSUserInfo thing;

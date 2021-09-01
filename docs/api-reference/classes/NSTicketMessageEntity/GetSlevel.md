@@ -12,9 +12,9 @@ The securitylevel of the message.
 
 **Returns:** TicketSecurityLevel
 
-     - Enum: 0 = Unknown 
-     - Enum: 1 = Internal 
-     - Enum: 2 = External 
+* Enum: 0 = Unknown 
+* Enum: 1 = Internal 
+* Enum: 2 = External 
 
 ```crmscript
 NSTicketMessageEntity thing;

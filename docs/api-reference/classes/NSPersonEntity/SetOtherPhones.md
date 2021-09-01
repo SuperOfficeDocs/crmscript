@@ -11,7 +11,7 @@ so.topic: reference
 Returns a collection of pagers that belong to the contact person.
 
 **Parameter:** 
- - **otherPhones** NSEntityElement[]
+* **otherPhones** NSEntityElement[]
 
 ```crmscript
 NSPersonEntity thing;

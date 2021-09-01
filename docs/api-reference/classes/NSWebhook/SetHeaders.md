@@ -11,7 +11,7 @@ so.topic: reference
 Custom HTTP Headers to add to webhook requests.
 
 **Parameter:** 
- - **headers** StringDictionary
+* **headers** StringDictionary
 
 ```crmscript
 NSWebhook thing;

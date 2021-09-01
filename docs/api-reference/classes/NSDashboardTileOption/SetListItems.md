@@ -11,7 +11,7 @@ so.topic: reference
 List options given directly, not via MDO list name
 
 **Parameter:** 
- - **listItems** NSMDOListItem[]
+* **listItems** NSMDOListItem[]
 
 ```crmscript
 NSDashboardTileOption thing;

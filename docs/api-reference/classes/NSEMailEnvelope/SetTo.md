@@ -11,7 +11,7 @@ so.topic: reference
 To recipients of e-mail
 
 **Parameter:** 
- - **to** NSEMailAddress[]
+* **to** NSEMailAddress[]
 
 ```crmscript
 NSEMailEnvelope thing;

@@ -11,7 +11,7 @@ so.topic: reference
 The sale source
 
 **Parameter:** 
- - **source** NSSource
+* **source** NSSource
 
 ```crmscript
 NSSaleEntity thing;

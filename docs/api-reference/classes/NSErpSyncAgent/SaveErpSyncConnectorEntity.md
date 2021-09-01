@@ -11,7 +11,7 @@ so.topic: reference
 Updates the existing NSErpSyncConnectorEntity or creates a new NSErpSyncConnectorEntity if the id parameter is 0
 
 **Parameters**:
- - **erpSyncConnectorEntity** The NSErpSyncConnectorEntity to save.
+* **erpSyncConnectorEntity** The NSErpSyncConnectorEntity to save.
 
 **Returns:** NSErpSyncConnectorEntity
 

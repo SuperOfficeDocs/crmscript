@@ -11,7 +11,7 @@ so.topic: reference
 Parent table
 
 **Parameter:** 
- - **parentId** Integer
+* **parentId** Integer
 
 ```crmscript
 NSHierarchyEntity thing;

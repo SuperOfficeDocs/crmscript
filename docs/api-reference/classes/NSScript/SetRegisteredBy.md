@@ -11,7 +11,7 @@ so.topic: reference
 Who created this script
 
 **Parameter:** 
- - **registeredBy** String
+* **registeredBy** String
 
 ```crmscript
 NSScript thing;

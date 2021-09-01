@@ -8,14 +8,14 @@ so.topic: reference
 
 # UdefJustification GetJustification()
 
-Justification - 0 = default, left, right, center
+Justification* 0 = default, left, right, center
 
 **Returns:** UdefJustification
 
-     - Enum: 0 = Default 
-     - Enum: 1 = Left 
-     - Enum: 2 = Center 
-     - Enum: 3 = Right 
+* Enum: 0 = Default 
+* Enum: 1 = Left 
+* Enum: 2 = Center 
+* Enum: 3 = Right 
 
 ```crmscript
 NSUserDefinedFieldInfo thing;

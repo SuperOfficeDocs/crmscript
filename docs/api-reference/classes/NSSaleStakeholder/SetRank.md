@@ -11,7 +11,7 @@ so.topic: reference
 Rank in list of stakeholders
 
 **Parameter:** 
- - **rank** Integer
+* **rank** Integer
 
 ```crmscript
 NSSaleStakeholder thing;

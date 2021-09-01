@@ -10,8 +10,9 @@ so.topic: reference
 
 Returns the email account corresponding to this email address (for the current associate).
 
-**Parameters:**
- - **fromAddress** The address associated with this email account
+## Parameters
+
+* **fromAddress** The address associated with this email account
 
 **Returns:** NSEMailAccount
 

@@ -8,7 +8,7 @@ so.topic: reference
 
 # ExtraTable
 
-A class to access eJournal extra tables - create, edit and delete entries.
+A class to access eJournal extra tables* create, edit and delete entries.
 
 ## Example
 

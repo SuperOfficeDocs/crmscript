@@ -8,7 +8,8 @@ so.topic: reference
 
 # NSDocumentEntity CreateDefaultDocumentEntityFromSuggestion(Integer suggestedDocumentId)
 
-**Parameters:**
- - **suggestedDocumentId** 
+## Parameters
+
+* **suggestedDocumentId** 
 
 **Returns:** NSDocumentEntity

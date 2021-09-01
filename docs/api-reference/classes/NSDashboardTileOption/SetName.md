@@ -11,7 +11,7 @@ so.topic: reference
 Name of option, usually not visible to users
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSDashboardTileOption thing;

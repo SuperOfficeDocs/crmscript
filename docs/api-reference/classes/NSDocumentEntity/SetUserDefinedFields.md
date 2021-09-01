@@ -11,7 +11,7 @@ so.topic: reference
 Set the user-defined fields on the NSDocumentEntity as a map.
 
 **Parameter:** 
- - **udefs** Map user defined field values encoded as strings.
+* **udefs** Map user defined field values encoded as strings.
 
 ```crmscript
 NSDocumentEntity thing;

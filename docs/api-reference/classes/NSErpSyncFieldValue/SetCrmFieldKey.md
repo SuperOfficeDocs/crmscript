@@ -11,7 +11,7 @@ so.topic: reference
 The CRM field name, as implemented by the Sync entities
 
 **Parameter:** 
- - **crmFieldKey** String
+* **crmFieldKey** String
 
 ```crmscript
 NSErpSyncFieldValue thing;

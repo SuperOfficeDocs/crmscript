@@ -10,10 +10,11 @@ so.topic: reference
 
 Creates the report as favorite. The sourceId is the key to the report that the favorite is based on.
 
-**Parameters:**
- - **sourceId** The primary key to the report to make the favorite from.
- - **name** The name of the new favorite.
- - **description** The description of the new favorite.
+## Parameters
+
+* **sourceId** The primary key to the report to make the favorite from.
+* **name** The name of the new favorite.
+* **description** The description of the new favorite.
 
 **Returns:** NSReportEntity
 

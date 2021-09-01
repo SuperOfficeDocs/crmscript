@@ -10,9 +10,10 @@ so.topic: reference
 
 Move quote line rank up/down
 
-**Parameters:**
- - **quoteLineId** Id of quote line to move up/down
- - **direction** True is up, false is down
+## Parameters
+
+* **quoteLineId** Id of quote line to move up/down
+* **direction** True is up, false is down
 
 ```crmscript
 NSQuoteAgent agent;

@@ -8,7 +8,7 @@ so.topic: reference
 
 # String GetAssociateFullName()
 
-The owner of the appointment - the associate whose diary/checklist the appointment is in.
+The owner of the appointment* the associate whose diary/checklist the appointment is in.
 
 **Returns:** String
 

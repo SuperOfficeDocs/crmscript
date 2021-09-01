@@ -11,7 +11,7 @@ so.topic: reference
 Determines if a training is running, finished or unavailable
 
 **Parameter:** 
- - **status** String
+* **status** String
 
 ```crmscript
 NSCategorizationStatusResponse thing;

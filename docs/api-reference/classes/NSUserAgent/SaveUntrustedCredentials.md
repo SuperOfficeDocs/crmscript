@@ -10,6 +10,7 @@ so.topic: reference
 
 Save credentials for authenticated user.
 
-**Parameters:**
- - **type** Type of credential(Ex: "imap", "smtp")
- - **credentials** Credentials to save.
+## Parameters
+
+* **type** Type of credential(Ex: "imap", "smtp")
+* **credentials** Credentials to save.

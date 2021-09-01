@@ -11,7 +11,7 @@ so.topic: reference
 Possible value
 
 **Parameter:** 
- - **prefValue** String
+* **prefValue** String
 
 ```crmscript
 NSPreferenceDescriptionLine thing;

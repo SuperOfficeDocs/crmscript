@@ -11,7 +11,7 @@ so.topic: reference
 Item name, visible in Guide
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSSuggestedAppointment thing;

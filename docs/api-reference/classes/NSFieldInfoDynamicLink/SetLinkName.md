@@ -11,7 +11,7 @@ so.topic: reference
 Display text for link.
 
 **Parameter:** 
- - **linkName** String
+* **linkName** String
 
 ```crmscript
 NSFieldInfoDynamicLink thing;

@@ -11,7 +11,7 @@ so.topic: reference
 The date/time this selection was last loaded (selectionentity fetched)
 
 **Parameter:** 
- - **lastLoaded** DateTime
+* **lastLoaded** DateTime
 
 ```crmscript
 NSSelectionEntity thing;

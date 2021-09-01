@@ -11,7 +11,7 @@ so.topic: reference
 Allow blank  as a valid value
 
 **Parameter:** 
- - **allowBlank** Bool
+* **allowBlank** Bool
 
 ```crmscript
 NSRefCountEntity thing;

@@ -8,10 +8,10 @@ so.topic: reference
 
 # SetVAT(Float vAT)
 
-Tax/VAT - THIS IS A PERCENTAGE. The connector is responsible for populating this field; the percentage will be used to calculate VAT amounts available as merge fields in the document templates (but amounts are never stored in the database).
+Tax/VAT* THIS IS A PERCENTAGE. The connector is responsible for populating this field; the percentage will be used to calculate VAT amounts available as merge fields in the document templates (but amounts are never stored in the database).
 
 **Parameter:** 
- - **vAT** Float
+* **vAT** Float
 
 ```crmscript
 NSQuoteLine thing;

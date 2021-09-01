@@ -11,7 +11,7 @@ so.topic: reference
 Updates the existing NSSmsConfig or creates a new NSSmsConfig if the id parameter is 0
 
 **Parameters**:
- - **smsConfig** The NSSmsConfig to save.
+* **smsConfig** The NSSmsConfig to save.
 
 **Returns:** NSSmsConfig
 

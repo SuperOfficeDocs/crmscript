@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSConfigurationAgent
 
-User interface configuration - XML and other elements such as inter-client URLs.
+User interface configuration* XML and other elements such as inter-client URLs.
 
 ## Example
 

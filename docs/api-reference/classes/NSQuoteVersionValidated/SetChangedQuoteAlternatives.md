@@ -11,7 +11,7 @@ so.topic: reference
 The changed QuoteAlternatives
 
 **Parameter:** 
- - **changedQuoteAlternatives** NSQuoteAlternativeRecalculated[]
+* **changedQuoteAlternatives** NSQuoteAlternativeRecalculated[]
 
 ```crmscript
 NSQuoteVersionValidated thing;

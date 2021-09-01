@@ -10,8 +10,9 @@ so.topic: reference
 
 Takes an array of the ErpConnection ids and saves these as ordered sync priorities
 
-**Parameters:**
- - **erpConnectionIds** The id put in array in the same order as the priorities
+## Parameters
+
+* **erpConnectionIds** The id put in array in the same order as the priorities
 
 **Returns:** Bool
 

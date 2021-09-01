@@ -8,7 +8,7 @@ so.topic: reference
 
 # Integer GetDefaultValue()
 
-Default Timespan value - number of minutes.
+Default Timespan value* number of minutes.
 
 **Returns:** Integer
 

@@ -11,7 +11,7 @@ so.topic: reference
 True if all day event
 
 **Parameter:** 
- - **isDefaultAlldayEvent** Bool
+* **isDefaultAlldayEvent** Bool
 
 ```crmscript
 NSTaskListItem thing;

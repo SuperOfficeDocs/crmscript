@@ -11,7 +11,7 @@ so.topic: reference
 Hide the field from the UI. Only allow API access.
 
 **Parameter:** 
- - **hideField** Bool
+* **hideField** Bool
 
 ```crmscript
 NSFieldInfoBase thing;

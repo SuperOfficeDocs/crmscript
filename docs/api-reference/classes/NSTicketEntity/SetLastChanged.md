@@ -11,7 +11,7 @@ so.topic: reference
 The last time the ticket was modified.
 
 **Parameter:** 
- - **lastChanged** DateTime
+* **lastChanged** DateTime
 
 ```crmscript
 NSTicketEntity thing;

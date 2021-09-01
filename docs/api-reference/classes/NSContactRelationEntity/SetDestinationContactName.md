@@ -11,7 +11,7 @@ so.topic: reference
 Name of the destination contact.
 
 **Parameter:** 
- - **destinationContactName** String
+* **destinationContactName** String
 
 ```crmscript
 NSContactRelationEntity thing;

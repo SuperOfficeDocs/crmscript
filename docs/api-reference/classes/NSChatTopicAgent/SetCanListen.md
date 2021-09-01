@@ -11,7 +11,7 @@ so.topic: reference
 True of a user can listen in on this topic
 
 **Parameter:** 
- - **canListen** Bool
+* **canListen** Bool
 
 ```crmscript
 NSChatTopicAgent thing;

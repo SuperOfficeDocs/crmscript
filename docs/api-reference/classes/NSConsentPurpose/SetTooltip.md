@@ -11,7 +11,7 @@ so.topic: reference
 List item tooltip
 
 **Parameter:** 
- - **tooltip** String
+* **tooltip** String
 
 ```crmscript
 NSConsentPurpose thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Updates the existing NSSuggestedDocumentEntity or creates a new NSSuggestedDocumentEntity if the id parameter is 0
 
 **Parameters**:
- - **suggestedDocumentEntity** The NSSuggestedDocumentEntity to save.
+* **suggestedDocumentEntity** The NSSuggestedDocumentEntity to save.
 
 **Returns:** NSSuggestedDocumentEntity
 

@@ -10,6 +10,7 @@ so.topic: reference
 
 Remove a credentials entry for authenticated user.
 
-**Parameters:**
- - **type** Type of credential(Ex: "imap", "smtp")
- - **publicValue** PublicValue field of credentials to remove.
+## Parameters
+
+* **type** Type of credential(Ex: "imap", "smtp")
+* **publicValue** PublicValue field of credentials to remove.

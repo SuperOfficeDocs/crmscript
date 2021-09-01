@@ -11,7 +11,7 @@ so.topic: reference
 Array of the controlinfos
 
 **Parameter:** 
- - **controlInfos** NSControlInfo[]
+* **controlInfos** NSControlInfo[]
 
 ```crmscript
 NSFieldValueInfo thing;

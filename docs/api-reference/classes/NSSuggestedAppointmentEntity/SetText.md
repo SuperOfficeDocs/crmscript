@@ -11,7 +11,7 @@ so.topic: reference
 The suggested text of the new appointment
 
 **Parameter:** 
- - **text** String
+* **text** String
 
 ```crmscript
 NSSuggestedAppointmentEntity thing;

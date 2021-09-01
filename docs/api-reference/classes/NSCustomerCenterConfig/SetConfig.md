@@ -11,7 +11,7 @@ so.topic: reference
 A JSON-formatted config
 
 **Parameter:** 
- - **config** String
+* **config** String
 
 ```crmscript
 NSCustomerCenterConfig thing;

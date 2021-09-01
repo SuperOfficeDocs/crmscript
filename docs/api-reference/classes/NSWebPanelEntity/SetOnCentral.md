@@ -11,7 +11,7 @@ so.topic: reference
 Is the webpanel visible when user is on central database
 
 **Parameter:** 
- - **onCentral** Bool
+* **onCentral** Bool
 
 ```crmscript
 NSWebPanelEntity thing;

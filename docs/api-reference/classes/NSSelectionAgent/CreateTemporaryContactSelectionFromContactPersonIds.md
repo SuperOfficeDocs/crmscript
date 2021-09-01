@@ -10,8 +10,9 @@ so.topic: reference
 
 Creates a temporary selection with members from a collection of ContactPerson id's.
 
-**Parameters:**
- - **contactPersonIds** A collection of ContactPersonId to copy into the temporary contact selection as members.
+## Parameters
+
+* **contactPersonIds** A collection of ContactPersonId to copy into the temporary contact selection as members.
 
 **Returns:** NSSelectionEntity
 

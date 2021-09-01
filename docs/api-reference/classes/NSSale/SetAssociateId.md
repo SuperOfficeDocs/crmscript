@@ -11,7 +11,7 @@ so.topic: reference
 The sale's owner id
 
 **Parameter:** 
- - **associateId** Integer
+* **associateId** Integer
 
 ```crmscript
 NSSale thing;

@@ -10,8 +10,9 @@ so.topic: reference
 
 Deletes the NSDashboard
   
-**Parameters:**
- - **dashboardId** The identity of the Dashboard to delete.
+## Parameters
+
+* **dashboardId** The identity of the Dashboard to delete.
 
 ```crmscript
 NSDashboardAgent agent;

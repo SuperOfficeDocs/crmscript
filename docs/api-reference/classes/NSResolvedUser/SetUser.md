@@ -11,7 +11,7 @@ so.topic: reference
 The resolved NSUser instance.
 
 **Parameter:** 
- - **user** User
+* **user** User
 
 ```crmscript
 NSResolvedUser thing;

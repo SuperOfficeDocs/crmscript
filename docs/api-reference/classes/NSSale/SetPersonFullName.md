@@ -11,7 +11,7 @@ so.topic: reference
 The name of the person this sale belongs to.
 
 **Parameter:** 
- - **personFullName** String
+* **personFullName** String
 
 ```crmscript
 NSSale thing;

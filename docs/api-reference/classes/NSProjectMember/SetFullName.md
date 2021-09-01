@@ -11,7 +11,7 @@ so.topic: reference
 The person's full name localized to the current culture/country.  (internal name used in clients for employees)
 
 **Parameter:** 
- - **fullName** String
+* **fullName** String
 
 ```crmscript
 NSProjectMember thing;

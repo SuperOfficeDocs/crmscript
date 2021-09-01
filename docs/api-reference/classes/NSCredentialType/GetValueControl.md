@@ -12,11 +12,11 @@ Type of control used to display the value.
 
 **Returns:** Integer
 
-     - Enum: 0 = Static 
-     - Enum: 1 = Edit 
-     - Enum: 2 = Password 
-     - Enum: 3 = Link 
-     - Enum: 4 = Hidden 
+* Enum: 0 = Static 
+* Enum: 1 = Edit 
+* Enum: 2 = Password 
+* Enum: 3 = Link 
+* Enum: 4 = Hidden 
 
 ```crmscript
 NSCredentialType thing;

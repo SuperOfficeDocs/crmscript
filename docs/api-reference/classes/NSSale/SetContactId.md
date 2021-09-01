@@ -11,7 +11,7 @@ so.topic: reference
 Optional contact reference
 
 **Parameter:** 
- - **contactId** Integer
+* **contactId** Integer
 
 ```crmscript
 NSSale thing;

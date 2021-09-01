@@ -11,7 +11,7 @@ so.topic: reference
 Id of table that owns the status monitor
 
 **Parameter:** 
- - **ownerTable** Integer
+* **ownerTable** Integer
 
 ```crmscript
 NSStatusMonitor thing;

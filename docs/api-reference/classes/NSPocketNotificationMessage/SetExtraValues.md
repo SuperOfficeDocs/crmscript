@@ -11,7 +11,7 @@ so.topic: reference
 Additional key/value properties to include in the message
 
 **Parameter:** 
- - **extraValues** StringDictionary
+* **extraValues** StringDictionary
 
 ```crmscript
 NSPocketNotificationMessage thing;

@@ -11,7 +11,7 @@ so.topic: reference
 The ERP fields that should be displayed
 
 **Parameter:** 
- - **erpFields** NSFieldMetadata[]
+* **erpFields** NSFieldMetadata[]
 
 ```crmscript
 NSErpConnectionData thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Record id in target table, used when there are separate counters for each target record
 
 **Parameter:** 
- - **recordId** Integer
+* **recordId** Integer
 
 ```crmscript
 NSRefCountEntity thing;

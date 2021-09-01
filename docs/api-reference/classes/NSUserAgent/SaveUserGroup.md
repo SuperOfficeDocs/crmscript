@@ -10,8 +10,9 @@ so.topic: reference
 
 Save a user group.  Set UserGroup.Deleted to mark a user group as deleted and invisible in the user interface.
 
-**Parameters:**
- - **userGroup** UserGroup to save
+## Parameters
+
+* **userGroup** UserGroup to save
 
 **Returns:** NSUserGroup
 

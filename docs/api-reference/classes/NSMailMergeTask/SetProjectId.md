@@ -11,7 +11,7 @@ so.topic: reference
 Project identity to set on task
 
 **Parameter:** 
- - **projectId** Integer
+* **projectId** Integer
 
 ```crmscript
 NSMailMergeTask thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Number of rows deleted / zeroed
 
 **Parameter:** 
- - **deletes** Integer
+* **deletes** Integer
 
 ```crmscript
 NSMassOperationResult thing;

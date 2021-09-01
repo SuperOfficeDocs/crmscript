@@ -9,7 +9,7 @@ so.topic: reference
 # SetUniqueHash(Integer uniqueHash)
 
 **Parameter:** 
- - **uniqueHash** Integer
+* **uniqueHash** Integer
 
 ```crmscript
 NSArchiveRestrictionInfo thing;

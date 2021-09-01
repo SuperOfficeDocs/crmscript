@@ -10,7 +10,8 @@ so.topic: reference
 
 Kind of the reverse of SetListTableIdAndUDListDefinitionIdFromSelectedListId
 
-**Parameters:**
- - **info** 
+## Parameters
+
+* **info** 
 
 **Returns:** Integer

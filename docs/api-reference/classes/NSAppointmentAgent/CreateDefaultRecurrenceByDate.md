@@ -10,5 +10,6 @@ so.topic: reference
 
 Creates a NSRecurrenceInfo object populated with the default values for the specific type. Using startDate as start date for the recurreing pattern.
 
-**Parameters:**
- - **startDate** Date of which the recurring pattern should start.
+## Parameters
+
+* **startDate** Date of which the recurring pattern should start.

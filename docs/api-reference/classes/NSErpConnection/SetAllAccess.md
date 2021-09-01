@@ -11,7 +11,7 @@ so.topic: reference
 Is this connection accessible to everyone?  If not, then the ErpConnectionAccess table tells us who can access it
 
 **Parameter:** 
- - **allAccess** Bool
+* **allAccess** Bool
 
 ```crmscript
 NSErpConnection thing;

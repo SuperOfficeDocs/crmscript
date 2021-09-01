@@ -11,7 +11,7 @@ so.topic: reference
 If person ? The person name, else contact name
 
 **Parameter:** 
- - **sortName** String
+* **sortName** String
 
 ```crmscript
 NSContactOrPersonFromEmail thing;

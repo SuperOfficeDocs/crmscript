@@ -10,8 +10,9 @@ so.topic: reference
 
 Saves a NSQuoteEntity. Versions and alternatives will not be saved by this call.
 
-**Parameters:**
- - **quoteEntity** The Quote entity to save
+## Parameters
+
+* **quoteEntity** The Quote entity to save
 
 **Returns:** NSQuoteEntity
 

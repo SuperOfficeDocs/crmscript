@@ -11,11 +11,11 @@ so.topic: reference
 A bitmask of flags.
 
 **Parameter:** 
- - **flags** Integer
-     - Enum: 0 = Unknown 
-     - Enum: 1 = External 
-     - Enum: 2 = Default 
-     - Enum: 4 = AlertSchedule 
+* **flags** Integer
+* Enum: 0 = Unknown 
+* Enum: 1 = External 
+* Enum: 2 = Default 
+* Enum: 4 = AlertSchedule 
 
 ```crmscript
 NSTicketPriorityEntity thing;

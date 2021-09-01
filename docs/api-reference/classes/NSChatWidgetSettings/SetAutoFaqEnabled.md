@@ -11,7 +11,7 @@ so.topic: reference
 Enable automatic FAQ suggestions
 
 **Parameter:** 
- - **autoFaqEnabled** Bool
+* **autoFaqEnabled** Bool
 
 ```crmscript
 NSChatWidgetSettings thing;

@@ -11,7 +11,7 @@ so.topic: reference
 A copy of the first message in the chat session
 
 **Parameter:** 
- - **firstMessage** String
+* **firstMessage** String
 
 ```crmscript
 NSChatSessionEntity thing;

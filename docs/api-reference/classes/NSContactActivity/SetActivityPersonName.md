@@ -11,7 +11,7 @@ so.topic: reference
 The person that carried out the activity on the contact.
 
 **Parameter:** 
- - **activityPersonName** String
+* **activityPersonName** String
 
 ```crmscript
 NSContactActivity thing;

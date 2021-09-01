@@ -11,7 +11,7 @@ so.topic: reference
 Name of the layout instance
 
 **Parameter:** 
- - **instanceName** String
+* **instanceName** String
 
 ```crmscript
 NSAudienceLayoutEntity thing;

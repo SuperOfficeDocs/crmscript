@@ -11,7 +11,7 @@ so.topic: reference
 Script id to run when session state changes.
 
 **Parameter:** 
- - **botSessionChangedScriptId** Integer
+* **botSessionChangedScriptId** Integer
 
 ```crmscript
 NSChatBotSettings thing;

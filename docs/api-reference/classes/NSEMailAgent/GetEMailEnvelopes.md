@@ -10,9 +10,10 @@ so.topic: reference
 
 Retrieve a set of e-mail envelopes
 
-**Parameters:**
- - **connectionInfo** All information needed to connect to the mailserver
- - **messageServerIds** Unique identitifiers for the e-mails to retrieve envelopes for
+## Parameters
+
+* **connectionInfo** All information needed to connect to the mailserver
+* **messageServerIds** Unique identitifiers for the e-mails to retrieve envelopes for
 
 **Returns:** NSEMailEnvelope[]
 

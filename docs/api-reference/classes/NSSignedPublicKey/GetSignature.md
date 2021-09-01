@@ -8,7 +8,7 @@ so.topic: reference
 
 # String GetSignature()
 
-Signature - Base64 encoded value
+Signature* Base64 encoded value
 
 **Returns:** String
 

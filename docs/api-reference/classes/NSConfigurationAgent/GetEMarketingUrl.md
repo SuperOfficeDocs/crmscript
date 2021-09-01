@@ -8,7 +8,8 @@ so.topic: reference
 
 # String GetEMarketingUrl(String language)
 
-**Parameters:**
- - **language** 
+## Parameters
+
+* **language** 
 
 **Returns:** String

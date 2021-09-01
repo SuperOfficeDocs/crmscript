@@ -11,7 +11,7 @@ so.topic: reference
 The id of the s_shipment_addr that is the response mail
 
 **Parameter:** 
- - **responseShipmentAddrId** Integer
+* **responseShipmentAddrId** Integer
 
 ```crmscript
 NSFormSubmissionEntity thing;

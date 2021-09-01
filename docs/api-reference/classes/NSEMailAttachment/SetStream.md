@@ -11,7 +11,7 @@ so.topic: reference
 Binary stream for outgoing attachments. This property will not be populated for existing e-mail items.
 
 **Parameter:** 
- - **stream** NSStream
+* **stream** NSStream
 
 ```crmscript
 NSEMailAttachment thing;

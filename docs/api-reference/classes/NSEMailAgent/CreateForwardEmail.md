@@ -10,8 +10,9 @@ so.topic: reference
 
 Create forward email
 
-**Parameters:**
- - **email** The e-mail to forward
+## Parameters
+
+* **email** The e-mail to forward
 
 **Returns:** NSEMailEntity
 

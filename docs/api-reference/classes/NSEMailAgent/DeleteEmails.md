@@ -10,6 +10,7 @@ so.topic: reference
 
 Delete specified mail items and optionally move to the specified folder
 
-**Parameters:**
- - **ids** The e-mails to handle
- - **moveToFolder** If set, move deleted items to this folder
+## Parameters
+
+* **ids** The e-mails to handle
+* **moveToFolder** If set, move deleted items to this folder

@@ -11,7 +11,7 @@ so.topic: reference
 URL address
 
 **Parameter:** 
- - **uRL** String
+* **uRL** String
 
 ```crmscript
 NSProject thing;

@@ -10,8 +10,9 @@ so.topic: reference
 
 Marks a connection as deleted.
 
-**Parameters:**
- - **quoteConnectionId** Primary key of the connection to delete
+## Parameters
+
+* **quoteConnectionId** Primary key of the connection to delete
 
 ```crmscript
 NSQuoteAgent agent;

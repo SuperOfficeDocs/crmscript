@@ -11,7 +11,7 @@ so.topic: reference
 The id of the icon of the external app
 
 **Parameter:** 
- - **icon** Integer
+* **icon** Integer
 
 ```crmscript
 NSExtAppEntity thing;

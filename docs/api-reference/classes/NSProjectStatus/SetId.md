@@ -11,7 +11,7 @@ so.topic: reference
 Set the primary key (id) for the NSProjectStatus
 
 **Parameter:** 
- - **id** Integer NSProjectStatus id.
+* **id** Integer NSProjectStatus id.
 
 ```crmscript
 NSProjectStatus thing;

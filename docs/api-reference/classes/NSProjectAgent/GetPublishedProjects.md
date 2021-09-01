@@ -10,8 +10,9 @@ so.topic: reference
 
 Get published projects by project ids.
 
-**Parameters:**
- - **projectIds** The array of project ids
+## Parameters
+
+* **projectIds** The array of project ids
 
 **Returns:** NSProject[]
 

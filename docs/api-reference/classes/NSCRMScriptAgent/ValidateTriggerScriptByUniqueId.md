@@ -10,8 +10,9 @@ so.topic: reference
 
 Validate a Trigger CRMScript. This will check that the syntax is correct, but not execute the script.
 
-**Parameters:**
- - **triggerScriptUniqueId** The unique id of the CRMScript to validate
+## Parameters
+
+* **triggerScriptUniqueId** The unique id of the CRMScript to validate
 
 **Returns:** True of the syntax is correct
 

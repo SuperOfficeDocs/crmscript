@@ -11,7 +11,7 @@ so.topic: reference
 Ids of deleted records.
 
 **Parameter:** 
- - **deletedRecords** NSChangedDataItem[]
+* **deletedRecords** NSChangedDataItem[]
 
 ```crmscript
 NSChangedData thing;

@@ -10,8 +10,9 @@ so.topic: reference
 
 Get an e-mail based on an archived document. The returned value is not sanitized.
 
-**Parameters:**
- - **documentId** Unique id of the document
+## Parameters
+
+* **documentId** Unique id of the document
 
 **Returns:** NSEMailEntity
 

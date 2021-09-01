@@ -11,7 +11,7 @@ so.topic: reference
 Same as time_to_close, but not calculated based on priority.
 
 **Parameter:** 
- - **realTimeToClose** Integer
+* **realTimeToClose** Integer
 
 ```crmscript
 NSTicket thing;

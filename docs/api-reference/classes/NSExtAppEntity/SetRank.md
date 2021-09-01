@@ -11,7 +11,7 @@ so.topic: reference
 The rank of the application
 
 **Parameter:** 
- - **rank** Integer
+* **rank** Integer
 
 ```crmscript
 NSExtAppEntity thing;

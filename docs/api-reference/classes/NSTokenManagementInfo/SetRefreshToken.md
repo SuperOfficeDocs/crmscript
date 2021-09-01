@@ -11,7 +11,7 @@ so.topic: reference
 Refresh token
 
 **Parameter:** 
- - **refreshToken** String
+* **refreshToken** String
 
 ```crmscript
 NSTokenManagementInfo thing;

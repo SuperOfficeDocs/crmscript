@@ -11,7 +11,7 @@ so.topic: reference
 User name
 
 **Parameter:** 
- - **userName** String
+* **userName** String
 
 ```crmscript
 NSAssociate thing;

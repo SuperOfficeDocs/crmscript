@@ -11,7 +11,7 @@ so.topic: reference
 Set the name of the NSNavigatorCompany item.
 
 **Parameter:** 
- - **value** String NavigatorCompany name.
+* **value** String NavigatorCompany name.
 
 ```crmscript
 NSNavigatorCompany thing;

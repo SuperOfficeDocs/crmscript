@@ -11,7 +11,7 @@ so.topic: reference
 Deadline to add if escalated (minutes)
 
 **Parameter:** 
- - **deadline** Integer
+* **deadline** Integer
 
 ```crmscript
 NSTicketPriorityEntity thing;

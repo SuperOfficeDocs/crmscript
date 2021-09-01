@@ -11,7 +11,7 @@ so.topic: reference
 The rank of the list
 
 **Parameter:** 
- - **rank** Integer
+* **rank** Integer
 
 ```crmscript
 NSListEntity thing;

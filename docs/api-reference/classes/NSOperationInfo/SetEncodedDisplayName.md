@@ -9,7 +9,7 @@ so.topic: reference
 # SetEncodedDisplayName(String encodedDisplayName)
 
 **Parameter:** 
- - **encodedDisplayName** String
+* **encodedDisplayName** String
 
 ```crmscript
 NSOperationInfo thing;

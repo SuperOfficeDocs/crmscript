@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets an Audience configuration parameter belonging to the currently logged on user with the specified configuration parameter name.
 
-**Parameters:**
- - **parameterName** The name of the Audience configuration parameter
+## Parameters
+
+* **parameterName** The name of the Audience configuration parameter
 
 **Returns:** The Audience configuration parameter.
 

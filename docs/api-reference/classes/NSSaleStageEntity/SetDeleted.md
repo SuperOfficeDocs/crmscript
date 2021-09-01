@@ -11,7 +11,7 @@ so.topic: reference
 If true, the Sale stage is deleted
 
 **Parameter:** 
- - **deleted** Bool
+* **deleted** Bool
 
 ```crmscript
 NSSaleStageEntity thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Total sale amount
 
 **Parameter:** 
- - **amount** Float
+* **amount** Float
 
 ```crmscript
 NSSaleEntity thing;

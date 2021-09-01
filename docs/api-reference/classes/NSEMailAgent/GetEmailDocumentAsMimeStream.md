@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a particular document, and tries to parse it, and returns it in MIME/RFC822 format.
 
-**Parameters:**
- - **documentId** SuperOffice document ID
+## Parameters
+
+* **documentId** SuperOffice document ID
 
 **Returns:** NSStream
 

@@ -11,7 +11,7 @@ so.topic: reference
 The character which is used to delimit folder levels on the server
 
 **Parameter:** 
- - **delimiter** String
+* **delimiter** String
 
 ```crmscript
 NSEMailFolder thing;

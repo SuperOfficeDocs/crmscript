@@ -10,5 +10,6 @@ so.topic: reference
 
 Verify that the requested document stream exists, and that we can access it, without actually getting the stream.
 
-**Parameters:**
- - **documentId** The document id that refers to the binary data (document)
+## Parameters
+
+* **documentId** The document id that refers to the binary data (document)

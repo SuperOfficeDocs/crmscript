@@ -8,10 +8,10 @@ so.topic: reference
 
 # SetAssociateFullName(String associateFullName)
 
-The owner of the appointment - the associate whose diary/checklist the appointment is in.
+The owner of the appointment* the associate whose diary/checklist the appointment is in.
 
 **Parameter:** 
- - **associateFullName** String
+* **associateFullName** String
 
 ```crmscript
 NSAppointment thing;

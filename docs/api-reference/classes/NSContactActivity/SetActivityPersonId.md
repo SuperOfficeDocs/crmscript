@@ -11,7 +11,7 @@ so.topic: reference
 Id of the person causing the activity.
 
 **Parameter:** 
- - **activityPersonId** Integer
+* **activityPersonId** Integer
 
 ```crmscript
 NSContactActivity thing;

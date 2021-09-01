@@ -11,7 +11,7 @@ so.topic: reference
 How many decimals to display
 
 **Parameter:** 
- - **precision** Integer
+* **precision** Integer
 
 ```crmscript
 NSFieldInfoDecimal thing;

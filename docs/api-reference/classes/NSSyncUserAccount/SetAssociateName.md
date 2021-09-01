@@ -11,7 +11,7 @@ so.topic: reference
 The username of the associate owning the account
 
 **Parameter:** 
- - **associateName** String
+* **associateName** String
 
 ```crmscript
 NSSyncUserAccount thing;

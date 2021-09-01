@@ -11,7 +11,7 @@ so.topic: reference
 Size of the stream
 
 **Parameter:** 
- - **size** Integer
+* **size** Integer
 
 ```crmscript
 NSDocumentPreview thing;

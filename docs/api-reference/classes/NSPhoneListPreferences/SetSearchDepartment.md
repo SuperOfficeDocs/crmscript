@@ -11,7 +11,7 @@ so.topic: reference
 True if you want to search for Departments where your colleagues work.
 
 **Parameter:** 
- - **searchDepartment** Bool
+* **searchDepartment** Bool
 
 ```crmscript
 NSPhoneListPreferences thing;

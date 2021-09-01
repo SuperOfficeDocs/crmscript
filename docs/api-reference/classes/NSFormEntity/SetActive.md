@@ -11,7 +11,7 @@ so.topic: reference
 Indicates if this form is active or not
 
 **Parameter:** 
- - **active** Bool
+* **active** Bool
 
 ```crmscript
 NSFormEntity thing;

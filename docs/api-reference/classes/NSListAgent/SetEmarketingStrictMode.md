@@ -10,8 +10,9 @@ so.topic: reference
 
 Turn on the Emarketing strict mode, which will enable full GDPR rules concerning Emarketing consents and subscriptions
 
-**Parameters:**
- - **enable** Set to true to enable strict mode
+## Parameters
+
+* **enable** Set to true to enable strict mode
 
 ```crmscript
 NSListAgent agent;

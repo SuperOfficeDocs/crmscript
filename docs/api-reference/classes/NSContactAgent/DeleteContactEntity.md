@@ -10,8 +10,9 @@ so.topic: reference
 
 Deletes the NSContactEntity
   
-**Parameters:**
- - **contactEntityId** The identity of the NSContactEntity to delete.
+## Parameters
+
+* **contactEntityId** The identity of the NSContactEntity to delete.
 
 ```crmscript
 NSContactAgent agent;

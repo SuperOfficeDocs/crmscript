@@ -9,7 +9,7 @@ so.topic: reference
 # SetState(String state)
 
 **Parameter:** 
- - **state** String
+* **state** String
 
 ```crmscript
 NSAddressSyncData thing;

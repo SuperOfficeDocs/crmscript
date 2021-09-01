@@ -48,14 +48,14 @@ The types of events that can occur pertain to either [Service screen events][1] 
 
 ## Input values
 
-**Input values** are for getting available data - a **read** operation. You can either fetch a specific value or a Map with all values.
+**Input values** are for getting available data* a **read** operation. You can either fetch a specific value or a Map with all values.
 
 * String [getInputValue(String inputValue)][5]
 * Map [getInputValues()][6]
 
 ## Output values
 
-**Output values** are for setting (or changing) data - a **write** operation. They are frequently set on a  *before save* trigger to get better data quality.
+**Output values** are for setting (or changing) data* a **write** operation. They are frequently set on a  *before save* trigger to get better data quality.
 
 * Void [setOutputValue(String name, String value)][7]
 
@@ -69,7 +69,7 @@ In addition to the built-in input and output values, you can also set and get **
 | getStateValues | Get all values     | getInputValues |
 | setStateValue  | Set specific value | setOutputValue |
 
-After you set a custom value, it can be accessed - also by other `EventData` objects in the same script.
+After you set a custom value, it can be accessed* also by other `EventData` objects in the same script.
 
 ## Messages
 

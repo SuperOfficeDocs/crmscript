@@ -9,7 +9,7 @@ so.topic: reference
 # SetDescription(String description)
 
 **Parameter:** 
- - **description** String
+* **description** String
 
 ```crmscript
 NSLicenseOwner thing;

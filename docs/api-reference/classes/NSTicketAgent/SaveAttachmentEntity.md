@@ -11,7 +11,7 @@ so.topic: reference
 Updates the existing NSAttachmentEntity or creates a new NSAttachmentEntity if the id parameter is 0
 
 **Parameters**:
- - **attachmentEntity** The NSAttachmentEntity to save.
+* **attachmentEntity** The NSAttachmentEntity to save.
 
 **Returns:** NSAttachmentEntity
 

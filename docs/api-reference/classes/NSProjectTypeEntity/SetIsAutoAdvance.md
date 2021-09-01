@@ -11,7 +11,7 @@ so.topic: reference
 Does the project status advance automatically, when the last guided activity in a status is completed?
 
 **Parameter:** 
- - **isAutoAdvance** Bool
+* **isAutoAdvance** Bool
 
 ```crmscript
 NSProjectTypeEntity thing;

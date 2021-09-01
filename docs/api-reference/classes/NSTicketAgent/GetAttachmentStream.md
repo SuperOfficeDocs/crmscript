@@ -10,8 +10,9 @@ so.topic: reference
 
 Get the content of an attachment
 
-**Parameters:**
- - **attachmentId** The id of the attachment to retrieve
+## Parameters
+
+* **attachmentId** The id of the attachment to retrieve
 
 **Returns:** NSStream
 

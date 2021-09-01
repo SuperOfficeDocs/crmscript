@@ -11,7 +11,7 @@ so.topic: reference
 Does the webpanel have an address bar
 
 **Parameter:** 
- - **showInAddressBar** Bool
+* **showInAddressBar** Bool
 
 ```crmscript
 NSWebPanelEntity thing;

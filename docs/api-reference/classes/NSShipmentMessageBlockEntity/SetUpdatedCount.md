@@ -11,7 +11,7 @@ so.topic: reference
 Number of updates made to this record
 
 **Parameter:** 
- - **updatedCount** Integer
+* **updatedCount** Integer
 
 ```crmscript
 NSShipmentMessageBlockEntity thing;

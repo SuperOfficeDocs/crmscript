@@ -11,7 +11,7 @@ so.topic: reference
 How many active ERP links are there for this person?
 
 **Parameter:** 
- - **activeErpLinks** Integer
+* **activeErpLinks** Integer
 
 ```crmscript
 NSPersonEntity thing;

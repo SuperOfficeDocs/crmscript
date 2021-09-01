@@ -11,7 +11,7 @@ so.topic: reference
 Updates the existing NSServiceAuth or creates a new NSServiceAuth if the id parameter is 0
 
 **Parameters**:
- - **serviceAuth** The NSServiceAuth to save.
+* **serviceAuth** The NSServiceAuth to save.
 
 **Returns:** NSServiceAuth
 

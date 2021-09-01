@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSRating object.
 
-**Parameters:**
- - **ratingId** The identifier of the NSRating object
+## Parameters
+
+* **ratingId** The identifier of the NSRating object
 
 **Returns:** NSRating
 

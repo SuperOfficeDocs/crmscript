@@ -11,7 +11,7 @@ so.topic: reference
 Priority rank, in case more than one status is signalled. Lowest wins
 
 **Parameter:** 
- - **rank** Integer
+* **rank** Integer
 
 ```crmscript
 NSStatusMonitor thing;

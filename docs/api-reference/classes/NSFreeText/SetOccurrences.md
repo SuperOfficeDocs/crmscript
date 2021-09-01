@@ -11,7 +11,7 @@ so.topic: reference
 Total count of search words
 
 **Parameter:** 
- - **occurrences** Integer
+* **occurrences** Integer
 
 ```crmscript
 NSFreeText thing;

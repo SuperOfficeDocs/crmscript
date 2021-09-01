@@ -11,7 +11,7 @@ so.topic: reference
 Indicates if the user has the chat presence turned on or off
 
 **Parameter:** 
- - **present** Bool
+* **present** Bool
 
 ```crmscript
 NSChatPresence thing;

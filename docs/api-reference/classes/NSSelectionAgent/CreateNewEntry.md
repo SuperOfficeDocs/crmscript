@@ -10,8 +10,9 @@ so.topic: reference
 
 Creates a new selection based on external duplicate
 
-**Parameters:**
- - **duplicate** The duplicate to create a new entry based upon
+## Parameters
+
+* **duplicate** The duplicate to create a new entry based upon
 
 **Returns:** Integer
 

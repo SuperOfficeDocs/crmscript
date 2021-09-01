@@ -10,8 +10,9 @@ so.topic: reference
 
 Stop a batch job based on Id.
 
-**Parameters:**
- - **id** Id of the batch job to stop.
+## Parameters
+
+* **id** Id of the batch job to stop.
 
 **Returns:** Bool
 

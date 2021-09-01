@@ -11,7 +11,7 @@ so.topic: reference
 Formatting mask, can be whatever the controls understand (currently nothing :-))
 
 **Parameter:** 
- - **formatMask** String
+* **formatMask** String
 
 ```crmscript
 NSFieldInfoShortText thing;

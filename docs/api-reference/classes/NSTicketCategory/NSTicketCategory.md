@@ -8,4 +8,4 @@ so.topic: reference
 
 # NSTicketCategory
 
-Ticket Category - light read-only version of TicketCategoryEntity.
+Ticket Category* light read-only version of TicketCategoryEntity.

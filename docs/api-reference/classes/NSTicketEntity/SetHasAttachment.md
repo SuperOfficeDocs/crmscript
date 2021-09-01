@@ -11,7 +11,7 @@ so.topic: reference
 Bool indicating if this ticket has one or more attachments.
 
 **Parameter:** 
- - **hasAttachment** Bool
+* **hasAttachment** Bool
 
 ```crmscript
 NSTicketEntity thing;

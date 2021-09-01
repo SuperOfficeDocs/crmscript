@@ -11,7 +11,7 @@ so.topic: reference
 The identity of the web panel
 
 **Parameter:** 
- - **webPanelId** Integer
+* **webPanelId** Integer
 
 ```crmscript
 NSWebPanelEntity thing;

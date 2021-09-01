@@ -10,9 +10,10 @@ so.topic: reference
 
 Get the UID associated with the appointment id in the Invitation table.
 
-**Parameters:**
- - **appointmentId** 
- - **useMotherId** Uses motherId if no UID is found for appointmentId.
+## Parameters
+
+* **appointmentId** 
+* **useMotherId** Uses motherId if no UID is found for appointmentId.
 
 **Returns:** The associated UID, or null if none exist.
 

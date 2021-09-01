@@ -11,7 +11,7 @@ so.topic: reference
 Set the primary key (id) for the DeliveryType
 
 **Parameter:** 
- - **id** Integer DeliveryType id.
+* **id** Integer DeliveryType id.
 
 ```crmscript
 NSDeliveryType thing;

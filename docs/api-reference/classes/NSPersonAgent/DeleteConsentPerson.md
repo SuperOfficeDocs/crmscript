@@ -10,8 +10,9 @@ so.topic: reference
 
 Deletes the NSConsentPerson
   
-**Parameters:**
- - **consentPersonId** The identity of the ConsentPerson to delete.
+## Parameters
+
+* **consentPersonId** The identity of the ConsentPerson to delete.
 
 ```crmscript
 NSPersonAgent agent;

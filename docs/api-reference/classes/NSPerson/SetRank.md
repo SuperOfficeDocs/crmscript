@@ -11,7 +11,7 @@ so.topic: reference
 Display sort sequence for default sort order
 
 **Parameter:** 
- - **rank** Integer
+* **rank** Integer
 
 ```crmscript
 NSPerson thing;

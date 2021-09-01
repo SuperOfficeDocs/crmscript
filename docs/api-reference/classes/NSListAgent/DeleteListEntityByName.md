@@ -10,8 +10,9 @@ so.topic: reference
 
 Delete a NSListEntity resolved by the provided name.
 
-**Parameters:**
- - **name** The name of the list to delete.
+## Parameters
+
+* **name** The name of the list to delete.
 
 ```crmscript
 NSListAgent agent;

@@ -11,7 +11,7 @@ so.topic: reference
 True if deleted
 
 **Parameter:** 
- - **deleted** Bool
+* **deleted** Bool
 
 ```crmscript
 NSDocumentTemplateEntity thing;

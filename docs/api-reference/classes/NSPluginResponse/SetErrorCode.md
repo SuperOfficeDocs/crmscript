@@ -11,7 +11,7 @@ so.topic: reference
 An error code, if available.
 
 **Parameter:** 
- - **errorCode** String
+* **errorCode** String
 
 ```crmscript
 NSPluginResponse thing;

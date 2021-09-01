@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSPerson GetPerson()
 
-A sale may also be connected to a person - this must be a contact person registered on the current contact. This does not mean that a person is required.
+A sale may also be connected to a person* this must be a contact person registered on the current contact. This does not mean that a person is required.
 
 **Returns:** NSPerson
 

@@ -11,7 +11,7 @@ so.topic: reference
 Is this a read only field?
 
 **Parameter:** 
- - **editable** Bool
+* **editable** Bool
 
 ```crmscript
 NSQuoteLineConfiguration thing;

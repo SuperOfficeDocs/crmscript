@@ -10,5 +10,6 @@ so.topic: reference
 
 Deletes an associate of type external user.
 
-**Parameters:**
- - **associateId** The associateId to delete the associate entry for.
+## Parameters
+
+* **associateId** The associateId to delete the associate entry for.

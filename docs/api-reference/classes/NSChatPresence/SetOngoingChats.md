@@ -11,7 +11,7 @@ so.topic: reference
 The number of ongoing chats this users has now
 
 **Parameter:** 
- - **ongoingChats** Integer
+* **ongoingChats** Integer
 
 ```crmscript
 NSChatPresence thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Is the webpanel visible when user is on web client
 
 **Parameter:** 
- - **onSalesMarketingWeb** Bool
+* **onSalesMarketingWeb** Bool
 
 ```crmscript
 NSWebPanelEntity thing;

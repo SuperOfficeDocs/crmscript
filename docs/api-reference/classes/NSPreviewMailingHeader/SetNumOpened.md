@@ -11,7 +11,7 @@ so.topic: reference
 Number of recipients that opened the email.
 
 **Parameter:** 
- - **numOpened** Integer
+* **numOpened** Integer
 
 ```crmscript
 NSPreviewMailingHeader thing;

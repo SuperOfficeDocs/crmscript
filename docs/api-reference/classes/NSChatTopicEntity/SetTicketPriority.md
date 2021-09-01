@@ -11,7 +11,7 @@ so.topic: reference
 Priority on ticket created from off-line request
 
 **Parameter:** 
- - **ticketPriority** NSTicketPriority
+* **ticketPriority** NSTicketPriority
 
 ```crmscript
 NSChatTopicEntity thing;

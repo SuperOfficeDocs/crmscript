@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSSaleEntity object.
 
-**Parameters:**
- - **saleEntityId** The identifier of the NSSaleEntity object
+## Parameters
+
+* **saleEntityId** The identifier of the NSSaleEntity object
 
 **Returns:** NSSaleEntity
 

@@ -11,7 +11,7 @@ so.topic: reference
 If set, then this is a row that has been 'deleted'; we do not physically delete rows to avoid disaster.
 
 **Parameter:** 
- - **deleted** Bool
+* **deleted** Bool
 
 ```crmscript
 NSQuoteConnection thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Name of the person that last updated the foreign key
 
 **Parameter:** 
- - **updatedBy** String
+* **updatedBy** String
 
 ```crmscript
 NSForeignKey thing;

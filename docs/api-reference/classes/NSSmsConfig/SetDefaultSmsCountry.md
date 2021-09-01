@@ -11,7 +11,7 @@ so.topic: reference
 Phone prefix, will default to the current users HomeCountryId.
 
 **Parameter:** 
- - **defaultSmsCountry** String
+* **defaultSmsCountry** String
 
 ```crmscript
 NSSmsConfig thing;

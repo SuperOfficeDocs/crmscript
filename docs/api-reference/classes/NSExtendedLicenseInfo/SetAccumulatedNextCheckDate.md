@@ -9,7 +9,7 @@ so.topic: reference
 # SetAccumulatedNextCheckDate(DateTime accumulatedNextCheckDate)
 
 **Parameter:** 
- - **accumulatedNextCheckDate** DateTime
+* **accumulatedNextCheckDate** DateTime
 
 ```crmscript
 NSExtendedLicenseInfo thing;

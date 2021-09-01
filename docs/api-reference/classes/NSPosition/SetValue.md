@@ -11,7 +11,7 @@ so.topic: reference
 Set the name of the NSPosition item.
 
 **Parameter:** 
- - **value** String NSPosition name.
+* **value** String NSPosition name.
 
 ```crmscript
 NSPosition thing;

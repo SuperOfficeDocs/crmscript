@@ -11,7 +11,7 @@ so.topic: reference
 The actual tab order
 
 **Parameter:** 
- - **order** String
+* **order** String
 
 ```crmscript
 NSTabOrder thing;

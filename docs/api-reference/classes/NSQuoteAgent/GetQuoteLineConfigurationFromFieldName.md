@@ -10,8 +10,9 @@ so.topic: reference
 
 Returns the configuration field with the given field name
 
-**Parameters:**
- - **fieldName** Field name of the NSQuoteLineConfiguration to get.
+## Parameters
+
+* **fieldName** Field name of the NSQuoteLineConfiguration to get.
 
 **Returns:** NSQuoteLineConfiguration
 

@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a list of all possible connector capabilities
 
-**Parameters:**
- - **quoteConnectionId** Primary key of the connection
+## Parameters
+
+* **quoteConnectionId** Primary key of the connection
 
 **Returns:** String[]
 

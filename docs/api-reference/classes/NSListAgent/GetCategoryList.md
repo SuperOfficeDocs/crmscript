@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a vector of NSCategory objects.
 
-**Parameters:**
- - **categoryIds** The identifiers of the NSCategory objects
+## Parameters
+
+* **categoryIds** The identifiers of the NSCategory objects
 
 **Returns:** NSCategory[]
 

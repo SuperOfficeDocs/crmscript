@@ -10,10 +10,11 @@ so.topic: reference
 
 Saves the selected values as selected by their given list representation.
 
-**Parameters:**
- - **name** Conceptual name of the MDO list
- - **additionalInfo** Additional info to the MDO provider
- - **selectableMDOList** Items to be updated
+## Parameters
+
+* **name** Conceptual name of the MDO list
+* **additionalInfo** Additional info to the MDO provider
+* **selectableMDOList** Items to be updated
 
 **Returns:** NSSelectableMDOListItems[]
 

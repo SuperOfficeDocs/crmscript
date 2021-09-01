@@ -11,7 +11,7 @@ so.topic: reference
 Enable post chat form
 
 **Parameter:** 
- - **postFormEnabled** Bool
+* **postFormEnabled** Bool
 
 ```crmscript
 NSChatWidgetSettings thing;

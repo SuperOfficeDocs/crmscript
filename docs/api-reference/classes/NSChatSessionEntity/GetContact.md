@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSContact GetContact()
 
-Contact this session is connected to - could be empty if we don't know exactly.
+Contact this session is connected to* could be empty if we don't know exactly.
 
 **Returns:** NSContact
 

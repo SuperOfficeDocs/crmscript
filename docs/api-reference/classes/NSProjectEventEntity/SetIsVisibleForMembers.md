@@ -9,7 +9,7 @@ so.topic: reference
 # SetIsVisibleForMembers(Bool isVisibleForMembers)
 
 **Parameter:** 
- - **isVisibleForMembers** Bool
+* **isVisibleForMembers** Bool
 
 ```crmscript
 NSProjectEventEntity thing;

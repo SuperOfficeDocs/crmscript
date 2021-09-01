@@ -8,8 +8,9 @@ so.topic: reference
 
 # NSNavigatorCompany[] GetNavigatorCompanies(String name)
 
-**Parameters:**
- - **name** 
+## Parameters
+
+* **name** 
 
 **Returns:** NSNavigatorCompany[]
 

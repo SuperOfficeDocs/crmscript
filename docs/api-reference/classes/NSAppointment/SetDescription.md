@@ -11,7 +11,7 @@ so.topic: reference
 The appointment's textbox; holds a descriptive text about the appointment. Filled out by the user.
 
 **Parameter:** 
- - **description** String
+* **description** String
 
 ```crmscript
 NSAppointment thing;

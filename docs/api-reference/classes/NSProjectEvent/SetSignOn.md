@@ -11,7 +11,7 @@ so.topic: reference
 If true, it is possible to sign on the event.
 
 **Parameter:** 
- - **signOn** Bool
+* **signOn** Bool
 
 ```crmscript
 NSProjectEvent thing;

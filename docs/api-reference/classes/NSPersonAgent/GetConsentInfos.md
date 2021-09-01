@@ -10,8 +10,9 @@ so.topic: reference
 
 Get all consent information for a given person. May include withdrawn consents (check 
 
-**Parameters:**
- - **personId** The person id to get consents for
+## Parameters
+
+* **personId** The person id to get consents for
 
 **Returns:** NSConsentInfo[]
 

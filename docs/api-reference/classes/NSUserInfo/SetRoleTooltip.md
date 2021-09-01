@@ -9,7 +9,7 @@ so.topic: reference
 # SetRoleTooltip(String roleTooltip)
 
 **Parameter:** 
- - **roleTooltip** String
+* **roleTooltip** String
 
 ```crmscript
 NSUserInfo thing;

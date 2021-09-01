@@ -10,9 +10,10 @@ so.topic: reference
 
 Get details about a license from the license server.
 
-**Parameters:**
- - **licenseInfo** Description of the license
- - **moduleLicense** Information about a particular module to get information for.
+## Parameters
+
+* **licenseInfo** Description of the license
+* **moduleLicense** Information about a particular module to get information for.
 
 **Returns:** String
 

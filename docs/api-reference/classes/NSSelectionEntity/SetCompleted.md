@@ -11,7 +11,7 @@ so.topic: reference
 The Completed state. 
 
 **Parameter:** 
- - **completed** Bool
+* **completed** Bool
 
 ```crmscript
 NSSelectionEntity thing;

@@ -11,7 +11,7 @@ so.topic: reference
 The server port
 
 **Parameter:** 
- - **port** Integer
+* **port** Integer
 
 ```crmscript
 NSServiceAuth thing;

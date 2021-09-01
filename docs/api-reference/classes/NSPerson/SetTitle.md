@@ -11,7 +11,7 @@ so.topic: reference
 Title
 
 **Parameter:** 
- - **title** String
+* **title** String
 
 ```crmscript
 NSPerson thing;

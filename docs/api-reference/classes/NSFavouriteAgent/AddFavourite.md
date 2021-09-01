@@ -10,8 +10,9 @@ so.topic: reference
 
 Add a record in a table as a favourite for an associate
 
-**Parameters:**
- - **tableName** Table name, transformed to and from numeric table id by the service layer.
- - **recordId** 
- - **associateId** 
- - **extraInfo** 
+## Parameters
+
+* **tableName** Table name, transformed to and from numeric table id by the service layer.
+* **recordId** 
+* **associateId** 
+* **extraInfo** 

@@ -9,7 +9,7 @@ so.topic: reference
 # SetContactCountry(String contactCountry)
 
 **Parameter:** 
- - **contactCountry** String
+* **contactCountry** String
 
 ```crmscript
 NSParticipantSyncData thing;

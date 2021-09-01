@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSContact object.
 
-**Parameters:**
- - **contactId** The identifier of the NSContact object
+## Parameters
+
+* **contactId** The identifier of the NSContact object
 
 **Returns:** NSContact
 

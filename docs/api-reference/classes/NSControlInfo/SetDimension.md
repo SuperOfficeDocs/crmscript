@@ -9,7 +9,7 @@ so.topic: reference
 # SetDimension(Integer dimension)
 
 **Parameter:** 
- - **dimension** Integer
+* **dimension** Integer
 
 ```crmscript
 NSControlInfo thing;

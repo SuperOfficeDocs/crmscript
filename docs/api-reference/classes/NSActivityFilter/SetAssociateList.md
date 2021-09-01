@@ -11,7 +11,7 @@ so.topic: reference
 The list of associates to filter on
 
 **Parameter:** 
- - **associateList** NSSelectableMDOListItem[]
+* **associateList** NSSelectableMDOListItem[]
 
 ```crmscript
 NSActivityFilter thing;

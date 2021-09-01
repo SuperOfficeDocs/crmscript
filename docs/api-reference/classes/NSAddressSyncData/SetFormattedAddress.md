@@ -9,7 +9,7 @@ so.topic: reference
 # SetFormattedAddress(String formattedAddress)
 
 **Parameter:** 
- - **formattedAddress** String
+* **formattedAddress** String
 
 ```crmscript
 NSAddressSyncData thing;

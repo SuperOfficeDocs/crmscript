@@ -11,7 +11,7 @@ so.topic: reference
 Three-letter country-code according to ISO3166 
 
 **Parameter:** 
- - **threeLetterISOCountry** String
+* **threeLetterISOCountry** String
 
 ```crmscript
 NSCountry thing;

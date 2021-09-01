@@ -11,7 +11,7 @@ so.topic: reference
 Indicates if the folder is subscribed to
 
 **Parameter:** 
- - **subscribed** Bool
+* **subscribed** Bool
 
 ```crmscript
 NSEMailFolder thing;

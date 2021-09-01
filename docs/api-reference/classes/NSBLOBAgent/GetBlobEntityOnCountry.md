@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets the blob entity that represents the country flag binary object.
 
-**Parameters:**
- - **countryId** The country id
+## Parameters
+
+* **countryId** The country id
 
 **Returns:** NSBlobEntity
 

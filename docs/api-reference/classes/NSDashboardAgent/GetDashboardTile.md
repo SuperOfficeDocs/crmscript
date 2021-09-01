@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSDashboardTile object.
 
-**Parameters:**
- - **dashboardTileId** The identifier of the NSDashboardTile object
+## Parameters
+
+* **dashboardTileId** The identifier of the NSDashboardTile object
 
 **Returns:** NSDashboardTile
 

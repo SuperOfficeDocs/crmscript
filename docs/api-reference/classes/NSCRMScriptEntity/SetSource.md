@@ -11,7 +11,7 @@ so.topic: reference
 The script
 
 **Parameter:** 
- - **source** String
+* **source** String
 
 ```crmscript
 NSCRMScriptEntity thing;

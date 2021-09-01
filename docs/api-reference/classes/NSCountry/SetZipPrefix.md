@@ -11,7 +11,7 @@ so.topic: reference
 Post prefix
 
 **Parameter:** 
- - **zipPrefix** String
+* **zipPrefix** String
 
 ```crmscript
 NSCountry thing;

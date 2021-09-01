@@ -10,7 +10,8 @@ so.topic: reference
 
 Get a boolean value indicating if the current user has the functional right.
 
-**Parameters:**
- - **functionRight** Function right to check.
+## Parameters
+
+* **functionRight** Function right to check.
 
 **Returns:** Bool

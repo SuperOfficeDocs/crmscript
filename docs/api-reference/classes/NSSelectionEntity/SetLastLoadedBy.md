@@ -11,7 +11,7 @@ so.topic: reference
 Who last loaded this selection
 
 **Parameter:** 
- - **lastLoadedBy** Integer
+* **lastLoadedBy** Integer
 
 ```crmscript
 NSSelectionEntity thing;

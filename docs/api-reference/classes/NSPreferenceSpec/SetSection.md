@@ -11,7 +11,7 @@ so.topic: reference
 Preference section name
 
 **Parameter:** 
- - **section** String
+* **section** String
 
 ```crmscript
 NSPreferenceSpec thing;

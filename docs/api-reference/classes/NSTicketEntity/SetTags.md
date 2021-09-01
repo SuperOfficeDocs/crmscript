@@ -11,7 +11,7 @@ so.topic: reference
 An array containing the tags assigned to this request
 
 **Parameter:** 
- - **tags** Tag[]
+* **tags** Tag[]
 
 ```crmscript
 NSTicketEntity thing;

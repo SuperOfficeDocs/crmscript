@@ -11,7 +11,7 @@ so.topic: reference
 Set the primary key (id) for the NSRating
 
 **Parameter:** 
- - **id** Integer Rating id.
+* **id** Integer Rating id.
 
 ```crmscript
 NSRating thing;

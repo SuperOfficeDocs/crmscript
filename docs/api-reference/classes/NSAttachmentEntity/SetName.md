@@ -11,7 +11,7 @@ so.topic: reference
 The filename for the attachment.
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSAttachmentEntity thing;

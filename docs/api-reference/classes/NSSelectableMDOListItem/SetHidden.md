@@ -11,7 +11,7 @@ so.topic: reference
 True if the ListItem is hidden
 
 **Parameter:** 
- - **hidden** Bool
+* **hidden** Bool
 
 ```crmscript
 NSSelectableMDOListItem thing;

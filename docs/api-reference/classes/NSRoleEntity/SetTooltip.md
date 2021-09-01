@@ -11,7 +11,7 @@ so.topic: reference
 Description of the role.
 
 **Parameter:** 
- - **tooltip** String
+* **tooltip** String
 
 ```crmscript
 NSRoleEntity thing;

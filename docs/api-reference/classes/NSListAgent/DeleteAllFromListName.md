@@ -10,8 +10,9 @@ so.topic: reference
 
 Marks all items in the list deleted
 
-**Parameters:**
- - **udListDefinitionName** The name of the list definition, indicating which list to delete the items from.
+## Parameters
+
+* **udListDefinitionName** The name of the list definition, indicating which list to delete the items from.
 
 ```crmscript
 NSListAgent agent;

@@ -11,7 +11,7 @@ so.topic: reference
 Will this attachment be included in the next 'Send Quote' operation
 
 **Parameter:** 
- - **included** Bool
+* **included** Bool
 
 ```crmscript
 NSQuoteVersionAttachment thing;

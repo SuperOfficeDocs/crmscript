@@ -11,7 +11,7 @@ so.topic: reference
 Who created the appointment. Full name.
 
 **Parameter:** 
- - **createdByFullName** String
+* **createdByFullName** String
 
 ```crmscript
 NSAppointment thing;

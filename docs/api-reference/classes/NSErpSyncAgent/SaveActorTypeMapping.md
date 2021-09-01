@@ -10,8 +10,9 @@ so.topic: reference
 
 Save mappings for a connection/actor
 
-**Parameters:**
- - **mapping** The mapping to be saved; new mapping rows will be created in the database if needed
+## Parameters
+
+* **mapping** The mapping to be saved; new mapping rows will be created in the database if needed
 
 **Returns:** NSErpSyncActorTypeMapping
 

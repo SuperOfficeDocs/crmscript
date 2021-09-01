@@ -10,8 +10,9 @@ so.topic: reference
 
 Saves a connection to the database.
 
-**Parameters:**
- - **listMapping** The list item mappings to save.
+## Parameters
+
+* **listMapping** The list item mappings to save.
 
 **Returns:** NSErpConnectionListMappingContainer
 

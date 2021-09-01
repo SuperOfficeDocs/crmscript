@@ -11,7 +11,7 @@ so.topic: reference
 Event key, predefined in code
 
 **Parameter:** 
- - **eventkey** String
+* **eventkey** String
 
 ```crmscript
 NSSystemEventEntity thing;

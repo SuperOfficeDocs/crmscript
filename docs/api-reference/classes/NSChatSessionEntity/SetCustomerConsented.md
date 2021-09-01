@@ -11,7 +11,7 @@ so.topic: reference
 The customer consented when starting the session
 
 **Parameter:** 
- - **customerConsented** Bool
+* **customerConsented** Bool
 
 ```crmscript
 NSChatSessionEntity thing;

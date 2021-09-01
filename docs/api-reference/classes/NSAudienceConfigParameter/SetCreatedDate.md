@@ -11,7 +11,7 @@ so.topic: reference
 The date and time the configuration parameter was created
 
 **Parameter:** 
- - **createdDate** DateTime
+* **createdDate** DateTime
 
 ```crmscript
 NSAudienceConfigParameter thing;

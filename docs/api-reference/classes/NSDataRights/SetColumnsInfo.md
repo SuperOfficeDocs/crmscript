@@ -9,7 +9,7 @@ so.topic: reference
 # SetColumnsInfo(NSRelationToOwner[] columnsInfo)
 
 **Parameter:** 
- - **columnsInfo** NSRelationToOwner[]
+* **columnsInfo** NSRelationToOwner[]
 
 ```crmscript
 NSDataRights thing;

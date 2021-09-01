@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSTicketCategory object.
 
-**Parameters:**
- - **ticketCategoryId** The identifier of the NSTicketCategory object
+## Parameters
+
+* **ticketCategoryId** The identifier of the NSTicketCategory object
 
 **Returns:** NSTicketCategory
 

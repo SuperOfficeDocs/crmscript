@@ -9,7 +9,7 @@ so.topic: reference
 # SetEncodedLeadTexts(String[] encodedLeadTexts)
 
 **Parameter:** 
- - **encodedLeadTexts** String[]
+* **encodedLeadTexts** String[]
 
 ```crmscript
 NSOperationInfo thing;

@@ -11,7 +11,7 @@ so.topic: reference
 The sale owner
 
 **Parameter:** 
- - **associate** NSAssociate
+* **associate** NSAssociate
 
 ```crmscript
 NSSaleEntity thing;

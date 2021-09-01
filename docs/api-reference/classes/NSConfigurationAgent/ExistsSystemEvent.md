@@ -10,8 +10,9 @@ so.topic: reference
 
 Is there a system event with the given key?
 
-**Parameters:**
- - **key** The key to match on
+## Parameters
+
+* **key** The key to match on
 
 **Returns:** Bool
 

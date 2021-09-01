@@ -11,7 +11,7 @@ so.topic: reference
 The ID of the associate who last updated this record
 
 **Parameter:** 
- - **updatedAssociateId** Integer
+* **updatedAssociateId** Integer
 
 ```crmscript
 NSConsentInfo thing;

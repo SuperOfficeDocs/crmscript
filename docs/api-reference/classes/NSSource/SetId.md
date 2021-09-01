@@ -11,7 +11,7 @@ so.topic: reference
 Set the primary key (id) for the Source
 
 **Parameter:** 
- - **id** Integer Source id.
+* **id** Integer Source id.
 
 ```crmscript
 NSSource thing;

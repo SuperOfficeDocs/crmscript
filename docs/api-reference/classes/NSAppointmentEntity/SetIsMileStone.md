@@ -11,7 +11,7 @@ so.topic: reference
 Is this appointment a milestone?
 
 **Parameter:** 
- - **isMileStone** Bool
+* **isMileStone** Bool
 
 ```crmscript
 NSAppointmentEntity thing;

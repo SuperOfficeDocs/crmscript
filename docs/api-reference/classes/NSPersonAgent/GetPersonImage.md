@@ -10,8 +10,9 @@ so.topic: reference
 
 Returns the person image that is displayed in the CRM application.
 
-**Parameters:**
- - **personId** The person id of the person the image belongs to.
+## Parameters
+
+* **personId** The person id of the person the image belongs to.
 
 **Returns:** NSImage
 

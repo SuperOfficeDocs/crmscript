@@ -10,8 +10,9 @@ so.topic: reference
 
 Deletes the NSBlobEntity
   
-**Parameters:**
- - **blobEntityId** The identity of the NSBlobEntity to delete.
+## Parameters
+
+* **blobEntityId** The identity of the NSBlobEntity to delete.
 
 ```crmscript
 NSBLOBAgent agent;

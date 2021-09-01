@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **addressId** Integer
+* **addressId** Integer
 
 ```crmscript
 NSAddressSyncData thing;

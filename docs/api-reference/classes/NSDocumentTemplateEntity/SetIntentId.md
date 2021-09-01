@@ -11,7 +11,7 @@ so.topic: reference
 What is the intention of this document (used by SAINT)
 
 **Parameter:** 
- - **intentId** Integer
+* **intentId** Integer
 
 ```crmscript
 NSDocumentTemplateEntity thing;

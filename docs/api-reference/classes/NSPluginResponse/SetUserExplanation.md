@@ -11,7 +11,7 @@ so.topic: reference
 A localized explanation to the answer.
 
 **Parameter:** 
- - **userExplanation** String
+* **userExplanation** String
 
 ```crmscript
 NSPluginResponse thing;

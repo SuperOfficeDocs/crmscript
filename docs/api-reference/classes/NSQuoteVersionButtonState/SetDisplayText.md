@@ -11,7 +11,7 @@ so.topic: reference
 Text to be displayed on the button
 
 **Parameter:** 
- - **displayText** String
+* **displayText** String
 
 ```crmscript
 NSQuoteVersionButtonState thing;

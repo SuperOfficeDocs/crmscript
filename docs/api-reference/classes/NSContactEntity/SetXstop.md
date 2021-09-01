@@ -11,7 +11,7 @@ so.topic: reference
 STOP flag
 
 **Parameter:** 
- - **xstop** Bool
+* **xstop** Bool
 
 ```crmscript
 NSContactEntity thing;

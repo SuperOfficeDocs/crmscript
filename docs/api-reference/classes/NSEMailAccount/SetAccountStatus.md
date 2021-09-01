@@ -11,7 +11,7 @@ so.topic: reference
 The account status (Disabled or...) Readonly field
 
 **Parameter:** 
- - **accountStatus** Integer
+* **accountStatus** Integer
 
 ```crmscript
 NSEMailAccount thing;

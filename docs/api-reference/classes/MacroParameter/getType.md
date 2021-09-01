@@ -15,26 +15,26 @@ It is used for displaying correct control in form.
 
 ## Available types
 
- - AnchorLine
- - InfoFields
- - Grid
- - HR
- - BR
- - SubHeader
- - ParserCode
- - Messages
- - EjScript
- - HtmlGrid
- - Planner
- - StaticGrid
- - DrillDown
- - GenericGrid
- - InfoFields2
- - ExtraTableEntriesGrid
- - DirectedAcyclicGraph
- - EjscriptElement
- - Chart
- - WhereChart
- - ListRecipients
- - EntityCard
+* AnchorLine
+* InfoFields
+* Grid
+* HR
+* BR
+* SubHeader
+* ParserCode
+* Messages
+* EjScript
+* HtmlGrid
+* Planner
+* StaticGrid
+* DrillDown
+* GenericGrid
+* InfoFields2
+* ExtraTableEntriesGrid
+* DirectedAcyclicGraph
+* EjscriptElement
+* Chart
+* WhereChart
+* ListRecipients
+* EntityCard
 

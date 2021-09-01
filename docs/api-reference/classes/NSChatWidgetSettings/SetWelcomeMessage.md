@@ -11,7 +11,7 @@ so.topic: reference
 Short message displayed as long as the request is in queue or active
 
 **Parameter:** 
- - **welcomeMessage** String
+* **welcomeMessage** String
 
 ```crmscript
 NSChatWidgetSettings thing;

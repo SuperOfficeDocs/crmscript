@@ -11,7 +11,7 @@ so.topic: reference
 The id for the chat user
 
 **Parameter:** 
- - **userId** Integer
+* **userId** Integer
 
 ```crmscript
 NSChatPresence thing;

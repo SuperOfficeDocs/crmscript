@@ -11,7 +11,7 @@ so.topic: reference
 Length (in characters) of a text field, 0 for other types
 
 **Parameter:** 
- - **textLength** Integer
+* **textLength** Integer
 
 ```crmscript
 NSFieldInfoListText thing;

@@ -10,8 +10,9 @@ so.topic: reference
 
 Delete a quote alternative
 
-**Parameters:**
- - **quoteAlternativeId** Id of the quote alternative to delete.
+## Parameters
+
+* **quoteAlternativeId** Id of the quote alternative to delete.
 
 ```crmscript
 NSQuoteAgent agent;

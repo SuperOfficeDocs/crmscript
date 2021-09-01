@@ -11,7 +11,7 @@ so.topic: reference
 Custom DST end month, if 0 then parse startRule
 
 **Parameter:** 
- - **endMonth** Integer
+* **endMonth** Integer
 
 ```crmscript
 NSTimeZoneRule thing;

@@ -23,4 +23,4 @@ The default datetime is now.
     
     DateTime t = DateTime(2017, 6, 27, 8, 30, 0);
     
-    print(d.diff(t).toString()); // Prints time difference in sec - negative if t is largest
+    print(d.diff(t).toString()); // Prints time difference in sec* negative if t is largest

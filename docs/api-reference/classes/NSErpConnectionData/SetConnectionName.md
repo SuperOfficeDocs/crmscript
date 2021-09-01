@@ -11,7 +11,7 @@ so.topic: reference
 The name of the connection
 
 **Parameter:** 
- - **connectionName** String
+* **connectionName** String
 
 ```crmscript
 NSErpConnectionData thing;

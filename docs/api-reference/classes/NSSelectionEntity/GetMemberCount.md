@@ -8,7 +8,7 @@ so.topic: reference
 
 # Integer GetMemberCount()
 
-How many selectionmembers (for progress bar calculations) - estimate, -1 (or 4294967295) means we don't know
+How many selectionmembers (for progress bar calculations)* estimate, -1 (or 4294967295) means we don't know
 
 **Returns:** Integer
 

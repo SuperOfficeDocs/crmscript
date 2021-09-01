@@ -10,10 +10,11 @@ so.topic: reference
 
 Get a url to the document template
 
-**Parameters:**
- - **documentTemplateId** The id of the template
- - **writableUrl** Get a writeable url to the document template?
- - **languageCode** The language code ('en-US', 'nb-NO', etc). Use empty string if not supported or used.
+## Parameters
+
+* **documentTemplateId** The id of the template
+* **writableUrl** Get a writeable url to the document template?
+* **languageCode** The language code ('en-US', 'nb-NO', etc). Use empty string if not supported or used.
 
 **Returns:** String
 

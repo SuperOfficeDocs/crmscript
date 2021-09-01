@@ -10,10 +10,11 @@ so.topic: reference
 
 Returns all ForeignKeys that belong to a device with a given deviceIdentifier.
 
-**Parameters:**
- - **applicationName** The name of the foreign application.
- - **deviceName** The name of the foreign device.
- - **deviceIdentifier** Identifier for a unique grouping of keys within a device.
+## Parameters
+
+* **applicationName** The name of the foreign application.
+* **deviceName** The name of the foreign device.
+* **deviceIdentifier** Identifier for a unique grouping of keys within a device.
 
 **Returns:** NSForeignKey[]
 

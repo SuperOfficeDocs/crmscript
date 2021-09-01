@@ -11,7 +11,7 @@ so.topic: reference
 The sale stage
 
 **Parameter:** 
- - **value** String
+* **value** String
 
 ```crmscript
 NSSaleStageEntity thing;

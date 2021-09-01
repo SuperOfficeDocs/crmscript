@@ -11,7 +11,7 @@ so.topic: reference
 Tooltip for data value
 
 **Parameter:** 
- - **description** String
+* **description** String
 
 ```crmscript
 NSStatisticsDataValue thing;

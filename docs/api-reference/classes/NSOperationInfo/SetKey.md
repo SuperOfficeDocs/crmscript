@@ -9,7 +9,7 @@ so.topic: reference
 # SetKey(String key)
 
 **Parameter:** 
- - **key** String
+* **key** String
 
 ```crmscript
 NSOperationInfo thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Enable transcript of chat session
 
 **Parameter:** 
- - **postTranscriptEnabled** Bool
+* **postTranscriptEnabled** Bool
 
 ```crmscript
 NSChatWidgetSettings thing;

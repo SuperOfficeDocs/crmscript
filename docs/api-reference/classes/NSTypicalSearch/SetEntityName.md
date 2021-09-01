@@ -11,7 +11,7 @@ so.topic: reference
 The name of the entity the typical search links to
 
 **Parameter:** 
- - **entityName** String
+* **entityName** String
 
 ```crmscript
 NSTypicalSearch thing;

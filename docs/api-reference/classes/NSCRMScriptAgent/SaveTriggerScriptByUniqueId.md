@@ -10,9 +10,10 @@ so.topic: reference
 
 Validate a CRMScript. This will check that the syntax is correct
 
-**Parameters:**
- - **triggerScriptUniqueId** The unique id of the CRMScript to validate
- - **entity** Trigger script details and source code
+## Parameters
+
+* **triggerScriptUniqueId** The unique id of the CRMScript to validate
+* **entity** Trigger script details and source code
 
 **Returns:** NSTriggerScriptEntity
 

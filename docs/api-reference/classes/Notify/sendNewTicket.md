@@ -12,5 +12,5 @@ This method will send a notification about a new request according to the user's
 
 ## Parameters
 
- - ticketId: the id of the ticket to notify about
+* ticketId: the id of the ticket to notify about
 

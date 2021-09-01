@@ -10,7 +10,8 @@ so.topic: reference
 
 Moved specified items from current folder to targetFolder
 
-**Parameters:**
- - **connectionInfo** All information needed to connect to the mailserver
- - **messageServerIds** The e-mails to handle
- - **targetFolder** Name of folder to move items to
+## Parameters
+
+* **connectionInfo** All information needed to connect to the mailserver
+* **messageServerIds** The e-mails to handle
+* **targetFolder** Name of folder to move items to

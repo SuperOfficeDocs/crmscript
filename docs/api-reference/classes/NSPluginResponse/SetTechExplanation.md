@@ -11,7 +11,7 @@ so.topic: reference
 Always in English
 
 **Parameter:** 
- - **techExplanation** String
+* **techExplanation** String
 
 ```crmscript
 NSPluginResponse thing;

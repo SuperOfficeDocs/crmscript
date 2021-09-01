@@ -11,7 +11,7 @@ so.topic: reference
 Set the name of the NSMrMrs item.
 
 **Parameter:** 
- - **value** String NSMrMrs name.
+* **value** String NSMrMrs name.
 
 ```crmscript
 NSMrMrs thing;

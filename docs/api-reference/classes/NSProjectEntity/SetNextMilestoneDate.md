@@ -11,7 +11,7 @@ so.topic: reference
 Calculated date, reflects date of closest non-complete future milestone activity
 
 **Parameter:** 
- - **nextMilestoneDate** DateTime
+* **nextMilestoneDate** DateTime
 
 ```crmscript
 NSProjectEntity thing;

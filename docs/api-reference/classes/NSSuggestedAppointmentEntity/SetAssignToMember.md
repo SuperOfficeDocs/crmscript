@@ -11,7 +11,7 @@ so.topic: reference
 Should this appointment be assigned to project member
 
 **Parameter:** 
- - **assignToMember** Bool
+* **assignToMember** Bool
 
 ```crmscript
 NSSuggestedAppointmentEntity thing;

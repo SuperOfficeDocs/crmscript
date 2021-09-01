@@ -9,7 +9,7 @@ so.topic: reference
 # SetCreatedBy(NSAssociate createdBy)
 
 **Parameter:** 
- - **createdBy** NSAssociate
+* **createdBy** NSAssociate
 
 ```crmscript
 NSContactRelationEntity thing;

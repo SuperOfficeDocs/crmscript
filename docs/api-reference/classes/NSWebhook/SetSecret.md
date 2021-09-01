@@ -11,7 +11,7 @@ so.topic: reference
 Shared secret key used for generating SHA256 HMAC signature, so that receiver can verify that call came from this server
 
 **Parameter:** 
- - **secret** String
+* **secret** String
 
 ```crmscript
 NSWebhook thing;

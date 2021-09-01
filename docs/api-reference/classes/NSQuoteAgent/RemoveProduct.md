@@ -10,5 +10,6 @@ so.topic: reference
 
 Removes a product from the database
 
-**Parameters:**
- - **productId** The database id of the product to remove
+## Parameters
+
+* **productId** The database id of the product to remove

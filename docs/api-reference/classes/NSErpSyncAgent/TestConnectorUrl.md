@@ -10,8 +10,9 @@ so.topic: reference
 
 Test if connector urls anwers
 
-**Parameters:**
- - **url** The url to test connection on
+## Parameters
+
+* **url** The url to test connection on
 
 **Returns:** Integer
 

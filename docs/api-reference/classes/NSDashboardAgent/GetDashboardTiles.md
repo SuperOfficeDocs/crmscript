@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets an array of dashboard tiles for the provided ids
 
-**Parameters:**
- - **dashboardTileIds** The ids of the tiles to get
+## Parameters
+
+* **dashboardTileIds** The ids of the tiles to get
 
 **Returns:** NSDashboardTile[]
 

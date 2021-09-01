@@ -11,7 +11,7 @@ so.topic: reference
 Set the tooltip description for the NSBusiness list item.
 
 **Parameter:** 
- - **tooltip** String NSBusiness tooltip description.
+* **tooltip** String NSBusiness tooltip description.
 
 ```crmscript
 NSBusiness thing;

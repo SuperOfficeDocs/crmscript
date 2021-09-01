@@ -10,8 +10,9 @@ so.topic: reference
 
 Returns an array of strings(notepad pages).
 
-**Parameters:**
- - **associateId** The associate id
+## Parameters
+
+* **associateId** The associate id
 
 **Returns:** Returns an array of strings(notepad pages).
 

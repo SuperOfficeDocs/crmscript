@@ -10,8 +10,9 @@ so.topic: reference
 
 Generates a new password for an external user.
 
-**Parameters:**
- - **associateName** The name of the associate to change the password for.
+## Parameters
+
+* **associateName** The name of the associate to change the password for.
 
 **Returns:** String
 

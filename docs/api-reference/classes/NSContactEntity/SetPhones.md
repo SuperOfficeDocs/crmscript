@@ -11,7 +11,7 @@ so.topic: reference
 The contact's phone numbers
 
 **Parameter:** 
- - **phones** NSEntityElement[]
+* **phones** NSEntityElement[]
 
 ```crmscript
 NSContactEntity thing;

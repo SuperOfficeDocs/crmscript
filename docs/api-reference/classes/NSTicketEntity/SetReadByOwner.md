@@ -11,7 +11,7 @@ so.topic: reference
 The datetime for when the ticket last was read by the owner.
 
 **Parameter:** 
- - **readByOwner** DateTime
+* **readByOwner** DateTime
 
 ```crmscript
 NSTicketEntity thing;

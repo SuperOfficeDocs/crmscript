@@ -11,7 +11,7 @@ so.topic: reference
 Number of overdued sales for current user
 
 **Parameter:** 
- - **overdueSalesCount** Integer
+* **overdueSalesCount** Integer
 
 ```crmscript
 NSPocketStartupData thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Preference specification, consisting of the section name and key name
 
 **Parameter:** 
- - **specification** NSPreferenceSpec
+* **specification** NSPreferenceSpec
 
 ```crmscript
 NSPreference thing;

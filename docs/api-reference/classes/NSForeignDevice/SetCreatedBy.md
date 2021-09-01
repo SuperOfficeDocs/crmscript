@@ -11,7 +11,7 @@ so.topic: reference
 The person that created the device.
 
 **Parameter:** 
- - **createdBy** String
+* **createdBy** String
 
 ```crmscript
 NSForeignDevice thing;

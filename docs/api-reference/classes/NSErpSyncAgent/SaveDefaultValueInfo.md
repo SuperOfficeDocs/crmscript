@@ -10,8 +10,9 @@ so.topic: reference
 
 Save information about a default value for an ERP field
 
-**Parameters:**
- - **erpSyncDefaultValue** The id of the ERPfield to save
+## Parameters
+
+* **erpSyncDefaultValue** The id of the ERPfield to save
 
 **Returns:** NSErpSyncDefaultValue
 

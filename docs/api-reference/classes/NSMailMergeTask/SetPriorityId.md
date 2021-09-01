@@ -11,7 +11,7 @@ so.topic: reference
 Priority of task
 
 **Parameter:** 
- - **priorityId** Integer
+* **priorityId** Integer
 
 ```crmscript
 NSMailMergeTask thing;

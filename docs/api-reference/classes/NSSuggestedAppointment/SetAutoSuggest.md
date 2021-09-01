@@ -11,7 +11,7 @@ so.topic: reference
 Should this appointment be auto-suggested
 
 **Parameter:** 
- - **autoSuggest** Integer
+* **autoSuggest** Integer
 
 ```crmscript
 NSSuggestedAppointment thing;

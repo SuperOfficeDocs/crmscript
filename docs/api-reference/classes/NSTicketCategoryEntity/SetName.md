@@ -11,7 +11,7 @@ so.topic: reference
 The (short) name of this category. E.g. &apos;support&apos;.
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSTicketCategoryEntity thing;

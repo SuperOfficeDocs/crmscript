@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSChatSessionEntity object.
 
-**Parameters:**
- - **chatSessionEntityId** The identifier of the NSChatSessionEntity object
+## Parameters
+
+* **chatSessionEntityId** The identifier of the NSChatSessionEntity object
 
 **Returns:** NSChatSessionEntity
 

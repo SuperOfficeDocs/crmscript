@@ -11,7 +11,7 @@ so.topic: reference
 When the task should start
 
 **Parameter:** 
- - **startDate** DateTime
+* **startDate** DateTime
 
 ```crmscript
 NSMailMergeTask thing;

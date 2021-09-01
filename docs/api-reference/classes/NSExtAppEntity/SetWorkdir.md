@@ -11,7 +11,7 @@ so.topic: reference
 Directory set to current when loading the application, if different from application's own
 
 **Parameter:** 
- - **workdir** String
+* **workdir** String
 
 ```crmscript
 NSExtAppEntity thing;

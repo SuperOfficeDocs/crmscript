@@ -11,7 +11,7 @@ so.topic: reference
 Updates the existing NSTicketPriorityEntity or creates a new NSTicketPriorityEntity if the id parameter is 0
 
 **Parameters**:
- - **ticketPriorityEntity** The NSTicketPriorityEntity to save.
+* **ticketPriorityEntity** The NSTicketPriorityEntity to save.
 
 **Returns:** NSTicketPriorityEntity
 

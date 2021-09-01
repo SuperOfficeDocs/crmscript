@@ -10,8 +10,9 @@ so.topic: reference
 
 Get the document as a stream
 
-**Parameters:**
- - **documentEntity** The document entity object that refers to the binary data (document)
+## Parameters
+
+* **documentEntity** The document entity object that refers to the binary data (document)
 
 **Returns:** NSStream
 

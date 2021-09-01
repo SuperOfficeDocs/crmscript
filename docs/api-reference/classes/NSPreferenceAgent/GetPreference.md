@@ -10,8 +10,9 @@ so.topic: reference
 
 Get a preference by id
 
-**Parameters:**
- - **id** The id of the preference to load
+## Parameters
+
+* **id** The id of the preference to load
 
 **Returns:** NSPreference
 

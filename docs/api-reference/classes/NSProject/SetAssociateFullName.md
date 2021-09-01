@@ -11,7 +11,7 @@ so.topic: reference
 The project owner
 
 **Parameter:** 
- - **associateFullName** String
+* **associateFullName** String
 
 ```crmscript
 NSProject thing;

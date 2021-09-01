@@ -11,7 +11,7 @@ so.topic: reference
 0 = Include first person, 1 = Include all persons, 2 = Include no persons
 
 **Parameter:** 
- - **includePerson** Integer
+* **includePerson** Integer
 
 ```crmscript
 NSSelectionEntity thing;

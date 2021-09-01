@@ -9,7 +9,7 @@ so.topic: reference
 # SetSupportAssociate(NSAssociate supportAssociate)
 
 **Parameter:** 
- - **supportAssociate** NSAssociate
+* **supportAssociate** NSAssociate
 
 ```crmscript
 NSPersonEntity thing;

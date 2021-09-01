@@ -11,7 +11,7 @@ so.topic: reference
 The mail server
 
 **Parameter:** 
- - **server** String
+* **server** String
 
 ```crmscript
 NSServiceAuth thing;

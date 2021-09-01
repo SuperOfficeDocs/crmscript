@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **satelliteId** Integer
+* **satelliteId** Integer
 
 ```crmscript
 NSSatellite thing;

@@ -10,9 +10,10 @@ so.topic: reference
 
 Get the object mappings, i.e., the what code objects should be instantiated to handle the entities of the client configuration.
 
-**Parameters:**
- - **application** The application name, for instance 'SixWeb'
- - **instance** The instance name for the application, like 'MainInstance'
+## Parameters
+
+* **application** The application name, for instance 'SixWeb'
+* **instance** The instance name for the application, like 'MainInstance'
 
 **Returns:** String
 

@@ -10,9 +10,10 @@ so.topic: reference
 
 Remove credential of a specific type for a user
 
-**Parameters:**
- - **userId** Primary key of the user (i.e. associate)
- - **credentialType** Type of credentials, corresponding to name of plugin and type in the credentials table
+## Parameters
+
+* **userId** Primary key of the user (i.e. associate)
+* **credentialType** Type of credentials, corresponding to name of plugin and type in the credentials table
 
 **Returns:** Bool
 

@@ -10,9 +10,10 @@ so.topic: reference
 
 Return information about all the custom fields (user-defined + extra) on a particular table
 
-**Parameters:**
- - **tableName** The name of table that owns the custom fields. e.g. 'contact', 'person', 'project' etc.
- - **includeStandard** Include standard fields in result. Default false.
+## Parameters
+
+* **tableName** The name of table that owns the custom fields. e.g. 'contact', 'person', 'project' etc.
+* **includeStandard** Include standard fields in result. Default false.
 
 **Returns:** NSFieldInfoBase[]
 

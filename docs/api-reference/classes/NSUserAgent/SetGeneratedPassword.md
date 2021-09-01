@@ -8,7 +8,8 @@ so.topic: reference
 
 # String SetGeneratedPassword(Integer associateId)
 
-**Parameters:**
- - **associateId** 
+## Parameters
+
+* **associateId** 
 
 **Returns:** String

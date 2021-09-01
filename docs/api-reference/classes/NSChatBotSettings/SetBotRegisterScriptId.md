@@ -11,7 +11,7 @@ so.topic: reference
 Script id to register/unregister chatbot. 0 if there is no bot
 
 **Parameter:** 
- - **botRegisterScriptId** Integer
+* **botRegisterScriptId** Integer
 
 ```crmscript
 NSChatBotSettings thing;

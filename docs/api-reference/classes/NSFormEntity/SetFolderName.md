@@ -11,7 +11,7 @@ so.topic: reference
 The name of the folder for this form
 
 **Parameter:** 
- - **folderName** String
+* **folderName** String
 
 ```crmscript
 NSFormEntity thing;

@@ -11,7 +11,7 @@ so.topic: reference
 The user that created the person object
 
 **Parameter:** 
- - **createdBy** NSAssociate
+* **createdBy** NSAssociate
 
 ```crmscript
 NSPersonEntity thing;

@@ -11,7 +11,7 @@ so.topic: reference
 List of id's of the participants to this appointment.
 
 **Parameter:** 
- - **participants** ParticipantInfo[]
+* **participants** ParticipantInfo[]
 
 ```crmscript
 NSAppointmentEntity thing;

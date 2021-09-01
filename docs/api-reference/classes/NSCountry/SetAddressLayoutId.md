@@ -11,7 +11,7 @@ so.topic: reference
 Address layout of the country
 
 **Parameter:** 
- - **addressLayoutId** Integer
+* **addressLayoutId** Integer
 
 ```crmscript
 NSCountry thing;

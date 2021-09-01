@@ -11,7 +11,7 @@ so.topic: reference
 Has the udef field been published?
 
 **Parameter:** 
- - **hasBeenPublished** Bool
+* **hasBeenPublished** Bool
 
 ```crmscript
 NSUserDefinedFieldInfo thing;

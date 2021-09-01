@@ -10,5 +10,6 @@ so.topic: reference
 
 Set the replied_at field based on the MessageID
 
-**Parameters:**
- - **messageId** The MessageID
+## Parameters
+
+* **messageId** The MessageID

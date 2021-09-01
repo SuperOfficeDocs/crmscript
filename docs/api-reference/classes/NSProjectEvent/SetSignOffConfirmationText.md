@@ -11,7 +11,7 @@ so.topic: reference
 Text shown as confirmation text before accepting sign off.
 
 **Parameter:** 
- - **signOffConfirmationText** String
+* **signOffConfirmationText** String
 
 ```crmscript
 NSProjectEvent thing;

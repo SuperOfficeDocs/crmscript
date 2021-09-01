@@ -11,7 +11,7 @@ so.topic: reference
 Contact department
 
 **Parameter:** 
- - **contactDepartment** String
+* **contactDepartment** String
 
 ```crmscript
 NSProjectMember thing;

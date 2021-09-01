@@ -10,8 +10,9 @@ so.topic: reference
 
 Searching the phone list. Using default search preferences or the preferences already set by the NSPhoneListPreferences Service
 
-**Parameters:**
- - **searchString** The search string
+## Parameters
+
+* **searchString** The search string
 
 **Returns:** The resulting phone list
 

@@ -11,7 +11,7 @@ so.topic: reference
 Id of the associate that created the appointment
 
 **Parameter:** 
- - **createdByAssociateId** Integer
+* **createdByAssociateId** Integer
 
 ```crmscript
 NSAppointment thing;

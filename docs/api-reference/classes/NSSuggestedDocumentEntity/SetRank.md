@@ -11,7 +11,7 @@ so.topic: reference
 Rank, controls rank of non-instantiated items in Guide
 
 **Parameter:** 
- - **rank** Integer
+* **rank** Integer
 
 ```crmscript
 NSSuggestedDocumentEntity thing;

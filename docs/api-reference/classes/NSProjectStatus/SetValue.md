@@ -11,7 +11,7 @@ so.topic: reference
 Set the name of the NSProjectStatus item.
 
 **Parameter:** 
- - **value** String NSProjectStatus name.
+* **value** String NSProjectStatus name.
 
 ```crmscript
 NSProjectStatus thing;

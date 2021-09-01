@@ -10,8 +10,9 @@ so.topic: reference
 
 Get a single status monitor based on its identity
 
-**Parameters:**
- - **id** Identity of status monitor
+## Parameters
+
+* **id** Identity of status monitor
 
 **Returns:** NSStatusMonitor
 

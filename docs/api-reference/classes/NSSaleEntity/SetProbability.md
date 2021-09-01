@@ -11,7 +11,7 @@ so.topic: reference
 Actual probability, may differ from the one in the list
 
 **Parameter:** 
- - **probability** Integer
+* **probability** Integer
 
 ```crmscript
 NSSaleEntity thing;

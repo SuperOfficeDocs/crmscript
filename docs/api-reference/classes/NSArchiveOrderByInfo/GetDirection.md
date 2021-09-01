@@ -12,8 +12,8 @@ Direction to order.
 
 **Returns:** Integer
 
-     - Enum: 0 = ASC 
-     - Enum: 1 = DESC 
+* Enum: 0 = ASC 
+* Enum: 1 = DESC 
 
 ```crmscript
 NSArchiveOrderByInfo thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Can the field support multi use?
 
 **Parameter:** 
- - **canSupportMultiUse** Bool
+* **canSupportMultiUse** Bool
 
 ```crmscript
 NSFieldValueInfo thing;

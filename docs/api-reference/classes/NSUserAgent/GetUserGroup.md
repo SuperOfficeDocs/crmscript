@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSUserGroup object.
 
-**Parameters:**
- - **userGroupId** The identifier of the NSUserGroup object
+## Parameters
+
+* **userGroupId** The identifier of the NSUserGroup object
 
 **Returns:** NSUserGroup
 

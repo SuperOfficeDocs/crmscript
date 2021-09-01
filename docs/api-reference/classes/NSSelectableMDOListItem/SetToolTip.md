@@ -11,7 +11,7 @@ so.topic: reference
 The tooltip of the ListItem
 
 **Parameter:** 
- - **toolTip** String
+* **toolTip** String
 
 ```crmscript
 NSSelectableMDOListItem thing;

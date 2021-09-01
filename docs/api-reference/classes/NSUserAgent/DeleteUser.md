@@ -10,8 +10,9 @@ so.topic: reference
 
 Deletes the NSUser
   
-**Parameters:**
- - **userId** The identity of the User to delete.
+## Parameters
+
+* **userId** The identity of the User to delete.
 
 ```crmscript
 NSUserAgent agent;

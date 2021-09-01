@@ -10,8 +10,9 @@ so.topic: reference
 
 Reset chat session, put it back on the queue for pickup. Used by bots to hand off a session to human
 
-**Parameters:**
- - **chatSessionId** id of the chat session to reset
+## Parameters
+
+* **chatSessionId** id of the chat session to reset
 
 **Returns:** NSChatSessionEntity
 

@@ -11,7 +11,7 @@ so.topic: reference
 1 = this row is populated and maintained by SuperOffice
 
 **Parameter:** 
- - **isBuiltIn** Bool
+* **isBuiltIn** Bool
 
 ```crmscript
 NSLocalizedText thing;

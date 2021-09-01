@@ -9,6 +9,7 @@ so.topic: reference
 # NSQuoteAlternative CreateDefaultQuoteAlternative()
 
 Set default values into a new NSQuoteAlternative.
+
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance
 
 **Returns:** NSQuoteAlternative
@@ -18,4 +19,3 @@ NSQuoteAgent agent;
 NSQuoteAlternative thing = agent.CreateDefaultQuoteAlternative();
 thing = agent.SaveQuoteAlternative(thing);
 ```
-

@@ -11,7 +11,7 @@ so.topic: reference
 A strictly ascending number used for sorting categories when they are listed.
 
 **Parameter:** 
- - **sortOrder** Integer
+* **sortOrder** Integer
 
 ```crmscript
 NSKbCategory thing;

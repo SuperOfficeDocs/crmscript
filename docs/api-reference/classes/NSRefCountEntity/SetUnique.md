@@ -11,7 +11,7 @@ so.topic: reference
 Check that entered value is unique
 
 **Parameter:** 
- - **unique** Bool
+* **unique** Bool
 
 ```crmscript
 NSRefCountEntity thing;

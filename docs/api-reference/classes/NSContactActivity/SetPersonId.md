@@ -11,7 +11,7 @@ so.topic: reference
 The person id
 
 **Parameter:** 
- - **personId** Integer
+* **personId** Integer
 
 ```crmscript
 NSContactActivity thing;

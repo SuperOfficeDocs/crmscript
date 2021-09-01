@@ -11,7 +11,7 @@ so.topic: reference
 Use the custom queue message text
 
 **Parameter:** 
- - **customQueueTextEnabled** Bool
+* **customQueueTextEnabled** Bool
 
 ```crmscript
 NSChatTopicEntity thing;

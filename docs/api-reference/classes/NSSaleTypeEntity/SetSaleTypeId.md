@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **saleTypeId** Integer
+* **saleTypeId** Integer
 
 ```crmscript
 NSSaleTypeEntity thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Updates the existing NSCurrencyEntity or creates a new NSCurrencyEntity if the id parameter is 0
 
 **Parameters**:
- - **currencyEntity** The NSCurrencyEntity to save.
+* **currencyEntity** The NSCurrencyEntity to save.
 
 **Returns:** NSCurrencyEntity
 

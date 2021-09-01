@@ -10,8 +10,9 @@ so.topic: reference
 
 Get a NSQuote
 
-**Parameters:**
- - **quoteId** QuoteId of the NSQuote to get.
+## Parameters
+
+* **quoteId** QuoteId of the NSQuote to get.
 
 **Returns:** NSQuote
 

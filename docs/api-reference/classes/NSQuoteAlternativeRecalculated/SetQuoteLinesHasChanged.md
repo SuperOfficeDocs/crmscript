@@ -11,7 +11,7 @@ so.topic: reference
 If true any of the quotelines for the alternative has been changed.
 
 **Parameter:** 
- - **quoteLinesHasChanged** Bool
+* **quoteLinesHasChanged** Bool
 
 ```crmscript
 NSQuoteAlternativeRecalculated thing;

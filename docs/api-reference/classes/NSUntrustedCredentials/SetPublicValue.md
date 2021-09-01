@@ -11,7 +11,7 @@ so.topic: reference
 Data stored unencrypted in the db.  Typically server and or username. Max 238 characters.
 
 **Parameter:** 
- - **publicValue** String
+* **publicValue** String
 
 ```crmscript
 NSUntrustedCredentials thing;

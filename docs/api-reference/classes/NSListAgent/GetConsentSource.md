@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSConsentSource object.
 
-**Parameters:**
- - **consentSourceId** The identifier of the NSConsentSource object
+## Parameters
+
+* **consentSourceId** The identifier of the NSConsentSource object
 
 **Returns:** NSConsentSource
 

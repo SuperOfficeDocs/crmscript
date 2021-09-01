@@ -10,9 +10,10 @@ so.topic: reference
 
 Get an array of NSBatchTaskInfo for the provided associate id's and batch task definition name.
 
-**Parameters:**
- - **name** Batchtask definition name.
- - **associateIds** Array of associate id's.
+## Parameters
+
+* **name** Batchtask definition name.
+* **associateIds** Array of associate id's.
 
 **Returns:** NSBatchTaskInfo[]
 

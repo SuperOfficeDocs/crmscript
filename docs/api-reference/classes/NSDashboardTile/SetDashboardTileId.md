@@ -11,7 +11,7 @@ so.topic: reference
 The tile id
 
 **Parameter:** 
- - **dashboardTileId** Integer
+* **dashboardTileId** Integer
 
 ```crmscript
 NSDashboardTile thing;

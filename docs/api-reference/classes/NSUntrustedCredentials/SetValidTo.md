@@ -11,7 +11,7 @@ so.topic: reference
 Credentials are valid to this date.
 
 **Parameter:** 
- - **validTo** DateTime
+* **validTo** DateTime
 
 ```crmscript
 NSUntrustedCredentials thing;

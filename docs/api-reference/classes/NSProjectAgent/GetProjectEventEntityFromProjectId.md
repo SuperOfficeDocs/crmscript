@@ -10,8 +10,9 @@ so.topic: reference
 
 Get a NSProjectEventEntity based on a projectId.
 
-**Parameters:**
- - **projectId** The projectId to get a NSProjectEventEntity for
+## Parameters
+
+* **projectId** The projectId to get a NSProjectEventEntity for
 
 **Returns:** NSProjectEventEntity
 

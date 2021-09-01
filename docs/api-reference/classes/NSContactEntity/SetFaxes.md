@@ -11,7 +11,7 @@ so.topic: reference
 The contact's fax numbers
 
 **Parameter:** 
- - **faxes** NSEntityElement[]
+* **faxes** NSEntityElement[]
 
 ```crmscript
 NSContactEntity thing;

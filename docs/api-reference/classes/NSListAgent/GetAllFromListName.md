@@ -10,9 +10,10 @@ so.topic: reference
 
 Get all list items for the specified list defintion
 
-**Parameters:**
- - **udListDefinitionName** The name of the list definition, indicating which list to get the item from.
- - **includeDeleted** Include deleted items in result?
+## Parameters
+
+* **udListDefinitionName** The name of the list definition, indicating which list to get the item from.
+* **includeDeleted** Include deleted items in result?
 
 **Returns:** NSListItemEntity[]
 

@@ -11,7 +11,7 @@ so.topic: reference
 The number of active erp links
 
 **Parameter:** 
- - **activeErpLinks** Integer
+* **activeErpLinks** Integer
 
 ```crmscript
 NSContact thing;

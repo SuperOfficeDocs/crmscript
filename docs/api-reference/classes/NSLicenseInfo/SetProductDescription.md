@@ -11,7 +11,7 @@ so.topic: reference
 Description of type of product
 
 **Parameter:** 
- - **productDescription** String
+* **productDescription** String
 
 ```crmscript
 NSLicenseInfo thing;

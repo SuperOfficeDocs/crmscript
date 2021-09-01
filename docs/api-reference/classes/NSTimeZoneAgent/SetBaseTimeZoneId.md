@@ -10,8 +10,9 @@ so.topic: reference
 
 Set the base timezone id.
 
-**Parameters:**
- - **timezoneId** The timezone id to save
+## Parameters
+
+* **timezoneId** The timezone id to save
 
 **Returns:** Bool
 

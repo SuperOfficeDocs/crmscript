@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **selectionId** Integer
+* **selectionId** Integer
 
 ```crmscript
 NSSelectionForFind thing;

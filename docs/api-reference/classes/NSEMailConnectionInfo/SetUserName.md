@@ -11,7 +11,7 @@ so.topic: reference
 Name of user to log in with
 
 **Parameter:** 
- - **userName** String
+* **userName** String
 
 ```crmscript
 NSEMailConnectionInfo thing;

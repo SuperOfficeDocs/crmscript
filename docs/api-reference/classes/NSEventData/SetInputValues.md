@@ -11,7 +11,7 @@ so.topic: reference
 Environment values sent to the event handler
 
 **Parameter:** 
- - **inputValues** StringDictionary
+* **inputValues** StringDictionary
 
 ```crmscript
 NSEventData thing;

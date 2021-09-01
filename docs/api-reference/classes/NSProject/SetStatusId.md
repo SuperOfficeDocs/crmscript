@@ -11,7 +11,7 @@ so.topic: reference
 The projects status id
 
 **Parameter:** 
- - **statusId** Integer
+* **statusId** Integer
 
 ```crmscript
 NSProject thing;

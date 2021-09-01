@@ -10,6 +10,7 @@ so.topic: reference
 
 Saves a project image that is displayed in the CRM application's project image selection dialog to the database.
 
-**Parameters:**
- - **description** Image description. Should be image name (e.g. winter.jpg) for project images
- - **image** The project image (System.Drawing.Image)
+## Parameters
+
+* **description** Image description. Should be image name (e.g. winter.jpg) for project images
+* **image** The project image (System.Drawing.Image)

@@ -11,7 +11,7 @@ so.topic: reference
 Optional information added by Quote Connector; usable in the quote document merge process
 
 **Parameter:** 
- - **extraField3** String
+* **extraField3** String
 
 ```crmscript
 NSQuoteVersion thing;

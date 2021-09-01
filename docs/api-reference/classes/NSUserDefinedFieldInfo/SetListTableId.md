@@ -11,7 +11,7 @@ so.topic: reference
 The table ID of the source table for lists: kTableAssoc, kTableContInt or whatever
 
 **Parameter:** 
- - **listTableId** Integer
+* **listTableId** Integer
 
 ```crmscript
 NSUserDefinedFieldInfo thing;

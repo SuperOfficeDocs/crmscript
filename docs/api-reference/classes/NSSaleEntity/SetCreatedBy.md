@@ -11,7 +11,7 @@ so.topic: reference
 Who created to sale
 
 **Parameter:** 
- - **createdBy** NSAssociate
+* **createdBy** NSAssociate
 
 ```crmscript
 NSSaleEntity thing;

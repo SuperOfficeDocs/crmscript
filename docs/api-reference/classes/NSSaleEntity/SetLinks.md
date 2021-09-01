@@ -11,7 +11,7 @@ so.topic: reference
 List of all elements linked to the sale.
 
 **Parameter:** 
- - **links** NSLink[]
+* **links** NSLink[]
 
 ```crmscript
 NSSaleEntity thing;

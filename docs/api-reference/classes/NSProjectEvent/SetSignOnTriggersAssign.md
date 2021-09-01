@@ -11,7 +11,7 @@ so.topic: reference
 If true, the sign on task should be created as an Assigned task, triggering the invitation dialog
 
 **Parameter:** 
- - **signOnTriggersAssign** Bool
+* **signOnTriggersAssign** Bool
 
 ```crmscript
 NSProjectEvent thing;

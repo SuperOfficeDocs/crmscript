@@ -11,7 +11,7 @@ so.topic: reference
 The label for the data set
 
 **Parameter:** 
- - **label** String
+* **label** String
 
 ```crmscript
 NSStatisticsDataSet thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Tablename/recordid of data changed by this method
 
 **Parameter:** 
- - **changes** NSChangedData
+* **changes** NSChangedData
 
 ```crmscript
 NSQuoteAlternativeRecalculated thing;

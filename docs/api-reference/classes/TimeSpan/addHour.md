@@ -12,5 +12,5 @@ This function will add the given number of hours to the currently set timespan.
 
 ## Parameters
 
- - num: Number of hours to add to the timespan
+* num: Number of hours to add to the timespan
 

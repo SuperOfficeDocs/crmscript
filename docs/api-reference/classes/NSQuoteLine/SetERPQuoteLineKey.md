@@ -11,7 +11,7 @@ so.topic: reference
 The foreign key to the quoteline in ERP system (if it has such a representation).
 
 **Parameter:** 
- - **eRPQuoteLineKey** String
+* **eRPQuoteLineKey** String
 
 ```crmscript
 NSQuoteLine thing;

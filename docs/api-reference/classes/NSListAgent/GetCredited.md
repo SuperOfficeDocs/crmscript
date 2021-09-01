@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSCredited object.
 
-**Parameters:**
- - **creditedId** The identifier of the NSCredited object
+## Parameters
+
+* **creditedId** The identifier of the NSCredited object
 
 **Returns:** NSCredited
 

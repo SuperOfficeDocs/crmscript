@@ -11,7 +11,7 @@ so.topic: reference
 True if the CRMScript was successfully validated. If false, see the error message for details
 
 **Parameter:** 
- - **valid** Bool
+* **valid** Bool
 
 ```crmscript
 NSCRMScriptResult thing;

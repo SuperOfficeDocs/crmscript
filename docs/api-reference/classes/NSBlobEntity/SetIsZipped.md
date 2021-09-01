@@ -11,7 +11,7 @@ so.topic: reference
 Has the data been zipped.
 
 **Parameter:** 
- - **isZipped** Bool
+* **isZipped** Bool
 
 ```crmscript
 NSBlobEntity thing;

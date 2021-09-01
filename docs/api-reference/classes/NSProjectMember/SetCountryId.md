@@ -11,7 +11,7 @@ so.topic: reference
 Country
 
 **Parameter:** 
- - **countryId** Integer
+* **countryId** Integer
 
 ```crmscript
 NSProjectMember thing;

@@ -11,7 +11,7 @@ so.topic: reference
 If this message is important or not.
 
 **Parameter:** 
- - **important** Bool
+* **important** Bool
 
 ```crmscript
 NSTicketMessage thing;

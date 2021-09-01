@@ -11,7 +11,7 @@ so.topic: reference
 Date + end time planned
 
 **Parameter:** 
- - **endDate** DateTime
+* **endDate** DateTime
 
 ```crmscript
 NSAppointment thing;

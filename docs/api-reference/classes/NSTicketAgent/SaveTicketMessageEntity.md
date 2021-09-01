@@ -11,7 +11,7 @@ so.topic: reference
 Updates the existing NSTicketMessageEntity or creates a new NSTicketMessageEntity if the id parameter is 0
 
 **Parameters**:
- - **ticketMessageEntity** The NSTicketMessageEntity to save.
+* **ticketMessageEntity** The NSTicketMessageEntity to save.
 
 **Returns:** NSTicketMessageEntity
 

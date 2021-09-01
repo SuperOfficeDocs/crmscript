@@ -11,7 +11,7 @@ so.topic: reference
 Dateof the event; publishing/visibility dates are in Publish, and restrictions are in AudienceVisibility
 
 **Parameter:** 
- - **eventDate** DateTime
+* **eventDate** DateTime
 
 ```crmscript
 NSProjectEventEntity thing;

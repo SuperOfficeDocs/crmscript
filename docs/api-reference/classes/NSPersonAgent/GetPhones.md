@@ -10,8 +10,9 @@ so.topic: reference
 
 Returning all phones that belong to a person, ordered by the phone type.
 
-**Parameters:**
- - **personId** The person id
+## Parameters
+
+* **personId** The person id
 
 **Returns:** NSEntityElement[]
 

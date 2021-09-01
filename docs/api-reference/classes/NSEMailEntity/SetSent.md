@@ -11,7 +11,7 @@ so.topic: reference
 When was the e-mail sent
 
 **Parameter:** 
- - **sent** DateTime
+* **sent** DateTime
 
 ```crmscript
 NSEMailEntity thing;

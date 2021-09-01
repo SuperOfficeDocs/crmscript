@@ -8,7 +8,7 @@ so.topic: reference
 
 # String[] GetOwnCountryDayTexts()
 
-Array - possibly empty - of the texts related to one day in the redletter system.
+Array* possibly empty* of the texts related to one day in the redletter system.
 
 **Returns:** String[]
 

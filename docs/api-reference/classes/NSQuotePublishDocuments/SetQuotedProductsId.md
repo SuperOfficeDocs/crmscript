@@ -11,7 +11,7 @@ so.topic: reference
 Quoted products (quote lines or confirmation lines) document, as PDF
 
 **Parameter:** 
- - **quotedProductsId** Integer
+* **quotedProductsId** Integer
 
 ```crmscript
 NSQuotePublishDocuments thing;

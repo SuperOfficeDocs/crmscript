@@ -11,7 +11,7 @@ so.topic: reference
 Tax/VAT if available from ERP system. THIS IS A PERCENTAGE. In the Superoffice product register, this field is available in the product admin GUI.
 
 **Parameter:** 
- - **vAT** Float
+* **vAT** Float
 
 ```crmscript
 NSProduct thing;

@@ -11,7 +11,7 @@ so.topic: reference
 First name
 
 **Parameter:** 
- - **personFirstName** String
+* **personFirstName** String
 
 ```crmscript
 NSParticipantSyncData thing;

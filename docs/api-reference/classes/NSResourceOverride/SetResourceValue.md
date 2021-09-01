@@ -11,7 +11,7 @@ so.topic: reference
 The value of the resource in the given culture
 
 **Parameter:** 
- - **resourceValue** String
+* **resourceValue** String
 
 ```crmscript
 NSResourceOverride thing;

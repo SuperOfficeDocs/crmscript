@@ -11,7 +11,7 @@ so.topic: reference
 Icon hint for the associated message.
 
 **Parameter:** 
- - **iconHint** String
+* **iconHint** String
 
 ```crmscript
 NSQuoteVersionStatusInformation thing;

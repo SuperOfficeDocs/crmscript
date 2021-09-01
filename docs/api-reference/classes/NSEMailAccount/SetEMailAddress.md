@@ -11,7 +11,7 @@ so.topic: reference
 The account (from) address
 
 **Parameter:** 
- - **eMailAddress** String
+* **eMailAddress** String
 
 ```crmscript
 NSEMailAccount thing;

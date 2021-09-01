@@ -11,7 +11,7 @@ so.topic: reference
 The datetime when this email was archived
 
 **Parameter:** 
- - **archivedAt** DateTime
+* **archivedAt** DateTime
 
 ```crmscript
 NSEMailSOInfo thing;

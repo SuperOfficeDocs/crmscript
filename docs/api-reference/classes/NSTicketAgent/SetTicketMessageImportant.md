@@ -10,6 +10,7 @@ so.topic: reference
 
 Set the important flag on or off for a ticket message
 
-**Parameters:**
- - **ticketMessageId** The id of the ticket message to set the important flag on
- - **important** Turn on or off the important flag
+## Parameters
+
+* **ticketMessageId** The id of the ticket message to set the important flag on
+* **important** Turn on or off the important flag

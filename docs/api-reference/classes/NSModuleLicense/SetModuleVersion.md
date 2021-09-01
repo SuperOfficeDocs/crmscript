@@ -11,7 +11,7 @@ so.topic: reference
 Version string for this module
 
 **Parameter:** 
- - **moduleVersion** String
+* **moduleVersion** String
 
 ```crmscript
 NSModuleLicense thing;

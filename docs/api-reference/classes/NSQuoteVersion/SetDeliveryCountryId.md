@@ -11,7 +11,7 @@ so.topic: reference
 Country of delivery address, typically copied from the contact record
 
 **Parameter:** 
- - **deliveryCountryId** Integer
+* **deliveryCountryId** Integer
 
 ```crmscript
 NSQuoteVersion thing;

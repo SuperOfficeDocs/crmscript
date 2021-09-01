@@ -10,8 +10,9 @@ so.topic: reference
 
 Returns an array of project members
 
-**Parameters:**
- - **projectId** The project id
+## Parameters
+
+* **projectId** The project id
 
 **Returns:** NSProjectMember[]
 

@@ -10,10 +10,11 @@ so.topic: reference
 
 Update User groups that this list item is visible for
 
-**Parameters:**
- - **udListDefinitionName** The name of the list definition, indicating which list to update the items from.
- - **listItemId** The id of the list item
- - **userGroups** The selectable user groups.
+## Parameters
+
+* **udListDefinitionName** The name of the list definition, indicating which list to update the items from.
+* **listItemId** The id of the list item
+* **userGroups** The selectable user groups.
 
 **Returns:** NSSelectableMDOListItem[]
 

@@ -11,7 +11,7 @@ so.topic: reference
 Set the tooltip description for the SelectionCategory list item.
 
 **Parameter:** 
- - **tooltip** String SelectionCategory tooltip description.
+* **tooltip** String SelectionCategory tooltip description.
 
 ```crmscript
 NSSelectionCategory thing;

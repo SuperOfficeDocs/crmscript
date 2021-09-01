@@ -11,7 +11,7 @@ so.topic: reference
 The associate (salesman) that is logged into the CRM system.
 
 **Parameter:** 
- - **cRMAssociate** NSAssociate
+* **cRMAssociate** NSAssociate
 
 ```crmscript
 NSQuoteContext thing;

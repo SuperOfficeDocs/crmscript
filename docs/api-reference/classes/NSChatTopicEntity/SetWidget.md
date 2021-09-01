@@ -11,7 +11,7 @@ so.topic: reference
 Settings for the chat widget
 
 **Parameter:** 
- - **widget** ChatWidgetSettings
+* **widget** ChatWidgetSettings
 
 ```crmscript
 NSChatTopicEntity thing;

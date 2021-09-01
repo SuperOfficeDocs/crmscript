@@ -11,7 +11,7 @@ so.topic: reference
 Contextidentifier to identify customer
 
 **Parameter:** 
- - **contextIdentifier** String
+* **contextIdentifier** String
 
 ```crmscript
 NSCategorizationStatusResponse thing;

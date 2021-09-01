@@ -10,9 +10,10 @@ so.topic: reference
 
 Get the list of members in this selection's shadow (i.e. the list of contacts + persons referenced in the main selection).
 
-**Parameters:**
- - **selectionId** The selectionId we want selection members for.
- - **select** (optional) Comma separated Column names to include in result. List of columns varies depending on the selection's TargetTable. e.g. 'name', 'firstname,name', 'startTime,firstname,name'
+## Parameters
+
+* **selectionId** The selectionId we want selection members for.
+* **select** (optional) Comma separated Column names to include in result. List of columns varies depending on the selection's TargetTable. e.g. 'name', 'firstname,name', 'startTime,firstname,name'
 
 **Returns:** NSArchiveListItem[]
 

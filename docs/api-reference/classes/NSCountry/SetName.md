@@ -11,7 +11,7 @@ so.topic: reference
 Name of country in installed language
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSCountry thing;

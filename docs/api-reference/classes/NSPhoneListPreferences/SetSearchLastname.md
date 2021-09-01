@@ -11,7 +11,7 @@ so.topic: reference
 True if you want to search for Persons by their lastname.
 
 **Parameter:** 
- - **searchLastname** Bool
+* **searchLastname** Bool
 
 ```crmscript
 NSPhoneListPreferences thing;

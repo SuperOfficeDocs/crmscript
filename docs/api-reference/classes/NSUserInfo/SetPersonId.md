@@ -11,7 +11,7 @@ so.topic: reference
 Owning person record
 
 **Parameter:** 
- - **personId** Integer
+* **personId** Integer
 
 ```crmscript
 NSUserInfo thing;

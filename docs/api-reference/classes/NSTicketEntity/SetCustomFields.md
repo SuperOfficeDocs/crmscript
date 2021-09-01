@@ -11,7 +11,7 @@ so.topic: reference
 Set the user-defined and extra fields on a TicketEntity with a map.
 
 **Parameter:** 
- - **udefs** Map
+* **udefs** Map
 
 ```crmscript
 NSTicketEntity thing;

@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSCurrencyEntity object.
 
-**Parameters:**
- - **currencyEntityId** The identifier of the NSCurrencyEntity object
+## Parameters
+
+* **currencyEntityId** The identifier of the NSCurrencyEntity object
 
 **Returns:** NSCurrencyEntity
 

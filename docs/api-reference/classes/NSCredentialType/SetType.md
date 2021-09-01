@@ -11,7 +11,7 @@ so.topic: reference
 Type of credentials, corresponding to name of plugin and type in the credentials table
 
 **Parameter:** 
- - **type** String
+* **type** String
 
 ```crmscript
 NSCredentialType thing;

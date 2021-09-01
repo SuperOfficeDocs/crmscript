@@ -9,7 +9,7 @@ so.topic: reference
 # SetResult(Bool result)
 
 **Parameter:** 
- - **result** Bool
+* **result** Bool
 
 ```crmscript
 NSUserValidationResult thing;

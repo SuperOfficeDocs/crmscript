@@ -11,7 +11,7 @@ so.topic: reference
 Appointment information
 
 **Parameter:** 
- - **appointment** NSAppointment
+* **appointment** NSAppointment
 
 ```crmscript
 NSEMailAppointment thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Description of the task.
 
 **Parameter:** 
- - **description** String
+* **description** String
 
 ```crmscript
 NSBatchTaskInfo thing;

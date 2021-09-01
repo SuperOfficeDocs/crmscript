@@ -11,7 +11,7 @@ so.topic: reference
 Product key
 
 **Parameter:** 
- - **productKey** String
+* **productKey** String
 
 ```crmscript
 NSTemplateVariablesParameters thing;

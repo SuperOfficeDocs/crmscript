@@ -11,7 +11,7 @@ so.topic: reference
 Who last modified the selection
 
 **Parameter:** 
- - **updatedBy** NSAssociate
+* **updatedBy** NSAssociate
 
 ```crmscript
 NSSelectionEntity thing;

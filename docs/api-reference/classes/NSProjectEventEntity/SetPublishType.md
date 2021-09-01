@@ -11,9 +11,9 @@ so.topic: reference
 Type of publishing action, 0 = Unknown, 1 = to external persons
 
 **Parameter:** 
- - **publishType** Integer
-     - Enum: 0 = Undefined 
-     - Enum: 1 = External 
+* **publishType** Integer
+* Enum: 0 = Undefined 
+* Enum: 1 = External 
 
 ```crmscript
 NSProjectEventEntity thing;

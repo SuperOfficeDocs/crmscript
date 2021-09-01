@@ -8,10 +8,10 @@ so.topic: reference
 
 # SetEmailId(Integer emailId)
 
-E-mail address id - Primary key
+E-mail address id* Primary key
 
 **Parameter:** 
- - **emailId** Integer
+* **emailId** Integer
 
 ```crmscript
 NSSaleStakeholder thing;

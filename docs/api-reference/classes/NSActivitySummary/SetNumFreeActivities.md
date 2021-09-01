@@ -11,7 +11,7 @@ so.topic: reference
 Number of activites of the type 'free'. Sales and documents are not activites in this case, only diary appointments and tasks.
 
 **Parameter:** 
- - **numFreeActivities** Integer
+* **numFreeActivities** Integer
 
 ```crmscript
 NSActivitySummary thing;

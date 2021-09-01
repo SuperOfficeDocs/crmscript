@@ -10,7 +10,8 @@ so.topic: reference
 
 Delete specified mail items
 
-**Parameters:**
- - **connectionInfo** All information needed to connect to the mailserver
- - **messageServerIds** The e-mails to handle
- - **moveToFolder** If set, move deleted items to this folder
+## Parameters
+
+* **connectionInfo** All information needed to connect to the mailserver
+* **messageServerIds** The e-mails to handle
+* **moveToFolder** If set, move deleted items to this folder

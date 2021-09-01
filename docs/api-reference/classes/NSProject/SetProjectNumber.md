@@ -11,7 +11,7 @@ so.topic: reference
 Automatically generated number
 
 **Parameter:** 
- - **projectNumber** String
+* **projectNumber** String
 
 ```crmscript
 NSProject thing;

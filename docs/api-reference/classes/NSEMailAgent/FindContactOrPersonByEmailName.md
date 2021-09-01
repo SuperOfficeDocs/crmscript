@@ -8,9 +8,10 @@ so.topic: reference
 
 # ContactOrPersonFromEmail[] FindContactOrPersonByEmailName(String name, String emailAddress)
 
-**Parameters:**
- - **name** The sender name
- - **emailAddress** The sender email address
+## Parameters
+
+* **name** The sender name
+* **emailAddress** The sender email address
 
 **Returns:** ContactOrPersonFromEmail[]
 

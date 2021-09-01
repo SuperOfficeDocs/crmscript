@@ -10,8 +10,9 @@ so.topic: reference
 
 Update information about a BatchTask. Only the following properties can be updated: State, Description, Response and Request.
 
-**Parameters:**
- - **batchTaskInfo** The updated information to save.
+## Parameters
+
+* **batchTaskInfo** The updated information to save.
 
 **Returns:** NSBatchTaskInfo
 

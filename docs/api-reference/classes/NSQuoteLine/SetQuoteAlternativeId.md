@@ -11,7 +11,7 @@ so.topic: reference
 The alternative this line is part of, the conceptual Parent in CRM database.
 
 **Parameter:** 
- - **quoteAlternativeId** Integer
+* **quoteAlternativeId** Integer
 
 ```crmscript
 NSQuoteLine thing;

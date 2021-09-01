@@ -11,7 +11,7 @@ so.topic: reference
 The PriceLists that this connection offers.
 
 **Parameter:** 
- - **priceLists** NSPriceList[]
+* **priceLists** NSPriceList[]
 
 ```crmscript
 NSQuoteConnection thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Get the full name for the primary person (customer)
 
 **Parameter:** 
- - **personFullname** String
+* **personFullname** String
 
 ```crmscript
 NSTicket thing;

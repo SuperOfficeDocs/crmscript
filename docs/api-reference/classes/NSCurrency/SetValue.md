@@ -11,7 +11,7 @@ so.topic: reference
 Set the name of the NSCurrency item.
 
 **Parameter:** 
- - **value** String NSCurrency name.
+* **value** String NSCurrency name.
 
 ```crmscript
 NSCurrency thing;

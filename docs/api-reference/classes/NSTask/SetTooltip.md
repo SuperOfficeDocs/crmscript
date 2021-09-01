@@ -11,7 +11,7 @@ so.topic: reference
 Set the tooltip description for the Task list item.
 
 **Parameter:** 
- - **tooltip** String Task tooltip description.
+* **tooltip** String Task tooltip description.
 
 ```crmscript
 NSTask thing;

@@ -10,8 +10,9 @@ so.topic: reference
 
 Get a list of document types supported by a given document plugin. Use the document template type when creating a new template.
 
-**Parameters:**
- - **pluginId** Numeric document plugin id, corresponding to the doctmpl.AutoeventId, doctmpl.LoadTemplateFromPlugin.
+## Parameters
+
+* **pluginId** Numeric document plugin id, corresponding to the doctmpl.AutoeventId, doctmpl.LoadTemplateFromPlugin.
 
 **Returns:** StringDictionary
 

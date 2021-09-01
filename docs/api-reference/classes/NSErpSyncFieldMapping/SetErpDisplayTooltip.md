@@ -11,7 +11,7 @@ so.topic: reference
 Tooltip text for ERP field; ignored on Save
 
 **Parameter:** 
- - **erpDisplayTooltip** String
+* **erpDisplayTooltip** String
 
 ```crmscript
 NSErpSyncFieldMapping thing;

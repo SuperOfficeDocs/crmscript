@@ -11,7 +11,7 @@ so.topic: reference
 An array of the values that will be imported on the entity
 
 **Parameter:** 
- - **values** String[]
+* **values** String[]
 
 ```crmscript
 NSImportLine thing;

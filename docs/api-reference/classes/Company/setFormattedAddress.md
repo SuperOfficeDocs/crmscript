@@ -13,5 +13,5 @@ Sets the formatted address for a company
 
 ## Parameters
 
- - p0: The new address
+* p0: The new address
 

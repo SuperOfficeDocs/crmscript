@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSProjectEvent object from a project and a person.
 
-**Parameters:**
- - **projectId** The project Id
- - **personId** Id of the person the project events belong to.
+## Parameters
+
+* **projectId** The project Id
+* **personId** Id of the person the project events belong to.
 
 **Returns:** NSProjectEvent

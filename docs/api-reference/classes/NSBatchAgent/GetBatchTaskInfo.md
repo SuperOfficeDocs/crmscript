@@ -10,8 +10,9 @@ so.topic: reference
 
 Get a single NSBatchTaskInfo based on Id.
 
-**Parameters:**
- - **id** Id of the NSBatchTaskInfo to get.
+## Parameters
+
+* **id** Id of the NSBatchTaskInfo to get.
 
 **Returns:** NSBatchTaskInfo
 

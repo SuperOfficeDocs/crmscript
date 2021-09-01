@@ -11,7 +11,7 @@ so.topic: reference
 List of items to choose from.
 
 **Parameter:** 
- - **choices** String[]
+* **choices** String[]
 
 ```crmscript
 NSFieldInfoListText thing;

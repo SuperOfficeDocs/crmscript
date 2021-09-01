@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSPosition object.
 
-**Parameters:**
- - **positionId** The identifier of the NSPosition object
+## Parameters
+
+* **positionId** The identifier of the NSPosition object
 
 **Returns:** NSPosition
 

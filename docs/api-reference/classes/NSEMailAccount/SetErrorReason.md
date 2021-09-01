@@ -11,7 +11,7 @@ so.topic: reference
 Reason/Error message. Readonly field
 
 **Parameter:** 
- - **errorReason** String
+* **errorReason** String
 
 ```crmscript
 NSEMailAccount thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Primary Key
 
 **Parameter:** 
- - **webAppUsageId** Integer
+* **webAppUsageId** Integer
 
 ```crmscript
 NSWebAppUsage thing;

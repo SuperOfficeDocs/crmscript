@@ -9,7 +9,7 @@ so.topic: reference
 # SetCurrent(NSModuleLicense current)
 
 **Parameter:** 
- - **current** NSModuleLicense
+* **current** NSModuleLicense
 
 ```crmscript
 NSExtendedModuleLicense thing;

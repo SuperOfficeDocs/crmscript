@@ -10,9 +10,10 @@ so.topic: reference
 
 Validates the set of dates to calculate any conflicts.
 
-**Parameters:**
- - **appointmentEntity** 
- - **dates** The dates to validate.
+## Parameters
+
+* **appointmentEntity** 
+* **dates** The dates to validate.
 
 **Returns:** NSRecurrenceDate[]
 

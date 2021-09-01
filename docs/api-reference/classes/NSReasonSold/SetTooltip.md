@@ -11,7 +11,7 @@ so.topic: reference
 Set the tooltip description for the ReasonSold list item.
 
 **Parameter:** 
- - **tooltip** String ReasonSold tooltip description.
+* **tooltip** String ReasonSold tooltip description.
 
 ```crmscript
 NSReasonSold thing;

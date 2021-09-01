@@ -11,7 +11,7 @@ so.topic: reference
 Include recipients that are marked with stop
 
 **Parameter:** 
- - **includeStoppedRecipients** Bool
+* **includeStoppedRecipients** Bool
 
 ```crmscript
 NSMailMergeSettings thing;

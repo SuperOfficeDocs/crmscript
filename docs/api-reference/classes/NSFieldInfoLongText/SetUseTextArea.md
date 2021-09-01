@@ -11,7 +11,7 @@ so.topic: reference
 Use a multi-line text area?
 
 **Parameter:** 
- - **useTextArea** Bool
+* **useTextArea** Bool
 
 ```crmscript
 NSFieldInfoLongText thing;

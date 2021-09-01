@@ -11,7 +11,7 @@ so.topic: reference
 Lead text for organisation field
 
 **Parameter:** 
- - **orgNrText** String
+* **orgNrText** String
 
 ```crmscript
 NSCountry thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Count of concurring errors of fetching email. Readonly field
 
 **Parameter:** 
- - **errorCount** Integer
+* **errorCount** Integer
 
 ```crmscript
 NSEMailAccount thing;

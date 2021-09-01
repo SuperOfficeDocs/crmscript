@@ -10,9 +10,10 @@ so.topic: reference
 
 Return information about a particular custom field (user-defined + extra) on a particular table
 
-**Parameters:**
- - **tableName** The name of table that owns the custom fields. e.g. 'contact', 'person', 'project' etc.
- - **fieldName** The name of the field: prog:id or field name. e.g. 'SuperOffice:21' or 'x_foobar'
+## Parameters
+
+* **tableName** The name of table that owns the custom fields. e.g. 'contact', 'person', 'project' etc.
+* **fieldName** The name of the field: prog:id or field name. e.g. 'SuperOffice:21' or 'x_foobar'
 
 **Returns:** NSFieldInfoBase
 

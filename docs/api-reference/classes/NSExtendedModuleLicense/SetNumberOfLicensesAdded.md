@@ -9,7 +9,7 @@ so.topic: reference
 # SetNumberOfLicensesAdded(Integer numberOfLicensesAdded)
 
 **Parameter:** 
- - **numberOfLicensesAdded** Integer
+* **numberOfLicensesAdded** Integer
 
 ```crmscript
 NSExtendedModuleLicense thing;

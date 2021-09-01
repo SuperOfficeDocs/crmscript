@@ -11,7 +11,7 @@ so.topic: reference
 The date to be used for searching & showing
 
 **Parameter:** 
- - **activeDate** DateTime
+* **activeDate** DateTime
 
 ```crmscript
 NSAppointment thing;

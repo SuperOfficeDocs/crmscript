@@ -10,8 +10,9 @@ so.topic: reference
 
 This method will get a value from the CS Registry table.
 
-**Parameters:**
- - **entry** The Registry entry to get
+## Parameters
+
+* **entry** The Registry entry to get
 
 **Returns:** String
 

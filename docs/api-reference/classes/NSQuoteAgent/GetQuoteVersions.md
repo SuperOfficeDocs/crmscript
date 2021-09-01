@@ -10,8 +10,9 @@ so.topic: reference
 
 Get all quote versions for a sale
 
-**Parameters:**
- - **quoteId** QuoteId of the quote to get versions from
+## Parameters
+
+* **quoteId** QuoteId of the quote to get versions from
 
 **Returns:** NSQuoteVersion[]
 

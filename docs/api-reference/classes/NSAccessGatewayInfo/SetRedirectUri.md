@@ -11,7 +11,7 @@ so.topic: reference
 This is the registered redirect_uri for AccessGateway OIDC.
 
 **Parameter:** 
- - **redirectUri** String
+* **redirectUri** String
 
 ```crmscript
 NSAccessGatewayInfo thing;

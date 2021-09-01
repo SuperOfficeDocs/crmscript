@@ -11,7 +11,7 @@ so.topic: reference
 label height in pixels, 0 = 'enough' (from font)
 
 **Parameter:** 
- - **labelHeight** Integer
+* **labelHeight** Integer
 
 ```crmscript
 NSUserDefinedFieldInfo thing;

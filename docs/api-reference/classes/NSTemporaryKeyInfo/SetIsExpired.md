@@ -11,7 +11,7 @@ so.topic: reference
 Whether the key is expired or not.
 
 **Parameter:** 
- - **isExpired** Bool
+* **isExpired** Bool
 
 ```crmscript
 NSTemporaryKeyInfo thing;

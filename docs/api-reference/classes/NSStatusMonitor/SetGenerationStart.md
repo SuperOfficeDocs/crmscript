@@ -11,7 +11,7 @@ so.topic: reference
 When was the last regeneration started
 
 **Parameter:** 
- - **generationStart** DateTime
+* **generationStart** DateTime
 
 ```crmscript
 NSStatusMonitor thing;

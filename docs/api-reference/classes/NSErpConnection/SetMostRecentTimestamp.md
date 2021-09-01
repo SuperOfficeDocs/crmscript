@@ -11,7 +11,7 @@ so.topic: reference
 Datetime, transaction number or other identification of the point in time of the most-recently seen actor in the ERP system
 
 **Parameter:** 
- - **mostRecentTimestamp** String
+* **mostRecentTimestamp** String
 
 ```crmscript
 NSErpConnection thing;

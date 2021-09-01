@@ -11,7 +11,7 @@ so.topic: reference
 Describes this message
 
 **Parameter:** 
- - **description** String
+* **description** String
 
 ```crmscript
 NSShipmentMessageEntity thing;

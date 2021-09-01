@@ -10,8 +10,9 @@ so.topic: reference
 
 Get new email in folder(s) for current associate
 
-**Parameters:**
- - **folders** List of folder ids to check for new email
+## Parameters
+
+* **folders** List of folder ids to check for new email
 
 **Returns:** NSEMailEnvelope[]
 

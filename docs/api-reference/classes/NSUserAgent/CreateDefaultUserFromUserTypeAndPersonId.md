@@ -10,15 +10,16 @@ so.topic: reference
 
 Create default NSUser providing the associate type and person id.  System and Anonymous users can be created without an exsisting person and permits person id to be 0.
 
-**Parameters:**
- - **userType** Type of associate for the user
-     - Enum: 0 = Unknown 
-     - Enum: 1 = InternalAssociate 
-     - Enum: 2 = ResourceAssociate 
-     - Enum: 3 = ExternalAssociate 
-     - Enum: 4 = AnonymousAssociate 
-     - Enum: 5 = SystemAssociate 
- - **personId** Primary key of the person to become a user.
+## Parameters
+
+* **userType** Type of associate for the user
+* Enum: 0 = Unknown 
+* Enum: 1 = InternalAssociate 
+* Enum: 2 = ResourceAssociate 
+* Enum: 3 = ExternalAssociate 
+* Enum: 4 = AnonymousAssociate 
+* Enum: 5 = SystemAssociate 
+* **personId** Primary key of the person to become a user.
 
 **Returns:** NSUser
 

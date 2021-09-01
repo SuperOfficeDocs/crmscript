@@ -11,7 +11,7 @@ so.topic: reference
 Extra information (area id for prototype rebuild, etc)
 
 **Parameter:** 
- - **extraInfo** Integer
+* **extraInfo** Integer
 
 ```crmscript
 NSSystemEventEntity thing;

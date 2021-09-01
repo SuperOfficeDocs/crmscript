@@ -10,12 +10,13 @@ so.topic: reference
 
 Send the quote to the user's customer. More parameters to be added later...
 
-**Parameters:**
- - **quoteVersionId** QuoteVersionId of the quoteversion to send
- - **expiryDate** Date the quote expires
- - **followupDate** Date for the followup task, to remind the sales rep about the quote
- - **followupText** The body text for the follwup appointment, resolved to the correct culture (no resources please)
- - **culture** Desired culture for email body and other culture-sensitive templates/content
+## Parameters
+
+* **quoteVersionId** QuoteVersionId of the quoteversion to send
+* **expiryDate** Date the quote expires
+* **followupDate** Date for the followup task, to remind the sales rep about the quote
+* **followupText** The body text for the follwup appointment, resolved to the correct culture (no resources please)
+* **culture** Desired culture for email body and other culture-sensitive templates/content
 
 **Returns:** NSPluginUrlResponse
 

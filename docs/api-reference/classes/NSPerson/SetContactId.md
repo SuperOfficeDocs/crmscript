@@ -11,7 +11,7 @@ so.topic: reference
 Owning contact ID
 
 **Parameter:** 
- - **contactId** Integer
+* **contactId** Integer
 
 ```crmscript
 NSPerson thing;

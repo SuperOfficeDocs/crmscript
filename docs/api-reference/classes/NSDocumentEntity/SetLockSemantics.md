@@ -9,10 +9,10 @@ so.topic: reference
 # SetLockSemantics(Integer lockSemantics)
 
 **Parameter:** 
- - **lockSemantics** Integer
-     - Enum: 0 = None 
-     - Enum: 1 = Locking 
-     - Enum: 2 = Versioning 
+* **lockSemantics** Integer
+* Enum: 0 = None 
+* Enum: 1 = Locking 
+* Enum: 2 = Versioning 
 
 ```crmscript
 NSDocumentEntity thing;

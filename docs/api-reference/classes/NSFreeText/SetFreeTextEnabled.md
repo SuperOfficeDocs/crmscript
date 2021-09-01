@@ -11,7 +11,7 @@ so.topic: reference
 True if freetext search enabled
 
 **Parameter:** 
- - **freeTextEnabled** Bool
+* **freeTextEnabled** Bool
 
 ```crmscript
 NSFreeText thing;

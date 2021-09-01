@@ -11,7 +11,7 @@ so.topic: reference
 Updates the existing NSDocumentEntity or creates a new NSDocumentEntity if the id parameter is 0
 
 **Parameters**:
- - **documentEntity** The NSDocumentEntity to save.
+* **documentEntity** The NSDocumentEntity to save.
 
 **Returns:** NSDocumentEntity
 

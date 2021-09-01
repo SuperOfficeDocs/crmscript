@@ -8,10 +8,10 @@ so.topic: reference
 
 # SetProjectId(Integer projectId)
 
-Parent project - the project this project member belongs to.
+Parent project* the project this project member belongs to.
 
 **Parameter:** 
- - **projectId** Integer
+* **projectId** Integer
 
 ```crmscript
 NSProjectMember thing;

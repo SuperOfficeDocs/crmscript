@@ -10,8 +10,9 @@ so.topic: reference
 
 Return the most recent error message received when calling this webhook.
 
-**Parameters:**
- - **webhookId** Webhook to get error message for.
+## Parameters
+
+* **webhookId** Webhook to get error message for.
 
 **Returns:** Error message, or empty string if no errors received
 

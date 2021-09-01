@@ -10,8 +10,9 @@ so.topic: reference
 
 Get all QuoteLines from an alternative
 
-**Parameters:**
- - **quoteAlternativeId** Id of the alternative to return the quotelines for
+## Parameters
+
+* **quoteAlternativeId** Id of the alternative to return the quotelines for
 
 **Returns:** NSQuoteLine[]
 

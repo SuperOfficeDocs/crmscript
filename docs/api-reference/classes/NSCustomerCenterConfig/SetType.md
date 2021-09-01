@@ -11,9 +11,9 @@ so.topic: reference
 What kind of data is in this row
 
 **Parameter:** 
- - **type** Integer
-     - Enum: 0 = Style 
-     - Enum: 1 = Options 
+* **type** Integer
+* Enum: 0 = Style 
+* Enum: 1 = Options 
 
 ```crmscript
 NSCustomerCenterConfig thing;

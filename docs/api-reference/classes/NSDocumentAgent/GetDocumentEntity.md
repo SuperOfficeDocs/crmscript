@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSDocumentEntity object.
 
-**Parameters:**
- - **documentEntityId** The identifier of the NSDocumentEntity object
+## Parameters
+
+* **documentEntityId** The identifier of the NSDocumentEntity object
 
 **Returns:** NSDocumentEntity
 

@@ -10,7 +10,8 @@ so.topic: reference
 
 Generates a valid username for an unsaved user
 
-**Parameters:**
- - **user** 
+## Parameters
+
+* **user** 
 
 **Returns:** String

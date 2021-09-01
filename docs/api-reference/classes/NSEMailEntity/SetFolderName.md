@@ -11,7 +11,7 @@ so.topic: reference
 Name of folder the e-mail belongs in
 
 **Parameter:** 
- - **folderName** String
+* **folderName** String
 
 ```crmscript
 NSEMailEntity thing;

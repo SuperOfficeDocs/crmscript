@@ -11,7 +11,7 @@ so.topic: reference
 The display name of the chat user
 
 **Parameter:** 
- - **displayName** String
+* **displayName** String
 
 ```crmscript
 NSChatPresence thing;

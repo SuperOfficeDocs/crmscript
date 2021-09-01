@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **prefDescLineId** Integer
+* **prefDescLineId** Integer
 
 ```crmscript
 NSPreferenceDescriptionLine thing;

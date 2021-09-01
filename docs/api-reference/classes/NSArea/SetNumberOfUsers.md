@@ -9,7 +9,7 @@ so.topic: reference
 # SetNumberOfUsers(Integer numberOfUsers)
 
 **Parameter:** 
- - **numberOfUsers** Integer
+* **numberOfUsers** Integer
 
 ```crmscript
 NSArea thing;

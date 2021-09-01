@@ -10,11 +10,12 @@ so.topic: reference
 
 Retrieve an attachment from an e-mail. The returned data is intended to be use for a preview.
 
-**Parameters:**
- - **mailItemId** Unique ID for the e-mail to retrieve the attachment from
- - **attachmentId** Id of the attachment in the e-mail
- - **attachmentType** Mimetype of the attachment. Must be set if attachmentId contains a chain.
- - **attachmentFilename** Filename of the attachment. Must be set if attachmentId contains a chain.
+## Parameters
+
+* **mailItemId** Unique ID for the e-mail to retrieve the attachment from
+* **attachmentId** Id of the attachment in the e-mail
+* **attachmentType** Mimetype of the attachment. Must be set if attachmentId contains a chain.
+* **attachmentFilename** Filename of the attachment. Must be set if attachmentId contains a chain.
 
 **Returns:** The attachment
 

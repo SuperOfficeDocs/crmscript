@@ -11,7 +11,7 @@ so.topic: reference
 The language ISO code for the widget language
 
 **Parameter:** 
- - **languageIsoCode** String
+* **languageIsoCode** String
 
 ```crmscript
 NSChatWidgetSettings thing;

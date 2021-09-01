@@ -11,7 +11,7 @@ so.topic: reference
 The ejuser id owning this session key
 
 **Parameter:** 
- - **userId** Integer
+* **userId** Integer
 
 ```crmscript
 NSCsSessionKey thing;

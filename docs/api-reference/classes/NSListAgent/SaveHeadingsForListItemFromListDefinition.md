@@ -10,10 +10,11 @@ so.topic: reference
 
 Saves the active headings for the list item.
 
-**Parameters:**
- - **udListDefinitionId** The id of the list definition, indicating which list to delete the items from. Negative numbers indicate TableNumber value instead of UDListDefId. e.g. -64 = category.
- - **listItemId** The identity of the list item to delete
- - **headings** The headings to save.
+## Parameters
+
+* **udListDefinitionId** The id of the list definition, indicating which list to delete the items from. Negative numbers indicate TableNumber value instead of UDListDefId. e.g. -64 = category.
+* **listItemId** The identity of the list item to delete
+* **headings** The headings to save.
 
 **Returns:** NSSelectableMDOListItem[]
 

@@ -11,7 +11,7 @@ so.topic: reference
 What the name sounds like, for duplicate detection
 
 **Parameter:** 
- - **soundEx** String
+* **soundEx** String
 
 ```crmscript
 NSSelectionEntity thing;

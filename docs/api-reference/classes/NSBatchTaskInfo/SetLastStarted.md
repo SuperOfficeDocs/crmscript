@@ -11,7 +11,7 @@ so.topic: reference
 When was the task last started.
 
 **Parameter:** 
- - **lastStarted** DateTime
+* **lastStarted** DateTime
 
 ```crmscript
 NSBatchTaskInfo thing;

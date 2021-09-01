@@ -11,7 +11,7 @@ so.topic: reference
 If the restriction data type is 'list', this property contains the name of the SoList so that choices can be shown
 
 **Parameter:** 
- - **restrictionListName** String
+* **restrictionListName** String
 
 ```crmscript
 NSArchiveColumnInfo thing;

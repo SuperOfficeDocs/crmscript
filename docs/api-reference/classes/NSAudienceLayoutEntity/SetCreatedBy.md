@@ -11,7 +11,7 @@ so.topic: reference
 Name of the person that created the Audience layout
 
 **Parameter:** 
- - **createdBy** NSAssociate
+* **createdBy** NSAssociate
 
 ```crmscript
 NSAudienceLayoutEntity thing;

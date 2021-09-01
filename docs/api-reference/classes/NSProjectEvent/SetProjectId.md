@@ -11,7 +11,7 @@ so.topic: reference
 Id of the project that represents the event
 
 **Parameter:** 
- - **projectId** Integer
+* **projectId** Integer
 
 ```crmscript
 NSProjectEvent thing;

@@ -11,7 +11,7 @@ so.topic: reference
 On/off switch for Saint functionality for this entity
 
 **Parameter:** 
- - **enabled** Bool
+* **enabled** Bool
 
 ```crmscript
 NSSaintConfiguration thing;

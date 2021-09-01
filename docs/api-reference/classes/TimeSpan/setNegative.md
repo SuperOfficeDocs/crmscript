@@ -12,5 +12,5 @@ Positive timespan is default, but if you add a negative number of years/days/hou
 
 ## Parameters
 
- - negative: This is true if you want to set the timespan to negative, false if the timespan should be positive.
+* negative: This is true if you want to set the timespan to negative, false if the timespan should be positive.
 

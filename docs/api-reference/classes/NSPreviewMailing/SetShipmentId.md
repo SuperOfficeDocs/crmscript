@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **shipmentId** Integer
+* **shipmentId** Integer
 
 ```crmscript
 NSPreviewMailing thing;

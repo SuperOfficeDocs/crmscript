@@ -11,7 +11,7 @@ so.topic: reference
 Deleted flag, 1 if this record is deleted (never from the database)
 
 **Parameter:** 
- - **deleted** Bool
+* **deleted** Bool
 
 ```crmscript
 NSStatusMonitor thing;

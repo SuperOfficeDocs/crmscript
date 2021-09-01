@@ -11,7 +11,7 @@ so.topic: reference
 The default value to be set, can be blank
 
 **Parameter:** 
- - **firstSyncDefaultValue** String
+* **firstSyncDefaultValue** String
 
 ```crmscript
 NSErpSyncDefaultValue thing;

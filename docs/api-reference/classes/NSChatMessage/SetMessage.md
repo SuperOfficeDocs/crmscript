@@ -11,7 +11,7 @@ so.topic: reference
 The message.
 
 **Parameter:** 
- - **message** String
+* **message** String
 
 ```crmscript
 NSChatMessage thing;

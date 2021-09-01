@@ -11,7 +11,7 @@ so.topic: reference
 The person that last updated this device.
 
 **Parameter:** 
- - **updatedBy** String
+* **updatedBy** String
 
 ```crmscript
 NSForeignDevice thing;

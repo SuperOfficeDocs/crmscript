@@ -9,7 +9,7 @@ so.topic: reference
 # SetPollingInterval(Integer pollingInterval)
 
 **Parameter:** 
- - **pollingInterval** Integer
+* **pollingInterval** Integer
 
 ```crmscript
 NSMultiAlarmData thing;

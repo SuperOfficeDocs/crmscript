@@ -10,8 +10,9 @@ so.topic: reference
 
 Deletes the NSDiaryViewEntity
   
-**Parameters:**
- - **diaryViewEntityId** The identity of the DiaryViewEntity to delete.
+## Parameters
+
+* **diaryViewEntityId** The identity of the DiaryViewEntity to delete.
 
 ```crmscript
 NSConfigurationAgent agent;

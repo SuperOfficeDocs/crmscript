@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **refCountsId** Integer
+* **refCountsId** Integer
 
 ```crmscript
 NSRefCountEntity thing;

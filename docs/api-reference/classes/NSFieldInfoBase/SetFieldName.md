@@ -11,7 +11,7 @@ so.topic: reference
 Database name or prog-id: 'x_foobar' or 'SuperOffice:2'.
 
 **Parameter:** 
- - **fieldName** String
+* **fieldName** String
 
 ```crmscript
 NSFieldInfoBase thing;

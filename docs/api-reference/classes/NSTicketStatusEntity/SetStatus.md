@@ -11,13 +11,13 @@ so.topic: reference
 The &apos;classic&apos; ticket status. I.e. active/closed/postponed/deleted
 
 **Parameter:** 
- - **status** Integer
-     - Enum: 0 = Unknown 
-     - Enum: 1 = Active 
-     - Enum: 2 = Closed 
-     - Enum: 3 = Postponed 
-     - Enum: 4 = Deleted 
-     - Enum: 5 = Merged 
+* **status** Integer
+* Enum: 0 = Unknown 
+* Enum: 1 = Active 
+* Enum: 2 = Closed 
+* Enum: 3 = Postponed 
+* Enum: 4 = Deleted 
+* Enum: 5 = Merged 
 
 ```crmscript
 NSTicketStatusEntity thing;

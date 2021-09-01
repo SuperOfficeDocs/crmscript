@@ -11,7 +11,7 @@ so.topic: reference
 Glue between SuperOffice data and an e-mail.
 
 **Parameter:** 
- - **eMailSOInfo** NSEMailSOInfo
+* **eMailSOInfo** NSEMailSOInfo
 
 ```crmscript
 NSEMailEntity thing;

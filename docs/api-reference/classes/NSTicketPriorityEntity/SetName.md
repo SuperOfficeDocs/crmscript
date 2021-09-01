@@ -11,7 +11,7 @@ so.topic: reference
 The name of the priority.
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSTicketPriorityEntity thing;

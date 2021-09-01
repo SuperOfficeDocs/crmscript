@@ -11,7 +11,7 @@ so.topic: reference
 The document type to use when creating a blank document. Plugin-specific. Used when not creating template from a local file.
 
 **Parameter:** 
- - **documentTypeKey** Integer
+* **documentTypeKey** Integer
 
 ```crmscript
 NSDocumentTemplateEntity thing;

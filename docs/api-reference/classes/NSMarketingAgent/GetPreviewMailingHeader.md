@@ -10,8 +10,9 @@ so.topic: reference
 
 Get a shipment from its shipment id
 
-**Parameters:**
- - **shipmentId** Shipment id
+## Parameters
+
+* **shipmentId** Shipment id
 
 **Returns:** NSPreviewMailingHeader
 

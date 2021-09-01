@@ -11,7 +11,7 @@ so.topic: reference
 Estimated or actual sent time (depends on status)
 
 **Parameter:** 
- - **sendingTime** DateTime
+* **sendingTime** DateTime
 
 ```crmscript
 NSPreviewMailing thing;

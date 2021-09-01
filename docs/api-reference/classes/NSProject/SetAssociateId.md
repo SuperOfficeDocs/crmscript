@@ -11,7 +11,7 @@ so.topic: reference
 The project owner id (associate id)
 
 **Parameter:** 
- - **associateId** Integer
+* **associateId** Integer
 
 ```crmscript
 NSProject thing;

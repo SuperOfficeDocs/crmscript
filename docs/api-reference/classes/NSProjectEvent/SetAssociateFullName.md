@@ -11,7 +11,7 @@ so.topic: reference
 Name of the person that ows the event (i.e. project)
 
 **Parameter:** 
- - **associateFullName** String
+* **associateFullName** String
 
 ```crmscript
 NSProjectEvent thing;

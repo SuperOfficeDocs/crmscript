@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **projectmemberId** Integer
+* **projectmemberId** Integer
 
 ```crmscript
 NSProjectMember thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Link to priority list
 
 **Parameter:** 
- - **priorityId** Integer
+* **priorityId** Integer
 
 ```crmscript
 NSAppointment thing;

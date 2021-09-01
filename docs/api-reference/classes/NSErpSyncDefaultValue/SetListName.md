@@ -11,7 +11,7 @@ so.topic: reference
 The ERP list name, if the field has a list of values supplied by the ERP Connector
 
 **Parameter:** 
- - **listName** String
+* **listName** String
 
 ```crmscript
 NSErpSyncDefaultValue thing;

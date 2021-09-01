@@ -11,7 +11,7 @@ so.topic: reference
 Contact kana name, used in Japanese versions only
 
 **Parameter:** 
- - **kananame** String
+* **kananame** String
 
 ```crmscript
 NSContactEntity thing;

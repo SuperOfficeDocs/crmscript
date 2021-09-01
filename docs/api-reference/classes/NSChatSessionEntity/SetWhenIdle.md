@@ -11,7 +11,7 @@ so.topic: reference
 The last time anyone sent a message for this session.
 
 **Parameter:** 
- - **whenIdle** DateTime
+* **whenIdle** DateTime
 
 ```crmscript
 NSChatSessionEntity thing;

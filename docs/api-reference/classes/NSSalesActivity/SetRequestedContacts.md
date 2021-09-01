@@ -11,7 +11,7 @@ so.topic: reference
 The companies that match the request
 
 **Parameter:** 
- - **requestedContacts** NSContact[]
+* **requestedContacts** NSContact[]
 
 ```crmscript
 NSSalesActivity thing;

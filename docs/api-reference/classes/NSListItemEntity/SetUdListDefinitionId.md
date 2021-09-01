@@ -11,7 +11,7 @@ so.topic: reference
 The id of the list which this list item belongs to
 
 **Parameter:** 
- - **udListDefinitionId** Integer
+* **udListDefinitionId** Integer
 
 ```crmscript
 NSListItemEntity thing;

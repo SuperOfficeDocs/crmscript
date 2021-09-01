@@ -11,7 +11,7 @@ so.topic: reference
 The CRMScript Macro which will be run when the form is submitted.
 
 **Parameter:** 
- - **scriptId** Integer
+* **scriptId** Integer
 
 ```crmscript
 NSFormEntity thing;

@@ -12,6 +12,6 @@ This method will notify a user about a new message in the specified ticket accor
 
 ## Parameters
 
- - ticketId: the id of the ticket to be notified about
- - onlyToHotList: if this is set to true, only those with this ticket on their hotlists will be notified
+* ticketId: the id of the ticket to be notified about
+* onlyToHotList: if this is set to true, only those with this ticket on their hotlists will be notified
 

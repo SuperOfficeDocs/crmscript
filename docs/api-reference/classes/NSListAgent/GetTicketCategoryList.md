@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a vector of NSTicketCategoryEntity objects.
 
-**Parameters:**
- - **ticketCategoryEntityIds** The identifiers of the NSTicketCategoryEntity objects
+## Parameters
+
+* **ticketCategoryEntityIds** The identifiers of the NSTicketCategoryEntity objects
 
 **Returns:** NSTicketCategoryEntity[]
 

@@ -11,7 +11,7 @@ so.topic: reference
 True if the current user is signed on to the event (i.e. is project member)
 
 **Parameter:** 
- - **isSignedOn** Bool
+* **isSignedOn** Bool
 
 ```crmscript
 NSProjectEvent thing;

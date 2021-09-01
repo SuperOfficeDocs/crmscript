@@ -11,7 +11,7 @@ so.topic: reference
 Form text used for the actual checkbox
 
 **Parameter:** 
- - **consentText** String
+* **consentText** String
 
 ```crmscript
 NSConsentPurpose thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Id to the previous outgoing message related to this one. Used from message threading.
 
 **Parameter:** 
- - **parentMessagingId** Integer
+* **parentMessagingId** Integer
 
 ```crmscript
 NSOutgoingMessage thing;

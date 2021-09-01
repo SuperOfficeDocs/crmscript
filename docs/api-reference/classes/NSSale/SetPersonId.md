@@ -11,7 +11,7 @@ so.topic: reference
 The sale's contact persons id
 
 **Parameter:** 
- - **personId** Integer
+* **personId** Integer
 
 ```crmscript
 NSSale thing;

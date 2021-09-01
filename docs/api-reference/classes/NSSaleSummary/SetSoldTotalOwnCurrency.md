@@ -11,7 +11,7 @@ so.topic: reference
 Summed amount for all sold within the period in default currency for the current user
 
 **Parameter:** 
- - **soldTotalOwnCurrency** Float
+* **soldTotalOwnCurrency** Float
 
 ```crmscript
 NSSaleSummary thing;

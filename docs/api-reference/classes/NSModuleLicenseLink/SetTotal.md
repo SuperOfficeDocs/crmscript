@@ -11,7 +11,7 @@ so.topic: reference
 The total number of module licenses. In other words the number of free license added to the number of licenses in use equals the total number of licenses
 
 **Parameter:** 
- - **total** Integer
+* **total** Integer
 
 ```crmscript
 NSModuleLicenseLink thing;

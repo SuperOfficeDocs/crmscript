@@ -11,7 +11,7 @@ so.topic: reference
 Primary key for the item.
 
 **Parameter:** 
- - **eRPQuoteListItemKey** String
+* **eRPQuoteListItemKey** String
 
 ```crmscript
 NSQuoteListItem thing;

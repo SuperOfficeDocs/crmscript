@@ -11,7 +11,7 @@ so.topic: reference
 Paper width in twips
 
 **Parameter:** 
- - **paperWidth** Integer
+* **paperWidth** Integer
 
 ```crmscript
 NSReportLabelLayoutEntity thing;

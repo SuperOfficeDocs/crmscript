@@ -13,5 +13,5 @@ This function sets the description of the macro return value.
 
 ## Parameters
 
- - p0: the description
+* p0: the description
 

@@ -10,6 +10,7 @@ so.topic: reference
 
 Set rank order on project document
 
-**Parameters:**
- - **saleTypeStageLinkId** The id of the list
- - **itemsIds** The ids of the items in the order you want
+## Parameters
+
+* **saleTypeStageLinkId** The id of the list
+* **itemsIds** The ids of the items in the order you want

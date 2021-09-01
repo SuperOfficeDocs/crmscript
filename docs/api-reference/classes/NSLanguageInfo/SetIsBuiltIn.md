@@ -11,7 +11,7 @@ so.topic: reference
 Has this row been inserted by SuperOffice priming data
 
 **Parameter:** 
- - **isBuiltIn** Bool
+* **isBuiltIn** Bool
 
 ```crmscript
 NSLanguageInfo thing;

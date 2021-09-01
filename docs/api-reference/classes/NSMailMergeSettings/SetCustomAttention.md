@@ -11,7 +11,7 @@ so.topic: reference
 Custom value for attention.
 
 **Parameter:** 
- - **customAttention** String
+* **customAttention** String
 
 ```crmscript
 NSMailMergeSettings thing;

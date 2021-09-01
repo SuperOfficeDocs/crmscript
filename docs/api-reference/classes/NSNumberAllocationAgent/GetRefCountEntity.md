@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSRefCountEntity object.
 
-**Parameters:**
- - **refCountEntityId** The identifier of the NSRefCountEntity object
+## Parameters
+
+* **refCountEntityId** The identifier of the NSRefCountEntity object
 
 **Returns:** NSRefCountEntity
 

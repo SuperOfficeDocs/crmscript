@@ -11,7 +11,7 @@ so.topic: reference
 True if the user should receive notifications for this topic
 
 **Parameter:** 
- - **canNotify** Bool
+* **canNotify** Bool
 
 ```crmscript
 NSChatTopicAgent thing;

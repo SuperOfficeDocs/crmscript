@@ -11,7 +11,7 @@ so.topic: reference
 The identifier of the module license
 
 **Parameter:** 
- - **moduleLicenseId** Integer
+* **moduleLicenseId** Integer
 
 ```crmscript
 NSModuleLicenseLink thing;

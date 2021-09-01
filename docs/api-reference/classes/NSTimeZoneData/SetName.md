@@ -11,7 +11,7 @@ so.topic: reference
 Name associated with the location
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSTimeZoneData thing;

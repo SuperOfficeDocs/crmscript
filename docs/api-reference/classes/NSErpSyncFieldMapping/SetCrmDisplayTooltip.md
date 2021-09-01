@@ -11,7 +11,7 @@ so.topic: reference
 Tooltip text for CRM field; ignored on Save
 
 **Parameter:** 
- - **crmDisplayTooltip** String
+* **crmDisplayTooltip** String
 
 ```crmscript
 NSErpSyncFieldMapping thing;

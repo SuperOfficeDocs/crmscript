@@ -11,7 +11,7 @@ so.topic: reference
 The person owning the Foreign Device
 
 **Parameter:** 
- - **associateFullName** String
+* **associateFullName** String
 
 ```crmscript
 NSForeignDevice thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Recent chats with contact
 
 **Parameter:** 
- - **chats** NSChatSummaryItem[]
+* **chats** NSChatSummaryItem[]
 
 ```crmscript
 NSContactSummary thing;

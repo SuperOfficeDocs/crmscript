@@ -11,7 +11,7 @@ so.topic: reference
 Should this field be shown as a (read-only!) field in the CRM Gui
 
 **Parameter:** 
- - **showInGui** Bool
+* **showInGui** Bool
 
 ```crmscript
 NSErpSyncFieldMapping thing;

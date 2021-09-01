@@ -12,9 +12,9 @@ Access restrictions on the field
 
 **Returns:** Integer
 
-     - Enum: 0 = Normal 
-     - Enum: 1 = Mandatory 
-     - Enum: 2 = ReadOnly 
+* Enum: 0 = Normal 
+* Enum: 1 = Mandatory 
+* Enum: 2 = ReadOnly 
 
 ```crmscript
 NSFieldMetadata thing;

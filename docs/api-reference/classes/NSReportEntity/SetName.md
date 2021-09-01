@@ -11,7 +11,7 @@ so.topic: reference
 The name of the report
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSReportEntity thing;

@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets the Audience layout belonging to the person specified.
 
-**Parameters:**
- - **personId** The person id
+## Parameters
+
+* **personId** The person id
 
 **Returns:** Audience layout entity
 

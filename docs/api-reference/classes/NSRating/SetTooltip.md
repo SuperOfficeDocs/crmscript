@@ -11,7 +11,7 @@ so.topic: reference
 Set the tooltip description for the NSRating list item.
 
 **Parameter:** 
- - **tooltip** String Rating tooltip description.
+* **tooltip** String Rating tooltip description.
 
 ```crmscript
 NSRating thing;

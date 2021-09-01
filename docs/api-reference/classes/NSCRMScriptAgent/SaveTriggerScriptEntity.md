@@ -11,7 +11,7 @@ so.topic: reference
 Updates the existing NSTriggerScriptEntity or creates a new NSTriggerScriptEntity if the id parameter is 0
 
 **Parameters**:
- - **triggerScriptEntity** The NSTriggerScriptEntity to save.
+* **triggerScriptEntity** The NSTriggerScriptEntity to save.
 
 **Returns:** NSTriggerScriptEntity
 

@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSWindowPosSize object.
 
-**Parameters:**
- - **windowPosSizeId** The identifier of the NSWindowPosSize object
+## Parameters
+
+* **windowPosSizeId** The identifier of the NSWindowPosSize object
 
 **Returns:** NSWindowPosSize
 

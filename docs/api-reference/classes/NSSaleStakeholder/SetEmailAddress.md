@@ -11,7 +11,7 @@ so.topic: reference
 E-mail address
 
 **Parameter:** 
- - **emailAddress** String
+* **emailAddress** String
 
 ```crmscript
 NSSaleStakeholder thing;

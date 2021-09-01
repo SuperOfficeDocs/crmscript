@@ -11,7 +11,7 @@ so.topic: reference
 The language which this device will receive notifications translated in
 
 **Parameter:** 
- - **language** String
+* **language** String
 
 ```crmscript
 NSPocketDeviceInfo thing;

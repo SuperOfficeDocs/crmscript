@@ -24,4 +24,3 @@ Supports both http and https. Returns the result in a byte array.
       print(h.getErrorMessage());
     else
       print(String(b));
-

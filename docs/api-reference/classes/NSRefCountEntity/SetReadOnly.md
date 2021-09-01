@@ -11,7 +11,7 @@ so.topic: reference
 Target field is read only in GUI
 
 **Parameter:** 
- - **readOnly** Bool
+* **readOnly** Bool
 
 ```crmscript
 NSRefCountEntity thing;

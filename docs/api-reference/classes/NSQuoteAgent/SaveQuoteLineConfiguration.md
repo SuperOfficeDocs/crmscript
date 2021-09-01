@@ -10,8 +10,9 @@ so.topic: reference
 
 Save a NSQuoteLineConfiguration object. It is not possible to add a new configuration.
 
-**Parameters:**
- - **quoteLineConfiguration** The QuoteLineConfiguration to save.
+## Parameters
+
+* **quoteLineConfiguration** The QuoteLineConfiguration to save.
 
 **Returns:** NSQuoteLineConfiguration
 

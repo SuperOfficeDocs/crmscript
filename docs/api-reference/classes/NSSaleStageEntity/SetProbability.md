@@ -11,7 +11,7 @@ so.topic: reference
 The numeric probability of the sale
 
 **Parameter:** 
- - **probability** Integer
+* **probability** Integer
 
 ```crmscript
 NSSaleStageEntity thing;

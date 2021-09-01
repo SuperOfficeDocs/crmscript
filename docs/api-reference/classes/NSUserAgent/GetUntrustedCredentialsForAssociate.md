@@ -10,9 +10,10 @@ so.topic: reference
 
 Get a set of credentials of a specified type for a specified user. SecretValue is only populated for authenticated user, and system users.
 
-**Parameters:**
- - **associateId** Id of user to retrieve credentials for.
- - **type** Type of credential(Ex: "imap", "smtp").
+## Parameters
+
+* **associateId** Id of user to retrieve credentials for.
+* **type** Type of credential(Ex: "imap", "smtp").
 
 **Returns:** NSUntrustedCredentials[]
 

@@ -11,7 +11,7 @@ so.topic: reference
 Do not escape HTML in field when displaying contents.
 
 **Parameter:** 
- - **isHtml** Bool
+* **isHtml** Bool
 
 ```crmscript
 NSFieldInfoLongText thing;

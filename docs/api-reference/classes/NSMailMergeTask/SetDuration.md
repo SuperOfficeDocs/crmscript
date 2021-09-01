@@ -11,7 +11,7 @@ so.topic: reference
 Duration of task
 
 **Parameter:** 
- - **duration** Integer
+* **duration** Integer
 
 ```crmscript
 NSMailMergeTask thing;

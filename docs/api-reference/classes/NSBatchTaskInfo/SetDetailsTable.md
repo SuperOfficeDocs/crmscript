@@ -11,7 +11,7 @@ so.topic: reference
 Id of table with more information about the task.
 
 **Parameter:** 
- - **detailsTable** Integer
+* **detailsTable** Integer
 
 ```crmscript
 NSBatchTaskInfo thing;

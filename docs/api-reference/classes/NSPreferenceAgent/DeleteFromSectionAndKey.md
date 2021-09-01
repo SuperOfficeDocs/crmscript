@@ -10,9 +10,10 @@ so.topic: reference
 
 Gets a NSPreferenceDescription based on the section and key
 
-**Parameters:**
- - **section** The PreferenceDescription-section
- - **key** The PreferenceDescription-key
+## Parameters
+
+* **section** The PreferenceDescription-section
+* **key** The PreferenceDescription-key
 
 ```crmscript
 NSPreferenceAgent agent;

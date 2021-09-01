@@ -12,14 +12,14 @@ Result of CheckLicenseStatus
 
 **Returns:** Integer
 
-     - Enum: 0 = Ok 
-     - Enum: 1 = NewLicenseAvailable 
-     - Enum: 2 = NewCompanyNameAvailable 
-     - Enum: 3 = NewSerialAvailable 
-     - Enum: 4 = UseCustomMessage 
-     - Enum: 5 = UseCustomMessageAndUrl 
-     - Enum: 100 = ProblemWithLicense 
-     - Enum: 5000 = UnknownError 
+* Enum: 0 = Ok 
+* Enum: 1 = NewLicenseAvailable 
+* Enum: 2 = NewCompanyNameAvailable 
+* Enum: 3 = NewSerialAvailable 
+* Enum: 4 = UseCustomMessage 
+* Enum: 5 = UseCustomMessageAndUrl 
+* Enum: 100 = ProblemWithLicense 
+* Enum: 5000 = UnknownError 
 
 ```crmscript
 NSCheckLicenseStatusResult thing;

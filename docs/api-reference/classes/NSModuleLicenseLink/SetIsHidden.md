@@ -11,7 +11,7 @@ so.topic: reference
 Is hidden from UI
 
 **Parameter:** 
- - **isHidden** Bool
+* **isHidden** Bool
 
 ```crmscript
 NSModuleLicenseLink thing;

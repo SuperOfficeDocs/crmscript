@@ -10,8 +10,9 @@ so.topic: reference
 
 Regenerate the given status monitor
 
-**Parameters:**
- - **statusMonitorId** The id of the statusmonitor to regenerate
+## Parameters
+
+* **statusMonitorId** The id of the statusmonitor to regenerate
 
 ```crmscript
 NSSaintAgent agent;

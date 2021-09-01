@@ -11,7 +11,7 @@ so.topic: reference
 The Id of the Audience layout
 
 **Parameter:** 
- - **audienceLayoutId** Integer
+* **audienceLayoutId** Integer
 
 ```crmscript
 NSAudienceLayoutEntity thing;

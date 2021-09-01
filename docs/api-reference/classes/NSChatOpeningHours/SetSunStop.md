@@ -11,7 +11,7 @@ so.topic: reference
 When opening hours stop on Sundays. Only time-part is used.
 
 **Parameter:** 
- - **sunStop** TimeSpan
+* **sunStop** TimeSpan
 
 ```crmscript
 NSChatOpeningHours thing;

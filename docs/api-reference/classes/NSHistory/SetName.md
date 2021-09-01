@@ -11,7 +11,7 @@ so.topic: reference
 Name of the history item, for instance contact name
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSHistory thing;

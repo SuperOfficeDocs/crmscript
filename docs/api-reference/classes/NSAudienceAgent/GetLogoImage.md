@@ -8,5 +8,6 @@ so.topic: reference
 
 # Image GetLogoImage(String layoutName)
 
-**Parameters:**
- - **layoutName** 
+## Parameters
+
+* **layoutName** 

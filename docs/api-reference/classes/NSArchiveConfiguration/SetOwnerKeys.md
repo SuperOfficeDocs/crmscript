@@ -11,7 +11,7 @@ so.topic: reference
 The actual ownership information for the configuration that was retrieved
 
 **Parameter:** 
- - **ownerKeys** String
+* **ownerKeys** String
 
 ```crmscript
 NSArchiveConfiguration thing;

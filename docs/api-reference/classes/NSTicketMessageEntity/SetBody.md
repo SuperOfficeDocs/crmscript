@@ -11,7 +11,7 @@ so.topic: reference
 The textbody for the message.
 
 **Parameter:** 
- - **body** String
+* **body** String
 
 ```crmscript
 NSTicketMessageEntity thing;

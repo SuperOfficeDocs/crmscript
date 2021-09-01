@@ -9,7 +9,7 @@ so.topic: reference
 # SetAssociateList(NSSelectableMDOListItem[] associateList)
 
 **Parameter:** 
- - **associateList** NSSelectableMDOListItem[]
+* **associateList** NSSelectableMDOListItem[]
 
 ```crmscript
 NSDiaryViewEntity thing;

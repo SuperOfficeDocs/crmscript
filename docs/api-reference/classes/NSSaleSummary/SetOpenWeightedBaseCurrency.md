@@ -11,7 +11,7 @@ so.topic: reference
 Weighted sum for all open within the period in default currency for the installation 
 
 **Parameter:** 
- - **openWeightedBaseCurrency** Float
+* **openWeightedBaseCurrency** Float
 
 ```crmscript
 NSSaleSummary thing;

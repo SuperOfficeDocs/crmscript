@@ -11,7 +11,7 @@ so.topic: reference
 Any message from the method, including timing data
 
 **Parameter:** 
- - **message** String
+* **message** String
 
 ```crmscript
 NSMassOperationResult thing;

@@ -10,8 +10,9 @@ so.topic: reference
 
 Does this project have a guide associated with its project type?
 
-**Parameters:**
- - **projectId** Project id
+## Parameters
+
+* **projectId** Project id
 
 **Returns:** Bool
 

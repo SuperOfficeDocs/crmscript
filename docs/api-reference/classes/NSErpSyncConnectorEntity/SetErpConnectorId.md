@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **erpConnectorId** Integer
+* **erpConnectorId** Integer
 
 ```crmscript
 NSErpSyncConnectorEntity thing;

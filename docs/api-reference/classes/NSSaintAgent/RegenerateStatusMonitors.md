@@ -10,8 +10,9 @@ so.topic: reference
 
 Regenerate status monitors
 
-**Parameters:**
- - **runAsBatch** If true, then execute the regeneration as a Batch Task; the service call will return immediately. Otherwise wait until the task completes, may cause a timeout if called as a Web Service
+## Parameters
+
+* **runAsBatch** If true, then execute the regeneration as a Batch Task; the service call will return immediately. Otherwise wait until the task completes, may cause a timeout if called as a Web Service
 
 **Returns:** NSBatchTaskInfo
 

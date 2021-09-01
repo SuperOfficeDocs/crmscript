@@ -10,8 +10,9 @@ so.topic: reference
 
 Get an e-mail based on the provided NSDocumentEntity
 
-**Parameters:**
- - **documentEntity** NSDocumentEntity data
+## Parameters
+
+* **documentEntity** NSDocumentEntity data
 
 **Returns:** NSEMailEntity
 

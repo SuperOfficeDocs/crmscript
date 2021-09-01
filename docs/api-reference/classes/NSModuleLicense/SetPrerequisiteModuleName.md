@@ -11,7 +11,7 @@ so.topic: reference
 If set, specifies a module license needed before this license can be granted
 
 **Parameter:** 
- - **prerequisiteModuleName** String
+* **prerequisiteModuleName** String
 
 ```crmscript
 NSModuleLicense thing;

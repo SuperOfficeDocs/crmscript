@@ -10,9 +10,10 @@ so.topic: reference
 
 Check if consent has been given by a specified person, for a specific purpose. Withdraw consents return FALSE.
 
-**Parameters:**
- - **personId** The person id
- - **purpose** The key of the purpose to check. (e.g. 'STORE' or 'EMARKETING')
+## Parameters
+
+* **personId** The person id
+* **purpose** The key of the purpose to check. (e.g. 'STORE' or 'EMARKETING')
 
 **Returns:** Bool
 

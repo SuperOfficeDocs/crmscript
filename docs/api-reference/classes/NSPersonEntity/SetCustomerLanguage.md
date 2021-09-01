@@ -9,7 +9,7 @@ so.topic: reference
 # SetCustomerLanguage(NSCustomerLanguage customerLanguage)
 
 **Parameter:** 
- - **customerLanguage** NSCustomerLanguage
+* **customerLanguage** NSCustomerLanguage
 
 ```crmscript
 NSPersonEntity thing;

@@ -11,7 +11,7 @@ so.topic: reference
 The dashboard id
 
 **Parameter:** 
- - **dashboardId** Integer
+* **dashboardId** Integer
 
 ```crmscript
 NSDashboard thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Use agent photo and name when chatting
 
 **Parameter:** 
- - **showAgentPhoto** Bool
+* **showAgentPhoto** Bool
 
 ```crmscript
 NSChatWidgetSettings thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Comment attached to the calendar event (accept / reject reason etc.)
 
 **Parameter:** 
- - **comment** String
+* **comment** String
 
 ```crmscript
 NSEMailAppointment thing;

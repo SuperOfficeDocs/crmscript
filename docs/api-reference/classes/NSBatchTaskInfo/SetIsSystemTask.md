@@ -11,7 +11,7 @@ so.topic: reference
 If IsSystemTask is true, the task is not initiated by an associate.
 
 **Parameter:** 
- - **isSystemTask** Bool
+* **isSystemTask** Bool
 
 ```crmscript
 NSBatchTaskInfo thing;

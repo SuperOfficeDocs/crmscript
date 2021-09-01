@@ -10,5 +10,6 @@ so.topic: reference
 
 Create a new folder on the server
 
-**Parameters:**
- - **connectionInfo** All information needed to connect to the mailserver
+## Parameters
+
+* **connectionInfo** All information needed to connect to the mailserver

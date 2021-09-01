@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSMrMrs object.
 
-**Parameters:**
- - **mrMrsId** The identifier of the NSMrMrs object
+## Parameters
+
+* **mrMrsId** The identifier of the NSMrMrs object
 
 **Returns:** NSMrMrs
 

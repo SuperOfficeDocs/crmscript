@@ -11,7 +11,7 @@ so.topic: reference
 If true, the resource is deleted.
 
 **Parameter:** 
- - **deleted** Bool
+* **deleted** Bool
 
 ```crmscript
 NSResourceEntity thing;

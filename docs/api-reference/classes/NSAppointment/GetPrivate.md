@@ -12,9 +12,9 @@ Obsolete, but still maintained field for appointment privacy; denormalization of
 
 **Returns:** AppointmentPrivate
 
-     - Enum: 0 = Public 
-     - Enum: 1 = PrivateUser 
-     - Enum: 2 = PrivateGroup 
+* Enum: 0 = Public 
+* Enum: 1 = PrivateUser 
+* Enum: 2 = PrivateGroup 
 
 ```crmscript
 NSAppointment thing;

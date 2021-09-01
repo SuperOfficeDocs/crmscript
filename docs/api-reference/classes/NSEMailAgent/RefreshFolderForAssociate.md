@@ -10,8 +10,9 @@ so.topic: reference
 
 Get all emails in folder(s) from current associate
 
-**Parameters:**
- - **folders** List of folder names to refresh
+## Parameters
+
+* **folders** List of folder names to refresh
 
 **Returns:** String
 

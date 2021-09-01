@@ -11,7 +11,7 @@ so.topic: reference
 Arbitrary description string
 
 **Parameter:** 
- - **description** String
+* **description** String
 
 ```crmscript
 NSVersionInfo thing;

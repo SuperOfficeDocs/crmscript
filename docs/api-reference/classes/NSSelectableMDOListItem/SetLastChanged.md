@@ -11,7 +11,7 @@ so.topic: reference
 Time of last change.
 
 **Parameter:** 
- - **lastChanged** DateTime
+* **lastChanged** DateTime
 
 ```crmscript
 NSSelectableMDOListItem thing;

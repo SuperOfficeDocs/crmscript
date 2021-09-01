@@ -8,10 +8,10 @@ so.topic: reference
 
 # SetName(String name)
 
-Initials, UserId - also used as login name for on-site installations. Identifies user in archives.
+Initials, UserId* also used as login name for on-site installations. Identifies user in archives.
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSUser thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **emailId** Integer
+* **emailId** Integer
 
 ```crmscript
 NSEMailAddress thing;

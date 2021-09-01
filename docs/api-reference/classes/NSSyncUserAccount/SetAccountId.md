@@ -11,7 +11,7 @@ so.topic: reference
 The account primary key
 
 **Parameter:** 
- - **accountId** Integer
+* **accountId** Integer
 
 ```crmscript
 NSSyncUserAccount thing;

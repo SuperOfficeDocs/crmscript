@@ -11,7 +11,7 @@ so.topic: reference
 First email on contact person.
 
 **Parameter:** 
- - **email** String
+* **email** String
 
 ```crmscript
 NSPerson thing;

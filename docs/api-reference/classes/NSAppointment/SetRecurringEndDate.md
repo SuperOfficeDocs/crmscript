@@ -9,7 +9,7 @@ so.topic: reference
 # SetRecurringEndDate(DateTime recurringEndDate)
 
 **Parameter:** 
- - **recurringEndDate** DateTime
+* **recurringEndDate** DateTime
 
 ```crmscript
 NSAppointment thing;

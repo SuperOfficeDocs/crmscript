@@ -11,7 +11,7 @@ so.topic: reference
 Registered by whom
 
 **Parameter:** 
- - **registeredAssociateId** Integer
+* **registeredAssociateId** Integer
 
 ```crmscript
 NSFormEntity thing;

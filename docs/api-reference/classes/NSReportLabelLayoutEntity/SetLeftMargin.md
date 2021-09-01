@@ -11,7 +11,7 @@ so.topic: reference
 Left margin in twips
 
 **Parameter:** 
- - **leftMargin** Integer
+* **leftMargin** Integer
 
 ```crmscript
 NSReportLabelLayoutEntity thing;

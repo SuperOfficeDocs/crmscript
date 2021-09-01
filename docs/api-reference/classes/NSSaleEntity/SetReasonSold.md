@@ -9,7 +9,7 @@ so.topic: reference
 # SetReasonSold(NSReasonSold reasonSold)
 
 **Parameter:** 
- - **reasonSold** NSReasonSold
+* **reasonSold** NSReasonSold
 
 ```crmscript
 NSSaleEntity thing;

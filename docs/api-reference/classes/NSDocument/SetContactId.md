@@ -11,7 +11,7 @@ so.topic: reference
 Contact ID of owning contact, may be 0
 
 **Parameter:** 
- - **contactId** Integer
+* **contactId** Integer
 
 ```crmscript
 NSDocument thing;

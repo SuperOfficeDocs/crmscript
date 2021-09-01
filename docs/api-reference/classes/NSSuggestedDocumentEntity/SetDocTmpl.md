@@ -11,7 +11,7 @@ so.topic: reference
 Document template
 
 **Parameter:** 
- - **docTmpl** NSDocumentTemplate
+* **docTmpl** NSDocumentTemplate
 
 ```crmscript
 NSSuggestedDocumentEntity thing;

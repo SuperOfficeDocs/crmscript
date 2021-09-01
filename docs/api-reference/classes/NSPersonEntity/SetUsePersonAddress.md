@@ -11,7 +11,7 @@ so.topic: reference
 True if the person's address should be used as mailing address, instead of the contact's address.
 
 **Parameter:** 
- - **usePersonAddress** Bool
+* **usePersonAddress** Bool
 
 ```crmscript
 NSPersonEntity thing;

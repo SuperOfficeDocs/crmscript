@@ -13,8 +13,8 @@ Adds an appointment to the class.
 
 ## Parameters
 
- - id: The id of the appointment (can be retrieved later)
- - start: The start datetime
- - stop: The stop datetime
- - title: The title of the appointment
+* id: The id of the appointment (can be retrieved later)
+* start: The start datetime
+* stop: The stop datetime
+* title: The title of the appointment
 

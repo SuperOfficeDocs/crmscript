@@ -10,8 +10,9 @@ so.topic: reference
 
 'answer' the session: assign the session to the user. The welcome message is sent to the customer. Returns NULL if session was not in queue.
 
-**Parameters:**
- - **chatSessionId** id of the chat session to answer
+## Parameters
+
+* **chatSessionId** id of the chat session to answer
 
 **Returns:** NSChatSessionEntity
 

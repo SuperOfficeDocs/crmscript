@@ -11,7 +11,7 @@ so.topic: reference
 Is Sign Off functionality enabled?
 
 **Parameter:** 
- - **signOff** Bool
+* **signOff** Bool
 
 ```crmscript
 NSProjectEventEntity thing;

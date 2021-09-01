@@ -10,8 +10,9 @@ so.topic: reference
 
 Returns all open sales for the contact provided.
 
-**Parameters:**
- - **contactId** The ID of the contact whose sales we want.
+## Parameters
+
+* **contactId** The ID of the contact whose sales we want.
 
 **Returns:** NSSale[]
 

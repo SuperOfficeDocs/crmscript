@@ -11,7 +11,7 @@ so.topic: reference
 The optional id of the contact of the person who submitted.
 
 **Parameter:** 
- - **contactId** Integer
+* **contactId** Integer
 
 ```crmscript
 NSFormSubmissionEntity thing;

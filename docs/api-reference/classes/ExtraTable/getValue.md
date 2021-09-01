@@ -13,7 +13,7 @@ This function returns the value of the given field for the currently loaded entr
 
 ## Parameters
 
- - field: The name of the extra table field - e.g. "x\_myfield"
+* field: The name of the extra table field* e.g. "x\_myfield"
 
 ## Example
 

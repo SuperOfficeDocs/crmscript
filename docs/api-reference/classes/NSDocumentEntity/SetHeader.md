@@ -11,7 +11,7 @@ so.topic: reference
 Visible document name
 
 **Parameter:** 
- - **header** String
+* **header** String
 
 ```crmscript
 NSDocumentEntity thing;

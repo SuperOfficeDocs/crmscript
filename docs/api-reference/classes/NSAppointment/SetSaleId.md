@@ -11,7 +11,7 @@ so.topic: reference
 Owning sale, if any (may be 0)
 
 **Parameter:** 
- - **saleId** Integer
+* **saleId** Integer
 
 ```crmscript
 NSAppointment thing;

@@ -11,7 +11,7 @@ so.topic: reference
 The contact's internet adresses
 
 **Parameter:** 
- - **urls** NSEntityElement[]
+* **urls** NSEntityElement[]
 
 ```crmscript
 NSContactEntity thing;

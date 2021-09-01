@@ -11,7 +11,7 @@ so.topic: reference
 List of all possible competitors. 
 
 **Parameter:** 
- - **competitor** NSCompetitor
+* **competitor** NSCompetitor
 
 ```crmscript
 NSSaleEntity thing;

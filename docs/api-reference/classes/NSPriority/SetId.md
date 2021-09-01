@@ -11,7 +11,7 @@ so.topic: reference
 Set the primary key (id) for the Priority
 
 **Parameter:** 
- - **id** Integer Priority id.
+* **id** Integer Priority id.
 
 ```crmscript
 NSPriority thing;

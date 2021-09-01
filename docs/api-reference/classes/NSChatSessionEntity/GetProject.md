@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSProject GetProject()
 
-Project the session is connectedto - could be empty if we don't know exactly.
+Project the session is connectedto* could be empty if we don't know exactly.
 
 **Returns:** NSProject
 

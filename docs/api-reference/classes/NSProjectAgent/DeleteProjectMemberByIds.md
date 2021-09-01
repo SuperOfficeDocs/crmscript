@@ -10,5 +10,6 @@ so.topic: reference
 
 Deletes projectmembers rows.
 
-**Parameters:**
- - **projectMemberIds** An Array of projectmember ids.
+## Parameters
+
+* **projectMemberIds** An Array of projectmember ids.

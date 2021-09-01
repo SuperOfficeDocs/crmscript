@@ -11,7 +11,7 @@ so.topic: reference
 The contacts phone
 
 **Parameter:** 
- - **directPhone** String
+* **directPhone** String
 
 ```crmscript
 NSContact thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Our reference, searchable field from freetext search
 
 **Parameter:** 
- - **ourRef** String
+* **ourRef** String
 
 ```crmscript
 NSDocument thing;

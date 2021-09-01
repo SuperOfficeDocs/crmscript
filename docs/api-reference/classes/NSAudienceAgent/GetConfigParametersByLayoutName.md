@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets the Audience configuration parameters belonging to a given Audience layout.
 
-**Parameters:**
- - **layoutName** Name of the Audience layout instance
+## Parameters
+
+* **layoutName** Name of the Audience layout instance
 
 **Returns:** Array of Audience configuration parameters.
 

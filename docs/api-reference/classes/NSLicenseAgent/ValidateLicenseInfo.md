@@ -10,7 +10,8 @@ so.topic: reference
 
 Validate that a license is consistant.
 
-**Parameters:**
- - **licenseInfo** License to validate consistancy for
+## Parameters
+
+* **licenseInfo** License to validate consistancy for
 
 **Returns:** NSLicenseResult

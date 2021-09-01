@@ -11,7 +11,7 @@ so.topic: reference
 Suggested guide item that this document is an instance of (Note: NOT valid for appointments, they have their own link)
 
 **Parameter:** 
- - **suggestedDocumentId** Integer
+* **suggestedDocumentId** Integer
 
 ```crmscript
 NSDocumentEntity thing;

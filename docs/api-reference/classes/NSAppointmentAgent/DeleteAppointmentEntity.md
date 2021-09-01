@@ -10,8 +10,9 @@ so.topic: reference
 
 Deletes the NSAppointmentEntity
   
-**Parameters:**
- - **appointmentEntityId** The identity of the NSAppointmentEntity to delete.
+## Parameters
+
+* **appointmentEntityId** The identity of the NSAppointmentEntity to delete.
 
 ```crmscript
 NSAppointmentAgent agent;

@@ -11,7 +11,7 @@ so.topic: reference
 Appointment creation date
 
 **Parameter:** 
- - **createdDate** DateTime
+* **createdDate** DateTime
 
 ```crmscript
 NSAppointment thing;

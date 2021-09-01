@@ -11,7 +11,7 @@ so.topic: reference
 A summary of fields that have defaults/rules for link creation
 
 **Parameter:** 
- - **defaults** String
+* **defaults** String
 
 ```crmscript
 NSErpSyncActorSummary thing;

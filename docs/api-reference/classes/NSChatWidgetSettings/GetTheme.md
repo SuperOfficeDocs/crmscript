@@ -12,8 +12,8 @@ Predefined themes for the chat widget
 
 **Returns:** Integer
 
-     - Enum: 0 = Classic 
-     - Enum: 1 = Modern 
+* Enum: 0 = Classic 
+* Enum: 1 = Modern 
 
 ```crmscript
 NSChatWidgetSettings thing;

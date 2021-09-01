@@ -8,7 +8,7 @@ so.topic: reference
 
 # String GetDisplayTooltip()
 
-Tooltip string associate with the command - can be a literal or a tooltip hint.
+Tooltip string associate with the command* can be a literal or a tooltip hint.
 
 **Returns:** String
 

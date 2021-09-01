@@ -8,6 +8,7 @@ so.topic: reference
 
 # String[] GetEmailsAsString(EMailConnectionInfoExtended connectionInfoExtended, String[] messageIds)
 
-**Parameters:**
- - **connectionInfoExtended** 
- - **messageIds** 
+## Parameters
+
+* **connectionInfoExtended** 
+* **messageIds** 

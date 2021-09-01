@@ -10,8 +10,9 @@ so.topic: reference
 
 Takes the input stream and create a report. This stream must be on a valid xml format
 
-**Parameters:**
- - **report** The report to import in a correct xml format
+## Parameters
+
+* **report** The report to import in a correct xml format
 
 **Returns:** Integer
 

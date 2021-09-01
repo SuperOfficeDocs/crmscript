@@ -11,7 +11,7 @@ so.topic: reference
 The SuperOffice listItem
 
 **Parameter:** 
- - **crmList** NSMDOListItem
+* **crmList** NSMDOListItem
 
 ```crmscript
 NSErpConnectionListMapping thing;

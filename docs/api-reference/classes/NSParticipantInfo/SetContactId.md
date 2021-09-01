@@ -11,7 +11,7 @@ so.topic: reference
 Contact id of the participant if the participant is an associate or person
 
 **Parameter:** 
- - **contactId** Integer
+* **contactId** Integer
 
 ```crmscript
 NSParticipantInfo thing;

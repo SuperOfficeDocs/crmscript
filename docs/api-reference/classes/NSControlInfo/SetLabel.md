@@ -9,7 +9,7 @@ so.topic: reference
 # SetLabel(String label)
 
 **Parameter:** 
- - **label** String
+* **label** String
 
 ```crmscript
 NSControlInfo thing;

@@ -10,9 +10,10 @@ so.topic: reference
 
 Get a list item for the specified list defintion
 
-**Parameters:**
- - **id** The identity of the list item to load
- - **udListDefinitionName** The name of the list definition, indicating which list to get the item from.
+## Parameters
+
+* **id** The identity of the list item to load
+* **udListDefinitionName** The name of the list definition, indicating which list to get the item from.
 
 **Returns:** NSListItemEntity
 

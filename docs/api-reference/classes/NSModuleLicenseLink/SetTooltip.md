@@ -11,7 +11,7 @@ so.topic: reference
 The tooltip to be shown in some gui with details on the module license
 
 **Parameter:** 
- - **tooltip** String
+* **tooltip** String
 
 ```crmscript
 NSModuleLicenseLink thing;

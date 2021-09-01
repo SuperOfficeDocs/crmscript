@@ -11,7 +11,7 @@ so.topic: reference
 Updates the existing NSFormSubmissionEntity or creates a new NSFormSubmissionEntity if the id parameter is 0
 
 **Parameters**:
- - **formSubmissionEntity** The NSFormSubmissionEntity to save.
+* **formSubmissionEntity** The NSFormSubmissionEntity to save.
 
 **Returns:** NSFormSubmissionEntity
 

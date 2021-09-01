@@ -11,7 +11,7 @@ so.topic: reference
 A field for a long description of this template
 
 **Parameter:** 
- - **longDescription** String
+* **longDescription** String
 
 ```crmscript
 NSShipmentMessageEntity thing;

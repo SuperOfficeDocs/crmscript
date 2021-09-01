@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSPriceList object.
 
-**Parameters:**
- - **priceListId** The identifier of the NSPriceList object
+## Parameters
+
+* **priceListId** The identifier of the NSPriceList object
 
 **Returns:** NSPriceList
 

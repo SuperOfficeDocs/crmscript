@@ -11,7 +11,7 @@ so.topic: reference
 Set the usergroups and/or users the NSAppointmentEntity item is visible for.
 
 **Parameter:** 
- - **visibleFor** NSVisibleFor[] of one or more users + usergroups.
+* **visibleFor** NSVisibleFor[] of one or more users + usergroups.
 
 ```crmscript
 NSAppointmentEntity thing;

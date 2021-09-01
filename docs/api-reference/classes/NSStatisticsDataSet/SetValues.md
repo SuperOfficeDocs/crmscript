@@ -11,7 +11,7 @@ so.topic: reference
 Values in this set
 
 **Parameter:** 
- - **values** NSStatisticsDataValue[]
+* **values** NSStatisticsDataValue[]
 
 ```crmscript
 NSStatisticsDataSet thing;

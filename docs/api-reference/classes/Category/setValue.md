@@ -13,16 +13,16 @@ Sets the value of the given field for the category.
 
 ## Available fields
 
- - parent: The id of the parent category.
- - name: The name of the category.
- - externalName: The external name of the category.
- - categoryMaster: The id of the category master.
- - notificationEmail: The value of the email notification field
+* parent: The id of the parent category.
+* name: The name of the category.
+* externalName: The external name of the category.
+* categoryMaster: The id of the category master.
+* notificationEmail: The value of the email notification field
 
 ## Parameters
 
- - name: The name of the field to set.
- - value: The value to set.
+* name: The name of the field to set.
+* value: The value to set.
 
 ## Example
 

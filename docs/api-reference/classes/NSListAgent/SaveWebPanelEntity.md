@@ -11,7 +11,7 @@ so.topic: reference
 Updates the existing NSWebPanelEntity or creates a new NSWebPanelEntity if the id parameter is 0
 
 **Parameters**:
- - **webPanelEntity** The NSWebPanelEntity to save.
+* **webPanelEntity** The NSWebPanelEntity to save.
 
 **Returns:** NSWebPanelEntity
 

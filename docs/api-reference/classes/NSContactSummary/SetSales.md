@@ -11,7 +11,7 @@ so.topic: reference
 Recent sales on contact
 
 **Parameter:** 
- - **sales** NSSaleSummaryItem[]
+* **sales** NSSaleSummaryItem[]
 
 ```crmscript
 NSContactSummary thing;

@@ -11,7 +11,7 @@ so.topic: reference
 User agent handling this session
 
 **Parameter:** 
- - **user** NSAssociate
+* **user** NSAssociate
 
 ```crmscript
 NSChatSessionEntity thing;

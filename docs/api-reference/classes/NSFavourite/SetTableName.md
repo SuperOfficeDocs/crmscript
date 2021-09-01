@@ -11,7 +11,7 @@ so.topic: reference
 Name of the table this favourite belongs to.
 
 **Parameter:** 
- - **tableName** String
+* **tableName** String
 
 ```crmscript
 NSFavourite thing;

@@ -10,8 +10,9 @@ so.topic: reference
 
 Delete the PrefDescLines associated with Preference Description Ids in the SuperOffice database
 
-**Parameters:**
- - **prefDescIds** Primary keys of the Preference Descriptions that contains PrefDescLines to delete
+## Parameters
+
+* **prefDescIds** Primary keys of the Preference Descriptions that contains PrefDescLines to delete
 
 ```crmscript
 NSPreferenceAgent agent;

@@ -11,7 +11,7 @@ so.topic: reference
 The native name of this language (Norsk Bokmål)
 
 **Parameter:** 
- - **nativeName** String
+* **nativeName** String
 
 ```crmscript
 NSLanguageInfo thing;

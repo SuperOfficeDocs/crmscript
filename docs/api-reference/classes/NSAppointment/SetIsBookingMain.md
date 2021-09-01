@@ -11,7 +11,7 @@ so.topic: reference
 True if this appointment is a booking and current associate is the owner. False if it is a booking and current associate is a participant.
 
 **Parameter:** 
- - **isBookingMain** Bool
+* **isBookingMain** Bool
 
 ```crmscript
 NSAppointment thing;

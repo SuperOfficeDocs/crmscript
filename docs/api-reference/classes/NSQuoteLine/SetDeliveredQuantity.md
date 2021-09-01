@@ -8,10 +8,10 @@ so.topic: reference
 
 # SetDeliveredQuantity(Float deliveredQuantity)
 
-How many units have been delivered - updated by ERP system.
+How many units have been delivered* updated by ERP system.
 
 **Parameter:** 
- - **deliveredQuantity** Float
+* **deliveredQuantity** Float
 
 ```crmscript
 NSQuoteLine thing;

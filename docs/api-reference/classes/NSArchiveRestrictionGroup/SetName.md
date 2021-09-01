@@ -11,7 +11,7 @@ so.topic: reference
 The name of this criteria group
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSArchiveRestrictionGroup thing;

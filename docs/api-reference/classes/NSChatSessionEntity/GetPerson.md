@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSPerson GetPerson()
 
-Customer person in this session - could be empty if we don't know exactly.
+Customer person in this session* could be empty if we don't know exactly.
 
 **Returns:** NSPerson
 

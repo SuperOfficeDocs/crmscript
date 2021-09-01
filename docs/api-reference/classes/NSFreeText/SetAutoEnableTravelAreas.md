@@ -11,7 +11,7 @@ so.topic: reference
 Automatically enable freetext search for new travel areas
 
 **Parameter:** 
- - **autoEnableTravelAreas** Bool
+* **autoEnableTravelAreas** Bool
 
 ```crmscript
 NSFreeText thing;

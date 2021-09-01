@@ -11,7 +11,7 @@ so.topic: reference
 Primary key for the NSLegalBase associated with this consent
 
 **Parameter:** 
- - **legalBaseId** Integer
+* **legalBaseId** Integer
 
 ```crmscript
 NSConsentInfo thing;

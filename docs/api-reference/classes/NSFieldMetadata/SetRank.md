@@ -11,7 +11,7 @@ so.topic: reference
 A way to set the order of the fields. Lowest value will be displayed first/over the fields with other values.
 
 **Parameter:** 
- - **rank** Integer
+* **rank** Integer
 
 ```crmscript
 NSFieldMetadata thing;

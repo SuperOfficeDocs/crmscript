@@ -11,7 +11,7 @@ so.topic: reference
 If true disable the option of choose column
 
 **Parameter:** 
- - **locked** Bool
+* **locked** Bool
 
 ```crmscript
 NSImportColumnInfo thing;

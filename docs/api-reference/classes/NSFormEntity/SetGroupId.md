@@ -11,7 +11,7 @@ so.topic: reference
 The group which this form belongs to.
 
 **Parameter:** 
- - **groupId** Integer
+* **groupId** Integer
 
 ```crmscript
 NSFormEntity thing;

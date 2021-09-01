@@ -10,8 +10,9 @@ so.topic: reference
 
 Returns the latest id of the mail item by folder
 
-**Parameters:**
- - **folderId** The folderId for the folder to check for the latest mail id
+## Parameters
+
+* **folderId** The folderId for the folder to check for the latest mail id
 
 **Returns:** Integer
 

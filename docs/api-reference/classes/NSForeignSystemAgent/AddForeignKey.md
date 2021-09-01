@@ -10,11 +10,12 @@ so.topic: reference
 
 Add a new key belonging to the ForeignApp and NSForeignDevice specified.
 
-**Parameters:**
- - **foreignKey** Foreign key to save
- - **applicationName** The name of the foreign application.
- - **deviceName** The name of the foreign device.
- - **deviceIdentifier** The device identifier. Optional if device identifier is not used.
+## Parameters
+
+* **foreignKey** Foreign key to save
+* **applicationName** The name of the foreign application.
+* **deviceName** The name of the foreign device.
+* **deviceIdentifier** The device identifier. Optional if device identifier is not used.
 
 **Returns:** NSForeignKey
 

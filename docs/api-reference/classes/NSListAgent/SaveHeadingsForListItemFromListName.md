@@ -10,10 +10,11 @@ so.topic: reference
 
 Saves the headings for the list item.
 
-**Parameters:**
- - **udListDefinitionName** The name of the list definition, indicating which list to update.
- - **listItemId** The identity of the list item
- - **headings** The headings to save.
+## Parameters
+
+* **udListDefinitionName** The name of the list definition, indicating which list to update.
+* **listItemId** The identity of the list item
+* **headings** The headings to save.
 
 **Returns:** NSSelectableMDOListItem[] 
 

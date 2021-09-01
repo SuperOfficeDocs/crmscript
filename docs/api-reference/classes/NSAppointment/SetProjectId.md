@@ -11,7 +11,7 @@ so.topic: reference
 ID of project referred to, may be 0
 
 **Parameter:** 
- - **projectId** Integer
+* **projectId** Integer
 
 ```crmscript
 NSAppointment thing;

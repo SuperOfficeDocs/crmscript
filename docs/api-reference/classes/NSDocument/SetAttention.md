@@ -11,7 +11,7 @@ so.topic: reference
 Attention/salutation
 
 **Parameter:** 
- - **attention** String
+* **attention** String
 
 ```crmscript
 NSDocument thing;

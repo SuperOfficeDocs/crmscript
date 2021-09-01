@@ -12,14 +12,14 @@ BatchTaskState of the task.
 
 **Returns:** Integer
 
-     - Enum: 0 = Unknown 
-     - Enum: 1 = New 
-     - Enum: 2 = Aquired 
-     - Enum: 3 = Started 
-     - Enum: 4 = Succeeded 
-     - Enum: 5 = Failed 
-     - Enum: 6 = SucceededManualCleanup 
-     - Enum: 99999 = All 
+* Enum: 0 = Unknown 
+* Enum: 1 = New 
+* Enum: 2 = Aquired 
+* Enum: 3 = Started 
+* Enum: 4 = Succeeded 
+* Enum: 5 = Failed 
+* Enum: 6 = SucceededManualCleanup 
+* Enum: 99999 = All 
 
 ```crmscript
 NSBatchTaskInfo thing;

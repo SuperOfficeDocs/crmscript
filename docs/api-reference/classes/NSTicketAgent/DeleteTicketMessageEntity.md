@@ -10,8 +10,9 @@ so.topic: reference
 
 Delete a ticket message
 
-**Parameters:**
- - **ticketMessageEntityId** The ticket message to delete
+## Parameters
+
+* **ticketMessageEntityId** The ticket message to delete
 
 ```crmscript
 NSTicketAgent agent;

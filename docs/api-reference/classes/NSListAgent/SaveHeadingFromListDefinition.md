@@ -10,9 +10,10 @@ so.topic: reference
 
 Save new heading for list resolved by the provided id.
 
-**Parameters:**
- - **id** The id of the list to look up.
- - **entity** The new heading to save
+## Parameters
+
+* **id** The id of the list to look up.
+* **entity** The new heading to save
 
 **Returns:** NSHeadingEntity
 

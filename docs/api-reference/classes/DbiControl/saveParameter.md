@@ -13,6 +13,6 @@ This function saves a parameter to the object.
 
 ## Parameters
 
- - name: Name of parameter to save - saved for later retrieval by other DBI integration runs.
- - val: The value to be saved for the given parameter.
+* name: Name of parameter to save* saved for later retrieval by other DBI integration runs.
+* val: The value to be saved for the given parameter.
 

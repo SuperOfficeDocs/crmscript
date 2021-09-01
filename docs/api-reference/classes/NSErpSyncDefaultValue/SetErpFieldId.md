@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **erpFieldId** Integer
+* **erpFieldId** Integer
 
 ```crmscript
 NSErpSyncDefaultValue thing;

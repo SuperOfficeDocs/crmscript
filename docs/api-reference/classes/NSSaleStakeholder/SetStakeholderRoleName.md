@@ -11,7 +11,7 @@ so.topic: reference
 Stakeholder role name
 
 **Parameter:** 
- - **stakeholderRoleName** String
+* **stakeholderRoleName** String
 
 ```crmscript
 NSSaleStakeholder thing;

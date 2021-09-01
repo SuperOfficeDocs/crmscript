@@ -9,7 +9,7 @@ so.topic: reference
 # SetPhoneLocaleTimeZoneData(NSTimeZoneData phoneLocaleTimeZoneData)
 
 **Parameter:** 
- - **phoneLocaleTimeZoneData** NSTimeZoneData
+* **phoneLocaleTimeZoneData** NSTimeZoneData
 
 ```crmscript
 NSPocketStartupData thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Customer's Purchase order number
 
 **Parameter:** 
- - **poNumber** String
+* **poNumber** String
 
 ```crmscript
 NSQuoteEntity thing;

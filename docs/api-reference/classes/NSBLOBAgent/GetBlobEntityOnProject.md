@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets the blob entity that represents the project image binary object.
 
-**Parameters:**
- - **projectId** The project id
+## Parameters
+
+* **projectId** The project id
 
 **Returns:** NSBlobEntity
 

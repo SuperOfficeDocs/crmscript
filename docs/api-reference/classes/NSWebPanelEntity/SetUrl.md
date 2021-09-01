@@ -11,7 +11,7 @@ so.topic: reference
 The url
 
 **Parameter:** 
- - **url** String
+* **url** String
 
 ```crmscript
 NSWebPanelEntity thing;

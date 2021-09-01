@@ -10,8 +10,9 @@ so.topic: reference
 
 Returns all available ticket priorities.
 
-**Parameters:**
- - **includeDeleted** Include deleted items in result?
+## Parameters
+
+* **includeDeleted** Include deleted items in result?
 
 **Returns:** NSTicketPriorityEntity[]
 

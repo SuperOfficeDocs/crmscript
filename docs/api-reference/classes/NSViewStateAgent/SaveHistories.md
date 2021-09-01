@@ -10,9 +10,10 @@ so.topic: reference
 
 Replaces the existing history-list for the currently logged in user. All elements must belong to the same history list. If not they are ignored.
 
-**Parameters:**
- - **historyName** 
- - **history** Array of new history items to save.
+## Parameters
+
+* **historyName** 
+* **history** Array of new history items to save.
 
 **Returns:** NSHistory[]
 

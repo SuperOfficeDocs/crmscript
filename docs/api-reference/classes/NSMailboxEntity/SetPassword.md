@@ -11,7 +11,7 @@ so.topic: reference
 The password used to log into the mail account. This is hidden when reading
 
 **Parameter:** 
- - **password** String
+* **password** String
 
 ```crmscript
 NSMailboxEntity thing;

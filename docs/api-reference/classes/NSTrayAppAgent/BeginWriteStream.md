@@ -15,4 +15,3 @@ Initiate a stream writing operation.
 * **communicationModuleVersion:** Module version of the client communication module that initiated the request. This is sent to make sure the correct version of the communication server module is loaded.
 * **communicationModuleData:** Serialized data from the communiction client module that initiated this operation.
 * **Returns:** Returns a StreamData object serialized to a string. StreamData for this method contains a streamId that will be used on writepart and endwrite.
-

@@ -11,7 +11,7 @@ so.topic: reference
 Rank of this consent source
 
 **Parameter:** 
- - **rank** Integer
+* **rank** Integer
 
 ```crmscript
 NSLegalBase thing;

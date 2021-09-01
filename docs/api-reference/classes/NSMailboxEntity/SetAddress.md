@@ -11,7 +11,7 @@ so.topic: reference
 The address associated with this mailbox (used as FROM: address when sending emails).
 
 **Parameter:** 
- - **address** String
+* **address** String
 
 ```crmscript
 NSMailboxEntity thing;

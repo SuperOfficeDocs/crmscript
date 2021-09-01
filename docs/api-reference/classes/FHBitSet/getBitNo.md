@@ -13,5 +13,5 @@ This function returns true if a specified bit is set, false if not.
 
 ## Parameters
 
- - number: Bit number to check (0-31)
+* number: Bit number to check (0-31)
 

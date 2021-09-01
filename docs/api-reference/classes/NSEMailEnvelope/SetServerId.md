@@ -11,7 +11,7 @@ so.topic: reference
 Unique id for the e-mail on the server
 
 **Parameter:** 
- - **serverId** Integer
+* **serverId** Integer
 
 ```crmscript
 NSEMailEnvelope thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Email addresses with a positive bounce counter.
 
 **Parameter:** 
- - **bounceEmails** String[]
+* **bounceEmails** String[]
 
 ```crmscript
 NSContactEntity thing;

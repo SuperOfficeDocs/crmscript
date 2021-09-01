@@ -11,7 +11,7 @@ so.topic: reference
 The interval for each iteration of the sync engine
 
 **Parameter:** 
- - **interval** TimeSpan
+* **interval** TimeSpan
 
 ```crmscript
 NSErpSyncEngineStatus thing;

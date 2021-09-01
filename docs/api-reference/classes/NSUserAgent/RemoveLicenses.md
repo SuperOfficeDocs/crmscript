@@ -10,5 +10,6 @@ so.topic: reference
 
 Remove all user licenses.
 
-**Parameters:**
- - **associateId** 
+## Parameters
+
+* **associateId** 

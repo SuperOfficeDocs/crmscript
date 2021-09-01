@@ -8,7 +8,8 @@ so.topic: reference
 
 # String SetGeneratedPasswordFromName(String associateName)
 
-**Parameters:**
- - **associateName** 
+## Parameters
+
+* **associateName** 
 
 **Returns:** String

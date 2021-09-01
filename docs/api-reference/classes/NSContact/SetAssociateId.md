@@ -11,7 +11,7 @@ so.topic: reference
 Our contact
 
 **Parameter:** 
- - **associateId** Integer
+* **associateId** Integer
 
 ```crmscript
 NSContact thing;

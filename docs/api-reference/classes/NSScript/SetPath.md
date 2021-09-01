@@ -11,7 +11,7 @@ so.topic: reference
 Path to script in the hierarchy.
 
 **Parameter:** 
- - **path** String
+* **path** String
 
 ```crmscript
 NSScript thing;

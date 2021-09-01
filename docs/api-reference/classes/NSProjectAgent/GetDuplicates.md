@@ -10,8 +10,9 @@ so.topic: reference
 
 Get duplicates(exact or similar in the database) based on the name
 
-**Parameters:**
- - **name** Name used for lookup
+## Parameters
+
+* **name** Name used for lookup
 
 **Returns:** NSDuplicateEntry[]
 

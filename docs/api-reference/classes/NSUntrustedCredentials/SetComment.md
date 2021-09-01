@@ -11,7 +11,7 @@ so.topic: reference
 Description of credentials. Max 255 characters.
 
 **Parameter:** 
- - **comment** String
+* **comment** String
 
 ```crmscript
 NSUntrustedCredentials thing;

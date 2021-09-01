@@ -11,7 +11,7 @@ so.topic: reference
 Rank of the field
 
 **Parameter:** 
- - **rank** Integer
+* **rank** Integer
 
 ```crmscript
 NSQuoteLineConfiguration thing;

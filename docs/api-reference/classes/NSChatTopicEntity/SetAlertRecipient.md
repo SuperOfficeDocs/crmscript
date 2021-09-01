@@ -11,7 +11,7 @@ so.topic: reference
 The recipient(s) for the alert template
 
 **Parameter:** 
- - **alertRecipient** String
+* **alertRecipient** String
 
 ```crmscript
 NSChatTopicEntity thing;

@@ -11,7 +11,7 @@ so.topic: reference
 The config fields needed to establish a connection to the connector
 
 **Parameter:** 
- - **configFields** StringDictionary
+* **configFields** StringDictionary
 
 * **Returns:** StringDictionary
 

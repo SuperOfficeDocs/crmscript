@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSAssociate GetAssociate()
 
-The owner of the appointment - the associate whose diary/checklist the appointment is in.
+The owner of the appointment* the associate whose diary/checklist the appointment is in.
 
 **Returns:** NSAssociate
 

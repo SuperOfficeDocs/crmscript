@@ -11,7 +11,7 @@ so.topic: reference
 The tooltip for the button
 
 **Parameter:** 
- - **tooltipText** String
+* **tooltipText** String
 
 ```crmscript
 NSQuoteVersionButtonState thing;

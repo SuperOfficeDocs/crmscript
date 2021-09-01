@@ -11,7 +11,7 @@ so.topic: reference
 List of all elements linked to the document.
 
 **Parameter:** 
- - **links** NSLink[]
+* **links** NSLink[]
 
 ```crmscript
 NSDocumentEntity thing;

@@ -11,7 +11,7 @@ so.topic: reference
 The port used to connect to the server
 
 **Parameter:** 
- - **port** Integer
+* **port** Integer
 
 ```crmscript
 NSMailboxEntity thing;

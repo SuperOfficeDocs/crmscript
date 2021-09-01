@@ -10,9 +10,10 @@ so.topic: reference
 
 Read a row from a table
 
-**Parameters:**
- - **tableName** The name of the table to fetch; in the current release this must be an 'extratable'. Use the database name, on the form y_aTable
- - **id** The id of the row to fetch
+## Parameters
+
+* **tableName** The name of the table to fetch; in the current release this must be an 'extratable'. Use the database name, on the form y_aTable
+* **id** The id of the row to fetch
 
 **Returns:** NSTableRecord
 

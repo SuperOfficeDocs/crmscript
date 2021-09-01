@@ -11,7 +11,7 @@ so.topic: reference
 Columns, matching CredentialUsers.Headings
 
 **Parameter:** 
- - **columns** String[]
+* **columns** String[]
 
 ```crmscript
 NSCredentialUser thing;

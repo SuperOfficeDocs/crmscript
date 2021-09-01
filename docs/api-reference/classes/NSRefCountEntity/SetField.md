@@ -11,7 +11,7 @@ so.topic: reference
 Field identifier in string format table.field
 
 **Parameter:** 
- - **field** String
+* **field** String
 
 ```crmscript
 NSRefCountEntity thing;

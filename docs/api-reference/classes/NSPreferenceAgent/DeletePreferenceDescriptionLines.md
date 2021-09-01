@@ -10,8 +10,9 @@ so.topic: reference
 
 Delete the PrefDescLines in the SuperOffice database
 
-**Parameters:**
- - **prefDescLineIds** Primary keys of the PrefDescLines to delete
+## Parameters
+
+* **prefDescLineIds** Primary keys of the PrefDescLines to delete
 
 ```crmscript
 NSPreferenceAgent agent;

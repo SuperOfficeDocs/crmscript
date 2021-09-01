@@ -12,6 +12,6 @@ Return the value at the given index with the given name from the Parser instance
 
 ## Parameters
 
- - name: The name of the variable to return.
- - row: The zero-based index of the value to return.
+* name: The name of the variable to return.
+* row: The zero-based index of the value to return.
 

@@ -9,7 +9,7 @@ so.topic: reference
 # SetIsAllDay(Bool isAllDay)
 
 **Parameter:** 
- - **isAllDay** Bool
+* **isAllDay** Bool
 
 ```crmscript
 NSAppointmentSyncData thing;

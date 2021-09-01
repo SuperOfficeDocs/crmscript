@@ -8,10 +8,10 @@ so.topic: reference
 
 # SetDocumentId(Integer documentId)
 
-Document id - 0 if not a document
+Document id* 0 if not a document
 
 **Parameter:** 
- - **documentId** Integer
+* **documentId** Integer
 
 ```crmscript
 NSActivitySummaryItem thing;

@@ -11,7 +11,7 @@ so.topic: reference
 The ticket status entity which this ticket is connected to
 
 **Parameter:** 
- - **status** NSTicketStatusEntity
+* **status** NSTicketStatusEntity
 
 ```crmscript
 NSTicketEntity thing;

@@ -8,5 +8,6 @@ so.topic: reference
 
 # NSLicenseOwner[] SaveCentralLicense(NSLicenseOwner[] license)
 
-**Parameters:**
- - **license** 
+## Parameters
+
+* **license** 

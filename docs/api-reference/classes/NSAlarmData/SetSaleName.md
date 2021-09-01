@@ -9,7 +9,7 @@ so.topic: reference
 # SetSaleName(String saleName)
 
 **Parameter:** 
- - **saleName** String
+* **saleName** String
 
 ```crmscript
 NSAlarmData thing;

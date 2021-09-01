@@ -11,7 +11,7 @@ so.topic: reference
 When the message was posted.
 
 **Parameter:** 
- - **createdAt** DateTime
+* **createdAt** DateTime
 
 ```crmscript
 NSTicketMessage thing;

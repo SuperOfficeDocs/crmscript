@@ -9,7 +9,7 @@ so.topic: reference
 # SetSucceeded(Bool succeeded)
 
 **Parameter:** 
- - **succeeded** Bool
+* **succeeded** Bool
 
 ```crmscript
 NSLicenseResult thing;

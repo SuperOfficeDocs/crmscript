@@ -11,7 +11,7 @@ so.topic: reference
 The rank of the ListItem
 
 **Parameter:** 
- - **rank** Integer
+* **rank** Integer
 
 ```crmscript
 NSSelectableMDOListItem thing;

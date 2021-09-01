@@ -10,8 +10,9 @@ so.topic: reference
 
 Returns the product image (rank=1) that is displayed in the CRM application.
 
-**Parameters:**
- - **productId** The product id of the product the image belongs to.
+## Parameters
+
+* **productId** The product id of the product the image belongs to.
 
 **Returns:** NSImage
 

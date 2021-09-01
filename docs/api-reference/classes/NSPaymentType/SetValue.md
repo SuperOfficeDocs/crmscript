@@ -11,7 +11,7 @@ so.topic: reference
 Set the name of the NSPaymentType item.
 
 **Parameter:** 
- - **value** String NSPaymentType name.
+* **value** String NSPaymentType name.
 
 ```crmscript
 NSPaymentType thing;

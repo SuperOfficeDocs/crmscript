@@ -11,7 +11,7 @@ so.topic: reference
 Comma separated list of addresses to notify when requests are redelegated to (unassigned) in this category.
 
 **Parameter:** 
- - **notificationEmail** String
+* **notificationEmail** String
 
 ```crmscript
 NSTicketCategoryEntity thing;

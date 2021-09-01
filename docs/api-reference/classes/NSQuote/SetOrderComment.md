@@ -8,10 +8,10 @@ so.topic: reference
 
 # SetOrderComment(String orderComment)
 
-A comment that is intended for the Invoice, Order, Packing list and similar stages - AFTER the quote has become an order and goes to ERP for processing
+A comment that is intended for the Invoice, Order, Packing list and similar stages* AFTER the quote has become an order and goes to ERP for processing
 
 **Parameter:** 
- - **orderComment** String
+* **orderComment** String
 
 ```crmscript
 NSQuote thing;

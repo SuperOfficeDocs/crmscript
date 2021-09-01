@@ -11,7 +11,7 @@ so.topic: reference
 Top margin in twips
 
 **Parameter:** 
- - **topMargin** Integer
+* **topMargin** Integer
 
 ```crmscript
 NSReportLabelLayoutEntity thing;

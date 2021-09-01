@@ -11,7 +11,7 @@ so.topic: reference
 The average number of seconds per accept for this topic.
 
 **Parameter:** 
- - **secondsPrAccept** Integer
+* **secondsPrAccept** Integer
 
 ```crmscript
 NSChatTopicEntity thing;

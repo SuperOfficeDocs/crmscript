@@ -11,7 +11,7 @@ so.topic: reference
 Registered when
 
 **Parameter:** 
- - **created** DateTime
+* **created** DateTime
 
 ```crmscript
 NSSatellite thing;

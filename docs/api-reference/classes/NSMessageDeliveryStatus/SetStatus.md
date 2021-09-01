@@ -11,7 +11,7 @@ so.topic: reference
 Current message status
 
 **Parameter:** 
- - **status** Integer
+* **status** Integer
 
 ```crmscript
 NSMessageDeliveryStatus thing;

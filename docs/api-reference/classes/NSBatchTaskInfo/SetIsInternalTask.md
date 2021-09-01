@@ -11,7 +11,7 @@ so.topic: reference
 If IsInternalTask is true, this task will not add a trace to the database.
 
 **Parameter:** 
- - **isInternalTask** Bool
+* **isInternalTask** Bool
 
 ```crmscript
 NSBatchTaskInfo thing;

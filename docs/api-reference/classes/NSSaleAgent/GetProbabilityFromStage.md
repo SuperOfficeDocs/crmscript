@@ -10,8 +10,9 @@ so.topic: reference
 
 Get the probability percentage for a given sale stage
 
-**Parameters:**
- - **stageId** Probability list id
+## Parameters
+
+* **stageId** Probability list id
 
 **Returns:** Integer
 

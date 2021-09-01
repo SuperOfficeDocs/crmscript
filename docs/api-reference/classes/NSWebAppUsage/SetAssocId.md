@@ -11,7 +11,7 @@ so.topic: reference
 Associate Id
 
 **Parameter:** 
- - **assocId** Integer
+* **assocId** Integer
 
 ```crmscript
 NSWebAppUsage thing;

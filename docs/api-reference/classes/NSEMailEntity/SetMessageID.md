@@ -11,7 +11,7 @@ so.topic: reference
 Unique id of e-mails
 
 **Parameter:** 
- - **messageID** String
+* **messageID** String
 
 ```crmscript
 NSEMailEntity thing;

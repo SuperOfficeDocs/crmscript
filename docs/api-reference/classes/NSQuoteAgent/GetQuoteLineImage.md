@@ -10,9 +10,10 @@ so.topic: reference
 
 Gets an image connected to a quoteline, either from the ERPProvider or from the SuperOffice database
 
-**Parameters:**
- - **quoteLineId** Primary key of the quoteline
- - **rank** The rank of the image.
+## Parameters
+
+* **quoteLineId** Primary key of the quoteline
+* **rank** The rank of the image.
 
 **Returns:** NSImage
 

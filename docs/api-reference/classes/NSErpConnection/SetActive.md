@@ -11,7 +11,7 @@ so.topic: reference
 Is this connection currently active
 
 **Parameter:** 
- - **active** Bool
+* **active** Bool
 
 ```crmscript
 NSErpConnection thing;

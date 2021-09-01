@@ -11,7 +11,7 @@ so.topic: reference
 An MDO list name, used if the type is list and no ListOptions are given
 
 **Parameter:** 
- - **listName** String
+* **listName** String
 
 ```crmscript
 NSDashboardTileOption thing;

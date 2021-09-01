@@ -11,7 +11,7 @@ so.topic: reference
 The appointment recurrence.
 
 **Parameter:** 
- - **recurrence** NSRecurrenceInfo
+* **recurrence** NSRecurrenceInfo
 
 ```crmscript
 NSAppointmentEntity thing;

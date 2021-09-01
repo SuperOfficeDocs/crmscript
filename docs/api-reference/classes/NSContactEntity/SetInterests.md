@@ -11,7 +11,7 @@ so.topic: reference
 The contact's available and selected interests.
 
 **Parameter:** 
- - **interests** NSSelectableMDOListItem[]
+* **interests** NSSelectableMDOListItem[]
 
 ```crmscript
 NSContactEntity thing;

@@ -11,7 +11,7 @@ so.topic: reference
 True if the user is on travel.
 
 **Parameter:** 
- - **isOnTravel** Bool
+* **isOnTravel** Bool
 
 ```crmscript
 NSUser thing;

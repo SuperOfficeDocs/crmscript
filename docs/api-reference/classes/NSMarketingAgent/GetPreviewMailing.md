@@ -10,8 +10,9 @@ so.topic: reference
 
 Get a shipment message from its shipment address id
 
-**Parameters:**
- - **shipmentAddrId** Shipment address id
+## Parameters
+
+* **shipmentAddrId** Shipment address id
 
 **Returns:** NSPreviewMailing
 

@@ -11,7 +11,7 @@ so.topic: reference
 Default currency for the current user
 
 **Parameter:** 
- - **ownCurrency** String
+* **ownCurrency** String
 
 ```crmscript
 NSSaleSummary thing;

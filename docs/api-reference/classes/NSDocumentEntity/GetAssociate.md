@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSAssociate GetAssociate()
 
-The owner of the document - the associate whose checklist the document is in.
+The owner of the document* the associate whose checklist the document is in.
 
 **Returns:** NSAssociate
 

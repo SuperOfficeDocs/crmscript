@@ -11,7 +11,7 @@ so.topic: reference
 Returns a collection of office phone numbers that belong to the contact person.
 
 **Parameter:** 
- - **officePhones** NSEntityElement[]
+* **officePhones** NSEntityElement[]
 
 ```crmscript
 NSPersonEntity thing;

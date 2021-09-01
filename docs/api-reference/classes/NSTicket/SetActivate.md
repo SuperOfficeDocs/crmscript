@@ -11,7 +11,7 @@ so.topic: reference
 When the ticket should be activated, if it is postponed.
 
 **Parameter:** 
- - **activate** DateTime
+* **activate** DateTime
 
 ```crmscript
 NSTicket thing;

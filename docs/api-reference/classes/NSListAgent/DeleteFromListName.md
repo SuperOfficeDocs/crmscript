@@ -10,9 +10,10 @@ so.topic: reference
 
 Delete a list item from the specified list defintion
 
-**Parameters:**
- - **id** The identity of the list item to delete
- - **udListDefinitionName** The name of the list definition, indicating which list to delete the items from.
+## Parameters
+
+* **id** The identity of the list item to delete
+* **udListDefinitionName** The name of the list definition, indicating which list to delete the items from.
 
 ```crmscript
 NSListAgent agent;

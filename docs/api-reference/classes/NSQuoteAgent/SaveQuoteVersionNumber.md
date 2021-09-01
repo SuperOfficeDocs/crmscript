@@ -10,9 +10,10 @@ so.topic: reference
 
 Save the quote version number if it is valid
 
-**Parameters:**
- - **quoteVersionId** VersionId of the quote version
- - **number** The number to save
+## Parameters
+
+* **quoteVersionId** VersionId of the quote version
+* **number** The number to save
 
 **Returns:** Bool
 

@@ -11,7 +11,7 @@ so.topic: reference
 Quote alternative id
 
 **Parameter:** 
- - **quoteAlternativeId** Integer
+* **quoteAlternativeId** Integer
 
 ```crmscript
 NSTemplateVariablesParameters thing;

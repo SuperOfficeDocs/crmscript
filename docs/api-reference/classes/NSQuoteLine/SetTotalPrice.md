@@ -8,10 +8,10 @@ so.topic: reference
 
 # SetTotalPrice(Float totalPrice)
 
-TotalPrice  = SubTotal - DiscountAmount or TotalPrice = (UnitCost * Quantity) + EarningAmount, according to what the user changed last.
+TotalPrice  = SubTotal* DiscountAmount or TotalPrice = (UnitCost * Quantity) + EarningAmount, according to what the user changed last.
 
 **Parameter:** 
- - **totalPrice** Float
+* **totalPrice** Float
 
 ```crmscript
 NSQuoteLine thing;

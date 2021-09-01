@@ -11,7 +11,7 @@ so.topic: reference
 Identity of project to use as source for recipients.
 
 **Parameter:** 
- - **projectId** Integer
+* **projectId** Integer
 
 ```crmscript
 NSMailMergeSettings thing;

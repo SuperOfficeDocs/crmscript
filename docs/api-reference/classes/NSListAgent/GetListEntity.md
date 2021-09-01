@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSListEntity object.
 
-**Parameters:**
- - **listEntityId** The identifier of the NSListEntity object
+## Parameters
+
+* **listEntityId** The identifier of the NSListEntity object
 
 **Returns:** NSListEntity
 

@@ -12,6 +12,6 @@ This method will send a custom notification to a user.
 
 ## Parameters
 
- - recipientId: the id of the user to notifiy
- - message: the notify message
+* recipientId: the id of the user to notifiy
+* message: the notify message
 

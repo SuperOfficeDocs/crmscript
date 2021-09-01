@@ -11,7 +11,7 @@ so.topic: reference
 How many invitees have rejected this appointment
 
 **Parameter:** 
- - **rejectCounter** Integer
+* **rejectCounter** Integer
 
 ```crmscript
 NSAppointmentEntity thing;

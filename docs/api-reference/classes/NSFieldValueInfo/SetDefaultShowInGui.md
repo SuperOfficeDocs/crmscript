@@ -11,7 +11,7 @@ so.topic: reference
 Default show in Gui?
 
 **Parameter:** 
- - **defaultShowInGui** Bool
+* **defaultShowInGui** Bool
 
 ```crmscript
 NSFieldValueInfo thing;

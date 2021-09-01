@@ -11,7 +11,7 @@ so.topic: reference
 The ID of the main Quote Document
 
 **Parameter:** 
- - **documentId** Integer
+* **documentId** Integer
 
 ```crmscript
 NSQuote thing;

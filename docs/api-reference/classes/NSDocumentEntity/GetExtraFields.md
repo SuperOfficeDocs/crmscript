@@ -15,8 +15,8 @@ Get the extra fields on NSDocumentEntity as a map.
 ```crmscript
 NSDocumentEntity thing;
 Map extras = thing.GetExtraFields();
-log( extras["x_abc"] ); // "[I:123]" - integer or list item id
-log( extras["x_abc:DisplayText"] ); // "bla bla" - list item value
-log( extras["x_bla"] ); // "foobar" - string value
+log( extras["x_abc"] ); // "[I:123]"* integer or list item id
+log( extras["x_abc:DisplayText"] ); // "bla bla"* list item value
+log( extras["x_bla"] ); // "foobar"* string value
 ```
 

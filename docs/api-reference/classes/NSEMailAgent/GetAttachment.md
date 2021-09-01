@@ -10,10 +10,11 @@ so.topic: reference
 
 Retrieve an attachment from an e-mail
 
-**Parameters:**
- - **connectionInfo** All information needed to connect to the mailserver
- - **messageServerId** Unique ID for the e-mail to retrieve the attachment from
- - **attachmentId** Id of the attachment in the e-mail
+## Parameters
+
+* **connectionInfo** All information needed to connect to the mailserver
+* **messageServerId** Unique ID for the e-mail to retrieve the attachment from
+* **attachmentId** Id of the attachment in the e-mail
 
 **Returns:** NSEMailAttachment
 

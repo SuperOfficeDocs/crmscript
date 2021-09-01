@@ -10,8 +10,9 @@ so.topic: reference
 
 Get QuoteLine from database
 
-**Parameters:**
- - **quoteLineId** Primary key of the quoteline to get.
+## Parameters
+
+* **quoteLineId** Primary key of the quoteline to get.
 
 **Returns:** NSQuoteLine
 

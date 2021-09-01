@@ -10,8 +10,9 @@ so.topic: reference
 
 Get an array of NSBatchTaskInfo for the provided associate id's.
 
-**Parameters:**
- - **associateIds** Array of associate id's.
+## Parameters
+
+* **associateIds** Array of associate id's.
 
 **Returns:** NSBatchTaskInfo[]
 

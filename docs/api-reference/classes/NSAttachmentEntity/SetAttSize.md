@@ -11,7 +11,7 @@ so.topic: reference
 The size (in bytes) for the attachment.
 
 **Parameter:** 
- - **attSize** Integer
+* **attSize** Integer
 
 ```crmscript
 NSAttachmentEntity thing;

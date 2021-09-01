@@ -10,5 +10,6 @@ so.topic: reference
 
 Deletes the spesified contact relation.
 
-**Parameters:**
- - **contactRelationEntityId** Relation to delete
+## Parameters
+
+* **contactRelationEntityId** Relation to delete

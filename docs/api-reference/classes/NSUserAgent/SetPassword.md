@@ -10,9 +10,10 @@ so.topic: reference
 
 Change password for a user.
 
-**Parameters:**
- - **associateId** Id of User to set password for
- - **password** New password
+## Parameters
+
+* **associateId** Id of User to set password for
+* **password** New password
 
 **Returns:** Bool
 

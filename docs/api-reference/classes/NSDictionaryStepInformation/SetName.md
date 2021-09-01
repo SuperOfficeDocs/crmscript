@@ -11,7 +11,7 @@ so.topic: reference
 The name of the dictionary step (from attribute, not class name)
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSDictionaryStepInformation thing;

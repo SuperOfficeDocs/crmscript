@@ -11,7 +11,7 @@ so.topic: reference
 e.g. Mrs, Mr, Ms, Dr.
 
 **Parameter:** 
- - **mrmrs** String
+* **mrmrs** String
 
 ```crmscript
 NSSaleStakeholder thing;

@@ -11,7 +11,7 @@ so.topic: reference
 One Erp listItem id
 
 **Parameter:** 
- - **erpListItemId** String
+* **erpListItemId** String
 
 ```crmscript
 NSErpCrmListItemMapping thing;

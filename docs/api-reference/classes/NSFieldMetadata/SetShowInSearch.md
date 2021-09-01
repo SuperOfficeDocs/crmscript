@@ -11,7 +11,7 @@ so.topic: reference
 True if this field is displayed in search result
 
 **Parameter:** 
- - **showInSearch** Bool
+* **showInSearch** Bool
 
 ```crmscript
 NSFieldMetadata thing;

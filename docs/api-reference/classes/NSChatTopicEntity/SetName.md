@@ -11,7 +11,7 @@ so.topic: reference
 The name of this chat topic
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSChatTopicEntity thing;

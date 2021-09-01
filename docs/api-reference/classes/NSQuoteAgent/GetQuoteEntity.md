@@ -10,8 +10,9 @@ so.topic: reference
 
 Get a Quote
 
-**Parameters:**
- - **quoteId** QuoteId of the Quote to get.
+## Parameters
+
+* **quoteId** QuoteId of the Quote to get.
 
 **Returns:** NSQuoteEntity
 

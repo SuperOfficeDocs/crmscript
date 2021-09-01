@@ -11,7 +11,7 @@ so.topic: reference
 The icon of the webpanel
 
 **Parameter:** 
- - **icon** Integer
+* **icon** Integer
 
 ```crmscript
 NSWebPanelEntity thing;

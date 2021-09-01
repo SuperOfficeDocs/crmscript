@@ -11,7 +11,7 @@ so.topic: reference
 The email address of the recipient, taken from the sale's person
 
 **Parameter:** 
- - **toEmail** String
+* **toEmail** String
 
 ```crmscript
 NSQuotePublishDocuments thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Template variable name
 
 **Parameter:** 
- - **templateVariableName** String
+* **templateVariableName** String
 
 ```crmscript
 NSUserDefinedFieldInfo thing;

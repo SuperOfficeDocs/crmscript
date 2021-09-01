@@ -11,7 +11,7 @@ so.topic: reference
 Parent sale
 
 **Parameter:** 
- - **saleId** Integer
+* **saleId** Integer
 
 ```crmscript
 NSSaleStakeholder thing;

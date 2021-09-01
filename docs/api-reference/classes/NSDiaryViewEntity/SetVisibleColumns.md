@@ -11,7 +11,7 @@ so.topic: reference
 Number of columns that should be visible simultanously.
 
 **Parameter:** 
- - **visibleColumns** Integer
+* **visibleColumns** Integer
 
 ```crmscript
 NSDiaryViewEntity thing;

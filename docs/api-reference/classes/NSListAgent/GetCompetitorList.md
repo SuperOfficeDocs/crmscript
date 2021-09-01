@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a vector of NSCompetitor objects.
 
-**Parameters:**
- - **competitorIds** The identifiers of the NSCompetitor objects
+## Parameters
+
+* **competitorIds** The identifiers of the NSCompetitor objects
 
 **Returns:** NSCompetitor[]
 

@@ -11,7 +11,7 @@ so.topic: reference
 Suppliers part code/number or other key-like field
 
 **Parameter:** 
- - **supplierCode** String
+* **supplierCode** String
 
 ```crmscript
 NSProduct thing;

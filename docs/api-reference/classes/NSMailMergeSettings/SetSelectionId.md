@@ -11,7 +11,7 @@ so.topic: reference
 Identity of selection to use as source for recipients.
 
 **Parameter:** 
- - **selectionId** Integer
+* **selectionId** Integer
 
 ```crmscript
 NSMailMergeSettings thing;

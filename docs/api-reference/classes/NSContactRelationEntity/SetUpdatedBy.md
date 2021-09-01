@@ -9,7 +9,7 @@ so.topic: reference
 # SetUpdatedBy(NSAssociate updatedBy)
 
 **Parameter:** 
- - **updatedBy** NSAssociate
+* **updatedBy** NSAssociate
 
 ```crmscript
 NSContactRelationEntity thing;

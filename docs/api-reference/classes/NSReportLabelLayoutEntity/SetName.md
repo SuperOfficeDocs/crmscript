@@ -11,7 +11,7 @@ so.topic: reference
 Name of the label layout
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSReportLabelLayoutEntity thing;

@@ -11,7 +11,7 @@ so.topic: reference
 When the ticket was created.
 
 **Parameter:** 
- - **createdAt** DateTime
+* **createdAt** DateTime
 
 ```crmscript
 NSTicketEntity thing;

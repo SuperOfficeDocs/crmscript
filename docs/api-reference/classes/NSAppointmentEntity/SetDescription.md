@@ -11,7 +11,7 @@ so.topic: reference
 Description of the appointment.
 
 **Parameter:** 
- - **description** String
+* **description** String
 
 ```crmscript
 NSAppointmentEntity thing;

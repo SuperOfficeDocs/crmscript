@@ -11,7 +11,7 @@ so.topic: reference
 Updates the existing NSSuggestedAppointmentEntity or creates a new NSSuggestedAppointmentEntity if the id parameter is 0
 
 **Parameters**:
- - **suggestedAppointmentEntity** The NSSuggestedAppointmentEntity to save.
+* **suggestedAppointmentEntity** The NSSuggestedAppointmentEntity to save.
 
 **Returns:** New or updated NSSuggestedAppointmentEntity
 

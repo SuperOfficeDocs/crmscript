@@ -11,7 +11,7 @@ so.topic: reference
 Owner of history list
 
 **Parameter:** 
- - **associateId** Integer
+* **associateId** Integer
 
 ```crmscript
 NSHistory thing;

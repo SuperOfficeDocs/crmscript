@@ -8,7 +8,7 @@ so.topic: reference
 
 # String[] GetParticipants()
 
-List of participants in the iCal file - first one being the organizer
+List of participants in the iCal file* first one being the organizer
 
 **Returns:** String[]
 

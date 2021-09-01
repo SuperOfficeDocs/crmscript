@@ -11,7 +11,7 @@ so.topic: reference
 The favorite quote alternative for the quote and active quote version.
 
 **Parameter:** 
- - **favoriteQuoteAlternative** NSQuoteAlternative
+* **favoriteQuoteAlternative** NSQuoteAlternative
 
 ```crmscript
 NSQuote thing;

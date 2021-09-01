@@ -11,7 +11,7 @@ so.topic: reference
 Created by user
 
 **Parameter:** 
- - **createdBy** NSAssociate
+* **createdBy** NSAssociate
 
 ```crmscript
 NSRoleEntity thing;

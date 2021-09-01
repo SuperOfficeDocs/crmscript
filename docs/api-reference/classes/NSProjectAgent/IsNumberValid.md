@@ -10,9 +10,10 @@ so.topic: reference
 
 Checks if the number is unique or required.  The setting is configured from admin under system options.
 
-**Parameters:**
- - **contactId** The Project id
- - **number** The number to check for uniqueness and validity
+## Parameters
+
+* **contactId** The Project id
+* **number** The number to check for uniqueness and validity
 
 **Returns:** Bool
 

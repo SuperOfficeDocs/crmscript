@@ -11,7 +11,7 @@ so.topic: reference
 Alarm lead time.
 
 **Parameter:** 
- - **alarmLeadTime** TimeSpan
+* **alarmLeadTime** TimeSpan
 
 ```crmscript
 NSAppointment thing;

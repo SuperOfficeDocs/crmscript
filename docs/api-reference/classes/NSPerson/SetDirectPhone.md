@@ -11,7 +11,7 @@ so.topic: reference
 Returns the direct phone that belong to the contact person.
 
 **Parameter:** 
- - **directPhone** String
+* **directPhone** String
 
 ```crmscript
 NSPerson thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Type of the suggested appointment
 
 **Parameter:** 
- - **type** NSTask
+* **type** NSTask
 
 ```crmscript
 NSSuggestedAppointmentEntity thing;

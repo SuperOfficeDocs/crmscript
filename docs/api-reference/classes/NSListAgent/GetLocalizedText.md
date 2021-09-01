@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSLocalizedText object.
 
-**Parameters:**
- - **localizedTextId** The identifier of the NSLocalizedText object
+## Parameters
+
+* **localizedTextId** The identifier of the NSLocalizedText object
 
 **Returns:** NSLocalizedText
 

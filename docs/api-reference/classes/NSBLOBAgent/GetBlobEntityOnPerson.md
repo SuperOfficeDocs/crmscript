@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets the blob entity that represents the person image binary object.
 
-**Parameters:**
- - **personId** The person id
+## Parameters
+
+* **personId** The person id
 
 **Returns:** NSBlobEntity
 

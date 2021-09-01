@@ -10,9 +10,10 @@ so.topic: reference
 
 Rename the physical document, i.e., change the file name or equivalent concept in the document archive.
 
-**Parameters:**
- - **documentId** SuperOffice document ID
- - **newFilename** Suggested new file name. The document archive may amend this to conform to uniqueness constraints, character range limitations etc.
+## Parameters
+
+* **documentId** SuperOffice document ID
+* **newFilename** Suggested new file name. The document archive may amend this to conform to uniqueness constraints, character range limitations etc.
 
 **Returns:** String
 

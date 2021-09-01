@@ -9,7 +9,7 @@ so.topic: reference
 # SetEncodedDataCaptionDescription(String encodedDataCaptionDescription)
 
 **Parameter:** 
- - **encodedDataCaptionDescription** String
+* **encodedDataCaptionDescription** String
 
 ```crmscript
 NSFieldValueInfo thing;

@@ -8,10 +8,10 @@ so.topic: reference
 
 # SetProjectMemberTypeId(Integer projectMemberTypeId)
 
-NSProjectMember Type Id - from the ProjectMemberType list.
+NSProjectMember Type Id* from the ProjectMemberType list.
 
 **Parameter:** 
- - **projectMemberTypeId** Integer
+* **projectMemberTypeId** Integer
 
 ```crmscript
 NSProjectMember thing;

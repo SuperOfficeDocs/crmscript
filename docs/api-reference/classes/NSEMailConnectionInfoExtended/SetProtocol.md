@@ -9,7 +9,7 @@ so.topic: reference
 # SetProtocol(String protocol)
 
 **Parameter:** 
- - **protocol** String
+* **protocol** String
 
 ```crmscript
 NSEMailConnectionInfoExtended thing;

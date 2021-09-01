@@ -11,7 +11,7 @@ so.topic: reference
 Id to the outgoing message table 
 
 **Parameter:** 
- - **messagingId** Integer
+* **messagingId** Integer
 
 ```crmscript
 NSMessageDeliveryStatus thing;

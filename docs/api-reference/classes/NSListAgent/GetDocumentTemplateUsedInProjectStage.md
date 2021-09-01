@@ -10,8 +10,9 @@ so.topic: reference
 
 Get a String array of names in project guide that this template is used in
 
-**Parameters:**
- - **documentTemplateId** The id of the template
+## Parameters
+
+* **documentTemplateId** The id of the template
 
 **Returns:** String[]
 

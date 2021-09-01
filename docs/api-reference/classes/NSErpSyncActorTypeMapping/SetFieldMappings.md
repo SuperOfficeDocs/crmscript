@@ -11,7 +11,7 @@ so.topic: reference
 Array of individual field mappings; explicitly map to empty CrmFieldKey to indicate non-sync
 
 **Parameter:** 
- - **fieldMappings** ErpSyncFieldMappingArray
+* **fieldMappings** ErpSyncFieldMappingArray
 
 ```crmscript
 NSErpSyncActorTypeMapping thing;

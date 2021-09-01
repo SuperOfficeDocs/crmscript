@@ -17,8 +17,8 @@ If an proxy entry already exists, it is loaded. If not, the given external datas
 
 ## Parameters
 
- - table: The external table (ext\_table.id).
- - key: The primary key in the external table defining the entry.
+* table: The external table (ext\_table.id).
+* key: The primary key in the external table defining the entry.
 
 Returns true if found, false if not found.
 

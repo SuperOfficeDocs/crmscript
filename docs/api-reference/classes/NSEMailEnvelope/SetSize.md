@@ -11,7 +11,7 @@ so.topic: reference
 Total size of the e-mail
 
 **Parameter:** 
- - **size** Integer
+* **size** Integer
 
 ```crmscript
 NSEMailEnvelope thing;

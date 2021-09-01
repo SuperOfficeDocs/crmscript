@@ -10,5 +10,6 @@ so.topic: reference
 
 Update the cached FeatureToggles for CS
 
-**Parameters:**
- - **featureToggles** Feature toggle name / state
+## Parameters
+
+* **featureToggles** Feature toggle name / state

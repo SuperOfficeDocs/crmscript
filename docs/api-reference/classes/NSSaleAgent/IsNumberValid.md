@@ -10,9 +10,10 @@ so.topic: reference
 
 Checks if the number is unique or required.  The setting is configured from admin under system options.
 
-**Parameters:**
- - **contactId** SaleId
- - **number** Number value to check for uniqueness/required
+## Parameters
+
+* **contactId** SaleId
+* **number** Number value to check for uniqueness/required
 
 **Returns:** Bool
 

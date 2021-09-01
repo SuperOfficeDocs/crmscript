@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSProjectTypeEntity object.
 
-**Parameters:**
- - **projectTypeEntityId** The identifier of the NSProjectTypeEntity object
+## Parameters
+
+* **projectTypeEntityId** The identifier of the NSProjectTypeEntity object
 
 **Returns:** NSProjectTypeEntity
 

@@ -11,7 +11,7 @@ so.topic: reference
 The primary key of the entity this temporary key is for, dependent of dmain
 
 **Parameter:** 
- - **targetId** Integer
+* **targetId** Integer
 
 ```crmscript
 NSTemporaryKeyInfo thing;

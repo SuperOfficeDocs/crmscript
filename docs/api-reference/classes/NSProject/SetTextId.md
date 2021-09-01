@@ -11,7 +11,7 @@ so.topic: reference
 The id of the description
 
 **Parameter:** 
- - **textId** Integer
+* **textId** Integer
 
 ```crmscript
 NSProject thing;

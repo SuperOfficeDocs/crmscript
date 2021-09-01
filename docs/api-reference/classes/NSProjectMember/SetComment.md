@@ -11,7 +11,7 @@ so.topic: reference
 Comment text on the project membership
 
 **Parameter:** 
- - **comment** String
+* **comment** String
 
 ```crmscript
 NSProjectMember thing;

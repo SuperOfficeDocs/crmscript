@@ -12,10 +12,10 @@ If email template, when DocType is Privacy or quote email, it is possible to mak
 
 **Returns:** NSSenderMailMode
 
-     - Enum: 0 = UseDefaultSender 
-     - Enum: 1 = UseOurContact 
-     - Enum: 2 = UseSupportContact 
-     - Enum: 3 = UseLoggedInUser 
+* Enum: 0 = UseDefaultSender 
+* Enum: 1 = UseOurContact 
+* Enum: 2 = UseSupportContact 
+* Enum: 3 = UseLoggedInUser 
 
 ```crmscript
 NSDocumentTemplateEntity thing;

@@ -10,9 +10,10 @@ so.topic: reference
 
 Clear field info from table SUPERLISTCOLUMNSIZE if field mapping changed on given connection
 
-**Parameters:**
- - **listOwner** GUI name used in archive control config
- - **erpConnectionId** The ERP connection ID
+## Parameters
+
+* **listOwner** GUI name used in archive control config
+* **erpConnectionId** The ERP connection ID
 
 ```crmscript
 NSErpSyncAgent agent;

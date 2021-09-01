@@ -10,8 +10,9 @@ so.topic: reference
 
 Returns the specified connection.
 
-**Parameters:**
- - **erpConnectionId** Primary key of the connection
+## Parameters
+
+* **erpConnectionId** Primary key of the connection
 
 **Returns:** NSErpConnection
 

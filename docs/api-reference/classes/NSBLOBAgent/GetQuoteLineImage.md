@@ -10,8 +10,9 @@ so.topic: reference
 
 Returns the quoteline image (rank=1) that is displayed in the CRM application.
 
-**Parameters:**
- - **quoteLineId** The product id of the quoteline the image belongs to.
+## Parameters
+
+* **quoteLineId** The product id of the quoteline the image belongs to.
 
 **Returns:** NSImage
 

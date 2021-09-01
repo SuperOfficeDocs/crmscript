@@ -16,4 +16,3 @@ Read and return a part of a stream.
 * **communicationModuleData:** Serialized data from the communiction client module that initiated this operation.
 * **offset:** The position in the file to start reading.
 * **Returns:** Returns a StreamData object serialized to a string.
-

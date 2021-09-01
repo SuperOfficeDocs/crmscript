@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **quickReplyId** Integer
+* **quickReplyId** Integer
 
 ```crmscript
 NSQuickReply thing;

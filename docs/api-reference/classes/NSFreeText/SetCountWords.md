@@ -11,7 +11,7 @@ so.topic: reference
 Count of unique search words
 
 **Parameter:** 
- - **countWords** Integer
+* **countWords** Integer
 
 ```crmscript
 NSFreeText thing;

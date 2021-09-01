@@ -10,7 +10,8 @@ so.topic: reference
 
 Get delivery status
 
-**Parameters:**
- - **messagingIds** Array of messaging ids.
+## Parameters
+
+* **messagingIds** Array of messaging ids.
 
 **Returns:** NSMessageDeliveryStatus[]

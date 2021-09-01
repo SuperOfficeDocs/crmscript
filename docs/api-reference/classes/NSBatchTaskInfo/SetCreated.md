@@ -11,7 +11,7 @@ so.topic: reference
 Task creation time.
 
 **Parameter:** 
- - **created** DateTime
+* **created** DateTime
 
 ```crmscript
 NSBatchTaskInfo thing;

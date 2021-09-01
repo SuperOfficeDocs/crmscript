@@ -11,7 +11,7 @@ so.topic: reference
 Name of the database owner company.
 
 **Parameter:** 
- - **companyName** String
+* **companyName** String
 
 ```crmscript
 NSLicenseInfo thing;

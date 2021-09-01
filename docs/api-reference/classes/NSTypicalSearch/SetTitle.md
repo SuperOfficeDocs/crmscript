@@ -11,7 +11,7 @@ so.topic: reference
 The title of the typical search (multilingual)
 
 **Parameter:** 
- - **title** String
+* **title** String
 
 ```crmscript
 NSTypicalSearch thing;

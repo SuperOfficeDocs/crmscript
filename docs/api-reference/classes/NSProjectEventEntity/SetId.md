@@ -11,7 +11,7 @@ so.topic: reference
 Id of the external event
 
 **Parameter:** 
- - **id** Integer
+* **id** Integer
 
 ```crmscript
 NSProjectEventEntity thing;

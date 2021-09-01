@@ -11,7 +11,7 @@ so.topic: reference
 Updates the existing NSSaleTypeEntity or creates a new NSSaleTypeEntity if the id parameter is 0
 
 **Parameters**:
- - **saleTypeEntity** The NSSaleTypeEntity to save.
+* **saleTypeEntity** The NSSaleTypeEntity to save.
 
 **Returns:** NSSaleTypeEntity
 

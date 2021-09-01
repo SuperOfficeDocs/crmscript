@@ -11,7 +11,7 @@ so.topic: reference
 Body formatted in plain text
 
 **Parameter:** 
- - **plainBody** String
+* **plainBody** String
 
 ```crmscript
 NSEMailEntity thing;

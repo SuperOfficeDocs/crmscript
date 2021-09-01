@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a NSQuoteAlternative object.
 
-**Parameters:**
- - **quoteAlternativeId** The identifier of the NSQuoteAlternative object
+## Parameters
+
+* **quoteAlternativeId** The identifier of the NSQuoteAlternative object
 
 **Returns:** NSQuoteAlternative
 

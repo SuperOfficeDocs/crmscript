@@ -11,7 +11,7 @@ so.topic: reference
 Who last changed the membership
 
 **Parameter:** 
- - **lastMembershipChangeBy** Integer
+* **lastMembershipChangeBy** Integer
 
 ```crmscript
 NSSelectionEntity thing;

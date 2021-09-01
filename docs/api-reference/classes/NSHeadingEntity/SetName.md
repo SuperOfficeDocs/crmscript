@@ -11,7 +11,7 @@ so.topic: reference
 The visible heading
 
 **Parameter:** 
- - **name** String
+* **name** String
 
 ```crmscript
 NSHeadingEntity thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **areaId** Integer
+* **areaId** Integer
 
 ```crmscript
 NSArea thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Who created the selection
 
 **Parameter:** 
- - **createdBy** NSAssociate
+* **createdBy** NSAssociate
 
 ```crmscript
 NSSelectionEntity thing;

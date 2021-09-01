@@ -11,7 +11,7 @@ so.topic: reference
 Contact category
 
 **Parameter:** 
- - **contactCategory** String
+* **contactCategory** String
 
 ```crmscript
 NSContactOrPersonFromEmail thing;

@@ -11,7 +11,7 @@ so.topic: reference
 When this email was replied at
 
 **Parameter:** 
- - **repliedAt** DateTime
+* **repliedAt** DateTime
 
 ```crmscript
 NSEMailEntity thing;

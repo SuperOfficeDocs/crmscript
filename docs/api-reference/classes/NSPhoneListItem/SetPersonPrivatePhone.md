@@ -11,7 +11,7 @@ so.topic: reference
 Person Private Phone
 
 **Parameter:** 
- - **personPrivatePhone** String
+* **personPrivatePhone** String
 
 ```crmscript
 NSPhoneListItem thing;

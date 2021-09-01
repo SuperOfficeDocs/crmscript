@@ -11,7 +11,7 @@ so.topic: reference
 The name to use in the user interface, like perhaps 'US dollar' or '$'
 
 **Parameter:** 
- - **currencyName** String
+* **currencyName** String
 
 ```crmscript
 NSPriceList thing;

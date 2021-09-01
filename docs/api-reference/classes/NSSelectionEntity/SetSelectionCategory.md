@@ -11,7 +11,7 @@ so.topic: reference
 Selection category type (list item)
 
 **Parameter:** 
- - **selectionCategory** SelectionCategory
+* **selectionCategory** SelectionCategory
 
 ```crmscript
 NSSelectionEntity thing;

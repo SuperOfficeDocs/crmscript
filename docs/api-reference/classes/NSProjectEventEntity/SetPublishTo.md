@@ -11,7 +11,7 @@ so.topic: reference
 Publication valid to (inclusive)
 
 **Parameter:** 
- - **publishTo** DateTime
+* **publishTo** DateTime
 
 ```crmscript
 NSProjectEventEntity thing;

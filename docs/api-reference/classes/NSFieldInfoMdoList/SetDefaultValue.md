@@ -11,7 +11,7 @@ so.topic: reference
 Default list item id
 
 **Parameter:** 
- - **defaultValue** Integer
+* **defaultValue** Integer
 
 ```crmscript
 NSFieldInfoMdoList thing;

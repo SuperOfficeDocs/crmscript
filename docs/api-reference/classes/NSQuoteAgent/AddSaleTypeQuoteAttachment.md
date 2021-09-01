@@ -10,9 +10,10 @@ so.topic: reference
 
 Adds a new quote attachment document to a sale type
 
-**Parameters:**
- - **saleTypeId** The ID of the sale type
- - **documentId** The ID of the document
+## Parameters
+
+* **saleTypeId** The ID of the sale type
+* **documentId** The ID of the document
 
 **Returns:** Integer
 

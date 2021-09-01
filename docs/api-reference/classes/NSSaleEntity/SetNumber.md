@@ -11,7 +11,7 @@ so.topic: reference
 Alphanumeric user field
 
 **Parameter:** 
- - **number** String
+* **number** String
 
 ```crmscript
 NSSaleEntity thing;

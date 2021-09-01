@@ -8,7 +8,8 @@ so.topic: reference
 
 # NSMultiAlarmData GetAlarms(Bool includeInvitations, Bool includeAllAppointments, Integer defaultAlarmLeadTimeInMinutes)
 
-**Parameters:**
- - **includeInvitations** 
- - **includeAllAppointments** 
- - **defaultAlarmLeadTimeInMinutes** 
+## Parameters
+
+* **includeInvitations** 
+* **includeAllAppointments** 
+* **defaultAlarmLeadTimeInMinutes** 

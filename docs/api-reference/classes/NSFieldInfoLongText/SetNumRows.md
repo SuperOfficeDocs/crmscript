@@ -11,7 +11,7 @@ so.topic: reference
 Number of lines of text to show. Text area height.
 
 **Parameter:** 
- - **numRows** Integer
+* **numRows** Integer
 
 ```crmscript
 NSFieldInfoLongText thing;

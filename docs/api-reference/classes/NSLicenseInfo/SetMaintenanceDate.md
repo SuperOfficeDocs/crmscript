@@ -11,7 +11,7 @@ so.topic: reference
 Expiration date for maintenance. After this date, upgrades should refuse to install.
 
 **Parameter:** 
- - **maintenanceDate** DateTime
+* **maintenanceDate** DateTime
 
 ```crmscript
 NSLicenseInfo thing;

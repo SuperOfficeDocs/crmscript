@@ -11,7 +11,7 @@ so.topic: reference
 Type of the suggested document
 
 **Parameter:** 
- - **doctmplId** Integer
+* **doctmplId** Integer
 
 ```crmscript
 NSSuggestedDocumentEntity thing;

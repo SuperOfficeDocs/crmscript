@@ -12,9 +12,9 @@ Paper orientation: 1=portrait, 2=landscape
 
 **Returns:** Integer
 
-     - Enum: 0 = None 
-     - Enum: 1 = Portrait 
-     - Enum: 2 = Landscape 
+* Enum: 0 = None 
+* Enum: 1 = Portrait 
+* Enum: 2 = Landscape 
 
 ```crmscript
 NSReportLabelLayoutEntity thing;

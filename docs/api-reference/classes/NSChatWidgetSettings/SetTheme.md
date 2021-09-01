@@ -11,9 +11,9 @@ so.topic: reference
 Predefined themes for the chat widget
 
 **Parameter:** 
- - **theme** Integer
-     - Enum: 0 = Classic 
-     - Enum: 1 = Modern 
+* **theme** Integer
+* Enum: 0 = Classic 
+* Enum: 1 = Modern 
 
 ```crmscript
 NSChatWidgetSettings thing;

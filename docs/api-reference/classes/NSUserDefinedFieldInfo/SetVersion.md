@@ -11,7 +11,7 @@ so.topic: reference
 Definition version number; ALL fields get new version whenever layout is updated.
 
 **Parameter:** 
- - **version** Integer
+* **version** Integer
 
 ```crmscript
 NSUserDefinedFieldInfo thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Updates the existing NSRelationDefinitionEntity or creates a new NSRelationDefinitionEntity if the id parameter is 0
 
 **Parameters**:
- - **relationDefinitionEntity** The NSRelationDefinitionEntity to save.
+* **relationDefinitionEntity** The NSRelationDefinitionEntity to save.
 
 **Returns:** NSRelationDefinitionEntity
 

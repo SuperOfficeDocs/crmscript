@@ -11,7 +11,7 @@ so.topic: reference
 Original primary user group of associate
 
 **Parameter:** 
- - **groupIdx** Integer
+* **groupIdx** Integer
 
 ```crmscript
 NSSelectionEntity thing;

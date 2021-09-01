@@ -10,8 +10,9 @@ so.topic: reference
 
 Get a trigger CRMScript.
 
-**Parameters:**
- - **triggerScriptUniqueId** The unique id of the CRMScript to validate
+## Parameters
+
+* **triggerScriptUniqueId** The unique id of the CRMScript to validate
 
 **Returns:** Trigger script details and source code.
 

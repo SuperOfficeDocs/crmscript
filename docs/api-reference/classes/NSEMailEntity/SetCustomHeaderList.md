@@ -11,7 +11,7 @@ so.topic: reference
 Non standard e-mail headers
 
 **Parameter:** 
- - **customHeaderList** NSEMailCustomHeader[]
+* **customHeaderList** NSEMailCustomHeader[]
 
 ```crmscript
 NSEMailEntity thing;

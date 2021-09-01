@@ -11,7 +11,7 @@ so.topic: reference
 (expected / lost / won) sales date
 
 **Parameter:** 
- - **saleDate** DateTime
+* **saleDate** DateTime
 
 ```crmscript
 NSSale thing;

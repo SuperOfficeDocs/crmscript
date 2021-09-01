@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **linkId** Integer
+* **linkId** Integer
 
 ```crmscript
 NSLink thing;

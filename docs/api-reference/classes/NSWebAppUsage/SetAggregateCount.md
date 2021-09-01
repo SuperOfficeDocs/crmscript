@@ -11,7 +11,7 @@ so.topic: reference
 Number of times the specific soprotocol is accessed
 
 **Parameter:** 
- - **aggregateCount** Integer
+* **aggregateCount** Integer
 
 ```crmscript
 NSWebAppUsage thing;

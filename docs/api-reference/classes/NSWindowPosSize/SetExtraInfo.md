@@ -8,10 +8,10 @@ so.topic: reference
 
 # SetExtraInfo(String extraInfo)
 
-Extra information - show state, or whatever is required
+Extra information* show state, or whatever is required
 
 **Parameter:** 
- - **extraInfo** String
+* **extraInfo** String
 
 ```crmscript
 NSWindowPosSize thing;

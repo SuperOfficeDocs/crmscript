@@ -11,7 +11,7 @@ so.topic: reference
 The list item
 
 **Parameter:** 
- - **shipmentType** String
+* **shipmentType** String
 
 ```crmscript
 NSPreviewMailingHeader thing;

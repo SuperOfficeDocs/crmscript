@@ -11,7 +11,7 @@ so.topic: reference
 Optional comment text
 
 **Parameter:** 
- - **comment** String
+* **comment** String
 
 ```crmscript
 NSSaleStakeholder thing;

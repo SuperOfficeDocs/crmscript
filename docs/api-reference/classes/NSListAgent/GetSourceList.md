@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets a vector of Source objects.
 
-**Parameters:**
- - **sourceIds** The identifiers of the NSSource objects
+## Parameters
+
+* **sourceIds** The identifiers of the NSSource objects
 
 **Returns:** NSSource[]
 

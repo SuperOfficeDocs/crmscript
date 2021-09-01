@@ -11,7 +11,7 @@ so.topic: reference
 The user associated with this category.
 
 **Parameter:** 
- - **categoryMaster** Integer
+* **categoryMaster** Integer
 
 ```crmscript
 NSTicketCategoryEntity thing;

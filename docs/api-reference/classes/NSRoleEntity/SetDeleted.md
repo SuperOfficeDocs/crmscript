@@ -11,7 +11,7 @@ so.topic: reference
 1 if role has been deleted (we do not actually delete)
 
 **Parameter:** 
- - **deleted** Integer
+* **deleted** Integer
 
 ```crmscript
 NSRoleEntity thing;

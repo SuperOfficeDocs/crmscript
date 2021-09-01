@@ -8,7 +8,8 @@ so.topic: reference
 
 # Integer GetNextProjectStatus(Integer projectId)
 
-**Parameters:**
- - **projectId** 
+## Parameters
+
+* **projectId** 
 
 **Returns:** Integer

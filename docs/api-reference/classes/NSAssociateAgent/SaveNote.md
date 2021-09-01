@@ -10,6 +10,7 @@ so.topic: reference
 
 Saves an array of strings(notepad pages).
 
-**Parameters:**
- - **associateId** The associate id
- - **note** The array of strings(notepad pages).
+## Parameters
+
+* **associateId** The associate id
+* **note** The array of strings(notepad pages).

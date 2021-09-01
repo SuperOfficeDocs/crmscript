@@ -10,10 +10,11 @@ so.topic: reference
 
 Creating an appointment from an emailItem invitation and accepting it.
 
-**Parameters:**
- - **emailItemId** The emailItemId
- - **updateMode** Update mode for a recurring appointment.
-     - Enum: 0 = Unknown 
-     - Enum: 1 = OnlyThis 
-     - Enum: 2 = ThisAndForward 
-     - Enum: 9 = StopRecurrence 
+## Parameters
+
+* **emailItemId** The emailItemId
+* **updateMode** Update mode for a recurring appointment.
+* Enum: 0 = Unknown 
+* Enum: 1 = OnlyThis 
+* Enum: 2 = ThisAndForward 
+* Enum: 9 = StopRecurrence 

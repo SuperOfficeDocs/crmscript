@@ -11,7 +11,7 @@ so.topic: reference
 Flags associated with the folder
 
 **Parameter:** 
- - **flags** String
+* **flags** String
 
 ```crmscript
 NSEMailFolder thing;

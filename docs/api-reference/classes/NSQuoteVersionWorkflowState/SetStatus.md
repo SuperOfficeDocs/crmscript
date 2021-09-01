@@ -11,7 +11,7 @@ so.topic: reference
 Status information for the Quote Version.
 
 **Parameter:** 
- - **status** QuoteVersionStatusInformation
+* **status** QuoteVersionStatusInformation
 
 ```crmscript
 NSQuoteVersionWorkflowState thing;

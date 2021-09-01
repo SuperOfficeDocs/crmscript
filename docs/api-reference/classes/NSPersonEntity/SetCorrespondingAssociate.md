@@ -11,7 +11,7 @@ so.topic: reference
 The associate corresponding to this person. Will be empty if the person is not a user (internal associate user, external user).
 
 **Parameter:** 
- - **correspondingAssociate** NSAssociate
+* **correspondingAssociate** NSAssociate
 
 ```crmscript
 NSPersonEntity thing;

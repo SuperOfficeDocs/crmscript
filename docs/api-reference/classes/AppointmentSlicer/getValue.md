@@ -13,12 +13,12 @@ Returns the value for the given field for the appointment pointed to by the inte
 
 ## Available field values
 
- - id
- - date: The date for the appointment
- - start: The time the appointment starts
- - stop
- - title
+* id
+* date: The date for the appointment
+* start: The time the appointment starts
+* stop
+* title
 
 ## Parameters
 
- - field: The field to get the value for
+* field: The field to get the value for

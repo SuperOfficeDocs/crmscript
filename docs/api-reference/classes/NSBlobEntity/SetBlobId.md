@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **blobId** Integer
+* **blobId** Integer
 
 ```crmscript
 NSBlobEntity thing;

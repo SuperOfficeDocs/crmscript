@@ -10,8 +10,9 @@ so.topic: reference
 
 Gets the next due date for a sale. The next due date is the next future appointment that is not completed.
 
-**Parameters:**
- - **saleId** Sale id
+## Parameters
+
+* **saleId** Sale id
 
 **Returns:** DateTime
 

@@ -8,7 +8,7 @@ so.topic: reference
 
 # Integer GetPersonId()
 
-Person id - Primary key
+Person id* Primary key
 
 **Returns:** Integer
 

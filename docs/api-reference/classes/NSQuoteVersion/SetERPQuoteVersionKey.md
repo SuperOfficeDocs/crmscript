@@ -11,7 +11,7 @@ so.topic: reference
 Key in the ERP system that uniquely identifies this Version within the ERP system (if available, the field may be empty).
 
 **Parameter:** 
- - **eRPQuoteVersionKey** String
+* **eRPQuoteVersionKey** String
 
 ```crmscript
 NSQuoteVersion thing;

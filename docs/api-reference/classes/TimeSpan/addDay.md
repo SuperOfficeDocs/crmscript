@@ -12,5 +12,5 @@ This function will add the given number of days to the currently set timespan.
 
 ## Parameters
 
- - num: Number of days to add to the timespan
+* num: Number of days to add to the timespan
 

@@ -11,7 +11,7 @@ so.topic: reference
 Y of origin, upper edge of widget
 
 **Parameter:** 
- - **upperY** Integer
+* **upperY** Integer
 
 ```crmscript
 NSWindowPosSize thing;

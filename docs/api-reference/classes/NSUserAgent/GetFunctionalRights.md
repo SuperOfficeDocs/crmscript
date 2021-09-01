@@ -10,8 +10,9 @@ so.topic: reference
 
 Get all functional rights for the given role. Functional rights not set on the role are not included. MDO List name = 'FunctionRights', extra='role=123'
 
-**Parameters:**
- - **roleId** The role id to get the functional rights for.
+## Parameters
+
+* **roleId** The role id to get the functional rights for.
 
 **Returns:** NSSelectableMDOListItem[]
 

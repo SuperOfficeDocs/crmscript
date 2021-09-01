@@ -11,7 +11,7 @@ so.topic: reference
 Whether open on Saturdays.
 
 **Parameter:** 
- - **satEnabled** Bool
+* **satEnabled** Bool
 
 ```crmscript
 NSChatOpeningHours thing;

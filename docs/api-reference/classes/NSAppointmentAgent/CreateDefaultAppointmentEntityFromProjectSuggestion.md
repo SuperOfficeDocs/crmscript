@@ -8,8 +8,9 @@ so.topic: reference
 
 # NSAppointmentEntity CreateDefaultAppointmentEntityFromProjectSuggestion(Integer suggestedAppointmentId, Integer projectId, Bool createNow, Integer ownerId)
 
-**Parameters:**
- - **suggestedAppointmentId** 
- - **projectId** 
- - **createNow** 
- - **ownerId** 
+## Parameters
+
+* **suggestedAppointmentId** 
+* **projectId** 
+* **createNow** 
+* **ownerId** 

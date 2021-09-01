@@ -11,7 +11,7 @@ so.topic: reference
 If specified, use this value as default mail body.
 
 **Parameter:** 
- - **customMailBody** String
+* **customMailBody** String
 
 ```crmscript
 NSMailMergeSettings thing;

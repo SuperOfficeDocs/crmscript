@@ -10,9 +10,10 @@ so.topic: reference
 
 Get all button states for the Quote version dialog.
 
-**Parameters:**
- - **quoteVersionId** Id of the quote version to get the button states for.
- - **quoteAlternativeId** Id of the active quote alternative id.
+## Parameters
+
+* **quoteVersionId** Id of the quote version to get the button states for.
+* **quoteAlternativeId** Id of the active quote alternative id.
 
 **Returns:** NSQuoteVersionWorkflowState
 

@@ -11,7 +11,7 @@ so.topic: reference
 Last logout date
 
 **Parameter:** 
- - **lastlogout** DateTime
+* **lastlogout** DateTime
 
 ```crmscript
 NSUser thing;

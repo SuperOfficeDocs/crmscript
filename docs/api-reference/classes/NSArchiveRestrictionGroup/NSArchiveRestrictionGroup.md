@@ -8,4 +8,4 @@ so.topic: reference
 
 # NSArchiveRestrictionGroup
 
-Carrier for restriction group. It contains all the search restrictions for the group - that is, ArchiveRestrictionInfo - objects, including some info like rank and name
+Carrier for restriction group. It contains all the search restrictions for the group* that is, ArchiveRestrictionInfo* objects, including some info like rank and name

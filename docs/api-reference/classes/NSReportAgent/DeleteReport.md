@@ -10,8 +10,9 @@ so.topic: reference
 
 Delete the report with the given id
 
-**Parameters:**
- - **reportId** The id of the report to delete
+## Parameters
+
+* **reportId** The id of the report to delete
 
 **Returns:** Bool
 

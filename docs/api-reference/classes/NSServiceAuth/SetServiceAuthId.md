@@ -11,7 +11,7 @@ so.topic: reference
 The primary key
 
 **Parameter:** 
- - **serviceAuthId** Integer
+* **serviceAuthId** Integer
 
 ```crmscript
 NSServiceAuth thing;

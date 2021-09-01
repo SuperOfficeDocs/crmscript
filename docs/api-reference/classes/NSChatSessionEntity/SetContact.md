@@ -8,10 +8,10 @@ so.topic: reference
 
 # SetContact(NSContact contact)
 
-Contact this session is connected to - could be empty if we don't know exactly.
+Contact this session is connected to* could be empty if we don't know exactly.
 
 **Parameter:** 
- - **contact** NSContact
+* **contact** NSContact
 
 ```crmscript
 NSChatSessionEntity thing;

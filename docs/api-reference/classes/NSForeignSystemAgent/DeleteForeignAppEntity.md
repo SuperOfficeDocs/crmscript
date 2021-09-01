@@ -10,8 +10,9 @@ so.topic: reference
 
 Deletes the NSForeignAppEntity
   
-**Parameters:**
- - **foreignAppEntityId** The identity of the NSForeignAppEntity to delete.
+## Parameters
+
+* **foreignAppEntityId** The identity of the NSForeignAppEntity to delete.
 
 ```crmscript
 NSForeignSystemAgent agent;

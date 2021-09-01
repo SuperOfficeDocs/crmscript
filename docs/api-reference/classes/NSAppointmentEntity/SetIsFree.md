@@ -11,7 +11,7 @@ so.topic: reference
 True if free, false if busy
 
 **Parameter:** 
- - **isFree** Bool
+* **isFree** Bool
 
 ```crmscript
 NSAppointmentEntity thing;

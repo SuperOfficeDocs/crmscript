@@ -11,7 +11,7 @@ so.topic: reference
 Does this sale type have stakeholders
 
 **Parameter:** 
- - **hasStakeholders** Bool
+* **hasStakeholders** Bool
 
 ```crmscript
 NSSaleTypeEntity thing;

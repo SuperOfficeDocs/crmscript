@@ -10,8 +10,9 @@ so.topic: reference
 
 Returns all projects where the given contact has projectmembers.
 
-**Parameters:**
- - **contactId** The contact id
+## Parameters
+
+* **contactId** The contact id
 
 **Returns:** NSProject[]
 

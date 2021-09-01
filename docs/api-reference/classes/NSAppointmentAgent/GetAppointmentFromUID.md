@@ -10,8 +10,9 @@ so.topic: reference
 
 Get the appointment that corresponds to the given UID.
 
-**Parameters:**
- - **uID** The UID associated with the appointment
+## Parameters
+
+* **uID** The UID associated with the appointment
 
 **Returns:** The corresponding NSAppointmentEntity if exists or a default appointment entity.
 

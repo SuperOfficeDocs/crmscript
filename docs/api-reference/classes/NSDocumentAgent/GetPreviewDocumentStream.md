@@ -10,8 +10,9 @@ so.topic: reference
 
 Get the preview version of the document content as a stream. Retrieves a sanitized version if possible
 
-**Parameters:**
- - **documentId** SuperOffice document id
+## Parameters
+
+* **documentId** SuperOffice document id
 
 **Returns:** NSDocumentPreview
 

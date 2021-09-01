@@ -11,7 +11,7 @@ so.topic: reference
 Simple Person data.
 
 **Parameter:** 
- - **person** NSPerson
+* **person** NSPerson
 
 ```crmscript
 NSPersonSummary thing;

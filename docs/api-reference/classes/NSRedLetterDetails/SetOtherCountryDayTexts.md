@@ -11,7 +11,7 @@ so.topic: reference
 Red letter day texts for other countries than the associates' own country
 
 **Parameter:** 
- - **otherCountryDayTexts** String[]
+* **otherCountryDayTexts** String[]
 
 ```crmscript
 NSRedLetterDetails thing;

@@ -10,11 +10,12 @@ so.topic: reference
 
 Toggle a record in a table as a favourite for an associate
 
-**Parameters:**
- - **tableName** Table name, transformed to and from numeric table id by the service layer.
- - **recordId** 
- - **associateId** 
- - **extraInfo** 
+## Parameters
+
+* **tableName** Table name, transformed to and from numeric table id by the service layer.
+* **recordId** 
+* **associateId** 
+* **extraInfo** 
 
 **Returns:** Return the new value, true if added, false if removed
 

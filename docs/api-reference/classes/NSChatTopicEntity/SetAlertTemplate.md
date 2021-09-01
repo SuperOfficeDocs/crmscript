@@ -11,7 +11,7 @@ so.topic: reference
 Template to use for alerts.
 
 **Parameter:** 
- - **alertTemplate** ReplyTemplate
+* **alertTemplate** ReplyTemplate
 
 ```crmscript
 NSChatTopicEntity thing;

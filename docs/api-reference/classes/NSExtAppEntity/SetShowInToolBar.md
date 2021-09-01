@@ -11,7 +11,7 @@ so.topic: reference
 Does the webpanel have a toolbar
 
 **Parameter:** 
- - **showInToolBar** Bool
+* **showInToolBar** Bool
 
 ```crmscript
 NSExtAppEntity thing;

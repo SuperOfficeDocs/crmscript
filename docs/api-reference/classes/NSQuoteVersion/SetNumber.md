@@ -11,7 +11,7 @@ so.topic: reference
 A quote number that the user (or ERP connector) can fill out.
 
 **Parameter:** 
- - **number** String
+* **number** String
 
 ```crmscript
 NSQuoteVersion thing;

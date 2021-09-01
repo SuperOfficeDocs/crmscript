@@ -11,7 +11,7 @@ so.topic: reference
 Total number of messages in the folder
 
 **Parameter:** 
- - **totalItems** Integer
+* **totalItems** Integer
 
 ```crmscript
 NSEMailFolder thing;

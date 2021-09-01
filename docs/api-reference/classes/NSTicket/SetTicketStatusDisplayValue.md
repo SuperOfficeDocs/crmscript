@@ -11,7 +11,7 @@ so.topic: reference
 Get the display name of the ticket status.
 
 **Parameter:** 
- - **ticketStatusDisplayValue** String
+* **ticketStatusDisplayValue** String
 
 ```crmscript
 NSTicket thing;

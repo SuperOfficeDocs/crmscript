@@ -11,7 +11,7 @@ so.topic: reference
  Task owner. If it is a System task, AssociateId = 0.
 
 **Parameter:** 
- - **associateId** Integer
+* **associateId** Integer
 
 ```crmscript
 NSBatchTaskInfo thing;

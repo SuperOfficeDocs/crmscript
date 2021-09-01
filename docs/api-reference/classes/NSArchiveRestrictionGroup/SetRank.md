@@ -11,7 +11,7 @@ so.topic: reference
 Rank order within this CriteriaModel
 
 **Parameter:** 
- - **rank** Integer
+* **rank** Integer
 
 ```crmscript
 NSArchiveRestrictionGroup thing;

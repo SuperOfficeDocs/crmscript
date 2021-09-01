@@ -10,8 +10,9 @@ so.topic: reference
 
 Get the document if it's published
 
-**Parameters:**
- - **documentId** The document id
+## Parameters
+
+* **documentId** The document id
 
 **Returns:** NSDocument
 

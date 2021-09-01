@@ -10,8 +10,9 @@ so.topic: reference
 
 Start a batch job based on NSBatchTaskInfo.
 
-**Parameters:**
- - **batchTaskInfo** Use NSBatchTaskInfo to describe the new batch job.
+## Parameters
+
+* **batchTaskInfo** Use NSBatchTaskInfo to describe the new batch job.
 
 **Returns:** Integer
 

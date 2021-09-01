@@ -10,12 +10,13 @@ so.topic: reference
 
 Create new tile from another tile used as template
 
-**Parameters:**
- - **dashboardTileId** Tile template Id
- - **caption** Caption of new tile
- - **description** Description of new tile
- - **selectionId** Selection id of new tile
- - **visibleFor** Who the tile should be visible for
+## Parameters
+
+* **dashboardTileId** Tile template Id
+* **caption** Caption of new tile
+* **description** Description of new tile
+* **selectionId** Selection id of new tile
+* **visibleFor** Who the tile should be visible for
 
 **Returns:** NSDashboardTile
 

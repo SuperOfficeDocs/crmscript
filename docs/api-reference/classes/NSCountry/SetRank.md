@@ -11,7 +11,7 @@ so.topic: reference
 The rank of the country
 
 **Parameter:** 
- - **rank** Integer
+* **rank** Integer
 
 ```crmscript
 NSCountry thing;

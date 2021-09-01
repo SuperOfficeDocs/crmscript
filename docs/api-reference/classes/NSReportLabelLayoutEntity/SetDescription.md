@@ -11,7 +11,7 @@ so.topic: reference
 Description
 
 **Parameter:** 
- - **description** String
+* **description** String
 
 ```crmscript
 NSReportLabelLayoutEntity thing;

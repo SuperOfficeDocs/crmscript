@@ -11,7 +11,7 @@ so.topic: reference
 Opening hours settings
 
 **Parameter:** 
- - **openingHours** NSChatOpeningHours
+* **openingHours** NSChatOpeningHours
 
 ```crmscript
 NSChatTopicEntity thing;

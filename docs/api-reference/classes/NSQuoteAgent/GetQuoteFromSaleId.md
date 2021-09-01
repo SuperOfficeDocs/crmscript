@@ -10,8 +10,9 @@ so.topic: reference
 
 Get a NSQuote for a sale
 
-**Parameters:**
- - **saleId** SaleId of the NSQuote to get.
+## Parameters
+
+* **saleId** SaleId of the NSQuote to get.
 
 **Returns:** NSQuote
 

@@ -8,10 +8,10 @@ so.topic: reference
 
 # SetProject(NSProject project)
 
-Project the session is connectedto - could be empty if we don't know exactly.
+Project the session is connectedto* could be empty if we don't know exactly.
 
 **Parameter:** 
- - **project** NSProject
+* **project** NSProject
 
 ```crmscript
 NSChatSessionEntity thing;

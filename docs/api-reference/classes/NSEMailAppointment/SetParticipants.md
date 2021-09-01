@@ -8,10 +8,10 @@ so.topic: reference
 
 # SetParticipants(String[] participants)
 
-List of participants in the iCal file - first one being the organizer
+List of participants in the iCal file* first one being the organizer
 
 **Parameter:** 
- - **participants** String[]
+* **participants** String[]
 
 ```crmscript
 NSEMailAppointment thing;

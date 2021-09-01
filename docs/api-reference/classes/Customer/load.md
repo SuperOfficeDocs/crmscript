@@ -13,7 +13,7 @@ Loads the customer with the given id.
 
 ## Parameters
 
- - id: The id of the customer to load.
+* id: The id of the customer to load.
 
 Returns true if the customer exists, otherwise false.
 

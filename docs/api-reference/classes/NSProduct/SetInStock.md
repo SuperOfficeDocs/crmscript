@@ -11,7 +11,7 @@ so.topic: reference
 Negative numbers will be interpreted as how many is ordered. Might not be available.
 
 **Parameter:** 
- - **inStock** Float
+* **inStock** Float
 
 ```crmscript
 NSProduct thing;

@@ -11,7 +11,7 @@ so.topic: reference
 Text describing the sale
 
 **Parameter:** 
- - **saleText** String
+* **saleText** String
 
 ```crmscript
 NSSaleEntity thing;

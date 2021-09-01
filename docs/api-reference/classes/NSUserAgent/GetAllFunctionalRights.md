@@ -10,12 +10,13 @@ so.topic: reference
 
 Get a list of all functional rights for the given type of role. MDO List name = 'FunctionRights', extra='roleType=0' 
 
-**Parameters:**
- - **roleType** Type of role (Employee/External/Anonymous/System)
-     - Enum: 0 = Employee 
-     - Enum: 1 = ExternalUser 
-     - Enum: 2 = Anonymous 
-     - Enum: 3 = System 
+## Parameters
+
+* **roleType** Type of role (Employee/External/Anonymous/System)
+* Enum: 0 = Employee 
+* Enum: 1 = ExternalUser 
+* Enum: 2 = Anonymous 
+* Enum: 3 = System 
 
 **Returns:** NSSelectableMDOListItem[]
 

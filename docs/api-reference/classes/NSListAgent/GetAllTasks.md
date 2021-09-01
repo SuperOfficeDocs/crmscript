@@ -10,8 +10,9 @@ so.topic: reference
 
 Returns all appointment tasks
 
-**Parameters:**
- - **includeDeleted** Include deleted items in result?
+## Parameters
+
+* **includeDeleted** Include deleted items in result?
 
 **Returns:** NSTaskListItem[]
 

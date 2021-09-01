@@ -11,7 +11,7 @@ so.topic: reference
 The tooltip of the list item
 
 **Parameter:** 
- - **tooltip** String
+* **tooltip** String
 
 ```crmscript
 NSListItemEntity thing;

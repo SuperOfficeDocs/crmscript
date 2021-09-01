@@ -11,7 +11,7 @@ so.topic: reference
 True if the participant has been sent an email or should be sent an email
 
 **Parameter:** 
- - **sendEmail** Bool
+* **sendEmail** Bool
 
 ```crmscript
 NSParticipantInfo thing;

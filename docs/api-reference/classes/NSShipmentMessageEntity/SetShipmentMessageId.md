@@ -11,7 +11,7 @@ so.topic: reference
 Primary key
 
 **Parameter:** 
- - **shipmentMessageId** Integer
+* **shipmentMessageId** Integer
 
 ```crmscript
 NSShipmentMessageEntity thing;

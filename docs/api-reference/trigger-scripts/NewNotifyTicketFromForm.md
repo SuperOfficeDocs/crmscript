@@ -11,6 +11,7 @@ keywords:
 Called when a new ticket was created from a form.
 
 ## Input values
+
 |Variable|Description|
 |---|---|
 | `contactId` | the contact ID|

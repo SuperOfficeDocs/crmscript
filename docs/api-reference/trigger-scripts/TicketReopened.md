@@ -11,6 +11,7 @@ keywords:
 Runs when a ticket is saved and the status changed from closed to active.
 
 ## Input values
+
 |Variable|Description|
 |---|---|
 | `entryId` | request ID|

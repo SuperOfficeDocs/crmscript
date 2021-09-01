@@ -8,7 +8,7 @@ keywords:
 
 # SalesBeforeSaveAppointment (1001)
 
-Called before an appointment is saved. EventData contains all variables passed by datahandler in Sales client.
+Called before an appointment is saved. EventData contains all variables passed by datahandler in the Sales client.
 
 ## Input values
 

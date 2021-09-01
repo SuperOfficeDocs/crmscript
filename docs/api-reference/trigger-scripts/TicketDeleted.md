@@ -11,6 +11,7 @@ keywords:
 Runs when a ticket is saved and the status changes to deleted.
 
 ## Input values
+
 |Variable|Description|
 |---|---|
 | `entryId` | request ID|

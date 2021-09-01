@@ -8,7 +8,7 @@ keywords:
 
 # SalesBeforeSaveProjectMember (1011)
 
-Called before projectmember is saved. EventData contains all variables passed by datahandler in Sales client.
+Called before projectmember is saved. EventData contains all variables passed by datahandler in the Sales client.
 
 ## Input values
 

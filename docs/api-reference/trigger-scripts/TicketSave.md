@@ -11,19 +11,18 @@ keywords:
 Called when a ticket is being saved.
 
 ## Input values
+
 |Variable|Description|
 |---|---|
 |`ticketId` | ticket ID|
 |`activeUser`|  ejUser ID|
 
-## Sample code
-
-**Example input values:**
-
 ```crmscript
 #setLanguageLevel 3;
 String param1 = getVariable("ticketId");
 ```
+
+## Sample code
 
 **Example parser variables:**
 
@@ -49,10 +48,10 @@ In this event it is possible to get more information regarding changes done usin
 | `activate` | activate datetime|
 | `closedAt` | closed at datetime|
 | `deadline` | deadline datetime|
-| `timeToClose` |  time (minutes) between when the ticket was created and when it was closed. Calculated based on priority&apos;s timeframe|
+| `timeToClose` |  time (minutes) between when the ticket was created and when it was closed. Calculated based on priority's timeframe|
 | `realTimeToClose` |  same as timeToClose, but not calculated based on priority|
 | `repliedAt` | replied at datetime|
-| `timeToReply` |  time (minutes) between when the ticket was created and when it was replied to. Calculated based on priority&apos;s timeframe|
+| `timeToReply` |  time (minutes) between when the ticket was created and when it was replied to. Calculated based on priority's timeframe|
 | `m_realTimeToReply` |  same as timeToReply, but not calculated based on priority|
 | `createdBy` |  ID of user who created ticket|
 | `author` |  string representing author of ticket|

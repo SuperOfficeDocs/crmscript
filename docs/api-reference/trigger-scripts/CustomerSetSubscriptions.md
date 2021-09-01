@@ -9,6 +9,7 @@ keywords:
 # CustomerSetSubscriptions (302)
 
 ## Input values
+
 |Variable|Description|
 |---|---|
 | `personId` | person ID|

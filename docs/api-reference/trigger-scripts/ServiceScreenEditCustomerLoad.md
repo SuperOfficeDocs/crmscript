@@ -9,8 +9,11 @@ keywords:
 # ServiceScreenEditCustomerLoad (506)
 
 Runs for `HtmlPage.lang_ticket_editCustomer`
+
 Called when screen is constructed, useful for setting default values into HTML elements
+
 ## Input values
+
 |Variable|Description|
 |---|---|
 | `button` | HtmlSubmitButton element value|

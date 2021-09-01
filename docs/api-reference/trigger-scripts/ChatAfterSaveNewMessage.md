@@ -9,6 +9,7 @@ keywords:
 # ChatAfterSaveNewMessage (403)
 
 ## Input values
+
 |Variable|Description|
 |---|---|
 | `chatSession.topicId` | the topic this chat session belongs to|

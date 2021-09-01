@@ -11,6 +11,7 @@ keywords:
 Runs when ticket is saved and status changed from postponed to active.
 
 ## Input values
+
 |Variable|Description|
 |---|---|
 | `entryId` | request ID|

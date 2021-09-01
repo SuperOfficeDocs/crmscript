@@ -8,7 +8,7 @@ keywords:
 
 # MainMenu (113)
 
-Runs when the main menu is rendered
+Runs when the main menu is rendered.
 
 ## Sample code
 

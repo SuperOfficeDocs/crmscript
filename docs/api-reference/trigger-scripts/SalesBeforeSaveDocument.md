@@ -8,7 +8,7 @@ keywords:
 
 # SalesBeforeSaveDocument (1004)
 
-Called before an document is saved. EventData contains all variables passed by datahandler in Sales client.
+Called before an document is saved. EventData contains all variables passed by datahandler in the Sales client.
 
 ## Input values
 

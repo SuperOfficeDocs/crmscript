@@ -8,7 +8,7 @@ keywords:
 
 # SalesAfterSaveSelection (1110)
 
-Called after selection is saved. EventData contains all variables passed by datahandler in Sales client.
+Called after selection is saved. EventData contains all variables passed by datahandler in the Sales client.
 
 ## Input values
 
@@ -19,5 +19,4 @@ Called after selection is saved. EventData contains all variables passed by data
 ```crmscript
 #setLanguageLevel 3;
 EventData ed = getEventData();
-
 ```

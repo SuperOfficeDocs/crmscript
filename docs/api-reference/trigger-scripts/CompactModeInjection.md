@@ -12,7 +12,8 @@ keywords:
 
 none
 
-## Output values:
+## Output values
+
 |Variable|Description|
 |---|---|
 | `injection`|Output string to inject into parser as variable|

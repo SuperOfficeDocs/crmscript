@@ -14,6 +14,7 @@ There are several variables available in this context.
 * To set a variable: `setVariable("xxx", <value>)`, where \<value> is a valid value for the field you are trying to set.
 
 ## Input values
+
 |Variable|Description|
 |---|---|
 | `subject` | message subject|
@@ -36,6 +37,7 @@ There are several variables available in this context.
 | `from` | message from header|
 
 ## Output values
+
 |Variable|Description|
 |---|---|
 | `subject` | message subject|

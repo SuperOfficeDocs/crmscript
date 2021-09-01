@@ -8,7 +8,7 @@ keywords:
 
 # SalesAfterSaveAppointment (1101)
 
-Called after an appointment is saved. EventData contains all variables passed by datahandler in Sales client. It is also possible to create and pass custom variables from BeforeSave event trigger.
+Called after an appointment is saved. EventData contains all variables passed by datahandler in the Sales client. It is also possible to create and pass custom variables from BeforeSave event trigger.
 
 ## Input values
 

@@ -8,7 +8,7 @@ keywords:
 
 # SalesBeforeSaveSelection (1010)
 
-Called before selection is saved. EventData contains all variables passed by datahandler in Sales client.
+Called before selection is saved. EventData contains all variables passed by datahandler in the Sales client.
 
 ## Input values
 

@@ -8,7 +8,7 @@ keywords:
 
 # SalesAfterSaveQuoteLine (1113)
 
-Called after an quote line is saved. EventData contains all variables passed by datahandler in Sales client.
+Called after an quote line is saved. EventData contains all variables passed by datahandler in the Sales client.
 
 ## Input values
 

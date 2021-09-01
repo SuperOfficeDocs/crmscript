@@ -9,6 +9,7 @@ keywords:
 # NewTicketFromCustomerCenter (101)
 
 ## Input values
+
 |Variable|Description|
 |---|---|
 | `entryId` | ticket ID|

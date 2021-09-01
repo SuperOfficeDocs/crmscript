@@ -11,6 +11,7 @@ keywords:
 Called for all messages added to a ticket, followed by call to either `TicketInternalMessageAdded` or `TicketExternalMessageAdded` trigger.
 
 ## Input values
+
 |Variable|Description|
 |---|---|
 | `entryId` | the ticket ID|

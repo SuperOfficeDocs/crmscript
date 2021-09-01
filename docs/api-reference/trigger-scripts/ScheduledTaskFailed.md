@@ -11,6 +11,7 @@ keywords:
 Runs after scheduled task failed
 
 ## Input values
+
 |Variable|Description|
 |---|---|
 | `entryId` | scheduled task ID|

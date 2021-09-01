@@ -11,6 +11,7 @@ keywords:
 Runs when a ticket is saved and the ticket category changes ID.
 
 ## Input values
+
 |Variable|Description|
 |---|---|
 | `entryId` | request ID|

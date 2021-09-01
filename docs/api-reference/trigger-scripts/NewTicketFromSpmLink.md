@@ -11,6 +11,7 @@ keywords:
 Called when a mailing link was clicked and mailing specifies link tracking.
 
 ## Input values
+
 |Variable|Description|
 |---|---|
 | `custId` | customer person ID|

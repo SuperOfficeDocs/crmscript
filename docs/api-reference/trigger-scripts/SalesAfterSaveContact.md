@@ -8,7 +8,7 @@ keywords:
 
 # SalesAfterSaveContact (1105)
 
-Called after a contact is saved. EventData contains all variables passed by datahandler in Sales client.
+Called after a contact is saved. EventData contains all variables passed by datahandler in the Sales client.
 
 ## Input values
 

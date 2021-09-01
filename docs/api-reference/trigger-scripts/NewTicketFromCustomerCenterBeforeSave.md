@@ -9,11 +9,13 @@ keywords:
 # NewTicketFromCustomerCenterBeforeSave (103)
 
 ## Input values
+
 |Variable|Description|
 |---|---|
 | `customerId` | person ID|
 
-## Output values:
+## Output values
+
 |Variable|Description|
 |---|---|
 | `errorMessage`||

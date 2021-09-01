@@ -9,12 +9,14 @@ keywords:
 # CustomerCenterAuthentication (210)
 
 ## Input values
+
 |Variable|Description|
 |---|---|
 | `username` | user string|
 | `targetId`| temporary key info ID (optional)|
 
 ## Output
+
 |Variable|Description|
 |---|---|
 | `navigateTo`| set to URL to redirect to|

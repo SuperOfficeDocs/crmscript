@@ -11,6 +11,7 @@ keywords:
 Runs when a ticket is saved and the owner changed.
 
 ## Input values
+
 |Variable|Description|
 |---|---|
 | `entryId` | request ID|

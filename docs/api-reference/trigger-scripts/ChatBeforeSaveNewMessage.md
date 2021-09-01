@@ -9,6 +9,7 @@ keywords:
 # ChatBeforeSaveNewMessage (402)
 
 ## Input values
+
 |Variable|Description|
 |---|---|
 | `chatSession.topicId` | the topic this chat session belongs to|
@@ -26,6 +27,7 @@ keywords:
 | `chatMessage.author` | author name|
 
 ## Output values
+
 |Variable|Description|
 |---|---|
 | `chatMessage.message`||

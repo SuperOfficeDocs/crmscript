@@ -12,6 +12,7 @@ Called when session changes status.
 Equivalent to webhook 'chatsession.changed'
 
 ## Input values
+
 |Variable|Description|
 |---|---|
 |`chatSession.id` | the session ID|

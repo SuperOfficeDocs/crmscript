@@ -13,6 +13,7 @@ Fires when a new chat session starts.
 Corresponds to the webhook `chatsession.created` event.
 
 ## Input values
+
 |Variable|Description|
 |---|---|
 | `chatSession.id` | session ID|

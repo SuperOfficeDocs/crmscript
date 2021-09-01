@@ -11,6 +11,7 @@ keywords:
 Runs when a new sentiment is calculated.
 
 ## Input values
+
 |Variable|Description|
 |---|---|
 | `entryId` | request ID|

@@ -9,6 +9,7 @@ keywords:
 # TicketReopenedFromCustomerCenter (121)
 
 ## Input values
+
 |Variable|Description|
 |---|---|
 | `entryId` | ticket ID|

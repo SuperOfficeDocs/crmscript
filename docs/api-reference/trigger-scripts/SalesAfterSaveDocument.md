@@ -8,7 +8,7 @@ keywords:
 
 # SalesAfterSaveDocument (1104)
 
-Called after an document is saved. EventData contains all variables passed by datahandler in Sales client.
+Called after a document is saved. EventData contains all variables passed by datahandler in the Sales client.
 
 ## Input values
 

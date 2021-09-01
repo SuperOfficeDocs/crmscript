@@ -11,6 +11,7 @@ keywords:
 Runs when a new ticket is created.
 
 ## Input values
+
 |Variable|Description|
 |---|---|
 | `entryId` | request ID|

@@ -8,7 +8,7 @@ keywords:
 
 # SalesAfterSaveRelation (1107)
 
-Called after a relation is saved. EventData contains all variables passed by datahandler in Sales client.
+Called after a relation is saved. EventData contains all variables passed by datahandler in the Sales client.
 
 ## Input values
 

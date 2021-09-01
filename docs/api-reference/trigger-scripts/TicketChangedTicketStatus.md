@@ -11,6 +11,7 @@ keywords:
 Runs when a ticket is saved and status changed. If user-defined statuses are present in solution available values will differ from below.
 
 ## Input values
+
 |Variable|Description|
 |---|---|
 | `entryId` | request ID|

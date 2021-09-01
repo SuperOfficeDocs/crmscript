@@ -9,8 +9,7 @@ so.topic: reference
 
 # sleep(Float seconds)
 
-Sleep (give up CPU) for some time.
-Useful in some CPU intensive loops to maintain a responsive system.
+Sleep (give up CPU) for some time. Useful in some CPU-intensive loops to maintain a responsive system.
 
 ## Example
 

@@ -18,9 +18,9 @@ Returns a `String` object.
 ## Functions
 
 * String String(String value)
-* String String(Byte[] byteArray) - doesn't support Unicode
+* String String(Byte[] byteArray)* doesn't support Unicode
 * String String(Byte[] byteArray, String codepage)
-* String String(NSStream byteArray) - doesn't support Unicode
+* String String(NSStream byteArray)* doesn't support Unicode
 * String String(NSStream byteArray, String codepage)
 
 ## Parameters

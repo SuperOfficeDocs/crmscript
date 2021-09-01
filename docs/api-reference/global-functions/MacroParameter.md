@@ -11,6 +11,7 @@ so.topic: reference
 # MacroParameter MacroParameter()
 
 MacroParameter constructor. You can optionally pass a default value and specify whether or not it is fixed.
+
 The Map control-configuration values the type of the parameter allow is also optional.
 
 ## Functions

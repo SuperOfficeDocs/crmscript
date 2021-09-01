@@ -13,19 +13,19 @@ This method will do a faq search, using the same search engine as the customer p
 
 ## Category parser array
 
-faq.categoryId - the id of the matching category
-faq.categoryName - the name of the matching category
-faq.categoryLink - a URL to the customer pages to the matching category
-faq.categoryDescription - the description of the matching category
-faq.categoryScore - the score of the matching category, given in percentage with 2 decimals precision
+faq.categoryId* the id of the matching category
+faq.categoryName* the name of the matching category
+faq.categoryLink* a URL to the customer pages to the matching category
+faq.categoryDescription* the description of the matching category
+faq.categoryScore* the score of the matching category, given in percentage with 2 decimals precision
 
 ## Entry parser array
 
-faq.entryId - the ID of the matching entry
-faq.entryName - the name of the matching entry
-faq.entryLink - a URL to the customer pages to the matching entry
-faq.entryQuestion - the question part of the matching entry
-faq.entryScore - the score of the matching entry, given in percentage with 2 decimals precision
+faq.entryId* the ID of the matching entry
+faq.entryName* the name of the matching entry
+faq.entryLink* a URL to the customer pages to the matching entry
+faq.entryQuestion* the question part of the matching entry
+faq.entryScore* the score of the matching entry, given in percentage with 2 decimals precision
 
 * **Integer:** root the id of the category folder where you want to search from. -1 for the whole tree
 * **Integer:** access indicates the minimum access one needs for this search. See below for access codes

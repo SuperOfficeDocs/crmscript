@@ -17,7 +17,7 @@ Called after a sale is saved. EventData contains all variables passed by datahan
 ## Sample code
 
 ```crmscript
-//If sale status has changed and is sold - Change customer category
+//If sale status has changed and is sold* Change customer category
 if(ed.getInputValue("SaleStatusChanged") == "True" && ed.getInputValue("SaleStatus") == "2")
 {
     if(ed.getInputValue("SaleEntity.Contact.CategoryName") == "Prospect")

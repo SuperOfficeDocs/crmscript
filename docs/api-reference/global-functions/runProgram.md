@@ -24,5 +24,5 @@ Executes the program (given command) and returns what was sent to stdout. You ca
 
 | Parameter | Type | Description |
 |---|---|---|
-| command | String | Command line - path to program and parameters |
+| command | String | Command line: path to program and parameters |
 | codepage | String | Optional. The codepage used |

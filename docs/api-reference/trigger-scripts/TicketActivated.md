@@ -23,7 +23,7 @@ Runs when ticket is saved and status changed from postponed to active.
 ## Ticket status
 
 * Unknown = 0,
-* Active = 1 - Request is currently active
+* Active = 1* Request is currently active
 * Closed = 2, Request has been closed
 * Postponed = 3, Request has been postponed
 * Deleted = 4, Request has been deleted

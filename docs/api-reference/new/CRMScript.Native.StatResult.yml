@@ -7,11 +7,129 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.Native.StatResult.atGroupBegin
+  - CRMScript.Native.StatResult.atGroupEnd
+  - CRMScript.Native.StatResult.dumpParser
+  - CRMScript.Native.StatResult.eof
+  - CRMScript.Native.StatResult.getField
+  - CRMScript.Native.StatResult.next
+  - CRMScript.Native.StatResult.rewind
+  - CRMScript.Native.StatResult.saveAsResult
+  - CRMScript.Native.StatResult.#ctor
   name: StatResult
   nameWithType: StatResult
   fullName: CRMScript.Native.StatResult
   type: Class
-  summary: ""
+  summary: 
+  example: 
+- uid: CRMScript.Native.StatResult.atGroupBegin
+  commentId: M:CRMScript.Native.StatResult.atGroupBegin
+  id: 'atGroupBegin'
+  so.intellisense: StatResult.atGroupBegin
+  langs:
+  - crmscript
+  name: 'atGroupBegin'
+  nameWithType: StatResult.atGroupBegin
+  fullName: CRMScript.Native.StatResult.atGroupBegin
+  type: Method
+  summary: "\nCheck if the current row is the first row for a given group.<p></p>\n<ul><li><strong>column:</strong>The column which identifies the group.</li><li><strong>Returns:</strong>True if we're at the first row for this group, otherwise False.</li></ul>\n"
+  example: 
+- uid: CRMScript.Native.StatResult.atGroupEnd
+  commentId: M:CRMScript.Native.StatResult.atGroupEnd
+  id: 'atGroupEnd'
+  so.intellisense: StatResult.atGroupEnd
+  langs:
+  - crmscript
+  name: 'atGroupEnd'
+  nameWithType: StatResult.atGroupEnd
+  fullName: CRMScript.Native.StatResult.atGroupEnd
+  type: Method
+  summary: "\nCheck if the current row is the last row for a given group.<p></p>\n<ul><li><strong>column:</strong>The column which identifies the group.</li><li><strong>Returns:</strong>True if we're at the last row for this group, otherwise False.</li></ul>\n"
+  example: 
+- uid: CRMScript.Native.StatResult.dumpParser
+  commentId: M:CRMScript.Native.StatResult.dumpParser
+  id: 'dumpParser'
+  so.intellisense: StatResult.dumpParser
+  langs:
+  - crmscript
+  name: 'dumpParser'
+  nameWithType: StatResult.dumpParser
+  fullName: CRMScript.Native.StatResult.dumpParser
+  type: Method
+  summary: "\n<ul><li><strong>Returns:</strong>A string with everything in the StatResult parser listed.</li></ul>Mainly used for debugging and development, useful as it will show you every variable in the StatResult parser.\n"
+  example: 
+- uid: CRMScript.Native.StatResult.eof
+  commentId: M:CRMScript.Native.StatResult.eof
+  id: 'eof'
+  so.intellisense: StatResult.eof
+  langs:
+  - crmscript
+  name: 'eof'
+  nameWithType: StatResult.eof
+  fullName: CRMScript.Native.StatResult.eof
+  type: Method
+  summary: "\n<ul><li><strong>Returns:</strong>True if the internal iterator is past the last element, otherwise False</li></ul>\n"
+  example: 
+- uid: CRMScript.Native.StatResult.getField
+  commentId: M:CRMScript.Native.StatResult.getField
+  id: 'getField'
+  so.intellisense: StatResult.getField
+  langs:
+  - crmscript
+  name: 'getField'
+  nameWithType: StatResult.getField
+  fullName: CRMScript.Native.StatResult.getField
+  type: Method
+  summary: "\nReturns the value for the given field at the current row. You can specify the field either by its name or its column. Normally used to retrieve values from aggregate functions.\n"
+  example: 
+- uid: CRMScript.Native.StatResult.next
+  commentId: M:CRMScript.Native.StatResult.next
+  id: 'next'
+  so.intellisense: StatResult.next
+  langs:
+  - crmscript
+  name: 'next'
+  nameWithType: StatResult.next
+  fullName: CRMScript.Native.StatResult.next
+  type: Method
+  summary: "\nMove internal iterator to next element.<p></p>\n<ul><li><strong>Returns:</strong><code>eof()</code>after move.</li></ul>\n"
+  example: 
+- uid: CRMScript.Native.StatResult.rewind
+  commentId: M:CRMScript.Native.StatResult.rewind
+  id: 'rewind'
+  so.intellisense: StatResult.rewind
+  langs:
+  - crmscript
+  name: 'rewind'
+  nameWithType: StatResult.rewind
+  fullName: CRMScript.Native.StatResult.rewind
+  type: Method
+  summary: "\nRewinds the internal iterator.\n"
+  example: 
+- uid: CRMScript.Native.StatResult.saveAsResult
+  commentId: M:CRMScript.Native.StatResult.saveAsResult
+  id: 'saveAsResult'
+  so.intellisense: StatResult.saveAsResult
+  langs:
+  - crmscript
+  name: 'saveAsResult'
+  nameWithType: StatResult.saveAsResult
+  fullName: CRMScript.Native.StatResult.saveAsResult
+  type: Method
+  summary: "\n<ul><li><strong>column:</strong>What column to use as id field</li><li><strong>ownerId:</strong>Id of the owner of the result set (so it can be deleted at logout time)</li><li><strong>maxRows:</strong>Maximum number wanted in the result set</li><li><strong>Returns:</strong>A reference to the result set:</li></ul>The result set reference can be used like this to display tickets in the result set (if the result set references tickets):<p></p>\n<pre><code>setVariable(&quot;url&quot;, getProgram(1) + &quot;&amp;action=listTickets&amp;special=11&amp;resultKey=&quot; + resKey .toString());</code></pre>\n"
+  example: 
+  - "\n<pre><code>setVariable(&quot;url&quot;, getProgram(1) + &quot;&amp;action=listTickets&amp;special=11&amp;resultKey=&quot; + resKey .toString());</code></pre>\n"
+- uid: CRMScript.Native.StatResult.#ctor
+  commentId: M:CRMScript.Native.StatResult.#ctor
+  id: '#ctor'
+  so.intellisense: Void.StatResult
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: StatResult.#ctor
+  fullName: CRMScript.Native.StatResult.#ctor
+  type: Method
+  summary: 
   example: 
 references:
 - uid: CRMScript.Native.StatResult

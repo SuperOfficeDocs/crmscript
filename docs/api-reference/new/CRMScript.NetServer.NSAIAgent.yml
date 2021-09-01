@@ -7,6 +7,13 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSAIAgent.DetectLanguage
+  - CRMScript.NetServer.NSAIAgent.DetectSentiment
+  - CRMScript.NetServer.NSAIAgent.GetTrainingStatus
+  - CRMScript.NetServer.NSAIAgent.GuessCategory
+  - CRMScript.NetServer.NSAIAgent.#ctor
+  - CRMScript.NetServer.NSAIAgent.TrainCategoryGuesser
+  - CRMScript.NetServer.NSAIAgent.Translate
   name: NSAIAgent
   nameWithType: NSAIAgent
   fullName: CRMScript.NetServer.NSAIAgent
@@ -14,6 +21,97 @@ items:
   summary: "\nAI services, such as Translation, Statistics, Sentiment analysis, backed by calls to Public Cloud providers.\n"
   example: 
   - "\n<pre><code>NSAIAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSAIAgent.DetectLanguage
+  commentId: M:CRMScript.NetServer.NSAIAgent.DetectLanguage
+  id: 'DetectLanguage'
+  so.intellisense: NSAIAgent.DetectLanguage
+  langs:
+  - crmscript
+  name: 'DetectLanguage'
+  nameWithType: NSAIAgent.DetectLanguage
+  fullName: CRMScript.NetServer.NSAIAgent.DetectLanguage
+  type: Method
+  summary: "\nGiven a (reasonably short) text, detect the language it is written in\n"
+  example: 
+  - "\n<pre><code>NSAIAgent agent;\nString text;\nString res = agent.DetectLanguage(text);</code></pre>\n"
+- uid: CRMScript.NetServer.NSAIAgent.DetectSentiment
+  commentId: M:CRMScript.NetServer.NSAIAgent.DetectSentiment
+  id: 'DetectSentiment'
+  so.intellisense: NSAIAgent.DetectSentiment
+  langs:
+  - crmscript
+  name: 'DetectSentiment'
+  nameWithType: NSAIAgent.DetectSentiment
+  fullName: CRMScript.NetServer.NSAIAgent.DetectSentiment
+  type: Method
+  summary: "\nDetect the sentiment of a (reasonably short) text. Sentiment analysis may cause a translation to be made, since sentiment analysis only supports a limited set of languages\n"
+  example: 
+  - "\n<pre><code>NSAIAgent agent;\nString text;\nSentiment res = agent.DetectSentiment(text);</code></pre>\n"
+- uid: CRMScript.NetServer.NSAIAgent.GetTrainingStatus
+  commentId: M:CRMScript.NetServer.NSAIAgent.GetTrainingStatus
+  id: 'GetTrainingStatus'
+  so.intellisense: NSAIAgent.GetTrainingStatus
+  langs:
+  - crmscript
+  name: 'GetTrainingStatus'
+  nameWithType: NSAIAgent.GetTrainingStatus
+  fullName: CRMScript.NetServer.NSAIAgent.GetTrainingStatus
+  type: Method
+  summary: "\nCalling the HugoAI endpoint to fetch the current training status.<p></p>\n<strong>Returns:</strong>Carrier to describe the current status of HugoAI categorization<p></p>\n<pre><code>NSAIAgent agent;\nCategorizationStatusResponse res = agent.GetTrainingStatus();</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSAIAgent agent;\nCategorizationStatusResponse res = agent.GetTrainingStatus();</code></pre>\n"
+- uid: CRMScript.NetServer.NSAIAgent.GuessCategory
+  commentId: M:CRMScript.NetServer.NSAIAgent.GuessCategory
+  id: 'GuessCategory'
+  so.intellisense: NSAIAgent.GuessCategory
+  langs:
+  - crmscript
+  name: 'GuessCategory'
+  nameWithType: NSAIAgent.GuessCategory
+  fullName: CRMScript.NetServer.NSAIAgent.GuessCategory
+  type: Method
+  summary: "\nGiven a ticket's id, guess the ticket category it should be placed in. Currently this is based on the first message in the ticket\n"
+  example: 
+  - "\n<pre><code>NSAIAgent agent;\nInteger ticketId;\nInteger res = agent.GuessCategory(ticketId);</code></pre>\n"
+- uid: CRMScript.NetServer.NSAIAgent.#ctor
+  commentId: M:CRMScript.NetServer.NSAIAgent.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSAIAgent
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSAIAgent.#ctor
+  fullName: CRMScript.NetServer.NSAIAgent.#ctor
+  type: Method
+  summary: "\nAI services, such as Translation, Statistics, Sentiment analysis, backed by calls to Public Cloud providers.\n"
+  example: 
+  - "\n<pre><code>NSAIAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSAIAgent.TrainCategoryGuesser
+  commentId: M:CRMScript.NetServer.NSAIAgent.TrainCategoryGuesser
+  id: 'TrainCategoryGuesser'
+  so.intellisense: NSAIAgent.TrainCategoryGuesser
+  langs:
+  - crmscript
+  name: 'TrainCategoryGuesser'
+  nameWithType: NSAIAgent.TrainCategoryGuesser
+  fullName: CRMScript.NetServer.NSAIAgent.TrainCategoryGuesser
+  type: Method
+  summary: "\nThe category guesser training API will be called with an array of CategorizationTrainingItem during the (background, Batch) execution of this call\n"
+  example: 
+  - "\n<pre><code>NSAIAgent agent;\nInteger selectionId;\nInteger maxItems;\nInteger maxTextLength;\nString res = agent.TrainCategoryGuesser(selectionId, maxItems, maxTextLength);</code></pre>\n"
+- uid: CRMScript.NetServer.NSAIAgent.Translate
+  commentId: M:CRMScript.NetServer.NSAIAgent.Translate
+  id: 'Translate'
+  so.intellisense: NSAIAgent.Translate
+  langs:
+  - crmscript
+  name: 'Translate'
+  nameWithType: NSAIAgent.Translate
+  fullName: CRMScript.NetServer.NSAIAgent.Translate
+  type: Method
+  summary: "\nTranslate a text from one language to another. Language of the text is automatically detected.\n"
+  example: 
+  - "\n<pre><code>NSAIAgent agent;\nString text;\nString targetLanguage;\nString res = agent.Translate(text, targetLanguage);</code></pre>\n"
 references:
 - uid: CRMScript.NetServer.NSAIAgent
   commentId: T:CRMScript.NetServer.NSAIAgent

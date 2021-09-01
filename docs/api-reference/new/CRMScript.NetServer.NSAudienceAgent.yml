@@ -7,6 +7,33 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSAudienceAgent.CreateDefaultAudienceLayoutEntity
+  - CRMScript.NetServer.NSAudienceAgent.DeleteAudienceLayoutEntity
+  - CRMScript.NetServer.NSAudienceAgent.DeleteConfigParameter
+  - CRMScript.NetServer.NSAudienceAgent.GetAudienceLayoutByName
+  - CRMScript.NetServer.NSAudienceAgent.GetAudienceLayoutEntity
+  - CRMScript.NetServer.NSAudienceAgent.GetAudienceLayoutOnPerson
+  - CRMScript.NetServer.NSAudienceAgent.GetConfigParameter
+  - CRMScript.NetServer.NSAudienceAgent.GetConfigParameterOnPerson
+  - CRMScript.NetServer.NSAudienceAgent.GetConfigParametersByLayoutName
+  - CRMScript.NetServer.NSAudienceAgent.GetConfigParametersOnPerson
+  - CRMScript.NetServer.NSAudienceAgent.GetConfigParameterValue
+  - CRMScript.NetServer.NSAudienceAgent.GetConfigParameterValueOnPerson
+  - CRMScript.NetServer.NSAudienceAgent.GetDefaultCountryFlag
+  - CRMScript.NetServer.NSAudienceAgent.GetDefaultPersonImage
+  - CRMScript.NetServer.NSAudienceAgent.GetDefaultProjectImage
+  - CRMScript.NetServer.NSAudienceAgent.GetLogoImage
+  - CRMScript.NetServer.NSAudienceAgent.GetMyAudienceLayout
+  - CRMScript.NetServer.NSAudienceAgent.GetMyConfigParameter
+  - CRMScript.NetServer.NSAudienceAgent.GetMyConfigParameters
+  - CRMScript.NetServer.NSAudienceAgent.GetMyConfigParameterValue
+  - CRMScript.NetServer.NSAudienceAgent.#ctor
+  - CRMScript.NetServer.NSAudienceAgent.SaveAudienceLayoutEntity
+  - CRMScript.NetServer.NSAudienceAgent.SaveConfigParameter
+  - CRMScript.NetServer.NSAudienceAgent.SetDefaultCountryFlag
+  - CRMScript.NetServer.NSAudienceAgent.SetDefaultPersonImage
+  - CRMScript.NetServer.NSAudienceAgent.SetDefaultProjectImage
+  - CRMScript.NetServer.NSAudienceAgent.SetLogoImage
   name: NSAudienceAgent
   nameWithType: NSAudienceAgent
   fullName: CRMScript.NetServer.NSAudienceAgent
@@ -14,6 +41,352 @@ items:
   summary: "\nServices specific to the Audience client.\n"
   example: 
   - "\n<pre><code>NSAudienceAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSAudienceAgent.CreateDefaultAudienceLayoutEntity
+  commentId: M:CRMScript.NetServer.NSAudienceAgent.CreateDefaultAudienceLayoutEntity
+  id: 'CreateDefaultAudienceLayoutEntity'
+  so.intellisense: NSAudienceAgent.CreateDefaultAudienceLayoutEntity
+  langs:
+  - crmscript
+  name: 'CreateDefaultAudienceLayoutEntity'
+  nameWithType: NSAudienceAgent.CreateDefaultAudienceLayoutEntity
+  fullName: CRMScript.NetServer.NSAudienceAgent.CreateDefaultAudienceLayoutEntity
+  type: Method
+  summary: "\nSet default values into a new NSAudienceLayoutEntity.
+NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>A new NSAudienceLayoutEntity with default values.<p></p>\n<pre><code>NSAudienceAgent agent;\nNSAudienceLayoutEntity thing = agent.CreateDefaultAudienceLayoutEntity();\nthing = agent.SaveAudienceLayoutEntity(thing);</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSAudienceAgent agent;\nNSAudienceLayoutEntity thing = agent.CreateDefaultAudienceLayoutEntity();\nthing = agent.SaveAudienceLayoutEntity(thing);</code></pre>\n"
+- uid: CRMScript.NetServer.NSAudienceAgent.DeleteAudienceLayoutEntity
+  commentId: M:CRMScript.NetServer.NSAudienceAgent.DeleteAudienceLayoutEntity
+  id: 'DeleteAudienceLayoutEntity'
+  so.intellisense: NSAudienceAgent.DeleteAudienceLayoutEntity
+  langs:
+  - crmscript
+  name: 'DeleteAudienceLayoutEntity'
+  nameWithType: NSAudienceAgent.DeleteAudienceLayoutEntity
+  fullName: CRMScript.NetServer.NSAudienceAgent.DeleteAudienceLayoutEntity
+  type: Method
+  summary: "\nDeletes the NSAudienceLayoutEntity\n"
+  example: 
+  - "\n<pre><code>NSAudienceAgent agent;\nagent.DeleteAudienceLayoutEntity(123);</code></pre>\n"
+- uid: CRMScript.NetServer.NSAudienceAgent.DeleteConfigParameter
+  commentId: M:CRMScript.NetServer.NSAudienceAgent.DeleteConfigParameter
+  id: 'DeleteConfigParameter'
+  so.intellisense: NSAudienceAgent.DeleteConfigParameter
+  langs:
+  - crmscript
+  name: 'DeleteConfigParameter'
+  nameWithType: NSAudienceAgent.DeleteConfigParameter
+  fullName: CRMScript.NetServer.NSAudienceAgent.DeleteConfigParameter
+  type: Method
+  summary: "\nDeletes an Audience configuration parameter belonging to a Audience layout\n"
+  example: 
+- uid: CRMScript.NetServer.NSAudienceAgent.GetAudienceLayoutByName
+  commentId: M:CRMScript.NetServer.NSAudienceAgent.GetAudienceLayoutByName
+  id: 'GetAudienceLayoutByName'
+  so.intellisense: NSAudienceAgent.GetAudienceLayoutByName
+  langs:
+  - crmscript
+  name: 'GetAudienceLayoutByName'
+  nameWithType: NSAudienceAgent.GetAudienceLayoutByName
+  fullName: CRMScript.NetServer.NSAudienceAgent.GetAudienceLayoutByName
+  type: Method
+  summary: "\nGets an Audience layout by it's instance name\n"
+  example: 
+  - "\n<pre><code>NSAudienceAgent agent;\nString layoutName;\nNSAudienceLayoutEntity res = agent.GetAudienceLayoutByName(layoutName);</code></pre>\n"
+- uid: CRMScript.NetServer.NSAudienceAgent.GetAudienceLayoutEntity
+  commentId: M:CRMScript.NetServer.NSAudienceAgent.GetAudienceLayoutEntity
+  id: 'GetAudienceLayoutEntity'
+  so.intellisense: NSAudienceAgent.GetAudienceLayoutEntity
+  langs:
+  - crmscript
+  name: 'GetAudienceLayoutEntity'
+  nameWithType: NSAudienceAgent.GetAudienceLayoutEntity
+  fullName: CRMScript.NetServer.NSAudienceAgent.GetAudienceLayoutEntity
+  type: Method
+  summary: "\nGets a NSAudienceLayoutEntity object.\n"
+  example: 
+  - "\n<pre><code>NSAudienceAgent agent;\nNSAudienceLayoutEntity thing = agent.GetAudienceLayoutEntity(123);</code></pre>\n"
+- uid: CRMScript.NetServer.NSAudienceAgent.GetAudienceLayoutOnPerson
+  commentId: M:CRMScript.NetServer.NSAudienceAgent.GetAudienceLayoutOnPerson
+  id: 'GetAudienceLayoutOnPerson'
+  so.intellisense: NSAudienceAgent.GetAudienceLayoutOnPerson
+  langs:
+  - crmscript
+  name: 'GetAudienceLayoutOnPerson'
+  nameWithType: NSAudienceAgent.GetAudienceLayoutOnPerson
+  fullName: CRMScript.NetServer.NSAudienceAgent.GetAudienceLayoutOnPerson
+  type: Method
+  summary: "\nGets the Audience layout belonging to the person specified.\n"
+  example: 
+  - "\n<pre><code>NSAudienceAgent agent;\nInteger personId;\nNSAudienceLayoutEntity res = agent.GetAudienceLayoutOnPerson(personId);</code></pre>\n"
+- uid: CRMScript.NetServer.NSAudienceAgent.GetConfigParameter
+  commentId: M:CRMScript.NetServer.NSAudienceAgent.GetConfigParameter
+  id: 'GetConfigParameter'
+  so.intellisense: NSAudienceAgent.GetConfigParameter
+  langs:
+  - crmscript
+  name: 'GetConfigParameter'
+  nameWithType: NSAudienceAgent.GetConfigParameter
+  fullName: CRMScript.NetServer.NSAudienceAgent.GetConfigParameter
+  type: Method
+  summary: "\nGets an Audience configuration parameter belonging to a given Audience layout with the specified configuration parameter name\n"
+  example: 
+  - "\n<pre><code>NSAudienceAgent agent;\nString layoutName;\nString parameterName;\nNSAudienceConfigParameter res = agent.GetConfigParameter(layoutName, parameterName);</code></pre>\n"
+- uid: CRMScript.NetServer.NSAudienceAgent.GetConfigParameterOnPerson
+  commentId: M:CRMScript.NetServer.NSAudienceAgent.GetConfigParameterOnPerson
+  id: 'GetConfigParameterOnPerson'
+  so.intellisense: NSAudienceAgent.GetConfigParameterOnPerson
+  langs:
+  - crmscript
+  name: 'GetConfigParameterOnPerson'
+  nameWithType: NSAudienceAgent.GetConfigParameterOnPerson
+  fullName: CRMScript.NetServer.NSAudienceAgent.GetConfigParameterOnPerson
+  type: Method
+  summary: "\nGets an Audience configuration parameter with the specified configuration parameter name on the person specified\n"
+  example: 
+  - "\n<pre><code>NSAudienceAgent agent;\nString parameterName;\nInteger personId;\nNSAudienceConfigParameter res = agent.GetConfigParameterOnPerson(parameterName, personId);</code></pre>\n"
+- uid: CRMScript.NetServer.NSAudienceAgent.GetConfigParametersByLayoutName
+  commentId: M:CRMScript.NetServer.NSAudienceAgent.GetConfigParametersByLayoutName
+  id: 'GetConfigParametersByLayoutName'
+  so.intellisense: NSAudienceAgent.GetConfigParametersByLayoutName
+  langs:
+  - crmscript
+  name: 'GetConfigParametersByLayoutName'
+  nameWithType: NSAudienceAgent.GetConfigParametersByLayoutName
+  fullName: CRMScript.NetServer.NSAudienceAgent.GetConfigParametersByLayoutName
+  type: Method
+  summary: "\nGets the Audience configuration parameters belonging to a given Audience layout.\n"
+  example: 
+  - "\n<pre><code>NSAudienceAgent agent;\nString layoutName;\nNSAudienceConfigParameter[] res = agent.GetConfigParametersByLayoutName(layoutName);</code></pre>\n"
+- uid: CRMScript.NetServer.NSAudienceAgent.GetConfigParametersOnPerson
+  commentId: M:CRMScript.NetServer.NSAudienceAgent.GetConfigParametersOnPerson
+  id: 'GetConfigParametersOnPerson'
+  so.intellisense: NSAudienceAgent.GetConfigParametersOnPerson
+  langs:
+  - crmscript
+  name: 'GetConfigParametersOnPerson'
+  nameWithType: NSAudienceAgent.GetConfigParametersOnPerson
+  fullName: CRMScript.NetServer.NSAudienceAgent.GetConfigParametersOnPerson
+  type: Method
+  summary: "\nGets the Audience configuration parameters belonging to the person specified\n"
+  example: 
+  - "\n<pre><code>NSAudienceAgent agent;\nInteger personId;\nNSAudienceConfigParameter[] res = agent.GetConfigParametersOnPerson(personId);</code></pre>\n"
+- uid: CRMScript.NetServer.NSAudienceAgent.GetConfigParameterValue
+  commentId: M:CRMScript.NetServer.NSAudienceAgent.GetConfigParameterValue
+  id: 'GetConfigParameterValue'
+  so.intellisense: NSAudienceAgent.GetConfigParameterValue
+  langs:
+  - crmscript
+  name: 'GetConfigParameterValue'
+  nameWithType: NSAudienceAgent.GetConfigParameterValue
+  fullName: CRMScript.NetServer.NSAudienceAgent.GetConfigParameterValue
+  type: Method
+  summary: "\nGets the string value of an Audience configuration parameter belonging to a given Audience layout with the specified configuration parameter name\n"
+  example: 
+  - "\n<pre><code>NSAudienceAgent agent;\nString layoutName;\nString parameterName;\nString res = agent.GetConfigParameterValue(layoutName, parameterName);</code></pre>\n"
+- uid: CRMScript.NetServer.NSAudienceAgent.GetConfigParameterValueOnPerson
+  commentId: M:CRMScript.NetServer.NSAudienceAgent.GetConfigParameterValueOnPerson
+  id: 'GetConfigParameterValueOnPerson'
+  so.intellisense: NSAudienceAgent.GetConfigParameterValueOnPerson
+  langs:
+  - crmscript
+  name: 'GetConfigParameterValueOnPerson'
+  nameWithType: NSAudienceAgent.GetConfigParameterValueOnPerson
+  fullName: CRMScript.NetServer.NSAudienceAgent.GetConfigParameterValueOnPerson
+  type: Method
+  summary: "\nGets the string value of an Audience configuration parameter with the specified configuration parameter name on the person specified\n"
+  example: 
+  - "\n<pre><code>NSAudienceAgent agent;\nString parameterName;\nInteger personId;\nString res = agent.GetConfigParameterValueOnPerson(parameterName, personId);</code></pre>\n"
+- uid: CRMScript.NetServer.NSAudienceAgent.GetDefaultCountryFlag
+  commentId: M:CRMScript.NetServer.NSAudienceAgent.GetDefaultCountryFlag
+  id: 'GetDefaultCountryFlag'
+  so.intellisense: NSAudienceAgent.GetDefaultCountryFlag
+  langs:
+  - crmscript
+  name: 'GetDefaultCountryFlag'
+  nameWithType: NSAudienceAgent.GetDefaultCountryFlag
+  fullName: CRMScript.NetServer.NSAudienceAgent.GetDefaultCountryFlag
+  type: Method
+  summary: "\nReturns the default country flag image that is displayed in Audience when no person image is found. The image belongs to a specific Audience layout instance.\n"
+  example: 
+  - "\n<pre><code>NSAudienceAgent agent;\nString layoutName;\nNSImage res = agent.GetDefaultCountryFlag(layoutName);</code></pre>\n"
+- uid: CRMScript.NetServer.NSAudienceAgent.GetDefaultPersonImage
+  commentId: M:CRMScript.NetServer.NSAudienceAgent.GetDefaultPersonImage
+  id: 'GetDefaultPersonImage'
+  so.intellisense: NSAudienceAgent.GetDefaultPersonImage
+  langs:
+  - crmscript
+  name: 'GetDefaultPersonImage'
+  nameWithType: NSAudienceAgent.GetDefaultPersonImage
+  fullName: CRMScript.NetServer.NSAudienceAgent.GetDefaultPersonImage
+  type: Method
+  summary: "\nReturns the default person (sales rep) image that is displayed in Audience when no person image is found. The image belongs to a specific Audience layout instance.\n"
+  example: 
+  - "\n<pre><code>NSAudienceAgent agent;\nString layoutName;\nNSImage res = agent.GetDefaultPersonImage(layoutName);</code></pre>\n"
+- uid: CRMScript.NetServer.NSAudienceAgent.GetDefaultProjectImage
+  commentId: M:CRMScript.NetServer.NSAudienceAgent.GetDefaultProjectImage
+  id: 'GetDefaultProjectImage'
+  so.intellisense: NSAudienceAgent.GetDefaultProjectImage
+  langs:
+  - crmscript
+  name: 'GetDefaultProjectImage'
+  nameWithType: NSAudienceAgent.GetDefaultProjectImage
+  fullName: CRMScript.NetServer.NSAudienceAgent.GetDefaultProjectImage
+  type: Method
+  summary: "\nReturns the default project or event image that is displayed in Audience when no project/event image is found. The image belongs to a specific Audience layout instance.\n"
+  example: 
+  - "\n<pre><code>NSAudienceAgent agent;\nString layoutName;\nNSImage res = agent.GetDefaultProjectImage(layoutName);</code></pre>\n"
+- uid: CRMScript.NetServer.NSAudienceAgent.GetLogoImage
+  commentId: M:CRMScript.NetServer.NSAudienceAgent.GetLogoImage
+  id: 'GetLogoImage'
+  so.intellisense: NSAudienceAgent.GetLogoImage
+  langs:
+  - crmscript
+  name: 'GetLogoImage'
+  nameWithType: NSAudienceAgent.GetLogoImage
+  fullName: CRMScript.NetServer.NSAudienceAgent.GetLogoImage
+  type: Method
+  summary: 
+  example: 
+- uid: CRMScript.NetServer.NSAudienceAgent.GetMyAudienceLayout
+  commentId: M:CRMScript.NetServer.NSAudienceAgent.GetMyAudienceLayout
+  id: 'GetMyAudienceLayout'
+  so.intellisense: NSAudienceAgent.GetMyAudienceLayout
+  langs:
+  - crmscript
+  name: 'GetMyAudienceLayout'
+  nameWithType: NSAudienceAgent.GetMyAudienceLayout
+  fullName: CRMScript.NetServer.NSAudienceAgent.GetMyAudienceLayout
+  type: Method
+  summary: "\nGets the Audience layout belonging to the currently logged on user.<p></p>\n<strong>Returns:</strong>Audience layout entity<p></p>\n<pre><code>NSAudienceAgent agent;\nNSAudienceLayoutEntity res = agent.GetMyAudienceLayout();</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSAudienceAgent agent;\nNSAudienceLayoutEntity res = agent.GetMyAudienceLayout();</code></pre>\n"
+- uid: CRMScript.NetServer.NSAudienceAgent.GetMyConfigParameter
+  commentId: M:CRMScript.NetServer.NSAudienceAgent.GetMyConfigParameter
+  id: 'GetMyConfigParameter'
+  so.intellisense: NSAudienceAgent.GetMyConfigParameter
+  langs:
+  - crmscript
+  name: 'GetMyConfigParameter'
+  nameWithType: NSAudienceAgent.GetMyConfigParameter
+  fullName: CRMScript.NetServer.NSAudienceAgent.GetMyConfigParameter
+  type: Method
+  summary: "\nGets an Audience configuration parameter belonging to the currently logged on user with the specified configuration parameter name.\n"
+  example: 
+  - "\n<pre><code>NSAudienceAgent agent;\nString parameterName;\nNSAudienceConfigParameter res = agent.GetMyConfigParameter(parameterName);</code></pre>\n"
+- uid: CRMScript.NetServer.NSAudienceAgent.GetMyConfigParameters
+  commentId: M:CRMScript.NetServer.NSAudienceAgent.GetMyConfigParameters
+  id: 'GetMyConfigParameters'
+  so.intellisense: NSAudienceAgent.GetMyConfigParameters
+  langs:
+  - crmscript
+  name: 'GetMyConfigParameters'
+  nameWithType: NSAudienceAgent.GetMyConfigParameters
+  fullName: CRMScript.NetServer.NSAudienceAgent.GetMyConfigParameters
+  type: Method
+  summary: "\nGets the Audience configuration parameters belonging to the currently logged on user.<p></p>\n<strong>Returns:</strong>Array of Audience configuration parameters.<p></p>\n<pre><code>NSAudienceAgent agent;\nNSAudienceConfigParameter[] res = agent.GetMyConfigParameters();</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSAudienceAgent agent;\nNSAudienceConfigParameter[] res = agent.GetMyConfigParameters();</code></pre>\n"
+- uid: CRMScript.NetServer.NSAudienceAgent.GetMyConfigParameterValue
+  commentId: M:CRMScript.NetServer.NSAudienceAgent.GetMyConfigParameterValue
+  id: 'GetMyConfigParameterValue'
+  so.intellisense: NSAudienceAgent.GetMyConfigParameterValue
+  langs:
+  - crmscript
+  name: 'GetMyConfigParameterValue'
+  nameWithType: NSAudienceAgent.GetMyConfigParameterValue
+  fullName: CRMScript.NetServer.NSAudienceAgent.GetMyConfigParameterValue
+  type: Method
+  summary: "\nGets the string value of an Audience configuration parameter belonging to the currently logged on user with the specified configuration parameter name.\n"
+  example: 
+  - "\n<pre><code>NSAudienceAgent agent;\nString parameterName;\nString res = agent.GetMyConfigParameterValue(parameterName);</code></pre>\n"
+- uid: CRMScript.NetServer.NSAudienceAgent.#ctor
+  commentId: M:CRMScript.NetServer.NSAudienceAgent.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSAudienceAgent
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSAudienceAgent.#ctor
+  fullName: CRMScript.NetServer.NSAudienceAgent.#ctor
+  type: Method
+  summary: "\nServices specific to the Audience client.\n"
+  example: 
+  - "\n<pre><code>NSAudienceAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSAudienceAgent.SaveAudienceLayoutEntity
+  commentId: M:CRMScript.NetServer.NSAudienceAgent.SaveAudienceLayoutEntity
+  id: 'SaveAudienceLayoutEntity'
+  so.intellisense: NSAudienceAgent.SaveAudienceLayoutEntity
+  langs:
+  - crmscript
+  name: 'SaveAudienceLayoutEntity'
+  nameWithType: NSAudienceAgent.SaveAudienceLayoutEntity
+  fullName: CRMScript.NetServer.NSAudienceAgent.SaveAudienceLayoutEntity
+  type: Method
+  summary: "\nCRMScript method in the NSAudienceAgent class that creates or updates an NSAudienceLayoutEntitySaves an<code>NSAudienceLayoutEntity</code>. If the ID is 0, it creates a new entity. Otherwise, if the NSAudienceLayoutEntity exists, it will be updated.<p></p>\nReturns the new or updated NSAudienceLayoutEntity<p></p>\n<code>NSAudienceLayoutEntity SaveAudienceLayoutEntity(NSAudienceLayoutEntity audienceLayoutEntity)</code>\n"
+  example: 
+  - "\n<pre><code>NSAudience agent;\nNSAudienceLayoutEntity thing = agent.CreateDefaultAudienceLayoutEntity();\nthing = agent.SaveAudienceLayoutEntity(thing);</code></pre>\n"
+- uid: CRMScript.NetServer.NSAudienceAgent.SaveConfigParameter
+  commentId: M:CRMScript.NetServer.NSAudienceAgent.SaveConfigParameter
+  id: 'SaveConfigParameter'
+  so.intellisense: NSAudienceAgent.SaveConfigParameter
+  langs:
+  - crmscript
+  name: 'SaveConfigParameter'
+  nameWithType: NSAudienceAgent.SaveConfigParameter
+  fullName: CRMScript.NetServer.NSAudienceAgent.SaveConfigParameter
+  type: Method
+  summary: "\nSaves an Audience configuration parameter belonging to a Audience layout\n"
+  example: 
+  - "\n<pre><code>NSAudienceAgent agent;\nString layoutName;\nNSAudienceConfigParameter configParameter;\nNSAudienceConfigParameter res = agent.SaveConfigParameter(layoutName, configParameter);</code></pre>\n"
+- uid: CRMScript.NetServer.NSAudienceAgent.SetDefaultCountryFlag
+  commentId: M:CRMScript.NetServer.NSAudienceAgent.SetDefaultCountryFlag
+  id: 'SetDefaultCountryFlag'
+  so.intellisense: NSAudienceAgent.SetDefaultCountryFlag
+  langs:
+  - crmscript
+  name: 'SetDefaultCountryFlag'
+  nameWithType: NSAudienceAgent.SetDefaultCountryFlag
+  fullName: CRMScript.NetServer.NSAudienceAgent.SetDefaultCountryFlag
+  type: Method
+  summary: "\nStores the default country flag image that is displayed in Audience when no person image is found. The image is set on a specific Audience layout instance.\n"
+  example: 
+- uid: CRMScript.NetServer.NSAudienceAgent.SetDefaultPersonImage
+  commentId: M:CRMScript.NetServer.NSAudienceAgent.SetDefaultPersonImage
+  id: 'SetDefaultPersonImage'
+  so.intellisense: NSAudienceAgent.SetDefaultPersonImage
+  langs:
+  - crmscript
+  name: 'SetDefaultPersonImage'
+  nameWithType: NSAudienceAgent.SetDefaultPersonImage
+  fullName: CRMScript.NetServer.NSAudienceAgent.SetDefaultPersonImage
+  type: Method
+  summary: "\nStores the default person (sales rep) image that is displayed in Audience when no person image is found. The image is set on a specific Audience layout instance.\n"
+  example: 
+- uid: CRMScript.NetServer.NSAudienceAgent.SetDefaultProjectImage
+  commentId: M:CRMScript.NetServer.NSAudienceAgent.SetDefaultProjectImage
+  id: 'SetDefaultProjectImage'
+  so.intellisense: NSAudienceAgent.SetDefaultProjectImage
+  langs:
+  - crmscript
+  name: 'SetDefaultProjectImage'
+  nameWithType: NSAudienceAgent.SetDefaultProjectImage
+  fullName: CRMScript.NetServer.NSAudienceAgent.SetDefaultProjectImage
+  type: Method
+  summary: "\nStores the default project or event image that is displayed in Audience when no project/event image is found. The image is set on a specific Audience layout instance.\n"
+  example: 
+- uid: CRMScript.NetServer.NSAudienceAgent.SetLogoImage
+  commentId: M:CRMScript.NetServer.NSAudienceAgent.SetLogoImage
+  id: 'SetLogoImage'
+  so.intellisense: NSAudienceAgent.SetLogoImage
+  langs:
+  - crmscript
+  name: 'SetLogoImage'
+  nameWithType: NSAudienceAgent.SetLogoImage
+  fullName: CRMScript.NetServer.NSAudienceAgent.SetLogoImage
+  type: Method
+  summary: 
+  example: 
 references:
 - uid: CRMScript.NetServer.NSAudienceAgent
   commentId: T:CRMScript.NetServer.NSAudienceAgent

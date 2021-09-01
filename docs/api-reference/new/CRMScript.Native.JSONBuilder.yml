@@ -7,6 +7,17 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.Native.JSONBuilder.addBoolean
+  - CRMScript.Native.JSONBuilder.addFloat
+  - CRMScript.Native.JSONBuilder.addInteger
+  - CRMScript.Native.JSONBuilder.addString
+  - CRMScript.Native.JSONBuilder.finalize
+  - CRMScript.Native.JSONBuilder.getString
+  - CRMScript.Native.JSONBuilder.#ctor
+  - CRMScript.Native.JSONBuilder.popLevel
+  - CRMScript.Native.JSONBuilder.pushArray
+  - CRMScript.Native.JSONBuilder.pushObject
+  - CRMScript.Native.JSONBuilder.setPrettyPrint
   name: JSONBuilder
   nameWithType: JSONBuilder
   fullName: CRMScript.Native.JSONBuilder
@@ -14,6 +25,139 @@ items:
   summary: "\nThe JSONBuilder class simplifies building JSON hierarchies. The result will be a string in correct JSON format, with string values properly escaped. This class is useful e.g. in combination with the HTTP class to make REST-calls.\n"
   example: 
   - "\n<pre><code>JSONBuilder jb;\njb.pushObject(&quot;&quot;);\njb.pushArray(&quot;persons&quot;);\n\njb.pushObject(&quot;&quot;);\njb.addString(&quot;firstname&quot;, &quot;John&quot;);\njb.addInteger(&quot;age&quot;, 40);\njb.popLevel();\n\njb.pushObject(&quot;&quot;);\njb.addString(&quot;firstname&quot;, &quot;Peter&quot;);\njb.addInteger(&quot;age&quot;, 34);\njb.popLevel();\n\njb.popLevel();\njb.popLevel(); // jb.finalize() could be used to pop all levels</code></pre>\n"
+- uid: CRMScript.Native.JSONBuilder.addBoolean
+  commentId: M:CRMScript.Native.JSONBuilder.addBoolean
+  id: 'addBoolean'
+  so.intellisense: JSONBuilder.addBoolean
+  langs:
+  - crmscript
+  name: 'addBoolean'
+  nameWithType: JSONBuilder.addBoolean
+  fullName: CRMScript.Native.JSONBuilder.addBoolean
+  type: Method
+  summary: "\nAdds a boolean value to the current scope. If the current scope is an object, you must supply a key. If the current scope is an array, key must be empty.\n"
+  example: 
+- uid: CRMScript.Native.JSONBuilder.addFloat
+  commentId: M:CRMScript.Native.JSONBuilder.addFloat
+  id: 'addFloat'
+  so.intellisense: JSONBuilder.addFloat
+  langs:
+  - crmscript
+  name: 'addFloat'
+  nameWithType: JSONBuilder.addFloat
+  fullName: CRMScript.Native.JSONBuilder.addFloat
+  type: Method
+  summary: "\nAdds a float value to the current scope. If the current scope is an object, you must supply a key. If the current scope is an array, key must be empty.\n"
+  example: 
+- uid: CRMScript.Native.JSONBuilder.addInteger
+  commentId: M:CRMScript.Native.JSONBuilder.addInteger
+  id: 'addInteger'
+  so.intellisense: JSONBuilder.addInteger
+  langs:
+  - crmscript
+  name: 'addInteger'
+  nameWithType: JSONBuilder.addInteger
+  fullName: CRMScript.Native.JSONBuilder.addInteger
+  type: Method
+  summary: "\nAdds an integer value to the current scope. If the current scope is an object, you must supply a key. If the current scope is an array, key must be empty.\n"
+  example: 
+- uid: CRMScript.Native.JSONBuilder.addString
+  commentId: M:CRMScript.Native.JSONBuilder.addString
+  id: 'addString'
+  so.intellisense: JSONBuilder.addString
+  langs:
+  - crmscript
+  name: 'addString'
+  nameWithType: JSONBuilder.addString
+  fullName: CRMScript.Native.JSONBuilder.addString
+  type: Method
+  summary: "\nAdds a string value to the current scope. If the current scope is an object, you must supply a key. If the current scope is an array, key must be empty. The value does not need to be escaped, it will be escaped by JSONBuilder.\n"
+  example: 
+- uid: CRMScript.Native.JSONBuilder.finalize
+  commentId: M:CRMScript.Native.JSONBuilder.finalize
+  id: 'finalize'
+  so.intellisense: JSONBuilder.finalize
+  langs:
+  - crmscript
+  name: 'finalize'
+  nameWithType: JSONBuilder.finalize
+  fullName: CRMScript.Native.JSONBuilder.finalize
+  type: Method
+  summary: "\nPops all levels out to the root. You can call this function instead of multiple<code>popLevel()</code>if you are at then end of your structure.\n"
+  example: 
+- uid: CRMScript.Native.JSONBuilder.getString
+  commentId: M:CRMScript.Native.JSONBuilder.getString
+  id: 'getString'
+  so.intellisense: JSONBuilder.getString
+  langs:
+  - crmscript
+  name: 'getString'
+  nameWithType: JSONBuilder.getString
+  fullName: CRMScript.Native.JSONBuilder.getString
+  type: Method
+  summary: "\nReturns the JSON-formatted string that has been built by all push* and add* methods.\n"
+  example: 
+- uid: CRMScript.Native.JSONBuilder.#ctor
+  commentId: M:CRMScript.Native.JSONBuilder.#ctor
+  id: '#ctor'
+  so.intellisense: Void.JSONBuilder
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: JSONBuilder.#ctor
+  fullName: CRMScript.Native.JSONBuilder.#ctor
+  type: Method
+  summary: "\nThe JSONBuilder class simplifies building JSON hierarchies. The result will be a string in correct JSON format, with string values properly escaped. This class is useful e.g. in combination with the HTTP class to make REST-calls.\n"
+  example: 
+  - "\n<pre><code>JSONBuilder jb;\njb.pushObject(&quot;&quot;);\njb.pushArray(&quot;persons&quot;);\n\njb.pushObject(&quot;&quot;);\njb.addString(&quot;firstname&quot;, &quot;John&quot;);\njb.addInteger(&quot;age&quot;, 40);\njb.popLevel();\n\njb.pushObject(&quot;&quot;);\njb.addString(&quot;firstname&quot;, &quot;Peter&quot;);\njb.addInteger(&quot;age&quot;, 34);\njb.popLevel();\n\njb.popLevel();\njb.popLevel(); // jb.finalize() could be used to pop all levels</code></pre>\n"
+- uid: CRMScript.Native.JSONBuilder.popLevel
+  commentId: M:CRMScript.Native.JSONBuilder.popLevel
+  id: 'popLevel'
+  so.intellisense: JSONBuilder.popLevel
+  langs:
+  - crmscript
+  name: 'popLevel'
+  nameWithType: JSONBuilder.popLevel
+  fullName: CRMScript.Native.JSONBuilder.popLevel
+  type: Method
+  summary: "\nPops a level (i.e. closes an array or an object) in the JSONBuilder. Look at the root example for this class.\n"
+  example: 
+- uid: CRMScript.Native.JSONBuilder.pushArray
+  commentId: M:CRMScript.Native.JSONBuilder.pushArray
+  id: 'pushArray'
+  so.intellisense: JSONBuilder.pushArray
+  langs:
+  - crmscript
+  name: 'pushArray'
+  nameWithType: JSONBuilder.pushArray
+  fullName: CRMScript.Native.JSONBuilder.pushArray
+  type: Method
+  summary: "\nAdds an array to the JSONBuilder. Subsequent methods will add members inside the array. Normally, an array will be named (because it will be a named variable in the parent scope), except for when the array is the root of the JSON structure.\n"
+  example: 
+- uid: CRMScript.Native.JSONBuilder.pushObject
+  commentId: M:CRMScript.Native.JSONBuilder.pushObject
+  id: 'pushObject'
+  so.intellisense: JSONBuilder.pushObject
+  langs:
+  - crmscript
+  name: 'pushObject'
+  nameWithType: JSONBuilder.pushObject
+  fullName: CRMScript.Native.JSONBuilder.pushObject
+  type: Method
+  summary: "\nAdds an object to the JSONBuilder. Subsequent methods will add members inside the object. Normally, an object will be named (because it will be a named variable in the parent scope), except for when the object is the root of the JSON structure.\n"
+  example: 
+- uid: CRMScript.Native.JSONBuilder.setPrettyPrint
+  commentId: M:CRMScript.Native.JSONBuilder.setPrettyPrint
+  id: 'setPrettyPrint'
+  so.intellisense: JSONBuilder.setPrettyPrint
+  langs:
+  - crmscript
+  name: 'setPrettyPrint'
+  nameWithType: JSONBuilder.setPrettyPrint
+  fullName: CRMScript.Native.JSONBuilder.setPrettyPrint
+  type: Method
+  summary: "\nSets whether the JSON should be pretty formatted or not. Indent &gt; 0 will cause pretty printing, where indent is the number of spaces to indent a block level with.\n"
+  example: 
 references:
 - uid: CRMScript.Native.JSONBuilder
   commentId: T:CRMScript.Native.JSONBuilder

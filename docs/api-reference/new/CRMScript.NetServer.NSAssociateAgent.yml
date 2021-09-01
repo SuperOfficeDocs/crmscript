@@ -7,6 +7,14 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSAssociateAgent.GetAssociate
+  - CRMScript.NetServer.NSAssociateAgent.GetAssociateByPersonId
+  - CRMScript.NetServer.NSAssociateAgent.GetAssociateList
+  - CRMScript.NetServer.NSAssociateAgent.GetAssociatesByGroup
+  - CRMScript.NetServer.NSAssociateAgent.GetNote
+  - CRMScript.NetServer.NSAssociateAgent.LogOffWindowsUsers
+  - CRMScript.NetServer.NSAssociateAgent.#ctor
+  - CRMScript.NetServer.NSAssociateAgent.SaveNote
   name: NSAssociateAgent
   nameWithType: NSAssociateAgent
   fullName: CRMScript.NetServer.NSAssociateAgent
@@ -14,6 +22,109 @@ items:
   summary: "\nAssociate utilities, notes, not user admininstration.\n"
   example: 
   - "\n<pre><code>NSAssociateAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSAssociateAgent.GetAssociate
+  commentId: M:CRMScript.NetServer.NSAssociateAgent.GetAssociate
+  id: 'GetAssociate'
+  so.intellisense: NSAssociateAgent.GetAssociate
+  langs:
+  - crmscript
+  name: 'GetAssociate'
+  nameWithType: NSAssociateAgent.GetAssociate
+  fullName: CRMScript.NetServer.NSAssociateAgent.GetAssociate
+  type: Method
+  summary: "\nGets a NSAssociate object.\n"
+  example: 
+  - "\n<pre><code>NSAssociateAgent agent;\nNSAssociate thing = agent.GetAssociate(123);</code></pre>\n"
+- uid: CRMScript.NetServer.NSAssociateAgent.GetAssociateByPersonId
+  commentId: M:CRMScript.NetServer.NSAssociateAgent.GetAssociateByPersonId
+  id: 'GetAssociateByPersonId'
+  so.intellisense: NSAssociateAgent.GetAssociateByPersonId
+  langs:
+  - crmscript
+  name: 'GetAssociateByPersonId'
+  nameWithType: NSAssociateAgent.GetAssociateByPersonId
+  fullName: CRMScript.NetServer.NSAssociateAgent.GetAssociateByPersonId
+  type: Method
+  summary: "\nReturns the associate that belongs to this person if the person is an associate.\n"
+  example: 
+  - "\n<pre><code>NSAssociateAgent agent;\nInteger personId;\nNSAssociate res = agent.GetAssociateByPersonId(personId);</code></pre>\n"
+- uid: CRMScript.NetServer.NSAssociateAgent.GetAssociateList
+  commentId: M:CRMScript.NetServer.NSAssociateAgent.GetAssociateList
+  id: 'GetAssociateList'
+  so.intellisense: NSAssociateAgent.GetAssociateList
+  langs:
+  - crmscript
+  name: 'GetAssociateList'
+  nameWithType: NSAssociateAgent.GetAssociateList
+  fullName: CRMScript.NetServer.NSAssociateAgent.GetAssociateList
+  type: Method
+  summary: "\nCRMScript method in the NSAssociateAgent class that retrieves a list of associatesGets an array of Associate objects.<p></p>\n<code>NSAssociate[] GetAssociateList(Integer[] associateIds)</code>\n"
+  example: 
+  - "\n<pre><code>Integer[] ids;\nNSAssociateAgent agent;\nagent.GetAssociateList(ids);</code></pre>\n"
+- uid: CRMScript.NetServer.NSAssociateAgent.GetAssociatesByGroup
+  commentId: M:CRMScript.NetServer.NSAssociateAgent.GetAssociatesByGroup
+  id: 'GetAssociatesByGroup'
+  so.intellisense: NSAssociateAgent.GetAssociatesByGroup
+  langs:
+  - crmscript
+  name: 'GetAssociatesByGroup'
+  nameWithType: NSAssociateAgent.GetAssociatesByGroup
+  fullName: CRMScript.NetServer.NSAssociateAgent.GetAssociatesByGroup
+  type: Method
+  summary: "\nMethod that returns a array of associate , based on DiaryGroupType and groupId. The different types are, Userdefined, Usergroup and ResourceHeadings\n"
+  example: 
+  - "\n<pre><code>NSAssociateAgent agent;\nInteger groupId;\nInteger type;\nNSAssociate[] res = agent.GetAssociatesByGroup(groupId, type);</code></pre>\n"
+- uid: CRMScript.NetServer.NSAssociateAgent.GetNote
+  commentId: M:CRMScript.NetServer.NSAssociateAgent.GetNote
+  id: 'GetNote'
+  so.intellisense: NSAssociateAgent.GetNote
+  langs:
+  - crmscript
+  name: 'GetNote'
+  nameWithType: NSAssociateAgent.GetNote
+  fullName: CRMScript.NetServer.NSAssociateAgent.GetNote
+  type: Method
+  summary: "\nReturns an array of strings(notepad pages).\n"
+  example: 
+  - "\n<pre><code>NSAssociateAgent agent;\nInteger associateId;\nString[] res = agent.GetNote(associateId);</code></pre>\n"
+- uid: CRMScript.NetServer.NSAssociateAgent.LogOffWindowsUsers
+  commentId: M:CRMScript.NetServer.NSAssociateAgent.LogOffWindowsUsers
+  id: 'LogOffWindowsUsers'
+  so.intellisense: NSAssociateAgent.LogOffWindowsUsers
+  langs:
+  - crmscript
+  name: 'LogOffWindowsUsers'
+  nameWithType: NSAssociateAgent.LogOffWindowsUsers
+  fullName: CRMScript.NetServer.NSAssociateAgent.LogOffWindowsUsers
+  type: Method
+  summary: "\nMethod that logs off associates that are logged on to the win client\n"
+  example: 
+  - "\n<pre><code>NSAssociateAgent agent;\nInteger[] associateIds;\nagent.LogOffWindowsUsers(associateIds);</code></pre>\n"
+- uid: CRMScript.NetServer.NSAssociateAgent.#ctor
+  commentId: M:CRMScript.NetServer.NSAssociateAgent.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSAssociateAgent
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSAssociateAgent.#ctor
+  fullName: CRMScript.NetServer.NSAssociateAgent.#ctor
+  type: Method
+  summary: "\nAssociate utilities, notes, not user admininstration.\n"
+  example: 
+  - "\n<pre><code>NSAssociateAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSAssociateAgent.SaveNote
+  commentId: M:CRMScript.NetServer.NSAssociateAgent.SaveNote
+  id: 'SaveNote'
+  so.intellisense: NSAssociateAgent.SaveNote
+  langs:
+  - crmscript
+  name: 'SaveNote'
+  nameWithType: NSAssociateAgent.SaveNote
+  fullName: CRMScript.NetServer.NSAssociateAgent.SaveNote
+  type: Method
+  summary: "\nSaves an array of strings(notepad pages).\n"
+  example: 
 references:
 - uid: CRMScript.NetServer.NSAssociateAgent
   commentId: T:CRMScript.NetServer.NSAssociateAgent

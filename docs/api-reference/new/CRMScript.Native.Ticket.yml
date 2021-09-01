@@ -7,6 +7,24 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.Native.Ticket.addSecondaryCustomers
+  - CRMScript.Native.Ticket.buildEmailSubject
+  - CRMScript.Native.Ticket.checkEscalating
+  - CRMScript.Native.Ticket.delegate
+  - CRMScript.Native.Ticket.getInvolvedOnly
+  - CRMScript.Native.Ticket.getMailFrom
+  - CRMScript.Native.Ticket.getOwnerEmail
+  - CRMScript.Native.Ticket.getOwnerSms
+  - CRMScript.Native.Ticket.getValue
+  - CRMScript.Native.Ticket.load
+  - CRMScript.Native.Ticket.log
+  - CRMScript.Native.Ticket.notifyEmail
+  - CRMScript.Native.Ticket.save
+  - CRMScript.Native.Ticket.sendMessages
+  - CRMScript.Native.Ticket.setValue
+  - CRMScript.Native.Ticket.#ctor
+  - CRMScript.Native.Ticket.toParser
+  - CRMScript.Native.Ticket.toParserRaw
   name: Ticket
   nameWithType: Ticket
   fullName: CRMScript.Native.Ticket
@@ -14,6 +32,233 @@ items:
   summary: "\nClass for representing an eJournal Ticket.\n"
   example: 
   - "\n<pre><code>Ticket t;\n\nt.load(2); // Loads the ticket with id = 2\nprint(t.getValue(&quot;ticketStatus&quot;));\nt.setValue(&quot;title&quot;, &quot;Test&quot;);\nt.setValue(&quot;status&quot;, &quot;1&quot;);\nDateTime d; // Default value for DateTime is now\nt.setValue(&quot;dbiLastModified&quot;, d.toString());\nprint(t.getOwnerEmail()); // Prints name and email of owner</code></pre>\n"
+- uid: CRMScript.Native.Ticket.addSecondaryCustomers
+  commentId: M:CRMScript.Native.Ticket.addSecondaryCustomers
+  id: 'addSecondaryCustomers'
+  so.intellisense: Ticket.addSecondaryCustomers
+  langs:
+  - crmscript
+  name: 'addSecondaryCustomers'
+  nameWithType: Ticket.addSecondaryCustomers
+  fullName: CRMScript.Native.Ticket.addSecondaryCustomers
+  type: Method
+  summary: "\nAdd seconday customers to the ticket.<p></p>\n<ul><li><strong>ids:</strong>A Vector of Strings containing the customerIds to add as secondary customers on the ticket</li></ul>\n"
+  example: 
+- uid: CRMScript.Native.Ticket.buildEmailSubject
+  commentId: M:CRMScript.Native.Ticket.buildEmailSubject
+  id: 'buildEmailSubject'
+  so.intellisense: Ticket.buildEmailSubject
+  langs:
+  - crmscript
+  name: 'buildEmailSubject'
+  nameWithType: Ticket.buildEmailSubject
+  fullName: CRMScript.Native.Ticket.buildEmailSubject
+  type: Method
+  summary: "\nreturns a String composed by the eJournal tag, the ticketId and the title of the ticket<p></p>\n<ul><li><strong>Returns:</strong>a String composed by the eJournal tag, the ticketId and the title of the ticket</li></ul>\n"
+  example: 
+- uid: CRMScript.Native.Ticket.checkEscalating
+  commentId: M:CRMScript.Native.Ticket.checkEscalating
+  id: 'checkEscalating'
+  so.intellisense: Ticket.checkEscalating
+  langs:
+  - crmscript
+  name: 'checkEscalating'
+  nameWithType: Ticket.checkEscalating
+  fullName: CRMScript.Native.Ticket.checkEscalating
+  type: Method
+  summary: "\nThis function does a check according to the ticket's pritority and the input action. The effect of calling this function might be that the escalation stops, restarts or continues.<p></p>\n<ul><li><strong>action:</strong>as an Integer.</li></ul><strong>Possible values:</strong><br />ActionRead = 0,
+ActionChangedOwner = 1,
+ActionNewInfo = 2,
+ActionClosed = 3,
+ActionChangedPriority = 4,
+ActionNew = 5\n"
+  example: 
+- uid: CRMScript.Native.Ticket.delegate
+  commentId: M:CRMScript.Native.Ticket.delegate
+  id: 'delegate'
+  so.intellisense: Ticket.delegate
+  langs:
+  - crmscript
+  name: 'delegate'
+  nameWithType: Ticket.delegate
+  fullName: CRMScript.Native.Ticket.delegate
+  type: Method
+  summary: "\nCRMScript method in the Ticket class that delegates a ticket to a user according to the rules on the categoryDelegates the ticket to a user according to the rules on the category of the ticket. You can optionally specify a user ID<strong>not</strong>to delegate to.<p></p>\n<blockquote>[!NOTE]
+For this function to take effect, you have to call<code>Ticket.save()</code>.<p></p>\n</blockquote>\n"
+  example: 
+- uid: CRMScript.Native.Ticket.getInvolvedOnly
+  commentId: M:CRMScript.Native.Ticket.getInvolvedOnly
+  id: 'getInvolvedOnly'
+  so.intellisense: Ticket.getInvolvedOnly
+  langs:
+  - crmscript
+  name: 'getInvolvedOnly'
+  nameWithType: Ticket.getInvolvedOnly
+  fullName: CRMScript.Native.Ticket.getInvolvedOnly
+  type: Method
+  summary: "\nreturns a comma-separated list of the email-addresses of all customers that is not a connected customer to this ticket, but who has recieved a message on this ticket.<p></p>\n<ul><li><strong>Returns:</strong>a comma-separated list of email-addresses</li></ul>\n"
+  example: 
+- uid: CRMScript.Native.Ticket.getMailFrom
+  commentId: M:CRMScript.Native.Ticket.getMailFrom
+  id: 'getMailFrom'
+  so.intellisense: Ticket.getMailFrom
+  langs:
+  - crmscript
+  name: 'getMailFrom'
+  nameWithType: Ticket.getMailFrom
+  fullName: CRMScript.Native.Ticket.getMailFrom
+  type: Method
+  summary: "\nThis function determines and returns the most appropriate from-address, when sending a mail-message on a ticket.<p></p>\n<ul><li><strong>Returns:</strong>The most appropriate from-address specified on with address, the ticket has arrived on, the category, etc</li></ul>\n"
+  example: 
+- uid: CRMScript.Native.Ticket.getOwnerEmail
+  commentId: M:CRMScript.Native.Ticket.getOwnerEmail
+  id: 'getOwnerEmail'
+  so.intellisense: Ticket.getOwnerEmail
+  langs:
+  - crmscript
+  name: 'getOwnerEmail'
+  nameWithType: Ticket.getOwnerEmail
+  fullName: CRMScript.Native.Ticket.getOwnerEmail
+  type: Method
+  summary: "\nThis function returns the owner of the ticket printed as &quot;Name&quot; &lt;email-addr&gt;.<p></p>\n<ul><li><strong>Returns:</strong>the owners name and email-address</li></ul>\n"
+  example: 
+- uid: CRMScript.Native.Ticket.getOwnerSms
+  commentId: M:CRMScript.Native.Ticket.getOwnerSms
+  id: 'getOwnerSms'
+  so.intellisense: Ticket.getOwnerSms
+  langs:
+  - crmscript
+  name: 'getOwnerSms'
+  nameWithType: Ticket.getOwnerSms
+  fullName: CRMScript.Native.Ticket.getOwnerSms
+  type: Method
+  summary: "\nThis function returns the cellphone number of the owner of the ticket<p></p>\n<ul><li><strong>Returns:</strong>The cellphone number of the owner of the ticket as a String.</li></ul>\n"
+  example: 
+- uid: CRMScript.Native.Ticket.getValue
+  commentId: M:CRMScript.Native.Ticket.getValue
+  id: 'getValue'
+  so.intellisense: Ticket.getValue
+  langs:
+  - crmscript
+  name: 'getValue'
+  nameWithType: Ticket.getValue
+  fullName: CRMScript.Native.Ticket.getValue
+  type: Method
+  summary: "\nGet the value of given column name as a String\n"
+  example: 
+- uid: CRMScript.Native.Ticket.load
+  commentId: M:CRMScript.Native.Ticket.load
+  id: 'load'
+  so.intellisense: Ticket.load
+  langs:
+  - crmscript
+  name: 'load'
+  nameWithType: Ticket.load
+  fullName: CRMScript.Native.Ticket.load
+  type: Method
+  summary: "\nLoad ticket with given id into this object, return true if successful, false otherwise.<p></p>\n<ul><li><strong>the:</strong>id of the ticket to load</li><li><strong>Returns:</strong>true if ticket found and loaded, else false</li></ul>\n"
+  example: 
+- uid: CRMScript.Native.Ticket.log
+  commentId: M:CRMScript.Native.Ticket.log
+  id: 'log'
+  so.intellisense: Ticket.log
+  langs:
+  - crmscript
+  name: 'log'
+  nameWithType: Ticket.log
+  fullName: CRMScript.Native.Ticket.log
+  type: Method
+  summary: "\nCRMScript method in the Ticket class that writes a message to the ticket logWrites the given message to the ticket log. Used for logging changes and events on a ticket<p></p>\nYou can optionally specify who updated the log.\n"
+  example: 
+- uid: CRMScript.Native.Ticket.notifyEmail
+  commentId: M:CRMScript.Native.Ticket.notifyEmail
+  id: 'notifyEmail'
+  so.intellisense: Ticket.notifyEmail
+  langs:
+  - crmscript
+  name: 'notifyEmail'
+  nameWithType: Ticket.notifyEmail
+  fullName: CRMScript.Native.Ticket.notifyEmail
+  type: Method
+  summary: "\nThis function sends a notify-email (a replyTemplate) to the owner of the ticket.
+To use for events like new ticket, new message on ticket etc.<p></p>\n<ul><li><strong>replyTemplateId:</strong>The id of the replyTemplate you want to send.</li><li><strong>Returns:</strong>true if the email was sent successfully, else false.</li></ul>\n"
+  example: 
+- uid: CRMScript.Native.Ticket.save
+  commentId: M:CRMScript.Native.Ticket.save
+  id: 'save'
+  so.intellisense: Ticket.save
+  langs:
+  - crmscript
+  name: 'save'
+  nameWithType: Ticket.save
+  fullName: CRMScript.Native.Ticket.save
+  type: Method
+  summary: "\nCRMScript method in the Ticket class that saves the objectSaves the ticket and returns the database ID of the stored ticket.<p></p>\nYou can optionally specify how to handle read status and escalation.<p></p>\nIn addition, you can also write a message to the ticket log in both cases.\n"
+  example: 
+- uid: CRMScript.Native.Ticket.sendMessages
+  commentId: M:CRMScript.Native.Ticket.sendMessages
+  id: 'sendMessages'
+  so.intellisense: Ticket.sendMessages
+  langs:
+  - crmscript
+  name: 'sendMessages'
+  nameWithType: Ticket.sendMessages
+  fullName: CRMScript.Native.Ticket.sendMessages
+  type: Method
+  summary: "\nWill send the given messages just like the forward ticket functionality in the GUI. The forwarded messages are separated by a line, and the comment is placed on top of the mail.<p></p>\n<ul><li><strong>subject:</strong>The mail subject, maybe ticket.title.</li><li><strong>recipients:</strong>String matrix with recepients</li><li><strong>fromCust:</strong>Email address from ticket or customer</li><li><strong>messages:</strong>Comma separated list of message id's to forward</li><li><strong>msgId:</strong>Id of added &quot;forward&quot; message or &quot;-1&quot;</li><li><strong>comment:</strong>A comment that will be above the forwarded messages.</li><li><strong>Returns:</strong>True if success</li></ul>\n"
+  example: 
+- uid: CRMScript.Native.Ticket.setValue
+  commentId: M:CRMScript.Native.Ticket.setValue
+  id: 'setValue'
+  so.intellisense: Ticket.setValue
+  langs:
+  - crmscript
+  name: 'setValue'
+  nameWithType: Ticket.setValue
+  fullName: CRMScript.Native.Ticket.setValue
+  type: Method
+  summary: "\nSets column colName to the given value.
+Obs: For this to actually affect the ticket, you will have to use the function<code>save()</code>after you have set all the values you want.\n"
+  example: 
+- uid: CRMScript.Native.Ticket.#ctor
+  commentId: M:CRMScript.Native.Ticket.#ctor
+  id: '#ctor'
+  so.intellisense: Void.Ticket
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: Ticket.#ctor
+  fullName: CRMScript.Native.Ticket.#ctor
+  type: Method
+  summary: "\nClass for representing an eJournal Ticket.\n"
+  example: 
+  - "\n<pre><code>Ticket t;\n\nt.load(2); // Loads the ticket with id = 2\nprint(t.getValue(&quot;ticketStatus&quot;));\nt.setValue(&quot;title&quot;, &quot;Test&quot;);\nt.setValue(&quot;status&quot;, &quot;1&quot;);\nDateTime d; // Default value for DateTime is now\nt.setValue(&quot;dbiLastModified&quot;, d.toString());\nprint(t.getOwnerEmail()); // Prints name and email of owner</code></pre>\n"
+- uid: CRMScript.Native.Ticket.toParser
+  commentId: M:CRMScript.Native.Ticket.toParser
+  id: 'toParser'
+  so.intellisense: Ticket.toParser
+  langs:
+  - crmscript
+  name: 'toParser'
+  nameWithType: Ticket.toParser
+  fullName: CRMScript.Native.Ticket.toParser
+  type: Method
+  summary: "\nThis function will fill the variable space of theParser with all values of the ticket.
+As opposed to the function<code>toParserRaw()</code>, the String variables title and author are in html.<p></p>\n<ul><li><strong>theParser:</strong>The parser who will be filled with ticket-values</li></ul>\n"
+  example: 
+- uid: CRMScript.Native.Ticket.toParserRaw
+  commentId: M:CRMScript.Native.Ticket.toParserRaw
+  id: 'toParserRaw'
+  so.intellisense: Ticket.toParserRaw
+  langs:
+  - crmscript
+  name: 'toParserRaw'
+  nameWithType: Ticket.toParserRaw
+  fullName: CRMScript.Native.Ticket.toParserRaw
+  type: Method
+  summary: "\nThis function fills theParser with the values of the ticket.
+As opposed to the function<code>toParser()</code>who set several of the String-values as html, all these variables will be in plain text.<p></p>\n<ul><li><strong>theParser:</strong>A parserobject, who will be filled with the values of the ticket</li></ul>\n"
+  example: 
 references:
 - uid: CRMScript.Native.Ticket
   commentId: T:CRMScript.Native.Ticket

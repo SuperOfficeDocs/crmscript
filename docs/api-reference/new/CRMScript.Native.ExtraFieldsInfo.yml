@@ -7,6 +7,20 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.Native.ExtraFieldsInfo.eof
+  - CRMScript.Native.ExtraFieldsInfo.#ctor
+  - CRMScript.Native.ExtraFieldsInfo.getChildrenFields
+  - CRMScript.Native.ExtraFieldsInfo.getCompanyChildrenFields
+  - CRMScript.Native.ExtraFieldsInfo.getCustomerChildrenFields
+  - CRMScript.Native.ExtraFieldsInfo.getDisplayField
+  - CRMScript.Native.ExtraFieldsInfo.getExtraFields
+  - CRMScript.Native.ExtraFieldsInfo.getFieldName
+  - CRMScript.Native.ExtraFieldsInfo.getFlags
+  - CRMScript.Native.ExtraFieldsInfo.getName
+  - CRMScript.Native.ExtraFieldsInfo.getParam
+  - CRMScript.Native.ExtraFieldsInfo.getTableName
+  - CRMScript.Native.ExtraFieldsInfo.getTicketChildrenFields
+  - CRMScript.Native.ExtraFieldsInfo.next
   name: ExtraFieldsInfo
   nameWithType: ExtraFieldsInfo
   fullName: CRMScript.Native.ExtraFieldsInfo
@@ -14,6 +28,183 @@ items:
   summary: "\nWith this class, you can retrieve meta-information about an extra field. The class will only retrieve information, thus it is not possible to change an extra field from this class.\n"
   example: 
   - "\n<pre><code>ExtraFieldsInfo e;\n\ne.getExtraFields(&quot;person&quot;); // Finds extraFields in table person</code></pre>\n"
+- uid: CRMScript.Native.ExtraFieldsInfo.eof
+  commentId: M:CRMScript.Native.ExtraFieldsInfo.eof
+  id: 'eof'
+  so.intellisense: ExtraFieldsInfo.eof
+  langs:
+  - crmscript
+  name: 'eof'
+  nameWithType: ExtraFieldsInfo.eof
+  fullName: CRMScript.Native.ExtraFieldsInfo.eof
+  type: Method
+  summary: "\nThis function checks if there are no more fields in the result.\n"
+  example: 
+  - "\n<pre><code>ExtraFieldsInfo efi;\n\nfor (efi.getTicketChildrenFields(); !efi.eof(); efi.next())\n{\n  // do something with information from efi\n}</code></pre>\n"
+- uid: CRMScript.Native.ExtraFieldsInfo.#ctor
+  commentId: M:CRMScript.Native.ExtraFieldsInfo.#ctor
+  id: '#ctor'
+  so.intellisense: Void.ExtraFieldsInfo
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: ExtraFieldsInfo.#ctor
+  fullName: CRMScript.Native.ExtraFieldsInfo.#ctor
+  type: Method
+  summary: "\nWith this class, you can retrieve meta-information about an extra field. The class will only retrieve information, thus it is not possible to change an extra field from this class.\n"
+  example: 
+  - "\n<pre><code>ExtraFieldsInfo e;\n\ne.getExtraFields(&quot;person&quot;); // Finds extraFields in table person</code></pre>\n"
+- uid: CRMScript.Native.ExtraFieldsInfo.getChildrenFields
+  commentId: M:CRMScript.Native.ExtraFieldsInfo.getChildrenFields
+  id: 'getChildrenFields'
+  so.intellisense: ExtraFieldsInfo.getChildrenFields
+  langs:
+  - crmscript
+  name: 'getChildrenFields'
+  nameWithType: ExtraFieldsInfo.getChildrenFields
+  fullName: CRMScript.Native.ExtraFieldsInfo.getChildrenFields
+  type: Method
+  summary: "\nThis function loads extra fields of the type given in the first parameter. If the type is an extra table relation, the second pointer is the id of the extra table it points to.<p></p>\nUnless type is 20 (extratable) the second parameter won't do anything.<p></p>\nIf you want all extra fields pointing to the extra table with id 5, you'd call getChildrenFields(20, 5)<p></p>\nIf you want all extra fields of type Dat you'd call getChildrenFields(3, 0)\n"
+  example: 
+- uid: CRMScript.Native.ExtraFieldsInfo.getCompanyChildrenFields
+  commentId: M:CRMScript.Native.ExtraFieldsInfo.getCompanyChildrenFields
+  id: 'getCompanyChildrenFields'
+  so.intellisense: ExtraFieldsInfo.getCompanyChildrenFields
+  langs:
+  - crmscript
+  name: 'getCompanyChildrenFields'
+  nameWithType: ExtraFieldsInfo.getCompanyChildrenFields
+  fullName: CRMScript.Native.ExtraFieldsInfo.getCompanyChildrenFields
+  type: Method
+  summary: "\nThis is a helper function for getting company relation fields. It is equivalent to calling getChildrenFields(17, 0)\n"
+  example: 
+- uid: CRMScript.Native.ExtraFieldsInfo.getCustomerChildrenFields
+  commentId: M:CRMScript.Native.ExtraFieldsInfo.getCustomerChildrenFields
+  id: 'getCustomerChildrenFields'
+  so.intellisense: ExtraFieldsInfo.getCustomerChildrenFields
+  langs:
+  - crmscript
+  name: 'getCustomerChildrenFields'
+  nameWithType: ExtraFieldsInfo.getCustomerChildrenFields
+  fullName: CRMScript.Native.ExtraFieldsInfo.getCustomerChildrenFields
+  type: Method
+  summary: "\nThis is a helper function for getting customer relation fields. It is equivalent to calling getChildrenFields(16, 0)\n"
+  example: 
+- uid: CRMScript.Native.ExtraFieldsInfo.getDisplayField
+  commentId: M:CRMScript.Native.ExtraFieldsInfo.getDisplayField
+  id: 'getDisplayField'
+  so.intellisense: ExtraFieldsInfo.getDisplayField
+  langs:
+  - crmscript
+  name: 'getDisplayField'
+  nameWithType: ExtraFieldsInfo.getDisplayField
+  fullName: CRMScript.Native.ExtraFieldsInfo.getDisplayField
+  type: Method
+  summary: "\nThis function returns the display field of the current field. The display field is a format of the field that can be used to address the field in functions such as SearchEngine.\n"
+  example: 
+  - "\n<pre><code>ExtraFieldsInfo e;\n\ne.getExtraFields(&quot;person&quot;);\nprint(e.getDisplayField());</code></pre>\n"
+- uid: CRMScript.Native.ExtraFieldsInfo.getExtraFields
+  commentId: M:CRMScript.Native.ExtraFieldsInfo.getExtraFields
+  id: 'getExtraFields'
+  so.intellisense: ExtraFieldsInfo.getExtraFields
+  langs:
+  - crmscript
+  name: 'getExtraFields'
+  nameWithType: ExtraFieldsInfo.getExtraFields
+  fullName: CRMScript.Native.ExtraFieldsInfo.getExtraFields
+  type: Method
+  summary: "\nThis method will get extrafields related to the given table. Using this method will make it possible to access the information in the extrafields by using the other functions in the class.\n"
+  example: 
+  - "\n<pre><code>ExtraFieldsInfo e;\n\ne.getExtraFields(&quot;person&quot;);</code></pre>\n"
+- uid: CRMScript.Native.ExtraFieldsInfo.getFieldName
+  commentId: M:CRMScript.Native.ExtraFieldsInfo.getFieldName
+  id: 'getFieldName'
+  so.intellisense: ExtraFieldsInfo.getFieldName
+  langs:
+  - crmscript
+  name: 'getFieldName'
+  nameWithType: ExtraFieldsInfo.getFieldName
+  fullName: CRMScript.Native.ExtraFieldsInfo.getFieldName
+  type: Method
+  summary: "\nThis function returns the field name of the current field.\n"
+  example: 
+  - "\nThis code prints all field names of extra fields:<p></p>\n<pre><code>ExtraFieldsInfo e;\n\ne.getExtraFields(&quot;person&quot;);\n\nwhile(!e.eof()){\n  print(e.getFieldName());\n  e.next();\n}</code></pre>\n"
+- uid: CRMScript.Native.ExtraFieldsInfo.getFlags
+  commentId: M:CRMScript.Native.ExtraFieldsInfo.getFlags
+  id: 'getFlags'
+  so.intellisense: ExtraFieldsInfo.getFlags
+  langs:
+  - crmscript
+  name: 'getFlags'
+  nameWithType: ExtraFieldsInfo.getFlags
+  fullName: CRMScript.Native.ExtraFieldsInfo.getFlags
+  type: Method
+  summary: "\nReturns the flags for the current extra field.<p></p>\nThese can be accessed by wrapping the returned Integer in a FHBitSet.\n"
+  example: 
+  - "\n--<p></p>\n<pre><code>FHBitSet flags;\n\nflags.set(extraField.getFlags());\n\nflags.getBitNo(17);  // returns true if the extra field cannot be empty</code></pre>--\n"
+- uid: CRMScript.Native.ExtraFieldsInfo.getName
+  commentId: M:CRMScript.Native.ExtraFieldsInfo.getName
+  id: 'getName'
+  so.intellisense: ExtraFieldsInfo.getName
+  langs:
+  - crmscript
+  name: 'getName'
+  nameWithType: ExtraFieldsInfo.getName
+  fullName: CRMScript.Native.ExtraFieldsInfo.getName
+  type: Method
+  summary: "\nThis function returns the descriptive name (not the database name) of the current field.\n"
+  example: 
+  - "\nThis code prints all names of extra fields:<p></p>\n<pre><code>ExtraFieldsInfo e;\n\ne.getExtraFields(&quot;person&quot;);\n\nwhile(!e.eof()) {\n  print(e.getName());\n  e.next();\n}</code></pre>\n"
+- uid: CRMScript.Native.ExtraFieldsInfo.getParam
+  commentId: M:CRMScript.Native.ExtraFieldsInfo.getParam
+  id: 'getParam'
+  so.intellisense: ExtraFieldsInfo.getParam
+  langs:
+  - crmscript
+  name: 'getParam'
+  nameWithType: ExtraFieldsInfo.getParam
+  fullName: CRMScript.Native.ExtraFieldsInfo.getParam
+  type: Method
+  summary: "\nThis function returns the value of the given parameter.\n"
+  example: 
+- uid: CRMScript.Native.ExtraFieldsInfo.getTableName
+  commentId: M:CRMScript.Native.ExtraFieldsInfo.getTableName
+  id: 'getTableName'
+  so.intellisense: ExtraFieldsInfo.getTableName
+  langs:
+  - crmscript
+  name: 'getTableName'
+  nameWithType: ExtraFieldsInfo.getTableName
+  fullName: CRMScript.Native.ExtraFieldsInfo.getTableName
+  type: Method
+  summary: "\nThis function returns the name of the table the current field belongs to.\n"
+  example: 
+  - "\n<pre><code>ExtraFieldsInfo e;\n\ne.getExtraFields(&quot;person&quot;);\nprint(e.TableName());\n\nWill print &quot;person&quot;.</code></pre>\n"
+- uid: CRMScript.Native.ExtraFieldsInfo.getTicketChildrenFields
+  commentId: M:CRMScript.Native.ExtraFieldsInfo.getTicketChildrenFields
+  id: 'getTicketChildrenFields'
+  so.intellisense: ExtraFieldsInfo.getTicketChildrenFields
+  langs:
+  - crmscript
+  name: 'getTicketChildrenFields'
+  nameWithType: ExtraFieldsInfo.getTicketChildrenFields
+  fullName: CRMScript.Native.ExtraFieldsInfo.getTicketChildrenFields
+  type: Method
+  summary: "\nThis is a helper function for getting ticket relation fields. It is equivalent to calling getChildrenFields(18, 0)\n"
+  example: 
+- uid: CRMScript.Native.ExtraFieldsInfo.next
+  commentId: M:CRMScript.Native.ExtraFieldsInfo.next
+  id: 'next'
+  so.intellisense: ExtraFieldsInfo.next
+  langs:
+  - crmscript
+  name: 'next'
+  nameWithType: ExtraFieldsInfo.next
+  fullName: CRMScript.Native.ExtraFieldsInfo.next
+  type: Method
+  summary: "\nThis function moves to the next field in the result.\n"
+  example: 
+  - "\n<pre><code>ExtraFieldsInfo efi;\n\nfor (efi.getTicketChildrenFields(); !efi.eof(); efi.next())\n{\n  // do something with information from efi\n}</code></pre>\n"
 references:
 - uid: CRMScript.Native.ExtraFieldsInfo
   commentId: T:CRMScript.Native.ExtraFieldsInfo

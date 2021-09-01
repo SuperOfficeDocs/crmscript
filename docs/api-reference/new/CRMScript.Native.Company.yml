@@ -7,6 +7,18 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.Native.Company.checkFieldRights
+  - CRMScript.Native.Company.checkTableRights
+  - CRMScript.Native.Company.#ctor
+  - CRMScript.Native.Company.findFromDomain
+  - CRMScript.Native.Company.getFormattedAddress
+  - CRMScript.Native.Company.getValue
+  - CRMScript.Native.Company.load
+  - CRMScript.Native.Company.loadFromAgentAndKey
+  - CRMScript.Native.Company.save
+  - CRMScript.Native.Company.setFormattedAddress
+  - CRMScript.Native.Company.setValue
+  - CRMScript.Native.Company.toParser
   name: Company
   nameWithType: Company
   fullName: CRMScript.Native.Company
@@ -14,6 +26,157 @@ items:
   summary: "\nClass for representing a company.\n"
   example: 
   - "\n<pre><code>Company c;\n\nc.load(2); // Loads company with ID = 2\nprint(c.getValue(&quot;primContact&quot;));\nc.setValue(&quot;name&quot;, &quot;SuperOffice&quot;);\nBool b = c.checkFieldRights(&quot;contact&quot;, &quot;read&quot;);\nprint(b.toString());\nc.save();</code></pre>\n"
+- uid: CRMScript.Native.Company.checkFieldRights
+  commentId: M:CRMScript.Native.Company.checkFieldRights
+  id: 'checkFieldRights'
+  so.intellisense: Company.checkFieldRights
+  langs:
+  - crmscript
+  name: 'checkFieldRights'
+  nameWithType: Company.checkFieldRights
+  fullName: CRMScript.Native.Company.checkFieldRights
+  type: Method
+  summary: "\nUse this function to see if the current user has access to the field.<p></p>\nfieldRight might be:<p></p>\n<ul><li>read</li><li>write</li></ul>\n"
+  example: 
+  - "\n<pre><code>Company c;\n\nc.load(3);\nBool b = c.checkFieldRights(&quot;contact&quot;, &quot;read&quot;);\nprint(b.toString());</code></pre>\n"
+- uid: CRMScript.Native.Company.checkTableRights
+  commentId: M:CRMScript.Native.Company.checkTableRights
+  id: 'checkTableRights'
+  so.intellisense: Company.checkTableRights
+  langs:
+  - crmscript
+  name: 'checkTableRights'
+  nameWithType: Company.checkTableRights
+  fullName: CRMScript.Native.Company.checkTableRights
+  type: Method
+  summary: "\nUse this function to see if the current user has access to this company.<p></p>\ntableRight might be:<p></p>\n<ul><li>select</li><li>update</li><li>insert</li></ul>\n"
+  example: 
+  - "\n<pre><code>Company c;\n\nc.load(3);\nBool b = c.checkTableRights(&quot;select&quot;);\nprint(b.toString());</code></pre>\n"
+- uid: CRMScript.Native.Company.#ctor
+  commentId: M:CRMScript.Native.Company.#ctor
+  id: '#ctor'
+  so.intellisense: Void.Company
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: Company.#ctor
+  fullName: CRMScript.Native.Company.#ctor
+  type: Method
+  summary: "\nClass for representing a company.\n"
+  example: 
+  - "\n<pre><code>Company c;\n\nc.load(2); // Loads company with ID = 2\nprint(c.getValue(&quot;primContact&quot;));\nc.setValue(&quot;name&quot;, &quot;SuperOffice&quot;);\nBool b = c.checkFieldRights(&quot;contact&quot;, &quot;read&quot;);\nprint(b.toString());\nc.save();</code></pre>\n"
+- uid: CRMScript.Native.Company.findFromDomain
+  commentId: M:CRMScript.Native.Company.findFromDomain
+  id: 'findFromDomain'
+  so.intellisense: Company.findFromDomain
+  langs:
+  - crmscript
+  name: 'findFromDomain'
+  nameWithType: Company.findFromDomain
+  fullName: CRMScript.Native.Company.findFromDomain
+  type: Method
+  summary: "\nFind and load company object given a domain.\n"
+  example: 
+- uid: CRMScript.Native.Company.getFormattedAddress
+  commentId: M:CRMScript.Native.Company.getFormattedAddress
+  id: 'getFormattedAddress'
+  so.intellisense: Company.getFormattedAddress
+  langs:
+  - crmscript
+  name: 'getFormattedAddress'
+  nameWithType: Company.getFormattedAddress
+  fullName: CRMScript.Native.Company.getFormattedAddress
+  type: Method
+  summary: "\nGets the formatted company address.<p></p>\n<pre><code>Returns an NSLocalizedField[][] Address.</code></pre>\n"
+  example: 
+  - "\n<pre><code>Returns an NSLocalizedField[][] Address.</code></pre>\n"
+- uid: CRMScript.Native.Company.getValue
+  commentId: M:CRMScript.Native.Company.getValue
+  id: 'getValue'
+  so.intellisense: Company.getValue
+  langs:
+  - crmscript
+  name: 'getValue'
+  nameWithType: Company.getValue
+  fullName: CRMScript.Native.Company.getValue
+  type: Method
+  summary: "\nGets a String with the value of a given column.\n"
+  example: 
+  - "\n<pre><code>Company c;\n\nc.load(3);\nBool b = c.checkTableRights(&quot;select&quot;);\nprint(b.toString());\n\nprint(c.getValue(&quot;name&quot;));</code></pre>\n"
+- uid: CRMScript.Native.Company.load
+  commentId: M:CRMScript.Native.Company.load
+  id: 'load'
+  so.intellisense: Company.load
+  langs:
+  - crmscript
+  name: 'load'
+  nameWithType: Company.load
+  fullName: CRMScript.Native.Company.load
+  type: Method
+  summary: "\nLoad object with values from company with given id.\n"
+  example: 
+  - "\n<pre><code>Company c;\n\nBool b = c.load(3);\nprint(b.toString());</code></pre>\n"
+- uid: CRMScript.Native.Company.loadFromAgentAndKey
+  commentId: M:CRMScript.Native.Company.loadFromAgentAndKey
+  id: 'loadFromAgentAndKey'
+  so.intellisense: Company.loadFromAgentAndKey
+  langs:
+  - crmscript
+  name: 'loadFromAgentAndKey'
+  nameWithType: Company.loadFromAgentAndKey
+  fullName: CRMScript.Native.Company.loadFromAgentAndKey
+  type: Method
+  summary: "\nLoads a company based on agent id and external key.<p></p>\nThis function will load a company (possibly overwriting existing values) from the database, based on the agent id and external key.\n"
+  example: 
+- uid: CRMScript.Native.Company.save
+  commentId: M:CRMScript.Native.Company.save
+  id: 'save'
+  so.intellisense: Company.save
+  langs:
+  - crmscript
+  name: 'save'
+  nameWithType: Company.save
+  fullName: CRMScript.Native.Company.save
+  type: Method
+  summary: "\nSaves the object and returns its id.<p></p>\nReturns integer of the company id.\n"
+  example: 
+- uid: CRMScript.Native.Company.setFormattedAddress
+  commentId: M:CRMScript.Native.Company.setFormattedAddress
+  id: 'setFormattedAddress'
+  so.intellisense: Company.setFormattedAddress
+  langs:
+  - crmscript
+  name: 'setFormattedAddress'
+  nameWithType: Company.setFormattedAddress
+  fullName: CRMScript.Native.Company.setFormattedAddress
+  type: Method
+  summary: "\nSets the formatted address for a company\n"
+  example: 
+- uid: CRMScript.Native.Company.setValue
+  commentId: M:CRMScript.Native.Company.setValue
+  id: 'setValue'
+  so.intellisense: Company.setValue
+  langs:
+  - crmscript
+  name: 'setValue'
+  nameWithType: Company.setValue
+  fullName: CRMScript.Native.Company.setValue
+  type: Method
+  summary: "\nSets a value in a column of a company.\n"
+  example: 
+  - "\n<pre><code>Company c;\n\nc.load(3);\nBool b = c.checkTableRights(&quot;select&quot;);\nprint(b.toString());\n\nc.setValue(&quot;name&quot;, &quot;Test&quot;);\nprint(c.getValue(&quot;name&quot;));</code></pre>\n"
+- uid: CRMScript.Native.Company.toParser
+  commentId: M:CRMScript.Native.Company.toParser
+  id: 'toParser'
+  so.intellisense: Company.toParser
+  langs:
+  - crmscript
+  name: 'toParser'
+  nameWithType: Company.toParser
+  fullName: CRMScript.Native.Company.toParser
+  type: Method
+  summary: "\nThis function puts a lot of fields into the input parser.\n"
+  example: 
 references:
 - uid: CRMScript.Native.Company
   commentId: T:CRMScript.Native.Company

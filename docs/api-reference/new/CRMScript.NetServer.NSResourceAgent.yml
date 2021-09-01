@@ -7,6 +7,12 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSResourceAgent.ActivateResourceSubstitution
+  - CRMScript.NetServer.NSResourceAgent.DeleteResourceSubstitution
+  - CRMScript.NetServer.NSResourceAgent.GetResourceSubstitutions
+  - CRMScript.NetServer.NSResourceAgent.IsResourceSubstitutionActive
+  - CRMScript.NetServer.NSResourceAgent.#ctor
+  - CRMScript.NetServer.NSResourceAgent.SetResourceSubstitution
   name: NSResourceAgent
   nameWithType: NSResourceAgent
   fullName: CRMScript.NetServer.NSResourceAgent
@@ -14,6 +20,84 @@ items:
   summary: "\nString resource substitution management.\n"
   example: 
   - "\n<pre><code>NSResourceAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSResourceAgent.ActivateResourceSubstitution
+  commentId: M:CRMScript.NetServer.NSResourceAgent.ActivateResourceSubstitution
+  id: 'ActivateResourceSubstitution'
+  so.intellisense: NSResourceAgent.ActivateResourceSubstitution
+  langs:
+  - crmscript
+  name: 'ActivateResourceSubstitution'
+  nameWithType: NSResourceAgent.ActivateResourceSubstitution
+  fullName: CRMScript.NetServer.NSResourceAgent.ActivateResourceSubstitution
+  type: Method
+  summary: "\nActivate or deactive a resource substitution for one or more cultures\n"
+  example: 
+  - "\n<pre><code>NSResourceAgent agent;\nString resourceName;\nString culture;\nBool isActive;\nagent.ActivateResourceSubstitution(resourceName, culture, isActive);</code></pre>\n"
+- uid: CRMScript.NetServer.NSResourceAgent.DeleteResourceSubstitution
+  commentId: M:CRMScript.NetServer.NSResourceAgent.DeleteResourceSubstitution
+  id: 'DeleteResourceSubstitution'
+  so.intellisense: NSResourceAgent.DeleteResourceSubstitution
+  langs:
+  - crmscript
+  name: 'DeleteResourceSubstitution'
+  nameWithType: NSResourceAgent.DeleteResourceSubstitution
+  fullName: CRMScript.NetServer.NSResourceAgent.DeleteResourceSubstitution
+  type: Method
+  summary: "\nPermanentely delete a resource substitution for one or more cultures\n"
+  example: 
+  - "\n<pre><code>NSResourceAgent agent;\nString resourceName;\nString culture;\nagent.DeleteResourceSubstitution(resourceName, culture);</code></pre>\n"
+- uid: CRMScript.NetServer.NSResourceAgent.GetResourceSubstitutions
+  commentId: M:CRMScript.NetServer.NSResourceAgent.GetResourceSubstitutions
+  id: 'GetResourceSubstitutions'
+  so.intellisense: NSResourceAgent.GetResourceSubstitutions
+  langs:
+  - crmscript
+  name: 'GetResourceSubstitutions'
+  nameWithType: NSResourceAgent.GetResourceSubstitutions
+  fullName: CRMScript.NetServer.NSResourceAgent.GetResourceSubstitutions
+  type: Method
+  summary: "\nGet substitutions for some or all resources for one culture\n"
+  example: 
+  - "\n<pre><code>NSResourceAgent agent;\nString[] resourceNames;\nString culture;\nBool activeOnly;\nNSResourceOverride[] res = agent.GetResourceSubstitutions(resourceNames, culture, activeOnly);</code></pre>\n"
+- uid: CRMScript.NetServer.NSResourceAgent.IsResourceSubstitutionActive
+  commentId: M:CRMScript.NetServer.NSResourceAgent.IsResourceSubstitutionActive
+  id: 'IsResourceSubstitutionActive'
+  so.intellisense: NSResourceAgent.IsResourceSubstitutionActive
+  langs:
+  - crmscript
+  name: 'IsResourceSubstitutionActive'
+  nameWithType: NSResourceAgent.IsResourceSubstitutionActive
+  fullName: CRMScript.NetServer.NSResourceAgent.IsResourceSubstitutionActive
+  type: Method
+  summary: "\nDetermine if resource substitution/override is active, globally or for a subset of resources/cultures\n"
+  example: 
+  - "\n<pre><code>NSResourceAgent agent;\nString[] resourceNames;\nString culture;\nNSResourceOverride[] res = agent.IsResourceSubstitutionActive(resourceNames, culture);</code></pre>\n"
+- uid: CRMScript.NetServer.NSResourceAgent.#ctor
+  commentId: M:CRMScript.NetServer.NSResourceAgent.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSResourceAgent
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSResourceAgent.#ctor
+  fullName: CRMScript.NetServer.NSResourceAgent.#ctor
+  type: Method
+  summary: "\nString resource substitution management.\n"
+  example: 
+  - "\n<pre><code>NSResourceAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSResourceAgent.SetResourceSubstitution
+  commentId: M:CRMScript.NetServer.NSResourceAgent.SetResourceSubstitution
+  id: 'SetResourceSubstitution'
+  so.intellisense: NSResourceAgent.SetResourceSubstitution
+  langs:
+  - crmscript
+  name: 'SetResourceSubstitution'
+  nameWithType: NSResourceAgent.SetResourceSubstitution
+  fullName: CRMScript.NetServer.NSResourceAgent.SetResourceSubstitution
+  type: Method
+  summary: "\nCreate or update a resource substitution\n"
+  example: 
+  - "\n<pre><code>NSResourceAgent agent;\nString resourceName;\nString resourceValues;\nString culture;\nBool isActive;\nagent.SetResourceSubstitution(resourceName, resourceValues, culture, isActive);</code></pre>\n"
 references:
 - uid: CRMScript.NetServer.NSResourceAgent
   commentId: T:CRMScript.NetServer.NSResourceAgent

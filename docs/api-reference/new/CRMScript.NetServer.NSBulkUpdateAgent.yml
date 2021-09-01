@@ -7,6 +7,15 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSBulkUpdateAgent.ExecuteByEntityIds
+  - CRMScript.NetServer.NSBulkUpdateAgent.ExecuteBySelectionId
+  - CRMScript.NetServer.NSBulkUpdateAgent.GetAvailableFields
+  - CRMScript.NetServer.NSBulkUpdateAgent.GetJobResultAsJsonFromBinaryObjectId
+  - CRMScript.NetServer.NSBulkUpdateAgent.GetJobResultsFromStorageAsJson
+  - CRMScript.NetServer.NSBulkUpdateAgent.GetStoredFields
+  - CRMScript.NetServer.NSBulkUpdateAgent.#ctor
+  - CRMScript.NetServer.NSBulkUpdateAgent.RemoveStoredFields
+  - CRMScript.NetServer.NSBulkUpdateAgent.RemoveStoredFieldsAndGetDefaultFields
   name: NSBulkUpdateAgent
   nameWithType: NSBulkUpdateAgent
   fullName: CRMScript.NetServer.NSBulkUpdateAgent
@@ -14,6 +23,122 @@ items:
   summary: "\nAgent used for bulk update methods.\n"
   example: 
   - "\n<pre><code>NSBulkUpdateAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSBulkUpdateAgent.ExecuteByEntityIds
+  commentId: M:CRMScript.NetServer.NSBulkUpdateAgent.ExecuteByEntityIds
+  id: 'ExecuteByEntityIds'
+  so.intellisense: NSBulkUpdateAgent.ExecuteByEntityIds
+  langs:
+  - crmscript
+  name: 'ExecuteByEntityIds'
+  nameWithType: NSBulkUpdateAgent.ExecuteByEntityIds
+  fullName: CRMScript.NetServer.NSBulkUpdateAgent.ExecuteByEntityIds
+  type: Method
+  summary: "\nDo the batchupdate on selected\n"
+  example: 
+  - "\n<pre><code>NSBulkUpdateAgent agent;\nNSFieldValueInfo[] fieldValueInfos;\nString tableName;\nString context;\nString ids;\nInteger res = agent.ExecuteByEntityIds(fieldValueInfos, tableName, context, ids);</code></pre>\n"
+- uid: CRMScript.NetServer.NSBulkUpdateAgent.ExecuteBySelectionId
+  commentId: M:CRMScript.NetServer.NSBulkUpdateAgent.ExecuteBySelectionId
+  id: 'ExecuteBySelectionId'
+  so.intellisense: NSBulkUpdateAgent.ExecuteBySelectionId
+  langs:
+  - crmscript
+  name: 'ExecuteBySelectionId'
+  nameWithType: NSBulkUpdateAgent.ExecuteBySelectionId
+  fullName: CRMScript.NetServer.NSBulkUpdateAgent.ExecuteBySelectionId
+  type: Method
+  summary: "\nDo the batchupdate on this selection\n"
+  example: 
+  - "\n<pre><code>NSBulkUpdateAgent agent;\nNSFieldValueInfo[] fieldValueInfos;\nString tableName;\nString context;\nInteger selectionId;\nBool isShadow;\nInteger res = agent.ExecuteBySelectionId(fieldValueInfos, tableName, context, selectionId, isShadow);</code></pre>\n"
+- uid: CRMScript.NetServer.NSBulkUpdateAgent.GetAvailableFields
+  commentId: M:CRMScript.NetServer.NSBulkUpdateAgent.GetAvailableFields
+  id: 'GetAvailableFields'
+  so.intellisense: NSBulkUpdateAgent.GetAvailableFields
+  langs:
+  - crmscript
+  name: 'GetAvailableFields'
+  nameWithType: NSBulkUpdateAgent.GetAvailableFields
+  fullName: CRMScript.NetServer.NSBulkUpdateAgent.GetAvailableFields
+  type: Method
+  summary: "\nGet all available fields for a given tablename/entity\n"
+  example: 
+  - "\n<pre><code>NSBulkUpdateAgent agent;\nString tablename;\nNSFieldValueInfo[] res = agent.GetAvailableFields(tablename);</code></pre>\n"
+- uid: CRMScript.NetServer.NSBulkUpdateAgent.GetJobResultAsJsonFromBinaryObjectId
+  commentId: M:CRMScript.NetServer.NSBulkUpdateAgent.GetJobResultAsJsonFromBinaryObjectId
+  id: 'GetJobResultAsJsonFromBinaryObjectId'
+  so.intellisense: NSBulkUpdateAgent.GetJobResultAsJsonFromBinaryObjectId
+  langs:
+  - crmscript
+  name: 'GetJobResultAsJsonFromBinaryObjectId'
+  nameWithType: NSBulkUpdateAgent.GetJobResultAsJsonFromBinaryObjectId
+  fullName: CRMScript.NetServer.NSBulkUpdateAgent.GetJobResultAsJsonFromBinaryObjectId
+  type: Method
+  summary: "\nGet result of the batchupdate job\n"
+  example: 
+  - "\n<pre><code>NSBulkUpdateAgent agent;\nString tableName;\nInteger binaryObjectId;\nString res = agent.GetJobResultAsJsonFromBinaryObjectId(tableName, binaryObjectId);</code></pre>\n"
+- uid: CRMScript.NetServer.NSBulkUpdateAgent.GetJobResultsFromStorageAsJson
+  commentId: M:CRMScript.NetServer.NSBulkUpdateAgent.GetJobResultsFromStorageAsJson
+  id: 'GetJobResultsFromStorageAsJson'
+  so.intellisense: NSBulkUpdateAgent.GetJobResultsFromStorageAsJson
+  langs:
+  - crmscript
+  name: 'GetJobResultsFromStorageAsJson'
+  nameWithType: NSBulkUpdateAgent.GetJobResultsFromStorageAsJson
+  fullName: CRMScript.NetServer.NSBulkUpdateAgent.GetJobResultsFromStorageAsJson
+  type: Method
+  summary: "\nGet result of the batchupdate job<p></p>\n<strong>Returns:</strong>String[]<p></p>\n<pre><code>NSBulkUpdateAgent agent;\nString[] res = agent.GetJobResultsFromStorageAsJson();</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSBulkUpdateAgent agent;\nString[] res = agent.GetJobResultsFromStorageAsJson();</code></pre>\n"
+- uid: CRMScript.NetServer.NSBulkUpdateAgent.GetStoredFields
+  commentId: M:CRMScript.NetServer.NSBulkUpdateAgent.GetStoredFields
+  id: 'GetStoredFields'
+  so.intellisense: NSBulkUpdateAgent.GetStoredFields
+  langs:
+  - crmscript
+  name: 'GetStoredFields'
+  nameWithType: NSBulkUpdateAgent.GetStoredFields
+  fullName: CRMScript.NetServer.NSBulkUpdateAgent.GetStoredFields
+  type: Method
+  summary: "\nGet all stored fields for a given tablename/entity and context\n"
+  example: 
+  - "\n<pre><code>NSBulkUpdateAgent agent;\nString tablename;\nString context;\nNSFieldValueInfo[] res = agent.GetStoredFields(tablename, context);</code></pre>\n"
+- uid: CRMScript.NetServer.NSBulkUpdateAgent.#ctor
+  commentId: M:CRMScript.NetServer.NSBulkUpdateAgent.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSBulkUpdateAgent
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSBulkUpdateAgent.#ctor
+  fullName: CRMScript.NetServer.NSBulkUpdateAgent.#ctor
+  type: Method
+  summary: "\nAgent used for bulk update methods.\n"
+  example: 
+  - "\n<pre><code>NSBulkUpdateAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSBulkUpdateAgent.RemoveStoredFields
+  commentId: M:CRMScript.NetServer.NSBulkUpdateAgent.RemoveStoredFields
+  id: 'RemoveStoredFields'
+  so.intellisense: NSBulkUpdateAgent.RemoveStoredFields
+  langs:
+  - crmscript
+  name: 'RemoveStoredFields'
+  nameWithType: NSBulkUpdateAgent.RemoveStoredFields
+  fullName: CRMScript.NetServer.NSBulkUpdateAgent.RemoveStoredFields
+  type: Method
+  summary: "\nRemove the stored settings of the bulk update for this table from this context\n"
+  example: 
+- uid: CRMScript.NetServer.NSBulkUpdateAgent.RemoveStoredFieldsAndGetDefaultFields
+  commentId: M:CRMScript.NetServer.NSBulkUpdateAgent.RemoveStoredFieldsAndGetDefaultFields
+  id: 'RemoveStoredFieldsAndGetDefaultFields'
+  so.intellisense: NSBulkUpdateAgent.RemoveStoredFieldsAndGetDefaultFields
+  langs:
+  - crmscript
+  name: 'RemoveStoredFieldsAndGetDefaultFields'
+  nameWithType: NSBulkUpdateAgent.RemoveStoredFieldsAndGetDefaultFields
+  fullName: CRMScript.NetServer.NSBulkUpdateAgent.RemoveStoredFieldsAndGetDefaultFields
+  type: Method
+  summary: "\nRemove the stored settings of the bulk update for this table from this context, to get the default settings instead\n"
+  example: 
+  - "\n<pre><code>NSBulkUpdateAgent agent;\nString tableName;\nString context;\nNSFieldValueInfo[] res = agent.RemoveStoredFieldsAndGetDefaultFields(tableName, context);</code></pre>\n"
 references:
 - uid: CRMScript.NetServer.NSBulkUpdateAgent
   commentId: T:CRMScript.NetServer.NSBulkUpdateAgent

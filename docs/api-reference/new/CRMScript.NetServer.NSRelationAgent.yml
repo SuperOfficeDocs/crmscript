@@ -7,6 +7,11 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSRelationAgent.CreateDefaultContactRelationEntity
+  - CRMScript.NetServer.NSRelationAgent.DeleteContactRelation
+  - CRMScript.NetServer.NSRelationAgent.GetContactRelationEntity
+  - CRMScript.NetServer.NSRelationAgent.#ctor
+  - CRMScript.NetServer.NSRelationAgent.SaveContactRelation
   name: NSRelationAgent
   nameWithType: NSRelationAgent
   fullName: CRMScript.NetServer.NSRelationAgent
@@ -14,6 +19,71 @@ items:
   summary: "\nContact/Person relations.\n"
   example: 
   - "\n<pre><code>NSRelationAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSRelationAgent.CreateDefaultContactRelationEntity
+  commentId: M:CRMScript.NetServer.NSRelationAgent.CreateDefaultContactRelationEntity
+  id: 'CreateDefaultContactRelationEntity'
+  so.intellisense: NSRelationAgent.CreateDefaultContactRelationEntity
+  langs:
+  - crmscript
+  name: 'CreateDefaultContactRelationEntity'
+  nameWithType: NSRelationAgent.CreateDefaultContactRelationEntity
+  fullName: CRMScript.NetServer.NSRelationAgent.CreateDefaultContactRelationEntity
+  type: Method
+  summary: "\nSet default values into a new NSContactRelationEntity.
+NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSContactRelationEntity<p></p>\n<pre><code>NSRelationAgent agent;\nNSContactRelationEntity thing = agent.CreateDefaultContactRelationEntity();\nthing = agent.SaveContactRelationEntity(thing);</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSRelationAgent agent;\nNSContactRelationEntity thing = agent.CreateDefaultContactRelationEntity();\nthing = agent.SaveContactRelationEntity(thing);</code></pre>\n"
+- uid: CRMScript.NetServer.NSRelationAgent.DeleteContactRelation
+  commentId: M:CRMScript.NetServer.NSRelationAgent.DeleteContactRelation
+  id: 'DeleteContactRelation'
+  so.intellisense: NSRelationAgent.DeleteContactRelation
+  langs:
+  - crmscript
+  name: 'DeleteContactRelation'
+  nameWithType: NSRelationAgent.DeleteContactRelation
+  fullName: CRMScript.NetServer.NSRelationAgent.DeleteContactRelation
+  type: Method
+  summary: "\nDeletes the spesified contact relation.\n"
+  example: 
+- uid: CRMScript.NetServer.NSRelationAgent.GetContactRelationEntity
+  commentId: M:CRMScript.NetServer.NSRelationAgent.GetContactRelationEntity
+  id: 'GetContactRelationEntity'
+  so.intellisense: NSRelationAgent.GetContactRelationEntity
+  langs:
+  - crmscript
+  name: 'GetContactRelationEntity'
+  nameWithType: NSRelationAgent.GetContactRelationEntity
+  fullName: CRMScript.NetServer.NSRelationAgent.GetContactRelationEntity
+  type: Method
+  summary: "\nGets a NSContactRelationEntity object.\n"
+  example: 
+  - "\n<pre><code>NSRelationAgent agent;\nNSContactRelationEntity thing = agent.GetContactRelationEntity(123);</code></pre>\n"
+- uid: CRMScript.NetServer.NSRelationAgent.#ctor
+  commentId: M:CRMScript.NetServer.NSRelationAgent.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSRelationAgent
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSRelationAgent.#ctor
+  fullName: CRMScript.NetServer.NSRelationAgent.#ctor
+  type: Method
+  summary: "\nContact/Person relations.\n"
+  example: 
+  - "\n<pre><code>NSRelationAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSRelationAgent.SaveContactRelation
+  commentId: M:CRMScript.NetServer.NSRelationAgent.SaveContactRelation
+  id: 'SaveContactRelation'
+  so.intellisense: NSRelationAgent.SaveContactRelation
+  langs:
+  - crmscript
+  name: 'SaveContactRelation'
+  nameWithType: NSRelationAgent.SaveContactRelation
+  fullName: CRMScript.NetServer.NSRelationAgent.SaveContactRelation
+  type: Method
+  summary: "\nCreates a new or updates an existing contact relation.\n"
+  example: 
+  - "\n<pre><code>NSRelationAgent agent;\nNSContactRelationEntity contactRelationEntity;\nNSContactRelationEntity res = agent.SaveContactRelation(contactRelationEntity);</code></pre>\n"
 references:
 - uid: CRMScript.NetServer.NSRelationAgent
   commentId: T:CRMScript.NetServer.NSRelationAgent

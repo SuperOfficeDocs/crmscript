@@ -7,6 +7,13 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.Native.EabEntry.delete
+  - CRMScript.Native.EabEntry.#ctor
+  - CRMScript.Native.EabEntry.getValue
+  - CRMScript.Native.EabEntry.load
+  - CRMScript.Native.EabEntry.loadFromAgentAndKey
+  - CRMScript.Native.EabEntry.save
+  - CRMScript.Native.EabEntry.setValue
   name: EabEntry
   nameWithType: EabEntry
   fullName: CRMScript.Native.EabEntry
@@ -14,6 +21,94 @@ items:
   summary: "\nThis class enables you to read and write entries from the email address book. It is also used when you want to synchronise the address book using DBI.\n"
   example: 
   - "\n<pre><code>EabEntry e;\n\ne.load(15);\nprint(e.getValue(&quot;sms&quot;));\ne.setValue(&quot;name&quot;, &quot;test&quot;);</code></pre>\n"
+- uid: CRMScript.Native.EabEntry.delete
+  commentId: M:CRMScript.Native.EabEntry.delete
+  id: 'delete'
+  so.intellisense: EabEntry.delete
+  langs:
+  - crmscript
+  name: 'delete'
+  nameWithType: EabEntry.delete
+  fullName: CRMScript.Native.EabEntry.delete
+  type: Method
+  summary: "\nThis method will delete the current address book entry from the database.\n"
+  example: 
+- uid: CRMScript.Native.EabEntry.#ctor
+  commentId: M:CRMScript.Native.EabEntry.#ctor
+  id: '#ctor'
+  so.intellisense: Void.EabEntry
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: EabEntry.#ctor
+  fullName: CRMScript.Native.EabEntry.#ctor
+  type: Method
+  summary: "\nThis class enables you to read and write entries from the email address book. It is also used when you want to synchronise the address book using DBI.\n"
+  example: 
+  - "\n<pre><code>EabEntry e;\n\ne.load(15);\nprint(e.getValue(&quot;sms&quot;));\ne.setValue(&quot;name&quot;, &quot;test&quot;);</code></pre>\n"
+- uid: CRMScript.Native.EabEntry.getValue
+  commentId: M:CRMScript.Native.EabEntry.getValue
+  id: 'getValue'
+  so.intellisense: EabEntry.getValue
+  langs:
+  - crmscript
+  name: 'getValue'
+  nameWithType: EabEntry.getValue
+  fullName: CRMScript.Native.EabEntry.getValue
+  type: Method
+  summary: "\nGet the value of the given field in the EabEntry instance.\n"
+  example: 
+  - "\n<pre><code>EabEntry eab;\n\nBool b = eab.load(15);\nprint(b.toString());\n\neab.setValue(&quot;name&quot;, &quot;test&quot;);\nprint(eab.getValue(&quot;name&quot;));</code></pre>\n"
+- uid: CRMScript.Native.EabEntry.load
+  commentId: M:CRMScript.Native.EabEntry.load
+  id: 'load'
+  so.intellisense: EabEntry.load
+  langs:
+  - crmscript
+  name: 'load'
+  nameWithType: EabEntry.load
+  fullName: CRMScript.Native.EabEntry.load
+  type: Method
+  summary: "\nLoad an entry from the address book with the specified id. Returns true if load var successful, false if not.\n"
+  example: 
+  - "\n<pre><code>EabEntry eab;\n\nBool b = eab.load(15);\nprint(b.toString());</code></pre>\n"
+- uid: CRMScript.Native.EabEntry.loadFromAgentAndKey
+  commentId: M:CRMScript.Native.EabEntry.loadFromAgentAndKey
+  id: 'loadFromAgentAndKey'
+  so.intellisense: EabEntry.loadFromAgentAndKey
+  langs:
+  - crmscript
+  name: 'loadFromAgentAndKey'
+  nameWithType: EabEntry.loadFromAgentAndKey
+  fullName: CRMScript.Native.EabEntry.loadFromAgentAndKey
+  type: Method
+  summary: "\nUsed in conjunction with DBI. Load an entry with the specified key from the specified agent.\n"
+  example: 
+- uid: CRMScript.Native.EabEntry.save
+  commentId: M:CRMScript.Native.EabEntry.save
+  id: 'save'
+  so.intellisense: EabEntry.save
+  langs:
+  - crmscript
+  name: 'save'
+  nameWithType: EabEntry.save
+  fullName: CRMScript.Native.EabEntry.save
+  type: Method
+  summary: "\nThis will save the current address book entry. If you did not load an existing entry, a new entry will be created, else it will update the loaded entry.<p></p>\nReturns id of the saved entry.\n"
+  example: 
+- uid: CRMScript.Native.EabEntry.setValue
+  commentId: M:CRMScript.Native.EabEntry.setValue
+  id: 'setValue'
+  so.intellisense: EabEntry.setValue
+  langs:
+  - crmscript
+  name: 'setValue'
+  nameWithType: EabEntry.setValue
+  fullName: CRMScript.Native.EabEntry.setValue
+  type: Method
+  summary: "\nSets the value of the given field in the EabEntry instance.\n"
+  example: 
+  - "\n<pre><code>EabEntry eab;\n\nBool b = eab.load(15);\nprint(b.toString());\n\neab.setValue(&quot;name&quot;, &quot;test&quot;);\nprint(eab.getValue(&quot;name&quot;));</code></pre>\n"
 references:
 - uid: CRMScript.Native.EabEntry
   commentId: T:CRMScript.Native.EabEntry

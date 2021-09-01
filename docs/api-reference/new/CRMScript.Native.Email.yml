@@ -7,6 +7,10 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.Native.Email.addAttachment
+  - CRMScript.Native.Email.#ctor
+  - CRMScript.Native.Email.send
+  - CRMScript.Native.Email.setValue
   name: Email
   nameWithType: Email
   fullName: CRMScript.Native.Email
@@ -14,6 +18,56 @@ items:
   summary: "\nClass for representing and sending emails.\n"
   example: 
   - "\n<pre><code>Email e;\n\ne.setValue(&quot;from&quot;, &quot;bob@example.com&quot;);\ne.setValue(&quot;to&quot;, &quot;allice@example.com&quot;);\ne.setValue(&quot;to&quot;, &quot;simon@example.com&quot;); // Value must be set once for each recipient\ne.setValue(&quot;subject&quot;, &quot;test&quot;);\ne.setValue(&quot;body&quot;, &quot;This is a test.&quot;);</code></pre>\n"
+- uid: CRMScript.Native.Email.addAttachment
+  commentId: M:CRMScript.Native.Email.addAttachment
+  id: 'addAttachment'
+  so.intellisense: Email.addAttachment
+  langs:
+  - crmscript
+  name: 'addAttachment'
+  nameWithType: Email.addAttachment
+  fullName: CRMScript.Native.Email.addAttachment
+  type: Method
+  summary: "\nAdds an attachment to the email object.<p></p>\nattachmentId  The database id of the attachment to include
+inline Set to true if you want to show the attachment inside the mail (used mostly for images)<p></p>\nReturns the id of the attachment relative to the email. If the inline parameter is set to true, this value can be used to inline attachments in the email body\n"
+  example: 
+- uid: CRMScript.Native.Email.#ctor
+  commentId: M:CRMScript.Native.Email.#ctor
+  id: '#ctor'
+  so.intellisense: Void.Email
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: Email.#ctor
+  fullName: CRMScript.Native.Email.#ctor
+  type: Method
+  summary: "\nClass for representing and sending emails.\n"
+  example: 
+  - "\n<pre><code>Email e;\n\ne.setValue(&quot;from&quot;, &quot;bob@example.com&quot;);\ne.setValue(&quot;to&quot;, &quot;allice@example.com&quot;);\ne.setValue(&quot;to&quot;, &quot;simon@example.com&quot;); // Value must be set once for each recipient\ne.setValue(&quot;subject&quot;, &quot;test&quot;);\ne.setValue(&quot;body&quot;, &quot;This is a test.&quot;);</code></pre>\n"
+- uid: CRMScript.Native.Email.send
+  commentId: M:CRMScript.Native.Email.send
+  id: 'send'
+  so.intellisense: Email.send
+  langs:
+  - crmscript
+  name: 'send'
+  nameWithType: Email.send
+  fullName: CRMScript.Native.Email.send
+  type: Method
+  summary: "\nSends the email.\n"
+  example: 
+- uid: CRMScript.Native.Email.setValue
+  commentId: M:CRMScript.Native.Email.setValue
+  id: 'setValue'
+  so.intellisense: Email.setValue
+  langs:
+  - crmscript
+  name: 'setValue'
+  nameWithType: Email.setValue
+  fullName: CRMScript.Native.Email.setValue
+  type: Method
+  summary: "\nSets the value of the given field in the email instance.\n"
+  example: 
 references:
 - uid: CRMScript.Native.Email
   commentId: T:CRMScript.Native.Email

@@ -7,6 +7,53 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSErpSyncAgent.BreakActorLink
+  - CRMScript.NetServer.NSErpSyncAgent.CanDeleteErpSyncConnectorEntity
+  - CRMScript.NetServer.NSErpSyncAgent.ChangeEngineInterval
+  - CRMScript.NetServer.NSErpSyncAgent.ChangeEngineStatus
+  - CRMScript.NetServer.NSErpSyncAgent.ConnectActor
+  - CRMScript.NetServer.NSErpSyncAgent.CreateActorLink
+  - CRMScript.NetServer.NSErpSyncAgent.CreateDefaultErpSyncConnectorEntity
+  - CRMScript.NetServer.NSErpSyncAgent.CreateErpActorFromCrm
+  - CRMScript.NetServer.NSErpSyncAgent.DeleteConnection
+  - CRMScript.NetServer.NSErpSyncAgent.DeleteErpSyncConnectorEntity
+  - CRMScript.NetServer.NSErpSyncAgent.ForceResync
+  - CRMScript.NetServer.NSErpSyncAgent.ForceResyncBatchTask
+  - CRMScript.NetServer.NSErpSyncAgent.ForceResyncExternal
+  - CRMScript.NetServer.NSErpSyncAgent.ForceResyncExternalNoBlankValues
+  - CRMScript.NetServer.NSErpSyncAgent.ForceResyncNoBlankValues
+  - CRMScript.NetServer.NSErpSyncAgent.ForceSyncAll
+  - CRMScript.NetServer.NSErpSyncAgent.GetActorTypeMapping
+  - CRMScript.NetServer.NSErpSyncAgent.GetConfigurationFields
+  - CRMScript.NetServer.NSErpSyncAgent.GetConnection
+  - CRMScript.NetServer.NSErpSyncAgent.GetConnectionListMappings
+  - CRMScript.NetServer.NSErpSyncAgent.GetConnectionsAndDisplayFields
+  - CRMScript.NetServer.NSErpSyncAgent.GetCrmActorType
+  - CRMScript.NetServer.NSErpSyncAgent.GetDefaultValueInfo
+  - CRMScript.NetServer.NSErpSyncAgent.GetEngineStatus
+  - CRMScript.NetServer.NSErpSyncAgent.GetErpConnectionConfigFields
+  - CRMScript.NetServer.NSErpSyncAgent.GetErpFieldValues
+  - CRMScript.NetServer.NSErpSyncAgent.GetErpSyncConnectionSummary
+  - CRMScript.NetServer.NSErpSyncAgent.GetErpSyncConnectorEntity
+  - CRMScript.NetServer.NSErpSyncAgent.GetFieldsForNewErpActor
+  - CRMScript.NetServer.NSErpSyncAgent.GetFieldValuesFromCrm
+  - CRMScript.NetServer.NSErpSyncAgent.GetFieldValuesFromErp
+  - CRMScript.NetServer.NSErpSyncAgent.MoveErpFieldItem
+  - CRMScript.NetServer.NSErpSyncAgent.#ctor
+  - CRMScript.NetServer.NSErpSyncAgent.SaveActorTypeMapping
+  - CRMScript.NetServer.NSErpSyncAgent.SaveConnection
+  - CRMScript.NetServer.NSErpSyncAgent.SaveConnectionListMappings
+  - CRMScript.NetServer.NSErpSyncAgent.SaveDefaultValueInfo
+  - CRMScript.NetServer.NSErpSyncAgent.SaveErpConnectionSyncPriorities
+  - CRMScript.NetServer.NSErpSyncAgent.SaveErpSyncConnectorEntity
+  - CRMScript.NetServer.NSErpSyncAgent.SupportsAdvancedSearch
+  - CRMScript.NetServer.NSErpSyncAgent.SyncAll
+  - CRMScript.NetServer.NSErpSyncAgent.TestConnectionByConfig
+  - CRMScript.NetServer.NSErpSyncAgent.TestConnectionById
+  - CRMScript.NetServer.NSErpSyncAgent.TestConnectorUrl
+  - CRMScript.NetServer.NSErpSyncAgent.ToggleErpConnectionActive
+  - CRMScript.NetServer.NSErpSyncAgent.UpdateConnectionFields
+  - CRMScript.NetServer.NSErpSyncAgent.ValidateArchiveColumnConfig
   name: NSErpSyncAgent
   nameWithType: NSErpSyncAgent
   fullName: CRMScript.NetServer.NSErpSyncAgent
@@ -14,6 +61,614 @@ items:
   summary: "\nServices for the ERP Integration Services feature.\n"
   example: 
   - "\n<pre><code>NSErpSyncAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.BreakActorLink
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.BreakActorLink
+  id: 'BreakActorLink'
+  so.intellisense: NSErpSyncAgent.BreakActorLink
+  langs:
+  - crmscript
+  name: 'BreakActorLink'
+  nameWithType: NSErpSyncAgent.BreakActorLink
+  fullName: CRMScript.NetServer.NSErpSyncAgent.BreakActorLink
+  type: Method
+  summary: "\nRemove the link between a CRM entity and an ERP entity\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nInteger erpConnectionId;\nInteger crmRecordId;\nInteger crmActorType;\nBool res = agent.BreakActorLink(erpConnectionId, crmRecordId, crmActorType);</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.CanDeleteErpSyncConnectorEntity
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.CanDeleteErpSyncConnectorEntity
+  id: 'CanDeleteErpSyncConnectorEntity'
+  so.intellisense: NSErpSyncAgent.CanDeleteErpSyncConnectorEntity
+  langs:
+  - crmscript
+  name: 'CanDeleteErpSyncConnectorEntity'
+  nameWithType: NSErpSyncAgent.CanDeleteErpSyncConnectorEntity
+  fullName: CRMScript.NetServer.NSErpSyncAgent.CanDeleteErpSyncConnectorEntity
+  type: Method
+  summary: "\nCan we delete the connector?\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nInteger erpSyncConnectorId;\nInteger res = agent.CanDeleteErpSyncConnectorEntity(erpSyncConnectorId);</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.ChangeEngineInterval
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.ChangeEngineInterval
+  id: 'ChangeEngineInterval'
+  so.intellisense: NSErpSyncAgent.ChangeEngineInterval
+  langs:
+  - crmscript
+  name: 'ChangeEngineInterval'
+  nameWithType: NSErpSyncAgent.ChangeEngineInterval
+  fullName: CRMScript.NetServer.NSErpSyncAgent.ChangeEngineInterval
+  type: Method
+  summary: "\nChange the interval for each run of the Sync Engine\n"
+  example: 
+- uid: CRMScript.NetServer.NSErpSyncAgent.ChangeEngineStatus
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.ChangeEngineStatus
+  id: 'ChangeEngineStatus'
+  so.intellisense: NSErpSyncAgent.ChangeEngineStatus
+  langs:
+  - crmscript
+  name: 'ChangeEngineStatus'
+  nameWithType: NSErpSyncAgent.ChangeEngineStatus
+  fullName: CRMScript.NetServer.NSErpSyncAgent.ChangeEngineStatus
+  type: Method
+  summary: "\nChange the current running/stopped status of the Sync engine\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nBool run;\nNSErpSyncEngineStatus res = agent.ChangeEngineStatus(run);</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.ConnectActor
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.ConnectActor
+  id: 'ConnectActor'
+  so.intellisense: NSErpSyncAgent.ConnectActor
+  langs:
+  - crmscript
+  name: 'ConnectActor'
+  nameWithType: NSErpSyncAgent.ConnectActor
+  fullName: CRMScript.NetServer.NSErpSyncAgent.ConnectActor
+  type: Method
+  summary: "\nCreate a link between Erp and Crm and set default values\n"
+  example: 
+- uid: CRMScript.NetServer.NSErpSyncAgent.CreateActorLink
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.CreateActorLink
+  id: 'CreateActorLink'
+  so.intellisense: NSErpSyncAgent.CreateActorLink
+  langs:
+  - crmscript
+  name: 'CreateActorLink'
+  nameWithType: NSErpSyncAgent.CreateActorLink
+  fullName: CRMScript.NetServer.NSErpSyncAgent.CreateActorLink
+  type: Method
+  summary: "\nLink a crm entity to an erp entity\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nInteger erpConnectionId;\nInteger crmRecordId;\nInteger crmActorType;\nString erpKey;\nInteger erpActorType;\nBool res = agent.CreateActorLink(erpConnectionId, crmRecordId, crmActorType, erpKey, erpActorType);</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.CreateDefaultErpSyncConnectorEntity
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.CreateDefaultErpSyncConnectorEntity
+  id: 'CreateDefaultErpSyncConnectorEntity'
+  so.intellisense: NSErpSyncAgent.CreateDefaultErpSyncConnectorEntity
+  langs:
+  - crmscript
+  name: 'CreateDefaultErpSyncConnectorEntity'
+  nameWithType: NSErpSyncAgent.CreateDefaultErpSyncConnectorEntity
+  fullName: CRMScript.NetServer.NSErpSyncAgent.CreateDefaultErpSyncConnectorEntity
+  type: Method
+  summary: "\nSet default values into a new NSErpSyncConnectorEntity.
+NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSErpSyncConnectorEntity<p></p>\n<pre><code>NSErpSyncAgent agent;\nNSErpSyncConnectorEntity thing = agent.CreateDefaultErpSyncConnectorEntity();\nthing = agent.SaveErpSyncConnectorEntity(thing);</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nNSErpSyncConnectorEntity thing = agent.CreateDefaultErpSyncConnectorEntity();\nthing = agent.SaveErpSyncConnectorEntity(thing);</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.CreateErpActorFromCrm
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.CreateErpActorFromCrm
+  id: 'CreateErpActorFromCrm'
+  so.intellisense: NSErpSyncAgent.CreateErpActorFromCrm
+  langs:
+  - crmscript
+  name: 'CreateErpActorFromCrm'
+  nameWithType: NSErpSyncAgent.CreateErpActorFromCrm
+  fullName: CRMScript.NetServer.NSErpSyncAgent.CreateErpActorFromCrm
+  type: Method
+  summary: "\nCRMScript method in the NSErpSyncAgent class that creates an ErpActor from a CRM entity.Creates an ErpActor from a CRM entity.<p></p>\nReturns the created ERP actor with success.<p></p>\n<code>Bool CreateErpActorFromCrm(Integer connectionId, Integer crmEntityId, Integer erpActorType, Integer crmActorType, StringDictionary erpFieldKeyValues)</code>\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nInteger connectionId;\nInteger crmEntityId;\nInteger erpActorType;\nInteger crmActorType;\nStringDictionary erpFieldKeyValues;\nBool res = agent.CreateErpActorFromCrm(connectionId, crmEntityId, erpActorType, crmActorType, erpFieldKeyValues);</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.DeleteConnection
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.DeleteConnection
+  id: 'DeleteConnection'
+  so.intellisense: NSErpSyncAgent.DeleteConnection
+  langs:
+  - crmscript
+  name: 'DeleteConnection'
+  nameWithType: NSErpSyncAgent.DeleteConnection
+  fullName: CRMScript.NetServer.NSErpSyncAgent.DeleteConnection
+  type: Method
+  summary: "\nDeletes a connection from the database.\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nInteger erpConnectionId;\nagent.DeleteConnection(erpConnectionId);</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.DeleteErpSyncConnectorEntity
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.DeleteErpSyncConnectorEntity
+  id: 'DeleteErpSyncConnectorEntity'
+  so.intellisense: NSErpSyncAgent.DeleteErpSyncConnectorEntity
+  langs:
+  - crmscript
+  name: 'DeleteErpSyncConnectorEntity'
+  nameWithType: NSErpSyncAgent.DeleteErpSyncConnectorEntity
+  fullName: CRMScript.NetServer.NSErpSyncAgent.DeleteErpSyncConnectorEntity
+  type: Method
+  summary: "\nDeletes the NSErpSyncConnectorEntity\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nagent.DeleteErpSyncConnectorEntity(123);</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.ForceResync
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.ForceResync
+  id: 'ForceResync'
+  so.intellisense: NSErpSyncAgent.ForceResync
+  langs:
+  - crmscript
+  name: 'ForceResync'
+  nameWithType: NSErpSyncAgent.ForceResync
+  fullName: CRMScript.NetServer.NSErpSyncAgent.ForceResync
+  type: Method
+  summary: "\nForce resync from CRM or given Erp connection to all other connections\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nInteger erpConnectionId;\nInteger[] internalKeyIds;\nNSPluginResponse res = agent.ForceResync(erpConnectionId, internalKeyIds);</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.ForceResyncBatchTask
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.ForceResyncBatchTask
+  id: 'ForceResyncBatchTask'
+  so.intellisense: NSErpSyncAgent.ForceResyncBatchTask
+  langs:
+  - crmscript
+  name: 'ForceResyncBatchTask'
+  nameWithType: NSErpSyncAgent.ForceResyncBatchTask
+  fullName: CRMScript.NetServer.NSErpSyncAgent.ForceResyncBatchTask
+  type: Method
+  summary: "\nStart batch task to force resync from CRM or given Erp connection to all other connections\n"
+  example: 
+- uid: CRMScript.NetServer.NSErpSyncAgent.ForceResyncExternal
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.ForceResyncExternal
+  id: 'ForceResyncExternal'
+  so.intellisense: NSErpSyncAgent.ForceResyncExternal
+  langs:
+  - crmscript
+  name: 'ForceResyncExternal'
+  nameWithType: NSErpSyncAgent.ForceResyncExternal
+  fullName: CRMScript.NetServer.NSErpSyncAgent.ForceResyncExternal
+  type: Method
+  summary: "\nForce resync from CRM or given Erp connection to all other connections, using external keys\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nInteger erpConnectionId;\nInteger erpActorType;\nString[] externalKeys;\nNSPluginResponse res = agent.ForceResyncExternal(erpConnectionId, erpActorType, externalKeys);</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.ForceResyncExternalNoBlankValues
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.ForceResyncExternalNoBlankValues
+  id: 'ForceResyncExternalNoBlankValues'
+  so.intellisense: NSErpSyncAgent.ForceResyncExternalNoBlankValues
+  langs:
+  - crmscript
+  name: 'ForceResyncExternalNoBlankValues'
+  nameWithType: NSErpSyncAgent.ForceResyncExternalNoBlankValues
+  fullName: CRMScript.NetServer.NSErpSyncAgent.ForceResyncExternalNoBlankValues
+  type: Method
+  summary: "\nForce resync from CRM or given Erp connection to all other connections, using external keys, and tell the sync that you don't want blank values to overwrite non-blank values. Useful on import.\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nInteger erpConnectionId;\nInteger erpActorType;\nString[] externalKeys;\nNSPluginResponse res = agent.ForceResyncExternalNoBlankValues(erpConnectionId, erpActorType, externalKeys);</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.ForceResyncNoBlankValues
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.ForceResyncNoBlankValues
+  id: 'ForceResyncNoBlankValues'
+  so.intellisense: NSErpSyncAgent.ForceResyncNoBlankValues
+  langs:
+  - crmscript
+  name: 'ForceResyncNoBlankValues'
+  nameWithType: NSErpSyncAgent.ForceResyncNoBlankValues
+  fullName: CRMScript.NetServer.NSErpSyncAgent.ForceResyncNoBlankValues
+  type: Method
+  summary: "\nForce resync from CRM or given Erp connection to all other connections and tell the sync that you don't want blank values to overwrite non-blank values. Useful on import.\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nInteger erpConnectionId;\nInteger[] internalKeyIds;\nNSPluginResponse res = agent.ForceResyncNoBlankValues(erpConnectionId, internalKeyIds);</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.ForceSyncAll
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.ForceSyncAll
+  id: 'ForceSyncAll'
+  so.intellisense: NSErpSyncAgent.ForceSyncAll
+  langs:
+  - crmscript
+  name: 'ForceSyncAll'
+  nameWithType: NSErpSyncAgent.ForceSyncAll
+  fullName: CRMScript.NetServer.NSErpSyncAgent.ForceSyncAll
+  type: Method
+  summary: "\nSync all active connections even when automatic sync is off<p></p>\n<strong>Returns:</strong>NSPluginResponse<p></p>\n<pre><code>NSErpSyncAgent agent;\nNSPluginResponse res = agent.ForceSyncAll();</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nNSPluginResponse res = agent.ForceSyncAll();</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.GetActorTypeMapping
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.GetActorTypeMapping
+  id: 'GetActorTypeMapping'
+  so.intellisense: NSErpSyncAgent.GetActorTypeMapping
+  langs:
+  - crmscript
+  name: 'GetActorTypeMapping'
+  nameWithType: NSErpSyncAgent.GetActorTypeMapping
+  fullName: CRMScript.NetServer.NSErpSyncAgent.GetActorTypeMapping
+  type: Method
+  summary: "\nGet the current mappings for one connection/actor; connection+actor type = unique key\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nInteger erpConnectionId;\nInteger actorType;\nNSErpSyncActorTypeMapping res = agent.GetActorTypeMapping(erpConnectionId, actorType);</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.GetConfigurationFields
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.GetConfigurationFields
+  id: 'GetConfigurationFields'
+  so.intellisense: NSErpSyncAgent.GetConfigurationFields
+  langs:
+  - crmscript
+  name: 'GetConfigurationFields'
+  nameWithType: NSErpSyncAgent.GetConfigurationFields
+  fullName: CRMScript.NetServer.NSErpSyncAgent.GetConfigurationFields
+  type: Method
+  summary: "\nReturns all fields needed to connect to the given connector\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nInteger erpConnectorId;\nNSFieldMetadata[] res = agent.GetConfigurationFields(erpConnectorId);</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.GetConnection
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.GetConnection
+  id: 'GetConnection'
+  so.intellisense: NSErpSyncAgent.GetConnection
+  langs:
+  - crmscript
+  name: 'GetConnection'
+  nameWithType: NSErpSyncAgent.GetConnection
+  fullName: CRMScript.NetServer.NSErpSyncAgent.GetConnection
+  type: Method
+  summary: "\nReturns the specified connection.\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nInteger erpConnectionId;\nNSErpConnection res = agent.GetConnection(erpConnectionId);</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.GetConnectionListMappings
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.GetConnectionListMappings
+  id: 'GetConnectionListMappings'
+  so.intellisense: NSErpSyncAgent.GetConnectionListMappings
+  langs:
+  - crmscript
+  name: 'GetConnectionListMappings'
+  nameWithType: NSErpSyncAgent.GetConnectionListMappings
+  fullName: CRMScript.NetServer.NSErpSyncAgent.GetConnectionListMappings
+  type: Method
+  summary: "\nReturns the listmappings for the specified connection.\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nInteger erpConnectionId;\nNSErpConnectionListMappingContainer res = agent.GetConnectionListMappings(erpConnectionId);</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.GetConnectionsAndDisplayFields
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.GetConnectionsAndDisplayFields
+  id: 'GetConnectionsAndDisplayFields'
+  so.intellisense: NSErpSyncAgent.GetConnectionsAndDisplayFields
+  langs:
+  - crmscript
+  name: 'GetConnectionsAndDisplayFields'
+  nameWithType: NSErpSyncAgent.GetConnectionsAndDisplayFields
+  fullName: CRMScript.NetServer.NSErpSyncAgent.GetConnectionsAndDisplayFields
+  type: Method
+  summary: "\nGet all connection statuses and fields for a given entity\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nInteger crmActorType;\nInteger entityId;\nNSErpConnectionData[] res = agent.GetConnectionsAndDisplayFields(crmActorType, entityId);</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.GetCrmActorType
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.GetCrmActorType
+  id: 'GetCrmActorType'
+  so.intellisense: NSErpSyncAgent.GetCrmActorType
+  langs:
+  - crmscript
+  name: 'GetCrmActorType'
+  nameWithType: NSErpSyncAgent.GetCrmActorType
+  fullName: CRMScript.NetServer.NSErpSyncAgent.GetCrmActorType
+  type: Method
+  summary: "\nRetrieves the NSCrmActorType that are mapped to a specific ErpActorType for this connection\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nInteger erpConnectionId;\nInteger erpActorType;\nInteger res = agent.GetCrmActorType(erpConnectionId, erpActorType);</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.GetDefaultValueInfo
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.GetDefaultValueInfo
+  id: 'GetDefaultValueInfo'
+  so.intellisense: NSErpSyncAgent.GetDefaultValueInfo
+  langs:
+  - crmscript
+  name: 'GetDefaultValueInfo'
+  nameWithType: NSErpSyncAgent.GetDefaultValueInfo
+  fullName: CRMScript.NetServer.NSErpSyncAgent.GetDefaultValueInfo
+  type: Method
+  summary: "\nGet information about default value for an ERP field\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nInteger erpFieldId;\nNSErpSyncDefaultValue res = agent.GetDefaultValueInfo(erpFieldId);</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.GetEngineStatus
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.GetEngineStatus
+  id: 'GetEngineStatus'
+  so.intellisense: NSErpSyncAgent.GetEngineStatus
+  langs:
+  - crmscript
+  name: 'GetEngineStatus'
+  nameWithType: NSErpSyncAgent.GetEngineStatus
+  fullName: CRMScript.NetServer.NSErpSyncAgent.GetEngineStatus
+  type: Method
+  summary: "\nGet the current status of the Sync engine<p></p>\n<strong>Returns:</strong>NSErpSyncEngineStatus<p></p>\n<pre><code>NSErpSyncAgent agent;\nNSErpSyncEngineStatus res = agent.GetEngineStatus();</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nNSErpSyncEngineStatus res = agent.GetEngineStatus();</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.GetErpConnectionConfigFields
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.GetErpConnectionConfigFields
+  id: 'GetErpConnectionConfigFields'
+  so.intellisense: NSErpSyncAgent.GetErpConnectionConfigFields
+  langs:
+  - crmscript
+  name: 'GetErpConnectionConfigFields'
+  nameWithType: NSErpSyncAgent.GetErpConnectionConfigFields
+  fullName: CRMScript.NetServer.NSErpSyncAgent.GetErpConnectionConfigFields
+  type: Method
+  summary: "\nCRMScript method in the NSErpSyncAgent class that returns the config fields for the connectionReturns the config fields for the connection.<p></p>\n<code>StringDictionary GetErpConnectionConfigFields(Integer erpConnectionId)</code>\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nInteger erpConnectionId;\nStringDictionary res = agent.GetErpConnectionConfigFields(erpConnectionId);</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.GetErpFieldValues
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.GetErpFieldValues
+  id: 'GetErpFieldValues'
+  so.intellisense: NSErpSyncAgent.GetErpFieldValues
+  langs:
+  - crmscript
+  name: 'GetErpFieldValues'
+  nameWithType: NSErpSyncAgent.GetErpFieldValues
+  fullName: CRMScript.NetServer.NSErpSyncAgent.GetErpFieldValues
+  type: Method
+  summary: "\nGet the values for the specified fields from the ERP connection\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nInteger erpConnectionId;\nInteger crmActorType;\nInteger entityId;\nString[] fieldKeys;\nString[] res = agent.GetErpFieldValues(erpConnectionId, crmActorType, entityId, fieldKeys);</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.GetErpSyncConnectionSummary
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.GetErpSyncConnectionSummary
+  id: 'GetErpSyncConnectionSummary'
+  so.intellisense: NSErpSyncAgent.GetErpSyncConnectionSummary
+  langs:
+  - crmscript
+  name: 'GetErpSyncConnectionSummary'
+  nameWithType: NSErpSyncAgent.GetErpSyncConnectionSummary
+  fullName: CRMScript.NetServer.NSErpSyncAgent.GetErpSyncConnectionSummary
+  type: Method
+  summary: "\nGet a summary of the current ErpSync configuration/setup\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nInteger erpSyncConnectionId;\nNSErpSyncConnectionSummary res = agent.GetErpSyncConnectionSummary(erpSyncConnectionId);</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.GetErpSyncConnectorEntity
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.GetErpSyncConnectorEntity
+  id: 'GetErpSyncConnectorEntity'
+  so.intellisense: NSErpSyncAgent.GetErpSyncConnectorEntity
+  langs:
+  - crmscript
+  name: 'GetErpSyncConnectorEntity'
+  nameWithType: NSErpSyncAgent.GetErpSyncConnectorEntity
+  fullName: CRMScript.NetServer.NSErpSyncAgent.GetErpSyncConnectorEntity
+  type: Method
+  summary: "\nGets a NSErpSyncConnectorEntity object.\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nNSErpSyncConnectorEntity thing = agent.GetErpSyncConnectorEntity(123);</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.GetFieldsForNewErpActor
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.GetFieldsForNewErpActor
+  id: 'GetFieldsForNewErpActor'
+  so.intellisense: NSErpSyncAgent.GetFieldsForNewErpActor
+  langs:
+  - crmscript
+  name: 'GetFieldsForNewErpActor'
+  nameWithType: NSErpSyncAgent.GetFieldsForNewErpActor
+  fullName: CRMScript.NetServer.NSErpSyncAgent.GetFieldsForNewErpActor
+  type: Method
+  summary: "\nGet the fields that must be filled out when creating a new ERP actor\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nInteger erpConnectionId;\nInteger erpActorType;\nNSFieldMetadata[] res = agent.GetFieldsForNewErpActor(erpConnectionId, erpActorType);</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.GetFieldValuesFromCrm
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.GetFieldValuesFromCrm
+  id: 'GetFieldValuesFromCrm'
+  so.intellisense: NSErpSyncAgent.GetFieldValuesFromCrm
+  langs:
+  - crmscript
+  name: 'GetFieldValuesFromCrm'
+  nameWithType: NSErpSyncAgent.GetFieldValuesFromCrm
+  fullName: CRMScript.NetServer.NSErpSyncAgent.GetFieldValuesFromCrm
+  type: Method
+  summary: "\nGet Crm Field values\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nInteger recordId;\nInteger actorTypeCrm;\nNSErpSyncFieldValue[] res = agent.GetFieldValuesFromCrm(recordId, actorTypeCrm);</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.GetFieldValuesFromErp
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.GetFieldValuesFromErp
+  id: 'GetFieldValuesFromErp'
+  so.intellisense: NSErpSyncAgent.GetFieldValuesFromErp
+  langs:
+  - crmscript
+  name: 'GetFieldValuesFromErp'
+  nameWithType: NSErpSyncAgent.GetFieldValuesFromErp
+  fullName: CRMScript.NetServer.NSErpSyncAgent.GetFieldValuesFromErp
+  type: Method
+  summary: "\nGet Erp Field values\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nInteger erpConnectionId;\nInteger actorTypeErp;\nString erpKey;\nNSErpSyncFieldValue[] res = agent.GetFieldValuesFromErp(erpConnectionId, actorTypeErp, erpKey);</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.MoveErpFieldItem
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.MoveErpFieldItem
+  id: 'MoveErpFieldItem'
+  so.intellisense: NSErpSyncAgent.MoveErpFieldItem
+  langs:
+  - crmscript
+  name: 'MoveErpFieldItem'
+  nameWithType: NSErpSyncAgent.MoveErpFieldItem
+  fullName: CRMScript.NetServer.NSErpSyncAgent.MoveErpFieldItem
+  type: Method
+  summary: "\nMoves the rank of the erp field up or down\n"
+  example: 
+- uid: CRMScript.NetServer.NSErpSyncAgent.#ctor
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSErpSyncAgent
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSErpSyncAgent.#ctor
+  fullName: CRMScript.NetServer.NSErpSyncAgent.#ctor
+  type: Method
+  summary: "\nServices for the ERP Integration Services feature.\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.SaveActorTypeMapping
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.SaveActorTypeMapping
+  id: 'SaveActorTypeMapping'
+  so.intellisense: NSErpSyncAgent.SaveActorTypeMapping
+  langs:
+  - crmscript
+  name: 'SaveActorTypeMapping'
+  nameWithType: NSErpSyncAgent.SaveActorTypeMapping
+  fullName: CRMScript.NetServer.NSErpSyncAgent.SaveActorTypeMapping
+  type: Method
+  summary: "\nSave mappings for a connection/actor\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nNSErpSyncActorTypeMapping mapping;\nNSErpSyncActorTypeMapping res = agent.SaveActorTypeMapping(mapping);</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.SaveConnection
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.SaveConnection
+  id: 'SaveConnection'
+  so.intellisense: NSErpSyncAgent.SaveConnection
+  langs:
+  - crmscript
+  name: 'SaveConnection'
+  nameWithType: NSErpSyncAgent.SaveConnection
+  fullName: CRMScript.NetServer.NSErpSyncAgent.SaveConnection
+  type: Method
+  summary: "\nSaves a connection to the database.\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nNSErpConnection connection;\nNSErpConnection res = agent.SaveConnection(connection);</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.SaveConnectionListMappings
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.SaveConnectionListMappings
+  id: 'SaveConnectionListMappings'
+  so.intellisense: NSErpSyncAgent.SaveConnectionListMappings
+  langs:
+  - crmscript
+  name: 'SaveConnectionListMappings'
+  nameWithType: NSErpSyncAgent.SaveConnectionListMappings
+  fullName: CRMScript.NetServer.NSErpSyncAgent.SaveConnectionListMappings
+  type: Method
+  summary: "\nSaves a connection to the database.\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nNSErpConnectionListMappingContainer listMapping;\nNSErpConnectionListMappingContainer res = agent.SaveConnectionListMappings(listMapping);</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.SaveDefaultValueInfo
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.SaveDefaultValueInfo
+  id: 'SaveDefaultValueInfo'
+  so.intellisense: NSErpSyncAgent.SaveDefaultValueInfo
+  langs:
+  - crmscript
+  name: 'SaveDefaultValueInfo'
+  nameWithType: NSErpSyncAgent.SaveDefaultValueInfo
+  fullName: CRMScript.NetServer.NSErpSyncAgent.SaveDefaultValueInfo
+  type: Method
+  summary: "\nSave information about a default value for an ERP field\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nNSErpSyncDefaultValue erpSyncDefaultValue;\nNSErpSyncDefaultValue res = agent.SaveDefaultValueInfo(erpSyncDefaultValue);</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.SaveErpConnectionSyncPriorities
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.SaveErpConnectionSyncPriorities
+  id: 'SaveErpConnectionSyncPriorities'
+  so.intellisense: NSErpSyncAgent.SaveErpConnectionSyncPriorities
+  langs:
+  - crmscript
+  name: 'SaveErpConnectionSyncPriorities'
+  nameWithType: NSErpSyncAgent.SaveErpConnectionSyncPriorities
+  fullName: CRMScript.NetServer.NSErpSyncAgent.SaveErpConnectionSyncPriorities
+  type: Method
+  summary: "\nTakes an array of the ErpConnection ids and saves these as ordered sync priorities\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nInteger[] erpConnectionIds;\nBool res = agent.SaveErpConnectionSyncPriorities(erpConnectionIds);</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.SaveErpSyncConnectorEntity
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.SaveErpSyncConnectorEntity
+  id: 'SaveErpSyncConnectorEntity'
+  so.intellisense: NSErpSyncAgent.SaveErpSyncConnectorEntity
+  langs:
+  - crmscript
+  name: 'SaveErpSyncConnectorEntity'
+  nameWithType: NSErpSyncAgent.SaveErpSyncConnectorEntity
+  fullName: CRMScript.NetServer.NSErpSyncAgent.SaveErpSyncConnectorEntity
+  type: Method
+  summary: "\nUpdates the existing NSErpSyncConnectorEntity or creates a new NSErpSyncConnectorEntity if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>erpSyncConnectorEntity</strong>The NSErpSyncConnectorEntity to save.</li></ul><strong>Returns:</strong>NSErpSyncConnectorEntity<p></p>\n<pre><code>NSErpSync  agent;\nNSErpSyncConnectorEntity thing = agent.CreateDefaultErpSyncConnectorEntity();\nthing = agent.SaveErpSyncConnectorEntity(thing);</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSErpSync  agent;\nNSErpSyncConnectorEntity thing = agent.CreateDefaultErpSyncConnectorEntity();\nthing = agent.SaveErpSyncConnectorEntity(thing);</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.SupportsAdvancedSearch
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.SupportsAdvancedSearch
+  id: 'SupportsAdvancedSearch'
+  so.intellisense: NSErpSyncAgent.SupportsAdvancedSearch
+  langs:
+  - crmscript
+  name: 'SupportsAdvancedSearch'
+  nameWithType: NSErpSyncAgent.SupportsAdvancedSearch
+  fullName: CRMScript.NetServer.NSErpSyncAgent.SupportsAdvancedSearch
+  type: Method
+  summary: "\nIndicates if the connection supports advanced search for the given erp actor\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nInteger erpConnectionId;\nInteger erpActorType;\nBool res = agent.SupportsAdvancedSearch(erpConnectionId, erpActorType);</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.SyncAll
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.SyncAll
+  id: 'SyncAll'
+  so.intellisense: NSErpSyncAgent.SyncAll
+  langs:
+  - crmscript
+  name: 'SyncAll'
+  nameWithType: NSErpSyncAgent.SyncAll
+  fullName: CRMScript.NetServer.NSErpSyncAgent.SyncAll
+  type: Method
+  summary: "\nSync all active connections<p></p>\n<strong>Returns:</strong>NSPluginResponse<p></p>\n<pre><code>NSErpSyncAgent agent;\nNSPluginResponse res = agent.SyncAll();</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nNSPluginResponse res = agent.SyncAll();</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.TestConnectionByConfig
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.TestConnectionByConfig
+  id: 'TestConnectionByConfig'
+  so.intellisense: NSErpSyncAgent.TestConnectionByConfig
+  langs:
+  - crmscript
+  name: 'TestConnectionByConfig'
+  nameWithType: NSErpSyncAgent.TestConnectionByConfig
+  fullName: CRMScript.NetServer.NSErpSyncAgent.TestConnectionByConfig
+  type: Method
+  summary: "\nCRMScript method in the NSErpSyncAgent class that tests to see if the given connection has a valid connection to its connector.Tests to see if the given connection has a valid connection to its connector.<p></p>\nReturns true if the test was a success.<p></p>\n<code>Bool TestConnectionByConfig(Integer erpConnectionId, StringDictionary configFields)</code>\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nInteger erpConnectionId;\nStringDictionary configFields;\nBool res = agent.TestConnectionByConfig(erpConnectionId, configFields);</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.TestConnectionById
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.TestConnectionById
+  id: 'TestConnectionById'
+  so.intellisense: NSErpSyncAgent.TestConnectionById
+  langs:
+  - crmscript
+  name: 'TestConnectionById'
+  nameWithType: NSErpSyncAgent.TestConnectionById
+  fullName: CRMScript.NetServer.NSErpSyncAgent.TestConnectionById
+  type: Method
+  summary: "\nTests to see if we can establish a connection with the given config fields\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nInteger erpConnectionId;\nBool res = agent.TestConnectionById(erpConnectionId);</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.TestConnectorUrl
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.TestConnectorUrl
+  id: 'TestConnectorUrl'
+  so.intellisense: NSErpSyncAgent.TestConnectorUrl
+  langs:
+  - crmscript
+  name: 'TestConnectorUrl'
+  nameWithType: NSErpSyncAgent.TestConnectorUrl
+  fullName: CRMScript.NetServer.NSErpSyncAgent.TestConnectorUrl
+  type: Method
+  summary: "\nTest if connector urls anwers\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nString url;\nInteger res = agent.TestConnectorUrl(url);</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.ToggleErpConnectionActive
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.ToggleErpConnectionActive
+  id: 'ToggleErpConnectionActive'
+  so.intellisense: NSErpSyncAgent.ToggleErpConnectionActive
+  langs:
+  - crmscript
+  name: 'ToggleErpConnectionActive'
+  nameWithType: NSErpSyncAgent.ToggleErpConnectionActive
+  fullName: CRMScript.NetServer.NSErpSyncAgent.ToggleErpConnectionActive
+  type: Method
+  summary: "\nToggles the Active state of the connection\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nInteger erpConnectionId;\nString[] res = agent.ToggleErpConnectionActive(erpConnectionId);</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.UpdateConnectionFields
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.UpdateConnectionFields
+  id: 'UpdateConnectionFields'
+  so.intellisense: NSErpSyncAgent.UpdateConnectionFields
+  langs:
+  - crmscript
+  name: 'UpdateConnectionFields'
+  nameWithType: NSErpSyncAgent.UpdateConnectionFields
+  fullName: CRMScript.NetServer.NSErpSyncAgent.UpdateConnectionFields
+  type: Method
+  summary: "\nGets all supported actor types, and all fields for each actor type, and save this state to the CRM database\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nInteger erpConnectionId;\nBool res = agent.UpdateConnectionFields(erpConnectionId);</code></pre>\n"
+- uid: CRMScript.NetServer.NSErpSyncAgent.ValidateArchiveColumnConfig
+  commentId: M:CRMScript.NetServer.NSErpSyncAgent.ValidateArchiveColumnConfig
+  id: 'ValidateArchiveColumnConfig'
+  so.intellisense: NSErpSyncAgent.ValidateArchiveColumnConfig
+  langs:
+  - crmscript
+  name: 'ValidateArchiveColumnConfig'
+  nameWithType: NSErpSyncAgent.ValidateArchiveColumnConfig
+  fullName: CRMScript.NetServer.NSErpSyncAgent.ValidateArchiveColumnConfig
+  type: Method
+  summary: "\nClear field info from table SUPERLISTCOLUMNSIZE if field mapping changed on given connection\n"
+  example: 
+  - "\n<pre><code>NSErpSyncAgent agent;\nString listOwner;\nInteger erpConnectionId;\nagent.ValidateArchiveColumnConfig(listOwner, erpConnectionId);</code></pre>\n"
 references:
 - uid: CRMScript.NetServer.NSErpSyncAgent
   commentId: T:CRMScript.NetServer.NSErpSyncAgent

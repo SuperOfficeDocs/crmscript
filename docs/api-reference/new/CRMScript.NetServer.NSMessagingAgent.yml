@@ -7,6 +7,13 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSMessagingAgent.CreateMessage
+  - CRMScript.NetServer.NSMessagingAgent.GetDeliveryStatus
+  - CRMScript.NetServer.NSMessagingAgent.GetPlugins
+  - CRMScript.NetServer.NSMessagingAgent.#ctor
+  - CRMScript.NetServer.NSMessagingAgent.SendMessages
+  - CRMScript.NetServer.NSMessagingAgent.SendMessagesWithConfig
+  - CRMScript.NetServer.NSMessagingAgent.SetDeliveryStatus
   name: NSMessagingAgent
   nameWithType: NSMessagingAgent
   fullName: CRMScript.NetServer.NSMessagingAgent
@@ -14,6 +21,93 @@ items:
   summary: "\nSMS and other external messaging systems.\n"
   example: 
   - "\n<pre><code>NSMessagingAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSMessagingAgent.CreateMessage
+  commentId: M:CRMScript.NetServer.NSMessagingAgent.CreateMessage
+  id: 'CreateMessage'
+  so.intellisense: NSMessagingAgent.CreateMessage
+  langs:
+  - crmscript
+  name: 'CreateMessage'
+  nameWithType: NSMessagingAgent.CreateMessage
+  fullName: CRMScript.NetServer.NSMessagingAgent.CreateMessage
+  type: Method
+  summary: "\nCreate a new message and insert it in the message queue. (inbox)\n"
+  example: 
+- uid: CRMScript.NetServer.NSMessagingAgent.GetDeliveryStatus
+  commentId: M:CRMScript.NetServer.NSMessagingAgent.GetDeliveryStatus
+  id: 'GetDeliveryStatus'
+  so.intellisense: NSMessagingAgent.GetDeliveryStatus
+  langs:
+  - crmscript
+  name: 'GetDeliveryStatus'
+  nameWithType: NSMessagingAgent.GetDeliveryStatus
+  fullName: CRMScript.NetServer.NSMessagingAgent.GetDeliveryStatus
+  type: Method
+  summary: "\nGet delivery status\n"
+  example: 
+- uid: CRMScript.NetServer.NSMessagingAgent.GetPlugins
+  commentId: M:CRMScript.NetServer.NSMessagingAgent.GetPlugins
+  id: 'GetPlugins'
+  so.intellisense: NSMessagingAgent.GetPlugins
+  langs:
+  - crmscript
+  name: 'GetPlugins'
+  nameWithType: NSMessagingAgent.GetPlugins
+  fullName: CRMScript.NetServer.NSMessagingAgent.GetPlugins
+  type: Method
+  summary: 
+  example: 
+- uid: CRMScript.NetServer.NSMessagingAgent.#ctor
+  commentId: M:CRMScript.NetServer.NSMessagingAgent.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSMessagingAgent
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSMessagingAgent.#ctor
+  fullName: CRMScript.NetServer.NSMessagingAgent.#ctor
+  type: Method
+  summary: "\nSMS and other external messaging systems.\n"
+  example: 
+  - "\n<pre><code>NSMessagingAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSMessagingAgent.SendMessages
+  commentId: M:CRMScript.NetServer.NSMessagingAgent.SendMessages
+  id: 'SendMessages'
+  so.intellisense: NSMessagingAgent.SendMessages
+  langs:
+  - crmscript
+  name: 'SendMessages'
+  nameWithType: NSMessagingAgent.SendMessages
+  fullName: CRMScript.NetServer.NSMessagingAgent.SendMessages
+  type: Method
+  summary: "\nSend an array of messages\n"
+  example: 
+  - "\n<pre><code>NSMessagingAgent agent;\nString plugin;\nNSOutgoingMessage[] outgoingMessages;\nNSMessageDeliveryStatus[] res = agent.SendMessages(plugin, outgoingMessages);</code></pre>\n"
+- uid: CRMScript.NetServer.NSMessagingAgent.SendMessagesWithConfig
+  commentId: M:CRMScript.NetServer.NSMessagingAgent.SendMessagesWithConfig
+  id: 'SendMessagesWithConfig'
+  so.intellisense: NSMessagingAgent.SendMessagesWithConfig
+  langs:
+  - crmscript
+  name: 'SendMessagesWithConfig'
+  nameWithType: NSMessagingAgent.SendMessagesWithConfig
+  fullName: CRMScript.NetServer.NSMessagingAgent.SendMessagesWithConfig
+  type: Method
+  summary: "\nSend an array of messages using given config\n"
+  example: 
+  - "\n<pre><code>NSMessagingAgent agent;\nString plugin;\nNSOutgoingMessage[] outgoingMessages;\nStringDictionary config;\nNSMessageDeliveryStatus[] res = agent.SendMessagesWithConfig(plugin, outgoingMessages, config);</code></pre>\n"
+- uid: CRMScript.NetServer.NSMessagingAgent.SetDeliveryStatus
+  commentId: M:CRMScript.NetServer.NSMessagingAgent.SetDeliveryStatus
+  id: 'SetDeliveryStatus'
+  so.intellisense: NSMessagingAgent.SetDeliveryStatus
+  langs:
+  - crmscript
+  name: 'SetDeliveryStatus'
+  nameWithType: NSMessagingAgent.SetDeliveryStatus
+  fullName: CRMScript.NetServer.NSMessagingAgent.SetDeliveryStatus
+  type: Method
+  summary: "\nSet or change the delivery status on an outgoing messsage.\n"
+  example: 
 references:
 - uid: CRMScript.NetServer.NSMessagingAgent
   commentId: T:CRMScript.NetServer.NSMessagingAgent

@@ -7,12 +7,305 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSEMailEnvelope.GetEMailSOInfo
+  - CRMScript.NetServer.NSEMailEnvelope.GetFlags
+  - CRMScript.NetServer.NSEMailEnvelope.GetFrom
+  - CRMScript.NetServer.NSEMailEnvelope.GetMessageId
+  - CRMScript.NetServer.NSEMailEnvelope.GetPriority
+  - CRMScript.NetServer.NSEMailEnvelope.GetSent
+  - CRMScript.NetServer.NSEMailEnvelope.GetServerId
+  - CRMScript.NetServer.NSEMailEnvelope.GetSize
+  - CRMScript.NetServer.NSEMailEnvelope.GetSubject
+  - CRMScript.NetServer.NSEMailEnvelope.GetTo
+  - CRMScript.NetServer.NSEMailEnvelope.#ctor
+  - CRMScript.NetServer.NSEMailEnvelope.SetEMailSOInfo
+  - CRMScript.NetServer.NSEMailEnvelope.SetFlags
+  - CRMScript.NetServer.NSEMailEnvelope.SetFrom
+  - CRMScript.NetServer.NSEMailEnvelope.SetMessageId
+  - CRMScript.NetServer.NSEMailEnvelope.SetPriority
+  - CRMScript.NetServer.NSEMailEnvelope.SetSent
+  - CRMScript.NetServer.NSEMailEnvelope.SetServerId
+  - CRMScript.NetServer.NSEMailEnvelope.SetSize
+  - CRMScript.NetServer.NSEMailEnvelope.SetSubject
+  - CRMScript.NetServer.NSEMailEnvelope.SetTo
   name: NSEMailEnvelope
   nameWithType: NSEMailEnvelope
   fullName: CRMScript.NetServer.NSEMailEnvelope
   type: Class
-  summary: ""
+  summary: 
   example: 
+- uid: CRMScript.NetServer.NSEMailEnvelope.GetEMailSOInfo
+  commentId: M:CRMScript.NetServer.NSEMailEnvelope.GetEMailSOInfo
+  id: 'GetEMailSOInfo'
+  so.intellisense: NSEMailEnvelope.GetEMailSOInfo
+  langs:
+  - crmscript
+  name: 'GetEMailSOInfo'
+  nameWithType: NSEMailEnvelope.GetEMailSOInfo
+  fullName: CRMScript.NetServer.NSEMailEnvelope.GetEMailSOInfo
+  type: Method
+  summary: "\nGlue between SuperOffice data and an e-mail.<p></p>\n<strong>Returns:</strong>NSEMailSOInfo<p></p>\n<pre><code>NSEMailEnvelope thing;\nNSEMailSOInfo eMailSOInfo  = thing.GetEMailSOInfo();</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSEMailEnvelope thing;\nNSEMailSOInfo eMailSOInfo  = thing.GetEMailSOInfo();</code></pre>\n"
+- uid: CRMScript.NetServer.NSEMailEnvelope.GetFlags
+  commentId: M:CRMScript.NetServer.NSEMailEnvelope.GetFlags
+  id: 'GetFlags'
+  so.intellisense: NSEMailEnvelope.GetFlags
+  langs:
+  - crmscript
+  name: 'GetFlags'
+  nameWithType: NSEMailEnvelope.GetFlags
+  fullName: CRMScript.NetServer.NSEMailEnvelope.GetFlags
+  type: Method
+  summary: "\nFlag status of this mail (unread, replied, deleted )<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<ul><li>Enum: 0 = None</li><li>Enum: 1 = Seen</li><li>Enum: 2 = Deleted</li><li>Enum: 4 = Recent</li><li>Enum: 8 = Flagged</li><li>Enum: 16 = Draft</li><li>Enum: 32 = Answered</li></ul><pre><code>NSEMailEnvelope thing;\nInteger flags  = thing.GetFlags();</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSEMailEnvelope thing;\nInteger flags  = thing.GetFlags();</code></pre>\n"
+- uid: CRMScript.NetServer.NSEMailEnvelope.GetFrom
+  commentId: M:CRMScript.NetServer.NSEMailEnvelope.GetFrom
+  id: 'GetFrom'
+  so.intellisense: NSEMailEnvelope.GetFrom
+  langs:
+  - crmscript
+  name: 'GetFrom'
+  nameWithType: NSEMailEnvelope.GetFrom
+  fullName: CRMScript.NetServer.NSEMailEnvelope.GetFrom
+  type: Method
+  summary: "\nWho did the e-mail originate from<p></p>\n<strong>Returns:</strong>NSEMailAddress<p></p>\n<pre><code>NSEMailEnvelope thing;\nNSEMailAddress from  = thing.GetFrom();</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSEMailEnvelope thing;\nNSEMailAddress from  = thing.GetFrom();</code></pre>\n"
+- uid: CRMScript.NetServer.NSEMailEnvelope.GetMessageId
+  commentId: M:CRMScript.NetServer.NSEMailEnvelope.GetMessageId
+  id: 'GetMessageId'
+  so.intellisense: NSEMailEnvelope.GetMessageId
+  langs:
+  - crmscript
+  name: 'GetMessageId'
+  nameWithType: NSEMailEnvelope.GetMessageId
+  fullName: CRMScript.NetServer.NSEMailEnvelope.GetMessageId
+  type: Method
+  summary: "\nUnique id of e-mails<p></p>\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSEMailEnvelope thing;\nString messageId  = thing.GetMessageId();</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSEMailEnvelope thing;\nString messageId  = thing.GetMessageId();</code></pre>\n"
+- uid: CRMScript.NetServer.NSEMailEnvelope.GetPriority
+  commentId: M:CRMScript.NetServer.NSEMailEnvelope.GetPriority
+  id: 'GetPriority'
+  so.intellisense: NSEMailEnvelope.GetPriority
+  langs:
+  - crmscript
+  name: 'GetPriority'
+  nameWithType: NSEMailEnvelope.GetPriority
+  fullName: CRMScript.NetServer.NSEMailEnvelope.GetPriority
+  type: Method
+  summary: "\nImportance of the e-mail<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<ul><li>Enum: 0 = NoPriority</li><li>Enum: 1 = Highest</li><li>Enum: 2 = High</li><li>Enum: 3 = Normal</li><li>Enum: 4 = Low</li><li>Enum: 5 = Lowest</li></ul><pre><code>NSEMailEnvelope thing;\nInteger priority  = thing.GetPriority();</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSEMailEnvelope thing;\nInteger priority  = thing.GetPriority();</code></pre>\n"
+- uid: CRMScript.NetServer.NSEMailEnvelope.GetSent
+  commentId: M:CRMScript.NetServer.NSEMailEnvelope.GetSent
+  id: 'GetSent'
+  so.intellisense: NSEMailEnvelope.GetSent
+  langs:
+  - crmscript
+  name: 'GetSent'
+  nameWithType: NSEMailEnvelope.GetSent
+  fullName: CRMScript.NetServer.NSEMailEnvelope.GetSent
+  type: Method
+  summary: "\nWhen was the e-mail sent<p></p>\n<strong>Returns:</strong>DateTime<p></p>\n<pre><code>NSEMailEnvelope thing;\nDateTime sent  = thing.GetSent();</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSEMailEnvelope thing;\nDateTime sent  = thing.GetSent();</code></pre>\n"
+- uid: CRMScript.NetServer.NSEMailEnvelope.GetServerId
+  commentId: M:CRMScript.NetServer.NSEMailEnvelope.GetServerId
+  id: 'GetServerId'
+  so.intellisense: NSEMailEnvelope.GetServerId
+  langs:
+  - crmscript
+  name: 'GetServerId'
+  nameWithType: NSEMailEnvelope.GetServerId
+  fullName: CRMScript.NetServer.NSEMailEnvelope.GetServerId
+  type: Method
+  summary: "\nUnique id for the e-mail on the server<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<pre><code>NSEMailEnvelope thing;\nInteger serverId  = thing.GetServerId();</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSEMailEnvelope thing;\nInteger serverId  = thing.GetServerId();</code></pre>\n"
+- uid: CRMScript.NetServer.NSEMailEnvelope.GetSize
+  commentId: M:CRMScript.NetServer.NSEMailEnvelope.GetSize
+  id: 'GetSize'
+  so.intellisense: NSEMailEnvelope.GetSize
+  langs:
+  - crmscript
+  name: 'GetSize'
+  nameWithType: NSEMailEnvelope.GetSize
+  fullName: CRMScript.NetServer.NSEMailEnvelope.GetSize
+  type: Method
+  summary: "\nTotal size of the e-mail<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<pre><code>NSEMailEnvelope thing;\nInteger size  = thing.GetSize();</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSEMailEnvelope thing;\nInteger size  = thing.GetSize();</code></pre>\n"
+- uid: CRMScript.NetServer.NSEMailEnvelope.GetSubject
+  commentId: M:CRMScript.NetServer.NSEMailEnvelope.GetSubject
+  id: 'GetSubject'
+  so.intellisense: NSEMailEnvelope.GetSubject
+  langs:
+  - crmscript
+  name: 'GetSubject'
+  nameWithType: NSEMailEnvelope.GetSubject
+  fullName: CRMScript.NetServer.NSEMailEnvelope.GetSubject
+  type: Method
+  summary: "\nSubject of the e-mail<p></p>\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSEMailEnvelope thing;\nString subject  = thing.GetSubject();</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSEMailEnvelope thing;\nString subject  = thing.GetSubject();</code></pre>\n"
+- uid: CRMScript.NetServer.NSEMailEnvelope.GetTo
+  commentId: M:CRMScript.NetServer.NSEMailEnvelope.GetTo
+  id: 'GetTo'
+  so.intellisense: NSEMailEnvelope.GetTo
+  langs:
+  - crmscript
+  name: 'GetTo'
+  nameWithType: NSEMailEnvelope.GetTo
+  fullName: CRMScript.NetServer.NSEMailEnvelope.GetTo
+  type: Method
+  summary: "\nTo recipients of e-mail<p></p>\n<strong>Returns:</strong>NSEMailAddress[]<p></p>\n<pre><code>NSEMailEnvelope thing;\nNSEMailAddress[] to  = thing.GetTo();</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSEMailEnvelope thing;\nNSEMailAddress[] to  = thing.GetTo();</code></pre>\n"
+- uid: CRMScript.NetServer.NSEMailEnvelope.#ctor
+  commentId: M:CRMScript.NetServer.NSEMailEnvelope.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSEMailEnvelope
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSEMailEnvelope.#ctor
+  fullName: CRMScript.NetServer.NSEMailEnvelope.#ctor
+  type: Method
+  summary: 
+  example: 
+- uid: CRMScript.NetServer.NSEMailEnvelope.SetEMailSOInfo
+  commentId: M:CRMScript.NetServer.NSEMailEnvelope.SetEMailSOInfo
+  id: 'SetEMailSOInfo'
+  so.intellisense: NSEMailEnvelope.SetEMailSOInfo
+  langs:
+  - crmscript
+  name: 'SetEMailSOInfo'
+  nameWithType: NSEMailEnvelope.SetEMailSOInfo
+  fullName: CRMScript.NetServer.NSEMailEnvelope.SetEMailSOInfo
+  type: Method
+  summary: "\nGlue between SuperOffice data and an e-mail.<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>eMailSOInfo</strong>NSEMailSOInfo</li></ul><pre><code>NSEMailEnvelope thing;\nNSEMailSOInfo eMailSOInfo;\nthing.SetEMailSOInfo(eMailSOInfo);</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSEMailEnvelope thing;\nNSEMailSOInfo eMailSOInfo;\nthing.SetEMailSOInfo(eMailSOInfo);</code></pre>\n"
+- uid: CRMScript.NetServer.NSEMailEnvelope.SetFlags
+  commentId: M:CRMScript.NetServer.NSEMailEnvelope.SetFlags
+  id: 'SetFlags'
+  so.intellisense: NSEMailEnvelope.SetFlags
+  langs:
+  - crmscript
+  name: 'SetFlags'
+  nameWithType: NSEMailEnvelope.SetFlags
+  fullName: CRMScript.NetServer.NSEMailEnvelope.SetFlags
+  type: Method
+  summary: "\nFlag status of this mail (unread, replied, deleted )<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>flags</strong>Integer</li><li>Enum: 0 = None</li><li>Enum: 1 = Seen</li><li>Enum: 2 = Deleted</li><li>Enum: 4 = Recent</li><li>Enum: 8 = Flagged</li><li>Enum: 16 = Draft</li><li>Enum: 32 = Answered</li></ul><pre><code>NSEMailEnvelope thing;\nInteger flags;\nthing.SetFlags(flags);</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSEMailEnvelope thing;\nInteger flags;\nthing.SetFlags(flags);</code></pre>\n"
+- uid: CRMScript.NetServer.NSEMailEnvelope.SetFrom
+  commentId: M:CRMScript.NetServer.NSEMailEnvelope.SetFrom
+  id: 'SetFrom'
+  so.intellisense: NSEMailEnvelope.SetFrom
+  langs:
+  - crmscript
+  name: 'SetFrom'
+  nameWithType: NSEMailEnvelope.SetFrom
+  fullName: CRMScript.NetServer.NSEMailEnvelope.SetFrom
+  type: Method
+  summary: "\nWho did the e-mail originate from<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>from</strong>NSEMailAddress</li></ul><pre><code>NSEMailEnvelope thing;\nNSEMailAddress from;\nthing.SetFrom(from);</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSEMailEnvelope thing;\nNSEMailAddress from;\nthing.SetFrom(from);</code></pre>\n"
+- uid: CRMScript.NetServer.NSEMailEnvelope.SetMessageId
+  commentId: M:CRMScript.NetServer.NSEMailEnvelope.SetMessageId
+  id: 'SetMessageId'
+  so.intellisense: NSEMailEnvelope.SetMessageId
+  langs:
+  - crmscript
+  name: 'SetMessageId'
+  nameWithType: NSEMailEnvelope.SetMessageId
+  fullName: CRMScript.NetServer.NSEMailEnvelope.SetMessageId
+  type: Method
+  summary: "\nUnique id of e-mails<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>messageId</strong>String</li></ul><pre><code>NSEMailEnvelope thing;\nString messageId;\nthing.SetMessageId(messageId);</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSEMailEnvelope thing;\nString messageId;\nthing.SetMessageId(messageId);</code></pre>\n"
+- uid: CRMScript.NetServer.NSEMailEnvelope.SetPriority
+  commentId: M:CRMScript.NetServer.NSEMailEnvelope.SetPriority
+  id: 'SetPriority'
+  so.intellisense: NSEMailEnvelope.SetPriority
+  langs:
+  - crmscript
+  name: 'SetPriority'
+  nameWithType: NSEMailEnvelope.SetPriority
+  fullName: CRMScript.NetServer.NSEMailEnvelope.SetPriority
+  type: Method
+  summary: "\nImportance of the e-mail<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>priority</strong>Integer</li><li>Enum: 0 = NoPriority</li><li>Enum: 1 = Highest</li><li>Enum: 2 = High</li><li>Enum: 3 = Normal</li><li>Enum: 4 = Low</li><li>Enum: 5 = Lowest</li></ul><pre><code>NSEMailEnvelope thing;\nInteger priority;\nthing.SetPriority(priority);</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSEMailEnvelope thing;\nInteger priority;\nthing.SetPriority(priority);</code></pre>\n"
+- uid: CRMScript.NetServer.NSEMailEnvelope.SetSent
+  commentId: M:CRMScript.NetServer.NSEMailEnvelope.SetSent
+  id: 'SetSent'
+  so.intellisense: NSEMailEnvelope.SetSent
+  langs:
+  - crmscript
+  name: 'SetSent'
+  nameWithType: NSEMailEnvelope.SetSent
+  fullName: CRMScript.NetServer.NSEMailEnvelope.SetSent
+  type: Method
+  summary: "\nWhen was the e-mail sent<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>sent</strong>DateTime</li></ul><pre><code>NSEMailEnvelope thing;\nDateTime sent;\nthing.SetSent(sent);</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSEMailEnvelope thing;\nDateTime sent;\nthing.SetSent(sent);</code></pre>\n"
+- uid: CRMScript.NetServer.NSEMailEnvelope.SetServerId
+  commentId: M:CRMScript.NetServer.NSEMailEnvelope.SetServerId
+  id: 'SetServerId'
+  so.intellisense: NSEMailEnvelope.SetServerId
+  langs:
+  - crmscript
+  name: 'SetServerId'
+  nameWithType: NSEMailEnvelope.SetServerId
+  fullName: CRMScript.NetServer.NSEMailEnvelope.SetServerId
+  type: Method
+  summary: "\nUnique id for the e-mail on the server<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>serverId</strong>Integer</li></ul><pre><code>NSEMailEnvelope thing;\nInteger serverId;\nthing.SetServerId(serverId);</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSEMailEnvelope thing;\nInteger serverId;\nthing.SetServerId(serverId);</code></pre>\n"
+- uid: CRMScript.NetServer.NSEMailEnvelope.SetSize
+  commentId: M:CRMScript.NetServer.NSEMailEnvelope.SetSize
+  id: 'SetSize'
+  so.intellisense: NSEMailEnvelope.SetSize
+  langs:
+  - crmscript
+  name: 'SetSize'
+  nameWithType: NSEMailEnvelope.SetSize
+  fullName: CRMScript.NetServer.NSEMailEnvelope.SetSize
+  type: Method
+  summary: "\nTotal size of the e-mail<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>size</strong>Integer</li></ul><pre><code>NSEMailEnvelope thing;\nInteger size;\nthing.SetSize(size);</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSEMailEnvelope thing;\nInteger size;\nthing.SetSize(size);</code></pre>\n"
+- uid: CRMScript.NetServer.NSEMailEnvelope.SetSubject
+  commentId: M:CRMScript.NetServer.NSEMailEnvelope.SetSubject
+  id: 'SetSubject'
+  so.intellisense: NSEMailEnvelope.SetSubject
+  langs:
+  - crmscript
+  name: 'SetSubject'
+  nameWithType: NSEMailEnvelope.SetSubject
+  fullName: CRMScript.NetServer.NSEMailEnvelope.SetSubject
+  type: Method
+  summary: "\nSubject of the e-mail<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>subject</strong>String</li></ul><pre><code>NSEMailEnvelope thing;\nString subject;\nthing.SetSubject(subject);</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSEMailEnvelope thing;\nString subject;\nthing.SetSubject(subject);</code></pre>\n"
+- uid: CRMScript.NetServer.NSEMailEnvelope.SetTo
+  commentId: M:CRMScript.NetServer.NSEMailEnvelope.SetTo
+  id: 'SetTo'
+  so.intellisense: NSEMailEnvelope.SetTo
+  langs:
+  - crmscript
+  name: 'SetTo'
+  nameWithType: NSEMailEnvelope.SetTo
+  fullName: CRMScript.NetServer.NSEMailEnvelope.SetTo
+  type: Method
+  summary: "\nTo recipients of e-mail<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>to</strong>NSEMailAddress[]</li></ul><pre><code>NSEMailEnvelope thing;\nNSEMailAddress[] to;\nthing.SetTo(to);</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSEMailEnvelope thing;\nNSEMailAddress[] to;\nthing.SetTo(to);</code></pre>\n"
 references:
 - uid: CRMScript.NetServer.NSEMailEnvelope
   commentId: T:CRMScript.NetServer.NSEMailEnvelope

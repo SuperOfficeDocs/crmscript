@@ -7,6 +7,21 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSViewStateAgent.DeleteHistory
+  - CRMScript.NetServer.NSViewStateAgent.GetCurrent
+  - CRMScript.NetServer.NSViewStateAgent.GetHistories
+  - CRMScript.NetServer.NSViewStateAgent.GetHistoriesByName
+  - CRMScript.NetServer.NSViewStateAgent.GetHistoriesByNames
+  - CRMScript.NetServer.NSViewStateAgent.GetHistoriesByNamesAndIds
+  - CRMScript.NetServer.NSViewStateAgent.GetHistory
+  - CRMScript.NetServer.NSViewStateAgent.GetHistoryLengthPrefValue
+  - CRMScript.NetServer.NSViewStateAgent.GetNextCurrent
+  - CRMScript.NetServer.NSViewStateAgent.GetPreviousCurrent
+  - CRMScript.NetServer.NSViewStateAgent.#ctor
+  - CRMScript.NetServer.NSViewStateAgent.SaveCurrent
+  - CRMScript.NetServer.NSViewStateAgent.SaveCurrents
+  - CRMScript.NetServer.NSViewStateAgent.SaveHistories
+  - CRMScript.NetServer.NSViewStateAgent.SetHistoryLengthPrefValue
   name: NSViewStateAgent
   nameWithType: NSViewStateAgent
   fullName: CRMScript.NetServer.NSViewStateAgent
@@ -14,6 +29,199 @@ items:
   summary: "\nUser interface view state, history, currentXXX values.\n"
   example: 
   - "\n<pre><code>NSViewStateAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSViewStateAgent.DeleteHistory
+  commentId: M:CRMScript.NetServer.NSViewStateAgent.DeleteHistory
+  id: 'DeleteHistory'
+  so.intellisense: NSViewStateAgent.DeleteHistory
+  langs:
+  - crmscript
+  name: 'DeleteHistory'
+  nameWithType: NSViewStateAgent.DeleteHistory
+  fullName: CRMScript.NetServer.NSViewStateAgent.DeleteHistory
+  type: Method
+  summary: "\nDeletes the history element\n"
+  example: 
+- uid: CRMScript.NetServer.NSViewStateAgent.GetCurrent
+  commentId: M:CRMScript.NetServer.NSViewStateAgent.GetCurrent
+  id: 'GetCurrent'
+  so.intellisense: NSViewStateAgent.GetCurrent
+  langs:
+  - crmscript
+  name: 'GetCurrent'
+  nameWithType: NSViewStateAgent.GetCurrent
+  fullName: CRMScript.NetServer.NSViewStateAgent.GetCurrent
+  type: Method
+  summary: "\nGet the current (most recent) value of the history list. This is the item with rank = 1. If no item exists a default value is returned. This is usually the first item in the table representing the history list.\n"
+  example: 
+  - "\n<pre><code>NSViewStateAgent agent;\nString historyName;\nNSHistory res = agent.GetCurrent(historyName);</code></pre>\n"
+- uid: CRMScript.NetServer.NSViewStateAgent.GetHistories
+  commentId: M:CRMScript.NetServer.NSViewStateAgent.GetHistories
+  id: 'GetHistories'
+  so.intellisense: NSViewStateAgent.GetHistories
+  langs:
+  - crmscript
+  name: 'GetHistories'
+  nameWithType: NSViewStateAgent.GetHistories
+  fullName: CRMScript.NetServer.NSViewStateAgent.GetHistories
+  type: Method
+  summary: "\nReturns all history items that belong to the currently logged in user<p></p>\n<strong>Returns:</strong>NSHistory[]<p></p>\n<pre><code>NSViewStateAgent agent;\nNSHistory[] res = agent.GetHistories();</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSViewStateAgent agent;\nNSHistory[] res = agent.GetHistories();</code></pre>\n"
+- uid: CRMScript.NetServer.NSViewStateAgent.GetHistoriesByName
+  commentId: M:CRMScript.NetServer.NSViewStateAgent.GetHistoriesByName
+  id: 'GetHistoriesByName'
+  so.intellisense: NSViewStateAgent.GetHistoriesByName
+  langs:
+  - crmscript
+  name: 'GetHistoriesByName'
+  nameWithType: NSViewStateAgent.GetHistoriesByName
+  fullName: CRMScript.NetServer.NSViewStateAgent.GetHistoriesByName
+  type: Method
+  summary: "\nReturns the named history list that belong to the currently logged in user\n"
+  example: 
+  - "\n<pre><code>NSViewStateAgent agent;\nString historyName;\nNSHistory[] res = agent.GetHistoriesByName(historyName);</code></pre>\n"
+- uid: CRMScript.NetServer.NSViewStateAgent.GetHistoriesByNames
+  commentId: M:CRMScript.NetServer.NSViewStateAgent.GetHistoriesByNames
+  id: 'GetHistoriesByNames'
+  so.intellisense: NSViewStateAgent.GetHistoriesByNames
+  langs:
+  - crmscript
+  name: 'GetHistoriesByNames'
+  nameWithType: NSViewStateAgent.GetHistoriesByNames
+  fullName: CRMScript.NetServer.NSViewStateAgent.GetHistoriesByNames
+  type: Method
+  summary: "\nReturns the named history lists that belong to the currently logged in user\n"
+  example: 
+  - "\n<pre><code>NSViewStateAgent agent;\nString[] historyNames;\nNSHistory[] res = agent.GetHistoriesByNames(historyNames);</code></pre>\n"
+- uid: CRMScript.NetServer.NSViewStateAgent.GetHistoriesByNamesAndIds
+  commentId: M:CRMScript.NetServer.NSViewStateAgent.GetHistoriesByNamesAndIds
+  id: 'GetHistoriesByNamesAndIds'
+  so.intellisense: NSViewStateAgent.GetHistoriesByNamesAndIds
+  langs:
+  - crmscript
+  name: 'GetHistoriesByNamesAndIds'
+  nameWithType: NSViewStateAgent.GetHistoriesByNamesAndIds
+  fullName: CRMScript.NetServer.NSViewStateAgent.GetHistoriesByNamesAndIds
+  type: Method
+  summary: "\nReturns history data for the named entities and the given ids* which may not directly correspond to the current history records in the database.<para/>Use this method if you know exactly which items you need, regardless of whether they are in the current history or not.<para/>The history in the database is not changed or even looked at by this method.\n"
+  example: 
+  - "\n<pre><code>NSViewStateAgent agent;\nNSHistoryRequest[] requests;\nNSHistory[] res = agent.GetHistoriesByNamesAndIds(requests);</code></pre>\n"
+- uid: CRMScript.NetServer.NSViewStateAgent.GetHistory
+  commentId: M:CRMScript.NetServer.NSViewStateAgent.GetHistory
+  id: 'GetHistory'
+  so.intellisense: NSViewStateAgent.GetHistory
+  langs:
+  - crmscript
+  name: 'GetHistory'
+  nameWithType: NSViewStateAgent.GetHistory
+  fullName: CRMScript.NetServer.NSViewStateAgent.GetHistory
+  type: Method
+  summary: "\nGets a NSHistory object.\n"
+  example: 
+  - "\n<pre><code>NSViewStateAgent agent;\nNSHistory thing = agent.GetHistory(123);</code></pre>\n"
+- uid: CRMScript.NetServer.NSViewStateAgent.GetHistoryLengthPrefValue
+  commentId: M:CRMScript.NetServer.NSViewStateAgent.GetHistoryLengthPrefValue
+  id: 'GetHistoryLengthPrefValue'
+  so.intellisense: NSViewStateAgent.GetHistoryLengthPrefValue
+  langs:
+  - crmscript
+  name: 'GetHistoryLengthPrefValue'
+  nameWithType: NSViewStateAgent.GetHistoryLengthPrefValue
+  fullName: CRMScript.NetServer.NSViewStateAgent.GetHistoryLengthPrefValue
+  type: Method
+  summary: "\nGet the logged on user's preferred history list length. Will return the system preference if no user preferences are available.<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<pre><code>NSViewStateAgent agent;\nInteger res = agent.GetHistoryLengthPrefValue();</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSViewStateAgent agent;\nInteger res = agent.GetHistoryLengthPrefValue();</code></pre>\n"
+- uid: CRMScript.NetServer.NSViewStateAgent.GetNextCurrent
+  commentId: M:CRMScript.NetServer.NSViewStateAgent.GetNextCurrent
+  id: 'GetNextCurrent'
+  so.intellisense: NSViewStateAgent.GetNextCurrent
+  langs:
+  - crmscript
+  name: 'GetNextCurrent'
+  nameWithType: NSViewStateAgent.GetNextCurrent
+  fullName: CRMScript.NetServer.NSViewStateAgent.GetNextCurrent
+  type: Method
+  summary: "\nReturns the next current item. If no item exists a default value is returned. This is usually the first item in the table representing the history list.\n"
+  example: 
+  - "\n<pre><code>NSViewStateAgent agent;\nString historyName;\nInteger id;\nNSHistory res = agent.GetNextCurrent(historyName, id);</code></pre>\n"
+- uid: CRMScript.NetServer.NSViewStateAgent.GetPreviousCurrent
+  commentId: M:CRMScript.NetServer.NSViewStateAgent.GetPreviousCurrent
+  id: 'GetPreviousCurrent'
+  so.intellisense: NSViewStateAgent.GetPreviousCurrent
+  langs:
+  - crmscript
+  name: 'GetPreviousCurrent'
+  nameWithType: NSViewStateAgent.GetPreviousCurrent
+  fullName: CRMScript.NetServer.NSViewStateAgent.GetPreviousCurrent
+  type: Method
+  summary: "\nReturns the previous current item. If no item exists a default value is returned. This is usually the first item in the table representing the history list.\n"
+  example: 
+  - "\n<pre><code>NSViewStateAgent agent;\nString historyName;\nInteger id;\nNSHistory res = agent.GetPreviousCurrent(historyName, id);</code></pre>\n"
+- uid: CRMScript.NetServer.NSViewStateAgent.#ctor
+  commentId: M:CRMScript.NetServer.NSViewStateAgent.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSViewStateAgent
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSViewStateAgent.#ctor
+  fullName: CRMScript.NetServer.NSViewStateAgent.#ctor
+  type: Method
+  summary: "\nUser interface view state, history, currentXXX values.\n"
+  example: 
+  - "\n<pre><code>NSViewStateAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSViewStateAgent.SaveCurrent
+  commentId: M:CRMScript.NetServer.NSViewStateAgent.SaveCurrent
+  id: 'SaveCurrent'
+  so.intellisense: NSViewStateAgent.SaveCurrent
+  langs:
+  - crmscript
+  name: 'SaveCurrent'
+  nameWithType: NSViewStateAgent.SaveCurrent
+  fullName: CRMScript.NetServer.NSViewStateAgent.SaveCurrent
+  type: Method
+  summary: "\nSaving the current history item. This history item is saved with Rank = 1, and all the remaining elements rank values are shifted one down. The list is maintained with the max lenght of the History list length preference.\n"
+  example: 
+  - "\n<pre><code>NSViewStateAgent agent;\nNSHistory current;\nNSHistory res = agent.SaveCurrent(current);</code></pre>\n"
+- uid: CRMScript.NetServer.NSViewStateAgent.SaveCurrents
+  commentId: M:CRMScript.NetServer.NSViewStateAgent.SaveCurrents
+  id: 'SaveCurrents'
+  so.intellisense: NSViewStateAgent.SaveCurrents
+  langs:
+  - crmscript
+  name: 'SaveCurrents'
+  nameWithType: NSViewStateAgent.SaveCurrents
+  fullName: CRMScript.NetServer.NSViewStateAgent.SaveCurrents
+  type: Method
+  summary: "\nSaves the history elements as the current value for their respective lists. If more than one item is submitted for the same list, they are added sequently, meaning that the last one is the most current.\n"
+  example: 
+  - "\n<pre><code>NSViewStateAgent agent;\nNSHistory[] currents;\nNSHistory[] res = agent.SaveCurrents(currents);</code></pre>\n"
+- uid: CRMScript.NetServer.NSViewStateAgent.SaveHistories
+  commentId: M:CRMScript.NetServer.NSViewStateAgent.SaveHistories
+  id: 'SaveHistories'
+  so.intellisense: NSViewStateAgent.SaveHistories
+  langs:
+  - crmscript
+  name: 'SaveHistories'
+  nameWithType: NSViewStateAgent.SaveHistories
+  fullName: CRMScript.NetServer.NSViewStateAgent.SaveHistories
+  type: Method
+  summary: "\nReplaces the existing history-list for the currently logged in user. All elements must belong to the same history list. If not they are ignored.\n"
+  example: 
+  - "\n<pre><code>NSViewStateAgent agent;\nString historyName;\nNSHistory[] history;\nNSHistory[] res = agent.SaveHistories(historyName, history);</code></pre>\n"
+- uid: CRMScript.NetServer.NSViewStateAgent.SetHistoryLengthPrefValue
+  commentId: M:CRMScript.NetServer.NSViewStateAgent.SetHistoryLengthPrefValue
+  id: 'SetHistoryLengthPrefValue'
+  so.intellisense: NSViewStateAgent.SetHistoryLengthPrefValue
+  langs:
+  - crmscript
+  name: 'SetHistoryLengthPrefValue'
+  nameWithType: NSViewStateAgent.SetHistoryLengthPrefValue
+  fullName: CRMScript.NetServer.NSViewStateAgent.SetHistoryLengthPrefValue
+  type: Method
+  summary: "\nSet the logged on user's preferred history list length.\n"
+  example: 
 references:
 - uid: CRMScript.NetServer.NSViewStateAgent
   commentId: T:CRMScript.NetServer.NSViewStateAgent

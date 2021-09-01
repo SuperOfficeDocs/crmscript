@@ -7,6 +7,20 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSReportAgent.CreateDefaultReportEntity
+  - CRMScript.NetServer.NSReportAgent.CreateDefaultReportLabelLayoutEntity
+  - CRMScript.NetServer.NSReportAgent.CreateFavorite
+  - CRMScript.NetServer.NSReportAgent.DeleteFavorite
+  - CRMScript.NetServer.NSReportAgent.DeleteReport
+  - CRMScript.NetServer.NSReportAgent.DeleteReportLabelLayoutEntity
+  - CRMScript.NetServer.NSReportAgent.GenerateReport
+  - CRMScript.NetServer.NSReportAgent.GetReportEntity
+  - CRMScript.NetServer.NSReportAgent.GetReportLabelLayoutEntity
+  - CRMScript.NetServer.NSReportAgent.ImportReport
+  - CRMScript.NetServer.NSReportAgent.#ctor
+  - CRMScript.NetServer.NSReportAgent.SaveReportEntity
+  - CRMScript.NetServer.NSReportAgent.SaveReportLabelLayoutEntity
+  - CRMScript.NetServer.NSReportAgent.UpdateFavorite
   name: NSReportAgent
   nameWithType: NSReportAgent
   fullName: CRMScript.NetServer.NSReportAgent
@@ -14,6 +28,189 @@ items:
   summary: "\nRun reports, set favorites, labels.\n"
   example: 
   - "\n<pre><code>NSReportAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSReportAgent.CreateDefaultReportEntity
+  commentId: M:CRMScript.NetServer.NSReportAgent.CreateDefaultReportEntity
+  id: 'CreateDefaultReportEntity'
+  so.intellisense: NSReportAgent.CreateDefaultReportEntity
+  langs:
+  - crmscript
+  name: 'CreateDefaultReportEntity'
+  nameWithType: NSReportAgent.CreateDefaultReportEntity
+  fullName: CRMScript.NetServer.NSReportAgent.CreateDefaultReportEntity
+  type: Method
+  summary: "\nSet default values into a new NSReportEntity.
+NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSReportEntity<p></p>\n<pre><code>NSReportAgent agent;\nNSReportEntity thing = agent.CreateDefaultReportEntity();\nthing = agent.SaveReportEntity(thing);</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSReportAgent agent;\nNSReportEntity thing = agent.CreateDefaultReportEntity();\nthing = agent.SaveReportEntity(thing);</code></pre>\n"
+- uid: CRMScript.NetServer.NSReportAgent.CreateDefaultReportLabelLayoutEntity
+  commentId: M:CRMScript.NetServer.NSReportAgent.CreateDefaultReportLabelLayoutEntity
+  id: 'CreateDefaultReportLabelLayoutEntity'
+  so.intellisense: NSReportAgent.CreateDefaultReportLabelLayoutEntity
+  langs:
+  - crmscript
+  name: 'CreateDefaultReportLabelLayoutEntity'
+  nameWithType: NSReportAgent.CreateDefaultReportLabelLayoutEntity
+  fullName: CRMScript.NetServer.NSReportAgent.CreateDefaultReportLabelLayoutEntity
+  type: Method
+  summary: "\nSet default values into a new NSReportLabelLayoutEntity.
+NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSReportLabelLayoutEntity<p></p>\n<pre><code>NSReportAgent agent;\nNSReportLabelLayoutEntity thing = agent.CreateDefaultReportLabelLayoutEntity();\nthing = agent.SaveReportLabelLayoutEntity(thing);</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSReportAgent agent;\nNSReportLabelLayoutEntity thing = agent.CreateDefaultReportLabelLayoutEntity();\nthing = agent.SaveReportLabelLayoutEntity(thing);</code></pre>\n"
+- uid: CRMScript.NetServer.NSReportAgent.CreateFavorite
+  commentId: M:CRMScript.NetServer.NSReportAgent.CreateFavorite
+  id: 'CreateFavorite'
+  so.intellisense: NSReportAgent.CreateFavorite
+  langs:
+  - crmscript
+  name: 'CreateFavorite'
+  nameWithType: NSReportAgent.CreateFavorite
+  fullName: CRMScript.NetServer.NSReportAgent.CreateFavorite
+  type: Method
+  summary: "\nCreates the report as favorite. The sourceId is the key to the report that the favorite is based on.\n"
+  example: 
+  - "\n<pre><code>NSReportAgent agent;\nInteger sourceId;\nString name;\nString description;\nNSReportEntity res = agent.CreateFavorite(sourceId, name, description);</code></pre>\n"
+- uid: CRMScript.NetServer.NSReportAgent.DeleteFavorite
+  commentId: M:CRMScript.NetServer.NSReportAgent.DeleteFavorite
+  id: 'DeleteFavorite'
+  so.intellisense: NSReportAgent.DeleteFavorite
+  langs:
+  - crmscript
+  name: 'DeleteFavorite'
+  nameWithType: NSReportAgent.DeleteFavorite
+  fullName: CRMScript.NetServer.NSReportAgent.DeleteFavorite
+  type: Method
+  summary: "\nDeletes the report favorite.\n"
+  example: 
+- uid: CRMScript.NetServer.NSReportAgent.DeleteReport
+  commentId: M:CRMScript.NetServer.NSReportAgent.DeleteReport
+  id: 'DeleteReport'
+  so.intellisense: NSReportAgent.DeleteReport
+  langs:
+  - crmscript
+  name: 'DeleteReport'
+  nameWithType: NSReportAgent.DeleteReport
+  fullName: CRMScript.NetServer.NSReportAgent.DeleteReport
+  type: Method
+  summary: "\nDelete the report with the given id\n"
+  example: 
+  - "\n<pre><code>NSReportAgent agent;\nInteger reportId;\nBool res = agent.DeleteReport(reportId);</code></pre>\n"
+- uid: CRMScript.NetServer.NSReportAgent.DeleteReportLabelLayoutEntity
+  commentId: M:CRMScript.NetServer.NSReportAgent.DeleteReportLabelLayoutEntity
+  id: 'DeleteReportLabelLayoutEntity'
+  so.intellisense: NSReportAgent.DeleteReportLabelLayoutEntity
+  langs:
+  - crmscript
+  name: 'DeleteReportLabelLayoutEntity'
+  nameWithType: NSReportAgent.DeleteReportLabelLayoutEntity
+  fullName: CRMScript.NetServer.NSReportAgent.DeleteReportLabelLayoutEntity
+  type: Method
+  summary: "\nDeletes the NSReportLabelLayoutEntity\n"
+  example: 
+  - "\n<pre><code>NSReportAgent agent;\nagent.DeleteReportLabelLayoutEntity(123);</code></pre>\n"
+- uid: CRMScript.NetServer.NSReportAgent.GenerateReport
+  commentId: M:CRMScript.NetServer.NSReportAgent.GenerateReport
+  id: 'GenerateReport'
+  so.intellisense: NSReportAgent.GenerateReport
+  langs:
+  - crmscript
+  name: 'GenerateReport'
+  nameWithType: NSReportAgent.GenerateReport
+  fullName: CRMScript.NetServer.NSReportAgent.GenerateReport
+  type: Method
+  summary: "\nGenerates the report in PDF format\n"
+  example: 
+  - "\n<pre><code>NSReportAgent agent;\nInteger reportId;\nInteger labelLayoutId;\nString filename;\nString language;\nString fileType;\nNSArchiveRestrictionInfo[] restrictions;\nString res = agent.GenerateReport(reportId, labelLayoutId, filename, language, fileType, restrictions);</code></pre>\n"
+- uid: CRMScript.NetServer.NSReportAgent.GetReportEntity
+  commentId: M:CRMScript.NetServer.NSReportAgent.GetReportEntity
+  id: 'GetReportEntity'
+  so.intellisense: NSReportAgent.GetReportEntity
+  langs:
+  - crmscript
+  name: 'GetReportEntity'
+  nameWithType: NSReportAgent.GetReportEntity
+  fullName: CRMScript.NetServer.NSReportAgent.GetReportEntity
+  type: Method
+  summary: "\nGets a NSReportEntity object.\n"
+  example: 
+  - "\n<pre><code>NSReportAgent agent;\nNSReportEntity thing = agent.GetReportEntity(123);</code></pre>\n"
+- uid: CRMScript.NetServer.NSReportAgent.GetReportLabelLayoutEntity
+  commentId: M:CRMScript.NetServer.NSReportAgent.GetReportLabelLayoutEntity
+  id: 'GetReportLabelLayoutEntity'
+  so.intellisense: NSReportAgent.GetReportLabelLayoutEntity
+  langs:
+  - crmscript
+  name: 'GetReportLabelLayoutEntity'
+  nameWithType: NSReportAgent.GetReportLabelLayoutEntity
+  fullName: CRMScript.NetServer.NSReportAgent.GetReportLabelLayoutEntity
+  type: Method
+  summary: "\nGets a NSReportLabelLayoutEntity object.\n"
+  example: 
+  - "\n<pre><code>NSReportAgent agent;\nNSReportLabelLayoutEntity thing = agent.GetReportLabelLayoutEntity(123);</code></pre>\n"
+- uid: CRMScript.NetServer.NSReportAgent.ImportReport
+  commentId: M:CRMScript.NetServer.NSReportAgent.ImportReport
+  id: 'ImportReport'
+  so.intellisense: NSReportAgent.ImportReport
+  langs:
+  - crmscript
+  name: 'ImportReport'
+  nameWithType: NSReportAgent.ImportReport
+  fullName: CRMScript.NetServer.NSReportAgent.ImportReport
+  type: Method
+  summary: "\nTakes the input stream and create a report. This stream must be on a valid xml format\n"
+  example: 
+  - "\n<pre><code>NSReportAgent agent;\nString report;\nInteger res = agent.ImportReport(report);</code></pre>\n"
+- uid: CRMScript.NetServer.NSReportAgent.#ctor
+  commentId: M:CRMScript.NetServer.NSReportAgent.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSReportAgent
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSReportAgent.#ctor
+  fullName: CRMScript.NetServer.NSReportAgent.#ctor
+  type: Method
+  summary: "\nRun reports, set favorites, labels.\n"
+  example: 
+  - "\n<pre><code>NSReportAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSReportAgent.SaveReportEntity
+  commentId: M:CRMScript.NetServer.NSReportAgent.SaveReportEntity
+  id: 'SaveReportEntity'
+  so.intellisense: NSReportAgent.SaveReportEntity
+  langs:
+  - crmscript
+  name: 'SaveReportEntity'
+  nameWithType: NSReportAgent.SaveReportEntity
+  fullName: CRMScript.NetServer.NSReportAgent.SaveReportEntity
+  type: Method
+  summary: "\nUpdates the existing NSReportEntity or creates a new NSReportEntity if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>reportEntity</strong>The NSReportEntity to save.</li></ul><strong>Returns:</strong>NSReportEntity<p></p>\n<pre><code>NSReport  agent;\nNSReportEntity thing = agent.CreateDefaultReportEntity();\nthing = agent.SaveReportEntity(thing);</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSReport  agent;\nNSReportEntity thing = agent.CreateDefaultReportEntity();\nthing = agent.SaveReportEntity(thing);</code></pre>\n"
+- uid: CRMScript.NetServer.NSReportAgent.SaveReportLabelLayoutEntity
+  commentId: M:CRMScript.NetServer.NSReportAgent.SaveReportLabelLayoutEntity
+  id: 'SaveReportLabelLayoutEntity'
+  so.intellisense: NSReportAgent.SaveReportLabelLayoutEntity
+  langs:
+  - crmscript
+  name: 'SaveReportLabelLayoutEntity'
+  nameWithType: NSReportAgent.SaveReportLabelLayoutEntity
+  fullName: CRMScript.NetServer.NSReportAgent.SaveReportLabelLayoutEntity
+  type: Method
+  summary: "\nCRMScript method in the NSReportAgent class that creates or updates an NSReportLabelLayoutEntityUpdates the existing NSReportLabelLayoutEntity or creates a new NSReportLabelLayoutEntity if the ID parameter is 0.<p></p>\nReturns the new or updated NSReportLabelLayoutEntity.<p></p>\n<code>NSReportLabelLayoutEntity SaveReportLabelLayoutEntity(NSReportLabelLayoutEntity reportLabelLayoutEntity)</code>\n"
+  example: 
+  - "\n<pre><code>NSReport  agent;\nNSReportLabelLayoutEntity thing = agent.CreateDefaultReportLabelLayoutEntity();\nthing = agent.SaveReportLabelLayoutEntity(thing);</code></pre>\n"
+- uid: CRMScript.NetServer.NSReportAgent.UpdateFavorite
+  commentId: M:CRMScript.NetServer.NSReportAgent.UpdateFavorite
+  id: 'UpdateFavorite'
+  so.intellisense: NSReportAgent.UpdateFavorite
+  langs:
+  - crmscript
+  name: 'UpdateFavorite'
+  nameWithType: NSReportAgent.UpdateFavorite
+  fullName: CRMScript.NetServer.NSReportAgent.UpdateFavorite
+  type: Method
+  summary: "\nUpdates the favorite.\n"
+  example: 
+  - "\n<pre><code>NSReportAgent agent;\nNSReportEntity reportEntity;\nNSReportEntity res = agent.UpdateFavorite(reportEntity);</code></pre>\n"
 references:
 - uid: CRMScript.NetServer.NSReportAgent
   commentId: T:CRMScript.NetServer.NSReportAgent

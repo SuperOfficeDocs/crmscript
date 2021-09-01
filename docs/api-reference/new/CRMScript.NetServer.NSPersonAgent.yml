@@ -7,6 +7,57 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSPersonAgent.AddBounce
+  - CRMScript.NetServer.NSPersonAgent.AddBounceWithCount
+  - CRMScript.NetServer.NSPersonAgent.AddEmailAddressToPerson
+  - CRMScript.NetServer.NSPersonAgent.ChangeCountry
+  - CRMScript.NetServer.NSPersonAgent.ChangePersonRank
+  - CRMScript.NetServer.NSPersonAgent.CheckTemporaryKey
+  - CRMScript.NetServer.NSPersonAgent.CreateDefaultByContactId
+  - CRMScript.NetServer.NSPersonAgent.CreateDefaultConsentPerson
+  - CRMScript.NetServer.NSPersonAgent.CreateDefaultFromCredential
+  - CRMScript.NetServer.NSPersonAgent.CreateDefaultPersonEntity
+  - CRMScript.NetServer.NSPersonAgent.CreateTemporaryKey
+  - CRMScript.NetServer.NSPersonAgent.DeleteConsentPerson
+  - CRMScript.NetServer.NSPersonAgent.DeleteExpired
+  - CRMScript.NetServer.NSPersonAgent.DeletePersonEntity
+  - CRMScript.NetServer.NSPersonAgent.DeleteTemporaryKeysOfDomain
+  - CRMScript.NetServer.NSPersonAgent.GetAddress
+  - CRMScript.NetServer.NSPersonAgent.GetAddressByCountry
+  - CRMScript.NetServer.NSPersonAgent.GetBestSoLanguageForTemplate
+  - CRMScript.NetServer.NSPersonAgent.GetColleagues
+  - CRMScript.NetServer.NSPersonAgent.GetColleaguesByDepartment
+  - CRMScript.NetServer.NSPersonAgent.GetColleaguesBySource
+  - CRMScript.NetServer.NSPersonAgent.GetConsentInfos
+  - CRMScript.NetServer.NSPersonAgent.GetConsentPerson
+  - CRMScript.NetServer.NSPersonAgent.GetMyOwner
+  - CRMScript.NetServer.NSPersonAgent.GetMyPerson
+  - CRMScript.NetServer.NSPersonAgent.GetOwnerOnPersonId
+  - CRMScript.NetServer.NSPersonAgent.GetPerson
+  - CRMScript.NetServer.NSPersonAgent.GetPersonEntity
+  - CRMScript.NetServer.NSPersonAgent.GetPersonImage
+  - CRMScript.NetServer.NSPersonAgent.GetPersonList
+  - CRMScript.NetServer.NSPersonAgent.GetPersonsFromContact
+  - CRMScript.NetServer.NSPersonAgent.GetPersonsFromProject
+  - CRMScript.NetServer.NSPersonAgent.GetPersonSummary
+  - CRMScript.NetServer.NSPersonAgent.GetPhones
+  - CRMScript.NetServer.NSPersonAgent.GetSalesRep
+  - CRMScript.NetServer.NSPersonAgent.HasConsent
+  - CRMScript.NetServer.NSPersonAgent.IsNumberValid
+  - CRMScript.NetServer.NSPersonAgent.Merge
+  - CRMScript.NetServer.NSPersonAgent.Move
+  - CRMScript.NetServer.NSPersonAgent.NormalizeRanks
+  - CRMScript.NetServer.NSPersonAgent.#ctor
+  - CRMScript.NetServer.NSPersonAgent.RemoveConsent
+  - CRMScript.NetServer.NSPersonAgent.ResolvePersonFromInfo
+  - CRMScript.NetServer.NSPersonAgent.SaveConsentPerson
+  - CRMScript.NetServer.NSPersonAgent.SavePersonEntity
+  - CRMScript.NetServer.NSPersonAgent.SendConsentConfirmationEmail
+  - CRMScript.NetServer.NSPersonAgent.SetConsent
+  - CRMScript.NetServer.NSPersonAgent.SetPersonImage
+  - CRMScript.NetServer.NSPersonAgent.SetPersonRank
+  - CRMScript.NetServer.NSPersonAgent.Undelete
+  - CRMScript.NetServer.NSPersonAgent.ValidatePersonEntity
   name: NSPersonAgent
   nameWithType: NSPersonAgent
   fullName: CRMScript.NetServer.NSPersonAgent
@@ -14,6 +65,656 @@ items:
   summary: "\nPerson data services.\n"
   example: 
   - "\n<pre><code>NSPersonAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSPersonAgent.AddBounce
+  commentId: M:CRMScript.NetServer.NSPersonAgent.AddBounce
+  id: 'AddBounce'
+  so.intellisense: NSPersonAgent.AddBounce
+  langs:
+  - crmscript
+  name: 'AddBounce'
+  nameWithType: NSPersonAgent.AddBounce
+  fullName: CRMScript.NetServer.NSPersonAgent.AddBounce
+  type: Method
+  summary: "\nAdd a bounce count on the email address if it exists\n"
+  example: 
+- uid: CRMScript.NetServer.NSPersonAgent.AddBounceWithCount
+  commentId: M:CRMScript.NetServer.NSPersonAgent.AddBounceWithCount
+  id: 'AddBounceWithCount'
+  so.intellisense: NSPersonAgent.AddBounceWithCount
+  langs:
+  - crmscript
+  name: 'AddBounceWithCount'
+  nameWithType: NSPersonAgent.AddBounceWithCount
+  fullName: CRMScript.NetServer.NSPersonAgent.AddBounceWithCount
+  type: Method
+  summary: "\nAdd a number of bounce counts on the email address if it exists\n"
+  example: 
+- uid: CRMScript.NetServer.NSPersonAgent.AddEmailAddressToPerson
+  commentId: M:CRMScript.NetServer.NSPersonAgent.AddEmailAddressToPerson
+  id: 'AddEmailAddressToPerson'
+  so.intellisense: NSPersonAgent.AddEmailAddressToPerson
+  langs:
+  - crmscript
+  name: 'AddEmailAddressToPerson'
+  nameWithType: NSPersonAgent.AddEmailAddressToPerson
+  fullName: CRMScript.NetServer.NSPersonAgent.AddEmailAddressToPerson
+  type: Method
+  summary: "\nSets the primary email address on person, possibly re-ranking email addresses accordingly.\n"
+  example: 
+- uid: CRMScript.NetServer.NSPersonAgent.ChangeCountry
+  commentId: M:CRMScript.NetServer.NSPersonAgent.ChangeCountry
+  id: 'ChangeCountry'
+  so.intellisense: NSPersonAgent.ChangeCountry
+  langs:
+  - crmscript
+  name: 'ChangeCountry'
+  nameWithType: NSPersonAgent.ChangeCountry
+  fullName: CRMScript.NetServer.NSPersonAgent.ChangeCountry
+  type: Method
+  summary: "\nChange country regenerates the default values and localized information such as phone number and address format for this entity.\n"
+  example: 
+  - "\n<pre><code>NSPersonAgent agent;\nNSPersonEntity personEntity;\nInteger toCountryId;\nNSPersonEntity res = agent.ChangeCountry(personEntity, toCountryId);</code></pre>\n"
+- uid: CRMScript.NetServer.NSPersonAgent.ChangePersonRank
+  commentId: M:CRMScript.NetServer.NSPersonAgent.ChangePersonRank
+  id: 'ChangePersonRank'
+  so.intellisense: NSPersonAgent.ChangePersonRank
+  langs:
+  - crmscript
+  name: 'ChangePersonRank'
+  nameWithType: NSPersonAgent.ChangePersonRank
+  fullName: CRMScript.NetServer.NSPersonAgent.ChangePersonRank
+  type: Method
+  summary: "\nMove one person up or down in the ranking in the Person Archive, if possible.<para/>The person record that has rank = 1 is the primary contact for a company, and is the one used in situations where no person has been explicitly chosen (such as in selections).<para/>This method corresponds to the move up/move down functions in the person archive in the contact panel.<para/>This method always affects two records.\n"
+  example: 
+  - "\n<pre><code>NSPersonAgent agent;\nInteger personId;\nBool moveUp;\nInteger res = agent.ChangePersonRank(personId, moveUp);</code></pre>\n"
+- uid: CRMScript.NetServer.NSPersonAgent.CheckTemporaryKey
+  commentId: M:CRMScript.NetServer.NSPersonAgent.CheckTemporaryKey
+  id: 'CheckTemporaryKey'
+  so.intellisense: NSPersonAgent.CheckTemporaryKey
+  langs:
+  - crmscript
+  name: 'CheckTemporaryKey'
+  nameWithType: NSPersonAgent.CheckTemporaryKey
+  fullName: CRMScript.NetServer.NSPersonAgent.CheckTemporaryKey
+  type: Method
+  summary: "\nCheck a temporary key for validity, and in case it is valid, return its domain, targetId and personId\n"
+  example: 
+  - "\n<pre><code>NSPersonAgent agent;\nString temporaryKey;\nNSTemporaryKeyInfo res = agent.CheckTemporaryKey(temporaryKey);</code></pre>\n"
+- uid: CRMScript.NetServer.NSPersonAgent.CreateDefaultByContactId
+  commentId: M:CRMScript.NetServer.NSPersonAgent.CreateDefaultByContactId
+  id: 'CreateDefaultByContactId'
+  so.intellisense: NSPersonAgent.CreateDefaultByContactId
+  langs:
+  - crmscript
+  name: 'CreateDefaultByContactId'
+  nameWithType: NSPersonAgent.CreateDefaultByContactId
+  fullName: CRMScript.NetServer.NSPersonAgent.CreateDefaultByContactId
+  type: Method
+  summary: "\nCreates a NSPersonEntity with default values based on the contactId.\n"
+  example: 
+- uid: CRMScript.NetServer.NSPersonAgent.CreateDefaultConsentPerson
+  commentId: M:CRMScript.NetServer.NSPersonAgent.CreateDefaultConsentPerson
+  id: 'CreateDefaultConsentPerson'
+  so.intellisense: NSPersonAgent.CreateDefaultConsentPerson
+  langs:
+  - crmscript
+  name: 'CreateDefaultConsentPerson'
+  nameWithType: NSPersonAgent.CreateDefaultConsentPerson
+  fullName: CRMScript.NetServer.NSPersonAgent.CreateDefaultConsentPerson
+  type: Method
+  summary: "\nSet default values into a new NSConsentPerson.<p></p>\nNetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>A new NSConsentPerson with default values.<p></p>\n<pre><code>NSPersonAgent agent;\nNSConsentPerson thing = agent.CreateDefaultConsentPerson();\nthing = agent.SaveConsentPerson(thing);</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSPersonAgent agent;\nNSConsentPerson thing = agent.CreateDefaultConsentPerson();\nthing = agent.SaveConsentPerson(thing);</code></pre>\n"
+- uid: CRMScript.NetServer.NSPersonAgent.CreateDefaultFromCredential
+  commentId: M:CRMScript.NetServer.NSPersonAgent.CreateDefaultFromCredential
+  id: 'CreateDefaultFromCredential'
+  so.intellisense: NSPersonAgent.CreateDefaultFromCredential
+  langs:
+  - crmscript
+  name: 'CreateDefaultFromCredential'
+  nameWithType: NSPersonAgent.CreateDefaultFromCredential
+  fullName: CRMScript.NetServer.NSPersonAgent.CreateDefaultFromCredential
+  type: Method
+  summary: "\nCreates a NSPersonEntity with default values based on the contactId and credentials.\n"
+  example: 
+- uid: CRMScript.NetServer.NSPersonAgent.CreateDefaultPersonEntity
+  commentId: M:CRMScript.NetServer.NSPersonAgent.CreateDefaultPersonEntity
+  id: 'CreateDefaultPersonEntity'
+  so.intellisense: NSPersonAgent.CreateDefaultPersonEntity
+  langs:
+  - crmscript
+  name: 'CreateDefaultPersonEntity'
+  nameWithType: NSPersonAgent.CreateDefaultPersonEntity
+  fullName: CRMScript.NetServer.NSPersonAgent.CreateDefaultPersonEntity
+  type: Method
+  summary: "\nSet default values into a new NSPersonEntity.<p></p>\nNetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>A new NSPersonEntity with default values.<p></p>\n<pre><code>NSPersonAgent agent;\nNSPersonEntity thing = agent.CreateDefaultPersonEntity();\nthing = agent.SavePersonEntity(thing);</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSPersonAgent agent;\nNSPersonEntity thing = agent.CreateDefaultPersonEntity();\nthing = agent.SavePersonEntity(thing);</code></pre>\n"
+- uid: CRMScript.NetServer.NSPersonAgent.CreateTemporaryKey
+  commentId: M:CRMScript.NetServer.NSPersonAgent.CreateTemporaryKey
+  id: 'CreateTemporaryKey'
+  so.intellisense: NSPersonAgent.CreateTemporaryKey
+  langs:
+  - crmscript
+  name: 'CreateTemporaryKey'
+  nameWithType: NSPersonAgent.CreateTemporaryKey
+  fullName: CRMScript.NetServer.NSPersonAgent.CreateTemporaryKey
+  type: Method
+  summary: "\nCreate a temporary key in the database from the given parameters and return the key string. Used for temporary keys for accessing customer centric functionality, such as UpdateSubscriptions.\n"
+  example: 
+  - "\n<pre><code>NSPersonAgent agent;\nInteger domain;\nInteger targetId;\nInteger personId;\nDateTime expires;\nString res = agent.CreateTemporaryKey(domain, targetId, personId, expires);</code></pre>\n"
+- uid: CRMScript.NetServer.NSPersonAgent.DeleteConsentPerson
+  commentId: M:CRMScript.NetServer.NSPersonAgent.DeleteConsentPerson
+  id: 'DeleteConsentPerson'
+  so.intellisense: NSPersonAgent.DeleteConsentPerson
+  langs:
+  - crmscript
+  name: 'DeleteConsentPerson'
+  nameWithType: NSPersonAgent.DeleteConsentPerson
+  fullName: CRMScript.NetServer.NSPersonAgent.DeleteConsentPerson
+  type: Method
+  summary: "\nDeletes the NSConsentPerson\n"
+  example: 
+  - "\n<pre><code>NSPersonAgent agent;\nagent.DeleteConsentPerson(123);</code></pre>\n"
+- uid: CRMScript.NetServer.NSPersonAgent.DeleteExpired
+  commentId: M:CRMScript.NetServer.NSPersonAgent.DeleteExpired
+  id: 'DeleteExpired'
+  so.intellisense: NSPersonAgent.DeleteExpired
+  langs:
+  - crmscript
+  name: 'DeleteExpired'
+  nameWithType: NSPersonAgent.DeleteExpired
+  fullName: CRMScript.NetServer.NSPersonAgent.DeleteExpired
+  type: Method
+  summary: "\nTrigger deletion of persons that has been (soft) deleted and have timed out the expiry period (the SoftDeleteRetention preference).\n"
+  example: 
+- uid: CRMScript.NetServer.NSPersonAgent.DeletePersonEntity
+  commentId: M:CRMScript.NetServer.NSPersonAgent.DeletePersonEntity
+  id: 'DeletePersonEntity'
+  so.intellisense: NSPersonAgent.DeletePersonEntity
+  langs:
+  - crmscript
+  name: 'DeletePersonEntity'
+  nameWithType: NSPersonAgent.DeletePersonEntity
+  fullName: CRMScript.NetServer.NSPersonAgent.DeletePersonEntity
+  type: Method
+  summary: "\nDeletes the NSPersonEntity\n"
+  example: 
+  - "\n<pre><code>NSPersonAgent agent;\nagent.DeletePersonEntity(123);</code></pre>\n"
+- uid: CRMScript.NetServer.NSPersonAgent.DeleteTemporaryKeysOfDomain
+  commentId: M:CRMScript.NetServer.NSPersonAgent.DeleteTemporaryKeysOfDomain
+  id: 'DeleteTemporaryKeysOfDomain'
+  so.intellisense: NSPersonAgent.DeleteTemporaryKeysOfDomain
+  langs:
+  - crmscript
+  name: 'DeleteTemporaryKeysOfDomain'
+  nameWithType: NSPersonAgent.DeleteTemporaryKeysOfDomain
+  fullName: CRMScript.NetServer.NSPersonAgent.DeleteTemporaryKeysOfDomain
+  type: Method
+  summary: "\nDelete all temporary keys for a given domain and person\n"
+  example: 
+- uid: CRMScript.NetServer.NSPersonAgent.GetAddress
+  commentId: M:CRMScript.NetServer.NSPersonAgent.GetAddress
+  id: 'GetAddress'
+  so.intellisense: NSPersonAgent.GetAddress
+  langs:
+  - crmscript
+  name: 'GetAddress'
+  nameWithType: NSPersonAgent.GetAddress
+  fullName: CRMScript.NetServer.NSPersonAgent.GetAddress
+  type: Method
+  summary: "\nCRMScript method in the NSPersonAgent class that gets the person's localized addressGets the person's localized address.<p></p>\nReturns the address as NSLocalizedField[][].<p></p>\n<code>GetAddress(Integer personId)</code>\n"
+  example: 
+  - "\n<pre><code>NSPersonAgent agent;\nInteger personId;\nNSAddress res = agent.GetAddress(personId);</code></pre>\n"
+- uid: CRMScript.NetServer.NSPersonAgent.GetAddressByCountry
+  commentId: M:CRMScript.NetServer.NSPersonAgent.GetAddressByCountry
+  id: 'GetAddressByCountry'
+  so.intellisense: NSPersonAgent.GetAddressByCountry
+  langs:
+  - crmscript
+  name: 'GetAddressByCountry'
+  nameWithType: NSPersonAgent.GetAddressByCountry
+  fullName: CRMScript.NetServer.NSPersonAgent.GetAddressByCountry
+  type: Method
+  summary: "\nCRMScript method in the NSPersonAgent class that gets the person's localized addressGets the person's localized address.<p></p>\nReturns the address as NSLocalizedField[][].<p></p>\n<code>GetAddressByCountry(Integer personId, Integer countryId)</code>\n"
+  example: 
+  - "\n<pre><code>NSPersonAgent agent;\nInteger personId;\nInteger countryId;\nNSAddress res = agent.GetAddressByCountry(personId, countryId);</code></pre>\n"
+- uid: CRMScript.NetServer.NSPersonAgent.GetBestSoLanguageForTemplate
+  commentId: M:CRMScript.NetServer.NSPersonAgent.GetBestSoLanguageForTemplate
+  id: 'GetBestSoLanguageForTemplate'
+  so.intellisense: NSPersonAgent.GetBestSoLanguageForTemplate
+  langs:
+  - crmscript
+  name: 'GetBestSoLanguageForTemplate'
+  nameWithType: NSPersonAgent.GetBestSoLanguageForTemplate
+  fullName: CRMScript.NetServer.NSPersonAgent.GetBestSoLanguageForTemplate
+  type: Method
+  summary: "\nGet the best language for this person on this template\n"
+  example: 
+  - "\n<pre><code>NSPersonAgent agent;\nInteger personId;\nInteger templateId;\nString res = agent.GetBestSoLanguageForTemplate(personId, templateId);</code></pre>\n"
+- uid: CRMScript.NetServer.NSPersonAgent.GetColleagues
+  commentId: M:CRMScript.NetServer.NSPersonAgent.GetColleagues
+  id: 'GetColleagues'
+  so.intellisense: NSPersonAgent.GetColleagues
+  langs:
+  - crmscript
+  name: 'GetColleagues'
+  nameWithType: NSPersonAgent.GetColleagues
+  fullName: CRMScript.NetServer.NSPersonAgent.GetColleagues
+  type: Method
+  summary: "\nGets the persons working in the same company as the logged on user.<p></p>\n<strong>Returns:</strong>NSPerson[]<p></p>\n<pre><code>NSPersonAgent agent;\nNSPerson[] res = agent.GetColleagues();</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSPersonAgent agent;\nNSPerson[] res = agent.GetColleagues();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPersonAgent.GetColleaguesByDepartment
+  commentId: M:CRMScript.NetServer.NSPersonAgent.GetColleaguesByDepartment
+  id: 'GetColleaguesByDepartment'
+  so.intellisense: NSPersonAgent.GetColleaguesByDepartment
+  langs:
+  - crmscript
+  name: 'GetColleaguesByDepartment'
+  nameWithType: NSPersonAgent.GetColleaguesByDepartment
+  fullName: CRMScript.NetServer.NSPersonAgent.GetColleaguesByDepartment
+  type: Method
+  summary: "\nGets the persons working in a specific department in the same company as the logged on user. Departments can be retrieved with the PhoneList.DepartmentList service.\n"
+  example: 
+  - "\n<pre><code>NSPersonAgent agent;\nInteger departmentId;\nNSPerson[] res = agent.GetColleaguesByDepartment(departmentId);</code></pre>\n"
+- uid: CRMScript.NetServer.NSPersonAgent.GetColleaguesBySource
+  commentId: M:CRMScript.NetServer.NSPersonAgent.GetColleaguesBySource
+  id: 'GetColleaguesBySource'
+  so.intellisense: NSPersonAgent.GetColleaguesBySource
+  langs:
+  - crmscript
+  name: 'GetColleaguesBySource'
+  nameWithType: NSPersonAgent.GetColleaguesBySource
+  fullName: CRMScript.NetServer.NSPersonAgent.GetColleaguesBySource
+  type: Method
+  summary: "\nGets the persons working in the same company as the logged on user. The list of person could be retrieved from the history list, the diary view list, or from all sources.\n"
+  example: 
+  - "\n<pre><code>NSPersonAgent agent;\nInteger sourceType;\nInteger count;\nNSPerson[] res = agent.GetColleaguesBySource(sourceType, count);</code></pre>\n"
+- uid: CRMScript.NetServer.NSPersonAgent.GetConsentInfos
+  commentId: M:CRMScript.NetServer.NSPersonAgent.GetConsentInfos
+  id: 'GetConsentInfos'
+  so.intellisense: NSPersonAgent.GetConsentInfos
+  langs:
+  - crmscript
+  name: 'GetConsentInfos'
+  nameWithType: NSPersonAgent.GetConsentInfos
+  fullName: CRMScript.NetServer.NSPersonAgent.GetConsentInfos
+  type: Method
+  summary: "\nGet all consent information for a given person. May include withdrawn consents (check\n"
+  example: 
+  - "\n<pre><code>NSPersonAgent agent;\nInteger personId;\nNSConsentInfo[] res = agent.GetConsentInfos(personId);</code></pre>\n"
+- uid: CRMScript.NetServer.NSPersonAgent.GetConsentPerson
+  commentId: M:CRMScript.NetServer.NSPersonAgent.GetConsentPerson
+  id: 'GetConsentPerson'
+  so.intellisense: NSPersonAgent.GetConsentPerson
+  langs:
+  - crmscript
+  name: 'GetConsentPerson'
+  nameWithType: NSPersonAgent.GetConsentPerson
+  fullName: CRMScript.NetServer.NSPersonAgent.GetConsentPerson
+  type: Method
+  summary: "\nGets a NSConsentPerson object.\n"
+  example: 
+  - "\n<pre><code>NSPersonAgent agent;\nNSConsentPerson thing = agent.GetConsentPerson(123);</code></pre>\n"
+- uid: CRMScript.NetServer.NSPersonAgent.GetMyOwner
+  commentId: M:CRMScript.NetServer.NSPersonAgent.GetMyOwner
+  id: 'GetMyOwner'
+  so.intellisense: NSPersonAgent.GetMyOwner
+  langs:
+  - crmscript
+  name: 'GetMyOwner'
+  nameWithType: NSPersonAgent.GetMyOwner
+  fullName: CRMScript.NetServer.NSPersonAgent.GetMyOwner
+  type: Method
+  summary: "\nGet the owner of the logged in person.<p></p>\n<strong>Returns:</strong>NSPerson<p></p>\n<pre><code>NSPersonAgent agent;\nNSPerson res = agent.GetMyOwner();</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSPersonAgent agent;\nNSPerson res = agent.GetMyOwner();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPersonAgent.GetMyPerson
+  commentId: M:CRMScript.NetServer.NSPersonAgent.GetMyPerson
+  id: 'GetMyPerson'
+  so.intellisense: NSPersonAgent.GetMyPerson
+  langs:
+  - crmscript
+  name: 'GetMyPerson'
+  nameWithType: NSPersonAgent.GetMyPerson
+  fullName: CRMScript.NetServer.NSPersonAgent.GetMyPerson
+  type: Method
+  summary: "\nGets the person info belonging to the currently logged on user.<p></p>\n<strong>Returns:</strong>NSPersonEntity<p></p>\n<pre><code>NSPersonAgent agent;\nNSPersonEntity res = agent.GetMyPerson();</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSPersonAgent agent;\nNSPersonEntity res = agent.GetMyPerson();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPersonAgent.GetOwnerOnPersonId
+  commentId: M:CRMScript.NetServer.NSPersonAgent.GetOwnerOnPersonId
+  id: 'GetOwnerOnPersonId'
+  so.intellisense: NSPersonAgent.GetOwnerOnPersonId
+  langs:
+  - crmscript
+  name: 'GetOwnerOnPersonId'
+  nameWithType: NSPersonAgent.GetOwnerOnPersonId
+  fullName: CRMScript.NetServer.NSPersonAgent.GetOwnerOnPersonId
+  type: Method
+  summary: "\nGet the owner of the person by id.\n"
+  example: 
+  - "\n<pre><code>NSPersonAgent agent;\nInteger personId;\nNSPerson res = agent.GetOwnerOnPersonId(personId);</code></pre>\n"
+- uid: CRMScript.NetServer.NSPersonAgent.GetPerson
+  commentId: M:CRMScript.NetServer.NSPersonAgent.GetPerson
+  id: 'GetPerson'
+  so.intellisense: NSPersonAgent.GetPerson
+  langs:
+  - crmscript
+  name: 'GetPerson'
+  nameWithType: NSPersonAgent.GetPerson
+  fullName: CRMScript.NetServer.NSPersonAgent.GetPerson
+  type: Method
+  summary: "\nGets a NSPerson object.\n"
+  example: 
+  - "\n<pre><code>NSPersonAgent agent;\nNSPerson thing = agent.GetPerson(123);</code></pre>\n"
+- uid: CRMScript.NetServer.NSPersonAgent.GetPersonEntity
+  commentId: M:CRMScript.NetServer.NSPersonAgent.GetPersonEntity
+  id: 'GetPersonEntity'
+  so.intellisense: NSPersonAgent.GetPersonEntity
+  langs:
+  - crmscript
+  name: 'GetPersonEntity'
+  nameWithType: NSPersonAgent.GetPersonEntity
+  fullName: CRMScript.NetServer.NSPersonAgent.GetPersonEntity
+  type: Method
+  summary: "\nGets a NSPersonEntity object.\n"
+  example: 
+  - "\n<pre><code>NSPersonAgent agent;\nNSPersonEntity thing = agent.GetPersonEntity(123);</code></pre>\n"
+- uid: CRMScript.NetServer.NSPersonAgent.GetPersonImage
+  commentId: M:CRMScript.NetServer.NSPersonAgent.GetPersonImage
+  id: 'GetPersonImage'
+  so.intellisense: NSPersonAgent.GetPersonImage
+  langs:
+  - crmscript
+  name: 'GetPersonImage'
+  nameWithType: NSPersonAgent.GetPersonImage
+  fullName: CRMScript.NetServer.NSPersonAgent.GetPersonImage
+  type: Method
+  summary: "\nReturns the person image that is displayed in the CRM application.\n"
+  example: 
+  - "\n<pre><code>NSPersonAgent agent;\nInteger personId;\nNSImage res = agent.GetPersonImage(personId);</code></pre>\n"
+- uid: CRMScript.NetServer.NSPersonAgent.GetPersonList
+  commentId: M:CRMScript.NetServer.NSPersonAgent.GetPersonList
+  id: 'GetPersonList'
+  so.intellisense: NSPersonAgent.GetPersonList
+  langs:
+  - crmscript
+  name: 'GetPersonList'
+  nameWithType: NSPersonAgent.GetPersonList
+  fullName: CRMScript.NetServer.NSPersonAgent.GetPersonList
+  type: Method
+  summary: "\nGets a vector of NSPerson objects.\n"
+  example: 
+  - "\n<pre><code>Integer[] ids;\nNSPersonAgent agent;\nagent.GetPersonList(ids);</code></pre>\n"
+- uid: CRMScript.NetServer.NSPersonAgent.GetPersonsFromContact
+  commentId: M:CRMScript.NetServer.NSPersonAgent.GetPersonsFromContact
+  id: 'GetPersonsFromContact'
+  so.intellisense: NSPersonAgent.GetPersonsFromContact
+  langs:
+  - crmscript
+  name: 'GetPersonsFromContact'
+  nameWithType: NSPersonAgent.GetPersonsFromContact
+  fullName: CRMScript.NetServer.NSPersonAgent.GetPersonsFromContact
+  type: Method
+  summary: "\nReturns all the persons belonging to a contact.\n"
+  example: 
+  - "\n<pre><code>NSPersonAgent agent;\nInteger contactId;\nNSPerson[] res = agent.GetPersonsFromContact(contactId);</code></pre>\n"
+- uid: CRMScript.NetServer.NSPersonAgent.GetPersonsFromProject
+  commentId: M:CRMScript.NetServer.NSPersonAgent.GetPersonsFromProject
+  id: 'GetPersonsFromProject'
+  so.intellisense: NSPersonAgent.GetPersonsFromProject
+  langs:
+  - crmscript
+  name: 'GetPersonsFromProject'
+  nameWithType: NSPersonAgent.GetPersonsFromProject
+  fullName: CRMScript.NetServer.NSPersonAgent.GetPersonsFromProject
+  type: Method
+  summary: "\nReturns all the persons belonging to a project.\n"
+  example: 
+  - "\n<pre><code>NSPersonAgent agent;\nInteger projectId;\nNSPerson[] res = agent.GetPersonsFromProject(projectId);</code></pre>\n"
+- uid: CRMScript.NetServer.NSPersonAgent.GetPersonSummary
+  commentId: M:CRMScript.NetServer.NSPersonAgent.GetPersonSummary
+  id: 'GetPersonSummary'
+  so.intellisense: NSPersonAgent.GetPersonSummary
+  langs:
+  - crmscript
+  name: 'GetPersonSummary'
+  nameWithType: NSPersonAgent.GetPersonSummary
+  fullName: CRMScript.NetServer.NSPersonAgent.GetPersonSummary
+  type: Method
+  summary: "\nGet summary of person and recent activity.\n"
+  example: 
+  - "\n<pre><code>NSPersonAgent agent;\nInteger personId;\nInteger limit;\nNSPersonSummary res = agent.GetPersonSummary(personId, limit);</code></pre>\n"
+- uid: CRMScript.NetServer.NSPersonAgent.GetPhones
+  commentId: M:CRMScript.NetServer.NSPersonAgent.GetPhones
+  id: 'GetPhones'
+  so.intellisense: NSPersonAgent.GetPhones
+  langs:
+  - crmscript
+  name: 'GetPhones'
+  nameWithType: NSPersonAgent.GetPhones
+  fullName: CRMScript.NetServer.NSPersonAgent.GetPhones
+  type: Method
+  summary: "\nReturning all phones that belong to a person, ordered by the phone type.\n"
+  example: 
+  - "\n<pre><code>NSPersonAgent agent;\nInteger personId;\nNSEntityElement[] res = agent.GetPhones(personId);</code></pre>\n"
+- uid: CRMScript.NetServer.NSPersonAgent.GetSalesRep
+  commentId: M:CRMScript.NetServer.NSPersonAgent.GetSalesRep
+  id: 'GetSalesRep'
+  so.intellisense: NSPersonAgent.GetSalesRep
+  langs:
+  - crmscript
+  name: 'GetSalesRep'
+  nameWithType: NSPersonAgent.GetSalesRep
+  fullName: CRMScript.NetServer.NSPersonAgent.GetSalesRep
+  type: Method
+  summary: "\nReturns the sales representative for an external user. If this method is accessed with anonymous authentication the external user is recognized by contact and name, or by email, or phone number. If the external user is recognized as an CRM5 user (internal or external) the input fields can be left blank.\n"
+  example: 
+  - "\n<pre><code>NSPersonAgent agent;\nString contactName;\nString personFirstname;\nString personLastname;\nString emailAddress;\nString phoneNumber;\nNSPersonEntity res = agent.GetSalesRep(contactName, personFirstname, personLastname, emailAddress, phoneNumber);</code></pre>\n"
+- uid: CRMScript.NetServer.NSPersonAgent.HasConsent
+  commentId: M:CRMScript.NetServer.NSPersonAgent.HasConsent
+  id: 'HasConsent'
+  so.intellisense: NSPersonAgent.HasConsent
+  langs:
+  - crmscript
+  name: 'HasConsent'
+  nameWithType: NSPersonAgent.HasConsent
+  fullName: CRMScript.NetServer.NSPersonAgent.HasConsent
+  type: Method
+  summary: "\nCheck if consent has been given by a specified person, for a specific purpose. Withdraw consents return FALSE.\n"
+  example: 
+  - "\n<pre><code>NSPersonAgent agent;\nInteger personId;\nString purpose;\nBool res = agent.HasConsent(personId, purpose);</code></pre>\n"
+- uid: CRMScript.NetServer.NSPersonAgent.IsNumberValid
+  commentId: M:CRMScript.NetServer.NSPersonAgent.IsNumberValid
+  id: 'IsNumberValid'
+  so.intellisense: NSPersonAgent.IsNumberValid
+  langs:
+  - crmscript
+  name: 'IsNumberValid'
+  nameWithType: NSPersonAgent.IsNumberValid
+  fullName: CRMScript.NetServer.NSPersonAgent.IsNumberValid
+  type: Method
+  summary: "\nChecks if the number is unique or required.  The setting is configured from admin under system options.\n"
+  example: 
+  - "\n<pre><code>NSPersonAgent agent;\nInteger contactId;\nString number;\nBool res = agent.IsNumberValid(contactId, number);</code></pre>\n"
+- uid: CRMScript.NetServer.NSPersonAgent.Merge
+  commentId: M:CRMScript.NetServer.NSPersonAgent.Merge
+  id: 'Merge'
+  so.intellisense: NSPersonAgent.Merge
+  langs:
+  - crmscript
+  name: 'Merge'
+  nameWithType: NSPersonAgent.Merge
+  fullName: CRMScript.NetServer.NSPersonAgent.Merge
+  type: Method
+  summary: "\nMerge two persons. The destination person will remain. You must specify the date after which activities will be moved along with the person.\n"
+  example: 
+- uid: CRMScript.NetServer.NSPersonAgent.Move
+  commentId: M:CRMScript.NetServer.NSPersonAgent.Move
+  id: 'Move'
+  so.intellisense: NSPersonAgent.Move
+  langs:
+  - crmscript
+  name: 'Move'
+  nameWithType: NSPersonAgent.Move
+  fullName: CRMScript.NetServer.NSPersonAgent.Move
+  type: Method
+  summary: "\nMove a person to a specified contact. You must specify the date after which activities will be moved along with the person.\n"
+  example: 
+- uid: CRMScript.NetServer.NSPersonAgent.NormalizeRanks
+  commentId: M:CRMScript.NetServer.NSPersonAgent.NormalizeRanks
+  id: 'NormalizeRanks'
+  so.intellisense: NSPersonAgent.NormalizeRanks
+  langs:
+  - crmscript
+  name: 'NormalizeRanks'
+  nameWithType: NSPersonAgent.NormalizeRanks
+  fullName: CRMScript.NetServer.NSPersonAgent.NormalizeRanks
+  type: Method
+  summary: "\nNomralize the ranks for all persons that belong to a contact. This means that the persons will be sorted according to their current rank values, and the ranks will be made monotonically increasing from 1.\n"
+  example: 
+  - "\n<pre><code>NSPersonAgent agent;\nInteger contactId;\nBool res = agent.NormalizeRanks(contactId);</code></pre>\n"
+- uid: CRMScript.NetServer.NSPersonAgent.#ctor
+  commentId: M:CRMScript.NetServer.NSPersonAgent.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSPersonAgent
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSPersonAgent.#ctor
+  fullName: CRMScript.NetServer.NSPersonAgent.#ctor
+  type: Method
+  summary: "\nPerson data services.\n"
+  example: 
+  - "\n<pre><code>NSPersonAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSPersonAgent.RemoveConsent
+  commentId: M:CRMScript.NetServer.NSPersonAgent.RemoveConsent
+  id: 'RemoveConsent'
+  so.intellisense: NSPersonAgent.RemoveConsent
+  langs:
+  - crmscript
+  name: 'RemoveConsent'
+  nameWithType: NSPersonAgent.RemoveConsent
+  fullName: CRMScript.NetServer.NSPersonAgent.RemoveConsent
+  type: Method
+  summary: "\nTurn off consent for a specified person and purpose.\n"
+  example: 
+- uid: CRMScript.NetServer.NSPersonAgent.ResolvePersonFromInfo
+  commentId: M:CRMScript.NetServer.NSPersonAgent.ResolvePersonFromInfo
+  id: 'ResolvePersonFromInfo'
+  so.intellisense: NSPersonAgent.ResolvePersonFromInfo
+  langs:
+  - crmscript
+  name: 'ResolvePersonFromInfo'
+  nameWithType: NSPersonAgent.ResolvePersonFromInfo
+  fullName: CRMScript.NetServer.NSPersonAgent.ResolvePersonFromInfo
+  type: Method
+  summary: "\nGet a person from the provided information. If the person does not exist, it will be created on demand.\n"
+  example: 
+  - "\n<pre><code>NSPersonAgent agent;\nInteger contactId;\nString personName;\nString[] phoneNumbers;\nString[] emails;\nNSResolvedPerson res = agent.ResolvePersonFromInfo(contactId, personName, phoneNumbers, emails);</code></pre>\n"
+- uid: CRMScript.NetServer.NSPersonAgent.SaveConsentPerson
+  commentId: M:CRMScript.NetServer.NSPersonAgent.SaveConsentPerson
+  id: 'SaveConsentPerson'
+  so.intellisense: NSPersonAgent.SaveConsentPerson
+  langs:
+  - crmscript
+  name: 'SaveConsentPerson'
+  nameWithType: NSPersonAgent.SaveConsentPerson
+  fullName: CRMScript.NetServer.NSPersonAgent.SaveConsentPerson
+  type: Method
+  summary: "\nUpdates the existing NSConsentPerson or creates a new NSConsentPerson if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>consentPerson</strong>The NSConsentPerson to save.</li></ul><strong>Returns:</strong>NSConsentPerson<p></p>\n<pre><code>NSPerson  agent;\nNSConsentPerson thing = agent.CreateDefaultConsentPerson();\nthing = agent.SaveConsentPerson(thing);</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSPerson  agent;\nNSConsentPerson thing = agent.CreateDefaultConsentPerson();\nthing = agent.SaveConsentPerson(thing);</code></pre>\n"
+- uid: CRMScript.NetServer.NSPersonAgent.SavePersonEntity
+  commentId: M:CRMScript.NetServer.NSPersonAgent.SavePersonEntity
+  id: 'SavePersonEntity'
+  so.intellisense: NSPersonAgent.SavePersonEntity
+  langs:
+  - crmscript
+  name: 'SavePersonEntity'
+  nameWithType: NSPersonAgent.SavePersonEntity
+  fullName: CRMScript.NetServer.NSPersonAgent.SavePersonEntity
+  type: Method
+  summary: "\nCRMScript method in the Attachment class that creates or updates an NSPersonEntityUpdates the existing NSPersonEntity or creates a new NSPersonEntity if the ID parameter is 0.<p></p>\nReturns the new or updated NSPersonEntity.<p></p>\n<code>NSPersonEntity SavePersonEntity(NSPersonEntity personEntity)</code>\n"
+  example: 
+  - "\n<pre><code>NSPerson  agent;\nNSPersonEntity thing = agent.CreateDefaultPersonEntity();\nthing = agent.SavePersonEntity(thing);</code></pre>\n"
+- uid: CRMScript.NetServer.NSPersonAgent.SendConsentConfirmationEmail
+  commentId: M:CRMScript.NetServer.NSPersonAgent.SendConsentConfirmationEmail
+  id: 'SendConsentConfirmationEmail'
+  so.intellisense: NSPersonAgent.SendConsentConfirmationEmail
+  langs:
+  - crmscript
+  name: 'SendConsentConfirmationEmail'
+  nameWithType: NSPersonAgent.SendConsentConfirmationEmail
+  fullName: CRMScript.NetServer.NSPersonAgent.SendConsentConfirmationEmail
+  type: Method
+  summary: "\nSend confirmation email to the provided person, email address (id), using the document template\n"
+  example: 
+- uid: CRMScript.NetServer.NSPersonAgent.SetConsent
+  commentId: M:CRMScript.NetServer.NSPersonAgent.SetConsent
+  id: 'SetConsent'
+  so.intellisense: NSPersonAgent.SetConsent
+  langs:
+  - crmscript
+  name: 'SetConsent'
+  nameWithType: NSPersonAgent.SetConsent
+  fullName: CRMScript.NetServer.NSPersonAgent.SetConsent
+  type: Method
+  summary: "\nSet a specified type of consent on the person.\n"
+  example: 
+- uid: CRMScript.NetServer.NSPersonAgent.SetPersonImage
+  commentId: M:CRMScript.NetServer.NSPersonAgent.SetPersonImage
+  id: 'SetPersonImage'
+  so.intellisense: NSPersonAgent.SetPersonImage
+  langs:
+  - crmscript
+  name: 'SetPersonImage'
+  nameWithType: NSPersonAgent.SetPersonImage
+  fullName: CRMScript.NetServer.NSPersonAgent.SetPersonImage
+  type: Method
+  summary: "\nStores the person image that is displayed in the CRM application.\n"
+  example: 
+- uid: CRMScript.NetServer.NSPersonAgent.SetPersonRank
+  commentId: M:CRMScript.NetServer.NSPersonAgent.SetPersonRank
+  id: 'SetPersonRank'
+  so.intellisense: NSPersonAgent.SetPersonRank
+  langs:
+  - crmscript
+  name: 'SetPersonRank'
+  nameWithType: NSPersonAgent.SetPersonRank
+  fullName: CRMScript.NetServer.NSPersonAgent.SetPersonRank
+  type: Method
+  summary: "\nDirectly set the rank field of a person record, adjusting all other person records under the same contact as needed.<para/>This call may affect multiple records, potentially all person records belonging to one contact.<para/>You must have write access for to affected records for this method to succeed.\n"
+  example: 
+  - "\n<pre><code>NSPersonAgent agent;\nInteger personId;\nInteger desiredRank;\nBool res = agent.SetPersonRank(personId, desiredRank);</code></pre>\n"
+- uid: CRMScript.NetServer.NSPersonAgent.Undelete
+  commentId: M:CRMScript.NetServer.NSPersonAgent.Undelete
+  id: 'Undelete'
+  so.intellisense: NSPersonAgent.Undelete
+  langs:
+  - crmscript
+  name: 'Undelete'
+  nameWithType: NSPersonAgent.Undelete
+  fullName: CRMScript.NetServer.NSPersonAgent.Undelete
+  type: Method
+  summary: "\nThis entity supports Soft Delete. Call this method to Undelete a previously soft-deleted record\n"
+  example: 
+  - "\n<pre><code>NSPersonAgent agent;\nInteger id;\nagent.Undelete(id);</code></pre>\n"
+- uid: CRMScript.NetServer.NSPersonAgent.ValidatePersonEntity
+  commentId: M:CRMScript.NetServer.NSPersonAgent.ValidatePersonEntity
+  id: 'ValidatePersonEntity'
+  so.intellisense: NSPersonAgent.ValidatePersonEntity
+  langs:
+  - crmscript
+  name: 'ValidatePersonEntity'
+  nameWithType: NSPersonAgent.ValidatePersonEntity
+  fullName: CRMScript.NetServer.NSPersonAgent.ValidatePersonEntity
+  type: Method
+  summary: "\nCheck that entity is ready for saving, return error messages by field.\n"
+  example: 
+  - "\n<pre><code>NSPersonAgent agent;\nNSPersonEntity personEntity;\nStringDictionary res = agent.ValidatePersonEntity(personEntity);</code></pre>\n"
 references:
 - uid: CRMScript.NetServer.NSPersonAgent
   commentId: T:CRMScript.NetServer.NSPersonAgent

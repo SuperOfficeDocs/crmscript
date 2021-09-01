@@ -7,6 +7,11 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSImportAgent.CreateDefaultImportLine
+  - CRMScript.NetServer.NSImportAgent.CreateErpImportData
+  - CRMScript.NetServer.NSImportAgent.#ctor
+  - CRMScript.NetServer.NSImportAgent.PreviewImport
+  - CRMScript.NetServer.NSImportAgent.SaveImport
   name: NSImportAgent
   nameWithType: NSImportAgent
   fullName: CRMScript.NetServer.NSImportAgent
@@ -14,6 +19,71 @@ items:
   summary: "\nThis agent can be used to import data into the system.\n"
   example: 
   - "\n<pre><code>NSImportAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSImportAgent.CreateDefaultImportLine
+  commentId: M:CRMScript.NetServer.NSImportAgent.CreateDefaultImportLine
+  id: 'CreateDefaultImportLine'
+  so.intellisense: NSImportAgent.CreateDefaultImportLine
+  langs:
+  - crmscript
+  name: 'CreateDefaultImportLine'
+  nameWithType: NSImportAgent.CreateDefaultImportLine
+  fullName: CRMScript.NetServer.NSImportAgent.CreateDefaultImportLine
+  type: Method
+  summary: "\nCreate a new empty import row with x count of values\n"
+  example: 
+  - "\n<pre><code>NSImportAgent agent;\nInteger countColumns;\nNSImportLine res = agent.CreateDefaultImportLine(countColumns);</code></pre>\n"
+- uid: CRMScript.NetServer.NSImportAgent.CreateErpImportData
+  commentId: M:CRMScript.NetServer.NSImportAgent.CreateErpImportData
+  id: 'CreateErpImportData'
+  so.intellisense: NSImportAgent.CreateErpImportData
+  langs:
+  - crmscript
+  name: 'CreateErpImportData'
+  nameWithType: NSImportAgent.CreateErpImportData
+  fullName: CRMScript.NetServer.NSImportAgent.CreateErpImportData
+  type: Method
+  summary: "\nPopulates the ImportLines and columnDefs basedfrom erp system\n"
+  example: 
+  - "\n<pre><code>NSImportAgent agent;\nNSArchiveRestrictionInfo[] restriction;\nString[] columns;\nInteger connectionId;\nInteger erpActorType;\nNSImportErpData res = agent.CreateErpImportData(restriction, columns, connectionId, erpActorType);</code></pre>\n"
+- uid: CRMScript.NetServer.NSImportAgent.#ctor
+  commentId: M:CRMScript.NetServer.NSImportAgent.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSImportAgent
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSImportAgent.#ctor
+  fullName: CRMScript.NetServer.NSImportAgent.#ctor
+  type: Method
+  summary: "\nThis agent can be used to import data into the system.\n"
+  example: 
+  - "\n<pre><code>NSImportAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSImportAgent.PreviewImport
+  commentId: M:CRMScript.NetServer.NSImportAgent.PreviewImport
+  id: 'PreviewImport'
+  so.intellisense: NSImportAgent.PreviewImport
+  langs:
+  - crmscript
+  name: 'PreviewImport'
+  nameWithType: NSImportAgent.PreviewImport
+  fullName: CRMScript.NetServer.NSImportAgent.PreviewImport
+  type: Method
+  summary: "\nPreview the import\n"
+  example: 
+  - "\n<pre><code>NSImportAgent agent;\nNSImportLine[] importLines;\nString[] columnDefinition;\nString culture;\nString context;\nNSImportLine[] res = agent.PreviewImport(importLines, columnDefinition, culture, context);</code></pre>\n"
+- uid: CRMScript.NetServer.NSImportAgent.SaveImport
+  commentId: M:CRMScript.NetServer.NSImportAgent.SaveImport
+  id: 'SaveImport'
+  so.intellisense: NSImportAgent.SaveImport
+  langs:
+  - crmscript
+  name: 'SaveImport'
+  nameWithType: NSImportAgent.SaveImport
+  fullName: CRMScript.NetServer.NSImportAgent.SaveImport
+  type: Method
+  summary: "\nDo the actual import\n"
+  example: 
+  - "\n<pre><code>NSImportAgent agent;\nNSImportLine[] importLines;\nString[] columnDefinition;\nBool createSelection;\nString culture;\nString context;\nInteger[] res = agent.SaveImport(importLines, columnDefinition, createSelection, culture, context);</code></pre>\n"
 references:
 - uid: CRMScript.NetServer.NSImportAgent
   commentId: T:CRMScript.NetServer.NSImportAgent

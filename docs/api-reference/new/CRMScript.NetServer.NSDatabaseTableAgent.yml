@@ -7,6 +7,15 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSDatabaseTableAgent.Delete
+  - CRMScript.NetServer.NSDatabaseTableAgent.DeleteRow
+  - CRMScript.NetServer.NSDatabaseTableAgent.Insert
+  - CRMScript.NetServer.NSDatabaseTableAgent.InsertRow
+  - CRMScript.NetServer.NSDatabaseTableAgent.#ctor
+  - CRMScript.NetServer.NSDatabaseTableAgent.ReadRow
+  - CRMScript.NetServer.NSDatabaseTableAgent.Truncate
+  - CRMScript.NetServer.NSDatabaseTableAgent.UpdateRow
+  - CRMScript.NetServer.NSDatabaseTableAgent.Upsert
   name: NSDatabaseTableAgent
   nameWithType: NSDatabaseTableAgent
   fullName: CRMScript.NetServer.NSDatabaseTableAgent
@@ -14,6 +23,121 @@ items:
   summary: "\nAgent used for CRUD operations on database tables. Read, add, update, delete rows in tables.\n"
   example: 
   - "\n<pre><code>NSDatabaseTableAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSDatabaseTableAgent.Delete
+  commentId: M:CRMScript.NetServer.NSDatabaseTableAgent.Delete
+  id: 'Delete'
+  so.intellisense: NSDatabaseTableAgent.Delete
+  langs:
+  - crmscript
+  name: 'Delete'
+  nameWithType: NSDatabaseTableAgent.Delete
+  fullName: CRMScript.NetServer.NSDatabaseTableAgent.Delete
+  type: Method
+  summary: "\nDelete rows, by primary key; traveltransactionlog and WebHooks are supported\n"
+  example: 
+  - "\n<pre><code>NSDatabaseTableAgent agent;\nString tableName;\nInteger[] iDs;\nNSMassOperationResult res = agent.Delete(tableName, iDs);</code></pre>\n"
+- uid: CRMScript.NetServer.NSDatabaseTableAgent.DeleteRow
+  commentId: M:CRMScript.NetServer.NSDatabaseTableAgent.DeleteRow
+  id: 'DeleteRow'
+  so.intellisense: NSDatabaseTableAgent.DeleteRow
+  langs:
+  - crmscript
+  name: 'DeleteRow'
+  nameWithType: NSDatabaseTableAgent.DeleteRow
+  fullName: CRMScript.NetServer.NSDatabaseTableAgent.DeleteRow
+  type: Method
+  summary: "\nDelete a row from a table\n"
+  example: 
+- uid: CRMScript.NetServer.NSDatabaseTableAgent.Insert
+  commentId: M:CRMScript.NetServer.NSDatabaseTableAgent.Insert
+  id: 'Insert'
+  so.intellisense: NSDatabaseTableAgent.Insert
+  langs:
+  - crmscript
+  name: 'Insert'
+  nameWithType: NSDatabaseTableAgent.Insert
+  fullName: CRMScript.NetServer.NSDatabaseTableAgent.Insert
+  type: Method
+  summary: "\nMass-insert rows, with or without primary keys specified. Works on physical tables with no special processing for udef etc.; traveltransactionlog and WebHooks are supported\n"
+  example: 
+  - "\n<pre><code>NSDatabaseTableAgent agent;\nString tableName;\nString[] columns;\nString[] data;\nNSMassOperationResult res = agent.Insert(tableName, columns, data);</code></pre>\n"
+- uid: CRMScript.NetServer.NSDatabaseTableAgent.InsertRow
+  commentId: M:CRMScript.NetServer.NSDatabaseTableAgent.InsertRow
+  id: 'InsertRow'
+  so.intellisense: NSDatabaseTableAgent.InsertRow
+  langs:
+  - crmscript
+  name: 'InsertRow'
+  nameWithType: NSDatabaseTableAgent.InsertRow
+  fullName: CRMScript.NetServer.NSDatabaseTableAgent.InsertRow
+  type: Method
+  summary: "\nInsert a row into a table\n"
+  example: 
+  - "\n<pre><code>NSDatabaseTableAgent agent;\nString tableName;\nStringDictionary values;\nInteger res = agent.InsertRow(tableName, values);</code></pre>\n"
+- uid: CRMScript.NetServer.NSDatabaseTableAgent.#ctor
+  commentId: M:CRMScript.NetServer.NSDatabaseTableAgent.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSDatabaseTableAgent
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSDatabaseTableAgent.#ctor
+  fullName: CRMScript.NetServer.NSDatabaseTableAgent.#ctor
+  type: Method
+  summary: "\nAgent used for CRUD operations on database tables. Read, add, update, delete rows in tables.\n"
+  example: 
+  - "\n<pre><code>NSDatabaseTableAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSDatabaseTableAgent.ReadRow
+  commentId: M:CRMScript.NetServer.NSDatabaseTableAgent.ReadRow
+  id: 'ReadRow'
+  so.intellisense: NSDatabaseTableAgent.ReadRow
+  langs:
+  - crmscript
+  name: 'ReadRow'
+  nameWithType: NSDatabaseTableAgent.ReadRow
+  fullName: CRMScript.NetServer.NSDatabaseTableAgent.ReadRow
+  type: Method
+  summary: "\nRead a row from a table\n"
+  example: 
+  - "\n<pre><code>NSDatabaseTableAgent agent;\nString tableName;\nInteger id;\nNSTableRecord res = agent.ReadRow(tableName, id);</code></pre>\n"
+- uid: CRMScript.NetServer.NSDatabaseTableAgent.Truncate
+  commentId: M:CRMScript.NetServer.NSDatabaseTableAgent.Truncate
+  id: 'Truncate'
+  so.intellisense: NSDatabaseTableAgent.Truncate
+  langs:
+  - crmscript
+  name: 'Truncate'
+  nameWithType: NSDatabaseTableAgent.Truncate
+  fullName: CRMScript.NetServer.NSDatabaseTableAgent.Truncate
+  type: Method
+  summary: "\nDrop all rows in a table. This clearance is not individually logged in TravelTransactionlog or Webhook/script calls\n"
+  example: 
+  - "\n<pre><code>NSDatabaseTableAgent agent;\nString tableName;\nNSMassOperationResult res = agent.Truncate(tableName);</code></pre>\n"
+- uid: CRMScript.NetServer.NSDatabaseTableAgent.UpdateRow
+  commentId: M:CRMScript.NetServer.NSDatabaseTableAgent.UpdateRow
+  id: 'UpdateRow'
+  so.intellisense: NSDatabaseTableAgent.UpdateRow
+  langs:
+  - crmscript
+  name: 'UpdateRow'
+  nameWithType: NSDatabaseTableAgent.UpdateRow
+  fullName: CRMScript.NetServer.NSDatabaseTableAgent.UpdateRow
+  type: Method
+  summary: "\nUpdate a row in a table\n"
+  example: 
+- uid: CRMScript.NetServer.NSDatabaseTableAgent.Upsert
+  commentId: M:CRMScript.NetServer.NSDatabaseTableAgent.Upsert
+  id: 'Upsert'
+  so.intellisense: NSDatabaseTableAgent.Upsert
+  langs:
+  - crmscript
+  name: 'Upsert'
+  nameWithType: NSDatabaseTableAgent.Upsert
+  fullName: CRMScript.NetServer.NSDatabaseTableAgent.Upsert
+  type: Method
+  summary: "\nInsert or update rows, optionally deleting/zeroing 'leftover' rows. Special support for UDEF, as well as optional extensive information return. Traveltransactionlog and WebHooks are supported\n"
+  example: 
+  - "\n<pre><code>NSDatabaseTableAgent agent;\nString tableName;\nString[] columns;\nString[] keys;\nString[] data;\nInteger nomatchAction;\nBool returnRowStatus;\nNSMassOperationResult res = agent.Upsert(tableName, columns, keys, data, nomatchAction, returnRowStatus);</code></pre>\n"
 references:
 - uid: CRMScript.NetServer.NSDatabaseTableAgent
   commentId: T:CRMScript.NetServer.NSDatabaseTableAgent

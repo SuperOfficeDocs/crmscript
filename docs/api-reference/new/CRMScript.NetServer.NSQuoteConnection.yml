@@ -7,12 +7,445 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSQuoteConnection.GetAllAccess
+  - CRMScript.NetServer.NSQuoteConnection.GetAssociateAccessIds
+  - CRMScript.NetServer.NSQuoteConnection.GetConnectorName
+  - CRMScript.NetServer.NSQuoteConnection.GetDeleted
+  - CRMScript.NetServer.NSQuoteConnection.GetDisplayDescription
+  - CRMScript.NetServer.NSQuoteConnection.GetDisplayName
+  - CRMScript.NetServer.NSQuoteConnection.GetErpConnectionId
+  - CRMScript.NetServer.NSQuoteConnection.GetERPName
+  - CRMScript.NetServer.NSQuoteConnection.GetExtraData
+  - CRMScript.NetServer.NSQuoteConnection.GetInitializeResponse
+  - CRMScript.NetServer.NSQuoteConnection.GetIsAvailable
+  - CRMScript.NetServer.NSQuoteConnection.GetPriceLists
+  - CRMScript.NetServer.NSQuoteConnection.GetQuoteConnectionId
+  - CRMScript.NetServer.NSQuoteConnection.GetRank
+  - CRMScript.NetServer.NSQuoteConnection.GetUserGroupAccessIds
+  - CRMScript.NetServer.NSQuoteConnection.#ctor
+  - CRMScript.NetServer.NSQuoteConnection.SetAllAccess
+  - CRMScript.NetServer.NSQuoteConnection.SetAssociateAccessIds
+  - CRMScript.NetServer.NSQuoteConnection.SetConnectorName
+  - CRMScript.NetServer.NSQuoteConnection.SetDeleted
+  - CRMScript.NetServer.NSQuoteConnection.SetDisplayDescription
+  - CRMScript.NetServer.NSQuoteConnection.SetDisplayName
+  - CRMScript.NetServer.NSQuoteConnection.SetErpConnectionId
+  - CRMScript.NetServer.NSQuoteConnection.SetERPName
+  - CRMScript.NetServer.NSQuoteConnection.SetExtraData
+  - CRMScript.NetServer.NSQuoteConnection.SetInitializeResponse
+  - CRMScript.NetServer.NSQuoteConnection.SetIsAvailable
+  - CRMScript.NetServer.NSQuoteConnection.SetPriceLists
+  - CRMScript.NetServer.NSQuoteConnection.SetQuoteConnectionId
+  - CRMScript.NetServer.NSQuoteConnection.SetRank
+  - CRMScript.NetServer.NSQuoteConnection.SetUserGroupAccessIds
   name: NSQuoteConnection
   nameWithType: NSQuoteConnection
   fullName: CRMScript.NetServer.NSQuoteConnection
   type: Class
-  summary: ""
+  summary: 
   example: 
+- uid: CRMScript.NetServer.NSQuoteConnection.GetAllAccess
+  commentId: M:CRMScript.NetServer.NSQuoteConnection.GetAllAccess
+  id: 'GetAllAccess'
+  so.intellisense: NSQuoteConnection.GetAllAccess
+  langs:
+  - crmscript
+  name: 'GetAllAccess'
+  nameWithType: NSQuoteConnection.GetAllAccess
+  fullName: CRMScript.NetServer.NSQuoteConnection.GetAllAccess
+  type: Method
+  summary: "\nIs this connection accessible to everyone?  If not, then the QuoteConnectionAccess table tells us who can access it.<p></p>\n<strong>Returns:</strong>Bool<p></p>\n<pre><code>NSQuoteConnection thing;\nBool allAccess  = thing.GetAllAccess();</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSQuoteConnection thing;\nBool allAccess  = thing.GetAllAccess();</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuoteConnection.GetAssociateAccessIds
+  commentId: M:CRMScript.NetServer.NSQuoteConnection.GetAssociateAccessIds
+  id: 'GetAssociateAccessIds'
+  so.intellisense: NSQuoteConnection.GetAssociateAccessIds
+  langs:
+  - crmscript
+  name: 'GetAssociateAccessIds'
+  nameWithType: NSQuoteConnection.GetAssociateAccessIds
+  fullName: CRMScript.NetServer.NSQuoteConnection.GetAssociateAccessIds
+  type: Method
+  summary: "\nArray of ids containing associates that will have access to this connection.<p></p>\n<strong>Returns:</strong>Integer[]<p></p>\n<pre><code>NSQuoteConnection thing;\nInteger[] associateAccessIds  = thing.GetAssociateAccessIds();</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSQuoteConnection thing;\nInteger[] associateAccessIds  = thing.GetAssociateAccessIds();</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuoteConnection.GetConnectorName
+  commentId: M:CRMScript.NetServer.NSQuoteConnection.GetConnectorName
+  id: 'GetConnectorName'
+  so.intellisense: NSQuoteConnection.GetConnectorName
+  langs:
+  - crmscript
+  name: 'GetConnectorName'
+  nameWithType: NSQuoteConnection.GetConnectorName
+  fullName: CRMScript.NetServer.NSQuoteConnection.GetConnectorName
+  type: Method
+  summary: "\nProgrammatic name of the Connector plugin that implements this kind of connection<p></p>\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSQuoteConnection thing;\nString connectorName  = thing.GetConnectorName();</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSQuoteConnection thing;\nString connectorName  = thing.GetConnectorName();</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuoteConnection.GetDeleted
+  commentId: M:CRMScript.NetServer.NSQuoteConnection.GetDeleted
+  id: 'GetDeleted'
+  so.intellisense: NSQuoteConnection.GetDeleted
+  langs:
+  - crmscript
+  name: 'GetDeleted'
+  nameWithType: NSQuoteConnection.GetDeleted
+  fullName: CRMScript.NetServer.NSQuoteConnection.GetDeleted
+  type: Method
+  summary: "\nIf set, then this is a row that has been 'deleted'; we do not physically delete rows to avoid disaster.<p></p>\n<strong>Returns:</strong>Bool<p></p>\n<pre><code>NSQuoteConnection thing;\nBool deleted  = thing.GetDeleted();</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSQuoteConnection thing;\nBool deleted  = thing.GetDeleted();</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuoteConnection.GetDisplayDescription
+  commentId: M:CRMScript.NetServer.NSQuoteConnection.GetDisplayDescription
+  id: 'GetDisplayDescription'
+  so.intellisense: NSQuoteConnection.GetDisplayDescription
+  langs:
+  - crmscript
+  name: 'GetDisplayDescription'
+  nameWithType: NSQuoteConnection.GetDisplayDescription
+  fullName: CRMScript.NetServer.NSQuoteConnection.GetDisplayDescription
+  type: Method
+  summary: "\nTooltip/description shown to user; multi-language support. Any other info available that would make an uncertain user chose the right connector. Typically, used for tooltip.<p></p>\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSQuoteConnection thing;\nString displayDescription  = thing.GetDisplayDescription();</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSQuoteConnection thing;\nString displayDescription  = thing.GetDisplayDescription();</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuoteConnection.GetDisplayName
+  commentId: M:CRMScript.NetServer.NSQuoteConnection.GetDisplayName
+  id: 'GetDisplayName'
+  so.intellisense: NSQuoteConnection.GetDisplayName
+  langs:
+  - crmscript
+  name: 'GetDisplayName'
+  nameWithType: NSQuoteConnection.GetDisplayName
+  fullName: CRMScript.NetServer.NSQuoteConnection.GetDisplayName
+  type: Method
+  summary: "\nConnection name shown to user; multi-language support. The name of the connector to display in a list so that the users can choose between them. Typically the name of the client, with maybe the ERP system in parenthesis.<p></p>\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSQuoteConnection thing;\nString displayName  = thing.GetDisplayName();</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSQuoteConnection thing;\nString displayName  = thing.GetDisplayName();</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuoteConnection.GetErpConnectionId
+  commentId: M:CRMScript.NetServer.NSQuoteConnection.GetErpConnectionId
+  id: 'GetErpConnectionId'
+  so.intellisense: NSQuoteConnection.GetErpConnectionId
+  langs:
+  - crmscript
+  name: 'GetErpConnectionId'
+  nameWithType: NSQuoteConnection.GetErpConnectionId
+  fullName: CRMScript.NetServer.NSQuoteConnection.GetErpConnectionId
+  type: Method
+  summary: "\nThe ERP Connection that this Quote connection is an extension of<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<pre><code>NSQuoteConnection thing;\nInteger erpConnectionId  = thing.GetErpConnectionId();</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSQuoteConnection thing;\nInteger erpConnectionId  = thing.GetErpConnectionId();</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuoteConnection.GetERPName
+  commentId: M:CRMScript.NetServer.NSQuoteConnection.GetERPName
+  id: 'GetERPName'
+  so.intellisense: NSQuoteConnection.GetERPName
+  langs:
+  - crmscript
+  name: 'GetERPName'
+  nameWithType: NSQuoteConnection.GetERPName
+  fullName: CRMScript.NetServer.NSQuoteConnection.GetERPName
+  type: Method
+  summary: "\nName of the ERP system (programmatic).<p></p>\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSQuoteConnection thing;\nString eRPName  = thing.GetERPName();</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSQuoteConnection thing;\nString eRPName  = thing.GetERPName();</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuoteConnection.GetExtraData
+  commentId: M:CRMScript.NetServer.NSQuoteConnection.GetExtraData
+  id: 'GetExtraData'
+  so.intellisense: NSQuoteConnection.GetExtraData
+  langs:
+  - crmscript
+  name: 'GetExtraData'
+  nameWithType: NSQuoteConnection.GetExtraData
+  fullName: CRMScript.NetServer.NSQuoteConnection.GetExtraData
+  type: Method
+  summary: "\nOptional extra data, in XML format, for configuring the connector. Connector-specific!<p></p>\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSQuoteConnection thing;\nString extraData  = thing.GetExtraData();</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSQuoteConnection thing;\nString extraData  = thing.GetExtraData();</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuoteConnection.GetInitializeResponse
+  commentId: M:CRMScript.NetServer.NSQuoteConnection.GetInitializeResponse
+  id: 'GetInitializeResponse'
+  so.intellisense: NSQuoteConnection.GetInitializeResponse
+  langs:
+  - crmscript
+  name: 'GetInitializeResponse'
+  nameWithType: NSQuoteConnection.GetInitializeResponse
+  fullName: CRMScript.NetServer.NSQuoteConnection.GetInitializeResponse
+  type: Method
+  summary: "\nStatus and Error message when the system called the connector Initialize method. Null if the connector has not been initialized yet.<p></p>\n<strong>Returns:</strong>NSPluginResponse<p></p>\n<pre><code>NSQuoteConnection thing;\nNSPluginResponse initializeResponse  = thing.GetInitializeResponse();</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSQuoteConnection thing;\nNSPluginResponse initializeResponse  = thing.GetInitializeResponse();</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuoteConnection.GetIsAvailable
+  commentId: M:CRMScript.NetServer.NSQuoteConnection.GetIsAvailable
+  id: 'GetIsAvailable'
+  so.intellisense: NSQuoteConnection.GetIsAvailable
+  langs:
+  - crmscript
+  name: 'GetIsAvailable'
+  nameWithType: NSQuoteConnection.GetIsAvailable
+  fullName: CRMScript.NetServer.NSQuoteConnection.GetIsAvailable
+  type: Method
+  summary: "\nWhether or not the specified connection is available. Typically, without network access the availability is false.<p></p>\n<strong>Returns:</strong>Bool<p></p>\n<pre><code>NSQuoteConnection thing;\nBool isAvailable  = thing.GetIsAvailable();</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSQuoteConnection thing;\nBool isAvailable  = thing.GetIsAvailable();</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuoteConnection.GetPriceLists
+  commentId: M:CRMScript.NetServer.NSQuoteConnection.GetPriceLists
+  id: 'GetPriceLists'
+  so.intellisense: NSQuoteConnection.GetPriceLists
+  langs:
+  - crmscript
+  name: 'GetPriceLists'
+  nameWithType: NSQuoteConnection.GetPriceLists
+  fullName: CRMScript.NetServer.NSQuoteConnection.GetPriceLists
+  type: Method
+  summary: "\nThe PriceLists that this connection offers.<p></p>\n<strong>Returns:</strong>NSPriceList[]<p></p>\n<pre><code>NSQuoteConnection thing;\nNSPriceList[] priceLists  = thing.GetPriceLists();</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSQuoteConnection thing;\nNSPriceList[] priceLists  = thing.GetPriceLists();</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuoteConnection.GetQuoteConnectionId
+  commentId: M:CRMScript.NetServer.NSQuoteConnection.GetQuoteConnectionId
+  id: 'GetQuoteConnectionId'
+  so.intellisense: NSQuoteConnection.GetQuoteConnectionId
+  langs:
+  - crmscript
+  name: 'GetQuoteConnectionId'
+  nameWithType: NSQuoteConnection.GetQuoteConnectionId
+  fullName: CRMScript.NetServer.NSQuoteConnection.GetQuoteConnectionId
+  type: Method
+  summary: "\nPrimary key<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<pre><code>NSQuoteConnection thing;\nInteger quoteConnectionId  = thing.GetQuoteConnectionId();</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSQuoteConnection thing;\nInteger quoteConnectionId  = thing.GetQuoteConnectionId();</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuoteConnection.GetRank
+  commentId: M:CRMScript.NetServer.NSQuoteConnection.GetRank
+  id: 'GetRank'
+  so.intellisense: NSQuoteConnection.GetRank
+  langs:
+  - crmscript
+  name: 'GetRank'
+  nameWithType: NSQuoteConnection.GetRank
+  fullName: CRMScript.NetServer.NSQuoteConnection.GetRank
+  type: Method
+  summary: "\nRank order<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<pre><code>NSQuoteConnection thing;\nInteger rank  = thing.GetRank();</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSQuoteConnection thing;\nInteger rank  = thing.GetRank();</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuoteConnection.GetUserGroupAccessIds
+  commentId: M:CRMScript.NetServer.NSQuoteConnection.GetUserGroupAccessIds
+  id: 'GetUserGroupAccessIds'
+  so.intellisense: NSQuoteConnection.GetUserGroupAccessIds
+  langs:
+  - crmscript
+  name: 'GetUserGroupAccessIds'
+  nameWithType: NSQuoteConnection.GetUserGroupAccessIds
+  fullName: CRMScript.NetServer.NSQuoteConnection.GetUserGroupAccessIds
+  type: Method
+  summary: "\nArray of ids containing usergroups that will have access to this connection.<p></p>\n<strong>Returns:</strong>Integer[]<p></p>\n<pre><code>NSQuoteConnection thing;\nInteger[] userGroupAccessIds  = thing.GetUserGroupAccessIds();</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSQuoteConnection thing;\nInteger[] userGroupAccessIds  = thing.GetUserGroupAccessIds();</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuoteConnection.#ctor
+  commentId: M:CRMScript.NetServer.NSQuoteConnection.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSQuoteConnection
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSQuoteConnection.#ctor
+  fullName: CRMScript.NetServer.NSQuoteConnection.#ctor
+  type: Method
+  summary: 
+  example: 
+- uid: CRMScript.NetServer.NSQuoteConnection.SetAllAccess
+  commentId: M:CRMScript.NetServer.NSQuoteConnection.SetAllAccess
+  id: 'SetAllAccess'
+  so.intellisense: NSQuoteConnection.SetAllAccess
+  langs:
+  - crmscript
+  name: 'SetAllAccess'
+  nameWithType: NSQuoteConnection.SetAllAccess
+  fullName: CRMScript.NetServer.NSQuoteConnection.SetAllAccess
+  type: Method
+  summary: "\nIs this connection accessible to everyone?  If not, then the QuoteConnectionAccess table tells us who can access it.<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>allAccess</strong>Bool</li></ul><pre><code>NSQuoteConnection thing;\nBool allAccess;\nthing.SetAllAccess(allAccess);</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSQuoteConnection thing;\nBool allAccess;\nthing.SetAllAccess(allAccess);</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuoteConnection.SetAssociateAccessIds
+  commentId: M:CRMScript.NetServer.NSQuoteConnection.SetAssociateAccessIds
+  id: 'SetAssociateAccessIds'
+  so.intellisense: NSQuoteConnection.SetAssociateAccessIds
+  langs:
+  - crmscript
+  name: 'SetAssociateAccessIds'
+  nameWithType: NSQuoteConnection.SetAssociateAccessIds
+  fullName: CRMScript.NetServer.NSQuoteConnection.SetAssociateAccessIds
+  type: Method
+  summary: "\nArray of ids containing associates that will have access to this connection.<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>associateAccessIds</strong>Integer[]</li></ul><pre><code>NSQuoteConnection thing;\nInteger[] associateAccessIds;\nthing.SetAssociateAccessIds(associateAccessIds);</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSQuoteConnection thing;\nInteger[] associateAccessIds;\nthing.SetAssociateAccessIds(associateAccessIds);</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuoteConnection.SetConnectorName
+  commentId: M:CRMScript.NetServer.NSQuoteConnection.SetConnectorName
+  id: 'SetConnectorName'
+  so.intellisense: NSQuoteConnection.SetConnectorName
+  langs:
+  - crmscript
+  name: 'SetConnectorName'
+  nameWithType: NSQuoteConnection.SetConnectorName
+  fullName: CRMScript.NetServer.NSQuoteConnection.SetConnectorName
+  type: Method
+  summary: "\nProgrammatic name of the Connector plugin that implements this kind of connection<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>connectorName</strong>String</li></ul><pre><code>NSQuoteConnection thing;\nString connectorName;\nthing.SetConnectorName(connectorName);</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSQuoteConnection thing;\nString connectorName;\nthing.SetConnectorName(connectorName);</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuoteConnection.SetDeleted
+  commentId: M:CRMScript.NetServer.NSQuoteConnection.SetDeleted
+  id: 'SetDeleted'
+  so.intellisense: NSQuoteConnection.SetDeleted
+  langs:
+  - crmscript
+  name: 'SetDeleted'
+  nameWithType: NSQuoteConnection.SetDeleted
+  fullName: CRMScript.NetServer.NSQuoteConnection.SetDeleted
+  type: Method
+  summary: "\nIf set, then this is a row that has been 'deleted'; we do not physically delete rows to avoid disaster.<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>deleted</strong>Bool</li></ul><pre><code>NSQuoteConnection thing;\nBool deleted;\nthing.SetDeleted(deleted);</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSQuoteConnection thing;\nBool deleted;\nthing.SetDeleted(deleted);</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuoteConnection.SetDisplayDescription
+  commentId: M:CRMScript.NetServer.NSQuoteConnection.SetDisplayDescription
+  id: 'SetDisplayDescription'
+  so.intellisense: NSQuoteConnection.SetDisplayDescription
+  langs:
+  - crmscript
+  name: 'SetDisplayDescription'
+  nameWithType: NSQuoteConnection.SetDisplayDescription
+  fullName: CRMScript.NetServer.NSQuoteConnection.SetDisplayDescription
+  type: Method
+  summary: "\nTooltip/description shown to user; multi-language support. Any other info available that would make an uncertain user chose the right connector. Typically, used for tooltip.<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>displayDescription</strong>String</li></ul><pre><code>NSQuoteConnection thing;\nString displayDescription;\nthing.SetDisplayDescription(displayDescription);</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSQuoteConnection thing;\nString displayDescription;\nthing.SetDisplayDescription(displayDescription);</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuoteConnection.SetDisplayName
+  commentId: M:CRMScript.NetServer.NSQuoteConnection.SetDisplayName
+  id: 'SetDisplayName'
+  so.intellisense: NSQuoteConnection.SetDisplayName
+  langs:
+  - crmscript
+  name: 'SetDisplayName'
+  nameWithType: NSQuoteConnection.SetDisplayName
+  fullName: CRMScript.NetServer.NSQuoteConnection.SetDisplayName
+  type: Method
+  summary: "\nConnection name shown to user; multi-language support. The name of the connector to display in a list so that the users can choose between them. Typically the name of the client, with maybe the ERP system in parenthesis.<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>displayName</strong>String</li></ul><pre><code>NSQuoteConnection thing;\nString displayName;\nthing.SetDisplayName(displayName);</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSQuoteConnection thing;\nString displayName;\nthing.SetDisplayName(displayName);</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuoteConnection.SetErpConnectionId
+  commentId: M:CRMScript.NetServer.NSQuoteConnection.SetErpConnectionId
+  id: 'SetErpConnectionId'
+  so.intellisense: NSQuoteConnection.SetErpConnectionId
+  langs:
+  - crmscript
+  name: 'SetErpConnectionId'
+  nameWithType: NSQuoteConnection.SetErpConnectionId
+  fullName: CRMScript.NetServer.NSQuoteConnection.SetErpConnectionId
+  type: Method
+  summary: "\nThe ERP Connection that this Quote connection is an extension of<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>erpConnectionId</strong>Integer</li></ul><pre><code>NSQuoteConnection thing;\nInteger erpConnectionId;\nthing.SetErpConnectionId(erpConnectionId);</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSQuoteConnection thing;\nInteger erpConnectionId;\nthing.SetErpConnectionId(erpConnectionId);</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuoteConnection.SetERPName
+  commentId: M:CRMScript.NetServer.NSQuoteConnection.SetERPName
+  id: 'SetERPName'
+  so.intellisense: NSQuoteConnection.SetERPName
+  langs:
+  - crmscript
+  name: 'SetERPName'
+  nameWithType: NSQuoteConnection.SetERPName
+  fullName: CRMScript.NetServer.NSQuoteConnection.SetERPName
+  type: Method
+  summary: "\nName of the ERP system (programmatic).<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>eRPName</strong>String</li></ul><pre><code>NSQuoteConnection thing;\nString eRPName;\nthing.SetERPName(eRPName);</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSQuoteConnection thing;\nString eRPName;\nthing.SetERPName(eRPName);</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuoteConnection.SetExtraData
+  commentId: M:CRMScript.NetServer.NSQuoteConnection.SetExtraData
+  id: 'SetExtraData'
+  so.intellisense: NSQuoteConnection.SetExtraData
+  langs:
+  - crmscript
+  name: 'SetExtraData'
+  nameWithType: NSQuoteConnection.SetExtraData
+  fullName: CRMScript.NetServer.NSQuoteConnection.SetExtraData
+  type: Method
+  summary: "\nOptional extra data, in XML format, for configuring the connector. Connector-specific!<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>extraData</strong>String</li></ul><pre><code>NSQuoteConnection thing;\nString extraData;\nthing.SetExtraData(extraData);</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSQuoteConnection thing;\nString extraData;\nthing.SetExtraData(extraData);</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuoteConnection.SetInitializeResponse
+  commentId: M:CRMScript.NetServer.NSQuoteConnection.SetInitializeResponse
+  id: 'SetInitializeResponse'
+  so.intellisense: NSQuoteConnection.SetInitializeResponse
+  langs:
+  - crmscript
+  name: 'SetInitializeResponse'
+  nameWithType: NSQuoteConnection.SetInitializeResponse
+  fullName: CRMScript.NetServer.NSQuoteConnection.SetInitializeResponse
+  type: Method
+  summary: "\nStatus and Error message when the system called the connector Initialize method. Null if the connector has not been initialized yet.<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>initializeResponse</strong>NSPluginResponse</li></ul><pre><code>NSQuoteConnection thing;\nNSPluginResponse initializeResponse;\nthing.SetInitializeResponse(initializeResponse);</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSQuoteConnection thing;\nNSPluginResponse initializeResponse;\nthing.SetInitializeResponse(initializeResponse);</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuoteConnection.SetIsAvailable
+  commentId: M:CRMScript.NetServer.NSQuoteConnection.SetIsAvailable
+  id: 'SetIsAvailable'
+  so.intellisense: NSQuoteConnection.SetIsAvailable
+  langs:
+  - crmscript
+  name: 'SetIsAvailable'
+  nameWithType: NSQuoteConnection.SetIsAvailable
+  fullName: CRMScript.NetServer.NSQuoteConnection.SetIsAvailable
+  type: Method
+  summary: "\nWhether or not the specified connection is available. Typically, without network access the availability is false.<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>isAvailable</strong>Bool</li></ul><pre><code>NSQuoteConnection thing;\nBool isAvailable;\nthing.SetIsAvailable(isAvailable);</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSQuoteConnection thing;\nBool isAvailable;\nthing.SetIsAvailable(isAvailable);</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuoteConnection.SetPriceLists
+  commentId: M:CRMScript.NetServer.NSQuoteConnection.SetPriceLists
+  id: 'SetPriceLists'
+  so.intellisense: NSQuoteConnection.SetPriceLists
+  langs:
+  - crmscript
+  name: 'SetPriceLists'
+  nameWithType: NSQuoteConnection.SetPriceLists
+  fullName: CRMScript.NetServer.NSQuoteConnection.SetPriceLists
+  type: Method
+  summary: "\nThe PriceLists that this connection offers.<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>priceLists</strong>NSPriceList[]</li></ul><pre><code>NSQuoteConnection thing;\nNSPriceList[] priceLists;\nthing.SetPriceLists(priceLists);</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSQuoteConnection thing;\nNSPriceList[] priceLists;\nthing.SetPriceLists(priceLists);</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuoteConnection.SetQuoteConnectionId
+  commentId: M:CRMScript.NetServer.NSQuoteConnection.SetQuoteConnectionId
+  id: 'SetQuoteConnectionId'
+  so.intellisense: NSQuoteConnection.SetQuoteConnectionId
+  langs:
+  - crmscript
+  name: 'SetQuoteConnectionId'
+  nameWithType: NSQuoteConnection.SetQuoteConnectionId
+  fullName: CRMScript.NetServer.NSQuoteConnection.SetQuoteConnectionId
+  type: Method
+  summary: "\nPrimary key<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>quoteConnectionId</strong>Integer</li></ul><pre><code>NSQuoteConnection thing;\nInteger quoteConnectionId;\nthing.SetQuoteConnectionId(quoteConnectionId);</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSQuoteConnection thing;\nInteger quoteConnectionId;\nthing.SetQuoteConnectionId(quoteConnectionId);</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuoteConnection.SetRank
+  commentId: M:CRMScript.NetServer.NSQuoteConnection.SetRank
+  id: 'SetRank'
+  so.intellisense: NSQuoteConnection.SetRank
+  langs:
+  - crmscript
+  name: 'SetRank'
+  nameWithType: NSQuoteConnection.SetRank
+  fullName: CRMScript.NetServer.NSQuoteConnection.SetRank
+  type: Method
+  summary: "\nRank order<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>rank</strong>Integer</li></ul><pre><code>NSQuoteConnection thing;\nInteger rank;\nthing.SetRank(rank);</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSQuoteConnection thing;\nInteger rank;\nthing.SetRank(rank);</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuoteConnection.SetUserGroupAccessIds
+  commentId: M:CRMScript.NetServer.NSQuoteConnection.SetUserGroupAccessIds
+  id: 'SetUserGroupAccessIds'
+  so.intellisense: NSQuoteConnection.SetUserGroupAccessIds
+  langs:
+  - crmscript
+  name: 'SetUserGroupAccessIds'
+  nameWithType: NSQuoteConnection.SetUserGroupAccessIds
+  fullName: CRMScript.NetServer.NSQuoteConnection.SetUserGroupAccessIds
+  type: Method
+  summary: "\nArray of ids containing usergroups that will have access to this connection.<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>userGroupAccessIds</strong>Integer[]</li></ul><pre><code>NSQuoteConnection thing;\nInteger[] userGroupAccessIds;\nthing.SetUserGroupAccessIds(userGroupAccessIds);</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSQuoteConnection thing;\nInteger[] userGroupAccessIds;\nthing.SetUserGroupAccessIds(userGroupAccessIds);</code></pre>\n"
 references:
 - uid: CRMScript.NetServer.NSQuoteConnection
   commentId: T:CRMScript.NetServer.NSQuoteConnection

@@ -7,13 +7,140 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSWebhookAgent.CreateDefaultWebhook
+  - CRMScript.NetServer.NSWebhookAgent.DeleteWebhook
+  - CRMScript.NetServer.NSWebhookAgent.GetAllWebhooks
+  - CRMScript.NetServer.NSWebhookAgent.GetLastError
+  - CRMScript.NetServer.NSWebhookAgent.GetWebhook
+  - CRMScript.NetServer.NSWebhookAgent.#ctor
+  - CRMScript.NetServer.NSWebhookAgent.SaveWebhook
+  - CRMScript.NetServer.NSWebhookAgent.SignalEvent
+  - CRMScript.NetServer.NSWebhookAgent.TestWebhook
   name: NSWebhookAgent
   nameWithType: NSWebhookAgent
   fullName: CRMScript.NetServer.NSWebhookAgent
   type: Class
-  summary: "\nWebhook definitions - webhooks signal other systems about events inside NetServer.\n"
+  summary: "\nWebhook definitions* webhooks signal other systems about events inside NetServer.\n"
   example: 
   - "\n<pre><code>NSWebhookAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSWebhookAgent.CreateDefaultWebhook
+  commentId: M:CRMScript.NetServer.NSWebhookAgent.CreateDefaultWebhook
+  id: 'CreateDefaultWebhook'
+  so.intellisense: NSWebhookAgent.CreateDefaultWebhook
+  langs:
+  - crmscript
+  name: 'CreateDefaultWebhook'
+  nameWithType: NSWebhookAgent.CreateDefaultWebhook
+  fullName: CRMScript.NetServer.NSWebhookAgent.CreateDefaultWebhook
+  type: Method
+  summary: "\nSet default values into a new NSWebhook.
+NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>A new NSWebhook with default values.<p></p>\n<pre><code>NSWebhookAgent agent;\nNSWebhook thing = agent.CreateDefaultWebhook();\nthing = agent.SaveWebhook(thing);</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSWebhookAgent agent;\nNSWebhook thing = agent.CreateDefaultWebhook();\nthing = agent.SaveWebhook(thing);</code></pre>\n"
+- uid: CRMScript.NetServer.NSWebhookAgent.DeleteWebhook
+  commentId: M:CRMScript.NetServer.NSWebhookAgent.DeleteWebhook
+  id: 'DeleteWebhook'
+  so.intellisense: NSWebhookAgent.DeleteWebhook
+  langs:
+  - crmscript
+  name: 'DeleteWebhook'
+  nameWithType: NSWebhookAgent.DeleteWebhook
+  fullName: CRMScript.NetServer.NSWebhookAgent.DeleteWebhook
+  type: Method
+  summary: "\nDeletes the NSWebhook\n"
+  example: 
+  - "\n<pre><code>NSWebhookAgent agent;\nagent.DeleteWebhook(123);</code></pre>\n"
+- uid: CRMScript.NetServer.NSWebhookAgent.GetAllWebhooks
+  commentId: M:CRMScript.NetServer.NSWebhookAgent.GetAllWebhooks
+  id: 'GetAllWebhooks'
+  so.intellisense: NSWebhookAgent.GetAllWebhooks
+  langs:
+  - crmscript
+  name: 'GetAllWebhooks'
+  nameWithType: NSWebhookAgent.GetAllWebhooks
+  fullName: CRMScript.NetServer.NSWebhookAgent.GetAllWebhooks
+  type: Method
+  summary: "\nReturns all webhooks, according to filter criteria\n"
+  example: 
+  - "\n<pre><code>NSWebhookAgent agent;\nString nameFilter;\nString eventFilter;\nInteger statusFilter;\nNSWebhook[] res = agent.GetAllWebhooks(nameFilter, eventFilter, statusFilter);</code></pre>\n"
+- uid: CRMScript.NetServer.NSWebhookAgent.GetLastError
+  commentId: M:CRMScript.NetServer.NSWebhookAgent.GetLastError
+  id: 'GetLastError'
+  so.intellisense: NSWebhookAgent.GetLastError
+  langs:
+  - crmscript
+  name: 'GetLastError'
+  nameWithType: NSWebhookAgent.GetLastError
+  fullName: CRMScript.NetServer.NSWebhookAgent.GetLastError
+  type: Method
+  summary: "\nReturn the most recent error message received when calling this webhook.\n"
+  example: 
+  - "\n<pre><code>NSWebhookAgent agent;\nInteger webhookId;\nString res = agent.GetLastError(webhookId);</code></pre>\n"
+- uid: CRMScript.NetServer.NSWebhookAgent.GetWebhook
+  commentId: M:CRMScript.NetServer.NSWebhookAgent.GetWebhook
+  id: 'GetWebhook'
+  so.intellisense: NSWebhookAgent.GetWebhook
+  langs:
+  - crmscript
+  name: 'GetWebhook'
+  nameWithType: NSWebhookAgent.GetWebhook
+  fullName: CRMScript.NetServer.NSWebhookAgent.GetWebhook
+  type: Method
+  summary: "\nGets a NSWebhook object.\n"
+  example: 
+  - "\n<pre><code>NSWebhookAgent agent;\nNSWebhook thing = agent.GetWebhook(123);</code></pre>\n"
+- uid: CRMScript.NetServer.NSWebhookAgent.#ctor
+  commentId: M:CRMScript.NetServer.NSWebhookAgent.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSWebhookAgent
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSWebhookAgent.#ctor
+  fullName: CRMScript.NetServer.NSWebhookAgent.#ctor
+  type: Method
+  summary: "\nWebhook definitions* webhooks signal other systems about events inside NetServer.\n"
+  example: 
+  - "\n<pre><code>NSWebhookAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSWebhookAgent.SaveWebhook
+  commentId: M:CRMScript.NetServer.NSWebhookAgent.SaveWebhook
+  id: 'SaveWebhook'
+  so.intellisense: NSWebhookAgent.SaveWebhook
+  langs:
+  - crmscript
+  name: 'SaveWebhook'
+  nameWithType: NSWebhookAgent.SaveWebhook
+  fullName: CRMScript.NetServer.NSWebhookAgent.SaveWebhook
+  type: Method
+  summary: "\nUpdates the existing NSWebhook or creates a new NSWebhook if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>webhook</strong>The NSWebhook to save.</li></ul><strong>Returns:</strong>New or updated NSWebhook<p></p>\n<pre><code>NSWebhook  agent;\nNSWebhook thing = agent.CreateDefaultWebhook();\nthing = agent.SaveWebhook(thing);</code></pre>\n"
+  example: 
+  - "\n<pre><code>NSWebhook  agent;\nNSWebhook thing = agent.CreateDefaultWebhook();\nthing = agent.SaveWebhook(thing);</code></pre>\n"
+- uid: CRMScript.NetServer.NSWebhookAgent.SignalEvent
+  commentId: M:CRMScript.NetServer.NSWebhookAgent.SignalEvent
+  id: 'SignalEvent'
+  so.intellisense: NSWebhookAgent.SignalEvent
+  langs:
+  - crmscript
+  name: 'SignalEvent'
+  nameWithType: NSWebhookAgent.SignalEvent
+  fullName: CRMScript.NetServer.NSWebhookAgent.SignalEvent
+  type: Method
+  summary: "\nSignal webhooks that an event has occurred. All webhooks listening for the event will be notified.\n"
+  example: 
+  - "\n<pre><code>NSWebhookAgent agent;\nString eventName;\nInteger primaryKey;\nStringObjectDictionary data;\nagent.SignalEvent(eventName, primaryKey, data);</code></pre>\n"
+- uid: CRMScript.NetServer.NSWebhookAgent.TestWebhook
+  commentId: M:CRMScript.NetServer.NSWebhookAgent.TestWebhook
+  id: 'TestWebhook'
+  so.intellisense: NSWebhookAgent.TestWebhook
+  langs:
+  - crmscript
+  name: 'TestWebhook'
+  nameWithType: NSWebhookAgent.TestWebhook
+  fullName: CRMScript.NetServer.NSWebhookAgent.TestWebhook
+  type: Method
+  summary: "\nPings a webhook with a 'test' event, returns SUCCESS(true) or FAILURE(false) + the response from the webhook target.\n"
+  example: 
+  - "\n<pre><code>NSWebhookAgent agent;\nNSWebhook webhook;\nNSWebhookResult res = agent.TestWebhook(webhook);</code></pre>\n"
 references:
 - uid: CRMScript.NetServer.NSWebhookAgent
   commentId: T:CRMScript.NetServer.NSWebhookAgent

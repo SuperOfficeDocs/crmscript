@@ -10,15 +10,18 @@ so.topic: reference
 
 Set the base timezone id.
 
+**Returns:** Bool
+
 ## Parameters
 
-* **timezoneId** The timezone id to save
+| Parameter | Type | Description |
+|---|---|---|
+| timezoneId | Integer | The timezone id to save |
 
-**Returns:** Bool
+## Example
 
 ```crmscript
 NSTimeZoneAgent agent;
 Integer timezoneId;
 Bool res = agent.SetBaseTimeZoneId(timezoneId);
 ```
-

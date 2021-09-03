@@ -13,5 +13,7 @@ This method will set the discount of the current InvoiceEntry object with the gi
 percent.
 If discount is set in both percent and money, the save-function use the money-version.
 
+## Parameters
+
 * **percent:** The dicount in percent.
 

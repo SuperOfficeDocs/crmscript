@@ -15,6 +15,8 @@ If the base is zero and exp is less than or equal to zero, or the base is negati
 
 If the result is too large an invalid float like 1.#INF0 will be returned.
 
+## Parameters
+
 * **base:** The base.
 * **exp:** The exponent.
 * **Returns:** The base raised to the expth power.

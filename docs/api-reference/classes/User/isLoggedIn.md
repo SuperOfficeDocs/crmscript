@@ -10,5 +10,7 @@ so.topic: reference
 
 Check if a user is logged in or not.
 
+## Parameters
+
 * **origin:** 2 = web pages, 1 = soap interface
 

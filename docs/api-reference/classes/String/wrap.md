@@ -11,5 +11,7 @@ so.yml: 1
 
 This function will wrap the String in lines of wanted length.
 
+## Parameters
+
 * **length:** The number of characters per line after wrapping
 * **ignoreQuote:** True if you do not want quoted lines to be wrapped, else false.

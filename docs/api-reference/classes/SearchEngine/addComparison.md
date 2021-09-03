@@ -28,17 +28,16 @@ You can optionally add functions to be applied to the 2 fields.
 | field2 | String  The field to compare with `field1` |
 | func2 | String | Optional. The function to use on `field2` |
 | rowOperator | String | Operator for combining this and the next criterion |
-| priority | Integer | A number. All criteria with the same number will be placed
-inside the same brackets |
+| priority | Integer | A number. All criteria with the same number will be placed inside the same brackets |
 
 ### Functions
 
 | Function | Other name | Applies to     | bypassNetServer | Description |
 |----------|------------|----------------|:---------------:|-------------|
-| avg      | FuncAvg    | Integer, Float |     yes         | aggregate, the average value of a column          |
-| count    | FuncCount  | Integer, Float |     yes         | aggregate, the number of rows matching cond.            |
-| sum      | FuncSum    | Integer, Float |     yes         |aggregate, the total sum of a column            |
-| max      | FuncMax    | Integer, Float |     yes         | aggregate, the largest value of a column            |
+| avg      | FuncAvg    | Integer, Float |     yes         | aggregate, the average value of a column |
+| count    | FuncCount  | Integer, Float |     yes         | aggregate, the number of rows matching cond. |
+| sum      | FuncSum    | Integer, Float |     yes         | aggregate, the total sum of a column |
+| max      | FuncMax    | Integer, Float |     yes         | aggregate, the largest value of a column |
 | min      | FuncMin    | Time, DateTime |                 |            |
 | hour     | FuncHour   | Time, DateTime |                 |            |
 | wday     | FuncWDay   | Date, DateTime |                 |            |

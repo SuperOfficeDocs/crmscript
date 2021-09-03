@@ -11,4 +11,6 @@ so.yml: 1
 
 This method will remove an element at the specified index.
 
+## Parameters
+
 * **index:** The index of the element to remove from the vector.

@@ -23,5 +23,7 @@ companyId* Id of the company owning the key. (Only relevant internal use)
 expire* Expire date
 key* The license key as a text string.
 
+## Parameters
+
 * **name:** Name of the value to extract.
 

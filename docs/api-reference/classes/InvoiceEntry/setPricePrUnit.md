@@ -11,5 +11,7 @@ so.topic: reference
 
 This method will set the price per unit for the current InvoiceEntry object with the given price.
 
+## Parameters
+
 * **price:** The price per unit
 

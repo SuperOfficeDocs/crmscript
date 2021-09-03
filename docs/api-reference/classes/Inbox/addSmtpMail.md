@@ -11,6 +11,8 @@ so.topic: reference
 
 With this method you can insert an SMTP formatted email into eJournal's inbox, which then will be imported when ejournalCron runs. The mail string must conform to the SMTP standard.
 
+## Parameters
+
 * **smtpMail:** A string with a SMTP formatted mail
 * **uidl:** The UIDL for this email. Can be anything, but it have to be unique for each email
 * **filterId:** The id of the mailbox that this mail will be imported under

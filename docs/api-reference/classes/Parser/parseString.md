@@ -6,13 +6,14 @@ keywords: parseString(String)
 so.topic: reference
 ---
 
-# Parser.parseString(String stringToParse)
+# String parseString(String stringToParse)
 
 Parse a text and return the result.
 
-## Parameters
-
-* stringToParse The string containing the text to parse.
-
 Returns the parsed result.
 
+## Parameters
+
+| Parameter | Type | Description |
+|---|---|---|
+| stringToParse | String | The string containing the text to parse |

@@ -11,4 +11,6 @@ so.topic: reference
 
 Return the CGI variable with the given name.
 
+## Parameters
+
 * **varName:** The name of the CGI variable to return.

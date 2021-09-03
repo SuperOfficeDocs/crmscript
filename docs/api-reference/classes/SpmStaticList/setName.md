@@ -10,5 +10,7 @@ so.topic: reference
 
 Sets the name of this list. This is only a descriptive text which will be shown in eJournal.
 
+## Parameters
+
 * **name:** The name of the list
 

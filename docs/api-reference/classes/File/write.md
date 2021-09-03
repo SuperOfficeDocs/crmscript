@@ -9,6 +9,8 @@ so.topic: reference
 
 # File.write(String data)
 
+## Parameters
+
 * **Data:** String to write to the file
 
 This function can be called many times, adding more and more data to the file.

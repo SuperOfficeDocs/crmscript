@@ -10,5 +10,7 @@ so.topic: reference
 
 Removes a recipient from the list identified by the email address.
 
+## Parameters
+
 * **address:** The email address of the recipient to be removed
 

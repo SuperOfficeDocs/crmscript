@@ -10,6 +10,8 @@ so.topic: reference
 
 Will load an existing static list.
 
+## Parameters
+
 * **id:** The id of the static list
 * **Returns:** Returns false if the list was not found
 

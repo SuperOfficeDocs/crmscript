@@ -11,5 +11,7 @@ so.yml: 1
 
 Escape special characters of a string. Special characters are given as a parameter.
 
+## Parameters
+
 * **chars:** Special characters which will be escaped with a backslash
 * **Returns:** The escaped coded string

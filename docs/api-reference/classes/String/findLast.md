@@ -9,5 +9,7 @@ so.yml: 1
 
 # String.findLast(String p_0)
 
+## Parameters
+
 * **p0:** The string to match
 * **Returns:** The position of the last occurrence of the string to match

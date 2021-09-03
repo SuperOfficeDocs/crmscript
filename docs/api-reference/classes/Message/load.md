@@ -9,11 +9,12 @@ so.topic: reference
 
 # Message.load(Integer id)
 
-Load message with given id, returns true if successful or false if not successful.
+Load message with given id returns true if successful or false if not successful.
 
 ## Parameters
 
-* Integer id of message
+| Parameter | Type | Description |
+|---|---|---|
+| id | Integer | The ID of the message |
 
 Returns a bool with the load result, true if message loads successfully.
-

@@ -6,13 +6,15 @@ keywords: getValue(String)
 so.topic: reference
 ---
 
-# User.getValue(String colName)
+# String getValue(String colName)
 
 Gets the value of a given column.
 
 ## Parameters
 
-* String with column name
+| Parameter | Type | Description |
+|---|---|---|
+| colName | String | column name of the value |
 
 ## Values
 
@@ -39,4 +41,3 @@ Gets the value of a given column.
 * x_* The extrafield with the given database field name.
 
 Returns a string with value in given column
-

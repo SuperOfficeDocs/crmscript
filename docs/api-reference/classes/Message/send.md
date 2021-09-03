@@ -35,5 +35,5 @@ Returns true if everything is OK, otherwise false.
 | cc | Vector | The cc-recipients in the email |
 | bcc | Vector | The bcc-recipients in the email |
 | categoryId | Integer | Optional. The ID of the category to check for reply template merge. Alternative to `subject`. |
-| subject | String | Optional | The subject in the email. Alternative to `categoryId`. |
+| subject | String | Optional. The subject in the email. Alternative to `categoryId`. |
 | bodyHeading | String | Optional. The body heading in the email. Used in combination with `subject`. |

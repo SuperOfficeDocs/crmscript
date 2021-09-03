@@ -10,5 +10,7 @@ so.topic: reference
 
 Use the given GenericSearch entry as query (instead of SQL string).
 
+## Parameters
+
 * **gs:** The GenericSearch entry to use.
 

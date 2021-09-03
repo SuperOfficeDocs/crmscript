@@ -11,5 +11,7 @@ so.yml: 1
 
 Search for a substring and returns the index of the beginning of the first occurrence of the substring.
 
+## Parameters
+
 * **subStr:** Search for this substring
 * **Returns:** First index of the substring

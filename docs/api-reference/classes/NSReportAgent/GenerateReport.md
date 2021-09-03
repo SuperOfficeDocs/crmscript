@@ -10,9 +10,7 @@ so.topic: reference
 
 Generates the report in PDF format
 
-## Parameters
-
-* **reportId** The id of the report.
+* **ReportId** The id of the report.
 * **labelLayoutId** The id of the labellayout. Use 0 if the report isn't of type label.
 * **filename** Filename of the report.
 * **language** Language to use when generating the report.

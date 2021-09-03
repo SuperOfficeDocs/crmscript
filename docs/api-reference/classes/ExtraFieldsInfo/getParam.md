@@ -1,43 +1,38 @@
 ---
 uid: crmscript_ref_ExtraFieldsInfo_getParam_String_p_0
-title: ExtraFieldsInfo.getParam(String p_0)
+title: ExtraFieldsInfo.getParam(String parameter)
 intellisense: ExtraFieldsInfo.getParam
 sortOrder: 308
 keywords: getParam(String)
 so.topic: reference
 ---
 
-# ExtraFieldsInfo.getParam(String p_0)
+# ExtraFieldsInfo.getParam(String parameter)
 
 This function returns the value of the given parameter.
 
 ## Parameters
 
-The following parameters are available for the various field types:
+| Parameter | Type | Description |
+|---|---|---|
+| Parameter | String | The info to get, see list of values |
 
-* Available for all types:
-    * <b>"defaultNow"</b>* use current time and date as default value
-    * <b>"defaultActiveUser"</b>* use active user as default value
-* Contact relation, Company relation, Request relation:
-    * <b>"targetLabel"</b>* header
-* Extra table relation:
-    * <b>"targetLabel"</b>* header
-    * <b>"useDropDown"</b>* choose values from list
-    * <b>"onlyLeafNode"</b>
-* Float:
-   * <b>"precision"</b>* number of decimals
-* Text long:
-   * <b>"option"</b>
-   * <b>"useTextArea"</b>
-   * <b>"height"</b>
-* Text short:
-   * <b>"option"</b>
-* Dynamic link:
-   * <b>"linkName"</b>
-   * <b>"linkValue"</b>* url
-* Timespan:
-   * <b>"useDays"</b>
-   * <b>"useHours"</b>
-   * <b>"useMinutes"</b>
-   * <b>"fields"</b>* number of fields
+### Available values
 
+| Variable | Available to | Description |
+|---|---|---|
+| defaultNow | all types | use current time and date as default value |
+| defaultActiveUser | all types |use active user as default value |
+| fields | TimeSpan | number of fields |
+| height | Text long | |
+| linkName | Dynamic link | |
+| linkValue | Dynamic link | url |
+| onlyLeafNode | Extra table relation | |
+| precision | Float | number of decimals |
+| option | Text long, Text short | |
+| useDays | TimeSpan | |
+| useHours | TimeSpan | |
+| useMinutes | TimeSpan | |
+| useTextArea | Text long | |
+| targetLabel | Contact relation, Company relation, Request relation, Extra table relation | header |
+| useDropDown | Extra table relation| choose values from list |

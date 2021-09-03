@@ -10,9 +10,7 @@ so.topic: reference
 
 Get Crm Field values
 
-## Parameters
-
-* **recordId** The id of the CRM entity
+* **RecordId** The id of the CRM entity
 * **actorTypeCrm** CRM Actor type
 * Enum: 0 = Unknown 
 * Enum: 1 = Contact 

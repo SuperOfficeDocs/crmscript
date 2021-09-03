@@ -10,12 +10,16 @@ so.topic: reference
 
 Validates the set of dates to calculate any conflicts.
 
+**Returns:** NSRecurrenceDate[]
+
 ## Parameters
 
-* **appointmentEntity** 
-* **dates** The dates to validate.
+| Parameter | Types | Description |
+|---|---|---|
+| appointmentEntity | NSappointmentEntity | |
+| dates | DateTime[] | The dates to validate. |
 
-**Returns:** NSRecurrenceDate[]
+## Example
 
 ```crmscript
 NSAppointmentAgent agent;
@@ -23,4 +27,3 @@ NSAppointmentEntity appointmentEntity;
 DateTime[] dates;
 NSRecurrenceDate[] res = agent.ValidateDays(appointmentEntity, dates);
 ```
-

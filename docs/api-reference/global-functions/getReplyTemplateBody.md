@@ -11,6 +11,8 @@ so.topic: reference
 
 Returns reply template text as specified by the parameters.
 
+## Parameters
+
 * **id:** The database id of the template.
 * **useHTML:** selects either the HTML or plain text version.
 * **langId:** Selects preferred language. -1 specifies default.

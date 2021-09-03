@@ -12,5 +12,6 @@ This function sets the end time (object) of "active" mode for Friday.
 
 ## Parameters
 
-* time: a time object set to desired end time
-
+| Parameter | Type | Description |
+|---|---|---|
+| time | Time | A time object set to desired start time |

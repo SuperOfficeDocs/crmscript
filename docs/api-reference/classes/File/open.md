@@ -23,9 +23,9 @@ You can optionally provide a codepage.
 
 | Parameter | Type | Description |
 |---|---|---|
-| filename String | Path to the file |
+| filename | String | Path to the file |
 | mode | String | How to open the file |
-| codepage | String | Optional. What text codepage the file is in.<br>Default is ISO-8859-1 (Latin-1), but UTF-8 is common for Unicode text files. |
+| codepage | String | Optional. What text codepage the file is in. Default is ISO-8859-1 (Latin-1), but UTF-8 is common for Unicode text files. |
 
 ### Modes
 

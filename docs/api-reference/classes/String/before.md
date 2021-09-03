@@ -9,5 +9,7 @@ so.yml: 1
 
 # String.before(String searchText)
 
+## Parameters
+
 * **searchText:** The text to search for
 * **Returns:** The part of the string preceding the search text

@@ -9,5 +9,7 @@ so.yml: 1
 
 # String.caseEndsWith(String s)
 
+## Parameters
+
 * **s:** The text the string may end with
 * **Returns:** True if the string object ends with the string given as the parameter regardless of case.

@@ -10,9 +10,7 @@ so.topic: reference
 
 Gets a NSReportEntity object.
 
-## Parameters
-
-* **reportEntityId** The identifier of the NSReportEntity object
+* **ReportEntityId** The identifier of the NSReportEntity object
 
 **Returns:** NSReportEntity
 

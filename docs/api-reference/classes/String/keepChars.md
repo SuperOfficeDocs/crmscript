@@ -9,5 +9,7 @@ so.yml: 1
 
 # String.keepChars(String charsToKeep)
 
+## Parameters
+
 * **charsToKeep:** A string of characters to keep
 * **Returns:** String stripped from all other characters

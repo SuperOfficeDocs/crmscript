@@ -10,9 +10,7 @@ so.topic: reference
 
 Creates a login session for a CS user
 
-## Parameters
-
-* **remoteIp** The ip of the client creating the session
+* **RemoteIp** The ip of the client creating the session
 
 **Returns:** NSCsSessionKey
 

@@ -10,5 +10,7 @@ so.topic: reference
 
 Use the given StringMatrix entry as query (instead of SQL string).
 
+## Parameters
+
 * **sm:** The StringMatrix entry to use.
 

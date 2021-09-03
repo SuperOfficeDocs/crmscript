@@ -11,5 +11,7 @@ so.topic: reference
 
 Returns a reference to an HtmlElement in the associated screen.
 
+## Parameters
+
 * **name:** The name of the element to return.
 * **Returns:** The HtmlElement with the given name.

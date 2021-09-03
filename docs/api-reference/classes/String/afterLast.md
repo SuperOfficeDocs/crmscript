@@ -11,5 +11,7 @@ so.yml: 1
 
 Returns the string after the last matching string.
 
+## Parameters
+
 * **String** to find
 * **Returns:** The last part of the string after the last match.

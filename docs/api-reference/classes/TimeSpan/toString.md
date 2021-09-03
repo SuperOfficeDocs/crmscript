@@ -8,6 +8,8 @@ so.topic: reference
 
 # TimeSpan.toString(Integer mode, Integer lang, Integer maxMode, Bool short)
 
+## Parameters
+
 * **mode:** Lower unit
 * **lang:** Language used for text
 * **maxMode:** Upper unit

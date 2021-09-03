@@ -11,6 +11,8 @@ so.topic: reference
 
 Add order on specified field, desc/asc as specified by the Bool.
 
+## Parameters
+
 * **field:** The field that will be sorted
 * **asc:** The direction of the sort, true if ascending, false if descending
 

@@ -11,4 +11,6 @@ so.topic: reference
 
 This method will set the page meta refresh to the specified seconds, thus making the screen refresh. If this method is used in a script that is not connected to a screen, nothing will happen.
 
+## Parameters
+
 * **p_seconds:** Number of seconds for the refresh

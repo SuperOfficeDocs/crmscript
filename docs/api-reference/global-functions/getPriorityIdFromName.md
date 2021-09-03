@@ -11,5 +11,7 @@ so.topic: reference
 
 Returns the id of the priority with the given name.
 
+## Parameters
+
 * **name:** Name of the document
 * **Returns:** The id of the priority

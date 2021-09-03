@@ -11,5 +11,7 @@ so.topic: reference
 This method will set the descriptive text of the SpmShipment. It is not used in
 the outgoing email, but will be visible when listed in eJournal.
 
+## Parameters
+
 * **description:** A text which describes this shipment
 

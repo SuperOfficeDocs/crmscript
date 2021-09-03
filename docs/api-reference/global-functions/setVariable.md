@@ -11,5 +11,7 @@ so.topic: reference
 
 Sets the value in the global environment (used for communication between the script the calling context).
 
+## Parameters
+
 * **name:** The name of the variable.
 * **value:** The value of the variable.

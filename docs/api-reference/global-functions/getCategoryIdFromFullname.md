@@ -11,5 +11,7 @@ so.topic: reference
 
 Find category ID from the category's full name.
 
+## Parameters
+
 * **name:** Full name of category
 * **Returns:** ID of category

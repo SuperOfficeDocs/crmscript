@@ -10,6 +10,8 @@ so.topic: reference
 
 Returns the value for a given cell.
 
+## Parameters
+
 * **row:** The zero-based index of the row.
 * **column:** The zero-based index of the column.
 * **Returns:** The value of the cell at the specified position.

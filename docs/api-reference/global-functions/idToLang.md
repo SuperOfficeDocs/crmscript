@@ -11,5 +11,7 @@ so.topic: reference
 
 Returns the code of the given language ID.
 
+## Parameters
+
 * **langId:** Language ID
 * **Returns:** Language code of the given language ID

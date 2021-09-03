@@ -13,5 +13,7 @@ so.yml: 1
 
 Check whether a variable is a struct or not. Any variable can be checked. The variable will automatically be up-casted to a Generic.
 
+## Parameters
+
 * **generic:** Generic variable to test
 * **Returns:** Bool true if the variable is a struct

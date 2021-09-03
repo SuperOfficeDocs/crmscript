@@ -10,5 +10,7 @@ so.topic: reference
 
 Execute the query and returns the result in the matrix.
 
+## Parameters
+
 * **matrix:** The matrix to fill with the resultset
 

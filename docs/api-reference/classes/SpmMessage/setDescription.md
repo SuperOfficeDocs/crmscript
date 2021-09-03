@@ -10,5 +10,7 @@ so.topic: reference
 
 This method will set the descriptive text of the SpmMessage. It is not used in the outgoing email, but will be visible when listed in eJournal.
 
+## Parameters
+
 * **description:** a text which describes this message
 

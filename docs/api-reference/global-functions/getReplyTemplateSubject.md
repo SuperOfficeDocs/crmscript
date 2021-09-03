@@ -11,5 +11,7 @@ so.topic: reference
 
 Returns reply template subject.
 
+## Parameters
+
 * **id:** The database id of the template.
 * **langId:** Selects preferred language. -1 specifies default.

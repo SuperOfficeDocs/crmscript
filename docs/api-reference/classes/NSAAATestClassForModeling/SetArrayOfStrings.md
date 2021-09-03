@@ -9,6 +9,8 @@ so.topic: reference
 
 # NSAAATestClassForModeling.SetArrayOfStrings(String[] p_0)
 
+## Parameters
+
 * **ArrayOfStrings:** String[]
 * **Returns:** String[]
 

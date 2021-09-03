@@ -11,6 +11,8 @@ so.yml: 1
 
 Copy a piece of a string.
 
+## Parameters
+
 * **pos:** Start position of the substring.
 * **len:** Length of the substring
 * **Returns:** Return the substring.

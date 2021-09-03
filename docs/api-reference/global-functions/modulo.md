@@ -11,6 +11,8 @@ so.topic: reference
 
 Returns a modulo b. This can also be done with the syntax "a % b".
 
+## Parameters
+
 * **a:** The number to divide.
 * **b:** The number to divide by.
 * **result:** The result of a modulo b

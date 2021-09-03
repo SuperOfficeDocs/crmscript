@@ -14,5 +14,7 @@ Byte constructor
 
 A byte can only contain integer values between 0 and 255. Large values will be masked.
 
+## Parameters
+
 * **value:** Integer value
 * **Returns:** Byte object

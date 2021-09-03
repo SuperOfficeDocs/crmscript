@@ -10,5 +10,7 @@ so.topic: reference
 
 Use the given SearchEngine entry as query (instead of SQL string).
 
+## Parameters
+
 * **gs:** The SearchEngine entry to use.
 

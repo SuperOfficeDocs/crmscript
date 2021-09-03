@@ -10,6 +10,8 @@ so.topic: reference
 
 Add a callback. A callback is a PARSER-snippet which will be executed for the given column for each row. This is an old method. Use StatResult and iterate instead.
 
+## Parameters
+
 * **group:** The column for which this callback should be executed.
 * **script:** The Parser code to execute.
 

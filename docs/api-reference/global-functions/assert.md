@@ -12,4 +12,6 @@ so.topic: reference
 This method is used primarily with unit testing.
 It will throw an AssertException if "condition" is false. The exception contains the line number where the assert occurred.
 
+## Parameters
+
 * **condition:** The bool to test

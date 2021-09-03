@@ -7,10 +7,14 @@ keywords: SetStringTitle(String)
 so.topic: reference
 ---
 
-# NSAAATestClassForModeling.SetStringTitle(String p_0)
+# String NSAAATestClassForModeling.SetStringTitle(String title)
 
 Sale heading (short description?)
 
-* **StringTitle:** String
 * **Returns:** String
 
+## Parameters
+
+| Parameter | Type | Description |
+|---|---|---|
+| title | String | StringTitle |

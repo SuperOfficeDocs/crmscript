@@ -10,9 +10,7 @@ so.topic: reference
 
 Gets a NSReasonStalled object.
 
-## Parameters
-
-* **reasonStalledId** The identifier of the NSReasonStalled object
+* **ReasonStalledId** The identifier of the NSReasonStalled object
 
 **Returns:** NSReasonStalled
 

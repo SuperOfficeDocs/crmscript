@@ -11,6 +11,8 @@ so.topic: reference
 
 Gets a AAATestClassForModeling object.
 
+## Parameters
+
 * **aAATestClassForModelingId:** The identifier of the AAATestClassForModeling object
 * **Returns:** AAATestClassForModeling
 

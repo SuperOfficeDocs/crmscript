@@ -10,9 +10,7 @@ so.topic: reference
 
 Gets a NSReasonSold object.
 
-## Parameters
-
-* **reasonSoldId** The identifier of the NSReasonSold object
+* **ReasonSoldId** The identifier of the NSReasonSold object
 
 **Returns:** NSReasonSold
 

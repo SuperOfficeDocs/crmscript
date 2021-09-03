@@ -15,5 +15,7 @@ It returns the id of the screen element with the given index in the current scre
 
 The index can be retrieved with `getHtmlElementIndex(elementName)`.
 
+## Parameters
+
 * **index:** The id of the element
 * **Returns:** The id of the element

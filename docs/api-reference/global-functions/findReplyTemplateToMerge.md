@@ -9,6 +9,8 @@ so.topic: reference
 
 # Integer findReplyTemplateToMerge(Integer p_categoryId)
 
+## Parameters
+
 * **p_categoryId:*** The categoryId to locate the reply template for.
 * **Returns:** The ID of the reply template to use.
 

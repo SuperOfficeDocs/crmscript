@@ -10,5 +10,7 @@ so.topic: reference
 
 Set the body version of the SpmMessage object (will correspond to the text/plain version in the outgoing email).
 
+## Parameters
+
 * **body:** The plain text version of the body
 

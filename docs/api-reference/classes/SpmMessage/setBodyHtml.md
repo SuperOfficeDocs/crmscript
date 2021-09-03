@@ -10,5 +10,7 @@ so.topic: reference
 
 Set the html body version of the SpmMessage object (will correspond to the text/html version in the outgoing email).
 
+## Parameters
+
 * **htmlBody:** The html version of the body
 

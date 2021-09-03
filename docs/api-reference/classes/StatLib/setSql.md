@@ -10,5 +10,7 @@ so.topic: reference
 
 Sets the query for the instance.
 
+## Parameters
+
 * **sqlStatement:** The SQL query to execute for the instance.
 

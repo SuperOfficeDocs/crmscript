@@ -10,9 +10,7 @@ so.topic: reference
 
 Saves default numbering values in preferences
 
-## Parameters
-
-* **refCountEntity** The refCountEntity that holds the values that will be saved
+* **RefCountEntity** The refCountEntity that holds the values that will be saved
 
 ```crmscript
 NSNumberAllocationAgent agent;

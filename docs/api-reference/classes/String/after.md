@@ -15,5 +15,7 @@ For example, if this is "name := value", then after(":=") returns " value".
 
 If s is not found in this, then an empty string is returned.
 
+## Parameters
+
 * **s:** The string to look for.
 * **Returns:** What is after s in this.

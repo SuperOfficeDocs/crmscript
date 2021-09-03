@@ -10,9 +10,7 @@ so.topic: reference
 
 Gets a NSReportLabelLayoutEntity object.
 
-## Parameters
-
-* **reportLabelLayoutEntityId** The identifier of the NSReportLabelLayoutEntity object
+* **ReportLabelLayoutEntityId** The identifier of the NSReportLabelLayoutEntity object
 
 **Returns:** NSReportLabelLayoutEntity
 

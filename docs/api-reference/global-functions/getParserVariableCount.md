@@ -11,5 +11,7 @@ so.topic: reference
 
 Returns the number of values for the specified value in the global Parser instance.
 
+## Parameters
+
 * **varName:** The name of the variable.
 * **Returns:** The number of values for the variable.

@@ -10,6 +10,8 @@ so.topic: reference
 
 Check if the current row is the first row for a given group.
 
+## Parameters
+
 * **column:** The column which identifies the group.
 * **Returns:** True if we're at the first row for this group, otherwise False.
 

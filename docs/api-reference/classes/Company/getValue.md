@@ -13,9 +13,11 @@ Gets a String with the value of a given column.
 
 ## Parameters
 
-* String colName
+| Parameter | Type | Description |
+|---|---|---|
+| colName | String | column name |
 
-## Possible colNames
+### Possible colNames
 
 * id: Integer, The primary key (auto-incremented)
 * primContact: Integer, The id of the customer who is the primary contact for this company customer.id
@@ -45,4 +47,3 @@ Returns a string value of the given column.
     print(b.toString());
     
     print(c.getValue("name"));
-

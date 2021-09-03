@@ -6,13 +6,14 @@ keywords: evaluateString(String)
 so.topic: reference
 ---
 
-# Parser.evaluateString(String stringToParse)
+# String evaluateString(String stringToParse)
 
 Parse a text, and return the evaluated result from a RETURN statement inside the text.
 
-## Parameters
-
-* stringToParse The string to parse.
-
 Returns any string set by a RETURN statement inside stringToParse.
 
+## Parameters
+
+| Parameter | Type | Description |
+|---|---|---|
+| stringToParse | String | The string to parse. |

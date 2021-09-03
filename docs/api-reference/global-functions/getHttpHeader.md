@@ -11,11 +11,19 @@ so.topic: reference
 
 Returns the value of the specified header name.
 
+* **Returns:** The header value
+
 ## Example
 
     String method = getHttpHeader("REQUEST-METHOD");
 
 ## Parameters
+
+| Parameter | Type | Description |
+|---|---|---|
+| headerName | String | Name of the header |
+
+### Values
 
 * ACCEPT-*
 * ACCESS-CONTROL-REQUEST-METHOD
@@ -42,6 +50,3 @@ Returns the value of the specified header name.
 * X-SUPEROFFICE-EVENTID
 * X-SUPEROFFICE-RETRY
 * X-SUPEROFFICE-SIGNATURE
-
-* **headerName:** Name of the header
-* **Returns:** The header value

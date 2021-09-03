@@ -10,6 +10,8 @@ so.topic: reference
 
 Read and return a part of a stream.
 
+## Parameters
+
 * **streamId:** Unique identifier of the stream.
 * **communicationModuleName:** Module name of the client communication module that initiated the request. This is sent to make sure the correct version of the communication server module is loaded.
 * **communicationModuleVersion:** Module version of the client communication module that initiated the request. This is sent to make sure the correct version of the communication server module is loaded.

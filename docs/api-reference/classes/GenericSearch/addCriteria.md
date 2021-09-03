@@ -13,6 +13,8 @@ Add search criteria to the search.
 The concatLevel which specifies how this criteria will be concatenated with the rest of the query (parenthesis level).
 A higher concatLevel gives a "(", and a lower concatlevel gives a ")".
 
+## Parameters
+
 * **field:** The name of the field to select
 * **operator:** The operator for the criteria, possible values:
   "OperatorNone",

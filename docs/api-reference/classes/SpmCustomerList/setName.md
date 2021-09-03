@@ -10,5 +10,7 @@ so.topic: reference
 
 Set the name of the list. This is only used in the GUI when viewing the lists.
 
+## Parameters
+
 * **name:** The name of the list
 

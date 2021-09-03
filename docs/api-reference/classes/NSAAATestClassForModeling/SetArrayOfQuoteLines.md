@@ -11,6 +11,8 @@ so.topic: reference
 
 The QuoteLines this alternative consists of.
 
+## Parameters
+
 * **ArrayOfQuoteLines:** QuoteLine[]
 * **Returns:** QuoteLine[]
 

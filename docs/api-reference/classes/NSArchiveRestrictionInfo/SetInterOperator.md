@@ -17,7 +17,7 @@ The default for new `ArchiveRestrictionInfo` objects is *And*.
 
 | Parameter | Type | Description |
 |---|---|---|
-| interOperator | Integer | Enum:<br>0 = None<br>1 = And<br>2 = Or |
+| interOperator | Integer | Enum: 0 = None;1 = And;2 = Or |
 
 ## Examples
 

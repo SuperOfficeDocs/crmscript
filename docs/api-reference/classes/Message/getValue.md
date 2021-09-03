@@ -7,13 +7,14 @@ keywords: getValue(String)
 so.topic: reference
 ---
 
-# Message.getValue(String colName)
+# String getValue(String colName)
 
 Returns the value of column colName as String.
 
-## Parameters
-
-* String column name of the value
-
 Returns a string value of the column.
 
+## Parameters
+
+| Parameter | Type | Description |
+|---|---|---|
+| colName | String | column name of the value |

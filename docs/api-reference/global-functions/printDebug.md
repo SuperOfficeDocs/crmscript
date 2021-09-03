@@ -11,4 +11,6 @@ so.topic: reference
 
 This function adds the input debug to the debugstring which will be shown in the debug window.
 
+## Parameters
+
 * **String:** debug, the string to print

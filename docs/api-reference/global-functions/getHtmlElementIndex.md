@@ -13,5 +13,7 @@ This function can only be called from a screen definition, it will fail if calle
 
 This method will get the index of the specified HTML element. This is useful if you want to insert elements after a particular HTML element, and you do not know the index of it.
 
+## Parameters
+
 * **p_name:** the name of the HTML element you want to retrieve the index of
 * **Returns:** the index of the specified element

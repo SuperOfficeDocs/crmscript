@@ -11,4 +11,6 @@ so.yml: 1
 
 This method will push a string object to the end of the vector.
 
+## Parameters
+
 * **element:** The string object to push on the vector

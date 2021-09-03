@@ -10,5 +10,7 @@ so.topic: reference
 
 This method sets the from address of the outgoing email. This should be an email address which is imported by eJournal unless you have other reasons to do so.
 
+## Parameters
+
 * **from:** A string denoting the from address
 

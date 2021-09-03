@@ -13,6 +13,8 @@ Deprecated in 7.1.
 
 License constructor.
 
+## Parameters
+
 * **host:** Hostname string
 * **license:** License key
 * **Returns:** License object

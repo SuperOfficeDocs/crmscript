@@ -10,17 +10,24 @@ so.topic: reference
 
 Assigning an appointment to another person.
 
+**Returns:** Updated NSAppointmentEntity
+
 ## Parameters
 
-* **appointmentId** The appointmentId. Both master and child record ids are accepted.
-* **participant** 
-* **updateMode** Update mode for a recurring appointment.
-* Enum: 0 = Unknown 
-* Enum: 1 = OnlyThis 
-* Enum: 2 = ThisAndForward 
-* Enum: 9 = StopRecurrence 
+| Parameter | Type |Description |
+|---|---|---|
+| appointmentId | Integer | The appointmentId. Both master and child record ids are accepted. |
+| participant | ParticipantInfo | |
+| updateMode | Integer | Update mode for a recurring appointment. |
 
-**Returns:** Updated NSAppointmentEntity
+### Mode
+
+* Enum: 0 = Unknown
+* Enum: 1 = OnlyThis
+* Enum: 2 = ThisAndForward
+* Enum: 9 = StopRecurrence
+
+## Example
 
 ```crmscript
 NSAppointmentAgent agent;
@@ -29,4 +36,3 @@ ParticipantInfo participant;
 Integer updateMode;
 NSAppointmentEntity res = agent.AssignTo(appointmentId, participant, updateMode);
 ```
-

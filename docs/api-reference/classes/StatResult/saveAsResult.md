@@ -8,6 +8,8 @@ so.topic: reference
 
 # StatResult.saveAsResult(Integer column, Integer ownerId, Integer maxRows)
 
+## Parameters
+
 * **column:** What column to use as id field
 * **ownerId:** Id of the owner of the result set (so it can be deleted at logout time)
 * **maxRows:** Maximum number wanted in the result set

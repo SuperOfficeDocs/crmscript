@@ -11,5 +11,7 @@ so.topic: reference
 
 Decode a base64 encoded string into an NSStream.
 
+## Parameters
+
 * **base64:** A base64 encoded string
 * **Returns:** Decoded byte array.

@@ -1,13 +1,13 @@
 ---
 uid: crmscript_ref_EabEntry_getValue_String_p_0
-title: EabEntry.getValue(String p_0)
+title: EabEntry.getValue(String field)
 intellisense: EabEntry.getValue
 sortOrder: 277
 keywords: getValue(String)
 so.topic: reference
 ---
 
-# EabEntry.getValue(String p_0)
+# String getValue(String field)
 
 Get the value of the given field in the EabEntry instance.
 
@@ -17,16 +17,17 @@ Get the value of the given field in the EabEntry instance.
 * email
 * sms
 * folderId
-* dbi\_agent_id
-* dbi\_key
-* dbi\_last_syncronized
-* dbi\_last_modified
-* dbi\_delete
+* dbi_agent_id
+* dbi_key
+* dbi_last_syncronized
+* dbi_last_modified
+* dbi_delete
 
 ## Parameters
 
-* p0: The name of the field.
-* String: The value of the field.
+| Parameter | Type | Description |
+|---|---|---|
+| Field | String | The name of the field. |
 
 ## Example
 
@@ -37,4 +38,3 @@ Get the value of the given field in the EabEntry instance.
     
     eab.setValue("name", "test");
     print(eab.getValue("name"));
-

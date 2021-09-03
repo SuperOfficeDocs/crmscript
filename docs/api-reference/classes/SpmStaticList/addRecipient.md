@@ -10,6 +10,8 @@ so.topic: reference
 
 Add a recipient to the static list. You have to specify the email address of the recipient (the first parameter) and optional you can specify the name of the recipient.
 
+## Parameters
+
 * **address:** the email address of the recipient
 * **name:** the name of the recipient
 

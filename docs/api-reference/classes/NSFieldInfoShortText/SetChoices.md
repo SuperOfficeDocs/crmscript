@@ -11,6 +11,8 @@ so.topic: reference
 
 List of items to choose from. Null = not a dropdown list.
 
+## Parameters
+
 * **Choices:** StringArray
 * **Returns:** StringArray
 

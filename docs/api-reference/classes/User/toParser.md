@@ -10,5 +10,7 @@ so.topic: reference
 
 Loads a user and returns it to a given Parser.
 
+## Parameters
+
 * **Parser:** that the user should be loaded to
 

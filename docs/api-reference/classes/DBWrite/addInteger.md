@@ -11,6 +11,8 @@ so.topic: reference
 
 Add a Integer column to write in the table.
 
+## Parameters
+
 * **name:** The name of the column.
 * **value:** The value to write.
 

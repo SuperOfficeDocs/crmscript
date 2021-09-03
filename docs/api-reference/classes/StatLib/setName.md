@@ -10,5 +10,7 @@ so.topic: reference
 
 Sets the name for the instance. The name is used to prefix the result in the Parser.
 
+## Parameters
+
 * **name:** The name for the instance.
 

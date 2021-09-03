@@ -10,6 +10,8 @@ so.topic: reference
 
 The unique display name for this user. Used in Service as an alias, similar to Name/Initials.
 
+## Parameters
+
 * **DisplayName:** String
 * **Returns:** String
 

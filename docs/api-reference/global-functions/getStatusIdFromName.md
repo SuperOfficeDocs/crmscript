@@ -11,5 +11,7 @@ so.topic: reference
 
 Returns the ID of the status with the given name.
 
+## Parameters
+
 * **name:** Name of the document
 * **Returns:** The ID of the status

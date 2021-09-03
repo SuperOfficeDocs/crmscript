@@ -6,14 +6,14 @@ keywords: NSPocketAgent, GetPocketStartupData, GetPocketStartupData(String[],Dat
 so.topic: reference
 ---
 
-# GetPocketStartupData()
+# NSPocketStartupData GetPocketStartupData(String[] tables, DateTime currentClientTime)
 
 Returns start-up data for SuperOffice Pocket CRM
 
-`NSPocketStartupData GetPocketStartupData(String[] tables, DateTime currentClientTime)`
-
 ## Parameters
 
+| Parameter | Type | Description |
+|---|---|---|
 | tables | String[] | Tables to check for license |
 | currentClientTime | Datetime | The current time on the client, used for overdue sale lookup having correct timezone relative to the client |
 

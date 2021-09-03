@@ -16,13 +16,13 @@ You can optionally signal the browser to download the file instead of display it
 
 Returns true if everything is OK, otherwise false.
 
-## Functions
-
-* Bool dump()
-* Bool dump(Bool download)
-
 ## Parameters
 
 | Parameter | Type | Description |
 |---|---|---|
 | download | Bool | If true, this will tell the browser to download the file, and not attempt to display it. |
+
+## Functions
+
+* Bool dump()
+* Bool dump(Bool download)

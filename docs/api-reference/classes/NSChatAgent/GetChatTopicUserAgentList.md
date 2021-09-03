@@ -8,9 +8,9 @@ so.topic: reference
 
 # NSChatTopicAgent[] GetChatTopicUserAgentList(Integer chatTopicId)
 
-Get list of users assigned to a chat topic
+Get a list of users assigned to a chat topic.
 
-**Parameters:**
+## Parameters
 
 - **chatTopicId** ID of the chat topic
 
@@ -21,4 +21,3 @@ NSChatAgent agent;
 Integer chatTopicId;
 NSChatTopicAgent[] res = agent.GetChatTopicUserAgentList(chatTopicId);
 ```
-

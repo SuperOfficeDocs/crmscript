@@ -10,9 +10,7 @@ so.topic: reference
 
 Gets a vector of ReasonSold objects.
 
-## Parameters
-
-* **reasonSoldIds** The identifiers of the NSReasonSold objects
+* **ReasonSoldIds** The identifiers of the NSReasonSold objects
 
 **Returns:** NSReasonSold[]
 

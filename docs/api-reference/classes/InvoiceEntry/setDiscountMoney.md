@@ -13,5 +13,7 @@ This method will set the discount of the current InvoiceEntry object with the gi
 money.
 If both `setDiscount()` and this function has been used, the `save()`-function use the discount in money.
 
+## Parameters
+
 * **money:** The dicount in money.
 

@@ -11,4 +11,6 @@ so.topic: reference
 
 Return the CGI cookie with the given name.
 
+## Parameters
+
 * **name:** The name of the cookie to return.

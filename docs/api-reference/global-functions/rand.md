@@ -11,6 +11,8 @@ so.topic: reference
 
 Returns a random value between min and max. The seed is set by the cgi application when it is invoked.
 
+## Parameters
+
 * **min:** The minimum value to return.
 * **max:** The maximum value to return.
 * **Returns:** A random value min <= r <= max

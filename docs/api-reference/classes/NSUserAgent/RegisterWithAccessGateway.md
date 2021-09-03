@@ -10,8 +10,6 @@ so.topic: reference
 
 Registers with access gateway if not already done, otherwise will attempt to update
 
-## Parameters
-
-* **redirectUri** This is the registered redirect_uri for AccessGateway OIDC.
+* **RedirectUri** This is the registered redirect_uri for AccessGateway OIDC.
 
 **Returns:** NSAccessGatewayInfo

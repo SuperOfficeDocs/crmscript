@@ -11,5 +11,7 @@ so.yml: 1
 
 This function will return a string of all the elements in the vector, separated by the specified delimiter. This method will not escape any characters which might be equal to the delimiter.
 
+## Parameters
+
 * **delimiter:** The delimiter used for separating the elements
 * **Returns:** A string with all the elements separated by the delimiter

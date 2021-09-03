@@ -10,9 +10,7 @@ so.topic: reference
 
 Populates the ImportLines and columnDefs basedfrom erp system
 
-## Parameters
-
-* **restriction** Archive restrictions.
+* **Restriction** Archive restrictions.
 * **columns** Columns.
 * **connectionId** Connection id for Erp system
 * **erpActorType** Erp Actor type

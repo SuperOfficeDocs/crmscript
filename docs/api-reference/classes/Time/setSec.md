@@ -11,6 +11,8 @@ so.yml: 1
 
 This function sets the seconds of the time.
 
+## Parameters
+
 * **Seconds:** to set
 
 ## Example

@@ -10,5 +10,7 @@ so.topic: reference
 
 ## Parameters
 
-* **projectId** 
-* **suggestedAppointmentId** 
+| Parameter | Type |Description |
+|---|---|---|
+| projectId | Integer | |
+| suggestedAppointmentId | Integer | |

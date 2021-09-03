@@ -7,10 +7,14 @@ keywords: SetStringCurrencyName(String)
 so.topic: reference
 ---
 
-# NSAAATestClassForModeling.SetStringCurrencyName(String p_0)
+# String NSAAATestClassForModeling.SetStringCurrencyName(String currency)
 
 Currency the sale was made in.
 
-* **StringCurrencyName:** String
 * **Returns:** String
 
+## Parameters
+
+| Parameter | Type | Description |
+|---|---|---|
+| currency | String | StringCurrencyName |

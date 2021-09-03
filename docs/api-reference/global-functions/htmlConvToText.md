@@ -11,5 +11,7 @@ so.topic: reference
 
 Convert the given HTML text to plain text.
 
+## Parameters
+
 * **text:** An HTML text.
 * **Returns:** A textual version of the HTML text.

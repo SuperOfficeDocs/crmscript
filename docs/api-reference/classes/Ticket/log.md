@@ -22,5 +22,5 @@ You can optionally specify who updated the log.
 
 | Parameter | Type | Description |
 |---|---|---|
-| who | String | Optional | The name of the user that made the change to log |
+| who | String | Optional. The name of the user that made the change to log |
 | message | String | The message to log |

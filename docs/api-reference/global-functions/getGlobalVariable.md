@@ -11,4 +11,6 @@ so.topic: reference
 
 Get a value from the global variables (used for communication between the script different scripts).
 
+## Parameters
+
 * **key:** The name of the variable to receive.

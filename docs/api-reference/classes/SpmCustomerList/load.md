@@ -10,6 +10,8 @@ so.topic: reference
 
 Load an existing customer list.
 
+## Parameters
+
 * **id:** Id of the list to load
 * **Returns:** true if successfull, false otherwise
 

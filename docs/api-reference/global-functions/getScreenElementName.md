@@ -15,5 +15,7 @@ It returns the name of the screen element with the given index in the current sc
 
 The index can be retrieved with `getHtmlElementIndex(elementName)`.
 
+## Parameters
+
 * **index:** The index of the element
 * **Returns:** An integer defining the type of the element

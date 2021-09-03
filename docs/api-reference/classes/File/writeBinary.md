@@ -11,5 +11,7 @@ so.topic: reference
 
 Write binary data to file.
 
+## Parameters
+
 * **data:** Data in a Byte array that you want to write to the file.
 

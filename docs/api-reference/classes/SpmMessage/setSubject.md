@@ -10,5 +10,7 @@ so.topic: reference
 
 Here you set the subject of the SpmMessage object which will corespond to the subject in the outgoing email.
 
+## Parameters
+
 * **subject:** the subject of the SpmMessage object
 

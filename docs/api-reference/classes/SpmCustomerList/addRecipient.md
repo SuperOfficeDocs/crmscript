@@ -10,5 +10,7 @@ so.topic: reference
 
 This method will add an recipient to the list. Be aware that the recipient must exist as a customer in the database.
 
+## Parameters
+
 * **customerId:** The id of the customer to add.
 

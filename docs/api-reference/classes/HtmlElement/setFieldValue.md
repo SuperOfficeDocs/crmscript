@@ -24,5 +24,7 @@ formPage.setFieldValue("addButton", m);
 
 ## Parameters
 
-* String: the name of the field
-* Map of values
+| Parameter | Type | Description |
+|---|---|---|
+| name | String | The name of the field |
+| map | Map | Map of values |

@@ -10,5 +10,7 @@ so.topic: reference
 
 Sets the folder for this list.
 
+## Parameters
+
 * **folderId:** Id of the folder where you want the list
 

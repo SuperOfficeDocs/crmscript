@@ -11,5 +11,7 @@ so.topic: reference
 
 Returns the ExtraTable instance for the given name. The name is the unique name of the table, such as "y_102", "y_inventory". This function will throw an exception if the table does not exist.
 
+## Parameters
+
 * **name:** The name of the table.
 * **Returns:** The ExtraTable.

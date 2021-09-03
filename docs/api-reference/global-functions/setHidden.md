@@ -11,5 +11,7 @@ so.topic: reference
 
 Set the value of a hidden variable in the associated screen. Hidden variables are values that are carried through a screen, and which can be accessed by the following scripts.
 
+## Parameters
+
 * **name:** The name of the variable.
 * **value:** The value of the variable.

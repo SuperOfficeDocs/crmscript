@@ -11,4 +11,6 @@ so.topic: reference
 
 Return the OS environment variable with the given name.
 
+## Parameters
+
 * **name:** The name of the variable.

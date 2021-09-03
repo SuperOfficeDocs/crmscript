@@ -11,5 +11,7 @@ so.topic: reference
 
 Saves all cgi attachments with the given name.
 
+## Parameters
+
 * **name:** The name of attachments to be saved.
 * **Returns:** An array containing the attachment ids of all the saved attachments.

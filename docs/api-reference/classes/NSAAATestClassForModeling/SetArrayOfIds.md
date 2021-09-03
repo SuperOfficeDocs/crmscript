@@ -9,6 +9,8 @@ so.topic: reference
 
 # NSAAATestClassForModeling.SetArrayOfIds(Integer[] p_0)
 
+## Parameters
+
 * **ArrayOfIds:** IntegerArray
 * **Returns:** Void
 

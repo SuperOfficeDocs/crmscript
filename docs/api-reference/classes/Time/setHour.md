@@ -11,6 +11,8 @@ so.yml: 1
 
 This function sets the hour of the time.
 
+## Parameters
+
 * **Hour:** to set
 
 ## Example

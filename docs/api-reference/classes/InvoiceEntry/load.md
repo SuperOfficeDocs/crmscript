@@ -11,5 +11,7 @@ so.topic: reference
 
 This method will load an existing InvoiceEntry object.
 
+## Parameters
+
 * **id:** The id of the invoice entry to be loaded
 

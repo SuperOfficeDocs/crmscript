@@ -11,6 +11,8 @@ so.yml: 1
 
 Replace a substring with a new substring. All occurrences will be replaced.
 
+## Parameters
+
 * **src:** Substring to search for.
 * **dest:** Substring to replace/substitute with.
 * **Returns:** The substituted string

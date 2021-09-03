@@ -17,12 +17,14 @@ Returns the new or updated NSSelectionEntity
 
 ## Parameters
 
+| Parameter | Type | Description |
+|---|---|---|
 | selectionEntity | NSSelectionEntity | The entity to save. |
 
 ## Examples
 
 ```crmscript
-NSSelection  agent;
+NSSelection agent;
 NSSelectionEntity thing = agent.CreateDefaultSelectionEntity();
 thing = agent.SaveSelectionEntity(thing);
 ```

@@ -10,5 +10,7 @@ so.topic: reference
 
 Add a cell to the current row.
 
+## Parameters
+
 * **value:** The value to store in the cell.
 

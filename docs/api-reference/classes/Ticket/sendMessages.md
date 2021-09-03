@@ -10,6 +10,8 @@ so.topic: reference
 
 Will send the given messages just like the forward ticket functionality in the GUI. The forwarded messages are separated by a line, and the comment is placed on top of the mail.
 
+## Parameters
+
 * **subject:** The mail subject, maybe ticket.title.
 * **recipients:** String matrix with recepients
 * **fromCust:** Email address from ticket or customer

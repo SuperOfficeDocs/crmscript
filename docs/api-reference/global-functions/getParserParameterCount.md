@@ -11,5 +11,7 @@ so.topic: reference
 
 Return the number of values for the given parameters in the global Parser object.
 
+## Parameters
+
 * **paramName:** The name of the parameter
 * **Returns:** The number of values for the parameter the Parser.

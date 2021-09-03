@@ -11,5 +11,7 @@ so.topic: reference
 
 Adds a table to be written to. Can only be one.
 
+## Parameters
+
 * **tableName:** The name of the table, e.g. "ticket".
 

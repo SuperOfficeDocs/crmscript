@@ -11,5 +11,7 @@ so.yml: 1
 
 Set the value at the specified index. If the index specified is out of bounds, a RunTimeException will be raised.
 
+## Parameters
+
 * **index:** the index of the vector to set the value
 * **value:** the value to set at the specified index

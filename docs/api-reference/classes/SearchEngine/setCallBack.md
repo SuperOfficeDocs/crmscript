@@ -10,5 +10,7 @@ so.topic: reference
 
 Set an ejscript function as a callback that will be used to convert the values before they are displayed in the grid.
 
+## Parameters
+
 * **functionName:** Name of ejscript function.
 

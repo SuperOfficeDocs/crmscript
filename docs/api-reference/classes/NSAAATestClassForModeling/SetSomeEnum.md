@@ -9,6 +9,8 @@ so.topic: reference
 
 # NSAAATestClassForModeling.SetSomeEnum(Integer p_0)
 
+## Parameters
+
 * **SomeEnum:** Integer
 * **Returns:** Void
 

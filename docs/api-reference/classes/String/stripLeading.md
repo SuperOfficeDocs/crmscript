@@ -11,5 +11,7 @@ so.yml: 1
 
 Remove all characters given by the parameter at the beginning of the String.
 
+## Parameters
+
 * **the:** characters to strip.
 * **Returns:** The string without the leading characters.

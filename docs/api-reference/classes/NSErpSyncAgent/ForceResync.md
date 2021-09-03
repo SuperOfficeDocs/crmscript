@@ -10,12 +10,16 @@ so.topic: reference
 
 Force resync from CRM or given Erp connection to all other connections
 
+**Returns:** NSPluginResponse
+
 ## Parameters
 
-* **erpConnectionId** If positive, resync from the given erp connection
-* **internalKeyIds** The internal keys of the entities to resync, or empty to resync all
+| Parameter | Type | Description |
+|---|---|---|
+| erpConnectionId | Integer | If positive, resync from the given ERP connection |
+| internalKeyIds | Integer[] | The internal keys of the entities to resync, or empty to resync all |
 
-**Returns:** NSPluginResponse
+## Example
 
 ```crmscript
 NSErpSyncAgent agent;
@@ -23,4 +27,3 @@ Integer erpConnectionId;
 Integer[] internalKeyIds;
 NSPluginResponse res = agent.ForceResync(erpConnectionId, internalKeyIds);
 ```
-

@@ -10,6 +10,8 @@ so.topic: reference
 
 Sets the value of the specified cell.
 
+## Parameters
+
 * **row:** The row
 * **column:** The column
 * **value:** The value to set in the specified cell.

@@ -10,5 +10,7 @@ so.topic: reference
 
 Delete a row from the matrix.
 
+## Parameters
+
 * **row:** The zero-based index of the row to delete.
 

@@ -10,6 +10,8 @@ so.topic: reference
 
 This function does a check according to the ticket's pritority and the input action. The effect of calling this function might be that the escalation stops, restarts or continues.
 
+## Parameters
+
 * **action:** as an Integer.
    
 **Possible values:**   

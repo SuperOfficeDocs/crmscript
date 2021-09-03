@@ -10,9 +10,7 @@ so.topic: reference
 
 Updates the favorite.
 
-## Parameters
-
-* **reportEntity** ReportEntity carrier containg updated data.
+* **ReportEntity** ReportEntity carrier containg updated data.
 
 **Returns:** NSReportEntity
 

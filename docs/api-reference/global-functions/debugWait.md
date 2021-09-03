@@ -11,6 +11,8 @@ so.topic: reference
 
 Pause the script if it is in debug mode (see [enableDebug][1]). The info string will be stored in the database entry for the current debug session so that it can be viewed in the debugger.
 
+## Parameters
+
 * **info:** String to display in the debugger.
 
 <!-- Referenced links -->

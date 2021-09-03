@@ -10,7 +10,9 @@ so.topic: reference
 
 ## Parameters
 
-* **suggestedAppointmentId** 
-* **projectId** 
-* **createNow** 
-* **ownerId** 
+| Parameter | Type |Description |
+|---|---|---|
+| suggestedAppointmentId | Integer | |
+| projectId | Integer | |
+| createNow | Bool | |
+| ownerId | Integer | |

@@ -15,5 +15,7 @@ This function returns the word number num from the string. Word 0 is the first w
 
 For example, `String("  this is a test")`.getWord(1) yields "is".
 
+## Parameters
+
 * **The:** number of the word to return, starting at 0
 * **Returns:** The word

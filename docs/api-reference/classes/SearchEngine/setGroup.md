@@ -10,5 +10,7 @@ so.topic: reference
 
 Set or remove  a group-clause to all of the fields in the query (added by the `addField()`-function).
 
+## Parameters
+
 * **set:** true if you want to set the groupby-clause, false to remove a groupBy-clause
 

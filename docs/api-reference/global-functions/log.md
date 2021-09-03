@@ -11,4 +11,6 @@ so.topic: reference
 
 Writes a message to the new log (the one in the database), which can be accessed with "rms?action=newLog".
 
+## Parameters
+
 * **msg:** The message to write.

@@ -11,6 +11,8 @@ so.yml: 1
 
 Creates a string containing XML nodes formatted as a JSON document. Child nodes are also included.
 
+## Parameters
+
 * **Indent:** the text with a given number of spaces.
 * **Returns:** XMLNodes converted to JSON
 

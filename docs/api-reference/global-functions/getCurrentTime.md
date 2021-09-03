@@ -11,4 +11,6 @@ so.topic: reference
 
 Get the current time.
 
+## Parameters
+
 * **Current:** time

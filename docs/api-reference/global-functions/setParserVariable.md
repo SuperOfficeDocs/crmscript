@@ -11,5 +11,7 @@ so.topic: reference
 
 Set (add) a variable to the global Parser instance.
 
+## Parameters
+
 * **name:** The name of the variable.
 * **value:** The value of the variable.

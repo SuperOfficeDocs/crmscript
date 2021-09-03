@@ -11,6 +11,6 @@ so.topic: reference
 This function sends a notify-email (a replyTemplate) to the owner of the ticket.
 To use for events like new ticket, new message on ticket etc.
 
-* **replyTemplateId:** The id of the replyTemplate you want to send.
+* **ReplyTemplateId:** The id of the replyTemplate you want to send.
 * **Returns:** true if the email was sent successfully, else false.
 

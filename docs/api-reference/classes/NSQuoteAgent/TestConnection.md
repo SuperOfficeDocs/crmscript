@@ -7,20 +7,20 @@ keywords: NSQuoteAgent, TestConnection, TestConnection(String,StringDictionary)
 so.topic: reference
 ---
 
-# TestConnection()
+# NSPluginResponse TestConnection(String connectorName, StringDictionary connectionData)
 
 Used by the Admin clients. Testing if the connection data is sufficient to get a connection with the ERP system. The Connector should try to do some operations to check if the connection has sufficient rights to run. The connection has not been created yet. `TestConnection()` is called without InitializeConnector being called first.
 
 Returns how the test went
 
-`NSPluginResponse TestConnection(String connectorName, StringDictionary connectionData)`
-
 ## Parameters
 
+| Parameter | Type | Description |
+|---|---|---|
 | connectorName | String | Name of the connector. |
 | connectionData | StringDictionary | The name-value collection of the configuration data requested to create a connection |
 
-## Exxamples
+## Examples
 
 ```crmscript
 NSQuoteAgent agent;

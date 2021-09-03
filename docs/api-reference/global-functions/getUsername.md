@@ -11,5 +11,7 @@ so.topic: reference
 
 Get username from the user ID.
 
+## Parameters
+
 * **userId:** The user ID.
 * **Returns:** Username

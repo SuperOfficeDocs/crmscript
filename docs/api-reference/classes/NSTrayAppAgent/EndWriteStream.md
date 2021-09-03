@@ -10,6 +10,8 @@ so.topic: reference
 
 Called when finished writing a stream.
 
+## Parameters
+
 * **streamId:** Unique identifier of the stream.
 * **parentModuleName:** Module name of the client module that initiated the request.
 * **parentModuleVersion:** Module version of the client module that initiated the request.

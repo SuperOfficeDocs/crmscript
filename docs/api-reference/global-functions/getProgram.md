@@ -37,9 +37,6 @@ progId can be:
 
 These numbers are in hexadecimal notation. Convert to decimal before use.
 
-* **progId:** The id of the program to return.
-* **Returns:** The URL for the given program.
-
 * Integer modTicket = 1;
 * Integer modAdmin = 2;
 * Integer modDocument = 4;
@@ -61,3 +58,8 @@ These numbers are in hexadecimal notation. Convert to decimal before use.
 * Integer modSms = 262144;
 * Integer modBlogic = 524288;
 * Integer modRetail = 1048576;
+
+## Parameters
+
+* **progId:** The id of the program to return.
+* **Returns:** The URL for the given program.

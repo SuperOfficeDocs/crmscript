@@ -10,6 +10,8 @@ so.topic: reference
 
 Initiate a stream writing operation.
 
+## Parameters
+
 * **taskId:** Unique identifier of the current task.
 * **communicationModuleName:** Module name of the client communication module that initiated the request. This is sent to make sure the correct version of the communication server module is loaded.
 * **communicationModuleVersion:** Module version of the client communication module that initiated the request. This is sent to make sure the correct version of the communication server module is loaded.

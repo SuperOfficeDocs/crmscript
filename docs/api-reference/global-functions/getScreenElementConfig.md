@@ -15,5 +15,7 @@ It returns the config of the screen element with the given index in the current 
 
 The index can be retrieved with `getHtmlElementIndex(elementName)`.
 
+## Parameters
+
 * **index:** The index of the element
 * **Returns:** A map containing the config of the element

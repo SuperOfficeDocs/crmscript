@@ -9,6 +9,8 @@ so.topic: reference
 
 # NSAAATestClassForModeling.SetDatabaseEnum(Integer p_0)
 
+## Parameters
+
 * **DatabaseEnum:** Integer
 * **Returns:** Void
 

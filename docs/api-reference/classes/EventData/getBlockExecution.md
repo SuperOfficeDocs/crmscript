@@ -7,9 +7,7 @@ keywords: getBlockExecution()
 so.topic: reference
 ---
 
-# EventData.getBlockExecution()
-
-### Bool getBlockExecution()
+# Bool getBlockExecution()
 
 Used to check whether the current event action has been blocked.
 

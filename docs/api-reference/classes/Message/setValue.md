@@ -7,16 +7,18 @@ keywords: setValue(String,String)
 so.topic: reference
 ---
 
-# Message.setValue(String colName, String value)
+# Void setValue(String colName, String value)
 
 Sets the value of column colName to the given value
 
 ## Parameters
 
-* String column name of the value
-* String value that should be stored in the column
+| Parameter | Type | Description |
+|---|---|---|
+| colName | String | column name of the value |
+| value | String | value that should be stored in the column |
 
-## Possible columns
+### Possible columns
 
 * id: Integer, The primary key (auto-incremented)
 * ticketId: Integer, The ticket this message is a child of.
@@ -25,10 +27,9 @@ Sets the value of column colName to the given value
 * type: String, The type of the message (plaintext/html).
 * author: String, A string representing the author of the message. Could be a user's name, or a persons email address.
 * slevel: String, The securitylevel of the message (1 is internal, 2 is external).
-* message\_id: String, The X-Message-Id header value from the email. Used for threading, i.e. connecting messages to existing tickets.
+* message_id: String, The X-Message-Id header value from the email. Used for threading, i.e. connecting messages to existing tickets.
 * timeSpent: Integer, The time spent (minutes) for this message.
 * timeCharge: Integer, The amount of time (minutes) which should be invoiced for this message.
 * body: String, The textbody for the message.
 * bodyHtml: String, The html body for the message (if any).
 * emailHeader: String, The email header is saved in this field as raw text
-

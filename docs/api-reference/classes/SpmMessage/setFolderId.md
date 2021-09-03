@@ -11,5 +11,7 @@ so.topic: reference
 Sets the folder which this SpmMessage will be stored in. If you specify a folder id which do not exist, the message will not be visible through eJournal.
 A value of -1 indicates that it should be stored in the root folder.
 
+## Parameters
+
 * **folderId:** the id of the folder this message will be stored in
 

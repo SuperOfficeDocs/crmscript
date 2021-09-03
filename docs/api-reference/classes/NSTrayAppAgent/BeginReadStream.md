@@ -10,6 +10,8 @@ so.topic: reference
 
 Initiate a stream reading operation.
 
+## Parameters
+
 * **taskId:** Unique identifier of the current task.
 * **parentModuleName:** Module name of the client module that initiated the request.
 * **parentModuleVersion:** Module version of the client module that initiated the request.

@@ -10,9 +10,7 @@ so.topic: reference
 
 Gets a vector of NSReason objects.
 
-## Parameters
-
-* **reasonIds** The identifiers of the NSReason objects
+* **ReasonIds** The identifiers of the NSReason objects
 
 **Returns:** NSReason[]
 

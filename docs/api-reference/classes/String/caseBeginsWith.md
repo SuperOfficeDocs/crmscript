@@ -9,5 +9,7 @@ so.yml: 1
 
 # String.caseBeginsWith(String s)
 
+## Parameters
+
 * **s:** The text the string may begin with
 * **Returns:** True if the string object begins with the string given as the parameter, regardless of the case.

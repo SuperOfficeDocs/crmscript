@@ -8,6 +8,7 @@ so.topic: reference
 ---
 
 # executeSQLQuery(String sql)
+
 >[!Note]
 > This method is not available in CRM Online.
 

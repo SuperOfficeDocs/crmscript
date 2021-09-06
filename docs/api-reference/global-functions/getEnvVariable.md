@@ -8,6 +8,7 @@ so.topic: reference
 ---
 
 # String getEnvVariable(String name)
+
 >[!Note]
 > This method is not available in CRM Online.
 

@@ -7,6 +7,7 @@ so.topic: reference
 ---
 
 # File
+
 >[!Note]
 > This class is not available in CRM Online.
 

@@ -7,6 +7,8 @@ so.topic: reference
 ---
 
 # StatLib.setSql(String sqlStatement)
+>[!Note]
+> This method is not available in CRM Online.
 
 Sets the query for the instance.
 

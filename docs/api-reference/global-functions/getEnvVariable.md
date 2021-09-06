@@ -8,6 +8,8 @@ so.topic: reference
 ---
 
 # String getEnvVariable(String name)
+>[!Note]
+> This method is not available in CRM Online.
 
 Return the OS environment variable with the given name.
 

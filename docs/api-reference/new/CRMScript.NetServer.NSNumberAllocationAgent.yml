@@ -7,14 +7,14 @@ items:
   langs:
   - crmscript
   children:
-  - CRMScript.NetServer.NSNumberAllocationAgent.CreateDefaultRefCountEntity
-  - CRMScript.NetServer.NSNumberAllocationAgent.DeleteRefCountEntity
-  - CRMScript.NetServer.NSNumberAllocationAgent.GetNumberEachTemplate
-  - CRMScript.NetServer.NSNumberAllocationAgent.GetRefCountEntity
-  - CRMScript.NetServer.NSNumberAllocationAgent.#ctor
-  - CRMScript.NetServer.NSNumberAllocationAgent.SaveDefaultNumbering
-  - CRMScript.NetServer.NSNumberAllocationAgent.SaveRefCountEntity
-  - CRMScript.NetServer.NSNumberAllocationAgent.SetNumberEachTemplate
+  - CRMScript.NetServer.NSNumberAllocationAgent.CreateDefaultRefCountEntity()
+  - CRMScript.NetServer.NSNumberAllocationAgent.DeleteRefCountEntity(Integer)
+  - CRMScript.NetServer.NSNumberAllocationAgent.GetNumberEachTemplate()
+  - CRMScript.NetServer.NSNumberAllocationAgent.GetRefCountEntity(Integer)
+  - CRMScript.NetServer.NSNumberAllocationAgent.#ctor()
+  - CRMScript.NetServer.NSNumberAllocationAgent.SaveDefaultNumbering(RefCountEntity)
+  - CRMScript.NetServer.NSNumberAllocationAgent.SaveRefCountEntity(NSRefCountEntity)
+  - CRMScript.NetServer.NSNumberAllocationAgent.SetNumberEachTemplate(Bool)
   name: NSNumberAllocationAgent
   nameWithType: NSNumberAllocationAgent
   fullName: CRMScript.NetServer.NSNumberAllocationAgent
@@ -22,15 +22,15 @@ items:
   summary: "\nThis agent can be used to manage number allocation.\n"
   example: 
   - "\n<pre><code>NSNumberAllocationAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
-- uid: CRMScript.NetServer.NSNumberAllocationAgent.CreateDefaultRefCountEntity
-  commentId: M:CRMScript.NetServer.NSNumberAllocationAgent.CreateDefaultRefCountEntity
-  id: 'CreateDefaultRefCountEntity'
+- uid: CRMScript.NetServer.NSNumberAllocationAgent.CreateDefaultRefCountEntity()
+  commentId: M:CRMScript.NetServer.NSNumberAllocationAgent.CreateDefaultRefCountEntity()
+  id: 'CreateDefaultRefCountEntity()'
   so.intellisense: NSNumberAllocationAgent.CreateDefaultRefCountEntity
   langs:
   - crmscript
-  name: 'CreateDefaultRefCountEntity'
-  nameWithType: NSNumberAllocationAgent.CreateDefaultRefCountEntity
-  fullName: CRMScript.NetServer.NSNumberAllocationAgent.CreateDefaultRefCountEntity
+  name: 'CreateDefaultRefCountEntity()'
+  nameWithType: NSNumberAllocationAgent.CreateDefaultRefCountEntity()
+  fullName: CRMScript.NetServer.NSNumberAllocationAgent.CreateDefaultRefCountEntity()
   type: Method
   summary: "\nSet default values into a new NSRefCountEntity.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSRefCountEntity<p></p>\n<pre><code>NSNumberAllocationAgent agent;\nNSRefCountEntity thing = agent.CreateDefaultRefCountEntity();\nthing = agent.SaveRefCountEntity(thing);</code></pre>\n"
@@ -42,15 +42,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       type: CRMScript.NetServer.NSRefCountEntity
   example: 
   - "\n<pre><code>NSNumberAllocationAgent agent;\nNSRefCountEntity thing = agent.CreateDefaultRefCountEntity();\nthing = agent.SaveRefCountEntity(thing);</code></pre>\n"
-- uid: CRMScript.NetServer.NSNumberAllocationAgent.DeleteRefCountEntity
-  commentId: M:CRMScript.NetServer.NSNumberAllocationAgent.DeleteRefCountEntity
-  id: 'DeleteRefCountEntity'
+- uid: CRMScript.NetServer.NSNumberAllocationAgent.DeleteRefCountEntity(Integer)
+  commentId: M:CRMScript.NetServer.NSNumberAllocationAgent.DeleteRefCountEntity(Integer)
+  id: 'DeleteRefCountEntity(Integer)'
   so.intellisense: NSNumberAllocationAgent.DeleteRefCountEntity
   langs:
   - crmscript
-  name: 'DeleteRefCountEntity'
-  nameWithType: NSNumberAllocationAgent.DeleteRefCountEntity
-  fullName: CRMScript.NetServer.NSNumberAllocationAgent.DeleteRefCountEntity
+  name: 'DeleteRefCountEntity(Integer)'
+  nameWithType: NSNumberAllocationAgent.DeleteRefCountEntity(Integer)
+  fullName: CRMScript.NetServer.NSNumberAllocationAgent.DeleteRefCountEntity(Integer)
   type: Method
   summary: "\nDeletes the NSRefCountEntity<p></p>\n<ul><li><strong>RefCountEntityId</strong>The identity of the RefCountEntity to delete.</li></ul><pre><code>NSNumberAllocationAgent agent;\nagent.DeleteRefCountEntity(123);</code></pre>\n"
   remarks: 
@@ -62,15 +62,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       description: 
   example: 
   - "\n<pre><code>NSNumberAllocationAgent agent;\nagent.DeleteRefCountEntity(123);</code></pre>\n"
-- uid: CRMScript.NetServer.NSNumberAllocationAgent.GetNumberEachTemplate
-  commentId: M:CRMScript.NetServer.NSNumberAllocationAgent.GetNumberEachTemplate
-  id: 'GetNumberEachTemplate'
+- uid: CRMScript.NetServer.NSNumberAllocationAgent.GetNumberEachTemplate()
+  commentId: M:CRMScript.NetServer.NSNumberAllocationAgent.GetNumberEachTemplate()
+  id: 'GetNumberEachTemplate()'
   so.intellisense: NSNumberAllocationAgent.GetNumberEachTemplate
   langs:
   - crmscript
-  name: 'GetNumberEachTemplate'
-  nameWithType: NSNumberAllocationAgent.GetNumberEachTemplate
-  fullName: CRMScript.NetServer.NSNumberAllocationAgent.GetNumberEachTemplate
+  name: 'GetNumberEachTemplate()'
+  nameWithType: NSNumberAllocationAgent.GetNumberEachTemplate()
+  fullName: CRMScript.NetServer.NSNumberAllocationAgent.GetNumberEachTemplate()
   type: Method
   summary: "\nReturns true or false if Automatically create new counters for new document templates<p></p>\n<strong>Returns:</strong>Bool<p></p>\n<pre><code>NSNumberAllocationAgent agent;\nBool res = agent.GetNumberEachTemplate();</code></pre>\n"
   remarks: 
@@ -81,15 +81,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       type: CRMScript.Global.Bool
   example: 
   - "\n<pre><code>NSNumberAllocationAgent agent;\nBool res = agent.GetNumberEachTemplate();</code></pre>\n"
-- uid: CRMScript.NetServer.NSNumberAllocationAgent.GetRefCountEntity
-  commentId: M:CRMScript.NetServer.NSNumberAllocationAgent.GetRefCountEntity
-  id: 'GetRefCountEntity'
+- uid: CRMScript.NetServer.NSNumberAllocationAgent.GetRefCountEntity(Integer)
+  commentId: M:CRMScript.NetServer.NSNumberAllocationAgent.GetRefCountEntity(Integer)
+  id: 'GetRefCountEntity(Integer)'
   so.intellisense: NSNumberAllocationAgent.GetRefCountEntity
   langs:
   - crmscript
-  name: 'GetRefCountEntity'
-  nameWithType: NSNumberAllocationAgent.GetRefCountEntity
-  fullName: CRMScript.NetServer.NSNumberAllocationAgent.GetRefCountEntity
+  name: 'GetRefCountEntity(Integer)'
+  nameWithType: NSNumberAllocationAgent.GetRefCountEntity(Integer)
+  fullName: CRMScript.NetServer.NSNumberAllocationAgent.GetRefCountEntity(Integer)
   type: Method
   summary: "\nGets an NSRefCountEntity object.<p></p>\n<ul><li><strong>RefCountEntityId</strong>The identifier of the NSRefCountEntity object</li></ul><strong>Returns:</strong>NSRefCountEntity<p></p>\n<pre><code>NSNumberAllocationAgent agent;\nNSRefCountEntity thing = agent.GetRefCountEntity(123);</code></pre>\n"
   remarks: 
@@ -103,15 +103,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       type: CRMScript.NetServer.NSRefCountEntity
   example: 
   - "\n<pre><code>NSNumberAllocationAgent agent;\nNSRefCountEntity thing = agent.GetRefCountEntity(123);</code></pre>\n"
-- uid: CRMScript.NetServer.NSNumberAllocationAgent.#ctor
-  commentId: M:CRMScript.NetServer.NSNumberAllocationAgent.#ctor
-  id: '#ctor'
+- uid: CRMScript.NetServer.NSNumberAllocationAgent.#ctor()
+  commentId: M:CRMScript.NetServer.NSNumberAllocationAgent.#ctor()
+  id: '#ctor()'
   so.intellisense: Void.NSNumberAllocationAgent
   langs:
   - crmscript
-  name: '#ctor'
-  nameWithType: NSNumberAllocationAgent.#ctor
-  fullName: CRMScript.NetServer.NSNumberAllocationAgent.#ctor
+  name: '#ctor()'
+  nameWithType: NSNumberAllocationAgent.#ctor()
+  fullName: CRMScript.NetServer.NSNumberAllocationAgent.#ctor()
   type: Constructor
   summary: "\nThis agent can be used to manage number allocation.\n"
   remarks: 
@@ -119,15 +119,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
     content: NSNumberAllocationAgent
   example: 
   - "\n<pre><code>NSNumberAllocationAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
-- uid: CRMScript.NetServer.NSNumberAllocationAgent.SaveDefaultNumbering
-  commentId: M:CRMScript.NetServer.NSNumberAllocationAgent.SaveDefaultNumbering
-  id: 'SaveDefaultNumbering'
+- uid: CRMScript.NetServer.NSNumberAllocationAgent.SaveDefaultNumbering(RefCountEntity)
+  commentId: M:CRMScript.NetServer.NSNumberAllocationAgent.SaveDefaultNumbering(RefCountEntity)
+  id: 'SaveDefaultNumbering(RefCountEntity)'
   so.intellisense: NSNumberAllocationAgent.SaveDefaultNumbering
   langs:
   - crmscript
-  name: 'SaveDefaultNumbering'
-  nameWithType: NSNumberAllocationAgent.SaveDefaultNumbering
-  fullName: CRMScript.NetServer.NSNumberAllocationAgent.SaveDefaultNumbering
+  name: 'SaveDefaultNumbering(RefCountEntity)'
+  nameWithType: NSNumberAllocationAgent.SaveDefaultNumbering(RefCountEntity)
+  fullName: CRMScript.NetServer.NSNumberAllocationAgent.SaveDefaultNumbering(RefCountEntity)
   type: Method
   summary: "\nSaves default numbering values in preferences<p></p>\n<ul><li><strong>RefCountEntity</strong>The refCountEntity that holds the values that will be saved</li></ul><pre><code>NSNumberAllocationAgent agent;\nRefCountEntity refCountEntity;\nagent.SaveDefaultNumbering(refCountEntity);</code></pre>\n"
   remarks: 
@@ -141,15 +141,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSNumberAllocationAgent agent;\nRefCountEntity refCountEntity;\nagent.SaveDefaultNumbering(refCountEntity);</code></pre>\n"
-- uid: CRMScript.NetServer.NSNumberAllocationAgent.SaveRefCountEntity
-  commentId: M:CRMScript.NetServer.NSNumberAllocationAgent.SaveRefCountEntity
-  id: 'SaveRefCountEntity'
+- uid: CRMScript.NetServer.NSNumberAllocationAgent.SaveRefCountEntity(NSRefCountEntity)
+  commentId: M:CRMScript.NetServer.NSNumberAllocationAgent.SaveRefCountEntity(NSRefCountEntity)
+  id: 'SaveRefCountEntity(NSRefCountEntity)'
   so.intellisense: NSNumberAllocationAgent.SaveRefCountEntity
   langs:
   - crmscript
-  name: 'SaveRefCountEntity'
-  nameWithType: NSNumberAllocationAgent.SaveRefCountEntity
-  fullName: CRMScript.NetServer.NSNumberAllocationAgent.SaveRefCountEntity
+  name: 'SaveRefCountEntity(NSRefCountEntity)'
+  nameWithType: NSNumberAllocationAgent.SaveRefCountEntity(NSRefCountEntity)
+  fullName: CRMScript.NetServer.NSNumberAllocationAgent.SaveRefCountEntity(NSRefCountEntity)
   type: Method
   summary: "\nUpdates the existing NSRefCountEntity or creates a new NSRefCountEntity if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>refCountEntity</strong>The NSRefCountEntity to save.</li></ul><strong>Returns:</strong>NSRefCountEntity<p></p>\n<pre><code>NSNumberAllocation  agent;\nNSRefCountEntity thing = agent.CreateDefaultRefCountEntity();\nthing = agent.SaveRefCountEntity(thing);</code></pre>\n"
   remarks: 
@@ -163,15 +163,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       type: CRMScript.NetServer.NSRefCountEntity
   example: 
   - "\n<pre><code>NSNumberAllocation  agent;\nNSRefCountEntity thing = agent.CreateDefaultRefCountEntity();\nthing = agent.SaveRefCountEntity(thing);</code></pre>\n"
-- uid: CRMScript.NetServer.NSNumberAllocationAgent.SetNumberEachTemplate
-  commentId: M:CRMScript.NetServer.NSNumberAllocationAgent.SetNumberEachTemplate
-  id: 'SetNumberEachTemplate'
+- uid: CRMScript.NetServer.NSNumberAllocationAgent.SetNumberEachTemplate(Bool)
+  commentId: M:CRMScript.NetServer.NSNumberAllocationAgent.SetNumberEachTemplate(Bool)
+  id: 'SetNumberEachTemplate(Bool)'
   so.intellisense: NSNumberAllocationAgent.SetNumberEachTemplate
   langs:
   - crmscript
-  name: 'SetNumberEachTemplate'
-  nameWithType: NSNumberAllocationAgent.SetNumberEachTemplate
-  fullName: CRMScript.NetServer.NSNumberAllocationAgent.SetNumberEachTemplate
+  name: 'SetNumberEachTemplate(Bool)'
+  nameWithType: NSNumberAllocationAgent.SetNumberEachTemplate(Bool)
+  fullName: CRMScript.NetServer.NSNumberAllocationAgent.SetNumberEachTemplate(Bool)
   type: Method
   summary: "\nSaves true or false if Automatically create new counters for new document templates\n"
   remarks: 

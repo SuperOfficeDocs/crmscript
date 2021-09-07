@@ -7,17 +7,17 @@ items:
   langs:
   - crmscript
   children:
-  - CRMScript.Native.Attachment.#ctor
-  - CRMScript.Native.Attachment.dump
-  - CRMScript.Native.Attachment.getBase64
-  - CRMScript.Native.Attachment.getDownloadUrl
-  - CRMScript.Native.Attachment.getRaw
-  - CRMScript.Native.Attachment.getValue
-  - CRMScript.Native.Attachment.load
-  - CRMScript.Native.Attachment.remove
-  - CRMScript.Native.Attachment.save
-  - CRMScript.Native.Attachment.saveBase64
-  - CRMScript.Native.Attachment.setValue
+  - CRMScript.Native.Attachment.#ctor()
+  - CRMScript.Native.Attachment.dump(Bool)
+  - CRMScript.Native.Attachment.getBase64()
+  - CRMScript.Native.Attachment.getDownloadUrl(Bool,Bool)
+  - CRMScript.Native.Attachment.getRaw()
+  - CRMScript.Native.Attachment.getValue(String)
+  - CRMScript.Native.Attachment.load(Integer)
+  - CRMScript.Native.Attachment.remove()
+  - CRMScript.Native.Attachment.save()
+  - CRMScript.Native.Attachment.saveBase64(String)
+  - CRMScript.Native.Attachment.setValue(String,String)
   name: Attachment
   nameWithType: Attachment
   fullName: CRMScript.Native.Attachment
@@ -25,15 +25,15 @@ items:
   summary: "\nThis class is used to handle eJournal attachments.\n"
   example: 
   - "\n<pre><code>Attachment a;\n\na.load(2); // Loads attachment with id = 2\na.setValue(&quot;name&quot;, &quot;test.txt&quot;);\nprint(a.getValue(&quot;size&quot;)); // Size in bytes</code></pre>\n"
-- uid: CRMScript.Native.Attachment.#ctor
-  commentId: M:CRMScript.Native.Attachment.#ctor
-  id: '#ctor'
+- uid: CRMScript.Native.Attachment.#ctor()
+  commentId: M:CRMScript.Native.Attachment.#ctor()
+  id: '#ctor()'
   so.intellisense: Void.Attachment
   langs:
   - crmscript
-  name: '#ctor'
-  nameWithType: Attachment.#ctor
-  fullName: CRMScript.Native.Attachment.#ctor
+  name: '#ctor()'
+  nameWithType: Attachment.#ctor()
+  fullName: CRMScript.Native.Attachment.#ctor()
   type: Constructor
   summary: "\nThis class is used to handle eJournal attachments.\n"
   remarks: 
@@ -41,15 +41,15 @@ items:
     content: Attachment
   example: 
   - "\n<pre><code>Attachment a;\n\na.load(2); // Loads attachment with id = 2\na.setValue(&quot;name&quot;, &quot;test.txt&quot;);\nprint(a.getValue(&quot;size&quot;)); // Size in bytes</code></pre>\n"
-- uid: CRMScript.Native.Attachment.dump
-  commentId: M:CRMScript.Native.Attachment.dump
-  id: 'dump'
+- uid: CRMScript.Native.Attachment.dump(Bool)
+  commentId: M:CRMScript.Native.Attachment.dump(Bool)
+  id: 'dump(Bool)'
   so.intellisense: Attachment.dump
   langs:
   - crmscript
-  name: 'dump'
-  nameWithType: Attachment.dump
-  fullName: CRMScript.Native.Attachment.dump
+  name: 'dump(Bool)'
+  nameWithType: Attachment.dump(Bool)
+  fullName: CRMScript.Native.Attachment.dump(Bool)
   type: Method
   summary: "\nCRMScript method in the Attachment class that dumps the attachment file to outputDumps the attachment file to output.<p></p>\nYou can optionally signal the browser to download the file instead of display it.<p></p>\nReturns true if everything is OK, otherwise false.\n"
   remarks: 
@@ -62,15 +62,15 @@ items:
     return:
       type: CRMScript.Global.Bool
   example: 
-- uid: CRMScript.Native.Attachment.getBase64
-  commentId: M:CRMScript.Native.Attachment.getBase64
-  id: 'getBase64'
+- uid: CRMScript.Native.Attachment.getBase64()
+  commentId: M:CRMScript.Native.Attachment.getBase64()
+  id: 'getBase64()'
   so.intellisense: Attachment.getBase64
   langs:
   - crmscript
-  name: 'getBase64'
-  nameWithType: Attachment.getBase64
-  fullName: CRMScript.Native.Attachment.getBase64
+  name: 'getBase64()'
+  nameWithType: Attachment.getBase64()
+  fullName: CRMScript.Native.Attachment.getBase64()
   type: Method
   summary: "\nReturns the attachment as base64 encoded string.<p></p>\nThis can be used to load a binary attachment into a string, as base64 coded data is valid ASCII.\n"
   remarks: 
@@ -78,15 +78,15 @@ items:
     content: getBase64()
     parameters:
   example: 
-- uid: CRMScript.Native.Attachment.getDownloadUrl
-  commentId: M:CRMScript.Native.Attachment.getDownloadUrl
-  id: 'getDownloadUrl'
+- uid: CRMScript.Native.Attachment.getDownloadUrl(Bool,Bool)
+  commentId: M:CRMScript.Native.Attachment.getDownloadUrl(Bool,Bool)
+  id: 'getDownloadUrl(Bool,Bool)'
   so.intellisense: Attachment.getDownloadUrl
   langs:
   - crmscript
-  name: 'getDownloadUrl'
-  nameWithType: Attachment.getDownloadUrl
-  fullName: CRMScript.Native.Attachment.getDownloadUrl
+  name: 'getDownloadUrl(Bool,Bool)'
+  nameWithType: Attachment.getDownloadUrl(Bool,Bool)
+  fullName: CRMScript.Native.Attachment.getDownloadUrl(Bool,Bool)
   type: Method
   summary: "\nConstruct an download url for the attachment. There are two kinds of urls first we have the kind that the customers can used they are called external. Then we have the kind the eJournal users can use and they are called internal.\n"
   remarks: 
@@ -100,15 +100,15 @@ items:
       type: CRMScript.Global.Bool
       description: 
   example: 
-- uid: CRMScript.Native.Attachment.getRaw
-  commentId: M:CRMScript.Native.Attachment.getRaw
-  id: 'getRaw'
+- uid: CRMScript.Native.Attachment.getRaw()
+  commentId: M:CRMScript.Native.Attachment.getRaw()
+  id: 'getRaw()'
   so.intellisense: Attachment.getRaw
   langs:
   - crmscript
-  name: 'getRaw'
-  nameWithType: Attachment.getRaw
-  fullName: CRMScript.Native.Attachment.getRaw
+  name: 'getRaw()'
+  nameWithType: Attachment.getRaw()
+  fullName: CRMScript.Native.Attachment.getRaw()
   type: Method
   summary: "\nGet the whole attachment as a String without any special encoding.<p></p>\nReturns raw attachment as a String.\n"
   remarks: 
@@ -116,15 +116,15 @@ items:
     content: getRaw()
     parameters:
   example: 
-- uid: CRMScript.Native.Attachment.getValue
-  commentId: M:CRMScript.Native.Attachment.getValue
-  id: 'getValue'
+- uid: CRMScript.Native.Attachment.getValue(String)
+  commentId: M:CRMScript.Native.Attachment.getValue(String)
+  id: 'getValue(String)'
   so.intellisense: Attachment.getValue
   langs:
   - crmscript
-  name: 'getValue'
-  nameWithType: Attachment.getValue
-  fullName: CRMScript.Native.Attachment.getValue
+  name: 'getValue(String)'
+  nameWithType: Attachment.getValue(String)
+  fullName: CRMScript.Native.Attachment.getValue(String)
   type: Method
   summary: "\nGet a value from the attachment class. Returns the value as a string.<p></p>\nThe current implementation supports the following values as the name parameter.<p></p>\n<ul><li>id: the attachment id</li><li>contentType: content descriptor</li><li>name: the filename</li><li>size: size in bytes</li><li>key: authentication key</li><li>charset</li><li>dbiAgentId</li><li>dbiKey</li><li>dbiLastModified</li><li>dbiLastSyncronized</li></ul>\n"
   remarks: 
@@ -135,15 +135,15 @@ items:
       type: CRMScript.Global.String
       description: 
   example: 
-- uid: CRMScript.Native.Attachment.load
-  commentId: M:CRMScript.Native.Attachment.load
-  id: 'load'
+- uid: CRMScript.Native.Attachment.load(Integer)
+  commentId: M:CRMScript.Native.Attachment.load(Integer)
+  id: 'load(Integer)'
   so.intellisense: Attachment.load
   langs:
   - crmscript
-  name: 'load'
-  nameWithType: Attachment.load
-  fullName: CRMScript.Native.Attachment.load
+  name: 'load(Integer)'
+  nameWithType: Attachment.load(Integer)
+  fullName: CRMScript.Native.Attachment.load(Integer)
   type: Method
   summary: "\nLoad in eJournal attachment from disk.\n"
   remarks: 
@@ -153,19 +153,16 @@ items:
     - id: id
       type: CRMScript.Global.Integer
       description: 
-    - id: Attachment
-      type: 
-      description: 
   example: 
-- uid: CRMScript.Native.Attachment.remove
-  commentId: M:CRMScript.Native.Attachment.remove
-  id: 'remove'
+- uid: CRMScript.Native.Attachment.remove()
+  commentId: M:CRMScript.Native.Attachment.remove()
+  id: 'remove()'
   so.intellisense: Attachment.remove
   langs:
   - crmscript
-  name: 'remove'
-  nameWithType: Attachment.remove
-  fullName: CRMScript.Native.Attachment.remove
+  name: 'remove()'
+  nameWithType: Attachment.remove()
+  fullName: CRMScript.Native.Attachment.remove()
   type: Method
   summary: "\nDeletes the attachment record from the database and the attachment file from disk.\n"
   remarks: 
@@ -173,15 +170,15 @@ items:
     content: remove()
     parameters:
   example: 
-- uid: CRMScript.Native.Attachment.save
-  commentId: M:CRMScript.Native.Attachment.save
-  id: 'save'
+- uid: CRMScript.Native.Attachment.save()
+  commentId: M:CRMScript.Native.Attachment.save()
+  id: 'save()'
   so.intellisense: Attachment.save
   langs:
   - crmscript
-  name: 'save'
-  nameWithType: Attachment.save
-  fullName: CRMScript.Native.Attachment.save
+  name: 'save()'
+  nameWithType: Attachment.save()
+  fullName: CRMScript.Native.Attachment.save()
   type: Method
   summary: "\nSave the attachment to disk.<p></p>\nReturns attachment id.\n"
   remarks: 
@@ -189,15 +186,15 @@ items:
     content: save()
     parameters:
   example: 
-- uid: CRMScript.Native.Attachment.saveBase64
-  commentId: M:CRMScript.Native.Attachment.saveBase64
-  id: 'saveBase64'
+- uid: CRMScript.Native.Attachment.saveBase64(String)
+  commentId: M:CRMScript.Native.Attachment.saveBase64(String)
+  id: 'saveBase64(String)'
   so.intellisense: Attachment.saveBase64
   langs:
   - crmscript
-  name: 'saveBase64'
-  nameWithType: Attachment.saveBase64
-  fullName: CRMScript.Native.Attachment.saveBase64
+  name: 'saveBase64(String)'
+  nameWithType: Attachment.saveBase64(String)
+  fullName: CRMScript.Native.Attachment.saveBase64(String)
   type: Method
   summary: "\nThis function creates a filename and saves a base64 coded attachment to disk. Returns the actual number of bytes written to disk.\n"
   remarks: 
@@ -207,19 +204,16 @@ items:
     - id: p_0
       type: CRMScript.Global.String
       description: 
-    - id: p0
-      type: 
-      description: 
   example: 
-- uid: CRMScript.Native.Attachment.setValue
-  commentId: M:CRMScript.Native.Attachment.setValue
-  id: 'setValue'
+- uid: CRMScript.Native.Attachment.setValue(String,String)
+  commentId: M:CRMScript.Native.Attachment.setValue(String,String)
+  id: 'setValue(String,String)'
   so.intellisense: Attachment.setValue
   langs:
   - crmscript
-  name: 'setValue'
-  nameWithType: Attachment.setValue
-  fullName: CRMScript.Native.Attachment.setValue
+  name: 'setValue(String,String)'
+  nameWithType: Attachment.setValue(String,String)
+  fullName: CRMScript.Native.Attachment.setValue(String,String)
   type: Method
   summary: "\nSet a value on the attachment object. Returns the value to assign.<p></p>\nThe current implementation supports the following values for the name parameter.<p></p>\n<ul><li>id: the attachment id</li><li>contentType: content descriptor</li><li>name: the filename</li><li>size: size in bytes</li><li>key: authentication key</li><li>charset</li><li>dbiAgentId</li><li>dbiKey</li><li>dbiLastModified</li><li>dbiLastSyncronized</li></ul>\n"
   remarks: 

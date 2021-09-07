@@ -7,34 +7,34 @@ items:
   langs:
   - crmscript
   children:
-  - CRMScript.NetServer.NSTicketAgent.AddAttachments
-  - CRMScript.NetServer.NSTicketAgent.CreateDefaultAttachmentEntity
-  - CRMScript.NetServer.NSTicketAgent.CreateDefaultTicketEntity
-  - CRMScript.NetServer.NSTicketAgent.CreateDefaultTicketMessageEntity
-  - CRMScript.NetServer.NSTicketAgent.DeleteTicketEntity
-  - CRMScript.NetServer.NSTicketAgent.DeleteTicketMessageEntity
-  - CRMScript.NetServer.NSTicketAgent.GetAttachmentEntity
-  - CRMScript.NetServer.NSTicketAgent.GetAttachmentInfo
-  - CRMScript.NetServer.NSTicketAgent.GetAttachmentStream
-  - CRMScript.NetServer.NSTicketAgent.GetTicket
-  - CRMScript.NetServer.NSTicketAgent.GetTicketAttachments
-  - CRMScript.NetServer.NSTicketAgent.GetTicketEntity
-  - CRMScript.NetServer.NSTicketAgent.GetTicketMessage
-  - CRMScript.NetServer.NSTicketAgent.GetTicketMessageEntity
-  - CRMScript.NetServer.NSTicketAgent.GetTickets
-  - CRMScript.NetServer.NSTicketAgent.Html2Text
-  - CRMScript.NetServer.NSTicketAgent.NotifyNewTicket
-  - CRMScript.NetServer.NSTicketAgent.NotifyNewTicketMessage
-  - CRMScript.NetServer.NSTicketAgent.#ctor
-  - CRMScript.NetServer.NSTicketAgent.SanitizeMailContent
-  - CRMScript.NetServer.NSTicketAgent.SanitizeMailContents
-  - CRMScript.NetServer.NSTicketAgent.SaveAttachmentEntity
-  - CRMScript.NetServer.NSTicketAgent.SaveTicketEntity
-  - CRMScript.NetServer.NSTicketAgent.SaveTicketMessageEntity
-  - CRMScript.NetServer.NSTicketAgent.SendTicketMessage
-  - CRMScript.NetServer.NSTicketAgent.SetTicketMessageImportant
-  - CRMScript.NetServer.NSTicketAgent.SetTicketReadByOwner
-  - CRMScript.NetServer.NSTicketAgent.UploadAttachment
+  - CRMScript.NetServer.NSTicketAgent.AddAttachments(Integer,Integer[])
+  - CRMScript.NetServer.NSTicketAgent.CreateDefaultAttachmentEntity()
+  - CRMScript.NetServer.NSTicketAgent.CreateDefaultTicketEntity()
+  - CRMScript.NetServer.NSTicketAgent.CreateDefaultTicketMessageEntity()
+  - CRMScript.NetServer.NSTicketAgent.DeleteTicketEntity(Integer)
+  - CRMScript.NetServer.NSTicketAgent.DeleteTicketMessageEntity(Integer)
+  - CRMScript.NetServer.NSTicketAgent.GetAttachmentEntity(Integer)
+  - CRMScript.NetServer.NSTicketAgent.GetAttachmentInfo(Integer)
+  - CRMScript.NetServer.NSTicketAgent.GetAttachmentStream(Integer)
+  - CRMScript.NetServer.NSTicketAgent.GetTicket(Integer)
+  - CRMScript.NetServer.NSTicketAgent.GetTicketAttachments(Integer)
+  - CRMScript.NetServer.NSTicketAgent.GetTicketEntity(Integer)
+  - CRMScript.NetServer.NSTicketAgent.GetTicketMessage(Integer)
+  - CRMScript.NetServer.NSTicketAgent.GetTicketMessageEntity(Integer)
+  - CRMScript.NetServer.NSTicketAgent.GetTickets(Integer[])
+  - CRMScript.NetServer.NSTicketAgent.Html2Text(String)
+  - CRMScript.NetServer.NSTicketAgent.NotifyNewTicket(Integer)
+  - CRMScript.NetServer.NSTicketAgent.NotifyNewTicketMessage(Integer)
+  - CRMScript.NetServer.NSTicketAgent.#ctor()
+  - CRMScript.NetServer.NSTicketAgent.SanitizeMailContent(String)
+  - CRMScript.NetServer.NSTicketAgent.SanitizeMailContents(String[])
+  - CRMScript.NetServer.NSTicketAgent.SaveAttachmentEntity()
+  - CRMScript.NetServer.NSTicketAgent.SaveTicketEntity(NSTicketEntity)
+  - CRMScript.NetServer.NSTicketAgent.SaveTicketMessageEntity()
+  - CRMScript.NetServer.NSTicketAgent.SendTicketMessage(Integer,String[],String[],String[],String,Integer,String)
+  - CRMScript.NetServer.NSTicketAgent.SetTicketMessageImportant(Integer,Bool)
+  - CRMScript.NetServer.NSTicketAgent.SetTicketReadByOwner(Integer,Integer,Bool)
+  - CRMScript.NetServer.NSTicketAgent.UploadAttachment(Integer)
   name: NSTicketAgent
   nameWithType: NSTicketAgent
   fullName: CRMScript.NetServer.NSTicketAgent
@@ -42,15 +42,15 @@ items:
   summary: "\nAgent used for Ticket functions.\n"
   example: 
   - "\n<pre><code>NSTicketAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketAgent.AddAttachments
-  commentId: M:CRMScript.NetServer.NSTicketAgent.AddAttachments
-  id: 'AddAttachments'
+- uid: CRMScript.NetServer.NSTicketAgent.AddAttachments(Integer,Integer[])
+  commentId: M:CRMScript.NetServer.NSTicketAgent.AddAttachments(Integer,Integer[])
+  id: 'AddAttachments(Integer,Integer[])'
   so.intellisense: NSTicketAgent.AddAttachments
   langs:
   - crmscript
-  name: 'AddAttachments'
-  nameWithType: NSTicketAgent.AddAttachments
-  fullName: CRMScript.NetServer.NSTicketAgent.AddAttachments
+  name: 'AddAttachments(Integer,Integer[])'
+  nameWithType: NSTicketAgent.AddAttachments(Integer,Integer[])
+  fullName: CRMScript.NetServer.NSTicketAgent.AddAttachments(Integer,Integer[])
   type: Method
   summary: "\nConnect existing attachments with this TicketMessage. Can connect multiple attachments\n"
   remarks: 
@@ -66,15 +66,15 @@ items:
     return:
       type: CRMScript.Global.Void
   example: 
-- uid: CRMScript.NetServer.NSTicketAgent.CreateDefaultAttachmentEntity
-  commentId: M:CRMScript.NetServer.NSTicketAgent.CreateDefaultAttachmentEntity
-  id: 'CreateDefaultAttachmentEntity'
+- uid: CRMScript.NetServer.NSTicketAgent.CreateDefaultAttachmentEntity()
+  commentId: M:CRMScript.NetServer.NSTicketAgent.CreateDefaultAttachmentEntity()
+  id: 'CreateDefaultAttachmentEntity()'
   so.intellisense: NSTicketAgent.CreateDefaultAttachmentEntity
   langs:
   - crmscript
-  name: 'CreateDefaultAttachmentEntity'
-  nameWithType: NSTicketAgent.CreateDefaultAttachmentEntity
-  fullName: CRMScript.NetServer.NSTicketAgent.CreateDefaultAttachmentEntity
+  name: 'CreateDefaultAttachmentEntity()'
+  nameWithType: NSTicketAgent.CreateDefaultAttachmentEntity()
+  fullName: CRMScript.NetServer.NSTicketAgent.CreateDefaultAttachmentEntity()
   type: Method
   summary: "\nSet default values into a new NSAttachmentEntity.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSAttachmentEntity<p></p>\n<pre><code>NSTicketAgent agent;\nNSAttachmentEntity thing = agent.CreateDefaultAttachmentEntity();\nthing = agent.SaveAttachmentEntity(thing);</code></pre>\n"
@@ -86,15 +86,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       type: CRMScript.NetServer.NSAttachmentEntity
   example: 
   - "\n<pre><code>NSTicketAgent agent;\nNSAttachmentEntity thing = agent.CreateDefaultAttachmentEntity();\nthing = agent.SaveAttachmentEntity(thing);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketAgent.CreateDefaultTicketEntity
-  commentId: M:CRMScript.NetServer.NSTicketAgent.CreateDefaultTicketEntity
-  id: 'CreateDefaultTicketEntity'
+- uid: CRMScript.NetServer.NSTicketAgent.CreateDefaultTicketEntity()
+  commentId: M:CRMScript.NetServer.NSTicketAgent.CreateDefaultTicketEntity()
+  id: 'CreateDefaultTicketEntity()'
   so.intellisense: NSTicketAgent.CreateDefaultTicketEntity
   langs:
   - crmscript
-  name: 'CreateDefaultTicketEntity'
-  nameWithType: NSTicketAgent.CreateDefaultTicketEntity
-  fullName: CRMScript.NetServer.NSTicketAgent.CreateDefaultTicketEntity
+  name: 'CreateDefaultTicketEntity()'
+  nameWithType: NSTicketAgent.CreateDefaultTicketEntity()
+  fullName: CRMScript.NetServer.NSTicketAgent.CreateDefaultTicketEntity()
   type: Method
   summary: "\nSet default values into a new NSTicketEntity.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSTicketEntity<p></p>\n<pre><code>NSTicketAgent agent;\nNSTicketEntity thing = agent.CreateDefaultTicketEntity();\nthing = agent.SaveTicketEntity(thing);</code></pre>\n"
@@ -106,15 +106,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       type: CRMScript.NetServer.NSTicketEntity
   example: 
   - "\n<pre><code>NSTicketAgent agent;\nNSTicketEntity thing = agent.CreateDefaultTicketEntity();\nthing = agent.SaveTicketEntity(thing);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketAgent.CreateDefaultTicketMessageEntity
-  commentId: M:CRMScript.NetServer.NSTicketAgent.CreateDefaultTicketMessageEntity
-  id: 'CreateDefaultTicketMessageEntity'
+- uid: CRMScript.NetServer.NSTicketAgent.CreateDefaultTicketMessageEntity()
+  commentId: M:CRMScript.NetServer.NSTicketAgent.CreateDefaultTicketMessageEntity()
+  id: 'CreateDefaultTicketMessageEntity()'
   so.intellisense: NSTicketAgent.CreateDefaultTicketMessageEntity
   langs:
   - crmscript
-  name: 'CreateDefaultTicketMessageEntity'
-  nameWithType: NSTicketAgent.CreateDefaultTicketMessageEntity
-  fullName: CRMScript.NetServer.NSTicketAgent.CreateDefaultTicketMessageEntity
+  name: 'CreateDefaultTicketMessageEntity()'
+  nameWithType: NSTicketAgent.CreateDefaultTicketMessageEntity()
+  fullName: CRMScript.NetServer.NSTicketAgent.CreateDefaultTicketMessageEntity()
   type: Method
   summary: "\nSet default values into a new NSTicketMessageEntity.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSTicketMessageEntity<p></p>\n<pre><code>NSTicketAgent agent;\nNSTicketMessageEntity thing = agent.CreateDefaultTicketMessageEntity();\nthing = agent.SaveTicketMessageEntity(thing);</code></pre>\n"
@@ -126,15 +126,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       type: CRMScript.NetServer.NSTicketMessageEntity
   example: 
   - "\n<pre><code>NSTicketAgent agent;\nNSTicketMessageEntity thing = agent.CreateDefaultTicketMessageEntity();\nthing = agent.SaveTicketMessageEntity(thing);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketAgent.DeleteTicketEntity
-  commentId: M:CRMScript.NetServer.NSTicketAgent.DeleteTicketEntity
-  id: 'DeleteTicketEntity'
+- uid: CRMScript.NetServer.NSTicketAgent.DeleteTicketEntity(Integer)
+  commentId: M:CRMScript.NetServer.NSTicketAgent.DeleteTicketEntity(Integer)
+  id: 'DeleteTicketEntity(Integer)'
   so.intellisense: NSTicketAgent.DeleteTicketEntity
   langs:
   - crmscript
-  name: 'DeleteTicketEntity'
-  nameWithType: NSTicketAgent.DeleteTicketEntity
-  fullName: CRMScript.NetServer.NSTicketAgent.DeleteTicketEntity
+  name: 'DeleteTicketEntity(Integer)'
+  nameWithType: NSTicketAgent.DeleteTicketEntity(Integer)
+  fullName: CRMScript.NetServer.NSTicketAgent.DeleteTicketEntity(Integer)
   type: Method
   summary: "\nDelete a ticket\n"
   remarks: 
@@ -148,15 +148,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTicketAgent agent;\nInteger ticketEntityId;\nagent.DeleteTicketEntity(ticketEntityId);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketAgent.DeleteTicketMessageEntity
-  commentId: M:CRMScript.NetServer.NSTicketAgent.DeleteTicketMessageEntity
-  id: 'DeleteTicketMessageEntity'
+- uid: CRMScript.NetServer.NSTicketAgent.DeleteTicketMessageEntity(Integer)
+  commentId: M:CRMScript.NetServer.NSTicketAgent.DeleteTicketMessageEntity(Integer)
+  id: 'DeleteTicketMessageEntity(Integer)'
   so.intellisense: NSTicketAgent.DeleteTicketMessageEntity
   langs:
   - crmscript
-  name: 'DeleteTicketMessageEntity'
-  nameWithType: NSTicketAgent.DeleteTicketMessageEntity
-  fullName: CRMScript.NetServer.NSTicketAgent.DeleteTicketMessageEntity
+  name: 'DeleteTicketMessageEntity(Integer)'
+  nameWithType: NSTicketAgent.DeleteTicketMessageEntity(Integer)
+  fullName: CRMScript.NetServer.NSTicketAgent.DeleteTicketMessageEntity(Integer)
   type: Method
   summary: "\nDelete a ticket message\n"
   remarks: 
@@ -170,15 +170,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTicketAgent agent;\nInteger ticketMessageEntityId;\nagent.DeleteTicketMessageEntity(ticketMessageEntityId);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketAgent.GetAttachmentEntity
-  commentId: M:CRMScript.NetServer.NSTicketAgent.GetAttachmentEntity
-  id: 'GetAttachmentEntity'
+- uid: CRMScript.NetServer.NSTicketAgent.GetAttachmentEntity(Integer)
+  commentId: M:CRMScript.NetServer.NSTicketAgent.GetAttachmentEntity(Integer)
+  id: 'GetAttachmentEntity(Integer)'
   so.intellisense: NSTicketAgent.GetAttachmentEntity
   langs:
   - crmscript
-  name: 'GetAttachmentEntity'
-  nameWithType: NSTicketAgent.GetAttachmentEntity
-  fullName: CRMScript.NetServer.NSTicketAgent.GetAttachmentEntity
+  name: 'GetAttachmentEntity(Integer)'
+  nameWithType: NSTicketAgent.GetAttachmentEntity(Integer)
+  fullName: CRMScript.NetServer.NSTicketAgent.GetAttachmentEntity(Integer)
   type: Method
   summary: "\nGets an NSAttachmentEntity object.\n"
   remarks: 
@@ -188,22 +188,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
     - id: attachmentEntityId;
       type: CRMScript.Global.Integer
       description: 
-    - id: attachmentEntityId
-      type: 
-      description: 
     return:
       type: CRMScript.NetServer.NSAttachmentEntity
   example: 
   - "\n<pre><code>NSTicketAgent agent;\nNSAttachmentEntity thing = agent.GetAttachmentEntity(123);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketAgent.GetAttachmentInfo
-  commentId: M:CRMScript.NetServer.NSTicketAgent.GetAttachmentInfo
-  id: 'GetAttachmentInfo'
+- uid: CRMScript.NetServer.NSTicketAgent.GetAttachmentInfo(Integer)
+  commentId: M:CRMScript.NetServer.NSTicketAgent.GetAttachmentInfo(Integer)
+  id: 'GetAttachmentInfo(Integer)'
   so.intellisense: NSTicketAgent.GetAttachmentInfo
   langs:
   - crmscript
-  name: 'GetAttachmentInfo'
-  nameWithType: NSTicketAgent.GetAttachmentInfo
-  fullName: CRMScript.NetServer.NSTicketAgent.GetAttachmentInfo
+  name: 'GetAttachmentInfo(Integer)'
+  nameWithType: NSTicketAgent.GetAttachmentInfo(Integer)
+  fullName: CRMScript.NetServer.NSTicketAgent.GetAttachmentInfo(Integer)
   type: Method
   summary: "\nGet a list with meta data for all attached attachments\n"
   remarks: 
@@ -217,15 +214,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       type: CRMScript.NetServer.NSAttachmentEntity[]
   example: 
   - "\n<pre><code>NSTicketAgent agent;\nInteger ticketMessageEntityId;\nNSAttachmentEntity[] res = agent.GetAttachmentInfo(ticketMessageEntityId);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketAgent.GetAttachmentStream
-  commentId: M:CRMScript.NetServer.NSTicketAgent.GetAttachmentStream
-  id: 'GetAttachmentStream'
+- uid: CRMScript.NetServer.NSTicketAgent.GetAttachmentStream(Integer)
+  commentId: M:CRMScript.NetServer.NSTicketAgent.GetAttachmentStream(Integer)
+  id: 'GetAttachmentStream(Integer)'
   so.intellisense: NSTicketAgent.GetAttachmentStream
   langs:
   - crmscript
-  name: 'GetAttachmentStream'
-  nameWithType: NSTicketAgent.GetAttachmentStream
-  fullName: CRMScript.NetServer.NSTicketAgent.GetAttachmentStream
+  name: 'GetAttachmentStream(Integer)'
+  nameWithType: NSTicketAgent.GetAttachmentStream(Integer)
+  fullName: CRMScript.NetServer.NSTicketAgent.GetAttachmentStream(Integer)
   type: Method
   summary: "\nGet the content of an attachment\n"
   remarks: 
@@ -239,15 +236,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       type: CRMScript.NetServer.NSStream
   example: 
   - "\n<pre><code>NSTicketAgent agent;\nInteger attachmentId;\nNSStream res = agent.GetAttachmentStream(attachmentId);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketAgent.GetTicket
-  commentId: M:CRMScript.NetServer.NSTicketAgent.GetTicket
-  id: 'GetTicket'
+- uid: CRMScript.NetServer.NSTicketAgent.GetTicket(Integer)
+  commentId: M:CRMScript.NetServer.NSTicketAgent.GetTicket(Integer)
+  id: 'GetTicket(Integer)'
   so.intellisense: NSTicketAgent.GetTicket
   langs:
   - crmscript
-  name: 'GetTicket'
-  nameWithType: NSTicketAgent.GetTicket
-  fullName: CRMScript.NetServer.NSTicketAgent.GetTicket
+  name: 'GetTicket(Integer)'
+  nameWithType: NSTicketAgent.GetTicket(Integer)
+  fullName: CRMScript.NetServer.NSTicketAgent.GetTicket(Integer)
   type: Method
   summary: "\nGets an NSTicket object.\n"
   remarks: 
@@ -257,22 +254,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
     - id: ticketId;
       type: CRMScript.Global.Integer
       description: 
-    - id: ticketId
-      type: 
-      description: 
     return:
       type: CRMScript.NetServer.NSTicket
   example: 
   - "\n<pre><code>NSTicketAgent agent;\nNSTicket thing = agent.GetTicket(123);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketAgent.GetTicketAttachments
-  commentId: M:CRMScript.NetServer.NSTicketAgent.GetTicketAttachments
-  id: 'GetTicketAttachments'
+- uid: CRMScript.NetServer.NSTicketAgent.GetTicketAttachments(Integer)
+  commentId: M:CRMScript.NetServer.NSTicketAgent.GetTicketAttachments(Integer)
+  id: 'GetTicketAttachments(Integer)'
   so.intellisense: NSTicketAgent.GetTicketAttachments
   langs:
   - crmscript
-  name: 'GetTicketAttachments'
-  nameWithType: NSTicketAgent.GetTicketAttachments
-  fullName: CRMScript.NetServer.NSTicketAgent.GetTicketAttachments
+  name: 'GetTicketAttachments(Integer)'
+  nameWithType: NSTicketAgent.GetTicketAttachments(Integer)
+  fullName: CRMScript.NetServer.NSTicketAgent.GetTicketAttachments(Integer)
   type: Method
   summary: "\nGet attachment infos for all attachments connected to messages in specified ticket\n"
   remarks: 
@@ -286,15 +280,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       type: CRMScript.NetServer.NSAttachmentEntity[]
   example: 
   - "\n<pre><code>NSTicketAgent agent;\nInteger ticketEntityId;\nNSAttachmentEntity[] res = agent.GetTicketAttachments(ticketEntityId);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketAgent.GetTicketEntity
-  commentId: M:CRMScript.NetServer.NSTicketAgent.GetTicketEntity
-  id: 'GetTicketEntity'
+- uid: CRMScript.NetServer.NSTicketAgent.GetTicketEntity(Integer)
+  commentId: M:CRMScript.NetServer.NSTicketAgent.GetTicketEntity(Integer)
+  id: 'GetTicketEntity(Integer)'
   so.intellisense: NSTicketAgent.GetTicketEntity
   langs:
   - crmscript
-  name: 'GetTicketEntity'
-  nameWithType: NSTicketAgent.GetTicketEntity
-  fullName: CRMScript.NetServer.NSTicketAgent.GetTicketEntity
+  name: 'GetTicketEntity(Integer)'
+  nameWithType: NSTicketAgent.GetTicketEntity(Integer)
+  fullName: CRMScript.NetServer.NSTicketAgent.GetTicketEntity(Integer)
   type: Method
   summary: "\nGets an NSTicketEntity object.\n"
   remarks: 
@@ -304,22 +298,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
     - id: ticketEntityId;
       type: CRMScript.Global.Integer
       description: 
-    - id: ticketEntityId
-      type: 
-      description: 
     return:
       type: CRMScript.NetServer.NSTicketEntity
   example: 
   - "\n<pre><code>NSTicketAgent agent;\nNSTicketEntity thing = agent.GetTicketEntity(123);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketAgent.GetTicketMessage
-  commentId: M:CRMScript.NetServer.NSTicketAgent.GetTicketMessage
-  id: 'GetTicketMessage'
+- uid: CRMScript.NetServer.NSTicketAgent.GetTicketMessage(Integer)
+  commentId: M:CRMScript.NetServer.NSTicketAgent.GetTicketMessage(Integer)
+  id: 'GetTicketMessage(Integer)'
   so.intellisense: NSTicketAgent.GetTicketMessage
   langs:
   - crmscript
-  name: 'GetTicketMessage'
-  nameWithType: NSTicketAgent.GetTicketMessage
-  fullName: CRMScript.NetServer.NSTicketAgent.GetTicketMessage
+  name: 'GetTicketMessage(Integer)'
+  nameWithType: NSTicketAgent.GetTicketMessage(Integer)
+  fullName: CRMScript.NetServer.NSTicketAgent.GetTicketMessage(Integer)
   type: Method
   summary: "\nGets an NSTicketMessage object.\n"
   remarks: 
@@ -329,22 +320,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
     - id: ticketMessageId;
       type: CRMScript.Global.Integer
       description: 
-    - id: ticketMessageId
-      type: 
-      description: 
     return:
       type: CRMScript.NetServer.NSTicketMessage
   example: 
   - "\n<pre><code>NSTicketAgent agent;\nNSTicketMessage thing = agent.GetTicketMessage(123);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketAgent.GetTicketMessageEntity
-  commentId: M:CRMScript.NetServer.NSTicketAgent.GetTicketMessageEntity
-  id: 'GetTicketMessageEntity'
+- uid: CRMScript.NetServer.NSTicketAgent.GetTicketMessageEntity(Integer)
+  commentId: M:CRMScript.NetServer.NSTicketAgent.GetTicketMessageEntity(Integer)
+  id: 'GetTicketMessageEntity(Integer)'
   so.intellisense: NSTicketAgent.GetTicketMessageEntity
   langs:
   - crmscript
-  name: 'GetTicketMessageEntity'
-  nameWithType: NSTicketAgent.GetTicketMessageEntity
-  fullName: CRMScript.NetServer.NSTicketAgent.GetTicketMessageEntity
+  name: 'GetTicketMessageEntity(Integer)'
+  nameWithType: NSTicketAgent.GetTicketMessageEntity(Integer)
+  fullName: CRMScript.NetServer.NSTicketAgent.GetTicketMessageEntity(Integer)
   type: Method
   summary: "\nGets an NSTicketMessageEntity object.\n"
   remarks: 
@@ -354,22 +342,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
     - id: ticketMessageEntityId;
       type: CRMScript.Global.Integer
       description: 
-    - id: ticketMessageEntityId
-      type: 
-      description: 
     return:
       type: CRMScript.NetServer.NSTicketMessageEntity
   example: 
   - "\n<pre><code>NSTicketAgent agent;\nNSTicketMessageEntity thing = agent.GetTicketMessageEntity(123);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketAgent.GetTickets
-  commentId: M:CRMScript.NetServer.NSTicketAgent.GetTickets
-  id: 'GetTickets'
+- uid: CRMScript.NetServer.NSTicketAgent.GetTickets(Integer[])
+  commentId: M:CRMScript.NetServer.NSTicketAgent.GetTickets(Integer[])
+  id: 'GetTickets(Integer[])'
   so.intellisense: NSTicketAgent.GetTickets
   langs:
   - crmscript
-  name: 'GetTickets'
-  nameWithType: NSTicketAgent.GetTickets
-  fullName: CRMScript.NetServer.NSTicketAgent.GetTickets
+  name: 'GetTickets(Integer[])'
+  nameWithType: NSTicketAgent.GetTickets(Integer[])
+  fullName: CRMScript.NetServer.NSTicketAgent.GetTickets(Integer[])
   type: Method
   summary: "\nGet multiple tickets\n"
   remarks: 
@@ -383,15 +368,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       type: CRMScript.Native.Ticket[]
   example: 
   - "\n<pre><code>NSTicketAgent agent;\nInteger[] ticketIds;\nTicket[] res = agent.GetTickets(ticketIds);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketAgent.Html2Text
-  commentId: M:CRMScript.NetServer.NSTicketAgent.Html2Text
-  id: 'Html2Text'
+- uid: CRMScript.NetServer.NSTicketAgent.Html2Text(String)
+  commentId: M:CRMScript.NetServer.NSTicketAgent.Html2Text(String)
+  id: 'Html2Text(String)'
   so.intellisense: NSTicketAgent.Html2Text
   langs:
   - crmscript
-  name: 'Html2Text'
-  nameWithType: NSTicketAgent.Html2Text
-  fullName: CRMScript.NetServer.NSTicketAgent.Html2Text
+  name: 'Html2Text(String)'
+  nameWithType: NSTicketAgent.Html2Text(String)
+  fullName: CRMScript.NetServer.NSTicketAgent.Html2Text(String)
   type: Method
   summary: "\nCreate a plain text version of the html, suitable for email\n"
   remarks: 
@@ -405,15 +390,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSTicketAgent agent;\nString content;\nString res = agent.Html2Text(content);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketAgent.NotifyNewTicket
-  commentId: M:CRMScript.NetServer.NSTicketAgent.NotifyNewTicket
-  id: 'NotifyNewTicket'
+- uid: CRMScript.NetServer.NSTicketAgent.NotifyNewTicket(Integer)
+  commentId: M:CRMScript.NetServer.NSTicketAgent.NotifyNewTicket(Integer)
+  id: 'NotifyNewTicket(Integer)'
   so.intellisense: NSTicketAgent.NotifyNewTicket
   langs:
   - crmscript
-  name: 'NotifyNewTicket'
-  nameWithType: NSTicketAgent.NotifyNewTicket
-  fullName: CRMScript.NetServer.NSTicketAgent.NotifyNewTicket
+  name: 'NotifyNewTicket(Integer)'
+  nameWithType: NSTicketAgent.NotifyNewTicket(Integer)
+  fullName: CRMScript.NetServer.NSTicketAgent.NotifyNewTicket(Integer)
   type: Method
   summary: "\nNotify user agents about the creation of a new ticket\n"
   remarks: 
@@ -427,15 +412,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTicketAgent agent;\nInteger ticketEntityId;\nagent.NotifyNewTicket(ticketEntityId);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketAgent.NotifyNewTicketMessage
-  commentId: M:CRMScript.NetServer.NSTicketAgent.NotifyNewTicketMessage
-  id: 'NotifyNewTicketMessage'
+- uid: CRMScript.NetServer.NSTicketAgent.NotifyNewTicketMessage(Integer)
+  commentId: M:CRMScript.NetServer.NSTicketAgent.NotifyNewTicketMessage(Integer)
+  id: 'NotifyNewTicketMessage(Integer)'
   so.intellisense: NSTicketAgent.NotifyNewTicketMessage
   langs:
   - crmscript
-  name: 'NotifyNewTicketMessage'
-  nameWithType: NSTicketAgent.NotifyNewTicketMessage
-  fullName: CRMScript.NetServer.NSTicketAgent.NotifyNewTicketMessage
+  name: 'NotifyNewTicketMessage(Integer)'
+  nameWithType: NSTicketAgent.NotifyNewTicketMessage(Integer)
+  fullName: CRMScript.NetServer.NSTicketAgent.NotifyNewTicketMessage(Integer)
   type: Method
   summary: "\nNotify user agents about the creation of a new message on a ticket\n"
   remarks: 
@@ -449,15 +434,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTicketAgent agent;\nInteger ticketEntityId;\nagent.NotifyNewTicketMessage(ticketEntityId);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketAgent.#ctor
-  commentId: M:CRMScript.NetServer.NSTicketAgent.#ctor
-  id: '#ctor'
+- uid: CRMScript.NetServer.NSTicketAgent.#ctor()
+  commentId: M:CRMScript.NetServer.NSTicketAgent.#ctor()
+  id: '#ctor()'
   so.intellisense: Void.NSTicketAgent
   langs:
   - crmscript
-  name: '#ctor'
-  nameWithType: NSTicketAgent.#ctor
-  fullName: CRMScript.NetServer.NSTicketAgent.#ctor
+  name: '#ctor()'
+  nameWithType: NSTicketAgent.#ctor()
+  fullName: CRMScript.NetServer.NSTicketAgent.#ctor()
   type: Constructor
   summary: "\nAgent used for Ticket functions.\n"
   remarks: 
@@ -465,15 +450,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
     content: NSTicketAgent
   example: 
   - "\n<pre><code>NSTicketAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketAgent.SanitizeMailContent
-  commentId: M:CRMScript.NetServer.NSTicketAgent.SanitizeMailContent
-  id: 'SanitizeMailContent'
+- uid: CRMScript.NetServer.NSTicketAgent.SanitizeMailContent(String)
+  commentId: M:CRMScript.NetServer.NSTicketAgent.SanitizeMailContent(String)
+  id: 'SanitizeMailContent(String)'
   so.intellisense: NSTicketAgent.SanitizeMailContent
   langs:
   - crmscript
-  name: 'SanitizeMailContent'
-  nameWithType: NSTicketAgent.SanitizeMailContent
-  fullName: CRMScript.NetServer.NSTicketAgent.SanitizeMailContent
+  name: 'SanitizeMailContent(String)'
+  nameWithType: NSTicketAgent.SanitizeMailContent(String)
+  fullName: CRMScript.NetServer.NSTicketAgent.SanitizeMailContent(String)
   type: Method
   summary: "\nRemove harmful HTML tags and attributes from an email\n"
   remarks: 
@@ -487,15 +472,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSTicketAgent agent;\nString content;\nString res = agent.SanitizeMailContent(content);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketAgent.SanitizeMailContents
-  commentId: M:CRMScript.NetServer.NSTicketAgent.SanitizeMailContents
-  id: 'SanitizeMailContents'
+- uid: CRMScript.NetServer.NSTicketAgent.SanitizeMailContents(String[])
+  commentId: M:CRMScript.NetServer.NSTicketAgent.SanitizeMailContents(String[])
+  id: 'SanitizeMailContents(String[])'
   so.intellisense: NSTicketAgent.SanitizeMailContents
   langs:
   - crmscript
-  name: 'SanitizeMailContents'
-  nameWithType: NSTicketAgent.SanitizeMailContents
-  fullName: CRMScript.NetServer.NSTicketAgent.SanitizeMailContents
+  name: 'SanitizeMailContents(String[])'
+  nameWithType: NSTicketAgent.SanitizeMailContents(String[])
+  fullName: CRMScript.NetServer.NSTicketAgent.SanitizeMailContents(String[])
   type: Method
   summary: "\nRemove harmful HTML tags and attributes from an email\n"
   remarks: 
@@ -509,37 +494,34 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       type: CRMScript.Global.String[]
   example: 
   - "\n<pre><code>NSTicketAgent agent;\nString[] contents;\nString[] res = agent.SanitizeMailContents(contents);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketAgent.SaveAttachmentEntity
-  commentId: M:CRMScript.NetServer.NSTicketAgent.SaveAttachmentEntity
-  id: 'SaveAttachmentEntity'
+- uid: CRMScript.NetServer.NSTicketAgent.SaveAttachmentEntity()
+  commentId: M:CRMScript.NetServer.NSTicketAgent.SaveAttachmentEntity()
+  id: 'SaveAttachmentEntity()'
   so.intellisense: NSTicketAgent.SaveAttachmentEntity
   langs:
   - crmscript
-  name: 'SaveAttachmentEntity'
-  nameWithType: NSTicketAgent.SaveAttachmentEntity
-  fullName: CRMScript.NetServer.NSTicketAgent.SaveAttachmentEntity
+  name: 'SaveAttachmentEntity()'
+  nameWithType: NSTicketAgent.SaveAttachmentEntity()
+  fullName: CRMScript.NetServer.NSTicketAgent.SaveAttachmentEntity()
   type: Method
   summary: "\nUpdates the existing NSAttachmentEntity or creates a new NSAttachmentEntity if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>attachmentEntity</strong>The NSAttachmentEntity to save.</li></ul><strong>Returns:</strong>NSAttachmentEntity<p></p>\n<pre><code>NSTicketAgent agent;\nNSAttachmentEntity thing = agent.CreateDefaultAttachmentEntity();\nthing = agent.SaveAttachmentEntity(thing);</code></pre>\n"
   remarks: 
   syntax: 
     content: NSAttachmentEntity SaveAttachmentEntity(NSAttachmentEntity attachmentEntity);
     parameters:
-    - id: attachmentEntity;
-      type: CRMScript.NetServer.NSAttachmentEntity
-      description: 
     return:
       type: CRMScript.NetServer.NSAttachmentEntity
   example: 
   - "\n<pre><code>NSTicketAgent agent;\nNSAttachmentEntity thing = agent.CreateDefaultAttachmentEntity();\nthing = agent.SaveAttachmentEntity(thing);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketAgent.SaveTicketEntity
-  commentId: M:CRMScript.NetServer.NSTicketAgent.SaveTicketEntity
-  id: 'SaveTicketEntity'
+- uid: CRMScript.NetServer.NSTicketAgent.SaveTicketEntity(NSTicketEntity)
+  commentId: M:CRMScript.NetServer.NSTicketAgent.SaveTicketEntity(NSTicketEntity)
+  id: 'SaveTicketEntity(NSTicketEntity)'
   so.intellisense: NSTicketAgent.SaveTicketEntity
   langs:
   - crmscript
-  name: 'SaveTicketEntity'
-  nameWithType: NSTicketAgent.SaveTicketEntity
-  fullName: CRMScript.NetServer.NSTicketAgent.SaveTicketEntity
+  name: 'SaveTicketEntity(NSTicketEntity)'
+  nameWithType: NSTicketAgent.SaveTicketEntity(NSTicketEntity)
+  fullName: CRMScript.NetServer.NSTicketAgent.SaveTicketEntity(NSTicketEntity)
   type: Method
   summary: "\nUpdates the existing NSTicketEntity or creates a new NSTicketEntity if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>ticketEntity</strong>The NSTicketEntity to save.</li></ul><strong>Returns:</strong>NNSTicketEntity<p></p>\n<pre><code>NSTicketAgent agent;\nNSTicketEntity thing = agent.CreateDefaultTicketEntity();\nthing = agent.SaveTicketEntity(thing);</code></pre>\n"
   remarks: 
@@ -553,37 +535,34 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       type: CRMScript.NetServer.NSTicketEntity
   example: 
   - "\n<pre><code>NSTicketAgent agent;\nNSTicketEntity thing = agent.CreateDefaultTicketEntity();\nthing = agent.SaveTicketEntity(thing);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketAgent.SaveTicketMessageEntity
-  commentId: M:CRMScript.NetServer.NSTicketAgent.SaveTicketMessageEntity
-  id: 'SaveTicketMessageEntity'
+- uid: CRMScript.NetServer.NSTicketAgent.SaveTicketMessageEntity()
+  commentId: M:CRMScript.NetServer.NSTicketAgent.SaveTicketMessageEntity()
+  id: 'SaveTicketMessageEntity()'
   so.intellisense: NSTicketAgent.SaveTicketMessageEntity
   langs:
   - crmscript
-  name: 'SaveTicketMessageEntity'
-  nameWithType: NSTicketAgent.SaveTicketMessageEntity
-  fullName: CRMScript.NetServer.NSTicketAgent.SaveTicketMessageEntity
+  name: 'SaveTicketMessageEntity()'
+  nameWithType: NSTicketAgent.SaveTicketMessageEntity()
+  fullName: CRMScript.NetServer.NSTicketAgent.SaveTicketMessageEntity()
   type: Method
   summary: "\nUpdates the existing NSTicketMessageEntity or creates a new NSTicketMessageEntity if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>ticketMessageEntity</strong>The NSTicketMessageEntity to save.</li></ul><strong>Returns:</strong>NSTicketMessageEntity<p></p>\n<pre><code>NSTicketAgent agent;\nNSTicketMessageEntity thing = agent.CreateDefaultTicketMessageEntity();\nthing = agent.SaveTicketMessageEntity(thing);</code></pre>\n"
   remarks: 
   syntax: 
     content: NSTicketMessageEntity SaveTicketMessageEntity(NSTicketMessageEntity ticketMessageEntity);
     parameters:
-    - id: ticketMessageEntity;
-      type: CRMScript.NetServer.NSTicketMessageEntity
-      description: 
     return:
       type: CRMScript.NetServer.NSTicketMessageEntity
   example: 
   - "\n<pre><code>NSTicketAgent agent;\nNSTicketMessageEntity thing = agent.CreateDefaultTicketMessageEntity();\nthing = agent.SaveTicketMessageEntity(thing);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketAgent.SendTicketMessage
-  commentId: M:CRMScript.NetServer.NSTicketAgent.SendTicketMessage
-  id: 'SendTicketMessage'
+- uid: CRMScript.NetServer.NSTicketAgent.SendTicketMessage(Integer,String[],String[],String[],String,Integer,String)
+  commentId: M:CRMScript.NetServer.NSTicketAgent.SendTicketMessage(Integer,String[],String[],String[],String,Integer,String)
+  id: 'SendTicketMessage(Integer,String[],String[],String[],String,Integer,String)'
   so.intellisense: NSTicketAgent.SendTicketMessage
   langs:
   - crmscript
-  name: 'SendTicketMessage'
-  nameWithType: NSTicketAgent.SendTicketMessage
-  fullName: CRMScript.NetServer.NSTicketAgent.SendTicketMessage
+  name: 'SendTicketMessage(Integer,String[],String[],String[],String,Integer,String)'
+  nameWithType: NSTicketAgent.SendTicketMessage(Integer,String[],String[],String[],String,Integer,String)
+  fullName: CRMScript.NetServer.NSTicketAgent.SendTicketMessage(Integer,String[],String[],String[],String,Integer,String)
   type: Method
   summary: "\nSend a message to recipients, e.g. by email or sms\n"
   remarks: 
@@ -615,15 +594,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTicketAgent agent;\nInteger ticketMessageEntityId;\nString[] to;\nString[] cc;\nString[] bcc;\nString subject;\nInteger replyTemplateId;\nString gdprSource;\nagent.SendTicketMessage(ticketMessageEntityId, to, cc, bcc, subject, replyTemplateId, gdprSource);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketAgent.SetTicketMessageImportant
-  commentId: M:CRMScript.NetServer.NSTicketAgent.SetTicketMessageImportant
-  id: 'SetTicketMessageImportant'
+- uid: CRMScript.NetServer.NSTicketAgent.SetTicketMessageImportant(Integer,Bool)
+  commentId: M:CRMScript.NetServer.NSTicketAgent.SetTicketMessageImportant(Integer,Bool)
+  id: 'SetTicketMessageImportant(Integer,Bool)'
   so.intellisense: NSTicketAgent.SetTicketMessageImportant
   langs:
   - crmscript
-  name: 'SetTicketMessageImportant'
-  nameWithType: NSTicketAgent.SetTicketMessageImportant
-  fullName: CRMScript.NetServer.NSTicketAgent.SetTicketMessageImportant
+  name: 'SetTicketMessageImportant(Integer,Bool)'
+  nameWithType: NSTicketAgent.SetTicketMessageImportant(Integer,Bool)
+  fullName: CRMScript.NetServer.NSTicketAgent.SetTicketMessageImportant(Integer,Bool)
   type: Method
   summary: "\nSet the important flag on or off for a ticket message\n"
   remarks: 
@@ -639,15 +618,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
     return:
       type: CRMScript.Global.Void
   example: 
-- uid: CRMScript.NetServer.NSTicketAgent.SetTicketReadByOwner
-  commentId: M:CRMScript.NetServer.NSTicketAgent.SetTicketReadByOwner
-  id: 'SetTicketReadByOwner'
+- uid: CRMScript.NetServer.NSTicketAgent.SetTicketReadByOwner(Integer,Integer,Bool)
+  commentId: M:CRMScript.NetServer.NSTicketAgent.SetTicketReadByOwner(Integer,Integer,Bool)
+  id: 'SetTicketReadByOwner(Integer,Integer,Bool)'
   so.intellisense: NSTicketAgent.SetTicketReadByOwner
   langs:
   - crmscript
-  name: 'SetTicketReadByOwner'
-  nameWithType: NSTicketAgent.SetTicketReadByOwner
-  fullName: CRMScript.NetServer.NSTicketAgent.SetTicketReadByOwner
+  name: 'SetTicketReadByOwner(Integer,Integer,Bool)'
+  nameWithType: NSTicketAgent.SetTicketReadByOwner(Integer,Integer,Bool)
+  fullName: CRMScript.NetServer.NSTicketAgent.SetTicketReadByOwner(Integer,Integer,Bool)
   type: Method
   summary: "\nSet the ReadByOwner status for a ticket. It will only have an effect if the calling user is the same as the owner of the ticket\n"
   remarks: "\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Green</li><li>Enum: 2 = Yellow</li><li>Enum: 3 = Red</li></ul>\n"
@@ -667,15 +646,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       type: CRMScript.NetServer.NSTicketEntity
   example: 
   - "\n<pre><code>NSTicketAgent agent;\nInteger ticketEntityId;\nInteger readStatus;\nBool checkEscalating;\nNSTicketEntity res = agent.SetTicketReadByOwner(ticketEntityId, readStatus, checkEscalating);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketAgent.UploadAttachment
-  commentId: M:CRMScript.NetServer.NSTicketAgent.UploadAttachment
-  id: 'UploadAttachment'
+- uid: CRMScript.NetServer.NSTicketAgent.UploadAttachment(Integer)
+  commentId: M:CRMScript.NetServer.NSTicketAgent.UploadAttachment(Integer)
+  id: 'UploadAttachment(Integer)'
   so.intellisense: NSTicketAgent.UploadAttachment
   langs:
   - crmscript
-  name: 'UploadAttachment'
-  nameWithType: NSTicketAgent.UploadAttachment
-  fullName: CRMScript.NetServer.NSTicketAgent.UploadAttachment
+  name: 'UploadAttachment(Integer)'
+  nameWithType: NSTicketAgent.UploadAttachment(Integer)
+  fullName: CRMScript.NetServer.NSTicketAgent.UploadAttachment(Integer)
   type: Method
   summary: "\nUpload an attachment and return the attachment id\n"
   remarks: 
@@ -684,9 +663,6 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
     parameters:
     - id: attachmentId
       type: CRMScript.Global.Integer
-      description: 
-    - id: content
-      type: CRMScript.NetServer.NSStream
       description: 
     return:
       type: CRMScript.Global.Void

@@ -7,16 +7,16 @@ items:
   langs:
   - crmscript
   children:
-  - CRMScript.Native.User.getValue
-  - CRMScript.Native.User.hasTicketAccess
-  - CRMScript.Native.User.isAdministrator
-  - CRMScript.Native.User.isLoggedIn
-  - CRMScript.Native.User.load
-  - CRMScript.Native.User.loadFromAgentAndKey
-  - CRMScript.Native.User.save
-  - CRMScript.Native.User.setValue
-  - CRMScript.Native.User.toParser
-  - CRMScript.Native.User.#ctor
+  - CRMScript.Native.User.getValue(String)
+  - CRMScript.Native.User.hasTicketAccess(Integer,Integer)
+  - CRMScript.Native.User.isAdministrator()
+  - CRMScript.Native.User.isLoggedIn(Integer)
+  - CRMScript.Native.User.load(Integer)
+  - CRMScript.Native.User.loadFromAgentAndKey(Integer,String)
+  - CRMScript.Native.User.save()
+  - CRMScript.Native.User.setValue(String,String,String)
+  - CRMScript.Native.User.toParser()
+  - CRMScript.Native.User.#ctor()
   name: User
   nameWithType: User
   fullName: CRMScript.Native.User
@@ -24,15 +24,15 @@ items:
   summary: "\nClass for representing a user.\n"
   example: 
   - "\n<pre><code>User u;\n\nu.load(2); // Loads user with id = 2\nprint(u.getValue(&quot;username&quot;));\nu.setValue(&quot;email&quot;, &quot;bob@example.com&quot;);\nu.setValue(&quot;language&quot;, &quot;en&quot;); // &quot;no&quot; or &quot;en&quot;\nu.setValue(&quot;status&quot;, &quot;1&quot;); // 1 is Active, 2 is Not Present, 3 is deleted\nprint(u.isLoggedIn(2).toString()); // 2 = web pages, 1 = soap interface</code></pre>\n"
-- uid: CRMScript.Native.User.getValue
-  commentId: M:CRMScript.Native.User.getValue
-  id: 'getValue'
+- uid: CRMScript.Native.User.getValue(String)
+  commentId: M:CRMScript.Native.User.getValue(String)
+  id: 'getValue(String)'
   so.intellisense: User.getValue
   langs:
   - crmscript
-  name: 'getValue'
-  nameWithType: User.getValue
-  fullName: CRMScript.Native.User.getValue
+  name: 'getValue(String)'
+  nameWithType: User.getValue(String)
+  fullName: CRMScript.Native.User.getValue(String)
   type: Method
   summary: "\nGets the value of a given column.\n"
   remarks: 
@@ -45,15 +45,15 @@ items:
     return:
       type: CRMScript.Global.String
   example: 
-- uid: CRMScript.Native.User.hasTicketAccess
-  commentId: M:CRMScript.Native.User.hasTicketAccess
-  id: 'hasTicketAccess'
+- uid: CRMScript.Native.User.hasTicketAccess(Integer,Integer)
+  commentId: M:CRMScript.Native.User.hasTicketAccess(Integer,Integer)
+  id: 'hasTicketAccess(Integer,Integer)'
   so.intellisense: User.hasTicketAccess
   langs:
   - crmscript
-  name: 'hasTicketAccess'
-  nameWithType: User.hasTicketAccess
-  fullName: CRMScript.Native.User.hasTicketAccess
+  name: 'hasTicketAccess(Integer,Integer)'
+  nameWithType: User.hasTicketAccess(Integer,Integer)
+  fullName: CRMScript.Native.User.hasTicketAccess(Integer,Integer)
   type: Method
   summary: "\nReturns true if the user have at least the given access to the given ticket id. accessLevel is 0 for listing tickets, 1 for reading tickets and 2 for editing tickets.\n"
   remarks: 
@@ -67,15 +67,15 @@ items:
       type: CRMScript.Global.Integer
       description: 
   example: 
-- uid: CRMScript.Native.User.isAdministrator
-  commentId: M:CRMScript.Native.User.isAdministrator
-  id: 'isAdministrator'
+- uid: CRMScript.Native.User.isAdministrator()
+  commentId: M:CRMScript.Native.User.isAdministrator()
+  id: 'isAdministrator()'
   so.intellisense: User.isAdministrator
   langs:
   - crmscript
-  name: 'isAdministrator'
-  nameWithType: User.isAdministrator
-  fullName: CRMScript.Native.User.isAdministrator
+  name: 'isAdministrator()'
+  nameWithType: User.isAdministrator()
+  fullName: CRMScript.Native.User.isAdministrator()
   type: Method
   summary: "\nReturns true if the user is an administrator, false if not.\n"
   remarks: 
@@ -83,15 +83,15 @@ items:
     content: isAdministrator()
     parameters:
   example: 
-- uid: CRMScript.Native.User.isLoggedIn
-  commentId: M:CRMScript.Native.User.isLoggedIn
-  id: 'isLoggedIn'
+- uid: CRMScript.Native.User.isLoggedIn(Integer)
+  commentId: M:CRMScript.Native.User.isLoggedIn(Integer)
+  id: 'isLoggedIn(Integer)'
   so.intellisense: User.isLoggedIn
   langs:
   - crmscript
-  name: 'isLoggedIn'
-  nameWithType: User.isLoggedIn
-  fullName: CRMScript.Native.User.isLoggedIn
+  name: 'isLoggedIn(Integer)'
+  nameWithType: User.isLoggedIn(Integer)
+  fullName: CRMScript.Native.User.isLoggedIn(Integer)
   type: Method
   summary: "\nCheck if a user is logged in or not.\n"
   remarks: 
@@ -102,15 +102,15 @@ items:
       type: CRMScript.Global.Integer
       description: 
   example: 
-- uid: CRMScript.Native.User.load
-  commentId: M:CRMScript.Native.User.load
-  id: 'load'
+- uid: CRMScript.Native.User.load(Integer)
+  commentId: M:CRMScript.Native.User.load(Integer)
+  id: 'load(Integer)'
   so.intellisense: User.load
   langs:
   - crmscript
-  name: 'load'
-  nameWithType: User.load
-  fullName: CRMScript.Native.User.load
+  name: 'load(Integer)'
+  nameWithType: User.load(Integer)
+  fullName: CRMScript.Native.User.load(Integer)
   type: Method
   summary: "\nLoads a user from the database<p></p>\n<ul><li><strong>Integer,:</strong>the user id</li><li><strong>Returns:</strong>Bool, true if the user is loaded successfully</li></ul>\n"
   remarks: 
@@ -121,15 +121,15 @@ items:
       type: CRMScript.Global.Integer
       description: 
   example: 
-- uid: CRMScript.Native.User.loadFromAgentAndKey
-  commentId: M:CRMScript.Native.User.loadFromAgentAndKey
-  id: 'loadFromAgentAndKey'
+- uid: CRMScript.Native.User.loadFromAgentAndKey(Integer,String)
+  commentId: M:CRMScript.Native.User.loadFromAgentAndKey(Integer,String)
+  id: 'loadFromAgentAndKey(Integer,String)'
   so.intellisense: User.loadFromAgentAndKey
   langs:
   - crmscript
-  name: 'loadFromAgentAndKey'
-  nameWithType: User.loadFromAgentAndKey
-  fullName: CRMScript.Native.User.loadFromAgentAndKey
+  name: 'loadFromAgentAndKey(Integer,String)'
+  nameWithType: User.loadFromAgentAndKey(Integer,String)
+  fullName: CRMScript.Native.User.loadFromAgentAndKey(Integer,String)
   type: Method
   summary: "\nLoads a user from an Agent with userId and the Agent's key.<p></p>\n<strong>Returns:</strong>Bool of load result, True if loaded successfully\n"
   remarks: 
@@ -143,15 +143,15 @@ items:
       type: CRMScript.Global.String
       description: 
   example: 
-- uid: CRMScript.Native.User.save
-  commentId: M:CRMScript.Native.User.save
-  id: 'save'
+- uid: CRMScript.Native.User.save()
+  commentId: M:CRMScript.Native.User.save()
+  id: 'save()'
   so.intellisense: User.save
   langs:
   - crmscript
-  name: 'save'
-  nameWithType: User.save
-  fullName: CRMScript.Native.User.save
+  name: 'save()'
+  nameWithType: User.save()
+  fullName: CRMScript.Native.User.save()
   type: Method
   summary: "\nSaves a user object to the database, returns the id of the user as an Integer.<p></p>\n<ul><li><strong>Returns:</strong>Integer, user id</li></ul>\n"
   remarks: 
@@ -159,15 +159,15 @@ items:
     content: save()
     parameters:
   example: 
-- uid: CRMScript.Native.User.setValue
-  commentId: M:CRMScript.Native.User.setValue
-  id: 'setValue'
+- uid: CRMScript.Native.User.setValue(String,String,String)
+  commentId: M:CRMScript.Native.User.setValue(String,String,String)
+  id: 'setValue(String,String,String)'
   so.intellisense: User.setValue
   langs:
   - crmscript
-  name: 'setValue'
-  nameWithType: User.setValue
-  fullName: CRMScript.Native.User.setValue
+  name: 'setValue(String,String,String)'
+  nameWithType: User.setValue(String,String,String)
+  fullName: CRMScript.Native.User.setValue(String,String,String)
   type: Method
   summary: "\nSets a value in a given column.\n"
   remarks: 
@@ -186,37 +186,31 @@ items:
     return:
       type: CRMScript.Global.Void
   example: 
-- uid: CRMScript.Native.User.toParser
-  commentId: M:CRMScript.Native.User.toParser
-  id: 'toParser'
+- uid: CRMScript.Native.User.toParser()
+  commentId: M:CRMScript.Native.User.toParser()
+  id: 'toParser()'
   so.intellisense: User.toParser
   langs:
   - crmscript
-  name: 'toParser'
-  nameWithType: User.toParser
-  fullName: CRMScript.Native.User.toParser
+  name: 'toParser()'
+  nameWithType: User.toParser()
+  fullName: CRMScript.Native.User.toParser()
   type: Method
   summary: "\nLoads a user and returns it to a given Parser.\n"
   remarks: 
   syntax: 
     content: toParser(Parser parser)
     parameters:
-    - id: parser
-      type: CRMScript.Native.Parser
-      description: 
-    - id: Parser
-      type: 
-      description: 
   example: 
-- uid: CRMScript.Native.User.#ctor
-  commentId: M:CRMScript.Native.User.#ctor
-  id: '#ctor'
+- uid: CRMScript.Native.User.#ctor()
+  commentId: M:CRMScript.Native.User.#ctor()
+  id: '#ctor()'
   so.intellisense: Void.User
   langs:
   - crmscript
-  name: '#ctor'
-  nameWithType: User.#ctor
-  fullName: CRMScript.Native.User.#ctor
+  name: '#ctor()'
+  nameWithType: User.#ctor()
+  fullName: CRMScript.Native.User.#ctor()
   type: Constructor
   summary: "\nClass for representing a user.\n"
   remarks: 
@@ -249,9 +243,3 @@ references:
   name: Void
   nameWithType: Void
   fullName: CRMScript.Global.Void
-- uid: CRMScript.Native.Parser
-  commentId: T:CRMScript.Native.Parser
-  isExternal: true
-  name: Parser
-  nameWithType: Parser
-  fullName: CRMScript.Native.Parser

@@ -7,32 +7,32 @@ items:
   langs:
   - crmscript
   children:
-  - CRMScript.Native.MainMenu.addGroup
-  - CRMScript.Native.MainMenu.addItem
-  - CRMScript.Native.MainMenu.clear
-  - CRMScript.Native.MainMenu.deleteGroup
-  - CRMScript.Native.MainMenu.deleteItem
-  - CRMScript.Native.MainMenu.getGroupId
-  - CRMScript.Native.MainMenu.getGroupIndex
-  - CRMScript.Native.MainMenu.getItemId
-  - CRMScript.Native.MainMenu.getItemIndex
-  - CRMScript.Native.MainMenu.getNumGroups
-  - CRMScript.Native.MainMenu.getNumItems
+  - CRMScript.Native.MainMenu.addGroup(String,String,Integer,String)
+  - CRMScript.Native.MainMenu.addItem(String,String,Integer,Integer,String,String,String,String)
+  - CRMScript.Native.MainMenu.clear()
+  - CRMScript.Native.MainMenu.deleteGroup(Integer)
+  - CRMScript.Native.MainMenu.deleteItem(Integer,Integer)
+  - CRMScript.Native.MainMenu.getGroupId(Integer)
+  - CRMScript.Native.MainMenu.getGroupIndex()
+  - CRMScript.Native.MainMenu.getItemId(Integer,Integer)
+  - CRMScript.Native.MainMenu.getItemIndex(Integer,String)
+  - CRMScript.Native.MainMenu.getNumGroups()
+  - CRMScript.Native.MainMenu.getNumItems(Integer)
   name: MainMenu
   nameWithType: MainMenu
   fullName: CRMScript.Native.MainMenu
   type: Class
   summary: "\nThe CRMScript<strong>MainMenu</strong>class is used to control the main (left-side) menu of SuperOffice CRM. Customizing the main menu means modifying the corresponding<strong>trigger</strong>.\n"
   example: 
-- uid: CRMScript.Native.MainMenu.addGroup
-  commentId: M:CRMScript.Native.MainMenu.addGroup
-  id: 'addGroup'
+- uid: CRMScript.Native.MainMenu.addGroup(String,String,Integer,String)
+  commentId: M:CRMScript.Native.MainMenu.addGroup(String,String,Integer,String)
+  id: 'addGroup(String,String,Integer,String)'
   so.intellisense: MainMenu.addGroup
   langs:
   - crmscript
-  name: 'addGroup'
-  nameWithType: MainMenu.addGroup
-  fullName: CRMScript.Native.MainMenu.addGroup
+  name: 'addGroup(String,String,Integer,String)'
+  nameWithType: MainMenu.addGroup(String,String,Integer,String)
+  fullName: CRMScript.Native.MainMenu.addGroup(String,String,Integer,String)
   type: Method
   summary: "\nAdds a group to the main menu (navigator)with the given label and image. By default, it appends the item to the bottom of the main menu.<p></p>\nThe image is specified by the URL to the actual file.<p></p>\nYou can optionally specify the exact position. This will shift the index of all subsequent groups. Thus, you should not make assumptions about which slot a group is in.<p></p>\nIn addition, you can specify on-click JavaScript code. Use this to create clickable menu groups.\n"
   remarks: 
@@ -55,15 +55,15 @@ items:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>MainMenu menu = getMainMenu();\nmenu.addGroup(&quot;My label&quot;, &quot;http://..../graphics/picture.png&quot;);\nmenu.addGroup(&quot;My label2&quot;, &quot;http://..../graphics/picture.png, 3&quot;);</code></pre>\n"
-- uid: CRMScript.Native.MainMenu.addItem
-  commentId: M:CRMScript.Native.MainMenu.addItem
-  id: 'addItem'
+- uid: CRMScript.Native.MainMenu.addItem(String,String,Integer,Integer,String,String,String,String)
+  commentId: M:CRMScript.Native.MainMenu.addItem(String,String,Integer,Integer,String,String,String,String)
+  id: 'addItem(String,String,Integer,Integer,String,String,String,String)'
   so.intellisense: MainMenu.addItem
   langs:
   - crmscript
-  name: 'addItem'
-  nameWithType: MainMenu.addItem
-  fullName: CRMScript.Native.MainMenu.addItem
+  name: 'addItem(String,String,Integer,Integer,String,String,String,String)'
+  nameWithType: MainMenu.addItem(String,String,Integer,Integer,String,String,String,String)
+  fullName: CRMScript.Native.MainMenu.addItem(String,String,Integer,Integer,String,String,String,String)
   type: Method
   summary: "\nCRMScript method in class MainMenu that adds an item to the SuperOffice main menu (navigator)Adds an item to the main menu (navigator). By default, it appends an item to the last (bottom) group of the main menu.<p></p>\nThe image is specified by the URL to the actual file.<p></p>\nYou can optionally specify the exact position. This will shift the index of all subsequent items (if any). Thus, you should not make assumptions about which slot an item is in.<p></p>\nIn addition, you can specify JavaScript to run when the item is clicked and set a custom icon.\n"
   remarks: 
@@ -98,15 +98,15 @@ items:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>MainMenu menu = getMainMenu();\nmenu.addItem(&quot;List equipment&quot;, getProgram(1) + &quot;&amp;action=listExtraTable&amp;extraTable=y_equipment&quot;);\n\nmenu.addItem(&quot;New unit&quot;, getProgram(1) + &quot;&amp;action=editExtraTableEntry&amp;extraTable=y_equipment&quot;, 1, 1);</code></pre>\n"
-- uid: CRMScript.Native.MainMenu.clear
-  commentId: M:CRMScript.Native.MainMenu.clear
-  id: 'clear'
+- uid: CRMScript.Native.MainMenu.clear()
+  commentId: M:CRMScript.Native.MainMenu.clear()
+  id: 'clear()'
   so.intellisense: MainMenu.clear
   langs:
   - crmscript
-  name: 'clear'
-  nameWithType: MainMenu.clear
-  fullName: CRMScript.Native.MainMenu.clear
+  name: 'clear()'
+  nameWithType: MainMenu.clear()
+  fullName: CRMScript.Native.MainMenu.clear()
   type: Method
   summary: 
   remarks: 
@@ -116,15 +116,15 @@ items:
     return:
       type: CRMScript.Global.Void
   example: 
-- uid: CRMScript.Native.MainMenu.deleteGroup
-  commentId: M:CRMScript.Native.MainMenu.deleteGroup
-  id: 'deleteGroup'
+- uid: CRMScript.Native.MainMenu.deleteGroup(Integer)
+  commentId: M:CRMScript.Native.MainMenu.deleteGroup(Integer)
+  id: 'deleteGroup(Integer)'
   so.intellisense: MainMenu.deleteGroup
   langs:
   - crmscript
-  name: 'deleteGroup'
-  nameWithType: MainMenu.deleteGroup
-  fullName: CRMScript.Native.MainMenu.deleteGroup
+  name: 'deleteGroup(Integer)'
+  nameWithType: MainMenu.deleteGroup(Integer)
+  fullName: CRMScript.Native.MainMenu.deleteGroup(Integer)
   type: Method
   summary: "\ndeleteGroup(Integer position)<p></p>\nRemoves the group at the given index from the main menu.<p></p>\n[!TIP]
 Verify that you're removing the correct group by checking with<code>getGroupId()</code>what's in that slot first.<p></p>\n<pre><code>Integer pos = 3;\nMainMenu menu = getMainMenu();\nif (menu.getGroupId(pos) == &quot;my label&quot;) {\n  menu.deleteGroup(pos);\n}</code></pre>[!TIP]\n"
@@ -137,15 +137,15 @@ Verify that you're removing the correct group by checking with<code>getGroupId()
       description: 
   example: 
   - "\n<pre><code>Integer pos = 3;\nMainMenu menu = getMainMenu();\nif (menu.getGroupId(pos) == &quot;my label&quot;) {\n  menu.deleteGroup(pos);\n}</code></pre>\n"
-- uid: CRMScript.Native.MainMenu.deleteItem
-  commentId: M:CRMScript.Native.MainMenu.deleteItem
-  id: 'deleteItem'
+- uid: CRMScript.Native.MainMenu.deleteItem(Integer,Integer)
+  commentId: M:CRMScript.Native.MainMenu.deleteItem(Integer,Integer)
+  id: 'deleteItem(Integer,Integer)'
   so.intellisense: MainMenu.deleteItem
   langs:
   - crmscript
-  name: 'deleteItem'
-  nameWithType: MainMenu.deleteItem
-  fullName: CRMScript.Native.MainMenu.deleteItem
+  name: 'deleteItem(Integer,Integer)'
+  nameWithType: MainMenu.deleteItem(Integer,Integer)
+  fullName: CRMScript.Native.MainMenu.deleteItem(Integer,Integer)
   type: Method
   summary: "\nRemoves the item at the given index from the group.\n"
   remarks: 
@@ -161,15 +161,15 @@ Verify that you're removing the correct group by checking with<code>getGroupId()
     return:
       type: CRMScript.Global.Void
   example: 
-- uid: CRMScript.Native.MainMenu.getGroupId
-  commentId: M:CRMScript.Native.MainMenu.getGroupId
-  id: 'getGroupId'
+- uid: CRMScript.Native.MainMenu.getGroupId(Integer)
+  commentId: M:CRMScript.Native.MainMenu.getGroupId(Integer)
+  id: 'getGroupId(Integer)'
   so.intellisense: MainMenu.getGroupId
   langs:
   - crmscript
-  name: 'getGroupId'
-  nameWithType: MainMenu.getGroupId
-  fullName: CRMScript.Native.MainMenu.getGroupId
+  name: 'getGroupId(Integer)'
+  nameWithType: MainMenu.getGroupId(Integer)
+  fullName: CRMScript.Native.MainMenu.getGroupId(Integer)
   type: Method
   summary: "\nReturns the label (ID) of a group in the main menu given its position. The IDs are unique strings.<p></p>\n<pre><code>MainMenu menu = getMainMenu();\nString label = menu.getGroupId(4);</code></pre>\n"
   remarks: 
@@ -183,15 +183,15 @@ Verify that you're removing the correct group by checking with<code>getGroupId()
       type: CRMScript.Global.String
   example: 
   - "\n<pre><code>MainMenu menu = getMainMenu();\nString label = menu.getGroupId(4);</code></pre>\n"
-- uid: CRMScript.Native.MainMenu.getGroupIndex
-  commentId: M:CRMScript.Native.MainMenu.getGroupIndex
-  id: 'getGroupIndex'
+- uid: CRMScript.Native.MainMenu.getGroupIndex()
+  commentId: M:CRMScript.Native.MainMenu.getGroupIndex()
+  id: 'getGroupIndex()'
   so.intellisense: MainMenu.getGroupIndex
   langs:
   - crmscript
-  name: 'getGroupIndex'
-  nameWithType: MainMenu.getGroupIndex
-  fullName: CRMScript.Native.MainMenu.getGroupIndex
+  name: 'getGroupIndex()'
+  nameWithType: MainMenu.getGroupIndex()
+  fullName: CRMScript.Native.MainMenu.getGroupIndex()
   type: Method
   summary: "\nReturns the position of a specific group in the main menu given its label (ID)<p></p>\n<pre><code>MainMenu menu = getMainMenu();\nInteger pos = menu.getGroupIndex(&quot;my MITs&quot;);</code></pre>[!TIP]\n"
   remarks: 
@@ -202,15 +202,15 @@ Verify that you're removing the correct group by checking with<code>getGroupId()
       type: CRMScript.Global.Integer
   example: 
   - "\n<pre><code>MainMenu menu = getMainMenu();\nInteger pos = menu.getGroupIndex(&quot;my MITs&quot;);</code></pre>\n"
-- uid: CRMScript.Native.MainMenu.getItemId
-  commentId: M:CRMScript.Native.MainMenu.getItemId
-  id: 'getItemId'
+- uid: CRMScript.Native.MainMenu.getItemId(Integer,Integer)
+  commentId: M:CRMScript.Native.MainMenu.getItemId(Integer,Integer)
+  id: 'getItemId(Integer,Integer)'
   so.intellisense: MainMenu.getItemId
   langs:
   - crmscript
-  name: 'getItemId'
-  nameWithType: MainMenu.getItemId
-  fullName: CRMScript.Native.MainMenu.getItemId
+  name: 'getItemId(Integer,Integer)'
+  nameWithType: MainMenu.getItemId(Integer,Integer)
+  fullName: CRMScript.Native.MainMenu.getItemId(Integer,Integer)
   type: Method
   summary: "\nReturns the label (ID) of an item in a group given its position.<p></p>\n<pre><code>MainMenu menu = getMainMenu();\nString label = menu.getItemId(4,1);</code></pre>\n"
   remarks: 
@@ -227,15 +227,15 @@ Verify that you're removing the correct group by checking with<code>getGroupId()
       type: CRMScript.Global.String
   example: 
   - "\n<pre><code>MainMenu menu = getMainMenu();\nString label = menu.getItemId(4,1);</code></pre>\n"
-- uid: CRMScript.Native.MainMenu.getItemIndex
-  commentId: M:CRMScript.Native.MainMenu.getItemIndex
-  id: 'getItemIndex'
+- uid: CRMScript.Native.MainMenu.getItemIndex(Integer,String)
+  commentId: M:CRMScript.Native.MainMenu.getItemIndex(Integer,String)
+  id: 'getItemIndex(Integer,String)'
   so.intellisense: MainMenu.getItemIndex
   langs:
   - crmscript
-  name: 'getItemIndex'
-  nameWithType: MainMenu.getItemIndex
-  fullName: CRMScript.Native.MainMenu.getItemIndex
+  name: 'getItemIndex(Integer,String)'
+  nameWithType: MainMenu.getItemIndex(Integer,String)
+  fullName: CRMScript.Native.MainMenu.getItemIndex(Integer,String)
   type: Method
   summary: "\nReturns the position of a specific item in the group given its label (ID)<p></p>\n<pre><code>MainMenu menu = getMainMenu();\nInteger pos = menu.getItemIndex(2,&quot;secret company&quot;);</code></pre>[!TIP]\n"
   remarks: 
@@ -252,15 +252,15 @@ Verify that you're removing the correct group by checking with<code>getGroupId()
       type: CRMScript.Global.Integer
   example: 
   - "\n<pre><code>MainMenu menu = getMainMenu();\nInteger pos = menu.getItemIndex(2,&quot;secret company&quot;);</code></pre>\n"
-- uid: CRMScript.Native.MainMenu.getNumGroups
-  commentId: M:CRMScript.Native.MainMenu.getNumGroups
-  id: 'getNumGroups'
+- uid: CRMScript.Native.MainMenu.getNumGroups()
+  commentId: M:CRMScript.Native.MainMenu.getNumGroups()
+  id: 'getNumGroups()'
   so.intellisense: MainMenu.getNumGroups
   langs:
   - crmscript
-  name: 'getNumGroups'
-  nameWithType: MainMenu.getNumGroups
-  fullName: CRMScript.Native.MainMenu.getNumGroups
+  name: 'getNumGroups()'
+  nameWithType: MainMenu.getNumGroups()
+  fullName: CRMScript.Native.MainMenu.getNumGroups()
   type: Method
   summary: "\nReturns the current number of groups in the main menu.<p></p>\n<pre><code>MainMenu menu = getMainMenu();\nInteger nGroups = menu.getNumGroups();</code></pre>\n"
   remarks: 
@@ -271,15 +271,15 @@ Verify that you're removing the correct group by checking with<code>getGroupId()
       type: CRMScript.Global.Integer
   example: 
   - "\n<pre><code>MainMenu menu = getMainMenu();\nInteger nGroups = menu.getNumGroups();</code></pre>\n"
-- uid: CRMScript.Native.MainMenu.getNumItems
-  commentId: M:CRMScript.Native.MainMenu.getNumItems
-  id: 'getNumItems'
+- uid: CRMScript.Native.MainMenu.getNumItems(Integer)
+  commentId: M:CRMScript.Native.MainMenu.getNumItems(Integer)
+  id: 'getNumItems(Integer)'
   so.intellisense: MainMenu.getNumItems
   langs:
   - crmscript
-  name: 'getNumItems'
-  nameWithType: MainMenu.getNumItems
-  fullName: CRMScript.Native.MainMenu.getNumItems
+  name: 'getNumItems(Integer)'
+  nameWithType: MainMenu.getNumItems(Integer)
+  fullName: CRMScript.Native.MainMenu.getNumItems(Integer)
   type: Method
   summary: "\nReturns the current number of items in the group.<p></p>\n<pre><code>MainMenu menu = getMainMenu();\nInteger nItems = menu.getNumItems(2);</code></pre>\n"
   remarks: 

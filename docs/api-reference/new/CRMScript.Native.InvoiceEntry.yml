@@ -7,17 +7,17 @@ items:
   langs:
   - crmscript
   children:
-  - CRMScript.Native.InvoiceEntry.getDiscount
-  - CRMScript.Native.InvoiceEntry.getDiscountMoney
-  - CRMScript.Native.InvoiceEntry.getPricePrUnit
-  - CRMScript.Native.InvoiceEntry.getValue
-  - CRMScript.Native.InvoiceEntry.#ctor
-  - CRMScript.Native.InvoiceEntry.load
-  - CRMScript.Native.InvoiceEntry.save
-  - CRMScript.Native.InvoiceEntry.setDiscount
-  - CRMScript.Native.InvoiceEntry.setDiscountMoney
-  - CRMScript.Native.InvoiceEntry.setPricePrUnit
-  - CRMScript.Native.InvoiceEntry.setValue
+  - CRMScript.Native.InvoiceEntry.getDiscount()
+  - CRMScript.Native.InvoiceEntry.getDiscountMoney()
+  - CRMScript.Native.InvoiceEntry.getPricePrUnit()
+  - CRMScript.Native.InvoiceEntry.getValue(String)
+  - CRMScript.Native.InvoiceEntry.#ctor()
+  - CRMScript.Native.InvoiceEntry.load(Integer)
+  - CRMScript.Native.InvoiceEntry.save()
+  - CRMScript.Native.InvoiceEntry.setDiscount()
+  - CRMScript.Native.InvoiceEntry.setDiscountMoney()
+  - CRMScript.Native.InvoiceEntry.setPricePrUnit()
+  - CRMScript.Native.InvoiceEntry.setValue(String,String)
   name: InvoiceEntry
   nameWithType: InvoiceEntry
   fullName: CRMScript.Native.InvoiceEntry
@@ -25,15 +25,15 @@ items:
   summary: "\nThis class represent invoice entries. You will be able to create new or modify existing invoice entries with this class.\n"
   example: 
   - "\n<pre><code>InvoiceEntry i;\n\ni.setValue(&quot;description&quot;, &quot;test&quot;);\ni.setValue(&quot;quantity&quot;, &quot;1&quot;);\ni.setValue(&quot;pricePrUnit&quot;, &quot;700&quot;);\ni.setValue(&quot;discount&quot;, &quot;0.2&quot;);\nDate d; // Default value for date is today\ni.setValue(&quot;date&quot;, d.toString());</code></pre>\n"
-- uid: CRMScript.Native.InvoiceEntry.getDiscount
-  commentId: M:CRMScript.Native.InvoiceEntry.getDiscount
-  id: 'getDiscount'
+- uid: CRMScript.Native.InvoiceEntry.getDiscount()
+  commentId: M:CRMScript.Native.InvoiceEntry.getDiscount()
+  id: 'getDiscount()'
   so.intellisense: InvoiceEntry.getDiscount
   langs:
   - crmscript
-  name: 'getDiscount'
-  nameWithType: InvoiceEntry.getDiscount
-  fullName: CRMScript.Native.InvoiceEntry.getDiscount
+  name: 'getDiscount()'
+  nameWithType: InvoiceEntry.getDiscount()
+  fullName: CRMScript.Native.InvoiceEntry.getDiscount()
   type: Method
   summary: "\nThis method will get the discount of the current InvoiceEntry object in percent.
 It will be returned as a String-representation of a number with 2 decimals accuracy.
@@ -44,15 +44,15 @@ So if the discount is set in money (setDiscountMoney()),  you have to save the i
     content: getDiscount()
     parameters:
   example: 
-- uid: CRMScript.Native.InvoiceEntry.getDiscountMoney
-  commentId: M:CRMScript.Native.InvoiceEntry.getDiscountMoney
-  id: 'getDiscountMoney'
+- uid: CRMScript.Native.InvoiceEntry.getDiscountMoney()
+  commentId: M:CRMScript.Native.InvoiceEntry.getDiscountMoney()
+  id: 'getDiscountMoney()'
   so.intellisense: InvoiceEntry.getDiscountMoney
   langs:
   - crmscript
-  name: 'getDiscountMoney'
-  nameWithType: InvoiceEntry.getDiscountMoney
-  fullName: CRMScript.Native.InvoiceEntry.getDiscountMoney
+  name: 'getDiscountMoney()'
+  nameWithType: InvoiceEntry.getDiscountMoney()
+  fullName: CRMScript.Native.InvoiceEntry.getDiscountMoney()
   type: Method
   summary: "\nThis method will get the discount of the current InvoiceEntry object in money.
 It will be returned as a String-representation of a number with 2 decimals
@@ -65,15 +65,15 @@ invoiceentry before getting the corresponding value in money with this function.
     content: getDiscountMoney()
     parameters:
   example: 
-- uid: CRMScript.Native.InvoiceEntry.getPricePrUnit
-  commentId: M:CRMScript.Native.InvoiceEntry.getPricePrUnit
-  id: 'getPricePrUnit'
+- uid: CRMScript.Native.InvoiceEntry.getPricePrUnit()
+  commentId: M:CRMScript.Native.InvoiceEntry.getPricePrUnit()
+  id: 'getPricePrUnit()'
   so.intellisense: InvoiceEntry.getPricePrUnit
   langs:
   - crmscript
-  name: 'getPricePrUnit'
-  nameWithType: InvoiceEntry.getPricePrUnit
-  fullName: CRMScript.Native.InvoiceEntry.getPricePrUnit
+  name: 'getPricePrUnit()'
+  nameWithType: InvoiceEntry.getPricePrUnit()
+  fullName: CRMScript.Native.InvoiceEntry.getPricePrUnit()
   type: Method
   summary: "\nThis method will return thep price per unit of the current InvoiceEntry object.
 It will be returned as a String-representation of a number with 2 decimals
@@ -83,15 +83,15 @@ accuracy.<p></p>\n<ul><li><strong>Returns:</strong>Price per unit</li></ul>\n"
     content: getPricePrUnit()
     parameters:
   example: 
-- uid: CRMScript.Native.InvoiceEntry.getValue
-  commentId: M:CRMScript.Native.InvoiceEntry.getValue
-  id: 'getValue'
+- uid: CRMScript.Native.InvoiceEntry.getValue(String)
+  commentId: M:CRMScript.Native.InvoiceEntry.getValue(String)
+  id: 'getValue(String)'
   so.intellisense: InvoiceEntry.getValue
   langs:
   - crmscript
-  name: 'getValue'
-  nameWithType: InvoiceEntry.getValue
-  fullName: CRMScript.Native.InvoiceEntry.getValue
+  name: 'getValue(String)'
+  nameWithType: InvoiceEntry.getValue(String)
+  fullName: CRMScript.Native.InvoiceEntry.getValue(String)
   type: Method
   summary: "\nGet the value of the specifed field.\n"
   remarks: 
@@ -102,15 +102,15 @@ accuracy.<p></p>\n<ul><li><strong>Returns:</strong>Price per unit</li></ul>\n"
       type: CRMScript.Global.String
       description: 
   example: 
-- uid: CRMScript.Native.InvoiceEntry.#ctor
-  commentId: M:CRMScript.Native.InvoiceEntry.#ctor
-  id: '#ctor'
+- uid: CRMScript.Native.InvoiceEntry.#ctor()
+  commentId: M:CRMScript.Native.InvoiceEntry.#ctor()
+  id: '#ctor()'
   so.intellisense: Void.InvoiceEntry
   langs:
   - crmscript
-  name: '#ctor'
-  nameWithType: InvoiceEntry.#ctor
-  fullName: CRMScript.Native.InvoiceEntry.#ctor
+  name: '#ctor()'
+  nameWithType: InvoiceEntry.#ctor()
+  fullName: CRMScript.Native.InvoiceEntry.#ctor()
   type: Constructor
   summary: "\nThis class represent invoice entries. You will be able to create new or modify existing invoice entries with this class.\n"
   remarks: 
@@ -118,15 +118,15 @@ accuracy.<p></p>\n<ul><li><strong>Returns:</strong>Price per unit</li></ul>\n"
     content: InvoiceEntry
   example: 
   - "\n<pre><code>InvoiceEntry i;\n\ni.setValue(&quot;description&quot;, &quot;test&quot;);\ni.setValue(&quot;quantity&quot;, &quot;1&quot;);\ni.setValue(&quot;pricePrUnit&quot;, &quot;700&quot;);\ni.setValue(&quot;discount&quot;, &quot;0.2&quot;);\nDate d; // Default value for date is today\ni.setValue(&quot;date&quot;, d.toString());</code></pre>\n"
-- uid: CRMScript.Native.InvoiceEntry.load
-  commentId: M:CRMScript.Native.InvoiceEntry.load
-  id: 'load'
+- uid: CRMScript.Native.InvoiceEntry.load(Integer)
+  commentId: M:CRMScript.Native.InvoiceEntry.load(Integer)
+  id: 'load(Integer)'
   so.intellisense: InvoiceEntry.load
   langs:
   - crmscript
-  name: 'load'
-  nameWithType: InvoiceEntry.load
-  fullName: CRMScript.Native.InvoiceEntry.load
+  name: 'load(Integer)'
+  nameWithType: InvoiceEntry.load(Integer)
+  fullName: CRMScript.Native.InvoiceEntry.load(Integer)
   type: Method
   summary: "\nThis method will load an existing InvoiceEntry object.\n"
   remarks: 
@@ -137,15 +137,15 @@ accuracy.<p></p>\n<ul><li><strong>Returns:</strong>Price per unit</li></ul>\n"
       type: CRMScript.Global.Integer
       description: 
   example: 
-- uid: CRMScript.Native.InvoiceEntry.save
-  commentId: M:CRMScript.Native.InvoiceEntry.save
-  id: 'save'
+- uid: CRMScript.Native.InvoiceEntry.save()
+  commentId: M:CRMScript.Native.InvoiceEntry.save()
+  id: 'save()'
   so.intellisense: InvoiceEntry.save
   langs:
   - crmscript
-  name: 'save'
-  nameWithType: InvoiceEntry.save
-  fullName: CRMScript.Native.InvoiceEntry.save
+  name: 'save()'
+  nameWithType: InvoiceEntry.save()
+  fullName: CRMScript.Native.InvoiceEntry.save()
   type: Method
   summary: "\nWill save the existing InvoiceEntry object and return the id.<p></p>\n<ul><li><strong>Returns:</strong>The id of the saved InvoiceEntry object</li></ul>\n"
   remarks: 
@@ -153,15 +153,15 @@ accuracy.<p></p>\n<ul><li><strong>Returns:</strong>Price per unit</li></ul>\n"
     content: save()
     parameters:
   example: 
-- uid: CRMScript.Native.InvoiceEntry.setDiscount
-  commentId: M:CRMScript.Native.InvoiceEntry.setDiscount
-  id: 'setDiscount'
+- uid: CRMScript.Native.InvoiceEntry.setDiscount()
+  commentId: M:CRMScript.Native.InvoiceEntry.setDiscount()
+  id: 'setDiscount()'
   so.intellisense: InvoiceEntry.setDiscount
   langs:
   - crmscript
-  name: 'setDiscount'
-  nameWithType: InvoiceEntry.setDiscount
-  fullName: CRMScript.Native.InvoiceEntry.setDiscount
+  name: 'setDiscount()'
+  nameWithType: InvoiceEntry.setDiscount()
+  fullName: CRMScript.Native.InvoiceEntry.setDiscount()
   type: Method
   summary: "\nThis method will set the discount of the current InvoiceEntry object with the given
 percent.
@@ -170,19 +170,16 @@ If discount is set in both percent and money, the save-function use the money-ve
   syntax: 
     content: setDiscount(Float percent)
     parameters:
-    - id: percent
-      type: CRMScript.Global.Float
-      description: 
   example: 
-- uid: CRMScript.Native.InvoiceEntry.setDiscountMoney
-  commentId: M:CRMScript.Native.InvoiceEntry.setDiscountMoney
-  id: 'setDiscountMoney'
+- uid: CRMScript.Native.InvoiceEntry.setDiscountMoney()
+  commentId: M:CRMScript.Native.InvoiceEntry.setDiscountMoney()
+  id: 'setDiscountMoney()'
   so.intellisense: InvoiceEntry.setDiscountMoney
   langs:
   - crmscript
-  name: 'setDiscountMoney'
-  nameWithType: InvoiceEntry.setDiscountMoney
-  fullName: CRMScript.Native.InvoiceEntry.setDiscountMoney
+  name: 'setDiscountMoney()'
+  nameWithType: InvoiceEntry.setDiscountMoney()
+  fullName: CRMScript.Native.InvoiceEntry.setDiscountMoney()
   type: Method
   summary: "\nThis method will set the discount of the current InvoiceEntry object with the given
 money.
@@ -191,38 +188,32 @@ If both<code>setDiscount()</code>and this function has been used, the<code>save(
   syntax: 
     content: setDiscountMoney(Float money)
     parameters:
-    - id: money
-      type: CRMScript.Global.Float
-      description: 
   example: 
-- uid: CRMScript.Native.InvoiceEntry.setPricePrUnit
-  commentId: M:CRMScript.Native.InvoiceEntry.setPricePrUnit
-  id: 'setPricePrUnit'
+- uid: CRMScript.Native.InvoiceEntry.setPricePrUnit()
+  commentId: M:CRMScript.Native.InvoiceEntry.setPricePrUnit()
+  id: 'setPricePrUnit()'
   so.intellisense: InvoiceEntry.setPricePrUnit
   langs:
   - crmscript
-  name: 'setPricePrUnit'
-  nameWithType: InvoiceEntry.setPricePrUnit
-  fullName: CRMScript.Native.InvoiceEntry.setPricePrUnit
+  name: 'setPricePrUnit()'
+  nameWithType: InvoiceEntry.setPricePrUnit()
+  fullName: CRMScript.Native.InvoiceEntry.setPricePrUnit()
   type: Method
   summary: "\nThis method will set the price per unit for the current InvoiceEntry object with the given price.\n"
   remarks: 
   syntax: 
     content: setPricePrUnit(Float price)
     parameters:
-    - id: price
-      type: CRMScript.Global.Float
-      description: 
   example: 
-- uid: CRMScript.Native.InvoiceEntry.setValue
-  commentId: M:CRMScript.Native.InvoiceEntry.setValue
-  id: 'setValue'
+- uid: CRMScript.Native.InvoiceEntry.setValue(String,String)
+  commentId: M:CRMScript.Native.InvoiceEntry.setValue(String,String)
+  id: 'setValue(String,String)'
   so.intellisense: InvoiceEntry.setValue
   langs:
   - crmscript
-  name: 'setValue'
-  nameWithType: InvoiceEntry.setValue
-  fullName: CRMScript.Native.InvoiceEntry.setValue
+  name: 'setValue(String,String)'
+  nameWithType: InvoiceEntry.setValue(String,String)
+  fullName: CRMScript.Native.InvoiceEntry.setValue(String,String)
   type: Method
   summary: "\nThis method will set a field of the current InvoiceEntry object with the given value.\n"
   remarks: 
@@ -255,9 +246,3 @@ references:
   name: Integer
   nameWithType: Integer
   fullName: CRMScript.Global.Integer
-- uid: CRMScript.Global.Float
-  commentId: T:CRMScript.Global.Float
-  isExternal: true
-  name: Float
-  nameWithType: Float
-  fullName: CRMScript.Global.Float

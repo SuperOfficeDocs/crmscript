@@ -7,15 +7,15 @@ items:
   langs:
   - crmscript
   children:
-  - CRMScript.NetServer.NSWebhookAgent.CreateDefaultWebhook
-  - CRMScript.NetServer.NSWebhookAgent.DeleteWebhook
-  - CRMScript.NetServer.NSWebhookAgent.GetAllWebhooks
-  - CRMScript.NetServer.NSWebhookAgent.GetLastError
-  - CRMScript.NetServer.NSWebhookAgent.GetWebhook
-  - CRMScript.NetServer.NSWebhookAgent.#ctor
-  - CRMScript.NetServer.NSWebhookAgent.SaveWebhook
-  - CRMScript.NetServer.NSWebhookAgent.SignalEvent
-  - CRMScript.NetServer.NSWebhookAgent.TestWebhook
+  - CRMScript.NetServer.NSWebhookAgent.CreateDefaultWebhook()
+  - CRMScript.NetServer.NSWebhookAgent.DeleteWebhook(Integer)
+  - CRMScript.NetServer.NSWebhookAgent.GetAllWebhooks(String,String,Integer)
+  - CRMScript.NetServer.NSWebhookAgent.GetLastError(Integer)
+  - CRMScript.NetServer.NSWebhookAgent.GetWebhook(Integer)
+  - CRMScript.NetServer.NSWebhookAgent.#ctor()
+  - CRMScript.NetServer.NSWebhookAgent.SaveWebhook(NSWebhook)
+  - CRMScript.NetServer.NSWebhookAgent.SignalEvent(String,Integer)
+  - CRMScript.NetServer.NSWebhookAgent.TestWebhook(NSWebhook)
   name: NSWebhookAgent
   nameWithType: NSWebhookAgent
   fullName: CRMScript.NetServer.NSWebhookAgent
@@ -23,15 +23,15 @@ items:
   summary: "\nWebhook definitions* webhooks signal other systems about events inside NetServer.\n"
   example: 
   - "\n<pre><code>NSWebhookAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
-- uid: CRMScript.NetServer.NSWebhookAgent.CreateDefaultWebhook
-  commentId: M:CRMScript.NetServer.NSWebhookAgent.CreateDefaultWebhook
-  id: 'CreateDefaultWebhook'
+- uid: CRMScript.NetServer.NSWebhookAgent.CreateDefaultWebhook()
+  commentId: M:CRMScript.NetServer.NSWebhookAgent.CreateDefaultWebhook()
+  id: 'CreateDefaultWebhook()'
   so.intellisense: NSWebhookAgent.CreateDefaultWebhook
   langs:
   - crmscript
-  name: 'CreateDefaultWebhook'
-  nameWithType: NSWebhookAgent.CreateDefaultWebhook
-  fullName: CRMScript.NetServer.NSWebhookAgent.CreateDefaultWebhook
+  name: 'CreateDefaultWebhook()'
+  nameWithType: NSWebhookAgent.CreateDefaultWebhook()
+  fullName: CRMScript.NetServer.NSWebhookAgent.CreateDefaultWebhook()
   type: Method
   summary: "\nSet default values into a new NSWebhook.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>A new NSWebhook with default values.<p></p>\n<pre><code>NSWebhookAgent agent;\nNSWebhook thing = agent.CreateDefaultWebhook();\nthing = agent.SaveWebhook(thing);</code></pre>\n"
@@ -43,15 +43,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       type: CRMScript.NetServer.NSWebhook
   example: 
   - "\n<pre><code>NSWebhookAgent agent;\nNSWebhook thing = agent.CreateDefaultWebhook();\nthing = agent.SaveWebhook(thing);</code></pre>\n"
-- uid: CRMScript.NetServer.NSWebhookAgent.DeleteWebhook
-  commentId: M:CRMScript.NetServer.NSWebhookAgent.DeleteWebhook
-  id: 'DeleteWebhook'
+- uid: CRMScript.NetServer.NSWebhookAgent.DeleteWebhook(Integer)
+  commentId: M:CRMScript.NetServer.NSWebhookAgent.DeleteWebhook(Integer)
+  id: 'DeleteWebhook(Integer)'
   so.intellisense: NSWebhookAgent.DeleteWebhook
   langs:
   - crmscript
-  name: 'DeleteWebhook'
-  nameWithType: NSWebhookAgent.DeleteWebhook
-  fullName: CRMScript.NetServer.NSWebhookAgent.DeleteWebhook
+  name: 'DeleteWebhook(Integer)'
+  nameWithType: NSWebhookAgent.DeleteWebhook(Integer)
+  fullName: CRMScript.NetServer.NSWebhookAgent.DeleteWebhook(Integer)
   type: Method
   summary: "\nDeletes the NSWebhook\n"
   remarks: 
@@ -61,20 +61,17 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
     - id: webhook;
       type: CRMScript.Global.Integer
       description: 
-    - id: webhookId
-      type: 
-      description: 
   example: 
   - "\n<pre><code>NSWebhookAgent agent;\nagent.DeleteWebhook(123);</code></pre>\n"
-- uid: CRMScript.NetServer.NSWebhookAgent.GetAllWebhooks
-  commentId: M:CRMScript.NetServer.NSWebhookAgent.GetAllWebhooks
-  id: 'GetAllWebhooks'
+- uid: CRMScript.NetServer.NSWebhookAgent.GetAllWebhooks(String,String,Integer)
+  commentId: M:CRMScript.NetServer.NSWebhookAgent.GetAllWebhooks(String,String,Integer)
+  id: 'GetAllWebhooks(String,String,Integer)'
   so.intellisense: NSWebhookAgent.GetAllWebhooks
   langs:
   - crmscript
-  name: 'GetAllWebhooks'
-  nameWithType: NSWebhookAgent.GetAllWebhooks
-  fullName: CRMScript.NetServer.NSWebhookAgent.GetAllWebhooks
+  name: 'GetAllWebhooks(String,String,Integer)'
+  nameWithType: NSWebhookAgent.GetAllWebhooks(String,String,Integer)
+  fullName: CRMScript.NetServer.NSWebhookAgent.GetAllWebhooks(String,String,Integer)
   type: Method
   summary: "\nReturns all webhooks, according to filter criteria\n"
   remarks: "\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Active</li><li>Enum: 2 = Stopped</li><li>Enum: 3 = TooManyErrors</li></ul>\n"
@@ -94,15 +91,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       type: CRMScript.NetServer.NSWebhook[]
   example: 
   - "\n<pre><code>NSWebhookAgent agent;\nString nameFilter;\nString eventFilter;\nInteger statusFilter;\nNSWebhook[] res = agent.GetAllWebhooks(nameFilter, eventFilter, statusFilter);</code></pre>\n"
-- uid: CRMScript.NetServer.NSWebhookAgent.GetLastError
-  commentId: M:CRMScript.NetServer.NSWebhookAgent.GetLastError
-  id: 'GetLastError'
+- uid: CRMScript.NetServer.NSWebhookAgent.GetLastError(Integer)
+  commentId: M:CRMScript.NetServer.NSWebhookAgent.GetLastError(Integer)
+  id: 'GetLastError(Integer)'
   so.intellisense: NSWebhookAgent.GetLastError
   langs:
   - crmscript
-  name: 'GetLastError'
-  nameWithType: NSWebhookAgent.GetLastError
-  fullName: CRMScript.NetServer.NSWebhookAgent.GetLastError
+  name: 'GetLastError(Integer)'
+  nameWithType: NSWebhookAgent.GetLastError(Integer)
+  fullName: CRMScript.NetServer.NSWebhookAgent.GetLastError(Integer)
   type: Method
   summary: "\nReturn the most recent error message received when calling this webhook.\n"
   remarks: 
@@ -116,15 +113,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSWebhookAgent agent;\nInteger webhookId;\nString res = agent.GetLastError(webhookId);</code></pre>\n"
-- uid: CRMScript.NetServer.NSWebhookAgent.GetWebhook
-  commentId: M:CRMScript.NetServer.NSWebhookAgent.GetWebhook
-  id: 'GetWebhook'
+- uid: CRMScript.NetServer.NSWebhookAgent.GetWebhook(Integer)
+  commentId: M:CRMScript.NetServer.NSWebhookAgent.GetWebhook(Integer)
+  id: 'GetWebhook(Integer)'
   so.intellisense: NSWebhookAgent.GetWebhook
   langs:
   - crmscript
-  name: 'GetWebhook'
-  nameWithType: NSWebhookAgent.GetWebhook
-  fullName: CRMScript.NetServer.NSWebhookAgent.GetWebhook
+  name: 'GetWebhook(Integer)'
+  nameWithType: NSWebhookAgent.GetWebhook(Integer)
+  fullName: CRMScript.NetServer.NSWebhookAgent.GetWebhook(Integer)
   type: Method
   summary: "\nGets an NSWebhook object.\n"
   remarks: 
@@ -134,22 +131,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
     - id: webhookId;
       type: CRMScript.Global.Integer
       description: 
-    - id: webhookId
-      type: 
-      description: 
     return:
       type: CRMScript.NetServer.NSWebhook
   example: 
   - "\n<pre><code>NSWebhookAgent agent;\nNSWebhook thing = agent.GetWebhook(123);</code></pre>\n"
-- uid: CRMScript.NetServer.NSWebhookAgent.#ctor
-  commentId: M:CRMScript.NetServer.NSWebhookAgent.#ctor
-  id: '#ctor'
+- uid: CRMScript.NetServer.NSWebhookAgent.#ctor()
+  commentId: M:CRMScript.NetServer.NSWebhookAgent.#ctor()
+  id: '#ctor()'
   so.intellisense: Void.NSWebhookAgent
   langs:
   - crmscript
-  name: '#ctor'
-  nameWithType: NSWebhookAgent.#ctor
-  fullName: CRMScript.NetServer.NSWebhookAgent.#ctor
+  name: '#ctor()'
+  nameWithType: NSWebhookAgent.#ctor()
+  fullName: CRMScript.NetServer.NSWebhookAgent.#ctor()
   type: Constructor
   summary: "\nWebhook definitions* webhooks signal other systems about events inside NetServer.\n"
   remarks: 
@@ -157,15 +151,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
     content: NSWebhookAgent
   example: 
   - "\n<pre><code>NSWebhookAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
-- uid: CRMScript.NetServer.NSWebhookAgent.SaveWebhook
-  commentId: M:CRMScript.NetServer.NSWebhookAgent.SaveWebhook
-  id: 'SaveWebhook'
+- uid: CRMScript.NetServer.NSWebhookAgent.SaveWebhook(NSWebhook)
+  commentId: M:CRMScript.NetServer.NSWebhookAgent.SaveWebhook(NSWebhook)
+  id: 'SaveWebhook(NSWebhook)'
   so.intellisense: NSWebhookAgent.SaveWebhook
   langs:
   - crmscript
-  name: 'SaveWebhook'
-  nameWithType: NSWebhookAgent.SaveWebhook
-  fullName: CRMScript.NetServer.NSWebhookAgent.SaveWebhook
+  name: 'SaveWebhook(NSWebhook)'
+  nameWithType: NSWebhookAgent.SaveWebhook(NSWebhook)
+  fullName: CRMScript.NetServer.NSWebhookAgent.SaveWebhook(NSWebhook)
   type: Method
   summary: "\nUpdates the existing NSWebhook or creates a new NSWebhook if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>webhook</strong>The NSWebhook to save.</li></ul><strong>Returns:</strong>New or updated NSWebhook<p></p>\n<pre><code>NSWebhook  agent;\nNSWebhook thing = agent.CreateDefaultWebhook();\nthing = agent.SaveWebhook(thing);</code></pre>\n"
   remarks: 
@@ -179,15 +173,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       type: CRMScript.NetServer.NSWebhook
   example: 
   - "\n<pre><code>NSWebhook  agent;\nNSWebhook thing = agent.CreateDefaultWebhook();\nthing = agent.SaveWebhook(thing);</code></pre>\n"
-- uid: CRMScript.NetServer.NSWebhookAgent.SignalEvent
-  commentId: M:CRMScript.NetServer.NSWebhookAgent.SignalEvent
-  id: 'SignalEvent'
+- uid: CRMScript.NetServer.NSWebhookAgent.SignalEvent(String,Integer)
+  commentId: M:CRMScript.NetServer.NSWebhookAgent.SignalEvent(String,Integer)
+  id: 'SignalEvent(String,Integer)'
   so.intellisense: NSWebhookAgent.SignalEvent
   langs:
   - crmscript
-  name: 'SignalEvent'
-  nameWithType: NSWebhookAgent.SignalEvent
-  fullName: CRMScript.NetServer.NSWebhookAgent.SignalEvent
+  name: 'SignalEvent(String,Integer)'
+  nameWithType: NSWebhookAgent.SignalEvent(String,Integer)
+  fullName: CRMScript.NetServer.NSWebhookAgent.SignalEvent(String,Integer)
   type: Method
   summary: "\nSignal webhooks that an event has occurred. All webhooks listening for the event will be notified.\n"
   remarks: 
@@ -200,22 +194,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
     - id: primaryKey
       type: CRMScript.Global.Integer
       description: 
-    - id: data
-      type: CRMScript.Global.StringObjectDictionary
-      description: 
     return:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSWebhookAgent agent;\nString eventName;\nInteger primaryKey;\nStringObjectDictionary data;\nagent.SignalEvent(eventName, primaryKey, data);</code></pre>\n"
-- uid: CRMScript.NetServer.NSWebhookAgent.TestWebhook
-  commentId: M:CRMScript.NetServer.NSWebhookAgent.TestWebhook
-  id: 'TestWebhook'
+- uid: CRMScript.NetServer.NSWebhookAgent.TestWebhook(NSWebhook)
+  commentId: M:CRMScript.NetServer.NSWebhookAgent.TestWebhook(NSWebhook)
+  id: 'TestWebhook(NSWebhook)'
   so.intellisense: NSWebhookAgent.TestWebhook
   langs:
   - crmscript
-  name: 'TestWebhook'
-  nameWithType: NSWebhookAgent.TestWebhook
-  fullName: CRMScript.NetServer.NSWebhookAgent.TestWebhook
+  name: 'TestWebhook(NSWebhook)'
+  nameWithType: NSWebhookAgent.TestWebhook(NSWebhook)
+  fullName: CRMScript.NetServer.NSWebhookAgent.TestWebhook(NSWebhook)
   type: Method
   summary: "\nPings a webhook with a 'test' event, returns SUCCESS(true) or FAILURE(false) + the response from the webhook target.\n"
   remarks: 
@@ -274,12 +265,6 @@ references:
   name: NSWebhook
   nameWithType: NSWebhook
   fullName: CRMScript.NetServer.NSWebhook
-- uid: CRMScript.Global.StringObjectDictionary
-  commentId: T:CRMScript.Global.StringObjectDictionary
-  isExternal: true
-  name: StringObjectDictionary
-  nameWithType: StringObjectDictionary
-  fullName: CRMScript.Global.StringObjectDictionary
 - uid: CRMScript.Global.Void
   commentId: T:CRMScript.Global.Void
   isExternal: true

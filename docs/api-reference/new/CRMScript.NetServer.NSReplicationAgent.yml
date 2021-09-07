@@ -35,6 +35,12 @@ items:
   type: Method
   summary: "\nSet default values into a new NSSatellite.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSSatellite<p></p>\n<pre><code>NSReplicationAgent agent;\nNSSatellite thing = agent.CreateDefaultSatellite();\nthing = agent.SaveSatellite(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSSatellite CreateDefaultSatellite()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSSatellite
   example: 
   - "\n<pre><code>NSReplicationAgent agent;\nNSSatellite thing = agent.CreateDefaultSatellite();\nthing = agent.SaveSatellite(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSReplicationAgent.GetArea
@@ -47,7 +53,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSReplicationAgent.GetArea
   fullName: CRMScript.NetServer.NSReplicationAgent.GetArea
   type: Method
-  summary: "\nGets a NSArea object.\n"
+  summary: "\nGets an NSArea object.\n"
+  remarks: 
+  syntax: 
+    content: NSArea GetArea(Integer areaId);
+    parameters:
+    - id: areaId;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: areaId
+      type: 
+      description: 
+    return:
+      type: CRMScript.NetServer.NSArea
   example: 
   - "\n<pre><code>NSReplicationAgent agent;\nNSArea thing = agent.GetArea(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSReplicationAgent.GetAreaList
@@ -61,6 +79,13 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSReplicationAgent.GetAreaList
   type: Method
   summary: "\nCRMScript method in the NSReplicationAgent class that gets an array of NSArea objectsGets an array of NSArea objects.<p></p>\n<code>NSArea[] GetAreaList(Integer[] areaIds)</code>\n"
+  remarks: 
+  syntax: 
+    content: GetAreaList()
+    parameters:
+    - id: areaIds
+      type: CRMScript.Global.Integer[]
+      description: The identifiers of the NSArea objects
   example: 
   - "\n<pre><code>Integer[] ids;\nNSReplicationAgent agent;\nagent.GetAreaList(ids);</code></pre>\n"
 - uid: CRMScript.NetServer.NSReplicationAgent.GetCentralLicense
@@ -74,6 +99,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSReplicationAgent.GetCentralLicense
   type: Method
   summary: 
+  remarks: 
+  syntax: 
+    content: NSLicenseOwner[] GetCentralLicense()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSLicenseOwner[]
   example: 
 - uid: CRMScript.NetServer.NSReplicationAgent.GetSatellite
   commentId: M:CRMScript.NetServer.NSReplicationAgent.GetSatellite
@@ -85,7 +116,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSReplicationAgent.GetSatellite
   fullName: CRMScript.NetServer.NSReplicationAgent.GetSatellite
   type: Method
-  summary: "\nGets a NSSatellite object.\n"
+  summary: "\nGets an NSSatellite object.\n"
+  remarks: 
+  syntax: 
+    content: NSSatellite GetSatellite(Integer satelliteId);
+    parameters:
+    - id: satelliteId;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: satelliteId
+      type: 
+      description: 
+    return:
+      type: CRMScript.NetServer.NSSatellite
   example: 
   - "\n<pre><code>NSReplicationAgent agent;\nNSSatellite thing = agent.GetSatellite(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSReplicationAgent.#ctor
@@ -97,8 +140,11 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   name: '#ctor'
   nameWithType: NSReplicationAgent.#ctor
   fullName: CRMScript.NetServer.NSReplicationAgent.#ctor
-  type: Method
+  type: Constructor
   summary: "\nReplication/Travel administration.\n"
+  remarks: 
+  syntax: 
+    content: NSReplicationAgent
   example: 
   - "\n<pre><code>NSReplicationAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSReplicationAgent.SaveCentralLicense
@@ -112,6 +158,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSReplicationAgent.SaveCentralLicense
   type: Method
   summary: 
+  remarks: 
+  syntax: 
+    content: NSLicenseOwner[] SaveCentralLicense(NSLicenseOwner[] license)
+    parameters:
+    - id: license
+      type: CRMScript.NetServer.NSLicenseOwner[]
+      description: 
+    return:
+      type: CRMScript.NetServer.NSLicenseOwner[]
   example: 
 - uid: CRMScript.NetServer.NSReplicationAgent.SaveSatellite
   commentId: M:CRMScript.NetServer.NSReplicationAgent.SaveSatellite
@@ -124,6 +179,13 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSReplicationAgent.SaveSatellite
   type: Method
   summary: "\nCRMScript method in the NSReplicationAgent class that creates or updates a satelliteUpdates the existing NSSatellite or creates a new NSSatellite if the ID parameter is 0.<p></p>\nReturns the new or updated NSSatellite.<p></p>\n<code>NSSatellite SaveSatellite(NSSatellite satellite)</code>\n"
+  remarks: 
+  syntax: 
+    content: SaveSatellite()
+    parameters:
+    - id: satellite
+      type: CRMScript.NetServer.NSSatellite
+      description: The object to save.
   example: 
   - "\n<pre><code>NSReplication  agent;\nNSSatellite thing = agent.CreateDefaultSatellite();\nthing = agent.SaveSatellite(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSReplicationAgent.SetFreetextSearchEnabledOnArea
@@ -137,6 +199,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSReplicationAgent.SetFreetextSearchEnabledOnArea
   type: Method
   summary: "\nEnable freetext search on this area\n"
+  remarks: 
+  syntax: 
+    content: Void SetFreetextSearchEnabledOnArea(Integer areaId, Bool freetextEnabled)
+    parameters:
+    - id: areaId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: freetextEnabled
+      type: CRMScript.Global.Bool
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSReplicationAgent agent;\nInteger areaId;\nBool freetextEnabled;\nagent.SetFreetextSearchEnabledOnArea(areaId, freetextEnabled);</code></pre>\n"
 references:
@@ -146,3 +220,73 @@ references:
   name: NSReplicationAgent
   nameWithType: NSReplicationAgent
   fullName: CRMScript.NetServer.NSReplicationAgent
+- uid: CRMScript.NetServer.NSSatellite
+  commentId: T:CRMScript.NetServer.NSSatellite
+  isExternal: true
+  name: NSSatellite
+  nameWithType: NSSatellite
+  fullName: CRMScript.NetServer.NSSatellite
+- uid: CRMScript.Global.Integer
+  commentId: T:CRMScript.Global.Integer
+  isExternal: true
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Global.Integer
+- uid: CRMScript.NetServer.NSArea
+  commentId: T:CRMScript.NetServer.NSArea
+  isExternal: true
+  name: NSArea
+  nameWithType: NSArea
+  fullName: CRMScript.NetServer.NSArea
+- uid: CRMScript.Global.Integer[]
+  isExternal: true
+  name: Integer[]
+  nameWithType: Integer[]
+  fullName: CRMScript.Global.Integer[]
+  spec.crmscript:
+  - uid: CRMScript.Global.Integer
+    isExternal: true
+    name: Integer
+    nameWithType: Integer
+    fullName: CRMScript.Global.Integer
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.Global.Integer
+  commentId: T:CRMScript.Global.Integer
+  isExternal: true
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Global.Integer
+- uid: CRMScript.NetServer.NSLicenseOwner[]
+  isExternal: true
+  name: NSLicenseOwner[]
+  nameWithType: NSLicenseOwner[]
+  fullName: CRMScript.NetServer.NSLicenseOwner[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSLicenseOwner
+    isExternal: true
+    name: NSLicenseOwner
+    nameWithType: NSLicenseOwner
+    fullName: CRMScript.NetServer.NSLicenseOwner
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSLicenseOwner
+  commentId: T:CRMScript.NetServer.NSLicenseOwner
+  isExternal: true
+  name: NSLicenseOwner
+  nameWithType: NSLicenseOwner
+  fullName: CRMScript.NetServer.NSLicenseOwner
+- uid: CRMScript.Global.Bool
+  commentId: T:CRMScript.Global.Bool
+  isExternal: true
+  name: Bool
+  nameWithType: Bool
+  fullName: CRMScript.Global.Bool
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void

@@ -62,6 +62,31 @@ items:
   fullName: CRMScript.Native.SearchEngine.addComparison
   type: Method
   summary: "\nCRMScript method in class SearchEngine that adds a field-comparison criterion to a queryAdds a criterion that compares 2 database fields to a database query.<p></p>\nYou can optionally add functions to be applied to the 2 fields.\n"
+  remarks: "\n<h3>Functions</h3><table><thead><tr><th>Function</th><th>Other name</th><th>Applies to</th><th>bypassNetServer</th><th>Description</th></tr></thead><tbody><tr><td>avg</td><td>FuncAvg</td><td>Integer, Float</td><td>yes</td><td>aggregate, the average value of a column</td></tr><tr><td>count</td><td>FuncCount</td><td>Integer, Float</td><td>yes</td><td>aggregate, the number of rows matching cond.</td></tr><tr><td>sum</td><td>FuncSum</td><td>Integer, Float</td><td>yes</td><td>aggregate, the total sum of a column</td></tr><tr><td>max</td><td>FuncMax</td><td>Integer, Float</td><td>yes</td><td>aggregate, the largest value of a column</td></tr><tr><td>min</td><td>FuncMin</td><td>Time, DateTime</td><td></td><td></td></tr><tr><td>hour</td><td>FuncHour</td><td>Time, DateTime</td><td></td><td></td></tr><tr><td>wday</td><td>FuncWDay</td><td>Date, DateTime</td><td></td><td></td></tr><tr><td>upper</td><td>FuncUpper</td><td>String</td><td></td><td></td></tr><tr><td>lower</td><td>FuncLower</td><td>String</td><td></td><td></td></tr></tbody></table><h3>Row operators</h3><table><thead><tr><th>Value</th><th>Logical operator</th><th>Expression</th><th>Result</th></tr></thead><tbody><tr><td>OperatorAnd</td><td>AND</td><td>A &amp;&amp; B</td><td>Only rows matching both conditions</td></tr><tr><td>OperatorNotAnd</td><td>NAND</td><td>!(A &amp;&amp; B)</td><td>Rows matching 0 or 1 condition but not both</td></tr><tr><td>OperatorOr</td><td>OR</td><td>A || B</td><td>Rows matching either condition (or both)</td></tr><tr><td>OperatorNotOr</td><td>NOR</td><td>!(A || B)</td><td>Only rows matching no conditions</td></tr></tbody></table><h3>Comparison operators</h3><table><thead><tr><th>Value</th><th>Same as</th><th>Result</th></tr></thead><tbody><tr><td>OperatorEquals</td><td>==</td><td>values match</td></tr><tr><td>OperatorNotEquals</td><td>!=</td><td>values don't match</td></tr><tr><td>OperatorLt</td><td>&lt;</td><td>value less than</td></tr><tr><td>OperatorLte</td><td>&lt;=</td><td>value less than or equal</td></tr><tr><td>OperatorGt</td><td>&gt;</td><td>value greater than</td></tr><tr><td>OperatorGte</td><td>&gt;=</td><td>value greater than or equal</td></tr><tr><td>OperatorIs</td><td></td><td>values of the same type</td></tr><tr><td>OperatorIsNot</td><td></td><td>values of different types</td></tr><tr><td>OperatorLike</td><td></td><td>pattern found in string</td></tr><tr><td>OperatorNotLike</td><td></td><td>pattern not found in string</td></tr><tr><td>OperatorContains</td><td></td><td>string is present</td></tr><tr><td>OperatorBeginsWith</td><td></td><td>string starts with</td></tr><tr><td>OperatorEndsWith</td><td></td><td>string ends with</td></tr><tr><td>OperatorIn</td><td></td><td>column has entries in table</td></tr></tbody></table>\n"
+  syntax: 
+    content: addComparison()
+    parameters:
+    - id: field1
+      type: CRMScript.Global.String
+      description: The field to compare to field2
+    - id: func1
+      type: CRMScript.Global.String
+      description: Optional. The function to use on field1
+    - id: compOperator
+      type: CRMScript.Global.String
+      description: Comparison operator
+    - id: field2
+      type: 
+      description: 
+    - id: func2
+      type: CRMScript.Global.String
+      description: Optional. The function to use on field2
+    - id: rowOperator
+      type: CRMScript.Global.String
+      description: Operator for combining this and the next criterion
+    - id: priority
+      type: CRMScript.Global.Integer
+      description: A number. All criteria with the same number will be placed inside the same brackets
   example: 
 - uid: CRMScript.Native.SearchEngine.addCriteria
   commentId: M:CRMScript.Native.SearchEngine.addCriteria
@@ -74,6 +99,28 @@ items:
   fullName: CRMScript.Native.SearchEngine.addCriteria
   type: Method
   summary: "\nCRMScript method in class SearchEngine that adds a criterion on a database field to the database queryAdds a criterion on a database field to the database query.<p></p>\nYou can optionally add a row operator, priority, and function to be applied to the field.\n"
+  remarks: "\n<h3>Functions</h3><table><thead><tr><th>Function</th><th>Other name</th><th>Applies to</th><th>bypassNetServer</th><th>Description</th></tr></thead><tbody><tr><td>avg</td><td>FuncAvg</td><td>Integer, Float</td><td>yes</td><td>aggregate, the average value of a column</td></tr><tr><td>count</td><td>FuncCount</td><td>Integer, Float</td><td>yes</td><td>aggregate, the number of rows matching cond.</td></tr><tr><td>sum</td><td>FuncSum</td><td>Integer, Float</td><td>yes</td><td>aggregate, the total sum of a column</td></tr><tr><td>max</td><td>FuncMax</td><td>Integer, Float</td><td>yes</td><td>aggregate, the largest value of a column</td></tr><tr><td>min</td><td>FuncMin</td><td>Time, DateTime</td><td></td><td></td></tr><tr><td>hour</td><td>FuncHour</td><td>Time, DateTime</td><td></td><td></td></tr><tr><td>wday</td><td>FuncWDay</td><td>Date, DateTime</td><td></td><td></td></tr><tr><td>upper</td><td>FuncUpper</td><td>String</td><td></td><td></td></tr><tr><td>lower</td><td>FuncLower</td><td>String</td><td></td><td></td></tr></tbody></table><h3>Row operators</h3><table><thead><tr><th>Value</th><th>Logical operator</th><th>Expression</th><th>Result</th></tr></thead><tbody><tr><td>OperatorAnd</td><td>AND</td><td>A &amp;&amp; B</td><td>Only rows matching both conditions</td></tr><tr><td>OperatorNotAnd</td><td>NAND</td><td>!(A &amp;&amp; B)</td><td>Rows matching 0 or 1 condition but not both</td></tr><tr><td>OperatorOr</td><td>OR</td><td>A || B</td><td>Rows matching either condition (or both)</td></tr><tr><td>OperatorNotOr</td><td>NOR</td><td>!(A || B)</td><td>Only rows matching no conditions</td></tr></tbody></table><h3>Comparison operators</h3><table><thead><tr><th>Value</th><th>Same as</th><th>Result</th></tr></thead><tbody><tr><td>OperatorEquals</td><td>==</td><td>values match</td></tr><tr><td>OperatorNotEquals</td><td>!=</td><td>values don't match</td></tr><tr><td>OperatorLt</td><td>&lt;</td><td>value less than</td></tr><tr><td>OperatorLte</td><td>&lt;=</td><td>value less than or equal</td></tr><tr><td>OperatorGt</td><td>&gt;</td><td>value greater than</td></tr><tr><td>OperatorGte</td><td>&gt;=</td><td>value greater than or equal</td></tr><tr><td>OperatorIs</td><td></td><td>values of the same type</td></tr><tr><td>OperatorIsNot</td><td></td><td>values of different types</td></tr><tr><td>OperatorLike</td><td></td><td>pattern found in string</td></tr><tr><td>OperatorNotLike</td><td></td><td>pattern not found in string</td></tr><tr><td>OperatorContains</td><td></td><td>string is present</td></tr><tr><td>OperatorBeginsWith</td><td></td><td>string starts with</td></tr><tr><td>OperatorEndsWith</td><td></td><td>string ends with</td></tr><tr><td>OperatorIn</td><td></td><td>column has entries in table</td></tr></tbody></table>\n"
+  syntax: 
+    content: addCriteria()
+    parameters:
+    - id: field
+      type: CRMScript.Global.String
+      description: The field to restrict
+    - id: function
+      type: CRMScript.Global.String
+      description: Optional. The function to use on field
+    - id: compOperator
+      type: CRMScript.Global.String
+      description: Comparison operator
+    - id: value
+      type: 
+      description: 
+    - id: rowOperator
+      type: CRMScript.Global.String
+      description: Optional. Operator for combining this and the next criterion
+    - id: priority
+      type: CRMScript.Global.Integer
+      description: Optional. A number. All criteria with the same number will be placed inside the same brackets
   example: 
 - uid: CRMScript.Native.SearchEngine.addData
   commentId: M:CRMScript.Native.SearchEngine.addData
@@ -86,6 +133,16 @@ items:
   fullName: CRMScript.Native.SearchEngine.addData
   type: Method
   summary: "\nAdds data for use in an update or insert query<p></p>\n<ul><li><strong>field:</strong>The field to set</li><li><strong>value:</strong>The value to set on the field</li></ul>\n"
+  remarks: 
+  syntax: 
+    content: addData(String field, String value)
+    parameters:
+    - id: field
+      type: CRMScript.Global.String
+      description: 
+    - id: value
+      type: CRMScript.Global.String
+      description: 
   example: 
 - uid: CRMScript.Native.SearchEngine.addDataField
   commentId: M:CRMScript.Native.SearchEngine.addDataField
@@ -97,8 +154,20 @@ items:
   nameWithType: SearchEngine.addDataField
   fullName: CRMScript.Native.SearchEngine.addDataField
   type: Method
-  summary: "\nCRMScript method in class SearchEngine that adds a data field (a reference to a field instead of a value)Adds a data field to the SearchEngine. A<strong>data field</strong>is a field assigned to another field instead of a value.<p></p>\nYou can optionally add a function to be applied to the second field.<p></p>\n<blockquote>[!NOTE]
-Can only be used in<code>update()</code>queries.<p></p>\n</blockquote>\n"
+  summary: "\nCRMScript method in class SearchEngine that adds a data field (a reference to a field instead of a value)Adds a data field to the SearchEngine. A<strong>data field</strong>is a field assigned to another field instead of a value.<p></p>\nYou can optionally add a function to be applied to the second field.<p></p>\nCan only be used in<code>update()</code>queries.\n"
+  remarks: "\n<h3>Available functions</h3><ul><li>count</li><li>avg</li><li>sum</li><li>max</li><li>min</li><li>hour</li><li>wday</li><li>upper</li><li>lower</li><li>castToVarchar</li><li>date</li><li>time</li></ul>\n"
+  syntax: 
+    content: addDataField()
+    parameters:
+    - id: field1
+      type: CRMScript.Global.String
+      description: Field to assign to.
+    - id: field2
+      type: CRMScript.Global.String
+      description: Field where the value is found.
+    - id: function
+      type: CRMScript.Global.String
+      description: Optional. Aggregate function to use for field2.
   example: 
   - "\n<pre><code>se.addDataField(&quot;customer.phone&quot;, &quot;customer.cellphone&quot;);</code></pre>\n"
 - uid: CRMScript.Native.SearchEngine.addField
@@ -112,6 +181,16 @@ Can only be used in<code>update()</code>queries.<p></p>\n</blockquote>\n"
   fullName: CRMScript.Native.SearchEngine.addField
   type: Method
   summary: "\nCRMScript method in the SearchEngine class that adds a field to the SELECT part of the database queryAdds a field to the SELECT part of the database query.<p></p>\nYou can optionally add a function to be applied to the field.\n"
+  remarks: "\n<h3>Available functions</h3><ul><li>count</li><li>avg</li><li>sum</li><li>max</li><li>min</li><li>hour</li><li>wday</li><li>upper</li></ul>\n"
+  syntax: 
+    content: addField()
+    parameters:
+    - id: field
+      type: CRMScript.Global.String
+      description: The field to select
+    - id: function
+      type: CRMScript.Global.String
+      description: Optional. A function to use on the field
   example: 
 - uid: CRMScript.Native.SearchEngine.addFields
   commentId: M:CRMScript.Native.SearchEngine.addFields
@@ -124,6 +203,16 @@ Can only be used in<code>update()</code>queries.<p></p>\n</blockquote>\n"
   fullName: CRMScript.Native.SearchEngine.addFields
   type: Method
   summary: "\nThis method is a shortcut to add multiple fields to a query. The method will add all fields in the commaseparated string &quot;fields&quot;, prefixed by &quot;table&quot; and a dot &quot;.&quot;.\n"
+  remarks: 
+  syntax: 
+    content: addFields(String table, String fields)
+    parameters:
+    - id: table
+      type: CRMScript.Global.String
+      description: 
+    - id: fields
+      type: CRMScript.Global.String
+      description: 
   example: 
   - "\n<pre><code>addFields(&quot;ticket&quot;, &quot;id,title,category.fullname,cust_id.fullName&quot;);</code></pre>\n"
 - uid: CRMScript.Native.SearchEngine.addHaving
@@ -137,6 +226,28 @@ Can only be used in<code>update()</code>queries.<p></p>\n</blockquote>\n"
   fullName: CRMScript.Native.SearchEngine.addHaving
   type: Method
   summary: "\nCRMScript method in the SearchEngine class that adds a HAVING clause to the database queryAdds a HAVING clause to the database query.<p></p>\nYou can optionally add a function to be applied to the field.\n"
+  remarks: "\n<h3>Functions</h3><table><thead><tr><th>Function</th><th>Other name</th><th>Applies to</th><th>bypassNetServer</th><th>Description</th></tr></thead><tbody><tr><td>avg</td><td>FuncAvg</td><td>Integer, Float</td><td>yes</td><td>aggregate, the average value of a column</td></tr><tr><td>count</td><td>FuncCount</td><td>Integer, Float</td><td>yes</td><td>aggregate, the number of rows matching cond.</td></tr><tr><td>sum</td><td>FuncSum</td><td>Integer, Float</td><td>yes</td><td>aggregate, the total sum of a column</td></tr><tr><td>max</td><td>FuncMax</td><td>Integer, Float</td><td>yes</td><td>aggregate, the largest value of a column</td></tr><tr><td>min</td><td>FuncMin</td><td>Time, DateTime</td><td></td><td></td></tr><tr><td>hour</td><td>FuncHour</td><td>Time, DateTime</td><td></td><td></td></tr><tr><td>wday</td><td>FuncWDay</td><td>Date, DateTime</td><td></td><td></td></tr><tr><td>upper</td><td>FuncUpper</td><td>String</td><td></td><td></td></tr><tr><td>lower</td><td>FuncLower</td><td>String</td><td></td><td></td></tr></tbody></table><h3>Row operators</h3><table><thead><tr><th>Value</th><th>Logical operator</th><th>Expression</th><th>Result</th></tr></thead><tbody><tr><td>OperatorAnd</td><td>AND</td><td>A &amp;&amp; B</td><td>Only rows matching both conditions</td></tr><tr><td>OperatorNotAnd</td><td>NAND</td><td>!(A &amp;&amp; B)</td><td>Rows matching 0 or 1 condition but not both</td></tr><tr><td>OperatorOr</td><td>OR</td><td>A || B</td><td>Rows matching either condition (or both)</td></tr><tr><td>OperatorNotOr</td><td>NOR</td><td>!(A || B)</td><td>Only rows matching no conditions</td></tr></tbody></table><h3>Comparison operators</h3><table><thead><tr><th>Value</th><th>Same as</th><th>Result</th></tr></thead><tbody><tr><td>OperatorEquals</td><td>==</td><td>values match</td></tr><tr><td>OperatorNotEquals</td><td>!=</td><td>values don't match</td></tr><tr><td>OperatorLt</td><td>&lt;</td><td>value less than</td></tr><tr><td>OperatorLte</td><td>&lt;=</td><td>value less than or equal</td></tr><tr><td>OperatorGt</td><td>&gt;</td><td>value greater than</td></tr><tr><td>OperatorGte</td><td>&gt;=</td><td>value greater than or equal</td></tr><tr><td>OperatorIs</td><td></td><td>values of the same type</td></tr><tr><td>OperatorIsNot</td><td></td><td>values of different types</td></tr><tr><td>OperatorLike</td><td></td><td>pattern found in string</td></tr><tr><td>OperatorNotLike</td><td></td><td>pattern not found in string</td></tr><tr><td>OperatorContains</td><td></td><td>string is present</td></tr><tr><td>OperatorBeginsWith</td><td></td><td>string starts with</td></tr><tr><td>OperatorEndsWith</td><td></td><td>string ends with</td></tr><tr><td>OperatorIn</td><td></td><td>column has entries in table</td></tr></tbody></table>\n"
+  syntax: 
+    content: addHaving()
+    parameters:
+    - id: field
+      type: CRMScript.Global.String
+      description: The field to restrict
+    - id: function
+      type: CRMScript.Global.String
+      description: Optional. The function to use on field
+    - id: compOperator
+      type: CRMScript.Global.String
+      description: Comparison operator
+    - id: value
+      type: 
+      description: 
+    - id: rowOperator
+      type: CRMScript.Global.String
+      description: Operator for combining this and the next criterion
+    - id: priority
+      type: CRMScript.Global.Integer
+      description: A number. All criteria with the same number will be placed inside the same brackets
   example: 
 - uid: CRMScript.Native.SearchEngine.addJoinCriteria
   commentId: M:CRMScript.Native.SearchEngine.addJoinCriteria
@@ -149,6 +260,25 @@ Can only be used in<code>update()</code>queries.<p></p>\n</blockquote>\n"
   fullName: CRMScript.Native.SearchEngine.addJoinCriteria
   type: Method
   summary: "\nThis method doesn't work with NetServer.<p></p>\nYou need to bypass NetServer (see the method bypassNetServer) if you need to use this.\n"
+  remarks: 
+  syntax: 
+    content: addJoinCriteria(String p_0, String p_1, String p_2, String p_3, Integer p_4)
+    parameters:
+    - id: p_0
+      type: CRMScript.Global.String
+      description: 
+    - id: p_1
+      type: CRMScript.Global.String
+      description: 
+    - id: p_2
+      type: CRMScript.Global.String
+      description: 
+    - id: p_3
+      type: CRMScript.Global.String
+      description: 
+    - id: p_4
+      type: CRMScript.Global.Integer
+      description: 
   example: 
 - uid: CRMScript.Native.SearchEngine.addOrder
   commentId: M:CRMScript.Native.SearchEngine.addOrder
@@ -161,6 +291,19 @@ Can only be used in<code>update()</code>queries.<p></p>\n</blockquote>\n"
   fullName: CRMScript.Native.SearchEngine.addOrder
   type: Method
   summary: "\nCRMScript method in the CRMScript class that adds a restriction to the order on the listing of the database resultAdds a restriction to the order on the listing of the database result.<p></p>\nYou can optionally add a function to be applied to the field.\n"
+  remarks: "\n<h3>Available functions</h3><ul><li>Count</li><li>Avg</li><li>Sum</li><li>Max</li><li>Min</li><li>Hour</li><li>WDay</li><li>Upper</li></ul>\n"
+  syntax: 
+    content: addOrder()
+    parameters:
+    - id: field
+      type: CRMScript.Global.String
+      description: The field to restrict
+    - id: function
+      type: CRMScript.Global.String
+      description: Optional. The function to use on field
+    - id: ascending
+      type: CRMScript.Global.Bool
+      description: The sort order. True = ascending, false = descending
   example: 
 - uid: CRMScript.Native.SearchEngine.buildSql
   commentId: M:CRMScript.Native.SearchEngine.buildSql
@@ -172,8 +315,14 @@ Can only be used in<code>update()</code>queries.<p></p>\n</blockquote>\n"
   nameWithType: SearchEngine.buildSql
   fullName: CRMScript.Native.SearchEngine.buildSql
   type: Method
-  summary: "\nCRMScript method in the SearchEngine class that returns the generated SQL queryReturns the SQL query generated by the SearchEngine. The query is built by<code>addCriteria()</code>,<code>addComparison()</code>,<code>addData()</code>, and so on.<p></p>\n<blockquote>[!NOTE]
-For versions 7.0 and newer, the statement returned will be an estimate of the SQL, since the query is sent to NetServer instead.<p></p>\n</blockquote>\n"
+  summary: "\nCRMScript method in the SearchEngine class that returns the generated SQL queryReturns the SQL query generated by the SearchEngine. The query is built by<code>addCriteria()</code>,<code>addComparison()</code>,<code>addData()</code>, and so on.<p></p>\nFor versions 7.0 and newer, the statement returned will be an estimate of the SQL, since the query is sent to NetServer instead.\n"
+  remarks: 
+  syntax: 
+    content: buildSql()
+    parameters:
+    - id: s
+      type: CRMScript.Global.String
+      description: Determines the type of query to build
   example: 
 - uid: CRMScript.Native.SearchEngine.bypassNetServer
   commentId: M:CRMScript.Native.SearchEngine.bypassNetServer
@@ -187,6 +336,13 @@ For versions 7.0 and newer, the statement returned will be an estimate of the SQ
   type: Method
   summary: "\nFrom version 7 all the queries are sent to NetServer instead of directly to the database.<p></p>\nThis function will allow you to send the queries directly to the database instead.
 The function has no effect if the registry value (reg_id = 235) is set to 0.<p></p>\nBe aware of any security implications by circumventing the NetServer.\n"
+  remarks: 
+  syntax: 
+    content: bypassNetServer(Bool p_0)
+    parameters:
+    - id: p_0
+      type: CRMScript.Global.Bool
+      description: 
   example: 
 - uid: CRMScript.Native.SearchEngine.countColumns
   commentId: M:CRMScript.Native.SearchEngine.countColumns
@@ -199,6 +355,10 @@ The function has no effect if the registry value (reg_id = 235) is set to 0.<p><
   fullName: CRMScript.Native.SearchEngine.countColumns
   type: Method
   summary: "\n<ul><li><strong>Returns:</strong>Integer, the count of columns (selected fields) in the SearchEngine query</li></ul>\n"
+  remarks: 
+  syntax: 
+    content: countColumns()
+    parameters:
   example: 
 - uid: CRMScript.Native.SearchEngine.countRows
   commentId: M:CRMScript.Native.SearchEngine.countRows
@@ -211,6 +371,10 @@ The function has no effect if the registry value (reg_id = 235) is set to 0.<p><
   fullName: CRMScript.Native.SearchEngine.countRows
   type: Method
   summary: "\nReturns the number of rows in the resultset<p></p>\n<ul><li><strong>Returns:</strong>the number of rows in the resultset</li></ul>\n"
+  remarks: 
+  syntax: 
+    content: countRows()
+    parameters:
   example: 
 - uid: CRMScript.Native.SearchEngine.delete
   commentId: M:CRMScript.Native.SearchEngine.delete
@@ -223,6 +387,10 @@ The function has no effect if the registry value (reg_id = 235) is set to 0.<p><
   fullName: CRMScript.Native.SearchEngine.delete
   type: Method
   summary: "\nAfter adding criterias, call this to delete the items that was selected by the query\n"
+  remarks: 
+  syntax: 
+    content: delete()
+    parameters:
   example: 
 - uid: CRMScript.Native.SearchEngine.eof
   commentId: M:CRMScript.Native.SearchEngine.eof
@@ -235,6 +403,10 @@ The function has no effect if the registry value (reg_id = 235) is set to 0.<p><
   fullName: CRMScript.Native.SearchEngine.eof
   type: Method
   summary: "\nReturns true if the end of the resultset is reached, else false<p></p>\n<ul><li><strong>Returns:</strong>true if the end of the resultset is reached, else false</li></ul>\n"
+  remarks: 
+  syntax: 
+    content: eof()
+    parameters:
   example: 
 - uid: CRMScript.Native.SearchEngine.execute
   commentId: M:CRMScript.Native.SearchEngine.execute
@@ -248,6 +420,10 @@ The function has no effect if the registry value (reg_id = 235) is set to 0.<p><
   type: Method
   summary: "\nThis function executes the query.
 Must be called to get the results.\n"
+  remarks: 
+  syntax: 
+    content: execute()
+    parameters:
   example: 
 - uid: CRMScript.Native.SearchEngine.executeHTMLTable
   commentId: M:CRMScript.Native.SearchEngine.executeHTMLTable
@@ -260,6 +436,10 @@ Must be called to get the results.\n"
   fullName: CRMScript.Native.SearchEngine.executeHTMLTable
   type: Method
   summary: "\nExecute the query and return the result as a HTML formatted table.\n"
+  remarks: 
+  syntax: 
+    content: executeHTMLTable()
+    parameters:
   example: 
 - uid: CRMScript.Native.SearchEngine.executeInto
   commentId: M:CRMScript.Native.SearchEngine.executeInto
@@ -271,7 +451,14 @@ Must be called to get the results.\n"
   nameWithType: SearchEngine.executeInto
   fullName: CRMScript.Native.SearchEngine.executeInto
   type: Method
-  summary: "\nExecute the query and returns the result in the matrix.<p></p>\n<ul><li><strong>matrix:</strong>The matrix to fill with the resultset</li></ul>\n"
+  summary: "\nExecute the query and returns the result in the matrix.\n"
+  remarks: 
+  syntax: 
+    content: executeInto(StringMatrix matrix)
+    parameters:
+    - id: matrix
+      type: CRMScript.Global.StringMatrix
+      description: 
   example: 
 - uid: CRMScript.Native.SearchEngine.executeJSON
   commentId: M:CRMScript.Native.SearchEngine.executeJSON
@@ -284,6 +471,10 @@ Must be called to get the results.\n"
   fullName: CRMScript.Native.SearchEngine.executeJSON
   type: Method
   summary: 
+  remarks: 
+  syntax: 
+    content: executeJSON()
+    parameters:
   example: 
 - uid: CRMScript.Native.SearchEngine.executeNS
   commentId: M:CRMScript.Native.SearchEngine.executeNS
@@ -297,6 +488,10 @@ Must be called to get the results.\n"
   type: Method
   summary: "\nThis function executes the query against NetServer instead of the SQL database.
 Must be called to get the results.\n"
+  remarks: 
+  syntax: 
+    content: executeNS()
+    parameters:
   example: 
 - uid: CRMScript.Native.SearchEngine.executeTextTable
   commentId: M:CRMScript.Native.SearchEngine.executeTextTable
@@ -309,6 +504,10 @@ Must be called to get the results.\n"
   fullName: CRMScript.Native.SearchEngine.executeTextTable
   type: Method
   summary: "\nExecute the query and return the result as a text formatted table (similar to MySQL). NOTE: this method will have some overhead for large result sets.\n"
+  remarks: 
+  syntax: 
+    content: executeTextTable()
+    parameters:
   example: 
 - uid: CRMScript.Native.SearchEngine.executeToJSONBuilder
   commentId: M:CRMScript.Native.SearchEngine.executeToJSONBuilder
@@ -321,6 +520,19 @@ Must be called to get the results.\n"
   fullName: CRMScript.Native.SearchEngine.executeToJSONBuilder
   type: Method
   summary: "\nExecute the SearchEngine to a JSONBuilder.<p></p>\nThe fields string can contain a comma-separated list of label:fieldType elements, allowing you to better control the resulting json. The label is the name the field gets in the json object. The fieldType can be &quot;Integer&quot;, &quot;Float&quot;, &quot;Bool&quot;, or &quot;String&quot; (default). The json object member will be formatted accordingly, e.g. a Bool will be &quot;true&quot; or &quot;false&quot;, while Integer/Float will become unquoted numbers.<p></p>\nThe arrayName will become the name of the array in the JSONBuilder. This is useful if you want this query to populate an array in a JSONBuilder already containing other stuff.\n"
+  remarks: 
+  syntax: 
+    content: executeToJSONBuilder(JSONBuilder jb, String fields, String arrayName)
+    parameters:
+    - id: jb
+      type: CRMScript.Native.JSONBuilder
+      description: 
+    - id: fields
+      type: CRMScript.Global.String
+      description: 
+    - id: arrayName
+      type: CRMScript.Global.String
+      description: 
   example: 
   - "\n<pre><code>SearchEngine se;\nse.addFields(&quot;sale&quot;, &quot;sale_id,heading,amount&quot;);\nse.setLimit(10);\nJSONBuilder jb;\njb.setPrettyPrint(4);\njb.pushObject(&quot;&quot;);\njb.addString(&quot;foo&quot;, &quot;bar&quot;);\nse.executeToJSONBuilder(jb, &quot;id:Integer,heading:String,amount:Float&quot;, &quot;sales&quot;);\njb.popLevel();\nprintLine(jb.getString());</code></pre>\n"
 - uid: CRMScript.Native.SearchEngine.findAlternativeFields
@@ -333,7 +545,14 @@ Must be called to get the results.\n"
   nameWithType: SearchEngine.findAlternativeFields
   fullName: CRMScript.Native.SearchEngine.findAlternativeFields
   type: Method
-  summary: "\nFinds all alternative fields given a start field.<p></p>\nThese fields can be used in<code>addField()</code>or simular functions.<p></p>\n<ul><li><strong>fieldBeginsWith:</strong>Fields that begins with...</li></ul>\n"
+  summary: "\nFinds all alternative fields given a start field.<p></p>\nThese fields can be used in<code>addField()</code>or simular functions.\n"
+  remarks: 
+  syntax: 
+    content: findAlternativeFields(String fieldBeginsWith)
+    parameters:
+    - id: fieldBeginsWith
+      type: CRMScript.Global.String
+      description: 
   example: 
 - uid: CRMScript.Native.SearchEngine.findRelations
   commentId: M:CRMScript.Native.SearchEngine.findRelations
@@ -346,6 +565,16 @@ Must be called to get the results.\n"
   fullName: CRMScript.Native.SearchEngine.findRelations
   type: Method
   summary: 
+  remarks: 
+  syntax: 
+    content: findRelations(String p_0, Bool p_1)
+    parameters:
+    - id: p_0
+      type: CRMScript.Global.String
+      description: 
+    - id: p_1
+      type: CRMScript.Global.Bool
+      description: 
   example: 
 - uid: CRMScript.Native.SearchEngine.first
   commentId: M:CRMScript.Native.SearchEngine.first
@@ -358,6 +587,10 @@ Must be called to get the results.\n"
   fullName: CRMScript.Native.SearchEngine.first
   type: Method
   summary: "\nSet the rowpointer to the first item of the resultset<p></p>\n<ul><li><strong>Returns:</strong>false if the resultset is empty, else false</li></ul>\n"
+  remarks: 
+  syntax: 
+    content: first()
+    parameters:
   example: 
 - uid: CRMScript.Native.SearchEngine.getField
   commentId: M:CRMScript.Native.SearchEngine.getField
@@ -370,6 +603,19 @@ Must be called to get the results.\n"
   fullName: CRMScript.Native.SearchEngine.getField
   type: Method
   summary: "\nCRMScript method in the SearchEngine class that returns the value of a fieldReturns the value of a field. You can provide the field as either an Integer or a String.<p></p>\nYou can optionally add a function to be applied to the field when using the name as the identifier.\n"
+  remarks: "\n<h3>Functions</h3><table><thead><tr><th>Function</th><th>Other name</th><th>Applies to</th><th>bypassNetServer</th><th>Description</th></tr></thead><tbody><tr><td>avg</td><td>FuncAvg</td><td>Integer, Float</td><td>yes</td><td>aggregate, the average value of a column</td></tr><tr><td>count</td><td>FuncCount</td><td>Integer, Float</td><td>yes</td><td>aggregate, the number of rows matching cond.</td></tr><tr><td>sum</td><td>FuncSum</td><td>Integer, Float</td><td>yes</td><td>aggregate, the total sum of a column</td></tr><tr><td>max</td><td>FuncMax</td><td>Integer, Float</td><td>yes</td><td>aggregate, the largest value of a column</td></tr><tr><td>min</td><td>FuncMin</td><td>Time, DateTime</td><td></td><td></td></tr><tr><td>hour</td><td>FuncHour</td><td>Time, DateTime</td><td></td><td></td></tr><tr><td>wday</td><td>FuncWDay</td><td>Date, DateTime</td><td></td><td></td></tr><tr><td>upper</td><td>FuncUpper</td><td>String</td><td></td><td></td></tr></tbody></table>\n"
+  syntax: 
+    content: getField()
+    parameters:
+    - id: num
+      type: CRMScript.Global.Integer
+      description: The number of the field. Starting at 0. Alternative to using name
+    - id: name
+      type: CRMScript.Global.String
+      description: The name of the field. On the form table.fieldname. Alternative to using num
+    - id: function
+      type: CRMScript.Global.String
+      description: Optional. The function to use on the field. Used in combination with name
   example: 
 - uid: CRMScript.Native.SearchEngine.getFieldsJSON
   commentId: M:CRMScript.Native.SearchEngine.getFieldsJSON
@@ -382,6 +628,10 @@ Must be called to get the results.\n"
   fullName: CRMScript.Native.SearchEngine.getFieldsJSON
   type: Method
   summary: 
+  remarks: 
+  syntax: 
+    content: getFieldsJSON()
+    parameters:
   example: 
 - uid: CRMScript.Native.SearchEngine.insert
   commentId: M:CRMScript.Native.SearchEngine.insert
@@ -394,6 +644,10 @@ Must be called to get the results.\n"
   fullName: CRMScript.Native.SearchEngine.insert
   type: Method
   summary: "\nAfter adding the values of the fields, call this function to actually do the insert in the database. Returns the resulting id of the insert.<p></p>\n<ul><li><strong>Returns:</strong>The id of the newly added item</li></ul>\n"
+  remarks: 
+  syntax: 
+    content: insert()
+    parameters:
   example: 
 - uid: CRMScript.Native.SearchEngine.next
   commentId: M:CRMScript.Native.SearchEngine.next
@@ -406,6 +660,10 @@ Must be called to get the results.\n"
   fullName: CRMScript.Native.SearchEngine.next
   type: Method
   summary: "\nIf not the end of the resultset is reached. the resultpointer is set to the next line.<p></p>\n<ul><li><strong>Returns:</strong>false if the end of resultset is reached, else false.</li></ul>\n"
+  remarks: 
+  syntax: 
+    content: next()
+    parameters:
   example: 
 - uid: CRMScript.Native.SearchEngine.#ctor
   commentId: M:CRMScript.Native.SearchEngine.#ctor
@@ -416,8 +674,11 @@ Must be called to get the results.\n"
   name: '#ctor'
   nameWithType: SearchEngine.#ctor
   fullName: CRMScript.Native.SearchEngine.#ctor
-  type: Method
+  type: Constructor
   summary: "\nThe SearchEngine is originally made for searching and fetching data from the eJournal database. Thereby its name. Has later been extended with features for inserting and updating rows. The SearchEngine is a tool for building up SQL queries, by adding fields, criteria, and data.<p></p>\nThe fields must be given on the following form: starttablename.fieldname, for example &quot;ticket.title&quot;. For tables that have foreign keys to other tables, you can reach them with the following notation: starttablename.fieldname.fieldname For example, the firstname of the primary customer of a ticket is: &quot;ticket.cust_id.firstname&quot;. The company name of the primary customer of a ticket is: &quot;ticket.cust_id.company.name&quot;.<p></p>\nMake sure that all fields you use that start with the same table, for example, ticket, or else you will receive a big join that you probably do not want.<p></p>\nFor many-to-many relations there is a special notation: table1.(table2-&gt;field2a).field2b Where field2a is a field in table2 that has a foreign key to table1.\n"
+  remarks: 
+  syntax: 
+    content: SearchEngine
   example: 
   - "\n<pre><code>&quot;ticket.(ticket_customers-&gt;ticket_id).cust_id&quot;</code></pre>From CS version 7, the aggregate functions are no longer supported, since the query is sent to NetServer instead of directly to the database.\n"
 - uid: CRMScript.Native.SearchEngine.select
@@ -431,6 +692,10 @@ Must be called to get the results.\n"
   fullName: CRMScript.Native.SearchEngine.select
   type: Method
   summary: "\nDo the select-query and returns the size of the resultset as an Integer<p></p>\n<ul><li><strong>Returns:</strong>The number of items in the resultset</li></ul>\n"
+  remarks: 
+  syntax: 
+    content: select()
+    parameters:
   example: 
 - uid: CRMScript.Native.SearchEngine.setCallBack
   commentId: M:CRMScript.Native.SearchEngine.setCallBack
@@ -442,7 +707,14 @@ Must be called to get the results.\n"
   nameWithType: SearchEngine.setCallBack
   fullName: CRMScript.Native.SearchEngine.setCallBack
   type: Method
-  summary: "\nSet an ejscript function as a callback that will be used to convert the values before they are displayed in the grid.<p></p>\n<ul><li><strong>functionName:</strong>Name of ejscript function.</li></ul>\n"
+  summary: "\nSet an ejscript function as a callback that will be used to convert the values before they are displayed in the grid.\n"
+  remarks: 
+  syntax: 
+    content: setCallBack(String functionName)
+    parameters:
+    - id: functionName
+      type: CRMScript.Global.String
+      description: 
   example: 
 - uid: CRMScript.Native.SearchEngine.setDBDistinct
   commentId: M:CRMScript.Native.SearchEngine.setDBDistinct
@@ -455,6 +727,13 @@ Must be called to get the results.\n"
   fullName: CRMScript.Native.SearchEngine.setDBDistinct
   type: Method
   summary: "\nForce SearchEngine to use a distinct in the query.\n"
+  remarks: 
+  syntax: 
+    content: setDBDistinct(Bool p_0)
+    parameters:
+    - id: p_0
+      type: CRMScript.Global.Bool
+      description: 
   example: 
 - uid: CRMScript.Native.SearchEngine.setDistinct
   commentId: M:CRMScript.Native.SearchEngine.setDistinct
@@ -467,6 +746,13 @@ Must be called to get the results.\n"
   fullName: CRMScript.Native.SearchEngine.setDistinct
   type: Method
   summary: "\nThis function makes the entries distinct so that equal tickets will not be listed.<p></p>\nse.setDistinct(&quot;ticked.id&quot;); There will only be one entry with the same ticket id, very useful with many to many relations.\n"
+  remarks: 
+  syntax: 
+    content: setDistinct(String field)
+    parameters:
+    - id: field
+      type: CRMScript.Global.String
+      description: 
   example: 
 - uid: CRMScript.Native.SearchEngine.setGroup
   commentId: M:CRMScript.Native.SearchEngine.setGroup
@@ -478,7 +764,14 @@ Must be called to get the results.\n"
   nameWithType: SearchEngine.setGroup
   fullName: CRMScript.Native.SearchEngine.setGroup
   type: Method
-  summary: "\nSet or remove  a group-clause to all of the fields in the query (added by the<code>addField()</code>-function).<p></p>\n<ul><li><strong>set:</strong>true if you want to set the groupby-clause, false to remove a groupBy-clause</li></ul>\n"
+  summary: "\nSet or remove  a group-clause to all of the fields in the query (added by the<code>addField()</code>-function).\n"
+  remarks: 
+  syntax: 
+    content: setGroup(Bool set)
+    parameters:
+    - id: set
+      type: CRMScript.Global.Bool
+      description: 
   example: 
 - uid: CRMScript.Native.SearchEngine.setLimit
   commentId: M:CRMScript.Native.SearchEngine.setLimit
@@ -491,6 +784,13 @@ Must be called to get the results.\n"
   fullName: CRMScript.Native.SearchEngine.setLimit
   type: Method
   summary: "\nSet the limit of number of rows to recieve in the resultset<p></p>\n<ul><li><strong>number:</strong>The limit of the rows to recieve in the resultset</li></ul>\n"
+  remarks: 
+  syntax: 
+    content: setLimit(Integer number)
+    parameters:
+    - id: number
+      type: CRMScript.Global.Integer
+      description: 
   example: 
 - uid: CRMScript.Native.SearchEngine.update
   commentId: M:CRMScript.Native.SearchEngine.update
@@ -503,6 +803,10 @@ Must be called to get the results.\n"
   fullName: CRMScript.Native.SearchEngine.update
   type: Method
   summary: "\nUse this function after<code>addData()</code>which sets the values that will be modified, and<code>addCriteria()</code>which do a restriction on the items to modify.\n"
+  remarks: 
+  syntax: 
+    content: update()
+    parameters:
   example: 
 references:
 - uid: CRMScript.Native.SearchEngine
@@ -511,3 +815,33 @@ references:
   name: SearchEngine
   nameWithType: SearchEngine
   fullName: CRMScript.Native.SearchEngine
+- uid: CRMScript.Global.String
+  commentId: T:CRMScript.Global.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: CRMScript.Global.String
+- uid: CRMScript.Global.Integer
+  commentId: T:CRMScript.Global.Integer
+  isExternal: true
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Global.Integer
+- uid: CRMScript.Global.Bool
+  commentId: T:CRMScript.Global.Bool
+  isExternal: true
+  name: Bool
+  nameWithType: Bool
+  fullName: CRMScript.Global.Bool
+- uid: CRMScript.Global.StringMatrix
+  commentId: T:CRMScript.Global.StringMatrix
+  isExternal: true
+  name: StringMatrix
+  nameWithType: StringMatrix
+  fullName: CRMScript.Global.StringMatrix
+- uid: CRMScript.Native.JSONBuilder
+  commentId: T:CRMScript.Native.JSONBuilder
+  isExternal: true
+  name: JSONBuilder
+  nameWithType: JSONBuilder
+  fullName: CRMScript.Native.JSONBuilder

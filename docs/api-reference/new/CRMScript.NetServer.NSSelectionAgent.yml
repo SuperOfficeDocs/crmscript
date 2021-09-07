@@ -80,6 +80,18 @@ items:
   fullName: CRMScript.NetServer.NSSelectionAgent.AddContactSelectionMembers
   type: Method
   summary: "\nAdds the collection of ContactPersonId as members to the static selection\n"
+  remarks: 
+  syntax: 
+    content: Void AddContactSelectionMembers(Integer selectionId, NSContactPersonId[] contactPersonIds)
+    parameters:
+    - id: selectionId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: contactPersonIds
+      type: CRMScript.NetServer.NSContactPersonId[]
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSSelectionAgent.AddContactSelectionMembersFromSearch
   commentId: M:CRMScript.NetServer.NSSelectionAgent.AddContactSelectionMembersFromSearch
@@ -92,6 +104,18 @@ items:
   fullName: CRMScript.NetServer.NSSelectionAgent.AddContactSelectionMembersFromSearch
   type: Method
   summary: "\nAdds members to the selection from the search result.\n"
+  remarks: 
+  syntax: 
+    content: Integer AddContactSelectionMembersFromSearch(Integer selectionId, String storageKey)
+    parameters:
+    - id: selectionId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: storageKey
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.Integer
   example: 
   - "\n<pre><code>NSSelectionAgent agent;\nInteger selectionId;\nString storageKey;\nInteger res = agent.AddContactSelectionMembersFromSearch(selectionId, storageKey);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSelectionAgent.AddRemoveContactSelectionMemberInterests
@@ -105,6 +129,27 @@ items:
   fullName: CRMScript.NetServer.NSSelectionAgent.AddRemoveContactSelectionMemberInterests
   type: Method
   summary: "\nAdds or removes interests on companies and persons in a selection.\n"
+  remarks: 
+  syntax: 
+    content: Void AddRemoveContactSelectionMemberInterests(Integer selectionId, Integer[] addCompanyInterests, Integer[] removeCompanyInterests, Integer[] addContactInterests, Integer[] removeContactInterests)
+    parameters:
+    - id: selectionId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: addCompanyInterests
+      type: CRMScript.Global.Integer[]
+      description: 
+    - id: removeCompanyInterests
+      type: CRMScript.Global.Integer[]
+      description: 
+    - id: addContactInterests
+      type: CRMScript.Global.Integer[]
+      description: 
+    - id: removeContactInterests
+      type: CRMScript.Global.Integer[]
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSSelectionAgent.AddSelectionMembers
   commentId: M:CRMScript.NetServer.NSSelectionAgent.AddSelectionMembers
@@ -117,6 +162,18 @@ items:
   fullName: CRMScript.NetServer.NSSelectionAgent.AddSelectionMembers
   type: Method
   summary: "\nAdd selection members to a static selection of type others than contacts.\n"
+  remarks: 
+  syntax: 
+    content: Integer AddSelectionMembers(Integer selectionId, Integer[] ids)
+    parameters:
+    - id: selectionId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: ids
+      type: CRMScript.Global.Integer[]
+      description: 
+    return:
+      type: CRMScript.Global.Integer
   example: 
   - "\n<pre><code>NSSelectionAgent agent;\nInteger selectionId;\nInteger[] ids;\nInteger res = agent.AddSelectionMembers(selectionId, ids);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSelectionAgent.AddSelectionMembersFromSearch
@@ -130,6 +187,18 @@ items:
   fullName: CRMScript.NetServer.NSSelectionAgent.AddSelectionMembersFromSearch
   type: Method
   summary: "\nAdds members from the selection using the search result.\n"
+  remarks: 
+  syntax: 
+    content: Integer AddSelectionMembersFromSearch(Integer selectionId, String storageKey)
+    parameters:
+    - id: selectionId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: storageKey
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.Integer
   example: 
   - "\n<pre><code>NSSelectionAgent agent;\nInteger selectionId;\nString storageKey;\nInteger res = agent.AddSelectionMembersFromSearch(selectionId, storageKey);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSelectionAgent.CopyContactSelectionMembers
@@ -143,6 +212,18 @@ items:
   fullName: CRMScript.NetServer.NSSelectionAgent.CopyContactSelectionMembers
   type: Method
   summary: "\nCopy contact selection members from selection into an existing selection.\n"
+  remarks: 
+  syntax: 
+    content: Void CopyContactSelectionMembers(Integer fromSelectionId, Integer toSelectionId)
+    parameters:
+    - id: fromSelectionId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: toSelectionId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSSelectionAgent.CopySelectionMembers
   commentId: M:CRMScript.NetServer.NSSelectionAgent.CopySelectionMembers
@@ -155,6 +236,18 @@ items:
   fullName: CRMScript.NetServer.NSSelectionAgent.CopySelectionMembers
   type: Method
   summary: "\nCopy selection members from selection into an existing selection.\n"
+  remarks: 
+  syntax: 
+    content: Void CopySelectionMembers(Integer fromSelectionId, Integer toSelectionId)
+    parameters:
+    - id: fromSelectionId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: toSelectionId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSSelectionAgent.CreateContactSelectionFromSelection
   commentId: M:CRMScript.NetServer.NSSelectionAgent.CreateContactSelectionFromSelection
@@ -167,6 +260,24 @@ items:
   fullName: CRMScript.NetServer.NSSelectionAgent.CreateContactSelectionFromSelection
   type: Method
   summary: "\nCreates a new selection based on selection members from an existing selection.\n"
+  remarks: "\n<ul><li>Enum: 0 = Static</li><li>Enum: 1 = Dynamic</li><li>Enum: 2 = Combined</li></ul>\n"
+  syntax: 
+    content: NSSelectionEntity CreateContactSelectionFromSelection(Integer selectionId, String name, Integer targetSelectionType, Bool copyMembers)
+    parameters:
+    - id: selectionId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: name
+      type: CRMScript.Global.String
+      description: 
+    - id: targetSelectionType
+      type: CRMScript.Global.Integer
+      description: 
+    - id: copyMembers
+      type: CRMScript.Global.Bool
+      description: 
+    return:
+      type: CRMScript.NetServer.NSSelectionEntity
   example: 
   - "\n<pre><code>NSSelectionAgent agent;\nInteger selectionId;\nString name;\nInteger targetSelectionType;\nBool copyMembers;\nNSSelectionEntity res = agent.CreateContactSelectionFromSelection(selectionId, name, targetSelectionType, copyMembers);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSelectionAgent.CreateContactSelectionFromShadowSelection
@@ -180,6 +291,18 @@ items:
   fullName: CRMScript.NetServer.NSSelectionAgent.CreateContactSelectionFromShadowSelection
   type: Method
   summary: "\nCreates a new contact selection based on contact selection members from an existing shadow sale, appointment, project or document selection. The new selection will always be static even if the original selection is dynamic.\n"
+  remarks: 
+  syntax: 
+    content: NSSelectionEntity CreateContactSelectionFromShadowSelection(Integer selectionId, String name)
+    parameters:
+    - id: selectionId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: name
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSSelectionEntity
   example: 
   - "\n<pre><code>NSSelectionAgent agent;\nInteger selectionId;\nString name;\nNSSelectionEntity res = agent.CreateContactSelectionFromShadowSelection(selectionId, name);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSelectionAgent.CreateDefaultMailMergeSettings
@@ -194,6 +317,12 @@ items:
   type: Method
   summary: "\nSet default values into a new NSMailMergeSettings.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSMailMergeSettings<p></p>\n<pre><code>NSSelectionAgent agent;\nNSMailMergeSettings thing = agent.CreateDefaultMailMergeSettings();\nthing = agent.SaveMailMergeSettings(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSMailMergeSettings CreateDefaultMailMergeSettings()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSMailMergeSettings
   example: 
   - "\n<pre><code>NSSelectionAgent agent;\nNSMailMergeSettings thing = agent.CreateDefaultMailMergeSettings();\nthing = agent.SaveMailMergeSettings(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSelectionAgent.CreateDefaultMailMergeTask
@@ -208,6 +337,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   type: Method
   summary: "\nSet default values into a new NSMailMergeTask.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSMailMergeTask<p></p>\n<pre><code>NSSelectionAgent agent;\nNSMailMergeTask thing = agent.CreateDefaultMailMergeTask();\nthing = agent.SaveMailMergeTask(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSMailMergeTask CreateDefaultMailMergeTask()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSMailMergeTask
   example: 
   - "\n<pre><code>NSSelectionAgent agent;\nNSMailMergeTask thing = agent.CreateDefaultMailMergeTask();\nthing = agent.SaveMailMergeTask(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSelectionAgent.CreateDefaultSelectionEntity
@@ -222,6 +357,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   type: Method
   summary: "\nSet default values into a new NSSelectionEntity.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSSelectionEntity<p></p>\n<pre><code>NSSelectionAgent agent;\nNSSelectionEntity thing = agent.CreateDefaultSelectionEntity();\nthing = agent.SaveSelectionEntity(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSSelectionEntity CreateDefaultSelectionEntity()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSSelectionEntity
   example: 
   - "\n<pre><code>NSSelectionAgent agent;\nNSSelectionEntity thing = agent.CreateDefaultSelectionEntity();\nthing = agent.SaveSelectionEntity(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSelectionAgent.CreateNewEntry
@@ -235,6 +376,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSSelectionAgent.CreateNewEntry
   type: Method
   summary: "\nCreates a new selection based on external duplicate\n"
+  remarks: 
+  syntax: 
+    content: Integer CreateNewEntry(NSDuplicateEntry duplicate)
+    parameters:
+    - id: duplicate
+      type: CRMScript.NetServer.NSDuplicateEntry
+      description: 
+    return:
+      type: CRMScript.Global.Integer
   example: 
   - "\n<pre><code>NSSelectionAgent agent;\nNSDuplicateEntry duplicate;\nInteger res = agent.CreateNewEntry(duplicate);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSelectionAgent.CreateSelectionEntity
@@ -248,6 +398,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSSelectionAgent.CreateSelectionEntity
   type: Method
   summary: "\nCreate (but do not save) a new selection entity, for the current user and the given target table; other fields populated as by CreateDefaultSelectionEntity()\n"
+  remarks: 
+  syntax: 
+    content: NSSelectionEntity CreateSelectionEntity(String targetTableName)
+    parameters:
+    - id: targetTableName
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSSelectionEntity
   example: 
   - "\n<pre><code>NSSelectionAgent agent;\nString targetTableName;\nNSSelectionEntity res = agent.CreateSelectionEntity(targetTableName);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSelectionAgent.CreateSelectionFromSelection
@@ -261,6 +420,24 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSSelectionAgent.CreateSelectionFromSelection
   type: Method
   summary: "\nCreates a new selection based on selection members from an existing selection.\n"
+  remarks: "\n<ul><li>Enum: 0 = Static</li><li>Enum: 1 = Dynamic</li><li>Enum: 2 = Combined</li></ul>\n"
+  syntax: 
+    content: NSSelectionEntity CreateSelectionFromSelection(Integer selectionId, String name, Integer targetSelectionType, Bool copyMembers)
+    parameters:
+    - id: selectionId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: name
+      type: CRMScript.Global.String
+      description: 
+    - id: targetSelectionType
+      type: CRMScript.Global.Integer
+      description: 
+    - id: copyMembers
+      type: CRMScript.Global.Bool
+      description: 
+    return:
+      type: CRMScript.NetServer.NSSelectionEntity
   example: 
   - "\n<pre><code>NSSelectionAgent agent;\nInteger selectionId;\nString name;\nInteger targetSelectionType;\nBool copyMembers;\nNSSelectionEntity res = agent.CreateSelectionFromSelection(selectionId, name, targetSelectionType, copyMembers);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSelectionAgent.CreateTemporaryContactSelection
@@ -274,6 +451,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSSelectionAgent.CreateTemporaryContactSelection
   type: Method
   summary: "\nCreates a temporary selection.<p></p>\n<strong>Returns:</strong>NSSelectionEntity<p></p>\n<pre><code>NSSelectionAgent agent;\nNSSelectionEntity res = agent.CreateTemporaryContactSelection();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSSelectionEntity CreateTemporaryContactSelection()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSSelectionEntity
   example: 
   - "\n<pre><code>NSSelectionAgent agent;\nNSSelectionEntity res = agent.CreateTemporaryContactSelection();</code></pre>\n"
 - uid: CRMScript.NetServer.NSSelectionAgent.CreateTemporaryContactSelectionFromContactPersonIds
@@ -287,6 +470,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSSelectionAgent.CreateTemporaryContactSelectionFromContactPersonIds
   type: Method
   summary: "\nCreates a temporary selection with members from a collection of ContactPerson id's.\n"
+  remarks: 
+  syntax: 
+    content: NSSelectionEntity CreateTemporaryContactSelectionFromContactPersonIds(NSContactPersonId[] contactPersonIds)
+    parameters:
+    - id: contactPersonIds
+      type: CRMScript.NetServer.NSContactPersonId[]
+      description: 
+    return:
+      type: CRMScript.NetServer.NSSelectionEntity
   example: 
   - "\n<pre><code>NSSelectionAgent agent;\nNSContactPersonId[] contactPersonIds;\nNSSelectionEntity res = agent.CreateTemporaryContactSelectionFromContactPersonIds(contactPersonIds);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSelectionAgent.CreateTemporaryContactSelectionFromProjectMembers
@@ -300,6 +492,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSSelectionAgent.CreateTemporaryContactSelectionFromProjectMembers
   type: Method
   summary: "\nCreates a temporary selection with members from an existing project.\n"
+  remarks: 
+  syntax: 
+    content: NSSelectionEntity CreateTemporaryContactSelectionFromProjectMembers(Integer projectId)
+    parameters:
+    - id: projectId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSSelectionEntity
   example: 
   - "\n<pre><code>NSSelectionAgent agent;\nInteger projectId;\nNSSelectionEntity res = agent.CreateTemporaryContactSelectionFromProjectMembers(projectId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSelectionAgent.CreateTemporaryContactSelectionFromSelectionMemberIds
@@ -313,6 +514,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSSelectionAgent.CreateTemporaryContactSelectionFromSelectionMemberIds
   type: Method
   summary: "\nCreates a temporary selection with members from a collection of selectionmember id's.\n"
+  remarks: 
+  syntax: 
+    content: NSSelectionEntity CreateTemporaryContactSelectionFromSelectionMemberIds(Integer selectionId, Integer[] selectionMemberIds)
+    parameters:
+    - id: selectionId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: selectionMemberIds
+      type: CRMScript.Global.Integer[]
+      description: 
+    return:
+      type: CRMScript.NetServer.NSSelectionEntity
   example: 
   - "\n<pre><code>NSSelectionAgent agent;\nInteger selectionId;\nInteger[] selectionMemberIds;\nNSSelectionEntity res = agent.CreateTemporaryContactSelectionFromSelectionMemberIds(selectionId, selectionMemberIds);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSelectionAgent.CreateTemporarySelectionFromIds
@@ -326,6 +539,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSSelectionAgent.CreateTemporarySelectionFromIds
   type: Method
   summary: "\nCreates a temporary selection with members from a collection of entity id's.\n"
+  remarks: 
+  syntax: 
+    content: NSSelectionEntity CreateTemporarySelectionFromIds(Integer[] ids, Integer targetTableNumber)
+    parameters:
+    - id: ids
+      type: CRMScript.Global.Integer[]
+      description: 
+    - id: targetTableNumber
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSSelectionEntity
   example: 
   - "\n<pre><code>NSSelectionAgent agent;\nInteger[] ids;\nInteger targetTableNumber;\nNSSelectionEntity res = agent.CreateTemporarySelectionFromIds(ids, targetTableNumber);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSelectionAgent.DeleteContacts
@@ -339,6 +564,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSSelectionAgent.DeleteContacts
   type: Method
   summary: "\nDeletes all contacts from a selection. If a contact does not have delete rights, it will be skipped.\n"
+  remarks: 
+  syntax: 
+    content: Void DeleteContacts(Integer selectionId)
+    parameters:
+    - id: selectionId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSSelectionAgent.DeleteEntities
   commentId: M:CRMScript.NetServer.NSSelectionAgent.DeleteEntities
@@ -351,6 +585,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSSelectionAgent.DeleteEntities
   type: Method
   summary: "\nDeletes all entities from a selection. If an entity does not have delete rights, it will be skipped.\n"
+  remarks: 
+  syntax: 
+    content: Void DeleteEntities(Integer selectionId)
+    parameters:
+    - id: selectionId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSSelectionAgent.DeletePersons
   commentId: M:CRMScript.NetServer.NSSelectionAgent.DeletePersons
@@ -363,6 +606,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSSelectionAgent.DeletePersons
   type: Method
   summary: "\nDeletes all persons from a selection. If a person does not have delete rights, it will be skipped.\n"
+  remarks: 
+  syntax: 
+    content: Void DeletePersons(Integer selectionId)
+    parameters:
+    - id: selectionId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSSelectionAgent.DeleteSelectionEntity
   commentId: M:CRMScript.NetServer.NSSelectionAgent.DeleteSelectionEntity
@@ -375,6 +627,16 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSSelectionAgent.DeleteSelectionEntity
   type: Method
   summary: "\nDeletes the NSSelectionEntity\n"
+  remarks: 
+  syntax: 
+    content: DeleteSelectionEntity(Integer selectionEntity);
+    parameters:
+    - id: selectionEntity;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: selectionEntityId
+      type: 
+      description: 
   example: 
   - "\n<pre><code>NSSelectionAgent agent;\nagent.DeleteSelectionEntity(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSelectionAgent.EditContactSelectionMemberDetails
@@ -388,6 +650,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSSelectionAgent.EditContactSelectionMemberDetails
   type: Method
   summary: "\nEdit company and contact details in a selection based on contents in selectionMemberEditValues.\n"
+  remarks: 
+  syntax: 
+    content: Void EditContactSelectionMemberDetails(Integer selectionId, NSSelectionMemberEditValues selectionMemberEditValues)
+    parameters:
+    - id: selectionId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: selectionMemberEditValues
+      type: CRMScript.NetServer.NSSelectionMemberEditValues
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSSelectionAgent.ExportSelectionMembers
   commentId: M:CRMScript.NetServer.NSSelectionAgent.ExportSelectionMembers
@@ -400,6 +674,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSSelectionAgent.ExportSelectionMembers
   type: Method
   summary: "\nExportSelectionMembers will generate a string that is the result of substituting the template variables with values from selectionmembers.\n"
+  remarks: 
+  syntax: 
+    content: Byte[] ExportSelectionMembers(Integer selectionId, String templateName, Bool useContacts)
+    parameters:
+    - id: selectionId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: templateName
+      type: CRMScript.Global.String
+      description: 
+    - id: useContacts
+      type: CRMScript.Global.Bool
+      description: 
+    return:
+      type: CRMScript.Global.Byte[]
   example: 
   - "\n<pre><code>NSSelectionAgent agent;\nInteger selectionId;\nString templateName;\nBool useContacts;\nByte[] res = agent.ExportSelectionMembers(selectionId, templateName, useContacts);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSelectionAgent.ExportSelectionMembersWithOrderBy
@@ -413,6 +702,24 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSSelectionAgent.ExportSelectionMembersWithOrderBy
   type: Method
   summary: "\nExportSelectionMembers will generate a string that is the result of substituting the template variables with values from selectionmembers.\n"
+  remarks: 
+  syntax: 
+    content: Byte[] ExportSelectionMembersWithOrderBy(Integer selectionId, String templateName, Bool useContacts, String orderBy)
+    parameters:
+    - id: selectionId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: templateName
+      type: CRMScript.Global.String
+      description: 
+    - id: useContacts
+      type: CRMScript.Global.Bool
+      description: 
+    - id: orderBy
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.Byte[]
   example: 
   - "\n<pre><code>NSSelectionAgent agent;\nInteger selectionId;\nString templateName;\nBool useContacts;\nString orderBy;\nByte[] res = agent.ExportSelectionMembersWithOrderBy(selectionId, templateName, useContacts, orderBy);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSelectionAgent.GenerateFollowUps
@@ -426,6 +733,27 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSSelectionAgent.GenerateFollowUps
   type: Method
   summary: "\nGenerate follow-ups for members in the selection.\n"
+  remarks: 
+  syntax: 
+    content: Void GenerateFollowUps(Integer selectionId, NSAppointmentEntity appointmentEntity, Integer associateId, Bool saveOnContactOwner, Bool uniqueContact)
+    parameters:
+    - id: selectionId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: appointmentEntity
+      type: CRMScript.NetServer.NSAppointmentEntity
+      description: 
+    - id: associateId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: saveOnContactOwner
+      type: CRMScript.Global.Bool
+      description: 
+    - id: uniqueContact
+      type: CRMScript.Global.Bool
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSSelectionAgent.GetDuplicateRules
   commentId: M:CRMScript.NetServer.NSSelectionAgent.GetDuplicateRules
@@ -438,6 +766,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSSelectionAgent.GetDuplicateRules
   type: Method
   summary: "\nRetrieve all available duplicate rules for selection<p></p>\n<strong>Returns:</strong>NSDuplicateRule[]<p></p>\n<pre><code>NSSelectionAgent agent;\nNSDuplicateRule[] res = agent.GetDuplicateRules();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSDuplicateRule[] GetDuplicateRules()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSDuplicateRule[]
   example: 
   - "\n<pre><code>NSSelectionAgent agent;\nNSDuplicateRule[] res = agent.GetDuplicateRules();</code></pre>\n"
 - uid: CRMScript.NetServer.NSSelectionAgent.GetDuplicates
@@ -451,6 +785,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSSelectionAgent.GetDuplicates
   type: Method
   summary: "\nGet duplicates(exact or similar in the database) based on the name\n"
+  remarks: 
+  syntax: 
+    content: NSDuplicateEntry[] GetDuplicates(String name)
+    parameters:
+    - id: name
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDuplicateEntry[]
   example: 
   - "\n<pre><code>NSSelectionAgent agent;\nString name;\nNSDuplicateEntry[] res = agent.GetDuplicates(name);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSelectionAgent.GetDynamicSelectionCriteria
@@ -464,6 +807,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSSelectionAgent.GetDynamicSelectionCriteria
   type: Method
   summary: "\nGet the criteria for this dynamic selection.\n"
+  remarks: 
+  syntax: 
+    content: NSArchiveRestrictionInfo[] GetDynamicSelectionCriteria(Integer selectionId)
+    parameters:
+    - id: selectionId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSArchiveRestrictionInfo[]
   example: 
   - "\n<pre><code>NSSelectionAgent agent;\nInteger selectionId;\nNSArchiveRestrictionInfo[] res = agent.GetDynamicSelectionCriteria(selectionId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSelectionAgent.GetDynamicSelectionCriteriaGroups
@@ -477,6 +829,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSSelectionAgent.GetDynamicSelectionCriteriaGroups
   type: Method
   summary: "\nGet the criteria for this dynamic selection. This call supports multiple criteria groups.\n"
+  remarks: 
+  syntax: 
+    content: NSArchiveRestrictionGroup[] GetDynamicSelectionCriteriaGroups(Integer selectionId)
+    parameters:
+    - id: selectionId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSArchiveRestrictionGroup[]
   example: 
   - "\n<pre><code>NSSelectionAgent agent;\nInteger selectionId;\nNSArchiveRestrictionGroup[] res = agent.GetDynamicSelectionCriteriaGroups(selectionId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSelectionAgent.GetParentCombinedSelections
@@ -490,6 +851,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSSelectionAgent.GetParentCombinedSelections
   type: Method
   summary: "\nGet a list of all selection ids where the given selection is used to create a combined selection.\n"
+  remarks: 
+  syntax: 
+    content: Integer[] GetParentCombinedSelections(Integer selectionId)
+    parameters:
+    - id: selectionId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Integer[]
   example: 
   - "\n<pre><code>NSSelectionAgent agent;\nInteger selectionId;\nInteger[] res = agent.GetParentCombinedSelections(selectionId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSelectionAgent.GetRecipientStatistics
@@ -502,7 +872,16 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSSelectionAgent.GetRecipientStatistics
   fullName: CRMScript.NetServer.NSSelectionAgent.GetRecipientStatistics
   type: Method
-  summary: "\nReturns a NSRecipientStatistics object with a count of addresses, emailaddresses and emailaddresses.\n"
+  summary: "\nReturns an NSRecipientStatistics object with a count of addresses, emailaddresses and emailaddresses.\n"
+  remarks: 
+  syntax: 
+    content: NSRecipientStatistics GetRecipientStatistics(Integer selectionId)
+    parameters:
+    - id: selectionId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSRecipientStatistics
   example: 
   - "\n<pre><code>NSSelectionAgent agent;\nInteger selectionId;\nNSRecipientStatistics res = agent.GetRecipientStatistics(selectionId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSelectionAgent.GetRecipientStatisticsFromContactPersonIds
@@ -515,7 +894,16 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSSelectionAgent.GetRecipientStatisticsFromContactPersonIds
   fullName: CRMScript.NetServer.NSSelectionAgent.GetRecipientStatisticsFromContactPersonIds
   type: Method
-  summary: "\nReturns a NSRecipientStatistics object with a count of addresses, emailaddresses and emailaddresses based on contact and persons in a collection of ContactPersonId.\n"
+  summary: "\nReturns an NSRecipientStatistics object with a count of addresses, emailaddresses and emailaddresses based on contact and persons in a collection of ContactPersonId.\n"
+  remarks: 
+  syntax: 
+    content: NSRecipientStatistics GetRecipientStatisticsFromContactPersonIds(NSContactPersonId[] contactPersonIds)
+    parameters:
+    - id: contactPersonIds
+      type: CRMScript.NetServer.NSContactPersonId[]
+      description: 
+    return:
+      type: CRMScript.NetServer.NSRecipientStatistics
   example: 
   - "\n<pre><code>NSSelectionAgent agent;\nNSContactPersonId[] contactPersonIds;\nNSRecipientStatistics res = agent.GetRecipientStatisticsFromContactPersonIds(contactPersonIds);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSelectionAgent.GetRecipientStatisticsFromProjectMembers
@@ -528,7 +916,16 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSSelectionAgent.GetRecipientStatisticsFromProjectMembers
   fullName: CRMScript.NetServer.NSSelectionAgent.GetRecipientStatisticsFromProjectMembers
   type: Method
-  summary: "\nReturns a NSRecipientStatistics object with a count of addresses, emailaddresses and emailaddresses based on members in a project.\n"
+  summary: "\nReturns an NSRecipientStatistics object with a count of addresses, emailaddresses and emailaddresses based on members in a project.\n"
+  remarks: 
+  syntax: 
+    content: NSRecipientStatistics GetRecipientStatisticsFromProjectMembers(Integer projectId)
+    parameters:
+    - id: projectId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSRecipientStatistics
   example: 
   - "\n<pre><code>NSSelectionAgent agent;\nInteger projectId;\nNSRecipientStatistics res = agent.GetRecipientStatisticsFromProjectMembers(projectId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSelectionAgent.GetSelectionEntity
@@ -541,7 +938,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSSelectionAgent.GetSelectionEntity
   fullName: CRMScript.NetServer.NSSelectionAgent.GetSelectionEntity
   type: Method
-  summary: "\nGets a NSSelectionEntity object.\n"
+  summary: "\nGets an NSSelectionEntity object.\n"
+  remarks: 
+  syntax: 
+    content: NSSelectionEntity GetSelectionEntity(Integer selectionEntityId);
+    parameters:
+    - id: selectionEntityId;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: selectionEntityId
+      type: 
+      description: 
+    return:
+      type: CRMScript.NetServer.NSSelectionEntity
   example: 
   - "\n<pre><code>NSSelectionAgent agent;\nNSSelectionEntity thing = agent.GetSelectionEntity(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSelectionAgent.GetSelectionForFind
@@ -555,6 +964,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSSelectionAgent.GetSelectionForFind
   type: Method
   summary: "\nObtain a selection for the given entity, for the current user, of type WorkingSetForFind. Optionally populate criteria from the TypicalSearches system\n"
+  remarks: 
+  syntax: 
+    content: NSSelectionForFind GetSelectionForFind(String entityName, Integer typicalSearchId)
+    parameters:
+    - id: entityName
+      type: CRMScript.Global.String
+      description: 
+    - id: typicalSearchId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSSelectionForFind
   example: 
   - "\n<pre><code>NSSelectionAgent agent;\nString entityName;\nInteger typicalSearchId;\nNSSelectionForFind res = agent.GetSelectionForFind(entityName, typicalSearchId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSelectionAgent.GetSelectionMembersArchiveRows
@@ -568,6 +989,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSSelectionAgent.GetSelectionMembersArchiveRows
   type: Method
   summary: "\nGet the list of members in this selection. The type of members depends on the target table of the selection.\n"
+  remarks: 
+  syntax: 
+    content: NSArchiveListItem[] GetSelectionMembersArchiveRows(Integer selectionId, String select)
+    parameters:
+    - id: selectionId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: select
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSArchiveListItem[]
   example: 
   - "\n<pre><code>NSSelectionAgent agent;\nInteger selectionId;\nString select;\nNSArchiveListItem[] res = agent.GetSelectionMembersArchiveRows(selectionId, select);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSelectionAgent.GetSelectionShadowMembersArchiveRows
@@ -581,6 +1014,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSSelectionAgent.GetSelectionShadowMembersArchiveRows
   type: Method
   summary: "\nGet the list of members in this selection's shadow (i.e. the list of contacts + persons referenced in the main selection).\n"
+  remarks: 
+  syntax: 
+    content: NSArchiveListItem[] GetSelectionShadowMembersArchiveRows(Integer selectionId, String select)
+    parameters:
+    - id: selectionId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: select
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSArchiveListItem[]
   example: 
   - "\n<pre><code>NSSelectionAgent agent;\nInteger selectionId;\nString select;\nNSArchiveListItem[] res = agent.GetSelectionShadowMembersArchiveRows(selectionId, select);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSelectionAgent.#ctor
@@ -592,8 +1037,11 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   name: '#ctor'
   nameWithType: NSSelectionAgent.#ctor
   fullName: CRMScript.NetServer.NSSelectionAgent.#ctor
-  type: Method
+  type: Constructor
   summary: "\nSelections, entities, members and tasks<p></p>\n<pre><code>NSSelectionAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSSelectionAgent
   example: 
   - "\n<pre><code>NSSelectionAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSelectionAgent.RemoveContactSelectionMembers
@@ -607,6 +1055,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSSelectionAgent.RemoveContactSelectionMembers
   type: Method
   summary: "\nRemoves members from the selection as  specified in the collection of ContactPersonId.\n"
+  remarks: 
+  syntax: 
+    content: Void RemoveContactSelectionMembers(Integer selectionId, NSContactPersonId[] contactPersonIds)
+    parameters:
+    - id: selectionId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: contactPersonIds
+      type: CRMScript.NetServer.NSContactPersonId[]
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSSelectionAgent.RemoveContactSelectionMembersFromIds
   commentId: M:CRMScript.NetServer.NSSelectionAgent.RemoveContactSelectionMembersFromIds
@@ -619,6 +1079,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSSelectionAgent.RemoveContactSelectionMembersFromIds
   type: Method
   summary: "\nRemoves members from the selection using a collection a selectionmember id's. Members can only be removed from single selection.\n"
+  remarks: 
+  syntax: 
+    content: Void RemoveContactSelectionMembersFromIds(Integer selectionId, Integer[] selectionMembersIds)
+    parameters:
+    - id: selectionId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: selectionMembersIds
+      type: CRMScript.Global.Integer[]
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSSelectionAgent.RemoveContactSelectionMembersFromSearch
   commentId: M:CRMScript.NetServer.NSSelectionAgent.RemoveContactSelectionMembersFromSearch
@@ -631,6 +1103,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSSelectionAgent.RemoveContactSelectionMembersFromSearch
   type: Method
   summary: "\nRemoves members from the selection using the search result.\n"
+  remarks: 
+  syntax: 
+    content: Integer RemoveContactSelectionMembersFromSearch(Integer selectionId, String storageKey)
+    parameters:
+    - id: selectionId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: storageKey
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.Integer
   example: 
   - "\n<pre><code>NSSelectionAgent agent;\nInteger selectionId;\nString storageKey;\nInteger res = agent.RemoveContactSelectionMembersFromSearch(selectionId, storageKey);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSelectionAgent.RemoveSelectionMembers
@@ -644,6 +1128,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSSelectionAgent.RemoveSelectionMembers
   type: Method
   summary: "\nRemoves members from the selection as  specified in the collection of entity ids. The ids are selection member ids (selection member primary key)\n"
+  remarks: 
+  syntax: 
+    content: Void RemoveSelectionMembers(Integer selectionId, Integer[] selectionMemberIds)
+    parameters:
+    - id: selectionId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: selectionMemberIds
+      type: CRMScript.Global.Integer[]
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSSelectionAgent.RemoveSelectionMembersById
   commentId: M:CRMScript.NetServer.NSSelectionAgent.RemoveSelectionMembersById
@@ -656,6 +1152,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSSelectionAgent.RemoveSelectionMembersById
   type: Method
   summary: "\nRemoves members from the selection as specified in the collection of entity ids. The ids can be a collection of sale ids, or other supported types.\n"
+  remarks: 
+  syntax: 
+    content: Void RemoveSelectionMembersById(Integer selectionId, Integer[] ids)
+    parameters:
+    - id: selectionId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: ids
+      type: CRMScript.Global.Integer[]
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSSelectionAgent.RemoveSelectionMembersFromSearch
   commentId: M:CRMScript.NetServer.NSSelectionAgent.RemoveSelectionMembersFromSearch
@@ -668,6 +1176,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSSelectionAgent.RemoveSelectionMembersFromSearch
   type: Method
   summary: "\nRemoves members from the selection using the search result.\n"
+  remarks: 
+  syntax: 
+    content: Integer RemoveSelectionMembersFromSearch(Integer selectionId, String storageKey)
+    parameters:
+    - id: selectionId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: storageKey
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.Integer
   example: 
   - "\n<pre><code>NSSelectionAgent agent;\nInteger selectionId;\nString storageKey;\nInteger res = agent.RemoveSelectionMembersFromSearch(selectionId, storageKey);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSelectionAgent.SaveSelectionEntity
@@ -681,8 +1201,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSSelectionAgent.SaveSelectionEntity
   type: Method
   summary: "\nCRMScript method in the NSSelectionAgent class that creates or updates an NSSelectionEntityUpdates the existing NSSelectionEntity or creates a new NSSelectionEntity if the ID parameter is 0.<p></p>\nReturns the new or updated NSSelectionEntity<p></p>\n<code>NSSelectionEntity SaveSelectionEntity(NSSelectionEntity selectionEntity)</code>\n"
+  remarks: 
+  syntax: 
+    content: SaveSelectionEntity()
+    parameters:
+    - id: selectionEntity
+      type: CRMScript.NetServer.NSSelectionEntity
+      description: The entity to save.
   example: 
-  - "\n<pre><code>NSSelection  agent;\nNSSelectionEntity thing = agent.CreateDefaultSelectionEntity();\nthing = agent.SaveSelectionEntity(thing);</code></pre>\n"
+  - "\n<pre><code>NSSelection agent;\nNSSelectionEntity thing = agent.CreateDefaultSelectionEntity();\nthing = agent.SaveSelectionEntity(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSelectionAgent.SetDuplicateRulesStatus
   commentId: M:CRMScript.NetServer.NSSelectionAgent.SetDuplicateRulesStatus
   id: 'SetDuplicateRulesStatus'
@@ -694,6 +1221,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSSelectionAgent.SetDuplicateRulesStatus
   type: Method
   summary: "\nSet which duplicate rules should be active or not\n"
+  remarks: 
+  syntax: 
+    content: Void SetDuplicateRulesStatus(NSDuplicateRule[] rules)
+    parameters:
+    - id: rules
+      type: CRMScript.NetServer.NSDuplicateRule[]
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSSelectionAgent.SetDynamicSelectionCriteria
   commentId: M:CRMScript.NetServer.NSSelectionAgent.SetDynamicSelectionCriteria
@@ -706,6 +1242,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSSelectionAgent.SetDynamicSelectionCriteria
   type: Method
   summary: "\nUpdate the criteria for this dynamic selection. Replaces existing criteria with the new values.\n"
+  remarks: 
+  syntax: 
+    content: NSArchiveRestrictionInfo[] SetDynamicSelectionCriteria(Integer selectionId, NSArchiveRestrictionInfo[] criteria)
+    parameters:
+    - id: selectionId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: criteria
+      type: CRMScript.NetServer.NSArchiveRestrictionInfo[]
+      description: 
+    return:
+      type: CRMScript.NetServer.NSArchiveRestrictionInfo[]
   example: 
   - "\n<pre><code>NSSelectionAgent agent;\nInteger selectionId;\nNSArchiveRestrictionInfo[] criteria;\nNSArchiveRestrictionInfo[] res = agent.SetDynamicSelectionCriteria(selectionId, criteria);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSelectionAgent.SetDynamicSelectionCriteria2
@@ -719,6 +1267,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSSelectionAgent.SetDynamicSelectionCriteria2
   type: Method
   summary: "\nUpdate the criteria for this dynamic selection using string. Criteria are parsed from the OData filter form: ''name startswith 'foo' and category in (1,2,3)''\n"
+  remarks: 
+  syntax: 
+    content: NSArchiveRestrictionInfo[] SetDynamicSelectionCriteria2(Integer selectionId, String filter)
+    parameters:
+    - id: selectionId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: filter
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSArchiveRestrictionInfo[]
   example: 
   - "\n<pre><code>NSSelectionAgent agent;\nInteger selectionId;\nString filter;\nNSArchiveRestrictionInfo[] res = agent.SetDynamicSelectionCriteria2(selectionId, filter);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSelectionAgent.SetDynamicSelectionCriteria3
@@ -732,6 +1292,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSSelectionAgent.SetDynamicSelectionCriteria3
   type: Method
   summary: "\nUpdate the criteria for this dynamic selection. Use criteria as either restriction objects or OData string format. Criteria are parsed from the OData filter form: ''name startswith 'foo' and category in (1,2,3)''\n"
+  remarks: 
+  syntax: 
+    content: NSArchiveRestrictionInfo[] SetDynamicSelectionCriteria3(Integer selectionId, NSArchiveRestrictionInfo[] criteria, String filter)
+    parameters:
+    - id: selectionId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: criteria
+      type: CRMScript.NetServer.NSArchiveRestrictionInfo[]
+      description: 
+    - id: filter
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSArchiveRestrictionInfo[]
   example: 
   - "\n<pre><code>NSSelectionAgent agent;\nInteger selectionId;\nNSArchiveRestrictionInfo[] criteria;\nString filter;\nNSArchiveRestrictionInfo[] res = agent.SetDynamicSelectionCriteria3(selectionId, criteria, filter);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSelectionAgent.SetDynamicSelectionCriteriaGroups
@@ -745,6 +1320,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSSelectionAgent.SetDynamicSelectionCriteriaGroups
   type: Method
   summary: "\nUpdate the criteria for this dynamic selection. Replaces existing criteria with the new values. This call supports multiple criteria groups.\n"
+  remarks: 
+  syntax: 
+    content: NSArchiveRestrictionGroup[] SetDynamicSelectionCriteriaGroups(Integer selectionId, NSArchiveRestrictionGroup[] criteria)
+    parameters:
+    - id: selectionId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: criteria
+      type: CRMScript.NetServer.NSArchiveRestrictionGroup[]
+      description: 
+    return:
+      type: CRMScript.NetServer.NSArchiveRestrictionGroup[]
   example: 
   - "\n<pre><code>NSSelectionAgent agent;\nInteger selectionId;\nNSArchiveRestrictionGroup[] criteria;\nNSArchiveRestrictionGroup[] res = agent.SetDynamicSelectionCriteriaGroups(selectionId, criteria);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSelectionAgent.StartMailMerge
@@ -758,6 +1345,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSSelectionAgent.StartMailMerge
   type: Method
   summary: "\nStart a mailmerge operation with specified settings.\n"
+  remarks: 
+  syntax: 
+    content: Void StartMailMerge(MailMergeSettings settings)
+    parameters:
+    - id: settings
+      type: CRMScript.Native.MailMergeSettings
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSSelectionAgent.UpdateTypicalSearch
   commentId: M:CRMScript.NetServer.NSSelectionAgent.UpdateTypicalSearch
@@ -770,6 +1366,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSSelectionAgent.UpdateTypicalSearch
   type: Method
   summary: "\nUpdate (import) TypicalSearch information in the database\n"
+  remarks: 
+  syntax: 
+    content: String UpdateTypicalSearch(TypicalSearches searches)
+    parameters:
+    - id: searches
+      type: CRMScript.Native.TypicalSearches
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSSelectionAgent agent;\nTypicalSearches searches;\nString res = agent.UpdateTypicalSearch(searches);</code></pre>\n"
 references:
@@ -779,3 +1384,247 @@ references:
   name: NSSelectionAgent
   nameWithType: NSSelectionAgent
   fullName: CRMScript.NetServer.NSSelectionAgent
+- uid: CRMScript.Global.Integer
+  commentId: T:CRMScript.Global.Integer
+  isExternal: true
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Global.Integer
+- uid: CRMScript.NetServer.NSContactPersonId[]
+  isExternal: true
+  name: NSContactPersonId[]
+  nameWithType: NSContactPersonId[]
+  fullName: CRMScript.NetServer.NSContactPersonId[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSContactPersonId
+    isExternal: true
+    name: NSContactPersonId
+    nameWithType: NSContactPersonId
+    fullName: CRMScript.NetServer.NSContactPersonId
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSContactPersonId
+  commentId: T:CRMScript.NetServer.NSContactPersonId
+  isExternal: true
+  name: NSContactPersonId
+  nameWithType: NSContactPersonId
+  fullName: CRMScript.NetServer.NSContactPersonId
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void
+- uid: CRMScript.Global.String
+  commentId: T:CRMScript.Global.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: CRMScript.Global.String
+- uid: CRMScript.Global.Integer[]
+  isExternal: true
+  name: Integer[]
+  nameWithType: Integer[]
+  fullName: CRMScript.Global.Integer[]
+  spec.crmscript:
+  - uid: CRMScript.Global.Integer
+    isExternal: true
+    name: Integer
+    nameWithType: Integer
+    fullName: CRMScript.Global.Integer
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.Global.Integer
+  commentId: T:CRMScript.Global.Integer
+  isExternal: true
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Global.Integer
+- uid: CRMScript.Global.Bool
+  commentId: T:CRMScript.Global.Bool
+  isExternal: true
+  name: Bool
+  nameWithType: Bool
+  fullName: CRMScript.Global.Bool
+- uid: CRMScript.NetServer.NSSelectionEntity
+  commentId: T:CRMScript.NetServer.NSSelectionEntity
+  isExternal: true
+  name: NSSelectionEntity
+  nameWithType: NSSelectionEntity
+  fullName: CRMScript.NetServer.NSSelectionEntity
+- uid: CRMScript.NetServer.NSMailMergeSettings
+  commentId: T:CRMScript.NetServer.NSMailMergeSettings
+  isExternal: true
+  name: NSMailMergeSettings
+  nameWithType: NSMailMergeSettings
+  fullName: CRMScript.NetServer.NSMailMergeSettings
+- uid: CRMScript.NetServer.NSMailMergeTask
+  commentId: T:CRMScript.NetServer.NSMailMergeTask
+  isExternal: true
+  name: NSMailMergeTask
+  nameWithType: NSMailMergeTask
+  fullName: CRMScript.NetServer.NSMailMergeTask
+- uid: CRMScript.NetServer.NSDuplicateEntry
+  commentId: T:CRMScript.NetServer.NSDuplicateEntry
+  isExternal: true
+  name: NSDuplicateEntry
+  nameWithType: NSDuplicateEntry
+  fullName: CRMScript.NetServer.NSDuplicateEntry
+- uid: CRMScript.NetServer.NSSelectionMemberEditValues
+  commentId: T:CRMScript.NetServer.NSSelectionMemberEditValues
+  isExternal: true
+  name: NSSelectionMemberEditValues
+  nameWithType: NSSelectionMemberEditValues
+  fullName: CRMScript.NetServer.NSSelectionMemberEditValues
+- uid: CRMScript.Global.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: CRMScript.Global.Byte[]
+  spec.crmscript:
+  - uid: CRMScript.Global.Byte
+    isExternal: true
+    name: Byte
+    nameWithType: Byte
+    fullName: CRMScript.Global.Byte
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.Global.Byte
+  commentId: T:CRMScript.Global.Byte
+  isExternal: true
+  name: Byte
+  nameWithType: Byte
+  fullName: CRMScript.Global.Byte
+- uid: CRMScript.NetServer.NSAppointmentEntity
+  commentId: T:CRMScript.NetServer.NSAppointmentEntity
+  isExternal: true
+  name: NSAppointmentEntity
+  nameWithType: NSAppointmentEntity
+  fullName: CRMScript.NetServer.NSAppointmentEntity
+- uid: CRMScript.NetServer.NSDuplicateRule[]
+  isExternal: true
+  name: NSDuplicateRule[]
+  nameWithType: NSDuplicateRule[]
+  fullName: CRMScript.NetServer.NSDuplicateRule[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSDuplicateRule
+    isExternal: true
+    name: NSDuplicateRule
+    nameWithType: NSDuplicateRule
+    fullName: CRMScript.NetServer.NSDuplicateRule
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSDuplicateRule
+  commentId: T:CRMScript.NetServer.NSDuplicateRule
+  isExternal: true
+  name: NSDuplicateRule
+  nameWithType: NSDuplicateRule
+  fullName: CRMScript.NetServer.NSDuplicateRule
+- uid: CRMScript.NetServer.NSDuplicateEntry[]
+  isExternal: true
+  name: NSDuplicateEntry[]
+  nameWithType: NSDuplicateEntry[]
+  fullName: CRMScript.NetServer.NSDuplicateEntry[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSDuplicateEntry
+    isExternal: true
+    name: NSDuplicateEntry
+    nameWithType: NSDuplicateEntry
+    fullName: CRMScript.NetServer.NSDuplicateEntry
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSDuplicateEntry
+  commentId: T:CRMScript.NetServer.NSDuplicateEntry
+  isExternal: true
+  name: NSDuplicateEntry
+  nameWithType: NSDuplicateEntry
+  fullName: CRMScript.NetServer.NSDuplicateEntry
+- uid: CRMScript.NetServer.NSArchiveRestrictionInfo[]
+  isExternal: true
+  name: NSArchiveRestrictionInfo[]
+  nameWithType: NSArchiveRestrictionInfo[]
+  fullName: CRMScript.NetServer.NSArchiveRestrictionInfo[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSArchiveRestrictionInfo
+    isExternal: true
+    name: NSArchiveRestrictionInfo
+    nameWithType: NSArchiveRestrictionInfo
+    fullName: CRMScript.NetServer.NSArchiveRestrictionInfo
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSArchiveRestrictionInfo
+  commentId: T:CRMScript.NetServer.NSArchiveRestrictionInfo
+  isExternal: true
+  name: NSArchiveRestrictionInfo
+  nameWithType: NSArchiveRestrictionInfo
+  fullName: CRMScript.NetServer.NSArchiveRestrictionInfo
+- uid: CRMScript.NetServer.NSArchiveRestrictionGroup[]
+  isExternal: true
+  name: NSArchiveRestrictionGroup[]
+  nameWithType: NSArchiveRestrictionGroup[]
+  fullName: CRMScript.NetServer.NSArchiveRestrictionGroup[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSArchiveRestrictionGroup
+    isExternal: true
+    name: NSArchiveRestrictionGroup
+    nameWithType: NSArchiveRestrictionGroup
+    fullName: CRMScript.NetServer.NSArchiveRestrictionGroup
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSArchiveRestrictionGroup
+  commentId: T:CRMScript.NetServer.NSArchiveRestrictionGroup
+  isExternal: true
+  name: NSArchiveRestrictionGroup
+  nameWithType: NSArchiveRestrictionGroup
+  fullName: CRMScript.NetServer.NSArchiveRestrictionGroup
+- uid: CRMScript.NetServer.NSRecipientStatistics
+  commentId: T:CRMScript.NetServer.NSRecipientStatistics
+  isExternal: true
+  name: NSRecipientStatistics
+  nameWithType: NSRecipientStatistics
+  fullName: CRMScript.NetServer.NSRecipientStatistics
+- uid: CRMScript.NetServer.NSSelectionForFind
+  commentId: T:CRMScript.NetServer.NSSelectionForFind
+  isExternal: true
+  name: NSSelectionForFind
+  nameWithType: NSSelectionForFind
+  fullName: CRMScript.NetServer.NSSelectionForFind
+- uid: CRMScript.NetServer.NSArchiveListItem[]
+  isExternal: true
+  name: NSArchiveListItem[]
+  nameWithType: NSArchiveListItem[]
+  fullName: CRMScript.NetServer.NSArchiveListItem[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSArchiveListItem
+    isExternal: true
+    name: NSArchiveListItem
+    nameWithType: NSArchiveListItem
+    fullName: CRMScript.NetServer.NSArchiveListItem
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSArchiveListItem
+  commentId: T:CRMScript.NetServer.NSArchiveListItem
+  isExternal: true
+  name: NSArchiveListItem
+  nameWithType: NSArchiveListItem
+  fullName: CRMScript.NetServer.NSArchiveListItem
+- uid: CRMScript.Native.MailMergeSettings
+  commentId: T:CRMScript.Native.MailMergeSettings
+  isExternal: true
+  name: MailMergeSettings
+  nameWithType: MailMergeSettings
+  fullName: CRMScript.Native.MailMergeSettings
+- uid: CRMScript.Native.TypicalSearches
+  commentId: T:CRMScript.Native.TypicalSearches
+  isExternal: true
+  name: TypicalSearches
+  nameWithType: TypicalSearches
+  fullName: CRMScript.Native.TypicalSearches

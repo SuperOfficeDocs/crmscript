@@ -35,6 +35,12 @@ items:
   fullName: CRMScript.NetServer.NSArchiveListItem.GetColumnData
   type: Method
   summary: "\nDictionary of column name* column data items. Each column data item contains a display value, a tooltip hint, a link hint, and an orderby value.<para/>The display value is encoded by the CultureDataFormatter and can be decoded / localized by that class; all other values are optional.<para/>Tooltip hints can be passed to the TooltipProvider (Tooltip service) to be translated into an actual tootip.<p></p>\n<strong>Returns:</strong>NSColumnDataDictionary<p></p>\n<pre><code>NSArchiveListItem thing;\nNSColumnDataDictionary columnData  = thing.GetColumnData();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSColumnDataDictionary GetColumnData()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSColumnDataDictionary
   example: 
   - "\n<pre><code>NSArchiveListItem thing;\nNSColumnDataDictionary columnData  = thing.GetColumnData();</code></pre>\n"
 - uid: CRMScript.NetServer.NSArchiveListItem.GetEntityName
@@ -48,6 +54,12 @@ items:
   fullName: CRMScript.NetServer.NSArchiveListItem.GetEntityName
   type: Method
   summary: "\nThe entity name of the NSArchiveListItem. An ArchiveList may contain rows from different entities.<p></p>\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSArchiveListItem thing;\nString entityName  = thing.GetEntityName();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: String GetEntityName()
+    parameters:
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSArchiveListItem thing;\nString entityName  = thing.GetEntityName();</code></pre>\n"
 - uid: CRMScript.NetServer.NSArchiveListItem.GetLinkHint
@@ -61,6 +73,12 @@ items:
   fullName: CRMScript.NetServer.NSArchiveListItem.GetLinkHint
   type: Method
   summary: "\nLink hint for the row, indicating things like navigation links that can be presented as clickable hyperlinks<p></p>\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSArchiveListItem thing;\nString linkHint  = thing.GetLinkHint();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: String GetLinkHint()
+    parameters:
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSArchiveListItem thing;\nString linkHint  = thing.GetLinkHint();</code></pre>\n"
 - uid: CRMScript.NetServer.NSArchiveListItem.GetPrimaryKey
@@ -74,6 +92,12 @@ items:
   fullName: CRMScript.NetServer.NSArchiveListItem.GetPrimaryKey
   type: Method
   summary: "\nThe  primary key for the row<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<pre><code>NSArchiveListItem thing;\nInteger primaryKey  = thing.GetPrimaryKey();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: Integer GetPrimaryKey()
+    parameters:
+    return:
+      type: CRMScript.Global.Integer
   example: 
   - "\n<pre><code>NSArchiveListItem thing;\nInteger primaryKey  = thing.GetPrimaryKey();</code></pre>\n"
 - uid: CRMScript.NetServer.NSArchiveListItem.GetStyleHint
@@ -87,6 +111,12 @@ items:
   fullName: CRMScript.NetServer.NSArchiveListItem.GetStyleHint
   type: Method
   summary: "\nStyle hint for the row, for instance 'retired' for associates or 'private' for appointments. Presentation layers can interpret the style hints as they see fit.<p></p>\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSArchiveListItem thing;\nString styleHint  = thing.GetStyleHint();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: String GetStyleHint()
+    parameters:
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSArchiveListItem thing;\nString styleHint  = thing.GetStyleHint();</code></pre>\n"
 - uid: CRMScript.NetServer.NSArchiveListItem.#ctor
@@ -98,8 +128,11 @@ items:
   name: '#ctor'
   nameWithType: NSArchiveListItem.#ctor
   fullName: CRMScript.NetServer.NSArchiveListItem.#ctor
-  type: Method
+  type: Constructor
   summary: 
+  remarks: 
+  syntax: 
+    content: NSArchiveListItem
   example: 
 - uid: CRMScript.NetServer.NSArchiveListItem.SetColumnData
   commentId: M:CRMScript.NetServer.NSArchiveListItem.SetColumnData
@@ -112,6 +145,13 @@ items:
   fullName: CRMScript.NetServer.NSArchiveListItem.SetColumnData
   type: Method
   summary: "\nCRMScript method in the NSArchiveListItem class that sets columnDataDictionary of column name* column data items. Each column data item contains a display value, a tooltip hint, a link hint, and an ORDERBY value.<p></p>\nThe display value is encoded by the<strong>CultureDataFormatter</strong>and can be decoded or localized by that class. All other values are optional.<p></p>\nTooltip hints can be passed to the<strong>TooltipProvider</strong>(Tooltip service) to be translated into an actual too tip.<p></p>\n<code>SetColumnData(NSColumnDataDictionary columnData)</code>\n"
+  remarks: 
+  syntax: 
+    content: SetColumnData()
+    parameters:
+    - id: columnData
+      type: CRMScript.NetServer.NSColumnDataDictionary
+      description: 
   example: 
   - "\n<pre><code>NSArchiveListItem thing;\nNSColumnDataDictionary columnData;\nthing.SetColumnData(columnData);</code></pre>\n"
 - uid: CRMScript.NetServer.NSArchiveListItem.SetEntityName
@@ -124,7 +164,14 @@ items:
   nameWithType: NSArchiveListItem.SetEntityName
   fullName: CRMScript.NetServer.NSArchiveListItem.SetEntityName
   type: Method
-  summary: "\nThe entity name of the NSArchiveListItem. An ArchiveList may contain rows from different entities.<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>entityName</strong>String</li></ul><pre><code>NSArchiveListItem thing;\nString entityName;\nthing.SetEntityName(entityName);</code></pre>\n"
+  summary: "\nThe entity name of the NSArchiveListItem. An ArchiveList may contain rows from different entities.\n"
+  remarks: 
+  syntax: 
+    content: SetEntityName(String entityName)
+    parameters:
+    - id: entityName
+      type: CRMScript.Global.String
+      description: 
   example: 
   - "\n<pre><code>NSArchiveListItem thing;\nString entityName;\nthing.SetEntityName(entityName);</code></pre>\n"
 - uid: CRMScript.NetServer.NSArchiveListItem.SetLinkHint
@@ -137,7 +184,14 @@ items:
   nameWithType: NSArchiveListItem.SetLinkHint
   fullName: CRMScript.NetServer.NSArchiveListItem.SetLinkHint
   type: Method
-  summary: "\nLink hint for the row, indicating things like navigation links that can be presented as clickable hyperlinks<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>linkHint</strong>String</li></ul><pre><code>NSArchiveListItem thing;\nString linkHint;\nthing.SetLinkHint(linkHint);</code></pre>\n"
+  summary: "\nLink hint for the row, indicating things like navigation links that can be presented as clickable hyperlinks\n"
+  remarks: 
+  syntax: 
+    content: SetLinkHint(String linkHint)
+    parameters:
+    - id: linkHint
+      type: CRMScript.Global.String
+      description: 
   example: 
   - "\n<pre><code>NSArchiveListItem thing;\nString linkHint;\nthing.SetLinkHint(linkHint);</code></pre>\n"
 - uid: CRMScript.NetServer.NSArchiveListItem.SetPrimaryKey
@@ -150,7 +204,14 @@ items:
   nameWithType: NSArchiveListItem.SetPrimaryKey
   fullName: CRMScript.NetServer.NSArchiveListItem.SetPrimaryKey
   type: Method
-  summary: "\nThe  primary key for the row<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>primaryKey</strong>Integer</li></ul><pre><code>NSArchiveListItem thing;\nInteger primaryKey;\nthing.SetPrimaryKey(primaryKey);</code></pre>\n"
+  summary: "\nThe  primary key for the row\n"
+  remarks: 
+  syntax: 
+    content: SetPrimaryKey(Integer primaryKey)
+    parameters:
+    - id: primaryKey
+      type: CRMScript.Global.Integer
+      description: 
   example: 
   - "\n<pre><code>NSArchiveListItem thing;\nInteger primaryKey;\nthing.SetPrimaryKey(primaryKey);</code></pre>\n"
 - uid: CRMScript.NetServer.NSArchiveListItem.SetStyleHint
@@ -163,7 +224,14 @@ items:
   nameWithType: NSArchiveListItem.SetStyleHint
   fullName: CRMScript.NetServer.NSArchiveListItem.SetStyleHint
   type: Method
-  summary: "\nStyle hint for the row, for instance 'retired' for associates or 'private' for appointments. Presentation layers can interpret the style hints as they see fit.<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>styleHint</strong>String</li></ul><pre><code>NSArchiveListItem thing;\nString styleHint;\nthing.SetStyleHint(styleHint);</code></pre>\n"
+  summary: "\nStyle hint for the row, for instance 'retired' for associates or 'private' for appointments. Presentation layers can interpret the style hints as they see fit.\n"
+  remarks: 
+  syntax: 
+    content: SetStyleHint(String styleHint)
+    parameters:
+    - id: styleHint
+      type: CRMScript.Global.String
+      description: 
   example: 
   - "\n<pre><code>NSArchiveListItem thing;\nString styleHint;\nthing.SetStyleHint(styleHint);</code></pre>\n"
 references:
@@ -173,3 +241,21 @@ references:
   name: NSArchiveListItem
   nameWithType: NSArchiveListItem
   fullName: CRMScript.NetServer.NSArchiveListItem
+- uid: CRMScript.NetServer.NSColumnDataDictionary
+  commentId: T:CRMScript.NetServer.NSColumnDataDictionary
+  isExternal: true
+  name: NSColumnDataDictionary
+  nameWithType: NSColumnDataDictionary
+  fullName: CRMScript.NetServer.NSColumnDataDictionary
+- uid: CRMScript.Global.String
+  commentId: T:CRMScript.Global.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: CRMScript.Global.String
+- uid: CRMScript.Global.Integer
+  commentId: T:CRMScript.Global.Integer
+  isExternal: true
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Global.Integer

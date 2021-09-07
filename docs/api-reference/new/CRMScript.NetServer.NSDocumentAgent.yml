@@ -109,6 +109,24 @@ items:
   fullName: CRMScript.NetServer.NSDocumentAgent.CheckinDocument
   type: Method
   summary: "\nCheck in a currently checked-out document\n"
+  remarks: 
+  syntax: 
+    content: NSReturnInfo CheckinDocument(Integer documentId, String[] allowedReturnTypes, String versionDescription, String[] versionExtraFields)
+    parameters:
+    - id: documentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: allowedReturnTypes
+      type: CRMScript.Global.String[]
+      description: 
+    - id: versionDescription
+      type: CRMScript.Global.String
+      description: 
+    - id: versionExtraFields
+      type: CRMScript.Global.String[]
+      description: 
+    return:
+      type: CRMScript.NetServer.NSReturnInfo
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger documentId;\nString[] allowedReturnTypes;\nString versionDescription;\nString[] versionExtraFields;\nNSReturnInfo res = agent.CheckinDocument(documentId, allowedReturnTypes, versionDescription, versionExtraFields);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.CheckoutDocument
@@ -122,6 +140,18 @@ items:
   fullName: CRMScript.NetServer.NSDocumentAgent.CheckoutDocument
   type: Method
   summary: "\nCheck out a document for editing by the current user.\n"
+  remarks: 
+  syntax: 
+    content: NSReturnInfo CheckoutDocument(Integer documentId, String[] allowedReturnTypes)
+    parameters:
+    - id: documentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: allowedReturnTypes
+      type: CRMScript.Global.String[]
+      description: 
+    return:
+      type: CRMScript.NetServer.NSReturnInfo
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger documentId;\nString[] allowedReturnTypes;\nNSReturnInfo res = agent.CheckoutDocument(documentId, allowedReturnTypes);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.CreateDefaultDocumentEntity
@@ -136,6 +166,12 @@ items:
   type: Method
   summary: "\nSet default values into a new NSDocumentEntity.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSDocumentEntity<p></p>\n<pre><code>NSDocumentAgent agent;\nNSDocumentEntity thing = agent.CreateDefaultDocumentEntity();\nthing = agent.SaveDocumentEntity(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSDocumentEntity CreateDefaultDocumentEntity()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSDocumentEntity
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nNSDocumentEntity thing = agent.CreateDefaultDocumentEntity();\nthing = agent.SaveDocumentEntity(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.CreateDefaultDocumentEntityFromSuggestion
@@ -148,7 +184,16 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSDocumentAgent.CreateDefaultDocumentEntityFromSuggestion
   fullName: CRMScript.NetServer.NSDocumentAgent.CreateDefaultDocumentEntityFromSuggestion
   type: Method
-  summary: 
+  summary: "\n<strong>Returns:</strong>NSDocumentEntity\n"
+  remarks: 
+  syntax: 
+    content: NSDocumentEntity CreateDefaultDocumentEntityFromSuggestion(Integer suggestedDocumentId)
+    parameters:
+    - id: suggestedDocumentId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDocumentEntity
   example: 
 - uid: CRMScript.NetServer.NSDocumentAgent.CreateDefaultDocumentPreview
   commentId: M:CRMScript.NetServer.NSDocumentAgent.CreateDefaultDocumentPreview
@@ -162,6 +207,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   type: Method
   summary: "\nSet default values into a new NSDocumentPreview.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSDocumentPreview<p></p>\n<pre><code>NSDocumentAgent agent;\nNSDocumentPreview thing = agent.CreateDefaultDocumentPreview();\nthing = agent.SaveDocumentPreview(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSDocumentPreview CreateDefaultDocumentPreview()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSDocumentPreview
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nNSDocumentPreview thing = agent.CreateDefaultDocumentPreview();\nthing = agent.SaveDocumentPreview(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.CreateDefaultSuggestedDocumentEntity
@@ -176,6 +227,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   type: Method
   summary: "\nSet default values into a new NSSuggestedDocumentEntity.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSSuggestedDocumentEntity<p></p>\n<pre><code>NSDocumentAgent agent;\nNSSuggestedDocumentEntity thing = agent.CreateDefaultSuggestedDocumentEntity();\nthing = agent.SaveSuggestedDocumentEntity(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSSuggestedDocumentEntity CreateDefaultSuggestedDocumentEntity()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSSuggestedDocumentEntity
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nNSSuggestedDocumentEntity thing = agent.CreateDefaultSuggestedDocumentEntity();\nthing = agent.SaveSuggestedDocumentEntity(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.CreateDefaultTemplateVariablesParameters
@@ -190,6 +247,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   type: Method
   summary: "\nSet default values into a new NSTemplateVariablesParameters.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSTemplateVariablesParameters<p></p>\n<pre><code>NSDocumentAgent agent;\nNSTemplateVariablesParameters thing = agent.CreateDefaultTemplateVariablesParameters();\nthing = agent.SaveTemplateVariablesParameters(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSTemplateVariablesParameters CreateDefaultTemplateVariablesParameters()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSTemplateVariablesParameters
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nNSTemplateVariablesParameters thing = agent.CreateDefaultTemplateVariablesParameters();\nthing = agent.SaveTemplateVariablesParameters(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.CreateDocumentStream
@@ -203,6 +266,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.CreateDocumentStream
   type: Method
   summary: "\nCreates a new NSStream that can be used to store the document in the file archive.\n"
+  remarks: 
+  syntax: 
+    content: NSStream CreateDocumentStream(NSDocumentEntity documentEntity, Bool overwriteExistingData)
+    parameters:
+    - id: documentEntity
+      type: CRMScript.NetServer.NSDocumentEntity
+      description: 
+    - id: overwriteExistingData
+      type: CRMScript.Global.Bool
+      description: 
+    return:
+      type: CRMScript.NetServer.NSStream
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nNSDocumentEntity documentEntity;\nBool overwriteExistingData;\nNSStream res = agent.CreateDocumentStream(documentEntity, overwriteExistingData);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.CreateNewPhysicalDocumentFromTemplate
@@ -216,6 +291,36 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.CreateNewPhysicalDocumentFromTemplate
   type: Method
   summary: "\nCreate a new document content based on a document template and store it in the document archive.  Tags are substituted according to the provided id's.  Use GetDocumentStream to obtain the created document. Since there is a potential for a name conflict (the file name stored by the document entity earlier may prove to be invalid), the (possibly amended) document entity is returned. The client should not assume that any earlier, cached entity information is valid.\n"
+  remarks: 
+  syntax: 
+    content: NSDocumentEntity CreateNewPhysicalDocumentFromTemplate(Integer contactId, Integer personId, Integer appointmentId, Integer documentId, Integer saleId, Integer selectionId, Integer projectId, String uiCulture)
+    parameters:
+    - id: contactId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: appointmentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: documentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: saleId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: selectionId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: projectId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: uiCulture
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDocumentEntity
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger contactId;\nInteger personId;\nInteger appointmentId;\nInteger documentId;\nInteger saleId;\nInteger selectionId;\nInteger projectId;\nString uiCulture;\nNSDocumentEntity res = agent.CreateNewPhysicalDocumentFromTemplate(contactId, personId, appointmentId, documentId, saleId, selectionId, projectId, uiCulture);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.CreateNewPhysicalDocumentFromTemplateWithCustomTags
@@ -229,6 +334,42 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.CreateNewPhysicalDocumentFromTemplateWithCustomTags
   type: Method
   summary: "\nCreate a new physical document based on a document template and store it in the document archive.  Tags are substituted according to the provided id's.  Use GetDocumentStream to obtain the created document content. Since there is a potential for a name conflict (the file name stored by the document entity earlier may prove to be invalid), the (possibly amended) document entity is returned. The client should not assume that any earlier, cached entity information is valid.\n"
+  remarks: 
+  syntax: 
+    content: NSDocumentEntity CreateNewPhysicalDocumentFromTemplateWithCustomTags(Integer contactId, Integer personId, Integer appointmentId, Integer documentId, Integer saleId, Integer selectionId, Integer projectId, String[] customTags, String[] customValues, String uiCulture)
+    parameters:
+    - id: contactId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: appointmentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: documentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: saleId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: selectionId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: projectId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: customTags
+      type: CRMScript.Global.String[]
+      description: 
+    - id: customValues
+      type: CRMScript.Global.String[]
+      description: 
+    - id: uiCulture
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDocumentEntity
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger contactId;\nInteger personId;\nInteger appointmentId;\nInteger documentId;\nInteger saleId;\nInteger selectionId;\nInteger projectId;\nString[] customTags;\nString[] customValues;\nString uiCulture;\nNSDocumentEntity res = agent.CreateNewPhysicalDocumentFromTemplateWithCustomTags(contactId, personId, appointmentId, documentId, saleId, selectionId, projectId, customTags, customValues, uiCulture);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.CreateNewPhysicalDocumentFromTemplateWithCustomTags2
@@ -242,6 +383,39 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.CreateNewPhysicalDocumentFromTemplateWithCustomTags2
   type: Method
   summary: "\nCreate a new physical document based on a document template and store it in the document archive.  Tags are substituted according to the provided id's.  Use GetDocumentStream to obtain the created document content. Since there is a potential for a name conflict (the file name stored by the document entity earlier may prove to be invalid), the (possibly amended) document entity is returned. The client should not assume that any earlier, cached entity information is valid.\n"
+  remarks: 
+  syntax: 
+    content: NSDocumentEntity CreateNewPhysicalDocumentFromTemplateWithCustomTags2(Integer contactId, Integer personId, Integer appointmentId, Integer documentId, Integer saleId, Integer selectionId, Integer projectId, StringDictionary customTags, String uiCulture)
+    parameters:
+    - id: contactId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: appointmentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: documentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: saleId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: selectionId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: projectId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: customTags
+      type: CRMScript.Global.StringDictionary
+      description: 
+    - id: uiCulture
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDocumentEntity
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger contactId;\nInteger personId;\nInteger appointmentId;\nInteger documentId;\nInteger saleId;\nInteger selectionId;\nInteger projectId;\nStringDictionary customTags;\nString uiCulture;\nNSDocumentEntity res = agent.CreateNewPhysicalDocumentFromTemplateWithCustomTags2(contactId, personId, appointmentId, documentId, saleId, selectionId, projectId, customTags, uiCulture);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.CreateNewPhysicalMailMergeDocumentFromTemplate
@@ -255,6 +429,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.CreateNewPhysicalMailMergeDocumentFromTemplate
   type: Method
   summary: "\nCreate a new physical document based on the documents template. Do not replace template tags, as the document is going to be used as a mail merge source. Use GetDocumentStream to obtain the created documents. Since there is a potential for a name conflict (the file name stored by the document entity earlier may prove to be invalid), the (possibly amended) document entity is returned. The client should not assume that any earlier, cached entity information is valid.\n"
+  remarks: 
+  syntax: 
+    content: NSDocumentEntity CreateNewPhysicalMailMergeDocumentFromTemplate(Integer documentId, String uiCulture)
+    parameters:
+    - id: documentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: uiCulture
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDocumentEntity
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger documentId;\nString uiCulture;\nNSDocumentEntity res = agent.CreateNewPhysicalMailMergeDocumentFromTemplate(documentId, uiCulture);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.CreateTempFile
@@ -268,6 +454,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.CreateTempFile
   type: Method
   summary: "\nCreate a new temporary file based on the provided stream.  Specified filename may be overridden, and actual name is returned.\n"
+  remarks: 
+  syntax: 
+    content: String CreateTempFile(String filename, NSStream dataStream)
+    parameters:
+    - id: filename
+      type: CRMScript.Global.String
+      description: 
+    - id: dataStream
+      type: CRMScript.NetServer.NSStream
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nString filename;\nNSStream dataStream;\nString res = agent.CreateTempFile(filename, dataStream);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.DeleteDocumentEntity
@@ -281,6 +479,16 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.DeleteDocumentEntity
   type: Method
   summary: "\nDeletes the NSDocumentEntity\n"
+  remarks: 
+  syntax: 
+    content: DeleteDocumentEntity(Integer documentEntity);
+    parameters:
+    - id: documentEntity;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: documentEntityId
+      type: 
+      description: 
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nagent.DeleteDocumentEntity(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.DeletePhysicalDocument
@@ -294,6 +502,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.DeletePhysicalDocument
   type: Method
   summary: "\nDelete the document contents\n"
+  remarks: 
+  syntax: 
+    content: NSReturnInfo DeletePhysicalDocument(Integer documentId, String[] allowedReturnType)
+    parameters:
+    - id: documentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: allowedReturnType
+      type: CRMScript.Global.String[]
+      description: 
+    return:
+      type: CRMScript.NetServer.NSReturnInfo
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger documentId;\nString[] allowedReturnType;\nNSReturnInfo res = agent.DeletePhysicalDocument(documentId, allowedReturnType);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.DeleteTempFile
@@ -307,6 +527,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.DeleteTempFile
   type: Method
   summary: "\nDelete a temporary file created with CreateTempFile.\n"
+  remarks: 
+  syntax: 
+    content: Void DeleteTempFile(String filename)
+    parameters:
+    - id: filename
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSDocumentAgent.ExecuteDocumentCommand
   commentId: M:CRMScript.NetServer.NSDocumentAgent.ExecuteDocumentCommand
@@ -319,6 +548,27 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.ExecuteDocumentCommand
   type: Method
   summary: "\nExecute a custom command on a particular document, optionally a particular version\n"
+  remarks: 
+  syntax: 
+    content: NSReturnInfo ExecuteDocumentCommand(Integer documentId, String versionId, String[] allowedReturnTypes, String command, String[] additionalData)
+    parameters:
+    - id: documentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: versionId
+      type: CRMScript.Global.String
+      description: 
+    - id: allowedReturnTypes
+      type: CRMScript.Global.String[]
+      description: 
+    - id: command
+      type: CRMScript.Global.String
+      description: 
+    - id: additionalData
+      type: CRMScript.Global.String[]
+      description: 
+    return:
+      type: CRMScript.NetServer.NSReturnInfo
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger documentId;\nString versionId;\nString[] allowedReturnTypes;\nString command;\nString[] additionalData;\nNSReturnInfo res = agent.ExecuteDocumentCommand(documentId, versionId, allowedReturnTypes, command, additionalData);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetAppointmentDocuments
@@ -332,6 +582,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetAppointmentDocuments
   type: Method
   summary: "\nGet all documents that are linked to the appointment. I.e. the documents that are listed in the appointment dialog.\n"
+  remarks: 
+  syntax: 
+    content: NSDocument[] GetAppointmentDocuments(Integer appointmentId)
+    parameters:
+    - id: appointmentId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDocument[]
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger appointmentId;\nNSDocument[] res = agent.GetAppointmentDocuments(appointmentId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetCheckoutState
@@ -345,6 +604,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetCheckoutState
   type: Method
   summary: "\nGet the current checkout state for a document, relative to the user perforing the call.\n"
+  remarks: 
+  syntax: 
+    content: NSCheckoutInfo GetCheckoutState(Integer documentId)
+    parameters:
+    - id: documentId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSCheckoutInfo
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger documentId;\nNSCheckoutInfo res = agent.GetCheckoutState(documentId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetContactDocuments
@@ -358,6 +626,24 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetContactDocuments
   type: Method
   summary: "\nMethod that returns a specified number of document appointments within a time range. The document appointments belong to the contact specified.\n"
+  remarks: 
+  syntax: 
+    content: NSDocument[] GetContactDocuments(Integer contactId, DateTime startTime, DateTime endTime, Integer count)
+    parameters:
+    - id: contactId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDocument[]
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger contactId;\nDateTime startTime;\nDateTime endTime;\nInteger count;\nNSDocument[] res = agent.GetContactDocuments(contactId, startTime, endTime, count);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetContactDocumentsByTemplateHeading
@@ -371,6 +657,27 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetContactDocumentsByTemplateHeading
   type: Method
   summary: "\nMethod that returns a specified number of document appointments within a time range, filtered by the document template heading. The document appointments belong to the contact specified. The heading represents a grouping or filtering of document templates.\n"
+  remarks: 
+  syntax: 
+    content: NSDocument[] GetContactDocumentsByTemplateHeading(Integer contactId, DateTime startTime, DateTime endTime, Integer count, Integer templateHeadingId)
+    parameters:
+    - id: contactId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    - id: templateHeadingId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDocument[]
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger contactId;\nDateTime startTime;\nDateTime endTime;\nInteger count;\nInteger templateHeadingId;\nNSDocument[] res = agent.GetContactDocumentsByTemplateHeading(contactId, startTime, endTime, count, templateHeadingId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetContactDocumentsByTemplateType
@@ -384,6 +691,27 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetContactDocumentsByTemplateType
   type: Method
   summary: "\nMethod that returns a specified number of document appointments within a time range, filtered by document template type. The document appointments belong to the contact specified.\n"
+  remarks: 
+  syntax: 
+    content: NSDocument[] GetContactDocumentsByTemplateType(Integer contactId, DateTime startTime, DateTime endTime, Integer count, Integer documentTemplateId)
+    parameters:
+    - id: contactId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    - id: documentTemplateId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDocument[]
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger contactId;\nDateTime startTime;\nDateTime endTime;\nInteger count;\nInteger documentTemplateId;\nNSDocument[] res = agent.GetContactDocumentsByTemplateType(contactId, startTime, endTime, count, documentTemplateId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetContactDocumentsByTemplateTypes
@@ -397,6 +725,27 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetContactDocumentsByTemplateTypes
   type: Method
   summary: "\nMethod that returns a specified number of document appointments within a time range, filtered by document template types. The document appointments belong to the contact specified.\n"
+  remarks: 
+  syntax: 
+    content: NSDocument[] GetContactDocumentsByTemplateTypes(Integer contactId, DateTime startTime, DateTime endTime, Integer count, Integer[] documentTemplateIds)
+    parameters:
+    - id: contactId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    - id: documentTemplateIds
+      type: CRMScript.Global.Integer[]
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDocument[]
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger contactId;\nDateTime startTime;\nDateTime endTime;\nInteger count;\nInteger[] documentTemplateIds;\nNSDocument[] res = agent.GetContactDocumentsByTemplateTypes(contactId, startTime, endTime, count, documentTemplateIds);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetDocument
@@ -409,7 +758,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSDocumentAgent.GetDocument
   fullName: CRMScript.NetServer.NSDocumentAgent.GetDocument
   type: Method
-  summary: "\nGets a NSDocument object.\n"
+  summary: "\nGets an NSDocument object.\n"
+  remarks: 
+  syntax: 
+    content: NSDocument GetDocument(Integer documentId);
+    parameters:
+    - id: documentId;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: documentId
+      type: 
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDocument
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nNSDocument thing = agent.GetDocument(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetDocumentCommands
@@ -423,6 +784,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetDocumentCommands
   type: Method
   summary: "\nGet a list of custom commands valid for the specific document at this time. This information should not be cached by clients, as it may change between documents and over time.\n"
+  remarks: 
+  syntax: 
+    content: NSCommandInfo[] GetDocumentCommands(Integer documentId, String[] allowedReturnTypes)
+    parameters:
+    - id: documentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: allowedReturnTypes
+      type: CRMScript.Global.String[]
+      description: 
+    return:
+      type: CRMScript.NetServer.NSCommandInfo[]
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger documentId;\nString[] allowedReturnTypes;\nNSCommandInfo[] res = agent.GetDocumentCommands(documentId, allowedReturnTypes);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetDocumentEntity
@@ -435,7 +808,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSDocumentAgent.GetDocumentEntity
   fullName: CRMScript.NetServer.NSDocumentAgent.GetDocumentEntity
   type: Method
-  summary: "\nGets a NSDocumentEntity object.\n"
+  summary: "\nGets an NSDocumentEntity object.\n"
+  remarks: 
+  syntax: 
+    content: NSDocumentEntity GetDocumentEntity(Integer documentEntityId);
+    parameters:
+    - id: documentEntityId;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: documentEntityId
+      type: 
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDocumentEntity
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nNSDocumentEntity thing = agent.GetDocumentEntity(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetDocumentList
@@ -449,6 +834,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetDocumentList
   type: Method
   summary: "\nGets a vector of NSDocument objects.\n"
+  remarks: 
+  syntax: 
+    content: NSDocument[] GetDocumentList(Integer[]  documentIds);
+    parameters:
+    - id: documentIds;
+      type: CRMScript.Global.Integer[]
+      description: 
+    - id: documentIds
+      type: 
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDocument[]
   example: 
   - "\n<pre><code>Integer[] ids;\nNSDocumentAgent agent;\nNSDocument[] docs = agent.GetDocumentList(ids);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetDocumentProperties
@@ -462,6 +859,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetDocumentProperties
   type: Method
   summary: "\nGet plugin-dependent properties for the document. A number of standard properties that should be supported by all plugins are defined in SuperOffice.CRM.Documents.Constants.Properties.\n"
+  remarks: 
+  syntax: 
+    content: StringDictionary GetDocumentProperties(Integer documentId, String[] requestedProperties)
+    parameters:
+    - id: documentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: requestedProperties
+      type: CRMScript.Global.String[]
+      description: 
+    return:
+      type: CRMScript.Global.StringDictionary
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger documentId;\nString[] requestedProperties;\nStringDictionary res = agent.GetDocumentProperties(documentId, requestedProperties);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetDocumentsByTemplateHeading
@@ -475,6 +884,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetDocumentsByTemplateHeading
   type: Method
   summary: "\nMethod that returns document appointments, filtered by the document template heading. The heading represents a grouping or filtering of document templates.\n"
+  remarks: 
+  syntax: 
+    content: NSDocument[] GetDocumentsByTemplateHeading(Integer templateHeadingId)
+    parameters:
+    - id: templateHeadingId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDocument[]
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger templateHeadingId;\nNSDocument[] res = agent.GetDocumentsByTemplateHeading(templateHeadingId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetDocumentStream
@@ -488,6 +906,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetDocumentStream
   type: Method
   summary: "\nGet the document content as a stream\n"
+  remarks: 
+  syntax: 
+    content: NSStream GetDocumentStream(Integer documentId)
+    parameters:
+    - id: documentId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSStream
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger documentId;\nNSStream res = agent.GetDocumentStream(documentId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetDocumentStreamFromEntity
@@ -501,6 +928,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetDocumentStreamFromEntity
   type: Method
   summary: "\nGet the document as a stream\n"
+  remarks: 
+  syntax: 
+    content: NSStream GetDocumentStreamFromEntity(NSDocumentEntity documentEntity)
+    parameters:
+    - id: documentEntity
+      type: CRMScript.NetServer.NSDocumentEntity
+      description: 
+    return:
+      type: CRMScript.NetServer.NSStream
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nNSDocumentEntity documentEntity;\nNSStream res = agent.GetDocumentStreamFromEntity(documentEntity);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetDocumentUrl
@@ -514,6 +950,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetDocumentUrl
   type: Method
   summary: "\nGet a URL referring to the given document content.<para/>This URL may be passed to the ultimate client (text editor of some kind?), which is then responsible for all further operations.<para/>The returned string is a fully qualified URL.<para/>Not all documents and document plugins support this feature.\n"
+  remarks: 
+  syntax: 
+    content: String GetDocumentUrl(Integer documentId, String versionId, Bool writeableUrl)
+    parameters:
+    - id: documentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: versionId
+      type: CRMScript.Global.String
+      description: 
+    - id: writeableUrl
+      type: CRMScript.Global.Bool
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger documentId;\nString versionId;\nBool writeableUrl;\nString res = agent.GetDocumentUrl(documentId, versionId, writeableUrl);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetMyPublishedDocuments
@@ -527,6 +978,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetMyPublishedDocuments
   type: Method
   summary: "\n<strong>Returns:</strong>NSDocument[]<p></p>\n<pre><code>NSDocumentAgent agent;\nNSDocument[] res = agent.GetMyPublishedDocuments();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSDocument[] GetMyPublishedDocuments()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSDocument[]
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nNSDocument[] res = agent.GetMyPublishedDocuments();</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetPersonDocuments
@@ -540,6 +997,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetPersonDocuments
   type: Method
   summary: "\nGet all documents that are linked to the person. I.e. the documents that are listed in the person dialog.\n"
+  remarks: 
+  syntax: 
+    content: NSDocument[] GetPersonDocuments(Integer personId)
+    parameters:
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDocument[]
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger personId;\nNSDocument[] res = agent.GetPersonDocuments(personId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetPersonDocumentsByDate
@@ -553,6 +1019,27 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetPersonDocumentsByDate
   type: Method
   summary: "\nMethod that returns a specified number of document appointments within a time range. The document appointments belong to the person specified.\n"
+  remarks: 
+  syntax: 
+    content: NSDocument[] GetPersonDocumentsByDate(Integer personId, Bool includeProjectDocuments, DateTime startTime, DateTime endTime, Integer count)
+    parameters:
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: includeProjectDocuments
+      type: CRMScript.Global.Bool
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDocument[]
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger personId;\nBool includeProjectDocuments;\nDateTime startTime;\nDateTime endTime;\nInteger count;\nNSDocument[] res = agent.GetPersonDocumentsByDate(personId, includeProjectDocuments, startTime, endTime, count);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetPersonDocumentsByTemplateHeading
@@ -566,6 +1053,30 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetPersonDocumentsByTemplateHeading
   type: Method
   summary: "\nMethod that returns a specified number of document appointments within a time range, filtered by document template heading. The document appointments belong to the person specified. The heading represents a grouping or filtering of document templates.\n"
+  remarks: 
+  syntax: 
+    content: NSDocument[] GetPersonDocumentsByTemplateHeading(Integer personId, Bool includeProjectDocuments, DateTime startTime, DateTime endTime, Integer count, Integer templateHeadingId)
+    parameters:
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: includeProjectDocuments
+      type: CRMScript.Global.Bool
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    - id: templateHeadingId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDocument[]
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger personId;\nBool includeProjectDocuments;\nDateTime startTime;\nDateTime endTime;\nInteger count;\nInteger templateHeadingId;\nNSDocument[] res = agent.GetPersonDocumentsByTemplateHeading(personId, includeProjectDocuments, startTime, endTime, count, templateHeadingId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetPersonDocumentsByTemplateType
@@ -579,6 +1090,30 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetPersonDocumentsByTemplateType
   type: Method
   summary: "\nMethod that returns a specified number of document appointments within a time range, filtered by document template type. The document appointments belong to the person specified.\n"
+  remarks: 
+  syntax: 
+    content: NSDocument[] GetPersonDocumentsByTemplateType(Integer personId, Bool includeProjectDocuments, DateTime startTime, DateTime endTime, Integer count, Integer documentTemplateId)
+    parameters:
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: includeProjectDocuments
+      type: CRMScript.Global.Bool
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    - id: documentTemplateId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDocument[]
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger personId;\nBool includeProjectDocuments;\nDateTime startTime;\nDateTime endTime;\nInteger count;\nInteger documentTemplateId;\nNSDocument[] res = agent.GetPersonDocumentsByTemplateType(personId, includeProjectDocuments, startTime, endTime, count, documentTemplateId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetPersonDocumentsByTemplateTypes
@@ -592,6 +1127,30 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetPersonDocumentsByTemplateTypes
   type: Method
   summary: "\nMethod that returns a specified number of document appointments within a time range, filtered by document template types. The document appointments belong to the person specified.\n"
+  remarks: 
+  syntax: 
+    content: NSDocument[] GetPersonDocumentsByTemplateTypes(Integer personId, Bool includeProjectDocuments, DateTime startTime, DateTime endTime, Integer count, Integer[] documentTemplateIds)
+    parameters:
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: includeProjectDocuments
+      type: CRMScript.Global.Bool
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    - id: documentTemplateIds
+      type: CRMScript.Global.Integer[]
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDocument[]
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger personId;\nBool includeProjectDocuments;\nDateTime startTime;\nDateTime endTime;\nInteger count;\nInteger[] documentTemplateIds;\nNSDocument[] res = agent.GetPersonDocumentsByTemplateTypes(personId, includeProjectDocuments, startTime, endTime, count, documentTemplateIds);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetPluginCapabilities
@@ -605,6 +1164,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetPluginCapabilities
   type: Method
   summary: "\nGet a list of plugin-dependent capabilities for a given document archive plugin.<br/>A standard set of properties is defined in SuperOffice.CRM.Documents.Constants.Capabilities.\n"
+  remarks: 
+  syntax: 
+    content: StringDictionary GetPluginCapabilities(Integer pluginId)
+    parameters:
+    - id: pluginId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.StringDictionary
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger pluginId;\nStringDictionary res = agent.GetPluginCapabilities(pluginId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetPluginList
@@ -618,6 +1186,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetPluginList
   type: Method
   summary: "\nGet a list of installed document plugins<p></p>\n<strong>Returns:</strong>StringDictionary<p></p>\n<pre><code>NSDocumentAgent agent;\nStringDictionary res = agent.GetPluginList();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: StringDictionary GetPluginList()
+    parameters:
+    return:
+      type: CRMScript.Global.StringDictionary
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nStringDictionary res = agent.GetPluginList();</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetPreviewDocumentStream
@@ -631,6 +1205,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetPreviewDocumentStream
   type: Method
   summary: "\nGet the preview version of the document content as a stream. Retrieves a sanitized version if possible\n"
+  remarks: 
+  syntax: 
+    content: NSDocumentPreview GetPreviewDocumentStream(Integer documentId)
+    parameters:
+    - id: documentId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDocumentPreview
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger documentId;\nNSDocumentPreview res = agent.GetPreviewDocumentStream(documentId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetProjectDocuments
@@ -644,6 +1227,24 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetProjectDocuments
   type: Method
   summary: "\nMethod that returns a specified number of document appointments within a time range. The document appointments belong to the project specified.\n"
+  remarks: 
+  syntax: 
+    content: NSDocument[] GetProjectDocuments(Integer projectId, DateTime startTime, DateTime endTime, Integer count)
+    parameters:
+    - id: projectId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDocument[]
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger projectId;\nDateTime startTime;\nDateTime endTime;\nInteger count;\nNSDocument[] res = agent.GetProjectDocuments(projectId, startTime, endTime, count);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetProjectDocumentsByTemplateHeading
@@ -657,6 +1258,27 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetProjectDocumentsByTemplateHeading
   type: Method
   summary: "\nMethod that returns a specified number of document appointments within a time range, filtered by document template heading. The document appointments belong to the project specified. The heading represents a grouping or filtering of document templates.\n"
+  remarks: 
+  syntax: 
+    content: NSDocument[] GetProjectDocumentsByTemplateHeading(Integer projectId, DateTime startTime, DateTime endTime, Integer count, Integer templateHeadingId)
+    parameters:
+    - id: projectId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    - id: templateHeadingId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDocument[]
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger projectId;\nDateTime startTime;\nDateTime endTime;\nInteger count;\nInteger templateHeadingId;\nNSDocument[] res = agent.GetProjectDocumentsByTemplateHeading(projectId, startTime, endTime, count, templateHeadingId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetProjectDocumentsByTemplateType
@@ -670,6 +1292,27 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetProjectDocumentsByTemplateType
   type: Method
   summary: "\nMethod that returns a specified number of document appointments within a time range, filtered by document template type. The document appointments belong to the project specified.\n"
+  remarks: 
+  syntax: 
+    content: NSDocument[] GetProjectDocumentsByTemplateType(Integer projectId, DateTime startTime, DateTime endTime, Integer count, Integer documentTemplateId)
+    parameters:
+    - id: projectId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    - id: documentTemplateId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDocument[]
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger projectId;\nDateTime startTime;\nDateTime endTime;\nInteger count;\nInteger documentTemplateId;\nNSDocument[] res = agent.GetProjectDocumentsByTemplateType(projectId, startTime, endTime, count, documentTemplateId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetProjectDocumentsByTemplateTypes
@@ -683,6 +1326,27 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetProjectDocumentsByTemplateTypes
   type: Method
   summary: "\nMethod that returns a specified number of document appointments within a time range, filtered by document template types. The document appointments belong to the project specified.\n"
+  remarks: 
+  syntax: 
+    content: NSDocument[] GetProjectDocumentsByTemplateTypes(Integer projectId, DateTime startTime, DateTime endTime, Integer count, Integer[] documentTemplateIds)
+    parameters:
+    - id: projectId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    - id: documentTemplateIds
+      type: CRMScript.Global.Integer[]
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDocument[]
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger projectId;\nDateTime startTime;\nDateTime endTime;\nInteger count;\nInteger[] documentTemplateIds;\nNSDocument[] res = agent.GetProjectDocumentsByTemplateTypes(projectId, startTime, endTime, count, documentTemplateIds);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetProjectMemberDocuments
@@ -696,6 +1360,24 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetProjectMemberDocuments
   type: Method
   summary: "\nMethod that returns a specified number of document appointments within a time range. The document appointments belong to the project member specified.\n"
+  remarks: 
+  syntax: 
+    content: NSDocument[] GetProjectMemberDocuments(Integer personId, DateTime startTime, DateTime endTime, Integer count)
+    parameters:
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDocument[]
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger personId;\nDateTime startTime;\nDateTime endTime;\nInteger count;\nNSDocument[] res = agent.GetProjectMemberDocuments(personId, startTime, endTime, count);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetProjectMemberDocumentsByTemplateHeading
@@ -709,6 +1391,27 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetProjectMemberDocumentsByTemplateHeading
   type: Method
   summary: "\nMethod that returns a specified number of document appointments within a time range, filtered by document template heading. The document appointments belong to the project member specified. The heading represents a grouping or filtering of document templates.\n"
+  remarks: 
+  syntax: 
+    content: NSDocument[] GetProjectMemberDocumentsByTemplateHeading(Integer personId, DateTime startTime, DateTime endTime, Integer count, Integer templateHeadingId)
+    parameters:
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    - id: templateHeadingId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDocument[]
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger personId;\nDateTime startTime;\nDateTime endTime;\nInteger count;\nInteger templateHeadingId;\nNSDocument[] res = agent.GetProjectMemberDocumentsByTemplateHeading(personId, startTime, endTime, count, templateHeadingId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetProjectMemberDocumentsByTemplateType
@@ -722,6 +1425,27 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetProjectMemberDocumentsByTemplateType
   type: Method
   summary: "\nMethod that returns a specified number of document appointments within a time range, filtered by document template type. The document appointments belong to the project member specified.\n"
+  remarks: 
+  syntax: 
+    content: NSDocument[] GetProjectMemberDocumentsByTemplateType(Integer personId, DateTime startTime, DateTime endTime, Integer count, Integer documentTemplateId)
+    parameters:
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    - id: documentTemplateId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDocument[]
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger personId;\nDateTime startTime;\nDateTime endTime;\nInteger count;\nInteger documentTemplateId;\nNSDocument[] res = agent.GetProjectMemberDocumentsByTemplateType(personId, startTime, endTime, count, documentTemplateId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetProjectMemberDocumentsByTemplateTypes
@@ -735,6 +1459,27 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetProjectMemberDocumentsByTemplateTypes
   type: Method
   summary: "\nMethod that returns a specified number of document appointments within a time range, filtered by document template types. The document appointments belong to the project member specified.\n"
+  remarks: 
+  syntax: 
+    content: NSDocument[] GetProjectMemberDocumentsByTemplateTypes(Integer personId, DateTime startTime, DateTime endTime, Integer count, Integer[] documentTemplateIds)
+    parameters:
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    - id: documentTemplateIds
+      type: CRMScript.Global.Integer[]
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDocument[]
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger personId;\nDateTime startTime;\nDateTime endTime;\nInteger count;\nInteger[] documentTemplateIds;\nNSDocument[] res = agent.GetProjectMemberDocumentsByTemplateTypes(personId, startTime, endTime, count, documentTemplateIds);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetPublishedDocument
@@ -748,6 +1493,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetPublishedDocument
   type: Method
   summary: "\nGet the document if it's published\n"
+  remarks: 
+  syntax: 
+    content: NSDocument GetPublishedDocument(Integer documentId)
+    parameters:
+    - id: documentId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDocument
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger documentId;\nNSDocument res = agent.GetPublishedDocument(documentId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetPublishedDocuments
@@ -761,6 +1515,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetPublishedDocuments
   type: Method
   summary: "\nGet the published documents from an array of doucment ids.\n"
+  remarks: 
+  syntax: 
+    content: NSDocument[] GetPublishedDocuments(Integer[] documentIds)
+    parameters:
+    - id: documentIds
+      type: CRMScript.Global.Integer[]
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDocument[]
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger[] documentIds;\nNSDocument[] res = agent.GetPublishedDocuments(documentIds);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetPublishedDocumentsByDate
@@ -774,6 +1537,27 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetPublishedDocumentsByDate
   type: Method
   summary: "\nMethod that returns a specified number of published document appointments within a time range. The document appointments is visible to the person specified or the document is in a project the person belongs to.\n"
+  remarks: 
+  syntax: 
+    content: NSDocument[] GetPublishedDocumentsByDate(Integer personId, Bool includeProjectDocuments, DateTime startTime, DateTime endTime, Integer count)
+    parameters:
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: includeProjectDocuments
+      type: CRMScript.Global.Bool
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDocument[]
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger personId;\nBool includeProjectDocuments;\nDateTime startTime;\nDateTime endTime;\nInteger count;\nNSDocument[] res = agent.GetPublishedDocumentsByDate(personId, includeProjectDocuments, startTime, endTime, count);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetPublishedPersonDocumentsByDate
@@ -787,6 +1571,27 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetPublishedPersonDocumentsByDate
   type: Method
   summary: "\nMethod that returns a specified number of published document appointments within a time range. The document appointments belong to the person specified or the document is in a project the person belongs to.\n"
+  remarks: 
+  syntax: 
+    content: NSDocument[] GetPublishedPersonDocumentsByDate(Integer personId, Bool includeProjectDocuments, DateTime startTime, DateTime endTime, Integer count)
+    parameters:
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: includeProjectDocuments
+      type: CRMScript.Global.Bool
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDocument[]
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger personId;\nBool includeProjectDocuments;\nDateTime startTime;\nDateTime endTime;\nInteger count;\nNSDocument[] res = agent.GetPublishedPersonDocumentsByDate(personId, includeProjectDocuments, startTime, endTime, count);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetPublishedProjectDocuments
@@ -800,6 +1605,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetPublishedProjectDocuments
   type: Method
   summary: "\nGet published appointment documents by project id.\n"
+  remarks: 
+  syntax: 
+    content: NSDocument[] GetPublishedProjectDocuments(Integer projectId)
+    parameters:
+    - id: projectId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDocument[]
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger projectId;\nNSDocument[] res = agent.GetPublishedProjectDocuments(projectId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetSaleDocuments
@@ -813,6 +1627,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetSaleDocuments
   type: Method
   summary: "\nGet all documents that are linked to the sale. I.e. the documents that are listed in the sale dialog.\n"
+  remarks: 
+  syntax: 
+    content: NSDocument[] GetSaleDocuments(Integer saleId)
+    parameters:
+    - id: saleId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDocument[]
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger saleId;\nNSDocument[] res = agent.GetSaleDocuments(saleId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetSanitizedDocumentStream
@@ -826,6 +1649,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetSanitizedDocumentStream
   type: Method
   summary: "\nGet the document content as a stream. Retrieves a sanitized version if possible\n"
+  remarks: 
+  syntax: 
+    content: NSStream GetSanitizedDocumentStream(Integer documentId)
+    parameters:
+    - id: documentId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSStream
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger documentId;\nNSStream res = agent.GetSanitizedDocumentStream(documentId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetSanitizedTemplateStream
@@ -839,6 +1671,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetSanitizedTemplateStream
   type: Method
   summary: "\nRetrieve a stream to a mail template based on its name. Sanitizes the contents if possible.\n"
+  remarks: 
+  syntax: 
+    content: NSStream GetSanitizedTemplateStream(String templateName, Bool allowPersonal, String uiCulture)
+    parameters:
+    - id: templateName
+      type: CRMScript.Global.String
+      description: 
+    - id: allowPersonal
+      type: CRMScript.Global.Bool
+      description: 
+    - id: uiCulture
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSStream
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nString templateName;\nBool allowPersonal;\nString uiCulture;\nNSStream res = agent.GetSanitizedTemplateStream(templateName, allowPersonal, uiCulture);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetSanitizedTemplateStreamFromId
@@ -852,6 +1699,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetSanitizedTemplateStreamFromId
   type: Method
   summary: "\nRetrieve a stream to a document template based on its id. Sanitizes the contents if possible.\n"
+  remarks: 
+  syntax: 
+    content: NSStream GetSanitizedTemplateStreamFromId(Integer templateId, String uiCulture)
+    parameters:
+    - id: templateId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: uiCulture
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSStream
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger templateId;\nString uiCulture;\nNSStream res = agent.GetSanitizedTemplateStreamFromId(templateId, uiCulture);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetSuggestedDocumentEntity
@@ -864,7 +1723,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSDocumentAgent.GetSuggestedDocumentEntity
   fullName: CRMScript.NetServer.NSDocumentAgent.GetSuggestedDocumentEntity
   type: Method
-  summary: "\nGets a NSSuggestedDocumentEntity object.\n"
+  summary: "\nGets an NSSuggestedDocumentEntity object.\n"
+  remarks: 
+  syntax: 
+    content: NSSuggestedDocumentEntity GetSuggestedDocumentEntity(Integer suggestedDocumentEntityId);
+    parameters:
+    - id: suggestedDocumentEntityId;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: suggestedDocumentEntityId
+      type: 
+      description: 
+    return:
+      type: CRMScript.NetServer.NSSuggestedDocumentEntity
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nNSSuggestedDocumentEntity thing = agent.GetSuggestedDocumentEntity(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetTempFile
@@ -878,6 +1749,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetTempFile
   type: Method
   summary: "\nGet data stream for temporary file created with CreateTempFile.\n"
+  remarks: 
+  syntax: 
+    content: NSStream GetTempFile(String filename)
+    parameters:
+    - id: filename
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSStream
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nString filename;\nNSStream res = agent.GetTempFile(filename);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetTemplateStream
@@ -891,6 +1771,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetTemplateStream
   type: Method
   summary: "\nRetrieve a stream to a mail template based on its name\n"
+  remarks: 
+  syntax: 
+    content: NSStream GetTemplateStream(String templateName, Bool allowPersonal, String uiCulture)
+    parameters:
+    - id: templateName
+      type: CRMScript.Global.String
+      description: 
+    - id: allowPersonal
+      type: CRMScript.Global.Bool
+      description: 
+    - id: uiCulture
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSStream
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nString templateName;\nBool allowPersonal;\nString uiCulture;\nNSStream res = agent.GetTemplateStream(templateName, allowPersonal, uiCulture);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetTemplateStreamFromId
@@ -904,6 +1799,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetTemplateStreamFromId
   type: Method
   summary: "\nRetrieve a stream to a document template based on its id\n"
+  remarks: 
+  syntax: 
+    content: NSStream GetTemplateStreamFromId(Integer templateId, String uiCulture)
+    parameters:
+    - id: templateId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: uiCulture
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSStream
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger templateId;\nString uiCulture;\nNSStream res = agent.GetTemplateStreamFromId(templateId, uiCulture);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetUnsanitizedPreviewDocumentStream
@@ -917,6 +1824,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetUnsanitizedPreviewDocumentStream
   type: Method
   summary: "\nGet the preview version of the document content as a stream. Retrieves an unsanitized version. This has less CPU impact but the caller must sanitize the content before presenting it to the user.\n"
+  remarks: 
+  syntax: 
+    content: NSDocumentPreview GetUnsanitizedPreviewDocumentStream(Integer documentId)
+    parameters:
+    - id: documentId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDocumentPreview
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger documentId;\nNSDocumentPreview res = agent.GetUnsanitizedPreviewDocumentStream(documentId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetVersionList
@@ -930,6 +1846,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.GetVersionList
   type: Method
   summary: "\nGet a list of existing, committed  versions for a given document\n"
+  remarks: 
+  syntax: 
+    content: NSVersionInfo[] GetVersionList(Integer documentId)
+    parameters:
+    - id: documentId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSVersionInfo[]
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger documentId;\nNSVersionInfo[] res = agent.GetVersionList(documentId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.#ctor
@@ -941,8 +1866,11 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   name: '#ctor'
   nameWithType: NSDocumentAgent.#ctor
   fullName: CRMScript.NetServer.NSDocumentAgent.#ctor
-  type: Method
+  type: Constructor
   summary: "\nCollection of all services that work with Document data. This is services for the document information, not the physical document themselves. These are handled by the BLOB service methods.\n"
+  remarks: 
+  syntax: 
+    content: NSDocumentAgent
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.RenameDocument
@@ -956,6 +1884,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.RenameDocument
   type: Method
   summary: "\nRename the physical document, i.e., change the file name or equivalent concept in the document archive.\n"
+  remarks: 
+  syntax: 
+    content: String RenameDocument(Integer documentId, String newFilename)
+    parameters:
+    - id: documentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: newFilename
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger documentId;\nString newFilename;\nString res = agent.RenameDocument(documentId, newFilename);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.SaveDocumentEntity
@@ -969,6 +1909,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.SaveDocumentEntity
   type: Method
   summary: "\nUpdates the existing NSDocumentEntity or creates a new NSDocumentEntity if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>documentEntity</strong>The NSDocumentEntity to save.</li></ul><strong>Returns:</strong>NSDocumentEntity<p></p>\n<pre><code>NSDocument  agent;\nNSDocumentEntity thing = agent.CreateDefaultDocumentEntity();\nthing = agent.SaveDocumentEntity(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSDocumentEntity SaveDocumentEntity(NSDocumentEntity documentEntity);
+    parameters:
+    - id: documentEntity;
+      type: CRMScript.NetServer.NSDocumentEntity
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDocumentEntity
   example: 
   - "\n<pre><code>NSDocument  agent;\nNSDocumentEntity thing = agent.CreateDefaultDocumentEntity();\nthing = agent.SaveDocumentEntity(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.SaveDocumentTemplateStream
@@ -982,6 +1931,24 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.SaveDocumentTemplateStream
   type: Method
   summary: "\nSaves content in stream to document template file\n"
+  remarks: 
+  syntax: 
+    content: NSTemplateInfo SaveDocumentTemplateStream(Integer documentTemplateId, NSStream content, String languageCode, Integer pluginId)
+    parameters:
+    - id: documentTemplateId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: content
+      type: CRMScript.NetServer.NSStream
+      description: 
+    - id: languageCode
+      type: CRMScript.Global.String
+      description: 
+    - id: pluginId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSTemplateInfo
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger documentTemplateId;\nNSStream content;\nString languageCode;\nInteger pluginId;\nNSTemplateInfo res = agent.SaveDocumentTemplateStream(documentTemplateId, content, languageCode, pluginId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.SavePrivacyReport
@@ -995,6 +1962,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.SavePrivacyReport
   type: Method
   summary: "\nGenerates a Pdf from HTML and makes a document\n"
+  remarks: 
+  syntax: 
+    content: Integer SavePrivacyReport(String htmlReport, String title, Integer personId)
+    parameters:
+    - id: htmlReport
+      type: CRMScript.Global.String
+      description: 
+    - id: title
+      type: CRMScript.Global.String
+      description: 
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Integer
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nString htmlReport;\nString title;\nInteger personId;\nInteger res = agent.SavePrivacyReport(htmlReport, title, personId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.SaveSuggestedDocumentEntity
@@ -1008,6 +1990,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.SaveSuggestedDocumentEntity
   type: Method
   summary: "\nUpdates the existing NSSuggestedDocumentEntity or creates a new NSSuggestedDocumentEntity if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>suggestedDocumentEntity</strong>The NSSuggestedDocumentEntity to save.</li></ul><strong>Returns:</strong>NSSuggestedDocumentEntity<p></p>\n<pre><code>NSDocument  agent;\nNSSuggestedDocumentEntity thing = agent.CreateDefaultSuggestedDocumentEntity();\nthing = agent.SaveSuggestedDocumentEntity(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSSuggestedDocumentEntity SaveSuggestedDocumentEntity(NSSuggestedDocumentEntity suggestedDocumentEntity);
+    parameters:
+    - id: suggestedDocumentEntity;
+      type: CRMScript.NetServer.NSSuggestedDocumentEntity
+      description: 
+    return:
+      type: CRMScript.NetServer.NSSuggestedDocumentEntity
   example: 
   - "\n<pre><code>NSDocument  agent;\nNSSuggestedDocumentEntity thing = agent.CreateDefaultSuggestedDocumentEntity();\nthing = agent.SaveSuggestedDocumentEntity(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.SetDocumentStream
@@ -1021,6 +2012,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.SetDocumentStream
   type: Method
   summary: "\nStore a document's contents from its stream. Since there is a potential for a name conflict (the file name stored by the document entity earlier may prove to be invalid), the (possibly amended) document entity is returned. The client should not assume that any earlier, cached entity information is valid.\n"
+  remarks: 
+  syntax: 
+    content: NSDocumentEntity SetDocumentStream(NSDocumentEntity documentEntity, NSStream stream, Bool overwriteExistingData)
+    parameters:
+    - id: documentEntity
+      type: CRMScript.NetServer.NSDocumentEntity
+      description: 
+    - id: stream
+      type: CRMScript.NetServer.NSStream
+      description: 
+    - id: overwriteExistingData
+      type: CRMScript.Global.Bool
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDocumentEntity
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nNSDocumentEntity documentEntity;\nNSStream stream;\nBool overwriteExistingData;\nNSDocumentEntity res = agent.SetDocumentStream(documentEntity, stream, overwriteExistingData);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.SetDocumentStreamFromId
@@ -1034,6 +2040,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.SetDocumentStreamFromId
   type: Method
   summary: "\nStore document content from stream. Since there is a potential for a name conflict (the file name stored by the document entity earlier may prove to be invalid), the (possibly amended) document entity is returned. The client should not assume that any earlier, cached entity information is valid.\n"
+  remarks: 
+  syntax: 
+    content: NSDocumentEntity SetDocumentStreamFromId(Integer documentId, NSStream stream)
+    parameters:
+    - id: documentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: stream
+      type: CRMScript.NetServer.NSStream
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDocumentEntity
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger documentId;\nNSStream stream;\nNSDocumentEntity res = agent.SetDocumentStreamFromId(documentId, stream);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.SetTemplateStream
@@ -1047,6 +2065,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.SetTemplateStream
   type: Method
   summary: "\nSave a mail signature template to the document archive\n"
+  remarks: 
+  syntax: 
+    content: Void SetTemplateStream(String filename, Bool personal, NSStream stream)
+    parameters:
+    - id: filename
+      type: CRMScript.Global.String
+      description: 
+    - id: personal
+      type: CRMScript.Global.Bool
+      description: 
+    - id: stream
+      type: CRMScript.NetServer.NSStream
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nString filename;\nBool personal;\nNSStream stream;\nagent.SetTemplateStream(filename, personal, stream);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.SubstituteMergeDocumentTemplateVariables
@@ -1060,6 +2093,24 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.SubstituteMergeDocumentTemplateVariables
   type: Method
   summary: "\nParse the source document, and replace any template variable tags with their values, based on the associate Id.<p/>The source document should be of type MergeDraft. This method also takes a pair of arrays specifying custom tags and their values; these tags will be available during substitution in addition to all the existing tags. Custom values will override values otherwise set.\n"
+  remarks: 
+  syntax: 
+    content: NSStream SubstituteMergeDocumentTemplateVariables(Integer documentId, Integer associateId, String[] customTags, String[] customValues)
+    parameters:
+    - id: documentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: associateId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: customTags
+      type: CRMScript.Global.String[]
+      description: 
+    - id: customValues
+      type: CRMScript.Global.String[]
+      description: 
+    return:
+      type: CRMScript.NetServer.NSStream
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger documentId;\nInteger associateId;\nString[] customTags;\nString[] customValues;\nNSStream res = agent.SubstituteMergeDocumentTemplateVariables(documentId, associateId, customTags, customValues);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.SubstituteMergeDocumentTemplateVariables2
@@ -1073,6 +2124,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.SubstituteMergeDocumentTemplateVariables2
   type: Method
   summary: "\nParse the source document, and replace any template variable tags with their values, based on the associate Id.<p/>The source document should be of type MergeDraft. This method also takes a pair of arrays specifying custom tags and their values; these tags will be available during substitution in addition to all the existing tags. Custom values will override values otherwise set.\n"
+  remarks: 
+  syntax: 
+    content: NSStream SubstituteMergeDocumentTemplateVariables2(Integer documentId, Integer associateId, StringDictionary customTags)
+    parameters:
+    - id: documentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: associateId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: customTags
+      type: CRMScript.Global.StringDictionary
+      description: 
+    return:
+      type: CRMScript.NetServer.NSStream
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger documentId;\nInteger associateId;\nStringDictionary customTags;\nNSStream res = agent.SubstituteMergeDocumentTemplateVariables2(documentId, associateId, customTags);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.SubstituteMergeDocumentTemplateVariablesEx
@@ -1086,6 +2152,42 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.SubstituteMergeDocumentTemplateVariablesEx
   type: Method
   summary: "\nParse the source document, and replace any template variable tags with their values, based on the provided identifiers.<p/>The source document should be of type MergeDraft. This method also takes a pair of arrays specifying custom tags and their values; these tags will be available during substitution in addition to all the existing tags. Custom values will override values otherwise set.\n"
+  remarks: 
+  syntax: 
+    content: NSStream SubstituteMergeDocumentTemplateVariablesEx(Integer mergeDocumentId, Integer contactId, Integer personId, Integer projectId, Integer selectionId, Integer appointmentId, Integer documentId, Integer saleId, String[] customTags, String[] customValues)
+    parameters:
+    - id: mergeDocumentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: contactId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: projectId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: selectionId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: appointmentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: documentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: saleId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: customTags
+      type: CRMScript.Global.String[]
+      description: 
+    - id: customValues
+      type: CRMScript.Global.String[]
+      description: 
+    return:
+      type: CRMScript.NetServer.NSStream
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger mergeDocumentId;\nInteger contactId;\nInteger personId;\nInteger projectId;\nInteger selectionId;\nInteger appointmentId;\nInteger documentId;\nInteger saleId;\nString[] customTags;\nString[] customValues;\nNSStream res = agent.SubstituteMergeDocumentTemplateVariablesEx(mergeDocumentId, contactId, personId, projectId, selectionId, appointmentId, documentId, saleId, customTags, customValues);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.SubstituteMergeDocumentTemplateVariablesEx2
@@ -1099,6 +2201,39 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.SubstituteMergeDocumentTemplateVariablesEx2
   type: Method
   summary: "\nParse the source document, and replace any template variable tags with their values, based on the provided identifiers.<p/>The source document should be of type MergeDraft. This method also takes a pair of arrays specifying custom tags and their values; these tags will be available during substitution in addition to all the existing tags. Custom values will override values otherwise set.\n"
+  remarks: 
+  syntax: 
+    content: NSStream SubstituteMergeDocumentTemplateVariablesEx2(Integer mergeDocumentId, Integer contactId, Integer personId, Integer projectId, Integer selectionId, Integer appointmentId, Integer documentId, Integer saleId, StringDictionary customTags)
+    parameters:
+    - id: mergeDocumentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: contactId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: projectId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: selectionId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: appointmentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: documentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: saleId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: customTags
+      type: CRMScript.Global.StringDictionary
+      description: 
+    return:
+      type: CRMScript.NetServer.NSStream
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger mergeDocumentId;\nInteger contactId;\nInteger personId;\nInteger projectId;\nInteger selectionId;\nInteger appointmentId;\nInteger documentId;\nInteger saleId;\nStringDictionary customTags;\nNSStream res = agent.SubstituteMergeDocumentTemplateVariablesEx2(mergeDocumentId, contactId, personId, projectId, selectionId, appointmentId, documentId, saleId, customTags);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.SubstituteTemplateVariables
@@ -1112,6 +2247,42 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.SubstituteTemplateVariables
   type: Method
   summary: "\nParse the source string, and replace any template variable tags with their values, based on the ID's given in the other parameters.\n"
+  remarks: "\n<h3>Enum: generatorEncoding</h3><ul><li>0 = Text</li><li>1 = Html</li><li>2 = Xml</li><li>3 = MsWord</li><li>4 = MsExcel</li><li>5 = MsPowerpoint</li><li>6 = MsOffice2007</li><li>7 = MsOffice2007Xml</li><li>8 = Url</li><li>9 = UrlUnicode</li><li>10 = Pdf</li><li>11 = Mime</li><li>12 = OpenDocument</li><li>13 = OpenDocumentXml</li></ul>\n"
+  syntax: 
+    content: String SubstituteTemplateVariables(String source, Integer generatorEncoding, Integer contactId, Integer personId, Integer appointmentId, Integer documentId, Integer saleId, Integer selectionId, Integer projectId, String cultureName)
+    parameters:
+    - id: source
+      type: CRMScript.Global.String
+      description: 
+    - id: generatorEncoding
+      type: CRMScript.Global.Integer
+      description: 
+    - id: contactId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: appointmentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: documentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: saleId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: selectionId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: projectId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: cultureName
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nString source;\nInteger generatorEncoding;\nInteger contactId;\nInteger personId;\nInteger appointmentId;\nInteger documentId;\nInteger saleId;\nInteger selectionId;\nInteger projectId;\nString cultureName;\nString res = agent.SubstituteTemplateVariables(source, generatorEncoding, contactId, personId, appointmentId, documentId, saleId, selectionId, projectId, cultureName);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.SubstituteTemplateVariablesEx
@@ -1125,6 +2296,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.SubstituteTemplateVariablesEx
   type: Method
   summary: "\nParse the source string, and replace any template variable tags with their values, based on the identities, custom values and entities specified in the other parameters.\n"
+  remarks: 
+  syntax: 
+    content: String SubstituteTemplateVariablesEx(NSTemplateVariablesParameters parameters)
+    parameters:
+    - id: parameters
+      type: CRMScript.NetServer.NSTemplateVariablesParameters
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nNSTemplateVariablesParameters parameters;\nString res = agent.SubstituteTemplateVariablesEx(parameters);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.SubstituteTemplateVariablesWithCustomTags
@@ -1138,6 +2318,48 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.SubstituteTemplateVariablesWithCustomTags
   type: Method
   summary: "\nParse the source string, and replace any template variable tags with their values, based on the ID's given in the other parameters.<p/>This method also takes a pair of arrays specifying custom tags and their values; these tags will be available during substitution in addition to all the existing tags. Custom values will override values otherwise set.\n"
+  remarks: "\n<h3>Enum: generatorEncoding</h3><ul><li>0 = Text</li><li>1 = Html</li><li>2 = Xml</li><li>3 = MsWord</li><li>4 = MsExcel</li><li>5 = MsPowerpoint</li><li>6 = MsOffice2007</li><li>7 = MsOffice2007Xml</li><li>8 = Url</li><li>9 = UrlUnicode</li><li>10 = Pdf</li><li>11 = Mime</li><li>12 = OpenDocument</li><li>13 = OpenDocumentXml</li></ul>\n"
+  syntax: 
+    content: String SubstituteTemplateVariablesWithCustomTags(String source, Integer generatorEncoding, String[] customTags, String[] customValues, Integer contactId, Integer personId, Integer appointmentId, Integer documentId, Integer saleId, Integer selectionId, Integer projectId, String cultureName)
+    parameters:
+    - id: source
+      type: CRMScript.Global.String
+      description: 
+    - id: generatorEncoding
+      type: CRMScript.Global.Integer
+      description: 
+    - id: customTags
+      type: CRMScript.Global.String[]
+      description: 
+    - id: customValues
+      type: CRMScript.Global.String[]
+      description: 
+    - id: contactId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: appointmentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: documentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: saleId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: selectionId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: projectId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: cultureName
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nString source;\nInteger generatorEncoding;\nString[] customTags;\nString[] customValues;\nInteger contactId;\nInteger personId;\nInteger appointmentId;\nInteger documentId;\nInteger saleId;\nInteger selectionId;\nInteger projectId;\nString cultureName;\nString res = agent.SubstituteTemplateVariablesWithCustomTags(source, generatorEncoding, customTags, customValues, contactId, personId, appointmentId, documentId, saleId, selectionId, projectId, cultureName);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.SubstituteTemplateVariablesWithCustomTags2
@@ -1151,6 +2373,45 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.SubstituteTemplateVariablesWithCustomTags2
   type: Method
   summary: "\nParse the source string, and replace any template variable tags with their values, based on the ID's given in the other parameters.<p/>This method also takes a pair of arrays specifying custom tags and their values; these tags will be available during substitution in addition to all the existing tags. Custom values will override values otherwise set.\n"
+  remarks: "\n<h3>Enum: generatorEncoding</h3><ul><li>0 = Text</li><li>1 = Html</li><li>2 = Xml</li><li>3 = MsWord</li><li>4 = MsExcel</li><li>5 = MsPowerpoint</li><li>6 = MsOffice2007</li><li>7 = MsOffice2007Xml</li><li>8 = Url</li><li>9 = UrlUnicode</li><li>10 = Pdf</li><li>11 = Mime</li><li>12 = OpenDocument</li><li>13 = OpenDocumentXml</li></ul>\n"
+  syntax: 
+    content: String SubstituteTemplateVariablesWithCustomTags2(String source, Integer generatorEncoding, StringDictionary customTags, Integer contactId, Integer personId, Integer appointmentId, Integer documentId, Integer saleId, Integer selectionId, Integer projectId, String cultureName)
+    parameters:
+    - id: source
+      type: CRMScript.Global.String
+      description: 
+    - id: generatorEncoding
+      type: CRMScript.Global.Integer
+      description: 
+    - id: customTags
+      type: CRMScript.Global.StringDictionary
+      description: 
+    - id: contactId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: appointmentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: documentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: saleId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: selectionId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: projectId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: cultureName
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nString source;\nInteger generatorEncoding;\nStringDictionary customTags;\nInteger contactId;\nInteger personId;\nInteger appointmentId;\nInteger documentId;\nInteger saleId;\nInteger selectionId;\nInteger projectId;\nString cultureName;\nString res = agent.SubstituteTemplateVariablesWithCustomTags2(source, generatorEncoding, customTags, contactId, personId, appointmentId, documentId, saleId, selectionId, projectId, cultureName);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.UndoCheckoutDocument
@@ -1164,6 +2425,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.UndoCheckoutDocument
   type: Method
   summary: "\nUndo (abandon) a checkout\n"
+  remarks: 
+  syntax: 
+    content: NSReturnInfo UndoCheckoutDocument(Integer documentId, String[] allowedReturnTypes)
+    parameters:
+    - id: documentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: allowedReturnTypes
+      type: CRMScript.Global.String[]
+      description: 
+    return:
+      type: CRMScript.NetServer.NSReturnInfo
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger documentId;\nString[] allowedReturnTypes;\nNSReturnInfo res = agent.UndoCheckoutDocument(documentId, allowedReturnTypes);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.ValidateDocumentEntity
@@ -1177,6 +2450,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.ValidateDocumentEntity
   type: Method
   summary: "\nCheck that entity is ready for saving, return error messages by field.\n"
+  remarks: 
+  syntax: 
+    content: StringDictionary ValidateDocumentEntity(NSDocumentEntity documentEntity)
+    parameters:
+    - id: documentEntity
+      type: CRMScript.NetServer.NSDocumentEntity
+      description: 
+    return:
+      type: CRMScript.Global.StringDictionary
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nNSDocumentEntity documentEntity;\nStringDictionary res = agent.ValidateDocumentEntity(documentEntity);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.VerifyGetDocumentStream
@@ -1190,6 +2472,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSDocumentAgent.VerifyGetDocumentStream
   type: Method
   summary: "\nVerify that the requested document stream exists, and that we can access it, without actually getting the stream.\n"
+  remarks: 
+  syntax: 
+    content: Void VerifyGetDocumentStream(Integer documentId)
+    parameters:
+    - id: documentId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 references:
 - uid: CRMScript.NetServer.NSDocumentAgent
@@ -1198,3 +2489,193 @@ references:
   name: NSDocumentAgent
   nameWithType: NSDocumentAgent
   fullName: CRMScript.NetServer.NSDocumentAgent
+- uid: CRMScript.Global.Integer
+  commentId: T:CRMScript.Global.Integer
+  isExternal: true
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Global.Integer
+- uid: CRMScript.Global.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: CRMScript.Global.String[]
+  spec.crmscript:
+  - uid: CRMScript.Global.String
+    isExternal: true
+    name: String
+    nameWithType: String
+    fullName: CRMScript.Global.String
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.Global.String
+  commentId: T:CRMScript.Global.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: CRMScript.Global.String
+- uid: CRMScript.Global.String
+  commentId: T:CRMScript.Global.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: CRMScript.Global.String
+- uid: CRMScript.NetServer.NSReturnInfo
+  commentId: T:CRMScript.NetServer.NSReturnInfo
+  isExternal: true
+  name: NSReturnInfo
+  nameWithType: NSReturnInfo
+  fullName: CRMScript.NetServer.NSReturnInfo
+- uid: CRMScript.NetServer.NSDocumentEntity
+  commentId: T:CRMScript.NetServer.NSDocumentEntity
+  isExternal: true
+  name: NSDocumentEntity
+  nameWithType: NSDocumentEntity
+  fullName: CRMScript.NetServer.NSDocumentEntity
+- uid: CRMScript.NetServer.NSDocumentPreview
+  commentId: T:CRMScript.NetServer.NSDocumentPreview
+  isExternal: true
+  name: NSDocumentPreview
+  nameWithType: NSDocumentPreview
+  fullName: CRMScript.NetServer.NSDocumentPreview
+- uid: CRMScript.NetServer.NSSuggestedDocumentEntity
+  commentId: T:CRMScript.NetServer.NSSuggestedDocumentEntity
+  isExternal: true
+  name: NSSuggestedDocumentEntity
+  nameWithType: NSSuggestedDocumentEntity
+  fullName: CRMScript.NetServer.NSSuggestedDocumentEntity
+- uid: CRMScript.NetServer.NSTemplateVariablesParameters
+  commentId: T:CRMScript.NetServer.NSTemplateVariablesParameters
+  isExternal: true
+  name: NSTemplateVariablesParameters
+  nameWithType: NSTemplateVariablesParameters
+  fullName: CRMScript.NetServer.NSTemplateVariablesParameters
+- uid: CRMScript.Global.Bool
+  commentId: T:CRMScript.Global.Bool
+  isExternal: true
+  name: Bool
+  nameWithType: Bool
+  fullName: CRMScript.Global.Bool
+- uid: CRMScript.NetServer.NSStream
+  commentId: T:CRMScript.NetServer.NSStream
+  isExternal: true
+  name: NSStream
+  nameWithType: NSStream
+  fullName: CRMScript.NetServer.NSStream
+- uid: CRMScript.Global.StringDictionary
+  commentId: T:CRMScript.Global.StringDictionary
+  isExternal: true
+  name: StringDictionary
+  nameWithType: StringDictionary
+  fullName: CRMScript.Global.StringDictionary
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void
+- uid: CRMScript.NetServer.NSDocument[]
+  isExternal: true
+  name: NSDocument[]
+  nameWithType: NSDocument[]
+  fullName: CRMScript.NetServer.NSDocument[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSDocument
+    isExternal: true
+    name: NSDocument
+    nameWithType: NSDocument
+    fullName: CRMScript.NetServer.NSDocument
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSDocument
+  commentId: T:CRMScript.NetServer.NSDocument
+  isExternal: true
+  name: NSDocument
+  nameWithType: NSDocument
+  fullName: CRMScript.NetServer.NSDocument
+- uid: CRMScript.NetServer.NSCheckoutInfo
+  commentId: T:CRMScript.NetServer.NSCheckoutInfo
+  isExternal: true
+  name: NSCheckoutInfo
+  nameWithType: NSCheckoutInfo
+  fullName: CRMScript.NetServer.NSCheckoutInfo
+- uid: CRMScript.Global.DateTime
+  commentId: T:CRMScript.Global.DateTime
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: CRMScript.Global.DateTime
+- uid: CRMScript.Global.Integer[]
+  isExternal: true
+  name: Integer[]
+  nameWithType: Integer[]
+  fullName: CRMScript.Global.Integer[]
+  spec.crmscript:
+  - uid: CRMScript.Global.Integer
+    isExternal: true
+    name: Integer
+    nameWithType: Integer
+    fullName: CRMScript.Global.Integer
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.Global.Integer
+  commentId: T:CRMScript.Global.Integer
+  isExternal: true
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Global.Integer
+- uid: CRMScript.NetServer.NSDocument
+  commentId: T:CRMScript.NetServer.NSDocument
+  isExternal: true
+  name: NSDocument
+  nameWithType: NSDocument
+  fullName: CRMScript.NetServer.NSDocument
+- uid: CRMScript.NetServer.NSCommandInfo[]
+  isExternal: true
+  name: NSCommandInfo[]
+  nameWithType: NSCommandInfo[]
+  fullName: CRMScript.NetServer.NSCommandInfo[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSCommandInfo
+    isExternal: true
+    name: NSCommandInfo
+    nameWithType: NSCommandInfo
+    fullName: CRMScript.NetServer.NSCommandInfo
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSCommandInfo
+  commentId: T:CRMScript.NetServer.NSCommandInfo
+  isExternal: true
+  name: NSCommandInfo
+  nameWithType: NSCommandInfo
+  fullName: CRMScript.NetServer.NSCommandInfo
+- uid: CRMScript.NetServer.NSVersionInfo[]
+  isExternal: true
+  name: NSVersionInfo[]
+  nameWithType: NSVersionInfo[]
+  fullName: CRMScript.NetServer.NSVersionInfo[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSVersionInfo
+    isExternal: true
+    name: NSVersionInfo
+    nameWithType: NSVersionInfo
+    fullName: CRMScript.NetServer.NSVersionInfo
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSVersionInfo
+  commentId: T:CRMScript.NetServer.NSVersionInfo
+  isExternal: true
+  name: NSVersionInfo
+  nameWithType: NSVersionInfo
+  fullName: CRMScript.NetServer.NSVersionInfo
+- uid: CRMScript.NetServer.NSTemplateInfo
+  commentId: T:CRMScript.NetServer.NSTemplateInfo
+  isExternal: true
+  name: NSTemplateInfo
+  nameWithType: NSTemplateInfo
+  fullName: CRMScript.NetServer.NSTemplateInfo

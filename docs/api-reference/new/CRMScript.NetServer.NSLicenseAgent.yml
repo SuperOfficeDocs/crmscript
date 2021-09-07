@@ -45,6 +45,15 @@ items:
   fullName: CRMScript.NetServer.NSLicenseAgent.ActivateLicenseInfo
   type: Method
   summary: "\nSave a new license to the database.\n"
+  remarks: 
+  syntax: 
+    content: NSLicenseResult ActivateLicenseInfo(NSExtendedLicenseInfo newLicense)
+    parameters:
+    - id: newLicense
+      type: CRMScript.NetServer.NSExtendedLicenseInfo
+      description: 
+    return:
+      type: CRMScript.NetServer.NSLicenseResult
   example: 
 - uid: CRMScript.NetServer.NSLicenseAgent.AddLicenseFromFile
   commentId: M:CRMScript.NetServer.NSLicenseAgent.AddLicenseFromFile
@@ -57,6 +66,15 @@ items:
   fullName: CRMScript.NetServer.NSLicenseAgent.AddLicenseFromFile
   type: Method
   summary: "\nLoad and activate a new license from file/string if the new license is valid.\n"
+  remarks: 
+  syntax: 
+    content: NSExtendedLicenseInfo AddLicenseFromFile(String fileContent)
+    parameters:
+    - id: fileContent
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSExtendedLicenseInfo
   example: 
   - "\n<pre><code>NSLicenseAgent agent;\nString fileContent;\nNSExtendedLicenseInfo res = agent.AddLicenseFromFile(fileContent);</code></pre>\n"
 - uid: CRMScript.NetServer.NSLicenseAgent.AssignThirdPartyLicenses
@@ -70,6 +88,21 @@ items:
   fullName: CRMScript.NetServer.NSLicenseAgent.AssignThirdPartyLicenses
   type: Method
   summary: "\nAssign third party licenses\n"
+  remarks: 
+  syntax: 
+    content: NSModuleLicenseLink[] AssignThirdPartyLicenses(Integer associateId, String moduleOwner, String[] moduleLicenseNames)
+    parameters:
+    - id: associateId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: moduleOwner
+      type: CRMScript.Global.String
+      description: 
+    - id: moduleLicenseNames
+      type: CRMScript.Global.String[]
+      description: 
+    return:
+      type: CRMScript.NetServer.NSModuleLicenseLink[]
   example: 
   - "\n<pre><code>NSLicenseAgent agent;\nInteger associateId;\nString moduleOwner;\nString[] moduleLicenseNames;\nNSModuleLicenseLink[] res = agent.AssignThirdPartyLicenses(associateId, moduleOwner, moduleLicenseNames);</code></pre>\n"
 - uid: CRMScript.NetServer.NSLicenseAgent.ChangeSerialNumber
@@ -83,6 +116,18 @@ items:
   fullName: CRMScript.NetServer.NSLicenseAgent.ChangeSerialNumber
   type: Method
   summary: "\nChange the new serial number for the installation. Requests a new license from SuperLicense, checks if change is authorized.\n"
+  remarks: 
+  syntax: 
+    content: NSLicenseResult ChangeSerialNumber(String newCompanyName, String newSerialNumber)
+    parameters:
+    - id: newCompanyName
+      type: CRMScript.Global.String
+      description: 
+    - id: newSerialNumber
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSLicenseResult
   example: 
   - "\n<pre><code>NSLicenseAgent agent;\nString newCompanyName;\nString newSerialNumber;\nNSLicenseResult res = agent.ChangeSerialNumber(newCompanyName, newSerialNumber);</code></pre>\n"
 - uid: CRMScript.NetServer.NSLicenseAgent.GetLicenseForAllOwnersFromDB
@@ -96,6 +141,12 @@ items:
   fullName: CRMScript.NetServer.NSLicenseAgent.GetLicenseForAllOwnersFromDB
   type: Method
   summary: "\nGet all licenses, with usage, from all module owners as they are stored in the database\n"
+  remarks: 
+  syntax: 
+    content: NSExtendedLicenseInfo[] GetLicenseForAllOwnersFromDB()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSExtendedLicenseInfo[]
   example: 
 - uid: CRMScript.NetServer.NSLicenseAgent.GetLicenseFromDB
   commentId: M:CRMScript.NetServer.NSLicenseAgent.GetLicenseFromDB
@@ -108,6 +159,15 @@ items:
   fullName: CRMScript.NetServer.NSLicenseAgent.GetLicenseFromDB
   type: Method
   summary: "\nGet license, with usage, as it is stored in the database for one particular module owner.\n"
+  remarks: 
+  syntax: 
+    content: NSExtendedLicenseInfo GetLicenseFromDB(String ownerName)
+    parameters:
+    - id: ownerName
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSExtendedLicenseInfo
   example: 
   - "\n<pre><code>NSLicenseAgent agent;\nString ownerName;\nNSExtendedLicenseInfo res = agent.GetLicenseFromDB(ownerName);</code></pre>\n"
 - uid: CRMScript.NetServer.NSLicenseAgent.GetLicenseFromFile
@@ -121,6 +181,15 @@ items:
   fullName: CRMScript.NetServer.NSLicenseAgent.GetLicenseFromFile
   type: Method
   summary: "\nLoad a new license from file\n"
+  remarks: 
+  syntax: 
+    content: NSExtendedLicenseInfo GetLicenseFromFile(String fileContent)
+    parameters:
+    - id: fileContent
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSExtendedLicenseInfo
   example: 
 - uid: CRMScript.NetServer.NSLicenseAgent.GetLicenseFromLicenseServer
   commentId: M:CRMScript.NetServer.NSLicenseAgent.GetLicenseFromLicenseServer
@@ -132,7 +201,16 @@ items:
   nameWithType: NSLicenseAgent.GetLicenseFromLicenseServer
   fullName: CRMScript.NetServer.NSLicenseAgent.GetLicenseFromLicenseServer
   type: Method
-  summary: 
+  summary: "\n<strong>Returns:</strong>NSExtendedLicenseInfo\n"
+  remarks: 
+  syntax: 
+    content: NSExtendedLicenseInfo GetLicenseFromLicenseServer(String ownerName)
+    parameters:
+    - id: ownerName
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSExtendedLicenseInfo
   example: 
 - uid: CRMScript.NetServer.NSLicenseAgent.GetLicenseStatusFromLicenseServer
   commentId: M:CRMScript.NetServer.NSLicenseAgent.GetLicenseStatusFromLicenseServer
@@ -145,6 +223,15 @@ items:
   fullName: CRMScript.NetServer.NSLicenseAgent.GetLicenseStatusFromLicenseServer
   type: Method
   summary: "\nGet License from the license server for a particular module owner.\n"
+  remarks: 
+  syntax: 
+    content: NSCheckLicenseStatusResult GetLicenseStatusFromLicenseServer(String ownerName)
+    parameters:
+    - id: ownerName
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSCheckLicenseStatusResult
   example: 
   - "\n<pre><code>NSLicenseAgent agent;\nString ownerName;\nNSCheckLicenseStatusResult res = agent.GetLicenseStatusFromLicenseServer(ownerName);</code></pre>\n"
 - uid: CRMScript.NetServer.NSLicenseAgent.GetModuleLicenseFromDB
@@ -158,6 +245,18 @@ items:
   fullName: CRMScript.NetServer.NSLicenseAgent.GetModuleLicenseFromDB
   type: Method
   summary: "\nGet license information for one particular license module.\n"
+  remarks: 
+  syntax: 
+    content: NSModuleLicense GetModuleLicenseFromDB(String ownerName, String moduleName)
+    parameters:
+    - id: ownerName
+      type: CRMScript.Global.String
+      description: 
+    - id: moduleName
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSModuleLicense
   example: 
   - "\n<pre><code>NSLicenseAgent agent;\nString ownerName;\nString moduleName;\nNSModuleLicense res = agent.GetModuleLicenseFromDB(ownerName, moduleName);</code></pre>\n"
 - uid: CRMScript.NetServer.NSLicenseAgent.GetModuleLicenseHistoryFromLicenseServer
@@ -171,6 +270,18 @@ items:
   fullName: CRMScript.NetServer.NSLicenseAgent.GetModuleLicenseHistoryFromLicenseServer
   type: Method
   summary: "\nGet details about a license from the license server.\n"
+  remarks: 
+  syntax: 
+    content: String GetModuleLicenseHistoryFromLicenseServer(NSExtendedLicenseInfo licenseInfo, NSExtendedModuleLicense moduleLicense)
+    parameters:
+    - id: licenseInfo
+      type: CRMScript.NetServer.NSExtendedLicenseInfo
+      description: 
+    - id: moduleLicense
+      type: CRMScript.NetServer.NSExtendedModuleLicense
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSLicenseAgent agent;\nNSExtendedLicenseInfo licenseInfo;\nNSExtendedModuleLicense moduleLicense;\nString res = agent.GetModuleLicenseHistoryFromLicenseServer(licenseInfo, moduleLicense);</code></pre>\n"
 - uid: CRMScript.NetServer.NSLicenseAgent.GetSatelliteLicenses
@@ -184,6 +295,15 @@ items:
   fullName: CRMScript.NetServer.NSLicenseAgent.GetSatelliteLicenses
   type: Method
   summary: "\nObtain information about satellite module licenses\n"
+  remarks: 
+  syntax: 
+    content: NSLicenseOwner[] GetSatelliteLicenses(Integer satelliteId)
+    parameters:
+    - id: satelliteId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSLicenseOwner[]
   example: 
   - "\n<pre><code>NSLicenseAgent agent;\nInteger satelliteId;\nNSLicenseOwner[] res = agent.GetSatelliteLicenses(satelliteId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSLicenseAgent.GetShopUrl
@@ -197,6 +317,15 @@ items:
   fullName: CRMScript.NetServer.NSLicenseAgent.GetShopUrl
   type: Method
   summary: "\nGet the shop URL for the specified module owner. This can be used to redirect user to the web shop.\n"
+  remarks: 
+  syntax: 
+    content: String GetShopUrl(String ownerName)
+    parameters:
+    - id: ownerName
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSLicenseAgent agent;\nString ownerName;\nString res = agent.GetShopUrl(ownerName);</code></pre>\n"
 - uid: CRMScript.NetServer.NSLicenseAgent.GetThirdPartyLicenseAssignments
@@ -210,6 +339,18 @@ items:
   fullName: CRMScript.NetServer.NSLicenseAgent.GetThirdPartyLicenseAssignments
   type: Method
   summary: "\nGet license assignments for an associate for licenses belonging to an other module owner than SuperOffice\n"
+  remarks: 
+  syntax: 
+    content: NSModuleLicenseLink[] GetThirdPartyLicenseAssignments(Integer associateId, String moduleOwner)
+    parameters:
+    - id: associateId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: moduleOwner
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSModuleLicenseLink[]
   example: 
   - "\n<pre><code>NSLicenseAgent agent;\nInteger associateId;\nString moduleOwner;\nNSModuleLicenseLink[] res = agent.GetThirdPartyLicenseAssignments(associateId, moduleOwner);</code></pre>\n"
 - uid: CRMScript.NetServer.NSLicenseAgent.GetUserLicenses
@@ -223,6 +364,15 @@ items:
   fullName: CRMScript.NetServer.NSLicenseAgent.GetUserLicenses
   type: Method
   summary: "\nObtain information about associate module licenses\n"
+  remarks: 
+  syntax: 
+    content: NSLicenseOwner[] GetUserLicenses(Integer associateId)
+    parameters:
+    - id: associateId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSLicenseOwner[]
   example: 
   - "\n<pre><code>NSLicenseAgent agent;\nInteger associateId;\nNSLicenseOwner[] res = agent.GetUserLicenses(associateId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSLicenseAgent.GetUserLicensesMDOList
@@ -235,7 +385,13 @@ items:
   nameWithType: NSLicenseAgent.GetUserLicensesMDOList
   fullName: CRMScript.NetServer.NSLicenseAgent.GetUserLicensesMDOList
   type: Method
-  summary: "\nGet all licenses in a NSMDOListItem structure.<p></p>\n<strong>Returns:</strong>NSSelectableMDOListItem[]<p></p>\n<pre><code>NSLicenseAgent agent;\nNSSelectableMDOListItem[] res = agent.GetUserLicensesMDOList();</code></pre>\n"
+  summary: "\nGet all licenses in an NSMDOListItem structure.<p></p>\n<strong>Returns:</strong>NSSelectableMDOListItem[]<p></p>\n<pre><code>NSLicenseAgent agent;\nNSSelectableMDOListItem[] res = agent.GetUserLicensesMDOList();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSSelectableMDOListItem[] GetUserLicensesMDOList()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSSelectableMDOListItem[]
   example: 
   - "\n<pre><code>NSLicenseAgent agent;\nNSSelectableMDOListItem[] res = agent.GetUserLicensesMDOList();</code></pre>\n"
 - uid: CRMScript.NetServer.NSLicenseAgent.#ctor
@@ -247,8 +403,11 @@ items:
   name: '#ctor'
   nameWithType: NSLicenseAgent.#ctor
   fullName: CRMScript.NetServer.NSLicenseAgent.#ctor
-  type: Method
+  type: Constructor
   summary: "\nLicense query, download, activation.\n"
+  remarks: 
+  syntax: 
+    content: NSLicenseAgent
   example: 
   - "\n<pre><code>NSLicenseAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSLicenseAgent.RemoveLicenseFromDB
@@ -262,6 +421,15 @@ items:
   fullName: CRMScript.NetServer.NSLicenseAgent.RemoveLicenseFromDB
   type: Method
   summary: "\nRemove the license from a particular module owner from the database.  It is not permitted to remove licenses from SuperOffice\n"
+  remarks: 
+  syntax: 
+    content: NSLicenseResult RemoveLicenseFromDB(String moduleOwner)
+    parameters:
+    - id: moduleOwner
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSLicenseResult
   example: 
 - uid: CRMScript.NetServer.NSLicenseAgent.UnassignThirdPartyLicenses
   commentId: M:CRMScript.NetServer.NSLicenseAgent.UnassignThirdPartyLicenses
@@ -274,6 +442,21 @@ items:
   fullName: CRMScript.NetServer.NSLicenseAgent.UnassignThirdPartyLicenses
   type: Method
   summary: "\nUnassign (remove) third party licenses\n"
+  remarks: 
+  syntax: 
+    content: NSModuleLicenseLink[] UnassignThirdPartyLicenses(Integer associateId, String moduleOwner, String[] moduleLicenseNames)
+    parameters:
+    - id: associateId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: moduleOwner
+      type: CRMScript.Global.String
+      description: 
+    - id: moduleLicenseNames
+      type: CRMScript.Global.String[]
+      description: 
+    return:
+      type: CRMScript.NetServer.NSModuleLicenseLink[]
   example: 
   - "\n<pre><code>NSLicenseAgent agent;\nInteger associateId;\nString moduleOwner;\nString[] moduleLicenseNames;\nNSModuleLicenseLink[] res = agent.UnassignThirdPartyLicenses(associateId, moduleOwner, moduleLicenseNames);</code></pre>\n"
 - uid: CRMScript.NetServer.NSLicenseAgent.ValidateLicenseInfo
@@ -287,6 +470,15 @@ items:
   fullName: CRMScript.NetServer.NSLicenseAgent.ValidateLicenseInfo
   type: Method
   summary: "\nValidate that a license is consistant.\n"
+  remarks: 
+  syntax: 
+    content: NSLicenseResult ValidateLicenseInfo(NSExtendedLicenseInfo licenseInfo)
+    parameters:
+    - id: licenseInfo
+      type: CRMScript.NetServer.NSExtendedLicenseInfo
+      description: 
+    return:
+      type: CRMScript.NetServer.NSLicenseResult
   example: 
 references:
 - uid: CRMScript.NetServer.NSLicenseAgent
@@ -295,3 +487,145 @@ references:
   name: NSLicenseAgent
   nameWithType: NSLicenseAgent
   fullName: CRMScript.NetServer.NSLicenseAgent
+- uid: CRMScript.NetServer.NSExtendedLicenseInfo
+  commentId: T:CRMScript.NetServer.NSExtendedLicenseInfo
+  isExternal: true
+  name: NSExtendedLicenseInfo
+  nameWithType: NSExtendedLicenseInfo
+  fullName: CRMScript.NetServer.NSExtendedLicenseInfo
+- uid: CRMScript.NetServer.NSLicenseResult
+  commentId: T:CRMScript.NetServer.NSLicenseResult
+  isExternal: true
+  name: NSLicenseResult
+  nameWithType: NSLicenseResult
+  fullName: CRMScript.NetServer.NSLicenseResult
+- uid: CRMScript.Global.String
+  commentId: T:CRMScript.Global.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: CRMScript.Global.String
+- uid: CRMScript.Global.Integer
+  commentId: T:CRMScript.Global.Integer
+  isExternal: true
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Global.Integer
+- uid: CRMScript.Global.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: CRMScript.Global.String[]
+  spec.crmscript:
+  - uid: CRMScript.Global.String
+    isExternal: true
+    name: String
+    nameWithType: String
+    fullName: CRMScript.Global.String
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.Global.String
+  commentId: T:CRMScript.Global.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: CRMScript.Global.String
+- uid: CRMScript.NetServer.NSModuleLicenseLink[]
+  isExternal: true
+  name: NSModuleLicenseLink[]
+  nameWithType: NSModuleLicenseLink[]
+  fullName: CRMScript.NetServer.NSModuleLicenseLink[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSModuleLicenseLink
+    isExternal: true
+    name: NSModuleLicenseLink
+    nameWithType: NSModuleLicenseLink
+    fullName: CRMScript.NetServer.NSModuleLicenseLink
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSModuleLicenseLink
+  commentId: T:CRMScript.NetServer.NSModuleLicenseLink
+  isExternal: true
+  name: NSModuleLicenseLink
+  nameWithType: NSModuleLicenseLink
+  fullName: CRMScript.NetServer.NSModuleLicenseLink
+- uid: CRMScript.NetServer.NSExtendedLicenseInfo[]
+  isExternal: true
+  name: NSExtendedLicenseInfo[]
+  nameWithType: NSExtendedLicenseInfo[]
+  fullName: CRMScript.NetServer.NSExtendedLicenseInfo[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSExtendedLicenseInfo
+    isExternal: true
+    name: NSExtendedLicenseInfo
+    nameWithType: NSExtendedLicenseInfo
+    fullName: CRMScript.NetServer.NSExtendedLicenseInfo
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSExtendedLicenseInfo
+  commentId: T:CRMScript.NetServer.NSExtendedLicenseInfo
+  isExternal: true
+  name: NSExtendedLicenseInfo
+  nameWithType: NSExtendedLicenseInfo
+  fullName: CRMScript.NetServer.NSExtendedLicenseInfo
+- uid: CRMScript.NetServer.NSCheckLicenseStatusResult
+  commentId: T:CRMScript.NetServer.NSCheckLicenseStatusResult
+  isExternal: true
+  name: NSCheckLicenseStatusResult
+  nameWithType: NSCheckLicenseStatusResult
+  fullName: CRMScript.NetServer.NSCheckLicenseStatusResult
+- uid: CRMScript.NetServer.NSModuleLicense
+  commentId: T:CRMScript.NetServer.NSModuleLicense
+  isExternal: true
+  name: NSModuleLicense
+  nameWithType: NSModuleLicense
+  fullName: CRMScript.NetServer.NSModuleLicense
+- uid: CRMScript.NetServer.NSExtendedModuleLicense
+  commentId: T:CRMScript.NetServer.NSExtendedModuleLicense
+  isExternal: true
+  name: NSExtendedModuleLicense
+  nameWithType: NSExtendedModuleLicense
+  fullName: CRMScript.NetServer.NSExtendedModuleLicense
+- uid: CRMScript.NetServer.NSLicenseOwner[]
+  isExternal: true
+  name: NSLicenseOwner[]
+  nameWithType: NSLicenseOwner[]
+  fullName: CRMScript.NetServer.NSLicenseOwner[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSLicenseOwner
+    isExternal: true
+    name: NSLicenseOwner
+    nameWithType: NSLicenseOwner
+    fullName: CRMScript.NetServer.NSLicenseOwner
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSLicenseOwner
+  commentId: T:CRMScript.NetServer.NSLicenseOwner
+  isExternal: true
+  name: NSLicenseOwner
+  nameWithType: NSLicenseOwner
+  fullName: CRMScript.NetServer.NSLicenseOwner
+- uid: CRMScript.NetServer.NSSelectableMDOListItem[]
+  isExternal: true
+  name: NSSelectableMDOListItem[]
+  nameWithType: NSSelectableMDOListItem[]
+  fullName: CRMScript.NetServer.NSSelectableMDOListItem[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSSelectableMDOListItem
+    isExternal: true
+    name: NSSelectableMDOListItem
+    nameWithType: NSSelectableMDOListItem
+    fullName: CRMScript.NetServer.NSSelectableMDOListItem
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSSelectableMDOListItem
+  commentId: T:CRMScript.NetServer.NSSelectableMDOListItem
+  isExternal: true
+  name: NSSelectableMDOListItem
+  nameWithType: NSSelectableMDOListItem
+  fullName: CRMScript.NetServer.NSSelectableMDOListItem

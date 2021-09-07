@@ -29,8 +29,11 @@ items:
   name: '#ctor'
   nameWithType: DbiControl.#ctor
   fullName: CRMScript.Native.DbiControl.#ctor
-  type: Method
+  type: Constructor
   summary: 
+  remarks: 
+  syntax: 
+    content: DbiControl
   example: 
 - uid: CRMScript.Native.DbiControl.getObject
   commentId: M:CRMScript.Native.DbiControl.getObject
@@ -43,6 +46,10 @@ items:
   fullName: CRMScript.Native.DbiControl.getObject
   type: Method
   summary: "\nWhen fetching data from external system, this function is called repedly.<p></p>\nReturns a map of fields and values for the currently fetched object\n"
+  remarks: 
+  syntax: 
+    content: getObject()
+    parameters:
   example: 
 - uid: CRMScript.Native.DbiControl.getParameter
   commentId: M:CRMScript.Native.DbiControl.getParameter
@@ -55,6 +62,13 @@ items:
   fullName: CRMScript.Native.DbiControl.getParameter
   type: Method
   summary: "\nThis function returns the value of the given parameter.\n"
+  remarks: 
+  syntax: 
+    content: getParameter(String name)
+    parameters:
+    - id: name
+      type: CRMScript.Global.String
+      description: 
   example: 
 - uid: CRMScript.Native.DbiControl.getParameters
   commentId: M:CRMScript.Native.DbiControl.getParameters
@@ -67,6 +81,10 @@ items:
   fullName: CRMScript.Native.DbiControl.getParameters
   type: Method
   summary: "\nThis functions is used to retrieve parameters for a DBI setup. It can among else define parameters for limiting the data set, or whatever else you define under the &quot;Settings/DBI&quot; section of eJournal. You will also get saved parameters* so that you can store values from one run to another.<p></p>\nReturns a map of parameters and values.\n"
+  remarks: 
+  syntax: 
+    content: getParameters()
+    parameters:
   example: 
 - uid: CRMScript.Native.DbiControl.saveParameter
   commentId: M:CRMScript.Native.DbiControl.saveParameter
@@ -79,6 +97,16 @@ items:
   fullName: CRMScript.Native.DbiControl.saveParameter
   type: Method
   summary: "\nThis function saves a parameter to the object.\n"
+  remarks: 
+  syntax: 
+    content: saveParameter(String name, String val)
+    parameters:
+    - id: name
+      type: CRMScript.Global.String
+      description: 
+    - id: val
+      type: CRMScript.Global.String
+      description: 
   example: 
 - uid: CRMScript.Native.DbiControl.sendObject
   commentId: M:CRMScript.Native.DbiControl.sendObject
@@ -91,6 +119,13 @@ items:
   fullName: CRMScript.Native.DbiControl.sendObject
   type: Method
   summary: "\nThis function will send an object to the external system agent, during a DBI integration session.\n"
+  remarks: 
+  syntax: 
+    content: sendObject(Map values)
+    parameters:
+    - id: values
+      type: CRMScript.Global.Map
+      description: 
   example: 
 - uid: CRMScript.Native.DbiControl.setParameter
   commentId: M:CRMScript.Native.DbiControl.setParameter
@@ -103,6 +138,16 @@ items:
   fullName: CRMScript.Native.DbiControl.setParameter
   type: Method
   summary: "\nThis function allows you to set parameter values that is sent to the external DBI agent. The parameters set using this function is not saved for later retrieval.\n"
+  remarks: 
+  syntax: 
+    content: setParameter(String name, String val)
+    parameters:
+    - id: name
+      type: CRMScript.Global.String
+      description: 
+    - id: val
+      type: CRMScript.Global.String
+      description: 
   example: 
 references:
 - uid: CRMScript.Native.DbiControl
@@ -111,3 +156,15 @@ references:
   name: DbiControl
   nameWithType: DbiControl
   fullName: CRMScript.Native.DbiControl
+- uid: CRMScript.Global.String
+  commentId: T:CRMScript.Global.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: CRMScript.Global.String
+- uid: CRMScript.Global.Map
+  commentId: T:CRMScript.Global.Map
+  isExternal: true
+  name: Map
+  nameWithType: Map
+  fullName: CRMScript.Global.Map

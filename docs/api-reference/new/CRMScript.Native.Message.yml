@@ -40,6 +40,19 @@ items:
   type: Method
   summary: "\nThis function adds a header to the message.
 The headers will be shown at the view request page, listed at the message.\n"
+  remarks: 
+  syntax: 
+    content: addHeader(String type, String value)
+    parameters:
+    - id: type
+      type: CRMScript.Global.String
+      description: 
+    - id: value
+      type: CRMScript.Global.String
+      description: 
+    - id: Type
+      type: 
+      description: 
   example: 
 - uid: CRMScript.Native.Message.convertInlineImages
   commentId: M:CRMScript.Native.Message.convertInlineImages
@@ -52,6 +65,10 @@ The headers will be shown at the view request page, listed at the message.\n"
   fullName: CRMScript.Native.Message.convertInlineImages
   type: Method
   summary: "\nConvert any inline images in the message from (cid: to normal http).\n"
+  remarks: 
+  syntax: 
+    content: convertInlineImages()
+    parameters:
   example: 
 - uid: CRMScript.Native.Message.getAttachments
   commentId: M:CRMScript.Native.Message.getAttachments
@@ -64,6 +81,10 @@ The headers will be shown at the view request page, listed at the message.\n"
   fullName: CRMScript.Native.Message.getAttachments
   type: Method
   summary: "\nThis function returns an Integer array of all the attachment IDs on the message.\n"
+  remarks: 
+  syntax: 
+    content: getAttachments()
+    parameters:
   example: 
 - uid: CRMScript.Native.Message.getValue
   commentId: M:CRMScript.Native.Message.getValue
@@ -75,7 +96,16 @@ The headers will be shown at the view request page, listed at the message.\n"
   nameWithType: Message.getValue
   fullName: CRMScript.Native.Message.getValue
   type: Method
-  summary: "\nReturns the value of column colName as String.\n"
+  summary: "\nReturns the value of column colName as String.<p></p>\nReturns a string value of the column.\n"
+  remarks: 
+  syntax: 
+    content: String getValue(String colName)
+    parameters:
+    - id: colName
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
 - uid: CRMScript.Native.Message.load
   commentId: M:CRMScript.Native.Message.load
@@ -87,7 +117,14 @@ The headers will be shown at the view request page, listed at the message.\n"
   nameWithType: Message.load
   fullName: CRMScript.Native.Message.load
   type: Method
-  summary: "\nLoad message with given id, returns true if successful or false if not successful.\n"
+  summary: "\nLoad message with given id returns true if successful or false if not successful.\n"
+  remarks: 
+  syntax: 
+    content: load(Integer id)
+    parameters:
+    - id: id
+      type: CRMScript.Global.Integer
+      description: 
   example: 
 - uid: CRMScript.Native.Message.#ctor
   commentId: M:CRMScript.Native.Message.#ctor
@@ -98,8 +135,11 @@ The headers will be shown at the view request page, listed at the message.\n"
   name: '#ctor'
   nameWithType: Message.#ctor
   fullName: CRMScript.Native.Message.#ctor
-  type: Method
+  type: Constructor
   summary: "\nClass for representing an eJournal ticket message.\n"
+  remarks: 
+  syntax: 
+    content: Message
   example: 
   - "\n<pre><code>Message m;\n\nm.load(2); // Loads message with id = 2\nm.setValue(&quot;emailHeader&quot;, &quot;Test&quot;);\nm.setValue(&quot;body&quot;, &quot;This is a test&quot;);\nm.save();</code></pre>\n"
 - uid: CRMScript.Native.Message.save
@@ -113,6 +153,13 @@ The headers will be shown at the view request page, listed at the message.\n"
   fullName: CRMScript.Native.Message.save
   type: Method
   summary: "\nCRMScript method of class Method that saves a message and returns the database IDSaves the message and returns the database ID. You can optionally add logging.\n"
+  remarks: 
+  syntax: 
+    content: save()
+    parameters:
+    - id: log
+      type: CRMScript.Global.String
+      description: Optional. Log entry to add to the ticket log that this message belongs to.
   example: 
 - uid: CRMScript.Native.Message.saveInvolved
   commentId: M:CRMScript.Native.Message.saveInvolved
@@ -125,6 +172,13 @@ The headers will be shown at the view request page, listed at the message.\n"
   fullName: CRMScript.Native.Message.saveInvolved
   type: Method
   summary: "\nCRMScript method in class Message that saves the email address of the recipients of a messageSaves the email address of the recipients of the message even if they are not customers on the request. These recipients are listed as possible recipients in the<strong>Add message</strong>screen.<p></p>\nYou can provide either a single email address or a collection of addresses in a<code>Vector</code>.\n"
+  remarks: 
+  syntax: 
+    content: saveInvolved()
+    parameters:
+    - id: emailAddress
+      type: CRMScript.Global.String
+      description: A single email address for 1 recipient
   example: 
 - uid: CRMScript.Native.Message.send
   commentId: M:CRMScript.Native.Message.send
@@ -137,6 +191,27 @@ The headers will be shown at the view request page, listed at the message.\n"
   fullName: CRMScript.Native.Message.send
   type: Method
   summary: "\nCRMScript method in class Message that sends an email version of the message to the main contacts on the parent ticketSends an email version of the message to the main contacts on the parent ticket.<p></p>\nYou can optionally do one of the following:<p></p>\n<ul><li>Merge with reply template in the settings of the submitted category ID.<p></p>\n</li><li>Using the given subject, and a given heading for the body part* the body heading may be empty for no heading, or null for default heading (same as not using this parameter).<p></p>\n</li></ul>Returns true if everything is OK, otherwise false.\n"
+  remarks: 
+  syntax: 
+    content: Bool send()
+    parameters:
+    - id: to
+      type: CRMScript.Global.Vector
+      description: The to-recipients in the email
+    - id: cc
+      type: CRMScript.Global.Vector
+      description: The cc-recipients in the email
+    - id: bcc
+      type: CRMScript.Global.Vector
+      description: The bcc-recipients in the email
+    - id: categoryId
+      type: CRMScript.Global.Integer
+      description: Optional. The ID of the category to check for reply template merge. Alternative to subject.
+    - id: subject
+      type: CRMScript.Global.String
+      description: Optional. The subject in the email. Alternative to categoryId.
+    return:
+      type: CRMScript.Global.Bool
   example: 
 - uid: CRMScript.Native.Message.sendFacebook
   commentId: M:CRMScript.Native.Message.sendFacebook
@@ -149,6 +224,10 @@ The headers will be shown at the view request page, listed at the message.\n"
   fullName: CRMScript.Native.Message.sendFacebook
   type: Method
   summary: 
+  remarks: 
+  syntax: 
+    content: sendFacebook()
+    parameters:
   example: 
 - uid: CRMScript.Native.Message.sendSms
   commentId: M:CRMScript.Native.Message.sendSms
@@ -161,6 +240,16 @@ The headers will be shown at the view request page, listed at the message.\n"
   fullName: CRMScript.Native.Message.sendSms
   type: Method
   summary: "\nSends an sms-version of the message to the numbers in the vector.\n"
+  remarks: 
+  syntax: 
+    content: sendSms(Vector to)
+    parameters:
+    - id: to
+      type: CRMScript.Global.Vector
+      description: 
+    - id: Vector
+      type: 
+      description: 
   example: 
 - uid: CRMScript.Native.Message.setAttachments
   commentId: M:CRMScript.Native.Message.setAttachments
@@ -173,6 +262,16 @@ The headers will be shown at the view request page, listed at the message.\n"
   fullName: CRMScript.Native.Message.setAttachments
   type: Method
   summary: "\nThis function connects the attachments to the message.\n"
+  remarks: 
+  syntax: 
+    content: setAttachments(Vector ids)
+    parameters:
+    - id: ids
+      type: CRMScript.Global.Vector
+      description: 
+    - id: Vector
+      type: 
+      description: 
   example: 
 - uid: CRMScript.Native.Message.setValue
   commentId: M:CRMScript.Native.Message.setValue
@@ -185,6 +284,18 @@ The headers will be shown at the view request page, listed at the message.\n"
   fullName: CRMScript.Native.Message.setValue
   type: Method
   summary: "\nSets the value of column colName to the given value\n"
+  remarks: "\n<h3>Possible columns</h3><ul><li>id: Integer, The primary key (auto-incremented)</li><li>ticketId: Integer, The ticket this message is a child of.</li><li>createdAt: DateTime, When the message was posted.</li><li>createdBy: Integer, The id of the user who posted the message. The value 1 (system user) for externally posted messages.</li><li>type: String, The type of the message (plaintext/html).</li><li>author: String, A string representing the author of the message. Could be a user's name, or a persons email address.</li><li>slevel: String, The securitylevel of the message (1 is internal, 2 is external).</li><li>message_id: String, The X-Message-Id header value from the email. Used for threading, i.e. connecting messages to existing tickets.</li><li>timeSpent: Integer, The time spent (minutes) for this message.</li><li>timeCharge: Integer, The amount of time (minutes) which should be invoiced for this message.</li><li>body: String, The textbody for the message.</li><li>bodyHtml: String, The html body for the message (if any).</li></ul>\n"
+  syntax: 
+    content: Void setValue(String colName, String value)
+    parameters:
+    - id: colName
+      type: CRMScript.Global.String
+      description: 
+    - id: value
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.Native.Message.toParser
   commentId: M:CRMScript.Native.Message.toParser
@@ -197,6 +308,16 @@ The headers will be shown at the view request page, listed at the message.\n"
   fullName: CRMScript.Native.Message.toParser
   type: Method
   summary: "\nThis function loads many fields of the message to the input parser.\n"
+  remarks: 
+  syntax: 
+    content: toParser(Parser parser)
+    parameters:
+    - id: parser
+      type: CRMScript.Native.Parser
+      description: 
+    - id: Parser
+      type: 
+      description: 
   example: 
 references:
 - uid: CRMScript.Native.Message
@@ -205,3 +326,39 @@ references:
   name: Message
   nameWithType: Message
   fullName: CRMScript.Native.Message
+- uid: CRMScript.Global.String
+  commentId: T:CRMScript.Global.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: CRMScript.Global.String
+- uid: CRMScript.Global.Integer
+  commentId: T:CRMScript.Global.Integer
+  isExternal: true
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Global.Integer
+- uid: CRMScript.Global.Vector
+  commentId: T:CRMScript.Global.Vector
+  isExternal: true
+  name: Vector
+  nameWithType: Vector
+  fullName: CRMScript.Global.Vector
+- uid: CRMScript.Global.Bool
+  commentId: T:CRMScript.Global.Bool
+  isExternal: true
+  name: Bool
+  nameWithType: Bool
+  fullName: CRMScript.Global.Bool
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void
+- uid: CRMScript.Native.Parser
+  commentId: T:CRMScript.Native.Parser
+  isExternal: true
+  name: Parser
+  nameWithType: Parser
+  fullName: CRMScript.Native.Parser

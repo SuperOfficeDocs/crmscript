@@ -37,6 +37,12 @@ items:
   fullName: CRMScript.NetServer.NSReturnInfo.GetAdditionalInfo
   type: Method
   summary: "\nOptional, additional information meant for further processing. This member is ignored for return types None, Message and SoProtocol. It can be used to pass execution-dependent information to the code that handles CustomGui and Other.<p></p>\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSReturnInfo thing;\nString additionalInfo  = thing.GetAdditionalInfo();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: String GetAdditionalInfo()
+    parameters:
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSReturnInfo thing;\nString additionalInfo  = thing.GetAdditionalInfo();</code></pre>\n"
 - uid: CRMScript.NetServer.NSReturnInfo.GetExternalReference
@@ -50,6 +56,12 @@ items:
   fullName: CRMScript.NetServer.NSReturnInfo.GetExternalReference
   type: Method
   summary: "\nThe document plugin's key that uniquely identifies a document; stored in the externalReference field of the document table<p></p>\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSReturnInfo thing;\nString externalReference  = thing.GetExternalReference();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: String GetExternalReference()
+    parameters:
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSReturnInfo thing;\nString externalReference  = thing.GetExternalReference();</code></pre>\n"
 - uid: CRMScript.NetServer.NSReturnInfo.GetSuccess
@@ -63,6 +75,12 @@ items:
   fullName: CRMScript.NetServer.NSReturnInfo.GetSuccess
   type: Method
   summary: "\nid the call succeed. A successful call may still return a message or other return value.<p></p>\n<strong>Returns:</strong>Bool<p></p>\n<pre><code>NSReturnInfo thing;\nBool success  = thing.GetSuccess();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: Bool GetSuccess()
+    parameters:
+    return:
+      type: CRMScript.Global.Bool
   example: 
   - "\n<pre><code>NSReturnInfo thing;\nBool success  = thing.GetSuccess();</code></pre>\n"
 - uid: CRMScript.NetServer.NSReturnInfo.GetType
@@ -75,7 +93,13 @@ items:
   nameWithType: NSReturnInfo.GetType
   fullName: CRMScript.NetServer.NSReturnInfo.GetType
   type: Method
-  summary: "\nHow is the return value to be understood by the caller<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<ul><li>Enum: 0 = None</li><li>Enum: 1 = Message</li><li>Enum: 2 = SoProtocol</li><li>Enum: 3 = CustomGui</li><li>Enum: 4 = Other</li><li>Enum: 5 = URL</li></ul><pre><code>NSReturnInfo thing;\nInteger type  = thing.GetType();</code></pre>\n"
+  summary: "\nHow is the return value to be understood by the caller<p></p>\n<strong>Returns:</strong>Integer\n"
+  remarks: 
+  syntax: 
+    content: Integer GetType()
+    parameters:
+    return:
+      type: CRMScript.Global.Integer
   example: 
   - "\n<pre><code>NSReturnInfo thing;\nInteger type  = thing.GetType();</code></pre>\n"
 - uid: CRMScript.NetServer.NSReturnInfo.GetValue
@@ -89,6 +113,12 @@ items:
   fullName: CRMScript.NetServer.NSReturnInfo.GetValue
   type: Method
   summary: "\nReturn value, may be blank.<p></p>\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSReturnInfo thing;\nString value  = thing.GetValue();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: String GetValue()
+    parameters:
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSReturnInfo thing;\nString value  = thing.GetValue();</code></pre>\n"
 - uid: CRMScript.NetServer.NSReturnInfo.GetVersionId
@@ -102,6 +132,12 @@ items:
   fullName: CRMScript.NetServer.NSReturnInfo.GetVersionId
   type: Method
   summary: "\nThe document plugin's version id that uniquely identifies one version of a document. If versioning is not supported, this will be blank. When versioning is supported, blank values imply the latest checked-in version.<p></p>\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSReturnInfo thing;\nString versionId  = thing.GetVersionId();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: String GetVersionId()
+    parameters:
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSReturnInfo thing;\nString versionId  = thing.GetVersionId();</code></pre>\n"
 - uid: CRMScript.NetServer.NSReturnInfo.#ctor
@@ -113,8 +149,11 @@ items:
   name: '#ctor'
   nameWithType: NSReturnInfo.#ctor
   fullName: CRMScript.NetServer.NSReturnInfo.#ctor
-  type: Method
+  type: Constructor
   summary: 
+  remarks: 
+  syntax: 
+    content: NSReturnInfo
   example: 
 - uid: CRMScript.NetServer.NSReturnInfo.SetAdditionalInfo
   commentId: M:CRMScript.NetServer.NSReturnInfo.SetAdditionalInfo
@@ -126,7 +165,14 @@ items:
   nameWithType: NSReturnInfo.SetAdditionalInfo
   fullName: CRMScript.NetServer.NSReturnInfo.SetAdditionalInfo
   type: Method
-  summary: "\nOptional, additional information meant for further processing. This member is ignored for return types None, Message and SoProtocol. It can be used to pass execution-dependent information to the code that handles CustomGui and Other.<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>additionalInfo</strong>String</li></ul><pre><code>NSReturnInfo thing;\nString additionalInfo;\nthing.SetAdditionalInfo(additionalInfo);</code></pre>\n"
+  summary: "\nOptional, additional information meant for further processing. This member is ignored for return types None, Message and SoProtocol. It can be used to pass execution-dependent information to the code that handles CustomGui and Other.\n"
+  remarks: 
+  syntax: 
+    content: SetAdditionalInfo(String additionalInfo)
+    parameters:
+    - id: additionalInfo
+      type: CRMScript.Global.String
+      description: 
   example: 
   - "\n<pre><code>NSReturnInfo thing;\nString additionalInfo;\nthing.SetAdditionalInfo(additionalInfo);</code></pre>\n"
 - uid: CRMScript.NetServer.NSReturnInfo.SetExternalReference
@@ -139,7 +185,14 @@ items:
   nameWithType: NSReturnInfo.SetExternalReference
   fullName: CRMScript.NetServer.NSReturnInfo.SetExternalReference
   type: Method
-  summary: "\nThe document plugin's key that uniquely identifies a document; stored in the externalReference field of the document table<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>externalReference</strong>String</li></ul><pre><code>NSReturnInfo thing;\nString externalReference;\nthing.SetExternalReference(externalReference);</code></pre>\n"
+  summary: "\nThe document plugin's key that uniquely identifies a document; stored in the externalReference field of the document table\n"
+  remarks: 
+  syntax: 
+    content: SetExternalReference(String externalReference)
+    parameters:
+    - id: externalReference
+      type: CRMScript.Global.String
+      description: 
   example: 
   - "\n<pre><code>NSReturnInfo thing;\nString externalReference;\nthing.SetExternalReference(externalReference);</code></pre>\n"
 - uid: CRMScript.NetServer.NSReturnInfo.SetSuccess
@@ -152,7 +205,14 @@ items:
   nameWithType: NSReturnInfo.SetSuccess
   fullName: CRMScript.NetServer.NSReturnInfo.SetSuccess
   type: Method
-  summary: "\nid the call succeed. A successful call may still return a message or other return value.<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>success</strong>Bool</li></ul><pre><code>NSReturnInfo thing;\nBool success;\nthing.SetSuccess(success);</code></pre>\n"
+  summary: "\nid the call succeed. A successful call may still return a message or other return value.\n"
+  remarks: 
+  syntax: 
+    content: SetSuccess(Bool success)
+    parameters:
+    - id: success
+      type: CRMScript.Global.Bool
+      description: 
   example: 
   - "\n<pre><code>NSReturnInfo thing;\nBool success;\nthing.SetSuccess(success);</code></pre>\n"
 - uid: CRMScript.NetServer.NSReturnInfo.SetType
@@ -165,7 +225,14 @@ items:
   nameWithType: NSReturnInfo.SetType
   fullName: CRMScript.NetServer.NSReturnInfo.SetType
   type: Method
-  summary: "\nHow is the return value to be understood by the caller<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>type</strong>Integer</li><li>Enum: 0 = None</li><li>Enum: 1 = Message</li><li>Enum: 2 = SoProtocol</li><li>Enum: 3 = CustomGui</li><li>Enum: 4 = Other</li><li>Enum: 5 = URL</li></ul><pre><code>NSReturnInfo thing;\nInteger type;\nthing.SetType(type);</code></pre>\n"
+  summary: "\nHow is the return value to be understood by the caller\n"
+  remarks: "\n<h3>Enum: ReturnType</h3><ul><li>0 = None</li><li>1 = Message</li><li>2 = SoProtocol</li><li>3 = CustomGui</li><li>4 = Other</li><li>5 = URL</li></ul>\n"
+  syntax: 
+    content: SetType(Integer type)
+    parameters:
+    - id: type
+      type: CRMScript.Global.Integer
+      description: 
   example: 
   - "\n<pre><code>NSReturnInfo thing;\nInteger type;\nthing.SetType(type);</code></pre>\n"
 - uid: CRMScript.NetServer.NSReturnInfo.SetValue
@@ -178,7 +245,14 @@ items:
   nameWithType: NSReturnInfo.SetValue
   fullName: CRMScript.NetServer.NSReturnInfo.SetValue
   type: Method
-  summary: "\nReturn value, may be blank.<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>value</strong>String</li></ul><pre><code>NSReturnInfo thing;\nString value;\nthing.SetValue(value);</code></pre>\n"
+  summary: "\nReturn value, may be blank.\n"
+  remarks: 
+  syntax: 
+    content: SetValue(String value)
+    parameters:
+    - id: value
+      type: CRMScript.Global.String
+      description: 
   example: 
   - "\n<pre><code>NSReturnInfo thing;\nString value;\nthing.SetValue(value);</code></pre>\n"
 - uid: CRMScript.NetServer.NSReturnInfo.SetVersionId
@@ -191,7 +265,14 @@ items:
   nameWithType: NSReturnInfo.SetVersionId
   fullName: CRMScript.NetServer.NSReturnInfo.SetVersionId
   type: Method
-  summary: "\nThe document plugin's version id that uniquely identifies one version of a document. If versioning is not supported, this will be blank. When versioning is supported, blank values imply the latest checked-in version.<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>versionId</strong>String</li></ul><pre><code>NSReturnInfo thing;\nString versionId;\nthing.SetVersionId(versionId);</code></pre>\n"
+  summary: "\nThe document plugin's version id that uniquely identifies one version of a document. If versioning is not supported, this will be blank. When versioning is supported, blank values imply the latest checked-in version.\n"
+  remarks: 
+  syntax: 
+    content: SetVersionId(String versionId)
+    parameters:
+    - id: versionId
+      type: CRMScript.Global.String
+      description: 
   example: 
   - "\n<pre><code>NSReturnInfo thing;\nString versionId;\nthing.SetVersionId(versionId);</code></pre>\n"
 references:
@@ -201,3 +282,21 @@ references:
   name: NSReturnInfo
   nameWithType: NSReturnInfo
   fullName: CRMScript.NetServer.NSReturnInfo
+- uid: CRMScript.Global.String
+  commentId: T:CRMScript.Global.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: CRMScript.Global.String
+- uid: CRMScript.Global.Bool
+  commentId: T:CRMScript.Global.Bool
+  isExternal: true
+  name: Bool
+  nameWithType: Bool
+  fullName: CRMScript.Global.Bool
+- uid: CRMScript.Global.Integer
+  commentId: T:CRMScript.Global.Integer
+  isExternal: true
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Global.Integer

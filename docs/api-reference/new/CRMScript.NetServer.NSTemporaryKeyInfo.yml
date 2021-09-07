@@ -33,6 +33,12 @@ items:
   fullName: CRMScript.NetServer.NSTemporaryKeyInfo.GetDomain
   type: Method
   summary: "\nThe domain for this key. Unknown if key is not valid.<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = MailingRecipient</li><li>Enum: 2 = FormSubmitterRecipient</li><li>Enum: 3 = ViewTicketInCustomerCenter</li><li>Enum: 4 = LoginCustomerCenter</li><li>Enum: 5 = PublicFaq</li><li>Enum: 6 = ChangePasswordCustomerCenter</li></ul><pre><code>NSTemporaryKeyInfo thing;\nInteger domain  = thing.GetDomain();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: Integer GetDomain()
+    parameters:
+    return:
+      type: CRMScript.Global.Integer
   example: 
   - "\n<pre><code>NSTemporaryKeyInfo thing;\nInteger domain  = thing.GetDomain();</code></pre>\n"
 - uid: CRMScript.NetServer.NSTemporaryKeyInfo.GetIsExpired
@@ -46,6 +52,12 @@ items:
   fullName: CRMScript.NetServer.NSTemporaryKeyInfo.GetIsExpired
   type: Method
   summary: "\nWhether the key is expired or not.<p></p>\n<strong>Returns:</strong>Bool<p></p>\n<pre><code>NSTemporaryKeyInfo thing;\nBool isExpired  = thing.GetIsExpired();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: Bool GetIsExpired()
+    parameters:
+    return:
+      type: CRMScript.Global.Bool
   example: 
   - "\n<pre><code>NSTemporaryKeyInfo thing;\nBool isExpired  = thing.GetIsExpired();</code></pre>\n"
 - uid: CRMScript.NetServer.NSTemporaryKeyInfo.GetPersonId
@@ -59,6 +71,12 @@ items:
   fullName: CRMScript.NetServer.NSTemporaryKeyInfo.GetPersonId
   type: Method
   summary: "\nThe person id this key is related to. May be null.<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<pre><code>NSTemporaryKeyInfo thing;\nInteger personId  = thing.GetPersonId();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: Integer GetPersonId()
+    parameters:
+    return:
+      type: CRMScript.Global.Integer
   example: 
   - "\n<pre><code>NSTemporaryKeyInfo thing;\nInteger personId  = thing.GetPersonId();</code></pre>\n"
 - uid: CRMScript.NetServer.NSTemporaryKeyInfo.GetTargetId
@@ -72,6 +90,12 @@ items:
   fullName: CRMScript.NetServer.NSTemporaryKeyInfo.GetTargetId
   type: Method
   summary: "\nThe primary key of the entity this temporary key is for, dependent of dmain<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<pre><code>NSTemporaryKeyInfo thing;\nInteger targetId  = thing.GetTargetId();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: Integer GetTargetId()
+    parameters:
+    return:
+      type: CRMScript.Global.Integer
   example: 
   - "\n<pre><code>NSTemporaryKeyInfo thing;\nInteger targetId  = thing.GetTargetId();</code></pre>\n"
 - uid: CRMScript.NetServer.NSTemporaryKeyInfo.#ctor
@@ -83,8 +107,11 @@ items:
   name: '#ctor'
   nameWithType: NSTemporaryKeyInfo.#ctor
   fullName: CRMScript.NetServer.NSTemporaryKeyInfo.#ctor
-  type: Method
+  type: Constructor
   summary: 
+  remarks: 
+  syntax: 
+    content: NSTemporaryKeyInfo
   example: 
 - uid: CRMScript.NetServer.NSTemporaryKeyInfo.SetDomain
   commentId: M:CRMScript.NetServer.NSTemporaryKeyInfo.SetDomain
@@ -96,7 +123,14 @@ items:
   nameWithType: NSTemporaryKeyInfo.SetDomain
   fullName: CRMScript.NetServer.NSTemporaryKeyInfo.SetDomain
   type: Method
-  summary: "\nThe domain for this key. Unknown if key is not valid.<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>domain</strong>Integer</li><li>Enum: 0 = Unknown</li><li>Enum: 1 = MailingRecipient</li><li>Enum: 2 = FormSubmitterRecipient</li><li>Enum: 3 = ViewTicketInCustomerCenter</li><li>Enum: 4 = LoginCustomerCenter</li><li>Enum: 5 = PublicFaq</li><li>Enum: 6 = ChangePasswordCustomerCenter</li></ul><pre><code>NSTemporaryKeyInfo thing;\nInteger domain;\nthing.SetDomain(domain);</code></pre>\n"
+  summary: "\nThe domain for this key. Unknown if key is not valid.\n"
+  remarks: "\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = MailingRecipient</li><li>Enum: 2 = FormSubmitterRecipient</li><li>Enum: 3 = ViewTicketInCustomerCenter</li><li>Enum: 4 = LoginCustomerCenter</li><li>Enum: 5 = PublicFaq</li><li>Enum: 6 = ChangePasswordCustomerCenter</li></ul>\n"
+  syntax: 
+    content: SetDomain(Integer domain)
+    parameters:
+    - id: domain
+      type: CRMScript.Global.Integer
+      description: 
   example: 
   - "\n<pre><code>NSTemporaryKeyInfo thing;\nInteger domain;\nthing.SetDomain(domain);</code></pre>\n"
 - uid: CRMScript.NetServer.NSTemporaryKeyInfo.SetIsExpired
@@ -109,7 +143,14 @@ items:
   nameWithType: NSTemporaryKeyInfo.SetIsExpired
   fullName: CRMScript.NetServer.NSTemporaryKeyInfo.SetIsExpired
   type: Method
-  summary: "\nWhether the key is expired or not.<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>isExpired</strong>Bool</li></ul><pre><code>NSTemporaryKeyInfo thing;\nBool isExpired;\nthing.SetIsExpired(isExpired);</code></pre>\n"
+  summary: "\nWhether the key is expired or not.\n"
+  remarks: 
+  syntax: 
+    content: SetIsExpired(Bool isExpired)
+    parameters:
+    - id: isExpired
+      type: CRMScript.Global.Bool
+      description: 
   example: 
   - "\n<pre><code>NSTemporaryKeyInfo thing;\nBool isExpired;\nthing.SetIsExpired(isExpired);</code></pre>\n"
 - uid: CRMScript.NetServer.NSTemporaryKeyInfo.SetPersonId
@@ -122,7 +163,14 @@ items:
   nameWithType: NSTemporaryKeyInfo.SetPersonId
   fullName: CRMScript.NetServer.NSTemporaryKeyInfo.SetPersonId
   type: Method
-  summary: "\nThe person id this key is related to. May be null.<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>personId</strong>Integer</li></ul><pre><code>NSTemporaryKeyInfo thing;\nInteger personId;\nthing.SetPersonId(personId);</code></pre>\n"
+  summary: "\nThe person id this key is related to. May be null.\n"
+  remarks: 
+  syntax: 
+    content: SetPersonId(Integer personId)
+    parameters:
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
   example: 
   - "\n<pre><code>NSTemporaryKeyInfo thing;\nInteger personId;\nthing.SetPersonId(personId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSTemporaryKeyInfo.SetTargetId
@@ -135,7 +183,14 @@ items:
   nameWithType: NSTemporaryKeyInfo.SetTargetId
   fullName: CRMScript.NetServer.NSTemporaryKeyInfo.SetTargetId
   type: Method
-  summary: "\nThe primary key of the entity this temporary key is for, dependent of dmain<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>targetId</strong>Integer</li></ul><pre><code>NSTemporaryKeyInfo thing;\nInteger targetId;\nthing.SetTargetId(targetId);</code></pre>\n"
+  summary: "\nThe primary key of the entity this temporary key is for, dependent of dmain\n"
+  remarks: 
+  syntax: 
+    content: SetTargetId(Integer targetId)
+    parameters:
+    - id: targetId
+      type: CRMScript.Global.Integer
+      description: 
   example: 
   - "\n<pre><code>NSTemporaryKeyInfo thing;\nInteger targetId;\nthing.SetTargetId(targetId);</code></pre>\n"
 references:
@@ -145,3 +200,15 @@ references:
   name: NSTemporaryKeyInfo
   nameWithType: NSTemporaryKeyInfo
   fullName: CRMScript.NetServer.NSTemporaryKeyInfo
+- uid: CRMScript.Global.Integer
+  commentId: T:CRMScript.Global.Integer
+  isExternal: true
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Global.Integer
+- uid: CRMScript.Global.Bool
+  commentId: T:CRMScript.Global.Bool
+  isExternal: true
+  name: Bool
+  nameWithType: Bool
+  fullName: CRMScript.Global.Bool

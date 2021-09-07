@@ -62,6 +62,21 @@ items:
   fullName: CRMScript.NetServer.NSConfigurationAgent.ClearConfigurationCache
   type: Method
   summary: "\nConfiguration XML's may be expensive to build and parse, and are therefore cached to the database.<para/>Cahcing is per application/instance/associate, and can be turned off through the config file.<para/>If caching is on, and the configuration is changed, it is necessary to clear the cached configurations from the database, through this call.<para/>Note that changes to the externalapplication table require cache invalidation. SoAdmin will do so automatically.\n"
+  remarks: 
+  syntax: 
+    content: Void ClearConfigurationCache(String application, String instance, Bool forAllAssociates)
+    parameters:
+    - id: application
+      type: CRMScript.Global.String
+      description: 
+    - id: instance
+      type: CRMScript.Global.String
+      description: 
+    - id: forAllAssociates
+      type: CRMScript.Global.Bool
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSConfigurationAgent agent;\nString application;\nString instance;\nBool forAllAssociates;\nagent.ClearConfigurationCache(application, instance, forAllAssociates);</code></pre>\n"
 - uid: CRMScript.NetServer.NSConfigurationAgent.CreateDefaultDiaryViewEntity
@@ -76,6 +91,12 @@ items:
   type: Method
   summary: "\nSet default values into a new NSDiaryViewEntity.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSDiaryViewEntity<p></p>\n<pre><code>NSConfigurationAgent agent;\nNSDiaryViewEntity thing = agent.CreateDefaultDiaryViewEntity();\nthing = agent.SaveDiaryViewEntity(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSDiaryViewEntity CreateDefaultDiaryViewEntity()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSDiaryViewEntity
   example: 
   - "\n<pre><code>NSConfigurationAgent agent;\nNSDiaryViewEntity thing = agent.CreateDefaultDiaryViewEntity();\nthing = agent.SaveDiaryViewEntity(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSConfigurationAgent.CreateDefaultSystemEventEntity
@@ -90,6 +111,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   type: Method
   summary: "\nSet default values into a new NSSystemEventEntity.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSSystemEventEntity<p></p>\n<pre><code>NSConfigurationAgent agent;\nNSSystemEventEntity thing = agent.CreateDefaultSystemEventEntity();\nthing = agent.SaveSystemEventEntity(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSSystemEventEntity CreateDefaultSystemEventEntity()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSSystemEventEntity
   example: 
   - "\n<pre><code>NSConfigurationAgent agent;\nNSSystemEventEntity thing = agent.CreateDefaultSystemEventEntity();\nthing = agent.SaveSystemEventEntity(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSConfigurationAgent.DeleteDiaryViewEntity
@@ -103,6 +130,16 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSConfigurationAgent.DeleteDiaryViewEntity
   type: Method
   summary: "\nDeletes the NSDiaryViewEntity\n"
+  remarks: 
+  syntax: 
+    content: DeleteDiaryViewEntity(Integer diaryViewEntity);
+    parameters:
+    - id: diaryViewEntity;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: diaryViewEntityId
+      type: 
+      description: 
   example: 
   - "\n<pre><code>NSConfigurationAgent agent;\nagent.DeleteDiaryViewEntity(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSConfigurationAgent.DeleteSystemEventEntity
@@ -116,6 +153,16 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSConfigurationAgent.DeleteSystemEventEntity
   type: Method
   summary: "\nDeletes the NSSystemEventEntity\n"
+  remarks: 
+  syntax: 
+    content: DeleteSystemEventEntity(Integer systemEventEntity);
+    parameters:
+    - id: systemEventEntity;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: systemEventEntityId
+      type: 
+      description: 
   example: 
   - "\n<pre><code>NSConfigurationAgent agent;\nagent.DeleteSystemEventEntity(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSConfigurationAgent.DeleteWindowPosSize
@@ -129,6 +176,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSConfigurationAgent.DeleteWindowPosSize
   type: Method
   summary: "\nDeletes a window and dialog position and size setting.\n"
+  remarks: 
+  syntax: 
+    content: Void DeleteWindowPosSize(Integer windowPosSizeId)
+    parameters:
+    - id: windowPosSizeId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSConfigurationAgent.ExistsSystemEvent
   commentId: M:CRMScript.NetServer.NSConfigurationAgent.ExistsSystemEvent
@@ -141,6 +197,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSConfigurationAgent.ExistsSystemEvent
   type: Method
   summary: "\nIs there a system event with the given key?\n"
+  remarks: 
+  syntax: 
+    content: Bool ExistsSystemEvent(String key)
+    parameters:
+    - id: key
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.Bool
   example: 
   - "\n<pre><code>NSConfigurationAgent agent;\nString key;\nBool res = agent.ExistsSystemEvent(key);</code></pre>\n"
 - uid: CRMScript.NetServer.NSConfigurationAgent.GetAnyConfiguration
@@ -154,6 +219,24 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSConfigurationAgent.GetAnyConfiguration
   type: Method
   summary: "\nGet one defined configuration fragment, with full reference resolution and parsing applied. This is essentially the same service as the GetPageConfiguration, except that this service is not locked to objects of type Page.\n"
+  remarks: 
+  syntax: 
+    content: String GetAnyConfiguration(String application, String instance, String item, String type)
+    parameters:
+    - id: application
+      type: CRMScript.Global.String
+      description: 
+    - id: instance
+      type: CRMScript.Global.String
+      description: 
+    - id: item
+      type: CRMScript.Global.String
+      description: 
+    - id: type
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSConfigurationAgent agent;\nString application;\nString instance;\nString item;\nString type;\nString res = agent.GetAnyConfiguration(application, instance, item, type);</code></pre>\n"
 - uid: CRMScript.NetServer.NSConfigurationAgent.GetApplicationConfiguration
@@ -167,6 +250,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSConfigurationAgent.GetApplicationConfiguration
   type: Method
   summary: "\nReturn the application configuration. This is a list of pages, with information about the name, main panel and preference mappings of each page.\n"
+  remarks: 
+  syntax: 
+    content: String GetApplicationConfiguration(String application, String instance)
+    parameters:
+    - id: application
+      type: CRMScript.Global.String
+      description: 
+    - id: instance
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSConfigurationAgent agent;\nString application;\nString instance;\nString res = agent.GetApplicationConfiguration(application, instance);</code></pre>\n"
 - uid: CRMScript.NetServer.NSConfigurationAgent.GetCRMUrl
@@ -180,6 +275,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSConfigurationAgent.GetCRMUrl
   type: Method
   summary: "\nReturns a valid url based in the soprotocol provided\n"
+  remarks: 
+  syntax: 
+    content: String GetCRMUrl(String soProtocol, String currents, Bool frameless)
+    parameters:
+    - id: soProtocol
+      type: CRMScript.Global.String
+      description: 
+    - id: currents
+      type: CRMScript.Global.String
+      description: 
+    - id: frameless
+      type: CRMScript.Global.Bool
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSConfigurationAgent agent;\nString soProtocol;\nString currents;\nBool frameless;\nString res = agent.GetCRMUrl(soProtocol, currents, frameless);</code></pre>\n"
 - uid: CRMScript.NetServer.NSConfigurationAgent.GetCSAuthUrl
@@ -193,6 +303,24 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSConfigurationAgent.GetCSAuthUrl
   type: Method
   summary: "\nWill generate an url to the emarketing module\n"
+  remarks: 
+  syntax: 
+    content: String GetCSAuthUrl(String language, String programName, String action, String extraParameters)
+    parameters:
+    - id: language
+      type: CRMScript.Global.String
+      description: 
+    - id: programName
+      type: CRMScript.Global.String
+      description: 
+    - id: action
+      type: CRMScript.Global.String
+      description: 
+    - id: extraParameters
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSConfigurationAgent agent;\nString language;\nString programName;\nString action;\nString extraParameters;\nString res = agent.GetCSAuthUrl(language, programName, action, extraParameters);</code></pre>\n"
 - uid: CRMScript.NetServer.NSConfigurationAgent.GetCsCgiUrlInternal
@@ -206,6 +334,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSConfigurationAgent.GetCsCgiUrlInternal
   type: Method
   summary: "\nThis method will get the host name for CS<p></p>\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSConfigurationAgent agent;\nString res = agent.GetCsCgiUrlInternal();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: String GetCsCgiUrlInternal()
+    parameters:
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSConfigurationAgent agent;\nString res = agent.GetCsCgiUrlInternal();</code></pre>\n"
 - uid: CRMScript.NetServer.NSConfigurationAgent.GetCsProgramUrl
@@ -219,6 +353,24 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSConfigurationAgent.GetCsProgramUrl
   type: Method
   summary: "\nThis method will convert a module name into a CS URL.\n"
+  remarks: 
+  syntax: 
+    content: String GetCsProgramUrl(String language, String programName, String action, String extraParameters)
+    parameters:
+    - id: language
+      type: CRMScript.Global.String
+      description: 
+    - id: programName
+      type: CRMScript.Global.String
+      description: 
+    - id: action
+      type: CRMScript.Global.String
+      description: 
+    - id: extraParameters
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSConfigurationAgent agent;\nString language;\nString programName;\nString action;\nString extraParameters;\nString res = agent.GetCsProgramUrl(language, programName, action, extraParameters);</code></pre>\n"
 - uid: CRMScript.NetServer.NSConfigurationAgent.GetCSRegistryValue
@@ -232,6 +384,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSConfigurationAgent.GetCSRegistryValue
   type: Method
   summary: "\nThis method will get a value from the CS Registry table.\n"
+  remarks: 
+  syntax: 
+    content: String GetCSRegistryValue(Integer entry)
+    parameters:
+    - id: entry
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSConfigurationAgent agent;\nInteger entry;\nString res = agent.GetCSRegistryValue(entry);</code></pre>\n"
 - uid: CRMScript.NetServer.NSConfigurationAgent.GetCSWwwFolder
@@ -245,6 +406,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSConfigurationAgent.GetCSWwwFolder
   type: Method
   summary: "\nThis method will get the www folder for CS<p></p>\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSConfigurationAgent agent;\nString res = agent.GetCSWwwFolder();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: String GetCSWwwFolder()
+    parameters:
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSConfigurationAgent agent;\nString res = agent.GetCSWwwFolder();</code></pre>\n"
 - uid: CRMScript.NetServer.NSConfigurationAgent.GetCustomerUrl
@@ -258,6 +425,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSConfigurationAgent.GetCustomerUrl
   type: Method
   summary: "\nThis method will get the URL for the external access to the customer center<p></p>\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSConfigurationAgent agent;\nString res = agent.GetCustomerUrl();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: String GetCustomerUrl()
+    parameters:
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSConfigurationAgent agent;\nString res = agent.GetCustomerUrl();</code></pre>\n"
 - uid: CRMScript.NetServer.NSConfigurationAgent.GetDiaryViewEntity
@@ -270,7 +443,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSConfigurationAgent.GetDiaryViewEntity
   fullName: CRMScript.NetServer.NSConfigurationAgent.GetDiaryViewEntity
   type: Method
-  summary: "\nGets a NSDiaryViewEntity object.\n"
+  summary: "\nGets an NSDiaryViewEntity object.\n"
+  remarks: 
+  syntax: 
+    content: NSDiaryViewEntity GetDiaryViewEntity(Integer diaryViewEntityId);
+    parameters:
+    - id: diaryViewEntityId;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: diaryViewEntityId
+      type: 
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDiaryViewEntity
   example: 
   - "\n<pre><code>NSConfigurationAgent agent;\nNSDiaryViewEntity thing = agent.GetDiaryViewEntity(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSConfigurationAgent.GetEmailNumberOfDays
@@ -284,6 +469,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSConfigurationAgent.GetEmailNumberOfDays
   type: Method
   summary: "\n<strong>Returns:</strong>Integer<p></p>\n<pre><code>NSConfigurationAgent agent;\nInteger res = agent.GetEmailNumberOfDays();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: Integer GetEmailNumberOfDays()
+    parameters:
+    return:
+      type: CRMScript.Global.Integer
   example: 
   - "\n<pre><code>NSConfigurationAgent agent;\nInteger res = agent.GetEmailNumberOfDays();</code></pre>\n"
 - uid: CRMScript.NetServer.NSConfigurationAgent.GetEMarketingUrl
@@ -296,7 +487,16 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSConfigurationAgent.GetEMarketingUrl
   fullName: CRMScript.NetServer.NSConfigurationAgent.GetEMarketingUrl
   type: Method
-  summary: 
+  summary: "\n<strong>Returns:</strong>String\n"
+  remarks: 
+  syntax: 
+    content: String GetEMarketingUrl(String language)
+    parameters:
+    - id: language
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
 - uid: CRMScript.NetServer.NSConfigurationAgent.GetFilterList
   commentId: M:CRMScript.NetServer.NSConfigurationAgent.GetFilterList
@@ -309,6 +509,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSConfigurationAgent.GetFilterList
   type: Method
   summary: "\nGet the list of filters to be used for processing the configuration data for this application.\n"
+  remarks: 
+  syntax: 
+    content: String GetFilterList(String application, String instance)
+    parameters:
+    - id: application
+      type: CRMScript.Global.String
+      description: 
+    - id: instance
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSConfigurationAgent agent;\nString application;\nString instance;\nString res = agent.GetFilterList(application, instance);</code></pre>\n"
 - uid: CRMScript.NetServer.NSConfigurationAgent.GetHelpDispatcherUrl
@@ -322,6 +534,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSConfigurationAgent.GetHelpDispatcherUrl
   type: Method
   summary: "\nWill get the GetHelpDispatcherUrl used by the help system<p></p>\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSConfigurationAgent agent;\nString res = agent.GetHelpDispatcherUrl();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: String GetHelpDispatcherUrl()
+    parameters:
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSConfigurationAgent agent;\nString res = agent.GetHelpDispatcherUrl();</code></pre>\n"
 - uid: CRMScript.NetServer.NSConfigurationAgent.GetMyWindowPosSizes
@@ -335,6 +553,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSConfigurationAgent.GetMyWindowPosSizes
   type: Method
   summary: "\nGets the window and dialog position and size settings belonging to the currently logged on user<p></p>\n<strong>Returns:</strong>NSWindowPosSize[]<p></p>\n<pre><code>NSConfigurationAgent agent;\nNSWindowPosSize[] res = agent.GetMyWindowPosSizes();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSWindowPosSize[] GetMyWindowPosSizes()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSWindowPosSize[]
   example: 
   - "\n<pre><code>NSConfigurationAgent agent;\nNSWindowPosSize[] res = agent.GetMyWindowPosSizes();</code></pre>\n"
 - uid: CRMScript.NetServer.NSConfigurationAgent.GetObjectMapping
@@ -348,6 +572,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSConfigurationAgent.GetObjectMapping
   type: Method
   summary: "\nGet the object mappings, i.e., the what code objects should be instantiated to handle the entities of the client configuration.\n"
+  remarks: 
+  syntax: 
+    content: String GetObjectMapping(String application, String instance)
+    parameters:
+    - id: application
+      type: CRMScript.Global.String
+      description: 
+    - id: instance
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSConfigurationAgent agent;\nString application;\nString instance;\nString res = agent.GetObjectMapping(application, instance);</code></pre>\n"
 - uid: CRMScript.NetServer.NSConfigurationAgent.GetPageConfiguration
@@ -361,6 +597,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSConfigurationAgent.GetPageConfiguration
   type: Method
   summary: "\nGet the configuration for one whole web page, including all its panels etc.  totally asynchronous items like menus are not included, but all references are resolved and all special processing is applied.\n"
+  remarks: 
+  syntax: 
+    content: String GetPageConfiguration(String application, String instance, String page)
+    parameters:
+    - id: application
+      type: CRMScript.Global.String
+      description: 
+    - id: instance
+      type: CRMScript.Global.String
+      description: 
+    - id: page
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSConfigurationAgent agent;\nString application;\nString instance;\nString page;\nString res = agent.GetPageConfiguration(application, instance, page);</code></pre>\n"
 - uid: CRMScript.NetServer.NSConfigurationAgent.GetRefreshedPageConfiguration
@@ -374,6 +625,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSConfigurationAgent.GetRefreshedPageConfiguration
   type: Method
   summary: "\nGet the configuration for one whole web page, including all its panels etc.  totally asynchronous items like menus are not included, but all references are resolved and all special processing is applied. Does not use cache for fetching, but updates the cache with refreshed configuration.\n"
+  remarks: 
+  syntax: 
+    content: String GetRefreshedPageConfiguration(String application, String instance, String page)
+    parameters:
+    - id: application
+      type: CRMScript.Global.String
+      description: 
+    - id: instance
+      type: CRMScript.Global.String
+      description: 
+    - id: page
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSConfigurationAgent agent;\nString application;\nString instance;\nString page;\nString res = agent.GetRefreshedPageConfiguration(application, instance, page);</code></pre>\n"
 - uid: CRMScript.NetServer.NSConfigurationAgent.GetSystemEventEntity
@@ -386,7 +652,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSConfigurationAgent.GetSystemEventEntity
   fullName: CRMScript.NetServer.NSConfigurationAgent.GetSystemEventEntity
   type: Method
-  summary: "\nGets a NSSystemEventEntity object.\n"
+  summary: "\nGets an NSSystemEventEntity object.\n"
+  remarks: 
+  syntax: 
+    content: NSSystemEventEntity GetSystemEventEntity(Integer systemEventEntityId);
+    parameters:
+    - id: systemEventEntityId;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: systemEventEntityId
+      type: 
+      description: 
+    return:
+      type: CRMScript.NetServer.NSSystemEventEntity
   example: 
   - "\n<pre><code>NSConfigurationAgent agent;\nNSSystemEventEntity thing = agent.GetSystemEventEntity(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSConfigurationAgent.GetWindowPosSize
@@ -399,7 +677,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSConfigurationAgent.GetWindowPosSize
   fullName: CRMScript.NetServer.NSConfigurationAgent.GetWindowPosSize
   type: Method
-  summary: "\nGets a NSWindowPosSize object.\n"
+  summary: "\nGets an NSWindowPosSize object.\n"
+  remarks: 
+  syntax: 
+    content: NSWindowPosSize GetWindowPosSize(Integer windowPosSizeId);
+    parameters:
+    - id: windowPosSizeId;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: windowPosSizeId
+      type: 
+      description: 
+    return:
+      type: CRMScript.NetServer.NSWindowPosSize
   example: 
   - "\n<pre><code>NSConfigurationAgent agent;\nNSWindowPosSize thing = agent.GetWindowPosSize(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSConfigurationAgent.GetWindowPosSizeList
@@ -413,6 +703,13 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSConfigurationAgent.GetWindowPosSizeList
   type: Method
   summary: "\nCRMScript method in the NSConfigurationAgent class that retrieves a list of NSWindowPosSize objectsReturns an array of NSWindowPosSize objects.<p></p>\n<code>NSWindowPosSize[] GetWindowPosSizeList(Integer[] windowPosSizeIds)</code>\n"
+  remarks: 
+  syntax: 
+    content: GetWindowPosSizeList()
+    parameters:
+    - id: windowPosSizeIds
+      type: CRMScript.Global.Integer[]
+      description: The IDs of the NSWindowPosSize objects to get
   example: 
   - "\n<pre><code>Integer[] ids;\nNSConfigurationAgent agent;\nagent.GetWindowPosSizeList(ids);</code></pre>\n"
 - uid: CRMScript.NetServer.NSConfigurationAgent.GetWindowPosSizesOnAssociateId
@@ -426,6 +723,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSConfigurationAgent.GetWindowPosSizesOnAssociateId
   type: Method
   summary: "\nGets the window and dialog position and size settings belonging to the specified associate\n"
+  remarks: 
+  syntax: 
+    content: NSWindowPosSize[] GetWindowPosSizesOnAssociateId(Integer associateId)
+    parameters:
+    - id: associateId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSWindowPosSize[]
   example: 
   - "\n<pre><code>NSConfigurationAgent agent;\nInteger associateId;\nNSWindowPosSize[] res = agent.GetWindowPosSizesOnAssociateId(associateId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSConfigurationAgent.GetWindowPosSizesOnPersonId
@@ -439,6 +745,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSConfigurationAgent.GetWindowPosSizesOnPersonId
   type: Method
   summary: "\nGets the window and dialog position and size settings belonging to the specified person\n"
+  remarks: 
+  syntax: 
+    content: NSWindowPosSize[] GetWindowPosSizesOnPersonId(Integer personId)
+    parameters:
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSWindowPosSize[]
   example: 
   - "\n<pre><code>NSConfigurationAgent agent;\nInteger personId;\nNSWindowPosSize[] res = agent.GetWindowPosSizesOnPersonId(personId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSConfigurationAgent.GetWwwUrl
@@ -452,6 +767,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSConfigurationAgent.GetWwwUrl
   type: Method
   summary: "\nWill get the default URL used for the logo, from the [NetServices] PageUrl preferencec, with tags substituted.\n"
+  remarks: 
+  syntax: 
+    content: String GetWwwUrl(String client)
+    parameters:
+    - id: client
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSConfigurationAgent agent;\nString client;\nString res = agent.GetWwwUrl(client);</code></pre>\n"
 - uid: CRMScript.NetServer.NSConfigurationAgent.GetWwwUrlForSMWeb
@@ -465,6 +789,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSConfigurationAgent.GetWwwUrlForSMWeb
   type: Method
   summary: "\nReturns the URL used for the logo by the SM.web client. Uses urldispatch.aspx<p></p>\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSConfigurationAgent agent;\nString res = agent.GetWwwUrlForSMWeb();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: String GetWwwUrlForSMWeb()
+    parameters:
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSConfigurationAgent agent;\nString res = agent.GetWwwUrlForSMWeb();</code></pre>\n"
 - uid: CRMScript.NetServer.NSConfigurationAgent.#ctor
@@ -476,8 +806,11 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   name: '#ctor'
   nameWithType: NSConfigurationAgent.#ctor
   fullName: CRMScript.NetServer.NSConfigurationAgent.#ctor
-  type: Method
+  type: Constructor
   summary: "\nUser interface configuration* XML and other elements such as inter-client URLs.\n"
+  remarks: 
+  syntax: 
+    content: NSConfigurationAgent
   example: 
   - "\n<pre><code>NSConfigurationAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSConfigurationAgent.SaveDiaryViewEntity
@@ -491,6 +824,13 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSConfigurationAgent.SaveDiaryViewEntity
   type: Method
   summary: "\nCRMScript method in the NSConfigurationAgent class that creates or updates an NSDiaryViewEntityUpdates the existing NSDiaryViewEntity or creates a new NSDiaryViewEntity if the ID parameter is 0.<p></p>\nReturns the new or updated NSDiaryViewEntity.<p></p>\n<code>NSDiaryViewEntity SaveDiaryViewEntity(NSDiaryViewEntity diaryViewEntity)</code>\n"
+  remarks: 
+  syntax: 
+    content: SaveDiaryViewEntity()
+    parameters:
+    - id: diaryViewEntity
+      type: CRMScript.NetServer.NSDiaryViewEntity
+      description: The entity to save.
   example: 
   - "\n<pre><code>NSConfiguration  agent;\nNSDiaryViewEntity thing = agent.CreateDefaultDiaryViewEntity();\nthing = agent.SaveDiaryViewEntity(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSConfigurationAgent.SaveSystemEventEntity
@@ -504,6 +844,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSConfigurationAgent.SaveSystemEventEntity
   type: Method
   summary: "\nUpdates the existing NSSystemEventEntity or creates a new NSSystemEventEntity if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>systemEventEntity</strong>The NSSystemEventEntity to save.</li></ul><strong>Returns:</strong>NSSystemEventEntity<p></p>\n<pre><code>NSConfiguration  agent;\nNSSystemEventEntity thing = agent.CreateDefaultSystemEventEntity();\nthing = agent.SaveSystemEventEntity(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSSystemEventEntity SaveSystemEventEntity(NSSystemEventEntity systemEventEntity);
+    parameters:
+    - id: systemEventEntity;
+      type: CRMScript.NetServer.NSSystemEventEntity
+      description: 
+    return:
+      type: CRMScript.NetServer.NSSystemEventEntity
   example: 
   - "\n<pre><code>NSConfiguration  agent;\nNSSystemEventEntity thing = agent.CreateDefaultSystemEventEntity();\nthing = agent.SaveSystemEventEntity(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSConfigurationAgent.SaveWindowPosSize
@@ -517,6 +866,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSConfigurationAgent.SaveWindowPosSize
   type: Method
   summary: "\nSaves a window and dialog position and size setting.\n"
+  remarks: 
+  syntax: 
+    content: NSWindowPosSize SaveWindowPosSize(NSWindowPosSize windowPosSize)
+    parameters:
+    - id: windowPosSize
+      type: CRMScript.NetServer.NSWindowPosSize
+      description: 
+    return:
+      type: CRMScript.NetServer.NSWindowPosSize
   example: 
   - "\n<pre><code>NSConfigurationAgent agent;\nNSWindowPosSize windowPosSize;\nNSWindowPosSize res = agent.SaveWindowPosSize(windowPosSize);</code></pre>\n"
 - uid: CRMScript.NetServer.NSConfigurationAgent.SaveWindowPosSizes
@@ -530,6 +888,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSConfigurationAgent.SaveWindowPosSizes
   type: Method
   summary: "\nSaves a set of window and dialog position and size settings.\n"
+  remarks: 
+  syntax: 
+    content: NSWindowPosSize[] SaveWindowPosSizes(NSWindowPosSize[] windowPosSizes)
+    parameters:
+    - id: windowPosSizes
+      type: CRMScript.NetServer.NSWindowPosSize[]
+      description: 
+    return:
+      type: CRMScript.NetServer.NSWindowPosSize[]
   example: 
   - "\n<pre><code>NSConfigurationAgent agent;\nNSWindowPosSize[] windowPosSizes;\nNSWindowPosSize[] res = agent.SaveWindowPosSizes(windowPosSizes);</code></pre>\n"
 references:
@@ -539,3 +906,85 @@ references:
   name: NSConfigurationAgent
   nameWithType: NSConfigurationAgent
   fullName: CRMScript.NetServer.NSConfigurationAgent
+- uid: CRMScript.Global.String
+  commentId: T:CRMScript.Global.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: CRMScript.Global.String
+- uid: CRMScript.Global.Bool
+  commentId: T:CRMScript.Global.Bool
+  isExternal: true
+  name: Bool
+  nameWithType: Bool
+  fullName: CRMScript.Global.Bool
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void
+- uid: CRMScript.NetServer.NSDiaryViewEntity
+  commentId: T:CRMScript.NetServer.NSDiaryViewEntity
+  isExternal: true
+  name: NSDiaryViewEntity
+  nameWithType: NSDiaryViewEntity
+  fullName: CRMScript.NetServer.NSDiaryViewEntity
+- uid: CRMScript.NetServer.NSSystemEventEntity
+  commentId: T:CRMScript.NetServer.NSSystemEventEntity
+  isExternal: true
+  name: NSSystemEventEntity
+  nameWithType: NSSystemEventEntity
+  fullName: CRMScript.NetServer.NSSystemEventEntity
+- uid: CRMScript.Global.Integer
+  commentId: T:CRMScript.Global.Integer
+  isExternal: true
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Global.Integer
+- uid: CRMScript.NetServer.NSWindowPosSize[]
+  isExternal: true
+  name: NSWindowPosSize[]
+  nameWithType: NSWindowPosSize[]
+  fullName: CRMScript.NetServer.NSWindowPosSize[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSWindowPosSize
+    isExternal: true
+    name: NSWindowPosSize
+    nameWithType: NSWindowPosSize
+    fullName: CRMScript.NetServer.NSWindowPosSize
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSWindowPosSize
+  commentId: T:CRMScript.NetServer.NSWindowPosSize
+  isExternal: true
+  name: NSWindowPosSize
+  nameWithType: NSWindowPosSize
+  fullName: CRMScript.NetServer.NSWindowPosSize
+- uid: CRMScript.NetServer.NSWindowPosSize
+  commentId: T:CRMScript.NetServer.NSWindowPosSize
+  isExternal: true
+  name: NSWindowPosSize
+  nameWithType: NSWindowPosSize
+  fullName: CRMScript.NetServer.NSWindowPosSize
+- uid: CRMScript.Global.Integer[]
+  isExternal: true
+  name: Integer[]
+  nameWithType: Integer[]
+  fullName: CRMScript.Global.Integer[]
+  spec.crmscript:
+  - uid: CRMScript.Global.Integer
+    isExternal: true
+    name: Integer
+    nameWithType: Integer
+    fullName: CRMScript.Global.Integer
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.Global.Integer
+  commentId: T:CRMScript.Global.Integer
+  isExternal: true
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Global.Integer

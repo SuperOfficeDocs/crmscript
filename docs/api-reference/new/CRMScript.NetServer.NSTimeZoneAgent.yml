@@ -37,6 +37,12 @@ items:
   fullName: CRMScript.NetServer.NSTimeZoneAgent.CheckNewTimeZoneDataAvailable
   type: Method
   summary: "\nCheck to see if new timezone data is available<p></p>\n<strong>Returns:</strong>Bool<p></p>\n<pre><code>NSTimeZoneAgent agent;\nBool res = agent.CheckNewTimeZoneDataAvailable();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: Bool CheckNewTimeZoneDataAvailable()
+    parameters:
+    return:
+      type: CRMScript.Global.Bool
   example: 
   - "\n<pre><code>NSTimeZoneAgent agent;\nBool res = agent.CheckNewTimeZoneDataAvailable();</code></pre>\n"
 - uid: CRMScript.NetServer.NSTimeZoneAgent.DeleteTimeZones
@@ -50,6 +56,12 @@ items:
   fullName: CRMScript.NetServer.NSTimeZoneAgent.DeleteTimeZones
   type: Method
   summary: "\nDeletes all time zone data (locations and rules) from the database\n"
+  remarks: 
+  syntax: 
+    content: Void DeleteTimeZones()
+    parameters:
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSTimeZoneAgent.GetBaseTimeZoneId
   commentId: M:CRMScript.NetServer.NSTimeZoneAgent.GetBaseTimeZoneId
@@ -62,6 +74,12 @@ items:
   fullName: CRMScript.NetServer.NSTimeZoneAgent.GetBaseTimeZoneId
   type: Method
   summary: "\nGet the base timezone id.<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<pre><code>NSTimeZoneAgent agent;\nInteger res = agent.GetBaseTimeZoneId();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: Integer GetBaseTimeZoneId()
+    parameters:
+    return:
+      type: CRMScript.Global.Integer
   example: 
   - "\n<pre><code>NSTimeZoneAgent agent;\nInteger res = agent.GetBaseTimeZoneId();</code></pre>\n"
 - uid: CRMScript.NetServer.NSTimeZoneAgent.GetDefaultTimeZonePreference
@@ -75,6 +93,12 @@ items:
   fullName: CRMScript.NetServer.NSTimeZoneAgent.GetDefaultTimeZonePreference
   type: Method
   summary: "\nReturns the id of the default timezone preference with deflevel system wide<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<pre><code>NSTimeZoneAgent agent;\nInteger res = agent.GetDefaultTimeZonePreference();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: Integer GetDefaultTimeZonePreference()
+    parameters:
+    return:
+      type: CRMScript.Global.Integer
   example: 
   - "\n<pre><code>NSTimeZoneAgent agent;\nInteger res = agent.GetDefaultTimeZonePreference();</code></pre>\n"
 - uid: CRMScript.NetServer.NSTimeZoneAgent.InitializeTimeZoneData
@@ -88,6 +112,12 @@ items:
   fullName: CRMScript.NetServer.NSTimeZoneAgent.InitializeTimeZoneData
   type: Method
   summary: "\nInitalizes the NSTimeZoneData\n"
+  remarks: 
+  syntax: 
+    content: NSTimeZoneData[] InitializeTimeZoneData()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSTimeZoneData[]
   example: 
 - uid: CRMScript.NetServer.NSTimeZoneAgent.#ctor
   commentId: M:CRMScript.NetServer.NSTimeZoneAgent.#ctor
@@ -98,8 +128,11 @@ items:
   name: '#ctor'
   nameWithType: NSTimeZoneAgent.#ctor
   fullName: CRMScript.NetServer.NSTimeZoneAgent.#ctor
-  type: Method
+  type: Constructor
   summary: "\nTimeZone maintenance.\n"
+  remarks: 
+  syntax: 
+    content: NSTimeZoneAgent
   example: 
   - "\n<pre><code>NSTimeZoneAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSTimeZoneAgent.SetActiveTimeZoneRow
@@ -113,6 +146,18 @@ items:
   fullName: CRMScript.NetServer.NSTimeZoneAgent.SetActiveTimeZoneRow
   type: Method
   summary: "\nSet active state of singe row in the TZLocation table\n"
+  remarks: 
+  syntax: 
+    content: Void SetActiveTimeZoneRow(Integer id, Bool active)
+    parameters:
+    - id: id
+      type: CRMScript.Global.Integer
+      description: 
+    - id: active
+      type: CRMScript.Global.Bool
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSTimeZoneAgent.SetActiveTimeZonesByFilter
   commentId: M:CRMScript.NetServer.NSTimeZoneAgent.SetActiveTimeZonesByFilter
@@ -125,6 +170,18 @@ items:
   fullName: CRMScript.NetServer.NSTimeZoneAgent.SetActiveTimeZonesByFilter
   type: Method
   summary: "\nToggles active state of a single row in the TZLocation table\n"
+  remarks: 
+  syntax: 
+    content: Void SetActiveTimeZonesByFilter(String filter, Bool active)
+    parameters:
+    - id: filter
+      type: CRMScript.Global.String
+      description: 
+    - id: active
+      type: CRMScript.Global.Bool
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSTimeZoneAgent.SetBaseTimeZoneId
   commentId: M:CRMScript.NetServer.NSTimeZoneAgent.SetBaseTimeZoneId
@@ -136,7 +193,16 @@ items:
   nameWithType: NSTimeZoneAgent.SetBaseTimeZoneId
   fullName: CRMScript.NetServer.NSTimeZoneAgent.SetBaseTimeZoneId
   type: Method
-  summary: "\nSet the base timezone id.\n"
+  summary: "\nSet the base timezone id.<p></p>\n<strong>Returns:</strong>Bool\n"
+  remarks: 
+  syntax: 
+    content: Bool SetBaseTimeZoneId(Integer timezoneId)
+    parameters:
+    - id: timezoneId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Bool
   example: 
   - "\n<pre><code>NSTimeZoneAgent agent;\nInteger timezoneId;\nBool res = agent.SetBaseTimeZoneId(timezoneId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSTimeZoneAgent.TimeOfLastTimeZoneUpdate
@@ -150,6 +216,12 @@ items:
   fullName: CRMScript.NetServer.NSTimeZoneAgent.TimeOfLastTimeZoneUpdate
   type: Method
   summary: "\nGet the time time zone data was last updated<p></p>\n<strong>Returns:</strong>DateTime<p></p>\n<pre><code>NSTimeZoneAgent agent;\nDateTime res = agent.TimeOfLastTimeZoneUpdate();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: DateTime TimeOfLastTimeZoneUpdate()
+    parameters:
+    return:
+      type: CRMScript.Global.DateTime
   example: 
   - "\n<pre><code>NSTimeZoneAgent agent;\nDateTime res = agent.TimeOfLastTimeZoneUpdate();</code></pre>\n"
 - uid: CRMScript.NetServer.NSTimeZoneAgent.ToggleActiveTimeZoneRow
@@ -163,6 +235,15 @@ items:
   fullName: CRMScript.NetServer.NSTimeZoneAgent.ToggleActiveTimeZoneRow
   type: Method
   summary: "\nToggles active state of a single row in the TZLocation table\n"
+  remarks: 
+  syntax: 
+    content: Void ToggleActiveTimeZoneRow(Integer id)
+    parameters:
+    - id: id
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSTimeZoneAgent.UpdateTimeZoneData
   commentId: M:CRMScript.NetServer.NSTimeZoneAgent.UpdateTimeZoneData
@@ -175,6 +256,12 @@ items:
   fullName: CRMScript.NetServer.NSTimeZoneAgent.UpdateTimeZoneData
   type: Method
   summary: "\nRetrieve time zone data from the SuperOffice server and update TimeZone data in the database<p></p>\n<strong>Returns:</strong>Bool<p></p>\n<pre><code>NSTimeZoneAgent agent;\nBool res = agent.UpdateTimeZoneData();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: Bool UpdateTimeZoneData()
+    parameters:
+    return:
+      type: CRMScript.Global.Bool
   example: 
   - "\n<pre><code>NSTimeZoneAgent agent;\nBool res = agent.UpdateTimeZoneData();</code></pre>\n"
 references:
@@ -184,3 +271,53 @@ references:
   name: NSTimeZoneAgent
   nameWithType: NSTimeZoneAgent
   fullName: CRMScript.NetServer.NSTimeZoneAgent
+- uid: CRMScript.Global.Bool
+  commentId: T:CRMScript.Global.Bool
+  isExternal: true
+  name: Bool
+  nameWithType: Bool
+  fullName: CRMScript.Global.Bool
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void
+- uid: CRMScript.Global.Integer
+  commentId: T:CRMScript.Global.Integer
+  isExternal: true
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Global.Integer
+- uid: CRMScript.NetServer.NSTimeZoneData[]
+  isExternal: true
+  name: NSTimeZoneData[]
+  nameWithType: NSTimeZoneData[]
+  fullName: CRMScript.NetServer.NSTimeZoneData[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSTimeZoneData
+    isExternal: true
+    name: NSTimeZoneData
+    nameWithType: NSTimeZoneData
+    fullName: CRMScript.NetServer.NSTimeZoneData
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSTimeZoneData
+  commentId: T:CRMScript.NetServer.NSTimeZoneData
+  isExternal: true
+  name: NSTimeZoneData
+  nameWithType: NSTimeZoneData
+  fullName: CRMScript.NetServer.NSTimeZoneData
+- uid: CRMScript.Global.String
+  commentId: T:CRMScript.Global.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: CRMScript.Global.String
+- uid: CRMScript.Global.DateTime
+  commentId: T:CRMScript.Global.DateTime
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: CRMScript.Global.DateTime

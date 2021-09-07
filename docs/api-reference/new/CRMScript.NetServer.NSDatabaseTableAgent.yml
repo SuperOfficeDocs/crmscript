@@ -34,6 +34,18 @@ items:
   fullName: CRMScript.NetServer.NSDatabaseTableAgent.Delete
   type: Method
   summary: "\nDelete rows, by primary key; traveltransactionlog and WebHooks are supported\n"
+  remarks: 
+  syntax: 
+    content: NSMassOperationResult Delete(String tableName, Integer[] iDs)
+    parameters:
+    - id: tableName
+      type: CRMScript.Global.String
+      description: 
+    - id: iDs
+      type: CRMScript.Global.Integer[]
+      description: 
+    return:
+      type: CRMScript.NetServer.NSMassOperationResult
   example: 
   - "\n<pre><code>NSDatabaseTableAgent agent;\nString tableName;\nInteger[] iDs;\nNSMassOperationResult res = agent.Delete(tableName, iDs);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDatabaseTableAgent.DeleteRow
@@ -47,6 +59,18 @@ items:
   fullName: CRMScript.NetServer.NSDatabaseTableAgent.DeleteRow
   type: Method
   summary: "\nDelete a row from a table\n"
+  remarks: 
+  syntax: 
+    content: Void DeleteRow(String tableName, Integer id)
+    parameters:
+    - id: tableName
+      type: CRMScript.Global.String
+      description: 
+    - id: id
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSDatabaseTableAgent.Insert
   commentId: M:CRMScript.NetServer.NSDatabaseTableAgent.Insert
@@ -59,6 +83,21 @@ items:
   fullName: CRMScript.NetServer.NSDatabaseTableAgent.Insert
   type: Method
   summary: "\nMass-insert rows, with or without primary keys specified. Works on physical tables with no special processing for udef etc.; traveltransactionlog and WebHooks are supported\n"
+  remarks: 
+  syntax: 
+    content: NSMassOperationResult Insert(String tableName, String[] columns, String[] data)
+    parameters:
+    - id: tableName
+      type: CRMScript.Global.String
+      description: 
+    - id: columns
+      type: CRMScript.Global.String[]
+      description: 
+    - id: data
+      type: CRMScript.Global.String[]
+      description: 
+    return:
+      type: CRMScript.NetServer.NSMassOperationResult
   example: 
   - "\n<pre><code>NSDatabaseTableAgent agent;\nString tableName;\nString[] columns;\nString[] data;\nNSMassOperationResult res = agent.Insert(tableName, columns, data);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDatabaseTableAgent.InsertRow
@@ -72,6 +111,18 @@ items:
   fullName: CRMScript.NetServer.NSDatabaseTableAgent.InsertRow
   type: Method
   summary: "\nInsert a row into a table\n"
+  remarks: 
+  syntax: 
+    content: Integer InsertRow(String tableName, StringDictionary values)
+    parameters:
+    - id: tableName
+      type: CRMScript.Global.String
+      description: 
+    - id: values
+      type: CRMScript.Global.StringDictionary
+      description: 
+    return:
+      type: CRMScript.Global.Integer
   example: 
   - "\n<pre><code>NSDatabaseTableAgent agent;\nString tableName;\nStringDictionary values;\nInteger res = agent.InsertRow(tableName, values);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDatabaseTableAgent.#ctor
@@ -83,8 +134,11 @@ items:
   name: '#ctor'
   nameWithType: NSDatabaseTableAgent.#ctor
   fullName: CRMScript.NetServer.NSDatabaseTableAgent.#ctor
-  type: Method
+  type: Constructor
   summary: "\nAgent used for CRUD operations on database tables. Read, add, update, delete rows in tables.\n"
+  remarks: 
+  syntax: 
+    content: NSDatabaseTableAgent
   example: 
   - "\n<pre><code>NSDatabaseTableAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDatabaseTableAgent.ReadRow
@@ -98,6 +152,18 @@ items:
   fullName: CRMScript.NetServer.NSDatabaseTableAgent.ReadRow
   type: Method
   summary: "\nRead a row from a table\n"
+  remarks: 
+  syntax: 
+    content: NSTableRecord ReadRow(String tableName, Integer id)
+    parameters:
+    - id: tableName
+      type: CRMScript.Global.String
+      description: 
+    - id: id
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSTableRecord
   example: 
   - "\n<pre><code>NSDatabaseTableAgent agent;\nString tableName;\nInteger id;\nNSTableRecord res = agent.ReadRow(tableName, id);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDatabaseTableAgent.Truncate
@@ -111,6 +177,15 @@ items:
   fullName: CRMScript.NetServer.NSDatabaseTableAgent.Truncate
   type: Method
   summary: "\nDrop all rows in a table. This clearance is not individually logged in TravelTransactionlog or Webhook/script calls\n"
+  remarks: 
+  syntax: 
+    content: NSMassOperationResult Truncate(String tableName)
+    parameters:
+    - id: tableName
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSMassOperationResult
   example: 
   - "\n<pre><code>NSDatabaseTableAgent agent;\nString tableName;\nNSMassOperationResult res = agent.Truncate(tableName);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDatabaseTableAgent.UpdateRow
@@ -124,6 +199,21 @@ items:
   fullName: CRMScript.NetServer.NSDatabaseTableAgent.UpdateRow
   type: Method
   summary: "\nUpdate a row in a table\n"
+  remarks: 
+  syntax: 
+    content: Void UpdateRow(String tableName, Integer id, StringDictionary values)
+    parameters:
+    - id: tableName
+      type: CRMScript.Global.String
+      description: 
+    - id: id
+      type: CRMScript.Global.Integer
+      description: 
+    - id: values
+      type: CRMScript.Global.StringDictionary
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSDatabaseTableAgent.Upsert
   commentId: M:CRMScript.NetServer.NSDatabaseTableAgent.Upsert
@@ -136,6 +226,30 @@ items:
   fullName: CRMScript.NetServer.NSDatabaseTableAgent.Upsert
   type: Method
   summary: "\nInsert or update rows, optionally deleting/zeroing 'leftover' rows. Special support for UDEF, as well as optional extensive information return. Traveltransactionlog and WebHooks are supported\n"
+  remarks: "\n<ul><li>Enum: 0 = NoChange</li><li>Enum: 1 = ZeroColumns</li><li>Enum: 2 = DeleteRow</li></ul>\n"
+  syntax: 
+    content: NSMassOperationResult Upsert(String tableName, String[] columns, String[] keys, String[] data, Integer nomatchAction, Bool returnRowStatus)
+    parameters:
+    - id: tableName
+      type: CRMScript.Global.String
+      description: 
+    - id: columns
+      type: CRMScript.Global.String[]
+      description: 
+    - id: keys
+      type: CRMScript.Global.String[]
+      description: 
+    - id: data
+      type: CRMScript.Global.String[]
+      description: 
+    - id: nomatchAction
+      type: CRMScript.Global.Integer
+      description: 
+    - id: returnRowStatus
+      type: CRMScript.Global.Bool
+      description: 
+    return:
+      type: CRMScript.NetServer.NSMassOperationResult
   example: 
   - "\n<pre><code>NSDatabaseTableAgent agent;\nString tableName;\nString[] columns;\nString[] keys;\nString[] data;\nInteger nomatchAction;\nBool returnRowStatus;\nNSMassOperationResult res = agent.Upsert(tableName, columns, keys, data, nomatchAction, returnRowStatus);</code></pre>\n"
 references:
@@ -145,3 +259,85 @@ references:
   name: NSDatabaseTableAgent
   nameWithType: NSDatabaseTableAgent
   fullName: CRMScript.NetServer.NSDatabaseTableAgent
+- uid: CRMScript.Global.String
+  commentId: T:CRMScript.Global.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: CRMScript.Global.String
+- uid: CRMScript.Global.Integer[]
+  isExternal: true
+  name: Integer[]
+  nameWithType: Integer[]
+  fullName: CRMScript.Global.Integer[]
+  spec.crmscript:
+  - uid: CRMScript.Global.Integer
+    isExternal: true
+    name: Integer
+    nameWithType: Integer
+    fullName: CRMScript.Global.Integer
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.Global.Integer
+  commentId: T:CRMScript.Global.Integer
+  isExternal: true
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Global.Integer
+- uid: CRMScript.NetServer.NSMassOperationResult
+  commentId: T:CRMScript.NetServer.NSMassOperationResult
+  isExternal: true
+  name: NSMassOperationResult
+  nameWithType: NSMassOperationResult
+  fullName: CRMScript.NetServer.NSMassOperationResult
+- uid: CRMScript.Global.Integer
+  commentId: T:CRMScript.Global.Integer
+  isExternal: true
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Global.Integer
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void
+- uid: CRMScript.Global.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: CRMScript.Global.String[]
+  spec.crmscript:
+  - uid: CRMScript.Global.String
+    isExternal: true
+    name: String
+    nameWithType: String
+    fullName: CRMScript.Global.String
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.Global.String
+  commentId: T:CRMScript.Global.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: CRMScript.Global.String
+- uid: CRMScript.Global.StringDictionary
+  commentId: T:CRMScript.Global.StringDictionary
+  isExternal: true
+  name: StringDictionary
+  nameWithType: StringDictionary
+  fullName: CRMScript.Global.StringDictionary
+- uid: CRMScript.NetServer.NSTableRecord
+  commentId: T:CRMScript.NetServer.NSTableRecord
+  isExternal: true
+  name: NSTableRecord
+  nameWithType: NSTableRecord
+  fullName: CRMScript.NetServer.NSTableRecord
+- uid: CRMScript.Global.Bool
+  commentId: T:CRMScript.Global.Bool
+  isExternal: true
+  name: Bool
+  nameWithType: Bool
+  fullName: CRMScript.Global.Bool

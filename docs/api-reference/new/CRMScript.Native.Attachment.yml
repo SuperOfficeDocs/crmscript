@@ -34,8 +34,11 @@ items:
   name: '#ctor'
   nameWithType: Attachment.#ctor
   fullName: CRMScript.Native.Attachment.#ctor
-  type: Method
+  type: Constructor
   summary: "\nThis class is used to handle eJournal attachments.\n"
+  remarks: 
+  syntax: 
+    content: Attachment
   example: 
   - "\n<pre><code>Attachment a;\n\na.load(2); // Loads attachment with id = 2\na.setValue(&quot;name&quot;, &quot;test.txt&quot;);\nprint(a.getValue(&quot;size&quot;)); // Size in bytes</code></pre>\n"
 - uid: CRMScript.Native.Attachment.dump
@@ -49,6 +52,15 @@ items:
   fullName: CRMScript.Native.Attachment.dump
   type: Method
   summary: "\nCRMScript method in the Attachment class that dumps the attachment file to outputDumps the attachment file to output.<p></p>\nYou can optionally signal the browser to download the file instead of display it.<p></p>\nReturns true if everything is OK, otherwise false.\n"
+  remarks: 
+  syntax: 
+    content: Bool dump()
+    parameters:
+    - id: download
+      type: CRMScript.Global.Bool
+      description: If true, this will tell the browser to download the file, and not attempt to display it.
+    return:
+      type: CRMScript.Global.Bool
   example: 
 - uid: CRMScript.Native.Attachment.getBase64
   commentId: M:CRMScript.Native.Attachment.getBase64
@@ -61,6 +73,10 @@ items:
   fullName: CRMScript.Native.Attachment.getBase64
   type: Method
   summary: "\nReturns the attachment as base64 encoded string.<p></p>\nThis can be used to load a binary attachment into a string, as base64 coded data is valid ASCII.\n"
+  remarks: 
+  syntax: 
+    content: getBase64()
+    parameters:
   example: 
 - uid: CRMScript.Native.Attachment.getDownloadUrl
   commentId: M:CRMScript.Native.Attachment.getDownloadUrl
@@ -73,6 +89,16 @@ items:
   fullName: CRMScript.Native.Attachment.getDownloadUrl
   type: Method
   summary: "\nConstruct an download url for the attachment. There are two kinds of urls first we have the kind that the customers can used they are called external. Then we have the kind the eJournal users can use and they are called internal.\n"
+  remarks: 
+  syntax: 
+    content: getDownloadUrl(Bool external, Bool saveToDisk)
+    parameters:
+    - id: external
+      type: CRMScript.Global.Bool
+      description: 
+    - id: saveToDisk
+      type: CRMScript.Global.Bool
+      description: 
   example: 
 - uid: CRMScript.Native.Attachment.getRaw
   commentId: M:CRMScript.Native.Attachment.getRaw
@@ -85,6 +111,10 @@ items:
   fullName: CRMScript.Native.Attachment.getRaw
   type: Method
   summary: "\nGet the whole attachment as a String without any special encoding.<p></p>\nReturns raw attachment as a String.\n"
+  remarks: 
+  syntax: 
+    content: getRaw()
+    parameters:
   example: 
 - uid: CRMScript.Native.Attachment.getValue
   commentId: M:CRMScript.Native.Attachment.getValue
@@ -97,6 +127,13 @@ items:
   fullName: CRMScript.Native.Attachment.getValue
   type: Method
   summary: "\nGet a value from the attachment class. Returns the value as a string.<p></p>\nThe current implementation supports the following values as the name parameter.<p></p>\n<ul><li>id: the attachment id</li><li>contentType: content descriptor</li><li>name: the filename</li><li>size: size in bytes</li><li>key: authentication key</li><li>charset</li><li>dbiAgentId</li><li>dbiKey</li><li>dbiLastModified</li><li>dbiLastSyncronized</li></ul>\n"
+  remarks: 
+  syntax: 
+    content: getValue(String name)
+    parameters:
+    - id: name
+      type: CRMScript.Global.String
+      description: 
   example: 
 - uid: CRMScript.Native.Attachment.load
   commentId: M:CRMScript.Native.Attachment.load
@@ -109,6 +146,16 @@ items:
   fullName: CRMScript.Native.Attachment.load
   type: Method
   summary: "\nLoad in eJournal attachment from disk.\n"
+  remarks: 
+  syntax: 
+    content: load(Integer id)
+    parameters:
+    - id: id
+      type: CRMScript.Global.Integer
+      description: 
+    - id: Attachment
+      type: 
+      description: 
   example: 
 - uid: CRMScript.Native.Attachment.remove
   commentId: M:CRMScript.Native.Attachment.remove
@@ -121,6 +168,10 @@ items:
   fullName: CRMScript.Native.Attachment.remove
   type: Method
   summary: "\nDeletes the attachment record from the database and the attachment file from disk.\n"
+  remarks: 
+  syntax: 
+    content: remove()
+    parameters:
   example: 
 - uid: CRMScript.Native.Attachment.save
   commentId: M:CRMScript.Native.Attachment.save
@@ -133,6 +184,10 @@ items:
   fullName: CRMScript.Native.Attachment.save
   type: Method
   summary: "\nSave the attachment to disk.<p></p>\nReturns attachment id.\n"
+  remarks: 
+  syntax: 
+    content: save()
+    parameters:
   example: 
 - uid: CRMScript.Native.Attachment.saveBase64
   commentId: M:CRMScript.Native.Attachment.saveBase64
@@ -145,6 +200,16 @@ items:
   fullName: CRMScript.Native.Attachment.saveBase64
   type: Method
   summary: "\nThis function creates a filename and saves a base64 coded attachment to disk. Returns the actual number of bytes written to disk.\n"
+  remarks: 
+  syntax: 
+    content: saveBase64(String p_0)
+    parameters:
+    - id: p_0
+      type: CRMScript.Global.String
+      description: 
+    - id: p0
+      type: 
+      description: 
   example: 
 - uid: CRMScript.Native.Attachment.setValue
   commentId: M:CRMScript.Native.Attachment.setValue
@@ -157,6 +222,16 @@ items:
   fullName: CRMScript.Native.Attachment.setValue
   type: Method
   summary: "\nSet a value on the attachment object. Returns the value to assign.<p></p>\nThe current implementation supports the following values for the name parameter.<p></p>\n<ul><li>id: the attachment id</li><li>contentType: content descriptor</li><li>name: the filename</li><li>size: size in bytes</li><li>key: authentication key</li><li>charset</li><li>dbiAgentId</li><li>dbiKey</li><li>dbiLastModified</li><li>dbiLastSyncronized</li></ul>\n"
+  remarks: 
+  syntax: 
+    content: setValue(String name, String value)
+    parameters:
+    - id: name
+      type: CRMScript.Global.String
+      description: 
+    - id: value
+      type: CRMScript.Global.String
+      description: 
   example: 
 references:
 - uid: CRMScript.Native.Attachment
@@ -165,3 +240,21 @@ references:
   name: Attachment
   nameWithType: Attachment
   fullName: CRMScript.Native.Attachment
+- uid: CRMScript.Global.Bool
+  commentId: T:CRMScript.Global.Bool
+  isExternal: true
+  name: Bool
+  nameWithType: Bool
+  fullName: CRMScript.Global.Bool
+- uid: CRMScript.Global.String
+  commentId: T:CRMScript.Global.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: CRMScript.Global.String
+- uid: CRMScript.Global.Integer
+  commentId: T:CRMScript.Global.Integer
+  isExternal: true
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Global.Integer

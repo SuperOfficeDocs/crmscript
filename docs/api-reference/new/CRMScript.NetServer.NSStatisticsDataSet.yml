@@ -31,6 +31,12 @@ items:
   fullName: CRMScript.NetServer.NSStatisticsDataSet.GetDescription
   type: Method
   summary: "\nTooltip for data value<p></p>\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSStatisticsDataSet thing;\nString description  = thing.GetDescription();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: String GetDescription()
+    parameters:
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSStatisticsDataSet thing;\nString description  = thing.GetDescription();</code></pre>\n"
 - uid: CRMScript.NetServer.NSStatisticsDataSet.GetLabel
@@ -44,6 +50,12 @@ items:
   fullName: CRMScript.NetServer.NSStatisticsDataSet.GetLabel
   type: Method
   summary: "\nThe label for the data set<p></p>\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSStatisticsDataSet thing;\nString label  = thing.GetLabel();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: String GetLabel()
+    parameters:
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSStatisticsDataSet thing;\nString label  = thing.GetLabel();</code></pre>\n"
 - uid: CRMScript.NetServer.NSStatisticsDataSet.GetValues
@@ -57,6 +69,12 @@ items:
   fullName: CRMScript.NetServer.NSStatisticsDataSet.GetValues
   type: Method
   summary: "\nValues in this set<p></p>\n<strong>Returns:</strong>NSStatisticsDataValue[]<p></p>\n<pre><code>NSStatisticsDataSet thing;\nNSStatisticsDataValue[] values  = thing.GetValues();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSStatisticsDataValue[] GetValues()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSStatisticsDataValue[]
   example: 
   - "\n<pre><code>NSStatisticsDataSet thing;\nNSStatisticsDataValue[] values  = thing.GetValues();</code></pre>\n"
 - uid: CRMScript.NetServer.NSStatisticsDataSet.#ctor
@@ -68,8 +86,11 @@ items:
   name: '#ctor'
   nameWithType: NSStatisticsDataSet.#ctor
   fullName: CRMScript.NetServer.NSStatisticsDataSet.#ctor
-  type: Method
+  type: Constructor
   summary: 
+  remarks: 
+  syntax: 
+    content: NSStatisticsDataSet
   example: 
 - uid: CRMScript.NetServer.NSStatisticsDataSet.SetDescription
   commentId: M:CRMScript.NetServer.NSStatisticsDataSet.SetDescription
@@ -81,7 +102,14 @@ items:
   nameWithType: NSStatisticsDataSet.SetDescription
   fullName: CRMScript.NetServer.NSStatisticsDataSet.SetDescription
   type: Method
-  summary: "\nTooltip for data value<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>description</strong>String</li></ul><pre><code>NSStatisticsDataSet thing;\nString description;\nthing.SetDescription(description);</code></pre>\n"
+  summary: "\nTooltip for data value\n"
+  remarks: 
+  syntax: 
+    content: SetDescription(String description)
+    parameters:
+    - id: description
+      type: CRMScript.Global.String
+      description: 
   example: 
   - "\n<pre><code>NSStatisticsDataSet thing;\nString description;\nthing.SetDescription(description);</code></pre>\n"
 - uid: CRMScript.NetServer.NSStatisticsDataSet.SetLabel
@@ -94,7 +122,14 @@ items:
   nameWithType: NSStatisticsDataSet.SetLabel
   fullName: CRMScript.NetServer.NSStatisticsDataSet.SetLabel
   type: Method
-  summary: "\nThe label for the data set<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>label</strong>String</li></ul><pre><code>NSStatisticsDataSet thing;\nString label;\nthing.SetLabel(label);</code></pre>\n"
+  summary: "\nThe label for the data set\n"
+  remarks: 
+  syntax: 
+    content: SetLabel(String label)
+    parameters:
+    - id: label
+      type: CRMScript.Global.String
+      description: 
   example: 
   - "\n<pre><code>NSStatisticsDataSet thing;\nString label;\nthing.SetLabel(label);</code></pre>\n"
 - uid: CRMScript.NetServer.NSStatisticsDataSet.SetValues
@@ -107,7 +142,14 @@ items:
   nameWithType: NSStatisticsDataSet.SetValues
   fullName: CRMScript.NetServer.NSStatisticsDataSet.SetValues
   type: Method
-  summary: "\nValues in this set<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>values</strong>NSStatisticsDataValue[]</li></ul><pre><code>NSStatisticsDataSet thing;\nNSStatisticsDataValue[] values;\nthing.SetValues(values);</code></pre>\n"
+  summary: "\nValues in this set\n"
+  remarks: 
+  syntax: 
+    content: SetValues(NSStatisticsDataValue[] values)
+    parameters:
+    - id: values
+      type: CRMScript.NetServer.NSStatisticsDataValue[]
+      description: 
   example: 
   - "\n<pre><code>NSStatisticsDataSet thing;\nNSStatisticsDataValue[] values;\nthing.SetValues(values);</code></pre>\n"
 references:
@@ -117,3 +159,29 @@ references:
   name: NSStatisticsDataSet
   nameWithType: NSStatisticsDataSet
   fullName: CRMScript.NetServer.NSStatisticsDataSet
+- uid: CRMScript.Global.String
+  commentId: T:CRMScript.Global.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: CRMScript.Global.String
+- uid: CRMScript.NetServer.NSStatisticsDataValue[]
+  isExternal: true
+  name: NSStatisticsDataValue[]
+  nameWithType: NSStatisticsDataValue[]
+  fullName: CRMScript.NetServer.NSStatisticsDataValue[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSStatisticsDataValue
+    isExternal: true
+    name: NSStatisticsDataValue
+    nameWithType: NSStatisticsDataValue
+    fullName: CRMScript.NetServer.NSStatisticsDataValue
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSStatisticsDataValue
+  commentId: T:CRMScript.NetServer.NSStatisticsDataValue
+  isExternal: true
+  name: NSStatisticsDataValue
+  nameWithType: NSStatisticsDataValue
+  fullName: CRMScript.NetServer.NSStatisticsDataValue

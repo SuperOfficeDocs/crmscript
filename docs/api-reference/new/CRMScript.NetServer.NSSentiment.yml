@@ -29,6 +29,12 @@ items:
   fullName: CRMScript.NetServer.NSSentiment.GetConfidence
   type: Method
   summary: "\nSentiment analysis confidence, where available. 0 = no idea, 100 = perfectly confident, -1 = no confidence score available<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<pre><code>NSSentiment thing;\nInteger confidence  = thing.GetConfidence();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: Integer GetConfidence()
+    parameters:
+    return:
+      type: CRMScript.Global.Integer
   example: 
   - "\n<pre><code>NSSentiment thing;\nInteger confidence  = thing.GetConfidence();</code></pre>\n"
 - uid: CRMScript.NetServer.NSSentiment.GetScore
@@ -42,6 +48,12 @@ items:
   fullName: CRMScript.NetServer.NSSentiment.GetScore
   type: Method
   summary: "\nSentiment score, -100 = very unhappy, 100 = very happy, 0 = no idea (not recognized)<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<pre><code>NSSentiment thing;\nInteger score  = thing.GetScore();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: Integer GetScore()
+    parameters:
+    return:
+      type: CRMScript.Global.Integer
   example: 
   - "\n<pre><code>NSSentiment thing;\nInteger score  = thing.GetScore();</code></pre>\n"
 - uid: CRMScript.NetServer.NSSentiment.#ctor
@@ -53,8 +65,11 @@ items:
   name: '#ctor'
   nameWithType: NSSentiment.#ctor
   fullName: CRMScript.NetServer.NSSentiment.#ctor
-  type: Method
+  type: Constructor
   summary: 
+  remarks: 
+  syntax: 
+    content: NSSentiment
   example: 
 - uid: CRMScript.NetServer.NSSentiment.SetConfidence
   commentId: M:CRMScript.NetServer.NSSentiment.SetConfidence
@@ -66,7 +81,14 @@ items:
   nameWithType: NSSentiment.SetConfidence
   fullName: CRMScript.NetServer.NSSentiment.SetConfidence
   type: Method
-  summary: "\nSentiment analysis confidence, where available. 0 = no idea, 100 = perfectly confident, -1 = no confidence score available<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>confidence</strong>Integer</li></ul><pre><code>NSSentiment thing;\nInteger confidence;\nthing.SetConfidence(confidence);</code></pre>\n"
+  summary: "\nSentiment analysis confidence, where available. 0 = no idea, 100 = perfectly confident, -1 = no confidence score available\n"
+  remarks: 
+  syntax: 
+    content: SetConfidence(Integer confidence)
+    parameters:
+    - id: confidence
+      type: CRMScript.Global.Integer
+      description: 
   example: 
   - "\n<pre><code>NSSentiment thing;\nInteger confidence;\nthing.SetConfidence(confidence);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSentiment.SetScore
@@ -79,7 +101,14 @@ items:
   nameWithType: NSSentiment.SetScore
   fullName: CRMScript.NetServer.NSSentiment.SetScore
   type: Method
-  summary: "\nSentiment score, -100 = very unhappy, 100 = very happy, 0 = no idea (not recognized)<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>score</strong>Integer</li></ul><pre><code>NSSentiment thing;\nInteger score;\nthing.SetScore(score);</code></pre>\n"
+  summary: "\nSentiment score, -100 = very unhappy, 100 = very happy, 0 = no idea (not recognized)\n"
+  remarks: 
+  syntax: 
+    content: SetScore(Integer score)
+    parameters:
+    - id: score
+      type: CRMScript.Global.Integer
+      description: 
   example: 
   - "\n<pre><code>NSSentiment thing;\nInteger score;\nthing.SetScore(score);</code></pre>\n"
 references:
@@ -89,3 +118,9 @@ references:
   name: NSSentiment
   nameWithType: NSSentiment
   fullName: CRMScript.NetServer.NSSentiment
+- uid: CRMScript.Global.Integer
+  commentId: T:CRMScript.Global.Integer
+  isExternal: true
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Global.Integer

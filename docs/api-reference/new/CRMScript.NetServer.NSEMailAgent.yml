@@ -122,7 +122,16 @@ items:
   nameWithType: NSEMailAgent.Authenticate
   fullName: CRMScript.NetServer.NSEMailAgent.Authenticate
   type: Method
-  summary: 
+  summary: "\n<strong>Returns:</strong>Bool\n"
+  remarks: 
+  syntax: 
+    content: Bool Authenticate(EMailConnectionInfoExtended connectionInfoExtended)
+    parameters:
+    - id: connectionInfoExtended
+      type: CRMScript.Native.EMailConnectionInfoExtended
+      description: 
+    return:
+      type: CRMScript.Global.Bool
   example: 
 - uid: CRMScript.NetServer.NSEMailAgent.AuthenticateIncoming
   commentId: M:CRMScript.NetServer.NSEMailAgent.AuthenticateIncoming
@@ -135,6 +144,15 @@ items:
   fullName: CRMScript.NetServer.NSEMailAgent.AuthenticateIncoming
   type: Method
   summary: "\nAuthenticate against a mail-server to retrieve e-mails from\n"
+  remarks: 
+  syntax: 
+    content: Bool AuthenticateIncoming(NSEMailConnectionInfo connectionInfo)
+    parameters:
+    - id: connectionInfo
+      type: CRMScript.NetServer.NSEMailConnectionInfo
+      description: 
+    return:
+      type: CRMScript.Global.Bool
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nNSEMailConnectionInfo connectionInfo;\nBool res = agent.AuthenticateIncoming(connectionInfo);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.AuthenticateOutgoing
@@ -148,6 +166,15 @@ items:
   fullName: CRMScript.NetServer.NSEMailAgent.AuthenticateOutgoing
   type: Method
   summary: "\nAuthenticate against a mail server to send items with\n"
+  remarks: 
+  syntax: 
+    content: Bool AuthenticateOutgoing(NSEMailConnectionInfo connectionInfo)
+    parameters:
+    - id: connectionInfo
+      type: CRMScript.NetServer.NSEMailConnectionInfo
+      description: 
+    return:
+      type: CRMScript.Global.Bool
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nNSEMailConnectionInfo connectionInfo;\nBool res = agent.AuthenticateOutgoing(connectionInfo);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.CacheFolderList
@@ -161,6 +188,12 @@ items:
   fullName: CRMScript.NetServer.NSEMailAgent.CacheFolderList
   type: Method
   summary: "\nFetch list of folders from email server for the current account, and cache in DB<p></p>\n<strong>Returns:</strong>EMailFolder[]<p></p>\n<pre><code>NSEMailAgent agent;\nEMailFolder[] res = agent.CacheFolderList();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: EMailFolder[] CacheFolderList()
+    parameters:
+    return:
+      type: CRMScript.Native.EMailFolder[]
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nEMailFolder[] res = agent.CacheFolderList();</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.CreateDefaultEMailAccount
@@ -175,6 +208,12 @@ items:
   type: Method
   summary: "\nSet default values into a new NSEMailAccount.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSEMailAccount<p></p>\n<pre><code>NSEMailAgent agent;\nNSEMailAccount thing = agent.CreateDefaultEMailAccount();\nthing = agent.SaveEMailAccount(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSEMailAccount CreateDefaultEMailAccount()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSEMailAccount
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nNSEMailAccount thing = agent.CreateDefaultEMailAccount();\nthing = agent.SaveEMailAccount(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.CreateDefaultEMailAddress
@@ -189,6 +228,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   type: Method
   summary: "\nSet default values into a new NSEMailAddress.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSEMailAddress<p></p>\n<pre><code>NSEMailAgent agent;\nNSEMailAddress thing = agent.CreateDefaultEMailAddress();\nthing = agent.SaveEMailAddress(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSEMailAddress CreateDefaultEMailAddress()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSEMailAddress
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nNSEMailAddress thing = agent.CreateDefaultEMailAddress();\nthing = agent.SaveEMailAddress(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.CreateDefaultEMailAppointment
@@ -203,6 +248,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   type: Method
   summary: "\nSet default values into a new NSEMailAppointment.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSEMailAppointment<p></p>\n<pre><code>NSEMailAgent agent;\nNSEMailAppointment thing = agent.CreateDefaultEMailAppointment();\nthing = agent.SaveEMailAppointment(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSEMailAppointment CreateDefaultEMailAppointment()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSEMailAppointment
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nNSEMailAppointment thing = agent.CreateDefaultEMailAppointment();\nthing = agent.SaveEMailAppointment(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.CreateDefaultEMailAttachment
@@ -217,6 +268,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   type: Method
   summary: "\nSet default values into a new NSEMailAttachment.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSEMailAttachment<p></p>\n<pre><code>NSEMailAgent agent;\nNSEMailAttachment thing = agent.CreateDefaultEMailAttachment();\nthing = agent.SaveEMailAttachment(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSEMailAttachment CreateDefaultEMailAttachment()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSEMailAttachment
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nNSEMailAttachment thing = agent.CreateDefaultEMailAttachment();\nthing = agent.SaveEMailAttachment(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.CreateDefaultEMailConnectionInfo
@@ -231,6 +288,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   type: Method
   summary: "\nSet default values into a new NSEMailConnectionInfo.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSEMailConnectionInfo<p></p>\n<pre><code>NSEMailAgent agent;\nNSEMailConnectionInfo thing = agent.CreateDefaultEMailConnectionInfo();\nthing = agent.SaveEMailConnectionInfo(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSEMailConnectionInfo CreateDefaultEMailConnectionInfo()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSEMailConnectionInfo
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nNSEMailConnectionInfo thing = agent.CreateDefaultEMailConnectionInfo();\nthing = agent.SaveEMailConnectionInfo(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.CreateDefaultEMailConnectionInfoExtended
@@ -245,6 +308,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   type: Method
   summary: "\nSet default values into a new NSEMailConnectionInfoExtended.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSEMailConnectionInfoExtended<p></p>\n<pre><code>NSEMailAgent agent;\nNSEMailConnectionInfoExtended thing = agent.CreateDefaultEMailConnectionInfoExtended();\nthing = agent.SaveEMailConnectionInfoExtended(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSEMailConnectionInfoExtended CreateDefaultEMailConnectionInfoExtended()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSEMailConnectionInfoExtended
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nNSEMailConnectionInfoExtended thing = agent.CreateDefaultEMailConnectionInfoExtended();\nthing = agent.SaveEMailConnectionInfoExtended(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.CreateDefaultEMailCustomHeader
@@ -259,6 +328,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   type: Method
   summary: "\nSet default values into a new NSEMailCustomHeader.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSEMailCustomHeader<p></p>\n<pre><code>NSEMailAgent agent;\nNSEMailCustomHeader thing = agent.CreateDefaultEMailCustomHeader();\nthing = agent.SaveEMailCustomHeader(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSEMailCustomHeader CreateDefaultEMailCustomHeader()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSEMailCustomHeader
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nNSEMailCustomHeader thing = agent.CreateDefaultEMailCustomHeader();\nthing = agent.SaveEMailCustomHeader(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.CreateDefaultEMailEntity
@@ -273,6 +348,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   type: Method
   summary: "\nSet default values into a new NSEMailEntity.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSEMailEntity<p></p>\n<pre><code>NSEMailAgent agent;\nNSEMailEntity thing = agent.CreateDefaultEMailEntity();\nthing = agent.SaveEMailEntity(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSEMailEntity CreateDefaultEMailEntity()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSEMailEntity
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nNSEMailEntity thing = agent.CreateDefaultEMailEntity();\nthing = agent.SaveEMailEntity(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.CreateDefaultEMailEnvelope
@@ -287,6 +368,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   type: Method
   summary: "\nSet default values into a new NSEMailEnvelope.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSEMailEnvelope<p></p>\n<pre><code>NSEMailAgent agent;\nNSEMailEnvelope thing = agent.CreateDefaultEMailEnvelope();\nthing = agent.SaveEMailEnvelope(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSEMailEnvelope CreateDefaultEMailEnvelope()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSEMailEnvelope
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nNSEMailEnvelope thing = agent.CreateDefaultEMailEnvelope();\nthing = agent.SaveEMailEnvelope(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.CreateDefaultEMailFolder
@@ -301,6 +388,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   type: Method
   summary: "\nSet default values into a new NSEMailFolder.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSEMailFolder<p></p>\n<pre><code>NSEMailAgent agent;\nNSEMailFolder thing = agent.CreateDefaultEMailFolder();\nthing = agent.SaveEMailFolder(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSEMailFolder CreateDefaultEMailFolder()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSEMailFolder
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nNSEMailFolder thing = agent.CreateDefaultEMailFolder();\nthing = agent.SaveEMailFolder(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.CreateDefaultEMailSOInfo
@@ -315,6 +408,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   type: Method
   summary: "\nSet default values into a new NSEMailSOInfo.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSEMailSOInfo<p></p>\n<pre><code>NSEMailAgent agent;\nNSEMailSOInfo thing = agent.CreateDefaultEMailSOInfo();\nthing = agent.SaveEMailSOInfo(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSEMailSOInfo CreateDefaultEMailSOInfo()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSEMailSOInfo
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nNSEMailSOInfo thing = agent.CreateDefaultEMailSOInfo();\nthing = agent.SaveEMailSOInfo(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.CreateEMailFromDocumentEntity
@@ -328,6 +427,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.CreateEMailFromDocumentEntity
   type: Method
   summary: "\nGet an e-mail based on the provided NSDocumentEntity\n"
+  remarks: 
+  syntax: 
+    content: NSEMailEntity CreateEMailFromDocumentEntity(NSDocumentEntity documentEntity)
+    parameters:
+    - id: documentEntity
+      type: CRMScript.NetServer.NSDocumentEntity
+      description: 
+    return:
+      type: CRMScript.NetServer.NSEMailEntity
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nNSDocumentEntity documentEntity;\nNSEMailEntity res = agent.CreateEMailFromDocumentEntity(documentEntity);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.CreateEMailFromMimeMessage
@@ -341,6 +449,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.CreateEMailFromMimeMessage
   type: Method
   summary: "\nGet an e-mail based on the provided MIME-message\n"
+  remarks: 
+  syntax: 
+    content: NSEMailEntity CreateEMailFromMimeMessage(String mimeMessage)
+    parameters:
+    - id: mimeMessage
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSEMailEntity
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nString mimeMessage;\nNSEMailEntity res = agent.CreateEMailFromMimeMessage(mimeMessage);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.CreateFolder
@@ -354,6 +471,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.CreateFolder
   type: Method
   summary: "\nCreate a new folder on the server\n"
+  remarks: 
+  syntax: 
+    content: Void CreateFolder(NSEMailConnectionInfo connectionInfo)
+    parameters:
+    - id: connectionInfo
+      type: CRMScript.NetServer.NSEMailConnectionInfo
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSEMailAgent.CreateForwardEmail
   commentId: M:CRMScript.NetServer.NSEMailAgent.CreateForwardEmail
@@ -366,6 +492,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.CreateForwardEmail
   type: Method
   summary: "\nCreate forward email\n"
+  remarks: 
+  syntax: 
+    content: NSEMailEntity CreateForwardEmail(NSEMailEntity email)
+    parameters:
+    - id: email
+      type: CRMScript.NetServer.NSEMailEntity
+      description: 
+    return:
+      type: CRMScript.NetServer.NSEMailEntity
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nNSEMailEntity email;\nNSEMailEntity res = agent.CreateForwardEmail(email);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.CreateInlineHtmlHeader
@@ -379,6 +514,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.CreateInlineHtmlHeader
   type: Method
   summary: "\nCreate Outlook style HTML header to use in for instance reply entities and when printing\n"
+  remarks: 
+  syntax: 
+    content: String CreateInlineHtmlHeader(NSEMailEntity email)
+    parameters:
+    - id: email
+      type: CRMScript.NetServer.NSEMailEntity
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nNSEMailEntity email;\nString res = agent.CreateInlineHtmlHeader(email);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.Delete
@@ -392,6 +536,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.Delete
   type: Method
   summary: "\nDelete specified mail items\n"
+  remarks: 
+  syntax: 
+    content: Void Delete(NSEMailConnectionInfo connectionInfo, Integer[] messageServerIds, String moveToFolder)
+    parameters:
+    - id: connectionInfo
+      type: CRMScript.NetServer.NSEMailConnectionInfo
+      description: 
+    - id: messageServerIds
+      type: CRMScript.Global.Integer[]
+      description: 
+    - id: moveToFolder
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSEMailAgent.DeleteEMailAccount
   commentId: M:CRMScript.NetServer.NSEMailAgent.DeleteEMailAccount
@@ -404,6 +563,16 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.DeleteEMailAccount
   type: Method
   summary: "\nDeletes the NSEMailAccount\n"
+  remarks: 
+  syntax: 
+    content: DeleteEMailAccount(Integer eMailAccount);
+    parameters:
+    - id: eMailAccount;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: eMailAccountId
+      type: 
+      description: 
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nagent.DeleteEMailAccount(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.DeleteEmails
@@ -417,6 +586,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.DeleteEmails
   type: Method
   summary: "\nDelete specified mail items and optionally move to the specified folder\n"
+  remarks: 
+  syntax: 
+    content: Void DeleteEmails(Integer[] ids, String moveToFolder)
+    parameters:
+    - id: ids
+      type: CRMScript.Global.Integer[]
+      description: 
+    - id: moveToFolder
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSEMailAgent.DeleteExtended
   commentId: M:CRMScript.NetServer.NSEMailAgent.DeleteExtended
@@ -429,6 +610,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.DeleteExtended
   type: Method
   summary: 
+  remarks: 
+  syntax: 
+    content: Void DeleteExtended(EMailConnectionInfoExtended connectionInfoExtended, String[] messageIds)
+    parameters:
+    - id: connectionInfoExtended
+      type: CRMScript.Native.EMailConnectionInfoExtended
+      description: 
+    - id: messageIds
+      type: CRMScript.Global.String[]
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSEMailAgent.DeleteFolder
   commentId: M:CRMScript.NetServer.NSEMailAgent.DeleteFolder
@@ -441,6 +634,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.DeleteFolder
   type: Method
   summary: "\nDelete a folder from the server\n"
+  remarks: 
+  syntax: 
+    content: Void DeleteFolder(NSEMailConnectionInfo connectionInfo)
+    parameters:
+    - id: connectionInfo
+      type: CRMScript.NetServer.NSEMailConnectionInfo
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSEMailAgent.EmptyFolder
   commentId: M:CRMScript.NetServer.NSEMailAgent.EmptyFolder
@@ -453,6 +655,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.EmptyFolder
   type: Method
   summary: "\nDelete all items in folder specified in the connection object\n"
+  remarks: 
+  syntax: 
+    content: Void EmptyFolder(NSEMailConnectionInfo connectionInfo, String moveToFolder)
+    parameters:
+    - id: connectionInfo
+      type: CRMScript.NetServer.NSEMailConnectionInfo
+      description: 
+    - id: moveToFolder
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSEMailAgent.FindAddress
   commentId: M:CRMScript.NetServer.NSEMailAgent.FindAddress
@@ -465,6 +679,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.FindAddress
   type: Method
   summary: "\nSearch for contacts and persons with the specified e-mail address (exact match on the email address string required)\n"
+  remarks: 
+  syntax: 
+    content: NSEMailAddress[] FindAddress(String address)
+    parameters:
+    - id: address
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSEMailAddress[]
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nString address;\nNSEMailAddress[] res = agent.FindAddress(address);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.FindContactOrPersonByEmailName
@@ -478,6 +701,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.FindContactOrPersonByEmailName
   type: Method
   summary: 
+  remarks: 
+  syntax: 
+    content: ContactOrPersonFromEmail[] FindContactOrPersonByEmailName(String name, String emailAddress)
+    parameters:
+    - id: name
+      type: CRMScript.Global.String
+      description: 
+    - id: emailAddress
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Native.ContactOrPersonFromEmail[]
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nString name;\nString emailAddress;\nContactOrPersonFromEmail[] res = agent.FindContactOrPersonByEmailName(name, emailAddress);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.FindContactOrPersonByEmailNameWithLimit
@@ -491,6 +726,24 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.FindContactOrPersonByEmailNameWithLimit
   type: Method
   summary: 
+  remarks: 
+  syntax: 
+    content: ContactOrPersonFromEmail[] FindContactOrPersonByEmailNameWithLimit(String name, String emailAddress, Integer numberOfContacts, Integer numberOfPersons)
+    parameters:
+    - id: name
+      type: CRMScript.Global.String
+      description: 
+    - id: emailAddress
+      type: CRMScript.Global.String
+      description: 
+    - id: numberOfContacts
+      type: CRMScript.Global.Integer
+      description: 
+    - id: numberOfPersons
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Native.ContactOrPersonFromEmail[]
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nString name;\nString emailAddress;\nInteger numberOfContacts;\nInteger numberOfPersons;\nContactOrPersonFromEmail[] res = agent.FindContactOrPersonByEmailNameWithLimit(name, emailAddress, numberOfContacts, numberOfPersons);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.GetAttachment
@@ -504,6 +757,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.GetAttachment
   type: Method
   summary: "\nRetrieve an attachment from an e-mail\n"
+  remarks: 
+  syntax: 
+    content: NSEMailAttachment GetAttachment(NSEMailConnectionInfo connectionInfo, Integer messageServerId, String attachmentId)
+    parameters:
+    - id: connectionInfo
+      type: CRMScript.NetServer.NSEMailConnectionInfo
+      description: 
+    - id: messageServerId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: attachmentId
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSEMailAttachment
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nNSEMailConnectionInfo connectionInfo;\nInteger messageServerId;\nString attachmentId;\nNSEMailAttachment res = agent.GetAttachment(connectionInfo, messageServerId, attachmentId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.GetAttachmentFromId
@@ -517,6 +785,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.GetAttachmentFromId
   type: Method
   summary: "\nRetrieve an attachment from an e-mail\n"
+  remarks: 
+  syntax: 
+    content: NSEMailAttachment GetAttachmentFromId(Integer mailItemId, String attachmentId)
+    parameters:
+    - id: mailItemId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: attachmentId
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSEMailAttachment
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nInteger mailItemId;\nString attachmentId;\nNSEMailAttachment res = agent.GetAttachmentFromId(mailItemId, attachmentId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.GetCurrentAccount
@@ -530,6 +810,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.GetCurrentAccount
   type: Method
   summary: "\nGet current account (last logged into should normally be current) for logged in associate<p></p>\n<strong>Returns:</strong>NSEMailAccount<p></p>\n<pre><code>NSEMailAgent agent;\nNSEMailAccount res = agent.GetCurrentAccount();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSEMailAccount GetCurrentAccount()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSEMailAccount
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nNSEMailAccount res = agent.GetCurrentAccount();</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.GetCurrentAccountId
@@ -543,6 +829,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.GetCurrentAccountId
   type: Method
   summary: "\nGet current accountId (last logged into should normally be current) for logged in associate<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<pre><code>NSEMailAgent agent;\nInteger res = agent.GetCurrentAccountId();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: Integer GetCurrentAccountId()
+    parameters:
+    return:
+      type: CRMScript.Global.Integer
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nInteger res = agent.GetCurrentAccountId();</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.GetEMail
@@ -556,6 +848,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.GetEMail
   type: Method
   summary: "\nGet en e-mail based on its primary key in the DB\n"
+  remarks: 
+  syntax: 
+    content: NSEMailEntity GetEMail(Integer id, Bool includeAttachments)
+    parameters:
+    - id: id
+      type: CRMScript.Global.Integer
+      description: 
+    - id: includeAttachments
+      type: CRMScript.Global.Bool
+      description: 
+    return:
+      type: CRMScript.NetServer.NSEMailEntity
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nInteger id;\nBool includeAttachments;\nNSEMailEntity res = agent.GetEMail(id, includeAttachments);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.GetEMailAccount
@@ -568,7 +872,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSEMailAgent.GetEMailAccount
   fullName: CRMScript.NetServer.NSEMailAgent.GetEMailAccount
   type: Method
-  summary: "\nGets a NSEMailAccount object.\n"
+  summary: "\nGets an NSEMailAccount object.\n"
+  remarks: 
+  syntax: 
+    content: NSEMailAccount GetEMailAccount(Integer eMailAccountId);
+    parameters:
+    - id: eMailAccountId;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: eMailAccountId
+      type: 
+      description: 
+    return:
+      type: CRMScript.NetServer.NSEMailAccount
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nNSEMailAccount thing = agent.GetEMailAccount(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.GetEMailAccountFromEMailAddress
@@ -582,6 +898,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.GetEMailAccountFromEMailAddress
   type: Method
   summary: "\nReturns the email account corresponding to this email address (for the current associate).\n"
+  remarks: 
+  syntax: 
+    content: NSEMailAccount GetEMailAccountFromEMailAddress(String fromAddress)
+    parameters:
+    - id: fromAddress
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSEMailAccount
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nString fromAddress;\nNSEMailAccount res = agent.GetEMailAccountFromEMailAddress(fromAddress);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.GetEMailAddresses
@@ -595,6 +920,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.GetEMailAddresses
   type: Method
   summary: "\nGet information about one or more email addresses, identified by IDs\n"
+  remarks: 
+  syntax: 
+    content: NSEMailAddress[] GetEMailAddresses(Integer[] emailIds)
+    parameters:
+    - id: emailIds
+      type: CRMScript.Global.Integer[]
+      description: 
+    return:
+      type: CRMScript.NetServer.NSEMailAddress[]
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nInteger[] emailIds;\nNSEMailAddress[] res = agent.GetEMailAddresses(emailIds);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.GetEmailAppointment
@@ -608,6 +942,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.GetEmailAppointment
   type: Method
   summary: "\nGet appointment data contained in the emails iCal attachment\n"
+  remarks: 
+  syntax: 
+    content: NSEMailAppointment GetEmailAppointment(Integer mailItemId)
+    parameters:
+    - id: mailItemId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSEMailAppointment
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nInteger mailItemId;\nNSEMailAppointment res = agent.GetEmailAppointment(mailItemId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.GetEmailAppointmentRecurrence
@@ -621,6 +964,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.GetEmailAppointmentRecurrence
   type: Method
   summary: "\nGet recurrence data contained in the email iCal attachment\n"
+  remarks: 
+  syntax: 
+    content: NSRecurrenceInfo GetEmailAppointmentRecurrence(Integer mailItemId)
+    parameters:
+    - id: mailItemId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSRecurrenceInfo
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nInteger mailItemId;\nNSRecurrenceInfo res = agent.GetEmailAppointmentRecurrence(mailItemId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.GetEMailAsStream
@@ -634,6 +986,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.GetEMailAsStream
   type: Method
   summary: "\nRetrieve an e-mail optionally stripping attachments as a stream\n"
+  remarks: 
+  syntax: 
+    content: NSStream GetEMailAsStream(NSEMailConnectionInfo connectionInfo, Integer messageServerId, Bool stripAttachments)
+    parameters:
+    - id: connectionInfo
+      type: CRMScript.NetServer.NSEMailConnectionInfo
+      description: 
+    - id: messageServerId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: stripAttachments
+      type: CRMScript.Global.Bool
+      description: 
+    return:
+      type: CRMScript.NetServer.NSStream
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nNSEMailConnectionInfo connectionInfo;\nInteger messageServerId;\nBool stripAttachments;\nNSStream res = agent.GetEMailAsStream(connectionInfo, messageServerId, stripAttachments);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.GetEmailDocumentAsMimeStream
@@ -647,6 +1014,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.GetEmailDocumentAsMimeStream
   type: Method
   summary: "\nGets a particular document, and tries to parse it, and returns it in MIME/RFC822 format.\n"
+  remarks: 
+  syntax: 
+    content: NSStream GetEmailDocumentAsMimeStream(Integer documentId)
+    parameters:
+    - id: documentId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSStream
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nInteger documentId;\nNSStream res = agent.GetEmailDocumentAsMimeStream(documentId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.GetEMailEnvelopes
@@ -660,6 +1036,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.GetEMailEnvelopes
   type: Method
   summary: "\nRetrieve a set of e-mail envelopes\n"
+  remarks: 
+  syntax: 
+    content: NSEMailEnvelope[] GetEMailEnvelopes(NSEMailConnectionInfo connectionInfo, Integer[] messageServerIds)
+    parameters:
+    - id: connectionInfo
+      type: CRMScript.NetServer.NSEMailConnectionInfo
+      description: 
+    - id: messageServerIds
+      type: CRMScript.Global.Integer[]
+      description: 
+    return:
+      type: CRMScript.NetServer.NSEMailEnvelope[]
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nNSEMailConnectionInfo connectionInfo;\nInteger[] messageServerIds;\nNSEMailEnvelope[] res = agent.GetEMailEnvelopes(connectionInfo, messageServerIds);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.GetEMailFromAttachmentId
@@ -673,6 +1061,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.GetEMailFromAttachmentId
   type: Method
   summary: "\nGet an e-mail based on an email and attachment id\n"
+  remarks: 
+  syntax: 
+    content: NSEMailEntity GetEMailFromAttachmentId(Integer emailId, String[] attachmentIds, Bool includeAttachments)
+    parameters:
+    - id: emailId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: attachmentIds
+      type: CRMScript.Global.String[]
+      description: 
+    - id: includeAttachments
+      type: CRMScript.Global.Bool
+      description: 
+    return:
+      type: CRMScript.NetServer.NSEMailEntity
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nInteger emailId;\nString[] attachmentIds;\nBool includeAttachments;\nNSEMailEntity res = agent.GetEMailFromAttachmentId(emailId, attachmentIds, includeAttachments);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.GetEMailFromDocumentAttachmentId
@@ -686,6 +1089,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.GetEMailFromDocumentAttachmentId
   type: Method
   summary: "\nGet an e-mail based on an email in the archive system and attachment id\n"
+  remarks: 
+  syntax: 
+    content: NSEMailEntity GetEMailFromDocumentAttachmentId(Integer docId, String[] attachmentIds, Bool includeAttachments)
+    parameters:
+    - id: docId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: attachmentIds
+      type: CRMScript.Global.String[]
+      description: 
+    - id: includeAttachments
+      type: CRMScript.Global.Bool
+      description: 
+    return:
+      type: CRMScript.NetServer.NSEMailEntity
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nInteger docId;\nString[] attachmentIds;\nBool includeAttachments;\nNSEMailEntity res = agent.GetEMailFromDocumentAttachmentId(docId, attachmentIds, includeAttachments);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.GetEMailFromDocumentId
@@ -699,6 +1117,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.GetEMailFromDocumentId
   type: Method
   summary: "\nGet an e-mail based on an archived document\n"
+  remarks: 
+  syntax: 
+    content: NSEMailEntity GetEMailFromDocumentId(Integer documentId)
+    parameters:
+    - id: documentId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSEMailEntity
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nInteger documentId;\nNSEMailEntity res = agent.GetEMailFromDocumentId(documentId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.GetEMailFromDocumentIdWithoutAttachmentStream
@@ -712,6 +1139,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.GetEMailFromDocumentIdWithoutAttachmentStream
   type: Method
   summary: "\nGet an e-mail based on an archived document\n"
+  remarks: 
+  syntax: 
+    content: NSEMailEntity GetEMailFromDocumentIdWithoutAttachmentStream(Integer documentId)
+    parameters:
+    - id: documentId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSEMailEntity
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nInteger documentId;\nNSEMailEntity res = agent.GetEMailFromDocumentIdWithoutAttachmentStream(documentId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.GetEMailFromId
@@ -725,6 +1161,25 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.GetEMailFromId
   type: Method
   summary: "\nCRMScript method in the NSEMailAgent class that gets an email based on its unique IDGets an email based on its unique ID.<p></p>\nReturns the email.<p></p>\n<code>NSEMailEntity GetEMailFromId(NSEMailConnectionInfo connectionInfo, Integer messageServerId, Bool lookupAddresses, Integer flags, Bool includeAttachments)</code>\n"
+  remarks: "\n<h3>Flags</h3><table><thead><tr><th>Enum</th><th>Flag</th></tr></thead><tbody><tr><td>0</td><td>None</td></tr><tr><td>1</td><td>Seen</td></tr><tr><td>2</td><td>Deleted</td></tr><tr><td>4</td><td>Recent</td></tr><tr><td>8</td><td>Flagged</td></tr><tr><td>16</td><td>Draft</td></tr><tr><td>32</td><td>Answered</td></tr></tbody></table>\n"
+  syntax: 
+    content: GetEMailFromId()
+    parameters:
+    - id: connectionInfo
+      type: CRMScript.NetServer.NSEMailConnectionInfo
+      description: All information needed to connect to the mail server
+    - id: messageServerId
+      type: CRMScript.Global.Integer
+      description: Unique ID for the email to retrieve
+    - id: lookupAddresses
+      type: CRMScript.Global.Bool
+      description: If true, try to look up email addresses in from/to/cc/bcc fields against SuperOffice contacts
+    - id: flags
+      type: CRMScript.Global.Integer
+      description: Any flags to apply to the fetched item. For example, Seen/Answered
+    - id: includeAttachments
+      type: CRMScript.Global.Bool
+      description: Should we retrieve attachments embedded in the email from the server
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nNSEMailConnectionInfo connectionInfo;\nInteger messageServerId;\nBool lookupAddresses;\nInteger flags;\nBool includeAttachments;\nNSEMailEntity res = agent.GetEMailFromId(connectionInfo, messageServerId, lookupAddresses, flags, includeAttachments);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.GetEMailFromTemp
@@ -738,6 +1193,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.GetEMailFromTemp
   type: Method
   summary: 
+  remarks: 
+  syntax: 
+    content: NSEMailEntity GetEMailFromTemp(String fileName)
+    parameters:
+    - id: fileName
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSEMailEntity
   example: 
 - uid: CRMScript.NetServer.NSEMailAgent.GetEmailMessageIds
   commentId: M:CRMScript.NetServer.NSEMailAgent.GetEmailMessageIds
@@ -750,6 +1214,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.GetEmailMessageIds
   type: Method
   summary: 
+  remarks: 
+  syntax: 
+    content: String[] GetEmailMessageIds(EMailConnectionInfoExtended connectionInfoExtended)
+    parameters:
+    - id: connectionInfoExtended
+      type: CRMScript.Native.EMailConnectionInfoExtended
+      description: 
+    return:
+      type: CRMScript.Global.String[]
   example: 
 - uid: CRMScript.NetServer.NSEMailAgent.GetEmailsAsString
   commentId: M:CRMScript.NetServer.NSEMailAgent.GetEmailsAsString
@@ -762,6 +1235,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.GetEmailsAsString
   type: Method
   summary: 
+  remarks: 
+  syntax: 
+    content: String[] GetEmailsAsString(EMailConnectionInfoExtended connectionInfoExtended, String[] messageIds)
+    parameters:
+    - id: connectionInfoExtended
+      type: CRMScript.Native.EMailConnectionInfoExtended
+      description: 
+    - id: messageIds
+      type: CRMScript.Global.String[]
+      description: 
+    - id: connectionInfoExttended
+      type: CRMScript.Native.EMailConnectionInfoExtended
+      description: 
+    return:
+      type: CRMScript.Global.String[]
   example: 
 - uid: CRMScript.NetServer.NSEMailAgent.GetEMailSOInfo
   commentId: M:CRMScript.NetServer.NSEMailAgent.GetEMailSOInfo
@@ -773,7 +1261,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSEMailAgent.GetEMailSOInfo
   fullName: CRMScript.NetServer.NSEMailAgent.GetEMailSOInfo
   type: Method
-  summary: "\nGets a NSEMailSOInfo object.\n"
+  summary: "\nGets an NSEMailSOInfo object.\n"
+  remarks: 
+  syntax: 
+    content: NSEMailSOInfo GetEMailSOInfo(Integer eMailSOInfoId);
+    parameters:
+    - id: eMailSOInfoId;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: eMailSOInfoId
+      type: 
+      description: 
+    return:
+      type: CRMScript.NetServer.NSEMailSOInfo
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nNSEMailSOInfo thing = agent.GetEMailSOInfo(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.GetFolderEMailCount
@@ -787,6 +1287,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.GetFolderEMailCount
   type: Method
   summary: "\nRetrieve total/unread mail items in current folder\n"
+  remarks: 
+  syntax: 
+    content: Integer GetFolderEMailCount(NSEMailConnectionInfo connectionInfo, Bool onlyUnread)
+    parameters:
+    - id: connectionInfo
+      type: CRMScript.NetServer.NSEMailConnectionInfo
+      description: 
+    - id: onlyUnread
+      type: CRMScript.Global.Bool
+      description: 
+    return:
+      type: CRMScript.Global.Integer
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nNSEMailConnectionInfo connectionInfo;\nBool onlyUnread;\nInteger res = agent.GetFolderEMailCount(connectionInfo, onlyUnread);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.GetFolderHasNewEMail
@@ -800,6 +1312,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.GetFolderHasNewEMail
   type: Method
   summary: "\nCheck if folder has received new items since previous access.\n"
+  remarks: 
+  syntax: 
+    content: Bool GetFolderHasNewEMail(NSEMailConnectionInfo connectionInfo)
+    parameters:
+    - id: connectionInfo
+      type: CRMScript.NetServer.NSEMailConnectionInfo
+      description: 
+    return:
+      type: CRMScript.Global.Bool
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nNSEMailConnectionInfo connectionInfo;\nBool res = agent.GetFolderHasNewEMail(connectionInfo);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.GetFolderInfo
@@ -813,6 +1334,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.GetFolderInfo
   type: Method
   summary: "\nRetrieve information about folders.  If folders parameter is not specified(null), information about all subscribed folders will be returned.\n"
+  remarks: 
+  syntax: 
+    content: EMailFolder[] GetFolderInfo(NSEMailConnectionInfo connectionInfo, String[] folders)
+    parameters:
+    - id: connectionInfo
+      type: CRMScript.NetServer.NSEMailConnectionInfo
+      description: 
+    - id: folders
+      type: CRMScript.Global.String[]
+      description: 
+    return:
+      type: CRMScript.Native.EMailFolder[]
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nNSEMailConnectionInfo connectionInfo;\nString[] folders;\nNSEMailFolder[] res = agent.GetFolderInfo(connectionInfo, folders);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.GetFolderList
@@ -826,6 +1359,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.GetFolderList
   type: Method
   summary: "\nRetrieve all folders for the mail account. String is separated in sections by the paragraph character.  First section contains the folder delimeter char. Next is folder name. Additional sections may be unread and total items.\n"
+  remarks: 
+  syntax: 
+    content: String[] GetFolderList(NSEMailConnectionInfo connectionInfo, Bool includeItemCount)
+    parameters:
+    - id: connectionInfo
+      type: CRMScript.NetServer.NSEMailConnectionInfo
+      description: 
+    - id: includeItemCount
+      type: CRMScript.Global.Bool
+      description: 
+    return:
+      type: CRMScript.Global.String[]
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nNSEMailConnectionInfo connectionInfo;\nBool includeItemCount;\nString[] res = agent.GetFolderList(connectionInfo, includeItemCount);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.GetMailFromInReplyTo
@@ -839,6 +1384,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.GetMailFromInReplyTo
   type: Method
   summary: "\nGet email from db based on In-Reply-To Message Id\n"
+  remarks: 
+  syntax: 
+    content: NSEMailEntity GetMailFromInReplyTo(String messageId)
+    parameters:
+    - id: messageId
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSEMailEntity
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nString messageId;\nNSEMailEntity res = agent.GetMailFromInReplyTo(messageId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.GetMailFromMessageId
@@ -852,6 +1406,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.GetMailFromMessageId
   type: Method
   summary: "\nGet email from db based on Message Id\n"
+  remarks: 
+  syntax: 
+    content: NSEMailEntity GetMailFromMessageId(String messageId)
+    parameters:
+    - id: messageId
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSEMailEntity
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nString messageId;\nNSEMailEntity res = agent.GetMailFromMessageId(messageId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.GetNewMail
@@ -865,6 +1428,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.GetNewMail
   type: Method
   summary: "\nGet new email in folder(s) for current associate\n"
+  remarks: 
+  syntax: 
+    content: NSEMailEnvelope[] GetNewMail(Integer[] folders)
+    parameters:
+    - id: folders
+      type: CRMScript.Global.Integer[]
+      description: 
+    return:
+      type: CRMScript.NetServer.NSEMailEnvelope[]
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nInteger[] folders;\nNSEMailEnvelope[] res = agent.GetNewMail(folders);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.GetParticipantInfoFromEmailAddress
@@ -878,6 +1450,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.GetParticipantInfoFromEmailAddress
   type: Method
   summary: "\nGet participant data associated with the participant in the emails iCal attachment\n"
+  remarks: 
+  syntax: 
+    content: NSPerson GetParticipantInfoFromEmailAddress(String emailAddress, Integer appointmentId)
+    parameters:
+    - id: emailAddress
+      type: CRMScript.Global.String
+      description: 
+    - id: appointmentId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSPerson
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nString emailAddress;\nInteger appointmentId;\nNSPerson res = agent.GetParticipantInfoFromEmailAddress(emailAddress, appointmentId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.GetPersonEntitiesFromEmailAddress
@@ -891,6 +1475,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.GetPersonEntitiesFromEmailAddress
   type: Method
   summary: "\nGet all persons and contacts with the given email address\n"
+  remarks: 
+  syntax: 
+    content: NSPersonEntity[] GetPersonEntitiesFromEmailAddress(String emailAddress)
+    parameters:
+    - id: emailAddress
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSPersonEntity[]
   example: 
 - uid: CRMScript.NetServer.NSEMailAgent.GetPersonsFromEmailAddress
   commentId: M:CRMScript.NetServer.NSEMailAgent.GetPersonsFromEmailAddress
@@ -903,6 +1496,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.GetPersonsFromEmailAddress
   type: Method
   summary: "\nGet all persons and contacts with the given email address\n"
+  remarks: 
+  syntax: 
+    content: NSPerson[] GetPersonsFromEmailAddress(String emailAddress)
+    parameters:
+    - id: emailAddress
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSPerson[]
   example: 
 - uid: CRMScript.NetServer.NSEMailAgent.GetPreviewAttachmentFromDocId
   commentId: M:CRMScript.NetServer.NSEMailAgent.GetPreviewAttachmentFromDocId
@@ -915,6 +1517,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.GetPreviewAttachmentFromDocId
   type: Method
   summary: "\nRetrieve an attachment from an e-mail stored in the document archive. The returned data is intended to be use for a preview.\n"
+  remarks: 
+  syntax: 
+    content: NSEMailAttachment GetPreviewAttachmentFromDocId(Integer docId, String attachmentId)
+    parameters:
+    - id: docId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: attachmentId
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSEMailAttachment
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nInteger docId;\nString attachmentId;\nNSEMailAttachment res = agent.GetPreviewAttachmentFromDocId(docId, attachmentId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.GetPreviewAttachmentFromId
@@ -928,6 +1542,24 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.GetPreviewAttachmentFromId
   type: Method
   summary: "\nRetrieve an attachment from an e-mail. The returned data is intended to be use for a preview.\n"
+  remarks: 
+  syntax: 
+    content: NSEMailAttachment GetPreviewAttachmentFromId(Integer mailItemId, String attachmentId, String attachmentType, String attachmentFilename)
+    parameters:
+    - id: mailItemId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: attachmentId
+      type: CRMScript.Global.String
+      description: 
+    - id: attachmentType
+      type: CRMScript.Global.String
+      description: 
+    - id: attachmentFilename
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSEMailAttachment
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nInteger mailItemId;\nString attachmentId;\nString attachmentType;\nString attachmentFilename;\nNSEMailAttachment res = agent.GetPreviewAttachmentFromId(mailItemId, attachmentId, attachmentType, attachmentFilename);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.GetReadySyncEmailAccounts
@@ -941,6 +1573,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.GetReadySyncEmailAccounts
   type: Method
   summary: "\nGets the list of SyncUserAccounts that should be synced.<p></p>\n<strong>Returns:</strong>NSSyncUserAccount[]<p></p>\n<pre><code>NSEMailAgent agent;\nNSSyncUserAccount[] res = agent.GetReadySyncEmailAccounts();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSSyncUserAccount[] GetReadySyncEmailAccounts()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSSyncUserAccount[]
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nNSSyncUserAccount[] res = agent.GetReadySyncEmailAccounts();</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.GetUnsanitizedEMail
@@ -954,6 +1592,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.GetUnsanitizedEMail
   type: Method
   summary: "\nGet en e-mail based on its primary key in the DB. The returned value is not sanitized.\n"
+  remarks: 
+  syntax: 
+    content: NSEMailEntity GetUnsanitizedEMail(Integer id, Bool includeAttachments)
+    parameters:
+    - id: id
+      type: CRMScript.Global.Integer
+      description: 
+    - id: includeAttachments
+      type: CRMScript.Global.Bool
+      description: 
+    return:
+      type: CRMScript.NetServer.NSEMailEntity
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nInteger id;\nBool includeAttachments;\nNSEMailEntity res = agent.GetUnsanitizedEMail(id, includeAttachments);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.GetUnsanitizedEMailFromAttachmentId
@@ -967,6 +1617,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.GetUnsanitizedEMailFromAttachmentId
   type: Method
   summary: "\nGet an e-mail based on an email and attachment id. The returned value is not sanitized.\n"
+  remarks: 
+  syntax: 
+    content: NSEMailEntity GetUnsanitizedEMailFromAttachmentId(Integer emailId, String[] attachmentIds, Bool includeAttachments)
+    parameters:
+    - id: emailId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: attachmentIds
+      type: CRMScript.Global.String[]
+      description: 
+    - id: includeAttachments
+      type: CRMScript.Global.Bool
+      description: 
+    return:
+      type: CRMScript.NetServer.NSEMailEntity
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nInteger emailId;\nString[] attachmentIds;\nBool includeAttachments;\nNSEMailEntity res = agent.GetUnsanitizedEMailFromAttachmentId(emailId, attachmentIds, includeAttachments);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.GetUnsanitizedEMailFromDocumentAttachmentId
@@ -980,6 +1645,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.GetUnsanitizedEMailFromDocumentAttachmentId
   type: Method
   summary: "\nGet an e-mail based on an email in the archive system and attachment id. The returned value is not sanitized.\n"
+  remarks: 
+  syntax: 
+    content: NSEMailEntity GetUnsanitizedEMailFromDocumentAttachmentId(Integer docId, String[] attachmentIds, Bool includeAttachments)
+    parameters:
+    - id: docId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: attachmentIds
+      type: CRMScript.Global.String[]
+      description: 
+    - id: includeAttachments
+      type: CRMScript.Global.Bool
+      description: 
+    return:
+      type: CRMScript.NetServer.NSEMailEntity
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nInteger docId;\nString[] attachmentIds;\nBool includeAttachments;\nNSEMailEntity res = agent.GetUnsanitizedEMailFromDocumentAttachmentId(docId, attachmentIds, includeAttachments);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.GetUnsanitizedEMailFromDocumentId
@@ -993,6 +1673,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.GetUnsanitizedEMailFromDocumentId
   type: Method
   summary: "\nGet an e-mail based on an archived document. The returned value is not sanitized.\n"
+  remarks: 
+  syntax: 
+    content: NSEMailEntity GetUnsanitizedEMailFromDocumentId(Integer documentId)
+    parameters:
+    - id: documentId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSEMailEntity
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nInteger documentId;\nNSEMailEntity res = agent.GetUnsanitizedEMailFromDocumentId(documentId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.GetUnsanitizedEMailFromDocumentIdWithoutAttachmentStream
@@ -1006,6 +1695,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.GetUnsanitizedEMailFromDocumentIdWithoutAttachmentStream
   type: Method
   summary: "\nGet an e-mail based on an archived document. The returned value is not sanitized.\n"
+  remarks: 
+  syntax: 
+    content: NSEMailEntity GetUnsanitizedEMailFromDocumentIdWithoutAttachmentStream(Integer documentId)
+    parameters:
+    - id: documentId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSEMailEntity
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nInteger documentId;\nNSEMailEntity res = agent.GetUnsanitizedEMailFromDocumentIdWithoutAttachmentStream(documentId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.GetUnsanitizedPreviewAttachmentFromDocId
@@ -1019,6 +1717,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.GetUnsanitizedPreviewAttachmentFromDocId
   type: Method
   summary: "\nRetrieve an attachment from an e-mail stored in the document archive. The returned data is intended to be use for a preview. The returned data is not sanitized.\n"
+  remarks: 
+  syntax: 
+    content: NSEMailAttachment GetUnsanitizedPreviewAttachmentFromDocId(Integer docId, String attachmentId)
+    parameters:
+    - id: docId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: attachmentId
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSEMailAttachment
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nInteger docId;\nString attachmentId;\nNSEMailAttachment res = agent.GetUnsanitizedPreviewAttachmentFromDocId(docId, attachmentId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.GetUnsanitizedPreviewAttachmentFromId
@@ -1032,6 +1742,24 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.GetUnsanitizedPreviewAttachmentFromId
   type: Method
   summary: "\nRetrieve an attachment from an e-mail. The returned data is intended to be use for a preview. The returned data is not sanitized.\n"
+  remarks: 
+  syntax: 
+    content: NSEMailAttachment GetUnsanitizedPreviewAttachmentFromId(Integer mailItemId, String attachmentId, String attachmentType, String attachmentFilename)
+    parameters:
+    - id: mailItemId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: attachmentId
+      type: CRMScript.Global.String
+      description: 
+    - id: attachmentType
+      type: CRMScript.Global.String
+      description: 
+    - id: attachmentFilename
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSEMailAttachment
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nInteger mailItemId;\nString attachmentId;\nString attachmentType;\nString attachmentFilename;\nNSEMailAttachment res = agent.GetUnsanitizedPreviewAttachmentFromId(mailItemId, attachmentId, attachmentType, attachmentFilename);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.HasMXRecord
@@ -1045,6 +1773,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.HasMXRecord
   type: Method
   summary: "\nReturn true if there is one or more MX records in DNS for the given mail domain\n"
+  remarks: 
+  syntax: 
+    content: Bool HasMXRecord(String mailDomain)
+    parameters:
+    - id: mailDomain
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.Bool
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nString mailDomain;\nBool res = agent.HasMXRecord(mailDomain);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.HasNewMail
@@ -1058,6 +1795,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.HasNewMail
   type: Method
   summary: "\nFast check for new mail in the database\n"
+  remarks: 
+  syntax: 
+    content: Bool HasNewMail(Integer mailItemId, Integer folderId)
+    parameters:
+    - id: mailItemId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: folderId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Bool
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nInteger mailItemId;\nInteger folderId;\nBool res = agent.HasNewMail(mailItemId, folderId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.LatestItemIdByFolder
@@ -1071,6 +1820,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.LatestItemIdByFolder
   type: Method
   summary: "\nReturns the latest id of the mail item by folder\n"
+  remarks: 
+  syntax: 
+    content: Integer LatestItemIdByFolder(Integer folderId)
+    parameters:
+    - id: folderId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Integer
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nInteger folderId;\nInteger res = agent.LatestItemIdByFolder(folderId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.MarkAsRead
@@ -1084,6 +1842,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.MarkAsRead
   type: Method
   summary: "\nMark one or more e-mails as (un)read\n"
+  remarks: 
+  syntax: 
+    content: Void MarkAsRead(NSEMailConnectionInfo connectionInfo, Integer[] messageServerIds, Bool read)
+    parameters:
+    - id: connectionInfo
+      type: CRMScript.NetServer.NSEMailConnectionInfo
+      description: 
+    - id: messageServerIds
+      type: CRMScript.Global.Integer[]
+      description: 
+    - id: read
+      type: CRMScript.Global.Bool
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSEMailAgent.MarkEmailsAsRead
   commentId: M:CRMScript.NetServer.NSEMailAgent.MarkEmailsAsRead
@@ -1096,6 +1869,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.MarkEmailsAsRead
   type: Method
   summary: "\nMark one or more e-mails as (un)read\n"
+  remarks: 
+  syntax: 
+    content: Void MarkEmailsAsRead(Integer[] ids, Bool read)
+    parameters:
+    - id: ids
+      type: CRMScript.Global.Integer[]
+      description: 
+    - id: read
+      type: CRMScript.Global.Bool
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSEMailAgent.MoveEmailsToFolder
   commentId: M:CRMScript.NetServer.NSEMailAgent.MoveEmailsToFolder
@@ -1108,6 +1893,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.MoveEmailsToFolder
   type: Method
   summary: "\nMove one or more emails to the specified folder in the DB, and on the server\n"
+  remarks: 
+  syntax: 
+    content: Void MoveEmailsToFolder(Integer folderId, Integer[] emailItemIds)
+    parameters:
+    - id: folderId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: emailItemIds
+      type: CRMScript.Global.Integer[]
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSEMailAgent.MoveEmailsToTrash
   commentId: M:CRMScript.NetServer.NSEMailAgent.MoveEmailsToTrash
@@ -1120,6 +1917,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.MoveEmailsToTrash
   type: Method
   summary: "\nDelete specified mail items and move to the Trash folder\n"
+  remarks: 
+  syntax: 
+    content: Void MoveEmailsToTrash(Integer[] ids)
+    parameters:
+    - id: ids
+      type: CRMScript.Global.Integer[]
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSEMailAgent.MoveToFolder
   commentId: M:CRMScript.NetServer.NSEMailAgent.MoveToFolder
@@ -1132,6 +1938,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.MoveToFolder
   type: Method
   summary: "\nMoved specified items from current folder to targetFolder\n"
+  remarks: 
+  syntax: 
+    content: Void MoveToFolder(NSEMailConnectionInfo connectionInfo, Integer[] messageServerIds, String targetFolder)
+    parameters:
+    - id: connectionInfo
+      type: CRMScript.NetServer.NSEMailConnectionInfo
+      description: 
+    - id: messageServerIds
+      type: CRMScript.Global.Integer[]
+      description: 
+    - id: targetFolder
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSEMailAgent.#ctor
   commentId: M:CRMScript.NetServer.NSEMailAgent.#ctor
@@ -1142,8 +1963,11 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   name: '#ctor'
   nameWithType: NSEMailAgent.#ctor
   fullName: CRMScript.NetServer.NSEMailAgent.#ctor
-  type: Method
+  type: Constructor
   summary: "\nEmail connection, reading, sending.\n"
+  remarks: 
+  syntax: 
+    content: NSEMailAgent
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.RefreshFolder
@@ -1157,6 +1981,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.RefreshFolder
   type: Method
   summary: "\nRefresh the given folders* i.e., fetch data from the mail server and update the in-database cache. This may happen synchronously or as a batch task, the return value will be 0 if the processing was synchronous, or the batch task id if a batch task is used.\n"
+  remarks: 
+  syntax: 
+    content: Integer RefreshFolder(NSEMailConnectionInfo connectionInfo, String[] folders)
+    parameters:
+    - id: connectionInfo
+      type: CRMScript.NetServer.NSEMailConnectionInfo
+      description: 
+    - id: folders
+      type: CRMScript.Global.String[]
+      description: 
+    return:
+      type: CRMScript.Global.Integer
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nNSEMailConnectionInfo connectionInfo;\nString[] folders;\nInteger res = agent.RefreshFolder(connectionInfo, folders);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.RefreshFolderForAssociate
@@ -1170,6 +2006,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.RefreshFolderForAssociate
   type: Method
   summary: "\nGet all emails in folder(s) from current associate\n"
+  remarks: 
+  syntax: 
+    content: String RefreshFolderForAssociate(String[] folders)
+    parameters:
+    - id: folders
+      type: CRMScript.Global.String[]
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nString[] folders;\nString res = agent.RefreshFolderForAssociate(folders);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.RelayMessage
@@ -1183,6 +2028,24 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.RelayMessage
   type: Method
   summary: 
+  remarks: 
+  syntax: 
+    content: Void RelayMessage(EMailConnectionInfoExtended connectionInfoExtended, String rfc822, String from, String[] recipients)
+    parameters:
+    - id: connectionInfoExtended
+      type: CRMScript.Native.EMailConnectionInfoExtended
+      description: 
+    - id: rfc822
+      type: CRMScript.Global.String
+      description: 
+    - id: from
+      type: CRMScript.Global.String
+      description: 
+    - id: recipients
+      type: CRMScript.Global.String[]
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSEMailAgent.Save
   commentId: M:CRMScript.NetServer.NSEMailAgent.Save
@@ -1195,6 +2058,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.Save
   type: Method
   summary: "\nSave the e-mail back to the database\n"
+  remarks: 
+  syntax: 
+    content: NSEMailEntity Save(NSEMailEntity email)
+    parameters:
+    - id: email
+      type: CRMScript.NetServer.NSEMailEntity
+      description: 
+    return:
+      type: CRMScript.NetServer.NSEMailEntity
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nNSEMailEntity email;\nNSEMailEntity res = agent.Save(email);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.SaveDraft
@@ -1208,6 +2080,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.SaveDraft
   type: Method
   summary: "\nSave the Email entity to the drafts folder\n"
+  remarks: 
+  syntax: 
+    content: NSEMailEntity SaveDraft(NSEMailEntity entity)
+    parameters:
+    - id: entity
+      type: CRMScript.NetServer.NSEMailEntity
+      description: 
+    return:
+      type: CRMScript.NetServer.NSEMailEntity
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nNSEMailEntity entity;\nNSEMailEntity res = agent.SaveDraft(entity);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.SaveEMail
@@ -1221,6 +2102,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.SaveEMail
   type: Method
   summary: "\nSave the passed e-mail back to the server\n"
+  remarks: 
+  syntax: 
+    content: NSEMailEntity SaveEMail(NSEMailConnectionInfo connectionInfo, NSEMailEntity email)
+    parameters:
+    - id: connectionInfo
+      type: CRMScript.NetServer.NSEMailConnectionInfo
+      description: 
+    - id: email
+      type: CRMScript.NetServer.NSEMailEntity
+      description: 
+    return:
+      type: CRMScript.NetServer.NSEMailEntity
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nNSEMailConnectionInfo connectionInfo;\nNSEMailEntity email;\nNSEMailEntity res = agent.SaveEMail(connectionInfo, email);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.SaveEMailAccount
@@ -1234,6 +2127,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.SaveEMailAccount
   type: Method
   summary: "\nUpdates the existing NSEMailAccount or creates a new NSEMailAccount if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>eMailAccount</strong>The NSEMailAccount to save.</li></ul><strong>Returns:</strong>NSEMailAccount<p></p>\n<pre><code>NSEMail  agent;\nNSEMailAccount thing = agent.CreateDefaultEMailAccount();\nthing = agent.SaveEMailAccount(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSEMailAccount SaveEMailAccount(NSEMailAccount eMailAccount);
+    parameters:
+    - id: eMailAccount;
+      type: CRMScript.NetServer.NSEMailAccount
+      description: 
+    return:
+      type: CRMScript.NetServer.NSEMailAccount
   example: 
   - "\n<pre><code>NSEMail  agent;\nNSEMailAccount thing = agent.CreateDefaultEMailAccount();\nthing = agent.SaveEMailAccount(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.SaveEmailToTmpDocument
@@ -1247,6 +2149,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.SaveEmailToTmpDocument
   type: Method
   summary: "\nSave the Email as a tmp document ready to archive\n"
+  remarks: 
+  syntax: 
+    content: String SaveEmailToTmpDocument(NSEMailEntity email, Integer folderId, Bool stripAttachments)
+    parameters:
+    - id: email
+      type: CRMScript.NetServer.NSEMailEntity
+      description: 
+    - id: folderId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: stripAttachments
+      type: CRMScript.Global.Bool
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nNSEMailEntity email;\nInteger folderId;\nBool stripAttachments;\nString res = agent.SaveEmailToTmpDocument(email, folderId, stripAttachments);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.SaveToMailServer
@@ -1260,6 +2177,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.SaveToMailServer
   type: Method
   summary: "\nSave the passed e-mail back to the mail server\n"
+  remarks: 
+  syntax: 
+    content: NSEMailEntity SaveToMailServer(NSEMailEntity email)
+    parameters:
+    - id: email
+      type: CRMScript.NetServer.NSEMailEntity
+      description: 
+    return:
+      type: CRMScript.NetServer.NSEMailEntity
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nNSEMailEntity email;\nNSEMailEntity res = agent.SaveToMailServer(email);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.Send
@@ -1273,6 +2199,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.Send
   type: Method
   summary: "\nSend the provided e-mails\n"
+  remarks: 
+  syntax: 
+    content: NSEMailEntity[] Send(NSEMailEntity[] emails)
+    parameters:
+    - id: emails
+      type: CRMScript.NetServer.NSEMailEntity[]
+      description: 
+    return:
+      type: CRMScript.NetServer.NSEMailEntity[]
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nNSEMailEntity[] emails;\nNSEMailEntity[] res = agent.Send(emails);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.SendAndSaveEmailToTmpDocument
@@ -1286,6 +2221,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.SendAndSaveEmailToTmpDocument
   type: Method
   summary: "\nSend the provided e-mail and create tmp document ready to archive\n"
+  remarks: 
+  syntax: 
+    content: String SendAndSaveEmailToTmpDocument(NSEMailEntity email, Bool stripAttachments)
+    parameters:
+    - id: email
+      type: CRMScript.NetServer.NSEMailEntity
+      description: 
+    - id: stripAttachments
+      type: CRMScript.Global.Bool
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nNSEMailEntity email;\nBool stripAttachments;\nString res = agent.SendAndSaveEmailToTmpDocument(email, stripAttachments);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.SendEMails
@@ -1299,6 +2246,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.SendEMails
   type: Method
   summary: "\nSend the provided e-mails\n"
+  remarks: 
+  syntax: 
+    content: NSEMailEntity[] SendEMails(NSEMailConnectionInfo outgoingConnectionInfo, NSEMailEntity[] emails, NSEMailConnectionInfo sentItemsConnectionInfo)
+    parameters:
+    - id: outgoingConnectionInfo
+      type: CRMScript.NetServer.NSEMailConnectionInfo
+      description: 
+    - id: emails
+      type: CRMScript.NetServer.NSEMailEntity[]
+      description: 
+    - id: sentItemsConnectionInfo
+      type: CRMScript.NetServer.NSEMailConnectionInfo
+      description: 
+    return:
+      type: CRMScript.NetServer.NSEMailEntity[]
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nNSEMailConnectionInfo outgoingConnectionInfo;\nNSEMailEntity[] emails;\nNSEMailConnectionInfo sentItemsConnectionInfo;\nNSEMailEntity[] res = agent.SendEMails(outgoingConnectionInfo, emails, sentItemsConnectionInfo);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.SetRepliedAt
@@ -1312,6 +2274,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.SetRepliedAt
   type: Method
   summary: "\nSet the replied_at field based on the MessageID\n"
+  remarks: 
+  syntax: 
+    content: Void SetRepliedAt(String messageId)
+    parameters:
+    - id: messageId
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSEMailAgent.SetSubscription
   commentId: M:CRMScript.NetServer.NSEMailAgent.SetSubscription
@@ -1324,6 +2295,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.SetSubscription
   type: Method
   summary: "\nSet subscription on or off on a set of folders\n"
+  remarks: 
+  syntax: 
+    content: Void SetSubscription(NSEMailConnectionInfo connectionInfo, EMailFolder[] folders)
+    parameters:
+    - id: connectionInfo
+      type: CRMScript.NetServer.NSEMailConnectionInfo
+      description: 
+    - id: folders
+      type: CRMScript.Native.EMailFolder[]
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSEMailAgent.SyncEmailAccount
   commentId: M:CRMScript.NetServer.NSEMailAgent.SyncEmailAccount
@@ -1336,6 +2319,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.SyncEmailAccount
   type: Method
   summary: "\nSync the given account\n"
+  remarks: 
+  syntax: 
+    content: Void SyncEmailAccount(NSSyncUserAccount syncUserAccount)
+    parameters:
+    - id: syncUserAccount
+      type: CRMScript.NetServer.NSSyncUserAccount
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nNSSyncUserAccount syncUserAccount;\nagent.SyncEmailAccount(syncUserAccount);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.SyncEmailAccounts
@@ -1349,6 +2341,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.SyncEmailAccounts
   type: Method
   summary: "\nStart syncing of the given accounts\n"
+  remarks: 
+  syntax: 
+    content: Void SyncEmailAccounts(NSSyncUserAccount[] syncUserAccounts)
+    parameters:
+    - id: syncUserAccounts
+      type: CRMScript.NetServer.NSSyncUserAccount[]
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSEMailAgent agent;\nNSSyncUserAccount[] syncUserAccounts;\nagent.SyncEmailAccounts(syncUserAccounts);</code></pre>\n"
 - uid: CRMScript.NetServer.NSEMailAgent.TestAuthenticate
@@ -1362,6 +2363,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.TestAuthenticate
   type: Method
   summary: "\nTest if logged-in user has a working mail account\n"
+  remarks: 
+  syntax: 
+    content: Bool TestAuthenticate()
+    parameters:
+    return:
+      type: CRMScript.Global.Bool
   example: 
 - uid: CRMScript.NetServer.NSEMailAgent.ToggleSubscription
   commentId: M:CRMScript.NetServer.NSEMailAgent.ToggleSubscription
@@ -1374,6 +2381,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSEMailAgent.ToggleSubscription
   type: Method
   summary: "\nSet subscription on or off on a set of folders\n"
+  remarks: 
+  syntax: 
+    content: Void ToggleSubscription(Integer folderId, Bool subscriptionStatus)
+    parameters:
+    - id: folderId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: subscriptionStatus
+      type: CRMScript.Global.Bool
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 references:
 - uid: CRMScript.NetServer.NSEMailAgent
@@ -1382,3 +2401,329 @@ references:
   name: NSEMailAgent
   nameWithType: NSEMailAgent
   fullName: CRMScript.NetServer.NSEMailAgent
+- uid: CRMScript.Native.EMailConnectionInfoExtended
+  commentId: T:CRMScript.Native.EMailConnectionInfoExtended
+  isExternal: true
+  name: EMailConnectionInfoExtended
+  nameWithType: EMailConnectionInfoExtended
+  fullName: CRMScript.Native.EMailConnectionInfoExtended
+- uid: CRMScript.Global.Bool
+  commentId: T:CRMScript.Global.Bool
+  isExternal: true
+  name: Bool
+  nameWithType: Bool
+  fullName: CRMScript.Global.Bool
+- uid: CRMScript.NetServer.NSEMailConnectionInfo
+  commentId: T:CRMScript.NetServer.NSEMailConnectionInfo
+  isExternal: true
+  name: NSEMailConnectionInfo
+  nameWithType: NSEMailConnectionInfo
+  fullName: CRMScript.NetServer.NSEMailConnectionInfo
+- uid: CRMScript.Native.EMailFolder[]
+  isExternal: true
+  name: EMailFolder[]
+  nameWithType: EMailFolder[]
+  fullName: CRMScript.Native.EMailFolder[]
+  spec.crmscript:
+  - uid: CRMScript.Native.EMailFolder
+    isExternal: true
+    name: EMailFolder
+    nameWithType: EMailFolder
+    fullName: CRMScript.Native.EMailFolder
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.Native.EMailFolder
+  commentId: T:CRMScript.Native.EMailFolder
+  isExternal: true
+  name: EMailFolder
+  nameWithType: EMailFolder
+  fullName: CRMScript.Native.EMailFolder
+- uid: CRMScript.NetServer.NSEMailAccount
+  commentId: T:CRMScript.NetServer.NSEMailAccount
+  isExternal: true
+  name: NSEMailAccount
+  nameWithType: NSEMailAccount
+  fullName: CRMScript.NetServer.NSEMailAccount
+- uid: CRMScript.NetServer.NSEMailAddress
+  commentId: T:CRMScript.NetServer.NSEMailAddress
+  isExternal: true
+  name: NSEMailAddress
+  nameWithType: NSEMailAddress
+  fullName: CRMScript.NetServer.NSEMailAddress
+- uid: CRMScript.NetServer.NSEMailAppointment
+  commentId: T:CRMScript.NetServer.NSEMailAppointment
+  isExternal: true
+  name: NSEMailAppointment
+  nameWithType: NSEMailAppointment
+  fullName: CRMScript.NetServer.NSEMailAppointment
+- uid: CRMScript.NetServer.NSEMailAttachment
+  commentId: T:CRMScript.NetServer.NSEMailAttachment
+  isExternal: true
+  name: NSEMailAttachment
+  nameWithType: NSEMailAttachment
+  fullName: CRMScript.NetServer.NSEMailAttachment
+- uid: CRMScript.NetServer.NSEMailConnectionInfoExtended
+  commentId: T:CRMScript.NetServer.NSEMailConnectionInfoExtended
+  isExternal: true
+  name: NSEMailConnectionInfoExtended
+  nameWithType: NSEMailConnectionInfoExtended
+  fullName: CRMScript.NetServer.NSEMailConnectionInfoExtended
+- uid: CRMScript.NetServer.NSEMailCustomHeader
+  commentId: T:CRMScript.NetServer.NSEMailCustomHeader
+  isExternal: true
+  name: NSEMailCustomHeader
+  nameWithType: NSEMailCustomHeader
+  fullName: CRMScript.NetServer.NSEMailCustomHeader
+- uid: CRMScript.NetServer.NSEMailEntity
+  commentId: T:CRMScript.NetServer.NSEMailEntity
+  isExternal: true
+  name: NSEMailEntity
+  nameWithType: NSEMailEntity
+  fullName: CRMScript.NetServer.NSEMailEntity
+- uid: CRMScript.NetServer.NSEMailEnvelope
+  commentId: T:CRMScript.NetServer.NSEMailEnvelope
+  isExternal: true
+  name: NSEMailEnvelope
+  nameWithType: NSEMailEnvelope
+  fullName: CRMScript.NetServer.NSEMailEnvelope
+- uid: CRMScript.NetServer.NSEMailFolder
+  commentId: T:CRMScript.NetServer.NSEMailFolder
+  isExternal: true
+  name: NSEMailFolder
+  nameWithType: NSEMailFolder
+  fullName: CRMScript.NetServer.NSEMailFolder
+- uid: CRMScript.NetServer.NSEMailSOInfo
+  commentId: T:CRMScript.NetServer.NSEMailSOInfo
+  isExternal: true
+  name: NSEMailSOInfo
+  nameWithType: NSEMailSOInfo
+  fullName: CRMScript.NetServer.NSEMailSOInfo
+- uid: CRMScript.NetServer.NSDocumentEntity
+  commentId: T:CRMScript.NetServer.NSDocumentEntity
+  isExternal: true
+  name: NSDocumentEntity
+  nameWithType: NSDocumentEntity
+  fullName: CRMScript.NetServer.NSDocumentEntity
+- uid: CRMScript.Global.String
+  commentId: T:CRMScript.Global.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: CRMScript.Global.String
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void
+- uid: CRMScript.Global.Integer[]
+  isExternal: true
+  name: Integer[]
+  nameWithType: Integer[]
+  fullName: CRMScript.Global.Integer[]
+  spec.crmscript:
+  - uid: CRMScript.Global.Integer
+    isExternal: true
+    name: Integer
+    nameWithType: Integer
+    fullName: CRMScript.Global.Integer
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.Global.Integer
+  commentId: T:CRMScript.Global.Integer
+  isExternal: true
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Global.Integer
+- uid: CRMScript.Global.Integer
+  commentId: T:CRMScript.Global.Integer
+  isExternal: true
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Global.Integer
+- uid: CRMScript.Global.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: CRMScript.Global.String[]
+  spec.crmscript:
+  - uid: CRMScript.Global.String
+    isExternal: true
+    name: String
+    nameWithType: String
+    fullName: CRMScript.Global.String
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.Global.String
+  commentId: T:CRMScript.Global.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: CRMScript.Global.String
+- uid: CRMScript.NetServer.NSEMailAddress[]
+  isExternal: true
+  name: NSEMailAddress[]
+  nameWithType: NSEMailAddress[]
+  fullName: CRMScript.NetServer.NSEMailAddress[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSEMailAddress
+    isExternal: true
+    name: NSEMailAddress
+    nameWithType: NSEMailAddress
+    fullName: CRMScript.NetServer.NSEMailAddress
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSEMailAddress
+  commentId: T:CRMScript.NetServer.NSEMailAddress
+  isExternal: true
+  name: NSEMailAddress
+  nameWithType: NSEMailAddress
+  fullName: CRMScript.NetServer.NSEMailAddress
+- uid: CRMScript.Native.ContactOrPersonFromEmail[]
+  isExternal: true
+  name: ContactOrPersonFromEmail[]
+  nameWithType: ContactOrPersonFromEmail[]
+  fullName: CRMScript.Native.ContactOrPersonFromEmail[]
+  spec.crmscript:
+  - uid: CRMScript.Native.ContactOrPersonFromEmail
+    isExternal: true
+    name: ContactOrPersonFromEmail
+    nameWithType: ContactOrPersonFromEmail
+    fullName: CRMScript.Native.ContactOrPersonFromEmail
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.Native.ContactOrPersonFromEmail
+  commentId: T:CRMScript.Native.ContactOrPersonFromEmail
+  isExternal: true
+  name: ContactOrPersonFromEmail
+  nameWithType: ContactOrPersonFromEmail
+  fullName: CRMScript.Native.ContactOrPersonFromEmail
+- uid: CRMScript.NetServer.NSRecurrenceInfo
+  commentId: T:CRMScript.NetServer.NSRecurrenceInfo
+  isExternal: true
+  name: NSRecurrenceInfo
+  nameWithType: NSRecurrenceInfo
+  fullName: CRMScript.NetServer.NSRecurrenceInfo
+- uid: CRMScript.NetServer.NSStream
+  commentId: T:CRMScript.NetServer.NSStream
+  isExternal: true
+  name: NSStream
+  nameWithType: NSStream
+  fullName: CRMScript.NetServer.NSStream
+- uid: CRMScript.NetServer.NSEMailEnvelope[]
+  isExternal: true
+  name: NSEMailEnvelope[]
+  nameWithType: NSEMailEnvelope[]
+  fullName: CRMScript.NetServer.NSEMailEnvelope[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSEMailEnvelope
+    isExternal: true
+    name: NSEMailEnvelope
+    nameWithType: NSEMailEnvelope
+    fullName: CRMScript.NetServer.NSEMailEnvelope
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSEMailEnvelope
+  commentId: T:CRMScript.NetServer.NSEMailEnvelope
+  isExternal: true
+  name: NSEMailEnvelope
+  nameWithType: NSEMailEnvelope
+  fullName: CRMScript.NetServer.NSEMailEnvelope
+- uid: CRMScript.NetServer.NSPerson
+  commentId: T:CRMScript.NetServer.NSPerson
+  isExternal: true
+  name: NSPerson
+  nameWithType: NSPerson
+  fullName: CRMScript.NetServer.NSPerson
+- uid: CRMScript.NetServer.NSPersonEntity[]
+  isExternal: true
+  name: NSPersonEntity[]
+  nameWithType: NSPersonEntity[]
+  fullName: CRMScript.NetServer.NSPersonEntity[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSPersonEntity
+    isExternal: true
+    name: NSPersonEntity
+    nameWithType: NSPersonEntity
+    fullName: CRMScript.NetServer.NSPersonEntity
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSPersonEntity
+  commentId: T:CRMScript.NetServer.NSPersonEntity
+  isExternal: true
+  name: NSPersonEntity
+  nameWithType: NSPersonEntity
+  fullName: CRMScript.NetServer.NSPersonEntity
+- uid: CRMScript.NetServer.NSPerson[]
+  isExternal: true
+  name: NSPerson[]
+  nameWithType: NSPerson[]
+  fullName: CRMScript.NetServer.NSPerson[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSPerson
+    isExternal: true
+    name: NSPerson
+    nameWithType: NSPerson
+    fullName: CRMScript.NetServer.NSPerson
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSPerson
+  commentId: T:CRMScript.NetServer.NSPerson
+  isExternal: true
+  name: NSPerson
+  nameWithType: NSPerson
+  fullName: CRMScript.NetServer.NSPerson
+- uid: CRMScript.NetServer.NSSyncUserAccount[]
+  isExternal: true
+  name: NSSyncUserAccount[]
+  nameWithType: NSSyncUserAccount[]
+  fullName: CRMScript.NetServer.NSSyncUserAccount[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSSyncUserAccount
+    isExternal: true
+    name: NSSyncUserAccount
+    nameWithType: NSSyncUserAccount
+    fullName: CRMScript.NetServer.NSSyncUserAccount
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSSyncUserAccount
+  commentId: T:CRMScript.NetServer.NSSyncUserAccount
+  isExternal: true
+  name: NSSyncUserAccount
+  nameWithType: NSSyncUserAccount
+  fullName: CRMScript.NetServer.NSSyncUserAccount
+- uid: CRMScript.NetServer.NSEMailEntity[]
+  isExternal: true
+  name: NSEMailEntity[]
+  nameWithType: NSEMailEntity[]
+  fullName: CRMScript.NetServer.NSEMailEntity[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSEMailEntity
+    isExternal: true
+    name: NSEMailEntity
+    nameWithType: NSEMailEntity
+    fullName: CRMScript.NetServer.NSEMailEntity
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSEMailEntity
+  commentId: T:CRMScript.NetServer.NSEMailEntity
+  isExternal: true
+  name: NSEMailEntity
+  nameWithType: NSEMailEntity
+  fullName: CRMScript.NetServer.NSEMailEntity
+- uid: CRMScript.NetServer.NSSyncUserAccount
+  commentId: T:CRMScript.NetServer.NSSyncUserAccount
+  isExternal: true
+  name: NSSyncUserAccount
+  nameWithType: NSSyncUserAccount
+  fullName: CRMScript.NetServer.NSSyncUserAccount

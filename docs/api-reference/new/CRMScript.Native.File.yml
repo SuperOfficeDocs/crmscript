@@ -37,6 +37,10 @@ items:
   fullName: CRMScript.Native.File.close
   type: Method
   summary: "\nThis function closes the file, the File object is then ready for<code>open()</code>-ing a new file\n"
+  remarks: 
+  syntax: 
+    content: close()
+    parameters:
   example: 
 - uid: CRMScript.Native.File.eof
   commentId: M:CRMScript.Native.File.eof
@@ -49,6 +53,10 @@ items:
   fullName: CRMScript.Native.File.eof
   type: Method
   summary: "\n<ul><li><strong>Returns:</strong>True if a read passed the end of file has been attempted.</li></ul>When you read lines in a loop, you can break out of the loop when this function return true.\n"
+  remarks: 
+  syntax: 
+    content: eof()
+    parameters:
   example: 
 - uid: CRMScript.Native.File.#ctor
   commentId: M:CRMScript.Native.File.#ctor
@@ -59,8 +67,11 @@ items:
   name: '#ctor'
   nameWithType: File.#ctor
   fullName: CRMScript.Native.File.#ctor
-  type: Method
+  type: Constructor
   summary: "\nThis represents a file.<p></p>\nUse open before you call any other methods.\n"
+  remarks: 
+  syntax: 
+    content: File
   example: 
   - "\n<pre><code>File f;\n\nf.open(&quot;test.txt&quot;, &quot;a+&quot;); // Opening file appending (and creating)\nf.write(&quot;test&quot;);\nf.close(); // Closing the file when done writing\n\nFile g;\n\ng.open(&quot;test.txt&quot;, &quot;r&quot;); // Opening file for reading only\nprint(g.readAll());</code></pre>\n"
 - uid: CRMScript.Native.File.flush
@@ -74,6 +85,10 @@ items:
   fullName: CRMScript.Native.File.flush
   type: Method
   summary: "\nFlush will empty the output buffer, writing the data to the file.\n"
+  remarks: 
+  syntax: 
+    content: flush()
+    parameters:
   example: 
 - uid: CRMScript.Native.File.open
   commentId: M:CRMScript.Native.File.open
@@ -86,6 +101,19 @@ items:
   fullName: CRMScript.Native.File.open
   type: Method
   summary: "\nCRMScript method in the File class that opens the file to be available for other callsOpens the file to be available for other method calls.<p></p>\nYou can optionally provide a codepage.\n"
+  remarks: "\n<h3>Modes</h3><table><thead><tr><th>Mode</th><th>Description</th></tr></thead><tbody><tr><td>r or rb</td><td>Open file for reading.</td></tr><tr><td>w or wb</td><td>Truncate to zero length or create a file for writing.</td></tr><tr><td>a or ab</td><td>Append; open or create a file for writing at the end-of-file.</td></tr><tr><td>r+ or rb+ or r+b</td><td>Open file for update (reading and writing).</td></tr><tr><td>w+ or wb+ or w+b</td><td>Truncate to zero length or create a file for update.</td></tr></tbody></table>\n"
+  syntax: 
+    content: open()
+    parameters:
+    - id: filename
+      type: CRMScript.Global.String
+      description: Path to the file
+    - id: mode
+      type: CRMScript.Global.String
+      description: How to open the file
+    - id: codepage
+      type: CRMScript.Global.String
+      description: Optional. What text codepage the file is in. Default is ISO-8859-1 (Latin-1), but UTF-8 is common for Unicode text files.
   example: 
 - uid: CRMScript.Native.File.readAll
   commentId: M:CRMScript.Native.File.readAll
@@ -98,6 +126,10 @@ items:
   fullName: CRMScript.Native.File.readAll
   type: Method
   summary: "\n<ul><li><strong>Returns:</strong>All text from the file.</li></ul>\n"
+  remarks: 
+  syntax: 
+    content: readAll()
+    parameters:
   example: 
 - uid: CRMScript.Native.File.readBinary
   commentId: M:CRMScript.Native.File.readBinary
@@ -110,6 +142,10 @@ items:
   fullName: CRMScript.Native.File.readBinary
   type: Method
   summary: "\n<ul><li><strong>Returns:</strong>Reads the file and returns binary data in a Byte array</li></ul>\n"
+  remarks: 
+  syntax: 
+    content: readBinary()
+    parameters:
   example: 
 - uid: CRMScript.Native.File.readLine
   commentId: M:CRMScript.Native.File.readLine
@@ -122,6 +158,10 @@ items:
   fullName: CRMScript.Native.File.readLine
   type: Method
   summary: "\n<ul><li><strong>Returns:</strong>The next line from the file or a null string if no more data in the file.</li></ul>\n"
+  remarks: 
+  syntax: 
+    content: readLine()
+    parameters:
   example: 
 - uid: CRMScript.Native.File.rewind
   commentId: M:CRMScript.Native.File.rewind
@@ -134,6 +174,10 @@ items:
   fullName: CRMScript.Native.File.rewind
   type: Method
   summary: "\nThis function will set the current file pointer to the beginning of the file.\n"
+  remarks: 
+  syntax: 
+    content: rewind()
+    parameters:
   example: 
 - uid: CRMScript.Native.File.unlink
   commentId: M:CRMScript.Native.File.unlink
@@ -146,6 +190,10 @@ items:
   fullName: CRMScript.Native.File.unlink
   type: Method
   summary: "\nThis function will delete the file.\n"
+  remarks: 
+  syntax: 
+    content: unlink()
+    parameters:
   example: 
 - uid: CRMScript.Native.File.write
   commentId: M:CRMScript.Native.File.write
@@ -157,7 +205,17 @@ items:
   nameWithType: File.write
   fullName: CRMScript.Native.File.write
   type: Method
-  summary: "\n<ul><li><strong>Data:</strong>String to write to the file</li></ul>This function can be called many times, adding more and more data to the file.\n"
+  summary: 
+  remarks: 
+  syntax: 
+    content: write(String data)
+    parameters:
+    - id: data
+      type: CRMScript.Global.String
+      description: 
+    - id: Data
+      type: 
+      description: 
   example: 
 - uid: CRMScript.Native.File.writeBinary
   commentId: M:CRMScript.Native.File.writeBinary
@@ -169,7 +227,14 @@ items:
   nameWithType: File.writeBinary
   fullName: CRMScript.Native.File.writeBinary
   type: Method
-  summary: "\nWrite binary data to file.<p></p>\n<ul><li><strong>data:</strong>Data in a Byte array that you want to write to the file.</li></ul>\n"
+  summary: "\nWrite binary data to file.\n"
+  remarks: 
+  syntax: 
+    content: writeBinary(Byte[] data)
+    parameters:
+    - id: data
+      type: CRMScript.Global.Byte[]
+      description: 
   example: 
 references:
 - uid: CRMScript.Native.File
@@ -178,3 +243,29 @@ references:
   name: File
   nameWithType: File
   fullName: CRMScript.Native.File
+- uid: CRMScript.Global.String
+  commentId: T:CRMScript.Global.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: CRMScript.Global.String
+- uid: CRMScript.Global.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: CRMScript.Global.Byte[]
+  spec.crmscript:
+  - uid: CRMScript.Global.Byte
+    isExternal: true
+    name: Byte
+    nameWithType: Byte
+    fullName: CRMScript.Global.Byte
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.Global.Byte
+  commentId: T:CRMScript.Global.Byte
+  isExternal: true
+  name: Byte
+  nameWithType: Byte
+  fullName: CRMScript.Global.Byte

@@ -27,6 +27,15 @@ items:
   fullName: CRMScript.NetServer.NSPreviewsAgent.GetPreview
   type: Method
   summary: "\nParse a Preview hint and return a Preview. The returned Preview string may contain resource string identifiers (in square brackets), to be processed by the resource manager.<p></p>\nThe Preview hint is either a literal text, representing itself or a set of key/value pairs enclosed in curly braces. Each key is separated from its value by an equals sign, and each pair from the next by an ampersand, according to usual conventions.<p></p>\nA typical Preview hint could be<code>{contact_id=123}</code>or<code>{appointment_id=222&amp;mode=simple}</code>\n"
+  remarks: 
+  syntax: 
+    content: String GetPreview(String previewHint)
+    parameters:
+    - id: previewHint
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
 - uid: CRMScript.NetServer.NSPreviewsAgent.#ctor
   commentId: M:CRMScript.NetServer.NSPreviewsAgent.#ctor
@@ -37,8 +46,11 @@ items:
   name: '#ctor'
   nameWithType: NSPreviewsAgent.#ctor
   fullName: CRMScript.NetServer.NSPreviewsAgent.#ctor
-  type: Method
+  type: Constructor
   summary: "\nGet preview strings from a hint.\n"
+  remarks: 
+  syntax: 
+    content: NSPreviewsAgent
   example: 
   - "\n<pre><code>NSPreviewsAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 references:
@@ -48,3 +60,9 @@ references:
   name: NSPreviewsAgent
   nameWithType: NSPreviewsAgent
   fullName: CRMScript.NetServer.NSPreviewsAgent
+- uid: CRMScript.Global.String
+  commentId: T:CRMScript.Global.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: CRMScript.Global.String

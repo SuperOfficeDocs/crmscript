@@ -26,6 +26,13 @@ items:
   fullName: CRMScript.Native.Profile.getListTicketsFields
   type: Method
   summary: "\n<pre><code>String[] getListTicketsFields(Integer p_user)</code></pre>This function is deprecated from version 7.<p></p>\nThis function returns a String[] containing information about a user's profile for the list-tickets tables. The fields are returned in a SearchEngine- and DataTable-friendly way.<p></p>\nThe returned array is on the following form: headerField, databaseField, chop, headerField, databaseField, chop, ....\n"
+  remarks: 
+  syntax: 
+    content: getListTicketsFields(Integer p_user)
+    parameters:
+    - id: p_user
+      type: CRMScript.Global.Integer
+      description: 
   example: 
   - "\n<pre><code>String[] getListTicketsFields(Integer p_user)</code></pre><pre><code>Map config = getScreenElementConfig(screenElementIndex);\nProfile p;\nString[] fields = p.getListTicketsFields(getVariable(&quot;activeUser&quot;).toInteger());\nInteger c = 0;\nfor (Integer i = 0; i &lt; (fields.length()* 2); i = i+3)\n{\n  config.insert(&quot;fields.&quot; + c.toString() + &quot;.label&quot;, fields[i]);\n  config.insert(&quot;fields.&quot; + c.toString() + &quot;.field&quot;, fields[i+1]);\n  config.insert(&quot;fields.&quot; + c.toString() + &quot;.chop&quot;, fields[i+2]);\n  if (fields[i+1] == &quot;ticket.status&quot; || fields[i+1] == &quot;ticket.ticket_status&quot;)\n  {\n    config.insert(&quot;showTicketStatus&quot;, &quot;true&quot;);\n  }\n  c++;\n}\nconfig.insert(&quot;fields.length&quot;, c.toString());</code></pre><pre><code>config.insert(&quot;criteria.0.field&quot;, &quot;ticket.ticket_status.(ticket_status_lang-&gt;ticket_status).language&quot;);\nconfig.insert(&quot;criteria.0.operator&quot;, &quot;OperatorEquals&quot;);\nconfig.insert(&quot;criteria.0.value&quot;, getVariable(&quot;userLang&quot;));\nconfig.insert(&quot;criteria.length&quot;, &quot;1&quot;);</code></pre>\n"
 - uid: CRMScript.Native.Profile.#ctor
@@ -37,8 +44,11 @@ items:
   name: '#ctor'
   nameWithType: Profile.#ctor
   fullName: CRMScript.Native.Profile.#ctor
-  type: Method
+  type: Constructor
   summary: "\nThis class contains methods for fetching info about a users profile.\n"
+  remarks: 
+  syntax: 
+    content: Profile
   example: 
 references:
 - uid: CRMScript.Native.Profile
@@ -47,3 +57,9 @@ references:
   name: Profile
   nameWithType: Profile
   fullName: CRMScript.Native.Profile
+- uid: CRMScript.Global.Integer
+  commentId: T:CRMScript.Global.Integer
+  isExternal: true
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Global.Integer

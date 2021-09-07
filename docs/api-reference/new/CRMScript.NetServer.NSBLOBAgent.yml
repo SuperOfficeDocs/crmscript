@@ -62,6 +62,18 @@ items:
   fullName: CRMScript.NetServer.NSBLOBAgent.ChangeContactImage
   type: Method
   summary: "\nChanges the contact image link. If the Binary object id is 0, any image link is removed from the contact.\n"
+  remarks: 
+  syntax: 
+    content: Void ChangeContactImage(Integer contactId, Integer blobId)
+    parameters:
+    - id: contactId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: blobId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSBLOBAgent.ChangePersonImage
   commentId: M:CRMScript.NetServer.NSBLOBAgent.ChangePersonImage
@@ -74,6 +86,18 @@ items:
   fullName: CRMScript.NetServer.NSBLOBAgent.ChangePersonImage
   type: Method
   summary: 
+  remarks: 
+  syntax: 
+    content: Void ChangePersonImage(Integer personId, Integer blobId)
+    parameters:
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: blobId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSBLOBAgent.ChangeProductImage
   commentId: M:CRMScript.NetServer.NSBLOBAgent.ChangeProductImage
@@ -86,6 +110,18 @@ items:
   fullName: CRMScript.NetServer.NSBLOBAgent.ChangeProductImage
   type: Method
   summary: 
+  remarks: 
+  syntax: 
+    content: Void ChangeProductImage(Integer productId, Integer blobId)
+    parameters:
+    - id: productId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: blobId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSBLOBAgent.ChangeProjectImage
   commentId: M:CRMScript.NetServer.NSBLOBAgent.ChangeProjectImage
@@ -98,6 +134,18 @@ items:
   fullName: CRMScript.NetServer.NSBLOBAgent.ChangeProjectImage
   type: Method
   summary: "\nChanges the project image link. If the Binary object id is 0, any image link is removed from the project.\n"
+  remarks: 
+  syntax: 
+    content: Void ChangeProjectImage(Integer projectId, Integer blobId)
+    parameters:
+    - id: projectId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: blobId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSBLOBAgent.CleanupBatchTask
   commentId: M:CRMScript.NetServer.NSBLOBAgent.CleanupBatchTask
@@ -110,6 +158,15 @@ items:
   fullName: CRMScript.NetServer.NSBLOBAgent.CleanupBatchTask
   type: Method
   summary: "\nRemoves the binary objects linked to the batch task, the links themselves and the batch task.\n"
+  remarks: 
+  syntax: 
+    content: Void CleanupBatchTask(Integer batchTaskId)
+    parameters:
+    - id: batchTaskId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSBLOBAgent.CreateDefaultBlobEntity
   commentId: M:CRMScript.NetServer.NSBLOBAgent.CreateDefaultBlobEntity
@@ -123,6 +180,12 @@ items:
   type: Method
   summary: "\nSet default values into a new NSBlobEntity.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>A new NSBlobEntity with default values.<p></p>\n<pre><code>NSBLOBAgent agent;\nNSBlobEntity thing = agent.CreateDefaultBlobEntity();\nthing = agent.SaveBlobEntity(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSBlobEntity CreateDefaultBlobEntity()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSBlobEntity
   example: 
   - "\n<pre><code>NSBLOBAgent agent;\nNSBlobEntity thing = agent.CreateDefaultBlobEntity();\nthing = agent.SaveBlobEntity(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSBLOBAgent.DeleteBlobEntity
@@ -136,6 +199,16 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSBLOBAgent.DeleteBlobEntity
   type: Method
   summary: "\nDeletes the NSBlobEntity\n"
+  remarks: 
+  syntax: 
+    content: DeleteBlobEntity(Integer blobEntity);
+    parameters:
+    - id: blobEntity;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: blobEntityId
+      type: 
+      description: 
   example: 
   - "\n<pre><code>NSBLOBAgent agent;\nagent.DeleteBlobEntity(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSBLOBAgent.GetAppData
@@ -149,6 +222,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSBLOBAgent.GetAppData
   type: Method
   summary: "\nGet a CLOB (limited to a reasonable size by the mechanics of Web Services) according to a string key; ALSO limits to the current ApplicationToken if any\n"
+  remarks: 
+  syntax: 
+    content: String GetAppData(String key)
+    parameters:
+    - id: key
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSBLOBAgent agent;\nString key;\nString res = agent.GetAppData(key);</code></pre>\n"
 - uid: CRMScript.NetServer.NSBLOBAgent.GetBlobEntity
@@ -161,7 +243,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSBLOBAgent.GetBlobEntity
   fullName: CRMScript.NetServer.NSBLOBAgent.GetBlobEntity
   type: Method
-  summary: "\nGets a NSBlobEntity object.\n"
+  summary: "\nGets an NSBlobEntity object.\n"
+  remarks: 
+  syntax: 
+    content: NSBlobEntity GetBlobEntity(Integer blobEntityId);
+    parameters:
+    - id: blobEntityId;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: blobEntityId
+      type: 
+      description: 
+    return:
+      type: CRMScript.NetServer.NSBlobEntity
   example: 
   - "\n<pre><code>NSBLOBAgent agent;\nNSBlobEntity thing = agent.GetBlobEntity(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSBLOBAgent.GetBlobEntityOnContact
@@ -175,6 +269,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSBLOBAgent.GetBlobEntityOnContact
   type: Method
   summary: "\nGets the blob entity that represents the contact image binary object.\n"
+  remarks: 
+  syntax: 
+    content: NSBlobEntity GetBlobEntityOnContact(Integer contactId)
+    parameters:
+    - id: contactId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSBlobEntity
   example: 
   - "\n<pre><code>NSBLOBAgent agent;\nInteger contactId;\nNSBlobEntity res = agent.GetBlobEntityOnContact(contactId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSBLOBAgent.GetBlobEntityOnCountry
@@ -188,6 +291,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSBLOBAgent.GetBlobEntityOnCountry
   type: Method
   summary: "\nGets the blob entity that represents the country flag binary object.\n"
+  remarks: 
+  syntax: 
+    content: NSBlobEntity GetBlobEntityOnCountry(Integer countryId)
+    parameters:
+    - id: countryId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSBlobEntity
   example: 
   - "\n<pre><code>NSBLOBAgent agent;\nInteger countryId;\nNSBlobEntity res = agent.GetBlobEntityOnCountry(countryId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSBLOBAgent.GetBlobEntityOnPerson
@@ -201,6 +313,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSBLOBAgent.GetBlobEntityOnPerson
   type: Method
   summary: "\nGets the blob entity that represents the person image binary object.\n"
+  remarks: 
+  syntax: 
+    content: NSBlobEntity GetBlobEntityOnPerson(Integer personId)
+    parameters:
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSBlobEntity
   example: 
   - "\n<pre><code>NSBLOBAgent agent;\nInteger personId;\nNSBlobEntity res = agent.GetBlobEntityOnPerson(personId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSBLOBAgent.GetBlobEntityOnProduct
@@ -214,6 +335,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSBLOBAgent.GetBlobEntityOnProduct
   type: Method
   summary: "\nGets the blob entity that represents the product image binary object.\n"
+  remarks: 
+  syntax: 
+    content: NSBlobEntity GetBlobEntityOnProduct(Integer productId)
+    parameters:
+    - id: productId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSBlobEntity
   example: 
   - "\n<pre><code>NSBLOBAgent agent;\nInteger productId;\nNSBlobEntity res = agent.GetBlobEntityOnProduct(productId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSBLOBAgent.GetBlobEntityOnProject
@@ -227,6 +357,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSBLOBAgent.GetBlobEntityOnProject
   type: Method
   summary: "\nGets the blob entity that represents the project image binary object.\n"
+  remarks: 
+  syntax: 
+    content: NSBlobEntity GetBlobEntityOnProject(Integer projectId)
+    parameters:
+    - id: projectId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSBlobEntity
   example: 
   - "\n<pre><code>NSBLOBAgent agent;\nInteger projectId;\nNSBlobEntity res = agent.GetBlobEntityOnProject(projectId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSBLOBAgent.GetBlobStream
@@ -240,6 +379,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSBLOBAgent.GetBlobStream
   type: Method
   summary: "\nGet the binary object as a stream\n"
+  remarks: 
+  syntax: 
+    content: NSStream GetBlobStream(Integer blobEntityId)
+    parameters:
+    - id: blobEntityId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSStream
   example: 
   - "\n<pre><code>NSBLOBAgent agent;\nInteger blobEntityId;\nNSStream res = agent.GetBlobStream(blobEntityId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSBLOBAgent.GetChatImageWithSize
@@ -253,6 +401,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSBLOBAgent.GetChatImageWithSize
   type: Method
   summary: "\nReturns the chat image that is displayed in chat with a specified maximum size.\n"
+  remarks: 
+  syntax: 
+    content: NSImage GetChatImageWithSize(Integer chatTopicId, Integer width, Integer height)
+    parameters:
+    - id: chatTopicId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: width
+      type: CRMScript.Global.Integer
+      description: 
+    - id: height
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSImage
   example: 
   - "\n<pre><code>NSBLOBAgent agent;\nInteger chatTopicId;\nInteger width;\nInteger height;\nNSImage res = agent.GetChatImageWithSize(chatTopicId, width, height);</code></pre>\n"
 - uid: CRMScript.NetServer.NSBLOBAgent.GetContactImage
@@ -266,6 +429,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSBLOBAgent.GetContactImage
   type: Method
   summary: "\nReturns the contact image that is displayed in the CRM application.\n"
+  remarks: 
+  syntax: 
+    content: NSImage GetContactImage(Integer contactId)
+    parameters:
+    - id: contactId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSImage
   example: 
   - "\n<pre><code>NSBLOBAgent agent;\nInteger contactId;\nNSImage res = agent.GetContactImage(contactId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSBLOBAgent.GetContactImageWithSize
@@ -279,6 +451,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSBLOBAgent.GetContactImageWithSize
   type: Method
   summary: "\nReturns the contact image that is displayed in the CRM application with a specified maximum size.\n"
+  remarks: 
+  syntax: 
+    content: NSImage GetContactImageWithSize(Integer contactId, Integer width, Integer height)
+    parameters:
+    - id: contactId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: width
+      type: CRMScript.Global.Integer
+      description: 
+    - id: height
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSImage
   example: 
   - "\n<pre><code>NSBLOBAgent agent;\nInteger contactId;\nInteger width;\nInteger height;\nNSImage res = agent.GetContactImageWithSize(contactId, width, height);</code></pre>\n"
 - uid: CRMScript.NetServer.NSBLOBAgent.GetOutputFromBatch
@@ -292,6 +479,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSBLOBAgent.GetOutputFromBatch
   type: Method
   summary: "\nGet the output of a batchtask as a stream\n"
+  remarks: 
+  syntax: 
+    content: NSStream GetOutputFromBatch(Integer batchTaskId)
+    parameters:
+    - id: batchTaskId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSStream
   example: 
   - "\n<pre><code>NSBLOBAgent agent;\nInteger batchTaskId;\nNSStream res = agent.GetOutputFromBatch(batchTaskId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSBLOBAgent.GetPersonImage
@@ -305,6 +501,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSBLOBAgent.GetPersonImage
   type: Method
   summary: "\nReturns the person image that is displayed in the CRM application.\n"
+  remarks: 
+  syntax: 
+    content: NSImage GetPersonImage(Integer personId)
+    parameters:
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSImage
   example: 
   - "\n<pre><code>NSBLOBAgent agent;\nInteger personId;\nNSImage res = agent.GetPersonImage(personId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSBLOBAgent.GetPersonImageWithSize
@@ -318,6 +523,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSBLOBAgent.GetPersonImageWithSize
   type: Method
   summary: "\nReturns the person image that is displayed in the CRM application with a specified maximum size.\n"
+  remarks: 
+  syntax: 
+    content: NSImage GetPersonImageWithSize(Integer personId, Integer width, Integer height)
+    parameters:
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: width
+      type: CRMScript.Global.Integer
+      description: 
+    - id: height
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSImage
   example: 
   - "\n<pre><code>NSBLOBAgent agent;\nInteger personId;\nInteger width;\nInteger height;\nNSImage res = agent.GetPersonImageWithSize(personId, width, height);</code></pre>\n"
 - uid: CRMScript.NetServer.NSBLOBAgent.GetProductImage
@@ -331,6 +551,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSBLOBAgent.GetProductImage
   type: Method
   summary: "\nReturns the product image (rank=1) that is displayed in the CRM application.\n"
+  remarks: 
+  syntax: 
+    content: NSImage GetProductImage(Integer productId)
+    parameters:
+    - id: productId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSImage
   example: 
   - "\n<pre><code>NSBLOBAgent agent;\nInteger productId;\nNSImage res = agent.GetProductImage(productId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSBLOBAgent.GetProductThumbnail
@@ -344,6 +573,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSBLOBAgent.GetProductThumbnail
   type: Method
   summary: "\nReturns the product thumbnail that is displayed in the CRM application.\n"
+  remarks: 
+  syntax: 
+    content: NSImage GetProductThumbnail(Integer productId)
+    parameters:
+    - id: productId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSImage
   example: 
   - "\n<pre><code>NSBLOBAgent agent;\nInteger productId;\nNSImage res = agent.GetProductThumbnail(productId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSBLOBAgent.GetProjectImage
@@ -357,6 +595,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSBLOBAgent.GetProjectImage
   type: Method
   summary: "\nReturns the project image that is displayed in the CRM application.\n"
+  remarks: 
+  syntax: 
+    content: NSImage GetProjectImage(Integer projectId)
+    parameters:
+    - id: projectId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSImage
   example: 
   - "\n<pre><code>NSBLOBAgent agent;\nInteger projectId;\nNSImage res = agent.GetProjectImage(projectId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSBLOBAgent.GetProjectImageWithSize
@@ -370,6 +617,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSBLOBAgent.GetProjectImageWithSize
   type: Method
   summary: "\nReturns the project image that is displayed in the CRM application with a specified maximum size.\n"
+  remarks: 
+  syntax: 
+    content: NSImage GetProjectImageWithSize(Integer projectId, Integer width, Integer height)
+    parameters:
+    - id: projectId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: width
+      type: CRMScript.Global.Integer
+      description: 
+    - id: height
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSImage
   example: 
   - "\n<pre><code>NSBLOBAgent agent;\nInteger projectId;\nInteger width;\nInteger height;\nNSImage res = agent.GetProjectImageWithSize(projectId, width, height);</code></pre>\n"
 - uid: CRMScript.NetServer.NSBLOBAgent.GetQuoteLineImage
@@ -383,6 +645,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSBLOBAgent.GetQuoteLineImage
   type: Method
   summary: "\nReturns the quoteline image (rank=1) that is displayed in the CRM application.\n"
+  remarks: 
+  syntax: 
+    content: NSImage GetQuoteLineImage(Integer quoteLineId)
+    parameters:
+    - id: quoteLineId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSImage
   example: 
   - "\n<pre><code>NSBLOBAgent agent;\nInteger quoteLineId;\nNSImage res = agent.GetQuoteLineImage(quoteLineId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSBLOBAgent.#ctor
@@ -394,8 +665,11 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   name: '#ctor'
   nameWithType: NSBLOBAgent.#ctor
   fullName: CRMScript.NetServer.NSBLOBAgent.#ctor
-  type: Method
+  type: Constructor
   summary: "\nCollection of all services that work with binary objects (BLOBS). For example, images and documents.\n"
+  remarks: 
+  syntax: 
+    content: NSBLOBAgent
   example: 
   - "\n<pre><code>NSBLOBAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSBLOBAgent.SaveBlobEntity
@@ -409,6 +683,13 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSBLOBAgent.SaveBlobEntity
   type: Method
   summary: "\nCRMScript method in the NSBLOBAgent class that creates or updates an NSBlobEntityUpdates the existing NSBlobEntity or creates a new NSBlobEntity if the ID parameter is 0.<p></p>\nReturns the new or updated NSBlobEntity.<p></p>\n<code>NSBlobEntity SaveBlobEntity(NSBlobEntity blobEntity)</code>\n"
+  remarks: 
+  syntax: 
+    content: SaveBlobEntity()
+    parameters:
+    - id: blobEntity
+      type: CRMScript.NetServer.NSBlobEntity
+      description: The entity to save.
   example: 
   - "\n<pre><code>NSBLOB agent;\nNSBlobEntity thing = agent.CreateDefaultBlobEntity();\nthing = agent.SaveBlobEntity(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSBLOBAgent.SaveImageStream
@@ -422,6 +703,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSBLOBAgent.SaveImageStream
   type: Method
   summary: "\nStores an image in the database without linking it to a project or a person. It is possible to ChangePersonImage or ChangeProjectImage to attach image later.\n"
+  remarks: "\n<ul><li>Enum: 1 = PersonImage</li><li>Enum: 2 = ProjectImage</li><li>Enum: 3 = EventImage</li><li>Enum: 4 = Thumbnail</li><li>Enum: 5 = StatusMonitorImage</li><li>Enum: 6 = BatchTask</li><li>Enum: 7 = ProductImage</li><li>Enum: 8 = ProductThumbnail</li><li>Enum: 9 = QuoteLineImage</li><li>Enum: 10 = QuoteLineThumbnail</li><li>Enum: 11 = AccessToken</li><li>Enum: 12 = RefreshToken</li><li>Enum: 13 = Dashboard</li><li>Enum: 14 = DashboardTile</li><li>Enum: 15 = ChatTopicImage</li><li>Enum: 16 = FormsBackgroundImage</li><li>Enum: 17 = ContactImage</li></ul>\n"
+  syntax: 
+    content: Integer SaveImageStream(Integer type, NSImage image, String description)
+    parameters:
+    - id: type
+      type: CRMScript.Global.Integer
+      description: 
+    - id: image
+      type: CRMScript.NetServer.NSImage
+      description: 
+    - id: description
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.Integer
   example: 
   - "\n<pre><code>NSBLOBAgent agent;\nInteger type;\nNSImage image;\nString description;\nInteger res = agent.SaveImageStream(type, image, description);</code></pre>\n"
 - uid: CRMScript.NetServer.NSBLOBAgent.SaveProjectImage
@@ -435,6 +731,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSBLOBAgent.SaveProjectImage
   type: Method
   summary: "\nSaves a project image that is displayed in the CRM application's project image selection dialog to the database.\n"
+  remarks: 
+  syntax: 
+    content: Void SaveProjectImage(String description, NSImage image)
+    parameters:
+    - id: description
+      type: CRMScript.Global.String
+      description: 
+    - id: image
+      type: CRMScript.NetServer.NSImage
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSBLOBAgent.SetAppData
   commentId: M:CRMScript.NetServer.NSBLOBAgent.SetAppData
@@ -447,6 +755,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSBLOBAgent.SetAppData
   type: Method
   summary: "\nGet a CLOB (limited to a reasonable size by the mechanics of Web Services) according to a string key; ALSO limits to the current ApplicationToken if any. Existing data, if any, will be overwritten. Overwrite with a blank value to delete.\n"
+  remarks: 
+  syntax: 
+    content: Void SetAppData(String key, String data)
+    parameters:
+    - id: key
+      type: CRMScript.Global.String
+      description: 
+    - id: data
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSBLOBAgent agent;\nString key;\nString data;\nagent.SetAppData(key, data);</code></pre>\n"
 - uid: CRMScript.NetServer.NSBLOBAgent.SetBlobStream
@@ -460,6 +780,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSBLOBAgent.SetBlobStream
   type: Method
   summary: "\nStore a binary object from it's stream\n"
+  remarks: 
+  syntax: 
+    content: Void SetBlobStream(Integer blobEntityId, NSStream stream)
+    parameters:
+    - id: blobEntityId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: stream
+      type: CRMScript.NetServer.NSStream
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSBLOBAgent.SetContactImage
   commentId: M:CRMScript.NetServer.NSBLOBAgent.SetContactImage
@@ -472,6 +804,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSBLOBAgent.SetContactImage
   type: Method
   summary: "\nStores the contact image that is displayed in the CRM application.\n"
+  remarks: 
+  syntax: 
+    content: Void SetContactImage(Integer contactId, NSImage image)
+    parameters:
+    - id: contactId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: image
+      type: CRMScript.NetServer.NSImage
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSBLOBAgent.SetPersonImage
   commentId: M:CRMScript.NetServer.NSBLOBAgent.SetPersonImage
@@ -484,6 +828,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSBLOBAgent.SetPersonImage
   type: Method
   summary: "\nStores the person image that is displayed in the CRM application.\n"
+  remarks: 
+  syntax: 
+    content: Void SetPersonImage(Integer personId, NSImage image)
+    parameters:
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: image
+      type: CRMScript.NetServer.NSImage
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSBLOBAgent.SetProductImage
   commentId: M:CRMScript.NetServer.NSBLOBAgent.SetProductImage
@@ -496,6 +852,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSBLOBAgent.SetProductImage
   type: Method
   summary: "\nStores the product image that is displayed in the CRM application. The image is scaled down to max 1000x1000. This method operates only the main (rank=1) image; future extensions may support multiple images. A thumbnail of size 75x75 is also automatically set.\n"
+  remarks: 
+  syntax: 
+    content: Void SetProductImage(Integer productId, NSImage image)
+    parameters:
+    - id: productId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: image
+      type: CRMScript.NetServer.NSImage
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSBLOBAgent.SetProductThumbnail
   commentId: M:CRMScript.NetServer.NSBLOBAgent.SetProductThumbnail
@@ -508,6 +876,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSBLOBAgent.SetProductThumbnail
   type: Method
   summary: "\nStores the product thumbnail that is displayed in the CRM application. The image is scaled down to max 200x200 pixels.\n"
+  remarks: 
+  syntax: 
+    content: Void SetProductThumbnail(Integer productId, NSImage image)
+    parameters:
+    - id: productId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: image
+      type: CRMScript.NetServer.NSImage
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSBLOBAgent.SetProjectImage
   commentId: M:CRMScript.NetServer.NSBLOBAgent.SetProjectImage
@@ -520,6 +900,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSBLOBAgent.SetProjectImage
   type: Method
   summary: "\nStores the project image that is displayed in the CRM application.\n"
+  remarks: 
+  syntax: 
+    content: Void SetProjectImage(Integer projectId, NSImage image)
+    parameters:
+    - id: projectId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: image
+      type: CRMScript.NetServer.NSImage
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 references:
 - uid: CRMScript.NetServer.NSBLOBAgent
@@ -528,3 +920,39 @@ references:
   name: NSBLOBAgent
   nameWithType: NSBLOBAgent
   fullName: CRMScript.NetServer.NSBLOBAgent
+- uid: CRMScript.Global.Integer
+  commentId: T:CRMScript.Global.Integer
+  isExternal: true
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Global.Integer
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void
+- uid: CRMScript.NetServer.NSBlobEntity
+  commentId: T:CRMScript.NetServer.NSBlobEntity
+  isExternal: true
+  name: NSBlobEntity
+  nameWithType: NSBlobEntity
+  fullName: CRMScript.NetServer.NSBlobEntity
+- uid: CRMScript.Global.String
+  commentId: T:CRMScript.Global.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: CRMScript.Global.String
+- uid: CRMScript.NetServer.NSStream
+  commentId: T:CRMScript.NetServer.NSStream
+  isExternal: true
+  name: NSStream
+  nameWithType: NSStream
+  fullName: CRMScript.NetServer.NSStream
+- uid: CRMScript.NetServer.NSImage
+  commentId: T:CRMScript.NetServer.NSImage
+  isExternal: true
+  name: NSImage
+  nameWithType: NSImage
+  fullName: CRMScript.NetServer.NSImage

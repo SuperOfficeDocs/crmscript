@@ -124,6 +124,18 @@ items:
   fullName: CRMScript.NetServer.NSAppointmentAgent.Accept
   type: Method
   summary: "\nAccepting an appointment invitation.\n"
+  remarks: "\n<h3>Enum updateMode</h3><ul><li>0 = Unknown</li><li>1 = OnlyThis</li><li>2 = ThisAndForward</li><li>9 = StopRecurrence</li></ul><p><strong>Returns:</strong> Updated NSAppointmentEntity</p>\n"
+  syntax: 
+    content: Void Accept(Integer appointmentId, Integer updateMode)
+    parameters:
+    - id: appointmentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: updateMode
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger appointmentId;\nInteger updateMode;\nagent.Accept(appointmentId, updateMode);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.AcceptRejected
@@ -137,6 +149,18 @@ items:
   fullName: CRMScript.NetServer.NSAppointmentAgent.AcceptRejected
   type: Method
   summary: "\nAccept that an invited participant has rejected your invitation or assignment.\n"
+  remarks: "\n<h3>Enum updateMode</h3><ul><li>0 = Unknown</li><li>1 = OnlyThis</li><li>2 = ThisAndForward</li><li>9 = StopRecurrence</li></ul>\n"
+  syntax: 
+    content: NSAppointmentEntity AcceptRejected(Integer appointmentId, Integer updateMode)
+    parameters:
+    - id: appointmentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: updateMode
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointmentEntity
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger appointmentId;\nInteger updateMode;\nNSAppointmentEntity res = agent.AcceptRejected(appointmentId, updateMode);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.AcceptWithEmailConfirmation
@@ -150,6 +174,18 @@ items:
   fullName: CRMScript.NetServer.NSAppointmentAgent.AcceptWithEmailConfirmation
   type: Method
   summary: "\nAccepting an appointment invitation and send an email confirmation to the meeting organizer.\n"
+  remarks: "\n<h3>Enum updateMode</h3><ul><li>0 = Unknown</li><li>1 = OnlyThis</li><li>2 = ThisAndForward</li><li>9 = StopRecurrence</li></ul>\n"
+  syntax: 
+    content: Void AcceptWithEmailConfirmation(Integer appointmentId, Integer updateMode)
+    parameters:
+    - id: appointmentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: updateMode
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger appointmentId;\nInteger updateMode;\nagent.AcceptWithEmailConfirmation(appointmentId, updateMode);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.AcceptWithSmtpEmailConfirmation
@@ -163,6 +199,21 @@ items:
   fullName: CRMScript.NetServer.NSAppointmentAgent.AcceptWithSmtpEmailConfirmation
   type: Method
   summary: "\nAccepting an appointment invitation and send an email confirmation to the meeting organizer.\n"
+  remarks: "\n<h3>Enum updateMode</h3><ul><li>0 = Unknown</li><li>1 = OnlyThis</li><li>2 = ThisAndForward</li><li>9 = StopRecurrence</li></ul>\n"
+  syntax: 
+    content: Void AcceptWithSmtpEmailConfirmation(Integer appointmentId, Integer updateMode, NSEMailConnectionInfo smtpEMailConnectionInfo)
+    parameters:
+    - id: appointmentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: updateMode
+      type: CRMScript.Global.Integer
+      description: 
+    - id: smtpEMailConnectionInfo
+      type: CRMScript.NetServer.NSEMailConnectionInfo
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger appointmentId;\nInteger updateMode;\nNSEMailConnectionInfo smtpEMailConnectionInfo;\nagent.AcceptWithSmtpEmailConfirmation(appointmentId, updateMode, smtpEMailConnectionInfo);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.AssignTo
@@ -175,7 +226,22 @@ items:
   nameWithType: NSAppointmentAgent.AssignTo
   fullName: CRMScript.NetServer.NSAppointmentAgent.AssignTo
   type: Method
-  summary: "\nAssigning an appointment to another person.\n"
+  summary: "\nAssigning an appointment to another person.<p></p>\n<strong>Returns:</strong>Updated NSAppointmentEntity\n"
+  remarks: "\n<h3>Enum updateMode</h3><ul><li>0 = Unknown</li><li>1 = OnlyThis</li><li>2 = ThisAndForward</li><li>9 = StopRecurrence</li></ul>\n"
+  syntax: 
+    content: NSAppointmentEntity AssignTo(Integer appointmentId, ParticipantInfo participant, Integer updateMode)
+    parameters:
+    - id: appointmentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: participant
+      type: CRMScript.Native.ParticipantInfo
+      description: 
+    - id: updateMode
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointmentEntity
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger appointmentId;\nParticipantInfo participant;\nInteger updateMode;\nNSAppointmentEntity res = agent.AssignTo(appointmentId, participant, updateMode);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.CalculateDays
@@ -189,6 +255,15 @@ items:
   fullName: CRMScript.NetServer.NSAppointmentAgent.CalculateDays
   type: Method
   summary: "\nCalculates the set of dates that represents a recurrence pattern. Adds conflict information to each date.\n"
+  remarks: 
+  syntax: 
+    content: NSRecurrenceInfo CalculateDays(NSAppointmentEntity appointmentEntity)
+    parameters:
+    - id: appointmentEntity
+      type: CRMScript.NetServer.NSAppointmentEntity
+      description: 
+    return:
+      type: CRMScript.NetServer.NSRecurrenceInfo
   example: 
 - uid: CRMScript.NetServer.NSAppointmentAgent.CanAssignToProjectMember
   commentId: M:CRMScript.NetServer.NSAppointmentAgent.CanAssignToProjectMember
@@ -201,6 +276,18 @@ items:
   fullName: CRMScript.NetServer.NSAppointmentAgent.CanAssignToProjectMember
   type: Method
   summary: 
+  remarks: 
+  syntax: 
+    content: Bool CanAssignToProjectMember(Integer projectId, Integer suggestedAppointmentId)
+    parameters:
+    - id: projectId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: suggestedAppointmentId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Bool
   example: 
 - uid: CRMScript.NetServer.NSAppointmentAgent.CleanUpBookingDeleted
   commentId: M:CRMScript.NetServer.NSAppointmentAgent.CleanUpBookingDeleted
@@ -213,6 +300,15 @@ items:
   fullName: CRMScript.NetServer.NSAppointmentAgent.CleanUpBookingDeleted
   type: Method
   summary: "\nDeletes all appointments(within the appointmentIds array) with status BookingDeleted.\n"
+  remarks: 
+  syntax: 
+    content: Integer CleanUpBookingDeleted(Integer[] appointmentIds)
+    parameters:
+    - id: appointmentIds
+      type: CRMScript.Global.Integer[]
+      description: 
+    return:
+      type: CRMScript.Global.Integer
   example: 
 - uid: CRMScript.NetServer.NSAppointmentAgent.CleanUpRecurringBookingDeleted
   commentId: M:CRMScript.NetServer.NSAppointmentAgent.CleanUpRecurringBookingDeleted
@@ -225,6 +321,12 @@ items:
   fullName: CRMScript.NetServer.NSAppointmentAgent.CleanUpRecurringBookingDeleted
   type: Method
   summary: "\nDeletes all appointments with status BookingDeleted and for in logged user.\n"
+  remarks: 
+  syntax: 
+    content: Integer CleanUpRecurringBookingDeleted()
+    parameters:
+    return:
+      type: CRMScript.Global.Integer
   example: 
 - uid: CRMScript.NetServer.NSAppointmentAgent.CreateAndAccept
   commentId: M:CRMScript.NetServer.NSAppointmentAgent.CreateAndAccept
@@ -237,6 +339,18 @@ items:
   fullName: CRMScript.NetServer.NSAppointmentAgent.CreateAndAccept
   type: Method
   summary: "\nCreating an appointment from an emailItem invitation and accepting it.\n"
+  remarks: "\n<h3>Enum updateMode</h3><ul><li>0 = Unknown</li><li>1 = OnlyThis</li><li>2 = ThisAndForward</li></ul>\n"
+  syntax: 
+    content: Void CreateAndAccept(Integer emailItemId, Integer updateMode)
+    parameters:
+    - id: emailItemId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: updateMode
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSAppointmentAgent.CreateAndAcceptWithEmailConfirmation
   commentId: M:CRMScript.NetServer.NSAppointmentAgent.CreateAndAcceptWithEmailConfirmation
@@ -249,6 +363,18 @@ items:
   fullName: CRMScript.NetServer.NSAppointmentAgent.CreateAndAcceptWithEmailConfirmation
   type: Method
   summary: "\nCreating an appointment from an emailItem invitation and accepting it with email confirmation to the meeting organizer.\n"
+  remarks: "\n<h3>Enum updateMode</h3><ul><li>0 = Unknown</li><li>1 = OnlyThis</li><li>2 = ThisAndForward</li></ul>\n"
+  syntax: 
+    content: Void CreateAndAcceptWithEmailConfirmation(Integer emailItemId, Integer updateMode)
+    parameters:
+    - id: emailItemId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: updateMode
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSAppointmentAgent.CreateAppointmentForUID
   commentId: M:CRMScript.NetServer.NSAppointmentAgent.CreateAppointmentForUID
@@ -260,7 +386,19 @@ items:
   nameWithType: NSAppointmentAgent.CreateAppointmentForUID
   fullName: CRMScript.NetServer.NSAppointmentAgent.CreateAppointmentForUID
   type: Method
-  summary: "\nCreate an invitation record and an appointment with a given UID to reserve it if the UID is unused, otherwise null.\n"
+  summary: "\nCreate an invitation record and an appointment with a given UID to reserve it if the UID is unused, otherwise null.<p></p>\n<strong>Returns:</strong>The newly created NSAppointmentEntity or null if the UID is in the DB already.\n"
+  remarks: 
+  syntax: 
+    content: NSAppointmentEntity CreateAppointmentForUID(NSAppointmentEntity appointmentEntity, String uID)
+    parameters:
+    - id: appointmentEntity
+      type: CRMScript.NetServer.NSAppointmentEntity
+      description: 
+    - id: uID
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointmentEntity
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nNSAppointmentEntity appointmentEntity;\nString uID;\nNSAppointmentEntity res = agent.CreateAppointmentForUID(appointmentEntity, uID);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.CreateDefaultAppointmentEntity
@@ -275,6 +413,12 @@ items:
   type: Method
   summary: "\nSet default values into a new NSAppointmentEntity.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>A new NSAppointmentEntity with default values.<p></p>\n<pre><code>NSAppointmentAgent agent;\nNSAppointmentEntity thing = agent.CreateDefaultAppointmentEntity();\nthing = agent.SaveAppointmentEntity(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSAppointmentEntity CreateDefaultAppointmentEntity()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSAppointmentEntity
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nNSAppointmentEntity thing = agent.CreateDefaultAppointmentEntity();\nthing = agent.SaveAppointmentEntity(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.CreateDefaultAppointmentEntityByType
@@ -287,7 +431,16 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSAppointmentAgent.CreateDefaultAppointmentEntityByType
   fullName: CRMScript.NetServer.NSAppointmentAgent.CreateDefaultAppointmentEntityByType
   type: Method
-  summary: "\nCreates a NSAppointmentEntity populated with the default values for the specific type.\n"
+  summary: "\nCreates an NSAppointmentEntity populated with the default values for the specific type.\n"
+  remarks: "\n<h3>Enum: AppntRecordTypes</h3><ul><li>0 = Unknown</li><li>1 = Appointment</li><li>2 = Document</li><li>3 = Email</li><li>4 = Fax</li><li>5 = Phone</li><li>6 = ToDo</li><li>7 = MailMergeDraft</li><li>8 = MailMergeFinal</li><li>9 = Report</li><li>10 = SaintAll</li></ul>\n"
+  syntax: 
+    content: NSAppointmentEntity CreateDefaultAppointmentEntityByType(Integer type)
+    parameters:
+    - id: type
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointmentEntity
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger type;\nNSAppointmentEntity res = agent.CreateDefaultAppointmentEntityByType(type);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.CreateDefaultAppointmentEntityByTypeAndAssociate
@@ -300,7 +453,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSAppointmentAgent.CreateDefaultAppointmentEntityByTypeAndAssociate
   fullName: CRMScript.NetServer.NSAppointmentAgent.CreateDefaultAppointmentEntityByTypeAndAssociate
   type: Method
-  summary: "\nCreates a NSAppointmentEntity populated with the default values for the specific type and owner.\n"
+  summary: "\nCreates an NSAppointmentEntity populated with the default values for the specific type and owner.\n"
+  remarks: "\n<h3>Enum: AppntRecordTypes</h3><ul><li>0 = Unknown</li><li>1 = Appointment</li><li>2 = Document</li><li>3 = Email</li><li>4 = Fax</li><li>5 = Phone</li><li>6 = ToDo</li><li>7 = MailMergeDraft</li><li>8 = MailMergeFinal</li><li>9 = Report</li><li>10 = SaintAll</li></ul>\n"
+  syntax: 
+    content: NSAppointmentEntity CreateDefaultAppointmentEntityByTypeAndAssociate(Integer type, Integer associateId)
+    parameters:
+    - id: type
+      type: CRMScript.Global.Integer
+      description: 
+    - id: associateId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointmentEntity
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger type;\nInteger associateId;\nNSAppointmentEntity res = agent.CreateDefaultAppointmentEntityByTypeAndAssociate(type, associateId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.CreateDefaultAppointmentEntityFromProjectSuggestion
@@ -314,6 +479,24 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.CreateDefaultAppointmentEntityFromProjectSuggestion
   type: Method
   summary: 
+  remarks: 
+  syntax: 
+    content: NSAppointmentEntity CreateDefaultAppointmentEntityFromProjectSuggestion(Integer suggestedAppointmentId, Integer projectId, Bool createNow, Integer ownerId)
+    parameters:
+    - id: suggestedAppointmentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: projectId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: createNow
+      type: CRMScript.Global.Bool
+      description: 
+    - id: ownerId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointmentEntity
   example: 
 - uid: CRMScript.NetServer.NSAppointmentAgent.CreateDefaultAppointmentEntityFromSaleSuggestion
   commentId: M:CRMScript.NetServer.NSAppointmentAgent.CreateDefaultAppointmentEntityFromSaleSuggestion
@@ -325,7 +508,25 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSAppointmentAgent.CreateDefaultAppointmentEntityFromSaleSuggestion
   fullName: CRMScript.NetServer.NSAppointmentAgent.CreateDefaultAppointmentEntityFromSaleSuggestion
   type: Method
-  summary: "\nCreates an appointment based on a suggested appointment.\n"
+  summary: "\nCreates an appointment based on a suggested appointment.<p></p>\n<strong>Returns:</strong>The newly created appointment\n"
+  remarks: 
+  syntax: 
+    content: NSAppointmentEntity CreateDefaultAppointmentEntityFromSaleSuggestion(Integer suggestedAppointmentId, Integer saleId, Bool createNow, Integer ownerId)
+    parameters:
+    - id: suggestedAppointmentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: saleId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: createNow
+      type: CRMScript.Global.Bool
+      description: 
+    - id: ownerId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointmentEntity
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger suggestedAppointmentId;\nInteger saleId;\nBool createNow;\nInteger ownerId;\nNSAppointmentEntity res = agent.CreateDefaultAppointmentEntityFromSaleSuggestion(suggestedAppointmentId, saleId, createNow, ownerId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.CreateDefaultRecurrence
@@ -338,7 +539,13 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSAppointmentAgent.CreateDefaultRecurrence
   fullName: CRMScript.NetServer.NSAppointmentAgent.CreateDefaultRecurrence
   type: Method
-  summary: "\nCreates a NSRecurrenceInfo object populated with the default values for the specific type.<p></p>\n<strong>Returns:</strong>NSReccurenceInfo<p></p>\n<pre><code>NSAppointmentAgent agent;\nNSRecurrenceInfo res = agent.CreateDefaultRecurrence();</code></pre>\n"
+  summary: "\nCreates an NSRecurrenceInfo object populated with the default values for the specific type.<p></p>\n<strong>Returns:</strong>NSReccurenceInfo<p></p>\n<pre><code>NSAppointmentAgent agent;\nNSRecurrenceInfo res = agent.CreateDefaultRecurrence();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSRecurrenceInfo CreateDefaultRecurrence()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSRecurrenceInfo
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nNSRecurrenceInfo res = agent.CreateDefaultRecurrence();</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.CreateDefaultRecurrenceByDate
@@ -351,7 +558,16 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSAppointmentAgent.CreateDefaultRecurrenceByDate
   fullName: CRMScript.NetServer.NSAppointmentAgent.CreateDefaultRecurrenceByDate
   type: Method
-  summary: "\nCreates a NSRecurrenceInfo object populated with the default values for the specific type. Using startDate as start date for the recurreing pattern.\n"
+  summary: "\nCreates an NSRecurrenceInfo object populated with the default values for the specific type. Using startDate as start date for the recurreing pattern.\n"
+  remarks: 
+  syntax: 
+    content: NSRecurrenceInfo CreateDefaultRecurrenceByDate(DateTime startDate)
+    parameters:
+    - id: startDate
+      type: CRMScript.Global.DateTime
+      description: 
+    return:
+      type: CRMScript.NetServer.NSRecurrenceInfo
   example: 
 - uid: CRMScript.NetServer.NSAppointmentAgent.CreateDefaultReOpenAppointment
   commentId: M:CRMScript.NetServer.NSAppointmentAgent.CreateDefaultReOpenAppointment
@@ -364,6 +580,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.CreateDefaultReOpenAppointment
   type: Method
   summary: "\nA re-open appointment should be created as a reminder to re-open the sale at a certain date with information regarding the stalled sale.\n"
+  remarks: 
+  syntax: 
+    content: NSAppointmentEntity CreateDefaultReOpenAppointment(Integer saleId)
+    parameters:
+    - id: saleId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointmentEntity
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger saleId;\nNSAppointmentEntity res = agent.CreateDefaultReOpenAppointment(saleId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.CreateDefaultSuggestedAppointmentEntity
@@ -378,6 +603,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   type: Method
   summary: "\nSet default values into a new NSSuggestedAppointmentEntity.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>A new NSSuggestedAppointmentEntity with default values.<p></p>\n<pre><code>NSAppointmentAgent agent;\nNSSuggestedAppointmentEntity thing = agent.CreateDefaultSuggestedAppointmentEntity();\nthing = agent.SaveSuggestedAppointmentEntity(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSSuggestedAppointmentEntity CreateDefaultSuggestedAppointmentEntity()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSSuggestedAppointmentEntity
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nNSSuggestedAppointmentEntity thing = agent.CreateDefaultSuggestedAppointmentEntity();\nthing = agent.SaveSuggestedAppointmentEntity(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.CreateDefaultTaskListItem
@@ -392,6 +623,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   type: Method
   summary: "\nSet default values into a new NSTaskListItem.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>A new NSTaskListItem with default values.<p></p>\n<pre><code>NSAppointmentAgent agent;\nNSTaskListItem thing = agent.CreateDefaultTaskListItem();\nthing = agent.SaveTaskListItem(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSTaskListItem CreateDefaultTaskListItem()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSTaskListItem
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nNSTaskListItem thing = agent.CreateDefaultTaskListItem();\nthing = agent.SaveTaskListItem(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.DeclineInvitationFromEmailItem
@@ -405,6 +642,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.DeclineInvitationFromEmailItem
   type: Method
   summary: "\nDeclining an appointment invitation where no tentative appointments have been created.\n"
+  remarks: 
+  syntax: 
+    content: Void DeclineInvitationFromEmailItem(Integer emailItemId, String rejectReason)
+    parameters:
+    - id: emailItemId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: rejectReason
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSAppointmentAgent.Delete
   commentId: M:CRMScript.NetServer.NSAppointmentAgent.Delete
@@ -417,6 +666,27 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.Delete
   type: Method
   summary: "\nDeleting a booking\n"
+  remarks: "\n<h3>Enum updateMode</h3><ul><li>0 = Unknown</li><li>1 = OnlyThis</li><li>2 = ThisAndForward</li></ul>\n"
+  syntax: 
+    content: Void Delete(Integer appointmentId, Integer updateMode, Bool sendEmailToParticipants, NSEMailConnectionInfo smtpEMailConnectionInfo, NSEMailConnectionInfo imapEMailConnectionInfo)
+    parameters:
+    - id: appointmentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: updateMode
+      type: CRMScript.Global.Integer
+      description: 
+    - id: sendEmailToParticipants
+      type: CRMScript.Global.Bool
+      description: 
+    - id: smtpEMailConnectionInfo
+      type: CRMScript.NetServer.NSEMailConnectionInfo
+      description: 
+    - id: imapEMailConnectionInfo
+      type: CRMScript.NetServer.NSEMailConnectionInfo
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSAppointmentAgent.DeleteAppointmentEntity
   commentId: M:CRMScript.NetServer.NSAppointmentAgent.DeleteAppointmentEntity
@@ -429,6 +699,16 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.DeleteAppointmentEntity
   type: Method
   summary: "\nDeletes the NSAppointmentEntity\n"
+  remarks: 
+  syntax: 
+    content: DeleteAppointmentEntity(Integer appointmentEntity);
+    parameters:
+    - id: appointmentEntity;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: appointmentEntityId
+      type: 
+      description: 
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nagent.DeleteAppointmentEntity(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GenerateLead
@@ -442,6 +722,48 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.GenerateLead
   type: Method
   summary: "\nAdds a sales lead (task) to a contact in SuperOffice. If the contact or person is known, the sales lead is added to the current contact. If not, a new contact is created, with the associate with ownerIdForNewContact as responsible (Our Contact). A relation is created between the contact and the person submitting the lead. Based on wether the person the request is made for is found or not, the following happens: If the person is found, the person, person's contact and sales representative is returned. If neither the person nor the contact is found a new person and contact is created (if sufficient data is supplied), and the person, person's contact and sales representative is returned. If the contact and not the person is found a new person is created on this contact, and the contact, salesrep, and person is returned (if there was enough data to return the person). If more than one contact is found a list of contacts is returned.\n"
+  remarks: 
+  syntax: 
+    content: NSSalesActivity GenerateLead(Integer associateIdForNewContact, String leadDescription, String relation, Integer relationId, String leadContact, String leadPersonFirstname, String leadPersonLastname, String leadPersonEmail, String leadPhoneNumber, String creatorsContact, String creatorsFirstname, String creatorsLastname)
+    parameters:
+    - id: associateIdForNewContact
+      type: CRMScript.Global.Integer
+      description: 
+    - id: leadDescription
+      type: CRMScript.Global.String
+      description: 
+    - id: relation
+      type: CRMScript.Global.String
+      description: 
+    - id: relationId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: leadContact
+      type: CRMScript.Global.String
+      description: 
+    - id: leadPersonFirstname
+      type: CRMScript.Global.String
+      description: 
+    - id: leadPersonLastname
+      type: CRMScript.Global.String
+      description: 
+    - id: leadPersonEmail
+      type: CRMScript.Global.String
+      description: 
+    - id: leadPhoneNumber
+      type: CRMScript.Global.String
+      description: 
+    - id: creatorsContact
+      type: CRMScript.Global.String
+      description: 
+    - id: creatorsFirstname
+      type: CRMScript.Global.String
+      description: 
+    - id: creatorsLastname
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSSalesActivity
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger associateIdForNewContact;\nString leadDescription;\nString relation;\nInteger relationId;\nString leadContact;\nString leadPersonFirstname;\nString leadPersonLastname;\nString leadPersonEmail;\nString leadPhoneNumber;\nString creatorsContact;\nString creatorsFirstname;\nString creatorsLastname;\nNSSalesActivity res = agent.GenerateLead(associateIdForNewContact, leadDescription, relation, relationId, leadContact, leadPersonFirstname, leadPersonLastname, leadPersonEmail, leadPhoneNumber, creatorsContact, creatorsFirstname, creatorsLastname);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetActivityInformationListByDatesAndAssociate
@@ -455,6 +777,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetActivityInformationListByDatesAndAssociate
   type: Method
   summary: "\nGet activity information for one or more days according to the given date interval. The time portion of the dates is ignored. Private appointments are counted, but may not be visible through tooltips or other more detailed services.\n"
+  remarks: 
+  syntax: 
+    content: NSActivityInformationListItem[] GetActivityInformationListByDatesAndAssociate(DateTime startDate, DateTime endDate, Integer associateId)
+    parameters:
+    - id: startDate
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endDate
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: associateId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSActivityInformationListItem[]
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nDateTime startDate;\nDateTime endDate;\nInteger associateId;\nNSActivityInformationListItem[] res = agent.GetActivityInformationListByDatesAndAssociate(startDate, endDate, associateId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetAlarms
@@ -468,6 +805,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetAlarms
   type: Method
   summary: 
+  remarks: 
+  syntax: 
+    content: NSMultiAlarmData GetAlarms(Bool includeInvitations, Bool includeAllAppointments, Integer defaultAlarmLeadTimeInMinutes)
+    parameters:
+    - id: includeInvitations
+      type: CRMScript.Global.Bool
+      description: 
+    - id: includeAllAppointments
+      type: CRMScript.Global.Bool
+      description: 
+    - id: defaultAlarmLeadTimeInMinutes
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSMultiAlarmData
   example: 
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetAppointment
   commentId: M:CRMScript.NetServer.NSAppointmentAgent.GetAppointment
@@ -479,7 +831,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSAppointmentAgent.GetAppointment
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetAppointment
   type: Method
-  summary: "\nGets a NSAppointment object.\n"
+  summary: "\nGets an NSAppointment object.\n"
+  remarks: 
+  syntax: 
+    content: NSAppointment GetAppointment(Integer appointmentId);
+    parameters:
+    - id: appointmentId;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: appointmentId
+      type: 
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointment
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nNSAppointment thing = agent.GetAppointment(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetAppointmentEntity
@@ -492,7 +856,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSAppointmentAgent.GetAppointmentEntity
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetAppointmentEntity
   type: Method
-  summary: "\nGets a NSAppointmentEntity object.\n"
+  summary: "\nGets an NSAppointmentEntity object.\n"
+  remarks: 
+  syntax: 
+    content: NSAppointmentEntity GetAppointmentEntity(Integer appointmentEntityId);
+    parameters:
+    - id: appointmentEntityId;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: appointmentEntityId
+      type: 
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointmentEntity
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nNSAppointmentEntity thing = agent.GetAppointmentEntity(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetAppointmentFromUID
@@ -506,6 +882,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetAppointmentFromUID
   type: Method
   summary: "\nGet the appointment that corresponds to the given UID.\n"
+  remarks: 
+  syntax: 
+    content: NSAppointmentEntity GetAppointmentFromUID(String uID)
+    parameters:
+    - id: uID
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointmentEntity
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nString uID;\nNSAppointmentEntity res = agent.GetAppointmentFromUID(uID);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetAppointmentHaveParticipantsWithEmail
@@ -519,6 +904,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetAppointmentHaveParticipantsWithEmail
   type: Method
   summary: "\nGetAppointmentHaveParticipantsWithEmail will check if any of the participants is marked to receive emails on this appointment. If no participants are defined, false will be returned.\n"
+  remarks: 
+  syntax: 
+    content: Bool GetAppointmentHaveParticipantsWithEmail(Integer appointmentId)
+    parameters:
+    - id: appointmentId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Bool
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger appointmentId;\nBool res = agent.GetAppointmentHaveParticipantsWithEmail(appointmentId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetAppointmentList
@@ -532,6 +926,13 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetAppointmentList
   type: Method
   summary: "\nCRMScript method in the NSAppointmentAgent class that retrieves an array of NSAppointment objectsRetrieves an array of<code>NSAppointment</code>objects.<p></p>\n<code>NSAppointment[] GetAppointmentList(Integer[] appointmentIds)</code>\n"
+  remarks: 
+  syntax: 
+    content: GetAppointmentList()
+    parameters:
+    - id: appointmentIds
+      type: CRMScript.Global.Integer[]
+      description: The identifiers of the appointments
   example: 
   - "\n<pre><code>Integer[] ids;\nNSAppointmentAgent agent;\nagent.GetAppointmentList(ids);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetAppointmentRecords
@@ -545,6 +946,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetAppointmentRecords
   type: Method
   summary: "\nGet all records involved in a booking and/or recurring appointments. MotherId can be zero for repeating appointments or bookings, and recurrenceRuleId can be zero for bookings that are not repeating.\n"
+  remarks: 
+  syntax: 
+    content: NSAppointment[] GetAppointmentRecords(Integer motherId, Integer recurrenceRuleId)
+    parameters:
+    - id: motherId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: recurrenceRuleId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointment[]
   example: 
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetAppointmentsByTaskHeading
   commentId: M:CRMScript.NetServer.NSAppointmentAgent.GetAppointmentsByTaskHeading
@@ -556,7 +969,16 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSAppointmentAgent.GetAppointmentsByTaskHeading
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetAppointmentsByTaskHeading
   type: Method
-  summary: "\nMethod that returns appointments of a specific appointment task heading. Task represents the different types of activities, like “Phone call”, “Meeting” and so on. The heading represents a grouping or filtering of tasks.\n"
+  summary: "\nMethod that returns appointments of a specific appointment task heading. Task represents the different types of activities, like &quot;Phone call&quot;, &quot;Meeting&quot; and so on. The heading represents a grouping or filtering of tasks.\n"
+  remarks: 
+  syntax: 
+    content: NSAppointment[] GetAppointmentsByTaskHeading(Integer taskHeadingId)
+    parameters:
+    - id: taskHeadingId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointment[]
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger taskHeadingId;\nNSAppointment[] res = agent.GetAppointmentsByTaskHeading(taskHeadingId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetAssociateDiary
@@ -570,6 +992,24 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetAssociateDiary
   type: Method
   summary: 
+  remarks: 
+  syntax: 
+    content: NSAppointment[] GetAssociateDiary(Integer associateId, DateTime startTime, DateTime endTime, Integer count)
+    parameters:
+    - id: associateId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointment[]
   example: 
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetAssociatesDiary
   commentId: M:CRMScript.NetServer.NSAppointmentAgent.GetAssociatesDiary
@@ -582,6 +1022,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetAssociatesDiary
   type: Method
   summary: 
+  remarks: 
+  syntax: 
+    content: NSAppointment[] GetAssociatesDiary(Integer[] associateIds, DateTime startTime, DateTime endTime)
+    parameters:
+    - id: associateIds
+      type: CRMScript.Global.Integer[]
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointment[]
   example: 
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetCanInsertForAssociates
   commentId: M:CRMScript.NetServer.NSAppointmentAgent.GetCanInsertForAssociates
@@ -594,6 +1049,13 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetCanInsertForAssociates
   type: Method
   summary: "\nChecks if the current associate can create appointments in the diary of other associates.<p></p>\nReturns an array of Bool corresponding to the associate array input parameter.<p></p>\n<code>Bool[] GetCanInsertForAssociates(Integer[] associateIds)</code>\n"
+  remarks: 
+  syntax: 
+    content: GetCanInsertForAssociates()
+    parameters:
+    - id: associateIds
+      type: CRMScript.Global.Integer[]
+      description: Array of associate IDs to check for
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger[] associateIds;\nBool[] res = agent.GetCanInsertForAssociates(associateIds);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetContactAppointments
@@ -607,6 +1069,24 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetContactAppointments
   type: Method
   summary: "\nMethod that returns a specified number of appointments within a time range. The appointments belong to the contact specified. If the logged on user is not allowed to view this persons appointments an exception is thrown.\n"
+  remarks: 
+  syntax: 
+    content: NSAppointment[] GetContactAppointments(Integer contactId, DateTime startTime, DateTime endTime, Integer count)
+    parameters:
+    - id: contactId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointment[]
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger contactId;\nDateTime startTime;\nDateTime endTime;\nInteger count;\nNSAppointment[] res = agent.GetContactAppointments(contactId, startTime, endTime, count);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetContactAppointmentsByTask
@@ -619,7 +1099,28 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSAppointmentAgent.GetContactAppointmentsByTask
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetContactAppointmentsByTask
   type: Method
-  summary: "\nMethod that returns a specified number of appointments of a specific appointment task type within a time range. The appointments belong to the contact specified. Task represents the different types of activities, like “Phone call”, “Meeting” and so on.\n"
+  summary: "\nMethod that returns a specified number of appointments of a specific appointment task type within a time range. The appointments belong to the contact specified. Task represents the different types of activities, like &quot;Phone call&quot;, &quot;Meeting&quot; and so on.\n"
+  remarks: 
+  syntax: 
+    content: NSAppointment[] GetContactAppointmentsByTask(Integer contactId, DateTime startTime, DateTime endTime, Integer count, Integer taskId)
+    parameters:
+    - id: contactId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    - id: taskId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointment[]
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger contactId;\nDateTime startTime;\nDateTime endTime;\nInteger count;\nInteger taskId;\nNSAppointment[] res = agent.GetContactAppointmentsByTask(contactId, startTime, endTime, count, taskId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetContactAppointmentsByTaskHeading
@@ -632,7 +1133,28 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSAppointmentAgent.GetContactAppointmentsByTaskHeading
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetContactAppointmentsByTaskHeading
   type: Method
-  summary: "\nMethod that returns a specified number of appointments of a specific appointment task heading within a time range. The appointments belong to the contact specified. Task represents the different types of activities, like “Phone call”, “Meeting” and so on. The heading represents a grouping or filtering of tasks.\n"
+  summary: "\nMethod that returns a specified number of appointments of a specific appointment task heading within a time range. The appointments belong to the contact specified. Task represents the different types of activities, like &quot;Phone call&quot;, &quot;Meeting&quot; and so on. The heading represents a grouping or filtering of tasks.\n"
+  remarks: 
+  syntax: 
+    content: NSAppointment[] GetContactAppointmentsByTaskHeading(Integer contactId, DateTime startTime, DateTime endTime, Integer count, Integer taskHeadingId)
+    parameters:
+    - id: contactId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    - id: taskHeadingId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointment[]
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger contactId;\nDateTime startTime;\nDateTime endTime;\nInteger count;\nInteger taskHeadingId;\nNSAppointment[] res = agent.GetContactAppointmentsByTaskHeading(contactId, startTime, endTime, count, taskHeadingId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetContactAppointmentsByTasks
@@ -645,7 +1167,28 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSAppointmentAgent.GetContactAppointmentsByTasks
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetContactAppointmentsByTasks
   type: Method
-  summary: "\nMethod that returns a specified number of appointments belonging to an array of appointment task types within a time range. The appointments belong to the contact specified. Task represents the different types of activities, like “Phone call”, “Meeting” and so on.\n"
+  summary: "\nMethod that returns a specified number of appointments belonging to an array of appointment task types within a time range. The appointments belong to the contact specified. Task represents the different types of activities, like &quot;Phone call&quot;, &quot;Meeting&quot; and so on.\n"
+  remarks: 
+  syntax: 
+    content: NSAppointment[] GetContactAppointmentsByTasks(Integer contactId, DateTime startTime, DateTime endTime, Integer count, Integer[] taskIds)
+    parameters:
+    - id: contactId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    - id: taskIds
+      type: CRMScript.Global.Integer[]
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointment[]
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger contactId;\nDateTime startTime;\nDateTime endTime;\nInteger count;\nInteger[] taskIds;\nNSAppointment[] res = agent.GetContactAppointmentsByTasks(contactId, startTime, endTime, count, taskIds);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetContactAppointmentsByType
@@ -659,6 +1202,27 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetContactAppointmentsByType
   type: Method
   summary: "\nMethod that returns a specified number of appointments of a specific appointment type within a time range. The appointments belong to the contact specified. If the logged on user is not allowed to view this contacts appointments an exception is thrown.\n"
+  remarks: "\n<h3>Enum: appointment type</h3><ul><li>0 = Unknown</li><li>1 = inDiary</li><li>2 = inChecklist</li><li>3 = Note</li><li>4 = Document</li><li>5 = SavedReport</li><li>6 = BookingForDiary</li><li>7 = BookingForChecklist</li><li>8 = MergeDraft</li><li>9 = MergeFinal</li></ul><p><strong>Returns:</strong> NSAppointment[]</p>\n"
+  syntax: 
+    content: NSAppointment[] GetContactAppointmentsByType(Integer contactId, DateTime startTime, DateTime endTime, Integer count, Integer appointmentType)
+    parameters:
+    - id: contactId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    - id: appointmentType
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointment[]
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger contactId;\nDateTime startTime;\nDateTime endTime;\nInteger count;\nInteger appointmentType;\nNSAppointment[] res = agent.GetContactAppointmentsByType(contactId, startTime, endTime, count, appointmentType);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetDayInformationListByDatesAndAssociate
@@ -672,6 +1236,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetDayInformationListByDatesAndAssociate
   type: Method
   summary: "\nGet combined day information (activity + redletter summary) for one or more days according to the given date interval. The time portion of the dates is ignored. Private appointments are counted, but may not be visible through tooltips or other more detailed services.\n"
+  remarks: 
+  syntax: 
+    content: NSDayInformationListItem[] GetDayInformationListByDatesAndAssociate(DateTime startDate, DateTime endDate, Integer associateId)
+    parameters:
+    - id: startDate
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endDate
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: associateId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDayInformationListItem[]
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nDateTime startDate;\nDateTime endDate;\nInteger associateId;\nNSDayInformationListItem[] res = agent.GetDayInformationListByDatesAndAssociate(startDate, endDate, associateId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetDiaryByGroup
@@ -685,6 +1264,27 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetDiaryByGroup
   type: Method
   summary: 
+  remarks: 
+  syntax: 
+    content: NSAppointment[] GetDiaryByGroup(Integer groupId, Integer groupType, DateTime startTime, DateTime endTime, Integer count)
+    parameters:
+    - id: groupId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: groupType
+      type: CRMScript.Global.Integer
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointment[]
   example: 
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetMyAppointments
   commentId: M:CRMScript.NetServer.NSAppointmentAgent.GetMyAppointments
@@ -697,6 +1297,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetMyAppointments
   type: Method
   summary: "\nMethod that returns a specified number of appointments within a time range. The appointments belong to the currently logged on user.\n"
+  remarks: 
+  syntax: 
+    content: NSAppointment[] GetMyAppointments(DateTime startTime, DateTime endTime, Integer count)
+    parameters:
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointment[]
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nDateTime startTime;\nDateTime endTime;\nInteger count;\nNSAppointment[] res = agent.GetMyAppointments(startTime, endTime, count);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetMyDiary
@@ -710,6 +1325,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetMyDiary
   type: Method
   summary: "\nMethod that returns a specified number of appointments within a time range. It only returns appointments that would be displayed in the user's diary. The appointments belong to the currently logged on user.\n"
+  remarks: 
+  syntax: 
+    content: NSAppointment[] GetMyDiary(DateTime startTime, DateTime endTime, Integer count)
+    parameters:
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointment[]
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nDateTime startTime;\nDateTime endTime;\nInteger count;\nNSAppointment[] res = agent.GetMyDiary(startTime, endTime, count);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetMyPublishedAppointments
@@ -723,6 +1353,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetMyPublishedAppointments
   type: Method
   summary: "\nGet published appointments from the logged in user.<p></p>\n<strong>Returns:</strong>NSAppointment[]<p></p>\n<pre><code>NSAppointmentAgent agent;\nNSAppointment[] res = agent.GetMyPublishedAppointments();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSAppointment[] GetMyPublishedAppointments()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSAppointment[]
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nNSAppointment[] res = agent.GetMyPublishedAppointments();</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetMySyncAppointments
@@ -736,6 +1372,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetMySyncAppointments
   type: Method
   summary: "\nMethod that returns a specified number of appointments within a time range. The appointments belong to the currently logged on user.\n"
+  remarks: 
+  syntax: 
+    content: AppointmentSyncData[] GetMySyncAppointments(DateTime startTime, DateTime endTime)
+    parameters:
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    return:
+      type: CRMScript.Native.AppointmentSyncData[]
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nDateTime startTime;\nDateTime endTime;\nAppointmentSyncData[] res = agent.GetMySyncAppointments(startTime, endTime);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetMyTasks
@@ -749,6 +1397,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetMyTasks
   type: Method
   summary: "\nMethod that returns a specified number of appointments within a time range. It only returns appointments that would be displayed in the user's task list. The appointments belong to the currently logged on user.\n"
+  remarks: 
+  syntax: 
+    content: NSAppointment[] GetMyTasks(Integer count)
+    parameters:
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointment[]
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger count;\nNSAppointment[] res = agent.GetMyTasks(count);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetNextSuggestedAppointmentBySale
@@ -762,6 +1419,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetNextSuggestedAppointmentBySale
   type: Method
   summary: "\nGets the next suggested appointment for a given sale (or rather a given sale's guide).\n"
+  remarks: 
+  syntax: 
+    content: SuggestedAppointment GetNextSuggestedAppointmentBySale(Integer saleId, Integer currentAppointmentId, Bool skipCompleteCheck)
+    parameters:
+    - id: saleId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: currentAppointmentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: skipCompleteCheck
+      type: CRMScript.Global.Bool
+      description: 
+    return:
+      type: CRMScript.Native.SuggestedAppointment
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger saleId;\nInteger currentAppointmentId;\nBool skipCompleteCheck;\nSuggestedAppointment res = agent.GetNextSuggestedAppointmentBySale(saleId, currentAppointmentId, skipCompleteCheck);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetOrganizerName
@@ -775,6 +1447,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetOrganizerName
   type: Method
   summary: "\nLookup the name / email of an event-organizer\n"
+  remarks: 
+  syntax: 
+    content: String GetOrganizerName(Integer motherAppointmentId)
+    parameters:
+    - id: motherAppointmentId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger motherAppointmentId;\nString res = agent.GetOrganizerName(motherAppointmentId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetPersonAppointments
@@ -788,6 +1469,27 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetPersonAppointments
   type: Method
   summary: "\nMethod that returns a specified number of appointments within a time range. The appointments belong to the person specified. If the person not is a SuperOffice user (associate) or the logged on user is not allowed to view this persons appointments an exception is thrown.\n"
+  remarks: 
+  syntax: 
+    content: NSAppointment[] GetPersonAppointments(Integer personId, Bool includeProjectAppointments, DateTime startTime, DateTime endTime, Integer count)
+    parameters:
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: includeProjectAppointments
+      type: CRMScript.Global.Bool
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointment[]
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger personId;\nBool includeProjectAppointments;\nDateTime startTime;\nDateTime endTime;\nInteger count;\nNSAppointment[] res = agent.GetPersonAppointments(personId, includeProjectAppointments, startTime, endTime, count);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetPersonAppointmentsByTask
@@ -800,7 +1502,31 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSAppointmentAgent.GetPersonAppointmentsByTask
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetPersonAppointmentsByTask
   type: Method
-  summary: "\nMethod that returns a specified number of appointments of a specific appointment task type within a time range. The appointments belong to the person specified.  Task represents the different types of activities, like “Phone call”, “Meeting” and so on.\n"
+  summary: "\nMethod that returns a specified number of appointments of a specific appointment task type within a time range. The appointments belong to the person specified.  Task represents the different types of activities, like &quot;Phone call&quot;, &quot;Meeting&quot; and so on.\n"
+  remarks: 
+  syntax: 
+    content: NSAppointment[] GetPersonAppointmentsByTask(Integer personId, Bool includeProjectAppointments, DateTime startTime, DateTime endTime, Integer count, Integer taskId)
+    parameters:
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: includeProjectAppointments
+      type: CRMScript.Global.Bool
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    - id: taskId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointment[]
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger personId;\nBool includeProjectAppointments;\nDateTime startTime;\nDateTime endTime;\nInteger count;\nInteger taskId;\nNSAppointment[] res = agent.GetPersonAppointmentsByTask(personId, includeProjectAppointments, startTime, endTime, count, taskId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetPersonAppointmentsByTaskHeading
@@ -813,7 +1539,31 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSAppointmentAgent.GetPersonAppointmentsByTaskHeading
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetPersonAppointmentsByTaskHeading
   type: Method
-  summary: "\nMethod that returns a specified number of appointments of a specific appointment task heading within a time range. The appointments belong to the person specified.  Task represents the different types of activities, like “Phone call”, “Meeting” and so on. The heading represents a grouping or filtering of tasks.\n"
+  summary: "\nMethod that returns a specified number of appointments of a specific appointment task heading within a time range. The appointments belong to the person specified.  Task represents the different types of activities, like &quot;Phone call&quot;, &quot;Meeting&quot; and so on. The heading represents a grouping or filtering of tasks.\n"
+  remarks: 
+  syntax: 
+    content: NSAppointment[] GetPersonAppointmentsByTaskHeading(Integer personId, Bool includeProjectAppointments, DateTime startTime, DateTime endTime, Integer count, Integer taskHeadingId)
+    parameters:
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: includeProjectAppointments
+      type: CRMScript.Global.Bool
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    - id: taskHeadingId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointment[]
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger personId;\nBool includeProjectAppointments;\nDateTime startTime;\nDateTime endTime;\nInteger count;\nInteger taskHeadingId;\nNSAppointment[] res = agent.GetPersonAppointmentsByTaskHeading(personId, includeProjectAppointments, startTime, endTime, count, taskHeadingId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetPersonAppointmentsByTasks
@@ -826,7 +1576,31 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSAppointmentAgent.GetPersonAppointmentsByTasks
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetPersonAppointmentsByTasks
   type: Method
-  summary: "\nMethod that returns a specified number of appointments from a list of appointment task types within a time range. The appointments belong to the person specified.  Task represents the different types of activities, like “Phone call”, “Meeting” and so on.\n"
+  summary: "\nMethod that returns a specified number of appointments from a list of appointment task types within a time range. The appointments belong to the person specified.  Task represents the different types of activities, like &quot;Phone call&quot;, &quot;Meeting&quot; and so on.\n"
+  remarks: 
+  syntax: 
+    content: NSAppointment[] GetPersonAppointmentsByTasks(Integer personId, Bool includeProjectAppointments, DateTime startTime, DateTime endTime, Integer count, Integer[] taskIds)
+    parameters:
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: includeProjectAppointments
+      type: CRMScript.Global.Bool
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    - id: taskIds
+      type: CRMScript.Global.Integer[]
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointment[]
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger personId;\nBool includeProjectAppointments;\nDateTime startTime;\nDateTime endTime;\nInteger count;\nInteger[] taskIds;\nNSAppointment[] res = agent.GetPersonAppointmentsByTasks(personId, includeProjectAppointments, startTime, endTime, count, taskIds);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetPersonAppointmentsByType
@@ -840,6 +1614,30 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetPersonAppointmentsByType
   type: Method
   summary: "\nMethod that returns a specified number of appointments of a specific appointment type within a time range. The appointments belong to the person specified.\n"
+  remarks: "\n<h3>Enum: appointment type</h3><ul><li>0 = Unknown</li><li>1 = inDiary</li><li>2 = inChecklist</li><li>3 = Note</li><li>4 = Document</li><li>5 = SavedReport</li><li>6 = BookingForDiary</li><li>7 = BookingForChecklist</li><li>8 = MergeDraft</li><li>9 = MergeFinal</li></ul><p><strong>Returns:</strong> NSAppointment[]</p>\n"
+  syntax: 
+    content: NSAppointment[] GetPersonAppointmentsByType(Integer personId, Bool includeProjectAppointments, DateTime startTime, DateTime endTime, Integer count, Integer appointmentType)
+    parameters:
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: includeProjectAppointments
+      type: CRMScript.Global.Bool
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    - id: appointmentType
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointment[]
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger personId;\nBool includeProjectAppointments;\nDateTime startTime;\nDateTime endTime;\nInteger count;\nInteger appointmentType;\nNSAppointment[] res = agent.GetPersonAppointmentsByType(personId, includeProjectAppointments, startTime, endTime, count, appointmentType);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetPersonDiary
@@ -853,6 +1651,24 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetPersonDiary
   type: Method
   summary: "\nMethod that returns a specified number of appointments within a time range. It only returns appointments that would be displayed in the user's diary. The appointments belong to the person specified. If the person not is a SuperOffice user (associate) or the logged on user is not allowed to view this persons appointments an exception is thrown.\n"
+  remarks: 
+  syntax: 
+    content: NSAppointment[] GetPersonDiary(Integer personId, DateTime startTime, DateTime endTime, Integer count)
+    parameters:
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointment[]
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger personId;\nDateTime startTime;\nDateTime endTime;\nInteger count;\nNSAppointment[] res = agent.GetPersonDiary(personId, startTime, endTime, count);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetPersonTasks
@@ -866,6 +1682,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetPersonTasks
   type: Method
   summary: "\nMethod that returns a specified number of appointments within a time range. It only returns appointments that would be displayed in the user's task list. The appointments belong to the person specified. If the person not is a SuperOffice user (associate) or the logged on user is not allowed to view this persons appointments an exception is thrown.\n"
+  remarks: 
+  syntax: 
+    content: NSAppointment[] GetPersonTasks(Integer personId, Integer count)
+    parameters:
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointment[]
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger personId;\nInteger count;\nNSAppointment[] res = agent.GetPersonTasks(personId, count);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetProjectAppointments
@@ -879,6 +1707,24 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetProjectAppointments
   type: Method
   summary: "\nMethod that returns a specified number of appointments within a time range. The appointments belong to the project specified. If the logged on user is not allowed to view this projects appointments an exception is thrown.\n"
+  remarks: 
+  syntax: 
+    content: NSAppointment[] GetProjectAppointments(Integer projectId, DateTime startTime, DateTime endTime, Integer count)
+    parameters:
+    - id: projectId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointment[]
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger projectId;\nDateTime startTime;\nDateTime endTime;\nInteger count;\nNSAppointment[] res = agent.GetProjectAppointments(projectId, startTime, endTime, count);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetProjectAppointmentsByTask
@@ -891,7 +1737,28 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSAppointmentAgent.GetProjectAppointmentsByTask
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetProjectAppointmentsByTask
   type: Method
-  summary: "\nMethod that returns a specified number of appointments of a specific appointment task type within a time range. The appointments belong to the project specified.  Task represents the different types of activities, like “Phone call”, “Meeting” and so on.\n"
+  summary: "\nMethod that returns a specified number of appointments of a specific appointment task type within a time range. The appointments belong to the project specified.  Task represents the different types of activities, like &quot;Phone call&quot;, &quot;Meeting&quot; and so on.\n"
+  remarks: 
+  syntax: 
+    content: NSAppointment[] GetProjectAppointmentsByTask(Integer projectId, DateTime startTime, DateTime endTime, Integer count, Integer taskId)
+    parameters:
+    - id: projectId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    - id: taskId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointment[]
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger projectId;\nDateTime startTime;\nDateTime endTime;\nInteger count;\nInteger taskId;\nNSAppointment[] res = agent.GetProjectAppointmentsByTask(projectId, startTime, endTime, count, taskId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetProjectAppointmentsByTaskHeading
@@ -904,7 +1771,28 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSAppointmentAgent.GetProjectAppointmentsByTaskHeading
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetProjectAppointmentsByTaskHeading
   type: Method
-  summary: "\nMethod that returns a specified number of appointments of a specific appointment task heading within a time range. The appointments belong to the project specified.  Task represents the different types of activities, like “Phone call”, “Meeting” and so on. The heading represents a grouping or filtering of tasks.\n"
+  summary: "\nMethod that returns a specified number of appointments of a specific appointment task heading within a time range. The appointments belong to the project specified.  Task represents the different types of activities, like &quot;Phone call&quot;, &quot;Meeting&quot; and so on. The heading represents a grouping or filtering of tasks.\n"
+  remarks: 
+  syntax: 
+    content: NSAppointment[] GetProjectAppointmentsByTaskHeading(Integer projectId, DateTime startTime, DateTime endTime, Integer count, Integer taskHeadingId)
+    parameters:
+    - id: projectId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    - id: taskHeadingId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointment[]
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger projectId;\nDateTime startTime;\nDateTime endTime;\nInteger count;\nInteger taskHeadingId;\nNSAppointment[] res = agent.GetProjectAppointmentsByTaskHeading(projectId, startTime, endTime, count, taskHeadingId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetProjectAppointmentsByTasks
@@ -917,7 +1805,28 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSAppointmentAgent.GetProjectAppointmentsByTasks
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetProjectAppointmentsByTasks
   type: Method
-  summary: "\nMethod that returns a specified number of appointments matching the list of appointment task types within a time range. The appointments belong to the project specified.  Task represents the different types of activities, like “Phone call”, “Meeting” and so on.\n"
+  summary: "\nMethod that returns a specified number of appointments matching the list of appointment task types within a time range. The appointments belong to the project specified.  Task represents the different types of activities, like &quot;Phone call&quot;, &quot;Meeting&quot; and so on.\n"
+  remarks: 
+  syntax: 
+    content: NSAppointment[] GetProjectAppointmentsByTasks(Integer projectId, DateTime startTime, DateTime endTime, Integer count, Integer[] taskIds)
+    parameters:
+    - id: projectId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    - id: taskIds
+      type: CRMScript.Global.Integer[]
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointment[]
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger projectId;\nDateTime startTime;\nDateTime endTime;\nInteger count;\nInteger[] taskIds;\nNSAppointment[] res = agent.GetProjectAppointmentsByTasks(projectId, startTime, endTime, count, taskIds);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetProjectAppointmentsByType
@@ -931,6 +1840,27 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetProjectAppointmentsByType
   type: Method
   summary: "\nMethod that returns a specified number of appointments of a specific appointment type within a time range. The appointments belong to the project specified.\n"
+  remarks: "\n<h3>Enum: appointment type</h3><ul><li>0 = Unknown</li><li>1 = inDiary</li><li>2 = inChecklist</li><li>3 = Note</li><li>4 = Document</li><li>5 = SavedReport</li><li>6 = BookingForDiary</li><li>7 = BookingForChecklist</li><li>8 = MergeDraft</li><li>9 = MergeFinal</li></ul><p><strong>Returns:</strong> NSAppointment[]</p>\n"
+  syntax: 
+    content: NSAppointment[] GetProjectAppointmentsByType(Integer projectId, DateTime startTime, DateTime endTime, Integer count, Integer appointmentType)
+    parameters:
+    - id: projectId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    - id: appointmentType
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointment[]
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger projectId;\nDateTime startTime;\nDateTime endTime;\nInteger count;\nInteger appointmentType;\nNSAppointment[] res = agent.GetProjectAppointmentsByType(projectId, startTime, endTime, count, appointmentType);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetProjectMemberAppointments
@@ -944,6 +1874,24 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetProjectMemberAppointments
   type: Method
   summary: "\nMethod that returns a specified number of appointments within a time range. The appointments belong to the projects where the person specified is member.\n"
+  remarks: 
+  syntax: 
+    content: NSAppointment[] GetProjectMemberAppointments(Integer personId, DateTime startTime, DateTime endTime, Integer count)
+    parameters:
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointment[]
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger personId;\nDateTime startTime;\nDateTime endTime;\nInteger count;\nNSAppointment[] res = agent.GetProjectMemberAppointments(personId, startTime, endTime, count);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetProjectMemberAppointmentsByTask
@@ -956,7 +1904,28 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSAppointmentAgent.GetProjectMemberAppointmentsByTask
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetProjectMemberAppointmentsByTask
   type: Method
-  summary: "\nMethod that returns a specified number of appointments of a specific appointment task type within a time range. The appointments belong to the projects where the person specified is member. Task represents the different types of activities, like “Phone call”, “Meeting” and so on.\n"
+  summary: "\nMethod that returns a specified number of appointments of a specific appointment task type within a time range. The appointments belong to the projects where the person specified is member. Task represents the different types of activities, like &quot;Phone call&quot;, &quot;Meeting&quot; and so on.\n"
+  remarks: 
+  syntax: 
+    content: NSAppointment[] GetProjectMemberAppointmentsByTask(Integer personId, DateTime startTime, DateTime endTime, Integer count, Integer taskId)
+    parameters:
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    - id: taskId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointment[]
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger personId;\nDateTime startTime;\nDateTime endTime;\nInteger count;\nInteger taskId;\nNSAppointment[] res = agent.GetProjectMemberAppointmentsByTask(personId, startTime, endTime, count, taskId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetProjectMemberAppointmentsByTaskHeading
@@ -969,7 +1938,28 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSAppointmentAgent.GetProjectMemberAppointmentsByTaskHeading
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetProjectMemberAppointmentsByTaskHeading
   type: Method
-  summary: "\nMethod that returns a specified number of appointments of a specific appointment task heading within a time range. The appointments belong to the projects where the person specified is member. Task represents the different types of activities, like “Phone call”, “Meeting” and so on. The heading represents a grouping or filtering of tasks.\n"
+  summary: "\nMethod that returns a specified number of appointments of a specific appointment task heading within a time range. The appointments belong to the projects where the person specified is member. Task represents the different types of activities, like &quot;Phone call&quot;, &quot;Meeting&quot; and so on. The heading represents a grouping or filtering of tasks.\n"
+  remarks: 
+  syntax: 
+    content: NSAppointment[] GetProjectMemberAppointmentsByTaskHeading(Integer personId, DateTime startTime, DateTime endTime, Integer count, Integer taskHeadingId)
+    parameters:
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    - id: taskHeadingId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointment[]
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger personId;\nDateTime startTime;\nDateTime endTime;\nInteger count;\nInteger taskHeadingId;\nNSAppointment[] res = agent.GetProjectMemberAppointmentsByTaskHeading(personId, startTime, endTime, count, taskHeadingId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetProjectMemberAppointmentsByTasks
@@ -982,7 +1972,28 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSAppointmentAgent.GetProjectMemberAppointmentsByTasks
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetProjectMemberAppointmentsByTasks
   type: Method
-  summary: "\nMethod that returns a specified number of appointments matching a set of appointment task types within a time range. The appointments belong to the projects where the person specified is member. Task represents the different types of activities, like “Phone call”, “Meeting” and so on.\n"
+  summary: "\nMethod that returns a specified number of appointments matching a set of appointment task types within a time range. The appointments belong to the projects where the person specified is member. Task represents the different types of activities, like &quot;Phone call&quot;, &quot;Meeting&quot; and so on.\n"
+  remarks: 
+  syntax: 
+    content: NSAppointment[] GetProjectMemberAppointmentsByTasks(Integer personId, DateTime startTime, DateTime endTime, Integer count, Integer[] taskIds)
+    parameters:
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    - id: taskIds
+      type: CRMScript.Global.Integer[]
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointment[]
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger personId;\nDateTime startTime;\nDateTime endTime;\nInteger count;\nInteger[] taskIds;\nNSAppointment[] res = agent.GetProjectMemberAppointmentsByTasks(personId, startTime, endTime, count, taskIds);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetProjectMemberAppointmentsByType
@@ -996,6 +2007,27 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetProjectMemberAppointmentsByType
   type: Method
   summary: "\nMethod that returns a specified number of appointments of a specific appointment type within a time range. The appointments belong to the projects where the person specified is member.\n"
+  remarks: "\n<h3>Enum: appointment type</h3><ul><li>0 = Unknown</li><li>1 = inDiary</li><li>2 = inChecklist</li><li>3 = Note</li><li>4 = Document</li><li>5 = SavedReport</li><li>6 = BookingForDiary</li><li>7 = BookingForChecklist</li><li>8 = MergeDraft</li><li>9 = MergeFinal</li></ul><p><strong>Returns:</strong> NSAppointment[]</p>\n"
+  syntax: 
+    content: NSAppointment[] GetProjectMemberAppointmentsByType(Integer personId, DateTime startTime, DateTime endTime, Integer count, Integer appointmentType)
+    parameters:
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: count
+      type: CRMScript.Global.Integer
+      description: 
+    - id: appointmentType
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointment[]
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger personId;\nDateTime startTime;\nDateTime endTime;\nInteger count;\nInteger appointmentType;\nNSAppointment[] res = agent.GetProjectMemberAppointmentsByType(personId, startTime, endTime, count, appointmentType);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetPublishedAppointment
@@ -1009,6 +2041,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetPublishedAppointment
   type: Method
   summary: "\nGet published appointment by appointment id.\n"
+  remarks: 
+  syntax: 
+    content: NSAppointment GetPublishedAppointment(Integer appointmentId)
+    parameters:
+    - id: appointmentId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointment
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger appointmentId;\nNSAppointment res = agent.GetPublishedAppointment(appointmentId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetPublishedAppointments
@@ -1022,6 +2063,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetPublishedAppointments
   type: Method
   summary: "\nGet published appointments by appointment ids.\n"
+  remarks: 
+  syntax: 
+    content: NSAppointment[] GetPublishedAppointments(Integer[] appointmentIds)
+    parameters:
+    - id: appointmentIds
+      type: CRMScript.Global.Integer[]
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointment[]
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger[] appointmentIds;\nNSAppointment[] res = agent.GetPublishedAppointments(appointmentIds);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetPublishedProjectAppointments
@@ -1035,6 +2085,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetPublishedProjectAppointments
   type: Method
   summary: "\nGet published appointments by project id.\n"
+  remarks: 
+  syntax: 
+    content: NSAppointment[] GetPublishedProjectAppointments(Integer projectId)
+    parameters:
+    - id: projectId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointment[]
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger projectId;\nNSAppointment[] res = agent.GetPublishedProjectAppointments(projectId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetRedLetterInformationListByDatesAndAssociate
@@ -1048,6 +2107,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetRedLetterInformationListByDatesAndAssociate
   type: Method
   summary: "\nGet detailed red letter day information (redletter summary + individual day texts) for one or more days according to the given date interval. The time portion of the dates is ignored.\n"
+  remarks: 
+  syntax: 
+    content: NSRedLetterInformationListItem[] GetRedLetterInformationListByDatesAndAssociate(DateTime startDate, DateTime endDate, Integer associateId)
+    parameters:
+    - id: startDate
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endDate
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: associateId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSRedLetterInformationListItem[]
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nDateTime startDate;\nDateTime endDate;\nInteger associateId;\nNSRedLetterInformationListItem[] res = agent.GetRedLetterInformationListByDatesAndAssociate(startDate, endDate, associateId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetSuggestedAppointment
@@ -1060,7 +2134,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSAppointmentAgent.GetSuggestedAppointment
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetSuggestedAppointment
   type: Method
-  summary: "\nGets a NSSuggestedAppointment object.\n"
+  summary: "\nGets an NSSuggestedAppointment object.\n"
+  remarks: 
+  syntax: 
+    content: NSSuggestedAppointment GetSuggestedAppointment(Integer suggestedAppointmentId);
+    parameters:
+    - id: suggestedAppointmentId;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: suggestedAppointmentId
+      type: 
+      description: 
+    return:
+      type: CRMScript.NetServer.NSSuggestedAppointment
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nNSSuggestedAppointment thing = agent.GetSuggestedAppointment(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetSuggestedAppointmentEntity
@@ -1073,7 +2159,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSAppointmentAgent.GetSuggestedAppointmentEntity
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetSuggestedAppointmentEntity
   type: Method
-  summary: "\nGets a NSSuggestedAppointmentEntity object.\n"
+  summary: "\nGets an NSSuggestedAppointmentEntity object.\n"
+  remarks: 
+  syntax: 
+    content: NSSuggestedAppointmentEntity GetSuggestedAppointmentEntity(Integer suggestedAppointmentEntityId);
+    parameters:
+    - id: suggestedAppointmentEntityId;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: suggestedAppointmentEntityId
+      type: 
+      description: 
+    return:
+      type: CRMScript.NetServer.NSSuggestedAppointmentEntity
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nNSSuggestedAppointmentEntity thing = agent.GetSuggestedAppointmentEntity(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetTaskListItem
@@ -1086,7 +2184,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSAppointmentAgent.GetTaskListItem
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetTaskListItem
   type: Method
-  summary: "\nGets a NSTaskListItem object.\n"
+  summary: "\nGets an NSTaskListItem object.\n"
+  remarks: 
+  syntax: 
+    content: NSTaskListItem GetTaskListItem(Integer taskListItemId);
+    parameters:
+    - id: taskListItemId;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: taskListItemId
+      type: 
+      description: 
+    return:
+      type: CRMScript.NetServer.NSTaskListItem
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nNSTaskListItem thing = agent.GetTaskListItem(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetTaskListItems
@@ -1100,6 +2210,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetTaskListItems
   type: Method
   summary: "\nGets all takslist items\n"
+  remarks: 
+  syntax: 
+    content: NSTaskListItem[] GetTaskListItems(Bool includeDeleted)
+    parameters:
+    - id: includeDeleted
+      type: CRMScript.Global.Bool
+      description: 
+    return:
+      type: CRMScript.NetServer.NSTaskListItem[]
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nBool includeDeleted;\nNSTaskListItem[] res = agent.GetTaskListItems(includeDeleted);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetUIDFromAppointmentId
@@ -1112,7 +2231,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSAppointmentAgent.GetUIDFromAppointmentId
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetUIDFromAppointmentId
   type: Method
-  summary: "\nGet the UID associated with the appointment id in the Invitation table.\n"
+  summary: "\nGet the UID associated with the appointment id in the Invitation table.<p></p>\n<strong>Returns:</strong>The associated UID, or null if none exist.\n"
+  remarks: 
+  syntax: 
+    content: String GetUIDFromAppointmentId(Integer appointmentId, Bool useMotherId)
+    parameters:
+    - id: appointmentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: useMotherId
+      type: CRMScript.Global.Bool
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger appointmentId;\nBool useMotherId;\nString res = agent.GetUIDFromAppointmentId(appointmentId, useMotherId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.Move
@@ -1126,6 +2257,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.Move
   type: Method
   summary: "\nMoving a booking to another start time.\n"
+  remarks: "\n<h3>Enum updateMode</h3><ul><li>0 = Unknown</li><li>1 = OnlyThis</li><li>2 = ThisAndForward</li><li>9 = StopRecurrence</li></ul>\n"
+  syntax: 
+    content: NSAppointmentEntity Move(Integer appointmentId, DateTime newStartTime, Integer updateMode)
+    parameters:
+    - id: appointmentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: newStartTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: updateMode
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointmentEntity
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger appointmentId;\nDateTime newStartTime;\nInteger updateMode;\nNSAppointmentEntity res = agent.Move(appointmentId, newStartTime, updateMode);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.#ctor
@@ -1137,8 +2283,11 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   name: '#ctor'
   nameWithType: NSAppointmentAgent.#ctor
   fullName: CRMScript.NetServer.NSAppointmentAgent.#ctor
-  type: Method
+  type: Constructor
   summary: "\nCollection of all services that works with Appointment data.\n"
+  remarks: 
+  syntax: 
+    content: NSAppointmentAgent
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.Reject
@@ -1152,6 +2301,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.Reject
   type: Method
   summary: "\nRejecting an appointment invitation\n"
+  remarks: "\n<h3>Enum updateMode</h3><ul><li>0 = Unknown</li><li>1 = OnlyThis</li><li>2 = ThisAndForward</li><li>9 = StopRecurrence</li></ul>\n"
+  syntax: 
+    content: Void Reject(Integer appointmentId, String rejectReason, Integer updateMode)
+    parameters:
+    - id: appointmentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: rejectReason
+      type: CRMScript.Global.String
+      description: 
+    - id: updateMode
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger appointmentId;\nString rejectReason;\nInteger updateMode;\nagent.Reject(appointmentId, rejectReason, updateMode);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.RejectWithEmailConfirmation
@@ -1165,6 +2329,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.RejectWithEmailConfirmation
   type: Method
   summary: "\nRejecting an appointment invitation and send an email confirmation to the meeting organizer.\n"
+  remarks: "\n<h3>Enum updateMode</h3><ul><li>0 = Unknown</li><li>1 = OnlyThis</li><li>2 = ThisAndForward</li><li>9 = StopRecurrence</li></ul>\n"
+  syntax: 
+    content: Void RejectWithEmailConfirmation(Integer appointmentId, String rejectReason, Integer updateMode)
+    parameters:
+    - id: appointmentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: rejectReason
+      type: CRMScript.Global.String
+      description: 
+    - id: updateMode
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger appointmentId;\nString rejectReason;\nInteger updateMode;\nagent.RejectWithEmailConfirmation(appointmentId, rejectReason, updateMode);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.RejectWithSmtpEmailConfirmation
@@ -1178,6 +2357,24 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.RejectWithSmtpEmailConfirmation
   type: Method
   summary: "\nRejecting an appointment invitation and send an email confirmation to the meeting organizer.\n"
+  remarks: "\n<h3>Enum updateMode</h3><ul><li>0 = Unknown</li><li>1 = OnlyThis</li><li>2 = ThisAndForward</li><li>9 = StopRecurrence</li></ul>\n"
+  syntax: 
+    content: Void RejectWithSmtpEmailConfirmation(Integer appointmentId, String rejectReason, Integer updateMode, NSEMailConnectionInfo smtpEMailConnectionInfo)
+    parameters:
+    - id: appointmentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: rejectReason
+      type: CRMScript.Global.String
+      description: 
+    - id: updateMode
+      type: CRMScript.Global.Integer
+      description: 
+    - id: smtpEMailConnectionInfo
+      type: CRMScript.NetServer.NSEMailConnectionInfo
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger appointmentId;\nString rejectReason;\nInteger updateMode;\nNSEMailConnectionInfo smtpEMailConnectionInfo;\nagent.RejectWithSmtpEmailConfirmation(appointmentId, rejectReason, updateMode, smtpEMailConnectionInfo);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.RequestForInfo
@@ -1191,6 +2388,36 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.RequestForInfo
   type: Method
   summary: "\nSubmits a request for information. The request is added to the task list of the user that is responsible for this contact. Based on wether the person the request is made for is found or not, the following happens: If the person is found, the person, person's contact and sales representative is returned. If neither the person nor the contact is found a new person and contact is created (if sufficient data is supplied), and the person, person's contact and sales representative is returned. If the contact and not the person is found a new person is created on this contact, and the contact, salesrep, and person is returned (if there was enough data to return the person). If more than one contact is found a list of contacts is returned.\n"
+  remarks: 
+  syntax: 
+    content: NSSalesActivity RequestForInfo(Integer associateIdForNewContact, String channel, String regarding, String contactName, String personFirstname, String personLastname, String emailAddress, String phoneNumber)
+    parameters:
+    - id: associateIdForNewContact
+      type: CRMScript.Global.Integer
+      description: 
+    - id: channel
+      type: CRMScript.Global.String
+      description: 
+    - id: regarding
+      type: CRMScript.Global.String
+      description: 
+    - id: contactName
+      type: CRMScript.Global.String
+      description: 
+    - id: personFirstname
+      type: CRMScript.Global.String
+      description: 
+    - id: personLastname
+      type: CRMScript.Global.String
+      description: 
+    - id: emailAddress
+      type: CRMScript.Global.String
+      description: 
+    - id: phoneNumber
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSSalesActivity
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger associateIdForNewContact;\nString channel;\nString regarding;\nString contactName;\nString personFirstname;\nString personLastname;\nString emailAddress;\nString phoneNumber;\nNSSalesActivity res = agent.RequestForInfo(associateIdForNewContact, channel, regarding, contactName, personFirstname, personLastname, emailAddress, phoneNumber);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.Save
@@ -1203,7 +2430,28 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSAppointmentAgent.Save
   fullName: CRMScript.NetServer.NSAppointmentAgent.Save
   type: Method
-  summary: "\nSaving a booking.\n"
+  summary: "\nSaving a booking.<p></p>\n<strong>Returns:</strong>NSAppointmentEntity\n"
+  remarks: 
+  syntax: 
+    content: NSAppointmentEntity Save(NSAppointmentEntity appointmentEntity, Integer updateMode, Bool sendEmailToParticipants, NSEMailConnectionInfo smtpEMailConnectionInfo, NSEMailConnectionInfo imapEMailConnectionInfo)
+    parameters:
+    - id: appointmentEntity
+      type: CRMScript.NetServer.NSAppointmentEntity
+      description: 
+    - id: updateMode
+      type: CRMScript.Global.Integer
+      description: 
+    - id: sendEmailToParticipants
+      type: CRMScript.Global.Bool
+      description: 
+    - id: smtpEMailConnectionInfo
+      type: CRMScript.NetServer.NSEMailConnectionInfo
+      description: 
+    - id: imapEMailConnectionInfo
+      type: CRMScript.NetServer.NSEMailConnectionInfo
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointmentEntity
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nNSAppointmentEntity appointmentEntity;\nInteger updateMode;\nBool sendEmailToParticipants;\nNSEMailConnectionInfo smtpEMailConnectionInfo;\nNSEMailConnectionInfo imapEMailConnectionInfo;\nNSAppointmentEntity res = agent.Save(appointmentEntity, updateMode, sendEmailToParticipants, smtpEMailConnectionInfo, imapEMailConnectionInfo);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.SaveAppointmentEntity
@@ -1217,6 +2465,13 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.SaveAppointmentEntity
   type: Method
   summary: "\nCRMScript method in the NSAppointmentAgent class that saves an appointmentUpdates the existing NSAppointmentEntity or creates a new NSAppointmentEntity if the ID parameter is 0.<p></p>\nReturns the new or updated NSAppointmentEntity.<p></p>\n<code>NSAppointmentEntity SaveAppointmentEntity(NSAppointmentEntity appointmentEntity)</code>\n"
+  remarks: 
+  syntax: 
+    content: SaveAppointmentEntity()
+    parameters:
+    - id: appointmentEntity
+      type: CRMScript.NetServer.NSAppointmentEntity
+      description: The NSAppointmentEntity to save.
   example: 
   - "\n<pre><code>NSAppointment  agent;\nNSAppointmentEntity thing = agent.CreateDefaultAppointmentEntity();\nthing = agent.SaveAppointmentEntity(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.SaveSuggestedAppointmentEntity
@@ -1230,6 +2485,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.SaveSuggestedAppointmentEntity
   type: Method
   summary: "\nUpdates the existing NSSuggestedAppointmentEntity or creates a new NSSuggestedAppointmentEntity if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>suggestedAppointmentEntity</strong>The NSSuggestedAppointmentEntity to save.</li></ul><strong>Returns:</strong>New or updated NSSuggestedAppointmentEntity<p></p>\n<pre><code>NSAppointment  agent;\nNSSuggestedAppointmentEntity thing = agent.CreateDefaultSuggestedAppointmentEntity();\nthing = agent.SaveSuggestedAppointmentEntity(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSSuggestedAppointmentEntity SaveSuggestedAppointmentEntity(NSSuggestedAppointmentEntity suggestedAppointmentEntity);
+    parameters:
+    - id: suggestedAppointmentEntity;
+      type: CRMScript.NetServer.NSSuggestedAppointmentEntity
+      description: 
+    return:
+      type: CRMScript.NetServer.NSSuggestedAppointmentEntity
   example: 
   - "\n<pre><code>NSAppointment  agent;\nNSSuggestedAppointmentEntity thing = agent.CreateDefaultSuggestedAppointmentEntity();\nthing = agent.SaveSuggestedAppointmentEntity(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.SaveTaskListItem
@@ -1243,6 +2507,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.SaveTaskListItem
   type: Method
   summary: "\nUpdates the existing NSTaskListItem or creates a new NSTaskListItem if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>taskListItem</strong>The NSTaskListItem to save.</li></ul><strong>Returns:</strong>New or updated NSTaskListItem<p></p>\n<pre><code>NSAppointment  agent;\nNSTaskListItem thing = agent.CreateDefaultTaskListItem();\nthing = agent.SaveTaskListItem(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSTaskListItem SaveTaskListItem(NSTaskListItem taskListItem);
+    parameters:
+    - id: taskListItem;
+      type: CRMScript.NetServer.NSTaskListItem
+      description: 
+    return:
+      type: CRMScript.NetServer.NSTaskListItem
   example: 
   - "\n<pre><code>NSAppointment  agent;\nNSTaskListItem thing = agent.CreateDefaultTaskListItem();\nthing = agent.SaveTaskListItem(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.SetActivityStatus
@@ -1256,6 +2529,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.SetActivityStatus
   type: Method
   summary: "\nSets the completed status for an array of activities. The string activityIdentifier param may contain of a mix of appointment_id, sale_id, document_id and todo_id. The changes are saved immediately. If an invalid id is passed in (nonexistent record), no changes will be made. If there is no write access to the record being changed, a Sentry exception will be thrown in the usual manner.\n"
+  remarks: "\n<h3>Enum: activityStatus</h3><ul><li>0 = Unknown</li><li>1 = NotStarted</li><li>2 = Started</li></ul>\n"
+  syntax: 
+    content: Void SetActivityStatus(String[] activityIdentifier, Integer activityStatus)
+    parameters:
+    - id: activityIdentifier
+      type: CRMScript.Global.String[]
+      description: 
+    - id: activityStatus
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSAppointmentAgent.SetSeen
   commentId: M:CRMScript.NetServer.NSAppointmentAgent.SetSeen
@@ -1267,7 +2552,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSAppointmentAgent.SetSeen
   fullName: CRMScript.NetServer.NSAppointmentAgent.SetSeen
   type: Method
-  summary: "\nSets an appointment invitiation to seen.\n"
+  summary: "\nSets an appointment invitation to seen.\n"
+  remarks: "\n<h3>Enum updateMode</h3><ul><li>0 = Unknown</li><li>1 = OnlyThis</li><li>2 = ThisAndForward</li></ul>\n"
+  syntax: 
+    content: Void SetSeen(Integer appointmentId, Integer updateMode)
+    parameters:
+    - id: appointmentId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: updateMode
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSAppointmentAgent.ToggleActivities
   commentId: M:CRMScript.NetServer.NSAppointmentAgent.ToggleActivities
@@ -1280,6 +2577,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.ToggleActivities
   type: Method
   summary: "\nToggle the completed status for an array of activities.\n"
+  remarks: 
+  syntax: 
+    content: Integer ToggleActivities(String[] activityIdentifier)
+    parameters:
+    - id: activityIdentifier
+      type: CRMScript.Global.String[]
+      description: 
+    return:
+      type: CRMScript.Global.Integer
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nString[] activityIdentifier;\nInteger res = agent.ToggleActivities(activityIdentifier);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.ToggleActivity
@@ -1293,6 +2599,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.ToggleActivity
   type: Method
   summary: "\nToggle the completed status for an activity. Activity may be sale, document or appointment. The changes are saved immediately.\n"
+  remarks: 
+  syntax: 
+    content: Integer ToggleActivity(String activityIdentifier)
+    parameters:
+    - id: activityIdentifier
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.Integer
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nString activityIdentifier;\nInteger res = agent.ToggleActivity(activityIdentifier);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.ToggleAndSetActivities
@@ -1306,6 +2621,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.ToggleAndSetActivities
   type: Method
   summary: "\nToggles the first activity and sets the rest of the activities to the result of the first toggle. However, there are some special rules for appointments that trigger a suggested appointment when they are completed. If more than one appointment in the set of identifiers triggers a suggestion, we will not toggle those appointments. This rule is only active when changing the status of an appointment to complete. There must be more than one appointment that triggers such an event for this rule to take effect.\n"
+  remarks: 
+  syntax: 
+    content: String[] ToggleAndSetActivities(String[] activityIdentifiers)
+    parameters:
+    - id: activityIdentifiers
+      type: CRMScript.Global.String[]
+      description: 
+    return:
+      type: CRMScript.Global.String[]
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nString[] activityIdentifiers;\nString[] res = agent.ToggleAndSetActivities(activityIdentifiers);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.ToggleAppointmentStatus
@@ -1319,6 +2643,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.ToggleAppointmentStatus
   type: Method
   summary: "\nSets an appointment's status to Completed if the appointment had a different status, or sets the status to started if already set to completed.\n"
+  remarks: 
+  syntax: 
+    content: Integer ToggleAppointmentStatus(Integer appointmentId)
+    parameters:
+    - id: appointmentId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Integer
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger appointmentId;\nInteger res = agent.ToggleAppointmentStatus(appointmentId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.UpdateAppointment
@@ -1332,6 +2665,30 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.UpdateAppointment
   type: Method
   summary: "\nUpdates an appointment record.\n"
+  remarks: 
+  syntax: 
+    content: NSAppointment UpdateAppointment(Integer id, DateTime startTime, DateTime endTime, Integer status, Integer type, Integer associateId)
+    parameters:
+    - id: id
+      type: CRMScript.Global.Integer
+      description: 
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: endTime
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: status
+      type: CRMScript.Global.Integer
+      description: 
+    - id: type
+      type: CRMScript.Global.Integer
+      description: 
+    - id: associateId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointment
   example: 
 - uid: CRMScript.NetServer.NSAppointmentAgent.UpdateAppointmentFromIcsResponse
   commentId: M:CRMScript.NetServer.NSAppointmentAgent.UpdateAppointmentFromIcsResponse
@@ -1344,6 +2701,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.UpdateAppointmentFromIcsResponse
   type: Method
   summary: "\nUpdate the attendance to an appointment based on incoming ICS RSVPs.\n"
+  remarks: 
+  syntax: 
+    content: Bool UpdateAppointmentFromIcsResponse(String emailAddress, NSStream icsData)
+    parameters:
+    - id: emailAddress
+      type: CRMScript.Global.String
+      description: 
+    - id: icsData
+      type: CRMScript.NetServer.NSStream
+      description: 
+    return:
+      type: CRMScript.Global.Bool
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nString emailAddress;\nNSStream icsData;\nBool res = agent.UpdateAppointmentFromIcsResponse(emailAddress, icsData);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.ValidateAppointmentEntity
@@ -1357,6 +2726,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.ValidateAppointmentEntity
   type: Method
   summary: "\nCheck that entity is ready for saving.\n"
+  remarks: 
+  syntax: 
+    content: StringDictionary ValidateAppointmentEntity(NSAppointmentEntity appointmentEntity)
+    parameters:
+    - id: appointmentEntity
+      type: CRMScript.NetServer.NSAppointmentEntity
+      description: 
+    return:
+      type: CRMScript.Global.StringDictionary
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nNSAppointmentEntity appointmentEntity;\nStringDictionary res = agent.ValidateAppointmentEntity(appointmentEntity);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.ValidateDays
@@ -1369,7 +2747,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSAppointmentAgent.ValidateDays
   fullName: CRMScript.NetServer.NSAppointmentAgent.ValidateDays
   type: Method
-  summary: "\nValidates the set of dates to calculate any conflicts.\n"
+  summary: "\nValidates the set of dates to calculate any conflicts.<p></p>\n<strong>Returns:</strong>NSRecurrenceDate[]\n"
+  remarks: 
+  syntax: 
+    content: NSRecurrenceDate[] ValidateDays(NSAppointmentEntity appointmentEntity, DateTime[] dates)
+    parameters:
+    - id: appointmentEntity
+      type: CRMScript.NetServer.NSAppointmentEntity
+      description: 
+    - id: dates
+      type: CRMScript.Global.DateTime[]
+      description: 
+    return:
+      type: CRMScript.NetServer.NSRecurrenceDate[]
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nNSAppointmentEntity appointmentEntity;\nDateTime[] dates;\nNSRecurrenceDate[] res = agent.ValidateDays(appointmentEntity, dates);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.WillSendEmail
@@ -1383,6 +2773,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.WillSendEmail
   type: Method
   summary: "\nReturns true if the changes will trigger email sending on Save, so you can inform the user.\n"
+  remarks: 
+  syntax: 
+    content: Bool WillSendEmail(NSAppointmentEntity appointment)
+    parameters:
+    - id: appointment
+      type: CRMScript.NetServer.NSAppointmentEntity
+      description: 
+    return:
+      type: CRMScript.Global.Bool
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nNSAppointmentEntity appointment;\nBool res = agent.WillSendEmail(appointment);</code></pre>\n"
 references:
@@ -1392,3 +2791,311 @@ references:
   name: NSAppointmentAgent
   nameWithType: NSAppointmentAgent
   fullName: CRMScript.NetServer.NSAppointmentAgent
+- uid: CRMScript.Global.Integer
+  commentId: T:CRMScript.Global.Integer
+  isExternal: true
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Global.Integer
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void
+- uid: CRMScript.NetServer.NSAppointmentEntity
+  commentId: T:CRMScript.NetServer.NSAppointmentEntity
+  isExternal: true
+  name: NSAppointmentEntity
+  nameWithType: NSAppointmentEntity
+  fullName: CRMScript.NetServer.NSAppointmentEntity
+- uid: CRMScript.NetServer.NSEMailConnectionInfo
+  commentId: T:CRMScript.NetServer.NSEMailConnectionInfo
+  isExternal: true
+  name: NSEMailConnectionInfo
+  nameWithType: NSEMailConnectionInfo
+  fullName: CRMScript.NetServer.NSEMailConnectionInfo
+- uid: CRMScript.Native.ParticipantInfo
+  commentId: T:CRMScript.Native.ParticipantInfo
+  isExternal: true
+  name: ParticipantInfo
+  nameWithType: ParticipantInfo
+  fullName: CRMScript.Native.ParticipantInfo
+- uid: CRMScript.NetServer.NSRecurrenceInfo
+  commentId: T:CRMScript.NetServer.NSRecurrenceInfo
+  isExternal: true
+  name: NSRecurrenceInfo
+  nameWithType: NSRecurrenceInfo
+  fullName: CRMScript.NetServer.NSRecurrenceInfo
+- uid: CRMScript.Global.Bool
+  commentId: T:CRMScript.Global.Bool
+  isExternal: true
+  name: Bool
+  nameWithType: Bool
+  fullName: CRMScript.Global.Bool
+- uid: CRMScript.Global.Integer[]
+  isExternal: true
+  name: Integer[]
+  nameWithType: Integer[]
+  fullName: CRMScript.Global.Integer[]
+  spec.crmscript:
+  - uid: CRMScript.Global.Integer
+    isExternal: true
+    name: Integer
+    nameWithType: Integer
+    fullName: CRMScript.Global.Integer
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.Global.Integer
+  commentId: T:CRMScript.Global.Integer
+  isExternal: true
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Global.Integer
+- uid: CRMScript.Global.String
+  commentId: T:CRMScript.Global.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: CRMScript.Global.String
+- uid: CRMScript.Global.DateTime
+  commentId: T:CRMScript.Global.DateTime
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: CRMScript.Global.DateTime
+- uid: CRMScript.NetServer.NSSuggestedAppointmentEntity
+  commentId: T:CRMScript.NetServer.NSSuggestedAppointmentEntity
+  isExternal: true
+  name: NSSuggestedAppointmentEntity
+  nameWithType: NSSuggestedAppointmentEntity
+  fullName: CRMScript.NetServer.NSSuggestedAppointmentEntity
+- uid: CRMScript.NetServer.NSTaskListItem
+  commentId: T:CRMScript.NetServer.NSTaskListItem
+  isExternal: true
+  name: NSTaskListItem
+  nameWithType: NSTaskListItem
+  fullName: CRMScript.NetServer.NSTaskListItem
+- uid: CRMScript.NetServer.NSSalesActivity
+  commentId: T:CRMScript.NetServer.NSSalesActivity
+  isExternal: true
+  name: NSSalesActivity
+  nameWithType: NSSalesActivity
+  fullName: CRMScript.NetServer.NSSalesActivity
+- uid: CRMScript.NetServer.NSActivityInformationListItem[]
+  isExternal: true
+  name: NSActivityInformationListItem[]
+  nameWithType: NSActivityInformationListItem[]
+  fullName: CRMScript.NetServer.NSActivityInformationListItem[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSActivityInformationListItem
+    isExternal: true
+    name: NSActivityInformationListItem
+    nameWithType: NSActivityInformationListItem
+    fullName: CRMScript.NetServer.NSActivityInformationListItem
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSActivityInformationListItem
+  commentId: T:CRMScript.NetServer.NSActivityInformationListItem
+  isExternal: true
+  name: NSActivityInformationListItem
+  nameWithType: NSActivityInformationListItem
+  fullName: CRMScript.NetServer.NSActivityInformationListItem
+- uid: CRMScript.NetServer.NSMultiAlarmData
+  commentId: T:CRMScript.NetServer.NSMultiAlarmData
+  isExternal: true
+  name: NSMultiAlarmData
+  nameWithType: NSMultiAlarmData
+  fullName: CRMScript.NetServer.NSMultiAlarmData
+- uid: CRMScript.NetServer.NSAppointment
+  commentId: T:CRMScript.NetServer.NSAppointment
+  isExternal: true
+  name: NSAppointment
+  nameWithType: NSAppointment
+  fullName: CRMScript.NetServer.NSAppointment
+- uid: CRMScript.NetServer.NSAppointment[]
+  isExternal: true
+  name: NSAppointment[]
+  nameWithType: NSAppointment[]
+  fullName: CRMScript.NetServer.NSAppointment[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSAppointment
+    isExternal: true
+    name: NSAppointment
+    nameWithType: NSAppointment
+    fullName: CRMScript.NetServer.NSAppointment
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSAppointment
+  commentId: T:CRMScript.NetServer.NSAppointment
+  isExternal: true
+  name: NSAppointment
+  nameWithType: NSAppointment
+  fullName: CRMScript.NetServer.NSAppointment
+- uid: CRMScript.NetServer.NSDayInformationListItem[]
+  isExternal: true
+  name: NSDayInformationListItem[]
+  nameWithType: NSDayInformationListItem[]
+  fullName: CRMScript.NetServer.NSDayInformationListItem[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSDayInformationListItem
+    isExternal: true
+    name: NSDayInformationListItem
+    nameWithType: NSDayInformationListItem
+    fullName: CRMScript.NetServer.NSDayInformationListItem
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSDayInformationListItem
+  commentId: T:CRMScript.NetServer.NSDayInformationListItem
+  isExternal: true
+  name: NSDayInformationListItem
+  nameWithType: NSDayInformationListItem
+  fullName: CRMScript.NetServer.NSDayInformationListItem
+- uid: CRMScript.Native.AppointmentSyncData[]
+  isExternal: true
+  name: AppointmentSyncData[]
+  nameWithType: AppointmentSyncData[]
+  fullName: CRMScript.Native.AppointmentSyncData[]
+  spec.crmscript:
+  - uid: CRMScript.Native.AppointmentSyncData
+    isExternal: true
+    name: AppointmentSyncData
+    nameWithType: AppointmentSyncData
+    fullName: CRMScript.Native.AppointmentSyncData
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.Native.AppointmentSyncData
+  commentId: T:CRMScript.Native.AppointmentSyncData
+  isExternal: true
+  name: AppointmentSyncData
+  nameWithType: AppointmentSyncData
+  fullName: CRMScript.Native.AppointmentSyncData
+- uid: CRMScript.Native.SuggestedAppointment
+  commentId: T:CRMScript.Native.SuggestedAppointment
+  isExternal: true
+  name: SuggestedAppointment
+  nameWithType: SuggestedAppointment
+  fullName: CRMScript.Native.SuggestedAppointment
+- uid: CRMScript.NetServer.NSRedLetterInformationListItem[]
+  isExternal: true
+  name: NSRedLetterInformationListItem[]
+  nameWithType: NSRedLetterInformationListItem[]
+  fullName: CRMScript.NetServer.NSRedLetterInformationListItem[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSRedLetterInformationListItem
+    isExternal: true
+    name: NSRedLetterInformationListItem
+    nameWithType: NSRedLetterInformationListItem
+    fullName: CRMScript.NetServer.NSRedLetterInformationListItem
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSRedLetterInformationListItem
+  commentId: T:CRMScript.NetServer.NSRedLetterInformationListItem
+  isExternal: true
+  name: NSRedLetterInformationListItem
+  nameWithType: NSRedLetterInformationListItem
+  fullName: CRMScript.NetServer.NSRedLetterInformationListItem
+- uid: CRMScript.NetServer.NSSuggestedAppointment
+  commentId: T:CRMScript.NetServer.NSSuggestedAppointment
+  isExternal: true
+  name: NSSuggestedAppointment
+  nameWithType: NSSuggestedAppointment
+  fullName: CRMScript.NetServer.NSSuggestedAppointment
+- uid: CRMScript.NetServer.NSTaskListItem[]
+  isExternal: true
+  name: NSTaskListItem[]
+  nameWithType: NSTaskListItem[]
+  fullName: CRMScript.NetServer.NSTaskListItem[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSTaskListItem
+    isExternal: true
+    name: NSTaskListItem
+    nameWithType: NSTaskListItem
+    fullName: CRMScript.NetServer.NSTaskListItem
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSTaskListItem
+  commentId: T:CRMScript.NetServer.NSTaskListItem
+  isExternal: true
+  name: NSTaskListItem
+  nameWithType: NSTaskListItem
+  fullName: CRMScript.NetServer.NSTaskListItem
+- uid: CRMScript.Global.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: CRMScript.Global.String[]
+  spec.crmscript:
+  - uid: CRMScript.Global.String
+    isExternal: true
+    name: String
+    nameWithType: String
+    fullName: CRMScript.Global.String
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.Global.String
+  commentId: T:CRMScript.Global.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: CRMScript.Global.String
+- uid: CRMScript.NetServer.NSStream
+  commentId: T:CRMScript.NetServer.NSStream
+  isExternal: true
+  name: NSStream
+  nameWithType: NSStream
+  fullName: CRMScript.NetServer.NSStream
+- uid: CRMScript.Global.StringDictionary
+  commentId: T:CRMScript.Global.StringDictionary
+  isExternal: true
+  name: StringDictionary
+  nameWithType: StringDictionary
+  fullName: CRMScript.Global.StringDictionary
+- uid: CRMScript.Global.DateTime[]
+  isExternal: true
+  name: DateTime[]
+  nameWithType: DateTime[]
+  fullName: CRMScript.Global.DateTime[]
+  spec.crmscript:
+  - uid: CRMScript.Global.DateTime
+    isExternal: true
+    name: DateTime
+    nameWithType: DateTime
+    fullName: CRMScript.Global.DateTime
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.Global.DateTime
+  commentId: T:CRMScript.Global.DateTime
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: CRMScript.Global.DateTime
+- uid: CRMScript.NetServer.NSRecurrenceDate[]
+  isExternal: true
+  name: NSRecurrenceDate[]
+  nameWithType: NSRecurrenceDate[]
+  fullName: CRMScript.NetServer.NSRecurrenceDate[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSRecurrenceDate
+    isExternal: true
+    name: NSRecurrenceDate
+    nameWithType: NSRecurrenceDate
+    fullName: CRMScript.NetServer.NSRecurrenceDate
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSRecurrenceDate
+  commentId: T:CRMScript.NetServer.NSRecurrenceDate
+  isExternal: true
+  name: NSRecurrenceDate
+  nameWithType: NSRecurrenceDate
+  fullName: CRMScript.NetServer.NSRecurrenceDate

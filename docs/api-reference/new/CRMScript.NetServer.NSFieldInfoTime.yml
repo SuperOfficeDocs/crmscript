@@ -29,6 +29,12 @@ items:
   fullName: CRMScript.NetServer.NSFieldInfoTime.GetDefaultValue
   type: Method
   summary: "\nDefault Time value<p></p>\n<strong>Returns:</strong>DateTime<p></p>\n<pre><code>NSFieldInfoTime thing;\nDateTime defaultValue  = thing.GetDefaultValue();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: DateTime GetDefaultValue()
+    parameters:
+    return:
+      type: CRMScript.Global.DateTime
   example: 
   - "\n<pre><code>NSFieldInfoTime thing;\nDateTime defaultValue  = thing.GetDefaultValue();</code></pre>\n"
 - uid: CRMScript.NetServer.NSFieldInfoTime.GetIsDefaultNow
@@ -42,6 +48,12 @@ items:
   fullName: CRMScript.NetServer.NSFieldInfoTime.GetIsDefaultNow
   type: Method
   summary: "\nShould the current date + time be the default?<p></p>\n<strong>Returns:</strong>Bool<p></p>\n<pre><code>NSFieldInfoTime thing;\nBool isDefaultNow  = thing.GetIsDefaultNow();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: Bool GetIsDefaultNow()
+    parameters:
+    return:
+      type: CRMScript.Global.Bool
   example: 
   - "\n<pre><code>NSFieldInfoTime thing;\nBool isDefaultNow  = thing.GetIsDefaultNow();</code></pre>\n"
 - uid: CRMScript.NetServer.NSFieldInfoTime.#ctor
@@ -53,8 +65,11 @@ items:
   name: '#ctor'
   nameWithType: NSFieldInfoTime.#ctor
   fullName: CRMScript.NetServer.NSFieldInfoTime.#ctor
-  type: Method
+  type: Constructor
   summary: 
+  remarks: 
+  syntax: 
+    content: NSFieldInfoTime
   example: 
 - uid: CRMScript.NetServer.NSFieldInfoTime.SetDefaultValue
   commentId: M:CRMScript.NetServer.NSFieldInfoTime.SetDefaultValue
@@ -66,7 +81,14 @@ items:
   nameWithType: NSFieldInfoTime.SetDefaultValue
   fullName: CRMScript.NetServer.NSFieldInfoTime.SetDefaultValue
   type: Method
-  summary: "\nDefault Time value<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>defaultValue</strong>DateTime</li></ul><pre><code>NSFieldInfoTime thing;\nDateTime defaultValue;\nthing.SetDefaultValue(defaultValue);</code></pre>\n"
+  summary: "\nDefault Time value\n"
+  remarks: 
+  syntax: 
+    content: SetDefaultValue(DateTime defaultValue)
+    parameters:
+    - id: defaultValue
+      type: CRMScript.Global.DateTime
+      description: 
   example: 
   - "\n<pre><code>NSFieldInfoTime thing;\nDateTime defaultValue;\nthing.SetDefaultValue(defaultValue);</code></pre>\n"
 - uid: CRMScript.NetServer.NSFieldInfoTime.SetIsDefaultNow
@@ -79,7 +101,14 @@ items:
   nameWithType: NSFieldInfoTime.SetIsDefaultNow
   fullName: CRMScript.NetServer.NSFieldInfoTime.SetIsDefaultNow
   type: Method
-  summary: "\nShould the current date + time be the default?<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>isDefaultNow</strong>Bool</li></ul><pre><code>NSFieldInfoTime thing;\nBool isDefaultNow;\nthing.SetIsDefaultNow(isDefaultNow);</code></pre>\n"
+  summary: "\nShould the current date + time be the default?\n"
+  remarks: 
+  syntax: 
+    content: SetIsDefaultNow(Bool isDefaultNow)
+    parameters:
+    - id: isDefaultNow
+      type: CRMScript.Global.Bool
+      description: 
   example: 
   - "\n<pre><code>NSFieldInfoTime thing;\nBool isDefaultNow;\nthing.SetIsDefaultNow(isDefaultNow);</code></pre>\n"
 references:
@@ -89,3 +118,15 @@ references:
   name: NSFieldInfoTime
   nameWithType: NSFieldInfoTime
   fullName: CRMScript.NetServer.NSFieldInfoTime
+- uid: CRMScript.Global.DateTime
+  commentId: T:CRMScript.Global.DateTime
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: CRMScript.Global.DateTime
+- uid: CRMScript.Global.Bool
+  commentId: T:CRMScript.Global.Bool
+  isExternal: true
+  name: Bool
+  nameWithType: Bool
+  fullName: CRMScript.Global.Bool

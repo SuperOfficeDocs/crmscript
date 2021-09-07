@@ -116,6 +116,15 @@ items:
   fullName: CRMScript.NetServer.NSUserAgent.AddOwnerContact
   type: Method
   summary: 
+  remarks: 
+  syntax: 
+    content: Void AddOwnerContact(Integer contactId)
+    parameters:
+    - id: contactId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSUserAgent.CanChangePassword
   commentId: M:CRMScript.NetServer.NSUserAgent.CanChangePassword
@@ -128,6 +137,15 @@ items:
   fullName: CRMScript.NetServer.NSUserAgent.CanChangePassword
   type: Method
   summary: "\nCheck if the current assoicate can change the password for an associate\n"
+  remarks: 
+  syntax: 
+    content: Bool CanChangePassword(Integer associateId)
+    parameters:
+    - id: associateId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Bool
   example: 
   - "\n<pre><code>NSUserAgent agent;\nInteger associateId;\nBool res = agent.CanChangePassword(associateId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.ChangeOwnPassword
@@ -141,6 +159,18 @@ items:
   fullName: CRMScript.NetServer.NSUserAgent.ChangeOwnPassword
   type: Method
   summary: "\nChange password for a user.\n"
+  remarks: 
+  syntax: 
+    content: Bool ChangeOwnPassword(String oldPassword, String newPassword)
+    parameters:
+    - id: oldPassword
+      type: CRMScript.Global.String
+      description: 
+    - id: newPassword
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.Bool
   example: 
   - "\n<pre><code>NSUserAgent agent;\nString oldPassword;\nString newPassword;\nBool res = agent.ChangeOwnPassword(oldPassword, newPassword);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.ChangePassword
@@ -154,6 +184,21 @@ items:
   fullName: CRMScript.NetServer.NSUserAgent.ChangePassword
   type: Method
   summary: "\nChange password for a user.\n"
+  remarks: 
+  syntax: 
+    content: Bool ChangePassword(Integer associateId, String oldPassword, String newPassword)
+    parameters:
+    - id: associateId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: oldPassword
+      type: CRMScript.Global.String
+      description: 
+    - id: newPassword
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.Bool
   example: 
   - "\n<pre><code>NSUserAgent agent;\nInteger associateId;\nString oldPassword;\nString newPassword;\nBool res = agent.ChangePassword(associateId, oldPassword, newPassword);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.ChangePasswordFromName
@@ -167,6 +212,21 @@ items:
   fullName: CRMScript.NetServer.NSUserAgent.ChangePasswordFromName
   type: Method
   summary: "\nChange password for a user.\n"
+  remarks: 
+  syntax: 
+    content: Bool ChangePasswordFromName(String associateName, String oldPassword, String newPassword)
+    parameters:
+    - id: associateName
+      type: CRMScript.Global.String
+      description: 
+    - id: oldPassword
+      type: CRMScript.Global.String
+      description: 
+    - id: newPassword
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.Bool
   example: 
   - "\n<pre><code>NSUserAgent agent;\nString associateName;\nString oldPassword;\nString newPassword;\nBool res = agent.ChangePasswordFromName(associateName, oldPassword, newPassword);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.ChangeUserType
@@ -179,7 +239,19 @@ items:
   nameWithType: NSUserAgent.ChangeUserType
   fullName: CRMScript.NetServer.NSUserAgent.ChangeUserType
   type: Method
-  summary: "\nGet a user from the user name.\n"
+  summary: "\nGet a user from the user name.<p></p>\n<strong>Returns:</strong>NSUser\n"
+  remarks: "\n<h3>userType</h3>\n"
+  syntax: 
+    content: NSUser ChangeUserType(NSUser user, Integer userType)
+    parameters:
+    - id: user
+      type: CRMScript.NetServer.NSUser
+      description: 
+    - id: userType
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSUser
   example: 
   - "\n<pre><code>NSUserAgent agent;\nNSUser user;\nInteger userType;\nNSUser res = agent.ChangeUserType(user, userType);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.CheckAccessGatewayRegistration
@@ -193,6 +265,12 @@ items:
   fullName: CRMScript.NetServer.NSUserAgent.CheckAccessGatewayRegistration
   type: Method
   summary: "\nChecks if AccessGatewayRegistration is valid<p></p>\n<strong>Returns:</strong>Bool<p></p>\n<pre><code>NSUserAgent agent;\nBool res = agent.CheckAccessGatewayRegistration();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: Bool CheckAccessGatewayRegistration()
+    parameters:
+    return:
+      type: CRMScript.Global.Bool
   example: 
   - "\n<pre><code>NSUserAgent agent;\nBool res = agent.CheckAccessGatewayRegistration();</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.CreateDefaultRoleEntity
@@ -207,6 +285,12 @@ items:
   type: Method
   summary: "\nSet default values into a new NSRoleEntity.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSRoleEntity<p></p>\n<pre><code>NSUserAgent agent;\nNSRoleEntity thing = agent.CreateDefaultRoleEntity();\nthing = agent.SaveRoleEntity(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSRoleEntity CreateDefaultRoleEntity()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSRoleEntity
   example: 
   - "\n<pre><code>NSUserAgent agent;\nNSRoleEntity thing = agent.CreateDefaultRoleEntity();\nthing = agent.SaveRoleEntity(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.CreateDefaultRoleEntityFromType
@@ -220,6 +304,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.CreateDefaultRoleEntityFromType
   type: Method
   summary: "\nCreate a new role entity of the specified role type. The role type cannot be changed after the entity is created.\n"
+  remarks: "\n<ul><li>Enum: 0 = Employee</li><li>Enum: 1 = ExternalUser</li><li>Enum: 2 = Anonymous</li><li>Enum: 3 = System</li></ul>\n"
+  syntax: 
+    content: NSRoleEntity CreateDefaultRoleEntityFromType(Integer type)
+    parameters:
+    - id: type
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSRoleEntity
   example: 
   - "\n<pre><code>NSUserAgent agent;\nInteger type;\nNSRoleEntity res = agent.CreateDefaultRoleEntityFromType(type);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.CreateDefaultServiceAuth
@@ -234,6 +327,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   type: Method
   summary: "\nSet default values into a new NSServiceAuth.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSServiceAuth<p></p>\n<pre><code>NSUserAgent agent;\nNSServiceAuth thing = agent.CreateDefaultServiceAuth();\nthing = agent.SaveServiceAuth(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSServiceAuth CreateDefaultServiceAuth()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSServiceAuth
   example: 
   - "\n<pre><code>NSUserAgent agent;\nNSServiceAuth thing = agent.CreateDefaultServiceAuth();\nthing = agent.SaveServiceAuth(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.CreateDefaultUntrustedCredentials
@@ -248,6 +347,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   type: Method
   summary: "\nSet default values into a new NSUntrustedCredentials.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSUntrustedCredentials<p></p>\n<pre><code>NSUserAgent agent;\nNSUntrustedCredentials thing = agent.CreateDefaultUntrustedCredentials();\nthing = agent.SaveUntrustedCredentials(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSUntrustedCredentials CreateDefaultUntrustedCredentials()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSUntrustedCredentials
   example: 
   - "\n<pre><code>NSUserAgent agent;\nNSUntrustedCredentials thing = agent.CreateDefaultUntrustedCredentials();\nthing = agent.SaveUntrustedCredentials(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.CreateDefaultUser
@@ -262,6 +367,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   type: Method
   summary: "\nSet default values into a new NSUser.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSUser<p></p>\n<pre><code>NSUserAgent agent;\nNSUser thing = agent.CreateDefaultUser();\nthing = agent.SaveUser(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSUser CreateDefaultUser()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSUser
   example: 
   - "\n<pre><code>NSUserAgent agent;\nNSUser thing = agent.CreateDefaultUser();\nthing = agent.SaveUser(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.CreateDefaultUserFromUserType
@@ -275,6 +386,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.CreateDefaultUserFromUserType
   type: Method
   summary: "\nCreate default NSUser providing the user type.  Only System and Anonymous users can be created without an exsisting person.  Use CreateDefaultUserFromUserTypeAndPersonId to create internal (i.e. Employee) or external users.\n"
+  remarks: "\n<h3>Enum: associateType</h3><ul><li>0 = Unknown</li><li>1 = InternalAssociate</li><li>2 = ResourceAssociate</li><li>3 = ExternalAssociate</li><li>4 = AnonymousAssociate</li><li>5 = SystemAssociate</li></ul><p><strong>Returns:</strong> NSUser</p><pre><code>NSUserAgent agent;Integer userType;NSUser res = agent.CreateDefaultUserFromUserType(userType);</code></pre>\n"
+  syntax: 
+    content: NSUser CreateDefaultUserFromUserType(Integer userType)
+    parameters:
+    - id: userType
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSUser
   example: 
   - "\n<pre><code>NSUserAgent agent;\nInteger userType;\nNSUser res = agent.CreateDefaultUserFromUserType(userType);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.CreateDefaultUserFromUserTypeAndCredential
@@ -287,7 +407,28 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSUserAgent.CreateDefaultUserFromUserTypeAndCredential
   fullName: CRMScript.NetServer.NSUserAgent.CreateDefaultUserFromUserTypeAndCredential
   type: Method
-  summary: "\nCreates a NSPersonEntity with default values based on the contactId and credentials.\n"
+  summary: "\nCreates an NSPersonEntity with default values based on the contactId and credentials.\n"
+  remarks: "\n<h3>Enum: associateType</h3><ul><li>0 = Unknown</li><li>1 = InternalAssociate</li><li>2 = ResourceAssociate</li><li>3 = ExternalAssociate</li><li>4 = AnonymousAssociate</li></ul>\n"
+  syntax: 
+    content: NSUser CreateDefaultUserFromUserTypeAndCredential(Integer userType, Integer contactId, String credentialType, String credentialValue, String credentialDisplayValue)
+    parameters:
+    - id: userType
+      type: CRMScript.Global.Integer
+      description: 
+    - id: contactId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: credentialType
+      type: CRMScript.Global.String
+      description: 
+    - id: credentialValue
+      type: CRMScript.Global.String
+      description: 
+    - id: credentialDisplayValue
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSUser
   example: 
 - uid: CRMScript.NetServer.NSUserAgent.CreateDefaultUserFromUserTypeAndPersonId
   commentId: M:CRMScript.NetServer.NSUserAgent.CreateDefaultUserFromUserTypeAndPersonId
@@ -300,6 +441,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.CreateDefaultUserFromUserTypeAndPersonId
   type: Method
   summary: "\nCreate default NSUser providing the associate type and person id.  System and Anonymous users can be created without an exsisting person and permits person id to be 0.\n"
+  remarks: "\n<h3>Enum: associateType</h3><ul><li>0 = Unknown</li><li>1 = InternalAssociate</li><li>2 = ResourceAssociate</li><li>3 = ExternalAssociate</li><li>4 = AnonymousAssociate</li><li>5 = SystemAssociate</li></ul>\n"
+  syntax: 
+    content: NSUser CreateDefaultUserFromUserTypeAndPersonId(Integer userType, Integer personId)
+    parameters:
+    - id: userType
+      type: CRMScript.Global.Integer
+      description: 
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSUser
   example: 
   - "\n<pre><code>NSUserAgent agent;\nInteger userType;\nInteger personId;\nNSUser res = agent.CreateDefaultUserFromUserTypeAndPersonId(userType, personId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.CreateExternalUser
@@ -313,6 +466,27 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.CreateExternalUser
   type: Method
   summary: "\nCreates an associate of type external user.\n"
+  remarks: 
+  syntax: 
+    content: Integer CreateExternalUser(Integer personId, String userName, String password, Integer roleId, Bool isActive)
+    parameters:
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: userName
+      type: CRMScript.Global.String
+      description: 
+    - id: password
+      type: CRMScript.Global.String
+      description: 
+    - id: roleId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: isActive
+      type: CRMScript.Global.Bool
+      description: 
+    return:
+      type: CRMScript.Global.Integer
   example: 
   - "\n<pre><code>NSUserAgent agent;\nInteger personId;\nString userName;\nString password;\nInteger roleId;\nBool isActive;\nInteger res = agent.CreateExternalUser(personId, userName, password, roleId, isActive);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.CreateUserGroup
@@ -326,6 +500,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.CreateUserGroup
   type: Method
   summary: "\nCreate UserGroup (Rank is assigned to the highest rank)\n"
+  remarks: 
+  syntax: 
+    content: NSUserGroup CreateUserGroup()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSUserGroup
   example: 
 - uid: CRMScript.NetServer.NSUserAgent.DecryptAndSaveExternalTokens
   commentId: M:CRMScript.NetServer.NSUserAgent.DecryptAndSaveExternalTokens
@@ -338,6 +518,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.DecryptAndSaveExternalTokens
   type: Method
   summary: "\nFirst asks AccessGateway to decrypt the tokens, then saves the external tokens to the DB and returns a key that can be used to retrieve them\n"
+  remarks: 
+  syntax: 
+    content: String DecryptAndSaveExternalTokens(NSTokenManagementInfo tokenManagementInfo)
+    parameters:
+    - id: tokenManagementInfo
+      type: CRMScript.NetServer.NSTokenManagementInfo
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSUserAgent agent;\nNSTokenManagementInfo tokenManagementInfo;\nString res = agent.DecryptAndSaveExternalTokens(tokenManagementInfo);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.DeleteCredential
@@ -351,6 +540,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.DeleteCredential
   type: Method
   summary: "\nRemove credential of a specific type for a user\n"
+  remarks: 
+  syntax: 
+    content: Bool DeleteCredential(Integer userId, String credentialType)
+    parameters:
+    - id: userId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: credentialType
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.Bool
   example: 
   - "\n<pre><code>NSUserAgent agent;\nInteger userId;\nString credentialType;\nBool res = agent.DeleteCredential(userId, credentialType);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.DeleteExternalUser
@@ -364,6 +565,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.DeleteExternalUser
   type: Method
   summary: "\nDeletes an associate of type external user.\n"
+  remarks: 
+  syntax: 
+    content: Void DeleteExternalUser(Integer associateId)
+    parameters:
+    - id: associateId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSUserAgent.DeleteRole
   commentId: M:CRMScript.NetServer.NSUserAgent.DeleteRole
@@ -376,6 +586,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.DeleteRole
   type: Method
   summary: "\nDelete the specified role and move all users associated with the role to the replacingRoleId\n"
+  remarks: 
+  syntax: 
+    content: Void DeleteRole(Integer roleIdToDelete, Integer replacingRoleId)
+    parameters:
+    - id: roleIdToDelete
+      type: CRMScript.Global.Integer
+      description: 
+    - id: replacingRoleId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSUserAgent.DeleteServiceAuth
   commentId: M:CRMScript.NetServer.NSUserAgent.DeleteServiceAuth
@@ -388,6 +610,16 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.DeleteServiceAuth
   type: Method
   summary: "\nDeletes the NSServiceAuth\n"
+  remarks: 
+  syntax: 
+    content: DeleteServiceAuth(Integer serviceAuth);
+    parameters:
+    - id: serviceAuth;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: serviceAuthId
+      type: 
+      description: 
   example: 
   - "\n<pre><code>NSUserAgent agent;\nagent.DeleteServiceAuth(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.DeleteUser
@@ -401,6 +633,16 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.DeleteUser
   type: Method
   summary: "\nDeletes the NSUser\n"
+  remarks: 
+  syntax: 
+    content: DeleteUser(Integer user);
+    parameters:
+    - id: user;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: userId
+      type: 
+      description: 
   example: 
   - "\n<pre><code>NSUserAgent agent;\nagent.DeleteUser(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.DeleteUserFromName
@@ -414,6 +656,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.DeleteUserFromName
   type: Method
   summary: "\nDelete a user, with lookup based on the user name.\n"
+  remarks: 
+  syntax: 
+    content: Void DeleteUserFromName(String userName)
+    parameters:
+    - id: userName
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSUserAgent agent;\nString userName;\nagent.DeleteUserFromName(userName);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.DeleteUserGroup
@@ -427,6 +678,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.DeleteUserGroup
   type: Method
   summary: "\nDelete a usergroup and move its members to another usergroup\n"
+  remarks: 
+  syntax: 
+    content: Void DeleteUserGroup(Integer userGroupToDelete, Integer userGroupToMoveTo)
+    parameters:
+    - id: userGroupToDelete
+      type: CRMScript.Global.Integer
+      description: 
+    - id: userGroupToMoveTo
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSUserAgent.FindCredentialsGroups
   commentId: M:CRMScript.NetServer.NSUserAgent.FindCredentialsGroups
@@ -439,6 +702,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.FindCredentialsGroups
   type: Method
   summary: "\nGet user groups holding users filtered by the searchString.  This method is only relevant if the CredentialType control is of type link.  There will allways be at least one groups even if the underlying provider does not support groups.\n"
+  remarks: 
+  syntax: 
+    content: NSCredentialsGroup[] FindCredentialsGroups(String type, String searchString)
+    parameters:
+    - id: type
+      type: CRMScript.Global.String
+      description: 
+    - id: searchString
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSCredentialsGroup[]
   example: 
 - uid: CRMScript.NetServer.NSUserAgent.FindCredentialUsers
   commentId: M:CRMScript.NetServer.NSUserAgent.FindCredentialUsers
@@ -451,6 +726,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.FindCredentialUsers
   type: Method
   summary: "\nFind users matching the partial name.\n"
+  remarks: 
+  syntax: 
+    content: NSCredentialsGroupUsers FindCredentialUsers(String type, String searchString)
+    parameters:
+    - id: type
+      type: CRMScript.Global.String
+      description: 
+    - id: searchString
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSCredentialsGroupUsers
   example: 
 - uid: CRMScript.NetServer.NSUserAgent.FindRolesWithFunctionalRight
   commentId: M:CRMScript.NetServer.NSUserAgent.FindRolesWithFunctionalRight
@@ -463,6 +750,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.FindRolesWithFunctionalRight
   type: Method
   summary: "\nFind all roles with a given functional right. The roles matched must contain the specified functional right.\n"
+  remarks: 
+  syntax: 
+    content: NSMDOListItem[] FindRolesWithFunctionalRight(String functionalRightName)
+    parameters:
+    - id: functionalRightName
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSMDOListItem[]
   example: 
   - "\n<pre><code>NSUserAgent agent;\nString functionalRightName;\nNSMDOListItem[] res = agent.FindRolesWithFunctionalRight(functionalRightName);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.FindRolesWithFunctionalRights
@@ -476,6 +772,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.FindRolesWithFunctionalRights
   type: Method
   summary: "\nFind all roles with a given set of functional rights. The roles matched must contain one or more of the specified functional rights.\n"
+  remarks: 
+  syntax: 
+    content: Integer[] FindRolesWithFunctionalRights(String[] functionalRightNames)
+    parameters:
+    - id: functionalRightNames
+      type: CRMScript.Global.String[]
+      description: 
+    return:
+      type: CRMScript.Global.Integer[]
   example: 
   - "\n<pre><code>NSUserAgent agent;\nString[] functionalRightNames;\nInteger[] res = agent.FindRolesWithFunctionalRights(functionalRightNames);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.FindRolesWithoutFunctionalRights
@@ -489,6 +794,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.FindRolesWithoutFunctionalRights
   type: Method
   summary: "\nFind all roles without a given set of functional rights. The roles matched must not contain any of the specified functional rights.\n"
+  remarks: 
+  syntax: 
+    content: Integer[] FindRolesWithoutFunctionalRights(String[] functionalRightNames)
+    parameters:
+    - id: functionalRightNames
+      type: CRMScript.Global.String[]
+      description: 
+    return:
+      type: CRMScript.Global.Integer[]
   example: 
   - "\n<pre><code>NSUserAgent agent;\nString[] functionalRightNames;\nInteger[] res = agent.FindRolesWithoutFunctionalRights(functionalRightNames);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.GenerateNewPasswordForExternalUser
@@ -502,6 +816,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.GenerateNewPasswordForExternalUser
   type: Method
   summary: "\nGenerates a new password for an external user.\n"
+  remarks: 
+  syntax: 
+    content: String GenerateNewPasswordForExternalUser(String associateName)
+    parameters:
+    - id: associateName
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSUserAgent agent;\nString associateName;\nString res = agent.GenerateNewPasswordForExternalUser(associateName);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.GetAccessGatewayInfo
@@ -515,6 +838,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.GetAccessGatewayInfo
   type: Method
   summary: "\nReturns accessgateway registration info\n"
+  remarks: 
+  syntax: 
+    content: NSAccessGatewayInfo GetAccessGatewayInfo()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSAccessGatewayInfo
   example: 
 - uid: CRMScript.NetServer.NSUserAgent.GetAccessToken
   commentId: M:CRMScript.NetServer.NSUserAgent.GetAccessToken
@@ -527,6 +856,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.GetAccessToken
   type: Method
   summary: "\nGet an access token based on the current user's session.\n"
+  remarks: 
+  syntax: 
+    content: String GetAccessToken(String appToken, Bool includeCsSession)
+    parameters:
+    - id: appToken
+      type: CRMScript.Global.String
+      description: 
+    - id: includeCsSession
+      type: CRMScript.Global.Bool
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSUserAgent agent;\nString appToken;\nBool includeCsSession;\nString res = agent.GetAccessToken(appToken, includeCsSession);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.GetAllFunctionalRights
@@ -540,6 +881,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.GetAllFunctionalRights
   type: Method
   summary: "\nGet a list of all functional rights for the given type of role. MDO List name = 'FunctionRights', extra='roleType=0'\n"
+  remarks: "\n<ul><li>Enum: 0 = Employee</li><li>Enum: 1 = ExternalUser</li><li>Enum: 2 = Anonymous</li><li>Enum: 3 = System</li></ul>\n"
+  syntax: 
+    content: NSSelectableMDOListItem[] GetAllFunctionalRights(Integer roleType)
+    parameters:
+    - id: roleType
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSSelectableMDOListItem[]
   example: 
   - "\n<pre><code>NSUserAgent agent;\nInteger roleType;\nNSSelectableMDOListItem[] res = agent.GetAllFunctionalRights(roleType);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.GetAllRoles
@@ -553,6 +903,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.GetAllRoles
   type: Method
   summary: "\nGet a list of all roles for the given type of role. MDO List name = 'Roles', extra='0' (roleType)\n"
+  remarks: "\n<ul><li>Enum: 0 = Employee</li><li>Enum: 1 = ExternalUser</li><li>Enum: 2 = Anonymous</li><li>Enum: 3 = System</li></ul>\n"
+  syntax: 
+    content: NSSelectableMDOListItem[] GetAllRoles(Integer roleType)
+    parameters:
+    - id: roleType
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSSelectableMDOListItem[]
   example: 
   - "\n<pre><code>NSUserAgent agent;\nInteger roleType;\nNSSelectableMDOListItem[] res = agent.GetAllRoles(roleType);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.GetAllUserGroups
@@ -566,6 +925,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.GetAllUserGroups
   type: Method
   summary: "\nGet all user groups\n"
+  remarks: 
+  syntax: 
+    content: NSUserGroup[] GetAllUserGroups(Bool includeDeleted)
+    parameters:
+    - id: includeDeleted
+      type: CRMScript.Global.Bool
+      description: 
+    return:
+      type: CRMScript.NetServer.NSUserGroup[]
   example: 
   - "\n<pre><code>NSUserAgent agent;\nBool includeDeleted;\nNSUserGroup[] res = agent.GetAllUserGroups(includeDeleted);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.GetCredentialsGroups
@@ -578,7 +946,17 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSUserAgent.GetCredentialsGroups
   fullName: CRMScript.NetServer.NSUserAgent.GetCredentialsGroups
   type: Method
-  summary: "\nGet user groups holding users.  This method is only relevant if the CredentialType control is of type link.  There will allways be at least one groups even if the underlying provider does not support groups.<p></p>\n<ul><li><strong>type:</strong>Type of credentials, corresponding to name of plugin and type in the credentials table.</li></ul>\n"
+  summary: "\nGet user groups holding users.  This method is only relevant if the CredentialType control is of type link.  There will allways be at least one groups even if the underlying provider does not support groups.\n"
+  remarks: 
+  syntax: 
+    content: GetCredentialsGroups(String p_0)
+    parameters:
+    - id: p_0
+      type: CRMScript.Global.String
+      description: 
+    - id: type
+      type: 
+      description: 
   example: 
 - uid: CRMScript.NetServer.NSUserAgent.GetCredentialTypes
   commentId: M:CRMScript.NetServer.NSUserAgent.GetCredentialTypes
@@ -591,6 +969,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.GetCredentialTypes
   type: Method
   summary: "\nGet available credential types that can be used for authentication<p></p>\n<strong>Returns:</strong>NSCredentialType[]<p></p>\n<pre><code>NSUserAgent agent;\nNSCredentialType[] res = agent.GetCredentialTypes();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSCredentialType[] GetCredentialTypes()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSCredentialType[]
   example: 
   - "\n<pre><code>NSUserAgent agent;\nNSCredentialType[] res = agent.GetCredentialTypes();</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.GetCredentialTypesForUserType
@@ -604,6 +988,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.GetCredentialTypesForUserType
   type: Method
   summary: "\nGet available credential types that can be used for the specified user type.\n"
+  remarks: 
+  syntax: 
+    content: NSCredentialType[] GetCredentialTypesForUserType(Integer userType)
+    parameters:
+    - id: userType
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSCredentialType[]
   example: 
   - "\n<pre><code>NSUserAgent agent;\nInteger userType;\nNSCredentialType[] res = agent.GetCredentialTypesForUserType(userType);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.GetCredentialUsers
@@ -617,6 +1010,16 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.GetCredentialUsers
   type: Method
   summary: "\nGet credential users within a user group<p></p>\n<ul><li><strong>type:</strong>Type of credentials, corresponding to name of plugin and type in the credentials table.</li><li><strong>groupName:</strong>Name of user group needed to discover the users.</li></ul>\n"
+  remarks: 
+  syntax: 
+    content: GetCredentialUsers(String p_0, String p_1)
+    parameters:
+    - id: p_0
+      type: CRMScript.Global.String
+      description: 
+    - id: p_1
+      type: CRMScript.Global.String
+      description: 
   example: 
 - uid: CRMScript.NetServer.NSUserAgent.GetCredentialUsersInGroup
   commentId: M:CRMScript.NetServer.NSUserAgent.GetCredentialUsersInGroup
@@ -629,6 +1032,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.GetCredentialUsersInGroup
   type: Method
   summary: "\nGet credential users within a user group\n"
+  remarks: 
+  syntax: 
+    content: NSCredentialsGroupUsers GetCredentialUsersInGroup(String type, String groupName)
+    parameters:
+    - id: type
+      type: CRMScript.Global.String
+      description: 
+    - id: groupName
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSCredentialsGroupUsers
   example: 
 - uid: CRMScript.NetServer.NSUserAgent.GetDataRight
   commentId: M:CRMScript.NetServer.NSUserAgent.GetDataRight
@@ -641,6 +1056,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.GetDataRight
   type: Method
   summary: "\nRead one specific data right at the given position. An exception will be thrown if non existing position is specified.\n"
+  remarks: "\n<ul><li>Enum: 0 = MyOwn</li><li>Enum: 1 = PrimaryGroup</li><li>Enum: 2 = OtherGroups</li><li>Enum: 3 = OtherAssociates</li><li>Enum: 4 = ExternalUser</li><li>Enum: 5 = Anonymous</li><li>Enum: 6 = MyCompany</li><li>Enum: 7 = SameProject</li></ul>\n"
+  syntax: 
+    content: String GetDataRight(Integer roleId, String tableName, Integer relationToOwner)
+    parameters:
+    - id: roleId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: tableName
+      type: CRMScript.Global.String
+      description: 
+    - id: relationToOwner
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSUserAgent agent;\nInteger roleId;\nString tableName;\nInteger relationToOwner;\nString res = agent.GetDataRight(roleId, tableName, relationToOwner);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.GetDataRights
@@ -654,6 +1084,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.GetDataRights
   type: Method
   summary: "\nRead specific a set of data rights at the given row in the rights matrix. An exception will be thrown if non existing position is specified.\n"
+  remarks: 
+  syntax: 
+    content: StringDictionary GetDataRights(Integer roleId, String tableName)
+    parameters:
+    - id: roleId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: tableName
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.StringDictionary
   example: 
   - "\n<pre><code>NSUserAgent agent;\nInteger roleId;\nString tableName;\nStringDictionary res = agent.GetDataRights(roleId, tableName);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.GetDefaultAssociateUserName
@@ -666,7 +1108,16 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSUserAgent.GetDefaultAssociateUserName
   fullName: CRMScript.NetServer.NSUserAgent.GetDefaultAssociateUserName
   type: Method
-  summary: "\nGet the default username for a person\n"
+  summary: "\nGet the default username for a person<p></p>\n<strong>Returns:</strong>String\n"
+  remarks: 
+  syntax: 
+    content: String GetDefaultAssociateUserName(NSUser user)
+    parameters:
+    - id: user
+      type: CRMScript.NetServer.NSUser
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
 - uid: CRMScript.NetServer.NSUserAgent.GetExternalTokens
   commentId: M:CRMScript.NetServer.NSUserAgent.GetExternalTokens
@@ -679,6 +1130,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.GetExternalTokens
   type: Method
   summary: "\nRetrieve the tokens from the DB based on the given key\n"
+  remarks: 
+  syntax: 
+    content: NSTokenManagementInfo GetExternalTokens(String key)
+    parameters:
+    - id: key
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSTokenManagementInfo
   example: 
   - "\n<pre><code>NSUserAgent agent;\nString key;\nNSTokenManagementInfo res = agent.GetExternalTokens(key);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.GetFunctionalRights
@@ -692,6 +1152,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.GetFunctionalRights
   type: Method
   summary: "\nGet all functional rights for the given role. Functional rights not set on the role are not included. MDO List name = 'FunctionRights', extra='role=123'\n"
+  remarks: 
+  syntax: 
+    content: NSSelectableMDOListItem[] GetFunctionalRights(Integer roleId)
+    parameters:
+    - id: roleId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSSelectableMDOListItem[]
   example: 
   - "\n<pre><code>NSUserAgent agent;\nInteger roleId;\nNSSelectableMDOListItem[] res = agent.GetFunctionalRights(roleId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.GetRole
@@ -704,7 +1173,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSUserAgent.GetRole
   fullName: CRMScript.NetServer.NSUserAgent.GetRole
   type: Method
-  summary: "\nGets a NSRole object.\n"
+  summary: "\nGets an NSRole object.\n"
+  remarks: 
+  syntax: 
+    content: NSRole GetRole(Integer roleId);
+    parameters:
+    - id: roleId;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: roleId
+      type: 
+      description: 
+    return:
+      type: CRMScript.NetServer.NSRole
   example: 
   - "\n<pre><code>NSUserAgent agent;\nNSRole thing = agent.GetRole(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.GetRoleEntity
@@ -717,7 +1198,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSUserAgent.GetRoleEntity
   fullName: CRMScript.NetServer.NSUserAgent.GetRoleEntity
   type: Method
-  summary: "\nGets a NSRoleEntity object.\n"
+  summary: "\nGets an NSRoleEntity object.\n"
+  remarks: 
+  syntax: 
+    content: NSRoleEntity GetRoleEntity(Integer roleEntityId);
+    parameters:
+    - id: roleEntityId;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: roleEntityId
+      type: 
+      description: 
+    return:
+      type: CRMScript.NetServer.NSRoleEntity
   example: 
   - "\n<pre><code>NSUserAgent agent;\nNSRoleEntity thing = agent.GetRoleEntity(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.GetServiceAuth
@@ -730,7 +1223,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSUserAgent.GetServiceAuth
   fullName: CRMScript.NetServer.NSUserAgent.GetServiceAuth
   type: Method
-  summary: "\nGets a NSServiceAuth object.\n"
+  summary: "\nGets an NSServiceAuth object.\n"
+  remarks: 
+  syntax: 
+    content: NSServiceAuth GetServiceAuth(Integer serviceAuthId);
+    parameters:
+    - id: serviceAuthId;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: serviceAuthId
+      type: 
+      description: 
+    return:
+      type: CRMScript.NetServer.NSServiceAuth
   example: 
   - "\n<pre><code>NSUserAgent agent;\nNSServiceAuth thing = agent.GetServiceAuth(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.GetUntrustedCredentials
@@ -744,6 +1249,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.GetUntrustedCredentials
   type: Method
   summary: "\nGet a set of credentials of a specified type for authenticated user.\n"
+  remarks: 
+  syntax: 
+    content: NSUntrustedCredentials[] GetUntrustedCredentials(String type)
+    parameters:
+    - id: type
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSUntrustedCredentials[]
   example: 
   - "\n<pre><code>NSUserAgent agent;\nString type;\nNSUntrustedCredentials[] res = agent.GetUntrustedCredentials(type);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.GetUntrustedCredentialsForAssociate
@@ -757,6 +1271,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.GetUntrustedCredentialsForAssociate
   type: Method
   summary: "\nGet a set of credentials of a specified type for a specified user. SecretValue is only populated for authenticated user, and system users.\n"
+  remarks: 
+  syntax: 
+    content: NSUntrustedCredentials[] GetUntrustedCredentialsForAssociate(Integer associateId, String type)
+    parameters:
+    - id: associateId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: type
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSUntrustedCredentials[]
   example: 
   - "\n<pre><code>NSUserAgent agent;\nInteger associateId;\nString type;\nNSUntrustedCredentials[] res = agent.GetUntrustedCredentialsForAssociate(associateId, type);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.GetUser
@@ -769,7 +1295,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSUserAgent.GetUser
   fullName: CRMScript.NetServer.NSUserAgent.GetUser
   type: Method
-  summary: "\nGets a NSUser object.\n"
+  summary: "\nGets an NSUser object.\n"
+  remarks: 
+  syntax: 
+    content: NSUser GetUser(Integer userId);
+    parameters:
+    - id: userId;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: userId
+      type: 
+      description: 
+    return:
+      type: CRMScript.NetServer.NSUser
   example: 
   - "\n<pre><code>NSUserAgent agent;\nNSUser thing = agent.GetUser(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.GetUserFromEjUserId
@@ -783,6 +1321,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.GetUserFromEjUserId
   type: Method
   summary: "\nGet user from ejUserId* used for eJournal Legacy Support.\n"
+  remarks: 
+  syntax: 
+    content: NSUser[] GetUserFromEjUserId(Integer ejUserId)
+    parameters:
+    - id: ejUserId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSUser[]
   example: 
 - uid: CRMScript.NetServer.NSUserAgent.GetUserFromName
   commentId: M:CRMScript.NetServer.NSUserAgent.GetUserFromName
@@ -795,6 +1342,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.GetUserFromName
   type: Method
   summary: "\nGet a user, with lookup based on user name.\n"
+  remarks: 
+  syntax: 
+    content: NSUser GetUserFromName(String userName)
+    parameters:
+    - id: userName
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSUser
   example: 
   - "\n<pre><code>NSUserAgent agent;\nString userName;\nNSUser res = agent.GetUserFromName(userName);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.GetUserFromPersonId
@@ -807,7 +1363,16 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSUserAgent.GetUserFromPersonId
   fullName: CRMScript.NetServer.NSUserAgent.GetUserFromPersonId
   type: Method
-  summary: "\nReturns the user associated with the supplied person id\n"
+  summary: "\nReturns the user associated with the supplied person id<p></p>\n<strong>Returns:</strong>NSUser\n"
+  remarks: 
+  syntax: 
+    content: NSUser[] GetUserFromPersonId(Integer personId)
+    parameters:
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSUser[]
   example: 
 - uid: CRMScript.NetServer.NSUserAgent.GetUserGroup
   commentId: M:CRMScript.NetServer.NSUserAgent.GetUserGroup
@@ -819,7 +1384,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSUserAgent.GetUserGroup
   fullName: CRMScript.NetServer.NSUserAgent.GetUserGroup
   type: Method
-  summary: "\nGets a NSUserGroup object.\n"
+  summary: "\nGets an NSUserGroup object.\n"
+  remarks: 
+  syntax: 
+    content: NSUserGroup GetUserGroup(Integer userGroupId);
+    parameters:
+    - id: userGroupId;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: userGroupId
+      type: 
+      description: 
+    return:
+      type: CRMScript.NetServer.NSUserGroup
   example: 
   - "\n<pre><code>NSUserAgent agent;\nNSUserGroup thing = agent.GetUserGroup(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.GetUserGroupList
@@ -833,6 +1410,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.GetUserGroupList
   type: Method
   summary: "\nGets a vector of UserGroup objects.\n"
+  remarks: 
+  syntax: 
+    content: NSUserGroup[] GetUserGroupList(Integer[]  userGroupIds);
+    parameters:
+    - id: userGroupIds;
+      type: CRMScript.Global.Integer[]
+      description: 
+    - id: userGroupIds
+      type: 
+      description: 
+    return:
+      type: CRMScript.NetServer.NSUserGroup[]
   example: 
   - "\n<pre><code>Integer[] ids;\nNSUserAgent agent;\nagent.GetUserGroupList(ids);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.GetUserInfo
@@ -845,7 +1434,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSUserAgent.GetUserInfo
   fullName: CRMScript.NetServer.NSUserAgent.GetUserInfo
   type: Method
-  summary: "\nGets a NSUserInfo object.\n"
+  summary: "\nGets an NSUserInfo object.\n"
+  remarks: 
+  syntax: 
+    content: NSUserInfo GetUserInfo(Integer userInfoId);
+    parameters:
+    - id: userInfoId;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: userInfoId
+      type: 
+      description: 
+    return:
+      type: CRMScript.NetServer.NSUserInfo
   example: 
   - "\n<pre><code>NSUserAgent agent;\nNSUserInfo thing = agent.GetUserInfo(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.GetUserInfoList
@@ -859,6 +1460,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.GetUserInfoList
   type: Method
   summary: "\nGets a vector of NSUserInfo objects.\n"
+  remarks: 
+  syntax: 
+    content: NSUserInfo[] GetUserInfoList(Integer[]  userInfoIds);
+    parameters:
+    - id: userInfoIds;
+      type: CRMScript.Global.Integer[]
+      description: 
+    - id: userInfoIds
+      type: 
+      description: 
+    return:
+      type: CRMScript.NetServer.NSUserInfo[]
   example: 
   - "\n<pre><code>Integer[] ids;\nNSUserAgent agent;\nagent.GetUserInfoList(ids);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.GetValidUserName
@@ -871,7 +1484,25 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSUserAgent.GetValidUserName
   fullName: CRMScript.NetServer.NSUserAgent.GetValidUserName
   type: Method
-  summary: 
+  summary: "\n<strong>Returns:</strong>String\n"
+  remarks: "\n<h3>Enum: associateType</h3><ul><li>0 = Unknown</li><li>1 = InternalAssociate</li><li>2 = ResourceAssociate</li><li>3 = ExternalAssociate</li><li>4 = AnonymousAssociate</li></ul>\n"
+  syntax: 
+    content: String GetValidUserName(Integer associateId, Integer type, Integer personId, String userName)
+    parameters:
+    - id: associateId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: type
+      type: CRMScript.Global.Integer
+      description: 
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: userName
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
 - uid: CRMScript.NetServer.NSUserAgent.GetValidUserNameForNewUser
   commentId: M:CRMScript.NetServer.NSUserAgent.GetValidUserNameForNewUser
@@ -883,7 +1514,16 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSUserAgent.GetValidUserNameForNewUser
   fullName: CRMScript.NetServer.NSUserAgent.GetValidUserNameForNewUser
   type: Method
-  summary: "\nGenerates a valid username for an unsaved user\n"
+  summary: "\nGenerates a valid username for an unsaved user<p></p>\n<strong>Returns:</strong>String\n"
+  remarks: 
+  syntax: 
+    content: String GetValidUserNameForNewUser(NSUser user)
+    parameters:
+    - id: user
+      type: CRMScript.NetServer.NSUser
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
 - uid: CRMScript.NetServer.NSUserAgent.IsNickNameUnique
   commentId: M:CRMScript.NetServer.NSUserAgent.IsNickNameUnique
@@ -895,7 +1535,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSUserAgent.IsNickNameUnique
   fullName: CRMScript.NetServer.NSUserAgent.IsNickNameUnique
   type: Method
-  summary: 
+  summary: "\n<strong>Returns:</strong>Bool\n"
+  remarks: 
+  syntax: 
+    content: Bool IsNickNameUnique(Integer associateId, String nickName)
+    parameters:
+    - id: associateId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: nickName
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.Bool
   example: 
 - uid: CRMScript.NetServer.NSUserAgent.IsPasswordValid
   commentId: M:CRMScript.NetServer.NSUserAgent.IsPasswordValid
@@ -907,7 +1559,25 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSUserAgent.IsPasswordValid
   fullName: CRMScript.NetServer.NSUserAgent.IsPasswordValid
   type: Method
-  summary: 
+  summary: "\n<strong>Returns:</strong>Bool\n"
+  remarks: "\n<h3>Enum: associateType</h3><ul><li>0 = Unknown</li><li>1 = InternalAssociate</li><li>2 = ResourceAssociate</li><li>3 = ExternalAssociate</li><li>4 = AnonymousAssociate</li></ul>\n"
+  syntax: 
+    content: Bool IsPasswordValid(Integer associateId, Integer type, Integer personId, String password)
+    parameters:
+    - id: associateId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: type
+      type: CRMScript.Global.Integer
+      description: 
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: password
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.Bool
   example: 
 - uid: CRMScript.NetServer.NSUserAgent.IsPasswordValidWithReason
   commentId: M:CRMScript.NetServer.NSUserAgent.IsPasswordValidWithReason
@@ -919,7 +1589,25 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSUserAgent.IsPasswordValidWithReason
   fullName: CRMScript.NetServer.NSUserAgent.IsPasswordValidWithReason
   type: Method
-  summary: 
+  summary: "\n<strong>Returns:</strong>NSUserValidationResult\n"
+  remarks: "\n<h3>Enum: associateType</h3><ul><li>0 = Unknown</li><li>1 = InternalAssociate</li><li>2 = ResourceAssociate</li><li>3 = ExternalAssociate</li><li>4 = AnonymousAssociate</li></ul>\n"
+  syntax: 
+    content: NSUserValidationResult IsPasswordValidWithReason(Integer associateId, Integer type, Integer personId, String password)
+    parameters:
+    - id: associateId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: type
+      type: CRMScript.Global.Integer
+      description: 
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: password
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSUserValidationResult
   example: 
 - uid: CRMScript.NetServer.NSUserAgent.IsUserNameValid
   commentId: M:CRMScript.NetServer.NSUserAgent.IsUserNameValid
@@ -931,7 +1619,28 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSUserAgent.IsUserNameValid
   fullName: CRMScript.NetServer.NSUserAgent.IsUserNameValid
   type: Method
-  summary: 
+  summary: "\n<strong>Returns:</strong>Bool\n"
+  remarks: "\n<h3>Enum: associateType</h3><ul><li>0 = Unknown</li><li>1 = InternalAssociate</li><li>2 = ResourceAssociate</li><li>3 = ExternalAssociate</li><li>4 = AnonymousAssociate</li></ul>\n"
+  syntax: 
+    content: Bool IsUserNameValid(Integer associateId, Integer type, Integer personId, String userName)
+    parameters:
+    - id: associateId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: type
+      type: CRMScript.Global.Integer
+      description: 
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: userName
+      type: CRMScript.Global.String
+      description: 
+    - id: username
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.Bool
   example: 
 - uid: CRMScript.NetServer.NSUserAgent.IsUserNameValidWithReason
   commentId: M:CRMScript.NetServer.NSUserAgent.IsUserNameValidWithReason
@@ -943,7 +1652,28 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSUserAgent.IsUserNameValidWithReason
   fullName: CRMScript.NetServer.NSUserAgent.IsUserNameValidWithReason
   type: Method
-  summary: 
+  summary: "\n<strong>Returns:</strong>NSUserValidationResult\n"
+  remarks: "\n<h3>Enum: associateType</h3><ul><li>0 = Unknown</li><li>1 = InternalAssociate</li><li>2 = ResourceAssociate</li><li>3 = ExternalAssociate</li><li>4 = AnonymousAssociate</li></ul>\n"
+  syntax: 
+    content: NSUserValidationResult IsUserNameValidWithReason(Integer associateId, Integer type, Integer personId, String userName)
+    parameters:
+    - id: associateId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: type
+      type: CRMScript.Global.Integer
+      description: 
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: userName
+      type: CRMScript.Global.String
+      description: 
+    - id: username
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSUserValidationResult
   example: 
 - uid: CRMScript.NetServer.NSUserAgent.MakeRetired
   commentId: M:CRMScript.NetServer.NSUserAgent.MakeRetired
@@ -956,6 +1686,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.MakeRetired
   type: Method
   summary: "\nRetiring a user means to remove all licenses, setting person.retired=1 and associate.deleted=1. Unretiering a user means setting  person.retired=0 and associate.deleted=0\n"
+  remarks: 
+  syntax: 
+    content: Void MakeRetired(Integer associateId, Bool retired)
+    parameters:
+    - id: associateId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: retired
+      type: CRMScript.Global.Bool
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSUserAgent.#ctor
   commentId: M:CRMScript.NetServer.NSUserAgent.#ctor
@@ -966,8 +1708,11 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   name: '#ctor'
   nameWithType: NSUserAgent.#ctor
   fullName: CRMScript.NetServer.NSUserAgent.#ctor
-  type: Method
+  type: Constructor
   summary: "\nUser administration.\n"
+  remarks: 
+  syntax: 
+    content: NSUserAgent
   example: 
   - "\n<pre><code>NSUserAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.RegisterWithAccessGateway
@@ -980,7 +1725,16 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSUserAgent.RegisterWithAccessGateway
   fullName: CRMScript.NetServer.NSUserAgent.RegisterWithAccessGateway
   type: Method
-  summary: "\nRegisters with access gateway if not already done, otherwise will attempt to update\n"
+  summary: "\nRegisters with access gateway if not already done, otherwise will attempt to update<p></p>\n<ul><li><strong>RedirectUri</strong>This is the registered redirect_uri for AccessGateway OIDC.</li></ul>\n"
+  remarks: 
+  syntax: 
+    content: NSAccessGatewayInfo RegisterWithAccessGateway(String redirectUri)
+    parameters:
+    - id: redirectUri
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAccessGatewayInfo
   example: 
 - uid: CRMScript.NetServer.NSUserAgent.RemoveLicenses
   commentId: M:CRMScript.NetServer.NSUserAgent.RemoveLicenses
@@ -993,6 +1747,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.RemoveLicenses
   type: Method
   summary: "\nRemove all user licenses.\n"
+  remarks: 
+  syntax: 
+    content: Void RemoveLicenses(Integer associateId)
+    parameters:
+    - id: associateId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSUserAgent.RemoveOwnerContact
   commentId: M:CRMScript.NetServer.NSUserAgent.RemoveOwnerContact
@@ -1005,6 +1768,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.RemoveOwnerContact
   type: Method
   summary: "\nRemove a contact from the ownercontactlink table\n"
+  remarks: 
+  syntax: 
+    content: Void RemoveOwnerContact(Integer contactId)
+    parameters:
+    - id: contactId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSUserAgent.RemoveUntrustedCredentials
   commentId: M:CRMScript.NetServer.NSUserAgent.RemoveUntrustedCredentials
@@ -1017,6 +1789,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.RemoveUntrustedCredentials
   type: Method
   summary: "\nRemove a credentials entry for authenticated user.\n"
+  remarks: 
+  syntax: 
+    content: Void RemoveUntrustedCredentials(String type, String publicValue)
+    parameters:
+    - id: type
+      type: CRMScript.Global.String
+      description: 
+    - id: publicValue
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSUserAgent.RemoveUntrustedCredentialsForAssociate
   commentId: M:CRMScript.NetServer.NSUserAgent.RemoveUntrustedCredentialsForAssociate
@@ -1029,6 +1813,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.RemoveUntrustedCredentialsForAssociate
   type: Method
   summary: "\nRemove a credentials entry for a specified user.\n"
+  remarks: 
+  syntax: 
+    content: Void RemoveUntrustedCredentialsForAssociate(Integer associateId, String type, String publicValue)
+    parameters:
+    - id: associateId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: type
+      type: CRMScript.Global.String
+      description: 
+    - id: publicValue
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSUserAgent.ResolveUserFromInfo
   commentId: M:CRMScript.NetServer.NSUserAgent.ResolveUserFromInfo
@@ -1041,6 +1840,30 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.ResolveUserFromInfo
   type: Method
   summary: "\nGet a user from the provided information. If the user or associated person does not exist, it will be created on demand.\n"
+  remarks: "\n<h3>Enum: associateType</h3><ul><li>0 = Unknown</li><li>1 = InternalAssociate</li><li>2 = ResourceAssociate</li><li>3 = ExternalAssociate</li><li>4 = AnonymousAssociate</li><li>5 = SystemAssociate</li></ul>\n"
+  syntax: 
+    content: NSResolvedUser ResolveUserFromInfo(Integer contactId, String personName, String[] phoneNumbers, String[] emails, Integer userType, NSCredential credential)
+    parameters:
+    - id: contactId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: personName
+      type: CRMScript.Global.String
+      description: 
+    - id: phoneNumbers
+      type: CRMScript.Global.String[]
+      description: 
+    - id: emails
+      type: CRMScript.Global.String[]
+      description: 
+    - id: userType
+      type: CRMScript.Global.Integer
+      description: 
+    - id: credential
+      type: CRMScript.NetServer.NSCredential
+      description: 
+    return:
+      type: CRMScript.NetServer.NSResolvedUser
   example: 
   - "\n<pre><code>NSUserAgent agent;\nInteger contactId;\nString personName;\nString[] phoneNumbers;\nString[] emails;\nInteger userType;\nNSCredential credential;\nNSResolvedUser res = agent.ResolveUserFromInfo(contactId, personName, phoneNumbers, emails, userType, credential);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.SaveCredential
@@ -1054,6 +1877,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.SaveCredential
   type: Method
   summary: "\nSave (adds/replaces) current credential of the same type for the user.\n"
+  remarks: 
+  syntax: 
+    content: Bool SaveCredential(Integer userId, NSCredential credential)
+    parameters:
+    - id: userId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: credential
+      type: CRMScript.NetServer.NSCredential
+      description: 
+    return:
+      type: CRMScript.Global.Bool
   example: 
   - "\n<pre><code>NSUserAgent agent;\nInteger userId;\nNSCredential credential;\nBool res = agent.SaveCredential(userId, credential);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.SaveExternalTokens
@@ -1067,6 +1902,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.SaveExternalTokens
   type: Method
   summary: "\nSaves the external tokens to the DB and returns a key that can be used to retrieve them\n"
+  remarks: 
+  syntax: 
+    content: String SaveExternalTokens(NSTokenManagementInfo tokenManagementInfo)
+    parameters:
+    - id: tokenManagementInfo
+      type: CRMScript.NetServer.NSTokenManagementInfo
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSUserAgent agent;\nNSTokenManagementInfo tokenManagementInfo;\nString res = agent.SaveExternalTokens(tokenManagementInfo);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.SaveRoleEntity
@@ -1080,6 +1924,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.SaveRoleEntity
   type: Method
   summary: "\nUpdates the existing NSRoleEntity or creates a new NSRoleEntity if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>roleEntity</strong>The NSRoleEntity to save.</li></ul><strong>Returns:</strong>NSRoleEntity<p></p>\n<pre><code>NSUser  agent;\nNSRoleEntity thing = agent.CreateDefaultRoleEntity();\nthing = agent.SaveRoleEntity(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSRoleEntity SaveRoleEntity(NSRoleEntity roleEntity);
+    parameters:
+    - id: roleEntity;
+      type: CRMScript.NetServer.NSRoleEntity
+      description: 
+    return:
+      type: CRMScript.NetServer.NSRoleEntity
   example: 
   - "\n<pre><code>NSUser  agent;\nNSRoleEntity thing = agent.CreateDefaultRoleEntity();\nthing = agent.SaveRoleEntity(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.SaveServiceAuth
@@ -1093,6 +1946,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.SaveServiceAuth
   type: Method
   summary: "\nUpdates the existing NSServiceAuth or creates a new NSServiceAuth if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>serviceAuth</strong>The NSServiceAuth to save.</li></ul><strong>Returns:</strong>NSServiceAuth<p></p>\n<pre><code>NSUser  agent;\nNSServiceAuth thing = agent.CreateDefaultServiceAuth();\nthing = agent.SaveServiceAuth(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSServiceAuth SaveServiceAuth(NSServiceAuth serviceAuth);
+    parameters:
+    - id: serviceAuth;
+      type: CRMScript.NetServer.NSServiceAuth
+      description: 
+    return:
+      type: CRMScript.NetServer.NSServiceAuth
   example: 
   - "\n<pre><code>NSUser  agent;\nNSServiceAuth thing = agent.CreateDefaultServiceAuth();\nthing = agent.SaveServiceAuth(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.SaveUntrustedCredentials
@@ -1106,6 +1968,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.SaveUntrustedCredentials
   type: Method
   summary: "\nSave credentials for authenticated user.\n"
+  remarks: 
+  syntax: 
+    content: Void SaveUntrustedCredentials(String type, NSUntrustedCredentials credentials)
+    parameters:
+    - id: type
+      type: CRMScript.Global.String
+      description: 
+    - id: credentials
+      type: CRMScript.NetServer.NSUntrustedCredentials
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSUserAgent.SaveUntrustedCredentialsForAssociate
   commentId: M:CRMScript.NetServer.NSUserAgent.SaveUntrustedCredentialsForAssociate
@@ -1118,6 +1992,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.SaveUntrustedCredentialsForAssociate
   type: Method
   summary: "\nSave credentials for a specified user.\n"
+  remarks: 
+  syntax: 
+    content: Void SaveUntrustedCredentialsForAssociate(Integer associateId, String type, NSUntrustedCredentials credentials)
+    parameters:
+    - id: associateId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: type
+      type: CRMScript.Global.String
+      description: 
+    - id: credentials
+      type: CRMScript.NetServer.NSUntrustedCredentials
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSUserAgent.SaveUser
   commentId: M:CRMScript.NetServer.NSUserAgent.SaveUser
@@ -1130,6 +2019,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.SaveUser
   type: Method
   summary: "\nUpdates the existing NSUser or creates a new NSUser if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>user</strong>The NSUser to save.</li></ul><strong>Returns:</strong>NSUser<p></p>\n<pre><code>NSUser  agent;\nNSUser thing = agent.CreateDefaultUser();\nthing = agent.SaveUser(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSUser SaveUser(NSUser user);
+    parameters:
+    - id: user;
+      type: CRMScript.NetServer.NSUser
+      description: 
+    return:
+      type: CRMScript.NetServer.NSUser
   example: 
   - "\n<pre><code>NSUser  agent;\nNSUser thing = agent.CreateDefaultUser();\nthing = agent.SaveUser(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.SaveUserFromName
@@ -1143,6 +2041,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.SaveUserFromName
   type: Method
   summary: "\nSave a user, with lookup based on the user name.\n"
+  remarks: 
+  syntax: 
+    content: NSUser SaveUserFromName(String userName, NSUser user)
+    parameters:
+    - id: userName
+      type: CRMScript.Global.String
+      description: 
+    - id: user
+      type: CRMScript.NetServer.NSUser
+      description: 
+    return:
+      type: CRMScript.NetServer.NSUser
   example: 
   - "\n<pre><code>NSUserAgent agent;\nString userName;\nNSUser user;\nNSUser res = agent.SaveUserFromName(userName, user);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.SaveUserGroup
@@ -1156,6 +2066,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.SaveUserGroup
   type: Method
   summary: "\nSave a user group.  Set UserGroup.Deleted to mark a user group as deleted and invisible in the user interface.\n"
+  remarks: 
+  syntax: 
+    content: NSUserGroup SaveUserGroup(NSUserGroup userGroup)
+    parameters:
+    - id: userGroup
+      type: CRMScript.NetServer.NSUserGroup
+      description: 
+    return:
+      type: CRMScript.NetServer.NSUserGroup
   example: 
   - "\n<pre><code>NSUserAgent agent;\nNSUserGroup userGroup;\nNSUserGroup res = agent.SaveUserGroup(userGroup);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.SetDataRight
@@ -1169,6 +2088,24 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.SetDataRight
   type: Method
   summary: "\nSet one specific data right at the given position. An exception will be thrown if non existing position is specified.\n"
+  remarks: "\n<ul><li>Enum: 0 = MyOwn</li><li>Enum: 1 = PrimaryGroup</li><li>Enum: 2 = OtherGroups</li><li>Enum: 3 = OtherAssociates</li><li>Enum: 4 = ExternalUser</li><li>Enum: 5 = Anonymous</li><li>Enum: 6 = MyCompany</li><li>Enum: 7 = SameProject</li></ul>\n"
+  syntax: 
+    content: Void SetDataRight(Integer roleId, String tableName, Integer relationToOwner, String dataRightValue)
+    parameters:
+    - id: roleId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: tableName
+      type: CRMScript.Global.String
+      description: 
+    - id: relationToOwner
+      type: CRMScript.Global.Integer
+      description: 
+    - id: dataRightValue
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSUserAgent.SetExternalUserInfo
   commentId: M:CRMScript.NetServer.NSUserAgent.SetExternalUserInfo
@@ -1181,6 +2118,30 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.SetExternalUserInfo
   type: Method
   summary: "\nModifies an external user. Changes external users information according to the flags set in  externalUserInfoModification.\n"
+  remarks: "\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = UserName</li><li>Enum: 2 = Password</li><li>Enum: 4 = Role</li><li>Enum: 8 = Active</li></ul>\n"
+  syntax: 
+    content: Void SetExternalUserInfo(Integer associateId, String userName, String password, Bool isActive, Integer roleId, Integer externalUserInfoModification)
+    parameters:
+    - id: associateId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: userName
+      type: CRMScript.Global.String
+      description: 
+    - id: password
+      type: CRMScript.Global.String
+      description: 
+    - id: isActive
+      type: CRMScript.Global.Bool
+      description: 
+    - id: roleId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: externalUserInfoModification
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSUserAgent.SetFunctionalRights
   commentId: M:CRMScript.NetServer.NSUserAgent.SetFunctionalRights
@@ -1193,6 +2154,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.SetFunctionalRights
   type: Method
   summary: "\nSet all functional rights for the given role. Functional rights not specified here will be removed from the role.\n"
+  remarks: 
+  syntax: 
+    content: Void SetFunctionalRights(Integer roleId, Integer[] functionalRightIds)
+    parameters:
+    - id: roleId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: functionalRightIds
+      type: CRMScript.Global.Integer[]
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSUserAgent.SetGeneratedPassword
   commentId: M:CRMScript.NetServer.NSUserAgent.SetGeneratedPassword
@@ -1204,7 +2177,16 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSUserAgent.SetGeneratedPassword
   fullName: CRMScript.NetServer.NSUserAgent.SetGeneratedPassword
   type: Method
-  summary: 
+  summary: "\n<strong>Returns:</strong>String\n"
+  remarks: 
+  syntax: 
+    content: String SetGeneratedPassword(Integer associateId)
+    parameters:
+    - id: associateId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
 - uid: CRMScript.NetServer.NSUserAgent.SetGeneratedPasswordFromName
   commentId: M:CRMScript.NetServer.NSUserAgent.SetGeneratedPasswordFromName
@@ -1216,7 +2198,16 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSUserAgent.SetGeneratedPasswordFromName
   fullName: CRMScript.NetServer.NSUserAgent.SetGeneratedPasswordFromName
   type: Method
-  summary: 
+  summary: "\n<strong>Returns:</strong>String\n"
+  remarks: 
+  syntax: 
+    content: String SetGeneratedPasswordFromName(String associateName)
+    parameters:
+    - id: associateName
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
 - uid: CRMScript.NetServer.NSUserAgent.SetPassword
   commentId: M:CRMScript.NetServer.NSUserAgent.SetPassword
@@ -1229,6 +2220,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.SetPassword
   type: Method
   summary: "\nChange password for a user.\n"
+  remarks: 
+  syntax: 
+    content: Bool SetPassword(Integer associateId, String password)
+    parameters:
+    - id: associateId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: password
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.Bool
   example: 
   - "\n<pre><code>NSUserAgent agent;\nInteger associateId;\nString password;\nBool res = agent.SetPassword(associateId, password);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.SetPasswordFromName
@@ -1242,6 +2245,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.SetPasswordFromName
   type: Method
   summary: "\nChange password for a user.\n"
+  remarks: 
+  syntax: 
+    content: Bool SetPasswordFromName(String associateName, String password)
+    parameters:
+    - id: associateName
+      type: CRMScript.Global.String
+      description: 
+    - id: password
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.Bool
   example: 
   - "\n<pre><code>NSUserAgent agent;\nString associateName;\nString password;\nBool res = agent.SetPasswordFromName(associateName, password);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.ValidateUser
@@ -1255,6 +2270,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.ValidateUser
   type: Method
   summary: "\nCheck that entity is ready for saving, return error messages by field.\n"
+  remarks: 
+  syntax: 
+    content: StringDictionary ValidateUser(NSUser user)
+    parameters:
+    - id: user
+      type: CRMScript.NetServer.NSUser
+      description: 
+    return:
+      type: CRMScript.Global.StringDictionary
   example: 
   - "\n<pre><code>NSUserAgent agent;\nNSUser user;\nStringDictionary res = agent.ValidateUser(user);</code></pre>\n"
 references:
@@ -1264,3 +2288,311 @@ references:
   name: NSUserAgent
   nameWithType: NSUserAgent
   fullName: CRMScript.NetServer.NSUserAgent
+- uid: CRMScript.Global.Integer
+  commentId: T:CRMScript.Global.Integer
+  isExternal: true
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Global.Integer
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void
+- uid: CRMScript.Global.Bool
+  commentId: T:CRMScript.Global.Bool
+  isExternal: true
+  name: Bool
+  nameWithType: Bool
+  fullName: CRMScript.Global.Bool
+- uid: CRMScript.Global.String
+  commentId: T:CRMScript.Global.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: CRMScript.Global.String
+- uid: CRMScript.NetServer.NSUser
+  commentId: T:CRMScript.NetServer.NSUser
+  isExternal: true
+  name: NSUser
+  nameWithType: NSUser
+  fullName: CRMScript.NetServer.NSUser
+- uid: CRMScript.NetServer.NSRoleEntity
+  commentId: T:CRMScript.NetServer.NSRoleEntity
+  isExternal: true
+  name: NSRoleEntity
+  nameWithType: NSRoleEntity
+  fullName: CRMScript.NetServer.NSRoleEntity
+- uid: CRMScript.NetServer.NSServiceAuth
+  commentId: T:CRMScript.NetServer.NSServiceAuth
+  isExternal: true
+  name: NSServiceAuth
+  nameWithType: NSServiceAuth
+  fullName: CRMScript.NetServer.NSServiceAuth
+- uid: CRMScript.NetServer.NSUntrustedCredentials
+  commentId: T:CRMScript.NetServer.NSUntrustedCredentials
+  isExternal: true
+  name: NSUntrustedCredentials
+  nameWithType: NSUntrustedCredentials
+  fullName: CRMScript.NetServer.NSUntrustedCredentials
+- uid: CRMScript.NetServer.NSUserGroup
+  commentId: T:CRMScript.NetServer.NSUserGroup
+  isExternal: true
+  name: NSUserGroup
+  nameWithType: NSUserGroup
+  fullName: CRMScript.NetServer.NSUserGroup
+- uid: CRMScript.NetServer.NSTokenManagementInfo
+  commentId: T:CRMScript.NetServer.NSTokenManagementInfo
+  isExternal: true
+  name: NSTokenManagementInfo
+  nameWithType: NSTokenManagementInfo
+  fullName: CRMScript.NetServer.NSTokenManagementInfo
+- uid: CRMScript.NetServer.NSCredentialsGroup[]
+  isExternal: true
+  name: NSCredentialsGroup[]
+  nameWithType: NSCredentialsGroup[]
+  fullName: CRMScript.NetServer.NSCredentialsGroup[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSCredentialsGroup
+    isExternal: true
+    name: NSCredentialsGroup
+    nameWithType: NSCredentialsGroup
+    fullName: CRMScript.NetServer.NSCredentialsGroup
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSCredentialsGroup
+  commentId: T:CRMScript.NetServer.NSCredentialsGroup
+  isExternal: true
+  name: NSCredentialsGroup
+  nameWithType: NSCredentialsGroup
+  fullName: CRMScript.NetServer.NSCredentialsGroup
+- uid: CRMScript.NetServer.NSCredentialsGroupUsers
+  commentId: T:CRMScript.NetServer.NSCredentialsGroupUsers
+  isExternal: true
+  name: NSCredentialsGroupUsers
+  nameWithType: NSCredentialsGroupUsers
+  fullName: CRMScript.NetServer.NSCredentialsGroupUsers
+- uid: CRMScript.NetServer.NSMDOListItem[]
+  isExternal: true
+  name: NSMDOListItem[]
+  nameWithType: NSMDOListItem[]
+  fullName: CRMScript.NetServer.NSMDOListItem[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSMDOListItem
+    isExternal: true
+    name: NSMDOListItem
+    nameWithType: NSMDOListItem
+    fullName: CRMScript.NetServer.NSMDOListItem
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSMDOListItem
+  commentId: T:CRMScript.NetServer.NSMDOListItem
+  isExternal: true
+  name: NSMDOListItem
+  nameWithType: NSMDOListItem
+  fullName: CRMScript.NetServer.NSMDOListItem
+- uid: CRMScript.Global.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: CRMScript.Global.String[]
+  spec.crmscript:
+  - uid: CRMScript.Global.String
+    isExternal: true
+    name: String
+    nameWithType: String
+    fullName: CRMScript.Global.String
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.Global.String
+  commentId: T:CRMScript.Global.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: CRMScript.Global.String
+- uid: CRMScript.Global.Integer[]
+  isExternal: true
+  name: Integer[]
+  nameWithType: Integer[]
+  fullName: CRMScript.Global.Integer[]
+  spec.crmscript:
+  - uid: CRMScript.Global.Integer
+    isExternal: true
+    name: Integer
+    nameWithType: Integer
+    fullName: CRMScript.Global.Integer
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.Global.Integer
+  commentId: T:CRMScript.Global.Integer
+  isExternal: true
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Global.Integer
+- uid: CRMScript.NetServer.NSAccessGatewayInfo
+  commentId: T:CRMScript.NetServer.NSAccessGatewayInfo
+  isExternal: true
+  name: NSAccessGatewayInfo
+  nameWithType: NSAccessGatewayInfo
+  fullName: CRMScript.NetServer.NSAccessGatewayInfo
+- uid: CRMScript.NetServer.NSSelectableMDOListItem[]
+  isExternal: true
+  name: NSSelectableMDOListItem[]
+  nameWithType: NSSelectableMDOListItem[]
+  fullName: CRMScript.NetServer.NSSelectableMDOListItem[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSSelectableMDOListItem
+    isExternal: true
+    name: NSSelectableMDOListItem
+    nameWithType: NSSelectableMDOListItem
+    fullName: CRMScript.NetServer.NSSelectableMDOListItem
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSSelectableMDOListItem
+  commentId: T:CRMScript.NetServer.NSSelectableMDOListItem
+  isExternal: true
+  name: NSSelectableMDOListItem
+  nameWithType: NSSelectableMDOListItem
+  fullName: CRMScript.NetServer.NSSelectableMDOListItem
+- uid: CRMScript.NetServer.NSUserGroup[]
+  isExternal: true
+  name: NSUserGroup[]
+  nameWithType: NSUserGroup[]
+  fullName: CRMScript.NetServer.NSUserGroup[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSUserGroup
+    isExternal: true
+    name: NSUserGroup
+    nameWithType: NSUserGroup
+    fullName: CRMScript.NetServer.NSUserGroup
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSUserGroup
+  commentId: T:CRMScript.NetServer.NSUserGroup
+  isExternal: true
+  name: NSUserGroup
+  nameWithType: NSUserGroup
+  fullName: CRMScript.NetServer.NSUserGroup
+- uid: CRMScript.NetServer.NSCredentialType[]
+  isExternal: true
+  name: NSCredentialType[]
+  nameWithType: NSCredentialType[]
+  fullName: CRMScript.NetServer.NSCredentialType[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSCredentialType
+    isExternal: true
+    name: NSCredentialType
+    nameWithType: NSCredentialType
+    fullName: CRMScript.NetServer.NSCredentialType
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSCredentialType
+  commentId: T:CRMScript.NetServer.NSCredentialType
+  isExternal: true
+  name: NSCredentialType
+  nameWithType: NSCredentialType
+  fullName: CRMScript.NetServer.NSCredentialType
+- uid: CRMScript.Global.StringDictionary
+  commentId: T:CRMScript.Global.StringDictionary
+  isExternal: true
+  name: StringDictionary
+  nameWithType: StringDictionary
+  fullName: CRMScript.Global.StringDictionary
+- uid: CRMScript.NetServer.NSRole
+  commentId: T:CRMScript.NetServer.NSRole
+  isExternal: true
+  name: NSRole
+  nameWithType: NSRole
+  fullName: CRMScript.NetServer.NSRole
+- uid: CRMScript.NetServer.NSUntrustedCredentials[]
+  isExternal: true
+  name: NSUntrustedCredentials[]
+  nameWithType: NSUntrustedCredentials[]
+  fullName: CRMScript.NetServer.NSUntrustedCredentials[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSUntrustedCredentials
+    isExternal: true
+    name: NSUntrustedCredentials
+    nameWithType: NSUntrustedCredentials
+    fullName: CRMScript.NetServer.NSUntrustedCredentials
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSUntrustedCredentials
+  commentId: T:CRMScript.NetServer.NSUntrustedCredentials
+  isExternal: true
+  name: NSUntrustedCredentials
+  nameWithType: NSUntrustedCredentials
+  fullName: CRMScript.NetServer.NSUntrustedCredentials
+- uid: CRMScript.NetServer.NSUser[]
+  isExternal: true
+  name: NSUser[]
+  nameWithType: NSUser[]
+  fullName: CRMScript.NetServer.NSUser[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSUser
+    isExternal: true
+    name: NSUser
+    nameWithType: NSUser
+    fullName: CRMScript.NetServer.NSUser
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSUser
+  commentId: T:CRMScript.NetServer.NSUser
+  isExternal: true
+  name: NSUser
+  nameWithType: NSUser
+  fullName: CRMScript.NetServer.NSUser
+- uid: CRMScript.NetServer.NSUserInfo
+  commentId: T:CRMScript.NetServer.NSUserInfo
+  isExternal: true
+  name: NSUserInfo
+  nameWithType: NSUserInfo
+  fullName: CRMScript.NetServer.NSUserInfo
+- uid: CRMScript.NetServer.NSUserInfo[]
+  isExternal: true
+  name: NSUserInfo[]
+  nameWithType: NSUserInfo[]
+  fullName: CRMScript.NetServer.NSUserInfo[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSUserInfo
+    isExternal: true
+    name: NSUserInfo
+    nameWithType: NSUserInfo
+    fullName: CRMScript.NetServer.NSUserInfo
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSUserInfo
+  commentId: T:CRMScript.NetServer.NSUserInfo
+  isExternal: true
+  name: NSUserInfo
+  nameWithType: NSUserInfo
+  fullName: CRMScript.NetServer.NSUserInfo
+- uid: CRMScript.NetServer.NSUserValidationResult
+  commentId: T:CRMScript.NetServer.NSUserValidationResult
+  isExternal: true
+  name: NSUserValidationResult
+  nameWithType: NSUserValidationResult
+  fullName: CRMScript.NetServer.NSUserValidationResult
+- uid: CRMScript.NetServer.NSCredential
+  commentId: T:CRMScript.NetServer.NSCredential
+  isExternal: true
+  name: NSCredential
+  nameWithType: NSCredential
+  fullName: CRMScript.NetServer.NSCredential
+- uid: CRMScript.NetServer.NSResolvedUser
+  commentId: T:CRMScript.NetServer.NSResolvedUser
+  isExternal: true
+  name: NSResolvedUser
+  nameWithType: NSResolvedUser
+  fullName: CRMScript.NetServer.NSResolvedUser

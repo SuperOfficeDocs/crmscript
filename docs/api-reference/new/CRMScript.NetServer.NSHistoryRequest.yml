@@ -31,6 +31,12 @@ items:
   fullName: CRMScript.NetServer.NSHistoryRequest.GetEntityName
   type: Method
   summary: "\nName of entity to get history for<p></p>\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSHistoryRequest thing;\nString entityName  = thing.GetEntityName();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: String GetEntityName()
+    parameters:
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSHistoryRequest thing;\nString entityName  = thing.GetEntityName();</code></pre>\n"
 - uid: CRMScript.NetServer.NSHistoryRequest.GetEntityOrParentId
@@ -44,6 +50,12 @@ items:
   fullName: CRMScript.NetServer.NSHistoryRequest.GetEntityOrParentId
   type: Method
   summary: "\nID of entity to get history for, or parent entity id if requesting insert rights for an entity that has a parent<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<pre><code>NSHistoryRequest thing;\nInteger entityOrParentId  = thing.GetEntityOrParentId();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: Integer GetEntityOrParentId()
+    parameters:
+    return:
+      type: CRMScript.Global.Integer
   example: 
   - "\n<pre><code>NSHistoryRequest thing;\nInteger entityOrParentId  = thing.GetEntityOrParentId();</code></pre>\n"
 - uid: CRMScript.NetServer.NSHistoryRequest.GetRequestForNewRecord
@@ -57,6 +69,12 @@ items:
   fullName: CRMScript.NetServer.NSHistoryRequest.GetRequestForNewRecord
   type: Method
   summary: "\nAre we requesting insert rights? If true, then EntityorParentId is taken to mean parent id<p></p>\n<strong>Returns:</strong>Bool<p></p>\n<pre><code>NSHistoryRequest thing;\nBool requestForNewRecord  = thing.GetRequestForNewRecord();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: Bool GetRequestForNewRecord()
+    parameters:
+    return:
+      type: CRMScript.Global.Bool
   example: 
   - "\n<pre><code>NSHistoryRequest thing;\nBool requestForNewRecord  = thing.GetRequestForNewRecord();</code></pre>\n"
 - uid: CRMScript.NetServer.NSHistoryRequest.#ctor
@@ -68,8 +86,11 @@ items:
   name: '#ctor'
   nameWithType: NSHistoryRequest.#ctor
   fullName: CRMScript.NetServer.NSHistoryRequest.#ctor
-  type: Method
+  type: Constructor
   summary: 
+  remarks: 
+  syntax: 
+    content: NSHistoryRequest
   example: 
 - uid: CRMScript.NetServer.NSHistoryRequest.SetEntityName
   commentId: M:CRMScript.NetServer.NSHistoryRequest.SetEntityName
@@ -81,7 +102,14 @@ items:
   nameWithType: NSHistoryRequest.SetEntityName
   fullName: CRMScript.NetServer.NSHistoryRequest.SetEntityName
   type: Method
-  summary: "\nName of entity to get history for<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>entityName</strong>String</li></ul><pre><code>NSHistoryRequest thing;\nString entityName;\nthing.SetEntityName(entityName);</code></pre>\n"
+  summary: "\nName of entity to get history for\n"
+  remarks: 
+  syntax: 
+    content: SetEntityName(String entityName)
+    parameters:
+    - id: entityName
+      type: CRMScript.Global.String
+      description: 
   example: 
   - "\n<pre><code>NSHistoryRequest thing;\nString entityName;\nthing.SetEntityName(entityName);</code></pre>\n"
 - uid: CRMScript.NetServer.NSHistoryRequest.SetEntityOrParentId
@@ -94,7 +122,14 @@ items:
   nameWithType: NSHistoryRequest.SetEntityOrParentId
   fullName: CRMScript.NetServer.NSHistoryRequest.SetEntityOrParentId
   type: Method
-  summary: "\nID of entity to get history for, or parent entity id if requesting insert rights for an entity that has a parent<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>entityOrParentId</strong>Integer</li></ul><pre><code>NSHistoryRequest thing;\nInteger entityOrParentId;\nthing.SetEntityOrParentId(entityOrParentId);</code></pre>\n"
+  summary: "\nID of entity to get history for, or parent entity id if requesting insert rights for an entity that has a parent\n"
+  remarks: 
+  syntax: 
+    content: SetEntityOrParentId(Integer entityOrParentId)
+    parameters:
+    - id: entityOrParentId
+      type: CRMScript.Global.Integer
+      description: 
   example: 
   - "\n<pre><code>NSHistoryRequest thing;\nInteger entityOrParentId;\nthing.SetEntityOrParentId(entityOrParentId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSHistoryRequest.SetRequestForNewRecord
@@ -107,7 +142,14 @@ items:
   nameWithType: NSHistoryRequest.SetRequestForNewRecord
   fullName: CRMScript.NetServer.NSHistoryRequest.SetRequestForNewRecord
   type: Method
-  summary: "\nAre we requesting insert rights? If true, then EntityorParentId is taken to mean parent id<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>requestForNewRecord</strong>Bool</li></ul><pre><code>NSHistoryRequest thing;\nBool requestForNewRecord;\nthing.SetRequestForNewRecord(requestForNewRecord);</code></pre>\n"
+  summary: "\nAre we requesting insert rights? If true, then EntityorParentId is taken to mean parent id\n"
+  remarks: 
+  syntax: 
+    content: SetRequestForNewRecord(Bool requestForNewRecord)
+    parameters:
+    - id: requestForNewRecord
+      type: CRMScript.Global.Bool
+      description: 
   example: 
   - "\n<pre><code>NSHistoryRequest thing;\nBool requestForNewRecord;\nthing.SetRequestForNewRecord(requestForNewRecord);</code></pre>\n"
 references:
@@ -117,3 +159,21 @@ references:
   name: NSHistoryRequest
   nameWithType: NSHistoryRequest
   fullName: CRMScript.NetServer.NSHistoryRequest
+- uid: CRMScript.Global.String
+  commentId: T:CRMScript.Global.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: CRMScript.Global.String
+- uid: CRMScript.Global.Integer
+  commentId: T:CRMScript.Global.Integer
+  isExternal: true
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Global.Integer
+- uid: CRMScript.Global.Bool
+  commentId: T:CRMScript.Global.Bool
+  isExternal: true
+  name: Bool
+  nameWithType: Bool
+  fullName: CRMScript.Global.Bool

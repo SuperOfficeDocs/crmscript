@@ -31,6 +31,12 @@ items:
   fullName: CRMScript.NetServer.NSCheckoutInfo.GetAssociateId
   type: Method
   summary: "\nId of associate who has currently checked out the document; 0 if it is not checked out,  or is checked out by someone who is not a SuperOffice user<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<pre><code>NSCheckoutInfo thing;\nInteger associateId  = thing.GetAssociateId();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: Integer GetAssociateId()
+    parameters:
+    return:
+      type: CRMScript.Global.Integer
   example: 
   - "\n<pre><code>NSCheckoutInfo thing;\nInteger associateId  = thing.GetAssociateId();</code></pre>\n"
 - uid: CRMScript.NetServer.NSCheckoutInfo.GetName
@@ -44,6 +50,12 @@ items:
   fullName: CRMScript.NetServer.NSCheckoutInfo.GetName
   type: Method
   summary: "\nName of person who has currently checked out the document; blank if it is not checked out. This property may also be blank if the AssociateId is nonzero; NetServer will retrieve the associates' name as needed.<p></p>\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSCheckoutInfo thing;\nString name  = thing.GetName();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: String GetName()
+    parameters:
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSCheckoutInfo thing;\nString name  = thing.GetName();</code></pre>\n"
 - uid: CRMScript.NetServer.NSCheckoutInfo.GetState
@@ -56,7 +68,13 @@ items:
   nameWithType: NSCheckoutInfo.GetState
   fullName: CRMScript.NetServer.NSCheckoutInfo.GetState
   type: Method
-  summary: "\nCheckout state<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<ul><li>Enum: 0 = NotCheckedOut</li><li>Enum: 1 = CheckedOutOwn</li><li>Enum: 2 = CheckedOutOther</li><li>Enum: 3 = LockingNotSupported</li></ul><pre><code>NSCheckoutInfo thing;\nInteger state  = thing.GetState();</code></pre>\n"
+  summary: "\nCheckout state<p></p>\n<strong>Returns:</strong>Integer\n"
+  remarks: 
+  syntax: 
+    content: Integer GetState()
+    parameters:
+    return:
+      type: CRMScript.Global.Integer
   example: 
   - "\n<pre><code>NSCheckoutInfo thing;\nInteger state  = thing.GetState();</code></pre>\n"
 - uid: CRMScript.NetServer.NSCheckoutInfo.#ctor
@@ -68,8 +86,11 @@ items:
   name: '#ctor'
   nameWithType: NSCheckoutInfo.#ctor
   fullName: CRMScript.NetServer.NSCheckoutInfo.#ctor
-  type: Method
+  type: Constructor
   summary: 
+  remarks: 
+  syntax: 
+    content: NSCheckoutInfo
   example: 
 - uid: CRMScript.NetServer.NSCheckoutInfo.SetAssociateId
   commentId: M:CRMScript.NetServer.NSCheckoutInfo.SetAssociateId
@@ -81,7 +102,14 @@ items:
   nameWithType: NSCheckoutInfo.SetAssociateId
   fullName: CRMScript.NetServer.NSCheckoutInfo.SetAssociateId
   type: Method
-  summary: "\nId of associate who has currently checked out the document; 0 if it is not checked out,  or is checked out by someone who is not a SuperOffice user<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>associateId</strong>Integer</li></ul><pre><code>NSCheckoutInfo thing;\nInteger associateId;\nthing.SetAssociateId(associateId);</code></pre>\n"
+  summary: "\nId of associate who has currently checked out the document; 0 if it is not checked out,  or is checked out by someone who is not a SuperOffice user\n"
+  remarks: 
+  syntax: 
+    content: SetAssociateId(Integer associateId)
+    parameters:
+    - id: associateId
+      type: CRMScript.Global.Integer
+      description: 
   example: 
   - "\n<pre><code>NSCheckoutInfo thing;\nInteger associateId;\nthing.SetAssociateId(associateId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCheckoutInfo.SetName
@@ -94,7 +122,14 @@ items:
   nameWithType: NSCheckoutInfo.SetName
   fullName: CRMScript.NetServer.NSCheckoutInfo.SetName
   type: Method
-  summary: "\nName of person who has currently checked out the document; blank if it is not checked out. This property may also be blank if the AssociateId is nonzero; NetServer will retrieve the associates' name as needed.<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>name</strong>String</li></ul><pre><code>NSCheckoutInfo thing;\nString name;\nthing.SetName(name);</code></pre>\n"
+  summary: "\nName of person who has currently checked out the document; blank if it is not checked out. This property may also be blank if the AssociateId is nonzero; NetServer will retrieve the associates' name as needed.\n"
+  remarks: 
+  syntax: 
+    content: SetName(String name)
+    parameters:
+    - id: name
+      type: CRMScript.Global.String
+      description: 
   example: 
   - "\n<pre><code>NSCheckoutInfo thing;\nString name;\nthing.SetName(name);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCheckoutInfo.SetState
@@ -107,7 +142,14 @@ items:
   nameWithType: NSCheckoutInfo.SetState
   fullName: CRMScript.NetServer.NSCheckoutInfo.SetState
   type: Method
-  summary: "\nCheckout state<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>state</strong>Integer</li><li>Enum: 0 = NotCheckedOut</li><li>Enum: 1 = CheckedOutOwn</li><li>Enum: 2 = CheckedOutOther</li><li>Enum: 3 = LockingNotSupported</li></ul><pre><code>NSCheckoutInfo thing;\nInteger state;\nthing.SetState(state);</code></pre>\n"
+  summary: "\nCheckout state\n"
+  remarks: "\n<h3>Enum: Checkout state</h3><ul><li>0 = NotCheckedOut</li><li>1 = CheckedOutOwn</li><li>2 = CheckedOutOther</li><li>3 = LockingNotSupported</li></ul>\n"
+  syntax: 
+    content: SetState(Integer state)
+    parameters:
+    - id: state
+      type: CRMScript.Global.Integer
+      description: 
   example: 
   - "\n<pre><code>NSCheckoutInfo thing;\nInteger state;\nthing.SetState(state);</code></pre>\n"
 references:
@@ -117,3 +159,15 @@ references:
   name: NSCheckoutInfo
   nameWithType: NSCheckoutInfo
   fullName: CRMScript.NetServer.NSCheckoutInfo
+- uid: CRMScript.Global.Integer
+  commentId: T:CRMScript.Global.Integer
+  isExternal: true
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Global.Integer
+- uid: CRMScript.Global.String
+  commentId: T:CRMScript.Global.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: CRMScript.Global.String

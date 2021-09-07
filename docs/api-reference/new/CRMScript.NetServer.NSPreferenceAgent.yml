@@ -64,6 +64,12 @@ items:
   type: Method
   summary: "\nSet default values into a new NSPreference.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSPreference<p></p>\n<pre><code>NSPreferenceAgent agent;\nNSPreference thing = agent.CreateDefaultPreference();\nthing = agent.SavePreference(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSPreference CreateDefaultPreference()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSPreference
   example: 
   - "\n<pre><code>NSPreferenceAgent agent;\nNSPreference thing = agent.CreateDefaultPreference();\nthing = agent.SavePreference(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreferenceAgent.CreateDefaultPreferenceDescription
@@ -78,6 +84,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   type: Method
   summary: "\nSet default values into a new NSPreferenceDescription.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSPreferenceDescription<p></p>\n<pre><code>NSPreferenceAgent agent;\nNSPreferenceDescription thing = agent.CreateDefaultPreferenceDescription();\nthing = agent.SavePreferenceDescription(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSPreferenceDescription CreateDefaultPreferenceDescription()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSPreferenceDescription
   example: 
   - "\n<pre><code>NSPreferenceAgent agent;\nNSPreferenceDescription thing = agent.CreateDefaultPreferenceDescription();\nthing = agent.SavePreferenceDescription(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreferenceAgent.CreateDefaultPreferenceDescriptionLine
@@ -92,6 +104,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   type: Method
   summary: "\nSet default values into a new NSPreferenceDescriptionLine.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSPreferenceDescriptionLine<p></p>\n<pre><code>NSPreferenceAgent agent;\nNSPreferenceDescriptionLine thing = agent.CreateDefaultPreferenceDescriptionLine();\nthing = agent.SavePreferenceDescriptionLine(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSPreferenceDescriptionLine CreateDefaultPreferenceDescriptionLine()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSPreferenceDescriptionLine
   example: 
   - "\n<pre><code>NSPreferenceAgent agent;\nNSPreferenceDescriptionLine thing = agent.CreateDefaultPreferenceDescriptionLine();\nthing = agent.SavePreferenceDescriptionLine(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreferenceAgent.DeleteFromSectionAndKey
@@ -104,7 +122,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSPreferenceAgent.DeleteFromSectionAndKey
   fullName: CRMScript.NetServer.NSPreferenceAgent.DeleteFromSectionAndKey
   type: Method
-  summary: "\nGets a NSPreferenceDescription based on the section and key\n"
+  summary: "\nGets an NSPreferenceDescription based on the section and key\n"
+  remarks: 
+  syntax: 
+    content: Void DeleteFromSectionAndKey(String section, String key)
+    parameters:
+    - id: section
+      type: CRMScript.Global.String
+      description: 
+    - id: key
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSPreferenceAgent agent;\nString section;\nString key;\nagent.DeleteFromSectionAndKey(section, key);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreferenceAgent.DeletePrefDescLinesByPrefDescId
@@ -118,6 +148,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSPreferenceAgent.DeletePrefDescLinesByPrefDescId
   type: Method
   summary: "\nDelete the PrefDescLines associated with Preference Description Id in the SuperOffice database\n"
+  remarks: 
+  syntax: 
+    content: Void DeletePrefDescLinesByPrefDescId(Integer prefDescId)
+    parameters:
+    - id: prefDescId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSPreferenceAgent agent;\nInteger prefDescId;\nagent.DeletePrefDescLinesByPrefDescId(prefDescId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreferenceAgent.DeletePrefDescLinesByPrefDescIds
@@ -131,6 +170,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSPreferenceAgent.DeletePrefDescLinesByPrefDescIds
   type: Method
   summary: "\nDelete the PrefDescLines associated with Preference Description Ids in the SuperOffice database\n"
+  remarks: 
+  syntax: 
+    content: Void DeletePrefDescLinesByPrefDescIds(Integer[] prefDescIds)
+    parameters:
+    - id: prefDescIds
+      type: CRMScript.Global.Integer[]
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSPreferenceAgent agent;\nInteger[] prefDescIds;\nagent.DeletePrefDescLinesByPrefDescIds(prefDescIds);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreferenceAgent.DeletePreference
@@ -144,6 +192,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSPreferenceAgent.DeletePreference
   type: Method
   summary: "\nDelete a preference by id\n"
+  remarks: 
+  syntax: 
+    content: Void DeletePreference(Integer id)
+    parameters:
+    - id: id
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSPreferenceAgent agent;\nInteger id;\nagent.DeletePreference(id);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreferenceAgent.DeletePreferenceDescription
@@ -157,6 +214,16 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSPreferenceAgent.DeletePreferenceDescription
   type: Method
   summary: "\nDeletes the NSPreferenceDescription\n"
+  remarks: 
+  syntax: 
+    content: DeletePreferenceDescription(Integer preferenceDescription);
+    parameters:
+    - id: preferenceDescription;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: preferenceDescriptionId
+      type: 
+      description: 
   example: 
   - "\n<pre><code>NSPreferenceAgent agent;\nagent.DeletePreferenceDescription(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreferenceAgent.DeletePreferenceDescriptionLine
@@ -170,6 +237,16 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSPreferenceAgent.DeletePreferenceDescriptionLine
   type: Method
   summary: "\nDeletes the NSPreferenceDescriptionLine\n"
+  remarks: 
+  syntax: 
+    content: DeletePreferenceDescriptionLine(Integer preferenceDescriptionLine);
+    parameters:
+    - id: preferenceDescriptionLine;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: preferenceDescriptionLineId
+      type: 
+      description: 
   example: 
   - "\n<pre><code>NSPreferenceAgent agent;\nagent.DeletePreferenceDescriptionLine(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreferenceAgent.DeletePreferenceDescriptionLines
@@ -183,6 +260,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSPreferenceAgent.DeletePreferenceDescriptionLines
   type: Method
   summary: "\nDelete the PrefDescLines in the SuperOffice database\n"
+  remarks: 
+  syntax: 
+    content: Void DeletePreferenceDescriptionLines(Integer[] prefDescLineIds)
+    parameters:
+    - id: prefDescLineIds
+      type: CRMScript.Global.Integer[]
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSPreferenceAgent agent;\nInteger[] prefDescLineIds;\nagent.DeletePreferenceDescriptionLines(prefDescLineIds);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreferenceAgent.DeletePreferences
@@ -196,6 +282,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSPreferenceAgent.DeletePreferences
   type: Method
   summary: "\nDelete some preferences by id\n"
+  remarks: 
+  syntax: 
+    content: Void DeletePreferences(Integer[] ids)
+    parameters:
+    - id: ids
+      type: CRMScript.Global.Integer[]
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSPreferenceAgent agent;\nInteger[] ids;\nagent.DeletePreferences(ids);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreferenceAgent.GetAll
@@ -209,6 +304,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSPreferenceAgent.GetAll
   type: Method
   summary: "\nGets a list of all PreferenceDescriptions in the system.<p></p>\n<strong>Returns:</strong>NSPreferenceDescription[]<p></p>\n<pre><code>NSPreferenceAgent agent;\nNSPreferenceDescription[] res = agent.GetAll();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSPreferenceDescription[] GetAll()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSPreferenceDescription[]
   example: 
   - "\n<pre><code>NSPreferenceAgent agent;\nNSPreferenceDescription[] res = agent.GetAll();</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreferenceAgent.GetAllFromSection
@@ -222,6 +323,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSPreferenceAgent.GetAllFromSection
   type: Method
   summary: "\nGets all NSPreferenceDescription-items in the specified section\n"
+  remarks: 
+  syntax: 
+    content: NSPreferenceDescription[] GetAllFromSection(String section)
+    parameters:
+    - id: section
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSPreferenceDescription[]
   example: 
   - "\n<pre><code>NSPreferenceAgent agent;\nString section;\nNSPreferenceDescription[] res = agent.GetAllFromSection(section);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreferenceAgent.GetFromSectionAndKey
@@ -234,7 +344,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSPreferenceAgent.GetFromSectionAndKey
   fullName: CRMScript.NetServer.NSPreferenceAgent.GetFromSectionAndKey
   type: Method
-  summary: "\nGets a NSPreferenceDescription based on the section and key\n"
+  summary: "\nGets an NSPreferenceDescription based on the section and key\n"
+  remarks: 
+  syntax: 
+    content: NSPreferenceDescription GetFromSectionAndKey(String section, String key)
+    parameters:
+    - id: section
+      type: CRMScript.Global.String
+      description: 
+    - id: key
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSPreferenceDescription
   example: 
   - "\n<pre><code>NSPreferenceAgent agent;\nString section;\nString key;\nNSPreferenceDescription res = agent.GetFromSectionAndKey(section, key);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreferenceAgent.GetNetServicesStatusUrl
@@ -248,6 +370,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSPreferenceAgent.GetNetServicesStatusUrl
   type: Method
   summary: "\nReturns URL to status service. e.g. 'https://help.superoffice.com/sodispatcher/v1/status' Returns NULL if status does not need to be checked yet.<p></p>\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSPreferenceAgent agent;\nString res = agent.GetNetServicesStatusUrl();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: String GetNetServicesStatusUrl()
+    parameters:
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSPreferenceAgent agent;\nString res = agent.GetNetServicesStatusUrl();</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreferenceAgent.GetPreference
@@ -261,6 +389,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSPreferenceAgent.GetPreference
   type: Method
   summary: "\nGet a preference by id\n"
+  remarks: 
+  syntax: 
+    content: NSPreference GetPreference(Integer id)
+    parameters:
+    - id: id
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSPreference
   example: 
   - "\n<pre><code>NSPreferenceAgent agent;\nInteger id;\nNSPreference res = agent.GetPreference(id);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreferenceAgent.GetPreferenceByName
@@ -274,6 +411,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSPreferenceAgent.GetPreferenceByName
   type: Method
   summary: "\nGet a preference by name\n"
+  remarks: "\n<ul><li>Enum: 0 = Undefined</li><li>Enum: 1 = HardDefault</li><li>Enum: 2 = SystemWide</li><li>Enum: 3 = Database</li><li>Enum: 4 = Group</li><li>Enum: 5 = Individual</li><li>Enum: 6 = PC</li></ul>\n"
+  syntax: 
+    content: NSPreference GetPreferenceByName(String prefSection, String prefKey, Integer prefLevel)
+    parameters:
+    - id: prefSection
+      type: CRMScript.Global.String
+      description: 
+    - id: prefKey
+      type: CRMScript.Global.String
+      description: 
+    - id: prefLevel
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSPreference
   example: 
   - "\n<pre><code>NSPreferenceAgent agent;\nString prefSection;\nString prefKey;\nInteger prefLevel;\nNSPreference res = agent.GetPreferenceByName(prefSection, prefKey, prefLevel);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreferenceAgent.GetPreferenceByNameAndId
@@ -287,6 +439,24 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSPreferenceAgent.GetPreferenceByNameAndId
   type: Method
   summary: "\nGet a preference by name and owner id.\n"
+  remarks: "\n<ul><li>Enum: 0 = Undefined</li><li>Enum: 1 = HardDefault</li><li>Enum: 2 = SystemWide</li><li>Enum: 3 = Database</li><li>Enum: 4 = Group</li><li>Enum: 5 = Individual</li><li>Enum: 6 = PC</li></ul>\n"
+  syntax: 
+    content: NSPreference GetPreferenceByNameAndId(String prefSection, String prefKey, Integer prefLevel, Integer ownerId)
+    parameters:
+    - id: prefSection
+      type: CRMScript.Global.String
+      description: 
+    - id: prefKey
+      type: CRMScript.Global.String
+      description: 
+    - id: prefLevel
+      type: CRMScript.Global.Integer
+      description: 
+    - id: ownerId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSPreference
   example: 
   - "\n<pre><code>NSPreferenceAgent agent;\nString prefSection;\nString prefKey;\nInteger prefLevel;\nInteger ownerId;\nNSPreference res = agent.GetPreferenceByNameAndId(prefSection, prefKey, prefLevel, ownerId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreferenceAgent.GetPreferenceDescription
@@ -299,7 +469,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSPreferenceAgent.GetPreferenceDescription
   fullName: CRMScript.NetServer.NSPreferenceAgent.GetPreferenceDescription
   type: Method
-  summary: "\nGets a NSPreferenceDescription object.\n"
+  summary: "\nGets an NSPreferenceDescription object.\n"
+  remarks: 
+  syntax: 
+    content: NSPreferenceDescription GetPreferenceDescription(Integer preferenceDescriptionId);
+    parameters:
+    - id: preferenceDescriptionId;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: preferenceDescriptionId
+      type: 
+      description: 
+    return:
+      type: CRMScript.NetServer.NSPreferenceDescription
   example: 
   - "\n<pre><code>NSPreferenceAgent agent;\nNSPreferenceDescription thing = agent.GetPreferenceDescription(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreferenceAgent.GetPreferenceDescriptionLine
@@ -312,7 +494,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSPreferenceAgent.GetPreferenceDescriptionLine
   fullName: CRMScript.NetServer.NSPreferenceAgent.GetPreferenceDescriptionLine
   type: Method
-  summary: "\nGets a NSPreferenceDescriptionLine object.\n"
+  summary: "\nGets an NSPreferenceDescriptionLine object.\n"
+  remarks: 
+  syntax: 
+    content: NSPreferenceDescriptionLine GetPreferenceDescriptionLine(Integer preferenceDescriptionLineId);
+    parameters:
+    - id: preferenceDescriptionLineId;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: preferenceDescriptionLineId
+      type: 
+      description: 
+    return:
+      type: CRMScript.NetServer.NSPreferenceDescriptionLine
   example: 
   - "\n<pre><code>NSPreferenceAgent agent;\nNSPreferenceDescriptionLine thing = agent.GetPreferenceDescriptionLine(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreferenceAgent.GetPreferenceDescriptionLineFromIdAndValue
@@ -326,6 +520,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSPreferenceAgent.GetPreferenceDescriptionLineFromIdAndValue
   type: Method
   summary: "\nGet a preference description line from a prefDesc_id and a prefValue\n"
+  remarks: 
+  syntax: 
+    content: NSPreferenceDescriptionLine GetPreferenceDescriptionLineFromIdAndValue(Integer prefDescId, String prefValue)
+    parameters:
+    - id: prefDescId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: prefValue
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSPreferenceDescriptionLine
   example: 
   - "\n<pre><code>NSPreferenceAgent agent;\nInteger prefDescId;\nString prefValue;\nNSPreferenceDescriptionLine res = agent.GetPreferenceDescriptionLineFromIdAndValue(prefDescId, prefValue);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreferenceAgent.GetPreferenceDescriptionLinesByPrefDescId
@@ -339,6 +545,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSPreferenceAgent.GetPreferenceDescriptionLinesByPrefDescId
   type: Method
   summary: "\nGet all preference description lines from a prefDesc_id\n"
+  remarks: 
+  syntax: 
+    content: NSPreferenceDescriptionLine[] GetPreferenceDescriptionLinesByPrefDescId(Integer prefDescId)
+    parameters:
+    - id: prefDescId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSPreferenceDescriptionLine[]
   example: 
   - "\n<pre><code>NSPreferenceAgent agent;\nInteger prefDescId;\nNSPreferenceDescriptionLine[] res = agent.GetPreferenceDescriptionLinesByPrefDescId(prefDescId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreferenceAgent.GetPreferences
@@ -352,6 +567,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSPreferenceAgent.GetPreferences
   type: Method
   summary: "\nGet one or more preferences based on a set of specifications.<br/>The prefDisplayvalue and prefDisplaytooltip are blank (faster processing relative to GetPreferencesWithDisplayValues)\n"
+  remarks: 
+  syntax: 
+    content: NSPreference[] GetPreferences(NSPreferenceSpec[] specifications)
+    parameters:
+    - id: specifications
+      type: CRMScript.NetServer.NSPreferenceSpec[]
+      description: 
+    return:
+      type: CRMScript.NetServer.NSPreference[]
   example: 
   - "\n<pre><code>NSPreferenceAgent agent;\nNSPreferenceSpec[] specifications;\nNSPreference[] res = agent.GetPreferences(specifications);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreferenceAgent.GetPreferencesWithDisplayValues
@@ -365,6 +589,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSPreferenceAgent.GetPreferencesWithDisplayValues
   type: Method
   summary: "\nGet one or more preferences based on a set of specifications<br/>The PrefDisplayValue and PrefDisplaytooltip are populated, at some additional processing cost.\n"
+  remarks: 
+  syntax: 
+    content: NSPreference[] GetPreferencesWithDisplayValues(NSPreferenceSpec[] specifications)
+    parameters:
+    - id: specifications
+      type: CRMScript.NetServer.NSPreferenceSpec[]
+      description: 
+    return:
+      type: CRMScript.NetServer.NSPreference[]
   example: 
   - "\n<pre><code>NSPreferenceAgent agent;\nNSPreferenceSpec[] specifications;\nNSPreference[] res = agent.GetPreferencesWithDisplayValues(specifications);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreferenceAgent.GetTabOrder
@@ -378,6 +611,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSPreferenceAgent.GetTabOrder
   type: Method
   summary: "\nGets the tab order.\n"
+  remarks: 
+  syntax: 
+    content: NSTabOrder GetTabOrder(String tabName)
+    parameters:
+    - id: tabName
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSTabOrder
   example: 
   - "\n<pre><code>NSPreferenceAgent agent;\nString tabName;\nNSTabOrder res = agent.GetTabOrder(tabName);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreferenceAgent.GetTabOrders
@@ -391,6 +633,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSPreferenceAgent.GetTabOrders
   type: Method
   summary: 
+  remarks: 
+  syntax: 
+    content: NSTabOrder[] GetTabOrders()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSTabOrder[]
   example: 
 - uid: CRMScript.NetServer.NSPreferenceAgent.#ctor
   commentId: M:CRMScript.NetServer.NSPreferenceAgent.#ctor
@@ -401,8 +649,11 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   name: '#ctor'
   nameWithType: NSPreferenceAgent.#ctor
   fullName: CRMScript.NetServer.NSPreferenceAgent.#ctor
-  type: Method
+  type: Constructor
   summary: "\nPreferences, user interface tab configuration.\n"
+  remarks: 
+  syntax: 
+    content: NSPreferenceAgent
   example: 
   - "\n<pre><code>NSPreferenceAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreferenceAgent.SaveFromSectionAndKey
@@ -415,7 +666,22 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSPreferenceAgent.SaveFromSectionAndKey
   fullName: CRMScript.NetServer.NSPreferenceAgent.SaveFromSectionAndKey
   type: Method
-  summary: "\nUpdate a NSPreferenceDescription based on the section and key\n"
+  summary: "\nUpdate an NSPreferenceDescription based on the section and key\n"
+  remarks: 
+  syntax: 
+    content: NSPreferenceDescription SaveFromSectionAndKey(String section, String key, NSPreferenceDescription preferenceDescription)
+    parameters:
+    - id: section
+      type: CRMScript.Global.String
+      description: 
+    - id: key
+      type: CRMScript.Global.String
+      description: 
+    - id: preferenceDescription
+      type: CRMScript.NetServer.NSPreferenceDescription
+      description: 
+    return:
+      type: CRMScript.NetServer.NSPreferenceDescription
   example: 
   - "\n<pre><code>NSPreferenceAgent agent;\nString section;\nString key;\nNSPreferenceDescription preferenceDescription;\nNSPreferenceDescription res = agent.SaveFromSectionAndKey(section, key, preferenceDescription);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreferenceAgent.SavePreference
@@ -429,6 +695,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSPreferenceAgent.SavePreference
   type: Method
   summary: "\nSave this preference\n"
+  remarks: 
+  syntax: 
+    content: Void SavePreference(NSPreference preference)
+    parameters:
+    - id: preference
+      type: CRMScript.NetServer.NSPreference
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSPreferenceAgent agent;\nNSPreference preference;\nagent.SavePreference(preference);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreferenceAgent.SavePreferenceDescription
@@ -442,6 +717,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSPreferenceAgent.SavePreferenceDescription
   type: Method
   summary: "\nUpdates the existing NSPreferenceDescription or creates a new NSPreferenceDescription if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>preferenceDescription</strong>The NSPreferenceDescription to save.</li></ul><strong>Returns:</strong>NSPreferenceDescription<p></p>\n<pre><code>NSPreference  agent;\nNSPreferenceDescription thing = agent.CreateDefaultPreferenceDescription();\nthing = agent.SavePreferenceDescription(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSPreferenceDescription SavePreferenceDescription(NSPreferenceDescription preferenceDescription);
+    parameters:
+    - id: preferenceDescription;
+      type: CRMScript.NetServer.NSPreferenceDescription
+      description: 
+    return:
+      type: CRMScript.NetServer.NSPreferenceDescription
   example: 
   - "\n<pre><code>NSPreference  agent;\nNSPreferenceDescription thing = agent.CreateDefaultPreferenceDescription();\nthing = agent.SavePreferenceDescription(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreferenceAgent.SavePreferenceDescriptionLine
@@ -455,6 +739,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSPreferenceAgent.SavePreferenceDescriptionLine
   type: Method
   summary: "\nUpdates the existing NSPreferenceDescriptionLine or creates a new NSPreferenceDescriptionLine if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>preferenceDescriptionLine</strong>The NSPreferenceDescriptionLine to save.</li></ul><strong>Returns:</strong>NSPreferenceDescriptionLine<p></p>\n<pre><code>NSPreference  agent;\nNSPreferenceDescriptionLine thing = agent.CreateDefaultPreferenceDescriptionLine();\nthing = agent.SavePreferenceDescriptionLine(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSPreferenceDescriptionLine SavePreferenceDescriptionLine(NSPreferenceDescriptionLine preferenceDescriptionLine);
+    parameters:
+    - id: preferenceDescriptionLine;
+      type: CRMScript.NetServer.NSPreferenceDescriptionLine
+      description: 
+    return:
+      type: CRMScript.NetServer.NSPreferenceDescriptionLine
   example: 
   - "\n<pre><code>NSPreference  agent;\nNSPreferenceDescriptionLine thing = agent.CreateDefaultPreferenceDescriptionLine();\nthing = agent.SavePreferenceDescriptionLine(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreferenceAgent.SavePreferenceDescriptionLines
@@ -468,6 +761,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSPreferenceAgent.SavePreferenceDescriptionLines
   type: Method
   summary: "\nSaves the PreferenceDescriptionLine array in the SuperOffice database\n"
+  remarks: 
+  syntax: 
+    content: NSPreferenceDescriptionLine[] SavePreferenceDescriptionLines(NSPreferenceDescriptionLine[] preferenceDescriptionLines)
+    parameters:
+    - id: preferenceDescriptionLines
+      type: CRMScript.NetServer.NSPreferenceDescriptionLine[]
+      description: 
+    return:
+      type: CRMScript.NetServer.NSPreferenceDescriptionLine[]
   example: 
   - "\n<pre><code>NSPreferenceAgent agent;\nNSPreferenceDescriptionLine[] preferenceDescriptionLines;\nNSPreferenceDescriptionLine[] res = agent.SavePreferenceDescriptionLines(preferenceDescriptionLines);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreferenceAgent.SavePreferenceEntities
@@ -481,6 +783,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSPreferenceAgent.SavePreferenceEntities
   type: Method
   summary: "\nSave this set of preferences.\n"
+  remarks: 
+  syntax: 
+    content: Void SavePreferenceEntities(NSPreference[] preferences, Bool removeLowerLevels)
+    parameters:
+    - id: preferences
+      type: CRMScript.NetServer.NSPreference[]
+      description: 
+    - id: removeLowerLevels
+      type: CRMScript.Global.Bool
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSPreferenceAgent.SavePreferenceEntity
   commentId: M:CRMScript.NetServer.NSPreferenceAgent.SavePreferenceEntity
@@ -493,6 +807,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSPreferenceAgent.SavePreferenceEntity
   type: Method
   summary: "\nSaves a complete preference object, on any level and any target. Preference administrator rights are required to use this\n"
+  remarks: 
+  syntax: 
+    content: NSPreference SavePreferenceEntity(NSPreference preference, Bool removeLowerLevels)
+    parameters:
+    - id: preference
+      type: CRMScript.NetServer.NSPreference
+      description: 
+    - id: removeLowerLevels
+      type: CRMScript.Global.Bool
+      description: 
+    return:
+      type: CRMScript.NetServer.NSPreference
   example: 
   - "\n<pre><code>NSPreferenceAgent agent;\nNSPreference preference;\nBool removeLowerLevels;\nNSPreference res = agent.SavePreferenceEntity(preference, removeLowerLevels);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreferenceAgent.SavePreferences
@@ -506,6 +832,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSPreferenceAgent.SavePreferences
   type: Method
   summary: "\nSave this set of preferences. Note this method DOES NOT look at level/targetId* it only saves on behalf of the CURRENT USER.\n"
+  remarks: 
+  syntax: 
+    content: Void SavePreferences(NSPreference[] preferences)
+    parameters:
+    - id: preferences
+      type: CRMScript.NetServer.NSPreference[]
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSPreferenceAgent.SaveTabOrder
   commentId: M:CRMScript.NetServer.NSPreferenceAgent.SaveTabOrder
@@ -518,6 +853,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSPreferenceAgent.SaveTabOrder
   type: Method
   summary: "\nSaves the tab order. The order is saved pr. user.\n"
+  remarks: 
+  syntax: 
+    content: Void SaveTabOrder(NSTabOrder tabOrder)
+    parameters:
+    - id: tabOrder
+      type: CRMScript.NetServer.NSTabOrder
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSPreferenceAgent agent;\nNSTabOrder tabOrder;\nagent.SaveTabOrder(tabOrder);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreferenceAgent.SaveTabOrders
@@ -531,6 +875,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSPreferenceAgent.SaveTabOrders
   type: Method
   summary: 
+  remarks: 
+  syntax: 
+    content: Void SaveTabOrders(NSTabOrder[] tabOrders)
+    parameters:
+    - id: tabOrders
+      type: CRMScript.NetServer.NSTabOrder[]
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSPreferenceAgent.UpdateNetServicesStatus
   commentId: M:CRMScript.NetServer.NSPreferenceAgent.UpdateNetServicesStatus
@@ -543,6 +896,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSPreferenceAgent.UpdateNetServicesStatus
   type: Method
   summary: "\nUpdate the NetServices preferences with values contained in the content from the Status URL\n"
+  remarks: 
+  syntax: 
+    content: Void UpdateNetServicesStatus(String xmlOrJson)
+    parameters:
+    - id: xmlOrJson
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSPreferenceAgent agent;\nString xmlOrJson;\nagent.UpdateNetServicesStatus(xmlOrJson);</code></pre>\n"
 references:
@@ -552,3 +914,171 @@ references:
   name: NSPreferenceAgent
   nameWithType: NSPreferenceAgent
   fullName: CRMScript.NetServer.NSPreferenceAgent
+- uid: CRMScript.NetServer.NSPreference
+  commentId: T:CRMScript.NetServer.NSPreference
+  isExternal: true
+  name: NSPreference
+  nameWithType: NSPreference
+  fullName: CRMScript.NetServer.NSPreference
+- uid: CRMScript.NetServer.NSPreferenceDescription
+  commentId: T:CRMScript.NetServer.NSPreferenceDescription
+  isExternal: true
+  name: NSPreferenceDescription
+  nameWithType: NSPreferenceDescription
+  fullName: CRMScript.NetServer.NSPreferenceDescription
+- uid: CRMScript.NetServer.NSPreferenceDescriptionLine
+  commentId: T:CRMScript.NetServer.NSPreferenceDescriptionLine
+  isExternal: true
+  name: NSPreferenceDescriptionLine
+  nameWithType: NSPreferenceDescriptionLine
+  fullName: CRMScript.NetServer.NSPreferenceDescriptionLine
+- uid: CRMScript.Global.String
+  commentId: T:CRMScript.Global.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: CRMScript.Global.String
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void
+- uid: CRMScript.Global.Integer
+  commentId: T:CRMScript.Global.Integer
+  isExternal: true
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Global.Integer
+- uid: CRMScript.Global.Integer[]
+  isExternal: true
+  name: Integer[]
+  nameWithType: Integer[]
+  fullName: CRMScript.Global.Integer[]
+  spec.crmscript:
+  - uid: CRMScript.Global.Integer
+    isExternal: true
+    name: Integer
+    nameWithType: Integer
+    fullName: CRMScript.Global.Integer
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.Global.Integer
+  commentId: T:CRMScript.Global.Integer
+  isExternal: true
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Global.Integer
+- uid: CRMScript.NetServer.NSPreferenceDescription[]
+  isExternal: true
+  name: NSPreferenceDescription[]
+  nameWithType: NSPreferenceDescription[]
+  fullName: CRMScript.NetServer.NSPreferenceDescription[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSPreferenceDescription
+    isExternal: true
+    name: NSPreferenceDescription
+    nameWithType: NSPreferenceDescription
+    fullName: CRMScript.NetServer.NSPreferenceDescription
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSPreferenceDescription
+  commentId: T:CRMScript.NetServer.NSPreferenceDescription
+  isExternal: true
+  name: NSPreferenceDescription
+  nameWithType: NSPreferenceDescription
+  fullName: CRMScript.NetServer.NSPreferenceDescription
+- uid: CRMScript.NetServer.NSPreferenceDescriptionLine[]
+  isExternal: true
+  name: NSPreferenceDescriptionLine[]
+  nameWithType: NSPreferenceDescriptionLine[]
+  fullName: CRMScript.NetServer.NSPreferenceDescriptionLine[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSPreferenceDescriptionLine
+    isExternal: true
+    name: NSPreferenceDescriptionLine
+    nameWithType: NSPreferenceDescriptionLine
+    fullName: CRMScript.NetServer.NSPreferenceDescriptionLine
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSPreferenceDescriptionLine
+  commentId: T:CRMScript.NetServer.NSPreferenceDescriptionLine
+  isExternal: true
+  name: NSPreferenceDescriptionLine
+  nameWithType: NSPreferenceDescriptionLine
+  fullName: CRMScript.NetServer.NSPreferenceDescriptionLine
+- uid: CRMScript.NetServer.NSPreferenceSpec[]
+  isExternal: true
+  name: NSPreferenceSpec[]
+  nameWithType: NSPreferenceSpec[]
+  fullName: CRMScript.NetServer.NSPreferenceSpec[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSPreferenceSpec
+    isExternal: true
+    name: NSPreferenceSpec
+    nameWithType: NSPreferenceSpec
+    fullName: CRMScript.NetServer.NSPreferenceSpec
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSPreferenceSpec
+  commentId: T:CRMScript.NetServer.NSPreferenceSpec
+  isExternal: true
+  name: NSPreferenceSpec
+  nameWithType: NSPreferenceSpec
+  fullName: CRMScript.NetServer.NSPreferenceSpec
+- uid: CRMScript.NetServer.NSPreference[]
+  isExternal: true
+  name: NSPreference[]
+  nameWithType: NSPreference[]
+  fullName: CRMScript.NetServer.NSPreference[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSPreference
+    isExternal: true
+    name: NSPreference
+    nameWithType: NSPreference
+    fullName: CRMScript.NetServer.NSPreference
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSPreference
+  commentId: T:CRMScript.NetServer.NSPreference
+  isExternal: true
+  name: NSPreference
+  nameWithType: NSPreference
+  fullName: CRMScript.NetServer.NSPreference
+- uid: CRMScript.NetServer.NSTabOrder
+  commentId: T:CRMScript.NetServer.NSTabOrder
+  isExternal: true
+  name: NSTabOrder
+  nameWithType: NSTabOrder
+  fullName: CRMScript.NetServer.NSTabOrder
+- uid: CRMScript.NetServer.NSTabOrder[]
+  isExternal: true
+  name: NSTabOrder[]
+  nameWithType: NSTabOrder[]
+  fullName: CRMScript.NetServer.NSTabOrder[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSTabOrder
+    isExternal: true
+    name: NSTabOrder
+    nameWithType: NSTabOrder
+    fullName: CRMScript.NetServer.NSTabOrder
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSTabOrder
+  commentId: T:CRMScript.NetServer.NSTabOrder
+  isExternal: true
+  name: NSTabOrder
+  nameWithType: NSTabOrder
+  fullName: CRMScript.NetServer.NSTabOrder
+- uid: CRMScript.Global.Bool
+  commentId: T:CRMScript.Global.Bool
+  isExternal: true
+  name: Bool
+  nameWithType: Bool
+  fullName: CRMScript.Global.Bool

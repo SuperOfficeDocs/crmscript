@@ -28,7 +28,13 @@ items:
   nameWithType: NSArchiveOrderByInfo.GetDirection
   fullName: CRMScript.NetServer.NSArchiveOrderByInfo.GetDirection
   type: Method
-  summary: "\nDirection to order.<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<ul><li>Enum: 0 = ASC</li><li>Enum: 1 = DESC</li></ul><pre><code>NSArchiveOrderByInfo thing;\nInteger direction  = thing.GetDirection();</code></pre>\n"
+  summary: "\nDirection to order.<p></p>\n<strong>Returns:</strong>Integer\n"
+  remarks: 
+  syntax: 
+    content: Integer GetDirection()
+    parameters:
+    return:
+      type: CRMScript.Global.Integer
   example: 
   - "\n<pre><code>NSArchiveOrderByInfo thing;\nInteger direction  = thing.GetDirection();</code></pre>\n"
 - uid: CRMScript.NetServer.NSArchiveOrderByInfo.GetName
@@ -42,6 +48,12 @@ items:
   fullName: CRMScript.NetServer.NSArchiveOrderByInfo.GetName
   type: Method
   summary: "\nProgrammatic name of the column to order by, semantically the same as the NSArchiveColumnInfo.Name.<p></p>\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSArchiveOrderByInfo thing;\nString name  = thing.GetName();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: String GetName()
+    parameters:
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSArchiveOrderByInfo thing;\nString name  = thing.GetName();</code></pre>\n"
 - uid: CRMScript.NetServer.NSArchiveOrderByInfo.#ctor
@@ -53,8 +65,11 @@ items:
   name: '#ctor'
   nameWithType: NSArchiveOrderByInfo.#ctor
   fullName: CRMScript.NetServer.NSArchiveOrderByInfo.#ctor
-  type: Method
+  type: Constructor
   summary: 
+  remarks: 
+  syntax: 
+    content: NSArchiveOrderByInfo
   example: 
 - uid: CRMScript.NetServer.NSArchiveOrderByInfo.SetDirection
   commentId: M:CRMScript.NetServer.NSArchiveOrderByInfo.SetDirection
@@ -66,7 +81,14 @@ items:
   nameWithType: NSArchiveOrderByInfo.SetDirection
   fullName: CRMScript.NetServer.NSArchiveOrderByInfo.SetDirection
   type: Method
-  summary: "\nDirection to order.<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>direction</strong>Integer</li><li>Enum: 0 = ASC</li><li>Enum: 1 = DESC</li></ul><pre><code>NSArchiveOrderByInfo thing;\nInteger direction;\nthing.SetDirection(direction);</code></pre>\n"
+  summary: "\nDirection to order.\n"
+  remarks: "\n<h3>Enum: direction</h3><ul><li>0 = ASC</li><li>1 = DESC</li></ul>\n"
+  syntax: 
+    content: SetDirection(Integer direction)
+    parameters:
+    - id: direction
+      type: CRMScript.Global.Integer
+      description: 
   example: 
   - "\n<pre><code>NSArchiveOrderByInfo thing;\nInteger direction;\nthing.SetDirection(direction);</code></pre>\n"
 - uid: CRMScript.NetServer.NSArchiveOrderByInfo.SetName
@@ -79,7 +101,14 @@ items:
   nameWithType: NSArchiveOrderByInfo.SetName
   fullName: CRMScript.NetServer.NSArchiveOrderByInfo.SetName
   type: Method
-  summary: "\nProgrammatic name of the column to order by, semantically the same as the NSArchiveColumnInfo.Name.<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>name</strong>String</li></ul><pre><code>NSArchiveOrderByInfo thing;\nString name;\nthing.SetName(name);</code></pre>\n"
+  summary: "\nProgrammatic name of the column to order by, semantically the same as the NSArchiveColumnInfo.Name.\n"
+  remarks: 
+  syntax: 
+    content: SetName(String name)
+    parameters:
+    - id: name
+      type: CRMScript.Global.String
+      description: 
   example: 
   - "\n<pre><code>NSArchiveOrderByInfo thing;\nString name;\nthing.SetName(name);</code></pre>\n"
 references:
@@ -89,3 +118,15 @@ references:
   name: NSArchiveOrderByInfo
   nameWithType: NSArchiveOrderByInfo
   fullName: CRMScript.NetServer.NSArchiveOrderByInfo
+- uid: CRMScript.Global.Integer
+  commentId: T:CRMScript.Global.Integer
+  isExternal: true
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Global.Integer
+- uid: CRMScript.Global.String
+  commentId: T:CRMScript.Global.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: CRMScript.Global.String

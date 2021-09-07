@@ -32,6 +32,10 @@ items:
   fullName: CRMScript.Native.SpmMessage.save
   type: Method
   summary: "\nSaves a SpmMessage object. If this is a new SpmMessage object (no id set), a new one will be created.<p></p>\n<ul><li><strong>Returns:</strong>Integer the id of the SpmMessage object</li></ul>\n"
+  remarks: 
+  syntax: 
+    content: save()
+    parameters:
   example: 
 - uid: CRMScript.Native.SpmMessage.setBody
   commentId: M:CRMScript.Native.SpmMessage.setBody
@@ -43,7 +47,14 @@ items:
   nameWithType: SpmMessage.setBody
   fullName: CRMScript.Native.SpmMessage.setBody
   type: Method
-  summary: "\nSet the body version of the SpmMessage object (will correspond to the text/plain version in the outgoing email).<p></p>\n<ul><li><strong>body:</strong>The plain text version of the body</li></ul>\n"
+  summary: "\nSet the body version of the SpmMessage object (will correspond to the text/plain version in the outgoing email).\n"
+  remarks: 
+  syntax: 
+    content: setBody(String body)
+    parameters:
+    - id: body
+      type: CRMScript.Global.String
+      description: 
   example: 
 - uid: CRMScript.Native.SpmMessage.setBodyHtml
   commentId: M:CRMScript.Native.SpmMessage.setBodyHtml
@@ -55,7 +66,14 @@ items:
   nameWithType: SpmMessage.setBodyHtml
   fullName: CRMScript.Native.SpmMessage.setBodyHtml
   type: Method
-  summary: "\nSet the html body version of the SpmMessage object (will correspond to the text/html version in the outgoing email).<p></p>\n<ul><li><strong>htmlBody:</strong>The html version of the body</li></ul>\n"
+  summary: "\nSet the html body version of the SpmMessage object (will correspond to the text/html version in the outgoing email).\n"
+  remarks: 
+  syntax: 
+    content: setBodyHtml(String htmlBody)
+    parameters:
+    - id: htmlBody
+      type: CRMScript.Global.String
+      description: 
   example: 
 - uid: CRMScript.Native.SpmMessage.setDescription
   commentId: M:CRMScript.Native.SpmMessage.setDescription
@@ -67,7 +85,14 @@ items:
   nameWithType: SpmMessage.setDescription
   fullName: CRMScript.Native.SpmMessage.setDescription
   type: Method
-  summary: "\nThis method will set the descriptive text of the SpmMessage. It is not used in the outgoing email, but will be visible when listed in eJournal.<p></p>\n<ul><li><strong>description:</strong>a text which describes this message</li></ul>\n"
+  summary: "\nThis method will set the descriptive text of the SpmMessage. It is not used in the outgoing email, but will be visible when listed in eJournal.\n"
+  remarks: 
+  syntax: 
+    content: setDescription(String description)
+    parameters:
+    - id: description
+      type: CRMScript.Global.String
+      description: 
   example: 
 - uid: CRMScript.Native.SpmMessage.setFolderId
   commentId: M:CRMScript.Native.SpmMessage.setFolderId
@@ -80,7 +105,14 @@ items:
   fullName: CRMScript.Native.SpmMessage.setFolderId
   type: Method
   summary: "\nSets the folder which this SpmMessage will be stored in. If you specify a folder id which do not exist, the message will not be visible through eJournal.
-A value of -1 indicates that it should be stored in the root folder.<p></p>\n<ul><li><strong>folderId:</strong>the id of the folder this message will be stored in</li></ul>\n"
+A value of -1 indicates that it should be stored in the root folder.\n"
+  remarks: 
+  syntax: 
+    content: setFolderId(Integer folderId)
+    parameters:
+    - id: folderId
+      type: CRMScript.Global.Integer
+      description: 
   example: 
 - uid: CRMScript.Native.SpmMessage.setHeader
   commentId: M:CRMScript.Native.SpmMessage.setHeader
@@ -93,6 +125,13 @@ A value of -1 indicates that it should be stored in the root folder.<p></p>\n<ul
   fullName: CRMScript.Native.SpmMessage.setHeader
   type: Method
   summary: "\nIf you need to include additional email headers, they should be added here. You have to format these yourself.\n"
+  remarks: 
+  syntax: 
+    content: setHeader(String header)
+    parameters:
+    - id: header
+      type: CRMScript.Global.String
+      description: 
   example: 
   - "\n<pre><code>Header1: Value1\nHeader2: Value2</code></pre><ul><li><strong>header:</strong>the the information</li></ul>\n"
 - uid: CRMScript.Native.SpmMessage.setSubject
@@ -105,7 +144,14 @@ A value of -1 indicates that it should be stored in the root folder.<p></p>\n<ul
   nameWithType: SpmMessage.setSubject
   fullName: CRMScript.Native.SpmMessage.setSubject
   type: Method
-  summary: "\nHere you set the subject of the SpmMessage object which will corespond to the subject in the outgoing email.<p></p>\n<ul><li><strong>subject:</strong>the subject of the SpmMessage object</li></ul>\n"
+  summary: "\nHere you set the subject of the SpmMessage object which will corespond to the subject in the outgoing email.\n"
+  remarks: 
+  syntax: 
+    content: setSubject(String subject)
+    parameters:
+    - id: subject
+      type: CRMScript.Global.String
+      description: 
   example: 
 - uid: CRMScript.Native.SpmMessage.#ctor
   commentId: M:CRMScript.Native.SpmMessage.#ctor
@@ -116,8 +162,11 @@ A value of -1 indicates that it should be stored in the root folder.<p></p>\n<ul
   name: '#ctor'
   nameWithType: SpmMessage.#ctor
   fullName: CRMScript.Native.SpmMessage.#ctor
-  type: Method
+  type: Constructor
   summary: 
+  remarks: 
+  syntax: 
+    content: SpmMessage
   example: 
 references:
 - uid: CRMScript.Native.SpmMessage
@@ -126,3 +175,15 @@ references:
   name: SpmMessage
   nameWithType: SpmMessage
   fullName: CRMScript.Native.SpmMessage
+- uid: CRMScript.Global.String
+  commentId: T:CRMScript.Global.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: CRMScript.Global.String
+- uid: CRMScript.Global.Integer
+  commentId: T:CRMScript.Global.Integer
+  isExternal: true
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Global.Integer

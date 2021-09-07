@@ -76,6 +76,18 @@ items:
   fullName: CRMScript.NetServer.NSProjectAgent.AddProjectMembers
   type: Method
   summary: "\nAdd multiple project members to a project\n"
+  remarks: 
+  syntax: 
+    content: Void AddProjectMembers(Integer projectEntityId, NSProjectMember[] projectMembers)
+    parameters:
+    - id: projectEntityId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: projectMembers
+      type: CRMScript.NetServer.NSProjectMember[]
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSProjectAgent.CreateDefaultProjectEntity
   commentId: M:CRMScript.NetServer.NSProjectAgent.CreateDefaultProjectEntity
@@ -89,6 +101,12 @@ items:
   type: Method
   summary: "\nSet default values into a new NSProjectEntity.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSProjectEntity<p></p>\n<pre><code>NSProjectAgent agent;\nNSProjectEntity thing = agent.CreateDefaultProjectEntity();\nthing = agent.SaveProjectEntity(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSProjectEntity CreateDefaultProjectEntity()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSProjectEntity
   example: 
   - "\n<pre><code>NSProjectAgent agent;\nNSProjectEntity thing = agent.CreateDefaultProjectEntity();\nthing = agent.SaveProjectEntity(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectAgent.CreateDefaultProjectEventEntity
@@ -103,6 +121,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   type: Method
   summary: "\nSet default values into a new NSProjectEventEntity.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSProjectEventEntity<p></p>\n<pre><code>NSProjectAgent agent;\nNSProjectEventEntity thing = agent.CreateDefaultProjectEventEntity();\nthing = agent.SaveProjectEventEntity(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSProjectEventEntity CreateDefaultProjectEventEntity()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSProjectEventEntity
   example: 
   - "\n<pre><code>NSProjectAgent agent;\nNSProjectEventEntity thing = agent.CreateDefaultProjectEventEntity();\nthing = agent.SaveProjectEventEntity(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectAgent.CreateDefaultProjectMember
@@ -117,6 +141,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   type: Method
   summary: "\nSet default values into a new NSProjectMember.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSProjectMember<p></p>\n<pre><code>NSProjectAgent agent;\nNSProjectMember thing = agent.CreateDefaultProjectMember();\nthing = agent.SaveProjectMember(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSProjectMember CreateDefaultProjectMember()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSProjectMember
   example: 
   - "\n<pre><code>NSProjectAgent agent;\nNSProjectMember thing = agent.CreateDefaultProjectMember();\nthing = agent.SaveProjectMember(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectAgent.CreateNewEntry
@@ -130,6 +160,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSProjectAgent.CreateNewEntry
   type: Method
   summary: "\nCreates a new project based on external duplicate\n"
+  remarks: 
+  syntax: 
+    content: Integer CreateNewEntry(NSDuplicateEntry duplicate)
+    parameters:
+    - id: duplicate
+      type: CRMScript.NetServer.NSDuplicateEntry
+      description: 
+    return:
+      type: CRMScript.Global.Integer
   example: 
   - "\n<pre><code>NSProjectAgent agent;\nNSDuplicateEntry duplicate;\nInteger res = agent.CreateNewEntry(duplicate);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectAgent.DeleteProjectEntity
@@ -143,6 +182,16 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSProjectAgent.DeleteProjectEntity
   type: Method
   summary: "\nDeletes the NSProjectEntity\n"
+  remarks: 
+  syntax: 
+    content: DeleteProjectEntity(Integer projectEntity);
+    parameters:
+    - id: projectEntity;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: projectEntityId
+      type: 
+      description: 
   example: 
   - "\n<pre><code>NSProjectAgent agent;\nagent.DeleteProjectEntity(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectAgent.DeleteProjectEventEntity
@@ -156,6 +205,16 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSProjectAgent.DeleteProjectEventEntity
   type: Method
   summary: "\nDeletes the NSProjectEventEntity\n"
+  remarks: 
+  syntax: 
+    content: DeleteProjectEventEntity(Integer projectEventEntity);
+    parameters:
+    - id: projectEventEntity;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: projectEventEntityId
+      type: 
+      description: 
   example: 
   - "\n<pre><code>NSProjectAgent agent;\nagent.DeleteProjectEventEntity(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectAgent.DeleteProjectEventEntityFromProjectId
@@ -169,6 +228,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSProjectAgent.DeleteProjectEventEntityFromProjectId
   type: Method
   summary: "\nDelete a project event based on a project id. Does not delete the project, but does delete the published and ExternalEvent and AudienceVisibility records.\n"
+  remarks: 
+  syntax: 
+    content: Void DeleteProjectEventEntityFromProjectId(Integer projectId)
+    parameters:
+    - id: projectId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProjectAgent agent;\nInteger projectId;\nagent.DeleteProjectEventEntityFromProjectId(projectId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectAgent.DeleteProjectMember
@@ -182,6 +250,16 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSProjectAgent.DeleteProjectMember
   type: Method
   summary: "\nDeletes the NSProjectMember\n"
+  remarks: 
+  syntax: 
+    content: DeleteProjectMember(Integer projectMember);
+    parameters:
+    - id: projectMember;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: projectMemberId
+      type: 
+      description: 
   example: 
   - "\n<pre><code>NSProjectAgent agent;\nagent.DeleteProjectMember(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectAgent.DeleteProjectMemberByIds
@@ -195,6 +273,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSProjectAgent.DeleteProjectMemberByIds
   type: Method
   summary: "\nDeletes projectmembers rows.\n"
+  remarks: 
+  syntax: 
+    content: Void DeleteProjectMemberByIds(Integer[] projectMemberIds)
+    parameters:
+    - id: projectMemberIds
+      type: CRMScript.Global.Integer[]
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSProjectAgent.DeleteProjectMembers
   commentId: M:CRMScript.NetServer.NSProjectAgent.DeleteProjectMembers
@@ -207,6 +294,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSProjectAgent.DeleteProjectMembers
   type: Method
   summary: "\nDelete the given project members from a project\n"
+  remarks: 
+  syntax: 
+    content: Void DeleteProjectMembers(Integer projectEntityId, Integer[] memberIds)
+    parameters:
+    - id: projectEntityId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: memberIds
+      type: CRMScript.Global.Integer[]
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSProjectAgent.GetDuplicateRules
   commentId: M:CRMScript.NetServer.NSProjectAgent.GetDuplicateRules
@@ -219,6 +318,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSProjectAgent.GetDuplicateRules
   type: Method
   summary: "\nRetrieve all available duplicate rules for project<p></p>\n<strong>Returns:</strong>NSDuplicateRule[]<p></p>\n<pre><code>NSProjectAgent agent;\nNSDuplicateRule[] res = agent.GetDuplicateRules();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSDuplicateRule[] GetDuplicateRules()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSDuplicateRule[]
   example: 
   - "\n<pre><code>NSProjectAgent agent;\nNSDuplicateRule[] res = agent.GetDuplicateRules();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectAgent.GetDuplicates
@@ -232,6 +337,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSProjectAgent.GetDuplicates
   type: Method
   summary: "\nGet duplicates(exact or similar in the database) based on the name\n"
+  remarks: 
+  syntax: 
+    content: NSDuplicateEntry[] GetDuplicates(String name)
+    parameters:
+    - id: name
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSDuplicateEntry[]
   example: 
   - "\n<pre><code>NSProjectAgent agent;\nString name;\nNSDuplicateEntry[] res = agent.GetDuplicates(name);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectAgent.GetMyMemberProjects
@@ -245,6 +359,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSProjectAgent.GetMyMemberProjects
   type: Method
   summary: "\nReturning the projects where an user is project member.<p></p>\n<strong>Returns:</strong>NSProject[]<p></p>\n<pre><code>NSProjectAgent agent;\nNSProject[] res = agent.GetMyMemberProjects();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSProject[] GetMyMemberProjects()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSProject[]
   example: 
   - "\n<pre><code>NSProjectAgent agent;\nNSProject[] res = agent.GetMyMemberProjects();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectAgent.GetMyProjectEvents
@@ -258,6 +378,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSProjectAgent.GetMyProjectEvents
   type: Method
   summary: "\nGets all project events that belongs to the currently logged on user. The list of events are filtered by the Audience Visibility restrictions set when the project event is created.<p></p>\n<strong>Returns:</strong>NSProjectEvent[]<p></p>\n<pre><code>NSProjectAgent agent;\nNSProjectEvent[] res = agent.GetMyProjectEvents();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSProjectEvent[] GetMyProjectEvents()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSProjectEvent[]
   example: 
   - "\n<pre><code>NSProjectAgent agent;\nNSProjectEvent[] res = agent.GetMyProjectEvents();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectAgent.GetMyProjects
@@ -271,6 +397,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSProjectAgent.GetMyProjects
   type: Method
   summary: "\nReturning the projects belonging to an associate. If memberProjects is false only the projects where the associate is project responsible is returned, otherwise both the projects where the associate is project responsible and project member is returned.\n"
+  remarks: 
+  syntax: 
+    content: NSProject[] GetMyProjects(Bool includeMemberProjects)
+    parameters:
+    - id: includeMemberProjects
+      type: CRMScript.Global.Bool
+      description: 
+    return:
+      type: CRMScript.NetServer.NSProject[]
   example: 
   - "\n<pre><code>NSProjectAgent agent;\nBool includeMemberProjects;\nNSProject[] res = agent.GetMyProjects(includeMemberProjects);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectAgent.GetMyPublishedProjects
@@ -284,6 +419,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSProjectAgent.GetMyPublishedProjects
   type: Method
   summary: "\nGet published projects from the logged in user.<p></p>\n<strong>Returns:</strong>NSProject[]<p></p>\n<pre><code>NSProjectAgent agent;\nNSProject[] res = agent.GetMyPublishedProjects();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSProject[] GetMyPublishedProjects()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSProject[]
   example: 
   - "\n<pre><code>NSProjectAgent agent;\nNSProject[] res = agent.GetMyPublishedProjects();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectAgent.GetNextMilestone
@@ -297,6 +438,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSProjectAgent.GetNextMilestone
   type: Method
   summary: "\nNext upcoming milestone appointment\n"
+  remarks: 
+  syntax: 
+    content: NSAppointment GetNextMilestone(Integer projectId)
+    parameters:
+    - id: projectId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSAppointment
   example: 
   - "\n<pre><code>NSProjectAgent agent;\nInteger projectId;\nNSAppointment res = agent.GetNextMilestone(projectId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectAgent.GetNextProjectStatus
@@ -309,7 +459,16 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSProjectAgent.GetNextProjectStatus
   fullName: CRMScript.NetServer.NSProjectAgent.GetNextProjectStatus
   type: Method
-  summary: 
+  summary: "\n<strong>Returns:</strong>Integer\n"
+  remarks: 
+  syntax: 
+    content: Integer GetNextProjectStatus(Integer projectId)
+    parameters:
+    - id: projectId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Integer
   example: 
 - uid: CRMScript.NetServer.NSProjectAgent.GetProject
   commentId: M:CRMScript.NetServer.NSProjectAgent.GetProject
@@ -321,7 +480,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSProjectAgent.GetProject
   fullName: CRMScript.NetServer.NSProjectAgent.GetProject
   type: Method
-  summary: "\nGets a NSProject object.\n"
+  summary: "\nGets an NSProject object.\n"
+  remarks: 
+  syntax: 
+    content: NSProject GetProject(Integer projectId);
+    parameters:
+    - id: projectId;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: projectId
+      type: 
+      description: 
+    return:
+      type: CRMScript.NetServer.NSProject
   example: 
   - "\n<pre><code>NSProjectAgent agent;\nNSProject thing = agent.GetProject(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectAgent.GetProjectEntity
@@ -334,7 +505,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSProjectAgent.GetProjectEntity
   fullName: CRMScript.NetServer.NSProjectAgent.GetProjectEntity
   type: Method
-  summary: "\nGets a NSProjectEntity object.\n"
+  summary: "\nGets an NSProjectEntity object.\n"
+  remarks: 
+  syntax: 
+    content: NSProjectEntity GetProjectEntity(Integer projectEntityId);
+    parameters:
+    - id: projectEntityId;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: projectEntityId
+      type: 
+      description: 
+    return:
+      type: CRMScript.NetServer.NSProjectEntity
   example: 
   - "\n<pre><code>NSProjectAgent agent;\nNSProjectEntity thing = agent.GetProjectEntity(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectAgent.GetProjectEvent
@@ -347,7 +530,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSProjectAgent.GetProjectEvent
   fullName: CRMScript.NetServer.NSProjectAgent.GetProjectEvent
   type: Method
-  summary: "\nGets a NSProjectEvent object.\n"
+  summary: "\nGets an NSProjectEvent object.\n"
+  remarks: 
+  syntax: 
+    content: NSProjectEvent GetProjectEvent(Integer projectEventId);
+    parameters:
+    - id: projectEventId;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: projectEventId
+      type: 
+      description: 
+    return:
+      type: CRMScript.NetServer.NSProjectEvent
   example: 
   - "\n<pre><code>NSProjectAgent agent;\nNSProjectEvent thing = agent.GetProjectEvent(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectAgent.GetProjectEventEntity
@@ -360,7 +555,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSProjectAgent.GetProjectEventEntity
   fullName: CRMScript.NetServer.NSProjectAgent.GetProjectEventEntity
   type: Method
-  summary: "\nGets a NSProjectEventEntity object.\n"
+  summary: "\nGets an NSProjectEventEntity object.\n"
+  remarks: 
+  syntax: 
+    content: NSProjectEventEntity GetProjectEventEntity(Integer projectEventEntityId);
+    parameters:
+    - id: projectEventEntityId;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: projectEventEntityId
+      type: 
+      description: 
+    return:
+      type: CRMScript.NetServer.NSProjectEventEntity
   example: 
   - "\n<pre><code>NSProjectAgent agent;\nNSProjectEventEntity thing = agent.GetProjectEventEntity(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectAgent.GetProjectEventEntityFromProjectId
@@ -373,7 +580,16 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSProjectAgent.GetProjectEventEntityFromProjectId
   fullName: CRMScript.NetServer.NSProjectAgent.GetProjectEventEntityFromProjectId
   type: Method
-  summary: "\nGet a NSProjectEventEntity based on a projectId.\n"
+  summary: "\nGet an NSProjectEventEntity based on a projectId.\n"
+  remarks: 
+  syntax: 
+    content: NSProjectEventEntity GetProjectEventEntityFromProjectId(Integer projectId)
+    parameters:
+    - id: projectId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSProjectEventEntity
   example: 
   - "\n<pre><code>NSProjectAgent agent;\nInteger projectId;\nNSProjectEventEntity res = agent.GetProjectEventEntityFromProjectId(projectId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectAgent.GetProjectEventList
@@ -387,6 +603,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSProjectAgent.GetProjectEventList
   type: Method
   summary: "\nGets a vector of NSProjectEvent objects.\n"
+  remarks: 
+  syntax: 
+    content: NSProjectEvent[] GetProjectEventList(Integer[]  projectEventIds);
+    parameters:
+    - id: projectEventIds;
+      type: CRMScript.Global.Integer[]
+      description: 
+    - id: projectEventIds
+      type: 
+      description: 
+    return:
+      type: CRMScript.NetServer.NSProjectEvent[]
   example: 
   - "\n<pre><code>Integer[] ids;\nNSProjectAgent agent;\nNSProjectEvent[] res = agent.GetProjectEventList(ids);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectAgent.GetProjectEventOnPerson
@@ -399,7 +627,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSProjectAgent.GetProjectEventOnPerson
   fullName: CRMScript.NetServer.NSProjectAgent.GetProjectEventOnPerson
   type: Method
-  summary: "\nGets a NSProjectEvent object from a project and a person.\n"
+  summary: "\nGets an NSProjectEvent object from a project and a person.\n"
+  remarks: 
+  syntax: 
+    content: NSProjectEvent GetProjectEventOnPerson(Integer projectId, Integer personId)
+    parameters:
+    - id: projectId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSProjectEvent
   example: 
 - uid: CRMScript.NetServer.NSProjectAgent.GetProjectEventsOnPerson
   commentId: M:CRMScript.NetServer.NSProjectAgent.GetProjectEventsOnPerson
@@ -412,6 +652,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSProjectAgent.GetProjectEventsOnPerson
   type: Method
   summary: "\nGets all project events that belongs to the person specified. The list of events are filtered by the Audience Visibility restrictions set when the project event is created.\n"
+  remarks: 
+  syntax: 
+    content: NSProjectEvent[] GetProjectEventsOnPerson(Integer personId)
+    parameters:
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSProjectEvent[]
   example: 
   - "\n<pre><code>NSProjectAgent agent;\nInteger personId;\nNSProjectEvent[] res = agent.GetProjectEventsOnPerson(personId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectAgent.GetProjectImage
@@ -425,6 +674,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSProjectAgent.GetProjectImage
   type: Method
   summary: "\nReturns the project image that is displayed in the CRM application.\n"
+  remarks: 
+  syntax: 
+    content: NSImage GetProjectImage(Integer projectId)
+    parameters:
+    - id: projectId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSImage
   example: 
   - "\n<pre><code>NSProjectAgent agent;\nInteger projectId;\nNSImage res = agent.GetProjectImage(projectId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectAgent.GetProjectList
@@ -438,6 +696,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSProjectAgent.GetProjectList
   type: Method
   summary: "\nGets a vector of Project objects.\n"
+  remarks: 
+  syntax: 
+    content: NSProject[] GetProjectList(Integer[]  projectIds);
+    parameters:
+    - id: projectIds;
+      type: CRMScript.Global.Integer[]
+      description: 
+    - id: projectIds
+      type: 
+      description: 
+    return:
+      type: CRMScript.NetServer.NSProject[]
   example: 
   - "\n<pre><code>Integer[] ids;\nNSProjectAgent agent;\nNSProject[] res = agent.GetProjectList(ids);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectAgent.GetProjectMember
@@ -450,7 +720,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSProjectAgent.GetProjectMember
   fullName: CRMScript.NetServer.NSProjectAgent.GetProjectMember
   type: Method
-  summary: "\nGets a NSProjectMember object.\n"
+  summary: "\nGets an NSProjectMember object.\n"
+  remarks: 
+  syntax: 
+    content: NSProjectMember GetProjectMember(Integer projectMemberId);
+    parameters:
+    - id: projectMemberId;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: projectMemberId
+      type: 
+      description: 
+    return:
+      type: CRMScript.NetServer.NSProjectMember
   example: 
   - "\n<pre><code>NSProjectAgent agent;\nNSProjectMember thing = agent.GetProjectMember(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectAgent.GetProjectMembers
@@ -464,6 +746,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSProjectAgent.GetProjectMembers
   type: Method
   summary: "\nReturns an array of project members\n"
+  remarks: 
+  syntax: 
+    content: NSProjectMember[] GetProjectMembers(Integer projectId)
+    parameters:
+    - id: projectId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSProjectMember[]
   example: 
   - "\n<pre><code>NSProjectAgent agent;\nInteger projectId;\nNSProjectMember[] res = agent.GetProjectMembers(projectId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectAgent.GetProjectMembersById
@@ -476,7 +767,16 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSProjectAgent.GetProjectMembersById
   fullName: CRMScript.NetServer.NSProjectAgent.GetProjectMembersById
   type: Method
-  summary: "\nReturns an array of project members\n"
+  summary: "\nReturns an array of project members<p></p>\n<strong>Returns:</strong>NSProjectMember[]\n"
+  remarks: 
+  syntax: 
+    content: NSProjectMember[] GetProjectMembersById(Integer[] projectMemberIds)
+    parameters:
+    - id: projectMemberIds
+      type: CRMScript.Global.Integer[]
+      description: 
+    return:
+      type: CRMScript.NetServer.NSProjectMember[]
   example: 
   - "\n<pre><code>NSProjectAgent agent;\nInteger rojectMemberIds;\nNSProjectMember[] res = agent.GetProjectMembersById(projectMemberIds);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectAgent.GetProjectsFromContact
@@ -490,6 +790,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSProjectAgent.GetProjectsFromContact
   type: Method
   summary: "\nReturns all projects where the given contact has projectmembers.\n"
+  remarks: 
+  syntax: 
+    content: NSProject[] GetProjectsFromContact(Integer contactId)
+    parameters:
+    - id: contactId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSProject[]
   example: 
   - "\n<pre><code>NSProjectAgent agent;\nInteger contactId;\nNSProject[] res = agent.GetProjectsFromContact(contactId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectAgent.GetProjectsFromPerson
@@ -503,6 +812,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSProjectAgent.GetProjectsFromPerson
   type: Method
   summary: "\nReturn all projects where the person is project member.\n"
+  remarks: 
+  syntax: 
+    content: NSProject[] GetProjectsFromPerson(Integer personId)
+    parameters:
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSProject[]
   example: 
   - "\n<pre><code>NSProjectAgent agent;\nInteger personId;\nNSProject[] res = agent.GetProjectsFromPerson(personId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectAgent.GetPublishedProject
@@ -516,6 +834,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSProjectAgent.GetPublishedProject
   type: Method
   summary: "\nGet published project by project id.\n"
+  remarks: 
+  syntax: 
+    content: NSProject GetPublishedProject(Integer projectId)
+    parameters:
+    - id: projectId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSProject
   example: 
   - "\n<pre><code>NSProjectAgent agent;\nInteger projectId;\nNSProject res = agent.GetPublishedProject(projectId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectAgent.GetPublishedProjects
@@ -529,6 +856,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSProjectAgent.GetPublishedProjects
   type: Method
   summary: "\nGet published projects by project ids.\n"
+  remarks: 
+  syntax: 
+    content: NSProject[] GetPublishedProjects(Integer[] projectIds)
+    parameters:
+    - id: projectIds
+      type: CRMScript.Global.Integer[]
+      description: 
+    return:
+      type: CRMScript.NetServer.NSProject[]
   example: 
   - "\n<pre><code>NSProjectAgent agent;\nInteger[] projectIds;\nNSProject[] res = agent.GetPublishedProjects(projectIds);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectAgent.GetPublishedProjectsOnPersonId
@@ -542,6 +878,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSProjectAgent.GetPublishedProjectsOnPersonId
   type: Method
   summary: "\nGet published projects where person  is a member\n"
+  remarks: 
+  syntax: 
+    content: NSProject[] GetPublishedProjectsOnPersonId(Integer personId)
+    parameters:
+    - id: personId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSProject[]
   example: 
   - "\n<pre><code>NSProjectAgent agent;\nInteger personId;\nNSProject[] res = agent.GetPublishedProjectsOnPersonId(personId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectAgent.HasGuide
@@ -555,6 +900,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSProjectAgent.HasGuide
   type: Method
   summary: "\nDoes this project have a guide associated with its project type?\n"
+  remarks: 
+  syntax: 
+    content: Bool HasGuide(Integer projectId)
+    parameters:
+    - id: projectId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Bool
   example: 
   - "\n<pre><code>NSProjectAgent agent;\nInteger projectId;\nBool res = agent.HasGuide(projectId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectAgent.HasGuideActivities
@@ -568,6 +922,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSProjectAgent.HasGuideActivities
   type: Method
   summary: 
+  remarks: 
+  syntax: 
+    content: Bool HasGuideActivities(Integer projectId)
+    parameters:
+    - id: projectId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Bool
   example: 
 - uid: CRMScript.NetServer.NSProjectAgent.IsNumberValid
   commentId: M:CRMScript.NetServer.NSProjectAgent.IsNumberValid
@@ -580,6 +943,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSProjectAgent.IsNumberValid
   type: Method
   summary: "\nChecks if the number is unique or required.  The setting is configured from admin under system options.\n"
+  remarks: 
+  syntax: 
+    content: Bool IsNumberValid(Integer contactId, String number)
+    parameters:
+    - id: contactId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: number
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.Bool
   example: 
   - "\n<pre><code>NSProjectAgent agent;\nInteger contactId;\nString number;\nBool res = agent.IsNumberValid(contactId, number);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectAgent.Merge
@@ -593,6 +968,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSProjectAgent.Merge
   type: Method
   summary: "\nMerge two projects into one, removing the source project in the process\n"
+  remarks: 
+  syntax: 
+    content: Void Merge(Integer sourceProjectId, Integer destinationProjectId, Bool replaceEmptyFieldsOnDestination)
+    parameters:
+    - id: sourceProjectId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: destinationProjectId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: replaceEmptyFieldsOnDestination
+      type: CRMScript.Global.Bool
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSProjectAgent.#ctor
   commentId: M:CRMScript.NetServer.NSProjectAgent.#ctor
@@ -603,8 +993,11 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   name: '#ctor'
   nameWithType: NSProjectAgent.#ctor
   fullName: CRMScript.NetServer.NSProjectAgent.#ctor
-  type: Method
+  type: Constructor
   summary: "\nCollection of all services that work with Project data.\n"
+  remarks: 
+  syntax: 
+    content: NSProjectAgent
   example: 
   - "\n<pre><code>NSProjectAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectAgent.OfferAutoNextStatusOnApppointmentCompleted
@@ -617,7 +1010,16 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSProjectAgent.OfferAutoNextStatusOnApppointmentCompleted
   fullName: CRMScript.NetServer.NSProjectAgent.OfferAutoNextStatusOnApppointmentCompleted
   type: Method
-  summary: 
+  summary: "\n<strong>Returns:</strong>Bool\n"
+  remarks: 
+  syntax: 
+    content: Bool OfferAutoNextStatusOnApppointmentCompleted(Integer appointmentId)
+    parameters:
+    - id: appointmentId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.Global.Bool
   example: 
 - uid: CRMScript.NetServer.NSProjectAgent.SaveProjectEntity
   commentId: M:CRMScript.NetServer.NSProjectAgent.SaveProjectEntity
@@ -630,6 +1032,13 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSProjectAgent.SaveProjectEntity
   type: Method
   summary: "\nCRMScript method in the Attachment class that creates or updates an NSProjectEntityUpdates the existing NSProjectEntity or creates a new NSProjectEntity if the  ID parameter is 0.<p></p>\n<strong>Returns:</strong>New or updated NSProjectEntity<p></p>\n<code>NSProjectEntity SaveProjectEntity(NSProjectEntity projectEntity)</code>\n"
+  remarks: 
+  syntax: 
+    content: SaveProjectEntity()
+    parameters:
+    - id: projectEntity
+      type: CRMScript.NetServer.NSProjectEntity
+      description: The entity to save.
   example: 
   - "\n<pre><code>NSProject  agent;\nNSProjectEntity thing = agent.CreateDefaultProjectEntity();\nthing = agent.SaveProjectEntity(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectAgent.SaveProjectEventEntity
@@ -643,6 +1052,10 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSProjectAgent.SaveProjectEventEntity
   type: Method
   summary: "\nCRMScript method in the Attachment class that creates or updates an NSProjectEventEntityUpdates the existing NSProjectEventEntity or creates a new NSProjectEventEntity if the ID parameter is 0.<p></p>\nReturns the new or updated NSProjectEventEntity.<p></p>\n<code>NSProjectEventEntity SaveProjectEventEntity(NSProjectEventEntity projectEventEntity)</code>\n"
+  remarks: 
+  syntax: 
+    content: SaveProjectEventEntity()
+    parameters:
   example: 
   - "\n<pre><code>NSProject  agent;\nNSProjectEventEntity thing = agent.CreateDefaultProjectEventEntity();\nthing = agent.SaveProjectEventEntity(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectAgent.SaveProjectMember
@@ -656,6 +1069,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSProjectAgent.SaveProjectMember
   type: Method
   summary: "\nUpdates the existing NSProjectMember or creates a new NSProjectMember if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>projectMember</strong>The NSProjectMember to save.</li></ul><strong>Returns:</strong>NSProjectMember<p></p>\n<pre><code>NSProject  agent;\nNSProjectMember thing = agent.CreateDefaultProjectMember();\nthing = agent.SaveProjectMember(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSProjectMember SaveProjectMember(NSProjectMember projectMember);
+    parameters:
+    - id: projectMember;
+      type: CRMScript.NetServer.NSProjectMember
+      description: 
+    return:
+      type: CRMScript.NetServer.NSProjectMember
   example: 
   - "\n<pre><code>NSProject  agent;\nNSProjectMember thing = agent.CreateDefaultProjectMember();\nthing = agent.SaveProjectMember(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectAgent.SaveProjectMembersFunctionAndComment
@@ -669,6 +1091,21 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSProjectAgent.SaveProjectMembersFunctionAndComment
   type: Method
   summary: "\nSaves role and comment on an array of projectmembers represented by ids\n"
+  remarks: 
+  syntax: 
+    content: Void SaveProjectMembersFunctionAndComment(Integer[] projectMemberIds, Integer roleId, String comment)
+    parameters:
+    - id: projectMemberIds
+      type: CRMScript.Global.Integer[]
+      description: 
+    - id: roleId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: comment
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSProjectAgent.SetDuplicateRulesStatus
   commentId: M:CRMScript.NetServer.NSProjectAgent.SetDuplicateRulesStatus
@@ -681,6 +1118,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSProjectAgent.SetDuplicateRulesStatus
   type: Method
   summary: "\nSet which duplicate rules should be active or not\n"
+  remarks: 
+  syntax: 
+    content: Void SetDuplicateRulesStatus(NSDuplicateRule[] rules)
+    parameters:
+    - id: rules
+      type: CRMScript.NetServer.NSDuplicateRule[]
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSProjectAgent.SetProjectImage
   commentId: M:CRMScript.NetServer.NSProjectAgent.SetProjectImage
@@ -693,6 +1139,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSProjectAgent.SetProjectImage
   type: Method
   summary: "\nStores the project image that is displayed in the CRM application.\n"
+  remarks: 
+  syntax: 
+    content: Void SetProjectImage(Integer projectId, NSImage image)
+    parameters:
+    - id: projectId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: image
+      type: CRMScript.NetServer.NSImage
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSProjectAgent.UpdateProjectMember
   commentId: M:CRMScript.NetServer.NSProjectAgent.UpdateProjectMember
@@ -704,7 +1162,16 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSProjectAgent.UpdateProjectMember
   fullName: CRMScript.NetServer.NSProjectAgent.UpdateProjectMember
   type: Method
-  summary: "\nUpdates a NSProjectMember row.\n"
+  summary: "\nUpdates an NSProjectMember row.\n"
+  remarks: 
+  syntax: 
+    content: NSProjectMember UpdateProjectMember(NSProjectMember projectMember)
+    parameters:
+    - id: projectMember
+      type: CRMScript.NetServer.NSProjectMember
+      description: 
+    return:
+      type: CRMScript.NetServer.NSProjectMember
   example: 
   - "\n<pre><code>NSProjectAgent agent;\nNSProjectMember projectMember;\nNSProjectMember res = agent.UpdateProjectMember(projectMember);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectAgent.ValidateProjectEntity
@@ -718,6 +1185,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSProjectAgent.ValidateProjectEntity
   type: Method
   summary: "\nCheck that entity is ready for saving, return error messages by field.\n"
+  remarks: 
+  syntax: 
+    content: StringDictionary ValidateProjectEntity(ProjectEntity projectEntity)
+    parameters:
+    - id: projectEntity
+      type: CRMScript.Native.ProjectEntity
+      description: 
+    return:
+      type: CRMScript.Global.StringDictionary
   example: 
   - "\n<pre><code>NSProjectAgent agent;\nProjectEntity projectEntity;\nStringDictionary res = agent.ValidateProjectEntity(projectEntity);</code></pre>\n"
 references:
@@ -727,3 +1203,207 @@ references:
   name: NSProjectAgent
   nameWithType: NSProjectAgent
   fullName: CRMScript.NetServer.NSProjectAgent
+- uid: CRMScript.Global.Integer
+  commentId: T:CRMScript.Global.Integer
+  isExternal: true
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Global.Integer
+- uid: CRMScript.NetServer.NSProjectMember[]
+  isExternal: true
+  name: NSProjectMember[]
+  nameWithType: NSProjectMember[]
+  fullName: CRMScript.NetServer.NSProjectMember[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSProjectMember
+    isExternal: true
+    name: NSProjectMember
+    nameWithType: NSProjectMember
+    fullName: CRMScript.NetServer.NSProjectMember
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSProjectMember
+  commentId: T:CRMScript.NetServer.NSProjectMember
+  isExternal: true
+  name: NSProjectMember
+  nameWithType: NSProjectMember
+  fullName: CRMScript.NetServer.NSProjectMember
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void
+- uid: CRMScript.NetServer.NSProjectEntity
+  commentId: T:CRMScript.NetServer.NSProjectEntity
+  isExternal: true
+  name: NSProjectEntity
+  nameWithType: NSProjectEntity
+  fullName: CRMScript.NetServer.NSProjectEntity
+- uid: CRMScript.NetServer.NSProjectEventEntity
+  commentId: T:CRMScript.NetServer.NSProjectEventEntity
+  isExternal: true
+  name: NSProjectEventEntity
+  nameWithType: NSProjectEventEntity
+  fullName: CRMScript.NetServer.NSProjectEventEntity
+- uid: CRMScript.NetServer.NSProjectMember
+  commentId: T:CRMScript.NetServer.NSProjectMember
+  isExternal: true
+  name: NSProjectMember
+  nameWithType: NSProjectMember
+  fullName: CRMScript.NetServer.NSProjectMember
+- uid: CRMScript.NetServer.NSDuplicateEntry
+  commentId: T:CRMScript.NetServer.NSDuplicateEntry
+  isExternal: true
+  name: NSDuplicateEntry
+  nameWithType: NSDuplicateEntry
+  fullName: CRMScript.NetServer.NSDuplicateEntry
+- uid: CRMScript.Global.Integer[]
+  isExternal: true
+  name: Integer[]
+  nameWithType: Integer[]
+  fullName: CRMScript.Global.Integer[]
+  spec.crmscript:
+  - uid: CRMScript.Global.Integer
+    isExternal: true
+    name: Integer
+    nameWithType: Integer
+    fullName: CRMScript.Global.Integer
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.Global.Integer
+  commentId: T:CRMScript.Global.Integer
+  isExternal: true
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Global.Integer
+- uid: CRMScript.NetServer.NSDuplicateRule[]
+  isExternal: true
+  name: NSDuplicateRule[]
+  nameWithType: NSDuplicateRule[]
+  fullName: CRMScript.NetServer.NSDuplicateRule[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSDuplicateRule
+    isExternal: true
+    name: NSDuplicateRule
+    nameWithType: NSDuplicateRule
+    fullName: CRMScript.NetServer.NSDuplicateRule
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSDuplicateRule
+  commentId: T:CRMScript.NetServer.NSDuplicateRule
+  isExternal: true
+  name: NSDuplicateRule
+  nameWithType: NSDuplicateRule
+  fullName: CRMScript.NetServer.NSDuplicateRule
+- uid: CRMScript.Global.String
+  commentId: T:CRMScript.Global.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: CRMScript.Global.String
+- uid: CRMScript.NetServer.NSDuplicateEntry[]
+  isExternal: true
+  name: NSDuplicateEntry[]
+  nameWithType: NSDuplicateEntry[]
+  fullName: CRMScript.NetServer.NSDuplicateEntry[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSDuplicateEntry
+    isExternal: true
+    name: NSDuplicateEntry
+    nameWithType: NSDuplicateEntry
+    fullName: CRMScript.NetServer.NSDuplicateEntry
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSDuplicateEntry
+  commentId: T:CRMScript.NetServer.NSDuplicateEntry
+  isExternal: true
+  name: NSDuplicateEntry
+  nameWithType: NSDuplicateEntry
+  fullName: CRMScript.NetServer.NSDuplicateEntry
+- uid: CRMScript.NetServer.NSProject[]
+  isExternal: true
+  name: NSProject[]
+  nameWithType: NSProject[]
+  fullName: CRMScript.NetServer.NSProject[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSProject
+    isExternal: true
+    name: NSProject
+    nameWithType: NSProject
+    fullName: CRMScript.NetServer.NSProject
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSProject
+  commentId: T:CRMScript.NetServer.NSProject
+  isExternal: true
+  name: NSProject
+  nameWithType: NSProject
+  fullName: CRMScript.NetServer.NSProject
+- uid: CRMScript.NetServer.NSProjectEvent[]
+  isExternal: true
+  name: NSProjectEvent[]
+  nameWithType: NSProjectEvent[]
+  fullName: CRMScript.NetServer.NSProjectEvent[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSProjectEvent
+    isExternal: true
+    name: NSProjectEvent
+    nameWithType: NSProjectEvent
+    fullName: CRMScript.NetServer.NSProjectEvent
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSProjectEvent
+  commentId: T:CRMScript.NetServer.NSProjectEvent
+  isExternal: true
+  name: NSProjectEvent
+  nameWithType: NSProjectEvent
+  fullName: CRMScript.NetServer.NSProjectEvent
+- uid: CRMScript.Global.Bool
+  commentId: T:CRMScript.Global.Bool
+  isExternal: true
+  name: Bool
+  nameWithType: Bool
+  fullName: CRMScript.Global.Bool
+- uid: CRMScript.NetServer.NSAppointment
+  commentId: T:CRMScript.NetServer.NSAppointment
+  isExternal: true
+  name: NSAppointment
+  nameWithType: NSAppointment
+  fullName: CRMScript.NetServer.NSAppointment
+- uid: CRMScript.NetServer.NSProject
+  commentId: T:CRMScript.NetServer.NSProject
+  isExternal: true
+  name: NSProject
+  nameWithType: NSProject
+  fullName: CRMScript.NetServer.NSProject
+- uid: CRMScript.NetServer.NSProjectEvent
+  commentId: T:CRMScript.NetServer.NSProjectEvent
+  isExternal: true
+  name: NSProjectEvent
+  nameWithType: NSProjectEvent
+  fullName: CRMScript.NetServer.NSProjectEvent
+- uid: CRMScript.NetServer.NSImage
+  commentId: T:CRMScript.NetServer.NSImage
+  isExternal: true
+  name: NSImage
+  nameWithType: NSImage
+  fullName: CRMScript.NetServer.NSImage
+- uid: CRMScript.Native.ProjectEntity
+  commentId: T:CRMScript.Native.ProjectEntity
+  isExternal: true
+  name: ProjectEntity
+  nameWithType: ProjectEntity
+  fullName: CRMScript.Native.ProjectEntity
+- uid: CRMScript.Global.StringDictionary
+  commentId: T:CRMScript.Global.StringDictionary
+  isExternal: true
+  name: StringDictionary
+  nameWithType: StringDictionary
+  fullName: CRMScript.Global.StringDictionary

@@ -29,6 +29,12 @@ items:
   fullName: CRMScript.NetServer.NSActivityInformationListItem.GetActivityInformation
   type: Method
   summary: "\nActivity information summary* number of free and busy activities.<p></p>\n<strong>Returns:</strong>NSActivitySummary<p></p>\n<pre><code>NSActivityInformationListItem thing;\nNSActivitySummary activityInformation  = thing.GetActivityInformation();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSActivitySummary GetActivityInformation()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSActivitySummary
   example: 
   - "\n<pre><code>NSActivityInformationListItem thing;\nNSActivitySummary activityInformation  = thing.GetActivityInformation();</code></pre>\n"
 - uid: CRMScript.NetServer.NSActivityInformationListItem.GetDate
@@ -42,6 +48,12 @@ items:
   fullName: CRMScript.NetServer.NSActivityInformationListItem.GetDate
   type: Method
   summary: "\nDate that this item is valid for; there is exactly one item per date, ordered by date.<p></p>\n<strong>Returns:</strong>DateTime<p></p>\n<pre><code>NSActivityInformationListItem thing;\nDateTime date  = thing.GetDate();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: DateTime GetDate()
+    parameters:
+    return:
+      type: CRMScript.Global.DateTime
   example: 
   - "\n<pre><code>NSActivityInformationListItem thing;\nDateTime date  = thing.GetDate();</code></pre>\n"
 - uid: CRMScript.NetServer.NSActivityInformationListItem.#ctor
@@ -53,8 +65,11 @@ items:
   name: '#ctor'
   nameWithType: NSActivityInformationListItem.#ctor
   fullName: CRMScript.NetServer.NSActivityInformationListItem.#ctor
-  type: Method
+  type: Constructor
   summary: 
+  remarks: 
+  syntax: 
+    content: NSActivityInformationListItem
   example: 
 - uid: CRMScript.NetServer.NSActivityInformationListItem.SetActivityInformation
   commentId: M:CRMScript.NetServer.NSActivityInformationListItem.SetActivityInformation
@@ -66,7 +81,14 @@ items:
   nameWithType: NSActivityInformationListItem.SetActivityInformation
   fullName: CRMScript.NetServer.NSActivityInformationListItem.SetActivityInformation
   type: Method
-  summary: "\nActivity information summary* number of free and busy activities.<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>activityInformation</strong>NSActivitySummary</li></ul><pre><code>NSActivityInformationListItem thing;\nNSActivitySummary activityInformation;\nthing.SetActivityInformation(activityInformation);</code></pre>\n"
+  summary: "\nActivity information summary* number of free and busy activities.\n"
+  remarks: 
+  syntax: 
+    content: SetActivityInformation(NSActivitySummary activityInformation)
+    parameters:
+    - id: activityInformation
+      type: CRMScript.NetServer.NSActivitySummary
+      description: 
   example: 
   - "\n<pre><code>NSActivityInformationListItem thing;\nNSActivitySummary activityInformation;\nthing.SetActivityInformation(activityInformation);</code></pre>\n"
 - uid: CRMScript.NetServer.NSActivityInformationListItem.SetDate
@@ -79,7 +101,14 @@ items:
   nameWithType: NSActivityInformationListItem.SetDate
   fullName: CRMScript.NetServer.NSActivityInformationListItem.SetDate
   type: Method
-  summary: "\nDate that this item is valid for; there is exactly one item per date, ordered by date.<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>date</strong>DateTime</li></ul><pre><code>NSActivityInformationListItem thing;\nDateTime date;\nthing.SetDate(date);</code></pre>\n"
+  summary: "\nDate that this item is valid for; there is exactly one item per date, ordered by date.\n"
+  remarks: 
+  syntax: 
+    content: SetDate(DateTime date)
+    parameters:
+    - id: date
+      type: CRMScript.Global.DateTime
+      description: 
   example: 
   - "\n<pre><code>NSActivityInformationListItem thing;\nDateTime date;\nthing.SetDate(date);</code></pre>\n"
 references:
@@ -89,3 +118,15 @@ references:
   name: NSActivityInformationListItem
   nameWithType: NSActivityInformationListItem
   fullName: CRMScript.NetServer.NSActivityInformationListItem
+- uid: CRMScript.NetServer.NSActivitySummary
+  commentId: T:CRMScript.NetServer.NSActivitySummary
+  isExternal: true
+  name: NSActivitySummary
+  nameWithType: NSActivitySummary
+  fullName: CRMScript.NetServer.NSActivitySummary
+- uid: CRMScript.Global.DateTime
+  commentId: T:CRMScript.Global.DateTime
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: CRMScript.Global.DateTime

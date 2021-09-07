@@ -30,6 +30,15 @@ items:
   fullName: CRMScript.NetServer.NSImportAgent.CreateDefaultImportLine
   type: Method
   summary: "\nCreate a new empty import row with x count of values\n"
+  remarks: 
+  syntax: 
+    content: NSImportLine CreateDefaultImportLine(Integer countColumns)
+    parameters:
+    - id: countColumns
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSImportLine
   example: 
   - "\n<pre><code>NSImportAgent agent;\nInteger countColumns;\nNSImportLine res = agent.CreateDefaultImportLine(countColumns);</code></pre>\n"
 - uid: CRMScript.NetServer.NSImportAgent.CreateErpImportData
@@ -42,7 +51,25 @@ items:
   nameWithType: NSImportAgent.CreateErpImportData
   fullName: CRMScript.NetServer.NSImportAgent.CreateErpImportData
   type: Method
-  summary: "\nPopulates the ImportLines and columnDefs basedfrom erp system\n"
+  summary: "\nPopulates the ImportLines and columnDefs basedfrom erp system<p></p>\n<ul><li><strong>Restriction</strong>Archive restrictions.</li><li><strong>columns</strong>Columns.</li><li><strong>connectionId</strong>Connection id for Erp system</li><li><strong>erpActorType</strong>Erp Actor type</li><li>Enum: 0 = Unknown</li><li>Enum: 1 = Customer</li><li>Enum: 2 = Supplier</li><li>Enum: 3 = Partner</li><li>Enum: 4 = Person</li><li>Enum: 5 = Project</li><li>Enum: 6 = Employee</li><li>Enum: 7 = Sale</li></ul><strong>Returns:</strong>NSImportErpData<p></p>\n<pre><code>NSImportAgent agent;\nNSArchiveRestrictionInfo[] restriction;\nString[] columns;\nInteger connectionId;\nInteger erpActorType;\nNSImportErpData res = agent.CreateErpImportData(restriction, columns, connectionId, erpActorType);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSImportErpData CreateErpImportData(NSArchiveRestrictionInfo[] restriction, String[] columns, Integer connectionId, Integer erpActorType)
+    parameters:
+    - id: restriction
+      type: CRMScript.NetServer.NSArchiveRestrictionInfo[]
+      description: 
+    - id: columns
+      type: CRMScript.Global.String[]
+      description: 
+    - id: connectionId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: erpActorType
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSImportErpData
   example: 
   - "\n<pre><code>NSImportAgent agent;\nNSArchiveRestrictionInfo[] restriction;\nString[] columns;\nInteger connectionId;\nInteger erpActorType;\nNSImportErpData res = agent.CreateErpImportData(restriction, columns, connectionId, erpActorType);</code></pre>\n"
 - uid: CRMScript.NetServer.NSImportAgent.#ctor
@@ -54,8 +81,11 @@ items:
   name: '#ctor'
   nameWithType: NSImportAgent.#ctor
   fullName: CRMScript.NetServer.NSImportAgent.#ctor
-  type: Method
+  type: Constructor
   summary: "\nThis agent can be used to import data into the system.\n"
+  remarks: 
+  syntax: 
+    content: NSImportAgent
   example: 
   - "\n<pre><code>NSImportAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSImportAgent.PreviewImport
@@ -69,6 +99,24 @@ items:
   fullName: CRMScript.NetServer.NSImportAgent.PreviewImport
   type: Method
   summary: "\nPreview the import\n"
+  remarks: 
+  syntax: 
+    content: NSImportLine[] PreviewImport(NSImportLine[] importLines, String[] columnDefinition, String culture, String context)
+    parameters:
+    - id: importLines
+      type: CRMScript.NetServer.NSImportLine[]
+      description: 
+    - id: columnDefinition
+      type: CRMScript.Global.String[]
+      description: 
+    - id: culture
+      type: CRMScript.Global.String
+      description: 
+    - id: context
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSImportLine[]
   example: 
   - "\n<pre><code>NSImportAgent agent;\nNSImportLine[] importLines;\nString[] columnDefinition;\nString culture;\nString context;\nNSImportLine[] res = agent.PreviewImport(importLines, columnDefinition, culture, context);</code></pre>\n"
 - uid: CRMScript.NetServer.NSImportAgent.SaveImport
@@ -82,6 +130,27 @@ items:
   fullName: CRMScript.NetServer.NSImportAgent.SaveImport
   type: Method
   summary: "\nDo the actual import\n"
+  remarks: 
+  syntax: 
+    content: Integer[] SaveImport(NSImportLine[] importLines, String[] columnDefinition, Bool createSelection, String culture, String context)
+    parameters:
+    - id: importLines
+      type: CRMScript.NetServer.NSImportLine[]
+      description: 
+    - id: columnDefinition
+      type: CRMScript.Global.String[]
+      description: 
+    - id: createSelection
+      type: CRMScript.Global.Bool
+      description: 
+    - id: culture
+      type: CRMScript.Global.String
+      description: 
+    - id: context
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.Integer[]
   example: 
   - "\n<pre><code>NSImportAgent agent;\nNSImportLine[] importLines;\nString[] columnDefinition;\nBool createSelection;\nString culture;\nString context;\nInteger[] res = agent.SaveImport(importLines, columnDefinition, createSelection, culture, context);</code></pre>\n"
 references:
@@ -91,3 +160,113 @@ references:
   name: NSImportAgent
   nameWithType: NSImportAgent
   fullName: CRMScript.NetServer.NSImportAgent
+- uid: CRMScript.Global.Integer
+  commentId: T:CRMScript.Global.Integer
+  isExternal: true
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Global.Integer
+- uid: CRMScript.NetServer.NSImportLine
+  commentId: T:CRMScript.NetServer.NSImportLine
+  isExternal: true
+  name: NSImportLine
+  nameWithType: NSImportLine
+  fullName: CRMScript.NetServer.NSImportLine
+- uid: CRMScript.NetServer.NSArchiveRestrictionInfo[]
+  isExternal: true
+  name: NSArchiveRestrictionInfo[]
+  nameWithType: NSArchiveRestrictionInfo[]
+  fullName: CRMScript.NetServer.NSArchiveRestrictionInfo[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSArchiveRestrictionInfo
+    isExternal: true
+    name: NSArchiveRestrictionInfo
+    nameWithType: NSArchiveRestrictionInfo
+    fullName: CRMScript.NetServer.NSArchiveRestrictionInfo
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSArchiveRestrictionInfo
+  commentId: T:CRMScript.NetServer.NSArchiveRestrictionInfo
+  isExternal: true
+  name: NSArchiveRestrictionInfo
+  nameWithType: NSArchiveRestrictionInfo
+  fullName: CRMScript.NetServer.NSArchiveRestrictionInfo
+- uid: CRMScript.Global.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: CRMScript.Global.String[]
+  spec.crmscript:
+  - uid: CRMScript.Global.String
+    isExternal: true
+    name: String
+    nameWithType: String
+    fullName: CRMScript.Global.String
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.Global.String
+  commentId: T:CRMScript.Global.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: CRMScript.Global.String
+- uid: CRMScript.NetServer.NSImportErpData
+  commentId: T:CRMScript.NetServer.NSImportErpData
+  isExternal: true
+  name: NSImportErpData
+  nameWithType: NSImportErpData
+  fullName: CRMScript.NetServer.NSImportErpData
+- uid: CRMScript.NetServer.NSImportLine[]
+  isExternal: true
+  name: NSImportLine[]
+  nameWithType: NSImportLine[]
+  fullName: CRMScript.NetServer.NSImportLine[]
+  spec.crmscript:
+  - uid: CRMScript.NetServer.NSImportLine
+    isExternal: true
+    name: NSImportLine
+    nameWithType: NSImportLine
+    fullName: CRMScript.NetServer.NSImportLine
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.NetServer.NSImportLine
+  commentId: T:CRMScript.NetServer.NSImportLine
+  isExternal: true
+  name: NSImportLine
+  nameWithType: NSImportLine
+  fullName: CRMScript.NetServer.NSImportLine
+- uid: CRMScript.Global.String
+  commentId: T:CRMScript.Global.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: CRMScript.Global.String
+- uid: CRMScript.Global.Bool
+  commentId: T:CRMScript.Global.Bool
+  isExternal: true
+  name: Bool
+  nameWithType: Bool
+  fullName: CRMScript.Global.Bool
+- uid: CRMScript.Global.Integer[]
+  isExternal: true
+  name: Integer[]
+  nameWithType: Integer[]
+  fullName: CRMScript.Global.Integer[]
+  spec.crmscript:
+  - uid: CRMScript.Global.Integer
+    isExternal: true
+    name: Integer
+    nameWithType: Integer
+    fullName: CRMScript.Global.Integer
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+- uid: CRMScript.Global.Integer
+  commentId: T:CRMScript.Global.Integer
+  isExternal: true
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Global.Integer

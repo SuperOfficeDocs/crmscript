@@ -51,6 +51,12 @@ items:
   type: Method
   summary: "\nSet default values into a new NSCRMScriptEntity.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSCRMScriptEntity<p></p>\n<pre><code>NSCRMScriptAgent agent;\nNSCRMScriptEntity thing = agent.CreateDefaultCRMScriptEntity();\nthing = agent.SaveCRMScriptEntity(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSCRMScriptEntity CreateDefaultCRMScriptEntity()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSCRMScriptEntity
   example: 
   - "\n<pre><code>NSCRMScriptAgent agent;\nNSCRMScriptEntity thing = agent.CreateDefaultCRMScriptEntity();\nthing = agent.SaveCRMScriptEntity(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCRMScriptAgent.CreateDefaultTriggerScriptEntity
@@ -65,6 +71,12 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   type: Method
   summary: "\nSet default values into a new NSTriggerScriptEntity.
 NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSTriggerScriptEntity<p></p>\n<pre><code>NSCRMScriptAgent agent;\nNSTriggerScriptEntity thing = agent.CreateDefaultTriggerScriptEntity();\nthing = agent.SaveTriggerScriptEntity(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSTriggerScriptEntity CreateDefaultTriggerScriptEntity()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSTriggerScriptEntity
   example: 
   - "\n<pre><code>NSCRMScriptAgent agent;\nNSTriggerScriptEntity thing = agent.CreateDefaultTriggerScriptEntity();\nthing = agent.SaveTriggerScriptEntity(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCRMScriptAgent.DeleteCRMScriptByUniqueIdentifier
@@ -78,6 +90,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSCRMScriptAgent.DeleteCRMScriptByUniqueIdentifier
   type: Method
   summary: "\nDelete the CRMScript\n"
+  remarks: 
+  syntax: 
+    content: Void DeleteCRMScriptByUniqueIdentifier(String uniqueIdentifier)
+    parameters:
+    - id: uniqueIdentifier
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSCRMScriptAgent agent;\nString uniqueIdentifier;\nagent.DeleteCRMScriptByUniqueIdentifier(uniqueIdentifier);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCRMScriptAgent.DeleteCRMScriptEntity
@@ -91,6 +112,16 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSCRMScriptAgent.DeleteCRMScriptEntity
   type: Method
   summary: "\nDeletes the NSCRMScriptEntity\n"
+  remarks: 
+  syntax: 
+    content: DeleteCRMScriptEntity(Integer cRMScriptEntity);
+    parameters:
+    - id: cRMScriptEntity;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: cRMScriptEntityId
+      type: 
+      description: 
   example: 
   - "\n<pre><code>NSCRMScriptAgent agent;\nagent.DeleteCRMScriptEntity(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCRMScriptAgent.DeleteTriggerScriptByUniqueId
@@ -104,6 +135,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSCRMScriptAgent.DeleteTriggerScriptByUniqueId
   type: Method
   summary: "\nDelete a trigger CRMScript.\n"
+  remarks: 
+  syntax: 
+    content: Void DeleteTriggerScriptByUniqueId(String triggerScriptUniqueId)
+    parameters:
+    - id: triggerScriptUniqueId
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSCRMScriptAgent agent;\nString triggerScriptUniqueId;\nagent.DeleteTriggerScriptByUniqueId(triggerScriptUniqueId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCRMScriptAgent.DeleteTriggerScriptEntity
@@ -117,6 +157,16 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSCRMScriptAgent.DeleteTriggerScriptEntity
   type: Method
   summary: "\nDeletes the NSTriggerScriptEntity\n"
+  remarks: 
+  syntax: 
+    content: DeleteTriggerScriptEntity(Integer triggerScriptEntity);
+    parameters:
+    - id: triggerScriptEntity;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: triggerScriptEntityId
+      type: 
+      description: 
   example: 
   - "\n<pre><code>NSCRMScriptAgent agent;\nagent.DeleteTriggerScriptEntity(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCRMScriptAgent.ExecuteScript
@@ -130,6 +180,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSCRMScriptAgent.ExecuteScript
   type: Method
   summary: "\nExecute a CRMScript with parameters, returning printed output value.\n"
+  remarks: 
+  syntax: 
+    content: String ExecuteScript(Integer cRMScriptId, StringDictionary parameters)
+    parameters:
+    - id: cRMScriptId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: parameters
+      type: CRMScript.Global.StringDictionary
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSCRMScriptAgent agent;\nInteger cRMScriptId;\nStringDictionary parameters;\nString res = agent.ExecuteScript(cRMScriptId, parameters);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCRMScriptAgent.ExecuteScriptAsEvent
@@ -143,6 +205,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSCRMScriptAgent.ExecuteScriptAsEvent
   type: Method
   summary: "\nExecute a CRMScript with event data as input. Returns event data with output variable values.\n"
+  remarks: 
+  syntax: 
+    content: NSEventData ExecuteScriptAsEvent(Integer cRMScriptId, NSEventData eventData)
+    parameters:
+    - id: cRMScriptId
+      type: CRMScript.Global.Integer
+      description: 
+    - id: eventData
+      type: CRMScript.NetServer.NSEventData
+      description: 
+    return:
+      type: CRMScript.NetServer.NSEventData
   example: 
   - "\n<pre><code>NSCRMScriptAgent agent;\nInteger cRMScriptId;\nNSEventData eventData;\nNSEventData res = agent.ExecuteScriptAsEvent(cRMScriptId, eventData);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCRMScriptAgent.ExecuteScriptAsEventByUniqueId
@@ -156,6 +230,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSCRMScriptAgent.ExecuteScriptAsEventByUniqueId
   type: Method
   summary: "\nExecute a CRMScript with event data as input. Returns event data with output variable values.\n"
+  remarks: 
+  syntax: 
+    content: NSEventData ExecuteScriptAsEventByUniqueId(String cRMScriptUniqueId, NSEventData eventData)
+    parameters:
+    - id: cRMScriptUniqueId
+      type: CRMScript.Global.String
+      description: 
+    - id: eventData
+      type: CRMScript.NetServer.NSEventData
+      description: 
+    return:
+      type: CRMScript.NetServer.NSEventData
   example: 
   - "\n<pre><code>NSCRMScriptAgent agent;\nString cRMScriptUniqueId;\nNSEventData eventData;\nNSEventData res = agent.ExecuteScriptAsEventByUniqueId(cRMScriptUniqueId, eventData);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCRMScriptAgent.ExecuteScriptByIncludeId
@@ -169,6 +255,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSCRMScriptAgent.ExecuteScriptByIncludeId
   type: Method
   summary: "\nExecute a CRMScript with parameters, returning printed output value.\n"
+  remarks: 
+  syntax: 
+    content: String ExecuteScriptByIncludeId(String cRMScriptIncludeId, StringDictionary parameters)
+    parameters:
+    - id: cRMScriptIncludeId
+      type: CRMScript.Global.String
+      description: 
+    - id: parameters
+      type: CRMScript.Global.StringDictionary
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSCRMScriptAgent agent;\nString cRMScriptIncludeId;\nStringDictionary parameters;\nString res = agent.ExecuteScriptByIncludeId(cRMScriptIncludeId, parameters);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCRMScriptAgent.ExecuteScriptByUniqueId
@@ -182,6 +280,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSCRMScriptAgent.ExecuteScriptByUniqueId
   type: Method
   summary: "\nExecute a CRMScript with parameters, returning printed output value.\n"
+  remarks: 
+  syntax: 
+    content: String ExecuteScriptByUniqueId(String cRMScriptUniqueId, StringDictionary parameters)
+    parameters:
+    - id: cRMScriptUniqueId
+      type: CRMScript.Global.String
+      description: 
+    - id: parameters
+      type: CRMScript.Global.StringDictionary
+      description: 
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSCRMScriptAgent agent;\nString cRMScriptUniqueId;\nStringDictionary parameters;\nString res = agent.ExecuteScriptByUniqueId(cRMScriptUniqueId, parameters);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCRMScriptAgent.GetCRMScriptByUniqueIdentifier
@@ -195,6 +305,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSCRMScriptAgent.GetCRMScriptByUniqueIdentifier
   type: Method
   summary: "\nGet information about a script from a unique identifier\n"
+  remarks: 
+  syntax: 
+    content: Script GetCRMScriptByUniqueIdentifier(String uniqueIdentifier)
+    parameters:
+    - id: uniqueIdentifier
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Native.Script
   example: 
   - "\n<pre><code>NSCRMScriptAgent agent;\nString uniqueIdentifier;\nScript res = agent.GetCRMScriptByUniqueIdentifier(uniqueIdentifier);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCRMScriptAgent.GetCRMScriptEntity
@@ -207,7 +326,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSCRMScriptAgent.GetCRMScriptEntity
   fullName: CRMScript.NetServer.NSCRMScriptAgent.GetCRMScriptEntity
   type: Method
-  summary: "\nGets a NSCRMScriptEntity object.\n"
+  summary: "\nGets an NSCRMScriptEntity object.\n"
+  remarks: 
+  syntax: 
+    content: NSCRMScriptEntity GetCRMScriptEntity(Integer cRMScriptEntityId);
+    parameters:
+    - id: cRMScriptEntityId;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: cRMScriptEntityId
+      type: 
+      description: 
+    return:
+      type: CRMScript.NetServer.NSCRMScriptEntity
   example: 
   - "\n<pre><code>NSCRMScriptAgent agent;\nNSCRMScriptEntity thing = agent.GetCRMScriptEntity(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCRMScriptAgent.GetTriggerScriptByUniqueId
@@ -221,6 +352,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSCRMScriptAgent.GetTriggerScriptByUniqueId
   type: Method
   summary: "\nGet a trigger CRMScript.\n"
+  remarks: 
+  syntax: 
+    content: NSTriggerScriptEntity GetTriggerScriptByUniqueId(String triggerScriptUniqueId)
+    parameters:
+    - id: triggerScriptUniqueId
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSTriggerScriptEntity
   example: 
   - "\n<pre><code>NSCRMScriptAgent agent;\nString triggerScriptUniqueId;\nNSTriggerScriptEntity res = agent.GetTriggerScriptByUniqueId(triggerScriptUniqueId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCRMScriptAgent.GetTriggerScriptEntity
@@ -233,7 +373,19 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSCRMScriptAgent.GetTriggerScriptEntity
   fullName: CRMScript.NetServer.NSCRMScriptAgent.GetTriggerScriptEntity
   type: Method
-  summary: "\nGets a NSTriggerScriptEntity object.\n"
+  summary: "\nGets an NSTriggerScriptEntity object.\n"
+  remarks: 
+  syntax: 
+    content: NSTriggerScriptEntity GetTriggerScriptEntity(Integer triggerScriptEntityId);
+    parameters:
+    - id: triggerScriptEntityId;
+      type: CRMScript.Global.Integer
+      description: 
+    - id: triggerScriptEntityId
+      type: 
+      description: 
+    return:
+      type: CRMScript.NetServer.NSTriggerScriptEntity
   example: 
   - "\n<pre><code>NSCRMScriptAgent agent;\nNSTriggerScriptEntity thing = agent.GetTriggerScriptEntity(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCRMScriptAgent.#ctor
@@ -245,8 +397,11 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   name: '#ctor'
   nameWithType: NSCRMScriptAgent.#ctor
   fullName: CRMScript.NetServer.NSCRMScriptAgent.#ctor
-  type: Method
+  type: Constructor
   summary: "\nManage and execute CRMScript functions.\n"
+  remarks: 
+  syntax: 
+    content: NSCRMScriptAgent
   example: 
   - "\n<pre><code>NSCRMScriptAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCRMScriptAgent.SaveCRMScriptByUniqueIdentifier
@@ -260,6 +415,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSCRMScriptAgent.SaveCRMScriptByUniqueIdentifier
   type: Method
   summary: "\nCreate or Update the CRMScript information\n"
+  remarks: 
+  syntax: 
+    content: Script SaveCRMScriptByUniqueIdentifier(String uniqueIdentifier, Script crmscript)
+    parameters:
+    - id: uniqueIdentifier
+      type: CRMScript.Global.String
+      description: 
+    - id: crmscript
+      type: CRMScript.Native.Script
+      description: 
+    return:
+      type: CRMScript.Native.Script
   example: 
   - "\n<pre><code>NSCRMScriptAgent agent;\nString uniqueIdentifier;\nScript crmscript;\nScript res = agent.SaveCRMScriptByUniqueIdentifier(uniqueIdentifier, crmscript);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCRMScriptAgent.SaveCRMScriptEntity
@@ -273,6 +440,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSCRMScriptAgent.SaveCRMScriptEntity
   type: Method
   summary: "\nUpdates the existing NSCRMScriptEntity or creates a new NSCRMScriptEntity if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>cRMScriptEntity</strong>The NSCRMScriptEntity to save.</li></ul><strong>Returns:</strong>NSCRMScriptEntity<p></p>\n<pre><code>NSCRMScriptAgent  agent;\nNSCRMScriptEntity thing = agent.CreateDefaultCRMScriptEntity();\nthing = agent.SaveCRMScriptEntity(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSCRMScriptEntity SaveCRMScriptEntity(NSCRMScriptEntity cRMScriptEntity);
+    parameters:
+    - id: cRMScriptEntity;
+      type: CRMScript.NetServer.NSCRMScriptEntity
+      description: 
+    return:
+      type: CRMScript.NetServer.NSCRMScriptEntity
   example: 
   - "\n<pre><code>NSCRMScriptAgent  agent;\nNSCRMScriptEntity thing = agent.CreateDefaultCRMScriptEntity();\nthing = agent.SaveCRMScriptEntity(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCRMScriptAgent.SaveTriggerScriptByUniqueId
@@ -286,6 +462,18 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSCRMScriptAgent.SaveTriggerScriptByUniqueId
   type: Method
   summary: "\nValidate a CRMScript. This will check that the syntax is correct\n"
+  remarks: 
+  syntax: 
+    content: NSTriggerScriptEntity SaveTriggerScriptByUniqueId(String triggerScriptUniqueId, NSTriggerScriptEntity entity)
+    parameters:
+    - id: triggerScriptUniqueId
+      type: CRMScript.Global.String
+      description: 
+    - id: entity
+      type: CRMScript.NetServer.NSTriggerScriptEntity
+      description: 
+    return:
+      type: CRMScript.NetServer.NSTriggerScriptEntity
   example: 
   - "\n<pre><code>NSCRMScriptAgent agent;\nString triggerScriptUniqueId;\nNSTriggerScriptEntity entity;\nNSTriggerScriptEntity res = agent.SaveTriggerScriptByUniqueId(triggerScriptUniqueId, entity);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCRMScriptAgent.SaveTriggerScriptEntity
@@ -299,6 +487,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSCRMScriptAgent.SaveTriggerScriptEntity
   type: Method
   summary: "\nUpdates the existing NSTriggerScriptEntity or creates a new NSTriggerScriptEntity if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>triggerScriptEntity</strong>The NSTriggerScriptEntity to save.</li></ul><strong>Returns:</strong>NSTriggerScriptEntity<p></p>\n<pre><code>NSCRMScriptAgent  agent;\nNSTriggerScriptEntity thing = agent.CreateDefaultTriggerScriptEntity();\nthing = agent.SaveTriggerScriptEntity(thing);</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSTriggerScriptEntity SaveTriggerScriptEntity(NSTriggerScriptEntity triggerScriptEntity);
+    parameters:
+    - id: triggerScriptEntity;
+      type: CRMScript.NetServer.NSTriggerScriptEntity
+      description: 
+    return:
+      type: CRMScript.NetServer.NSTriggerScriptEntity
   example: 
   - "\n<pre><code>NSCRMScriptAgent  agent;\nNSTriggerScriptEntity thing = agent.CreateDefaultTriggerScriptEntity();\nthing = agent.SaveTriggerScriptEntity(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCRMScriptAgent.ValidateScript
@@ -312,6 +509,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSCRMScriptAgent.ValidateScript
   type: Method
   summary: "\nValidate a CRMScript. This will check that the syntax is correct\n"
+  remarks: 
+  syntax: 
+    content: NSCRMScriptResult ValidateScript(Integer cRMScriptId)
+    parameters:
+    - id: cRMScriptId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSCRMScriptResult
   example: 
   - "\n<pre><code>NSCRMScriptAgent agent;\nInteger cRMScriptId;\nNSCRMScriptResult res = agent.ValidateScript(cRMScriptId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCRMScriptAgent.ValidateScriptByIncludeId
@@ -325,6 +531,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSCRMScriptAgent.ValidateScriptByIncludeId
   type: Method
   summary: "\nValidate a CRMScript. This will check that the syntax is correct\n"
+  remarks: 
+  syntax: 
+    content: NSCRMScriptResult ValidateScriptByIncludeId(String cRMScriptIncludeId)
+    parameters:
+    - id: cRMScriptIncludeId
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSCRMScriptResult
   example: 
   - "\n<pre><code>NSCRMScriptAgent agent;\nString cRMScriptIncludeId;\nNSCRMScriptResult res = agent.ValidateScriptByIncludeId(cRMScriptIncludeId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCRMScriptAgent.ValidateScriptByUniqueId
@@ -338,6 +553,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSCRMScriptAgent.ValidateScriptByUniqueId
   type: Method
   summary: "\nValidate a CRMScript. This will check that the syntax is correct\n"
+  remarks: 
+  syntax: 
+    content: NSCRMScriptResult ValidateScriptByUniqueId(String cRMScriptUniqueId)
+    parameters:
+    - id: cRMScriptUniqueId
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSCRMScriptResult
   example: 
   - "\n<pre><code>NSCRMScriptAgent agent;\nString cRMScriptUniqueId;\nNSCRMScriptResult res = agent.ValidateScriptByUniqueId(cRMScriptUniqueId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCRMScriptAgent.ValidateTriggerScript
@@ -351,6 +575,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSCRMScriptAgent.ValidateTriggerScript
   type: Method
   summary: "\nValidate a Trigger CRMScript. This will check that the syntax is correct, but not execute the script.\n"
+  remarks: 
+  syntax: 
+    content: NSCRMScriptResult ValidateTriggerScript(Integer triggerScriptId)
+    parameters:
+    - id: triggerScriptId
+      type: CRMScript.Global.Integer
+      description: 
+    return:
+      type: CRMScript.NetServer.NSCRMScriptResult
   example: 
   - "\n<pre><code>NSCRMScriptAgent agent;\nInteger triggerScriptId;\nNSCRMScriptResult res = agent.ValidateTriggerScript(triggerScriptId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCRMScriptAgent.ValidateTriggerScriptByUniqueId
@@ -364,6 +597,15 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSCRMScriptAgent.ValidateTriggerScriptByUniqueId
   type: Method
   summary: "\nValidate a Trigger CRMScript. This will check that the syntax is correct, but not execute the script.\n"
+  remarks: 
+  syntax: 
+    content: NSCRMScriptResult ValidateTriggerScriptByUniqueId(String triggerScriptUniqueId)
+    parameters:
+    - id: triggerScriptUniqueId
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.NetServer.NSCRMScriptResult
   example: 
   - "\n<pre><code>NSCRMScriptAgent agent;\nString triggerScriptUniqueId;\nNSCRMScriptResult res = agent.ValidateTriggerScriptByUniqueId(triggerScriptUniqueId);</code></pre>\n"
 references:
@@ -373,3 +615,57 @@ references:
   name: NSCRMScriptAgent
   nameWithType: NSCRMScriptAgent
   fullName: CRMScript.NetServer.NSCRMScriptAgent
+- uid: CRMScript.NetServer.NSCRMScriptEntity
+  commentId: T:CRMScript.NetServer.NSCRMScriptEntity
+  isExternal: true
+  name: NSCRMScriptEntity
+  nameWithType: NSCRMScriptEntity
+  fullName: CRMScript.NetServer.NSCRMScriptEntity
+- uid: CRMScript.NetServer.NSTriggerScriptEntity
+  commentId: T:CRMScript.NetServer.NSTriggerScriptEntity
+  isExternal: true
+  name: NSTriggerScriptEntity
+  nameWithType: NSTriggerScriptEntity
+  fullName: CRMScript.NetServer.NSTriggerScriptEntity
+- uid: CRMScript.Global.String
+  commentId: T:CRMScript.Global.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: CRMScript.Global.String
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void
+- uid: CRMScript.Global.Integer
+  commentId: T:CRMScript.Global.Integer
+  isExternal: true
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Global.Integer
+- uid: CRMScript.Global.StringDictionary
+  commentId: T:CRMScript.Global.StringDictionary
+  isExternal: true
+  name: StringDictionary
+  nameWithType: StringDictionary
+  fullName: CRMScript.Global.StringDictionary
+- uid: CRMScript.NetServer.NSEventData
+  commentId: T:CRMScript.NetServer.NSEventData
+  isExternal: true
+  name: NSEventData
+  nameWithType: NSEventData
+  fullName: CRMScript.NetServer.NSEventData
+- uid: CRMScript.Native.Script
+  commentId: T:CRMScript.Native.Script
+  isExternal: true
+  name: Script
+  nameWithType: Script
+  fullName: CRMScript.Native.Script
+- uid: CRMScript.NetServer.NSCRMScriptResult
+  commentId: T:CRMScript.NetServer.NSCRMScriptResult
+  isExternal: true
+  name: NSCRMScriptResult
+  nameWithType: NSCRMScriptResult
+  fullName: CRMScript.NetServer.NSCRMScriptResult

@@ -35,6 +35,12 @@ items:
   fullName: CRMScript.NetServer.NSSignedPublicKey.GetExpiryDate
   type: Method
   summary: "\nDate when the signature expires. No Timezone.<p></p>\n<strong>Returns:</strong>DateTime<p></p>\n<pre><code>NSSignedPublicKey thing;\nDateTime expiryDate  = thing.GetExpiryDate();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: DateTime GetExpiryDate()
+    parameters:
+    return:
+      type: CRMScript.Global.DateTime
   example: 
   - "\n<pre><code>NSSignedPublicKey thing;\nDateTime expiryDate  = thing.GetExpiryDate();</code></pre>\n"
 - uid: CRMScript.NetServer.NSSignedPublicKey.GetKey
@@ -48,6 +54,12 @@ items:
   fullName: CRMScript.NetServer.NSSignedPublicKey.GetKey
   type: Method
   summary: "\nPublic key held by module owner.<p></p>\n<strong>Returns:</strong>NSDSAParameters<p></p>\n<pre><code>NSSignedPublicKey thing;\nNSDSAParameters key  = thing.GetKey();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSDSAParameters GetKey()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSDSAParameters
   example: 
   - "\n<pre><code>NSSignedPublicKey thing;\nNSDSAParameters key  = thing.GetKey();</code></pre>\n"
 - uid: CRMScript.NetServer.NSSignedPublicKey.GetOwnerName
@@ -61,6 +73,12 @@ items:
   fullName: CRMScript.NetServer.NSSignedPublicKey.GetOwnerName
   type: Method
   summary: "\nThe name of the module owner, not visible in GUI but used in the code. OwnerName SUPEROFFICE is reserved and may NEVER be used by partners. This must be in UPPER CASE and only contain A-Z and 0-9. NO EXTENDED CHARACTERS please.<p></p>\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSSignedPublicKey thing;\nString ownerName  = thing.GetOwnerName();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: String GetOwnerName()
+    parameters:
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSSignedPublicKey thing;\nString ownerName  = thing.GetOwnerName();</code></pre>\n"
 - uid: CRMScript.NetServer.NSSignedPublicKey.GetSignature
@@ -74,6 +92,12 @@ items:
   fullName: CRMScript.NetServer.NSSignedPublicKey.GetSignature
   type: Method
   summary: "\nSignature* Base64 encoded value<p></p>\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSSignedPublicKey thing;\nString signature  = thing.GetSignature();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: String GetSignature()
+    parameters:
+    return:
+      type: CRMScript.Global.String
   example: 
   - "\n<pre><code>NSSignedPublicKey thing;\nString signature  = thing.GetSignature();</code></pre>\n"
 - uid: CRMScript.NetServer.NSSignedPublicKey.GetSignDate
@@ -87,6 +111,12 @@ items:
   fullName: CRMScript.NetServer.NSSignedPublicKey.GetSignDate
   type: Method
   summary: "\nDate when the the public key was signed. No Timezone.<p></p>\n<strong>Returns:</strong>DateTime<p></p>\n<pre><code>NSSignedPublicKey thing;\nDateTime signDate  = thing.GetSignDate();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: DateTime GetSignDate()
+    parameters:
+    return:
+      type: CRMScript.Global.DateTime
   example: 
   - "\n<pre><code>NSSignedPublicKey thing;\nDateTime signDate  = thing.GetSignDate();</code></pre>\n"
 - uid: CRMScript.NetServer.NSSignedPublicKey.#ctor
@@ -98,8 +128,11 @@ items:
   name: '#ctor'
   nameWithType: NSSignedPublicKey.#ctor
   fullName: CRMScript.NetServer.NSSignedPublicKey.#ctor
-  type: Method
+  type: Constructor
   summary: 
+  remarks: 
+  syntax: 
+    content: NSSignedPublicKey
   example: 
 - uid: CRMScript.NetServer.NSSignedPublicKey.SetExpiryDate
   commentId: M:CRMScript.NetServer.NSSignedPublicKey.SetExpiryDate
@@ -111,7 +144,14 @@ items:
   nameWithType: NSSignedPublicKey.SetExpiryDate
   fullName: CRMScript.NetServer.NSSignedPublicKey.SetExpiryDate
   type: Method
-  summary: "\nDate when the signature expires. No Timezone.<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>expiryDate</strong>DateTime</li></ul><pre><code>NSSignedPublicKey thing;\nDateTime expiryDate;\nthing.SetExpiryDate(expiryDate);</code></pre>\n"
+  summary: "\nDate when the signature expires. No Timezone.\n"
+  remarks: 
+  syntax: 
+    content: SetExpiryDate(DateTime expiryDate)
+    parameters:
+    - id: expiryDate
+      type: CRMScript.Global.DateTime
+      description: 
   example: 
   - "\n<pre><code>NSSignedPublicKey thing;\nDateTime expiryDate;\nthing.SetExpiryDate(expiryDate);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSignedPublicKey.SetKey
@@ -124,7 +164,14 @@ items:
   nameWithType: NSSignedPublicKey.SetKey
   fullName: CRMScript.NetServer.NSSignedPublicKey.SetKey
   type: Method
-  summary: "\nPublic key held by module owner.<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>key</strong>NSDSAParameters</li></ul><pre><code>NSSignedPublicKey thing;\nNSDSAParameters key;\nthing.SetKey(key);</code></pre>\n"
+  summary: "\nPublic key held by module owner.\n"
+  remarks: 
+  syntax: 
+    content: SetKey(NSDSAParameters key)
+    parameters:
+    - id: key
+      type: CRMScript.NetServer.NSDSAParameters
+      description: 
   example: 
   - "\n<pre><code>NSSignedPublicKey thing;\nNSDSAParameters key;\nthing.SetKey(key);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSignedPublicKey.SetOwnerName
@@ -137,7 +184,14 @@ items:
   nameWithType: NSSignedPublicKey.SetOwnerName
   fullName: CRMScript.NetServer.NSSignedPublicKey.SetOwnerName
   type: Method
-  summary: "\nThe name of the module owner, not visible in GUI but used in the code. OwnerName SUPEROFFICE is reserved and may NEVER be used by partners. This must be in UPPER CASE and only contain A-Z and 0-9. NO EXTENDED CHARACTERS please.<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>ownerName</strong>String</li></ul><pre><code>NSSignedPublicKey thing;\nString ownerName;\nthing.SetOwnerName(ownerName);</code></pre>\n"
+  summary: "\nThe name of the module owner, not visible in GUI but used in the code. OwnerName SUPEROFFICE is reserved and may NEVER be used by partners. This must be in UPPER CASE and only contain A-Z and 0-9. NO EXTENDED CHARACTERS please.\n"
+  remarks: 
+  syntax: 
+    content: SetOwnerName(String ownerName)
+    parameters:
+    - id: ownerName
+      type: CRMScript.Global.String
+      description: 
   example: 
   - "\n<pre><code>NSSignedPublicKey thing;\nString ownerName;\nthing.SetOwnerName(ownerName);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSignedPublicKey.SetSignature
@@ -150,7 +204,14 @@ items:
   nameWithType: NSSignedPublicKey.SetSignature
   fullName: CRMScript.NetServer.NSSignedPublicKey.SetSignature
   type: Method
-  summary: "\nSignature* Base64 encoded value<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>signature</strong>String</li></ul><pre><code>NSSignedPublicKey thing;\nString signature;\nthing.SetSignature(signature);</code></pre>\n"
+  summary: "\nSignature* Base64 encoded value\n"
+  remarks: 
+  syntax: 
+    content: SetSignature(String signature)
+    parameters:
+    - id: signature
+      type: CRMScript.Global.String
+      description: 
   example: 
   - "\n<pre><code>NSSignedPublicKey thing;\nString signature;\nthing.SetSignature(signature);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSignedPublicKey.SetSignDate
@@ -163,7 +224,14 @@ items:
   nameWithType: NSSignedPublicKey.SetSignDate
   fullName: CRMScript.NetServer.NSSignedPublicKey.SetSignDate
   type: Method
-  summary: "\nDate when the the public key was signed. No Timezone.<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>signDate</strong>DateTime</li></ul><pre><code>NSSignedPublicKey thing;\nDateTime signDate;\nthing.SetSignDate(signDate);</code></pre>\n"
+  summary: "\nDate when the the public key was signed. No Timezone.\n"
+  remarks: 
+  syntax: 
+    content: SetSignDate(DateTime signDate)
+    parameters:
+    - id: signDate
+      type: CRMScript.Global.DateTime
+      description: 
   example: 
   - "\n<pre><code>NSSignedPublicKey thing;\nDateTime signDate;\nthing.SetSignDate(signDate);</code></pre>\n"
 references:
@@ -173,3 +241,21 @@ references:
   name: NSSignedPublicKey
   nameWithType: NSSignedPublicKey
   fullName: CRMScript.NetServer.NSSignedPublicKey
+- uid: CRMScript.Global.DateTime
+  commentId: T:CRMScript.Global.DateTime
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: CRMScript.Global.DateTime
+- uid: CRMScript.NetServer.NSDSAParameters
+  commentId: T:CRMScript.NetServer.NSDSAParameters
+  isExternal: true
+  name: NSDSAParameters
+  nameWithType: NSDSAParameters
+  fullName: CRMScript.NetServer.NSDSAParameters
+- uid: CRMScript.Global.String
+  commentId: T:CRMScript.Global.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: CRMScript.Global.String

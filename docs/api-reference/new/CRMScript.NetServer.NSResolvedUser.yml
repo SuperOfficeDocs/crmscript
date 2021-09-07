@@ -29,6 +29,12 @@ items:
   fullName: CRMScript.NetServer.NSResolvedUser.GetPersonCreated
   type: Method
   summary: "\nIndicates if the resolved person was created or not.<p></p>\n<strong>Returns:</strong>Bool<p></p>\n<pre><code>NSResolvedUser thing;\nBool personCreated  = thing.GetPersonCreated();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: Bool GetPersonCreated()
+    parameters:
+    return:
+      type: CRMScript.Global.Bool
   example: 
   - "\n<pre><code>NSResolvedUser thing;\nBool personCreated  = thing.GetPersonCreated();</code></pre>\n"
 - uid: CRMScript.NetServer.NSResolvedUser.GetUser
@@ -42,6 +48,12 @@ items:
   fullName: CRMScript.NetServer.NSResolvedUser.GetUser
   type: Method
   summary: "\nThe resolved NSUser instance.<p></p>\n<strong>Returns:</strong>NSUser<p></p>\n<pre><code>NSResolvedUser thing;\nNSUser user  = thing.GetUser();</code></pre>\n"
+  remarks: 
+  syntax: 
+    content: NSUser GetUser()
+    parameters:
+    return:
+      type: CRMScript.NetServer.NSUser
   example: 
   - "\n<pre><code>NSResolvedUser thing;\nNSUser user  = thing.GetUser();</code></pre>\n"
 - uid: CRMScript.NetServer.NSResolvedUser.#ctor
@@ -53,8 +65,11 @@ items:
   name: '#ctor'
   nameWithType: NSResolvedUser.#ctor
   fullName: CRMScript.NetServer.NSResolvedUser.#ctor
-  type: Method
+  type: Constructor
   summary: 
+  remarks: 
+  syntax: 
+    content: NSResolvedUser
   example: 
 - uid: CRMScript.NetServer.NSResolvedUser.SetPersonCreated
   commentId: M:CRMScript.NetServer.NSResolvedUser.SetPersonCreated
@@ -66,7 +81,14 @@ items:
   nameWithType: NSResolvedUser.SetPersonCreated
   fullName: CRMScript.NetServer.NSResolvedUser.SetPersonCreated
   type: Method
-  summary: "\nIndicates if the resolved person was created or not.<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>personCreated</strong>Bool</li></ul><pre><code>NSResolvedUser thing;\nBool personCreated;\nthing.SetPersonCreated(personCreated);</code></pre>\n"
+  summary: "\nIndicates if the resolved person was created or not.\n"
+  remarks: 
+  syntax: 
+    content: SetPersonCreated(Bool personCreated)
+    parameters:
+    - id: personCreated
+      type: CRMScript.Global.Bool
+      description: 
   example: 
   - "\n<pre><code>NSResolvedUser thing;\nBool personCreated;\nthing.SetPersonCreated(personCreated);</code></pre>\n"
 - uid: CRMScript.NetServer.NSResolvedUser.SetUser
@@ -79,7 +101,14 @@ items:
   nameWithType: NSResolvedUser.SetUser
   fullName: CRMScript.NetServer.NSResolvedUser.SetUser
   type: Method
-  summary: "\nThe resolved NSUser instance.<p></p>\n<strong>Parameter:</strong><p></p>\n<ul><li><strong>user</strong>User</li></ul><pre><code>NSResolvedUser thing;\nNSUser user;\nthing.SetUser(user);</code></pre>\n"
+  summary: "\nThe resolved NSUser instance.\n"
+  remarks: 
+  syntax: 
+    content: SetUser(NSUser user)
+    parameters:
+    - id: user
+      type: CRMScript.NetServer.NSUser
+      description: 
   example: 
   - "\n<pre><code>NSResolvedUser thing;\nNSUser user;\nthing.SetUser(user);</code></pre>\n"
 references:
@@ -89,3 +118,15 @@ references:
   name: NSResolvedUser
   nameWithType: NSResolvedUser
   fullName: CRMScript.NetServer.NSResolvedUser
+- uid: CRMScript.Global.Bool
+  commentId: T:CRMScript.Global.Bool
+  isExternal: true
+  name: Bool
+  nameWithType: Bool
+  fullName: CRMScript.Global.Bool
+- uid: CRMScript.NetServer.NSUser
+  commentId: T:CRMScript.NetServer.NSUser
+  isExternal: true
+  name: NSUser
+  nameWithType: NSUser
+  fullName: CRMScript.NetServer.NSUser

@@ -10,7 +10,8 @@ so.topic: reference
 
 Template to use for alerts.
 
-**Parameter:** 
+## Parameters
+
 * **alertTemplate** ReplyTemplate
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Who created this script
 
-**Parameter:** 
+## Parameters
+
 * **registeredBy** String
 
 ```crmscript

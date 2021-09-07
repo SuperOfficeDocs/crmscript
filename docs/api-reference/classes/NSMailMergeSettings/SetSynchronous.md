@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetSynchronous(Bool synchronous)
 
-**Parameter:** 
+## Parameters
+
 * **synchronous** Bool
 
 ```crmscript

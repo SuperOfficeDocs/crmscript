@@ -10,7 +10,8 @@ so.topic: reference
 
 If true, then this field cannot be set readwrite or mandatory: It's bound to be readonly
 
-**Parameter:** 
+## Parameters
+
 * **restrictEdit** Bool
 
 ```crmscript

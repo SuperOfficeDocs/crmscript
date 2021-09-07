@@ -10,7 +10,8 @@ so.topic: reference
 
 Number of rows deleted / zeroed
 
-**Parameter:** 
+## Parameters
+
 * **deletes** Integer
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 The person that first created the document. The property is read-only.
 
-**Parameter:** 
+## Parameters
+
 * **createdBy** NSAssociate
 
 ```crmscript

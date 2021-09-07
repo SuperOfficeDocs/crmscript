@@ -10,7 +10,8 @@ so.topic: reference
 
 Indicates if the folder is subscribed to
 
-**Parameter:** 
+## Parameters
+
 * **subscribed** Bool
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 The user that owns this contact.
 
-**Parameter:** 
+## Parameters
+
 * **associate** NSAssociate
 
 ```crmscript

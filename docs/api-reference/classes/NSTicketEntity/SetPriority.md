@@ -10,7 +10,8 @@ so.topic: reference
 
 The ticket priority entity which this ticket is connected to
 
-**Parameter:** 
+## Parameters
+
 * **priority** NSTicketPriorityEntity
 
 ```crmscript

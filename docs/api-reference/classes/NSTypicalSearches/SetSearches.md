@@ -10,7 +10,8 @@ so.topic: reference
 
 The TypicalSearch structures (including criteria) to import
 
-**Parameter:** 
+## Parameters
+
 * **searches** TypicalSearch[]
 
 ```crmscript

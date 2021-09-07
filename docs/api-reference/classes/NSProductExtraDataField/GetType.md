@@ -12,9 +12,9 @@ String, url, image. How the value should be interpreted.
 
 **Returns:** Integer
 
-* Enum: 0 = String 
-* Enum: 1 = Url 
-* Enum: 2 = Image 
+* Enum: 0 = String
+* Enum: 1 = Url
+* Enum: 2 = Image
 
 ```crmscript
 NSProductExtraDataField thing;

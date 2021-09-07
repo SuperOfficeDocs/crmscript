@@ -10,7 +10,8 @@ so.topic: reference
 
 Type of the suggested document
 
-**Parameter:** 
+## Parameters
+
 * **doctmplId** Integer
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Planned end date for project, inhertied from type and later editable
 
-**Parameter:** 
+## Parameters
+
 * **endDate** DateTime
 
 ```crmscript

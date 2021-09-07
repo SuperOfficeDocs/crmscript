@@ -10,7 +10,8 @@ so.topic: reference
 
 Person Direct Phone
 
-**Parameter:** 
+## Parameters
+
 * **personDirectPhone** String
 
 ```crmscript

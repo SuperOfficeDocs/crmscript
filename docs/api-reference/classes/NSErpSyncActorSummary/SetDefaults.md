@@ -10,7 +10,8 @@ so.topic: reference
 
 A summary of fields that have defaults/rules for link creation
 
-**Parameter:** 
+## Parameters
+
 * **defaults** String
 
 ```crmscript

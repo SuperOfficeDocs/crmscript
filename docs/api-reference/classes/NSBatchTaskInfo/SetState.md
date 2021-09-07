@@ -10,20 +10,25 @@ so.topic: reference
 
 BatchTaskState of the task.
 
-**Parameter:** 
+## Parameters
+
 * **state** Integer
-* Enum: 0 = Unknown 
-* Enum: 1 = New 
-* Enum: 2 = Aquired 
-* Enum: 3 = Started 
-* Enum: 4 = Succeeded 
-* Enum: 5 = Failed 
-* Enum: 6 = SucceededManualCleanup 
-* Enum: 99999 = All 
+
+### Enum: BatchTaskState
+
+* 0 = Unknown
+* 1 = New
+* 2 = Aquired
+* 3 = Started
+* 4 = Succeeded
+* 5 = Failed
+* 6 = SucceededManualCleanup
+* 99999 = All
+
+## Example
 
 ```crmscript
 NSBatchTaskInfo thing;
 Integer state;
 thing.SetState(state);
 ```
-

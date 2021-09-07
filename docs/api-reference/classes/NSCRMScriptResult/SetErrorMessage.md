@@ -10,7 +10,8 @@ so.topic: reference
 
 Contains the error message for a non-valide CRMScript
 
-**Parameter:** 
+## Parameters
+
 * **errorMessage** String
 
 ```crmscript

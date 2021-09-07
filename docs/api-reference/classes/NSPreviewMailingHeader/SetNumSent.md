@@ -10,7 +10,8 @@ so.topic: reference
 
 Number of emails sent at the current time.
 
-**Parameter:** 
+## Parameters
+
 * **numSent** Integer
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 The template list item
 
-**Parameter:** 
+## Parameters
+
 * **name** String
 
 ```crmscript

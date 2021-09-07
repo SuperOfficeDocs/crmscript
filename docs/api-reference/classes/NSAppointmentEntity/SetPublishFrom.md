@@ -8,8 +8,9 @@ so.topic: reference
 
 # SetPublishFrom(DateTime publishFrom)
 
-Set the publish from date on a NSAppointmentEntity.
+Set the publish from date on an NSAppointmentEntity.
 
-**Parameter:** 
+## Parameters
+
 * **publishFrom** DateTime.
 

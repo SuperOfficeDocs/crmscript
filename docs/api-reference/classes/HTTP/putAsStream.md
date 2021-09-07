@@ -9,12 +9,12 @@ so.topic: reference
 
 # HTTP.putAsStream(String p_0)
 
-Supports both http and https. Returns the result in a NSStream.
+Supports both http and https. Returns the result in an NSStream.
 
 ## Example
 
     HTTP h;
-    
+   
     h.addHeader("header", "test");
     h.setValue("key", "value");
     h.setValue("key2", "value2");

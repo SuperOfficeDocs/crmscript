@@ -10,7 +10,8 @@ so.topic: reference
 
 The html body of the quick reply
 
-**Parameter:** 
+## Parameters
+
 * **htmlBody** String
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Indicates if the resolved person was created or not.
 
-**Parameter:** 
+## Parameters
+
 * **personCreated** Bool
 
 ```crmscript

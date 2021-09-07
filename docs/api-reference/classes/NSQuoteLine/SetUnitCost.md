@@ -10,7 +10,8 @@ so.topic: reference
 
 The cost price per unit for this product. May be filled in by connector if it has the Provide-Cost capability.
 
-**Parameter:** 
+## Parameters
+
 * **unitCost** Float
 
 ```crmscript

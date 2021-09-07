@@ -10,7 +10,8 @@ so.topic: reference
 
 Original primary user group of associate
 
-**Parameter:** 
+## Parameters
+
 * **groupIdx** Integer
 
 ```crmscript

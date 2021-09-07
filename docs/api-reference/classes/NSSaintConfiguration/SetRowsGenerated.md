@@ -10,7 +10,8 @@ so.topic: reference
 
 Number of CounterValue rows generated for this entity
 
-**Parameter:** 
+## Parameters
+
 * **rowsGenerated** Integer
 
 ```crmscript

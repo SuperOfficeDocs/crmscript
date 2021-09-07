@@ -10,7 +10,8 @@ so.topic: reference
 
 Does the application have a menu bar
 
-**Parameter:** 
+## Parameters
+
 * **showInMenuBar** Bool
 
 ```crmscript

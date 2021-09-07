@@ -10,7 +10,8 @@ so.topic: reference
 
 Description of group
 
-**Parameter:** 
+## Parameters
+
 * **description** String
 
 ```crmscript

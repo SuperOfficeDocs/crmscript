@@ -9,7 +9,7 @@ so.topic: reference
 # DeleteTicketPriorityEntity(Integer ticketPriorityEntity);
 
 Deletes the NSTicketPriorityEntity
-  
+ 
 ## Parameters
 
 * **ticketPriorityEntityId** The identity of the NSTicketPriorityEntity to delete.

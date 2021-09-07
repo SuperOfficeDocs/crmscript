@@ -12,10 +12,10 @@ Which entity type will be created? This is a read-only property
 
 **Returns:** Integer
 
-* Enum: 0 = Unknown 
-* Enum: 1 = Person 
-* Enum: 2 = Contact 
-* Enum: 4 = Product 
+* Enum: 0 = Unknown
+* Enum: 1 = Person
+* Enum: 2 = Contact
+* Enum: 4 = Product
 
 ```crmscript
 NSImportLine thing;

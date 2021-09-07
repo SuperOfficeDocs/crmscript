@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSPaymentTerm GetPaymentTerm(Integer paymentTermId);
 
-Gets a NSPaymentTerm object.
+Gets an NSPaymentTerm object.
 
 ## Parameters
 

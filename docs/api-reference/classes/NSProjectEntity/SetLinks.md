@@ -10,7 +10,8 @@ so.topic: reference
 
 List of all elements linked to the project
 
-**Parameter:** 
+## Parameters
+
 * **links** NSLink[]
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Show as dropdown list on target?
 
-**Parameter:** 
+## Parameters
+
 * **useDropDown** Bool
 
 ```crmscript

@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSProject GetProject(Integer projectId);
 
-Gets a NSProject object.
+Gets an NSProject object.
 
 ## Parameters
 

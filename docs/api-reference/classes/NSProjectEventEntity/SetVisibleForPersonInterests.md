@@ -10,7 +10,8 @@ so.topic: reference
 
 Array of person interests (MDO table "persint") that this event is visible for.
 
-**Parameter:** 
+## Parameters
+
 * **visibleForPersonInterests** NSMDOListItem[]
 
 ```crmscript

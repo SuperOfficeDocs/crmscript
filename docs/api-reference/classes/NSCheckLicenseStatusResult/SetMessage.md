@@ -10,12 +10,14 @@ so.topic: reference
 
 Message to display in SOADMIN if LinkType=90.
 
-**Parameter:** 
+## Parameters
+
 * **message** String
+
+## Example
 
 ```crmscript
 NSCheckLicenseStatusResult thing;
 String message;
 thing.SetMessage(message);
 ```
-

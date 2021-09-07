@@ -10,7 +10,8 @@ so.topic: reference
 
 Whether to use opening hours or not.
 
-**Parameter:** 
+## Parameters
+
 * **openingHoursEnabled** Bool
 
 ```crmscript

@@ -10,13 +10,14 @@ so.topic: reference
 
 An integer indicating the delegation method for this category.
 
-**Parameter:** 
+## Parameters
+
 * **delegateMethod** Integer
-* Enum: 0 = Unknown 
-* Enum: 1 = Even 
-* Enum: 2 = Weighted 
-* Enum: 3 = Unfair 
-* Enum: 4 = Not 
+* Enum: 0 = Unknown
+* Enum: 1 = Even
+* Enum: 2 = Weighted
+* Enum: 3 = Unfair
+* Enum: 4 = Not
 
 ```crmscript
 NSTicketCategoryEntity thing;

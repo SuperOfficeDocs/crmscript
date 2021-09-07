@@ -9,7 +9,7 @@ so.topic: reference
 # DeleteTicketCategoryEntity(Integer ticketCategoryEntity);
 
 Deletes the NSTicketCategoryEntity
-  
+ 
 ## Parameters
 
 * **ticketCategoryEntityId** The identity of the NSTicketCategoryEntity to delete.

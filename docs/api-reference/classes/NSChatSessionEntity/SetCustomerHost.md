@@ -10,7 +10,8 @@ so.topic: reference
 
 The hostname or IP address for the customer.
 
-**Parameter:** 
+## Parameters
+
 * **customerHost** String
 
 ```crmscript

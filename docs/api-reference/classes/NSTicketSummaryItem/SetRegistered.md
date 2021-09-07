@@ -10,7 +10,8 @@ so.topic: reference
 
 When the ticket was created.
 
-**Parameter:** 
+## Parameters
+
 * **registered** DateTime
 
 ```crmscript

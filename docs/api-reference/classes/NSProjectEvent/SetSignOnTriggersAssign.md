@@ -10,7 +10,8 @@ so.topic: reference
 
 If true, the sign on task should be created as an Assigned task, triggering the invitation dialog
 
-**Parameter:** 
+## Parameters
+
 * **signOnTriggersAssign** Bool
 
 ```crmscript

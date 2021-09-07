@@ -10,7 +10,8 @@ so.topic: reference
 
 If QuoteStatus is not OK, then this field contains a localized explanation that the user can be shown.
 
-**Parameter:** 
+## Parameters
+
 * **reason** String
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 The total time (seconds) within 24x7 the ticket has been in an open status (configurable), not including current state
 
-**Parameter:** 
+## Parameters
+
 * **realTimeSpentInternally** Integer
 
 ```crmscript

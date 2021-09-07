@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSCurrencyEntity GetCurrencyEntity(Integer currencyEntityId);
 
-Gets a NSCurrencyEntity object.
+Gets an NSCurrencyEntity object.
 
 ## Parameters
 

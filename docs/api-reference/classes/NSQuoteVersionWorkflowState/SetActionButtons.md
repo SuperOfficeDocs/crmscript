@@ -10,7 +10,8 @@ so.topic: reference
 
 Array of visible buttons with defined actions in the quote verson dialog.
 
-**Parameter:** 
+## Parameters
+
 * **actionButtons** QuoteVersionButtonState[]
 
 ```crmscript

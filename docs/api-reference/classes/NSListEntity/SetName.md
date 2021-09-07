@@ -10,7 +10,8 @@ so.topic: reference
 
 The name of the list
 
-**Parameter:** 
+## Parameters
+
 * **name** String
 
 ```crmscript

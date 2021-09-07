@@ -10,7 +10,8 @@ so.topic: reference
 
 Data rights matrix* defines role's access to data owned by current user, users in same group, and other users.
 
-**Parameter:** 
+## Parameters
+
 * **dataRights** DataRights
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 The CRMScript Macro which will be run when the form is submitted.
 
-**Parameter:** 
+## Parameters
+
 * **scriptId** Integer
 
 ```crmscript

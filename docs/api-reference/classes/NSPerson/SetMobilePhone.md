@@ -10,7 +10,8 @@ so.topic: reference
 
 Returns the mobile phone that belong to the contact person.
 
-**Parameter:** 
+## Parameters
+
 * **mobilePhone** String
 
 ```crmscript

@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSSelectableMDOListItem[] GetUserLicensesMDOList()
 
-Get all licenses in a NSMDOListItem structure.
+Get all licenses in an NSMDOListItem structure.
 
 **Returns:** NSSelectableMDOListItem[]
 

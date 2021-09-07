@@ -10,7 +10,8 @@ so.topic: reference
 
 Specify duration of the event
 
-**Parameter:** 
+## Parameters
+
 * **duration** TimeSpan
 
 ```crmscript

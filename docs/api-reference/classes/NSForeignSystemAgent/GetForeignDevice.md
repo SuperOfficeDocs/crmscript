@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSForeignDevice GetForeignDevice(Integer foreignDeviceId);
 
-Gets a NSForeignDevice object.
+Gets an NSForeignDevice object.
 
 ## Parameters
 

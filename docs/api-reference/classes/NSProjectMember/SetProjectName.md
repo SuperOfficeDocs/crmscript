@@ -10,7 +10,8 @@ so.topic: reference
 
 Name of the project this project member belongs to.
 
-**Parameter:** 
+## Parameters
+
 * **projectName** String
 
 ```crmscript

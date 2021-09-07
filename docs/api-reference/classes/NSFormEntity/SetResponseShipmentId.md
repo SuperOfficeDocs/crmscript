@@ -10,7 +10,8 @@ so.topic: reference
 
 The id of the s_shipment that is used to send the response mails
 
-**Parameter:** 
+## Parameters
+
 * **responseShipmentId** Integer
 
 ```crmscript

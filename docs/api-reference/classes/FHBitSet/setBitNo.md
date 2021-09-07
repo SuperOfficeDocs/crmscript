@@ -17,9 +17,9 @@ This function sets a specific bit.
 * val: Value to set this bit to* (True/False* 1/0)
 
 ## Example
-    
+   
     FHBitSet fh;
-    
+   
     Bool b = true;
     fh.set(0);
     fh.setBitNo(15, b);

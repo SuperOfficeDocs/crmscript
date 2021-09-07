@@ -10,7 +10,8 @@ so.topic: reference
 
 Number of records in pintr table; select count(*) from pintr pi where pi.person_id = this.person_id == activeInterests is always true
 
-**Parameter:** 
+## Parameters
+
 * **activeInterests** Integer
 
 ```crmscript

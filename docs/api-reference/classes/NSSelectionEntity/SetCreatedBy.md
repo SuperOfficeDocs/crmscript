@@ -10,7 +10,8 @@ so.topic: reference
 
 Who created the selection
 
-**Parameter:** 
+## Parameters
+
 * **createdBy** NSAssociate
 
 ```crmscript

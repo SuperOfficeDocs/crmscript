@@ -20,12 +20,12 @@ Assigning an appointment to another person.
 | participant | ParticipantInfo | |
 | updateMode | Integer | Update mode for a recurring appointment. |
 
-### Mode
+### Enum updateMode
 
-* Enum: 0 = Unknown
-* Enum: 1 = OnlyThis
-* Enum: 2 = ThisAndForward
-* Enum: 9 = StopRecurrence
+* 0 = Unknown
+* 1 = OnlyThis
+* 2 = ThisAndForward
+* 9 = StopRecurrence
 
 ## Example
 

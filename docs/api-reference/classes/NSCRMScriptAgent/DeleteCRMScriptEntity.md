@@ -9,7 +9,7 @@ so.topic: reference
 # DeleteCRMScriptEntity(Integer cRMScriptEntity);
 
 Deletes the NSCRMScriptEntity
-  
+ 
 ## Parameters
 
 * **cRMScriptEntityId** The identity of the CRMScriptEntity to delete.

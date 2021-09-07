@@ -10,6 +10,7 @@ so.topic: reference
 
 Publish event date on NSAppointmentEntity.
 
-**Parameter:** 
+## Parameters
+
 * **publishDate** DateTime.
 

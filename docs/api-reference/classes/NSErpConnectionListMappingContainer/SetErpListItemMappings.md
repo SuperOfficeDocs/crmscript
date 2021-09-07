@@ -10,7 +10,8 @@ so.topic: reference
 
 Array of NSErpConnectionListMapping
 
-**Parameter:** 
+## Parameters
+
 * **erpListItemMappings** NSErpConnectionListMapping[]
 
 ```crmscript

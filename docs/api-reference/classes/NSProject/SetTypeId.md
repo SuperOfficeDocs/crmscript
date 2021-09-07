@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetTypeId(Integer typeId)
 
-**Parameter:** 
+## Parameters
+
 * **typeId** Integer
 
 ```crmscript

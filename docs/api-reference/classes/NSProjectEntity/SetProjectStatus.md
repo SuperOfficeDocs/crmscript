@@ -8,9 +8,10 @@ so.topic: reference
 
 # SetProjectStatus(NSProjectStatus projectStatus)
 
-Project status is a list defined by the database administrator. Different statuses of a project may be: “In planning”, “Started”, “Finished” and so on
+Project status is a list defined by the database administrator. Different statuses of a project may be: "In planning", "Started", "Finished" and so on
 
-**Parameter:** 
+## Parameters
+
 * **projectStatus** NSProjectStatus
 
 ```crmscript

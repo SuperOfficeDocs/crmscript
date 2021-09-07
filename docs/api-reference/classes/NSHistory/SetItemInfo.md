@@ -10,7 +10,8 @@ so.topic: reference
 
 Extra information on the history item, e.g. The Associate Type for an associate or other relevant info.
 
-**Parameter:** 
+## Parameters
+
 * **itemInfo** String
 
 ```crmscript

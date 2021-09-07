@@ -10,7 +10,8 @@ so.topic: reference
 
 Left margin in twips
 
-**Parameter:** 
+## Parameters
+
 * **leftMargin** Integer
 
 ```crmscript

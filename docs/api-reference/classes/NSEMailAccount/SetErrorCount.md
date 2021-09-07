@@ -10,7 +10,8 @@ so.topic: reference
 
 Count of concurring errors of fetching email. Readonly field
 
-**Parameter:** 
+## Parameters
+
 * **errorCount** Integer
 
 ```crmscript

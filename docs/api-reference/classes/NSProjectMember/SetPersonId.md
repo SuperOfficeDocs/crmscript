@@ -10,7 +10,8 @@ so.topic: reference
 
 The person's id* primary key
 
-**Parameter:** 
+## Parameters
+
 * **personId** Integer
 
 ```crmscript

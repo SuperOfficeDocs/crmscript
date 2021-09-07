@@ -10,7 +10,8 @@ so.topic: reference
 
 True if the connector is deleted
 
-**Parameter:** 
+## Parameters
+
 * **deleted** Bool
 
 ```crmscript

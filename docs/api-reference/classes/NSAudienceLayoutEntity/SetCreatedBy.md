@@ -10,7 +10,8 @@ so.topic: reference
 
 Name of the person that created the Audience layout
 
-**Parameter:** 
+## Parameters
+
 * **createdBy** NSAssociate
 
 ```crmscript

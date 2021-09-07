@@ -10,10 +10,11 @@ so.topic: reference
 
 Chat widget size: normal or large.
 
-**Parameter:** 
+## Parameters
+
 * **size** Integer
-* Enum: 0 = Normal 
-* Enum: 1 = Large 
+* Enum: 0 = Normal
+* Enum: 1 = Large
 
 ```crmscript
 NSChatWidgetSettings thing;

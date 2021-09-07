@@ -10,7 +10,8 @@ so.topic: reference
 
 The name of the owner which the request was assigned to
 
-**Parameter:** 
+## Parameters
+
 * **ownerName** String
 
 ```crmscript

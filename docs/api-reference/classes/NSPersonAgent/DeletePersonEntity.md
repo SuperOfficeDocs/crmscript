@@ -9,7 +9,7 @@ so.topic: reference
 # DeletePersonEntity(Integer personEntity);
 
 Deletes the NSPersonEntity
-  
+ 
 ## Parameters
 
 * **personEntityId** The identity of the NSPersonEntity to delete.

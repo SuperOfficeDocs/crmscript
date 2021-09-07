@@ -10,7 +10,8 @@ so.topic: reference
 
 Last login date
 
-**Parameter:** 
+## Parameters
+
 * **lastlogin** DateTime
 
 ```crmscript

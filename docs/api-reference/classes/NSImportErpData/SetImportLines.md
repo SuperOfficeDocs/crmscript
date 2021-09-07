@@ -10,7 +10,8 @@ so.topic: reference
 
 An array of Import lines
 
-**Parameter:** 
+## Parameters
+
 * **importLines** NSImportLine[]
 
 ```crmscript

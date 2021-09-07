@@ -10,7 +10,8 @@ so.topic: reference
 
 UserGroup name
 
-**Parameter:** 
+## Parameters
+
 * **value** String
 
 ```crmscript

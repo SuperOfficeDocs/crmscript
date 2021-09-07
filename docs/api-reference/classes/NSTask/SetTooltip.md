@@ -10,7 +10,8 @@ so.topic: reference
 
 Set the tooltip description for the Task list item.
 
-**Parameter:** 
+## Parameters
+
 * **tooltip** String Task tooltip description.
 
 ```crmscript

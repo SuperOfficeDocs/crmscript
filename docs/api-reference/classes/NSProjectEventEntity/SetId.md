@@ -10,7 +10,8 @@ so.topic: reference
 
 Id of the external event
 
-**Parameter:** 
+## Parameters
+
 * **id** Integer
 
 ```crmscript

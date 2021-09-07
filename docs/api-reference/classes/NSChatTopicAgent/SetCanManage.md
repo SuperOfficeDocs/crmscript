@@ -10,7 +10,8 @@ so.topic: reference
 
 True if the user is a manager for this topic
 
-**Parameter:** 
+## Parameters
+
 * **canManage** Bool
 
 ```crmscript

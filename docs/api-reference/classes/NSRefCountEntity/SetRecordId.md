@@ -10,7 +10,8 @@ so.topic: reference
 
 Record id in target table, used when there are separate counters for each target record
 
-**Parameter:** 
+## Parameters
+
 * **recordId** Integer
 
 ```crmscript

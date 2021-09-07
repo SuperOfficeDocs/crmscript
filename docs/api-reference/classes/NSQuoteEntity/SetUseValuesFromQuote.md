@@ -10,7 +10,8 @@ so.topic: reference
 
 If true, then the Earning, Earning_Percent and Amount fields are populated from the QuoteVersion.QuoteAlternative (current revision, most-likely alternative).
 
-**Parameter:** 
+## Parameters
+
 * **useValuesFromQuote** Integer
 
 ```crmscript

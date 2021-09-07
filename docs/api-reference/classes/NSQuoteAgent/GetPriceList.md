@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSPriceList GetPriceList(Integer priceListId);
 
-Gets a NSPriceList object.
+Gets an NSPriceList object.
 
 ## Parameters
 

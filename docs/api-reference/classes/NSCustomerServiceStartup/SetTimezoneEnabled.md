@@ -10,7 +10,8 @@ so.topic: reference
 
 Is timezone enabled
 
-**Parameter:** 
+## Parameters
+
 * **timezoneEnabled** Bool
 
 ```crmscript

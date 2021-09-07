@@ -10,7 +10,8 @@ so.topic: reference
 
 Sale amount converted to the base currency.
 
-**Parameter:** 
+## Parameters
+
 * **amountInBaseCurrency** Float
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Array of categories that the event is visible for. MDO Table "category".
 
-**Parameter:** 
+## Parameters
+
 * **visibleForCategories** NSMDOListItem[]
 
 ```crmscript

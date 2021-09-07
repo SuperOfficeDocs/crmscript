@@ -10,12 +10,16 @@ so.topic: reference
 
 Get the UID associated with the appointment id in the Invitation table.
 
+**Returns:** The associated UID, or null if none exist.
+
 ## Parameters
 
-* **appointmentId** 
-* **useMotherId** Uses motherId if no UID is found for appointmentId.
+| Parameter | Type |Description |
+|---|---|---|
+| appointmentId | Integer | |
+| useMotherId | Bool | Uses motherId if no UID is found for appointmentId. |
 
-**Returns:** The associated UID, or null if none exist.
+## Example
 
 ```crmscript
 NSAppointmentAgent agent;
@@ -23,4 +27,3 @@ Integer appointmentId;
 Bool useMotherId;
 String res = agent.GetUIDFromAppointmentId(appointmentId, useMotherId);
 ```
-

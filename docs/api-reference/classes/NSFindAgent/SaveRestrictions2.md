@@ -8,7 +8,7 @@ so.topic: reference
 
 # Void SaveRestrictions2(String storageType, String providerName, String storageKey, String restrictions)
 
-Save an array of restrictions for later use as search criteria (including as dynamic selection and Find). 
+Save an array of restrictions for later use as search criteria (including as dynamic selection and Find).
 
 ## Parameters
 

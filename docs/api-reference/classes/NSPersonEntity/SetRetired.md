@@ -10,7 +10,8 @@ so.topic: reference
 
 True if the user is retired and should have no rights, not appear in lists, etc.
 
-**Parameter:** 
+## Parameters
+
 * **retired** Bool
 
 ```crmscript

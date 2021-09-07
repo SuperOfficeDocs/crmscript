@@ -10,7 +10,8 @@ so.topic: reference
 
 Your reference
 
-**Parameter:** 
+## Parameters
+
 * **yourRef** String
 
 ```crmscript

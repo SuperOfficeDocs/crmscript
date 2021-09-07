@@ -10,7 +10,8 @@ so.topic: reference
 
 Type of deployment
 
-**Parameter:** 
+## Parameters
+
 * **deploymentType** Integer
 
 ```crmscript

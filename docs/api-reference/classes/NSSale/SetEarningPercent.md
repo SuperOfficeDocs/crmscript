@@ -10,7 +10,8 @@ so.topic: reference
 
 Earning as percent of total
 
-**Parameter:** 
+## Parameters
+
 * **earningPercent** Float
 
 ```crmscript

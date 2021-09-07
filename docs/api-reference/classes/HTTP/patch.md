@@ -14,7 +14,7 @@ Supports both http and https. Returns the result in a byte array.
 ## Example
 
     HTTP h;
-    
+   
     h.addHeader("header", "test");
     h.setValue("key", "value");
     h.setValue("key2", "value2");

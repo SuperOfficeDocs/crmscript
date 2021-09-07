@@ -10,7 +10,8 @@ so.topic: reference
 
 List of who is to be credited for the sale.
 
-**Parameter:** 
+## Parameters
+
 * **credited** NSCredited
 
 ```crmscript

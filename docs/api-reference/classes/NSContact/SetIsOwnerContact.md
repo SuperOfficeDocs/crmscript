@@ -10,7 +10,8 @@ so.topic: reference
 
 Is the contact an owner contact.  This means that all persons on this contact can on only be internal users and not external users.
 
-**Parameter:** 
+## Parameters
+
 * **isOwnerContact** Bool
 
 ```crmscript

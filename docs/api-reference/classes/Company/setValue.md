@@ -45,10 +45,10 @@ Sets a value in a column of a company.
 ## Example
 
     Company c;
-    
+   
     c.load(3);
     Bool b = c.checkTableRights("select");
     print(b.toString());
-    
+   
     c.setValue("name", "Test");
     print(c.getValue("name"));

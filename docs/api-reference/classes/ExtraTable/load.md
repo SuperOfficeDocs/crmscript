@@ -20,7 +20,7 @@ Returns true if the entry was found and loaded.
 ## Example
 
     ExtraTable ex;
-    
+   
     Bool b = ex.load(2);
     print(b.toString());
 

@@ -27,7 +27,7 @@ Sets the value of the given field for the category.
 ## Example
 
     Category c;
-    
+   
     c.load(2);
     c.setValue("name", "Test");
     print(c.getValue("name"));

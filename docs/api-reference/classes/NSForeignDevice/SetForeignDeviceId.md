@@ -10,7 +10,8 @@ so.topic: reference
 
 Primary key
 
-**Parameter:** 
+## Parameters
+
 * **foreignDeviceId** Integer
 
 ```crmscript

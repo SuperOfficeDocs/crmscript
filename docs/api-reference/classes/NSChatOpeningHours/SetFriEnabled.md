@@ -10,7 +10,8 @@ so.topic: reference
 
 Whether open on Fridays.
 
-**Parameter:** 
+## Parameters
+
 * **friEnabled** Bool
 
 ```crmscript

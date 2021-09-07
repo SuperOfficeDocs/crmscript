@@ -13,5 +13,7 @@ Map the given key and value in the map of the values common for all the SuperOff
 
 ## Parameters
 
-* key
-* value
+| Parameter | Type | Description |
+|---|---|---|
+| key | String | |
+| value | String | |

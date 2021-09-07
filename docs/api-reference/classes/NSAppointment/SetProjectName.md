@@ -10,7 +10,8 @@ so.topic: reference
 
 The name of the project this appointment belong to. Blank if no project is connected.
 
-**Parameter:** 
+## Parameters
+
 * **projectName** String
 
 ```crmscript

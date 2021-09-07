@@ -10,7 +10,8 @@ so.topic: reference
 
 Person ID of person the appointment is with, may be 0
 
-**Parameter:** 
+## Parameters
+
 * **personId** Integer
 
 ```crmscript

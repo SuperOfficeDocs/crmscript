@@ -10,7 +10,8 @@ so.topic: reference
 
 If true any of the quotelines for the alternative has been changed.
 
-**Parameter:** 
+## Parameters
+
 * **quoteLinesHasChanged** Bool
 
 ```crmscript

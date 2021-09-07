@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetState(String state)
 
-**Parameter:** 
+## Parameters
+
 * **state** String
 
 ```crmscript

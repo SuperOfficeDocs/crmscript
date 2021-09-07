@@ -10,7 +10,8 @@ so.topic: reference
 
 Name of the DiaryView.
 
-**Parameter:** 
+## Parameters
+
 * **name** String
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 The number of replies (messages) to the customer for this request.
 
-**Parameter:** 
+## Parameters
+
 * **numReplies** Integer
 
 ```crmscript

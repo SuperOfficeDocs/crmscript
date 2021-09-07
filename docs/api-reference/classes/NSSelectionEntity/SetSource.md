@@ -10,7 +10,8 @@ so.topic: reference
 
 How did we get this selection? For future integration needs
 
-**Parameter:** 
+## Parameters
+
 * **source** Integer
 
 ```crmscript

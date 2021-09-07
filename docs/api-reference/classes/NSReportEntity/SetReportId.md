@@ -8,9 +8,10 @@ so.topic: reference
 
 # SetReportId(Integer reportId)
 
-The id of the report. 
+The id of the report.
 
-**Parameter:** 
+## Parameters
+
 * **reportId** Integer
 
 ```crmscript

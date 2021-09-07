@@ -10,7 +10,8 @@ so.topic: reference
 
 The mimetype of the stream
 
-**Parameter:** 
+## Parameters
+
 * **type** String
 
 ```crmscript

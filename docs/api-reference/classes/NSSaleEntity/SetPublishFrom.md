@@ -10,6 +10,7 @@ so.topic: reference
 
 Set the publish from date on a SaleEntity.
 
-**Parameter:** 
+## Parameters
+
 * **publishFrom** DateTime.
 

@@ -10,7 +10,8 @@ so.topic: reference
 
 The currency the sale object was sold in
 
-**Parameter:** 
+## Parameters
+
 * **currency** NSCurrency
 
 ```crmscript

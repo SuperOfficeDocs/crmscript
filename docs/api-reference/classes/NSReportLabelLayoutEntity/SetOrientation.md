@@ -10,11 +10,12 @@ so.topic: reference
 
 Paper orientation: 1=portrait, 2=landscape
 
-**Parameter:** 
+## Parameters
+
 * **orientation** Integer
-* Enum: 0 = None 
-* Enum: 1 = Portrait 
-* Enum: 2 = Landscape 
+* Enum: 0 = None
+* Enum: 1 = Portrait
+* Enum: 2 = Landscape
 
 ```crmscript
 NSReportLabelLayoutEntity thing;

@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSPreferenceDescription SaveFromSectionAndKey(String section, String key, NSPreferenceDescription preferenceDescription)
 
-Update a NSPreferenceDescription based on the section and key
+Update an NSPreferenceDescription based on the section and key
 
 ## Parameters
 

@@ -10,7 +10,8 @@ so.topic: reference
 
 Multi-language name
 
-**Parameter:** 
+## Parameters
+
 * **name** String
 
 ```crmscript

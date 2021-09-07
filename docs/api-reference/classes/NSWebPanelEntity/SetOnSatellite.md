@@ -10,7 +10,8 @@ so.topic: reference
 
 Is the webpanel visible when user is on a satellite
 
-**Parameter:** 
+## Parameters
+
 * **onSatellite** Bool
 
 ```crmscript

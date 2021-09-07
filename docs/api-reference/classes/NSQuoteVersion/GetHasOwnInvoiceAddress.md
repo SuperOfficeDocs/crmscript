@@ -8,7 +8,7 @@ so.topic: reference
 
 # Bool GetHasOwnInvoiceAddress()
 
-The quote has an address for Invoicing. This will typically be copied from the company's addresses. 
+The quote has an address for Invoicing. This will typically be copied from the company's addresses.
 
 **Returns:** Bool
 

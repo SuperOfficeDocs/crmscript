@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSUserGroup GetUserGroup(Integer userGroupId);
 
-Gets a NSUserGroup object.
+Gets an NSUserGroup object.
 
 ## Parameters
 

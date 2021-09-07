@@ -10,7 +10,8 @@ so.topic: reference
 
 This is the registered client_id for AccessGateway OIDC
 
-**Parameter:** 
+## Parameters
+
 * **clientId** String
 
 ```crmscript

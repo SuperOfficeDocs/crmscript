@@ -18,9 +18,9 @@ This function returns the value of the given field for the currently loaded entr
 ## Example
 
     ExtraTable ex;
-    
+   
     Bool b = ex.load(2);
     print(b.toString());
-    
+   
     print(ex.getValue("x_table"));
 

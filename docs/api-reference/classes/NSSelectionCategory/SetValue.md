@@ -10,7 +10,8 @@ so.topic: reference
 
 Set the name of the SelectionCategory item.
 
-**Parameter:** 
+## Parameters
+
 * **value** String SelectionCategory name.
 
 ```crmscript

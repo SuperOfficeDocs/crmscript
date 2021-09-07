@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSArea GetArea(Integer areaId);
 
-Gets a NSArea object.
+Gets an NSArea object.
 
 ## Parameters
 

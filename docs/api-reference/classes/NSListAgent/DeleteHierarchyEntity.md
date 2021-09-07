@@ -9,7 +9,7 @@ so.topic: reference
 # DeleteHierarchyEntity(Integer hierarchyEntity);
 
 Deletes the NSHierarchyEntity
-  
+ 
 ## Parameters
 
 * **hierarchyEntityId** The identity of the NSHierarchyEntity to delete.

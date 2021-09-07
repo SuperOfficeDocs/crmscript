@@ -13,4 +13,4 @@ Remove all favourites for a table and associate
 ## Parameters
 
 * **tableName** Table name, transformed to and from numeric table id by the service layer.
-* **associateId** 
+* **associateId**

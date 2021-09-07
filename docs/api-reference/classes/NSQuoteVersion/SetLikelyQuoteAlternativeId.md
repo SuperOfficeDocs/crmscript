@@ -10,7 +10,8 @@ so.topic: reference
 
 The alternative that is considered most likely to be accepted. Used to calculate probable income.
 
-**Parameter:** 
+## Parameters
+
 * **likelyQuoteAlternativeId** Integer
 
 ```crmscript

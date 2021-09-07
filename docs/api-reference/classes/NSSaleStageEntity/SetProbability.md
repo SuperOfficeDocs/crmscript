@@ -10,7 +10,8 @@ so.topic: reference
 
 The numeric probability of the sale
 
-**Parameter:** 
+## Parameters
+
 * **probability** Integer
 
 ```crmscript

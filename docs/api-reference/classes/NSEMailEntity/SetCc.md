@@ -10,7 +10,8 @@ so.topic: reference
 
 Cc recipients of e-mail
 
-**Parameter:** 
+## Parameters
+
 * **cc** NSEMailAddress[]
 
 ```crmscript

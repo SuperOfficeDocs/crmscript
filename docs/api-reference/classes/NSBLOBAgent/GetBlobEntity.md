@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSBlobEntity GetBlobEntity(Integer blobEntityId);
 
-Gets a NSBlobEntity object.
+Gets an NSBlobEntity object.
 
 ## Parameters
 

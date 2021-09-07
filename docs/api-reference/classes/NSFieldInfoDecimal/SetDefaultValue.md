@@ -10,7 +10,8 @@ so.topic: reference
 
 Default decimal (double precision) value
 
-**Parameter:** 
+## Parameters
+
 * **defaultValue** Float
 
 ```crmscript

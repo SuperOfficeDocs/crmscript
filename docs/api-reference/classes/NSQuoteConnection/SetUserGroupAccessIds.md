@@ -10,7 +10,8 @@ so.topic: reference
 
 Array of ids containing usergroups that will have access to this connection.
 
-**Parameter:** 
+## Parameters
+
 * **userGroupAccessIds** Integer[]
 
 ```crmscript

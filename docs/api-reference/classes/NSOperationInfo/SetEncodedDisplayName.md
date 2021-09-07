@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetEncodedDisplayName(String encodedDisplayName)
 
-**Parameter:** 
+## Parameters
+
 * **encodedDisplayName** String
 
 ```crmscript

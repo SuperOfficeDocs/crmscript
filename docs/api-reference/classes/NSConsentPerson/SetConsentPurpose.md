@@ -10,7 +10,8 @@ so.topic: reference
 
 The consent purpose
 
-**Parameter:** 
+## Parameters
+
 * **consentPurpose** NSConsentPurpose
 
 ```crmscript

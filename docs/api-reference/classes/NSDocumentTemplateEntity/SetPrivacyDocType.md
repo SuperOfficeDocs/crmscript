@@ -10,10 +10,11 @@ so.topic: reference
 
 Indicator that this document template has a functional role, related to privacy/GDPR
 
-**Parameter:** 
+## Parameters
+
 * **privacyDocType** NSDocTmplPrivacyType
-* Enum: 0 = None 
-* Enum: 1 = PersonRegistered 
+* Enum: 0 = None
+* Enum: 1 = PersonRegistered
 
 ```crmscript
 NSDocumentTemplateEntity thing;

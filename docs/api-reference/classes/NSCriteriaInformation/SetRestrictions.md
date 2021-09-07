@@ -10,7 +10,8 @@ so.topic: reference
 
 Array of NSArchiveRestrictionInfo restriction specifications (for the first restrictiongroup if there are more than one group
 
-**Parameter:** 
+## Parameters
+
 * **restrictions** NSArchiveRestrictionInfo[]
 
 ```crmscript

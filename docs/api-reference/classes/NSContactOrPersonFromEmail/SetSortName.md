@@ -10,7 +10,8 @@ so.topic: reference
 
 If person ? The person name, else contact name
 
-**Parameter:** 
+## Parameters
+
 * **sortName** String
 
 ```crmscript

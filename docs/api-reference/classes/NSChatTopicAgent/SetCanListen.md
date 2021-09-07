@@ -10,7 +10,8 @@ so.topic: reference
 
 True of a user can listen in on this topic
 
-**Parameter:** 
+## Parameters
+
 * **canListen** Bool
 
 ```crmscript

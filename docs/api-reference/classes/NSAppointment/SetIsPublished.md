@@ -10,7 +10,8 @@ so.topic: reference
 
 True if appointment have an entry in published table
 
-**Parameter:** 
+## Parameters
+
 * **isPublished** Bool
 
 ```crmscript

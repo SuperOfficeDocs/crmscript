@@ -10,7 +10,8 @@ so.topic: reference
 
 TargetTableNumber defines the type of selection members this selection contains. e.g. the table number for 'contact', or 'project' or 'sale'
 
-**Parameter:** 
+## Parameters
+
 * **targetTableNumber** Integer
 
 ```crmscript

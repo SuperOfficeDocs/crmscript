@@ -10,7 +10,8 @@ so.topic: reference
 
 Is the application visible when user is on travel
 
-**Parameter:** 
+## Parameters
+
 * **onTravel** Bool
 
 ```crmscript

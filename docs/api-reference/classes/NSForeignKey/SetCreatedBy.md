@@ -10,7 +10,8 @@ so.topic: reference
 
 Name of the person that created the foreign key
 
-**Parameter:** 
+## Parameters
+
 * **createdBy** String
 
 ```crmscript

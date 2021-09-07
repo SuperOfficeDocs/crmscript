@@ -10,7 +10,8 @@ so.topic: reference
 
 Text describing the sale
 
-**Parameter:** 
+## Parameters
+
 * **saleText** String
 
 ```crmscript

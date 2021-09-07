@@ -10,7 +10,8 @@ so.topic: reference
 
 A collection of the person's emails
 
-**Parameter:** 
+## Parameters
+
 * **emails** NSEntityElement[]
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 The weighted amount ( amount *  probability / 100)
 
-**Parameter:** 
+## Parameters
+
 * **weightedAmount** Float
 
 ```crmscript

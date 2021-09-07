@@ -10,7 +10,8 @@ so.topic: reference
 
 If this message is important or not.
 
-**Parameter:** 
+## Parameters
+
 * **important** Bool
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Set the name of the Department item.
 
-**Parameter:** 
+## Parameters
+
 * **value** String Department name.
 
 ```crmscript

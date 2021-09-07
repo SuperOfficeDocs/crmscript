@@ -10,7 +10,8 @@ so.topic: reference
 
 Default show in selector?
 
-**Parameter:** 
+## Parameters
+
 * **defaultShowInSelector** Bool
 
 ```crmscript

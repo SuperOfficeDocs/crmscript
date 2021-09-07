@@ -9,8 +9,7 @@ so.topic: reference
 
 # String getExternalProgram(Integer progId)
 
-Returns the URL of the program module specified by progId. As indicated by the name, this will return the external URL, ie when accessed from the Internet (if available).
-progId can be:
+Returns the URL of the program module specified by progId. As indicated by the name, this will return the external URL, ie when accessed from the Internet (if available). progId can be:
 
 * modNull        = 0x00000000,
 * modTicket      = 0x00000001,

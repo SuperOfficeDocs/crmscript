@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSLocalizedText GetLocalizedText(Integer localizedTextId);
 
-Gets a NSLocalizedText object.
+Gets an NSLocalizedText object.
 
 ## Parameters
 

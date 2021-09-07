@@ -10,7 +10,8 @@ so.topic: reference
 
 True if this option only applies to the default data source, not selections
 
-**Parameter:** 
+## Parameters
+
 * **defaultDataOption** Bool
 
 ```crmscript

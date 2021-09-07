@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSTicketMessage GetTicketMessage(Integer ticketMessageId);
 
-Gets a NSTicketMessage object.
+Gets an NSTicketMessage object.
 
 ## Parameters
 

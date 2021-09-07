@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSHeadingEntity GetHeadingEntity(Integer headingEntityId);
 
-Gets a NSHeadingEntity object.
+Gets an NSHeadingEntity object.
 
 ## Parameters
 

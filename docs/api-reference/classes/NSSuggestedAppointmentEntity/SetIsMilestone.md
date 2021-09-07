@@ -10,7 +10,8 @@ so.topic: reference
 
 Is this a milestone activity
 
-**Parameter:** 
+## Parameters
+
 * **isMilestone** Bool
 
 ```crmscript

@@ -10,22 +10,27 @@ so.topic: reference
 
 The participant status for the appointment
 
-**Parameter:** 
+## Parameters
+
 * **invitationStatus** Integer
-* Enum: 0 = Unknown 
-* Enum: 1 = None 
-* Enum: 2 = Accepted 
-* Enum: 4 = Hidden 
-* Enum: 5 = Invitation 
-* Enum: 6 = Moved 
-* Enum: 7 = Seen 
-* Enum: 8 = MovedSeen 
-* Enum: 9 = Declined 
-* Enum: 10 = Cancelled 
+
+### Enum: InvitationStatus
+
+* 0 = Unknown
+* 1 = None
+* 2 = Accepted
+* 4 = Hidden
+* 5 = Invitation
+* 6 = Moved
+* 7 = Seen
+* 8 = MovedSeen
+* 9 = Declined
+* 10 = Cancelled
+
+## Example
 
 ```crmscript
 NSParticipantInfo thing;
 Integer invitationStatus;
 thing.SetInvitationStatus(invitationStatus);
 ```
-

@@ -10,7 +10,8 @@ so.topic: reference
 
 A newer invitation exists
 
-**Parameter:** 
+## Parameters
+
 * **superseded** Bool
 
 ```crmscript

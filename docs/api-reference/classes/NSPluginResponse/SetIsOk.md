@@ -10,7 +10,8 @@ so.topic: reference
 
 Answer to the question / An indication if the operation went well.
 
-**Parameter:** 
+## Parameters
+
 * **isOk** Bool
 
 ```crmscript

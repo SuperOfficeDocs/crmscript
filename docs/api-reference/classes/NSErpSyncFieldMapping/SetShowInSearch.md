@@ -10,7 +10,8 @@ so.topic: reference
 
 Should this field be shown in searches
 
-**Parameter:** 
+## Parameters
+
 * **showInSearch** Bool
 
 ```crmscript

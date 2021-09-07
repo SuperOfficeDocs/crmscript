@@ -10,7 +10,8 @@ so.topic: reference
 
 The color indicator of the ListItem color block
 
-**Parameter:** 
+## Parameters
+
 * **colorBlock** Integer
 
 ```crmscript

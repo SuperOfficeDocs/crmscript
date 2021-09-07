@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSTicketCategoryEntity GetTicketCategoryEntity(Integer ticketCategoryEntityId);
 
-Gets a NSTicketCategoryEntity object.
+Gets an NSTicketCategoryEntity object.
 
 ## Parameters
 

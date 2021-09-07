@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSCustomerCenterConfig GetCustomerCenterConfig(Integer customerCenterConfigId);
 
-Gets a NSCustomerCenterConfig object.
+Gets an NSCustomerCenterConfig object.
 
 ## Parameters
 

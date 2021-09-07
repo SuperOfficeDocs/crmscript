@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSQuoteVersion GetQuoteVersion(Integer quoteVersionId)
 
-Get a NSQuoteVersion
+Get an NSQuoteVersion
 
 ## Parameters
 

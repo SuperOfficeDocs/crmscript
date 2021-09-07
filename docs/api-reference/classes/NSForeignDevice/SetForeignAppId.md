@@ -10,7 +10,8 @@ so.topic: reference
 
 Reference to foregin application (device type)
 
-**Parameter:** 
+## Parameters
+
 * **foreignAppId** Integer
 
 ```crmscript

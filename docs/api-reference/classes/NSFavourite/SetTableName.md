@@ -10,7 +10,8 @@ so.topic: reference
 
 Name of the table this favourite belongs to.
 
-**Parameter:** 
+## Parameters
+
 * **tableName** String
 
 ```crmscript

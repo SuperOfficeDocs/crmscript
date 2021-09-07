@@ -10,7 +10,8 @@ so.topic: reference
 
 If true, the Task list item is deleted
 
-**Parameter:** 
+## Parameters
+
 * **deleted** Bool
 
 ```crmscript

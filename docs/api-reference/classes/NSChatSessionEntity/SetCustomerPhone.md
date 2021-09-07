@@ -10,7 +10,8 @@ so.topic: reference
 
 The phone number of the customer, if provided
 
-**Parameter:** 
+## Parameters
+
 * **customerPhone** String
 
 ```crmscript

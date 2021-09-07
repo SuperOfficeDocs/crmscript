@@ -10,7 +10,8 @@ so.topic: reference
 
 Name of device
 
-**Parameter:** 
+## Parameters
+
 * **name** String
 
 ```crmscript

@@ -12,8 +12,9 @@ Message to display in SOADMIN if LinkType=90.
 
 **Returns:** String
 
+## Example
+
 ```crmscript
 NSCheckLicenseStatusResult thing;
 String message  = thing.GetMessage();
 ```
-

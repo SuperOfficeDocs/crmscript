@@ -14,13 +14,13 @@ Returns the last error message.
 ## Example
 
     HTTP h;
-    
+   
     h.addHeader("header", "test");
     h.setValue("key", "value");
     h.setValue("key2", "value2");
     h.setOption("followLocation", "true");
     Byte[] b = h.put("https://httpbin.org/put");
-    
+   
     if (h.hasError())
       print(h.getErrorMessage());
     else

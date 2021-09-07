@@ -9,7 +9,7 @@ so.topic: reference
 # DeleteConsentPerson(Integer consentPerson);
 
 Deletes the NSConsentPerson
-  
+ 
 ## Parameters
 
 * **consentPersonId** The identity of the ConsentPerson to delete.

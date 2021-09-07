@@ -10,7 +10,8 @@ so.topic: reference
 
 Name to be used in GUI, preferable a resource string
 
-**Parameter:** 
+## Parameters
+
 * **tableDescription** String
 
 ```crmscript

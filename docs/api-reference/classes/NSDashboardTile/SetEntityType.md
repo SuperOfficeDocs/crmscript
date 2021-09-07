@@ -10,17 +10,18 @@ so.topic: reference
 
 The tile entity type
 
-**Parameter:** 
+## Parameters
+
 * **entityType** Integer
-* Enum: 0 = None 
-* Enum: 1 = Company 
-* Enum: 2 = Project 
-* Enum: 3 = Sale 
-* Enum: 4 = Product 
-* Enum: 5 = Activity 
-* Enum: 6 = Document 
-* Enum: 7 = WebPanel 
-* Enum: 8 = Followup 
+* Enum: 0 = None
+* Enum: 1 = Company
+* Enum: 2 = Project
+* Enum: 3 = Sale
+* Enum: 4 = Product
+* Enum: 5 = Activity
+* Enum: 6 = Document
+* Enum: 7 = WebPanel
+* Enum: 8 = Followup
 
 ```crmscript
 NSDashboardTile thing;

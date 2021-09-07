@@ -9,7 +9,7 @@ so.topic: reference
 # DeletePriceList(Integer priceList);
 
 Deletes the NSPriceList
-  
+ 
 ## Parameters
 
 * **priceListId** The identity of the PriceList to delete.

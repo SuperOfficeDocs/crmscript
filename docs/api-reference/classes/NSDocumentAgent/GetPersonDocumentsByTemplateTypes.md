@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSDocument[] GetPersonDocumentsByTemplateTypes(Integer personId, Bool includeProjectDocuments, DateTime startTime, DateTime endTime, Integer count, Integer[] documentTemplateIds)
 
-Method that returns a specified number of document appointments within a time range, filtered by document template types. The document appointments belong to the person specified. 
+Method that returns a specified number of document appointments within a time range, filtered by document template types. The document appointments belong to the person specified.
 
 ## Parameters
 

@@ -10,7 +10,8 @@ so.topic: reference
 
 The id of the folder in which this reply template is located. NULL or -1 if this is a toplevel reply template.
 
-**Parameter:** 
+## Parameters
+
 * **folderId** Integer
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 The value displayed to the user. this will typically be the users login name in active directory.
 
-**Parameter:** 
+## Parameters
+
 * **displayValue** String
 
 ```crmscript

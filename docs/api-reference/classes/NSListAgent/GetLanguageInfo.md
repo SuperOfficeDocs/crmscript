@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSLanguageInfo GetLanguageInfo(Integer languageInfoId);
 
-Gets a NSLanguageInfo object.
+Gets an NSLanguageInfo object.
 
 ## Parameters
 

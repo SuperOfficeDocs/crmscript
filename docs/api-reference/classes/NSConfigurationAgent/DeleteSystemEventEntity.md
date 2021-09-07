@@ -9,7 +9,7 @@ so.topic: reference
 # DeleteSystemEventEntity(Integer systemEventEntity);
 
 Deletes the NSSystemEventEntity
-  
+ 
 ## Parameters
 
 * **systemEventEntityId** The identity of the SystemEventEntity to delete.

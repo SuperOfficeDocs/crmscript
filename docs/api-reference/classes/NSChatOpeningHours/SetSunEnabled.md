@@ -10,7 +10,8 @@ so.topic: reference
 
 Whether open on Sundays.
 
-**Parameter:** 
+## Parameters
+
 * **sunEnabled** Bool
 
 ```crmscript

@@ -8,11 +8,11 @@ so.topic: reference
 
 # NSProjectEventEntity GetProjectEventEntityFromProjectId(Integer projectId)
 
-Get a NSProjectEventEntity based on a projectId.
+Get an NSProjectEventEntity based on a projectId.
 
 ## Parameters
 
-* **projectId** The projectId to get a NSProjectEventEntity for
+* **projectId** The projectId to get an NSProjectEventEntity for
 
 **Returns:** NSProjectEventEntity
 

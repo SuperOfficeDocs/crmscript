@@ -12,8 +12,9 @@ Url to show to the user.  This is relevant when LinkType is 60.
 
 **Returns:** String
 
+## Example
+
 ```crmscript
 NSCheckLicenseStatusResult thing;
 String url  = thing.GetUrl();
 ```
-

@@ -10,7 +10,8 @@ so.topic: reference
 
 Does this sale type have stakeholders
 
-**Parameter:** 
+## Parameters
+
 * **hasStakeholders** Bool
 
 ```crmscript

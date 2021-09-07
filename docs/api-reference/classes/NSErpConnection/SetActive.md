@@ -10,7 +10,8 @@ so.topic: reference
 
 Is this connection currently active
 
-**Parameter:** 
+## Parameters
+
 * **active** Bool
 
 ```crmscript

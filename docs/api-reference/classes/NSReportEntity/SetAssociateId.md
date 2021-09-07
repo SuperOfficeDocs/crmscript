@@ -10,7 +10,8 @@ so.topic: reference
 
 The owner of the report.
 
-**Parameter:** 
+## Parameters
+
 * **associateId** Integer
 
 ```crmscript

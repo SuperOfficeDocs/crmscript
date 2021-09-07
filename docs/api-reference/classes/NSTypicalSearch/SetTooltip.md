@@ -10,7 +10,8 @@ so.topic: reference
 
 The tooltip for the typical search (multilingual)
 
-**Parameter:** 
+## Parameters
+
 * **tooltip** String
 
 ```crmscript

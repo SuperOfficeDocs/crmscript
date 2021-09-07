@@ -10,7 +10,8 @@ so.topic: reference
 
 How many decimals to display
 
-**Parameter:** 
+## Parameters
+
 * **precision** Integer
 
 ```crmscript

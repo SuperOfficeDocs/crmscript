@@ -10,7 +10,8 @@ so.topic: reference
 
 The value of the configuration parameter
 
-**Parameter:** 
+## Parameters
+
 * **value** String
 
 ```crmscript

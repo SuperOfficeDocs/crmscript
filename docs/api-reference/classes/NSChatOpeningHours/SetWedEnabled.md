@@ -10,7 +10,8 @@ so.topic: reference
 
 Whether open on Wednesdays.
 
-**Parameter:** 
+## Parameters
+
 * **wedEnabled** Bool
 
 ```crmscript

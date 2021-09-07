@@ -10,7 +10,8 @@ so.topic: reference
 
 Time the training finished
 
-**Parameter:** 
+## Parameters
+
 * **modelBuiltDateTime** DateTime
 
 ```crmscript

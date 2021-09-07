@@ -10,7 +10,8 @@ so.topic: reference
 
 Expected sales date
 
-**Parameter:** 
+## Parameters
+
 * **saleDate** DateTime
 
 ```crmscript

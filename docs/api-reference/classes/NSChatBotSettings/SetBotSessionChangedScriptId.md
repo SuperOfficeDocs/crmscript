@@ -10,7 +10,8 @@ so.topic: reference
 
 Script id to run when session state changes.
 
-**Parameter:** 
+## Parameters
+
 * **botSessionChangedScriptId** Integer
 
 ```crmscript

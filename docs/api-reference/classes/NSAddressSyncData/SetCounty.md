@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetCounty(String county)
 
-**Parameter:** 
+## Parameters
+
 * **county** String
 
 ```crmscript

@@ -8,11 +8,15 @@ so.topic: reference
 
 # NSNavigatorCompany[] GetNavigatorCompanies(String name)
 
+**Returns:** NSNavigatorCompany[]
+
 ## Parameters
 
-* **name** 
+| Parameter | Type | Description |
+|---|---|---|
+| name | String | |
 
-**Returns:** NSNavigatorCompany[]
+## Example
 
 ```crmscript
 NSNavigatorAgent agent;

@@ -10,7 +10,8 @@ so.topic: reference
 
 The window which the URL address is to open in (webpanel only)
 
-**Parameter:** 
+## Parameters
+
 * **windowName** String
 
 ```crmscript

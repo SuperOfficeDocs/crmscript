@@ -10,7 +10,8 @@ so.topic: reference
 
 The description of the field
 
-**Parameter:** 
+## Parameters
+
 * **encodedDisplayDescription** String
 
 ```crmscript

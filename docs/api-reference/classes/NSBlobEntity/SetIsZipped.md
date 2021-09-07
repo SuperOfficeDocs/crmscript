@@ -10,7 +10,8 @@ so.topic: reference
 
 Has the data been zipped.
 
-**Parameter:** 
+## Parameters
+
 * **isZipped** Bool
 
 ```crmscript

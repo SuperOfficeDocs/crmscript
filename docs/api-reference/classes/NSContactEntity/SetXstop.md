@@ -10,7 +10,8 @@ so.topic: reference
 
 STOP flag
 
-**Parameter:** 
+## Parameters
+
 * **xstop** Bool
 
 ```crmscript

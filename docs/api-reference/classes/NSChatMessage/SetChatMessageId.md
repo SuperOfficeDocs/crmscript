@@ -10,7 +10,8 @@ so.topic: reference
 
 The primary key (auto-incremented)
 
-**Parameter:** 
+## Parameters
+
 * **chatMessageId** Integer
 
 ```crmscript

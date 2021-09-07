@@ -10,7 +10,8 @@ so.topic: reference
 
 International prefix
 
-**Parameter:** 
+## Parameters
+
 * **interAreaPrefix** String
 
 ```crmscript

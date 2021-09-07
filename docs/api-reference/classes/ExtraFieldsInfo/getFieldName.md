@@ -16,9 +16,9 @@ This function returns the field name of the current field.
 This code prints all field names of extra fields:
 
     ExtraFieldsInfo e;
-    
+   
     e.getExtraFields("person");
-    
+   
     while(!e.eof()){
       print(e.getFieldName());
       e.next();

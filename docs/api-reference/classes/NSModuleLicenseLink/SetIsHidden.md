@@ -10,7 +10,8 @@ so.topic: reference
 
 Is hidden from UI
 
-**Parameter:** 
+## Parameters
+
 * **isHidden** Bool
 
 ```crmscript

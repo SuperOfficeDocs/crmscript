@@ -10,7 +10,8 @@ so.topic: reference
 
 True if the email signature should be added in bottom of mail if this an email template
 
-**Parameter:** 
+## Parameters
+
 * **includeSignature** Bool
 
 ```crmscript

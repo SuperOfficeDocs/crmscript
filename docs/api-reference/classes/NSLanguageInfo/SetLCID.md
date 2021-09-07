@@ -10,7 +10,8 @@ so.topic: reference
 
 Language/culture id as a numeric .NET code
 
-**Parameter:** 
+## Parameters
+
 * **lCID** Integer
 
 ```crmscript

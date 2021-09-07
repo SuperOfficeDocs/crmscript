@@ -10,7 +10,8 @@ so.topic: reference
 
 Appointment information
 
-**Parameter:** 
+## Parameters
+
 * **appointment** NSAppointment
 
 ```crmscript

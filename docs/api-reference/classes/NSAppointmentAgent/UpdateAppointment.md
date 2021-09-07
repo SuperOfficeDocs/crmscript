@@ -12,9 +12,11 @@ Updates an appointment record.
 
 ## Parameters
 
-* **id** 
-* **startTime** 
-* **endTime** 
-* **status** 
-* **type** 
-* **associateId** The appointment owner's id (associate id)
+| Parameter | Type |Description |
+|---|---|---|
+| id | Integer | |
+| startTime | DateTime| |
+| endTime | DateTime | |
+| status | Integer | |
+| type | Integer | |
+| associateId | Integer | The appointment owner's id (associate id) |

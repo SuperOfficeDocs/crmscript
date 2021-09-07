@@ -10,7 +10,8 @@ so.topic: reference
 
 Set the tooltip description for the NSMrMrs list item.
 
-**Parameter:** 
+## Parameters
+
 * **tooltip** String NSMrMrs tooltip description.
 
 ```crmscript

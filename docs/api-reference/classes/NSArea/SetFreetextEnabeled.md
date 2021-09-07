@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetFreetextEnabeled(Bool freetextEnabeled)
 
-**Parameter:** 
+## Parameters
+
 * **freetextEnabeled** Bool
 
 ```crmscript

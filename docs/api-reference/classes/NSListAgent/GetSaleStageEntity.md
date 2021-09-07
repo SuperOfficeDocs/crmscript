@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSSaleStageEntity GetSaleStageEntity(Integer saleStageEntityId);
 
-Gets a NSSaleStageEntity object.
+Gets an NSSaleStageEntity object.
 
 ## Parameters
 

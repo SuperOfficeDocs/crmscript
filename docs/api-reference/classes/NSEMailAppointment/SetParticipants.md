@@ -10,7 +10,8 @@ so.topic: reference
 
 List of participants in the iCal file* first one being the organizer
 
-**Parameter:** 
+## Parameters
+
 * **participants** String[]
 
 ```crmscript

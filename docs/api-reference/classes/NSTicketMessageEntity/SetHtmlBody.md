@@ -10,7 +10,8 @@ so.topic: reference
 
 The html body for the message (if any).
 
-**Parameter:** 
+## Parameters
+
 * **htmlBody** String
 
 ```crmscript

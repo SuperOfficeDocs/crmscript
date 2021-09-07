@@ -10,7 +10,8 @@ so.topic: reference
 
 Our contact
 
-**Parameter:** 
+## Parameters
+
 * **associateId** Integer
 
 ```crmscript

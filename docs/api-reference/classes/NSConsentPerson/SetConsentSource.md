@@ -10,7 +10,8 @@ so.topic: reference
 
 The consent source
 
-**Parameter:** 
+## Parameters
+
 * **consentSource** NSConsentSource
 
 ```crmscript

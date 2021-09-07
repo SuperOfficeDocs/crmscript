@@ -10,7 +10,8 @@ so.topic: reference
 
 Number of active links to sale, document, appointment.
 
-**Parameter:** 
+## Parameters
+
 * **activeLinks** Integer
 
 ```crmscript

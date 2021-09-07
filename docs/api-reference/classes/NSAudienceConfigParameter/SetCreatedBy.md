@@ -10,7 +10,8 @@ so.topic: reference
 
 Name of the person that created the configuration parameter
 
-**Parameter:** 
+## Parameters
+
 * **createdBy** String
 
 ```crmscript

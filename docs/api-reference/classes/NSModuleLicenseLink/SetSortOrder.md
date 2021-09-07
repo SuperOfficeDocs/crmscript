@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetSortOrder(Integer sortOrder)
 
-**Parameter:** 
+## Parameters
+
 * **sortOrder** Integer
 
 ```crmscript

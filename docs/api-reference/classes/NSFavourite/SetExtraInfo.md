@@ -10,7 +10,8 @@ so.topic: reference
 
 Extra information for this favourite.
 
-**Parameter:** 
+## Parameters
+
 * **extraInfo** String
 
 ```crmscript

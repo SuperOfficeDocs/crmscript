@@ -10,7 +10,8 @@ so.topic: reference
 
 The total number of messages for this request.
 
-**Parameter:** 
+## Parameters
+
 * **numMessages** Integer
 
 ```crmscript

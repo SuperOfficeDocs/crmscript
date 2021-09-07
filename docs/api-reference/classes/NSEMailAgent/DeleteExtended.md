@@ -10,5 +10,7 @@ so.topic: reference
 
 ## Parameters
 
-* **connectionInfoExtended** 
-* **messageIds** 
+| Parameter | Type | Description |
+|---|---|---|
+| connectionInfoExtended | EMailConnectionInfoExtended | |
+| messageIds | String[] | |

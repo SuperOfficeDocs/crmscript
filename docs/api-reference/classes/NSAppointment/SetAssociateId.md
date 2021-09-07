@@ -10,7 +10,8 @@ so.topic: reference
 
 ID of associate whose diary the appointment is in, REQUIRED
 
-**Parameter:** 
+## Parameters
+
 * **associateId** Integer
 
 ```crmscript

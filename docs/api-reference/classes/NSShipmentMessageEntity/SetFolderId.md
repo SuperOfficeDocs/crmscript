@@ -10,7 +10,8 @@ so.topic: reference
 
 The folder which this message belongs to. -1 indicates that the message is on the root
 
-**Parameter:** 
+## Parameters
+
 * **folderId** Integer
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Preference description (parent)
 
-**Parameter:** 
+## Parameters
+
 * **prefDescId** Integer
 
 ```crmscript

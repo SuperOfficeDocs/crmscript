@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSReportEntity GetReportEntity(Integer reportEntityId);
 
-Gets a NSReportEntity object.
+Gets an NSReportEntity object.
 
 * **ReportEntityId** The identifier of the NSReportEntity object
 

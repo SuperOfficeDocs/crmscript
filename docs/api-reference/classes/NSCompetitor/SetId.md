@@ -10,7 +10,8 @@ so.topic: reference
 
 Set the primary key (id) for the NSCompetitor
 
-**Parameter:** 
+## Parameters
+
 * **id** Integer NSCompetitor id.
 
 ```crmscript

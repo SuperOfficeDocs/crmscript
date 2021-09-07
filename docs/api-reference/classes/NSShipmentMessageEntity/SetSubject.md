@@ -10,7 +10,8 @@ so.topic: reference
 
 The mail subject field of the message
 
-**Parameter:** 
+## Parameters
+
 * **subject** String
 
 ```crmscript

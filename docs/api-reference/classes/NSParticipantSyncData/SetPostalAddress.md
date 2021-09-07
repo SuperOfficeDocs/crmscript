@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetPostalAddress(NSAddressSyncData postalAddress)
 
-**Parameter:** 
+## Parameters
+
 * **postalAddress** NSAddressSyncData
 
 ```crmscript

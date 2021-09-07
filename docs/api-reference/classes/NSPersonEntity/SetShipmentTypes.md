@@ -10,7 +10,8 @@ so.topic: reference
 
 The person's available and selected shipment types.
 
-**Parameter:** 
+## Parameters
+
 * **shipmentTypes** NSSelectableMDOListItem[]
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 The caption for this dashboard
 
-**Parameter:** 
+## Parameters
+
 * **caption** String
 
 ```crmscript

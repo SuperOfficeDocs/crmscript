@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSConsentPurpose SaveConsentPurpose(NSConsentPurpose consentPurpose)
 
-Save a NSConsentPurpose object
+Save an NSConsentPurpose object
 
 ## Parameters
 

@@ -10,7 +10,8 @@ so.topic: reference
 
 The identity of the external app
 
-**Parameter:** 
+## Parameters
+
 * **extAppId** Integer
 
 ```crmscript

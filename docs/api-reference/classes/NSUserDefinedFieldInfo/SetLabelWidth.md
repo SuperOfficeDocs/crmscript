@@ -10,7 +10,8 @@ so.topic: reference
 
 label width in pixels, 0 = 'enough' (from font)
 
-**Parameter:** 
+## Parameters
+
 * **labelWidth** Integer
 
 ```crmscript

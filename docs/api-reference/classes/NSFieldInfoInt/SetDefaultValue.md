@@ -10,7 +10,8 @@ so.topic: reference
 
 Default integer value
 
-**Parameter:** 
+## Parameters
+
 * **defaultValue** Integer
 
 ```crmscript

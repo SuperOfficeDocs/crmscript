@@ -10,7 +10,8 @@ so.topic: reference
 
 Upper limit of this amount class
 
-**Parameter:** 
+## Parameters
+
 * **amountTo** Float
 
 ```crmscript

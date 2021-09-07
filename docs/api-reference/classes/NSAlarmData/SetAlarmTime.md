@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetAlarmTime(DateTime alarmTime)
 
-**Parameter:** 
+## Parameters
+
 * **alarmTime** DateTime
 
 ```crmscript

@@ -20,6 +20,6 @@ Returns true if the customer exists, otherwise false.
 ## Example
 
     Customer c;
-    
+   
     print(c.load(3));
 

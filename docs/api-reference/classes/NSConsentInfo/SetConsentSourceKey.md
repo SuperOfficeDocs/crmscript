@@ -10,7 +10,8 @@ so.topic: reference
 
 Key of the NSConsentSource associated with this consent
 
-**Parameter:** 
+## Parameters
+
 * **consentSourceKey** String
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Rank order
 
-**Parameter:** 
+## Parameters
+
 * **rank** Integer
 
 ```crmscript

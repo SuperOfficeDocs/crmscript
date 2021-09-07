@@ -10,7 +10,8 @@ so.topic: reference
 
 The id of the category a ticket is in.
 
-**Parameter:** 
+## Parameters
+
 * **category** Integer
 
 ```crmscript

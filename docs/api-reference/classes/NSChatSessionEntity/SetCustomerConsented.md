@@ -10,7 +10,8 @@ so.topic: reference
 
 The customer consented when starting the session
 
-**Parameter:** 
+## Parameters
+
 * **customerConsented** Bool
 
 ```crmscript

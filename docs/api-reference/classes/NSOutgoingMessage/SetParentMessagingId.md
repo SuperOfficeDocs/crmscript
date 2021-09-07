@@ -10,7 +10,8 @@ so.topic: reference
 
 Id to the previous outgoing message related to this one. Used from message threading.
 
-**Parameter:** 
+## Parameters
+
 * **parentMessagingId** Integer
 
 ```crmscript

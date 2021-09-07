@@ -13,4 +13,4 @@ Store a binary object from it's stream
 ## Parameters
 
 * **blobEntityId** Id of the BLOB entity object that the binary data should be stored to.
-* **stream** The binary object as a NSStream
+* **stream** The binary object as an NSStream

@@ -10,7 +10,8 @@ so.topic: reference
 
 The name of the credentials to be displayed in the user interface.  This will typically be Password for user-name/password scenarios and Active Directoru User for AD integration.
 
-**Parameter:** 
+## Parameters
+
 * **displayType** String
 
 ```crmscript

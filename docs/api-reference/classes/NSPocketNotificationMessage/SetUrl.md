@@ -10,7 +10,8 @@ so.topic: reference
 
 An url associated with the notification that will be handled by Pocket
 
-**Parameter:** 
+## Parameters
+
 * **url** String
 
 ```crmscript

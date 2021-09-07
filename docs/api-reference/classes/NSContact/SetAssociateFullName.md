@@ -10,7 +10,8 @@ so.topic: reference
 
 The associate's culture formatted fullname (firstname, middleName and lastname)
 
-**Parameter:** 
+## Parameters
+
 * **associateFullName** String
 
 ```crmscript

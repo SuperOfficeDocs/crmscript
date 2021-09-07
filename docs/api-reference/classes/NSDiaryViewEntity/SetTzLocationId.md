@@ -10,7 +10,8 @@ so.topic: reference
 
 Default timezone location for this view
 
-**Parameter:** 
+## Parameters
+
 * **tzLocationId** Integer
 
 ```crmscript

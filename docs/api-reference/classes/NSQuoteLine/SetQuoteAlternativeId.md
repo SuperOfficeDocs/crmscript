@@ -10,7 +10,8 @@ so.topic: reference
 
 The alternative this line is part of, the conceptual Parent in CRM database.
 
-**Parameter:** 
+## Parameters
+
 * **quoteAlternativeId** Integer
 
 ```crmscript

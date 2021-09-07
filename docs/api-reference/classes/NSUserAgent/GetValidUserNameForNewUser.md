@@ -10,8 +10,10 @@ so.topic: reference
 
 Generates a valid username for an unsaved user
 
+**Returns:** String
+
 ## Parameters
 
-* **user** 
-
-**Returns:** String
+| Parameter | Type | Description |
+|---|---|---|
+| user | NSUser | |

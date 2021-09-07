@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSRedLetterInformationListItem[] GetRedLetterInformationListByDatesAndAssociate(DateTime startDate, DateTime endDate, Integer associateId)
 
-Get detailed red letter day information (redletter summary + individual day texts) for one or more days according to the given date interval. The time portion of the dates is ignored. 
+Get detailed red letter day information (redletter summary + individual day texts) for one or more days according to the given date interval. The time portion of the dates is ignored.
 
 ## Parameters
 

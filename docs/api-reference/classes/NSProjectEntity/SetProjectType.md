@@ -10,7 +10,8 @@ so.topic: reference
 
 Project type is a list defined by the database admin. for example: 'Large', 'Small', 'Party'...
 
-**Parameter:** 
+## Parameters
+
 * **projectType** NSProjectType
 
 ```crmscript

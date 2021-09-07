@@ -10,7 +10,8 @@ so.topic: reference
 
 Has the data been encrypted.
 
-**Parameter:** 
+## Parameters
+
 * **isEncrypted** Bool
 
 ```crmscript

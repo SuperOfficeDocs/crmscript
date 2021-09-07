@@ -10,7 +10,8 @@ so.topic: reference
 
 Contains the manager notify time in minutes
 
-**Parameter:** 
+## Parameters
+
 * **warnManagerNewChatMinutes** Integer
 
 ```crmscript

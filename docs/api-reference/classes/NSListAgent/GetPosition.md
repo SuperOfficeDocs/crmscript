@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSPosition GetPosition(Integer positionId);
 
-Gets a NSPosition object.
+Gets an NSPosition object.
 
 ## Parameters
 

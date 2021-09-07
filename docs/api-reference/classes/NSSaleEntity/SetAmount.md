@@ -10,7 +10,8 @@ so.topic: reference
 
 Total sale amount
 
-**Parameter:** 
+## Parameters
+
 * **amount** Float
 
 ```crmscript

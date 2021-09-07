@@ -10,7 +10,8 @@ so.topic: reference
 
 Always in English
 
-**Parameter:** 
+## Parameters
+
 * **techExplanation** String
 
 ```crmscript

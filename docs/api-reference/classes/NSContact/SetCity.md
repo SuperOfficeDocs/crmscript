@@ -10,7 +10,8 @@ so.topic: reference
 
 City corresponding to zip code
 
-**Parameter:** 
+## Parameters
+
 * **city** String
 
 ```crmscript

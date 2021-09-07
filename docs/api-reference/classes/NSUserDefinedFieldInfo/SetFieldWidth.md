@@ -10,7 +10,8 @@ so.topic: reference
 
 field width in pixels, 0 = 'enough' (from font)
 
-**Parameter:** 
+## Parameters
+
 * **fieldWidth** Integer
 
 ```crmscript

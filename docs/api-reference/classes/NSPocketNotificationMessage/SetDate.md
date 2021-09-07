@@ -10,7 +10,8 @@ so.topic: reference
 
 If the message is about some event happening at a specific date and time
 
-**Parameter:** 
+## Parameters
+
 * **date** DateTime
 
 ```crmscript

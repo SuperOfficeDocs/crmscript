@@ -8,17 +8,22 @@ so.topic: reference
 
 # NSUserValidationResult IsUserNameValidWithReason(Integer associateId, Integer type, Integer personId, String userName)
 
+**Returns:** NSUserValidationResult
+
 ## Parameters
 
-* **associateId** 
-* **type** 
-* Enum: 0 = Unknown 
-* Enum: 1 = InternalAssociate 
-* Enum: 2 = ResourceAssociate 
-* Enum: 3 = ExternalAssociate 
-* Enum: 4 = AnonymousAssociate 
-* Enum: 5 = SystemAssociate 
-* **personId** 
-* **userName** 
+| Parameter | Type | Description |
+|---|---|---|
+| associateId | Integer | |
+| type | Integer | |
+| personId | Integer | |
+| username | String | |
 
-**Returns:** NSUserValidationResult
+### Enum: associateType
+
+* 0 = Unknown
+* 1 = InternalAssociate
+* 2 = ResourceAssociate
+* 3 = ExternalAssociate
+* 4 = AnonymousAssociate
+* 5 = SystemAssociate

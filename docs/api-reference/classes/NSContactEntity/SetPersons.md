@@ -10,7 +10,8 @@ so.topic: reference
 
 The persons belonging to the contact.
 
-**Parameter:** 
+## Parameters
+
 * **persons** NSPerson[]
 
 ```crmscript

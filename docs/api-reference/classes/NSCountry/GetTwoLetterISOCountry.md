@@ -8,7 +8,7 @@ so.topic: reference
 
 # String GetTwoLetterISOCountry()
 
-Two-letter country-code according to ISO3166 
+Two-letter country-code according to ISO3166
 
 **Returns:** String
 

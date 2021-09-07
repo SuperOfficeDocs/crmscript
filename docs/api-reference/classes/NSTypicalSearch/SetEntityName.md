@@ -10,7 +10,8 @@ so.topic: reference
 
 The name of the entity the typical search links to
 
-**Parameter:** 
+## Parameters
+
 * **entityName** String
 
 ```crmscript

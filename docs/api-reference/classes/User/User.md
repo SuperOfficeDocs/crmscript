@@ -12,7 +12,7 @@ Class for representing a user.
 ## Example
 
     User u;
-    
+   
     u.load(2); // Loads user with id = 2
     print(u.getValue("username"));
     u.setValue("email", "bob@example.com");

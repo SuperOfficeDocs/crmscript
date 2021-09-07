@@ -10,7 +10,8 @@ so.topic: reference
 
 Definition version number; ALL fields get new version whenever layout is updated.
 
-**Parameter:** 
+## Parameters
+
 * **version** Integer
 
 ```crmscript

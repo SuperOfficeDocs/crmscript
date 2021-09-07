@@ -10,7 +10,8 @@ so.topic: reference
 
 Email address to put in the From header of the messages
 
-**Parameter:** 
+## Parameters
+
 * **fromAddress** String
 
 ```crmscript

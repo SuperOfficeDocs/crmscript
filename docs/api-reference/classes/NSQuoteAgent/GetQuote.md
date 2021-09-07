@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSQuote GetQuote(Integer quoteId)
 
-Get a NSQuote
+Get an NSQuote
 
 ## Parameters
 

@@ -10,7 +10,8 @@ so.topic: reference
 
 True if it supports the config parameters to the sending methods
 
-**Parameter:** 
+## Parameters
+
 * **supportsConfig** Bool
 
 ```crmscript

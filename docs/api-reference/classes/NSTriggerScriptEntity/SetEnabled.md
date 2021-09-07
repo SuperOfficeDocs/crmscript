@@ -10,7 +10,8 @@ so.topic: reference
 
 Whether this screen chooser is enabled or not
 
-**Parameter:** 
+## Parameters
+
 * **enabled** Bool
 
 ```crmscript

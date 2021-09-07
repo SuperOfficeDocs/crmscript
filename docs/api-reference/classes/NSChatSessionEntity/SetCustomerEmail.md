@@ -10,7 +10,8 @@ so.topic: reference
 
 The email address of the customer, if provided
 
-**Parameter:** 
+## Parameters
+
 * **customerEmail** String
 
 ```crmscript

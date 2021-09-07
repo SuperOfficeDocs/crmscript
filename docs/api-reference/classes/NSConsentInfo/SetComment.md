@@ -10,7 +10,8 @@ so.topic: reference
 
 Comment regarding this specific consent
 
-**Parameter:** 
+## Parameters
+
 * **comment** String
 
 ```crmscript

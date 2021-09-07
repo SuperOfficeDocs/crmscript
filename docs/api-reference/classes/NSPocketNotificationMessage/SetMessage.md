@@ -10,7 +10,8 @@ so.topic: reference
 
 The notification message body
 
-**Parameter:** 
+## Parameters
+
 * **message** String
 
 ```crmscript

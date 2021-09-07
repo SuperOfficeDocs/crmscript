@@ -10,7 +10,8 @@ so.topic: reference
 
 Default currency for the installation
 
-**Parameter:** 
+## Parameters
+
 * **baseCurrency** String
 
 ```crmscript

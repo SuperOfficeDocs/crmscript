@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSReasonStalled GetReasonStalled(Integer reasonStalledId);
 
-Gets a NSReasonStalled object.
+Gets an NSReasonStalled object.
 
 * **ReasonStalledId** The identifier of the NSReasonStalled object
 

@@ -10,7 +10,8 @@ so.topic: reference
 
 Name of the feature toggle
 
-**Parameter:** 
+## Parameters
+
 * **name** String
 
 ```crmscript

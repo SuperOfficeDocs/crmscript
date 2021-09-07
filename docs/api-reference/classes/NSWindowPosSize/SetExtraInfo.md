@@ -10,7 +10,8 @@ so.topic: reference
 
 Extra information* show state, or whatever is required
 
-**Parameter:** 
+## Parameters
+
 * **extraInfo** String
 
 ```crmscript

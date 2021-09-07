@@ -1,4 +1,5 @@
 ## enum SpecialType
+
 |Name|Value|
 |---|---|
 | SpecialTypeNone | 0|

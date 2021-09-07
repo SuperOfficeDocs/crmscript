@@ -10,7 +10,8 @@ so.topic: reference
 
 If specified, use this value as default mail body.
 
-**Parameter:** 
+## Parameters
+
 * **customMailBody** String
 
 ```crmscript

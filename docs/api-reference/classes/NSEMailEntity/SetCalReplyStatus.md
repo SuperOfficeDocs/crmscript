@@ -10,12 +10,13 @@ so.topic: reference
 
 Reply status stored in calendar data for the ical method is REPLY
 
-**Parameter:** 
+## Parameters
+
 * **calReplyStatus** Integer
-* Enum: 0 = Unknown 
-* Enum: 1 = Accepted 
-* Enum: 2 = Declined 
-* Enum: 3 = Tentative 
+* Enum: 0 = Unknown
+* Enum: 1 = Accepted
+* Enum: 2 = Declined
+* Enum: 3 = Tentative
 
 ```crmscript
 NSEMailEntity thing;

@@ -10,7 +10,8 @@ so.topic: reference
 
 A unique identifier of this device. This value should always be the same for the same device
 
-**Parameter:** 
+## Parameters
+
 * **deviceIdentifier** String
 
 ```crmscript

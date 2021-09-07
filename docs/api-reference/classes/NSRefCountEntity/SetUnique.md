@@ -10,7 +10,8 @@ so.topic: reference
 
 Check that entered value is unique
 
-**Parameter:** 
+## Parameters
+
 * **unique** Bool
 
 ```crmscript

@@ -20,7 +20,7 @@ Returns true if the category exists, otherwise false.
 ## Example
 
     Category c;
-    
+   
     c.load(2);
     print(c.getValue("name"));
 

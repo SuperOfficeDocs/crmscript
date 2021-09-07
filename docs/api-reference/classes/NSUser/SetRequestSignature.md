@@ -10,7 +10,8 @@ so.topic: reference
 
 ej users request signature
 
-**Parameter:** 
+## Parameters
+
 * **requestSignature** String
 
 ```crmscript

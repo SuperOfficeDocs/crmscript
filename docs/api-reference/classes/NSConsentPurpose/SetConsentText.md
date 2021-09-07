@@ -10,7 +10,8 @@ so.topic: reference
 
 Form text used for the actual checkbox
 
-**Parameter:** 
+## Parameters
+
 * **consentText** String
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Access token
 
-**Parameter:** 
+## Parameters
+
 * **accessToken** String
 
 ```crmscript

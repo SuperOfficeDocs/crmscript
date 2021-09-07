@@ -10,7 +10,8 @@ so.topic: reference
 
 Should the user be forced to set a value (the Erp Connector may declare fields mandatory as well)
 
-**Parameter:** 
+## Parameters
+
 * **mandatory** Bool
 
 ```crmscript

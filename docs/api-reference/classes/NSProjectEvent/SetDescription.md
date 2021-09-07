@@ -10,7 +10,8 @@ so.topic: reference
 
 The event description (i.e. the project text)
 
-**Parameter:** 
+## Parameters
+
 * **description** String
 
 ```crmscript

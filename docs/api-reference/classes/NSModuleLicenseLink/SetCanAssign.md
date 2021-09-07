@@ -10,7 +10,8 @@ so.topic: reference
 
 Can a specific user assign this module license
 
-**Parameter:** 
+## Parameters
+
 * **canAssign** Bool
 
 ```crmscript

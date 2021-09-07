@@ -10,7 +10,8 @@ so.topic: reference
 
 The sale rating
 
-**Parameter:** 
+## Parameters
+
 * **rating** NSRating
 
 ```crmscript

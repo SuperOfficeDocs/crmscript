@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSPersonEntity GetPersonEntity(Integer personEntityId);
 
-Gets a NSPersonEntity object.
+Gets an NSPersonEntity object.
 
 ## Parameters
 

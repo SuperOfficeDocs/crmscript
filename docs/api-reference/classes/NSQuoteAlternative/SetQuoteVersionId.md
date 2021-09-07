@@ -10,7 +10,8 @@ so.topic: reference
 
 The version that owns this alternative (the chain is Sale 1->1 Quote 1->+ QuoteVersion 1->+ QuoteAlternative.
 
-**Parameter:** 
+## Parameters
+
 * **quoteVersionId** Integer
 
 ```crmscript

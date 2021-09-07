@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSDashboard GetDashboard(Integer dashboardId);
 
-Gets a NSDashboard object.
+Gets an NSDashboard object.
 
 ## Parameters
 

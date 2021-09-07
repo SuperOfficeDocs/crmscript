@@ -9,7 +9,7 @@ so.topic: reference
 # DeleteSelectionEntity(Integer selectionEntity);
 
 Deletes the NSSelectionEntity
-  
+ 
 ## Parameters
 
 * **selectionEntityId** The identity of the SelectionEntity to delete.

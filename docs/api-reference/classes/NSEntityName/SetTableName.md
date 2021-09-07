@@ -10,7 +10,8 @@ so.topic: reference
 
 The name of the table in the database
 
-**Parameter:** 
+## Parameters
+
 * **tableName** String
 
 ```crmscript

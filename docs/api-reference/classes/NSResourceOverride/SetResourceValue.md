@@ -10,7 +10,8 @@ so.topic: reference
 
 The value of the resource in the given culture
 
-**Parameter:** 
+## Parameters
+
 * **resourceValue** String
 
 ```crmscript

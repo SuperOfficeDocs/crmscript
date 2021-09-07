@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSCountry GetCountry(Integer countryId);
 
-Gets a NSCountry object.
+Gets an NSCountry object.
 
 ## Parameters
 

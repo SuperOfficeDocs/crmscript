@@ -10,7 +10,8 @@ so.topic: reference
 
 Name of the person that last updated the configuration parameter
 
-**Parameter:** 
+## Parameters
+
 * **updatedBy** String
 
 ```crmscript

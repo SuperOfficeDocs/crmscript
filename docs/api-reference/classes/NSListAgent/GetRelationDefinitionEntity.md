@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSRelationDefinitionEntity GetRelationDefinitionEntity(Integer relationDefinitionEntityId);
 
-Gets a NSRelationDefinitionEntity object.
+Gets an NSRelationDefinitionEntity object.
 
 * **RelationDefinitionEntityId** The identifier of the NSRelationDefinitionEntity object
 

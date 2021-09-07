@@ -10,7 +10,8 @@ so.topic: reference
 
 Number of recipients that opened the email.
 
-**Parameter:** 
+## Parameters
+
 * **numOpened** Integer
 
 ```crmscript

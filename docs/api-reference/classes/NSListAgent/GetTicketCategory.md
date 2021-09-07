@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSTicketCategory GetTicketCategory(Integer ticketCategoryId);
 
-Gets a NSTicketCategory object.
+Gets an NSTicketCategory object.
 
 ## Parameters
 

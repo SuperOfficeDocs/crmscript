@@ -10,4 +10,4 @@ so.topic: reference
 
 ## Parameters
 
-* **connectionInfoExtended** 
+* **connectionInfoExtended**

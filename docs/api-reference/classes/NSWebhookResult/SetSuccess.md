@@ -10,7 +10,8 @@ so.topic: reference
 
 Was call to webhook successful? (200 OK)
 
-**Parameter:** 
+## Parameters
+
 * **success** Bool
 
 ```crmscript

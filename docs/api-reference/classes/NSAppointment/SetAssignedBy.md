@@ -10,7 +10,8 @@ so.topic: reference
 
 Who (last) assigned this appointment to associate_id?
 
-**Parameter:** 
+## Parameters
+
 * **assignedBy** Integer
 
 ```crmscript

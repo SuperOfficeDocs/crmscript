@@ -10,7 +10,8 @@ so.topic: reference
 
 The id of the connection
 
-**Parameter:** 
+## Parameters
+
 * **erpConnectionId** Integer
 
 ```crmscript

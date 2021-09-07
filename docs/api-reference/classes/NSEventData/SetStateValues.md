@@ -10,7 +10,8 @@ so.topic: reference
 
 Values kept between event handlers
 
-**Parameter:** 
+## Parameters
+
 * **stateValues** StringDictionary
 
 ```crmscript

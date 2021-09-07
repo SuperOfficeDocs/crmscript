@@ -10,7 +10,8 @@ so.topic: reference
 
 Comment for relation
 
-**Parameter:** 
+## Parameters
+
 * **comment** String
 
 ```crmscript

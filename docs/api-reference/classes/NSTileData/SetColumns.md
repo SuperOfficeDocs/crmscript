@@ -10,7 +10,8 @@ so.topic: reference
 
 Column information
 
-**Parameter:** 
+## Parameters
+
 * **columns** NSArchiveColumnInfo[]
 
 ```crmscript

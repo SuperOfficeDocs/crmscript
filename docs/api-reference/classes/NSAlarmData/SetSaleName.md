@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetSaleName(String saleName)
 
-**Parameter:** 
+## Parameters
+
 * **saleName** String
 
 ```crmscript

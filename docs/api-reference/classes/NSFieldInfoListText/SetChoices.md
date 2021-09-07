@@ -10,7 +10,8 @@ so.topic: reference
 
 List of items to choose from.
 
-**Parameter:** 
+## Parameters
+
 * **choices** String[]
 
 ```crmscript

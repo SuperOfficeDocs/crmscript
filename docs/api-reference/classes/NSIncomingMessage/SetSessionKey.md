@@ -10,7 +10,8 @@ so.topic: reference
 
 Session key used for threading.
 
-**Parameter:** 
+## Parameters
+
 * **sessionKey** String
 
 ```crmscript

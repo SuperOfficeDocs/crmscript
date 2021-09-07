@@ -10,7 +10,8 @@ so.topic: reference
 
 When the message was posted (UTC timestamp).
 
-**Parameter:** 
+## Parameters
+
 * **whenPosted** DateTime
 
 ```crmscript

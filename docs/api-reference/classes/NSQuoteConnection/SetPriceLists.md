@@ -10,7 +10,8 @@ so.topic: reference
 
 The PriceLists that this connection offers.
 
-**Parameter:** 
+## Parameters
+
 * **priceLists** NSPriceList[]
 
 ```crmscript

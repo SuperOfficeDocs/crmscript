@@ -10,7 +10,9 @@ so.topic: reference
 
 ## Parameters
 
-* **associateId** 
-* **startTime** 
-* **endTime** 
-* **count** 
+| Parameter | Type |Description |
+|---|---|---|
+| associateId | Integer | |
+| startTime | DateTime | |
+| endTime | DateTime | |
+| count | Integer | |

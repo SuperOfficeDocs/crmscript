@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetIsUserNameSupported(Bool isUserNameSupported)
 
-**Parameter:** 
+## Parameters
+
 * **isUserNameSupported** Bool
 
 ```crmscript

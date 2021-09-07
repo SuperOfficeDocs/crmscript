@@ -10,7 +10,8 @@ so.topic: reference
 
 Link to priority list
 
-**Parameter:** 
+## Parameters
+
 * **priorityId** Integer
 
 ```crmscript

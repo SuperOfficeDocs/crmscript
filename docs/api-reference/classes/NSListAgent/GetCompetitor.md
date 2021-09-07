@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSCompetitor GetCompetitor(Integer competitorId);
 
-Gets a NSCompetitor object.
+Gets an NSCompetitor object.
 
 ## Parameters
 

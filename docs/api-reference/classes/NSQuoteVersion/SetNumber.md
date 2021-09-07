@@ -10,7 +10,8 @@ so.topic: reference
 
 A quote number that the user (or ERP connector) can fill out.
 
-**Parameter:** 
+## Parameters
+
 * **number** String
 
 ```crmscript

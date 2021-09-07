@@ -8,7 +8,7 @@ so.topic: reference
 
 # Integer GetReportId()
 
-The id of the report. 
+The id of the report.
 
 **Returns:** Integer
 

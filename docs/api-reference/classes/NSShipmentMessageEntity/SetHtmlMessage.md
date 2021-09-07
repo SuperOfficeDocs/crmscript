@@ -10,7 +10,8 @@ so.topic: reference
 
 HTML formatted text of this message
 
-**Parameter:** 
+## Parameters
+
 * **htmlMessage** String
 
 ```crmscript

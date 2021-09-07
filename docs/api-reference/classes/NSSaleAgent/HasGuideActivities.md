@@ -8,8 +8,10 @@ so.topic: reference
 
 # Bool HasGuideActivities(Integer saleId)
 
+**Returns:** Bool
+
 ## Parameters
 
-* **saleId** 
-
-**Returns:** Bool
+| Parameter | Type | Description |
+|---|---|---|
+| saleId | Integer | |

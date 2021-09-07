@@ -9,7 +9,7 @@ so.topic: reference
 # DeleteListEntity(Integer listEntity);
 
 Deletes the NSListEntity
-  
+ 
 ## Parameters
 
 * **listEntityId** The identity of the NSListEntity to delete.

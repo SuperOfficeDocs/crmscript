@@ -10,7 +10,8 @@ so.topic: reference
 
 Public key held by module owner.
 
-**Parameter:** 
+## Parameters
+
 * **key** NSDSAParameters
 
 ```crmscript

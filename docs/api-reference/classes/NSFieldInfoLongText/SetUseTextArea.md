@@ -10,7 +10,8 @@ so.topic: reference
 
 Use a multi-line text area?
 
-**Parameter:** 
+## Parameters
+
 * **useTextArea** Bool
 
 ```crmscript

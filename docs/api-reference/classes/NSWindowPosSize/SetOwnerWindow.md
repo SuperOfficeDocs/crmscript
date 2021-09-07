@@ -10,7 +10,8 @@ so.topic: reference
 
 The dialog, panel or whatever that owns this record
 
-**Parameter:** 
+## Parameters
+
 * **ownerWindow** String
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Format of content
 
-**Parameter:** 
+## Parameters
+
 * **format** String
 
 ```crmscript

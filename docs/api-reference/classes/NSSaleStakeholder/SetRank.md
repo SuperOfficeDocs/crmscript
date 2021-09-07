@@ -10,7 +10,8 @@ so.topic: reference
 
 Rank in list of stakeholders
 
-**Parameter:** 
+## Parameters
+
 * **rank** Integer
 
 ```crmscript

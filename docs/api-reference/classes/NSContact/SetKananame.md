@@ -10,7 +10,8 @@ so.topic: reference
 
 Contact kana name, used in Japanese versions only
 
-**Parameter:** 
+## Parameters
+
 * **kananame** String
 
 ```crmscript

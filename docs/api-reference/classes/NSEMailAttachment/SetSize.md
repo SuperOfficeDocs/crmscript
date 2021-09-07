@@ -10,7 +10,8 @@ so.topic: reference
 
 Size of attachment
 
-**Parameter:** 
+## Parameters
+
 * **size** Integer
 
 ```crmscript

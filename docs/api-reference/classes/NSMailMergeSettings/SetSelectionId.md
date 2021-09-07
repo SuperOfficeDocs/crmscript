@@ -10,7 +10,8 @@ so.topic: reference
 
 Identity of selection to use as source for recipients.
 
-**Parameter:** 
+## Parameters
+
 * **selectionId** Integer
 
 ```crmscript

@@ -12,5 +12,7 @@ Gets the next (not deleted) sale stage id if the current stage is deleted. If th
 
 ## Parameters
 
-* **saleId** 
-* **includeCurrentStage** 
+| Parameter | Type | Description |
+|---|---|---|
+| saleId | Integer | |
+| includeCurrentStage | Bool | |

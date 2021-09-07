@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSConsentPurpose GetConsentPurpose(Integer consentPurposeId);
 
-Gets a NSConsentPurpose object.
+Gets an NSConsentPurpose object.
 
 ## Parameters
 

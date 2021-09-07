@@ -10,7 +10,8 @@ so.topic: reference
 
 Key that identifies this alternative in the ERP system, if it exists there.
 
-**Parameter:** 
+## Parameters
+
 * **eRPQuoteAlternativeKey** String
 
 ```crmscript

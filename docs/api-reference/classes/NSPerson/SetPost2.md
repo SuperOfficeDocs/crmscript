@@ -10,7 +10,8 @@ so.topic: reference
 
 Postal address, used in Japanese versions only
 
-**Parameter:** 
+## Parameters
+
 * **post2** String
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Item name, visible in Guide
 
-**Parameter:** 
+## Parameters
+
 * **name** String
 
 ```crmscript

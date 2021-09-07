@@ -10,7 +10,8 @@ so.topic: reference
 
 Country of invoice address, typically copied from contact record
 
-**Parameter:** 
+## Parameters
+
 * **invoiceCountryId** Integer
 
 ```crmscript

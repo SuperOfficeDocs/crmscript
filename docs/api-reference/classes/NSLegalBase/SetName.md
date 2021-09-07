@@ -10,7 +10,8 @@ so.topic: reference
 
 Name of legal base
 
-**Parameter:** 
+## Parameters
+
 * **name** String
 
 ```crmscript

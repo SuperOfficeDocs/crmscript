@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSQuote SaveQuote(NSQuote quote)
 
-Saves a NSQuote
+Saves an NSQuote
 
 ## Parameters
 

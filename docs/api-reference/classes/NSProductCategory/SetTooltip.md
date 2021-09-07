@@ -10,7 +10,8 @@ so.topic: reference
 
 Set the tooltip description for the NSProductCategory list item.
 
-**Parameter:** 
+## Parameters
+
 * **tooltip** String NSProductCategory tooltip description.
 
 ```crmscript

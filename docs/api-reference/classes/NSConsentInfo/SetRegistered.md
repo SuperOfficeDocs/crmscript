@@ -10,7 +10,8 @@ so.topic: reference
 
 When this consent record was created
 
-**Parameter:** 
+## Parameters
+
 * **registered** DateTime
 
 ```crmscript

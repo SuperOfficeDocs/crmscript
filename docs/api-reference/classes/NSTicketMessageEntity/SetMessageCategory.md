@@ -10,11 +10,12 @@ so.topic: reference
 
 Defines what kind of message this is.
 
-**Parameter:** 
+## Parameters
+
 * **messageCategory** TicketMessageCategory
-* Enum: 0 = Message 
-* Enum: 1 = Bounce 
-* Enum: 2 = OutboxFailed 
+* Enum: 0 = Message
+* Enum: 1 = Bounce
+* Enum: 2 = OutboxFailed
 
 ```crmscript
 NSTicketMessageEntity thing;

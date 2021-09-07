@@ -10,7 +10,8 @@ so.topic: reference
 
 The username
 
-**Parameter:** 
+## Parameters
+
 * **username** String
 
 ```crmscript

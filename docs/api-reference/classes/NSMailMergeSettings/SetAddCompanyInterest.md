@@ -10,7 +10,8 @@ so.topic: reference
 
 Add this company interest to each company recipient.
 
-**Parameter:** 
+## Parameters
+
 * **addCompanyInterest** Integer
 
 ```crmscript

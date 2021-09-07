@@ -10,7 +10,8 @@ so.topic: reference
 
 The category list item name
 
-**Parameter:** 
+## Parameters
+
 * **categoryName** String
 
 ```crmscript

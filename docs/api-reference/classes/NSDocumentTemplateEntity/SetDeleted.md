@@ -10,7 +10,8 @@ so.topic: reference
 
 True if deleted
 
-**Parameter:** 
+## Parameters
+
 * **deleted** Bool
 
 ```crmscript

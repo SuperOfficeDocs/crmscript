@@ -13,7 +13,7 @@ This class is used to represent and manipulate a 32 bit bitset.
 ## Example
 
     FHBitSet fh;
-    
+   
     fh.set(43);
     fh.setBitNo(15, true);
     printLine(fh.toLsbString()); // Prints "00000000000000001000000000101011"

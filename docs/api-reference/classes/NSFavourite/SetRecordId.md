@@ -10,7 +10,8 @@ so.topic: reference
 
 Id of the record this favourite belongs to.
 
-**Parameter:** 
+## Parameters
+
 * **recordId** Integer
 
 ```crmscript

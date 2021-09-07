@@ -10,7 +10,8 @@ so.topic: reference
 
 Active status monitor identity with the lowest rank for contact
 
-**Parameter:** 
+## Parameters
+
 * **activeStatusMonitorId** Integer
 
 ```crmscript

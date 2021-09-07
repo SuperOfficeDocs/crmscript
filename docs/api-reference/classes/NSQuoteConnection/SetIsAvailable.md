@@ -10,7 +10,8 @@ so.topic: reference
 
 Whether or not the specified connection is available. Typically, without network access the availability is false.
 
-**Parameter:** 
+## Parameters
+
 * **isAvailable** Bool
 
 ```crmscript

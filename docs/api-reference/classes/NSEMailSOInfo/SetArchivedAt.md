@@ -10,7 +10,8 @@ so.topic: reference
 
 The datetime when this email was archived
 
-**Parameter:** 
+## Parameters
+
 * **archivedAt** DateTime
 
 ```crmscript

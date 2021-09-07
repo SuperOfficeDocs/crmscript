@@ -10,7 +10,8 @@ so.topic: reference
 
 Array of all the list item mappings
 
-**Parameter:** 
+## Parameters
+
 * **erpCrmListItemMappings** NSErpCrmListItemMapping[]
 
 ```crmscript

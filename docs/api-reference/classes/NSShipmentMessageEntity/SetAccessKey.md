@@ -10,7 +10,8 @@ so.topic: reference
 
 Key used for access verification
 
-**Parameter:** 
+## Parameters
+
 * **accessKey** String
 
 ```crmscript

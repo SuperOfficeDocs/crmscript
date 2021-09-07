@@ -10,7 +10,8 @@ so.topic: reference
 
 1 if role has been deleted (we do not actually delete)
 
-**Parameter:** 
+## Parameters
+
 * **deleted** Integer
 
 ```crmscript

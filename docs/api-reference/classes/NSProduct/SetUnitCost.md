@@ -10,7 +10,8 @@ so.topic: reference
 
 The cost price. Might not be given, use Decimal.MinValue to signal this.
 
-**Parameter:** 
+## Parameters
+
 * **unitCost** Float
 
 ```crmscript

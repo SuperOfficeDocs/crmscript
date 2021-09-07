@@ -10,7 +10,8 @@ so.topic: reference
 
 Is this a subscription product, sold in repeating intervals/amounts?
 
-**Parameter:** 
+## Parameters
+
 * **isSubscription** Bool
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Description of the contact. Usually shown as a postit note.
 
-**Parameter:** 
+## Parameters
+
 * **description** String
 
 ```crmscript

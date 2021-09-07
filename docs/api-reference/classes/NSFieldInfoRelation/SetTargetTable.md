@@ -10,7 +10,8 @@ so.topic: reference
 
 Name of target table: 'contact', 'y_equipment'
 
-**Parameter:** 
+## Parameters
+
 * **targetTable** String
 
 ```crmscript

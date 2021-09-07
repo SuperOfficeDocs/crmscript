@@ -10,7 +10,8 @@ so.topic: reference
 
 After this number of submits, the form will become inactive
 
-**Parameter:** 
+## Parameters
+
 * **maxSubmits** Integer
 
 ```crmscript

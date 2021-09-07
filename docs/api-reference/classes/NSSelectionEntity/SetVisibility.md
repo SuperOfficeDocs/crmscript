@@ -10,7 +10,8 @@ so.topic: reference
 
 Obsolete, but still maintained denormalization of visiblefor
 
-**Parameter:** 
+## Parameters
+
 * **visibility** Integer
 
 ```crmscript

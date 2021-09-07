@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSRecipientStatistics GetRecipientStatistics(Integer selectionId)
 
-Returns a NSRecipientStatistics object with a count of addresses, emailaddresses and emailaddresses.
+Returns an NSRecipientStatistics object with a count of addresses, emailaddresses and emailaddresses.
 
 ## Parameters
 

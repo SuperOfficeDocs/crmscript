@@ -10,7 +10,8 @@ so.topic: reference
 
 When this email was replied at
 
-**Parameter:** 
+## Parameters
+
 * **repliedAt** DateTime
 
 ```crmscript

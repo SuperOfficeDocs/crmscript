@@ -20,7 +20,7 @@ Returns a boolean of the load result, true if successfully loaded.
 ## Example
 
     Company c;
-    
+   
     Bool b = c.load(3);
     print(b.toString());
 

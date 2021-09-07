@@ -10,7 +10,8 @@ so.topic: reference
 
 Id of the source person. The value is not mandatory. The person must belong to the source contact.
 
-**Parameter:** 
+## Parameters
+
 * **sourcePersonId** Integer
 
 ```crmscript

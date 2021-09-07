@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetContactFullName(String contactFullName)
 
-**Parameter:** 
+## Parameters
+
 * **contactFullName** String
 
 ```crmscript

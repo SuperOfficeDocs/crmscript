@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetEncodedLeadTexts(String[] encodedLeadTexts)
 
-**Parameter:** 
+## Parameters
+
 * **encodedLeadTexts** String[]
 
 ```crmscript

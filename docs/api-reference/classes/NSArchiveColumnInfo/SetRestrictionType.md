@@ -10,7 +10,8 @@ so.topic: reference
 
 The data type of the restriction; use this to retrieve the legal operators for the restriction.
 
-**Parameter:** 
+## Parameters
+
 * **restrictionType** String
 
 ```crmscript

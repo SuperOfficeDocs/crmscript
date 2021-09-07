@@ -9,7 +9,7 @@ so.topic: reference
 # DeleteChatSessionEntity(Integer chatSessionEntity);
 
 Deletes the NSChatSessionEntity
-  
+ 
 ## Parameters
 
 * **chatSessionEntityId** The identity of the NSChatSessionEntity to delete.

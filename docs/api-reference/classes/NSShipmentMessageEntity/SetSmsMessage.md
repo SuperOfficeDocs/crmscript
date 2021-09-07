@@ -10,7 +10,8 @@ so.topic: reference
 
 SMS version of this message
 
-**Parameter:** 
+## Parameters
+
 * **smsMessage** String
 
 ```crmscript

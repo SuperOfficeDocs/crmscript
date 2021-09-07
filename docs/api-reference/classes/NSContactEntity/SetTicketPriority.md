@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetTicketPriority(NSTicketPriority ticketPriority)
 
-**Parameter:** 
+## Parameters
+
 * **ticketPriority** NSTicketPriority
 
 ```crmscript

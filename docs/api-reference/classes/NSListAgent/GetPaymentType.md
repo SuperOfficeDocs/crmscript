@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSPaymentType GetPaymentType(Integer paymentTypeId);
 
-Gets a NSPaymentType object.
+Gets an NSPaymentType object.
 
 ## Parameters
 

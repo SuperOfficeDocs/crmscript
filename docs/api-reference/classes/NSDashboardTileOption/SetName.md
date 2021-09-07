@@ -10,7 +10,8 @@ so.topic: reference
 
 Name of option, usually not visible to users
 
-**Parameter:** 
+## Parameters
+
 * **name** String
 
 ```crmscript

@@ -13,7 +13,7 @@ Update the criteria for this dynamic selection using string. Criteria are parsed
 ## Parameters
 
 * **selectionId** The id of the selection to add members
-* **filter** Criteria defining the selection result in OData filter form: `category in (1,2,3) and name = 'foo'` 
+* **filter** Criteria defining the selection result in OData filter form: `category in (1,2,3) and name = 'foo'`
 
 **Returns:** NSArchiveRestrictionInfo[]
 

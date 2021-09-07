@@ -13,10 +13,10 @@ Create a new role entity of the specified role type. The role type cannot be cha
 ## Parameters
 
 * **type** Type of role (Employee/External/Anonymous/System)
-* Enum: 0 = Employee 
-* Enum: 1 = ExternalUser 
-* Enum: 2 = Anonymous 
-* Enum: 3 = System 
+* Enum: 0 = Employee
+* Enum: 1 = ExternalUser
+* Enum: 2 = Anonymous
+* Enum: 3 = System
 
 **Returns:** NSRoleEntity
 

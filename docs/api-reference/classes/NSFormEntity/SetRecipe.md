@@ -10,7 +10,8 @@ so.topic: reference
 
 The JSON-formatted recipe of this form
 
-**Parameter:** 
+## Parameters
+
 * **recipe** String
 
 ```crmscript

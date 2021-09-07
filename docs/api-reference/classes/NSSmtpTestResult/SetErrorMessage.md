@@ -8,9 +8,10 @@ so.topic: reference
 
 # SetErrorMessage(String errorMessage)
 
-If an error occured, this member will contain a description of the error
+If an error occurred, this member will contain a description of the error
 
-**Parameter:** 
+## Parameters
+
 * **errorMessage** String
 
 ```crmscript

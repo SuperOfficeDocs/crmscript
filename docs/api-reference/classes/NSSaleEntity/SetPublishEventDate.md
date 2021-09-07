@@ -10,6 +10,7 @@ so.topic: reference
 
 Publish event date on SaleEntity.
 
-**Parameter:** 
+## Parameters
+
 * **publishDate** DateTime.
 

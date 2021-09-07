@@ -10,7 +10,8 @@ so.topic: reference
 
 Post prefix
 
-**Parameter:** 
+## Parameters
+
 * **zipPrefix** String
 
 ```crmscript

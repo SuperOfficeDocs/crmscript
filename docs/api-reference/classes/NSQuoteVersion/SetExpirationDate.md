@@ -10,7 +10,8 @@ so.topic: reference
 
 Last date the quote Version is valid, expiration is at midnight end of this day.
 
-**Parameter:** 
+## Parameters
+
 * **expirationDate** DateTime
 
 ```crmscript

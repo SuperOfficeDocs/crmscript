@@ -10,7 +10,8 @@ so.topic: reference
 
 List item text to display.
 
-**Parameter:** 
+## Parameters
+
 * **displayValue** String
 
 ```crmscript

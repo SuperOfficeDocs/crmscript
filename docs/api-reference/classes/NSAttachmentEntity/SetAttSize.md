@@ -10,7 +10,8 @@ so.topic: reference
 
 The size (in bytes) for the attachment.
 
-**Parameter:** 
+## Parameters
+
 * **attSize** Integer
 
 ```crmscript

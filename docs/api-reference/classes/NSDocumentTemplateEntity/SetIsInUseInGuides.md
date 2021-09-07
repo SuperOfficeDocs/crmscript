@@ -10,7 +10,8 @@ so.topic: reference
 
 True if the template is in use in a project or sales guide
 
-**Parameter:** 
+## Parameters
+
 * **isInUseInGuides** Bool
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Set the name of the NSSaleType item.
 
-**Parameter:** 
+## Parameters
+
 * **value** String NSSaleType name.
 
 ```crmscript

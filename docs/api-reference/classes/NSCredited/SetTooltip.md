@@ -10,7 +10,8 @@ so.topic: reference
 
 Set the tooltip description for the NSCredited list item.
 
-**Parameter:** 
+## Parameters
+
 * **tooltip** String NSCredited tooltip description.
 
 ```crmscript

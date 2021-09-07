@@ -10,7 +10,8 @@ so.topic: reference
 
 Ids of updated records.
 
-**Parameter:** 
+## Parameters
+
 * **updatedRecords** NSChangedDataItem[]
 
 ```crmscript

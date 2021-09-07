@@ -10,7 +10,8 @@ so.topic: reference
 
 The rank of the country
 
-**Parameter:** 
+## Parameters
+
 * **rank** Integer
 
 ```crmscript

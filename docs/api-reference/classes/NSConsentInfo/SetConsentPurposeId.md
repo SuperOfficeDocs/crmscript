@@ -10,7 +10,8 @@ so.topic: reference
 
 Primary key for the NSConsentPurpose associated with this consent
 
-**Parameter:** 
+## Parameters
+
 * **consentPurposeId** Integer
 
 ```crmscript

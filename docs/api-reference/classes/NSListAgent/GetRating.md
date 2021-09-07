@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSRating GetRating(Integer ratingId);
 
-Gets a NSRating object.
+Gets an NSRating object.
 
 ## Parameters
 

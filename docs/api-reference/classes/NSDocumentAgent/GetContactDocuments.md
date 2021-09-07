@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSDocument[] GetContactDocuments(Integer contactId, DateTime startTime, DateTime endTime, Integer count)
 
-Method that returns a specified number of document appointments within a time range. The document appointments belong to the contact specified. 
+Method that returns a specified number of document appointments within a time range. The document appointments belong to the contact specified.
 
 ## Parameters
 

@@ -8,17 +8,20 @@ so.topic: reference
 
 # Integer GetCompleted()
 
-Completed status for task
+Completed status for task.
 
 **Returns:** Integer
 
-* Enum: 0 = Unknown 
-* Enum: 1 = NotStarted 
-* Enum: 2 = Started 
-* Enum: 3 = Completed 
+## Enum: completed state
+
+* 0 = Unknown
+* 1 = NotStarted
+* 2 = Started
+* 3 = Completed
+
+## Example
 
 ```crmscript
 NSMailMergeTask thing;
 Integer completed  = thing.GetCompleted();
 ```
-

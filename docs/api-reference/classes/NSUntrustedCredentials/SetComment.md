@@ -10,7 +10,8 @@ so.topic: reference
 
 Description of credentials. Max 255 characters.
 
-**Parameter:** 
+## Parameters
+
 * **comment** String
 
 ```crmscript

@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetSaleStakeholders(NSSaleStakeholder[] saleStakeholders)
 
-**Parameter:** 
+## Parameters
+
 * **saleStakeholders** NSSaleStakeholder[]
 
 ```crmscript

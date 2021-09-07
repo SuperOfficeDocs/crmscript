@@ -10,7 +10,8 @@ so.topic: reference
 
 Custom DST end month, if 0 then parse startRule
 
-**Parameter:** 
+## Parameters
+
 * **endMonth** Integer
 
 ```crmscript

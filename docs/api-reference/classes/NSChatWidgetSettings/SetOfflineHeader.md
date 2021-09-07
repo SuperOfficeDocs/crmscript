@@ -10,7 +10,8 @@ so.topic: reference
 
 Offline text shown in widget header
 
-**Parameter:** 
+## Parameters
+
 * **offlineHeader** String
 
 ```crmscript

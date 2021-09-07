@@ -10,7 +10,8 @@ so.topic: reference
 
 Should this field be displayed in the GUI?
 
-**Parameter:** 
+## Parameters
+
 * **inUse** Bool
 
 ```crmscript

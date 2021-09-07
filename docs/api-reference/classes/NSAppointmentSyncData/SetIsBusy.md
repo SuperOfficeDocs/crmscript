@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetIsBusy(Bool isBusy)
 
-**Parameter:** 
+## Parameters
+
 * **isBusy** Bool
 
 ```crmscript

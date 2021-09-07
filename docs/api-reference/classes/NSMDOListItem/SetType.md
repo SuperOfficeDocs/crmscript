@@ -10,7 +10,8 @@ so.topic: reference
 
 The type of the ListItem. Custom field.
 
-**Parameter:** 
+## Parameters
+
 * **type** String
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 The sale stage
 
-**Parameter:** 
+## Parameters
+
 * **value** String
 
 ```crmscript

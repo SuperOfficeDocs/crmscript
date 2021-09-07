@@ -10,7 +10,8 @@ so.topic: reference
 
 RightSelectionId  is used in combination with LeftSelectionId and CombinationType to define an union of two selections when SelectionType=Combined.
 
-**Parameter:** 
+## Parameters
+
 * **rightSelectionId** Integer
 
 ```crmscript

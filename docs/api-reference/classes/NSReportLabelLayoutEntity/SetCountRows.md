@@ -10,7 +10,8 @@ so.topic: reference
 
 Number of rows
 
-**Parameter:** 
+## Parameters
+
 * **countRows** Integer
 
 ```crmscript

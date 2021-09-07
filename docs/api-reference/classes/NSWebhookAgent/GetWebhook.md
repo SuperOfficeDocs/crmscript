@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSWebhook GetWebhook(Integer webhookId);
 
-Gets a NSWebhook object.
+Gets an NSWebhook object.
 
 ## Parameters
 

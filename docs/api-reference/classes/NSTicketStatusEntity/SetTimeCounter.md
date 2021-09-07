@@ -8,14 +8,15 @@ so.topic: reference
 
 # SetTimeCounter(Integer timeCounter)
 
-Which field in ticket we count time spent on (queue, internal, external) 
+Which field in ticket we count time spent on (queue, internal, external)
 
-**Parameter:** 
+## Parameters
+
 * **timeCounter** Integer
-* Enum: 0 = None 
-* Enum: 1 = Internally 
-* Enum: 2 = Externally 
-* Enum: 3 = Queue 
+* Enum: 0 = None
+* Enum: 1 = Internally
+* Enum: 2 = Externally
+* Enum: 3 = Queue
 
 ```crmscript
 NSTicketStatusEntity thing;

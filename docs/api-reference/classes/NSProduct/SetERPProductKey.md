@@ -10,7 +10,8 @@ so.topic: reference
 
 Reference/foreign key to the product in the given pricelist in the product supplier system, if it exists there.
 
-**Parameter:** 
+## Parameters
+
 * **eRPProductKey** String
 
 ```crmscript

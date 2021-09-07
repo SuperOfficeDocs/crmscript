@@ -8,7 +8,7 @@ so.topic: reference
 
 # Integer GetMessagingId()
 
-Id to the outgoing message table 
+Id to the outgoing message table
 
 **Returns:** Integer
 

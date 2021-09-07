@@ -20,8 +20,8 @@ OperatorIs, OperatorOracleLeftJoin, OperatorIsNot
 * **field2:** The field to compare with field1
 * **rowOperator:** Operator for composing this criteria with a following
 criteria
-   
-**Possible values**   
+  
+**Possible values**  
 OperatorAnd, OperatorOr, OperatorNotAnd, OperatorNotOr
 * **concatLevel:** A number. All criterias with the same number will be placed
 inside the same brackets

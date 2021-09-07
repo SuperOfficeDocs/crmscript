@@ -10,7 +10,8 @@ so.topic: reference
 
 Extra information, supplied by QuoteConnector, used by a future dynamic GUI extension
 
-**Parameter:** 
+## Parameters
+
 * **extraInfo** NSProductExtraDataField[]
 
 ```crmscript

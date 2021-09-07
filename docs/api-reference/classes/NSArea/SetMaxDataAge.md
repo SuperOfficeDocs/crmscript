@@ -10,7 +10,8 @@ so.topic: reference
 
 Max age of data when generating db's based on this area
 
-**Parameter:** 
+## Parameters
+
 * **maxDataAge** Integer
 
 ```crmscript

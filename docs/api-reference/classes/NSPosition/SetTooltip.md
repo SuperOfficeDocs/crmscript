@@ -10,7 +10,8 @@ so.topic: reference
 
 Set the tooltip description for the NSPosition list item.
 
-**Parameter:** 
+## Parameters
+
 * **tooltip** String NSPosition tooltip description.
 
 ```crmscript

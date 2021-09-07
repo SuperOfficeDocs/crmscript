@@ -8,16 +8,19 @@ so.topic: reference
 
 # Integer GetPrivate()
 
-The confidentiality of appointments is shown as different types of “private” on the appointment. For an updated list of “private” types, see the database manual.
+The confidentiality of appointments is shown as different types of "private" on the appointment. For an updated list of "private" types, see the database manual.
 
 **Returns:** Integer
 
-* Enum: 0 = Public 
-* Enum: 1 = PrivateUser 
-* Enum: 2 = PrivateGroup 
+## Enum: AppointmentPrivate
+
+* 0 = Public
+* 1 = PrivateUser
+* 2 = PrivateGroup
+
+## Example
 
 ```crmscript
 NSAppointmentEntity thing;
 Integer private  = thing.GetPrivate();
 ```
-

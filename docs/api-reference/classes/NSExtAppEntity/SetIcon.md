@@ -10,7 +10,8 @@ so.topic: reference
 
 The id of the icon of the external app
 
-**Parameter:** 
+## Parameters
+
 * **icon** Integer
 
 ```crmscript

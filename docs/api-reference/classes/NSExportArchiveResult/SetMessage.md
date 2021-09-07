@@ -10,7 +10,8 @@ so.topic: reference
 
 Descriptive messages; errors, etc.
 
-**Parameter:** 
+## Parameters
+
 * **message** String
 
 ```crmscript

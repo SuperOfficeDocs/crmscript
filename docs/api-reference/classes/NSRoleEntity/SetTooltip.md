@@ -10,7 +10,8 @@ so.topic: reference
 
 Description of the role.
 
-**Parameter:** 
+## Parameters
+
 * **tooltip** String
 
 ```crmscript

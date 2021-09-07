@@ -10,7 +10,8 @@ so.topic: reference
 
 Name of the source person.
 
-**Parameter:** 
+## Parameters
+
 * **sourcePersonName** String
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 MDO list name used to populate this list. Derived from UDListDefinitionId and ListTableId. (Read-only)
 
-**Parameter:** 
+## Parameters
+
 * **mdoListName** String
 
 ```crmscript

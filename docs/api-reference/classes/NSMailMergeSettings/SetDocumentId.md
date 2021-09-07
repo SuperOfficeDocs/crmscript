@@ -10,7 +10,8 @@ so.topic: reference
 
 Identity of document to be used as merge draft.
 
-**Parameter:** 
+## Parameters
+
 * **documentId** Integer
 
 ```crmscript

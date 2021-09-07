@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSRole GetRole(Integer roleId);
 
-Gets a NSRole object.
+Gets an NSRole object.
 
 ## Parameters
 

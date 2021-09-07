@@ -10,7 +10,8 @@ so.topic: reference
 
 The project type.
 
-**Parameter:** 
+## Parameters
+
 * **type** String
 
 ```crmscript

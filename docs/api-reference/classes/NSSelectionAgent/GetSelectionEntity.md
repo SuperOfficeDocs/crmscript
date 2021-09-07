@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSSelectionEntity GetSelectionEntity(Integer selectionEntityId);
 
-Gets a NSSelectionEntity object.
+Gets an NSSelectionEntity object.
 
 ## Parameters
 

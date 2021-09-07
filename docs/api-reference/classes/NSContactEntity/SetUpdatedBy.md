@@ -10,7 +10,8 @@ so.topic: reference
 
 The user that last updated the contact
 
-**Parameter:** 
+## Parameters
+
 * **updatedBy** NSAssociate
 
 ```crmscript

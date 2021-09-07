@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSCredited GetCredited(Integer creditedId);
 
-Gets a NSCredited object.
+Gets an NSCredited object.
 
 ## Parameters
 

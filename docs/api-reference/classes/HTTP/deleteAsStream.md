@@ -9,12 +9,12 @@ so.topic: reference
 
 # HTTP.deleteAsStream(String p_0)
 
-Supports both http and https. Returns the result in a NSStream.
+Supports both http and https. Returns the result in an NSStream.
 
 ## Example
 
     HTTP h;
-    
+   
     NSStream b = h.deleteAsStream("https://httpbin.org/delete");
     if (h.hasError())
       print(h.getErrorMessage());

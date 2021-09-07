@@ -10,7 +10,8 @@ so.topic: reference
 
 Sorting rank of this role in lists
 
-**Parameter:** 
+## Parameters
+
 * **rank** Integer
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Postit text record id.
 
-**Parameter:** 
+## Parameters
+
 * **postitTextId** Integer
 
 ```crmscript

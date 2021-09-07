@@ -10,7 +10,8 @@ so.topic: reference
 
 The name on the email address
 
-**Parameter:** 
+## Parameters
+
 * **name** String
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 The child items of the NSSelectableMDOListItem
 
-**Parameter:** 
+## Parameters
+
 * **childItems** NSSelectableMDOListItem[]
 
 ```crmscript

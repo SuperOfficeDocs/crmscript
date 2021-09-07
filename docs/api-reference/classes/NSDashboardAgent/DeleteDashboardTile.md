@@ -9,7 +9,7 @@ so.topic: reference
 # DeleteDashboardTile(Integer dashboardTile);
 
 Deletes the NSDashboardTile
-  
+ 
 ## Parameters
 
 * **dashboardTileId** The identity of the NSDashboardTile to delete.

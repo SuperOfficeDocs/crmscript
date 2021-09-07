@@ -10,7 +10,8 @@ so.topic: reference
 
 The base color of the widget
 
-**Parameter:** 
+## Parameters
+
 * **color** String
 
 ```crmscript

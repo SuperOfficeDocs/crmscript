@@ -10,7 +10,8 @@ so.topic: reference
 
 Who created the appointment. Full name.
 
-**Parameter:** 
+## Parameters
+
 * **createdByFullName** String
 
 ```crmscript

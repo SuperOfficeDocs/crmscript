@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetChatEmails(NSEntityElement[] chatEmails)
 
-**Parameter:** 
+## Parameters
+
 * **chatEmails** NSEntityElement[]
 
 ```crmscript

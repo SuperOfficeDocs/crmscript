@@ -10,7 +10,8 @@ so.topic: reference
 
 The public key used to verify licenses owned by this owner.
 
-**Parameter:** 
+## Parameters
+
 * **publicKey** NSSignedPublicKey
 
 ```crmscript

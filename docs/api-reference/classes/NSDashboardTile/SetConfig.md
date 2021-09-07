@@ -10,7 +10,8 @@ so.topic: reference
 
 The tile config
 
-**Parameter:** 
+## Parameters
+
 * **config** String
 
 ```crmscript

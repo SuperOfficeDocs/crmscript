@@ -10,7 +10,8 @@ so.topic: reference
 
 Id of BinaryObject row that contains image for status monitor
 
-**Parameter:** 
+## Parameters
+
 * **pictureId** Integer
 
 ```crmscript

@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSSelectionCategory GetSelectionCategory(Integer selectionCategoryId);
 
-Gets a NSSelectionCategory object.
+Gets an NSSelectionCategory object.
 
 ## Parameters
 

@@ -10,7 +10,8 @@ so.topic: reference
 
 Min value (if type 1); list extra id (if type 5)
 
-**Parameter:** 
+## Parameters
+
 * **minValue** Integer
 
 ```crmscript

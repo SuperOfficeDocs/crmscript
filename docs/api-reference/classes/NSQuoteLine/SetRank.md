@@ -10,7 +10,8 @@ so.topic: reference
 
 QuoteLines can be re-ordered, so we must track the ordering.
 
-**Parameter:** 
+## Parameters
+
 * **rank** Integer
 
 ```crmscript

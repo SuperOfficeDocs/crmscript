@@ -8,23 +8,26 @@ so.topic: reference
 
 # Integer GetAppointmentType()
 
-where=no start time,note,docin, docout 
+where=no start time,note,docin, docout
 
 **Returns:** Integer
 
-* Enum: 0 = Unknown 
-* Enum: 1 = inDiary 
-* Enum: 2 = inChecklist 
-* Enum: 3 = Note 
-* Enum: 4 = Document 
-* Enum: 5 = SavedReport 
-* Enum: 6 = BookingForDiary 
-* Enum: 7 = BookingForChecklist 
-* Enum: 8 = MergeDraft 
-* Enum: 9 = MergeFinal 
+## Enum: address type
+
+* 0 = Unknown
+* 1 = inDiary
+* 2 = inChecklist
+* 3 = Note
+* 4 = Document
+* 5 = SavedReport
+* 6 = BookingForDiary
+* 7 = BookingForChecklist
+* 8 = MergeDraft
+* 9 = MergeFinal
+
+## Example
 
 ```crmscript
 NSAlarmData thing;
 Integer appointmentType  = thing.GetAppointmentType();
 ```
-

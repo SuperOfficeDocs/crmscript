@@ -10,7 +10,8 @@ so.topic: reference
 
 When opening hours start on Saturdays. Only time-part is used.
 
-**Parameter:** 
+## Parameters
+
 * **satStart** TimeSpan
 
 ```crmscript

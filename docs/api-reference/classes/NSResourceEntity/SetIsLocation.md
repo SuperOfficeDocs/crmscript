@@ -10,7 +10,8 @@ so.topic: reference
 
 If true the resource is a location
 
-**Parameter:** 
+## Parameters
+
 * **isLocation** Bool
 
 ```crmscript

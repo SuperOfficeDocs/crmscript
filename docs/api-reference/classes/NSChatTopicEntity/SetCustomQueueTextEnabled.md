@@ -10,7 +10,8 @@ so.topic: reference
 
 Use the custom queue message text
 
-**Parameter:** 
+## Parameters
+
 * **customQueueTextEnabled** Bool
 
 ```crmscript

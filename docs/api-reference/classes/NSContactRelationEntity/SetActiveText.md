@@ -10,7 +10,8 @@ so.topic: reference
 
 Active text for the relation.
 
-**Parameter:** 
+## Parameters
+
 * **activeText** String
 
 ```crmscript

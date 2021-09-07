@@ -10,7 +10,8 @@ so.topic: reference
 
 The group which this form belongs to.
 
-**Parameter:** 
+## Parameters
+
 * **groupId** Integer
 
 ```crmscript

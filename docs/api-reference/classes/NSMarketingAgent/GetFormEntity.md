@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSFormEntity GetFormEntity(Integer formEntityId);
 
-Gets a NSFormEntity object.
+Gets an NSFormEntity object.
 
 ## Parameters
 

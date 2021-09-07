@@ -8,9 +8,10 @@ so.topic: reference
 
 # SetExtraInfo(String extraInfo)
 
-Used to store additional information for the delivery systems. 
+Used to store additional information for the delivery systems.
 
-**Parameter:** 
+## Parameters
+
 * **extraInfo** String
 
 ```crmscript

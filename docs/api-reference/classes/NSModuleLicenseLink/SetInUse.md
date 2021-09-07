@@ -10,7 +10,8 @@ so.topic: reference
 
 The total number of licenses (of a given license module) that are occupied
 
-**Parameter:** 
+## Parameters
+
 * **inUse** Integer
 
 ```crmscript

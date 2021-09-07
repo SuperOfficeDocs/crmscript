@@ -10,7 +10,8 @@ so.topic: reference
 
 Description of the project image if it exists. (This is the image that is displayed in the CRM client)
 
-**Parameter:** 
+## Parameters
+
 * **imageDescription** String
 
 ```crmscript

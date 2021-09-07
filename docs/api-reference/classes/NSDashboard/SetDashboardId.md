@@ -10,7 +10,8 @@ so.topic: reference
 
 The dashboard id
 
-**Parameter:** 
+## Parameters
+
 * **dashboardId** Integer
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Name associated with the location
 
-**Parameter:** 
+## Parameters
+
 * **name** String
 
 ```crmscript

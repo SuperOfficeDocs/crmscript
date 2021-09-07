@@ -10,7 +10,8 @@ so.topic: reference
 
 When was approval granted or rejected
 
-**Parameter:** 
+## Parameters
+
 * **approvedRegisteredDate** DateTime
 
 ```crmscript

@@ -8,9 +8,10 @@ so.topic: reference
 
 # SetCompetitor(NSCompetitor competitor)
 
-List of all possible competitors. 
+List of all possible competitors.
 
-**Parameter:** 
+## Parameters
+
 * **competitor** NSCompetitor
 
 ```crmscript

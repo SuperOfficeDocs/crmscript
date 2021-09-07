@@ -10,7 +10,8 @@ so.topic: reference
 
 Body formatted in HTML
 
-**Parameter:** 
+## Parameters
+
 * **hTMLBody** String
 
 ```crmscript

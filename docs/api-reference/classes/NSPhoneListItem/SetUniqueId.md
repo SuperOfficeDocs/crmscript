@@ -10,7 +10,8 @@ so.topic: reference
 
 Property setting a unique id indicating if this is a person or contact
 
-**Parameter:** 
+## Parameters
+
 * **uniqueId** String
 
 ```crmscript

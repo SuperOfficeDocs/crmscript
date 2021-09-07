@@ -10,7 +10,8 @@ so.topic: reference
 
 The list of actual users that can be selected
 
-**Parameter:** 
+## Parameters
+
 * **users** NSCredentialUser[]
 
 ```crmscript

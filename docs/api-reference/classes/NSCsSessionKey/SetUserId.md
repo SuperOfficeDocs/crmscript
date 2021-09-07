@@ -10,7 +10,8 @@ so.topic: reference
 
 The ejuser id owning this session key
 
-**Parameter:** 
+## Parameters
+
 * **userId** Integer
 
 ```crmscript

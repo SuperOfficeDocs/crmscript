@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSMrMrs GetMrMrs(Integer mrMrsId);
 
-Gets a NSMrMrs object.
+Gets an NSMrMrs object.
 
 ## Parameters
 

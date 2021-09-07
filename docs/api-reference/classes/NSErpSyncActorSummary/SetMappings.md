@@ -10,7 +10,8 @@ so.topic: reference
 
 A summary of fields that have mappings to or from the ERP system
 
-**Parameter:** 
+## Parameters
+
 * **mappings** String
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Display name of the column
 
-**Parameter:** 
+## Parameters
+
 * **displayName** String
 
 ```crmscript

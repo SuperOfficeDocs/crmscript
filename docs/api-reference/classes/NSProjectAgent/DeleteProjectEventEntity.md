@@ -9,7 +9,7 @@ so.topic: reference
 # DeleteProjectEventEntity(Integer projectEventEntity);
 
 Deletes the NSProjectEventEntity
-  
+ 
 ## Parameters
 
 * **projectEventEntityId** The identity of the NSProjectEventEntity to delete.

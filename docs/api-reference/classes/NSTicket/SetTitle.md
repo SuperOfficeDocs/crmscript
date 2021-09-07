@@ -10,7 +10,8 @@ so.topic: reference
 
 The title of the ticket.
 
-**Parameter:** 
+## Parameters
+
 * **title** String
 
 ```crmscript

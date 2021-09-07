@@ -10,7 +10,8 @@ so.topic: reference
 
 The names of one or more calculation rules that are in effect for this line, comma-separated case-insensitive
 
-**Parameter:** 
+## Parameters
+
 * **rule** String
 
 ```crmscript

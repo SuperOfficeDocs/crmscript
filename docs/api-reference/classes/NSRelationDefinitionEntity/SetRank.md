@@ -8,9 +8,10 @@ so.topic: reference
 
 # SetRank(Integer rank)
 
-Rank order 
+Rank order
 
-**Parameter:** 
+## Parameters
+
 * **rank** Integer
 
 ```crmscript

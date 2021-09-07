@@ -12,10 +12,10 @@ Webhook status* should we post events to the URL? 1=Active, 2=Stopped or 3=TooMa
 
 **Returns:** Integer
 
-* Enum: 0 = Unknown 
-* Enum: 1 = Active 
-* Enum: 2 = Stopped 
-* Enum: 3 = TooManyErrors 
+* Enum: 0 = Unknown
+* Enum: 1 = Active
+* Enum: 2 = Stopped
+* Enum: 3 = TooManyErrors
 
 ```crmscript
 NSWebhook thing;

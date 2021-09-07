@@ -10,7 +10,8 @@ so.topic: reference
 
 The contact's address, formatted with linebreaks and spaces into a single string.
 
-**Parameter:** 
+## Parameters
+
 * **formattedAddress** String
 
 ```crmscript

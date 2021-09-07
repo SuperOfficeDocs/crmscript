@@ -10,7 +10,8 @@ so.topic: reference
 
 When the session was accepted by a user.
 
-**Parameter:** 
+## Parameters
+
 * **whenStarted** DateTime
 
 ```crmscript

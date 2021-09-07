@@ -10,7 +10,8 @@ so.topic: reference
 
 Whether the context should stop what it is doing, e.g. saving a sale
 
-**Parameter:** 
+## Parameters
+
 * **blockExecution** Bool
 
 ```crmscript

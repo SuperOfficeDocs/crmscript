@@ -10,7 +10,8 @@ so.topic: reference
 
 Owner of the selection
 
-**Parameter:** 
+## Parameters
+
 * **associate** NSAssociate
 
 ```crmscript

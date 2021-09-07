@@ -10,7 +10,8 @@ so.topic: reference
 
 Whether open on Tuesdays.
 
-**Parameter:** 
+## Parameters
+
 * **tueEnabled** Bool
 
 ```crmscript

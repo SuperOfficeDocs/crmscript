@@ -10,7 +10,8 @@ so.topic: reference
 
 Comment attached to the calendar event (accept / reject reason etc.)
 
-**Parameter:** 
+## Parameters
+
 * **comment** String
 
 ```crmscript

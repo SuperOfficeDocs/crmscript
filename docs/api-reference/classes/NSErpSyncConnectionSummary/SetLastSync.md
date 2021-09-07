@@ -10,7 +10,8 @@ so.topic: reference
 
 The time of the last sync
 
-**Parameter:** 
+## Parameters
+
 * **lastSync** DateTime
 
 ```crmscript

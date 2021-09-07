@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSMDOListItem[] GetTicketCategories()
 
-Request Ticket Categories assigned to the user. 
+Request Ticket Categories assigned to the user.
 
 **Returns:** NSMDOListItem[]
 

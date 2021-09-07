@@ -10,8 +10,10 @@ so.topic: reference
 
 ## Parameters
 
-* **groupId** 
-* **groupType** 
-* **startTime** 
-* **endTime** 
-* **count** 
+| Parameter | Type |Description |
+|---|---|---|
+| groupId | Integer | |
+| groupType | Integer | |
+| startTime | DateTime | |
+| endTime | DateTime | |
+| count | Integer | |

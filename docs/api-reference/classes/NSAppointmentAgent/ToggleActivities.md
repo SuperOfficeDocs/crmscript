@@ -8,7 +8,7 @@ so.topic: reference
 
 # Integer ToggleActivities(String[] activityIdentifier)
 
-Toggle the completed status for an array of activities. 
+Toggle the completed status for an array of activities.
 
 ## Parameters
 

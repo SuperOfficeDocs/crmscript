@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetDimension(Integer dimension)
 
-**Parameter:** 
+## Parameters
+
 * **dimension** Integer
 
 ```crmscript

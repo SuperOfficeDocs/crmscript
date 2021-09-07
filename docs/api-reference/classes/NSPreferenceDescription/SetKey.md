@@ -10,7 +10,8 @@ so.topic: reference
 
 Preference key name
 
-**Parameter:** 
+## Parameters
+
 * **key** String
 
 ```crmscript

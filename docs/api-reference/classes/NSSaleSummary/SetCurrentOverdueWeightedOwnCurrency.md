@@ -10,7 +10,8 @@ so.topic: reference
 
 Weighted sum for all overdue sales within the period in default currency for the current user
 
-**Parameter:** 
+## Parameters
+
 * **currentOverdueWeightedOwnCurrency** Float
 
 ```crmscript

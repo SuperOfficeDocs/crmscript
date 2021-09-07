@@ -10,7 +10,8 @@ so.topic: reference
 
 The datetime for when the ticket was replied to. I.e. the first external message added to the ticket.
 
-**Parameter:** 
+## Parameters
+
 * **repliedAt** DateTime
 
 ```crmscript

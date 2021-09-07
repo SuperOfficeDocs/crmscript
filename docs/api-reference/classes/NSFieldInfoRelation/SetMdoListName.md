@@ -10,7 +10,8 @@ so.topic: reference
 
 MDO list name used to populate this list. (Read-only* derived from TargetTable)
 
-**Parameter:** 
+## Parameters
+
 * **mdoListName** String
 
 ```crmscript

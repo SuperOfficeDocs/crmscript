@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSCustomerLanguage GetCustomerLanguage(Integer customerLanguageId);
 
-Gets a NSCustomerLanguage object.
+Gets an NSCustomerLanguage object.
 
 ## Parameters
 

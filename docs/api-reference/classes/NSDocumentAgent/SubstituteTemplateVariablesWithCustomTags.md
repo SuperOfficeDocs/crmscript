@@ -12,22 +12,8 @@ Parse the source string, and replace any template variable tags with their value
 
 ## Parameters
 
-* **source** Source string to parse for template variables. Such variables must have delimiters corresponding to the standard for the given generator encoding.<p/>Non-text source data (such as the binary content of a .doc file) should be passed in as Base64.
+* **source** Source string to parse for template variables. Such variables must have delimiters corresponding to the standard for the given generator encoding. Non-text source data (such as the binary content of a .doc file) should be passed in as Base64.
 * **generatorEncoding** Encoding of source string. Non-text formats such as MsWord or Excel should be Base64 encoded in the source string.
-* Enum: 0 = Text 
-* Enum: 1 = Html 
-* Enum: 2 = Xml 
-* Enum: 3 = MsWord 
-* Enum: 4 = MsExcel 
-* Enum: 5 = MsPowerpoint 
-* Enum: 6 = MsOffice2007 
-* Enum: 7 = MsOffice2007Xml 
-* Enum: 8 = Url 
-* Enum: 9 = UrlUnicode 
-* Enum: 10 = Pdf 
-* Enum: 11 = Mime 
-* Enum: 12 = OpenDocument 
-* Enum: 13 = OpenDocumentXml 
 * **customTags** Array of custom tag names. Each name should have exactly four characters. There should be exactly one value for each tag, i.e., the lengths of the customTags and customValues arrays should be the same.
 * **customValues** Array of values for custom tags. There should be exactly one value for each tag, i.e., the lengths of the customTags and customValues arrays should be the same.
 * **contactId** Identifier for a contact
@@ -40,6 +26,26 @@ Parse the source string, and replace any template variable tags with their value
 * **cultureName** Name of culture to be used for culture-sensitive data, such as dates or multi-language texts. Use a blank string to accept whatever current culture is set on the server (possibly not a good choice in multinational organizations with a single server).
 
 **Returns:** String
+
+### Enum: generatorEncoding
+
+* 0 = Text
+* 1 = Html
+* 2 = Xml
+* 3 = MsWord
+* 4 = MsExcel
+* 5 = MsPowerpoint
+* 6 = MsOffice2007
+* 7 = MsOffice2007Xml
+* 8 = Url
+* 9 = UrlUnicode
+* 10 = Pdf
+* 11 = Mime
+* 12 = OpenDocument
+* 13 = OpenDocumentXml
+
+## Example
+
 
 ```crmscript
 NSDocumentAgent agent;
@@ -57,4 +63,3 @@ Integer projectId;
 String cultureName;
 String res = agent.SubstituteTemplateVariablesWithCustomTags(source, generatorEncoding, customTags, customValues, contactId, personId, appointmentId, documentId, saleId, selectionId, projectId, cultureName);
 ```
-

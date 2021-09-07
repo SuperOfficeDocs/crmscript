@@ -10,16 +10,21 @@ so.topic: reference
 
 Checkout state
 
-**Parameter:** 
+## Parameters
+
 * **state** Integer
-* Enum: 0 = NotCheckedOut 
-* Enum: 1 = CheckedOutOwn 
-* Enum: 2 = CheckedOutOther 
-* Enum: 3 = LockingNotSupported 
+
+### Enum: Checkout state
+
+* 0 = NotCheckedOut
+* 1 = CheckedOutOwn
+* 2 = CheckedOutOther
+* 3 = LockingNotSupported
+
+## Example
 
 ```crmscript
 NSCheckoutInfo thing;
 Integer state;
 thing.SetState(state);
 ```
-

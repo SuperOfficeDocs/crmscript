@@ -10,7 +10,8 @@ so.topic: reference
 
 Is this a sent e-mail (not new)
 
-**Parameter:** 
+## Parameters
+
 * **isSent** Bool
 
 ```crmscript

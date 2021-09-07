@@ -10,7 +10,8 @@ so.topic: reference
 
 Indicates if the logo should be shown in the widget
 
-**Parameter:** 
+## Parameters
+
 * **logoEnabled** Bool
 
 ```crmscript

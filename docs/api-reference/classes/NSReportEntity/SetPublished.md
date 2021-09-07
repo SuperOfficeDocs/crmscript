@@ -10,7 +10,8 @@ so.topic: reference
 
 Is the report published?
 
-**Parameter:** 
+## Parameters
+
 * **published** Bool
 
 ```crmscript

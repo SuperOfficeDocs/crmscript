@@ -10,7 +10,8 @@ so.topic: reference
 
 Group quote lines by this field
 
-**Parameter:** 
+## Parameters
+
 * **groupQuoteLinesBy** Integer
 
 ```crmscript

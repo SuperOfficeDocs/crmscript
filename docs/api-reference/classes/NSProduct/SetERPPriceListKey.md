@@ -10,7 +10,8 @@ so.topic: reference
 
 Foreign key to the price list that this product is a part of, or the primary key of the pricelist if this is a built-in pricelist.
 
-**Parameter:** 
+## Parameters
+
 * **eRPPriceListKey** String
 
 ```crmscript

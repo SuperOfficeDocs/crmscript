@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSTicketEntity GetTicketEntity(Integer ticketEntityId);
 
-Gets a NSTicketEntity object.
+Gets an NSTicketEntity object.
 
 ## Parameters
 

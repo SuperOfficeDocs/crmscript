@@ -10,7 +10,8 @@ so.topic: reference
 
 The language which this device will receive notifications translated in
 
-**Parameter:** 
+## Parameters
+
 * **language** String
 
 ```crmscript

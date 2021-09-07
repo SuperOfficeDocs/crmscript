@@ -10,7 +10,8 @@ so.topic: reference
 
 The person that created the foreign application.
 
-**Parameter:** 
+## Parameters
+
 * **createdBy** NSAssociate
 
 ```crmscript

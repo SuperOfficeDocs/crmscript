@@ -10,7 +10,8 @@ so.topic: reference
 
 Default currency for this country
 
-**Parameter:** 
+## Parameters
+
 * **currencyId** Integer
 
 ```crmscript

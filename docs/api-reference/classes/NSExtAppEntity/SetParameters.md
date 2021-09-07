@@ -10,7 +10,8 @@ so.topic: reference
 
 <template variable> <other template variable>
 
-**Parameter:** 
+## Parameters
+
 * **parameters** String
 
 ```crmscript

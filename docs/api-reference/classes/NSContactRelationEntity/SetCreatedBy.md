@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetCreatedBy(NSAssociate createdBy)
 
-**Parameter:** 
+## Parameters
+
 * **createdBy** NSAssociate
 
 ```crmscript

@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetProtocol(String protocol)
 
-**Parameter:** 
+## Parameters
+
 * **protocol** String
 
 ```crmscript

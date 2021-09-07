@@ -10,7 +10,8 @@ so.topic: reference
 
 Date + end time planned
 
-**Parameter:** 
+## Parameters
+
 * **endDate** DateTime
 
 ```crmscript

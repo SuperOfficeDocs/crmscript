@@ -10,7 +10,8 @@ so.topic: reference
 
 True if this appointment is a booking.
 
-**Parameter:** 
+## Parameters
+
 * **isBooking** Bool
 
 ```crmscript

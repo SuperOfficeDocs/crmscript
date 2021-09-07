@@ -10,7 +10,8 @@ so.topic: reference
 
 Comment text on the project membership
 
-**Parameter:** 
+## Parameters
+
 * **comment** String
 
 ```crmscript

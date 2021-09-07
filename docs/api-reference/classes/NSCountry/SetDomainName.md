@@ -10,7 +10,8 @@ so.topic: reference
 
 Domain name of the country
 
-**Parameter:** 
+## Parameters
+
 * **domainName** String
 
 ```crmscript

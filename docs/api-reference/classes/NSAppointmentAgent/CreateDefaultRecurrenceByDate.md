@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSRecurrenceInfo CreateDefaultRecurrenceByDate(DateTime startDate)
 
-Creates a NSRecurrenceInfo object populated with the default values for the specific type. Using startDate as start date for the recurreing pattern.
+Creates an NSRecurrenceInfo object populated with the default values for the specific type. Using startDate as start date for the recurreing pattern.
 
 ## Parameters
 

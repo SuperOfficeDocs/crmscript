@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetNew(NSLicenseInfo new)
 
-**Parameter:** 
+## Parameters
+
 * **new** NSLicenseInfo
 
 ```crmscript

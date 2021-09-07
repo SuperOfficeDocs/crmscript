@@ -12,6 +12,6 @@ Get user from ejUserId* used for eJournal Legacy Support.
 
 ## Parameters
 
-* **ejUserId** ejUserId* 
+* **ejUserId** ejUserId*
 
 **Returns:** NSUser

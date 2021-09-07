@@ -10,7 +10,8 @@ so.topic: reference
 
 Set the primary key (id) for the SelectionCategory
 
-**Parameter:** 
+## Parameters
+
 * **id** Integer SelectionCategory id.
 
 ```crmscript

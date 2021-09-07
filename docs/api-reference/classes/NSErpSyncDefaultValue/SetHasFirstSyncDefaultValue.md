@@ -10,7 +10,8 @@ so.topic: reference
 
 Should a default value be set on first sync
 
-**Parameter:** 
+## Parameters
+
 * **hasFirstSyncDefaultValue** Bool
 
 ```crmscript

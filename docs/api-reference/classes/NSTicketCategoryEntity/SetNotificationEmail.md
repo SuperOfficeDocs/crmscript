@@ -10,7 +10,8 @@ so.topic: reference
 
 Comma separated list of addresses to notify when requests are redelegated to (unassigned) in this category.
 
-**Parameter:** 
+## Parameters
+
 * **notificationEmail** String
 
 ```crmscript

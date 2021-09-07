@@ -10,7 +10,8 @@ so.topic: reference
 
 Optional unique id of device (Palm pilot device ID, etc)
 
-**Parameter:** 
+## Parameters
+
 * **deviceIdentifier** String
 
 ```crmscript

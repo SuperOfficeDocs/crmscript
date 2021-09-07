@@ -10,7 +10,8 @@ so.topic: reference
 
 Who the task should be visible for
 
-**Parameter:** 
+## Parameters
+
 * **visibleFor** VisibleFor
 
 ```crmscript

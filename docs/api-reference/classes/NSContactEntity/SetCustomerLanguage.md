@@ -10,7 +10,8 @@ so.topic: reference
 
 customerlanguage
 
-**Parameter:** 
+## Parameters
+
 * **customerLanguage** NSCustomerLanguage
 
 ```crmscript

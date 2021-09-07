@@ -10,7 +10,8 @@ so.topic: reference
 
 The sale owner
 
-**Parameter:** 
+## Parameters
+
 * **associate** NSAssociate
 
 ```crmscript

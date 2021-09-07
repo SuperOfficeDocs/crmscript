@@ -10,7 +10,8 @@ so.topic: reference
 
 The operating system version. Ex: 'iOS v10.2'
 
-**Parameter:** 
+## Parameters
+
 * **oSVersion** String
 
 ```crmscript

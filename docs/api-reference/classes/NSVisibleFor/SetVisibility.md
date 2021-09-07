@@ -8,11 +8,12 @@ so.topic: reference
 
 # SetVisibility(Integer visibility)
 
-**Parameter:** 
+## Parameters
+
 * **visibility** Integer
-* Enum: 0 = All 
-* Enum: 1 = Associate 
-* Enum: 2 = Group 
+* Enum: 0 = All
+* Enum: 1 = Associate
+* Enum: 2 = Group
 
 ```crmscript
 NSVisibleFor thing;

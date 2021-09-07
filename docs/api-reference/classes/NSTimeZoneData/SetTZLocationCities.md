@@ -10,7 +10,8 @@ so.topic: reference
 
 Cities associated with location
 
-**Parameter:** 
+## Parameters
+
 * **tZLocationCities** String
 
 ```crmscript

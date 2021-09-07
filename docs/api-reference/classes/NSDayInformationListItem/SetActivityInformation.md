@@ -10,7 +10,8 @@ so.topic: reference
 
 Activity information summary* number of free and busy activities.
 
-**Parameter:** 
+## Parameters
+
 * **activityInformation** NSActivitySummary
 
 ```crmscript

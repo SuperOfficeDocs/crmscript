@@ -10,7 +10,8 @@ so.topic: reference
 
 The font used in the widget
 
-**Parameter:** 
+## Parameters
+
 * **font** String
 
 ```crmscript

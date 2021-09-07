@@ -10,7 +10,8 @@ so.topic: reference
 
 Bcc recipient of e-mail
 
-**Parameter:** 
+## Parameters
+
 * **bcc** NSEMailAddress[]
 
 ```crmscript

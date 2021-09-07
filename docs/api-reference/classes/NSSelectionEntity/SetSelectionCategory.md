@@ -10,7 +10,8 @@ so.topic: reference
 
 Selection category type (list item)
 
-**Parameter:** 
+## Parameters
+
 * **selectionCategory** SelectionCategory
 
 ```crmscript

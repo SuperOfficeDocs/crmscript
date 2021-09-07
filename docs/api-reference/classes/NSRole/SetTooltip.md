@@ -10,7 +10,8 @@ so.topic: reference
 
 Set the tooltip description for the Role list item.
 
-**Parameter:** 
+## Parameters
+
 * **tooltip** String Role tooltip description.
 
 ```crmscript

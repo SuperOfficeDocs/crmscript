@@ -10,7 +10,8 @@ so.topic: reference
 
 The date to be used for searching & showing
 
-**Parameter:** 
+## Parameters
+
 * **activeDate** DateTime
 
 ```crmscript

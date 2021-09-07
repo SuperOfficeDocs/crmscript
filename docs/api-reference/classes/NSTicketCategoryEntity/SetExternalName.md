@@ -10,7 +10,8 @@ so.topic: reference
 
 The external name for this category, used for the customer frontend.
 
-**Parameter:** 
+## Parameters
+
 * **externalName** String
 
 ```crmscript

@@ -22,9 +22,9 @@ The method will return true if the attachment was found, else false.
 ## Example
 
     #setLanguageLevel 3;
-    
+   
     HTTP http;
-    
+   
     if(http.addAttachmentData(24))
     {
       Byte[] res = http.post("https://httpbin.org/post");

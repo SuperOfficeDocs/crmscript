@@ -10,7 +10,8 @@ so.topic: reference
 
 The (decrypted) password or token
 
-**Parameter:** 
+## Parameters
+
 * **password** String
 
 ```crmscript

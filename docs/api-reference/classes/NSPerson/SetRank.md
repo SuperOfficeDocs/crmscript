@@ -10,7 +10,8 @@ so.topic: reference
 
 Display sort sequence for default sort order
 
-**Parameter:** 
+## Parameters
+
 * **rank** Integer
 
 ```crmscript

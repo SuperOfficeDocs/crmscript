@@ -10,7 +10,8 @@ so.topic: reference
 
 The associate corresponding to this person. Will be empty if the person is not a user (internal associate user, external user).
 
-**Parameter:** 
+## Parameters
+
 * **correspondingAssociate** NSAssociate
 
 ```crmscript

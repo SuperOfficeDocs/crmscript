@@ -10,7 +10,8 @@ so.topic: reference
 
 The email header is saved in this field as raw text
 
-**Parameter:** 
+## Parameters
+
 * **emailHeader** String
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 The restrictions (can be multiple groups) that make up the TypicalSearch
 
-**Parameter:** 
+## Parameters
+
 * **restrictionGroups** NSArchiveRestrictionGroup[]
 
 ```crmscript

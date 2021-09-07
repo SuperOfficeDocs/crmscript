@@ -10,7 +10,8 @@ so.topic: reference
 
 Set the primary key (id) for the NSNavigatorCompany
 
-**Parameter:** 
+## Parameters
+
 * **id** Integer NavigatorCompany id.
 
 ```crmscript

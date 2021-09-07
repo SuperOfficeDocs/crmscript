@@ -15,12 +15,17 @@ Moving a booking to another start time.
 * **appointmentId** The appointmentId. Both master and child record ids are accepted.
 * **newStartTime** The new start time for the moved booking.
 * **updateMode** Update mode for a recurring appointment.
-* Enum: 0 = Unknown 
-* Enum: 1 = OnlyThis 
-* Enum: 2 = ThisAndForward 
-* Enum: 9 = StopRecurrence 
 
 **Returns:** NSAppointmentEntity
+
+### Enum updateMode
+
+* 0 = Unknown
+* 1 = OnlyThis
+* 2 = ThisAndForward
+* 9 = StopRecurrence
+
+## Example
 
 ```crmscript
 NSAppointmentAgent agent;
@@ -29,4 +34,3 @@ DateTime newStartTime;
 Integer updateMode;
 NSAppointmentEntity res = agent.Move(appointmentId, newStartTime, updateMode);
 ```
-

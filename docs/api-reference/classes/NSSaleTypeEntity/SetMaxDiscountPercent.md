@@ -10,7 +10,8 @@ so.topic: reference
 
 The maximum discount in percent of total, if set, on quotes linked to sales of this type
 
-**Parameter:** 
+## Parameters
+
 * **maxDiscountPercent** Integer
 
 ```crmscript

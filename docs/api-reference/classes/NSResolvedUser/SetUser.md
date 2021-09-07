@@ -10,7 +10,8 @@ so.topic: reference
 
 The resolved NSUser instance.
 
-**Parameter:** 
+## Parameters
+
 * **user** User
 
 ```crmscript

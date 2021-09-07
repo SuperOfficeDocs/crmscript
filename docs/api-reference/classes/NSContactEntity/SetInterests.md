@@ -10,7 +10,8 @@ so.topic: reference
 
 The contact's available and selected interests.
 
-**Parameter:** 
+## Parameters
+
 * **interests** NSSelectableMDOListItem[]
 
 ```crmscript

@@ -10,11 +10,12 @@ so.topic: reference
 
 Static/Dynamic/Combined?
 
-**Parameter:** 
+## Parameters
+
 * **selectionType** Integer
-* Enum: 0 = Static 
-* Enum: 1 = Dynamic 
-* Enum: 2 = Combined 
+* Enum: 0 = Static
+* Enum: 1 = Dynamic
+* Enum: 2 = Combined
 
 ```crmscript
 NSSelectionEntity thing;

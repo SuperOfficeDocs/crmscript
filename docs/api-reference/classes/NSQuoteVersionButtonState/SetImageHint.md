@@ -10,7 +10,8 @@ so.topic: reference
 
 Image to be shown
 
-**Parameter:** 
+## Parameters
+
 * **imageHint** String
 
 ```crmscript

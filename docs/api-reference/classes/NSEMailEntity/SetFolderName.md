@@ -10,7 +10,8 @@ so.topic: reference
 
 Name of folder the e-mail belongs in
 
-**Parameter:** 
+## Parameters
+
 * **folderName** String
 
 ```crmscript

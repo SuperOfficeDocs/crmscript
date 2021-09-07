@@ -10,7 +10,8 @@ so.topic: reference
 
 Set the usergroups and/or users the SaleEntity item is visible for.
 
-**Parameter:** 
+## Parameters
+
 * **visibleFor** NSVisibleFor[] of one or more users + usergroups.
 
 ```crmscript

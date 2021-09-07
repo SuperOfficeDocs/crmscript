@@ -10,7 +10,8 @@ so.topic: reference
 
 'Find sale', or whatever is appropriate for the Find <entity> filter page; this string will contain resource references
 
-**Parameter:** 
+## Parameters
+
 * **filterScreenHeading** String
 
 ```crmscript

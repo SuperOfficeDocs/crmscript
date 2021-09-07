@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSPerson GetPerson(Integer personId);
 
-Gets a NSPerson object.
+Gets an NSPerson object.
 
 ## Parameters
 

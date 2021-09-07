@@ -10,7 +10,8 @@ so.topic: reference
 
 Duration in minutes of suggested appointment
 
-**Parameter:** 
+## Parameters
+
 * **duration** TimeSpan
 
 ```crmscript

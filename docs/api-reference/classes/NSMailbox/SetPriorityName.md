@@ -10,7 +10,8 @@ so.topic: reference
 
 The name of the priority that the mailbox is connected to
 
-**Parameter:** 
+## Parameters
+
 * **priorityName** String
 
 ```crmscript

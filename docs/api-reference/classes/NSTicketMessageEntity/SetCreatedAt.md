@@ -10,7 +10,8 @@ so.topic: reference
 
 When the message was posted.
 
-**Parameter:** 
+## Parameters
+
 * **createdAt** DateTime
 
 ```crmscript

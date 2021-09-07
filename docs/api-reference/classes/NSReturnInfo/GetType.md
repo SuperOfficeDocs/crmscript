@@ -12,15 +12,18 @@ How is the return value to be understood by the caller
 
 **Returns:** Integer
 
-* Enum: 0 = None 
-* Enum: 1 = Message 
-* Enum: 2 = SoProtocol 
-* Enum: 3 = CustomGui 
-* Enum: 4 = Other 
-* Enum: 5 = URL 
+## Enum: ReturnType
+
+* 0 = None
+* 1 = Message
+* 2 = SoProtocol
+* 3 = CustomGui
+* 4 = Other
+* 5 = URL
+
+## Example
 
 ```crmscript
 NSReturnInfo thing;
 Integer type  = thing.GetType();
 ```
-

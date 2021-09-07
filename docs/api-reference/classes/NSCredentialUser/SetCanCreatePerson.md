@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetCanCreatePerson(Bool canCreatePerson)
 
-**Parameter:** 
+## Parameters
+
 * **canCreatePerson** Bool
 
 ```crmscript

@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSDiaryViewEntity GetDiaryViewEntity(Integer diaryViewEntityId);
 
-Gets a NSDiaryViewEntity object.
+Gets an NSDiaryViewEntity object.
 
 ## Parameters
 

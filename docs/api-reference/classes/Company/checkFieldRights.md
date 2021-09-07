@@ -19,7 +19,7 @@ fieldRight might be:
 ## Example
 
     Company c;
-    
+   
     c.load(3);
     Bool b = c.checkFieldRights("contact", "read");
     print(b.toString());

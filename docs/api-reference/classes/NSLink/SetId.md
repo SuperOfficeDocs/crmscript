@@ -10,7 +10,8 @@ so.topic: reference
 
 Id of the entity the link points to (The destination/target entity primary key)
 
-**Parameter:** 
+## Parameters
+
 * **id** Integer
 
 ```crmscript

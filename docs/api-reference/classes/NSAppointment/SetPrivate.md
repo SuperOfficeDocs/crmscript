@@ -10,15 +10,20 @@ so.topic: reference
 
 Obsolete, but still maintained field for appointment privacy; denormalization of visiblefor status
 
-**Parameter:** 
+## Parameters
+
 * **private** AppointmentPrivate
-* Enum: 0 = Public 
-* Enum: 1 = PrivateUser 
-* Enum: 2 = PrivateGroup 
+
+### Enum: AppointmentPrivate
+
+* 0 = Public
+* 1 = PrivateUser
+* 2 = PrivateGroup
+
+## Example
 
 ```crmscript
 NSAppointment thing;
 AppointmentPrivate private;
 thing.SetPrivate(private);
 ```
-

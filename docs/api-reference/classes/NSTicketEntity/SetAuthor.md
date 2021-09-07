@@ -10,7 +10,8 @@ so.topic: reference
 
 A string representing the author of the ticket (same as author of first message).
 
-**Parameter:** 
+## Parameters
+
 * **author** String
 
 ```crmscript

@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSSource GetSource(Integer sourceId);
 
-Gets a NSSource object.
+Gets an NSSource object.
 
 ## Parameters
 

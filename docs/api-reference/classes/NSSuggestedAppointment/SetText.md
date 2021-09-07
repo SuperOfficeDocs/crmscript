@@ -10,7 +10,8 @@ so.topic: reference
 
 The suggested text of the new appointment
 
-**Parameter:** 
+## Parameters
+
 * **text** String
 
 ```crmscript

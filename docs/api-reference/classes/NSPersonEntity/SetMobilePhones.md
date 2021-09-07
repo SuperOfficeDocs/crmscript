@@ -10,7 +10,8 @@ so.topic: reference
 
 Returns a collection of mobile phone numbers that belong to the contact person.
 
-**Parameter:** 
+## Parameters
+
 * **mobilePhones** NSEntityElement[]
 
 ```crmscript

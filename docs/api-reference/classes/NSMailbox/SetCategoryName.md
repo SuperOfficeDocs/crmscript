@@ -10,7 +10,8 @@ so.topic: reference
 
 The name of the category that the mailbox is connected to
 
-**Parameter:** 
+## Parameters
+
 * **categoryName** String
 
 ```crmscript

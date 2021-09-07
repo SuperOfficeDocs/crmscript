@@ -10,7 +10,8 @@ so.topic: reference
 
 The persons contact department
 
-**Parameter:** 
+## Parameters
+
 * **contactDepartment** String
 
 ```crmscript

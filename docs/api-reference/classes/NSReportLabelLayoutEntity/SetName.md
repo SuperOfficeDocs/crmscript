@@ -10,7 +10,8 @@ so.topic: reference
 
 Name of the label layout
 
-**Parameter:** 
+## Parameters
+
 * **name** String
 
 ```crmscript

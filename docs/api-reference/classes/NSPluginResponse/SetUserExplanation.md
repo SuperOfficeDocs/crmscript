@@ -10,7 +10,8 @@ so.topic: reference
 
 A localized explanation to the answer.
 
-**Parameter:** 
+## Parameters
+
 * **userExplanation** String
 
 ```crmscript

@@ -8,7 +8,7 @@ so.topic: reference
 
 # Integer[] FindRolesWithoutFunctionalRights(String[] functionalRightNames)
 
-Find all roles without a given set of functional rights. The roles matched must not contain any of the specified functional rights. 
+Find all roles without a given set of functional rights. The roles matched must not contain any of the specified functional rights.
 
 ## Parameters
 

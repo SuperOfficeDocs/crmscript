@@ -10,7 +10,8 @@ so.topic: reference
 
 Description of preference, multi-language parsed
 
-**Parameter:** 
+## Parameters
+
 * **description** String
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Default string value
 
-**Parameter:** 
+## Parameters
+
 * **defaultValue** String
 
 ```crmscript

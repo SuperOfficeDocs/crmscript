@@ -10,7 +10,8 @@ so.topic: reference
 
 The sender of the SMS messages. This text will appear on the recipient's mobile phone.
 
-**Parameter:** 
+## Parameters
+
 * **nsPluginSender** String
 
 ```crmscript

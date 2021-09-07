@@ -10,7 +10,8 @@ so.topic: reference
 
 When opening hours stop on Tuesdays. Only time-part is used.
 
-**Parameter:** 
+## Parameters
+
 * **tueStop** TimeSpan
 
 ```crmscript

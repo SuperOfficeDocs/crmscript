@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetMessenger(String[] messenger)
 
-**Parameter:** 
+## Parameters
+
 * **messenger** String[]
 
 ```crmscript

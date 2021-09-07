@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSTicketMessageEntity GetTicketMessageEntity(Integer ticketMessageEntityId);
 
-Gets a NSTicketMessageEntity object.
+Gets an NSTicketMessageEntity object.
 
 ## Parameters
 

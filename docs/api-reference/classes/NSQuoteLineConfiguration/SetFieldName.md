@@ -10,7 +10,8 @@ so.topic: reference
 
 The name of the field being configured, from data dictionary
 
-**Parameter:** 
+## Parameters
+
 * **fieldName** String
 
 ```crmscript

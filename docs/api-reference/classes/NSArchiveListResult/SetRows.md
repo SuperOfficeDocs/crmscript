@@ -10,7 +10,8 @@ so.topic: reference
 
 The actual rows, according to the paging info, of the result. See RowCount for a paging-independent count estimate
 
-**Parameter:** 
+## Parameters
+
 * **rows** NSArchiveListItem[]
 
 ```crmscript

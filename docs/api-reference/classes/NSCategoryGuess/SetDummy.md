@@ -10,7 +10,8 @@ so.topic: reference
 
 This carrier is currently not used
 
-**Parameter:** 
+## Parameters
+
 * **dummy** String
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Set the name of the NSBusiness item.
 
-**Parameter:** 
+## Parameters
+
 * **value** String NSBusiness name.
 
 ```crmscript

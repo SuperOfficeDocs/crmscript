@@ -10,7 +10,8 @@ so.topic: reference
 
 Is Sign Off functionality enabled?
 
-**Parameter:** 
+## Parameters
+
 * **signOff** Bool
 
 ```crmscript

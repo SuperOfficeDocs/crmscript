@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetInternetPhones(NSEntityElement[] internetPhones)
 
-**Parameter:** 
+## Parameters
+
 * **internetPhones** NSEntityElement[]
 
 ```crmscript

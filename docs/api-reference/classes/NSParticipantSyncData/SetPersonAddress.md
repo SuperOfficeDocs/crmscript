@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetPersonAddress(NSAddressSyncData personAddress)
 
-**Parameter:** 
+## Parameters
+
 * **personAddress** NSAddressSyncData
 
 ```crmscript

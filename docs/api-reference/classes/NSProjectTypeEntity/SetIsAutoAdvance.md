@@ -10,7 +10,8 @@ so.topic: reference
 
 Does the project status advance automatically, when the last guided activity in a status is completed?
 
-**Parameter:** 
+## Parameters
+
 * **isAutoAdvance** Bool
 
 ```crmscript

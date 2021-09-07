@@ -10,7 +10,8 @@ so.topic: reference
 
 True if you want to search for Departments where your colleagues work.
 
-**Parameter:** 
+## Parameters
+
 * **searchDepartment** Bool
 
 ```crmscript

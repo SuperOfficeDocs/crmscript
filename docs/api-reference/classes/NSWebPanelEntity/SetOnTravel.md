@@ -10,7 +10,8 @@ so.topic: reference
 
 Is the webpanel visible when user is on travel
 
-**Parameter:** 
+## Parameters
+
 * **onTravel** Bool
 
 ```crmscript

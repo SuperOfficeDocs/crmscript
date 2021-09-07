@@ -10,7 +10,8 @@ so.topic: reference
 
 Array of the controlinfos
 
-**Parameter:** 
+## Parameters
+
 * **controlInfos** NSControlInfo[]
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Set the name of the NSCredited item.
 
-**Parameter:** 
+## Parameters
+
 * **value** String NSCredited name.
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 The department of the contact connected to the appointment
 
-**Parameter:** 
+## Parameters
+
 * **contactDepartment** String
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Set the tooltip description for the NSDeliveryTerm list item.
 
-**Parameter:** 
+## Parameters
+
 * **tooltip** String NSDeliveryTerm tooltip description.
 
 ```crmscript

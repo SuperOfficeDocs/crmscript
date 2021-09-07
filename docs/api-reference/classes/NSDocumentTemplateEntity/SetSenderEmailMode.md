@@ -10,12 +10,13 @@ so.topic: reference
 
 If email template, when DocType is Privacy or quote email, it is possible to make sender address like our contact, or our support contact, or always one address
 
-**Parameter:** 
+## Parameters
+
 * **senderEmailMode** NSSenderMailMode
-* Enum: 0 = UseDefaultSender 
-* Enum: 1 = UseOurContact 
-* Enum: 2 = UseSupportContact 
-* Enum: 3 = UseLoggedInUser 
+* Enum: 0 = UseDefaultSender
+* Enum: 1 = UseOurContact
+* Enum: 2 = UseSupportContact
+* Enum: 3 = UseLoggedInUser
 
 ```crmscript
 NSDocumentTemplateEntity thing;

@@ -12,5 +12,7 @@ Change country regenerates the default values and localized information such as 
 
 ## Parameters
 
-* **contactEntity** 
-* **toCountryId** The country to switch to
+| Parameter | Type |Description |
+|---|---|---|
+| contactEntity | NSContactEntity | |
+| toCountryId | Integer | The country to switch to |

@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSErpSyncConnectorEntity GetErpSyncConnectorEntity(Integer erpSyncConnectorEntityId);
 
-Gets a NSErpSyncConnectorEntity object.
+Gets an NSErpSyncConnectorEntity object.
 
 ## Parameters
 

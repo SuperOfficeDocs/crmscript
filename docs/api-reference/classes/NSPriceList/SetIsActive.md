@@ -10,7 +10,8 @@ so.topic: reference
 
 Is the list active (as opposed to being worked on, suddenly canceled, etc.
 
-**Parameter:** 
+## Parameters
+
 * **isActive** Bool
 
 ```crmscript

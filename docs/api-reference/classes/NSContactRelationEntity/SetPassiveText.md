@@ -10,7 +10,8 @@ so.topic: reference
 
 Passive text for the relation.
 
-**Parameter:** 
+## Parameters
+
 * **passiveText** String
 
 ```crmscript

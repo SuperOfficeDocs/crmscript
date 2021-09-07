@@ -10,7 +10,8 @@ so.topic: reference
 
 Summed amount for all open sales with date before this period in default currency for the installation
 
-**Parameter:** 
+## Parameters
+
 * **previousOverdueTotalBaseCurrency** Float
 
 ```crmscript

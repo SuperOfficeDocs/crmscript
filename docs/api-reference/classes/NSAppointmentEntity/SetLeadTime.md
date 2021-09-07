@@ -10,7 +10,8 @@ so.topic: reference
 
 Time blocked (minutes) BEFORE starttime
 
-**Parameter:** 
+## Parameters
+
 * **leadTime** TimeSpan
 
 ```crmscript

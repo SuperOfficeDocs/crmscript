@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetUserGroupTooltip(String userGroupTooltip)
 
-**Parameter:** 
+## Parameters
+
 * **userGroupTooltip** String
 
 ```crmscript

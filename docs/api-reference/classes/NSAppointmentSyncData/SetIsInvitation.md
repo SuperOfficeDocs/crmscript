@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetIsInvitation(Bool isInvitation)
 
-**Parameter:** 
+## Parameters
+
 * **isInvitation** Bool
 
 ```crmscript

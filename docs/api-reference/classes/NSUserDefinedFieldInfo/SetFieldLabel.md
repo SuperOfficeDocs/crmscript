@@ -10,7 +10,8 @@ so.topic: reference
 
 The label (lead text)
 
-**Parameter:** 
+## Parameters
+
 * **fieldLabel** String
 
 ```crmscript

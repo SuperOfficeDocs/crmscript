@@ -10,7 +10,8 @@ so.topic: reference
 
 If something went wrong, show this message and do not continue
 
-**Parameter:** 
+## Parameters
+
 * **errorMessage** String
 
 ```crmscript

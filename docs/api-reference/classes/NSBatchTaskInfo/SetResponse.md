@@ -10,7 +10,8 @@ so.topic: reference
 
 Maps to the response field in the batchtask table.
 
-**Parameter:** 
+## Parameters
+
 * **response** String
 
 ```crmscript

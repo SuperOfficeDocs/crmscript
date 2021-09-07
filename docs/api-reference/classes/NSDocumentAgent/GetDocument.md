@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSDocument GetDocument(Integer documentId);
 
-Gets a NSDocument object.
+Gets an NSDocument object.
 
 ## Parameters
 

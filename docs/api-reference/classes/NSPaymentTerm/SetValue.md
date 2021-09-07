@@ -10,7 +10,8 @@ so.topic: reference
 
 Set the name of the NSPaymentTerm item.
 
-**Parameter:** 
+## Parameters
+
 * **value** String NSPaymentTerm name.
 
 ```crmscript

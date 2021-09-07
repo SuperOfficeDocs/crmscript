@@ -10,7 +10,8 @@ so.topic: reference
 
 If true disable the option of choose column
 
-**Parameter:** 
+## Parameters
+
 * **locked** Bool
 
 ```crmscript

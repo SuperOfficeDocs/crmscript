@@ -10,7 +10,8 @@ so.topic: reference
 
 Total number of messages in the folder
 
-**Parameter:** 
+## Parameters
+
 * **totalItems** Integer
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Information about the action for the update prices button.
 
-**Parameter:** 
+## Parameters
+
 * **updatePricesButton** QuoteVersionButtonState
 
 ```crmscript

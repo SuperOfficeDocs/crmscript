@@ -10,7 +10,8 @@ so.topic: reference
 
 Apply role category membership to users
 
-**Parameter:** 
+## Parameters
+
 * **useCategories** Integer
 
 ```crmscript

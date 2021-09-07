@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSProjectEntity GetProjectEntity(Integer projectEntityId);
 
-Gets a NSProjectEntity object.
+Gets an NSProjectEntity object.
 
 ## Parameters
 

@@ -10,7 +10,8 @@ so.topic: reference
 
 Summed amount for all open within the period in default currency for the installation
 
-**Parameter:** 
+## Parameters
+
 * **openTotalBaseCurrency** Float
 
 ```crmscript

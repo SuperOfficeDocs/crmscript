@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSTicketPriority GetTicketPriority(Integer ticketPriorityId);
 
-Gets a NSTicketPriority object.
+Gets an NSTicketPriority object.
 
 ## Parameters
 

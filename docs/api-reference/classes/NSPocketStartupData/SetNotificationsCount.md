@@ -10,7 +10,8 @@ so.topic: reference
 
 Number of new invitations
 
-**Parameter:** 
+## Parameters
+
 * **notificationsCount** Integer
 
 ```crmscript

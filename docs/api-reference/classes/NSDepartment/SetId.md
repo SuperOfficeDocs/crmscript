@@ -10,7 +10,8 @@ so.topic: reference
 
 Set the primary key (id) for the Department
 
-**Parameter:** 
+## Parameters
+
 * **id** Integer Department id.
 
 ```crmscript

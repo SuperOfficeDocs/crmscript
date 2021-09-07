@@ -10,7 +10,8 @@ so.topic: reference
 
 Chatbot name
 
-**Parameter:** 
+## Parameters
+
 * **botName** String
 
 ```crmscript

@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSChatSessionEntity GetChatSessionEntity(Integer chatSessionEntityId);
 
-Gets a NSChatSessionEntity object.
+Gets an NSChatSessionEntity object.
 
 ## Parameters
 

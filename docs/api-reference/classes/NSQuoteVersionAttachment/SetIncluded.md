@@ -10,7 +10,8 @@ so.topic: reference
 
 Will this attachment be included in the next 'Send Quote' operation
 
-**Parameter:** 
+## Parameters
+
 * **included** Bool
 
 ```crmscript

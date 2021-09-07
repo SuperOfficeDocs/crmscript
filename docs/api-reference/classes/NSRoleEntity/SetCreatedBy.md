@@ -10,7 +10,8 @@ so.topic: reference
 
 Created by user
 
-**Parameter:** 
+## Parameters
+
 * **createdBy** NSAssociate
 
 ```crmscript

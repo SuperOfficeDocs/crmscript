@@ -10,7 +10,8 @@ so.topic: reference
 
 NSAssociate that last looked at the selection members; only date (not time) is valid
 
-**Parameter:** 
+## Parameters
+
 * **lastLoadedByAssociate** NSAssociate
 
 ```crmscript

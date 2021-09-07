@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSQuote GetQuoteFromSaleId(Integer saleId)
 
-Get a NSQuote for a sale
+Get an NSQuote for a sale
 
 ## Parameters
 

@@ -10,7 +10,8 @@ so.topic: reference
 
 Checks if the person object is an associate. The property is read-only.
 
-**Parameter:** 
+## Parameters
+
 * **isAssociate** Bool
 
 ```crmscript

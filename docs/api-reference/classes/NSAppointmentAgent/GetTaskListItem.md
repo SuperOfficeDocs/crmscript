@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSTaskListItem GetTaskListItem(Integer taskListItemId);
 
-Gets a NSTaskListItem object.
+Gets an NSTaskListItem object.
 
 ## Parameters
 

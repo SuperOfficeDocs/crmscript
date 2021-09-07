@@ -12,8 +12,8 @@ Indicator that this document template has a functional role, related to privacy/
 
 **Returns:** NSDocTmplPrivacyType
 
-* Enum: 0 = None 
-* Enum: 1 = PersonRegistered 
+* Enum: 0 = None
+* Enum: 1 = PersonRegistered
 
 ```crmscript
 NSDocumentTemplateEntity thing;

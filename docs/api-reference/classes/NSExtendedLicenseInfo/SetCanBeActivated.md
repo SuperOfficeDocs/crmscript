@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetCanBeActivated(Bool canBeActivated)
 
-**Parameter:** 
+## Parameters
+
 * **canBeActivated** Bool
 
 ```crmscript

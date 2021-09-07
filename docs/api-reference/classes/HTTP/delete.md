@@ -14,7 +14,7 @@ Supports both http and https. Returns the result in a byte array.
 ## Example
 
     HTTP h;
-    
+   
     Byte[] b = h.delete("https://httpbin.org/delete");
     if (h.hasError())
       print(h.getErrorMessage());

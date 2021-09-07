@@ -8,7 +8,7 @@ so.topic: reference
 
 # Bool GetCompleted()
 
-The Completed state. 
+The Completed state.
 
 **Returns:** Bool
 

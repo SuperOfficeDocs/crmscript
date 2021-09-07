@@ -10,7 +10,8 @@ so.topic: reference
 
 Where the context should naviate afterwards
 
-**Parameter:** 
+## Parameters
+
 * **navigateTo** String
 
 ```crmscript

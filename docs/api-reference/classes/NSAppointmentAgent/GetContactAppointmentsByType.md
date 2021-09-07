@@ -17,18 +17,23 @@ Method that returns a specified number of appointments of a specific appointment
 * **endTime** The end of the time interval.
 * **count** The maximum number of appointments that should be returned. -1 means no count restrictions.
 * **appointmentType** The appointment type, e.g. inDiary, inChecklist etc.
-* Enum: 0 = Unknown 
-* Enum: 1 = inDiary 
-* Enum: 2 = inChecklist 
-* Enum: 3 = Note 
-* Enum: 4 = Document 
-* Enum: 5 = SavedReport 
-* Enum: 6 = BookingForDiary 
-* Enum: 7 = BookingForChecklist 
-* Enum: 8 = MergeDraft 
-* Enum: 9 = MergeFinal 
+
+### Enum: appointment type
+
+* 0 = Unknown
+* 1 = inDiary
+* 2 = inChecklist
+* 3 = Note
+* 4 = Document
+* 5 = SavedReport
+* 6 = BookingForDiary
+* 7 = BookingForChecklist
+* 8 = MergeDraft
+* 9 = MergeFinal
 
 **Returns:** NSAppointment[]
+
+## Example
 
 ```crmscript
 NSAppointmentAgent agent;
@@ -39,4 +44,3 @@ Integer count;
 Integer appointmentType;
 NSAppointment[] res = agent.GetContactAppointmentsByType(contactId, startTime, endTime, count, appointmentType);
 ```
-

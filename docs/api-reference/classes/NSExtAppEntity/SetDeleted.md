@@ -10,7 +10,8 @@ so.topic: reference
 
 True if the application is marked as deleted
 
-**Parameter:** 
+## Parameters
+
 * **deleted** Bool
 
 ```crmscript

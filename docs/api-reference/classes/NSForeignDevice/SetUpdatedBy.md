@@ -10,7 +10,8 @@ so.topic: reference
 
 The person that last updated this device.
 
-**Parameter:** 
+## Parameters
+
 * **updatedBy** String
 
 ```crmscript

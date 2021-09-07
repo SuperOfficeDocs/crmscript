@@ -8,7 +8,7 @@ so.topic: reference
 
 # Integer GetOpen()
 
-Number of all open within the period 
+Number of all open within the period
 
 **Returns:** Integer
 

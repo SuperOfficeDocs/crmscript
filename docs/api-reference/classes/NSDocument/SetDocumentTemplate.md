@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetDocumentTemplate(String documentTemplate)
 
-**Parameter:** 
+## Parameters
+
 * **documentTemplate** String
 
 ```crmscript

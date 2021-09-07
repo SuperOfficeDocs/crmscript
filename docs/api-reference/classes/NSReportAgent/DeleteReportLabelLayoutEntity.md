@@ -9,7 +9,7 @@ so.topic: reference
 # DeleteReportLabelLayoutEntity(Integer reportLabelLayoutEntity);
 
 Deletes the NSReportLabelLayoutEntity
-  
+ 
 * **ReportLabelLayoutEntityId** The identity of the ReportLabelLayoutEntity to delete.
 
 ```crmscript

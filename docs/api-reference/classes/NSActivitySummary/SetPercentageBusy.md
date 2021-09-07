@@ -10,7 +10,8 @@ so.topic: reference
 
 How much of the active work-day which is booked in appointments.
 
-**Parameter:** 
+## Parameters
+
 * **percentageBusy** Integer
 
 ```crmscript

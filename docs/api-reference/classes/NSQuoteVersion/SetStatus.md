@@ -10,12 +10,13 @@ so.topic: reference
 
 If there was a problem with for instance calculation, this field is set to warning or error.
 
-**Parameter:** 
+## Parameters
+
 * **status** Integer
-* Enum: 0 = Ok 
-* Enum: 1 = OkWithInfo 
-* Enum: 2 = Warning 
-* Enum: 3 = Error 
+* Enum: 0 = Ok
+* Enum: 1 = OkWithInfo
+* Enum: 2 = Warning
+* Enum: 3 = Error
 
 ```crmscript
 NSQuoteVersion thing;

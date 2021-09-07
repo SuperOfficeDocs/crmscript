@@ -10,7 +10,8 @@ so.topic: reference
 
 Description of type of product
 
-**Parameter:** 
+## Parameters
+
 * **productDescription** String
 
 ```crmscript

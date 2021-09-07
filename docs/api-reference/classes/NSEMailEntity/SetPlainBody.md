@@ -10,7 +10,8 @@ so.topic: reference
 
 Body formatted in plain text
 
-**Parameter:** 
+## Parameters
+
 * **plainBody** String
 
 ```crmscript

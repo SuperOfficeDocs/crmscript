@@ -10,7 +10,8 @@ so.topic: reference
 
 The projectId for the project this projectEvent belongs to
 
-**Parameter:** 
+## Parameters
+
 * **projectId** Integer
 
 ```crmscript

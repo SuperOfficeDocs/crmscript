@@ -10,7 +10,8 @@ so.topic: reference
 
 Contact ID of person or contact who is the sale stakeholder
 
-**Parameter:** 
+## Parameters
+
 * **contactId** Integer
 
 ```crmscript

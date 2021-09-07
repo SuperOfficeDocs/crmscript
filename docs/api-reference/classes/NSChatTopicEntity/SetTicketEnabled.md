@@ -10,7 +10,8 @@ so.topic: reference
 
 Enable ticket submission in offline mode
 
-**Parameter:** 
+## Parameters
+
 * **ticketEnabled** Bool
 
 ```crmscript

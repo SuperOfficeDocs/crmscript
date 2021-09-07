@@ -10,7 +10,8 @@ so.topic: reference
 
 Is this connection accessible to everyone?  If not, then the QuoteConnectionAccess table tells us who can access it.
 
-**Parameter:** 
+## Parameters
+
 * **allAccess** Bool
 
 ```crmscript

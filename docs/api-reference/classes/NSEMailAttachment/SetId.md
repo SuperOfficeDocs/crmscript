@@ -10,7 +10,8 @@ so.topic: reference
 
 Content-ID
 
-**Parameter:** 
+## Parameters
+
 * **id** String
 
 ```crmscript

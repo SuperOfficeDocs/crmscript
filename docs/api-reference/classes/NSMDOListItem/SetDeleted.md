@@ -10,7 +10,8 @@ so.topic: reference
 
 The deleted status of the ListItem
 
-**Parameter:** 
+## Parameters
+
 * **deleted** Bool
 
 ```crmscript

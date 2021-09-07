@@ -10,7 +10,8 @@ so.topic: reference
 
 Suggested 'header'
 
-**Parameter:** 
+## Parameters
+
 * **header** String
 
 ```crmscript

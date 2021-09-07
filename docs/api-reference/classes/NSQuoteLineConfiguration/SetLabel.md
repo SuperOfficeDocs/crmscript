@@ -10,7 +10,8 @@ so.topic: reference
 
 Label resource string.
 
-**Parameter:** 
+## Parameters
+
 * **label** String
 
 ```crmscript

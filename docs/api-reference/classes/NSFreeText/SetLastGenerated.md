@@ -10,7 +10,8 @@ so.topic: reference
 
 Last time search has been generated
 
-**Parameter:** 
+## Parameters
+
 * **lastGenerated** DateTime
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Person's business* usually blank. Use Contact.NSBusiness instead. Intended for use when individual persons are created. (i.e. when Person.Contact is blank)
 
-**Parameter:** 
+## Parameters
+
 * **business** NSBusiness
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Should the status be visualized (active) in the client
 
-**Parameter:** 
+## Parameters
+
 * **isVisual** Bool
 
 ```crmscript

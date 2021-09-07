@@ -10,7 +10,8 @@ so.topic: reference
 
 The list of groups to filter on
 
-**Parameter:** 
+## Parameters
+
 * **groupList** NSSelectableMDOListItem[]
 
 ```crmscript

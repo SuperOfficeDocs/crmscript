@@ -10,7 +10,8 @@ so.topic: reference
 
 X of origin, left edge of widget
 
-**Parameter:** 
+## Parameters
+
 * **leftX** Integer
 
 ```crmscript

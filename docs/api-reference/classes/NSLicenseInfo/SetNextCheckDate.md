@@ -10,7 +10,8 @@ so.topic: reference
 
 When should the system next check with the license issuer
 
-**Parameter:** 
+## Parameters
+
 * **nextCheckDate** DateTime
 
 ```crmscript

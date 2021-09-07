@@ -10,7 +10,8 @@ so.topic: reference
 
 True if all day event
 
-**Parameter:** 
+## Parameters
+
 * **isDefaultAlldayEvent** Bool
 
 ```crmscript

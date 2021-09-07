@@ -10,7 +10,8 @@ so.topic: reference
 
 The associate that owns this block
 
-**Parameter:** 
+## Parameters
+
 * **associateId** Integer
 
 ```crmscript

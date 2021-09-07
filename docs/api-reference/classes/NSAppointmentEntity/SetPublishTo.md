@@ -10,6 +10,7 @@ so.topic: reference
 
 Set the publish to date on NSAppointmentEntity. After this date the event is no longer visible.
 
-**Parameter:** 
+## Parameters
+
 * **publishTo** DateTime
 

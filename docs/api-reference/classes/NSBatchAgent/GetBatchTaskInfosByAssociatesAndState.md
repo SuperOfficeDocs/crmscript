@@ -14,16 +14,21 @@ Get an array of NSBatchTaskInfo for the provided associate id's and batch task s
 
 * **associateIds** Array of associate id's.
 * **state** The BatchTaskState to get batch tasks for.
-* Enum: 0 = Unknown 
-* Enum: 1 = New 
-* Enum: 2 = Aquired 
-* Enum: 3 = Started 
-* Enum: 4 = Succeeded 
-* Enum: 5 = Failed 
-* Enum: 6 = SucceededManualCleanup 
-* Enum: 99999 = All 
 
 **Returns:** NSBatchTaskInfo[]
+
+### Enum: BatchTaskState
+
+* 0 = Unknown
+* 1 = New
+* 2 = Aquired
+* 3 = Started
+* 4 = Succeeded
+* 5 = Failed
+* 6 = SucceededManualCleanup
+* 99999 = All
+
+## Example
 
 ```crmscript
 NSBatchAgent agent;
@@ -31,4 +36,3 @@ Integer[] associateIds;
 Integer state;
 NSBatchTaskInfo[] res = agent.GetBatchTaskInfosByAssociatesAndState(associateIds, state);
 ```
-

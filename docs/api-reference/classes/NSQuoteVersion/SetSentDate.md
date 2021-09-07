@@ -10,7 +10,8 @@ so.topic: reference
 
 The date the version was sent to the customer.
 
-**Parameter:** 
+## Parameters
+
 * **sentDate** DateTime
 
 ```crmscript

@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSBusiness GetBusiness(Integer businessId);
 
-Gets a NSBusiness object.
+Gets an NSBusiness object.
 
 ## Parameters
 

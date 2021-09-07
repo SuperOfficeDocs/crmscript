@@ -10,7 +10,8 @@ so.topic: reference
 
 The CRMscript code for this event handler
 
-**Parameter:** 
+## Parameters
+
 * **source** String
 
 ```crmscript

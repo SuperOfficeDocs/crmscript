@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSRecipientStatistics GetRecipientStatisticsFromProjectMembers(Integer projectId)
 
-Returns a NSRecipientStatistics object with a count of addresses, emailaddresses and emailaddresses based on members in a project.
+Returns an NSRecipientStatistics object with a count of addresses, emailaddresses and emailaddresses based on members in a project.
 
 ## Parameters
 

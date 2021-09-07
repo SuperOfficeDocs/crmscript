@@ -10,7 +10,8 @@ so.topic: reference
 
 Account Id
 
-**Parameter:** 
+## Parameters
+
 * **accountId** Integer
 
 ```crmscript

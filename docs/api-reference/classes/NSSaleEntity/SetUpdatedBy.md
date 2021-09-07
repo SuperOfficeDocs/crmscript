@@ -10,7 +10,8 @@ so.topic: reference
 
 Who updated the sale
 
-**Parameter:** 
+## Parameters
+
 * **updatedBy** NSAssociate
 
 ```crmscript

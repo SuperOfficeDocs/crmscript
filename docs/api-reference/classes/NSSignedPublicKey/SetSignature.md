@@ -10,7 +10,8 @@ so.topic: reference
 
 Signature* Base64 encoded value
 
-**Parameter:** 
+## Parameters
+
 * **signature** String
 
 ```crmscript

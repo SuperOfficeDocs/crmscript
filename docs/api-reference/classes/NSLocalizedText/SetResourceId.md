@@ -10,7 +10,8 @@ so.topic: reference
 
 Resource ID
 
-**Parameter:** 
+## Parameters
+
 * **resourceId** Integer
 
 ```crmscript

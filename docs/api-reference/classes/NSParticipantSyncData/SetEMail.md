@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetEMail(String[] eMail)
 
-**Parameter:** 
+## Parameters
+
 * **eMail** String[]
 
 ```crmscript

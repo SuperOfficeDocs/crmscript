@@ -13,7 +13,7 @@ This class represent invoice entries. You will be able to create new or modify e
 ## Example
 
     InvoiceEntry i;
-    
+   
     i.setValue("description", "test");
     i.setValue("quantity", "1");
     i.setValue("pricePrUnit", "700");

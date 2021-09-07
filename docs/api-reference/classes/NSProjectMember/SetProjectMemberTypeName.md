@@ -10,7 +10,8 @@ so.topic: reference
 
 The projectmembers type name: 'secretary', 'member', etc.
 
-**Parameter:** 
+## Parameters
+
 * **projectMemberTypeName** String
 
 ```crmscript

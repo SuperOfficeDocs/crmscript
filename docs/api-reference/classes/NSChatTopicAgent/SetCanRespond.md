@@ -10,7 +10,8 @@ so.topic: reference
 
 True if the user can respond to chats in this topic
 
-**Parameter:** 
+## Parameters
+
 * **canRespond** Bool
 
 ```crmscript

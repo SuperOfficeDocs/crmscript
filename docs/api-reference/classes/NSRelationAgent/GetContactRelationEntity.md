@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSContactRelationEntity GetContactRelationEntity(Integer contactRelationEntityId);
 
-Gets a NSContactRelationEntity object.
+Gets an NSContactRelationEntity object.
 
 ## Parameters
 

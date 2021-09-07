@@ -8,14 +8,18 @@ so.topic: reference
 
 # NSHistory[] SaveHistories(String historyName, NSHistory[] history)
 
-Replaces the existing history-list for the currently logged in user. All elements must belong to the same history list. If not they are ignored.
+Replaces the existing history-list for the currently logged-in user. All elements must belong to the same history list. If not they are ignored.
+
+**Returns:** NSHistory[]
 
 ## Parameters
 
-* **historyName** 
-* **history** Array of new history items to save.
+| Parameter | Type | Description |
+|---|---|---|
+| historyName | String | |
+| history | NSHistory[] | Array of new history items to save. |
 
-**Returns:** NSHistory[]
+## Example
 
 ```crmscript
 NSViewStateAgent agent;
@@ -23,4 +27,3 @@ String historyName;
 NSHistory[] history;
 NSHistory[] res = agent.SaveHistories(historyName, history);
 ```
-

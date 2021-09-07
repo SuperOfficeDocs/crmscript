@@ -10,7 +10,8 @@ so.topic: reference
 
 A field for a long description of this template
 
-**Parameter:** 
+## Parameters
+
 * **longDescription** String
 
 ```crmscript

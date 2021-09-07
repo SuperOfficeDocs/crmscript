@@ -10,7 +10,8 @@ so.topic: reference
 
 True if this field is displayed in search result
 
-**Parameter:** 
+## Parameters
+
 * **showInSearch** Bool
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Owning person record
 
-**Parameter:** 
+## Parameters
+
 * **personId** Integer
 
 ```crmscript

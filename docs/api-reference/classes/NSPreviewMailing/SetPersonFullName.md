@@ -8,9 +8,10 @@ so.topic: reference
 
 # SetPersonFullName(String personFullName)
 
-Get the persons full name (internal name used in clients for employees). 
+Get the persons full name (internal name used in clients for employees).
 
-**Parameter:** 
+## Parameters
+
 * **personFullName** String
 
 ```crmscript

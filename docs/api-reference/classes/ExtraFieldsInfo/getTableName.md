@@ -12,11 +12,11 @@ so.topic: reference
 This function returns the name of the table the current field belongs to.
 
 ## Example
-    
+   
     ExtraFieldsInfo e;
-    
+   
     e.getExtraFields("person");
     print(e.TableName());
-    
+   
     Will print "person".
 

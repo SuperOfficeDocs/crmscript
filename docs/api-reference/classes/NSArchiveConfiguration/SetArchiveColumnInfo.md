@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetArchiveColumnInfo(NSArchiveColumnInfo[] archiveColumnInfo)
 
-**Parameter:** 
+## Parameters
+
 * **archiveColumnInfo** NSArchiveColumnInfo[]
 
 ```crmscript

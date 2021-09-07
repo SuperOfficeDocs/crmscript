@@ -10,7 +10,8 @@ so.topic: reference
 
 Red letter day texts for other countries than the associates' own country
 
-**Parameter:** 
+## Parameters
+
 * **otherCountryDayTexts** String[]
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Parent project* the project this project member belongs to.
 
-**Parameter:** 
+## Parameters
+
 * **projectId** Integer
 
 ```crmscript

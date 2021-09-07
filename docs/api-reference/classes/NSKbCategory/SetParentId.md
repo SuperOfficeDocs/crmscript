@@ -10,7 +10,8 @@ so.topic: reference
 
 This entry contains a reference to the parent category. NULL or -1 if this is a toplevel category.
 
-**Parameter:** 
+## Parameters
+
 * **parentId** Integer
 
 ```crmscript

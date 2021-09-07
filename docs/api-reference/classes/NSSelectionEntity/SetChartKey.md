@@ -10,7 +10,8 @@ so.topic: reference
 
 ID/key of the last-used chart tile on this selection
 
-**Parameter:** 
+## Parameters
+
 * **chartKey** String
 
 ```crmscript

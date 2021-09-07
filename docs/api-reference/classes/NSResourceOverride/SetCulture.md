@@ -10,7 +10,8 @@ so.topic: reference
 
 .NET-style culture code, such as NB-NO or EN-UK
 
-**Parameter:** 
+## Parameters
+
 * **culture** String
 
 ```crmscript

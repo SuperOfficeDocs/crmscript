@@ -10,7 +10,8 @@ so.topic: reference
 
 Content, or body, of the message.
 
-**Parameter:** 
+## Parameters
+
 * **content** String
 
 ```crmscript

@@ -8,7 +8,7 @@ so.topic: reference
 
 # Void SaveRestrictionsWithContext(String storageType, String providerName, String storageKey, NSArchiveRestrictionInfo[] restrictions, String context)
 
-Save an array of restrictions for later use as search criteria (including as dynamic selection and Find). 
+Save an array of restrictions for later use as search criteria (including as dynamic selection and Find).
 
 ## Parameters
 

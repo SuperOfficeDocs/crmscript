@@ -10,7 +10,8 @@ so.topic: reference
 
 Alarm lead time.
 
-**Parameter:** 
+## Parameters
+
 * **alarmLeadTime** TimeSpan
 
 ```crmscript

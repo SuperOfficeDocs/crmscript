@@ -10,14 +10,15 @@ so.topic: reference
 
 The state of the Sale: Open / Sold / Lost / Stalled
 
-**Parameter:** 
+## Parameters
+
 * **status** Integer
-* Enum: 0 = Unknown 
-* Enum: 1 = Open 
-* Enum: 2 = Sold 
-* Enum: 3 = Lost 
-* Enum: 4 = Stalled 
-* Enum: 1000 = SaintAll 
+* Enum: 0 = Unknown
+* Enum: 1 = Open
+* Enum: 2 = Sold
+* Enum: 3 = Lost
+* Enum: 4 = Stalled
+* Enum: 1000 = SaintAll
 
 ```crmscript
 NSSaleEntity thing;

@@ -10,7 +10,8 @@ so.topic: reference
 
 Array of column definitions
 
-**Parameter:** 
+## Parameters
+
 * **columnInfos** NSImportColumnInfo[]
 
 ```crmscript

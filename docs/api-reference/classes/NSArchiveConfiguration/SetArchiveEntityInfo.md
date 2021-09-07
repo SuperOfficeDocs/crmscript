@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetArchiveEntityInfo(NSSelectableMDOListItem[] archiveEntityInfo)
 
-**Parameter:** 
+## Parameters
+
 * **archiveEntityInfo** NSSelectableMDOListItem[]
 
 ```crmscript

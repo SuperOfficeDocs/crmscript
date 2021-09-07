@@ -10,7 +10,8 @@ so.topic: reference
 
 An array containing the tags assigned to this request
 
-**Parameter:** 
+## Parameters
+
 * **tags** Tag[]
 
 ```crmscript

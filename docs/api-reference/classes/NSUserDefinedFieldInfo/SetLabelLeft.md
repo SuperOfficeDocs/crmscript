@@ -10,7 +10,8 @@ so.topic: reference
 
 X pixel coordinate of label
 
-**Parameter:** 
+## Parameters
+
 * **labelLeft** Integer
 
 ```crmscript

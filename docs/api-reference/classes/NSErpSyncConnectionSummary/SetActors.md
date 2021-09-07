@@ -10,7 +10,8 @@ so.topic: reference
 
 Summaries of the configuration of the actors configured for this connection
 
-**Parameter:** 
+## Parameters
+
 * **actors** NSErpSyncActorSummary[]
 
 ```crmscript

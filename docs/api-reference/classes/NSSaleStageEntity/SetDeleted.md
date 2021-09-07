@@ -10,7 +10,8 @@ so.topic: reference
 
 If true, the Sale stage is deleted
 
-**Parameter:** 
+## Parameters
+
 * **deleted** Bool
 
 ```crmscript

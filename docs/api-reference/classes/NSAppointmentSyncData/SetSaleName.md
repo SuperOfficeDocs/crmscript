@@ -10,7 +10,8 @@ so.topic: reference
 
 Sale heading (short description?)
 
-**Parameter:** 
+## Parameters
+
 * **saleName** String
 
 ```crmscript

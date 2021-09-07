@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetGrantedLicenses(String[] grantedLicenses)
 
-**Parameter:** 
+## Parameters
+
 * **grantedLicenses** String[]
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Quote alternative id
 
-**Parameter:** 
+## Parameters
+
 * **quoteAlternativeId** Integer
 
 ```crmscript

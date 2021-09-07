@@ -10,7 +10,8 @@ so.topic: reference
 
 The sale's owner
 
-**Parameter:** 
+## Parameters
+
 * **associateFullName** String
 
 ```crmscript

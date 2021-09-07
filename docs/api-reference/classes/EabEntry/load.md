@@ -18,7 +18,7 @@ Load an entry from the address book with the specified id. Returns true if load 
 ## Example
 
     EabEntry eab;
-    
+   
     Bool b = eab.load(15);
     print(b.toString());
 

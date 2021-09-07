@@ -10,7 +10,8 @@ so.topic: reference
 
 The associate who archived this email
 
-**Parameter:** 
+## Parameters
+
 * **archivedBy** Integer
 
 ```crmscript

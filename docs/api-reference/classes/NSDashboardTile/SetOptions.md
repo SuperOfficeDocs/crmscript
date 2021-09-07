@@ -10,7 +10,8 @@ so.topic: reference
 
 The tile options
 
-**Parameter:** 
+## Parameters
+
 * **options** NSDashboardTileOption[]
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Should this appointment be auto-suggested
 
-**Parameter:** 
+## Parameters
+
 * **autoSuggest** Integer
 
 ```crmscript

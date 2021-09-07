@@ -10,7 +10,8 @@ so.topic: reference
 
 Text used in passive direction
 
-**Parameter:** 
+## Parameters
+
 * **passiveText** String
 
 ```crmscript

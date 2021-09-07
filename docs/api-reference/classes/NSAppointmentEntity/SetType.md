@@ -10,22 +10,27 @@ so.topic: reference
 
 The different types of appointment, if the appointment is supposed to be shown in the diary or checklist, or if it's a document. See the different types of appointments in the database manual.
 
-**Parameter:** 
+## Parameters
+
 * **type** Integer
-* Enum: 0 = Unknown 
-* Enum: 1 = inDiary 
-* Enum: 2 = inChecklist 
-* Enum: 3 = Note 
-* Enum: 4 = Document 
-* Enum: 5 = SavedReport 
-* Enum: 6 = BookingForDiary 
-* Enum: 7 = BookingForChecklist 
-* Enum: 8 = MergeDraft 
-* Enum: 9 = MergeFinal 
+
+### Enum: appointment type
+
+* 0 = Unknown
+* 1 = inDiary
+* 2 = inChecklist
+* 3 = Note
+* 4 = Document
+* 5 = SavedReport
+* 6 = BookingForDiary
+* 7 = BookingForChecklist
+* 8 = MergeDraft
+* 9 = MergeFinal
+
+## Example
 
 ```crmscript
 NSAppointmentEntity thing;
 Integer type;
 thing.SetType(type);
 ```
-

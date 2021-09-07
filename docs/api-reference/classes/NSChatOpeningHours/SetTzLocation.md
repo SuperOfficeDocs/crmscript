@@ -10,7 +10,8 @@ so.topic: reference
 
 Timezone used for the opening hours (start/stop times) for this topic.
 
-**Parameter:** 
+## Parameters
+
 * **tzLocation** NSTimeZoneData
 
 ```crmscript

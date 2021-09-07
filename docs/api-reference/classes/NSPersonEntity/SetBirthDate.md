@@ -10,7 +10,8 @@ so.topic: reference
 
 The Person birth date as Date
 
-**Parameter:** 
+## Parameters
+
 * **birthDate** DateTime
 
 ```crmscript

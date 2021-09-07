@@ -10,7 +10,8 @@ so.topic: reference
 
 Tooltip for this consent source
 
-**Parameter:** 
+## Parameters
+
 * **tooltip** String
 
 ```crmscript

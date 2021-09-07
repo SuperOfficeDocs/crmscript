@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSTriggerScriptEntity GetTriggerScriptEntity(Integer triggerScriptEntityId);
 
-Gets a NSTriggerScriptEntity object.
+Gets an NSTriggerScriptEntity object.
 
 ## Parameters
 

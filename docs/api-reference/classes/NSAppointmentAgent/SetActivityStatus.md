@@ -14,7 +14,10 @@ Sets the completed status for an array of activities. The string activityIdentif
 
 * **activityIdentifier** Array of activity ids. ex. appointment_id=666
 * **activityStatus** The status to set the activities
-* Enum: 0 = Unknown 
-* Enum: 1 = NotStarted 
-* Enum: 2 = Started 
-* Enum: 3 = Completed 
+
+### Enum: activityStatus
+
+* 0 = Unknown
+* 1 = NotStarted
+* 2 = Started
+* 3 = Completed

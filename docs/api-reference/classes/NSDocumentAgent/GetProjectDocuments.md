@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSDocument[] GetProjectDocuments(Integer projectId, DateTime startTime, DateTime endTime, Integer count)
 
-Method that returns a specified number of document appointments within a time range. The document appointments belong to the project specified. 
+Method that returns a specified number of document appointments within a time range. The document appointments belong to the project specified.
 
 ## Parameters
 

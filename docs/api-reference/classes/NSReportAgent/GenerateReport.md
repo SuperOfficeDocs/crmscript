@@ -14,7 +14,7 @@ Generates the report in PDF format
 * **labelLayoutId** The id of the labellayout. Use 0 if the report isn't of type label.
 * **filename** Filename of the report.
 * **language** Language to use when generating the report.
-* **fileType** 
+* **fileType**
 * **restrictions** Use restrictions to provide additional restrictions when generating the report.
 
 **Returns:** String

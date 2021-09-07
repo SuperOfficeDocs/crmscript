@@ -18,5 +18,5 @@ A NULL/NUL/NIL Integer is different from zero, in that it is conceptually withou
 
     Integer i = 3;
     print(i.isNull().toString());
-    
+   
     Prints false.

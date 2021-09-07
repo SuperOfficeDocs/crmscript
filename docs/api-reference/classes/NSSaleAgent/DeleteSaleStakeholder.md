@@ -9,7 +9,7 @@ so.topic: reference
 # DeleteSaleStakeholder(Integer saleStakeholder);
 
 Deletes the NSSaleStakeholder
-  
+ 
 ## Parameters
 
 * **saleStakeholderId** The identity of the NSSaleStakeholder to delete.

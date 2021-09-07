@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSSale GetSale(Integer saleId);
 
-Gets a NSSale object.
+Gets an NSSale object.
 
 ## Parameters
 

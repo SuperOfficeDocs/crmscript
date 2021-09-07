@@ -10,7 +10,8 @@ so.topic: reference
 
 When opening hours stop on Saturdays. Only time-part is used.
 
-**Parameter:** 
+## Parameters
+
 * **satStop** TimeSpan
 
 ```crmscript

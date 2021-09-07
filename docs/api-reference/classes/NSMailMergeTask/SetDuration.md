@@ -10,7 +10,8 @@ so.topic: reference
 
 Duration of task
 
-**Parameter:** 
+## Parameters
+
 * **duration** Integer
 
 ```crmscript

@@ -14,7 +14,7 @@ Save the chat presence for specified users
 
 * **chatPresence** An array with NSChatPresence objects. Only the UserId and Present information is used while saving
 
-**Returns:** 
+**Returns:**
 
 ```crmscript
 NSChatAgent agent;

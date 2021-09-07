@@ -10,7 +10,8 @@ so.topic: reference
 
 The SM document used as template for this mailing
 
-**Parameter:** 
+## Parameters
+
 * **documentMessage** Integer
 
 ```crmscript

@@ -10,15 +10,18 @@ so.topic: reference
 
 Returns an array of all the contact persons for the company card.
 
+**Returns:** NSPerson[]
+
 ## Parameters
 
-* **contactId** 
+| Parameter | Type | Description |
+|---|---|---|
+| contactId | Integer | |
 
-**Returns:** NSPerson[]
+## Example
 
 ```crmscript
 NSContactAgent agent;
 Integer contactId;
 NSPerson[] res = agent.GetPersons(contactId);
 ```
-

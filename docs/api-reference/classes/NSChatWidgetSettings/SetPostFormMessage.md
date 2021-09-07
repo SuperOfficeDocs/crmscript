@@ -10,7 +10,8 @@ so.topic: reference
 
 Message text to show in post chat form
 
-**Parameter:** 
+## Parameters
+
 * **postFormMessage** String
 
 ```crmscript

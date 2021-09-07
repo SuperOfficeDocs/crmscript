@@ -10,7 +10,8 @@ so.topic: reference
 
 The user is waiting for an administrator to approve/grant her/him access.
 
-**Parameter:** 
+## Parameters
+
 * **waitingForApproval** Bool
 
 ```crmscript

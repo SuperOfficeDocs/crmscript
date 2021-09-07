@@ -9,7 +9,7 @@ so.topic: reference
 # DeleteShipmentMessageBlockEntity(Integer shipmentMessageBlockEntity);
 
 Deletes the NSShipmentMessageBlockEntity
-  
+ 
 ## Parameters
 
 * **shipmentMessageBlockEntityId** The identity of the NSShipmentMessageBlockEntity to delete.

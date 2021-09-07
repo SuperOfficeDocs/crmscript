@@ -10,7 +10,8 @@ so.topic: reference
 
 Blob id that contains logo image
 
-**Parameter:** 
+## Parameters
+
 * **logoBlobId** Integer
 
 ```crmscript

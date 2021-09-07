@@ -10,7 +10,8 @@ so.topic: reference
 
 Does the webpanel have a status bar
 
-**Parameter:** 
+## Parameters
+
 * **showInStatusBar** Bool
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Indicates if this list should use groups and headings
 
-**Parameter:** 
+## Parameters
+
 * **useGroupsAndHeadings** Bool
 
 ```crmscript

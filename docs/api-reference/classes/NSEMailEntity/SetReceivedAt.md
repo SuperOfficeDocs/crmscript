@@ -10,7 +10,8 @@ so.topic: reference
 
 Received date time
 
-**Parameter:** 
+## Parameters
+
 * **receivedAt** DateTime
 
 ```crmscript

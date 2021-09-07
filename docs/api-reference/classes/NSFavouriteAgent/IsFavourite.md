@@ -10,10 +10,12 @@ so.topic: reference
 
 Checks if a record in a table is a favourite for an associate
 
+**Returns:** Bool
+
 ## Parameters
 
-* **tableName** Table name, transformed to and from numeric table id by the service layer.
-* **recordId** 
-* **associateId** 
-
-**Returns:** Bool
+| Parameter | Type | Description |
+|---|---|---|
+| tableName | String | Table name, transformed to and from numeric table id by the service layer. |
+| recordId | Integer | |
+| associateId | Integer | |

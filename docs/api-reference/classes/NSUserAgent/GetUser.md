@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSUser GetUser(Integer userId);
 
-Gets a NSUser object.
+Gets an NSUser object.
 
 ## Parameters
 

@@ -10,7 +10,8 @@ so.topic: reference
 
 Label for the field
 
-**Parameter:** 
+## Parameters
+
 * **name** String
 
 ```crmscript

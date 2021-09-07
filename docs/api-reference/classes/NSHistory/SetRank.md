@@ -10,7 +10,8 @@ so.topic: reference
 
 Sort order, indexed so it can used for sorting in the query
 
-**Parameter:** 
+## Parameters
+
 * **rank** Integer
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Does the webpanel have a toolbar
 
-**Parameter:** 
+## Parameters
+
 * **showInToolBar** Bool
 
 ```crmscript

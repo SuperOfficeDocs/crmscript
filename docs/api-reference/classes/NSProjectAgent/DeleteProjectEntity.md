@@ -9,7 +9,7 @@ so.topic: reference
 # DeleteProjectEntity(Integer projectEntity);
 
 Deletes the NSProjectEntity
-  
+ 
 ## Parameters
 
 * **projectEntityId** The identity of the ProjectEntity to delete.

@@ -10,7 +10,8 @@ so.topic: reference
 
 Should we save a reference to the merge document on each recipient.
 
-**Parameter:** 
+## Parameters
+
 * **saveDocument** Bool
 
 ```crmscript

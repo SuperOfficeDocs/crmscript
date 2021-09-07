@@ -10,7 +10,8 @@ so.topic: reference
 
 Category of sale type, copied to sale
 
-**Parameter:** 
+## Parameters
+
 * **saleTypeCatId** Integer
 
 ```crmscript

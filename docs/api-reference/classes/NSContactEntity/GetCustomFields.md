@@ -8,7 +8,7 @@ so.topic: reference
 
 # Map GetCustomFields()
 
-Get the user-defined + extra fields on a NSContactEntity as a map.
+Get the user-defined + extra fields on an NSContactEntity as a map.
 
 **Returns:** Map
 

@@ -10,7 +10,8 @@ so.topic: reference
 
 Type identity to set on task
 
-**Parameter:** 
+## Parameters
+
 * **typeId** Integer
 
 ```crmscript

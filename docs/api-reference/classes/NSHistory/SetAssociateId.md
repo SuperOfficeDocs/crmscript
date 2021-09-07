@@ -10,7 +10,8 @@ so.topic: reference
 
 Owner of history list
 
-**Parameter:** 
+## Parameters
+
 * **associateId** Integer
 
 ```crmscript

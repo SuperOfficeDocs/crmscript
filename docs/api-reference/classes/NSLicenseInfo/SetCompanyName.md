@@ -10,7 +10,8 @@ so.topic: reference
 
 Name of the database owner company.
 
-**Parameter:** 
+## Parameters
+
 * **companyName** String
 
 ```crmscript

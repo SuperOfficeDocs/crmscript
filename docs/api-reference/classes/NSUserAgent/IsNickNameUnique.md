@@ -8,9 +8,11 @@ so.topic: reference
 
 # Bool IsNickNameUnique(Integer associateId, String nickName)
 
+**Returns:** Bool
+
 ## Parameters
 
-* **associateId** 
-* **nickName** 
-
-**Returns:** Bool
+| Parameter | Type | Description |
+|---|---|---|
+| associateId | Integer | |
+| nickName | String | |

@@ -10,7 +10,8 @@ so.topic: reference
 
 The tool-tip to use in the user interface (on the tab, for instance).
 
-**Parameter:** 
+## Parameters
+
 * **description** String
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 The author of the message.
 
-**Parameter:** 
+## Parameters
+
 * **author** String
 
 ```crmscript

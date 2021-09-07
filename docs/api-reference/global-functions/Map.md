@@ -48,7 +48,7 @@ Map m = Map(t);
 The constructor also supports multiple-line values. For example:
 
 ```crmscript
-String t = 
+String t =
 "1=first
 2=second
 3=third";

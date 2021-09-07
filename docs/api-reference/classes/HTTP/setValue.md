@@ -19,7 +19,7 @@ This function add a cgi variable and its according value to the HTTP request.
 ## Example
 
     HTTP h;
-    
+   
     h.addHeader("header", "test");
     h.setValue("key", "value");
     h.setValue("key2", "value2");

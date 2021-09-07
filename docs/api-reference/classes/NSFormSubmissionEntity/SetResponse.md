@@ -10,7 +10,8 @@ so.topic: reference
 
 The JSON-formatted response from this form
 
-**Parameter:** 
+## Parameters
+
 * **response** String
 
 ```crmscript

@@ -8,9 +8,10 @@ so.topic: reference
 
 # SetFutureOpenWeightedOwnCurrency(Float futureOpenWeightedOwnCurrency)
 
-Weighted sum for all Future Pipe/All open sales with date after the period in default currency for the current user 
+Weighted sum for all Future Pipe/All open sales with date after the period in default currency for the current user
 
-**Parameter:** 
+## Parameters
+
 * **futureOpenWeightedOwnCurrency** Float
 
 ```crmscript

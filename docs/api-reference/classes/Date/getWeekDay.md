@@ -15,6 +15,6 @@ This function will return the ISO weekday (Monday is 0).
 ## Example
 
     Date d;
-    
+   
     String s = d.getWeekDay().toString();
     print(s); 4

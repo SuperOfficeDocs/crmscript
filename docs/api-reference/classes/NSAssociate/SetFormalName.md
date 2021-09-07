@@ -10,7 +10,8 @@ so.topic: reference
 
 The associate's culture formatted formalname (firstname, middleName and lastname, title, mrmrs)
 
-**Parameter:** 
+## Parameters
+
 * **formalName** String
 
 ```crmscript

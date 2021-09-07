@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSLegalBase GetLegalBase(Integer legalBaseId);
 
-Gets a NSLegalBase object.
+Gets an NSLegalBase object.
 
 ## Parameters
 

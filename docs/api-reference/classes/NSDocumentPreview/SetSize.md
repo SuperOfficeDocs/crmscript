@@ -10,7 +10,8 @@ so.topic: reference
 
 Size of the stream
 
-**Parameter:** 
+## Parameters
+
 * **size** Integer
 
 ```crmscript

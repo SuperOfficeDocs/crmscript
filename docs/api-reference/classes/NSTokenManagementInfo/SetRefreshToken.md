@@ -10,7 +10,8 @@ so.topic: reference
 
 Refresh token
 
-**Parameter:** 
+## Parameters
+
 * **refreshToken** String
 
 ```crmscript

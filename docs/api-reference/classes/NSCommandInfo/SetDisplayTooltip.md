@@ -10,7 +10,8 @@ so.topic: reference
 
 Tooltip string associate with the command* can be a literal or a tooltip hint.
 
-**Parameter:** 
+## Parameters
+
 * **displayTooltip** String
 
 ```crmscript

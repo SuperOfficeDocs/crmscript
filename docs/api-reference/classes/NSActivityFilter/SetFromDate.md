@@ -10,7 +10,8 @@ so.topic: reference
 
 The filtering From date
 
-**Parameter:** 
+## Parameters
+
 * **fromDate** DateTime
 
 ```crmscript

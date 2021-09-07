@@ -10,7 +10,8 @@ so.topic: reference
 
 Enable automatic FAQ suggestions
 
-**Parameter:** 
+## Parameters
+
 * **autoFaqEnabled** Bool
 
 ```crmscript

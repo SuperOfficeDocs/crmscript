@@ -10,7 +10,8 @@ so.topic: reference
 
 Id of the associate who owns this dashboard
 
-**Parameter:** 
+## Parameters
+
 * **associateId** Integer
 
 ```crmscript

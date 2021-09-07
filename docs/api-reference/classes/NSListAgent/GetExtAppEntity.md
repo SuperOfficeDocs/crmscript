@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSExtAppEntity GetExtAppEntity(Integer extAppEntityId);
 
-Gets a NSExtAppEntity object.
+Gets an NSExtAppEntity object.
 
 ## Parameters
 

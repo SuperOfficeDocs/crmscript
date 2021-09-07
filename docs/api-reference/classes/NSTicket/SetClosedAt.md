@@ -10,7 +10,8 @@ so.topic: reference
 
 When the ticket was closed.
 
-**Parameter:** 
+## Parameters
+
 * **closedAt** DateTime
 
 ```crmscript

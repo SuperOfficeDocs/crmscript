@@ -10,7 +10,8 @@ so.topic: reference
 
 The legal base
 
-**Parameter:** 
+## Parameters
+
 * **legalBase** NSLegalBase
 
 ```crmscript

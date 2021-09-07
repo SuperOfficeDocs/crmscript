@@ -9,7 +9,7 @@ so.topic: reference
 # DeleteContactEntity(Integer contactEntity);
 
 Deletes the NSContactEntity
-  
+ 
 ## Parameters
 
 * **contactEntityId** The identity of the NSContactEntity to delete.

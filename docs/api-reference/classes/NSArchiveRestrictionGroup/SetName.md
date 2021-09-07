@@ -10,7 +10,8 @@ so.topic: reference
 
 The name of this criteria group
 
-**Parameter:** 
+## Parameters
+
 * **name** String
 
 ```crmscript

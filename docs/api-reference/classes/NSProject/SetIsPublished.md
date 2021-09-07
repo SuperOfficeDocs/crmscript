@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetIsPublished(Bool isPublished)
 
-**Parameter:** 
+## Parameters
+
 * **isPublished** Bool
 
 ```crmscript

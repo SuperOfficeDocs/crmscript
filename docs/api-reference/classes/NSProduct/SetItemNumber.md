@@ -8,9 +8,10 @@ so.topic: reference
 
 # SetItemNumber(String itemNumber)
 
-Line item number, NOR: «Postnummer». Specific numbers from some hierarchy, for instance “1.4.3.2P”. Typically used to sort the items in the quote by some standard way.
+Line item number, NOR: «Postnummer». Specific numbers from some hierarchy, for instance "1.4.3.2P". Typically used to sort the items in the quote by some standard way.
 
-**Parameter:** 
+## Parameters
+
 * **itemNumber** String
 
 ```crmscript

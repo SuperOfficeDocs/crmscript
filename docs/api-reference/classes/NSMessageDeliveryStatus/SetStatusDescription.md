@@ -10,7 +10,8 @@ so.topic: reference
 
 String describing the current message status.
 
-**Parameter:** 
+## Parameters
+
 * **statusDescription** String
 
 ```crmscript

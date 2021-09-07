@@ -10,7 +10,8 @@ so.topic: reference
 
 Code associated with location
 
-**Parameter:** 
+## Parameters
+
 * **tZLocationCode** String
 
 ```crmscript

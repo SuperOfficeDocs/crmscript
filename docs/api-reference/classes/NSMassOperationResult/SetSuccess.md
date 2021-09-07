@@ -10,7 +10,8 @@ so.topic: reference
 
 Did the operation succeed
 
-**Parameter:** 
+## Parameters
+
 * **success** Bool
 
 ```crmscript

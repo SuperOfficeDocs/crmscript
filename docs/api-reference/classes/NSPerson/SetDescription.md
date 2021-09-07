@@ -8,9 +8,10 @@ so.topic: reference
 
 # SetDescription(String description)
 
-Info text/description on person. 
+Info text/description on person.
 
-**Parameter:** 
+## Parameters
+
 * **description** String
 
 ```crmscript

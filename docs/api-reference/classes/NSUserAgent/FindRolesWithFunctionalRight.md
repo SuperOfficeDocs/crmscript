@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSMDOListItem[] FindRolesWithFunctionalRight(String functionalRightName)
 
-Find all roles with a given functional right. The roles matched must contain the specified functional right. 
+Find all roles with a given functional right. The roles matched must contain the specified functional right.
 
 ## Parameters
 

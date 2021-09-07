@@ -10,7 +10,8 @@ so.topic: reference
 
 Indicates if this is a MDO list
 
-**Parameter:** 
+## Parameters
+
 * **isMDOList** Bool
 
 ```crmscript

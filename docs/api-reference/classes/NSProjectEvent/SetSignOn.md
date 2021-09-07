@@ -10,7 +10,8 @@ so.topic: reference
 
 If true, it is possible to sign on the event.
 
-**Parameter:** 
+## Parameters
+
 * **signOn** Bool
 
 ```crmscript

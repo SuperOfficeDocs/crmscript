@@ -10,7 +10,8 @@ so.topic: reference
 
  Task owner. If it is a System task, AssociateId = 0.
 
-**Parameter:** 
+## Parameters
+
 * **associateId** Integer
 
 ```crmscript

@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetIsAllDay(Bool isAllDay)
 
-**Parameter:** 
+## Parameters
+
 * **isAllDay** Bool
 
 ```crmscript

@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSProductType GetProductType(Integer productTypeId);
 
-Gets a NSProductType object.
+Gets an NSProductType object.
 
 ## Parameters
 

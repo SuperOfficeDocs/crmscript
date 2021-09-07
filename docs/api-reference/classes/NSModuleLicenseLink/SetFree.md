@@ -10,7 +10,8 @@ so.topic: reference
 
 The number of licenses that are free to be assigned
 
-**Parameter:** 
+## Parameters
+
 * **free** Integer
 
 ```crmscript

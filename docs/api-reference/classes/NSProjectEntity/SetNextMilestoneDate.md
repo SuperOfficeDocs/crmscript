@@ -10,7 +10,8 @@ so.topic: reference
 
 Calculated date, reflects date of closest non-complete future milestone activity
 
-**Parameter:** 
+## Parameters
+
 * **nextMilestoneDate** DateTime
 
 ```crmscript

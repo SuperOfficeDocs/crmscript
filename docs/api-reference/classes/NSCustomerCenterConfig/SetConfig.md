@@ -10,7 +10,8 @@ so.topic: reference
 
 A JSON-formatted config
 
-**Parameter:** 
+## Parameters
+
 * **config** String
 
 ```crmscript

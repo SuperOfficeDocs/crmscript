@@ -10,7 +10,8 @@ so.topic: reference
 
 The description of the module license
 
-**Parameter:** 
+## Parameters
+
 * **description** String
 
 ```crmscript

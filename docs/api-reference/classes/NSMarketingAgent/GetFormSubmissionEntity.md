@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSFormSubmissionEntity GetFormSubmissionEntity(Integer formSubmissionEntityId);
 
-Gets a NSFormSubmissionEntity object.
+Gets an NSFormSubmissionEntity object.
 
 ## Parameters
 

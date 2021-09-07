@@ -10,5 +10,7 @@ so.topic: reference
 
 ## Parameters
 
-* **saleId** 
-* **saleStakeholders** 
+| Parameter | Type | Description |
+|---|---|---|
+| saleId | Integer | |
+| saleStakeholders | NSSaleStakeholder[] | |

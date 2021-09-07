@@ -10,7 +10,8 @@ so.topic: reference
 
 The name of this chat topic
 
-**Parameter:** 
+## Parameters
+
 * **name** String
 
 ```crmscript

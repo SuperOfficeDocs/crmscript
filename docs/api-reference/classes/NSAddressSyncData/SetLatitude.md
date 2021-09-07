@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetLatitude(Float latitude)
 
-**Parameter:** 
+## Parameters
+
 * **latitude** Float
 
 ```crmscript

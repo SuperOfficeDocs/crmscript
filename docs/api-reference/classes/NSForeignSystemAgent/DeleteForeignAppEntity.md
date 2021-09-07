@@ -9,7 +9,7 @@ so.topic: reference
 # Void DeleteForeignAppEntity(Integer foreignAppEntity);
 
 Deletes the NSForeignAppEntity
-  
+ 
 ## Parameters
 
 * **foreignAppEntityId** The identity of the NSForeignAppEntity to delete.

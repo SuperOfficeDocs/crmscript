@@ -15,7 +15,7 @@ Returns the integer floor of the float.
 ## Example
 
     Float f = Float("13.456");
-    
+   
     Integer i = f.floor();
     print(i.toString());
 

@@ -10,7 +10,8 @@ so.topic: reference
 
 When was the last regeneration finished
 
-**Parameter:** 
+## Parameters
+
 * **generationEnd** DateTime
 
 ```crmscript

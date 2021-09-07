@@ -10,7 +10,8 @@ so.topic: reference
 
 The recipient(s) for the alert template
 
-**Parameter:** 
+## Parameters
+
 * **alertRecipient** String
 
 ```crmscript

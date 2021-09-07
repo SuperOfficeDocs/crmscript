@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSConsentInfo[] GetConsentInfos(Integer personId)
 
-Get all consent information for a given person. May include withdrawn consents (check 
+Get all consent information for a given person. May include withdrawn consents (check
 
 ## Parameters
 

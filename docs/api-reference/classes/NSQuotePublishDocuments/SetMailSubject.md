@@ -10,7 +10,8 @@ so.topic: reference
 
 The string that is the mail subject; done by merging the text resource SR_QUOTE_PUBLISH_MAILHEADING with the current template variable values
 
-**Parameter:** 
+## Parameters
+
 * **mailSubject** String
 
 ```crmscript

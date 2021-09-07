@@ -10,15 +10,16 @@ so.topic: reference
 
 How the merged document is delivered to the recipients.
 
-**Parameter:** 
+## Parameters
+
 * **mailMergeDeliveryType** Integer
-* Enum: 0 = BestFit 
-* Enum: 1 = Electronic 
-* Enum: 2 = Mail 
-* Enum: 3 = Fax 
-* Enum: 4 = Printer 
-* Enum: 5 = Xml 
-* Enum: 6 = XmlFax 
+* Enum: 0 = BestFit
+* Enum: 1 = Electronic
+* Enum: 2 = Mail
+* Enum: 3 = Fax
+* Enum: 4 = Printer
+* Enum: 5 = Xml
+* Enum: 6 = XmlFax
 
 ```crmscript
 NSMailMergeSettings thing;

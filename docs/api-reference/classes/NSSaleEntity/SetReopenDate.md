@@ -10,7 +10,8 @@ so.topic: reference
 
 Date the sale is to be reopened; valid only for status=stalled. Not necessarily the same as the nextDueDate.
 
-**Parameter:** 
+## Parameters
+
 * **reopenDate** DateTime
 
 ```crmscript

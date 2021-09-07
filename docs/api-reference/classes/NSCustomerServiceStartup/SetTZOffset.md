@@ -10,7 +10,8 @@ so.topic: reference
 
 The offset in minutes compared with UTC, calculated for DateTime.Now
 
-**Parameter:** 
+## Parameters
+
 * **tZOffset** Integer
 
 ```crmscript

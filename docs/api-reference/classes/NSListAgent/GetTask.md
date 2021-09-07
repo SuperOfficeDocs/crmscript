@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSTask GetTask(Integer taskId);
 
-Gets a NSTask object.
+Gets an NSTask object.
 
 ## Parameters
 

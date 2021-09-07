@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSLink GetLink(Integer linkId);
 
-Gets a NSLink object.
+Gets an NSLink object.
 
 ## Parameters
 

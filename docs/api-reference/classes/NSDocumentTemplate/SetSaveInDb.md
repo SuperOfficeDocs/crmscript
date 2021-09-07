@@ -10,7 +10,8 @@ so.topic: reference
 
 1 = save document records in DB; otherwise not.
 
-**Parameter:** 
+## Parameters
+
 * **saveInDb** Integer
 
 ```crmscript

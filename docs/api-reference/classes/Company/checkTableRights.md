@@ -20,7 +20,7 @@ tableRight might be:
 ## Example
 
     Company c;
-    
+   
     c.load(3);
     Bool b = c.checkTableRights("select");
     print(b.toString());

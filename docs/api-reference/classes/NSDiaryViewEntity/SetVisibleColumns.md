@@ -10,7 +10,8 @@ so.topic: reference
 
 Number of columns that should be visible simultanously.
 
-**Parameter:** 
+## Parameters
+
 * **visibleColumns** Integer
 
 ```crmscript

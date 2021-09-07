@@ -10,7 +10,8 @@ so.topic: reference
 
 Registered when
 
-**Parameter:** 
+## Parameters
+
 * **created** DateTime
 
 ```crmscript

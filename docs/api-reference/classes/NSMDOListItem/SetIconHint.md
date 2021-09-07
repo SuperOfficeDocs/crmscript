@@ -10,7 +10,8 @@ so.topic: reference
 
 The Icon hint of the ListItem. Custom field.
 
-**Parameter:** 
+## Parameters
+
 * **iconHint** String
 
 ```crmscript

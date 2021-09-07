@@ -10,7 +10,8 @@ so.topic: reference
 
 When opening hours stop on Fridays. Only time-part is used.
 
-**Parameter:** 
+## Parameters
+
 * **friStop** TimeSpan
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 'Companies', or whatever else is appropriate* the plural form of the entity name; this string will contain resource references
 
-**Parameter:** 
+## Parameters
+
 * **memberTabHeading** String
 
 ```crmscript

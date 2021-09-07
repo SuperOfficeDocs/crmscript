@@ -10,7 +10,8 @@ so.topic: reference
 
 Return value, may be blank.
 
-**Parameter:** 
+## Parameters
+
 * **value** String
 
 ```crmscript

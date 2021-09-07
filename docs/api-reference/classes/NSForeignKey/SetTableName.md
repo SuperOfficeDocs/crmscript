@@ -10,7 +10,8 @@ so.topic: reference
 
 Table name, transformed to and from numeric table id by the service layer
 
-**Parameter:** 
+## Parameters
+
 * **tableName** String
 
 ```crmscript

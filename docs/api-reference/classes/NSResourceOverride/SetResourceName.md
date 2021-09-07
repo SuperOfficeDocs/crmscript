@@ -10,7 +10,8 @@ so.topic: reference
 
 The name of the resource, without any brackets or braces* example: SR_CONTACT
 
-**Parameter:** 
+## Parameters
+
 * **resourceName** String
 
 ```crmscript

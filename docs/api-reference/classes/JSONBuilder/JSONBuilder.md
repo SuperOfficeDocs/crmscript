@@ -15,17 +15,17 @@ The JSONBuilder class simplifies building JSON hierarchies. The result will be a
     JSONBuilder jb;
     jb.pushObject("");
     jb.pushArray("persons");
-    
+   
     jb.pushObject("");
     jb.addString("firstname", "John");
     jb.addInteger("age", 40);
     jb.popLevel();
-    
+   
     jb.pushObject("");
     jb.addString("firstname", "Peter");
     jb.addInteger("age", 34);
     jb.popLevel();
-    
+   
     jb.popLevel();
     jb.popLevel(); // jb.finalize() could be used to pop all levels
     print(jb.getString());

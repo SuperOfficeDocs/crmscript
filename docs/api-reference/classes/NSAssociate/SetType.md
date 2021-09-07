@@ -10,18 +10,23 @@ so.topic: reference
 
 User type* 1 = internal user, 2 = resource, 3 = external user, 4 = anonymous, 5 = system
 
-**Parameter:** 
+## Parameters
+
 * **type** Integer
-* Enum: 0 = Unknown 
-* Enum: 1 = InternalAssociate 
-* Enum: 2 = ResourceAssociate 
-* Enum: 3 = ExternalAssociate 
-* Enum: 4 = AnonymousAssociate 
-* Enum: 5 = SystemAssociate 
+
+### Enum: associateType
+
+* 0 = Unknown
+* 1 = InternalAssociate
+* 2 = ResourceAssociate
+* 3 = ExternalAssociate
+* 4 = AnonymousAssociate
+* 5 = SystemAssociate
+
+## Example
 
 ```crmscript
 NSAssociate thing;
 Integer type;
 thing.SetType(type);
 ```
-

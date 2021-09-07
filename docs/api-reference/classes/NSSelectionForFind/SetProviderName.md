@@ -10,7 +10,8 @@ so.topic: reference
 
 The name of the Archive Provider to use when working with this selection; this is the main entity provider, never Shadow, Combined or anything else fancy
 
-**Parameter:** 
+## Parameters
+
 * **providerName** String
 
 ```crmscript

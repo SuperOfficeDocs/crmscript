@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSConsentSource GetConsentSource(Integer consentSourceId);
 
-Gets a NSConsentSource object.
+Gets an NSConsentSource object.
 
 ## Parameters
 

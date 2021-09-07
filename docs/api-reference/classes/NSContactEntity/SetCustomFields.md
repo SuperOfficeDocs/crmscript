@@ -8,9 +8,10 @@ so.topic: reference
 
 # SetCustomFields(Map udefs)
 
-Set the user-defined and extra fields on a NSContactEntity with a map.
+Set the user-defined and extra fields on an NSContactEntity with a map.
 
-**Parameter:** 
+## Parameters
+
 * **udefs** Map user defined field and extra field values encoded as strings.
 
 ```crmscript

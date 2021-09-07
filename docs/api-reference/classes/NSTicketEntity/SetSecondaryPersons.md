@@ -10,7 +10,8 @@ so.topic: reference
 
 The secondary persons this ticket is connected to
 
-**Parameter:** 
+## Parameters
+
 * **secondaryPersons** NSPerson[]
 
 ```crmscript

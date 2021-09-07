@@ -10,7 +10,8 @@ so.topic: reference
 
 Is this sync mapping active
 
-**Parameter:** 
+## Parameters
+
 * **isActive** Bool
 
 ```crmscript

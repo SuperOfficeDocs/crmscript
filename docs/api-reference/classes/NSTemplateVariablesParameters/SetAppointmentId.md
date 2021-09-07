@@ -10,7 +10,8 @@ so.topic: reference
 
 Identifier for an appointment
 
-**Parameter:** 
+## Parameters
+
 * **appointmentId** Integer
 
 ```crmscript

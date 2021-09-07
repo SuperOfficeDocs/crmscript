@@ -10,7 +10,8 @@ so.topic: reference
 
 What the name sounds like, for duplicate detection
 
-**Parameter:** 
+## Parameters
+
 * **soundEx** String
 
 ```crmscript

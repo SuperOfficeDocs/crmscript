@@ -10,7 +10,8 @@ so.topic: reference
 
 Who assigned this appointment to this user? Whose diary did the appointment come from?
 
-**Parameter:** 
+## Parameters
+
 * **assignedBy** NSAssociate
 
 ```crmscript

@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSAudienceLayoutEntity GetAudienceLayoutEntity(Integer audienceLayoutEntityId);
 
-Gets a NSAudienceLayoutEntity object.
+Gets an NSAudienceLayoutEntity object.
 
 ## Parameters
 

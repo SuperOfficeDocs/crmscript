@@ -10,7 +10,8 @@ so.topic: reference
 
 The contact associated with the document. It may also be null if no contact is associated with the document.
 
-**Parameter:** 
+## Parameters
+
 * **contact** NSContact
 
 ```crmscript

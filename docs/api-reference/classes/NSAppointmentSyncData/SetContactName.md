@@ -10,7 +10,8 @@ so.topic: reference
 
 The contact associated with the appointment.
 
-**Parameter:** 
+## Parameters
+
 * **contactName** String
 
 ```crmscript

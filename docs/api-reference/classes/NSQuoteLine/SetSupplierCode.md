@@ -10,7 +10,8 @@ so.topic: reference
 
 The suppliers' code or part number for this product. Is stored here if the user changes the value from the product in the pricelist, or just enters a QuoteLine without a product link.
 
-**Parameter:** 
+## Parameters
+
 * **supplierCode** String
 
 ```crmscript

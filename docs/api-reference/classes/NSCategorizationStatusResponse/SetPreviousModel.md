@@ -10,7 +10,8 @@ so.topic: reference
 
 Previous model information
 
-**Parameter:** 
+## Parameters
+
 * **previousModel** CategorizationModelDetails
 
 ```crmscript

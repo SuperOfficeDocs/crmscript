@@ -10,7 +10,8 @@ so.topic: reference
 
 Number of all lost within the period
 
-**Parameter:** 
+## Parameters
+
 * **lost** Integer
 
 ```crmscript

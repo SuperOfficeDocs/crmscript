@@ -10,7 +10,8 @@ so.topic: reference
 
 Is the connection deleted
 
-**Parameter:** 
+## Parameters
+
 * **deleted** Bool
 
 ```crmscript

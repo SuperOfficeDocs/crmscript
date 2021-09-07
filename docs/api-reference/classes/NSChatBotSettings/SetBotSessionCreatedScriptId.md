@@ -10,7 +10,8 @@ so.topic: reference
 
 Script id to run on new session.
 
-**Parameter:** 
+## Parameters
+
 * **botSessionCreatedScriptId** Integer
 
 ```crmscript

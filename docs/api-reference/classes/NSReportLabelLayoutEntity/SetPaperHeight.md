@@ -10,7 +10,8 @@ so.topic: reference
 
 Paper height in twips
 
-**Parameter:** 
+## Parameters
+
 * **paperHeight** Integer
 
 ```crmscript

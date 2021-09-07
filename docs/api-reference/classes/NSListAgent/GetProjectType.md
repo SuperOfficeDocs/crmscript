@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSProjectType GetProjectType(Integer projectTypeId);
 
-Gets a NSProjectType object.
+Gets an NSProjectType object.
 
 ## Parameters
 

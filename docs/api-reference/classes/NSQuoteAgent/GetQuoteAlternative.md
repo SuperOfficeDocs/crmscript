@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSQuoteAlternative GetQuoteAlternative(Integer quoteAlternativeId);
 
-Gets a NSQuoteAlternative object.
+Gets an NSQuoteAlternative object.
 
 ## Parameters
 

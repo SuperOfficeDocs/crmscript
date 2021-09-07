@@ -9,7 +9,7 @@ so.topic: reference
 # DeleteTicketStatusEntity(Integer ticketStatusEntity);
 
 Deletes the NSTicketStatusEntity
-  
+ 
 ## Parameters
 
 * **ticketStatusEntityId** The identity of the NSTicketStatusEntity to delete.

@@ -8,11 +8,13 @@ so.topic: reference
 
 # NSFavourite[] GetFavourites(String tableName, Integer associateId)
 
-Get all favourites for a table and associate
+Get all favorites for a table and associate
+
+**Returns:** NSFavourite[]
 
 ## Parameters
 
-* **tableName** Table name, transformed to and from numeric table id by the service layer.
-* **associateId** 
-
-**Returns:** NSFavourite[]
+| Parameter | Type | Description |
+|---|---|---|
+| tableName | String | Table name, transformed to and from numeric table id by the service layer. |
+| associateId | Integer | |

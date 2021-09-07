@@ -10,7 +10,8 @@ so.topic: reference
 
 The X-Message-Id header value from the email. Used for threading, i.e. connecting messages to existing tickets.
 
-**Parameter:** 
+## Parameters
+
 * **messageId** String
 
 ```crmscript

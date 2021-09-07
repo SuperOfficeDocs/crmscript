@@ -10,7 +10,8 @@ so.topic: reference
 
 Id of table that owns the status monitor
 
-**Parameter:** 
+## Parameters
+
 * **ownerTable** Integer
 
 ```crmscript

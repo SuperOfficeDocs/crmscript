@@ -8,7 +8,7 @@ so.topic: reference
 
 # String[] GetEvents()
 
-Array of event names that trigger this webhook: ['contact.created', 'sale.changed'] 
+Array of event names that trigger this webhook: ['contact.created', 'sale.changed']
 
 **Returns:** String[]
 

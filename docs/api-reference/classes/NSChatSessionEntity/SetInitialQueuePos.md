@@ -10,7 +10,8 @@ so.topic: reference
 
 The initial queue pos (i.e. the number of pending sessions + 1) when the session was requested.
 
-**Parameter:** 
+## Parameters
+
 * **initialQueuePos** Integer
 
 ```crmscript

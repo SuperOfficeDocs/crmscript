@@ -10,7 +10,8 @@ so.topic: reference
 
 Kana first name, used in Japanese versions only
 
-**Parameter:** 
+## Parameters
+
 * **kanafname** String
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Id of associate who actually entered the approval; might be different from ApprovedBy (f.x. due to telephone consultation/approval)
 
-**Parameter:** 
+## Parameters
+
 * **approvedRegisteredBy** Integer
 
 ```crmscript

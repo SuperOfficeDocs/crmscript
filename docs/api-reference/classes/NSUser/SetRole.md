@@ -10,7 +10,8 @@ so.topic: reference
 
 Users role for role-based security. Determines permissions and access rights for the user.
 
-**Parameter:** 
+## Parameters
+
 * **role** Role
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Phone number
 
-**Parameter:** 
+## Parameters
+
 * **phone** String
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Specifies how many minutes the message should be valid
 
-**Parameter:** 
+## Parameters
+
 * **timeToLive** Integer
 
 ```crmscript

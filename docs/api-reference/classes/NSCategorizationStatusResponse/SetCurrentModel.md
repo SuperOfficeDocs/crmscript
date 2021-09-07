@@ -10,7 +10,8 @@ so.topic: reference
 
 Current model information
 
-**Parameter:** 
+## Parameters
+
 * **currentModel** CategorizationModelDetails
 
 ```crmscript

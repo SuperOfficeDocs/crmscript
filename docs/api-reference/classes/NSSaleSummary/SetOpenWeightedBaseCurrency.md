@@ -8,9 +8,10 @@ so.topic: reference
 
 # SetOpenWeightedBaseCurrency(Float openWeightedBaseCurrency)
 
-Weighted sum for all open within the period in default currency for the installation 
+Weighted sum for all open within the period in default currency for the installation
 
-**Parameter:** 
+## Parameters
+
 * **openWeightedBaseCurrency** Float
 
 ```crmscript

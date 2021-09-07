@@ -10,7 +10,8 @@ so.topic: reference
 
 Default text for the activity created when signing on.
 
-**Parameter:** 
+## Parameters
+
 * **signOnText** String
 
 ```crmscript

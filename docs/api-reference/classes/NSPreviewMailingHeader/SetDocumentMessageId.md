@@ -10,7 +10,8 @@ so.topic: reference
 
 If a document was used as the message this is the document ID.
 
-**Parameter:** 
+## Parameters
+
 * **documentMessageId** Integer
 
 ```crmscript

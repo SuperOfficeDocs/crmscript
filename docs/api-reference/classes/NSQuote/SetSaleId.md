@@ -10,7 +10,8 @@ so.topic: reference
 
 The foreign key to the corresponding sale
 
-**Parameter:** 
+## Parameters
+
 * **saleId** Integer
 
 ```crmscript

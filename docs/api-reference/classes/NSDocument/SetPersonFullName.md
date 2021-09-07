@@ -10,7 +10,8 @@ so.topic: reference
 
 The full name of the person this document belongs to.
 
-**Parameter:** 
+## Parameters
+
 * **personFullName** String
 
 ```crmscript

@@ -13,13 +13,13 @@ Create a temporary key in the database from the given parameters and return the 
 ## Parameters
 
 * **domain** The domain this key is for
-* Enum: 0 = Unknown 
-* Enum: 1 = MailingRecipient 
-* Enum: 2 = FormSubmitterRecipient 
-* Enum: 3 = ViewTicketInCustomerCenter 
-* Enum: 4 = LoginCustomerCenter 
-* Enum: 5 = PublicFaq 
-* Enum: 6 = ChangePasswordCustomerCenter 
+* Enum: 0 = Unknown
+* Enum: 1 = MailingRecipient
+* Enum: 2 = FormSubmitterRecipient
+* Enum: 3 = ViewTicketInCustomerCenter
+* Enum: 4 = LoginCustomerCenter
+* Enum: 5 = PublicFaq
+* Enum: 6 = ChangePasswordCustomerCenter
 * **targetId** The primary key of the entity this is for. Depends on domain.
 * **personId** The person this key is for. May be null.
 * **expires** When the key will expire (servers local time)

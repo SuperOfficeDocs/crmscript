@@ -10,7 +10,8 @@ so.topic: reference
 
 The type of this list, often indicated by the database name, but not necessarily
 
-**Parameter:** 
+## Parameters
+
 * **listType** String
 
 ```crmscript

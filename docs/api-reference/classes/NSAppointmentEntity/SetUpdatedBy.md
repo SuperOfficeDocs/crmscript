@@ -10,7 +10,8 @@ so.topic: reference
 
 The person that last updated the appointment.
 
-**Parameter:** 
+## Parameters
+
 * **updatedBy** NSAssociate
 
 ```crmscript

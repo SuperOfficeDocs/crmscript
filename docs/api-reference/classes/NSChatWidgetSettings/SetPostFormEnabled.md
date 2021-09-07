@@ -10,7 +10,8 @@ so.topic: reference
 
 Enable post chat form
 
-**Parameter:** 
+## Parameters
+
 * **postFormEnabled** Bool
 
 ```crmscript

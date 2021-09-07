@@ -10,7 +10,8 @@ so.topic: reference
 
 Priority on ticket created from off-line request
 
-**Parameter:** 
+## Parameters
+
 * **ticketPriority** NSTicketPriority
 
 ```crmscript

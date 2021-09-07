@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetSupportPerson(NSPerson supportPerson)
 
-**Parameter:** 
+## Parameters
+
 * **supportPerson** NSPerson
 
 ```crmscript

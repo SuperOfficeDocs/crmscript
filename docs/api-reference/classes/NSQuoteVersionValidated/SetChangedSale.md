@@ -10,7 +10,8 @@ so.topic: reference
 
 If the sale has been changed, the carrier will be added.
 
-**Parameter:** 
+## Parameters
+
 * **changedSale** NSSale
 
 ```crmscript

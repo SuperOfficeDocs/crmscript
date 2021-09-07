@@ -40,11 +40,11 @@ Returns the value of the given field of the customer.
 ## Example
 
     Customer c;
-    
+   
     c.load(3);
     Bool b = c.checkTableRights("select");
     print(b.toString());
-    
+   
     c.setValue("name", "Test");
     print(c.getValue("name"));
 

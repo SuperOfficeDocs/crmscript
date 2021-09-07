@@ -10,7 +10,8 @@ so.topic: reference
 
 Identification of user in the foreign system.  This value needs to be applied to the Credential.Value field
 
-**Parameter:** 
+## Parameters
+
 * **value** String
 
 ```crmscript

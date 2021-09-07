@@ -10,7 +10,8 @@ so.topic: reference
 
 The session key created in the login table
 
-**Parameter:** 
+## Parameters
+
 * **key** String
 
 ```crmscript

@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSAppointment GetAppointment(Integer appointmentId);
 
-Gets a NSAppointment object.
+Gets an NSAppointment object.
 
 ## Parameters
 

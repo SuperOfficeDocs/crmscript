@@ -10,7 +10,8 @@ so.topic: reference
 
 The mail server
 
-**Parameter:** 
+## Parameters
+
 * **server** String
 
 ```crmscript

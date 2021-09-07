@@ -10,7 +10,8 @@ so.topic: reference
 
 Display text name
 
-**Parameter:** 
+## Parameters
+
 * **name** String
 
 ```crmscript

@@ -9,7 +9,7 @@ so.topic: reference
 # DeleteRefCountEntity(Integer refCountEntity);
 
 Deletes the NSRefCountEntity
-  
+ 
 * **RefCountEntityId** The identity of the RefCountEntity to delete.
 
 ```crmscript

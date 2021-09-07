@@ -10,7 +10,8 @@ so.topic: reference
 
 Our support contact for this person
 
-**Parameter:** 
+## Parameters
+
 * **supportAssociateId** Integer
 
 ```crmscript

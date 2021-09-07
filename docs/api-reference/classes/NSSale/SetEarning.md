@@ -10,7 +10,8 @@ so.topic: reference
 
 Earning on sale
 
-**Parameter:** 
+## Parameters
+
 * **earning** Float
 
 ```crmscript

@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSHistory GetHistory(Integer historyId);
 
-Gets a NSHistory object.
+Gets an NSHistory object.
 
 ## Parameters
 

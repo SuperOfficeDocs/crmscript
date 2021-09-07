@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSListEntity GetListEntityByName(String name)
 
-Gets a NSListEntity resolved by the provided name.
+Gets an NSListEntity resolved by the provided name.
 
 ## Parameters
 

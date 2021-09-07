@@ -10,7 +10,8 @@ so.topic: reference
 
 Custom document entity to use for data retrieval. Useful for unsaved data.  NSDocumentEntity.DocumentId need to match the DocumentId specified in separate property.
 
-**Parameter:** 
+## Parameters
+
 * **documentEntity** NSDocumentEntity
 
 ```crmscript

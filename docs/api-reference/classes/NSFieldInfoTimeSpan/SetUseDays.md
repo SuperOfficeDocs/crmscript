@@ -10,7 +10,8 @@ so.topic: reference
 
 Should the time-span be counted in days?
 
-**Parameter:** 
+## Parameters
+
 * **useDays** Bool
 
 ```crmscript

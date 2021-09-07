@@ -10,7 +10,8 @@ so.topic: reference
 
 Is the webpanel visible when user is on central database
 
-**Parameter:** 
+## Parameters
+
 * **onCentral** Bool
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Offline message shown in widget
 
-**Parameter:** 
+## Parameters
+
 * **offlineMessage** String
 
 ```crmscript

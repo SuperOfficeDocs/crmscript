@@ -10,7 +10,8 @@ so.topic: reference
 
 The user that created the webhook.
 
-**Parameter:** 
+## Parameters
+
 * **registeredAssociate** NSAssociate
 
 ```crmscript

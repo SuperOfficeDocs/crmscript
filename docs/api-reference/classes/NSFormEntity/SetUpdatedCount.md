@@ -10,7 +10,8 @@ so.topic: reference
 
 Number of updates made to this record
 
-**Parameter:** 
+## Parameters
+
 * **updatedCount** Integer
 
 ```crmscript

@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSDeliveryTerm GetDeliveryTerm(Integer deliveryTermId);
 
-Gets a NSDeliveryTerm object.
+Gets an NSDeliveryTerm object.
 
 ## Parameters
 

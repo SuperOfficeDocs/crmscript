@@ -10,7 +10,8 @@ so.topic: reference
 
 The connected ticket
 
-**Parameter:** 
+## Parameters
+
 * **ticket** Ticket
 
 ```crmscript

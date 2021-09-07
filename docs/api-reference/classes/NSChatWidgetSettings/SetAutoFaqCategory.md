@@ -10,7 +10,8 @@ so.topic: reference
 
 Root folder for FAQ suggestions
 
-**Parameter:** 
+## Parameters
+
 * **autoFaqCategory** NSKbCategory
 
 ```crmscript

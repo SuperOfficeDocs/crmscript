@@ -10,7 +10,8 @@ so.topic: reference
 
 Date of the event. Event is not visible after this date.
 
-**Parameter:** 
+## Parameters
+
 * **eventDate** DateTime
 
 ```crmscript

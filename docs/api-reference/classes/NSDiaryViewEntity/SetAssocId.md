@@ -10,7 +10,8 @@ so.topic: reference
 
 Owning associate id for the DiaryView.
 
-**Parameter:** 
+## Parameters
+
 * **assocId** Integer
 
 ```crmscript

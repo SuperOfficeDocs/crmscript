@@ -10,7 +10,8 @@ so.topic: reference
 
 This is the registered redirect_uri for AccessGateway OIDC.
 
-**Parameter:** 
+## Parameters
+
 * **redirectUri** String
 
 ```crmscript

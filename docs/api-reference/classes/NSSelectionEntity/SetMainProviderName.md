@@ -10,7 +10,8 @@ so.topic: reference
 
 The name of the Archive Provider that will deliver the content of the archive* the actual entity rows
 
-**Parameter:** 
+## Parameters
+
 * **mainProviderName** String
 
 ```crmscript

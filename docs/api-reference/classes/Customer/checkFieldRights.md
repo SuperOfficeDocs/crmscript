@@ -19,7 +19,7 @@ fieldRight might be:
 ## Example
 
     Customer c;
-    
+   
     c.load(3);
     Bool b = c.checkFieldRights("person","read");
     print(b.toString());

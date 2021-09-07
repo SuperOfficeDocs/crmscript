@@ -10,7 +10,8 @@ so.topic: reference
 
 The list of associates to filter on
 
-**Parameter:** 
+## Parameters
+
 * **associateList** NSSelectableMDOListItem[]
 
 ```crmscript

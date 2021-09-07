@@ -10,7 +10,8 @@ so.topic: reference
 
 Values sent back to the environment from the event handler
 
-**Parameter:** 
+## Parameters
+
 * **outputValues** StringDictionary
 
 ```crmscript

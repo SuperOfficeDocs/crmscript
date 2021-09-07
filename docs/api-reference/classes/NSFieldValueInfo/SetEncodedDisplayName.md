@@ -10,7 +10,8 @@ so.topic: reference
 
 The displayname of the field
 
-**Parameter:** 
+## Parameters
+
 * **encodedDisplayName** String
 
 ```crmscript

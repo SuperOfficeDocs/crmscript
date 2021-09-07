@@ -10,7 +10,8 @@ so.topic: reference
 
 Remove this company interest on each company recipient.
 
-**Parameter:** 
+## Parameters
+
 * **removeCompanyInterest** Integer
 
 ```crmscript

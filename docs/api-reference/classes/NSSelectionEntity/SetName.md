@@ -10,7 +10,8 @@ so.topic: reference
 
 Name of selection, freetext indexed
 
-**Parameter:** 
+## Parameters
+
 * **name** String
 
 ```crmscript

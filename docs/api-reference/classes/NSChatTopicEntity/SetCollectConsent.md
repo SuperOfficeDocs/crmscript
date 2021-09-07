@@ -10,7 +10,8 @@ so.topic: reference
 
 Collect consent to store from user
 
-**Parameter:** 
+## Parameters
+
 * **collectConsent** Bool
 
 ```crmscript

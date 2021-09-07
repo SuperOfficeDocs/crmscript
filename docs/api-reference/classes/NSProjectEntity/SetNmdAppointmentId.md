@@ -10,7 +10,8 @@ so.topic: reference
 
 ID of appointment that "caused" the nextMilestoneDate, can be 0
 
-**Parameter:** 
+## Parameters
+
 * **nmdAppointmentId** Integer
 
 ```crmscript

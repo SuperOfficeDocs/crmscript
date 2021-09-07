@@ -10,7 +10,8 @@ so.topic: reference
 
 Add this person interest to each person recipient.
 
-**Parameter:** 
+## Parameters
+
 * **addPersonInterest** Integer
 
 ```crmscript

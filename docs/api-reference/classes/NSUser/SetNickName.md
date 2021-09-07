@@ -10,7 +10,8 @@ so.topic: reference
 
 The unique nick name for this user. Used in Service as an alias, similar to Name/Initials.
 
-**Parameter:** 
+## Parameters
+
 * **nickName** String
 
 ```crmscript

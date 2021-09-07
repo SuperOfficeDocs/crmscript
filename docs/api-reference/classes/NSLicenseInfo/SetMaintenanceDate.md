@@ -10,7 +10,8 @@ so.topic: reference
 
 Expiration date for maintenance. After this date, upgrades should refuse to install.
 
-**Parameter:** 
+## Parameters
+
 * **maintenanceDate** DateTime
 
 ```crmscript

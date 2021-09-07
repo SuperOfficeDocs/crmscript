@@ -10,7 +10,8 @@ so.topic: reference
 
 Number of rows inserted
 
-**Parameter:** 
+## Parameters
+
 * **inserts** Integer
 
 ```crmscript

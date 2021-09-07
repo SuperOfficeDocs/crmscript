@@ -10,7 +10,8 @@ so.topic: reference
 
 Id of the destination contact. The value is mandatory.
 
-**Parameter:** 
+## Parameters
+
 * **destinationContactId** Integer
 
 ```crmscript

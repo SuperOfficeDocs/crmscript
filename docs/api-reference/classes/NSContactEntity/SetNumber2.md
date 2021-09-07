@@ -10,7 +10,8 @@ so.topic: reference
 
 Alphanumeric user field
 
-**Parameter:** 
+## Parameters
+
 * **number2** String
 
 ```crmscript

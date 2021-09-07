@@ -10,7 +10,8 @@ so.topic: reference
 
 Deleted flag, 1 if this record is deleted (never from the database)
 
-**Parameter:** 
+## Parameters
+
 * **deleted** Bool
 
 ```crmscript

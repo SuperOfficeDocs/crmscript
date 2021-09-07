@@ -10,7 +10,8 @@ so.topic: reference
 
 Should value changes in CRM be automatically transferred to ERP
 
-**Parameter:** 
+## Parameters
+
 * **syncToErp** Bool
 
 ```crmscript

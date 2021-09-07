@@ -10,7 +10,8 @@ so.topic: reference
 
 Number of attachments in the message
 
-**Parameter:** 
+## Parameters
+
 * **numAttachments** Integer
 
 ```crmscript

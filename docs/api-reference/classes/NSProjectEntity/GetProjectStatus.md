@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSProjectStatus GetProjectStatus()
 
-Project status is a list defined by the database administrator. Different statuses of a project may be: “In planning”, “Started”, “Finished” and so on
+Project status is a list defined by the database administrator. Different statuses of a project may be: "In planning", "Started", "Finished" and so on
 
 **Returns:** NSProjectStatus
 

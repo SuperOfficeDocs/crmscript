@@ -10,7 +10,8 @@ so.topic: reference
 
 The person that last updated this foreign application.
 
-**Parameter:** 
+## Parameters
+
 * **updatedBy** NSAssociate
 
 ```crmscript

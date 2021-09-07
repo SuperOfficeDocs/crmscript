@@ -18,9 +18,9 @@ This function opens an url and returns the result as a Byte array.
 ## Example
 
     HTTP h;
-    
+   
     Byte[] b = h.open("https://httpbin.org/");
-    
+   
     if (h.hasError())
       print(h.getErrorMessage());
     else

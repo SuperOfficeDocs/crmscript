@@ -10,7 +10,8 @@ so.topic: reference
 
 Id of the associate this favourite belongs to.
 
-**Parameter:** 
+## Parameters
+
 * **associateId** Integer
 
 ```crmscript

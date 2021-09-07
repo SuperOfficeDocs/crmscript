@@ -10,7 +10,8 @@ so.topic: reference
 
 Last external syncronization.
 
-**Parameter:** 
+## Parameters
+
 * **dbiLastSyncronized** DateTime
 
 ```crmscript

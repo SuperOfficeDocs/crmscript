@@ -10,7 +10,8 @@ so.topic: reference
 
 Include recipients that are marked with stop
 
-**Parameter:** 
+## Parameters
+
 * **includeStoppedRecipients** Bool
 
 ```crmscript

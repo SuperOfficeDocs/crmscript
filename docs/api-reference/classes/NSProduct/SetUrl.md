@@ -10,7 +10,8 @@ so.topic: reference
 
 URL to product information web page.
 
-**Parameter:** 
+## Parameters
+
 * **url** String
 
 ```crmscript

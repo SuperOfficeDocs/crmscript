@@ -10,7 +10,8 @@ so.topic: reference
 
 Record in the referenced table
 
-**Parameter:** 
+## Parameters
+
 * **recordId** Integer
 
 ```crmscript

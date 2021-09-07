@@ -12,4 +12,4 @@ Create a new message and insert it in the message queue. (inbox)
 
 ## Parameters
 
-* **incomingMessage** 
+* **incomingMessage**

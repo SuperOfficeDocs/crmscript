@@ -10,7 +10,8 @@ so.topic: reference
 
 Total count of search words
 
-**Parameter:** 
+## Parameters
+
 * **occurrences** Integer
 
 ```crmscript

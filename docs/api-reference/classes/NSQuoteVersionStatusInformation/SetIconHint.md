@@ -10,7 +10,8 @@ so.topic: reference
 
 Icon hint for the associated message.
 
-**Parameter:** 
+## Parameters
+
 * **iconHint** String
 
 ```crmscript

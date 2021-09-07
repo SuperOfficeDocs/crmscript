@@ -10,7 +10,8 @@ so.topic: reference
 
 One mapped SuperOffice listItem
 
-**Parameter:** 
+## Parameters
+
 * **crmListItem** NSMDOListItem
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 True if the ListItem is selected
 
-**Parameter:** 
+## Parameters
+
 * **selected** Bool
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 The ERP list name, if the field has a list of values supplied by the ERP Connector
 
-**Parameter:** 
+## Parameters
+
 * **listName** String
 
 ```crmscript

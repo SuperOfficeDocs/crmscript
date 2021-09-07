@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSProductCategory GetProductCategory(Integer productCategoryId);
 
-Gets a NSProductCategory object.
+Gets an NSProductCategory object.
 
 ## Parameters
 

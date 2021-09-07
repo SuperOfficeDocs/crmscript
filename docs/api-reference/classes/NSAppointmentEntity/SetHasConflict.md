@@ -10,7 +10,8 @@ so.topic: reference
 
 Does the appointment overlap with another appointment in the user's diary?
 
-**Parameter:** 
+## Parameters
+
 * **hasConflict** Bool
 
 ```crmscript

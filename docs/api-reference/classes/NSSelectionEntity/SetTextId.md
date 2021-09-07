@@ -10,7 +10,8 @@ so.topic: reference
 
 Description text record id
 
-**Parameter:** 
+## Parameters
+
 * **textId** Integer
 
 ```crmscript

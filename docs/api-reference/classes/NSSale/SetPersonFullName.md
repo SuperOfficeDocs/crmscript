@@ -10,7 +10,8 @@ so.topic: reference
 
 The name of the person this sale belongs to.
 
-**Parameter:** 
+## Parameters
+
 * **personFullName** String
 
 ```crmscript

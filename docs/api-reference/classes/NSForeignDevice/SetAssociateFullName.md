@@ -10,7 +10,8 @@ so.topic: reference
 
 The person owning the Foreign Device
 
-**Parameter:** 
+## Parameters
+
 * **associateFullName** String
 
 ```crmscript

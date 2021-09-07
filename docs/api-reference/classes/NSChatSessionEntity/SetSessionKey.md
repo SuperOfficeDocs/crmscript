@@ -10,7 +10,8 @@ so.topic: reference
 
 Key used to authenticate the session.
 
-**Parameter:** 
+## Parameters
+
 * **sessionKey** String
 
 ```crmscript

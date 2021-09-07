@@ -10,7 +10,8 @@ so.topic: reference
 
 The full name of the associate who archived this email
 
-**Parameter:** 
+## Parameters
+
 * **archivedDisplayName** String
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 The response from the operation.
 
-**Parameter:** 
+## Parameters
+
 * **pluginResponse** NSPluginResponse
 
 ```crmscript

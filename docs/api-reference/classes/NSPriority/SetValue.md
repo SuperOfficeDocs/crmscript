@@ -10,7 +10,8 @@ so.topic: reference
 
 Set the name of the Priority item.
 
-**Parameter:** 
+## Parameters
+
 * **value** String Priority name.
 
 ```crmscript

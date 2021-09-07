@@ -10,7 +10,8 @@ so.topic: reference
 
 Generated error message for the Quote Version. Will check for errors on quote lines, alternatives and the version itself.
 
-**Parameter:** 
+## Parameters
+
 * **displayMessage** String
 
 ```crmscript

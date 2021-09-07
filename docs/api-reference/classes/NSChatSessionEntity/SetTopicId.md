@@ -10,7 +10,8 @@ so.topic: reference
 
 The reference to the associated chat topic.
 
-**Parameter:** 
+## Parameters
+
 * **topicId** Integer
 
 ```crmscript

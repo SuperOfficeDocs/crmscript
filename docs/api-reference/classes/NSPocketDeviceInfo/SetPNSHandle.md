@@ -10,7 +10,8 @@ so.topic: reference
 
 The identifier associated with the device that will be used when talking with vendors push services
 
-**Parameter:** 
+## Parameters
+
 * **pNSHandle** String
 
 ```crmscript

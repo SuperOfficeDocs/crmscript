@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSPersonEntity CreateDefaultByContactId(Integer contactId)
 
-Creates a NSPersonEntity with default values based on the contactId.
+Creates an NSPersonEntity with default values based on the contactId.
 
 ## Parameters
 

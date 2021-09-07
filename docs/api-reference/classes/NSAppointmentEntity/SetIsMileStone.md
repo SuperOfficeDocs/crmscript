@@ -10,7 +10,8 @@ so.topic: reference
 
 Is this appointment a milestone?
 
-**Parameter:** 
+## Parameters
+
 * **isMileStone** Bool
 
 ```crmscript

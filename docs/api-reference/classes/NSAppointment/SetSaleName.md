@@ -10,7 +10,8 @@ so.topic: reference
 
 Heading of Owning sale, if any. (may be blank)
 
-**Parameter:** 
+## Parameters
+
 * **saleName** String
 
 ```crmscript

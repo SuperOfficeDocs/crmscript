@@ -10,7 +10,8 @@ so.topic: reference
 
 List options given directly, not via MDO list name
 
-**Parameter:** 
+## Parameters
+
 * **listItems** NSMDOListItem[]
 
 ```crmscript

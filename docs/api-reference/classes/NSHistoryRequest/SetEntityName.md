@@ -10,7 +10,8 @@ so.topic: reference
 
 Name of entity to get history for
 
-**Parameter:** 
+## Parameters
+
 * **entityName** String
 
 ```crmscript

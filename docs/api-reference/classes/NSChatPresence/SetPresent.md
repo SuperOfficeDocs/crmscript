@@ -10,7 +10,8 @@ so.topic: reference
 
 Indicates if the user has the chat presence turned on or off
 
-**Parameter:** 
+## Parameters
+
 * **present** Bool
 
 ```crmscript

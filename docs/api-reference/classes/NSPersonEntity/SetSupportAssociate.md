@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetSupportAssociate(NSAssociate supportAssociate)
 
-**Parameter:** 
+## Parameters
+
 * **supportAssociate** NSAssociate
 
 ```crmscript

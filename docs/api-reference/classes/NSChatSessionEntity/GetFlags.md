@@ -12,8 +12,8 @@ Various flags for the chat session
 
 **Returns:** NSChatSessionFlags
 
-* Enum: 0 = CustomerIsTyping 
-* Enum: 1 = UserIsTyping 
+* Enum: 0 = CustomerIsTyping
+* Enum: 1 = UserIsTyping
 
 ```crmscript
 NSChatSessionEntity thing;

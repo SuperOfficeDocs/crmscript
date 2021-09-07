@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSDepartment GetDepartment(Integer departmentId);
 
-Gets a NSDepartment object.
+Gets an NSDepartment object.
 
 ## Parameters
 

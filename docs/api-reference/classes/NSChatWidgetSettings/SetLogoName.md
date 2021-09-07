@@ -10,7 +10,8 @@ so.topic: reference
 
 filename/description of logo (from blob)
 
-**Parameter:** 
+## Parameters
+
 * **logoName** String
 
 ```crmscript

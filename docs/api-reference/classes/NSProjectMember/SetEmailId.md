@@ -10,7 +10,8 @@ so.topic: reference
 
 The person's email address id
 
-**Parameter:** 
+## Parameters
+
 * **emailId** Integer
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Serial number. e.g.: 1010000014.
 
-**Parameter:** 
+## Parameters
+
 * **serialNr** String
 
 ```crmscript

@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSChatTopicEntity GetChatTopicEntity(Integer chatTopicEntityId);
 
-Gets a NSChatTopicEntity object.
+Gets an NSChatTopicEntity object.
 
 ## Parameters
 

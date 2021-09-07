@@ -10,7 +10,8 @@ so.topic: reference
 
 Optional information added by Quote Connector; usable in the quote document merge process
 
-**Parameter:** 
+## Parameters
+
 * **extraField2** String
 
 ```crmscript

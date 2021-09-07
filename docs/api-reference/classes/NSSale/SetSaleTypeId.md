@@ -10,7 +10,8 @@ so.topic: reference
 
 The sale's type id
 
-**Parameter:** 
+## Parameters
+
 * **saleTypeId** Integer
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 The optional id of the contact of the person who submitted.
 
-**Parameter:** 
+## Parameters
+
 * **contactId** Integer
 
 ```crmscript

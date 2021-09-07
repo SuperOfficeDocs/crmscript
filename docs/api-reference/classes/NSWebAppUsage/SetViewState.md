@@ -10,7 +10,8 @@ so.topic: reference
 
 The SoProtocol(ViewState)
 
-**Parameter:** 
+## Parameters
+
 * **viewState** String
 
 ```crmscript

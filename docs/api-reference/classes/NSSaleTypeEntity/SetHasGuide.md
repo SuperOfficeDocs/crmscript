@@ -10,7 +10,8 @@ so.topic: reference
 
 Does this sale type have a guide attached
 
-**Parameter:** 
+## Parameters
+
 * **hasGuide** Bool
 
 ```crmscript

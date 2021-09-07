@@ -10,7 +10,8 @@ so.topic: reference
 
 Is Sign On functionality enabled
 
-**Parameter:** 
+## Parameters
+
 * **signOn** Bool
 
 ```crmscript

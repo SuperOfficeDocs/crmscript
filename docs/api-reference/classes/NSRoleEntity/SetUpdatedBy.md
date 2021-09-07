@@ -10,7 +10,8 @@ so.topic: reference
 
 Last updated by user
 
-**Parameter:** 
+## Parameters
+
 * **updatedBy** NSAssociate
 
 ```crmscript

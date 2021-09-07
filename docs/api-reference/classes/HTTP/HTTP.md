@@ -13,10 +13,10 @@ Class used to retrieve the result of an url
 ## Example
 
     HTTP h;
-    
+   
     Byte[] b = h.open("https://httpbin.org/");
     printLine(h.getValue("statusCode"));
-    
+   
     if (h.hasError())
       print(h.getErrorMessage());
     else

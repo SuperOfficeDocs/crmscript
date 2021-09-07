@@ -10,7 +10,8 @@ so.topic: reference
 
 The position. This is a predefined SuperOffice value, different from Title
 
-**Parameter:** 
+## Parameters
+
 * **personPosition** String
 
 ```crmscript

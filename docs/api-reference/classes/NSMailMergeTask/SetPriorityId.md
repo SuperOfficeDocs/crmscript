@@ -10,7 +10,8 @@ so.topic: reference
 
 Priority of task
 
-**Parameter:** 
+## Parameters
+
 * **priorityId** Integer
 
 ```crmscript

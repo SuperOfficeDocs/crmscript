@@ -10,7 +10,8 @@ so.topic: reference
 
 The time spent (minutes) for this message.
 
-**Parameter:** 
+## Parameters
+
 * **timeSpent** Integer
 
 ```crmscript

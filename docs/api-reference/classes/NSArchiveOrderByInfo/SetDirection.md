@@ -10,14 +10,19 @@ so.topic: reference
 
 Direction to order.
 
-**Parameter:** 
+## Parameters
+
 * **direction** Integer
-* Enum: 0 = ASC 
-* Enum: 1 = DESC 
+
+### Enum: direction
+
+* 0 = ASC
+* 1 = DESC
+
+## Example
 
 ```crmscript
 NSArchiveOrderByInfo thing;
 Integer direction;
 thing.SetDirection(direction);
 ```
-

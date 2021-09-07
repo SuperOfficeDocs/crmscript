@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSReportLabelLayoutEntity GetReportLabelLayoutEntity(Integer reportLabelLayoutEntityId);
 
-Gets a NSReportLabelLayoutEntity object.
+Gets an NSReportLabelLayoutEntity object.
 
 * **ReportLabelLayoutEntityId** The identifier of the NSReportLabelLayoutEntity object
 

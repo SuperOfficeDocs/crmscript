@@ -9,7 +9,7 @@ so.topic: reference
 # DeleteDocumentEntity(Integer documentEntity);
 
 Deletes the NSDocumentEntity
-  
+ 
 ## Parameters
 
 * **documentEntityId** The identity of the NSDocumentEntity to delete.

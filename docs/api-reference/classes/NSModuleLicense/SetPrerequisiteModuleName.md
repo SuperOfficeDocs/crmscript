@@ -10,7 +10,8 @@ so.topic: reference
 
 If set, specifies a module license needed before this license can be granted
 
-**Parameter:** 
+## Parameters
+
 * **prerequisiteModuleName** String
 
 ```crmscript

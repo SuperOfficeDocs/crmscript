@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetReasonSold(NSReasonSold reasonSold)
 
-**Parameter:** 
+## Parameters
+
 * **reasonSold** NSReasonSold
 
 ```crmscript

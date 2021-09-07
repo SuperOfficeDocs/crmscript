@@ -10,7 +10,8 @@ so.topic: reference
 
 The (short) name of this category. E.g. &apos;support&apos;.
 
-**Parameter:** 
+## Parameters
+
 * **name** String
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Signature that verifies that this row is correctly transferred from SuperLicense
 
-**Parameter:** 
+## Parameters
+
 * **signature** String
 
 ```crmscript

@@ -9,7 +9,7 @@ so.topic: reference
 # DeleteFormEntity(Integer formEntity);
 
 Deletes the NSFormEntity
-  
+ 
 ## Parameters
 
 * **formEntityId** The identity of the FormEntity to delete.

@@ -10,7 +10,8 @@ so.topic: reference
 
 The ERP fields that should be displayed
 
-**Parameter:** 
+## Parameters
+
 * **erpFields** NSFieldMetadata[]
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 The associate who created this ticket
 
-**Parameter:** 
+## Parameters
+
 * **createdBy** NSAssociate
 
 ```crmscript

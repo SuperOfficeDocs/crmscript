@@ -10,7 +10,8 @@ so.topic: reference
 
 Text with comments on why approval was granted (or rejected)
 
-**Parameter:** 
+## Parameters
+
 * **approvedText** String
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Foreign key to CRM quote (the conceptual parent). Owning Quote of this Quote Version.
 
-**Parameter:** 
+## Parameters
+
 * **quoteId** Integer
 
 ```crmscript

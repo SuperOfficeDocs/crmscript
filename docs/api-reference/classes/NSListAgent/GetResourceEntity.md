@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSResourceEntity GetResourceEntity(Integer resourceEntityId);
 
-Gets a NSResourceEntity object.
+Gets an NSResourceEntity object.
 
 * **ResourceEntityId** The identifier of the NSResourceEntity object
 

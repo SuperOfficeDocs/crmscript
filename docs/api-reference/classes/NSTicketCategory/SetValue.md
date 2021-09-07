@@ -10,7 +10,8 @@ so.topic: reference
 
 Set the name of the NSTicketCategory item.
 
-**Parameter:** 
+## Parameters
+
 * **value** String NSTicketCategory name.
 
 ```crmscript

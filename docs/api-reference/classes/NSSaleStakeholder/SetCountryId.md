@@ -10,7 +10,8 @@ so.topic: reference
 
 Country id* primary key
 
-**Parameter:** 
+## Parameters
+
 * **countryId** Integer
 
 ```crmscript

@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSUserDefinedFieldInfo GetUserDefinedFieldInfo(Integer userDefinedFieldInfoId);
 
-Gets a NSUserDefinedFieldInfo object.
+Gets an NSUserDefinedFieldInfo object.
 
 ## Parameters
 

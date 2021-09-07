@@ -10,7 +10,8 @@ so.topic: reference
 
 Id of the person causing the activity.
 
-**Parameter:** 
+## Parameters
+
 * **activityPersonId** Integer
 
 ```crmscript

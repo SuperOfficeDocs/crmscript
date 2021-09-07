@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSForeignAppEntity GetForeignAppEntity(Integer foreignAppEntityId);
 
-Gets a NSForeignAppEntity object.
+Gets an NSForeignAppEntity object.
 
 ## Parameters
 

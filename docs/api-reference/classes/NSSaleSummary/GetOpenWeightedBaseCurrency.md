@@ -8,7 +8,7 @@ so.topic: reference
 
 # Float GetOpenWeightedBaseCurrency()
 
-Weighted sum for all open within the period in default currency for the installation 
+Weighted sum for all open within the period in default currency for the installation
 
 **Returns:** Float
 

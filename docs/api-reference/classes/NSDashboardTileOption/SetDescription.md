@@ -10,7 +10,8 @@ so.topic: reference
 
 Option description, visible to users
 
-**Parameter:** 
+## Parameters
+
 * **description** String
 
 ```crmscript

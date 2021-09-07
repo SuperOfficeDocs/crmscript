@@ -10,7 +10,8 @@ so.topic: reference
 
 Descriptive text for the current stage
 
-**Parameter:** 
+## Parameters
+
 * **progressDescription** String
 
 ```crmscript

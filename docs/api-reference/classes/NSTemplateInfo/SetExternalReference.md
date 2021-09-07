@@ -10,7 +10,8 @@ so.topic: reference
 
 Unique key that identifies the document so it can be retrieved
 
-**Parameter:** 
+## Parameters
+
 * **externalReference** String
 
 ```crmscript

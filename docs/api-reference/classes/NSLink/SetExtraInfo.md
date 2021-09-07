@@ -10,7 +10,8 @@ so.topic: reference
 
 Extrainfo for link. Use for information that does not have a primary key
 
-**Parameter:** 
+## Parameters
+
 * **extraInfo** String
 
 ```crmscript

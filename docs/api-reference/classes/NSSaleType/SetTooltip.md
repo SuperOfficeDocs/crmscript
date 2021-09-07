@@ -10,7 +10,8 @@ so.topic: reference
 
 Set the tooltip description for the NSSaleType list item.
 
-**Parameter:** 
+## Parameters
+
 * **tooltip** String NSSaleType tooltip description.
 
 ```crmscript

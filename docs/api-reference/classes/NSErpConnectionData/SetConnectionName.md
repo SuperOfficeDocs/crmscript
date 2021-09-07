@@ -10,7 +10,8 @@ so.topic: reference
 
 The name of the connection
 
-**Parameter:** 
+## Parameters
+
 * **connectionName** String
 
 ```crmscript

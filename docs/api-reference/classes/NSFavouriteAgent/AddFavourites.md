@@ -12,7 +12,9 @@ Add a list of record ids as favourites for an associate
 
 ## Parameters
 
-* **tableName** Table name, transformed to and from numeric table id by the service layer.
-* **recordIds** 
-* **associateId** 
-* **extraInfo** 
+| Parameter | Type | Description |
+|---|---|---|
+| tableName | String | Table name, transformed to and from numeric table id by the service layer. |
+| recordIds | Integer[] | |
+| associateId | Integer | |
+| extraInfo | String | |

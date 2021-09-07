@@ -10,7 +10,8 @@ so.topic: reference
 
 The script is inside this hierarchy folder
 
-**Parameter:** 
+## Parameters
+
 * **hierarchyId** Integer
 
 ```crmscript

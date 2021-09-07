@@ -10,7 +10,8 @@ so.topic: reference
 
 The programmatic column name, including any required prefixes
 
-**Parameter:** 
+## Parameters
+
 * **name** String
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 When was the e-mail sent
 
-**Parameter:** 
+## Parameters
+
 * **sent** DateTime
 
 ```crmscript

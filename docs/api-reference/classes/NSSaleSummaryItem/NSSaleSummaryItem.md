@@ -8,4 +8,4 @@ so.topic: reference
 
 # NSSaleSummaryItem
 
-Sale Summary item 
+Sale Summary item

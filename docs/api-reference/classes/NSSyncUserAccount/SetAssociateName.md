@@ -10,7 +10,8 @@ so.topic: reference
 
 The username of the associate owning the account
 
-**Parameter:** 
+## Parameters
+
 * **associateName** String
 
 ```crmscript

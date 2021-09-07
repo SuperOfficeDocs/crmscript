@@ -10,7 +10,8 @@ so.topic: reference
 
 The date/time this selection was last loaded (selectionentity fetched)
 
-**Parameter:** 
+## Parameters
+
 * **lastLoaded** DateTime
 
 ```crmscript

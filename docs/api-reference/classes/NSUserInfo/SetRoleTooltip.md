@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetRoleTooltip(String roleTooltip)
 
-**Parameter:** 
+## Parameters
+
 * **roleTooltip** String
 
 ```crmscript

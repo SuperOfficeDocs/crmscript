@@ -10,7 +10,8 @@ so.topic: reference
 
 Default Timespan value* number of minutes.
 
-**Parameter:** 
+## Parameters
+
 * **defaultValue** Integer
 
 ```crmscript

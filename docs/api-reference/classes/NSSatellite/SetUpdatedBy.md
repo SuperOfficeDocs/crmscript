@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetUpdatedBy(NSAssociate updatedBy)
 
-**Parameter:** 
+## Parameters
+
 * **updatedBy** NSAssociate
 
 ```crmscript

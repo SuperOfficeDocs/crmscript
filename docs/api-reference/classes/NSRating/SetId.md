@@ -10,7 +10,8 @@ so.topic: reference
 
 Set the primary key (id) for the NSRating
 
-**Parameter:** 
+## Parameters
+
 * **id** Integer Rating id.
 
 ```crmscript

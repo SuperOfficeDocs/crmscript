@@ -10,9 +10,11 @@ so.topic: reference
 
 Make stuff similar to what happens in the win client
 
+**Returns:** NSUserDefinedFieldInfo
+
 ## Parameters
 
-* **info** 
-* **selectedListId** 
-
-**Returns:** NSUserDefinedFieldInfo
+| Parameter | Type | Description |
+|---|---|---|
+| info | | |
+| selectedListId | | |

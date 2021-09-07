@@ -10,7 +10,8 @@ so.topic: reference
 
 Ticket the session is connected to* could be empty if we don't know exactly.
 
-**Parameter:** 
+## Parameters
+
 * **ticket** Ticket
 
 ```crmscript

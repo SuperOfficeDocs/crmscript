@@ -10,7 +10,8 @@ so.topic: reference
 
 Owning sale, if any (may be 0)
 
-**Parameter:** 
+## Parameters
+
 * **saleId** Integer
 
 ```crmscript

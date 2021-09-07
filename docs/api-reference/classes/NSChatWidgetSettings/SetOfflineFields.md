@@ -8,19 +8,24 @@ so.topic: reference
 
 # SetOfflineFields(NSWidgetRequiredFields offlineFields)
 
-Required field when creating ticket in offline mode
+Required field when creating a ticket in offline mode
 
-**Parameter:** 
+## Parameters
+
 * **offlineFields** NSWidgetRequiredFields
-* Enum: 0 = None 
-* Enum: 1 = Email 
-* Enum: 2 = Name 
-* Enum: 4 = Company 
-* Enum: 8 = Phone 
+
+### Enum: NSWidgetRequiredFields
+
+* 0 = None
+* 1 = Email
+* 2 = Name
+* 4 = Company
+* 8 = Phone
+
+## Example
 
 ```crmscript
 NSChatWidgetSettings thing;
 NSWidgetRequiredFields offlineFields;
 thing.SetOfflineFields(offlineFields);
 ```
-

@@ -10,7 +10,8 @@ so.topic: reference
 
 Identifier for a sale
 
-**Parameter:** 
+## Parameters
+
 * **saleId** Integer
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 External reference for document plugin to resolve document identity (Notes ID, e-mail message ID, whatever)
 
-**Parameter:** 
+## Parameters
+
 * **externalRef** String
 
 ```crmscript

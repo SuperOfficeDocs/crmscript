@@ -10,7 +10,8 @@ so.topic: reference
 
 Publication valid to (inclusive)
 
-**Parameter:** 
+## Parameters
+
 * **publishTo** DateTime
 
 ```crmscript

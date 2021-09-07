@@ -10,7 +10,8 @@ so.topic: reference
 
 Array with custom tags and values. Array may be of unlimited height, but need to be exactly 2 in width.
 
-**Parameter:** 
+## Parameters
+
 * **customTags** String[]
 
 ```crmscript

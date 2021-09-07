@@ -10,7 +10,8 @@ so.topic: reference
 
 The tiles associated with this dashboard
 
-**Parameter:** 
+## Parameters
+
 * **tiles** NSDashboardTile[]
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Primary group membership, see UserGroupLink for secondary memberships
 
-**Parameter:** 
+## Parameters
+
 * **groupIdx** Integer
 
 ```crmscript

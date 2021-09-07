@@ -10,7 +10,8 @@ so.topic: reference
 
 Special parameter for the special_type.
 
-**Parameter:** 
+## Parameters
+
 * **specialParam** String
 
 ```crmscript

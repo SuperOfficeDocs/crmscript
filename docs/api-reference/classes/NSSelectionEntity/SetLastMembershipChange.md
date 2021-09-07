@@ -10,7 +10,8 @@ so.topic: reference
 
 The date/time the membership the selection last changed. Dynamic: change of criteria; Static: add/remove members; Combined: change of algorithm
 
-**Parameter:** 
+## Parameters
+
 * **lastMembershipChange** DateTime
 
 ```crmscript

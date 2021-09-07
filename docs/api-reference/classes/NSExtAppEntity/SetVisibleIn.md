@@ -10,83 +10,88 @@ so.topic: reference
 
 The application is visible in
 
-**Parameter:** 
+## Parameters
+
 * **visibleIn** Integer
-* Enum: 0 = Invisible 
-* Enum: 1 = ToolboxMenu 
-* Enum: 2 = NavigatorButton 
-* Enum: 3 = ViewMenu 
-* Enum: 4 = SelectionTaskCard 
-* Enum: 5 = ContactCard 
-* Enum: 6 = ContactArchive 
-* Enum: 7 = ProjectCard 
-* Enum: 8 = ProjectArchive 
-* Enum: 9 = SaleCard 
-* Enum: 10 = PersonCard 
-* Enum: 11 = ActivityDialog 
-* Enum: 12 = DocumentDialog 
-* Enum: 13 = BrowserPanel 
-* Enum: 14 = ContSelectionTask 
-* Enum: 15 = AppntSelectionTask 
-* Enum: 16 = SaleSelectionTask 
-* Enum: 17 = DocSelectionTask 
-* Enum: 18 = ProjSelectionTask 
-* Enum: 19 = CompanyMinicard 
-* Enum: 20 = ProjectMinicard 
-* Enum: 21 = DiaryMinicard 
-* Enum: 22 = SelectionMinicard 
-* Enum: 23 = ButtonPanelTask 
-* Enum: 24 = AppointmentDialogTask 
-* Enum: 25 = SaleDialogTask 
-* Enum: 26 = DocumentDialogTask 
-* Enum: 27 = PersonDialogTask 
-* Enum: 28 = SaleMinicard 
-* Enum: 29 = SaleArchive 
-* Enum: 30 = AppntSelectionShadowTask 
-* Enum: 31 = SaleSelectionShadowTask 
-* Enum: 32 = DocSelectionShadowTask 
-* Enum: 33 = ProjSelectionShadowTask 
-* Enum: 34 = DiaryArchive 
-* Enum: 35 = SelectionContactArchive 
-* Enum: 36 = SelectionProjectArchive 
-* Enum: 37 = SelectionSaleArchive 
-* Enum: 38 = SelectionAppointmentArchive 
-* Enum: 39 = SelectionDocumentArchive 
-* Enum: 40 = ContSelectionCustomTask 
-* Enum: 41 = AppntSelectionCustomTask 
-* Enum: 42 = SaleSelectionCustomTask 
-* Enum: 43 = DocSelectionCustomTask 
-* Enum: 44 = ProjSelectionCustomTask 
-* Enum: 45 = CustomArchiveMiniCard 
-* Enum: 46 = SelectionCard 
-* Enum: 47 = ReportMinicard 
-* Enum: 48 = QuoteDialog 
-* Enum: 49 = QuoteDialogTask 
-* Enum: 50 = QuoteDialogArchive 
-* Enum: 51 = QuoteLineDialogTask 
-* Enum: 52 = QuoteLineDialog 
-* Enum: 53 = QuoteLineSelectionMainTask 
-* Enum: 54 = QuoteLineSelectionShadowTask 
-* Enum: 55 = SelectionQuoteLineArchive 
-* Enum: 56 = QuoteLineSelectionCustomTask 
-* Enum: 57 = FindSystem 
-* Enum: 58 = MailingSelectionTask 
-* Enum: 59 = ContactSelectionMailingsTask 
-* Enum: 60 = AppointmentSelectionMailingsTask 
-* Enum: 61 = SaleSelectionMailingsTask 
-* Enum: 62 = DocumentSelectionMailingsTask 
-* Enum: 63 = ProjectSelectionMailingsTask 
-* Enum: 64 = QuoteLineSelectionMailingsTask 
-* Enum: 65 = TopPanelNewMenu 
-* Enum: 66 = Dashboard 
-* Enum: 67 = PersonArchive 
-* Enum: 68 = PersonMinicard 
-* Enum: 69 = CompanyCardTask 
-* Enum: 70 = ProjectCardTask 
+
+### Enum: visibleIn
+
+* 0 = Invisible
+* 1 = ToolboxMenu
+* 2 = NavigatorButton
+* 3 = ViewMenu
+* 4 = SelectionTaskCard
+* 5 = ContactCard
+* 6 = ContactArchive
+* 7 = ProjectCard
+* 8 = ProjectArchive
+* 9 = SaleCard
+* 10 = PersonCard
+* 11 = ActivityDialog
+* 12 = DocumentDialog
+* 13 = BrowserPanel
+* 14 = ContSelectionTask
+* 15 = AppntSelectionTask
+* 16 = SaleSelectionTask
+* 17 = DocSelectionTask
+* 18 = ProjSelectionTask
+* 19 = CompanyMinicard
+* 20 = ProjectMinicard
+* 21 = DiaryMinicard
+* 22 = SelectionMinicard
+* 23 = ButtonPanelTask
+* 24 = AppointmentDialogTask
+* 25 = SaleDialogTask
+* 26 = DocumentDialogTask
+* 27 = PersonDialogTask
+* 28 = SaleMinicard
+* 29 = SaleArchive
+* 30 = AppntSelectionShadowTask
+* 31 = SaleSelectionShadowTask
+* 32 = DocSelectionShadowTask
+* 33 = ProjSelectionShadowTask
+* 34 = DiaryArchive
+* 35 = SelectionContactArchive
+* 36 = SelectionProjectArchive
+* 37 = SelectionSaleArchive
+* 38 = SelectionAppointmentArchive
+* 39 = SelectionDocumentArchive
+* 40 = ContSelectionCustomTask
+* 41 = AppntSelectionCustomTask
+* 42 = SaleSelectionCustomTask
+* 43 = DocSelectionCustomTask
+* 44 = ProjSelectionCustomTask
+* 45 = CustomArchiveMiniCard
+* 46 = SelectionCard
+* 47 = ReportMinicard
+* 48 = QuoteDialog
+* 49 = QuoteDialogTask
+* 50 = QuoteDialogArchive
+* 51 = QuoteLineDialogTask
+* 52 = QuoteLineDialog
+* 53 = QuoteLineSelectionMainTask
+* 54 = QuoteLineSelectionShadowTask
+* 55 = SelectionQuoteLineArchive
+* 56 = QuoteLineSelectionCustomTask
+* 57 = FindSystem
+* 58 = MailingSelectionTask
+* 59 = ContactSelectionMailingsTask
+* 60 = AppointmentSelectionMailingsTask
+* 61 = SaleSelectionMailingsTask
+* 62 = DocumentSelectionMailingsTask
+* 63 = ProjectSelectionMailingsTask
+* 64 = QuoteLineSelectionMailingsTask
+* 65 = TopPanelNewMenu
+* 66 = Dashboard
+* 67 = PersonArchive
+* 68 = PersonMinicard
+* 69 = CompanyCardTask
+* 70 = ProjectCardTask
+
+## Example
 
 ```crmscript
 NSExtAppEntity thing;
 Integer visibleIn;
 thing.SetVisibleIn(visibleIn);
 ```
-

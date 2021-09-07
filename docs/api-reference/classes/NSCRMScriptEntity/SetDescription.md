@@ -10,7 +10,8 @@ so.topic: reference
 
 Optional description of what this script is used for.
 
-**Parameter:** 
+## Parameters
+
 * **description** String
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 The person that created the device.
 
-**Parameter:** 
+## Parameters
+
 * **createdBy** String
 
 ```crmscript

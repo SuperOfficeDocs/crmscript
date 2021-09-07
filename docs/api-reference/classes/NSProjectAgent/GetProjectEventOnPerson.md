@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSProjectEvent GetProjectEventOnPerson(Integer projectId, Integer personId)
 
-Gets a NSProjectEvent object from a project and a person.
+Gets an NSProjectEvent object from a project and a person.
 
 ## Parameters
 

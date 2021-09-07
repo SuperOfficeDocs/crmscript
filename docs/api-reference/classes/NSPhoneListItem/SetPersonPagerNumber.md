@@ -10,7 +10,8 @@ so.topic: reference
 
 Actual phone number as eneterd by the user
 
-**Parameter:** 
+## Parameters
+
 * **personPagerNumber** String
 
 ```crmscript

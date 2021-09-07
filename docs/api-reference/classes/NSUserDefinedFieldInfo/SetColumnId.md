@@ -10,7 +10,8 @@ so.topic: reference
 
 The ID of the database column this field corresponds to
 
-**Parameter:** 
+## Parameters
+
 * **columnId** Integer
 
 ```crmscript

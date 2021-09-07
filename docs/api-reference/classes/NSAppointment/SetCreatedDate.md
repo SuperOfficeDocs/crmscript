@@ -10,7 +10,8 @@ so.topic: reference
 
 Appointment creation date
 
-**Parameter:** 
+## Parameters
+
 * **createdDate** DateTime
 
 ```crmscript

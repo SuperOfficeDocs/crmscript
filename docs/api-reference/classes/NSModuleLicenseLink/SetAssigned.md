@@ -10,7 +10,8 @@ so.topic: reference
 
 Is the module license assigned to a given user
 
-**Parameter:** 
+## Parameters
+
 * **assigned** Bool
 
 ```crmscript

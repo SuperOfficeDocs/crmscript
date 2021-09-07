@@ -10,7 +10,8 @@ so.topic: reference
 
 The display name of the group to display to the user.
 
-**Parameter:** 
+## Parameters
+
 * **displayName** String
 
 ```crmscript

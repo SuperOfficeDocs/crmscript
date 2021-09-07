@@ -10,7 +10,8 @@ so.topic: reference
 
 Identifier for a person
 
-**Parameter:** 
+## Parameters
+
 * **personId** Integer
 
 ```crmscript

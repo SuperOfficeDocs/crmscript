@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSWebPanelEntity[] GetWebPanelList()
 
-Return a list of all web panels. 
+Return a list of all web panels.
 
 **Returns:** NSWebPanelEntity[]
 

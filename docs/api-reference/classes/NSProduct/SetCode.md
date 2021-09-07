@@ -10,7 +10,8 @@ so.topic: reference
 
 The product code / article number in the product supplier system.
 
-**Parameter:** 
+## Parameters
+
 * **code** String
 
 ```crmscript

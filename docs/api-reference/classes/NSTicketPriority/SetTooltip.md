@@ -10,7 +10,8 @@ so.topic: reference
 
 Set the tooltip description for the NSTicketPriority list item.
 
-**Parameter:** 
+## Parameters
+
 * **tooltip** String NSTicketPriority tooltip description.
 
 ```crmscript

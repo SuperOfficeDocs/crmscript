@@ -10,16 +10,21 @@ so.topic: reference
 
 The type of booking the appointment represents
 
-**Parameter:** 
+## Parameters
+
 * **bookingType** Integer
-* Enum: 0 = Unknown 
-* Enum: 1 = None 
-* Enum: 2 = Owner 
-* Enum: 3 = Participant 
+
+### bookingType
+
+* 0 = Unknown
+* 1 = None
+* 2 = Owner
+* 3 = Participant
+
+## Example
 
 ```crmscript
 NSAppointment thing;
 Integer bookingType;
 thing.SetBookingType(bookingType);
 ```
-

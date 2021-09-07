@@ -10,7 +10,8 @@ so.topic: reference
 
 The id of the Audience layout this configuration setting belongs to
 
-**Parameter:** 
+## Parameters
+
 * **audienceLayoutId** Integer
 
 ```crmscript

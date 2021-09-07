@@ -9,7 +9,7 @@ so.topic: reference
 # DeleteTriggerScriptEntity(Integer triggerScriptEntity);
 
 Deletes the NSTriggerScriptEntity
-  
+ 
 ## Parameters
 
 * **triggerScriptEntityId** The identity of the NSTriggerScriptEntity to delete.

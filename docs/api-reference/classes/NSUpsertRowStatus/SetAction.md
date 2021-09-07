@@ -10,13 +10,14 @@ so.topic: reference
 
 Actiona taken for row
 
-**Parameter:** 
+## Parameters
+
 * **action** Integer
-* Enum: 1 = Inserted 
-* Enum: 2 = Updated 
-* Enum: 3 = NoUpdateNeeded 
-* Enum: 4 = Deleted 
-* Enum: 5 = ColumnsZeroed 
+* Enum: 1 = Inserted
+* Enum: 2 = Updated
+* Enum: 3 = NoUpdateNeeded
+* Enum: 4 = Deleted
+* Enum: 5 = ColumnsZeroed
 
 ```crmscript
 NSUpsertRowStatus thing;

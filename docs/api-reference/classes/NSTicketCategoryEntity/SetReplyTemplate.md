@@ -10,7 +10,8 @@ so.topic: reference
 
 Reply template to merge with messages posted in this category
 
-**Parameter:** 
+## Parameters
+
 * **replyTemplate** Integer
 
 ```crmscript

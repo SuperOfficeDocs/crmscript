@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSSatellite GetSatellite(Integer satelliteId);
 
-Gets a NSSatellite object.
+Gets an NSSatellite object.
 
 ## Parameters
 

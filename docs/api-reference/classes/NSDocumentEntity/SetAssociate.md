@@ -10,7 +10,8 @@ so.topic: reference
 
 The owner of the document* the associate whose checklist the document is in.
 
-**Parameter:** 
+## Parameters
+
 * **associate** NSAssociate
 
 ```crmscript

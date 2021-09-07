@@ -10,7 +10,8 @@ so.topic: reference
 
 Name of the history item, for instance contact name
 
-**Parameter:** 
+## Parameters
+
 * **name** String
 
 ```crmscript

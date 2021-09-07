@@ -10,7 +10,8 @@ so.topic: reference
 
 The id of the login row
 
-**Parameter:** 
+## Parameters
+
 * **loginId** Integer
 
 ```crmscript

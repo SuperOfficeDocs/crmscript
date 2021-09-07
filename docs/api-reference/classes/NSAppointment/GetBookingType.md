@@ -12,13 +12,16 @@ The type of booking the appointment represents
 
 **Returns:** Integer
 
-* Enum: 0 = Unknown 
-* Enum: 1 = None 
-* Enum: 2 = Owner 
-* Enum: 3 = Participant 
+## Enum: BookingType
+
+* 0 = Unknown
+* 1 = None
+* 2 = Owner
+* 3 = Participant
+
+## Example
 
 ```crmscript
 NSAppointment thing;
 Integer bookingType  = thing.GetBookingType();
 ```
-

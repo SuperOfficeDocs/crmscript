@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSListEntity SaveListEntityByName(String name, NSListEntity listEntity)
 
-Save a NSListEntity resolved by the provided name.
+Save an NSListEntity resolved by the provided name.
 
 ## Parameters
 

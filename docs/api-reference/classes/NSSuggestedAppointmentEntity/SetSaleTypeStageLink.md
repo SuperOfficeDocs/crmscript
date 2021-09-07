@@ -10,7 +10,8 @@ so.topic: reference
 
 Sale type and stage link info
 
-**Parameter:** 
+## Parameters
+
 * **saleTypeStageLink** NSSaleTypeStageLink
 
 ```crmscript

@@ -13,12 +13,15 @@ Create default NSUser providing the user type.  Only System and Anonymous users 
 ## Parameters
 
 * **userType** Type of associate for the user.  This can only be System or Anonymous. Use CreateDefaultUserFromUserTypeAndPersonId to create internal (i.e. Employee) or external users.
-* Enum: 0 = Unknown 
-* Enum: 1 = InternalAssociate 
-* Enum: 2 = ResourceAssociate 
-* Enum: 3 = ExternalAssociate 
-* Enum: 4 = AnonymousAssociate 
-* Enum: 5 = SystemAssociate 
+
+### Enum: associateType
+
+* 0 = Unknown
+* 1 = InternalAssociate
+* 2 = ResourceAssociate
+* 3 = ExternalAssociate
+* 4 = AnonymousAssociate
+* 5 = SystemAssociate
 
 **Returns:** NSUser
 
@@ -27,4 +30,3 @@ NSUserAgent agent;
 Integer userType;
 NSUser res = agent.CreateDefaultUserFromUserType(userType);
 ```
-

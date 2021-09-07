@@ -10,7 +10,8 @@ so.topic: reference
 
 True if freetext search enabled
 
-**Parameter:** 
+## Parameters
+
 * **freeTextEnabled** Bool
 
 ```crmscript

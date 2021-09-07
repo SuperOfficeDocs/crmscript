@@ -10,7 +10,8 @@ so.topic: reference
 
 The datetime for when the ticket first was read by a user.
 
-**Parameter:** 
+## Parameters
+
 * **firstReadByUser** DateTime
 
 ```crmscript

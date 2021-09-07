@@ -10,7 +10,8 @@ so.topic: reference
 
 Academic title, populated from Salutation list but can be overwritten with anything at all
 
-**Parameter:** 
+## Parameters
+
 * **salutation** String
 
 ```crmscript

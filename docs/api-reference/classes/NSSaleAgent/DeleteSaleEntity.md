@@ -9,7 +9,7 @@ so.topic: reference
 # DeleteSaleEntity(Integer saleEntity);
 
 Deletes the NSSaleEntity
-  
+ 
 ## Parameters
 
 * **saleEntityId** The identity of the SaleEntity to delete.

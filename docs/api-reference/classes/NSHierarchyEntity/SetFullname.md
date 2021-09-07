@@ -10,7 +10,8 @@ so.topic: reference
 
 The full name of this category, i.e. Foo/bar/test.
 
-**Parameter:** 
+## Parameters
+
 * **fullname** String
 
 ```crmscript

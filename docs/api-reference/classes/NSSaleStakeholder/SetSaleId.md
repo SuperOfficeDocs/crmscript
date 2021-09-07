@@ -10,7 +10,8 @@ so.topic: reference
 
 Parent sale
 
-**Parameter:** 
+## Parameters
+
 * **saleId** Integer
 
 ```crmscript

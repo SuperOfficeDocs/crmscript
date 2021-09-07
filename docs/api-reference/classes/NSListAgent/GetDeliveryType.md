@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSDeliveryType GetDeliveryType(Integer deliveryTypeId);
 
-Gets a NSDeliveryType object.
+Gets an NSDeliveryType object.
 
 ## Parameters
 

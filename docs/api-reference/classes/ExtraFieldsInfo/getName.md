@@ -16,9 +16,9 @@ This function returns the descriptive name (not the database name) of the curren
 This code prints all names of extra fields:
 
     ExtraFieldsInfo e;
-    
+   
     e.getExtraFields("person");
-    
+   
     while(!e.eof()) {
       print(e.getName());
       e.next();

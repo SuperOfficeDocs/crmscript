@@ -10,7 +10,8 @@ so.topic: reference
 
 Get the full name for the primary person (customer)
 
-**Parameter:** 
+## Parameters
+
 * **personFullname** String
 
 ```crmscript

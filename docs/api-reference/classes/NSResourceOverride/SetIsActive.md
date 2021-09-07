@@ -10,7 +10,8 @@ so.topic: reference
 
 Is this override active
 
-**Parameter:** 
+## Parameters
+
 * **isActive** Bool
 
 ```crmscript

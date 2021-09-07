@@ -10,7 +10,8 @@ so.topic: reference
 
 Allow blank  as a valid value
 
-**Parameter:** 
+## Parameters
+
 * **allowBlank** Bool
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 True if the ListItem is hidden
 
-**Parameter:** 
+## Parameters
+
 * **hidden** Bool
 
 ```crmscript

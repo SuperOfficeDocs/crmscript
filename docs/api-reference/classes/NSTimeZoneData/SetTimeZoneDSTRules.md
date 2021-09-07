@@ -10,7 +10,8 @@ so.topic: reference
 
 Rules for daylight savings time
 
-**Parameter:** 
+## Parameters
+
 * **timeZoneDSTRules** NSTimeZoneRuleDictionary
 
 ```crmscript

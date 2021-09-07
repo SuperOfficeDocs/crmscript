@@ -10,7 +10,8 @@ so.topic: reference
 
 Who last loaded this selection
 
-**Parameter:** 
+## Parameters
+
 * **lastLoadedBy** Integer
 
 ```crmscript

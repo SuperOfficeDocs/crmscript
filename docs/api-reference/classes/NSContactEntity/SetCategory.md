@@ -10,7 +10,8 @@ so.topic: reference
 
 The category that is set on the company. The GUI forces the user to enter a category type
 
-**Parameter:** 
+## Parameters
+
 * **category** NSCategory
 
 ```crmscript

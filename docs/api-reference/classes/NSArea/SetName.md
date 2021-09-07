@@ -10,7 +10,8 @@ so.topic: reference
 
 Area name
 
-**Parameter:** 
+## Parameters
+
 * **name** String
 
 ```crmscript

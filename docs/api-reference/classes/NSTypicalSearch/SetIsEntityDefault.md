@@ -10,7 +10,8 @@ so.topic: reference
 
 Indicates if this is the default set of criteria for an entity
 
-**Parameter:** 
+## Parameters
+
 * **isEntityDefault** Integer
 
 ```crmscript

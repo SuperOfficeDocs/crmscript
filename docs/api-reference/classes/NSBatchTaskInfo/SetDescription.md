@@ -10,7 +10,8 @@ so.topic: reference
 
 Description of the task.
 
-**Parameter:** 
+## Parameters
+
 * **description** String
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Set the primary key (id) for the NSBusiness
 
-**Parameter:** 
+## Parameters
+
 * **id** Integer NSBusiness id.
 
 ```crmscript

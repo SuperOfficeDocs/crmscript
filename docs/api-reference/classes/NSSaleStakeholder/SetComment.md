@@ -10,7 +10,8 @@ so.topic: reference
 
 Optional comment text
 
-**Parameter:** 
+## Parameters
+
 * **comment** String
 
 ```crmscript

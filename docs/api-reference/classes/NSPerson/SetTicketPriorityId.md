@@ -10,7 +10,8 @@ so.topic: reference
 
 Ticket priority ID
 
-**Parameter:** 
+## Parameters
+
 * **ticketPriorityId** Integer
 
 ```crmscript

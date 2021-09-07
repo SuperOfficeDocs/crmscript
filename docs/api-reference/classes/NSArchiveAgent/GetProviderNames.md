@@ -10,7 +10,7 @@ so.topic: reference
 
 Return list of all archive provider names
 
-**Returns:** Array of all archive provider names. 
+**Returns:** Array of all archive provider names.
 
 ```crmscript
 NSArchiveAgent agent;

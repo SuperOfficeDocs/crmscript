@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSDocument[] GetPersonDocumentsByDate(Integer personId, Bool includeProjectDocuments, DateTime startTime, DateTime endTime, Integer count)
 
-Method that returns a specified number of document appointments within a time range. The document appointments belong to the person specified. 
+Method that returns a specified number of document appointments within a time range. The document appointments belong to the person specified.
 
 ## Parameters
 

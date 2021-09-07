@@ -10,7 +10,8 @@ so.topic: reference
 
 The name of the dictionary step (from attribute, not class name)
 
-**Parameter:** 
+## Parameters
+
 * **name** String
 
 ```crmscript

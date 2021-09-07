@@ -10,7 +10,8 @@ so.topic: reference
 
 True if free, false if busy
 
-**Parameter:** 
+## Parameters
+
 * **isFree** Bool
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Appoinmtments preferred timezone location.
 
-**Parameter:** 
+## Parameters
+
 * **preferredTZLocation** Integer
 
 ```crmscript

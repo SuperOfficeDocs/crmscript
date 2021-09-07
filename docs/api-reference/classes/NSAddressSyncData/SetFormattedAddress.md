@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetFormattedAddress(String formattedAddress)
 
-**Parameter:** 
+## Parameters
+
 * **formattedAddress** String
 
 ```crmscript

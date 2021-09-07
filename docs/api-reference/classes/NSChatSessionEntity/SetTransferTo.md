@@ -10,7 +10,8 @@ so.topic: reference
 
 User agent that has a pending transfer of the chat session
 
-**Parameter:** 
+## Parameters
+
 * **transferTo** NSAssociate
 
 ```crmscript

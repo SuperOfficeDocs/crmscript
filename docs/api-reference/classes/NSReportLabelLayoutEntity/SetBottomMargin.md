@@ -10,7 +10,8 @@ so.topic: reference
 
 Bottom margin in twips
 
-**Parameter:** 
+## Parameters
+
 * **bottomMargin** Integer
 
 ```crmscript

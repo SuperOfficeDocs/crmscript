@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSEMailSOInfo GetEMailSOInfo(Integer eMailSOInfoId);
 
-Gets a NSEMailSOInfo object.
+Gets an NSEMailSOInfo object.
 
 ## Parameters
 

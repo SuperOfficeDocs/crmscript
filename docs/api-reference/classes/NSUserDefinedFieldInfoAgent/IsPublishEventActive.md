@@ -10,17 +10,22 @@ so.topic: reference
 
 Check if the publish event is active for the given type
 
+**Returns:** Bool
+
 ## Parameters
 
-* **type** 
-* Enum: 0 = Invalid 
-* Enum: 7 = Contact 
-* Enum: 8 = Person 
-* Enum: 9 = Project 
-* Enum: 10 = Sale 
-* Enum: 11 = Temp 
-* Enum: 12 = Appointment 
-* Enum: 13 = Document 
-* Enum: 14 = None 
+| Parameter | Type | Description |
+|---|---|---|
+| type | Integer | |
 
-**Returns:** Bool
+### type
+
+* Enum: 0 = Invalid
+* Enum: 7 = Contact
+* Enum: 8 = Person
+* Enum: 9 = Project
+* Enum: 10 = Sale
+* Enum: 11 = Temp
+* Enum: 12 = Appointment
+* Enum: 13 = Document
+* Enum: 14 = None

@@ -8,8 +8,9 @@ so.topic: reference
 
 # SetPublishFrom(DateTime publishFrom)
 
-Set the publish from date on a NSDocumentEntity.
+Set the publish from date on an NSDocumentEntity.
 
-**Parameter:** 
+## Parameters
+
 * **publishFrom** DateTime.
 

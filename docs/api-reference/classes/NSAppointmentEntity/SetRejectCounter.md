@@ -10,7 +10,8 @@ so.topic: reference
 
 How many invitees have rejected this appointment
 
-**Parameter:** 
+## Parameters
+
 * **rejectCounter** Integer
 
 ```crmscript

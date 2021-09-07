@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSSaleStakeholder GetSaleStakeholder(Integer saleStakeholderId);
 
-Gets a NSSaleStakeholder object.
+Gets an NSSaleStakeholder object.
 
 ## Parameters
 

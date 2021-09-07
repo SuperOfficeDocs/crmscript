@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSProductFamily GetProductFamily(Integer productFamilyId);
 
-Gets a NSProductFamily object.
+Gets an NSProductFamily object.
 
 ## Parameters
 

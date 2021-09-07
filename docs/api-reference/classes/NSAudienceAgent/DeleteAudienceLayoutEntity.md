@@ -9,7 +9,7 @@ so.topic: reference
 # DeleteAudienceLayoutEntity(Integer audienceLayoutEntity);
 
 Deletes the NSAudienceLayoutEntity
-  
+ 
 ## Parameters
 
 * **audienceLayoutEntityId** The identity of the NSAudienceLayoutEntity to delete.

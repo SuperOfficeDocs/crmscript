@@ -10,7 +10,8 @@ so.topic: reference
 
 Url referencing the actual privacy statement
 
-**Parameter:** 
+## Parameters
+
 * **privacyStatementUrl** String
 
 ```crmscript

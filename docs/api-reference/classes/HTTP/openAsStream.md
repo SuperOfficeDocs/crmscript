@@ -9,7 +9,7 @@ so.topic: reference
 
 # HTTP.openAsStream(String p_url)
 
-This function opens an url and returns the result as a NSStream.
+This function opens an url and returns the result as an NSStream.
 
 ## Parameters
 
@@ -18,9 +18,9 @@ This function opens an url and returns the result as a NSStream.
 ## Example
 
     HTTP h;
-    
+   
     NSStream b = h.openAsStream("https://httpbin.org/");
-    
+   
     if (h.hasError())
       print(h.getErrorMessage());
     else

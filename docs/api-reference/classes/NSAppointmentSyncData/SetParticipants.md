@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetParticipants(ParticipantSyncData[] participants)
 
-**Parameter:** 
+## Parameters
+
 * **participants** ParticipantSyncData[]
 
 ```crmscript

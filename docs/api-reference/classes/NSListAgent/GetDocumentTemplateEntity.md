@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSDocumentTemplateEntity GetDocumentTemplateEntity(Integer documentTemplateEntityId);
 
-Gets a NSDocumentTemplateEntity object.
+Gets an NSDocumentTemplateEntity object.
 
 ## Parameters
 

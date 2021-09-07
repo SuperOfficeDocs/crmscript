@@ -10,7 +10,8 @@ so.topic: reference
 
 Length of the second counter period
 
-**Parameter:** 
+## Parameters
+
 * **period2** Integer
 
 ```crmscript

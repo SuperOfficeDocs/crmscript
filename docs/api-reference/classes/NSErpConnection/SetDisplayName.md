@@ -10,7 +10,8 @@ so.topic: reference
 
 Connection name shown to user; multi-language support
 
-**Parameter:** 
+## Parameters
+
 * **displayName** String
 
 ```crmscript

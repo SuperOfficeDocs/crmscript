@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetRowsInfo(NSEntityName[] rowsInfo)
 
-**Parameter:** 
+## Parameters
+
 * **rowsInfo** NSEntityName[]
 
 ```crmscript

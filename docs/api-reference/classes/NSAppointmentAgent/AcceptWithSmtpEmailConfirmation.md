@@ -14,13 +14,18 @@ Accepting an appointment invitation and send an email confirmation to the meetin
 
 * **appointmentId** The appointmentId. Both master and child record ids are accepted.
 * **updateMode** Update mode for a recurring appointment.
-* Enum: 0 = Unknown 
-* Enum: 1 = OnlyThis 
-* Enum: 2 = ThisAndForward 
-* Enum: 9 = StopRecurrence 
 * **smtpEMailConnectionInfo** Login information for outgoing smtp email server. Will be null if no login information is relevant.
 
 **Returns:** Updated NSAppointmentEntity
+
+### Enum updateMode
+
+* 0 = Unknown
+* 1 = OnlyThis
+* 2 = ThisAndForward
+* 9 = StopRecurrence
+
+## Example
 
 ```crmscript
 NSAppointmentAgent agent;
@@ -29,4 +34,3 @@ Integer updateMode;
 NSEMailConnectionInfo smtpEMailConnectionInfo;
 agent.AcceptWithSmtpEmailConfirmation(appointmentId, updateMode, smtpEMailConnectionInfo);
 ```
-

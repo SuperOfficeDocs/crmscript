@@ -10,7 +10,8 @@ so.topic: reference
 
 If true, the connection has been deleted and should not be shown to the users.
 
-**Parameter:** 
+## Parameters
+
 * **deleted** Bool
 
 ```crmscript

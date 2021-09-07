@@ -10,7 +10,8 @@ so.topic: reference
 
 Information about the state image for the current quote version.
 
-**Parameter:** 
+## Parameters
+
 * **stateImage** QuoteVersionButtonState
 
 ```crmscript

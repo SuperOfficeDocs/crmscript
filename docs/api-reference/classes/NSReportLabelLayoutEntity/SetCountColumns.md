@@ -10,7 +10,8 @@ so.topic: reference
 
 Number og columns
 
-**Parameter:** 
+## Parameters
+
 * **countColumns** Integer
 
 ```crmscript

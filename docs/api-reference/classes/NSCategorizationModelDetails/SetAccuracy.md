@@ -10,7 +10,8 @@ so.topic: reference
 
 Accuracy of the trained model
 
-**Parameter:** 
+## Parameters
+
 * **accuracy** Float
 
 ```crmscript

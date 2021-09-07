@@ -10,7 +10,8 @@ so.topic: reference
 
 Typically used in a tooltip.
 
-**Parameter:** 
+## Parameters
+
 * **displayDescription** String
 
 ```crmscript

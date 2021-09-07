@@ -10,7 +10,8 @@ so.topic: reference
 
 Is the consent purpose active or not
 
-**Parameter:** 
+## Parameters
+
 * **active** Integer
 
 ```crmscript

@@ -10,7 +10,9 @@ so.topic: reference
 
 ## Parameters
 
-* **connectionInfoExtended** 
-* **rfc822** 
-* **from** 
-* **recipients** 
+| Parameter | Type | Description |
+|---|---|---|
+| connectionInfoExtended | EMailConnectionInfoExtended | |
+| rfc822 | String | |
+| from | String | |
+| recipients | String[] | |

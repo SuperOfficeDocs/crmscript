@@ -10,7 +10,8 @@ so.topic: reference
 
 Settings for the chat widget
 
-**Parameter:** 
+## Parameters
+
 * **widget** ChatWidgetSettings
 
 ```crmscript

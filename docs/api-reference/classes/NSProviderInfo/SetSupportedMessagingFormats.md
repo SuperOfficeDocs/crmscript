@@ -10,7 +10,8 @@ so.topic: reference
 
 This value can typically be "sms/160", "sms/mms", "smtp/rfc822"
 
-**Parameter:** 
+## Parameters
+
 * **supportedMessagingFormats** String[]
 
 ```crmscript

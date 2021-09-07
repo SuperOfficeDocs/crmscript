@@ -10,7 +10,8 @@ so.topic: reference
 
 Indicates if this is a custom list or a standard list
 
-**Parameter:** 
+## Parameters
+
 * **isCustomList** Bool
 
 ```crmscript

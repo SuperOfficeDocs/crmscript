@@ -10,7 +10,8 @@ so.topic: reference
 
 The name of the license owner
 
-**Parameter:** 
+## Parameters
+
 * **name** String
 
 ```crmscript

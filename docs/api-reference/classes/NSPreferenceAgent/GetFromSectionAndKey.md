@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSPreferenceDescription GetFromSectionAndKey(String section, String key)
 
-Gets a NSPreferenceDescription based on the section and key
+Gets an NSPreferenceDescription based on the section and key
 
 ## Parameters
 

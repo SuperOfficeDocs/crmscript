@@ -10,7 +10,8 @@ so.topic: reference
 
 Visible role name
 
-**Parameter:** 
+## Parameters
+
 * **name** String
 
 ```crmscript

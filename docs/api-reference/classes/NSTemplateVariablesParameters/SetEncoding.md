@@ -10,26 +10,31 @@ so.topic: reference
 
 Encoding of source string. Non-text formats such as MsWord or Excel should be Base64 encoded in the source string.
 
-**Parameter:** 
+## Parameters
+
 * **encoding** Integer
-* Enum: 0 = Text 
-* Enum: 1 = Html 
-* Enum: 2 = Xml 
-* Enum: 3 = MsWord 
-* Enum: 4 = MsExcel 
-* Enum: 5 = MsPowerpoint 
-* Enum: 6 = MsOffice2007 
-* Enum: 7 = MsOffice2007Xml 
-* Enum: 8 = Url 
-* Enum: 9 = UrlUnicode 
-* Enum: 10 = Pdf 
-* Enum: 11 = Mime 
-* Enum: 12 = OpenDocument 
-* Enum: 13 = OpenDocumentXml 
+
+### Enum: generatorEncoding
+
+* 0 = Text
+* 1 = Html
+* 2 = Xml
+* 3 = MsWord
+* 4 = MsExcel
+* 5 = MsPowerpoint
+* 6 = MsOffice2007
+* 7 = MsOffice2007Xml
+* 8 = Url
+* 9 = UrlUnicode
+* 10 = Pdf
+* 11 = Mime
+* 12 = OpenDocument
+* 13 = OpenDocumentXml
+
+## Example
 
 ```crmscript
 NSTemplateVariablesParameters thing;
 Integer encoding;
 thing.SetEncoding(encoding);
 ```
-

@@ -10,7 +10,8 @@ so.topic: reference
 
 True if the heading is marked as deleted
 
-**Parameter:** 
+## Parameters
+
 * **deleted** Bool
 
 ```crmscript

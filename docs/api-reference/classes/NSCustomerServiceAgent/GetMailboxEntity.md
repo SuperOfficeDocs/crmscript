@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSMailboxEntity GetMailboxEntity(Integer mailboxEntityId);
 
-Gets a NSMailboxEntity object.
+Gets an NSMailboxEntity object.
 
 ## Parameters
 

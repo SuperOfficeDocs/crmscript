@@ -10,7 +10,8 @@ so.topic: reference
 
 Sort group lines by this field
 
-**Parameter:** 
+## Parameters
+
 * **sortGroupLinesBy** Integer
 
 ```crmscript

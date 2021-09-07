@@ -8,9 +8,10 @@ so.topic: reference
 
 # SetTask(String task)
 
-Task comprises the different types of activities, like “Phone call”, “Meeting” and so on.
+Task comprises the different types of activities, like "Phone call", "Meeting" and so on.
 
-**Parameter:** 
+## Parameters
+
 * **task** String
 
 ```crmscript

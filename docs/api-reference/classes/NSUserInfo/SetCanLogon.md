@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetCanLogon(Bool canLogon)
 
-**Parameter:** 
+## Parameters
+
 * **canLogon** Bool
 
 ```crmscript

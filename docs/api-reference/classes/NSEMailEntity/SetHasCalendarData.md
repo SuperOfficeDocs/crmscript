@@ -10,7 +10,8 @@ so.topic: reference
 
 If this email contains exactly one iCal appointment
 
-**Parameter:** 
+## Parameters
+
 * **hasCalendarData** Bool
 
 ```crmscript

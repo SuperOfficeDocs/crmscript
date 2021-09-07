@@ -10,7 +10,8 @@ so.topic: reference
 
 Currency the limits in this amount class refer to. Mixing currencies between classes can give rise to overlapping intervals and thus unpredictable classifications.
 
-**Parameter:** 
+## Parameters
+
 * **currencyId** Integer
 
 ```crmscript

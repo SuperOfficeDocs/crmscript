@@ -10,7 +10,8 @@ so.topic: reference
 
 The work hour start for Wednesdays. Note that only the time part of the DateTime is used
 
-**Parameter:** 
+## Parameters
+
 * **wedStart** DateTime
 
 ```crmscript

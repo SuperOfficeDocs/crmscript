@@ -10,16 +10,23 @@ so.topic: reference
 
 The Completed state. NotStarted(1) or Completed(3)
 
-**Parameter:** 
-* **completed** Integer
-* Enum: 0 = Unknown 
-* Enum: 1 = NotStarted 
-* Enum: 2 = Started 
-* Enum: 3 = Completed 
+## Parameter
+
+| Parameter | Type | Description |
+|---|---|---|
+| completed | Integer | |
+
+### Enum: completed state
+
+* 0 = Unknown
+* 1 = NotStarted
+* 2 = Started
+* 3 = Completed
+
+## Example
 
 ```crmscript
 NSActivitySummaryItem thing;
 Integer completed;
 thing.SetCompleted(completed);
 ```
-

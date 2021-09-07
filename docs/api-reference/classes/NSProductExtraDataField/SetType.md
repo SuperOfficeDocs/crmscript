@@ -10,11 +10,12 @@ so.topic: reference
 
 String, url, image. How the value should be interpreted.
 
-**Parameter:** 
+## Parameters
+
 * **type** Integer
-* Enum: 0 = String 
-* Enum: 1 = Url 
-* Enum: 2 = Image 
+* Enum: 0 = String
+* Enum: 1 = Url
+* Enum: 2 = Image
 
 ```crmscript
 NSProductExtraDataField thing;

@@ -10,7 +10,8 @@ so.topic: reference
 
 Do not escape HTML in field when displaying contents.
 
-**Parameter:** 
+## Parameters
+
 * **isHtml** Bool
 
 ```crmscript

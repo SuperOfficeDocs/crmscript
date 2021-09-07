@@ -14,10 +14,10 @@ Set the ReadByOwner status for a ticket. It will only have an effect if the call
 
 * **ticketEntityId** The id of the ticket to set
 * **readStatus** The read status to set. See the enum for explanation of the different colors. Setting Unknown does nothing
-* Enum: 0 = Unknown 
-* Enum: 1 = Green 
-* Enum: 2 = Yellow 
-* Enum: 3 = Red 
+* Enum: 0 = Unknown
+* Enum: 1 = Green
+* Enum: 2 = Yellow
+* Enum: 3 = Red
 * **checkEscalating** If true, then the escalation system will be called and executed when setting the ReadByOwner
 
 **Returns:** NSTicketEntity

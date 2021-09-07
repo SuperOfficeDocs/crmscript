@@ -16,9 +16,10 @@ Get License from the license server for a particular module owner.
 
 **Returns:** NSCheckLicenseStatusResult
 
+## Example
+
 ```crmscript
 NSLicenseAgent agent;
 String ownerName;
 NSCheckLicenseStatusResult res = agent.GetLicenseStatusFromLicenseServer(ownerName);
 ```
-

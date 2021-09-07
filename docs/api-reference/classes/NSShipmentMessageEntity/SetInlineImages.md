@@ -10,7 +10,8 @@ so.topic: reference
 
 Should images be included inline?
 
-**Parameter:** 
+## Parameters
+
 * **inlineImages** Bool
 
 ```crmscript

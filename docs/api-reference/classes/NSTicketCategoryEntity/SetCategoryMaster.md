@@ -10,7 +10,8 @@ so.topic: reference
 
 The user associated with this category.
 
-**Parameter:** 
+## Parameters
+
 * **categoryMaster** Integer
 
 ```crmscript

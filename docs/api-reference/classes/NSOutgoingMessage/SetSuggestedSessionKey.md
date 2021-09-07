@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetSuggestedSessionKey(String suggestedSessionKey)
 
-**Parameter:** 
+## Parameters
+
 * **suggestedSessionKey** String
 
 ```crmscript

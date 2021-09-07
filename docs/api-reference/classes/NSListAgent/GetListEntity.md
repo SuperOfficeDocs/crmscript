@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSListEntity GetListEntity(Integer listEntityId);
 
-Gets a NSListEntity object.
+Gets an NSListEntity object.
 
 ## Parameters
 

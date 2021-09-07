@@ -10,18 +10,23 @@ so.topic: reference
 
 Declaration of what kind of return type the execution of this command will give.
 
-**Parameter:** 
+## Parameters
+
 * **returnType** Integer
-* Enum: 0 = None 
-* Enum: 1 = Message 
-* Enum: 2 = SoProtocol 
-* Enum: 3 = CustomGui 
-* Enum: 4 = Other 
-* Enum: 5 = URL 
+
+### Enum: ReturnType
+
+* 0 = None
+* 1 = Message
+* 2 = SoProtocol
+* 3 = CustomGui
+* 4 = Other
+* 5 = URL
+
+## Example
 
 ```crmscript
 NSCommandInfo thing;
 Integer returnType;
 thing.SetReturnType(returnType);
 ```
-

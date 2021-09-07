@@ -10,7 +10,8 @@ so.topic: reference
 
 The person that last updated the project
 
-**Parameter:** 
+## Parameters
+
 * **updatedBy** NSAssociate
 
 ```crmscript

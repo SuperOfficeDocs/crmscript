@@ -10,7 +10,8 @@ so.topic: reference
 
 Register message views?
 
-**Parameter:** 
+## Parameters
+
 * **registerViews** Bool
 
 ```crmscript

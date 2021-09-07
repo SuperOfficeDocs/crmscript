@@ -10,7 +10,8 @@ so.topic: reference
 
 Name or description for the privacy statement
 
-**Parameter:** 
+## Parameters
+
 * **privacyStatementDesc** String
 
 ```crmscript

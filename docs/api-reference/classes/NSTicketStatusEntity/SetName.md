@@ -10,7 +10,8 @@ so.topic: reference
 
 Name of user defined ticket status
 
-**Parameter:** 
+## Parameters
+
 * **name** String
 
 ```crmscript

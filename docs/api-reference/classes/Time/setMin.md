@@ -21,5 +21,5 @@ This function sets the minutes of the time.
     t.setHour(10);
     t.setMin(15);
     t.setSec(30);
-    
+   
     10:15:30

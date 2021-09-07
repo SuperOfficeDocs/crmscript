@@ -10,7 +10,8 @@ so.topic: reference
 
 The height of the widget
 
-**Parameter:** 
+## Parameters
+
 * **height** Integer
 
 ```crmscript

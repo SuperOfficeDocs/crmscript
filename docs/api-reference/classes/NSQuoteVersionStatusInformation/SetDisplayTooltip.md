@@ -10,7 +10,8 @@ so.topic: reference
 
 Generated full tooltip for the Quote Version. Will check for errors on quote lines, alternatives and the version itself.
 
-**Parameter:** 
+## Parameters
+
 * **displayTooltip** String
 
 ```crmscript

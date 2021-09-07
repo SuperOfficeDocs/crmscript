@@ -10,7 +10,8 @@ so.topic: reference
 
 Returns a collection of pagers that belong to the contact person.
 
-**Parameter:** 
+## Parameters
+
 * **otherPhones** NSEntityElement[]
 
 ```crmscript

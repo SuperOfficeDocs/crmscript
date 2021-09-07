@@ -12,4 +12,4 @@ Deletes all appointments(within the appointmentIds array) with status BookingDel
 
 ## Parameters
 
-* **appointmentIds** 
+* **appointmentIds**

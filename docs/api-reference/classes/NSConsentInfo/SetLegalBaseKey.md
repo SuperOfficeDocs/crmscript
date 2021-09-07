@@ -10,7 +10,8 @@ so.topic: reference
 
 Key for the NSLegalBase associated with this consent
 
-**Parameter:** 
+## Parameters
+
 * **legalBaseKey** String
 
 ```crmscript

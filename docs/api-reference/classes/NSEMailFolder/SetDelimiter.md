@@ -10,7 +10,8 @@ so.topic: reference
 
 The character which is used to delimit folder levels on the server
 
-**Parameter:** 
+## Parameters
+
 * **delimiter** String
 
 ```crmscript

@@ -9,7 +9,7 @@ so.topic: reference
 # DeleteUser(Integer user);
 
 Deletes the NSUser
-  
+ 
 ## Parameters
 
 * **userId** The identity of the User to delete.

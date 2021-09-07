@@ -10,7 +10,8 @@ so.topic: reference
 
 Use a secure connection with the server
 
-**Parameter:** 
+## Parameters
+
 * **useSSL** Bool
 
 ```crmscript

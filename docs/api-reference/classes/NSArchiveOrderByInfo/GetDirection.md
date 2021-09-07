@@ -12,11 +12,14 @@ Direction to order.
 
 **Returns:** Integer
 
-* Enum: 0 = ASC 
-* Enum: 1 = DESC 
+## Enum: direction
+
+* 0 = ASC
+* 1 = DESC
+
+## Example
 
 ```crmscript
 NSArchiveOrderByInfo thing;
 Integer direction  = thing.GetDirection();
 ```
-

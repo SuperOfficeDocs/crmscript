@@ -10,7 +10,8 @@ so.topic: reference
 
 True if the application shall wait for fininsh event
 
-**Parameter:** 
+## Parameters
+
 * **waitToFinish** Bool
 
 ```crmscript

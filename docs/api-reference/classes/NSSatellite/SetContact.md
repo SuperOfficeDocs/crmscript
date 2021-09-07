@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetContact(NSContact contact)
 
-**Parameter:** 
+## Parameters
+
 * **contact** NSContact
 
 ```crmscript

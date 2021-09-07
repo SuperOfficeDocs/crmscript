@@ -19,11 +19,11 @@ Adds a new header. The new header will be placed after other existing headers.
 ## Example
 
     HTTP h;
-    
+   
     h.addHeader("header", "test");
-    
+   
     Byte[] b = h.post("https://httpbin.org/post");
-    
+   
     if (h.hasError())
     print(h.getErrorMessage());
     else

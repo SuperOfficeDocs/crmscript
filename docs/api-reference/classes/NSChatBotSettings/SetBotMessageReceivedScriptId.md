@@ -10,7 +10,8 @@ so.topic: reference
 
 Script id to run when new messages received from customer.
 
-**Parameter:** 
+## Parameters
+
 * **botMessageReceivedScriptId** Integer
 
 ```crmscript

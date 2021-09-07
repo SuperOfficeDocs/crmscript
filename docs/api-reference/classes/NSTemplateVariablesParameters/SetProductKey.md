@@ -10,7 +10,8 @@ so.topic: reference
 
 Product key
 
-**Parameter:** 
+## Parameters
+
 * **productKey** String
 
 ```crmscript

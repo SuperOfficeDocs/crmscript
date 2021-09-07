@@ -10,7 +10,8 @@ so.topic: reference
 
 Tooltip/description of the DiaryView
 
-**Parameter:** 
+## Parameters
+
 * **tooltip** String
 
 ```crmscript

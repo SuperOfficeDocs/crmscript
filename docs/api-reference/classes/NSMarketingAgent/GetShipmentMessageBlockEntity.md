@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSShipmentMessageBlockEntity GetShipmentMessageBlockEntity(Integer shipmentMessageBlockEntityId);
 
-Gets a NSShipmentMessageBlockEntity object.
+Gets an NSShipmentMessageBlockEntity object.
 
 ## Parameters
 

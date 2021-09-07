@@ -10,7 +10,8 @@ so.topic: reference
 
 Unique name of the provider plugin
 
-**Parameter:** 
+## Parameters
+
 * **name** String
 
 ```crmscript

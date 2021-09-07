@@ -18,9 +18,9 @@ These can be accessed by wrapping the returned Integer in a FHBitSet.
 --
 
     FHBitSet flags;
-    
+   
     flags.set(extraField.getFlags());
-    
+   
     flags.getBitNo(17);  // returns true if the extra field cannot be empty
 
 --

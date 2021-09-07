@@ -16,5 +16,5 @@ Returns false if the integer is zero, otherwise true.
 
     Integer i = 3;
     print(i.toBool().toString());
-    
+   
     Prints true.

@@ -10,7 +10,8 @@ so.topic: reference
 
 Headings in which to list the different users.
 
-**Parameter:** 
+## Parameters
+
 * **headings** String[]
 
 ```crmscript

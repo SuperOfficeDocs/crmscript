@@ -10,7 +10,8 @@ so.topic: reference
 
 The mime type
 
-**Parameter:** 
+## Parameters
+
 * **mimeType** String
 
 ```crmscript

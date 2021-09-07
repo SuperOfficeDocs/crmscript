@@ -10,7 +10,8 @@ so.topic: reference
 
 When opening hours start on Thursdays. Only time-part is used.
 
-**Parameter:** 
+## Parameters
+
 * **thuStart** TimeSpan
 
 ```crmscript

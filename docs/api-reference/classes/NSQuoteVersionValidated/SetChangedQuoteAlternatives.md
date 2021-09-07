@@ -10,7 +10,8 @@ so.topic: reference
 
 The changed QuoteAlternatives
 
-**Parameter:** 
+## Parameters
+
 * **changedQuoteAlternatives** NSQuoteAlternativeRecalculated[]
 
 ```crmscript

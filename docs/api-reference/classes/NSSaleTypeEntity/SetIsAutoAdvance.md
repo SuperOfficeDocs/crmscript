@@ -10,7 +10,8 @@ so.topic: reference
 
 Does the sale stage advance automatically, when the last guided activity in a stage is completed?
 
-**Parameter:** 
+## Parameters
+
 * **isAutoAdvance** Bool
 
 ```crmscript

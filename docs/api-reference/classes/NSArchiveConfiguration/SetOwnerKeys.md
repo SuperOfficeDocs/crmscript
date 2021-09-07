@@ -10,7 +10,8 @@ so.topic: reference
 
 The actual ownership information for the configuration that was retrieved
 
-**Parameter:** 
+## Parameters
+
 * **ownerKeys** String
 
 ```crmscript

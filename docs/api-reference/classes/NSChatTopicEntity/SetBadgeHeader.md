@@ -10,7 +10,8 @@ so.topic: reference
 
 The badge header of the chat topic
 
-**Parameter:** 
+## Parameters
+
 * **badgeHeader** String
 
 ```crmscript

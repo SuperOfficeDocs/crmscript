@@ -10,7 +10,8 @@ so.topic: reference
 
 Any message from the method, including timing data
 
-**Parameter:** 
+## Parameters
+
 * **message** String
 
 ```crmscript

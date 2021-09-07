@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetColumnsInfo(NSRelationToOwner[] columnsInfo)
 
-**Parameter:** 
+## Parameters
+
 * **columnsInfo** NSRelationToOwner[]
 
 ```crmscript

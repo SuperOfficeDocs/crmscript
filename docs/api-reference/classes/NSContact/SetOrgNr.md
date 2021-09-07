@@ -10,7 +10,8 @@ so.topic: reference
 
 VAT number or similar
 
-**Parameter:** 
+## Parameters
+
 * **orgNr** String
 
 ```crmscript

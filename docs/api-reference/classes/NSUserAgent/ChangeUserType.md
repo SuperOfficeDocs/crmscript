@@ -10,18 +10,27 @@ so.topic: reference
 
 Get a user from the user name.
 
+**Returns:** NSUser
+
 ## Parameters
 
-* **user** User name of the user to get.
-* **userType** 
-* Enum: 0 = Unknown 
-* Enum: 1 = InternalAssociate 
-* Enum: 2 = ResourceAssociate 
-* Enum: 3 = ExternalAssociate 
-* Enum: 4 = AnonymousAssociate 
-* Enum: 5 = SystemAssociate 
+| Parameter | Type | Description |
+|---|---|---|
+| user | NSUser | User name of the user to get. |
+| userType | Integer | |
 
-**Returns:** NSUser
+### userType
+
+## Enum: associateType
+
+* 0 = Unknown
+* 1 = InternalAssociate
+* 2 = ResourceAssociate
+* 3 = ExternalAssociate
+* 4 = AnonymousAssociate
+* 5 = SystemAssociate
+
+## Example
 
 ```crmscript
 NSUserAgent agent;
@@ -29,4 +38,3 @@ NSUser user;
 Integer userType;
 NSUser res = agent.ChangeUserType(user, userType);
 ```
-

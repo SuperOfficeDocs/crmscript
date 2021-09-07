@@ -10,7 +10,8 @@ so.topic: reference
 
 Set the tooltip description for the Department list item.
 
-**Parameter:** 
+## Parameters
+
 * **tooltip** String Department tooltip description.
 
 ```crmscript

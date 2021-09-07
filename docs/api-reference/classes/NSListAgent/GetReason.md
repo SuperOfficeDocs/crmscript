@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSReason GetReason(Integer reasonId);
 
-Gets a NSReason object.
+Gets an NSReason object.
 
 * **ReasonId** The identifier of the NSReason object
 

@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSForeignDevice GetDeviceByName(String applicationName, String deviceName)
 
-Gets a NSForeignDevice with deviceName that belongs to the application with applicationName.
+Gets an NSForeignDevice with deviceName that belongs to the application with applicationName.
 
 ## Parameters
 

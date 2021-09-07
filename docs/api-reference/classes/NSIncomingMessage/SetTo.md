@@ -10,7 +10,8 @@ so.topic: reference
 
 Address of the recipient. This can be in the form of phone number or email.
 
-**Parameter:** 
+## Parameters
+
 * **to** String
 
 ```crmscript

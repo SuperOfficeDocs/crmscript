@@ -10,7 +10,8 @@ so.topic: reference
 
 Id of the associates primary group at storage time
 
-**Parameter:** 
+## Parameters
+
 * **groupId** Integer
 
 ```crmscript

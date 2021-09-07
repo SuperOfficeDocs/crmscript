@@ -10,7 +10,8 @@ so.topic: reference
 
 Is direction reversed relative to definition
 
-**Parameter:** 
+## Parameters
+
 * **reversed** Integer
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Person id of the participant if the participant is a person
 
-**Parameter:** 
+## Parameters
+
 * **personId** Integer
 
 ```crmscript

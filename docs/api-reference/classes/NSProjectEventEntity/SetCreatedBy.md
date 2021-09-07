@@ -10,7 +10,8 @@ so.topic: reference
 
 The person that created the projectevent
 
-**Parameter:** 
+## Parameters
+
 * **createdBy** NSAssociate
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Display tooltip, populated when asked for. Suitable for binding display-datasource in lists, etc. Formatted using CultureDataFormatter.
 
-**Parameter:** 
+## Parameters
+
 * **displayTooltip** String
 
 ```crmscript

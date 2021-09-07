@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSEMailAccount GetEMailAccount(Integer eMailAccountId);
 
-Gets a NSEMailAccount object.
+Gets an NSEMailAccount object.
 
 ## Parameters
 

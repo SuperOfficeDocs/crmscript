@@ -8,11 +8,15 @@ so.topic: reference
 
 # NSConsentSource SaveConsentSource(NSConsentSource consentSource)
 
+**Returns:** NSConsentSource
+
 ## Parameters
 
-* **consentSource** 
+| Parameter | Type | Description |
+|---|---|---|
+| consentSource | NSConsentSource | |
 
-**Returns:** NSConsentSource
+## Example
 
 ```crmscript
 NSListAgent agent;

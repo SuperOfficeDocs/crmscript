@@ -10,7 +10,8 @@ so.topic: reference
 
 The date and time the Audience layout was created
 
-**Parameter:** 
+## Parameters
+
 * **createdDate** DateTime
 
 ```crmscript

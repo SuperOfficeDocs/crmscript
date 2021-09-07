@@ -12,10 +12,10 @@ If there was a problem with for instance calculation, this field is set to warni
 
 **Returns:** Integer
 
-* Enum: 0 = Ok 
-* Enum: 1 = OkWithInfo 
-* Enum: 2 = Warning 
-* Enum: 3 = Error 
+* Enum: 0 = Ok
+* Enum: 1 = OkWithInfo
+* Enum: 2 = Warning
+* Enum: 3 = Error
 
 ```crmscript
 NSQuoteVersion thing;

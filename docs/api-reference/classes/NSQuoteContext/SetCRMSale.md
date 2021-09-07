@@ -10,7 +10,8 @@ so.topic: reference
 
 The sale the quote is registered in the CRM system.
 
-**Parameter:** 
+## Parameters
+
 * **cRMSale** NSSale
 
 ```crmscript

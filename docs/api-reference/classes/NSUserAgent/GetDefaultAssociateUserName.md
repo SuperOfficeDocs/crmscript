@@ -10,8 +10,10 @@ so.topic: reference
 
 Get the default username for a person
 
+**Returns:** String
+
 ## Parameters
 
-* **user** 
-
-**Returns:** String
+| Parameter | Type | Description |
+|---|---|---|
+| user | NSUser | |

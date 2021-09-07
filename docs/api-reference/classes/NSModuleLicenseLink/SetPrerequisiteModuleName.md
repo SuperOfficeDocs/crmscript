@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetPrerequisiteModuleName(String prerequisiteModuleName)
 
-**Parameter:** 
+## Parameters
+
 * **prerequisiteModuleName** String
 
 ```crmscript

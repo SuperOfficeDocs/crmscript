@@ -10,7 +10,8 @@ so.topic: reference
 
 Name of the appointments priority
 
-**Parameter:** 
+## Parameters
+
 * **priorityName** String
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Id of table with more information about the task.
 
-**Parameter:** 
+## Parameters
+
 * **detailsTable** Integer
 
 ```crmscript

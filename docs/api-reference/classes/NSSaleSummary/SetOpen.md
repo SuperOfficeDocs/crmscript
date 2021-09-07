@@ -8,9 +8,10 @@ so.topic: reference
 
 # SetOpen(Integer open)
 
-Number of all open within the period 
+Number of all open within the period
 
-**Parameter:** 
+## Parameters
+
 * **open** Integer
 
 ```crmscript

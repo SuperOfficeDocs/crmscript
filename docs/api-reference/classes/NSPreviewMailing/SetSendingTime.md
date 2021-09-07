@@ -10,7 +10,8 @@ so.topic: reference
 
 Estimated or actual sent time (depends on status)
 
-**Parameter:** 
+## Parameters
+
 * **sendingTime** DateTime
 
 ```crmscript

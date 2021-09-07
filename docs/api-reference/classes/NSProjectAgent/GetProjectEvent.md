@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSProjectEvent GetProjectEvent(Integer projectEventId);
 
-Gets a NSProjectEvent object.
+Gets an NSProjectEvent object.
 
 ## Parameters
 

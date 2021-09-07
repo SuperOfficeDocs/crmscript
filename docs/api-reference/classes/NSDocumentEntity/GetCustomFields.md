@@ -8,7 +8,7 @@ so.topic: reference
 
 # Map GetCustomFields()
 
-Get the user-defined + extra fields on a NSDocumentEntity as a map.
+Get the user-defined + extra fields on an NSDocumentEntity as a map.
 
 **Returns:** Map
 

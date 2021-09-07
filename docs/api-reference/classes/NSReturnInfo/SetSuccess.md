@@ -10,7 +10,8 @@ so.topic: reference
 
 id the call succeed. A successful call may still return a message or other return value.
 
-**Parameter:** 
+## Parameters
+
 * **success** Bool
 
 ```crmscript

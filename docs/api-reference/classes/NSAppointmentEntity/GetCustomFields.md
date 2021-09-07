@@ -8,7 +8,7 @@ so.topic: reference
 
 # Map GetCustomFields()
 
-Get the user-defined + extra fields on a NSAppointmentEntity as a map.
+Get the user-defined + extra fields on an NSAppointmentEntity as a map.
 
 **Returns:** Map containing user defined and extra field values by field name.
 

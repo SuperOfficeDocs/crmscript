@@ -10,7 +10,8 @@ so.topic: reference
 
 The sale's contact persons id
 
-**Parameter:** 
+## Parameters
+
 * **personId** Integer
 
 ```crmscript

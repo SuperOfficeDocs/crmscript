@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSQuoteLineConfiguration SaveQuoteLineConfiguration(NSQuoteLineConfiguration quoteLineConfiguration)
 
-Save a NSQuoteLineConfiguration object. It is not possible to add a new configuration.
+Save an NSQuoteLineConfiguration object. It is not possible to add a new configuration.
 
 ## Parameters
 

@@ -8,10 +8,12 @@ so.topic: reference
 
 # Void RemoveFavourite(String tableName, Integer recordId, Integer associateId)
 
-Remove favourite for a table, record id and associate
+Remove favorite for a table, record id, and associate
 
 ## Parameters
 
-* **tableName** Table name, transformed to and from numeric table id by the service layer.
-* **recordId** 
-* **associateId** 
+| Parameter | Type | Description |
+|---|---|---|
+| tableName | String | Table name, transformed to and from numeric table id by the service layer. |
+| recordId | Integer | |
+| associateId | Integer | |

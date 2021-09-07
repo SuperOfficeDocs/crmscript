@@ -10,7 +10,8 @@ so.topic: reference
 
 If true, do the merge task, but use current user as target, instead of selection members
 
-**Parameter:** 
+## Parameters
+
 * **testOnly** Bool
 
 ```crmscript

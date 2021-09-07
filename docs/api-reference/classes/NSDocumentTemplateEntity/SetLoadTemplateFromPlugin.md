@@ -10,7 +10,8 @@ so.topic: reference
 
 Which document plugin is responsible for this template's contents
 
-**Parameter:** 
+## Parameters
+
 * **loadTemplateFromPlugin** Integer
 
 ```crmscript

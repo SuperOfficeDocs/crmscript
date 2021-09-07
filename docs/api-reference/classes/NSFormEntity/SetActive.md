@@ -10,7 +10,8 @@ so.topic: reference
 
 Indicates if this form is active or not
 
-**Parameter:** 
+## Parameters
+
 * **active** Bool
 
 ```crmscript

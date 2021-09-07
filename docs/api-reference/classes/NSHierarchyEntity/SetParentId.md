@@ -10,7 +10,8 @@ so.topic: reference
 
 Parent table
 
-**Parameter:** 
+## Parameters
+
 * **parentId** Integer
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Description of this pricelist , will be used as tool-tip in the user interface.
 
-**Parameter:** 
+## Parameters
+
 * **description** String
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 The minimum (furthest away from User) level this preference can be set for
 
-**Parameter:** 
+## Parameters
+
 * **minLevel** Integer
 
 ```crmscript

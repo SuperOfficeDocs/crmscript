@@ -10,7 +10,8 @@ so.topic: reference
 
 Mime type, describing the technical type (image/jpeg) of the data
 
-**Parameter:** 
+## Parameters
+
 * **mimeType** String
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Indicates wether or not the message will vibrate/play a sound when delivered
 
-**Parameter:** 
+## Parameters
+
 * **silent** Bool
 
 ```crmscript

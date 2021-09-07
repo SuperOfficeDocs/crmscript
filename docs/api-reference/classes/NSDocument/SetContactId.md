@@ -10,7 +10,8 @@ so.topic: reference
 
 Contact ID of owning contact, may be 0
 
-**Parameter:** 
+## Parameters
+
 * **contactId** Integer
 
 ```crmscript

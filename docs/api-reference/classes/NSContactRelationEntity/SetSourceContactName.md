@@ -10,7 +10,8 @@ so.topic: reference
 
 Name of the source contact.
 
-**Parameter:** 
+## Parameters
+
 * **sourceContactName** String
 
 ```crmscript

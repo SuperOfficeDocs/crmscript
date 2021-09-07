@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetUniqueHash(Integer uniqueHash)
 
-**Parameter:** 
+## Parameters
+
 * **uniqueHash** Integer
 
 ```crmscript

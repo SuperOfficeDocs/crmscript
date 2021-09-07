@@ -10,7 +10,8 @@ so.topic: reference
 
 When this consent record was last updated
 
-**Parameter:** 
+## Parameters
+
 * **updated** DateTime
 
 ```crmscript

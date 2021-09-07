@@ -10,7 +10,8 @@ so.topic: reference
 
 If true the event is enabled (visible)
 
-**Parameter:** 
+## Parameters
+
 * **enabled** Bool
 
 ```crmscript

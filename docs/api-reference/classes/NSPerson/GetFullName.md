@@ -8,7 +8,7 @@ so.topic: reference
 
 # String GetFullName()
 
-Get the persons full name (internal name used in clients for employees). 
+Get the persons full name (internal name used in clients for employees).
 
 **Returns:** String
 

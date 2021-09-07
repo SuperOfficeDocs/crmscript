@@ -10,7 +10,8 @@ so.topic: reference
 
 The user that created the person object
 
-**Parameter:** 
+## Parameters
+
 * **createdBy** NSAssociate
 
 ```crmscript

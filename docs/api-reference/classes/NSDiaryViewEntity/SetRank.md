@@ -10,7 +10,8 @@ so.topic: reference
 
 DiaryView rank.
 
-**Parameter:** 
+## Parameters
+
 * **rank** Integer
 
 ```crmscript

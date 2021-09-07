@@ -10,7 +10,8 @@ so.topic: reference
 
 Number of minutes we shall override the assignment if a customer sends consecutive messages to this category
 
-**Parameter:** 
+## Parameters
+
 * **assignmentLag** Integer
 
 ```crmscript

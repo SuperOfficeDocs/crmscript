@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSTicketStatusEntity GetTicketStatusEntity(Integer ticketStatusEntityId);
 
-Gets a NSTicketStatusEntity object.
+Gets an NSTicketStatusEntity object.
 
 ## Parameters
 

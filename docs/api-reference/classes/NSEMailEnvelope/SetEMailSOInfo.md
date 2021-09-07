@@ -10,7 +10,8 @@ so.topic: reference
 
 Glue between SuperOffice data and an e-mail.
 
-**Parameter:** 
+## Parameters
+
 * **eMailSOInfo** NSEMailSOInfo
 
 ```crmscript

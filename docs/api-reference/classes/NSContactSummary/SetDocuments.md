@@ -10,7 +10,8 @@ so.topic: reference
 
 Recent documents on contact
 
-**Parameter:** 
+## Parameters
+
 * **documents** NSActivitySummaryItem[]
 
 ```crmscript

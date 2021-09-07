@@ -13,7 +13,7 @@ Gets an image connected to a product, from the ProductProvider
 ## Parameters
 
 * **quoteConnectionId** The connection this product comes from.
-* **eRPProductKey** Primary key of the Product in the ProductProvider 
+* **eRPProductKey** Primary key of the Product in the ProductProvider
 * **rank** The rank of the image.
 
 **Returns:** String

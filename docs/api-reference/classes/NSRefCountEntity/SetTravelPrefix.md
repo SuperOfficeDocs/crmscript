@@ -10,7 +10,8 @@ so.topic: reference
 
 size of prefix for Travel use of ths counter
 
-**Parameter:** 
+## Parameters
+
 * **travelPrefix** Integer
 
 ```crmscript

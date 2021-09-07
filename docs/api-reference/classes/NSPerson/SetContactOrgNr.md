@@ -10,7 +10,8 @@ so.topic: reference
 
 The persons contact organization number
 
-**Parameter:** 
+## Parameters
+
 * **contactOrgNr** String
 
 ```crmscript

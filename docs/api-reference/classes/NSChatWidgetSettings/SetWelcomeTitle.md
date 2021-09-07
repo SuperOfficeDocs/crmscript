@@ -10,7 +10,8 @@ so.topic: reference
 
 Short welcome message when user initiates a chat
 
-**Parameter:** 
+## Parameters
+
 * **welcomeTitle** String
 
 ```crmscript

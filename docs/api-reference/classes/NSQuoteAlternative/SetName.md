@@ -10,7 +10,8 @@ so.topic: reference
 
 Name of Alternative. Shown in tab in user interface, intentionally kept short
 
-**Parameter:** 
+## Parameters
+
 * **name** String
 
 ```crmscript

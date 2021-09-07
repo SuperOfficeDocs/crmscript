@@ -10,7 +10,8 @@ so.topic: reference
 
 User name, a.k.a. Login name. This might be an e-mail address.
 
-**Parameter:** 
+## Parameters
+
 * **userName** String
 
 ```crmscript

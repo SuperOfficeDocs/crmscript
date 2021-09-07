@@ -10,7 +10,8 @@ so.topic: reference
 
 Associate that last changed the selection membership (static members, dynamic criteria, combined parameters); only date (not time) is valid
 
-**Parameter:** 
+## Parameters
+
 * **lastMembershipChangeByAssociate** NSAssociate
 
 ```crmscript

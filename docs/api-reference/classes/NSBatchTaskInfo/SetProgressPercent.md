@@ -10,7 +10,8 @@ so.topic: reference
 
 Task progress, in percent of estimated total
 
-**Parameter:** 
+## Parameters
+
 * **progressPercent** Integer
 
 ```crmscript

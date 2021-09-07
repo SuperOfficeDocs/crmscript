@@ -10,7 +10,8 @@ so.topic: reference
 
 Link to saleTypeStageLink, the anchor for sale guide items. Either this OR projectAnchorId should be set, not both at the same time.
 
-**Parameter:** 
+## Parameters
+
 * **saleTypeStageLinkId** Integer
 
 ```crmscript

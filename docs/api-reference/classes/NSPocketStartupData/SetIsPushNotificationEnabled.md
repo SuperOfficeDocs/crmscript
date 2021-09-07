@@ -10,7 +10,8 @@ so.topic: reference
 
 Is push notification configured and enabled in Netserver
 
-**Parameter:** 
+## Parameters
+
 * **isPushNotificationEnabled** Bool
 
 ```crmscript

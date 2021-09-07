@@ -10,7 +10,8 @@ so.topic: reference
 
 Account credentials for imap
 
-**Parameter:** 
+## Parameters
+
 * **incomingCredentials** NSServiceAuth
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Non standard e-mail headers
 
-**Parameter:** 
+## Parameters
+
 * **customHeaderList** NSEMailCustomHeader[]
 
 ```crmscript

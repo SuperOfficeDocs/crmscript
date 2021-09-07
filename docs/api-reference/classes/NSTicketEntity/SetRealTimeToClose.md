@@ -10,7 +10,8 @@ so.topic: reference
 
 Same as time_to_close, but not calculated based on priority.
 
-**Parameter:** 
+## Parameters
+
 * **realTimeToClose** Integer
 
 ```crmscript

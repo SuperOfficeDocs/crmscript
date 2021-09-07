@@ -10,7 +10,8 @@ so.topic: reference
 
 Customer person in this session* could be empty if we don't know exactly.
 
-**Parameter:** 
+## Parameters
+
 * **person** NSPerson
 
 ```crmscript

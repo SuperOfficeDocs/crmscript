@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetUserGroupName(String userGroupName)
 
-**Parameter:** 
+## Parameters
+
 * **userGroupName** String
 
 ```crmscript

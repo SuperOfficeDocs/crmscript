@@ -10,7 +10,8 @@ so.topic: reference
 
 Document id* 0 if not a document
 
-**Parameter:** 
+## Parameters
+
 * **documentId** Integer
 
 ```crmscript

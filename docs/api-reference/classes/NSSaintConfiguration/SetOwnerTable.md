@@ -10,7 +10,8 @@ so.topic: reference
 
 The table that is the owning entity
 
-**Parameter:** 
+## Parameters
+
 * **ownerTable** Integer
 
 ```crmscript

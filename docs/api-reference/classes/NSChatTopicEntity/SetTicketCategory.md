@@ -10,7 +10,8 @@ so.topic: reference
 
 Category on ticket created from off-line request
 
-**Parameter:** 
+## Parameters
+
 * **ticketCategory** NSTicketCategory
 
 ```crmscript

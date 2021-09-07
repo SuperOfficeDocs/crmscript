@@ -10,7 +10,8 @@ so.topic: reference
 
 Id of the created follow up.
 
-**Parameter:** 
+## Parameters
+
 * **createdAppointmentId** Integer
 
 ```crmscript

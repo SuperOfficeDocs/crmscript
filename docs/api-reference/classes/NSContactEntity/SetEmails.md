@@ -10,7 +10,8 @@ so.topic: reference
 
 The contact's email
 
-**Parameter:** 
+## Parameters
+
 * **emails** NSEntityElement[]
 
 ```crmscript

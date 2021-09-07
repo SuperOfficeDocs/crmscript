@@ -10,7 +10,8 @@ so.topic: reference
 
 Number of all sold within the period
 
-**Parameter:** 
+## Parameters
+
 * **sold** Integer
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 The average number of seconds per accept for this topic.
 
-**Parameter:** 
+## Parameters
+
 * **secondsPrAccept** Integer
 
 ```crmscript

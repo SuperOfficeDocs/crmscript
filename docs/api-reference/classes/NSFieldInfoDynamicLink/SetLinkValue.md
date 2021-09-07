@@ -10,7 +10,8 @@ so.topic: reference
 
 URL link value. May contain CS tags to be replaced.
 
-**Parameter:** 
+## Parameters
+
 * **linkValue** String
 
 ```crmscript

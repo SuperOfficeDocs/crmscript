@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSNavigatorCompany GetNavigatorCompany(Integer navigatorCompanyId);
 
-Gets a NSNavigatorCompany object.
+Gets an NSNavigatorCompany object.
 
 ## Parameters
 

@@ -10,7 +10,8 @@ so.topic: reference
 
 Expected number of dales from initiation to close of sale
 
-**Parameter:** 
+## Parameters
+
 * **saleDuration** Integer
 
 ```crmscript

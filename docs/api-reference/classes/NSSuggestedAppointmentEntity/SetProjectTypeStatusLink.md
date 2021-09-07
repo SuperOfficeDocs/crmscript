@@ -10,7 +10,8 @@ so.topic: reference
 
 Project type and project status link info
 
-**Parameter:** 
+## Parameters
+
 * **projectTypeStatusLink** NSProjectTypeStatusLink
 
 ```crmscript

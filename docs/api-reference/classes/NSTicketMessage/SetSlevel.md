@@ -10,11 +10,12 @@ so.topic: reference
 
 The securitylevel of the message.
 
-**Parameter:** 
+## Parameters
+
 * **slevel** TicketSecurityLevel
-* Enum: 0 = Unknown 
-* Enum: 1 = Internal 
-* Enum: 2 = External 
+* Enum: 0 = Unknown
+* Enum: 1 = Internal
+* Enum: 2 = External
 
 ```crmscript
 NSTicketMessage thing;

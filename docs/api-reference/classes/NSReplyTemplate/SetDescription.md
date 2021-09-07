@@ -10,7 +10,8 @@ so.topic: reference
 
 The description for this reply template.
 
-**Parameter:** 
+## Parameters
+
 * **description** String
 
 ```crmscript

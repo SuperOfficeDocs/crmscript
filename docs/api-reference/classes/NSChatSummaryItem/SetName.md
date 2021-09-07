@@ -10,7 +10,8 @@ so.topic: reference
 
 The name of customer, if provided
 
-**Parameter:** 
+## Parameters
+
 * **name** String
 
 ```crmscript

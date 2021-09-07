@@ -10,7 +10,8 @@ so.topic: reference
 
 The config fields needed to establish a connection to the connector
 
-**Parameter:** 
+## Parameters
+
 * **configFields** StringDictionary
 
 * **Returns:** StringDictionary

@@ -10,7 +10,8 @@ so.topic: reference
 
 The work hour stop for Sundays. Note that only the time part of the DateTime is used
 
-**Parameter:** 
+## Parameters
+
 * **sunStop** DateTime
 
 ```crmscript

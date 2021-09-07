@@ -10,7 +10,8 @@ so.topic: reference
 
 The contact's fax numbers
 
-**Parameter:** 
+## Parameters
+
 * **faxes** NSEntityElement[]
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 If true, then this module should not appear in GUI and is not assignable by users
 
-**Parameter:** 
+## Parameters
+
 * **isHidden** Bool
 
 ```crmscript

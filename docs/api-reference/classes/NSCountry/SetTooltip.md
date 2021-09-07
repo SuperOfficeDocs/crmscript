@@ -10,7 +10,8 @@ so.topic: reference
 
 The tooltip of the country
 
-**Parameter:** 
+## Parameters
+
 * **tooltip** String
 
 ```crmscript

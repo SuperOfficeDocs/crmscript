@@ -10,7 +10,8 @@ so.topic: reference
 
 If specified, use this value as default mail subject.
 
-**Parameter:** 
+## Parameters
+
 * **customMailSubject** String
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Date/time the customer read the mailing.
 
-**Parameter:** 
+## Parameters
+
 * **opened** DateTime
 
 ```crmscript

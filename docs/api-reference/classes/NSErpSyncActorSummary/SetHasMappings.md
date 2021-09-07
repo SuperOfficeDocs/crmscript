@@ -10,7 +10,8 @@ so.topic: reference
 
 Does this actor type have field mappings
 
-**Parameter:** 
+## Parameters
+
 * **hasMappings** Bool
 
 ```crmscript

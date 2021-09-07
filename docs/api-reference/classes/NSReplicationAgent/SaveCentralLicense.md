@@ -10,4 +10,4 @@ so.topic: reference
 
 ## Parameters
 
-* **license** 
+* **license**

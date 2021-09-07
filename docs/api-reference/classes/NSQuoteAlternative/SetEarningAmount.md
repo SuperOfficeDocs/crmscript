@@ -10,7 +10,8 @@ so.topic: reference
 
 Earning on this alternative, as an absolute amount
 
-**Parameter:** 
+## Parameters
+
 * **earningAmount** Float
 
 ```crmscript

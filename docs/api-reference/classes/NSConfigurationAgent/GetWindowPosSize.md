@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSWindowPosSize GetWindowPosSize(Integer windowPosSizeId);
 
-Gets a NSWindowPosSize object.
+Gets an NSWindowPosSize object.
 
 ## Parameters
 

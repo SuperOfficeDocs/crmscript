@@ -10,7 +10,8 @@ so.topic: reference
 
 Current value of counter
 
-**Parameter:** 
+## Parameters
+
 * **currentValue** Integer
 
 ```crmscript

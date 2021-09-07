@@ -19,10 +19,10 @@ This function sets the value of a given field if it exists.
 ## Example
 
     ExtraTable ex;
-    
+   
     Bool b = ex.load(2);
     print(b.toString());
-    
+   
     ex.setValue("name", "Test");
     print(ex.getValue("x_table"));
 

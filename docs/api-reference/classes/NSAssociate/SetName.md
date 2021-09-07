@@ -10,7 +10,8 @@ so.topic: reference
 
 Initials, also login name, possibly database user name
 
-**Parameter:** 
+## Parameters
+
 * **name** String
 
 ```crmscript

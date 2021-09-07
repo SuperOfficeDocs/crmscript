@@ -10,7 +10,8 @@ so.topic: reference
 
 Rank of this consent source
 
-**Parameter:** 
+## Parameters
+
 * **rank** Integer
 
 ```crmscript

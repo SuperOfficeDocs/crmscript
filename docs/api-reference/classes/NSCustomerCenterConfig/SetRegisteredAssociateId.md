@@ -10,7 +10,8 @@ so.topic: reference
 
 Registered by whom
 
-**Parameter:** 
+## Parameters
+
 * **registeredAssociateId** Integer
 
 ```crmscript

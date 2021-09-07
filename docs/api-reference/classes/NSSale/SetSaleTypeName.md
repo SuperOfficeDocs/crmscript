@@ -10,7 +10,8 @@ so.topic: reference
 
 The sale's type name
 
-**Parameter:** 
+## Parameters
+
 * **saleTypeName** String
 
 ```crmscript

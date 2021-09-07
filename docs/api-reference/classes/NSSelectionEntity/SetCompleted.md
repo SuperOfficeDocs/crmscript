@@ -8,9 +8,10 @@ so.topic: reference
 
 # SetCompleted(Bool completed)
 
-The Completed state. 
+The Completed state.
 
-**Parameter:** 
+## Parameters
+
 * **completed** Bool
 
 ```crmscript

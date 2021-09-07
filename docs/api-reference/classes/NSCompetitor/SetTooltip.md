@@ -10,7 +10,8 @@ so.topic: reference
 
 Set the tooltip description for the NSCompetitor list item.
 
-**Parameter:** 
+## Parameters
+
 * **tooltip** String NSCompetitor tooltip description.
 
 ```crmscript

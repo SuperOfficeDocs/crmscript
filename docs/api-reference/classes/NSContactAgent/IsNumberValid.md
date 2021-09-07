@@ -8,11 +8,13 @@ so.topic: reference
 
 # Bool IsNumberValid(Integer contactId, String number)
 
-Checks if the number is unique or required.  The setting is configured from admin under system options.
+Checks if the number is unique or required. The setting is configured from admin under system options.
+
+**Returns:** Bool
 
 ## Parameters
 
-* **contactId** 
-* **number** 
-
-**Returns:** Bool
+| Parameter | Type |Description |
+|---|---|---|
+| contactId | Integer | |
+| number | String | |

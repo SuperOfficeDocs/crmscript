@@ -8,7 +8,7 @@ so.topic: reference
 
 # Void RemoveFavouritesById(Integer[] favouriteIds)
 
-Remove favourite using favourite id 
+Remove favourite using favourite id
 
 ## Parameters
 

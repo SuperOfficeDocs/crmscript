@@ -8,7 +8,7 @@ so.topic: reference
 
 # String GetDescription()
 
-Info text/description on person. 
+Info text/description on person.
 
 **Returns:** String
 

@@ -10,7 +10,8 @@ so.topic: reference
 
 Default boolean value
 
-**Parameter:** 
+## Parameters
+
 * **defaultValue** Bool
 
 ```crmscript

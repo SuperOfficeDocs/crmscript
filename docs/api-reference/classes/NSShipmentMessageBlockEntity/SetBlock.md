@@ -10,7 +10,8 @@ so.topic: reference
 
 The block definition. Normally this will be a json structure
 
-**Parameter:** 
+## Parameters
+
 * **block** String
 
 ```crmscript

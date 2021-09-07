@@ -10,7 +10,8 @@ so.topic: reference
 
 The email server to connect to
 
-**Parameter:** 
+## Parameters
+
 * **server** String
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 A copy of the last message in the chat session
 
-**Parameter:** 
+## Parameters
+
 * **lastMessage** String
 
 ```crmscript

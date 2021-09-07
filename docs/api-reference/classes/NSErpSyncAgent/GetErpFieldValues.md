@@ -14,11 +14,11 @@ Get the values for the specified fields from the ERP connection
 
 * **erpConnectionId** The id of the connection
 * **crmActorType** The type of the CRM entity
-* Enum: 0 = Unknown 
-* Enum: 1 = Contact 
-* Enum: 2 = Person 
-* Enum: 3 = Project 
-* Enum: 4 = Sale 
+* Enum: 0 = Unknown
+* Enum: 1 = Contact
+* Enum: 2 = Person
+* Enum: 3 = Project
+* Enum: 4 = Sale
 * **entityId** The id of the entity
 * **fieldKeys** The fields for which you want to get the values
 

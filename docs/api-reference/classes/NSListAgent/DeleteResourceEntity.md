@@ -9,7 +9,7 @@ so.topic: reference
 # DeleteResourceEntity(Integer resourceEntity);
 
 Deletes the NSResourceEntity
-  
+ 
 * **ResourceEntityId** The identity of the ResourceEntity to delete.
 
 ```crmscript

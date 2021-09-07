@@ -10,7 +10,8 @@ so.topic: reference
 
 true if the NSConsentPurpose is deleted
 
-**Parameter:** 
+## Parameters
+
 * **deleted** Bool
 
 ```crmscript

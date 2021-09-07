@@ -10,15 +10,18 @@ so.topic: reference
 
 Returns an array of project members
 
+**Returns:** NSProjectMember[]
+
 ## Parameters
 
-* **projectMemberIds** 
+| Parameter | Type | Description |
+|---|---|---|
+| projectMemberIds | Integer[] | |
 
-**Returns:** NSProjectMember[]
+## Example
 
 ```crmscript
 NSProjectAgent agent;
 Integer rojectMemberIds;
 NSProjectMember[] res = agent.GetProjectMembersById(projectMemberIds);
 ```
-

@@ -10,7 +10,8 @@ so.topic: reference
 
 Name of consent purpose
 
-**Parameter:** 
+## Parameters
+
 * **name** String
 
 ```crmscript

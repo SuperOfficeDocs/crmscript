@@ -10,7 +10,8 @@ so.topic: reference
 
 The appointment recurrence.
 
-**Parameter:** 
+## Parameters
+
 * **recurrence** NSRecurrenceInfo
 
 ```crmscript

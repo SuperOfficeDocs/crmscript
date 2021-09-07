@@ -13,16 +13,16 @@ Return information about the given user defined field identified by the owner an
 ## Parameters
 
 * **fieldLabel** The field label* the text label shown in the user interface. Trailing spaces and punctuation (":" and ".") are ignored when searching.
-* **ownerType** The user-defined field owner-entity id. 
-* Enum: 0 = Invalid 
-* Enum: 7 = Contact 
-* Enum: 8 = Person 
-* Enum: 9 = Project 
-* Enum: 10 = Sale 
-* Enum: 11 = Temp 
-* Enum: 12 = Appointment 
-* Enum: 13 = Document 
-* Enum: 14 = None 
+* **ownerType** The user-defined field owner-entity id.
+* Enum: 0 = Invalid
+* Enum: 7 = Contact
+* Enum: 8 = Person
+* Enum: 9 = Project
+* Enum: 10 = Sale
+* Enum: 11 = Temp
+* Enum: 12 = Appointment
+* Enum: 13 = Document
+* Enum: 14 = None
 
 **Returns:** NSUserDefinedFieldInfo
 

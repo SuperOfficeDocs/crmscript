@@ -10,7 +10,8 @@ so.topic: reference
 
 The tile description
 
-**Parameter:** 
+## Parameters
+
 * **description** String
 
 ```crmscript

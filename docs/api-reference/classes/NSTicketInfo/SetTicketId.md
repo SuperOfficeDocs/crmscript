@@ -10,7 +10,8 @@ so.topic: reference
 
 The id of the created ticket
 
-**Parameter:** 
+## Parameters
+
 * **ticketId** Integer
 
 ```crmscript

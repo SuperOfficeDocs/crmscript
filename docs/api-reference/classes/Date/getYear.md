@@ -15,6 +15,6 @@ This function will return the year of this date.
 ## Example
 
     Date d;
-    
+   
     String s = d.getYear().toString();
     print(s); 2014

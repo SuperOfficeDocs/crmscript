@@ -10,7 +10,8 @@ so.topic: reference
 
 Is this credentials currently active.
 
-**Parameter:** 
+## Parameters
+
 * **isActive** Bool
 
 ```crmscript

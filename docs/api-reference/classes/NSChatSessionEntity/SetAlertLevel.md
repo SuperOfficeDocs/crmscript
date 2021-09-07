@@ -10,7 +10,8 @@ so.topic: reference
 
 The alert level for this chat session.
 
-**Parameter:** 
+## Parameters
+
 * **alertLevel** Integer
 
 ```crmscript

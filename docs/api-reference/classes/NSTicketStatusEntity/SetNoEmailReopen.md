@@ -10,7 +10,8 @@ so.topic: reference
 
 Whether inbound emails can reopen requests with this status or not
 
-**Parameter:** 
+## Parameters
+
 * **noEmailReopen** Bool
 
 ```crmscript

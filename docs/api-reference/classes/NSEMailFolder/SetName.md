@@ -10,7 +10,8 @@ so.topic: reference
 
 Name of folder
 
-**Parameter:** 
+## Parameters
+
 * **name** String
 
 ```crmscript

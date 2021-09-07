@@ -9,7 +9,7 @@ so.topic: reference
 # DeleteWebhook(Integer webhook);
 
 Deletes the NSWebhook
-  
+ 
 ## Parameters
 
 * **webhookId** The identity of the NSWebhook to delete.

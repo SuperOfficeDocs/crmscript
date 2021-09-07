@@ -22,7 +22,7 @@ Parse the source document, and replace any template variable tags with their val
 * **saleId** The sale identifier to use for template substitution
 * **customTags** Dictionary of custom tag names and values. Each name should have exactly four characters. There should be exactly one value for each tag
 
-**Returns:** The document as a NSStream
+**Returns:** The document as an NSStream
 
 ```crmscript
 NSDocumentAgent agent;

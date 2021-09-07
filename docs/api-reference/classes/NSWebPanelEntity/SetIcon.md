@@ -10,7 +10,8 @@ so.topic: reference
 
 The icon of the webpanel
 
-**Parameter:** 
+## Parameters
+
 * **icon** Integer
 
 ```crmscript

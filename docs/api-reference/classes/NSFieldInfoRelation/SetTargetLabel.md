@@ -10,7 +10,8 @@ so.topic: reference
 
 Display name on target entity.
 
-**Parameter:** 
+## Parameters
+
 * **targetLabel** String
 
 ```crmscript

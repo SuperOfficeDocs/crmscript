@@ -10,7 +10,8 @@ so.topic: reference
 
 Does the webpanel have an address bar
 
-**Parameter:** 
+## Parameters
+
 * **showInAddressBar** Bool
 
 ```crmscript

@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSAttachmentEntity GetAttachmentEntity(Integer attachmentEntityId);
 
-Gets a NSAttachmentEntity object.
+Gets an NSAttachmentEntity object.
 
 ## Parameters
 

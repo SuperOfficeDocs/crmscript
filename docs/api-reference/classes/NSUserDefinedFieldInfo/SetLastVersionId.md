@@ -10,7 +10,8 @@ so.topic: reference
 
 UDefFieldId this field had in the previous version, 0 = field is new in this version
 
-**Parameter:** 
+## Parameters
+
 * **lastVersionId** Integer
 
 ```crmscript

@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSCategory GetCategory(Integer categoryId);
 
-Gets a NSCategory object.
+Gets an NSCategory object.
 
 ## Parameters
 

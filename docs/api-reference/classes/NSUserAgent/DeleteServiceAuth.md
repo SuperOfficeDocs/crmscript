@@ -9,7 +9,7 @@ so.topic: reference
 # DeleteServiceAuth(Integer serviceAuth);
 
 Deletes the NSServiceAuth
-  
+ 
 ## Parameters
 
 * **serviceAuthId** The identity of the ServiceAuth to delete.

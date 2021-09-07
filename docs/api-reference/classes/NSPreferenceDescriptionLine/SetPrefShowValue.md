@@ -10,7 +10,8 @@ so.topic: reference
 
 Descriptive value, multilang-parsed, to put in list
 
-**Parameter:** 
+## Parameters
+
 * **prefShowValue** String
 
 ```crmscript

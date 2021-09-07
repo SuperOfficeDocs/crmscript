@@ -12,5 +12,7 @@ Retiring a user means to remove all licenses, setting person.retired=1 and assoc
 
 ## Parameters
 
-* **associateId** 
-* **retired** 
+| Parameter | Type | Description |
+|---|---|---|
+| associateId | Integer | |
+| retired | Bool | |

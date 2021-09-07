@@ -10,7 +10,8 @@ so.topic: reference
 
 When the ticket should be activated, if it is postponed.
 
-**Parameter:** 
+## Parameters
+
 * **activate** DateTime
 
 ```crmscript

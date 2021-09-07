@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetAssociateList(NSSelectableMDOListItem[] associateList)
 
-**Parameter:** 
+## Parameters
+
 * **associateList** NSSelectableMDOListItem[]
 
 ```crmscript

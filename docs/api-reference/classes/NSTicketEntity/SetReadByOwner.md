@@ -10,7 +10,8 @@ so.topic: reference
 
 The datetime for when the ticket last was read by the owner.
 
-**Parameter:** 
+## Parameters
+
 * **readByOwner** DateTime
 
 ```crmscript

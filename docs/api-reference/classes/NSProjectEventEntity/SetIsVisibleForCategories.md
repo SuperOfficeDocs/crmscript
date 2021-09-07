@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetIsVisibleForCategories(Bool isVisibleForCategories)
 
-**Parameter:** 
+## Parameters
+
 * **isVisibleForCategories** Bool
 
 ```crmscript

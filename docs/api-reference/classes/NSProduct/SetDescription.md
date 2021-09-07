@@ -10,7 +10,8 @@ so.topic: reference
 
 The description to use, with potentially several lines. Will be used as tool-tip to use in the list user interface too.
 
-**Parameter:** 
+## Parameters
+
 * **description** String
 
 ```crmscript

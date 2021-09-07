@@ -8,7 +8,7 @@ so.topic: reference
 
 # Integer ToggleActivity(String activityIdentifier)
 
-Toggle the completed status for an activity. Activity may be sale, document or appointment. The changes are saved immediately. 
+Toggle the completed status for an activity. Activity may be sale, document or appointment. The changes are saved immediately.
 
 ## Parameters
 

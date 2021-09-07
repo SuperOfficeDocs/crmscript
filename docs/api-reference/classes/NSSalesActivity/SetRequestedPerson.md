@@ -10,7 +10,8 @@ so.topic: reference
 
 The person that matches the request.
 
-**Parameter:** 
+## Parameters
+
 * **requestedPerson** NSPerson
 
 ```crmscript

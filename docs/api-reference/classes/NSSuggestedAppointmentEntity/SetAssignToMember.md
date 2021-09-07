@@ -10,7 +10,8 @@ so.topic: reference
 
 Should this appointment be assigned to project member
 
-**Parameter:** 
+## Parameters
+
 * **assignToMember** Bool
 
 ```crmscript

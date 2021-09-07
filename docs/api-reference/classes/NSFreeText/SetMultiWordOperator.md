@@ -10,11 +10,12 @@ so.topic: reference
 
 Starts with, contains or exact match
 
-**Parameter:** 
+## Parameters
+
 * **multiWordOperator** Integer
-* Enum: 1 = Contains 
-* Enum: 2 = StartsWith 
-* Enum: 3 = ExactMatch 
+* Enum: 1 = Contains
+* Enum: 2 = StartsWith
+* Enum: 3 = ExactMatch
 
 ```crmscript
 NSFreeText thing;

@@ -10,7 +10,8 @@ so.topic: reference
 
 The label for the data set
 
-**Parameter:** 
+## Parameters
+
 * **label** String
 
 ```crmscript

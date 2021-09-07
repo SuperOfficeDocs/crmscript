@@ -10,7 +10,8 @@ so.topic: reference
 
 Id of the item's owner (Associate id)
 
-**Parameter:** 
+## Parameters
+
 * **associateId** Integer
 
 ```crmscript

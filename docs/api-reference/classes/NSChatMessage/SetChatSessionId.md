@@ -10,7 +10,8 @@ so.topic: reference
 
 The reference to the associated chat session.
 
-**Parameter:** 
+## Parameters
+
 * **chatSessionId** Integer
 
 ```crmscript

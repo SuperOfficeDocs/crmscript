@@ -10,7 +10,8 @@ so.topic: reference
 
 The rank of the application
 
-**Parameter:** 
+## Parameters
+
 * **rank** Integer
 
 ```crmscript

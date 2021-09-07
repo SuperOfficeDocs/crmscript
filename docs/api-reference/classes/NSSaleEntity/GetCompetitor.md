@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSCompetitor GetCompetitor()
 
-List of all possible competitors. 
+List of all possible competitors.
 
 **Returns:** NSCompetitor
 

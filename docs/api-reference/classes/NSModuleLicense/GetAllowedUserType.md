@@ -8,19 +8,22 @@ so.topic: reference
 
 # Integer GetAllowedUserType()
 
-Allowed associate type for user licenses: internal(0), external(4). 
+Allowed associate type for user licenses: internal(0), external(4).
 
 **Returns:** Integer
 
-* Enum: 0 = Unknown 
-* Enum: 1 = InternalAssociate 
-* Enum: 2 = ResourceAssociate 
-* Enum: 3 = ExternalAssociate 
-* Enum: 4 = AnonymousAssociate 
-* Enum: 5 = SystemAssociate 
+## Enum: associateType
+
+* 0 = Unknown
+* 1 = InternalAssociate
+* 2 = ResourceAssociate
+* 3 = ExternalAssociate
+* 4 = AnonymousAssociate
+* 5 = SystemAssociate
+
+## Example
 
 ```crmscript
 NSModuleLicense thing;
 Integer allowedUserType  = thing.GetAllowedUserType();
 ```
-

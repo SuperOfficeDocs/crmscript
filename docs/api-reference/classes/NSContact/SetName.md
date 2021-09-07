@@ -10,12 +10,14 @@ so.topic: reference
 
 Contact name
 
-**Parameter:** 
+## Parameters
+
 * **name** String
+
+## Example
 
 ```crmscript
 NSContact thing;
 String name;
 thing.SetName(name);
 ```
-

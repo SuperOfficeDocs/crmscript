@@ -10,7 +10,8 @@ so.topic: reference
 
 Set the primary key (id) for the NSCurrency
 
-**Parameter:** 
+## Parameters
+
 * **id** Integer NSCurrency id.
 
 ```crmscript

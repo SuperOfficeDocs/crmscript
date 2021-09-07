@@ -10,7 +10,8 @@ so.topic: reference
 
 Returns the fax phone that belong to the contact person.
 
-**Parameter:** 
+## Parameters
+
 * **faxPhone** String
 
 ```crmscript

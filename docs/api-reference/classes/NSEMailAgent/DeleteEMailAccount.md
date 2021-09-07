@@ -9,7 +9,7 @@ so.topic: reference
 # DeleteEMailAccount(Integer eMailAccount);
 
 Deletes the NSEMailAccount
-  
+ 
 ## Parameters
 
 * **eMailAccountId** The identity of the NSEMailAccount to delete.

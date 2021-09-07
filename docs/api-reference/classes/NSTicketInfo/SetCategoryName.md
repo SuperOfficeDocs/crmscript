@@ -10,7 +10,8 @@ so.topic: reference
 
 The name of the category for the request
 
-**Parameter:** 
+## Parameters
+
 * **categoryName** String
 
 ```crmscript

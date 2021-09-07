@@ -10,7 +10,8 @@ so.topic: reference
 
 Should the current date + time be the default?
 
-**Parameter:** 
+## Parameters
+
 * **isDefaultNow** Bool
 
 ```crmscript

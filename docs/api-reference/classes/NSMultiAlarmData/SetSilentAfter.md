@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetSilentAfter(Integer silentAfter)
 
-**Parameter:** 
+## Parameters
+
 * **silentAfter** Integer
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 1 = the user is retired and should have no rights, not appear in lists, etc.
 
-**Parameter:** 
+## Parameters
+
 * **retired** Integer
 
 ```crmscript

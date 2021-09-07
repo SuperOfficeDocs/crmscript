@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetNumberOfLicensesInUse(Integer numberOfLicensesInUse)
 
-**Parameter:** 
+## Parameters
+
 * **numberOfLicensesInUse** Integer
 
 ```crmscript

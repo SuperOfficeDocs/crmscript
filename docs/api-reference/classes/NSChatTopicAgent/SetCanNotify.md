@@ -10,7 +10,8 @@ so.topic: reference
 
 True if the user should receive notifications for this topic
 
-**Parameter:** 
+## Parameters
+
 * **canNotify** Bool
 
 ```crmscript

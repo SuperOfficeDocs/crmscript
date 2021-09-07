@@ -10,7 +10,8 @@ so.topic: reference
 
 Tooltip/description shown to user; multi-language support
 
-**Parameter:** 
+## Parameters
+
 * **displayDescription** String
 
 ```crmscript

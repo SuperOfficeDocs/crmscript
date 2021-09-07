@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetAlarms(NSAlarmData[] alarms)
 
-**Parameter:** 
+## Parameters
+
 * **alarms** NSAlarmData[]
 
 ```crmscript

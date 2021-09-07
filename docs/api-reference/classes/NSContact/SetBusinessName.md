@@ -10,7 +10,8 @@ so.topic: reference
 
 The business list item name
 
-**Parameter:** 
+## Parameters
+
 * **businessName** String
 
 ```crmscript

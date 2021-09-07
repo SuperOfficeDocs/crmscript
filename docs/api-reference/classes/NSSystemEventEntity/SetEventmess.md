@@ -10,7 +10,8 @@ so.topic: reference
 
 Message to be shown, entered by administrator
 
-**Parameter:** 
+## Parameters
+
 * **eventmess** String
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Associate id of the participant if the participant is an associate (or resource)
 
-**Parameter:** 
+## Parameters
+
 * **associateId** Integer
 
 ```crmscript

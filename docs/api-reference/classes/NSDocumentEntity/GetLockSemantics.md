@@ -10,9 +10,9 @@ so.topic: reference
 
 **Returns:** Integer
 
-* Enum: 0 = None 
-* Enum: 1 = Locking 
-* Enum: 2 = Versioning 
+* Enum: 0 = None
+* Enum: 1 = Locking
+* Enum: 2 = Versioning
 
 ```crmscript
 NSDocumentEntity thing;

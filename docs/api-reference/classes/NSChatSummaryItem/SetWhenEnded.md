@@ -10,7 +10,8 @@ so.topic: reference
 
 When the session was ended.
 
-**Parameter:** 
+## Parameters
+
 * **whenEnded** DateTime
 
 ```crmscript

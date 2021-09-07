@@ -8,7 +8,7 @@ so.topic: reference
 
 # Void SetFunctionalRights(Integer roleId, Integer[] functionalRightIds)
 
-Set all functional rights for the given role. Functional rights not specified here will be removed from the role. 
+Set all functional rights for the given role. Functional rights not specified here will be removed from the role.
 
 ## Parameters
 

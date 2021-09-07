@@ -10,7 +10,8 @@ so.topic: reference
 
 The primary person that this ticket is connected to
 
-**Parameter:** 
+## Parameters
+
 * **person** NSPerson
 
 ```crmscript

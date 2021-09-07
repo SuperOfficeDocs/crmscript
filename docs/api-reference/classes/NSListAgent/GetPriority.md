@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSPriority GetPriority(Integer priorityId);
 
-Gets a NSPriority object.
+Gets an NSPriority object.
 
 ## Parameters
 

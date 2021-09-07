@@ -10,7 +10,8 @@ so.topic: reference
 
 Link to a follow-up activity, created when this quote version was sent to the customer.
 
-**Parameter:** 
+## Parameters
+
 * **followupId** Integer
 
 ```crmscript

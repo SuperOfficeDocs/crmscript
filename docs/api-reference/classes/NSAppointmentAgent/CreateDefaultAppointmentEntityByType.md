@@ -8,28 +8,32 @@ so.topic: reference
 
 # NSAppointmentEntity CreateDefaultAppointmentEntityByType(Integer type)
 
-Creates a NSAppointmentEntity populated with the default values for the specific type.
+Creates an NSAppointmentEntity populated with the default values for the specific type.
 
 ## Parameters
 
 * **type** The type of task requested.
-* Enum: 0 = Unknown 
-* Enum: 1 = Appointment 
-* Enum: 2 = Document 
-* Enum: 3 = Email 
-* Enum: 4 = Fax 
-* Enum: 5 = Phone 
-* Enum: 6 = ToDo 
-* Enum: 7 = MailMergeDraft 
-* Enum: 8 = MailMergeFinal 
-* Enum: 9 = Report 
-* Enum: 10 = SaintAll 
 
 **Returns:** NSAppointmentEntity with default values.
+
+### Enum: AppntRecordTypes
+
+* 0 = Unknown
+* 1 = Appointment
+* 2 = Document
+* 3 = Email
+* 4 = Fax
+* 5 = Phone
+* 6 = ToDo
+* 7 = MailMergeDraft
+* 8 = MailMergeFinal
+* 9 = Report
+* 10 = SaintAll
+
+## Example
 
 ```crmscript
 NSAppointmentAgent agent;
 Integer type;
 NSAppointmentEntity res = agent.CreateDefaultAppointmentEntityByType(type);
 ```
-

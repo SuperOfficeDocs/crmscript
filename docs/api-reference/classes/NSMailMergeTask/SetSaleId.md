@@ -10,7 +10,8 @@ so.topic: reference
 
 Sale identity to set on task
 
-**Parameter:** 
+## Parameters
+
 * **saleId** Integer
 
 ```crmscript

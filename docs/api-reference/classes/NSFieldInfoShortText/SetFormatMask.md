@@ -10,7 +10,8 @@ so.topic: reference
 
 Formatting mask, can be whatever the controls understand (currently nothing :-))
 
-**Parameter:** 
+## Parameters
+
 * **formatMask** String
 
 ```crmscript

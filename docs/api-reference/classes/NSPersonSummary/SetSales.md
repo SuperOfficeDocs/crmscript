@@ -10,7 +10,8 @@ so.topic: reference
 
 Recent sales on person
 
-**Parameter:** 
+## Parameters
+
 * **sales** NSSaleSummaryItem[]
 
 ```crmscript

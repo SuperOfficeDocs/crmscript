@@ -13,7 +13,7 @@ This class is used to handle eJournal attachments.
 ## Example
 
     Attachment a;
-    
+   
     a.load(2); // Loads attachment with id = 2
     a.setValue("name", "test.txt");
     print(a.getValue("size")); // Size in bytes

@@ -10,7 +10,8 @@ so.topic: reference
 
 Published to external persons
 
-**Parameter:** 
+## Parameters
+
 * **isDefaultPublished** Bool
 
 ```crmscript

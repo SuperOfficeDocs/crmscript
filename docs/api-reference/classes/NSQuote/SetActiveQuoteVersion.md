@@ -10,7 +10,8 @@ so.topic: reference
 
 The active quote version for the quote
 
-**Parameter:** 
+## Parameters
+
 * **activeQuoteVersion** NSQuoteVersion
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Identity of project to use as source for recipients.
 
-**Parameter:** 
+## Parameters
+
 * **projectId** Integer
 
 ```crmscript

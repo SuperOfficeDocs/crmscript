@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSProjectMember GetProjectMember(Integer projectMemberId);
 
-Gets a NSProjectMember object.
+Gets an NSProjectMember object.
 
 ## Parameters
 

@@ -10,7 +10,8 @@ so.topic: reference
 
 Priority rank, in case more than one status is signalled. Lowest wins
 
-**Parameter:** 
+## Parameters
+
 * **rank** Integer
 
 ```crmscript

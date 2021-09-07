@@ -10,7 +10,8 @@ so.topic: reference
 
 Default value, stored using CultureDataFormatter format if it is not a string
 
-**Parameter:** 
+## Parameters
+
 * **defaultValue** String
 
 ```crmscript

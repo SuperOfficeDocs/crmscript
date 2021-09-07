@@ -10,7 +10,8 @@ so.topic: reference
 
 Who created to sale
 
-**Parameter:** 
+## Parameters
+
 * **createdBy** NSAssociate
 
 ```crmscript

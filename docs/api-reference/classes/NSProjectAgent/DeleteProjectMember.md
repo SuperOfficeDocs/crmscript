@@ -9,7 +9,7 @@ so.topic: reference
 # DeleteProjectMember(Integer projectMember);
 
 Deletes the NSProjectMember
-  
+ 
 ## Parameters
 
 * **projectMemberId** The identity of the ProjectMember to delete.

@@ -10,7 +10,8 @@ so.topic: reference
 
 A short description, suitable for display in a popup menu or dropdown list of versions.
 
-**Parameter:** 
+## Parameters
+
 * **displayText** String
 
 ```crmscript

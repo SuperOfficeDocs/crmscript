@@ -10,7 +10,8 @@ so.topic: reference
 
 Rank/Version number, starts at 1
 
-**Parameter:** 
+## Parameters
+
 * **rank** Integer
 
 ```crmscript

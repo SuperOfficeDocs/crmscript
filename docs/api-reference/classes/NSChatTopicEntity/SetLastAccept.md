@@ -10,7 +10,8 @@ so.topic: reference
 
 The last time a session was accepted from the inside for this topic.
 
-**Parameter:** 
+## Parameters
+
 * **lastAccept** DateTime
 
 ```crmscript

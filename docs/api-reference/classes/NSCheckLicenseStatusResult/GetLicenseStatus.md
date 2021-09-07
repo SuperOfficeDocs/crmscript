@@ -8,21 +8,24 @@ so.topic: reference
 
 # Integer GetLicenseStatus()
 
-Result of CheckLicenseStatus 
+Result of CheckLicenseStatus
 
 **Returns:** Integer
 
-* Enum: 0 = Ok 
-* Enum: 1 = NewLicenseAvailable 
-* Enum: 2 = NewCompanyNameAvailable 
-* Enum: 3 = NewSerialAvailable 
-* Enum: 4 = UseCustomMessage 
-* Enum: 5 = UseCustomMessageAndUrl 
-* Enum: 100 = ProblemWithLicense 
-* Enum: 5000 = UnknownError 
+## Enum: LicenseStatus
+
+* 0 = Ok
+* 1 = NewLicenseAvailable
+* 2 = NewCompanyNameAvailable
+* 3 = NewSerialAvailable
+* 4 = UseCustomMessage
+* 5 = UseCustomMessageAndUrl
+* 100 = ProblemWithLicense
+* 5000 = UnknownError
+
+## Example
 
 ```crmscript
 NSCheckLicenseStatusResult thing;
 Integer licenseStatus  = thing.GetLicenseStatus();
 ```
-

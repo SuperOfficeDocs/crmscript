@@ -9,7 +9,7 @@ so.topic: reference
 # DeleteCustomerCenterConfig(Integer customerCenterConfig);
 
 Deletes the NSCustomerCenterConfig
-  
+ 
 ## Parameters
 
 * **customerCenterConfigId** The identity of the NSCustomerCenterConfig to delete.

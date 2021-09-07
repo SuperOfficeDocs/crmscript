@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSHierarchyEntity GetHierarchyEntity(Integer hierarchyEntityId);
 
-Gets a NSHierarchyEntity object.
+Gets an NSHierarchyEntity object.
 
 ## Parameters
 

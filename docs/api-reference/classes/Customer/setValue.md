@@ -8,8 +8,8 @@ so.topic: reference
 ---
 
 # Customer.setValue(String field, String value)
-   
-**Sets the given field with the given value. The following fields are available:**   
+  
+**Sets the given field with the given value. The following fields are available:**  
 
 * name or display\_name: The name of the customer.
 * firstname
@@ -57,11 +57,11 @@ so.topic: reference
 ## Example
 
     Customer c;
-    
+   
     c.load(3);
     Bool b = c.checkTableRights("select");
     print(b.toString());
-    
+   
     c.setValue("name", "Test");
     print(c.getValue("name"));
 

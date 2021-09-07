@@ -10,7 +10,8 @@ so.topic: reference
 
 Link description.
 
-**Parameter:** 
+## Parameters
+
 * **description** String
 
 ```crmscript

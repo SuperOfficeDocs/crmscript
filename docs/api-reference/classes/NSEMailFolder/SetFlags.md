@@ -10,7 +10,8 @@ so.topic: reference
 
 Flags associated with the folder
 
-**Parameter:** 
+## Parameters
+
 * **flags** String
 
 ```crmscript

@@ -10,19 +10,19 @@ so.topic: reference
 
 Saving a booking.
 
+**Returns:** NSAppointmentEntity
+
 ## Parameters
 
-* **appointmentEntity** 
-* **updateMode** Update mode for a recurring appointment.
-* Enum: 0 = Unknown 
-* Enum: 1 = OnlyThis 
-* Enum: 2 = ThisAndForward 
-* Enum: 9 = StopRecurrence 
-* **sendEmailToParticipants** If true, emails will be sent to all participants that is marked with send email flag. If false no mails will be sent even if the send email flag is true.
-* **smtpEMailConnectionInfo** Login information for outgoing smtp email server. Will be null if no login information is relevant.
-* **imapEMailConnectionInfo** Login information for imap server. Will be null if no login information is relevant.
+| Parameter | Type |Description |
+|---|---|---|
+| appointmentEntity | NSAppointmentEntity | |
+| updateMode | Integer | Update mode for a recurring appointment. Enum: 0 = Unknown, 1 = OnlyThis, 2 = ThisAndForward, 9 = StopRecurrence |
+| sendEmailToParticipants | Bool | If true, emails will be sent to all participants that is marked with send email flag. If false no mails will be sent even if the send email flag is true. |
+| smtpEMailConnectionInfo| NSEMailConnectionInfo | Login information for outgoing smtp email server. Will be null if no login information is relevant. |
+| imapEMailConnectionInfo| NSEMailConnectionInfo | Login information for imap server. Will be null if no login information is relevant. |
 
-**Returns:** NSAppointmentEntity
+## Example
 
 ```crmscript
 NSAppointmentAgent agent;
@@ -33,4 +33,3 @@ NSEMailConnectionInfo smtpEMailConnectionInfo;
 NSEMailConnectionInfo imapEMailConnectionInfo;
 NSAppointmentEntity res = agent.Save(appointmentEntity, updateMode, sendEmailToParticipants, smtpEMailConnectionInfo, imapEMailConnectionInfo);
 ```
-

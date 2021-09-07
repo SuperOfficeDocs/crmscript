@@ -10,7 +10,8 @@ so.topic: reference
 
 Name of foreign application
 
-**Parameter:** 
+## Parameters
+
 * **name** String
 
 ```crmscript

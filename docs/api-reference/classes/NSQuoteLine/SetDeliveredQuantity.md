@@ -10,7 +10,8 @@ so.topic: reference
 
 How many units have been delivered* updated by ERP system.
 
-**Parameter:** 
+## Parameters
+
 * **deliveredQuantity** Float
 
 ```crmscript

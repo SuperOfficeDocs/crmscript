@@ -10,7 +10,8 @@ so.topic: reference
 
 The default value to be set, can be blank
 
-**Parameter:** 
+## Parameters
+
 * **firstSyncDefaultValue** String
 
 ```crmscript

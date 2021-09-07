@@ -10,7 +10,8 @@ so.topic: reference
 
 The entire name of the contact, including department name
 
-**Parameter:** 
+## Parameters
+
 * **contactFullName** String
 
 ```crmscript

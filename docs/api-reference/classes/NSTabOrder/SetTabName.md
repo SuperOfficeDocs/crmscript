@@ -10,7 +10,8 @@ so.topic: reference
 
 Name of tab control
 
-**Parameter:** 
+## Parameters
+
 * **tabName** String
 
 ```crmscript

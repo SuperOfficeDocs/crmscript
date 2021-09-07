@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSAmountClassEntity GetAmountClassEntity(Integer amountClassEntityId);
 
-Gets a NSAmountClassEntity object.
+Gets an NSAmountClassEntity object.
 
 ## Parameters
 

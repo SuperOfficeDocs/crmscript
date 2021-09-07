@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetNumberOfUsers(Integer numberOfUsers)
 
-**Parameter:** 
+## Parameters
+
 * **numberOfUsers** Integer
 
 ```crmscript

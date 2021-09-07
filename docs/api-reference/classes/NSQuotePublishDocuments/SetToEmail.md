@@ -10,7 +10,8 @@ so.topic: reference
 
 The email address of the recipient, taken from the sale's person
 
-**Parameter:** 
+## Parameters
+
 * **toEmail** String
 
 ```crmscript

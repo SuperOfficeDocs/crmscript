@@ -10,7 +10,8 @@ so.topic: reference
 
 The entity name of the NSArchiveListItem. An ArchiveList may contain rows from different entities.
 
-**Parameter:** 
+## Parameters
+
 * **entityName** String
 
 ```crmscript

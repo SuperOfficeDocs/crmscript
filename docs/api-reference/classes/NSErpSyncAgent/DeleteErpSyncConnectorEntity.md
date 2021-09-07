@@ -9,7 +9,7 @@ so.topic: reference
 # DeleteErpSyncConnectorEntity(Integer erpSyncConnectorEntity);
 
 Deletes the NSErpSyncConnectorEntity
-  
+ 
 ## Parameters
 
 * **erpSyncConnectorEntityId** The identity of the ErpSyncConnectorEntity to delete.

@@ -10,7 +10,8 @@ so.topic: reference
 
 Columns, matching CredentialUsers.Headings
 
-**Parameter:** 
+## Parameters
+
 * **columns** String[]
 
 ```crmscript

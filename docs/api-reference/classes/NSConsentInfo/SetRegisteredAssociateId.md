@@ -10,7 +10,8 @@ so.topic: reference
 
 The ID of the associate who created this record
 
-**Parameter:** 
+## Parameters
+
 * **registeredAssociateId** Integer
 
 ```crmscript

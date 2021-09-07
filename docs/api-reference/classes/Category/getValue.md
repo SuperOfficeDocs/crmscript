@@ -29,6 +29,6 @@ Retrieves the value of the given field in the category.
 ## Example
 
     Category c;
-    
+   
     c.load(2);
     print(c.getValue("name"));

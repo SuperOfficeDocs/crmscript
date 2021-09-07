@@ -10,7 +10,8 @@ so.topic: reference
 
 Last updated when
 
-**Parameter:** 
+## Parameters
+
 * **updated** DateTime
 
 ```crmscript

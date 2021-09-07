@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetType(String type)
 
-**Parameter:** 
+## Parameters
+
 * **type** String
 
 ```crmscript

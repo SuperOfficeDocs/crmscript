@@ -10,14 +10,15 @@ so.topic: reference
 
 The role this document plays in the Quote system, if any
 
-**Parameter:** 
+## Parameters
+
 * **quoteDocType** NSDocTmplQuoteType
-* Enum: 0 = None 
-* Enum: 1 = MailBody 
-* Enum: 2 = MainDocument 
-* Enum: 3 = QuoteLines 
-* Enum: 4 = ConfirmationMailBody 
-* Enum: 5 = ConfirmationLines 
+* Enum: 0 = None
+* Enum: 1 = MailBody
+* Enum: 2 = MainDocument
+* Enum: 3 = QuoteLines
+* Enum: 4 = ConfirmationMailBody
+* Enum: 5 = ConfirmationLines
 
 ```crmscript
 NSDocumentTemplateEntity thing;

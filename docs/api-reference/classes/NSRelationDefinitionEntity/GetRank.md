@@ -8,7 +8,7 @@ so.topic: reference
 
 # Integer GetRank()
 
-Rank order 
+Rank order
 
 **Returns:** Integer
 

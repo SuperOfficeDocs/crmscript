@@ -10,7 +10,8 @@ so.topic: reference
 
 If true, it is possible to sign off the event.
 
-**Parameter:** 
+## Parameters
+
 * **signOff** Bool
 
 ```crmscript

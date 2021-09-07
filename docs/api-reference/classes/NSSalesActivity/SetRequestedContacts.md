@@ -10,7 +10,8 @@ so.topic: reference
 
 The companies that match the request
 
-**Parameter:** 
+## Parameters
+
 * **requestedContacts** NSContact[]
 
 ```crmscript

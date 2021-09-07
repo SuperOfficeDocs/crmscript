@@ -8,7 +8,7 @@ so.topic: reference
 
 # String GetErrorMessage()
 
-If an error occured, this member will contain a description of the error
+If an error occurred, this member will contain a description of the error
 
 **Returns:** String
 

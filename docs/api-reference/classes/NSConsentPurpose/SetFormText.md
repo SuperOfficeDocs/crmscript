@@ -10,7 +10,8 @@ so.topic: reference
 
 Text for the consent form, the long text to be shown when asking the end-user for this kind of consent
 
-**Parameter:** 
+## Parameters
+
 * **formText** String
 
 ```crmscript

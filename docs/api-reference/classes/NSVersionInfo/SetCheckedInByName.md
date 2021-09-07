@@ -10,7 +10,8 @@ so.topic: reference
 
 Name (nicely formatted) of the user/person who performed the checkin
 
-**Parameter:** 
+## Parameters
+
 * **checkedInByName** String
 
 ```crmscript

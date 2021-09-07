@@ -10,7 +10,8 @@ so.topic: reference
 
 Version string for this module
 
-**Parameter:** 
+## Parameters
+
 * **moduleVersion** String
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 The template type of the document.
 
-**Parameter:** 
+## Parameters
+
 * **documentTemplate** NSDocumentTemplate
 
 ```crmscript

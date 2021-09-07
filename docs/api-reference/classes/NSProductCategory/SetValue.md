@@ -10,7 +10,8 @@ so.topic: reference
 
 Set the name of the NSProductCategory item.
 
-**Parameter:** 
+## Parameters
+
 * **value** String NSProductCategory name.
 
 ```crmscript

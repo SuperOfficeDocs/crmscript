@@ -10,7 +10,8 @@ so.topic: reference
 
 The documents name
 
-**Parameter:** 
+## Parameters
+
 * **name** String
 
 ```crmscript

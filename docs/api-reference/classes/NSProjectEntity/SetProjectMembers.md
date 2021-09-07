@@ -10,7 +10,8 @@ so.topic: reference
 
 The persons which are members of the project
 
-**Parameter:** 
+## Parameters
+
 * **projectMembers** NSProjectMember[]
 
 ```crmscript

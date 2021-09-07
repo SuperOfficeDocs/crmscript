@@ -10,7 +10,8 @@ so.topic: reference
 
 A strictly ascending number used for sorting categories when they are listed.
 
-**Parameter:** 
+## Parameters
+
 * **sortOrder** Integer
 
 ```crmscript

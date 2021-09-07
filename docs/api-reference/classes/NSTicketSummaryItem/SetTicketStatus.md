@@ -10,7 +10,8 @@ so.topic: reference
 
 User defined ticket status
 
-**Parameter:** 
+## Parameters
+
 * **ticketStatus** Integer
 
 ```crmscript

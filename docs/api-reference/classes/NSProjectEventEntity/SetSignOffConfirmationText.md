@@ -10,7 +10,8 @@ so.topic: reference
 
 Text shown as confirmation text before accepting sign off.
 
-**Parameter:** 
+## Parameters
+
 * **signOffConfirmationText** String
 
 ```crmscript

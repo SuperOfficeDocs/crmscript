@@ -12,13 +12,16 @@ Appointment Completed state. This property is the part of the Status property th
 
 **Returns:** Integer
 
-* Enum: 0 = Unknown 
-* Enum: 1 = NotStarted 
-* Enum: 2 = Started 
-* Enum: 3 = Completed 
+## Enum: completed state
+
+* 0 = Unknown
+* 1 = NotStarted
+* 2 = Started
+* 3 = Completed
+
+## Example
 
 ```crmscript
 NSAppointmentEntity thing;
 Integer completed  = thing.GetCompleted();
 ```
-

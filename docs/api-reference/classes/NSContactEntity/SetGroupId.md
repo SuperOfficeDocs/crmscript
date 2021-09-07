@@ -10,7 +10,8 @@ so.topic: reference
 
 Group id of original owning associate, semantics like appnt.grp_id
 
-**Parameter:** 
+## Parameters
+
 * **groupId** Integer
 
 ```crmscript

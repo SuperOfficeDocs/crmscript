@@ -10,7 +10,8 @@ so.topic: reference
 
 Set the primary key (id) for the NSProjectType
 
-**Parameter:** 
+## Parameters
+
 * **id** Integer NSProjectType id.
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Which day the usage was logged
 
-**Parameter:** 
+## Parameters
+
 * **timestamp** DateTime
 
 ```crmscript

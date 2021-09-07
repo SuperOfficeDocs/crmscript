@@ -10,7 +10,8 @@ so.topic: reference
 
 The key used to uniquely identify this consent source
 
-**Parameter:** 
+## Parameters
+
 * **key** String
 
 ```crmscript

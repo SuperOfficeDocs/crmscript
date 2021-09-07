@@ -1,7 +1,7 @@
 ---
 uid: crmscript_class_searchengine_buildsql
 title: SearchEngine.buildSql()
-description: CRMScript method in the SearchEngine class that returns the generated SQL query 
+description: CRMScript method in the SearchEngine class that returns the generated SQL query
 intellisense: SearchEngine.buildSql
 keywords: buildSql(), buildSql(String)
 so.topic: reference

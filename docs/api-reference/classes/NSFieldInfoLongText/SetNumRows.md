@@ -10,7 +10,8 @@ so.topic: reference
 
 Number of lines of text to show. Text area height.
 
-**Parameter:** 
+## Parameters
+
 * **numRows** Integer
 
 ```crmscript

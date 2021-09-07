@@ -10,7 +10,8 @@ so.topic: reference
 
 Number of all open sales with date before this period
 
-**Parameter:** 
+## Parameters
+
 * **previousOverdue** Integer
 
 ```crmscript

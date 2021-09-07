@@ -10,7 +10,8 @@ so.topic: reference
 
 Optional folder to set as current after logging in
 
-**Parameter:** 
+## Parameters
+
 * **folder** String
 
 ```crmscript

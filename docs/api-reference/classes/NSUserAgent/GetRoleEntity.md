@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSRoleEntity GetRoleEntity(Integer roleEntityId);
 
-Gets a NSRoleEntity object.
+Gets an NSRoleEntity object.
 
 ## Parameters
 

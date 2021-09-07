@@ -41,7 +41,7 @@ keywords:
 * TypeToUser = 2
 * TypeSpecial = 3
 
-## enum SpecialType
+## Enum: SpecialType
 
 * SpecialTypeNone = 0
 * SpecialTypeWelcome = 1

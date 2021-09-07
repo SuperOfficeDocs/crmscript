@@ -10,7 +10,8 @@ so.topic: reference
 
 The iso currency code, like 'USD' or 'NOK'.
 
-**Parameter:** 
+## Parameters
+
 * **currency** String
 
 ```crmscript

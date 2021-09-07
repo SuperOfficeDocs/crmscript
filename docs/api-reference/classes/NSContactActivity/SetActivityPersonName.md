@@ -10,7 +10,8 @@ so.topic: reference
 
 The person that carried out the activity on the contact.
 
-**Parameter:** 
+## Parameters
+
 * **activityPersonName** String
 
 ```crmscript

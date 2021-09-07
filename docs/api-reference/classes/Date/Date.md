@@ -16,7 +16,7 @@ The default date is now.
 ## Example
 
     Date d;
-    
+   
     d.addDay(3);
     d.addMonth(2);
     d.addYear(1); // d is 1 year, 2 months and 3 days from today

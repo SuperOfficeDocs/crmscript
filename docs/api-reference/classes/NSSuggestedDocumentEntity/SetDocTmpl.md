@@ -10,7 +10,8 @@ so.topic: reference
 
 Document template
 
-**Parameter:** 
+## Parameters
+
 * **docTmpl** NSDocumentTemplate
 
 ```crmscript

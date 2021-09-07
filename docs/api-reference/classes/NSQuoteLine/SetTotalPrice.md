@@ -10,7 +10,8 @@ so.topic: reference
 
 TotalPrice  = SubTotal* DiscountAmount or TotalPrice = (UnitCost * Quantity) + EarningAmount, according to what the user changed last.
 
-**Parameter:** 
+## Parameters
+
 * **totalPrice** Float
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 The last time anyone sent a message for this session.
 
-**Parameter:** 
+## Parameters
+
 * **whenIdle** DateTime
 
 ```crmscript

@@ -8,9 +8,10 @@ so.topic: reference
 
 # SetTicketCategories(NSMDOListItem[] ticketCategories)
 
-Request Ticket Categories assigned to the user. 
+Request Ticket Categories assigned to the user.
 
-**Parameter:** 
+## Parameters
+
 * **ticketCategories** NSMDOListItem[]
 
 ```crmscript

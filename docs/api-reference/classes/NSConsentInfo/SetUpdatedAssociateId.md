@@ -10,7 +10,8 @@ so.topic: reference
 
 The ID of the associate who last updated this record
 
-**Parameter:** 
+## Parameters
+
 * **updatedAssociateId** Integer
 
 ```crmscript

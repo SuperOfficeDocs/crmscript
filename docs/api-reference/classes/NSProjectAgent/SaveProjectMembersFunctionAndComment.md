@@ -12,6 +12,8 @@ Saves role and comment on an array of projectmembers represented by ids
 
 ## Parameters
 
-* **projectMemberIds** 
-* **roleId** 
-* **comment** 
+| Parameter | Type | Description |
+|---|---|---|
+| projectMemberIds | Integer[] | |
+| roleId | Integer | |
+| comment | String | |

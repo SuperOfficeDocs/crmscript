@@ -10,7 +10,8 @@ so.topic: reference
 
 Number of all overdue sales within the period
 
-**Parameter:** 
+## Parameters
+
 * **currentOverdue** Integer
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Whether open on Saturdays.
 
-**Parameter:** 
+## Parameters
+
 * **satEnabled** Bool
 
 ```crmscript

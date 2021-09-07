@@ -10,7 +10,8 @@ so.topic: reference
 
 Set the name of the NSCompetitor item.
 
-**Parameter:** 
+## Parameters
+
 * **value** String NSCompetitor name.
 
 ```crmscript

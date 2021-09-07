@@ -10,7 +10,8 @@ so.topic: reference
 
 The tooltip of the list
 
-**Parameter:** 
+## Parameters
+
 * **tooltip** String
 
 ```crmscript

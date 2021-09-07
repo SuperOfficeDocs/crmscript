@@ -10,7 +10,8 @@ so.topic: reference
 
 A copy of the first message in the chat session
 
-**Parameter:** 
+## Parameters
+
 * **firstMessage** String
 
 ```crmscript

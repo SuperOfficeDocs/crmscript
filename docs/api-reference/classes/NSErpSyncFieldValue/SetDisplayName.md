@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetDisplayName(String displayName)
 
-**Parameter:** 
+## Parameters
+
 * **displayName** String
 
 ```crmscript

@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSProjectMember UpdateProjectMember(NSProjectMember projectMember)
 
-Updates a NSProjectMember row.
+Updates an NSProjectMember row.
 
 ## Parameters
 

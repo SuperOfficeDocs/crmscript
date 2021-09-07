@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSWebPanelEntity GetWebPanelEntity(Integer webPanelEntityId);
 
-Gets a NSWebPanelEntity object.
+Gets an NSWebPanelEntity object.
 
 ## Parameters
 

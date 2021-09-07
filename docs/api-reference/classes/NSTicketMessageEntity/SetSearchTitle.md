@@ -10,7 +10,8 @@ so.topic: reference
 
 A copy of the title of the ticket, for search optimisation and simpler reporting.
 
-**Parameter:** 
+## Parameters
+
 * **searchTitle** String
 
 ```crmscript

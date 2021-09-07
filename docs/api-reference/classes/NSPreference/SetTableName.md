@@ -10,7 +10,8 @@ so.topic: reference
 
 For DisplayType=PrefDescValueType.ListTableRef, TableName will contain the name of the table which the value reference to.
 
-**Parameter:** 
+## Parameters
+
 * **tableName** String
 
 ```crmscript

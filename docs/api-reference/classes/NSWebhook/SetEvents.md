@@ -8,9 +8,10 @@ so.topic: reference
 
 # SetEvents(String[] events)
 
-Array of event names that trigger this webhook: ['contact.created', 'sale.changed'] 
+Array of event names that trigger this webhook: ['contact.created', 'sale.changed']
 
-**Parameter:** 
+## Parameters
+
 * **events** String[]
 
 ```crmscript

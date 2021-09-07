@@ -10,7 +10,8 @@ so.topic: reference
 
 Our reference, searchable field from freetext search
 
-**Parameter:** 
+## Parameters
+
 * **ourRef** String
 
 ```crmscript

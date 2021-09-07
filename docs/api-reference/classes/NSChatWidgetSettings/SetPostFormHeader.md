@@ -10,7 +10,8 @@ so.topic: reference
 
 Header text to show in post chat form
 
-**Parameter:** 
+## Parameters
+
 * **postFormHeader** String
 
 ```crmscript

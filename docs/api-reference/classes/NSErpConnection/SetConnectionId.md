@@ -10,7 +10,8 @@ so.topic: reference
 
 The GUID that uniquely identifies this connection; passed to the Connector in every call
 
-**Parameter:** 
+## Parameters
+
 * **connectionId** String
 
 ```crmscript

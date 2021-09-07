@@ -10,7 +10,8 @@ so.topic: reference
 
 When was the task last started.
 
-**Parameter:** 
+## Parameters
+
 * **lastStarted** DateTime
 
 ```crmscript

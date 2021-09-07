@@ -10,7 +10,8 @@ so.topic: reference
 
 Initials, UserId* also used as login name for on-site installations. Identifies user in archives.
 
-**Parameter:** 
+## Parameters
+
 * **name** String
 
 ```crmscript

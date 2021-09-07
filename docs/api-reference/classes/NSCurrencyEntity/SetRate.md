@@ -10,7 +10,8 @@ so.topic: reference
 
 Exchange rate
 
-**Parameter:** 
+## Parameters
+
 * **rate** Float
 
 ```crmscript

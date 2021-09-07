@@ -8,18 +8,23 @@ so.topic: reference
 
 # SetRecurringPattern(Integer recurringPattern)
 
-**Parameter:** 
+## Parameters
+
 * **recurringPattern** Integer
-* Enum: 0 = Unknown 
-* Enum: 1 = Daily 
-* Enum: 2 = Weekly 
-* Enum: 3 = Monthly 
-* Enum: 4 = Yearly 
-* Enum: 5 = Custom 
+
+### Enum: RecurringPattern
+
+* 0 = Unknown
+* 1 = Daily
+* 2 = Weekly
+* 3 = Monthly
+* 4 = Yearly
+* 5 = Custom
+
+## Example
 
 ```crmscript
 NSAppointment thing;
 Integer recurringPattern;
 thing.SetRecurringPattern(recurringPattern);
 ```
-

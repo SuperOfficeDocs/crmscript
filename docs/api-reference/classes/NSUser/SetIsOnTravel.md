@@ -10,7 +10,8 @@ so.topic: reference
 
 True if the user is on travel.
 
-**Parameter:** 
+## Parameters
+
 * **isOnTravel** Bool
 
 ```crmscript

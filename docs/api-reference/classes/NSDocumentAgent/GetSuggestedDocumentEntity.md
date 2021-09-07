@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSSuggestedDocumentEntity GetSuggestedDocumentEntity(Integer suggestedDocumentEntityId);
 
-Gets a NSSuggestedDocumentEntity object.
+Gets an NSSuggestedDocumentEntity object.
 
 ## Parameters
 

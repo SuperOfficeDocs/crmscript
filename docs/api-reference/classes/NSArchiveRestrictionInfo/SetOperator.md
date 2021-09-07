@@ -10,7 +10,8 @@ so.topic: reference
 
 The operator, such as =, etc
 
-**Parameter:** 
+## Parameters
+
 * **operator** String
 
 ```crmscript

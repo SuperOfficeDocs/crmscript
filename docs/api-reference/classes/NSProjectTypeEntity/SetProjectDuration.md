@@ -10,7 +10,8 @@ so.topic: reference
 
 Expected duration of project, in given units
 
-**Parameter:** 
+## Parameters
+
 * **projectDuration** Integer
 
 ```crmscript

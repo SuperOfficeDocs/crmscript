@@ -12,4 +12,4 @@ Remove all user licenses.
 
 ## Parameters
 
-* **associateId** 
+* **associateId**

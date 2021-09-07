@@ -10,12 +10,16 @@ so.topic: reference
 
 Checks if the number is unique or required.  The setting is configured from admin under system options.
 
+**Returns:** Bool
+
 ## Parameters
 
-* **contactId** 
-* **number** Number to check.
+| Parameter | Type | Description |
+|---|---|---|
+| contactId | Integer | |
+| number | String | Number to check. |
 
-**Returns:** Bool
+## Example
 
 ```crmscript
 NSPersonAgent agent;
@@ -23,4 +27,3 @@ Integer contactId;
 String number;
 Bool res = agent.IsNumberValid(contactId, number);
 ```
-

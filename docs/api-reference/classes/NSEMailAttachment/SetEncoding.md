@@ -10,7 +10,8 @@ so.topic: reference
 
 Content-Transfer-Encoding
 
-**Parameter:** 
+## Parameters
+
 * **encoding** String
 
 ```crmscript

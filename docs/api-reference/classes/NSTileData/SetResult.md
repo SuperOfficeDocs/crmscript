@@ -10,7 +10,8 @@ so.topic: reference
 
 The result set
 
-**Parameter:** 
+## Parameters
+
 * **result** NSArchiveListResult
 
 ```crmscript

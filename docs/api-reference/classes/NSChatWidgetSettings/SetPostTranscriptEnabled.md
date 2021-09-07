@@ -10,7 +10,8 @@ so.topic: reference
 
 Enable transcript of chat session
 
-**Parameter:** 
+## Parameters
+
 * **postTranscriptEnabled** Bool
 
 ```crmscript

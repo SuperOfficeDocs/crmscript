@@ -10,7 +10,8 @@ so.topic: reference
 
 Sequence number in ICS file.
 
-**Parameter:** 
+## Parameters
+
 * **sequence** Integer
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Generation number of step
 
-**Parameter:** 
+## Parameters
+
 * **stepNumber** Integer
 
 ```crmscript

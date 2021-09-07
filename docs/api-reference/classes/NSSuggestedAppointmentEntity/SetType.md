@@ -10,7 +10,8 @@ so.topic: reference
 
 Type of the suggested appointment
 
-**Parameter:** 
+## Parameters
+
 * **type** NSTask
 
 ```crmscript

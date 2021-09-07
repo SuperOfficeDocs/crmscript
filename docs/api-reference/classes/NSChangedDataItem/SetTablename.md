@@ -10,7 +10,8 @@ so.topic: reference
 
 Name of table, standardized to lowercase
 
-**Parameter:** 
+## Parameters
+
 * **tablename** String
 
 ```crmscript

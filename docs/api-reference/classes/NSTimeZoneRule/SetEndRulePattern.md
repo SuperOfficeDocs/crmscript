@@ -10,7 +10,8 @@ so.topic: reference
 
 DST end rule, such as 2300 LST-SAT-OCT; limited to rules that we have parse code for; use dayOfMonth etc for custom rules
 
-**Parameter:** 
+## Parameters
+
 * **endRulePattern** String
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 True if the person's address should be used as mailing address, instead of the contact's address.
 
-**Parameter:** 
+## Parameters
+
 * **usePersonAddress** Bool
 
 ```crmscript

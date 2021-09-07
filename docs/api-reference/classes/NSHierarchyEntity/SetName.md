@@ -10,7 +10,8 @@ so.topic: reference
 
 Name of this hierarchy folder.
 
-**Parameter:** 
+## Parameters
+
 * **name** String
 
 ```crmscript

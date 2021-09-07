@@ -10,7 +10,8 @@ so.topic: reference
 
 Optional contact reference
 
-**Parameter:** 
+## Parameters
+
 * **contactId** Integer
 
 ```crmscript

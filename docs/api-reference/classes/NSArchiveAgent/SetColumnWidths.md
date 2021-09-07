@@ -8,7 +8,7 @@ so.topic: reference
 
 # Void SetColumnWidths(String guiName, String[] columnWidths)
 
-Set the column widths for the given set of columns and GUI name. 
+Set the column widths for the given set of columns and GUI name.
 
 ## Parameters
 

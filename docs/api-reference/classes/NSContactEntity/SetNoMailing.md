@@ -10,7 +10,8 @@ so.topic: reference
 
 Spam filter. Indicates if this contact should retrieve advertising.
 
-**Parameter:** 
+## Parameters
+
 * **noMailing** Bool
 
 ```crmscript

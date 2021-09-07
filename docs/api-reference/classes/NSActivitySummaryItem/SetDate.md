@@ -10,7 +10,8 @@ so.topic: reference
 
 Start/Document date
 
-**Parameter:** 
+## Parameters
+
 * **date** DateTime
 
 ```crmscript

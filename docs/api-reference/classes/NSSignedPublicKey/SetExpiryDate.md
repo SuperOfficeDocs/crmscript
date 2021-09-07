@@ -10,7 +10,8 @@ so.topic: reference
 
 Date when the signature expires. No Timezone.
 
-**Parameter:** 
+## Parameters
+
 * **expiryDate** DateTime
 
 ```crmscript

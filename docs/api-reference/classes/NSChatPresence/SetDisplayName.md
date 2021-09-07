@@ -10,7 +10,8 @@ so.topic: reference
 
 The display name of the chat user
 
-**Parameter:** 
+## Parameters
+
 * **displayName** String
 
 ```crmscript

@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSSystemEventEntity GetSystemEventEntity(Integer systemEventEntityId);
 
-Gets a NSSystemEventEntity object.
+Gets an NSSystemEventEntity object.
 
 ## Parameters
 

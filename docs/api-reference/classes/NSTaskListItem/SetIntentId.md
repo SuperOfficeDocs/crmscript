@@ -10,7 +10,8 @@ so.topic: reference
 
 Link to the intention of this kind of task (used by SAINT)
 
-**Parameter:** 
+## Parameters
+
 * **intentId** Integer
 
 ```crmscript

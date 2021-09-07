@@ -10,7 +10,8 @@ so.topic: reference
 
 Custom DST start day, if 0 then parse startRule
 
-**Parameter:** 
+## Parameters
+
 * **startDay** Integer
 
 ```crmscript

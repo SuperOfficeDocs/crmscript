@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSPersonEntity CreateDefaultFromCredential(Integer contactId, String credentialType, String credentialValue, String credentialDisplayValue)
 
-Creates a NSPersonEntity with default values based on the contactId and credentials.
+Creates an NSPersonEntity with default values based on the contactId and credentials.
 
 ## Parameters
 

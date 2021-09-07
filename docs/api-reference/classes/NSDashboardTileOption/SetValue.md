@@ -10,7 +10,8 @@ so.topic: reference
 
 The value, encoded as string, Id:Name of list item if type is list
 
-**Parameter:** 
+## Parameters
+
 * **value** String
 
 ```crmscript

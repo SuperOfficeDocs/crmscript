@@ -10,7 +10,8 @@ so.topic: reference
 
 Integration agent (eJournal)
 
-**Parameter:** 
+## Parameters
+
 * **dbiAgentId** Integer
 
 ```crmscript

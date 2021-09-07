@@ -8,18 +8,23 @@ so.topic: reference
 
 # SetAddressType(Integer addressType)
 
-**Parameter:** 
+## Parameters
+
 * **addressType** Integer
-* Enum: 0 = Unknown 
-* Enum: 1 = ContactPostalAddress 
-* Enum: 2 = ContactStreetAddress 
-* Enum: 16387 = PersonPrivateAddress 
-* Enum: 8196 = QuoteBillingAddress 
-* Enum: 8197 = QuoteShippingAddress 
+
+### Enum: address type
+
+* 0 = Unknown
+* 1 = ContactPostalAddress
+* 2 = ContactStreetAddress
+* 16387 = PersonPrivateAddress
+* 8196 = QuoteBillingAddress
+* 8197 = QuoteShippingAddress
+
+## Example
 
 ```crmscript
 NSAddressSyncData thing;
 Integer addressType;
 thing.SetAddressType(addressType);
 ```
-

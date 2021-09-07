@@ -10,7 +10,8 @@ so.topic: reference
 
 Programmatic name of the Connector plugin that implements this kind of connection
 
-**Parameter:** 
+## Parameters
+
 * **connectorName** String
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Count of unique search words
 
-**Parameter:** 
+## Parameters
+
 * **countWords** Integer
 
 ```crmscript

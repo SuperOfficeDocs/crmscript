@@ -32,9 +32,9 @@ Get the value of the given field in the EabEntry instance.
 ## Example
 
     EabEntry eab;
-    
+   
     Bool b = eab.load(15);
     print(b.toString());
-    
+   
     eab.setValue("name", "test");
     print(eab.getValue("name"));

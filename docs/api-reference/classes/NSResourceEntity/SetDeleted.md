@@ -10,7 +10,8 @@ so.topic: reference
 
 If true, the resource is deleted.
 
-**Parameter:** 
+## Parameters
+
 * **deleted** Bool
 
 ```crmscript

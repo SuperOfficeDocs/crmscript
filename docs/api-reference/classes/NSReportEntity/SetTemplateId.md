@@ -10,7 +10,8 @@ so.topic: reference
 
 The id of report template.
 
-**Parameter:** 
+## Parameters
+
 * **templateId** Integer
 
 ```crmscript

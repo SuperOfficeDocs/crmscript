@@ -10,7 +10,8 @@ so.topic: reference
 
 Can quotes linked to sales of this type, have multiple Alternatives
 
-**Parameter:** 
+## Parameters
+
 * **allowQuoteAlternatives** Bool
 
 ```crmscript

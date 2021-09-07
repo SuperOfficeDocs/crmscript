@@ -10,7 +10,8 @@ so.topic: reference
 
 The actorType belonging to the ListMapping
 
-**Parameter:** 
+## Parameters
+
 * **erpActorTypeName** String
 
 ```crmscript

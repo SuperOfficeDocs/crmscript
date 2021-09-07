@@ -10,7 +10,8 @@ so.topic: reference
 
 Does this appointment have an alarm
 
-**Parameter:** 
+## Parameters
+
 * **hasAlarm** Bool
 
 ```crmscript

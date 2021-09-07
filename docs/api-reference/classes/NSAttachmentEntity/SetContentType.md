@@ -10,7 +10,8 @@ so.topic: reference
 
 The content type for the attachment (e.g. &apos;applaction/octet-stream&apos; or &apos;application/vnd.openxmlformats-officedocument.wordprocessingml.document&apos;).
 
-**Parameter:** 
+## Parameters
+
 * **contentType** String
 
 ```crmscript

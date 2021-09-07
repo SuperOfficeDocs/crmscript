@@ -10,7 +10,8 @@ so.topic: reference
 
 If nonzero, then this contact is 'deleted' and should generally not be shown
 
-**Parameter:** 
+## Parameters
+
 * **deleted** Integer
 
 ```crmscript

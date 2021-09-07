@@ -10,7 +10,8 @@ so.topic: reference
 
 User agent handling this session
 
-**Parameter:** 
+## Parameters
+
 * **user** NSAssociate
 
 ```crmscript

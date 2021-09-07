@@ -10,7 +10,8 @@ so.topic: reference
 
 Id of the person that ows the event (i.e. project)
 
-**Parameter:** 
+## Parameters
+
 * **associateId** Integer
 
 ```crmscript

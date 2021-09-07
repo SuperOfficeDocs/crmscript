@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSDocumentTemplate GetDocumentTemplate(Integer documentTemplateId);
 
-Gets a NSDocumentTemplate object.
+Gets an NSDocumentTemplate object.
 
 ## Parameters
 

@@ -10,7 +10,8 @@ so.topic: reference
 
 The short name of the quick reply
 
-**Parameter:** 
+## Parameters
+
 * **name** String
 
 ```crmscript

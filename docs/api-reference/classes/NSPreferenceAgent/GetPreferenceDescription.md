@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSPreferenceDescription GetPreferenceDescription(Integer preferenceDescriptionId);
 
-Gets a NSPreferenceDescription object.
+Gets an NSPreferenceDescription object.
 
 ## Parameters
 

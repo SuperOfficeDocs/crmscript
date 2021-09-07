@@ -10,7 +10,8 @@ so.topic: reference
 
 Default task text for this status
 
-**Parameter:** 
+## Parameters
+
 * **defaultTaskText** String
 
 ```crmscript

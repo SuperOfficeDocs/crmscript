@@ -10,16 +10,21 @@ so.topic: reference
 
 The Completed state. NotStarted(1) or Completed(3)
 
-**Parameter:** 
+## Parameters
+
 * **completed** Integer
-* Enum: 0 = Unknown 
-* Enum: 1 = NotStarted 
-* Enum: 2 = Started 
-* Enum: 3 = Completed 
+
+## Completed state
+
+* 0 = Unknown
+* 1 = NotStarted
+* 2 = Started
+* 3 = Completed
+
+## Example
 
 ```crmscript
 NSSaleSummaryItem thing;
 Integer completed;
 thing.SetCompleted(completed);
 ```
-

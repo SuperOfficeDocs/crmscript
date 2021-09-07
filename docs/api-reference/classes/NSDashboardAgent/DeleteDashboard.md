@@ -9,7 +9,7 @@ so.topic: reference
 # DeleteDashboard(Integer dashboard);
 
 Deletes the NSDashboard
-  
+ 
 ## Parameters
 
 * **dashboardId** The identity of the Dashboard to delete.

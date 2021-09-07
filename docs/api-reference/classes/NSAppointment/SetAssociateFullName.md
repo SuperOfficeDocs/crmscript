@@ -10,7 +10,8 @@ so.topic: reference
 
 The owner of the appointment* the associate whose diary/checklist the appointment is in.
 
-**Parameter:** 
+## Parameters
+
 * **associateFullName** String
 
 ```crmscript

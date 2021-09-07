@@ -10,7 +10,8 @@ so.topic: reference
 
 Will contain the design part of a message. The format will vary based on the type of designer used to create the message
 
-**Parameter:** 
+## Parameters
+
 * **design** String
 
 ```crmscript

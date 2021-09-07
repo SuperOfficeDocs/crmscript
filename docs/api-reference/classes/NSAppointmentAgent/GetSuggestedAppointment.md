@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSSuggestedAppointment GetSuggestedAppointment(Integer suggestedAppointmentId);
 
-Gets a NSSuggestedAppointment object.
+Gets an NSSuggestedAppointment object.
 
 ## Parameters
 

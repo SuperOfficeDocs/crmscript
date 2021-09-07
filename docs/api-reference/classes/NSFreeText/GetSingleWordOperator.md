@@ -12,9 +12,9 @@ Starts with, contains or exact match
 
 **Returns:** Integer
 
-* Enum: 1 = Contains 
-* Enum: 2 = StartsWith 
-* Enum: 3 = ExactMatch 
+* Enum: 1 = Contains
+* Enum: 2 = StartsWith
+* Enum: 3 = ExactMatch
 
 ```crmscript
 NSFreeText thing;

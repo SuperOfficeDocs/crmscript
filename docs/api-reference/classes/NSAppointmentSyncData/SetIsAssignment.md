@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetIsAssignment(Bool isAssignment)
 
-**Parameter:** 
+## Parameters
+
 * **isAssignment** Bool
 
 ```crmscript

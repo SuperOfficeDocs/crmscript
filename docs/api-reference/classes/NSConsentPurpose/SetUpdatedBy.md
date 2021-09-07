@@ -10,7 +10,8 @@ so.topic: reference
 
 The associate that last updated the consent purpose
 
-**Parameter:** 
+## Parameters
+
 * **updatedBy** NSAssociate
 
 ```crmscript

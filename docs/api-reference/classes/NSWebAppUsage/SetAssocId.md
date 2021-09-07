@@ -10,7 +10,8 @@ so.topic: reference
 
 Associate Id
 
-**Parameter:** 
+## Parameters
+
 * **assocId** Integer
 
 ```crmscript

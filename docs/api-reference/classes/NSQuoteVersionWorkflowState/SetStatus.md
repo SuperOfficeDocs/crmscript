@@ -10,7 +10,8 @@ so.topic: reference
 
 Status information for the Quote Version.
 
-**Parameter:** 
+## Parameters
+
 * **status** QuoteVersionStatusInformation
 
 ```crmscript

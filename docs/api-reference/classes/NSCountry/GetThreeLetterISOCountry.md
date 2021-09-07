@@ -8,7 +8,7 @@ so.topic: reference
 
 # String GetThreeLetterISOCountry()
 
-Three-letter country-code according to ISO3166 
+Three-letter country-code according to ISO3166
 
 **Returns:** String
 

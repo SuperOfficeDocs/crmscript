@@ -10,7 +10,8 @@ so.topic: reference
 
 Rank, controls rank of non-instantiated items in Guide
 
-**Parameter:** 
+## Parameters
+
 * **rank** Integer
 
 ```crmscript

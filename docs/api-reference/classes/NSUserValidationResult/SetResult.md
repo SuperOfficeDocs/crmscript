@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetResult(Bool result)
 
-**Parameter:** 
+## Parameters
+
 * **result** Bool
 
 ```crmscript

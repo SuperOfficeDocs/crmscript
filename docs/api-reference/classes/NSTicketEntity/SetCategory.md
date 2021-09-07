@@ -10,7 +10,8 @@ so.topic: reference
 
 The ticket category entity which this ticket is connected to
 
-**Parameter:** 
+## Parameters
+
 * **category** NSTicketCategoryEntity
 
 ```crmscript

@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSRecurrenceInfo CreateDefaultRecurrence()
 
-Creates a NSRecurrenceInfo object populated with the default values for the specific type.
+Creates an NSRecurrenceInfo object populated with the default values for the specific type.
 
 **Returns:** NSReccurenceInfo
 

@@ -10,7 +10,8 @@ so.topic: reference
 
 Length of the first counter period
 
-**Parameter:** 
+## Parameters
+
 * **period1** Integer
 
 ```crmscript

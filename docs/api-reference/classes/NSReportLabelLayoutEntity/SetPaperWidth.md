@@ -10,7 +10,8 @@ so.topic: reference
 
 Paper width in twips
 
-**Parameter:** 
+## Parameters
+
 * **paperWidth** Integer
 
 ```crmscript

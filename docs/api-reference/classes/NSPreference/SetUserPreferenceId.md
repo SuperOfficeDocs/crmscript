@@ -10,7 +10,8 @@ so.topic: reference
 
 The id of the user preference
 
-**Parameter:** 
+## Parameters
+
 * **userPreferenceId** Integer
 
 ```crmscript

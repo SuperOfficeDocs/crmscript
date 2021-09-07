@@ -10,7 +10,8 @@ so.topic: reference
 
 Indicates if this form creates a ticket or not
 
-**Parameter:** 
+## Parameters
+
 * **newTicket** Bool
 
 ```crmscript

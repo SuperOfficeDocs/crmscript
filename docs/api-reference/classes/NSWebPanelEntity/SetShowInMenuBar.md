@@ -10,7 +10,8 @@ so.topic: reference
 
 Does the webpanel have a menu bar
 
-**Parameter:** 
+## Parameters
+
 * **showInMenuBar** Bool
 
 ```crmscript

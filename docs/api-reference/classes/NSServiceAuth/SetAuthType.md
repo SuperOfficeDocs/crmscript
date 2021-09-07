@@ -10,7 +10,8 @@ so.topic: reference
 
 The type of authentication, plain-text, OAuth...
 
-**Parameter:** 
+## Parameters
+
 * **authType** String
 
 ```crmscript

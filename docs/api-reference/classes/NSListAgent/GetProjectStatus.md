@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSProjectStatus GetProjectStatus(Integer projectStatusId);
 
-Gets a NSProjectStatus object.
+Gets an NSProjectStatus object.
 
 ## Parameters
 

@@ -10,7 +10,8 @@ so.topic: reference
 
 Id of associate who approved (or rejected approval) for this version
 
-**Parameter:** 
+## Parameters
+
 * **approvedBy** Integer
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Identifier for a selection
 
-**Parameter:** 
+## Parameters
+
 * **selectionId** Integer
 
 ```crmscript

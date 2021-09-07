@@ -10,7 +10,8 @@ so.topic: reference
 
 Preference section name
 
-**Parameter:** 
+## Parameters
+
 * **section** String
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 The width of the widget
 
-**Parameter:** 
+## Parameters
+
 * **width** Integer
 
 ```crmscript

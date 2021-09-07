@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSRefCountEntity GetRefCountEntity(Integer refCountEntityId);
 
-Gets a NSRefCountEntity object.
+Gets an NSRefCountEntity object.
 
 * **RefCountEntityId** The identifier of the NSRefCountEntity object
 

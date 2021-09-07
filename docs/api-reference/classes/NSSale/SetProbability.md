@@ -10,7 +10,8 @@ so.topic: reference
 
 Actual probability, may differ from the one in the list
 
-**Parameter:** 
+## Parameters
+
 * **probability** Integer
 
 ```crmscript

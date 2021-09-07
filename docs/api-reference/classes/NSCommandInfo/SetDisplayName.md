@@ -10,7 +10,8 @@ so.topic: reference
 
 Display name, shown in menus, command lists and similar GUI elements.
 
-**Parameter:** 
+## Parameters
+
 * **displayName** String
 
 ```crmscript

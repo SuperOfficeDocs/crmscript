@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetArea(NSArea area)
 
-**Parameter:** 
+## Parameters
+
 * **area** NSArea
 
 ```crmscript

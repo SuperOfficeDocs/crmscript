@@ -10,7 +10,8 @@ so.topic: reference
 
 The business that the contact is associated with. The GUI forces the user to enter a business type.
 
-**Parameter:** 
+## Parameters
+
 * **contactBusiness** String
 
 ```crmscript

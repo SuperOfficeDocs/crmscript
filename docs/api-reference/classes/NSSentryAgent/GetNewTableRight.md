@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSTableRight GetNewTableRight(String tableName)
 
-Returns a NSTableRight for a new row based on tableName parameter.
+Returns an NSTableRight for a new row based on tableName parameter.
 
 ## Parameters
 

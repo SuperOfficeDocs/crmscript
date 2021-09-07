@@ -10,7 +10,8 @@ so.topic: reference
 
 Keys that share a value (including NULL) in this field are shown together; a visual spacer is shown between groups
 
-**Parameter:** 
+## Parameters
+
 * **subGroup** String
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Updated date
 
-**Parameter:** 
+## Parameters
+
 * **updatedDate** DateTime
 
 ```crmscript

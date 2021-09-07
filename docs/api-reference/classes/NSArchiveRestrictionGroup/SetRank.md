@@ -10,7 +10,8 @@ so.topic: reference
 
 Rank order within this CriteriaModel
 
-**Parameter:** 
+## Parameters
+
 * **rank** Integer
 
 ```crmscript

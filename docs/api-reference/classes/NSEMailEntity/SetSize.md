@@ -10,7 +10,8 @@ so.topic: reference
 
 Total size of the e-mail
 
-**Parameter:** 
+## Parameters
+
 * **size** Integer
 
 ```crmscript

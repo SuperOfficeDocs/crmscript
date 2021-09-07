@@ -10,7 +10,8 @@ so.topic: reference
 
 Describes the expected value array
 
-**Parameter:** 
+## Parameters
+
 * **valueType** String
 
 ```crmscript

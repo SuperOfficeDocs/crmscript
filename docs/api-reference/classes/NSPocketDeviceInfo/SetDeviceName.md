@@ -10,7 +10,8 @@ so.topic: reference
 
 A friendly display name for the device. Ex: 'Bobbys iPhone 5S'
 
-**Parameter:** 
+## Parameters
+
 * **deviceName** String
 
 ```crmscript

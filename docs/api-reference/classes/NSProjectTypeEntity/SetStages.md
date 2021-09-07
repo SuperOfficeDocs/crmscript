@@ -10,7 +10,8 @@ so.topic: reference
 
 Stages (project statuses), those associated with this ProjType are selected.
 
-**Parameter:** 
+## Parameters
+
 * **stages** NSSelectableMDOListItem[]
 
 ```crmscript

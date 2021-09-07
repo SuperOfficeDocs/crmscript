@@ -10,7 +10,8 @@ so.topic: reference
 
 Enable chatbot on this topic. Run the trigger scripts on bot events.
 
-**Parameter:** 
+## Parameters
+
 * **botEnabled** Bool
 
 ```crmscript

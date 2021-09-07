@@ -10,7 +10,8 @@ so.topic: reference
 
 The validated NSQuoteVersion
 
-**Parameter:** 
+## Parameters
+
 * **changedQuoteVersion** NSQuoteVersion
 
 ```crmscript

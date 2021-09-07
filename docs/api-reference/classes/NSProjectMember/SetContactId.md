@@ -10,7 +10,8 @@ so.topic: reference
 
 Contact ID of person who is the project member
 
-**Parameter:** 
+## Parameters
+
 * **contactId** Integer
 
 ```crmscript

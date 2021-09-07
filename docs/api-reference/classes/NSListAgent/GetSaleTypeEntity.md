@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSSaleTypeEntity GetSaleTypeEntity(Integer saleTypeEntityId);
 
-Gets a NSSaleTypeEntity object.
+Gets an NSSaleTypeEntity object.
 
 ## Parameters
 

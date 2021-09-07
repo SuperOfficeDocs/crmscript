@@ -9,7 +9,7 @@ so.topic: reference
 # DeleteDiaryViewEntity(Integer diaryViewEntity);
 
 Deletes the NSDiaryViewEntity
-  
+ 
 ## Parameters
 
 * **diaryViewEntityId** The identity of the DiaryViewEntity to delete.

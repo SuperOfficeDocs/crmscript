@@ -10,7 +10,8 @@ so.topic: reference
 
 Is this a mandatory field?
 
-**Parameter:** 
+## Parameters
+
 * **mandatory** Bool
 
 ```crmscript

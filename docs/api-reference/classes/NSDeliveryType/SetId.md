@@ -10,7 +10,8 @@ so.topic: reference
 
 Set the primary key (id) for the DeliveryType
 
-**Parameter:** 
+## Parameters
+
 * **id** Integer DeliveryType id.
 
 ```crmscript

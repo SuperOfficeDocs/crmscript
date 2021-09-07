@@ -10,7 +10,8 @@ so.topic: reference
 
 The time of the submit.
 
-**Parameter:** 
+## Parameters
+
 * **whenSubmitted** DateTime
 
 ```crmscript

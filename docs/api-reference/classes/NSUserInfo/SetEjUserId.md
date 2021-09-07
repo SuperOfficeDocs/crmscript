@@ -10,7 +10,8 @@ so.topic: reference
 
 ID of the ej user record corresponding to this associate; 0 for associates that are not ej users
 
-**Parameter:** 
+## Parameters
+
 * **ejUserId** Integer
 
 ```crmscript

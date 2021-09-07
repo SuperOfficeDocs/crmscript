@@ -10,7 +10,8 @@ so.topic: reference
 
 True if the appointment is part of a recurring pattern.
 
-**Parameter:** 
+## Parameters
+
 * **isRecurrence** Bool
 
 ```crmscript

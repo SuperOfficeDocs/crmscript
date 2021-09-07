@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetZipCode(String zipCode)
 
-**Parameter:** 
+## Parameters
+
 * **zipCode** String
 
 ```crmscript

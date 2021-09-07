@@ -10,8 +10,10 @@ so.topic: reference
 
 Kind of the reverse of SetListTableIdAndUDListDefinitionIdFromSelectedListId
 
+**Returns:** Integer
+
 ## Parameters
 
-* **info** 
-
-**Returns:** Integer
+| Parameter | Type | Description |
+|---|---|---|
+| info | NSUserDefinedFieldInfo | |

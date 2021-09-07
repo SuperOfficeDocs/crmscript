@@ -12,11 +12,11 @@ The actor type (CRM side)
 
 **Returns:** NSCrmActorType
 
-* Enum: 0 = Unknown 
-* Enum: 1 = Contact 
-* Enum: 2 = Person 
-* Enum: 3 = Project 
-* Enum: 4 = Sale 
+* Enum: 0 = Unknown
+* Enum: 1 = Contact
+* Enum: 2 = Person
+* Enum: 3 = Project
+* Enum: 4 = Sale
 
 ```crmscript
 NSErpSyncActorTypeMapping thing;

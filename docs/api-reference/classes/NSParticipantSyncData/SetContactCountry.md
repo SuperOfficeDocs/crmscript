@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetContactCountry(String contactCountry)
 
-**Parameter:** 
+## Parameters
+
 * **contactCountry** String
 
 ```crmscript

@@ -10,5 +10,7 @@ so.topic: reference
 
 ## Parameters
 
-* **layoutName** 
-* **image** 
+| Parameter | Type |Description |
+|---|---|---|
+| layoutName | String | |
+| image | NSImage | |

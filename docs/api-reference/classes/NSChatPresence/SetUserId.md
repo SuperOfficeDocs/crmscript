@@ -10,7 +10,8 @@ so.topic: reference
 
 The id for the chat user
 
-**Parameter:** 
+## Parameters
+
 * **userId** Integer
 
 ```crmscript

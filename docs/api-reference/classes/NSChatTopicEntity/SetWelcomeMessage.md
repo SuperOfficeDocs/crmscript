@@ -10,7 +10,8 @@ so.topic: reference
 
 The welcome message sent to the customer when the chat session starts.
 
-**Parameter:** 
+## Parameters
+
 * **welcomeMessage** String
 
 ```crmscript

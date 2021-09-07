@@ -10,7 +10,8 @@ so.topic: reference
 
 Optional collection of sub criteria, usually null but set for Saint counter fields
 
-**Parameter:** 
+## Parameters
+
 * **subRestrictions** NSArchiveRestrictionInfo[]
 
 ```crmscript

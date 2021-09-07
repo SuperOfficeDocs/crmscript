@@ -10,7 +10,8 @@ so.topic: reference
 
 String containing error message from handler system if it failed
 
-**Parameter:** 
+## Parameters
+
 * **exception** String
 
 ```crmscript

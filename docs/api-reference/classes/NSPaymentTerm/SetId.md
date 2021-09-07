@@ -10,7 +10,8 @@ so.topic: reference
 
 Set the primary key (id) for the NSPaymentTerm
 
-**Parameter:** 
+## Parameters
+
 * **id** Integer NSPaymentTerm id.
 
 ```crmscript

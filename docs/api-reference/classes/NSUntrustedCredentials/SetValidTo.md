@@ -10,7 +10,8 @@ so.topic: reference
 
 Credentials are valid to this date.
 
-**Parameter:** 
+## Parameters
+
 * **validTo** DateTime
 
 ```crmscript

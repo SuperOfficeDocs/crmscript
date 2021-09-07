@@ -8,22 +8,25 @@ so.topic: reference
 
 # Integer GetAction()
 
-The activity that has occured on this contact.
+The activity that has occurred on this contact.
 
 **Returns:** Integer
 
-* Enum: 0 = Unknown 
-* Enum: 1 = Created 
-* Enum: 2 = Updated 
-* Enum: 4 = NewActivity 
-* Enum: 8 = ActivityCompleted 
-* Enum: 16 = PersonAdded 
-* Enum: 32 = PersonUpdated 
-* Enum: 64 = DocumentAdded 
-* Enum: 127 = All 
+## Enum: actionType
+
+* 0 = Unknown
+* 1 = Created
+* 2 = Updated
+* 4 = NewActivity
+* 8 = ActivityCompleted
+* 16 = PersonAdded
+* 32 = PersonUpdated
+* 64 = DocumentAdded
+* 127 = All
+
+## Example
 
 ```crmscript
 NSContactActivity thing;
 Integer action  = thing.GetAction();
 ```
-

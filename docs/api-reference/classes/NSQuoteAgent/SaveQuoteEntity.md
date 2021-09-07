@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSQuoteEntity SaveQuoteEntity(NSQuoteEntity quoteEntity)
 
-Saves a NSQuoteEntity. Versions and alternatives will not be saved by this call.
+Saves an NSQuoteEntity. Versions and alternatives will not be saved by this call.
 
 ## Parameters
 

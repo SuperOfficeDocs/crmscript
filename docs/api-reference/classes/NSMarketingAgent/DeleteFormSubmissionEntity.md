@@ -9,7 +9,7 @@ so.topic: reference
 # DeleteFormSubmissionEntity(Integer formSubmissionEntity);
 
 Deletes the NSFormSubmissionEntity
-  
+ 
 ## Parameters
 
 * **formSubmissionEntityId** The identity of the FormSubmissionEntity to delete.

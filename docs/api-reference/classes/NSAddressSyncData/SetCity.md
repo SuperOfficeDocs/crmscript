@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetCity(String city)
 
-**Parameter:** 
+## Parameters
+
 * **city** String
 
 ```crmscript

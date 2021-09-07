@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSAppointmentEntity GetAppointmentEntity(Integer appointmentEntityId);
 
-Gets a NSAppointmentEntity object.
+Gets an NSAppointmentEntity object.
 
 ## Parameters
 

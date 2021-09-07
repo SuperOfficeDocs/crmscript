@@ -10,7 +10,8 @@ so.topic: reference
 
 Who updated this script
 
-**Parameter:** 
+## Parameters
+
 * **updatedBy** String
 
 ```crmscript

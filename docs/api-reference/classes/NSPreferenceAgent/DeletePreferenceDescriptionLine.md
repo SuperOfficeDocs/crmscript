@@ -9,7 +9,7 @@ so.topic: reference
 # DeletePreferenceDescriptionLine(Integer preferenceDescriptionLine);
 
 Deletes the NSPreferenceDescriptionLine
-  
+ 
 ## Parameters
 
 * **preferenceDescriptionLineId** The identity of the PreferenceDescriptionLine to delete.

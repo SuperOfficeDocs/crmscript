@@ -10,7 +10,8 @@ so.topic: reference
 
 Who did the e-mail originate from
 
-**Parameter:** 
+## Parameters
+
 * **from** NSEMailAddress
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 size of prefix for Satellite use of this counter
 
-**Parameter:** 
+## Parameters
+
 * **satPrefix** Integer
 
 ```crmscript

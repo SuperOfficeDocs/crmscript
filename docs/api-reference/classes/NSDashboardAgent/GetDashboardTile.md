@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSDashboardTile GetDashboardTile(Integer dashboardTileId);
 
-Gets a NSDashboardTile object.
+Gets an NSDashboardTile object.
 
 ## Parameters
 

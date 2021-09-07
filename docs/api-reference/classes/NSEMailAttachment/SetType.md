@@ -10,7 +10,8 @@ so.topic: reference
 
 Attachment Content-Type
 
-**Parameter:** 
+## Parameters
+
 * **type** String
 
 ```crmscript

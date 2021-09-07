@@ -10,7 +10,8 @@ so.topic: reference
 
 Name of the entity the link points to (The destination/target entity)
 
-**Parameter:** 
+## Parameters
+
 * **entityName** String
 
 ```crmscript

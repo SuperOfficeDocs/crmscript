@@ -10,7 +10,8 @@ so.topic: reference
 
 Default Date + time value
 
-**Parameter:** 
+## Parameters
+
 * **defaultValue** DateTime
 
 ```crmscript

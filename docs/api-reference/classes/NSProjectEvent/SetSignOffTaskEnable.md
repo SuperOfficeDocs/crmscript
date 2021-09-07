@@ -10,7 +10,8 @@ so.topic: reference
 
 If true, a task should be created when the external user signs off an event
 
-**Parameter:** 
+## Parameters
+
 * **signOffTaskEnable** Bool
 
 ```crmscript

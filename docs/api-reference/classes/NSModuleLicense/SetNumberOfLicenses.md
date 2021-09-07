@@ -10,7 +10,8 @@ so.topic: reference
 
 Number of licenses purchased.
 
-**Parameter:** 
+## Parameters
+
 * **numberOfLicenses** Integer
 
 ```crmscript

@@ -4,7 +4,7 @@ title: EventData
 intellisense: Void.EventData
 sortOrder: 285
 title: EventData
-author: 
+author:
 so.date:
 keywords:
 so.topic:

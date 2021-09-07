@@ -10,7 +10,8 @@ so.topic: reference
 
 The last time the ticket was modified.
 
-**Parameter:** 
+## Parameters
+
 * **lastChanged** DateTime
 
 ```crmscript

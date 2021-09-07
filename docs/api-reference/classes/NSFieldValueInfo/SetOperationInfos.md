@@ -10,7 +10,8 @@ so.topic: reference
 
 Array of the available operations for this field
 
-**Parameter:** 
+## Parameters
+
 * **operationInfos** NSOperationInfo[]
 
 ```crmscript

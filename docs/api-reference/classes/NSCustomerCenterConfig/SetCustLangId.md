@@ -10,7 +10,8 @@ so.topic: reference
 
 The customer language which this config belongs to. 0 indicates that the config is global
 
-**Parameter:** 
+## Parameters
+
 * **custLangId** Integer
 
 ```crmscript

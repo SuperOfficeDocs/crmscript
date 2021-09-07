@@ -10,7 +10,8 @@ so.topic: reference
 
 Default show in Gui?
 
-**Parameter:** 
+## Parameters
+
 * **defaultShowInGui** Bool
 
 ```crmscript

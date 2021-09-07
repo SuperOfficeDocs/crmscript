@@ -8,7 +8,7 @@ so.topic: reference
 
 # String GetKeyValue(String applicationName, String deviceName, String keyName, String tableName, Integer recordId)
 
-Gets the string value of a NSForeignKey, that belongs to the specified device and application. The table name and record ID must also be specified.
+Gets the string value of an NSForeignKey, that belongs to the specified device and application. The table name and record ID must also be specified.
 
 ## Parameters
 

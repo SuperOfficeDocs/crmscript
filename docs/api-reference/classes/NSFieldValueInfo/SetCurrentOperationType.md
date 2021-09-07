@@ -10,7 +10,8 @@ so.topic: reference
 
 The selected operation to execute on this field
 
-**Parameter:** 
+## Parameters
+
 * **currentOperationType** String
 
 ```crmscript

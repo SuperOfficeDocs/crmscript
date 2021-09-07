@@ -10,7 +10,8 @@ so.topic: reference
 
 The id of the target row. The table it points at is specified by the preference type.
 
-**Parameter:** 
+## Parameters
+
 * **targetId** Integer
 
 ```crmscript

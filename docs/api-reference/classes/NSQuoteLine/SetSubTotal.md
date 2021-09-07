@@ -10,7 +10,8 @@ so.topic: reference
 
 Value to help the user interface, is equal to 'Quantity * ListPrice'
 
-**Parameter:** 
+## Parameters
+
 * **subTotal** Float
 
 ```crmscript

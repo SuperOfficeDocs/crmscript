@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSServiceAuth GetServiceAuth(Integer serviceAuthId);
 
-Gets a NSServiceAuth object.
+Gets an NSServiceAuth object.
 
 ## Parameters
 

@@ -9,7 +9,7 @@ so.topic: reference
 # DeleteShipmentMessageEntity(Integer shipmentMessageEntity);
 
 Deletes the NSShipmentMessageEntity
-  
+ 
 ## Parameters
 
 * **shipmentMessageEntityId** The identity of the ShipmentMessageEntity to delete.

@@ -10,7 +10,8 @@ so.topic: reference
 
 Sub-items, if any.
 
-**Parameter:** 
+## Parameters
+
 * **children** NSHierarchyEntity[]
 
 ```crmscript

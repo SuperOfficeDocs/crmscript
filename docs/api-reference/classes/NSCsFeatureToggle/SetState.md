@@ -10,7 +10,8 @@ so.topic: reference
 
 Describes if the feature toggle is turned on or off
 
-**Parameter:** 
+## Parameters
+
 * **state** Bool
 
 ```crmscript

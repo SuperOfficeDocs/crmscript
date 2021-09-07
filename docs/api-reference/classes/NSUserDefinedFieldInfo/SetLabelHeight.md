@@ -10,7 +10,8 @@ so.topic: reference
 
 label height in pixels, 0 = 'enough' (from font)
 
-**Parameter:** 
+## Parameters
+
 * **labelHeight** Integer
 
 ```crmscript

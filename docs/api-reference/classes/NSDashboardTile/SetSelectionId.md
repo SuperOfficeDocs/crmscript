@@ -10,7 +10,8 @@ so.topic: reference
 
 The selection that defines the data filter/restrictions
 
-**Parameter:** 
+## Parameters
+
 * **selectionId** Integer
 
 ```crmscript

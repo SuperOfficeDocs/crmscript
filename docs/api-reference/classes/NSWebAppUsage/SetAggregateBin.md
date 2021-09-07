@@ -10,7 +10,8 @@ so.topic: reference
 
 ??
 
-**Parameter:** 
+## Parameters
+
 * **aggregateBin** Integer
 
 ```crmscript

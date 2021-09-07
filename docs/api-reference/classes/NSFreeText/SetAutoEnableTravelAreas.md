@@ -10,7 +10,8 @@ so.topic: reference
 
 Automatically enable freetext search for new travel areas
 
-**Parameter:** 
+## Parameters
+
 * **autoEnableTravelAreas** Bool
 
 ```crmscript

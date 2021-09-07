@@ -10,7 +10,8 @@ so.topic: reference
 
 The primary key of the Quote Alternative which was finally accepted by the customer. Set when the user is marking a quote as accepted.
 
-**Parameter:** 
+## Parameters
+
 * **acceptedQuoteAlternativeId** Integer
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Get the display name of the ticket status.
 
-**Parameter:** 
+## Parameters
+
 * **ticketStatusDisplayValue** String
 
 ```crmscript

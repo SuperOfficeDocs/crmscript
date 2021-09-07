@@ -10,7 +10,8 @@ so.topic: reference
 
 Length of the third counter period
 
-**Parameter:** 
+## Parameters
+
 * **period3** Integer
 
 ```crmscript

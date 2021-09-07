@@ -10,7 +10,8 @@ so.topic: reference
 
 Is the application visible when user is on a satellite
 
-**Parameter:** 
+## Parameters
+
 * **onSatellite** Bool
 
 ```crmscript

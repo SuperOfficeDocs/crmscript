@@ -8,9 +8,10 @@ so.topic: reference
 
 # SetThreeLetterISOCountry(String threeLetterISOCountry)
 
-Three-letter country-code according to ISO3166 
+Three-letter country-code according to ISO3166
 
-**Parameter:** 
+## Parameters
+
 * **threeLetterISOCountry** String
 
 ```crmscript

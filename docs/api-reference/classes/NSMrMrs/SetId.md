@@ -10,7 +10,8 @@ so.topic: reference
 
 Set the primary key (id) for the NSMrMrs
 
-**Parameter:** 
+## Parameters
+
 * **id** Integer NSMrMrs id.
 
 ```crmscript

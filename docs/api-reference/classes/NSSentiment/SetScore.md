@@ -10,7 +10,8 @@ so.topic: reference
 
 Sentiment score, -100 = very unhappy, 100 = very happy, 0 = no idea (not recognized)
 
-**Parameter:** 
+## Parameters
+
 * **score** Integer
 
 ```crmscript

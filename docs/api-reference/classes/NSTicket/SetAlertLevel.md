@@ -10,7 +10,8 @@ so.topic: reference
 
 The alert level for the ticket. Matches the level value of the ticket_alert table.
 
-**Parameter:** 
+## Parameters
+
 * **alertLevel** Integer
 
 ```crmscript

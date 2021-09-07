@@ -10,7 +10,8 @@ so.topic: reference
 
 For selection-of-company: state of the Include Main Contact checkbox
 
-**Parameter:** 
+## Parameters
+
 * **includePerson** Integer
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 The primary key for the integrated entry in the external datasource.
 
-**Parameter:** 
+## Parameters
+
 * **dbiKey** String
 
 ```crmscript

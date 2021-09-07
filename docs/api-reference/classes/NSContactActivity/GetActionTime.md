@@ -8,7 +8,7 @@ so.topic: reference
 
 # DateTime GetActionTime()
 
-The time of the activity. If more than one activity has occured on the contact, the last activity time is shown.
+The time of the activity. If more than one activity has occurred on the contact, the last activity time is shown.
 
 **Returns:** DateTime
 

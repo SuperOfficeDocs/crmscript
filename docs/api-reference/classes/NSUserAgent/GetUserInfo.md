@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSUserInfo GetUserInfo(Integer userInfoId);
 
-Gets a NSUserInfo object.
+Gets an NSUserInfo object.
 
 ## Parameters
 

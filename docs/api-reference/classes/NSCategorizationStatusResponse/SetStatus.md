@@ -10,7 +10,8 @@ so.topic: reference
 
 Determines if a training is running, finished or unavailable
 
-**Parameter:** 
+## Parameters
+
 * **status** String
 
 ```crmscript

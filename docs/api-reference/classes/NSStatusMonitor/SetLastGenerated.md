@@ -10,7 +10,8 @@ so.topic: reference
 
 When was this status last generated (i.e., statusValue rows created)
 
-**Parameter:** 
+## Parameters
+
 * **lastGenerated** DateTime
 
 ```crmscript

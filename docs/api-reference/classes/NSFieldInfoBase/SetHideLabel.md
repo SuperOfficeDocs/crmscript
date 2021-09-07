@@ -10,7 +10,8 @@ so.topic: reference
 
 Hide the label if 1
 
-**Parameter:** 
+## Parameters
+
 * **hideLabel** Bool
 
 ```crmscript

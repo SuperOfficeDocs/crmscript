@@ -10,7 +10,8 @@ so.topic: reference
 
 Same as time_to_reply, but not calculated based on priority.
 
-**Parameter:** 
+## Parameters
+
 * **realTimeToReply** Integer
 
 ```crmscript

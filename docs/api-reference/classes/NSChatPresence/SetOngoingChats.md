@@ -10,7 +10,8 @@ so.topic: reference
 
 The number of ongoing chats this users has now
 
-**Parameter:** 
+## Parameters
+
 * **ongoingChats** Integer
 
 ```crmscript

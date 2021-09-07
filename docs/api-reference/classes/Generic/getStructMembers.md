@@ -23,7 +23,7 @@ Building BuildingGeneric(String json){
     String value = root.getValueFromPath(fields[i]);
     setGenericFromString(g, value);
   }
-  
+ 
   return b;
 }
 ```

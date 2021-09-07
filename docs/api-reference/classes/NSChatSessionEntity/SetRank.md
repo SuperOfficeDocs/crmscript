@@ -10,7 +10,8 @@ so.topic: reference
 
 Lowest possible unique number for active sessions for user. User for color index. Starting at 1.
 
-**Parameter:** 
+## Parameters
+
 * **rank** Integer
 
 ```crmscript

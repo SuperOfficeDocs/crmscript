@@ -8,8 +8,10 @@ so.topic: reference
 
 # NSSaleStakeholder[] GetSaleStakeholders(Integer saleId)
 
+**Returns:** NSSaleStakeholder[]
+
 ## Parameters
 
-* **saleId** 
-
-**Returns:** NSSaleStakeholder[]
+| Parameter | Type | Description |
+|---|---|---|
+| saleId | Integer | |

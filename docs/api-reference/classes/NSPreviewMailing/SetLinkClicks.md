@@ -10,7 +10,8 @@ so.topic: reference
 
 The number of links clicked in the mailing.
 
-**Parameter:** 
+## Parameters
+
 * **linkClicks** Integer
 
 ```crmscript

@@ -12,9 +12,9 @@ Access restrictions for the field
 
 **Returns:** NSFieldAccess
 
-* Enum: 0 = Normal 
-* Enum: 1 = Mandatory 
-* Enum: 2 = ReadOnly 
+* Enum: 0 = Normal
+* Enum: 1 = Mandatory
+* Enum: 2 = ReadOnly
 
 ```crmscript
 NSErpSyncDefaultValue thing;

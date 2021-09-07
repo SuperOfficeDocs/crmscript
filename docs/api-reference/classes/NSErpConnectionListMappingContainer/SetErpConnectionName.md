@@ -10,7 +10,8 @@ so.topic: reference
 
 The name of the erp connection
 
-**Parameter:** 
+## Parameters
+
 * **erpConnectionName** String
 
 ```crmscript

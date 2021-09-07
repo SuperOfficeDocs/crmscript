@@ -10,7 +10,8 @@ so.topic: reference
 
 Contains the message headers, like To, Cc, Bcc information, or custom headers
 
-**Parameter:** 
+## Parameters
+
 * **messageHeaders** TicketMessageHeaderArray
 
 ```crmscript

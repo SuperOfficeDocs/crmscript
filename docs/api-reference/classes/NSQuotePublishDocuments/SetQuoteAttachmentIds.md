@@ -10,7 +10,8 @@ so.topic: reference
 
 Array of id's of any attachments (standard + custom for this version)
 
-**Parameter:** 
+## Parameters
+
 * **quoteAttachmentIds** IntegerArray
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Default currency for the current user
 
-**Parameter:** 
+## Parameters
+
 * **ownCurrency** String
 
 ```crmscript

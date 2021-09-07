@@ -1,7 +1,7 @@
 ---
 uid: crmscript_class_nsdocumententity_setispublished
 title: SetIsPublished()
-description: CRMScript method in the NSDocumentEntity class that sets the IsPublished property 
+description: CRMScript method in the NSDocumentEntity class that sets the IsPublished property
 intellisense: NSDocumentEntity.SetIsPublished
 keywords: NSDocumentEntity, IsPublished, SetIsPublished(Bool)
 so.topic: reference

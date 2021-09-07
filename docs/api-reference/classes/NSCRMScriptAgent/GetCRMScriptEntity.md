@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSCRMScriptEntity GetCRMScriptEntity(Integer cRMScriptEntityId);
 
-Gets a NSCRMScriptEntity object.
+Gets an NSCRMScriptEntity object.
 
 ## Parameters
 

@@ -10,7 +10,8 @@ so.topic: reference
 
 Array of individual field mappings; explicitly map to empty CrmFieldKey to indicate non-sync
 
-**Parameter:** 
+## Parameters
+
 * **fieldMappings** ErpSyncFieldMappingArray
 
 ```crmscript

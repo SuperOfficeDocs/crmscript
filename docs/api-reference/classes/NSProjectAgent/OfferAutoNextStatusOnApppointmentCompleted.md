@@ -8,8 +8,10 @@ so.topic: reference
 
 # Bool OfferAutoNextStatusOnApppointmentCompleted(Integer appointmentId)
 
+**Returns:** Bool
+
 ## Parameters
 
-* **appointmentId** 
-
-**Returns:** Bool
+| Parameter | Type | Description |
+|---|---|---|
+| appointmentId | Integer | |

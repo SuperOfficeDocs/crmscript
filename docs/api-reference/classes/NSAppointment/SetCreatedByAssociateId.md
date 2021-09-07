@@ -10,7 +10,8 @@ so.topic: reference
 
 Id of the associate that created the appointment
 
-**Parameter:** 
+## Parameters
+
 * **createdByAssociateId** Integer
 
 ```crmscript

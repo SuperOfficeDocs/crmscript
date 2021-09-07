@@ -10,7 +10,8 @@ so.topic: reference
 
 Set the name of the NSTicketPriority item.
 
-**Parameter:** 
+## Parameters
+
 * **value** String NSTicketPriority name.
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 The number of active erp links
 
-**Parameter:** 
+## Parameters
+
 * **activeErpLinks** Integer
 
 ```crmscript

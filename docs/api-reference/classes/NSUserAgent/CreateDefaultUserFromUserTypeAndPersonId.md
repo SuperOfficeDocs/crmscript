@@ -13,15 +13,20 @@ Create default NSUser providing the associate type and person id.  System and An
 ## Parameters
 
 * **userType** Type of associate for the user
-* Enum: 0 = Unknown 
-* Enum: 1 = InternalAssociate 
-* Enum: 2 = ResourceAssociate 
-* Enum: 3 = ExternalAssociate 
-* Enum: 4 = AnonymousAssociate 
-* Enum: 5 = SystemAssociate 
 * **personId** Primary key of the person to become a user.
 
 **Returns:** NSUser
+
+### Enum: associateType
+
+* 0 = Unknown
+* 1 = InternalAssociate
+* 2 = ResourceAssociate
+* 3 = ExternalAssociate
+* 4 = AnonymousAssociate
+* 5 = SystemAssociate
+
+## Example
 
 ```crmscript
 NSUserAgent agent;
@@ -29,4 +34,3 @@ Integer userType;
 Integer personId;
 NSUser res = agent.CreateDefaultUserFromUserTypeAndPersonId(userType, personId);
 ```
-

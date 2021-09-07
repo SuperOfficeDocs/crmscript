@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSDocumentEntity GetDocumentEntity(Integer documentEntityId);
 
-Gets a NSDocumentEntity object.
+Gets an NSDocumentEntity object.
 
 ## Parameters
 

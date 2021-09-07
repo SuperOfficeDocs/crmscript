@@ -13,7 +13,7 @@ Class for representing an eJournal ticket message.
 ## Example
 
     Message m;
-    
+   
     m.load(2); // Loads message with id = 2
     m.setValue("emailHeader", "Test");
     m.setValue("body", "This is a test");

@@ -10,7 +10,8 @@ so.topic: reference
 
 0 = no, 1 = yes (field must be filled out)
 
-**Parameter:** 
+## Parameters
+
 * **isMandatory** Bool
 
 ```crmscript

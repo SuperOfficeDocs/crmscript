@@ -10,6 +10,8 @@ so.topic: reference
 
 ## Parameters
 
-* **includeInvitations** 
-* **includeAllAppointments** 
-* **defaultAlarmLeadTimeInMinutes** 
+| Parameter | Type |Description |
+|---|---|---|
+| includeInvitations | Bool | |
+| includeAllAppointments | Bool | |
+| defaultAlarmLeadTimeInMinutes | Integer | |

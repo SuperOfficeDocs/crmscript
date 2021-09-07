@@ -10,29 +10,34 @@ so.topic: reference
 
 Enum indicating if it is a special message, such as an URL redirection, etc.
 
-**Parameter:** 
+## Parameters
+
 * **specialType** NSChatMessageSpecialType
-* Enum: 0 = None 
-* Enum: 1 = Welcome 
-* Enum: 2 = Url 
-* Enum: 3 = Block 
-* Enum: 5 = NewSession 
-* Enum: 6 = TransferedSession 
-* Enum: 7 = Error 
-* Enum: 8 = SessionDeleted 
-* Enum: 9 = FaqSuccessQuestion 
-* Enum: 10 = ClosedByUser 
-* Enum: 11 = ClosedByCustomer 
-* Enum: 12 = ClosedByIdle 
-* Enum: 13 = TransferRejected 
-* Enum: 14 = ReopenedByCustomer 
-* Enum: 15 = ClickedOption 
-* Enum: 16 = BotMessage 
-* Enum: 17 = Options 
+
+### Enum: specialType
+
+* 0 = None
+* 1 = Welcome
+* 2 = Url
+* 3 = Block
+* 5 = NewSession
+* 6 = TransferedSession
+* 7 = Error
+* 8 = SessionDeleted
+* 9 = FaqSuccessQuestion
+* 10 = ClosedByUser
+* 11 = ClosedByCustomer
+* 12 = ClosedByIdle
+* 13 = TransferRejected
+* 14 = ReopenedByCustomer
+* 15 = ClickedOption
+* 16 = BotMessage
+* 17 = Options
+
+## Example
 
 ```crmscript
 NSChatMessage thing;
 NSChatMessageSpecialType specialType;
 thing.SetSpecialType(specialType);
 ```
-

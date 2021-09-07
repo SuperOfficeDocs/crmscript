@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSTicket GetTicket(Integer ticketId);
 
-Gets a NSTicket object.
+Gets an NSTicket object.
 
 ## Parameters
 

@@ -10,7 +10,8 @@ so.topic: reference
 
 The name of the customers company, if provided
 
-**Parameter:** 
+## Parameters
+
 * **companyName** String
 
 ```crmscript

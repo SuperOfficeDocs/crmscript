@@ -12,13 +12,12 @@ so.topic: reference
 
 **Returns:** NSDocTmplDirection
 
-* Enum: 0 = Unknown 
-* Enum: 1 = Incoming 
-* Enum: 2 = Outgoing 
-* Enum: 3 = SaintAll 
+* Enum: 0 = Unknown
+* Enum: 1 = Incoming
+* Enum: 2 = Outgoing
+* Enum: 3 = SaintAll
 
 ```crmscript
 NSDocumentTemplateEntity thing;
 NSDocTmplDirection direction  = thing.GetDirection();
 ```
-

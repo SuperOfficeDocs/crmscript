@@ -12,9 +12,9 @@ so.topic: reference
 This function returns a LSB (Least Significant Byte first) string representation of the bitset.
 
 ## Example
-    
+   
     FHBitSet fh;
-    
+   
     fh.set(44);
     print(fh.toLsbString());
 

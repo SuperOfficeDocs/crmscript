@@ -10,7 +10,8 @@ so.topic: reference
 
 Use agent photo and name when chatting
 
-**Parameter:** 
+## Parameters
+
 * **showAgentPhoto** Bool
 
 ```crmscript

@@ -8,7 +8,7 @@ so.topic: reference
 
 # Void SaveRestrictionGroup(String storageType, String providerName, String storageKey, NSArchiveRestrictionGroup restrictionGroup, String context)
 
-Save an array of restrictions as a restriction group for later use as search criteria (including as dynamic selection and Find). 
+Save an array of restrictions as a restriction group for later use as search criteria (including as dynamic selection and Find).
 
 ## Parameters
 

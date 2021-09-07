@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetRecurringStartDate(DateTime recurringStartDate)
 
-**Parameter:** 
+## Parameters
+
 * **recurringStartDate** DateTime
 
 ```crmscript

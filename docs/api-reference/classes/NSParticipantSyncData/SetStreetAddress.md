@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetStreetAddress(NSAddressSyncData streetAddress)
 
-**Parameter:** 
+## Parameters
+
 * **streetAddress** NSAddressSyncData
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 The work hour start for Thursdays. Note that only the time part of the DateTime is used
 
-**Parameter:** 
+## Parameters
+
 * **thuStart** DateTime
 
 ```crmscript

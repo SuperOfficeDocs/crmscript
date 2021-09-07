@@ -10,7 +10,8 @@ so.topic: reference
 
 Array og QuoteVersions connected to the quote.
 
-**Parameter:** 
+## Parameters
+
 * **quoteVersions** NSQuoteVersion[]
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 The resolved NSPersonEntity instance.
 
-**Parameter:** 
+## Parameters
+
 * **person** NSPersonEntity
 
 ```crmscript

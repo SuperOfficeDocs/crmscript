@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetIsTentative(Bool isTentative)
 
-**Parameter:** 
+## Parameters
+
 * **isTentative** Bool
 
 ```crmscript

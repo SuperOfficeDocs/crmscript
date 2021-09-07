@@ -9,7 +9,7 @@ so.topic: reference
 # DeleteBlobEntity(Integer blobEntity);
 
 Deletes the NSBlobEntity
-  
+ 
 ## Parameters
 
 * **blobEntityId** The identity of the NSBlobEntity to delete.

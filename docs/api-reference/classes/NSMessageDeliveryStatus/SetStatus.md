@@ -10,7 +10,8 @@ so.topic: reference
 
 Current message status
 
-**Parameter:** 
+## Parameters
+
 * **status** Integer
 
 ```crmscript

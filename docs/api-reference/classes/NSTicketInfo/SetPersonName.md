@@ -10,7 +10,8 @@ so.topic: reference
 
 The name of the person/customer connected to the ticket
 
-**Parameter:** 
+## Parameters
+
 * **personName** String
 
 ```crmscript

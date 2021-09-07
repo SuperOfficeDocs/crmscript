@@ -10,7 +10,8 @@ so.topic: reference
 
 Description of the status monitor
 
-**Parameter:** 
+## Parameters
+
 * **description** String
 
 ```crmscript

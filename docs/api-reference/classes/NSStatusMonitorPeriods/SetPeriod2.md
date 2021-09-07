@@ -10,7 +10,8 @@ so.topic: reference
 
 Days in the second period
 
-**Parameter:** 
+## Parameters
+
 * **period2** Integer
 
 ```crmscript

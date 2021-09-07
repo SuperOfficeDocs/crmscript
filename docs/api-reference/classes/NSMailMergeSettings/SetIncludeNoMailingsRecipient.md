@@ -10,7 +10,8 @@ so.topic: reference
 
 Include recipients that are marked with NoMailings
 
-**Parameter:** 
+## Parameters
+
 * **includeNoMailingsRecipient** Bool
 
 ```crmscript

@@ -8,7 +8,7 @@ so.topic: reference
 
 # String GetTask()
 
-Task comprises the different types of activities, like “Phone call”, “Meeting” and so on.
+Task comprises the different types of activities, like "Phone call", "Meeting" and so on.
 
 **Returns:** String
 

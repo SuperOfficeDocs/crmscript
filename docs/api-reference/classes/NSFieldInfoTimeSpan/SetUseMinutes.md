@@ -10,7 +10,8 @@ so.topic: reference
 
 Should the time-span be counted in minutes?
 
-**Parameter:** 
+## Parameters
+
 * **useMinutes** Bool
 
 ```crmscript

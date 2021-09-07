@@ -10,24 +10,29 @@ so.topic: reference
 
 Enum indicating the status for the session (pending, active, closed, etc).
 
-**Parameter:** 
+## Parameters
+
 * **status** NSChatSessionStatus
-* Enum: 0 = Invalid 
-* Enum: 1 = PreChatForm 
-* Enum: 2 = Faq 
-* Enum: 3 = OfflineForm 
-* Enum: 4 = InQueue 
-* Enum: 5 = CustomerLast 
-* Enum: 6 = UserLast 
-* Enum: 7 = Finished 
-* Enum: 8 = Deleted 
-* Enum: 9 = Closed 
-* Enum: 10 = RequestPosted 
-* Enum: 11 = ClosedFromQueue 
+
+### Enum: ChatSessionStatus
+
+* 0 = Invalid
+* 1 = PreChatForm
+* 2 = Faq
+* 3 = OfflineForm
+* 4 = InQueue
+* 5 = CustomerLast
+* 6 = UserLast
+* 7 = Finished
+* 8 = Deleted
+* 9 = Closed
+* 10 = RequestPosted
+* 11 = ClosedFromQueue
+
+## Example
 
 ```crmscript
 NSChatSessionEntity thing;
 NSChatSessionStatus status;
 thing.SetStatus(status);
 ```
-

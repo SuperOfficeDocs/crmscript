@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetEncodedDataCaptionDescription(String encodedDataCaptionDescription)
 
-**Parameter:** 
+## Parameters
+
 * **encodedDataCaptionDescription** String
 
 ```crmscript

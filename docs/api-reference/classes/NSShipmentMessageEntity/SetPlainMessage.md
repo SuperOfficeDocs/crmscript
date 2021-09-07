@@ -10,7 +10,8 @@ so.topic: reference
 
 Plain message text of this message
 
-**Parameter:** 
+## Parameters
+
 * **plainMessage** String
 
 ```crmscript

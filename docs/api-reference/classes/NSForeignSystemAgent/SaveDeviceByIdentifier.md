@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSForeignDevice SaveDeviceByIdentifier(String applicationName, String deviceName, String deviceIdentifier, NSForeignDevice foreignDevice)
 
-Updates a NSForeignDevice with deviceName that belongs to the application with applicationName.
+Updates an NSForeignDevice with deviceName that belongs to the application with applicationName.
 
 ## Parameters
 

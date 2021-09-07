@@ -13,8 +13,8 @@ This function does a check according to the ticket's pritority and the input act
 ## Parameters
 
 * **action:** as an Integer.
-   
-**Possible values:**   
+  
+**Possible values:**  
 ActionRead = 0,
 ActionChangedOwner = 1,
 ActionNewInfo = 2,

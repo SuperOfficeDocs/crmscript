@@ -10,7 +10,8 @@ so.topic: reference
 
 True if this entity instance has syncronized connection
 
-**Parameter:** 
+## Parameters
+
 * **connected** Bool
 
 ```crmscript

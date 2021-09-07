@@ -10,7 +10,8 @@ so.topic: reference
 
 Has the udef field been published?
 
-**Parameter:** 
+## Parameters
+
 * **hasBeenPublished** Bool
 
 ```crmscript

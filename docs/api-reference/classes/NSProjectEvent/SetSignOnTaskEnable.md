@@ -10,7 +10,8 @@ so.topic: reference
 
 If true, a task should be created when the external user signs on an event
 
-**Parameter:** 
+## Parameters
+
 * **signOnTaskEnable** Bool
 
 ```crmscript

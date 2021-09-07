@@ -10,7 +10,8 @@ so.topic: reference
 
 First email on contact person.
 
-**Parameter:** 
+## Parameters
+
 * **email** String
 
 ```crmscript

@@ -8,7 +8,7 @@ so.topic: reference
 
 # Integer[] FindRolesWithFunctionalRights(String[] functionalRightNames)
 
-Find all roles with a given set of functional rights. The roles matched must contain one or more of the specified functional rights. 
+Find all roles with a given set of functional rights. The roles matched must contain one or more of the specified functional rights.
 
 ## Parameters
 

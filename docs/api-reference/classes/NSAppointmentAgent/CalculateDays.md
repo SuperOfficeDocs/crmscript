@@ -12,4 +12,4 @@ Calculates the set of dates that represents a recurrence pattern. Adds conflict 
 
 ## Parameters
 
-* **appointmentEntity** 
+* **appointmentEntity**

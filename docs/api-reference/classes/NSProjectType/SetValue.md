@@ -10,7 +10,8 @@ so.topic: reference
 
 Set the name of the NSProjectType item.
 
-**Parameter:** 
+## Parameters
+
 * **value** String NSProjectType name.
 
 ```crmscript

@@ -8,9 +8,10 @@ so.topic: reference
 
 # SetMessagingId(Integer messagingId)
 
-Id to the outgoing message table 
+Id to the outgoing message table
 
-**Parameter:** 
+## Parameters
+
 * **messagingId** Integer
 
 ```crmscript

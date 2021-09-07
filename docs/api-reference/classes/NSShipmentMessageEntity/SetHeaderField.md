@@ -10,7 +10,8 @@ so.topic: reference
 
 Extra header fields added to mail. Must be formatted correctly
 
-**Parameter:** 
+## Parameters
+
 * **headerField** String
 
 ```crmscript

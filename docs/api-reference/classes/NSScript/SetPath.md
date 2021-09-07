@@ -10,7 +10,8 @@ so.topic: reference
 
 Path to script in the hierarchy.
 
-**Parameter:** 
+## Parameters
+
 * **path** String
 
 ```crmscript

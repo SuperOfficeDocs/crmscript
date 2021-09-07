@@ -10,7 +10,8 @@ so.topic: reference
 
 Recent tickets on contact
 
-**Parameter:** 
+## Parameters
+
 * **tickets** NSTicketSummaryItem[]
 
 ```crmscript

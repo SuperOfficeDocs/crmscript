@@ -10,7 +10,8 @@ so.topic: reference
 
 The sale reason
 
-**Parameter:** 
+## Parameters
+
 * **reason** NSReason
 
 ```crmscript

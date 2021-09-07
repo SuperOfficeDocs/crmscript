@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSAssociate GetAssociate(Integer associateId);
 
-Gets a NSAssociate object.
+Gets an NSAssociate object.
 
 ## Parameters
 

@@ -10,7 +10,8 @@ so.topic: reference
 
 The template that this sale type should use when producing the product lines offer document; the template must have DocTmplQuoteType=QuoteLines
 
-**Parameter:** 
+## Parameters
+
 * **quoteLinesTemplate** Integer
 
 ```crmscript

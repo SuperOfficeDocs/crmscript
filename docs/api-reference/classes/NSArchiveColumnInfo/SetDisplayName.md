@@ -10,7 +10,8 @@ so.topic: reference
 
 The column name to show, can be a resource identifier string.
 
-**Parameter:** 
+## Parameters
+
 * **displayName** String
 
 ```crmscript

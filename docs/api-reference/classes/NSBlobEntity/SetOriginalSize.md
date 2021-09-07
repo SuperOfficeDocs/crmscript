@@ -10,7 +10,8 @@ so.topic: reference
 
 Original size of the binary data, before encryption and/or zipping. This is what the ultimate client will get
 
-**Parameter:** 
+## Parameters
+
 * **originalSize** Integer
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Right margin in twips
 
-**Parameter:** 
+## Parameters
+
 * **rightMargin** Integer
 
 ```crmscript

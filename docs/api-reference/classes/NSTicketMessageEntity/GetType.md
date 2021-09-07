@@ -12,9 +12,9 @@ The type of the message (plaintext/html).
 
 **Returns:** TicketMessageType
 
-* Enum: 0 = Unknown 
-* Enum: 1 = Plain 
-* Enum: 2 = Html 
+* Enum: 0 = Unknown
+* Enum: 1 = Plain
+* Enum: 2 = Html
 
 ```crmscript
 NSTicketMessageEntity thing;

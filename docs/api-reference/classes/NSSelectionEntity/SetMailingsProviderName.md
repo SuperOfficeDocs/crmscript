@@ -10,7 +10,8 @@ so.topic: reference
 
 The name of the provider for the Mailings tab, if relevant; this string will contain resource references
 
-**Parameter:** 
+## Parameters
+
 * **mailingsProviderName** String
 
 ```crmscript

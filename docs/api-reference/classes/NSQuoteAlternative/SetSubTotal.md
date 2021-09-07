@@ -10,7 +10,8 @@ so.topic: reference
 
 Value to help the user interface, is computed by summing the totalprice of the quotelines, and NOT by summing their subtotals
 
-**Parameter:** 
+## Parameters
+
 * **subTotal** Float
 
 ```crmscript

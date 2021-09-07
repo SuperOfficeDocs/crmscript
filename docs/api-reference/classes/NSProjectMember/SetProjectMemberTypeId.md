@@ -10,7 +10,8 @@ so.topic: reference
 
 NSProjectMember Type Id* from the ProjectMemberType list.
 
-**Parameter:** 
+## Parameters
+
 * **projectMemberTypeId** Integer
 
 ```crmscript

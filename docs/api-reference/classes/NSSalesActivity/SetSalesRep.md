@@ -10,7 +10,8 @@ so.topic: reference
 
 The sales representative for the person that matches the request.
 
-**Parameter:** 
+## Parameters
+
 * **salesRep** NSPerson
 
 ```crmscript

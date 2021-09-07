@@ -10,7 +10,8 @@ so.topic: reference
 
 Set the tooltip description for the NSProjectType list item.
 
-**Parameter:** 
+## Parameters
+
 * **tooltip** String NSProjectType tooltip description.
 
 ```crmscript

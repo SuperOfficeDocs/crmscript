@@ -10,7 +10,8 @@ so.topic: reference
 
 Associate id of the Associate/Person owning this window setting
 
-**Parameter:** 
+## Parameters
+
 * **associateId** Integer
 
 ```crmscript

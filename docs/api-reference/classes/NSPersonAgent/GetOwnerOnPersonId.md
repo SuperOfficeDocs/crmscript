@@ -10,15 +10,18 @@ so.topic: reference
 
 Get the owner of the person by id.
 
+**Returns:** NSPerson
+
 ## Parameters
 
-* **personId** 
+| Parameter | Type | Description |
+|---|---|---|
+| personId | Integer | |
 
-**Returns:** NSPerson
+## Example
 
 ```crmscript
 NSPersonAgent agent;
 Integer personId;
 NSPerson res = agent.GetOwnerOnPersonId(personId);
 ```
-

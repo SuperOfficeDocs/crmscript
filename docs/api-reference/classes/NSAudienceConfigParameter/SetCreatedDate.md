@@ -10,7 +10,8 @@ so.topic: reference
 
 The date and time the configuration parameter was created
 
-**Parameter:** 
+## Parameters
+
 * **createdDate** DateTime
 
 ```crmscript

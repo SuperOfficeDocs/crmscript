@@ -10,7 +10,8 @@ so.topic: reference
 
 The username used to log onto the mail account
 
-**Parameter:** 
+## Parameters
+
 * **username** String
 
 ```crmscript

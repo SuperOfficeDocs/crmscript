@@ -8,7 +8,7 @@ so.topic: reference
 
 # Void DeleteListEntityByName(String name)
 
-Delete a NSListEntity resolved by the provided name.
+Delete an NSListEntity resolved by the provided name.
 
 ## Parameters
 

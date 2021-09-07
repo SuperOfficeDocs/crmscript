@@ -10,7 +10,8 @@ so.topic: reference
 
 Text to be displayed on the button
 
-**Parameter:** 
+## Parameters
+
 * **displayText** String
 
 ```crmscript

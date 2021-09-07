@@ -8,7 +8,7 @@ so.topic: reference
 
 # NSDocument[] GetContactDocumentsByTemplateTypes(Integer contactId, DateTime startTime, DateTime endTime, Integer count, Integer[] documentTemplateIds)
 
-Method that returns a specified number of document appointments within a time range, filtered by document template types. The document appointments belong to the contact specified. 
+Method that returns a specified number of document appointments within a time range, filtered by document template types. The document appointments belong to the contact specified.
 
 ## Parameters
 

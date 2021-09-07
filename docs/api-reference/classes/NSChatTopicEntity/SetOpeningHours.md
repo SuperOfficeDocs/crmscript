@@ -10,7 +10,8 @@ so.topic: reference
 
 Opening hours settings
 
-**Parameter:** 
+## Parameters
+
 * **openingHours** NSChatOpeningHours
 
 ```crmscript

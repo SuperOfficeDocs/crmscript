@@ -10,7 +10,8 @@ so.topic: reference
 
 Phone prefix, will default to the current users HomeCountryId.
 
-**Parameter:** 
+## Parameters
+
 * **defaultSmsCountry** String
 
 ```crmscript

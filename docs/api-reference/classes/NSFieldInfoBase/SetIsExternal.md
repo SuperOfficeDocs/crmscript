@@ -10,7 +10,8 @@ so.topic: reference
 
 Should this field be shown to external users via customer center?
 
-**Parameter:** 
+## Parameters
+
 * **isExternal** Bool
 
 ```crmscript

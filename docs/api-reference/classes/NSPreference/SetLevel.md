@@ -10,15 +10,16 @@ so.topic: reference
 
 NSPreference level, using the standard enumerated type. Undefined is returned for preferences that do not have a current setting.
 
-**Parameter:** 
+## Parameters
+
 * **level** Integer
-* Enum: 0 = Undefined 
-* Enum: 1 = HardDefault 
-* Enum: 2 = SystemWide 
-* Enum: 3 = Database 
-* Enum: 4 = Group 
-* Enum: 5 = Individual 
-* Enum: 6 = PC 
+* Enum: 0 = Undefined
+* Enum: 1 = HardDefault
+* Enum: 2 = SystemWide
+* Enum: 3 = Database
+* Enum: 4 = Group
+* Enum: 5 = Individual
+* Enum: 6 = PC
 
 ```crmscript
 NSPreference thing;

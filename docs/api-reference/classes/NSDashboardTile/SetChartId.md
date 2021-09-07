@@ -10,7 +10,8 @@ so.topic: reference
 
 The original chart Id
 
-**Parameter:** 
+## Parameters
+
 * **chartId** String
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 What is the intention of this document (used by SAINT)
 
-**Parameter:** 
+## Parameters
+
 * **intentId** Integer
 
 ```crmscript

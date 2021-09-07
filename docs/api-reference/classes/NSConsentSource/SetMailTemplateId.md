@@ -10,7 +10,8 @@ so.topic: reference
 
 The mail template to use when automatically sending emails to new persons created with this consent source.
 
-**Parameter:** 
+## Parameters
+
 * **mailTemplateId** Integer
 
 ```crmscript

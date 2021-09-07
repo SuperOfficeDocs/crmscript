@@ -10,7 +10,8 @@ so.topic: reference
 
 Include recipients that are marked as retired
 
-**Parameter:** 
+## Parameters
+
 * **includeRetiredRecipients** Bool
 
 ```crmscript

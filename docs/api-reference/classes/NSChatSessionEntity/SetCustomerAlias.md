@@ -10,7 +10,8 @@ so.topic: reference
 
 The alias for the customer.
 
-**Parameter:** 
+## Parameters
+
 * **customerAlias** String
 
 ```crmscript

@@ -10,7 +10,8 @@ so.topic: reference
 
 Link to document
 
-**Parameter:** 
+## Parameters
+
 * **documentId** Integer
 
 ```crmscript

@@ -10,12 +10,14 @@ so.topic: reference
 
 Url to show to the user.  This is relevant when LinkType is 60.
 
-**Parameter:** 
+## Parameters
+
 * **url** String
+
+## Example
 
 ```crmscript
 NSCheckLicenseStatusResult thing;
 String url;
 thing.SetUrl(url);
 ```
-

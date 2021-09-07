@@ -10,7 +10,8 @@ so.topic: reference
 
 The date (inclusive) the pricelist ends to be valid. This can be DateTime.MaxValue to signal that it doesn't have a specific end date.
 
-**Parameter:** 
+## Parameters
+
 * **validTo** DateTime
 
 ```crmscript

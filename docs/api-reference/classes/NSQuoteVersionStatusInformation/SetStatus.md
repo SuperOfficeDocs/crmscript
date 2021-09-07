@@ -10,12 +10,13 @@ so.topic: reference
 
 Status information for the quote version.
 
-**Parameter:** 
+## Parameters
+
 * **status** Integer
-* Enum: 0 = Ok 
-* Enum: 1 = OkWithInfo 
-* Enum: 2 = Warning 
-* Enum: 3 = Error 
+* Enum: 0 = Ok
+* Enum: 1 = OkWithInfo
+* Enum: 2 = Warning
+* Enum: 3 = Error
 
 ```crmscript
 NSQuoteVersionStatusInformation thing;

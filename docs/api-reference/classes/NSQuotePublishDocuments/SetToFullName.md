@@ -10,7 +10,8 @@ so.topic: reference
 
 The full name of the recipient, taken from the sale's person
 
-**Parameter:** 
+## Parameters
+
 * **toFullName** String
 
 ```crmscript

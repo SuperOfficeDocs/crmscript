@@ -13,6 +13,6 @@ With this class you can retrieve meta information about an extra table. The clas
 ## Example
 
     ExtraTableInfo e;
-    
+   
     e.load("y_mytable");
     print(e.getId().toString());

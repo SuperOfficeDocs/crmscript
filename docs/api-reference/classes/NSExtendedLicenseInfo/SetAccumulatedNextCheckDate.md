@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetAccumulatedNextCheckDate(DateTime accumulatedNextCheckDate)
 
-**Parameter:** 
+## Parameters
+
 * **accumulatedNextCheckDate** DateTime
 
 ```crmscript

@@ -16,7 +16,7 @@ Saves the headings for the list item.
 * **listItemId** The identity of the list item
 * **headings** The headings to save.
 
-**Returns:** NSSelectableMDOListItem[] 
+**Returns:** NSSelectableMDOListItem[]
 
 ```crmscript
 NSListAgent agent;

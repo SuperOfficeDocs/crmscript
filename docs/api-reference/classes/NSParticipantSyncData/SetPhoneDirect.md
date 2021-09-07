@@ -8,7 +8,8 @@ so.topic: reference
 
 # SetPhoneDirect(String[] phoneDirect)
 
-**Parameter:** 
+## Parameters
+
 * **phoneDirect** String[]
 
 ```crmscript

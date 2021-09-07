@@ -10,7 +10,8 @@ so.topic: reference
 
 Allocate numbers automatically
 
-**Parameter:** 
+## Parameters
+
 * **allocate** Bool
 
 ```crmscript

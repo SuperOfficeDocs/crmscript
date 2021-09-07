@@ -10,7 +10,8 @@ so.topic: reference
 
 Country of delivery address, typically copied from the contact record
 
-**Parameter:** 
+## Parameters
+
 * **deliveryCountryId** Integer
 
 ```crmscript

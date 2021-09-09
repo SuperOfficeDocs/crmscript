@@ -304,7 +304,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.CreateDefaultRoleEntityFromType(Integer)
   type: Method
   summary: "\nCreate a new role entity of the specified role type. The role type cannot be changed after the entity is created.\n"
-  remarks: "\n<ul><li>Enum: 0 = Employee</li><li>Enum: 1 = ExternalUser</li><li>Enum: 2 = Anonymous</li><li>Enum: 3 = System</li></ul>\n"
+  remarks: "\n<p>See enum type.</p>\n"
   syntax: 
     content: NSRoleEntity CreateDefaultRoleEntityFromType(Integer type)
     parameters:
@@ -386,7 +386,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.CreateDefaultUserFromUserType(Integer)
   type: Method
   summary: "\nCreate default NSUser providing the user type.  Only System and Anonymous users can be created without an exsisting person.  Use CreateDefaultUserFromUserTypeAndPersonId to create internal (i.e. Employee) or external users.\n"
-  remarks: "\n<h3>Enum: associateType</h3><ul><li>0 = Unknown</li><li>1 = InternalAssociate</li><li>2 = ResourceAssociate</li><li>3 = ExternalAssociate</li><li>4 = AnonymousAssociate</li><li>5 = SystemAssociate</li></ul><p><strong>Returns:</strong> NSUser</p><pre><code>NSUserAgent agent;Integer userType;NSUser res = agent.CreateDefaultUserFromUserType(userType);</code></pre>\n"
+  remarks: "\n<p>See enum associateType.</p><pre><code>NSUserAgent agent;Integer userType;NSUser res = agent.CreateDefaultUserFromUserType(userType);</code></pre>\n"
   syntax: 
     content: NSUser CreateDefaultUserFromUserType(Integer userType)
     parameters:
@@ -408,7 +408,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.CreateDefaultUserFromUserTypeAndCredential(Integer,Integer,String,String,String)
   type: Method
   summary: "\nCreates an NSPersonEntity with default values based on the contactId and credentials.\n"
-  remarks: "\n<h3>Enum: associateType</h3><ul><li>0 = Unknown</li><li>1 = InternalAssociate</li><li>2 = ResourceAssociate</li><li>3 = ExternalAssociate</li><li>4 = AnonymousAssociate</li></ul>\n"
+  remarks: "\n<p>See enum associateType.</p>\n"
   syntax: 
     content: NSUser CreateDefaultUserFromUserTypeAndCredential(Integer userType, Integer contactId, String credentialType, String credentialValue, String credentialDisplayValue)
     parameters:
@@ -441,7 +441,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.CreateDefaultUserFromUserTypeAndPersonId(Integer,Integer)
   type: Method
   summary: "\nCreate default NSUser providing the associate type and person id.  System and Anonymous users can be created without an exsisting person and permits person id to be 0.\n"
-  remarks: "\n<h3>Enum: associateType</h3><ul><li>0 = Unknown</li><li>1 = InternalAssociate</li><li>2 = ResourceAssociate</li><li>3 = ExternalAssociate</li><li>4 = AnonymousAssociate</li><li>5 = SystemAssociate</li></ul>\n"
+  remarks: "\n<p>See enum associateType.</p>\n"
   syntax: 
     content: NSUser CreateDefaultUserFromUserTypeAndPersonId(Integer userType, Integer personId)
     parameters:
@@ -872,7 +872,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.GetAllFunctionalRights(Integer)
   type: Method
   summary: "\nGet a list of all functional rights for the given type of role. MDO List name = 'FunctionRights', extra='roleType=0'\n"
-  remarks: "\n<ul><li>Enum: 0 = Employee</li><li>Enum: 1 = ExternalUser</li><li>Enum: 2 = Anonymous</li><li>Enum: 3 = System</li></ul>\n"
+  remarks: "\n<p>See enum roleType.</p>\n"
   syntax: 
     content: NSSelectableMDOListItem[] GetAllFunctionalRights(Integer roleType)
     parameters:
@@ -894,7 +894,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.GetAllRoles(Integer)
   type: Method
   summary: "\nGet a list of all roles for the given type of role. MDO List name = 'Roles', extra='0' (roleType)\n"
-  remarks: "\n<ul><li>Enum: 0 = Employee</li><li>Enum: 1 = ExternalUser</li><li>Enum: 2 = Anonymous</li><li>Enum: 3 = System</li></ul>\n"
+  remarks: "\n<p>See enum roleType.</p>\n"
   syntax: 
     content: NSSelectableMDOListItem[] GetAllRoles(Integer roleType)
     parameters:
@@ -1047,7 +1047,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.GetDataRight(Integer,String,Integer)
   type: Method
   summary: "\nRead one specific data right at the given position. An exception will be thrown if non existing position is specified.\n"
-  remarks: "\n<ul><li>Enum: 0 = MyOwn</li><li>Enum: 1 = PrimaryGroup</li><li>Enum: 2 = OtherGroups</li><li>Enum: 3 = OtherAssociates</li><li>Enum: 4 = ExternalUser</li><li>Enum: 5 = Anonymous</li><li>Enum: 6 = MyCompany</li><li>Enum: 7 = SameProject</li></ul>\n"
+  remarks: "\n<p>See enum relationToOwner.</p>\n"
   syntax: 
     content: String GetDataRight(Integer roleId, String tableName, Integer relationToOwner)
     parameters:
@@ -1452,7 +1452,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.GetValidUserName(Integer,Integer,Integer,String)
   type: Method
   summary: "\n<strong>Returns:</strong>String\n"
-  remarks: "\n<h3>Enum: associateType</h3><ul><li>0 = Unknown</li><li>1 = InternalAssociate</li><li>2 = ResourceAssociate</li><li>3 = ExternalAssociate</li><li>4 = AnonymousAssociate</li></ul>\n"
+  remarks: "\n<p>See enum associateType.</p>\n"
   syntax: 
     content: String GetValidUserName(Integer associateId, Integer type, Integer personId, String userName)
     parameters:
@@ -1527,7 +1527,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.IsPasswordValid(Integer,Integer,Integer,String)
   type: Method
   summary: "\n<strong>Returns:</strong>Bool\n"
-  remarks: "\n<h3>Enum: associateType</h3><ul><li>0 = Unknown</li><li>1 = InternalAssociate</li><li>2 = ResourceAssociate</li><li>3 = ExternalAssociate</li><li>4 = AnonymousAssociate</li></ul>\n"
+  remarks: "\n<p>See enum associateType.</p>\n"
   syntax: 
     content: Bool IsPasswordValid(Integer associateId, Integer type, Integer personId, String password)
     parameters:
@@ -1557,7 +1557,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.IsPasswordValidWithReason(Integer,Integer,Integer,String)
   type: Method
   summary: "\n<strong>Returns:</strong>NSUserValidationResult\n"
-  remarks: "\n<h3>Enum: associateType</h3><ul><li>0 = Unknown</li><li>1 = InternalAssociate</li><li>2 = ResourceAssociate</li><li>3 = ExternalAssociate</li><li>4 = AnonymousAssociate</li></ul>\n"
+  remarks: "\n<p>See enum associateType.</p>\n"
   syntax: 
     content: NSUserValidationResult IsPasswordValidWithReason(Integer associateId, Integer type, Integer personId, String password)
     parameters:
@@ -1587,7 +1587,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.IsUserNameValid(Integer,Integer,Integer,String,String)
   type: Method
   summary: "\n<strong>Returns:</strong>Bool\n"
-  remarks: "\n<h3>Enum: associateType</h3><ul><li>0 = Unknown</li><li>1 = InternalAssociate</li><li>2 = ResourceAssociate</li><li>3 = ExternalAssociate</li><li>4 = AnonymousAssociate</li></ul>\n"
+  remarks: "\n<p>See enum associateType.</p>\n"
   syntax: 
     content: Bool IsUserNameValid(Integer associateId, Integer type, Integer personId, String userName)
     parameters:
@@ -1620,7 +1620,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.IsUserNameValidWithReason(Integer,Integer,Integer,String,String)
   type: Method
   summary: "\n<strong>Returns:</strong>NSUserValidationResult\n"
-  remarks: "\n<h3>Enum: associateType</h3><ul><li>0 = Unknown</li><li>1 = InternalAssociate</li><li>2 = ResourceAssociate</li><li>3 = ExternalAssociate</li><li>4 = AnonymousAssociate</li></ul>\n"
+  remarks: "\n<p>See enum associateType.</p>\n"
   syntax: 
     content: NSUserValidationResult IsUserNameValidWithReason(Integer associateId, Integer type, Integer personId, String userName)
     parameters:
@@ -1807,7 +1807,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.ResolveUserFromInfo(Integer,String,String[],String[],Integer)
   type: Method
   summary: "\nGet a user from the provided information. If the user or associated person does not exist, it will be created on demand.\n"
-  remarks: "\n<h3>Enum: associateType</h3><ul><li>0 = Unknown</li><li>1 = InternalAssociate</li><li>2 = ResourceAssociate</li><li>3 = ExternalAssociate</li><li>4 = AnonymousAssociate</li><li>5 = SystemAssociate</li></ul>\n"
+  remarks: "\n<p>See enum associateType.</p>\n"
   syntax: 
     content: NSResolvedUser ResolveUserFromInfo(Integer contactId, String personName, String[] phoneNumbers, String[] emails, Integer userType, NSCredential credential)
     parameters:
@@ -2037,7 +2037,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.SetDataRight(Integer,String,Integer,String)
   type: Method
   summary: "\nSet one specific data right at the given position. An exception will be thrown if non existing position is specified.\n"
-  remarks: "\n<ul><li>Enum: 0 = MyOwn</li><li>Enum: 1 = PrimaryGroup</li><li>Enum: 2 = OtherGroups</li><li>Enum: 3 = OtherAssociates</li><li>Enum: 4 = ExternalUser</li><li>Enum: 5 = Anonymous</li><li>Enum: 6 = MyCompany</li><li>Enum: 7 = SameProject</li></ul>\n"
+  remarks: "\n<p>See enum dataRightValue.</p>\n"
   syntax: 
     content: Void SetDataRight(Integer roleId, String tableName, Integer relationToOwner, String dataRightValue)
     parameters:
@@ -2067,7 +2067,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.SetExternalUserInfo(Integer,String,String,Bool,Integer,Integer)
   type: Method
   summary: "\nModifies an external user. Changes external users information according to the flags set in  externalUserInfoModification.\n"
-  remarks: "\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = UserName</li><li>Enum: 2 = Password</li><li>Enum: 4 = Role</li><li>Enum: 8 = Active</li></ul>\n"
+  remarks: "\n<p>See enum externalUserInfoModification.</p>\n"
   syntax: 
     content: Void SetExternalUserInfo(Integer associateId, String userName, String password, Bool isActive, Integer roleId, Integer externalUserInfoModification)
     parameters:

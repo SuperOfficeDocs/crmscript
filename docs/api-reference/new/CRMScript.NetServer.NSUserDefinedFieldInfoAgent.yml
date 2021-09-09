@@ -58,7 +58,7 @@ items:
   fullName: CRMScript.NetServer.NSUserDefinedFieldInfoAgent.ChangeFieldType(NSUserDefinedFieldInfo,Integer,Bool)
   type: Method
   summary: "\nCreate a UserDefinedFieldInfo based on a owner-entity id\n"
-  remarks: "\n<ul><li>Enum: 1 = Number</li><li>Enum: 2 = ShortText</li><li>Enum: 3 = LongText</li><li>Enum: 4 = Date</li><li>Enum: 5 = UnlimitedDate</li><li>Enum: 6 = Checkbox</li><li>Enum: 7 = List</li><li>Enum: 8 = Decimal</li></ul>\n"
+  remarks: "\n<p>See enum isIndexed.</p>\n"
   syntax: 
     content: NSUserDefinedFieldInfo ChangeFieldType(NSUserDefinedFieldInfo info, Integer fieldType, Bool isIndexed)
     parameters:
@@ -106,7 +106,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserDefinedFieldInfoAgent.CreateUserDefinedFieldInfo(Integer,Integer)
   type: Method
   summary: "\nCreate a UserDefinedFieldInfo based on a owner-entity id\n"
-  remarks: "\n<ul><li>Enum: 0 = Invalid</li><li>Enum: 7 = Contact</li><li>Enum: 8 = Person</li><li>Enum: 9 = Project</li><li>Enum: 10 = Sale</li><li>Enum: 11 = Temp</li><li>Enum: 12 = Appointment</li><li>Enum: 13 = Document</li><li>Enum: 14 = None</li><li>Enum: 1 = Number</li><li>Enum: 2 = ShortText</li><li>Enum: 3 = LongText</li><li>Enum: 4 = Date</li><li>Enum: 5 = UnlimitedDate</li><li>Enum: 6 = Checkbox</li><li>Enum: 7 = List</li><li>Enum: 8 = Decimal</li></ul>\n"
+  remarks: "\n<p>See enum fieldType.</p>\n"
   syntax: 
     content: NSUserDefinedFieldInfo CreateUserDefinedFieldInfo(Integer ownerType, Integer fieldType)
     parameters:
@@ -151,7 +151,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserDefinedFieldInfoAgent.DetectColumnIdChanges(Integer)
   type: Method
   summary: "\nDetect columnid changes to the admin version (for determining publish warning)\n"
-  remarks: "\n<ul><li>Enum: 0 = Invalid</li><li>Enum: 7 = Contact</li><li>Enum: 8 = Person</li><li>Enum: 9 = Project</li><li>Enum: 10 = Sale</li><li>Enum: 11 = Temp</li><li>Enum: 12 = Appointment</li><li>Enum: 13 = Document</li><li>Enum: 14 = None</li></ul>\n"
+  remarks: "\n<p>See enum ownerType.</p>\n"
   syntax: 
     content: Bool DetectColumnIdChanges(Integer ownerType)
     parameters:
@@ -173,7 +173,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserDefinedFieldInfoAgent.DetectUnpublishedChanges(Integer)
   type: Method
   summary: "\nDetect changes to the admin version (unpublished)\n"
-  remarks: "\n<ul><li>Enum: 0 = Invalid</li><li>Enum: 7 = Contact</li><li>Enum: 8 = Person</li><li>Enum: 9 = Project</li><li>Enum: 10 = Sale</li><li>Enum: 11 = Temp</li><li>Enum: 12 = Appointment</li><li>Enum: 13 = Document</li><li>Enum: 14 = None</li></ul>\n"
+  remarks: "\n<p>See enum ownerType.</p>\n"
   syntax: 
     content: Bool DetectUnpublishedChanges(Integer ownerType)
     parameters:
@@ -216,7 +216,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserDefinedFieldInfoAgent.GetChangedPageOneFields(Integer,Integer)
   type: Method
   summary: "\nGets which page one fields have changed from the current version\n"
-  remarks: "\n<ul><li>Enum: 0 = Invalid</li><li>Enum: 7 = Contact</li><li>Enum: 8 = Person</li><li>Enum: 9 = Project</li><li>Enum: 10 = Sale</li><li>Enum: 11 = Temp</li><li>Enum: 12 = Appointment</li><li>Enum: 13 = Document</li><li>Enum: 14 = None</li></ul>\n"
+  remarks: "\n<p>See enum userGroupId.</p>\n"
   syntax: 
     content: Bool[] GetChangedPageOneFields(Integer ownerType, Integer userGroupId)
     parameters:
@@ -290,7 +290,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserDefinedFieldInfoAgent.GetPublishedUserDefinedFieldFromFieldLabel(String,Integer)
   type: Method
   summary: "\nReturn information about the given user defined field identified by the owner and the field label. Note that field labels are fuzzy. Leading and trailing spaces and punctuation are ignored.\n"
-  remarks: "\n<ul><li>Enum: 0 = Invalid</li><li>Enum: 7 = Contact</li><li>Enum: 8 = Person</li><li>Enum: 9 = Project</li><li>Enum: 10 = Sale</li><li>Enum: 11 = Temp</li><li>Enum: 12 = Appointment</li><li>Enum: 13 = Document</li><li>Enum: 14 = None</li></ul>\n"
+  remarks: "\n<p>See enum ownerType.</p>\n"
   syntax: 
     content: NSUserDefinedFieldInfo GetPublishedUserDefinedFieldFromFieldLabel(String fieldLabel, Integer ownerType)
     parameters:
@@ -315,7 +315,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserDefinedFieldInfoAgent.GetPublishedUserDefinedFieldFromProgId(String,Integer)
   type: Method
   summary: "\nReturn information about the given user defined field identified by the owner and the prog-id. The prog-id is used as the key in the entity carriers.\n"
-  remarks: "\n<ul><li>Enum: 0 = Invalid</li><li>Enum: 7 = Contact</li><li>Enum: 8 = Person</li><li>Enum: 9 = Project</li><li>Enum: 10 = Sale</li><li>Enum: 11 = Temp</li><li>Enum: 12 = Appointment</li><li>Enum: 13 = Document</li><li>Enum: 14 = None</li></ul>\n"
+  remarks: "\n<p>See enum ownerType.</p>\n"
   syntax: 
     content: NSUserDefinedFieldInfo GetPublishedUserDefinedFieldFromProgId(String progId, Integer ownerType)
     parameters:
@@ -340,7 +340,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserDefinedFieldInfoAgent.GetPublishedUserDefinedFieldList(Integer)
   type: Method
   summary: "\nReturn information about all the user defined fields on a particular owner type (project, contact, person, etc).\n"
-  remarks: "\n<ul><li>Enum: 0 = Invalid</li><li>Enum: 7 = Contact</li><li>Enum: 8 = Person</li><li>Enum: 9 = Project</li><li>Enum: 10 = Sale</li><li>Enum: 11 = Temp</li><li>Enum: 12 = Appointment</li><li>Enum: 13 = Document</li><li>Enum: 14 = None</li></ul>\n"
+  remarks: "\n<p>See enum ownerType.</p>\n"
   syntax: 
     content: NSUserDefinedFieldInfo[] GetPublishedUserDefinedFieldList(Integer ownerType)
     parameters:
@@ -362,7 +362,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserDefinedFieldInfoAgent.GetPublishedUserDefinedPageOneFields(Integer,Integer)
   type: Method
   summary: "\nGet a list of page one fields for given Udef type and current user group\n"
-  remarks: "\n<ul><li>Enum: 0 = Invalid</li><li>Enum: 7 = Contact</li><li>Enum: 8 = Person</li><li>Enum: 9 = Project</li><li>Enum: 10 = Sale</li><li>Enum: 11 = Temp</li><li>Enum: 12 = Appointment</li><li>Enum: 13 = Document</li><li>Enum: 14 = None</li></ul>\n"
+  remarks: "\n<p>See enum userGroupId.</p>\n"
   syntax: 
     content: NSUserDefinedFieldInfo[] GetPublishedUserDefinedPageOneFields(Integer ownerType, Integer userGroupId)
     parameters:
@@ -387,7 +387,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserDefinedFieldInfoAgent.GetUserDefinedFieldFromFieldLabel(String,Integer)
   type: Method
   summary: "\nReturn information about the given user defined field identified by the owner and the field label. Note that field labels are fuzzy. Leading and trailing spaces and punctuation are ignored. Note this may be different than the currently published fields.\n"
-  remarks: "\n<ul><li>Enum: 0 = Invalid</li><li>Enum: 7 = Contact</li><li>Enum: 8 = Person</li><li>Enum: 9 = Project</li><li>Enum: 10 = Sale</li><li>Enum: 11 = Temp</li><li>Enum: 12 = Appointment</li><li>Enum: 13 = Document</li><li>Enum: 14 = None</li></ul>\n"
+  remarks: "\n<p>See enum ownerType.</p>\n"
   syntax: 
     content: NSUserDefinedFieldInfo GetUserDefinedFieldFromFieldLabel(String fieldLabel, Integer ownerType)
     parameters:
@@ -434,7 +434,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserDefinedFieldInfoAgent.GetUserDefinedFieldFromProgId(String,Integer)
   type: Method
   summary: "\nReturn information about the given user defined field identified by the owner and the prog-id. The prog-id is used as the key in the entity carriers. Note this may be different than the currently published fields.\n"
-  remarks: "\n<ul><li>Enum: 0 = Invalid</li><li>Enum: 7 = Contact</li><li>Enum: 8 = Person</li><li>Enum: 9 = Project</li><li>Enum: 10 = Sale</li><li>Enum: 11 = Temp</li><li>Enum: 12 = Appointment</li><li>Enum: 13 = Document</li><li>Enum: 14 = None</li></ul>\n"
+  remarks: "\n<p>See enum ownerType.</p>\n"
   syntax: 
     content: NSUserDefinedFieldInfo GetUserDefinedFieldFromProgId(String progId, Integer ownerType)
     parameters:
@@ -459,7 +459,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserDefinedFieldInfoAgent.GetUserDefinedFieldFromProgIds(String[],Integer)
   type: Method
   summary: "\nReturn an given array user defined field identified by the owner and the prog-ids. The prog-id is used as the key in the entity carriers. Note this may be different than the currently published field layout.\n"
-  remarks: "\n<ul><li>Enum: 0 = Invalid</li><li>Enum: 7 = Contact</li><li>Enum: 8 = Person</li><li>Enum: 9 = Project</li><li>Enum: 10 = Sale</li><li>Enum: 11 = Temp</li><li>Enum: 12 = Appointment</li><li>Enum: 13 = Document</li><li>Enum: 14 = None</li></ul>\n"
+  remarks: "\n<p>See enum ownerType.</p>\n"
   syntax: 
     content: NSUserDefinedFieldInfo[] GetUserDefinedFieldFromProgIds(String[] progIds, Integer ownerType)
     parameters:
@@ -506,7 +506,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserDefinedFieldInfoAgent.GetUserDefinedFieldList(Integer)
   type: Method
   summary: "\nReturn information about all the user defined fields on a particular owner type (project, contact, person, etc). Note this may be different than the currently published fields.\n"
-  remarks: "\n<ul><li>Enum: 0 = Invalid</li><li>Enum: 7 = Contact</li><li>Enum: 8 = Person</li><li>Enum: 9 = Project</li><li>Enum: 10 = Sale</li><li>Enum: 11 = Temp</li><li>Enum: 12 = Appointment</li><li>Enum: 13 = Document</li><li>Enum: 14 = None</li></ul>\n"
+  remarks: "\n<p>See enum ownerType.</p>\n"
   syntax: 
     content: NSUserDefinedFieldInfo[] GetUserDefinedFieldList(Integer ownerType)
     parameters:
@@ -528,7 +528,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserDefinedFieldInfoAgent.GetUserDefinedPageOneFields(Integer,Integer)
   type: Method
   summary: "\nGet a list of page one fields for given Udef type and current user group\n"
-  remarks: "\n<ul><li>Enum: 0 = Invalid</li><li>Enum: 7 = Contact</li><li>Enum: 8 = Person</li><li>Enum: 9 = Project</li><li>Enum: 10 = Sale</li><li>Enum: 11 = Temp</li><li>Enum: 12 = Appointment</li><li>Enum: 13 = Document</li><li>Enum: 14 = None</li></ul>\n"
+  remarks: "\n<p>See enum userGroupId.</p>\n"
   syntax: 
     content: NSUserDefinedFieldInfo[] GetUserDefinedPageOneFields(Integer ownerType, Integer userGroupId)
     parameters:
@@ -571,7 +571,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserDefinedFieldInfoAgent.IsPublishEventActive(Integer)
   type: Method
   summary: "\nCheck if the publish event is active for the given type<p></p>\n<strong>Returns:</strong>Bool\n"
-  remarks: "\n<h3>type</h3><ul><li>Enum: 0 = Invalid</li><li>Enum: 7 = Contact</li><li>Enum: 8 = Person</li><li>Enum: 9 = Project</li><li>Enum: 10 = Sale</li><li>Enum: 11 = Temp</li><li>Enum: 12 = Appointment</li><li>Enum: 13 = Document</li></ul>\n"
+  remarks: "\n<p>See enum type.</p>\n"
   syntax: 
     content: Bool IsPublishEventActive(Integer type)
     parameters:
@@ -608,7 +608,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserDefinedFieldInfoAgent.Publish(Integer)
   type: Method
   summary: "\nPublish changed Udef fields for the given owner type\n"
-  remarks: "\n<ul><li>Enum: 0 = Invalid</li><li>Enum: 7 = Contact</li><li>Enum: 8 = Person</li><li>Enum: 9 = Project</li><li>Enum: 10 = Sale</li><li>Enum: 11 = Temp</li><li>Enum: 12 = Appointment</li><li>Enum: 13 = Document</li><li>Enum: 14 = None</li></ul>\n"
+  remarks: "\n<p>See enum ownerType.</p>\n"
   syntax: 
     content: Integer Publish(Integer ownerType)
     parameters:
@@ -630,7 +630,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserDefinedFieldInfoAgent.Revert(Integer)
   type: Method
   summary: "\nRevert changed Udef fields for the given owner type* all unpublished changes will be lost\n"
-  remarks: "\n<ul><li>Enum: 0 = Invalid</li><li>Enum: 7 = Contact</li><li>Enum: 8 = Person</li><li>Enum: 9 = Project</li><li>Enum: 10 = Sale</li><li>Enum: 11 = Temp</li><li>Enum: 12 = Appointment</li><li>Enum: 13 = Document</li></ul>\n"
+  remarks: "\n<p>See enum ownerType.</p>\n"
   syntax: 
     content: Void Revert(Integer ownerType)
     parameters:
@@ -718,7 +718,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserDefinedFieldInfoAgent.SetPageOneFieldGrouping(Integer,Bool)
   type: Method
   summary: "\nSets the Page One Field grouping for a specific entity\n"
-  remarks: "\n<ul><li>Enum: 0 = Invalid</li><li>Enum: 7 = Contact</li><li>Enum: 8 = Person</li><li>Enum: 9 = Project</li><li>Enum: 10 = Sale</li><li>Enum: 11 = Temp</li><li>Enum: 12 = Appointment</li><li>Enum: 13 = Document</li><li>Enum: 14 = None</li></ul>\n"
+  remarks: "\n<p>See enum active.</p>\n"
   syntax: 
     content: Void SetPageOneFieldGrouping(Integer ownerType, Bool active)
     parameters:
@@ -742,7 +742,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserDefinedFieldInfoAgent.SetPublishStartSystemEvent(Integer)
   type: Method
   summary: "\nSet the start flag for udef publishing. Must be called before PUBLISH, or PUBLISH will fail. Start flag is removed when publish process completes.\n"
-  remarks: "\n<ul><li>Enum: 0 = Invalid</li><li>Enum: 7 = Contact</li><li>Enum: 8 = Person</li><li>Enum: 9 = Project</li><li>Enum: 10 = Sale</li><li>Enum: 11 = Temp</li><li>Enum: 12 = Appointment</li><li>Enum: 13 = Document</li></ul>\n"
+  remarks: "\n<p>See enum ownerType.</p>\n"
   syntax: 
     content: Void SetPublishStartSystemEvent(Integer ownerType)
     parameters:
@@ -763,7 +763,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserDefinedFieldInfoAgent.SetRankOnFields(Integer,Integer[])
   type: Method
   summary: "\nChange rank of user defined fields\n"
-  remarks: "\n<ul><li>Enum: 0 = Invalid</li><li>Enum: 7 = Contact</li><li>Enum: 8 = Person</li><li>Enum: 9 = Project</li><li>Enum: 10 = Sale</li><li>Enum: 11 = Temp</li><li>Enum: 12 = Appointment</li><li>Enum: 13 = Document</li><li>Enum: 14 = None</li></ul>\n"
+  remarks: "\n<p>See enum rankedFieldsIds.</p>\n"
   syntax: 
     content: Void SetRankOnFields(Integer ownerType, Integer[] rankedFieldsIds)
     parameters:
@@ -787,7 +787,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserDefinedFieldInfoAgent.SetUserDefinedPageOneField(Integer,Integer,Integer,Integer)
   type: Method
   summary: "\nSets a user defined fields as page one field.\n"
-  remarks: "\n<ul><li>Enum: 0 = Invalid</li><li>Enum: 7 = Contact</li><li>Enum: 8 = Person</li><li>Enum: 9 = Project</li><li>Enum: 10 = Sale</li><li>Enum: 11 = Temp</li><li>Enum: 12 = Appointment</li><li>Enum: 13 = Document</li><li>Enum: 14 = None</li></ul>\n"
+  remarks: "\n<p>See enum fieldLineNo.</p>\n"
   syntax: 
     content: Void SetUserDefinedPageOneField(Integer ownerType, Integer udefFieldId, Integer userGroupId, Integer fieldLineNo)
     parameters:

@@ -12,7 +12,7 @@ Is this a normal document or a mail-merge or report?
 
 **Returns:** Integer
 
-## Enum: appointment type
+## Enum: appointmentType
 
 * 0 = Unknown
 * 1 = inDiary

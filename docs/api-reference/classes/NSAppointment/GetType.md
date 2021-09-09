@@ -12,7 +12,7 @@ The different types of appointment, if the appointment is supposed to be shown i
 
 **Returns:** Integer
 
-## Enum: appointment type
+## Enum: appointmentType
 
 * 0 = Unknown
 * 1 = inDiary

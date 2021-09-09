@@ -72,7 +72,7 @@ items:
   fullName: CRMScript.NetServer.NSErpSyncAgent.BreakActorLink(Integer,Integer,Integer)
   type: Method
   summary: "\nRemove the link between a CRM entity and an ERP entity\n"
-  remarks: "\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Contact</li><li>Enum: 2 = Person</li><li>Enum: 3 = Project</li><li>Enum: 4 = Sale</li></ul>\n"
+  remarks: "\n<p>See enum crmActorType.</p>\n"
   syntax: 
     content: Bool BreakActorLink(Integer erpConnectionId, Integer crmRecordId, Integer crmActorType)
     parameters:
@@ -162,7 +162,7 @@ items:
   fullName: CRMScript.NetServer.NSErpSyncAgent.ConnectActor(Integer,Integer,Integer,String,Integer)
   type: Method
   summary: "\nCreate a link between Erp and Crm and set default values\n"
-  remarks: "\n<p>| erpConnectionId | Integer | ErpConnectionId || crmRecordId | Integer | CrmRecordId || crmActorType | Integer | The Crm Actor type || erpKey | String | || erpActorType | Integer | The Erp Actor type || fieldValues NSErpSyncFieldValue[] | The Crm Fields |</p><h3>crmActorType</h3><ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Contact</li><li>Enum: 2 = Person</li><li>Enum: 3 = Project</li><li>Enum: 4 = Sale</li></ul><h3>erpActorType</h3><ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Customer</li><li>Enum: 2 = Supplier</li><li>Enum: 3 = Partner</li><li>Enum: 4 = Person</li><li>Enum: 5 = Project</li><li>Enum: 6 = Employee</li></ul>\n"
+  remarks: "\n<p>| erpConnectionId | Integer | ErpConnectionId || crmRecordId | Integer | CrmRecordId || crmActorType | Integer | The Crm Actor type || erpKey | String | || erpActorType | Integer | The Erp Actor type || fieldValues NSErpSyncFieldValue[] | The Crm Fields |</p><ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Contact</li><li>Enum: 2 = Person</li><li>Enum: 3 = Project</li><li>Enum: 4 = Sale</li></ul><h3>erpActorType</h3><ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Customer</li><li>Enum: 2 = Supplier</li><li>Enum: 3 = Partner</li><li>Enum: 4 = Person</li><li>Enum: 5 = Project</li><li>Enum: 6 = Employee</li></ul>\n"
   syntax: 
     content: Void ConnectActor(Integer erpConnectionId, Integer crmRecordId, Integer crmActorType, String erpKey, Integer erpActorType, NSErpSyncFieldValue[] fieldValues)
     parameters:
@@ -195,7 +195,7 @@ items:
   fullName: CRMScript.NetServer.NSErpSyncAgent.CreateActorLink(Integer,Integer,Integer,String,Integer)
   type: Method
   summary: "\nLink a crm entity to an erp entity\n"
-  remarks: "\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Contact</li><li>Enum: 2 = Person</li><li>Enum: 3 = Project</li><li>Enum: 4 = Sale</li><li>Enum: 0 = Unknown</li><li>Enum: 1 = Customer</li><li>Enum: 2 = Supplier</li><li>Enum: 3 = Partner</li><li>Enum: 4 = Person</li><li>Enum: 5 = Project</li><li>Enum: 6 = Employee</li><li>Enum: 7 = Sale</li></ul>\n"
+  remarks: "\n<p>See enum erpActorType.</p>\n"
   syntax: 
     content: Bool CreateActorLink(Integer erpConnectionId, Integer crmRecordId, Integer crmActorType, String erpKey, Integer erpActorType)
     parameters:
@@ -369,7 +369,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSErpSyncAgent.ForceResyncExternal(Integer,Integer,String[])
   type: Method
   summary: "\nForce resync from CRM or given Erp connection to all other connections, using external keys\n"
-  remarks: "\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Customer</li><li>Enum: 2 = Supplier</li><li>Enum: 3 = Partner</li><li>Enum: 4 = Person</li><li>Enum: 5 = Project</li><li>Enum: 6 = Employee</li><li>Enum: 7 = Sale</li></ul>\n"
+  remarks: "\n<p>See enum externalKeys.</p>\n"
   syntax: 
     content: NSPluginResponse ForceResyncExternal(Integer erpConnectionId, Integer erpActorType, String[] externalKeys)
     parameters:
@@ -397,7 +397,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSErpSyncAgent.ForceResyncExternalNoBlankValues(Integer,Integer,String[])
   type: Method
   summary: "\nForce resync from CRM or given Erp connection to all other connections, using external keys, and tell the sync that you don't want blank values to overwrite non-blank values. Useful on import.\n"
-  remarks: "\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Customer</li><li>Enum: 2 = Supplier</li><li>Enum: 3 = Partner</li><li>Enum: 4 = Person</li><li>Enum: 5 = Project</li><li>Enum: 6 = Employee</li><li>Enum: 7 = Sale</li></ul>\n"
+  remarks: "\n<p>See enum externalKeys.</p>\n"
   syntax: 
     content: NSPluginResponse ForceResyncExternalNoBlankValues(Integer erpConnectionId, Integer erpActorType, String[] externalKeys)
     parameters:
@@ -469,7 +469,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSErpSyncAgent.GetActorTypeMapping(Integer,Integer)
   type: Method
   summary: "\nGet the current mappings for one connection/actor; connection+actor type = unique key\n"
-  remarks: "\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Customer</li><li>Enum: 2 = Supplier</li><li>Enum: 3 = Partner</li><li>Enum: 4 = Person</li><li>Enum: 5 = Project</li><li>Enum: 6 = Employee</li><li>Enum: 7 = Sale</li></ul>\n"
+  remarks: "\n<p>See enum actorType.</p>\n"
   syntax: 
     content: NSErpSyncActorTypeMapping GetActorTypeMapping(Integer erpConnectionId, Integer actorType)
     parameters:
@@ -560,7 +560,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSErpSyncAgent.GetConnectionsAndDisplayFields(Integer,Integer)
   type: Method
   summary: "\nGet all connection statuses and fields for a given entity\n"
-  remarks: "\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Contact</li><li>Enum: 2 = Person</li><li>Enum: 3 = Project</li><li>Enum: 4 = Sale</li></ul>\n"
+  remarks: "\n<p>See enum entityId.</p>\n"
   syntax: 
     content: NSErpConnectionData[] GetConnectionsAndDisplayFields(Integer crmActorType, Integer entityId)
     parameters:
@@ -585,7 +585,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSErpSyncAgent.GetCrmActorType(Integer,Integer)
   type: Method
   summary: "\nRetrieves the NSCrmActorType that are mapped to a specific ErpActorType for this connection\n"
-  remarks: "\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Customer</li><li>Enum: 2 = Supplier</li><li>Enum: 3 = Partner</li><li>Enum: 4 = Person</li><li>Enum: 5 = Project</li><li>Enum: 6 = Employee</li><li>Enum: 7 = Sale</li></ul>\n"
+  remarks: "\n<p>See enum erpActorType.</p>\n"
   syntax: 
     content: Integer GetCrmActorType(Integer erpConnectionId, Integer erpActorType)
     parameters:
@@ -671,7 +671,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSErpSyncAgent.GetErpFieldValues(Integer,Integer,Integer,String[])
   type: Method
   summary: "\nGet the values for the specified fields from the ERP connection\n"
-  remarks: "\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Contact</li><li>Enum: 2 = Person</li><li>Enum: 3 = Project</li><li>Enum: 4 = Sale</li></ul>\n"
+  remarks: "\n<p>See enum fieldKeys.</p>\n"
   syntax: 
     content: String[] GetErpFieldValues(Integer erpConnectionId, Integer crmActorType, Integer entityId, String[] fieldKeys)
     parameters:
@@ -746,7 +746,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSErpSyncAgent.GetFieldsForNewErpActor(Integer,Integer)
   type: Method
   summary: "\nGet the fields that must be filled out when creating a new ERP actor\n"
-  remarks: "\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Customer</li><li>Enum: 2 = Supplier</li><li>Enum: 3 = Partner</li><li>Enum: 4 = Person</li><li>Enum: 5 = Project</li><li>Enum: 6 = Employee</li><li>Enum: 7 = Sale</li></ul>\n"
+  remarks: "\n<p>See enum erpActorType.</p>\n"
   syntax: 
     content: NSFieldMetadata[] GetFieldsForNewErpActor(Integer erpConnectionId, Integer erpActorType)
     parameters:
@@ -796,7 +796,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSErpSyncAgent.GetFieldValuesFromErp(Integer,Integer,String)
   type: Method
   summary: "\nGet Erp Field values\n"
-  remarks: "\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Customer</li><li>Enum: 2 = Supplier</li><li>Enum: 3 = Partner</li><li>Enum: 4 = Person</li><li>Enum: 5 = Project</li><li>Enum: 6 = Employee</li><li>Enum: 7 = Sale</li></ul>\n"
+  remarks: "\n<p>See enum erpKey.</p>\n"
   syntax: 
     content: NSErpSyncFieldValue[] GetFieldValuesFromErp(Integer erpConnectionId, Integer actorTypeErp, String erpKey)
     parameters:
@@ -824,7 +824,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSErpSyncAgent.MoveErpFieldItem(Integer,Integer,Integer,Integer)
   type: Method
   summary: "\nMoves the rank of the erp field up or down\n"
-  remarks: "\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Customer</li><li>Enum: 2 = Supplier</li><li>Enum: 3 = Partner</li><li>Enum: 4 = Person</li><li>Enum: 5 = Project</li><li>Enum: 6 = Employee</li></ul>\n"
+  remarks: "\n<p>See enum erpActorType.</p>\n"
   syntax: 
     content: Void MoveErpFieldItem(Integer erpFieldId, Integer direction, Integer erpConnectionId, Integer erpActorType)
     parameters:
@@ -993,7 +993,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSErpSyncAgent.SupportsAdvancedSearch(Integer,Integer)
   type: Method
   summary: "\nIndicates if the connection supports advanced search for the given erp actor\n"
-  remarks: "\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Customer</li><li>Enum: 2 = Supplier</li><li>Enum: 3 = Partner</li><li>Enum: 4 = Person</li><li>Enum: 5 = Project</li><li>Enum: 6 = Employee</li><li>Enum: 7 = Sale</li></ul>\n"
+  remarks: "\n<p>See enum erpActorType.</p>\n"
   syntax: 
     content: Bool SupportsAdvancedSearch(Integer erpConnectionId, Integer erpActorType)
     parameters:

@@ -309,7 +309,7 @@ items:
   fullName: CRMScript.NetServer.NSPersonAgent.CreateTemporaryKey(Integer,Integer,Integer)
   type: Method
   summary: "\nCreate a temporary key in the database from the given parameters and return the key string. Used for temporary keys for accessing customer centric functionality, such as UpdateSubscriptions.\n"
-  remarks: "\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = MailingRecipient</li><li>Enum: 2 = FormSubmitterRecipient</li><li>Enum: 3 = ViewTicketInCustomerCenter</li><li>Enum: 4 = LoginCustomerCenter</li><li>Enum: 5 = PublicFaq</li><li>Enum: 6 = ChangePasswordCustomerCenter</li></ul>\n"
+  remarks: "\n<p>See enum expires.</p>\n"
   syntax: 
     content: String CreateTemporaryKey(Integer domain, Integer targetId, Integer personId, DateTime expires)
     parameters:
@@ -395,7 +395,7 @@ items:
   fullName: CRMScript.NetServer.NSPersonAgent.DeleteTemporaryKeysOfDomain(Integer,Integer)
   type: Method
   summary: "\nDelete all temporary keys for a given domain and person\n"
-  remarks: "\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = MailingRecipient</li><li>Enum: 2 = FormSubmitterRecipient</li><li>Enum: 3 = ViewTicketInCustomerCenter</li><li>Enum: 4 = LoginCustomerCenter</li><li>Enum: 5 = PublicFaq</li><li>Enum: 6 = ChangePasswordCustomerCenter</li></ul>\n"
+  remarks: "\n<p>See enum personId.</p>\n"
   syntax: 
     content: Void DeleteTemporaryKeysOfDomain(Integer domain, Integer personId)
     parameters:
@@ -528,7 +528,7 @@ items:
   fullName: CRMScript.NetServer.NSPersonAgent.GetColleaguesBySource(Integer,Integer)
   type: Method
   summary: "\nGets the persons working in the same company as the logged-on user. The list of persons could be retrieved from the history list, the diary view list, or from all sources.<p></p>\n<strong>Returns:</strong>NSPerson[]\n"
-  remarks: "\n<h3>sourceType</h3><ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = NSHistory</li><li>Enum: 2 = DiaryViewList</li><li>Enum: 4 = Department</li><li>Enum: 7 = All</li></ul>\n"
+  remarks: "\n<p>See enum sourceType.</p>\n"
   syntax: 
     content: NSPerson[] GetColleaguesBySource(Integer sourceType, Integer count)
     parameters:

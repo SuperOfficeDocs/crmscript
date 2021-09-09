@@ -12,7 +12,7 @@ where=no start time,note,docin, docout
 
 **Returns:** Integer
 
-## Enum: address type
+## Enum: appointmentType
 
 * 0 = Unknown
 * 1 = inDiary

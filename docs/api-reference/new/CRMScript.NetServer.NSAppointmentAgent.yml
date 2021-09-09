@@ -124,7 +124,7 @@ items:
   fullName: CRMScript.NetServer.NSAppointmentAgent.Accept(Integer,Integer)
   type: Method
   summary: "\nAccepting an appointment invitation.\n"
-  remarks: "\n<h3>Enum updateMode</h3><ul><li>0 = Unknown</li><li>1 = OnlyThis</li><li>2 = ThisAndForward</li><li>9 = StopRecurrence</li></ul><p><strong>Returns:</strong> Updated NSAppointmentEntity</p>\n"
+  remarks: "\n<p>See enum updateMode.</p>\n"
   syntax: 
     content: Void Accept(Integer appointmentId, Integer updateMode)
     parameters:
@@ -135,7 +135,7 @@ items:
       type: CRMScript.Global.Integer
       description: 
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.NetServer.NSAppointmentEntity
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger appointmentId;\nInteger updateMode;\nagent.Accept(appointmentId, updateMode);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.AcceptRejected(Integer,Integer)
@@ -149,7 +149,7 @@ items:
   fullName: CRMScript.NetServer.NSAppointmentAgent.AcceptRejected(Integer,Integer)
   type: Method
   summary: "\nAccept that an invited participant has rejected your invitation or assignment.\n"
-  remarks: "\n<h3>Enum updateMode</h3><ul><li>0 = Unknown</li><li>1 = OnlyThis</li><li>2 = ThisAndForward</li><li>9 = StopRecurrence</li></ul>\n"
+  remarks: "\n<p>See enum updateMode.</p>\n"
   syntax: 
     content: NSAppointmentEntity AcceptRejected(Integer appointmentId, Integer updateMode)
     parameters:
@@ -174,7 +174,7 @@ items:
   fullName: CRMScript.NetServer.NSAppointmentAgent.AcceptWithEmailConfirmation(Integer,Integer)
   type: Method
   summary: "\nAccepting an appointment invitation and send an email confirmation to the meeting organizer.\n"
-  remarks: "\n<h3>Enum updateMode</h3><ul><li>0 = Unknown</li><li>1 = OnlyThis</li><li>2 = ThisAndForward</li><li>9 = StopRecurrence</li></ul>\n"
+  remarks: "\n<p>See enum updateMode.</p>\n"
   syntax: 
     content: Void AcceptWithEmailConfirmation(Integer appointmentId, Integer updateMode)
     parameters:
@@ -199,7 +199,7 @@ items:
   fullName: CRMScript.NetServer.NSAppointmentAgent.AcceptWithSmtpEmailConfirmation(Integer,Integer)
   type: Method
   summary: "\nAccepting an appointment invitation and send an email confirmation to the meeting organizer.\n"
-  remarks: "\n<h3>Enum updateMode</h3><ul><li>0 = Unknown</li><li>1 = OnlyThis</li><li>2 = ThisAndForward</li><li>9 = StopRecurrence</li></ul>\n"
+  remarks: "\n<p>See enum updateMode.</p>\n"
   syntax: 
     content: Void AcceptWithSmtpEmailConfirmation(Integer appointmentId, Integer updateMode, NSEMailConnectionInfo smtpEMailConnectionInfo)
     parameters:
@@ -224,7 +224,7 @@ items:
   fullName: CRMScript.NetServer.NSAppointmentAgent.AssignTo(Integer,Integer)
   type: Method
   summary: "\nAssigning an appointment to another person.<p></p>\n<strong>Returns:</strong>Updated NSAppointmentEntity\n"
-  remarks: "\n<h3>Enum updateMode</h3><ul><li>0 = Unknown</li><li>1 = OnlyThis</li><li>2 = ThisAndForward</li><li>9 = StopRecurrence</li></ul>\n"
+  remarks: "\n<p>See enum updateMode.</p>\n"
   syntax: 
     content: NSAppointmentEntity AssignTo(Integer appointmentId, ParticipantInfo participant, Integer updateMode)
     parameters:
@@ -330,7 +330,7 @@ items:
   fullName: CRMScript.NetServer.NSAppointmentAgent.CreateAndAccept(Integer,Integer)
   type: Method
   summary: "\nCreating an appointment from an emailItem invitation and accepting it.\n"
-  remarks: "\n<h3>Enum updateMode</h3><ul><li>0 = Unknown</li><li>1 = OnlyThis</li><li>2 = ThisAndForward</li></ul>\n"
+  remarks: "\n<p>See enum updateMode.</p>\n"
   syntax: 
     content: Void CreateAndAccept(Integer emailItemId, Integer updateMode)
     parameters:
@@ -354,7 +354,7 @@ items:
   fullName: CRMScript.NetServer.NSAppointmentAgent.CreateAndAcceptWithEmailConfirmation(Integer,Integer)
   type: Method
   summary: "\nCreating an appointment from an emailItem invitation and accepting it with email confirmation to the meeting organizer.\n"
-  remarks: "\n<h3>Enum updateMode</h3><ul><li>0 = Unknown</li><li>1 = OnlyThis</li><li>2 = ThisAndForward</li></ul>\n"
+  remarks: "\n<p>See enum updateMode.</p>\n"
   syntax: 
     content: Void CreateAndAcceptWithEmailConfirmation(Integer emailItemId, Integer updateMode)
     parameters:
@@ -420,7 +420,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.CreateDefaultAppointmentEntityByType(Integer)
   type: Method
   summary: "\nCreates an NSAppointmentEntity populated with the default values for the specific type.\n"
-  remarks: "\n<h3>Enum: AppntRecordTypes</h3><ul><li>0 = Unknown</li><li>1 = Appointment</li><li>2 = Document</li><li>3 = Email</li><li>4 = Fax</li><li>5 = Phone</li><li>6 = ToDo</li><li>7 = MailMergeDraft</li><li>8 = MailMergeFinal</li><li>9 = Report</li><li>10 = SaintAll</li></ul>\n"
+  remarks: "\n<p>See enum AppntRecordTypes.</p>\n"
   syntax: 
     content: NSAppointmentEntity CreateDefaultAppointmentEntityByType(Integer type)
     parameters:
@@ -442,7 +442,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.CreateDefaultAppointmentEntityByTypeAndAssociate(Integer,Integer)
   type: Method
   summary: "\nCreates an NSAppointmentEntity populated with the default values for the specific type and owner.\n"
-  remarks: "\n<h3>Enum: AppntRecordTypes</h3><ul><li>0 = Unknown</li><li>1 = Appointment</li><li>2 = Document</li><li>3 = Email</li><li>4 = Fax</li><li>5 = Phone</li><li>6 = ToDo</li><li>7 = MailMergeDraft</li><li>8 = MailMergeFinal</li><li>9 = Report</li><li>10 = SaintAll</li></ul>\n"
+  remarks: "\n<p>See enum AppntRecordTypes.</p>\n"
   syntax: 
     content: NSAppointmentEntity CreateDefaultAppointmentEntityByTypeAndAssociate(Integer type, Integer associateId)
     parameters:
@@ -651,7 +651,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.Delete(Integer,Integer,Bool)
   type: Method
   summary: "\nDeleting a booking\n"
-  remarks: "\n<h3>Enum updateMode</h3><ul><li>0 = Unknown</li><li>1 = OnlyThis</li><li>2 = ThisAndForward</li></ul>\n"
+  remarks: "\n<p>See enum updateMode.</p>\n"
   syntax: 
     content: Void Delete(Integer appointmentId, Integer updateMode, Bool sendEmailToParticipants, NSEMailConnectionInfo smtpEMailConnectionInfo, NSEMailConnectionInfo imapEMailConnectionInfo)
     parameters:
@@ -1130,7 +1130,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetContactAppointmentsByType(Integer,Integer,Integer)
   type: Method
   summary: "\nMethod that returns a specified number of appointments of a specific appointment type within a time range. The appointments belong to the contact specified. If the logged on user is not allowed to view this contacts appointments an exception is thrown.\n"
-  remarks: "\n<h3>Enum: appointment type</h3><ul><li>0 = Unknown</li><li>1 = inDiary</li><li>2 = inChecklist</li><li>3 = Note</li><li>4 = Document</li><li>5 = SavedReport</li><li>6 = BookingForDiary</li><li>7 = BookingForChecklist</li><li>8 = MergeDraft</li><li>9 = MergeFinal</li></ul><p><strong>Returns:</strong> NSAppointment[]</p>\n"
+  remarks: "\n<p>See enum appointmentType.</p>\n"
   syntax: 
     content: NSAppointment[] GetContactAppointmentsByType(Integer contactId, DateTime startTime, DateTime endTime, Integer count, Integer appointmentType)
     parameters:
@@ -1482,7 +1482,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetPersonAppointmentsByType(Integer,Bool,Integer,Integer)
   type: Method
   summary: "\nMethod that returns a specified number of appointments of a specific appointment type within a time range. The appointments belong to the person specified.\n"
-  remarks: "\n<h3>Enum: appointment type</h3><ul><li>0 = Unknown</li><li>1 = inDiary</li><li>2 = inChecklist</li><li>3 = Note</li><li>4 = Document</li><li>5 = SavedReport</li><li>6 = BookingForDiary</li><li>7 = BookingForChecklist</li><li>8 = MergeDraft</li><li>9 = MergeFinal</li></ul><p><strong>Returns:</strong> NSAppointment[]</p>\n"
+  remarks: "\n<p>See enum appointmentType.</p>\n"
   syntax: 
     content: NSAppointment[] GetPersonAppointmentsByType(Integer personId, Bool includeProjectAppointments, DateTime startTime, DateTime endTime, Integer count, Integer appointmentType)
     parameters:
@@ -1672,7 +1672,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetProjectAppointmentsByType(Integer,Integer,Integer)
   type: Method
   summary: "\nMethod that returns a specified number of appointments of a specific appointment type within a time range. The appointments belong to the project specified.\n"
-  remarks: "\n<h3>Enum: appointment type</h3><ul><li>0 = Unknown</li><li>1 = inDiary</li><li>2 = inChecklist</li><li>3 = Note</li><li>4 = Document</li><li>5 = SavedReport</li><li>6 = BookingForDiary</li><li>7 = BookingForChecklist</li><li>8 = MergeDraft</li><li>9 = MergeFinal</li></ul><p><strong>Returns:</strong> NSAppointment[]</p>\n"
+  remarks: "\n<p>See enum appointmentType.</p>\n"
   syntax: 
     content: NSAppointment[] GetProjectAppointmentsByType(Integer projectId, DateTime startTime, DateTime endTime, Integer count, Integer appointmentType)
     parameters:
@@ -1809,7 +1809,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetProjectMemberAppointmentsByType(Integer,Integer,Integer)
   type: Method
   summary: "\nMethod that returns a specified number of appointments of a specific appointment type within a time range. The appointments belong to the projects where the person specified is member.\n"
-  remarks: "\n<h3>Enum: appointment type</h3><ul><li>0 = Unknown</li><li>1 = inDiary</li><li>2 = inChecklist</li><li>3 = Note</li><li>4 = Document</li><li>5 = SavedReport</li><li>6 = BookingForDiary</li><li>7 = BookingForChecklist</li><li>8 = MergeDraft</li><li>9 = MergeFinal</li></ul><p><strong>Returns:</strong> NSAppointment[]</p>\n"
+  remarks: "\n<p>See enum appointmentType.</p>\n"
   syntax: 
     content: NSAppointment[] GetProjectMemberAppointmentsByType(Integer personId, DateTime startTime, DateTime endTime, Integer count, Integer appointmentType)
     parameters:
@@ -2038,7 +2038,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.Move(Integer,Integer)
   type: Method
   summary: "\nMoving a booking to another start time.\n"
-  remarks: "\n<h3>Enum updateMode</h3><ul><li>0 = Unknown</li><li>1 = OnlyThis</li><li>2 = ThisAndForward</li><li>9 = StopRecurrence</li></ul>\n"
+  remarks: "\n<p>See enum updateMode.</p>\n"
   syntax: 
     content: NSAppointmentEntity Move(Integer appointmentId, DateTime newStartTime, Integer updateMode)
     parameters:
@@ -2079,7 +2079,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.Reject(Integer,String,Integer)
   type: Method
   summary: "\nRejecting an appointment invitation\n"
-  remarks: "\n<h3>Enum updateMode</h3><ul><li>0 = Unknown</li><li>1 = OnlyThis</li><li>2 = ThisAndForward</li><li>9 = StopRecurrence</li></ul>\n"
+  remarks: "\n<p>See enum updateMode.</p>\n"
   syntax: 
     content: Void Reject(Integer appointmentId, String rejectReason, Integer updateMode)
     parameters:
@@ -2107,7 +2107,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.RejectWithEmailConfirmation(Integer,String,Integer)
   type: Method
   summary: "\nRejecting an appointment invitation and send an email confirmation to the meeting organizer.\n"
-  remarks: "\n<h3>Enum updateMode</h3><ul><li>0 = Unknown</li><li>1 = OnlyThis</li><li>2 = ThisAndForward</li><li>9 = StopRecurrence</li></ul>\n"
+  remarks: "\n<p>See enum updateMode.</p>\n"
   syntax: 
     content: Void RejectWithEmailConfirmation(Integer appointmentId, String rejectReason, Integer updateMode)
     parameters:
@@ -2135,7 +2135,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.RejectWithSmtpEmailConfirmation(Integer,String,Integer)
   type: Method
   summary: "\nRejecting an appointment invitation and send an email confirmation to the meeting organizer.\n"
-  remarks: "\n<h3>Enum updateMode</h3><ul><li>0 = Unknown</li><li>1 = OnlyThis</li><li>2 = ThisAndForward</li><li>9 = StopRecurrence</li></ul>\n"
+  remarks: "\n<p>See enum updateMode.</p>\n"
   syntax: 
     content: Void RejectWithSmtpEmailConfirmation(Integer appointmentId, String rejectReason, Integer updateMode, NSEMailConnectionInfo smtpEMailConnectionInfo)
     parameters:
@@ -2286,7 +2286,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.SetActivityStatus(String[],Integer)
   type: Method
   summary: "\nSets the completed status for an array of activities. The string activityIdentifier param may contain of a mix of appointment_id, sale_id, document_id and todo_id. The changes are saved immediately. If an invalid id is passed in (nonexistent record), no changes will be made. If there is no write access to the record being changed, a Sentry exception will be thrown in the usual manner.\n"
-  remarks: "\n<h3>Enum: activityStatus</h3><ul><li>0 = Unknown</li><li>1 = NotStarted</li><li>2 = Started</li></ul>\n"
+  remarks: "\n<p>See enum activityStatus.</p>\n"
   syntax: 
     content: Void SetActivityStatus(String[] activityIdentifier, Integer activityStatus)
     parameters:
@@ -2310,7 +2310,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSAppointmentAgent.SetSeen(Integer,Integer)
   type: Method
   summary: "\nSets an appointment invitation to seen.\n"
-  remarks: "\n<h3>Enum updateMode</h3><ul><li>0 = Unknown</li><li>1 = OnlyThis</li><li>2 = ThisAndForward</li></ul>\n"
+  remarks: "\n<p>See enum updateMode.</p>\n"
   syntax: 
     content: Void SetSeen(Integer appointmentId, Integer updateMode)
     parameters:
@@ -2533,18 +2533,18 @@ references:
   name: Integer
   nameWithType: Integer
   fullName: CRMScript.Global.Integer
-- uid: CRMScript.Global.Void
-  commentId: T:CRMScript.Global.Void
-  isExternal: true
-  name: Void
-  nameWithType: Void
-  fullName: CRMScript.Global.Void
 - uid: CRMScript.NetServer.NSAppointmentEntity
   commentId: T:CRMScript.NetServer.NSAppointmentEntity
   isExternal: true
   name: NSAppointmentEntity
   nameWithType: NSAppointmentEntity
   fullName: CRMScript.NetServer.NSAppointmentEntity
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void
 - uid: CRMScript.NetServer.NSRecurrenceInfo
   commentId: T:CRMScript.NetServer.NSRecurrenceInfo
   isExternal: true

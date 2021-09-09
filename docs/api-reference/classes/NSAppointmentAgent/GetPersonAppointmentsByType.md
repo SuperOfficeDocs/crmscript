@@ -19,7 +19,7 @@ Method that returns a specified number of appointments of a specific appointment
 * **count** The maximum number of appointments that should be returned. -1 means no count restrictions.
 * **appointmentType** The appointment type, e.g. inDiary, inChecklist etc.
 
-### Enum: appointment type
+### Enum: appointmentType
 
 * 0 = Unknown
 * 1 = inDiary

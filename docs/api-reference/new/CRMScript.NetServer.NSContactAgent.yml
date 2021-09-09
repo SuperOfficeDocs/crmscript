@@ -408,7 +408,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSContactAgent.GetMyActiveContacts(Integer[],Integer)
   type: Method
   summary: "\nReturns the contacts where there has been activity since activityStartTime. If activityStartTime is larger than the current date, all contacts with activity since the last log-out are returned. The result set can be filtered by category and action type.\n"
-  remarks: "\n<h3>Enum: actionType</h3><ul><li>0 = Unknown</li><li>1 = Created</li><li>2 = Updated</li><li>4 = NewActivity</li><li>8 = ActivityCompleted</li><li>16 = PersonAdded</li><li>32 = PersonUpdated</li><li>64 = DocumentAdded</li><li>127 = All</li></ul>\n"
+  remarks: "\n<p>See enum actionType.</p>\n"
   syntax: 
     content: NSContactActivity[] GetMyActiveContacts(DateTime activityStartTime, Integer[] contactCategories, Integer actionType)
     parameters:
@@ -490,7 +490,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSContactAgent.GetMyRecentContacts(Integer)
   type: Method
   summary: "\nMethod that returns a set of initial contacts. This could be the contacts in a favorites selection, the history list, the diary, or from all sources. If retrieved from the diary it will get appointments for the current and the next day.\n"
-  remarks: "\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = History</li><li>Enum: 2 = Diary</li><li>Enum: 4 = Favorites</li><li>Enum: 7 = All</li></ul>\n"
+  remarks: "\n<p>See enum sourceType.</p>\n"
   syntax: 
     content: NSContact[] GetMyRecentContacts(Integer sourceType)
     parameters:
@@ -668,7 +668,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSContactAgent.SaveQuoteVersionAddress(Integer,Integer,Integer)
   type: Method
   summary: "\nSave a custom quote version address.\n"
-  remarks: "\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = ContactPostalAddress</li><li>Enum: 2 = ContactStreetAddress</li><li>Enum: 16387 = PersonPrivateAddress</li><li>Enum: 8196 = QuoteBillingAddress</li><li>Enum: 8197 = QuoteShippingAddress</li></ul>\n"
+  remarks: "\n<p>See enum countryId.</p>\n"
   syntax: 
     content: NSAddress SaveQuoteVersionAddress(Integer quoteVersionId, NSAddress address, Integer addressType, Integer countryId)
     parameters:

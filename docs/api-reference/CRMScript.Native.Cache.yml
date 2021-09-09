@@ -3,11 +3,10 @@ items:
 - uid: CRMScript.Native.Cache
   commentId: T:CRMScript.Native.Cache
   id: Cache
-  so.intellisense: Void.Cache
   langs:
   - crmscript
   children:
-  - CRMScript.Native.Cache.#ctor()
+  - CRMScript.Native.Cache.#ctor
   - CRMScript.Native.Cache.eof()
   - CRMScript.Native.Cache.first()
   - CRMScript.Native.Cache.getData(String)
@@ -21,17 +20,17 @@ items:
   type: Class
   summary: 
   example: 
-- uid: CRMScript.Native.Cache.#ctor()
-  commentId: M:CRMScript.Native.Cache.#ctor()
-  id: '#ctor()'
+- uid: CRMScript.Native.Cache.#ctor
+  commentId: M:CRMScript.Native.Cache.#ctor
+  id: '#ctor'
   so.intellisense: Void.Cache
   langs:
   - crmscript
-  name: '#ctor()'
-  nameWithType: Cache.#ctor()
-  fullName: CRMScript.Native.Cache.#ctor()
+  name: '#ctor'
+  nameWithType: Cache.#ctor
+  fullName: CRMScript.Native.Cache.#ctor
   type: Constructor
-  summary: 
+  summary: "\nInitializes a new instance of the Cache class.\n"
   remarks: 
   syntax: 
     content: Cache
@@ -46,11 +45,14 @@ items:
   nameWithType: Cache.eof()
   fullName: CRMScript.Native.Cache.eof()
   type: Method
-  summary: "\nThis function checks if there are no more fields in the result. The function returns true if it is at end of file/there are no more fields to iterate through.<p></p>\nA common usage is in the condition section in a for loop.\n"
-  remarks: 
+  summary: "\nChecks if there are no more fields in the result.\n"
+  remarks: "\nA common usage is in the condition section in a for loop.\n"
   syntax: 
-    content: eof()
-    parameters:
+    content: Bool eof()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: true if it is at end of file or there are no more fields to iterate through; otherwise, false.
   example: 
 - uid: CRMScript.Native.Cache.first()
   commentId: M:CRMScript.Native.Cache.first()
@@ -62,11 +64,14 @@ items:
   nameWithType: Cache.first()
   fullName: CRMScript.Native.Cache.first()
   type: Method
-  summary: "\nSets the iterator variable to the first field in the fieldset.<p></p>\nReturns false if the fieldset is empty, else false.\n"
+  summary: "\nSets the iterator variable to the first field in the field set.\n"
   remarks: 
   syntax: 
-    content: first()
-    parameters:
+    content: Bool first()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: false if the field set is empty; otherwise, true.
   example: 
 - uid: CRMScript.Native.Cache.getData(String)
   commentId: M:CRMScript.Native.Cache.getData(String)
@@ -81,11 +86,14 @@ items:
   summary: "\nThis function will return data from a cached table.\n"
   remarks: 
   syntax: 
-    content: getData(String p_0)
+    content: String getData(String tableId)
     parameters:
-    - id: p_0
+    - id: tableId
       type: CRMScript.Global.String
-      description: 
+      description: The table to return data from.
+    return:
+      type: CRMScript.Global.String
+      description: Data from the cached table specified in tableId.
   example: 
 - uid: CRMScript.Native.Cache.getDataSubset(String,String,String)
   commentId: M:CRMScript.Native.Cache.getDataSubset(String,String,String)
@@ -97,20 +105,23 @@ items:
   nameWithType: Cache.getDataSubset(String,String,String)
   fullName: CRMScript.Native.Cache.getDataSubset(String,String,String)
   type: Method
-  summary: "\nThis function will return a subset of the data for a cached table based on a filter, where a field must have a given value.\n"
+  summary: "\nReturns a subset of the data for a cached table based on a filter, where a field must have a given value.\n"
   remarks: 
   syntax: 
-    content: getDataSubset(String p_0, String p_1, String p_2)
+    content: getDataSubset(String tableId, String filterField, String filterValue)
     parameters:
-    - id: p_0
+    - id: tableId
       type: CRMScript.Global.String
-      description: 
-    - id: p_1
+      description: The table to return.
+    - id: filterField
       type: CRMScript.Global.String
-      description: 
-    - id: p_2
+      description: The field to use for filtering.
+    - id: filterValue
       type: CRMScript.Global.String
-      description: 
+      description: The value to compare filterField with to include a row.
+    return:
+      type: CRMScript.Global.String
+      description: The rows from the table where filterField = filterValue.
   example: 
 - uid: CRMScript.Native.Cache.getRow()
   commentId: M:CRMScript.Native.Cache.getRow()
@@ -125,8 +136,11 @@ items:
   summary: "\nReturns a row of fields.\n"
   remarks: 
   syntax: 
-    content: getRow()
-    parameters:
+    content: Map getRow()
+    parameters: []
+    return:
+      type: CRMScript.Global.Map
+      description: A row of fields.
   example: 
 - uid: CRMScript.Native.Cache.next()
   commentId: M:CRMScript.Native.Cache.next()
@@ -138,11 +152,14 @@ items:
   nameWithType: Cache.next()
   fullName: CRMScript.Native.Cache.next()
   type: Method
-  summary: "\nSets the iterator to the next field.<p></p>\nReturns false if at end of file or the fieldset is empty, else true.\n"
+  summary: "\nSets the iterator to the next field.\n"
   remarks: 
   syntax: 
-    content: next()
-    parameters:
+    content: Bool next()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: false if at end of file or the field set is empty; otherwise, true.
   example: 
 - uid: CRMScript.Native.Cache.sort(String,Bool)
   commentId: M:CRMScript.Native.Cache.sort(String,Bool)
@@ -157,14 +174,14 @@ items:
   summary: "\nSorts the cached data by given field in given order.\n"
   remarks: 
   syntax: 
-    content: sort(String p_0, Bool p_1)
+    content: sort(String field, Bool order)
     parameters:
-    - id: p_0
+    - id: field
       type: CRMScript.Global.String
-      description: 
-    - id: p_1
+      description: The field to sort by
+    - id: order
       type: CRMScript.Global.Bool
-      description: 
+      description: false will sort in an ascending order, true in a descending order.
   example: 
 references:
 - uid: CRMScript.Native.Cache
@@ -185,3 +202,9 @@ references:
   name: Bool
   nameWithType: Bool
   fullName: CRMScript.Global.Bool
+- uid: CRMScript.Global.Map
+  commentId: T:CRMScript.Global.Map
+  isExternal: true
+  name: Map
+  nameWithType: Map
+  fullName: CRMScript.Global.Map

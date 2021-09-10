@@ -3,36 +3,35 @@ items:
 - uid: CRMScript.Native.DbConverter
   commentId: T:CRMScript.Native.DbConverter
   id: DbConverter
-  so.intellisense: Void.DbConverter
   langs:
   - crmscript
   children:
-  - CRMScript.Native.DbConverter.#ctor()
+  - CRMScript.Native.DbConverter.#ctor
   - CRMScript.Native.DbConverter.eof()
   - CRMScript.Native.DbConverter.getRow()
   - CRMScript.Native.DbConverter.next()
   - CRMScript.Native.DbConverter.readBatch(String,Integer,Integer,Integer,Integer)
   - CRMScript.Native.DbConverter.setSourceConnection(String,String,String,String,String)
-  - CRMScript.Native.DbConverter.update(String)
-  - CRMScript.Native.DbConverter.write(String)
+  - CRMScript.Native.DbConverter.update(String,Map,Map)
+  - CRMScript.Native.DbConverter.write(String,Map)
   name: DbConverter
   nameWithType: DbConverter
   fullName: CRMScript.Native.DbConverter
   type: Class
-  summary: 
+  summary: "\nThis class is only allowed in a ConverterApp context. Any attempts of using this in any other contexts will yield an exception.\n"
   example: 
-- uid: CRMScript.Native.DbConverter.#ctor()
-  commentId: M:CRMScript.Native.DbConverter.#ctor()
-  id: '#ctor()'
+- uid: CRMScript.Native.DbConverter.#ctor
+  commentId: M:CRMScript.Native.DbConverter.#ctor
+  id: '#ctor'
   so.intellisense: Void.DbConverter
   langs:
   - crmscript
-  name: '#ctor()'
-  nameWithType: DbConverter.#ctor()
-  fullName: CRMScript.Native.DbConverter.#ctor()
+  name: '#ctor'
+  nameWithType: DbConverter.#ctor
+  fullName: CRMScript.Native.DbConverter.#ctor
   type: Constructor
   summary: 
-  remarks: 
+  remarks: "\nThis class is only allowed in a ConverterApp context. Any attempts of using this in any other contexts will yield an exception.\n"
   syntax: 
     content: DbConverter
   example: 
@@ -46,11 +45,14 @@ items:
   nameWithType: DbConverter.eof()
   fullName: CRMScript.Native.DbConverter.eof()
   type: Method
-  summary: "\nThis function returns true if the iterator has passed the last element, and thus is at the end of the file.<p></p>\nThe function is typically used as a condition in a for loop to iterate through all remaining elements.\n"
-  remarks: 
+  summary: "\nReturns true if the iterator has passed the last element, and thus is at the end of the file.\n"
+  remarks: "\nTypically used as a condition in a for loop to iterate through all remaining elements.\n"
   syntax: 
-    content: eof()
-    parameters:
+    content: Bool eof()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: true true if the iterator has passed the last element; otherwise, false.
   example: 
 - uid: CRMScript.Native.DbConverter.getRow()
   commentId: M:CRMScript.Native.DbConverter.getRow()
@@ -65,8 +67,11 @@ items:
   summary: "\nReturns entire row of fields.\n"
   remarks: 
   syntax: 
-    content: getRow()
-    parameters:
+    content: Map getRow()
+    parameters: []
+    return:
+      type: CRMScript.Global.Map
+      description:
   example: 
 - uid: CRMScript.Native.DbConverter.next()
   commentId: M:CRMScript.Native.DbConverter.next()
@@ -78,11 +83,14 @@ items:
   nameWithType: DbConverter.next()
   fullName: CRMScript.Native.DbConverter.next()
   type: Method
-  summary: "\nThis function points the iterator at the next element.<p></p>\nThe function returns false if the iterator is at en of file, true otherwise.\n"
+  summary: "\nMoves the iterator to the next element.\n"
   remarks: 
   syntax: 
-    content: next()
-    parameters:
+    content: Bool next()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: false if the iterator is at en of file; otherwise, true.
   example: 
 - uid: CRMScript.Native.DbConverter.readBatch(String,Integer,Integer,Integer,Integer)
   commentId: M:CRMScript.Native.DbConverter.readBatch(String,Integer,Integer,Integer,Integer)
@@ -97,7 +105,7 @@ items:
   summary: 
   remarks: 
   syntax: 
-    content: readBatch(String p_0, Integer p_1, Integer p_2, Integer p_3, Integer p_4)
+    content: Void readBatch(String p_0, Integer p_1, Integer p_2, Integer p_3, Integer p_4)
     parameters:
     - id: p_0
       type: CRMScript.Global.String
@@ -114,6 +122,8 @@ items:
     - id: p_4
       type: CRMScript.Global.Integer
       description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.Native.DbConverter.setSourceConnection(String,String,String,String,String)
   commentId: M:CRMScript.Native.DbConverter.setSourceConnection(String,String,String,String,String)
@@ -128,7 +138,7 @@ items:
   summary: 
   remarks: 
   syntax: 
-    content: setSourceConnection(String p_0, String p_1, String p_2, String p_3, String p_4)
+    content: Void setSourceConnection(String p_0, String p_1, String p_2, String p_3, String p_4)
     parameters:
     - id: p_0
       type: CRMScript.Global.String
@@ -145,44 +155,59 @@ items:
     - id: p_4
       type: CRMScript.Global.String
       description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
-- uid: CRMScript.Native.DbConverter.update(String)
-  commentId: M:CRMScript.Native.DbConverter.update(String)
-  id: 'update(String)'
+- uid: CRMScript.Native.DbConverter.update(String,Map,Map)
+  commentId: M:CRMScript.Native.DbConverter.update(String,Map,Map)
+  id: 'update(String,Map,Map)'
   so.intellisense: DbConverter.update
   langs:
   - crmscript
-  name: 'update(String)'
-  nameWithType: DbConverter.update(String)
-  fullName: CRMScript.Native.DbConverter.update(String)
+  name: 'update(String,Map,Map)'
+  nameWithType: DbConverter.update(String,Map,Map)
+  fullName: CRMScript.Native.DbConverter.update(String,Map,Map)
   type: Method
-  summary: "\nThis function will update a table row, that's already integrated with CRM. It only updates rows that aren't integrated.\n"
+  summary: "\nThis function will update a table row that's already integrated with CRM. It only writes rows that aren't integrated.\n"
   remarks: 
   syntax: 
-    content: update(String p_0, Map p_1, Map p_2)
+    content: Void update(String table, Map row, Map fieldMapping)
     parameters:
-    - id: p_0
+    - id: table
       type: CRMScript.Global.String
+      description:
+    - id: row
+      type: CRMScript.Global.Map
+      description:
+    - id: fieldMapping
+      type: CRMScript.Global.Map
       description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
-- uid: CRMScript.Native.DbConverter.write(String)
-  commentId: M:CRMScript.Native.DbConverter.write(String)
-  id: 'write(String)'
+- uid: CRMScript.Native.DbConverter.write(String,Map)
+  commentId: M:CRMScript.Native.DbConverter.rite(String,Map)
+  id: 'rite(String,Map)'
   so.intellisense: DbConverter.write
   langs:
   - crmscript
-  name: 'write(String)'
-  nameWithType: DbConverter.write(String)
-  fullName: CRMScript.Native.DbConverter.write(String)
+  name: 'rite(String,Map)'
+  nameWithType: DbConverter.rite(String,Map)
+  fullName: CRMScript.Native.DbConverter.write(String,Map)
   type: Method
-  summary: "\nThis function will write a table row.\n"
+  summary: "\nWrites a table row.\n"
   remarks: 
   syntax: 
-    content: write(String p_0, Map p_1)
+    content: Void write(String table, Map row)
     parameters:
-    - id: p_0
+    - id: table
       type: CRMScript.Global.String
-      description: 
+      description: The table.
+    - id: row
+      type: CRMScript.Global.Map
+      description: The row data.
+    return:
+      type: CRMScript.Global.Void
   example: 
 references:
 - uid: CRMScript.Native.DbConverter
@@ -203,3 +228,21 @@ references:
   name: Integer
   nameWithType: Integer
   fullName: CRMScript.Global.Integer
+- uid: CRMScript.Global.Bool
+  commentId: T:CRMScript.Global.Bool
+  isExternal: true
+  name: Bool
+  nameWithType: Bool
+  fullName: CRMScript.Global.Bool
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void
+- uid: CRMScript.Global.Map
+  commentId: T:CRMScript.Global.Map
+  isExternal: true
+  name: Map
+  nameWithType: Map
+  fullName: CRMScript.Global.Map

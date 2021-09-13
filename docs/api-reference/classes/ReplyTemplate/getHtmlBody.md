@@ -8,18 +8,13 @@ so.topic: reference
 
 # ReplyTemplate.getHtmlBody(Integer language)
 
-Returns the Reply template html body, in the language given by language
+Returns the Reply template html body, in the language given by language. If language does not exists it will return default language.
 
 ## Parameters
 
- - language as an integer, see below
+ - language as an integer
 
 ## Languages
 
-Norwegian = 0,
-English = 1,
-German = 2,
-Swedish = 3,
-Danish = 4,
-Dutch = 5,
-
+> [!NOTE]
+> Supported languages depends on configuration.

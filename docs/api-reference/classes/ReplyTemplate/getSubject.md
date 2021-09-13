@@ -8,18 +8,13 @@ so.topic: reference
 
 # ReplyTemplate.getSubject(Integer language)
 
-Returns the Reply template subject, in the language given by language. The reply template subject is in plain text only.
+Returns the Reply template subject, in the language given by language. The reply template subject is in plain text only. If language does not exists it will return default language.
 
 ## Parameters
 
- - language as an integer, see below
+ - language as an integer
 
 ## Languages
 
-Norwegian = 0,
-English = 1,
-German = 2,
-Swedish = 3,
-Danish = 4,
-Dutch = 5,
-
+> [!NOTE]
+> Supported languages depends on configuration.

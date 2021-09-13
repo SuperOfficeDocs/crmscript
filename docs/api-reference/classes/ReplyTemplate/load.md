@@ -6,7 +6,7 @@ keywords: load(Integer)
 so.topic: reference
 ---
 
-# ReplyTemplate.load(Integer id)
+# load(Integer id)
 
 This function loads a reply template to the object.
 

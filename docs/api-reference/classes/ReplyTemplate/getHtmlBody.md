@@ -6,7 +6,7 @@ keywords: getHtmlBody(Integer)
 so.topic: reference
 ---
 
-# getHtmlBody(Integer language)
+# String getHtmlBody(Integer language)
 
 Returns the Reply template html body, in the language given by language. If language does not exists it will return default language.
 

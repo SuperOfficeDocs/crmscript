@@ -6,7 +6,7 @@ keywords: getPlainBody(Integer)
 so.topic: reference
 ---
 
-# getPlainBody(Integer language)
+# String getPlainBody(Integer language)
 
 Returns the Reply template plain text body, in the language given by language. If language does not exists it will return default language.
 

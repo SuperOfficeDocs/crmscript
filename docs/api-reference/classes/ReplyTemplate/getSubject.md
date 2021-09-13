@@ -6,7 +6,7 @@ keywords: getSubject(Integer)
 so.topic: reference
 ---
 
-# getSubject(Integer language)
+# String getSubject(Integer language)
 
 Returns the Reply template subject, in the language given by language. The reply template subject is in plain text only. If language does not exists it will return default language.
 

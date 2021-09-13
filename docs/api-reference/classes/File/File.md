@@ -6,14 +6,16 @@ sortOrder: 340
 so.topic: reference
 ---
 
+# File
+
+>[!Note]
+> This class is not available in CRM Online.
+
 This represents a file.
 
 Use open before you call any other methods.
 
-
-
 ## Example
-
 
     File f;
     

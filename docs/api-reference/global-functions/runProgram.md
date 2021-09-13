@@ -1,6 +1,6 @@
 ---
 uid: crmscript_global_runprogram
-title: runProgram
+title: String runProgram()
 description: CRMScript function that executes a command and returns the output (stdout)
 intellisense: Void.runProgram
 langref: 1
@@ -9,6 +9,9 @@ so.topic: reference
 ---
 
 # String runProgram()
+
+>[!Note]
+> This method is not available in CRM Online.
 
 Executes the program (given command) and returns what was sent to stdout. You can optionally pass the codepage used.
 

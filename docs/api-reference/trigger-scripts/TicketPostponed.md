@@ -11,15 +11,23 @@ keywords:
 Runs when a ticket is saved and the status changed to postponed.
 
 ## Input values
+|Variable|Description|
+|---|---|
+| `entryId` | request ID|
+| `ticketId` | request ID|
+| `personId` | customer (person) ID|
+| `contactId` | company (contact) ID|
+| `ticketStatus.old` | old value|
+| `ticketStatus.new` | new value|
 
-* `entryId` = request ID
-* `ticketId` = request ID
-* `personId` = customer (person) ID
-* `contactId` = company (contact) ID
-* `ticketStatus.old` = old value
-* `ticketStatus.new` = new value
+## Ticket status
 
-[!include[ALT](./includes/ticket-status.md)]
+* Unknown = 0,
+* Active = 1 - Request is currently active
+* Closed = 2, Request has been closed
+* Postponed = 3, Request has been postponed
+* Deleted = 4, Request has been deleted
+* Merged = 5, Request has been merged with another request
 
 ## Sample code
 

@@ -3,11 +3,10 @@ items:
 - uid: CRMScript.Native.ExtraTableInfo
   commentId: T:CRMScript.Native.ExtraTableInfo
   id: ExtraTableInfo
-  so.intellisense: Void.ExtraTableInfo
   langs:
   - crmscript
   children:
-  - CRMScript.Native.ExtraTableInfo.#ctor()
+  - CRMScript.Native.ExtraTableInfo.#ctor
   - CRMScript.Native.ExtraTableInfo.getFlags()
   - CRMScript.Native.ExtraTableInfo.getId()
   - CRMScript.Native.ExtraTableInfo.getName()
@@ -19,17 +18,17 @@ items:
   summary: "\nWith this class you can retrieve meta information about an extra table. The class will only retrieve information, thus it is not possible to change an extra table from this class.\n"
   example: 
   - "\n<pre><code>ExtraTableInfo e;\n\ne.load(&quot;y_mytable&quot;);</code></pre>\n"
-- uid: CRMScript.Native.ExtraTableInfo.#ctor()
-  commentId: M:CRMScript.Native.ExtraTableInfo.#ctor()
-  id: '#ctor()'
+- uid: CRMScript.Native.ExtraTableInfo.#ctor
+  commentId: M:CRMScript.Native.ExtraTableInfo.#ctor
+  id: '#ctor'
   so.intellisense: Void.ExtraTableInfo
   langs:
   - crmscript
-  name: '#ctor()'
-  nameWithType: ExtraTableInfo.#ctor()
-  fullName: CRMScript.Native.ExtraTableInfo.#ctor()
+  name: '#ctor'
+  nameWithType: ExtraTableInfo.#ctor
+  fullName: CRMScript.Native.ExtraTableInfo.#ctor
   type: Constructor
-  summary: "\nWith this class you can retrieve meta information about an extra table. The class will only retrieve information, thus it is not possible to change an extra table from this class.\n"
+  summary: "\nInitializes a new instance of the ExtraTableInfo class.\n"
   remarks: 
   syntax: 
     content: ExtraTableInfo
@@ -45,11 +44,14 @@ items:
   nameWithType: ExtraTableInfo.getFlags()
   fullName: CRMScript.Native.ExtraTableInfo.getFlags()
   type: Method
-  summary: "\nWill return the flags for this extra table.\n"
-  remarks: 
+  summary: "\nReturns the flags for this extra table.\n"
+  remarks: "\nAvailable flags: FlagHidden = 0, FlagDeleted = 8\n"
   syntax: 
-    content: getFlags()
-    parameters:
+    content: Integer getFlags()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: The flags for this table.
   example: 
 - uid: CRMScript.Native.ExtraTableInfo.getId()
   commentId: M:CRMScript.Native.ExtraTableInfo.getId()
@@ -61,11 +63,14 @@ items:
   nameWithType: ExtraTableInfo.getId()
   fullName: CRMScript.Native.ExtraTableInfo.getId()
   type: Method
-  summary: "\nThis function returns the id of the extratable as an Integer\n"
+  summary: "\nReturns the ID of the extra table.\n"
   remarks: 
   syntax: 
-    content: getId()
-    parameters:
+    content: Integer getId()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: The ID of the extra table
   example: 
 - uid: CRMScript.Native.ExtraTableInfo.getName()
   commentId: M:CRMScript.Native.ExtraTableInfo.getName()
@@ -77,11 +82,14 @@ items:
   nameWithType: ExtraTableInfo.getName()
   fullName: CRMScript.Native.ExtraTableInfo.getName()
   type: Method
-  summary: "\nThis method will return the textual name of the extra table.\n"
+  summary: "\nReturn the textual name of the extra table.\n"
   remarks: 
   syntax: 
-    content: getName()
-    parameters:
+    content: String getName()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: The textual name of the extra table
   example: 
 - uid: CRMScript.Native.ExtraTableInfo.load(String)
   commentId: M:CRMScript.Native.ExtraTableInfo.load(String)
@@ -93,14 +101,16 @@ items:
   nameWithType: ExtraTableInfo.load(String)
   fullName: CRMScript.Native.ExtraTableInfo.load(String)
   type: Method
-  summary: "\nThis will load the extra table with the given table name (the database name, for example y_mytable).\n"
+  summary: "\nLoad the extra table with the given table name.\n"
   remarks: 
   syntax: 
-    content: load(String tableName)
+    content: Void load(String tableName)
     parameters:
     - id: tableName
       type: CRMScript.Global.String
-      description: 
+      description: Name of the table (for example y_mytable)
+    return:
+      type: CRMScript.Global.Void
   example: 
 references:
 - uid: CRMScript.Native.ExtraTableInfo
@@ -115,3 +125,21 @@ references:
   name: String
   nameWithType: String
   fullName: CRMScript.Global.String
+- uid: CRMScript.Global.Integer
+  commentId: T:CRMScript.Global.Integer
+  isExternal: true
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Global.Integer
+- uid: CRMScript.Global.Bool
+  commentId: T:CRMScript.Global.Bool
+  isExternal: true
+  name: Bool
+  nameWithType: Bool
+  fullName: CRMScript.Global.Bool
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void

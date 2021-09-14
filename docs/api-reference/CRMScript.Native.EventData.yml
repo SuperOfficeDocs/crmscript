@@ -7,6 +7,7 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.Native.EventData.#ctor
   - CRMScript.Native.EventData.getBlockExecution()
   - CRMScript.Native.EventData.getInputValue(String)
   - CRMScript.Native.EventData.getInputValues()
@@ -25,9 +26,24 @@ items:
   nameWithType: EventData
   fullName: CRMScript.Native.EventData
   type: Class
-  summary: "\n<strong>EventData</strong>gives you access to contextual information in an<strong>event handler</strong>. For example, the name of a created company or the amount of a sale.<p></p>\nYou can also check<code>EventData</code>properties after the event handler has run, to for example display a message or prevent an entity from being saved.\n"
+  summary: "\nGives you access to contextual information in an event handler. For example, the name of a created company or the amount of a sale.<p></p>\nYou can also check EventData properties after the event handler has run, to for example display a message or prevent an entity from being saved.\n"
   example: 
-  - "\n<pre><code>EventData ed = getEventData();</code></pre><pre><code>Map sourceIds;\nsourceIds.insert(&quot;11&quot;, &quot;&quot;);\nsourceIds.insert(&quot;128&quot;, &quot;&quot;);\nsourceIds.insert(&quot;135&quot;, &quot;&quot;);\n\nif (sourceIds.exists(sourceId.toString())){\n  // ...\n}</code></pre>Check if a sale has a high enough value. Return a message and block the sale for values &lt; 100. Set for the event &quot;Before save sale&quot;.<p></p>\n<pre><code>EventData ed = getEventData();\n\nif (ed.getInputValue(&quot;SaleEntity.Amount&quot;).toInteger() &lt; 100)\n{\n  ed.setBlockExecution(true); // Prevents save\n  ed.setMessage(&quot;Amount too low&quot;);\n}</code></pre>\n"
+  - "\n<pre><code>EventData ed = getEventData();\n\nMap sourceIds;\nsourceIds.insert(&quot;11&quot;, &quot;&quot;);\nsourceIds.insert(&quot;128&quot;, &quot;&quot;);\nsourceIds.insert(&quot;135&quot;, &quot;&quot;);\n\nif (sourceIds.exists(sourceId.toString())){\n  // ...\n}</code></pre>Check if a sale has a high enough value. Return a message and block the sale for values &lt; 100. Set for the event &quot;Before save sale&quot;.<p></p>\n<pre><code>EventData ed = getEventData();\n\nif (ed.getInputValue(&quot;SaleEntity.Amount&quot;).toInteger() &lt; 100)\n{\n  ed.setBlockExecution(true); // Prevents save\n  ed.setMessage(&quot;Amount too low&quot;);\n}</code></pre>\n"
+- uid: CRMScript.Native.EventData.#ctor
+  commentId: M:CRMScript.Native.EventData.#ctor
+  id: '#ctor'
+  so.intellisense: Void.EventData
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: EventData.#ctor
+  fullName: CRMScript.Native.EventData.#ctor
+  type: Constructor
+  summary: "\nInitializes a new instance of the EventData class.\n"
+  remarks: 
+  syntax: 
+    content: EventData
+  example: 
 - uid: CRMScript.Native.EventData.getBlockExecution()
   commentId: M:CRMScript.Native.EventData.getBlockExecution()
   id: 'getBlockExecution()'
@@ -38,13 +54,14 @@ items:
   nameWithType: EventData.getBlockExecution()
   fullName: CRMScript.Native.EventData.getBlockExecution()
   type: Method
-  summary: "\nUsed to check whether the current event action has been blocked.\n"
+  summary: "\nChecks whether the current event action has been blocked.\n"
   remarks: 
   syntax: 
     content: Bool getBlockExecution()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Bool
+      description:
   example: 
 - uid: CRMScript.Native.EventData.getInputValue(String)
   commentId: M:CRMScript.Native.EventData.getInputValue(String)
@@ -56,17 +73,17 @@ items:
   nameWithType: EventData.getInputValue(String)
   fullName: CRMScript.Native.EventData.getInputValue(String)
   type: Method
-  summary: "\nThis method returns the value of a specified input field (for example &quot;ContactEntity.Department&quot;).<p></p>\n<pre><code>EventData ed = getEventData();\nInteger projectId = ed.getInputValue(&quot;ProjectEntity.ProjectId&quot;).toInteger();\nBool isCompleted = ed.getInputValue(&quot;ProjectEntity.Completed&quot;).toBool();</code></pre>[!TIP]
-Use<strong>Trace</strong>to discover the name of the input value you want to fetch.\n"
-  remarks: 
+  summary: "\nReturns the value of a specified input field (for example &quot;ContactEntity.Department&quot;).\n"
+  remarks: "\nUse Trace to discover the name of the input value you want to fetch.\n"
   syntax: 
-    content: String getInputValue(String inputValue)
+    content: String getInputValue(String field)
     parameters:
-    - id: inputValue
+    - id: field
       type: CRMScript.Global.String
       description: 
     return:
       type: CRMScript.Global.String
+      description: The value of the field.
   example: 
   - "\n<pre><code>EventData ed = getEventData();\nInteger projectId = ed.getInputValue(&quot;ProjectEntity.ProjectId&quot;).toInteger();\nBool isCompleted = ed.getInputValue(&quot;ProjectEntity.Completed&quot;).toBool();</code></pre><pre><code>EventData ed = getEventData();\n\nString listId = ed.getInputValue(&quot;SaleEntity.UserDefinedFields.SuperOffice:1&quot;).after(&quot;:&quot;).before(&quot;]&quot;);\nif(listId != &quot;&quot;){\n  NSMDOAgent agent;\n  NSMDOListItem item = agent.GetListItem(&quot;udlist99&quot;, listId.toInteger());\n  String listName = item.GetName();\n}</code></pre>\n"
 - uid: CRMScript.Native.EventData.getInputValues()
@@ -79,13 +96,14 @@ Use<strong>Trace</strong>to discover the name of the input value you want to fet
   nameWithType: EventData.getInputValues()
   fullName: CRMScript.Native.EventData.getInputValues()
   type: Method
-  summary: "\nThis method returns a Map containing all input values of the<code>EventData</code>object.<p></p>\n<pre><code>EventData ed = getEventData();\nMap m = ed.getInputValues();\n\nm.first();\nwhile (!m.eof()){\n  printLine(m.getKey() + &quot; = &quot; + m.getVal());\n  m.next();\n}</code></pre>\n"
+  summary: "\nReturns a Map containing all input values of the EventData object.\n"
   remarks: 
   syntax: 
     content: Map getInputValues()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Map
+      description: All input values of the object.
   example: 
   - "\n<pre><code>EventData ed = getEventData();\nMap m = ed.getInputValues();\n\nm.first();\nwhile (!m.eof()){\n  printLine(m.getKey() + &quot; = &quot; + m.getVal());\n  m.next();\n}</code></pre>\n"
 - uid: CRMScript.Native.EventData.getMessage()
@@ -98,13 +116,14 @@ Use<strong>Trace</strong>to discover the name of the input value you want to fet
   nameWithType: EventData.getMessage()
   fullName: CRMScript.Native.EventData.getMessage()
   type: Method
-  summary: "\nReturns the message set in an<code>EventData</code>object.<p></p>\n<pre><code>EventData ed = getEventData();\nprintLine(ed.getMessage());</code></pre>\n"
+  summary: "\nReturns the message set in an EventData object.\n"
   remarks: 
   syntax: 
     content: String getMessage()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
+      description: The message set in the object.
   example: 
   - "\n<pre><code>EventData ed = getEventData();\nprintLine(ed.getMessage());</code></pre>\n"
 - uid: CRMScript.Native.EventData.getNavigateTo()
@@ -117,13 +136,14 @@ Use<strong>Trace</strong>to discover the name of the input value you want to fet
   nameWithType: EventData.getNavigateTo()
   fullName: CRMScript.Native.EventData.getNavigateTo()
   type: Method
-  summary: 
+  summary: "\nReturns the section EventData has navigated to.\n"
   remarks: 
   syntax: 
     content: String getNavigateTo()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
+      description:
   example: 
 - uid: CRMScript.Native.EventData.getStateValue(String)
   commentId: M:CRMScript.Native.EventData.getStateValue(String)
@@ -135,14 +155,17 @@ Use<strong>Trace</strong>to discover the name of the input value you want to fet
   nameWithType: EventData.getStateValue(String)
   fullName: CRMScript.Native.EventData.getStateValue(String)
   type: Method
-  summary: "\nThis method returns the value of a specified state field (i.e. custom field).\n"
+  summary: "\nReturns the value of a specified state field (custom field).\n"
   remarks: 
   syntax: 
-    content: getStateValue(String stateValue)
+    content: String getStateValue(String stateValue)
     parameters:
     - id: stateValue
       type: CRMScript.Global.String
       description: 
+    return:
+      type: CRMScript.Global.String
+      description:
   example: 
 - uid: CRMScript.Native.EventData.getStateValues()
   commentId: M:CRMScript.Native.EventData.getStateValues()
@@ -154,11 +177,14 @@ Use<strong>Trace</strong>to discover the name of the input value you want to fet
   nameWithType: EventData.getStateValues()
   fullName: CRMScript.Native.EventData.getStateValues()
   type: Method
-  summary: "\nThis method returns a Map containing all state values of the EventData object (i.e. custom values).\n"
+  summary: "\nReturns a Map containing all state values of the EventData object (custom values).\n"
   remarks: 
   syntax: 
-    content: getStateValues()
-    parameters:
+    content: Map getStateValues()
+    parameters: []
+    return:
+      type: CRMScript.Global.Map
+      description:
   example: 
 - uid: CRMScript.Native.EventData.getType()
   commentId: M:CRMScript.Native.EventData.getType()
@@ -170,13 +196,14 @@ Use<strong>Trace</strong>to discover the name of the input value you want to fet
   nameWithType: EventData.getType()
   fullName: CRMScript.Native.EventData.getType()
   type: Method
-  summary: "\nThis method returns the integer representing the event type.<p></p>\n<pre><code>EventData ed = getEventData();\nprintLine(ed.getType().toString());</code></pre>\n"
+  summary: "\nReturns the integer representing the event type.\n"
   remarks: 
   syntax: 
     content: Integer getType()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
+      description:
   example: 
   - "\n<pre><code>EventData ed = getEventData();\nprintLine(ed.getType().toString());</code></pre>\n"
 - uid: CRMScript.Native.EventData.setBlockExecution(Bool)
@@ -189,7 +216,7 @@ Use<strong>Trace</strong>to discover the name of the input value you want to fet
   nameWithType: EventData.setBlockExecution(Bool)
   fullName: CRMScript.Native.EventData.setBlockExecution(Bool)
   type: Method
-  summary: "\nUsed to prevent the current event action from being executed.\n"
+  summary: "\nPrevent the current event action from being executed.\n"
   remarks: 
   syntax: 
     content: Void setBlockExecution(Bool value)
@@ -210,7 +237,7 @@ Use<strong>Trace</strong>to discover the name of the input value you want to fet
   nameWithType: EventData.setMessage(String)
   fullName: CRMScript.Native.EventData.setMessage(String)
   type: Method
-  summary: "\nDisplays a dialog box containing the specified message.<p></p>\n<pre><code>EventData ed = getEventData();\nString orgNr = ed.getInputValue(&quot;ContactEntity.OrgNr&quot;);\nif(orgNr.isEmpty()) {\n  ed.setMessage(&quot;Please type an Org.Nr&quot;);\n}</code></pre>\n"
+  summary: "\nDisplays a dialog box containing the specified message.\n"
   remarks: 
   syntax: 
     content: Void setMessage(String message)
@@ -232,7 +259,7 @@ Use<strong>Trace</strong>to discover the name of the input value you want to fet
   nameWithType: EventData.setNavigateTo(String)
   fullName: CRMScript.Native.EventData.setNavigateTo(String)
   type: Method
-  summary: "\nSets which page to load next. For example, &quot;sale.main&quot;.<p></p>\n<pre><code>EventData ed = getEventData();\ned.setNavigateTo(&quot;soprotocol:sale.document?document_id=0&quot;);</code></pre>\n"
+  summary: "\nSets which page to load next. For example, &quot;sale.main&quot;.\n"
   remarks: 
   syntax: 
     content: Void setNavigateTo(String url)
@@ -254,7 +281,7 @@ Use<strong>Trace</strong>to discover the name of the input value you want to fet
   nameWithType: EventData.setOutputValue(String,String)
   fullName: CRMScript.Native.EventData.setOutputValue(String,String)
   type: Method
-  summary: "\nThis method sets the value of a specified output field (for example &quot;ContactEntity.Department&quot;).<p></p>\n<pre><code>Integer newOrgNr = 987654321;\nEventData ed = getEventData();\ned.setOutputValue(&quot;ContactEntity.OrgNr&quot;, newOrgNr);</code></pre>\n"
+  summary: "\nSets the value of a specified output field (for example &quot;ContactEntity.Department&quot;).\n"
   remarks: 
   syntax: 
     content: Void setOutputValue(String name, String value)
@@ -279,10 +306,10 @@ Use<strong>Trace</strong>to discover the name of the input value you want to fet
   nameWithType: EventData.setStateValue(String,String)
   fullName: CRMScript.Native.EventData.setStateValue(String,String)
   type: Method
-  summary: "\nThis method sets a state value that can be accessed later, also by other EventData objects in the same script (i.e. custom value).\n"
+  summary: "\nSets a state value that can be accessed later, also by other EventData objects in the same script (custom value).\n"
   remarks: 
   syntax: 
-    content: setStateValue(String stateName, String val)
+    content: Void setStateValue(String stateName, String val)
     parameters:
     - id: stateName
       type: CRMScript.Global.String
@@ -290,6 +317,8 @@ Use<strong>Trace</strong>to discover the name of the input value you want to fet
     - id: val
       type: CRMScript.Global.String
       description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.Native.EventData.setValidationMessage(String)
   commentId: M:CRMScript.Native.EventData.setValidationMessage(String)
@@ -301,7 +330,7 @@ Use<strong>Trace</strong>to discover the name of the input value you want to fet
   nameWithType: EventData.setValidationMessage(String)
   fullName: CRMScript.Native.EventData.setValidationMessage(String)
   type: Method
-  summary: "\nA shorthand for calling<code>setBlockExecution(true)</code>and<code>setMessage(message)</code>.<p></p>\nIt allows you to block a save and set a response message in a single function call.\n"
+  summary: "\nA shorthand for calling setBlockExecution(true) and setMessage(message).<p></p>\nIt allows you to block a save and set a response message in a single function call.\n"
   remarks: 
   syntax: 
     content: Void setValidationMessage(String message)

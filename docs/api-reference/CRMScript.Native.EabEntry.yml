@@ -3,13 +3,12 @@ items:
 - uid: CRMScript.Native.EabEntry
   commentId: T:CRMScript.Native.EabEntry
   id: EabEntry
-  so.intellisense: Void.EabEntry
   langs:
   - crmscript
   children:
+  - CRMScript.Native.EabEntry.#ctor
   - CRMScript.Native.EabEntry.delete()
-  - CRMScript.Native.EabEntry.#ctor()
-  - CRMScript.Native.EabEntry.getValue(String,String)
+  - CRMScript.Native.EabEntry.getValue(String)
   - CRMScript.Native.EabEntry.load(Integer)
   - CRMScript.Native.EabEntry.loadFromAgentAndKey(Integer,String)
   - CRMScript.Native.EabEntry.save()
@@ -18,9 +17,24 @@ items:
   nameWithType: EabEntry
   fullName: CRMScript.Native.EabEntry
   type: Class
-  summary: "\nThis class enables you to read and write entries from the email address book. It is also used when you want to synchronise the address book using DBI.\n"
+  summary: "\nReads and writes entries from the email address book. The class is also used when you want to synchronize the address book using DBI.\n"
   example: 
   - "\n<pre><code>EabEntry e;\n\ne.load(15);\nprint(e.getValue(&quot;sms&quot;));\ne.setValue(&quot;name&quot;, &quot;test&quot;);</code></pre>\n"
+- uid: CRMScript.Native.EabEntry.#ctor
+  commentId: M:CRMScript.Native.EabEntry.#ctor
+  id: '#ctor'
+  so.intellisense: Void.EabEntry
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: EabEntry.#ctor
+  fullName: CRMScript.Native.EabEntry.#ctor
+  type: Constructor
+  summary: "Initializes a new instance of the EabEntry class.\n"
+  remarks: 
+  syntax: 
+    content: EabEntry
+  example: 
 - uid: CRMScript.Native.EabEntry.delete()
   commentId: M:CRMScript.Native.EabEntry.delete()
   id: 'delete()'
@@ -31,51 +45,35 @@ items:
   nameWithType: EabEntry.delete()
   fullName: CRMScript.Native.EabEntry.delete()
   type: Method
-  summary: "\nThis method will delete the current address book entry from the database.\n"
+  summary: "\nDeletes the current address book entry from the database.\n"
   remarks: 
   syntax: 
-    content: delete()
-    parameters:
+    content: Void delete()
+    parameters: []
+    return:
+      type: CRMScript.Global.Void
   example: 
-- uid: CRMScript.Native.EabEntry.#ctor()
-  commentId: M:CRMScript.Native.EabEntry.#ctor()
-  id: '#ctor()'
-  so.intellisense: Void.EabEntry
-  langs:
-  - crmscript
-  name: '#ctor()'
-  nameWithType: EabEntry.#ctor()
-  fullName: CRMScript.Native.EabEntry.#ctor()
-  type: Constructor
-  summary: "\nThis class enables you to read and write entries from the email address book. It is also used when you want to synchronise the address book using DBI.\n"
-  remarks: 
-  syntax: 
-    content: EabEntry
-  example: 
-  - "\n<pre><code>EabEntry e;\n\ne.load(15);\nprint(e.getValue(&quot;sms&quot;));\ne.setValue(&quot;name&quot;, &quot;test&quot;);</code></pre>\n"
-- uid: CRMScript.Native.EabEntry.getValue(String,String)
-  commentId: M:CRMScript.Native.EabEntry.getValue(String,String)
-  id: 'getValue(String,String)'
+- uid: CRMScript.Native.EabEntry.getValue(String)
+  commentId: M:CRMScript.Native.EabEntry.getValue(String)
+  id: 'getValue(String)'
   so.intellisense: EabEntry.getValue
   langs:
   - crmscript
-  name: 'getValue(String,String)'
-  nameWithType: EabEntry.getValue(String,String)
-  fullName: CRMScript.Native.EabEntry.getValue(String,String)
+  name: 'getValue(String)'
+  nameWithType: EabEntry.getValue(String)
+  fullName: CRMScript.Native.EabEntry.getValue(String)
   type: Method
   summary: "\nGet the value of the given field in the EabEntry instance.\n"
-  remarks: 
+  remarks: "\nAvailable fields:<ul><li>name</li><li>email</li><li>sms</li><li>folderId</li><li>dbi_agent_id</li><li>dbi_key</li><li>dbi_last_syncronized</li><li>dbi_last_modified</li><li>dbi_delete</li></ul>\n"
   syntax: 
     content: String getValue(String field)
     parameters:
     - id: field
       type: CRMScript.Global.String
-      description: 
-    - id: Field
-      type: CRMScript.Global.String
       description: The name of the field.
     return:
       type: CRMScript.Global.String
+      description: The value of the field.
   example: 
   - "\n<pre><code>EabEntry eab;\n\nBool b = eab.load(15);\nprint(b.toString());\n\neab.setValue(&quot;name&quot;, &quot;test&quot;);</code></pre>\n"
 - uid: CRMScript.Native.EabEntry.load(Integer)
@@ -88,14 +86,17 @@ items:
   nameWithType: EabEntry.load(Integer)
   fullName: CRMScript.Native.EabEntry.load(Integer)
   type: Method
-  summary: "\nLoad an entry from the address book with the specified id. Returns true if load var successful, false if not.\n"
+  summary: "\nLoads an entry from the address book with the specified ID.\n"
   remarks: 
   syntax: 
-    content: load(Integer p_0)
+    content: Bool load(Integer id)
     parameters:
-    - id: p_0
+    - id: id
       type: CRMScript.Global.Integer
-      description: 
+      description: ID of the entry to load.
+    return:
+      type: CRMScript.Global.Bool
+      description: true if loading var successful; otherwise, false.
   example: 
   - "\n<pre><code>EabEntry eab;\n\nBool b = eab.load(15);\nprint(b.toString());</code></pre>\n"
 - uid: CRMScript.Native.EabEntry.loadFromAgentAndKey(Integer,String)
@@ -111,14 +112,17 @@ items:
   summary: "\nUsed in conjunction with DBI. Load an entry with the specified key from the specified agent.\n"
   remarks: 
   syntax: 
-    content: loadFromAgentAndKey(Integer p_0, String p_1)
+    content: Bool loadFromAgentAndKey(Integer id, String key)
     parameters:
-    - id: p_0
+    - id: id
       type: CRMScript.Global.Integer
-      description: 
-    - id: p_1
+      description: ID of the agent this EAB entry belongs to
+    - id: key
       type: CRMScript.Global.String
-      description: 
+      description: The external key for the EAB entry
+    return:
+      type: CRMScript.Global.Bool
+      description: true if loading var successful; otherwise, false.
   example: 
 - uid: CRMScript.Native.EabEntry.save()
   commentId: M:CRMScript.Native.EabEntry.save()
@@ -130,11 +134,14 @@ items:
   nameWithType: EabEntry.save()
   fullName: CRMScript.Native.EabEntry.save()
   type: Method
-  summary: "\nThis will save the current address book entry. If you did not load an existing entry, a new entry will be created, else it will update the loaded entry.<p></p>\nReturns id of the saved entry.\n"
+  summary: "\nSaves the current address book entry. If you did not load an existing entry, a new entry will be created; otherwise, it will update the loaded entry.\n"
   remarks: 
   syntax: 
-    content: save()
-    parameters:
+    content: Integer save()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: ID of the saved entry.
   example: 
 - uid: CRMScript.Native.EabEntry.setValue(String,String)
   commentId: M:CRMScript.Native.EabEntry.setValue(String,String)
@@ -147,16 +154,18 @@ items:
   fullName: CRMScript.Native.EabEntry.setValue(String,String)
   type: Method
   summary: "\nSets the value of the given field in the EabEntry instance.\n"
-  remarks: 
+  remarks: "\nAvailable fields:<ul><li>name</li><li>email</li><li>sms</li><li>folderId</li><li>dbi_agent_id</li><li>dbi_key</li><li>dbi_last_syncronized</li><li>dbi_last_modified</li><li>dbi_delete</li></ul>\n"
   syntax: 
-    content: setValue(String p_0, String p_1)
+    content: Void setValue(String name, String value)
     parameters:
-    - id: p_0
+    - id: name
       type: CRMScript.Global.String
-      description: 
-    - id: p_1
+      description: The name of the field.
+    - id: value
       type: CRMScript.Global.String
-      description: 
+      description: The value to set.
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>EabEntry eab;\n\nBool b = eab.load(15);\nprint(b.toString());\n\neab.setValue(&quot;name&quot;, &quot;test&quot;);\nprint(eab.getValue(&quot;name&quot;));</code></pre>\n"
 references:
@@ -178,3 +187,15 @@ references:
   name: Integer
   nameWithType: Integer
   fullName: CRMScript.Global.Integer
+- uid: CRMScript.Global.Bool
+  commentId: T:CRMScript.Global.Bool
+  isExternal: true
+  name: Bool
+  nameWithType: Bool
+  fullName: CRMScript.Global.Bool
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void

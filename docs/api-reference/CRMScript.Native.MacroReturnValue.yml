@@ -3,13 +3,12 @@ items:
 - uid: CRMScript.Native.MacroReturnValue
   commentId: T:CRMScript.Native.MacroReturnValue
   id: MacroReturnValue
-  so.intellisense: Void.MacroReturnValue
   langs:
   - crmscript
   children:
+  - CRMScript.Native.MacroReturnValue.#ctor
   - CRMScript.Native.MacroReturnValue.getDescription()
   - CRMScript.Native.MacroReturnValue.getName()
-  - CRMScript.Native.MacroReturnValue.#ctor()
   - CRMScript.Native.MacroReturnValue.setDescription(String)
   - CRMScript.Native.MacroReturnValue.setName(String)
   name: MacroReturnValue
@@ -17,6 +16,21 @@ items:
   fullName: CRMScript.Native.MacroReturnValue
   type: Class
   summary: 
+  example: 
+- uid: CRMScript.Native.MacroReturnValue.#ctor
+  commentId: M:CRMScript.Native.MacroReturnValue.#ctor
+  id: '#ctor'
+  so.intellisense: Void.MacroReturnValue
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: MacroReturnValue.#ctor
+  fullName: CRMScript.Native.MacroReturnValue.#ctor
+  type: Constructor
+  summary: "\nInitializes a new instance of the MacroReturnValue class.\n"
+  remarks: 
+  syntax: 
+    content: MacroReturnValue
   example: 
 - uid: CRMScript.Native.MacroReturnValue.getDescription()
   commentId: M:CRMScript.Native.MacroReturnValue.getDescription()
@@ -28,11 +42,14 @@ items:
   nameWithType: MacroReturnValue.getDescription()
   fullName: CRMScript.Native.MacroReturnValue.getDescription()
   type: Method
-  summary: "\nThis function returns the description of the macro return value.\n"
+  summary: "\nReturns the description of the macro return value.\n"
   remarks: 
   syntax: 
-    content: getDescription()
-    parameters:
+    content: String getDescription()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: the description of the macro return value
   example: 
 - uid: CRMScript.Native.MacroReturnValue.getName()
   commentId: M:CRMScript.Native.MacroReturnValue.getName()
@@ -44,26 +61,14 @@ items:
   nameWithType: MacroReturnValue.getName()
   fullName: CRMScript.Native.MacroReturnValue.getName()
   type: Method
-  summary: "\nThis function returns the name of the macro return value.\n"
+  summary: "\nReturns the name of the macro return value.\n"
   remarks: 
   syntax: 
-    content: getName()
-    parameters:
-  example: 
-- uid: CRMScript.Native.MacroReturnValue.#ctor()
-  commentId: M:CRMScript.Native.MacroReturnValue.#ctor()
-  id: '#ctor()'
-  so.intellisense: Void.MacroReturnValue
-  langs:
-  - crmscript
-  name: '#ctor()'
-  nameWithType: MacroReturnValue.#ctor()
-  fullName: CRMScript.Native.MacroReturnValue.#ctor()
-  type: Constructor
-  summary: 
-  remarks: 
-  syntax: 
-    content: MacroReturnValue
+    content: String getName()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: the name of the macro return value
   example: 
 - uid: CRMScript.Native.MacroReturnValue.setDescription(String)
   commentId: M:CRMScript.Native.MacroReturnValue.setDescription(String)
@@ -75,14 +80,16 @@ items:
   nameWithType: MacroReturnValue.setDescription(String)
   fullName: CRMScript.Native.MacroReturnValue.setDescription(String)
   type: Method
-  summary: "\nThis function sets the description of the macro return value.\n"
+  summary: "\nSets the description of the macro return value.\n"
   remarks: 
   syntax: 
-    content: setDescription(String p_0)
+    content: Void setDescription(String description)
     parameters:
-    - id: p_0
+    - id: description
       type: CRMScript.Global.String
-      description: 
+      description:
+    return:
+      type: CRMScript.Global.Void 
   example: 
 - uid: CRMScript.Native.MacroReturnValue.setName(String)
   commentId: M:CRMScript.Native.MacroReturnValue.setName(String)
@@ -94,14 +101,16 @@ items:
   nameWithType: MacroReturnValue.setName(String)
   fullName: CRMScript.Native.MacroReturnValue.setName(String)
   type: Method
-  summary: "\nThis function sets the name of the macro return value.\n"
+  summary: "\nSets the name of the macro return value.\n"
   remarks: 
   syntax: 
-    content: setName(String p_0)
+    content: setName(String name)
     parameters:
-    - id: p_0
+    - id: name
       type: CRMScript.Global.String
-      description: 
+      description:
+    return:
+      type: CRMScript.Global.Void 
   example: 
 references:
 - uid: CRMScript.Native.MacroReturnValue
@@ -116,3 +125,9 @@ references:
   name: String
   nameWithType: String
   fullName: CRMScript.Global.String
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void

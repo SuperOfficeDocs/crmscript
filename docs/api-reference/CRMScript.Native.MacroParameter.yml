@@ -3,10 +3,10 @@ items:
 - uid: CRMScript.Native.MacroParameter
   commentId: T:CRMScript.Native.MacroParameter
   id: MacroParameter
-  so.intellisense: Void.MacroParameter
   langs:
   - crmscript
   children:
+  - CRMScript.Native.MacroParameter.#ctor
   - CRMScript.Native.MacroParameter.getControlConfig()
   - CRMScript.Native.MacroParameter.getDescription()
   - CRMScript.Native.MacroParameter.getIsFixedValue()
@@ -16,8 +16,7 @@ items:
   - CRMScript.Native.MacroParameter.getSourcePath()
   - CRMScript.Native.MacroParameter.getType()
   - CRMScript.Native.MacroParameter.getValue()
-  - CRMScript.Native.MacroParameter.#ctor()
-  - CRMScript.Native.MacroParameter.setControlConfig()
+  - CRMScript.Native.MacroParameter.setControlConfig(Map)
   - CRMScript.Native.MacroParameter.setDescription(String)
   - CRMScript.Native.MacroParameter.setIsFixedValue(Bool)
   - CRMScript.Native.MacroParameter.setIsOptional(Bool)
@@ -32,6 +31,21 @@ items:
   type: Class
   summary: 
   example: 
+- uid: CRMScript.Native.MacroParameter.#ctor
+  commentId: M:CRMScript.Native.MacroParameter.#ctor
+  id: '#ctor'
+  so.intellisense: Void.MacroParameter
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: MacroParameter.#ctor
+  fullName: CRMScript.Native.MacroParameter.#ctor
+  type: Constructor
+  summary: "\nInitializes a new instance of the MacroParameter class.\n"
+  remarks: 
+  syntax: 
+    content: MacroParameter
+  example: 
 - uid: CRMScript.Native.MacroParameter.getControlConfig()
   commentId: M:CRMScript.Native.MacroParameter.getControlConfig()
   id: 'getControlConfig()'
@@ -42,11 +56,14 @@ items:
   nameWithType: MacroParameter.getControlConfig()
   fullName: CRMScript.Native.MacroParameter.getControlConfig()
   type: Method
-  summary: "\nGet the optional control configuration values that influence how the input control behaves.\n"
+  summary: "\nGets the optional control configuration values that influence how the input control behaves.\n"
   remarks: 
   syntax: 
-    content: getControlConfig()
-    parameters:
+    content: Map getControlConfig()
+    parameters: []
+    return:
+      type: CRMScript.Global.Map
+      description:
   example: 
 - uid: CRMScript.Native.MacroParameter.getDescription()
   commentId: M:CRMScript.Native.MacroParameter.getDescription()
@@ -58,11 +75,14 @@ items:
   nameWithType: MacroParameter.getDescription()
   fullName: CRMScript.Native.MacroParameter.getDescription()
   type: Method
-  summary: "\nThis function returns a longer description of the parameter.<p></p>\nCan for instance be used as help in a form.\n"
-  remarks: 
+  summary: "\nReturns a longer description of the parameter.\n"
+  remarks: "\nCan for instance be used as help in a form.\n"
   syntax: 
-    content: getDescription()
-    parameters:
+    content: String getDescription()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description:
   example: 
 - uid: CRMScript.Native.MacroParameter.getIsFixedValue()
   commentId: M:CRMScript.Native.MacroParameter.getIsFixedValue()
@@ -74,11 +94,14 @@ items:
   nameWithType: MacroParameter.getIsFixedValue()
   fullName: CRMScript.Native.MacroParameter.getIsFixedValue()
   type: Method
-  summary: "\nThis function returns true if the value is fixed, and false if it is read from another task or the environment.\n"
+  summary: "\nReturns true if the value is fixed, and false if it is read from another task or the environment.\n"
   remarks: 
   syntax: 
-    content: getIsFixedValue()
-    parameters:
+    content: Bool getIsFixedValue()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: true if the value is fixed; otherwise, false
   example: 
 - uid: CRMScript.Native.MacroParameter.getIsOptional()
   commentId: M:CRMScript.Native.MacroParameter.getIsOptional()
@@ -90,11 +113,14 @@ items:
   nameWithType: MacroParameter.getIsOptional()
   fullName: CRMScript.Native.MacroParameter.getIsOptional()
   type: Method
-  summary: "\nThis function returns true if the value is optional, and false if it is compulsory.\n"
+  summary: "\nReturns true if the value is optional, and false if it is mandatory.\n"
   remarks: 
   syntax: 
-    content: getIsOptional()
-    parameters:
+    content: Bool getIsOptional()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: true if the value is optional; false if mandatory
   example: 
 - uid: CRMScript.Native.MacroParameter.getLabel()
   commentId: M:CRMScript.Native.MacroParameter.getLabel()
@@ -106,11 +132,14 @@ items:
   nameWithType: MacroParameter.getLabel()
   fullName: CRMScript.Native.MacroParameter.getLabel()
   type: Method
-  summary: "\nThis function returns the label for the parameter when displayed in a form.\n"
+  summary: "\nReturns the label for the parameter when displayed in a form.\n"
   remarks: 
   syntax: 
-    content: getLabel()
-    parameters:
+    content: String getLabel()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: the label for the parameter when displayed in a form
   example: 
 - uid: CRMScript.Native.MacroParameter.getName()
   commentId: M:CRMScript.Native.MacroParameter.getName()
@@ -122,11 +151,14 @@ items:
   nameWithType: MacroParameter.getName()
   fullName: CRMScript.Native.MacroParameter.getName()
   type: Method
-  summary: "\nThis function returns the name of the parameter. The name is used for accessing it.\n"
-  remarks: 
+  summary: "\nReturns the name of the parameter.\n"
+  remarks: "\nThe name is used for accessing the parameter.\n"
   syntax: 
-    content: getName()
-    parameters:
+    content: String getName()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: the name of the parameter
   example: 
 - uid: CRMScript.Native.MacroParameter.getSourcePath()
   commentId: M:CRMScript.Native.MacroParameter.getSourcePath()
@@ -138,12 +170,16 @@ items:
   nameWithType: MacroParameter.getSourcePath()
   fullName: CRMScript.Native.MacroParameter.getSourcePath()
   type: Method
-  summary: "\nThis function will return the sourcepath from the object it is called from.<p></p>\nIn example: &quot;loadTicket.id&quot;, &quot;_environment.entryId&quot;\n"
+  summary: "\nReturns the source path of the object it is called from.\n"
   remarks: 
   syntax: 
-    content: getSourcePath()
-    parameters:
+    content: String getSourcePath()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: the source path of the object it is called from
   example: 
+  - "\n&quot;loadTicket.id&quot;, &quot;_environment.entryId&quot;\n"
 - uid: CRMScript.Native.MacroParameter.getType()
   commentId: M:CRMScript.Native.MacroParameter.getType()
   id: 'getType()'
@@ -154,11 +190,14 @@ items:
   nameWithType: MacroParameter.getType()
   fullName: CRMScript.Native.MacroParameter.getType()
   type: Method
-  summary: "\nThis function returns the type of the parameter.<p></p>\nIt is used for displaying correct control in form.\n"
-  remarks: 
+  summary: "\nReturns the type of the parameter.\n"
+  remarks: "\nUsed for displaying correct control in form. Available types:<ul><li>AnchorLine</li><li>InfoFields</li><li>Grid</li><li>HR</li><li>BR</li><li>SubHeader</li><li>ParserCode</li><li>Messages</li><li>EjScript</li><li>HtmlGrid</li><li>Planner</li><li>StaticGrid</li><li>DrillDown</li><li>GenericGrid</li><li>InfoFields2</li><li>ExtraTableEntriesGrid</li><li>DirectedAcyclicGraph</li><li>EjscriptElement</li><li>Chart</li><li>WhereChart</li><li>ListRecipients</li><li>EntityCard</li></ul>\n"
   syntax: 
-    content: getType()
-    parameters:
+    content: String getType()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description:
   example: 
 - uid: CRMScript.Native.MacroParameter.getValue()
   commentId: M:CRMScript.Native.MacroParameter.getValue()
@@ -173,39 +212,32 @@ items:
   summary: "\nIf the parameter is a fixed value, this function will return that value.\n"
   remarks: 
   syntax: 
-    content: getValue()
-    parameters:
+    content: String getValue()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description:
   example: 
-- uid: CRMScript.Native.MacroParameter.#ctor()
-  commentId: M:CRMScript.Native.MacroParameter.#ctor()
-  id: '#ctor()'
-  so.intellisense: Void.MacroParameter
-  langs:
-  - crmscript
-  name: '#ctor()'
-  nameWithType: MacroParameter.#ctor()
-  fullName: CRMScript.Native.MacroParameter.#ctor()
-  type: Constructor
-  summary: 
-  remarks: 
-  syntax: 
-    content: MacroParameter
-  example: 
-- uid: CRMScript.Native.MacroParameter.setControlConfig()
-  commentId: M:CRMScript.Native.MacroParameter.setControlConfig()
-  id: 'setControlConfig()'
+- uid: CRMScript.Native.MacroParameter.setControlConfig(Map)
+  commentId: M:CRMScript.Native.MacroParameter.setControlConfig(Map)
+  id: 'setControlConfig(Map)'
   so.intellisense: MacroParameter.setControlConfig
   langs:
   - crmscript
-  name: 'setControlConfig()'
-  nameWithType: MacroParameter.setControlConfig()
-  fullName: CRMScript.Native.MacroParameter.setControlConfig()
+  name: 'setControlConfig(Map)'
+  nameWithType: MacroParameter.setControlConfig(Map)
+  fullName: CRMScript.Native.MacroParameter.setControlConfig(Map)
   type: Method
-  summary: "\nThis function sets the optional configuration values for the type. The configuration will influence how the input control behaves.\n"
+  summary: "\nSets the optional configuration values for the type. The configuration will influence how the input control behaves.\n"
   remarks: 
   syntax: 
-    content: setControlConfig(Map p_0)
+    content: Void setControlConfig(Map values)
     parameters:
+    - id: values
+      type: CRMScript.Global.Map
+      description: values to set
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.Native.MacroParameter.setDescription(String)
   commentId: M:CRMScript.Native.MacroParameter.setDescription(String)
@@ -217,14 +249,16 @@ items:
   nameWithType: MacroParameter.setDescription(String)
   fullName: CRMScript.Native.MacroParameter.setDescription(String)
   type: Method
-  summary: "\nThis function sets a longer description of the parameter. This description can for instance be used in as help in a form.\n"
+  summary: "\nSets a longer description of the parameter. This description can for instance be used in as help in a form.\n"
   remarks: 
   syntax: 
-    content: setDescription(String p_0)
+    content: Void setDescription(String description)
     parameters:
-    - id: p_0
+    - id: description
       type: CRMScript.Global.String
-      description: 
+      description: The text to set
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.Native.MacroParameter.setIsFixedValue(Bool)
   commentId: M:CRMScript.Native.MacroParameter.setIsFixedValue(Bool)
@@ -236,14 +270,16 @@ items:
   nameWithType: MacroParameter.setIsFixedValue(Bool)
   fullName: CRMScript.Native.MacroParameter.setIsFixedValue(Bool)
   type: Method
-  summary: "\nThis function sets whether or not the parameter is a fixed value. The function takes a bool.\n"
+  summary: "\nSets whether or not the parameter is a fixed value.\n"
   remarks: 
   syntax: 
-    content: setIsFixedValue(Bool p_0)
+    content: Void setIsFixedValue(Bool isFixed)
     parameters:
-    - id: p_0
+    - id: isFixed
       type: CRMScript.Global.Bool
       description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.Native.MacroParameter.setIsOptional(Bool)
   commentId: M:CRMScript.Native.MacroParameter.setIsOptional(Bool)
@@ -255,14 +291,16 @@ items:
   nameWithType: MacroParameter.setIsOptional(Bool)
   fullName: CRMScript.Native.MacroParameter.setIsOptional(Bool)
   type: Method
-  summary: "\nThis function sets whether or not the parameter is optional. The function takes a bool.\n"
+  summary: "\nSets whether or not the parameter is optional.\n"
   remarks: 
   syntax: 
-    content: setIsOptional(Bool p_0)
+    content: Void setIsOptional(Bool isOptional)
     parameters:
-    - id: p_0
+    - id: isOptional
       type: CRMScript.Global.Bool
       description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.Native.MacroParameter.setLabel(String)
   commentId: M:CRMScript.Native.MacroParameter.setLabel(String)
@@ -274,14 +312,16 @@ items:
   nameWithType: MacroParameter.setLabel(String)
   fullName: CRMScript.Native.MacroParameter.setLabel(String)
   type: Method
-  summary: "\nThis function will set the label of the parameter when displayed in form.\n"
+  summary: "\nSets the label of the parameter when displayed in form.\n"
   remarks: 
   syntax: 
-    content: setLabel(String p_0)
+    content: Void setLabel(String label)
     parameters:
-    - id: p_0
+    - id: label
       type: CRMScript.Global.String
       description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.Native.MacroParameter.setName(String)
   commentId: M:CRMScript.Native.MacroParameter.setName(String)
@@ -293,14 +333,16 @@ items:
   nameWithType: MacroParameter.setName(String)
   fullName: CRMScript.Native.MacroParameter.setName(String)
   type: Method
-  summary: "\nThis function will set the name of the parameter, which is used for accessing it.\n"
-  remarks: 
+  summary: "\nSet the name of the parameter.\n"
+  remarks: "\nParameters are accessed by their name.\n"
   syntax: 
-    content: setName(String p_0)
+    content: Void setName(String name)
     parameters:
-    - id: p_0
+    - id: name
       type: CRMScript.Global.String
       description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.Native.MacroParameter.setSourcePath(String)
   commentId: M:CRMScript.Native.MacroParameter.setSourcePath(String)
@@ -312,15 +354,18 @@ items:
   nameWithType: MacroParameter.setSourcePath(String)
   fullName: CRMScript.Native.MacroParameter.setSourcePath(String)
   type: Method
-  summary: "\nThis function can set the parameter's source path.<p></p>\nExamples of source paths: &quot;loadTicket.id&quot;, &quot;_environment.entryId&quot;\n"
+  summary: "\nSets the parameter's source path.\n"
   remarks: 
   syntax: 
-    content: setSourcePath(String p_0)
+    content: Void setSourcePath(String path)
     parameters:
-    - id: p_0
+    - id: path
       type: CRMScript.Global.String
       description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
+  - "\n&quot;loadTicket.id&quot;, &quot;_environment.entryId&quot;\n"
 - uid: CRMScript.Native.MacroParameter.setType(String)
   commentId: M:CRMScript.Native.MacroParameter.setType(String)
   id: 'setType(String)'
@@ -331,14 +376,16 @@ items:
   nameWithType: MacroParameter.setType(String)
   fullName: CRMScript.Native.MacroParameter.setType(String)
   type: Method
-  summary: "\nThis function will set the type of the parameter.\n"
-  remarks: 
+  summary: "\nSets the type of the parameter.\n"
+  remarks: "\nAvailable types:<ul><li>AnchorLine</li><li>InfoFields</li><li>Grid</li><li>HR</li><li>BR</li><li>SubHeader</li><li>ParserCode</li><li>Messages</li><li>EjScript</li><li>HtmlGrid</li><li>Planner</li><li>StaticGrid</li><li>DrillDown</li><li>GenericGrid</li><li>InfoFields2</li><li>ExtraTableEntriesGrid</li><li>DirectedAcyclicGraph</li><li>EjscriptElement</li><li>Chart</li><li>WhereChart</li><li>ListRecipients</li><li>EntityCard</li></ul>"
   syntax: 
-    content: setType(String p_0)
+    content: Void setType(String type)
     parameters:
-    - id: p_0
+    - id: type
       type: CRMScript.Global.String
       description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.Native.MacroParameter.setValue(String)
   commentId: M:CRMScript.Native.MacroParameter.setValue(String)
@@ -350,14 +397,16 @@ items:
   nameWithType: MacroParameter.setValue(String)
   fullName: CRMScript.Native.MacroParameter.setValue(String)
   type: Method
-  summary: "\nThis function will set the value of the parameter, given that the parameter is a fixed value.\n"
+  summary: "\nSets the value of the parameter, given that the parameter is a fixed value.\n"
   remarks: 
   syntax: 
-    content: setValue(String p_0)
+    content: Void setValue(String value)
     parameters:
-    - id: p_0
+    - id: value
       type: CRMScript.Global.String
       description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 references:
 - uid: CRMScript.Native.MacroParameter
@@ -378,3 +427,15 @@ references:
   name: Bool
   nameWithType: Bool
   fullName: CRMScript.Global.Bool
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void
+- uid: CRMScript.Global.Map
+  commentId: T:CRMScript.Global.Map
+  isExternal: true
+  name: Map
+  nameWithType: Map
+  fullName: CRMScript.Global.Map

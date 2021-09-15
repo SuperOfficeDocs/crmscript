@@ -7,17 +7,32 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.Native.License.#ctor
   - CRMScript.Native.License.getInfo()
   - CRMScript.Native.License.getReasonInvalid()
   - CRMScript.Native.License.getValue(String)
   - CRMScript.Native.License.legalKey()
-  - CRMScript.Native.License.#ctor()
-  - CRMScript.Native.License.toParser()
+  - CRMScript.Native.License.toParser(Parser)
   name: License
   nameWithType: License
   fullName: CRMScript.Native.License
   type: Class
-  summary: 
+  summary: "\nDeprecated in 7.1.\n"
+  example: 
+- uid: CRMScript.Native.License.#ctor
+  commentId: M:CRMScript.Native.License.#ctor
+  id: '#ctor'
+  so.intellisense: Void.License
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: License.#ctor
+  fullName: CRMScript.Native.License.#ctor
+  type: Constructor
+  summary: "\nDeprecated in 7.1.\n"
+  remarks: 
+  syntax: 
+    content: License
   example: 
 - uid: CRMScript.Native.License.getInfo()
   commentId: M:CRMScript.Native.License.getInfo()
@@ -29,11 +44,14 @@ items:
   nameWithType: License.getInfo()
   fullName: CRMScript.Native.License.getInfo()
   type: Method
-  summary: "\nDeprecated in 7.1.<p></p>\nGet info about license key. Check if its legal and print hostname and modules.<p></p>\n<ul><li><strong>Returns:</strong>Info.</li></ul>\n"
+  summary: "\nDeprecated in 7.1.<p></p>\nGets info about license key. Checks if its legal and print hostname and modules.\n"
   remarks: 
   syntax: 
-    content: getInfo()
-    parameters:
+    content: String getInfo()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description:
   example: 
 - uid: CRMScript.Native.License.getReasonInvalid()
   commentId: M:CRMScript.Native.License.getReasonInvalid()
@@ -45,11 +63,14 @@ items:
   nameWithType: License.getReasonInvalid()
   fullName: CRMScript.Native.License.getReasonInvalid()
   type: Method
-  summary: "\nDeprecated in 7.1.<p></p>\nCheck if the license key is valid and returns the reason as a string.<p></p>\n<ul><li><strong>Returns:</strong>reason why not valid or null string if valid</li></ul>\n"
+  summary: "\nDeprecated in 7.1.<p></p>\nChecks if the license key is valid and returns the reason as a string.\n"
   remarks: 
   syntax: 
-    content: getReasonInvalid()
-    parameters:
+    content: String getReasonInvalid()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: reason why not valid or null string if valid
   example: 
 - uid: CRMScript.Native.License.getValue(String)
   commentId: M:CRMScript.Native.License.getValue(String)
@@ -61,14 +82,17 @@ items:
   nameWithType: License.getValue(String)
   fullName: CRMScript.Native.License.getValue(String)
   type: Method
-  summary: "\nDeprecated in 7.1.<p></p>\nExtract a value from the license key.\n"
-  remarks: 
+  summary: "\nDeprecated in 7.1.<p></p>\nExtracts a value from the license key.\n"
+  remarks: "\nAvailable values:<ul><li>users</li><li>The number of users</li><li>simUsers</li><li>The number of simultaneous users</li><li>readUsers</li><li>The number of read users</li><li>simReadUsers</li><li>The number of simultaneous read only users</li><li>companyId</li><li>ID of the company owning the key. (Only relevant internal use)</li><li>expire</li><li>Expire date</li><li>key</li><li>The license key as a text string</li></ul>\n"
   syntax: 
-    content: getValue(String name)
+    content: String getValue(String name)
     parameters:
     - id: name
       type: CRMScript.Global.String
-      description: 
+      description: Name of the value to extract.
+    return:
+      type: CRMScript.Global.String
+      description:
   example: 
 - uid: CRMScript.Native.License.legalKey()
   commentId: M:CRMScript.Native.License.legalKey()
@@ -80,42 +104,35 @@ items:
   nameWithType: License.legalKey()
   fullName: CRMScript.Native.License.legalKey()
   type: Method
-  summary: "\nDeprecated in 7.1.<p></p>\nDetermines if a license key is legal or not.<p></p>\n<ul><li><strong>Returns:</strong>true if the key is legal.</li></ul>\n"
+  summary: "\nDeprecated in 7.1.<p></p>\nDetermines if a license key is legal or not.\n"
   remarks: 
   syntax: 
-    content: legalKey()
-    parameters:
+    content: Bool legalKey()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: true if the key is legal
   example: 
-- uid: CRMScript.Native.License.#ctor()
-  commentId: M:CRMScript.Native.License.#ctor()
-  id: '#ctor()'
-  so.intellisense: Void.License
-  langs:
-  - crmscript
-  name: '#ctor()'
-  nameWithType: License.#ctor()
-  fullName: CRMScript.Native.License.#ctor()
-  type: Constructor
-  summary: 
-  remarks: 
-  syntax: 
-    content: License
-  example: 
-- uid: CRMScript.Native.License.toParser()
-  commentId: M:CRMScript.Native.License.toParser()
-  id: 'toParser()'
+- uid: CRMScript.Native.License.toParser(Parser)
+  commentId: M:CRMScript.Native.License.toParser(Parser)
+  id: 'toParser(Parser)'
   so.intellisense: License.toParser
   langs:
   - crmscript
-  name: 'toParser()'
-  nameWithType: License.toParser()
-  fullName: CRMScript.Native.License.toParser()
+  name: 'toParser(Parser)'
+  nameWithType: License.toParser(Parser)
+  fullName: CRMScript.Native.License.toParser(Parser)
   type: Method
-  summary: "\nDeprecated in 7.1.<p></p>\nThis function will fill a Parser object with License values.\n"
+  summary: "\nDeprecated in 7.1.<p></p>\nFills a Parser object with License values.\n"
   remarks: 
   syntax: 
     content: toParser(Parser parser)
     parameters:
+    - id: parser
+      type: CRMScript.Native.Parser
+      description: The Parser instance to populate with values.
+    return:
+      type: CRMScript.Global.Void
   example: 
 references:
 - uid: CRMScript.Native.License
@@ -130,3 +147,21 @@ references:
   name: String
   nameWithType: String
   fullName: CRMScript.Global.String
+- uid: CRMScript.Global.Bool
+  commentId: T:CRMScript.Global.Bool
+  isExternal: true
+  name: Bool
+  nameWithType: Bool
+  fullName: CRMScript.Global.Bool
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void
+- uid: CRMScript.Native.Parser
+  commentId: T:CRMScript.Native.Parser
+  isExternal: true
+  name: Parser
+  nameWithType: Parser
+  fullName: CRMScript.Native.Parser

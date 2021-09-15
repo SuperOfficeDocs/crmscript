@@ -7,22 +7,38 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.Native.JSONBuilder.#ctor
   - CRMScript.Native.JSONBuilder.addBoolean(String,Bool)
   - CRMScript.Native.JSONBuilder.addFloat(String)
   - CRMScript.Native.JSONBuilder.addInteger(String,Integer)
   - CRMScript.Native.JSONBuilder.addString(String,String)
   - CRMScript.Native.JSONBuilder.finalize()
   - CRMScript.Native.JSONBuilder.getString()
-  - CRMScript.Native.JSONBuilder.#ctor()
   - CRMScript.Native.JSONBuilder.popLevel()
-  - CRMScript.Native.JSONBuilder.pushArray()
-  - CRMScript.Native.JSONBuilder.pushObject()
+  - CRMScript.Native.JSONBuilder.pushArray(String)
+  - CRMScript.Native.JSONBuilder.pushObject(String)
   - CRMScript.Native.JSONBuilder.setPrettyPrint(Integer)
   name: JSONBuilder
   nameWithType: JSONBuilder
   fullName: CRMScript.Native.JSONBuilder
   type: Class
-  summary: "\nThe JSONBuilder class simplifies building JSON hierarchies. The result will be a string in correct JSON format, with string values properly escaped. This class is useful e.g. in combination with the HTTP class to make REST-calls.\n"
+  summary: "\nThe JSONBuilder class simplifies building JSON hierarchies. The result will be a string in correct JSON format, with string values properly escaped. This class is useful for example in combination with the HTTP class to make REST-calls.\n"
+  example: 
+  - "\n<pre><code>JSONBuilder jb;\njb.pushObject(&quot;&quot;);\njb.pushArray(&quot;persons&quot;);\n\njb.pushObject(&quot;&quot;);\njb.addString(&quot;firstname&quot;, &quot;John&quot;);\njb.addInteger(&quot;age&quot;, 40);\njb.popLevel();\n\njb.pushObject(&quot;&quot;);\njb.addString(&quot;firstname&quot;, &quot;Peter&quot;);\njb.addInteger(&quot;age&quot;, 34);\njb.popLevel();\n\njb.popLevel();\njb.popLevel(); // jb.finalize() could be used to pop all levels</code></pre>\n"
+- uid: CRMScript.Native.JSONBuilder.#ctor
+  commentId: M:CRMScript.Native.JSONBuilder.#ctor
+  id: '#ctor'
+  so.intellisense: Void.JSONBuilder
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: JSONBuilder.#ctor
+  fullName: CRMScript.Native.JSONBuilder.#ctor
+  type: Constructor
+  summary: "\nInitializes a new instance of the JSONBuilder class.\n"
+  remarks: 
+  syntax: 
+    content: JSONBuilder
   example: 
   - "\n<pre><code>JSONBuilder jb;\njb.pushObject(&quot;&quot;);\njb.pushArray(&quot;persons&quot;);\n\njb.pushObject(&quot;&quot;);\njb.addString(&quot;firstname&quot;, &quot;John&quot;);\njb.addInteger(&quot;age&quot;, 40);\njb.popLevel();\n\njb.pushObject(&quot;&quot;);\njb.addString(&quot;firstname&quot;, &quot;Peter&quot;);\njb.addInteger(&quot;age&quot;, 34);\njb.popLevel();\n\njb.popLevel();\njb.popLevel(); // jb.finalize() could be used to pop all levels</code></pre>\n"
 - uid: CRMScript.Native.JSONBuilder.addBoolean(String,Bool)
@@ -35,10 +51,10 @@ items:
   nameWithType: JSONBuilder.addBoolean(String,Bool)
   fullName: CRMScript.Native.JSONBuilder.addBoolean(String,Bool)
   type: Method
-  summary: "\nAdds a boolean value to the current scope. If the current scope is an object, you must supply a key. If the current scope is an array, key must be empty.\n"
-  remarks: 
+  summary: "\nAdds a boolean value to the current scope.\n"
+  remarks: "\n If the current scope is an object, you must supply a key. If the current scope is an array, key must be empty.\n"
   syntax: 
-    content: addBoolean(String key, Bool value)
+    content: Void addBoolean(String key, Bool value)
     parameters:
     - id: key
       type: CRMScript.Global.String
@@ -46,6 +62,8 @@ items:
     - id: value
       type: CRMScript.Global.Bool
       description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.Native.JSONBuilder.addFloat(String)
   commentId: M:CRMScript.Native.JSONBuilder.addFloat(String)
@@ -57,14 +75,19 @@ items:
   nameWithType: JSONBuilder.addFloat(String)
   fullName: CRMScript.Native.JSONBuilder.addFloat(String)
   type: Method
-  summary: "\nAdds a float value to the current scope. If the current scope is an object, you must supply a key. If the current scope is an array, key must be empty.\n"
-  remarks: 
+  summary: "\nAdds a float value to the current scope.\n"
+  remarks: "\n If the current scope is an object, you must supply a key. If the current scope is an array, key must be empty.\n"
   syntax: 
-    content: addFloat(String key, Float value)
+    content: Void addFloat(String key, Float value)
     parameters:
     - id: key
       type: CRMScript.Global.String
       description: 
+    - id: value
+      type: CRMScript.Global.Float
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.Native.JSONBuilder.addInteger(String,Integer)
   commentId: M:CRMScript.Native.JSONBuilder.addInteger(String,Integer)
@@ -76,17 +99,19 @@ items:
   nameWithType: JSONBuilder.addInteger(String,Integer)
   fullName: CRMScript.Native.JSONBuilder.addInteger(String,Integer)
   type: Method
-  summary: "\nAdds an integer value to the current scope. If the current scope is an object, you must supply a key. If the current scope is an array, key must be empty.\n"
-  remarks: 
+  summary: "\nAdds an integer value to the current scope.\n"
+  remarks: "\n If the current scope is an object, you must supply a key. If the current scope is an array, key must be empty.\n"
   syntax: 
-    content: addInteger(String key, Integer value)
+    content: Void addInteger(String key, Integer value)
     parameters:
     - id: key
       type: CRMScript.Global.String
       description: 
     - id: value
       type: CRMScript.Global.Integer
-      description: 
+      description:
+    return:
+      type: CRMScript.Global.Void 
   example: 
 - uid: CRMScript.Native.JSONBuilder.addString(String,String)
   commentId: M:CRMScript.Native.JSONBuilder.addString(String,String)
@@ -98,10 +123,10 @@ items:
   nameWithType: JSONBuilder.addString(String,String)
   fullName: CRMScript.Native.JSONBuilder.addString(String,String)
   type: Method
-  summary: "\nAdds a string value to the current scope. If the current scope is an object, you must supply a key. If the current scope is an array, key must be empty. The value does not need to be escaped, it will be escaped by JSONBuilder.\n"
-  remarks: 
+  summary: "\nAdds a string value to the current scope.\n"
+  remarks: "\n If the current scope is an object, you must supply a key. If the current scope is an array, key must be empty. The value does not need to be escaped, it will be escaped by JSONBuilder.\n"
   syntax: 
-    content: addString(String key, String value)
+    content: Void addString(String key, String value)
     parameters:
     - id: key
       type: CRMScript.Global.String
@@ -109,6 +134,8 @@ items:
     - id: value
       type: CRMScript.Global.String
       description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.Native.JSONBuilder.finalize()
   commentId: M:CRMScript.Native.JSONBuilder.finalize()
@@ -120,11 +147,13 @@ items:
   nameWithType: JSONBuilder.finalize()
   fullName: CRMScript.Native.JSONBuilder.finalize()
   type: Method
-  summary: "\nPops all levels out to the root. You can call this function instead of multiple<code>popLevel()</code>if you are at then end of your structure.\n"
-  remarks: 
+  summary: "\nPops all levels out to the root.\n"
+  remarks: "\nYou can call this function instead of multiple popLevel() if you are at then end of your structure.\n"
   syntax: 
-    content: finalize()
-    parameters:
+    content: Void finalize()
+    parameters: []
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.Native.JSONBuilder.getString()
   commentId: M:CRMScript.Native.JSONBuilder.getString()
@@ -136,28 +165,15 @@ items:
   nameWithType: JSONBuilder.getString()
   fullName: CRMScript.Native.JSONBuilder.getString()
   type: Method
-  summary: "\nReturns the JSON-formatted string that has been built by all push* and add* methods.\n"
+  summary: "\nReturns the JSON-formatted string that has been built by all push and add methods.\n"
   remarks: 
   syntax: 
-    content: getString()
-    parameters:
+    content: String getString()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: the JSON-formatted string
   example: 
-- uid: CRMScript.Native.JSONBuilder.#ctor()
-  commentId: M:CRMScript.Native.JSONBuilder.#ctor()
-  id: '#ctor()'
-  so.intellisense: Void.JSONBuilder
-  langs:
-  - crmscript
-  name: '#ctor()'
-  nameWithType: JSONBuilder.#ctor()
-  fullName: CRMScript.Native.JSONBuilder.#ctor()
-  type: Constructor
-  summary: "\nThe JSONBuilder class simplifies building JSON hierarchies. The result will be a string in correct JSON format, with string values properly escaped. This class is useful e.g. in combination with the HTTP class to make REST-calls.\n"
-  remarks: 
-  syntax: 
-    content: JSONBuilder
-  example: 
-  - "\n<pre><code>JSONBuilder jb;\njb.pushObject(&quot;&quot;);\njb.pushArray(&quot;persons&quot;);\n\njb.pushObject(&quot;&quot;);\njb.addString(&quot;firstname&quot;, &quot;John&quot;);\njb.addInteger(&quot;age&quot;, 40);\njb.popLevel();\n\njb.pushObject(&quot;&quot;);\njb.addString(&quot;firstname&quot;, &quot;Peter&quot;);\njb.addInteger(&quot;age&quot;, 34);\njb.popLevel();\n\njb.popLevel();\njb.popLevel(); // jb.finalize() could be used to pop all levels</code></pre>\n"
 - uid: CRMScript.Native.JSONBuilder.popLevel()
   commentId: M:CRMScript.Native.JSONBuilder.popLevel()
   id: 'popLevel()'
@@ -168,43 +184,55 @@ items:
   nameWithType: JSONBuilder.popLevel()
   fullName: CRMScript.Native.JSONBuilder.popLevel()
   type: Method
-  summary: "\nPops a level (i.e. closes an array or an object) in the JSONBuilder. Look at the root example for this class.\n"
-  remarks: 
+  summary: "\nPops a level (closes an array or an object) in the JSONBuilder.\n"
+  remarks: "\n Look at the root example for this class.\n"
   syntax: 
-    content: popLevel()
-    parameters:
+    content: Void popLevel()
+    parameters: []
+    return:
+      type: CRMScript.Global.Void
   example: 
-- uid: CRMScript.Native.JSONBuilder.pushArray()
-  commentId: M:CRMScript.Native.JSONBuilder.pushArray()
-  id: 'pushArray()'
+- uid: CRMScript.Native.JSONBuilder.pushArray(String)
+  commentId: M:CRMScript.Native.JSONBuilder.pushArray(String)
+  id: 'pushArray(String)'
   so.intellisense: JSONBuilder.pushArray
   langs:
   - crmscript
-  name: 'pushArray()'
-  nameWithType: JSONBuilder.pushArray()
-  fullName: CRMScript.Native.JSONBuilder.pushArray()
+  name: 'pushArray(String)'
+  nameWithType: JSONBuilder.pushArray(String)
+  fullName: CRMScript.Native.JSONBuilder.pushArray(String)
   type: Method
-  summary: "\nAdds an array to the JSONBuilder. Subsequent methods will add members inside the array. Normally, an array will be named (because it will be a named variable in the parent scope), except for when the array is the root of the JSON structure.\n"
-  remarks: 
+  summary: "\nAdds an array to the JSONBuilder. Subsequent methods will add members inside the array.\n"
+  remarks: "\nNormally, an array will be named (because it will be a named variable in the parent scope), except for when the array is the root of the JSON structure.\n"
   syntax: 
-    content: pushArray(String)
+    content: pushArray(String array)
     parameters:
+    - id: array
+      type: CRMScript.Global.String
+      description:
+    return:
+      type: CRMScript.Global.Void
   example: 
-- uid: CRMScript.Native.JSONBuilder.pushObject()
-  commentId: M:CRMScript.Native.JSONBuilder.pushObject()
-  id: 'pushObject()'
+- uid: CRMScript.Native.JSONBuilder.pushObject(String)
+  commentId: M:CRMScript.Native.JSONBuilder.pushObject(String)
+  id: 'pushObject(String)'
   so.intellisense: JSONBuilder.pushObject
   langs:
   - crmscript
-  name: 'pushObject()'
-  nameWithType: JSONBuilder.pushObject()
-  fullName: CRMScript.Native.JSONBuilder.pushObject()
+  name: 'pushObject(String)'
+  nameWithType: JSONBuilder.pushObject(String)
+  fullName: CRMScript.Native.JSONBuilder.pushObject(String)
   type: Method
-  summary: "\nAdds an object to the JSONBuilder. Subsequent methods will add members inside the object. Normally, an object will be named (because it will be a named variable in the parent scope), except for when the object is the root of the JSON structure.\n"
-  remarks: 
+  summary: "\nAdds an object to the JSONBuilder. Subsequent methods will add members inside the object.\n"
+  remarks: "\nNormally, an object will be named (because it will be a named variable in the parent scope), except for when the object is the root of the JSON structure.\n"
   syntax: 
-    content: pushObject(String)
+    content: Void pushObject(String object)
     parameters:
+    - id: object
+      type: CRMScript.Global.String
+      description:
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.Native.JSONBuilder.setPrettyPrint(Integer)
   commentId: M:CRMScript.Native.JSONBuilder.setPrettyPrint(Integer)
@@ -216,14 +244,16 @@ items:
   nameWithType: JSONBuilder.setPrettyPrint(Integer)
   fullName: CRMScript.Native.JSONBuilder.setPrettyPrint(Integer)
   type: Method
-  summary: "\nSets whether the JSON should be pretty formatted or not. Indent &gt; 0 will cause pretty printing, where indent is the number of spaces to indent a block level with.\n"
+  summary: "\nSets whether the JSON should be pretty formatted or not.\n"
   remarks: 
   syntax: 
     content: setPrettyPrint(Integer indent)
     parameters:
     - id: indent
       type: CRMScript.Global.Integer
-      description: 
+      description: Indent &gt; 0 will cause pretty printing, where indent is the number of spaces to indent a block level with.
+    return:
+      type: CRMScript.Global.Void
   example: 
 references:
 - uid: CRMScript.Native.JSONBuilder
@@ -250,3 +280,9 @@ references:
   name: Integer
   nameWithType: Integer
   fullName: CRMScript.Global.Integer
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void

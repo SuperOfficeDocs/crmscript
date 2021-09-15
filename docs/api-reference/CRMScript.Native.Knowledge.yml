@@ -3,12 +3,11 @@ items:
 - uid: CRMScript.Native.Knowledge
   commentId: T:CRMScript.Native.Knowledge
   id: Knowledge
-  so.intellisense: Void.Knowledge
   langs:
   - crmscript
   children:
-  - CRMScript.Native.Knowledge.buildExternalEntryURLWithParser(Integer)
-  - CRMScript.Native.Knowledge.#ctor()
+  - CRMScript.Native.Knowledge.#ctor
+  - CRMScript.Native.Knowledge.buildExternalEntryURLWithParser(Integer,Parser)
   - CRMScript.Native.Knowledge.rebuildFaqSearch(Integer,String)
   name: Knowledge
   nameWithType: Knowledge
@@ -16,39 +15,45 @@ items:
   type: Class
   summary: 
   example: 
-- uid: CRMScript.Native.Knowledge.buildExternalEntryURLWithParser(Integer)
-  commentId: M:CRMScript.Native.Knowledge.buildExternalEntryURLWithParser(Integer)
-  id: 'buildExternalEntryURLWithParser(Integer)'
-  so.intellisense: Knowledge.buildExternalEntryURLWithParser
-  langs:
-  - crmscript
-  name: 'buildExternalEntryURLWithParser(Integer)'
-  nameWithType: Knowledge.buildExternalEntryURLWithParser(Integer)
-  fullName: CRMScript.Native.Knowledge.buildExternalEntryURLWithParser(Integer)
-  type: Method
-  summary: "\nThis function builds an url to the customer center to view a knowledgebase entry.<p></p>\nThe function fetch the baseUrl from the registry table with reg_id 61. Then it parses the url with the input parser, and returns the url.<p></p>\n<ul><li><strong>Returns:</strong>the url to the knowledgebase entry.</li></ul>\n"
-  remarks: 
-  syntax: 
-    content: buildExternalEntryURLWithParser(Integer kbId, Parser parser)
-    parameters:
-    - id: kbId
-      type: CRMScript.Global.Integer
-      description: 
-  example: 
-- uid: CRMScript.Native.Knowledge.#ctor()
-  commentId: M:CRMScript.Native.Knowledge.#ctor()
-  id: '#ctor()'
+- uid: CRMScript.Native.Knowledge.#ctor
+  commentId: M:CRMScript.Native.Knowledge.#ctor
+  id: '#ctor'
   so.intellisense: Void.Knowledge
   langs:
   - crmscript
-  name: '#ctor()'
-  nameWithType: Knowledge.#ctor()
-  fullName: CRMScript.Native.Knowledge.#ctor()
+  name: '#ctor'
+  nameWithType: Knowledge.#ctor
+  fullName: CRMScript.Native.Knowledge.#ctor
   type: Constructor
-  summary: 
+  summary: "\nInitializes a new instance of the Knowledge class.\n"
   remarks: 
   syntax: 
     content: Knowledge
+  example: 
+- uid: CRMScript.Native.Knowledge.buildExternalEntryURLWithParser(Integer,Parser)
+  commentId: M:CRMScript.Native.Knowledge.buildExternalEntryURLWithParser(Integer,Parser)
+  id: 'buildExternalEntryURLWithParser(Integer,Parser)'
+  so.intellisense: Knowledge.buildExternalEntryURLWithParser
+  langs:
+  - crmscript
+  name: 'buildExternalEntryURLWithParser(Integer,Parser)'
+  nameWithType: Knowledge.buildExternalEntryURLWithParser(Integer,Parser)
+  fullName: CRMScript.Native.Knowledge.buildExternalEntryURLWithParser(Integer,Parser)
+  type: Method
+  summary: "\nBuilds a URL to the customer center to view a knowledge-base entry.\n"
+  remarks: "\nFetches the baseUrl from the registry table with reg_id 61. Then it parses the URL with the input parser, and returns the URL.\n"
+  syntax: 
+    content: String buildExternalEntryURLWithParser(Integer kbId, Parser parser)
+    parameters:
+    - id: kbId
+      type: CRMScript.Global.Integer
+      description: The ID of the knowledge-base entry to link to.
+    - id: parser
+      type: CRMScript.Native.Parser
+      description: The parser to use to parse the URL
+    return:
+      type: CRMScript.Global.String
+      description: the URL to the knowledge-base entry
   example: 
 - uid: CRMScript.Native.Knowledge.rebuildFaqSearch(Integer,String)
   commentId: M:CRMScript.Native.Knowledge.rebuildFaqSearch(Integer,String)
@@ -60,10 +65,10 @@ items:
   nameWithType: Knowledge.rebuildFaqSearch(Integer,String)
   fullName: CRMScript.Native.Knowledge.rebuildFaqSearch(Integer,String)
   type: Method
-  summary: "\nThis function rebuilds the FAQ search base based on the kbEntryId. Supply the originalTitle since the title is weighted higher than words in the Question and Answer sections.\n"
-  remarks: 
+  summary: "\nRebuilds the FAQ search base based on the kbEntryId.\n"
+  remarks: "\nSupply the originalTitle since the title is weighted higher than words in the Question and Answer sections.\n"
   syntax: 
-    content: rebuildFaqSearch(Integer kbEntryId, String originalTitle)
+    content: Void rebuildFaqSearch(Integer kbEntryId, String originalTitle)
     parameters:
     - id: kbEntryId
       type: CRMScript.Global.Integer
@@ -71,6 +76,8 @@ items:
     - id: originalTitle
       type: CRMScript.Global.String
       description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 references:
 - uid: CRMScript.Native.Knowledge
@@ -91,3 +98,15 @@ references:
   name: String
   nameWithType: String
   fullName: CRMScript.Global.String
+- uid: CRMScript.Native.Parser
+  commentId: T:CRMScript.Native.Parser
+  isExternal: true
+  name: Parser
+  nameWithType: Parser
+  fullName: CRMScript.Native.Parser
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void

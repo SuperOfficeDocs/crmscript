@@ -3,13 +3,13 @@ items:
 - uid: CRMScript.Native.FHBitSet
   commentId: T:CRMScript.Native.FHBitSet
   id: FHBitSet
-  so.intellisense: Void.FHBitSet
   langs:
   - crmscript
   children:
-  - CRMScript.Native.FHBitSet.#ctor()
+  - CRMScript.Native.FHBitSet.#ctor
   - CRMScript.Native.FHBitSet.getBitNo(Integer)
-  - CRMScript.Native.FHBitSet.set(Integer,String)
+  - CRMScript.Native.FHBitSet.set(Integer)
+  - CRMScript.Native.FHBitSet.set(String)
   - CRMScript.Native.FHBitSet.setBitNo(Integer,Bool)
   - CRMScript.Native.FHBitSet.toInteger()
   - CRMScript.Native.FHBitSet.toLsbString()
@@ -17,20 +17,20 @@ items:
   nameWithType: FHBitSet
   fullName: CRMScript.Native.FHBitSet
   type: Class
-  summary: "\nThis class is used to represent and manipulate a 32 bit bitset.\n"
+  summary: "\nUsed to represent and manipulate a 32 bit bitset.\n"
   example: 
   - "\n<pre><code>FHBitSet fh;\n\nfh.set(43);\nfh.setBitNo(15, true);\nprintLine(fh.toLsbString()); // Prints &quot;00000000000000001000000000101011&quot;</code></pre>\n"
-- uid: CRMScript.Native.FHBitSet.#ctor()
-  commentId: M:CRMScript.Native.FHBitSet.#ctor()
-  id: '#ctor()'
+- uid: CRMScript.Native.FHBitSet.#ctor
+  commentId: M:CRMScript.Native.FHBitSet.#ctor
+  id: '#ctor'
   so.intellisense: Void.FHBitSet
   langs:
   - crmscript
-  name: '#ctor()'
-  nameWithType: FHBitSet.#ctor()
-  fullName: CRMScript.Native.FHBitSet.#ctor()
+  name: '#ctor'
+  nameWithType: FHBitSet.#ctor
+  fullName: CRMScript.Native.FHBitSet.#ctor
   type: Constructor
-  summary: "\nThis class is used to represent and manipulate a 32 bit bitset.\n"
+  summary: "\nInitializes a new instance of the FHBitSet class.\n"
   remarks: 
   syntax: 
     content: FHBitSet
@@ -46,40 +46,61 @@ items:
   nameWithType: FHBitSet.getBitNo(Integer)
   fullName: CRMScript.Native.FHBitSet.getBitNo(Integer)
   type: Method
-  summary: "\nThis function returns true if a specified bit is set, false if not.\n"
+  summary: "\nChecks if a specified bit is set.\n"
   remarks: 
   syntax: 
-    content: getBitNo(Integer number)
+    content: Bool getBitNo(Integer number)
     parameters:
     - id: number
       type: CRMScript.Global.Integer
-      description: 
+      description: Bit number to check (0-31)
+    return:
+      type: CRMScript.Global.Bool
+      description: true if a specified bit is set; otherwise, false.
   example: 
-- uid: CRMScript.Native.FHBitSet.set(Integer,String)
-  commentId: M:CRMScript.Native.FHBitSet.set(Integer,String)
-  id: 'set(Integer,String)'
+- uid: CRMScript.Native.FHBitSet.set(Integer)
+  commentId: M:CRMScript.Native.FHBitSet.set(Integer)
+  id: 'set(Integer)'
   so.intellisense: FHBitSet.set
   langs:
   - crmscript
-  name: 'set(Integer,String)'
-  nameWithType: FHBitSet.set(Integer,String)
-  fullName: CRMScript.Native.FHBitSet.set(Integer,String)
+  name: 'set(Integer)'
+  nameWithType: FHBitSet.set(Integer)
+  fullName: CRMScript.Native.FHBitSet.set(Integer)
   type: Method
-  summary: "\nCRMScript method of class FHBitSet that initializes the bitset from either an Integer or a StringInitializes the bitset from either an Integer or a String.\n"
+  summary: "\nInitializes the bitset from an Integer.\n"
   remarks: 
   syntax: 
-    content: Void set()
+    content: Void set(Integer value)
     parameters:
     - id: value
       type: CRMScript.Global.Integer
       description: Used to initialize the bitset
+    return:
+      type: CRMScript.Global.Void
+  example: 
+  - "\n<pre><code>FHBitSet fh;\n\nfh.set(44);\nprint(fh.toLsbString());</code></pre>\n"
+- uid: CRMScript.Native.FHBitSet.set(String)
+  commentId: M:CRMScript.Native.FHBitSet.set(String)
+  id: 'set(String)'
+  so.intellisense: FHBitSet.set
+  langs:
+  - crmscript
+  name: 'set(String)'
+  nameWithType: FHBitSet.set(String)
+  fullName: CRMScript.Native.FHBitSet.set(String)
+  type: Method
+  summary: "\nInitializes the bitset from a String.\n"
+  remarks: 
+  syntax: 
+    content: Void set(String rep)
+    parameters:
     - id: rep
       type: CRMScript.Global.String
       description: Used to initialize the bitset. For example, &quot;1234&quot;
     return:
       type: CRMScript.Global.Void
   example: 
-  - "\n<pre><code>FHBitSet fh;\n\nfh.set(44);\nprint(fh.toLsbString());</code></pre>\n"
 - uid: CRMScript.Native.FHBitSet.setBitNo(Integer,Bool)
   commentId: M:CRMScript.Native.FHBitSet.setBitNo(Integer,Bool)
   id: 'setBitNo(Integer,Bool)'
@@ -90,19 +111,21 @@ items:
   nameWithType: FHBitSet.setBitNo(Integer,Bool)
   fullName: CRMScript.Native.FHBitSet.setBitNo(Integer,Bool)
   type: Method
-  summary: "\nThis function sets a specific bit.\n"
+  summary: "\nSets a specific bit.\n"
   remarks: 
   syntax: 
-    content: setBitNo(Integer number, Bool val)
+    content: Void setBitNo(Integer number, Bool val)
     parameters:
     - id: number
       type: CRMScript.Global.Integer
-      description: 
+      description: Index of the bit to set
     - id: val
       type: CRMScript.Global.Bool
-      description: 
+      description: Value to set this bit to - (True/False - 1/0)
+    return:
+      type: CRMScript.Global.Void
   example: 
-  - "\n<pre><code>FHBitSet fh;\n\nBool b = true;\nfh.set(0);\nfh.setBitNo(15, b);\nprint(fh.toLsbString());</code></pre><strong>Output:</strong>\n"
+  - "\n<pre><code>FHBitSet fh;\n\nBool b = true;\nfh.set(0);\nfh.setBitNo(15, b);\nprint(fh.toLsbString());</code></pre><strong>Output:</strong>00000000000000001000000000000000\n"
 - uid: CRMScript.Native.FHBitSet.toInteger()
   commentId: M:CRMScript.Native.FHBitSet.toInteger()
   id: 'toInteger()'
@@ -113,11 +136,14 @@ items:
   nameWithType: FHBitSet.toInteger()
   fullName: CRMScript.Native.FHBitSet.toInteger()
   type: Method
-  summary: "\nThis function returns the bitset as an integer.\n"
+  summary: "\nReturns the bitset as an integer.\n"
   remarks: 
   syntax: 
-    content: toInteger()
-    parameters:
+    content: Integer toInteger()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: The Integer representation of the bitset
   example: 
 - uid: CRMScript.Native.FHBitSet.toLsbString()
   commentId: M:CRMScript.Native.FHBitSet.toLsbString()
@@ -129,13 +155,16 @@ items:
   nameWithType: FHBitSet.toLsbString()
   fullName: CRMScript.Native.FHBitSet.toLsbString()
   type: Method
-  summary: "\nThis function returns a LSB (Least Significant Byte first) string representation of the bitset.\n"
+  summary: "\nReturns an LSB (Least Significant Byte first) string representation of the bitset.\n"
   remarks: 
   syntax: 
-    content: toLsbString()
-    parameters:
+    content: String toLsbString()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: The LSB string representation of the bitset.
   example: 
-  - "\n<pre><code>FHBitSet fh;\n\nfh.set(44);\nprint(fh.toLsbString());</code></pre><strong>Output:</strong>\n"
+  - "\n<pre><code>FHBitSet fh;\n\nfh.set(44);\nprint(fh.toLsbString());</code></pre><strong>Output:</strong>00000000000000000000000000101100\n"
 references:
 - uid: CRMScript.Native.FHBitSet
   commentId: T:CRMScript.Native.FHBitSet

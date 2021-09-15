@@ -3,7 +3,6 @@ items:
 - uid: CRMScript.Native.HtmlElement
   commentId: T:CRMScript.Native.HtmlElement
   id: HtmlElement
-  so.intellisense: Void.HtmlElement
   langs:
   - crmscript
   children:
@@ -11,11 +10,12 @@ items:
   - CRMScript.Native.HtmlElement.getFieldValue(String)
   - CRMScript.Native.HtmlElement.getNextTabIndex()
   - CRMScript.Native.HtmlElement.getTabIndexString()
+  - CRMScript.Native.HtmlElement.getTabIndexString(Bool)
   - CRMScript.Native.HtmlElement.getTypeName()
   - CRMScript.Native.HtmlElement.isEmpty()
   - CRMScript.Native.HtmlElement.setDisabled(Bool)
   - CRMScript.Native.HtmlElement.setErrorMessage(String)
-  - CRMScript.Native.HtmlElement.setFieldValue(String)
+  - CRMScript.Native.HtmlElement.setFieldValue(String,Map)
   - CRMScript.Native.HtmlElement.setFromCgi()
   - CRMScript.Native.HtmlElement.setInfoMessage(String)
   - CRMScript.Native.HtmlElement.setNotEditable(Bool)
@@ -27,7 +27,7 @@ items:
   nameWithType: HtmlElement
   fullName: CRMScript.Native.HtmlElement
   type: Class
-  summary: "\nThe CRMScript<strong>HtmlElement</strong>class represents HTML elements in the SuperOffice UI.\n"
+  summary: "\nRepresents HTML elements in the SuperOffice UI.\n"
   example: 
 - uid: CRMScript.Native.HtmlElement.clearValue()
   commentId: M:CRMScript.Native.HtmlElement.clearValue()
@@ -39,7 +39,7 @@ items:
   nameWithType: HtmlElement.clearValue()
   fullName: CRMScript.Native.HtmlElement.clearValue()
   type: Method
-  summary: 
+  summary: "\nClears any selected values from elements that support this property.\n"
   remarks: 
   syntax: 
     content: Void clearValue()
@@ -64,9 +64,10 @@ items:
     parameters:
     - id: field
       type: CRMScript.Global.String
-      description: 
+      description: The name of the field to get
     return:
       type: CRMScript.Global.String
+      description: The value of field
   example: 
 - uid: CRMScript.Native.HtmlElement.getNextTabIndex()
   commentId: M:CRMScript.Native.HtmlElement.getNextTabIndex()
@@ -78,13 +79,14 @@ items:
   nameWithType: HtmlElement.getNextTabIndex()
   fullName: CRMScript.Native.HtmlElement.getNextTabIndex()
   type: Method
-  summary: "\nThe HTML<code>tabindex</code>attribute specifies the tab order of an element. It determines the sequence of entering fields with Tab or Shift+Tab.\n"
-  remarks: 
+  summary: "\nIncrements the index counter and returns.\n"
+  remarks: "\nThe HTML tabindex attribute specifies the tab order of an element. It determines the sequence of entering fields with Tab or Shift+Tab.\n"
   syntax: 
     content: Integer getNextTabIndex()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
+      description: The next valid tab index number.
   example: 
 - uid: CRMScript.Native.HtmlElement.getTabIndexString()
   commentId: M:CRMScript.Native.HtmlElement.getTabIndexString()
@@ -96,14 +98,37 @@ items:
   nameWithType: HtmlElement.getTabIndexString()
   fullName: CRMScript.Native.HtmlElement.getTabIndexString()
   type: Method
-  summary: "\nCRMScript method in class HtmlElement that retrieves the tabulator index string of the elementReturns the tabulator index string of the element. By default, a special ID is added for the 1st element. You can optionally signal to omit element ID if it is the 1st element.<p></p>\nThe HTML<code>tabindex</code>attribute specifies the tab order of an element. It determines the sequence of entering fields with Tab or Shift+Tab.<p></p>\nA variant of<code>getTabIndexString()</code>that omits element ID if it is the 1st element.\n"
-  remarks: 
+  summary: "\nRetrieves the tabulator index string of the element<p></p>\nA variant of<code>getTabIndexString()</code>that omits element ID if it is the 1st element.\n"
+  remarks: "\nThe HTML tabindex attribute specifies the tab order of an element. It determines the sequence of entering fields with Tab or Shift+Tab.\n"
   syntax: 
     content: String getTabIndexString()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
+      description: the tabulator index string of the element
   example: 
+- uid: CRMScript.Native.HtmlElement.getTabIndexString(Bool)
+  commentId: M:CRMScript.Native.HtmlElement.getTabIndexString(Bool)
+  id: 'getTabIndexString(Bool)'
+  so.intellisense: HtmlElement.getTabIndexString
+  langs:
+  - crmscript
+  name: 'getTabIndexString(Bool)'
+  nameWithType: HtmlElement.getTabIndexString(Bool)
+  fullName: CRMScript.Native.HtmlElement.getTabIndexString(Bool)
+  type: Method
+  summary: "\nRetrieves the tabulator index string of the element and omits element ID if it is the 1st element.\n"
+  remarks: "\nThe HTML tabindex attribute specifies the tab order of an element. It determines the sequence of entering fields with Tab or Shift+Tab.\n"
+  syntax: 
+    content: String getTabIndexString(Bool noId)
+    parameters:
+    - id: noId
+      type: CRMScript.Global.Bool
+      description: omit element ID if it is the 1st element?
+    return:
+      type: CRMScript.Global.String
+      description: the tabulator index string of the element
+  example:
 - uid: CRMScript.Native.HtmlElement.getTypeName()
   commentId: M:CRMScript.Native.HtmlElement.getTypeName()
   id: 'getTypeName()'
@@ -114,14 +139,14 @@ items:
   nameWithType: HtmlElement.getTypeName()
   fullName: CRMScript.Native.HtmlElement.getTypeName()
   type: Method
-  summary: "\nReturns the element type. For example, HtmlAnchorLine or HtmlGrid.<p></p>\n[!TIP]
-Look up specific elements in the [bLogic screen element][1] reference.<p></p>\n<!-- Referenced links -->\n"
-  remarks: 
+  summary: "\nReturns the element type. For example, HtmlAnchorLine or HtmlGrid.\n"
+  remarks: "\nLook up specific elements in the bLogic screen element reference.\n"
   syntax: 
     content: String getTypeName()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
+      description: the element type
   example: 
 - uid: CRMScript.Native.HtmlElement.isEmpty()
   commentId: M:CRMScript.Native.HtmlElement.isEmpty()
@@ -134,12 +159,13 @@ Look up specific elements in the [bLogic screen element][1] reference.<p></p>\n<
   fullName: CRMScript.Native.HtmlElement.isEmpty()
   type: Method
   summary: "\nReturns true if the HtmlElement says it is empty.\n"
-  remarks: 
+  remarks: "\nThat an element is empty means different things depending on the element type. For example, a list element should be empty if it has no rows, but a code element should be empty if it contains no text.\n"
   syntax: 
     content: Bool isEmpty()
     parameters:
     return:
       type: CRMScript.Global.Bool
+      description: true if the HtmlElement says it is empty; otherwise, false
   example: 
 - uid: CRMScript.Native.HtmlElement.setDisabled(Bool)
   commentId: M:CRMScript.Native.HtmlElement.setDisabled(Bool)
@@ -151,14 +177,14 @@ Look up specific elements in the [bLogic screen element][1] reference.<p></p>\n<
   nameWithType: HtmlElement.setDisabled(Bool)
   fullName: CRMScript.Native.HtmlElement.setDisabled(Bool)
   type: Method
-  summary: "\nToggles whether the element is visible or invisible. Commonly used in combination with role-based access.\n"
-  remarks: 
+  summary: "\nToggles whether the element is visible or invisible.\n"
+  remarks: "\nCommonly used in combination with role-based access.\n"
   syntax: 
     content: Void setDisabled(Bool invisible)
     parameters:
     - id: invisible
       type: CRMScript.Global.Bool
-      description: 
+      description: true if the element should be invisible
     return:
       type: CRMScript.Global.Void
   example: 
@@ -172,36 +198,39 @@ Look up specific elements in the [bLogic screen element][1] reference.<p></p>\n<
   nameWithType: HtmlElement.setErrorMessage(String)
   fullName: CRMScript.Native.HtmlElement.setErrorMessage(String)
   type: Method
-  summary: "\nSets an error message above the element if the form is posted.<p></p>\nUsed to inform users that something went wrong and attempt to help them out.<p></p>\n<pre><code>HtmlElement page = getHtmlElement(&quot;HtmlPage&quot;);\npage.setErrorMessage(&quot;This page contains an error&quot;);</code></pre>\n"
-  remarks: 
+  summary: "\nSets an error message above the element if the form is posted.\n"
+  remarks: "\nUsed to inform users that something went wrong and attempt to help them out.\n"
   syntax: 
     content: Void setErrorMessage(String errorMessage)
     parameters:
     - id: errorMessage
       type: CRMScript.Global.String
-      description: 
+      description: The message to set
     return:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>HtmlElement page = getHtmlElement(&quot;HtmlPage&quot;);\npage.setErrorMessage(&quot;This page contains an error&quot;);</code></pre>\n"
-- uid: CRMScript.Native.HtmlElement.setFieldValue(String)
-  commentId: M:CRMScript.Native.HtmlElement.setFieldValue(String)
-  id: 'setFieldValue(String)'
+- uid: CRMScript.Native.HtmlElement.setFieldValue(String,Map)
+  commentId: M:CRMScript.Native.HtmlElement.setFieldValue(String,Map)
+  id: 'setFieldValue(String,Map)'
   so.intellisense: HtmlElement.setFieldValue
   langs:
   - crmscript
-  name: 'setFieldValue(String)'
-  nameWithType: HtmlElement.setFieldValue(String)
-  fullName: CRMScript.Native.HtmlElement.setFieldValue(String)
+  name: 'setFieldValue(String,Map)'
+  nameWithType: HtmlElement.setFieldValue(String,Map)
+  fullName: CRMScript.Native.HtmlElement.setFieldValue(String,Map)
   type: Method
-  summary: "\nSets 1 or more field values on an element.<p></p>\n<pre><code>HtmlElement formPage;\n\nMap m;\nm.insert(&quot;name&quot;, &quot;superButton&quot;);\nm.insert(&quot;label&quot;, &quot;Click me!&quot;);\nm.insert(&quot;style&quot;, &quot;StyleGreen&quot;);\n\nformPage.setFieldValue(&quot;addButton&quot;, m);</code></pre>\n"
+  summary: "\nSets one or more field values on an element.\n"
   remarks: 
   syntax: 
-    content: Void setFieldValue(String name, Map map)
+    content: Void setFieldValue(String name, Map values)
     parameters:
     - id: name
       type: CRMScript.Global.String
       description: 
+    - id: values
+      type: CRMScript.Global.Map
+      description:  Map of values
     return:
       type: CRMScript.Global.Void
   example: 
@@ -216,11 +245,11 @@ Look up specific elements in the [bLogic screen element][1] reference.<p></p>\n<
   nameWithType: HtmlElement.setFromCgi()
   fullName: CRMScript.Native.HtmlElement.setFromCgi()
   type: Method
-  summary: "\nCalled when the element should find its values from the CGI variables. Commonly used for [screens containing forms][1].<p></p>\n<!-- Referenced links -->\n"
-  remarks: 
+  summary: "\nCalled when the element should find its values from the CGI variables.\n"
+  remarks: "\nCommonly used for screens containing forms.\n"
   syntax: 
     content: Void setFromCgi()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Void
   example: 
@@ -234,14 +263,14 @@ Look up specific elements in the [bLogic screen element][1] reference.<p></p>\n<
   nameWithType: HtmlElement.setInfoMessage(String)
   fullName: CRMScript.Native.HtmlElement.setInfoMessage(String)
   type: Method
-  summary: "\nSets an info message above the element if the form is posted.<p></p>\nUsed to display the text of a purely informative nature.\n"
-  remarks: 
+  summary: "\nSets an info message above the element if the form is posted.\n"
+  remarks: "\nUsed to display the text of a purely informative nature.\n"
   syntax: 
     content: Void setInfoMessage(String infoMessage)
     parameters:
     - id: infoMessage
       type: CRMScript.Global.String
-      description: 
+      description: the message
     return:
       type: CRMScript.Global.Void
   example: 
@@ -255,14 +284,14 @@ Look up specific elements in the [bLogic screen element][1] reference.<p></p>\n<
   nameWithType: HtmlElement.setNotEditable(Bool)
   fullName: CRMScript.Native.HtmlElement.setNotEditable(Bool)
   type: Method
-  summary: "\nToggles whether the element can be edited (for those elements that support this property). Commonly used in combination with role-based access.\n"
-  remarks: 
+  summary: "\nToggles whether the element can be edited (for those elements that support this property).\n"
+  remarks: "\n Commonly used in combination with role-based access.<p></p>\nAvailable from 3.1.8.36\n"
   syntax: 
     content: Void setNotEditable(Bool canEdit)
     parameters:
     - id: canEdit
       type: CRMScript.Global.Bool
-      description: 
+      description: Can the element be edited?
     return:
       type: CRMScript.Global.Void
   example: 
@@ -276,14 +305,14 @@ Look up specific elements in the [bLogic screen element][1] reference.<p></p>\n<
   nameWithType: HtmlElement.setValue(String)
   fullName: CRMScript.Native.HtmlElement.setValue(String)
   type: Method
-  summary: "\nSets the value of a specific element.<p></p>\n<pre><code>HtmlElement selectDate;\nselectDate.setValue(&quot;2020.09.10&quot;);</code></pre>\n"
+  summary: "\nSets the value of a specific element.\n"
   remarks: 
   syntax: 
     content: Void setValue(String value)
     parameters:
     - id: value
       type: CRMScript.Global.String
-      description: 
+      description: value of the element
     return:
       type: CRMScript.Global.Void
   example: 
@@ -301,8 +330,11 @@ Look up specific elements in the [bLogic screen element][1] reference.<p></p>\n<
   summary: "\nReturns the value of the element as a Bool.\n"
   remarks: 
   syntax: 
-    content: toBool()
-    parameters:
+    content: Bool toBool()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: The boolean representation of the element
   example: 
 - uid: CRMScript.Native.HtmlElement.toInteger()
   commentId: M:CRMScript.Native.HtmlElement.toInteger()
@@ -317,8 +349,11 @@ Look up specific elements in the [bLogic screen element][1] reference.<p></p>\n<
   summary: "\nReturns the element value as an integer.\n"
   remarks: 
   syntax: 
-    content: toInteger()
-    parameters:
+    content: Integer toInteger()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: The numeric representation of the element
   example: 
 - uid: CRMScript.Native.HtmlElement.toString()
   commentId: M:CRMScript.Native.HtmlElement.toString()
@@ -333,8 +368,11 @@ Look up specific elements in the [bLogic screen element][1] reference.<p></p>\n<
   summary: "\nReturns the value of the element as a String.\n"
   remarks: 
   syntax: 
-    content: toString()
-    parameters:
+    content: String toString()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: The string representation of the element.
   example: 
 references:
 - uid: CRMScript.Native.HtmlElement
@@ -367,3 +405,9 @@ references:
   name: Bool
   nameWithType: Bool
   fullName: CRMScript.Global.Bool
+- uid: CRMScript.Global.Map
+  commentId: T:CRMScript.Global.Map
+  isExternal: true
+  name: Map
+  nameWithType: Map
+  fullName: CRMScript.Global.Map

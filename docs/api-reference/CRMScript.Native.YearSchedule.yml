@@ -7,31 +7,55 @@ items:
   langs:
   - crmscript
   children:
-  - CRMScript.Native.YearSchedule.addTimeSpan()
-  - CRMScript.Native.YearSchedule.addWS(WeekSchedule,Integer,Integer)
-  - CRMScript.Native.YearSchedule.getDifference()
   - CRMScript.Native.YearSchedule.#ctor()
+  - CRMScript.Native.YearSchedule.addTimeSpan(DateTime,TimeSpan)
+  - CRMScript.Native.YearSchedule.addWS(WeekSchedule,Integer,Integer)
+  - CRMScript.Native.YearSchedule.getDifference(DateTime,DateTime)
   name: YearSchedule
   nameWithType: YearSchedule
   fullName: CRMScript.Native.YearSchedule
   type: Class
-  summary: 
+  summary: "\nThis class is used to represent a year schedule. A year can be composed of several WeekSchedules.\n"
   example: 
-- uid: CRMScript.Native.YearSchedule.addTimeSpan()
-  commentId: M:CRMScript.Native.YearSchedule.addTimeSpan()
-  id: 'addTimeSpan()'
+- uid: CRMScript.Native.YearSchedule.#ctor()
+  commentId: M:CRMScript.Native.YearSchedule.#ctor()
+  id: '#ctor()'
+  so.intellisense: Void.YearSchedule
+  langs:
+  - crmscript
+  name: '#ctor()'
+  nameWithType: YearSchedule.#ctor()
+  fullName: CRMScript.Native.YearSchedule.#ctor()
+  type: Constructor
+  summary: "\nThis class is used to represent a year schedule. A year can be composed of several WeekSchedules.\n"
+  remarks: 
+  syntax: 
+    content: YearSchedule
+  example: 
+- uid: CRMScript.Native.YearSchedule.addTimeSpan(DateTime,TimeSpan)
+  commentId: M:CRMScript.Native.YearSchedule.addTimeSpan(DateTime,TimeSpan)
+  id: 'addTimeSpan(DateTime,TimeSpan)'
   so.intellisense: YearSchedule.addTimeSpan
   langs:
   - crmscript
-  name: 'addTimeSpan()'
-  nameWithType: YearSchedule.addTimeSpan()
-  fullName: CRMScript.Native.YearSchedule.addTimeSpan()
+  name: 'addTimeSpan(DateTime,TimeSpan)'
+  nameWithType: YearSchedule.addTimeSpan(DateTime,TimeSpan)
+  fullName: CRMScript.Native.YearSchedule.addTimeSpan(DateTime,TimeSpan)
   type: Method
   summary: "\nThis function adds a timespan to the current year schedule.\n"
   remarks: 
   syntax: 
-    content: addTimeSpan(DateTime dt, TimeSpan sp)
+    content: DateTime addTimeSpan(DateTime dt, TimeSpan sp)
     parameters:
+    - id: dt
+      type: CRMScript.Global.DateTime
+      description: Start time for calculation
+    - id: sp
+      type: CRMScript.Native.TimeSpan
+      description:  The timespan to add (2 days, 1 hours, 5 minutes, 30 seconds...)
+    return:
+      type: CRMScript.Native.DateTime
+      description:
   example: 
 - uid: CRMScript.Native.YearSchedule.addWS(WeekSchedule,Integer,Integer)
   commentId: M:CRMScript.Native.YearSchedule.addWS(WeekSchedule,Integer,Integer)
@@ -46,17 +70,20 @@ items:
   summary: "\nThis function adds a week schedule to the year schedule.\n"
   remarks: 
   syntax: 
-    content: addWS(WeekSchedule ws, Integer mStop, Integer dStop)
+    content: Void addWS(WeekSchedule ws, Integer mStop, Integer dStop)
     parameters:
     - id: ws
       type: CRMScript.Native.WeekSchedule
-      description: 
+      description: Add this weekschedule to the yearschedule.
     - id: mStop
       type: CRMScript.Global.Integer
-      description: 
+      description: The given weekschedule is active to this month
     - id: dStop
       type: CRMScript.Global.Integer
-      description: 
+      description: The given weekschedule is active to this day
+    return:
+      type: CRMScript.Global.Void
+      description:
   example: 
 - uid: CRMScript.Native.YearSchedule.getDifference()
   commentId: M:CRMScript.Native.YearSchedule.getDifference()
@@ -68,26 +95,20 @@ items:
   nameWithType: YearSchedule.getDifference()
   fullName: CRMScript.Native.YearSchedule.getDifference()
   type: Method
-  summary: "\nGet difference between two given times. The function returns a timespan.\n"
+  summary: "\nGet difference between two given times. The function returns a timespan.<p></p>\nCounting will skip inactive periodes, defined by the different weekschedules that may be crossed.\n"
   remarks: 
   syntax: 
-    content: getDifference(DateTime from, DateTime to)
+    content: TimeSpan getDifference(DateTime from, DateTime to)
     parameters:
-  example: 
-- uid: CRMScript.Native.YearSchedule.#ctor()
-  commentId: M:CRMScript.Native.YearSchedule.#ctor()
-  id: '#ctor()'
-  so.intellisense: Void.YearSchedule
-  langs:
-  - crmscript
-  name: '#ctor()'
-  nameWithType: YearSchedule.#ctor()
-  fullName: CRMScript.Native.YearSchedule.#ctor()
-  type: Constructor
-  summary: 
-  remarks: 
-  syntax: 
-    content: YearSchedule
+      - id: from
+        type: CRMScript.Global.DateTime
+        description: Count from this date
+      - id: to
+        type: CRMScript.Global.DateTime
+        description: Count to this date
+    return:
+      type: CRMScript.Native.TimeSpan
+      description:
   example: 
 references:
 - uid: CRMScript.Native.YearSchedule
@@ -108,3 +129,15 @@ references:
   name: Integer
   nameWithType: Integer
   fullName: CRMScript.Global.Integer
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void
+- uid: CRMScript.Native.TimeSpan
+  commentId: T:CRMScript.Native.TimeSpan
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: CRMScript.Native.TimeSpan

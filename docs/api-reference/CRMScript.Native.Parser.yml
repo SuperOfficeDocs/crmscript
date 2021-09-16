@@ -3,23 +3,38 @@ items:
 - uid: CRMScript.Native.Parser
   commentId: T:CRMScript.Native.Parser
   id: Parser
-  so.intellisense: Void.Parser
   langs:
   - crmscript
   children:
+  - CRMScript.Native.Parser.#ctor
   - CRMScript.Native.Parser.addVariable(String,String)
   - CRMScript.Native.Parser.evaluateString(String)
   - CRMScript.Native.Parser.getVariable(String,Integer)
   - CRMScript.Native.Parser.getVariableCount(String)
-  - CRMScript.Native.Parser.#ctor()
   - CRMScript.Native.Parser.parseString(String)
   - CRMScript.Native.Parser.setVariable(String,String)
-  - CRMScript.Native.Parser.toParser()
+  - CRMScript.Native.Parser.toParser(Parser)
   name: Parser
   nameWithType: Parser
   fullName: CRMScript.Native.Parser
   type: Class
-  summary: "\nThe Parser class is a template engine. A Parser instance can set template variable values, then parse a formatted string containing template variable placeholders to replace their values.\n"
+  summary: "\nA template engine. A Parser instance can set template variable values, then parse a formatted string containing template variable placeholders to replace their values.\n"
+  example: 
+  - "\n<pre><code>Parser p;\np.setVariable(&quot;firstName&quot;, &quot;Jack&quot;);\np.setVariable(&quot;lastName&quot;, &quot;Black&quot;);\n\nString output = p.parseString(&quot;Hello [[firstName]] [[lastName]]!&quot;);\n\nprintLine(output);</code></pre>\n"
+- uid: CRMScript.Native.Parser.#ctor
+  commentId: M:CRMScript.Native.Parser.#ctor
+  id: '#ctor'
+  so.intellisense: Void.Parser
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: Parser.#ctor
+  fullName: CRMScript.Native.Parser.#ctor
+  type: Constructor
+  summary: "\nInitializes a new instance of the Parser class.\n"
+  remarks: 
+  syntax: 
+    content: Parser
   example: 
   - "\n<pre><code>Parser p;\np.setVariable(&quot;firstName&quot;, &quot;Jack&quot;);\np.setVariable(&quot;lastName&quot;, &quot;Black&quot;);\n\nString output = p.parseString(&quot;Hello [[firstName]] [[lastName]]!&quot;);\n\nprintLine(output);</code></pre>\n"
 - uid: CRMScript.Native.Parser.addVariable(String,String)
@@ -32,17 +47,19 @@ items:
   nameWithType: Parser.addVariable(String,String)
   fullName: CRMScript.Native.Parser.addVariable(String,String)
   type: Method
-  summary: "\nThis function adds a variable and its value to the parser\n"
+  summary: "\nAdds a variable and its value to the parser.\n"
   remarks: 
   syntax: 
-    content: addVariable(String field, String value)
+    content: Void addVariable(String field, String value)
     parameters:
     - id: field
       type: CRMScript.Global.String
-      description: 
+      description: the field to add
     - id: value
       type: CRMScript.Global.String
-      description: 
+      description: the value of the field
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.Native.Parser.evaluateString(String)
   commentId: M:CRMScript.Native.Parser.evaluateString(String)
@@ -54,16 +71,17 @@ items:
   nameWithType: Parser.evaluateString(String)
   fullName: CRMScript.Native.Parser.evaluateString(String)
   type: Method
-  summary: "\nParse a text, and return the evaluated result from a RETURN statement inside the text.<p></p>\nReturns any string set by a RETURN statement inside stringToParse.\n"
+  summary: "\nParses a text and return the evaluated result from a RETURN statement inside the text.\n"
   remarks: 
   syntax: 
     content: String evaluateString(String stringToParse)
     parameters:
     - id: stringToParse
       type: CRMScript.Global.String
-      description: 
+      description: The string to parse.
     return:
       type: CRMScript.Global.String
+      description: any string set by a RETURN statement inside stringToParse
   example: 
 - uid: CRMScript.Native.Parser.getVariable(String,Integer)
   commentId: M:CRMScript.Native.Parser.getVariable(String,Integer)
@@ -75,17 +93,20 @@ items:
   nameWithType: Parser.getVariable(String,Integer)
   fullName: CRMScript.Native.Parser.getVariable(String,Integer)
   type: Method
-  summary: "\nReturn the value at the given index with the given name from the Parser instance.\n"
+  summary: "\nReturns the value at the given index with the given name from the Parser instance.\n"
   remarks: 
   syntax: 
-    content: getVariable(String name, Integer row)
+    content: String getVariable(String name, Integer row)
     parameters:
     - id: name
       type: CRMScript.Global.String
-      description: 
+      description: The name of the variable to return.
     - id: row
       type: CRMScript.Global.Integer
-      description: 
+      description: The zero-based index of the value to return.
+    return:
+      type: CRMScript.Global.String
+      description: The value at the given index with the given name
   example: 
 - uid: CRMScript.Native.Parser.getVariableCount(String)
   commentId: M:CRMScript.Native.Parser.getVariableCount(String)
@@ -97,31 +118,18 @@ items:
   nameWithType: Parser.getVariableCount(String)
   fullName: CRMScript.Native.Parser.getVariableCount(String)
   type: Method
-  summary: "\nReturn the number of values for the given variable in the Parser instance.\n"
+  summary: "\nReturns the number of values for the given variable in the Parser instance.\n"
   remarks: 
   syntax: 
-    content: getVariableCount(String name)
-    parameters:
+    content: Integer getVariableCount(String name)
+    parameters: 
     - id: name
       type: CRMScript.Global.String
-      description: 
+      description: The name of the variable.
+    return:
+      type: CRMScript.Global.Integer
+      description: the number of values of the given variable.
   example: 
-- uid: CRMScript.Native.Parser.#ctor()
-  commentId: M:CRMScript.Native.Parser.#ctor()
-  id: '#ctor()'
-  so.intellisense: Void.Parser
-  langs:
-  - crmscript
-  name: '#ctor()'
-  nameWithType: Parser.#ctor()
-  fullName: CRMScript.Native.Parser.#ctor()
-  type: Constructor
-  summary: "\nThe Parser class is a template engine. A Parser instance can set template variable values, then parse a formatted string containing template variable placeholders to replace their values.\n"
-  remarks: 
-  syntax: 
-    content: Parser
-  example: 
-  - "\n<pre><code>Parser p;\np.setVariable(&quot;firstName&quot;, &quot;Jack&quot;);\np.setVariable(&quot;lastName&quot;, &quot;Black&quot;);\n\nString output = p.parseString(&quot;Hello [[firstName]] [[lastName]]!&quot;);\n\nprintLine(output);</code></pre>\n"
 - uid: CRMScript.Native.Parser.parseString(String)
   commentId: M:CRMScript.Native.Parser.parseString(String)
   id: 'parseString(String)'
@@ -132,16 +140,17 @@ items:
   nameWithType: Parser.parseString(String)
   fullName: CRMScript.Native.Parser.parseString(String)
   type: Method
-  summary: "\nParse a text and return the result.<p></p>\nReturns the parsed result.\n"
+  summary: "\nParses a text and return the result.\n"
   remarks: 
   syntax: 
     content: String parseString(String stringToParse)
     parameters:
     - id: stringToParse
       type: CRMScript.Global.String
-      description: 
+      description: The string containing the text to parse.
     return:
       type: CRMScript.Global.String
+      description: the parsed result.
   example: 
 - uid: CRMScript.Native.Parser.setVariable(String,String)
   commentId: M:CRMScript.Native.Parser.setVariable(String,String)
@@ -153,33 +162,38 @@ items:
   nameWithType: Parser.setVariable(String,String)
   fullName: CRMScript.Native.Parser.setVariable(String,String)
   type: Method
-  summary: "\nSet the variable with the given name to the given value in the Parser instance.  Existing<code>value(s)</code>will be overwritten with this new value.\n"
-  remarks: 
+  summary: "\nSets the variable with the given name to the given value in the Parser instance.\n"
+  remarks: "\nExisting values will be overwritten with this new value.\n"
   syntax: 
-    content: setVariable(String name, String value)
+    content: Void setVariable(String name, String value)
     parameters:
     - id: name
       type: CRMScript.Global.String
-      description: 
+      description: The name of the variable to set.
     - id: value
       type: CRMScript.Global.String
-      description: 
+      description: The value to set.
+    return:
+      type: CRMScript.Global.Void
   example: 
-- uid: CRMScript.Native.Parser.toParser()
-  commentId: M:CRMScript.Native.Parser.toParser()
-  id: 'toParser()'
+- uid: CRMScript.Native.Parser.toParser(Parser)
+  commentId: M:CRMScript.Native.Parser.toParser(Parser)
+  id: 'toParser(Parser)'
   so.intellisense: Parser.toParser
   langs:
   - crmscript
-  name: 'toParser()'
-  nameWithType: Parser.toParser()
-  fullName: CRMScript.Native.Parser.toParser()
+  name: 'toParser(Parser)'
+  nameWithType: Parser.toParser(Parser)
+  fullName: CRMScript.Native.Parser.toParser(Parser)
   type: Method
-  summary: "\nThis function copies all values in the input parser to the original parser.\n"
+  summary: "\nCopies all values in the input parser to the original parser.\n"
   remarks: 
   syntax: 
     content: toParser(Parser parser)
     parameters:
+    - id: parser
+      type: CRMScript.Native.Parser
+      description: the parser to copy the values from
   example: 
 references:
 - uid: CRMScript.Native.Parser
@@ -200,3 +214,9 @@ references:
   name: Integer
   nameWithType: Integer
   fullName: CRMScript.Global.Integer
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void

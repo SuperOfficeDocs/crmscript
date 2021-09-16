@@ -3,10 +3,10 @@ items:
 - uid: CRMScript.Native.SpmCustomerList
   commentId: T:CRMScript.Native.SpmCustomerList
   id: SpmCustomerList
-  so.intellisense: Void.SpmCustomerList
   langs:
   - crmscript
   children:
+  - CRMScript.Native.SpmCustomerList.#ctor
   - CRMScript.Native.SpmCustomerList.addRecipient(Integer)
   - CRMScript.Native.SpmCustomerList.delete()
   - CRMScript.Native.SpmCustomerList.load(Integer)
@@ -14,12 +14,26 @@ items:
   - CRMScript.Native.SpmCustomerList.save()
   - CRMScript.Native.SpmCustomerList.setFolderId(Integer)
   - CRMScript.Native.SpmCustomerList.setName(String)
-  - CRMScript.Native.SpmCustomerList.#ctor()
   name: SpmCustomerList
   nameWithType: SpmCustomerList
   fullName: CRMScript.Native.SpmCustomerList
   type: Class
   summary: 
+  example: 
+- uid: CRMScript.Native.SpmCustomerList.#ctor
+  commentId: M:CRMScript.Native.SpmCustomerList.#ctor
+  id: '#ctor'
+  so.intellisense: Void.SpmCustomerList
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: SpmCustomerList.#ctor
+  fullName: CRMScript.Native.SpmCustomerList.#ctor
+  type: Constructor
+  summary: "\nInitializes a new instance of the SpmCustomerList class.\n"
+  remarks: 
+  syntax: 
+    content: SpmCustomerList
   example: 
 - uid: CRMScript.Native.SpmCustomerList.addRecipient(Integer)
   commentId: M:CRMScript.Native.SpmCustomerList.addRecipient(Integer)
@@ -31,14 +45,16 @@ items:
   nameWithType: SpmCustomerList.addRecipient(Integer)
   fullName: CRMScript.Native.SpmCustomerList.addRecipient(Integer)
   type: Method
-  summary: "\nThis method will add an recipient to the list. Be aware that the recipient must exist as a customer in the database.\n"
-  remarks: 
+  summary: "\nAdds a recipient to the list.\n"
+  remarks: "\nThe recipient must exist as a customer in the database."
   syntax: 
-    content: addRecipient(Integer customerId)
+    content: Void addRecipient(Integer customerId)
     parameters:
     - id: customerId
       type: CRMScript.Global.Integer
-      description: 
+      description: The ID of the customer to add.
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.Native.SpmCustomerList.delete()
   commentId: M:CRMScript.Native.SpmCustomerList.delete()
@@ -50,11 +66,14 @@ items:
   nameWithType: SpmCustomerList.delete()
   fullName: CRMScript.Native.SpmCustomerList.delete()
   type: Method
-  summary: "\nThis method will delete the current recipients list. It is not possible to delete a list that currently is in use.<p></p>\n<ul><li><strong>Returns:</strong>true if the list was deleted. False if the list does not exist or it currently is in use</li></ul>\n"
-  remarks: 
+  summary: "\nDeletes the current recipients list.\n"
+  remarks: "\nIt is not possible to delete a list that currently is in use.\n"
   syntax: 
-    content: delete()
-    parameters:
+    content: Bool delete()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: true if the list was deleted; false if the list does not exist or it currently is in use
   example: 
 - uid: CRMScript.Native.SpmCustomerList.load(Integer)
   commentId: M:CRMScript.Native.SpmCustomerList.load(Integer)
@@ -66,14 +85,17 @@ items:
   nameWithType: SpmCustomerList.load(Integer)
   fullName: CRMScript.Native.SpmCustomerList.load(Integer)
   type: Method
-  summary: "\nLoad an existing customer list.\n"
+  summary: "\nLoads an existing customer list.\n"
   remarks: 
   syntax: 
     content: load(Integer id)
     parameters:
     - id: id
       type: CRMScript.Global.Integer
-      description: 
+      description: ID of the list to load
+    return:
+      type: CRMScript.Global.Bool
+      description: true if successful; otherwise, false
   example: 
 - uid: CRMScript.Native.SpmCustomerList.removeRecipients()
   commentId: M:CRMScript.Native.SpmCustomerList.removeRecipients()
@@ -88,8 +110,10 @@ items:
   summary: "\nIf you have loaded a valid customer list, this method will remove all recipients both from the database and any you may have added using &quot;addRecipient&quot;. Be aware that even if you do not save the list, the recipients will still be removed from the database.\n"
   remarks: 
   syntax: 
-    content: removeRecipients()
-    parameters:
+    content: Void removeRecipients()
+    parameters: []
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.Native.SpmCustomerList.save()
   commentId: M:CRMScript.Native.SpmCustomerList.save()
@@ -101,11 +125,14 @@ items:
   nameWithType: SpmCustomerList.save()
   fullName: CRMScript.Native.SpmCustomerList.save()
   type: Method
-  summary: "\nThis method will save the current list. If the list does not already exist in the database, it will be created.<p></p>\n<ul><li><strong>Returns:</strong>id of the list. -1 if the list could not be saved.</li></ul>\n"
+  summary: "\nSaves the current list. If the list does not already exist in the database, it will be created.\n"
   remarks: 
   syntax: 
-    content: save()
-    parameters:
+    content: Integer save()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: ID of the list; -1 if the list could not be saved
   example: 
 - uid: CRMScript.Native.SpmCustomerList.setFolderId(Integer)
   commentId: M:CRMScript.Native.SpmCustomerList.setFolderId(Integer)
@@ -120,11 +147,13 @@ items:
   summary: "\nSets the folder for this list.\n"
   remarks: 
   syntax: 
-    content: setFolderId(Integer folderId)
+    content: Void setFolderId(Integer folderId)
     parameters:
     - id: folderId
       type: CRMScript.Global.Integer
-      description: 
+      description: ID of the folder where you want the list
+    return:
+      type: CRMScript.Global.Void 
   example: 
 - uid: CRMScript.Native.SpmCustomerList.setName(String)
   commentId: M:CRMScript.Native.SpmCustomerList.setName(String)
@@ -136,29 +165,16 @@ items:
   nameWithType: SpmCustomerList.setName(String)
   fullName: CRMScript.Native.SpmCustomerList.setName(String)
   type: Method
-  summary: "\nSet the name of the list. This is only used in the GUI when viewing the lists.\n"
-  remarks: 
+  summary: "\nSets the name of the list.\n"
+  remarks: "\nUsed only in the GUI when viewing the lists.\n"
   syntax: 
-    content: setName(String name)
+    content: Void setName(String name)
     parameters:
     - id: name
       type: CRMScript.Global.String
-      description: 
-  example: 
-- uid: CRMScript.Native.SpmCustomerList.#ctor()
-  commentId: M:CRMScript.Native.SpmCustomerList.#ctor()
-  id: '#ctor()'
-  so.intellisense: Void.SpmCustomerList
-  langs:
-  - crmscript
-  name: '#ctor()'
-  nameWithType: SpmCustomerList.#ctor()
-  fullName: CRMScript.Native.SpmCustomerList.#ctor()
-  type: Constructor
-  summary: 
-  remarks: 
-  syntax: 
-    content: SpmCustomerList
+      description: The name of the list
+    return:
+      type: CRMScript.Global.Void
   example: 
 references:
 - uid: CRMScript.Native.SpmCustomerList
@@ -179,3 +195,15 @@ references:
   name: String
   nameWithType: String
   fullName: CRMScript.Global.String
+- uid: CRMScript.Global.Bool
+  commentId: T:CRMScript.Global.Bool
+  isExternal: true
+  name: Bool
+  nameWithType: Bool
+  fullName: CRMScript.Global.Bool
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void

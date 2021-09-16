@@ -3,24 +3,38 @@ items:
 - uid: CRMScript.Native.SpmStaticList
   commentId: T:CRMScript.Native.SpmStaticList
   id: SpmStaticList
-  so.intellisense: Void.SpmStaticList
   langs:
   - crmscript
   children:
+  - CRMScript.Native.SpmStaticList.#ctor
   - CRMScript.Native.SpmStaticList.addRecipient(String,String)
   - CRMScript.Native.SpmStaticList.delete()
   - CRMScript.Native.SpmStaticList.getRecipients()
-  - CRMScript.Native.SpmStaticList.load(Integer,Returns)
+  - CRMScript.Native.SpmStaticList.sload(Integer)
   - CRMScript.Native.SpmStaticList.removeRecipient(String)
   - CRMScript.Native.SpmStaticList.save()
   - CRMScript.Native.SpmStaticList.setFolderId(Integer)
   - CRMScript.Native.SpmStaticList.setName(String)
-  - CRMScript.Native.SpmStaticList.#ctor()
   name: SpmStaticList
   nameWithType: SpmStaticList
   fullName: CRMScript.Native.SpmStaticList
   type: Class
-  summary: 
+  summary: "\nWith this class you can create and edit static lists in the eMarketeer. A static list consist of one or more email addresses (and possible a matching name) which will be used when creating a shipment.\n"
+  example: 
+- uid: CRMScript.Native.SpmStaticList.#ctor
+  commentId: M:CRMScript.Native.SpmStaticList.#ctor
+  id: '#ctor'
+  so.intellisense: Void.SpmStaticList
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: SpmStaticList.#ctor
+  fullName: CRMScript.Native.SpmStaticList.#ctor
+  type: Constructor
+  summary: "\nInitializes a new instance of the SpmStaticList class.\n"
+  remarks: 
+  syntax: 
+    content: SpmStaticList
   example: 
 - uid: CRMScript.Native.SpmStaticList.addRecipient(String,String)
   commentId: M:CRMScript.Native.SpmStaticList.addRecipient(String,String)
@@ -32,17 +46,19 @@ items:
   nameWithType: SpmStaticList.addRecipient(String,String)
   fullName: CRMScript.Native.SpmStaticList.addRecipient(String,String)
   type: Method
-  summary: "\nAdd a recipient to the static list. You have to specify the email address of the recipient (the first parameter) and optional you can specify the name of the recipient.\n"
-  remarks: 
+  summary: "\nAdds a recipient to the static list.\n"
+  remarks: "\nYou must specify the email address of the recipient (the first parameter) and optional you can specify the name of the recipient.\n"
   syntax: 
-    content: addRecipient(String address, String name)
+    content: Void addRecipient(String address, String name)
     parameters:
     - id: address
       type: CRMScript.Global.String
-      description: 
+      description: the email address of the recipient
     - id: name
       type: CRMScript.Global.String
-      description: 
+      description: the name of the recipient
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.Native.SpmStaticList.delete()
   commentId: M:CRMScript.Native.SpmStaticList.delete()
@@ -54,11 +70,14 @@ items:
   nameWithType: SpmStaticList.delete()
   fullName: CRMScript.Native.SpmStaticList.delete()
   type: Method
-  summary: "\nThis method will delete a static list. If the list is in use by a shipment, the list will not be deleted.<p></p>\n<ul><li><strong>Returns:</strong>Indicates if the list was actually deleted or not</li></ul>\n"
-  remarks: 
+  summary: "\nDeletes a static list.\n"
+  remarks: "\nIf the list is in use by a shipment, the list will not be deleted.\n"
   syntax: 
-    content: delete()
-    parameters:
+    content: Bool delete()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: if the list was actually deleted; otherwise, false
   example: 
 - uid: CRMScript.Native.SpmStaticList.getRecipients()
   commentId: M:CRMScript.Native.SpmStaticList.getRecipients()
@@ -70,33 +89,36 @@ items:
   nameWithType: SpmStaticList.getRecipients()
   fullName: CRMScript.Native.SpmStaticList.getRecipients()
   type: Method
-  summary: "\nGet a map of all the recipients in this list. The first element will be the email address and the second element the name of the recipient.<p></p>\n<ul><li><strong>Returns:</strong>A map containing all the recipients</li></ul>\n"
+  summary: "\nGets a map of all the recipients in this list. The first element will be the email address and the second element the name of the recipient.\n"
   remarks: 
   syntax: 
-    content: getRecipients()
-    parameters:
+    content: Map getRecipients()
+    parameters: []
+    return:
+      type: CRMScript.Global.Map
+      description: A map containing all the recipients
   example: 
-- uid: CRMScript.Native.SpmStaticList.load(Integer,Returns)
-  commentId: M:CRMScript.Native.SpmStaticList.load(Integer,Returns)
-  id: 'load(Integer,Returns)'
+- uid: CRMScript.Native.SpmStaticList.sload(Integer)
+  commentId: M:CRMScript.Native.SpmStaticList.sload(Integer)
+  id: 'sload(Integer)'
   so.intellisense: SpmStaticList.load
   langs:
   - crmscript
-  name: 'load(Integer,Returns)'
-  nameWithType: SpmStaticList.load(Integer,Returns)
-  fullName: CRMScript.Native.SpmStaticList.load(Integer,Returns)
+  name: 'sload(Integer)'
+  nameWithType: SpmStaticList.sload(Integer)
+  fullName: CRMScript.Native.SpmStaticList.sload(Integer)
   type: Method
-  summary: "\nWill load an existing static list.\n"
+  summary: "\nLoads an existing static list.\n"
   remarks: 
   syntax: 
-    content: load(Integer id)
+    content: Bool load(Integer id)
     parameters:
     - id: id
       type: CRMScript.Global.Integer
-      description: 
-    - id: Returns
-      type: CRMScript.Native.Returns
-      description: 
+      description: The ID of the static list
+    return:
+      type: CRMScript.Global.Bool
+      description: false if the list was not found; otherwise, true
   example: 
 - uid: CRMScript.Native.SpmStaticList.removeRecipient(String)
   commentId: M:CRMScript.Native.SpmStaticList.removeRecipient(String)
@@ -111,11 +133,13 @@ items:
   summary: "\nRemoves a recipient from the list identified by the email address.\n"
   remarks: 
   syntax: 
-    content: removeRecipient(String address)
+    content: Void removeRecipient(String address)
     parameters:
     - id: address
       type: CRMScript.Global.String
-      description: 
+      description:  The email address of the recipient to be removed
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.Native.SpmStaticList.save()
   commentId: M:CRMScript.Native.SpmStaticList.save()
@@ -127,11 +151,14 @@ items:
   nameWithType: SpmStaticList.save()
   fullName: CRMScript.Native.SpmStaticList.save()
   type: Method
-  summary: "\nThis method will save the list and the recipients.<p></p>\n<ul><li><strong>Returns:</strong>The id of the SpmStaticList object</li></ul>\n"
+  summary: "\nSaves the list and the recipients.\n"
   remarks: 
   syntax: 
-    content: save()
-    parameters:
+    content: Integer save()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      describes: The ID of the SpmStaticList object
   example: 
 - uid: CRMScript.Native.SpmStaticList.setFolderId(Integer)
   commentId: M:CRMScript.Native.SpmStaticList.setFolderId(Integer)
@@ -143,14 +170,16 @@ items:
   nameWithType: SpmStaticList.setFolderId(Integer)
   fullName: CRMScript.Native.SpmStaticList.setFolderId(Integer)
   type: Method
-  summary: "\nThis method will set folder id for a static list.\n"
+  summary: "\nSets folder ID for a static list.\n"
   remarks: 
   syntax: 
-    content: setFolderId(Integer folderId)
+    content: Void setFolderId(Integer folderId)
     parameters:
     - id: folderId
       type: CRMScript.Global.Integer
-      description: 
+      description: The ID of the folder for this list
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.Native.SpmStaticList.setName(String)
   commentId: M:CRMScript.Native.SpmStaticList.setName(String)
@@ -162,29 +191,16 @@ items:
   nameWithType: SpmStaticList.setName(String)
   fullName: CRMScript.Native.SpmStaticList.setName(String)
   type: Method
-  summary: "\nSets the name of this list. This is only a descriptive text which will be shown in eJournal.\n"
-  remarks: 
+  summary: "\nSets the name of this list.\n"
+  remarks: "\nThis is only a descriptive text that will be shown in Service.\n"
   syntax: 
-    content: setName(String name)
+    content: Void setName(String name)
     parameters:
     - id: name
       type: CRMScript.Global.String
-      description: 
-  example: 
-- uid: CRMScript.Native.SpmStaticList.#ctor()
-  commentId: M:CRMScript.Native.SpmStaticList.#ctor()
-  id: '#ctor()'
-  so.intellisense: Void.SpmStaticList
-  langs:
-  - crmscript
-  name: '#ctor()'
-  nameWithType: SpmStaticList.#ctor()
-  fullName: CRMScript.Native.SpmStaticList.#ctor()
-  type: Constructor
-  summary: 
-  remarks: 
-  syntax: 
-    content: SpmStaticList
+      description: The name of the list
+    return:
+      type: CRMScript.Global.Void
   example: 
 references:
 - uid: CRMScript.Native.SpmStaticList
@@ -205,9 +221,21 @@ references:
   name: Integer
   nameWithType: Integer
   fullName: CRMScript.Global.Integer
-- uid: CRMScript.Native.Returns
-  commentId: T:CRMScript.Native.Returns
+- uid: CRMScript.Global.Bool
+  commentId: T:CRMScript.Global.Bool
   isExternal: true
-  name: Returns
-  nameWithType: Returns
-  fullName: CRMScript.Native.Returns
+  name: Bool
+  nameWithType: Bool
+  fullName: CRMScript.Global.Bool
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void
+- uid: CRMScript.Global.Map
+  commentId: T:CRMScript.Global.Map
+  isExternal: true
+  name: Map
+  nameWithType: Map
+  fullName: CRMScript.Global.Map

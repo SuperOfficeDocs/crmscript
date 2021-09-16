@@ -22,11 +22,14 @@ items:
   - CRMScript.Native.Ticket.log(String)
   - CRMScript.Native.Ticket.log(String,String)
   - CRMScript.Native.Ticket.notifyEmail(Integer)
-  - CRMScript.Native.Ticket.save(String,Bool)
-  - CRMScript.Native.Ticket.sendMessages(String,Bool,String,Integer,String)
+  - CRMScript.Native.Ticket.save()
+  - CRMScript.Native.Ticket.save(String)
+  - CRMScript.Native.Ticket.save(Bool,Bool)
+  - CRMScript.Native.Ticket.save(String,Bool,Bool)
+  - CRMScript.Native.Ticket.sendMessages(String,StringMatrix,Bool,String,Integer,String)
   - CRMScript.Native.Ticket.setValue(String,String)
-  - CRMScript.Native.Ticket.toParser()
-  - CRMScript.Native.Ticket.toParserRaw()
+  - CRMScript.Native.Ticket.toParser(Parser)
+  - CRMScript.Native.Ticket.toParserRaw(Parser)
   name: Ticket
   nameWithType: Ticket
   fullName: CRMScript.Native.Ticket
@@ -430,15 +433,15 @@ items:
       type: CRMScript.Global.Integer
       description: the Id of the saved ticket
   example: 
-- uid: CRMScript.Native.Ticket.sendMessages(String,Bool,String,Integer,String)
-  commentId: M:CRMScript.Native.Ticket.sendMessages(String,Bool,String,Integer,String)
-  id: 'sendMessages(String,Bool,String,Integer,String)'
+- uid: CRMScript.Native.Ticket.sendMessages(String,StringMatrix,Bool,String,Integer,String)
+  commentId: M:CRMScript.Native.Ticket.sendMessages(String,StringMatrix,Bool,String,Integer,String)
+  id: 'sendMessages(String,StringMatrix,Bool,String,Integer,String)'
   so.intellisense: Ticket.sendMessages
   langs:
   - crmscript
-  name: 'sendMessages(String,Bool,String,Integer,String)'
-  nameWithType: Ticket.sendMessages(String,Bool,String,Integer,String)
-  fullName: CRMScript.Native.Ticket.sendMessages(String,Bool,String,Integer,String)
+  name: 'sendMessages(String,StringMatrix,Bool,String,Integer,String)'
+  nameWithType: Ticket.sendMessages(String,StringMatrix,Bool,String,Integer,String)
+  fullName: CRMScript.Native.Ticket.sendMessages(String,StringMatrix,Bool,String,Integer,String)
   type: Method
   summary: "\nWill send the given messages just like the forward ticket functionality in the GUI. The forwarded messages are separated by a line, and the comment is placed on top of the mail.\n"
   remarks: "\nThe recipients string matrix is formatted like this:<p></p>To | John Doe &lt;john.doe@john.doe&gt; Cc | jane Doe &lt;jane.doe@jane.doe&gt;\n"
@@ -492,15 +495,15 @@ items:
       type: CRMScript.Global.Void
       description:
   example: 
-- uid: CRMScript.Native.Ticket.toParser()
-  commentId: M:CRMScript.Native.Ticket.toParser()
-  id: 'toParser()'
+- uid: CRMScript.Native.Ticket.toParser(Parser)
+  commentId: M:CRMScript.Native.Ticket.toParser(Parser)
+  id: 'toParser(Parser)'
   so.intellisense: Ticket.toParser
   langs:
   - crmscript
-  name: 'toParser()'
+  name: 'toParser(Parser)'
   nameWithType: Ticket.toParser()
-  fullName: CRMScript.Native.Ticket.toParser()
+  fullName: CRMScript.Native.Ticket.toParser(Parser)
   type: Method
   summary: "\nThis function will fill the variable space of the Parser with all values of the ticket.\nAs opposed to the function<code>toParserRaw()</code>, the String variables title and author are in html.\n"
   remarks: 
@@ -514,15 +517,15 @@ items:
       type: CRMScript.Global.Void
       description:
   example: 
-- uid: CRMScript.Native.Ticket.toParserRaw()
-  commentId: M:CRMScript.Native.Ticket.toParserRaw()
-  id: 'toParserRaw()'
+- uid: CRMScript.Native.Ticket.toParserRaw(Parser)
+  commentId: M:CRMScript.Native.Ticket.toParserRaw(Parser)
+  id: 'toParserRaw(Parser)'
   so.intellisense: Ticket.toParserRaw
   langs:
   - crmscript
-  name: 'toParserRaw()'
-  nameWithType: Ticket.toParserRaw()
-  fullName: CRMScript.Native.Ticket.toParserRaw()
+  name: 'toParserRaw(Parser)'
+  nameWithType: Ticket.toParserRaw(Parser)
+  fullName: CRMScript.Native.Ticket.toParserRaw(Parser)
   type: Method
   summary: "\nThis function fills the Parser with the values of the ticket.\nAs opposed to the function<code>toParser()</code>who set several of the String-values as html, all these variables will be in plain text.\n"
   remarks: 

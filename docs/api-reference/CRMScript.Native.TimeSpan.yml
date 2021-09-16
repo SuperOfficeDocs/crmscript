@@ -7,6 +7,7 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.Native.TimeSpan.#ctor()
   - CRMScript.Native.TimeSpan.addDay(Integer)
   - CRMScript.Native.TimeSpan.addHour(Integer)
   - CRMScript.Native.TimeSpan.addMin(Integer)
@@ -20,7 +21,6 @@ items:
   - CRMScript.Native.TimeSpan.isNegative()
   - CRMScript.Native.TimeSpan.set(Integer,Integer,Integer,Integer,Integer)
   - CRMScript.Native.TimeSpan.setNegative(Bool)
-  - CRMScript.Native.TimeSpan.#ctor()
   - CRMScript.Native.TimeSpan.toDays()
   - CRMScript.Native.TimeSpan.toHours()
   - CRMScript.Native.TimeSpan.toMinutes()
@@ -30,7 +30,22 @@ items:
   nameWithType: TimeSpan
   fullName: CRMScript.Native.TimeSpan
   type: Class
-  summary: 
+  summary: "\nA class for representing a timespan.\n"
+  example: 
+- uid: CRMScript.Native.TimeSpan.#ctor()
+  commentId: M:CRMScript.Native.TimeSpan.#ctor()
+  id: '#ctor()'
+  so.intellisense: Void.TimeSpan
+  langs:
+  - crmscript
+  name: '#ctor()'
+  nameWithType: TimeSpan.#ctor()
+  fullName: CRMScript.Native.TimeSpan.#ctor()
+  type: Constructor
+  summary: "\nA class for representing a timespan.\n"
+  remarks: 
+  syntax: 
+    content: TimeSpan
   example: 
 - uid: CRMScript.Native.TimeSpan.addDay(Integer)
   commentId: M:CRMScript.Native.TimeSpan.addDay(Integer)
@@ -45,11 +60,14 @@ items:
   summary: "\nThis function will add the given number of days to the currently set timespan.\n"
   remarks: 
   syntax: 
-    content: addDay(Integer num)
+    content: Void addDay(Integer num)
     parameters:
     - id: num
       type: CRMScript.Global.Integer
-      description: 
+      description: Number of days to add to the timespan
+    return:
+      type: CRMScript.Global.Void
+      description:
   example: 
 - uid: CRMScript.Native.TimeSpan.addHour(Integer)
   commentId: M:CRMScript.Native.TimeSpan.addHour(Integer)
@@ -64,11 +82,14 @@ items:
   summary: "\nThis function will add the given number of hours to the currently set timespan.\n"
   remarks: 
   syntax: 
-    content: addHour(Integer num)
+    content: Void addHour(Integer num)
     parameters:
     - id: num
       type: CRMScript.Global.Integer
-      description: 
+      description: Number of hours to add to the timespan
+    return:
+      type: CRMScript.Global.Void
+      description:
   example: 
 - uid: CRMScript.Native.TimeSpan.addMin(Integer)
   commentId: M:CRMScript.Native.TimeSpan.addMin(Integer)
@@ -83,11 +104,14 @@ items:
   summary: "\nThis function will add the given number of minutes to the currently set timespan.\n"
   remarks: 
   syntax: 
-    content: addMin(Integer num)
+    content: Void addMin(Integer num)
     parameters:
     - id: num
       type: CRMScript.Global.Integer
-      description: 
+      description: Number of minutes to add to the timespan
+    return:
+      type: CRMScript.Global.Void
+      description:
   example: 
 - uid: CRMScript.Native.TimeSpan.addSec(Integer)
   commentId: M:CRMScript.Native.TimeSpan.addSec(Integer)
@@ -102,11 +126,14 @@ items:
   summary: "\nThis function will add the given number of seconds to the currently set timespan.\n"
   remarks: 
   syntax: 
-    content: addSec(Integer num)
+    content: Void addSec(Integer num)
     parameters:
     - id: num
       type: CRMScript.Global.Integer
-      description: 
+      description: Number of seconds to add to the timespan
+    return:
+      type: CRMScript.Global.Void
+      description:
   example: 
 - uid: CRMScript.Native.TimeSpan.addYear(Integer)
   commentId: M:CRMScript.Native.TimeSpan.addYear(Integer)
@@ -121,11 +148,14 @@ items:
   summary: "\nThis function will add the given number of years to the currently set timespan.\n"
   remarks: 
   syntax: 
-    content: addYear(Integer num)
+    content: Void addYear(Integer num)
     parameters:
     - id: num
       type: CRMScript.Global.Integer
-      description: 
+      description: Number of years to add to the timespan
+    return:
+      type: CRMScript.Global.Void
+      description:
   example: 
 - uid: CRMScript.Native.TimeSpan.getDay()
   commentId: M:CRMScript.Native.TimeSpan.getDay()
@@ -140,8 +170,11 @@ items:
   summary: "\nThis function will return the day field of the timespan as an integer.\n"
   remarks: 
   syntax: 
-    content: getDay()
+    content: Integer getDay()
     parameters:
+    return:
+      type: CRMScript.Global.Integer
+      description: Day field as an integer
   example: 
 - uid: CRMScript.Native.TimeSpan.getHour()
   commentId: M:CRMScript.Native.TimeSpan.getHour()
@@ -156,8 +189,11 @@ items:
   summary: "\nThis function will return the hour field of the timespan as an integer.\n"
   remarks: 
   syntax: 
-    content: getHour()
+    content: Integer getHour()
     parameters:
+    return:
+      type: CRMScript.Global.Integer
+      description:
   example: 
 - uid: CRMScript.Native.TimeSpan.getMin()
   commentId: M:CRMScript.Native.TimeSpan.getMin()
@@ -172,8 +208,11 @@ items:
   summary: "\nThis function will return the minute field of the timespan as an integer.\n"
   remarks: 
   syntax: 
-    content: getMin()
+    content: Integer getMin()
     parameters:
+    return:
+      type: CRMScript.Global.Integer
+      description:
   example: 
 - uid: CRMScript.Native.TimeSpan.getSec()
   commentId: M:CRMScript.Native.TimeSpan.getSec()
@@ -188,8 +227,11 @@ items:
   summary: "\nThis function will return the seconds field of the timespan as an integer.\n"
   remarks: 
   syntax: 
-    content: getSec()
+    content: Integer getSec()
     parameters:
+    return:
+      type: CRMScript.Global.Void
+      description:
   example: 
 - uid: CRMScript.Native.TimeSpan.getYear()
   commentId: M:CRMScript.Native.TimeSpan.getYear()
@@ -204,8 +246,11 @@ items:
   summary: "\nThis function will return the year field of the timespan as an integer.\n"
   remarks: 
   syntax: 
-    content: getYear()
+    content: Integer getYear()
     parameters:
+    return:
+      type: CRMScript.Global.Integer
+      description:
   example: 
 - uid: CRMScript.Native.TimeSpan.isNegative()
   commentId: M:CRMScript.Native.TimeSpan.isNegative()
@@ -217,11 +262,14 @@ items:
   nameWithType: TimeSpan.isNegative()
   fullName: CRMScript.Native.TimeSpan.isNegative()
   type: Method
-  summary: "\nThe return value is true if this is a negative timespan, othewise false.\n"
+  summary: "\nThe return value is true if this is a negative timespan, otherwise false.\n"
   remarks: 
   syntax: 
-    content: isNegative()
+    content: Bool isNegative()
     parameters:
+    return:
+      type: CRMScript.Global.Bool
+      description:
   example: 
 - uid: CRMScript.Native.TimeSpan.set(Integer,Integer,Integer,Integer,Integer)
   commentId: M:CRMScript.Native.TimeSpan.set(Integer,Integer,Integer,Integer,Integer)
@@ -236,23 +284,26 @@ items:
   summary: "\nThis function is used to initialize a timespan object.\n"
   remarks: 
   syntax: 
-    content: set(Integer years, Integer days, Integer hours, Integer minutes, Integer seconds)
+    content: Void set(Integer years, Integer days, Integer hours, Integer minutes, Integer seconds)
     parameters:
     - id: years
       type: CRMScript.Global.Integer
-      description: 
+      description: Number of years
     - id: days
       type: CRMScript.Global.Integer
-      description: 
+      description: Number of days
     - id: hours
       type: CRMScript.Global.Integer
-      description: 
+      description: Number of hours
     - id: minutes
       type: CRMScript.Global.Integer
-      description: 
+      description: Number of minutes
     - id: seconds
       type: CRMScript.Global.Integer
-      description: 
+      description: Number of seconds
+    return:
+      type: CRMScript.Global.Void
+      description:
   example: 
 - uid: CRMScript.Native.TimeSpan.setNegative(Bool)
   commentId: M:CRMScript.Native.TimeSpan.setNegative(Bool)
@@ -267,26 +318,14 @@ items:
   summary: "\nPositive timespan is default, but if you add a negative number of years/days/hours/minutes/seconds, you may get a negative timespan.\n"
   remarks: 
   syntax: 
-    content: setNegative(Bool negative)
+    content: Void setNegative(Bool negative)
     parameters:
     - id: negative
       type: CRMScript.Global.Bool
       description: 
-  example: 
-- uid: CRMScript.Native.TimeSpan.#ctor()
-  commentId: M:CRMScript.Native.TimeSpan.#ctor()
-  id: '#ctor()'
-  so.intellisense: Void.TimeSpan
-  langs:
-  - crmscript
-  name: '#ctor()'
-  nameWithType: TimeSpan.#ctor()
-  fullName: CRMScript.Native.TimeSpan.#ctor()
-  type: Constructor
-  summary: 
-  remarks: 
-  syntax: 
-    content: TimeSpan
+    return:
+      type: CRMScript.Global.Void
+      description:
   example: 
 - uid: CRMScript.Native.TimeSpan.toDays()
   commentId: M:CRMScript.Native.TimeSpan.toDays()
@@ -301,8 +340,11 @@ items:
   summary: "\nThis function will return the timespan as a number of days. A one year timespan will return 365.\n"
   remarks: 
   syntax: 
-    content: toDays()
+    content: Integer toDays()
     parameters:
+    return:
+      type: CRMScript.Global.Integer
+      description:
   example: 
 - uid: CRMScript.Native.TimeSpan.toHours()
   commentId: M:CRMScript.Native.TimeSpan.toHours()
@@ -317,8 +359,11 @@ items:
   summary: "\nThis function will return the timespan as a number of hours. A one day timespan will return 24.\n"
   remarks: 
   syntax: 
-    content: toHours()
+    content: Integer toHours()
     parameters:
+    return:
+      type: CRMScript.Global.Integer
+      description:
   example: 
 - uid: CRMScript.Native.TimeSpan.toMinutes()
   commentId: M:CRMScript.Native.TimeSpan.toMinutes()
@@ -333,8 +378,11 @@ items:
   summary: "\nThis function will return the timespan as a number of minutes. A one hour timespan will return 60.\n"
   remarks: 
   syntax: 
-    content: toMinutes()
+    content: Integer toMinutes()
     parameters:
+    return:
+      type: CRMScript.Global.Integer
+      description:
   example: 
 - uid: CRMScript.Native.TimeSpan.toSeconds()
   commentId: M:CRMScript.Native.TimeSpan.toSeconds()
@@ -349,8 +397,11 @@ items:
   summary: "\nThis function will return the timespan as a number of seconds. A one minute timespan will return 60.\n"
   remarks: 
   syntax: 
-    content: toSeconds()
+    content: Integer toSeconds()
     parameters:
+    return:
+      type: CRMScript.Global.Integer
+      description:
   example: 
 - uid: CRMScript.Native.TimeSpan.toString(Integer,Integer,Integer,Bool)
   commentId: M:CRMScript.Native.TimeSpan.toString(Integer,Integer,Integer,Bool)
@@ -365,21 +416,24 @@ items:
   summary: 
   remarks: 
   syntax: 
-    content: toString(Integer mode, Integer lang, Integer maxMode, Bool short)
+    content: String toString(Integer mode, Integer lang, Integer maxMode, Bool short)
     parameters:
     - id: mode
       type: CRMScript.Global.Integer
-      description: 
+      description: Mode2Year = 0 Mode2Day = 1 Mode2Hour = 2 Mode2Min = 3 Mode2Sec = 4
     - id: lang
       type: CRMScript.Global.Integer
-      description: 
+      description: 0 = Norwegian; 1 = English; 2 = German; 3 = Swedish; 4 = Danish; 5 = Dutch
     - id: maxMode
       type: CRMScript.Global.Integer
-      description: 
+      description: Mode2Year = 0 Mode2Day = 1 Mode2Hour = 2 Mode2Min = 3 Mode2Sec = 4
     - id: short
       type: CRMScript.Global.Bool
-      description: 
-  example: 
+      description: True if you want short version of text (e.g. "m" instead of "minutes").
+    return:
+      type: CRMScript.Global.String
+      description: A string representation of the timespan, on the given format and in the given language.
+  example: "\n<pre><code>TimeSpan ts;\nprintLine(ts.toString(3,1,1,false));</code></pre>\n"
 references:
 - uid: CRMScript.Native.TimeSpan
   commentId: T:CRMScript.Native.TimeSpan

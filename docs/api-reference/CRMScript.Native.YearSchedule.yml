@@ -54,7 +54,7 @@ items:
       type: CRMScript.Native.TimeSpan
       description:  The timespan to add (2 days, 1 hours, 5 minutes, 30 seconds...)
     return:
-      type: CRMScript.Native.DateTime
+      type: CRMScript.Global.DateTime
       description:
   example: 
 - uid: CRMScript.Native.YearSchedule.addWS(WeekSchedule,Integer,Integer)
@@ -85,15 +85,15 @@ items:
       type: CRMScript.Global.Void
       description:
   example: 
-- uid: CRMScript.Native.YearSchedule.getDifference()
-  commentId: M:CRMScript.Native.YearSchedule.getDifference()
-  id: 'getDifference()'
+- uid: CRMScript.Native.YearSchedule.getDifference(DateTime,DateTime)
+  commentId: M:CRMScript.Native.YearSchedule.getDifference(DateTime,DateTime)
+  id: 'getDifference(DateTime,DateTime)'
   so.intellisense: YearSchedule.getDifference
   langs:
   - crmscript
-  name: 'getDifference()'
-  nameWithType: YearSchedule.getDifference()
-  fullName: CRMScript.Native.YearSchedule.getDifference()
+  name: 'getDifference(DateTime,DateTime)'
+  nameWithType: YearSchedule.getDifference(DateTime,DateTime)
+  fullName: CRMScript.Native.YearSchedule.getDifference(DateTime,DateTime)
   type: Method
   summary: "\nGet difference between two given times. The function returns a timespan.<p></p>\nCounting will skip inactive periodes, defined by the different weekschedules that may be crossed.\n"
   remarks: 
@@ -141,3 +141,9 @@ references:
   name: TimeSpan
   nameWithType: TimeSpan
   fullName: CRMScript.Native.TimeSpan
+- uid: CRMScript.Global.DateTime
+  commentId: T:CRMScript.Global.DateTime
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: CRMScript.Global.DateTime

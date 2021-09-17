@@ -3,10 +3,10 @@ items:
 - uid: CRMScript.Native.SearchEngine
   commentId: T:CRMScript.Native.SearchEngine
   id: SearchEngine
-  so.intellisense: Void.SearchEngine
   langs:
   - crmscript
   children:
+  - CRMScript.Native.SearchEngine.#ctor
   - CRMScript.Native.SearchEngine.addComparison(String,String,String,String,String,String,Integer)
   - CRMScript.Native.SearchEngine.addCriteria(String,String,String,String,String,Integer)
   - CRMScript.Native.SearchEngine.addData(String,String)
@@ -24,7 +24,7 @@ items:
   - CRMScript.Native.SearchEngine.eof()
   - CRMScript.Native.SearchEngine.execute()
   - CRMScript.Native.SearchEngine.executeHTMLTable()
-  - CRMScript.Native.SearchEngine.executeInto()
+  - CRMScript.Native.SearchEngine.executeInto(StringMatrix)
   - CRMScript.Native.SearchEngine.executeJSON()
   - CRMScript.Native.SearchEngine.executeNS()
   - CRMScript.Native.SearchEngine.executeTextTable()
@@ -36,7 +36,6 @@ items:
   - CRMScript.Native.SearchEngine.getFieldsJSON()
   - CRMScript.Native.SearchEngine.insert()
   - CRMScript.Native.SearchEngine.next()
-  - CRMScript.Native.SearchEngine.#ctor()
   - CRMScript.Native.SearchEngine.select()
   - CRMScript.Native.SearchEngine.setCallBack(String)
   - CRMScript.Native.SearchEngine.setDBDistinct(Bool)
@@ -48,9 +47,24 @@ items:
   nameWithType: SearchEngine
   fullName: CRMScript.Native.SearchEngine
   type: Class
-  summary: "\nThe SearchEngine is originally made for searching and fetching data from the eJournal database. Thereby its name. Has later been extended with features for inserting and updating rows. The SearchEngine is a tool for building up SQL queries, by adding fields, criteria, and data.<p></p>\nThe fields must be given on the following form: starttablename.fieldname, for example &quot;ticket.title&quot;. For tables that have foreign keys to other tables, you can reach them with the following notation: starttablename.fieldname.fieldname For example, the firstname of the primary customer of a ticket is: &quot;ticket.cust_id.firstname&quot;. The company name of the primary customer of a ticket is: &quot;ticket.cust_id.company.name&quot;.<p></p>\nMake sure that all fields you use that start with the same table, for example, ticket, or else you will receive a big join that you probably do not want.<p></p>\nFor many-to-many relations there is a special notation: table1.(table2-&gt;field2a).field2b Where field2a is a field in table2 that has a foreign key to table1.\n"
+  summary: "\nA tool for building up SQL queries, by adding fields, criteria, and data. The fields must be given on the following form: starttablename.fieldname, for example &quot;ticket.title&quot;. For tables that have foreign keys to other tables, you can reach them with the following notation: starttablename.fieldname.fieldname For example, the firstname of the primary customer of a ticket is: &quot;ticket.cust_id.firstname&quot;. The company name of the primary customer of a ticket is: &quot;ticket.cust_id.company.name&quot;.<p></p>\nMake sure that all fields you use that start with the same table, for example, ticket, or else you will receive a big join that you probably do not want.<p></p>\nFor many-to-many relations there is a special notation: table1.(table2-&gt;field2a).field2b Where field2a is a field in table2 that has a foreign key to table1.<p></p>\nFrom CS version 7, the aggregate functions are no longer supported, since the query is sent to NetServer instead of directly to the database. It is possible to circumvent this by setting the reg_id 235 to 1 and explicitly use bypassNetserver(true) in the SearchEngine. Be aware of any security implications this might cause.\n"
   example: 
-  - "\n<pre><code>&quot;ticket.(ticket_customers-&gt;ticket_id).cust_id&quot;</code></pre>From CS version 7, the aggregate functions are no longer supported, since the query is sent to NetServer instead of directly to the database.\n"
+  - "\n<pre><code>ticket.(ticket_customers->ticket_id).cust_id</code></pre>\n"
+- uid: CRMScript.Native.SearchEngine.#ctor
+  commentId: M:CRMScript.Native.SearchEngine.#ctor
+  id: '#ctor'
+  so.intellisense: Void.SearchEngine
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: SearchEngine.#ctor
+  fullName: CRMScript.Native.SearchEngine.#ctor
+  type: Constructor
+  summary: "\nInitializes a new instance of the SearchEngine class.\n"
+  remarks: 
+  syntax: 
+    content: SearchEngine
+  example: 
 - uid: CRMScript.Native.SearchEngine.addComparison(String,String,String,String,String,String,Integer)
   commentId: M:CRMScript.Native.SearchEngine.addComparison(String,String,String,String,String,String,Integer)
   id: 'addComparison(String,String,String,String,String,String,Integer)'
@@ -132,17 +146,19 @@ items:
   nameWithType: SearchEngine.addData(String,String)
   fullName: CRMScript.Native.SearchEngine.addData(String,String)
   type: Method
-  summary: "\nAdds data for use in an update or insert query<p></p>\n<ul><li><strong>field:</strong>The field to set</li><li><strong>value:</strong>The value to set on the field</li></ul>\n"
+  summary: "\nAdds data for use in an update or insert query.\n"
   remarks: 
   syntax: 
-    content: addData(String field, String value)
+    content: Void addData(String field, String value)
     parameters:
     - id: field
       type: CRMScript.Global.String
-      description: 
+      description: The field to set
     - id: value
       type: CRMScript.Global.String
-      description: 
+      description: The value to set on the field
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.Native.SearchEngine.addDataField(String,String,String)
   commentId: M:CRMScript.Native.SearchEngine.addDataField(String,String,String)
@@ -202,10 +218,10 @@ items:
   nameWithType: SearchEngine.addFields(String,String)
   fullName: CRMScript.Native.SearchEngine.addFields(String,String)
   type: Method
-  summary: "\nThis method is a shortcut to add multiple fields to a query. The method will add all fields in the commaseparated string &quot;fields&quot;, prefixed by &quot;table&quot; and a dot &quot;.&quot;.\n"
+  summary: "\nA shortcut to add multiple fields to a query. Adds all fields in the comma-separated string &quot;fields&quot;, prefixed by &quot;table&quot; and a dot &quot;.&quot;.\n"
   remarks: 
   syntax: 
-    content: addFields(String table, String fields)
+    content: Void addFields(String table, String fields)
     parameters:
     - id: table
       type: CRMScript.Global.String
@@ -213,6 +229,8 @@ items:
     - id: fields
       type: CRMScript.Global.String
       description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>addFields(&quot;ticket&quot;, &quot;id,title,category.fullname,cust_id.fullName&quot;);</code></pre>\n"
 - uid: CRMScript.Native.SearchEngine.addHaving(String,String,String,String,String,Integer)
@@ -259,10 +277,10 @@ items:
   nameWithType: SearchEngine.addJoinCriteria(String,String,String,String,Integer)
   fullName: CRMScript.Native.SearchEngine.addJoinCriteria(String,String,String,String,Integer)
   type: Method
-  summary: "\nThis method doesn't work with NetServer.<p></p>\nYou need to bypass NetServer (see the method bypassNetServer) if you need to use this.\n"
+  summary: "\nDoes NOT work with NetServer. You need to bypass NetServer (see the method bypassNetServer) if you need to use this.\n"
   remarks: 
   syntax: 
-    content: addJoinCriteria(String p_0, String p_1, String p_2, String p_3, Integer p_4)
+    content: Void addJoinCriteria(String p_0, String p_1, String p_2, String p_3, Integer p_4)
     parameters:
     - id: p_0
       type: CRMScript.Global.String
@@ -279,6 +297,8 @@ items:
     - id: p_4
       type: CRMScript.Global.Integer
       description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.Native.SearchEngine.addOrder(String,String,Bool)
   commentId: M:CRMScript.Native.SearchEngine.addOrder(String,String,Bool)
@@ -334,15 +354,16 @@ items:
   nameWithType: SearchEngine.bypassNetServer(Bool)
   fullName: CRMScript.Native.SearchEngine.bypassNetServer(Bool)
   type: Method
-  summary: "\nFrom version 7 all the queries are sent to NetServer instead of directly to the database.<p></p>\nThis function will allow you to send the queries directly to the database instead.
-The function has no effect if the registry value (reg_id = 235) is set to 0.<p></p>\nBe aware of any security implications by circumventing the NetServer.\n"
-  remarks: 
+  summary: "\nFrom version 7, all queries are sent to NetServer instead of directly to the database. This function will allow you to send the queries directly to the database instead.\n"
+  remarks: "\nHas no effect if the registry value (reg_id = 235) is set to 0.<p></p>\nBe aware of any security implications by circumventing the NetServer.\n"
   syntax: 
-    content: bypassNetServer(Bool p_0)
+    content: Void bypassNetServer(Bool p_0)
     parameters:
     - id: p_0
       type: CRMScript.Global.Bool
       description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.Native.SearchEngine.countColumns()
   commentId: M:CRMScript.Native.SearchEngine.countColumns()
@@ -354,11 +375,14 @@ The function has no effect if the registry value (reg_id = 235) is set to 0.<p><
   nameWithType: SearchEngine.countColumns()
   fullName: CRMScript.Native.SearchEngine.countColumns()
   type: Method
-  summary: "\n<ul><li><strong>Returns:</strong>Integer, the count of columns (selected fields) in the SearchEngine query</li></ul>\n"
+  summary: "\nReturns the count of columns (selected fields) in the SearchEngine query.\n"
   remarks: 
   syntax: 
-    content: countColumns()
-    parameters:
+    content: Integer countColumns()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: the count of columns (selected fields) in the SearchEngine query
   example: 
 - uid: CRMScript.Native.SearchEngine.countRows()
   commentId: M:CRMScript.Native.SearchEngine.countRows()
@@ -370,11 +394,14 @@ The function has no effect if the registry value (reg_id = 235) is set to 0.<p><
   nameWithType: SearchEngine.countRows()
   fullName: CRMScript.Native.SearchEngine.countRows()
   type: Method
-  summary: "\nReturns the number of rows in the resultset<p></p>\n<ul><li><strong>Returns:</strong>the number of rows in the resultset</li></ul>\n"
+  summary: "\nReturns the number of rows in the result set.\n"
   remarks: 
   syntax: 
-    content: countRows()
-    parameters:
+    content: Integer countRows()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: the number of rows in the result set
   example: 
 - uid: CRMScript.Native.SearchEngine.delete()
   commentId: M:CRMScript.Native.SearchEngine.delete()
@@ -386,11 +413,13 @@ The function has no effect if the registry value (reg_id = 235) is set to 0.<p><
   nameWithType: SearchEngine.delete()
   fullName: CRMScript.Native.SearchEngine.delete()
   type: Method
-  summary: "\nAfter adding criterias, call this to delete the items that was selected by the query\n"
+  summary: "\nAfter adding criteria, call this to delete the items that was selected by the query.\n"
   remarks: 
   syntax: 
-    content: delete()
-    parameters:
+    content: Void delete()
+    parameters: []
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.Native.SearchEngine.eof()
   commentId: M:CRMScript.Native.SearchEngine.eof()
@@ -402,11 +431,14 @@ The function has no effect if the registry value (reg_id = 235) is set to 0.<p><
   nameWithType: SearchEngine.eof()
   fullName: CRMScript.Native.SearchEngine.eof()
   type: Method
-  summary: "\nReturns true if the end of the resultset is reached, else false<p></p>\n<ul><li><strong>Returns:</strong>true if the end of the resultset is reached, else false</li></ul>\n"
+  summary: "\nChecks if the end of the result set is reached.\n"
   remarks: 
   syntax: 
-    content: eof()
-    parameters:
+    content: Bool eof()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: true if the end of the result set is reached; otherwise, false
   example: 
 - uid: CRMScript.Native.SearchEngine.execute()
   commentId: M:CRMScript.Native.SearchEngine.execute()
@@ -418,12 +450,14 @@ The function has no effect if the registry value (reg_id = 235) is set to 0.<p><
   nameWithType: SearchEngine.execute()
   fullName: CRMScript.Native.SearchEngine.execute()
   type: Method
-  summary: "\nThis function executes the query.
-Must be called to get the results.\n"
+  summary: "\nExecutes the query. Must be called to get the results.\n"
   remarks: 
   syntax: 
-    content: execute()
-    parameters:
+    content: Integer execute()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description:
   example: 
 - uid: CRMScript.Native.SearchEngine.executeHTMLTable()
   commentId: M:CRMScript.Native.SearchEngine.executeHTMLTable()
@@ -435,27 +469,33 @@ Must be called to get the results.\n"
   nameWithType: SearchEngine.executeHTMLTable()
   fullName: CRMScript.Native.SearchEngine.executeHTMLTable()
   type: Method
-  summary: "\nExecute the query and return the result as a HTML formatted table.\n"
+  summary: "\nExecutes the query and return the result as a HTML formatted table.\n"
   remarks: 
   syntax: 
-    content: executeHTMLTable()
-    parameters:
+    content: String executeHTMLTable()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: the result as a HTML formatted table
   example: 
-- uid: CRMScript.Native.SearchEngine.executeInto()
-  commentId: M:CRMScript.Native.SearchEngine.executeInto()
-  id: 'executeInto()'
+- uid: CRMScript.Native.SearchEngine.executeInto(StringMatrix)
+  commentId: M:CRMScript.Native.SearchEngine.executeInto(StringMatrix)
+  id: 'executeInto(StringMatrix)'
   so.intellisense: SearchEngine.executeInto
   langs:
   - crmscript
-  name: 'executeInto()'
-  nameWithType: SearchEngine.executeInto()
-  fullName: CRMScript.Native.SearchEngine.executeInto()
+  name: 'executeInto(StringMatrix)'
+  nameWithType: SearchEngine.executeInto(StringMatrix)
+  fullName: CRMScript.Native.SearchEngine.executeInto(StringMatrix)
   type: Method
-  summary: "\nExecute the query and returns the result in the matrix.\n"
+  summary: "\nExecutes the query and returns the result in the matrix.\n"
   remarks: 
   syntax: 
-    content: executeInto(StringMatrix matrix)
+    content: Void executeInto(StringMatrix matrix)
     parameters:
+    - id: matrix
+      type: CRMScript.Native.StringMatrix
+      descending: The matrix to fill with the result set
   example: 
 - uid: CRMScript.Native.SearchEngine.executeJSON()
   commentId: M:CRMScript.Native.SearchEngine.executeJSON()
@@ -470,8 +510,11 @@ Must be called to get the results.\n"
   summary: 
   remarks: 
   syntax: 
-    content: executeJSON()
-    parameters:
+    content: String executeJSON()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description:
   example: 
 - uid: CRMScript.Native.SearchEngine.executeNS()
   commentId: M:CRMScript.Native.SearchEngine.executeNS()
@@ -483,12 +526,14 @@ Must be called to get the results.\n"
   nameWithType: SearchEngine.executeNS()
   fullName: CRMScript.Native.SearchEngine.executeNS()
   type: Method
-  summary: "\nThis function executes the query against NetServer instead of the SQL database.
-Must be called to get the results.\n"
+  summary: "\nExecutes the query against NetServer instead of the SQL database. Must be called to get the results.\n"
   remarks: 
   syntax: 
-    content: executeNS()
-    parameters:
+    content: Integer executeNS()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description:
   example: 
 - uid: CRMScript.Native.SearchEngine.executeTextTable()
   commentId: M:CRMScript.Native.SearchEngine.executeTextTable()
@@ -500,11 +545,14 @@ Must be called to get the results.\n"
   nameWithType: SearchEngine.executeTextTable()
   fullName: CRMScript.Native.SearchEngine.executeTextTable()
   type: Method
-  summary: "\nExecute the query and return the result as a text formatted table (similar to MySQL). NOTE: this method will have some overhead for large result sets.\n"
-  remarks: 
+  summary: "\nExecutes the query and return the result as a text formatted table (similar to MySQL).\n"
+  remarks: "\nThis method will have some overhead for large result sets.\n"
   syntax: 
-    content: executeTextTable()
-    parameters:
+    content: String executeTextTable()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description:
   example: 
 - uid: CRMScript.Native.SearchEngine.executeToJSONBuilder(JSONBuilder,String,String)
   commentId: M:CRMScript.Native.SearchEngine.executeToJSONBuilder(JSONBuilder,String,String)
@@ -516,10 +564,10 @@ Must be called to get the results.\n"
   nameWithType: SearchEngine.executeToJSONBuilder(JSONBuilder,String,String)
   fullName: CRMScript.Native.SearchEngine.executeToJSONBuilder(JSONBuilder,String,String)
   type: Method
-  summary: "\nExecute the SearchEngine to a JSONBuilder.<p></p>\nThe fields string can contain a comma-separated list of label:fieldType elements, allowing you to better control the resulting json. The label is the name the field gets in the json object. The fieldType can be &quot;Integer&quot;, &quot;Float&quot;, &quot;Bool&quot;, or &quot;String&quot; (default). The json object member will be formatted accordingly, e.g. a Bool will be &quot;true&quot; or &quot;false&quot;, while Integer/Float will become unquoted numbers.<p></p>\nThe arrayName will become the name of the array in the JSONBuilder. This is useful if you want this query to populate an array in a JSONBuilder already containing other stuff.\n"
-  remarks: 
+  summary: "\nExecutes the SearchEngine to a JSONBuilder.<p></p>\nThe fields string can contain a comma-separated list of label:fieldType elements, allowing you to better control the resulting json. The label is the name the field gets in the json object. The fieldType can be &quot;Integer&quot;, &quot;Float&quot;, &quot;Bool&quot;, or &quot;String&quot; (default). The json object member will be formatted accordingly, e.g. a Bool will be &quot;true&quot; or &quot;false&quot;, while Integer/Float will become unquoted numbers.<p></p>\nThe arrayName will become the name of the array in the JSONBuilder.\n"
+  remarks: "\n This is useful if you want this query to populate an array in a JSONBuilder already containing other stuff.\n"
   syntax: 
-    content: executeToJSONBuilder(JSONBuilder jb, String fields, String arrayName)
+    content: Void executeToJSONBuilder(JSONBuilder jb, String fields, String arrayName)
     parameters:
     - id: jb
       type: CRMScript.Native.JSONBuilder
@@ -530,6 +578,8 @@ Must be called to get the results.\n"
     - id: arrayName
       type: CRMScript.Global.String
       description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>SearchEngine se;\nse.addFields(&quot;sale&quot;, &quot;sale_id,heading,amount&quot;);\nse.setLimit(10);\nJSONBuilder jb;\njb.setPrettyPrint(4);\njb.pushObject(&quot;&quot;);\njb.addString(&quot;foo&quot;, &quot;bar&quot;);\nse.executeToJSONBuilder(jb, &quot;id:Integer,heading:String,amount:Float&quot;, &quot;sales&quot;);\njb.popLevel();\nprintLine(jb.getString());</code></pre>\n"
 - uid: CRMScript.Native.SearchEngine.findAlternativeFields(String)
@@ -545,11 +595,14 @@ Must be called to get the results.\n"
   summary: "\nFinds all alternative fields given a start field.<p></p>\nThese fields can be used in<code>addField()</code>or simular functions.\n"
   remarks: 
   syntax: 
-    content: findAlternativeFields(String fieldBeginsWith)
+    content: String[] findAlternativeFields(String fieldBeginsWith)
     parameters:
     - id: fieldBeginsWith
       type: CRMScript.Global.String
-      description: 
+      description: Fields that begins with...
+    return:
+      type: CRMScript.Global.String[]
+      description:
   example: 
 - uid: CRMScript.Native.SearchEngine.findRelations(String,Bool)
   commentId: M:CRMScript.Native.SearchEngine.findRelations(String,Bool)
@@ -564,7 +617,7 @@ Must be called to get the results.\n"
   summary: 
   remarks: 
   syntax: 
-    content: findRelations(String p_0, Bool p_1)
+    content: String[] findRelations(String p_0, Bool p_1)
     parameters:
     - id: p_0
       type: CRMScript.Global.String
@@ -572,6 +625,9 @@ Must be called to get the results.\n"
     - id: p_1
       type: CRMScript.Global.Bool
       description: 
+    return: 
+      type: CRMScript.Global.String[]
+      descending:
   example: 
 - uid: CRMScript.Native.SearchEngine.first()
   commentId: M:CRMScript.Native.SearchEngine.first()
@@ -583,11 +639,14 @@ Must be called to get the results.\n"
   nameWithType: SearchEngine.first()
   fullName: CRMScript.Native.SearchEngine.first()
   type: Method
-  summary: "\nSet the rowpointer to the first item of the resultset<p></p>\n<ul><li><strong>Returns:</strong>false if the resultset is empty, else false</li></ul>\n"
+  summary: "\nSets the row pointer to the first item of the result set.\n"
   remarks: 
   syntax: 
-    content: first()
-    parameters:
+    content: Bool first()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: false if the result set is empty, otherwise, true
   example: 
 - uid: CRMScript.Native.SearchEngine.getField(Integer,String,String)
   commentId: M:CRMScript.Native.SearchEngine.getField(Integer,String,String)
@@ -627,8 +686,11 @@ Must be called to get the results.\n"
   summary: 
   remarks: 
   syntax: 
-    content: getFieldsJSON()
-    parameters:
+    content: String getFieldsJSON()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description:
   example: 
 - uid: CRMScript.Native.SearchEngine.insert()
   commentId: M:CRMScript.Native.SearchEngine.insert()
@@ -643,8 +705,11 @@ Must be called to get the results.\n"
   summary: "\nAfter adding the values of the fields, call this function to actually do the insert in the database. Returns the resulting id of the insert.<p></p>\n<ul><li><strong>Returns:</strong>The id of the newly added item</li></ul>\n"
   remarks: 
   syntax: 
-    content: insert()
-    parameters:
+    content: Integer insert()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: The id of the newly added item
   example: 
 - uid: CRMScript.Native.SearchEngine.next()
   commentId: M:CRMScript.Native.SearchEngine.next()
@@ -656,28 +721,15 @@ Must be called to get the results.\n"
   nameWithType: SearchEngine.next()
   fullName: CRMScript.Native.SearchEngine.next()
   type: Method
-  summary: "\nIf not the end of the resultset is reached. the resultpointer is set to the next line.<p></p>\n<ul><li><strong>Returns:</strong>false if the end of resultset is reached, else false.</li></ul>\n"
+  summary: "\nIf not the end of the result set is reached, the result pointer is set to the next line.\n"
   remarks: 
   syntax: 
-    content: next()
-    parameters:
+    content: Bool next()
+    parameters: []
+    return:
+     type: CRMScript.Global.Bool
+     description: false if the end of result set is reached; otherwise, true
   example: 
-- uid: CRMScript.Native.SearchEngine.#ctor()
-  commentId: M:CRMScript.Native.SearchEngine.#ctor()
-  id: '#ctor()'
-  so.intellisense: Void.SearchEngine
-  langs:
-  - crmscript
-  name: '#ctor()'
-  nameWithType: SearchEngine.#ctor()
-  fullName: CRMScript.Native.SearchEngine.#ctor()
-  type: Constructor
-  summary: "\nThe SearchEngine is originally made for searching and fetching data from the eJournal database. Thereby its name. Has later been extended with features for inserting and updating rows. The SearchEngine is a tool for building up SQL queries, by adding fields, criteria, and data.<p></p>\nThe fields must be given on the following form: starttablename.fieldname, for example &quot;ticket.title&quot;. For tables that have foreign keys to other tables, you can reach them with the following notation: starttablename.fieldname.fieldname For example, the firstname of the primary customer of a ticket is: &quot;ticket.cust_id.firstname&quot;. The company name of the primary customer of a ticket is: &quot;ticket.cust_id.company.name&quot;.<p></p>\nMake sure that all fields you use that start with the same table, for example, ticket, or else you will receive a big join that you probably do not want.<p></p>\nFor many-to-many relations there is a special notation: table1.(table2-&gt;field2a).field2b Where field2a is a field in table2 that has a foreign key to table1.\n"
-  remarks: 
-  syntax: 
-    content: SearchEngine
-  example: 
-  - "\n<pre><code>&quot;ticket.(ticket_customers-&gt;ticket_id).cust_id&quot;</code></pre>From CS version 7, the aggregate functions are no longer supported, since the query is sent to NetServer instead of directly to the database.\n"
 - uid: CRMScript.Native.SearchEngine.select()
   commentId: M:CRMScript.Native.SearchEngine.select()
   id: 'select()'
@@ -688,11 +740,14 @@ Must be called to get the results.\n"
   nameWithType: SearchEngine.select()
   fullName: CRMScript.Native.SearchEngine.select()
   type: Method
-  summary: "\nDo the select-query and returns the size of the resultset as an Integer<p></p>\n<ul><li><strong>Returns:</strong>The number of items in the resultset</li></ul>\n"
+  summary: "\nDoes the select-query and returns the size of the result set.\n"
   remarks: 
   syntax: 
-    content: select()
-    parameters:
+    content: Integer select()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: The number of items in the result set
   example: 
 - uid: CRMScript.Native.SearchEngine.setCallBack(String)
   commentId: M:CRMScript.Native.SearchEngine.setCallBack(String)
@@ -704,14 +759,16 @@ Must be called to get the results.\n"
   nameWithType: SearchEngine.setCallBack(String)
   fullName: CRMScript.Native.SearchEngine.setCallBack(String)
   type: Method
-  summary: "\nSet an ejscript function as a callback that will be used to convert the values before they are displayed in the grid.\n"
+  summary: "\nSets a CRMScript function as a callback that will be used to convert the values before they are displayed in the grid.\n"
   remarks: 
   syntax: 
-    content: setCallBack(String functionName)
+    content: Void setCallBack(String functionName)
     parameters:
     - id: functionName
       type: CRMScript.Global.String
-      description: 
+      description: Name of ejscript function.
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.Native.SearchEngine.setDBDistinct(Bool)
   commentId: M:CRMScript.Native.SearchEngine.setDBDistinct(Bool)
@@ -723,14 +780,16 @@ Must be called to get the results.\n"
   nameWithType: SearchEngine.setDBDistinct(Bool)
   fullName: CRMScript.Native.SearchEngine.setDBDistinct(Bool)
   type: Method
-  summary: "\nForce SearchEngine to use a distinct in the query.\n"
+  summary: "\nForces SearchEngine to use a distinct in the query.\n"
   remarks: 
   syntax: 
-    content: setDBDistinct(Bool p_0)
+    content: Void setDBDistinct(Bool p_0)
     parameters:
     - id: p_0
       type: CRMScript.Global.Bool
       description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.Native.SearchEngine.setDistinct(String)
   commentId: M:CRMScript.Native.SearchEngine.setDistinct(String)
@@ -742,15 +801,16 @@ Must be called to get the results.\n"
   nameWithType: SearchEngine.setDistinct(String)
   fullName: CRMScript.Native.SearchEngine.setDistinct(String)
   type: Method
-  summary: "\nThis function makes the entries distinct so that equal tickets will not be listed.<p></p>\nse.setDistinct(&quot;ticked.id&quot;); There will only be one entry with the same ticket id, very useful with many to many relations.\n"
+  summary: "\nMakes the entries distinct so that equal tickets will not be listed.\n"
   remarks: 
   syntax: 
-    content: setDistinct(String field)
+    content: Void setDistinct(String field)
     parameters:
     - id: field
       type: CRMScript.Global.String
       description: 
   example: 
+  - "se.setDistinct(&quot;ticked.id&quot;); There will only be one entry with the same ticket ID, very useful with many to many relations."
 - uid: CRMScript.Native.SearchEngine.setGroup(Bool)
   commentId: M:CRMScript.Native.SearchEngine.setGroup(Bool)
   id: 'setGroup(Bool)'
@@ -761,14 +821,16 @@ Must be called to get the results.\n"
   nameWithType: SearchEngine.setGroup(Bool)
   fullName: CRMScript.Native.SearchEngine.setGroup(Bool)
   type: Method
-  summary: "\nSet or remove  a group-clause to all of the fields in the query (added by the<code>addField()</code>-function).\n"
+  summary: "\nSets or removes a group-clause to all of the fields in the query (added by the<code>addField()</code>-function).\n"
   remarks: 
   syntax: 
-    content: setGroup(Bool set)
+    content: Void setGroup(Bool set)
     parameters:
     - id: set
       type: CRMScript.Global.Bool
-      description: 
+      description: true if you want to set the groupby-clause, false to remove a groupBy-clause
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.Native.SearchEngine.setLimit(Integer)
   commentId: M:CRMScript.Native.SearchEngine.setLimit(Integer)
@@ -780,14 +842,16 @@ Must be called to get the results.\n"
   nameWithType: SearchEngine.setLimit(Integer)
   fullName: CRMScript.Native.SearchEngine.setLimit(Integer)
   type: Method
-  summary: "\nSet the limit of number of rows to recieve in the resultset<p></p>\n<ul><li><strong>number:</strong>The limit of the rows to recieve in the resultset</li></ul>\n"
+  summary: "\nSets the limit of number of rows to receive in the result set.\n"
   remarks: 
   syntax: 
     content: setLimit(Integer number)
     parameters:
     - id: number
       type: CRMScript.Global.Integer
-      description: 
+      description: The limit of the rows to receive in the result set
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.Native.SearchEngine.update()
   commentId: M:CRMScript.Native.SearchEngine.update()
@@ -802,8 +866,10 @@ Must be called to get the results.\n"
   summary: "\nUse this function after<code>addData()</code>which sets the values that will be modified, and<code>addCriteria()</code>which do a restriction on the items to modify.\n"
   remarks: 
   syntax: 
-    content: update()
-    parameters:
+    content: Void update()
+    parameters: []
+    return:
+      type: CRMScript.Global.Void
   example: 
 references:
 - uid: CRMScript.Native.SearchEngine
@@ -818,6 +884,20 @@ references:
   name: String
   nameWithType: String
   fullName: CRMScript.Global.String
+- uid: CRMScript.Global.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: CRMScript.Global.String[]
+  spec.crmscript:
+  - uid: CRMScript.Global.String
+    isExternal: true
+    name: String
+    nameWithType: String
+    fullName: CRMScript.Global.String
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
 - uid: CRMScript.Global.Integer
   commentId: T:CRMScript.Global.Integer
   isExternal: true
@@ -836,3 +916,15 @@ references:
   name: JSONBuilder
   nameWithType: JSONBuilder
   fullName: CRMScript.Native.JSONBuilder
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void
+- uid: CRMScript.Native.StringMatrix
+  commentId: T:CRMScript.Native.StringMatrix
+  isExternal: true
+  name: StringMatrix
+  nameWithType: StringMatrix
+  fullName: CRMScript.Native.StringMatrix

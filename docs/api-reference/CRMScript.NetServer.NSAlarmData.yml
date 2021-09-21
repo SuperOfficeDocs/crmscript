@@ -7,6 +7,7 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSAlarmData.#ctor
   - CRMScript.NetServer.NSAlarmData.GetAlarmTime()
   - CRMScript.NetServer.NSAlarmData.GetAppointmentId()
   - CRMScript.NetServer.NSAlarmData.GetAppointmentText()
@@ -29,7 +30,6 @@ items:
   - CRMScript.NetServer.NSAlarmData.GetSaleName()
   - CRMScript.NetServer.NSAlarmData.GetStartTime()
   - CRMScript.NetServer.NSAlarmData.GetTaskName()
-  - CRMScript.NetServer.NSAlarmData.#ctor
   - CRMScript.NetServer.NSAlarmData.SetAlarmTime()
   - CRMScript.NetServer.NSAlarmData.SetAppointmentId(Integer)
   - CRMScript.NetServer.NSAlarmData.SetAppointmentText(String)
@@ -58,424 +58,6 @@ items:
   type: Class
   summary: 
   example: 
-- uid: CRMScript.NetServer.NSAlarmData.GetAlarmTime()
-  commentId: M:CRMScript.NetServer.NSAlarmData.GetAlarmTime()
-  id: 'GetAlarmTime()'
-  so.intellisense: NSAlarmData.GetAlarmTime
-  langs:
-  - crmscript
-  name: 'GetAlarmTime()'
-  nameWithType: NSAlarmData.GetAlarmTime()
-  fullName: CRMScript.NetServer.NSAlarmData.GetAlarmTime()
-  type: Method
-  summary: "\n<strong>Returns:</strong>DateTime<p></p>\n<pre><code>NSAlarmData thing;\nDateTime alarmTime  = thing.GetAlarmTime();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: DateTime GetAlarmTime()
-    parameters:
-    return:
-      type: CRMScript.Global.DateTime
-  example: 
-  - "\n<pre><code>NSAlarmData thing;\nDateTime alarmTime  = thing.GetAlarmTime();</code></pre>\n"
-- uid: CRMScript.NetServer.NSAlarmData.GetAppointmentId()
-  commentId: M:CRMScript.NetServer.NSAlarmData.GetAppointmentId()
-  id: 'GetAppointmentId()'
-  so.intellisense: NSAlarmData.GetAppointmentId
-  langs:
-  - crmscript
-  name: 'GetAppointmentId()'
-  nameWithType: NSAlarmData.GetAppointmentId()
-  fullName: CRMScript.NetServer.NSAlarmData.GetAppointmentId()
-  type: Method
-  summary: "\nPrimary key<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<pre><code>NSAlarmData thing;\nInteger appointmentId  = thing.GetAppointmentId();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: Integer GetAppointmentId()
-    parameters:
-    return:
-      type: CRMScript.Global.Integer
-  example: 
-  - "\n<pre><code>NSAlarmData thing;\nInteger appointmentId  = thing.GetAppointmentId();</code></pre>\n"
-- uid: CRMScript.NetServer.NSAlarmData.GetAppointmentText()
-  commentId: M:CRMScript.NetServer.NSAlarmData.GetAppointmentText()
-  id: 'GetAppointmentText()'
-  so.intellisense: NSAlarmData.GetAppointmentText
-  langs:
-  - crmscript
-  name: 'GetAppointmentText()'
-  nameWithType: NSAlarmData.GetAppointmentText()
-  fullName: CRMScript.NetServer.NSAlarmData.GetAppointmentText()
-  type: Method
-  summary: "\nThe actual text, max 2047 significant characters even though it is stored as a larger data type on some databases<p></p>\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSAlarmData thing;\nString appointmentText  = thing.GetAppointmentText();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: String GetAppointmentText()
-    parameters:
-    return:
-      type: CRMScript.Global.String
-  example: 
-  - "\n<pre><code>NSAlarmData thing;\nString appointmentText  = thing.GetAppointmentText();</code></pre>\n"
-- uid: CRMScript.NetServer.NSAlarmData.GetAppointmentType()
-  commentId: M:CRMScript.NetServer.NSAlarmData.GetAppointmentType()
-  id: 'GetAppointmentType()'
-  so.intellisense: NSAlarmData.GetAppointmentType
-  langs:
-  - crmscript
-  name: 'GetAppointmentType()'
-  nameWithType: NSAlarmData.GetAppointmentType()
-  fullName: CRMScript.NetServer.NSAlarmData.GetAppointmentType()
-  type: Method
-  summary: "\nwhere=no start time,note,docin, docout<p></p>\n<strong>Returns:</strong>Integer\n"
-  remarks: 
-  syntax: 
-    content: Integer GetAppointmentType()
-    parameters:
-    return:
-      type: CRMScript.Global.Integer
-  example: 
-  - "\n<pre><code>NSAlarmData thing;\nInteger appointmentType  = thing.GetAppointmentType();</code></pre>\n"
-- uid: CRMScript.NetServer.NSAlarmData.GetAssignmentStatus()
-  commentId: M:CRMScript.NetServer.NSAlarmData.GetAssignmentStatus()
-  id: 'GetAssignmentStatus()'
-  so.intellisense: NSAlarmData.GetAssignmentStatus
-  langs:
-  - crmscript
-  name: 'GetAssignmentStatus()'
-  nameWithType: NSAlarmData.GetAssignmentStatus()
-  fullName: CRMScript.NetServer.NSAlarmData.GetAssignmentStatus()
-  type: Method
-  summary: "\nStatus if this appointment is in the process of being assigned to someone else<p></p>\n<strong>Returns:</strong>Integer\n"
-  remarks: 
-  syntax: 
-    content: Integer GetAssignmentStatus()
-    parameters:
-    return:
-      type: CRMScript.Global.Integer
-  example: 
-  - "\n<pre><code>NSAlarmData thing;\nInteger assignmentStatus  = thing.GetAssignmentStatus();</code></pre>\n"
-- uid: CRMScript.NetServer.NSAlarmData.GetBookingType()
-  commentId: M:CRMScript.NetServer.NSAlarmData.GetBookingType()
-  id: 'GetBookingType()'
-  so.intellisense: NSAlarmData.GetBookingType
-  langs:
-  - crmscript
-  name: 'GetBookingType()'
-  nameWithType: NSAlarmData.GetBookingType()
-  fullName: CRMScript.NetServer.NSAlarmData.GetBookingType()
-  type: Method
-  summary: "\nThe type of booking the appointment represents<p></p>\n<strong>Returns:</strong>Integer\n"
-  remarks: 
-  syntax: 
-    content: Integer GetBookingType()
-    parameters:
-    return:
-      type: CRMScript.Global.Integer
-  example: 
-  - "\n<pre><code>NSAlarmData thing;\nInteger bookingType  = thing.GetBookingType();</code></pre>\n"
-- uid: CRMScript.NetServer.NSAlarmData.GetContactDepartment()
-  commentId: M:CRMScript.NetServer.NSAlarmData.GetContactDepartment()
-  id: 'GetContactDepartment()'
-  so.intellisense: NSAlarmData.GetContactDepartment
-  langs:
-  - crmscript
-  name: 'GetContactDepartment()'
-  nameWithType: NSAlarmData.GetContactDepartment()
-  fullName: CRMScript.NetServer.NSAlarmData.GetContactDepartment()
-  type: Method
-  summary: "\nDepartment<p></p>\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSAlarmData thing;\nString contactDepartment  = thing.GetContactDepartment();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: String GetContactDepartment()
-    parameters:
-    return:
-      type: CRMScript.Global.String
-  example: 
-  - "\n<pre><code>NSAlarmData thing;\nString contactDepartment  = thing.GetContactDepartment();</code></pre>\n"
-- uid: CRMScript.NetServer.NSAlarmData.GetContactFullName()
-  commentId: M:CRMScript.NetServer.NSAlarmData.GetContactFullName()
-  id: 'GetContactFullName()'
-  so.intellisense: NSAlarmData.GetContactFullName
-  langs:
-  - crmscript
-  name: 'GetContactFullName()'
-  nameWithType: NSAlarmData.GetContactFullName()
-  fullName: CRMScript.NetServer.NSAlarmData.GetContactFullName()
-  type: Method
-  summary: "\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSAlarmData thing;\nString contactFullName  = thing.GetContactFullName();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: String GetContactFullName()
-    parameters:
-    return:
-      type: CRMScript.Global.String
-  example: 
-  - "\n<pre><code>NSAlarmData thing;\nString contactFullName  = thing.GetContactFullName();</code></pre>\n"
-- uid: CRMScript.NetServer.NSAlarmData.GetContactId()
-  commentId: M:CRMScript.NetServer.NSAlarmData.GetContactId()
-  id: 'GetContactId()'
-  so.intellisense: NSAlarmData.GetContactId
-  langs:
-  - crmscript
-  name: 'GetContactId()'
-  nameWithType: NSAlarmData.GetContactId()
-  fullName: CRMScript.NetServer.NSAlarmData.GetContactId()
-  type: Method
-  summary: "\nContact ID of owning contact, may be 0<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<pre><code>NSAlarmData thing;\nInteger contactId  = thing.GetContactId();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: Integer GetContactId()
-    parameters:
-    return:
-      type: CRMScript.Global.Integer
-  example: 
-  - "\n<pre><code>NSAlarmData thing;\nInteger contactId  = thing.GetContactId();</code></pre>\n"
-- uid: CRMScript.NetServer.NSAlarmData.GetContactName()
-  commentId: M:CRMScript.NetServer.NSAlarmData.GetContactName()
-  id: 'GetContactName()'
-  so.intellisense: NSAlarmData.GetContactName
-  langs:
-  - crmscript
-  name: 'GetContactName()'
-  nameWithType: NSAlarmData.GetContactName()
-  fullName: CRMScript.NetServer.NSAlarmData.GetContactName()
-  type: Method
-  summary: "\nContact name<p></p>\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSAlarmData thing;\nString contactName  = thing.GetContactName();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: String GetContactName()
-    parameters:
-    return:
-      type: CRMScript.Global.String
-  example: 
-  - "\n<pre><code>NSAlarmData thing;\nString contactName  = thing.GetContactName();</code></pre>\n"
-- uid: CRMScript.NetServer.NSAlarmData.GetEndDate()
-  commentId: M:CRMScript.NetServer.NSAlarmData.GetEndDate()
-  id: 'GetEndDate()'
-  so.intellisense: NSAlarmData.GetEndDate
-  langs:
-  - crmscript
-  name: 'GetEndDate()'
-  nameWithType: NSAlarmData.GetEndDate()
-  fullName: CRMScript.NetServer.NSAlarmData.GetEndDate()
-  type: Method
-  summary: "\nDate + end time planned<p></p>\n<strong>Returns:</strong>DateTime<p></p>\n<pre><code>NSAlarmData thing;\nDateTime endDate  = thing.GetEndDate();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: DateTime GetEndDate()
-    parameters:
-    return:
-      type: CRMScript.Global.DateTime
-  example: 
-  - "\n<pre><code>NSAlarmData thing;\nDateTime endDate  = thing.GetEndDate();</code></pre>\n"
-- uid: CRMScript.NetServer.NSAlarmData.GetFormalName()
-  commentId: M:CRMScript.NetServer.NSAlarmData.GetFormalName()
-  id: 'GetFormalName()'
-  so.intellisense: NSAlarmData.GetFormalName
-  langs:
-  - crmscript
-  name: 'GetFormalName()'
-  nameWithType: NSAlarmData.GetFormalName()
-  fullName: CRMScript.NetServer.NSAlarmData.GetFormalName()
-  type: Method
-  summary: "\nThe associate's culture formatted formalname (firstname, middleName and lastname, title, mrmrs)<p></p>\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSAlarmData thing;\nString formalName  = thing.GetFormalName();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: String GetFormalName()
-    parameters:
-    return:
-      type: CRMScript.Global.String
-  example: 
-  - "\n<pre><code>NSAlarmData thing;\nString formalName  = thing.GetFormalName();</code></pre>\n"
-- uid: CRMScript.NetServer.NSAlarmData.GetInvitationStatus()
-  commentId: M:CRMScript.NetServer.NSAlarmData.GetInvitationStatus()
-  id: 'GetInvitationStatus()'
-  so.intellisense: NSAlarmData.GetInvitationStatus
-  langs:
-  - crmscript
-  name: 'GetInvitationStatus()'
-  nameWithType: NSAlarmData.GetInvitationStatus()
-  fullName: CRMScript.NetServer.NSAlarmData.GetInvitationStatus()
-  type: Method
-  summary: "\nStatus if this appointment represents an invitation<p></p>\n<strong>Returns:</strong>Integer\n"
-  remarks: 
-  syntax: 
-    content: Integer GetInvitationStatus()
-    parameters:
-    return:
-      type: CRMScript.Global.Integer
-  example: 
-  - "\n<pre><code>NSAlarmData thing;\nInteger invitationStatus  = thing.GetInvitationStatus();</code></pre>\n"
-- uid: CRMScript.NetServer.NSAlarmData.GetLocation()
-  commentId: M:CRMScript.NetServer.NSAlarmData.GetLocation()
-  id: 'GetLocation()'
-  so.intellisense: NSAlarmData.GetLocation
-  langs:
-  - crmscript
-  name: 'GetLocation()'
-  nameWithType: NSAlarmData.GetLocation()
-  fullName: CRMScript.NetServer.NSAlarmData.GetLocation()
-  type: Method
-  summary: "\nLocation for appointment, defaulted from invited resource of type place and other rules, but you can write anything you want here<p></p>\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSAlarmData thing;\nString location  = thing.GetLocation();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: String GetLocation()
-    parameters:
-    return:
-      type: CRMScript.Global.String
-  example: 
-  - "\n<pre><code>NSAlarmData thing;\nString location  = thing.GetLocation();</code></pre>\n"
-- uid: CRMScript.NetServer.NSAlarmData.GetPersonFullName()
-  commentId: M:CRMScript.NetServer.NSAlarmData.GetPersonFullName()
-  id: 'GetPersonFullName()'
-  so.intellisense: NSAlarmData.GetPersonFullName
-  langs:
-  - crmscript
-  name: 'GetPersonFullName()'
-  nameWithType: NSAlarmData.GetPersonFullName()
-  fullName: CRMScript.NetServer.NSAlarmData.GetPersonFullName()
-  type: Method
-  summary: "\nThe associate's culture formatted fullname (firstname, middleName and lastname)<p></p>\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSAlarmData thing;\nString personFullName  = thing.GetPersonFullName();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: String GetPersonFullName()
-    parameters:
-    return:
-      type: CRMScript.Global.String
-  example: 
-  - "\n<pre><code>NSAlarmData thing;\nString personFullName  = thing.GetPersonFullName();</code></pre>\n"
-- uid: CRMScript.NetServer.NSAlarmData.GetPersonId()
-  commentId: M:CRMScript.NetServer.NSAlarmData.GetPersonId()
-  id: 'GetPersonId()'
-  so.intellisense: NSAlarmData.GetPersonId
-  langs:
-  - crmscript
-  name: 'GetPersonId()'
-  nameWithType: NSAlarmData.GetPersonId()
-  fullName: CRMScript.NetServer.NSAlarmData.GetPersonId()
-  type: Method
-  summary: "\nPerson ID of person the appointment is with, may be 0<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<pre><code>NSAlarmData thing;\nInteger personId  = thing.GetPersonId();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: Integer GetPersonId()
-    parameters:
-    return:
-      type: CRMScript.Global.Integer
-  example: 
-  - "\n<pre><code>NSAlarmData thing;\nInteger personId  = thing.GetPersonId();</code></pre>\n"
-- uid: CRMScript.NetServer.NSAlarmData.GetProjectId()
-  commentId: M:CRMScript.NetServer.NSAlarmData.GetProjectId()
-  id: 'GetProjectId()'
-  so.intellisense: NSAlarmData.GetProjectId
-  langs:
-  - crmscript
-  name: 'GetProjectId()'
-  nameWithType: NSAlarmData.GetProjectId()
-  fullName: CRMScript.NetServer.NSAlarmData.GetProjectId()
-  type: Method
-  summary: "\nID of project referred to, may be 0<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<pre><code>NSAlarmData thing;\nInteger projectId  = thing.GetProjectId();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: Integer GetProjectId()
-    parameters:
-    return:
-      type: CRMScript.Global.Integer
-  example: 
-  - "\n<pre><code>NSAlarmData thing;\nInteger projectId  = thing.GetProjectId();</code></pre>\n"
-- uid: CRMScript.NetServer.NSAlarmData.GetProjectName()
-  commentId: M:CRMScript.NetServer.NSAlarmData.GetProjectName()
-  id: 'GetProjectName()'
-  so.intellisense: NSAlarmData.GetProjectName
-  langs:
-  - crmscript
-  name: 'GetProjectName()'
-  nameWithType: NSAlarmData.GetProjectName()
-  fullName: CRMScript.NetServer.NSAlarmData.GetProjectName()
-  type: Method
-  summary: "\nProject name<p></p>\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSAlarmData thing;\nString projectName  = thing.GetProjectName();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: String GetProjectName()
-    parameters:
-    return:
-      type: CRMScript.Global.String
-  example: 
-  - "\n<pre><code>NSAlarmData thing;\nString projectName  = thing.GetProjectName();</code></pre>\n"
-- uid: CRMScript.NetServer.NSAlarmData.GetSaleId()
-  commentId: M:CRMScript.NetServer.NSAlarmData.GetSaleId()
-  id: 'GetSaleId()'
-  so.intellisense: NSAlarmData.GetSaleId
-  langs:
-  - crmscript
-  name: 'GetSaleId()'
-  nameWithType: NSAlarmData.GetSaleId()
-  fullName: CRMScript.NetServer.NSAlarmData.GetSaleId()
-  type: Method
-  summary: "\nOwning sale, if any (may be 0)<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<pre><code>NSAlarmData thing;\nInteger saleId  = thing.GetSaleId();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: Integer GetSaleId()
-    parameters:
-    return:
-      type: CRMScript.Global.Integer
-  example: 
-  - "\n<pre><code>NSAlarmData thing;\nInteger saleId  = thing.GetSaleId();</code></pre>\n"
-- uid: CRMScript.NetServer.NSAlarmData.GetSaleName()
-  commentId: M:CRMScript.NetServer.NSAlarmData.GetSaleName()
-  id: 'GetSaleName()'
-  so.intellisense: NSAlarmData.GetSaleName
-  langs:
-  - crmscript
-  name: 'GetSaleName()'
-  nameWithType: NSAlarmData.GetSaleName()
-  fullName: CRMScript.NetServer.NSAlarmData.GetSaleName()
-  type: Method
-  summary: "\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSAlarmData thing;\nString saleName  = thing.GetSaleName();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: String GetSaleName()
-    parameters:
-    return:
-      type: CRMScript.Global.String
-  example: 
-  - "\n<pre><code>NSAlarmData thing;\nString saleName  = thing.GetSaleName();</code></pre>\n"
-- uid: CRMScript.NetServer.NSAlarmData.GetStartTime()
-  commentId: M:CRMScript.NetServer.NSAlarmData.GetStartTime()
-  id: 'GetStartTime()'
-  so.intellisense: NSAlarmData.GetStartTime
-  langs:
-  - crmscript
-  name: 'GetStartTime()'
-  nameWithType: NSAlarmData.GetStartTime()
-  fullName: CRMScript.NetServer.NSAlarmData.GetStartTime()
-  type: Method
-  summary: "\ndate + start time planned<p></p>\n<strong>Returns:</strong>DateTime<p></p>\n<pre><code>NSAlarmData thing;\nDateTime startTime  = thing.GetStartTime();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: DateTime GetStartTime()
-    parameters:
-    return:
-      type: CRMScript.Global.DateTime
-  example: 
-  - "\n<pre><code>NSAlarmData thing;\nDateTime startTime  = thing.GetStartTime();</code></pre>\n"
-- uid: CRMScript.NetServer.NSAlarmData.GetTaskName()
-  commentId: M:CRMScript.NetServer.NSAlarmData.GetTaskName()
-  id: 'GetTaskName()'
-  so.intellisense: NSAlarmData.GetTaskName
-  langs:
-  - crmscript
-  name: 'GetTaskName()'
-  nameWithType: NSAlarmData.GetTaskName()
-  fullName: CRMScript.NetServer.NSAlarmData.GetTaskName()
-  type: Method
-  summary: "\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSAlarmData thing;\nString taskName  = thing.GetTaskName();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: String GetTaskName()
-    parameters:
-    return:
-      type: CRMScript.Global.String
-  example: 
-  - "\n<pre><code>NSAlarmData thing;\nString taskName  = thing.GetTaskName();</code></pre>\n"
 - uid: CRMScript.NetServer.NSAlarmData.#ctor
   commentId: M:CRMScript.NetServer.NSAlarmData.#ctor
   id: '#ctor'
@@ -491,6 +73,446 @@ items:
   syntax: 
     content: NSAlarmData
   example: 
+- uid: CRMScript.NetServer.NSAlarmData.GetAlarmTime()
+  commentId: M:CRMScript.NetServer.NSAlarmData.GetAlarmTime()
+  id: 'GetAlarmTime()'
+  so.intellisense: NSAlarmData.GetAlarmTime
+  langs:
+  - crmscript
+  name: 'GetAlarmTime()'
+  nameWithType: NSAlarmData.GetAlarmTime()
+  fullName: CRMScript.NetServer.NSAlarmData.GetAlarmTime()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: DateTime GetAlarmTime()
+    parameters: []
+    return:
+      type: CRMScript.Global.DateTime
+      description:
+  example: 
+  - "\n<pre><code>NSAlarmData thing;\nDateTime alarmTime  = thing.GetAlarmTime();</code></pre>\n"
+- uid: CRMScript.NetServer.NSAlarmData.GetAppointmentId()
+  commentId: M:CRMScript.NetServer.NSAlarmData.GetAppointmentId()
+  id: 'GetAppointmentId()'
+  so.intellisense: NSAlarmData.GetAppointmentId
+  langs:
+  - crmscript
+  name: 'GetAppointmentId()'
+  nameWithType: NSAlarmData.GetAppointmentId()
+  fullName: CRMScript.NetServer.NSAlarmData.GetAppointmentId()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Integer GetAppointmentId()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: Appointment ID (primary key)
+  example: 
+  - "\n<pre><code>NSAlarmData thing;\nInteger appointmentId  = thing.GetAppointmentId();</code></pre>\n"
+- uid: CRMScript.NetServer.NSAlarmData.GetAppointmentText()
+  commentId: M:CRMScript.NetServer.NSAlarmData.GetAppointmentText()
+  id: 'GetAppointmentText()'
+  so.intellisense: NSAlarmData.GetAppointmentText
+  langs:
+  - crmscript
+  name: 'GetAppointmentText()'
+  nameWithType: NSAlarmData.GetAppointmentText()
+  fullName: CRMScript.NetServer.NSAlarmData.GetAppointmentText()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetAppointmentText()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description:  The actual text, max 2047 significant characters even though it is stored as a larger data type on some databases
+  example: 
+  - "\n<pre><code>NSAlarmData thing;\nString appointmentText  = thing.GetAppointmentText();</code></pre>\n"
+- uid: CRMScript.NetServer.NSAlarmData.GetAppointmentType()
+  commentId: M:CRMScript.NetServer.NSAlarmData.GetAppointmentType()
+  id: 'GetAppointmentType()'
+  so.intellisense: NSAlarmData.GetAppointmentType
+  langs:
+  - crmscript
+  name: 'GetAppointmentType()'
+  nameWithType: NSAlarmData.GetAppointmentType()
+  fullName: CRMScript.NetServer.NSAlarmData.GetAppointmentType()
+  type: Method
+  summary: "\nwhere=no start time,note,docin, docout\n"
+  remarks: 
+  syntax: 
+    content: Integer GetAppointmentType()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: "See <xref href=\"CRMScript.NetServer.AppointmentType\" data-throw-if-not-resolved=\"false\"></xref>"
+  example: 
+  - "\n<pre><code>NSAlarmData thing;\nInteger appointmentType  = thing.GetAppointmentType();</code></pre>\n"
+- uid: CRMScript.NetServer.NSAlarmData.GetAssignmentStatus()
+  commentId: M:CRMScript.NetServer.NSAlarmData.GetAssignmentStatus()
+  id: 'GetAssignmentStatus()'
+  so.intellisense: NSAlarmData.GetAssignmentStatus
+  langs:
+  - crmscript
+  name: 'GetAssignmentStatus()'
+  nameWithType: NSAlarmData.GetAssignmentStatus()
+  fullName: CRMScript.NetServer.NSAlarmData.GetAssignmentStatus()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Integer GetAssignmentStatus()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: Status if this appointment is in the process of being assigned to someone else.
+  example: 
+  - "\n<pre><code>NSAlarmData thing;\nInteger assignmentStatus  = thing.GetAssignmentStatus();</code></pre>\n"
+- uid: CRMScript.NetServer.NSAlarmData.GetBookingType()
+  commentId: M:CRMScript.NetServer.NSAlarmData.GetBookingType()
+  id: 'GetBookingType()'
+  so.intellisense: NSAlarmData.GetBookingType
+  langs:
+  - crmscript
+  name: 'GetBookingType()'
+  nameWithType: NSAlarmData.GetBookingType()
+  fullName: CRMScript.NetServer.NSAlarmData.GetBookingType()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Integer GetBookingType()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: The type of booking the appointment represents.
+  example: 
+  - "\n<pre><code>NSAlarmData thing;\nInteger bookingType  = thing.GetBookingType();</code></pre>\n"
+- uid: CRMScript.NetServer.NSAlarmData.GetContactDepartment()
+  commentId: M:CRMScript.NetServer.NSAlarmData.GetContactDepartment()
+  id: 'GetContactDepartment()'
+  so.intellisense: NSAlarmData.GetContactDepartment
+  langs:
+  - crmscript
+  name: 'GetContactDepartment()'
+  nameWithType: NSAlarmData.GetContactDepartment()
+  fullName: CRMScript.NetServer.NSAlarmData.GetContactDepartment()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetContactDepartment()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Department.
+  example: 
+  - "\n<pre><code>NSAlarmData thing;\nString contactDepartment  = thing.GetContactDepartment();</code></pre>\n"
+- uid: CRMScript.NetServer.NSAlarmData.GetContactFullName()
+  commentId: M:CRMScript.NetServer.NSAlarmData.GetContactFullName()
+  id: 'GetContactFullName()'
+  so.intellisense: NSAlarmData.GetContactFullName
+  langs:
+  - crmscript
+  name: 'GetContactFullName()'
+  nameWithType: NSAlarmData.GetContactFullName()
+  fullName: CRMScript.NetServer.NSAlarmData.GetContactFullName()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetContactFullName()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description:
+  example: 
+  - "\n<pre><code>NSAlarmData thing;\nString contactFullName  = thing.GetContactFullName();</code></pre>\n"
+- uid: CRMScript.NetServer.NSAlarmData.GetContactId()
+  commentId: M:CRMScript.NetServer.NSAlarmData.GetContactId()
+  id: 'GetContactId()'
+  so.intellisense: NSAlarmData.GetContactId
+  langs:
+  - crmscript
+  name: 'GetContactId()'
+  nameWithType: NSAlarmData.GetContactId()
+  fullName: CRMScript.NetServer.NSAlarmData.GetContactId()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Integer GetContactId()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: Contact ID of owning contact, may be 0.
+  example: 
+  - "\n<pre><code>NSAlarmData thing;\nInteger contactId  = thing.GetContactId();</code></pre>\n"
+- uid: CRMScript.NetServer.NSAlarmData.GetContactName()
+  commentId: M:CRMScript.NetServer.NSAlarmData.GetContactName()
+  id: 'GetContactName()'
+  so.intellisense: NSAlarmData.GetContactName
+  langs:
+  - crmscript
+  name: 'GetContactName()'
+  nameWithType: NSAlarmData.GetContactName()
+  fullName: CRMScript.NetServer.NSAlarmData.GetContactName()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetContactName()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Contact name
+  example: 
+  - "\n<pre><code>NSAlarmData thing;\nString contactName  = thing.GetContactName();</code></pre>\n"
+- uid: CRMScript.NetServer.NSAlarmData.GetEndDate()
+  commentId: M:CRMScript.NetServer.NSAlarmData.GetEndDate()
+  id: 'GetEndDate()'
+  so.intellisense: NSAlarmData.GetEndDate
+  langs:
+  - crmscript
+  name: 'GetEndDate()'
+  nameWithType: NSAlarmData.GetEndDate()
+  fullName: CRMScript.NetServer.NSAlarmData.GetEndDate()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: DateTime GetEndDate()
+    parameters: []
+    return:
+      type: CRMScript.Global.DateTime
+      description: Date + end time planned
+  example: 
+  - "\n<pre><code>NSAlarmData thing;\nDateTime endDate  = thing.GetEndDate();</code></pre>\n"
+- uid: CRMScript.NetServer.NSAlarmData.GetFormalName()
+  commentId: M:CRMScript.NetServer.NSAlarmData.GetFormalName()
+  id: 'GetFormalName()'
+  so.intellisense: NSAlarmData.GetFormalName
+  langs:
+  - crmscript
+  name: 'GetFormalName()'
+  nameWithType: NSAlarmData.GetFormalName()
+  fullName: CRMScript.NetServer.NSAlarmData.GetFormalName()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetFormalName()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: The associate's culture formatted formalname (firstname, middleName and lastname, title, mrmrs)
+  example: 
+  - "\n<pre><code>NSAlarmData thing;\nString formalName  = thing.GetFormalName();</code></pre>\n"
+- uid: CRMScript.NetServer.NSAlarmData.GetInvitationStatus()
+  commentId: M:CRMScript.NetServer.NSAlarmData.GetInvitationStatus()
+  id: 'GetInvitationStatus()'
+  so.intellisense: NSAlarmData.GetInvitationStatus
+  langs:
+  - crmscript
+  name: 'GetInvitationStatus()'
+  nameWithType: NSAlarmData.GetInvitationStatus()
+  fullName: CRMScript.NetServer.NSAlarmData.GetInvitationStatus()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Integer GetInvitationStatus()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: Status if this appointment represents an invitation
+  example: 
+  - "\n<pre><code>NSAlarmData thing;\nInteger invitationStatus  = thing.GetInvitationStatus();</code></pre>\n"
+- uid: CRMScript.NetServer.NSAlarmData.GetLocation()
+  commentId: M:CRMScript.NetServer.NSAlarmData.GetLocation()
+  id: 'GetLocation()'
+  so.intellisense: NSAlarmData.GetLocation
+  langs:
+  - crmscript
+  name: 'GetLocation()'
+  nameWithType: NSAlarmData.GetLocation()
+  fullName: CRMScript.NetServer.NSAlarmData.GetLocation()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetLocation()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Location for appointment, defaulted from invited resource of type place and other rules, but you can write anything you want here
+  example: 
+  - "\n<pre><code>NSAlarmData thing;\nString location  = thing.GetLocation();</code></pre>\n"
+- uid: CRMScript.NetServer.NSAlarmData.GetPersonFullName()
+  commentId: M:CRMScript.NetServer.NSAlarmData.GetPersonFullName()
+  id: 'GetPersonFullName()'
+  so.intellisense: NSAlarmData.GetPersonFullName
+  langs:
+  - crmscript
+  name: 'GetPersonFullName()'
+  nameWithType: NSAlarmData.GetPersonFullName()
+  fullName: CRMScript.NetServer.NSAlarmData.GetPersonFullName()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetPersonFullName()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: The associate's culture formatted fullname (firstname, middleName and lastname)
+  example: 
+  - "\n<pre><code>NSAlarmData thing;\nString personFullName  = thing.GetPersonFullName();</code></pre>\n"
+- uid: CRMScript.NetServer.NSAlarmData.GetPersonId()
+  commentId: M:CRMScript.NetServer.NSAlarmData.GetPersonId()
+  id: 'GetPersonId()'
+  so.intellisense: NSAlarmData.GetPersonId
+  langs:
+  - crmscript
+  name: 'GetPersonId()'
+  nameWithType: NSAlarmData.GetPersonId()
+  fullName: CRMScript.NetServer.NSAlarmData.GetPersonId()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Integer GetPersonId()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: Person ID of person the appointment is with, may be 0
+  example: 
+  - "\n<pre><code>NSAlarmData thing;\nInteger personId  = thing.GetPersonId();</code></pre>\n"
+- uid: CRMScript.NetServer.NSAlarmData.GetProjectId()
+  commentId: M:CRMScript.NetServer.NSAlarmData.GetProjectId()
+  id: 'GetProjectId()'
+  so.intellisense: NSAlarmData.GetProjectId
+  langs:
+  - crmscript
+  name: 'GetProjectId()'
+  nameWithType: NSAlarmData.GetProjectId()
+  fullName: CRMScript.NetServer.NSAlarmData.GetProjectId()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Integer GetProjectId()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: ID of project referred to, may be 0
+  example: 
+  - "\n<pre><code>NSAlarmData thing;\nInteger projectId = thing.GetProjectId();</code></pre>\n"
+- uid: CRMScript.NetServer.NSAlarmData.GetProjectName()
+  commentId: M:CRMScript.NetServer.NSAlarmData.GetProjectName()
+  id: 'GetProjectName()'
+  so.intellisense: NSAlarmData.GetProjectName
+  langs:
+  - crmscript
+  name: 'GetProjectName()'
+  nameWithType: NSAlarmData.GetProjectName()
+  fullName: CRMScript.NetServer.NSAlarmData.GetProjectName()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetProjectName()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Project name
+  example: 
+  - "\n<pre><code>NSAlarmData thing;\nString projectName  = thing.GetProjectName();</code></pre>\n"
+- uid: CRMScript.NetServer.NSAlarmData.GetSaleId()
+  commentId: M:CRMScript.NetServer.NSAlarmData.GetSaleId()
+  id: 'GetSaleId()'
+  so.intellisense: NSAlarmData.GetSaleId
+  langs:
+  - crmscript
+  name: 'GetSaleId()'
+  nameWithType: NSAlarmData.GetSaleId()
+  fullName: CRMScript.NetServer.NSAlarmData.GetSaleId()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Integer GetSaleId()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: Owning sale, if any (may be 0)
+  example: 
+  - "\n<pre><code>NSAlarmData thing;\nInteger saleId  = thing.GetSaleId();</code></pre>\n"
+- uid: CRMScript.NetServer.NSAlarmData.GetSaleName()
+  commentId: M:CRMScript.NetServer.NSAlarmData.GetSaleName()
+  id: 'GetSaleName()'
+  so.intellisense: NSAlarmData.GetSaleName
+  langs:
+  - crmscript
+  name: 'GetSaleName()'
+  nameWithType: NSAlarmData.GetSaleName()
+  fullName: CRMScript.NetServer.NSAlarmData.GetSaleName()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetSaleName()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description:
+  example: 
+  - "\n<pre><code>NSAlarmData thing;\nString saleName  = thing.GetSaleName();</code></pre>\n"
+- uid: CRMScript.NetServer.NSAlarmData.GetStartTime()
+  commentId: M:CRMScript.NetServer.NSAlarmData.GetStartTime()
+  id: 'GetStartTime()'
+  so.intellisense: NSAlarmData.GetStartTime
+  langs:
+  - crmscript
+  name: 'GetStartTime()'
+  nameWithType: NSAlarmData.GetStartTime()
+  fullName: CRMScript.NetServer.NSAlarmData.GetStartTime()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: DateTime GetStartTime()
+    parameters: []
+    return:
+      type: CRMScript.Global.DateTime
+      description: date + start time planned
+  example: 
+  - "\n<pre><code>NSAlarmData thing;\nDateTime startTime  = thing.GetStartTime();</code></pre>\n"
+- uid: CRMScript.NetServer.NSAlarmData.GetTaskName()
+  commentId: M:CRMScript.NetServer.NSAlarmData.GetTaskName()
+  id: 'GetTaskName()'
+  so.intellisense: NSAlarmData.GetTaskName
+  langs:
+  - crmscript
+  name: 'GetTaskName()'
+  nameWithType: NSAlarmData.GetTaskName()
+  fullName: CRMScript.NetServer.NSAlarmData.GetTaskName()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetTaskName()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description:
+  example: 
+  - "\n<pre><code>NSAlarmData thing;\nString taskName  = thing.GetTaskName();</code></pre>\n"
 - uid: CRMScript.NetServer.NSAlarmData.SetAlarmTime()
   commentId: M:CRMScript.NetServer.NSAlarmData.SetAlarmTime()
   id: 'SetAlarmTime()'
@@ -504,8 +526,13 @@ items:
   summary: 
   remarks: 
   syntax: 
-    content: SetAlarmTime(DateTime alarmTime)
+    content: Void SetAlarmTime(DateTime alarmTime)
     parameters:
+    - id: alarmTime
+      type: CRMScript.Global.DateTime
+      description:
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSAlarmData thing;\nDateTime alarmTime;\nthing.SetAlarmTime(alarmTime);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAlarmData.SetAppointmentId(Integer)
@@ -518,14 +545,16 @@ items:
   nameWithType: NSAlarmData.SetAppointmentId(Integer)
   fullName: CRMScript.NetServer.NSAlarmData.SetAppointmentId(Integer)
   type: Method
-  summary: "\nPrimary key\n"
+  summary: ""
   remarks: 
   syntax: 
-    content: SetAppointmentId(Integer appointmentId)
+    content: Void SetAppointmentId(Integer appointmentId)
     parameters:
     - id: appointmentId
       type: CRMScript.Global.Integer
-      description: 
+      description: Appointment ID (primary key)
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSAlarmData thing;\nInteger appointmentId;\nthing.SetAppointmentId(appointmentId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAlarmData.SetAppointmentText(String)
@@ -538,14 +567,16 @@ items:
   nameWithType: NSAlarmData.SetAppointmentText(String)
   fullName: CRMScript.NetServer.NSAlarmData.SetAppointmentText(String)
   type: Method
-  summary: "\nThe actual text, max 2047 significant characters even though it is stored as a larger data type on some databases\n"
+  summary: ""
   remarks: 
   syntax: 
-    content: SetAppointmentText(String appointmentText)
+    content: Void etAppointmentText(String appointmentText)
     parameters:
     - id: appointmentText
       type: CRMScript.Global.String
-      description: 
+      description: The actual text, max 2047 significant characters even though it is stored as a larger data type on some databases
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSAlarmData thing;\nString appointmentText;\nthing.SetAppointmentText(appointmentText);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAlarmData.SetAppointmentType(Integer)
@@ -559,13 +590,15 @@ items:
   fullName: CRMScript.NetServer.NSAlarmData.SetAppointmentType(Integer)
   type: Method
   summary: "\nwhere=no start time,note,docin, docout\n"
-  remarks: "\n<p>See enum appointmentType.</p>\n"
+  remarks: 
   syntax: 
-    content: SetAppointmentType(Integer appointmentType)
+    content: Void SetAppointmentType(Integer appointmentType)
     parameters:
     - id: appointmentType
       type: CRMScript.Global.Integer
-      description: 
+      description: "See <xref href=\"CRMScript.NetServer.AppointmentType\" data-throw-if-not-resolved=\"false\"></xref>"
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSAlarmData thing;\nInteger appointmentType;\nthing.SetAppointmentType(appointmentType);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAlarmData.SetAssignmentStatus(Integer)
@@ -578,14 +611,16 @@ items:
   nameWithType: NSAlarmData.SetAssignmentStatus(Integer)
   fullName: CRMScript.NetServer.NSAlarmData.SetAssignmentStatus(Integer)
   type: Method
-  summary: "\nStatus if this appointment is in the process of being assigned to someone else\n"
+  summary: ""
   remarks: "\n<p>See enum assignmentStatus.</p>\n"
   syntax: 
     content: SetAssignmentStatus(Integer assignmentStatus)
     parameters:
     - id: assignmentStatus
       type: CRMScript.Global.Integer
-      description: 
+      description: Status if this appointment is in the process of being assigned to someone else
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSAlarmData thing;\nInteger assignmentStatus;\nthing.SetAssignmentStatus(assignmentStatus);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAlarmData.SetBookingType(Integer)
@@ -598,14 +633,16 @@ items:
   nameWithType: NSAlarmData.SetBookingType(Integer)
   fullName: CRMScript.NetServer.NSAlarmData.SetBookingType(Integer)
   type: Method
-  summary: "\nThe type of booking the appointment represents\n"
+  summary: ""
   remarks: "\n<p>See enum bookingType.</p>\n"
   syntax: 
-    content: SetBookingType(Integer bookingType)
+    content: Void SetBookingType(Integer bookingType)
     parameters:
     - id: bookingType
       type: CRMScript.Global.Integer
-      description: 
+      description: The type of booking the appointment represents
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSAlarmData thing;\nInteger bookingType;\nthing.SetBookingType(bookingType);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAlarmData.SetContactDepartment(String)
@@ -618,14 +655,16 @@ items:
   nameWithType: NSAlarmData.SetContactDepartment(String)
   fullName: CRMScript.NetServer.NSAlarmData.SetContactDepartment(String)
   type: Method
-  summary: "\nDepartment\n"
+  summary: ""
   remarks: 
   syntax: 
-    content: SetContactDepartment(String contactDepartment)
+    content: Void SetContactDepartment(String contactDepartment)
     parameters:
     - id: contactDepartment
       type: CRMScript.Global.String
-      description: 
+      description: Department
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSAlarmData thing;\nString contactDepartment;\nthing.SetContactDepartment(contactDepartment);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAlarmData.SetContactFullName(String)
@@ -641,11 +680,13 @@ items:
   summary: 
   remarks: 
   syntax: 
-    content: SetContactFullName(String contactFullName)
+    content: Void SetContactFullName(String contactFullName)
     parameters:
     - id: contactFullName
       type: CRMScript.Global.String
       description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSAlarmData thing;\nString contactFullName;\nthing.SetContactFullName(contactFullName);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAlarmData.SetContactId(Integer)
@@ -658,14 +699,16 @@ items:
   nameWithType: NSAlarmData.SetContactId(Integer)
   fullName: CRMScript.NetServer.NSAlarmData.SetContactId(Integer)
   type: Method
-  summary: "\nContact ID of owning contact, may be 0\n"
+  summary: ""
   remarks: 
   syntax: 
-    content: SetContactId(Integer contactId)
+    content: Void SetContactId(Integer contactId)
     parameters:
     - id: contactId
       type: CRMScript.Global.Integer
-      description: 
+      description: Contact ID of owning contact, may be 0
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSAlarmData thing;\nInteger contactId;\nthing.SetContactId(contactId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAlarmData.SetContactName(String)
@@ -678,14 +721,16 @@ items:
   nameWithType: NSAlarmData.SetContactName(String)
   fullName: CRMScript.NetServer.NSAlarmData.SetContactName(String)
   type: Method
-  summary: "\nContact name\n"
+  summary: ""
   remarks: 
   syntax: 
-    content: SetContactName(String contactName)
+    content: Void SetContactName(String contactName)
     parameters:
     - id: contactName
       type: CRMScript.Global.String
-      description: 
+      description: Contact name
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSAlarmData thing;\nString contactName;\nthing.SetContactName(contactName);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAlarmData.SetEndDate()
@@ -698,11 +743,16 @@ items:
   nameWithType: NSAlarmData.SetEndDate()
   fullName: CRMScript.NetServer.NSAlarmData.SetEndDate()
   type: Method
-  summary: "\nDate + end time planned\n"
+  summary: ""
   remarks: 
   syntax: 
-    content: SetEndDate(DateTime endDate)
+    content: Void SetEndDate(DateTime endDate)
     parameters:
+    - id: endDate
+      type: CRMScript.Global.DateTime
+      description: Date + end time planned
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSAlarmData thing;\nDateTime endDate;\nthing.SetEndDate(endDate);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAlarmData.SetFormalName(String)
@@ -715,14 +765,16 @@ items:
   nameWithType: NSAlarmData.SetFormalName(String)
   fullName: CRMScript.NetServer.NSAlarmData.SetFormalName(String)
   type: Method
-  summary: "\nThe associate's culture formatted formalname (firstname, middleName and lastname, title, mrmrs)\n"
+  summary: ""
   remarks: 
   syntax: 
-    content: SetFormalName(String formalName)
+    content: Void SetFormalName(String formalName)
     parameters:
     - id: formalName
       type: CRMScript.Global.String
-      description: 
+      description: The associate's culture formatted formalname (firstname, middleName and lastname, title, mrmrs)
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSAlarmData thing;\nString formalName;\nthing.SetFormalName(formalName);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAlarmData.SetInvitationStatus(Integer)
@@ -735,14 +787,16 @@ items:
   nameWithType: NSAlarmData.SetInvitationStatus(Integer)
   fullName: CRMScript.NetServer.NSAlarmData.SetInvitationStatus(Integer)
   type: Method
-  summary: "\nStatus if this appointment represents an invitation\n"
+  summary: ""
   remarks: "\n<p>See enum invitationStatus.</p>\n"
   syntax: 
-    content: SetInvitationStatus(Integer invitationStatus)
+    content: Void SetInvitationStatus(Integer invitationStatus)
     parameters:
     - id: invitationStatus
       type: CRMScript.Global.Integer
-      description: 
+      description: Status if this appointment represents an invitation
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSAlarmData thing;\nInteger invitationStatus;\nthing.SetInvitationStatus(invitationStatus);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAlarmData.SetLocation(String)
@@ -755,14 +809,16 @@ items:
   nameWithType: NSAlarmData.SetLocation(String)
   fullName: CRMScript.NetServer.NSAlarmData.SetLocation(String)
   type: Method
-  summary: "\nLocation for appointment, defaulted from invited resource of type place and other rules, but you can write anything you want here\n"
+  summary: ""
   remarks: 
   syntax: 
-    content: SetLocation(String location)
+    content: Void SetLocation(String location)
     parameters:
     - id: location
       type: CRMScript.Global.String
-      description: 
+      description: Location for appointment, defaulted from invited resource of type place and other rules, but you can write anything you want here
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSAlarmData thing;\nString location;\nthing.SetLocation(location);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAlarmData.SetPersonFullName(String)
@@ -775,14 +831,16 @@ items:
   nameWithType: NSAlarmData.SetPersonFullName(String)
   fullName: CRMScript.NetServer.NSAlarmData.SetPersonFullName(String)
   type: Method
-  summary: "\nThe associate's culture formatted fullname (firstname, middleName and lastname)\n"
+  summary: ""
   remarks: 
   syntax: 
-    content: SetPersonFullName(String personFullName)
+    content: Void SetPersonFullName(String personFullName)
     parameters:
     - id: personFullName
       type: CRMScript.Global.String
-      description: 
+      description: The associate's culture formatted fullname (firstname, middleName and lastname)
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSAlarmData thing;\nString personFullName;\nthing.SetPersonFullName(personFullName);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAlarmData.SetPersonId(Integer)
@@ -795,14 +853,16 @@ items:
   nameWithType: NSAlarmData.SetPersonId(Integer)
   fullName: CRMScript.NetServer.NSAlarmData.SetPersonId(Integer)
   type: Method
-  summary: "\nPerson ID of person the appointment is with, may be 0\n"
+  summary: ""
   remarks: 
   syntax: 
-    content: SetPersonId(Integer personId)
+    content: Void SetPersonId(Integer personId)
     parameters:
     - id: personId
       type: CRMScript.Global.Integer
-      description: 
+      description: Person ID of person the appointment is with, may be 0
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSAlarmData thing;\nInteger personId;\nthing.SetPersonId(personId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAlarmData.SetProjectId(Integer)
@@ -815,14 +875,16 @@ items:
   nameWithType: NSAlarmData.SetProjectId(Integer)
   fullName: CRMScript.NetServer.NSAlarmData.SetProjectId(Integer)
   type: Method
-  summary: "\nID of project referred to, may be 0\n"
+  summary: ""
   remarks: 
   syntax: 
-    content: SetProjectId(Integer projectId)
+    content: Void SetProjectId(Integer projectId)
     parameters:
     - id: projectId
       type: CRMScript.Global.Integer
-      description: 
+      description: ID of project referred to, may be 0
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSAlarmData thing;\nInteger projectId;\nthing.SetProjectId(projectId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAlarmData.SetProjectName(String)
@@ -835,14 +897,16 @@ items:
   nameWithType: NSAlarmData.SetProjectName(String)
   fullName: CRMScript.NetServer.NSAlarmData.SetProjectName(String)
   type: Method
-  summary: "\nProject name\n"
+  summary: ""
   remarks: 
   syntax: 
-    content: SetProjectName(String projectName)
+    content: Void SetProjectName(String projectName)
     parameters:
     - id: projectName
       type: CRMScript.Global.String
-      description: 
+      description: Project name
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSAlarmData thing;\nString projectName;\nthing.SetProjectName(projectName);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAlarmData.SetSaleId(Integer)
@@ -855,14 +919,16 @@ items:
   nameWithType: NSAlarmData.SetSaleId(Integer)
   fullName: CRMScript.NetServer.NSAlarmData.SetSaleId(Integer)
   type: Method
-  summary: "\nOwning sale, if any (may be 0)\n"
+  summary: ""
   remarks: 
   syntax: 
-    content: SetSaleId(Integer saleId)
+    content: Void SetSaleId(Integer saleId)
     parameters:
     - id: saleId
       type: CRMScript.Global.Integer
-      description: 
+      description: Owning sale, if any (may be 0)
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSAlarmData thing;\nInteger saleId;\nthing.SetSaleId(saleId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAlarmData.SetSaleName(String)
@@ -878,11 +944,13 @@ items:
   summary: 
   remarks: 
   syntax: 
-    content: SetSaleName(String saleName)
+    content: Void SetSaleName(String saleName)
     parameters:
     - id: saleName
       type: CRMScript.Global.String
-      description: 
+      description:
+    return:
+      type: CRMScript.Global.Void 
   example: 
   - "\n<pre><code>NSAlarmData thing;\nString saleName;\nthing.SetSaleName(saleName);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAlarmData.SetStartTime()
@@ -895,11 +963,16 @@ items:
   nameWithType: NSAlarmData.SetStartTime()
   fullName: CRMScript.NetServer.NSAlarmData.SetStartTime()
   type: Method
-  summary: "\ndate + start time planned\n"
+  summary: ""
   remarks: 
   syntax: 
-    content: SetStartTime(DateTime startTime)
+    content: Void SetStartTime(DateTime startTime)
     parameters:
+    - id: startTime
+      type: CRMScript.Global.DateTime
+      description: date + start time planned
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSAlarmData thing;\nDateTime startTime;\nthing.SetStartTime(startTime);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAlarmData.SetTaskName(String)
@@ -915,11 +988,13 @@ items:
   summary: 
   remarks: 
   syntax: 
-    content: SetTaskName(String taskName)
+    content: Void SetTaskName(String taskName)
     parameters:
     - id: taskName
       type: CRMScript.Global.String
-      description: 
+      description:
+    return:
+      type: CRMScript.Global.Void 
   example: 
   - "\n<pre><code>NSAlarmData thing;\nString taskName;\nthing.SetTaskName(taskName);</code></pre>\n"
 references:
@@ -947,3 +1022,15 @@ references:
   name: String
   nameWithType: String
   fullName: CRMScript.Global.String
+- uid: CRMScript.NetServer.AppointmentType
+  commentId: T:CRMScript.NetServer.AppointmentType
+  isExternal: true
+  name: AppointmentType
+  nameWithType: AppointmentType
+  fullName: CRMScript.NetServer.AppointmentType
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void

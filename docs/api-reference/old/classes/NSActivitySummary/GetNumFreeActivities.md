@@ -8,7 +8,7 @@ so.topic: reference
 
 # Integer GetNumFreeActivities()
 
-Number of activites of the type 'free'. Sales and documents are not activites in this case, only diary appointments and tasks.
+Number of activities of the type 'free'. Sales and documents are not activities in this case, only diary appointments and tasks.
 
 **Returns:** Integer
 

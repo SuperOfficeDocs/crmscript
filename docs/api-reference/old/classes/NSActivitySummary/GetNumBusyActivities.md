@@ -8,7 +8,7 @@ so.topic: reference
 
 # Integer GetNumBusyActivities()
 
-Number of activites and tasks in the diary that are of type 'busy'. Sales and documents are not activites in this case, only diary appointments and tasks.
+Number of activities and tasks in the diary that are of type 'busy'. Sales and documents are not activities in this case, only diary appointments and tasks.
 
 **Returns:** Integer
 

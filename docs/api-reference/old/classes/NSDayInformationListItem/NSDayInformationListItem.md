@@ -8,4 +8,4 @@ so.topic: reference
 
 # NSDayInformationListItem
 
-Summary information about the activites and holidaysfor one day
+Summary information about the activities and holidaysfor one day

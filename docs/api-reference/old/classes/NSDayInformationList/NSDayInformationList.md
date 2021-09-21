@@ -8,4 +8,4 @@ so.topic: reference
 
 # NSDayInformationList
 
-This list contains information suitable for a compressed calendar view, such as the month minicard. It will tell you how many activities you have, as well as whether the day is a holiday of some kind. Sales and documents are not activites in this case, only diary appointments and tasks.
+This list contains information suitable for a compressed calendar view, such as the month minicard. It will tell you how many activities you have, as well as whether the day is a holiday of some kind. Sales and documents are not activities in this case, only diary appointments and tasks.

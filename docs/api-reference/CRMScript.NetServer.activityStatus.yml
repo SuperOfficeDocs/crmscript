@@ -1,62 +1,77 @@
 ### YamlMime:ManagedReference
 items:
-- uid: CRMScript.NetServer.activityStatus
-  commentId: T:CRMScript.NetServer.activityStatus
-  id: activityStatus
+- uid: CRMScript.NetServer.ActivityStatus
+  # Same as SuperOffice.Data.ActivityStatus
+  commentId: T:CRMScript.NetServer.ActivityStatus
+  id: ActivityStatus
   langs:
   - crmscript
   children:
-  - CRMScript.NetServer.activityStatus.Unknown
-  - CRMScript.NetServer.activityStatus.NotStarted
-  - CRMScript.NetServer.activityStatus.Started
-  name: activityStatus
-  nameWithType: activityStatus
-  fullName: CRMScript.NetServer.activityStatus
+  - CRMScript.NetServer.ActivityStatus.Unknown
+  - CRMScript.NetServer.ActivityStatus.NotStarted
+  - CRMScript.NetServer.ActivityStatus.Started
+  - CRMScript.NetServer.ActivityStatus.Completed
+  name: ActivityStatus
+  nameWithType: ActivityStatus
+  fullName: CRMScript.NetServer.ActivityStatus
   type: Enum
-  summary: 
-- uid: CRMScript.NetServer.activityStatus.Unknown
-  commentId: F:CRMScript.NetServer.activityStatus.Unknown
-  id: activityStatus.Unknown
+  summary: "\nCompleted status enum common to appointments, documents, and sales.\n"
+- uid: CRMScript.NetServer.ActivityStatus.Unknown
+  commentId: F:CRMScript.NetServer.ActivityStatus.Unknown
+  id: ActivityStatus.Unknown
   langs:
   - crmscript
-  name: activityStatus.Unknown
-  nameWithType: activityStatus.Unknown
-  fullName: CRMScript.NetServer.activityStatus.Unknown
+  name: ActivityStatus.Unknown
+  nameWithType: ActivityStatus.Unknown
+  fullName: CRMScript.NetServer.ActivityStatus.Unknown
   type: Field
-  summary: "\n0: Unknown\n"
+  summary: "\n0: Unknown - used when initializing\n"
   syntax: 
     content: Unknown = 0
-    type: CRMScript.NetServer.activityStatus
-- uid: CRMScript.NetServer.activityStatus.NotStarted
-  commentId: F:CRMScript.NetServer.activityStatus.NotStarted
-  id: activityStatus.NotStarted
+    type: CRMScript.NetServer.ActivityStatus
+- uid: CRMScript.NetServer.ActivityStatus.NotStarted
+  commentId: F:CRMScript.NetServer.ActivityStatus.NotStarted
+  id: ActivityStatus.NotStarted
   langs:
   - crmscript
-  name: activityStatus.NotStarted
-  nameWithType: activityStatus.NotStarted
-  fullName: CRMScript.NetServer.activityStatus.NotStarted
+  name: ActivityStatus.NotStarted
+  nameWithType: ActivityStatus.NotStarted
+  fullName: CRMScript.NetServer.ActivityStatus.NotStarted
   type: Field
-  summary: "\n1: NotStarted\n"
+  summary: "\n1: Appointment has not been started\n"
   syntax: 
     content: NotStarted = 1
-    type: CRMScript.NetServer.activityStatus
-- uid: CRMScript.NetServer.activityStatus.Started
-  commentId: F:CRMScript.NetServer.activityStatus.Started
-  id: activityStatus.Started
+    type: CRMScript.NetServer.ActivityStatus
+- uid: CRMScript.NetServer.ActivityStatus.Started
+  commentId: F:CRMScript.NetServer.ActivityStatus.Started
+  id: ActivityStatus.Started
   langs:
   - crmscript
-  name: activityStatus.Started
-  nameWithType: activityStatus.Started
-  fullName: CRMScript.NetServer.activityStatus.Started
+  name: ActivityStatus.Started
+  nameWithType: ActivityStatus.Started
+  fullName: CRMScript.NetServer.ActivityStatus.Started
   type: Field
-  summary: "\n2: Started\n"
+  summary: "\n2: Appointment has been started, but not completed\n"
   syntax: 
     content: Started = 2
-    type: CRMScript.NetServer.activityStatus
+    type: CRMScript.NetServer.ActivityStatus
+- uid: CRMScript.NetServer.ActivityStatus.Completed
+  commentId: F:CRMScript.NetServer.ActivityStatus.Completed
+  id: ActivityStatus.Completed
+  langs:
+  - crmscript
+  name: ActivityStatus.Completed
+  nameWithType: ActivityStatus.Completed
+  fullName: CRMScript.NetServer.ActivityStatus.Completed
+  type: Field
+  summary: "\n3: Appointment is completed\n"
+  syntax: 
+    content: Completed = 3
+    type: CRMScript.NetServer.ActivityStatus
 references:
-- uid: CRMScript.NetServer.activityStatus
-  commentId: T:CRMScript.NetServer.activityStatus
+- uid: CRMScript.NetServer.ActivityStatus
+  commentId: T:CRMScript.NetServer.ActivityStatus
   isExternal: true
-  name: activityStatus
-  nameWithType: activityStatus
-  fullName: CRMScript.NetServer.activityStatus
+  name: ActivityStatus
+  nameWithType: ActivityStatus
+  fullName: CRMScript.NetServer.ActivityStatus

@@ -2285,17 +2285,17 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSAppointmentAgent.SetActivityStatus(String[],Integer)
   fullName: CRMScript.NetServer.NSAppointmentAgent.SetActivityStatus(String[],Integer)
   type: Method
-  summary: "\nSets the completed status for an array of activities. The string activityIdentifier param may contain of a mix of appointment_id, sale_id, document_id and todo_id. The changes are saved immediately. If an invalid id is passed in (nonexistent record), no changes will be made. If there is no write access to the record being changed, a Sentry exception will be thrown in the usual manner.\n"
-  remarks: "\n<p>See enum activityStatus.</p>\n"
+  summary: "\nSets the completed status for an array of activities. The changes are saved immediately.\n"
+  remarks: "\nIf an invalid ID is passed in (nonexistent record), no changes will be made. If there is no write access to the record being changed, a Sentry exception will be thrown in the usual manner.\n"
   syntax: 
     content: Void SetActivityStatus(String[] activityIdentifier, Integer activityStatus)
     parameters:
     - id: activityIdentifier
       type: CRMScript.Global.String[]
-      description: 
+      description: May contain a mix of appointment_id, sale_id, document_id, and todo_id.
     - id: activityStatus
       type: CRMScript.Global.Integer
-      description: 
+      description: See <xref href=\"CRMScript.NetServer.ActivityStatus\" data-throw-if-not-resolved=\"false\"></xref>
     return:
       type: CRMScript.Global.Void
   example: 
@@ -2797,3 +2797,9 @@ references:
   name: AppointmentType
   nameWithType: AppointmentType
   fullName: CRMScript.NetServer.AppointmentType
+- uid: CRMScript.NetServer.ActivityStatus
+  commentId: T:CRMScript.NetServer.ActivityStatus
+  isExternal: true
+  name: ActivityStatus
+  nameWithType: ActivityStatus
+  fullName: CRMScript.NetServer.ActivityStatus

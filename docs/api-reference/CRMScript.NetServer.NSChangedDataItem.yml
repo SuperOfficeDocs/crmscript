@@ -3,13 +3,12 @@ items:
 - uid: CRMScript.NetServer.NSChangedDataItem
   commentId: T:CRMScript.NetServer.NSChangedDataItem
   id: NSChangedDataItem
-  so.intellisense: Void.NSChangedDataItem
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSChangedDataItem.#ctor
   - CRMScript.NetServer.NSChangedDataItem.GetRecordId()
   - CRMScript.NetServer.NSChangedDataItem.GetTablename()
-  - CRMScript.NetServer.NSChangedDataItem.#ctor
   - CRMScript.NetServer.NSChangedDataItem.SetRecordId(Integer)
   - CRMScript.NetServer.NSChangedDataItem.SetTablename(String)
   name: NSChangedDataItem
@@ -18,44 +17,6 @@ items:
   type: Class
   summary: 
   example: 
-- uid: CRMScript.NetServer.NSChangedDataItem.GetRecordId()
-  commentId: M:CRMScript.NetServer.NSChangedDataItem.GetRecordId()
-  id: 'GetRecordId()'
-  so.intellisense: NSChangedDataItem.GetRecordId
-  langs:
-  - crmscript
-  name: 'GetRecordId()'
-  nameWithType: NSChangedDataItem.GetRecordId()
-  fullName: CRMScript.NetServer.NSChangedDataItem.GetRecordId()
-  type: Method
-  summary: "\nId of record, should never be 0<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<pre><code>NSChangedDataItem thing;\nInteger recordId = thing.GetRecordId();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: Integer GetRecordId()
-    parameters:
-    return:
-      type: CRMScript.Global.Integer
-  example: 
-  - "\n<pre><code>NSChangedDataItem thing;\nInteger recordId = thing.GetRecordId();</code></pre>\n"
-- uid: CRMScript.NetServer.NSChangedDataItem.GetTablename()
-  commentId: M:CRMScript.NetServer.NSChangedDataItem.GetTablename()
-  id: 'GetTablename()'
-  so.intellisense: NSChangedDataItem.GetTablename
-  langs:
-  - crmscript
-  name: 'GetTablename()'
-  nameWithType: NSChangedDataItem.GetTablename()
-  fullName: CRMScript.NetServer.NSChangedDataItem.GetTablename()
-  type: Method
-  summary: "\nName of table, standardized to lowercase<p></p>\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSChangedDataItem thing;\nString tablename = thing.GetTablename();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: String GetTablename()
-    parameters:
-    return:
-      type: CRMScript.Global.String
-  example: 
-  - "\n<pre><code>NSChangedDataItem thing;\nString tablename = thing.GetTablename();</code></pre>\n"
 - uid: CRMScript.NetServer.NSChangedDataItem.#ctor
   commentId: M:CRMScript.NetServer.NSChangedDataItem.#ctor
   id: '#ctor'
@@ -71,6 +32,46 @@ items:
   syntax: 
     content: NSChangedDataItem
   example: 
+- uid: CRMScript.NetServer.NSChangedDataItem.GetRecordId()
+  commentId: M:CRMScript.NetServer.NSChangedDataItem.GetRecordId()
+  id: 'GetRecordId()'
+  so.intellisense: NSChangedDataItem.GetRecordId
+  langs:
+  - crmscript
+  name: 'GetRecordId()'
+  nameWithType: NSChangedDataItem.GetRecordId()
+  fullName: CRMScript.NetServer.NSChangedDataItem.GetRecordId()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Integer GetRecordId()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: ID of record, should never be 0
+  example: 
+  - "\n<pre><code>NSChangedDataItem thing;\nInteger recordId = thing.GetRecordId();</code></pre>\n"
+- uid: CRMScript.NetServer.NSChangedDataItem.GetTablename()
+  commentId: M:CRMScript.NetServer.NSChangedDataItem.GetTablename()
+  id: 'GetTablename()'
+  so.intellisense: NSChangedDataItem.GetTablename
+  langs:
+  - crmscript
+  name: 'GetTablename()'
+  nameWithType: NSChangedDataItem.GetTablename()
+  fullName: CRMScript.NetServer.NSChangedDataItem.GetTablename()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetTablename()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Name of table, standardized to lowercase
+  example: 
+  - "\n<pre><code>NSChangedDataItem thing;\nString tablename = thing.GetTablename();</code></pre>\n"
 - uid: CRMScript.NetServer.NSChangedDataItem.SetRecordId(Integer)
   commentId: M:CRMScript.NetServer.NSChangedDataItem.SetRecordId(Integer)
   id: 'SetRecordId(Integer)'
@@ -81,14 +82,16 @@ items:
   nameWithType: NSChangedDataItem.SetRecordId(Integer)
   fullName: CRMScript.NetServer.NSChangedDataItem.SetRecordId(Integer)
   type: Method
-  summary: "\nId of record, should never be 0\n"
+  summary: ""
   remarks: 
   syntax: 
-    content: SetRecordId(Integer recordId)
+    content: Void SetRecordId(Integer recordId)
     parameters:
     - id: recordId
       type: CRMScript.Global.Integer
-      description: 
+      description: ID of record, should never be 0
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSChangedDataItem thing;\nInteger recordId;\nthing.SetRecordId(recordId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSChangedDataItem.SetTablename(String)
@@ -101,14 +104,16 @@ items:
   nameWithType: NSChangedDataItem.SetTablename(String)
   fullName: CRMScript.NetServer.NSChangedDataItem.SetTablename(String)
   type: Method
-  summary: "\nName of table, standardized to lowercase\n"
+  summary: ""
   remarks: 
   syntax: 
-    content: SetTablename(String tablename)
+    content: Void SetTablename(String tablename)
     parameters:
     - id: tablename
       type: CRMScript.Global.String
-      description: 
+      description: Name of table, standardized to lowercase
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSChangedDataItem thing;\nString tablename;\nthing.SetTablename(tablename);</code></pre>\n"
 references:
@@ -130,3 +135,9 @@ references:
   name: String
   nameWithType: String
   fullName: CRMScript.Global.String
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void

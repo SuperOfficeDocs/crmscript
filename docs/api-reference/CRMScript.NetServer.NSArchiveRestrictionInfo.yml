@@ -3,10 +3,10 @@ items:
 - uid: CRMScript.NetServer.NSArchiveRestrictionInfo
   commentId: T:CRMScript.NetServer.NSArchiveRestrictionInfo
   id: NSArchiveRestrictionInfo
-  so.intellisense: Void.NSArchiveRestrictionInfo
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSArchiveRestrictionInfo.#ctor
   - CRMScript.NetServer.NSArchiveRestrictionInfo.GetColumnInfo()
   - CRMScript.NetServer.NSArchiveRestrictionInfo.GetDisplayValues()
   - CRMScript.NetServer.NSArchiveRestrictionInfo.GetInterOperator()
@@ -18,16 +18,15 @@ items:
   - CRMScript.NetServer.NSArchiveRestrictionInfo.GetSubRestrictions()
   - CRMScript.NetServer.NSArchiveRestrictionInfo.GetUniqueHash()
   - CRMScript.NetServer.NSArchiveRestrictionInfo.GetValues()
-  - CRMScript.NetServer.NSArchiveRestrictionInfo.#ctor
-  - CRMScript.NetServer.NSArchiveRestrictionInfo.SetColumnInfo()
+  - CRMScript.NetServer.NSArchiveRestrictionInfo.SetColumnInfo(NSArchiveColumnInfo)
   - CRMScript.NetServer.NSArchiveRestrictionInfo.SetDisplayValues(String[])
-  - CRMScript.NetServer.NSArchiveRestrictionInfo.SetInterOperator()
+  - CRMScript.NetServer.NSArchiveRestrictionInfo.SetInterOperator(Integer)
   - CRMScript.NetServer.NSArchiveRestrictionInfo.SetInterParenthesis(Integer)
-  - CRMScript.NetServer.NSArchiveRestrictionInfo.SetIsActive()
+  - CRMScript.NetServer.NSArchiveRestrictionInfo.SetIsActive(Bool)
   - CRMScript.NetServer.NSArchiveRestrictionInfo.SetName(String)
   - CRMScript.NetServer.NSArchiveRestrictionInfo.SetOperator(String)
   - CRMScript.NetServer.NSArchiveRestrictionInfo.SetParenthesis(Integer)
-  - CRMScript.NetServer.NSArchiveRestrictionInfo.SetSubRestrictions()
+  - CRMScript.NetServer.NSArchiveRestrictionInfo.SetSubRestrictions(NSArchiveRestrictionInfo[])
   - CRMScript.NetServer.NSArchiveRestrictionInfo.SetUniqueHash(Integer)
   - CRMScript.NetServer.NSArchiveRestrictionInfo.SetValues(String[])
   name: NSArchiveRestrictionInfo
@@ -36,212 +35,6 @@ items:
   type: Class
   summary: 
   example: 
-- uid: CRMScript.NetServer.NSArchiveRestrictionInfo.GetColumnInfo()
-  commentId: M:CRMScript.NetServer.NSArchiveRestrictionInfo.GetColumnInfo()
-  id: 'GetColumnInfo()'
-  so.intellisense: NSArchiveRestrictionInfo.GetColumnInfo
-  langs:
-  - crmscript
-  name: 'GetColumnInfo()'
-  nameWithType: NSArchiveRestrictionInfo.GetColumnInfo()
-  fullName: CRMScript.NetServer.NSArchiveRestrictionInfo.GetColumnInfo()
-  type: Method
-  summary: "\nOptional complete NSArchiveColumnInfo for this restriction; in that case, ColumnInfo.Name == this.Name will always be true<p></p>\n<strong>Returns:</strong>NSArchiveColumnInfo<p></p>\n<pre><code>NSArchiveRestrictionInfo thing;\nNSArchiveColumnInfo columnInfo = thing.GetColumnInfo();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: NSArchiveColumnInfo GetColumnInfo()
-    parameters:
-    return:
-      type: CRMScript.NetServer.NSArchiveColumnInfo
-  example: 
-  - "\n<pre><code>NSArchiveRestrictionInfo thing;\nNSArchiveColumnInfo columnInfo = thing.GetColumnInfo();</code></pre>\n"
-- uid: CRMScript.NetServer.NSArchiveRestrictionInfo.GetDisplayValues()
-  commentId: M:CRMScript.NetServer.NSArchiveRestrictionInfo.GetDisplayValues()
-  id: 'GetDisplayValues()'
-  so.intellisense: NSArchiveRestrictionInfo.GetDisplayValues
-  langs:
-  - crmscript
-  name: 'GetDisplayValues()'
-  nameWithType: NSArchiveRestrictionInfo.GetDisplayValues()
-  fullName: CRMScript.NetServer.NSArchiveRestrictionInfo.GetDisplayValues()
-  type: Method
-  summary: "\nDisplay representation of value(s)* list ID's are decoded to display texts, other values are represented in a format suitable for decoding and display through the CultureDataFormatter.<p></p>\n<strong>Returns:</strong>String[]<p></p>\n<pre><code>NSArchiveRestrictionInfo thing;\nString[] displayValues = thing.GetDisplayValues();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: String[] GetDisplayValues()
-    parameters:
-    return:
-      type: CRMScript.Global.String[]
-  example: 
-  - "\n<pre><code>NSArchiveRestrictionInfo thing;\nString[] displayValues = thing.GetDisplayValues();</code></pre>\n"
-- uid: CRMScript.NetServer.NSArchiveRestrictionInfo.GetInterOperator()
-  commentId: M:CRMScript.NetServer.NSArchiveRestrictionInfo.GetInterOperator()
-  id: 'GetInterOperator()'
-  so.intellisense: NSArchiveRestrictionInfo.GetInterOperator
-  langs:
-  - crmscript
-  name: 'GetInterOperator()'
-  nameWithType: NSArchiveRestrictionInfo.GetInterOperator()
-  fullName: CRMScript.NetServer.NSArchiveRestrictionInfo.GetInterOperator()
-  type: Method
-  summary: "\nGet or set the inter-restriction operator that describes how this restriction is related to the next one in an array. Default for new ArchiveRestrictionInfo objects is And<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<ul><li>Enum: 0 = None</li><li>Enum: 1 = And</li><li>Enum: 2 = Or</li></ul><pre><code>NSArchiveRestrictionInfo thing;\nInteger interOperator = thing.GetInterOperator();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: Integer GetInterOperator()
-    parameters:
-    return:
-      type: CRMScript.Global.Integer
-  example: 
-  - "\n<pre><code>NSArchiveRestrictionInfo thing;\nInteger interOperator = thing.GetInterOperator();</code></pre>\n"
-- uid: CRMScript.NetServer.NSArchiveRestrictionInfo.GetInterParenthesis()
-  commentId: M:CRMScript.NetServer.NSArchiveRestrictionInfo.GetInterParenthesis()
-  id: 'GetInterParenthesis()'
-  so.intellisense: NSArchiveRestrictionInfo.GetInterParenthesis
-  langs:
-  - crmscript
-  name: 'GetInterParenthesis()'
-  nameWithType: NSArchiveRestrictionInfo.GetInterParenthesis()
-  fullName: CRMScript.NetServer.NSArchiveRestrictionInfo.GetInterParenthesis()
-  type: Method
-  summary: "\nGet or set the parenthesis (if any) associated with this restriction. Positive values indicate a number of opening parentheses (deepening nesting level), while negative numbers indicate closing parentheses. Zero means no change in nesting level (no parentheses).<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<pre><code>NSArchiveRestrictionInfo thing;\nInteger interParenthesis = thing.GetInterParenthesis();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: Integer GetInterParenthesis()
-    parameters:
-    return:
-      type: CRMScript.Global.Integer
-  example: 
-  - "\n<pre><code>NSArchiveRestrictionInfo thing;\nInteger interParenthesis = thing.GetInterParenthesis();</code></pre>\n"
-- uid: CRMScript.NetServer.NSArchiveRestrictionInfo.GetIsActive()
-  commentId: M:CRMScript.NetServer.NSArchiveRestrictionInfo.GetIsActive()
-  id: 'GetIsActive()'
-  so.intellisense: NSArchiveRestrictionInfo.GetIsActive
-  langs:
-  - crmscript
-  name: 'GetIsActive()'
-  nameWithType: NSArchiveRestrictionInfo.GetIsActive()
-  fullName: CRMScript.NetServer.NSArchiveRestrictionInfo.GetIsActive()
-  type: Method
-  summary: "\nIs this restriction active?  Inactive restrictions will not influence the generated query<p></p>\n<strong>Returns:</strong>Bool<p></p>\n<pre><code>NSArchiveRestrictionInfo thing;\nBool isActive = thing.GetIsActive();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: Bool GetIsActive()
-    parameters:
-    return:
-      type: CRMScript.Global.Bool
-  example: 
-  - "\n<pre><code>NSArchiveRestrictionInfo thing;\nBool isActive = thing.GetIsActive();</code></pre>\n"
-- uid: CRMScript.NetServer.NSArchiveRestrictionInfo.GetName()
-  commentId: M:CRMScript.NetServer.NSArchiveRestrictionInfo.GetName()
-  id: 'GetName()'
-  so.intellisense: NSArchiveRestrictionInfo.GetName
-  langs:
-  - crmscript
-  name: 'GetName()'
-  nameWithType: NSArchiveRestrictionInfo.GetName()
-  fullName: CRMScript.NetServer.NSArchiveRestrictionInfo.GetName()
-  type: Method
-  summary: "\nThe programmatic column name, including any required prefixes<p></p>\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSArchiveRestrictionInfo thing;\nString name = thing.GetName();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: String GetName()
-    parameters:
-    return:
-      type: CRMScript.Global.String
-  example: 
-  - "\n<pre><code>NSArchiveRestrictionInfo thing;\nString name = thing.GetName();</code></pre>\n"
-- uid: CRMScript.NetServer.NSArchiveRestrictionInfo.GetOperator()
-  commentId: M:CRMScript.NetServer.NSArchiveRestrictionInfo.GetOperator()
-  id: 'GetOperator()'
-  so.intellisense: NSArchiveRestrictionInfo.GetOperator
-  langs:
-  - crmscript
-  name: 'GetOperator()'
-  nameWithType: NSArchiveRestrictionInfo.GetOperator()
-  fullName: CRMScript.NetServer.NSArchiveRestrictionInfo.GetOperator()
-  type: Method
-  summary: "\nThe operator, such as =, etc<p></p>\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSArchiveRestrictionInfo thing;\nString operator = thing.GetOperator();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: String GetOperator()
-    parameters:
-    return:
-      type: CRMScript.Global.String
-  example: 
-  - "\n<pre><code>NSArchiveRestrictionInfo thing;\nString operator = thing.GetOperator();</code></pre>\n"
-- uid: CRMScript.NetServer.NSArchiveRestrictionInfo.GetParenthesis()
-  commentId: M:CRMScript.NetServer.NSArchiveRestrictionInfo.GetParenthesis()
-  id: 'GetParenthesis()'
-  so.intellisense: NSArchiveRestrictionInfo.GetParenthesis
-  langs:
-  - crmscript
-  name: 'GetParenthesis()'
-  nameWithType: NSArchiveRestrictionInfo.GetParenthesis()
-  fullName: CRMScript.NetServer.NSArchiveRestrictionInfo.GetParenthesis()
-  type: Method
-  summary: 
-  remarks: 
-  syntax: 
-    content: GetParenthesis()
-    parameters:
-  example: 
-- uid: CRMScript.NetServer.NSArchiveRestrictionInfo.GetSubRestrictions()
-  commentId: M:CRMScript.NetServer.NSArchiveRestrictionInfo.GetSubRestrictions()
-  id: 'GetSubRestrictions()'
-  so.intellisense: NSArchiveRestrictionInfo.GetSubRestrictions
-  langs:
-  - crmscript
-  name: 'GetSubRestrictions()'
-  nameWithType: NSArchiveRestrictionInfo.GetSubRestrictions()
-  fullName: CRMScript.NetServer.NSArchiveRestrictionInfo.GetSubRestrictions()
-  type: Method
-  summary: "\nOptional collection of sub criteria, usually null but set for Saint counter fields<p></p>\n<strong>Returns:</strong>NSArchiveRestrictionInfo[]<p></p>\n<pre><code>NSArchiveRestrictionInfo thing;\nNSArchiveRestrictionInfo[] subRestrictions = thing.GetSubRestrictions();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: NSArchiveRestrictionInfo[] GetSubRestrictions()
-    parameters:
-    return:
-      type: CRMScript.NetServer.NSArchiveRestrictionInfo[]
-  example: 
-  - "\n<pre><code>NSArchiveRestrictionInfo thing;\nNSArchiveRestrictionInfo[] subRestrictions = thing.GetSubRestrictions();</code></pre>\n"
-- uid: CRMScript.NetServer.NSArchiveRestrictionInfo.GetUniqueHash()
-  commentId: M:CRMScript.NetServer.NSArchiveRestrictionInfo.GetUniqueHash()
-  id: 'GetUniqueHash()'
-  so.intellisense: NSArchiveRestrictionInfo.GetUniqueHash
-  langs:
-  - crmscript
-  name: 'GetUniqueHash()'
-  nameWithType: NSArchiveRestrictionInfo.GetUniqueHash()
-  fullName: CRMScript.NetServer.NSArchiveRestrictionInfo.GetUniqueHash()
-  type: Method
-  summary: "\n<strong>Returns:</strong>Integer<p></p>\n<pre><code>NSArchiveRestrictionInfo thing;\nInteger uniqueHash = thing.GetUniqueHash();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: Integer GetUniqueHash()
-    parameters:
-    return:
-      type: CRMScript.Global.Integer
-  example: 
-  - "\n<pre><code>NSArchiveRestrictionInfo thing;\nInteger uniqueHash = thing.GetUniqueHash();</code></pre>\n"
-- uid: CRMScript.NetServer.NSArchiveRestrictionInfo.GetValues()
-  commentId: M:CRMScript.NetServer.NSArchiveRestrictionInfo.GetValues()
-  id: 'GetValues()'
-  so.intellisense: NSArchiveRestrictionInfo.GetValues
-  langs:
-  - crmscript
-  name: 'GetValues()'
-  nameWithType: NSArchiveRestrictionInfo.GetValues()
-  fullName: CRMScript.NetServer.NSArchiveRestrictionInfo.GetValues()
-  type: Method
-  summary: "\nValue(s) to test against<p></p>\n<strong>Returns:</strong>String[]<p></p>\n<pre><code>NSArchiveRestrictionInfo thing;\nString[] values = thing.GetValues();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: String[] GetValues()
-    parameters:
-    return:
-      type: CRMScript.Global.String[]
-  example: 
-  - "\n<pre><code>NSArchiveRestrictionInfo thing;\nString[] values = thing.GetValues();</code></pre>\n"
 - uid: CRMScript.NetServer.NSArchiveRestrictionInfo.#ctor
   commentId: M:CRMScript.NetServer.NSArchiveRestrictionInfo.#ctor
   id: '#ctor'
@@ -257,21 +50,245 @@ items:
   syntax: 
     content: NSArchiveRestrictionInfo
   example: 
-- uid: CRMScript.NetServer.NSArchiveRestrictionInfo.SetColumnInfo()
-  commentId: M:CRMScript.NetServer.NSArchiveRestrictionInfo.SetColumnInfo()
-  id: 'SetColumnInfo()'
+- uid: CRMScript.NetServer.NSArchiveRestrictionInfo.GetColumnInfo()
+  commentId: M:CRMScript.NetServer.NSArchiveRestrictionInfo.GetColumnInfo()
+  id: 'GetColumnInfo()'
+  so.intellisense: NSArchiveRestrictionInfo.GetColumnInfo
+  langs:
+  - crmscript
+  name: 'GetColumnInfo()'
+  nameWithType: NSArchiveRestrictionInfo.GetColumnInfo()
+  fullName: CRMScript.NetServer.NSArchiveRestrictionInfo.GetColumnInfo()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: NSArchiveColumnInfo GetColumnInfo()
+    parameters: []
+    return:
+      type: CRMScript.NetServer.NSArchiveColumnInfo
+      description: Optional complete NSArchiveColumnInfo for this restriction; in that case, ColumnInfo.Name == this.Name will always be true
+  example: 
+  - "\n<pre><code>NSArchiveRestrictionInfo thing;\nNSArchiveColumnInfo columnInfo = thing.GetColumnInfo();</code></pre>\n"
+- uid: CRMScript.NetServer.NSArchiveRestrictionInfo.GetDisplayValues()
+  commentId: M:CRMScript.NetServer.NSArchiveRestrictionInfo.GetDisplayValues()
+  id: 'GetDisplayValues()'
+  so.intellisense: NSArchiveRestrictionInfo.GetDisplayValues
+  langs:
+  - crmscript
+  name: 'GetDisplayValues()'
+  nameWithType: NSArchiveRestrictionInfo.GetDisplayValues()
+  fullName: CRMScript.NetServer.NSArchiveRestrictionInfo.GetDisplayValues()
+  type: Method
+  summary: ""
+  remarks: "\nList ID's are decoded to display texts, other values are represented in a format suitable for decoding and display through the CultureDataFormatter.\n"
+  syntax: 
+    content: String[] GetDisplayValues()
+    parameters: []
+    return:
+      type: CRMScript.Global.String[]
+      description: Display representation of values
+  example: 
+  - "\n<pre><code>NSArchiveRestrictionInfo thing;\nString[] displayValues = thing.GetDisplayValues();</code></pre>\n"
+- uid: CRMScript.NetServer.NSArchiveRestrictionInfo.GetInterOperator()
+  commentId: M:CRMScript.NetServer.NSArchiveRestrictionInfo.GetInterOperator()
+  id: 'GetInterOperator()'
+  so.intellisense: NSArchiveRestrictionInfo.GetInterOperator
+  langs:
+  - crmscript
+  name: 'GetInterOperator()'
+  nameWithType: NSArchiveRestrictionInfo.GetInterOperator()
+  fullName: CRMScript.NetServer.NSArchiveRestrictionInfo.GetInterOperator()
+  type: Method
+  summary: "\nGets inter-restriction operator that describes how this restriction is related to the next one in an array.\n"
+  remarks: "\nDefault for new ArchiveRestrictionInfo objects is And\n"
+  syntax: 
+    content: Integer GetInterOperator()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: inter-restriction operator 0 = None; 1 = And; 2 = Or
+  example: 
+  - "\n<pre><code>NSArchiveRestrictionInfo thing;\nInteger interOperator = thing.GetInterOperator();</code></pre>\n"
+- uid: CRMScript.NetServer.NSArchiveRestrictionInfo.GetInterParenthesis()
+  commentId: M:CRMScript.NetServer.NSArchiveRestrictionInfo.GetInterParenthesis()
+  id: 'GetInterParenthesis()'
+  so.intellisense: NSArchiveRestrictionInfo.GetInterParenthesis
+  langs:
+  - crmscript
+  name: 'GetInterParenthesis()'
+  nameWithType: NSArchiveRestrictionInfo.GetInterParenthesis()
+  fullName: CRMScript.NetServer.NSArchiveRestrictionInfo.GetInterParenthesis()
+  type: Method
+  summary: "\nGets the parenthesis (if any) associated with this restriction."
+  remarks: "\nPositive values indicate a number of opening parentheses (deepening nesting level), while negative numbers indicate closing parentheses. Zero means no change in nesting level (no parentheses).\n"
+  syntax: 
+    content: Integer GetInterParenthesis()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description:
+  example: 
+  - "\n<pre><code>NSArchiveRestrictionInfo thing;\nInteger interParenthesis = thing.GetInterParenthesis();</code></pre>\n"
+- uid: CRMScript.NetServer.NSArchiveRestrictionInfo.GetIsActive()
+  commentId: M:CRMScript.NetServer.NSArchiveRestrictionInfo.GetIsActive()
+  id: 'GetIsActive()'
+  so.intellisense: NSArchiveRestrictionInfo.GetIsActive
+  langs:
+  - crmscript
+  name: 'GetIsActive()'
+  nameWithType: NSArchiveRestrictionInfo.GetIsActive()
+  fullName: CRMScript.NetServer.NSArchiveRestrictionInfo.GetIsActive()
+  type: Method
+  summary: ""
+  remarks: "\nInactive restrictions will not influence the generated query.\n"
+  syntax: 
+    content: Bool GetIsActive()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: Is this restriction active?
+  example: 
+  - "\n<pre><code>NSArchiveRestrictionInfo thing;\nBool isActive = thing.GetIsActive();</code></pre>\n"
+- uid: CRMScript.NetServer.NSArchiveRestrictionInfo.GetName()
+  commentId: M:CRMScript.NetServer.NSArchiveRestrictionInfo.GetName()
+  id: 'GetName()'
+  so.intellisense: NSArchiveRestrictionInfo.GetName
+  langs:
+  - crmscript
+  name: 'GetName()'
+  nameWithType: NSArchiveRestrictionInfo.GetName()
+  fullName: CRMScript.NetServer.NSArchiveRestrictionInfo.GetName()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetName()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: The programmatic column name, including any required prefixes
+  example: 
+  - "\n<pre><code>NSArchiveRestrictionInfo thing;\nString name = thing.GetName();</code></pre>\n"
+- uid: CRMScript.NetServer.NSArchiveRestrictionInfo.GetOperator()
+  commentId: M:CRMScript.NetServer.NSArchiveRestrictionInfo.GetOperator()
+  id: 'GetOperator()'
+  so.intellisense: NSArchiveRestrictionInfo.GetOperator
+  langs:
+  - crmscript
+  name: 'GetOperator()'
+  nameWithType: NSArchiveRestrictionInfo.GetOperator()
+  fullName: CRMScript.NetServer.NSArchiveRestrictionInfo.GetOperator()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetOperator()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: The operator, such as =
+  example: 
+  - "\n<pre><code>NSArchiveRestrictionInfo thing;\nString operator = thing.GetOperator();</code></pre>\n"
+- uid: CRMScript.NetServer.NSArchiveRestrictionInfo.GetParenthesis()
+  commentId: M:CRMScript.NetServer.NSArchiveRestrictionInfo.GetParenthesis()
+  id: 'GetParenthesis()'
+  so.intellisense: NSArchiveRestrictionInfo.GetParenthesis
+  langs:
+  - crmscript
+  name: 'GetParenthesis()'
+  nameWithType: NSArchiveRestrictionInfo.GetParenthesis()
+  fullName: CRMScript.NetServer.NSArchiveRestrictionInfo.GetParenthesis()
+  type: Method
+  summary: 
+  remarks: 
+  syntax: 
+    content: Integer GetParenthesis()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description:
+  example: 
+- uid: CRMScript.NetServer.NSArchiveRestrictionInfo.GetSubRestrictions()
+  commentId: M:CRMScript.NetServer.NSArchiveRestrictionInfo.GetSubRestrictions()
+  id: 'GetSubRestrictions()'
+  so.intellisense: NSArchiveRestrictionInfo.GetSubRestrictions
+  langs:
+  - crmscript
+  name: 'GetSubRestrictions()'
+  nameWithType: NSArchiveRestrictionInfo.GetSubRestrictions()
+  fullName: CRMScript.NetServer.NSArchiveRestrictionInfo.GetSubRestrictions()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: NSArchiveRestrictionInfo[] GetSubRestrictions()
+    parameters: []
+    return:
+      type: CRMScript.NetServer.NSArchiveRestrictionInfo[]
+      description: Optional collection of sub criteria, usually null but set for Saint counter fields
+  example: 
+  - "\n<pre><code>NSArchiveRestrictionInfo thing;\nNSArchiveRestrictionInfo[] subRestrictions = thing.GetSubRestrictions();</code></pre>\n"
+- uid: CRMScript.NetServer.NSArchiveRestrictionInfo.GetUniqueHash()
+  commentId: M:CRMScript.NetServer.NSArchiveRestrictionInfo.GetUniqueHash()
+  id: 'GetUniqueHash()'
+  so.intellisense: NSArchiveRestrictionInfo.GetUniqueHash
+  langs:
+  - crmscript
+  name: 'GetUniqueHash()'
+  nameWithType: NSArchiveRestrictionInfo.GetUniqueHash()
+  fullName: CRMScript.NetServer.NSArchiveRestrictionInfo.GetUniqueHash()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Integer GetUniqueHash()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description:
+  example: 
+  - "\n<pre><code>NSArchiveRestrictionInfo thing;\nInteger uniqueHash = thing.GetUniqueHash();</code></pre>\n"
+- uid: CRMScript.NetServer.NSArchiveRestrictionInfo.GetValues()
+  commentId: M:CRMScript.NetServer.NSArchiveRestrictionInfo.GetValues()
+  id: 'GetValues()'
+  so.intellisense: NSArchiveRestrictionInfo.GetValues
+  langs:
+  - crmscript
+  name: 'GetValues()'
+  nameWithType: NSArchiveRestrictionInfo.GetValues()
+  fullName: CRMScript.NetServer.NSArchiveRestrictionInfo.GetValues()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String[] GetValues()
+    parameters: []
+    return:
+      type: CRMScript.Global.String[]
+      description: Values to test against
+  example: 
+  - "\n<pre><code>NSArchiveRestrictionInfo thing;\nString[] values = thing.GetValues();</code></pre>\n"
+- uid: CRMScript.NetServer.NSArchiveRestrictionInfo.SetColumnInfo(NSArchiveColumnInfo)
+  commentId: M:CRMScript.NetServer.NSArchiveRestrictionInfo.SetColumnInfo(NSArchiveColumnInfo)
+  id: 'SetColumnInfo(NSArchiveColumnInfo)'
   so.intellisense: NSArchiveRestrictionInfo.SetColumnInfo
   langs:
   - crmscript
-  name: 'SetColumnInfo()'
-  nameWithType: NSArchiveRestrictionInfo.SetColumnInfo()
-  fullName: CRMScript.NetServer.NSArchiveRestrictionInfo.SetColumnInfo()
+  name: 'SetColumnInfo(NSArchiveColumnInfo)'
+  nameWithType: NSArchiveRestrictionInfo.SetColumnInfoNSArchiveColumnInfo()
+  fullName: CRMScript.NetServer.NSArchiveRestrictionInfo.SetColumnInfo(NSArchiveColumnInfo)
   type: Method
-  summary: "\nOptional complete NSArchiveColumnInfo for this restriction; in that case, ColumnInfo.Name == this.Name will always be true\n"
+  summary: ""
   remarks: 
   syntax: 
-    content: SetColumnInfo(NSArchiveColumnInfo columnInfo)
+    content: Void SetColumnInfo(NSArchiveColumnInfo columnInfo)
     parameters:
+    - id: columnInfo
+      type: CRMScript.NetServer.NSArchiveColumnInfo
+      description: Optional complete NSArchiveColumnInfo for this restriction; in that case, ColumnInfo.Name == this.Name will always be true
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSArchiveRestrictionInfo thing;\nNSArchiveColumnInfo columnInfo;\nthing.SetColumnInfo(columnInfo);</code></pre>\n"
 - uid: CRMScript.NetServer.NSArchiveRestrictionInfo.SetDisplayValues(String[])
@@ -284,31 +301,38 @@ items:
   nameWithType: NSArchiveRestrictionInfo.SetDisplayValues(String[])
   fullName: CRMScript.NetServer.NSArchiveRestrictionInfo.SetDisplayValues(String[])
   type: Method
-  summary: "\nDisplay representation of value(s)* list ID's are decoded to display texts, other values are represented in a format suitable for decoding and display through the CultureDataFormatter.\n"
-  remarks: 
+  summary: ""
+  remarks: "\nList IDs are decoded to display texts, other values are represented in a format suitable for decoding and display through the CultureDataFormatter.\n"
   syntax: 
-    content: SetDisplayValues(String[] displayValues)
+    content: Void SetDisplayValues(String[] displayValues)
     parameters:
     - id: displayValues
       type: CRMScript.Global.String[]
-      description: 
+      description: Display representation of values
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSArchiveRestrictionInfo thing;\nString[] displayValues;\nthing.SetDisplayValues(displayValues);</code></pre>\n"
-- uid: CRMScript.NetServer.NSArchiveRestrictionInfo.SetInterOperator()
-  commentId: M:CRMScript.NetServer.NSArchiveRestrictionInfo.SetInterOperator()
-  id: 'SetInterOperator()'
+- uid: CRMScript.NetServer.NSArchiveRestrictionInfo.SetInterOperator(Integer)
+  commentId: M:CRMScript.NetServer.NSArchiveRestrictionInfo.SetInterOperator(Integer)
+  id: 'SetInterOperator(Integer)'
   so.intellisense: NSArchiveRestrictionInfo.SetInterOperator
   langs:
   - crmscript
-  name: 'SetInterOperator()'
-  nameWithType: NSArchiveRestrictionInfo.SetInterOperator()
-  fullName: CRMScript.NetServer.NSArchiveRestrictionInfo.SetInterOperator()
+  name: 'SetInterOperator(Integer)'
+  nameWithType: NSArchiveRestrictionInfo.SetInterOperator(Integer)
+  fullName: CRMScript.NetServer.NSArchiveRestrictionInfo.SetInterOperator(Integer)
   type: Method
-  summary: "\nCRMScript method in the NSArchiveRestrictionInfo class that sets the inter-restriction operatorSets the inter-restriction operator that describes how this restriction is related to the next one in an array.<p></p>\nThe default for new<code>ArchiveRestrictionInfo</code>objects is<em>And</em>.\n"
-  remarks: 
+  summary: "\nGets inter-restriction operator that describes how this restriction is related to the next one in an array.\n"
+  remarks: "\nDefault for new ArchiveRestrictionInfo objects is And\n" 
   syntax: 
-    content: SetInterOperator()
+    content: Void SetInterOperator(Integer operator)
     parameters:
+    - id: operator
+      type: CRMScript.Global.Integer
+      description: inter-restriction operator 0 = None; 1 = And; 2 = Or
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSArchiveRestrictionInfo thing;\nInteger interOperator;\nthing.SetInterOperator(interOperator);</code></pre>\n"
 - uid: CRMScript.NetServer.NSArchiveRestrictionInfo.SetInterParenthesis(Integer)
@@ -321,31 +345,38 @@ items:
   nameWithType: NSArchiveRestrictionInfo.SetInterParenthesis(Integer)
   fullName: CRMScript.NetServer.NSArchiveRestrictionInfo.SetInterParenthesis(Integer)
   type: Method
-  summary: "\nGet or set the parenthesis (if any) associated with this restriction. Positive values indicate a number of opening parentheses (deepening nesting level), while negative numbers indicate closing parentheses. Zero means no change in nesting level (no parentheses).\n"
-  remarks: 
+  summary: "\nGets the parenthesis (if any) associated with this restriction."
+  remarks: "\nPositive values indicate a number of opening parentheses (deepening nesting level), while negative numbers indicate closing parentheses. Zero means no change in nesting level (no parentheses).\n"
   syntax: 
-    content: SetInterParenthesis(Integer interParenthesis)
+    content: Void SetInterParenthesis(Integer interParenthesis)
     parameters:
     - id: interParenthesis
       type: CRMScript.Global.Integer
-      description: 
+      description:
+    return:
+      type: CRMScript.Global.Void 
   example: 
   - "\n<pre><code>NSArchiveRestrictionInfo thing;\nInteger interParenthesis;\nthing.SetInterParenthesis(interParenthesis);</code></pre>\n"
-- uid: CRMScript.NetServer.NSArchiveRestrictionInfo.SetIsActive()
-  commentId: M:CRMScript.NetServer.NSArchiveRestrictionInfo.SetIsActive()
-  id: 'SetIsActive()'
+- uid: CRMScript.NetServer.NSArchiveRestrictionInfo.SetIsActive(Bool)
+  commentId: M:CRMScript.NetServer.NSArchiveRestrictionInfo.SetIsActive(Bool)
+  id: 'SetIsActive(Bool)'
   so.intellisense: NSArchiveRestrictionInfo.SetIsActive
   langs:
   - crmscript
-  name: 'SetIsActive()'
-  nameWithType: NSArchiveRestrictionInfo.SetIsActive()
-  fullName: CRMScript.NetServer.NSArchiveRestrictionInfo.SetIsActive()
+  name: 'SetIsActive(Bool)'
+  nameWithType: NSArchiveRestrictionInfo.SetIsActive(Bool)
+  fullName: CRMScript.NetServer.NSArchiveRestrictionInfo.SetIsActive(Bool)
   type: Method
-  summary: "\nCRMScript method in the NSArchiveRestrictionInfo class that activates or deactivates a restrictionIs this restriction active? Inactive restrictions will not influence the generated query.<p></p>\n<code>SetIsActive(Bool isActive)</code>\n"
-  remarks: 
+  summary: "\nActivates or deactivates a restriction.\n"
+  remarks: "\nInactive restrictions will not influence the generated query.\n"
   syntax: 
-    content: SetIsActive()
+    content: Void SetIsActive(Bool isActive)
     parameters:
+    - id: isActive
+      type: CRMScript.Global.Bool
+      description: Is this restriction active?
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSArchiveRestrictionInfo thing;\nBool isActive;\nthing.SetIsActive(isActive);</code></pre>\n"
 - uid: CRMScript.NetServer.NSArchiveRestrictionInfo.SetName(String)
@@ -358,14 +389,14 @@ items:
   nameWithType: NSArchiveRestrictionInfo.SetName(String)
   fullName: CRMScript.NetServer.NSArchiveRestrictionInfo.SetName(String)
   type: Method
-  summary: "\nThe programmatic column name, including any required prefixes\n"
+  summary: ""
   remarks: 
   syntax: 
-    content: SetName(String name)
+    content: Void SetName(String name)
     parameters:
     - id: name
       type: CRMScript.Global.String
-      description: 
+      description: The programmatic column name, including any required prefixes
   example: 
   - "\n<pre><code>NSArchiveRestrictionInfo thing;\nString name;\nthing.SetName(name);</code></pre>\n"
 - uid: CRMScript.NetServer.NSArchiveRestrictionInfo.SetOperator(String)
@@ -378,14 +409,16 @@ items:
   nameWithType: NSArchiveRestrictionInfo.SetOperator(String)
   fullName: CRMScript.NetServer.NSArchiveRestrictionInfo.SetOperator(String)
   type: Method
-  summary: "\nThe operator, such as =, etc\n"
+  summary: ""
   remarks: 
   syntax: 
-    content: SetOperator(String operator)
+    content: Void SetOperator(String operator)
     parameters:
     - id: operator
       type: CRMScript.Global.String
-      description: 
+      description: The operator, such as =
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSArchiveRestrictionInfo thing;\nString operator;\nthing.SetOperator(operator);</code></pre>\n"
 - uid: CRMScript.NetServer.NSArchiveRestrictionInfo.SetParenthesis(Integer)
@@ -401,27 +434,34 @@ items:
   summary: 
   remarks: 
   syntax: 
-    content: SetParenthesis(Integer p_0)
+    content: Void SetParenthesis(Integer p)
     parameters:
-    - id: p_0
+    - id: p
       type: CRMScript.Global.Integer
       description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
-- uid: CRMScript.NetServer.NSArchiveRestrictionInfo.SetSubRestrictions()
-  commentId: M:CRMScript.NetServer.NSArchiveRestrictionInfo.SetSubRestrictions()
-  id: 'SetSubRestrictions()'
+- uid: CRMScript.NetServer.NSArchiveRestrictionInfo.SetSubRestrictions(NSArchiveRestrictionInfo[])
+  commentId: M:CRMScript.NetServer.NSArchiveRestrictionInfo.SetSubRestrictions(NSArchiveRestrictionInfo[])
+  id: 'SetSubRestrictions(NSArchiveRestrictionInfo[])'
   so.intellisense: NSArchiveRestrictionInfo.SetSubRestrictions
   langs:
   - crmscript
-  name: 'SetSubRestrictions()'
-  nameWithType: NSArchiveRestrictionInfo.SetSubRestrictions()
-  fullName: CRMScript.NetServer.NSArchiveRestrictionInfo.SetSubRestrictions()
+  name: 'SetSubRestrictions(NSArchiveRestrictionInfo[])'
+  nameWithType: NSArchiveRestrictionInfo.SetSubRestrictions(NSArchiveRestrictionInfo[])
+  fullName: CRMScript.NetServer.NSArchiveRestrictionInfo.SetSubRestrictions(NSArchiveRestrictionInfo[])
   type: Method
-  summary: "\nOptional collection of sub criteria, usually null but set for Saint counter fields\n"
+  summary: ""
   remarks: 
   syntax: 
-    content: SetSubRestrictions(NSArchiveRestrictionInfo[] subRestrictions)
+    content: Void SetSubRestrictions(NSArchiveRestrictionInfo[] subRestrictions)
     parameters:
+    - id: subRestrictions
+      type: CRMScript.NetServer.NSArchiveRestrictionInfo[]
+      description: Optional collection of sub criteria, usually null but set for Saint counter fields
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSArchiveRestrictionInfo thing;\nNSArchiveRestrictionInfo[] subRestrictions;\nthing.SetSubRestrictions(subRestrictions);</code></pre>\n"
 - uid: CRMScript.NetServer.NSArchiveRestrictionInfo.SetUniqueHash(Integer)
@@ -437,11 +477,13 @@ items:
   summary: 
   remarks: 
   syntax: 
-    content: SetUniqueHash(Integer uniqueHash)
+    content: Void SetUniqueHash(Integer uniqueHash)
     parameters:
     - id: uniqueHash
       type: CRMScript.Global.Integer
       description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSArchiveRestrictionInfo thing;\nInteger uniqueHash;\nthing.SetUniqueHash(uniqueHash);</code></pre>\n"
 - uid: CRMScript.NetServer.NSArchiveRestrictionInfo.SetValues(String[])
@@ -454,14 +496,16 @@ items:
   nameWithType: NSArchiveRestrictionInfo.SetValues(String[])
   fullName: CRMScript.NetServer.NSArchiveRestrictionInfo.SetValues(String[])
   type: Method
-  summary: "\nValue(s) to test against\n"
+  summary: ""
   remarks: 
   syntax: 
-    content: SetValues(String[] values)
+    content: Void SetValues(String[] values)
     parameters:
     - id: values
       type: CRMScript.Global.String[]
-      description: 
+      description: Values to test against
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSArchiveRestrictionInfo thing;\nString[] values;\nthing.SetValues(values);</code></pre>\n"
 references:
@@ -535,3 +579,9 @@ references:
   name: NSArchiveRestrictionInfo
   nameWithType: NSArchiveRestrictionInfo
   fullName: CRMScript.NetServer.NSArchiveRestrictionInfo
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void

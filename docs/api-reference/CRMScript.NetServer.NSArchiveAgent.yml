@@ -3,10 +3,10 @@ items:
 - uid: CRMScript.NetServer.NSArchiveAgent
   commentId: T:CRMScript.NetServer.NSArchiveAgent
   id: NSArchiveAgent
-  so.intellisense: Void.NSArchiveAgent
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSArchiveAgent.#ctor
   - CRMScript.NetServer.NSArchiveAgent.CreateDefaultArchiveListResult()
   - CRMScript.NetServer.NSArchiveAgent.ExportArchive(String,String,String[],String[],String,String[],Integer)
   - CRMScript.NetServer.NSArchiveAgent.GetActivityFilter()
@@ -29,7 +29,6 @@ items:
   - CRMScript.NetServer.NSArchiveAgent.GetAvailableEntities(String,String)
   - CRMScript.NetServer.NSArchiveAgent.GetGroupAssociateIds(Integer[])
   - CRMScript.NetServer.NSArchiveAgent.GetProviderNames()
-  - CRMScript.NetServer.NSArchiveAgent.#ctor
   - CRMScript.NetServer.NSArchiveAgent.SetActivityFilter()
   - CRMScript.NetServer.NSArchiveAgent.SetChosenColumns(String,String,String[])
   - CRMScript.NetServer.NSArchiveAgent.SetChosenColumnsV2(String,String,String,String,String[])
@@ -38,10 +37,26 @@ items:
   - CRMScript.NetServer.NSArchiveAgent.SetColumnWidths(String,String[])
   - CRMScript.NetServer.NSArchiveAgent.SetColumnWidthsV2(String,String,String,String,String[])
   name: NSArchiveAgent
-  nameWithType: NSArchiveAgent
+  nameWithType: NSArchiveAgent v 
   fullName: CRMScript.NetServer.NSArchiveAgent
   type: Class
   summary: "\nArchiveList functions of all kinds.\n"
+  example: 
+  - "\n<pre><code>NSArchiveAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSArchiveAgent.#ctor
+  commentId: M:CRMScript.NetServer.NSArchiveAgent.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSArchiveAgent
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSArchiveAgent.#ctor
+  fullName: CRMScript.NetServer.NSArchiveAgent.#ctor
+  type: Constructor
+  summary: "\nArchiveList functions of all kinds.\n"
+  remarks: 
+  syntax: 
+    content: NSArchiveAgent
   example: 
   - "\n<pre><code>NSArchiveAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSArchiveAgent.CreateDefaultArchiveListResult()
@@ -54,14 +69,14 @@ items:
   nameWithType: NSArchiveAgent.CreateDefaultArchiveListResult()
   fullName: CRMScript.NetServer.NSArchiveAgent.CreateDefaultArchiveListResult()
   type: Method
-  summary: "\nSet default values into a new NSArchiveListResult.
-NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>A new NSArchiveListResult with default values.<p></p>\n<pre><code>NSArchiveAgent agent;\nNSArchiveListResult thing = agent.CreateDefaultArchiveListResult();\nthing = agent.SaveArchiveListResult(thing);</code></pre>\n"
-  remarks: 
+  summary: "\nSets default values into a new NSArchiveListResult.\n"
+  remarks: "\nNetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance.\n"
   syntax: 
     content: NSArchiveListResult CreateDefaultArchiveListResult()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.NetServer.NSArchiveListResult
+      description: A new NSArchiveListResult with default values.
   example: 
   - "\n<pre><code>NSArchiveAgent agent;\nNSArchiveListResult thing = agent.CreateDefaultArchiveListResult();\nthing = agent.SaveArchiveListResult(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSArchiveAgent.ExportArchive(String,String,String[],String[],String,String[],Integer)
@@ -102,6 +117,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       description: 
     return:
       type: CRMScript.NetServer.NSExportArchiveResult
+      description:
   example: 
 - uid: CRMScript.NetServer.NSArchiveAgent.GetActivityFilter()
   commentId: M:CRMScript.NetServer.NSArchiveAgent.GetActivityFilter()
@@ -113,13 +129,14 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSArchiveAgent.GetActivityFilter()
   fullName: CRMScript.NetServer.NSArchiveAgent.GetActivityFilter()
   type: Method
-  summary: "\nGet activity filter for the specified list.<p></p>\n<strong>Returns:</strong>The activity filter for the specified list<p></p>\n<pre><code>NSArchiveAgent agent;\nNSActivityFilter res = agent.GetActivityFilter();</code></pre>\n"
+  summary: "\nGets activity filter for the specified list.\n"
   remarks: 
   syntax: 
     content: NSActivityFilter GetActivityFilter()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.NetServer.NSActivityFilter
+      description: The activity filter for the specified list
   example: 
   - "\n<pre><code>NSArchiveAgent agent;\nNSActivityFilter res = agent.GetActivityFilter();</code></pre>\n"
 - uid: CRMScript.NetServer.NSArchiveAgent.GetArchiveConfiguration(String,String)
@@ -132,19 +149,20 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSArchiveAgent.GetArchiveConfiguration(String,String)
   fullName: CRMScript.NetServer.NSArchiveAgent.GetArchiveConfiguration(String,String)
   type: Method
-  summary: "\nGet the configuration for one archive. The configuration is keyed by a combination of archive provider name and gui name. The archive provider name must match an archive provider plugin; the gui name is an arbitrary string used to distinguish multiple occurrences of the same underlying provider in a gui.\n"
+  summary: "\nGets the configuration for one archive. The configuration is keyed by a combination of archive provider name and gui name.\n"
   remarks: 
   syntax: 
     content: NSArchiveConfiguration GetArchiveConfiguration(String guiName, String providerName)
     parameters:
     - id: guiName
       type: CRMScript.Global.String
-      description: 
+      description: An arbitrary string used to distinguish multiple occurrences of the same underlying provider in a gui.
     - id: providerName
       type: CRMScript.Global.String
-      description: 
+      description: Must match an archive provider plugin.
     return:
       type: CRMScript.NetServer.NSArchiveConfiguration
+      description:
   example: 
   - "\n<pre><code>NSArchiveAgent agent;\nString guiName;\nString providerName;\nNSArchiveConfiguration res = agent.GetArchiveConfiguration(guiName, providerName);</code></pre>\n"
 - uid: CRMScript.NetServer.NSArchiveAgent.GetArchiveConfigurationV2(String,String,String,String)
@@ -157,17 +175,17 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSArchiveAgent.GetArchiveConfigurationV2(String,String,String,String)
   fullName: CRMScript.NetServer.NSArchiveAgent.GetArchiveConfigurationV2(String,String,String,String)
   type: Method
-  summary: "\nGet the configuration for one archive. The configuration is keyed by a combination of archive provider name (plus optional context), gui name, and optional table binding. The archive provider name must match an archive provider plugin; the gui name is an arbitrary string used to distinguish multiple occurrences of the same underlying provider in a gui.\n"
+  summary: "\nGets the configuration for one archive. The configuration is keyed by a combination of archive provider name (plus optional context), gui name, and optional table binding.\n"
   remarks: 
   syntax: 
     content: NSArchiveConfiguration GetArchiveConfigurationV2(String guiName, String providerName, String context, String ownerKeys)
     parameters:
     - id: guiName
       type: CRMScript.Global.String
-      description: 
+      description:  An arbitrary string used to distinguish multiple occurrences of the same underlying provider in a gui.
     - id: providerName
       type: CRMScript.Global.String
-      description: 
+      description: Must match an archive provider plugin.
     - id: context
       type: CRMScript.Global.String
       description: 
@@ -176,6 +194,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       description: 
     return:
       type: CRMScript.NetServer.NSArchiveConfiguration
+      description:
   example: 
   - "\n<pre><code>NSArchiveAgent agent;\nString guiName;\nString providerName;\nString context;\nString ownerKeys;\nNSArchiveConfiguration res = agent.GetArchiveConfigurationV2(guiName, providerName, context, ownerKeys);</code></pre>\n"
 - uid: CRMScript.NetServer.NSArchiveAgent.GetArchiveConfigurationWithContext(String,String,String)
@@ -188,22 +207,23 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSArchiveAgent.GetArchiveConfigurationWithContext(String,String,String)
   fullName: CRMScript.NetServer.NSArchiveAgent.GetArchiveConfigurationWithContext(String,String,String)
   type: Method
-  summary: "\nGet the configuration for one archive, with context parameter. The configuration is keyed by a combination of archive provider name and gui name. The archive provider name must match an archive provider plugin; the gui name is an arbitrary string used to distinguish multiple occurrences of the same underlying provider in a gui.\n"
+  summary: "\nGets the configuration for one archive, with context parameter. The configuration is keyed by a combination of archive provider name and gui name.\n"
   remarks: 
   syntax: 
     content: NSArchiveConfiguration GetArchiveConfigurationWithContext(String guiName, String providerName, String context)
     parameters:
     - id: guiName
       type: CRMScript.Global.String
-      description: 
+      description: An arbitrary string used to distinguish multiple occurrences of the same underlying provider in a gui.
     - id: providerName
       type: CRMScript.Global.String
-      description: 
+      description: Must match an archive provider plugin
     - id: context
       type: CRMScript.Global.String
       description: 
     return:
       type: CRMScript.NetServer.NSArchiveConfiguration
+      description:
   example: 
   - "\n<pre><code>NSArchiveAgent agent;\nString guiName;\nString providerName;\nString context;\nNSArchiveConfiguration res = agent.GetArchiveConfigurationWithContext(guiName, providerName, context);</code></pre>\n"
 - uid: CRMScript.NetServer.NSArchiveAgent.GetArchiveList(String,String,String[],Integer,Integer)
@@ -216,7 +236,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSArchiveAgent.GetArchiveList(String,String,String[],Integer,Integer)
   fullName: CRMScript.NetServer.NSArchiveAgent.GetArchiveList(String,String,String[],Integer,Integer)
   type: Method
-  summary: "\nGet a page of data for an archive. The columns returned will be those set as chosen columns, using either the SetChosenColumns service or the corresponding SelectableMDOList.SetSelected.\n"
+  summary: "\nGets a page of data for an archive.\n"
   remarks: 
   syntax: 
     content: NSArchiveListItem[] GetArchiveList(String guiName, String providerName, NSArchiveOrderByInfo[] sortOrder, NSArchiveRestrictionInfo[] restriction, String[] entities, Integer page, Integer pageSize)
@@ -238,6 +258,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       description: 
     return:
       type: CRMScript.NetServer.NSArchiveListItem[]
+      description: The columns returned will be those set as chosen columns, using either the SetChosenColumns service or the corresponding SelectableMDOList.SetSelected.
   example: 
   - "\n<pre><code>NSArchiveAgent agent;\nString guiName;\nString providerName;\nNSArchiveOrderByInfo[] sortOrder;\nNSArchiveRestrictionInfo[] restriction;\nString[] entities;\nInteger page;\nInteger pageSize;\nNSArchiveListItem[] res = agent.GetArchiveList(guiName, providerName, sortOrder, restriction, entities, page, pageSize);</code></pre>\n"
 - uid: CRMScript.NetServer.NSArchiveAgent.GetArchiveList2(String,String,String,String,String,Integer,Integer)
@@ -250,7 +271,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSArchiveAgent.GetArchiveList2(String,String,String,String,String,Integer,Integer)
   fullName: CRMScript.NetServer.NSArchiveAgent.GetArchiveList2(String,String,String,String,String,Integer,Integer)
   type: Method
-  summary: "\nGet a page of data for an archive using a restriction string. The columns returned will be those set as chosen columns, using either the SetChosenColumns service or the corresponding SelectableMDOList.SetSelected.\n"
+  summary: "\nGets a page of data for an archive using a restriction string.\n"
   remarks: 
   syntax: 
     content: NSArchiveListItem[] GetArchiveList2(String guiName, String providerName, String sortOrder, String restriction, String entities, Integer page, Integer pageSize)
@@ -278,6 +299,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       description: 
     return:
       type: CRMScript.NetServer.NSArchiveListItem[]
+      description:  The columns returned will be those set as chosen columns, using either the SetChosenColumns service or the corresponding SelectableMDOList.SetSelected.
   example: 
   - "\n<pre><code>NSArchiveAgent agent;\nString guiName;\nString providerName;\nString sortOrder;\nString restriction;\nString entities;\nInteger page;\nInteger pageSize;\nNSArchiveListItem[] res = agent.GetArchiveList2(guiName, providerName, sortOrder, restriction, entities, page, pageSize);</code></pre>\n"
 - uid: CRMScript.NetServer.NSArchiveAgent.GetArchiveListByColumns(String,String[],String[],Integer,Integer)
@@ -290,7 +312,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSArchiveAgent.GetArchiveListByColumns(String,String[],String[],Integer,Integer)
   fullName: CRMScript.NetServer.NSArchiveAgent.GetArchiveListByColumns(String,String[],String[],Integer,Integer)
   type: Method
-  summary: "\nGet a page of results for an archive list, explicitly specifying the restrictions, orderby and chosen columns.\n"
+  summary: "\nGets a page of results for an archive list, explicitly specifying the restrictions, orderby and chosen columns.\n"
   remarks: 
   syntax: 
     content: NSArchiveListItem[] GetArchiveListByColumns(String providerName, String[] columns, NSArchiveOrderByInfo[] sortOrder, NSArchiveRestrictionInfo[] restriction, String[] entities, Integer page, Integer pageSize)
@@ -312,6 +334,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       description: 
     return:
       type: CRMScript.NetServer.NSArchiveListItem[]
+      description:
   example: 
   - "\n<pre><code>NSArchiveAgent agent;\nString providerName;\nString[] columns;\nNSArchiveOrderByInfo[] sortOrder;\nNSArchiveRestrictionInfo[] restriction;\nString[] entities;\nInteger page;\nInteger pageSize;\nNSArchiveListItem[] res = agent.GetArchiveListByColumns(providerName, columns, sortOrder, restriction, entities, page, pageSize);</code></pre>\n"
 - uid: CRMScript.NetServer.NSArchiveAgent.GetArchiveListByColumns2(String,String,String,String,String,Integer,Integer)
@@ -324,7 +347,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSArchiveAgent.GetArchiveListByColumns2(String,String,String,String,String,Integer,Integer)
   fullName: CRMScript.NetServer.NSArchiveAgent.GetArchiveListByColumns2(String,String,String,String,String,Integer,Integer)
   type: Method
-  summary: "\nGet a page of results for an archive list, explicitly specifying the restrictions as a string, orderby and chosen columns.\n"
+  summary: "\nGets a page of results for an archive list, explicitly specifying the restrictions as a string, orderby and chosen columns.\n"
   remarks: 
   syntax: 
     content: NSArchiveListItem[] GetArchiveListByColumns2(String providerName, String columns, String sortOrder, String restrictions, String entities, Integer page, Integer pageSize)
@@ -364,7 +387,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSArchiveAgent.GetArchiveListByColumnsWithContext(String,String[],String[],Integer,Integer,String)
   fullName: CRMScript.NetServer.NSArchiveAgent.GetArchiveListByColumnsWithContext(String,String[],String[],Integer,Integer,String)
   type: Method
-  summary: "\nGet a page of results for an archive list with context parameter, explicitly specifying the restrictions, orderby and chosen columns.\n"
+  summary: "\nGets a page of results for an archive list with context parameter, explicitly specifying the restrictions, orderby and chosen columns.\n"
   remarks: 
   syntax: 
     content: NSArchiveListItem[] GetArchiveListByColumnsWithContext(String providerName, String[] columns, NSArchiveOrderByInfo[] sortOrder, NSArchiveRestrictionInfo[] restriction, String[] entities, Integer page, Integer pageSize, String context)
@@ -389,6 +412,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       description: 
     return:
       type: CRMScript.NetServer.NSArchiveListItem[]
+      description:
   example: 
   - "\n<pre><code>NSArchiveAgent agent;\nString providerName;\nString[] columns;\nNSArchiveOrderByInfo[] sortOrder;\nNSArchiveRestrictionInfo[] restriction;\nString[] entities;\nInteger page;\nInteger pageSize;\nString context;\nNSArchiveListItem[] res = agent.GetArchiveListByColumnsWithContext(providerName, columns, sortOrder, restriction, entities, page, pageSize, context);</code></pre>\n"
 - uid: CRMScript.NetServer.NSArchiveAgent.GetArchiveListByColumnsWithContext2(String,String,String,String,String,Integer,Integer,String)
@@ -401,7 +425,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSArchiveAgent.GetArchiveListByColumnsWithContext2(String,String,String,String,String,Integer,Integer,String)
   fullName: CRMScript.NetServer.NSArchiveAgent.GetArchiveListByColumnsWithContext2(String,String,String,String,String,Integer,Integer,String)
   type: Method
-  summary: "\nGet a page of results for an archive list with context parameter, explicitly specifying the restrictions as a string, orderby and chosen columns.\n"
+  summary: "\nGets a page of results for an archive list with context parameter, explicitly specifying the restrictions as a string, orderby and chosen columns.\n"
   remarks: 
   syntax: 
     content: NSArchiveListItem[] GetArchiveListByColumnsWithContext2(String providerName, String columns, String sortOrder, String restriction, String entities, Integer page, Integer pageSize, String context)
@@ -432,6 +456,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       description: 
     return:
       type: CRMScript.NetServer.NSArchiveListItem[]
+      description:
   example: 
   - "\n<pre><code>NSArchiveAgent agent;\nString providerName;\nString columns;\nString sortOrder;\nString restriction;\nString entities;\nInteger page;\nInteger pageSize;\nString context;\nNSArchiveListItem[] res = agent.GetArchiveListByColumnsWithContext2(providerName, columns, sortOrder, restriction, entities, page, pageSize, context);</code></pre>\n"
 - uid: CRMScript.NetServer.NSArchiveAgent.GetArchiveListByColumnsWithHeader(String,String[],String[],Integer,Integer,String)
@@ -444,7 +469,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSArchiveAgent.GetArchiveListByColumnsWithHeader(String,String[],String[],Integer,Integer,String)
   fullName: CRMScript.NetServer.NSArchiveAgent.GetArchiveListByColumnsWithHeader(String,String[],String[],Integer,Integer,String)
   type: Method
-  summary: "\nGet a page of results for an archive list, explicitly specifying the restrictions, orderby and chosen columns; as well as a name/value string formatted set of options. The return value includes a header that has various extra information, in addition to the actual rows.\n"
+  summary: "\nGets a page of results for an archive list, explicitly specifying the restrictions, orderby and chosen columns; as well as a name/value string formatted set of options. The return value includes a header that has various extra information, in addition to the actual rows.\n"
   remarks: 
   syntax: 
     content: NSArchiveListResult GetArchiveListByColumnsWithHeader(String providerName, String[] columns, NSArchiveOrderByInfo[] sortOrder, NSArchiveRestrictionInfo[] restriction, String[] entities, Integer page, Integer pageSize, String options)
@@ -469,6 +494,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       description: 
     return:
       type: CRMScript.NetServer.NSArchiveListResult
+      description:
   example: 
   - "\n<pre><code>NSArchiveAgent agent;\nString providerName;\nString[] columns;\nNSArchiveOrderByInfo[] sortOrder;\nNSArchiveRestrictionInfo[] restriction;\nString[] entities;\nInteger page;\nInteger pageSize;\nString options;\nNSArchiveListResult res = agent.GetArchiveListByColumnsWithHeader(providerName, columns, sortOrder, restriction, entities, page, pageSize, options);</code></pre>\n"
 - uid: CRMScript.NetServer.NSArchiveAgent.GetArchiveListByColumnsWithHeader2(String,String,String,String,String,Integer,Integer,String)
@@ -481,7 +507,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSArchiveAgent.GetArchiveListByColumnsWithHeader2(String,String,String,String,String,Integer,Integer,String)
   fullName: CRMScript.NetServer.NSArchiveAgent.GetArchiveListByColumnsWithHeader2(String,String,String,String,String,Integer,Integer,String)
   type: Method
-  summary: "\nGet a page of results for an archive list, explicitly specifying the restrictions as strings, orderby and chosen columns; as well as a name/value string formatted set of options. The return value includes a header that has various extra information, in addition to the actual rows.\n"
+  summary: "\nGets a page of results for an archive list, explicitly specifying the restrictions as strings, orderby and chosen columns; as well as a name/value string formatted set of options.\n"
   remarks: 
   syntax: 
     content: NSArchiveListResult GetArchiveListByColumnsWithHeader2(String providerName, String columns, String sortOrder, String restriction, String entities, Integer page, Integer pageSize, String options)
@@ -512,6 +538,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       description: 
     return:
       type: CRMScript.NetServer.NSArchiveListResult
+      description: Includes a header that has various extra information, in addition to the actual rows.
   example: 
   - "\n<pre><code>NSArchiveAgent agent;\nString providerName;\nString columns;\nString sortOrder;\nString restriction;\nString entities;\nInteger page;\nInteger pageSize;\nString options;\nNSArchiveListResult res = agent.GetArchiveListByColumnsWithHeader2(providerName, columns, sortOrder, restriction, entities, page, pageSize, options);</code></pre>\n"
 - uid: CRMScript.NetServer.NSArchiveAgent.GetArchiveListByColumnsWithHeaderWithContext(String,String[],String[],Integer,Integer,String,String)
@@ -524,7 +551,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSArchiveAgent.GetArchiveListByColumnsWithHeaderWithContext(String,String[],String[],Integer,Integer,String,String)
   fullName: CRMScript.NetServer.NSArchiveAgent.GetArchiveListByColumnsWithHeaderWithContext(String,String[],String[],Integer,Integer,String,String)
   type: Method
-  summary: "\nGet a page of results for an archive list, with context parameter, explicitly specifying the restrictions, orderby and chosen columns; as well as a name/value string formatted set of options. The return value includes a header that has various extra information, in addition to the actual rows.\n"
+  summary: "\nGets a page of results for an archive list, with context parameter, explicitly specifying the restrictions, orderby and chosen columns; as well as a name/value string formatted set of options.\n"
   remarks: 
   syntax: 
     content: NSArchiveListResult GetArchiveListByColumnsWithHeaderWithContext(String providerName, String[] columns, NSArchiveOrderByInfo[] sortOrder, NSArchiveRestrictionInfo[] restriction, String[] entities, Integer page, Integer pageSize, String options, String context)
@@ -552,6 +579,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       description: 
     return:
       type: CRMScript.NetServer.NSArchiveListResult
+      description: Includes a header that has various extra information, in addition to the actual rows.
   example: 
   - "\n<pre><code>NSArchiveAgent agent;\nString providerName;\nString[] columns;\nNSArchiveOrderByInfo[] sortOrder;\nNSArchiveRestrictionInfo[] restriction;\nString[] entities;\nInteger page;\nInteger pageSize;\nString options;\nString context;\nNSArchiveListResult res = agent.GetArchiveListByColumnsWithHeaderWithContext(providerName, columns, sortOrder, restriction, entities, page, pageSize, options, context);</code></pre>\n"
 - uid: CRMScript.NetServer.NSArchiveAgent.GetArchiveListByColumnsWithHeaderWithContext2(String,String,String,String,String,Integer,Integer,String,String)
@@ -564,7 +592,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSArchiveAgent.GetArchiveListByColumnsWithHeaderWithContext2(String,String,String,String,String,Integer,Integer,String,String)
   fullName: CRMScript.NetServer.NSArchiveAgent.GetArchiveListByColumnsWithHeaderWithContext2(String,String,String,String,String,Integer,Integer,String,String)
   type: Method
-  summary: "\nGet a page of results for an archive list, with context parameter, explicitly specifying the restrictions as strings, orderby and chosen columns; as well as a name/value string formatted set of options. The return value includes a header that has various extra information, in addition to the actual rows.\n"
+  summary: "\nGets a page of results for an archive list, with context parameter, explicitly specifying the restrictions as strings, orderby and chosen columns; as well as a name/value string formatted set of options.\n"
   remarks: 
   syntax: 
     content: NSArchiveListResult GetArchiveListByColumnsWithHeaderWithContext2(String providerName, String columns, String sortOrder, String restriction, String entities, Integer page, Integer pageSize, String options, String context)
@@ -598,6 +626,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       description: 
     return:
       type: CRMScript.NetServer.NSArchiveListResult
+      description: Includes a header that has various extra information, in addition to the actual rows.
   example: 
   - "\n<pre><code>NSArchiveAgent agent;\nString providerName;\nString columns;\nString sortOrder;\nString restriction;\nString entities;\nInteger page;\nInteger pageSize;\nString options;\nString context;\nNSArchiveListResult res = agent.GetArchiveListByColumnsWithHeaderWithContext2(providerName, columns, sortOrder, restriction, entities, page, pageSize, options, context);</code></pre>\n"
 - uid: CRMScript.NetServer.NSArchiveAgent.GetArchiveListWithContext(String,String,String[],Integer,Integer,String)
@@ -610,7 +639,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSArchiveAgent.GetArchiveListWithContext(String,String,String[],Integer,Integer,String)
   fullName: CRMScript.NetServer.NSArchiveAgent.GetArchiveListWithContext(String,String,String[],Integer,Integer,String)
   type: Method
-  summary: "\nGet a page of data for an archive, with context parameter. The columns returned will be those set as chosen columns, using either the SetChosenColumns service or the corresponding SelectableMDOList.SetSelected.\n"
+  summary: "\nGets a page of data for an archive, with context parameter. The columns returned will be those set as chosen columns, using either the SetChosenColumns service or the corresponding SelectableMDOList.SetSelected.\n"
   remarks: 
   syntax: 
     content: NSArchiveListItem[] GetArchiveListWithContext(String guiName, String providerName, NSArchiveOrderByInfo[] sortOrder, NSArchiveRestrictionInfo[] restriction, String[] entities, Integer page, Integer pageSize, String context)
@@ -635,6 +664,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       description: 
     return:
       type: CRMScript.NetServer.NSArchiveListItem[]
+      description:
   example: 
   - "\n<pre><code>NSArchiveAgent agent;\nString guiName;\nString providerName;\nNSArchiveOrderByInfo[] sortOrder;\nNSArchiveRestrictionInfo[] restriction;\nString[] entities;\nInteger page;\nInteger pageSize;\nString context;\nNSArchiveListItem[] res = agent.GetArchiveListWithContext(guiName, providerName, sortOrder, restriction, entities, page, pageSize, context);</code></pre>\n"
 - uid: CRMScript.NetServer.NSArchiveAgent.GetArchiveListWithContext2(String,String,String,String,String,Integer,Integer,String)
@@ -647,7 +677,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSArchiveAgent.GetArchiveListWithContext2(String,String,String,String,String,Integer,Integer,String)
   fullName: CRMScript.NetServer.NSArchiveAgent.GetArchiveListWithContext2(String,String,String,String,String,Integer,Integer,String)
   type: Method
-  summary: "\nGet a page of data for an archive using restrictions as strings, with context parameter. The columns returned will be those set as chosen columns, using either the SetChosenColumns service or the corresponding SelectableMDOList.SetSelected.\n"
+  summary: "\nGets a page of data for an archive using restrictions as strings, with context parameter.\n"
   remarks: 
   syntax: 
     content: NSArchiveListItem[] GetArchiveListWithContext2(String guiName, String providerName, String sortOrder, String restriction, String entities, Integer page, Integer pageSize, String context)
@@ -678,6 +708,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       description: 
     return:
       type: CRMScript.NetServer.NSArchiveListItem[]
+      description: The columns returned will be those set as chosen columns, using either the SetChosenColumns service or the corresponding SelectableMDOList.SetSelected.
   example: 
   - "\n<pre><code>NSArchiveAgent agent;\nString guiName;\nString providerName;\nString sortOrder;\nString restriction;\nString entities;\nInteger page;\nInteger pageSize;\nString context;\nNSArchiveListItem[] res = agent.GetArchiveListWithContext2(guiName, providerName, sortOrder, restriction, entities, page, pageSize, context);</code></pre>\n"
 - uid: CRMScript.NetServer.NSArchiveAgent.GetAvailableColumns(String,String)
@@ -690,7 +721,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSArchiveAgent.GetAvailableColumns(String,String)
   fullName: CRMScript.NetServer.NSArchiveAgent.GetAvailableColumns(String,String)
   type: Method
-  summary: "\nReturn list of all columns supported by an archive provider. See also GetArchiveConfiguration.\n"
+  summary: "\nReturns list of all columns supported by an archive provider. See also <xref href=\"CRMScript.NetServer.NSArchiveAgent.GetArchiveConfiguration(String,String)\" data-throw-if-not-resolved=\"false\"></xref>.\n"
   remarks: 
   syntax: 
     content: NSArchiveColumnInfo[] GetAvailableColumns(String providerName, String context)
@@ -703,6 +734,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       description: 
     return:
       type: CRMScript.NetServer.NSArchiveColumnInfo[]
+      description:
   example: 
   - "\n<pre><code>NSArchiveAgent agent;\nString providerName;\nString context;\nNSArchiveColumnInfo[] res = agent.GetAvailableColumns(providerName, context);</code></pre>\n"
 - uid: CRMScript.NetServer.NSArchiveAgent.GetAvailableEntities(String,String)
@@ -715,7 +747,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSArchiveAgent.GetAvailableEntities(String,String)
   fullName: CRMScript.NetServer.NSArchiveAgent.GetAvailableEntities(String,String)
   type: Method
-  summary: "\nReturn list of all entities supported by an archive provider. See also GetArchiveConfiguration.\n"
+  summary: "\nReturns list of all entities supported by an archive provider. See also <xref href=\"CRMScript.NetServer.NSArchiveAgent.GetArchiveConfiguration(String,String)\" data-throw-if-not-resolved=\"false\"></xref>.\n"
   remarks: 
   syntax: 
     content: NSMDOListItem[] GetAvailableEntities(String providerName, String context)
@@ -728,6 +760,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       description: 
     return:
       type: CRMScript.NetServer.NSMDOListItem[]
+      description:
   example: 
   - "\n<pre><code>NSArchiveAgent agent;\nString providerName;\nString context;\nNSMDOListItem[] res = agent.GetAvailableEntities(providerName, context);</code></pre>\n"
 - uid: CRMScript.NetServer.NSArchiveAgent.GetGroupAssociateIds(Integer[])
@@ -740,7 +773,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSArchiveAgent.GetGroupAssociateIds(Integer[])
   fullName: CRMScript.NetServer.NSArchiveAgent.GetGroupAssociateIds(Integer[])
   type: Method
-  summary: "\nReturns the  associate ids that belongs to the given groups\n"
+  summary: "\nReturns the associate IDs that belongs to the given groups.\n"
   remarks: 
   syntax: 
     content: Integer[] GetGroupAssociateIds(Integer[] groupIds)
@@ -750,6 +783,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       description: 
     return:
       type: CRMScript.Global.Integer[]
+      description: the associate IDs
   example: 
   - "\n<pre><code>NSArchiveAgent agent;\nInteger[] groupIds;\nInteger[] res = agent.GetGroupAssociateIds(groupIds);</code></pre>\n"
 - uid: CRMScript.NetServer.NSArchiveAgent.GetProviderNames()
@@ -762,31 +796,16 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSArchiveAgent.GetProviderNames()
   fullName: CRMScript.NetServer.NSArchiveAgent.GetProviderNames()
   type: Method
-  summary: "\nReturn list of all archive provider names<p></p>\n<strong>Returns:</strong>Array of all archive provider names.<p></p>\n<pre><code>NSArchiveAgent agent;\nString[] res = agent.GetProviderNames();</code></pre>\n"
+  summary: "\nReturns list of all archive provider names.\n"
   remarks: 
   syntax: 
     content: String[] GetProviderNames()
     parameters:
     return:
       type: CRMScript.Global.String[]
+      description: Array of all archive provider names.
   example: 
   - "\n<pre><code>NSArchiveAgent agent;\nString[] res = agent.GetProviderNames();</code></pre>\n"
-- uid: CRMScript.NetServer.NSArchiveAgent.#ctor
-  commentId: M:CRMScript.NetServer.NSArchiveAgent.#ctor
-  id: '#ctor'
-  so.intellisense: Void.NSArchiveAgent
-  langs:
-  - crmscript
-  name: '#ctor'
-  nameWithType: NSArchiveAgent.#ctor
-  fullName: CRMScript.NetServer.NSArchiveAgent.#ctor
-  type: Constructor
-  summary: "\nArchiveList functions of all kinds.\n"
-  remarks: 
-  syntax: 
-    content: NSArchiveAgent
-  example: 
-  - "\n<pre><code>NSArchiveAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSArchiveAgent.SetActivityFilter()
   commentId: M:CRMScript.NetServer.NSArchiveAgent.SetActivityFilter()
   id: 'SetActivityFilter()'
@@ -797,11 +816,14 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSArchiveAgent.SetActivityFilter()
   fullName: CRMScript.NetServer.NSArchiveAgent.SetActivityFilter()
   type: Method
-  summary: "\nSet activity filter for the specified list.\n"
+  summary: "\nSets activity filter for the specified list.\n"
   remarks: 
   syntax: 
     content: Void SetActivityFilter(NSActivityFilter activityFilter)
     parameters:
+    - id: activityFilter
+      type: CRMScript.NetServer.NSActivityFilter
+      description:
     return:
       type: CRMScript.Global.Void
   example: 
@@ -815,8 +837,8 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSArchiveAgent.SetChosenColumns(String,String,String[])
   fullName: CRMScript.NetServer.NSArchiveAgent.SetChosenColumns(String,String,String[])
   type: Method
-  summary: "\nSet the currently chosen columns for the given gui name/provider name combination. This service corresponds to the SetSelected method of the SelectableMDOList service, for a list called archiveColumns: plus the archive provider name and gui name as its additionalInfo.\n"
-  remarks: 
+  summary: "\nSets the currently chosen columns for the given gui name/provider name combination.\n"
+  remarks: "\nThis service corresponds to the SetSelected method of the SelectableMDOList service, for a list called archiveColumns: plus the archive provider name and gui name as its additionalInfo.\n"
   syntax: 
     content: Void SetChosenColumns(String guiName, String providerName, String[] chosenColumns)
     parameters:
@@ -842,8 +864,8 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSArchiveAgent.SetChosenColumnsV2(String,String,String,String,String[])
   fullName: CRMScript.NetServer.NSArchiveAgent.SetChosenColumnsV2(String,String,String,String,String[])
   type: Method
-  summary: "\nSet the currently chosen columns for the given gui name/provider name combination. This service corresponds to the SetSelected method of the SelectableMDOList service, for a list called archiveColumns: plus the archive provider name and gui name as its additionalInfo.\n"
-  remarks: 
+  summary: "\nSets the currently chosen columns for the given gui name/provider name combination.\n"
+  remarks: "\nThis service corresponds to the SetSelected method of the SelectableMDOList service, for a list called archiveColumns: plus the archive provider name and gui name as its additionalInfo.\n"
   syntax: 
     content: Void SetChosenColumnsV2(String guiName, String providerName, String context, String ownerKeys, String[] chosenColumns)
     parameters:
@@ -875,8 +897,8 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSArchiveAgent.SetChosenEntities(String,String,String[])
   fullName: CRMScript.NetServer.NSArchiveAgent.SetChosenEntities(String,String,String[])
   type: Method
-  summary: "\nSet the currently chosen entities for the given gui name/provider name combination. This service corresponds to the SetSelected method of the SelectableMDOList service, for a list called archiveEntities: plus the archive provider name and gui name as its additionalInfo.\n"
-  remarks: 
+  summary: "\nSets the currently chosen entities for the given gui name/provider name combination.\n"
+  remarks: "\nThis service corresponds to the SetSelected method of the SelectableMDOList service, for a list called archiveEntities: plus the archive provider name and gui name as its additionalInfo."
   syntax: 
     content: Void SetChosenEntities(String guiName, String providerName, String[] entities)
     parameters:
@@ -902,8 +924,8 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSArchiveAgent.SetChosenEntitiesV2(String,String,String,String,String[])
   fullName: CRMScript.NetServer.NSArchiveAgent.SetChosenEntitiesV2(String,String,String,String,String[])
   type: Method
-  summary: "\nSet the currently chosen entities for the given gui name/provider name combination. This service corresponds to the SetSelected method of the SelectableMDOList service, for a list called archiveEntities: plus the archive provider name and gui name as its additionalInfo.\n"
-  remarks: 
+  summary: "\nSets the currently chosen entities for the given gui name/provider name combination.\n"
+  remarks: "\nThis service corresponds to the SetSelected method of the SelectableMDOList service, for a list called archiveEntities: plus the archive provider name and gui name as its additionalInfo.\n"
   syntax: 
     content: Void SetChosenEntitiesV2(String guiName, String providerName, String context, String ownerKeys, String[] entities)
     parameters:
@@ -935,7 +957,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSArchiveAgent.SetColumnWidths(String,String[])
   fullName: CRMScript.NetServer.NSArchiveAgent.SetColumnWidths(String,String[])
   type: Method
-  summary: "\nSet the column widths for the given set of columns and GUI name.\n"
+  summary: "\nSets the column widths for the given set of columns and GUI name.\n"
   remarks: 
   syntax: 
     content: Void SetColumnWidths(String guiName, String[] columnWidths)
@@ -959,7 +981,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSArchiveAgent.SetColumnWidthsV2(String,String,String,String,String[])
   fullName: CRMScript.NetServer.NSArchiveAgent.SetColumnWidthsV2(String,String,String,String,String[])
   type: Method
-  summary: "\nSet the column widths for the given set of columns and GUI name.\n"
+  summary: "\nSets the column widths for the given set of columns and GUI name.\n"
   remarks: 
   syntax: 
     content: Void SetColumnWidthsV2(String guiName, String providerName, String context, String ownerKeys, String[] columnWidths)

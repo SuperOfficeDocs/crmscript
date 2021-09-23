@@ -3,17 +3,16 @@ items:
 - uid: CRMScript.NetServer.NSBulkUpdateAgent
   commentId: T:CRMScript.NetServer.NSBulkUpdateAgent
   id: NSBulkUpdateAgent
-  so.intellisense: Void.NSBulkUpdateAgent
   langs:
   - crmscript
   children:
-  - CRMScript.NetServer.NSBulkUpdateAgent.ExecuteByEntityIds(String,String,String)
-  - CRMScript.NetServer.NSBulkUpdateAgent.ExecuteBySelectionId(String,String,Integer,Bool)
+  - CRMScript.NetServer.NSBulkUpdateAgent.#ctor
+  - CRMScript.NetServer.NSBulkUpdateAgent.ExecuteByEntityIds(NSFieldValueInfo[],String,String,String)
+  - CRMScript.NetServer.NSBulkUpdateAgent.ExecuteBySelectionId(NSFieldValueInfo[],String,String,Integer,Bool)
   - CRMScript.NetServer.NSBulkUpdateAgent.GetAvailableFields(String)
   - CRMScript.NetServer.NSBulkUpdateAgent.GetJobResultAsJsonFromBinaryObjectId(String,Integer)
   - CRMScript.NetServer.NSBulkUpdateAgent.GetJobResultsFromStorageAsJson()
   - CRMScript.NetServer.NSBulkUpdateAgent.GetStoredFields(String,String)
-  - CRMScript.NetServer.NSBulkUpdateAgent.#ctor
   - CRMScript.NetServer.NSBulkUpdateAgent.RemoveStoredFields(String,String)
   - CRMScript.NetServer.NSBulkUpdateAgent.RemoveStoredFieldsAndGetDefaultFields(String,String)
   name: NSBulkUpdateAgent
@@ -23,63 +22,87 @@ items:
   summary: "\nAgent used for bulk update methods.\n"
   example: 
   - "\n<pre><code>NSBulkUpdateAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
-- uid: CRMScript.NetServer.NSBulkUpdateAgent.ExecuteByEntityIds(String,String,String)
-  commentId: M:CRMScript.NetServer.NSBulkUpdateAgent.ExecuteByEntityIds(String,String,String)
-  id: 'ExecuteByEntityIds(String,String,String)'
+- uid: CRMScript.NetServer.NSBulkUpdateAgent.#ctor
+  commentId: M:CRMScript.NetServer.NSBulkUpdateAgent.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSBulkUpdateAgent
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSBulkUpdateAgent.#ctor
+  fullName: CRMScript.NetServer.NSBulkUpdateAgent.#ctor
+  type: Constructor
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: NSBulkUpdateAgent
+  example: 
+  - "\n<pre><code>NSBulkUpdateAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSBulkUpdateAgent.ExecuteByEntityIds(NSFieldValueInfo[],String,String,String)
+  commentId: M:CRMScript.NetServer.NSBulkUpdateAgent.ExecuteByEntityIds(NSFieldValueInfo[],String,String,String)
+  id: 'ExecuteByEntityIds(NSFieldValueInfo[],String,String,String)'
   so.intellisense: NSBulkUpdateAgent.ExecuteByEntityIds
   langs:
   - crmscript
-  name: 'ExecuteByEntityIds(String,String,String)'
-  nameWithType: NSBulkUpdateAgent.ExecuteByEntityIds(String,String,String)
-  fullName: CRMScript.NetServer.NSBulkUpdateAgent.ExecuteByEntityIds(String,String,String)
+  name: 'ExecuteByEntityIds(NSFieldValueInfo[],String,String,String)'
+  nameWithType: NSBulkUpdateAgent.ExecuteByEntityIds(NSFieldValueInfo[],String,String,String)
+  fullName: CRMScript.NetServer.NSBulkUpdateAgent.ExecuteByEntityIds(NSFieldValueInfo[],String,String,String)
   type: Method
-  summary: "\nDo the batchupdate on selected\n"
+  summary: "\nDo the batch update on selected\n"
   remarks: 
   syntax: 
     content: Integer ExecuteByEntityIds(NSFieldValueInfo[] fieldValueInfos, String tableName, String context, String ids)
     parameters:
+    - id: fieldValueInfos
+      type: CRMScript.NetServer.NSFieldValueInfo[]
+      description: The name of the wanted tablename
     - id: tableName
       type: CRMScript.Global.String
-      description: 
+      description:  The name of the table to bulk update
     - id: context
       type: CRMScript.Global.String
-      description: 
+      description: Where is the function called from
     - id: ids
       type: CRMScript.Global.String
-      description: 
+      description: Comma-separated string of the IDs of the entities to update
     return:
       type: CRMScript.Global.Integer
+      describe: batchtaskinfo ID
   example: 
   - "\n<pre><code>NSBulkUpdateAgent agent;\nNSFieldValueInfo[] fieldValueInfos;\nString tableName;\nString context;\nString ids;\nInteger res = agent.ExecuteByEntityIds(fieldValueInfos, tableName, context, ids);</code></pre>\n"
-- uid: CRMScript.NetServer.NSBulkUpdateAgent.ExecuteBySelectionId(String,String,Integer,Bool)
-  commentId: M:CRMScript.NetServer.NSBulkUpdateAgent.ExecuteBySelectionId(String,String,Integer,Bool)
-  id: 'ExecuteBySelectionId(String,String,Integer,Bool)'
+- uid: CRMScript.NetServer.NSBulkUpdateAgent.ExecuteBySelectionId(NSFieldValueInfo[],String,String,Integer,Bool)
+  commentId: M:CRMScript.NetServer.NSBulkUpdateAgent.ExecuteBySelectionId(NSFieldValueInfo[],String,String,Integer,Bool)
+  id: 'ExecuteBySelectionId(NSFieldValueInfo[],String,String,Integer,Bool)'
   so.intellisense: NSBulkUpdateAgent.ExecuteBySelectionId
   langs:
   - crmscript
-  name: 'ExecuteBySelectionId(String,String,Integer,Bool)'
-  nameWithType: NSBulkUpdateAgent.ExecuteBySelectionId(String,String,Integer,Bool)
-  fullName: CRMScript.NetServer.NSBulkUpdateAgent.ExecuteBySelectionId(String,String,Integer,Bool)
+  name: 'ExecuteBySelectionId(NSFieldValueInfo[],String,String,Integer,Bool)'
+  nameWithType: NSBulkUpdateAgent.ExecuteBySelectionId(NSFieldValueInfo[],String,String,Integer,Bool)
+  fullName: CRMScript.NetServer.NSBulkUpdateAgent.ExecuteBySelectionId(NSFieldValueInfo[],String,String,Integer,Bool)
   type: Method
   summary: "\nDo the batchupdate on this selection\n"
   remarks: 
   syntax: 
     content: Integer ExecuteBySelectionId(NSFieldValueInfo[] fieldValueInfos, String tableName, String context, Integer selectionId, Bool isShadow)
     parameters:
+    - id: fieldValueInfos
+      type: CRMScript.NetServer.NSFieldValueInfo[]
+      description: The name of the wanted tablename
     - id: tableName
       type: CRMScript.Global.String
-      description: 
+      description: The name of the table to bulk update
     - id: context
       type: CRMScript.Global.String
-      description: 
+      description: Where is the function called from
     - id: selectionId
       type: CRMScript.Global.Integer
-      description: 
+      description: The ID of the selection
     - id: isShadow
       type: CRMScript.Global.Bool
-      description: 
+      description: Use the shadow selection
     return:
       type: CRMScript.Global.Integer
+      description: batchtaskinfo ID
   example: 
   - "\n<pre><code>NSBulkUpdateAgent agent;\nNSFieldValueInfo[] fieldValueInfos;\nString tableName;\nString context;\nInteger selectionId;\nBool isShadow;\nInteger res = agent.ExecuteBySelectionId(fieldValueInfos, tableName, context, selectionId, isShadow);</code></pre>\n"
 - uid: CRMScript.NetServer.NSBulkUpdateAgent.GetAvailableFields(String)
@@ -92,16 +115,17 @@ items:
   nameWithType: NSBulkUpdateAgent.GetAvailableFields(String)
   fullName: CRMScript.NetServer.NSBulkUpdateAgent.GetAvailableFields(String)
   type: Method
-  summary: "\nGet all available fields for a given tablename/entity\n"
+  summary: "\nGets all available fields for a given tablename/entity\n"
   remarks: 
   syntax: 
     content: NSFieldValueInfo[] GetAvailableFields(String tablename)
     parameters:
     - id: tablename
       type: CRMScript.Global.String
-      description: 
+      description: The name of the wanted tablename
     return:
       type: CRMScript.NetServer.NSFieldValueInfo[]
+      description: Array of the available fields for the given entity
   example: 
   - "\n<pre><code>NSBulkUpdateAgent agent;\nString tablename;\nNSFieldValueInfo[] res = agent.GetAvailableFields(tablename);</code></pre>\n"
 - uid: CRMScript.NetServer.NSBulkUpdateAgent.GetJobResultAsJsonFromBinaryObjectId(String,Integer)
@@ -114,19 +138,20 @@ items:
   nameWithType: NSBulkUpdateAgent.GetJobResultAsJsonFromBinaryObjectId(String,Integer)
   fullName: CRMScript.NetServer.NSBulkUpdateAgent.GetJobResultAsJsonFromBinaryObjectId(String,Integer)
   type: Method
-  summary: "\nGet result of the batchupdate job\n"
+  summary: "\nGets result of the batchupdate job\n"
   remarks: 
   syntax: 
     content: String GetJobResultAsJsonFromBinaryObjectId(String tableName, Integer binaryObjectId)
     parameters:
     - id: tableName
       type: CRMScript.Global.String
-      description: 
+      description: The name of the table that was updated to show the log from
     - id: binaryObjectId
       type: CRMScript.Global.Integer
-      description: 
+      description: Which binaryobject ID has stored the job result
     return:
       type: CRMScript.Global.String
+      description: Result of job as JSON
   example: 
   - "\n<pre><code>NSBulkUpdateAgent agent;\nString tableName;\nInteger binaryObjectId;\nString res = agent.GetJobResultAsJsonFromBinaryObjectId(tableName, binaryObjectId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSBulkUpdateAgent.GetJobResultsFromStorageAsJson()
@@ -139,13 +164,14 @@ items:
   nameWithType: NSBulkUpdateAgent.GetJobResultsFromStorageAsJson()
   fullName: CRMScript.NetServer.NSBulkUpdateAgent.GetJobResultsFromStorageAsJson()
   type: Method
-  summary: "\nGet result of the batchupdate job<p></p>\n<strong>Returns:</strong>String[]<p></p>\n<pre><code>NSBulkUpdateAgent agent;\nString[] res = agent.GetJobResultsFromStorageAsJson();</code></pre>\n"
+  summary: "\nGets result of the batchupdate job\n"
   remarks: 
   syntax: 
     content: String[] GetJobResultsFromStorageAsJson()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String[]
+      description: Result of job as JSON
   example: 
   - "\n<pre><code>NSBulkUpdateAgent agent;\nString[] res = agent.GetJobResultsFromStorageAsJson();</code></pre>\n"
 - uid: CRMScript.NetServer.NSBulkUpdateAgent.GetStoredFields(String,String)
@@ -158,37 +184,22 @@ items:
   nameWithType: NSBulkUpdateAgent.GetStoredFields(String,String)
   fullName: CRMScript.NetServer.NSBulkUpdateAgent.GetStoredFields(String,String)
   type: Method
-  summary: "\nGet all stored fields for a given tablename/entity and context\n"
+  summary: "\nGets all stored fields for a given tablename/entity and context\n"
   remarks: 
   syntax: 
     content: NSFieldValueInfo[] GetStoredFields(String tablename, String context)
     parameters:
     - id: tablename
       type: CRMScript.Global.String
-      description: 
+      description: The name of the wanted tablename
     - id: context
       type: CRMScript.Global.String
-      description: 
+      description: Where is the function called for
     return:
       type: CRMScript.NetServer.NSFieldValueInfo[]
+      description: array of the stored or default fields for the given entity
   example: 
   - "\n<pre><code>NSBulkUpdateAgent agent;\nString tablename;\nString context;\nNSFieldValueInfo[] res = agent.GetStoredFields(tablename, context);</code></pre>\n"
-- uid: CRMScript.NetServer.NSBulkUpdateAgent.#ctor
-  commentId: M:CRMScript.NetServer.NSBulkUpdateAgent.#ctor
-  id: '#ctor'
-  so.intellisense: Void.NSBulkUpdateAgent
-  langs:
-  - crmscript
-  name: '#ctor'
-  nameWithType: NSBulkUpdateAgent.#ctor
-  fullName: CRMScript.NetServer.NSBulkUpdateAgent.#ctor
-  type: Constructor
-  summary: "\nAgent used for bulk update methods.\n"
-  remarks: 
-  syntax: 
-    content: NSBulkUpdateAgent
-  example: 
-  - "\n<pre><code>NSBulkUpdateAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSBulkUpdateAgent.RemoveStoredFields(String,String)
   commentId: M:CRMScript.NetServer.NSBulkUpdateAgent.RemoveStoredFields(String,String)
   id: 'RemoveStoredFields(String,String)'
@@ -199,17 +210,17 @@ items:
   nameWithType: NSBulkUpdateAgent.RemoveStoredFields(String,String)
   fullName: CRMScript.NetServer.NSBulkUpdateAgent.RemoveStoredFields(String,String)
   type: Method
-  summary: "\nRemove the stored settings of the bulk update for this table from this context\n"
+  summary: "\nRemoves the stored settings of the bulk update for this table from this context\n"
   remarks: 
   syntax: 
     content: Bool RemoveStoredFields(String tableName, String context)
     parameters:
     - id: tableName
       type: CRMScript.Global.String
-      description: 
+      description: The name of the table to remove stored settings from
     - id: context
       type: CRMScript.Global.String
-      description: 
+      description: Where is the function called from that we will remove the settings from
     return:
       type: CRMScript.Global.Bool
   example: 
@@ -230,12 +241,13 @@ items:
     parameters:
     - id: tableName
       type: CRMScript.Global.String
-      description: 
+      description: The name of the table to remove stored settings from
     - id: context
       type: CRMScript.Global.String
-      description: 
+      description: Where is the function called from that we will remove the settings from
     return:
       type: CRMScript.NetServer.NSFieldValueInfo[]
+      description: array of the available fields for the given tablename
   example: 
   - "\n<pre><code>NSBulkUpdateAgent agent;\nString tableName;\nString context;\nNSFieldValueInfo[] res = agent.RemoveStoredFieldsAndGetDefaultFields(tableName, context);</code></pre>\n"
 references:
@@ -303,3 +315,9 @@ references:
   name: String
   nameWithType: String
   fullName: CRMScript.Global.String
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void

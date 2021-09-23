@@ -3,23 +3,38 @@ items:
 - uid: CRMScript.NetServer.NSAssociateAgent
   commentId: T:CRMScript.NetServer.NSAssociateAgent
   id: NSAssociateAgent
-  so.intellisense: Void.NSAssociateAgent
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSAssociateAgent.#ctor
   - CRMScript.NetServer.NSAssociateAgent.GetAssociate(Integer)
   - CRMScript.NetServer.NSAssociateAgent.GetAssociateByPersonId(Integer)
-  - CRMScript.NetServer.NSAssociateAgent.GetAssociateList()
+  - CRMScript.NetServer.NSAssociateAgent.GetAssociateList(Integer[])
   - CRMScript.NetServer.NSAssociateAgent.GetAssociatesByGroup(Integer,Integer)
   - CRMScript.NetServer.NSAssociateAgent.GetNote(Integer)
   - CRMScript.NetServer.NSAssociateAgent.LogOffWindowsUsers(Integer[])
-  - CRMScript.NetServer.NSAssociateAgent.#ctor
   - CRMScript.NetServer.NSAssociateAgent.SaveNote(Integer,String[])
   name: NSAssociateAgent
   nameWithType: NSAssociateAgent
   fullName: CRMScript.NetServer.NSAssociateAgent
   type: Class
-  summary: "\nAssociate utilities, notes, not user admininstration.\n"
+  summary: "\nAssociate utilities, notes, not user administration.\n"
+  example: 
+  - "\n<pre><code>NSAssociateAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSAssociateAgent.#ctor
+  commentId: M:CRMScript.NetServer.NSAssociateAgent.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSAssociateAgent
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSAssociateAgent.#ctor
+  fullName: CRMScript.NetServer.NSAssociateAgent.#ctor
+  type: Constructor
+  summary: ""
+  remarks: 
+  syntax: 
+    content: NSAssociateAgent
   example: 
   - "\n<pre><code>NSAssociateAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAssociateAgent.GetAssociate(Integer)
@@ -35,13 +50,14 @@ items:
   summary: "\nGets an NSAssociate object.\n"
   remarks: 
   syntax: 
-    content: NSAssociate GetAssociate(Integer associateId);
+    content: NSAssociate GetAssociate(Integer associateId)
     parameters:
-    - id: associateId;
+    - id: associateId
       type: CRMScript.Global.Integer
       description: 
     return:
       type: CRMScript.NetServer.NSAssociate
+      description:
   example: 
   - "\n<pre><code>NSAssociateAgent agent;\nNSAssociate thing = agent.GetAssociate(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAssociateAgent.GetAssociateByPersonId(Integer)
@@ -64,23 +80,30 @@ items:
       description: 
     return:
       type: CRMScript.NetServer.NSAssociate
+      description: the associate that belongs to this person if the person is an associate
   example: 
   - "\n<pre><code>NSAssociateAgent agent;\nInteger personId;\nNSAssociate res = agent.GetAssociateByPersonId(personId);</code></pre>\n"
-- uid: CRMScript.NetServer.NSAssociateAgent.GetAssociateList()
-  commentId: M:CRMScript.NetServer.NSAssociateAgent.GetAssociateList()
-  id: 'GetAssociateList()'
+- uid: CRMScript.NetServer.NSAssociateAgent.GetAssociateList(Integer[])
+  commentId: M:CRMScript.NetServer.NSAssociateAgent.GetAssociateList(Integer[])
+  id: 'GetAssociateList(Integer[])'
   so.intellisense: NSAssociateAgent.GetAssociateList
   langs:
   - crmscript
-  name: 'GetAssociateList()'
-  nameWithType: NSAssociateAgent.GetAssociateList()
-  fullName: CRMScript.NetServer.NSAssociateAgent.GetAssociateList()
+  name: 'GetAssociateList(Integer[])'
+  nameWithType: NSAssociateAgent.GetAssociateList(Integer[])
+  fullName: CRMScript.NetServer.NSAssociateAgent.GetAssociateList(Integer[])
   type: Method
-  summary: "\nCRMScript method in the NSAssociateAgent class that retrieves a list of associatesGets an array of Associate objects.<p></p>\n<code>NSAssociate[] GetAssociateList(Integer[] associateIds)</code>\n"
+  summary: "\nRetrieves a list of associates.\n"
   remarks: 
   syntax: 
-    content: GetAssociateList()
+    content: NSAssociate[] GetAssociateList(Integer[] associateIds)
     parameters:
+    - id: associateIds
+      type: CRMScript.Global.Integer[]
+      description:
+    return:
+      type: CRMScript.NetServer.NSAssociate[]
+      description:
   example: 
   - "\n<pre><code>Integer[] ids;\nNSAssociateAgent agent;\nagent.GetAssociateList(ids);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAssociateAgent.GetAssociatesByGroup(Integer,Integer)
@@ -93,7 +116,7 @@ items:
   nameWithType: NSAssociateAgent.GetAssociatesByGroup(Integer,Integer)
   fullName: CRMScript.NetServer.NSAssociateAgent.GetAssociatesByGroup(Integer,Integer)
   type: Method
-  summary: "\nMethod that returns a array of associate , based on DiaryGroupType and groupId. The different types are, Userdefined, Usergroup and ResourceHeadings\n"
+  summary: "\nReturns a array of associate based on DiaryGroupType and groupId.\n"
   remarks: 
   syntax: 
     content: NSAssociate[] GetAssociatesByGroup(Integer groupId, Integer type)
@@ -103,9 +126,10 @@ items:
       description: 
     - id: type
       type: CRMScript.Global.Integer
-      description: 
+      description: The different types are Userdefined, Usergroup, and ResourceHeadings
     return:
       type: CRMScript.NetServer.NSAssociate[]
+      description:
   example: 
   - "\n<pre><code>NSAssociateAgent agent;\nInteger groupId;\nInteger type;\nNSAssociate[] res = agent.GetAssociatesByGroup(groupId, type);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAssociateAgent.GetNote(Integer)
@@ -128,6 +152,7 @@ items:
       description: 
     return:
       type: CRMScript.Global.String[]
+      description:
   example: 
   - "\n<pre><code>NSAssociateAgent agent;\nInteger associateId;\nString[] res = agent.GetNote(associateId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAssociateAgent.LogOffWindowsUsers(Integer[])
@@ -140,7 +165,7 @@ items:
   nameWithType: NSAssociateAgent.LogOffWindowsUsers(Integer[])
   fullName: CRMScript.NetServer.NSAssociateAgent.LogOffWindowsUsers(Integer[])
   type: Method
-  summary: "\nMethod that logs off associates that are logged on to the win client\n"
+  summary: "\nLogs off associates that are logged on to the Win client\n"
   remarks: 
   syntax: 
     content: Void LogOffWindowsUsers(Integer[] associateIds)
@@ -152,22 +177,6 @@ items:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSAssociateAgent agent;\nInteger[] associateIds;\nagent.LogOffWindowsUsers(associateIds);</code></pre>\n"
-- uid: CRMScript.NetServer.NSAssociateAgent.#ctor
-  commentId: M:CRMScript.NetServer.NSAssociateAgent.#ctor
-  id: '#ctor'
-  so.intellisense: Void.NSAssociateAgent
-  langs:
-  - crmscript
-  name: '#ctor'
-  nameWithType: NSAssociateAgent.#ctor
-  fullName: CRMScript.NetServer.NSAssociateAgent.#ctor
-  type: Constructor
-  summary: "\nAssociate utilities, notes, not user admininstration.\n"
-  remarks: 
-  syntax: 
-    content: NSAssociateAgent
-  example: 
-  - "\n<pre><code>NSAssociateAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAssociateAgent.SaveNote(Integer,String[])
   commentId: M:CRMScript.NetServer.NSAssociateAgent.SaveNote(Integer,String[])
   id: 'SaveNote(Integer,String[])'

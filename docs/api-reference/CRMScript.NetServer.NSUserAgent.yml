@@ -386,7 +386,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.CreateDefaultUserFromUserType(Integer)
   type: Method
   summary: "\nCreate default NSUser providing the user type.  Only System and Anonymous users can be created without an exsisting person.  Use CreateDefaultUserFromUserTypeAndPersonId to create internal (i.e. Employee) or external users.\n"
-  remarks: "\n<p>See enum associateType.</p><pre><code>NSUserAgent agent;Integer userType;NSUser res = agent.CreateDefaultUserFromUserType(userType);</code></pre>\n"
+  remarks: "\nSee <xref href=\"CRMScript.NetServer.AssociateType\" data-throw-if-not-resolved=\"false\"></xref><pre><code>NSUserAgent agent;Integer userType;NSUser res = agent.CreateDefaultUserFromUserType(userType);</code></pre>\n"
   syntax: 
     content: NSUser CreateDefaultUserFromUserType(Integer userType)
     parameters:
@@ -408,7 +408,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.CreateDefaultUserFromUserTypeAndCredential(Integer,Integer,String,String,String)
   type: Method
   summary: "\nCreates an NSPersonEntity with default values based on the contactId and credentials.\n"
-  remarks: "\n<p>See enum associateType.</p>\n"
+  remarks: "\nSee <xref href=\"CRMScript.NetServer.AssociateType\" data-throw-if-not-resolved=\"false\"></xref>\n"
   syntax: 
     content: NSUser CreateDefaultUserFromUserTypeAndCredential(Integer userType, Integer contactId, String credentialType, String credentialValue, String credentialDisplayValue)
     parameters:
@@ -441,7 +441,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.CreateDefaultUserFromUserTypeAndPersonId(Integer,Integer)
   type: Method
   summary: "\nCreate default NSUser providing the associate type and person id.  System and Anonymous users can be created without an exsisting person and permits person id to be 0.\n"
-  remarks: "\n<p>See enum associateType.</p>\n"
+  remarks: "\nSee <xref href=\"CRMScript.NetServer.AssociateType\" data-throw-if-not-resolved=\"false\"></xref>\n"
   syntax: 
     content: NSUser CreateDefaultUserFromUserTypeAndPersonId(Integer userType, Integer personId)
     parameters:
@@ -1452,7 +1452,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.GetValidUserName(Integer,Integer,Integer,String)
   type: Method
   summary: "\n<strong>Returns:</strong>String\n"
-  remarks: "\n<p>See enum associateType.</p>\n"
+  remarks: "\nSee <xref href=\"CRMScript.NetServer.AssociateType\" data-throw-if-not-resolved=\"false\"></xref>\n"
   syntax: 
     content: String GetValidUserName(Integer associateId, Integer type, Integer personId, String userName)
     parameters:
@@ -1527,7 +1527,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.IsPasswordValid(Integer,Integer,Integer,String)
   type: Method
   summary: "\n<strong>Returns:</strong>Bool\n"
-  remarks: "\n<p>See enum associateType.</p>\n"
+  remarks: "\nSee <xref href=\"CRMScript.NetServer.AssociateType\" data-throw-if-not-resolved=\"false\"></xref>\n"
   syntax: 
     content: Bool IsPasswordValid(Integer associateId, Integer type, Integer personId, String password)
     parameters:
@@ -1557,7 +1557,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.IsPasswordValidWithReason(Integer,Integer,Integer,String)
   type: Method
   summary: "\n<strong>Returns:</strong>NSUserValidationResult\n"
-  remarks: "\n<p>See enum associateType.</p>\n"
+  remarks: "\nSee <xref href=\"CRMScript.NetServer.AssociateType\" data-throw-if-not-resolved=\"false\"></xref>\n"
   syntax: 
     content: NSUserValidationResult IsPasswordValidWithReason(Integer associateId, Integer type, Integer personId, String password)
     parameters:
@@ -1587,7 +1587,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.IsUserNameValid(Integer,Integer,Integer,String,String)
   type: Method
   summary: "\n<strong>Returns:</strong>Bool\n"
-  remarks: "\n<p>See enum associateType.</p>\n"
+  remarks: "\nSee <xref href=\"CRMScript.NetServer.AssociateType\" data-throw-if-not-resolved=\"false\"></xref>\n"
   syntax: 
     content: Bool IsUserNameValid(Integer associateId, Integer type, Integer personId, String userName)
     parameters:
@@ -1620,7 +1620,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.IsUserNameValidWithReason(Integer,Integer,Integer,String,String)
   type: Method
   summary: "\n<strong>Returns:</strong>NSUserValidationResult\n"
-  remarks: "\n<p>See enum associateType.</p>\n"
+  remarks: "\nSee <xref href=\"CRMScript.NetServer.AssociateType\" data-throw-if-not-resolved=\"false\"></xref>\n"
   syntax: 
     content: NSUserValidationResult IsUserNameValidWithReason(Integer associateId, Integer type, Integer personId, String userName)
     parameters:
@@ -1807,7 +1807,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSUserAgent.ResolveUserFromInfo(Integer,String,String[],String[],Integer)
   type: Method
   summary: "\nGet a user from the provided information. If the user or associated person does not exist, it will be created on demand.\n"
-  remarks: "\n<p>See enum associateType.</p>\n"
+  remarks: "\nSee <xref href=\"CRMScript.NetServer.AssociateType\" data-throw-if-not-resolved=\"false\"></xref>\n"
   syntax: 
     content: NSResolvedUser ResolveUserFromInfo(Integer contactId, String personName, String[] phoneNumbers, String[] emails, Integer userType, NSCredential credential)
     parameters:
@@ -2545,3 +2545,9 @@ references:
   name: NSResolvedUser
   nameWithType: NSResolvedUser
   fullName: CRMScript.NetServer.NSResolvedUser
+- uid: CRMScript.NetServer.AssociateType
+  commentId: T:CRMScript.NetServer.AssociateType
+  isExternal: true
+  name: AssociateType
+  nameWithType: AssociateType
+  fullName: CRMScript.NetServer.AssociateType

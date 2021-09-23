@@ -3,10 +3,10 @@ items:
 - uid: CRMScript.NetServer.NSAudienceAgent
   commentId: T:CRMScript.NetServer.NSAudienceAgent
   id: NSAudienceAgent
-  so.intellisense: Void.NSAudienceAgent
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSAudienceAgent.#ctor
   - CRMScript.NetServer.NSAudienceAgent.CreateDefaultAudienceLayoutEntity()
   - CRMScript.NetServer.NSAudienceAgent.DeleteAudienceLayoutEntity(Integer)
   - CRMScript.NetServer.NSAudienceAgent.DeleteConfigParameter(String,String)
@@ -27,7 +27,6 @@ items:
   - CRMScript.NetServer.NSAudienceAgent.GetMyConfigParameter(String)
   - CRMScript.NetServer.NSAudienceAgent.GetMyConfigParameters()
   - CRMScript.NetServer.NSAudienceAgent.GetMyConfigParameterValue(String)
-  - CRMScript.NetServer.NSAudienceAgent.#ctor
   - CRMScript.NetServer.NSAudienceAgent.SaveAudienceLayoutEntity()
   - CRMScript.NetServer.NSAudienceAgent.SaveConfigParameter(String)
   - CRMScript.NetServer.NSAudienceAgent.SetDefaultCountryFlag(String)
@@ -41,6 +40,22 @@ items:
   summary: "\nServices specific to the Audience client.\n"
   example: 
   - "\n<pre><code>NSAudienceAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSAudienceAgent.#ctor
+  commentId: M:CRMScript.NetServer.NSAudienceAgent.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSAudienceAgent
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSAudienceAgent.#ctor
+  fullName: CRMScript.NetServer.NSAudienceAgent.#ctor
+  type: Constructor
+  summary: ""
+  remarks: 
+  syntax: 
+    content: NSAudienceAgent
+  example: 
+  - "\n<pre><code>NSAudienceAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAudienceAgent.CreateDefaultAudienceLayoutEntity()
   commentId: M:CRMScript.NetServer.NSAudienceAgent.CreateDefaultAudienceLayoutEntity()
   id: 'CreateDefaultAudienceLayoutEntity()'
@@ -51,14 +66,14 @@ items:
   nameWithType: NSAudienceAgent.CreateDefaultAudienceLayoutEntity()
   fullName: CRMScript.NetServer.NSAudienceAgent.CreateDefaultAudienceLayoutEntity()
   type: Method
-  summary: "\nSet default values into a new NSAudienceLayoutEntity.
-NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>A new NSAudienceLayoutEntity with default values.<p></p>\n<pre><code>NSAudienceAgent agent;\nNSAudienceLayoutEntity thing = agent.CreateDefaultAudienceLayoutEntity();\nthing = agent.SaveAudienceLayoutEntity(thing);</code></pre>\n"
-  remarks: 
+  summary: "\nSets default values into a new NSAudienceLayoutEntity.\n"
+  remarks: "\nNetServer calculates default values (for example Country) on the entity, which is required when creating/storing a new instance.\n"
   syntax: 
     content: NSAudienceLayoutEntity CreateDefaultAudienceLayoutEntity()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.NetServer.NSAudienceLayoutEntity
+      description: A new NSAudienceLayoutEntity with default values.
   example: 
   - "\n<pre><code>NSAudienceAgent agent;\nNSAudienceLayoutEntity thing = agent.CreateDefaultAudienceLayoutEntity();\nthing = agent.SaveAudienceLayoutEntity(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAudienceAgent.DeleteAudienceLayoutEntity(Integer)
@@ -71,14 +86,16 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSAudienceAgent.DeleteAudienceLayoutEntity(Integer)
   fullName: CRMScript.NetServer.NSAudienceAgent.DeleteAudienceLayoutEntity(Integer)
   type: Method
-  summary: "\nDeletes the NSAudienceLayoutEntity\n"
+  summary: "\nDeletes the NSAudienceLayoutEntity.\n"
   remarks: 
   syntax: 
-    content: DeleteAudienceLayoutEntity(Integer audienceLayoutEntity);
+    content: Void DeleteAudienceLayoutEntity(Integer audienceLayoutEntity);
     parameters:
     - id: audienceLayoutEntity;
       type: CRMScript.Global.Integer
-      description: 
+      description:
+    return:
+      type: CRMScript.Global.Void 
   example: 
   - "\n<pre><code>NSAudienceAgent agent;\nagent.DeleteAudienceLayoutEntity(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAudienceAgent.DeleteConfigParameter(String,String)
@@ -91,7 +108,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSAudienceAgent.DeleteConfigParameter(String,String)
   fullName: CRMScript.NetServer.NSAudienceAgent.DeleteConfigParameter(String,String)
   type: Method
-  summary: "\nDeletes an Audience configuration parameter belonging to a Audience layout\n"
+  summary: "\nDeletes an Audience configuration parameter belonging to a Audience layout.\n"
   remarks: 
   syntax: 
     content: Void DeleteConfigParameter(String layoutName, String parameterName)
@@ -115,7 +132,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSAudienceAgent.GetAudienceLayoutByName(String)
   fullName: CRMScript.NetServer.NSAudienceAgent.GetAudienceLayoutByName(String)
   type: Method
-  summary: "\nGets an Audience layout by it's instance name\n"
+  summary: "\nGets an Audience layout by its instance name.\n"
   remarks: 
   syntax: 
     content: NSAudienceLayoutEntity GetAudienceLayoutByName(String layoutName)
@@ -125,6 +142,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       description: 
     return:
       type: CRMScript.NetServer.NSAudienceLayoutEntity
+      description:
   example: 
   - "\n<pre><code>NSAudienceAgent agent;\nString layoutName;\nNSAudienceLayoutEntity res = agent.GetAudienceLayoutByName(layoutName);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAudienceAgent.GetAudienceLayoutEntity(Integer)
@@ -147,6 +165,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       description: 
     return:
       type: CRMScript.NetServer.NSAudienceLayoutEntity
+      description:
   example: 
   - "\n<pre><code>NSAudienceAgent agent;\nNSAudienceLayoutEntity thing = agent.GetAudienceLayoutEntity(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAudienceAgent.GetAudienceLayoutOnPerson(Integer)
@@ -169,6 +188,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       description: 
     return:
       type: CRMScript.NetServer.NSAudienceLayoutEntity
+      description:
   example: 
   - "\n<pre><code>NSAudienceAgent agent;\nInteger personId;\nNSAudienceLayoutEntity res = agent.GetAudienceLayoutOnPerson(personId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAudienceAgent.GetConfigParameter(String,String)
@@ -194,6 +214,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       description: 
     return:
       type: CRMScript.NetServer.NSAudienceConfigParameter
+      description:
   example: 
   - "\n<pre><code>NSAudienceAgent agent;\nString layoutName;\nString parameterName;\nNSAudienceConfigParameter res = agent.GetConfigParameter(layoutName, parameterName);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAudienceAgent.GetConfigParameterOnPerson(String,Integer)
@@ -206,7 +227,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSAudienceAgent.GetConfigParameterOnPerson(String,Integer)
   fullName: CRMScript.NetServer.NSAudienceAgent.GetConfigParameterOnPerson(String,Integer)
   type: Method
-  summary: "\nGets an Audience configuration parameter with the specified configuration parameter name on the person specified\n"
+  summary: "\nGets an Audience configuration parameter with the specified configuration parameter name on the person specified.\n"
   remarks: 
   syntax: 
     content: NSAudienceConfigParameter GetConfigParameterOnPerson(String parameterName, Integer personId)
@@ -219,6 +240,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       description: 
     return:
       type: CRMScript.NetServer.NSAudienceConfigParameter
+      description:
   example: 
   - "\n<pre><code>NSAudienceAgent agent;\nString parameterName;\nInteger personId;\nNSAudienceConfigParameter res = agent.GetConfigParameterOnPerson(parameterName, personId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAudienceAgent.GetConfigParametersByLayoutName(String)
@@ -241,6 +263,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       description: 
     return:
       type: CRMScript.NetServer.NSAudienceConfigParameter[]
+      description:
   example: 
   - "\n<pre><code>NSAudienceAgent agent;\nString layoutName;\nNSAudienceConfigParameter[] res = agent.GetConfigParametersByLayoutName(layoutName);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAudienceAgent.GetConfigParametersOnPerson(Integer)
@@ -253,7 +276,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSAudienceAgent.GetConfigParametersOnPerson(Integer)
   fullName: CRMScript.NetServer.NSAudienceAgent.GetConfigParametersOnPerson(Integer)
   type: Method
-  summary: "\nGets the Audience configuration parameters belonging to the person specified\n"
+  summary: "\nGets the Audience configuration parameters belonging to the person specified.\n"
   remarks: 
   syntax: 
     content: NSAudienceConfigParameter[] GetConfigParametersOnPerson(Integer personId)
@@ -263,6 +286,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       description: 
     return:
       type: CRMScript.NetServer.NSAudienceConfigParameter[]
+      description:
   example: 
   - "\n<pre><code>NSAudienceAgent agent;\nInteger personId;\nNSAudienceConfigParameter[] res = agent.GetConfigParametersOnPerson(personId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAudienceAgent.GetConfigParameterValue(String,String)
@@ -275,7 +299,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSAudienceAgent.GetConfigParameterValue(String,String)
   fullName: CRMScript.NetServer.NSAudienceAgent.GetConfigParameterValue(String,String)
   type: Method
-  summary: "\nGets the string value of an Audience configuration parameter belonging to a given Audience layout with the specified configuration parameter name\n"
+  summary: "\nGets the string value of an Audience configuration parameter belonging to a given Audience layout with the specified configuration parameter name.\n"
   remarks: 
   syntax: 
     content: String GetConfigParameterValue(String layoutName, String parameterName)
@@ -288,6 +312,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       description: 
     return:
       type: CRMScript.Global.String
+      description: the string value of an Audience configuration parameter
   example: 
   - "\n<pre><code>NSAudienceAgent agent;\nString layoutName;\nString parameterName;\nString res = agent.GetConfigParameterValue(layoutName, parameterName);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAudienceAgent.GetConfigParameterValueOnPerson(String,Integer)
@@ -300,7 +325,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSAudienceAgent.GetConfigParameterValueOnPerson(String,Integer)
   fullName: CRMScript.NetServer.NSAudienceAgent.GetConfigParameterValueOnPerson(String,Integer)
   type: Method
-  summary: "\nGets the string value of an Audience configuration parameter with the specified configuration parameter name on the person specified\n"
+  summary: "\nGets the string value of an Audience configuration parameter with the specified configuration parameter name on the person specified.\n"
   remarks: 
   syntax: 
     content: String GetConfigParameterValueOnPerson(String parameterName, Integer personId)
@@ -313,6 +338,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       description: 
     return:
       type: CRMScript.Global.String
+      description:
   example: 
   - "\n<pre><code>NSAudienceAgent agent;\nString parameterName;\nInteger personId;\nString res = agent.GetConfigParameterValueOnPerson(parameterName, personId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAudienceAgent.GetDefaultCountryFlag(String)
@@ -335,6 +361,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       description: 
     return:
       type: CRMScript.NetServer.NSImage
+      description:
   example: 
   - "\n<pre><code>NSAudienceAgent agent;\nString layoutName;\nNSImage res = agent.GetDefaultCountryFlag(layoutName);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAudienceAgent.GetDefaultPersonImage(String)
@@ -357,6 +384,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       description: 
     return:
       type: CRMScript.NetServer.NSImage
+      description:
   example: 
   - "\n<pre><code>NSAudienceAgent agent;\nString layoutName;\nNSImage res = agent.GetDefaultPersonImage(layoutName);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAudienceAgent.GetDefaultProjectImage(String)
@@ -379,6 +407,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       description: 
     return:
       type: CRMScript.NetServer.NSImage
+      description:
   example: 
   - "\n<pre><code>NSAudienceAgent agent;\nString layoutName;\nNSImage res = agent.GetDefaultProjectImage(layoutName);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAudienceAgent.GetLogoImage(String)
@@ -401,6 +430,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       description: 
     return:
       type: CRMScript.Native.Image
+      description:
   example: 
 - uid: CRMScript.NetServer.NSAudienceAgent.GetMyAudienceLayout()
   commentId: M:CRMScript.NetServer.NSAudienceAgent.GetMyAudienceLayout()
@@ -412,13 +442,14 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSAudienceAgent.GetMyAudienceLayout()
   fullName: CRMScript.NetServer.NSAudienceAgent.GetMyAudienceLayout()
   type: Method
-  summary: "\nGets the Audience layout belonging to the currently logged on user.<p></p>\n<strong>Returns:</strong>Audience layout entity<p></p>\n<pre><code>NSAudienceAgent agent;\nNSAudienceLayoutEntity res = agent.GetMyAudienceLayout();</code></pre>\n"
+  summary: "\nGets the Audience layout belonging to the currently logged on user.\n"
   remarks: 
   syntax: 
     content: NSAudienceLayoutEntity GetMyAudienceLayout()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.NetServer.NSAudienceLayoutEntity
+      description: Audience layout entity
   example: 
   - "\n<pre><code>NSAudienceAgent agent;\nNSAudienceLayoutEntity res = agent.GetMyAudienceLayout();</code></pre>\n"
 - uid: CRMScript.NetServer.NSAudienceAgent.GetMyConfigParameter(String)
@@ -441,6 +472,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       description: 
     return:
       type: CRMScript.NetServer.NSAudienceConfigParameter
+      description:
   example: 
   - "\n<pre><code>NSAudienceAgent agent;\nString parameterName;\nNSAudienceConfigParameter res = agent.GetMyConfigParameter(parameterName);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAudienceAgent.GetMyConfigParameters()
@@ -453,13 +485,14 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSAudienceAgent.GetMyConfigParameters()
   fullName: CRMScript.NetServer.NSAudienceAgent.GetMyConfigParameters()
   type: Method
-  summary: "\nGets the Audience configuration parameters belonging to the currently logged on user.<p></p>\n<strong>Returns:</strong>Array of Audience configuration parameters.<p></p>\n<pre><code>NSAudienceAgent agent;\nNSAudienceConfigParameter[] res = agent.GetMyConfigParameters();</code></pre>\n"
+  summary: "\nGets the Audience configuration parameters belonging to the currently logged on user.\n"
   remarks: 
   syntax: 
     content: NSAudienceConfigParameter[] GetMyConfigParameters()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.NetServer.NSAudienceConfigParameter[]
+      description: Array of Audience configuration parameters.
   example: 
   - "\n<pre><code>NSAudienceAgent agent;\nNSAudienceConfigParameter[] res = agent.GetMyConfigParameters();</code></pre>\n"
 - uid: CRMScript.NetServer.NSAudienceAgent.GetMyConfigParameterValue(String)
@@ -482,24 +515,9 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       description: 
     return:
       type: CRMScript.Global.String
+      description:
   example: 
   - "\n<pre><code>NSAudienceAgent agent;\nString parameterName;\nString res = agent.GetMyConfigParameterValue(parameterName);</code></pre>\n"
-- uid: CRMScript.NetServer.NSAudienceAgent.#ctor
-  commentId: M:CRMScript.NetServer.NSAudienceAgent.#ctor
-  id: '#ctor'
-  so.intellisense: Void.NSAudienceAgent
-  langs:
-  - crmscript
-  name: '#ctor'
-  nameWithType: NSAudienceAgent.#ctor
-  fullName: CRMScript.NetServer.NSAudienceAgent.#ctor
-  type: Constructor
-  summary: "\nServices specific to the Audience client.\n"
-  remarks: 
-  syntax: 
-    content: NSAudienceAgent
-  example: 
-  - "\n<pre><code>NSAudienceAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAudienceAgent.SaveAudienceLayoutEntity()
   commentId: M:CRMScript.NetServer.NSAudienceAgent.SaveAudienceLayoutEntity()
   id: 'SaveAudienceLayoutEntity()'
@@ -510,11 +528,17 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSAudienceAgent.SaveAudienceLayoutEntity()
   fullName: CRMScript.NetServer.NSAudienceAgent.SaveAudienceLayoutEntity()
   type: Method
-  summary: "\nCRMScript method in the NSAudienceAgent class that creates or updates an NSAudienceLayoutEntitySaves an<code>NSAudienceLayoutEntity</code>. If the ID is 0, it creates a new entity. Otherwise, if the NSAudienceLayoutEntity exists, it will be updated.<p></p>\nReturns the new or updated NSAudienceLayoutEntity<p></p>\n<code>NSAudienceLayoutEntity SaveAudienceLayoutEntity(NSAudienceLayoutEntity audienceLayoutEntity)</code>\n"
+  summary: "\nCreates or updates an NSAudienceLayoutEntity. If the ID is 0, it creates a new entity. Otherwise, if the NSAudienceLayoutEntity exists, it will be updated.\n"
   remarks: 
   syntax: 
-    content: SaveAudienceLayoutEntity()
+    content: NSAudienceLayoutEntity SaveAudienceLayoutEntity(NSAudienceLayoutEntity audienceLayoutEntity)
     parameters:
+    - id: audienceLayoutEntity
+      type: CRMScript.NetServer.NSAudienceLayoutEntity
+      description:
+    return:
+      type: NSAudienceLayoutEntity
+      description: the new or updated NSAudienceLayoutEntity
   example: 
   - "\n<pre><code>NSAudience agent;\nNSAudienceLayoutEntity thing = agent.CreateDefaultAudienceLayoutEntity();\nthing = agent.SaveAudienceLayoutEntity(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAudienceAgent.SaveConfigParameter(String)
@@ -537,6 +561,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
       description: 
     return:
       type: CRMScript.NetServer.NSAudienceConfigParameter
+      description:
   example: 
   - "\n<pre><code>NSAudienceAgent agent;\nString layoutName;\nNSAudienceConfigParameter configParameter;\nNSAudienceConfigParameter res = agent.SaveConfigParameter(layoutName, configParameter);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAudienceAgent.SetDefaultCountryFlag(String)
@@ -557,6 +582,9 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
     - id: layoutName
       type: CRMScript.Global.String
       description: 
+    - id: image
+      type: CRMScript.NetServer.NSImage
+      description:
     return:
       type: CRMScript.Global.Void
   example: 
@@ -578,6 +606,9 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
     - id: layoutName
       type: CRMScript.Global.String
       description: 
+    - id: image
+      type: CRMScript.NetServer.NSImage
+      description:
     return:
       type: CRMScript.Global.Void
   example: 
@@ -599,6 +630,9 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
     - id: layoutName
       type: CRMScript.Global.String
       description: 
+    - id: image
+      type: CRMScript.NetServer.NSImage
+      description:
     return:
       type: CRMScript.Global.Void
   example: 
@@ -620,6 +654,9 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
     - id: layoutName
       type: CRMScript.Global.String
       description: 
+    - id: image
+      type: CRMScript.NetServer.NSImage
+      description:
     return:
       type: CRMScript.Global.Void
   example: 

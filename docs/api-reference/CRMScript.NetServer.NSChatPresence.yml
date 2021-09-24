@@ -3,16 +3,15 @@ items:
 - uid: CRMScript.NetServer.NSChatPresence
   commentId: T:CRMScript.NetServer.NSChatPresence
   id: NSChatPresence
-  so.intellisense: Void.NSChatPresence
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSChatPresence.#ctor
   - CRMScript.NetServer.NSChatPresence.GetChatTopics()
   - CRMScript.NetServer.NSChatPresence.GetDisplayName()
   - CRMScript.NetServer.NSChatPresence.GetOngoingChats()
   - CRMScript.NetServer.NSChatPresence.GetPresent()
   - CRMScript.NetServer.NSChatPresence.GetUserId()
-  - CRMScript.NetServer.NSChatPresence.#ctor
   - CRMScript.NetServer.NSChatPresence.SetChatTopics(Integer[])
   - CRMScript.NetServer.NSChatPresence.SetDisplayName(String)
   - CRMScript.NetServer.NSChatPresence.SetOngoingChats(Integer)
@@ -24,101 +23,6 @@ items:
   type: Class
   summary: 
   example: 
-- uid: CRMScript.NetServer.NSChatPresence.GetChatTopics()
-  commentId: M:CRMScript.NetServer.NSChatPresence.GetChatTopics()
-  id: 'GetChatTopics()'
-  so.intellisense: NSChatPresence.GetChatTopics
-  langs:
-  - crmscript
-  name: 'GetChatTopics()'
-  nameWithType: NSChatPresence.GetChatTopics()
-  fullName: CRMScript.NetServer.NSChatPresence.GetChatTopics()
-  type: Method
-  summary: "\nAn array of ids with chat topics that this user is a member of<p></p>\n<strong>Returns:</strong>Integer[]<p></p>\n<pre><code>NSChatPresence thing;\nInteger[] chatTopics = thing.GetChatTopics();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: Integer[] GetChatTopics()
-    parameters:
-    return:
-      type: CRMScript.Global.Integer[]
-  example: 
-  - "\n<pre><code>NSChatPresence thing;\nInteger[] chatTopics = thing.GetChatTopics();</code></pre>\n"
-- uid: CRMScript.NetServer.NSChatPresence.GetDisplayName()
-  commentId: M:CRMScript.NetServer.NSChatPresence.GetDisplayName()
-  id: 'GetDisplayName()'
-  so.intellisense: NSChatPresence.GetDisplayName
-  langs:
-  - crmscript
-  name: 'GetDisplayName()'
-  nameWithType: NSChatPresence.GetDisplayName()
-  fullName: CRMScript.NetServer.NSChatPresence.GetDisplayName()
-  type: Method
-  summary: "\nThe display name of the chat user<p></p>\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSChatPresence thing;\nString displayName = thing.GetDisplayName();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: String GetDisplayName()
-    parameters:
-    return:
-      type: CRMScript.Global.String
-  example: 
-  - "\n<pre><code>NSChatPresence thing;\nString displayName = thing.GetDisplayName();</code></pre>\n"
-- uid: CRMScript.NetServer.NSChatPresence.GetOngoingChats()
-  commentId: M:CRMScript.NetServer.NSChatPresence.GetOngoingChats()
-  id: 'GetOngoingChats()'
-  so.intellisense: NSChatPresence.GetOngoingChats
-  langs:
-  - crmscript
-  name: 'GetOngoingChats()'
-  nameWithType: NSChatPresence.GetOngoingChats()
-  fullName: CRMScript.NetServer.NSChatPresence.GetOngoingChats()
-  type: Method
-  summary: "\nThe number of ongoing chats this users has now<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<pre><code>NSChatPresence thing;\nInteger ongoingChats = thing.GetOngoingChats();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: Integer GetOngoingChats()
-    parameters:
-    return:
-      type: CRMScript.Global.Integer
-  example: 
-  - "\n<pre><code>NSChatPresence thing;\nInteger ongoingChats = thing.GetOngoingChats();</code></pre>\n"
-- uid: CRMScript.NetServer.NSChatPresence.GetPresent()
-  commentId: M:CRMScript.NetServer.NSChatPresence.GetPresent()
-  id: 'GetPresent()'
-  so.intellisense: NSChatPresence.GetPresent
-  langs:
-  - crmscript
-  name: 'GetPresent()'
-  nameWithType: NSChatPresence.GetPresent()
-  fullName: CRMScript.NetServer.NSChatPresence.GetPresent()
-  type: Method
-  summary: "\nIndicates if the user has the chat presence turned on or off<p></p>\n<strong>Returns:</strong>Bool<p></p>\n<pre><code>NSChatPresence thing;\nBool present = thing.GetPresent();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: Bool GetPresent()
-    parameters:
-    return:
-      type: CRMScript.Global.Bool
-  example: 
-  - "\n<pre><code>NSChatPresence thing;\nBool present = thing.GetPresent();</code></pre>\n"
-- uid: CRMScript.NetServer.NSChatPresence.GetUserId()
-  commentId: M:CRMScript.NetServer.NSChatPresence.GetUserId()
-  id: 'GetUserId()'
-  so.intellisense: NSChatPresence.GetUserId
-  langs:
-  - crmscript
-  name: 'GetUserId()'
-  nameWithType: NSChatPresence.GetUserId()
-  fullName: CRMScript.NetServer.NSChatPresence.GetUserId()
-  type: Method
-  summary: "\nThe id for the chat user<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<pre><code>NSChatPresence thing;\nInteger userId = thing.GetUserId();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: Integer GetUserId()
-    parameters:
-    return:
-      type: CRMScript.Global.Integer
-  example: 
-  - "\n<pre><code>NSChatPresence thing;\nInteger userId = thing.GetUserId();</code></pre>\n"
 - uid: CRMScript.NetServer.NSChatPresence.#ctor
   commentId: M:CRMScript.NetServer.NSChatPresence.#ctor
   id: '#ctor'
@@ -134,6 +38,106 @@ items:
   syntax: 
     content: NSChatPresence
   example: 
+- uid: CRMScript.NetServer.NSChatPresence.GetChatTopics()
+  commentId: M:CRMScript.NetServer.NSChatPresence.GetChatTopics()
+  id: 'GetChatTopics()'
+  so.intellisense: NSChatPresence.GetChatTopics
+  langs:
+  - crmscript
+  name: 'GetChatTopics()'
+  nameWithType: NSChatPresence.GetChatTopics()
+  fullName: CRMScript.NetServer.NSChatPresence.GetChatTopics()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Integer[] GetChatTopics()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer[]
+      description: An array of IDs with chat topics that this user is a member of
+  example: 
+  - "\n<pre><code>NSChatPresence thing;\nInteger[] chatTopics = thing.GetChatTopics();</code></pre>\n"
+- uid: CRMScript.NetServer.NSChatPresence.GetDisplayName()
+  commentId: M:CRMScript.NetServer.NSChatPresence.GetDisplayName()
+  id: 'GetDisplayName()'
+  so.intellisense: NSChatPresence.GetDisplayName
+  langs:
+  - crmscript
+  name: 'GetDisplayName()'
+  nameWithType: NSChatPresence.GetDisplayName()
+  fullName: CRMScript.NetServer.NSChatPresence.GetDisplayName()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetDisplayName()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: The display name of the chat user
+  example: 
+  - "\n<pre><code>NSChatPresence thing;\nString displayName = thing.GetDisplayName();</code></pre>\n"
+- uid: CRMScript.NetServer.NSChatPresence.GetOngoingChats()
+  commentId: M:CRMScript.NetServer.NSChatPresence.GetOngoingChats()
+  id: 'GetOngoingChats()'
+  so.intellisense: NSChatPresence.GetOngoingChats
+  langs:
+  - crmscript
+  name: 'GetOngoingChats()'
+  nameWithType: NSChatPresence.GetOngoingChats()
+  fullName: CRMScript.NetServer.NSChatPresence.GetOngoingChats()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Integer GetOngoingChats()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: The number of ongoing chats this users has now
+  example: 
+  - "\n<pre><code>NSChatPresence thing;\nInteger ongoingChats = thing.GetOngoingChats();</code></pre>\n"
+- uid: CRMScript.NetServer.NSChatPresence.GetPresent()
+  commentId: M:CRMScript.NetServer.NSChatPresence.GetPresent()
+  id: 'GetPresent()'
+  so.intellisense: NSChatPresence.GetPresent
+  langs:
+  - crmscript
+  name: 'GetPresent()'
+  nameWithType: NSChatPresence.GetPresent()
+  fullName: CRMScript.NetServer.NSChatPresence.GetPresent()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Bool GetPresent()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: Indicates if the user has the chat presence turned on or off
+  example: 
+  - "\n<pre><code>NSChatPresence thing;\nBool present = thing.GetPresent();</code></pre>\n"
+- uid: CRMScript.NetServer.NSChatPresence.GetUserId()
+  commentId: M:CRMScript.NetServer.NSChatPresence.GetUserId()
+  id: 'GetUserId()'
+  so.intellisense: NSChatPresence.GetUserId
+  langs:
+  - crmscript
+  name: 'GetUserId()'
+  nameWithType: NSChatPresence.GetUserId()
+  fullName: CRMScript.NetServer.NSChatPresence.GetUserId()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Integer GetUserId()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: The ID for the chat user
+  example: 
+  - "\n<pre><code>NSChatPresence thing;\nInteger userId = thing.GetUserId();</code></pre>\n"
 - uid: CRMScript.NetServer.NSChatPresence.SetChatTopics(Integer[])
   commentId: M:CRMScript.NetServer.NSChatPresence.SetChatTopics(Integer[])
   id: 'SetChatTopics(Integer[])'
@@ -144,14 +148,16 @@ items:
   nameWithType: NSChatPresence.SetChatTopics(Integer[])
   fullName: CRMScript.NetServer.NSChatPresence.SetChatTopics(Integer[])
   type: Method
-  summary: "\nAn array of ids with chat topics that this user is a member of\n"
+  summary: ""
   remarks: 
   syntax: 
-    content: SetChatTopics(Integer[] chatTopics)
+    content: Void SetChatTopics(Integer[] chatTopics)
     parameters:
     - id: chatTopics
       type: CRMScript.Global.Integer[]
-      description: 
+      description: An array of IDs with chat topics that this user is a member of
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSChatPresence thing;\nInteger[] chatTopics;\nthing.SetChatTopics(chatTopics);</code></pre>\n"
 - uid: CRMScript.NetServer.NSChatPresence.SetDisplayName(String)
@@ -164,14 +170,16 @@ items:
   nameWithType: NSChatPresence.SetDisplayName(String)
   fullName: CRMScript.NetServer.NSChatPresence.SetDisplayName(String)
   type: Method
-  summary: "\nThe display name of the chat user\n"
+  summary: ""
   remarks: 
   syntax: 
-    content: SetDisplayName(String displayName)
+    content: Void SetDisplayName(String displayName)
     parameters:
     - id: displayName
       type: CRMScript.Global.String
-      description: 
+      description: The display name of the chat user
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSChatPresence thing;\nString displayName;\nthing.SetDisplayName(displayName);</code></pre>\n"
 - uid: CRMScript.NetServer.NSChatPresence.SetOngoingChats(Integer)
@@ -184,14 +192,16 @@ items:
   nameWithType: NSChatPresence.SetOngoingChats(Integer)
   fullName: CRMScript.NetServer.NSChatPresence.SetOngoingChats(Integer)
   type: Method
-  summary: "\nThe number of ongoing chats this users has now\n"
+  summary: ""
   remarks: 
   syntax: 
-    content: SetOngoingChats(Integer ongoingChats)
+    content: Void SetOngoingChats(Integer ongoingChats)
     parameters:
     - id: ongoingChats
       type: CRMScript.Global.Integer
-      description: 
+      description: The number of ongoing chats this users has now
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSChatPresence thing;\nInteger ongoingChats;\nthing.SetOngoingChats(ongoingChats);</code></pre>\n"
 - uid: CRMScript.NetServer.NSChatPresence.SetPresent(Bool)
@@ -204,14 +214,16 @@ items:
   nameWithType: NSChatPresence.SetPresent(Bool)
   fullName: CRMScript.NetServer.NSChatPresence.SetPresent(Bool)
   type: Method
-  summary: "\nIndicates if the user has the chat presence turned on or off\n"
+  summary: ""
   remarks: 
   syntax: 
-    content: SetPresent(Bool present)
+    content: Void SetPresent(Bool present)
     parameters:
     - id: present
       type: CRMScript.Global.Bool
-      description: 
+      description: Indicates if the user has the chat presence turned on or off
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSChatPresence thing;\nBool present;\nthing.SetPresent(present);</code></pre>\n"
 - uid: CRMScript.NetServer.NSChatPresence.SetUserId(Integer)
@@ -224,14 +236,16 @@ items:
   nameWithType: NSChatPresence.SetUserId(Integer)
   fullName: CRMScript.NetServer.NSChatPresence.SetUserId(Integer)
   type: Method
-  summary: "\nThe id for the chat user\n"
+  summary: ""
   remarks: 
   syntax: 
-    content: SetUserId(Integer userId)
+    content: Void SetUserId(Integer userId)
     parameters:
     - id: userId
       type: CRMScript.Global.Integer
-      description: 
+      description: The ID for the chat user
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSChatPresence thing;\nInteger userId;\nthing.SetUserId(userId);</code></pre>\n"
 references:
@@ -267,15 +281,15 @@ references:
   name: String
   nameWithType: String
   fullName: CRMScript.Global.String
-- uid: CRMScript.Global.Integer
-  commentId: T:CRMScript.Global.Integer
-  isExternal: true
-  name: Integer
-  nameWithType: Integer
-  fullName: CRMScript.Global.Integer
 - uid: CRMScript.Global.Bool
   commentId: T:CRMScript.Global.Bool
   isExternal: true
   name: Bool
   nameWithType: Bool
   fullName: CRMScript.Global.Bool
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void

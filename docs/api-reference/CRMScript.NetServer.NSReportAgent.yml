@@ -39,7 +39,7 @@ items:
   fullName: CRMScript.NetServer.NSReportAgent.CreateDefaultReportEntity()
   type: Method
   summary: "\nSet default values into a new NSReportEntity.
-NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSReportEntity<p></p>\n<pre><code>NSReportAgent agent;\nNSReportEntity thing = agent.CreateDefaultReportEntity();\nthing = agent.SaveReportEntity(thing);</code></pre>\n"
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSReportEntity<p></p>\n<pre><code>NSReportAgent agent;\nNSReportEntity thing = agent.CreateDefaultReportEntity();\nthing = agent.SaveReportEntity(thing);</code></pre>\n"
   remarks: 
   syntax: 
     content: NSReportEntity CreateDefaultReportEntity()
@@ -59,7 +59,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   fullName: CRMScript.NetServer.NSReportAgent.CreateDefaultReportLabelLayoutEntity()
   type: Method
   summary: "\nSet default values into a new NSReportLabelLayoutEntity.
-NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSReportLabelLayoutEntity<p></p>\n<pre><code>NSReportAgent agent;\nNSReportLabelLayoutEntity thing = agent.CreateDefaultReportLabelLayoutEntity();\nthing = agent.SaveReportLabelLayoutEntity(thing);</code></pre>\n"
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSReportLabelLayoutEntity<p></p>\n<pre><code>NSReportAgent agent;\nNSReportLabelLayoutEntity thing = agent.CreateDefaultReportLabelLayoutEntity();\nthing = agent.SaveReportLabelLayoutEntity(thing);</code></pre>\n"
   remarks: 
   syntax: 
     content: NSReportLabelLayoutEntity CreateDefaultReportLabelLayoutEntity()
@@ -127,7 +127,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSReportAgent.DeleteReport(Integer)
   fullName: CRMScript.NetServer.NSReportAgent.DeleteReport(Integer)
   type: Method
-  summary: "\nDelete the report with the given id<p></p>\n<ul><li><strong>ReportId</strong>The id of the report to delete</li></ul><strong>Returns:</strong>Bool<p></p>\n<pre><code>NSReportAgent agent;\nInteger reportId;\nBool res = agent.DeleteReport(reportId);</code></pre>\n"
+  summary: "\nDelete the report with the given id<p></p>\n<ul><li><strong>ReportId</strong>The ID of the report to delete</li></ul><strong>Returns:</strong>Bool<p></p>\n<pre><code>NSReportAgent agent;\nInteger reportId;\nBool res = agent.DeleteReport(reportId);</code></pre>\n"
   remarks: 
   syntax: 
     content: Bool DeleteReport(Integer reportId)
@@ -152,9 +152,9 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   summary: "\nDeletes the NSReportLabelLayoutEntity<p></p>\n<ul><li><strong>ReportLabelLayoutEntityId</strong>The identity of the ReportLabelLayoutEntity to delete.</li></ul><pre><code>NSReportAgent agent;\nagent.DeleteReportLabelLayoutEntity(123);</code></pre>\n"
   remarks: 
   syntax: 
-    content: DeleteReportLabelLayoutEntity(Integer reportLabelLayoutEntity);
+    content: DeleteReportLabelLayoutEntity(Integer reportLabelLayoutEntity)
     parameters:
-    - id: reportLabelLayoutEntity;
+    - id: reportLabelLayoutEntity
       type: CRMScript.Global.Integer
       description: 
   example: 
@@ -169,7 +169,7 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   nameWithType: NSReportAgent.GenerateReport(Integer,Integer,String,String,String)
   fullName: CRMScript.NetServer.NSReportAgent.GenerateReport(Integer,Integer,String,String,String)
   type: Method
-  summary: "\nGenerates the report in PDF format<p></p>\n<ul><li><strong>ReportId</strong>The id of the report.</li><li><strong>labelLayoutId</strong>The id of the labellayout. Use 0 if the report isn't of type label.</li><li><strong>filename</strong>Filename of the report.</li><li><strong>language</strong>Language to use when generating the report.</li><li><strong>fileType</strong></li><li><strong>restrictions</strong>Use restrictions to provide additional restrictions when generating the report.</li></ul><strong>Returns:</strong>String<p></p>\n<pre><code>NSReportAgent agent;\nInteger reportId;\nInteger labelLayoutId;\nString filename;\nString language;\nString fileType;\nNSArchiveRestrictionInfo[] restrictions;\nString res = agent.GenerateReport(reportId, labelLayoutId, filename, language, fileType, restrictions);</code></pre>\n"
+  summary: "\nGenerates the report in PDF format<p></p>\n<ul><li><strong>ReportId</strong>The ID of the report.</li><li><strong>labelLayoutId</strong>The ID of the labellayout. Use 0 if the report isn't of type label.</li><li><strong>filename</strong>Filename of the report.</li><li><strong>language</strong>Language to use when generating the report.</li><li><strong>fileType</strong></li><li><strong>restrictions</strong>Use restrictions to provide additional restrictions when generating the report.</li></ul><strong>Returns:</strong>String<p></p>\n<pre><code>NSReportAgent agent;\nInteger reportId;\nInteger labelLayoutId;\nString filename;\nString language;\nString fileType;\nNSArchiveRestrictionInfo[] restrictions;\nString res = agent.GenerateReport(reportId, labelLayoutId, filename, language, fileType, restrictions);</code></pre>\n"
   remarks: 
   syntax: 
     content: String GenerateReport(Integer reportId, Integer labelLayoutId, String filename, String language, String fileType, NSArchiveRestrictionInfo[] restrictions)
@@ -206,9 +206,9 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   summary: "\nGets an NSReportEntity object.<p></p>\n<ul><li><strong>ReportEntityId</strong>The identifier of the NSReportEntity object</li></ul><strong>Returns:</strong>NSReportEntity<p></p>\n<pre><code>NSReportAgent agent;\nNSReportEntity thing = agent.GetReportEntity(123);</code></pre>\n"
   remarks: 
   syntax: 
-    content: NSReportEntity GetReportEntity(Integer reportEntityId);
+    content: NSReportEntity GetReportEntity(Integer reportEntityId)
     parameters:
-    - id: reportEntityId;
+    - id: reportEntityId
       type: CRMScript.Global.Integer
       description: 
     return:
@@ -228,9 +228,9 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   summary: "\nGets an NSReportLabelLayoutEntity object.<p></p>\n<ul><li><strong>ReportLabelLayoutEntityId</strong>The identifier of the NSReportLabelLayoutEntity object</li></ul><strong>Returns:</strong>NSReportLabelLayoutEntity<p></p>\n<pre><code>NSReportAgent agent;\nNSReportLabelLayoutEntity thing = agent.GetReportLabelLayoutEntity(123);</code></pre>\n"
   remarks: 
   syntax: 
-    content: NSReportLabelLayoutEntity GetReportLabelLayoutEntity(Integer reportLabelLayoutEntityId);
+    content: NSReportLabelLayoutEntity GetReportLabelLayoutEntity(Integer reportLabelLayoutEntityId)
     parameters:
-    - id: reportLabelLayoutEntityId;
+    - id: reportLabelLayoutEntityId
       type: CRMScript.Global.Integer
       description: 
     return:
@@ -288,9 +288,9 @@ NetServer calculates default values (e.g. Country) on the entity, which is requi
   summary: "\nUpdates the existing NSReportEntity or creates a new NSReportEntity if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>reportEntity</strong>The NSReportEntity to save.</li></ul><strong>Returns:</strong>NSReportEntity<p></p>\n<pre><code>NSReport  agent;\nNSReportEntity thing = agent.CreateDefaultReportEntity();\nthing = agent.SaveReportEntity(thing);</code></pre>\n"
   remarks: 
   syntax: 
-    content: NSReportEntity SaveReportEntity(NSReportEntity reportEntity);
+    content: NSReportEntity SaveReportEntity(NSReportEntity reportEntity)
     parameters:
-    - id: reportEntity;
+    - id: reportEntity
       type: CRMScript.NetServer.NSReportEntity
       description: 
     return:

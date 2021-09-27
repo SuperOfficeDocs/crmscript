@@ -1,8 +1,9 @@
 ### YamlMime:ManagedReference
 items:
 - uid: CRMScript.NetServer.LicenseStatus
+  # Same as SuperOffice.WebApi.Data.LicenseStatus
   commentId: T:CRMScript.NetServer.LicenseStatus
-  id: LicenseStatus
+  id: LicenseStatus 
   langs:
   - crmscript
   children:
@@ -18,7 +19,7 @@ items:
   nameWithType: LicenseStatus
   fullName: CRMScript.NetServer.LicenseStatus
   type: Enum
-  summary: 
+  summary: "\nUsed in the CheckLicenseStatusResult to describe how SOADMIN should handle\n"
 - uid: CRMScript.NetServer.LicenseStatus.Ok
   commentId: F:CRMScript.NetServer.LicenseStatus.Ok
   id: LicenseStatus.Ok
@@ -28,7 +29,7 @@ items:
   nameWithType: LicenseStatus.Ok
   fullName: CRMScript.NetServer.LicenseStatus.Ok
   type: Field
-  summary: "\n0: Ok\n"
+  summary: "\n0: License is ok. No changes detected\n"
   syntax: 
     content: Ok = 0
     type: CRMScript.NetServer.LicenseStatus
@@ -41,7 +42,7 @@ items:
   nameWithType: LicenseStatus.NewLicenseAvailable
   fullName: CRMScript.NetServer.LicenseStatus.NewLicenseAvailable
   type: Field
-  summary: "\n1: NewLicenseAvailable\n"
+  summary: "\n1: New license information available. Get new license and activate it.\n"
   syntax: 
     content: NewLicenseAvailable = 1
     type: CRMScript.NetServer.LicenseStatus
@@ -54,7 +55,7 @@ items:
   nameWithType: LicenseStatus.NewCompanyNameAvailable
   fullName: CRMScript.NetServer.LicenseStatus.NewCompanyNameAvailable
   type: Field
-  summary: "\n2: NewCompanyNameAvailable\n"
+  summary: "\n2: Name change detected. Fetch new license and activate it.\n"
   syntax: 
     content: NewCompanyNameAvailable = 2
     type: CRMScript.NetServer.LicenseStatus
@@ -67,7 +68,7 @@ items:
   nameWithType: LicenseStatus.NewSerialAvailable
   fullName: CRMScript.NetServer.LicenseStatus.NewSerialAvailable
   type: Field
-  summary: "\n3: NewSerialAvailable\n"
+  summary: "\n3: Serial number change detected. Fetch new license and activate it.\n"
   syntax: 
     content: NewSerialAvailable = 3
     type: CRMScript.NetServer.LicenseStatus
@@ -80,7 +81,7 @@ items:
   nameWithType: LicenseStatus.UseCustomMessage
   fullName: CRMScript.NetServer.LicenseStatus.UseCustomMessage
   type: Field
-  summary: "\n4: UseCustomMessage\n"
+  summary: "\n4: See message for details.\n"
   syntax: 
     content: UseCustomMessage = 4
     type: CRMScript.NetServer.LicenseStatus
@@ -93,7 +94,7 @@ items:
   nameWithType: LicenseStatus.UseCustomMessageAndUrl
   fullName: CRMScript.NetServer.LicenseStatus.UseCustomMessageAndUrl
   type: Field
-  summary: "\n5: UseCustomMessageAndUrl\n"
+  summary: "\n5: See message and URL for details. Client should make URL clickable.\n"
   syntax: 
     content: UseCustomMessageAndUrl = 5
     type: CRMScript.NetServer.LicenseStatus
@@ -106,7 +107,7 @@ items:
   nameWithType: LicenseStatus.ProblemWithLicense
   fullName: CRMScript.NetServer.LicenseStatus.ProblemWithLicense
   type: Field
-  summary: "\n100: ProblemWithLicense\n"
+  summary: "\n100: Something seems to be wrong. Cannot fetch new license.\n"
   syntax: 
     content: ProblemWithLicense = 100
     type: CRMScript.NetServer.LicenseStatus

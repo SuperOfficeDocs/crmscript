@@ -3,13 +3,12 @@ items:
 - uid: CRMScript.NetServer.NSCsFeatureToggle
   commentId: T:CRMScript.NetServer.NSCsFeatureToggle
   id: NSCsFeatureToggle
-  so.intellisense: Void.NSCsFeatureToggle
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSCsFeatureToggle.#ctor
   - CRMScript.NetServer.NSCsFeatureToggle.GetName()
   - CRMScript.NetServer.NSCsFeatureToggle.GetState()
-  - CRMScript.NetServer.NSCsFeatureToggle.#ctor
   - CRMScript.NetServer.NSCsFeatureToggle.SetName(String)
   - CRMScript.NetServer.NSCsFeatureToggle.SetState(Bool)
   name: NSCsFeatureToggle
@@ -18,44 +17,6 @@ items:
   type: Class
   summary: 
   example: 
-- uid: CRMScript.NetServer.NSCsFeatureToggle.GetName()
-  commentId: M:CRMScript.NetServer.NSCsFeatureToggle.GetName()
-  id: 'GetName()'
-  so.intellisense: NSCsFeatureToggle.GetName
-  langs:
-  - crmscript
-  name: 'GetName()'
-  nameWithType: NSCsFeatureToggle.GetName()
-  fullName: CRMScript.NetServer.NSCsFeatureToggle.GetName()
-  type: Method
-  summary: "\nName of the feature toggle<p></p>\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSCsFeatureToggle thing;\nString name = thing.GetName();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: String GetName()
-    parameters:
-    return:
-      type: CRMScript.Global.String
-  example: 
-  - "\n<pre><code>NSCsFeatureToggle thing;\nString name = thing.GetName();</code></pre>\n"
-- uid: CRMScript.NetServer.NSCsFeatureToggle.GetState()
-  commentId: M:CRMScript.NetServer.NSCsFeatureToggle.GetState()
-  id: 'GetState()'
-  so.intellisense: NSCsFeatureToggle.GetState
-  langs:
-  - crmscript
-  name: 'GetState()'
-  nameWithType: NSCsFeatureToggle.GetState()
-  fullName: CRMScript.NetServer.NSCsFeatureToggle.GetState()
-  type: Method
-  summary: "\nDescribes if the feature toggle is turned on or off<p></p>\n<strong>Returns:</strong>Bool<p></p>\n<pre><code>NSCsFeatureToggle thing;\nBool state = thing.GetState();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: Bool GetState()
-    parameters:
-    return:
-      type: CRMScript.Global.Bool
-  example: 
-  - "\n<pre><code>NSCsFeatureToggle thing;\nBool state = thing.GetState();</code></pre>\n"
 - uid: CRMScript.NetServer.NSCsFeatureToggle.#ctor
   commentId: M:CRMScript.NetServer.NSCsFeatureToggle.#ctor
   id: '#ctor'
@@ -71,6 +32,46 @@ items:
   syntax: 
     content: NSCsFeatureToggle
   example: 
+- uid: CRMScript.NetServer.NSCsFeatureToggle.GetName()
+  commentId: M:CRMScript.NetServer.NSCsFeatureToggle.GetName()
+  id: 'GetName()'
+  so.intellisense: NSCsFeatureToggle.GetName
+  langs:
+  - crmscript
+  name: 'GetName()'
+  nameWithType: NSCsFeatureToggle.GetName()
+  fullName: CRMScript.NetServer.NSCsFeatureToggle.GetName()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetName()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Name of the feature toggle
+  example: 
+  - "\n<pre><code>NSCsFeatureToggle thing;\nString name = thing.GetName();</code></pre>\n"
+- uid: CRMScript.NetServer.NSCsFeatureToggle.GetState()
+  commentId: M:CRMScript.NetServer.NSCsFeatureToggle.GetState()
+  id: 'GetState()'
+  so.intellisense: NSCsFeatureToggle.GetState
+  langs:
+  - crmscript
+  name: 'GetState()'
+  nameWithType: NSCsFeatureToggle.GetState()
+  fullName: CRMScript.NetServer.NSCsFeatureToggle.GetState()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Bool GetState()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: is the feature toggle is turned on or off?
+  example: 
+  - "\n<pre><code>NSCsFeatureToggle thing;\nBool state = thing.GetState();</code></pre>\n"
 - uid: CRMScript.NetServer.NSCsFeatureToggle.SetName(String)
   commentId: M:CRMScript.NetServer.NSCsFeatureToggle.SetName(String)
   id: 'SetName(String)'
@@ -81,14 +82,16 @@ items:
   nameWithType: NSCsFeatureToggle.SetName(String)
   fullName: CRMScript.NetServer.NSCsFeatureToggle.SetName(String)
   type: Method
-  summary: "\nName of the feature toggle\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
-    content: SetName(String name)
+    content: Void SetName(String name)
     parameters:
     - id: name
       type: CRMScript.Global.String
-      description: 
+      description: Name of the feature toggle
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSCsFeatureToggle thing;\nString name;\nthing.SetName(name);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCsFeatureToggle.SetState(Bool)
@@ -101,14 +104,16 @@ items:
   nameWithType: NSCsFeatureToggle.SetState(Bool)
   fullName: CRMScript.NetServer.NSCsFeatureToggle.SetState(Bool)
   type: Method
-  summary: "\nDescribes if the feature toggle is turned on or off\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
-    content: SetState(Bool state)
+    content: Void SetState(Bool state)
     parameters:
     - id: state
       type: CRMScript.Global.Bool
-      description: 
+      description: is the feature toggle is turned on or off?
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSCsFeatureToggle thing;\nBool state;\nthing.SetState(state);</code></pre>\n"
 references:
@@ -130,3 +135,9 @@ references:
   name: Bool
   nameWithType: Bool
   fullName: CRMScript.Global.Bool
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void

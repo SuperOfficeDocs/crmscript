@@ -3,14 +3,13 @@ items:
 - uid: CRMScript.NetServer.NSCurrency
   commentId: T:CRMScript.NetServer.NSCurrency
   id: NSCurrency
-  so.intellisense: Void.NSCurrency
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSCurrency.#ctor
   - CRMScript.NetServer.NSCurrency.GetId()
   - CRMScript.NetServer.NSCurrency.GetTooltip()
   - CRMScript.NetServer.NSCurrency.GetValue()
-  - CRMScript.NetServer.NSCurrency.#ctor
   - CRMScript.NetServer.NSCurrency.SetId(Integer)
   - CRMScript.NetServer.NSCurrency.SetTooltip(String)
   - CRMScript.NetServer.NSCurrency.SetValue(String)
@@ -20,63 +19,6 @@ items:
   type: Class
   summary: 
   example: 
-- uid: CRMScript.NetServer.NSCurrency.GetId()
-  commentId: M:CRMScript.NetServer.NSCurrency.GetId()
-  id: 'GetId()'
-  so.intellisense: NSCurrency.GetId
-  langs:
-  - crmscript
-  name: 'GetId()'
-  nameWithType: NSCurrency.GetId()
-  fullName: CRMScript.NetServer.NSCurrency.GetId()
-  type: Method
-  summary: "\nGet the primary key (id) for the NSCurrency<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<pre><code>NSCurrency thing;\nInteger id = thing.GetId();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: Integer GetId()
-    parameters:
-    return:
-      type: CRMScript.Global.Integer
-  example: 
-  - "\n<pre><code>NSCurrency thing;\nInteger id = thing.GetId();</code></pre>\n"
-- uid: CRMScript.NetServer.NSCurrency.GetTooltip()
-  commentId: M:CRMScript.NetServer.NSCurrency.GetTooltip()
-  id: 'GetTooltip()'
-  so.intellisense: NSCurrency.GetTooltip
-  langs:
-  - crmscript
-  name: 'GetTooltip()'
-  nameWithType: NSCurrency.GetTooltip()
-  fullName: CRMScript.NetServer.NSCurrency.GetTooltip()
-  type: Method
-  summary: "\nGet the tooltip description for the NSCurrency list item.<p></p>\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSCurrency thing;\nString descr = thing.GetTooltip();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: String GetTooltip()
-    parameters:
-    return:
-      type: CRMScript.Global.String
-  example: 
-  - "\n<pre><code>NSCurrency thing;\nString descr = thing.GetTooltip();</code></pre>\n"
-- uid: CRMScript.NetServer.NSCurrency.GetValue()
-  commentId: M:CRMScript.NetServer.NSCurrency.GetValue()
-  id: 'GetValue()'
-  so.intellisense: NSCurrency.GetValue
-  langs:
-  - crmscript
-  name: 'GetValue()'
-  nameWithType: NSCurrency.GetValue()
-  fullName: CRMScript.NetServer.NSCurrency.GetValue()
-  type: Method
-  summary: "\nGet the name of the NSCurrency.<p></p>\n<strong>Returns:</strong>String<p></p>\n<pre><code>NSCurrency thing;\nString name = thing.GetValue();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: String GetValue()
-    parameters:
-    return:
-      type: CRMScript.Global.String
-  example: 
-  - "\n<pre><code>NSCurrency thing;\nString name = thing.GetValue();</code></pre>\n"
 - uid: CRMScript.NetServer.NSCurrency.#ctor
   commentId: M:CRMScript.NetServer.NSCurrency.#ctor
   id: '#ctor'
@@ -92,6 +34,65 @@ items:
   syntax: 
     content: NSCurrency
   example: 
+- uid: CRMScript.NetServer.NSCurrency.GetId()
+  commentId: M:CRMScript.NetServer.NSCurrency.GetId()
+  id: 'GetId()'
+  so.intellisense: NSCurrency.GetId
+  langs:
+  - crmscript
+  name: 'GetId()'
+  nameWithType: NSCurrency.GetId()
+  fullName: CRMScript.NetServer.NSCurrency.GetId()
+  type: Method
+  summary: "\nGets the primary key (ID) for the NSCurrency\n"
+  remarks: 
+  syntax: 
+    content: Integer GetId()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description:
+  example: 
+  - "\n<pre><code>NSCurrency thing;\nInteger id = thing.GetId();</code></pre>\n"
+- uid: CRMScript.NetServer.NSCurrency.GetTooltip()
+  commentId: M:CRMScript.NetServer.NSCurrency.GetTooltip()
+  id: 'GetTooltip()'
+  so.intellisense: NSCurrency.GetTooltip
+  langs:
+  - crmscript
+  name: 'GetTooltip()'
+  nameWithType: NSCurrency.GetTooltip()
+  fullName: CRMScript.NetServer.NSCurrency.GetTooltip()
+  type: Method
+  summary: "\nGets the tooltip description for the NSCurrency list item.\n"
+  remarks: 
+  syntax: 
+    content: String GetTooltip()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description:
+  example: 
+  - "\n<pre><code>NSCurrency thing;\nString descr = thing.GetTooltip();</code></pre>\n"
+- uid: CRMScript.NetServer.NSCurrency.GetValue()
+  commentId: M:CRMScript.NetServer.NSCurrency.GetValue()
+  id: 'GetValue()'
+  so.intellisense: NSCurrency.GetValue
+  langs:
+  - crmscript
+  name: 'GetValue()'
+  nameWithType: NSCurrency.GetValue()
+  fullName: CRMScript.NetServer.NSCurrency.GetValue()
+  type: Method
+  summary: "\nGets the name of the NSCurrency.\n"
+  remarks: 
+  syntax: 
+    content: String GetValue()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+  example: 
+  - "\n<pre><code>NSCurrency thing;\nString name = thing.GetValue();</code></pre>\n"
 - uid: CRMScript.NetServer.NSCurrency.SetId(Integer)
   commentId: M:CRMScript.NetServer.NSCurrency.SetId(Integer)
   id: 'SetId(Integer)'
@@ -102,14 +103,16 @@ items:
   nameWithType: NSCurrency.SetId(Integer)
   fullName: CRMScript.NetServer.NSCurrency.SetId(Integer)
   type: Method
-  summary: "\nSet the primary key (id) for the NSCurrency\n"
+  summary: "\nSets the primary key (ID) for the NSCurrency\n"
   remarks: 
   syntax: 
-    content: SetId(Integer id)
+    content: Void SetId(Integer id)
     parameters:
     - id: id
       type: CRMScript.Global.Integer
       description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSCurrency thing;\nthing.SetId(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCurrency.SetTooltip(String)
@@ -122,14 +125,16 @@ items:
   nameWithType: NSCurrency.SetTooltip(String)
   fullName: CRMScript.NetServer.NSCurrency.SetTooltip(String)
   type: Method
-  summary: "\nSet the tooltip description for the NSCurrency list item.\n"
+  summary: "\nSets the tooltip description for the NSCurrency list item.\n"
   remarks: 
   syntax: 
-    content: SetTooltip(String tooltip)
+    content: Void SetTooltip(String tooltip)
     parameters:
     - id: tooltip
       type: CRMScript.Global.String
       description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSCurrency thing;\nString descr = &quot;something new&quot;;\nthing.SetTooltip(descr);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCurrency.SetValue(String)
@@ -142,14 +147,16 @@ items:
   nameWithType: NSCurrency.SetValue(String)
   fullName: CRMScript.NetServer.NSCurrency.SetValue(String)
   type: Method
-  summary: "\nSet the name of the NSCurrency item.\n"
+  summary: "\nSets the name of the NSCurrency item.\n"
   remarks: 
   syntax: 
-    content: SetValue(String value)
+    content: Void SetValue(String value)
     parameters:
     - id: value
       type: CRMScript.Global.String
       description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSCurrency thing;\nthing.SetValue(&quot;frotz&quot;);</code></pre>\n"
 references:
@@ -171,3 +178,9 @@ references:
   name: String
   nameWithType: String
   fullName: CRMScript.Global.String
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void

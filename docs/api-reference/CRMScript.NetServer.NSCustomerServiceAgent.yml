@@ -3,10 +3,10 @@ items:
 - uid: CRMScript.NetServer.NSCustomerServiceAgent
   commentId: T:CRMScript.NetServer.NSCustomerServiceAgent
   id: NSCustomerServiceAgent
-  so.intellisense: Void.NSCustomerServiceAgent
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSCustomerServiceAgent.#ctor
   - CRMScript.NetServer.NSCustomerServiceAgent.AddMessageFromMailData(Integer,String)
   - CRMScript.NetServer.NSCustomerServiceAgent.ChatSessionsForUser()
   - CRMScript.NetServer.NSCustomerServiceAgent.CheckIfCustomizedTemplates()
@@ -19,7 +19,7 @@ items:
   - CRMScript.NetServer.NSCustomerServiceAgent.DeleteChatSessions(Integer[])
   - CRMScript.NetServer.NSCustomerServiceAgent.DeleteCustomerCenterConfig(Integer)
   - CRMScript.NetServer.NSCustomerServiceAgent.EventHandlerExists(Integer)
-  - CRMScript.NetServer.NSCustomerServiceAgent.ExecuteEventHandlers()
+  - CRMScript.NetServer.NSCustomerServiceAgent.ExecuteEventHandlers(NSEventData)
   - CRMScript.NetServer.NSCustomerServiceAgent.FindTicketsByTitleOrId(String,Integer)
   - CRMScript.NetServer.NSCustomerServiceAgent.GetAllCustomerCenterConfigs()
   - CRMScript.NetServer.NSCustomerServiceAgent.GetCustomerCenterConfig(Integer)
@@ -30,20 +30,35 @@ items:
   - CRMScript.NetServer.NSCustomerServiceAgent.GetSmsConfig()
   - CRMScript.NetServer.NSCustomerServiceAgent.GetStatistics()
   - CRMScript.NetServer.NSCustomerServiceAgent.HasChatNotify()
-  - CRMScript.NetServer.NSCustomerServiceAgent.#ctor
   - CRMScript.NetServer.NSCustomerServiceAgent.RemoveSession(Integer)
   - CRMScript.NetServer.NSCustomerServiceAgent.SaveAllCustomerCenterConfigs(NSCustomerCenterConfig[])
   - CRMScript.NetServer.NSCustomerServiceAgent.SaveCustomerCenterConfig(NSCustomerCenterConfig)
-  - CRMScript.NetServer.NSCustomerServiceAgent.SaveMailboxEntity()
+  - CRMScript.NetServer.NSCustomerServiceAgent.SaveMailboxEntity(NSMailboxEntity)
   - CRMScript.NetServer.NSCustomerServiceAgent.SaveSmsConfig(NSSmsConfig)
   - CRMScript.NetServer.NSCustomerServiceAgent.SessionIsValid(String)
   - CRMScript.NetServer.NSCustomerServiceAgent.TestSmtpServer(String,String,Bool)
-  - CRMScript.NetServer.NSCustomerServiceAgent.UpdateFeatureToggles()
+  - CRMScript.NetServer.NSCustomerServiceAgent.UpdateFeatureToggles(CsFeatureToggle[])
   name: NSCustomerServiceAgent
   nameWithType: NSCustomerServiceAgent
   fullName: CRMScript.NetServer.NSCustomerServiceAgent
   type: Class
   summary: "\nAgent used for Customer Service methods.\n"
+  example: 
+  - "\n<pre><code>NSCustomerServiceAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSCustomerServiceAgent.#ctor
+  commentId: M:CRMScript.NetServer.NSCustomerServiceAgent.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSCustomerServiceAgent
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSCustomerServiceAgent.#ctor
+  fullName: CRMScript.NetServer.NSCustomerServiceAgent.#ctor
+  type: Constructor
+  summary: "\nAgent used for Customer Service methods.\n"
+  remarks: 
+  syntax: 
+    content: NSCustomerServiceAgent
   example: 
   - "\n<pre><code>NSCustomerServiceAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCustomerServiceAgent.AddMessageFromMailData(Integer,String)
@@ -56,7 +71,7 @@ items:
   nameWithType: NSCustomerServiceAgent.AddMessageFromMailData(Integer,String)
   fullName: CRMScript.NetServer.NSCustomerServiceAgent.AddMessageFromMailData(Integer,String)
   type: Method
-  summary: "\nadd a message to an existing request in the sam way as importMail would do it from an email. It accepts RFC822 formatted data\n"
+  summary: "\nAdds a message to an existing request in the sam way as importMail would do it from an email.\n"
   remarks: 
   syntax: 
     content: NSTicketInfo AddMessageFromMailData(Integer ticketId, String data)
@@ -66,9 +81,10 @@ items:
       description: 
     - id: data
       type: CRMScript.Global.String
-      description: 
+      description: RFC822 formatted data
     return:
       type: CRMScript.NetServer.NSTicketInfo
+      description:
   example: 
   - "\n<pre><code>NSCustomerServiceAgent agent;\nInteger ticketId;\nString data;\nNSTicketInfo res = agent.AddMessageFromMailData(ticketId, data);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCustomerServiceAgent.ChatSessionsForUser()
@@ -81,13 +97,14 @@ items:
   nameWithType: NSCustomerServiceAgent.ChatSessionsForUser()
   fullName: CRMScript.NetServer.NSCustomerServiceAgent.ChatSessionsForUser()
   type: Method
-  summary: "\nGet all chat TOPICS which this user is a member of. Members means that you have at least one of: Can Respond, Notifications, Listen or Manager<p></p>\n<strong>Returns:</strong>NSChatSession[]<p></p>\n<pre><code>NSCustomerServiceAgent agent;\nNSChatSession[] res = agent.ChatSessionsForUser();</code></pre>\n"
-  remarks: 
+  summary: "\nGets all chat TOPICS which this user is a member of.\n"
+  remarks: "\nMembers means that you have at least one of: Can Respond, Notifications, Listen or Manager\n"
   syntax: 
     content: NSChatSession[] ChatSessionsForUser()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.NetServer.NSChatSession[]
+      description: chat topics
   example: 
   - "\n<pre><code>NSCustomerServiceAgent agent;\nNSChatSession[] res = agent.ChatSessionsForUser();</code></pre>\n"
 - uid: CRMScript.NetServer.NSCustomerServiceAgent.CheckIfCustomizedTemplates()
@@ -100,13 +117,14 @@ items:
   nameWithType: NSCustomerServiceAgent.CheckIfCustomizedTemplates()
   fullName: CRMScript.NetServer.NSCustomerServiceAgent.CheckIfCustomizedTemplates()
   type: Method
-  summary: "\nChecks whether the core html templates are customized<p></p>\n<strong>Returns:</strong>Bool<p></p>\n<pre><code>NSCustomerServiceAgent agent;\nBool res = agent.CheckIfCustomizedTemplates();</code></pre>\n"
+  summary: "\nChecks whether the core HTML templates are customized\n"
   remarks: 
   syntax: 
     content: Bool CheckIfCustomizedTemplates()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Bool
+      description:
   example: 
   - "\n<pre><code>NSCustomerServiceAgent agent;\nBool res = agent.CheckIfCustomizedTemplates();</code></pre>\n"
 - uid: CRMScript.NetServer.NSCustomerServiceAgent.CheckSymmetricEncryption(String)
@@ -119,7 +137,7 @@ items:
   nameWithType: NSCustomerServiceAgent.CheckSymmetricEncryption(String)
   fullName: CRMScript.NetServer.NSCustomerServiceAgent.CheckSymmetricEncryption(String)
   type: Method
-  summary: "\nDo a test to check that we are using the same encryption keys\n"
+  summary: "\nChecks that we are using the same encryption keys\n"
   remarks: 
   syntax: 
     content: String CheckSymmetricEncryption(String encryptedString)
@@ -129,6 +147,7 @@ items:
       description: 
     return:
       type: CRMScript.Global.String
+      description:
   example: 
   - "\n<pre><code>NSCustomerServiceAgent agent;\nString encryptedString;\nString res = agent.CheckSymmetricEncryption(encryptedString);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCustomerServiceAgent.CreateDefaultCustomerCenterConfig()
@@ -141,14 +160,14 @@ items:
   nameWithType: NSCustomerServiceAgent.CreateDefaultCustomerCenterConfig()
   fullName: CRMScript.NetServer.NSCustomerServiceAgent.CreateDefaultCustomerCenterConfig()
   type: Method
-  summary: "\nSet default values into a new NSCustomerCenterConfig.
-NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSCustomerCenterConfig<p></p>\n<pre><code>NSCustomerServiceAgent agent;\nNSCustomerCenterConfig thing = agent.CreateDefaultCustomerCenterConfig();\nthing = agent.SaveCustomerCenterConfig(thing);</code></pre>\n"
-  remarks: 
+  summary: "\nSets default values into a new NSCustomerCenterConfig.\n"
+  remarks: "\nNetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance\n"
   syntax: 
     content: NSCustomerCenterConfig CreateDefaultCustomerCenterConfig()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.NetServer.NSCustomerCenterConfig
+      description:
   example: 
   - "\n<pre><code>NSCustomerServiceAgent agent;\nNSCustomerCenterConfig thing = agent.CreateDefaultCustomerCenterConfig();\nthing = agent.SaveCustomerCenterConfig(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCustomerServiceAgent.CreateDefaultMailboxEntity()
@@ -161,14 +180,14 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSCustomerServiceAgent.CreateDefaultMailboxEntity()
   fullName: CRMScript.NetServer.NSCustomerServiceAgent.CreateDefaultMailboxEntity()
   type: Method
-  summary: "\nSet default values into a new NSMailboxEntity.
-NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSMailboxEntity<p></p>\n<pre><code>NSCustomerServiceAgent agent;\nNSMailboxEntity thing = agent.CreateDefaultMailboxEntity();\nthing = agent.SaveMailboxEntity(thing);</code></pre>\n"
-  remarks: 
+  summary: "\nSets default values into a new NSMailboxEntity\n"
+  remarks: "\nNetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance\n"
   syntax: 
     content: NSMailboxEntity CreateDefaultMailboxEntity()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.NetServer.NSMailboxEntity
+      description:
   example: 
   - "\n<pre><code>NSCustomerServiceAgent agent;\nNSMailboxEntity thing = agent.CreateDefaultMailboxEntity();\nthing = agent.SaveMailboxEntity(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCustomerServiceAgent.CreateDefaultSmsConfig()
@@ -181,14 +200,14 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSCustomerServiceAgent.CreateDefaultSmsConfig()
   fullName: CRMScript.NetServer.NSCustomerServiceAgent.CreateDefaultSmsConfig()
   type: Method
-  summary: "\nSet default values into a new NSSmsConfig.
-NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>NSSmsConfig<p></p>\n<pre><code>NSCustomerServiceAgent agent;\nNSSmsConfig thing = agent.CreateDefaultSmsConfig();\nthing = agent.SaveSmsConfig(thing);</code></pre>\n"
-  remarks: 
+  summary: "\nSets default values into a new NSSmsConfig.\n"
+  remarks: "\nNetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance\n"
   syntax: 
     content: NSSmsConfig CreateDefaultSmsConfig()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.NetServer.NSSmsConfig
+      description:
   example: 
   - "\n<pre><code>NSCustomerServiceAgent agent;\nNSSmsConfig thing = agent.CreateDefaultSmsConfig();\nthing = agent.SaveSmsConfig(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCustomerServiceAgent.CreateSession(String)
@@ -201,14 +220,14 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSCustomerServiceAgent.CreateSession(String)
   fullName: CRMScript.NetServer.NSCustomerServiceAgent.CreateSession(String)
   type: Method
-  summary: "\nCreates a login session for a CS user<p></p>\n<ul><li><strong>RemoteIp</strong>The ip of the client creating the session</li></ul><strong>Returns:</strong>NSCsSessionKey<p></p>\n<pre><code>NSCustomerServiceAgent agent;\nString remoteIp;\nNSCsSessionKey res = agent.CreateSession(remoteIp);</code></pre>\n"
+  summary: "\nCreates a login session for a CS user\n"
   remarks: 
   syntax: 
     content: NSCsSessionKey CreateSession(String remoteIp)
     parameters:
     - id: remoteIp
       type: CRMScript.Global.String
-      description: 
+      description: The IP of the client creating the session
     return:
       type: CRMScript.NetServer.NSCsSessionKey
   example: 
@@ -223,7 +242,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSCustomerServiceAgent.CreateTicketFromMailData(Integer,String)
   fullName: CRMScript.NetServer.NSCustomerServiceAgent.CreateTicketFromMailData(Integer,String)
   type: Method
-  summary: "\nThis method create a new ticket in the same way as importMail would import an email. It accepts RFC822 formatted data\n"
+  summary: "\nCreates a new ticket in the same way as importMail would import an email.\n"
   remarks: 
   syntax: 
     content: NSTicketInfo CreateTicketFromMailData(Integer mailboxId, String data)
@@ -233,9 +252,10 @@ NetServer calculates default values (for example, Country) on the entity, which 
       description: 
     - id: data
       type: CRMScript.Global.String
-      description: 
+      description: RFC822 formatted data
     return:
       type: CRMScript.NetServer.NSTicketInfo
+      description:
   example: 
   - "\n<pre><code>NSCustomerServiceAgent agent;\nInteger mailboxId;\nString data;\nNSTicketInfo res = agent.CreateTicketFromMailData(mailboxId, data);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCustomerServiceAgent.DeleteChatSessions(Integer[])
@@ -278,6 +298,8 @@ NetServer calculates default values (for example, Country) on the entity, which 
     - id: customerCenterConfig
       type: CRMScript.Global.Integer
       description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSCustomerServiceAgent agent;\nagent.DeleteCustomerCenterConfig(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCustomerServiceAgent.EventHandlerExists(Integer)
@@ -290,33 +312,36 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSCustomerServiceAgent.EventHandlerExists(Integer)
   fullName: CRMScript.NetServer.NSCustomerServiceAgent.EventHandlerExists(Integer)
   type: Method
-  summary: "\nCheck if an eventhandler exists for a given enum\n"
-  remarks: "\n<p>See enum eventHandlerType.</p>\n"
+  summary: "\nChecks if an event handler exists\n"
+  remarks: 
   syntax: 
     content: Bool EventHandlerExists(Integer eventHandlerType)
     parameters:
     - id: eventHandlerType
       type: CRMScript.Global.Integer
-      description: 
+      description: See enum eventHandlerType.
     return:
       type: CRMScript.Global.Bool
   example: 
   - "\n<pre><code>NSCustomerServiceAgent agent;\nInteger eventHandlerType;\nBool res = agent.EventHandlerExists(eventHandlerType);</code></pre>\n"
-- uid: CRMScript.NetServer.NSCustomerServiceAgent.ExecuteEventHandlers()
-  commentId: M:CRMScript.NetServer.NSCustomerServiceAgent.ExecuteEventHandlers()
-  id: 'ExecuteEventHandlers()'
+- uid: CRMScript.NetServer.NSCustomerServiceAgent.ExecuteEventHandlers(NSEventData)
+  commentId: M:CRMScript.NetServer.NSCustomerServiceAgent.ExecuteEventHandlers(NSEventData)
+  id: 'ExecuteEventHandlers(NSEventData)'
   so.intellisense: NSCustomerServiceAgent.ExecuteEventHandlers
   langs:
   - crmscript
-  name: 'ExecuteEventHandlers()'
-  nameWithType: NSCustomerServiceAgent.ExecuteEventHandlers()
-  fullName: CRMScript.NetServer.NSCustomerServiceAgent.ExecuteEventHandlers()
+  name: 'ExecuteEventHandlers(NSEventData)'
+  nameWithType: NSCustomerServiceAgent.ExecuteEventHandlers(NSEventData)
+  fullName: CRMScript.NetServer.NSCustomerServiceAgent.ExecuteEventHandlers(NSEventData)
   type: Method
-  summary: "\nexecute event handlers in CRMScript for a given event.\n"
+  summary: "\nExecutes event handlers in CRMScript for a given event.\n"
   remarks: 
   syntax: 
     content: NSEventData ExecuteEventHandlers(NSEventData eventData)
     parameters:
+    - id: eventData
+      type: CRMScript.NetServer.NSEventData
+      description: 
     return:
       type: CRMScript.NetServer.NSEventData
   example: 
@@ -331,7 +356,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSCustomerServiceAgent.FindTicketsByTitleOrId(String,Integer)
   fullName: CRMScript.NetServer.NSCustomerServiceAgent.FindTicketsByTitleOrId(String,Integer)
   type: Method
-  summary: "\nThis method wil search for tickets matching title or id\n"
+  summary: "\nSearches for tickets matching title or ID\n"
   remarks: 
   syntax: 
     content: NSTicketInfo[] FindTicketsByTitleOrId(String titleOrId, Integer maxRows)
@@ -344,6 +369,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
       description: 
     return:
       type: CRMScript.NetServer.NSTicketInfo[]
+      description:
   example: 
   - "\n<pre><code>NSCustomerServiceAgent agent;\nString titleOrId;\nInteger maxRows;\nNSTicketInfo[] res = agent.FindTicketsByTitleOrId(titleOrId, maxRows);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCustomerServiceAgent.GetAllCustomerCenterConfigs()
@@ -356,13 +382,14 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSCustomerServiceAgent.GetAllCustomerCenterConfigs()
   fullName: CRMScript.NetServer.NSCustomerServiceAgent.GetAllCustomerCenterConfigs()
   type: Method
-  summary: "\nGet all rows from cust_config as an array of NSCustomerCenterConfig entities<p></p>\n<strong>Returns:</strong>NSCustomerCenterConfig[]<p></p>\n<pre><code>NSCustomerServiceAgent agent;\nNSCustomerCenterConfig[] res = agent.GetAllCustomerCenterConfigs();</code></pre>\n"
+  summary: "\nGets all rows from cust_config as an array of NSCustomerCenterConfig entities\n"
   remarks: 
   syntax: 
     content: NSCustomerCenterConfig[] GetAllCustomerCenterConfigs()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.NetServer.NSCustomerCenterConfig[]
+      description:
   example: 
   - "\n<pre><code>NSCustomerServiceAgent agent;\nNSCustomerCenterConfig[] res = agent.GetAllCustomerCenterConfigs();</code></pre>\n"
 - uid: CRMScript.NetServer.NSCustomerServiceAgent.GetCustomerCenterConfig(Integer)
@@ -385,6 +412,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
       description: 
     return:
       type: CRMScript.NetServer.NSCustomerCenterConfig
+      description:
   example: 
   - "\n<pre><code>NSCustomerServiceAgent agent;\nNSCustomerCenterConfig thing = agent.GetCustomerCenterConfig(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCustomerServiceAgent.GetCustomerServiceStartup()
@@ -397,13 +425,14 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSCustomerServiceAgent.GetCustomerServiceStartup()
   fullName: CRMScript.NetServer.NSCustomerServiceAgent.GetCustomerServiceStartup()
   type: Method
-  summary: "\nGet the carrier with data that Service needs when starting up<p></p>\n<strong>Returns:</strong>NSCustomerServiceStartup<p></p>\n<pre><code>NSCustomerServiceAgent agent;\nNSCustomerServiceStartup res = agent.GetCustomerServiceStartup();</code></pre>\n"
+  summary: "\nGets the carrier with data that Service needs when starting up\n"
   remarks: 
   syntax: 
     content: NSCustomerServiceStartup GetCustomerServiceStartup()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.NetServer.NSCustomerServiceStartup
+      description:
   example: 
   - "\n<pre><code>NSCustomerServiceAgent agent;\nNSCustomerServiceStartup res = agent.GetCustomerServiceStartup();</code></pre>\n"
 - uid: CRMScript.NetServer.NSCustomerServiceAgent.GetMailboxEntity(Integer)
@@ -426,6 +455,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
       description: 
     return:
       type: CRMScript.NetServer.NSMailboxEntity
+      description:
   example: 
   - "\n<pre><code>NSCustomerServiceAgent agent;\nNSMailboxEntity thing = agent.GetMailboxEntity(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCustomerServiceAgent.GetMailboxes()
@@ -438,13 +468,14 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSCustomerServiceAgent.GetMailboxes()
   fullName: CRMScript.NetServer.NSCustomerServiceAgent.GetMailboxes()
   type: Method
-  summary: "\nGets all registered mailboxes in Service<p></p>\n<strong>Returns:</strong>NSMailbox[]<p></p>\n<pre><code>NSCustomerServiceAgent agent;\nNSMailbox[] res = agent.GetMailboxes();</code></pre>\n"
+  summary: "\nGets all registered mailboxes in Service\n"
   remarks: 
   syntax: 
     content: NSMailbox[] GetMailboxes()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.NetServer.NSMailbox[]
+      description:
   example: 
   - "\n<pre><code>NSCustomerServiceAgent agent;\nNSMailbox[] res = agent.GetMailboxes();</code></pre>\n"
 - uid: CRMScript.NetServer.NSCustomerServiceAgent.GetProgramUrl(String,Bool)
@@ -457,7 +488,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSCustomerServiceAgent.GetProgramUrl(String,Bool)
   fullName: CRMScript.NetServer.NSCustomerServiceAgent.GetProgramUrl(String,Bool)
   type: Method
-  summary: "\nconvert a module name into a Service URL.\n"
+  summary: "\nConverts a module name into a Service URL.\n"
   remarks: 
   syntax: 
     content: String GetProgramUrl(String programName, Bool external)
@@ -470,6 +501,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
       description: 
     return:
       type: CRMScript.Global.String
+      description:
   example: 
   - "\n<pre><code>NSCustomerServiceAgent agent;\nString programName;\nBool external;\nString res = agent.GetProgramUrl(programName, external);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCustomerServiceAgent.GetSmsConfig()
@@ -482,13 +514,14 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSCustomerServiceAgent.GetSmsConfig()
   fullName: CRMScript.NetServer.NSCustomerServiceAgent.GetSmsConfig()
   type: Method
-  summary: "\nGet the NSSmsConfig settings for Customer Service sms providers.<p></p>\n<strong>Returns:</strong>NSSmsConfig<p></p>\n<pre><code>NSCustomerServiceAgent agent;\nNSSmsConfig res = agent.GetSmsConfig();</code></pre>\n"
+  summary: "\nGets the NSSmsConfig settings for Customer Service SMS providers.\n"
   remarks: 
   syntax: 
     content: NSSmsConfig GetSmsConfig()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.NetServer.NSSmsConfig
+      description:
   example: 
   - "\n<pre><code>NSCustomerServiceAgent agent;\nNSSmsConfig res = agent.GetSmsConfig();</code></pre>\n"
 - uid: CRMScript.NetServer.NSCustomerServiceAgent.GetStatistics()
@@ -501,13 +534,19 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSCustomerServiceAgent.GetStatistics()
   fullName: CRMScript.NetServer.NSCustomerServiceAgent.GetStatistics()
   type: Method
-  summary: "\nCRMScript method in the NSCustomerServiceAgent class that returns the calculated results for the required statistics for the Service Status pageReturns the calculated results for the required statistics for the Customer Service<strong>Status</strong>page.<p></p>\nReturns an array of<code>StatisticsDataSet</code>.<p></p>\n<code>NSCustomerServiceAgent.GetStatistics(NSStatusScreenPanelType[] functions)</code>\n"
+  summary: "\nGets the calculated results for the required statistics for the Service Status page\n"
   remarks: "\n<h3>Functions</h3><table><thead><tr><th>Enum</th><th>Function</th></tr></thead><tbody><tr><td>0</td><td>None</td></tr><tr><td>1</td><td>OpenRequestsPerCategory</td></tr><tr><td>2</td><td>OpenRequestsPerTopCategory</td></tr><tr><td>3</td><td>OpenRequestsPerUser</td></tr><tr><td>4</td><td>OpenRequestsPerUserGroup</td></tr><tr><td>5</td><td>OpenRequestsPerPriority</td></tr><tr><td>6</td><td>OpenRequestsPerStatus</td></tr><tr><td>7</td><td>OpenRequestsPerOrigin</td></tr><tr><td>11</td><td>NumberOfCreatedRequestsPerDay</td></tr><tr><td>12</td><td>NumberOfCreatedRequestsPerWeek</td></tr><tr><td>13</td><td>NumberOfCreatedRequestsPerMonth</td></tr><tr><td>21</td><td>UserResponseTimePerDay</td></tr><tr><td>22</td><td>UserReponseTimePerWeek</td></tr><tr><td>23</td><td>UserResponseTimePerMonth</td></tr><tr><td>101</td><td>OwnOpenRequests</td></tr><tr><td>102</td><td>UnassignedRequests</td></tr><tr><td>103</td><td>Hotlist</td></tr><tr><td>111</td><td>StatusScreen</td></tr></tbody></table>\n"
   syntax: 
-    content: GetStatistics()
-    parameters:
+    content: CRMScript.NetServer.NSStatisticsDataSet[] GetStatistics(Integer[] functions)
+    parameters: 
+    - id: functions
+      type: CRMScript.Global.Integer
+      description: List of functions to calculate and return
+    return:
+      type: CRMScript.NetServer.NSStatisticsDataSet[]
+      description: Array of StatisticsDataSet
   example: 
-  - "\n<pre><code>NSCustomerServiceAgent agent;\nNSStatusScreenPanelType[] functions;\nNSStatisticsDataSet[] res = agent.GetStatistics(functions);</code></pre>\n"
+  - "\n<pre><code>NSCustomerServiceAgent agent;\nInteger[] functions;\nNSStatisticsDataSet[] res = agent.GetStatistics(functions);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCustomerServiceAgent.HasChatNotify()
   commentId: M:CRMScript.NetServer.NSCustomerServiceAgent.HasChatNotify()
   id: 'HasChatNotify()'
@@ -518,31 +557,16 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSCustomerServiceAgent.HasChatNotify()
   fullName: CRMScript.NetServer.NSCustomerServiceAgent.HasChatNotify()
   type: Method
-  summary: "\nCheck if user has any chat notification<p></p>\n<strong>Returns:</strong>True if the user has at least one notification setting on<p></p>\n<pre><code>NSCustomerServiceAgent agent;\nBool res = agent.HasChatNotify();</code></pre>\n"
+  summary: "\nChecks if user has any chat notification\n"
   remarks: 
   syntax: 
     content: Bool HasChatNotify()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Bool
+      description:
   example: 
   - "\n<pre><code>NSCustomerServiceAgent agent;\nBool res = agent.HasChatNotify();</code></pre>\n"
-- uid: CRMScript.NetServer.NSCustomerServiceAgent.#ctor
-  commentId: M:CRMScript.NetServer.NSCustomerServiceAgent.#ctor
-  id: '#ctor'
-  so.intellisense: Void.NSCustomerServiceAgent
-  langs:
-  - crmscript
-  name: '#ctor'
-  nameWithType: NSCustomerServiceAgent.#ctor
-  fullName: CRMScript.NetServer.NSCustomerServiceAgent.#ctor
-  type: Constructor
-  summary: "\nAgent used for Customer Service methods.\n"
-  remarks: 
-  syntax: 
-    content: NSCustomerServiceAgent
-  example: 
-  - "\n<pre><code>NSCustomerServiceAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCustomerServiceAgent.RemoveSession(Integer)
   commentId: M:CRMScript.NetServer.NSCustomerServiceAgent.RemoveSession(Integer)
   id: 'RemoveSession(Integer)'
@@ -553,7 +577,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSCustomerServiceAgent.RemoveSession(Integer)
   fullName: CRMScript.NetServer.NSCustomerServiceAgent.RemoveSession(Integer)
   type: Method
-  summary: "\nRemove a login session for a CS user\n"
+  summary: "\nRemoves a login session for a Service user\n"
   remarks: 
   syntax: 
     content: Void RemoveSession(Integer loginId)
@@ -574,7 +598,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSCustomerServiceAgent.SaveAllCustomerCenterConfigs(NSCustomerCenterConfig[])
   fullName: CRMScript.NetServer.NSCustomerServiceAgent.SaveAllCustomerCenterConfigs(NSCustomerCenterConfig[])
   type: Method
-  summary: "\nSave an array of NSCustomerCenterConfig entities to the database\n"
+  summary: "\nSaves an array of NSCustomerCenterConfig entities to the database\n"
   remarks: 
   syntax: 
     content: Void SaveAllCustomerCenterConfigs(NSCustomerCenterConfig[] custConfigs)
@@ -596,35 +620,40 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSCustomerServiceAgent.SaveCustomerCenterConfig(NSCustomerCenterConfig)
   fullName: CRMScript.NetServer.NSCustomerServiceAgent.SaveCustomerCenterConfig(NSCustomerCenterConfig)
   type: Method
-  summary: "\nUpdates the existing NSCustomerCenterConfig or creates a new NSCustomerCenterConfig if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>customerCenterConfig</strong>The NSCustomerCenterConfig to save.</li></ul><strong>Returns:</strong>NSCustomerCenterConfig<p></p>\n<pre><code>NSCustomerService  agent;\nNSCustomerCenterConfig thing = agent.CreateDefaultCustomerCenterConfig();\nthing = agent.SaveCustomerCenterConfig(thing);</code></pre>\n"
+  summary: "\nUpdates the existing NSCustomerCenterConfig or creates a new NSCustomerCenterConfig if the id parameter is 0\n"
   remarks: 
   syntax: 
     content: NSCustomerCenterConfig SaveCustomerCenterConfig(NSCustomerCenterConfig customerCenterConfig)
     parameters:
     - id: customerCenterConfig
       type: CRMScript.NetServer.NSCustomerCenterConfig
-      description: 
+      description: The NSCustomerCenterConfig to save.
     return:
       type: CRMScript.NetServer.NSCustomerCenterConfig
+      description:
   example: 
   - "\n<pre><code>NSCustomerService  agent;\nNSCustomerCenterConfig thing = agent.CreateDefaultCustomerCenterConfig();\nthing = agent.SaveCustomerCenterConfig(thing);</code></pre>\n"
-- uid: CRMScript.NetServer.NSCustomerServiceAgent.SaveMailboxEntity()
-  commentId: M:CRMScript.NetServer.NSCustomerServiceAgent.SaveMailboxEntity()
-  id: 'SaveMailboxEntity()'
+- uid: CRMScript.NetServer.NSCustomerServiceAgent.SaveMailboxEntity(NSMailboxEntity)
+  commentId: M:CRMScript.NetServer.NSCustomerServiceAgent.SaveMailboxEntity(NSMailboxEntity)
+  id: 'SaveMailboxEntity(NSMailboxEntity)'
   so.intellisense: NSCustomerServiceAgent.SaveMailboxEntity
   langs:
   - crmscript
-  name: 'SaveMailboxEntity()'
-  nameWithType: NSCustomerServiceAgent.SaveMailboxEntity()
-  fullName: CRMScript.NetServer.NSCustomerServiceAgent.SaveMailboxEntity()
+  name: 'SaveMailboxEntity(NSMailboxEntity)'
+  nameWithType: NSCustomerServiceAgent.SaveMailboxEntity(NSMailboxEntity)
+  fullName: CRMScript.NetServer.NSCustomerServiceAgent.SaveMailboxEntity(NSMailboxEntity)
   type: Method
-  summary: "\nUpdates the existing NSMailboxEntity or creates a new NSMailboxEntity if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>mailboxEntity</strong>The NSMailboxEntity to save.</li></ul><strong>Returns:</strong>NSMailboxEntity<p></p>\n<pre><code>NSCustomerService  agent;\nNSMailboxEntity thing = agent.CreateDefaultMailboxEntity();\nthing = agent.SaveMailboxEntity(thing);</code></pre>\n"
+  summary: "\nUpdates the existing NSMailboxEntity or creates a new NSMailboxEntity if the ID parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>mailboxEntity</strong>The NSMailboxEntity to save.\n"
   remarks: 
   syntax: 
     content: NSMailboxEntity SaveMailboxEntity(NSMailboxEntity mailboxEntity)
     parameters:
+    - id: mailboxEntity
+      type: CRMScript.NetServer.NSMailboxEntity
+      description:
     return:
       type: CRMScript.NetServer.NSMailboxEntity
+      description:
   example: 
   - "\n<pre><code>NSCustomerService  agent;\nNSMailboxEntity thing = agent.CreateDefaultMailboxEntity();\nthing = agent.SaveMailboxEntity(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCustomerServiceAgent.SaveSmsConfig(NSSmsConfig)
@@ -637,7 +666,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSCustomerServiceAgent.SaveSmsConfig(NSSmsConfig)
   fullName: CRMScript.NetServer.NSCustomerServiceAgent.SaveSmsConfig(NSSmsConfig)
   type: Method
-  summary: "\nUpdates the existing NSSmsConfig or creates a new NSSmsConfig if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>smsConfig</strong>The NSSmsConfig to save.</li></ul><strong>Returns:</strong>NSSmsConfig<p></p>\n<pre><code>NSCustomerService  agent;\nNSSmsConfig thing = agent.CreateDefaultSmsConfig();\nthing = agent.SaveSmsConfig(thing);</code></pre>\n"
+  summary: "\nUpdates the existing NSSmsConfig or creates a new NSSmsConfig if the ID parameter is 0\n"
   remarks: 
   syntax: 
     content: NSSmsConfig SaveSmsConfig(NSSmsConfig smsConfig)
@@ -647,6 +676,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
       description: 
     return:
       type: CRMScript.NetServer.NSSmsConfig
+      description:
   example: 
   - "\n<pre><code>NSCustomerService  agent;\nNSSmsConfig thing = agent.CreateDefaultSmsConfig();\nthing = agent.SaveSmsConfig(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCustomerServiceAgent.SessionIsValid(String)
@@ -659,7 +689,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSCustomerServiceAgent.SessionIsValid(String)
   fullName: CRMScript.NetServer.NSCustomerServiceAgent.SessionIsValid(String)
   type: Method
-  summary: "\nCheck if a CS session is valid\n"
+  summary: "\nChecks if a Service session is valid\n"
   remarks: 
   syntax: 
     content: Bool SessionIsValid(String csSessionKey)
@@ -669,6 +699,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
       description: 
     return:
       type: CRMScript.Global.Bool
+      description:
   example: 
   - "\n<pre><code>NSCustomerServiceAgent agent;\nString csSessionKey;\nBool res = agent.SessionIsValid(csSessionKey);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCustomerServiceAgent.TestSmtpServer(String,String,Bool)
@@ -681,7 +712,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSCustomerServiceAgent.TestSmtpServer(String,String,Bool)
   fullName: CRMScript.NetServer.NSCustomerServiceAgent.TestSmtpServer(String,String,Bool)
   type: Method
-  summary: "\ndo a test of a SMTP account, by sending an email to a special @superoffice.com account\n"
+  summary: "\nTests an SMTP account, by sending an email to a special @superoffice.com account\n"
   remarks: 
   syntax: 
     content: NSSmtpTestResult TestSmtpServer(String smtpUri, String from, Bool useStoredPassword)
@@ -697,23 +728,27 @@ NetServer calculates default values (for example, Country) on the entity, which 
       description: 
     return:
       type: CRMScript.NetServer.NSSmtpTestResult
+      description:
   example: 
   - "\n<pre><code>NSCustomerServiceAgent agent;\nString smtpUri;\nString from;\nBool useStoredPassword;\nNSSmtpTestResult res = agent.TestSmtpServer(smtpUri, from, useStoredPassword);</code></pre>\n"
-- uid: CRMScript.NetServer.NSCustomerServiceAgent.UpdateFeatureToggles()
-  commentId: M:CRMScript.NetServer.NSCustomerServiceAgent.UpdateFeatureToggles()
-  id: 'UpdateFeatureToggles()'
+- uid: CRMScript.NetServer.NSCustomerServiceAgent.UpdateFeatureToggles(CsFeatureToggle[])
+  commentId: M:CRMScript.NetServer.NSCustomerServiceAgent.UpdateFeatureToggles(CsFeatureToggle[])
+  id: 'UpdateFeatureToggles(CsFeatureToggle[])'
   so.intellisense: NSCustomerServiceAgent.UpdateFeatureToggles
   langs:
   - crmscript
-  name: 'UpdateFeatureToggles()'
-  nameWithType: NSCustomerServiceAgent.UpdateFeatureToggles()
-  fullName: CRMScript.NetServer.NSCustomerServiceAgent.UpdateFeatureToggles()
+  name: 'UpdateFeatureToggles(CsFeatureToggle[])'
+  nameWithType: NSCustomerServiceAgent.UpdateFeatureToggles(CsFeatureToggle[])
+  fullName: CRMScript.NetServer.NSCustomerServiceAgent.UpdateFeatureToggles(CsFeatureToggle[])
   type: Method
-  summary: "\nUpdate the cached FeatureToggles for CS\n"
+  summary: "\nUpdates the cached FeatureToggles for Service\n"
   remarks: 
   syntax: 
     content: Void UpdateFeatureToggles(CsFeatureToggle[] featureToggles)
     parameters:
+    - id: featureToggles
+      type: CRMScript.NetServer.CsFeatureToggle[]
+      description: 
     return:
       type: CRMScript.Global.Void
   example: 
@@ -896,3 +931,9 @@ references:
   name: NSSmtpTestResult
   nameWithType: NSSmtpTestResult
   fullName: CRMScript.NetServer.NSSmtpTestResult
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void

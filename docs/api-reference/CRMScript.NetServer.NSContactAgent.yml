@@ -459,7 +459,7 @@ items:
       description: The type of action that has occurred. For example, updates, deletes, new appointments
     - id: actionType
       type: CRMScript.Global.Integer
-      description: See enum actionType.
+      description: See <xref href=\"CRMScript.NetServer.ContactAction\" data-throw-if-not-resolved=\"false\"></xref>. 
     return:
       type: CRMScript.NetServer.NSContactActivity[]
       description: Array of contacts where there have been activity in the period.
@@ -535,13 +535,13 @@ items:
   fullName: CRMScript.NetServer.NSContactAgent.GetMyRecentContacts(Integer)
   type: Method
   summary: "\nMethod that returns a set of initial contacts.\n"
-  remarks: "\n This could be the contacts in a favorites selection, the history list, the diary, or from all sources. If retrieved from the diary it will get appointments for the current and the next day.\n"
+  remarks: "\nThis could be the contacts in a favorites selection, the history list, the diary, or from all sources. If retrieved from the diary it will get appointments for the current and the next day.\n"
   syntax: 
     content: NSContact[] GetMyRecentContacts(Integer sourceType)
     parameters:
     - id: sourceType
       type: CRMScript.Global.Integer
-      description: The source where the contacts are retrieved from (Favorites, History, Diary). See enum sourceType.
+      description: The source where the contacts are retrieved from (Favorites, History, Diary). See <xref href=\"CRMScript.NetServer.ContactSourceType\" data-throw-if-not-resolved=\"false\"></xref>.
     return:
       type: CRMScript.NetServer.NSContact[]
       description: Array of contacts
@@ -1007,3 +1007,15 @@ references:
   name: Void
   nameWithType: Void
   fullName: CRMScript.Global.Void
+- uid: CRMScript.NetServer.ContactAction
+  commentId: T:CRMScript.NetServer.ContactAction
+  isExternal: true
+  name: ContactAction
+  nameWithType: ContactAction
+  fullName: CRMScript.NetServer.ContactAction
+- uid: CRMScript.NetServer.ContactSourceType
+  commentId: T:CRMScript.NetServer.ContactSourceType
+  isExternal: true
+  name: ContactSourceType
+  nameWithType: ContactSourceType
+  fullName: CRMScript.NetServer.ContactSourceType

@@ -124,7 +124,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSReportAgent.DeleteReport(Integer)
   fullName: CRMScript.NetServer.NSReportAgent.DeleteReport(Integer)
   type: Method
-  summary: "\nDelete the report with the given id<p></p>\n<ul><li><strong>ReportId</strong>The ID of the report to delete</li></ul><strong>Returns:</strong>Bool<p></p>\n<pre><code>NSReportAgent agent;\nInteger reportId;\nBool res = agent.DeleteReport(reportId);</code></pre>\n"
+  summary: "\nDelete the report with the given id<p></p>\n<ul><li><strong>ReportId</strong>The ID of the report to delete</li></ul>\n"
   remarks: 
   syntax: 
     content: Bool DeleteReport(Integer reportId)
@@ -166,7 +166,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSReportAgent.GenerateReport(Integer,Integer,String,String,String)
   fullName: CRMScript.NetServer.NSReportAgent.GenerateReport(Integer,Integer,String,String,String)
   type: Method
-  summary: "\nGenerates the report in PDF format<p></p>\n<ul><li><strong>ReportId</strong>The ID of the report.</li><li><strong>labelLayoutId</strong>The ID of the labellayout. Use 0 if the report isn't of type label.</li><li><strong>filename</strong>Filename of the report.</li><li><strong>language</strong>Language to use when generating the report.</li><li><strong>fileType</strong></li><li><strong>restrictions</strong>Use restrictions to provide additional restrictions when generating the report.</li></ul><strong>Returns:</strong>String<p></p>\n<pre><code>NSReportAgent agent;\nInteger reportId;\nInteger labelLayoutId;\nString filename;\nString language;\nString fileType;\nNSArchiveRestrictionInfo[] restrictions;\nString res = agent.GenerateReport(reportId, labelLayoutId, filename, language, fileType, restrictions);</code></pre>\n"
+  summary: "\nGenerates the report in PDF format<p></p>\n<ul><li><strong>ReportId</strong>The ID of the report.</li><li><strong>labelLayoutId</strong>The ID of the labellayout. Use 0 if the report isn't of type label.</li><li><strong>filename</strong>Filename of the report.</li><li><strong>language</strong>Language to use when generating the report.</li><li><strong>fileType</strong></li><li><strong>restrictions</strong>Use restrictions to provide additional restrictions when generating the report.</li></ul>\n"
   remarks: 
   syntax: 
     content: String GenerateReport(Integer reportId, Integer labelLayoutId, String filename, String language, String fileType, NSArchiveRestrictionInfo[] restrictions)
@@ -200,7 +200,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSReportAgent.GetReportEntity(Integer)
   fullName: CRMScript.NetServer.NSReportAgent.GetReportEntity(Integer)
   type: Method
-  summary: "\nGets an NSReportEntity object.<p></p>\n<ul><li><strong>ReportEntityId</strong>The identifier of the NSReportEntity object</li></ul><strong>Returns:</strong>NSReportEntity<p></p>\n<pre><code>NSReportAgent agent;\nNSReportEntity thing = agent.GetReportEntity(123);</code></pre>\n"
+  summary: "\nGets an NSReportEntity object.<p></p>\n<ul><li><strong>ReportEntityId</strong>The identifier of the NSReportEntity object</li></ul>\n"
   remarks: 
   syntax: 
     content: NSReportEntity GetReportEntity(Integer reportEntityId)
@@ -222,7 +222,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSReportAgent.GetReportLabelLayoutEntity(Integer)
   fullName: CRMScript.NetServer.NSReportAgent.GetReportLabelLayoutEntity(Integer)
   type: Method
-  summary: "\nGets an NSReportLabelLayoutEntity object.<p></p>\n<ul><li><strong>ReportLabelLayoutEntityId</strong>The identifier of the NSReportLabelLayoutEntity object</li></ul><strong>Returns:</strong>NSReportLabelLayoutEntity<p></p>\n<pre><code>NSReportAgent agent;\nNSReportLabelLayoutEntity thing = agent.GetReportLabelLayoutEntity(123);</code></pre>\n"
+  summary: "\nGets an NSReportLabelLayoutEntity object.<p></p>\n<ul><li><strong>ReportLabelLayoutEntityId</strong>The identifier of the NSReportLabelLayoutEntity object</li></ul>\n"
   remarks: 
   syntax: 
     content: NSReportLabelLayoutEntity GetReportLabelLayoutEntity(Integer reportLabelLayoutEntityId)
@@ -244,7 +244,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSReportAgent.ImportReport(String)
   fullName: CRMScript.NetServer.NSReportAgent.ImportReport(String)
   type: Method
-  summary: "\nTakes the input stream and create a report. This stream must be on a valid xml format<p></p>\n<ul><li><strong>Report</strong>The report to import in a correct xml format</li></ul><strong>Returns:</strong>Integer<p></p>\n<pre><code>NSReportAgent agent;\nString report;\nInteger res = agent.ImportReport(report);</code></pre>\n"
+  summary: "\nTakes the input stream and create a report. This stream must be on a valid xml format<p></p>\n<ul><li><strong>Report</strong>The report to import in a correct xml format</li></ul>\n"
   remarks: 
   syntax: 
     content: Integer ImportReport(String report)
@@ -282,7 +282,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSReportAgent.SaveReportEntity(NSReportEntity)
   fullName: CRMScript.NetServer.NSReportAgent.SaveReportEntity(NSReportEntity)
   type: Method
-  summary: "\nUpdates the existing NSReportEntity or creates a new NSReportEntity if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>reportEntity</strong>The NSReportEntity to save.</li></ul><strong>Returns:</strong>NSReportEntity<p></p>\n<pre><code>NSReport  agent;\nNSReportEntity thing = agent.CreateDefaultReportEntity();\nthing = agent.SaveReportEntity(thing);</code></pre>\n"
+  summary: "\nUpdates the existing NSReportEntity or creates a new NSReportEntity if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>reportEntity</strong>The NSReportEntity to save.</li></ul>\n"
   remarks: 
   syntax: 
     content: NSReportEntity SaveReportEntity(NSReportEntity reportEntity)
@@ -321,7 +321,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSReportAgent.UpdateFavorite(NSReportEntity)
   fullName: CRMScript.NetServer.NSReportAgent.UpdateFavorite(NSReportEntity)
   type: Method
-  summary: "\nUpdates the favorite.<p></p>\n<ul><li><strong>ReportEntity</strong>ReportEntity carrier containg updated data.</li></ul><strong>Returns:</strong>NSReportEntity<p></p>\n<pre><code>NSReportAgent agent;\nNSReportEntity reportEntity;\nNSReportEntity res = agent.UpdateFavorite(reportEntity);</code></pre>\n"
+  summary: "\nUpdates the favorite.<p></p>\n<ul><li><strong>ReportEntity</strong>ReportEntity carrier containg updated data.</li></ul>\n"
   remarks: 
   syntax: 
     content: NSReportEntity UpdateFavorite(NSReportEntity reportEntity)

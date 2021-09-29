@@ -36,7 +36,7 @@ items:
   remarks: 
   syntax: 
     content: String GetDefaultSmsCountry()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -55,7 +55,7 @@ items:
   remarks: 
   syntax: 
     content: String GetNetServerSmsProvider()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -74,7 +74,7 @@ items:
   remarks: 
   syntax: 
     content: StringDictionary GetNsPluginConfig()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.StringDictionary
   example: 
@@ -93,7 +93,7 @@ items:
   remarks: 
   syntax: 
     content: String GetNsPluginSender()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -126,7 +126,7 @@ items:
   summary: "\nPhone prefix, will default to the current users HomeCountryId.\n"
   remarks: 
   syntax: 
-    content: SetDefaultSmsCountry(String defaultSmsCountry)
+    content: Void SetDefaultSmsCountry(String defaultSmsCountry)
     parameters:
     - id: defaultSmsCountry
       type: CRMScript.Global.String
@@ -146,7 +146,7 @@ items:
   summary: "\nName of the selected provider, i.e. CM, Compaya SMS (cpsms.dk), Intelecom SMS, PSWinCom SMS, SMS Teknik or TXTLocal.\n"
   remarks: 
   syntax: 
-    content: SetNetServerSmsProvider(String netServerSmsProvider)
+    content: Void SetNetServerSmsProvider(String netServerSmsProvider)
     parameters:
     - id: netServerSmsProvider
       type: CRMScript.Global.String
@@ -166,7 +166,7 @@ items:
   summary: "\nConfiguration settings provided by the SMS provider. Typically contains newline-delimited settings such as username and password.\n"
   remarks: 
   syntax: 
-    content: SetNsPluginConfig(StringDictionary nsPluginConfig)
+    content: Void SetNsPluginConfig(StringDictionary nsPluginConfig)
     parameters:
   example: 
   - "\n<pre><code>NSSmsConfig thing;\nStringDictionary nsPluginConfig;\nthing.SetNsPluginConfig(nsPluginConfig);</code></pre>\n"
@@ -183,7 +183,7 @@ items:
   summary: "\nThe sender of the SMS messages. This text will appear on the recipient's mobile phone.\n"
   remarks: 
   syntax: 
-    content: SetNsPluginSender(String nsPluginSender)
+    content: Void SetNsPluginSender(String nsPluginSender)
     parameters:
     - id: nsPluginSender
       type: CRMScript.Global.String
@@ -209,3 +209,9 @@ references:
   name: StringDictionary
   nameWithType: StringDictionary
   fullName: CRMScript.Global.StringDictionary
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void

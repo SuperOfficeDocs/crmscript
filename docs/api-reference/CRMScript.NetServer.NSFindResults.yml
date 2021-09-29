@@ -34,7 +34,7 @@ items:
   remarks: 
   syntax: 
     content: NSArchiveColumnInfo[] GetArchiveColumns()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.NetServer.NSArchiveColumnInfo[]
   example: 
@@ -53,7 +53,7 @@ items:
   remarks: 
   syntax: 
     content: NSArchiveListItem[] GetArchiveRows()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.NetServer.NSArchiveListItem[]
   example: 
@@ -72,7 +72,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetRowCount()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -105,7 +105,7 @@ items:
   summary: "\nArray of ColumnInfo column specifications\n"
   remarks: 
   syntax: 
-    content: SetArchiveColumns(NSArchiveColumnInfo[] archiveColumns)
+    content: Void SetArchiveColumns(NSArchiveColumnInfo[] archiveColumns)
     parameters:
   example: 
   - "\n<pre><code>NSFindResults thing;\nNSArchiveColumnInfo[] archiveColumns;\nthing.SetArchiveColumns(archiveColumns);</code></pre>\n"
@@ -122,7 +122,7 @@ items:
   summary: "\nArray of archive list items, i.e., the service layer carrier for archive rows. These are the find results, represented as archive rows\n"
   remarks: 
   syntax: 
-    content: SetArchiveRows(NSArchiveListItem[] archiveRows)
+    content: Void SetArchiveRows(NSArchiveListItem[] archiveRows)
     parameters:
   example: 
   - "\n<pre><code>NSFindResults thing;\nNSArchiveListItem[] archiveRows;\nthing.SetArchiveRows(archiveRows);</code></pre>\n"
@@ -139,7 +139,7 @@ items:
   summary: "\nCount of rows, independent of paging. If you order up page 1 with page size 50, the row count may still be 279, that being the number of rows that would have been returned in a  paging-off situation\n"
   remarks: 
   syntax: 
-    content: SetRowCount(Integer rowCount)
+    content: Void SetRowCount(Integer rowCount)
     parameters:
     - id: rowCount
       type: CRMScript.Global.Integer
@@ -199,3 +199,9 @@ references:
   name: Integer
   nameWithType: Integer
   fullName: CRMScript.Global.Integer
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void

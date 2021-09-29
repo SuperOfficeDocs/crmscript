@@ -44,7 +44,7 @@ items:
   remarks: 
   syntax: 
     content: Bool GetBlockExecution()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Bool
   example: 
@@ -63,7 +63,7 @@ items:
   remarks: 
   syntax: 
     content: String GetException()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -82,7 +82,7 @@ items:
   remarks: 
   syntax: 
     content: StringDictionary GetInputValues()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.StringDictionary
   example: 
@@ -101,7 +101,7 @@ items:
   remarks: 
   syntax: 
     content: String GetMessage()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -120,7 +120,7 @@ items:
   remarks: 
   syntax: 
     content: String GetNavigateTo()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -139,7 +139,7 @@ items:
   remarks: 
   syntax: 
     content: StringDictionary GetOutputValues()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.StringDictionary
   example: 
@@ -158,7 +158,7 @@ items:
   remarks: 
   syntax: 
     content: StringDictionary GetStateValues()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.StringDictionary
   example: 
@@ -177,7 +177,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetType()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -210,7 +210,7 @@ items:
   summary: "\nWhether the context should stop what it is doing, e.g. saving a sale\n"
   remarks: 
   syntax: 
-    content: SetBlockExecution(Bool blockExecution)
+    content: Void SetBlockExecution(Bool blockExecution)
     parameters:
     - id: blockExecution
       type: CRMScript.Global.Bool
@@ -230,7 +230,7 @@ items:
   summary: "\nString containing error message from handler system if it failed\n"
   remarks: 
   syntax: 
-    content: SetException(String exception)
+    content: Void SetException(String exception)
     parameters:
     - id: exception
       type: CRMScript.Global.String
@@ -250,7 +250,7 @@ items:
   summary: "\nEnvironment values sent to the event handler\n"
   remarks: 
   syntax: 
-    content: SetInputValues(StringDictionary inputValues)
+    content: Void SetInputValues(StringDictionary inputValues)
     parameters:
   example: 
   - "\n<pre><code>NSEventData thing;\nStringDictionary inputValues;\nthing.SetInputValues(inputValues);</code></pre>\n"
@@ -267,7 +267,7 @@ items:
   summary: "\nA message to be presented to the user\n"
   remarks: 
   syntax: 
-    content: SetMessage(String message)
+    content: Void SetMessage(String message)
     parameters:
     - id: message
       type: CRMScript.Global.String
@@ -287,7 +287,7 @@ items:
   summary: "\nWhere the context should naviate afterwards\n"
   remarks: 
   syntax: 
-    content: SetNavigateTo(String navigateTo)
+    content: Void SetNavigateTo(String navigateTo)
     parameters:
     - id: navigateTo
       type: CRMScript.Global.String
@@ -307,7 +307,7 @@ items:
   summary: "\nValues sent back to the environment from the event handler\n"
   remarks: 
   syntax: 
-    content: SetOutputValues(StringDictionary outputValues)
+    content: Void SetOutputValues(StringDictionary outputValues)
     parameters:
   example: 
   - "\n<pre><code>NSEventData thing;\nStringDictionary outputValues;\nthing.SetOutputValues(outputValues);</code></pre>\n"
@@ -324,7 +324,7 @@ items:
   summary: "\nValues kept between event handlers\n"
   remarks: 
   syntax: 
-    content: SetStateValues(StringDictionary stateValues)
+    content: Void SetStateValues(StringDictionary stateValues)
     parameters:
   example: 
   - "\n<pre><code>NSEventData thing;\nStringDictionary stateValues;\nthing.SetStateValues(stateValues);</code></pre>\n"
@@ -341,7 +341,7 @@ items:
   summary: "\nThe type of event we are triggered by\n"
   remarks: "\n<p>See enum type.</p>\n"
   syntax: 
-    content: SetType(Integer type)
+    content: Void SetType(Integer type)
     parameters:
     - id: type
       type: CRMScript.Global.Integer
@@ -379,3 +379,9 @@ references:
   name: Integer
   nameWithType: Integer
   fullName: CRMScript.Global.Integer
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void

@@ -58,7 +58,7 @@ items:
   remarks: 
   syntax: 
     content: Bool GetAllAccess()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Bool
   example: 
@@ -77,7 +77,7 @@ items:
   remarks: 
   syntax: 
     content: Integer[] GetAssociateAccessIds()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer[]
   example: 
@@ -96,7 +96,7 @@ items:
   remarks: 
   syntax: 
     content: String GetConnectorName()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -115,7 +115,7 @@ items:
   remarks: 
   syntax: 
     content: Bool GetDeleted()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Bool
   example: 
@@ -134,7 +134,7 @@ items:
   remarks: 
   syntax: 
     content: String GetDisplayDescription()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -153,7 +153,7 @@ items:
   remarks: 
   syntax: 
     content: String GetDisplayName()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -172,7 +172,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetErpConnectionId()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -191,7 +191,7 @@ items:
   remarks: 
   syntax: 
     content: String GetERPName()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -210,7 +210,7 @@ items:
   remarks: 
   syntax: 
     content: String GetExtraData()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -229,7 +229,7 @@ items:
   remarks: 
   syntax: 
     content: NSPluginResponse GetInitializeResponse()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.NetServer.NSPluginResponse
   example: 
@@ -248,7 +248,7 @@ items:
   remarks: 
   syntax: 
     content: Bool GetIsAvailable()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Bool
   example: 
@@ -267,7 +267,7 @@ items:
   remarks: 
   syntax: 
     content: NSPriceList[] GetPriceLists()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.NetServer.NSPriceList[]
   example: 
@@ -286,7 +286,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetQuoteConnectionId()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -305,7 +305,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetRank()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -324,7 +324,7 @@ items:
   remarks: 
   syntax: 
     content: Integer[] GetUserGroupAccessIds()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer[]
   example: 
@@ -357,7 +357,7 @@ items:
   summary: "\nIs this connection accessible to everyone?  If not, then the QuoteConnectionAccess table tells us who can access it.\n"
   remarks: 
   syntax: 
-    content: SetAllAccess(Bool allAccess)
+    content: Void SetAllAccess(Bool allAccess)
     parameters:
     - id: allAccess
       type: CRMScript.Global.Bool
@@ -377,7 +377,7 @@ items:
   summary: "\nArray of ids containing associates that will have access to this connection.\n"
   remarks: 
   syntax: 
-    content: SetAssociateAccessIds(Integer[] associateAccessIds)
+    content: Void SetAssociateAccessIds(Integer[] associateAccessIds)
     parameters:
     - id: associateAccessIds
       type: CRMScript.Global.Integer[]
@@ -397,7 +397,7 @@ items:
   summary: "\nProgrammatic name of the Connector plugin that implements this kind of connection\n"
   remarks: 
   syntax: 
-    content: SetConnectorName(String connectorName)
+    content: Void SetConnectorName(String connectorName)
     parameters:
     - id: connectorName
       type: CRMScript.Global.String
@@ -417,7 +417,7 @@ items:
   summary: "\nIf set, then this is a row that has been 'deleted'; we do not physically delete rows to avoid disaster.\n"
   remarks: 
   syntax: 
-    content: SetDeleted(Bool deleted)
+    content: Void SetDeleted(Bool deleted)
     parameters:
     - id: deleted
       type: CRMScript.Global.Bool
@@ -437,7 +437,7 @@ items:
   summary: "\nTooltip/description shown to user; multi-language support. Any other info available that would make an uncertain user chose the right connector. Typically, used for tooltip.\n"
   remarks: 
   syntax: 
-    content: SetDisplayDescription(String displayDescription)
+    content: Void SetDisplayDescription(String displayDescription)
     parameters:
     - id: displayDescription
       type: CRMScript.Global.String
@@ -457,7 +457,7 @@ items:
   summary: "\nConnection name shown to user; multi-language support. The name of the connector to display in a list so that the users can choose between them. Typically the name of the client, with maybe the ERP system in parenthesis.\n"
   remarks: 
   syntax: 
-    content: SetDisplayName(String displayName)
+    content: Void SetDisplayName(String displayName)
     parameters:
     - id: displayName
       type: CRMScript.Global.String
@@ -477,7 +477,7 @@ items:
   summary: "\nThe ERP Connection that this Quote connection is an extension of\n"
   remarks: 
   syntax: 
-    content: SetErpConnectionId(Integer erpConnectionId)
+    content: Void SetErpConnectionId(Integer erpConnectionId)
     parameters:
     - id: erpConnectionId
       type: CRMScript.Global.Integer
@@ -497,7 +497,7 @@ items:
   summary: "\nName of the ERP system (programmatic).\n"
   remarks: 
   syntax: 
-    content: SetERPName(String eRPName)
+    content: Void SetERPName(String eRPName)
     parameters:
     - id: eRPName
       type: CRMScript.Global.String
@@ -517,7 +517,7 @@ items:
   summary: "\nOptional extra data, in XML format, for configuring the connector. Connector-specific!\n"
   remarks: 
   syntax: 
-    content: SetExtraData(String extraData)
+    content: Void SetExtraData(String extraData)
     parameters:
     - id: extraData
       type: CRMScript.Global.String
@@ -537,7 +537,7 @@ items:
   summary: "\nStatus and Error message when the system called the connector Initialize method. Null if the connector has not been initialized yet.\n"
   remarks: 
   syntax: 
-    content: SetInitializeResponse(NSPluginResponse initializeResponse)
+    content: Void SetInitializeResponse(NSPluginResponse initializeResponse)
     parameters:
     - id: initializeResponse
       type: CRMScript.NetServer.NSPluginResponse
@@ -557,7 +557,7 @@ items:
   summary: "\nWhether or not the specified connection is available. Typically, without network access the availability is false.\n"
   remarks: 
   syntax: 
-    content: SetIsAvailable(Bool isAvailable)
+    content: Void SetIsAvailable(Bool isAvailable)
     parameters:
     - id: isAvailable
       type: CRMScript.Global.Bool
@@ -577,7 +577,7 @@ items:
   summary: "\nThe PriceLists that this connection offers.\n"
   remarks: 
   syntax: 
-    content: SetPriceLists(NSPriceList[] priceLists)
+    content: Void SetPriceLists(NSPriceList[] priceLists)
     parameters:
     - id: priceLists
       type: CRMScript.NetServer.NSPriceList[]
@@ -597,7 +597,7 @@ items:
   summary: "\nPrimary key\n"
   remarks: 
   syntax: 
-    content: SetQuoteConnectionId(Integer quoteConnectionId)
+    content: Void SetQuoteConnectionId(Integer quoteConnectionId)
     parameters:
     - id: quoteConnectionId
       type: CRMScript.Global.Integer
@@ -617,7 +617,7 @@ items:
   summary: "\nRank order\n"
   remarks: 
   syntax: 
-    content: SetRank(Integer rank)
+    content: Void SetRank(Integer rank)
     parameters:
     - id: rank
       type: CRMScript.Global.Integer
@@ -637,7 +637,7 @@ items:
   summary: "\nArray of ids containing usergroups that will have access to this connection.\n"
   remarks: 
   syntax: 
-    content: SetUserGroupAccessIds(Integer[] userGroupAccessIds)
+    content: Void SetUserGroupAccessIds(Integer[] userGroupAccessIds)
     parameters:
     - id: userGroupAccessIds
       type: CRMScript.Global.Integer[]
@@ -715,3 +715,9 @@ references:
   name: NSPriceList
   nameWithType: NSPriceList
   fullName: CRMScript.NetServer.NSPriceList
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void

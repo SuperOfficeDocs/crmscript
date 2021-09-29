@@ -46,7 +46,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetCheckedInByAssociateId()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -65,7 +65,7 @@ items:
   remarks: 
   syntax: 
     content: String GetCheckedInByName()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -84,7 +84,7 @@ items:
   remarks: 
   syntax: 
     content: DateTime GetCheckedInDate()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.DateTime
   example: 
@@ -103,7 +103,7 @@ items:
   remarks: 
   syntax: 
     content: String GetDescription()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -122,7 +122,7 @@ items:
   remarks: 
   syntax: 
     content: String GetDisplayText()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -141,7 +141,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetDocumentId()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -160,7 +160,7 @@ items:
   remarks: 
   syntax: 
     content: String GetExternalReference()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -179,7 +179,7 @@ items:
   remarks: 
   syntax: 
     content: String[] GetExtraFields()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String[]
   example: 
@@ -198,7 +198,7 @@ items:
   remarks: 
   syntax: 
     content: String GetVersionId()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -231,7 +231,7 @@ items:
   summary: "\nAssociate id of the user who performed the checkin\n"
   remarks: 
   syntax: 
-    content: SetCheckedInByAssociateId(Integer checkedInByAssociateId)
+    content: Void SetCheckedInByAssociateId(Integer checkedInByAssociateId)
     parameters:
     - id: checkedInByAssociateId
       type: CRMScript.Global.Integer
@@ -251,7 +251,7 @@ items:
   summary: "\nName (nicely formatted) of the user/person who performed the checkin\n"
   remarks: 
   syntax: 
-    content: SetCheckedInByName(String checkedInByName)
+    content: Void SetCheckedInByName(String checkedInByName)
     parameters:
     - id: checkedInByName
       type: CRMScript.Global.String
@@ -271,8 +271,8 @@ items:
   summary: "\nCRMScript method in the NSVersionInfo class that sets the date that this version was checked inThe date that this version was checked in and became official<p></p>\n<code>SetCheckedInDate(DateTime checkedInDate)</code>\n"
   remarks: 
   syntax: 
-    content: SetCheckedInDate()
-    parameters:
+    content: Void SetCheckedInDate()
+    parameters: []
   example: 
   - "\n<pre><code>NSVersionInfo thing;\nDateTime checkedInDate;\nthing.SetCheckedInDate(checkedInDate);</code></pre>\n"
 - uid: CRMScript.NetServer.NSVersionInfo.SetDescription(String)
@@ -288,7 +288,7 @@ items:
   summary: "\nArbitrary description string\n"
   remarks: 
   syntax: 
-    content: SetDescription(String description)
+    content: Void SetDescription(String description)
     parameters:
     - id: description
       type: CRMScript.Global.String
@@ -308,7 +308,7 @@ items:
   summary: "\nA short description, suitable for display in a popup menu or dropdown list of versions.\n"
   remarks: 
   syntax: 
-    content: SetDisplayText(String displayText)
+    content: Void SetDisplayText(String displayText)
     parameters:
     - id: displayText
       type: CRMScript.Global.String
@@ -328,7 +328,7 @@ items:
   summary: "\nThe document Id that uniquely identifies the document within the SuperOffice database\n"
   remarks: 
   syntax: 
-    content: SetDocumentId(Integer documentId)
+    content: Void SetDocumentId(Integer documentId)
     parameters:
     - id: documentId
       type: CRMScript.Global.Integer
@@ -348,7 +348,7 @@ items:
   summary: "\nThe document plugin's key that uniquely identifies a document; stored in the externalReference field of the document table\n"
   remarks: 
   syntax: 
-    content: SetExternalReference(String externalReference)
+    content: Void SetExternalReference(String externalReference)
     parameters:
     - id: externalReference
       type: CRMScript.Global.String
@@ -368,7 +368,7 @@ items:
   summary: "\nPrivate metadata, owned by the document plugin. This set of metadata is related directly to the version that this VersioNinfo structure describes; metadata related to the document as a whole is retrieved using the SuperOffice.CRM.Documents.IDocumentPlugin2.LoadMetaData method.  The string should be formatted like a query string, i.e., name1=value1&amp;name2=value2...* this format, instead of a string/string dictionary avoids serialization problems, even though it is somewhat less efficient\n"
   remarks: 
   syntax: 
-    content: SetExtraFields(String[] extraFields)
+    content: Void SetExtraFields(String[] extraFields)
     parameters:
     - id: extraFields
       type: CRMScript.Global.String[]
@@ -388,7 +388,7 @@ items:
   summary: "\nThe document plugin's version id that uniquely identifies one version of a document. If versioning is not supported, this will be blank. When versioning is supported, blank values imply the latest checked-in version.\n"
   remarks: 
   syntax: 
-    content: SetVersionId(String versionId)
+    content: Void SetVersionId(String versionId)
     parameters:
     - id: versionId
       type: CRMScript.Global.String
@@ -440,3 +440,9 @@ references:
   name: String
   nameWithType: String
   fullName: CRMScript.Global.String
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void

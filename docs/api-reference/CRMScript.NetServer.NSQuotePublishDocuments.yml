@@ -44,7 +44,7 @@ items:
   remarks: 
   syntax: 
     content: String GetErrorMessage()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -63,7 +63,7 @@ items:
   remarks: 
   syntax: 
     content: String GetMailBody()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -82,7 +82,7 @@ items:
   remarks: 
   syntax: 
     content: String GetMailSubject()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -101,7 +101,7 @@ items:
   remarks: 
   syntax: 
     content: Integer[] GetQuoteAttachmentIds()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer[]
   example: 
@@ -120,7 +120,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetQuoteDocumentId()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -139,7 +139,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetQuotedProductsId()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -158,7 +158,7 @@ items:
   remarks: 
   syntax: 
     content: String GetToEmail()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -177,7 +177,7 @@ items:
   remarks: 
   syntax: 
     content: String GetToFullName()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -210,7 +210,7 @@ items:
   summary: "\nIf something went wrong, show this message and do not continue\n"
   remarks: 
   syntax: 
-    content: SetErrorMessage(String errorMessage)
+    content: Void SetErrorMessage(String errorMessage)
     parameters:
     - id: errorMessage
       type: CRMScript.Global.String
@@ -230,7 +230,7 @@ items:
   summary: "\nThe string that is the content of the mail body; this is the result of merging the mail body template with the current template variable values\n"
   remarks: 
   syntax: 
-    content: SetMailBody(String mailBody)
+    content: Void SetMailBody(String mailBody)
     parameters:
     - id: mailBody
       type: CRMScript.Global.String
@@ -250,7 +250,7 @@ items:
   summary: "\nThe string that is the mail subject; done by merging the text resource SR_QUOTE_PUBLISH_MAILHEADING with the current template variable values\n"
   remarks: 
   syntax: 
-    content: SetMailSubject(String mailSubject)
+    content: Void SetMailSubject(String mailSubject)
     parameters:
     - id: mailSubject
       type: CRMScript.Global.String
@@ -270,7 +270,7 @@ items:
   summary: "\nArray of id's of any attachments (standard + custom for this version)\n"
   remarks: 
   syntax: 
-    content: SetQuoteAttachmentIds(Integer[] quoteAttachmentIds)
+    content: Void SetQuoteAttachmentIds(Integer[] quoteAttachmentIds)
     parameters:
     - id: quoteAttachmentIds
       type: CRMScript.Global.Integer[]
@@ -290,7 +290,7 @@ items:
   summary: "\nQuote document, as PDF; may be zero if there is no document specified for the version\n"
   remarks: 
   syntax: 
-    content: SetQuoteDocumentId(Integer quoteDocumentId)
+    content: Void SetQuoteDocumentId(Integer quoteDocumentId)
     parameters:
     - id: quoteDocumentId
       type: CRMScript.Global.Integer
@@ -310,7 +310,7 @@ items:
   summary: "\nQuoted products (quote lines or confirmation lines) document, as PDF\n"
   remarks: 
   syntax: 
-    content: SetQuotedProductsId(Integer quotedProductsId)
+    content: Void SetQuotedProductsId(Integer quotedProductsId)
     parameters:
     - id: quotedProductsId
       type: CRMScript.Global.Integer
@@ -330,7 +330,7 @@ items:
   summary: "\nThe email address of the recipient, taken from the sale's person\n"
   remarks: 
   syntax: 
-    content: SetToEmail(String toEmail)
+    content: Void SetToEmail(String toEmail)
     parameters:
     - id: toEmail
       type: CRMScript.Global.String
@@ -350,7 +350,7 @@ items:
   summary: "\nThe full name of the recipient, taken from the sale's person\n"
   remarks: 
   syntax: 
-    content: SetToFullName(String toFullName)
+    content: Void SetToFullName(String toFullName)
     parameters:
     - id: toFullName
       type: CRMScript.Global.String
@@ -396,3 +396,9 @@ references:
   name: Integer
   nameWithType: Integer
   fullName: CRMScript.Global.Integer
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void

@@ -36,7 +36,7 @@ items:
   remarks: 
   syntax: 
     content: Bool GetDeleteLeftovers()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Bool
   example: 
@@ -55,7 +55,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetMasterVersion()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -74,7 +74,7 @@ items:
   remarks: 
   syntax: 
     content: NSTypicalSearch[] GetSearches()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.NetServer.NSTypicalSearch[]
   example: 
@@ -93,7 +93,7 @@ items:
   remarks: 
   syntax: 
     content: String GetSource()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -126,7 +126,7 @@ items:
   summary: "\nIf true, then any TypicalSearch records in the database that are NOT referenced in this call, should be deleted\n"
   remarks: 
   syntax: 
-    content: SetDeleteLeftovers(Bool deleteLeftovers)
+    content: Void SetDeleteLeftovers(Bool deleteLeftovers)
     parameters:
     - id: deleteLeftovers
       type: CRMScript.Global.Bool
@@ -146,7 +146,7 @@ items:
   summary: "\nThe master version number in this update, at least the highest of those in the searches, but can be higher to force an update (and delete of missing elements)\n"
   remarks: 
   syntax: 
-    content: SetMasterVersion(Integer masterVersion)
+    content: Void SetMasterVersion(Integer masterVersion)
     parameters:
     - id: masterVersion
       type: CRMScript.Global.Integer
@@ -166,7 +166,7 @@ items:
   summary: "\nThe TypicalSearch structures (including criteria) to import\n"
   remarks: 
   syntax: 
-    content: SetSearches(NSTypicalSearch[] searches)
+    content: Void SetSearches(NSTypicalSearch[] searches)
     parameters:
   example: 
   - "\n<pre><code>NSTypicalSearches thing;\nNSTypicalSearch[] searches;\nthing.SetSearches(searches);</code></pre>\n"
@@ -183,7 +183,7 @@ items:
   summary: "\nName of organization that sources and maintains this TypicalSearch. Allows for both SuperOffice and partners to maintain sets of typical searches without conflict\n"
   remarks: 
   syntax: 
-    content: SetSource(String source)
+    content: Void SetSource(String source)
     parameters:
     - id: source
       type: CRMScript.Global.String
@@ -235,3 +235,9 @@ references:
   name: String
   nameWithType: String
   fullName: CRMScript.Global.String
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void

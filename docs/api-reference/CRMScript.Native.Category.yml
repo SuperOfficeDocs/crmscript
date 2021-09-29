@@ -111,7 +111,7 @@ items:
   summary: "\nSets the value of the given field for the category.\n"
   remarks: "\nAvailable fields: parent: The ID of the parent category; name: The name of the category; externalName: The external name of the category; categoryMaster: The ID of the category master; children: A comma separated list of children IDs; notificationEmail: The value of the email Notification field\n"
   syntax: 
-    content: setValue(String name, String value)
+    content: Void SetValue(String name, String value)
     parameters:
     - id: name
       type: CRMScript.Global.String
@@ -119,6 +119,8 @@ items:
     - id: value
       type: CRMScript.Global.String
       description: The value to set.
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>Category c;\n\nc.load(2);\nc.setValue(&quot;name&quot;, &quot;Test&quot;);</code></pre>\n"
 references:

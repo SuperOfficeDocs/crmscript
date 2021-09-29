@@ -38,7 +38,7 @@ items:
   remarks: 
   syntax: 
     content: NSCrmActorType GetActorTypeCrm()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.NetServer.NSCrmActorType
   example: 
@@ -57,7 +57,7 @@ items:
   remarks: 
   syntax: 
     content: NSErpActorType GetActorTypeErp()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.NetServer.NSErpActorType
   example: 
@@ -76,7 +76,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetErpConnectionId()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -95,7 +95,7 @@ items:
   remarks: 
   syntax: 
     content: NSErpSyncFieldMapping[] GetFieldMappings()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.NetServer.NSErpSyncFieldMapping[]
   example: 
@@ -114,7 +114,7 @@ items:
   remarks: 
   syntax: 
     content: Bool GetIsActive()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Bool
   example: 
@@ -147,7 +147,7 @@ items:
   summary: "\nThe actor type (CRM side)\n"
   remarks: "\n<p>See enum actorTypeCrm.</p>\n"
   syntax: 
-    content: SetActorTypeCrm(NSCrmActorType actorTypeCrm)
+    content: Void SetActorTypeCrm(NSCrmActorType actorTypeCrm)
     parameters:
   example: 
   - "\n<pre><code>NSErpSyncActorTypeMapping thing;\nNSCrmActorType actorTypeCrm;\nthing.SetActorTypeCrm(actorTypeCrm);</code></pre>\n"
@@ -164,7 +164,7 @@ items:
   summary: "\nThe actor type (ERP side)\n"
   remarks: "\n<p>See enum actorTypeErp.</p>\n"
   syntax: 
-    content: SetActorTypeErp(NSErpActorType actorTypeErp)
+    content: Void SetActorTypeErp(NSErpActorType actorTypeErp)
     parameters:
   example: 
   - "\n<pre><code>NSErpSyncActorTypeMapping thing;\nNSErpActorType actorTypeErp;\nthing.SetActorTypeErp(actorTypeErp);</code></pre>\n"
@@ -181,7 +181,7 @@ items:
   summary: "\nPrimary key\n"
   remarks: 
   syntax: 
-    content: SetErpConnectionId(Integer erpConnectionId)
+    content: Void SetErpConnectionId(Integer erpConnectionId)
     parameters:
     - id: erpConnectionId
       type: CRMScript.Global.Integer
@@ -201,7 +201,7 @@ items:
   summary: "\nArray of individual field mappings; explicitly map to empty CrmFieldKey to indicate non-sync\n"
   remarks: 
   syntax: 
-    content: SetFieldMappings(NSErpSyncFieldMapping[9] fieldMappings)
+    content: Void SetFieldMappings(NSErpSyncFieldMapping[9] fieldMappings)
     parameters:
   example: 
   - "\n<pre><code>NSErpSyncActorTypeMapping thing;\nNSErpSyncFieldMapping[] fieldMappings;\nthing.SetFieldMappings(fieldMappings);</code></pre>\n"
@@ -218,7 +218,7 @@ items:
   summary: "\nIs this sync mapping active\n"
   remarks: 
   syntax: 
-    content: SetIsActive(Bool isActive)
+    content: Void SetIsActive(Bool isActive)
     parameters:
     - id: isActive
       type: CRMScript.Global.Bool
@@ -276,3 +276,9 @@ references:
   name: Bool
   nameWithType: Bool
   fullName: CRMScript.Global.Bool
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void

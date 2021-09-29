@@ -52,7 +52,7 @@ items:
   remarks: 
   syntax: 
     content: DateTime GetCreated()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.DateTime
   example: 
@@ -71,7 +71,7 @@ items:
   remarks: 
   syntax: 
     content: NSAssociate GetCreatedBy()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.NetServer.NSAssociate
   example: 
@@ -90,7 +90,7 @@ items:
   remarks: 
   syntax: 
     content: DataRights GetDataRights()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Native.DataRights
   example: 
@@ -109,7 +109,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetDeleted()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -128,7 +128,7 @@ items:
   remarks: 
   syntax: 
     content: String GetName()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -147,7 +147,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetRank()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -166,7 +166,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetRoleId()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -185,7 +185,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetRoleType()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -204,7 +204,7 @@ items:
   remarks: 
   syntax: 
     content: String GetTooltip()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -223,7 +223,7 @@ items:
   remarks: 
   syntax: 
     content: DateTime GetUpdated()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.DateTime
   example: 
@@ -242,7 +242,7 @@ items:
   remarks: 
   syntax: 
     content: NSAssociate GetUpdatedBy()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.NetServer.NSAssociate
   example: 
@@ -261,7 +261,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetUseCategories()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -294,7 +294,7 @@ items:
   summary: "\nRegistered when\n"
   remarks: 
   syntax: 
-    content: SetCreated(DateTime created)
+    content: Void SetCreated(DateTime created)
     parameters:
   example: 
   - "\n<pre><code>NSRoleEntity thing;\nDateTime created;\nthing.SetCreated(created);</code></pre>\n"
@@ -311,7 +311,7 @@ items:
   summary: "\nCreated by user\n"
   remarks: 
   syntax: 
-    content: SetCreatedBy(NSAssociate createdBy)
+    content: Void SetCreatedBy(NSAssociate createdBy)
     parameters:
   example: 
   - "\n<pre><code>NSRoleEntity thing;\nNSAssociate createdBy;\nthing.SetCreatedBy(createdBy);</code></pre>\n"
@@ -328,7 +328,7 @@ items:
   summary: "\nData rights matrix* defines role's access to data owned by current user, users in same group, and other users.\n"
   remarks: 
   syntax: 
-    content: SetDataRights(DataRights dataRights)
+    content: Void SetDataRights(DataRights dataRights)
     parameters:
   example: 
   - "\n<pre><code>NSRoleEntity thing;\nDataRights dataRights;\nthing.SetDataRights(dataRights);</code></pre>\n"
@@ -345,7 +345,7 @@ items:
   summary: "\n1 if role has been deleted (we do not actually delete)\n"
   remarks: 
   syntax: 
-    content: SetDeleted(Integer deleted)
+    content: Void SetDeleted(Integer deleted)
     parameters:
     - id: deleted
       type: CRMScript.Global.Integer
@@ -365,7 +365,7 @@ items:
   summary: "\nVisible role name\n"
   remarks: 
   syntax: 
-    content: SetName(String name)
+    content: Void SetName(String name)
     parameters:
     - id: name
       type: CRMScript.Global.String
@@ -385,7 +385,7 @@ items:
   summary: "\nSorting rank of this role in lists\n"
   remarks: 
   syntax: 
-    content: SetRank(Integer rank)
+    content: Void SetRank(Integer rank)
     parameters:
     - id: rank
       type: CRMScript.Global.Integer
@@ -405,7 +405,7 @@ items:
   summary: "\nPrimary key\n"
   remarks: 
   syntax: 
-    content: SetRoleId(Integer roleId)
+    content: Void SetRoleId(Integer roleId)
     parameters:
     - id: roleId
       type: CRMScript.Global.Integer
@@ -425,7 +425,7 @@ items:
   summary: "\nThe role type. Note that changing this field has no effect, so treat this as a read-only field.\n"
   remarks: "\n<p>See enum roleType.</p>\n"
   syntax: 
-    content: SetRoleType(Integer roleType)
+    content: Void SetRoleType(Integer roleType)
     parameters:
     - id: roleType
       type: CRMScript.Global.Integer
@@ -445,7 +445,7 @@ items:
   summary: "\nDescription of the role.\n"
   remarks: 
   syntax: 
-    content: SetTooltip(String tooltip)
+    content: Void SetTooltip(String tooltip)
     parameters:
     - id: tooltip
       type: CRMScript.Global.String
@@ -465,7 +465,7 @@ items:
   summary: "\nLast updated when\n"
   remarks: 
   syntax: 
-    content: SetUpdated(DateTime updated)
+    content: Void SetUpdated(DateTime updated)
     parameters:
   example: 
   - "\n<pre><code>NSRoleEntity thing;\nDateTime updated;\nthing.SetUpdated(updated);</code></pre>\n"
@@ -482,7 +482,7 @@ items:
   summary: "\nLast updated by user\n"
   remarks: 
   syntax: 
-    content: SetUpdatedBy(NSAssociate updatedBy)
+    content: Void SetUpdatedBy(NSAssociate updatedBy)
     parameters:
   example: 
   - "\n<pre><code>NSRoleEntity thing;\nNSAssociate updatedBy;\nthing.SetUpdatedBy(updatedBy);</code></pre>\n"
@@ -499,7 +499,7 @@ items:
   summary: "\nApply role category membership to users\n"
   remarks: 
   syntax: 
-    content: SetUseCategories(Integer useCategories)
+    content: Void SetUseCategories(Integer useCategories)
     parameters:
     - id: useCategories
       type: CRMScript.Global.Integer
@@ -543,3 +543,9 @@ references:
   name: String
   nameWithType: String
   fullName: CRMScript.Global.String
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void

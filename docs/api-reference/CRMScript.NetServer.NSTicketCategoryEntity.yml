@@ -58,7 +58,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetAssignmentLag()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -77,7 +77,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetCategoryMaster()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -96,7 +96,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetClosingStatus()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -115,7 +115,7 @@ items:
   remarks: 
   syntax: 
     content: Map GetCustomFields()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Map
   example: 
@@ -134,7 +134,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetDelegateMethod()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -153,7 +153,7 @@ items:
   remarks: 
   syntax: 
     content: String GetExternalName()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -172,7 +172,7 @@ items:
   remarks: 
   syntax: 
     content: Map GetExtraFields()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Map
   example: 
@@ -191,7 +191,7 @@ items:
   remarks: 
   syntax: 
     content: TicketCategoryFlags GetFlags()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Native.TicketCategoryFlags
   example: 
@@ -210,7 +210,7 @@ items:
   remarks: 
   syntax: 
     content: String GetFullname()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -229,7 +229,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetMsgClosingStatus()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -248,7 +248,7 @@ items:
   remarks: 
   syntax: 
     content: String GetName()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -267,7 +267,7 @@ items:
   remarks: 
   syntax: 
     content: String GetNotificationEmail()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -286,7 +286,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetParentId()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -305,7 +305,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetReplyTemplate()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -324,7 +324,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetTicketCategoryId()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -357,7 +357,7 @@ items:
   summary: "\nNumber of minutes we shall override the assignment if a customer sends consecutive messages to this category\n"
   remarks: 
   syntax: 
-    content: SetAssignmentLag(Integer assignmentLag)
+    content: Void SetAssignmentLag(Integer assignmentLag)
     parameters:
     - id: assignmentLag
       type: CRMScript.Global.Integer
@@ -377,7 +377,7 @@ items:
   summary: "\nThe user associated with this category.\n"
   remarks: 
   syntax: 
-    content: SetCategoryMaster(Integer categoryMaster)
+    content: Void SetCategoryMaster(Integer categoryMaster)
     parameters:
     - id: categoryMaster
       type: CRMScript.Global.Integer
@@ -397,7 +397,7 @@ items:
   summary: "\nAn integer indicating if new requests should have the 'close request' in this category checked as default, or if the users preferences should be selected.\n"
   remarks: "\n<p>See enum closingStatus.</p>\n"
   syntax: 
-    content: SetClosingStatus(Integer closingStatus)
+    content: Void SetClosingStatus(Integer closingStatus)
     parameters:
     - id: closingStatus
       type: CRMScript.Global.Integer
@@ -417,7 +417,7 @@ items:
   summary: "\nSet the user-defined and extra fields on an NSTicketCategoryEntity with a map.\n"
   remarks: 
   syntax: 
-    content: SetCustomFields(Map udefs)
+    content: Void SetCustomFields(Map udefs)
     parameters:
   example: 
   - "\n<pre><code>NSTicketCategoryEntity thing;\nMap udefs;\nudefs[&quot;SuperOffice:1&quot;] = &quot;[I:123]&quot;;\nudefs[&quot;SuperOffice:1&quot;] = &quot;123&quot;; // this will also work, but beware of decimal point variations in different languages\nudefs[&quot;custom.progid&quot;] = &quot;foobar&quot;;\nudefs[&quot;x_foo&quot;] = &quot;foobar&quot;;\nudefs[&quot;x_bar&quot;] = &quot;456&quot;; // List item id\nthing.SetCustomFields(udefs);</code></pre>\n"
@@ -434,7 +434,7 @@ items:
   summary: "\nAn integer indicating the delegation method for this category.\n"
   remarks: "\n<p>See enum delegateMethod.</p>\n"
   syntax: 
-    content: SetDelegateMethod(Integer delegateMethod)
+    content: Void SetDelegateMethod(Integer delegateMethod)
     parameters:
     - id: delegateMethod
       type: CRMScript.Global.Integer
@@ -454,7 +454,7 @@ items:
   summary: "\nThe external name for this category, used for the customer frontend.\n"
   remarks: 
   syntax: 
-    content: SetExternalName(String externalName)
+    content: Void SetExternalName(String externalName)
     parameters:
     - id: externalName
       type: CRMScript.Global.String
@@ -474,7 +474,7 @@ items:
   summary: "\nSet the extra field values on NSTicketCategoryEntity with a map.\n"
   remarks: 
   syntax: 
-    content: SetExtraFields(Map extras)
+    content: Void SetExtraFields(Map extras)
     parameters:
   example: 
   - "\n<pre><code>NSTicketCategoryEntity thing;\nMap extras;\nextras[&quot;SuperOffice:1&quot;] = &quot;[I:123]&quot;;\nextras[&quot;SuperOffice:1&quot;] = &quot;123&quot;; // this will also work, but beware of decimal point variations in different languages\nextras[&quot;custom.progid&quot;] = &quot;foobar&quot;;\nthing.SetExtraFields(extras);</code></pre>\n"
@@ -491,7 +491,7 @@ items:
   summary: "\nA bitmask representing flags for this category.\n"
   remarks: "\n<p>See enum</p>\n"
   syntax: 
-    content: SetFlags(TicketCategoryFlags flags)
+    content: Void SetFlags(TicketCategoryFlags flags)
     parameters:
   example: 
   - "\n<pre><code>NSTicketCategoryEntity thing;\nTicketCategoryFlags flags;\nthing.SetFlags(flags);</code></pre>\n"
@@ -508,7 +508,7 @@ items:
   summary: "\nThe fullname (compiled from parents' names) for this category. E.g. 'norway/product A/support'.\n"
   remarks: 
   syntax: 
-    content: SetFullname(String fullname)
+    content: Void SetFullname(String fullname)
     parameters:
     - id: fullname
       type: CRMScript.Global.String
@@ -528,7 +528,7 @@ items:
   summary: "\nAn integer indicating if new messages should have the 'close request' in this category checked as default, or if the users preferences should be selected.\n"
   remarks: "\n<p>See enum msgClosingStatus.</p>\n"
   syntax: 
-    content: SetMsgClosingStatus(Integer msgClosingStatus)
+    content: Void SetMsgClosingStatus(Integer msgClosingStatus)
     parameters:
     - id: msgClosingStatus
       type: CRMScript.Global.Integer
@@ -548,7 +548,7 @@ items:
   summary: "\nThe (short) name of this category. E.g. 'support'.\n"
   remarks: 
   syntax: 
-    content: SetName(String name)
+    content: Void SetName(String name)
     parameters:
     - id: name
       type: CRMScript.Global.String
@@ -568,7 +568,7 @@ items:
   summary: "\nComma separated list of addresses to notify when requests are redelegated to (unassigned) in this category.\n"
   remarks: 
   syntax: 
-    content: SetNotificationEmail(String notificationEmail)
+    content: Void SetNotificationEmail(String notificationEmail)
     parameters:
     - id: notificationEmail
       type: CRMScript.Global.String
@@ -588,7 +588,7 @@ items:
   summary: "\nThe parent category for this category. -1 if this is a toplevel category.\n"
   remarks: 
   syntax: 
-    content: SetParentId(Integer parentId)
+    content: Void SetParentId(Integer parentId)
     parameters:
     - id: parentId
       type: CRMScript.Global.Integer
@@ -608,7 +608,7 @@ items:
   summary: "\nReply template to merge with messages posted in this category\n"
   remarks: 
   syntax: 
-    content: SetReplyTemplate(Integer replyTemplate)
+    content: Void SetReplyTemplate(Integer replyTemplate)
     parameters:
     - id: replyTemplate
       type: CRMScript.Global.Integer
@@ -628,7 +628,7 @@ items:
   summary: "\nThe ID of the ticket category. (primary key)\n"
   remarks: 
   syntax: 
-    content: SetTicketCategoryId(Integer ticketCategoryId)
+    content: Void SetTicketCategoryId(Integer ticketCategoryId)
     parameters:
     - id: ticketCategoryId
       type: CRMScript.Global.Integer
@@ -672,3 +672,9 @@ references:
   name: ChatSessionFlags
   nameWithType: ChatSessionFlags
   fullName: CRMScript.NetServer.ChatSessionFlags
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void

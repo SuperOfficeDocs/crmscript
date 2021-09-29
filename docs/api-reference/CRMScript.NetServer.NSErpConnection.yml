@@ -52,7 +52,7 @@ items:
   remarks: 
   syntax: 
     content: Bool GetActive()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Bool
   example: 
@@ -71,7 +71,7 @@ items:
   remarks: 
   syntax: 
     content: Bool GetAllAccess()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Bool
   example: 
@@ -90,7 +90,7 @@ items:
   remarks: 
   syntax: 
     content: Integer[] GetAssociateAccessIds()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer[]
   example: 
@@ -109,7 +109,7 @@ items:
   remarks: 
   syntax: 
     content: StringDictionary GetConfigFields()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.StringDictionary
   example: 
@@ -128,7 +128,7 @@ items:
   remarks: 
   syntax: 
     content: String GetConnectionId()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -147,7 +147,7 @@ items:
   remarks: 
   syntax: 
     content: Bool GetDeleted()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Bool
   example: 
@@ -166,7 +166,7 @@ items:
   remarks: 
   syntax: 
     content: String GetDisplayDescription()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -185,7 +185,7 @@ items:
   remarks: 
   syntax: 
     content: String GetDisplayName()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -204,7 +204,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetErpConnectionId()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -223,7 +223,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetErpConnectorId()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -242,7 +242,7 @@ items:
   remarks: 
   syntax: 
     content: String GetMostRecentTimestamp()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -261,7 +261,7 @@ items:
   remarks: 
   syntax: 
     content: Integer[] GetUserGroupAccessIds()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer[]
   example: 
@@ -294,7 +294,7 @@ items:
   summary: "\nIs this connection currently active\n"
   remarks: 
   syntax: 
-    content: SetActive(Bool active)
+    content: Void SetActive(Bool active)
     parameters:
     - id: active
       type: CRMScript.Global.Bool
@@ -314,7 +314,7 @@ items:
   summary: "\nIs this connection accessible to everyone?  If not, then the ErpConnectionAccess table tells us who can access it\n"
   remarks: 
   syntax: 
-    content: SetAllAccess(Bool allAccess)
+    content: Void SetAllAccess(Bool allAccess)
     parameters:
     - id: allAccess
       type: CRMScript.Global.Bool
@@ -334,7 +334,7 @@ items:
   summary: "\nArray of ids containing associates that will have access to this connection.\n"
   remarks: 
   syntax: 
-    content: SetAssociateAccessIds(Integer[] associateAccessIds)
+    content: Void SetAssociateAccessIds(Integer[] associateAccessIds)
     parameters:
     - id: associateAccessIds
       type: CRMScript.Global.Integer[]
@@ -354,7 +354,7 @@ items:
   summary: "\nThe config fields needed to establish a connection to the connector\n"
   remarks: 
   syntax: 
-    content: SetConfigFields(StringDictionary configFields)
+    content: Void SetConfigFields(StringDictionary configFields)
     parameters:
   example: 
   - "\n<pre><code>NSErpConnection thing;\nStringDictionary configFields;\nthing.SetConfigFields(configFields);</code></pre>\n"
@@ -371,7 +371,7 @@ items:
   summary: "\nThe GUID that uniquely identifies this connection; passed to the Connector in every call\n"
   remarks: 
   syntax: 
-    content: SetConnectionId(String connectionId)
+    content: Void SetConnectionId(String connectionId)
     parameters:
     - id: connectionId
       type: CRMScript.Global.String
@@ -391,7 +391,7 @@ items:
   summary: "\nIf true, the connection has been deleted and should not be shown to the users.\n"
   remarks: 
   syntax: 
-    content: SetDeleted(Bool deleted)
+    content: Void SetDeleted(Bool deleted)
     parameters:
     - id: deleted
       type: CRMScript.Global.Bool
@@ -411,7 +411,7 @@ items:
   summary: "\nTooltip/description shown to user; multi-language support\n"
   remarks: 
   syntax: 
-    content: SetDisplayDescription(String displayDescription)
+    content: Void SetDisplayDescription(String displayDescription)
     parameters:
     - id: displayDescription
       type: CRMScript.Global.String
@@ -431,7 +431,7 @@ items:
   summary: "\nConnection name shown to user; multi-language support\n"
   remarks: 
   syntax: 
-    content: SetDisplayName(String displayName)
+    content: Void SetDisplayName(String displayName)
     parameters:
     - id: displayName
       type: CRMScript.Global.String
@@ -451,7 +451,7 @@ items:
   summary: "\nPrimary key\n"
   remarks: 
   syntax: 
-    content: SetErpConnectionId(Integer erpConnectionId)
+    content: Void SetErpConnectionId(Integer erpConnectionId)
     parameters:
     - id: erpConnectionId
       type: CRMScript.Global.Integer
@@ -471,7 +471,7 @@ items:
   summary: "\nThe connector that this connection should call\n"
   remarks: 
   syntax: 
-    content: SetErpConnectorId(Integer erpConnectorId)
+    content: Void SetErpConnectorId(Integer erpConnectorId)
     parameters:
     - id: erpConnectorId
       type: CRMScript.Global.Integer
@@ -491,7 +491,7 @@ items:
   summary: "\nDatetime, transaction number or other identification of the point in time of the most-recently seen actor in the ERP system\n"
   remarks: 
   syntax: 
-    content: SetMostRecentTimestamp(String mostRecentTimestamp)
+    content: Void SetMostRecentTimestamp(String mostRecentTimestamp)
     parameters:
     - id: mostRecentTimestamp
       type: CRMScript.Global.String
@@ -511,7 +511,7 @@ items:
   summary: "\nArray of ids containing usergroups that will have access to this connection.\n"
   remarks: 
   syntax: 
-    content: SetUserGroupAccessIds(Integer[] userGroupAccessIds)
+    content: Void SetUserGroupAccessIds(Integer[] userGroupAccessIds)
     parameters:
     - id: userGroupAccessIds
       type: CRMScript.Global.Integer[]
@@ -569,3 +569,9 @@ references:
   name: Integer
   nameWithType: Integer
   fullName: CRMScript.Global.Integer
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void

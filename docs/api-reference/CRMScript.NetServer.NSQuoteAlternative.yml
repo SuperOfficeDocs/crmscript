@@ -74,7 +74,7 @@ items:
   remarks: 
   syntax: 
     content: String GetDescription()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -93,7 +93,7 @@ items:
   remarks: 
   syntax: 
     content: Float GetDiscountAmount()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Float
   example: 
@@ -112,7 +112,7 @@ items:
   remarks: 
   syntax: 
     content: Float GetDiscountPercent()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Float
   example: 
@@ -131,7 +131,7 @@ items:
   remarks: 
   syntax: 
     content: Float GetEarningAmount()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Float
   example: 
@@ -150,7 +150,7 @@ items:
   remarks: 
   syntax: 
     content: Float GetEarningPercent()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Float
   example: 
@@ -169,7 +169,7 @@ items:
   remarks: 
   syntax: 
     content: Float GetERPDiscountAmount()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Float
   example: 
@@ -188,7 +188,7 @@ items:
   remarks: 
   syntax: 
     content: Float GetERPDiscountPercent()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Float
   example: 
@@ -207,7 +207,7 @@ items:
   remarks: 
   syntax: 
     content: String GetERPQuoteAlternativeKey()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -226,7 +226,7 @@ items:
   remarks: 
   syntax: 
     content: String GetExtraField1()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -245,7 +245,7 @@ items:
   remarks: 
   syntax: 
     content: String GetExtraField2()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -264,7 +264,7 @@ items:
   remarks: 
   syntax: 
     content: String GetExtraField3()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -283,7 +283,7 @@ items:
   remarks: 
   syntax: 
     content: String GetExtraField4()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -302,7 +302,7 @@ items:
   remarks: 
   syntax: 
     content: String GetExtraField5()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -321,7 +321,7 @@ items:
   remarks: 
   syntax: 
     content: String GetName()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -340,7 +340,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetQuoteAlternativeId()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -359,7 +359,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetQuoteVersionId()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -378,7 +378,7 @@ items:
   remarks: 
   syntax: 
     content: String GetReason()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -397,7 +397,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetStatus()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -416,7 +416,7 @@ items:
   remarks: 
   syntax: 
     content: Float GetSubTotal()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Float
   example: 
@@ -435,7 +435,7 @@ items:
   remarks: 
   syntax: 
     content: Float GetTotalPrice()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Float
   example: 
@@ -454,7 +454,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetUserValueOverride()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -473,7 +473,7 @@ items:
   remarks: 
   syntax: 
     content: Float GetVAT()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Float
   example: 
@@ -492,7 +492,7 @@ items:
   remarks: 
   syntax: 
     content: String GetVATInfo()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -525,7 +525,7 @@ items:
   summary: "\nThe tool-tip to use in the user interface (on the tab, for instance).\n"
   remarks: 
   syntax: 
-    content: SetDescription(String description)
+    content: Void SetDescription(String description)
     parameters:
     - id: description
       type: CRMScript.Global.String
@@ -545,7 +545,7 @@ items:
   summary: "\nThe discount the sales rep specifies, in whatever currency the sale is in. Both the two ‘DiscountPercent’ and ‘DiscountAmount’ shall be filled out, but the UserValueOverride field must be set to the field the user actually changed. If this field is filled out by the user, it overrides the discount suggested by the connector. If the user has not filled any values, the system will copy the ERP discount amount value into this field.\n"
   remarks: 
   syntax: 
-    content: SetDiscountAmount(Float discountAmount)
+    content: Void SetDiscountAmount(Float discountAmount)
     parameters:
   example: 
   - "\n<pre><code>NSQuoteAlternative thing;\nFloat discountAmount;\nthing.SetDiscountAmount(discountAmount);</code></pre>\n"
@@ -562,7 +562,7 @@ items:
   summary: "\nThe discount the sales rep specifies, in percent. Both the two ‘DiscountPercent’ and ‘DiscountAmount’ shall be filled out, but the UserValueOverride field must be set to the field the user actually changed. If this field is filled out by the user, it overrides the discount suggested by the connector. If the user has not filled any values, the system will copy the ERP discount percent value into this field. The Percentage is given in integer form, i.e. ‘12%’ is represented as ‘12’.\n"
   remarks: 
   syntax: 
-    content: SetDiscountPercent(Float discountPercent)
+    content: Void SetDiscountPercent(Float discountPercent)
     parameters:
   example: 
   - "\n<pre><code>NSQuoteAlternative thing;\nFloat discountPercent;\nthing.SetDiscountPercent(discountPercent);</code></pre>\n"
@@ -579,7 +579,7 @@ items:
   summary: "\nEarning on this alternative, as an absolute amount\n"
   remarks: 
   syntax: 
-    content: SetEarningAmount(Float earningAmount)
+    content: Void SetEarningAmount(Float earningAmount)
     parameters:
   example: 
   - "\n<pre><code>NSQuoteAlternative thing;\nFloat earningAmount;\nthing.SetEarningAmount(earningAmount);</code></pre>\n"
@@ -596,7 +596,7 @@ items:
   summary: "\nThe earning on this alternative, in percent of total. The Percentage is given in integer form, i.e. ‘12%’ is represented as ‘12’.\n"
   remarks: 
   syntax: 
-    content: SetEarningPercent(Float earningPercent)
+    content: Void SetEarningPercent(Float earningPercent)
     parameters:
   example: 
   - "\n<pre><code>NSQuoteAlternative thing;\nFloat earningPercent;\nthing.SetEarningPercent(earningPercent);</code></pre>\n"
@@ -613,7 +613,7 @@ items:
   summary: "\nThe discount the system calculates based on customer /amount / whatever. Can be overridden by the user in the field ‘DiscountPercent’ or ‘DiscountAmount’. Both the two ‘ERPDiscountPercent’ and ‘ERPDiscountAmount’ shall be filled out. If UserValueOverride is 'None', then the ERPDiscountAmount shall be copied into DiscountAmount and ERPDiscountPercent into DiscountPercent.\n"
   remarks: 
   syntax: 
-    content: SetERPDiscountAmount(Float eRPDiscountAmount)
+    content: Void SetERPDiscountAmount(Float eRPDiscountAmount)
     parameters:
   example: 
   - "\n<pre><code>NSQuoteAlternative thing;\nFloat eRPDiscountAmount;\nthing.SetERPDiscountAmount(eRPDiscountAmount);</code></pre>\n"
@@ -630,7 +630,7 @@ items:
   summary: "\nThe discount the system calculates based on customer /amount / whatever. Can be overridden by the sales rep in the field ‘DiscountPercent’ or ‘DiscountAmount’. Both the two ‘ERPDiscountPercent’ and ‘ERPDiscountAmount’ shall be filled out. If UserValueOverride is 'None', then the ERPDiscountAmount shall be copied into DiscountAmount and ERPDiscountPercent into DiscountPercent. The Percentage is given in integer form, i.e. ‘12%’ is represented as ‘12’.\n"
   remarks: 
   syntax: 
-    content: SetERPDiscountPercent(Float eRPDiscountPercent)
+    content: Void SetERPDiscountPercent(Float eRPDiscountPercent)
     parameters:
   example: 
   - "\n<pre><code>NSQuoteAlternative thing;\nFloat eRPDiscountPercent;\nthing.SetERPDiscountPercent(eRPDiscountPercent);</code></pre>\n"
@@ -647,7 +647,7 @@ items:
   summary: "\nKey that identifies this alternative in the ERP system, if it exists there.\n"
   remarks: 
   syntax: 
-    content: SetERPQuoteAlternativeKey(String eRPQuoteAlternativeKey)
+    content: Void SetERPQuoteAlternativeKey(String eRPQuoteAlternativeKey)
     parameters:
     - id: eRPQuoteAlternativeKey
       type: CRMScript.Global.String
@@ -667,7 +667,7 @@ items:
   summary: "\nOptional information added by Quote Connector; usable in the quote document merge process\n"
   remarks: 
   syntax: 
-    content: SetExtraField1(String extraField1)
+    content: Void SetExtraField1(String extraField1)
     parameters:
     - id: extraField1
       type: CRMScript.Global.String
@@ -687,7 +687,7 @@ items:
   summary: "\nOptional information added by Quote Connector; usable in the quote document merge process\n"
   remarks: 
   syntax: 
-    content: SetExtraField2(String extraField2)
+    content: Void SetExtraField2(String extraField2)
     parameters:
     - id: extraField2
       type: CRMScript.Global.String
@@ -707,7 +707,7 @@ items:
   summary: "\nOptional information added by Quote Connector; usable in the quote document merge process\n"
   remarks: 
   syntax: 
-    content: SetExtraField3(String extraField3)
+    content: Void SetExtraField3(String extraField3)
     parameters:
     - id: extraField3
       type: CRMScript.Global.String
@@ -727,7 +727,7 @@ items:
   summary: "\nOptional information added by Quote Connector; usable in the quote document merge process\n"
   remarks: 
   syntax: 
-    content: SetExtraField4(String extraField4)
+    content: Void SetExtraField4(String extraField4)
     parameters:
     - id: extraField4
       type: CRMScript.Global.String
@@ -747,7 +747,7 @@ items:
   summary: "\nOptional information added by Quote Connector; usable in the quote document merge process\n"
   remarks: 
   syntax: 
-    content: SetExtraField5(String extraField5)
+    content: Void SetExtraField5(String extraField5)
     parameters:
     - id: extraField5
       type: CRMScript.Global.String
@@ -767,7 +767,7 @@ items:
   summary: "\nName of Alternative. Shown in tab in user interface, intentionally kept short\n"
   remarks: 
   syntax: 
-    content: SetName(String name)
+    content: Void SetName(String name)
     parameters:
     - id: name
       type: CRMScript.Global.String
@@ -787,7 +787,7 @@ items:
   summary: "\nPrimary key\n"
   remarks: 
   syntax: 
-    content: SetQuoteAlternativeId(Integer quoteAlternativeId)
+    content: Void SetQuoteAlternativeId(Integer quoteAlternativeId)
     parameters:
     - id: quoteAlternativeId
       type: CRMScript.Global.Integer
@@ -807,7 +807,7 @@ items:
   summary: "\nThe version that owns this alternative (the chain is Sale 1-&gt;1 Quote 1-&gt;+ QuoteVersion 1-&gt;+ QuoteAlternative.\n"
   remarks: 
   syntax: 
-    content: SetQuoteVersionId(Integer quoteVersionId)
+    content: Void SetQuoteVersionId(Integer quoteVersionId)
     parameters:
     - id: quoteVersionId
       type: CRMScript.Global.Integer
@@ -827,7 +827,7 @@ items:
   summary: "\nIf there was a problem, this field contains a localized explanation of the problem and possible steps to fix it that the user can be shown.\n"
   remarks: 
   syntax: 
-    content: SetReason(String reason)
+    content: Void SetReason(String reason)
     parameters:
     - id: reason
       type: CRMScript.Global.String
@@ -847,7 +847,7 @@ items:
   summary: "\nIf there was a problem with for instance calculation, this field is set to warning or error.\n"
   remarks: "\n<p>See enum status.</p>\n"
   syntax: 
-    content: SetStatus(Integer status)
+    content: Void SetStatus(Integer status)
     parameters:
     - id: status
       type: CRMScript.Global.Integer
@@ -867,7 +867,7 @@ items:
   summary: "\nValue to help the user interface, is computed by summing the totalprice of the quotelines, and NOT by summing their subtotals\n"
   remarks: 
   syntax: 
-    content: SetSubTotal(Float subTotal)
+    content: Void SetSubTotal(Float subTotal)
     parameters:
   example: 
   - "\n<pre><code>NSQuoteAlternative thing;\nFloat subTotal;\nthing.SetSubTotal(subTotal);</code></pre>\n"
@@ -884,7 +884,7 @@ items:
   summary: "\nSum of the QuoteLines.TotalPrice* AlternativeDiscount or QuoteLines.TotalCost + Earning based on what, if anything, the user has entered last. Shall be calculated by the connector.\n"
   remarks: 
   syntax: 
-    content: SetTotalPrice(Float totalPrice)
+    content: Void SetTotalPrice(Float totalPrice)
     parameters:
   example: 
   - "\n<pre><code>NSQuoteAlternative thing;\nFloat totalPrice;\nthing.SetTotalPrice(totalPrice);</code></pre>\n"
@@ -901,7 +901,7 @@ items:
   summary: "\nHas the pre-calculated (from ERP) price information been overridden, and how. If the user has filled out the discountpercentage field, then the UserValueOverride field is set to OverridePercent. (The DiscountAmount, EarningPercent, EarningAmount and TotalPrice fields are calculated based on the discountPercent.)\n"
   remarks: "\n<p>See enum userValueOverride.</p>\n"
   syntax: 
-    content: SetUserValueOverride(Integer userValueOverride)
+    content: Void SetUserValueOverride(Integer userValueOverride)
     parameters:
     - id: userValueOverride
       type: CRMScript.Global.Integer
@@ -921,7 +921,7 @@ items:
   summary: "\nTax/VAT* THIS IS AN AMOUNT, available as a merge field in the quote document. The SuperOffice quote connector will calculate this field based on the vat PERCENTAGES on the individual lines; other connectors may implement other algorithms at will.\n"
   remarks: 
   syntax: 
-    content: SetVAT(Float vAT)
+    content: Void SetVAT(Float vAT)
     parameters:
   example: 
   - "\n<pre><code>NSQuoteAlternative thing;\nFloat vAT;\nthing.SetVAT(vAT);</code></pre>\n"
@@ -938,7 +938,7 @@ items:
   summary: "\nExtra info about VAT that the connector might insert. This field has no business logic in the CRM code, but is available as a merge field in the quote documents.\n"
   remarks: 
   syntax: 
-    content: SetVATInfo(String vATInfo)
+    content: Void SetVATInfo(String vATInfo)
     parameters:
     - id: vATInfo
       type: CRMScript.Global.String
@@ -970,3 +970,9 @@ references:
   name: Integer
   nameWithType: Integer
   fullName: CRMScript.Global.Integer
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void

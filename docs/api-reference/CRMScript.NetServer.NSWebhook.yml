@@ -54,7 +54,7 @@ items:
   remarks: 
   syntax: 
     content: String[] GetEvents()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String[]
   example: 
@@ -73,7 +73,7 @@ items:
   remarks: 
   syntax: 
     content: StringDictionary GetHeaders()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.StringDictionary
   example: 
@@ -92,7 +92,7 @@ items:
   remarks: 
   syntax: 
     content: String GetName()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -111,7 +111,7 @@ items:
   remarks: 
   syntax: 
     content: StringObjectDictionary GetProperties()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.StringObjectDictionary
   example: 
@@ -130,7 +130,7 @@ items:
   remarks: 
   syntax: 
     content: DateTime GetRegistered()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.DateTime
   example: 
@@ -149,7 +149,7 @@ items:
   remarks: 
   syntax: 
     content: NSAssociate GetRegisteredAssociate()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.NetServer.NSAssociate
   example: 
@@ -168,7 +168,7 @@ items:
   remarks: 
   syntax: 
     content: String GetSecret()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -187,7 +187,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetState()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -206,7 +206,7 @@ items:
   remarks: 
   syntax: 
     content: String GetTargetUrl()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -225,7 +225,7 @@ items:
   remarks: 
   syntax: 
     content: String GetType()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -244,7 +244,7 @@ items:
   remarks: 
   syntax: 
     content: DateTime GetUpdated()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.DateTime
   example: 
@@ -263,7 +263,7 @@ items:
   remarks: 
   syntax: 
     content: NSAssociate GetUpdatedAssociate()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.NetServer.NSAssociate
   example: 
@@ -282,7 +282,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetWebhookId()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -315,7 +315,7 @@ items:
   summary: "\nArray of event names that trigger this webhook: ['contact.created', 'sale.changed']\n"
   remarks: 
   syntax: 
-    content: SetEvents(String[] events)
+    content: Void SetEvents(String[] events)
     parameters:
     - id: events
       type: CRMScript.Global.String[]
@@ -335,7 +335,7 @@ items:
   summary: "\nCustom HTTP Headers to add to webhook requests.\n"
   remarks: 
   syntax: 
-    content: SetHeaders(StringDictionary headers)
+    content: Void SetHeaders(StringDictionary headers)
     parameters:
   example: 
   - "\n<pre><code>NSWebhook thing;\nStringDictionary headers;\nthing.SetHeaders(headers);</code></pre>\n"
@@ -352,7 +352,7 @@ items:
   summary: "\nName to identify this webhook. Does not have to be unique.\n"
   remarks: 
   syntax: 
-    content: SetName(String name)
+    content: Void SetName(String name)
     parameters:
     - id: name
       type: CRMScript.Global.String
@@ -372,7 +372,7 @@ items:
   summary: "\nCustom values to inject into JSON body of webhook call.\n"
   remarks: 
   syntax: 
-    content: SetProperties(StringObjectDictionary properties)
+    content: Void SetProperties(StringObjectDictionary properties)
     parameters:
   example: 
   - "\n<pre><code>NSWebhook thing;\nStringObjectDictionary properties;\nthing.SetProperties(properties);</code></pre>\n"
@@ -389,7 +389,7 @@ items:
   summary: "\nRegistered when\n"
   remarks: 
   syntax: 
-    content: SetRegistered(DateTime registered)
+    content: Void SetRegistered(DateTime registered)
     parameters:
   example: 
   - "\n<pre><code>NSWebhook thing;\nDateTime registered;\nthing.SetRegistered(registered);</code></pre>\n"
@@ -406,7 +406,7 @@ items:
   summary: "\nThe user that created the webhook.\n"
   remarks: 
   syntax: 
-    content: SetRegisteredAssociate(NSAssociate registeredAssociate)
+    content: Void SetRegisteredAssociate(NSAssociate registeredAssociate)
     parameters:
   example: 
   - "\n<pre><code>NSWebhook thing;\nNSAssociate registeredAssociate;\nthing.SetRegisteredAssociate(registeredAssociate);</code></pre>\n"
@@ -423,7 +423,7 @@ items:
   summary: "\nShared secret key used for generating SHA256 HMAC signature, so that receiver can verify that call came from this server\n"
   remarks: 
   syntax: 
-    content: SetSecret(String secret)
+    content: Void SetSecret(String secret)
     parameters:
     - id: secret
       type: CRMScript.Global.String
@@ -443,7 +443,7 @@ items:
   summary: "\nWebhook status* should we post events to the URL? 1=Active, 2=Stopped or 3=TooManyErrors\n"
   remarks: "\n<p>See enum state.</p>\n"
   syntax: 
-    content: SetState(Integer state)
+    content: Void SetState(Integer state)
     parameters:
     - id: state
       type: CRMScript.Global.Integer
@@ -463,7 +463,7 @@ items:
   summary: "\nDestination to POST event info to. URL for webhooks. Id for CRM scripts\n"
   remarks: 
   syntax: 
-    content: SetTargetUrl(String targetUrl)
+    content: Void SetTargetUrl(String targetUrl)
     parameters:
     - id: targetUrl
       type: CRMScript.Global.String
@@ -483,7 +483,7 @@ items:
   summary: "\nName of plugin that handles this webhook. 'webhook' for webhooks, which are handled by the system plugin.\n"
   remarks: 
   syntax: 
-    content: SetType(String type)
+    content: Void SetType(String type)
     parameters:
     - id: type
       type: CRMScript.Global.String
@@ -503,7 +503,7 @@ items:
   summary: "\nLast updated when\n"
   remarks: 
   syntax: 
-    content: SetUpdated(DateTime updated)
+    content: Void SetUpdated(DateTime updated)
     parameters:
   example: 
   - "\n<pre><code>NSWebhook thing;\nDateTime updated;\nthing.SetUpdated(updated);</code></pre>\n"
@@ -520,7 +520,7 @@ items:
   summary: "\nThe user that last updated the webhook.\n"
   remarks: 
   syntax: 
-    content: SetUpdatedAssociate(NSAssociate updatedAssociate)
+    content: Void SetUpdatedAssociate(NSAssociate updatedAssociate)
     parameters:
   example: 
   - "\n<pre><code>NSWebhook thing;\nNSAssociate updatedAssociate;\nthing.SetUpdatedAssociate(updatedAssociate);</code></pre>\n"
@@ -537,7 +537,7 @@ items:
   summary: "\nPrimary Key. Unique id for this webhook.\n"
   remarks: 
   syntax: 
-    content: SetWebhookId(Integer webhookId)
+    content: Void SetWebhookId(Integer webhookId)
     parameters:
     - id: webhookId
       type: CRMScript.Global.Integer
@@ -607,3 +607,9 @@ references:
   name: Integer
   nameWithType: Integer
   fullName: CRMScript.Global.Integer
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void

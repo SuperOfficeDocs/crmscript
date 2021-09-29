@@ -38,7 +38,7 @@ items:
   remarks: 
   syntax: 
     content: DateTime GetExpiryDate()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.DateTime
   example: 
@@ -57,7 +57,7 @@ items:
   remarks: 
   syntax: 
     content: NSDSAParameters GetKey()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.NetServer.NSDSAParameters
   example: 
@@ -76,7 +76,7 @@ items:
   remarks: 
   syntax: 
     content: String GetOwnerName()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -95,7 +95,7 @@ items:
   remarks: 
   syntax: 
     content: String GetSignature()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -114,7 +114,7 @@ items:
   remarks: 
   syntax: 
     content: DateTime GetSignDate()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.DateTime
   example: 
@@ -147,7 +147,7 @@ items:
   summary: "\nDate when the signature expires. No Timezone.\n"
   remarks: 
   syntax: 
-    content: SetExpiryDate(DateTime expiryDate)
+    content: Void SetExpiryDate(DateTime expiryDate)
     parameters:
   example: 
   - "\n<pre><code>NSSignedPublicKey thing;\nDateTime expiryDate;\nthing.SetExpiryDate(expiryDate);</code></pre>\n"
@@ -164,7 +164,7 @@ items:
   summary: "\nPublic key held by module owner.\n"
   remarks: 
   syntax: 
-    content: SetKey(NSDSAParameters key)
+    content: Void SetKey(NSDSAParameters key)
     parameters:
   example: 
   - "\n<pre><code>NSSignedPublicKey thing;\nNSDSAParameters key;\nthing.SetKey(key);</code></pre>\n"
@@ -181,7 +181,7 @@ items:
   summary: "\nThe name of the module owner, not visible in GUI but used in the code. OwnerName SUPEROFFICE is reserved and may NEVER be used by partners. This must be in UPPER CASE and only contain A-Z and 0-9. NO EXTENDED CHARACTERS please.\n"
   remarks: 
   syntax: 
-    content: SetOwnerName(String ownerName)
+    content: Void SetOwnerName(String ownerName)
     parameters:
     - id: ownerName
       type: CRMScript.Global.String
@@ -201,7 +201,7 @@ items:
   summary: "\nSignature* Base64 encoded value\n"
   remarks: 
   syntax: 
-    content: SetSignature(String signature)
+    content: Void SetSignature(String signature)
     parameters:
     - id: signature
       type: CRMScript.Global.String
@@ -221,7 +221,7 @@ items:
   summary: "\nDate when the the public key was signed. No Timezone.\n"
   remarks: 
   syntax: 
-    content: SetSignDate(DateTime signDate)
+    content: Void SetSignDate(DateTime signDate)
     parameters:
   example: 
   - "\n<pre><code>NSSignedPublicKey thing;\nDateTime signDate;\nthing.SetSignDate(signDate);</code></pre>\n"
@@ -250,3 +250,9 @@ references:
   name: String
   nameWithType: String
   fullName: CRMScript.Global.String
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void

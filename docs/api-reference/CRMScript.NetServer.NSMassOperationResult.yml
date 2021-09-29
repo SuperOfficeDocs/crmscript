@@ -40,7 +40,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetDeletes()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -59,7 +59,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetInserts()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -78,7 +78,7 @@ items:
   remarks: 
   syntax: 
     content: String GetMessage()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -97,7 +97,7 @@ items:
   remarks: 
   syntax: 
     content: NSUpsertRowStatus[] GetRowStatus()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.NetServer.NSUpsertRowStatus[]
   example: 
@@ -116,7 +116,7 @@ items:
   remarks: 
   syntax: 
     content: Bool GetSuccess()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Bool
   example: 
@@ -135,7 +135,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetUpdates()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -168,7 +168,7 @@ items:
   summary: "\nNumber of rows deleted / zeroed\n"
   remarks: 
   syntax: 
-    content: SetDeletes(Integer deletes)
+    content: Void SetDeletes(Integer deletes)
     parameters:
     - id: deletes
       type: CRMScript.Global.Integer
@@ -188,7 +188,7 @@ items:
   summary: "\nNumber of rows inserted\n"
   remarks: 
   syntax: 
-    content: SetInserts(Integer inserts)
+    content: Void SetInserts(Integer inserts)
     parameters:
     - id: inserts
       type: CRMScript.Global.Integer
@@ -208,7 +208,7 @@ items:
   summary: "\nAny message from the method, including timing data\n"
   remarks: 
   syntax: 
-    content: SetMessage(String message)
+    content: Void SetMessage(String message)
     parameters:
     - id: message
       type: CRMScript.Global.String
@@ -228,7 +228,7 @@ items:
   summary: "\nArray of statuses and primary keys for all rows that were specified. Populated if the 'ReturnRowStatus' parameter of 'Upsert' is set, otherwise null\n"
   remarks: 
   syntax: 
-    content: SetRowStatus(NSUpsertRowStatus[] rowStatus)
+    content: Void SetRowStatus(NSUpsertRowStatus[] rowStatus)
     parameters:
   example: 
   - "\n<pre><code>NSMassOperationResult thing;\nNSUpsertRowStatus[] rowStatus;\nthing.SetRowStatus(rowStatus);</code></pre>\n"
@@ -245,7 +245,7 @@ items:
   summary: "\nDid the operation succeed\n"
   remarks: 
   syntax: 
-    content: SetSuccess(Bool success)
+    content: Void SetSuccess(Bool success)
     parameters:
     - id: success
       type: CRMScript.Global.Bool
@@ -265,7 +265,7 @@ items:
   summary: "\nNumber of rows updated\n"
   remarks: 
   syntax: 
-    content: SetUpdates(Integer updates)
+    content: Void SetUpdates(Integer updates)
     parameters:
     - id: updates
       type: CRMScript.Global.Integer
@@ -317,3 +317,9 @@ references:
   name: Bool
   nameWithType: Bool
   fullName: CRMScript.Global.Bool
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void

@@ -54,7 +54,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetAcceptedQuoteAlternativeId()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -73,7 +73,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetActiveQuoteVersionId()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -92,7 +92,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetDocumentId()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -111,7 +111,7 @@ items:
   remarks: 
   syntax: 
     content: String GetERPOrderKey()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -130,7 +130,7 @@ items:
   remarks: 
   syntax: 
     content: String GetERPQuoteKey()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -149,7 +149,7 @@ items:
   remarks: 
   syntax: 
     content: String GetOrderComment()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -168,7 +168,7 @@ items:
   remarks: 
   syntax: 
     content: String GetPoNumber()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -187,7 +187,7 @@ items:
   remarks: 
   syntax: 
     content: String GetPreferredEmailCulture()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -206,7 +206,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetQuoteConnectionId()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -225,7 +225,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetQuoteId()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -244,7 +244,7 @@ items:
   remarks: 
   syntax: 
     content: NSQuoteVersion[] GetQuoteVersions()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.NetServer.NSQuoteVersion[]
   example: 
@@ -263,7 +263,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetSaleId()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -282,7 +282,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetUseValuesFromQuote()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -315,7 +315,7 @@ items:
   summary: "\nThe primary key of the Quote Alternative which was finally accepted by the customer. Set when the user is marking a quote as accepted.\n"
   remarks: 
   syntax: 
-    content: SetAcceptedQuoteAlternativeId(Integer acceptedQuoteAlternativeId)
+    content: Void SetAcceptedQuoteAlternativeId(Integer acceptedQuoteAlternativeId)
     parameters:
     - id: acceptedQuoteAlternativeId
       type: CRMScript.Global.Integer
@@ -335,7 +335,7 @@ items:
   summary: "\nThe primary key of the Quote Version that is currently active. (The active version will always be the latest version.)\n"
   remarks: 
   syntax: 
-    content: SetActiveQuoteVersionId(Integer activeQuoteVersionId)
+    content: Void SetActiveQuoteVersionId(Integer activeQuoteVersionId)
     parameters:
     - id: activeQuoteVersionId
       type: CRMScript.Global.Integer
@@ -355,7 +355,7 @@ items:
   summary: "\nThe ID of the main Quote Document\n"
   remarks: 
   syntax: 
-    content: SetDocumentId(Integer documentId)
+    content: Void SetDocumentId(Integer documentId)
     parameters:
     - id: documentId
       type: CRMScript.Global.Integer
@@ -375,7 +375,7 @@ items:
   summary: "\nThe key in the ERP system that identifies this sale's Order, as transferred and possibly later edited in the ERP system.  Only filled out if there exists a corresponding order representation of the quote in the ERP system.\n"
   remarks: 
   syntax: 
-    content: SetERPOrderKey(String eRPOrderKey)
+    content: Void SetERPOrderKey(String eRPOrderKey)
     parameters:
     - id: eRPOrderKey
       type: CRMScript.Global.String
@@ -395,7 +395,7 @@ items:
   summary: "\nForeign key of quote (if available). The key in the ERP system that identifies this sale's Quote (as opposed to the later Order information)\n"
   remarks: 
   syntax: 
-    content: SetERPQuoteKey(String eRPQuoteKey)
+    content: Void SetERPQuoteKey(String eRPQuoteKey)
     parameters:
     - id: eRPQuoteKey
       type: CRMScript.Global.String
@@ -415,7 +415,7 @@ items:
   summary: "\nA comment that is intended for the Invoice, Order, Packing list and similar stages* AFTER the quote has become an order and goes to ERP for processing\n"
   remarks: 
   syntax: 
-    content: SetOrderComment(String orderComment)
+    content: Void SetOrderComment(String orderComment)
     parameters:
     - id: orderComment
       type: CRMScript.Global.String
@@ -435,7 +435,7 @@ items:
   summary: "\nCustomer's Purchase order number\n"
   remarks: 
   syntax: 
-    content: SetPoNumber(String poNumber)
+    content: Void SetPoNumber(String poNumber)
     parameters:
     - id: poNumber
       type: CRMScript.Global.String
@@ -455,7 +455,7 @@ items:
   summary: "\nWhen emails are sent (offer or confirmation), a language can be chosen in the GUI; this field saves the most recent choice and can be used to default the next such choice. Default-default is user's current language\n"
   remarks: 
   syntax: 
-    content: SetPreferredEmailCulture(String preferredEmailCulture)
+    content: Void SetPreferredEmailCulture(String preferredEmailCulture)
     parameters:
     - id: preferredEmailCulture
       type: CRMScript.Global.String
@@ -475,7 +475,7 @@ items:
   summary: "\nThe connection in the CRM system to where this quote came from. Identifies the ERP connection used for this quote. Each quote is bound to one and only one connection.\n"
   remarks: 
   syntax: 
-    content: SetQuoteConnectionId(Integer quoteConnectionId)
+    content: Void SetQuoteConnectionId(Integer quoteConnectionId)
     parameters:
     - id: quoteConnectionId
       type: CRMScript.Global.Integer
@@ -495,7 +495,7 @@ items:
   summary: "\nPrimary key\n"
   remarks: 
   syntax: 
-    content: SetQuoteId(Integer quoteId)
+    content: Void SetQuoteId(Integer quoteId)
     parameters:
     - id: quoteId
       type: CRMScript.Global.Integer
@@ -515,7 +515,7 @@ items:
   summary: "\nArray og QuoteVersions connected to the quote.\n"
   remarks: 
   syntax: 
-    content: SetQuoteVersions(NSQuoteVersion[] quoteVersions)
+    content: Void SetQuoteVersions(NSQuoteVersion[] quoteVersions)
     parameters:
     - id: quoteVersions
       type: CRMScript.NetServer.NSQuoteVersion[]
@@ -535,7 +535,7 @@ items:
   summary: "\nThe foreign key to the corresponding sale\n"
   remarks: 
   syntax: 
-    content: SetSaleId(Integer saleId)
+    content: Void SetSaleId(Integer saleId)
     parameters:
     - id: saleId
       type: CRMScript.Global.Integer
@@ -555,7 +555,7 @@ items:
   summary: "\nIf true, then the Earning, Earning_Percent and Amount fields are populated from the QuoteVersion.QuoteAlternative (current revision, most-likely alternative).\n"
   remarks: 
   syntax: 
-    content: SetUseValuesFromQuote(Integer useValuesFromQuote)
+    content: Void SetUseValuesFromQuote(Integer useValuesFromQuote)
     parameters:
     - id: useValuesFromQuote
       type: CRMScript.Global.Integer
@@ -601,3 +601,9 @@ references:
   name: NSQuoteVersion
   nameWithType: NSQuoteVersion
   fullName: CRMScript.NetServer.NSQuoteVersion
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void

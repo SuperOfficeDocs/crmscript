@@ -70,7 +70,7 @@ items:
   remarks: 
   syntax: 
     content: String GetAuthor()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -89,7 +89,7 @@ items:
   remarks: 
   syntax: 
     content: String GetBody()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -108,7 +108,7 @@ items:
   remarks: 
   syntax: 
     content: DateTime GetCreatedAt()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.DateTime
   example: 
@@ -127,7 +127,7 @@ items:
   remarks: 
   syntax: 
     content: NSAssociate GetCreatedBy()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.NetServer.NSAssociate
   example: 
@@ -146,7 +146,7 @@ items:
   remarks: 
   syntax: 
     content: Map GetCustomFields()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Map
   example: 
@@ -165,7 +165,7 @@ items:
   remarks: 
   syntax: 
     content: String GetDebugInfo()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -184,7 +184,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetEjMessageId()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -203,7 +203,7 @@ items:
   remarks: 
   syntax: 
     content: String GetEmailHeader()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -222,7 +222,7 @@ items:
   remarks: 
   syntax: 
     content: Map GetExtraFields()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Map
   example: 
@@ -241,7 +241,7 @@ items:
   remarks: 
   syntax: 
     content: String GetHtmlBody()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -260,7 +260,7 @@ items:
   remarks: 
   syntax: 
     content: Bool GetImportant()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Bool
   example: 
@@ -279,7 +279,7 @@ items:
   remarks: 
   syntax: 
     content: String GetMailSorter()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -298,7 +298,7 @@ items:
   remarks: 
   syntax: 
     content: TicketMessageCategory GetMessageCategory()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Native.TicketMessageCategory
   example: 
@@ -317,7 +317,7 @@ items:
   remarks: 
   syntax: 
     content: TicketMessageHeader[] GetMessageHeaders()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Native.TicketMessageHeader[]
   example: 
@@ -336,7 +336,7 @@ items:
   remarks: 
   syntax: 
     content: String GetMessageId()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -355,7 +355,7 @@ items:
   remarks: 
   syntax: 
     content: NSPerson GetPerson()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.NetServer.NSPerson
   example: 
@@ -374,7 +374,7 @@ items:
   remarks: 
   syntax: 
     content: String GetSearchTitle()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -393,7 +393,7 @@ items:
   remarks: 
   syntax: 
     content: TicketSecurityLevel GetSlevel()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Native.TicketSecurityLevel
   example: 
@@ -412,7 +412,7 @@ items:
   remarks: 
   syntax: 
     content: NSTicket GetTicket()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.NetServer.NSTicket
   example: 
@@ -431,7 +431,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetTimeSpent()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -450,7 +450,7 @@ items:
   remarks: 
   syntax: 
     content: TicketMessageType GetType()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Native.TicketMessageType
   example: 
@@ -483,7 +483,7 @@ items:
   summary: "\nA string representing the author of the message. Could be a user's name, or a persons email address.\n"
   remarks: 
   syntax: 
-    content: SetAuthor(String author)
+    content: Void SetAuthor(String author)
     parameters:
     - id: author
       type: CRMScript.Global.String
@@ -503,7 +503,7 @@ items:
   summary: "\nThe textbody for the message.\n"
   remarks: 
   syntax: 
-    content: SetBody(String body)
+    content: Void SetBody(String body)
     parameters:
     - id: body
       type: CRMScript.Global.String
@@ -523,7 +523,7 @@ items:
   summary: "\nWhen the message was posted.\n"
   remarks: 
   syntax: 
-    content: SetCreatedAt(DateTime createdAt)
+    content: Void SetCreatedAt(DateTime createdAt)
     parameters:
   example: 
   - "\n<pre><code>NSTicketMessageEntity thing;\nDateTime createdAt;\nthing.SetCreatedAt(createdAt);</code></pre>\n"
@@ -540,7 +540,7 @@ items:
   summary: "\nThe associate who created this ticket message\n"
   remarks: 
   syntax: 
-    content: SetCreatedBy(NSAssociate createdBy)
+    content: Void SetCreatedBy(NSAssociate createdBy)
     parameters:
   example: 
   - "\n<pre><code>NSTicketMessageEntity thing;\nNSAssociate createdBy;\nthing.SetCreatedBy(createdBy);</code></pre>\n"
@@ -557,7 +557,7 @@ items:
   summary: "\nSet the user-defined and extra fields on a TicketMessageEntity with a map.\n"
   remarks: 
   syntax: 
-    content: SetCustomFields(Map udefs)
+    content: Void SetCustomFields(Map udefs)
     parameters:
   example: 
   - "\n<pre><code>NSTicketMessageEntity thing;\nMap udefs;\nudefs[&quot;SuperOffice:1&quot;] = &quot;[I:123]&quot;;\nudefs[&quot;SuperOffice:1&quot;] = &quot;123&quot;; // this will also work, but beware of decimal point variations in different languages\nudefs[&quot;custom.progid&quot;] = &quot;foobar&quot;;\nudefs[&quot;x_foo&quot;] = &quot;foobar&quot;;\nudefs[&quot;x_bar&quot;] = &quot;456&quot;; // List item id\nthing.SetCustomFields(udefs);</code></pre>\n"
@@ -574,7 +574,7 @@ items:
   summary: "\nThe debug info for the message.\n"
   remarks: 
   syntax: 
-    content: SetDebugInfo(String debugInfo)
+    content: Void SetDebugInfo(String debugInfo)
     parameters:
     - id: debugInfo
       type: CRMScript.Global.String
@@ -594,7 +594,7 @@ items:
   summary: "\nThe primary key (auto-incremented)\n"
   remarks: 
   syntax: 
-    content: SetEjMessageId(Integer ejMessageId)
+    content: Void SetEjMessageId(Integer ejMessageId)
     parameters:
     - id: ejMessageId
       type: CRMScript.Global.Integer
@@ -614,7 +614,7 @@ items:
   summary: "\nThe email header is saved in this field as raw text\n"
   remarks: 
   syntax: 
-    content: SetEmailHeader(String emailHeader)
+    content: Void SetEmailHeader(String emailHeader)
     parameters:
     - id: emailHeader
       type: CRMScript.Global.String
@@ -634,7 +634,7 @@ items:
   summary: "\nSet the extra field values on TicketMessageEntity with a map.\n"
   remarks: 
   syntax: 
-    content: SetExtraFields(Map extras)
+    content: Void SetExtraFields(Map extras)
     parameters:
   example: 
   - "\n<pre><code>NSTicketMessageEntity thing;\nMap extras;\nextras[&quot;SuperOffice:1&quot;] = &quot;[I:123]&quot;;\nextras[&quot;SuperOffice:1&quot;] = &quot;123&quot;; // this will also work, but beware of decimal point variations in different languages\nextras[&quot;custom.progid&quot;] = &quot;foobar&quot;;\nthing.SetExtraFields(extras);</code></pre>\n"
@@ -651,7 +651,7 @@ items:
   summary: "\nThe html body for the message (if any).\n"
   remarks: 
   syntax: 
-    content: SetHtmlBody(String htmlBody)
+    content: Void SetHtmlBody(String htmlBody)
     parameters:
     - id: htmlBody
       type: CRMScript.Global.String
@@ -671,7 +671,7 @@ items:
   summary: "\nIf this message is important or not.\n"
   remarks: 
   syntax: 
-    content: SetImportant(Bool important)
+    content: Void SetImportant(Bool important)
     parameters:
     - id: important
       type: CRMScript.Global.Bool
@@ -691,7 +691,7 @@ items:
   summary: "\nThe name of the mail sorter used when the email was imported. Note: We must use name instead of id since the id's change every time one changes the mail sorter. :-0\n"
   remarks: 
   syntax: 
-    content: SetMailSorter(String mailSorter)
+    content: Void SetMailSorter(String mailSorter)
     parameters:
     - id: mailSorter
       type: CRMScript.Global.String
@@ -711,7 +711,7 @@ items:
   summary: "\nDefines what kind of message this is.\n"
   remarks: "\n<p>See enum messageCategory.</p>\n"
   syntax: 
-    content: SetMessageCategory(TicketMessageCategory messageCategory)
+    content: Void SetMessageCategory(TicketMessageCategory messageCategory)
     parameters:
   example: 
   - "\n<pre><code>NSTicketMessageEntity thing;\nTicketMessageCategory messageCategory;\nthing.SetMessageCategory(messageCategory);</code></pre>\n"
@@ -728,7 +728,7 @@ items:
   summary: "\nContains the message headers, like To, Cc, Bcc information, or custom headers\n"
   remarks: 
   syntax: 
-    content: SetMessageHeaders(TicketMessageHeader[] messageHeaders)
+    content: Void SetMessageHeaders(TicketMessageHeader[] messageHeaders)
     parameters:
   example: 
   - "\n<pre><code>NSTicketMessageEntity thing;\nTicketMessageHeader[] messageHeaders;\nthing.SetMessageHeaders(messageHeaders);</code></pre>\n"
@@ -745,7 +745,7 @@ items:
   summary: "\nThe X-Message-Id header value from the email. Used for threading, i.e. connecting messages to existing tickets.\n"
   remarks: 
   syntax: 
-    content: SetMessageId(String messageId)
+    content: Void SetMessageId(String messageId)
     parameters:
     - id: messageId
       type: CRMScript.Global.String
@@ -765,7 +765,7 @@ items:
   summary: "\nIf this is an incoming message, this will contain the person\n"
   remarks: 
   syntax: 
-    content: SetPerson(NSPerson person)
+    content: Void SetPerson(NSPerson person)
     parameters:
     - id: person
       type: CRMScript.NetServer.NSPerson
@@ -785,7 +785,7 @@ items:
   summary: "\nA copy of the title of the ticket, for search optimisation and simpler reporting.\n"
   remarks: 
   syntax: 
-    content: SetSearchTitle(String searchTitle)
+    content: Void SetSearchTitle(String searchTitle)
     parameters:
     - id: searchTitle
       type: CRMScript.Global.String
@@ -805,7 +805,7 @@ items:
   summary: "\nThe securitylevel of the message.\n"
   remarks: "\n<p>See enum slevel.</p>\n"
   syntax: 
-    content: SetSlevel(TicketSecurityLevel slevel)
+    content: Void SetSlevel(TicketSecurityLevel slevel)
     parameters:
     - id: slevel
       type: CRMScript.Native.TicketSecurityLevel
@@ -825,7 +825,7 @@ items:
   summary: "\nThe connected ticket\n"
   remarks: 
   syntax: 
-    content: SetTicket(NSTicket ticket)
+    content: Void SetTicket(NSTicket ticket)
     parameters:
     - id: ticket
       type: CRMScript.NetServer.NSTicket
@@ -845,7 +845,7 @@ items:
   summary: "\nThe time spent (minutes) for this message.\n"
   remarks: 
   syntax: 
-    content: SetTimeSpent(Integer timeSpent)
+    content: Void SetTimeSpent(Integer timeSpent)
     parameters:
     - id: timeSpent
       type: CRMScript.Global.Integer
@@ -865,7 +865,7 @@ items:
   summary: "\nThe type of the message (plaintext/html).\n"
   remarks: "\n<p>See enum type.</p>\n"
   syntax: 
-    content: SetType(TicketMessageType type)
+    content: Void SetType(TicketMessageType type)
     parameters:
   example: 
   - "\n<pre><code>NSTicketMessageEntity thing;\nTicketMessageType type;\nthing.SetType(type);</code></pre>\n"
@@ -962,3 +962,9 @@ references:
   name: TicketMessageType
   nameWithType: TicketMessageType
   fullName: CRMScript.Native.TicketMessageType
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void

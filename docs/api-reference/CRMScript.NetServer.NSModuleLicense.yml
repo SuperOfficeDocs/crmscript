@@ -58,7 +58,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetAllowedUserType()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -77,7 +77,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetExtraFlags()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -96,7 +96,7 @@ items:
   remarks: 
   syntax: 
     content: String GetExtraInfo()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -115,7 +115,7 @@ items:
   remarks: 
   syntax: 
     content: Bool GetIsHidden()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Bool
   example: 
@@ -134,7 +134,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetLicenseType()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -153,7 +153,7 @@ items:
   remarks: 
   syntax: 
     content: String GetModuleDescription()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -172,7 +172,7 @@ items:
   remarks: 
   syntax: 
     content: String GetModuleName()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -191,7 +191,7 @@ items:
   remarks: 
   syntax: 
     content: String GetModuleTooltip()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -210,7 +210,7 @@ items:
   remarks: 
   syntax: 
     content: String GetModuleVersion()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -229,7 +229,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetNumberOfLicenses()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -248,7 +248,7 @@ items:
   remarks: 
   syntax: 
     content: String GetOwnerName()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -267,7 +267,7 @@ items:
   remarks: 
   syntax: 
     content: String GetPrerequisiteModuleName()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -286,7 +286,7 @@ items:
   remarks: 
   syntax: 
     content: String GetSignature()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -305,7 +305,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetSortOrder()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -324,7 +324,7 @@ items:
   remarks: 
   syntax: 
     content: Bool GetUnrestricted()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Bool
   example: 
@@ -357,7 +357,7 @@ items:
   summary: "\nAllowed associate type for user licenses: internal(0), external(4).\n"
   remarks: "\nSee <xref href=\"CRMScript.NetServer.AssociateType\" data-throw-if-not-resolved=\"false\"></xref>\n"
   syntax: 
-    content: SetAllowedUserType(Integer allowedUserType)
+    content: Void SetAllowedUserType(Integer allowedUserType)
     parameters:
     - id: allowedUserType
       type: CRMScript.Global.Integer
@@ -377,7 +377,7 @@ items:
   summary: "\nUnspecified extra flags of license, part of checksum. Value=1 means this a 'user plan'; such licenses cause the admin gui to switch to radiobutton view\n"
   remarks: 
   syntax: 
-    content: SetExtraFlags(Integer extraFlags)
+    content: Void SetExtraFlags(Integer extraFlags)
     parameters:
     - id: extraFlags
       type: CRMScript.Global.Integer
@@ -397,7 +397,7 @@ items:
   summary: "\nFree field, can be used by the module owner (example: host domain, for eJournal). NOTE: For rows with extraFlags=1 this field contains the list of modules that this plan comprises\n"
   remarks: 
   syntax: 
-    content: SetExtraInfo(String extraInfo)
+    content: Void SetExtraInfo(String extraInfo)
     parameters:
     - id: extraInfo
       type: CRMScript.Global.String
@@ -417,7 +417,7 @@ items:
   summary: "\nIf true, then this module should not appear in GUI and is not assignable by users\n"
   remarks: 
   syntax: 
-    content: SetIsHidden(Bool isHidden)
+    content: Void SetIsHidden(Bool isHidden)
     parameters:
     - id: isHidden
       type: CRMScript.Global.Bool
@@ -437,8 +437,8 @@ items:
   summary: "\nCRMScript method in the NSModuleLicense class that sets the licence typeThe entire system, per database, or per associate.\n"
   remarks: 
   syntax: 
-    content: SetLicenseType()
-    parameters:
+    content: Void SetLicenseType()
+    parameters: []
   example: 
   - "\n<pre><code>NSModuleLicense thing;\nInteger licenseType;\nthing.SetLicenseType(licenseType);</code></pre>\n"
 - uid: CRMScript.NetServer.NSModuleLicense.SetModuleDescription(String)
@@ -454,7 +454,7 @@ items:
   summary: "\nHuman-readable description of module, shown in GUI, default language. Additional languages can be added to LocaleText, resource type 25\n"
   remarks: 
   syntax: 
-    content: SetModuleDescription(String moduleDescription)
+    content: Void SetModuleDescription(String moduleDescription)
     parameters:
     - id: moduleDescription
       type: CRMScript.Global.String
@@ -474,7 +474,7 @@ items:
   summary: "\nThe name of the module, not visible in GUI but used in the code. This must be in UPPER CASE and only contain A-Z and 0-9. NO EXTENDED CHARACTERS please.\n"
   remarks: 
   syntax: 
-    content: SetModuleName(String moduleName)
+    content: Void SetModuleName(String moduleName)
     parameters:
     - id: moduleName
       type: CRMScript.Global.String
@@ -494,7 +494,7 @@ items:
   summary: "\nTooltip text, anything you want; shown when the cursor hovers over the line in the GUI. Default language. Additional languages can be added to LocaleText, resource type 27\n"
   remarks: 
   syntax: 
-    content: SetModuleTooltip(String moduleTooltip)
+    content: Void SetModuleTooltip(String moduleTooltip)
     parameters:
     - id: moduleTooltip
       type: CRMScript.Global.String
@@ -514,7 +514,7 @@ items:
   summary: "\nVersion string for this module\n"
   remarks: 
   syntax: 
-    content: SetModuleVersion(String moduleVersion)
+    content: Void SetModuleVersion(String moduleVersion)
     parameters:
     - id: moduleVersion
       type: CRMScript.Global.String
@@ -534,7 +534,7 @@ items:
   summary: "\nNumber of licenses purchased.\n"
   remarks: 
   syntax: 
-    content: SetNumberOfLicenses(Integer numberOfLicenses)
+    content: Void SetNumberOfLicenses(Integer numberOfLicenses)
     parameters:
     - id: numberOfLicenses
       type: CRMScript.Global.Integer
@@ -554,7 +554,7 @@ items:
   summary: "\nThe name of the module owner, not visible in GUI but used in the code. OwnerName SUPEROFFICE is reserved and may NEVER be used by partners. This must be in UPPER CASE and only contain A-Z and 0-9. NO EXTENDED CHARACTERS please.\n"
   remarks: 
   syntax: 
-    content: SetOwnerName(String ownerName)
+    content: Void SetOwnerName(String ownerName)
     parameters:
     - id: ownerName
       type: CRMScript.Global.String
@@ -574,7 +574,7 @@ items:
   summary: "\nIf set, specifies a module license needed before this license can be granted\n"
   remarks: 
   syntax: 
-    content: SetPrerequisiteModuleName(String prerequisiteModuleName)
+    content: Void SetPrerequisiteModuleName(String prerequisiteModuleName)
     parameters:
     - id: prerequisiteModuleName
       type: CRMScript.Global.String
@@ -594,7 +594,7 @@ items:
   summary: "\nSignature that verifies that this row is correctly transferred from SuperLicense\n"
   remarks: 
   syntax: 
-    content: SetSignature(String signature)
+    content: Void SetSignature(String signature)
     parameters:
     - id: signature
       type: CRMScript.Global.String
@@ -614,7 +614,7 @@ items:
   summary: "\nOrdering value* generated by SuperLicense and transferred here. Must be followed for signatures to be correct\n"
   remarks: 
   syntax: 
-    content: SetSortOrder(Integer sortOrder)
+    content: Void SetSortOrder(Integer sortOrder)
     parameters:
     - id: sortOrder
       type: CRMScript.Global.Integer
@@ -634,7 +634,7 @@ items:
   summary: "\nIf true, then there is no licenseNumber limit on how many of these modules may be assigned\n"
   remarks: 
   syntax: 
-    content: SetUnrestricted(Bool unrestricted)
+    content: Void SetUnrestricted(Bool unrestricted)
     parameters:
     - id: unrestricted
       type: CRMScript.Global.Bool
@@ -672,3 +672,9 @@ references:
   name: AssociateType
   nameWithType: AssociateType
   fullName: CRMScript.NetServer.AssociateType
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void

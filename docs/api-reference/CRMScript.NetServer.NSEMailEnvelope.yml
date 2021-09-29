@@ -48,7 +48,7 @@ items:
   remarks: 
   syntax: 
     content: NSEMailSOInfo GetEMailSOInfo()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.NetServer.NSEMailSOInfo
   example: 
@@ -67,7 +67,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetFlags()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -86,7 +86,7 @@ items:
   remarks: 
   syntax: 
     content: NSEMailAddress GetFrom()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.NetServer.NSEMailAddress
   example: 
@@ -105,7 +105,7 @@ items:
   remarks: 
   syntax: 
     content: String GetMessageId()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -124,7 +124,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetPriority()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -143,7 +143,7 @@ items:
   remarks: 
   syntax: 
     content: DateTime GetSent()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.DateTime
   example: 
@@ -162,7 +162,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetServerId()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -181,7 +181,7 @@ items:
   remarks: 
   syntax: 
     content: Integer GetSize()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.Integer
   example: 
@@ -200,7 +200,7 @@ items:
   remarks: 
   syntax: 
     content: String GetSubject()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.Global.String
   example: 
@@ -219,7 +219,7 @@ items:
   remarks: 
   syntax: 
     content: NSEMailAddress[] GetTo()
-    parameters:
+    parameters: []
     return:
       type: CRMScript.NetServer.NSEMailAddress[]
   example: 
@@ -252,7 +252,7 @@ items:
   summary: "\nGlue between SuperOffice data and an e-mail.\n"
   remarks: 
   syntax: 
-    content: SetEMailSOInfo(NSEMailSOInfo eMailSOInfo)
+    content: Void SetEMailSOInfo(NSEMailSOInfo eMailSOInfo)
     parameters:
   example: 
   - "\n<pre><code>NSEMailEnvelope thing;\nNSEMailSOInfo eMailSOInfo;\nthing.SetEMailSOInfo(eMailSOInfo);</code></pre>\n"
@@ -269,7 +269,7 @@ items:
   summary: "\nFlag status of this mail (unread, replied, deleted )\n"
   remarks: "\n<p>See enum</p>\n"
   syntax: 
-    content: SetFlags(Integer flags)
+    content: Void SetFlags(Integer flags)
     parameters:
     - id: flags
       type: CRMScript.Global.Integer
@@ -289,7 +289,7 @@ items:
   summary: "\nWho did the e-mail originate from\n"
   remarks: 
   syntax: 
-    content: SetFrom(NSEMailAddress from)
+    content: Void SetFrom(NSEMailAddress from)
     parameters:
   example: 
   - "\n<pre><code>NSEMailEnvelope thing;\nNSEMailAddress from;\nthing.SetFrom(from);</code></pre>\n"
@@ -306,7 +306,7 @@ items:
   summary: "\nUnique id of e-mails\n"
   remarks: 
   syntax: 
-    content: SetMessageId(String messageId)
+    content: Void SetMessageId(String messageId)
     parameters:
     - id: messageId
       type: CRMScript.Global.String
@@ -326,7 +326,7 @@ items:
   summary: "\nImportance of the e-mail\n"
   remarks: "\n<p>See enum priority.</p>\n"
   syntax: 
-    content: SetPriority(Integer priority)
+    content: Void SetPriority(Integer priority)
     parameters:
     - id: priority
       type: CRMScript.Global.Integer
@@ -346,7 +346,7 @@ items:
   summary: "\nWhen was the e-mail sent\n"
   remarks: 
   syntax: 
-    content: SetSent(DateTime sent)
+    content: Void SetSent(DateTime sent)
     parameters:
   example: 
   - "\n<pre><code>NSEMailEnvelope thing;\nDateTime sent;\nthing.SetSent(sent);</code></pre>\n"
@@ -363,7 +363,7 @@ items:
   summary: "\nUnique id for the e-mail on the server\n"
   remarks: 
   syntax: 
-    content: SetServerId(Integer serverId)
+    content: Void SetServerId(Integer serverId)
     parameters:
     - id: serverId
       type: CRMScript.Global.Integer
@@ -383,7 +383,7 @@ items:
   summary: "\nTotal size of the e-mail\n"
   remarks: 
   syntax: 
-    content: SetSize(Integer size)
+    content: Void SetSize(Integer size)
     parameters:
     - id: size
       type: CRMScript.Global.Integer
@@ -403,7 +403,7 @@ items:
   summary: "\nSubject of the e-mail\n"
   remarks: 
   syntax: 
-    content: SetSubject(String subject)
+    content: Void SetSubject(String subject)
     parameters:
     - id: subject
       type: CRMScript.Global.String
@@ -423,7 +423,7 @@ items:
   summary: "\nTo recipients of e-mail\n"
   remarks: 
   syntax: 
-    content: SetTo(NSEMailAddress[] to)
+    content: Void SetTo(NSEMailAddress[] to)
     parameters:
   example: 
   - "\n<pre><code>NSEMailEnvelope thing;\nNSEMailAddress[] to;\nthing.SetTo(to);</code></pre>\n"
@@ -490,3 +490,9 @@ references:
   name: ChatSessionFlags
   nameWithType: ChatSessionFlags
   fullName: CRMScript.NetServer.ChatSessionFlags
+- uid: CRMScript.Global.Void
+  commentId: T:CRMScript.Global.Void
+  isExternal: true
+  name: Void
+  nameWithType: Void
+  fullName: CRMScript.Global.Void

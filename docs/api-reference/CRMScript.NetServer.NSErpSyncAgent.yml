@@ -160,7 +160,7 @@ items:
   nameWithType: NSErpSyncAgent.ConnectActor(Integer,Integer,Integer,String,Integer)
   fullName: CRMScript.NetServer.NSErpSyncAgent.ConnectActor(Integer,Integer,Integer,String,Integer)
   type: Method
-  summary: "\nCreate a link between Erp and Crm and set default values\n"
+  summary: "\nCreates a link between Erp and Crm and set default values\n"
   remarks: "\n<p>| erpConnectionId | Integer | ErpConnectionId || crmRecordId | Integer | CrmRecordId || crmActorType | Integer | The Crm Actor type || erpKey | String | || erpActorType | Integer | The Erp Actor type || fieldValues NSErpSyncFieldValue[] | The Crm Fields |</p><ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Contact</li><li>Enum: 2 = Person</li><li>Enum: 3 = Project</li><li>Enum: 4 = Sale</li></ul><h3>erpActorType</h3><ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Customer</li><li>Enum: 2 = Supplier</li><li>Enum: 3 = Partner</li><li>Enum: 4 = Person</li><li>Enum: 5 = Project</li><li>Enum: 6 = Employee</li></ul>\n"
   syntax: 
     content: Void ConnectActor(Integer erpConnectionId, Integer crmRecordId, Integer crmActorType, String erpKey, Integer erpActorType, NSErpSyncFieldValue[] fieldValues)
@@ -227,9 +227,8 @@ items:
   nameWithType: NSErpSyncAgent.CreateDefaultErpSyncConnectorEntity()
   fullName: CRMScript.NetServer.NSErpSyncAgent.CreateDefaultErpSyncConnectorEntity()
   type: Method
-  summary: "\nSet default values into a new NSErpSyncConnectorEntity.
-NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance\n"
-  remarks: 
+  summary: "\nSets default values into a new NSErpSyncConnectorEntity.\n"
+  remarks: "\nNetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance\n"
   syntax: 
     content: NSErpSyncConnectorEntity CreateDefaultErpSyncConnectorEntity()
     parameters: []
@@ -469,7 +468,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSErpSyncAgent.GetActorTypeMapping(Integer,Integer)
   fullName: CRMScript.NetServer.NSErpSyncAgent.GetActorTypeMapping(Integer,Integer)
   type: Method
-  summary: "\nGet the current mappings for one connection/actor; connection+actor type = unique key\n"
+  summary: "\nGets the current mappings for one connection/actor; connection+actor type = unique key\n"
   remarks: "\n<p>See enum actorType.</p>\n"
   syntax: 
     content: NSErpSyncActorTypeMapping GetActorTypeMapping(Integer erpConnectionId, Integer actorType)
@@ -560,7 +559,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSErpSyncAgent.GetConnectionsAndDisplayFields(Integer,Integer)
   fullName: CRMScript.NetServer.NSErpSyncAgent.GetConnectionsAndDisplayFields(Integer,Integer)
   type: Method
-  summary: "\nGet all connection statuses and fields for a given entity\n"
+  summary: "\nGets all connection statuses and fields for a given entity\n"
   remarks: "\n<p>See enum entityId.</p>\n"
   syntax: 
     content: NSErpConnectionData[] GetConnectionsAndDisplayFields(Integer crmActorType, Integer entityId)
@@ -610,7 +609,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSErpSyncAgent.GetDefaultValueInfo(Integer)
   fullName: CRMScript.NetServer.NSErpSyncAgent.GetDefaultValueInfo(Integer)
   type: Method
-  summary: "\nGet information about default value for an ERP field\n"
+  summary: "\nGets information about default value for an ERP field\n"
   remarks: 
   syntax: 
     content: NSErpSyncDefaultValue GetDefaultValueInfo(Integer erpFieldId)
@@ -632,7 +631,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSErpSyncAgent.GetEngineStatus()
   fullName: CRMScript.NetServer.NSErpSyncAgent.GetEngineStatus()
   type: Method
-  summary: "\nGet the current status of the Sync engine\n"
+  summary: "\nGets the current status of the Sync engine\n"
   remarks: 
   syntax: 
     content: NSErpSyncEngineStatus GetEngineStatus()
@@ -671,7 +670,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSErpSyncAgent.GetErpFieldValues(Integer,Integer,Integer,String[])
   fullName: CRMScript.NetServer.NSErpSyncAgent.GetErpFieldValues(Integer,Integer,Integer,String[])
   type: Method
-  summary: "\nGet the values for the specified fields from the ERP connection\n"
+  summary: "\nGets the values for the specified fields from the ERP connection\n"
   remarks: "\n<p>See enum fieldKeys.</p>\n"
   syntax: 
     content: String[] GetErpFieldValues(Integer erpConnectionId, Integer crmActorType, Integer entityId, String[] fieldKeys)
@@ -702,7 +701,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSErpSyncAgent.GetErpSyncConnectionSummary(Integer)
   fullName: CRMScript.NetServer.NSErpSyncAgent.GetErpSyncConnectionSummary(Integer)
   type: Method
-  summary: "\nGet a summary of the current ErpSync configuration/setup\n"
+  summary: "\nGets a summary of the current ErpSync configuration/setup\n"
   remarks: 
   syntax: 
     content: NSErpSyncConnectionSummary GetErpSyncConnectionSummary(Integer erpSyncConnectionId)
@@ -746,7 +745,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSErpSyncAgent.GetFieldsForNewErpActor(Integer,Integer)
   fullName: CRMScript.NetServer.NSErpSyncAgent.GetFieldsForNewErpActor(Integer,Integer)
   type: Method
-  summary: "\nGet the fields that must be filled out when creating a new ERP actor\n"
+  summary: "\nGets the fields that must be filled out when creating a new ERP actor\n"
   remarks: "\n<p>See enum erpActorType.</p>\n"
   syntax: 
     content: NSFieldMetadata[] GetFieldsForNewErpActor(Integer erpConnectionId, Integer erpActorType)
@@ -771,7 +770,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSErpSyncAgent.GetFieldValuesFromCrm(Integer,Integer)
   fullName: CRMScript.NetServer.NSErpSyncAgent.GetFieldValuesFromCrm(Integer,Integer)
   type: Method
-  summary: "\nGet Crm Field values<p></p>\n<ul><li><strong>RecordId</strong>The ID of the CRM entity</li><li><strong>actorTypeCrm</strong>CRM Actor type</li><li>Enum: 0 = Unknown</li><li>Enum: 1 = Contact</li><li>Enum: 2 = Person</li><li>Enum: 3 = Project</li><li>Enum: 4 = Sale</li></ul><strong>Returns:</strong>NSErpSyncFieldValue[]<p></p>\n<pre><code>NSErpSyncAgent agent;\nInteger recordId;\nInteger actorTypeCrm;\nNSErpSyncFieldValue[] res = agent.GetFieldValuesFromCrm(recordId, actorTypeCrm);</code></pre>\n"
+  summary: "\nGets Crm Field values<p></p>\n<ul><li><strong>RecordId</strong>The ID of the CRM entity</li><li><strong>actorTypeCrm</strong>CRM Actor type</li><li>Enum: 0 = Unknown</li><li>Enum: 1 = Contact</li><li>Enum: 2 = Person</li><li>Enum: 3 = Project</li><li>Enum: 4 = Sale</li></ul><strong>Returns:</strong>NSErpSyncFieldValue[]<p></p>\n<pre><code>NSErpSyncAgent agent;\nInteger recordId;\nInteger actorTypeCrm;\nNSErpSyncFieldValue[] res = agent.GetFieldValuesFromCrm(recordId, actorTypeCrm);</code></pre>\n"
   remarks: 
   syntax: 
     content: NSErpSyncFieldValue[] GetFieldValuesFromCrm(Integer recordId, Integer actorTypeCrm)
@@ -796,7 +795,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSErpSyncAgent.GetFieldValuesFromErp(Integer,Integer,String)
   fullName: CRMScript.NetServer.NSErpSyncAgent.GetFieldValuesFromErp(Integer,Integer,String)
   type: Method
-  summary: "\nGet Erp Field values\n"
+  summary: "\nGets Erp Field values\n"
   remarks: "\n<p>See enum erpKey.</p>\n"
   syntax: 
     content: NSErpSyncFieldValue[] GetFieldValuesFromErp(Integer erpConnectionId, Integer actorTypeErp, String erpKey)

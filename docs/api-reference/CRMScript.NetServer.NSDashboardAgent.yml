@@ -6,6 +6,7 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSDashboardAgent.#ctor
   - CRMScript.NetServer.NSDashboardAgent.CreateDefaultDashboard()
   - CRMScript.NetServer.NSDashboardAgent.CreateDefaultDashboardTile()
   - CRMScript.NetServer.NSDashboardAgent.CreateNewFromTemplate(Integer,String,String,Integer,NSVisibleFor[])
@@ -18,15 +19,30 @@ items:
   - CRMScript.NetServer.NSDashboardAgent.GetData(Integer,String)
   - CRMScript.NetServer.NSDashboardAgent.GetDataWithSelection(Integer,Integer,String)
   - CRMScript.NetServer.NSDashboardAgent.GetStandardDashboardTileFromChartId(String)
-  - CRMScript.NetServer.NSDashboardAgent.#ctor
-  - CRMScript.NetServer.NSDashboardAgent.SaveDashboard()
-  - CRMScript.NetServer.NSDashboardAgent.SaveDashboardTile()
+  - CRMScript.NetServer.NSDashboardAgent.SaveDashboard(NSDashboard)
+  - CRMScript.NetServer.NSDashboardAgent.SaveDashboardTile(NSDashboardTile)
   - CRMScript.NetServer.NSDashboardAgent.SetTile(Integer,Integer,Integer)
   name: NSDashboardAgent
   nameWithType: NSDashboardAgent
   fullName: CRMScript.NetServer.NSDashboardAgent
   type: Class
   summary: "\nAgent lets you configure dashboard tiles and retrieve dashboard data.\n"
+  example: 
+  - "\n<pre><code>NSDashboardAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSDashboardAgent.#ctor
+  commentId: M:CRMScript.NetServer.NSDashboardAgent.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSDashboardAgent
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSDashboardAgent.#ctor
+  fullName: CRMScript.NetServer.NSDashboardAgent.#ctor
+  type: Constructor
+  summary: "\nAgent lets you configure dashboard tiles and retrieve dashboard data.\n"
+  remarks: 
+  syntax: 
+    content: NSDashboardAgent
   example: 
   - "\n<pre><code>NSDashboardAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDashboardAgent.CreateDefaultDashboard()
@@ -39,14 +55,14 @@ items:
   nameWithType: NSDashboardAgent.CreateDefaultDashboard()
   fullName: CRMScript.NetServer.NSDashboardAgent.CreateDefaultDashboard()
   type: Method
-  summary: "\nSet default values into a new NSDashboard.
-NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance\n"
-  remarks: 
+  summary: "\nSets default values into a new NSDashboard.\n"
+  remarks: "\nNetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance\n"
   syntax: 
     content: NSDashboard CreateDefaultDashboard()
     parameters: []
     return:
       type: CRMScript.NetServer.NSDashboard
+      description: 
   example: 
   - "\n<pre><code>NSDashboardAgent agent;\nNSDashboard thing = agent.CreateDefaultDashboard();\nthing = agent.SaveDashboard(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDashboardAgent.CreateDefaultDashboardTile()
@@ -59,14 +75,14 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSDashboardAgent.CreateDefaultDashboardTile()
   fullName: CRMScript.NetServer.NSDashboardAgent.CreateDefaultDashboardTile()
   type: Method
-  summary: "\nSet default values into a new NSDashboardTile.
-NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance\n"
-  remarks: 
+  summary: "\nSets default values into a new NSDashboardTile.\n"
+  remarks: "\nNetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance\n"
   syntax: 
     content: NSDashboardTile CreateDefaultDashboardTile()
     parameters: []
     return:
       type: CRMScript.NetServer.NSDashboardTile
+      description:
   example: 
   - "\n<pre><code>NSDashboardAgent agent;\nNSDashboardTile thing = agent.CreateDefaultDashboardTile();\nthing = agent.SaveDashboardTile(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDashboardAgent.CreateNewFromTemplate(Integer,String,String,Integer,NSVisibleFor[])
@@ -79,7 +95,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSDashboardAgent.CreateNewFromTemplate(Integer,String,String,Integer,NSVisibleFor[])
   fullName: CRMScript.NetServer.NSDashboardAgent.CreateNewFromTemplate(Integer,String,String,Integer,NSVisibleFor[])
   type: Method
-  summary: "\nCreate new tile from another tile used as template\n"
+  summary: "\nCreates new tile from another tile used as template\n"
   remarks: 
   syntax: 
     content: NSDashboardTile CreateNewFromTemplate(Integer dashboardTileId, String caption, String description, Integer selectionId, NSVisibleFor[] visibleFor)
@@ -101,6 +117,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
       description: 
     return:
       type: CRMScript.NetServer.NSDashboardTile
+      description:
   example: 
   - "\n<pre><code>NSDashboardAgent agent;\nInteger dashboardTileId;\nString caption;\nString description;\nInteger selectionId;\nNSVisibleFor[] visibleFor;\nNSDashboardTile res = agent.CreateNewFromTemplate(dashboardTileId, caption, description, selectionId, visibleFor);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDashboardAgent.DeleteDashboard(Integer)
@@ -223,7 +240,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSDashboardAgent.GetDashboardTiles(Integer[])
   fullName: CRMScript.NetServer.NSDashboardAgent.GetDashboardTiles(Integer[])
   type: Method
-  summary: "\nGets an array of dashboard tiles for the provided ids\n"
+  summary: "\nGets an array of dashboard tiles for the provided IDs\n"
   remarks: 
   syntax: 
     content: NSDashboardTile[] GetDashboardTiles(Integer[] dashboardTileIds)
@@ -233,6 +250,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
       description: 
     return:
       type: CRMScript.NetServer.NSDashboardTile[]
+      description:
   example: 
   - "\n<pre><code>NSDashboardAgent agent;\nInteger[] dashboardTileIds;\nNSDashboardTile[] res = agent.GetDashboardTiles(dashboardTileIds);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDashboardAgent.GetData(Integer,String)
@@ -245,7 +263,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSDashboardAgent.GetData(Integer,String)
   fullName: CRMScript.NetServer.NSDashboardAgent.GetData(Integer,String)
   type: Method
-  summary: "\nGet data for this tile\n"
+  summary: "\nGets data for this tile\n"
   remarks: 
   syntax: 
     content: NSTileData[] GetData(Integer dashboardTileId, String restrictions)
@@ -258,6 +276,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
       description: 
     return:
       type: CRMScript.NetServer.NSTileData[]
+      description:
   example: 
   - "\n<pre><code>NSDashboardAgent agent;\nInteger dashboardTileId;\nString restrictions;\nNSTileData[] res = agent.GetData(dashboardTileId, restrictions);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDashboardAgent.GetDataWithSelection(Integer,Integer,String)
@@ -270,7 +289,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSDashboardAgent.GetDataWithSelection(Integer,Integer,String)
   fullName: CRMScript.NetServer.NSDashboardAgent.GetDataWithSelection(Integer,Integer,String)
   type: Method
-  summary: "\nGet data for this tile\n"
+  summary: "\nGets data for this tile\n"
   remarks: 
   syntax: 
     content: NSTileData[] GetDataWithSelection(Integer dashboardTileId, Integer selectionId, String restrictions)
@@ -286,6 +305,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
       description: 
     return:
       type: CRMScript.NetServer.NSTileData[]
+      description:
   example: 
   - "\n<pre><code>NSDashboardAgent agent;\nInteger dashboardTileId;\nInteger selectionId;\nString restrictions;\nNSTileData[] res = agent.GetDataWithSelection(dashboardTileId, selectionId, restrictions);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDashboardAgent.GetStandardDashboardTileFromChartId(String)
@@ -298,7 +318,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSDashboardAgent.GetStandardDashboardTileFromChartId(String)
   fullName: CRMScript.NetServer.NSDashboardAgent.GetStandardDashboardTileFromChartId(String)
   type: Method
-  summary: "\nGets the standard tile (not personal tile) corresponding to the given chart id\n"
+  summary: "\nGets the standard tile (not personal tile) corresponding to the given chart ID\n"
   remarks: 
   syntax: 
     content: NSDashboardTile GetStandardDashboardTileFromChartId(String chartId)
@@ -308,60 +328,52 @@ NetServer calculates default values (for example, Country) on the entity, which 
       description: 
     return:
       type: CRMScript.NetServer.NSDashboardTile
+      description:
   example: 
   - "\n<pre><code>NSDashboardAgent agent;\nString chartId;\nNSDashboardTile res = agent.GetStandardDashboardTileFromChartId(chartId);</code></pre>\n"
-- uid: CRMScript.NetServer.NSDashboardAgent.#ctor
-  commentId: M:CRMScript.NetServer.NSDashboardAgent.#ctor
-  id: '#ctor'
-  so.intellisense: Void.NSDashboardAgent
-  langs:
-  - crmscript
-  name: '#ctor'
-  nameWithType: NSDashboardAgent.#ctor
-  fullName: CRMScript.NetServer.NSDashboardAgent.#ctor
-  type: Constructor
-  summary: "\nAgent lets you configure dashboard tiles and retrieve dashboard data.\n"
-  remarks: 
-  syntax: 
-    content: NSDashboardAgent
-  example: 
-  - "\n<pre><code>NSDashboardAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
-- uid: CRMScript.NetServer.NSDashboardAgent.SaveDashboard()
-  commentId: M:CRMScript.NetServer.NSDashboardAgent.SaveDashboard()
-  id: 'SaveDashboard()'
+- uid: CRMScript.NetServer.NSDashboardAgent.SaveDashboard(NSDashboard)
+  commentId: M:CRMScript.NetServer.NSDashboardAgent.SaveDashboard(NSDashboard)
+  id: 'SaveDashboard(NSDashboard)'
   so.intellisense: NSDashboardAgent.SaveDashboard
   langs:
   - crmscript
-  name: 'SaveDashboard()'
-  nameWithType: NSDashboardAgent.SaveDashboard()
-  fullName: CRMScript.NetServer.NSDashboardAgent.SaveDashboard()
+  name: 'SaveDashboard(NSDashboard)'
+  nameWithType: NSDashboardAgent.SaveDashboard(NSDashboard)
+  fullName: CRMScript.NetServer.NSDashboardAgent.SaveDashboard(NSDashboard)
   type: Method
-  summary: "\nUpdates the existing NSDashboard or creates a new NSDashboard if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>dashboard</strong>The NSDashboard to save.</li></ul>\n"
+  summary: "\nUpdates the existing NSDashboard or creates a new NSDashboard if the id parameter is 0\n"
   remarks: 
   syntax: 
     content: NSDashboard SaveDashboard(NSDashboard dashboard)
     parameters:
+    - id: dashboard
+      type: CRMScript.NetServer.NSDashboard
+      description: The NSDashboard to save.
     return:
       type: CRMScript.NetServer.NSDashboard
   example: 
   - "\n<pre><code>NSDashboard  agent;\nNSDashboard thing = agent.CreateDefaultDashboard();\nthing = agent.SaveDashboard(thing);</code></pre>\n"
-- uid: CRMScript.NetServer.NSDashboardAgent.SaveDashboardTile()
-  commentId: M:CRMScript.NetServer.NSDashboardAgent.SaveDashboardTile()
-  id: 'SaveDashboardTile()'
+- uid: CRMScript.NetServer.NSDashboardAgent.SaveDashboardTile(NSDashboardTile)
+  commentId: M:CRMScript.NetServer.NSDashboardAgent.SaveDashboardTile(NSDashboardTile)
+  id: 'SaveDashboardTile(NSDashboardTile)'
   so.intellisense: NSDashboardAgent.SaveDashboardTile
   langs:
   - crmscript
-  name: 'SaveDashboardTile()'
-  nameWithType: NSDashboardAgent.SaveDashboardTile()
-  fullName: CRMScript.NetServer.NSDashboardAgent.SaveDashboardTile()
+  name: 'SaveDashboardTile(NSDashboardTile)'
+  nameWithType: NSDashboardAgent.SaveDashboardTile(NSDashboardTile)
+  fullName: CRMScript.NetServer.NSDashboardAgent.SaveDashboardTile(NSDashboardTile)
   type: Method
-  summary: "\nUpdates the existing NSDashboardTile or creates a new NSDashboardTile if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>dashboardTile</strong>The NSDashboardTile to save.</li></ul>\n"
+  summary: "\nUpdates the existing NSDashboardTile or creates a new NSDashboardTile if the id parameter is 0\n"
   remarks: 
   syntax: 
     content: NSDashboardTile SaveDashboardTile(NSDashboardTile dashboardTile)
     parameters:
+    - id: dashboardTile
+      type: CRMScript.NetServer.NSDashboardTile
+      description: The NSDashboardTile to save.
     return:
       type: CRMScript.NetServer.NSDashboardTile
+      description:
   example: 
   - "\n<pre><code>NSDashboard  agent;\nNSDashboardTile thing = agent.CreateDefaultDashboardTile();\nthing = agent.SaveDashboardTile(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDashboardAgent.SetTile(Integer,Integer,Integer)
@@ -390,6 +402,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
       description: 
     return:
       type: CRMScript.NetServer.NSDashboard
+      description:
   example: 
   - "\n<pre><code>NSDashboardAgent agent;\nInteger dashboardId;\nInteger tileId;\nInteger position;\nNSDashboard res = agent.SetTile(dashboardId, tileId, position);</code></pre>\n"
 references:

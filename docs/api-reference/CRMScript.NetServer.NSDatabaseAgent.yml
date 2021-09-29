@@ -6,9 +6,9 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSDatabaseAgent.#ctor
   - CRMScript.NetServer.NSDatabaseAgent.GetStepsFromNetServerCode()
   - CRMScript.NetServer.NSDatabaseAgent.GetStepsInDatabase()
-  - CRMScript.NetServer.NSDatabaseAgent.#ctor
   name: NSDatabaseAgent
   nameWithType: NSDatabaseAgent
   fullName: CRMScript.NetServer.NSDatabaseAgent
@@ -16,44 +16,6 @@ items:
   summary: "\nDatabase schema queries and changes.\n"
   example: 
   - "\n<pre><code>NSDatabaseAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
-- uid: CRMScript.NetServer.NSDatabaseAgent.GetStepsFromNetServerCode()
-  commentId: M:CRMScript.NetServer.NSDatabaseAgent.GetStepsFromNetServerCode()
-  id: 'GetStepsFromNetServerCode()'
-  so.intellisense: NSDatabaseAgent.GetStepsFromNetServerCode
-  langs:
-  - crmscript
-  name: 'GetStepsFromNetServerCode()'
-  nameWithType: NSDatabaseAgent.GetStepsFromNetServerCode()
-  fullName: CRMScript.NetServer.NSDatabaseAgent.GetStepsFromNetServerCode()
-  type: Method
-  summary: "\nGet information about the dictionary steps that NetServer was generated for<p></p>\n<strong>Returns:</strong>Array of dictionary steps used when NetServer was generated, listing only the highest number for each step<p></p>\n<pre><code>NSDatabaseAgent agent;\nNSDictionaryStepInformation[] res = agent.GetStepsFromNetServerCode();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: NSDictionaryStepInformation[] GetStepsFromNetServerCode()
-    parameters: []
-    return:
-      type: CRMScript.NetServer.NSDictionaryStepInformation[]
-  example: 
-  - "\n<pre><code>NSDatabaseAgent agent;\nNSDictionaryStepInformation[] res = agent.GetStepsFromNetServerCode();</code></pre>\n"
-- uid: CRMScript.NetServer.NSDatabaseAgent.GetStepsInDatabase()
-  commentId: M:CRMScript.NetServer.NSDatabaseAgent.GetStepsInDatabase()
-  id: 'GetStepsInDatabase()'
-  so.intellisense: NSDatabaseAgent.GetStepsInDatabase
-  langs:
-  - crmscript
-  name: 'GetStepsInDatabase()'
-  nameWithType: NSDatabaseAgent.GetStepsInDatabase()
-  fullName: CRMScript.NetServer.NSDatabaseAgent.GetStepsInDatabase()
-  type: Method
-  summary: "\nGet information about the dictionary steps that are in the currently-loggedon database<p></p>\n<strong>Returns:</strong>Array of dictionary steps in the database, listing only the highest number for each step<p></p>\n<pre><code>NSDatabaseAgent agent;\nNSDictionaryStepInformation[] res = agent.GetStepsInDatabase();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: NSDictionaryStepInformation[] GetStepsInDatabase()
-    parameters: []
-    return:
-      type: CRMScript.NetServer.NSDictionaryStepInformation[]
-  example: 
-  - "\n<pre><code>NSDatabaseAgent agent;\nNSDictionaryStepInformation[] res = agent.GetStepsInDatabase();</code></pre>\n"
 - uid: CRMScript.NetServer.NSDatabaseAgent.#ctor
   commentId: M:CRMScript.NetServer.NSDatabaseAgent.#ctor
   id: '#ctor'
@@ -70,6 +32,46 @@ items:
     content: NSDatabaseAgent
   example: 
   - "\n<pre><code>NSDatabaseAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSDatabaseAgent.GetStepsFromNetServerCode()
+  commentId: M:CRMScript.NetServer.NSDatabaseAgent.GetStepsFromNetServerCode()
+  id: 'GetStepsFromNetServerCode()'
+  so.intellisense: NSDatabaseAgent.GetStepsFromNetServerCode
+  langs:
+  - crmscript
+  name: 'GetStepsFromNetServerCode()'
+  nameWithType: NSDatabaseAgent.GetStepsFromNetServerCode()
+  fullName: CRMScript.NetServer.NSDatabaseAgent.GetStepsFromNetServerCode()
+  type: Method
+  summary: "\nGets information about the dictionary steps that NetServer was generated for\n"
+  remarks: 
+  syntax: 
+    content: NSDictionaryStepInformation[] GetStepsFromNetServerCode()
+    parameters: []
+    return:
+      type: CRMScript.NetServer.NSDictionaryStepInformation[]
+      description:
+  example: 
+  - "\n<pre><code>NSDatabaseAgent agent;\nNSDictionaryStepInformation[] res = agent.GetStepsFromNetServerCode();</code></pre>\n"
+- uid: CRMScript.NetServer.NSDatabaseAgent.GetStepsInDatabase()
+  commentId: M:CRMScript.NetServer.NSDatabaseAgent.GetStepsInDatabase()
+  id: 'GetStepsInDatabase()'
+  so.intellisense: NSDatabaseAgent.GetStepsInDatabase
+  langs:
+  - crmscript
+  name: 'GetStepsInDatabase()'
+  nameWithType: NSDatabaseAgent.GetStepsInDatabase()
+  fullName: CRMScript.NetServer.NSDatabaseAgent.GetStepsInDatabase()
+  type: Method
+  summary: "\nGets information about the dictionary steps that are in the currently logged-on database\n"
+  remarks: 
+  syntax: 
+    content: NSDictionaryStepInformation[] GetStepsInDatabase()
+    parameters: []
+    return:
+      type: CRMScript.NetServer.NSDictionaryStepInformation[]
+      description: Array of dictionary steps in the database, listing only the highest number for each step
+  example: 
+  - "\n<pre><code>NSDatabaseAgent agent;\nNSDictionaryStepInformation[] res = agent.GetStepsInDatabase();</code></pre>\n"
 references:
 - uid: CRMScript.NetServer.NSDatabaseAgent
   commentId: T:CRMScript.NetServer.NSDatabaseAgent

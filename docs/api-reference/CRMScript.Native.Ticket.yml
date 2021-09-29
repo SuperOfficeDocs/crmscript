@@ -69,7 +69,7 @@ items:
     parameters:
     - id: ids
       type: CRMScript.Global.Vector
-      description: A Vector of Strings containing the customerIds to add as secondary customers on the ticket
+      description: an array of Strings containing the customerIds to add as secondary customers on the ticket
     return: 
       type: CRMScript.Global.Void
   example: 
@@ -236,7 +236,7 @@ items:
   nameWithType: Ticket.getValue(String)
   fullName: CRMScript.Native.Ticket.getValue(String)
   type: Method
-  summary: "\nGet the value of given column name as a String\n"
+  summary: "\nGets the value of given column name as a String\n"
   remarks: "\nPossible values:<ul><li>id</li><li>title</li><li>category: the id</li><li>ownedBy: (owned_by), the id of the user who owns the ticket</li><li>slevel: the security level of the ticket, 1 is internal, 2 is external</li><li>priority: the id</li><li>status: 1 = active, 2 = closed, 3 = postponed, 4 = deleted, 5 = composed</li><li>ticketStatus</li><li>custId: the id of the primary customer</li><li>createdBy: the id of the user who posted the ticket, 1 if the ticket is posted into the system</li><li>author</li><li>activate: the datetime when the ticket was activated</li><li>createdAt: (created_at), the datetime when the ticket was created</li><li>closedAt: (closed_at), the datetime when the ticket was closed</li><li>repliedAt: (replied_at), the datetime when the ticket first was replied at</li><li>origCategory: the original category</li><li>origPriority: the original priority</li><li>isInEscalation</li><li>displayFilter</li><li>filterId</li><li>filterAddress</li><li>readStatus</li><li>deadline</li><li>readByOwner</li><li>firstReadByUser</li><li>firstReadByOwner</li></ul>\n"
   syntax: 
     content: String getValue(String colName)

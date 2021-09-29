@@ -1,11 +1,13 @@
 ### YamlMime:ManagedReference
 items:
 - uid: CRMScript.NetServer.NSDSAParameters
+  # FIXME This class is incomplete. It's actually a .NET Datatype that is a property in the NSSignedPublicKey class
   commentId: T:CRMScript.NetServer.NSDSAParameters
   id: NSDSAParameters
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSDSAParameters.#ctor
   - CRMScript.NetServer.NSDSAParameters.GetCounter()
   - CRMScript.NetServer.NSDSAParameters.GetG()
   - CRMScript.NetServer.NSDSAParameters.GetJ()
@@ -13,7 +15,6 @@ items:
   - CRMScript.NetServer.NSDSAParameters.GetQ()
   - CRMScript.NetServer.NSDSAParameters.GetSeed()
   - CRMScript.NetServer.NSDSAParameters.GetY()
-  - CRMScript.NetServer.NSDSAParameters.#ctor
   - CRMScript.NetServer.NSDSAParameters.SetCounter(Integer)
   - CRMScript.NetServer.NSDSAParameters.SetG()
   - CRMScript.NetServer.NSDSAParameters.SetJ()
@@ -26,6 +27,21 @@ items:
   fullName: CRMScript.NetServer.NSDSAParameters
   type: Class
   summary: 
+  example: 
+- uid: CRMScript.NetServer.NSDSAParameters.#ctor
+  commentId: M:CRMScript.NetServer.NSDSAParameters.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSDSAParameters
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSDSAParameters.#ctor
+  fullName: CRMScript.NetServer.NSDSAParameters.#ctor
+  type: Constructor
+  summary: 
+  remarks: 
+  syntax: 
+    content: NSDSAParameters
   example: 
 - uid: CRMScript.NetServer.NSDSAParameters.GetCounter()
   commentId: M:CRMScript.NetServer.NSDSAParameters.GetCounter()
@@ -40,8 +56,11 @@ items:
   summary: 
   remarks: 
   syntax: 
-    content: GetCounter()
+    content: Integer GetCounter()
     parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description:
   example: 
 - uid: CRMScript.NetServer.NSDSAParameters.GetG()
   commentId: M:CRMScript.NetServer.NSDSAParameters.GetG()
@@ -139,21 +158,6 @@ items:
     content: GetY()
     parameters: []
   example: 
-- uid: CRMScript.NetServer.NSDSAParameters.#ctor
-  commentId: M:CRMScript.NetServer.NSDSAParameters.#ctor
-  id: '#ctor'
-  so.intellisense: Void.NSDSAParameters
-  langs:
-  - crmscript
-  name: '#ctor'
-  nameWithType: NSDSAParameters.#ctor
-  fullName: CRMScript.NetServer.NSDSAParameters.#ctor
-  type: Constructor
-  summary: 
-  remarks: 
-  syntax: 
-    content: NSDSAParameters
-  example: 
 - uid: CRMScript.NetServer.NSDSAParameters.SetCounter(Integer)
   commentId: M:CRMScript.NetServer.NSDSAParameters.SetCounter(Integer)
   id: 'SetCounter(Integer)'
@@ -167,9 +171,9 @@ items:
   summary: 
   remarks: 
   syntax: 
-    content: Void SetCounter(Integer p_0)
+    content: Void SetCounter(Integer counter)
     parameters:
-    - id: p_0
+    - id: counter
       type: CRMScript.Global.Integer
       description: 
     return:
@@ -188,8 +192,13 @@ items:
   summary: 
   remarks: 
   syntax: 
-    content: Void SetG(NSBinary p_0)
+    content: Void SetG(NSBinary value)
     parameters:
+    - id: value
+      type: CRMScript.NetServer.NSBinary
+      description:
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSDSAParameters.SetJ()
   commentId: M:CRMScript.NetServer.NSDSAParameters.SetJ()
@@ -204,7 +213,7 @@ items:
   summary: 
   remarks: 
   syntax: 
-    content: Void SetJ(NSBinary p_0)
+    content: Void SetJ(NSBinary value)
     parameters:
   example: 
 - uid: CRMScript.NetServer.NSDSAParameters.SetP()
@@ -220,7 +229,7 @@ items:
   summary: 
   remarks: 
   syntax: 
-    content: Void SetP(NSBinary p_0)
+    content: Void SetP(NSBinary value)
     parameters:
   example: 
 - uid: CRMScript.NetServer.NSDSAParameters.SetQ()
@@ -236,7 +245,7 @@ items:
   summary: 
   remarks: 
   syntax: 
-    content: Void SetQ(NSBinary p_0)
+    content: Void SetQ(NSBinary value)
     parameters:
   example: 
 - uid: CRMScript.NetServer.NSDSAParameters.SetSeed()
@@ -252,7 +261,7 @@ items:
   summary: 
   remarks: 
   syntax: 
-    content: Void SetSeed(NSBinary p_0)
+    content: Void SetSeed(NSBinary value)
     parameters:
   example: 
 - uid: CRMScript.NetServer.NSDSAParameters.SetY()
@@ -268,7 +277,7 @@ items:
   summary: 
   remarks: 
   syntax: 
-    content: Void SetY(NSBinary p_0)
+    content: Void SetY(NSBinary value)
     parameters:
   example: 
 references:

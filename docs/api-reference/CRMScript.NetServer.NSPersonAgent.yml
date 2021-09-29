@@ -196,7 +196,7 @@ items:
   nameWithType: NSPersonAgent.CheckTemporaryKey(String)
   fullName: CRMScript.NetServer.NSPersonAgent.CheckTemporaryKey(String)
   type: Method
-  summary: "\nCheck a temporary key for validity, and in case it is valid, return its domain, targetId and personId\n"
+  summary: "\nChecks a temporary key for validity, and in case it is valid, return its domain, targetId and personId\n"
   remarks: 
   syntax: 
     content: NSTemporaryKeyInfo CheckTemporaryKey(String temporaryKey)
@@ -239,7 +239,7 @@ items:
   nameWithType: NSPersonAgent.CreateDefaultConsentPerson()
   fullName: CRMScript.NetServer.NSPersonAgent.CreateDefaultConsentPerson()
   type: Method
-  summary: "\nSet default values into a new NSConsentPerson.<p></p>\nNetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>A new NSConsentPerson with default values.<p></p>\n<pre><code>NSPersonAgent agent;\nNSConsentPerson thing = agent.CreateDefaultConsentPerson();\nthing = agent.SaveConsentPerson(thing);</code></pre>\n"
+  summary: "\nSets default values into a new NSConsentPerson.<p></p>\nNetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>A new NSConsentPerson with default values.<p></p>\n<pre><code>NSPersonAgent agent;\nNSConsentPerson thing = agent.CreateDefaultConsentPerson();\nthing = agent.SaveConsentPerson(thing);</code></pre>\n"
   remarks: 
   syntax: 
     content: NSConsentPerson CreateDefaultConsentPerson()
@@ -288,7 +288,7 @@ items:
   nameWithType: NSPersonAgent.CreateDefaultPersonEntity()
   fullName: CRMScript.NetServer.NSPersonAgent.CreateDefaultPersonEntity()
   type: Method
-  summary: "\nSet default values into a new NSPersonEntity.<p></p>\nNetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>A new NSPersonEntity with default values.<p></p>\n<pre><code>NSPersonAgent agent;\nNSPersonEntity thing = agent.CreateDefaultPersonEntity();\nthing = agent.SavePersonEntity(thing);</code></pre>\n"
+  summary: "\nSets default values into a new NSPersonEntity.<p></p>\nNetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance<p></p>\n<strong>Returns:</strong>A new NSPersonEntity with default values.<p></p>\n<pre><code>NSPersonAgent agent;\nNSPersonEntity thing = agent.CreateDefaultPersonEntity();\nthing = agent.SavePersonEntity(thing);</code></pre>\n"
   remarks: 
   syntax: 
     content: NSPersonEntity CreateDefaultPersonEntity()
@@ -307,7 +307,7 @@ items:
   nameWithType: NSPersonAgent.CreateTemporaryKey(Integer,Integer,Integer)
   fullName: CRMScript.NetServer.NSPersonAgent.CreateTemporaryKey(Integer,Integer,Integer)
   type: Method
-  summary: "\nCreate a temporary key in the database from the given parameters and return the key string. Used for temporary keys for accessing customer centric functionality, such as UpdateSubscriptions.\n"
+  summary: "\nCreates a temporary key in the database from the given parameters and return the key string. Used for temporary keys for accessing customer centric functionality, such as UpdateSubscriptions.\n"
   remarks: "\n<p>See enum expires.</p>\n"
   syntax: 
     content: String CreateTemporaryKey(Integer domain, Integer targetId, Integer personId, DateTime expires)
@@ -397,7 +397,7 @@ items:
   nameWithType: NSPersonAgent.DeleteTemporaryKeysOfDomain(Integer,Integer)
   fullName: CRMScript.NetServer.NSPersonAgent.DeleteTemporaryKeysOfDomain(Integer,Integer)
   type: Method
-  summary: "\nDelete all temporary keys for a given domain and person\n"
+  summary: "\nDeletes all temporary keys for a given domain and person\n"
   remarks: "\n<p>See enum personId.</p>\n"
   syntax: 
     content: Void DeleteTemporaryKeysOfDomain(Integer domain, Integer personId)
@@ -464,7 +464,7 @@ items:
   nameWithType: NSPersonAgent.GetBestSoLanguageForTemplate(Integer,Integer)
   fullName: CRMScript.NetServer.NSPersonAgent.GetBestSoLanguageForTemplate(Integer,Integer)
   type: Method
-  summary: "\nGet the best language for this person on this template\n"
+  summary: "\nGets the best language for this person on this template\n"
   remarks: 
   syntax: 
     content: String GetBestSoLanguageForTemplate(Integer personId, Integer templateId)
@@ -555,7 +555,7 @@ items:
   nameWithType: NSPersonAgent.GetConsentInfos(Integer)
   fullName: CRMScript.NetServer.NSPersonAgent.GetConsentInfos(Integer)
   type: Method
-  summary: "\nGet all consent information for a given person. May include withdrawn consents (check\n"
+  summary: "\nGets all consent information for a given person. May include withdrawn consents (check\n"
   remarks: 
   syntax: 
     content: NSConsentInfo[] GetConsentInfos(Integer personId)
@@ -599,7 +599,7 @@ items:
   nameWithType: NSPersonAgent.GetMyOwner()
   fullName: CRMScript.NetServer.NSPersonAgent.GetMyOwner()
   type: Method
-  summary: "\nGet the owner of the logged in person.\n"
+  summary: "\nGets the owner of the logged in person.\n"
   remarks: 
   syntax: 
     content: NSPerson GetMyOwner()
@@ -637,7 +637,7 @@ items:
   nameWithType: NSPersonAgent.GetOwnerOnPersonId(Integer)
   fullName: CRMScript.NetServer.NSPersonAgent.GetOwnerOnPersonId(Integer)
   type: Method
-  summary: "\nGet the owner of the person by id.<p></p>\n<strong>Returns:</strong>NSPerson\n"
+  summary: "\nGets the owner of the person by id.<p></p>\n<strong>Returns:</strong>NSPerson\n"
   remarks: 
   syntax: 
     content: NSPerson GetOwnerOnPersonId(Integer personId)
@@ -725,7 +725,7 @@ items:
   nameWithType: NSPersonAgent.GetPersonList(Integer[])
   fullName: CRMScript.NetServer.NSPersonAgent.GetPersonList(Integer[])
   type: Method
-  summary: "\nGets a vector of NSPerson objects.\n"
+  summary: "\nGets an array of NSPerson objects.\n"
   remarks: 
   syntax: 
     content: NSPerson[] GetPersonList(Integer[]  personIds)
@@ -791,7 +791,7 @@ items:
   nameWithType: NSPersonAgent.GetPersonSummary(Integer,Integer)
   fullName: CRMScript.NetServer.NSPersonAgent.GetPersonSummary(Integer,Integer)
   type: Method
-  summary: "\nGet summary of person and recent activity.\n"
+  summary: "\nGets summary of person and recent activity.\n"
   remarks: 
   syntax: 
     content: NSPersonSummary GetPersonSummary(Integer personId, Integer limit)
@@ -872,7 +872,7 @@ items:
   nameWithType: NSPersonAgent.HasConsent(Integer,String)
   fullName: CRMScript.NetServer.NSPersonAgent.HasConsent(Integer,String)
   type: Method
-  summary: "\nCheck if consent has been given by a specified person, for a specific purpose. Withdraw consents return FALSE.\n"
+  summary: "\nChecks if consent has been given by a specified person, for a specific purpose. Withdraw consents return FALSE.\n"
   remarks: 
   syntax: 
     content: Bool HasConsent(Integer personId, String purpose)
@@ -1038,7 +1038,7 @@ items:
   nameWithType: NSPersonAgent.ResolvePersonFromInfo(Integer,String,String[],String[])
   fullName: CRMScript.NetServer.NSPersonAgent.ResolvePersonFromInfo(Integer,String,String[],String[])
   type: Method
-  summary: "\nGet a person from the provided information. If the person does not exist, it will be created on demand.\n"
+  summary: "\nGets a person from the provided information. If the person does not exist, it will be created on demand.\n"
   remarks: 
   syntax: 
     content: NSResolvedPerson ResolvePersonFromInfo(Integer contactId, String personName, String[] phoneNumbers, String[] emails)
@@ -1144,7 +1144,7 @@ items:
   nameWithType: NSPersonAgent.SetConsent(Integer,String,String,String,String)
   fullName: CRMScript.NetServer.NSPersonAgent.SetConsent(Integer,String,String,String,String)
   type: Method
-  summary: "\nSet a specified type of consent on the person.\n"
+  summary: "\nSets a specified type of consent on the person.\n"
   remarks: 
   syntax: 
     content: Void SetConsent(Integer personId, String purpose, String source, String legalBase, String comment)
@@ -1245,7 +1245,7 @@ items:
   nameWithType: NSPersonAgent.ValidatePersonEntity(NSPersonEntity)
   fullName: CRMScript.NetServer.NSPersonAgent.ValidatePersonEntity(NSPersonEntity)
   type: Method
-  summary: "\nCheck that entity is ready for saving, return error messages by field.\n"
+  summary: "\nChecks that entity is ready for saving, return error messages by field.\n"
   remarks: 
   syntax: 
     content: Map ValidatePersonEntity(NSPersonEntity personEntity)

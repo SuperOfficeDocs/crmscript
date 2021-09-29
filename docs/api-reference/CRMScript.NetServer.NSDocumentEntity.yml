@@ -6,6 +6,7 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSDocumentEntity.#ctor
   - CRMScript.NetServer.NSDocumentEntity.GetActiveLinks()
   - CRMScript.NetServer.NSDocumentEntity.GetAssociate()
   - CRMScript.NetServer.NSDocumentEntity.GetAttention()
@@ -40,13 +41,12 @@ items:
   - CRMScript.NetServer.NSDocumentEntity.GetUserDefinedFields()
   - CRMScript.NetServer.NSDocumentEntity.GetVisibleFor()
   - CRMScript.NetServer.NSDocumentEntity.GetYourRef()
-  - CRMScript.NetServer.NSDocumentEntity.#ctor
   - CRMScript.NetServer.NSDocumentEntity.SetActiveLinks(Integer)
-  - CRMScript.NetServer.NSDocumentEntity.SetAssociate()
+  - CRMScript.NetServer.NSDocumentEntity.SetAssociate(NSAssociat)
   - CRMScript.NetServer.NSDocumentEntity.SetAttention(String)
   - CRMScript.NetServer.NSDocumentEntity.SetCompleted(Integer)
-  - CRMScript.NetServer.NSDocumentEntity.SetContact()
-  - CRMScript.NetServer.NSDocumentEntity.SetCreatedBy()
+  - CRMScript.NetServer.NSDocumentEntity.SetContact(NSAssociat)
+  - CRMScript.NetServer.NSDocumentEntity.SetCreatedBy(NSAssociate)
   - CRMScript.NetServer.NSDocumentEntity.SetCreatedDate()
   - CRMScript.NetServer.NSDocumentEntity.SetCustomFields()
   - CRMScript.NetServer.NSDocumentEntity.SetDate()
@@ -81,6 +81,21 @@ items:
   type: Class
   summary: 
   example: 
+- uid: CRMScript.NetServer.NSDocumentEntity.#ctor
+  commentId: M:CRMScript.NetServer.NSDocumentEntity.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSDocumentEntity
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSDocumentEntity.#ctor
+  fullName: CRMScript.NetServer.NSDocumentEntity.#ctor
+  type: Constructor
+  summary: 
+  remarks: 
+  syntax: 
+    content: NSDocumentEntity
+  example: 
 - uid: CRMScript.NetServer.NSDocumentEntity.GetActiveLinks()
   commentId: M:CRMScript.NetServer.NSDocumentEntity.GetActiveLinks()
   id: 'GetActiveLinks()'
@@ -91,13 +106,14 @@ items:
   nameWithType: NSDocumentEntity.GetActiveLinks()
   fullName: CRMScript.NetServer.NSDocumentEntity.GetActiveLinks()
   type: Method
-  summary: "\nNumber of active links to sale, document, appointment.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Integer GetActiveLinks()
     parameters: []
     return:
       type: CRMScript.Global.Integer
+      description: Number of active links to sale, document, appointment.
   example: 
   - "\n<pre><code>NSDocumentEntity thing;\nInteger activeLinks = thing.GetActiveLinks();</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentEntity.GetAssociate()
@@ -110,13 +126,14 @@ items:
   nameWithType: NSDocumentEntity.GetAssociate()
   fullName: CRMScript.NetServer.NSDocumentEntity.GetAssociate()
   type: Method
-  summary: "\nThe owner of the document* the associate whose checklist the document is in.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: NSAssociate GetAssociate()
     parameters: []
     return:
       type: CRMScript.NetServer.NSAssociate
+      description: The owner of the document* the associate whose checklist the document is in.
   example: 
   - "\n<pre><code>NSDocumentEntity thing;\nNSAssociate associate = thing.GetAssociate();</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentEntity.GetAttention()
@@ -129,13 +146,14 @@ items:
   nameWithType: NSDocumentEntity.GetAttention()
   fullName: CRMScript.NetServer.NSDocumentEntity.GetAttention()
   type: Method
-  summary: "\nAttention/salutation\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: String GetAttention()
     parameters: []
     return:
       type: CRMScript.Global.String
+      description: Attention/salutation
   example: 
   - "\n<pre><code>NSDocumentEntity thing;\nString attention = thing.GetAttention();</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentEntity.GetCompleted()
@@ -148,13 +166,14 @@ items:
   nameWithType: NSDocumentEntity.GetCompleted()
   fullName: CRMScript.NetServer.NSDocumentEntity.GetCompleted()
   type: Method
-  summary: "\nDocument Completed state. This is the part of the Status property.<p></p>\n<strong>Returns:</strong>Integer\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Integer GetCompleted()
     parameters: []
     return:
       type: CRMScript.Global.Integer
+      description: Document Completed state. This is the part of the Status property.
   example: 
   - "\n<pre><code>NSDocumentEntity thing;\nInteger completed = thing.GetCompleted();</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentEntity.GetContact()
@@ -167,13 +186,14 @@ items:
   nameWithType: NSDocumentEntity.GetContact()
   fullName: CRMScript.NetServer.NSDocumentEntity.GetContact()
   type: Method
-  summary: "\nThe contact associated with the document. It may also be null if no contact is associated with the document.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: NSContact GetContact()
     parameters: []
     return:
       type: CRMScript.NetServer.NSContact
+      description: The contact associated with the document. It may also be null if no contact is associated with the document.
   example: 
   - "\n<pre><code>NSDocumentEntity thing;\nNSContact contact = thing.GetContact();</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentEntity.GetCreatedBy()
@@ -186,13 +206,14 @@ items:
   nameWithType: NSDocumentEntity.GetCreatedBy()
   fullName: CRMScript.NetServer.NSDocumentEntity.GetCreatedBy()
   type: Method
-  summary: "\nThe person that first created the document. The property is read-only.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: NSAssociate GetCreatedBy()
     parameters: []
     return:
       type: CRMScript.NetServer.NSAssociate
+      description: The person that first created the document. The property is read-only.
   example: 
   - "\n<pre><code>NSDocumentEntity thing;\nNSAssociate createdBy = thing.GetCreatedBy();</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentEntity.GetCreatedDate()
@@ -205,13 +226,14 @@ items:
   nameWithType: NSDocumentEntity.GetCreatedDate()
   fullName: CRMScript.NetServer.NSDocumentEntity.GetCreatedDate()
   type: Method
-  summary: "\nRegistered when\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: DateTime GetCreatedDate()
     parameters: []
     return:
       type: CRMScript.Global.DateTime
+      description: Registered when
   example: 
   - "\n<pre><code>NSDocumentEntity thing;\nDateTime createdDate = thing.GetCreatedDate();</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentEntity.GetCustomFields()
@@ -224,7 +246,7 @@ items:
   nameWithType: NSDocumentEntity.GetCustomFields()
   fullName: CRMScript.NetServer.NSDocumentEntity.GetCustomFields()
   type: Method
-  summary: "\nGet the user-defined + extra fields on an NSDocumentEntity as a map.\n"
+  summary: "\nGets the user-defined + extra fields on an NSDocumentEntity as a map.\n"
   remarks: 
   syntax: 
     content: Map GetCustomFields()
@@ -243,13 +265,14 @@ items:
   nameWithType: NSDocumentEntity.GetDate()
   fullName: CRMScript.NetServer.NSDocumentEntity.GetDate()
   type: Method
-  summary: "\ndate + start time planned\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: DateTime GetDate()
     parameters: []
     return:
       type: CRMScript.Global.DateTime
+      description: date + start time planned
   example: 
   - "\n<pre><code>NSDocumentEntity thing;\nDateTime date = thing.GetDate();</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentEntity.GetDescription()
@@ -262,13 +285,14 @@ items:
   nameWithType: NSDocumentEntity.GetDescription()
   fullName: CRMScript.NetServer.NSDocumentEntity.GetDescription()
   type: Method
-  summary: "\nThe actual text, max 2047 significant characters even though it is stored as a larger data type on some databases\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: String GetDescription()
     parameters: []
     return:
       type: CRMScript.Global.String
+      description: The actual text, max 2047 significant characters even though it is stored as a larger data type on some databases
   example: 
   - "\n<pre><code>NSDocumentEntity thing;\nString description = thing.GetDescription();</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentEntity.GetDocumentId()
@@ -281,13 +305,14 @@ items:
   nameWithType: NSDocumentEntity.GetDocumentId()
   fullName: CRMScript.NetServer.NSDocumentEntity.GetDocumentId()
   type: Method
-  summary: "\nPrimary key\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Integer GetDocumentId()
     parameters: []
     return:
       type: CRMScript.Global.Integer
+      description: Primary key
   example: 
   - "\n<pre><code>NSDocumentEntity thing;\nInteger documentId = thing.GetDocumentId();</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentEntity.GetDocumentTemplate()
@@ -300,13 +325,14 @@ items:
   nameWithType: NSDocumentEntity.GetDocumentTemplate()
   fullName: CRMScript.NetServer.NSDocumentEntity.GetDocumentTemplate()
   type: Method
-  summary: "\nThe template type of the document.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: NSDocumentTemplate GetDocumentTemplate()
     parameters: []
     return:
       type: CRMScript.NetServer.NSDocumentTemplate
+      description: The template type of the document.
   example: 
   - "\n<pre><code>NSDocumentEntity thing;\nNSDocumentTemplate documentTemplate = thing.GetDocumentTemplate();</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentEntity.GetExternalRef()
@@ -319,13 +345,14 @@ items:
   nameWithType: NSDocumentEntity.GetExternalRef()
   fullName: CRMScript.NetServer.NSDocumentEntity.GetExternalRef()
   type: Method
-  summary: "\nExternal reference for document plugin to resolve document identity (Notes ID, e-mail message ID, whatever)\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: String GetExternalRef()
     parameters: []
     return:
       type: CRMScript.Global.String
+      description: External reference for document plugin to resolve document identity (Notes ID, e-mail message ID, whatever)
   example: 
   - "\n<pre><code>NSDocumentEntity thing;\nString externalRef = thing.GetExternalRef();</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentEntity.GetExtraFields()
@@ -338,13 +365,14 @@ items:
   nameWithType: NSDocumentEntity.GetExtraFields()
   fullName: CRMScript.NetServer.NSDocumentEntity.GetExtraFields()
   type: Method
-  summary: "\nGet the extra fields on NSDocumentEntity as a map.\n"
+  summary: "\nGets the extra fields on NSDocumentEntity as a map.\n"
   remarks: 
   syntax: 
     content: Map GetExtraFields()
     parameters: []
     return:
       type: CRMScript.Global.Map
+      description:
   example: 
   - "\n<pre><code>NSDocumentEntity thing;\nMap extras = thing.GetExtraFields();\nlog( extras[&quot;x_abc&quot;] ); // &quot;[I:123]&quot;* integer or list item id\nlog( extras[&quot;x_abc:DisplayText&quot;] ); // &quot;bla bla&quot;* list item value\nlog( extras[&quot;x_bla&quot;] ); // &quot;foobar&quot;* string value</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentEntity.GetHeader()
@@ -357,13 +385,14 @@ items:
   nameWithType: NSDocumentEntity.GetHeader()
   fullName: CRMScript.NetServer.NSDocumentEntity.GetHeader()
   type: Method
-  summary: "\nVisible document name\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: String GetHeader()
     parameters: []
     return:
       type: CRMScript.Global.String
+      description: Visible document name
   example: 
   - "\n<pre><code>NSDocumentEntity thing;\nString header = thing.GetHeader();</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentEntity.GetIsPublished()
@@ -376,13 +405,14 @@ items:
   nameWithType: NSDocumentEntity.GetIsPublished()
   fullName: CRMScript.NetServer.NSDocumentEntity.GetIsPublished()
   type: Method
-  summary: "\nShould this NSDocumentEntity be published and visible to strangers?<p></p>\n<strong>Returns:</strong>Bool\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Bool GetIsPublished()
     parameters: []
     return:
       type: CRMScript.Global.Bool
+      description: Should this NSDocumentEntity be published and visible to strangers?
   example: 
 - uid: CRMScript.NetServer.NSDocumentEntity.GetLinks()
   commentId: M:CRMScript.NetServer.NSDocumentEntity.GetLinks()
@@ -394,13 +424,14 @@ items:
   nameWithType: NSDocumentEntity.GetLinks()
   fullName: CRMScript.NetServer.NSDocumentEntity.GetLinks()
   type: Method
-  summary: "\nList of all elements linked to the document.<p></p>\n<strong>Returns:</strong>NSLink[]<p></p>\n<pre><code>NSDocumentEntity thing;\nNSLink[] links = thing.GetLinks();</code></pre>\n"
+  summary: ""
   remarks: 
   syntax: 
     content: NSLink[] GetLinks()
     parameters: []
     return:
       type: CRMScript.NetServer.NSLink[]
+      description: List of all elements linked to the document.
   example: 
   - "\n<pre><code>NSDocumentEntity thing;\nNSLink[] links = thing.GetLinks();</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentEntity.GetLockSemantics()
@@ -413,7 +444,7 @@ items:
   nameWithType: NSDocumentEntity.GetLockSemantics()
   fullName: CRMScript.NetServer.NSDocumentEntity.GetLockSemantics()
   type: Method
-  summary: "\n<strong>Returns:</strong>Integer<p></p>\n<ul><li>Enum: 0 = None</li><li>Enum: 1 = Locking</li><li>Enum: 2 = Versioning</li></ul><pre><code>NSDocumentEntity thing;\nInteger lockSemantics = thing.GetLockSemantics();</code></pre>\n"
+  summary: "\n<ul><li>Enum: 0 = None</li><li>Enum: 1 = Locking</li><li>Enum: 2 = Versioning</li></ul>\n"
   remarks: 
   syntax: 
     content: Integer GetLockSemantics()
@@ -432,13 +463,14 @@ items:
   nameWithType: NSDocumentEntity.GetName()
   fullName: CRMScript.NetServer.NSDocumentEntity.GetName()
   type: Method
-  summary: "\nFile name\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: String GetName()
     parameters: []
     return:
       type: CRMScript.Global.String
+      description: File name
   example: 
   - "\n<pre><code>NSDocumentEntity thing;\nString name = thing.GetName();</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentEntity.GetOurRef()
@@ -451,13 +483,14 @@ items:
   nameWithType: NSDocumentEntity.GetOurRef()
   fullName: CRMScript.NetServer.NSDocumentEntity.GetOurRef()
   type: Method
-  summary: "\nOur reference, searchable field from freetext search\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: String GetOurRef()
     parameters: []
     return:
       type: CRMScript.Global.String
+      description: Our reference, searchable field from free-text search
   example: 
   - "\n<pre><code>NSDocumentEntity thing;\nString ourRef = thing.GetOurRef();</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentEntity.GetPerson()
@@ -470,13 +503,14 @@ items:
   nameWithType: NSDocumentEntity.GetPerson()
   fullName: CRMScript.NetServer.NSDocumentEntity.GetPerson()
   type: Method
-  summary: "\nA document may also be connected to a person; this must be a contact person registered on the current company. This does not mean however that a person is required.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: NSPerson GetPerson()
     parameters: []
     return:
       type: CRMScript.NetServer.NSPerson
+      description: A document may also be connected to a person; this must be a contact person registered on the current company. This does not mean however that a person is required.
   example: 
   - "\n<pre><code>NSDocumentEntity thing;\nNSPerson person = thing.GetPerson();</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentEntity.GetProject()
@@ -489,13 +523,14 @@ items:
   nameWithType: NSDocumentEntity.GetProject()
   fullName: CRMScript.NetServer.NSDocumentEntity.GetProject()
   type: Method
-  summary: "\nA document may also be connected to a project, so you see the document both on the company card, and on the project card. This does not mean however that a project is required.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: NSProject GetProject()
     parameters: []
     return:
       type: CRMScript.NetServer.NSProject
+      description: A document may also be connected to a project, so you see the document both on the company card, and on the project card. This does not mean however that a project is required.
   example: 
   - "\n<pre><code>NSDocumentEntity thing;\nNSProject project = thing.GetProject();</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentEntity.GetPublishEventDate()
@@ -508,13 +543,14 @@ items:
   nameWithType: NSDocumentEntity.GetPublishEventDate()
   fullName: CRMScript.NetServer.NSDocumentEntity.GetPublishEventDate()
   type: Method
-  summary: "\nPublish event date on NSDocumentEntity.<p></p>\n<strong>Returns:</strong>DateTime\n"
+  summary: ""
   remarks: 
   syntax: 
     content: DateTime GetPublishEventDate()
     parameters: []
     return:
       type: CRMScript.Global.DateTime
+      description: Publish event date on NSDocumentEntity.
   example: 
 - uid: CRMScript.NetServer.NSDocumentEntity.GetPublishFrom()
   commentId: M:CRMScript.NetServer.NSDocumentEntity.GetPublishFrom()
@@ -526,13 +562,14 @@ items:
   nameWithType: NSDocumentEntity.GetPublishFrom()
   fullName: CRMScript.NetServer.NSDocumentEntity.GetPublishFrom()
   type: Method
-  summary: "\nPublish from date on NSDocumentEntity.<p></p>\n<strong>Returns:</strong>DateTime.\n"
+  summary: ""
   remarks: 
   syntax: 
     content: DateTime GetPublishFrom()
     parameters: []
     return:
       type: CRMScript.Global.DateTime
+      description: Publish from date on NSDocumentEntity.
   example: 
 - uid: CRMScript.NetServer.NSDocumentEntity.GetPublishTo()
   commentId: M:CRMScript.NetServer.NSDocumentEntity.GetPublishTo()
@@ -544,13 +581,14 @@ items:
   nameWithType: NSDocumentEntity.GetPublishTo()
   fullName: CRMScript.NetServer.NSDocumentEntity.GetPublishTo()
   type: Method
-  summary: "\nPublish to date on NSDocumentEntity. After this date the event is no longer visible.<p></p>\n<strong>Returns:</strong>DateTime.\n"
+  summary: ""
   remarks: 
   syntax: 
     content: DateTime GetPublishTo()
     parameters: []
     return:
       type: CRMScript.Global.DateTime
+      description: Publish to date on NSDocumentEntity. After this date the event is no longer visible.
   example: 
 - uid: CRMScript.NetServer.NSDocumentEntity.GetSale()
   commentId: M:CRMScript.NetServer.NSDocumentEntity.GetSale()
@@ -562,13 +600,14 @@ items:
   nameWithType: NSDocumentEntity.GetSale()
   fullName: CRMScript.NetServer.NSDocumentEntity.GetSale()
   type: Method
-  summary: "\nA document may also be connected to a sale, so you see the document on the company card, on the project card and on the sale card. This does not mean however that a sale is required. May be null.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: NSSale GetSale()
     parameters: []
     return:
       type: CRMScript.NetServer.NSSale
+      description: A document may also be connected to a sale, so you see the document on the company card, on the project card and on the sale card. This does not mean however that a sale is required. May be null.
   example: 
   - "\n<pre><code>NSDocumentEntity thing;\nNSSale sale = thing.GetSale();</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentEntity.GetSnum()
@@ -581,13 +620,14 @@ items:
   nameWithType: NSDocumentEntity.GetSnum()
   fullName: CRMScript.NetServer.NSDocumentEntity.GetSnum()
   type: Method
-  summary: "\nThe sequence number allocated from refcount on used template when creating the document\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Integer GetSnum()
     parameters: []
     return:
       type: CRMScript.Global.Integer
+      description: The sequence number allocated from refcount on used template when creating the document
   example: 
   - "\n<pre><code>NSDocumentEntity thing;\nInteger snum = thing.GetSnum();</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentEntity.GetSuggestedDocumentId()
@@ -600,13 +640,14 @@ items:
   nameWithType: NSDocumentEntity.GetSuggestedDocumentId()
   fullName: CRMScript.NetServer.NSDocumentEntity.GetSuggestedDocumentId()
   type: Method
-  summary: "\nSuggested guide item that this document is an instance of (Note: NOT valid for appointments, they have their own link)\n"
-  remarks: 
+  summary: ""
+  remarks: "\nNOT valid for appointments, they have their own link\n"
   syntax: 
     content: Integer GetSuggestedDocumentId()
     parameters: []
     return:
       type: CRMScript.Global.Integer
+      description: Suggested guide item that this document is an instance of
   example: 
   - "\n<pre><code>NSDocumentEntity thing;\nInteger suggestedDocumentId = thing.GetSuggestedDocumentId();</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentEntity.GetType()
@@ -619,13 +660,14 @@ items:
   nameWithType: NSDocumentEntity.GetType()
   fullName: CRMScript.NetServer.NSDocumentEntity.GetType()
   type: Method
-  summary: "\nIs this a normal document or a mail-merge or report?<p></p>\n<strong>Returns:</strong>Integer\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Integer GetType()
     parameters: []
     return:
       type: CRMScript.Global.Integer
+      description: Is this a normal document or a mail-merge or report?
   example: 
   - "\n<pre><code>NSDocumentEntity thing;\nInteger type = thing.GetType();</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentEntity.GetUpdatedBy()
@@ -638,13 +680,14 @@ items:
   nameWithType: NSDocumentEntity.GetUpdatedBy()
   fullName: CRMScript.NetServer.NSDocumentEntity.GetUpdatedBy()
   type: Method
-  summary: "\nThe person that last updated the appointment.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: NSAssociate GetUpdatedBy()
     parameters: []
     return:
       type: CRMScript.NetServer.NSAssociate
+      description: The person that last updated the appointment.
   example: 
   - "\n<pre><code>NSDocumentEntity thing;\nNSAssociate updatedBy = thing.GetUpdatedBy();</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentEntity.GetUpdatedDate()
@@ -657,13 +700,14 @@ items:
   nameWithType: NSDocumentEntity.GetUpdatedDate()
   fullName: CRMScript.NetServer.NSDocumentEntity.GetUpdatedDate()
   type: Method
-  summary: "\nLast updated when\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: DateTime GetUpdatedDate()
     parameters: []
     return:
       type: CRMScript.Global.DateTime
+      description: Last updated when
   example: 
   - "\n<pre><code>NSDocumentEntity thing;\nDateTime updatedDate = thing.GetUpdatedDate();</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentEntity.GetUserDefinedFields()
@@ -676,13 +720,14 @@ items:
   nameWithType: NSDocumentEntity.GetUserDefinedFields()
   fullName: CRMScript.NetServer.NSDocumentEntity.GetUserDefinedFields()
   type: Method
-  summary: "\nGet the user-defined fields on the NSDocumentEntity as a map.\n"
+  summary: "\nGets the user-defined fields on the NSDocumentEntity as a map.\n"
   remarks: 
   syntax: 
     content: Map GetUserDefinedFields()
     parameters: []
     return:
       type: CRMScript.Global.Map
+      description:
   example: 
   - "\n<pre><code>NSDocumentEntity thing;\nMap udefs = thing.GetUserDefinedFields();\nlog( udefs[&quot;SuperOffice:1&quot;] ); // &quot;[I:123]&quot;* integer or list item id\nlog( udefs[&quot;SuperOffice:1:DisplayText&quot;] ); // &quot;bla bla&quot;* list item value\nlog( udefs[&quot;custom.progid&quot;] ); // &quot;foobar&quot;* string value</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentEntity.GetVisibleFor()
@@ -695,13 +740,14 @@ items:
   nameWithType: NSDocumentEntity.GetVisibleFor()
   fullName: CRMScript.NetServer.NSDocumentEntity.GetVisibleFor()
   type: Method
-  summary: "\nReturn the usergroups and/or users the NSDocumentEntity item is visible for.<p></p>\n<strong>Returns:</strong>NSVisibleFor[]<p></p>\n<pre><code>NSDocumentEntity thing;\nNSVisibleFor[] visibleFor = thing.GetVisibleFor();</code></pre>\n"
+  summary: ""
   remarks: 
   syntax: 
     content: NSVisibleFor[] GetVisibleFor()
     parameters: []
     return:
       type: CRMScript.NetServer.NSVisibleFor[]
+      description: Return the user groups and/or users the NSDocumentEntity item is visible for.
   example: 
   - "\n<pre><code>NSDocumentEntity thing;\nNSVisibleFor[] visibleFor = thing.GetVisibleFor();</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentEntity.GetYourRef()
@@ -714,30 +760,16 @@ items:
   nameWithType: NSDocumentEntity.GetYourRef()
   fullName: CRMScript.NetServer.NSDocumentEntity.GetYourRef()
   type: Method
-  summary: "\nYour reference\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: String GetYourRef()
     parameters: []
     return:
       type: CRMScript.Global.String
+      description: Your reference
   example: 
   - "\n<pre><code>NSDocumentEntity thing;\nString yourRef = thing.GetYourRef();</code></pre>\n"
-- uid: CRMScript.NetServer.NSDocumentEntity.#ctor
-  commentId: M:CRMScript.NetServer.NSDocumentEntity.#ctor
-  id: '#ctor'
-  so.intellisense: Void.NSDocumentEntity
-  langs:
-  - crmscript
-  name: '#ctor'
-  nameWithType: NSDocumentEntity.#ctor
-  fullName: CRMScript.NetServer.NSDocumentEntity.#ctor
-  type: Constructor
-  summary: 
-  remarks: 
-  syntax: 
-    content: NSDocumentEntity
-  example: 
 - uid: CRMScript.NetServer.NSDocumentEntity.SetActiveLinks(Integer)
   commentId: M:CRMScript.NetServer.NSDocumentEntity.SetActiveLinks(Integer)
   id: 'SetActiveLinks(Integer)'
@@ -748,33 +780,38 @@ items:
   nameWithType: NSDocumentEntity.SetActiveLinks(Integer)
   fullName: CRMScript.NetServer.NSDocumentEntity.SetActiveLinks(Integer)
   type: Method
-  summary: "\nNumber of active links to sale, document, appointment.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetActiveLinks(Integer activeLinks)
     parameters:
     - id: activeLinks
       type: CRMScript.Global.Integer
-      description: 
+      description: Number of active links to sale, document, appointment.
     return:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSDocumentEntity thing;\nInteger activeLinks;\nthing.SetActiveLinks(activeLinks);</code></pre>\n"
-- uid: CRMScript.NetServer.NSDocumentEntity.SetAssociate()
-  commentId: M:CRMScript.NetServer.NSDocumentEntity.SetAssociate()
-  id: 'SetAssociate()'
+- uid: CRMScript.NetServer.NSDocumentEntity.SetAssociate(NSAssociat)
+  commentId: M:CRMScript.NetServer.NSDocumentEntity.SetAssociate(NSAssociat)
+  id: 'SetAssociate(NSAssociat)'
   so.intellisense: NSDocumentEntity.SetAssociate
   langs:
   - crmscript
-  name: 'SetAssociate()'
-  nameWithType: NSDocumentEntity.SetAssociate()
-  fullName: CRMScript.NetServer.NSDocumentEntity.SetAssociate()
+  name: 'SetAssociate(NSAssociat)'
+  nameWithType: NSDocumentEntity.SetAssociate(NSAssociat)
+  fullName: CRMScript.NetServer.NSDocumentEntity.SetAssociate(NSAssociat)
   type: Method
-  summary: "\nThe owner of the document* the associate whose checklist the document is in.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetAssociate(NSAssociate associate)
     parameters:
+    - id: associate
+      type: CRMScript.NetServer.NSAssociat
+      description: The owner of the document* the associate whose checklist the document is in.
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSDocumentEntity thing;\nNSAssociate associate;\nthing.SetAssociate(associate);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentEntity.SetAttention(String)
@@ -787,14 +824,14 @@ items:
   nameWithType: NSDocumentEntity.SetAttention(String)
   fullName: CRMScript.NetServer.NSDocumentEntity.SetAttention(String)
   type: Method
-  summary: "\nAttention/salutation\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetAttention(String attention)
     parameters:
     - id: attention
       type: CRMScript.Global.String
-      description: 
+      description: Attention/salutation
     return:
       type: CRMScript.Global.Void
   example: 
@@ -809,50 +846,60 @@ items:
   nameWithType: NSDocumentEntity.SetCompleted(Integer)
   fullName: CRMScript.NetServer.NSDocumentEntity.SetCompleted(Integer)
   type: Method
-  summary: "\nDocument Completed state. This is the part of the Status property.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetCompleted(Integer completed)
     parameters:
     - id: completed
       type: CRMScript.Global.Integer
-      description: 
+      description: Document Completed state. This is the part of the Status property.
     return:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSDocumentEntity thing;\nInteger completed;\nthing.SetCompleted(completed);</code></pre>\n"
-- uid: CRMScript.NetServer.NSDocumentEntity.SetContact()
-  commentId: M:CRMScript.NetServer.NSDocumentEntity.SetContact()
-  id: 'SetContact()'
+- uid: CRMScript.NetServer.NSDocumentEntity.SetContact(NSAssociat)
+  commentId: M:CRMScript.NetServer.NSDocumentEntity.SetContact(NSAssociat)
+  id: 'SetContact(NSAssociat)'
   so.intellisense: NSDocumentEntity.SetContact
   langs:
   - crmscript
-  name: 'SetContact()'
-  nameWithType: NSDocumentEntity.SetContact()
-  fullName: CRMScript.NetServer.NSDocumentEntity.SetContact()
+  name: 'SetContact(NSAssociat)'
+  nameWithType: NSDocumentEntity.SetContact(NSAssociat)
+  fullName: CRMScript.NetServer.NSDocumentEntity.SetContact(NSAssociat)
   type: Method
-  summary: "\nThe contact associated with the document. It may also be null if no contact is associated with the document.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetContact(NSContact contact)
     parameters:
+    - id: contact
+      type: RMScript.NetServer.NSContact
+      description: The contact associated with the document. It may also be null if no contact is associated with the document.
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSDocumentEntity thing;\nNSContact contact;\nthing.SetContact(contact);</code></pre>\n"
-- uid: CRMScript.NetServer.NSDocumentEntity.SetCreatedBy()
-  commentId: M:CRMScript.NetServer.NSDocumentEntity.SetCreatedBy()
-  id: 'SetCreatedBy()'
+- uid: CRMScript.NetServer.NSDocumentEntity.SetCreatedBy(NSAssociate)
+  commentId: M:CRMScript.NetServer.NSDocumentEntity.SetCreatedBy(NSAssociate)
+  id: 'SetCreatedBy(NSAssociate)'
   so.intellisense: NSDocumentEntity.SetCreatedBy
   langs:
   - crmscript
-  name: 'SetCreatedBy()'
-  nameWithType: NSDocumentEntity.SetCreatedBy()
-  fullName: CRMScript.NetServer.NSDocumentEntity.SetCreatedBy()
+  name: 'SetCreatedBy(NSAssociate)'
+  nameWithType: NSDocumentEntity.SetCreatedBy(NSAssociate)
+  fullName: CRMScript.NetServer.NSDocumentEntity.SetCreatedBy(NSAssociate)
   type: Method
-  summary: "\nThe person that first created the document. The property is read-only.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetCreatedBy(NSAssociate createdBy)
     parameters:
+    - id: createdBy
+      type: CRMScript.NetServer.NSAssociate
+      description: The person that first created the document. The property is read-only.
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSDocumentEntity thing;\nNSAssociate createdBy;\nthing.SetCreatedBy(createdBy);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentEntity.SetCreatedDate()
@@ -882,7 +929,7 @@ items:
   nameWithType: NSDocumentEntity.SetCustomFields()
   fullName: CRMScript.NetServer.NSDocumentEntity.SetCustomFields()
   type: Method
-  summary: "\nSet the user-defined and extra fields on an NSDocumentEntity with a map.\n"
+  summary: "\nSets the user-defined and extra fields on an NSDocumentEntity with a map.\n"
   remarks: 
   syntax: 
     content: Void SetCustomFields(Map udefs)
@@ -999,7 +1046,7 @@ items:
   nameWithType: NSDocumentEntity.SetExtraFields()
   fullName: CRMScript.NetServer.NSDocumentEntity.SetExtraFields()
   type: Method
-  summary: "\nSet the extra field values on NSDocumentEntity with a map.\n"
+  summary: "\nSets the extra field values on NSDocumentEntity with a map.\n"
   remarks: 
   syntax: 
     content: Void SetExtraFields(Map extras)
@@ -1202,7 +1249,7 @@ items:
   nameWithType: NSDocumentEntity.SetPublishFrom()
   fullName: CRMScript.NetServer.NSDocumentEntity.SetPublishFrom()
   type: Method
-  summary: "\nSet the publish from date on an NSDocumentEntity.\n"
+  summary: "\nSets the publish from date on an NSDocumentEntity.\n"
   remarks: 
   syntax: 
     content: Void SetPublishFrom(DateTime publishFrom)
@@ -1218,7 +1265,7 @@ items:
   nameWithType: NSDocumentEntity.SetPublishTo()
   fullName: CRMScript.NetServer.NSDocumentEntity.SetPublishTo()
   type: Method
-  summary: "\nSet the publish to date on NSDocumentEntity. After this date the event is no longer visible.\n"
+  summary: "\nSets the publish to date on NSDocumentEntity. After this date the event is no longer visible.\n"
   remarks: 
   syntax: 
     content: Void SetPublishTo(DateTime publishTo)
@@ -1351,7 +1398,7 @@ items:
   nameWithType: NSDocumentEntity.SetUserDefinedFields()
   fullName: CRMScript.NetServer.NSDocumentEntity.SetUserDefinedFields()
   type: Method
-  summary: "\nSet the user-defined fields on the NSDocumentEntity as a map.\n"
+  summary: "\nSets the user-defined fields on the NSDocumentEntity as a map.\n"
   remarks: 
   syntax: 
     content: Void SetUserDefinedFields(Map udefs)
@@ -1368,7 +1415,7 @@ items:
   nameWithType: NSDocumentEntity.SetVisibleFor(NSVisibleFor[])
   fullName: CRMScript.NetServer.NSDocumentEntity.SetVisibleFor(NSVisibleFor[])
   type: Method
-  summary: "\nSet the usergroups and/or users the NSDocumentEntity item is visible for.\n"
+  summary: "\nSets the usergroups and/or users the NSDocumentEntity item is visible for.\n"
   remarks: 
   syntax: 
     content: Void SetVisibleFor(NSVisibleFor[] visibleFor)

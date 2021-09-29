@@ -245,7 +245,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSErpSyncAgent.CreateErpActorFromCrm(Integer,Integer,Integer,Integer)
   fullName: CRMScript.NetServer.NSErpSyncAgent.CreateErpActorFromCrm(Integer,Integer,Integer,Integer)
   type: Method
-  summary: "\nCRMScript method in the NSErpSyncAgent class that creates an ErpActor from a CRM entity.Creates an ErpActor from a CRM entity.<p></p>\nReturns the created ERP actor with success.<p></p>\n<code>Bool CreateErpActorFromCrm(Integer connectionId, Integer crmEntityId, Integer erpActorType, Integer crmActorType, StringDictionary erpFieldKeyValues)</code>\n"
+  summary: "\nCRMScript method in the NSErpSyncAgent class that creates an ErpActor from a CRM entity.Creates an ErpActor from a CRM entity.<p></p>\nReturns the created ERP actor with success.<p></p>\n<code>Bool CreateErpActorFromCrm(Integer connectionId, Integer crmEntityId, Integer erpActorType, Integer crmActorType, Map erpFieldKeyValues)</code>\n"
   remarks: "\n<h3>ERP actor type</h3><table><thead><tr><th>Enum</th><th>Type</th></tr></thead><tbody><tr><td>0</td><td>Unknown</td></tr><tr><td>1</td><td>Customer</td></tr><tr><td>2</td><td>Supplier</td></tr><tr><td>3</td><td>Partner</td></tr><tr><td>4</td><td>Person</td></tr><tr><td>5</td><td>Project</td></tr><tr><td>6</td><td>Employee</td></tr><tr><td>7</td><td>Sale</td></tr></tbody></table><h3>CRM actor type</h3><table><thead><tr><th>Enum</th><th>Type</th></tr></thead><tbody><tr><td>0</td><td>Unknown</td></tr><tr><td>1</td><td>Contact</td></tr><tr><td>2</td><td>Person</td></tr><tr><td>3</td><td>Project</td></tr><tr><td>4</td><td>Sale</td></tr></tbody></table>\n"
   syntax: 
     content: CreateErpActorFromCrm()
@@ -263,7 +263,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
       type: CRMScript.Global.Integer
       description: The CRM actor type
   example: 
-  - "\n<pre><code>NSErpSyncAgent agent;\nInteger connectionId;\nInteger crmEntityId;\nInteger erpActorType;\nInteger crmActorType;\nStringDictionary erpFieldKeyValues;\nBool res = agent.CreateErpActorFromCrm(connectionId, crmEntityId, erpActorType, crmActorType, erpFieldKeyValues);</code></pre>\n"
+  - "\n<pre><code>NSErpSyncAgent agent;\nInteger connectionId;\nInteger crmEntityId;\nInteger erpActorType;\nInteger crmActorType;\nMap erpFieldKeyValues;\nBool res = agent.CreateErpActorFromCrm(connectionId, crmEntityId, erpActorType, crmActorType, erpFieldKeyValues);</code></pre>\n"
 - uid: CRMScript.NetServer.NSErpSyncAgent.DeleteConnection(Integer)
   commentId: M:CRMScript.NetServer.NSErpSyncAgent.DeleteConnection(Integer)
   id: 'DeleteConnection(Integer)'
@@ -643,7 +643,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSErpSyncAgent.GetErpConnectionConfigFields(Integer)
   fullName: CRMScript.NetServer.NSErpSyncAgent.GetErpConnectionConfigFields(Integer)
   type: Method
-  summary: "\nCRMScript method in the NSErpSyncAgent class that returns the config fields for the connectionReturns the config fields for the connection.<p></p>\n<code>StringDictionary GetErpConnectionConfigFields(Integer erpConnectionId)</code>\n"
+  summary: "\nCRMScript method in the NSErpSyncAgent class that returns the config fields for the connectionReturns the config fields for the connection.<p></p>\n<code>Map GetErpConnectionConfigFields(Integer erpConnectionId)</code>\n"
   remarks: 
   syntax: 
     content: GetErpConnectionConfigFields()
@@ -652,7 +652,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
       type: CRMScript.Global.Integer
       description: Primary key of the ERP connection
   example: 
-  - "\n<pre><code>NSErpSyncAgent agent;\nInteger erpConnectionId;\nStringDictionary res = agent.GetErpConnectionConfigFields(erpConnectionId);</code></pre>\n"
+  - "\n<pre><code>NSErpSyncAgent agent;\nInteger erpConnectionId;\nMap res = agent.GetErpConnectionConfigFields(erpConnectionId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSErpSyncAgent.GetErpFieldValues(Integer,Integer,Integer,String[])
   commentId: M:CRMScript.NetServer.NSErpSyncAgent.GetErpFieldValues(Integer,Integer,Integer,String[])
   id: 'GetErpFieldValues(Integer,Integer,Integer,String[])'
@@ -1027,7 +1027,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSErpSyncAgent.TestConnectionByConfig(Integer)
   fullName: CRMScript.NetServer.NSErpSyncAgent.TestConnectionByConfig(Integer)
   type: Method
-  summary: "\nCRMScript method in the NSErpSyncAgent class that tests to see if the given connection has a valid connection to its connector.Tests to see if the given connection has a valid connection to its connector.<p></p>\nReturns true if the test was a success.<p></p>\n<code>Bool TestConnectionByConfig(Integer erpConnectionId, StringDictionary configFields)</code>\n"
+  summary: "\nCRMScript method in the NSErpSyncAgent class that tests to see if the given connection has a valid connection to its connector.Tests to see if the given connection has a valid connection to its connector.<p></p>\nReturns true if the test was a success.<p></p>\n<code>Bool TestConnectionByConfig(Integer erpConnectionId, Map configFields)</code>\n"
   remarks: 
   syntax: 
     content: TestConnectionByConfig()
@@ -1036,7 +1036,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
       type: CRMScript.Global.Integer
       description: The ID of the connector we try to connect to
   example: 
-  - "\n<pre><code>NSErpSyncAgent agent;\nInteger erpConnectionId;\nStringDictionary configFields;\nBool res = agent.TestConnectionByConfig(erpConnectionId, configFields);</code></pre>\n"
+  - "\n<pre><code>NSErpSyncAgent agent;\nInteger erpConnectionId;\nMap configFields;\nBool res = agent.TestConnectionByConfig(erpConnectionId, configFields);</code></pre>\n"
 - uid: CRMScript.NetServer.NSErpSyncAgent.TestConnectionById(Integer)
   commentId: M:CRMScript.NetServer.NSErpSyncAgent.TestConnectionById(Integer)
   id: 'TestConnectionById(Integer)'

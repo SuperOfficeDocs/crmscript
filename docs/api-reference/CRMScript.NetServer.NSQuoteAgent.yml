@@ -961,7 +961,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSQuoteAgent.GetConnectionConfigFields(Integer)
   fullName: CRMScript.NetServer.NSQuoteAgent.GetConnectionConfigFields(Integer)
   type: Method
-  summary: "\nCRMScript method in the NSQuoteAgent classReturns the config fields for the connection.<p></p>\nReturns Config Fields<p></p>\n<code>StringDictionary GetConnectionConfigFields(Integer quoteConnectionId)</code>\n"
+  summary: "\nCRMScript method in the NSQuoteAgent classReturns the config fields for the connection.<p></p>\nReturns Config Fields<p></p>\n<code>Map GetConnectionConfigFields(Integer quoteConnectionId)</code>\n"
   remarks: 
   syntax: 
     content: GetConnectionConfigFields()
@@ -970,7 +970,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
       type: CRMScript.Global.Integer
       description: Primary key of the connection
   example: 
-  - "\n<pre><code>NSQuoteAgent agent;\nInteger quoteConnectionId;\nStringDictionary res = agent.GetConnectionConfigFields(quoteConnectionId);</code></pre>\n"
+  - "\n<pre><code>NSQuoteAgent agent;\nInteger quoteConnectionId;\nMap res = agent.GetConnectionConfigFields(quoteConnectionId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSQuoteAgent.GetConnectionsForAssociate(Integer)
   commentId: M:CRMScript.NetServer.NSQuoteAgent.GetConnectionsForAssociate(Integer)
   id: 'GetConnectionsForAssociate(Integer)'
@@ -1936,7 +1936,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSQuoteAgent.SaveConnectionConfigFields(Integer)
   fullName: CRMScript.NetServer.NSQuoteAgent.SaveConnectionConfigFields(Integer)
   type: Method
-  summary: "\nCRMScript method in the NSQuoteAgent classSaves the connection config fields.<p></p>\nReturns Config Fields<p></p>\n<code>StringDictionary SaveConnectionConfigFields(Integer quoteConnectionId, StringDictionary connectionConfigFields)</code>\n"
+  summary: "\nCRMScript method in the NSQuoteAgent classSaves the connection config fields.<p></p>\nReturns Config Fields<p></p>\n<code>Map SaveConnectionConfigFields(Integer quoteConnectionId, Map connectionConfigFields)</code>\n"
   remarks: 
   syntax: 
     content: SaveConnectionConfigFields()
@@ -1945,7 +1945,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
       type: CRMScript.Global.Integer
       description: Primary key of the connection
   example: 
-  - "\n<pre><code>NSQuoteAgent agent;\nInteger quoteConnectionId;\nStringDictionary connectionConfigFields;\nStringDictionary res = agent.SaveConnectionConfigFields(quoteConnectionId, connectionConfigFields);</code></pre>\n"
+  - "\n<pre><code>NSQuoteAgent agent;\nInteger quoteConnectionId;\nMap connectionConfigFields;\nMap res = agent.SaveConnectionConfigFields(quoteConnectionId, connectionConfigFields);</code></pre>\n"
 - uid: CRMScript.NetServer.NSQuoteAgent.SavePriceList(NSPriceList)
   commentId: M:CRMScript.NetServer.NSQuoteAgent.SavePriceList(NSPriceList)
   id: 'SavePriceList(NSPriceList)'
@@ -2246,7 +2246,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   summary: "\nCRMScript method in the NSQuoteAgent classUsed by the Admin clients. Testing if the connection data is sufficient to get a connection with the ERP system. The Connector should try to do some operations to check if the connection has sufficient rights to run. The connection has not been created yet.<code>TestConnection()</code>is called without InitializeConnector being called first.<p></p>\nReturns how the test went\n"
   remarks: 
   syntax: 
-    content: NSPluginResponse TestConnection(String connectorName, StringDictionary connectionData)
+    content: NSPluginResponse TestConnection(String connectorName, Map connectionData)
     parameters:
     - id: connectorName
       type: CRMScript.Global.String
@@ -2254,7 +2254,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
     return:
       type: CRMScript.NetServer.NSPluginResponse
   example: 
-  - "\n<pre><code>NSQuoteAgent agent;\nString connectorName;\nStringDictionary connectionData;\nNSPluginResponse res = agent.TestConnection(connectorName, connectionData);</code></pre>\n"
+  - "\n<pre><code>NSQuoteAgent agent;\nString connectorName;\nMap connectionData;\nNSPluginResponse res = agent.TestConnection(connectorName, connectionData);</code></pre>\n"
 - uid: CRMScript.NetServer.NSQuoteAgent.ToggleProductInAssortment(Integer)
   commentId: M:CRMScript.NetServer.NSQuoteAgent.ToggleProductInAssortment(Integer)
   id: 'ToggleProductInAssortment(Integer)'

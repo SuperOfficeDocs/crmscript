@@ -384,7 +384,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   summary: "\nCreate a new physical document based on a document template and store it in the document archive.  Tags are substituted according to the provided id's.  Use GetDocumentStream to obtain the created document content. Since there is a potential for a name conflict (the file name stored by the document entity earlier may prove to be invalid), the (possibly amended) document entity is returned. The client should not assume that any earlier, cached entity information is valid.\n"
   remarks: 
   syntax: 
-    content: NSDocumentEntity CreateNewPhysicalDocumentFromTemplateWithCustomTags2(Integer contactId, Integer personId, Integer appointmentId, Integer documentId, Integer saleId, Integer selectionId, Integer projectId, StringDictionary customTags, String uiCulture)
+    content: NSDocumentEntity CreateNewPhysicalDocumentFromTemplateWithCustomTags2(Integer contactId, Integer personId, Integer appointmentId, Integer documentId, Integer saleId, Integer selectionId, Integer projectId, Map customTags, String uiCulture)
     parameters:
     - id: contactId
       type: CRMScript.Global.Integer
@@ -413,7 +413,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
     return:
       type: CRMScript.NetServer.NSDocumentEntity
   example: 
-  - "\n<pre><code>NSDocumentAgent agent;\nInteger contactId;\nInteger personId;\nInteger appointmentId;\nInteger documentId;\nInteger saleId;\nInteger selectionId;\nInteger projectId;\nStringDictionary customTags;\nString uiCulture;\nNSDocumentEntity res = agent.CreateNewPhysicalDocumentFromTemplateWithCustomTags2(contactId, personId, appointmentId, documentId, saleId, selectionId, projectId, customTags, uiCulture);</code></pre>\n"
+  - "\n<pre><code>NSDocumentAgent agent;\nInteger contactId;\nInteger personId;\nInteger appointmentId;\nInteger documentId;\nInteger saleId;\nInteger selectionId;\nInteger projectId;\nMap customTags;\nString uiCulture;\nNSDocumentEntity res = agent.CreateNewPhysicalDocumentFromTemplateWithCustomTags2(contactId, personId, appointmentId, documentId, saleId, selectionId, projectId, customTags, uiCulture);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.CreateNewPhysicalMailMergeDocumentFromTemplate(Integer,String)
   commentId: M:CRMScript.NetServer.NSDocumentAgent.CreateNewPhysicalMailMergeDocumentFromTemplate(Integer,String)
   id: 'CreateNewPhysicalMailMergeDocumentFromTemplate(Integer,String)'
@@ -816,7 +816,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   summary: "\nGet plugin-dependent properties for the document. A number of standard properties that should be supported by all plugins are defined in SuperOffice.CRM.Documents.Constants.Properties.\n"
   remarks: 
   syntax: 
-    content: StringDictionary GetDocumentProperties(Integer documentId, String[] requestedProperties)
+    content: Map GetDocumentProperties(Integer documentId, String[] requestedProperties)
     parameters:
     - id: documentId
       type: CRMScript.Global.Integer
@@ -825,9 +825,9 @@ NetServer calculates default values (for example, Country) on the entity, which 
       type: CRMScript.Global.String[]
       description: 
     return:
-      type: CRMScript.Global.StringDictionary
+      type: CRMScript.Global.Map
   example: 
-  - "\n<pre><code>NSDocumentAgent agent;\nInteger documentId;\nString[] requestedProperties;\nStringDictionary res = agent.GetDocumentProperties(documentId, requestedProperties);</code></pre>\n"
+  - "\n<pre><code>NSDocumentAgent agent;\nInteger documentId;\nString[] requestedProperties;\nMap res = agent.GetDocumentProperties(documentId, requestedProperties);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetDocumentsByTemplateHeading(Integer)
   commentId: M:CRMScript.NetServer.NSDocumentAgent.GetDocumentsByTemplateHeading(Integer)
   id: 'GetDocumentsByTemplateHeading(Integer)'
@@ -1097,15 +1097,15 @@ NetServer calculates default values (for example, Country) on the entity, which 
   summary: "\nGet a list of plugin-dependent capabilities for a given document archive plugin.<br/>A standard set of properties is defined in SuperOffice.CRM.Documents.Constants.Capabilities.\n"
   remarks: 
   syntax: 
-    content: StringDictionary GetPluginCapabilities(Integer pluginId)
+    content: Map GetPluginCapabilities(Integer pluginId)
     parameters:
     - id: pluginId
       type: CRMScript.Global.Integer
       description: 
     return:
-      type: CRMScript.Global.StringDictionary
+      type: CRMScript.Global.Map
   example: 
-  - "\n<pre><code>NSDocumentAgent agent;\nInteger pluginId;\nStringDictionary res = agent.GetPluginCapabilities(pluginId);</code></pre>\n"
+  - "\n<pre><code>NSDocumentAgent agent;\nInteger pluginId;\nMap res = agent.GetPluginCapabilities(pluginId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetPluginList()
   commentId: M:CRMScript.NetServer.NSDocumentAgent.GetPluginList()
   id: 'GetPluginList()'
@@ -1116,15 +1116,15 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSDocumentAgent.GetPluginList()
   fullName: CRMScript.NetServer.NSDocumentAgent.GetPluginList()
   type: Method
-  summary: "\nGet a list of installed document plugins<p></p>\n<strong>Returns:</strong>StringDictionary<p></p>\n<pre><code>NSDocumentAgent agent;\nStringDictionary res = agent.GetPluginList();</code></pre>\n"
+  summary: "\nGet a list of installed document plugins<p></p>\n<strong>Returns:</strong>Map<p></p>\n<pre><code>NSDocumentAgent agent;\nMap res = agent.GetPluginList();</code></pre>\n"
   remarks: 
   syntax: 
-    content: StringDictionary GetPluginList()
+    content: Map GetPluginList()
     parameters: []
     return:
-      type: CRMScript.Global.StringDictionary
+      type: CRMScript.Global.Map
   example: 
-  - "\n<pre><code>NSDocumentAgent agent;\nStringDictionary res = agent.GetPluginList();</code></pre>\n"
+  - "\n<pre><code>NSDocumentAgent agent;\nMap res = agent.GetPluginList();</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetPreviewDocumentStream(Integer)
   commentId: M:CRMScript.NetServer.NSDocumentAgent.GetPreviewDocumentStream(Integer)
   id: 'GetPreviewDocumentStream(Integer)'
@@ -1980,7 +1980,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   summary: "\nParse the source document, and replace any template variable tags with their values, based on the associate Id.<p/>The source document should be of type MergeDraft. This method also takes a pair of arrays specifying custom tags and their values; these tags will be available during substitution in addition to all the existing tags. Custom values will override values otherwise set.\n"
   remarks: 
   syntax: 
-    content: NSStream SubstituteMergeDocumentTemplateVariables2(Integer documentId, Integer associateId, StringDictionary customTags)
+    content: NSStream SubstituteMergeDocumentTemplateVariables2(Integer documentId, Integer associateId, Map customTags)
     parameters:
     - id: documentId
       type: CRMScript.Global.Integer
@@ -1991,7 +1991,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
     return:
       type: CRMScript.NetServer.NSStream
   example: 
-  - "\n<pre><code>NSDocumentAgent agent;\nInteger documentId;\nInteger associateId;\nStringDictionary customTags;\nNSStream res = agent.SubstituteMergeDocumentTemplateVariables2(documentId, associateId, customTags);</code></pre>\n"
+  - "\n<pre><code>NSDocumentAgent agent;\nInteger documentId;\nInteger associateId;\nMap customTags;\nNSStream res = agent.SubstituteMergeDocumentTemplateVariables2(documentId, associateId, customTags);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.SubstituteMergeDocumentTemplateVariablesEx(Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,String[],String[])
   commentId: M:CRMScript.NetServer.NSDocumentAgent.SubstituteMergeDocumentTemplateVariablesEx(Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,String[],String[])
   id: 'SubstituteMergeDocumentTemplateVariablesEx(Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,String[],String[])'
@@ -2054,7 +2054,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   summary: "\nParse the source document, and replace any template variable tags with their values, based on the provided identifiers.<p/>The source document should be of type MergeDraft. This method also takes a pair of arrays specifying custom tags and their values; these tags will be available during substitution in addition to all the existing tags. Custom values will override values otherwise set.\n"
   remarks: 
   syntax: 
-    content: NSStream SubstituteMergeDocumentTemplateVariablesEx2(Integer mergeDocumentId, Integer contactId, Integer personId, Integer projectId, Integer selectionId, Integer appointmentId, Integer documentId, Integer saleId, StringDictionary customTags)
+    content: NSStream SubstituteMergeDocumentTemplateVariablesEx2(Integer mergeDocumentId, Integer contactId, Integer personId, Integer projectId, Integer selectionId, Integer appointmentId, Integer documentId, Integer saleId, Map customTags)
     parameters:
     - id: mergeDocumentId
       type: CRMScript.Global.Integer
@@ -2083,7 +2083,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
     return:
       type: CRMScript.NetServer.NSStream
   example: 
-  - "\n<pre><code>NSDocumentAgent agent;\nInteger mergeDocumentId;\nInteger contactId;\nInteger personId;\nInteger projectId;\nInteger selectionId;\nInteger appointmentId;\nInteger documentId;\nInteger saleId;\nStringDictionary customTags;\nNSStream res = agent.SubstituteMergeDocumentTemplateVariablesEx2(mergeDocumentId, contactId, personId, projectId, selectionId, appointmentId, documentId, saleId, customTags);</code></pre>\n"
+  - "\n<pre><code>NSDocumentAgent agent;\nInteger mergeDocumentId;\nInteger contactId;\nInteger personId;\nInteger projectId;\nInteger selectionId;\nInteger appointmentId;\nInteger documentId;\nInteger saleId;\nMap customTags;\nNSStream res = agent.SubstituteMergeDocumentTemplateVariablesEx2(mergeDocumentId, contactId, personId, projectId, selectionId, appointmentId, documentId, saleId, customTags);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.SubstituteTemplateVariables(String,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,String)
   commentId: M:CRMScript.NetServer.NSDocumentAgent.SubstituteTemplateVariables(String,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,String)
   id: 'SubstituteTemplateVariables(String,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,String)'
@@ -2220,7 +2220,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   summary: "\nParse the source string, and replace any template variable tags with their values, based on the ID's given in the other parameters.<p/>This method also takes a pair of arrays specifying custom tags and their values; these tags will be available during substitution in addition to all the existing tags. Custom values will override values otherwise set.\n"
   remarks: "\n<p>See enum generatorEncoding.</p>\n"
   syntax: 
-    content: String SubstituteTemplateVariablesWithCustomTags2(String source, Integer generatorEncoding, StringDictionary customTags, Integer contactId, Integer personId, Integer appointmentId, Integer documentId, Integer saleId, Integer selectionId, Integer projectId, String cultureName)
+    content: String SubstituteTemplateVariablesWithCustomTags2(String source, Integer generatorEncoding, Map customTags, Integer contactId, Integer personId, Integer appointmentId, Integer documentId, Integer saleId, Integer selectionId, Integer projectId, String cultureName)
     parameters:
     - id: source
       type: CRMScript.Global.String
@@ -2255,7 +2255,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
     return:
       type: CRMScript.Global.String
   example: 
-  - "\n<pre><code>NSDocumentAgent agent;\nString source;\nInteger generatorEncoding;\nStringDictionary customTags;\nInteger contactId;\nInteger personId;\nInteger appointmentId;\nInteger documentId;\nInteger saleId;\nInteger selectionId;\nInteger projectId;\nString cultureName;\nString res = agent.SubstituteTemplateVariablesWithCustomTags2(source, generatorEncoding, customTags, contactId, personId, appointmentId, documentId, saleId, selectionId, projectId, cultureName);</code></pre>\n"
+  - "\n<pre><code>NSDocumentAgent agent;\nString source;\nInteger generatorEncoding;\nMap customTags;\nInteger contactId;\nInteger personId;\nInteger appointmentId;\nInteger documentId;\nInteger saleId;\nInteger selectionId;\nInteger projectId;\nString cultureName;\nString res = agent.SubstituteTemplateVariablesWithCustomTags2(source, generatorEncoding, customTags, contactId, personId, appointmentId, documentId, saleId, selectionId, projectId, cultureName);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.UndoCheckoutDocument(Integer,String[])
   commentId: M:CRMScript.NetServer.NSDocumentAgent.UndoCheckoutDocument(Integer,String[])
   id: 'UndoCheckoutDocument(Integer,String[])'
@@ -2294,15 +2294,15 @@ NetServer calculates default values (for example, Country) on the entity, which 
   summary: "\nCheck that entity is ready for saving, return error messages by field.\n"
   remarks: 
   syntax: 
-    content: StringDictionary ValidateDocumentEntity(NSDocumentEntity documentEntity)
+    content: Map ValidateDocumentEntity(NSDocumentEntity documentEntity)
     parameters:
     - id: documentEntity
       type: CRMScript.NetServer.NSDocumentEntity
       description: 
     return:
-      type: CRMScript.Global.StringDictionary
+      type: CRMScript.Global.Map
   example: 
-  - "\n<pre><code>NSDocumentAgent agent;\nNSDocumentEntity documentEntity;\nStringDictionary res = agent.ValidateDocumentEntity(documentEntity);</code></pre>\n"
+  - "\n<pre><code>NSDocumentAgent agent;\nNSDocumentEntity documentEntity;\nMap res = agent.ValidateDocumentEntity(documentEntity);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.VerifyGetDocumentStream(Integer)
   commentId: M:CRMScript.NetServer.NSDocumentAgent.VerifyGetDocumentStream(Integer)
   id: 'VerifyGetDocumentStream(Integer)'
@@ -2481,12 +2481,12 @@ references:
   name: NSCommandInfo
   nameWithType: NSCommandInfo
   fullName: CRMScript.NetServer.NSCommandInfo
-- uid: CRMScript.Global.StringDictionary
-  commentId: T:CRMScript.Global.StringDictionary
+- uid: CRMScript.Global.Map
+  commentId: T:CRMScript.Global.Map
   isExternal: true
-  name: StringDictionary
-  nameWithType: StringDictionary
-  fullName: CRMScript.Global.StringDictionary
+  name: Map
+  nameWithType: Map
+  fullName: CRMScript.Global.Map
 - uid: CRMScript.NetServer.NSVersionInfo[]
   isExternal: true
   name: NSVersionInfo[]

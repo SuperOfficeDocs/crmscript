@@ -2365,7 +2365,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSListAgent.GetDocumentTemplateProperties(Integer,String[])
   fullName: CRMScript.NetServer.NSListAgent.GetDocumentTemplateProperties(Integer,String[])
   type: Method
-  summary: "\nCRMScript method in the NSListAgent class that retrieves a list of key-value pairs of document template propertiesGets document template properties.<p></p>\nReturns key-value pairs with the requested properties.<p></p>\n<code>StringDictionary GetDocumentTemplateProperties(Integer documentTemplateId, String[] requestedProperties)</code>\n"
+  summary: "\nCRMScript method in the NSListAgent class that retrieves a list of key-value pairs of document template propertiesGets document template properties.<p></p>\nReturns key-value pairs with the requested properties.<p></p>\n<code>Map GetDocumentTemplateProperties(Integer documentTemplateId, String[] requestedProperties)</code>\n"
   remarks: 
   syntax: 
     content: GetDocumentTemplateProperties()
@@ -2377,7 +2377,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
       type: CRMScript.Global.String[]
       description: An array of properties to get the values for
   example: 
-  - "\n<pre><code>NSListAgent agent;\nInteger documentTemplateId;\nString[] requestedProperties;\nStringDictionary res = agent.GetDocumentTemplateProperties(documentTemplateId, requestedProperties);</code></pre>\n"
+  - "\n<pre><code>NSListAgent agent;\nInteger documentTemplateId;\nString[] requestedProperties;\nMap res = agent.GetDocumentTemplateProperties(documentTemplateId, requestedProperties);</code></pre>\n"
 - uid: CRMScript.NetServer.NSListAgent.GetDocumentTemplates()
   commentId: M:CRMScript.NetServer.NSListAgent.GetDocumentTemplates()
   id: 'GetDocumentTemplates()'
@@ -2548,15 +2548,15 @@ NetServer calculates default values (for example, Country) on the entity, which 
   summary: "\nGet a list of document types supported by a given document plugin. Use the document template type when creating a new template.\n"
   remarks: 
   syntax: 
-    content: StringDictionary GetDocumentTypesForPlugin(Integer pluginId)
+    content: Map GetDocumentTypesForPlugin(Integer pluginId)
     parameters:
     - id: pluginId
       type: CRMScript.Global.Integer
       description: 
     return:
-      type: CRMScript.Global.StringDictionary
+      type: CRMScript.Global.Map
   example: 
-  - "\n<pre><code>NSListAgent agent;\nInteger pluginId;\nStringDictionary res = agent.GetDocumentTypesForPlugin(pluginId);</code></pre>\n"
+  - "\n<pre><code>NSListAgent agent;\nInteger pluginId;\nMap res = agent.GetDocumentTypesForPlugin(pluginId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSListAgent.GetEmarketingStrictMode()
   commentId: M:CRMScript.NetServer.NSListAgent.GetEmarketingStrictMode()
   id: 'GetEmarketingStrictMode()'
@@ -3485,15 +3485,15 @@ NetServer calculates default values (for example, Country) on the entity, which 
   summary: "\nGet a list of plugin-dependent capabilities for a given document archive plugin.<br/>A standard set of properties is defined in SuperOffice.CRM.Documents.Constants.Capabilities.\n"
   remarks: 
   syntax: 
-    content: StringDictionary GetPluginCapabilities(Integer pluginId)
+    content: Map GetPluginCapabilities(Integer pluginId)
     parameters:
     - id: pluginId
       type: CRMScript.Global.Integer
       description: 
     return:
-      type: CRMScript.Global.StringDictionary
+      type: CRMScript.Global.Map
   example: 
-  - "\n<pre><code>NSListAgent agent;\nInteger pluginId;\nStringDictionary res = agent.GetPluginCapabilities(pluginId);</code></pre>\n"
+  - "\n<pre><code>NSListAgent agent;\nInteger pluginId;\nMap res = agent.GetPluginCapabilities(pluginId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSListAgent.GetPluginList()
   commentId: M:CRMScript.NetServer.NSListAgent.GetPluginList()
   id: 'GetPluginList()'
@@ -3504,15 +3504,15 @@ NetServer calculates default values (for example, Country) on the entity, which 
   nameWithType: NSListAgent.GetPluginList()
   fullName: CRMScript.NetServer.NSListAgent.GetPluginList()
   type: Method
-  summary: "\nGet a list of installed document plugins<p></p>\n<strong>Returns:</strong>StringDictionary<p></p>\n<pre><code>NSListAgent agent;\nStringDictionary res = agent.GetPluginList();</code></pre>\n"
+  summary: "\nGet a list of installed document plugins<p></p>\n<strong>Returns:</strong>Map<p></p>\n<pre><code>NSListAgent agent;\nMap res = agent.GetPluginList();</code></pre>\n"
   remarks: 
   syntax: 
-    content: StringDictionary GetPluginList()
+    content: Map GetPluginList()
     parameters: []
     return:
-      type: CRMScript.Global.StringDictionary
+      type: CRMScript.Global.Map
   example: 
-  - "\n<pre><code>NSListAgent agent;\nStringDictionary res = agent.GetPluginList();</code></pre>\n"
+  - "\n<pre><code>NSListAgent agent;\nMap res = agent.GetPluginList();</code></pre>\n"
 - uid: CRMScript.NetServer.NSListAgent.GetPosition(Integer)
   commentId: M:CRMScript.NetServer.NSListAgent.GetPosition(Integer)
   id: 'GetPosition(Integer)'
@@ -6870,12 +6870,12 @@ references:
   name: NSTask
   nameWithType: NSTask
   fullName: CRMScript.NetServer.NSTask
-- uid: CRMScript.Global.StringDictionary
-  commentId: T:CRMScript.Global.StringDictionary
+- uid: CRMScript.Global.Map
+  commentId: T:CRMScript.Global.Map
   isExternal: true
-  name: StringDictionary
-  nameWithType: StringDictionary
-  fullName: CRMScript.Global.StringDictionary
+  name: Map
+  nameWithType: Map
+  fullName: CRMScript.Global.Map
 - uid: CRMScript.NetServer.NSSelectableMDOListItem[]
   isExternal: true
   name: NSSelectableMDOListItem[]

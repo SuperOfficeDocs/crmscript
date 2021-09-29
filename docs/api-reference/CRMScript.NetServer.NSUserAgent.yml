@@ -1066,7 +1066,7 @@ NetServer calculates default values (for example, Country) on the entity, which 
   summary: "\nRead specific a set of data rights at the given row in the rights matrix. An exception will be thrown if non existing position is specified.\n"
   remarks: 
   syntax: 
-    content: StringDictionary GetDataRights(Integer roleId, String tableName)
+    content: Map GetDataRights(Integer roleId, String tableName)
     parameters:
     - id: roleId
       type: CRMScript.Global.Integer
@@ -1075,9 +1075,9 @@ NetServer calculates default values (for example, Country) on the entity, which 
       type: CRMScript.Global.String
       description: 
     return:
-      type: CRMScript.Global.StringDictionary
+      type: CRMScript.Global.Map
   example: 
-  - "\n<pre><code>NSUserAgent agent;\nInteger roleId;\nString tableName;\nStringDictionary res = agent.GetDataRights(roleId, tableName);</code></pre>\n"
+  - "\n<pre><code>NSUserAgent agent;\nInteger roleId;\nString tableName;\nMap res = agent.GetDataRights(roleId, tableName);</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserAgent.GetDefaultAssociateUserName(NSUser)
   commentId: M:CRMScript.NetServer.NSUserAgent.GetDefaultAssociateUserName(NSUser)
   id: 'GetDefaultAssociateUserName(NSUser)'
@@ -2190,15 +2190,15 @@ NetServer calculates default values (for example, Country) on the entity, which 
   summary: "\nCheck that entity is ready for saving, return error messages by field.\n"
   remarks: 
   syntax: 
-    content: StringDictionary ValidateUser(NSUser user)
+    content: Map ValidateUser(NSUser user)
     parameters:
     - id: user
       type: CRMScript.NetServer.NSUser
       description: 
     return:
-      type: CRMScript.Global.StringDictionary
+      type: CRMScript.Global.Map
   example: 
-  - "\n<pre><code>NSUserAgent agent;\nNSUser user;\nStringDictionary res = agent.ValidateUser(user);</code></pre>\n"
+  - "\n<pre><code>NSUserAgent agent;\nNSUser user;\nMap res = agent.ValidateUser(user);</code></pre>\n"
 references:
 - uid: CRMScript.NetServer.NSUserAgent
   commentId: T:CRMScript.NetServer.NSUserAgent
@@ -2418,12 +2418,12 @@ references:
   name: NSCredentialType
   nameWithType: NSCredentialType
   fullName: CRMScript.NetServer.NSCredentialType
-- uid: CRMScript.Global.StringDictionary
-  commentId: T:CRMScript.Global.StringDictionary
+- uid: CRMScript.Global.Map
+  commentId: T:CRMScript.Global.Map
   isExternal: true
-  name: StringDictionary
-  nameWithType: StringDictionary
-  fullName: CRMScript.Global.StringDictionary
+  name: Map
+  nameWithType: Map
+  fullName: CRMScript.Global.Map
 - uid: CRMScript.NetServer.NSTokenManagementInfo
   commentId: T:CRMScript.NetServer.NSTokenManagementInfo
   isExternal: true

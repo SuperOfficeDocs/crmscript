@@ -6,17 +6,17 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSExtendedLicenseInfo.#ctor
   - CRMScript.NetServer.NSExtendedLicenseInfo.GetAccumulatedNextCheckDate()
   - CRMScript.NetServer.NSExtendedLicenseInfo.GetCanBeActivated()
   - CRMScript.NetServer.NSExtendedLicenseInfo.GetCurrent()
   - CRMScript.NetServer.NSExtendedLicenseInfo.GetExtendedModuleLicenses()
   - CRMScript.NetServer.NSExtendedLicenseInfo.GetNew()
   - CRMScript.NetServer.NSExtendedLicenseInfo.GetReason()
-  - CRMScript.NetServer.NSExtendedLicenseInfo.#ctor
-  - CRMScript.NetServer.NSExtendedLicenseInfo.SetAccumulatedNextCheckDate()
+  - CRMScript.NetServer.NSExtendedLicenseInfo.SetAccumulatedNextCheckDate(DateTime)
   - CRMScript.NetServer.NSExtendedLicenseInfo.SetCanBeActivated(Bool)
   - CRMScript.NetServer.NSExtendedLicenseInfo.SetCurrent(NSLicenseInfo)
-  - CRMScript.NetServer.NSExtendedLicenseInfo.SetExtendedModuleLicenses()
+  - CRMScript.NetServer.NSExtendedLicenseInfo.SetExtendedModuleLicenses(NSExtendedModuleLicense[])
   - CRMScript.NetServer.NSExtendedLicenseInfo.SetNew(NSLicenseInfo)
   - CRMScript.NetServer.NSExtendedLicenseInfo.SetReason(String)
   name: NSExtendedLicenseInfo
@@ -24,6 +24,21 @@ items:
   fullName: CRMScript.NetServer.NSExtendedLicenseInfo
   type: Class
   summary: 
+  example: 
+- uid: CRMScript.NetServer.NSExtendedLicenseInfo.#ctor
+  commentId: M:CRMScript.NetServer.NSExtendedLicenseInfo.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSExtendedLicenseInfo
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSExtendedLicenseInfo.#ctor
+  fullName: CRMScript.NetServer.NSExtendedLicenseInfo.#ctor
+  type: Constructor
+  summary: 
+  remarks: 
+  syntax: 
+    content: NSExtendedLicenseInfo
   example: 
 - uid: CRMScript.NetServer.NSExtendedLicenseInfo.GetAccumulatedNextCheckDate()
   commentId: M:CRMScript.NetServer.NSExtendedLicenseInfo.GetAccumulatedNextCheckDate()
@@ -42,6 +57,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.DateTime
+      description:
   example: 
   - "\n<pre><code>NSExtendedLicenseInfo thing;\nDateTime accumulatedNextCheckDate = thing.GetAccumulatedNextCheckDate();</code></pre>\n"
 - uid: CRMScript.NetServer.NSExtendedLicenseInfo.GetCanBeActivated()
@@ -61,6 +77,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.Bool
+      description: 
   example: 
   - "\n<pre><code>NSExtendedLicenseInfo thing;\nBool canBeActivated = thing.GetCanBeActivated();</code></pre>\n"
 - uid: CRMScript.NetServer.NSExtendedLicenseInfo.GetCurrent()
@@ -80,6 +97,7 @@ items:
     parameters: []
     return:
       type: CRMScript.NetServer.NSLicenseInfo
+      description:
   example: 
   - "\n<pre><code>NSExtendedLicenseInfo thing;\nNSLicenseInfo current = thing.GetCurrent();</code></pre>\n"
 - uid: CRMScript.NetServer.NSExtendedLicenseInfo.GetExtendedModuleLicenses()
@@ -99,6 +117,7 @@ items:
     parameters: []
     return:
       type: CRMScript.NetServer.NSExtendedModuleLicense[]
+      description:
   example: 
   - "\n<pre><code>NSExtendedLicenseInfo thing;\nNSExtendedModuleLicense[] extendedModuleLicenses = thing.GetExtendedModuleLicenses();</code></pre>\n"
 - uid: CRMScript.NetServer.NSExtendedLicenseInfo.GetNew()
@@ -118,6 +137,7 @@ items:
     parameters: []
     return:
       type: CRMScript.NetServer.NSLicenseInfo
+      description:
   example: 
   - "\n<pre><code>NSExtendedLicenseInfo thing;\nNSLicenseInfo new = thing.GetNew();</code></pre>\n"
 - uid: CRMScript.NetServer.NSExtendedLicenseInfo.GetReason()
@@ -137,38 +157,29 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
+      description:
   example: 
   - "\n<pre><code>NSExtendedLicenseInfo thing;\nString reason = thing.GetReason();</code></pre>\n"
-- uid: CRMScript.NetServer.NSExtendedLicenseInfo.#ctor
-  commentId: M:CRMScript.NetServer.NSExtendedLicenseInfo.#ctor
-  id: '#ctor'
-  so.intellisense: Void.NSExtendedLicenseInfo
-  langs:
-  - crmscript
-  name: '#ctor'
-  nameWithType: NSExtendedLicenseInfo.#ctor
-  fullName: CRMScript.NetServer.NSExtendedLicenseInfo.#ctor
-  type: Constructor
-  summary: 
-  remarks: 
-  syntax: 
-    content: NSExtendedLicenseInfo
-  example: 
-- uid: CRMScript.NetServer.NSExtendedLicenseInfo.SetAccumulatedNextCheckDate()
-  commentId: M:CRMScript.NetServer.NSExtendedLicenseInfo.SetAccumulatedNextCheckDate()
-  id: 'SetAccumulatedNextCheckDate()'
+- uid: CRMScript.NetServer.NSExtendedLicenseInfo.SetAccumulatedNextCheckDate(DateTime)
+  commentId: M:CRMScript.NetServer.NSExtendedLicenseInfo.SetAccumulatedNextCheckDate(DateTime)
+  id: 'SetAccumulatedNextCheckDate(DateTime)'
   so.intellisense: NSExtendedLicenseInfo.SetAccumulatedNextCheckDate
   langs:
   - crmscript
-  name: 'SetAccumulatedNextCheckDate()'
-  nameWithType: NSExtendedLicenseInfo.SetAccumulatedNextCheckDate()
-  fullName: CRMScript.NetServer.NSExtendedLicenseInfo.SetAccumulatedNextCheckDate()
+  name: 'SetAccumulatedNextCheckDate(DateTime)'
+  nameWithType: NSExtendedLicenseInfo.SetAccumulatedNextCheckDate(DateTime)
+  fullName: CRMScript.NetServer.NSExtendedLicenseInfo.SetAccumulatedNextCheckDate(DateTime)
   type: Method
   summary: 
   remarks: 
   syntax: 
     content: Void SetAccumulatedNextCheckDate(DateTime accumulatedNextCheckDate)
     parameters:
+    - id: accumulatedNextCheckDate
+      type: CRMScript.Global.DateTime
+      description:
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSExtendedLicenseInfo thing;\nDateTime accumulatedNextCheckDate;\nthing.SetAccumulatedNextCheckDate(accumulatedNextCheckDate);</code></pre>\n"
 - uid: CRMScript.NetServer.NSExtendedLicenseInfo.SetCanBeActivated(Bool)
@@ -215,21 +226,26 @@ items:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSExtendedLicenseInfo thing;\nNSLicenseInfo current;\nthing.SetCurrent(current);</code></pre>\n"
-- uid: CRMScript.NetServer.NSExtendedLicenseInfo.SetExtendedModuleLicenses()
-  commentId: M:CRMScript.NetServer.NSExtendedLicenseInfo.SetExtendedModuleLicenses()
-  id: 'SetExtendedModuleLicenses()'
+- uid: CRMScript.NetServer.NSExtendedLicenseInfo.SetExtendedModuleLicenses(NSExtendedModuleLicense[])
+  commentId: M:CRMScript.NetServer.NSExtendedLicenseInfo.SetExtendedModuleLicenses(NSExtendedModuleLicense[])
+  id: 'SetExtendedModuleLicenses(NSExtendedModuleLicense[])'
   so.intellisense: NSExtendedLicenseInfo.SetExtendedModuleLicenses
   langs:
   - crmscript
-  name: 'SetExtendedModuleLicenses()'
-  nameWithType: NSExtendedLicenseInfo.SetExtendedModuleLicenses()
-  fullName: CRMScript.NetServer.NSExtendedLicenseInfo.SetExtendedModuleLicenses()
+  name: 'SetExtendedModuleLicenses(NSExtendedModuleLicense[])'
+  nameWithType: NSExtendedLicenseInfo.SetExtendedModuleLicenses(NSExtendedModuleLicense[])
+  fullName: CRMScript.NetServer.NSExtendedLicenseInfo.SetExtendedModuleLicenses(NSExtendedModuleLicense[])
   type: Method
   summary: 
   remarks: 
   syntax: 
     content: Void SetExtendedModuleLicenses(NSExtendedModuleLicense[] extendedModuleLicenses)
     parameters:
+    - id: extendedModuleLicenses
+      type: CRMScript.NetServer.NSExtendedModuleLicense[]
+      description:
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSExtendedLicenseInfo thing;\nNSExtendedModuleLicense[] extendedModuleLicenses;\nthing.SetExtendedModuleLicenses(extendedModuleLicenses);</code></pre>\n"
 - uid: CRMScript.NetServer.NSExtendedLicenseInfo.SetNew(NSLicenseInfo)

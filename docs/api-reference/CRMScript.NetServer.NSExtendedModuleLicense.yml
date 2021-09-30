@@ -6,6 +6,7 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSExtendedModuleLicense.#ctor
   - CRMScript.NetServer.NSExtendedModuleLicense.GetCurrent()
   - CRMScript.NetServer.NSExtendedModuleLicense.GetNew()
   - CRMScript.NetServer.NSExtendedModuleLicense.GetNumberOfLicensesAdded()
@@ -14,9 +15,8 @@ items:
   - CRMScript.NetServer.NSExtendedModuleLicense.GetNumberOfLicensesNewFree()
   - CRMScript.NetServer.NSExtendedModuleLicense.GetNumberOfLicensesNewTotal()
   - CRMScript.NetServer.NSExtendedModuleLicense.GetNumberOfLicensesTotal()
-  - CRMScript.NetServer.NSExtendedModuleLicense.#ctor
-  - CRMScript.NetServer.NSExtendedModuleLicense.SetCurrent()
-  - CRMScript.NetServer.NSExtendedModuleLicense.SetNew()
+  - CRMScript.NetServer.NSExtendedModuleLicense.SetCurrent(NSModuleLicense)
+  - CRMScript.NetServer.NSExtendedModuleLicense.SetNew(NSModuleLicense)
   - CRMScript.NetServer.NSExtendedModuleLicense.SetNumberOfLicensesAdded(Integer)
   - CRMScript.NetServer.NSExtendedModuleLicense.SetNumberOfLicensesFree(Integer)
   - CRMScript.NetServer.NSExtendedModuleLicense.SetNumberOfLicensesInUse(Integer)
@@ -28,6 +28,21 @@ items:
   fullName: CRMScript.NetServer.NSExtendedModuleLicense
   type: Class
   summary: 
+  example: 
+- uid: CRMScript.NetServer.NSExtendedModuleLicense.#ctor
+  commentId: M:CRMScript.NetServer.NSExtendedModuleLicense.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSExtendedModuleLicense
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSExtendedModuleLicense.#ctor
+  fullName: CRMScript.NetServer.NSExtendedModuleLicense.#ctor
+  type: Constructor
+  summary: 
+  remarks: 
+  syntax: 
+    content: NSExtendedModuleLicense
   example: 
 - uid: CRMScript.NetServer.NSExtendedModuleLicense.GetCurrent()
   commentId: M:CRMScript.NetServer.NSExtendedModuleLicense.GetCurrent()
@@ -46,6 +61,7 @@ items:
     parameters: []
     return:
       type: CRMScript.NetServer.NSModuleLicense
+      description:
   example: 
   - "\n<pre><code>NSExtendedModuleLicense thing;\nNSModuleLicense current = thing.GetCurrent();</code></pre>\n"
 - uid: CRMScript.NetServer.NSExtendedModuleLicense.GetNew()
@@ -65,6 +81,7 @@ items:
     parameters: []
     return:
       type: CRMScript.NetServer.NSModuleLicense
+      description:
   example: 
   - "\n<pre><code>NSExtendedModuleLicense thing;\nNSModuleLicense new = thing.GetNew();</code></pre>\n"
 - uid: CRMScript.NetServer.NSExtendedModuleLicense.GetNumberOfLicensesAdded()
@@ -84,6 +101,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.Integer
+      description:
   example: 
   - "\n<pre><code>NSExtendedModuleLicense thing;\nInteger numberOfLicensesAdded = thing.GetNumberOfLicensesAdded();</code></pre>\n"
 - uid: CRMScript.NetServer.NSExtendedModuleLicense.GetNumberOfLicensesFree()
@@ -103,6 +121,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.Integer
+      description:
   example: 
   - "\n<pre><code>NSExtendedModuleLicense thing;\nInteger numberOfLicensesFree = thing.GetNumberOfLicensesFree();</code></pre>\n"
 - uid: CRMScript.NetServer.NSExtendedModuleLicense.GetNumberOfLicensesInUse()
@@ -122,6 +141,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.Integer
+      description:
   example: 
   - "\n<pre><code>NSExtendedModuleLicense thing;\nInteger numberOfLicensesInUse = thing.GetNumberOfLicensesInUse();</code></pre>\n"
 - uid: CRMScript.NetServer.NSExtendedModuleLicense.GetNumberOfLicensesNewFree()
@@ -141,6 +161,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.Integer
+      description:
   example: 
   - "\n<pre><code>NSExtendedModuleLicense thing;\nInteger numberOfLicensesNewFree = thing.GetNumberOfLicensesNewFree();</code></pre>\n"
 - uid: CRMScript.NetServer.NSExtendedModuleLicense.GetNumberOfLicensesNewTotal()
@@ -160,6 +181,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.Integer
+      description:
   example: 
   - "\n<pre><code>NSExtendedModuleLicense thing;\nInteger numberOfLicensesNewTotal = thing.GetNumberOfLicensesNewTotal();</code></pre>\n"
 - uid: CRMScript.NetServer.NSExtendedModuleLicense.GetNumberOfLicensesTotal()
@@ -179,55 +201,51 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.Integer
+      description:
   example: 
   - "\n<pre><code>NSExtendedModuleLicense thing;\nInteger numberOfLicensesTotal = thing.GetNumberOfLicensesTotal();</code></pre>\n"
-- uid: CRMScript.NetServer.NSExtendedModuleLicense.#ctor
-  commentId: M:CRMScript.NetServer.NSExtendedModuleLicense.#ctor
-  id: '#ctor'
-  so.intellisense: Void.NSExtendedModuleLicense
-  langs:
-  - crmscript
-  name: '#ctor'
-  nameWithType: NSExtendedModuleLicense.#ctor
-  fullName: CRMScript.NetServer.NSExtendedModuleLicense.#ctor
-  type: Constructor
-  summary: 
-  remarks: 
-  syntax: 
-    content: NSExtendedModuleLicense
-  example: 
-- uid: CRMScript.NetServer.NSExtendedModuleLicense.SetCurrent()
-  commentId: M:CRMScript.NetServer.NSExtendedModuleLicense.SetCurrent()
-  id: 'SetCurrent()'
+- uid: CRMScript.NetServer.NSExtendedModuleLicense.SetCurrent(NSModuleLicense)
+  commentId: M:CRMScript.NetServer.NSExtendedModuleLicense.SetCurrent(NSModuleLicense)
+  id: 'SetCurrent(NSModuleLicense)'
   so.intellisense: NSExtendedModuleLicense.SetCurrent
   langs:
   - crmscript
-  name: 'SetCurrent()'
-  nameWithType: NSExtendedModuleLicense.SetCurrent()
-  fullName: CRMScript.NetServer.NSExtendedModuleLicense.SetCurrent()
+  name: 'SetCurrent(NSModuleLicense)'
+  nameWithType: NSExtendedModuleLicense.SetCurrent(NSModuleLicense)
+  fullName: CRMScript.NetServer.NSExtendedModuleLicense.SetCurrent(NSModuleLicense)
   type: Method
   summary: 
   remarks: 
   syntax: 
     content: Void SetCurrent(NSModuleLicense current)
     parameters:
+    - id: current
+      type: CRMScript.NetServer.NSModuleLicense
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSExtendedModuleLicense thing;\nNSModuleLicense current;\nthing.SetCurrent(current);</code></pre>\n"
-- uid: CRMScript.NetServer.NSExtendedModuleLicense.SetNew()
-  commentId: M:CRMScript.NetServer.NSExtendedModuleLicense.SetNew()
-  id: 'SetNew()'
+- uid: CRMScript.NetServer.NSExtendedModuleLicense.SetNew(NSModuleLicense)
+  commentId: M:CRMScript.NetServer.NSExtendedModuleLicense.SetNew(NSModuleLicense)
+  id: 'SetNew(NSModuleLicense)'
   so.intellisense: NSExtendedModuleLicense.SetNew
   langs:
   - crmscript
-  name: 'SetNew()'
-  nameWithType: NSExtendedModuleLicense.SetNew()
-  fullName: CRMScript.NetServer.NSExtendedModuleLicense.SetNew()
+  name: 'SetNew(NSModuleLicense)'
+  nameWithType: NSExtendedModuleLicense.SetNew(NSModuleLicense)
+  fullName: CRMScript.NetServer.NSExtendedModuleLicense.SetNew(NSModuleLicense)
   type: Method
   summary: 
   remarks: 
   syntax: 
     content: Void SetNew(NSModuleLicense new)
     parameters:
+    - id: new
+      type: CRMScript.NetServer.NSModuleLicense
+      description: 
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSExtendedModuleLicense thing;\nNSModuleLicense new;\nthing.SetNew(new);</code></pre>\n"
 - uid: CRMScript.NetServer.NSExtendedModuleLicense.SetNumberOfLicensesAdded(Integer)

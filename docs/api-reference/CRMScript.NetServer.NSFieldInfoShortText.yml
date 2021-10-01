@@ -6,12 +6,12 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSFieldInfoShortText.#ctor
   - CRMScript.NetServer.NSFieldInfoShortText.GetChoices()
   - CRMScript.NetServer.NSFieldInfoShortText.GetDefaultValue()
   - CRMScript.NetServer.NSFieldInfoShortText.GetFormatMask()
   - CRMScript.NetServer.NSFieldInfoShortText.GetIsHtml()
   - CRMScript.NetServer.NSFieldInfoShortText.GetTextLength()
-  - CRMScript.NetServer.NSFieldInfoShortText.#ctor
   - CRMScript.NetServer.NSFieldInfoShortText.SetChoices(String[])
   - CRMScript.NetServer.NSFieldInfoShortText.SetDefaultValue(String)
   - CRMScript.NetServer.NSFieldInfoShortText.SetFormatMask(String)
@@ -23,100 +23,6 @@ items:
   type: Class
   summary: 
   example: 
-- uid: CRMScript.NetServer.NSFieldInfoShortText.GetChoices()
-  commentId: M:CRMScript.NetServer.NSFieldInfoShortText.GetChoices()
-  id: 'GetChoices()'
-  so.intellisense: NSFieldInfoShortText.GetChoices
-  langs:
-  - crmscript
-  name: 'GetChoices()'
-  nameWithType: NSFieldInfoShortText.GetChoices()
-  fullName: CRMScript.NetServer.NSFieldInfoShortText.GetChoices()
-  type: Method
-  summary: "\nList of items to choose from. Null = not a dropdown list.<p></p>\n<ul><li><strong>Returns:</strong>StringArray</li></ul>\n"
-  remarks: 
-  syntax: 
-    content: GetChoices()
-    parameters: []
-    return:
-      type: CRMScript.Global.Void
-  example: 
-- uid: CRMScript.NetServer.NSFieldInfoShortText.GetDefaultValue()
-  commentId: M:CRMScript.NetServer.NSFieldInfoShortText.GetDefaultValue()
-  id: 'GetDefaultValue()'
-  so.intellisense: NSFieldInfoShortText.GetDefaultValue
-  langs:
-  - crmscript
-  name: 'GetDefaultValue()'
-  nameWithType: NSFieldInfoShortText.GetDefaultValue()
-  fullName: CRMScript.NetServer.NSFieldInfoShortText.GetDefaultValue()
-  type: Method
-  summary: "\nDefault string value\n"
-  remarks: 
-  syntax: 
-    content: String GetDefaultValue()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-  example: 
-  - "\n<pre><code>NSFieldInfoShortText thing;\nString defaultValue = thing.GetDefaultValue();</code></pre>\n"
-- uid: CRMScript.NetServer.NSFieldInfoShortText.GetFormatMask()
-  commentId: M:CRMScript.NetServer.NSFieldInfoShortText.GetFormatMask()
-  id: 'GetFormatMask()'
-  so.intellisense: NSFieldInfoShortText.GetFormatMask
-  langs:
-  - crmscript
-  name: 'GetFormatMask()'
-  nameWithType: NSFieldInfoShortText.GetFormatMask()
-  fullName: CRMScript.NetServer.NSFieldInfoShortText.GetFormatMask()
-  type: Method
-  summary: "\nFormatting mask, can be whatever the controls understand (currently nothing :-))\n"
-  remarks: 
-  syntax: 
-    content: String GetFormatMask()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-  example: 
-  - "\n<pre><code>NSFieldInfoShortText thing;\nString formatMask = thing.GetFormatMask();</code></pre>\n"
-- uid: CRMScript.NetServer.NSFieldInfoShortText.GetIsHtml()
-  commentId: M:CRMScript.NetServer.NSFieldInfoShortText.GetIsHtml()
-  id: 'GetIsHtml()'
-  so.intellisense: NSFieldInfoShortText.GetIsHtml
-  langs:
-  - crmscript
-  name: 'GetIsHtml()'
-  nameWithType: NSFieldInfoShortText.GetIsHtml()
-  fullName: CRMScript.NetServer.NSFieldInfoShortText.GetIsHtml()
-  type: Method
-  summary: "\nDo not escape HTML in field when displaying contents.\n"
-  remarks: 
-  syntax: 
-    content: Bool GetIsHtml()
-    parameters: []
-    return:
-      type: CRMScript.Global.Bool
-  example: 
-  - "\n<pre><code>NSFieldInfoShortText thing;\nBool isHtml = thing.GetIsHtml();</code></pre>\n"
-- uid: CRMScript.NetServer.NSFieldInfoShortText.GetTextLength()
-  commentId: M:CRMScript.NetServer.NSFieldInfoShortText.GetTextLength()
-  id: 'GetTextLength()'
-  so.intellisense: NSFieldInfoShortText.GetTextLength
-  langs:
-  - crmscript
-  name: 'GetTextLength()'
-  nameWithType: NSFieldInfoShortText.GetTextLength()
-  fullName: CRMScript.NetServer.NSFieldInfoShortText.GetTextLength()
-  type: Method
-  summary: "\nLength (in characters) of a text field, 0 for other types\n"
-  remarks: 
-  syntax: 
-    content: Integer GetTextLength()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-  example: 
-  - "\n<pre><code>NSFieldInfoShortText thing;\nInteger textLength = thing.GetTextLength();</code></pre>\n"
 - uid: CRMScript.NetServer.NSFieldInfoShortText.#ctor
   commentId: M:CRMScript.NetServer.NSFieldInfoShortText.#ctor
   id: '#ctor'
@@ -132,6 +38,105 @@ items:
   syntax: 
     content: NSFieldInfoShortText
   example: 
+- uid: CRMScript.NetServer.NSFieldInfoShortText.GetChoices()
+  commentId: M:CRMScript.NetServer.NSFieldInfoShortText.GetChoices()
+  id: 'GetChoices()'
+  so.intellisense: NSFieldInfoShortText.GetChoices
+  langs:
+  - crmscript
+  name: 'GetChoices()'
+  nameWithType: NSFieldInfoShortText.GetChoices()
+  fullName: CRMScript.NetServer.NSFieldInfoShortText.GetChoices()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String[] GetChoices()
+    parameters: []
+    return:
+      type: CRMScript.Global.String[]
+      description: List of items to choose from. Null = not a dropdown list.
+  example: 
+- uid: CRMScript.NetServer.NSFieldInfoShortText.GetDefaultValue()
+  commentId: M:CRMScript.NetServer.NSFieldInfoShortText.GetDefaultValue()
+  id: 'GetDefaultValue()'
+  so.intellisense: NSFieldInfoShortText.GetDefaultValue
+  langs:
+  - crmscript
+  name: 'GetDefaultValue()'
+  nameWithType: NSFieldInfoShortText.GetDefaultValue()
+  fullName: CRMScript.NetServer.NSFieldInfoShortText.GetDefaultValue()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: String GetDefaultValue()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Default string value
+  example: 
+  - "\n<pre><code>NSFieldInfoShortText thing;\nString defaultValue = thing.GetDefaultValue();</code></pre>\n"
+- uid: CRMScript.NetServer.NSFieldInfoShortText.GetFormatMask()
+  commentId: M:CRMScript.NetServer.NSFieldInfoShortText.GetFormatMask()
+  id: 'GetFormatMask()'
+  so.intellisense: NSFieldInfoShortText.GetFormatMask
+  langs:
+  - crmscript
+  name: 'GetFormatMask()'
+  nameWithType: NSFieldInfoShortText.GetFormatMask()
+  fullName: CRMScript.NetServer.NSFieldInfoShortText.GetFormatMask()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: String GetFormatMask()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Formatting mask, can be whatever the controls understand (currently nothing)
+  example: 
+  - "\n<pre><code>NSFieldInfoShortText thing;\nString formatMask = thing.GetFormatMask();</code></pre>\n"
+- uid: CRMScript.NetServer.NSFieldInfoShortText.GetIsHtml()
+  commentId: M:CRMScript.NetServer.NSFieldInfoShortText.GetIsHtml()
+  id: 'GetIsHtml()'
+  so.intellisense: NSFieldInfoShortText.GetIsHtml
+  langs:
+  - crmscript
+  name: 'GetIsHtml()'
+  nameWithType: NSFieldInfoShortText.GetIsHtml()
+  fullName: CRMScript.NetServer.NSFieldInfoShortText.GetIsHtml()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: Bool GetIsHtml()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: Do not escape HTML in field when displaying contents.
+  example: 
+  - "\n<pre><code>NSFieldInfoShortText thing;\nBool isHtml = thing.GetIsHtml();</code></pre>\n"
+- uid: CRMScript.NetServer.NSFieldInfoShortText.GetTextLength()
+  commentId: M:CRMScript.NetServer.NSFieldInfoShortText.GetTextLength()
+  id: 'GetTextLength()'
+  so.intellisense: NSFieldInfoShortText.GetTextLength
+  langs:
+  - crmscript
+  name: 'GetTextLength()'
+  nameWithType: NSFieldInfoShortText.GetTextLength()
+  fullName: CRMScript.NetServer.NSFieldInfoShortText.GetTextLength()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: Integer GetTextLength()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: Length (in characters) of a text field, 0 for other types
+  example: 
+  - "\n<pre><code>NSFieldInfoShortText thing;\nInteger textLength = thing.GetTextLength();</code></pre>\n"
 - uid: CRMScript.NetServer.NSFieldInfoShortText.SetChoices(String[])
   commentId: M:CRMScript.NetServer.NSFieldInfoShortText.SetChoices(String[])
   id: 'SetChoices(String[])'
@@ -142,14 +147,14 @@ items:
   nameWithType: NSFieldInfoShortText.SetChoices(String[])
   fullName: CRMScript.NetServer.NSFieldInfoShortText.SetChoices(String[])
   type: Method
-  summary: "\nList of items to choose from. Null = not a dropdown list.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
-    content: Void SetChoices(String[] p_0)
+    content: Void SetChoices(String[] choices)
     parameters:
-    - id: p_0
+    - id: choices
       type: CRMScript.Global.String[]
-      description: 
+      description: List of items to choose from. Null = not a dropdown list.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -163,14 +168,14 @@ items:
   nameWithType: NSFieldInfoShortText.SetDefaultValue(String)
   fullName: CRMScript.NetServer.NSFieldInfoShortText.SetDefaultValue(String)
   type: Method
-  summary: "\nDefault string value\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetDefaultValue(String defaultValue)
     parameters:
     - id: defaultValue
       type: CRMScript.Global.String
-      description: 
+      description: Default string value
     return:
       type: CRMScript.Global.Void
   example: 
@@ -185,14 +190,14 @@ items:
   nameWithType: NSFieldInfoShortText.SetFormatMask(String)
   fullName: CRMScript.NetServer.NSFieldInfoShortText.SetFormatMask(String)
   type: Method
-  summary: "\nFormatting mask, can be whatever the controls understand (currently nothing :-))\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetFormatMask(String formatMask)
     parameters:
     - id: formatMask
       type: CRMScript.Global.String
-      description: 
+      description: Formatting mask, can be whatever the controls understand (currently nothing)
     return:
       type: CRMScript.Global.Void
   example: 
@@ -207,14 +212,14 @@ items:
   nameWithType: NSFieldInfoShortText.SetIsHtml(Bool)
   fullName: CRMScript.NetServer.NSFieldInfoShortText.SetIsHtml(Bool)
   type: Method
-  summary: "\nDo not escape HTML in field when displaying contents.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetIsHtml(Bool isHtml)
     parameters:
     - id: isHtml
       type: CRMScript.Global.Bool
-      description: 
+      description: Do not escape HTML in field when displaying contents.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -229,14 +234,14 @@ items:
   nameWithType: NSFieldInfoShortText.SetTextLength(Integer)
   fullName: CRMScript.NetServer.NSFieldInfoShortText.SetTextLength(Integer)
   type: Method
-  summary: "\nLength (in characters) of a text field, 0 for other types\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetTextLength(Integer textLength)
     parameters:
     - id: textLength
       type: CRMScript.Global.Integer
-      description: 
+      description: Length (in characters) of a text field, 0 for other types
     return:
       type: CRMScript.Global.Void
   example: 

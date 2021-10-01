@@ -6,6 +6,7 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSForeignKey.#ctor
   - CRMScript.NetServer.NSForeignKey.GetCreatedBy()
   - CRMScript.NetServer.NSForeignKey.GetCreatedDate()
   - CRMScript.NetServer.NSForeignKey.GetKey()
@@ -14,20 +15,34 @@ items:
   - CRMScript.NetServer.NSForeignKey.GetUpdatedBy()
   - CRMScript.NetServer.NSForeignKey.GetUpdatedDate()
   - CRMScript.NetServer.NSForeignKey.GetValue()
-  - CRMScript.NetServer.NSForeignKey.#ctor
   - CRMScript.NetServer.NSForeignKey.SetCreatedBy(String)
-  - CRMScript.NetServer.NSForeignKey.SetCreatedDate()
+  - CRMScript.NetServer.NSForeignKey.SetCreatedDate(DateTime)
   - CRMScript.NetServer.NSForeignKey.SetKey(String)
   - CRMScript.NetServer.NSForeignKey.SetRecordId(Integer)
   - CRMScript.NetServer.NSForeignKey.SetTableName(String)
   - CRMScript.NetServer.NSForeignKey.SetUpdatedBy(String)
-  - CRMScript.NetServer.NSForeignKey.SetUpdatedDate()
+  - CRMScript.NetServer.NSForeignKey.SetUpdatedDate(DateTime)
   - CRMScript.NetServer.NSForeignKey.SetValue(String)
   name: NSForeignKey
   nameWithType: NSForeignKey
   fullName: CRMScript.NetServer.NSForeignKey
   type: Class
   summary: 
+  example: 
+- uid: CRMScript.NetServer.NSForeignKey.#ctor
+  commentId: M:CRMScript.NetServer.NSForeignKey.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSForeignKey
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSForeignKey.#ctor
+  fullName: CRMScript.NetServer.NSForeignKey.#ctor
+  type: Constructor
+  summary: 
+  remarks: 
+  syntax: 
+    content: NSForeignKey
   example: 
 - uid: CRMScript.NetServer.NSForeignKey.GetCreatedBy()
   commentId: M:CRMScript.NetServer.NSForeignKey.GetCreatedBy()
@@ -39,13 +54,14 @@ items:
   nameWithType: NSForeignKey.GetCreatedBy()
   fullName: CRMScript.NetServer.NSForeignKey.GetCreatedBy()
   type: Method
-  summary: "\nName of the person that created the foreign key\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: String GetCreatedBy()
     parameters: []
     return:
       type: CRMScript.Global.String
+      description: Name of the person that created the foreign key
   example: 
   - "\n<pre><code>NSForeignKey thing;\nString createdBy = thing.GetCreatedBy();</code></pre>\n"
 - uid: CRMScript.NetServer.NSForeignKey.GetCreatedDate()
@@ -58,13 +74,14 @@ items:
   nameWithType: NSForeignKey.GetCreatedDate()
   fullName: CRMScript.NetServer.NSForeignKey.GetCreatedDate()
   type: Method
-  summary: "\nRegistered when\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: DateTime GetCreatedDate()
     parameters: []
     return:
       type: CRMScript.Global.DateTime
+      description: Registered when
   example: 
   - "\n<pre><code>NSForeignKey thing;\nDateTime createdDate = thing.GetCreatedDate();</code></pre>\n"
 - uid: CRMScript.NetServer.NSForeignKey.GetKey()
@@ -77,13 +94,14 @@ items:
   nameWithType: NSForeignKey.GetKey()
   fullName: CRMScript.NetServer.NSForeignKey.GetKey()
   type: Method
-  summary: "\nSubkey (optional)\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: String GetKey()
     parameters: []
     return:
       type: CRMScript.Global.String
+      description: Subkey (optional)
   example: 
   - "\n<pre><code>NSForeignKey thing;\nString key = thing.GetKey();</code></pre>\n"
 - uid: CRMScript.NetServer.NSForeignKey.GetRecordId()
@@ -96,13 +114,14 @@ items:
   nameWithType: NSForeignKey.GetRecordId()
   fullName: CRMScript.NetServer.NSForeignKey.GetRecordId()
   type: Method
-  summary: "\nRecord in the referenced table\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Integer GetRecordId()
     parameters: []
     return:
       type: CRMScript.Global.Integer
+      description: Record in the referenced table
   example: 
   - "\n<pre><code>NSForeignKey thing;\nInteger recordId = thing.GetRecordId();</code></pre>\n"
 - uid: CRMScript.NetServer.NSForeignKey.GetTableName()
@@ -115,7 +134,7 @@ items:
   nameWithType: NSForeignKey.GetTableName()
   fullName: CRMScript.NetServer.NSForeignKey.GetTableName()
   type: Method
-  summary: "\nTable name, transformed to and from numeric table id by the service layer\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: String GetTableName()
@@ -141,6 +160,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
+      description: Table name, transformed to and from numeric table id by the service layer
   example: 
   - "\n<pre><code>NSForeignKey thing;\nString updatedBy = thing.GetUpdatedBy();</code></pre>\n"
 - uid: CRMScript.NetServer.NSForeignKey.GetUpdatedDate()
@@ -153,13 +173,14 @@ items:
   nameWithType: NSForeignKey.GetUpdatedDate()
   fullName: CRMScript.NetServer.NSForeignKey.GetUpdatedDate()
   type: Method
-  summary: "\nLast updated when\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: DateTime GetUpdatedDate()
     parameters: []
     return:
       type: CRMScript.Global.DateTime
+      description: Last updated when
   example: 
   - "\n<pre><code>NSForeignKey thing;\nDateTime updatedDate = thing.GetUpdatedDate();</code></pre>\n"
 - uid: CRMScript.NetServer.NSForeignKey.GetValue()
@@ -172,30 +193,16 @@ items:
   nameWithType: NSForeignKey.GetValue()
   fullName: CRMScript.NetServer.NSForeignKey.GetValue()
   type: Method
-  summary: "\nKey value\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: String GetValue()
     parameters: []
     return:
       type: CRMScript.Global.String
+      description: Key value
   example: 
   - "\n<pre><code>NSForeignKey thing;\nString value = thing.GetValue();</code></pre>\n"
-- uid: CRMScript.NetServer.NSForeignKey.#ctor
-  commentId: M:CRMScript.NetServer.NSForeignKey.#ctor
-  id: '#ctor'
-  so.intellisense: Void.NSForeignKey
-  langs:
-  - crmscript
-  name: '#ctor'
-  nameWithType: NSForeignKey.#ctor
-  fullName: CRMScript.NetServer.NSForeignKey.#ctor
-  type: Constructor
-  summary: 
-  remarks: 
-  syntax: 
-    content: NSForeignKey
-  example: 
 - uid: CRMScript.NetServer.NSForeignKey.SetCreatedBy(String)
   commentId: M:CRMScript.NetServer.NSForeignKey.SetCreatedBy(String)
   id: 'SetCreatedBy(String)'
@@ -206,33 +213,38 @@ items:
   nameWithType: NSForeignKey.SetCreatedBy(String)
   fullName: CRMScript.NetServer.NSForeignKey.SetCreatedBy(String)
   type: Method
-  summary: "\nName of the person that created the foreign key\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetCreatedBy(String createdBy)
     parameters:
     - id: createdBy
       type: CRMScript.Global.String
-      description: 
+      description: Name of the person that created the foreign key
     return:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSForeignKey thing;\nString createdBy;\nthing.SetCreatedBy(createdBy);</code></pre>\n"
-- uid: CRMScript.NetServer.NSForeignKey.SetCreatedDate()
-  commentId: M:CRMScript.NetServer.NSForeignKey.SetCreatedDate()
-  id: 'SetCreatedDate()'
+- uid: CRMScript.NetServer.NSForeignKey.SetCreatedDate(DateTime)
+  commentId: M:CRMScript.NetServer.NSForeignKey.SetCreatedDate(DateTime)
+  id: 'SetCreatedDate(DateTime)'
   so.intellisense: NSForeignKey.SetCreatedDate
   langs:
   - crmscript
-  name: 'SetCreatedDate()'
-  nameWithType: NSForeignKey.SetCreatedDate()
-  fullName: CRMScript.NetServer.NSForeignKey.SetCreatedDate()
+  name: 'SetCreatedDate(DateTime)'
+  nameWithType: NSForeignKey.SetCreatedDate(DateTime)
+  fullName: CRMScript.NetServer.NSForeignKey.SetCreatedDate(DateTime)
   type: Method
-  summary: "\nRegistered when\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetCreatedDate(DateTime createdDate)
     parameters:
+    - id: createdDate
+      type: CRMScript.Global.DateTime
+      description: Registered when
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSForeignKey thing;\nDateTime createdDate;\nthing.SetCreatedDate(createdDate);</code></pre>\n"
 - uid: CRMScript.NetServer.NSForeignKey.SetKey(String)
@@ -245,14 +257,14 @@ items:
   nameWithType: NSForeignKey.SetKey(String)
   fullName: CRMScript.NetServer.NSForeignKey.SetKey(String)
   type: Method
-  summary: "\nSubkey (optional)\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetKey(String key)
     parameters:
     - id: key
       type: CRMScript.Global.String
-      description: 
+      description: Subkey (optional)
     return:
       type: CRMScript.Global.Void
   example: 
@@ -267,14 +279,14 @@ items:
   nameWithType: NSForeignKey.SetRecordId(Integer)
   fullName: CRMScript.NetServer.NSForeignKey.SetRecordId(Integer)
   type: Method
-  summary: "\nRecord in the referenced table\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetRecordId(Integer recordId)
     parameters:
     - id: recordId
       type: CRMScript.Global.Integer
-      description: 
+      description: Record in the referenced table
     return:
       type: CRMScript.Global.Void
   example: 
@@ -289,14 +301,14 @@ items:
   nameWithType: NSForeignKey.SetTableName(String)
   fullName: CRMScript.NetServer.NSForeignKey.SetTableName(String)
   type: Method
-  summary: "\nTable name, transformed to and from numeric table id by the service layer\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetTableName(String tableName)
     parameters:
     - id: tableName
       type: CRMScript.Global.String
-      description: 
+      description: Table name, transformed to and from numeric table id by the service layer
     return:
       type: CRMScript.Global.Void
   example: 
@@ -311,33 +323,38 @@ items:
   nameWithType: NSForeignKey.SetUpdatedBy(String)
   fullName: CRMScript.NetServer.NSForeignKey.SetUpdatedBy(String)
   type: Method
-  summary: "\nName of the person that last updated the foreign key\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetUpdatedBy(String updatedBy)
     parameters:
     - id: updatedBy
       type: CRMScript.Global.String
-      description: 
+      description: Name of the person that last updated the foreign key
     return:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSForeignKey thing;\nString updatedBy;\nthing.SetUpdatedBy(updatedBy);</code></pre>\n"
-- uid: CRMScript.NetServer.NSForeignKey.SetUpdatedDate()
-  commentId: M:CRMScript.NetServer.NSForeignKey.SetUpdatedDate()
-  id: 'SetUpdatedDate()'
+- uid: CRMScript.NetServer.NSForeignKey.SetUpdatedDate(DateTime)
+  commentId: M:CRMScript.NetServer.NSForeignKey.SetUpdatedDate(DateTime)
+  id: 'SetUpdatedDate(DateTime)'
   so.intellisense: NSForeignKey.SetUpdatedDate
   langs:
   - crmscript
-  name: 'SetUpdatedDate()'
-  nameWithType: NSForeignKey.SetUpdatedDate()
-  fullName: CRMScript.NetServer.NSForeignKey.SetUpdatedDate()
+  name: 'SetUpdatedDate(DateTime)'
+  nameWithType: NSForeignKey.SetUpdatedDate(DateTime)
+  fullName: CRMScript.NetServer.NSForeignKey.SetUpdatedDate(DateTime)
   type: Method
-  summary: "\nLast updated when\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetUpdatedDate(DateTime updatedDate)
     parameters:
+    - id: updatedDate
+      type: CRMScript.Global.DateTime
+      description: Last updated when
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSForeignKey thing;\nDateTime updatedDate;\nthing.SetUpdatedDate(updatedDate);</code></pre>\n"
 - uid: CRMScript.NetServer.NSForeignKey.SetValue(String)
@@ -350,14 +367,14 @@ items:
   nameWithType: NSForeignKey.SetValue(String)
   fullName: CRMScript.NetServer.NSForeignKey.SetValue(String)
   type: Method
-  summary: "\nKey value\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetValue(String value)
     parameters:
     - id: value
       type: CRMScript.Global.String
-      description: 
+      description: Key value
     return:
       type: CRMScript.Global.Void
   example: 

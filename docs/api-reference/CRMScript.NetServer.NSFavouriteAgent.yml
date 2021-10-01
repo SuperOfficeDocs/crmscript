@@ -6,11 +6,11 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSFavouriteAgent.#ctor
   - CRMScript.NetServer.NSFavouriteAgent.AddFavourite(String,Integer,Integer,String)
   - CRMScript.NetServer.NSFavouriteAgent.AddFavourites(String,Integer[],Integer,String)
   - CRMScript.NetServer.NSFavouriteAgent.GetFavourites(String,Integer)
   - CRMScript.NetServer.NSFavouriteAgent.IsFavourite(String,Integer,Integer)
-  - CRMScript.NetServer.NSFavouriteAgent.#ctor
   - CRMScript.NetServer.NSFavouriteAgent.RemoveAllFavourites(String,Integer)
   - CRMScript.NetServer.NSFavouriteAgent.RemoveFavourite(String,Integer,Integer)
   - CRMScript.NetServer.NSFavouriteAgent.RemoveFavouritesById(Integer[])
@@ -20,6 +20,22 @@ items:
   fullName: CRMScript.NetServer.NSFavouriteAgent
   type: Class
   summary: "\nAgent used for retrieving and setting favorites.\n"
+  example: 
+  - "\n<pre><code>NSFavouriteAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSFavouriteAgent.#ctor
+  commentId: M:CRMScript.NetServer.NSFavouriteAgent.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSFavouriteAgent
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSFavouriteAgent.#ctor
+  fullName: CRMScript.NetServer.NSFavouriteAgent.#ctor
+  type: Constructor
+  summary: "\nAgent used for retrieving and setting favorites.\n"
+  remarks: 
+  syntax: 
+    content: NSFavouriteAgent
   example: 
   - "\n<pre><code>NSFavouriteAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSFavouriteAgent.AddFavourite(String,Integer,Integer,String)
@@ -32,7 +48,7 @@ items:
   nameWithType: NSFavouriteAgent.AddFavourite(String,Integer,Integer,String)
   fullName: CRMScript.NetServer.NSFavouriteAgent.AddFavourite(String,Integer,Integer,String)
   type: Method
-  summary: "\nAdd a record in a table as a favorite for an associate\n"
+  summary: "\nAdds a record in a table as a favorite for an associate\n"
   remarks: 
   syntax: 
     content: Void AddFavourite(String tableName, Integer recordId, Integer associateId, String extraInfo)
@@ -62,7 +78,7 @@ items:
   nameWithType: NSFavouriteAgent.AddFavourites(String,Integer[],Integer,String)
   fullName: CRMScript.NetServer.NSFavouriteAgent.AddFavourites(String,Integer[],Integer,String)
   type: Method
-  summary: "\nAdd a list of record ids as favourites for an associate\n"
+  summary: "\nAdds a list of record IDs as favorites for an associate\n"
   remarks: 
   syntax: 
     content: Void AddFavourites(String tableName, Integer[] recordIds, Integer associateId, String extraInfo)
@@ -92,7 +108,7 @@ items:
   nameWithType: NSFavouriteAgent.GetFavourites(String,Integer)
   fullName: CRMScript.NetServer.NSFavouriteAgent.GetFavourites(String,Integer)
   type: Method
-  summary: "\nGets all favorites for a table and associate<p></p>\n<strong>Returns:</strong>NSFavourite[]\n"
+  summary: "\nGets all favorites for a table and associate\n"
   remarks: 
   syntax: 
     content: NSFavourite[] GetFavourites(String tableName, Integer associateId)
@@ -116,7 +132,7 @@ items:
   nameWithType: NSFavouriteAgent.IsFavourite(String,Integer,Integer)
   fullName: CRMScript.NetServer.NSFavouriteAgent.IsFavourite(String,Integer,Integer)
   type: Method
-  summary: "\nChecks if a record in a table is a favourite for an associate<p></p>\n<strong>Returns:</strong>Bool\n"
+  summary: "\nChecks if a record in a table is a favorite for an associate\n"
   remarks: 
   syntax: 
     content: Bool IsFavourite(String tableName, Integer recordId, Integer associateId)
@@ -133,22 +149,6 @@ items:
     return:
       type: CRMScript.Global.Bool
   example: 
-- uid: CRMScript.NetServer.NSFavouriteAgent.#ctor
-  commentId: M:CRMScript.NetServer.NSFavouriteAgent.#ctor
-  id: '#ctor'
-  so.intellisense: Void.NSFavouriteAgent
-  langs:
-  - crmscript
-  name: '#ctor'
-  nameWithType: NSFavouriteAgent.#ctor
-  fullName: CRMScript.NetServer.NSFavouriteAgent.#ctor
-  type: Constructor
-  summary: "\nAgent used for retrieving and setting favorites.\n"
-  remarks: 
-  syntax: 
-    content: NSFavouriteAgent
-  example: 
-  - "\n<pre><code>NSFavouriteAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSFavouriteAgent.RemoveAllFavourites(String,Integer)
   commentId: M:CRMScript.NetServer.NSFavouriteAgent.RemoveAllFavourites(String,Integer)
   id: 'RemoveAllFavourites(String,Integer)'
@@ -159,7 +159,7 @@ items:
   nameWithType: NSFavouriteAgent.RemoveAllFavourites(String,Integer)
   fullName: CRMScript.NetServer.NSFavouriteAgent.RemoveAllFavourites(String,Integer)
   type: Method
-  summary: "\nRemove all favourites for a table and associate\n"
+  summary: "\nRemoves all favorites for a table and associate\n"
   remarks: 
   syntax: 
     content: Void RemoveAllFavourites(String tableName, Integer associateId)
@@ -183,7 +183,7 @@ items:
   nameWithType: NSFavouriteAgent.RemoveFavourite(String,Integer,Integer)
   fullName: CRMScript.NetServer.NSFavouriteAgent.RemoveFavourite(String,Integer,Integer)
   type: Method
-  summary: "\nRemove favorite for a table, record id, and associate\n"
+  summary: "\nRemoves favorite for a table, record ID, and associate\n"
   remarks: 
   syntax: 
     content: Void RemoveFavourite(String tableName, Integer recordId, Integer associateId)
@@ -210,12 +210,12 @@ items:
   nameWithType: NSFavouriteAgent.RemoveFavouritesById(Integer[])
   fullName: CRMScript.NetServer.NSFavouriteAgent.RemoveFavouritesById(Integer[])
   type: Method
-  summary: "\nRemove favourite using favourite ID\n"
+  summary: "\nRemoves favorite using favorite ID\n"
   remarks: 
   syntax: 
-    content: Void RemoveFavouritesById(Integer[] favouriteIds)
+    content: Void RemoveFavouritesById(Integer[] favoriteIds)
     parameters:
-    - id: favouriteIds
+    - id: favoriteIds
       type: CRMScript.Global.Integer[]
       description: 
     return:
@@ -231,7 +231,7 @@ items:
   nameWithType: NSFavouriteAgent.ToggleFavourite(String,Integer,Integer,String)
   fullName: CRMScript.NetServer.NSFavouriteAgent.ToggleFavourite(String,Integer,Integer,String)
   type: Method
-  summary: "\nToggle a record in a table as a favorite for an associate<p></p>\n<strong>Returns:</strong>Return the new value, true if added, false if removed\n"
+  summary: "\nToggles a record in a table as a favorite for an associate\n"
   remarks: 
   syntax: 
     content: Bool ToggleFavourite(String tableName, Integer recordId, Integer associateId, String extraInfo)
@@ -250,6 +250,7 @@ items:
       description: 
     return:
       type: CRMScript.Global.Bool
+      description: true if added; false if removed
   example: 
   - "\n<pre><code>NSFavouriteAgent agent;\nString tableName;\nInteger recordId;\nInteger associateId;\nString extraInfo;\nBool res = agent.ToggleFavourite(tableName, recordId, associateId, extraInfo);</code></pre>\n"
 references:

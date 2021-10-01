@@ -6,12 +6,12 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSFieldProperty.#ctor
   - CRMScript.NetServer.NSFieldProperty.GetFieldLength()
   - CRMScript.NetServer.NSFieldProperty.GetFieldRight()
   - CRMScript.NetServer.NSFieldProperty.GetFieldType()
   - CRMScript.NetServer.NSFieldProperty.GetLength()
   - CRMScript.NetServer.NSFieldProperty.GetType()
-  - CRMScript.NetServer.NSFieldProperty.#ctor
   - CRMScript.NetServer.NSFieldProperty.SetFieldLength(Integer)
   - CRMScript.NetServer.NSFieldProperty.SetFieldRight(NSFieldRight)
   - CRMScript.NetServer.NSFieldProperty.SetFieldType(String)
@@ -22,6 +22,21 @@ items:
   fullName: CRMScript.NetServer.NSFieldProperty
   type: Class
   summary: 
+  example: 
+- uid: CRMScript.NetServer.NSFieldProperty.#ctor
+  commentId: M:CRMScript.NetServer.NSFieldProperty.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSFieldProperty
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSFieldProperty.#ctor
+  fullName: CRMScript.NetServer.NSFieldProperty.#ctor
+  type: Constructor
+  summary: 
+  remarks: 
+  syntax: 
+    content: NSFieldProperty
   example: 
 - uid: CRMScript.NetServer.NSFieldProperty.GetFieldLength()
   commentId: M:CRMScript.NetServer.NSFieldProperty.GetFieldLength()
@@ -36,10 +51,11 @@ items:
   summary: 
   remarks: 
   syntax: 
-    content: GetFieldLength()
+    content: Integer GetFieldLength()
     parameters: []
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.Integer
+      description: 
   example: 
 - uid: CRMScript.NetServer.NSFieldProperty.GetFieldRight()
   commentId: M:CRMScript.NetServer.NSFieldProperty.GetFieldRight()
@@ -54,10 +70,11 @@ items:
   summary: 
   remarks: 
   syntax: 
-    content: GetFieldRight()
+    content: NSFieldRight GetFieldRight()
     parameters: []
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.NetServer.NSFieldRight
+      description:
   example: 
 - uid: CRMScript.NetServer.NSFieldProperty.GetFieldType()
   commentId: M:CRMScript.NetServer.NSFieldProperty.GetFieldType()
@@ -108,25 +125,11 @@ items:
   summary: 
   remarks: 
   syntax: 
-    content: GetType()
+    content: String GetType()
     parameters: []
     return:
-      type: CRMScript.Global.Void
-  example: 
-- uid: CRMScript.NetServer.NSFieldProperty.#ctor
-  commentId: M:CRMScript.NetServer.NSFieldProperty.#ctor
-  id: '#ctor'
-  so.intellisense: Void.NSFieldProperty
-  langs:
-  - crmscript
-  name: '#ctor'
-  nameWithType: NSFieldProperty.#ctor
-  fullName: CRMScript.NetServer.NSFieldProperty.#ctor
-  type: Constructor
-  summary: 
-  remarks: 
-  syntax: 
-    content: NSFieldProperty
+      type: CRMScript.Global.String
+      description:
   example: 
 - uid: CRMScript.NetServer.NSFieldProperty.SetFieldLength(Integer)
   commentId: M:CRMScript.NetServer.NSFieldProperty.SetFieldLength(Integer)
@@ -141,9 +144,9 @@ items:
   summary: 
   remarks: 
   syntax: 
-    content: Void SetFieldLength(Integer p_0)
+    content: Void SetFieldLength(Integer length)
     parameters:
-    - id: p_0
+    - id: length
       type: CRMScript.Global.Integer
       description: 
     return:
@@ -162,9 +165,9 @@ items:
   summary: 
   remarks: 
   syntax: 
-    content: Void SetFieldRight(NSFieldRight p_0)
+    content: Void SetFieldRight(NSFieldRight fieldRight)
     parameters:
-    - id: p_0
+    - id: fieldRight
       type: CRMScript.NetServer.NSFieldRight
       description: 
     return:
@@ -183,9 +186,9 @@ items:
   summary: 
   remarks: 
   syntax: 
-    content: Void SetFieldType(String p_0)
+    content: Void SetFieldType(String type)
     parameters:
-    - id: p_0
+    - id: type
       type: CRMScript.Global.String
       description: 
     return:
@@ -204,9 +207,9 @@ items:
   summary: 
   remarks: 
   syntax: 
-    content: Void SetLength(Integer p_0)
+    content: Void SetLength(Integer length)
     parameters:
-    - id: p_0
+    - id: length
       type: CRMScript.Global.Integer
       description: 
     return:
@@ -225,9 +228,9 @@ items:
   summary: 
   remarks: 
   syntax: 
-    content: Void SetType(String p_0)
+    content: Void SetType(String type)
     parameters:
-    - id: p_0
+    - id: type
       type: CRMScript.Global.String
       description: 
     return:

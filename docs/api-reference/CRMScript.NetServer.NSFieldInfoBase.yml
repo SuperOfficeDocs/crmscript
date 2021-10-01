@@ -6,6 +6,7 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSFieldInfoBase.#ctor
   - CRMScript.NetServer.NSFieldInfoBase.GetDescription()
   - CRMScript.NetServer.NSFieldInfoBase.GetDisplayName()
   - CRMScript.NetServer.NSFieldInfoBase.GetFieldName()
@@ -19,7 +20,6 @@ items:
   - CRMScript.NetServer.NSFieldInfoBase.GetRank()
   - CRMScript.NetServer.NSFieldInfoBase.GetShortLabel()
   - CRMScript.NetServer.NSFieldInfoBase.GetTemplateVariableName()
-  - CRMScript.NetServer.NSFieldInfoBase.#ctor
   - CRMScript.NetServer.NSFieldInfoBase.SetDescription(String)
   - CRMScript.NetServer.NSFieldInfoBase.SetDisplayName(String)
   - CRMScript.NetServer.NSFieldInfoBase.SetFieldName(String)
@@ -39,253 +39,6 @@ items:
   type: Class
   summary: 
   example: 
-- uid: CRMScript.NetServer.NSFieldInfoBase.GetDescription()
-  commentId: M:CRMScript.NetServer.NSFieldInfoBase.GetDescription()
-  id: 'GetDescription()'
-  so.intellisense: NSFieldInfoBase.GetDescription
-  langs:
-  - crmscript
-  name: 'GetDescription()'
-  nameWithType: NSFieldInfoBase.GetDescription()
-  fullName: CRMScript.NetServer.NSFieldInfoBase.GetDescription()
-  type: Method
-  summary: "\nOptional tooltip text for this field\n"
-  remarks: 
-  syntax: 
-    content: String GetDescription()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-  example: 
-  - "\n<pre><code>NSFieldInfoBase thing;\nString description = thing.GetDescription();</code></pre>\n"
-- uid: CRMScript.NetServer.NSFieldInfoBase.GetDisplayName()
-  commentId: M:CRMScript.NetServer.NSFieldInfoBase.GetDisplayName()
-  id: 'GetDisplayName()'
-  so.intellisense: NSFieldInfoBase.GetDisplayName
-  langs:
-  - crmscript
-  name: 'GetDisplayName()'
-  nameWithType: NSFieldInfoBase.GetDisplayName()
-  fullName: CRMScript.NetServer.NSFieldInfoBase.GetDisplayName()
-  type: Method
-  summary: "\nLabel for field. May be multi-lang string encoded.\n"
-  remarks: 
-  syntax: 
-    content: String GetDisplayName()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-  example: 
-  - "\n<pre><code>NSFieldInfoBase thing;\nString displayName = thing.GetDisplayName();</code></pre>\n"
-- uid: CRMScript.NetServer.NSFieldInfoBase.GetFieldName()
-  commentId: M:CRMScript.NetServer.NSFieldInfoBase.GetFieldName()
-  id: 'GetFieldName()'
-  so.intellisense: NSFieldInfoBase.GetFieldName
-  langs:
-  - crmscript
-  name: 'GetFieldName()'
-  nameWithType: NSFieldInfoBase.GetFieldName()
-  fullName: CRMScript.NetServer.NSFieldInfoBase.GetFieldName()
-  type: Method
-  summary: "\nDatabase name or prog-id: 'x_foobar' or 'SuperOffice:2'.\n"
-  remarks: 
-  syntax: 
-    content: String GetFieldName()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-  example: 
-  - "\n<pre><code>NSFieldInfoBase thing;\nString fieldName = thing.GetFieldName();</code></pre>\n"
-- uid: CRMScript.NetServer.NSFieldInfoBase.GetFieldType()
-  commentId: M:CRMScript.NetServer.NSFieldInfoBase.GetFieldType()
-  id: 'GetFieldType()'
-  so.intellisense: NSFieldInfoBase.GetFieldType
-  langs:
-  - crmscript
-  name: 'GetFieldType()'
-  nameWithType: NSFieldInfoBase.GetFieldType()
-  fullName: CRMScript.NetServer.NSFieldInfoBase.GetFieldType()
-  type: Method
-  summary: "\nWhat sort of data does this field contain. 1 = int, 2 = short text, ...<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Integer</li><li>Enum: 2 = ShortText</li><li>Enum: 3 = LongText</li><li>Enum: 4 = Date</li><li>Enum: 5 = Blob</li><li>Enum: 6 = Checkbox</li><li>Enum: 7 = MdoList</li><li>Enum: 8 = Decimal</li><li>Enum: 9 = DateTime</li><li>Enum: 10 = Time</li><li>Enum: 11 = TimeSpan</li><li>Enum: 12 = RelationTo</li><li>Enum: 13 = Attachment</li><li>Enum: 14 = DynamicLink</li><li>Enum: 15 = ListText</li></ul><pre><code>NSFieldInfoBase thing;\nInteger fieldType = thing.GetFieldType();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: Integer GetFieldType()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-  example: 
-  - "\n<pre><code>NSFieldInfoBase thing;\nInteger fieldType = thing.GetFieldType();</code></pre>\n"
-- uid: CRMScript.NetServer.NSFieldInfoBase.GetHideField()
-  commentId: M:CRMScript.NetServer.NSFieldInfoBase.GetHideField()
-  id: 'GetHideField()'
-  so.intellisense: NSFieldInfoBase.GetHideField
-  langs:
-  - crmscript
-  name: 'GetHideField()'
-  nameWithType: NSFieldInfoBase.GetHideField()
-  fullName: CRMScript.NetServer.NSFieldInfoBase.GetHideField()
-  type: Method
-  summary: "\nHide the field from the UI. Only allow API access.\n"
-  remarks: 
-  syntax: 
-    content: Bool GetHideField()
-    parameters: []
-    return:
-      type: CRMScript.Global.Bool
-  example: 
-  - "\n<pre><code>NSFieldInfoBase thing;\nBool hideField = thing.GetHideField();</code></pre>\n"
-- uid: CRMScript.NetServer.NSFieldInfoBase.GetHideLabel()
-  commentId: M:CRMScript.NetServer.NSFieldInfoBase.GetHideLabel()
-  id: 'GetHideLabel()'
-  so.intellisense: NSFieldInfoBase.GetHideLabel
-  langs:
-  - crmscript
-  name: 'GetHideLabel()'
-  nameWithType: NSFieldInfoBase.GetHideLabel()
-  fullName: CRMScript.NetServer.NSFieldInfoBase.GetHideLabel()
-  type: Method
-  summary: "\nHide the label if 1\n"
-  remarks: 
-  syntax: 
-    content: Bool GetHideLabel()
-    parameters: []
-    return:
-      type: CRMScript.Global.Bool
-  example: 
-  - "\n<pre><code>NSFieldInfoBase thing;\nBool hideLabel = thing.GetHideLabel();</code></pre>\n"
-- uid: CRMScript.NetServer.NSFieldInfoBase.GetIsExternal()
-  commentId: M:CRMScript.NetServer.NSFieldInfoBase.GetIsExternal()
-  id: 'GetIsExternal()'
-  so.intellisense: NSFieldInfoBase.GetIsExternal
-  langs:
-  - crmscript
-  name: 'GetIsExternal()'
-  nameWithType: NSFieldInfoBase.GetIsExternal()
-  fullName: CRMScript.NetServer.NSFieldInfoBase.GetIsExternal()
-  type: Method
-  summary: "\nShould this field be shown to external users via customer center?\n"
-  remarks: 
-  syntax: 
-    content: Bool GetIsExternal()
-    parameters: []
-    return:
-      type: CRMScript.Global.Bool
-  example: 
-  - "\n<pre><code>NSFieldInfoBase thing;\nBool isExternal = thing.GetIsExternal();</code></pre>\n"
-- uid: CRMScript.NetServer.NSFieldInfoBase.GetIsIndexed()
-  commentId: M:CRMScript.NetServer.NSFieldInfoBase.GetIsIndexed()
-  id: 'GetIsIndexed()'
-  so.intellisense: NSFieldInfoBase.GetIsIndexed
-  langs:
-  - crmscript
-  name: 'GetIsIndexed()'
-  nameWithType: NSFieldInfoBase.GetIsIndexed()
-  fullName: CRMScript.NetServer.NSFieldInfoBase.GetIsIndexed()
-  type: Method
-  summary: "\nIs this field indexed? 0 if no, index no. if yes\n"
-  remarks: 
-  syntax: 
-    content: Bool GetIsIndexed()
-    parameters: []
-    return:
-      type: CRMScript.Global.Bool
-  example: 
-  - "\n<pre><code>NSFieldInfoBase thing;\nBool isIndexed = thing.GetIsIndexed();</code></pre>\n"
-- uid: CRMScript.NetServer.NSFieldInfoBase.GetIsMandatory()
-  commentId: M:CRMScript.NetServer.NSFieldInfoBase.GetIsMandatory()
-  id: 'GetIsMandatory()'
-  so.intellisense: NSFieldInfoBase.GetIsMandatory
-  langs:
-  - crmscript
-  name: 'GetIsMandatory()'
-  nameWithType: NSFieldInfoBase.GetIsMandatory()
-  fullName: CRMScript.NetServer.NSFieldInfoBase.GetIsMandatory()
-  type: Method
-  summary: "\n0 = no, 1 = yes (field must be filled out)\n"
-  remarks: 
-  syntax: 
-    content: Bool GetIsMandatory()
-    parameters: []
-    return:
-      type: CRMScript.Global.Bool
-  example: 
-  - "\n<pre><code>NSFieldInfoBase thing;\nBool isMandatory = thing.GetIsMandatory();</code></pre>\n"
-- uid: CRMScript.NetServer.NSFieldInfoBase.GetIsReadOnly()
-  commentId: M:CRMScript.NetServer.NSFieldInfoBase.GetIsReadOnly()
-  id: 'GetIsReadOnly()'
-  so.intellisense: NSFieldInfoBase.GetIsReadOnly
-  langs:
-  - crmscript
-  name: 'GetIsReadOnly()'
-  nameWithType: NSFieldInfoBase.GetIsReadOnly()
-  fullName: CRMScript.NetServer.NSFieldInfoBase.GetIsReadOnly()
-  type: Method
-  summary: "\n0 = read/write, 1 = readonly (don't combine with mandatory  8-) )\n"
-  remarks: 
-  syntax: 
-    content: Bool GetIsReadOnly()
-    parameters: []
-    return:
-      type: CRMScript.Global.Bool
-  example: 
-  - "\n<pre><code>NSFieldInfoBase thing;\nBool isReadOnly = thing.GetIsReadOnly();</code></pre>\n"
-- uid: CRMScript.NetServer.NSFieldInfoBase.GetRank()
-  commentId: M:CRMScript.NetServer.NSFieldInfoBase.GetRank()
-  id: 'GetRank()'
-  so.intellisense: NSFieldInfoBase.GetRank
-  langs:
-  - crmscript
-  name: 'GetRank()'
-  nameWithType: NSFieldInfoBase.GetRank()
-  fullName: CRMScript.NetServer.NSFieldInfoBase.GetRank()
-  type: Method
-  summary: "\nTab order, ranking within the custom fields.\n"
-  remarks: 
-  syntax: 
-    content: Integer GetRank()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-  example: 
-  - "\n<pre><code>NSFieldInfoBase thing;\nInteger rank = thing.GetRank();</code></pre>\n"
-- uid: CRMScript.NetServer.NSFieldInfoBase.GetShortLabel()
-  commentId: M:CRMScript.NetServer.NSFieldInfoBase.GetShortLabel()
-  id: 'GetShortLabel()'
-  so.intellisense: NSFieldInfoBase.GetShortLabel
-  langs:
-  - crmscript
-  name: 'GetShortLabel()'
-  nameWithType: NSFieldInfoBase.GetShortLabel()
-  fullName: CRMScript.NetServer.NSFieldInfoBase.GetShortLabel()
-  type: Method
-  summary: "\nShort name to be used in Archive headings and on page 1. If blank, the fieldLabel will be used everywhere.\n"
-  remarks: 
-  syntax: 
-    content: String GetShortLabel()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-  example: 
-  - "\n<pre><code>NSFieldInfoBase thing;\nString shortLabel = thing.GetShortLabel();</code></pre>\n"
-- uid: CRMScript.NetServer.NSFieldInfoBase.GetTemplateVariableName()
-  commentId: M:CRMScript.NetServer.NSFieldInfoBase.GetTemplateVariableName()
-  id: 'GetTemplateVariableName()'
-  so.intellisense: NSFieldInfoBase.GetTemplateVariableName
-  langs:
-  - crmscript
-  name: 'GetTemplateVariableName()'
-  nameWithType: NSFieldInfoBase.GetTemplateVariableName()
-  fullName: CRMScript.NetServer.NSFieldInfoBase.GetTemplateVariableName()
-  type: Method
-  summary: "\nTemplate variable name: 'cs01', 'cl02' etc. Null for extra fields.\n"
-  remarks: 
-  syntax: 
-    content: String GetTemplateVariableName()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-  example: 
-  - "\n<pre><code>NSFieldInfoBase thing;\nString templateVariableName = thing.GetTemplateVariableName();</code></pre>\n"
 - uid: CRMScript.NetServer.NSFieldInfoBase.#ctor
   commentId: M:CRMScript.NetServer.NSFieldInfoBase.#ctor
   id: '#ctor'
@@ -301,6 +54,266 @@ items:
   syntax: 
     content: NSFieldInfoBase
   example: 
+- uid: CRMScript.NetServer.NSFieldInfoBase.GetDescription()
+  commentId: M:CRMScript.NetServer.NSFieldInfoBase.GetDescription()
+  id: 'GetDescription()'
+  so.intellisense: NSFieldInfoBase.GetDescription
+  langs:
+  - crmscript
+  name: 'GetDescription()'
+  nameWithType: NSFieldInfoBase.GetDescription()
+  fullName: CRMScript.NetServer.NSFieldInfoBase.GetDescription()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: String GetDescription()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Optional tooltip text for this field
+  example: 
+  - "\n<pre><code>NSFieldInfoBase thing;\nString description = thing.GetDescription();</code></pre>\n"
+- uid: CRMScript.NetServer.NSFieldInfoBase.GetDisplayName()
+  commentId: M:CRMScript.NetServer.NSFieldInfoBase.GetDisplayName()
+  id: 'GetDisplayName()'
+  so.intellisense: NSFieldInfoBase.GetDisplayName
+  langs:
+  - crmscript
+  name: 'GetDisplayName()'
+  nameWithType: NSFieldInfoBase.GetDisplayName()
+  fullName: CRMScript.NetServer.NSFieldInfoBase.GetDisplayName()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: String GetDisplayName()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Label for field. May be multi-lang string encoded.
+  example: 
+  - "\n<pre><code>NSFieldInfoBase thing;\nString displayName = thing.GetDisplayName();</code></pre>\n"
+- uid: CRMScript.NetServer.NSFieldInfoBase.GetFieldName()
+  commentId: M:CRMScript.NetServer.NSFieldInfoBase.GetFieldName()
+  id: 'GetFieldName()'
+  so.intellisense: NSFieldInfoBase.GetFieldName
+  langs:
+  - crmscript
+  name: 'GetFieldName()'
+  nameWithType: NSFieldInfoBase.GetFieldName()
+  fullName: CRMScript.NetServer.NSFieldInfoBase.GetFieldName()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: String GetFieldName()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Database name or prog-id 'x_foobar' or 'SuperOffice:2'.
+  example: 
+  - "\n<pre><code>NSFieldInfoBase thing;\nString fieldName = thing.GetFieldName();</code></pre>\n"
+- uid: CRMScript.NetServer.NSFieldInfoBase.GetFieldType()
+  commentId: M:CRMScript.NetServer.NSFieldInfoBase.GetFieldType()
+  id: 'GetFieldType()'
+  so.intellisense: NSFieldInfoBase.GetFieldType
+  langs:
+  - crmscript
+  name: 'GetFieldType()'
+  nameWithType: NSFieldInfoBase.GetFieldType()
+  fullName: CRMScript.NetServer.NSFieldInfoBase.GetFieldType()
+  type: Method
+  summary: "\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Integer</li><li>Enum: 2 = ShortText</li><li>Enum: 3 = LongText</li><li>Enum: 4 = Date</li><li>Enum: 5 = Blob</li><li>Enum: 6 = Checkbox</li><li>Enum: 7 = MdoList</li><li>Enum: 8 = Decimal</li><li>Enum: 9 = DateTime</li><li>Enum: 10 = Time</li><li>Enum: 11 = TimeSpan</li><li>Enum: 12 = RelationTo</li><li>Enum: 13 = Attachment</li><li>Enum: 14 = DynamicLink</li><li>Enum: 15 = ListText</li></ul>\n"
+  remarks: 
+  syntax: 
+    content: Integer GetFieldType()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: What sort of data does this field contain. 1 = int, 2 = short text, ...
+  example: 
+  - "\n<pre><code>NSFieldInfoBase thing;\nInteger fieldType = thing.GetFieldType();</code></pre>\n"
+- uid: CRMScript.NetServer.NSFieldInfoBase.GetHideField()
+  commentId: M:CRMScript.NetServer.NSFieldInfoBase.GetHideField()
+  id: 'GetHideField()'
+  so.intellisense: NSFieldInfoBase.GetHideField
+  langs:
+  - crmscript
+  name: 'GetHideField()'
+  nameWithType: NSFieldInfoBase.GetHideField()
+  fullName: CRMScript.NetServer.NSFieldInfoBase.GetHideField()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: Bool GetHideField()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: Hide the field from the UI. Only allow API access.
+  example: 
+  - "\n<pre><code>NSFieldInfoBase thing;\nBool hideField = thing.GetHideField();</code></pre>\n"
+- uid: CRMScript.NetServer.NSFieldInfoBase.GetHideLabel()
+  commentId: M:CRMScript.NetServer.NSFieldInfoBase.GetHideLabel()
+  id: 'GetHideLabel()'
+  so.intellisense: NSFieldInfoBase.GetHideLabel
+  langs:
+  - crmscript
+  name: 'GetHideLabel()'
+  nameWithType: NSFieldInfoBase.GetHideLabel()
+  fullName: CRMScript.NetServer.NSFieldInfoBase.GetHideLabel()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: Bool GetHideLabel()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: Hide the label if 1
+  example: 
+  - "\n<pre><code>NSFieldInfoBase thing;\nBool hideLabel = thing.GetHideLabel();</code></pre>\n"
+- uid: CRMScript.NetServer.NSFieldInfoBase.GetIsExternal()
+  commentId: M:CRMScript.NetServer.NSFieldInfoBase.GetIsExternal()
+  id: 'GetIsExternal()'
+  so.intellisense: NSFieldInfoBase.GetIsExternal
+  langs:
+  - crmscript
+  name: 'GetIsExternal()'
+  nameWithType: NSFieldInfoBase.GetIsExternal()
+  fullName: CRMScript.NetServer.NSFieldInfoBase.GetIsExternal()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: Bool GetIsExternal()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: Should this field be shown to external users via customer center?
+  example: 
+  - "\n<pre><code>NSFieldInfoBase thing;\nBool isExternal = thing.GetIsExternal();</code></pre>\n"
+- uid: CRMScript.NetServer.NSFieldInfoBase.GetIsIndexed()
+  commentId: M:CRMScript.NetServer.NSFieldInfoBase.GetIsIndexed()
+  id: 'GetIsIndexed()'
+  so.intellisense: NSFieldInfoBase.GetIsIndexed
+  langs:
+  - crmscript
+  name: 'GetIsIndexed()'
+  nameWithType: NSFieldInfoBase.GetIsIndexed()
+  fullName: CRMScript.NetServer.NSFieldInfoBase.GetIsIndexed()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: Bool GetIsIndexed()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: Is this field indexed? 0 if no, index no. if yes
+  example: 
+  - "\n<pre><code>NSFieldInfoBase thing;\nBool isIndexed = thing.GetIsIndexed();</code></pre>\n"
+- uid: CRMScript.NetServer.NSFieldInfoBase.GetIsMandatory()
+  commentId: M:CRMScript.NetServer.NSFieldInfoBase.GetIsMandatory()
+  id: 'GetIsMandatory()'
+  so.intellisense: NSFieldInfoBase.GetIsMandatory
+  langs:
+  - crmscript
+  name: 'GetIsMandatory()'
+  nameWithType: NSFieldInfoBase.GetIsMandatory()
+  fullName: CRMScript.NetServer.NSFieldInfoBase.GetIsMandatory()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: Bool GetIsMandatory()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: 0 = no, 1 = yes (field must be filled out)
+  example: 
+  - "\n<pre><code>NSFieldInfoBase thing;\nBool isMandatory = thing.GetIsMandatory();</code></pre>\n"
+- uid: CRMScript.NetServer.NSFieldInfoBase.GetIsReadOnly()
+  commentId: M:CRMScript.NetServer.NSFieldInfoBase.GetIsReadOnly()
+  id: 'GetIsReadOnly()'
+  so.intellisense: NSFieldInfoBase.GetIsReadOnly
+  langs:
+  - crmscript
+  name: 'GetIsReadOnly()'
+  nameWithType: NSFieldInfoBase.GetIsReadOnly()
+  fullName: CRMScript.NetServer.NSFieldInfoBase.GetIsReadOnly()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: Bool GetIsReadOnly()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: 0 = read/write, 1 = readonly (don't combine with mandatory)
+  example: 
+  - "\n<pre><code>NSFieldInfoBase thing;\nBool isReadOnly = thing.GetIsReadOnly();</code></pre>\n"
+- uid: CRMScript.NetServer.NSFieldInfoBase.GetRank()
+  commentId: M:CRMScript.NetServer.NSFieldInfoBase.GetRank()
+  id: 'GetRank()'
+  so.intellisense: NSFieldInfoBase.GetRank
+  langs:
+  - crmscript
+  name: 'GetRank()'
+  nameWithType: NSFieldInfoBase.GetRank()
+  fullName: CRMScript.NetServer.NSFieldInfoBase.GetRank()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: Integer GetRank()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: Tab order, ranking within the custom fields.
+  example: 
+  - "\n<pre><code>NSFieldInfoBase thing;\nInteger rank = thing.GetRank();</code></pre>\n"
+- uid: CRMScript.NetServer.NSFieldInfoBase.GetShortLabel()
+  commentId: M:CRMScript.NetServer.NSFieldInfoBase.GetShortLabel()
+  id: 'GetShortLabel()'
+  so.intellisense: NSFieldInfoBase.GetShortLabel
+  langs:
+  - crmscript
+  name: 'GetShortLabel()'
+  nameWithType: NSFieldInfoBase.GetShortLabel()
+  fullName: CRMScript.NetServer.NSFieldInfoBase.GetShortLabel()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: String GetShortLabel()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Short name to be used in Archive headings and on page 1. If blank, the fieldLabel will be used everywhere.
+  example: 
+  - "\n<pre><code>NSFieldInfoBase thing;\nString shortLabel = thing.GetShortLabel();</code></pre>\n"
+- uid: CRMScript.NetServer.NSFieldInfoBase.GetTemplateVariableName()
+  commentId: M:CRMScript.NetServer.NSFieldInfoBase.GetTemplateVariableName()
+  id: 'GetTemplateVariableName()'
+  so.intellisense: NSFieldInfoBase.GetTemplateVariableName
+  langs:
+  - crmscript
+  name: 'GetTemplateVariableName()'
+  nameWithType: NSFieldInfoBase.GetTemplateVariableName()
+  fullName: CRMScript.NetServer.NSFieldInfoBase.GetTemplateVariableName()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: String GetTemplateVariableName()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Template variable name 'cs01', 'cl02' etc. Null for extra fields.
+  example: 
+  - "\n<pre><code>NSFieldInfoBase thing;\nString templateVariableName = thing.GetTemplateVariableName();</code></pre>\n"
 - uid: CRMScript.NetServer.NSFieldInfoBase.SetDescription(String)
   commentId: M:CRMScript.NetServer.NSFieldInfoBase.SetDescription(String)
   id: 'SetDescription(String)'
@@ -311,14 +324,14 @@ items:
   nameWithType: NSFieldInfoBase.SetDescription(String)
   fullName: CRMScript.NetServer.NSFieldInfoBase.SetDescription(String)
   type: Method
-  summary: "\nOptional tooltip text for this field\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetDescription(String description)
     parameters:
     - id: description
       type: CRMScript.Global.String
-      description: 
+      description: Optional tooltip text for this field
     return:
       type: CRMScript.Global.Void
   example: 
@@ -333,14 +346,14 @@ items:
   nameWithType: NSFieldInfoBase.SetDisplayName(String)
   fullName: CRMScript.NetServer.NSFieldInfoBase.SetDisplayName(String)
   type: Method
-  summary: "\nLabel for field. May be multi-lang string encoded.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetDisplayName(String displayName)
     parameters:
     - id: displayName
       type: CRMScript.Global.String
-      description: 
+      description: Label for field. May be multi-lang string encoded.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -355,14 +368,14 @@ items:
   nameWithType: NSFieldInfoBase.SetFieldName(String)
   fullName: CRMScript.NetServer.NSFieldInfoBase.SetFieldName(String)
   type: Method
-  summary: "\nDatabase name or prog-id: 'x_foobar' or 'SuperOffice:2'.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetFieldName(String fieldName)
     parameters:
     - id: fieldName
       type: CRMScript.Global.String
-      description: 
+      description: Database name or prog-id 'x_foobar' or 'SuperOffice:2'.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -377,14 +390,14 @@ items:
   nameWithType: NSFieldInfoBase.SetFieldType(Integer)
   fullName: CRMScript.NetServer.NSFieldInfoBase.SetFieldType(Integer)
   type: Method
-  summary: "\nWhat sort of data does this field contain. 1 = int, 2 = short text, ...\n"
-  remarks: "\n<p>See enum fieldType.</p>\n"
+  summary: "\n\n"
+  remarks: "\n<p></p>\n"
   syntax: 
     content: Void SetFieldType(Integer fieldType)
     parameters:
     - id: fieldType
       type: CRMScript.Global.Integer
-      description: 
+      description: What sort of data does this field contain. 1 = int, 2 = short text, ... See enum fieldType.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -399,14 +412,14 @@ items:
   nameWithType: NSFieldInfoBase.SetHideField(Bool)
   fullName: CRMScript.NetServer.NSFieldInfoBase.SetHideField(Bool)
   type: Method
-  summary: "\nHide the field from the UI. Only allow API access.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetHideField(Bool hideField)
     parameters:
     - id: hideField
       type: CRMScript.Global.Bool
-      description: 
+      description: Hide the field from the UI. Only allow API access.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -421,14 +434,14 @@ items:
   nameWithType: NSFieldInfoBase.SetHideLabel(Bool)
   fullName: CRMScript.NetServer.NSFieldInfoBase.SetHideLabel(Bool)
   type: Method
-  summary: "\nHide the label if 1\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetHideLabel(Bool hideLabel)
     parameters:
     - id: hideLabel
       type: CRMScript.Global.Bool
-      description: 
+      description: Hide the label if 1
     return:
       type: CRMScript.Global.Void
   example: 
@@ -443,14 +456,14 @@ items:
   nameWithType: NSFieldInfoBase.SetIsExternal(Bool)
   fullName: CRMScript.NetServer.NSFieldInfoBase.SetIsExternal(Bool)
   type: Method
-  summary: "\nShould this field be shown to external users via customer center?\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetIsExternal(Bool isExternal)
     parameters:
     - id: isExternal
       type: CRMScript.Global.Bool
-      description: 
+      description: Should this field be shown to external users via customer center?
     return:
       type: CRMScript.Global.Void
   example: 
@@ -465,14 +478,14 @@ items:
   nameWithType: NSFieldInfoBase.SetIsIndexed(Bool)
   fullName: CRMScript.NetServer.NSFieldInfoBase.SetIsIndexed(Bool)
   type: Method
-  summary: "\nIs this field indexed? 0 if no, index no. if yes\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetIsIndexed(Bool isIndexed)
     parameters:
     - id: isIndexed
       type: CRMScript.Global.Bool
-      description: 
+      description: Is this field indexed? 0 if no, index no. if yes
     return:
       type: CRMScript.Global.Void
   example: 
@@ -487,14 +500,14 @@ items:
   nameWithType: NSFieldInfoBase.SetIsMandatory(Bool)
   fullName: CRMScript.NetServer.NSFieldInfoBase.SetIsMandatory(Bool)
   type: Method
-  summary: "\n0 = no, 1 = yes (field must be filled out)\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetIsMandatory(Bool isMandatory)
     parameters:
     - id: isMandatory
       type: CRMScript.Global.Bool
-      description: 
+      description: 0 = no, 1 = yes (field must be filled out)
     return:
       type: CRMScript.Global.Void
   example: 
@@ -509,14 +522,14 @@ items:
   nameWithType: NSFieldInfoBase.SetIsReadOnly(Bool)
   fullName: CRMScript.NetServer.NSFieldInfoBase.SetIsReadOnly(Bool)
   type: Method
-  summary: "\n0 = read/write, 1 = readonly (don't combine with mandatory  8-) )\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetIsReadOnly(Bool isReadOnly)
     parameters:
     - id: isReadOnly
       type: CRMScript.Global.Bool
-      description: 
+      description: 0 = read/write, 1 = readonly (don't combine with mandatory)
     return:
       type: CRMScript.Global.Void
   example: 
@@ -531,14 +544,14 @@ items:
   nameWithType: NSFieldInfoBase.SetRank(Integer)
   fullName: CRMScript.NetServer.NSFieldInfoBase.SetRank(Integer)
   type: Method
-  summary: "\nTab order, ranking within the custom fields.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetRank(Integer rank)
     parameters:
     - id: rank
       type: CRMScript.Global.Integer
-      description: 
+      description: Tab order, ranking within the custom fields.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -553,14 +566,14 @@ items:
   nameWithType: NSFieldInfoBase.SetShortLabel(String)
   fullName: CRMScript.NetServer.NSFieldInfoBase.SetShortLabel(String)
   type: Method
-  summary: "\nShort name to be used in Archive headings and on page 1. If blank, the fieldLabel will be used everywhere.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetShortLabel(String shortLabel)
     parameters:
     - id: shortLabel
       type: CRMScript.Global.String
-      description: 
+      description: Short name to be used in Archive headings and on page 1. If blank, the fieldLabel will be used everywhere.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -575,14 +588,14 @@ items:
   nameWithType: NSFieldInfoBase.SetTemplateVariableName(String)
   fullName: CRMScript.NetServer.NSFieldInfoBase.SetTemplateVariableName(String)
   type: Method
-  summary: "\nTemplate variable name: 'cs01', 'cl02' etc. Null for extra fields.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetTemplateVariableName(String templateVariableName)
     parameters:
     - id: templateVariableName
       type: CRMScript.Global.String
-      description: 
+      description: Template variable name 'cs01', 'cl02' etc. Null for extra fields.
     return:
       type: CRMScript.Global.Void
   example: 

@@ -6,10 +6,10 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSFieldInfoDecimal.#ctor
   - CRMScript.NetServer.NSFieldInfoDecimal.GetDefaultValue()
   - CRMScript.NetServer.NSFieldInfoDecimal.GetPrecision()
-  - CRMScript.NetServer.NSFieldInfoDecimal.#ctor
-  - CRMScript.NetServer.NSFieldInfoDecimal.SetDefaultValue()
+  - CRMScript.NetServer.NSFieldInfoDecimal.SetDefaultValue(Float)
   - CRMScript.NetServer.NSFieldInfoDecimal.SetPrecision(Integer)
   name: NSFieldInfoDecimal
   nameWithType: NSFieldInfoDecimal
@@ -17,44 +17,6 @@ items:
   type: Class
   summary: 
   example: 
-- uid: CRMScript.NetServer.NSFieldInfoDecimal.GetDefaultValue()
-  commentId: M:CRMScript.NetServer.NSFieldInfoDecimal.GetDefaultValue()
-  id: 'GetDefaultValue()'
-  so.intellisense: NSFieldInfoDecimal.GetDefaultValue
-  langs:
-  - crmscript
-  name: 'GetDefaultValue()'
-  nameWithType: NSFieldInfoDecimal.GetDefaultValue()
-  fullName: CRMScript.NetServer.NSFieldInfoDecimal.GetDefaultValue()
-  type: Method
-  summary: "\nDefault decimal (double precision) value\n"
-  remarks: 
-  syntax: 
-    content: Float GetDefaultValue()
-    parameters: []
-    return:
-      type: CRMScript.Global.Float
-  example: 
-  - "\n<pre><code>NSFieldInfoDecimal thing;\nFloat defaultValue = thing.GetDefaultValue();</code></pre>\n"
-- uid: CRMScript.NetServer.NSFieldInfoDecimal.GetPrecision()
-  commentId: M:CRMScript.NetServer.NSFieldInfoDecimal.GetPrecision()
-  id: 'GetPrecision()'
-  so.intellisense: NSFieldInfoDecimal.GetPrecision
-  langs:
-  - crmscript
-  name: 'GetPrecision()'
-  nameWithType: NSFieldInfoDecimal.GetPrecision()
-  fullName: CRMScript.NetServer.NSFieldInfoDecimal.GetPrecision()
-  type: Method
-  summary: "\nHow many decimals to display\n"
-  remarks: 
-  syntax: 
-    content: Integer GetPrecision()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-  example: 
-  - "\n<pre><code>NSFieldInfoDecimal thing;\nInteger precision = thing.GetPrecision();</code></pre>\n"
 - uid: CRMScript.NetServer.NSFieldInfoDecimal.#ctor
   commentId: M:CRMScript.NetServer.NSFieldInfoDecimal.#ctor
   id: '#ctor'
@@ -70,21 +32,64 @@ items:
   syntax: 
     content: NSFieldInfoDecimal
   example: 
-- uid: CRMScript.NetServer.NSFieldInfoDecimal.SetDefaultValue()
-  commentId: M:CRMScript.NetServer.NSFieldInfoDecimal.SetDefaultValue()
-  id: 'SetDefaultValue()'
+- uid: CRMScript.NetServer.NSFieldInfoDecimal.GetDefaultValue()
+  commentId: M:CRMScript.NetServer.NSFieldInfoDecimal.GetDefaultValue()
+  id: 'GetDefaultValue()'
+  so.intellisense: NSFieldInfoDecimal.GetDefaultValue
+  langs:
+  - crmscript
+  name: 'GetDefaultValue()'
+  nameWithType: NSFieldInfoDecimal.GetDefaultValue()
+  fullName: CRMScript.NetServer.NSFieldInfoDecimal.GetDefaultValue()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: Float GetDefaultValue()
+    parameters: []
+    return:
+      type: CRMScript.Global.Float
+      description: Default decimal (double precision) value
+  example: 
+  - "\n<pre><code>NSFieldInfoDecimal thing;\nFloat defaultValue = thing.GetDefaultValue();</code></pre>\n"
+- uid: CRMScript.NetServer.NSFieldInfoDecimal.GetPrecision()
+  commentId: M:CRMScript.NetServer.NSFieldInfoDecimal.GetPrecision()
+  id: 'GetPrecision()'
+  so.intellisense: NSFieldInfoDecimal.GetPrecision
+  langs:
+  - crmscript
+  name: 'GetPrecision()'
+  nameWithType: NSFieldInfoDecimal.GetPrecision()
+  fullName: CRMScript.NetServer.NSFieldInfoDecimal.GetPrecision()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: Integer GetPrecision()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: How many decimals to display
+  example: 
+  - "\n<pre><code>NSFieldInfoDecimal thing;\nInteger precision = thing.GetPrecision();</code></pre>\n"
+- uid: CRMScript.NetServer.NSFieldInfoDecimal.SetDefaultValue(Float)
+  commentId: M:CRMScript.NetServer.NSFieldInfoDecimal.SetDefaultValue(Float)
+  id: 'SetDefaultValue(Float)'
   so.intellisense: NSFieldInfoDecimal.SetDefaultValue
   langs:
   - crmscript
-  name: 'SetDefaultValue()'
-  nameWithType: NSFieldInfoDecimal.SetDefaultValue()
-  fullName: CRMScript.NetServer.NSFieldInfoDecimal.SetDefaultValue()
+  name: 'SetDefaultValue(Float)'
+  nameWithType: NSFieldInfoDecimal.SetDefaultValue(Float)
+  fullName: CRMScript.NetServer.NSFieldInfoDecimal.SetDefaultValue(Float)
   type: Method
-  summary: "\nDefault decimal (double precision) value\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetDefaultValue(Float defaultValue)
-    parameters:
+    parameters: 
+    - id: defaultValue
+      type: CRMScript.Global.Float
+      description: Default decimal (double precision) value
   example: 
   - "\n<pre><code>NSFieldInfoDecimal thing;\nFloat defaultValue;\nthing.SetDefaultValue(defaultValue);</code></pre>\n"
 - uid: CRMScript.NetServer.NSFieldInfoDecimal.SetPrecision(Integer)
@@ -97,14 +102,14 @@ items:
   nameWithType: NSFieldInfoDecimal.SetPrecision(Integer)
   fullName: CRMScript.NetServer.NSFieldInfoDecimal.SetPrecision(Integer)
   type: Method
-  summary: "\nHow many decimals to display\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetPrecision(Integer precision)
     parameters:
     - id: precision
       type: CRMScript.Global.Integer
-      description: 
+      description: How many decimals to display
     return:
       type: CRMScript.Global.Void
   example: 

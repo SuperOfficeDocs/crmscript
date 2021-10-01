@@ -6,6 +6,7 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSExtAppEntity.#ctor
   - CRMScript.NetServer.NSExtAppEntity.GetDeleted()
   - CRMScript.NetServer.NSExtAppEntity.GetExecuteOnEvent()
   - CRMScript.NetServer.NSExtAppEntity.GetExtAppId()
@@ -28,7 +29,6 @@ items:
   - CRMScript.NetServer.NSExtAppEntity.GetVisibleIn()
   - CRMScript.NetServer.NSExtAppEntity.GetWaitToFinish()
   - CRMScript.NetServer.NSExtAppEntity.GetWorkdir()
-  - CRMScript.NetServer.NSExtAppEntity.#ctor
   - CRMScript.NetServer.NSExtAppEntity.SetDeleted(Bool)
   - CRMScript.NetServer.NSExtAppEntity.SetExecuteOnEvent(NSExecuteOnEvent)
   - CRMScript.NetServer.NSExtAppEntity.SetExtAppId(Integer)
@@ -57,424 +57,6 @@ items:
   type: Class
   summary: 
   example: 
-- uid: CRMScript.NetServer.NSExtAppEntity.GetDeleted()
-  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetDeleted()
-  id: 'GetDeleted()'
-  so.intellisense: NSExtAppEntity.GetDeleted
-  langs:
-  - crmscript
-  name: 'GetDeleted()'
-  nameWithType: NSExtAppEntity.GetDeleted()
-  fullName: CRMScript.NetServer.NSExtAppEntity.GetDeleted()
-  type: Method
-  summary: "\nTrue if the application is marked as deleted\n"
-  remarks: 
-  syntax: 
-    content: Bool GetDeleted()
-    parameters: []
-    return:
-      type: CRMScript.Global.Bool
-  example: 
-  - "\n<pre><code>NSExtAppEntity thing;\nBool deleted = thing.GetDeleted();</code></pre>\n"
-- uid: CRMScript.NetServer.NSExtAppEntity.GetExecuteOnEvent()
-  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetExecuteOnEvent()
-  id: 'GetExecuteOnEvent()'
-  so.intellisense: NSExtAppEntity.GetExecuteOnEvent
-  langs:
-  - crmscript
-  name: 'GetExecuteOnEvent()'
-  nameWithType: NSExtAppEntity.GetExecuteOnEvent()
-  fullName: CRMScript.NetServer.NSExtAppEntity.GetExecuteOnEvent()
-  type: Method
-  summary: "\nEvents that cause automatic execution of this app<p></p>\n<strong>Returns:</strong>NSExecuteOnEvent<p></p>\n<ul><li>Enum: 0 = Never</li><li>Enum: 1 = Logon</li><li>Enum: 2 = Logoff</li><li>Enum: 3 = LocalUpdate</li><li>Enum: 16384 = Wait</li></ul><pre><code>NSExtAppEntity thing;\nNSExecuteOnEvent executeOnEvent = thing.GetExecuteOnEvent();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: NSExecuteOnEvent GetExecuteOnEvent()
-    parameters: []
-    return:
-      type: CRMScript.NetServer.NSExecuteOnEvent
-  example: 
-  - "\n<pre><code>NSExtAppEntity thing;\nNSExecuteOnEvent executeOnEvent = thing.GetExecuteOnEvent();</code></pre>\n"
-- uid: CRMScript.NetServer.NSExtAppEntity.GetExtAppId()
-  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetExtAppId()
-  id: 'GetExtAppId()'
-  so.intellisense: NSExtAppEntity.GetExtAppId
-  langs:
-  - crmscript
-  name: 'GetExtAppId()'
-  nameWithType: NSExtAppEntity.GetExtAppId()
-  fullName: CRMScript.NetServer.NSExtAppEntity.GetExtAppId()
-  type: Method
-  summary: "\nThe identity of the external app\n"
-  remarks: 
-  syntax: 
-    content: Integer GetExtAppId()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-  example: 
-  - "\n<pre><code>NSExtAppEntity thing;\nInteger extAppId = thing.GetExtAppId();</code></pre>\n"
-- uid: CRMScript.NetServer.NSExtAppEntity.GetFilename()
-  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetFilename()
-  id: 'GetFilename()'
-  so.intellisense: NSExtAppEntity.GetFilename
-  langs:
-  - crmscript
-  name: 'GetFilename()'
-  nameWithType: NSExtAppEntity.GetFilename()
-  fullName: CRMScript.NetServer.NSExtAppEntity.GetFilename()
-  type: Method
-  summary: "\nFilename of the programfile\n"
-  remarks: 
-  syntax: 
-    content: String GetFilename()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-  example: 
-  - "\n<pre><code>NSExtAppEntity thing;\nString filename = thing.GetFilename();</code></pre>\n"
-- uid: CRMScript.NetServer.NSExtAppEntity.GetIcon()
-  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetIcon()
-  id: 'GetIcon()'
-  so.intellisense: NSExtAppEntity.GetIcon
-  langs:
-  - crmscript
-  name: 'GetIcon()'
-  nameWithType: NSExtAppEntity.GetIcon()
-  fullName: CRMScript.NetServer.NSExtAppEntity.GetIcon()
-  type: Method
-  summary: "\nThe ID of the icon of the external app\n"
-  remarks: 
-  syntax: 
-    content: Integer GetIcon()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-  example: 
-  - "\n<pre><code>NSExtAppEntity thing;\nInteger icon = thing.GetIcon();</code></pre>\n"
-- uid: CRMScript.NetServer.NSExtAppEntity.GetName()
-  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetName()
-  id: 'GetName()'
-  so.intellisense: NSExtAppEntity.GetName
-  langs:
-  - crmscript
-  name: 'GetName()'
-  nameWithType: NSExtAppEntity.GetName()
-  fullName: CRMScript.NetServer.NSExtAppEntity.GetName()
-  type: Method
-  summary: "\nThe name of the web panel\n"
-  remarks: 
-  syntax: 
-    content: String GetName()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-  example: 
-  - "\n<pre><code>NSExtAppEntity thing;\nString name = thing.GetName();</code></pre>\n"
-- uid: CRMScript.NetServer.NSExtAppEntity.GetOnCentral()
-  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetOnCentral()
-  id: 'GetOnCentral()'
-  so.intellisense: NSExtAppEntity.GetOnCentral
-  langs:
-  - crmscript
-  name: 'GetOnCentral()'
-  nameWithType: NSExtAppEntity.GetOnCentral()
-  fullName: CRMScript.NetServer.NSExtAppEntity.GetOnCentral()
-  type: Method
-  summary: "\nIs the application visible when user is on central database\n"
-  remarks: 
-  syntax: 
-    content: Bool GetOnCentral()
-    parameters: []
-    return:
-      type: CRMScript.Global.Bool
-  example: 
-  - "\n<pre><code>NSExtAppEntity thing;\nBool onCentral = thing.GetOnCentral();</code></pre>\n"
-- uid: CRMScript.NetServer.NSExtAppEntity.GetOnSalesMarketingPocket()
-  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetOnSalesMarketingPocket()
-  id: 'GetOnSalesMarketingPocket()'
-  so.intellisense: NSExtAppEntity.GetOnSalesMarketingPocket
-  langs:
-  - crmscript
-  name: 'GetOnSalesMarketingPocket()'
-  nameWithType: NSExtAppEntity.GetOnSalesMarketingPocket()
-  fullName: CRMScript.NetServer.NSExtAppEntity.GetOnSalesMarketingPocket()
-  type: Method
-  summary: "\nIs the webpanel visible when user is on pocket client\n"
-  remarks: 
-  syntax: 
-    content: Bool GetOnSalesMarketingPocket()
-    parameters: []
-    return:
-      type: CRMScript.Global.Bool
-  example: 
-  - "\n<pre><code>NSExtAppEntity thing;\nBool onSalesMarketingPocket = thing.GetOnSalesMarketingPocket();</code></pre>\n"
-- uid: CRMScript.NetServer.NSExtAppEntity.GetOnSatellite()
-  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetOnSatellite()
-  id: 'GetOnSatellite()'
-  so.intellisense: NSExtAppEntity.GetOnSatellite
-  langs:
-  - crmscript
-  name: 'GetOnSatellite()'
-  nameWithType: NSExtAppEntity.GetOnSatellite()
-  fullName: CRMScript.NetServer.NSExtAppEntity.GetOnSatellite()
-  type: Method
-  summary: "\nIs the application visible when user is on a satellite\n"
-  remarks: 
-  syntax: 
-    content: Bool GetOnSatellite()
-    parameters: []
-    return:
-      type: CRMScript.Global.Bool
-  example: 
-  - "\n<pre><code>NSExtAppEntity thing;\nBool onSatellite = thing.GetOnSatellite();</code></pre>\n"
-- uid: CRMScript.NetServer.NSExtAppEntity.GetOnTravel()
-  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetOnTravel()
-  id: 'GetOnTravel()'
-  so.intellisense: NSExtAppEntity.GetOnTravel
-  langs:
-  - crmscript
-  name: 'GetOnTravel()'
-  nameWithType: NSExtAppEntity.GetOnTravel()
-  fullName: CRMScript.NetServer.NSExtAppEntity.GetOnTravel()
-  type: Method
-  summary: "\nIs the application visible when user is on travel\n"
-  remarks: 
-  syntax: 
-    content: Bool GetOnTravel()
-    parameters: []
-    return:
-      type: CRMScript.Global.Bool
-  example: 
-  - "\n<pre><code>NSExtAppEntity thing;\nBool onTravel = thing.GetOnTravel();</code></pre>\n"
-- uid: CRMScript.NetServer.NSExtAppEntity.GetParameters()
-  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetParameters()
-  id: 'GetParameters()'
-  so.intellisense: NSExtAppEntity.GetParameters
-  langs:
-  - crmscript
-  name: 'GetParameters()'
-  nameWithType: NSExtAppEntity.GetParameters()
-  fullName: CRMScript.NetServer.NSExtAppEntity.GetParameters()
-  type: Method
-  summary: "\n<template variable><other template variable>\n"
-  remarks: 
-  syntax: 
-    content: String GetParameters()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-  example: 
-  - "\n<pre><code>NSExtAppEntity thing;\nString parameters = thing.GetParameters();</code></pre>\n"
-- uid: CRMScript.NetServer.NSExtAppEntity.GetPath()
-  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetPath()
-  id: 'GetPath()'
-  so.intellisense: NSExtAppEntity.GetPath
-  langs:
-  - crmscript
-  name: 'GetPath()'
-  nameWithType: NSExtAppEntity.GetPath()
-  fullName: CRMScript.NetServer.NSExtAppEntity.GetPath()
-  type: Method
-  summary: "\nPath where the programfile is located; if empty, PATH is used\n"
-  remarks: 
-  syntax: 
-    content: String GetPath()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-  example: 
-  - "\n<pre><code>NSExtAppEntity thing;\nString path = thing.GetPath();</code></pre>\n"
-- uid: CRMScript.NetServer.NSExtAppEntity.GetRank()
-  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetRank()
-  id: 'GetRank()'
-  so.intellisense: NSExtAppEntity.GetRank
-  langs:
-  - crmscript
-  name: 'GetRank()'
-  nameWithType: NSExtAppEntity.GetRank()
-  fullName: CRMScript.NetServer.NSExtAppEntity.GetRank()
-  type: Method
-  summary: "\nThe rank of the application\n"
-  remarks: 
-  syntax: 
-    content: Integer GetRank()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-  example: 
-  - "\n<pre><code>NSExtAppEntity thing;\nInteger rank = thing.GetRank();</code></pre>\n"
-- uid: CRMScript.NetServer.NSExtAppEntity.GetShowInAddressBar()
-  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetShowInAddressBar()
-  id: 'GetShowInAddressBar()'
-  so.intellisense: NSExtAppEntity.GetShowInAddressBar
-  langs:
-  - crmscript
-  name: 'GetShowInAddressBar()'
-  nameWithType: NSExtAppEntity.GetShowInAddressBar()
-  fullName: CRMScript.NetServer.NSExtAppEntity.GetShowInAddressBar()
-  type: Method
-  summary: "\nDoes the webpanel have an address bar\n"
-  remarks: 
-  syntax: 
-    content: Bool GetShowInAddressBar()
-    parameters: []
-    return:
-      type: CRMScript.Global.Bool
-  example: 
-  - "\n<pre><code>NSExtAppEntity thing;\nBool showInAddressBar = thing.GetShowInAddressBar();</code></pre>\n"
-- uid: CRMScript.NetServer.NSExtAppEntity.GetShowInMenuBar()
-  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetShowInMenuBar()
-  id: 'GetShowInMenuBar()'
-  so.intellisense: NSExtAppEntity.GetShowInMenuBar
-  langs:
-  - crmscript
-  name: 'GetShowInMenuBar()'
-  nameWithType: NSExtAppEntity.GetShowInMenuBar()
-  fullName: CRMScript.NetServer.NSExtAppEntity.GetShowInMenuBar()
-  type: Method
-  summary: "\nDoes the application have a menu bar\n"
-  remarks: 
-  syntax: 
-    content: Bool GetShowInMenuBar()
-    parameters: []
-    return:
-      type: CRMScript.Global.Bool
-  example: 
-  - "\n<pre><code>NSExtAppEntity thing;\nBool showInMenuBar = thing.GetShowInMenuBar();</code></pre>\n"
-- uid: CRMScript.NetServer.NSExtAppEntity.GetShowInStatusBar()
-  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetShowInStatusBar()
-  id: 'GetShowInStatusBar()'
-  so.intellisense: NSExtAppEntity.GetShowInStatusBar
-  langs:
-  - crmscript
-  name: 'GetShowInStatusBar()'
-  nameWithType: NSExtAppEntity.GetShowInStatusBar()
-  fullName: CRMScript.NetServer.NSExtAppEntity.GetShowInStatusBar()
-  type: Method
-  summary: "\nDoes the webpanel have a status bar\n"
-  remarks: 
-  syntax: 
-    content: Bool GetShowInStatusBar()
-    parameters: []
-    return:
-      type: CRMScript.Global.Bool
-  example: 
-  - "\n<pre><code>NSExtAppEntity thing;\nBool showInStatusBar = thing.GetShowInStatusBar();</code></pre>\n"
-- uid: CRMScript.NetServer.NSExtAppEntity.GetShowInToolBar()
-  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetShowInToolBar()
-  id: 'GetShowInToolBar()'
-  so.intellisense: NSExtAppEntity.GetShowInToolBar
-  langs:
-  - crmscript
-  name: 'GetShowInToolBar()'
-  nameWithType: NSExtAppEntity.GetShowInToolBar()
-  fullName: CRMScript.NetServer.NSExtAppEntity.GetShowInToolBar()
-  type: Method
-  summary: "\nDoes the webpanel have a toolbar\n"
-  remarks: 
-  syntax: 
-    content: Bool GetShowInToolBar()
-    parameters: []
-    return:
-      type: CRMScript.Global.Bool
-  example: 
-  - "\n<pre><code>NSExtAppEntity thing;\nBool showInToolBar = thing.GetShowInToolBar();</code></pre>\n"
-- uid: CRMScript.NetServer.NSExtAppEntity.GetShowState()
-  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetShowState()
-  id: 'GetShowState()'
-  so.intellisense: NSExtAppEntity.GetShowState
-  langs:
-  - crmscript
-  name: 'GetShowState()'
-  nameWithType: NSExtAppEntity.GetShowState()
-  fullName: CRMScript.NetServer.NSExtAppEntity.GetShowState()
-  type: Method
-  summary: "\nThe application is shown in which state Minimized, Maximized or Restored<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<ul><li>Enum: 0 = Minimized</li><li>Enum: 1 = Maximized</li><li>Enum: 2 = Default</li><li>Enum: 256 = ToolBar</li><li>Enum: 512 = AddressBar</li><li>Enum: 1024 = StatusBar</li><li>Enum: 2048 = MenuBar</li></ul><pre><code>NSExtAppEntity thing;\nInteger showState = thing.GetShowState();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: Integer GetShowState()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-  example: 
-  - "\n<pre><code>NSExtAppEntity thing;\nInteger showState = thing.GetShowState();</code></pre>\n"
-- uid: CRMScript.NetServer.NSExtAppEntity.GetTooltip()
-  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetTooltip()
-  id: 'GetTooltip()'
-  so.intellisense: NSExtAppEntity.GetTooltip
-  langs:
-  - crmscript
-  name: 'GetTooltip()'
-  nameWithType: NSExtAppEntity.GetTooltip()
-  fullName: CRMScript.NetServer.NSExtAppEntity.GetTooltip()
-  type: Method
-  summary: "\nThe tooltip of the web panel\n"
-  remarks: 
-  syntax: 
-    content: String GetTooltip()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-  example: 
-  - "\n<pre><code>NSExtAppEntity thing;\nString tooltip = thing.GetTooltip();</code></pre>\n"
-- uid: CRMScript.NetServer.NSExtAppEntity.GetVisibleIn()
-  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetVisibleIn()
-  id: 'GetVisibleIn()'
-  so.intellisense: NSExtAppEntity.GetVisibleIn
-  langs:
-  - crmscript
-  name: 'GetVisibleIn()'
-  nameWithType: NSExtAppEntity.GetVisibleIn()
-  fullName: CRMScript.NetServer.NSExtAppEntity.GetVisibleIn()
-  type: Method
-  summary: "\nThe application is visible in<p></p>\n<strong>Returns:</strong>Integer\n"
-  remarks: 
-  syntax: 
-    content: Integer GetVisibleIn()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-  example: 
-  - "\n<pre><code>NSExtAppEntity thing;\nInteger visibleIn = thing.GetVisibleIn();</code></pre>\n"
-- uid: CRMScript.NetServer.NSExtAppEntity.GetWaitToFinish()
-  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetWaitToFinish()
-  id: 'GetWaitToFinish()'
-  so.intellisense: NSExtAppEntity.GetWaitToFinish
-  langs:
-  - crmscript
-  name: 'GetWaitToFinish()'
-  nameWithType: NSExtAppEntity.GetWaitToFinish()
-  fullName: CRMScript.NetServer.NSExtAppEntity.GetWaitToFinish()
-  type: Method
-  summary: "\nTrue if the application shall wait for fininsh event\n"
-  remarks: 
-  syntax: 
-    content: Bool GetWaitToFinish()
-    parameters: []
-    return:
-      type: CRMScript.Global.Bool
-  example: 
-  - "\n<pre><code>NSExtAppEntity thing;\nBool waitToFinish = thing.GetWaitToFinish();</code></pre>\n"
-- uid: CRMScript.NetServer.NSExtAppEntity.GetWorkdir()
-  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetWorkdir()
-  id: 'GetWorkdir()'
-  so.intellisense: NSExtAppEntity.GetWorkdir
-  langs:
-  - crmscript
-  name: 'GetWorkdir()'
-  nameWithType: NSExtAppEntity.GetWorkdir()
-  fullName: CRMScript.NetServer.NSExtAppEntity.GetWorkdir()
-  type: Method
-  summary: "\nDirectory set to current when loading the application, if different from application's own\n"
-  remarks: 
-  syntax: 
-    content: String GetWorkdir()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-  example: 
-  - "\n<pre><code>NSExtAppEntity thing;\nString workdir = thing.GetWorkdir();</code></pre>\n"
 - uid: CRMScript.NetServer.NSExtAppEntity.#ctor
   commentId: M:CRMScript.NetServer.NSExtAppEntity.#ctor
   id: '#ctor'
@@ -490,6 +72,446 @@ items:
   syntax: 
     content: NSExtAppEntity
   example: 
+- uid: CRMScript.NetServer.NSExtAppEntity.GetDeleted()
+  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetDeleted()
+  id: 'GetDeleted()'
+  so.intellisense: NSExtAppEntity.GetDeleted
+  langs:
+  - crmscript
+  name: 'GetDeleted()'
+  nameWithType: NSExtAppEntity.GetDeleted()
+  fullName: CRMScript.NetServer.NSExtAppEntity.GetDeleted()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: Bool GetDeleted()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: True if the application is marked as deleted
+  example: 
+  - "\n<pre><code>NSExtAppEntity thing;\nBool deleted = thing.GetDeleted();</code></pre>\n"
+- uid: CRMScript.NetServer.NSExtAppEntity.GetExecuteOnEvent()
+  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetExecuteOnEvent()
+  id: 'GetExecuteOnEvent()'
+  so.intellisense: NSExtAppEntity.GetExecuteOnEvent
+  langs:
+  - crmscript
+  name: 'GetExecuteOnEvent()'
+  nameWithType: NSExtAppEntity.GetExecuteOnEvent()
+  fullName: CRMScript.NetServer.NSExtAppEntity.GetExecuteOnEvent()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: NSExecuteOnEvent GetExecuteOnEvent()
+    parameters: []
+    return:
+      type: CRMScript.NetServer.NSExecuteOnEvent
+      description: Events that cause automatic execution of this app. See <xref href=\"CRMScript.NetServer.ExecuteOnEvent\" data-throw-if-not-resolved=\"false\"></xref>
+  example: 
+  - "\n<pre><code>NSExtAppEntity thing;\nNSExecuteOnEvent executeOnEvent = thing.GetExecuteOnEvent();</code></pre>\n"
+- uid: CRMScript.NetServer.NSExtAppEntity.GetExtAppId()
+  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetExtAppId()
+  id: 'GetExtAppId()'
+  so.intellisense: NSExtAppEntity.GetExtAppId
+  langs:
+  - crmscript
+  name: 'GetExtAppId()'
+  nameWithType: NSExtAppEntity.GetExtAppId()
+  fullName: CRMScript.NetServer.NSExtAppEntity.GetExtAppId()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: Integer GetExtAppId()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: The identity of the external app
+  example: 
+  - "\n<pre><code>NSExtAppEntity thing;\nInteger extAppId = thing.GetExtAppId();</code></pre>\n"
+- uid: CRMScript.NetServer.NSExtAppEntity.GetFilename()
+  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetFilename()
+  id: 'GetFilename()'
+  so.intellisense: NSExtAppEntity.GetFilename
+  langs:
+  - crmscript
+  name: 'GetFilename()'
+  nameWithType: NSExtAppEntity.GetFilename()
+  fullName: CRMScript.NetServer.NSExtAppEntity.GetFilename()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: String GetFilename()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Filename of the programfile
+  example: 
+  - "\n<pre><code>NSExtAppEntity thing;\nString filename = thing.GetFilename();</code></pre>\n"
+- uid: CRMScript.NetServer.NSExtAppEntity.GetIcon()
+  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetIcon()
+  id: 'GetIcon()'
+  so.intellisense: NSExtAppEntity.GetIcon
+  langs:
+  - crmscript
+  name: 'GetIcon()'
+  nameWithType: NSExtAppEntity.GetIcon()
+  fullName: CRMScript.NetServer.NSExtAppEntity.GetIcon()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: Integer GetIcon()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: The ID of the icon of the external app
+  example: 
+  - "\n<pre><code>NSExtAppEntity thing;\nInteger icon = thing.GetIcon();</code></pre>\n"
+- uid: CRMScript.NetServer.NSExtAppEntity.GetName()
+  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetName()
+  id: 'GetName()'
+  so.intellisense: NSExtAppEntity.GetName
+  langs:
+  - crmscript
+  name: 'GetName()'
+  nameWithType: NSExtAppEntity.GetName()
+  fullName: CRMScript.NetServer.NSExtAppEntity.GetName()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: String GetName()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: The name of the web panel
+  example: 
+  - "\n<pre><code>NSExtAppEntity thing;\nString name = thing.GetName();</code></pre>\n"
+- uid: CRMScript.NetServer.NSExtAppEntity.GetOnCentral()
+  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetOnCentral()
+  id: 'GetOnCentral()'
+  so.intellisense: NSExtAppEntity.GetOnCentral
+  langs:
+  - crmscript
+  name: 'GetOnCentral()'
+  nameWithType: NSExtAppEntity.GetOnCentral()
+  fullName: CRMScript.NetServer.NSExtAppEntity.GetOnCentral()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: Bool GetOnCentral()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: Is the application visible when user is on central database
+  example: 
+  - "\n<pre><code>NSExtAppEntity thing;\nBool onCentral = thing.GetOnCentral();</code></pre>\n"
+- uid: CRMScript.NetServer.NSExtAppEntity.GetOnSalesMarketingPocket()
+  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetOnSalesMarketingPocket()
+  id: 'GetOnSalesMarketingPocket()'
+  so.intellisense: NSExtAppEntity.GetOnSalesMarketingPocket
+  langs:
+  - crmscript
+  name: 'GetOnSalesMarketingPocket()'
+  nameWithType: NSExtAppEntity.GetOnSalesMarketingPocket()
+  fullName: CRMScript.NetServer.NSExtAppEntity.GetOnSalesMarketingPocket()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: Bool GetOnSalesMarketingPocket()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: Is the web panel visible when user is on pocket client
+  example: 
+  - "\n<pre><code>NSExtAppEntity thing;\nBool onSalesMarketingPocket = thing.GetOnSalesMarketingPocket();</code></pre>\n"
+- uid: CRMScript.NetServer.NSExtAppEntity.GetOnSatellite()
+  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetOnSatellite()
+  id: 'GetOnSatellite()'
+  so.intellisense: NSExtAppEntity.GetOnSatellite
+  langs:
+  - crmscript
+  name: 'GetOnSatellite()'
+  nameWithType: NSExtAppEntity.GetOnSatellite()
+  fullName: CRMScript.NetServer.NSExtAppEntity.GetOnSatellite()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: Bool GetOnSatellite()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: Is the application visible when user is on a satellite
+  example: 
+  - "\n<pre><code>NSExtAppEntity thing;\nBool onSatellite = thing.GetOnSatellite();</code></pre>\n"
+- uid: CRMScript.NetServer.NSExtAppEntity.GetOnTravel()
+  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetOnTravel()
+  id: 'GetOnTravel()'
+  so.intellisense: NSExtAppEntity.GetOnTravel
+  langs:
+  - crmscript
+  name: 'GetOnTravel()'
+  nameWithType: NSExtAppEntity.GetOnTravel()
+  fullName: CRMScript.NetServer.NSExtAppEntity.GetOnTravel()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: Bool GetOnTravel()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: Is the application visible when user is on travel
+  example: 
+  - "\n<pre><code>NSExtAppEntity thing;\nBool onTravel = thing.GetOnTravel();</code></pre>\n"
+- uid: CRMScript.NetServer.NSExtAppEntity.GetParameters()
+  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetParameters()
+  id: 'GetParameters()'
+  so.intellisense: NSExtAppEntity.GetParameters
+  langs:
+  - crmscript
+  name: 'GetParameters()'
+  nameWithType: NSExtAppEntity.GetParameters()
+  fullName: CRMScript.NetServer.NSExtAppEntity.GetParameters()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: String GetParameters()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: <template variable><other template variable>
+  example: 
+  - "\n<pre><code>NSExtAppEntity thing;\nString parameters = thing.GetParameters();</code></pre>\n"
+- uid: CRMScript.NetServer.NSExtAppEntity.GetPath()
+  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetPath()
+  id: 'GetPath()'
+  so.intellisense: NSExtAppEntity.GetPath
+  langs:
+  - crmscript
+  name: 'GetPath()'
+  nameWithType: NSExtAppEntity.GetPath()
+  fullName: CRMScript.NetServer.NSExtAppEntity.GetPath()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: String GetPath()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Path where the programfile is located; if empty, PATH is used
+  example: 
+  - "\n<pre><code>NSExtAppEntity thing;\nString path = thing.GetPath();</code></pre>\n"
+- uid: CRMScript.NetServer.NSExtAppEntity.GetRank()
+  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetRank()
+  id: 'GetRank()'
+  so.intellisense: NSExtAppEntity.GetRank
+  langs:
+  - crmscript
+  name: 'GetRank()'
+  nameWithType: NSExtAppEntity.GetRank()
+  fullName: CRMScript.NetServer.NSExtAppEntity.GetRank()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: Integer GetRank()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: The rank of the application
+  example: 
+  - "\n<pre><code>NSExtAppEntity thing;\nInteger rank = thing.GetRank();</code></pre>\n"
+- uid: CRMScript.NetServer.NSExtAppEntity.GetShowInAddressBar()
+  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetShowInAddressBar()
+  id: 'GetShowInAddressBar()'
+  so.intellisense: NSExtAppEntity.GetShowInAddressBar
+  langs:
+  - crmscript
+  name: 'GetShowInAddressBar()'
+  nameWithType: NSExtAppEntity.GetShowInAddressBar()
+  fullName: CRMScript.NetServer.NSExtAppEntity.GetShowInAddressBar()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: Bool GetShowInAddressBar()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: Does the web panel have an address bar
+  example: 
+  - "\n<pre><code>NSExtAppEntity thing;\nBool showInAddressBar = thing.GetShowInAddressBar();</code></pre>\n"
+- uid: CRMScript.NetServer.NSExtAppEntity.GetShowInMenuBar()
+  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetShowInMenuBar()
+  id: 'GetShowInMenuBar()'
+  so.intellisense: NSExtAppEntity.GetShowInMenuBar
+  langs:
+  - crmscript
+  name: 'GetShowInMenuBar()'
+  nameWithType: NSExtAppEntity.GetShowInMenuBar()
+  fullName: CRMScript.NetServer.NSExtAppEntity.GetShowInMenuBar()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: Bool GetShowInMenuBar()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: Does the application have a menu bar
+  example: 
+  - "\n<pre><code>NSExtAppEntity thing;\nBool showInMenuBar = thing.GetShowInMenuBar();</code></pre>\n"
+- uid: CRMScript.NetServer.NSExtAppEntity.GetShowInStatusBar()
+  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetShowInStatusBar()
+  id: 'GetShowInStatusBar()'
+  so.intellisense: NSExtAppEntity.GetShowInStatusBar
+  langs:
+  - crmscript
+  name: 'GetShowInStatusBar()'
+  nameWithType: NSExtAppEntity.GetShowInStatusBar()
+  fullName: CRMScript.NetServer.NSExtAppEntity.GetShowInStatusBar()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: Bool GetShowInStatusBar()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: Does the web panel have a status bar
+  example: 
+  - "\n<pre><code>NSExtAppEntity thing;\nBool showInStatusBar = thing.GetShowInStatusBar();</code></pre>\n"
+- uid: CRMScript.NetServer.NSExtAppEntity.GetShowInToolBar()
+  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetShowInToolBar()
+  id: 'GetShowInToolBar()'
+  so.intellisense: NSExtAppEntity.GetShowInToolBar
+  langs:
+  - crmscript
+  name: 'GetShowInToolBar()'
+  nameWithType: NSExtAppEntity.GetShowInToolBar()
+  fullName: CRMScript.NetServer.NSExtAppEntity.GetShowInToolBar()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: Bool GetShowInToolBar()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: Does the web panel have a toolbar
+  example: 
+  - "\n<pre><code>NSExtAppEntity thing;\nBool showInToolBar = thing.GetShowInToolBar();</code></pre>\n"
+- uid: CRMScript.NetServer.NSExtAppEntity.GetShowState()
+  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetShowState()
+  id: 'GetShowState()'
+  so.intellisense: NSExtAppEntity.GetShowState
+  langs:
+  - crmscript
+  name: 'GetShowState()'
+  nameWithType: NSExtAppEntity.GetShowState()
+  fullName: CRMScript.NetServer.NSExtAppEntity.GetShowState()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Integer GetShowState()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: The application is shown in which state Minimized, Maximized or Restored. See <xref href=\"CRMScript.NetServer.ShowState\" data-throw-if-not-resolved=\"false\"></xref>
+  example: 
+  - "\n<pre><code>NSExtAppEntity thing;\nInteger showState = thing.GetShowState();</code></pre>\n"
+- uid: CRMScript.NetServer.NSExtAppEntity.GetTooltip()
+  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetTooltip()
+  id: 'GetTooltip()'
+  so.intellisense: NSExtAppEntity.GetTooltip
+  langs:
+  - crmscript
+  name: 'GetTooltip()'
+  nameWithType: NSExtAppEntity.GetTooltip()
+  fullName: CRMScript.NetServer.NSExtAppEntity.GetTooltip()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: String GetTooltip()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: The tooltip of the web panel
+  example: 
+  - "\n<pre><code>NSExtAppEntity thing;\nString tooltip = thing.GetTooltip();</code></pre>\n"
+- uid: CRMScript.NetServer.NSExtAppEntity.GetVisibleIn()
+  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetVisibleIn()
+  id: 'GetVisibleIn()'
+  so.intellisense: NSExtAppEntity.GetVisibleIn
+  langs:
+  - crmscript
+  name: 'GetVisibleIn()'
+  nameWithType: NSExtAppEntity.GetVisibleIn()
+  fullName: CRMScript.NetServer.NSExtAppEntity.GetVisibleIn()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Integer GetVisibleIn()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: The application is visible in. See <xref href=\"CRMScript.NetServer.Navigation\" data-throw-if-not-resolved=\"false\"></xref>
+  example: 
+  - "\n<pre><code>NSExtAppEntity thing;\nInteger visibleIn = thing.GetVisibleIn();</code></pre>\n"
+- uid: CRMScript.NetServer.NSExtAppEntity.GetWaitToFinish()
+  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetWaitToFinish()
+  id: 'GetWaitToFinish()'
+  so.intellisense: NSExtAppEntity.GetWaitToFinish
+  langs:
+  - crmscript
+  name: 'GetWaitToFinish()'
+  nameWithType: NSExtAppEntity.GetWaitToFinish()
+  fullName: CRMScript.NetServer.NSExtAppEntity.GetWaitToFinish()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: Bool GetWaitToFinish()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: True if the application shall wait for finish event
+  example: 
+  - "\n<pre><code>NSExtAppEntity thing;\nBool waitToFinish = thing.GetWaitToFinish();</code></pre>\n"
+- uid: CRMScript.NetServer.NSExtAppEntity.GetWorkdir()
+  commentId: M:CRMScript.NetServer.NSExtAppEntity.GetWorkdir()
+  id: 'GetWorkdir()'
+  so.intellisense: NSExtAppEntity.GetWorkdir
+  langs:
+  - crmscript
+  name: 'GetWorkdir()'
+  nameWithType: NSExtAppEntity.GetWorkdir()
+  fullName: CRMScript.NetServer.NSExtAppEntity.GetWorkdir()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: String GetWorkdir()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Directory set to current when loading the application, if different from application's own
+  example: 
+  - "\n<pre><code>NSExtAppEntity thing;\nString workdir = thing.GetWorkdir();</code></pre>\n"
 - uid: CRMScript.NetServer.NSExtAppEntity.SetDeleted(Bool)
   commentId: M:CRMScript.NetServer.NSExtAppEntity.SetDeleted(Bool)
   id: 'SetDeleted(Bool)'
@@ -500,14 +522,14 @@ items:
   nameWithType: NSExtAppEntity.SetDeleted(Bool)
   fullName: CRMScript.NetServer.NSExtAppEntity.SetDeleted(Bool)
   type: Method
-  summary: "\nTrue if the application is marked as deleted\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetDeleted(Bool deleted)
     parameters:
     - id: deleted
       type: CRMScript.Global.Bool
-      description: 
+      description: True if the application is marked as deleted
     return:
       type: CRMScript.Global.Void
   example: 
@@ -522,14 +544,14 @@ items:
   nameWithType: NSExtAppEntity.SetExecuteOnEvent(NSExecuteOnEvent)
   fullName: CRMScript.NetServer.NSExtAppEntity.SetExecuteOnEvent(NSExecuteOnEvent)
   type: Method
-  summary: "\nEvents that cause automatic execution of this app\n"
-  remarks: "\n<p>See enum executeOnEvent.</p>\n"
+  summary: "\n\n"
+  remarks: "\n<p></p>\n"
   syntax: 
     content: Void SetExecuteOnEvent(NSExecuteOnEvent executeOnEvent)
     parameters:
     - id: executeOnEvent
       type: CRMScript.NetServer.NSExecuteOnEvent
-      description: 
+      description: Events that cause automatic execution of this app. See <xref href=\"CRMScript.NetServer.ExecuteOnEvent\" data-throw-if-not-resolved=\"false\"></xref>
     return:
       type: CRMScript.Global.Void
   example: 
@@ -544,14 +566,14 @@ items:
   nameWithType: NSExtAppEntity.SetExtAppId(Integer)
   fullName: CRMScript.NetServer.NSExtAppEntity.SetExtAppId(Integer)
   type: Method
-  summary: "\nThe identity of the external app\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetExtAppId(Integer extAppId)
     parameters:
     - id: extAppId
       type: CRMScript.Global.Integer
-      description: 
+      description: The identity of the external app
     return:
       type: CRMScript.Global.Void
   example: 
@@ -566,14 +588,14 @@ items:
   nameWithType: NSExtAppEntity.SetFilename(String)
   fullName: CRMScript.NetServer.NSExtAppEntity.SetFilename(String)
   type: Method
-  summary: "\nFilename of the programfile\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetFilename(String filename)
     parameters:
     - id: filename
       type: CRMScript.Global.String
-      description: 
+      description: Filename of the programfile
     return:
       type: CRMScript.Global.Void
   example: 
@@ -588,14 +610,14 @@ items:
   nameWithType: NSExtAppEntity.SetIcon(Integer)
   fullName: CRMScript.NetServer.NSExtAppEntity.SetIcon(Integer)
   type: Method
-  summary: "\nThe ID of the icon of the external app\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetIcon(Integer icon)
     parameters:
     - id: icon
       type: CRMScript.Global.Integer
-      description: 
+      description: The ID of the icon of the external app
     return:
       type: CRMScript.Global.Void
   example: 
@@ -610,14 +632,14 @@ items:
   nameWithType: NSExtAppEntity.SetName(String)
   fullName: CRMScript.NetServer.NSExtAppEntity.SetName(String)
   type: Method
-  summary: "\nThe name of the web panel\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetName(String name)
     parameters:
     - id: name
       type: CRMScript.Global.String
-      description: 
+      description: The name of the web panel
     return:
       type: CRMScript.Global.Void
   example: 
@@ -632,14 +654,14 @@ items:
   nameWithType: NSExtAppEntity.SetOnCentral(Bool)
   fullName: CRMScript.NetServer.NSExtAppEntity.SetOnCentral(Bool)
   type: Method
-  summary: "\nIs the application visible when user is on central database\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetOnCentral(Bool onCentral)
     parameters:
     - id: onCentral
       type: CRMScript.Global.Bool
-      description: 
+      description: Is the application visible when user is on central database
     return:
       type: CRMScript.Global.Void
   example: 
@@ -654,14 +676,14 @@ items:
   nameWithType: NSExtAppEntity.SetOnSalesMarketingPocket(Bool)
   fullName: CRMScript.NetServer.NSExtAppEntity.SetOnSalesMarketingPocket(Bool)
   type: Method
-  summary: "\nIs the webpanel visible when user is on pocket client\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetOnSalesMarketingPocket(Bool onSalesMarketingPocket)
     parameters:
     - id: onSalesMarketingPocket
       type: CRMScript.Global.Bool
-      description: 
+      description: Is the web panel visible when user is on pocket client
     return:
       type: CRMScript.Global.Void
   example: 
@@ -676,14 +698,14 @@ items:
   nameWithType: NSExtAppEntity.SetOnSatellite(Bool)
   fullName: CRMScript.NetServer.NSExtAppEntity.SetOnSatellite(Bool)
   type: Method
-  summary: "\nIs the application visible when user is on a satellite\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetOnSatellite(Bool onSatellite)
     parameters:
     - id: onSatellite
       type: CRMScript.Global.Bool
-      description: 
+      description: Is the application visible when user is on a satellite
     return:
       type: CRMScript.Global.Void
   example: 
@@ -698,14 +720,14 @@ items:
   nameWithType: NSExtAppEntity.SetOnTravel(Bool)
   fullName: CRMScript.NetServer.NSExtAppEntity.SetOnTravel(Bool)
   type: Method
-  summary: "\nIs the application visible when user is on travel\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetOnTravel(Bool onTravel)
     parameters:
     - id: onTravel
       type: CRMScript.Global.Bool
-      description: 
+      description: Is the application visible when user is on travel
     return:
       type: CRMScript.Global.Void
   example: 
@@ -720,14 +742,14 @@ items:
   nameWithType: NSExtAppEntity.SetParameters(String)
   fullName: CRMScript.NetServer.NSExtAppEntity.SetParameters(String)
   type: Method
-  summary: "\n<template variable><other template variable>\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetParameters(String parameters)
     parameters:
     - id: parameters
       type: CRMScript.Global.String
-      description: 
+      description: <template variable><other template variable>
     return:
       type: CRMScript.Global.Void
   example: 
@@ -742,14 +764,14 @@ items:
   nameWithType: NSExtAppEntity.SetPath(String)
   fullName: CRMScript.NetServer.NSExtAppEntity.SetPath(String)
   type: Method
-  summary: "\nPath where the programfile is located; if empty, PATH is used\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetPath(String path)
     parameters:
     - id: path
       type: CRMScript.Global.String
-      description: 
+      description: Path where the programfile is located; if empty, PATH is used
     return:
       type: CRMScript.Global.Void
   example: 
@@ -764,14 +786,14 @@ items:
   nameWithType: NSExtAppEntity.SetRank(Integer)
   fullName: CRMScript.NetServer.NSExtAppEntity.SetRank(Integer)
   type: Method
-  summary: "\nThe rank of the application\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetRank(Integer rank)
     parameters:
     - id: rank
       type: CRMScript.Global.Integer
-      description: 
+      description: The rank of the application
     return:
       type: CRMScript.Global.Void
   example: 
@@ -786,14 +808,14 @@ items:
   nameWithType: NSExtAppEntity.SetShowInAddressBar(Bool)
   fullName: CRMScript.NetServer.NSExtAppEntity.SetShowInAddressBar(Bool)
   type: Method
-  summary: "\nDoes the webpanel have an address bar\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetShowInAddressBar(Bool showInAddressBar)
     parameters:
     - id: showInAddressBar
       type: CRMScript.Global.Bool
-      description: 
+      description: Does the web panel have an address bar
     return:
       type: CRMScript.Global.Void
   example: 
@@ -808,14 +830,14 @@ items:
   nameWithType: NSExtAppEntity.SetShowInMenuBar(Bool)
   fullName: CRMScript.NetServer.NSExtAppEntity.SetShowInMenuBar(Bool)
   type: Method
-  summary: "\nDoes the application have a menu bar\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetShowInMenuBar(Bool showInMenuBar)
     parameters:
     - id: showInMenuBar
       type: CRMScript.Global.Bool
-      description: 
+      description: Does the application have a menu bar
     return:
       type: CRMScript.Global.Void
   example: 
@@ -830,14 +852,14 @@ items:
   nameWithType: NSExtAppEntity.SetShowInStatusBar(Bool)
   fullName: CRMScript.NetServer.NSExtAppEntity.SetShowInStatusBar(Bool)
   type: Method
-  summary: "\nDoes the webpanel have a status bar\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetShowInStatusBar(Bool showInStatusBar)
     parameters:
     - id: showInStatusBar
       type: CRMScript.Global.Bool
-      description: 
+      description: Does the web panel have a status bar
     return:
       type: CRMScript.Global.Void
   example: 
@@ -852,14 +874,14 @@ items:
   nameWithType: NSExtAppEntity.SetShowInToolBar(Bool)
   fullName: CRMScript.NetServer.NSExtAppEntity.SetShowInToolBar(Bool)
   type: Method
-  summary: "\nDoes the webpanel have a toolbar\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetShowInToolBar(Bool showInToolBar)
     parameters:
     - id: showInToolBar
       type: CRMScript.Global.Bool
-      description: 
+      description: Does the web panel have a toolbar
     return:
       type: CRMScript.Global.Void
   example: 
@@ -874,14 +896,14 @@ items:
   nameWithType: NSExtAppEntity.SetShowState(Integer)
   fullName: CRMScript.NetServer.NSExtAppEntity.SetShowState(Integer)
   type: Method
-  summary: "\nThe application is shown in which state Minimized, Maximized or Restored\n"
-  remarks: "\n<p>See enum showState.</p>\n"
+  summary: "\n\n"
+  remarks: "\n<p></p>\n"
   syntax: 
     content: Void SetShowState(Integer showState)
     parameters:
     - id: showState
       type: CRMScript.Global.Integer
-      description: 
+      description: The application is shown in which state Minimized, Maximized or Restored. See <xref href=\"CRMScript.NetServer.ShowState\" data-throw-if-not-resolved=\"false\"></xref>.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -896,14 +918,14 @@ items:
   nameWithType: NSExtAppEntity.SetTooltip(String)
   fullName: CRMScript.NetServer.NSExtAppEntity.SetTooltip(String)
   type: Method
-  summary: "\nThe tooltip of the web panel\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetTooltip(String tooltip)
     parameters:
     - id: tooltip
       type: CRMScript.Global.String
-      description: 
+      description: The tooltip of the web panel
     return:
       type: CRMScript.Global.Void
   example: 
@@ -918,14 +940,14 @@ items:
   nameWithType: NSExtAppEntity.SetVisibleIn(Integer)
   fullName: CRMScript.NetServer.NSExtAppEntity.SetVisibleIn(Integer)
   type: Method
-  summary: "\nThe application is visible in\n"
-  remarks: "\n<p>See enum visibleIn.</p>\n"
+  summary: "\n\n"
+  remarks: "\n<p></p>\n"
   syntax: 
     content: Void SetVisibleIn(Integer visibleIn)
     parameters:
     - id: visibleIn
       type: CRMScript.Global.Integer
-      description: 
+      description: The application is visible in. See <xref href=\"CRMScript.NetServer.Navigation\" data-throw-if-not-resolved=\"false\"></xref>
     return:
       type: CRMScript.Global.Void
   example: 
@@ -940,14 +962,14 @@ items:
   nameWithType: NSExtAppEntity.SetWaitToFinish(Bool)
   fullName: CRMScript.NetServer.NSExtAppEntity.SetWaitToFinish(Bool)
   type: Method
-  summary: "\nTrue if the application shall wait for fininsh event\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetWaitToFinish(Bool waitToFinish)
     parameters:
     - id: waitToFinish
       type: CRMScript.Global.Bool
-      description: 
+      description: True if the application shall wait for finish event
     return:
       type: CRMScript.Global.Void
   example: 
@@ -962,14 +984,14 @@ items:
   nameWithType: NSExtAppEntity.SetWorkdir(String)
   fullName: CRMScript.NetServer.NSExtAppEntity.SetWorkdir(String)
   type: Method
-  summary: "\nDirectory set to current when loading the application, if different from application's own\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetWorkdir(String workdir)
     parameters:
     - id: workdir
       type: CRMScript.Global.String
-      description: 
+      description: Directory set to current when loading the application, if different from application's own
     return:
       type: CRMScript.Global.Void
   example: 
@@ -1011,3 +1033,21 @@ references:
   name: Void
   nameWithType: Void
   fullName: CRMScript.Global.Void
+- uid: CRMScript.NetServer.ExecuteOnEvent
+  commentId: T:CRMScript.NetServer.ExecuteOnEvent
+  isExternal: true
+  name: ExecuteOnEvent
+  nameWithType: ExecuteOnEvent
+  fullName: CRMScript.NetServer.ExecuteOnEvent
+- uid: CRMScript.NetServer.showState
+  commentId: T:CRMScript.NetServer.showState
+  isExternal: true
+  name: showState
+  nameWithType: showState
+  fullName: CRMScript.NetServer.showState
+- uid: CRMScript.NetServer.Navigation
+  commentId: T:CRMScript.NetServer.Navigation
+  isExternal: true
+  name: Navigation
+  nameWithType: Navigation
+  fullName: CRMScript.NetServer.Navigation

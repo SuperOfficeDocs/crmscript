@@ -6,12 +6,12 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSImportLine.#ctor
   - CRMScript.NetServer.NSImportLine.GetExternalKey()
   - CRMScript.NetServer.NSImportLine.GetOperation()
   - CRMScript.NetServer.NSImportLine.GetSelected()
   - CRMScript.NetServer.NSImportLine.GetType()
   - CRMScript.NetServer.NSImportLine.GetValues()
-  - CRMScript.NetServer.NSImportLine.#ctor
   - CRMScript.NetServer.NSImportLine.SetExternalKey(String)
   - CRMScript.NetServer.NSImportLine.SetOperation(Integer)
   - CRMScript.NetServer.NSImportLine.SetSelected(Bool)
@@ -23,101 +23,6 @@ items:
   type: Class
   summary: 
   example: 
-- uid: CRMScript.NetServer.NSImportLine.GetExternalKey()
-  commentId: M:CRMScript.NetServer.NSImportLine.GetExternalKey()
-  id: 'GetExternalKey()'
-  so.intellisense: NSImportLine.GetExternalKey
-  langs:
-  - crmscript
-  name: 'GetExternalKey()'
-  nameWithType: NSImportLine.GetExternalKey()
-  fullName: CRMScript.NetServer.NSImportLine.GetExternalKey()
-  type: Method
-  summary: "\nOptional external primary key for the row\n"
-  remarks: 
-  syntax: 
-    content: String GetExternalKey()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-  example: 
-  - "\n<pre><code>NSImportLine thing;\nString externalKey = thing.GetExternalKey();</code></pre>\n"
-- uid: CRMScript.NetServer.NSImportLine.GetOperation()
-  commentId: M:CRMScript.NetServer.NSImportLine.GetOperation()
-  id: 'GetOperation()'
-  so.intellisense: NSImportLine.GetOperation
-  langs:
-  - crmscript
-  name: 'GetOperation()'
-  nameWithType: NSImportLine.GetOperation()
-  fullName: CRMScript.NetServer.NSImportLine.GetOperation()
-  type: Method
-  summary: "\nWhich operation will be used? This is a read-only property<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = PersonAdded</li><li>Enum: 2 = PersonUpdated</li><li>Enum: 4 = PersonNoChange</li><li>Enum: 8 = ContactAdded</li><li>Enum: 16 = ContactUpdated</li><li>Enum: 32 = ContactNoChange</li><li>Enum: 64 = ProductAdded</li><li>Enum: 128 = ProductUpdated</li><li>Enum: 256 = ProductNoChange</li><li>Enum: 512 = Obs</li><li>Enum: 1024 = ObsERPDuplicate</li></ul><pre><code>NSImportLine thing;\nInteger operation = thing.GetOperation();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: Integer GetOperation()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-  example: 
-  - "\n<pre><code>NSImportLine thing;\nInteger operation = thing.GetOperation();</code></pre>\n"
-- uid: CRMScript.NetServer.NSImportLine.GetSelected()
-  commentId: M:CRMScript.NetServer.NSImportLine.GetSelected()
-  id: 'GetSelected()'
-  so.intellisense: NSImportLine.GetSelected
-  langs:
-  - crmscript
-  name: 'GetSelected()'
-  nameWithType: NSImportLine.GetSelected()
-  fullName: CRMScript.NetServer.NSImportLine.GetSelected()
-  type: Method
-  summary: "\nTrue if the entity shall be imported, false if the entity shall be ignored\n"
-  remarks: 
-  syntax: 
-    content: Bool GetSelected()
-    parameters: []
-    return:
-      type: CRMScript.Global.Bool
-  example: 
-  - "\n<pre><code>NSImportLine thing;\nBool selected = thing.GetSelected();</code></pre>\n"
-- uid: CRMScript.NetServer.NSImportLine.GetType()
-  commentId: M:CRMScript.NetServer.NSImportLine.GetType()
-  id: 'GetType()'
-  so.intellisense: NSImportLine.GetType
-  langs:
-  - crmscript
-  name: 'GetType()'
-  nameWithType: NSImportLine.GetType()
-  fullName: CRMScript.NetServer.NSImportLine.GetType()
-  type: Method
-  summary: "\nWhich entity type will be created? This is a read-only property<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Person</li><li>Enum: 2 = Contact</li><li>Enum: 4 = Product</li></ul><pre><code>NSImportLine thing;\nInteger type = thing.GetType();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: Integer GetType()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-  example: 
-  - "\n<pre><code>NSImportLine thing;\nInteger type = thing.GetType();</code></pre>\n"
-- uid: CRMScript.NetServer.NSImportLine.GetValues()
-  commentId: M:CRMScript.NetServer.NSImportLine.GetValues()
-  id: 'GetValues()'
-  so.intellisense: NSImportLine.GetValues
-  langs:
-  - crmscript
-  name: 'GetValues()'
-  nameWithType: NSImportLine.GetValues()
-  fullName: CRMScript.NetServer.NSImportLine.GetValues()
-  type: Method
-  summary: "\nAn array of the values that will be imported on the entity<p></p>\n<strong>Returns:</strong>String[]<p></p>\n<pre><code>NSImportLine thing;\nString[] values = thing.GetValues();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: String[] GetValues()
-    parameters: []
-    return:
-      type: CRMScript.Global.String[]
-  example: 
-  - "\n<pre><code>NSImportLine thing;\nString[] values = thing.GetValues();</code></pre>\n"
 - uid: CRMScript.NetServer.NSImportLine.#ctor
   commentId: M:CRMScript.NetServer.NSImportLine.#ctor
   id: '#ctor'
@@ -133,6 +38,106 @@ items:
   syntax: 
     content: NSImportLine
   example: 
+- uid: CRMScript.NetServer.NSImportLine.GetExternalKey()
+  commentId: M:CRMScript.NetServer.NSImportLine.GetExternalKey()
+  id: 'GetExternalKey()'
+  so.intellisense: NSImportLine.GetExternalKey
+  langs:
+  - crmscript
+  name: 'GetExternalKey()'
+  nameWithType: NSImportLine.GetExternalKey()
+  fullName: CRMScript.NetServer.NSImportLine.GetExternalKey()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: String GetExternalKey()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Optional external primary key for the row
+  example: 
+  - "\n<pre><code>NSImportLine thing;\nString externalKey = thing.GetExternalKey();</code></pre>\n"
+- uid: CRMScript.NetServer.NSImportLine.GetOperation()
+  commentId: M:CRMScript.NetServer.NSImportLine.GetOperation()
+  id: 'GetOperation()'
+  so.intellisense: NSImportLine.GetOperation
+  langs:
+  - crmscript
+  name: 'GetOperation()'
+  nameWithType: NSImportLine.GetOperation()
+  fullName: CRMScript.NetServer.NSImportLine.GetOperation()
+  type: Method
+  summary: "\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = PersonAdded</li><li>Enum: 2 = PersonUpdated</li><li>Enum: 4 = PersonNoChange</li><li>Enum: 8 = ContactAdded</li><li>Enum: 16 = ContactUpdated</li><li>Enum: 32 = ContactNoChange</li><li>Enum: 64 = ProductAdded</li><li>Enum: 128 = ProductUpdated</li><li>Enum: 256 = ProductNoChange</li><li>Enum: 512 = Obs</li><li>Enum: 1024 = ObsERPDuplicate</li></ul>\n"
+  remarks: 
+  syntax: 
+    content: Integer GetOperation()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: Which operation will be used? This is a read-only property
+  example: 
+  - "\n<pre><code>NSImportLine thing;\nInteger operation = thing.GetOperation();</code></pre>\n"
+- uid: CRMScript.NetServer.NSImportLine.GetSelected()
+  commentId: M:CRMScript.NetServer.NSImportLine.GetSelected()
+  id: 'GetSelected()'
+  so.intellisense: NSImportLine.GetSelected
+  langs:
+  - crmscript
+  name: 'GetSelected()'
+  nameWithType: NSImportLine.GetSelected()
+  fullName: CRMScript.NetServer.NSImportLine.GetSelected()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: Bool GetSelected()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: True if the entity shall be imported, false if the entity shall be ignored
+  example: 
+  - "\n<pre><code>NSImportLine thing;\nBool selected = thing.GetSelected();</code></pre>\n"
+- uid: CRMScript.NetServer.NSImportLine.GetType()
+  commentId: M:CRMScript.NetServer.NSImportLine.GetType()
+  id: 'GetType()'
+  so.intellisense: NSImportLine.GetType
+  langs:
+  - crmscript
+  name: 'GetType()'
+  nameWithType: NSImportLine.GetType()
+  fullName: CRMScript.NetServer.NSImportLine.GetType()
+  type: Method
+  summary: "\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Person</li><li>Enum: 2 = Contact</li><li>Enum: 4 = Product</li></ul>\n"
+  remarks: 
+  syntax: 
+    content: Integer GetType()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: Which entity type will be created? This is a read-only property
+  example: 
+  - "\n<pre><code>NSImportLine thing;\nInteger type = thing.GetType();</code></pre>\n"
+- uid: CRMScript.NetServer.NSImportLine.GetValues()
+  commentId: M:CRMScript.NetServer.NSImportLine.GetValues()
+  id: 'GetValues()'
+  so.intellisense: NSImportLine.GetValues
+  langs:
+  - crmscript
+  name: 'GetValues()'
+  nameWithType: NSImportLine.GetValues()
+  fullName: CRMScript.NetServer.NSImportLine.GetValues()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String[] GetValues()
+    parameters: []
+    return:
+      type: CRMScript.Global.String[]
+      description: An array of the values that will be imported on the entity
+  example: 
+  - "\n<pre><code>NSImportLine thing;\nString[] values = thing.GetValues();</code></pre>\n"
 - uid: CRMScript.NetServer.NSImportLine.SetExternalKey(String)
   commentId: M:CRMScript.NetServer.NSImportLine.SetExternalKey(String)
   id: 'SetExternalKey(String)'
@@ -143,14 +148,14 @@ items:
   nameWithType: NSImportLine.SetExternalKey(String)
   fullName: CRMScript.NetServer.NSImportLine.SetExternalKey(String)
   type: Method
-  summary: "\nOptional external primary key for the row\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetExternalKey(String externalKey)
     parameters:
     - id: externalKey
       type: CRMScript.Global.String
-      description: 
+      description: Optional external primary key for the row
     return:
       type: CRMScript.Global.Void
   example: 
@@ -165,14 +170,14 @@ items:
   nameWithType: NSImportLine.SetOperation(Integer)
   fullName: CRMScript.NetServer.NSImportLine.SetOperation(Integer)
   type: Method
-  summary: "\nWhich operation will be used? This is a read-only property\n"
-  remarks: "\n<p>See enum operation.</p>\n"
+  summary: "\n\n"
+  remarks: "\n<p></p>\n"
   syntax: 
     content: Void SetOperation(Integer operation)
     parameters:
     - id: operation
       type: CRMScript.Global.Integer
-      description: 
+      description: Which operation will be used? This is a read-only property. See enum operation.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -187,14 +192,14 @@ items:
   nameWithType: NSImportLine.SetSelected(Bool)
   fullName: CRMScript.NetServer.NSImportLine.SetSelected(Bool)
   type: Method
-  summary: "\nTrue if the entity shall be imported, false if the entity shall be ignored\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetSelected(Bool selected)
     parameters:
     - id: selected
       type: CRMScript.Global.Bool
-      description: 
+      description: True if the entity shall be imported, false if the entity shall be ignored
     return:
       type: CRMScript.Global.Void
   example: 
@@ -209,14 +214,14 @@ items:
   nameWithType: NSImportLine.SetType(Integer)
   fullName: CRMScript.NetServer.NSImportLine.SetType(Integer)
   type: Method
-  summary: "\nWhich entity type will be created? This is a read-only property\n"
-  remarks: "\n<p>See enum type.</p>\n"
+  summary: "\n\n"
+  remarks: "\n<p></p>\n"
   syntax: 
     content: Void SetType(Integer type)
     parameters:
     - id: type
       type: CRMScript.Global.Integer
-      description: 
+      description: Which entity type will be created? This is a read-only property. See enum type.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -231,14 +236,14 @@ items:
   nameWithType: NSImportLine.SetValues(String[])
   fullName: CRMScript.NetServer.NSImportLine.SetValues(String[])
   type: Method
-  summary: "\nAn array of the values that will be imported on the entity\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetValues(String[] values)
     parameters:
     - id: values
       type: CRMScript.Global.String[]
-      description: 
+      description: An array of the values that will be imported on the entity
     return:
       type: CRMScript.Global.Void
   example: 

@@ -6,10 +6,11 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSListAgent.#ctor
   - CRMScript.NetServer.NSListAgent.AddFromListDefinition(Integer,NSListItemEntity)
   - CRMScript.NetServer.NSListAgent.AddFromListName(String,NSListItemEntity)
   - CRMScript.NetServer.NSListAgent.AddHierarchyToPath(Integer,String,String)
-  - CRMScript.NetServer.NSListAgent.ChangeCurrency(String,String)
+  - CRMScript.NetServer.NSListAgent.ChangeCurrency(Float,String,String)
   - CRMScript.NetServer.NSListAgent.CreateDefaultAmountClassEntity()
   - CRMScript.NetServer.NSListAgent.CreateDefaultCountry()
   - CRMScript.NetServer.NSListAgent.CreateDefaultCurrencyEntity()
@@ -220,44 +221,43 @@ items:
   - CRMScript.NetServer.NSListAgent.GlobalChangeTicketStatus(Integer,Integer)
   - CRMScript.NetServer.NSListAgent.MoveAllTickets(Integer,Integer)
   - CRMScript.NetServer.NSListAgent.MoveListItem(Integer,Integer,Integer)
-  - CRMScript.NetServer.NSListAgent.#ctor
   - CRMScript.NetServer.NSListAgent.RebuildFullnames()
   - CRMScript.NetServer.NSListAgent.SaveAllFromListDefinition(Integer,NSListItemEntity[])
   - CRMScript.NetServer.NSListAgent.SaveAllFromListName(String,NSListItemEntity[])
-  - CRMScript.NetServer.NSListAgent.SaveAmountClassEntity()
+  - CRMScript.NetServer.NSListAgent.SaveAmountClassEntity(NSAmountClassEntity)
   - CRMScript.NetServer.NSListAgent.SaveConsentPurpose(NSConsentPurpose)
   - CRMScript.NetServer.NSListAgent.SaveConsentSource(NSConsentSource)
   - CRMScript.NetServer.NSListAgent.SaveCountry(NSCountry)
   - CRMScript.NetServer.NSListAgent.SaveCurrencyEntity(NSCurrencyEntity)
-  - CRMScript.NetServer.NSListAgent.SaveDocumentTemplateEntity()
-  - CRMScript.NetServer.NSListAgent.SaveDocumentTemplateStream(Integer,String,Integer)
-  - CRMScript.NetServer.NSListAgent.SaveExtAppEntity()
+  - CRMScript.NetServer.NSListAgent.SaveDocumentTemplateEntity(NSDocumentTemplateEntity)
+  - CRMScript.NetServer.NSListAgent.SaveDocumentTemplateStream(Integer,NSStream,String,Integer)
+  - CRMScript.NetServer.NSListAgent.SaveExtAppEntity(NSExtAppEntity)
   - CRMScript.NetServer.NSListAgent.SaveFromListDefinition(Integer,Integer,NSListItemEntity)
   - CRMScript.NetServer.NSListAgent.SaveFromListName(Integer,String,NSListItemEntity)
-  - CRMScript.NetServer.NSListAgent.SaveHeadingEntity()
-  - CRMScript.NetServer.NSListAgent.SaveHeadingFromListDefinition(Integer)
-  - CRMScript.NetServer.NSListAgent.SaveHeadingFromName(String)
-  - CRMScript.NetServer.NSListAgent.SaveHeadingsForListItemFromListDefinition(Integer,Integer)
+  - CRMScript.NetServer.NSListAgent.SaveHeadingEntity(NSHeadingEntity)
+  - CRMScript.NetServer.NSListAgent.SaveHeadingFromListDefinition(Integer,NSHeadingEntity)
+  - CRMScript.NetServer.NSListAgent.SaveHeadingFromName(String,NSHeadingEntity)
+  - CRMScript.NetServer.NSListAgent.SaveHeadingsForListItemFromListDefinition(Integer,Integer,NSSelectableMDOListItem[])
   - CRMScript.NetServer.NSListAgent.SaveHeadingsForListItemFromListName(String,Integer)
   - CRMScript.NetServer.NSListAgent.SaveHeadingsFromListDefinition(Integer)
   - CRMScript.NetServer.NSListAgent.SaveHeadingsFromName(String)
-  - CRMScript.NetServer.NSListAgent.SaveHierarchyEntity()
-  - CRMScript.NetServer.NSListAgent.SaveLegalBase()
+  - CRMScript.NetServer.NSListAgent.SaveHierarchyEntity(NSHierarchyEntity)
+  - CRMScript.NetServer.NSListAgent.SaveLegalBase(NSLegalBase)
   - CRMScript.NetServer.NSListAgent.SaveListEntity(NSListEntity)
   - CRMScript.NetServer.NSListAgent.SaveListEntityByName(String,NSListEntity)
   - CRMScript.NetServer.NSListAgent.SaveListItemEntity(NSListItemEntity)
   - CRMScript.NetServer.NSListAgent.SaveProjectTypeEntity(NSProjectTypeEntity)
   - CRMScript.NetServer.NSListAgent.SaveQuickReplies(NSQuickReply[])
-  - CRMScript.NetServer.NSListAgent.SaveRelationDefinitionEntity()
+  - CRMScript.NetServer.NSListAgent.SaveRelationDefinitionEntity(NSRelationDefinitionEntity)
   - CRMScript.NetServer.NSListAgent.SaveResourceEntity(NSResourceEntity)
-  - CRMScript.NetServer.NSListAgent.SaveSaleStageEntity()
-  - CRMScript.NetServer.NSListAgent.SaveSaleTypeEntity()
-  - CRMScript.NetServer.NSListAgent.SaveTicketCategoryEntity()
+  - CRMScript.NetServer.NSListAgent.SaveSaleStageEntity(NSSaleStageEntity)
+  - CRMScript.NetServer.NSListAgent.SaveSaleTypeEntity(NSSaleTypeEntity)
+  - CRMScript.NetServer.NSListAgent.SaveTicketCategoryEntity(NSTicketCategoryEntity)
   - CRMScript.NetServer.NSListAgent.SaveTicketPriorityEntity(NSTicketPriorityEntity)
-  - CRMScript.NetServer.NSListAgent.SaveTicketStatusEntity()
-  - CRMScript.NetServer.NSListAgent.SaveWebPanelEntity()
-  - CRMScript.NetServer.NSListAgent.SetDocumentTemplateFromDocumentTemplate(Integer)
-  - CRMScript.NetServer.NSListAgent.SetDocumentTemplateStream(String,Integer)
+  - CRMScript.NetServer.NSListAgent.SaveTicketStatusEntity(NSTicketStatusEntity)
+  - CRMScript.NetServer.NSListAgent.SaveWebPanelEntity(NSWebPanelEntity)
+  - CRMScript.NetServer.NSListAgent.SetDocumentTemplateFromDocumentTemplate(Integer,NSDocumentTemplateEntity)
+  - CRMScript.NetServer.NSListAgent.SetDocumentTemplateStream(NSDocumentTemplateEntity,NSStream,String,Integer)
   - CRMScript.NetServer.NSListAgent.SetEmarketingStrictMode(Bool)
   - CRMScript.NetServer.NSListAgent.SetHeadingsForListItem(Integer,Integer,Bool)
   - CRMScript.NetServer.NSListAgent.SetListItemsForHeading(Integer,Integer,Integer[],Bool)
@@ -271,15 +271,31 @@ items:
   - CRMScript.NetServer.NSListAgent.SetRankOnSaleDocument(Integer,Integer[])
   - CRMScript.NetServer.NSListAgent.SetTicketCategoriesForUserGroup(Integer,Integer[])
   - CRMScript.NetServer.NSListAgent.SetVisibleForUserGroup(Integer,Integer,Integer[],Bool)
-  - CRMScript.NetServer.NSListAgent.SetVisibleForUserGroups(Integer,Integer)
+  - CRMScript.NetServer.NSListAgent.SetVisibleForUserGroups(Integer,Integer,NSSelectableMDOListItem[])
   - CRMScript.NetServer.NSListAgent.SetVisibleForUserGroupsFromListName(String,Integer)
   - CRMScript.NetServer.NSListAgent.SortListItems(Integer,String)
-  - CRMScript.NetServer.NSListAgent.UpdateHierarchyFromPath(Integer,String)
+  - CRMScript.NetServer.NSListAgent.UpdateHierarchyFromPath(Integer,String,NSHierarchyEntity)
   name: NSListAgent
   nameWithType: NSListAgent
   fullName: CRMScript.NetServer.NSListAgent
   type: Class
   summary: "\nCollection of all services that work with Lists. These are typical lists of data shown in dropdown-list, checkbox lists, etc.\n"
+  example: 
+  - "\n<pre><code>NSListAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSListAgent.#ctor
+  commentId: M:CRMScript.NetServer.NSListAgent.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSListAgent
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSListAgent.#ctor
+  fullName: CRMScript.NetServer.NSListAgent.#ctor
+  type: Constructor
+  summary: "\nCollection of all services that work with Lists. These are typical lists of data shown in dropdown-list, checkbox lists, etc.\n"
+  remarks: 
+  syntax: 
+    content: NSListAgent
   example: 
   - "\n<pre><code>NSListAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSListAgent.AddFromListDefinition(Integer,NSListItemEntity)
@@ -292,7 +308,7 @@ items:
   nameWithType: NSListAgent.AddFromListDefinition(Integer,NSListItemEntity)
   fullName: CRMScript.NetServer.NSListAgent.AddFromListDefinition(Integer,NSListItemEntity)
   type: Method
-  summary: "\nSave a new list item for the specified list defintion\n"
+  summary: "\nSaves a new list item for the specified list definition\n"
   remarks: 
   syntax: 
     content: NSListItemEntity AddFromListDefinition(Integer udListDefinitionId, NSListItemEntity item)
@@ -317,7 +333,7 @@ items:
   nameWithType: NSListAgent.AddFromListName(String,NSListItemEntity)
   fullName: CRMScript.NetServer.NSListAgent.AddFromListName(String,NSListItemEntity)
   type: Method
-  summary: "\nSave a new list item for the specified list defintion\n"
+  summary: "\nSaves a new list item for the specified list definition\n"
   remarks: 
   syntax: 
     content: NSListItemEntity AddFromListName(String udListDefinitionName, NSListItemEntity item)
@@ -342,8 +358,8 @@ items:
   nameWithType: NSListAgent.AddHierarchyToPath(Integer,String,String)
   fullName: CRMScript.NetServer.NSListAgent.AddHierarchyToPath(Integer,String,String)
   type: Method
-  summary: "\nAdd a hierarchy item to a path\n"
-  remarks: "\n<p>See enum name.</p>\n"
+  summary: "\nAdds a hierarchy item to a path\n"
+  remarks: ""
   syntax: 
     content: NSHierarchyEntity AddHierarchyToPath(Integer domain, String path, String name)
     parameters:
@@ -355,26 +371,29 @@ items:
       description: 
     - id: name
       type: CRMScript.Global.String
-      description: 
+      description: See enum name.
     return:
       type: CRMScript.NetServer.NSHierarchyEntity
   example: 
   - "\n<pre><code>NSListAgent agent;\nInteger domain;\nString path;\nString name;\nNSHierarchyEntity res = agent.AddHierarchyToPath(domain, path, name);</code></pre>\n"
-- uid: CRMScript.NetServer.NSListAgent.ChangeCurrency(String,String)
-  commentId: M:CRMScript.NetServer.NSListAgent.ChangeCurrency(String,String)
-  id: 'ChangeCurrency(String,String)'
+- uid: CRMScript.NetServer.NSListAgent.ChangeCurrency(Float,String,String)
+  commentId: M:CRMScript.NetServer.NSListAgent.ChangeCurrency(Float,String,String)
+  id: 'ChangeCurrency(Float,String,String)'
   so.intellisense: NSListAgent.ChangeCurrency
   langs:
   - crmscript
-  name: 'ChangeCurrency(String,String)'
-  nameWithType: NSListAgent.ChangeCurrency(String,String)
-  fullName: CRMScript.NetServer.NSListAgent.ChangeCurrency(String,String)
+  name: 'ChangeCurrency(Float,String,String)'
+  nameWithType: NSListAgent.ChangeCurrency(Float,String,String)
+  fullName: CRMScript.NetServer.NSListAgent.ChangeCurrency(Float,String,String)
   type: Method
   summary: "\nRecalculates the amount to the new currency.\n"
   remarks: 
   syntax: 
     content: Float ChangeCurrency(Float amount, String fromCurrency, String toCurrency)
     parameters:
+    - id: amount
+      type: CRMScript.Global.Float
+      description:
     - id: fromCurrency
       type: CRMScript.Global.String
       description: 
@@ -534,7 +553,7 @@ items:
   nameWithType: NSListAgent.CreateDefaultHeadingFromListDefinition(Integer)
   fullName: CRMScript.NetServer.NSListAgent.CreateDefaultHeadingFromListDefinition(Integer)
   type: Method
-  summary: "\nGets a heading for the specified list defintion\n"
+  summary: "\nGets a heading for the specified list definition\n"
   remarks: 
   syntax: 
     content: NSHeadingEntity CreateDefaultHeadingFromListDefinition(Integer udListDefinitionId)
@@ -828,7 +847,7 @@ items:
   nameWithType: NSListAgent.DeleteAllHeadingsFromListDefinition(Integer)
   fullName: CRMScript.NetServer.NSListAgent.DeleteAllHeadingsFromListDefinition(Integer)
   type: Method
-  summary: "\nDeletes all headings for list resolved by the provided id.\n"
+  summary: "\nDeletes all headings for list resolved by the provided ID.\n"
   remarks: 
   syntax: 
     content: Void DeleteAllHeadingsFromListDefinition(Integer id)
@@ -872,8 +891,8 @@ items:
   nameWithType: NSListAgent.DeleteAppWebPanels()
   fullName: CRMScript.NetServer.NSListAgent.DeleteAppWebPanels()
   type: Method
-  summary: "\nPermanentely delete all web panels owned by your app; works in Online only, for registered Apps that send a valid ApplicationToken; otherwise nothing happens<p></p>\n<pre><code>NSListAgent agent;\nagent.DeleteAppWebPanels();</code></pre>\n"
-  remarks: 
+  summary: "\nPermanently delete all web panels owned by your app.\n"
+  remarks: "\nWorks in Online only, for registered Apps that send a valid ApplicationToken; otherwise nothing happens\n"
   syntax: 
     content: Void DeleteAppWebPanels()
     parameters: []
@@ -916,7 +935,7 @@ items:
   nameWithType: NSListAgent.DeleteFromListDefinition(Integer,Integer)
   fullName: CRMScript.NetServer.NSListAgent.DeleteFromListDefinition(Integer,Integer)
   type: Method
-  summary: "\nDeletes a list item from the specified list defintion\n"
+  summary: "\nDeletes a list item from the specified list definition\n"
   remarks: 
   syntax: 
     content: Void DeleteFromListDefinition(Integer id, Integer udListDefinitionId)
@@ -941,7 +960,7 @@ items:
   nameWithType: NSListAgent.DeleteFromListName(Integer,String)
   fullName: CRMScript.NetServer.NSListAgent.DeleteFromListName(Integer,String)
   type: Method
-  summary: "\nDeletes a list item from the specified list defintion\n"
+  summary: "\nDeletes a list item from the specified list definition\n"
   remarks: 
   syntax: 
     content: Void DeleteFromListName(Integer id, String udListDefinitionName)
@@ -988,8 +1007,8 @@ items:
   nameWithType: NSListAgent.DeleteHierarchyFromPath(Integer,String)
   fullName: CRMScript.NetServer.NSListAgent.DeleteHierarchyFromPath(Integer,String)
   type: Method
-  summary: "\nRemove a hierarchy item and its children from a path\n"
-  remarks: "\n<p>See enum path.</p>\n"
+  summary: "\nRemoves a hierarchy item and its children from a path\n"
+  remarks: ""
   syntax: 
     content: Void DeleteHierarchyFromPath(Integer domain, String path)
     parameters:
@@ -998,7 +1017,7 @@ items:
       description: 
     - id: path
       type: CRMScript.Global.String
-      description: 
+      description: See enum path.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -1079,14 +1098,14 @@ items:
   nameWithType: NSListAgent.DeleteResourceEntity(Integer)
   fullName: CRMScript.NetServer.NSListAgent.DeleteResourceEntity(Integer)
   type: Method
-  summary: "\nDeletes the NSResourceEntity<p></p>\n<ul><li><strong>ResourceEntityId</strong>The identity of the ResourceEntity to delete.</li></ul><pre><code>NSListAgent agent;\nagent.DeleteResourceEntity(123);</code></pre>\n"
+  summary: "\nDeletes the NSResourceEntity\n"
   remarks: 
   syntax: 
     content: DeleteResourceEntity(Integer resourceEntity)
     parameters:
     - id: resourceEntity
       type: CRMScript.Global.Integer
-      description: 
+      description: The identity of the ResourceEntity to delete.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -1189,8 +1208,8 @@ items:
   nameWithType: NSListAgent.GenerateNavigationUrl(Integer,String)
   fullName: CRMScript.NetServer.NSListAgent.GenerateNavigationUrl(Integer,String)
   type: Method
-  summary: "\nThis methods generates the navigation URL to be used to navigate to the panel\n"
-  remarks: "\nSee <xref href=\"CRMScript.NetServer.Navigation\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  summary: "\nGenerates the navigation URL to be used to navigate to the panel\n"
+  remarks: ""
   syntax: 
     content: String GenerateNavigationUrl(Integer visibleIn, String windowName)
     parameters:
@@ -1202,6 +1221,7 @@ items:
       description: 
     return:
       type: CRMScript.Global.String
+      description: See <xref href=\"CRMScript.NetServer.Navigation\" data-throw-if-not-resolved=\"false\"></xref>
   example: 
   - "\n<pre><code>NSListAgent agent;\nInteger visibleIn;\nString windowName;\nString res = agent.GenerateNavigationUrl(visibleIn, windowName);</code></pre>\n"
 - uid: CRMScript.NetServer.NSListAgent.GetAllCountries(Bool)
@@ -1280,13 +1300,14 @@ items:
   nameWithType: NSListAgent.GetAllDomains()
   fullName: CRMScript.NetServer.NSListAgent.GetAllDomains()
   type: Method
-  summary: "\nGets list of all domains<p></p>\n<strong>Returns:</strong>Domain types (scripts, extra tables, etc)<p></p>\n<pre><code>NSListAgent agent;\nInteger[] res = agent.GetAllDomains();</code></pre>\n"
+  summary: "\nGets list of all domains\n"
   remarks: 
   syntax: 
     content: Integer[] GetAllDomains()
     parameters: []
     return:
       type: CRMScript.Global.Integer[]
+      description: Domain types (scripts, extra tables, etc)
   example: 
   - "\n<pre><code>NSListAgent agent;\nInteger[] res = agent.GetAllDomains();</code></pre>\n"
 - uid: CRMScript.NetServer.NSListAgent.GetAllFromListDefinition(Integer,Bool)
@@ -1299,7 +1320,7 @@ items:
   nameWithType: NSListAgent.GetAllFromListDefinition(Integer,Bool)
   fullName: CRMScript.NetServer.NSListAgent.GetAllFromListDefinition(Integer,Bool)
   type: Method
-  summary: "\nGets all list items for the specified list defintion\n"
+  summary: "\nGets all list items for the specified list definition\n"
   remarks: 
   syntax: 
     content: NSListItemEntity[] GetAllFromListDefinition(Integer udListDefinitionId, Bool includeDeleted)
@@ -1324,7 +1345,7 @@ items:
   nameWithType: NSListAgent.GetAllFromListName(String,Bool)
   fullName: CRMScript.NetServer.NSListAgent.GetAllFromListName(String,Bool)
   type: Method
-  summary: "\nGets all list items for the specified list defintion\n"
+  summary: "\nGets all list items for the specified list definition\n"
   remarks: 
   syntax: 
     content: NSListItemEntity[] GetAllFromListName(String udListDefinitionName, Bool includeDeleted)
@@ -1350,7 +1371,7 @@ items:
   fullName: CRMScript.NetServer.NSListAgent.GetAllInDomain(Integer,Bool)
   type: Method
   summary: "\nGets all items in a domain\n"
-  remarks: "\n<p>See enum children.</p>\n"
+  remarks: ""
   syntax: 
     content: NSHierarchyEntity[] GetAllInDomain(Integer domain, Bool children)
     parameters:
@@ -1359,7 +1380,7 @@ items:
       description: 
     - id: children
       type: CRMScript.Global.Bool
-      description: 
+      description: See enum children.
     return:
       type: CRMScript.NetServer.NSHierarchyEntity[]
   example: 
@@ -1396,7 +1417,7 @@ items:
   nameWithType: NSListAgent.GetAllSaleType()
   fullName: CRMScript.NetServer.NSListAgent.GetAllSaleType()
   type: Method
-  summary: "\nReturns all sale types as simple list items<p></p>\n<strong>Returns:</strong>NSSaleType[]<p></p>\n<pre><code>NSListAgent agent;\nNSSaleType[] res = agent.GetAllSaleType();</code></pre>\n"
+  summary: "\nReturns all sale types as simple list items\n"
   remarks: 
   syntax: 
     content: NSSaleType[] GetAllSaleType()
@@ -1503,7 +1524,7 @@ items:
   nameWithType: NSListAgent.GetAppWebPanels()
   fullName: CRMScript.NetServer.NSListAgent.GetAppWebPanels()
   type: Method
-  summary: "\nGets all web panels owned by your app; works in Online only, for registered Apps that send a valid ApplicationToken<p></p>\n<strong>Returns:</strong>NSWebPanelEntity[]<p></p>\n<pre><code>NSListAgent agent;\nNSWebPanelEntity[] res = agent.GetAppWebPanels();</code></pre>\n"
+  summary: "\nGets all web panels owned by your app; works in Online only, for registered Apps that send a valid ApplicationToken\n"
   remarks: 
   syntax: 
     content: NSWebPanelEntity[] GetAppWebPanels()
@@ -1563,7 +1584,7 @@ items:
   nameWithType: NSListAgent.GetBusinesses()
   fullName: CRMScript.NetServer.NSListAgent.GetBusinesses()
   type: Method
-  summary: "\nReturns all available businesses that a contact could have.<p></p>\n<strong>Returns:</strong>NSBusiness[]<p></p>\n<pre><code>NSListAgent agent;\nNSBusiness[] res = agent.GetBusinesses();</code></pre>\n"
+  summary: "\nReturns all available businesses that a contact could have.\n"
   remarks: 
   syntax: 
     content: NSBusiness[] GetBusinesses()
@@ -1604,7 +1625,7 @@ items:
   nameWithType: NSListAgent.GetCategories()
   fullName: CRMScript.NetServer.NSListAgent.GetCategories()
   type: Method
-  summary: "\nReturns all categories a contact could belong to<p></p>\n<strong>Returns:</strong>NSCategory[]<p></p>\n<pre><code>NSListAgent agent;\nNSCategory[] res = agent.GetCategories();</code></pre>\n"
+  summary: "\nReturns all categories a contact could belong to\n"
   remarks: 
   syntax: 
     content: NSCategory[] GetCategories()
@@ -1648,7 +1669,7 @@ items:
   summary: "\nGets an array of NSCategory objects.\n"
   remarks: 
   syntax: 
-    content: NSCategory[] GetCategoryList(Integer[]  categoryIds)
+    content: NSCategory[] GetCategoryList(Integer[] categoryIds)
     parameters:
     - id: categoryIds
       type: CRMScript.Global.Integer[]
@@ -1711,7 +1732,7 @@ items:
   nameWithType: NSListAgent.GetCompetitors()
   fullName: CRMScript.NetServer.NSListAgent.GetCompetitors()
   type: Method
-  summary: "\nReturns all competitors<p></p>\n<strong>Returns:</strong>NSCompetitor[]<p></p>\n<pre><code>NSListAgent agent;\nNSCompetitor[] res = agent.GetCompetitors();</code></pre>\n"
+  summary: "\nReturns all competitors\n"
   remarks: 
   syntax: 
     content: NSCompetitor[] GetCompetitors()
@@ -1774,7 +1795,7 @@ items:
   nameWithType: NSListAgent.GetConsentPurposes()
   fullName: CRMScript.NetServer.NSListAgent.GetConsentPurposes()
   type: Method
-  summary: "\nReturns all defined purposes.<p></p>\n<strong>Returns:</strong>NSConsentPurpose[]<p></p>\n<pre><code>NSListAgent agent;\nNSConsentPurpose[] res = agent.GetConsentPurposes();</code></pre>\n"
+  summary: "\nReturns all defined purposes.\n"
   remarks: 
   syntax: 
     content: NSConsentPurpose[] GetConsentPurposes()
@@ -1837,7 +1858,7 @@ items:
   nameWithType: NSListAgent.GetConsentSources()
   fullName: CRMScript.NetServer.NSListAgent.GetConsentSources()
   type: Method
-  summary: "\nReturns all defined Sources.<p></p>\n<strong>Returns:</strong>NSConsentSource[]<p></p>\n<pre><code>NSListAgent agent;\nNSConsentSource[] res = agent.GetConsentSources();</code></pre>\n"
+  summary: "\nReturns all defined Sources.\n"
   remarks: 
   syntax: 
     content: NSConsentSource[] GetConsentSources()
@@ -1856,7 +1877,7 @@ items:
   nameWithType: NSListAgent.GetCountries()
   fullName: CRMScript.NetServer.NSListAgent.GetCountries()
   type: Method
-  summary: "\nReturns all available countries a contact or person could belong to.<p></p>\n<strong>Returns:</strong>NSCountry[]<p></p>\n<pre><code>NSListAgent agent;\nNSCountry[] res = agent.GetCountries();</code></pre>\n"
+  summary: "\nReturns all available countries a contact or person could belong to.\n"
   remarks: 
   syntax: 
     content: NSCountry[] GetCountries()
@@ -1944,7 +1965,7 @@ items:
   summary: "\nGets an array of NSCredited objects.\n"
   remarks: 
   syntax: 
-    content: NSCredited[] GetCreditedList(Integer[]  creditedIds)
+    content: NSCredited[] GetCreditedList(Integer[] creditedIds)
     parameters:
     - id: creditedIds
       type: CRMScript.Global.Integer[]
@@ -1981,7 +2002,7 @@ items:
   nameWithType: NSListAgent.GetCurrencies()
   fullName: CRMScript.NetServer.NSListAgent.GetCurrencies()
   type: Method
-  summary: "\nReturns all currencies<p></p>\n<strong>Returns:</strong>NSCurrency[]<p></p>\n<pre><code>NSListAgent agent;\nNSCurrency[] res = agent.GetCurrencies();</code></pre>\n"
+  summary: "\nReturns all currencies\n"
   remarks: 
   syntax: 
     content: NSCurrency[] GetCurrencies()
@@ -2110,7 +2131,7 @@ items:
   nameWithType: NSListAgent.GetCustomerLanguages()
   fullName: CRMScript.NetServer.NSListAgent.GetCustomerLanguages()
   type: Method
-  summary: "\n<strong>Returns:</strong>NSCustomerLanguage[]<p></p>\n<pre><code>NSListAgent agent;\nNSCustomerLanguage[] res = agent.GetCustomerLanguages();</code></pre>\n"
+  summary: ""
   remarks: 
   syntax: 
     content: NSCustomerLanguage[] GetCustomerLanguages()
@@ -2151,7 +2172,7 @@ items:
   nameWithType: NSListAgent.GetDeliveryTerms()
   fullName: CRMScript.NetServer.NSListAgent.GetDeliveryTerms()
   type: Method
-  summary: "\nReturns all DeliveryTerms in SuperOffice db.<p></p>\n<strong>Returns:</strong>NSDeliveryTerm[]<p></p>\n<pre><code>NSListAgent agent;\nNSDeliveryTerm[] res = agent.GetDeliveryTerms();</code></pre>\n"
+  summary: "\nReturns all DeliveryTerms in SuperOffice database.\n"
   remarks: 
   syntax: 
     content: NSDeliveryTerm[] GetDeliveryTerms()
@@ -2192,7 +2213,7 @@ items:
   nameWithType: NSListAgent.GetDeliveryTypes()
   fullName: CRMScript.NetServer.NSListAgent.GetDeliveryTypes()
   type: Method
-  summary: "\nReturns all DeliveryTypes in SuperOffice db.<p></p>\n<strong>Returns:</strong>NSDeliveryType[]<p></p>\n<pre><code>NSListAgent agent;\nNSDeliveryType[] res = agent.GetDeliveryTypes();</code></pre>\n"
+  summary: "\nReturns all DeliveryTypes in SuperOffice database.\n"
   remarks: 
   syntax: 
     content: NSDeliveryType[] GetDeliveryTypes()
@@ -2255,7 +2276,7 @@ items:
   nameWithType: NSListAgent.GetDepartments()
   fullName: CRMScript.NetServer.NSListAgent.GetDepartments()
   type: Method
-  summary: "\nGetting all departments/user groups for the internal phone list with the user's colleagues.<p></p>\n<strong>Returns:</strong>NSDepartment[]<p></p>\n<pre><code>NSListAgent agent;\nNSDepartment[] res = agent.GetDepartments();</code></pre>\n"
+  summary: "\nGets all departments/user groups for the internal phone list with the user's colleagues.\n"
   remarks: 
   syntax: 
     content: NSDepartment[] GetDepartments()
@@ -2384,10 +2405,10 @@ items:
   nameWithType: NSListAgent.GetDocumentTemplateProperties(Integer,String[])
   fullName: CRMScript.NetServer.NSListAgent.GetDocumentTemplateProperties(Integer,String[])
   type: Method
-  summary: "\nCRMScript method in the NSListAgent class that retrieves a list of key-value pairs of document template propertiesGets document template properties.<p></p>\nReturns key-value pairs with the requested properties.<p></p>\n<code>Map GetDocumentTemplateProperties(Integer documentTemplateId, String[] requestedProperties)</code>\n"
+  summary: "\nRetrieves a list of key-value pairs of document template propertiesGets document template properties..<p></p>\n<code>Map GetDocumentTemplateProperties(Integer documentTemplateId, String[] requestedProperties)</code>\n"
   remarks: 
   syntax: 
-    content: GetDocumentTemplateProperties()
+    content: Map GetDocumentTemplateProperties(Integer documentTemplateId, string[] requestedProperties)
     parameters:
     - id: documentTemplateId
       type: CRMScript.Global.Integer
@@ -2395,6 +2416,9 @@ items:
     - id: requestedProperties
       type: CRMScript.Global.String[]
       description: An array of properties to get the values for
+    return:
+      type: CRMScript.Global.Map
+      description: key-value pairs with the requested properties
   example: 
   - "\n<pre><code>NSListAgent agent;\nInteger documentTemplateId;\nString[] requestedProperties;\nMap res = agent.GetDocumentTemplateProperties(documentTemplateId, requestedProperties);</code></pre>\n"
 - uid: CRMScript.NetServer.NSListAgent.GetDocumentTemplates()
@@ -2407,7 +2431,7 @@ items:
   nameWithType: NSListAgent.GetDocumentTemplates()
   fullName: CRMScript.NetServer.NSListAgent.GetDocumentTemplates()
   type: Method
-  summary: "\nReturns all available document templates<p></p>\n<strong>Returns:</strong>NSDocumentTemplate[]<p></p>\n<pre><code>NSListAgent agent;\nNSDocumentTemplate[] res = agent.GetDocumentTemplates();</code></pre>\n"
+  summary: "\nReturns all available document templates\n"
   remarks: 
   syntax: 
     content: NSDocumentTemplate[] GetDocumentTemplates()
@@ -2426,7 +2450,7 @@ items:
   nameWithType: NSListAgent.GetDocumentTemplatesTasks()
   fullName: CRMScript.NetServer.NSListAgent.GetDocumentTemplatesTasks()
   type: Method
-  summary: "\nThe appointment's task is a Document template item when the appointment is a document.<p></p>\n<strong>Returns:</strong>NSTask[]<p></p>\n<pre><code>NSListAgent agent;\nNSTask[] res = agent.GetDocumentTemplatesTasks();</code></pre>\n"
+  summary: "\nThe appointment's task is a Document template item when the appointment is a document.\n"
   remarks: 
   syntax: 
     content: NSTask[] GetDocumentTemplatesTasks()
@@ -2445,7 +2469,7 @@ items:
   nameWithType: NSListAgent.GetDocumentTemplateStreamFromId(Integer,String)
   fullName: CRMScript.NetServer.NSListAgent.GetDocumentTemplateStreamFromId(Integer,String)
   type: Method
-  summary: "\nRetrieve a stream to a document template based on its ID\n"
+  summary: "\nRetrieves a stream to a document template based on its ID\n"
   remarks: 
   syntax: 
     content: NSStream GetDocumentTemplateStreamFromId(Integer documentTemplateId, String languageCode)
@@ -2470,8 +2494,8 @@ items:
   nameWithType: NSListAgent.GetDocumentTemplateTask(Integer)
   fullName: CRMScript.NetServer.NSListAgent.GetDocumentTemplateTask(Integer)
   type: Method
-  summary: "\nReturns a Document Template list item as a TaskListItem. The appointment's task is a Document template item when the appointment is a document.\n"
-  remarks: 
+  summary: "\nReturns a Document Template list item as a TaskListItem.\n"
+  remarks: "\nThe appointment's task is a Document template item when the appointment is a document.\n"
   syntax: 
     content: NSTask GetDocumentTemplateTask(Integer documentTemplateId)
     parameters:
@@ -2627,7 +2651,7 @@ items:
   nameWithType: NSListAgent.GetFromListDefinition(Integer,Integer)
   fullName: CRMScript.NetServer.NSListAgent.GetFromListDefinition(Integer,Integer)
   type: Method
-  summary: "\nGets a list item for the specified list defintion\n"
+  summary: "\nGets a list item for the specified list definition\n"
   remarks: 
   syntax: 
     content: NSListItemEntity GetFromListDefinition(Integer id, Integer udListDefinitionId)
@@ -2652,7 +2676,7 @@ items:
   nameWithType: NSListAgent.GetFromListName(Integer,String)
   fullName: CRMScript.NetServer.NSListAgent.GetFromListName(Integer,String)
   type: Method
-  summary: "\nGets a list item for the specified list defintion\n"
+  summary: "\nGets a list item for the specified list definition\n"
   remarks: 
   syntax: 
     content: NSListItemEntity GetFromListName(Integer id, String udListDefinitionName)
@@ -2755,7 +2779,7 @@ items:
   nameWithType: NSListAgent.GetHeadingsFromListDefinition(Integer)
   fullName: CRMScript.NetServer.NSListAgent.GetHeadingsFromListDefinition(Integer)
   type: Method
-  summary: "\nGets headings for list resolved by the provided id.\n"
+  summary: "\nGets headings for list resolved by the provided ID.\n"
   remarks: 
   syntax: 
     content: NSHeadingEntity[] GetHeadingsFromListDefinition(Integer id)
@@ -2822,7 +2846,7 @@ items:
   fullName: CRMScript.NetServer.NSListAgent.GetHierarchyFromPath(Integer,String,Bool)
   type: Method
   summary: "\nGets a hierarchy item from a path\n"
-  remarks: "\n<p>See enum children.</p>\n"
+  remarks: "\n<p>.</p>\n"
   syntax: 
     content: NSHierarchyEntity GetHierarchyFromPath(Integer domain, String path, Bool children)
     parameters:
@@ -2834,7 +2858,7 @@ items:
       description: 
     - id: children
       type: CRMScript.Global.Bool
-      description: 
+      description: See enum children
     return:
       type: CRMScript.NetServer.NSHierarchyEntity
   example: 
@@ -2849,7 +2873,7 @@ items:
   nameWithType: NSListAgent.GetInstalledLanguages()
   fullName: CRMScript.NetServer.NSListAgent.GetInstalledLanguages()
   type: Method
-  summary: "\nReturns the list of all languages installed in this database.<p></p>\n<strong>Returns:</strong>NSLanguageInfo[]<p></p>\n<pre><code>NSListAgent agent;\nNSLanguageInfo[] res = agent.GetInstalledLanguages();</code></pre>\n"
+  summary: "\nReturns the list of all languages installed in this database.\n"
   remarks: 
   syntax: 
     content: NSLanguageInfo[] GetInstalledLanguages()
@@ -2956,7 +2980,7 @@ items:
   nameWithType: NSListAgent.GetLegalBases()
   fullName: CRMScript.NetServer.NSListAgent.GetLegalBases()
   type: Method
-  summary: "\nReturns all defined bases.<p></p>\n<strong>Returns:</strong>NSLegalBase[]<p></p>\n<pre><code>NSListAgent agent;\nNSLegalBase[] res = agent.GetLegalBases();</code></pre>\n"
+  summary: "\nReturns all defined bases.\n"
   remarks: 
   syntax: 
     content: NSLegalBase[] GetLegalBases()
@@ -3019,7 +3043,7 @@ items:
   nameWithType: NSListAgent.GetListDefinitions(Bool)
   fullName: CRMScript.NetServer.NSListAgent.GetListDefinitions(Bool)
   type: Method
-  summary: "\nGets a list of the lists* built-in and user-defined.\n"
+  summary: "\nGets a list of the lists, built-in and user-defined.\n"
   remarks: 
   syntax: 
     content: NSListEntity[] GetListDefinitions(Bool includeDeleted)
@@ -3085,7 +3109,7 @@ items:
   nameWithType: NSListAgent.GetListItemsForHeading(Integer,Integer)
   fullName: CRMScript.NetServer.NSListAgent.GetListItemsForHeading(Integer,Integer)
   type: Method
-  summary: "\nList of list items that is selected if under this heading\n"
+  summary: ""
   remarks: 
   syntax: 
     content: NSSelectableMDOListItem[] GetListItemsForHeading(Integer udListDefinitionId, Integer headingId)
@@ -3098,6 +3122,7 @@ items:
       description: 
     return:
       type: CRMScript.NetServer.NSSelectableMDOListItem[]
+      description: List of list items that is selected if under this heading
   example: 
   - "\n<pre><code>NSListAgent agent;\nInteger udListDefinitionId;\nInteger headingId;\nNSSelectableMDOListItem[] res = agent.GetListItemsForHeading(udListDefinitionId, headingId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSListAgent.GetListItemsForHeadingFromListName(String,Integer)
@@ -3110,7 +3135,7 @@ items:
   nameWithType: NSListAgent.GetListItemsForHeadingFromListName(String,Integer)
   fullName: CRMScript.NetServer.NSListAgent.GetListItemsForHeadingFromListName(String,Integer)
   type: Method
-  summary: "\nList of list items that is selected if under this heading\n"
+  summary: ""
   remarks: 
   syntax: 
     content: NSSelectableMDOListItem[] GetListItemsForHeadingFromListName(String udListDefinitionName, Integer headingId)
@@ -3123,6 +3148,7 @@ items:
       description: 
     return:
       type: CRMScript.NetServer.NSSelectableMDOListItem[]
+      description: List of list items that is selected if under this heading
   example: 
   - "\n<pre><code>NSListAgent agent;\nString udListDefinitionName;\nInteger headingId;\nNSSelectableMDOListItem[] res = agent.GetListItemsForHeadingFromListName(udListDefinitionName, headingId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSListAgent.GetListItemsForUserGroup(Integer,Integer)
@@ -3135,7 +3161,7 @@ items:
   nameWithType: NSListAgent.GetListItemsForUserGroup(Integer,Integer)
   fullName: CRMScript.NetServer.NSListAgent.GetListItemsForUserGroup(Integer,Integer)
   type: Method
-  summary: "\nList of list items that is visible in the usergroup\n"
+  summary: ""
   remarks: 
   syntax: 
     content: NSSelectableMDOListItem[] GetListItemsForUserGroup(Integer udListDefinitionId, Integer groupId)
@@ -3148,6 +3174,7 @@ items:
       description: 
     return:
       type: CRMScript.NetServer.NSSelectableMDOListItem[]
+      description: List of list items that is visible in the usergroup
   example: 
   - "\n<pre><code>NSListAgent agent;\nInteger udListDefinitionId;\nInteger groupId;\nNSSelectableMDOListItem[] res = agent.GetListItemsForUserGroup(udListDefinitionId, groupId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSListAgent.GetListItemsForUserGroupFromListName(String,Integer)
@@ -3160,7 +3187,7 @@ items:
   nameWithType: NSListAgent.GetListItemsForUserGroupFromListName(String,Integer)
   fullName: CRMScript.NetServer.NSListAgent.GetListItemsForUserGroupFromListName(String,Integer)
   type: Method
-  summary: "\nList of list items that is visible in the usergroup\n"
+  summary: ""
   remarks: 
   syntax: 
     content: NSSelectableMDOListItem[] GetListItemsForUserGroupFromListName(String udListDefinitionName, Integer groupId)
@@ -3173,6 +3200,7 @@ items:
       description: 
     return:
       type: CRMScript.NetServer.NSSelectableMDOListItem[]
+      description: List of list items that is visible in the usergroup
   example: 
   - "\n<pre><code>NSListAgent agent;\nString udListDefinitionName;\nInteger groupId;\nNSSelectableMDOListItem[] res = agent.GetListItemsForUserGroupFromListName(udListDefinitionName, groupId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSListAgent.GetLocalizedText(Integer)
@@ -3208,7 +3236,7 @@ items:
   fullName: CRMScript.NetServer.NSListAgent.GetLocalizedTextByType(Integer,Integer,Integer)
   type: Method
   summary: "\nReturns a localized text based on the resource ID for the selected language.\n"
-  remarks: "\n<p>See enum languageId.</p>\n"
+  remarks: ""
   syntax: 
     content: NSLocalizedText GetLocalizedTextByType(Integer textType, Integer resourceId, Integer languageId)
     parameters:
@@ -3220,7 +3248,7 @@ items:
       description: 
     - id: languageId
       type: CRMScript.Global.Integer
-      description: 
+      description: See enum languageId.
     return:
       type: CRMScript.NetServer.NSLocalizedText
   example: 
@@ -3257,7 +3285,7 @@ items:
   nameWithType: NSListAgent.GetLocalizedTexts()
   fullName: CRMScript.NetServer.NSListAgent.GetLocalizedTexts()
   type: Method
-  summary: "\nGets all localized texts in the CRM database.<p></p>\n<strong>Returns:</strong>NSLocalizedText[]<p></p>\n<pre><code>NSListAgent agent;\nNSLocalizedText[] res = agent.GetLocalizedTexts();</code></pre>\n"
+  summary: "\nGets all localized texts in the CRM database.\n"
   remarks: 
   syntax: 
     content: NSLocalizedText[] GetLocalizedTexts()
@@ -3298,14 +3326,16 @@ items:
   nameWithType: NSListAgent.GetLocalizedTextsByType(Integer[])
   fullName: CRMScript.NetServer.NSListAgent.GetLocalizedTextsByType(Integer[])
   type: Method
-  summary: "\nCRMScript method in the NSListAgent class that gets localized text by their typeGets localized text by their type.<p></p>\nReturns an array of NSLocalizedText objects.<p></p>\n<code>NSLocalizedText[] GetLocalizedTextsByType(Integer[] textTypes)</code>\n"
+  summary: "\nGets localized text by their typeGets localized text by their type.\n"
   remarks: "\n<h3>Types</h3><table><thead><tr><th>Enum</th><th>Type</th></tr></thead><tbody><tr><td>0</td><td>Unknown</td></tr><tr><td>1</td><td>Label</td></tr><tr><td>2</td><td>Table</td></tr><tr><td>3</td><td>Column</td></tr><tr><td>4</td><td>ImportField</td></tr><tr><td>5</td><td>ImportObject</td></tr><tr><td>6</td><td>ImportGUICategory</td></tr><tr><td>7</td><td>StartupHints</td></tr><tr><td>11</td><td>FunctionRightLabel</td></tr><tr><td>12</td><td>FunctionRightDesc</td></tr><tr><td>16</td><td>StatusMonitorName</td></tr><tr><td>19</td><td>UdefContactLabel</td></tr><tr><td>20</td><td>UdefPersonLabel</td></tr><tr><td>21</td><td>UdefProjectLabel</td></tr><tr><td>22</td><td>UdefSaleLabel</td></tr><tr><td>23</td><td>UdefAppointmentLabel</td></tr><tr><td>24</td><td>UdefDocumentLabel</td></tr><tr><td>41</td><td>PushNotificationText</td></tr></tbody></table>\n"
   syntax: 
-    content: GetLocalizedTextsByType()
+    content: NSLocalizedText[] GetLocalizedTextsByType(Integer[] textTypes)
     parameters:
     - id: textTypes
       type: CRMScript.Global.Integer[]
       description: Array of localized text types. If null, all texts are returned.
+    return:
+      type: CRMScript.NetServer.NSLocalizedText[]
   example: 
   - "\n<pre><code>NSListAgent agent;\nLocalizedTextType[] textTypes;\nNSLocalizedText[] res = agent.GetLocalizedTextsByType(textTypes);</code></pre>\n"
 - uid: CRMScript.NetServer.NSListAgent.GetMrMrs(Integer)
@@ -3340,7 +3370,7 @@ items:
   nameWithType: NSListAgent.GetMrMrses()
   fullName: CRMScript.NetServer.NSListAgent.GetMrMrses()
   type: Method
-  summary: "\nReturns all Items from the NSMrMrs table sorted by their value.<p></p>\n<strong>Returns:</strong>NSMrMrs[]<p></p>\n<pre><code>NSListAgent agent;\nNSMrMrs[] res = agent.GetMrMrses();</code></pre>\n"
+  summary: "\nReturns all Items from the NSMrMrs table sorted by their value.\n"
   remarks: 
   syntax: 
     content: NSMrMrs[] GetMrMrses()
@@ -3441,7 +3471,7 @@ items:
   nameWithType: NSListAgent.GetPaymentTerms()
   fullName: CRMScript.NetServer.NSListAgent.GetPaymentTerms()
   type: Method
-  summary: "\nReturns all PaymentTerms in SuperOffice db.<p></p>\n<strong>Returns:</strong>NSPaymentTerm[]<p></p>\n<pre><code>NSListAgent agent;\nNSPaymentTerm[] res = agent.GetPaymentTerms();</code></pre>\n"
+  summary: "\nReturns all PaymentTerms in SuperOffice database.\n"
   remarks: 
   syntax: 
     content: NSPaymentTerm[] GetPaymentTerms()
@@ -3482,7 +3512,7 @@ items:
   nameWithType: NSListAgent.GetPaymentTypes()
   fullName: CRMScript.NetServer.NSListAgent.GetPaymentTypes()
   type: Method
-  summary: "\nReturns all PaymentTypes in SuperOffice db.<p></p>\n<strong>Returns:</strong>NSPaymentType[]<p></p>\n<pre><code>NSListAgent agent;\nNSPaymentType[] res = agent.GetPaymentTypes();</code></pre>\n"
+  summary: "\nReturns all PaymentTypes in SuperOffice database.\n"
   remarks: 
   syntax: 
     content: NSPaymentType[] GetPaymentTypes()
@@ -3501,8 +3531,8 @@ items:
   nameWithType: NSListAgent.GetPluginCapabilities(Integer)
   fullName: CRMScript.NetServer.NSListAgent.GetPluginCapabilities(Integer)
   type: Method
-  summary: "\nGets a list of plugin-dependent capabilities for a given document archive plugin.<br/>A standard set of properties is defined in SuperOffice.CRM.Documents.Constants.Capabilities.\n"
-  remarks: 
+  summary: "\nGets a list of plugin-dependent capabilities for a given document archive plugin.\n"
+  remarks: "\nA standard set of properties is defined in SuperOffice.CRM.Documents.Constants.Capabilities.\n"
   syntax: 
     content: Map GetPluginCapabilities(Integer pluginId)
     parameters:
@@ -3586,7 +3616,7 @@ items:
   nameWithType: NSListAgent.GetPositions()
   fullName: CRMScript.NetServer.NSListAgent.GetPositions()
   type: Method
-  summary: "\nReturns all the positions a person could have.<p></p>\n<strong>Returns:</strong>NSPosition[]<p></p>\n<pre><code>NSListAgent agent;\nNSPosition[] res = agent.GetPositions();</code></pre>\n"
+  summary: "\nReturns all the positions a person could have.\n"
   remarks: 
   syntax: 
     content: NSPosition[] GetPositions()
@@ -3605,7 +3635,7 @@ items:
   nameWithType: NSListAgent.GetPriorities()
   fullName: CRMScript.NetServer.NSListAgent.GetPriorities()
   type: Method
-  summary: "\nReturns all priorities an appointment could have.<p></p>\n<strong>Returns:</strong>NSPriority[]<p></p>\n<pre><code>NSListAgent agent;\nNSPriority[] res = agent.GetPriorities();</code></pre>\n"
+  summary: "\nReturns all priorities an appointment could have.\n"
   remarks: 
   syntax: 
     content: NSPriority[] GetPriorities()
@@ -3668,7 +3698,7 @@ items:
   nameWithType: NSListAgent.GetProductCategories()
   fullName: CRMScript.NetServer.NSListAgent.GetProductCategories()
   type: Method
-  summary: "\nReturns all ProductCategories in SuperOffice list.<p></p>\n<strong>Returns:</strong>NSProductCategory[]<p></p>\n<pre><code>NSListAgent agent;\nNSProductCategory[] res = agent.GetProductCategories();</code></pre>\n"
+  summary: "\nReturns all ProductCategories in SuperOffice list.\n"
   remarks: 
   syntax: 
     content: NSProductCategory[] GetProductCategories()
@@ -3709,7 +3739,7 @@ items:
   nameWithType: NSListAgent.GetProductFamilies()
   fullName: CRMScript.NetServer.NSListAgent.GetProductFamilies()
   type: Method
-  summary: "\nReturns all NSProductFamily in SuperOffice list.<p></p>\n<strong>Returns:</strong>NSProductFamily[]<p></p>\n<pre><code>NSListAgent agent;\nNSProductFamily[] res = agent.GetProductFamilies();</code></pre>\n"
+  summary: "\nReturns all NSProductFamily in SuperOffice list.\n"
   remarks: 
   syntax: 
     content: NSProductFamily[] GetProductFamilies()
@@ -3772,7 +3802,7 @@ items:
   nameWithType: NSListAgent.GetProductTypes()
   fullName: CRMScript.NetServer.NSListAgent.GetProductTypes()
   type: Method
-  summary: "\nReturns all ProductTypes in SuperOffice list.<p></p>\n<strong>Returns:</strong>NSProductType[]<p></p>\n<pre><code>NSListAgent agent;\nNSProductType[] res = agent.GetProductTypes();</code></pre>\n"
+  summary: "\nReturns all ProductTypes in SuperOffice list.\n"
   remarks: 
   syntax: 
     content: NSProductType[] GetProductTypes()
@@ -3813,7 +3843,7 @@ items:
   nameWithType: NSListAgent.GetProjectStatuses()
   fullName: CRMScript.NetServer.NSListAgent.GetProjectStatuses()
   type: Method
-  summary: "\nGets all items from the Project Status (ProjStatus) table.<p></p>\n<strong>Returns:</strong>NSProjectStatus[]<p></p>\n<pre><code>NSListAgent agent;\nNSProjectStatus[] res = agent.GetProjectStatuses();</code></pre>\n"
+  summary: "\nGets all items from the Project Status (ProjStatus) table.\n"
   remarks: 
   syntax: 
     content: NSProjectStatus[] GetProjectStatuses()
@@ -3920,7 +3950,7 @@ items:
   nameWithType: NSListAgent.GetProjectTypes()
   fullName: CRMScript.NetServer.NSListAgent.GetProjectTypes()
   type: Method
-  summary: "\nGets all items from the Project Type (ProjType) table.<p></p>\n<strong>Returns:</strong>NSProjectType[]<p></p>\n<pre><code>NSListAgent agent;\nNSProjectType[] res = agent.GetProjectTypes();</code></pre>\n"
+  summary: "\nGets all items from the Project Type (ProjType) table.\n"
   remarks: 
   syntax: 
     content: NSProjectType[] GetProjectTypes()
@@ -3939,7 +3969,7 @@ items:
   nameWithType: NSListAgent.GetQuickReplies()
   fullName: CRMScript.NetServer.NSListAgent.GetQuickReplies()
   type: Method
-  summary: "\nMethod to return all quick replies for a given associate<p></p>\n<strong>Returns:</strong>NSQuickReply[]<p></p>\n<pre><code>NSListAgent agent;\nNSQuickReply[] res = agent.GetQuickReplies();</code></pre>\n"
+  summary: "\nMethod to return all quick replies for a given associate\n"
   remarks: 
   syntax: 
     content: NSQuickReply[] GetQuickReplies()
@@ -4002,7 +4032,7 @@ items:
   nameWithType: NSListAgent.GetRatings()
   fullName: CRMScript.NetServer.NSListAgent.GetRatings()
   type: Method
-  summary: "\nReturns all ratings<p></p>\n<strong>Returns:</strong>NSRating[]<p></p>\n<pre><code>NSListAgent agent;\nNSRating[] res = agent.GetRatings();</code></pre>\n"
+  summary: "\nReturns all ratings\n"
   remarks: 
   syntax: 
     content: NSRating[] GetRatings()
@@ -4021,14 +4051,14 @@ items:
   nameWithType: NSListAgent.GetReason(Integer)
   fullName: CRMScript.NetServer.NSListAgent.GetReason(Integer)
   type: Method
-  summary: "\nGets an NSReason object.<p></p>\n<ul><li><strong>ReasonId</strong>The identifier of the NSReason object</li></ul>\n"
+  summary: "\nGets an NSReason object.\n"
   remarks: 
   syntax: 
     content: NSReason GetReason(Integer reasonId)
     parameters:
     - id: reasonId
       type: CRMScript.Global.Integer
-      description: 
+      description: The identifier of the NSReason object
     return:
       type: CRMScript.NetServer.NSReason
   example: 
@@ -4043,14 +4073,14 @@ items:
   nameWithType: NSListAgent.GetReasonList(Integer[])
   fullName: CRMScript.NetServer.NSListAgent.GetReasonList(Integer[])
   type: Method
-  summary: "\nGets an array of NSReason objects.<p></p>\n<ul><li><strong>ReasonIds</strong>The identifiers of the NSReason objects</li></ul><strong>Returns:</strong>NSReason[]<p></p>\n<pre><code>Integer[] ids;\nNSListAgent agent;\nNSReason[] res = agent.GetReasonList(ids);</code></pre>\n"
+  summary: "\nGets an array of NSReason objects.\n"
   remarks: 
   syntax: 
     content: NSReason[] GetReasonList(Integer[]  reasonIds)
     parameters:
     - id: reasonIds
       type: CRMScript.Global.Integer[]
-      description: 
+      description: The identifiers of the NSReason objects
     return:
       type: CRMScript.NetServer.NSReason[]
   example: 
@@ -4065,7 +4095,7 @@ items:
   nameWithType: NSListAgent.GetReasons()
   fullName: CRMScript.NetServer.NSListAgent.GetReasons()
   type: Method
-  summary: "\nReturns all reasons<p></p>\n<strong>Returns:</strong>NSReason[]<p></p>\n<pre><code>NSListAgent agent;\nNSReason[] res = agent.GetReasons();</code></pre>\n"
+  summary: "\nReturns all reasons\n"
   remarks: 
   syntax: 
     content: NSReason[] GetReasons()
@@ -4106,14 +4136,14 @@ items:
   nameWithType: NSListAgent.GetReasonSoldList(Integer[])
   fullName: CRMScript.NetServer.NSListAgent.GetReasonSoldList(Integer[])
   type: Method
-  summary: "\nGets an array of ReasonSold objects.<p></p>\n<ul><li><strong>ReasonSoldIds</strong>The identifiers of the NSReasonSold objects</li></ul><strong>Returns:</strong>NSReasonSold[]<p></p>\n<pre><code>Integer[] ids;\nNSListAgent agent;\nNSReasonSold[] res = agent.GetReasonSoldList(ids);</code></pre>\n"
+  summary: "\nGets an array of ReasonSold objects.\n"
   remarks: 
   syntax: 
     content: NSReasonSold[] GetReasonSoldList(Integer[]  reasonSoldIds)
     parameters:
     - id: reasonSoldIds
       type: CRMScript.Global.Integer[]
-      description: 
+      description: The identifiers of the NSReasonSold objects
     return:
       type: CRMScript.NetServer.NSReasonSold[]
   example: 
@@ -4128,14 +4158,14 @@ items:
   nameWithType: NSListAgent.GetReasonStalled(Integer)
   fullName: CRMScript.NetServer.NSListAgent.GetReasonStalled(Integer)
   type: Method
-  summary: "\nGets an NSReasonStalled object.<p></p>\n<ul><li><strong>ReasonStalledId</strong>The identifier of the NSReasonStalled object</li></ul>\n"
+  summary: "\nGets an NSReasonStalled object.\n"
   remarks: 
   syntax: 
     content: NSReasonStalled GetReasonStalled(Integer reasonStalledId)
     parameters:
     - id: reasonStalledId
       type: CRMScript.Global.Integer
-      description: 
+      description: The identifier of the NSReasonStalled object
     return:
       type: CRMScript.NetServer.NSReasonStalled
   example: 
@@ -4150,14 +4180,14 @@ items:
   nameWithType: NSListAgent.GetReasonStalledList(Integer[])
   fullName: CRMScript.NetServer.NSListAgent.GetReasonStalledList(Integer[])
   type: Method
-  summary: "\nGets an array of ReasonStalled objects.<p></p>\n<ul><li><strong>ReasonStalledIds</strong>The identifiers of the NSReasonStalled objects</li></ul><strong>Returns:</strong>NSReasonStalled[]<p></p>\n<pre><code>Integer[] ids;\nNSListAgent agent;\nNSReasonStalled[] res = agent.GetReasonStalledList(ids);</code></pre>\n"
+  summary: "\nGets an array of ReasonStalled objects.\n"
   remarks: 
   syntax: 
     content: NSReasonStalled[] GetReasonStalledList(Integer[]  reasonStalledIds)
     parameters:
     - id: reasonStalledIds
       type: CRMScript.Global.Integer[]
-      description: 
+      description: The identifiers of the NSReasonStalled objects
     return:
       type: CRMScript.NetServer.NSReasonStalled[]
   example: 
@@ -4172,14 +4202,14 @@ items:
   nameWithType: NSListAgent.GetRelationDefinitionEntity(Integer)
   fullName: CRMScript.NetServer.NSListAgent.GetRelationDefinitionEntity(Integer)
   type: Method
-  summary: "\nGets an NSRelationDefinitionEntity object.<p></p>\n<ul><li><strong>RelationDefinitionEntityId</strong>The identifier of the NSRelationDefinitionEntity object</li></ul>\n"
+  summary: "\nGets an NSRelationDefinitionEntity object.\n"
   remarks: 
   syntax: 
     content: NSRelationDefinitionEntity GetRelationDefinitionEntity(Integer relationDefinitionEntityId)
     parameters:
     - id: relationDefinitionEntityId
       type: CRMScript.Global.Integer
-      description: 
+      description: The identifier of the NSRelationDefinitionEntity object
     return:
       type: CRMScript.NetServer.NSRelationDefinitionEntity
   example: 
@@ -4194,14 +4224,14 @@ items:
   nameWithType: NSListAgent.GetResourceEntity(Integer)
   fullName: CRMScript.NetServer.NSListAgent.GetResourceEntity(Integer)
   type: Method
-  summary: "\nGets an NSResourceEntity object.<p></p>\n<ul><li><strong>ResourceEntityId</strong>The identifier of the NSResourceEntity object</li></ul>\n"
+  summary: "\nGets an NSResourceEntity object.\n"
   remarks: 
   syntax: 
     content: NSResourceEntity GetResourceEntity(Integer resourceEntityId)
     parameters:
     - id: resourceEntityId
       type: CRMScript.Global.Integer
-      description: 
+      description: The identifier of the NSResourceEntity object
     return:
       type: CRMScript.NetServer.NSResourceEntity
   example: 
@@ -4392,7 +4422,7 @@ items:
   nameWithType: NSListAgent.GetSources()
   fullName: CRMScript.NetServer.NSListAgent.GetSources()
   type: Method
-  summary: "\nReturns all sources<p></p>\n<strong>Returns:</strong>NSSource[]<p></p>\n<pre><code>NSListAgent agent;\nNSSource[] res = agent.GetSources();</code></pre>\n"
+  summary: "\nReturns all sources\n"
   remarks: 
   syntax: 
     content: NSSource[] GetSources()
@@ -4455,7 +4485,7 @@ items:
   nameWithType: NSListAgent.GetTasks()
   fullName: CRMScript.NetServer.NSListAgent.GetTasks()
   type: Method
-  summary: "\nReturns all appointment tasks<p></p>\n<strong>Returns:</strong>NSTask[]<p></p>\n<pre><code>NSListAgent agent;\nNSTask[] res = agent.GetTasks();</code></pre>\n"
+  summary: "\nReturns all appointment tasks\n"
   remarks: 
   syntax: 
     content: NSTask[] GetTasks()
@@ -4474,7 +4504,7 @@ items:
   nameWithType: NSListAgent.GetTicketCategories()
   fullName: CRMScript.NetServer.NSListAgent.GetTicketCategories()
   type: Method
-  summary: "\n<strong>Returns:</strong>NSTicketCategoryEntity[]<p></p>\n<pre><code>NSListAgent agent;\nNSTicketCategoryEntity[] thing = agent.GetTicketCategories();</code></pre>\n"
+  summary: ""
   remarks: 
   syntax: 
     content: NSTicketCategoryEntity[] GetTicketCategories()
@@ -4493,7 +4523,7 @@ items:
   nameWithType: NSListAgent.GetTicketCategoriesForUserGroups(Integer[])
   fullName: CRMScript.NetServer.NSListAgent.GetTicketCategoriesForUserGroups(Integer[])
   type: Method
-  summary: "\nTicket categories for user groups\n"
+  summary: ""
   remarks: 
   syntax: 
     content: NSMDOListItem[] GetTicketCategoriesForUserGroups(Integer[] userGroupIds)
@@ -4503,6 +4533,7 @@ items:
       description: 
     return:
       type: CRMScript.NetServer.NSMDOListItem[]
+      description: Ticket categories for user groups
   example: 
 - uid: CRMScript.NetServer.NSListAgent.GetTicketCategory(Integer)
   commentId: M:CRMScript.NetServer.NSListAgent.GetTicketCategory(Integer)
@@ -4580,7 +4611,7 @@ items:
   nameWithType: NSListAgent.GetTicketPriorities()
   fullName: CRMScript.NetServer.NSListAgent.GetTicketPriorities()
   type: Method
-  summary: "\n<strong>Returns:</strong>NSTicketPriority[]<p></p>\n<pre><code>NSListAgent agent;\nNSTicketPriority[] thing = agent.GetTicketPriorities();</code></pre>\n"
+  summary: ""
   remarks: 
   syntax: 
     content: NSTicketPriority[] GetTicketPriorities()
@@ -4687,7 +4718,7 @@ items:
   nameWithType: NSListAgent.GetTicketStatuses()
   fullName: CRMScript.NetServer.NSListAgent.GetTicketStatuses()
   type: Method
-  summary: "\n<strong>Returns:</strong>NSTicketStatusEntity[]<p></p>\n<pre><code>NSListAgent agent;\nNSTicketStatusEntity[] res = agent.GetTicketStatuses();</code></pre>\n"
+  summary: ""
   remarks: 
   syntax: 
     content: NSTicketStatusEntity[] GetTicketStatuses()
@@ -4728,7 +4759,7 @@ items:
   nameWithType: NSListAgent.GetVisibleForUserGroups(Integer,Integer)
   fullName: CRMScript.NetServer.NSListAgent.GetVisibleForUserGroups(Integer,Integer)
   type: Method
-  summary: "\nList of User groups that this list item is visible for\n"
+  summary: ""
   remarks: 
   syntax: 
     content: NSSelectableMDOListItem[] GetVisibleForUserGroups(Integer udListDefinitionId, Integer listItemId)
@@ -4741,6 +4772,7 @@ items:
       description: 
     return:
       type: CRMScript.NetServer.NSSelectableMDOListItem[]
+      description: List of User groups that this list item is visible for
   example: 
   - "\n<pre><code>NSListAgent agent;\nInteger udListDefinitionId;\nInteger listItemId;\nNSSelectableMDOListItem[] res = agent.GetVisibleForUserGroups(udListDefinitionId, listItemId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSListAgent.GetVisibleForUserGroupsFromListName(String,Integer)
@@ -4753,7 +4785,7 @@ items:
   nameWithType: NSListAgent.GetVisibleForUserGroupsFromListName(String,Integer)
   fullName: CRMScript.NetServer.NSListAgent.GetVisibleForUserGroupsFromListName(String,Integer)
   type: Method
-  summary: "\nList of User groups that this list item is visible for\n"
+  summary: ""
   remarks: 
   syntax: 
     content: NSSelectableMDOListItem[] GetVisibleForUserGroupsFromListName(String udListDefinitionName, Integer listItemId)
@@ -4766,6 +4798,7 @@ items:
       description: 
     return:
       type: CRMScript.NetServer.NSSelectableMDOListItem[]
+      description: List of User groups that this list item is visible for
   example: 
   - "\n<pre><code>NSListAgent agent;\nString udListDefinitionName;\nInteger listItemId;\nNSSelectableMDOListItem[] res = agent.GetVisibleForUserGroupsFromListName(udListDefinitionName, listItemId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSListAgent.GetWebPanelByProgId(String)
@@ -4822,7 +4855,7 @@ items:
   nameWithType: NSListAgent.GetWebPanelList()
   fullName: CRMScript.NetServer.NSListAgent.GetWebPanelList()
   type: Method
-  summary: "\nReturn a list of all web panels.<p></p>\n<strong>Returns:</strong>NSWebPanelEntity[]<p></p>\n<pre><code>NSListAgent agent;\nNSWebPanelEntity[] res = agent.GetWebPanelList();</code></pre>\n"
+  summary: "\nReturn a list of all web panels.\n"
   remarks: 
   syntax: 
     content: NSWebPanelEntity[] GetWebPanelList()
@@ -4841,8 +4874,8 @@ items:
   nameWithType: NSListAgent.GlobalChangeTicketStatus(Integer,Integer)
   fullName: CRMScript.NetServer.NSListAgent.GlobalChangeTicketStatus(Integer,Integer)
   type: Method
-  summary: "\nchange all references from one ticket status to another. Typically used in conjuction with delete\n"
-  remarks: 
+  summary: "\nChanges all references from one ticket status to another.\n"
+  remarks: "\nTypically used in conjunction with delete.\n"
   syntax: 
     content: Void GlobalChangeTicketStatus(Integer fromTicketStatusId, Integer toTicketStatusId)
     parameters:
@@ -4866,7 +4899,7 @@ items:
   nameWithType: NSListAgent.MoveAllTickets(Integer,Integer)
   fullName: CRMScript.NetServer.NSListAgent.MoveAllTickets(Integer,Integer)
   type: Method
-  summary: "\nMove all tickets from one ticket category to another\n"
+  summary: "\nMoves all tickets from one ticket category to another\n"
   remarks: 
   syntax: 
     content: Void MoveAllTickets(Integer fromTicketCategoryId, Integer toTicketCategoryId)
@@ -4891,7 +4924,7 @@ items:
   nameWithType: NSListAgent.MoveListItem(Integer,Integer,Integer)
   fullName: CRMScript.NetServer.NSListAgent.MoveListItem(Integer,Integer,Integer)
   type: Method
-  summary: "\nMove a list item up or down in the list based on rank\n"
+  summary: "\nMoves a list item up or down in the list based on rank\n"
   remarks: 
   syntax: 
     content: Void MoveListItem(Integer udListDefinitionId, Integer listItemId, Integer direction)
@@ -4908,22 +4941,6 @@ items:
     return:
       type: CRMScript.Global.Void
   example: 
-- uid: CRMScript.NetServer.NSListAgent.#ctor
-  commentId: M:CRMScript.NetServer.NSListAgent.#ctor
-  id: '#ctor'
-  so.intellisense: Void.NSListAgent
-  langs:
-  - crmscript
-  name: '#ctor'
-  nameWithType: NSListAgent.#ctor
-  fullName: CRMScript.NetServer.NSListAgent.#ctor
-  type: Constructor
-  summary: "\nCollection of all services that work with Lists. These are typical lists of data shown in dropdown-list, checkbox lists, etc.\n"
-  remarks: 
-  syntax: 
-    content: NSListAgent
-  example: 
-  - "\n<pre><code>NSListAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSListAgent.RebuildFullnames()
   commentId: M:CRMScript.NetServer.NSListAgent.RebuildFullnames()
   id: 'RebuildFullnames()'
@@ -4934,8 +4951,8 @@ items:
   nameWithType: NSListAgent.RebuildFullnames()
   fullName: CRMScript.NetServer.NSListAgent.RebuildFullnames()
   type: Method
-  summary: "\nUpdates the fullname field of all categories. Use this e.g. when changing parentId or renaming a category with children.<p></p>\n<pre><code>NSListAgent agent;\nagent.RebuildFullnames();</code></pre>\n"
-  remarks: 
+  summary: "\nUpdates the fullname field of all categories\n"
+  remarks: "\nUse this for example when changing parentId or renaming a category with children.\n"
   syntax: 
     content: Void RebuildFullnames()
     parameters: []
@@ -4953,7 +4970,7 @@ items:
   nameWithType: NSListAgent.SaveAllFromListDefinition(Integer,NSListItemEntity[])
   fullName: CRMScript.NetServer.NSListAgent.SaveAllFromListDefinition(Integer,NSListItemEntity[])
   type: Method
-  summary: "\nSave all list items for the specified list defintion\n"
+  summary: "\nSaves all list items for the specified list definition\n"
   remarks: 
   syntax: 
     content: NSListItemEntity[] SaveAllFromListDefinition(Integer udListDefinitionId, NSListItemEntity[] items)
@@ -4978,7 +4995,7 @@ items:
   nameWithType: NSListAgent.SaveAllFromListName(String,NSListItemEntity[])
   fullName: CRMScript.NetServer.NSListAgent.SaveAllFromListName(String,NSListItemEntity[])
   type: Method
-  summary: "\nSave all list items for the specified list defintion\n"
+  summary: "\nSaves all list items for the specified list definition\n"
   remarks: 
   syntax: 
     content: NSListItemEntity[] SaveAllFromListName(String udListDefinitionName, NSListItemEntity[] items)
@@ -4993,21 +5010,24 @@ items:
       type: CRMScript.NetServer.NSListItemEntity[]
   example: 
   - "\n<pre><code>NSListAgent agent;\nString udListDefinitionName;\nNSListItemEntity[] items;\nNSListItemEntity[] res = agent.SaveAllFromListName(udListDefinitionName, items);</code></pre>\n"
-- uid: CRMScript.NetServer.NSListAgent.SaveAmountClassEntity()
-  commentId: M:CRMScript.NetServer.NSListAgent.SaveAmountClassEntity()
-  id: 'SaveAmountClassEntity()'
+- uid: CRMScript.NetServer.NSListAgent.SaveAmountClassEntity(NSAmountClassEntity)
+  commentId: M:CRMScript.NetServer.NSListAgent.SaveAmountClassEntity(NSAmountClassEntity)
+  id: 'SaveAmountClassEntity(NSAmountClassEntity)'
   so.intellisense: NSListAgent.SaveAmountClassEntity
   langs:
   - crmscript
-  name: 'SaveAmountClassEntity()'
-  nameWithType: NSListAgent.SaveAmountClassEntity()
-  fullName: CRMScript.NetServer.NSListAgent.SaveAmountClassEntity()
+  name: 'SaveAmountClassEntity(NSAmountClassEntity)'
+  nameWithType: NSListAgent.SaveAmountClassEntity(NSAmountClassEntity)
+  fullName: CRMScript.NetServer.NSListAgent.SaveAmountClassEntity(NSAmountClassEntity)
   type: Method
-  summary: "\nUpdates the existing NSAmountClassEntity or creates a new NSAmountClassEntity if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>amountClassEntity</strong>The NSAmountClassEntity to save.</li></ul>\n"
+  summary: "\nUpdates the existing NSAmountClassEntity or creates a new NSAmountClassEntity if the id parameter is 0\n"
   remarks: 
   syntax: 
     content: NSAmountClassEntity SaveAmountClassEntity(NSAmountClassEntity amountClassEntity)
     parameters:
+    - id: amountClassEntity
+      type: CRMScript.NetServer.NSAmountClassEntity
+      description: The NSAmountClassEntity to save.
     return:
       type: CRMScript.NetServer.NSAmountClassEntity
   example: 
@@ -5022,7 +5042,7 @@ items:
   nameWithType: NSListAgent.SaveConsentPurpose(NSConsentPurpose)
   fullName: CRMScript.NetServer.NSListAgent.SaveConsentPurpose(NSConsentPurpose)
   type: Method
-  summary: "\nSave an NSConsentPurpose object\n"
+  summary: "\nSaves an NSConsentPurpose object\n"
   remarks: 
   syntax: 
     content: NSConsentPurpose SaveConsentPurpose(NSConsentPurpose consentPurpose)
@@ -5044,7 +5064,7 @@ items:
   nameWithType: NSListAgent.SaveConsentSource(NSConsentSource)
   fullName: CRMScript.NetServer.NSListAgent.SaveConsentSource(NSConsentSource)
   type: Method
-  summary: "\n<strong>Returns:</strong>NSConsentSource\n"
+  summary: ""
   remarks: 
   syntax: 
     content: NSConsentSource SaveConsentSource(NSConsentSource consentSource)
@@ -5088,46 +5108,49 @@ items:
   nameWithType: NSListAgent.SaveCurrencyEntity(NSCurrencyEntity)
   fullName: CRMScript.NetServer.NSListAgent.SaveCurrencyEntity(NSCurrencyEntity)
   type: Method
-  summary: "\nUpdates the existing NSCurrencyEntity or creates a new NSCurrencyEntity if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>currencyEntity</strong>The NSCurrencyEntity to save.</li></ul>\n"
+  summary: "\nUpdates the existing NSCurrencyEntity or creates a new NSCurrencyEntity if the id parameter is 0\n"
   remarks: 
   syntax: 
     content: NSCurrencyEntity SaveCurrencyEntity(NSCurrencyEntity currencyEntity)
     parameters:
     - id: currencyEntity
       type: CRMScript.NetServer.NSCurrencyEntity
-      description: 
+      description: The NSCurrencyEntity to save.
     return:
       type: CRMScript.NetServer.NSCurrencyEntity
   example: 
   - "\n<pre><code>NSList agent;\nNSCurrencyEntity thing = agent.CreateDefaultCurrencyEntity();\nthing = agent.SaveCurrencyEntity(thing);</code></pre>\n"
-- uid: CRMScript.NetServer.NSListAgent.SaveDocumentTemplateEntity()
-  commentId: M:CRMScript.NetServer.NSListAgent.SaveDocumentTemplateEntity()
-  id: 'SaveDocumentTemplateEntity()'
+- uid: CRMScript.NetServer.NSListAgent.SaveDocumentTemplateEntity(NSDocumentTemplateEntity)
+  commentId: M:CRMScript.NetServer.NSListAgent.SaveDocumentTemplateEntity(NSDocumentTemplateEntity)
+  id: 'SaveDocumentTemplateEntity(NSDocumentTemplateEntity)'
   so.intellisense: NSListAgent.SaveDocumentTemplateEntity
   langs:
   - crmscript
-  name: 'SaveDocumentTemplateEntity()'
-  nameWithType: NSListAgent.SaveDocumentTemplateEntity()
-  fullName: CRMScript.NetServer.NSListAgent.SaveDocumentTemplateEntity()
+  name: 'SaveDocumentTemplateEntity(NSDocumentTemplateEntity)'
+  nameWithType: NSListAgent.SaveDocumentTemplateEntity(NSDocumentTemplateEntity)
+  fullName: CRMScript.NetServer.NSListAgent.SaveDocumentTemplateEntity(NSDocumentTemplateEntity)
   type: Method
-  summary: "\nUpdates the existing NSDocumentTemplateEntity or creates a new NSDocumentTemplateEntity if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>documentTemplateEntity</strong>The NSDocumentTemplateEntity to save.</li></ul>\n"
+  summary: "\nUpdates the existing NSDocumentTemplateEntity or creates a new NSDocumentTemplateEntity if the id parameter is 0\n"
   remarks: 
   syntax: 
     content: NSDocumentTemplateEntity SaveDocumentTemplateEntity(NSDocumentTemplateEntity documentTemplateEntity)
     parameters:
+    - id: documentTemplateEntity
+      type: CRMScript.NetServer.NSDocumentTemplateEntity
+      description: The NSDocumentTemplateEntity to save.
     return:
       type: CRMScript.NetServer.NSDocumentTemplateEntity
   example: 
   - "\n<pre><code>NSList  agent;\nNSDocumentTemplateEntity thing = agent.CreateDefaultDocumentTemplateEntity();\nthing = agent.SaveDocumentTemplateEntity(thing);</code></pre>\n"
-- uid: CRMScript.NetServer.NSListAgent.SaveDocumentTemplateStream(Integer,String,Integer)
-  commentId: M:CRMScript.NetServer.NSListAgent.SaveDocumentTemplateStream(Integer,String,Integer)
-  id: 'SaveDocumentTemplateStream(Integer,String,Integer)'
+- uid: CRMScript.NetServer.NSListAgent.SaveDocumentTemplateStream(Integer,NSStream,String,Integer)
+  commentId: M:CRMScript.NetServer.NSListAgent.SaveDocumentTemplateStream(Integer,NSStream,String,Integer)
+  id: 'SaveDocumentTemplateStream(Integer,NSStream,String,Integer)'
   so.intellisense: NSListAgent.SaveDocumentTemplateStream
   langs:
   - crmscript
-  name: 'SaveDocumentTemplateStream(Integer,String,Integer)'
-  nameWithType: NSListAgent.SaveDocumentTemplateStream(Integer,String,Integer)
-  fullName: CRMScript.NetServer.NSListAgent.SaveDocumentTemplateStream(Integer,String,Integer)
+  name: 'SaveDocumentTemplateStream(Integer,NSStream,String,Integer)'
+  nameWithType: NSListAgent.SaveDocumentTemplateStream(Integer,NSStream,String,Integer)
+  fullName: CRMScript.NetServer.NSListAgent.SaveDocumentTemplateStream(Integer,NSStream,String,Integer)
   type: Method
   summary: "\nWrites content in stream to document template file\n"
   remarks: 
@@ -5137,6 +5160,9 @@ items:
     - id: documentTemplateId
       type: CRMScript.Global.Integer
       description: 
+    - id: content
+      type: CRMScript.NetServer.NSStream
+      description:
     - id: languageCode
       type: CRMScript.Global.String
       description: 
@@ -5147,21 +5173,24 @@ items:
       type: CRMScript.NetServer.NSTemplateInfo
   example: 
   - "\n<pre><code>NSListAgent agent;\nInteger documentTemplateId;\nNSStream content;\nString languageCode;\nInteger pluginId;\nNSTemplateInfo res = agent.SaveDocumentTemplateStream(documentTemplateId, content, languageCode, pluginId);</code></pre>\n"
-- uid: CRMScript.NetServer.NSListAgent.SaveExtAppEntity()
-  commentId: M:CRMScript.NetServer.NSListAgent.SaveExtAppEntity()
-  id: 'SaveExtAppEntity()'
+- uid: CRMScript.NetServer.NSListAgent.SaveExtAppEntity(NSExtAppEntity)
+  commentId: M:CRMScript.NetServer.NSListAgent.SaveExtAppEntity(NSExtAppEntity)
+  id: 'SaveExtAppEntity(NSExtAppEntity)'
   so.intellisense: NSListAgent.SaveExtAppEntity
   langs:
   - crmscript
-  name: 'SaveExtAppEntity()'
-  nameWithType: NSListAgent.SaveExtAppEntity()
-  fullName: CRMScript.NetServer.NSListAgent.SaveExtAppEntity()
+  name: 'SaveExtAppEntity(NSExtAppEntity)'
+  nameWithType: NSListAgent.SaveExtAppEntity(NSExtAppEntity)
+  fullName: CRMScript.NetServer.NSListAgent.SaveExtAppEntity(NSExtAppEntity)
   type: Method
-  summary: "\nUpdates the existing NSExtAppEntity or creates a new NSExtAppEntity if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>extAppEntity</strong>The NSExtAppEntity to save.</li></ul>\n"
+  summary: "\nUpdates the existing NSExtAppEntity or creates a new NSExtAppEntity if the id parameter is 0\n"
   remarks: 
   syntax: 
     content: NSExtAppEntity SaveExtAppEntity(NSExtAppEntity extAppEntity)
     parameters:
+    - id: extAppEntity
+      type: CRMScript.NetServer.NSExtAppEntity
+      description: The NSExtAppEntity to save.
     return:
       type: CRMScript.NetServer.NSExtAppEntity
   example: 
@@ -5176,7 +5205,7 @@ items:
   nameWithType: NSListAgent.SaveFromListDefinition(Integer,Integer,NSListItemEntity)
   fullName: CRMScript.NetServer.NSListAgent.SaveFromListDefinition(Integer,Integer,NSListItemEntity)
   type: Method
-  summary: "\nSave a list item for the specified list defintion\n"
+  summary: "\nSaves a list item for the specified list definition\n"
   remarks: 
   syntax: 
     content: NSListItemEntity SaveFromListDefinition(Integer id, Integer udListDefinitionId, NSListItemEntity item)
@@ -5204,7 +5233,7 @@ items:
   nameWithType: NSListAgent.SaveFromListName(Integer,String,NSListItemEntity)
   fullName: CRMScript.NetServer.NSListAgent.SaveFromListName(Integer,String,NSListItemEntity)
   type: Method
-  summary: "\nSave a list item for the specified list defintion\n"
+  summary: "\nSaves a list item for the specified list definition\n"
   remarks: 
   syntax: 
     content: NSListItemEntity SaveFromListName(Integer id, String udListDefinitionName, NSListItemEntity item)
@@ -5222,36 +5251,39 @@ items:
       type: CRMScript.NetServer.NSListItemEntity
   example: 
   - "\n<pre><code>NSListAgent agent;\nInteger id;\nString udListDefinitionName;\nNSListItemEntity item;\nNSListItemEntity res = agent.SaveFromListName(id, udListDefinitionName, item);</code></pre>\n"
-- uid: CRMScript.NetServer.NSListAgent.SaveHeadingEntity()
-  commentId: M:CRMScript.NetServer.NSListAgent.SaveHeadingEntity()
-  id: 'SaveHeadingEntity()'
+- uid: CRMScript.NetServer.NSListAgent.SaveHeadingEntity(NSHeadingEntity)
+  commentId: M:CRMScript.NetServer.NSListAgent.SaveHeadingEntity(NSHeadingEntity)
+  id: 'SaveHeadingEntity(NSHeadingEntity)'
   so.intellisense: NSListAgent.SaveHeadingEntity
   langs:
   - crmscript
-  name: 'SaveHeadingEntity()'
-  nameWithType: NSListAgent.SaveHeadingEntity()
-  fullName: CRMScript.NetServer.NSListAgent.SaveHeadingEntity()
+  name: 'SaveHeadingEntity(NSHeadingEntity)'
+  nameWithType: NSListAgent.SaveHeadingEntity(NSHeadingEntity)
+  fullName: CRMScript.NetServer.NSListAgent.SaveHeadingEntity(NSHeadingEntity)
   type: Method
-  summary: "\nUpdates the existing NSHeadingEntity or creates a new NSHeadingEntity if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>headingEntity</strong>The NSHeadingEntity to save.</li></ul>\n"
+  summary: "\nUpdates the existing NSHeadingEntity or creates a new NSHeadingEntity if the id parameter is 0\n"
   remarks: 
   syntax: 
     content: NSHeadingEntity SaveHeadingEntity(NSHeadingEntity headingEntity)
     parameters:
+    - id: headingEntity
+      type: CRMScript.NetServer.NSHeadingEntity
+      description: The NSHeadingEntity to save.
     return:
       type: CRMScript.NetServer.NSHeadingEntity
   example: 
   - "\n<pre><code>NSList  agent;\nNSHeadingEntity thing = agent.CreateDefaultHeadingEntity();\nthing = agent.SaveHeadingEntity(thing);</code></pre>\n"
-- uid: CRMScript.NetServer.NSListAgent.SaveHeadingFromListDefinition(Integer)
-  commentId: M:CRMScript.NetServer.NSListAgent.SaveHeadingFromListDefinition(Integer)
-  id: 'SaveHeadingFromListDefinition(Integer)'
+- uid: CRMScript.NetServer.NSListAgent.SaveHeadingFromListDefinition(Integer,NSHeadingEntity)
+  commentId: M:CRMScript.NetServer.NSListAgent.SaveHeadingFromListDefinition(Integer,NSHeadingEntity)
+  id: 'SaveHeadingFromListDefinition(Integer,NSHeadingEntity)'
   so.intellisense: NSListAgent.SaveHeadingFromListDefinition
   langs:
   - crmscript
-  name: 'SaveHeadingFromListDefinition(Integer)'
-  nameWithType: NSListAgent.SaveHeadingFromListDefinition(Integer)
-  fullName: CRMScript.NetServer.NSListAgent.SaveHeadingFromListDefinition(Integer)
+  name: 'SaveHeadingFromListDefinition(Integer,NSHeadingEntity)'
+  nameWithType: NSListAgent.SaveHeadingFromListDefinition(Integer,NSHeadingEntity)
+  fullName: CRMScript.NetServer.NSListAgent.SaveHeadingFromListDefinition(Integer,NSHeadingEntity)
   type: Method
-  summary: "\nSave new heading for list resolved by the provided id.\n"
+  summary: "\nSaves new heading for list resolved by the provided ID.\n"
   remarks: 
   syntax: 
     content: NSHeadingEntity SaveHeadingFromListDefinition(Integer id, NSHeadingEntity entity)
@@ -5259,21 +5291,24 @@ items:
     - id: id
       type: CRMScript.Global.Integer
       description: 
+    - id: entity
+      type: CRMScript.NetServer.NSHeadingEntity
+      description:
     return:
       type: CRMScript.NetServer.NSHeadingEntity
   example: 
   - "\n<pre><code>NSListAgent agent;\nInteger id;\nNSHeadingEntity entity;\nNSHeadingEntity res = agent.SaveHeadingFromListDefinition(id, entity);</code></pre>\n"
-- uid: CRMScript.NetServer.NSListAgent.SaveHeadingFromName(String)
-  commentId: M:CRMScript.NetServer.NSListAgent.SaveHeadingFromName(String)
-  id: 'SaveHeadingFromName(String)'
+- uid: CRMScript.NetServer.NSListAgent.SaveHeadingFromName(String,NSHeadingEntity)
+  commentId: M:CRMScript.NetServer.NSListAgent.SaveHeadingFromName(String,NSHeadingEntity)
+  id: 'SaveHeadingFromName(String,NSHeadingEntity)'
   so.intellisense: NSListAgent.SaveHeadingFromName
   langs:
   - crmscript
-  name: 'SaveHeadingFromName(String)'
-  nameWithType: NSListAgent.SaveHeadingFromName(String)
-  fullName: CRMScript.NetServer.NSListAgent.SaveHeadingFromName(String)
+  name: 'SaveHeadingFromName(String,NSHeadingEntity)'
+  nameWithType: NSListAgent.SaveHeadingFromName(String,NSHeadingEntity)
+  fullName: CRMScript.NetServer.NSListAgent.SaveHeadingFromName(String,NSHeadingEntity)
   type: Method
-  summary: "\nSave new heading for list resolved by the provided name.\n"
+  summary: "\nSaves new heading for list resolved by the provided name.\n"
   remarks: 
   syntax: 
     content: NSHeadingEntity SaveHeadingFromName(String name, NSHeadingEntity entity)
@@ -5281,19 +5316,22 @@ items:
     - id: name
       type: CRMScript.Global.String
       description: 
+    - id: entity
+      type: CRMScript.NetServer.NSHeadingEntity
+      description:
     return:
       type: CRMScript.NetServer.NSHeadingEntity
   example: 
   - "\n<pre><code>NSListAgent agent;\nString name;\nNSHeadingEntity entity;\nNSHeadingEntity res = agent.SaveHeadingFromName(name, entity);</code></pre>\n"
-- uid: CRMScript.NetServer.NSListAgent.SaveHeadingsForListItemFromListDefinition(Integer,Integer)
-  commentId: M:CRMScript.NetServer.NSListAgent.SaveHeadingsForListItemFromListDefinition(Integer,Integer)
-  id: 'SaveHeadingsForListItemFromListDefinition(Integer,Integer)'
+- uid: CRMScript.NetServer.NSListAgent.SaveHeadingsForListItemFromListDefinition(Integer,Integer,NSSelectableMDOListItem[])
+  commentId: M:CRMScript.NetServer.NSListAgent.SaveHeadingsForListItemFromListDefinition(Integer,Integer,NSSelectableMDOListItem[])
+  id: 'SaveHeadingsForListItemFromListDefinition(Integer,Integer,NSSelectableMDOListItem[])'
   so.intellisense: NSListAgent.SaveHeadingsForListItemFromListDefinition
   langs:
   - crmscript
-  name: 'SaveHeadingsForListItemFromListDefinition(Integer,Integer)'
-  nameWithType: NSListAgent.SaveHeadingsForListItemFromListDefinition(Integer,Integer)
-  fullName: CRMScript.NetServer.NSListAgent.SaveHeadingsForListItemFromListDefinition(Integer,Integer)
+  name: 'SaveHeadingsForListItemFromListDefinition(Integer,Integer,NSSelectableMDOListItem[])'
+  nameWithType: NSListAgent.SaveHeadingsForListItemFromListDefinition(Integer,Integer,NSSelectableMDOListItem[])
+  fullName: CRMScript.NetServer.NSListAgent.SaveHeadingsForListItemFromListDefinition(Integer,Integer,NSSelectableMDOListItem[])
   type: Method
   summary: "\nSaves the active headings for the list item.\n"
   remarks: 
@@ -5306,6 +5344,9 @@ items:
     - id: listItemId
       type: CRMScript.Global.Integer
       description: 
+    - id: headings
+      type: CRMScript.NetServer.NSSelectableMDOListItem[]
+      description:
     return:
       type: CRMScript.NetServer.NSSelectableMDOListItem[]
   example: 
@@ -5331,6 +5372,9 @@ items:
     - id: listItemId
       type: CRMScript.Global.Integer
       description: 
+    - id: headings
+      type: CRMScript.NetServer.NSSelectableMDOListItem[]
+      description:
     return:
       type: CRMScript.NetServer.NSSelectableMDOListItem[]
   example: 
@@ -5353,6 +5397,9 @@ items:
     - id: id
       type: CRMScript.Global.Integer
       description: 
+    - id: entities
+      type: CRMScript.NetServer.NSHeadingEntity[]
+      description:
     return:
       type: CRMScript.NetServer.NSHeadingEntity[]
   example: 
@@ -5367,7 +5414,7 @@ items:
   nameWithType: NSListAgent.SaveHeadingsFromName(String)
   fullName: CRMScript.NetServer.NSListAgent.SaveHeadingsFromName(String)
   type: Method
-  summary: "\nSave headings for list resolved by the provided name.\n"
+  summary: "\nSaves headings for list resolved by the provided name.\n"
   remarks: 
   syntax: 
     content: NSHeadingEntity[] SaveHeadingsFromName(String name, NSHeadingEntity[] entities)
@@ -5375,44 +5422,53 @@ items:
     - id: name
       type: CRMScript.Global.String
       description: 
+    - id: entities
+      type: CRMScript.NetServer.NSHeadingEntity[]
+      description:
     return:
       type: CRMScript.NetServer.NSHeadingEntity[]
   example: 
   - "\n<pre><code>NSListAgent agent;\nString name;\nNSHeadingEntity[] entities;\nNSHeadingEntity[] res = agent.SaveHeadingsFromName(name, entities);</code></pre>\n"
-- uid: CRMScript.NetServer.NSListAgent.SaveHierarchyEntity()
-  commentId: M:CRMScript.NetServer.NSListAgent.SaveHierarchyEntity()
-  id: 'SaveHierarchyEntity()'
+- uid: CRMScript.NetServer.NSListAgent.SaveHierarchyEntity(NSHierarchyEntity)
+  commentId: M:CRMScript.NetServer.NSListAgent.SaveHierarchyEntity(NSHierarchyEntity)
+  id: 'SaveHierarchyEntity(NSHierarchyEntity)'
   so.intellisense: NSListAgent.SaveHierarchyEntity
   langs:
   - crmscript
-  name: 'SaveHierarchyEntity()'
-  nameWithType: NSListAgent.SaveHierarchyEntity()
-  fullName: CRMScript.NetServer.NSListAgent.SaveHierarchyEntity()
+  name: 'SaveHierarchyEntity(NSHierarchyEntity)'
+  nameWithType: NSListAgent.SaveHierarchyEntity(NSHierarchyEntity)
+  fullName: CRMScript.NetServer.NSListAgent.SaveHierarchyEntity(NSHierarchyEntity)
   type: Method
-  summary: "\nUpdates the existing NSHierarchyEntity or creates a new NSHierarchyEntity if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>hierarchyEntity</strong>The NSHierarchyEntity to save.</li></ul>\n"
+  summary: "\nUpdates the existing NSHierarchyEntity or creates a new NSHierarchyEntity if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>hierarchyEntity</strong></li></ul>\n"
   remarks: 
   syntax: 
     content: NSHierarchyEntity SaveHierarchyEntity(NSHierarchyEntity hierarchyEntity)
     parameters:
+    - id: hierarchyEntity
+      type: CRMScript.NetServer.NSHierarchyEntity
+      description: The NSHierarchyEntity to save.
     return:
       type: CRMScript.NetServer.NSHierarchyEntity
   example: 
   - "\n<pre><code>NSList  agent;\nNSHierarchyEntity thing = agent.CreateDefaultHierarchyEntity();\nthing = agent.SaveHierarchyEntity(thing);</code></pre>\n"
-- uid: CRMScript.NetServer.NSListAgent.SaveLegalBase()
-  commentId: M:CRMScript.NetServer.NSListAgent.SaveLegalBase()
-  id: 'SaveLegalBase()'
+- uid: CRMScript.NetServer.NSListAgent.SaveLegalBase(NSLegalBase)
+  commentId: M:CRMScript.NetServer.NSListAgent.SaveLegalBase(NSLegalBase)
+  id: 'SaveLegalBase(NSLegalBase)'
   so.intellisense: NSListAgent.SaveLegalBase
   langs:
   - crmscript
-  name: 'SaveLegalBase()'
-  nameWithType: NSListAgent.SaveLegalBase()
-  fullName: CRMScript.NetServer.NSListAgent.SaveLegalBase()
+  name: 'SaveLegalBase(NSLegalBase)'
+  nameWithType: NSListAgent.SaveLegalBase(NSLegalBase)
+  fullName: CRMScript.NetServer.NSListAgent.SaveLegalBase(NSLegalBase)
   type: Method
   summary: 
   remarks: 
   syntax: 
     content: NSLegalBase SaveLegalBase(NSLegalBase legalBase)
     parameters:
+    - id: legalBase
+      type: CRMScript.NetServer.NSLegalBase
+      description:
     return:
       type: CRMScript.NetServer.NSLegalBase
   example: 
@@ -5426,14 +5482,14 @@ items:
   nameWithType: NSListAgent.SaveListEntity(NSListEntity)
   fullName: CRMScript.NetServer.NSListAgent.SaveListEntity(NSListEntity)
   type: Method
-  summary: "\nUpdates the existing NSListEntity or creates a new NSListEntity if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>listEntity</strong>The NSListEntity to save.</li></ul>\n"
+  summary: "\nUpdates the existing NSListEntity or creates a new NSListEntity if the id parameter is 0\n"
   remarks: 
   syntax: 
     content: NSListEntity SaveListEntity(NSListEntity listEntity)
     parameters:
     - id: listEntity
       type: CRMScript.NetServer.NSListEntity
-      description: 
+      description: The NSListEntity to save.
     return:
       type: CRMScript.NetServer.NSListEntity
   example: 
@@ -5448,7 +5504,7 @@ items:
   nameWithType: NSListAgent.SaveListEntityByName(String,NSListEntity)
   fullName: CRMScript.NetServer.NSListAgent.SaveListEntityByName(String,NSListEntity)
   type: Method
-  summary: "\nSave an NSListEntity resolved by the provided name.\n"
+  summary: "\nSaves an NSListEntity resolved by the provided name.\n"
   remarks: 
   syntax: 
     content: NSListEntity SaveListEntityByName(String name, NSListEntity listEntity)
@@ -5473,7 +5529,7 @@ items:
   nameWithType: NSListAgent.SaveListItemEntity(NSListItemEntity)
   fullName: CRMScript.NetServer.NSListAgent.SaveListItemEntity(NSListItemEntity)
   type: Method
-  summary: "\nSave the NSListItemEntity.\n"
+  summary: "\nSaves the NSListItemEntity.\n"
   remarks: 
   syntax: 
     content: NSListItemEntity SaveListItemEntity(NSListItemEntity listItemEntity)
@@ -5495,14 +5551,14 @@ items:
   nameWithType: NSListAgent.SaveProjectTypeEntity(NSProjectTypeEntity)
   fullName: CRMScript.NetServer.NSListAgent.SaveProjectTypeEntity(NSProjectTypeEntity)
   type: Method
-  summary: "\nUpdates the existing NSProjectTypeEntity or creates a new NSProjectTypeEntity if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>projectTypeEntity</strong>The NSProjectTypeEntity to save.</li></ul>\n"
+  summary: "\nUpdates the existing NSProjectTypeEntity or creates a new NSProjectTypeEntity if the id parameter is 0\n"
   remarks: 
   syntax: 
     content: NSProjectTypeEntity SaveProjectTypeEntity(NSProjectTypeEntity projectTypeEntity)
     parameters:
     - id: projectTypeEntity
       type: CRMScript.NetServer.NSProjectTypeEntity
-      description: 
+      description: The NSProjectTypeEntity to save.
     return:
       type: CRMScript.NetServer.NSProjectTypeEntity
   example: 
@@ -5517,7 +5573,7 @@ items:
   nameWithType: NSListAgent.SaveQuickReplies(NSQuickReply[])
   fullName: CRMScript.NetServer.NSListAgent.SaveQuickReplies(NSQuickReply[])
   type: Method
-  summary: "\nMethod to save all quick replies for a given associate\n"
+  summary: "\nSaves all quick replies for a given associate\n"
   remarks: 
   syntax: 
     content: Void SaveQuickReplies(NSQuickReply[] quickReplies)
@@ -5528,21 +5584,24 @@ items:
     return:
       type: CRMScript.Global.Void
   example: 
-- uid: CRMScript.NetServer.NSListAgent.SaveRelationDefinitionEntity()
-  commentId: M:CRMScript.NetServer.NSListAgent.SaveRelationDefinitionEntity()
-  id: 'SaveRelationDefinitionEntity()'
+- uid: CRMScript.NetServer.NSListAgent.SaveRelationDefinitionEntity(NSRelationDefinitionEntity)
+  commentId: M:CRMScript.NetServer.NSListAgent.SaveRelationDefinitionEntity(NSRelationDefinitionEntity)
+  id: 'SaveRelationDefinitionEntity(NSRelationDefinitionEntity)'
   so.intellisense: NSListAgent.SaveRelationDefinitionEntity
   langs:
   - crmscript
-  name: 'SaveRelationDefinitionEntity()'
-  nameWithType: NSListAgent.SaveRelationDefinitionEntity()
-  fullName: CRMScript.NetServer.NSListAgent.SaveRelationDefinitionEntity()
+  name: 'SaveRelationDefinitionEntity(NSRelationDefinitionEntity)'
+  nameWithType: NSListAgent.SaveRelationDefinitionEntity(NSRelationDefinitionEntity)
+  fullName: CRMScript.NetServer.NSListAgent.SaveRelationDefinitionEntity(NSRelationDefinitionEntity)
   type: Method
-  summary: "\nUpdates the existing NSRelationDefinitionEntity or creates a new NSRelationDefinitionEntity if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>relationDefinitionEntity</strong>The NSRelationDefinitionEntity to save.</li></ul>\n"
+  summary: "\nUpdates the existing NSRelationDefinitionEntity or creates a new NSRelationDefinitionEntity if the id parameter is 0\n"
   remarks: 
   syntax: 
     content: NSRelationDefinitionEntity SaveRelationDefinitionEntity(NSRelationDefinitionEntity relationDefinitionEntity)
     parameters:
+    - id: relationDefinitionEntity
+      type: CRMScript.NetServer.NSRelationDefinitionEntity
+      description: The NSRelationDefinitionEntity to save.
     return:
       type: CRMScript.NetServer.NSRelationDefinitionEntity
   example: 
@@ -5557,71 +5616,80 @@ items:
   nameWithType: NSListAgent.SaveResourceEntity(NSResourceEntity)
   fullName: CRMScript.NetServer.NSListAgent.SaveResourceEntity(NSResourceEntity)
   type: Method
-  summary: "\nUpdates the existing NSResourceEntity or creates a new NSResourceEntity if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>resourceEntity</strong>The NSResourceEntity to save.</li></ul>\n"
+  summary: "\nUpdates the existing NSResourceEntity or creates a new NSResourceEntity if the id parameter is 0\n"
   remarks: 
   syntax: 
     content: NSResourceEntity SaveResourceEntity(NSResourceEntity resourceEntity)
     parameters:
     - id: resourceEntity
       type: CRMScript.NetServer.NSResourceEntity
-      description: 
+      description: The NSResourceEntity to save.
     return:
       type: CRMScript.NetServer.NSResourceEntity
   example: 
   - "\n<pre><code>NSList  agent;\nNSResourceEntity thing = agent.CreateDefaultResourceEntity();\nthing = agent.SaveResourceEntity(thing);</code></pre>\n"
-- uid: CRMScript.NetServer.NSListAgent.SaveSaleStageEntity()
-  commentId: M:CRMScript.NetServer.NSListAgent.SaveSaleStageEntity()
-  id: 'SaveSaleStageEntity()'
+- uid: CRMScript.NetServer.NSListAgent.SaveSaleStageEntity(NSSaleStageEntity)
+  commentId: M:CRMScript.NetServer.NSListAgent.SaveSaleStageEntity(NSSaleStageEntity)
+  id: 'SaveSaleStageEntity(NSSaleStageEntity)'
   so.intellisense: NSListAgent.SaveSaleStageEntity
   langs:
   - crmscript
-  name: 'SaveSaleStageEntity()'
-  nameWithType: NSListAgent.SaveSaleStageEntity()
-  fullName: CRMScript.NetServer.NSListAgent.SaveSaleStageEntity()
+  name: 'SaveSaleStageEntity(NSSaleStageEntity)'
+  nameWithType: NSListAgent.SaveSaleStageEntity(NSSaleStageEntity)
+  fullName: CRMScript.NetServer.NSListAgent.SaveSaleStageEntity(NSSaleStageEntity)
   type: Method
-  summary: "\nUpdates the existing NSSaleStageEntity or creates a new NSSaleStageEntity if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>saleStageEntity</strong>The NSSaleStageEntity to save.</li></ul>\n"
+  summary: "\nUpdates the existing NSSaleStageEntity or creates a new NSSaleStageEntity if the id parameter is \n"
   remarks: 
   syntax: 
     content: NSSaleStageEntity SaveSaleStageEntity(NSSaleStageEntity saleStageEntity)
     parameters:
+    - id: saleStageEntity
+      type: CRMScript.NetServer.NSSaleStageEntity
+      description: The NSSaleStageEntity to save.
     return:
       type: CRMScript.NetServer.NSSaleStageEntity
   example: 
   - "\n<pre><code>NSList  agent;\nNSSaleStageEntity thing = agent.CreateDefaultSaleStageEntity();\nthing = agent.SaveSaleStageEntity(thing);</code></pre>\n"
-- uid: CRMScript.NetServer.NSListAgent.SaveSaleTypeEntity()
-  commentId: M:CRMScript.NetServer.NSListAgent.SaveSaleTypeEntity()
-  id: 'SaveSaleTypeEntity()'
+- uid: CRMScript.NetServer.NSListAgent.SaveSaleTypeEntity(NSSaleTypeEntity)
+  commentId: M:CRMScript.NetServer.NSListAgent.SaveSaleTypeEntity(NSSaleTypeEntity)
+  id: 'SaveSaleTypeEntity(NSSaleTypeEntity)'
   so.intellisense: NSListAgent.SaveSaleTypeEntity
   langs:
   - crmscript
-  name: 'SaveSaleTypeEntity()'
-  nameWithType: NSListAgent.SaveSaleTypeEntity()
-  fullName: CRMScript.NetServer.NSListAgent.SaveSaleTypeEntity()
+  name: 'SaveSaleTypeEntity(NSSaleTypeEntity)'
+  nameWithType: NSListAgent.SaveSaleTypeEntity(NSSaleTypeEntity)
+  fullName: CRMScript.NetServer.NSListAgent.SaveSaleTypeEntity(NSSaleTypeEntity)
   type: Method
-  summary: "\nUpdates the existing NSSaleTypeEntity or creates a new NSSaleTypeEntity if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>saleTypeEntity</strong>The NSSaleTypeEntity to save.</li></ul>\n"
+  summary: "\nUpdates the existing NSSaleTypeEntity or creates a new NSSaleTypeEntity if the id parameter is 0\n"
   remarks: 
   syntax: 
     content: NSSaleTypeEntity SaveSaleTypeEntity(NSSaleTypeEntity saleTypeEntity)
     parameters:
+    - id: saleTypeEntity
+      type: CRMScript.NetServer.NSSaleTypeEntity
+      description: The NSSaleTypeEntity to save.
     return:
       type: CRMScript.NetServer.NSSaleTypeEntity
   example: 
   - "\n<pre><code>NSList  agent;\nNSSaleTypeEntity thing = agent.CreateDefaultSaleTypeEntity();\nthing = agent.SaveSaleTypeEntity(thing);</code></pre>\n"
-- uid: CRMScript.NetServer.NSListAgent.SaveTicketCategoryEntity()
-  commentId: M:CRMScript.NetServer.NSListAgent.SaveTicketCategoryEntity()
-  id: 'SaveTicketCategoryEntity()'
+- uid: CRMScript.NetServer.NSListAgent.SaveTicketCategoryEntity(NSTicketCategoryEntity)
+  commentId: M:CRMScript.NetServer.NSListAgent.SaveTicketCategoryEntity(NSTicketCategoryEntity)
+  id: 'SaveTicketCategoryEntity(NSTicketCategoryEntity)'
   so.intellisense: NSListAgent.SaveTicketCategoryEntity
   langs:
   - crmscript
-  name: 'SaveTicketCategoryEntity()'
-  nameWithType: NSListAgent.SaveTicketCategoryEntity()
-  fullName: CRMScript.NetServer.NSListAgent.SaveTicketCategoryEntity()
+  name: 'SaveTicketCategoryEntity(NSTicketCategoryEntity)'
+  nameWithType: NSListAgent.SaveTicketCategoryEntity(NSTicketCategoryEntity)
+  fullName: CRMScript.NetServer.NSListAgent.SaveTicketCategoryEntity(NSTicketCategoryEntity)
   type: Method
-  summary: "\nUpdates the existing NSTicketCategoryEntity or creates a new NSTicketCategoryEntity if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>ticketCategoryEntity</strong>The NSTicketCategoryEntity to save.</li></ul>\n"
+  summary: "\nUpdates the existing NSTicketCategoryEntity or creates a new NSTicketCategoryEntity if the id parameter is 0\n"
   remarks: 
   syntax: 
     content: NSTicketCategoryEntity SaveTicketCategoryEntity(NSTicketCategoryEntity ticketCategoryEntity)
     parameters:
+    - id: ticketCategoryEntity
+      type: CRMScript.NetServer.NSTicketCategoryEntity
+      description: The NSTicketCategoryEntity to save.
     return:
       type: CRMScript.NetServer.NSTicketCategoryEntity
   example: 
@@ -5636,65 +5704,71 @@ items:
   nameWithType: NSListAgent.SaveTicketPriorityEntity(NSTicketPriorityEntity)
   fullName: CRMScript.NetServer.NSListAgent.SaveTicketPriorityEntity(NSTicketPriorityEntity)
   type: Method
-  summary: "\nUpdates the existing NSTicketPriorityEntity or creates a new NSTicketPriorityEntity if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>ticketPriorityEntity</strong>The NSTicketPriorityEntity to save.</li></ul>\n"
+  summary: "\nUpdates the existing NSTicketPriorityEntity or creates a new NSTicketPriorityEntity if the id parameter is 0\n"
   remarks: 
   syntax: 
     content: NSTicketPriorityEntity SaveTicketPriorityEntity(NSTicketPriorityEntity ticketPriorityEntity)
     parameters:
     - id: ticketPriorityEntity
       type: CRMScript.NetServer.NSTicketPriorityEntity
-      description: 
+      description: The NSTicketPriorityEntity to save.
     return:
       type: CRMScript.NetServer.NSTicketPriorityEntity
   example: 
   - "\n<pre><code>NSList  agent;\nNSTicketPriorityEntity thing = agent.CreateDefaultTicketPriorityEntity();\nthing = agent.SaveTicketPriorityEntity(thing);</code></pre>\n"
-- uid: CRMScript.NetServer.NSListAgent.SaveTicketStatusEntity()
-  commentId: M:CRMScript.NetServer.NSListAgent.SaveTicketStatusEntity()
-  id: 'SaveTicketStatusEntity()'
+- uid: CRMScript.NetServer.NSListAgent.SaveTicketStatusEntity(NSTicketStatusEntity)
+  commentId: M:CRMScript.NetServer.NSListAgent.SaveTicketStatusEntity(NSTicketStatusEntity)
+  id: 'SaveTicketStatusEntity(NSTicketStatusEntity)'
   so.intellisense: NSListAgent.SaveTicketStatusEntity
   langs:
   - crmscript
-  name: 'SaveTicketStatusEntity()'
-  nameWithType: NSListAgent.SaveTicketStatusEntity()
-  fullName: CRMScript.NetServer.NSListAgent.SaveTicketStatusEntity()
+  name: 'SaveTicketStatusEntity(NSTicketStatusEntity)'
+  nameWithType: NSListAgent.SaveTicketStatusEntity(NSTicketStatusEntity)
+  fullName: CRMScript.NetServer.NSListAgent.SaveTicketStatusEntity(NSTicketStatusEntity)
   type: Method
-  summary: "\nUpdates the existing NSTicketStatusEntity or creates a new NSTicketStatusEntity if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>ticketStatusEntity</strong>The NSTicketStatusEntity to save.</li></ul>\n"
+  summary: "\nUpdates the existing NSTicketStatusEntity or creates a new NSTicketStatusEntity if the id parameter is 0\n"
   remarks: 
   syntax: 
     content: NSTicketStatusEntity SaveTicketStatusEntity(NSTicketStatusEntity ticketStatusEntity)
     parameters:
+    - id: ticketStatusEntity
+      type: CRMScript.NetServer.NSTicketStatusEntity
+      description: The NSTicketStatusEntity to save.
     return:
       type: CRMScript.NetServer.NSTicketStatusEntity
   example: 
   - "\n<pre><code>NSList  agent;\nNSTicketStatusEntity thing = agent.CreateDefaultTicketStatusEntity();\nthing = agent.SaveTicketStatusEntity(thing);</code></pre>\n"
-- uid: CRMScript.NetServer.NSListAgent.SaveWebPanelEntity()
-  commentId: M:CRMScript.NetServer.NSListAgent.SaveWebPanelEntity()
-  id: 'SaveWebPanelEntity()'
+- uid: CRMScript.NetServer.NSListAgent.SaveWebPanelEntity(NSWebPanelEntity)
+  commentId: M:CRMScript.NetServer.NSListAgent.SaveWebPanelEntity(NSWebPanelEntity)
+  id: 'SaveWebPanelEntity(NSWebPanelEntity)'
   so.intellisense: NSListAgent.SaveWebPanelEntity
   langs:
   - crmscript
-  name: 'SaveWebPanelEntity()'
-  nameWithType: NSListAgent.SaveWebPanelEntity()
-  fullName: CRMScript.NetServer.NSListAgent.SaveWebPanelEntity()
+  name: 'SaveWebPanelEntity(NSWebPanelEntity)'
+  nameWithType: NSListAgent.SaveWebPanelEntity(NSWebPanelEntity)
+  fullName: CRMScript.NetServer.NSListAgent.SaveWebPanelEntity(NSWebPanelEntity)
   type: Method
-  summary: "\nUpdates the existing NSWebPanelEntity or creates a new NSWebPanelEntity if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>webPanelEntity</strong>The NSWebPanelEntity to save.</li></ul>\n"
+  summary: "\nUpdates the existing NSWebPanelEntity or creates a new NSWebPanelEntity if the id parameter is 0\n"
   remarks: 
   syntax: 
     content: NSWebPanelEntity SaveWebPanelEntity(NSWebPanelEntity webPanelEntity)
     parameters:
+    - id: webPanelEntity
+      type: CRMScript.NetServer.NSWebPanelEntity
+      description: The NSWebPanelEntity to save.
     return:
       type: CRMScript.NetServer.NSWebPanelEntity
   example: 
   - "\n<pre><code>NSList  agent;\nNSWebPanelEntity thing = agent.CreateDefaultWebPanelEntity();\nthing = agent.SaveWebPanelEntity(thing);</code></pre>\n"
-- uid: CRMScript.NetServer.NSListAgent.SetDocumentTemplateFromDocumentTemplate(Integer)
-  commentId: M:CRMScript.NetServer.NSListAgent.SetDocumentTemplateFromDocumentTemplate(Integer)
-  id: 'SetDocumentTemplateFromDocumentTemplate(Integer)'
+- uid: CRMScript.NetServer.NSListAgent.SetDocumentTemplateFromDocumentTemplate(Integer,NSDocumentTemplateEntity)
+  commentId: M:CRMScript.NetServer.NSListAgent.SetDocumentTemplateFromDocumentTemplate(Integer,NSDocumentTemplateEntity)
+  id: 'SetDocumentTemplateFromDocumentTemplate(Integer,NSDocumentTemplateEntity)'
   so.intellisense: NSListAgent.SetDocumentTemplateFromDocumentTemplate
   langs:
   - crmscript
-  name: 'SetDocumentTemplateFromDocumentTemplate(Integer)'
-  nameWithType: NSListAgent.SetDocumentTemplateFromDocumentTemplate(Integer)
-  fullName: CRMScript.NetServer.NSListAgent.SetDocumentTemplateFromDocumentTemplate(Integer)
+  name: 'SetDocumentTemplateFromDocumentTemplate(Integer,NSDocumentTemplateEntity)'
+  nameWithType: NSListAgent.SetDocumentTemplateFromDocumentTemplate(Integer,NSDocumentTemplateEntity)
+  fullName: CRMScript.NetServer.NSListAgent.SetDocumentTemplateFromDocumentTemplate(Integer,NSDocumentTemplateEntity)
   type: Method
   summary: "\nCreates a new document template based on another template\n"
   remarks: 
@@ -5704,25 +5778,34 @@ items:
     - id: sourceDocumentTemplateId
       type: CRMScript.Global.Integer
       description: 
+    - id: documentTemplateEntity
+      type: CRMScript.NetServer.NSDocumentTemplateEntity
+      description:
     return:
       type: CRMScript.NetServer.NSDocumentTemplateEntity
   example: 
   - "\n<pre><code>NSListAgent agent;\nInteger sourceDocumentTemplateId;\nNSDocumentTemplateEntity documentTemplateEntity;\nNSDocumentTemplateEntity res = agent.SetDocumentTemplateFromDocumentTemplate(sourceDocumentTemplateId, documentTemplateEntity);</code></pre>\n"
-- uid: CRMScript.NetServer.NSListAgent.SetDocumentTemplateStream(String,Integer)
-  commentId: M:CRMScript.NetServer.NSListAgent.SetDocumentTemplateStream(String,Integer)
-  id: 'SetDocumentTemplateStream(String,Integer)'
+- uid: CRMScript.NetServer.NSListAgent.SetDocumentTemplateStream(NSDocumentTemplateEntity,NSStream,String,Integer)
+  commentId: M:CRMScript.NetServer.NSListAgent.SetDocumentTemplateStream(NSDocumentTemplateEntity,NSStream,String,Integer)
+  id: 'SetDocumentTemplateStream(NSDocumentTemplateEntity,NSStream,String,Integer)'
   so.intellisense: NSListAgent.SetDocumentTemplateStream
   langs:
   - crmscript
-  name: 'SetDocumentTemplateStream(String,Integer)'
-  nameWithType: NSListAgent.SetDocumentTemplateStream(String,Integer)
-  fullName: CRMScript.NetServer.NSListAgent.SetDocumentTemplateStream(String,Integer)
+  name: 'SetDocumentTemplateStream(NSDocumentTemplateEntity,NSStream,String,Integer)'
+  nameWithType: NSListAgent.SetDocumentTemplateStream(NSDocumentTemplateEntity,NSStream,String,Integer)
+  fullName: CRMScript.NetServer.NSListAgent.SetDocumentTemplateStream(NSDocumentTemplateEntity,NSStream,String,Integer)
   type: Method
-  summary: "\nStore a document template from its stream. Since there is a potential for a name conflict (the file name stored by the document entity earlier may prove to be invalid), the (possibly amended) document entity is returned. The client should not assume that any earlier, cached entity information is valid.\n"
-  remarks: 
+  summary: "\nStores a document template from its stream.\n"
+  remarks: "\nSince there is a potential for a name conflict (the file name stored by the document entity earlier may prove to be invalid), the (possibly amended) document entity is returned. The client should not assume that any earlier, cached entity information is valid.\n"
   syntax: 
     content: NSDocumentTemplateEntity SetDocumentTemplateStream(NSDocumentTemplateEntity documentTemplateEntity, NSStream stream, String languageCode, Integer pluginId)
     parameters:
+    - id: documentTemplateEntity
+      type: CRMScript.NetServer.NSDocumentTemplateEntity
+      description:
+    - id: stream
+      type: CRMScript.NetServer.NSStream
+      description:
     - id: languageCode
       type: CRMScript.Global.String
       description: 
@@ -5743,7 +5826,7 @@ items:
   nameWithType: NSListAgent.SetEmarketingStrictMode(Bool)
   fullName: CRMScript.NetServer.NSListAgent.SetEmarketingStrictMode(Bool)
   type: Method
-  summary: "\nTurn on the Emarketing strict mode, which will enable full GDPR rules concerning Emarketing consents and subscriptions\n"
+  summary: "\nTurns on the Emarketing strict mode, which will enable full GDPR rules concerning Emarketing consents and subscriptions\n"
   remarks: 
   syntax: 
     content: Void SetEmarketingStrictMode(Bool enable)
@@ -5776,6 +5859,9 @@ items:
     - id: listItemId
       type: CRMScript.Global.Integer
       description: 
+    - id: headingIds
+      type: CRMScript.Global.Integer[]
+      description:
     - id: enable
       type: CRMScript.Global.Bool
       description: 
@@ -6077,15 +6163,15 @@ items:
     return:
       type: CRMScript.Global.Void
   example: 
-- uid: CRMScript.NetServer.NSListAgent.SetVisibleForUserGroups(Integer,Integer)
-  commentId: M:CRMScript.NetServer.NSListAgent.SetVisibleForUserGroups(Integer,Integer)
-  id: 'SetVisibleForUserGroups(Integer,Integer)'
+- uid: CRMScript.NetServer.NSListAgent.SetVisibleForUserGroups(Integer,Integer,NSSelectableMDOListItem[])
+  commentId: M:CRMScript.NetServer.NSListAgent.SetVisibleForUserGroups(Integer,Integer,NSSelectableMDOListItem[])
+  id: 'SetVisibleForUserGroups(Integer,Integer,NSSelectableMDOListItem[])'
   so.intellisense: NSListAgent.SetVisibleForUserGroups
   langs:
   - crmscript
-  name: 'SetVisibleForUserGroups(Integer,Integer)'
-  nameWithType: NSListAgent.SetVisibleForUserGroups(Integer,Integer)
-  fullName: CRMScript.NetServer.NSListAgent.SetVisibleForUserGroups(Integer,Integer)
+  name: 'SetVisibleForUserGroups(Integer,Integer,NSSelectableMDOListItem[])'
+  nameWithType: NSListAgent.SetVisibleForUserGroups(Integer,Integer,NSSelectableMDOListItem[])
+  fullName: CRMScript.NetServer.NSListAgent.SetVisibleForUserGroups(Integer,Integer,NSSelectableMDOListItem[])
   type: Method
   summary: "\nUpdates User groups that this list item is visible for\n"
   remarks: 
@@ -6098,6 +6184,9 @@ items:
     - id: listItemId
       type: CRMScript.Global.Integer
       description: 
+    - id: userGroups
+      type: CRMScript.NetServer.NSSelectableMDOListItem[]
+      description:
     return:
       type: CRMScript.NetServer.NSSelectableMDOListItem[]
   example: 
@@ -6123,6 +6212,9 @@ items:
     - id: listItemId
       type: CRMScript.Global.Integer
       description: 
+    - id: userGroups
+      type: CRMScript.NetServer.NSSelectableMDOListItem[]
+      description:
     return:
       type: CRMScript.NetServer.NSSelectableMDOListItem[]
   example: 
@@ -6151,18 +6243,18 @@ items:
     return:
       type: CRMScript.Global.Void
   example: 
-- uid: CRMScript.NetServer.NSListAgent.UpdateHierarchyFromPath(Integer,String)
-  commentId: M:CRMScript.NetServer.NSListAgent.UpdateHierarchyFromPath(Integer,String)
-  id: 'UpdateHierarchyFromPath(Integer,String)'
+- uid: CRMScript.NetServer.NSListAgent.UpdateHierarchyFromPath(Integer,String,NSHierarchyEntity)
+  commentId: M:CRMScript.NetServer.NSListAgent.UpdateHierarchyFromPath(Integer,String,NSHierarchyEntity)
+  id: 'UpdateHierarchyFromPath(Integer,String,NSHierarchyEntity)'
   so.intellisense: NSListAgent.UpdateHierarchyFromPath
   langs:
   - crmscript
-  name: 'UpdateHierarchyFromPath(Integer,String)'
-  nameWithType: NSListAgent.UpdateHierarchyFromPath(Integer,String)
-  fullName: CRMScript.NetServer.NSListAgent.UpdateHierarchyFromPath(Integer,String)
+  name: 'UpdateHierarchyFromPath(Integer,String,NSHierarchyEntity)'
+  nameWithType: NSListAgent.UpdateHierarchyFromPath(Integer,String,NSHierarchyEntity)
+  fullName: CRMScript.NetServer.NSListAgent.UpdateHierarchyFromPath(Integer,String,NSHierarchyEntity)
   type: Method
   summary: "\nUpdates a hierarchy item from a path\n"
-  remarks: "\n<p>See enum entity.</p>\n"
+  remarks: ""
   syntax: 
     content: NSHierarchyEntity UpdateHierarchyFromPath(Integer domain, String path, NSHierarchyEntity entity)
     parameters:
@@ -6172,6 +6264,9 @@ items:
     - id: path
       type: CRMScript.Global.String
       description: 
+    - id: entity
+      type: CRMScript.NetServer.NSHierarchyEntity
+      description: See enum entity.
     return:
       type: CRMScript.NetServer.NSHierarchyEntity
   example: 

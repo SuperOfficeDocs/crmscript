@@ -6,11 +6,11 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSMultiAlarmData.#ctor
   - CRMScript.NetServer.NSMultiAlarmData.GetAlarms()
   - CRMScript.NetServer.NSMultiAlarmData.GetPollingInterval()
   - CRMScript.NetServer.NSMultiAlarmData.GetSilentAfter()
-  - CRMScript.NetServer.NSMultiAlarmData.#ctor
-  - CRMScript.NetServer.NSMultiAlarmData.SetAlarms()
+  - CRMScript.NetServer.NSMultiAlarmData.SetAlarms(NSAlarmData[])
   - CRMScript.NetServer.NSMultiAlarmData.SetPollingInterval(Integer)
   - CRMScript.NetServer.NSMultiAlarmData.SetSilentAfter(Integer)
   name: NSMultiAlarmData
@@ -18,6 +18,21 @@ items:
   fullName: CRMScript.NetServer.NSMultiAlarmData
   type: Class
   summary: 
+  example: 
+- uid: CRMScript.NetServer.NSMultiAlarmData.#ctor
+  commentId: M:CRMScript.NetServer.NSMultiAlarmData.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSMultiAlarmData
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSMultiAlarmData.#ctor
+  fullName: CRMScript.NetServer.NSMultiAlarmData.#ctor
+  type: Constructor
+  summary: 
+  remarks: 
+  syntax: 
+    content: NSMultiAlarmData
   example: 
 - uid: CRMScript.NetServer.NSMultiAlarmData.GetAlarms()
   commentId: M:CRMScript.NetServer.NSMultiAlarmData.GetAlarms()
@@ -29,7 +44,7 @@ items:
   nameWithType: NSMultiAlarmData.GetAlarms()
   fullName: CRMScript.NetServer.NSMultiAlarmData.GetAlarms()
   type: Method
-  summary: "\n<strong>Returns:</strong>NSAlarmData[]<p></p>\n<pre><code>NSMultiAlarmData thing;\nNSAlarmData[] alarms = thing.GetAlarms();</code></pre>\n"
+  summary: ""
   remarks: 
   syntax: 
     content: NSAlarmData[] GetAlarms()
@@ -76,36 +91,26 @@ items:
       type: CRMScript.Global.Integer
   example: 
   - "\n<pre><code>NSMultiAlarmData thing;\nInteger silentAfter = thing.GetSilentAfter();</code></pre>\n"
-- uid: CRMScript.NetServer.NSMultiAlarmData.#ctor
-  commentId: M:CRMScript.NetServer.NSMultiAlarmData.#ctor
-  id: '#ctor'
-  so.intellisense: Void.NSMultiAlarmData
-  langs:
-  - crmscript
-  name: '#ctor'
-  nameWithType: NSMultiAlarmData.#ctor
-  fullName: CRMScript.NetServer.NSMultiAlarmData.#ctor
-  type: Constructor
-  summary: 
-  remarks: 
-  syntax: 
-    content: NSMultiAlarmData
-  example: 
-- uid: CRMScript.NetServer.NSMultiAlarmData.SetAlarms()
-  commentId: M:CRMScript.NetServer.NSMultiAlarmData.SetAlarms()
-  id: 'SetAlarms()'
+- uid: CRMScript.NetServer.NSMultiAlarmData.SetAlarms(NSAlarmData[])
+  commentId: M:CRMScript.NetServer.NSMultiAlarmData.SetAlarms(NSAlarmData[])
+  id: 'SetAlarms(NSAlarmData[])'
   so.intellisense: NSMultiAlarmData.SetAlarms
   langs:
   - crmscript
-  name: 'SetAlarms()'
-  nameWithType: NSMultiAlarmData.SetAlarms()
-  fullName: CRMScript.NetServer.NSMultiAlarmData.SetAlarms()
+  name: 'SetAlarms(NSAlarmData[])'
+  nameWithType: NSMultiAlarmData.SetAlarms(NSAlarmData[])
+  fullName: CRMScript.NetServer.NSMultiAlarmData.SetAlarms(NSAlarmData[])
   type: Method
   summary: 
   remarks: 
   syntax: 
     content: Void SetAlarms(NSAlarmData[] alarms)
     parameters:
+    - id: alarms
+      type: CRMScript.NetServer.NSAlarmData[]
+      description:
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSMultiAlarmData thing;\nNSAlarmData[] alarms;\nthing.SetAlarms(alarms);</code></pre>\n"
 - uid: CRMScript.NetServer.NSMultiAlarmData.SetPollingInterval(Integer)

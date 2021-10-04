@@ -6,6 +6,7 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSMDOAgent.#ctor
   - CRMScript.NetServer.NSMDOAgent.GetList(String,Bool,String,Bool)
   - CRMScript.NetServer.NSMDOAgent.GetListIdByListName(String)
   - CRMScript.NetServer.NSMDOAgent.GetListItem(String,Integer)
@@ -17,13 +18,28 @@ items:
   - CRMScript.NetServer.NSMDOAgent.GetSelectableListWithRestriction(String,String,String)
   - CRMScript.NetServer.NSMDOAgent.GetSelectableSimpleList(String)
   - CRMScript.NetServer.NSMDOAgent.GetSimpleList(String)
-  - CRMScript.NetServer.NSMDOAgent.#ctor
   - CRMScript.NetServer.NSMDOAgent.SetSelected(String,String)
   name: NSMDOAgent
   nameWithType: NSMDOAgent
   fullName: CRMScript.NetServer.NSMDOAgent
   type: Class
   summary: "\nMDO Lists, reading, searching, and item lookup.\n"
+  example: 
+  - "\n<pre><code>NSMDOAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSMDOAgent.#ctor
+  commentId: M:CRMScript.NetServer.NSMDOAgent.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSMDOAgent
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSMDOAgent.#ctor
+  fullName: CRMScript.NetServer.NSMDOAgent.#ctor
+  type: Constructor
+  summary: "\nMDO Lists, reading, searching, and item lookup.\n"
+  remarks: 
+  syntax: 
+    content: NSMDOAgent
   example: 
   - "\n<pre><code>NSMDOAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSMDOAgent.GetList(String,Bool,String,Bool)
@@ -36,7 +52,7 @@ items:
   nameWithType: NSMDOAgent.GetList(String,Bool,String,Bool)
   fullName: CRMScript.NetServer.NSMDOAgent.GetList(String,Bool,String,Bool)
   type: Method
-  summary: "\nMethod to get a MDO list.\n"
+  summary: "\nGets an MDO list.\n"
   remarks: 
   syntax: 
     content: NSMDOListItem[] GetList(String name, Bool forceFlatList, String additionalInfo, Bool onlyHistory)
@@ -67,8 +83,8 @@ items:
   nameWithType: NSMDOAgent.GetListIdByListName(String)
   fullName: CRMScript.NetServer.NSMDOAgent.GetListIdByListName(String)
   type: Method
-  summary: "\nRetrieve the UdListDefinition ID of a list, by its name. Not all lists have such an ID, but those that are based on tables do (the list name is then the same as the table name)\n"
-  remarks: 
+  summary: "\nRetrieves the UdListDefinition ID of a list, by its name.\n"
+  remarks: "\nNot all lists have such an ID, but those that are based on tables do (the list name is then the same as the table name)\n"
   syntax: 
     content: Integer GetListIdByListName(String name)
     parameters:
@@ -114,8 +130,8 @@ items:
   nameWithType: NSMDOAgent.GetListNames()
   fullName: CRMScript.NetServer.NSMDOAgent.GetListNames()
   type: Method
-  summary: "\nReturns a list of all MDO List names. These names can also be used with the Archive agent as ProviderNames.<p></p>\n<strong>Returns:</strong>String[]<p></p>\n<pre><code>NSMDOAgent agent;\nString[] res = agent.GetListNames();</code></pre>\n"
-  remarks: 
+  summary: "\nReturns a list of all MDO List names.\n"
+  remarks: "\nThese names can also be used with the Archive agent as ProviderNames.\n"
   syntax: 
     content: String[] GetListNames()
     parameters: []
@@ -133,7 +149,7 @@ items:
   nameWithType: NSMDOAgent.GetListWithHistory(String,Bool,String,Integer[],Bool)
   fullName: CRMScript.NetServer.NSMDOAgent.GetListWithHistory(String,Bool,String,Integer[],Bool)
   type: Method
-  summary: "\nMethod to get a MDO list with own history list.\n"
+  summary: "\nGet an MDO list with own history list.\n"
   remarks: 
   syntax: 
     content: NSMDOListItem[] GetListWithHistory(String name, Bool forceFlatList, String additionalInfo, Integer[] historyItems, Bool onlyHistory)
@@ -167,7 +183,7 @@ items:
   nameWithType: NSMDOAgent.GetListWithRestriction(String,String,String)
   fullName: CRMScript.NetServer.NSMDOAgent.GetListWithRestriction(String,String,String)
   type: Method
-  summary: "\nMethod to get a MDO list with restrictions.\n"
+  summary: "\nGets an MDO list with restrictions.\n"
   remarks: 
   syntax: 
     content: NSMDOListItem[] GetListWithRestriction(String name, String additionalInfo, String searchValue)
@@ -195,7 +211,7 @@ items:
   nameWithType: NSMDOAgent.GetSelectableList(String,Bool,String,Bool)
   fullName: CRMScript.NetServer.NSMDOAgent.GetSelectableList(String,Bool,String,Bool)
   type: Method
-  summary: "\nMethod to get a Selectable MDO list.\n"
+  summary: "\nGets a Selectable MDO list.\n"
   remarks: 
   syntax: 
     content: NSSelectableMDOListItem[] GetSelectableList(String name, Bool forceFlatList, String additionalInfo, Bool onlyHistory)
@@ -226,7 +242,7 @@ items:
   nameWithType: NSMDOAgent.GetSelectableListWithHistory(String,Bool,String,Integer[],Bool)
   fullName: CRMScript.NetServer.NSMDOAgent.GetSelectableListWithHistory(String,Bool,String,Integer[],Bool)
   type: Method
-  summary: "\nMethod to get a Selectable MDO list with own history list.\n"
+  summary: "\nGets a Selectable MDO list with own history list.\n"
   remarks: 
   syntax: 
     content: NSSelectableMDOListItem[] GetSelectableListWithHistory(String name, Bool forceFlatList, String additionalInfo, Integer[] historyItems, Bool onlyHistory)
@@ -260,7 +276,7 @@ items:
   nameWithType: NSMDOAgent.GetSelectableListWithRestriction(String,String,String)
   fullName: CRMScript.NetServer.NSMDOAgent.GetSelectableListWithRestriction(String,String,String)
   type: Method
-  summary: "\nMethod to get a Selectable MDO list with restrictions.\n"
+  summary: "\nGets a Selectable MDO list with restrictions.\n"
   remarks: 
   syntax: 
     content: NSSelectableMDOListItem[] GetSelectableListWithRestriction(String name, String additionalInfo, String searchValue)
@@ -288,7 +304,7 @@ items:
   nameWithType: NSMDOAgent.GetSelectableSimpleList(String)
   fullName: CRMScript.NetServer.NSMDOAgent.GetSelectableSimpleList(String)
   type: Method
-  summary: "\nMethod returns a flat Selectable MDO List.\n"
+  summary: "\nReturns a flat Selectable MDO List.\n"
   remarks: 
   syntax: 
     content: NSSelectableMDOListItem[] GetSelectableSimpleList(String name)
@@ -310,7 +326,7 @@ items:
   nameWithType: NSMDOAgent.GetSimpleList(String)
   fullName: CRMScript.NetServer.NSMDOAgent.GetSimpleList(String)
   type: Method
-  summary: "\nMethod returns a simple flat MDO List.\n"
+  summary: "\nReturns a simple flat MDO List.\n"
   remarks: 
   syntax: 
     content: NSMDOListItem[] GetSimpleList(String name)
@@ -322,22 +338,6 @@ items:
       type: CRMScript.NetServer.NSMDOListItem[]
   example: 
   - "\n<pre><code>NSMDOAgent agent;\nString name;\nNSMDOListItem[] res = agent.GetSimpleList(name);</code></pre>\n"
-- uid: CRMScript.NetServer.NSMDOAgent.#ctor
-  commentId: M:CRMScript.NetServer.NSMDOAgent.#ctor
-  id: '#ctor'
-  so.intellisense: Void.NSMDOAgent
-  langs:
-  - crmscript
-  name: '#ctor'
-  nameWithType: NSMDOAgent.#ctor
-  fullName: CRMScript.NetServer.NSMDOAgent.#ctor
-  type: Constructor
-  summary: "\nMDO Lists, reading, searching, and item lookup.\n"
-  remarks: 
-  syntax: 
-    content: NSMDOAgent
-  example: 
-  - "\n<pre><code>NSMDOAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSMDOAgent.SetSelected(String,String)
   commentId: M:CRMScript.NetServer.NSMDOAgent.SetSelected(String,String)
   id: 'SetSelected(String,String)'

@@ -6,6 +6,7 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSMailboxEntity.#ctor
   - CRMScript.NetServer.NSMailboxEntity.GetAddress()
   - CRMScript.NetServer.NSMailboxEntity.GetMailInFilterId()
   - CRMScript.NetServer.NSMailboxEntity.GetPassword()
@@ -13,7 +14,6 @@ items:
   - CRMScript.NetServer.NSMailboxEntity.GetServer()
   - CRMScript.NetServer.NSMailboxEntity.GetServerType()
   - CRMScript.NetServer.NSMailboxEntity.GetUsername()
-  - CRMScript.NetServer.NSMailboxEntity.#ctor
   - CRMScript.NetServer.NSMailboxEntity.SetAddress(String)
   - CRMScript.NetServer.NSMailboxEntity.SetMailInFilterId(Integer)
   - CRMScript.NetServer.NSMailboxEntity.SetPassword(String)
@@ -27,139 +27,6 @@ items:
   type: Class
   summary: 
   example: 
-- uid: CRMScript.NetServer.NSMailboxEntity.GetAddress()
-  commentId: M:CRMScript.NetServer.NSMailboxEntity.GetAddress()
-  id: 'GetAddress()'
-  so.intellisense: NSMailboxEntity.GetAddress
-  langs:
-  - crmscript
-  name: 'GetAddress()'
-  nameWithType: NSMailboxEntity.GetAddress()
-  fullName: CRMScript.NetServer.NSMailboxEntity.GetAddress()
-  type: Method
-  summary: "\nThe address associated with this mailbox (used as FROM: address when sending emails).\n"
-  remarks: 
-  syntax: 
-    content: String GetAddress()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-  example: 
-  - "\n<pre><code>NSMailboxEntity thing;\nString address = thing.GetAddress();</code></pre>\n"
-- uid: CRMScript.NetServer.NSMailboxEntity.GetMailInFilterId()
-  commentId: M:CRMScript.NetServer.NSMailboxEntity.GetMailInFilterId()
-  id: 'GetMailInFilterId()'
-  so.intellisense: NSMailboxEntity.GetMailInFilterId
-  langs:
-  - crmscript
-  name: 'GetMailInFilterId()'
-  nameWithType: NSMailboxEntity.GetMailInFilterId()
-  fullName: CRMScript.NetServer.NSMailboxEntity.GetMailInFilterId()
-  type: Method
-  summary: "\nThe primary key (auto-incremented)\n"
-  remarks: 
-  syntax: 
-    content: Integer GetMailInFilterId()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-  example: 
-  - "\n<pre><code>NSMailboxEntity thing;\nInteger mailInFilterId = thing.GetMailInFilterId();</code></pre>\n"
-- uid: CRMScript.NetServer.NSMailboxEntity.GetPassword()
-  commentId: M:CRMScript.NetServer.NSMailboxEntity.GetPassword()
-  id: 'GetPassword()'
-  so.intellisense: NSMailboxEntity.GetPassword
-  langs:
-  - crmscript
-  name: 'GetPassword()'
-  nameWithType: NSMailboxEntity.GetPassword()
-  fullName: CRMScript.NetServer.NSMailboxEntity.GetPassword()
-  type: Method
-  summary: "\nThe password used to log into the mail account. This is hidden when reading\n"
-  remarks: 
-  syntax: 
-    content: String GetPassword()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-  example: 
-  - "\n<pre><code>NSMailboxEntity thing;\nString password = thing.GetPassword();</code></pre>\n"
-- uid: CRMScript.NetServer.NSMailboxEntity.GetPort()
-  commentId: M:CRMScript.NetServer.NSMailboxEntity.GetPort()
-  id: 'GetPort()'
-  so.intellisense: NSMailboxEntity.GetPort
-  langs:
-  - crmscript
-  name: 'GetPort()'
-  nameWithType: NSMailboxEntity.GetPort()
-  fullName: CRMScript.NetServer.NSMailboxEntity.GetPort()
-  type: Method
-  summary: "\nThe port used to connect to the server\n"
-  remarks: 
-  syntax: 
-    content: Integer GetPort()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-  example: 
-  - "\n<pre><code>NSMailboxEntity thing;\nInteger port = thing.GetPort();</code></pre>\n"
-- uid: CRMScript.NetServer.NSMailboxEntity.GetServer()
-  commentId: M:CRMScript.NetServer.NSMailboxEntity.GetServer()
-  id: 'GetServer()'
-  so.intellisense: NSMailboxEntity.GetServer
-  langs:
-  - crmscript
-  name: 'GetServer()'
-  nameWithType: NSMailboxEntity.GetServer()
-  fullName: CRMScript.NetServer.NSMailboxEntity.GetServer()
-  type: Method
-  summary: "\nThe email server to connect to\n"
-  remarks: 
-  syntax: 
-    content: String GetServer()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-  example: 
-  - "\n<pre><code>NSMailboxEntity thing;\nString server = thing.GetServer();</code></pre>\n"
-- uid: CRMScript.NetServer.NSMailboxEntity.GetServerType()
-  commentId: M:CRMScript.NetServer.NSMailboxEntity.GetServerType()
-  id: 'GetServerType()'
-  so.intellisense: NSMailboxEntity.GetServerType
-  langs:
-  - crmscript
-  name: 'GetServerType()'
-  nameWithType: NSMailboxEntity.GetServerType()
-  fullName: CRMScript.NetServer.NSMailboxEntity.GetServerType()
-  type: Method
-  summary: "\nEnum indicating the protocol to use (POP/IMAP).<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Pop</li><li>Enum: 2 = Imap</li><li>Enum: 3 = Mapi</li><li>Enum: 4 = Facebook</li><li>Enum: 5 = Pops</li><li>Enum: 6 = Imaps</li><li>Enum: 7 = SmsPlugin</li><li>Enum: 8 = Mailgun</li><li>Enum: 9 = ImapOAuth</li></ul><pre><code>NSMailboxEntity thing;\nInteger serverType = thing.GetServerType();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: Integer GetServerType()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-  example: 
-  - "\n<pre><code>NSMailboxEntity thing;\nInteger serverType = thing.GetServerType();</code></pre>\n"
-- uid: CRMScript.NetServer.NSMailboxEntity.GetUsername()
-  commentId: M:CRMScript.NetServer.NSMailboxEntity.GetUsername()
-  id: 'GetUsername()'
-  so.intellisense: NSMailboxEntity.GetUsername
-  langs:
-  - crmscript
-  name: 'GetUsername()'
-  nameWithType: NSMailboxEntity.GetUsername()
-  fullName: CRMScript.NetServer.NSMailboxEntity.GetUsername()
-  type: Method
-  summary: "\nThe username used to log onto the mail account\n"
-  remarks: 
-  syntax: 
-    content: String GetUsername()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-  example: 
-  - "\n<pre><code>NSMailboxEntity thing;\nString username = thing.GetUsername();</code></pre>\n"
 - uid: CRMScript.NetServer.NSMailboxEntity.#ctor
   commentId: M:CRMScript.NetServer.NSMailboxEntity.#ctor
   id: '#ctor'
@@ -175,6 +42,146 @@ items:
   syntax: 
     content: NSMailboxEntity
   example: 
+- uid: CRMScript.NetServer.NSMailboxEntity.GetAddress()
+  commentId: M:CRMScript.NetServer.NSMailboxEntity.GetAddress()
+  id: 'GetAddress()'
+  so.intellisense: NSMailboxEntity.GetAddress
+  langs:
+  - crmscript
+  name: 'GetAddress()'
+  nameWithType: NSMailboxEntity.GetAddress()
+  fullName: CRMScript.NetServer.NSMailboxEntity.GetAddress()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: String GetAddress()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: The address associated with this mailbox (used as FROM address when sending emails).
+  example: 
+  - "\n<pre><code>NSMailboxEntity thing;\nString address = thing.GetAddress();</code></pre>\n"
+- uid: CRMScript.NetServer.NSMailboxEntity.GetMailInFilterId()
+  commentId: M:CRMScript.NetServer.NSMailboxEntity.GetMailInFilterId()
+  id: 'GetMailInFilterId()'
+  so.intellisense: NSMailboxEntity.GetMailInFilterId
+  langs:
+  - crmscript
+  name: 'GetMailInFilterId()'
+  nameWithType: NSMailboxEntity.GetMailInFilterId()
+  fullName: CRMScript.NetServer.NSMailboxEntity.GetMailInFilterId()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: Integer GetMailInFilterId()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: The primary key (auto-incremented)
+  example: 
+  - "\n<pre><code>NSMailboxEntity thing;\nInteger mailInFilterId = thing.GetMailInFilterId();</code></pre>\n"
+- uid: CRMScript.NetServer.NSMailboxEntity.GetPassword()
+  commentId: M:CRMScript.NetServer.NSMailboxEntity.GetPassword()
+  id: 'GetPassword()'
+  so.intellisense: NSMailboxEntity.GetPassword
+  langs:
+  - crmscript
+  name: 'GetPassword()'
+  nameWithType: NSMailboxEntity.GetPassword()
+  fullName: CRMScript.NetServer.NSMailboxEntity.GetPassword()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: String GetPassword()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: The password used to log into the mail account. This is hidden when reading
+  example: 
+  - "\n<pre><code>NSMailboxEntity thing;\nString password = thing.GetPassword();</code></pre>\n"
+- uid: CRMScript.NetServer.NSMailboxEntity.GetPort()
+  commentId: M:CRMScript.NetServer.NSMailboxEntity.GetPort()
+  id: 'GetPort()'
+  so.intellisense: NSMailboxEntity.GetPort
+  langs:
+  - crmscript
+  name: 'GetPort()'
+  nameWithType: NSMailboxEntity.GetPort()
+  fullName: CRMScript.NetServer.NSMailboxEntity.GetPort()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: Integer GetPort()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: The port used to connect to the server
+  example: 
+  - "\n<pre><code>NSMailboxEntity thing;\nInteger port = thing.GetPort();</code></pre>\n"
+- uid: CRMScript.NetServer.NSMailboxEntity.GetServer()
+  commentId: M:CRMScript.NetServer.NSMailboxEntity.GetServer()
+  id: 'GetServer()'
+  so.intellisense: NSMailboxEntity.GetServer
+  langs:
+  - crmscript
+  name: 'GetServer()'
+  nameWithType: NSMailboxEntity.GetServer()
+  fullName: CRMScript.NetServer.NSMailboxEntity.GetServer()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: String GetServer()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: The email server to connect to
+  example: 
+  - "\n<pre><code>NSMailboxEntity thing;\nString server = thing.GetServer();</code></pre>\n"
+- uid: CRMScript.NetServer.NSMailboxEntity.GetServerType()
+  commentId: M:CRMScript.NetServer.NSMailboxEntity.GetServerType()
+  id: 'GetServerType()'
+  so.intellisense: NSMailboxEntity.GetServerType
+  langs:
+  - crmscript
+  name: 'GetServerType()'
+  nameWithType: NSMailboxEntity.GetServerType()
+  fullName: CRMScript.NetServer.NSMailboxEntity.GetServerType()
+  type: Method
+  summary: "<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Pop</li><li>Enum: 2 = Imap</li><li>Enum: 3 = Mapi</li><li>Enum: 4 = Facebook</li><li>Enum: 5 = Pops</li><li>Enum: 6 = Imaps</li><li>Enum: 7 = SmsPlugin</li><li>Enum: 8 = Mailgun</li><li>Enum: 9 = ImapOAuth</li></ul>"
+  remarks: 
+  syntax: 
+    content: Integer GetServerType()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: Enum indicating the protocol to use (POP/IMAP).
+  example: 
+  - "\n<pre><code>NSMailboxEntity thing;\nInteger serverType = thing.GetServerType();</code></pre>\n"
+- uid: CRMScript.NetServer.NSMailboxEntity.GetUsername()
+  commentId: M:CRMScript.NetServer.NSMailboxEntity.GetUsername()
+  id: 'GetUsername()'
+  so.intellisense: NSMailboxEntity.GetUsername
+  langs:
+  - crmscript
+  name: 'GetUsername()'
+  nameWithType: NSMailboxEntity.GetUsername()
+  fullName: CRMScript.NetServer.NSMailboxEntity.GetUsername()
+  type: Method
+  summary: "\\n"
+  remarks: 
+  syntax: 
+    content: String GetUsername()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: nThe username used to log onto the mail account
+  example: 
+  - "\n<pre><code>NSMailboxEntity thing;\nString username = thing.GetUsername();</code></pre>\n"
 - uid: CRMScript.NetServer.NSMailboxEntity.SetAddress(String)
   commentId: M:CRMScript.NetServer.NSMailboxEntity.SetAddress(String)
   id: 'SetAddress(String)'
@@ -185,14 +192,14 @@ items:
   nameWithType: NSMailboxEntity.SetAddress(String)
   fullName: CRMScript.NetServer.NSMailboxEntity.SetAddress(String)
   type: Method
-  summary: "\nThe address associated with this mailbox (used as FROM: address when sending emails).\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetAddress(String address)
     parameters:
     - id: address
       type: CRMScript.Global.String
-      description: 
+      description: The address associated with this mailbox (used as FROM address when sending emails).
     return:
       type: CRMScript.Global.Void
   example: 
@@ -207,14 +214,14 @@ items:
   nameWithType: NSMailboxEntity.SetMailInFilterId(Integer)
   fullName: CRMScript.NetServer.NSMailboxEntity.SetMailInFilterId(Integer)
   type: Method
-  summary: "\nThe primary key (auto-incremented)\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetMailInFilterId(Integer mailInFilterId)
     parameters:
     - id: mailInFilterId
       type: CRMScript.Global.Integer
-      description: 
+      description: The primary key (auto-incremented)
     return:
       type: CRMScript.Global.Void
   example: 
@@ -229,14 +236,14 @@ items:
   nameWithType: NSMailboxEntity.SetPassword(String)
   fullName: CRMScript.NetServer.NSMailboxEntity.SetPassword(String)
   type: Method
-  summary: "\nThe password used to log into the mail account. This is hidden when reading\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetPassword(String password)
     parameters:
     - id: password
       type: CRMScript.Global.String
-      description: 
+      description: The password used to log into the mail account. This is hidden when reading
     return:
       type: CRMScript.Global.Void
   example: 
@@ -251,14 +258,14 @@ items:
   nameWithType: NSMailboxEntity.SetPort(Integer)
   fullName: CRMScript.NetServer.NSMailboxEntity.SetPort(Integer)
   type: Method
-  summary: "\nThe port used to connect to the server\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetPort(Integer port)
     parameters:
     - id: port
       type: CRMScript.Global.Integer
-      description: 
+      description: The port used to connect to the server
     return:
       type: CRMScript.Global.Void
   example: 
@@ -273,14 +280,14 @@ items:
   nameWithType: NSMailboxEntity.SetServer(String)
   fullName: CRMScript.NetServer.NSMailboxEntity.SetServer(String)
   type: Method
-  summary: "\nThe email server to connect to\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetServer(String server)
     parameters:
     - id: server
       type: CRMScript.Global.String
-      description: 
+      description: The email server to connect to
     return:
       type: CRMScript.Global.Void
   example: 
@@ -295,14 +302,14 @@ items:
   nameWithType: NSMailboxEntity.SetServerType(Integer)
   fullName: CRMScript.NetServer.NSMailboxEntity.SetServerType(Integer)
   type: Method
-  summary: "\nEnum indicating the protocol to use (POP/IMAP).\n"
-  remarks: "\n<p>See enum serverType.</p>\n"
+  summary: "\n\n"
+  remarks: "\n<p></p>\n"
   syntax: 
     content: Void SetServerType(Integer serverType)
     parameters:
     - id: serverType
       type: CRMScript.Global.Integer
-      description: 
+      description: Enum indicating the protocol to use (POP/IMAP). See enum serverType.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -317,14 +324,14 @@ items:
   nameWithType: NSMailboxEntity.SetUsername(String)
   fullName: CRMScript.NetServer.NSMailboxEntity.SetUsername(String)
   type: Method
-  summary: "\nThe username used to log onto the mail account\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetUsername(String username)
     parameters:
     - id: username
       type: CRMScript.Global.String
-      description: 
+      description: The username used to log onto the mail account
     return:
       type: CRMScript.Global.Void
   example: 

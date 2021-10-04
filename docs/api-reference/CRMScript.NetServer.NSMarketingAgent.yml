@@ -6,6 +6,7 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSMarketingAgent.#ctor
   - CRMScript.NetServer.NSMarketingAgent.CreateDefaultFormEntity()
   - CRMScript.NetServer.NSMarketingAgent.CreateDefaultFormSubmissionEntity()
   - CRMScript.NetServer.NSMarketingAgent.CreateDefaultShipmentMessageBlockEntity()
@@ -21,17 +22,32 @@ items:
   - CRMScript.NetServer.NSMarketingAgent.GetShipmentMessageBlockEntity(Integer)
   - CRMScript.NetServer.NSMarketingAgent.GetShipmentMessageEntity(Integer)
   - CRMScript.NetServer.NSMarketingAgent.GetUserBlocks(Integer)
-  - CRMScript.NetServer.NSMarketingAgent.#ctor
   - CRMScript.NetServer.NSMarketingAgent.SaveFormEntity(NSFormEntity)
   - CRMScript.NetServer.NSMarketingAgent.SaveFormSubmissionEntity(NSFormSubmissionEntity)
-  - CRMScript.NetServer.NSMarketingAgent.SaveShipmentMessageBlockEntity()
-  - CRMScript.NetServer.NSMarketingAgent.SaveShipmentMessageEntity()
+  - CRMScript.NetServer.NSMarketingAgent.SaveShipmentMessageBlockEntity(NSShipmentMessageBlockEntity)
+  - CRMScript.NetServer.NSMarketingAgent.SaveShipmentMessageEntity(NSShipmentMessageEntity)
   - CRMScript.NetServer.NSMarketingAgent.VerifyGoogleRecaptcha(String,String)
   name: NSMarketingAgent
   nameWithType: NSMarketingAgent
   fullName: CRMScript.NetServer.NSMarketingAgent
   type: Class
   summary: "\nAgent used for Marketing functions, such as Forms.\n"
+  example: 
+  - "\n<pre><code>NSMarketingAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSMarketingAgent.#ctor
+  commentId: M:CRMScript.NetServer.NSMarketingAgent.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSMarketingAgent
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSMarketingAgent.#ctor
+  fullName: CRMScript.NetServer.NSMarketingAgent.#ctor
+  type: Constructor
+  summary: "\nAgent used for Marketing functions, such as Forms.\n"
+  remarks: 
+  syntax: 
+    content: NSMarketingAgent
   example: 
   - "\n<pre><code>NSMarketingAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSMarketingAgent.CreateDefaultFormEntity()
@@ -352,22 +368,6 @@ items:
       type: CRMScript.NetServer.NSShipmentMessageBlockEntity[]
   example: 
   - "\n<pre><code>NSMarketingAgent agent;\nInteger associateId;\nNSShipmentMessageBlockEntity[] res = agent.GetUserBlocks(associateId);</code></pre>\n"
-- uid: CRMScript.NetServer.NSMarketingAgent.#ctor
-  commentId: M:CRMScript.NetServer.NSMarketingAgent.#ctor
-  id: '#ctor'
-  so.intellisense: Void.NSMarketingAgent
-  langs:
-  - crmscript
-  name: '#ctor'
-  nameWithType: NSMarketingAgent.#ctor
-  fullName: CRMScript.NetServer.NSMarketingAgent.#ctor
-  type: Constructor
-  summary: "\nAgent used for Marketing functions, such as Forms.\n"
-  remarks: 
-  syntax: 
-    content: NSMarketingAgent
-  example: 
-  - "\n<pre><code>NSMarketingAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSMarketingAgent.SaveFormEntity(NSFormEntity)
   commentId: M:CRMScript.NetServer.NSMarketingAgent.SaveFormEntity(NSFormEntity)
   id: 'SaveFormEntity(NSFormEntity)'
@@ -378,14 +378,14 @@ items:
   nameWithType: NSMarketingAgent.SaveFormEntity(NSFormEntity)
   fullName: CRMScript.NetServer.NSMarketingAgent.SaveFormEntity(NSFormEntity)
   type: Method
-  summary: "\nUpdates the existing NSFormEntity or creates a new NSFormEntity if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>formEntity</strong>The NSFormEntity to save.</li></ul>\n"
+  summary: "\nUpdates the existing NSFormEntity or creates a new NSFormEntity if the id parameter is 0\n"
   remarks: 
   syntax: 
     content: NSFormEntity SaveFormEntity(NSFormEntity formEntity)
     parameters:
     - id: formEntity
       type: CRMScript.NetServer.NSFormEntity
-      description: 
+      description: The NSFormEntity to save.
     return:
       type: CRMScript.NetServer.NSFormEntity
   example: 
@@ -400,52 +400,58 @@ items:
   nameWithType: NSMarketingAgent.SaveFormSubmissionEntity(NSFormSubmissionEntity)
   fullName: CRMScript.NetServer.NSMarketingAgent.SaveFormSubmissionEntity(NSFormSubmissionEntity)
   type: Method
-  summary: "\nUpdates the existing NSFormSubmissionEntity or creates a new NSFormSubmissionEntity if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>formSubmissionEntity</strong>The NSFormSubmissionEntity to save.</li></ul>\n"
+  summary: "\nUpdates the existing NSFormSubmissionEntity or creates a new NSFormSubmissionEntity if the id parameter is 0\n"
   remarks: 
   syntax: 
     content: NSFormSubmissionEntity SaveFormSubmissionEntity(NSFormSubmissionEntity formSubmissionEntity)
     parameters:
     - id: formSubmissionEntity
       type: CRMScript.NetServer.NSFormSubmissionEntity
-      description: 
+      description: The NSFormSubmissionEntity to save.
     return:
       type: CRMScript.NetServer.NSFormSubmissionEntity
   example: 
   - "\n<pre><code>NSMarketing  agent;\nNSFormSubmissionEntity thing = agent.CreateDefaultFormSubmissionEntity();\nthing = agent.SaveFormSubmissionEntity(thing);</code></pre>\n"
-- uid: CRMScript.NetServer.NSMarketingAgent.SaveShipmentMessageBlockEntity()
-  commentId: M:CRMScript.NetServer.NSMarketingAgent.SaveShipmentMessageBlockEntity()
-  id: 'SaveShipmentMessageBlockEntity()'
+- uid: CRMScript.NetServer.NSMarketingAgent.SaveShipmentMessageBlockEntity(NSShipmentMessageBlockEntity)
+  commentId: M:CRMScript.NetServer.NSMarketingAgent.SaveShipmentMessageBlockEntity(NSShipmentMessageBlockEntity)
+  id: 'SaveShipmentMessageBlockEntity(NSShipmentMessageBlockEntity)'
   so.intellisense: NSMarketingAgent.SaveShipmentMessageBlockEntity
   langs:
   - crmscript
-  name: 'SaveShipmentMessageBlockEntity()'
-  nameWithType: NSMarketingAgent.SaveShipmentMessageBlockEntity()
-  fullName: CRMScript.NetServer.NSMarketingAgent.SaveShipmentMessageBlockEntity()
+  name: 'SaveShipmentMessageBlockEntity(NSShipmentMessageBlockEntity)'
+  nameWithType: NSMarketingAgent.SaveShipmentMessageBlockEntity(NSShipmentMessageBlockEntity)
+  fullName: CRMScript.NetServer.NSMarketingAgent.SaveShipmentMessageBlockEntity(NSShipmentMessageBlockEntity)
   type: Method
-  summary: "\nUpdates the existing NSShipmentMessageBlockEntity or creates a new NSShipmentMessageBlockEntity if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>shipmentMessageBlockEntity</strong>The NSShipmentMessageBlockEntity to save.</li></ul>\n"
+  summary: "\nUpdates the existing NSShipmentMessageBlockEntity or creates a new NSShipmentMessageBlockEntity if the id parameter is 0\n"
   remarks: 
   syntax: 
     content: NSShipmentMessageBlockEntity SaveShipmentMessageBlockEntity(NSShipmentMessageBlockEntity shipmentMessageBlockEntity)
     parameters:
+    - id: shipmentMessageBlockEntity
+      type: CRMScript.NetServer.NSShipmentMessageBlockEntity
+      description: The NSShipmentMessageBlockEntity to save.
     return:
       type: CRMScript.NetServer.NSShipmentMessageBlockEntity
   example: 
   - "\n<pre><code>NSMarketing  agent;\nNSShipmentMessageBlockEntity thing = agent.CreateDefaultShipmentMessageBlockEntity();\nthing = agent.SaveShipmentMessageBlockEntity(thing);</code></pre>\n"
-- uid: CRMScript.NetServer.NSMarketingAgent.SaveShipmentMessageEntity()
-  commentId: M:CRMScript.NetServer.NSMarketingAgent.SaveShipmentMessageEntity()
-  id: 'SaveShipmentMessageEntity()'
+- uid: CRMScript.NetServer.NSMarketingAgent.SaveShipmentMessageEntity(NSShipmentMessageEntity)
+  commentId: M:CRMScript.NetServer.NSMarketingAgent.SaveShipmentMessageEntity(NSShipmentMessageEntity)
+  id: 'SaveShipmentMessageEntity(NSShipmentMessageEntity)'
   so.intellisense: NSMarketingAgent.SaveShipmentMessageEntity
   langs:
   - crmscript
-  name: 'SaveShipmentMessageEntity()'
-  nameWithType: NSMarketingAgent.SaveShipmentMessageEntity()
-  fullName: CRMScript.NetServer.NSMarketingAgent.SaveShipmentMessageEntity()
+  name: 'SaveShipmentMessageEntity(NSShipmentMessageEntity)'
+  nameWithType: NSMarketingAgent.SaveShipmentMessageEntity(NSShipmentMessageEntity)
+  fullName: CRMScript.NetServer.NSMarketingAgent.SaveShipmentMessageEntity(NSShipmentMessageEntity)
   type: Method
-  summary: "\nUpdates the existing NSShipmentMessageEntity or creates a new NSShipmentMessageEntity if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>shipmentMessageEntity</strong>The NSShipmentMessageEntity to save.</li></ul>\n"
+  summary: "\nUpdates the existing NSShipmentMessageEntity or creates a new NSShipmentMessageEntity if the id parameter is 0\n"
   remarks: 
   syntax: 
     content: NSShipmentMessageEntity SaveShipmentMessageEntity(NSShipmentMessageEntity shipmentMessageEntity)
     parameters:
+    - id: shipmentMessageEntity
+      type: CRMScript.NetServer.NSShipmentMessageEntity
+      description: The NSShipmentMessageEntity to save.
     return:
       type: CRMScript.NetServer.NSShipmentMessageEntity
   example: 
@@ -460,7 +466,7 @@ items:
   nameWithType: NSMarketingAgent.VerifyGoogleRecaptcha(String,String)
   fullName: CRMScript.NetServer.NSMarketingAgent.VerifyGoogleRecaptcha(String,String)
   type: Method
-  summary: "\ntry to verify a Google recaptcha token. The token is gained from the recaptcha frontend component\n"
+  summary: "\nTries to verify a Google recaptcha token. The token is gained from the recaptcha frontend component\n"
   remarks: 
   syntax: 
     content: Bool VerifyGoogleRecaptcha(String token, String optionalSecretKey)

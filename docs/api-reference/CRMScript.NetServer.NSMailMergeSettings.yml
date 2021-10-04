@@ -6,6 +6,7 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSMailMergeSettings.#ctor
   - CRMScript.NetServer.NSMailMergeSettings.GetAddCompanyInterest()
   - CRMScript.NetServer.NSMailMergeSettings.GetAddPersonInterest()
   - CRMScript.NetServer.NSMailMergeSettings.GetAlwaysUseCustomAttention()
@@ -27,7 +28,6 @@ items:
   - CRMScript.NetServer.NSMailMergeSettings.GetSynchronous()
   - CRMScript.NetServer.NSMailMergeSettings.GetTaskEntity()
   - CRMScript.NetServer.NSMailMergeSettings.GetTestOnly()
-  - CRMScript.NetServer.NSMailMergeSettings.#ctor
   - CRMScript.NetServer.NSMailMergeSettings.SetAddCompanyInterest(Integer)
   - CRMScript.NetServer.NSMailMergeSettings.SetAddPersonInterest(Integer)
   - CRMScript.NetServer.NSMailMergeSettings.SetAlwaysUseCustomAttention(Bool)
@@ -47,13 +47,28 @@ items:
   - CRMScript.NetServer.NSMailMergeSettings.SetSaveDocument(Bool)
   - CRMScript.NetServer.NSMailMergeSettings.SetSelectionId(Integer)
   - CRMScript.NetServer.NSMailMergeSettings.SetSynchronous(Bool)
-  - CRMScript.NetServer.NSMailMergeSettings.SetTaskEntity()
+  - CRMScript.NetServer.NSMailMergeSettings.SetTaskEntity(NSMailMergeSettings)
   - CRMScript.NetServer.NSMailMergeSettings.SetTestOnly(Bool)
   name: NSMailMergeSettings
   nameWithType: NSMailMergeSettings
   fullName: CRMScript.NetServer.NSMailMergeSettings
   type: Class
   summary: 
+  example: 
+- uid: CRMScript.NetServer.NSMailMergeSettings.#ctor
+  commentId: M:CRMScript.NetServer.NSMailMergeSettings.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSMailMergeSettings
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSMailMergeSettings.#ctor
+  fullName: CRMScript.NetServer.NSMailMergeSettings.#ctor
+  type: Constructor
+  summary: 
+  remarks: 
+  syntax: 
+    content: NSMailMergeSettings
   example: 
 - uid: CRMScript.NetServer.NSMailMergeSettings.GetAddCompanyInterest()
   commentId: M:CRMScript.NetServer.NSMailMergeSettings.GetAddCompanyInterest()
@@ -65,7 +80,7 @@ items:
   nameWithType: NSMailMergeSettings.GetAddCompanyInterest()
   fullName: CRMScript.NetServer.NSMailMergeSettings.GetAddCompanyInterest()
   type: Method
-  summary: "\nAdd this company interest to each company recipient.\n"
+  summary: "\nAdds this company interest to each company recipient.\n"
   remarks: 
   syntax: 
     content: Integer GetAddCompanyInterest()
@@ -84,7 +99,7 @@ items:
   nameWithType: NSMailMergeSettings.GetAddPersonInterest()
   fullName: CRMScript.NetServer.NSMailMergeSettings.GetAddPersonInterest()
   type: Method
-  summary: "\nAdd this person interest to each person recipient.\n"
+  summary: "\nAdds this person interest to each person recipient.\n"
   remarks: 
   syntax: 
     content: Integer GetAddPersonInterest()
@@ -103,13 +118,14 @@ items:
   nameWithType: NSMailMergeSettings.GetAlwaysUseCustomAttention()
   fullName: CRMScript.NetServer.NSMailMergeSettings.GetAlwaysUseCustomAttention()
   type: Method
-  summary: "\nShould custom attention always be used? If false, only use custom attention where there is no default.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Bool GetAlwaysUseCustomAttention()
     parameters: []
     return:
       type: CRMScript.Global.Bool
+      description: Should custom attention always be used? If false, only use custom attention where there is no default.
   example: 
   - "\n<pre><code>NSMailMergeSettings thing;\nBool alwaysUseCustomAttention = thing.GetAlwaysUseCustomAttention();</code></pre>\n"
 - uid: CRMScript.NetServer.NSMailMergeSettings.GetCustomAttention()
@@ -122,13 +138,14 @@ items:
   nameWithType: NSMailMergeSettings.GetCustomAttention()
   fullName: CRMScript.NetServer.NSMailMergeSettings.GetCustomAttention()
   type: Method
-  summary: "\nCustom value for attention.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: String GetCustomAttention()
     parameters: []
     return:
       type: CRMScript.Global.String
+      description: Custom value for attention.
   example: 
   - "\n<pre><code>NSMailMergeSettings thing;\nString customAttention = thing.GetCustomAttention();</code></pre>\n"
 - uid: CRMScript.NetServer.NSMailMergeSettings.GetCustomMailBody()
@@ -141,13 +158,14 @@ items:
   nameWithType: NSMailMergeSettings.GetCustomMailBody()
   fullName: CRMScript.NetServer.NSMailMergeSettings.GetCustomMailBody()
   type: Method
-  summary: "\nIf specified, use this value as default mail body.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: String GetCustomMailBody()
     parameters: []
     return:
       type: CRMScript.Global.String
+      description: If specified, use this value as default mail body.
   example: 
   - "\n<pre><code>NSMailMergeSettings thing;\nString customMailBody = thing.GetCustomMailBody();</code></pre>\n"
 - uid: CRMScript.NetServer.NSMailMergeSettings.GetCustomMailSubject()
@@ -160,13 +178,14 @@ items:
   nameWithType: NSMailMergeSettings.GetCustomMailSubject()
   fullName: CRMScript.NetServer.NSMailMergeSettings.GetCustomMailSubject()
   type: Method
-  summary: "\nIf specified, use this value as default mail subject.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: String GetCustomMailSubject()
     parameters: []
     return:
       type: CRMScript.Global.String
+      description: If specified, use this value as default mail subject.
   example: 
   - "\n<pre><code>NSMailMergeSettings thing;\nString customMailSubject = thing.GetCustomMailSubject();</code></pre>\n"
 - uid: CRMScript.NetServer.NSMailMergeSettings.GetDocumentId()
@@ -179,13 +198,14 @@ items:
   nameWithType: NSMailMergeSettings.GetDocumentId()
   fullName: CRMScript.NetServer.NSMailMergeSettings.GetDocumentId()
   type: Method
-  summary: "\nIdentity of document to be used as merge draft.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Integer GetDocumentId()
     parameters: []
     return:
       type: CRMScript.Global.Integer
+      description: Identity of document to be used as merge draft.
   example: 
   - "\n<pre><code>NSMailMergeSettings thing;\nInteger documentId = thing.GetDocumentId();</code></pre>\n"
 - uid: CRMScript.NetServer.NSMailMergeSettings.GetExtraInfo()
@@ -198,13 +218,14 @@ items:
   nameWithType: NSMailMergeSettings.GetExtraInfo()
   fullName: CRMScript.NetServer.NSMailMergeSettings.GetExtraInfo()
   type: Method
-  summary: "\nUsed to store additional information for the delivery systems.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: String GetExtraInfo()
     parameters: []
     return:
       type: CRMScript.Global.String
+      description: Used to store additional information for the delivery systems.
   example: 
   - "\n<pre><code>NSMailMergeSettings thing;\nString extraInfo = thing.GetExtraInfo();</code></pre>\n"
 - uid: CRMScript.NetServer.NSMailMergeSettings.GetIncludeNoMailingsRecipient()
@@ -217,13 +238,14 @@ items:
   nameWithType: NSMailMergeSettings.GetIncludeNoMailingsRecipient()
   fullName: CRMScript.NetServer.NSMailMergeSettings.GetIncludeNoMailingsRecipient()
   type: Method
-  summary: "\nInclude recipients that are marked with NoMailings\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Bool GetIncludeNoMailingsRecipient()
     parameters: []
     return:
       type: CRMScript.Global.Bool
+      description: Include recipients that are marked with NoMailings
   example: 
   - "\n<pre><code>NSMailMergeSettings thing;\nBool includeNoMailingsRecipient = thing.GetIncludeNoMailingsRecipient();</code></pre>\n"
 - uid: CRMScript.NetServer.NSMailMergeSettings.GetIncludeRetiredRecipients()
@@ -236,13 +258,14 @@ items:
   nameWithType: NSMailMergeSettings.GetIncludeRetiredRecipients()
   fullName: CRMScript.NetServer.NSMailMergeSettings.GetIncludeRetiredRecipients()
   type: Method
-  summary: "\nInclude recipients that are marked as retired\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Bool GetIncludeRetiredRecipients()
     parameters: []
     return:
       type: CRMScript.Global.Bool
+      description: Include recipients that are marked as retired
   example: 
   - "\n<pre><code>NSMailMergeSettings thing;\nBool includeRetiredRecipients = thing.GetIncludeRetiredRecipients();</code></pre>\n"
 - uid: CRMScript.NetServer.NSMailMergeSettings.GetIncludeStoppedRecipients()
@@ -274,13 +297,14 @@ items:
   nameWithType: NSMailMergeSettings.GetIsTemporarySelection()
   fullName: CRMScript.NetServer.NSMailMergeSettings.GetIsTemporarySelection()
   type: Method
-  summary: "\nIf true, the selection is a temporary selection that can be deleted later.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Bool GetIsTemporarySelection()
     parameters: []
     return:
       type: CRMScript.Global.Bool
+      description: If true, the selection is a temporary selection that can be deleted later.
   example: 
   - "\n<pre><code>NSMailMergeSettings thing;\nBool isTemporarySelection = thing.GetIsTemporarySelection();</code></pre>\n"
 - uid: CRMScript.NetServer.NSMailMergeSettings.GetMailMergeDeliveryType()
@@ -293,13 +317,14 @@ items:
   nameWithType: NSMailMergeSettings.GetMailMergeDeliveryType()
   fullName: CRMScript.NetServer.NSMailMergeSettings.GetMailMergeDeliveryType()
   type: Method
-  summary: "\nHow the merged document is delivered to the recipients.<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<ul><li>Enum: 0 = BestFit</li><li>Enum: 1 = Electronic</li><li>Enum: 2 = Mail</li><li>Enum: 3 = Fax</li><li>Enum: 4 = Printer</li><li>Enum: 5 = Xml</li><li>Enum: 6 = XmlFax</li></ul><pre><code>NSMailMergeSettings thing;\nInteger mailMergeDeliveryType = thing.GetMailMergeDeliveryType();</code></pre>\n"
+  summary: "\n<ul><li>Enum: 0 = BestFit</li><li>Enum: 1 = Electronic</li><li>Enum: 2 = Mail</li><li>Enum: 3 = Fax</li><li>Enum: 4 = Printer</li><li>Enum: 5 = Xml</li><li>Enum: 6 = XmlFax</li></ul>\n"
   remarks: 
   syntax: 
     content: Integer GetMailMergeDeliveryType()
     parameters: []
     return:
       type: CRMScript.Global.Integer
+      description: How the merged document is delivered to the recipients.
   example: 
   - "\n<pre><code>NSMailMergeSettings thing;\nInteger mailMergeDeliveryType = thing.GetMailMergeDeliveryType();</code></pre>\n"
 - uid: CRMScript.NetServer.NSMailMergeSettings.GetProjectId()
@@ -312,13 +337,14 @@ items:
   nameWithType: NSMailMergeSettings.GetProjectId()
   fullName: CRMScript.NetServer.NSMailMergeSettings.GetProjectId()
   type: Method
-  summary: "\nIdentity of project to use as source for recipients.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Integer GetProjectId()
     parameters: []
     return:
       type: CRMScript.Global.Integer
+      description: Identity of project to use as source for recipients.
   example: 
   - "\n<pre><code>NSMailMergeSettings thing;\nInteger projectId = thing.GetProjectId();</code></pre>\n"
 - uid: CRMScript.NetServer.NSMailMergeSettings.GetRemoveCompanyInterest()
@@ -331,13 +357,14 @@ items:
   nameWithType: NSMailMergeSettings.GetRemoveCompanyInterest()
   fullName: CRMScript.NetServer.NSMailMergeSettings.GetRemoveCompanyInterest()
   type: Method
-  summary: "\nRemove this company interest on each company recipient.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Integer GetRemoveCompanyInterest()
     parameters: []
     return:
       type: CRMScript.Global.Integer
+      description: Remove this company interest on each company recipient.
   example: 
   - "\n<pre><code>NSMailMergeSettings thing;\nInteger removeCompanyInterest = thing.GetRemoveCompanyInterest();</code></pre>\n"
 - uid: CRMScript.NetServer.NSMailMergeSettings.GetRemovePersonInterest()
@@ -350,13 +377,14 @@ items:
   nameWithType: NSMailMergeSettings.GetRemovePersonInterest()
   fullName: CRMScript.NetServer.NSMailMergeSettings.GetRemovePersonInterest()
   type: Method
-  summary: "\nRemove this person interest on each person recipient.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Integer GetRemovePersonInterest()
     parameters: []
     return:
       type: CRMScript.Global.Integer
+      description: Remove this person interest on each person recipient.
   example: 
   - "\n<pre><code>NSMailMergeSettings thing;\nInteger removePersonInterest = thing.GetRemovePersonInterest();</code></pre>\n"
 - uid: CRMScript.NetServer.NSMailMergeSettings.GetSaveDocument()
@@ -369,13 +397,14 @@ items:
   nameWithType: NSMailMergeSettings.GetSaveDocument()
   fullName: CRMScript.NetServer.NSMailMergeSettings.GetSaveDocument()
   type: Method
-  summary: "\nShould we save a reference to the merge document on each recipient.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Bool GetSaveDocument()
     parameters: []
     return:
       type: CRMScript.Global.Bool
+      description: Should we save a reference to the merge document on each recipient.
   example: 
   - "\n<pre><code>NSMailMergeSettings thing;\nBool saveDocument = thing.GetSaveDocument();</code></pre>\n"
 - uid: CRMScript.NetServer.NSMailMergeSettings.GetSelectionId()
@@ -388,13 +417,14 @@ items:
   nameWithType: NSMailMergeSettings.GetSelectionId()
   fullName: CRMScript.NetServer.NSMailMergeSettings.GetSelectionId()
   type: Method
-  summary: "\nIdentity of selection to use as source for recipients.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Integer GetSelectionId()
     parameters: []
     return:
       type: CRMScript.Global.Integer
+      description: Identity of selection to use as source for recipients.
   example: 
   - "\n<pre><code>NSMailMergeSettings thing;\nInteger selectionId = thing.GetSelectionId();</code></pre>\n"
 - uid: CRMScript.NetServer.NSMailMergeSettings.GetSynchronous()
@@ -426,13 +456,14 @@ items:
   nameWithType: NSMailMergeSettings.GetTaskEntity()
   fullName: CRMScript.NetServer.NSMailMergeSettings.GetTaskEntity()
   type: Method
-  summary: "\nIf specified, register a task on recipients using properties from this object.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: NSMailMergeTask GetTaskEntity()
     parameters: []
     return:
       type: CRMScript.NetServer.NSMailMergeTask
+      description: If specified, register a task on recipients using properties from this object.
   example: 
   - "\n<pre><code>NSMailMergeSettings thing;\nNSMailMergeTask taskEntity = thing.GetTaskEntity();</code></pre>\n"
 - uid: CRMScript.NetServer.NSMailMergeSettings.GetTestOnly()
@@ -445,30 +476,16 @@ items:
   nameWithType: NSMailMergeSettings.GetTestOnly()
   fullName: CRMScript.NetServer.NSMailMergeSettings.GetTestOnly()
   type: Method
-  summary: "\nIf true, do the merge task, but use current user as target, instead of selection members\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Bool GetTestOnly()
     parameters: []
     return:
       type: CRMScript.Global.Bool
+      description: If true, do the merge task, but use current user as target, instead of selection members
   example: 
   - "\n<pre><code>NSMailMergeSettings thing;\nBool testOnly = thing.GetTestOnly();</code></pre>\n"
-- uid: CRMScript.NetServer.NSMailMergeSettings.#ctor
-  commentId: M:CRMScript.NetServer.NSMailMergeSettings.#ctor
-  id: '#ctor'
-  so.intellisense: Void.NSMailMergeSettings
-  langs:
-  - crmscript
-  name: '#ctor'
-  nameWithType: NSMailMergeSettings.#ctor
-  fullName: CRMScript.NetServer.NSMailMergeSettings.#ctor
-  type: Constructor
-  summary: 
-  remarks: 
-  syntax: 
-    content: NSMailMergeSettings
-  example: 
 - uid: CRMScript.NetServer.NSMailMergeSettings.SetAddCompanyInterest(Integer)
   commentId: M:CRMScript.NetServer.NSMailMergeSettings.SetAddCompanyInterest(Integer)
   id: 'SetAddCompanyInterest(Integer)'
@@ -479,7 +496,7 @@ items:
   nameWithType: NSMailMergeSettings.SetAddCompanyInterest(Integer)
   fullName: CRMScript.NetServer.NSMailMergeSettings.SetAddCompanyInterest(Integer)
   type: Method
-  summary: "\nAdd this company interest to each company recipient.\n"
+  summary: "\nAdds this company interest to each company recipient.\n"
   remarks: 
   syntax: 
     content: Void SetAddCompanyInterest(Integer addCompanyInterest)
@@ -501,7 +518,7 @@ items:
   nameWithType: NSMailMergeSettings.SetAddPersonInterest(Integer)
   fullName: CRMScript.NetServer.NSMailMergeSettings.SetAddPersonInterest(Integer)
   type: Method
-  summary: "\nAdd this person interest to each person recipient.\n"
+  summary: "\nAdds this person interest to each person recipient.\n"
   remarks: 
   syntax: 
     content: Void SetAddPersonInterest(Integer addPersonInterest)
@@ -523,14 +540,14 @@ items:
   nameWithType: NSMailMergeSettings.SetAlwaysUseCustomAttention(Bool)
   fullName: CRMScript.NetServer.NSMailMergeSettings.SetAlwaysUseCustomAttention(Bool)
   type: Method
-  summary: "\nShould custom attention always be used? If false, only use custom attention where there is no default.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetAlwaysUseCustomAttention(Bool alwaysUseCustomAttention)
     parameters:
     - id: alwaysUseCustomAttention
       type: CRMScript.Global.Bool
-      description: 
+      description: Should custom attention always be used? If false, only use custom attention where there is no default.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -545,14 +562,14 @@ items:
   nameWithType: NSMailMergeSettings.SetCustomAttention(String)
   fullName: CRMScript.NetServer.NSMailMergeSettings.SetCustomAttention(String)
   type: Method
-  summary: "\nCustom value for attention.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetCustomAttention(String customAttention)
     parameters:
     - id: customAttention
       type: CRMScript.Global.String
-      description: 
+      description: Custom value for attention.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -567,14 +584,14 @@ items:
   nameWithType: NSMailMergeSettings.SetCustomMailBody(String)
   fullName: CRMScript.NetServer.NSMailMergeSettings.SetCustomMailBody(String)
   type: Method
-  summary: "\nIf specified, use this value as default mail body.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetCustomMailBody(String customMailBody)
     parameters:
     - id: customMailBody
       type: CRMScript.Global.String
-      description: 
+      description: If specified, use this value as default mail body.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -589,14 +606,14 @@ items:
   nameWithType: NSMailMergeSettings.SetCustomMailSubject(String)
   fullName: CRMScript.NetServer.NSMailMergeSettings.SetCustomMailSubject(String)
   type: Method
-  summary: "\nIf specified, use this value as default mail subject.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetCustomMailSubject(String customMailSubject)
     parameters:
     - id: customMailSubject
       type: CRMScript.Global.String
-      description: 
+      description: If specified, use this value as default mail subject.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -611,14 +628,14 @@ items:
   nameWithType: NSMailMergeSettings.SetDocumentId(Integer)
   fullName: CRMScript.NetServer.NSMailMergeSettings.SetDocumentId(Integer)
   type: Method
-  summary: "\nIdentity of document to be used as merge draft.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetDocumentId(Integer documentId)
     parameters:
     - id: documentId
       type: CRMScript.Global.Integer
-      description: 
+      description: Identity of document to be used as merge draft.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -633,14 +650,14 @@ items:
   nameWithType: NSMailMergeSettings.SetExtraInfo(String)
   fullName: CRMScript.NetServer.NSMailMergeSettings.SetExtraInfo(String)
   type: Method
-  summary: "\nUsed to store additional information for the delivery systems.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetExtraInfo(String extraInfo)
     parameters:
     - id: extraInfo
       type: CRMScript.Global.String
-      description: 
+      description: Used to store additional information for the delivery systems.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -655,14 +672,14 @@ items:
   nameWithType: NSMailMergeSettings.SetIncludeNoMailingsRecipient(Bool)
   fullName: CRMScript.NetServer.NSMailMergeSettings.SetIncludeNoMailingsRecipient(Bool)
   type: Method
-  summary: "\nInclude recipients that are marked with NoMailings\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetIncludeNoMailingsRecipient(Bool includeNoMailingsRecipient)
     parameters:
     - id: includeNoMailingsRecipient
       type: CRMScript.Global.Bool
-      description: 
+      description: Include recipients that are marked with NoMailings
     return:
       type: CRMScript.Global.Void
   example: 
@@ -677,14 +694,14 @@ items:
   nameWithType: NSMailMergeSettings.SetIncludeRetiredRecipients(Bool)
   fullName: CRMScript.NetServer.NSMailMergeSettings.SetIncludeRetiredRecipients(Bool)
   type: Method
-  summary: "\nInclude recipients that are marked as retired\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetIncludeRetiredRecipients(Bool includeRetiredRecipients)
     parameters:
     - id: includeRetiredRecipients
       type: CRMScript.Global.Bool
-      description: 
+      description: Include recipients that are marked as retired
     return:
       type: CRMScript.Global.Void
   example: 
@@ -699,14 +716,14 @@ items:
   nameWithType: NSMailMergeSettings.SetIncludeStoppedRecipients(Bool)
   fullName: CRMScript.NetServer.NSMailMergeSettings.SetIncludeStoppedRecipients(Bool)
   type: Method
-  summary: "\nInclude recipients that are marked with stop\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetIncludeStoppedRecipients(Bool includeStoppedRecipients)
     parameters:
     - id: includeStoppedRecipients
       type: CRMScript.Global.Bool
-      description: 
+      description: Include recipients that are marked with stop
     return:
       type: CRMScript.Global.Void
   example: 
@@ -721,14 +738,14 @@ items:
   nameWithType: NSMailMergeSettings.SetIsTemporarySelection(Bool)
   fullName: CRMScript.NetServer.NSMailMergeSettings.SetIsTemporarySelection(Bool)
   type: Method
-  summary: "\nIf true, the selection is a temporary selection that can be deleted later.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetIsTemporarySelection(Bool isTemporarySelection)
     parameters:
     - id: isTemporarySelection
       type: CRMScript.Global.Bool
-      description: 
+      description: If true, the selection is a temporary selection that can be deleted later.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -743,14 +760,14 @@ items:
   nameWithType: NSMailMergeSettings.SetMailMergeDeliveryType(Integer)
   fullName: CRMScript.NetServer.NSMailMergeSettings.SetMailMergeDeliveryType(Integer)
   type: Method
-  summary: "\nHow the merged document is delivered to the recipients.\n"
-  remarks: "\n<p>See enum mailMergeDeliveryType.</p>\n"
+  summary: "\n\n"
+  remarks: "\n<p></p>\n"
   syntax: 
     content: Void SetMailMergeDeliveryType(Integer mailMergeDeliveryType)
     parameters:
     - id: mailMergeDeliveryType
       type: CRMScript.Global.Integer
-      description: 
+      description: How the merged document is delivered to the recipients. See enum mailMergeDeliveryType.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -765,14 +782,14 @@ items:
   nameWithType: NSMailMergeSettings.SetProjectId(Integer)
   fullName: CRMScript.NetServer.NSMailMergeSettings.SetProjectId(Integer)
   type: Method
-  summary: "\nIdentity of project to use as source for recipients.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetProjectId(Integer projectId)
     parameters:
     - id: projectId
       type: CRMScript.Global.Integer
-      description: 
+      description: Identity of project to use as source for recipients.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -787,14 +804,14 @@ items:
   nameWithType: NSMailMergeSettings.SetRemoveCompanyInterest(Integer)
   fullName: CRMScript.NetServer.NSMailMergeSettings.SetRemoveCompanyInterest(Integer)
   type: Method
-  summary: "\nRemove this company interest on each company recipient.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetRemoveCompanyInterest(Integer removeCompanyInterest)
     parameters:
     - id: removeCompanyInterest
       type: CRMScript.Global.Integer
-      description: 
+      description: Remove this company interest on each company recipient.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -809,14 +826,14 @@ items:
   nameWithType: NSMailMergeSettings.SetRemovePersonInterest(Integer)
   fullName: CRMScript.NetServer.NSMailMergeSettings.SetRemovePersonInterest(Integer)
   type: Method
-  summary: "\nRemove this person interest on each person recipient.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetRemovePersonInterest(Integer removePersonInterest)
     parameters:
     - id: removePersonInterest
       type: CRMScript.Global.Integer
-      description: 
+      description: Remove this person interest on each person recipient.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -831,14 +848,14 @@ items:
   nameWithType: NSMailMergeSettings.SetSaveDocument(Bool)
   fullName: CRMScript.NetServer.NSMailMergeSettings.SetSaveDocument(Bool)
   type: Method
-  summary: "\nShould we save a reference to the merge document on each recipient.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetSaveDocument(Bool saveDocument)
     parameters:
     - id: saveDocument
       type: CRMScript.Global.Bool
-      description: 
+      description: Should we save a reference to the merge document on each recipient.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -853,14 +870,14 @@ items:
   nameWithType: NSMailMergeSettings.SetSelectionId(Integer)
   fullName: CRMScript.NetServer.NSMailMergeSettings.SetSelectionId(Integer)
   type: Method
-  summary: "\nIdentity of selection to use as source for recipients.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetSelectionId(Integer selectionId)
     parameters:
     - id: selectionId
       type: CRMScript.Global.Integer
-      description: 
+      description: Identity of selection to use as source for recipients.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -887,21 +904,26 @@ items:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSMailMergeSettings thing;\nBool synchronous;\nthing.SetSynchronous(synchronous);</code></pre>\n"
-- uid: CRMScript.NetServer.NSMailMergeSettings.SetTaskEntity()
-  commentId: M:CRMScript.NetServer.NSMailMergeSettings.SetTaskEntity()
-  id: 'SetTaskEntity()'
+- uid: CRMScript.NetServer.NSMailMergeSettings.SetTaskEntity(NSMailMergeSettings)
+  commentId: M:CRMScript.NetServer.NSMailMergeSettings.SetTaskEntity(NSMailMergeSettings)
+  id: 'SetTaskEntity(NSMailMergeSettings)'
   so.intellisense: NSMailMergeSettings.SetTaskEntity
   langs:
   - crmscript
-  name: 'SetTaskEntity()'
-  nameWithType: NSMailMergeSettings.SetTaskEntity()
-  fullName: CRMScript.NetServer.NSMailMergeSettings.SetTaskEntity()
+  name: 'SetTaskEntity(NSMailMergeSettings)'
+  nameWithType: NSMailMergeSettings.SetTaskEntity(NSMailMergeSettings)
+  fullName: CRMScript.NetServer.NSMailMergeSettings.SetTaskEntity(NSMailMergeSettings)
   type: Method
-  summary: "\nIf specified, register a task on recipients using properties from this object.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetTaskEntity(NSMailMergeTask taskEntity)
     parameters:
+    - id: taskEntity
+      type: CRMScript.NetServer.NSMailMergeTask
+      description: If specified, register a task on recipients using properties from this object.
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSMailMergeSettings thing;\nNSMailMergeTask taskEntity;\nthing.SetTaskEntity(taskEntity);</code></pre>\n"
 - uid: CRMScript.NetServer.NSMailMergeSettings.SetTestOnly(Bool)
@@ -914,14 +936,14 @@ items:
   nameWithType: NSMailMergeSettings.SetTestOnly(Bool)
   fullName: CRMScript.NetServer.NSMailMergeSettings.SetTestOnly(Bool)
   type: Method
-  summary: "\nIf true, do the merge task, but use current user as target, instead of selection members\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetTestOnly(Bool testOnly)
     parameters:
     - id: testOnly
       type: CRMScript.Global.Bool
-      description: 
+      description: If true, do the merge task, but use current user as target, instead of selection members
     return:
       type: CRMScript.Global.Void
   example: 

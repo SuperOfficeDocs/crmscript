@@ -6,13 +6,29 @@ items:
   langs:
   - crmscript
   children:
-  - CRMScript.NetServer.NSPreviewsAgent.GetPreview(String)
   - CRMScript.NetServer.NSPreviewsAgent.#ctor
+  - CRMScript.NetServer.NSPreviewsAgent.GetPreview(String)
   name: NSPreviewsAgent
   nameWithType: NSPreviewsAgent
   fullName: CRMScript.NetServer.NSPreviewsAgent
   type: Class
   summary: "\nGets preview strings from a hint.\n"
+  example: 
+  - "\n<pre><code>NSPreviewsAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSPreviewsAgent.#ctor
+  commentId: M:CRMScript.NetServer.NSPreviewsAgent.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSPreviewsAgent
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSPreviewsAgent.#ctor
+  fullName: CRMScript.NetServer.NSPreviewsAgent.#ctor
+  type: Constructor
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: NSPreviewsAgent
   example: 
   - "\n<pre><code>NSPreviewsAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreviewsAgent.GetPreview(String)
@@ -25,8 +41,8 @@ items:
   nameWithType: NSPreviewsAgent.GetPreview(String)
   fullName: CRMScript.NetServer.NSPreviewsAgent.GetPreview(String)
   type: Method
-  summary: "\nParse a Preview hint and return a Preview. The returned Preview string may contain resource string identifiers (in square brackets), to be processed by the resource manager.<p></p>\nThe Preview hint is either a literal text, representing itself or a set of key/value pairs enclosed in curly braces. Each key is separated from its value by an equals sign, and each pair from the next by an ampersand, according to usual conventions.<p></p>\nA typical Preview hint could be<code>{contact_id=123}</code>or<code>{appointment_id=222&amp;mode=simple}</code>\n"
-  remarks: 
+  summary: "\nParses a Preview hint and return a Preview.The returned Preview string may contain resource string identifiers (in square brackets), to be processed by the resource manager.<p></p>\nThe Preview hint is either a literal text, representing itself or a set of key/value pairs enclosed in curly braces. Each key is separated from its value by an equals sign, and each pair from the next by an ampersand, according to usual conventions.\n"
+  remarks: "\nA typical Preview hint could be<code>{contact_id=123}</code>or<code>{appointment_id=222&amp;mode=simple}</code>\n"
   syntax: 
     content: String GetPreview(String previewHint)
     parameters:
@@ -37,22 +53,6 @@ items:
       type: CRMScript.Global.String
       description:
   example: 
-- uid: CRMScript.NetServer.NSPreviewsAgent.#ctor
-  commentId: M:CRMScript.NetServer.NSPreviewsAgent.#ctor
-  id: '#ctor'
-  so.intellisense: Void.NSPreviewsAgent
-  langs:
-  - crmscript
-  name: '#ctor'
-  nameWithType: NSPreviewsAgent.#ctor
-  fullName: CRMScript.NetServer.NSPreviewsAgent.#ctor
-  type: Constructor
-  summary: "\nGets preview strings from a hint.\n"
-  remarks: 
-  syntax: 
-    content: NSPreviewsAgent
-  example: 
-  - "\n<pre><code>NSPreviewsAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 references:
 - uid: CRMScript.NetServer.NSPreviewsAgent
   commentId: T:CRMScript.NetServer.NSPreviewsAgent

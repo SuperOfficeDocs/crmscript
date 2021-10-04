@@ -6,6 +6,7 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSPreference.#ctor
   - CRMScript.NetServer.NSPreference.GetDisplayTooltip()
   - CRMScript.NetServer.NSPreference.GetDisplayType()
   - CRMScript.NetServer.NSPreference.GetDisplayValue()
@@ -17,7 +18,6 @@ items:
   - CRMScript.NetServer.NSPreference.GetTabOrder()
   - CRMScript.NetServer.NSPreference.GetTargetId()
   - CRMScript.NetServer.NSPreference.GetUserPreferenceId()
-  - CRMScript.NetServer.NSPreference.#ctor
   - CRMScript.NetServer.NSPreference.SetDisplayTooltip(String)
   - CRMScript.NetServer.NSPreference.SetDisplayType(Integer)
   - CRMScript.NetServer.NSPreference.SetDisplayValue(String)
@@ -26,7 +26,7 @@ items:
   - CRMScript.NetServer.NSPreference.SetRawValue(String)
   - CRMScript.NetServer.NSPreference.SetSpecification(NSPreferenceSpec)
   - CRMScript.NetServer.NSPreference.SetTableName(String)
-  - CRMScript.NetServer.NSPreference.SetTabOrder()
+  - CRMScript.NetServer.NSPreference.SetTabOrder(NSTabOrder)
   - CRMScript.NetServer.NSPreference.SetTargetId(Integer)
   - CRMScript.NetServer.NSPreference.SetUserPreferenceId(Integer)
   name: NSPreference
@@ -34,6 +34,21 @@ items:
   fullName: CRMScript.NetServer.NSPreference
   type: Class
   summary: 
+  example: 
+- uid: CRMScript.NetServer.NSPreference.#ctor
+  commentId: M:CRMScript.NetServer.NSPreference.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSPreference
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSPreference.#ctor
+  fullName: CRMScript.NetServer.NSPreference.#ctor
+  type: Constructor
+  summary: 
+  remarks: 
+  syntax: 
+    content: NSPreference
   example: 
 - uid: CRMScript.NetServer.NSPreference.GetDisplayTooltip()
   commentId: M:CRMScript.NetServer.NSPreference.GetDisplayTooltip()
@@ -45,14 +60,14 @@ items:
   nameWithType: NSPreference.GetDisplayTooltip()
   fullName: CRMScript.NetServer.NSPreference.GetDisplayTooltip()
   type: Method
-  summary: "\nDisplay tooltip, populated when asked for. Suitable for binding display-datasource in lists, etc. Formatted using CultureDataFormatter.\n"
-  remarks: 
+  summary: ""
+  remarks: "\nSuitable for binding display-datasource in lists, etc.\n"
   syntax: 
     content: String GetDisplayTooltip()
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: Display tooltip, populated when asked for. Formatted using CultureDataFormatter.
   example: 
   - "\n<pre><code>NSPreference thing;\nString displayTooltip = thing.GetDisplayTooltip();</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreference.GetDisplayType()
@@ -65,14 +80,14 @@ items:
   nameWithType: NSPreference.GetDisplayType()
   fullName: CRMScript.NetServer.NSPreference.GetDisplayType()
   type: Method
-  summary: "\nDisplay type, populated when asked for.<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Number</li><li>Enum: 2 = Text</li><li>Enum: 3 = Bool</li><li>Enum: 4 = ListOfValues</li><li>Enum: 5 = ListTableRef</li><li>Enum: 6 = TimeList</li><li>Enum: 7 = ContactID</li><li>Enum: 8 = PersonID</li><li>Enum: 9 = ProjectID</li><li>Enum: 10 = SelectionID</li><li>Enum: 11 = PosSize</li><li>Enum: 12 = TimeZone</li><li>Enum: 13 = Time</li><li>Enum: 14 = Password</li><li>Enum: 15 = MultiLineText</li></ul><pre><code>NSPreference thing;\nInteger displayType = thing.GetDisplayType();</code></pre>\n"
+  summary: "\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Number</li><li>Enum: 2 = Text</li><li>Enum: 3 = Bool</li><li>Enum: 4 = ListOfValues</li><li>Enum: 5 = ListTableRef</li><li>Enum: 6 = TimeList</li><li>Enum: 7 = ContactID</li><li>Enum: 8 = PersonID</li><li>Enum: 9 = ProjectID</li><li>Enum: 10 = SelectionID</li><li>Enum: 11 = PosSize</li><li>Enum: 12 = TimeZone</li><li>Enum: 13 = Time</li><li>Enum: 14 = Password</li><li>Enum: 15 = MultiLineText</li></ul>\n"
   remarks: 
   syntax: 
     content: Integer GetDisplayType()
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description:
+      description: Display type, populated when asked for.
   example: 
   - "\n<pre><code>NSPreference thing;\nInteger displayType = thing.GetDisplayType();</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreference.GetDisplayValue()
@@ -85,14 +100,14 @@ items:
   nameWithType: NSPreference.GetDisplayValue()
   fullName: CRMScript.NetServer.NSPreference.GetDisplayValue()
   type: Method
-  summary: "\nDisplay value, populated when asked for. Suitable for binding display-datasource in lists, etc. Formatted using CultureDataFormatter.\n"
-  remarks: 
+  summary: ""
+  remarks: "\nSuitable for binding display-datasource in lists, etc.\n"
   syntax: 
     content: String GetDisplayValue()
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: Display value, populated when asked for. Formatted using CultureDataFormatter.
   example: 
   - "\n<pre><code>NSPreference thing;\nString displayValue = thing.GetDisplayValue();</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreference.GetLevel()
@@ -105,14 +120,14 @@ items:
   nameWithType: NSPreference.GetLevel()
   fullName: CRMScript.NetServer.NSPreference.GetLevel()
   type: Method
-  summary: "\nNSPreference level, using the standard enumerated type. Undefined is returned for preferences that do not have a current setting.<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<ul><li>Enum: 0 = Undefined</li><li>Enum: 1 = HardDefault</li><li>Enum: 2 = SystemWide</li><li>Enum: 3 = Database</li><li>Enum: 4 = Group</li><li>Enum: 5 = Individual</li><li>Enum: 6 = PC</li></ul><pre><code>NSPreference thing;\nInteger level = thing.GetLevel();</code></pre>\n"
+  summary: "\n<ul><li>Enum: 0 = Undefined</li><li>Enum: 1 = HardDefault</li><li>Enum: 2 = SystemWide</li><li>Enum: 3 = Database</li><li>Enum: 4 = Group</li><li>Enum: 5 = Individual</li><li>Enum: 6 = PC</li></ul>\n"
   remarks: 
   syntax: 
     content: Integer GetLevel()
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description:
+      description: NSPreference level, using the standard enumerated type. Undefined is returned for preferences that do not have a current setting.
   example: 
   - "\n<pre><code>NSPreference thing;\nInteger level = thing.GetLevel();</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreference.GetPrefDescId()
@@ -125,14 +140,14 @@ items:
   nameWithType: NSPreference.GetPrefDescId()
   fullName: CRMScript.NetServer.NSPreference.GetPrefDescId()
   type: Method
-  summary: "\nThe ID of the prefdesc this preference is connected to\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Integer GetPrefDescId()
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description:
+      description: The ID of the prefdesc this preference is connected to
   example: 
   - "\n<pre><code>NSPreference thing;\nInteger prefDescId = thing.GetPrefDescId();</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreference.GetRawValue()
@@ -145,14 +160,14 @@ items:
   nameWithType: NSPreference.GetRawValue()
   fullName: CRMScript.NetServer.NSPreference.GetRawValue()
   type: Method
-  summary: "\nNSPreference value\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: String GetRawValue()
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: NSPreference value
   example: 
   - "\n<pre><code>NSPreference thing;\nString rawValue = thing.GetRawValue();</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreference.GetSpecification()
@@ -165,13 +180,14 @@ items:
   nameWithType: NSPreference.GetSpecification()
   fullName: CRMScript.NetServer.NSPreference.GetSpecification()
   type: Method
-  summary: "\nPreference specification, consisting of the section name and key name\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: NSPreferenceSpec GetSpecification()
     parameters: []
     return:
       type: CRMScript.NetServer.NSPreferenceSpec
+      description: Preference specification, consisting of the section name and key name
   example: 
   - "\n<pre><code>NSPreference thing;\nNSPreferenceSpec specification = thing.GetSpecification();</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreference.GetTableName()
@@ -184,14 +200,14 @@ items:
   nameWithType: NSPreference.GetTableName()
   fullName: CRMScript.NetServer.NSPreference.GetTableName()
   type: Method
-  summary: "\nFor DisplayType=PrefDescValueType.ListTableRef, TableName will contain the name of the table which the value reference to.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: String GetTableName()
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: For DisplayType=PrefDescValueType.ListTableRef, TableName will contain the name of the table which the value reference to.
   example: 
   - "\n<pre><code>NSPreference thing;\nString tableName = thing.GetTableName();</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreference.GetTabOrder()
@@ -223,14 +239,14 @@ items:
   nameWithType: NSPreference.GetTargetId()
   fullName: CRMScript.NetServer.NSPreference.GetTargetId()
   type: Method
-  summary: "\nThe ID of the target row. The table it points at is specified by the preference type.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Integer GetTargetId()
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description:
+      description: The ID of the target row. The table it points at is specified by the preference type.
   example: 
   - "\n<pre><code>NSPreference thing;\nInteger targetId = thing.GetTargetId();</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreference.GetUserPreferenceId()
@@ -243,31 +259,16 @@ items:
   nameWithType: NSPreference.GetUserPreferenceId()
   fullName: CRMScript.NetServer.NSPreference.GetUserPreferenceId()
   type: Method
-  summary: "\nThe ID of the user preference\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Integer GetUserPreferenceId()
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description:
+      description: The ID of the user preference
   example: 
   - "\n<pre><code>NSPreference thing;\nInteger userPreferenceId = thing.GetUserPreferenceId();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPreference.#ctor
-  commentId: M:CRMScript.NetServer.NSPreference.#ctor
-  id: '#ctor'
-  so.intellisense: Void.NSPreference
-  langs:
-  - crmscript
-  name: '#ctor'
-  nameWithType: NSPreference.#ctor
-  fullName: CRMScript.NetServer.NSPreference.#ctor
-  type: Constructor
-  summary: 
-  remarks: 
-  syntax: 
-    content: NSPreference
-  example: 
 - uid: CRMScript.NetServer.NSPreference.SetDisplayTooltip(String)
   commentId: M:CRMScript.NetServer.NSPreference.SetDisplayTooltip(String)
   id: 'SetDisplayTooltip(String)'
@@ -278,14 +279,14 @@ items:
   nameWithType: NSPreference.SetDisplayTooltip(String)
   fullName: CRMScript.NetServer.NSPreference.SetDisplayTooltip(String)
   type: Method
-  summary: "\nDisplay tooltip, populated when asked for. Suitable for binding display-datasource in lists, etc. Formatted using CultureDataFormatter.\n"
-  remarks: 
+  summary: ""
+  remarks: "\nSuitable for binding display-datasource in lists, etc.\n"
   syntax: 
     content: Void SetDisplayTooltip(String displayTooltip)
     parameters:
     - id: displayTooltip
       type: CRMScript.Global.String
-      description: 
+      description: Display tooltip, populated when asked for. Formatted using CultureDataFormatter.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -300,14 +301,14 @@ items:
   nameWithType: NSPreference.SetDisplayType(Integer)
   fullName: CRMScript.NetServer.NSPreference.SetDisplayType(Integer)
   type: Method
-  summary: "\nDisplay type, populated when asked for.\n"
-  remarks: "\n<p>See enum displayType.</p>\n"
+  summary: "\n\n"
+  remarks: "\n<p></p>\n"
   syntax: 
     content: Void SetDisplayType(Integer displayType)
     parameters:
     - id: displayType
       type: CRMScript.Global.Integer
-      description: 
+      description: Display type, populated when asked for. See enum displayType.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -322,14 +323,14 @@ items:
   nameWithType: NSPreference.SetDisplayValue(String)
   fullName: CRMScript.NetServer.NSPreference.SetDisplayValue(String)
   type: Method
-  summary: "\nDisplay value, populated when asked for. Suitable for binding display-datasource in lists, etc. Formatted using CultureDataFormatter.\n"
-  remarks: 
+  summary: ""
+  remarks: "\nSuitable for binding display-datasource in lists, etc.\n"
   syntax: 
     content: Void SetDisplayValue(String displayValue)
     parameters:
     - id: displayValue
       type: CRMScript.Global.String
-      description: 
+      description: Display value, populated when asked for. Formatted using CultureDataFormatter.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -344,14 +345,14 @@ items:
   nameWithType: NSPreference.SetLevel(Integer)
   fullName: CRMScript.NetServer.NSPreference.SetLevel(Integer)
   type: Method
-  summary: "\nNSPreference level, using the standard enumerated type. Undefined is returned for preferences that do not have a current setting.\n"
-  remarks: "\n<p>See enum level.</p>\n"
+  summary: ""
+  remarks: "\nUndefined is returned for preferences that do not have a current setting.\n"
   syntax: 
     content: Void SetLevel(Integer level)
     parameters:
     - id: level
       type: CRMScript.Global.Integer
-      description: 
+      description: NSPreference level, using the standard enumerated type. See enum level.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -366,14 +367,14 @@ items:
   nameWithType: NSPreference.SetPrefDescId(Integer)
   fullName: CRMScript.NetServer.NSPreference.SetPrefDescId(Integer)
   type: Method
-  summary: "\nThe ID of the prefdesc this preference is connected to\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetPrefDescId(Integer prefDescId)
     parameters:
     - id: prefDescId
       type: CRMScript.Global.Integer
-      description: 
+      description: The ID of the prefdesc this preference is connected to
     return:
       type: CRMScript.Global.Void
   example: 
@@ -388,14 +389,14 @@ items:
   nameWithType: NSPreference.SetRawValue(String)
   fullName: CRMScript.NetServer.NSPreference.SetRawValue(String)
   type: Method
-  summary: "\nPreference value\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetRawValue(String rawValue)
     parameters:
     - id: rawValue
       type: CRMScript.Global.String
-      description: 
+      description: Preference value
     return:
       type: CRMScript.Global.Void
   example: 
@@ -410,14 +411,14 @@ items:
   nameWithType: NSPreference.SetSpecification(NSPreferenceSpec)
   fullName: CRMScript.NetServer.NSPreference.SetSpecification(NSPreferenceSpec)
   type: Method
-  summary: "\nPreference specification, consisting of the section name and key name\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetSpecification(NSPreferenceSpec specification)
     parameters:
     - id: specification
       type: CRMScript.NetServer.NSPreferenceSpec
-      description: 
+      description: Preference specification, consisting of the section name and key name
     return:
       type: CRMScript.Global.Void
   example: 
@@ -432,33 +433,38 @@ items:
   nameWithType: NSPreference.SetTableName(String)
   fullName: CRMScript.NetServer.NSPreference.SetTableName(String)
   type: Method
-  summary: "\nFor DisplayType=PrefDescValueType.ListTableRef, TableName will contain the name of the table which the value reference to.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetTableName(String tableName)
     parameters:
     - id: tableName
       type: CRMScript.Global.String
-      description: 
+      description: For DisplayType=PrefDescValueType.ListTableRef, TableName will contain the name of the table which the value reference to.
     return:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSPreference thing;\nString tableName;\nthing.SetTableName(tableName);</code></pre>\n"
-- uid: CRMScript.NetServer.NSPreference.SetTabOrder()
-  commentId: M:CRMScript.NetServer.NSPreference.SetTabOrder()
-  id: 'SetTabOrder()'
+- uid: CRMScript.NetServer.NSPreference.SetTabOrder(NSTabOrder)
+  commentId: M:CRMScript.NetServer.NSPreference.SetTabOrder(NSTabOrder)
+  id: 'SetTabOrder(NSTabOrder)'
   so.intellisense: NSPreference.SetTabOrder
   langs:
   - crmscript
-  name: 'SetTabOrder()'
-  nameWithType: NSPreference.SetTabOrder()
-  fullName: CRMScript.NetServer.NSPreference.SetTabOrder()
+  name: 'SetTabOrder(NSTabOrder)'
+  nameWithType: NSPreference.SetTabOrder(NSTabOrder)
+  fullName: CRMScript.NetServer.NSPreference.SetTabOrder(NSTabOrder)
   type: Method
   summary: 
   remarks: 
   syntax: 
     content: Void SetTabOrder(NSTabOrder tabOrder)
     parameters:
+    - id: tabOrder
+      type: CRMScript.NetServer.NSTabOrder
+      description:
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSPreference thing;\nNSTabOrder tabOrder;\nthing.SetTabOrder(tabOrder);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreference.SetTargetId(Integer)
@@ -471,14 +477,14 @@ items:
   nameWithType: NSPreference.SetTargetId(Integer)
   fullName: CRMScript.NetServer.NSPreference.SetTargetId(Integer)
   type: Method
-  summary: "\nThe ID of the target row. The table it points at is specified by the preference type.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetTargetId(Integer targetId)
     parameters:
     - id: targetId
       type: CRMScript.Global.Integer
-      description: 
+      description: The ID of the target row. The table it points at is specified by the preference type.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -493,14 +499,14 @@ items:
   nameWithType: NSPreference.SetUserPreferenceId(Integer)
   fullName: CRMScript.NetServer.NSPreference.SetUserPreferenceId(Integer)
   type: Method
-  summary: "\nThe ID of the user preference\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetUserPreferenceId(Integer userPreferenceId)
     parameters:
     - id: userPreferenceId
       type: CRMScript.Global.Integer
-      description: 
+      description: The ID of the user preference
     return:
       type: CRMScript.Global.Void
   example: 

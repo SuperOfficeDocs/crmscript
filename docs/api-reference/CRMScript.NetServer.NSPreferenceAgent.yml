@@ -6,6 +6,7 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSPreferenceAgent.#ctor
   - CRMScript.NetServer.NSPreferenceAgent.CreateDefaultPreference()
   - CRMScript.NetServer.NSPreferenceAgent.CreateDefaultPreferenceDescription()
   - CRMScript.NetServer.NSPreferenceAgent.CreateDefaultPreferenceDescriptionLine()
@@ -32,7 +33,6 @@ items:
   - CRMScript.NetServer.NSPreferenceAgent.GetPreferencesWithDisplayValues(NSPreferenceSpec[])
   - CRMScript.NetServer.NSPreferenceAgent.GetTabOrder(String)
   - CRMScript.NetServer.NSPreferenceAgent.GetTabOrders()
-  - CRMScript.NetServer.NSPreferenceAgent.#ctor
   - CRMScript.NetServer.NSPreferenceAgent.SaveFromSectionAndKey(String,String,NSPreferenceDescription)
   - CRMScript.NetServer.NSPreferenceAgent.SavePreference(NSPreference)
   - CRMScript.NetServer.NSPreferenceAgent.SavePreferenceDescription(NSPreferenceDescription)
@@ -41,14 +41,30 @@ items:
   - CRMScript.NetServer.NSPreferenceAgent.SavePreferenceEntities(NSPreference[],Bool)
   - CRMScript.NetServer.NSPreferenceAgent.SavePreferenceEntity(NSPreference,Bool)
   - CRMScript.NetServer.NSPreferenceAgent.SavePreferences(NSPreference[])
-  - CRMScript.NetServer.NSPreferenceAgent.SaveTabOrder()
-  - CRMScript.NetServer.NSPreferenceAgent.SaveTabOrders()
+  - CRMScript.NetServer.NSPreferenceAgent.SaveTabOrder(NSTabOrder)
+  - CRMScript.NetServer.NSPreferenceAgent.SaveTabOrders(NSTabOrder[])
   - CRMScript.NetServer.NSPreferenceAgent.UpdateNetServicesStatus(String)
   name: NSPreferenceAgent
   nameWithType: NSPreferenceAgent
   fullName: CRMScript.NetServer.NSPreferenceAgent
   type: Class
   summary: "\nPreferences, user interface tab configuration.\n"
+  example: 
+  - "\n<pre><code>NSPreferenceAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSPreferenceAgent.#ctor
+  commentId: M:CRMScript.NetServer.NSPreferenceAgent.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSPreferenceAgent
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSPreferenceAgent.#ctor
+  fullName: CRMScript.NetServer.NSPreferenceAgent.#ctor
+  type: Constructor
+  summary: "\nPreferences, user interface tab configuration.\n"
+  remarks: 
+  syntax: 
+    content: NSPreferenceAgent
   example: 
   - "\n<pre><code>NSPreferenceAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreferenceAgent.CreateDefaultPreference()
@@ -143,7 +159,7 @@ items:
   nameWithType: NSPreferenceAgent.DeletePrefDescLinesByPrefDescId(Integer)
   fullName: CRMScript.NetServer.NSPreferenceAgent.DeletePrefDescLinesByPrefDescId(Integer)
   type: Method
-  summary: "\nDeletes the PrefDescLines associated with Preference Description Id in the SuperOffice database\n"
+  summary: "\nDeletes the PrefDescLines associated with Preference Description ID in the SuperOffice database\n"
   remarks: 
   syntax: 
     content: Void DeletePrefDescLinesByPrefDescId(Integer prefDescId)
@@ -165,7 +181,7 @@ items:
   nameWithType: NSPreferenceAgent.DeletePrefDescLinesByPrefDescIds(Integer[])
   fullName: CRMScript.NetServer.NSPreferenceAgent.DeletePrefDescLinesByPrefDescIds(Integer[])
   type: Method
-  summary: "\nDeletes the PrefDescLines associated with Preference Description Ids in the SuperOffice database\n"
+  summary: "\nDeletes the PrefDescLines associated with Preference Description IDs in the SuperOffice database\n"
   remarks: 
   syntax: 
     content: Void DeletePrefDescLinesByPrefDescIds(Integer[] prefDescIds)
@@ -297,7 +313,7 @@ items:
   nameWithType: NSPreferenceAgent.GetAll()
   fullName: CRMScript.NetServer.NSPreferenceAgent.GetAll()
   type: Method
-  summary: "\nGets a list of all PreferenceDescriptions in the system.<p></p>\n<strong>Returns:</strong>NSPreferenceDescription[]<p></p>\n<pre><code>NSPreferenceAgent agent;\nNSPreferenceDescription[] res = agent.GetAll();</code></pre>\n"
+  summary: "\nGets a list of all PreferenceDescriptions in the system.\n"
   remarks: 
   syntax: 
     content: NSPreferenceDescription[] GetAll()
@@ -363,14 +379,14 @@ items:
   nameWithType: NSPreferenceAgent.GetNetServicesStatusUrl()
   fullName: CRMScript.NetServer.NSPreferenceAgent.GetNetServicesStatusUrl()
   type: Method
-  summary: "\nReturns URL to status service. e.g. 'https://help.superoffice.com/sodispatcher/v1/status' Returns NULL if status does not need to be checked yet.\n"
+  summary: "\nReturns URL to status service. e.g. 'https://help.superoffice.com/sodispatcher/v1/status'\n"
   remarks: 
   syntax: 
     content: String GetNetServicesStatusUrl()
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: URL; NULL if status does not need to be checked yet.
   example: 
   - "\n<pre><code>NSPreferenceAgent agent;\nString res = agent.GetNetServicesStatusUrl();</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreferenceAgent.GetPreference(Integer)
@@ -406,7 +422,7 @@ items:
   fullName: CRMScript.NetServer.NSPreferenceAgent.GetPreferenceByName(String,String,Integer)
   type: Method
   summary: "\nGets a preference by name\n"
-  remarks: "\n<p>See enum prefLevel.</p>\n"
+  remarks: "\n<p></p>\n"
   syntax: 
     content: NSPreference GetPreferenceByName(String prefSection, String prefKey, Integer prefLevel)
     parameters:
@@ -418,7 +434,7 @@ items:
       description: 
     - id: prefLevel
       type: CRMScript.Global.Integer
-      description: 
+      description: See enum prefLevel.
     return:
       type: CRMScript.NetServer.NSPreference
   example: 
@@ -433,8 +449,8 @@ items:
   nameWithType: NSPreferenceAgent.GetPreferenceByNameAndId(String,String,Integer,Integer)
   fullName: CRMScript.NetServer.NSPreferenceAgent.GetPreferenceByNameAndId(String,String,Integer,Integer)
   type: Method
-  summary: "\nGets a preference by name and owner id.\n"
-  remarks: "\n<p>See enum ownerId.</p>\n"
+  summary: "\nGets a preference by name and owner ID.\n"
+  remarks: 
   syntax: 
     content: NSPreference GetPreferenceByNameAndId(String prefSection, String prefKey, Integer prefLevel, Integer ownerId)
     parameters:
@@ -555,8 +571,8 @@ items:
   nameWithType: NSPreferenceAgent.GetPreferences(NSPreferenceSpec[])
   fullName: CRMScript.NetServer.NSPreferenceAgent.GetPreferences(NSPreferenceSpec[])
   type: Method
-  summary: "\nGets one or more preferences based on a set of specifications.<br/>The prefDisplayvalue and prefDisplaytooltip are blank (faster processing relative to GetPreferencesWithDisplayValues)\n"
-  remarks: 
+  summary: "\nGets one or more preferences based on a set of specifications.\n"
+  remarks: "\nThe prefDisplayvalue and prefDisplaytooltip are blank (faster processing relative to GetPreferencesWithDisplayValues)\n"
   syntax: 
     content: NSPreference[] GetPreferences(NSPreferenceSpec[] specifications)
     parameters:
@@ -577,8 +593,8 @@ items:
   nameWithType: NSPreferenceAgent.GetPreferencesWithDisplayValues(NSPreferenceSpec[])
   fullName: CRMScript.NetServer.NSPreferenceAgent.GetPreferencesWithDisplayValues(NSPreferenceSpec[])
   type: Method
-  summary: "\nGets one or more preferences based on a set of specifications<br/>The PrefDisplayValue and PrefDisplaytooltip are populated, at some additional processing cost.\n"
-  remarks: 
+  summary: "\nGets one or more preferences based on a set of specifications.\n"
+  remarks: "\nThe PrefDisplayValue and PrefDisplaytooltip are populated, at some additional processing cost.\n"
   syntax: 
     content: NSPreference[] GetPreferencesWithDisplayValues(NSPreferenceSpec[] specifications)
     parameters:
@@ -629,22 +645,6 @@ items:
     return:
       type: CRMScript.NetServer.NSTabOrder[]
   example: 
-- uid: CRMScript.NetServer.NSPreferenceAgent.#ctor
-  commentId: M:CRMScript.NetServer.NSPreferenceAgent.#ctor
-  id: '#ctor'
-  so.intellisense: Void.NSPreferenceAgent
-  langs:
-  - crmscript
-  name: '#ctor'
-  nameWithType: NSPreferenceAgent.#ctor
-  fullName: CRMScript.NetServer.NSPreferenceAgent.#ctor
-  type: Constructor
-  summary: "\nPreferences, user interface tab configuration.\n"
-  remarks: 
-  syntax: 
-    content: NSPreferenceAgent
-  example: 
-  - "\n<pre><code>NSPreferenceAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreferenceAgent.SaveFromSectionAndKey(String,String,NSPreferenceDescription)
   commentId: M:CRMScript.NetServer.NSPreferenceAgent.SaveFromSectionAndKey(String,String,NSPreferenceDescription)
   id: 'SaveFromSectionAndKey(String,String,NSPreferenceDescription)'
@@ -683,7 +683,7 @@ items:
   nameWithType: NSPreferenceAgent.SavePreference(NSPreference)
   fullName: CRMScript.NetServer.NSPreferenceAgent.SavePreference(NSPreference)
   type: Method
-  summary: "\nSave this preference\n"
+  summary: "\nSaves this preference\n"
   remarks: 
   syntax: 
     content: Void SavePreference(NSPreference preference)
@@ -705,7 +705,7 @@ items:
   nameWithType: NSPreferenceAgent.SavePreferenceDescription(NSPreferenceDescription)
   fullName: CRMScript.NetServer.NSPreferenceAgent.SavePreferenceDescription(NSPreferenceDescription)
   type: Method
-  summary: "\nUpdates the existing NSPreferenceDescription or creates a new NSPreferenceDescription if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>preferenceDescription</strong>The NSPreferenceDescription to save.</li></ul>\n"
+  summary: "\nUpdates the existing NSPreferenceDescription or creates a new NSPreferenceDescription if the id parameter is 0\n"
   remarks: 
   syntax: 
     content: NSPreferenceDescription SavePreferenceDescription(NSPreferenceDescription preferenceDescription)
@@ -727,7 +727,7 @@ items:
   nameWithType: NSPreferenceAgent.SavePreferenceDescriptionLine(NSPreferenceDescriptionLine)
   fullName: CRMScript.NetServer.NSPreferenceAgent.SavePreferenceDescriptionLine(NSPreferenceDescriptionLine)
   type: Method
-  summary: "\nUpdates the existing NSPreferenceDescriptionLine or creates a new NSPreferenceDescriptionLine if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>preferenceDescriptionLine</strong>The NSPreferenceDescriptionLine to save.</li></ul>\n"
+  summary: "\nUpdates the existing NSPreferenceDescriptionLine or creates a new NSPreferenceDescriptionLine if the id parameter is 0\n"
   remarks: 
   syntax: 
     content: NSPreferenceDescriptionLine SavePreferenceDescriptionLine(NSPreferenceDescriptionLine preferenceDescriptionLine)
@@ -771,7 +771,7 @@ items:
   nameWithType: NSPreferenceAgent.SavePreferenceEntities(NSPreference[],Bool)
   fullName: CRMScript.NetServer.NSPreferenceAgent.SavePreferenceEntities(NSPreference[],Bool)
   type: Method
-  summary: "\nSave this set of preferences.\n"
+  summary: "\nSaves this set of preferences.\n"
   remarks: 
   syntax: 
     content: Void SavePreferenceEntities(NSPreference[] preferences, Bool removeLowerLevels)
@@ -795,8 +795,8 @@ items:
   nameWithType: NSPreferenceAgent.SavePreferenceEntity(NSPreference,Bool)
   fullName: CRMScript.NetServer.NSPreferenceAgent.SavePreferenceEntity(NSPreference,Bool)
   type: Method
-  summary: "\nSaves a complete preference object, on any level and any target. Preference administrator rights are required to use this\n"
-  remarks: 
+  summary: "\nSaves a complete preference object, on any level and any target.\n"
+  remarks: "\nPreference administrator rights are required to use this\n"
   syntax: 
     content: NSPreference SavePreferenceEntity(NSPreference preference, Bool removeLowerLevels)
     parameters:
@@ -820,8 +820,8 @@ items:
   nameWithType: NSPreferenceAgent.SavePreferences(NSPreference[])
   fullName: CRMScript.NetServer.NSPreferenceAgent.SavePreferences(NSPreference[])
   type: Method
-  summary: "\nSave this set of preferences. Note this method DOES NOT look at level/targetId* it only saves on behalf of the CURRENT USER.\n"
-  remarks: 
+  summary: "\nSaves this set of preferences.\n"
+  remarks: "\nDOES NOT look at level/targetId, it only saves on behalf of the CURRENT USER.\n"
   syntax: 
     content: Void SavePreferences(NSPreference[] preferences)
     parameters:
@@ -831,40 +831,46 @@ items:
     return:
       type: CRMScript.Global.Void
   example: 
-- uid: CRMScript.NetServer.NSPreferenceAgent.SaveTabOrder()
-  commentId: M:CRMScript.NetServer.NSPreferenceAgent.SaveTabOrder()
-  id: 'SaveTabOrder()'
+- uid: CRMScript.NetServer.NSPreferenceAgent.SaveTabOrder(NSTabOrder)
+  commentId: M:CRMScript.NetServer.NSPreferenceAgent.SaveTabOrder(NSTabOrder)
+  id: 'SaveTabOrder(NSTabOrder)'
   so.intellisense: NSPreferenceAgent.SaveTabOrder
   langs:
   - crmscript
-  name: 'SaveTabOrder()'
-  nameWithType: NSPreferenceAgent.SaveTabOrder()
-  fullName: CRMScript.NetServer.NSPreferenceAgent.SaveTabOrder()
+  name: 'SaveTabOrder(NSTabOrder)'
+  nameWithType: NSPreferenceAgent.SaveTabOrder(NSTabOrder)
+  fullName: CRMScript.NetServer.NSPreferenceAgent.SaveTabOrder(NSTabOrder)
   type: Method
   summary: "\nSaves the tab order. The order is saved pr. user.\n"
   remarks: 
   syntax: 
     content: Void SaveTabOrder(NSTabOrder tabOrder)
     parameters:
+    - id: tabOrder
+      type: CRMScript.NetServer.NSTabOrder
+      description:
     return:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSPreferenceAgent agent;\nNSTabOrder tabOrder;\nagent.SaveTabOrder(tabOrder);</code></pre>\n"
-- uid: CRMScript.NetServer.NSPreferenceAgent.SaveTabOrders()
-  commentId: M:CRMScript.NetServer.NSPreferenceAgent.SaveTabOrders()
-  id: 'SaveTabOrders()'
+- uid: CRMScript.NetServer.NSPreferenceAgent.SaveTabOrders(NSTabOrder[])
+  commentId: M:CRMScript.NetServer.NSPreferenceAgent.SaveTabOrders(NSTabOrder[])
+  id: 'SaveTabOrders(NSTabOrder[])'
   so.intellisense: NSPreferenceAgent.SaveTabOrders
   langs:
   - crmscript
-  name: 'SaveTabOrders()'
-  nameWithType: NSPreferenceAgent.SaveTabOrders()
-  fullName: CRMScript.NetServer.NSPreferenceAgent.SaveTabOrders()
+  name: 'SaveTabOrders(NSTabOrder[])'
+  nameWithType: NSPreferenceAgent.SaveTabOrders(NSTabOrder[])
+  fullName: CRMScript.NetServer.NSPreferenceAgent.SaveTabOrders(NSTabOrder[])
   type: Method
   summary: 
   remarks: 
   syntax: 
     content: Void SaveTabOrders(NSTabOrder[] tabOrders)
     parameters:
+    - id: tabOrders
+      type: CRMScript.NetServer.NSTabOrder[]
+      description:
     return:
       type: CRMScript.Global.Void
   example: 

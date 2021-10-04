@@ -6,6 +6,7 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSPreferenceDescription.#ctor
   - CRMScript.NetServer.NSPreferenceDescription.GetAccessFlags()
   - CRMScript.NetServer.NSPreferenceDescription.GetDescription()
   - CRMScript.NetServer.NSPreferenceDescription.GetIsBuiltin()
@@ -24,7 +25,6 @@ items:
   - CRMScript.NetServer.NSPreferenceDescription.GetTableName()
   - CRMScript.NetServer.NSPreferenceDescription.GetUserDefinedListId()
   - CRMScript.NetServer.NSPreferenceDescription.GetValueType()
-  - CRMScript.NetServer.NSPreferenceDescription.#ctor
   - CRMScript.NetServer.NSPreferenceDescription.SetAccessFlags(Integer)
   - CRMScript.NetServer.NSPreferenceDescription.SetDescription(String)
   - CRMScript.NetServer.NSPreferenceDescription.SetIsBuiltin(Bool)
@@ -49,366 +49,6 @@ items:
   type: Class
   summary: 
   example: 
-- uid: CRMScript.NetServer.NSPreferenceDescription.GetAccessFlags()
-  commentId: M:CRMScript.NetServer.NSPreferenceDescription.GetAccessFlags()
-  id: 'GetAccessFlags()'
-  so.intellisense: NSPreferenceDescription.GetAccessFlags
-  langs:
-  - crmscript
-  name: 'GetAccessFlags()'
-  nameWithType: NSPreferenceDescription.GetAccessFlags()
-  fullName: CRMScript.NetServer.NSPreferenceDescription.GetAccessFlags()
-  type: Method
-  summary: "\n1=wizard mode, 2=level 0, 4=admin gui, 8=crm gui<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = WizardMode</li><li>Enum: 2 = Level0</li><li>Enum: 4 = adminGUI</li><li>Enum: 8 = CRMGUI</li></ul><pre><code>NSPreferenceDescription thing;\nInteger accessFlags = thing.GetAccessFlags();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: Integer GetAccessFlags()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSPreferenceDescription thing;\nInteger accessFlags = thing.GetAccessFlags();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPreferenceDescription.GetDescription()
-  commentId: M:CRMScript.NetServer.NSPreferenceDescription.GetDescription()
-  id: 'GetDescription()'
-  so.intellisense: NSPreferenceDescription.GetDescription
-  langs:
-  - crmscript
-  name: 'GetDescription()'
-  nameWithType: NSPreferenceDescription.GetDescription()
-  fullName: CRMScript.NetServer.NSPreferenceDescription.GetDescription()
-  type: Method
-  summary: "\nDescription of preference, multi-language parsed\n"
-  remarks: 
-  syntax: 
-    content: String GetDescription()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSPreferenceDescription thing;\nString description = thing.GetDescription();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPreferenceDescription.GetIsBuiltin()
-  commentId: M:CRMScript.NetServer.NSPreferenceDescription.GetIsBuiltin()
-  id: 'GetIsBuiltin()'
-  so.intellisense: NSPreferenceDescription.GetIsBuiltin
-  langs:
-  - crmscript
-  name: 'GetIsBuiltin()'
-  nameWithType: NSPreferenceDescription.GetIsBuiltin()
-  fullName: CRMScript.NetServer.NSPreferenceDescription.GetIsBuiltin()
-  type: Method
-  summary: "\n1 = This row populated and maintained by SuperOffice\n"
-  remarks: 
-  syntax: 
-    content: Bool GetIsBuiltin()
-    parameters: []
-    return:
-      type: CRMScript.Global.Bool
-      description:
-  example: 
-  - "\n<pre><code>NSPreferenceDescription thing;\nBool isBuiltin = thing.GetIsBuiltin();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPreferenceDescription.GetKey()
-  commentId: M:CRMScript.NetServer.NSPreferenceDescription.GetKey()
-  id: 'GetKey()'
-  so.intellisense: NSPreferenceDescription.GetKey
-  langs:
-  - crmscript
-  name: 'GetKey()'
-  nameWithType: NSPreferenceDescription.GetKey()
-  fullName: CRMScript.NetServer.NSPreferenceDescription.GetKey()
-  type: Method
-  summary: "\nPreference key name\n"
-  remarks: 
-  syntax: 
-    content: String GetKey()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSPreferenceDescription thing;\nString key = thing.GetKey();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPreferenceDescription.GetMaxLevel()
-  commentId: M:CRMScript.NetServer.NSPreferenceDescription.GetMaxLevel()
-  id: 'GetMaxLevel()'
-  so.intellisense: NSPreferenceDescription.GetMaxLevel
-  langs:
-  - crmscript
-  name: 'GetMaxLevel()'
-  nameWithType: NSPreferenceDescription.GetMaxLevel()
-  fullName: CRMScript.NetServer.NSPreferenceDescription.GetMaxLevel()
-  type: Method
-  summary: "\nLowest allowed setting level, set by user, but not lower than sysMaxLevel<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<ul><li>Enum: 0 = Undefined</li><li>Enum: 1 = HardDefault</li><li>Enum: 2 = SystemWide</li><li>Enum: 3 = Database</li><li>Enum: 4 = Group</li><li>Enum: 5 = Individual</li><li>Enum: 6 = PC</li></ul><pre><code>NSPreferenceDescription thing;\nInteger maxLevel = thing.GetMaxLevel();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: Integer GetMaxLevel()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSPreferenceDescription thing;\nInteger maxLevel = thing.GetMaxLevel();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPreferenceDescription.GetMaxValue()
-  commentId: M:CRMScript.NetServer.NSPreferenceDescription.GetMaxValue()
-  id: 'GetMaxValue()'
-  so.intellisense: NSPreferenceDescription.GetMaxValue
-  langs:
-  - crmscript
-  name: 'GetMaxValue()'
-  nameWithType: NSPreferenceDescription.GetMaxValue()
-  fullName: CRMScript.NetServer.NSPreferenceDescription.GetMaxValue()
-  type: Method
-  summary: "\nMax value (if type 1); list table ID (if type 5)\n"
-  remarks: 
-  syntax: 
-    content: Integer GetMaxValue()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSPreferenceDescription thing;\nInteger maxValue = thing.GetMaxValue();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPreferenceDescription.GetMinLevel()
-  commentId: M:CRMScript.NetServer.NSPreferenceDescription.GetMinLevel()
-  id: 'GetMinLevel()'
-  so.intellisense: NSPreferenceDescription.GetMinLevel
-  langs:
-  - crmscript
-  name: 'GetMinLevel()'
-  nameWithType: NSPreferenceDescription.GetMinLevel()
-  fullName: CRMScript.NetServer.NSPreferenceDescription.GetMinLevel()
-  type: Method
-  summary: "\nThe minimum (furthest away from User) level this preference can be set for\n"
-  remarks: 
-  syntax: 
-    content: Integer GetMinLevel()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSPreferenceDescription thing;\nInteger minLevel = thing.GetMinLevel();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPreferenceDescription.GetMinValue()
-  commentId: M:CRMScript.NetServer.NSPreferenceDescription.GetMinValue()
-  id: 'GetMinValue()'
-  so.intellisense: NSPreferenceDescription.GetMinValue
-  langs:
-  - crmscript
-  name: 'GetMinValue()'
-  nameWithType: NSPreferenceDescription.GetMinValue()
-  fullName: CRMScript.NetServer.NSPreferenceDescription.GetMinValue()
-  type: Method
-  summary: "\nMin value (if type 1); list extra id (if type 5)\n"
-  remarks: 
-  syntax: 
-    content: Integer GetMinValue()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSPreferenceDescription thing;\nInteger minValue = thing.GetMinValue();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPreferenceDescription.GetName()
-  commentId: M:CRMScript.NetServer.NSPreferenceDescription.GetName()
-  id: 'GetName()'
-  so.intellisense: NSPreferenceDescription.GetName
-  langs:
-  - crmscript
-  name: 'GetName()'
-  nameWithType: NSPreferenceDescription.GetName()
-  fullName: CRMScript.NetServer.NSPreferenceDescription.GetName()
-  type: Method
-  summary: "\nMulti-language name\n"
-  remarks: 
-  syntax: 
-    content: String GetName()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSPreferenceDescription thing;\nString name = thing.GetName();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPreferenceDescription.GetPrefDescId()
-  commentId: M:CRMScript.NetServer.NSPreferenceDescription.GetPrefDescId()
-  id: 'GetPrefDescId()'
-  so.intellisense: NSPreferenceDescription.GetPrefDescId
-  langs:
-  - crmscript
-  name: 'GetPrefDescId()'
-  nameWithType: NSPreferenceDescription.GetPrefDescId()
-  fullName: CRMScript.NetServer.NSPreferenceDescription.GetPrefDescId()
-  type: Method
-  summary: "\nPrimary key\n"
-  remarks: 
-  syntax: 
-    content: Integer GetPrefDescId()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSPreferenceDescription thing;\nInteger prefDescId = thing.GetPrefDescId();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPreferenceDescription.GetRank()
-  commentId: M:CRMScript.NetServer.NSPreferenceDescription.GetRank()
-  id: 'GetRank()'
-  so.intellisense: NSPreferenceDescription.GetRank
-  langs:
-  - crmscript
-  name: 'GetRank()'
-  nameWithType: NSPreferenceDescription.GetRank()
-  fullName: CRMScript.NetServer.NSPreferenceDescription.GetRank()
-  type: Method
-  summary: "\nRank field for ordering sections, and keys within sections\n"
-  remarks: 
-  syntax: 
-    content: Integer GetRank()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSPreferenceDescription thing;\nInteger rank = thing.GetRank();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPreferenceDescription.GetRequiredLicense()
-  commentId: M:CRMScript.NetServer.NSPreferenceDescription.GetRequiredLicense()
-  id: 'GetRequiredLicense()'
-  so.intellisense: NSPreferenceDescription.GetRequiredLicense
-  langs:
-  - crmscript
-  name: 'GetRequiredLicense()'
-  nameWithType: NSPreferenceDescription.GetRequiredLicense()
-  fullName: CRMScript.NetServer.NSPreferenceDescription.GetRequiredLicense()
-  type: Method
-  summary: "\nLicenses the user/installation must have if this reference is to be shown. Comma-separated list of owner.module pairs\n"
-  remarks: 
-  syntax: 
-    content: String GetRequiredLicense()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSPreferenceDescription thing;\nString requiredLicense = thing.GetRequiredLicense();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPreferenceDescription.GetSection()
-  commentId: M:CRMScript.NetServer.NSPreferenceDescription.GetSection()
-  id: 'GetSection()'
-  so.intellisense: NSPreferenceDescription.GetSection
-  langs:
-  - crmscript
-  name: 'GetSection()'
-  nameWithType: NSPreferenceDescription.GetSection()
-  fullName: CRMScript.NetServer.NSPreferenceDescription.GetSection()
-  type: Method
-  summary: "\nPreference section name\n"
-  remarks: 
-  syntax: 
-    content: String GetSection()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSPreferenceDescription thing;\nString section = thing.GetSection();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPreferenceDescription.GetSubGroup()
-  commentId: M:CRMScript.NetServer.NSPreferenceDescription.GetSubGroup()
-  id: 'GetSubGroup()'
-  so.intellisense: NSPreferenceDescription.GetSubGroup
-  langs:
-  - crmscript
-  name: 'GetSubGroup()'
-  nameWithType: NSPreferenceDescription.GetSubGroup()
-  fullName: CRMScript.NetServer.NSPreferenceDescription.GetSubGroup()
-  type: Method
-  summary: "\nKeys that share a value (including NULL) in this field are shown together; a visual spacer is shown between groups\n"
-  remarks: 
-  syntax: 
-    content: String GetSubGroup()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSPreferenceDescription thing;\nString subGroup = thing.GetSubGroup();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPreferenceDescription.GetSysMaxLevel()
-  commentId: M:CRMScript.NetServer.NSPreferenceDescription.GetSysMaxLevel()
-  id: 'GetSysMaxLevel()'
-  so.intellisense: NSPreferenceDescription.GetSysMaxLevel
-  langs:
-  - crmscript
-  name: 'GetSysMaxLevel()'
-  nameWithType: NSPreferenceDescription.GetSysMaxLevel()
-  fullName: CRMScript.NetServer.NSPreferenceDescription.GetSysMaxLevel()
-  type: Method
-  summary: "\nLowest allowed setting level, set by SuperOffice<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<ul><li>Enum: 0 = Undefined</li><li>Enum: 1 = HardDefault</li><li>Enum: 2 = SystemWide</li><li>Enum: 3 = Database</li><li>Enum: 4 = Group</li><li>Enum: 5 = Individual</li><li>Enum: 6 = PC</li></ul><pre><code>NSPreferenceDescription thing;\nInteger sysMaxLevel = thing.GetSysMaxLevel();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: Integer GetSysMaxLevel()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSPreferenceDescription thing;\nInteger sysMaxLevel = thing.GetSysMaxLevel();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPreferenceDescription.GetTableName()
-  commentId: M:CRMScript.NetServer.NSPreferenceDescription.GetTableName()
-  id: 'GetTableName()'
-  so.intellisense: NSPreferenceDescription.GetTableName
-  langs:
-  - crmscript
-  name: 'GetTableName()'
-  nameWithType: NSPreferenceDescription.GetTableName()
-  fullName: CRMScript.NetServer.NSPreferenceDescription.GetTableName()
-  type: Method
-  summary: "\nIf valueType = 5, then TableName contains the table referenced by the preference\n"
-  remarks: 
-  syntax: 
-    content: String GetTableName()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSPreferenceDescription thing;\nString tableName = thing.GetTableName();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPreferenceDescription.GetUserDefinedListId()
-  commentId: M:CRMScript.NetServer.NSPreferenceDescription.GetUserDefinedListId()
-  id: 'GetUserDefinedListId()'
-  so.intellisense: NSPreferenceDescription.GetUserDefinedListId
-  langs:
-  - crmscript
-  name: 'GetUserDefinedListId()'
-  nameWithType: NSPreferenceDescription.GetUserDefinedListId()
-  fullName: CRMScript.NetServer.NSPreferenceDescription.GetUserDefinedListId()
-  type: Method
-  summary: "\nRead-only field, If valueType = 5, and TableName is UDList, then UserdefinedLIstId contains the ID of the list referenced by the preference\n"
-  remarks: 
-  syntax: 
-    content: Integer GetUserDefinedListId()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSPreferenceDescription thing;\nInteger userDefinedListId = thing.GetUserDefinedListId();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPreferenceDescription.GetValueType()
-  commentId: M:CRMScript.NetServer.NSPreferenceDescription.GetValueType()
-  id: 'GetValueType()'
-  so.intellisense: NSPreferenceDescription.GetValueType
-  langs:
-  - crmscript
-  name: 'GetValueType()'
-  nameWithType: NSPreferenceDescription.GetValueType()
-  fullName: CRMScript.NetServer.NSPreferenceDescription.GetValueType()
-  type: Method
-  summary: "\n1=number, 2=text, 3=bool, 4=list of values; 5=list table ref; 6=contact ID, 7=Person ID, 8=Project ID, 9=Selection ID<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Number</li><li>Enum: 2 = Text</li><li>Enum: 3 = Bool</li><li>Enum: 4 = ListOfValues</li><li>Enum: 5 = ListTableRef</li><li>Enum: 6 = TimeList</li><li>Enum: 7 = ContactID</li><li>Enum: 8 = PersonID</li><li>Enum: 9 = ProjectID</li><li>Enum: 10 = SelectionID</li><li>Enum: 11 = PosSize</li><li>Enum: 12 = TimeZone</li><li>Enum: 13 = Time</li><li>Enum: 14 = Password</li><li>Enum: 15 = MultiLineText</li></ul><pre><code>NSPreferenceDescription thing;\nInteger valueType = thing.GetValueType();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: Integer GetValueType()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSPreferenceDescription thing;\nInteger valueType = thing.GetValueType();</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreferenceDescription.#ctor
   commentId: M:CRMScript.NetServer.NSPreferenceDescription.#ctor
   id: '#ctor'
@@ -424,6 +64,366 @@ items:
   syntax: 
     content: NSPreferenceDescription
   example: 
+- uid: CRMScript.NetServer.NSPreferenceDescription.GetAccessFlags()
+  commentId: M:CRMScript.NetServer.NSPreferenceDescription.GetAccessFlags()
+  id: 'GetAccessFlags()'
+  so.intellisense: NSPreferenceDescription.GetAccessFlags
+  langs:
+  - crmscript
+  name: 'GetAccessFlags()'
+  nameWithType: NSPreferenceDescription.GetAccessFlags()
+  fullName: CRMScript.NetServer.NSPreferenceDescription.GetAccessFlags()
+  type: Method
+  summary: "\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = WizardMode</li><li>Enum: 2 = Level0</li><li>Enum: 4 = adminGUI</li><li>Enum: 8 = CRMGUI</li></ul>\n"
+  remarks: 
+  syntax: 
+    content: Integer GetAccessFlags()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: 1=wizard mode, 2=level 0, 4=admin gui, 8=crm gui
+  example: 
+  - "\n<pre><code>NSPreferenceDescription thing;\nInteger accessFlags = thing.GetAccessFlags();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPreferenceDescription.GetDescription()
+  commentId: M:CRMScript.NetServer.NSPreferenceDescription.GetDescription()
+  id: 'GetDescription()'
+  so.intellisense: NSPreferenceDescription.GetDescription
+  langs:
+  - crmscript
+  name: 'GetDescription()'
+  nameWithType: NSPreferenceDescription.GetDescription()
+  fullName: CRMScript.NetServer.NSPreferenceDescription.GetDescription()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: String GetDescription()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Description of preference, multi-language parsed
+  example: 
+  - "\n<pre><code>NSPreferenceDescription thing;\nString description = thing.GetDescription();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPreferenceDescription.GetIsBuiltin()
+  commentId: M:CRMScript.NetServer.NSPreferenceDescription.GetIsBuiltin()
+  id: 'GetIsBuiltin()'
+  so.intellisense: NSPreferenceDescription.GetIsBuiltin
+  langs:
+  - crmscript
+  name: 'GetIsBuiltin()'
+  nameWithType: NSPreferenceDescription.GetIsBuiltin()
+  fullName: CRMScript.NetServer.NSPreferenceDescription.GetIsBuiltin()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: Bool GetIsBuiltin()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: 1 = This row populated and maintained by SuperOffice
+  example: 
+  - "\n<pre><code>NSPreferenceDescription thing;\nBool isBuiltin = thing.GetIsBuiltin();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPreferenceDescription.GetKey()
+  commentId: M:CRMScript.NetServer.NSPreferenceDescription.GetKey()
+  id: 'GetKey()'
+  so.intellisense: NSPreferenceDescription.GetKey
+  langs:
+  - crmscript
+  name: 'GetKey()'
+  nameWithType: NSPreferenceDescription.GetKey()
+  fullName: CRMScript.NetServer.NSPreferenceDescription.GetKey()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: String GetKey()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Preference key name
+  example: 
+  - "\n<pre><code>NSPreferenceDescription thing;\nString key = thing.GetKey();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPreferenceDescription.GetMaxLevel()
+  commentId: M:CRMScript.NetServer.NSPreferenceDescription.GetMaxLevel()
+  id: 'GetMaxLevel()'
+  so.intellisense: NSPreferenceDescription.GetMaxLevel
+  langs:
+  - crmscript
+  name: 'GetMaxLevel()'
+  nameWithType: NSPreferenceDescription.GetMaxLevel()
+  fullName: CRMScript.NetServer.NSPreferenceDescription.GetMaxLevel()
+  type: Method
+  summary: "\n<ul><li>Enum: 0 = Undefined</li><li>Enum: 1 = HardDefault</li><li>Enum: 2 = SystemWide</li><li>Enum: 3 = Database</li><li>Enum: 4 = Group</li><li>Enum: 5 = Individual</li><li>Enum: 6 = PC</li></ul>\n"
+  remarks: 
+  syntax: 
+    content: Integer GetMaxLevel()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: Lowest allowed setting level, set by user, but not lower than sysMaxLevel
+  example: 
+  - "\n<pre><code>NSPreferenceDescription thing;\nInteger maxLevel = thing.GetMaxLevel();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPreferenceDescription.GetMaxValue()
+  commentId: M:CRMScript.NetServer.NSPreferenceDescription.GetMaxValue()
+  id: 'GetMaxValue()'
+  so.intellisense: NSPreferenceDescription.GetMaxValue
+  langs:
+  - crmscript
+  name: 'GetMaxValue()'
+  nameWithType: NSPreferenceDescription.GetMaxValue()
+  fullName: CRMScript.NetServer.NSPreferenceDescription.GetMaxValue()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: Integer GetMaxValue()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: Max value (if type 1); list table ID (if type 5)
+  example: 
+  - "\n<pre><code>NSPreferenceDescription thing;\nInteger maxValue = thing.GetMaxValue();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPreferenceDescription.GetMinLevel()
+  commentId: M:CRMScript.NetServer.NSPreferenceDescription.GetMinLevel()
+  id: 'GetMinLevel()'
+  so.intellisense: NSPreferenceDescription.GetMinLevel
+  langs:
+  - crmscript
+  name: 'GetMinLevel()'
+  nameWithType: NSPreferenceDescription.GetMinLevel()
+  fullName: CRMScript.NetServer.NSPreferenceDescription.GetMinLevel()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: Integer GetMinLevel()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: The minimum (furthest away from User) level this preference can be set for
+  example: 
+  - "\n<pre><code>NSPreferenceDescription thing;\nInteger minLevel = thing.GetMinLevel();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPreferenceDescription.GetMinValue()
+  commentId: M:CRMScript.NetServer.NSPreferenceDescription.GetMinValue()
+  id: 'GetMinValue()'
+  so.intellisense: NSPreferenceDescription.GetMinValue
+  langs:
+  - crmscript
+  name: 'GetMinValue()'
+  nameWithType: NSPreferenceDescription.GetMinValue()
+  fullName: CRMScript.NetServer.NSPreferenceDescription.GetMinValue()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: Integer GetMinValue()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: Min value (if type 1); list extra id (if type 5)
+  example: 
+  - "\n<pre><code>NSPreferenceDescription thing;\nInteger minValue = thing.GetMinValue();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPreferenceDescription.GetName()
+  commentId: M:CRMScript.NetServer.NSPreferenceDescription.GetName()
+  id: 'GetName()'
+  so.intellisense: NSPreferenceDescription.GetName
+  langs:
+  - crmscript
+  name: 'GetName()'
+  nameWithType: NSPreferenceDescription.GetName()
+  fullName: CRMScript.NetServer.NSPreferenceDescription.GetName()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: String GetName()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Multi-language name
+  example: 
+  - "\n<pre><code>NSPreferenceDescription thing;\nString name = thing.GetName();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPreferenceDescription.GetPrefDescId()
+  commentId: M:CRMScript.NetServer.NSPreferenceDescription.GetPrefDescId()
+  id: 'GetPrefDescId()'
+  so.intellisense: NSPreferenceDescription.GetPrefDescId
+  langs:
+  - crmscript
+  name: 'GetPrefDescId()'
+  nameWithType: NSPreferenceDescription.GetPrefDescId()
+  fullName: CRMScript.NetServer.NSPreferenceDescription.GetPrefDescId()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: Integer GetPrefDescId()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: Primary key
+  example: 
+  - "\n<pre><code>NSPreferenceDescription thing;\nInteger prefDescId = thing.GetPrefDescId();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPreferenceDescription.GetRank()
+  commentId: M:CRMScript.NetServer.NSPreferenceDescription.GetRank()
+  id: 'GetRank()'
+  so.intellisense: NSPreferenceDescription.GetRank
+  langs:
+  - crmscript
+  name: 'GetRank()'
+  nameWithType: NSPreferenceDescription.GetRank()
+  fullName: CRMScript.NetServer.NSPreferenceDescription.GetRank()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: Integer GetRank()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: Rank field for ordering sections, and keys within sections
+  example: 
+  - "\n<pre><code>NSPreferenceDescription thing;\nInteger rank = thing.GetRank();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPreferenceDescription.GetRequiredLicense()
+  commentId: M:CRMScript.NetServer.NSPreferenceDescription.GetRequiredLicense()
+  id: 'GetRequiredLicense()'
+  so.intellisense: NSPreferenceDescription.GetRequiredLicense
+  langs:
+  - crmscript
+  name: 'GetRequiredLicense()'
+  nameWithType: NSPreferenceDescription.GetRequiredLicense()
+  fullName: CRMScript.NetServer.NSPreferenceDescription.GetRequiredLicense()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: String GetRequiredLicense()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Licenses the user/installation must have if this reference is to be shown. Comma-separated list of owner.module pairs
+  example: 
+  - "\n<pre><code>NSPreferenceDescription thing;\nString requiredLicense = thing.GetRequiredLicense();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPreferenceDescription.GetSection()
+  commentId: M:CRMScript.NetServer.NSPreferenceDescription.GetSection()
+  id: 'GetSection()'
+  so.intellisense: NSPreferenceDescription.GetSection
+  langs:
+  - crmscript
+  name: 'GetSection()'
+  nameWithType: NSPreferenceDescription.GetSection()
+  fullName: CRMScript.NetServer.NSPreferenceDescription.GetSection()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: String GetSection()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Preference section name
+  example: 
+  - "\n<pre><code>NSPreferenceDescription thing;\nString section = thing.GetSection();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPreferenceDescription.GetSubGroup()
+  commentId: M:CRMScript.NetServer.NSPreferenceDescription.GetSubGroup()
+  id: 'GetSubGroup()'
+  so.intellisense: NSPreferenceDescription.GetSubGroup
+  langs:
+  - crmscript
+  name: 'GetSubGroup()'
+  nameWithType: NSPreferenceDescription.GetSubGroup()
+  fullName: CRMScript.NetServer.NSPreferenceDescription.GetSubGroup()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: String GetSubGroup()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Keys that share a value (including NULL) in this field are shown together; a visual spacer is shown between groups
+  example: 
+  - "\n<pre><code>NSPreferenceDescription thing;\nString subGroup = thing.GetSubGroup();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPreferenceDescription.GetSysMaxLevel()
+  commentId: M:CRMScript.NetServer.NSPreferenceDescription.GetSysMaxLevel()
+  id: 'GetSysMaxLevel()'
+  so.intellisense: NSPreferenceDescription.GetSysMaxLevel
+  langs:
+  - crmscript
+  name: 'GetSysMaxLevel()'
+  nameWithType: NSPreferenceDescription.GetSysMaxLevel()
+  fullName: CRMScript.NetServer.NSPreferenceDescription.GetSysMaxLevel()
+  type: Method
+  summary: "\n<ul><li>Enum: 0 = Undefined</li><li>Enum: 1 = HardDefault</li><li>Enum: 2 = SystemWide</li><li>Enum: 3 = Database</li><li>Enum: 4 = Group</li><li>Enum: 5 = Individual</li><li>Enum: 6 = PC</li></ul>\n"
+  remarks: 
+  syntax: 
+    content: Integer GetSysMaxLevel()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: Lowest allowed setting level, set by SuperOffice
+  example: 
+  - "\n<pre><code>NSPreferenceDescription thing;\nInteger sysMaxLevel = thing.GetSysMaxLevel();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPreferenceDescription.GetTableName()
+  commentId: M:CRMScript.NetServer.NSPreferenceDescription.GetTableName()
+  id: 'GetTableName()'
+  so.intellisense: NSPreferenceDescription.GetTableName
+  langs:
+  - crmscript
+  name: 'GetTableName()'
+  nameWithType: NSPreferenceDescription.GetTableName()
+  fullName: CRMScript.NetServer.NSPreferenceDescription.GetTableName()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: String GetTableName()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: If valueType = 5, then TableName contains the table referenced by the preference
+  example: 
+  - "\n<pre><code>NSPreferenceDescription thing;\nString tableName = thing.GetTableName();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPreferenceDescription.GetUserDefinedListId()
+  commentId: M:CRMScript.NetServer.NSPreferenceDescription.GetUserDefinedListId()
+  id: 'GetUserDefinedListId()'
+  so.intellisense: NSPreferenceDescription.GetUserDefinedListId
+  langs:
+  - crmscript
+  name: 'GetUserDefinedListId()'
+  nameWithType: NSPreferenceDescription.GetUserDefinedListId()
+  fullName: CRMScript.NetServer.NSPreferenceDescription.GetUserDefinedListId()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: Integer GetUserDefinedListId()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: Read-only field, If valueType = 5, and TableName is UDList, then UserdefinedLIstId contains the ID of the list referenced by the preference
+  example: 
+  - "\n<pre><code>NSPreferenceDescription thing;\nInteger userDefinedListId = thing.GetUserDefinedListId();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPreferenceDescription.GetValueType()
+  commentId: M:CRMScript.NetServer.NSPreferenceDescription.GetValueType()
+  id: 'GetValueType()'
+  so.intellisense: NSPreferenceDescription.GetValueType
+  langs:
+  - crmscript
+  name: 'GetValueType()'
+  nameWithType: NSPreferenceDescription.GetValueType()
+  fullName: CRMScript.NetServer.NSPreferenceDescription.GetValueType()
+  type: Method
+  summary: "\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Number</li><li>Enum: 2 = Text</li><li>Enum: 3 = Bool</li><li>Enum: 4 = ListOfValues</li><li>Enum: 5 = ListTableRef</li><li>Enum: 6 = TimeList</li><li>Enum: 7 = ContactID</li><li>Enum: 8 = PersonID</li><li>Enum: 9 = ProjectID</li><li>Enum: 10 = SelectionID</li><li>Enum: 11 = PosSize</li><li>Enum: 12 = TimeZone</li><li>Enum: 13 = Time</li><li>Enum: 14 = Password</li><li>Enum: 15 = MultiLineText</li></ul>\n"
+  remarks: 
+  syntax: 
+    content: Integer GetValueType()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: 1=number, 2=text, 3=bool, 4=list of values; 5=list table ref; 6=contact ID, 7=Person ID, 8=Project ID, 9=Selection ID
+  example: 
+  - "\n<pre><code>NSPreferenceDescription thing;\nInteger valueType = thing.GetValueType();</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreferenceDescription.SetAccessFlags(Integer)
   commentId: M:CRMScript.NetServer.NSPreferenceDescription.SetAccessFlags(Integer)
   id: 'SetAccessFlags(Integer)'
@@ -434,14 +434,14 @@ items:
   nameWithType: NSPreferenceDescription.SetAccessFlags(Integer)
   fullName: CRMScript.NetServer.NSPreferenceDescription.SetAccessFlags(Integer)
   type: Method
-  summary: "\n1=wizard mode, 2=level 0, 4=admin gui, 8=crm gui\n"
-  remarks: "\n<p>See enum accessFlags.</p>\n"
+  summary: "\n\n"
+  remarks: "\n<p></p>\n"
   syntax: 
     content: Void SetAccessFlags(Integer accessFlags)
     parameters:
     - id: accessFlags
       type: CRMScript.Global.Integer
-      description: 
+      description: 1=wizard mode, 2=level 0, 4=admin gui, 8=crm gui See enum accessFlags.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -456,14 +456,14 @@ items:
   nameWithType: NSPreferenceDescription.SetDescription(String)
   fullName: CRMScript.NetServer.NSPreferenceDescription.SetDescription(String)
   type: Method
-  summary: "\nDescription of preference, multi-language parsed\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetDescription(String description)
     parameters:
     - id: description
       type: CRMScript.Global.String
-      description: 
+      description:  Description of preference, multi-language parsed
     return:
       type: CRMScript.Global.Void
   example: 
@@ -478,14 +478,14 @@ items:
   nameWithType: NSPreferenceDescription.SetIsBuiltin(Bool)
   fullName: CRMScript.NetServer.NSPreferenceDescription.SetIsBuiltin(Bool)
   type: Method
-  summary: "\n1 = This row populated and maintained by SuperOffice\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetIsBuiltin(Bool isBuiltin)
     parameters:
     - id: isBuiltin
       type: CRMScript.Global.Bool
-      description: 
+      description: 1 = This row populated and maintained by SuperOffice
     return:
       type: CRMScript.Global.Void
   example: 
@@ -500,14 +500,14 @@ items:
   nameWithType: NSPreferenceDescription.SetKey(String)
   fullName: CRMScript.NetServer.NSPreferenceDescription.SetKey(String)
   type: Method
-  summary: "\nPreference key name\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetKey(String key)
     parameters:
     - id: key
       type: CRMScript.Global.String
-      description: 
+      description: Preference key name
     return:
       type: CRMScript.Global.Void
   example: 
@@ -522,14 +522,14 @@ items:
   nameWithType: NSPreferenceDescription.SetMaxLevel(Integer)
   fullName: CRMScript.NetServer.NSPreferenceDescription.SetMaxLevel(Integer)
   type: Method
-  summary: "\nLowest allowed setting level, set by user, but not lower than sysMaxLevel\n"
-  remarks: "\n<p>See enum maxLevel.</p>\n"
+  summary: "\n\n"
+  remarks: "\n<p></p>\n"
   syntax: 
     content: Void SetMaxLevel(Integer maxLevel)
     parameters:
     - id: maxLevel
       type: CRMScript.Global.Integer
-      description: 
+      description: Lowest allowed setting level, set by user, but not lower than sysMaxLevel. See enum maxLevel.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -544,14 +544,14 @@ items:
   nameWithType: NSPreferenceDescription.SetMaxValue(Integer)
   fullName: CRMScript.NetServer.NSPreferenceDescription.SetMaxValue(Integer)
   type: Method
-  summary: "\nMax value (if type 1); list table ID (if type 5)\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetMaxValue(Integer maxValue)
     parameters:
     - id: maxValue
       type: CRMScript.Global.Integer
-      description: 
+      description: Max value (if type 1); list table ID (if type 5)
     return:
       type: CRMScript.Global.Void
   example: 
@@ -566,14 +566,14 @@ items:
   nameWithType: NSPreferenceDescription.SetMinLevel(Integer)
   fullName: CRMScript.NetServer.NSPreferenceDescription.SetMinLevel(Integer)
   type: Method
-  summary: "\nThe minimum (furthest away from User) level this preference can be set for\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetMinLevel(Integer minLevel)
     parameters:
     - id: minLevel
       type: CRMScript.Global.Integer
-      description: 
+      description: The minimum (furthest away from User) level this preference can be set for
     return:
       type: CRMScript.Global.Void
   example: 
@@ -588,14 +588,14 @@ items:
   nameWithType: NSPreferenceDescription.SetMinValue(Integer)
   fullName: CRMScript.NetServer.NSPreferenceDescription.SetMinValue(Integer)
   type: Method
-  summary: "\nMin value (if type 1); list extra id (if type 5)\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetMinValue(Integer minValue)
     parameters:
     - id: minValue
       type: CRMScript.Global.Integer
-      description: 
+      description: Min value (if type 1); list extra id (if type 5)
     return:
       type: CRMScript.Global.Void
   example: 
@@ -610,14 +610,14 @@ items:
   nameWithType: NSPreferenceDescription.SetName(String)
   fullName: CRMScript.NetServer.NSPreferenceDescription.SetName(String)
   type: Method
-  summary: "\nMulti-language name\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetName(String name)
     parameters:
     - id: name
       type: CRMScript.Global.String
-      description: 
+      description: Multi-language name
     return:
       type: CRMScript.Global.Void
   example: 
@@ -632,14 +632,14 @@ items:
   nameWithType: NSPreferenceDescription.SetPrefDescId(Integer)
   fullName: CRMScript.NetServer.NSPreferenceDescription.SetPrefDescId(Integer)
   type: Method
-  summary: "\nPrimary key\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetPrefDescId(Integer prefDescId)
     parameters:
     - id: prefDescId
       type: CRMScript.Global.Integer
-      description: 
+      description: Primary key
     return:
       type: CRMScript.Global.Void
   example: 
@@ -654,14 +654,14 @@ items:
   nameWithType: NSPreferenceDescription.SetRank(Integer)
   fullName: CRMScript.NetServer.NSPreferenceDescription.SetRank(Integer)
   type: Method
-  summary: "\nRank field for ordering sections, and keys within sections\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetRank(Integer rank)
     parameters:
     - id: rank
       type: CRMScript.Global.Integer
-      description: 
+      description: Rank field for ordering sections, and keys within sections
     return:
       type: CRMScript.Global.Void
   example: 
@@ -676,14 +676,14 @@ items:
   nameWithType: NSPreferenceDescription.SetRequiredLicense(String)
   fullName: CRMScript.NetServer.NSPreferenceDescription.SetRequiredLicense(String)
   type: Method
-  summary: "\nLicenses the user/installation must have if this reference is to be shown. Comma-separated list of owner.module pairs\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetRequiredLicense(String requiredLicense)
     parameters:
     - id: requiredLicense
       type: CRMScript.Global.String
-      description: 
+      description: Licenses the user/installation must have if this reference is to be shown. Comma-separated list of owner.module pairs
     return:
       type: CRMScript.Global.Void
   example: 
@@ -698,14 +698,14 @@ items:
   nameWithType: NSPreferenceDescription.SetSection(String)
   fullName: CRMScript.NetServer.NSPreferenceDescription.SetSection(String)
   type: Method
-  summary: "\nPreference section name\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetSection(String section)
     parameters:
     - id: section
       type: CRMScript.Global.String
-      description: 
+      description: Preference section name
     return:
       type: CRMScript.Global.Void
   example: 
@@ -720,14 +720,14 @@ items:
   nameWithType: NSPreferenceDescription.SetSubGroup(String)
   fullName: CRMScript.NetServer.NSPreferenceDescription.SetSubGroup(String)
   type: Method
-  summary: "\nKeys that share a value (including NULL) in this field are shown together; a visual spacer is shown between groups\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetSubGroup(String subGroup)
     parameters:
     - id: subGroup
       type: CRMScript.Global.String
-      description: 
+      description: Keys that share a value (including NULL) in this field are shown together; a visual spacer is shown between groups
     return:
       type: CRMScript.Global.Void
   example: 
@@ -742,14 +742,14 @@ items:
   nameWithType: NSPreferenceDescription.SetSysMaxLevel(Integer)
   fullName: CRMScript.NetServer.NSPreferenceDescription.SetSysMaxLevel(Integer)
   type: Method
-  summary: "\nLowest allowed setting level, set by SuperOffice\n"
-  remarks: "\n<p>See enum sysMaxLevel.</p>\n"
+  summary: "\n\n"
+  remarks: "\n<p></p>\n"
   syntax: 
     content: Void SetSysMaxLevel(Integer sysMaxLevel)
     parameters:
     - id: sysMaxLevel
       type: CRMScript.Global.Integer
-      description: 
+      description: Lowest allowed setting level, set by SuperOffice. See enum sysMaxLevel.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -764,14 +764,14 @@ items:
   nameWithType: NSPreferenceDescription.SetTableName(String)
   fullName: CRMScript.NetServer.NSPreferenceDescription.SetTableName(String)
   type: Method
-  summary: "\nIf valueType = 5, then TableName contains the table referenced by the preference\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetTableName(String tableName)
     parameters:
     - id: tableName
       type: CRMScript.Global.String
-      description: 
+      description: If valueType = 5, then TableName contains the table referenced by the preference
     return:
       type: CRMScript.Global.Void
   example: 
@@ -786,14 +786,14 @@ items:
   nameWithType: NSPreferenceDescription.SetUserDefinedListId(Integer)
   fullName: CRMScript.NetServer.NSPreferenceDescription.SetUserDefinedListId(Integer)
   type: Method
-  summary: "\nRead-only field, If valueType = 5, and TableName is UDList, then UserdefinedLIstId contains the ID of the list referenced by the preference\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetUserDefinedListId(Integer userDefinedListId)
     parameters:
     - id: userDefinedListId
       type: CRMScript.Global.Integer
-      description: 
+      description: Read-only field, If valueType = 5, and TableName is UDList, then UserdefinedLIstId contains the ID of the list referenced by the preference
     return:
       type: CRMScript.Global.Void
   example: 
@@ -808,14 +808,14 @@ items:
   nameWithType: NSPreferenceDescription.SetValueType(Integer)
   fullName: CRMScript.NetServer.NSPreferenceDescription.SetValueType(Integer)
   type: Method
-  summary: "\n1=number, 2=text, 3=bool, 4=list of values; 5=list table ref; 6=contact ID, 7=Person ID, 8=Project ID, 9=Selection ID\n"
-  remarks: "\n<p>See enum valueType.</p>\n"
+  summary: "\n\n"
+  remarks: "\n<p></p>\n"
   syntax: 
     content: Void SetValueType(Integer valueType)
     parameters:
     - id: valueType
       type: CRMScript.Global.Integer
-      description: 
+      description: 1=number, 2=text, 3=bool, 4=list of values; 5=list table ref; 6=contact ID, 7=Person ID, 8=Project ID, 9=Selection ID. See enum valueType.
     return:
       type: CRMScript.Global.Void
   example: 

@@ -6,6 +6,7 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSPreviewMailing.#ctor
   - CRMScript.NetServer.NSPreviewMailing.GetContactId()
   - CRMScript.NetServer.NSPreviewMailing.GetContactName()
   - CRMScript.NetServer.NSPreviewMailing.GetDocumentMessageId()
@@ -21,7 +22,6 @@ items:
   - CRMScript.NetServer.NSPreviewMailing.GetShipmentId()
   - CRMScript.NetServer.NSPreviewMailing.GetShipmentType()
   - CRMScript.NetServer.NSPreviewMailing.GetStatus()
-  - CRMScript.NetServer.NSPreviewMailing.#ctor
   - CRMScript.NetServer.NSPreviewMailing.SetContactId(Integer)
   - CRMScript.NetServer.NSPreviewMailing.SetContactName(String)
   - CRMScript.NetServer.NSPreviewMailing.SetDocumentMessageId(Integer)
@@ -29,319 +29,20 @@ items:
   - CRMScript.NetServer.NSPreviewMailing.SetLinkClicks(Integer)
   - CRMScript.NetServer.NSPreviewMailing.SetMessageId(Integer)
   - CRMScript.NetServer.NSPreviewMailing.SetMessageSubject(String)
-  - CRMScript.NetServer.NSPreviewMailing.SetOpened()
+  - CRMScript.NetServer.NSPreviewMailing.SetOpened(DateTime)
   - CRMScript.NetServer.NSPreviewMailing.SetPersonFullName(String)
   - CRMScript.NetServer.NSPreviewMailing.SetPersonId(Integer)
-  - CRMScript.NetServer.NSPreviewMailing.SetSendingTime()
+  - CRMScript.NetServer.NSPreviewMailing.SetSendingTime(DateTime)
   - CRMScript.NetServer.NSPreviewMailing.SetShipmentDescription(String)
   - CRMScript.NetServer.NSPreviewMailing.SetShipmentId(Integer)
   - CRMScript.NetServer.NSPreviewMailing.SetShipmentType(String)
-  - CRMScript.NetServer.NSPreviewMailing.SetStatus()
+  - CRMScript.NetServer.NSPreviewMailing.SetStatus(Integer)
   name: NSPreviewMailing
   nameWithType: NSPreviewMailing
   fullName: CRMScript.NetServer.NSPreviewMailing
   type: Class
   summary: 
   example: 
-- uid: CRMScript.NetServer.NSPreviewMailing.GetContactId()
-  commentId: M:CRMScript.NetServer.NSPreviewMailing.GetContactId()
-  id: 'GetContactId()'
-  so.intellisense: NSPreviewMailing.GetContactId
-  langs:
-  - crmscript
-  name: 'GetContactId()'
-  nameWithType: NSPreviewMailing.GetContactId()
-  fullName: CRMScript.NetServer.NSPreviewMailing.GetContactId()
-  type: Method
-  summary: "\nOwning contact ID\n"
-  remarks: 
-  syntax: 
-    content: Integer GetContactId()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSPreviewMailing thing;\nInteger contactId = thing.GetContactId();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPreviewMailing.GetContactName()
-  commentId: M:CRMScript.NetServer.NSPreviewMailing.GetContactName()
-  id: 'GetContactName()'
-  so.intellisense: NSPreviewMailing.GetContactName
-  langs:
-  - crmscript
-  name: 'GetContactName()'
-  nameWithType: NSPreviewMailing.GetContactName()
-  fullName: CRMScript.NetServer.NSPreviewMailing.GetContactName()
-  type: Method
-  summary: "\nContact name\n"
-  remarks: 
-  syntax: 
-    content: String GetContactName()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSPreviewMailing thing;\nString contactName = thing.GetContactName();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPreviewMailing.GetDocumentMessageId()
-  commentId: M:CRMScript.NetServer.NSPreviewMailing.GetDocumentMessageId()
-  id: 'GetDocumentMessageId()'
-  so.intellisense: NSPreviewMailing.GetDocumentMessageId
-  langs:
-  - crmscript
-  name: 'GetDocumentMessageId()'
-  nameWithType: NSPreviewMailing.GetDocumentMessageId()
-  fullName: CRMScript.NetServer.NSPreviewMailing.GetDocumentMessageId()
-  type: Method
-  summary: "\nIf a document was used as the message this is the document ID.\n"
-  remarks: 
-  syntax: 
-    content: Integer GetDocumentMessageId()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSPreviewMailing thing;\nInteger documentMessageId = thing.GetDocumentMessageId();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPreviewMailing.GetFromAddress()
-  commentId: M:CRMScript.NetServer.NSPreviewMailing.GetFromAddress()
-  id: 'GetFromAddress()'
-  so.intellisense: NSPreviewMailing.GetFromAddress
-  langs:
-  - crmscript
-  name: 'GetFromAddress()'
-  nameWithType: NSPreviewMailing.GetFromAddress()
-  fullName: CRMScript.NetServer.NSPreviewMailing.GetFromAddress()
-  type: Method
-  summary: "\nEmail address to put in the From header of the messages\n"
-  remarks: 
-  syntax: 
-    content: String GetFromAddress()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSPreviewMailing thing;\nString fromAddress = thing.GetFromAddress();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPreviewMailing.GetLinkClicks()
-  commentId: M:CRMScript.NetServer.NSPreviewMailing.GetLinkClicks()
-  id: 'GetLinkClicks()'
-  so.intellisense: NSPreviewMailing.GetLinkClicks
-  langs:
-  - crmscript
-  name: 'GetLinkClicks()'
-  nameWithType: NSPreviewMailing.GetLinkClicks()
-  fullName: CRMScript.NetServer.NSPreviewMailing.GetLinkClicks()
-  type: Method
-  summary: "\nThe number of links clicked in the mailing.\n"
-  remarks: 
-  syntax: 
-    content: Integer GetLinkClicks()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSPreviewMailing thing;\nInteger linkClicks = thing.GetLinkClicks();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPreviewMailing.GetMessageId()
-  commentId: M:CRMScript.NetServer.NSPreviewMailing.GetMessageId()
-  id: 'GetMessageId()'
-  so.intellisense: NSPreviewMailing.GetMessageId
-  langs:
-  - crmscript
-  name: 'GetMessageId()'
-  nameWithType: NSPreviewMailing.GetMessageId()
-  fullName: CRMScript.NetServer.NSPreviewMailing.GetMessageId()
-  type: Method
-  summary: "\nPrimary key\n"
-  remarks: 
-  syntax: 
-    content: Integer GetMessageId()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSPreviewMailing thing;\nInteger messageId = thing.GetMessageId();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPreviewMailing.GetMessageSubject()
-  commentId: M:CRMScript.NetServer.NSPreviewMailing.GetMessageSubject()
-  id: 'GetMessageSubject()'
-  so.intellisense: NSPreviewMailing.GetMessageSubject
-  langs:
-  - crmscript
-  name: 'GetMessageSubject()'
-  nameWithType: NSPreviewMailing.GetMessageSubject()
-  fullName: CRMScript.NetServer.NSPreviewMailing.GetMessageSubject()
-  type: Method
-  summary: "\nThe mail subject field of the message\n"
-  remarks: 
-  syntax: 
-    content: String GetMessageSubject()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSPreviewMailing thing;\nString messageSubject = thing.GetMessageSubject();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPreviewMailing.GetOpened()
-  commentId: M:CRMScript.NetServer.NSPreviewMailing.GetOpened()
-  id: 'GetOpened()'
-  so.intellisense: NSPreviewMailing.GetOpened
-  langs:
-  - crmscript
-  name: 'GetOpened()'
-  nameWithType: NSPreviewMailing.GetOpened()
-  fullName: CRMScript.NetServer.NSPreviewMailing.GetOpened()
-  type: Method
-  summary: "\nDate/time the customer read the mailing.\n"
-  remarks: 
-  syntax: 
-    content: DateTime GetOpened()
-    parameters: []
-    return:
-      type: CRMScript.Global.DateTime
-      description:
-  example: 
-  - "\n<pre><code>NSPreviewMailing thing;\nDateTime opened = thing.GetOpened();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPreviewMailing.GetPersonFullName()
-  commentId: M:CRMScript.NetServer.NSPreviewMailing.GetPersonFullName()
-  id: 'GetPersonFullName()'
-  so.intellisense: NSPreviewMailing.GetPersonFullName
-  langs:
-  - crmscript
-  name: 'GetPersonFullName()'
-  nameWithType: NSPreviewMailing.GetPersonFullName()
-  fullName: CRMScript.NetServer.NSPreviewMailing.GetPersonFullName()
-  type: Method
-  summary: "\nGets the persons full name (internal name used in clients for employees).\n"
-  remarks: 
-  syntax: 
-    content: String GetPersonFullName()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSPreviewMailing thing;\nString personFullName = thing.GetPersonFullName();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPreviewMailing.GetPersonId()
-  commentId: M:CRMScript.NetServer.NSPreviewMailing.GetPersonId()
-  id: 'GetPersonId()'
-  so.intellisense: NSPreviewMailing.GetPersonId
-  langs:
-  - crmscript
-  name: 'GetPersonId()'
-  nameWithType: NSPreviewMailing.GetPersonId()
-  fullName: CRMScript.NetServer.NSPreviewMailing.GetPersonId()
-  type: Method
-  summary: "\nPrimary key\n"
-  remarks: 
-  syntax: 
-    content: Integer GetPersonId()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSPreviewMailing thing;\nInteger personId = thing.GetPersonId();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPreviewMailing.GetSendingTime()
-  commentId: M:CRMScript.NetServer.NSPreviewMailing.GetSendingTime()
-  id: 'GetSendingTime()'
-  so.intellisense: NSPreviewMailing.GetSendingTime
-  langs:
-  - crmscript
-  name: 'GetSendingTime()'
-  nameWithType: NSPreviewMailing.GetSendingTime()
-  fullName: CRMScript.NetServer.NSPreviewMailing.GetSendingTime()
-  type: Method
-  summary: "\nEstimated or actual sent time (depends on status)\n"
-  remarks: 
-  syntax: 
-    content: DateTime GetSendingTime()
-    parameters: []
-    return:
-      type: CRMScript.Global.DateTime
-      description:
-  example: 
-  - "\n<pre><code>NSPreviewMailing thing;\nDateTime sendingTime = thing.GetSendingTime();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPreviewMailing.GetShipmentDescription()
-  commentId: M:CRMScript.NetServer.NSPreviewMailing.GetShipmentDescription()
-  id: 'GetShipmentDescription()'
-  so.intellisense: NSPreviewMailing.GetShipmentDescription
-  langs:
-  - crmscript
-  name: 'GetShipmentDescription()'
-  nameWithType: NSPreviewMailing.GetShipmentDescription()
-  fullName: CRMScript.NetServer.NSPreviewMailing.GetShipmentDescription()
-  type: Method
-  summary: "\nDescribes the shipment\n"
-  remarks: 
-  syntax: 
-    content: String GetShipmentDescription()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSPreviewMailing thing;\nString shipmentDescription = thing.GetShipmentDescription();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPreviewMailing.GetShipmentId()
-  commentId: M:CRMScript.NetServer.NSPreviewMailing.GetShipmentId()
-  id: 'GetShipmentId()'
-  so.intellisense: NSPreviewMailing.GetShipmentId
-  langs:
-  - crmscript
-  name: 'GetShipmentId()'
-  nameWithType: NSPreviewMailing.GetShipmentId()
-  fullName: CRMScript.NetServer.NSPreviewMailing.GetShipmentId()
-  type: Method
-  summary: "\nPrimary key\n"
-  remarks: 
-  syntax: 
-    content: Integer GetShipmentId()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSPreviewMailing thing;\nInteger shipmentId = thing.GetShipmentId();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPreviewMailing.GetShipmentType()
-  commentId: M:CRMScript.NetServer.NSPreviewMailing.GetShipmentType()
-  id: 'GetShipmentType()'
-  so.intellisense: NSPreviewMailing.GetShipmentType
-  langs:
-  - crmscript
-  name: 'GetShipmentType()'
-  nameWithType: NSPreviewMailing.GetShipmentType()
-  fullName: CRMScript.NetServer.NSPreviewMailing.GetShipmentType()
-  type: Method
-  summary: "\nThe list item\n"
-  remarks: 
-  syntax: 
-    content: String GetShipmentType()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSPreviewMailing thing;\nString shipmentType = thing.GetShipmentType();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPreviewMailing.GetStatus()
-  commentId: M:CRMScript.NetServer.NSPreviewMailing.GetStatus()
-  id: 'GetStatus()'
-  so.intellisense: NSPreviewMailing.GetStatus
-  langs:
-  - crmscript
-  name: 'GetStatus()'
-  nameWithType: NSPreviewMailing.GetStatus()
-  fullName: CRMScript.NetServer.NSPreviewMailing.GetStatus()
-  type: Method
-  summary: "\nStatus for sending to this particular recipient<p></p>\n<strong>Returns:</strong>ShipmentAddrStatus<p></p>\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Ready</li><li>Enum: 2 = Duplicate</li><li>Enum: 3 = Blocked</li><li>Enum: 4 = Sent</li><li>Enum: 5 = Bounced</li><li>Enum: 6 = Opened</li><li>Enum: 7 = Clicked</li><li>Enum: 8 = SoftBounced</li><li>Enum: 9 = NoSubscription</li><li>Enum: 10 = Complained</li><li>Enum: 11 = TooManyBounces</li></ul><pre><code>NSPreviewMailing thing;\nShipmentAddrStatus status = thing.GetStatus();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: ShipmentAddrStatus GetStatus()
-    parameters: []
-    return:
-      type: CRMScript.Native.ShipmentAddrStatus
-  example: 
-  - "\n<pre><code>NSPreviewMailing thing;\nShipmentAddrStatus status = thing.GetStatus();</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreviewMailing.#ctor
   commentId: M:CRMScript.NetServer.NSPreviewMailing.#ctor
   id: '#ctor'
@@ -357,6 +58,306 @@ items:
   syntax: 
     content: NSPreviewMailing
   example: 
+- uid: CRMScript.NetServer.NSPreviewMailing.GetContactId()
+  commentId: M:CRMScript.NetServer.NSPreviewMailing.GetContactId()
+  id: 'GetContactId()'
+  so.intellisense: NSPreviewMailing.GetContactId
+  langs:
+  - crmscript
+  name: 'GetContactId()'
+  nameWithType: NSPreviewMailing.GetContactId()
+  fullName: CRMScript.NetServer.NSPreviewMailing.GetContactId()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: Integer GetContactId()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: Owning contact ID
+  example: 
+  - "\n<pre><code>NSPreviewMailing thing;\nInteger contactId = thing.GetContactId();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPreviewMailing.GetContactName()
+  commentId: M:CRMScript.NetServer.NSPreviewMailing.GetContactName()
+  id: 'GetContactName()'
+  so.intellisense: NSPreviewMailing.GetContactName
+  langs:
+  - crmscript
+  name: 'GetContactName()'
+  nameWithType: NSPreviewMailing.GetContactName()
+  fullName: CRMScript.NetServer.NSPreviewMailing.GetContactName()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: String GetContactName()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Contact name
+  example: 
+  - "\n<pre><code>NSPreviewMailing thing;\nString contactName = thing.GetContactName();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPreviewMailing.GetDocumentMessageId()
+  commentId: M:CRMScript.NetServer.NSPreviewMailing.GetDocumentMessageId()
+  id: 'GetDocumentMessageId()'
+  so.intellisense: NSPreviewMailing.GetDocumentMessageId
+  langs:
+  - crmscript
+  name: 'GetDocumentMessageId()'
+  nameWithType: NSPreviewMailing.GetDocumentMessageId()
+  fullName: CRMScript.NetServer.NSPreviewMailing.GetDocumentMessageId()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: Integer GetDocumentMessageId()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: If a document was used as the message this is the document ID.
+  example: 
+  - "\n<pre><code>NSPreviewMailing thing;\nInteger documentMessageId = thing.GetDocumentMessageId();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPreviewMailing.GetFromAddress()
+  commentId: M:CRMScript.NetServer.NSPreviewMailing.GetFromAddress()
+  id: 'GetFromAddress()'
+  so.intellisense: NSPreviewMailing.GetFromAddress
+  langs:
+  - crmscript
+  name: 'GetFromAddress()'
+  nameWithType: NSPreviewMailing.GetFromAddress()
+  fullName: CRMScript.NetServer.NSPreviewMailing.GetFromAddress()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: String GetFromAddress()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Email address to put in the From header of the messages
+  example: 
+  - "\n<pre><code>NSPreviewMailing thing;\nString fromAddress = thing.GetFromAddress();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPreviewMailing.GetLinkClicks()
+  commentId: M:CRMScript.NetServer.NSPreviewMailing.GetLinkClicks()
+  id: 'GetLinkClicks()'
+  so.intellisense: NSPreviewMailing.GetLinkClicks
+  langs:
+  - crmscript
+  name: 'GetLinkClicks()'
+  nameWithType: NSPreviewMailing.GetLinkClicks()
+  fullName: CRMScript.NetServer.NSPreviewMailing.GetLinkClicks()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: Integer GetLinkClicks()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: The number of links clicked in the mailing.
+  example: 
+  - "\n<pre><code>NSPreviewMailing thing;\nInteger linkClicks = thing.GetLinkClicks();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPreviewMailing.GetMessageId()
+  commentId: M:CRMScript.NetServer.NSPreviewMailing.GetMessageId()
+  id: 'GetMessageId()'
+  so.intellisense: NSPreviewMailing.GetMessageId
+  langs:
+  - crmscript
+  name: 'GetMessageId()'
+  nameWithType: NSPreviewMailing.GetMessageId()
+  fullName: CRMScript.NetServer.NSPreviewMailing.GetMessageId()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: Integer GetMessageId()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: Primary key
+  example: 
+  - "\n<pre><code>NSPreviewMailing thing;\nInteger messageId = thing.GetMessageId();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPreviewMailing.GetMessageSubject()
+  commentId: M:CRMScript.NetServer.NSPreviewMailing.GetMessageSubject()
+  id: 'GetMessageSubject()'
+  so.intellisense: NSPreviewMailing.GetMessageSubject
+  langs:
+  - crmscript
+  name: 'GetMessageSubject()'
+  nameWithType: NSPreviewMailing.GetMessageSubject()
+  fullName: CRMScript.NetServer.NSPreviewMailing.GetMessageSubject()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: String GetMessageSubject()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: The mail subject field of the message
+  example: 
+  - "\n<pre><code>NSPreviewMailing thing;\nString messageSubject = thing.GetMessageSubject();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPreviewMailing.GetOpened()
+  commentId: M:CRMScript.NetServer.NSPreviewMailing.GetOpened()
+  id: 'GetOpened()'
+  so.intellisense: NSPreviewMailing.GetOpened
+  langs:
+  - crmscript
+  name: 'GetOpened()'
+  nameWithType: NSPreviewMailing.GetOpened()
+  fullName: CRMScript.NetServer.NSPreviewMailing.GetOpened()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: DateTime GetOpened()
+    parameters: []
+    return:
+      type: CRMScript.Global.DateTime
+      description: Date/time the customer read the mailing.
+  example: 
+  - "\n<pre><code>NSPreviewMailing thing;\nDateTime opened = thing.GetOpened();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPreviewMailing.GetPersonFullName()
+  commentId: M:CRMScript.NetServer.NSPreviewMailing.GetPersonFullName()
+  id: 'GetPersonFullName()'
+  so.intellisense: NSPreviewMailing.GetPersonFullName
+  langs:
+  - crmscript
+  name: 'GetPersonFullName()'
+  nameWithType: NSPreviewMailing.GetPersonFullName()
+  fullName: CRMScript.NetServer.NSPreviewMailing.GetPersonFullName()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: String GetPersonFullName()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Gets the persons full name (internal name used in clients for employees).
+  example: 
+  - "\n<pre><code>NSPreviewMailing thing;\nString personFullName = thing.GetPersonFullName();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPreviewMailing.GetPersonId()
+  commentId: M:CRMScript.NetServer.NSPreviewMailing.GetPersonId()
+  id: 'GetPersonId()'
+  so.intellisense: NSPreviewMailing.GetPersonId
+  langs:
+  - crmscript
+  name: 'GetPersonId()'
+  nameWithType: NSPreviewMailing.GetPersonId()
+  fullName: CRMScript.NetServer.NSPreviewMailing.GetPersonId()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: Integer GetPersonId()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: Primary key
+  example: 
+  - "\n<pre><code>NSPreviewMailing thing;\nInteger personId = thing.GetPersonId();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPreviewMailing.GetSendingTime()
+  commentId: M:CRMScript.NetServer.NSPreviewMailing.GetSendingTime()
+  id: 'GetSendingTime()'
+  so.intellisense: NSPreviewMailing.GetSendingTime
+  langs:
+  - crmscript
+  name: 'GetSendingTime()'
+  nameWithType: NSPreviewMailing.GetSendingTime()
+  fullName: CRMScript.NetServer.NSPreviewMailing.GetSendingTime()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: DateTime GetSendingTime()
+    parameters: []
+    return:
+      type: CRMScript.Global.DateTime
+      description: Estimated or actual sent time (depends on status)
+  example: 
+  - "\n<pre><code>NSPreviewMailing thing;\nDateTime sendingTime = thing.GetSendingTime();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPreviewMailing.GetShipmentDescription()
+  commentId: M:CRMScript.NetServer.NSPreviewMailing.GetShipmentDescription()
+  id: 'GetShipmentDescription()'
+  so.intellisense: NSPreviewMailing.GetShipmentDescription
+  langs:
+  - crmscript
+  name: 'GetShipmentDescription()'
+  nameWithType: NSPreviewMailing.GetShipmentDescription()
+  fullName: CRMScript.NetServer.NSPreviewMailing.GetShipmentDescription()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: String GetShipmentDescription()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Describes the shipment
+  example: 
+  - "\n<pre><code>NSPreviewMailing thing;\nString shipmentDescription = thing.GetShipmentDescription();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPreviewMailing.GetShipmentId()
+  commentId: M:CRMScript.NetServer.NSPreviewMailing.GetShipmentId()
+  id: 'GetShipmentId()'
+  so.intellisense: NSPreviewMailing.GetShipmentId
+  langs:
+  - crmscript
+  name: 'GetShipmentId()'
+  nameWithType: NSPreviewMailing.GetShipmentId()
+  fullName: CRMScript.NetServer.NSPreviewMailing.GetShipmentId()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: Integer GetShipmentId()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: Primary key
+  example: 
+  - "\n<pre><code>NSPreviewMailing thing;\nInteger shipmentId = thing.GetShipmentId();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPreviewMailing.GetShipmentType()
+  commentId: M:CRMScript.NetServer.NSPreviewMailing.GetShipmentType()
+  id: 'GetShipmentType()'
+  so.intellisense: NSPreviewMailing.GetShipmentType
+  langs:
+  - crmscript
+  name: 'GetShipmentType()'
+  nameWithType: NSPreviewMailing.GetShipmentType()
+  fullName: CRMScript.NetServer.NSPreviewMailing.GetShipmentType()
+  type: Method
+  summary: "\n\n"
+  remarks: 
+  syntax: 
+    content: String GetShipmentType()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: The list item
+  example: 
+  - "\n<pre><code>NSPreviewMailing thing;\nString shipmentType = thing.GetShipmentType();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPreviewMailing.GetStatus()
+  commentId: M:CRMScript.NetServer.NSPreviewMailing.GetStatus()
+  id: 'GetStatus()'
+  so.intellisense: NSPreviewMailing.GetStatus
+  langs:
+  - crmscript
+  name: 'GetStatus()'
+  nameWithType: NSPreviewMailing.GetStatus()
+  fullName: CRMScript.NetServer.NSPreviewMailing.GetStatus()
+  type: Method
+  summary: "\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Ready</li><li>Enum: 2 = Duplicate</li><li>Enum: 3 = Blocked</li><li>Enum: 4 = Sent</li><li>Enum: 5 = Bounced</li><li>Enum: 6 = Opened</li><li>Enum: 7 = Clicked</li><li>Enum: 8 = SoftBounced</li><li>Enum: 9 = NoSubscription</li><li>Enum: 10 = Complained</li><li>Enum: 11 = TooManyBounces</li></ul>\n"
+  remarks: 
+  syntax: 
+    content: Integer GetStatus()
+    parameters: []
+    return:
+      type: CRMScript.Native.Integer
+      description: Status for sending to this particular recipient
+  example: 
+  - "\n<pre><code>NSPreviewMailing thing;\nInteger status = thing.GetStatus();</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreviewMailing.SetContactId(Integer)
   commentId: M:CRMScript.NetServer.NSPreviewMailing.SetContactId(Integer)
   id: 'SetContactId(Integer)'
@@ -367,14 +368,14 @@ items:
   nameWithType: NSPreviewMailing.SetContactId(Integer)
   fullName: CRMScript.NetServer.NSPreviewMailing.SetContactId(Integer)
   type: Method
-  summary: "\nOwning contact ID\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetContactId(Integer contactId)
     parameters:
     - id: contactId
       type: CRMScript.Global.Integer
-      description: 
+      description: Owning contact ID
     return:
       type: CRMScript.Global.Void
   example: 
@@ -389,14 +390,14 @@ items:
   nameWithType: NSPreviewMailing.SetContactName(String)
   fullName: CRMScript.NetServer.NSPreviewMailing.SetContactName(String)
   type: Method
-  summary: "\nContact name\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetContactName(String contactName)
     parameters:
     - id: contactName
       type: CRMScript.Global.String
-      description: 
+      description: Contact name
     return:
       type: CRMScript.Global.Void
   example: 
@@ -411,14 +412,14 @@ items:
   nameWithType: NSPreviewMailing.SetDocumentMessageId(Integer)
   fullName: CRMScript.NetServer.NSPreviewMailing.SetDocumentMessageId(Integer)
   type: Method
-  summary: "\nIf a document was used as the message this is the document ID.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetDocumentMessageId(Integer documentMessageId)
     parameters:
     - id: documentMessageId
       type: CRMScript.Global.Integer
-      description: 
+      description: If a document was used as the message this is the document ID.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -433,14 +434,14 @@ items:
   nameWithType: NSPreviewMailing.SetFromAddress(String)
   fullName: CRMScript.NetServer.NSPreviewMailing.SetFromAddress(String)
   type: Method
-  summary: "\nEmail address to put in the From header of the messages\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetFromAddress(String fromAddress)
     parameters:
     - id: fromAddress
       type: CRMScript.Global.String
-      description: 
+      description: Email address to put in the From header of the messages
     return:
       type: CRMScript.Global.Void
   example: 
@@ -455,14 +456,14 @@ items:
   nameWithType: NSPreviewMailing.SetLinkClicks(Integer)
   fullName: CRMScript.NetServer.NSPreviewMailing.SetLinkClicks(Integer)
   type: Method
-  summary: "\nThe number of links clicked in the mailing.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetLinkClicks(Integer linkClicks)
     parameters:
     - id: linkClicks
       type: CRMScript.Global.Integer
-      description: 
+      description: The number of links clicked in the mailing.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -477,14 +478,14 @@ items:
   nameWithType: NSPreviewMailing.SetMessageId(Integer)
   fullName: CRMScript.NetServer.NSPreviewMailing.SetMessageId(Integer)
   type: Method
-  summary: "\nPrimary key\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetMessageId(Integer messageId)
     parameters:
     - id: messageId
       type: CRMScript.Global.Integer
-      description: 
+      description: Primary key
     return:
       type: CRMScript.Global.Void
   example: 
@@ -499,33 +500,38 @@ items:
   nameWithType: NSPreviewMailing.SetMessageSubject(String)
   fullName: CRMScript.NetServer.NSPreviewMailing.SetMessageSubject(String)
   type: Method
-  summary: "\nThe mail subject field of the message\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetMessageSubject(String messageSubject)
     parameters:
     - id: messageSubject
       type: CRMScript.Global.String
-      description: 
+      description: The mail subject field of the message
     return:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSPreviewMailing thing;\nString messageSubject;\nthing.SetMessageSubject(messageSubject);</code></pre>\n"
-- uid: CRMScript.NetServer.NSPreviewMailing.SetOpened()
-  commentId: M:CRMScript.NetServer.NSPreviewMailing.SetOpened()
-  id: 'SetOpened()'
+- uid: CRMScript.NetServer.NSPreviewMailing.SetOpened(DateTime)
+  commentId: M:CRMScript.NetServer.NSPreviewMailing.SetOpened(DateTime)
+  id: 'SetOpened(DateTime)'
   so.intellisense: NSPreviewMailing.SetOpened
   langs:
   - crmscript
-  name: 'SetOpened()'
-  nameWithType: NSPreviewMailing.SetOpened()
-  fullName: CRMScript.NetServer.NSPreviewMailing.SetOpened()
+  name: 'SetOpened(DateTime)'
+  nameWithType: NSPreviewMailing.SetOpened(DateTime)
+  fullName: CRMScript.NetServer.NSPreviewMailing.SetOpened(DateTime)
   type: Method
-  summary: "\nDate/time the customer read the mailing.\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetOpened(DateTime opened)
     parameters:
+    - id: opened
+      type: CRMScript.Global.DateTime
+      description: Date/time the customer read the mailing.
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSPreviewMailing thing;\nDateTime opened;\nthing.SetOpened(opened);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreviewMailing.SetPersonFullName(String)
@@ -538,14 +544,14 @@ items:
   nameWithType: NSPreviewMailing.SetPersonFullName(String)
   fullName: CRMScript.NetServer.NSPreviewMailing.SetPersonFullName(String)
   type: Method
-  summary: "\nGets the persons full name (internal name used in clients for employees).\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetPersonFullName(String personFullName)
     parameters:
     - id: personFullName
       type: CRMScript.Global.String
-      description: 
+      description: the persons full name (internal name used in clients for employees).
     return:
       type: CRMScript.Global.Void
   example: 
@@ -560,33 +566,38 @@ items:
   nameWithType: NSPreviewMailing.SetPersonId(Integer)
   fullName: CRMScript.NetServer.NSPreviewMailing.SetPersonId(Integer)
   type: Method
-  summary: "\nPrimary key\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetPersonId(Integer personId)
     parameters:
     - id: personId
       type: CRMScript.Global.Integer
-      description: 
+      description: Primary key
     return:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSPreviewMailing thing;\nInteger personId;\nthing.SetPersonId(personId);</code></pre>\n"
-- uid: CRMScript.NetServer.NSPreviewMailing.SetSendingTime()
-  commentId: M:CRMScript.NetServer.NSPreviewMailing.SetSendingTime()
-  id: 'SetSendingTime()'
+- uid: CRMScript.NetServer.NSPreviewMailing.SetSendingTime(DateTime)
+  commentId: M:CRMScript.NetServer.NSPreviewMailing.SetSendingTime(DateTime)
+  id: 'SetSendingTime(DateTime)'
   so.intellisense: NSPreviewMailing.SetSendingTime
   langs:
   - crmscript
-  name: 'SetSendingTime()'
-  nameWithType: NSPreviewMailing.SetSendingTime()
-  fullName: CRMScript.NetServer.NSPreviewMailing.SetSendingTime()
+  name: 'SetSendingTime(DateTime)'
+  nameWithType: NSPreviewMailing.SetSendingTime(DateTime)
+  fullName: CRMScript.NetServer.NSPreviewMailing.SetSendingTime(DateTime)
   type: Method
-  summary: "\nEstimated or actual sent time (depends on status)\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
-    content: Void SetSendingTime(DateTime sendingTime)
+    content: Void SetSendingTime(DateTime )
     parameters:
+    - id: sendingTime
+      type: CRMScript.Global.DateTime
+      description: Estimated or actual sent time (depends on status)
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSPreviewMailing thing;\nDateTime sendingTime;\nthing.SetSendingTime(sendingTime);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreviewMailing.SetShipmentDescription(String)
@@ -599,14 +610,14 @@ items:
   nameWithType: NSPreviewMailing.SetShipmentDescription(String)
   fullName: CRMScript.NetServer.NSPreviewMailing.SetShipmentDescription(String)
   type: Method
-  summary: "\nDescribes the shipment\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetShipmentDescription(String shipmentDescription)
     parameters:
     - id: shipmentDescription
       type: CRMScript.Global.String
-      description: 
+      description: Describes the shipment
     return:
       type: CRMScript.Global.Void
   example: 
@@ -621,14 +632,14 @@ items:
   nameWithType: NSPreviewMailing.SetShipmentId(Integer)
   fullName: CRMScript.NetServer.NSPreviewMailing.SetShipmentId(Integer)
   type: Method
-  summary: "\nPrimary key\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetShipmentId(Integer shipmentId)
     parameters:
     - id: shipmentId
       type: CRMScript.Global.Integer
-      description: 
+      description: Primary key
     return:
       type: CRMScript.Global.Void
   example: 
@@ -643,35 +654,38 @@ items:
   nameWithType: NSPreviewMailing.SetShipmentType(String)
   fullName: CRMScript.NetServer.NSPreviewMailing.SetShipmentType(String)
   type: Method
-  summary: "\nThe list item\n"
+  summary: "\n\n"
   remarks: 
   syntax: 
     content: Void SetShipmentType(String shipmentType)
     parameters:
     - id: shipmentType
       type: CRMScript.Global.String
-      description: 
+      description: The list item
     return:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSPreviewMailing thing;\nString shipmentType;\nthing.SetShipmentType(shipmentType);</code></pre>\n"
-- uid: CRMScript.NetServer.NSPreviewMailing.SetStatus()
-  commentId: M:CRMScript.NetServer.NSPreviewMailing.SetStatus()
-  id: 'SetStatus()'
+- uid: CRMScript.NetServer.NSPreviewMailing.SetStatus(Integer)
+  commentId: M:CRMScript.NetServer.NSPreviewMailing.SetStatus(Integer)
+  id: 'SetStatus(Integer)'
   so.intellisense: NSPreviewMailing.SetStatus
   langs:
   - crmscript
-  name: 'SetStatus()'
-  nameWithType: NSPreviewMailing.SetStatus()
-  fullName: CRMScript.NetServer.NSPreviewMailing.SetStatus()
+  name: 'SetStatus(Integer)'
+  nameWithType: NSPreviewMailing.SetStatus(Integer)
+  fullName: CRMScript.NetServer.NSPreviewMailing.SetStatus(Integer)
   type: Method
-  summary: "\nStatus for sending to this particular recipient\n"
-  remarks: "\n<p>See enum status.</p>\n"
+  summary: "\n\n"
+  remarks:
   syntax: 
-    content: Void SetStatus(ShipmentAddrStatus status)
+    content: Void SetStatus(Integer status)
     parameters:
+    - id: status
+      type: 
+      description: Status for sending to this particular recipient. See enum ShipmentAddrStatus
   example: 
-  - "\n<pre><code>NSPreviewMailing thing;\nShipmentAddrStatus status;\nthing.SetStatus(status);</code></pre>\n"
+  - "\n<pre><code>NSPreviewMailing thing;\nInteger status;\nthing.SetStatus(status);</code></pre>\n"
 references:
 - uid: CRMScript.NetServer.NSPreviewMailing
   commentId: T:CRMScript.NetServer.NSPreviewMailing
@@ -697,12 +711,6 @@ references:
   name: DateTime
   nameWithType: DateTime
   fullName: CRMScript.Global.DateTime
-- uid: CRMScript.Native.ShipmentAddrStatus
-  commentId: T:CRMScript.Native.ShipmentAddrStatus
-  isExternal: true
-  name: ShipmentAddrStatus
-  nameWithType: ShipmentAddrStatus
-  fullName: CRMScript.Native.ShipmentAddrStatus
 - uid: CRMScript.Global.Void
   commentId: T:CRMScript.Global.Void
   isExternal: true

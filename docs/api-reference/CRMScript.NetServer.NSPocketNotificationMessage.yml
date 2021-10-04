@@ -6,6 +6,7 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSPocketNotificationMessage.#ctor
   - CRMScript.NetServer.NSPocketNotificationMessage.GetDate()
   - CRMScript.NetServer.NSPocketNotificationMessage.GetDuration()
   - CRMScript.NetServer.NSPocketNotificationMessage.GetExtraValues()
@@ -16,9 +17,8 @@ items:
   - CRMScript.NetServer.NSPocketNotificationMessage.GetTitle()
   - CRMScript.NetServer.NSPocketNotificationMessage.GetType()
   - CRMScript.NetServer.NSPocketNotificationMessage.GetUrl()
-  - CRMScript.NetServer.NSPocketNotificationMessage.#ctor
-  - CRMScript.NetServer.NSPocketNotificationMessage.SetDate()
-  - CRMScript.NetServer.NSPocketNotificationMessage.SetDuration()
+  - CRMScript.NetServer.NSPocketNotificationMessage.SetDate(DateTime)
+  - CRMScript.NetServer.NSPocketNotificationMessage.SetDuration(TimeSpan)
   - CRMScript.NetServer.NSPocketNotificationMessage.SetExtraValues()
   - CRMScript.NetServer.NSPocketNotificationMessage.SetMessage(String)
   - CRMScript.NetServer.NSPocketNotificationMessage.SetRecordId(Integer)
@@ -33,205 +33,6 @@ items:
   type: Class
   summary: 
   example: 
-- uid: CRMScript.NetServer.NSPocketNotificationMessage.GetDate()
-  commentId: M:CRMScript.NetServer.NSPocketNotificationMessage.GetDate()
-  id: 'GetDate()'
-  so.intellisense: NSPocketNotificationMessage.GetDate
-  langs:
-  - crmscript
-  name: 'GetDate()'
-  nameWithType: NSPocketNotificationMessage.GetDate()
-  fullName: CRMScript.NetServer.NSPocketNotificationMessage.GetDate()
-  type: Method
-  summary: "\nIf the message is about some event happening at a specific date and time\n"
-  remarks: 
-  syntax: 
-    content: DateTime GetDate()
-    parameters: []
-    return:
-      type: CRMScript.Global.DateTime
-      description:
-  example: 
-  - "\n<pre><code>NSPocketNotificationMessage thing;\nDateTime date = thing.GetDate();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPocketNotificationMessage.GetDuration()
-  commentId: M:CRMScript.NetServer.NSPocketNotificationMessage.GetDuration()
-  id: 'GetDuration()'
-  so.intellisense: NSPocketNotificationMessage.GetDuration
-  langs:
-  - crmscript
-  name: 'GetDuration()'
-  nameWithType: NSPocketNotificationMessage.GetDuration()
-  fullName: CRMScript.NetServer.NSPocketNotificationMessage.GetDuration()
-  type: Method
-  summary: "\nSpecify duration of the event\n"
-  remarks: 
-  syntax: 
-    content: TimeSpan GetDuration()
-    parameters: []
-    return:
-      type: CRMScript.Global.TimeSpan
-  example: 
-  - "\n<pre><code>NSPocketNotificationMessage thing;\nTimeSpan duration = thing.GetDuration();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPocketNotificationMessage.GetExtraValues()
-  commentId: M:CRMScript.NetServer.NSPocketNotificationMessage.GetExtraValues()
-  id: 'GetExtraValues()'
-  so.intellisense: NSPocketNotificationMessage.GetExtraValues
-  langs:
-  - crmscript
-  name: 'GetExtraValues()'
-  nameWithType: NSPocketNotificationMessage.GetExtraValues()
-  fullName: CRMScript.NetServer.NSPocketNotificationMessage.GetExtraValues()
-  type: Method
-  summary: "\nAdditional key/value properties to include in the message\n"
-  remarks: 
-  syntax: 
-    content: Map GetExtraValues()
-    parameters: []
-    return:
-      type: CRMScript.Global.Map
-      description:
-  example: 
-  - "\n<pre><code>NSPocketNotificationMessage thing;\nMap extraValues = thing.GetExtraValues();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPocketNotificationMessage.GetMessage()
-  commentId: M:CRMScript.NetServer.NSPocketNotificationMessage.GetMessage()
-  id: 'GetMessage()'
-  so.intellisense: NSPocketNotificationMessage.GetMessage
-  langs:
-  - crmscript
-  name: 'GetMessage()'
-  nameWithType: NSPocketNotificationMessage.GetMessage()
-  fullName: CRMScript.NetServer.NSPocketNotificationMessage.GetMessage()
-  type: Method
-  summary: "\nThe notification message body\n"
-  remarks: 
-  syntax: 
-    content: String GetMessage()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSPocketNotificationMessage thing;\nString message = thing.GetMessage();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPocketNotificationMessage.GetRecordId()
-  commentId: M:CRMScript.NetServer.NSPocketNotificationMessage.GetRecordId()
-  id: 'GetRecordId()'
-  so.intellisense: NSPocketNotificationMessage.GetRecordId
-  langs:
-  - crmscript
-  name: 'GetRecordId()'
-  nameWithType: NSPocketNotificationMessage.GetRecordId()
-  fullName: CRMScript.NetServer.NSPocketNotificationMessage.GetRecordId()
-  type: Method
-  summary: "\nIf the message is about some specific database record, this could be its primary key\n"
-  remarks: 
-  syntax: 
-    content: Integer GetRecordId()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSPocketNotificationMessage thing;\nInteger recordId = thing.GetRecordId();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPocketNotificationMessage.GetSilent()
-  commentId: M:CRMScript.NetServer.NSPocketNotificationMessage.GetSilent()
-  id: 'GetSilent()'
-  so.intellisense: NSPocketNotificationMessage.GetSilent
-  langs:
-  - crmscript
-  name: 'GetSilent()'
-  nameWithType: NSPocketNotificationMessage.GetSilent()
-  fullName: CRMScript.NetServer.NSPocketNotificationMessage.GetSilent()
-  type: Method
-  summary: "\nIndicates wether or not the message will vibrate/play a sound when delivered\n"
-  remarks: 
-  syntax: 
-    content: Bool GetSilent()
-    parameters: []
-    return:
-      type: CRMScript.Global.Bool
-      description:
-  example: 
-  - "\n<pre><code>NSPocketNotificationMessage thing;\nBool silent = thing.GetSilent();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPocketNotificationMessage.GetTimeToLive()
-  commentId: M:CRMScript.NetServer.NSPocketNotificationMessage.GetTimeToLive()
-  id: 'GetTimeToLive()'
-  so.intellisense: NSPocketNotificationMessage.GetTimeToLive
-  langs:
-  - crmscript
-  name: 'GetTimeToLive()'
-  nameWithType: NSPocketNotificationMessage.GetTimeToLive()
-  fullName: CRMScript.NetServer.NSPocketNotificationMessage.GetTimeToLive()
-  type: Method
-  summary: "\nSpecifies how many minutes the message should be valid\n"
-  remarks: 
-  syntax: 
-    content: Integer GetTimeToLive()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSPocketNotificationMessage thing;\nInteger timeToLive = thing.GetTimeToLive();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPocketNotificationMessage.GetTitle()
-  commentId: M:CRMScript.NetServer.NSPocketNotificationMessage.GetTitle()
-  id: 'GetTitle()'
-  so.intellisense: NSPocketNotificationMessage.GetTitle
-  langs:
-  - crmscript
-  name: 'GetTitle()'
-  nameWithType: NSPocketNotificationMessage.GetTitle()
-  fullName: CRMScript.NetServer.NSPocketNotificationMessage.GetTitle()
-  type: Method
-  summary: "\nTitle for the notification\n"
-  remarks: 
-  syntax: 
-    content: String GetTitle()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSPocketNotificationMessage thing;\nString title = thing.GetTitle();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPocketNotificationMessage.GetType()
-  commentId: M:CRMScript.NetServer.NSPocketNotificationMessage.GetType()
-  id: 'GetType()'
-  so.intellisense: NSPocketNotificationMessage.GetType
-  langs:
-  - crmscript
-  name: 'GetType()'
-  nameWithType: NSPocketNotificationMessage.GetType()
-  fullName: CRMScript.NetServer.NSPocketNotificationMessage.GetType()
-  type: Method
-  summary: "\nThe type of notification this is<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<ul><li>Enum: 0 = Message</li><li>Enum: 1 = ImportantMessage</li><li>Enum: 2 = RemoteAction</li><li>Enum: 3 = YesNoQuestion</li><li>Enum: 4 = ShowWebPage</li></ul><pre><code>NSPocketNotificationMessage thing;\nInteger type = thing.GetType();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: Integer GetType()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSPocketNotificationMessage thing;\nInteger type = thing.GetType();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPocketNotificationMessage.GetUrl()
-  commentId: M:CRMScript.NetServer.NSPocketNotificationMessage.GetUrl()
-  id: 'GetUrl()'
-  so.intellisense: NSPocketNotificationMessage.GetUrl
-  langs:
-  - crmscript
-  name: 'GetUrl()'
-  nameWithType: NSPocketNotificationMessage.GetUrl()
-  fullName: CRMScript.NetServer.NSPocketNotificationMessage.GetUrl()
-  type: Method
-  summary: "\na URL associated with the notification that will be handled by Pocket\n"
-  remarks: 
-  syntax: 
-    content: String GetUrl()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSPocketNotificationMessage thing;\nString url = thing.GetUrl();</code></pre>\n"
 - uid: CRMScript.NetServer.NSPocketNotificationMessage.#ctor
   commentId: M:CRMScript.NetServer.NSPocketNotificationMessage.#ctor
   id: '#ctor'
@@ -247,38 +48,248 @@ items:
   syntax: 
     content: NSPocketNotificationMessage
   example: 
-- uid: CRMScript.NetServer.NSPocketNotificationMessage.SetDate()
-  commentId: M:CRMScript.NetServer.NSPocketNotificationMessage.SetDate()
-  id: 'SetDate()'
+- uid: CRMScript.NetServer.NSPocketNotificationMessage.GetDate()
+  commentId: M:CRMScript.NetServer.NSPocketNotificationMessage.GetDate()
+  id: 'GetDate()'
+  so.intellisense: NSPocketNotificationMessage.GetDate
+  langs:
+  - crmscript
+  name: 'GetDate()'
+  nameWithType: NSPocketNotificationMessage.GetDate()
+  fullName: CRMScript.NetServer.NSPocketNotificationMessage.GetDate()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: DateTime GetDate()
+    parameters: []
+    return:
+      type: CRMScript.Global.DateTime
+      description: If the message is about some event happening at a specific date and time
+  example: 
+  - "\n<pre><code>NSPocketNotificationMessage thing;\nDateTime date = thing.GetDate();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPocketNotificationMessage.GetDuration()
+  commentId: M:CRMScript.NetServer.NSPocketNotificationMessage.GetDuration()
+  id: 'GetDuration()'
+  so.intellisense: NSPocketNotificationMessage.GetDuration
+  langs:
+  - crmscript
+  name: 'GetDuration()'
+  nameWithType: NSPocketNotificationMessage.GetDuration()
+  fullName: CRMScript.NetServer.NSPocketNotificationMessage.GetDuration()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: TimeSpan GetDuration()
+    parameters: []
+    return:
+      type: CRMScript.Global.TimeSpan
+      description: Specify duration of the event
+  example: 
+  - "\n<pre><code>NSPocketNotificationMessage thing;\nTimeSpan duration = thing.GetDuration();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPocketNotificationMessage.GetExtraValues()
+  commentId: M:CRMScript.NetServer.NSPocketNotificationMessage.GetExtraValues()
+  id: 'GetExtraValues()'
+  so.intellisense: NSPocketNotificationMessage.GetExtraValues
+  langs:
+  - crmscript
+  name: 'GetExtraValues()'
+  nameWithType: NSPocketNotificationMessage.GetExtraValues()
+  fullName: CRMScript.NetServer.NSPocketNotificationMessage.GetExtraValues()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Map GetExtraValues()
+    parameters: []
+    return:
+      type: CRMScript.Global.Map
+      description: Additional key/value properties to include in the message
+  example: 
+  - "\n<pre><code>NSPocketNotificationMessage thing;\nMap extraValues = thing.GetExtraValues();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPocketNotificationMessage.GetMessage()
+  commentId: M:CRMScript.NetServer.NSPocketNotificationMessage.GetMessage()
+  id: 'GetMessage()'
+  so.intellisense: NSPocketNotificationMessage.GetMessage
+  langs:
+  - crmscript
+  name: 'GetMessage()'
+  nameWithType: NSPocketNotificationMessage.GetMessage()
+  fullName: CRMScript.NetServer.NSPocketNotificationMessage.GetMessage()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetMessage()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: The notification message body
+  example: 
+  - "\n<pre><code>NSPocketNotificationMessage thing;\nString message = thing.GetMessage();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPocketNotificationMessage.GetRecordId()
+  commentId: M:CRMScript.NetServer.NSPocketNotificationMessage.GetRecordId()
+  id: 'GetRecordId()'
+  so.intellisense: NSPocketNotificationMessage.GetRecordId
+  langs:
+  - crmscript
+  name: 'GetRecordId()'
+  nameWithType: NSPocketNotificationMessage.GetRecordId()
+  fullName: CRMScript.NetServer.NSPocketNotificationMessage.GetRecordId()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Integer GetRecordId()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: If the message is about some specific database record, this could be its primary key
+  example: 
+  - "\n<pre><code>NSPocketNotificationMessage thing;\nInteger recordId = thing.GetRecordId();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPocketNotificationMessage.GetSilent()
+  commentId: M:CRMScript.NetServer.NSPocketNotificationMessage.GetSilent()
+  id: 'GetSilent()'
+  so.intellisense: NSPocketNotificationMessage.GetSilent
+  langs:
+  - crmscript
+  name: 'GetSilent()'
+  nameWithType: NSPocketNotificationMessage.GetSilent()
+  fullName: CRMScript.NetServer.NSPocketNotificationMessage.GetSilent()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Bool GetSilent()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: Indicates wether or not the message will vibrate/play a sound when delivered
+  example: 
+  - "\n<pre><code>NSPocketNotificationMessage thing;\nBool silent = thing.GetSilent();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPocketNotificationMessage.GetTimeToLive()
+  commentId: M:CRMScript.NetServer.NSPocketNotificationMessage.GetTimeToLive()
+  id: 'GetTimeToLive()'
+  so.intellisense: NSPocketNotificationMessage.GetTimeToLive
+  langs:
+  - crmscript
+  name: 'GetTimeToLive()'
+  nameWithType: NSPocketNotificationMessage.GetTimeToLive()
+  fullName: CRMScript.NetServer.NSPocketNotificationMessage.GetTimeToLive()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Integer GetTimeToLive()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: Specifies how many minutes the message should be valid
+  example: 
+  - "\n<pre><code>NSPocketNotificationMessage thing;\nInteger timeToLive = thing.GetTimeToLive();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPocketNotificationMessage.GetTitle()
+  commentId: M:CRMScript.NetServer.NSPocketNotificationMessage.GetTitle()
+  id: 'GetTitle()'
+  so.intellisense: NSPocketNotificationMessage.GetTitle
+  langs:
+  - crmscript
+  name: 'GetTitle()'
+  nameWithType: NSPocketNotificationMessage.GetTitle()
+  fullName: CRMScript.NetServer.NSPocketNotificationMessage.GetTitle()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetTitle()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Title for the notification
+  example: 
+  - "\n<pre><code>NSPocketNotificationMessage thing;\nString title = thing.GetTitle();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPocketNotificationMessage.GetType()
+  commentId: M:CRMScript.NetServer.NSPocketNotificationMessage.GetType()
+  id: 'GetType()'
+  so.intellisense: NSPocketNotificationMessage.GetType
+  langs:
+  - crmscript
+  name: 'GetType()'
+  nameWithType: NSPocketNotificationMessage.GetType()
+  fullName: CRMScript.NetServer.NSPocketNotificationMessage.GetType()
+  type: Method
+  summary: "\n<ul><li>Enum: 0 = Message</li><li>Enum: 1 = ImportantMessage</li><li>Enum: 2 = RemoteAction</li><li>Enum: 3 = YesNoQuestion</li><li>Enum: 4 = ShowWebPage</li></ul>\n"
+  remarks: 
+  syntax: 
+    content: Integer GetType()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: The type of notification this is
+  example: 
+  - "\n<pre><code>NSPocketNotificationMessage thing;\nInteger type = thing.GetType();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPocketNotificationMessage.GetUrl()
+  commentId: M:CRMScript.NetServer.NSPocketNotificationMessage.GetUrl()
+  id: 'GetUrl()'
+  so.intellisense: NSPocketNotificationMessage.GetUrl
+  langs:
+  - crmscript
+  name: 'GetUrl()'
+  nameWithType: NSPocketNotificationMessage.GetUrl()
+  fullName: CRMScript.NetServer.NSPocketNotificationMessage.GetUrl()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetUrl()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: A URL associated with the notification that will be handled by Pocket
+  example: 
+  - "\n<pre><code>NSPocketNotificationMessage thing;\nString url = thing.GetUrl();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPocketNotificationMessage.SetDate(DateTime)
+  commentId: M:CRMScript.NetServer.NSPocketNotificationMessage.SetDate(DateTime)
+  id: 'SetDate(DateTime)'
   so.intellisense: NSPocketNotificationMessage.SetDate
   langs:
   - crmscript
-  name: 'SetDate()'
-  nameWithType: NSPocketNotificationMessage.SetDate()
-  fullName: CRMScript.NetServer.NSPocketNotificationMessage.SetDate()
+  name: 'SetDate(DateTime)'
+  nameWithType: NSPocketNotificationMessage.SetDate(DateTime)
+  fullName: CRMScript.NetServer.NSPocketNotificationMessage.SetDate(DateTime)
   type: Method
-  summary: "\nIf the message is about some event happening at a specific date and time\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetDate(DateTime date)
     parameters:
+    - id: date
+      type: CRMScript.Global.DateTime
+      description: If the message is about some event happening at a specific date and time
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSPocketNotificationMessage thing;\nDateTime date;\nthing.SetDate(date);</code></pre>\n"
-- uid: CRMScript.NetServer.NSPocketNotificationMessage.SetDuration()
-  commentId: M:CRMScript.NetServer.NSPocketNotificationMessage.SetDuration()
-  id: 'SetDuration()'
+- uid: CRMScript.NetServer.NSPocketNotificationMessage.SetDuration(TimeSpan)
+  commentId: M:CRMScript.NetServer.NSPocketNotificationMessage.SetDuration(TimeSpan)
+  id: 'SetDuration(TimeSpan)'
   so.intellisense: NSPocketNotificationMessage.SetDuration
   langs:
   - crmscript
-  name: 'SetDuration()'
-  nameWithType: NSPocketNotificationMessage.SetDuration()
-  fullName: CRMScript.NetServer.NSPocketNotificationMessage.SetDuration()
+  name: 'SetDuration(TimeSpan)'
+  nameWithType: NSPocketNotificationMessage.SetDuration(TimeSpan)
+  fullName: CRMScript.NetServer.NSPocketNotificationMessage.SetDuration(TimeSpan)
   type: Method
-  summary: "\nSpecify duration of the event\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetDuration(TimeSpan duration)
     parameters:
+    - id: duration
+      type: CRMScript.Global.TimeSpan
+      description: Specify duration of the event
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSPocketNotificationMessage thing;\nTimeSpan duration;\nthing.SetDuration(duration);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPocketNotificationMessage.SetExtraValues()
@@ -291,11 +302,16 @@ items:
   nameWithType: NSPocketNotificationMessage.SetExtraValues()
   fullName: CRMScript.NetServer.NSPocketNotificationMessage.SetExtraValues()
   type: Method
-  summary: "\nAdditional key/value properties to include in the message\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetExtraValues(Map extraValues)
     parameters:
+    - id: extraValues
+      type: CRMScript.Global.Map
+      description: Additional key/value properties to include in the message
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSPocketNotificationMessage thing;\nMap extraValues;\nthing.SetExtraValues(extraValues);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPocketNotificationMessage.SetMessage(String)
@@ -308,14 +324,14 @@ items:
   nameWithType: NSPocketNotificationMessage.SetMessage(String)
   fullName: CRMScript.NetServer.NSPocketNotificationMessage.SetMessage(String)
   type: Method
-  summary: "\nThe notification message body\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetMessage(String message)
     parameters:
     - id: message
       type: CRMScript.Global.String
-      description: 
+      description: The notification message body
     return:
       type: CRMScript.Global.Void
   example: 
@@ -330,14 +346,14 @@ items:
   nameWithType: NSPocketNotificationMessage.SetRecordId(Integer)
   fullName: CRMScript.NetServer.NSPocketNotificationMessage.SetRecordId(Integer)
   type: Method
-  summary: "\nIf the message is about some specific database record, this could be its primary key\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetRecordId(Integer recordId)
     parameters:
     - id: recordId
       type: CRMScript.Global.Integer
-      description: 
+      description: If the message is about some specific database record, this could be its primary key
     return:
       type: CRMScript.Global.Void
   example: 
@@ -352,14 +368,14 @@ items:
   nameWithType: NSPocketNotificationMessage.SetSilent(Bool)
   fullName: CRMScript.NetServer.NSPocketNotificationMessage.SetSilent(Bool)
   type: Method
-  summary: "\nIndicates wether or not the message will vibrate/play a sound when delivered\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetSilent(Bool silent)
     parameters:
     - id: silent
       type: CRMScript.Global.Bool
-      description: 
+      description: Indicates wether or not the message will vibrate/play a sound when delivered
     return:
       type: CRMScript.Global.Void
   example: 
@@ -374,14 +390,14 @@ items:
   nameWithType: NSPocketNotificationMessage.SetTimeToLive(Integer)
   fullName: CRMScript.NetServer.NSPocketNotificationMessage.SetTimeToLive(Integer)
   type: Method
-  summary: "\nSpecifies how many minutes the message should be valid\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetTimeToLive(Integer timeToLive)
     parameters:
     - id: timeToLive
       type: CRMScript.Global.Integer
-      description: 
+      description: Specifies how many minutes the message should be valid
     return:
       type: CRMScript.Global.Void
   example: 
@@ -396,14 +412,14 @@ items:
   nameWithType: NSPocketNotificationMessage.SetTitle(String)
   fullName: CRMScript.NetServer.NSPocketNotificationMessage.SetTitle(String)
   type: Method
-  summary: "\nTitle for the notification\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetTitle(String title)
     parameters:
     - id: title
       type: CRMScript.Global.String
-      description: 
+      description: Title for the notification
     return:
       type: CRMScript.Global.Void
   example: 
@@ -418,14 +434,14 @@ items:
   nameWithType: NSPocketNotificationMessage.SetType(Integer)
   fullName: CRMScript.NetServer.NSPocketNotificationMessage.SetType(Integer)
   type: Method
-  summary: "\nThe type of notification this is\n"
-  remarks: "\n<p>See enum type.</p>\n"
+  summary: ""
+  remarks: ""
   syntax: 
     content: Void SetType(Integer type)
     parameters:
     - id: type
       type: CRMScript.Global.Integer
-      description: 
+      description: The type of notification this is. See enum type.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -440,14 +456,14 @@ items:
   nameWithType: NSPocketNotificationMessage.SetUrl(String)
   fullName: CRMScript.NetServer.NSPocketNotificationMessage.SetUrl(String)
   type: Method
-  summary: "\na URL associated with the notification that will be handled by Pocket\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetUrl(String url)
     parameters:
     - id: url
       type: CRMScript.Global.String
-      description: 
+      description: A URL associated with the notification that will be handled by Pocket
     return:
       type: CRMScript.Global.Void
   example: 

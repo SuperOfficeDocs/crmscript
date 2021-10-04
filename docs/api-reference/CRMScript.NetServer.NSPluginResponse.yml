@@ -6,13 +6,13 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSPluginResponse.#ctor
   - CRMScript.NetServer.NSPluginResponse.GetChanges()
   - CRMScript.NetServer.NSPluginResponse.GetErrorCode()
   - CRMScript.NetServer.NSPluginResponse.GetIsOk()
   - CRMScript.NetServer.NSPluginResponse.GetTechExplanation()
   - CRMScript.NetServer.NSPluginResponse.GetUserExplanation()
-  - CRMScript.NetServer.NSPluginResponse.#ctor
-  - CRMScript.NetServer.NSPluginResponse.SetChanges()
+  - CRMScript.NetServer.NSPluginResponse.SetChanges(NSChangedData)
   - CRMScript.NetServer.NSPluginResponse.SetErrorCode(String)
   - CRMScript.NetServer.NSPluginResponse.SetIsOk(Bool)
   - CRMScript.NetServer.NSPluginResponse.SetTechExplanation(String)
@@ -23,105 +23,6 @@ items:
   type: Class
   summary: 
   example: 
-- uid: CRMScript.NetServer.NSPluginResponse.GetChanges()
-  commentId: M:CRMScript.NetServer.NSPluginResponse.GetChanges()
-  id: 'GetChanges()'
-  so.intellisense: NSPluginResponse.GetChanges
-  langs:
-  - crmscript
-  name: 'GetChanges()'
-  nameWithType: NSPluginResponse.GetChanges()
-  fullName: CRMScript.NetServer.NSPluginResponse.GetChanges()
-  type: Method
-  summary: "\nTablename/recordid of data changed by this method, that the client may need to reload\n"
-  remarks: 
-  syntax: 
-    content: NSChangedData GetChanges()
-    parameters: []
-    return:
-      type: CRMScript.NetServer.NSChangedData
-  example: 
-  - "\n<pre><code>NSPluginResponse thing;\nNSChangedData changes = thing.GetChanges();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPluginResponse.GetErrorCode()
-  commentId: M:CRMScript.NetServer.NSPluginResponse.GetErrorCode()
-  id: 'GetErrorCode()'
-  so.intellisense: NSPluginResponse.GetErrorCode
-  langs:
-  - crmscript
-  name: 'GetErrorCode()'
-  nameWithType: NSPluginResponse.GetErrorCode()
-  fullName: CRMScript.NetServer.NSPluginResponse.GetErrorCode()
-  type: Method
-  summary: "\nAn error code, if available.\n"
-  remarks: 
-  syntax: 
-    content: String GetErrorCode()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSPluginResponse thing;\nString errorCode = thing.GetErrorCode();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPluginResponse.GetIsOk()
-  commentId: M:CRMScript.NetServer.NSPluginResponse.GetIsOk()
-  id: 'GetIsOk()'
-  so.intellisense: NSPluginResponse.GetIsOk
-  langs:
-  - crmscript
-  name: 'GetIsOk()'
-  nameWithType: NSPluginResponse.GetIsOk()
-  fullName: CRMScript.NetServer.NSPluginResponse.GetIsOk()
-  type: Method
-  summary: "\nAnswer to the question / An indication if the operation went well.\n"
-  remarks: 
-  syntax: 
-    content: Bool GetIsOk()
-    parameters: []
-    return:
-      type: CRMScript.Global.Bool
-      description:
-  example: 
-  - "\n<pre><code>NSPluginResponse thing;\nBool isOk = thing.GetIsOk();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPluginResponse.GetTechExplanation()
-  commentId: M:CRMScript.NetServer.NSPluginResponse.GetTechExplanation()
-  id: 'GetTechExplanation()'
-  so.intellisense: NSPluginResponse.GetTechExplanation
-  langs:
-  - crmscript
-  name: 'GetTechExplanation()'
-  nameWithType: NSPluginResponse.GetTechExplanation()
-  fullName: CRMScript.NetServer.NSPluginResponse.GetTechExplanation()
-  type: Method
-  summary: "\nAlways in English\n"
-  remarks: 
-  syntax: 
-    content: String GetTechExplanation()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSPluginResponse thing;\nString techExplanation = thing.GetTechExplanation();</code></pre>\n"
-- uid: CRMScript.NetServer.NSPluginResponse.GetUserExplanation()
-  commentId: M:CRMScript.NetServer.NSPluginResponse.GetUserExplanation()
-  id: 'GetUserExplanation()'
-  so.intellisense: NSPluginResponse.GetUserExplanation
-  langs:
-  - crmscript
-  name: 'GetUserExplanation()'
-  nameWithType: NSPluginResponse.GetUserExplanation()
-  fullName: CRMScript.NetServer.NSPluginResponse.GetUserExplanation()
-  type: Method
-  summary: "\nA localized explanation to the answer.\n"
-  remarks: 
-  syntax: 
-    content: String GetUserExplanation()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSPluginResponse thing;\nString userExplanation = thing.GetUserExplanation();</code></pre>\n"
 - uid: CRMScript.NetServer.NSPluginResponse.#ctor
   commentId: M:CRMScript.NetServer.NSPluginResponse.#ctor
   id: '#ctor'
@@ -137,21 +38,126 @@ items:
   syntax: 
     content: NSPluginResponse
   example: 
-- uid: CRMScript.NetServer.NSPluginResponse.SetChanges()
-  commentId: M:CRMScript.NetServer.NSPluginResponse.SetChanges()
-  id: 'SetChanges()'
+- uid: CRMScript.NetServer.NSPluginResponse.GetChanges()
+  commentId: M:CRMScript.NetServer.NSPluginResponse.GetChanges()
+  id: 'GetChanges()'
+  so.intellisense: NSPluginResponse.GetChanges
+  langs:
+  - crmscript
+  name: 'GetChanges()'
+  nameWithType: NSPluginResponse.GetChanges()
+  fullName: CRMScript.NetServer.NSPluginResponse.GetChanges()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: NSChangedData GetChanges()
+    parameters: []
+    return:
+      type: CRMScript.NetServer.NSChangedData
+      description: Tablename/recordid of data changed by this method, that the client may need to reload
+  example: 
+  - "\n<pre><code>NSPluginResponse thing;\nNSChangedData changes = thing.GetChanges();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPluginResponse.GetErrorCode()
+  commentId: M:CRMScript.NetServer.NSPluginResponse.GetErrorCode()
+  id: 'GetErrorCode()'
+  so.intellisense: NSPluginResponse.GetErrorCode
+  langs:
+  - crmscript
+  name: 'GetErrorCode()'
+  nameWithType: NSPluginResponse.GetErrorCode()
+  fullName: CRMScript.NetServer.NSPluginResponse.GetErrorCode()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetErrorCode()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: An error code, if available.
+  example: 
+  - "\n<pre><code>NSPluginResponse thing;\nString errorCode = thing.GetErrorCode();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPluginResponse.GetIsOk()
+  commentId: M:CRMScript.NetServer.NSPluginResponse.GetIsOk()
+  id: 'GetIsOk()'
+  so.intellisense: NSPluginResponse.GetIsOk
+  langs:
+  - crmscript
+  name: 'GetIsOk()'
+  nameWithType: NSPluginResponse.GetIsOk()
+  fullName: CRMScript.NetServer.NSPluginResponse.GetIsOk()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Bool GetIsOk()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: Answer to the question / An indication if the operation went well.
+  example: 
+  - "\n<pre><code>NSPluginResponse thing;\nBool isOk = thing.GetIsOk();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPluginResponse.GetTechExplanation()
+  commentId: M:CRMScript.NetServer.NSPluginResponse.GetTechExplanation()
+  id: 'GetTechExplanation()'
+  so.intellisense: NSPluginResponse.GetTechExplanation
+  langs:
+  - crmscript
+  name: 'GetTechExplanation()'
+  nameWithType: NSPluginResponse.GetTechExplanation()
+  fullName: CRMScript.NetServer.NSPluginResponse.GetTechExplanation()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetTechExplanation()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Always in English
+  example: 
+  - "\n<pre><code>NSPluginResponse thing;\nString techExplanation = thing.GetTechExplanation();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPluginResponse.GetUserExplanation()
+  commentId: M:CRMScript.NetServer.NSPluginResponse.GetUserExplanation()
+  id: 'GetUserExplanation()'
+  so.intellisense: NSPluginResponse.GetUserExplanation
+  langs:
+  - crmscript
+  name: 'GetUserExplanation()'
+  nameWithType: NSPluginResponse.GetUserExplanation()
+  fullName: CRMScript.NetServer.NSPluginResponse.GetUserExplanation()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetUserExplanation()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: A localized explanation to the answer.
+  example: 
+  - "\n<pre><code>NSPluginResponse thing;\nString userExplanation = thing.GetUserExplanation();</code></pre>\n"
+- uid: CRMScript.NetServer.NSPluginResponse.SetChanges(NSChangedData)
+  commentId: M:CRMScript.NetServer.NSPluginResponse.SetChanges(NSChangedData)
+  id: 'SetChanges(NSChangedData)'
   so.intellisense: NSPluginResponse.SetChanges
   langs:
   - crmscript
-  name: 'SetChanges()'
-  nameWithType: NSPluginResponse.SetChanges()
-  fullName: CRMScript.NetServer.NSPluginResponse.SetChanges()
+  name: 'SetChanges(NSChangedData)'
+  nameWithType: NSPluginResponse.SetChanges(NSChangedData)
+  fullName: CRMScript.NetServer.NSPluginResponse.SetChanges(NSChangedData)
   type: Method
-  summary: "\nTablename/recordid of data changed by this method, that the client may need to reload\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetChanges(NSChangedData changes)
     parameters:
+    - id: changes
+      type: 
+      description: Tablename/recordid of data changed by this method, that the client may need to reload
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSPluginResponse thing;\nNSChangedData changes;\nthing.SetChanges(changes);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPluginResponse.SetErrorCode(String)
@@ -164,14 +170,14 @@ items:
   nameWithType: NSPluginResponse.SetErrorCode(String)
   fullName: CRMScript.NetServer.NSPluginResponse.SetErrorCode(String)
   type: Method
-  summary: "\nAn error code, if available.\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetErrorCode(String errorCode)
     parameters:
     - id: errorCode
       type: CRMScript.Global.String
-      description: 
+      description: An error code, if available.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -186,14 +192,14 @@ items:
   nameWithType: NSPluginResponse.SetIsOk(Bool)
   fullName: CRMScript.NetServer.NSPluginResponse.SetIsOk(Bool)
   type: Method
-  summary: "\nAnswer to the question / An indication if the operation went well.\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetIsOk(Bool isOk)
     parameters:
     - id: isOk
       type: CRMScript.Global.Bool
-      description: 
+      description: Answer to the question / An indication if the operation went well.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -208,14 +214,14 @@ items:
   nameWithType: NSPluginResponse.SetTechExplanation(String)
   fullName: CRMScript.NetServer.NSPluginResponse.SetTechExplanation(String)
   type: Method
-  summary: "\nAlways in English\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetTechExplanation(String techExplanation)
     parameters:
     - id: techExplanation
       type: CRMScript.Global.String
-      description: 
+      description: Always in English
     return:
       type: CRMScript.Global.Void
   example: 
@@ -230,14 +236,14 @@ items:
   nameWithType: NSPluginResponse.SetUserExplanation(String)
   fullName: CRMScript.NetServer.NSPluginResponse.SetUserExplanation(String)
   type: Method
-  summary: "\nA localized explanation to the answer.\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetUserExplanation(String userExplanation)
     parameters:
     - id: userExplanation
       type: CRMScript.Global.String
-      description: 
+      description: A localized explanation to the answer.
     return:
       type: CRMScript.Global.Void
   example: 

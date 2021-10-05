@@ -6,18 +6,18 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSQuoteContext.#ctor
   - CRMScript.NetServer.NSQuoteContext.GetCRMAssociate()
   - CRMScript.NetServer.NSQuoteContext.GetCRMQuoteAlternative()
   - CRMScript.NetServer.NSQuoteContext.GetCRMQuoteLine()
   - CRMScript.NetServer.NSQuoteContext.GetCRMQuoteVersion()
   - CRMScript.NetServer.NSQuoteContext.GetCRMSale()
   - CRMScript.NetServer.NSQuoteContext.GetUserLanguageCode()
-  - CRMScript.NetServer.NSQuoteContext.#ctor
-  - CRMScript.NetServer.NSQuoteContext.SetCRMAssociate()
-  - CRMScript.NetServer.NSQuoteContext.SetCRMQuoteAlternative()
+  - CRMScript.NetServer.NSQuoteContext.SetCRMAssociate(NSAssociate)
+  - CRMScript.NetServer.NSQuoteContext.SetCRMQuoteAlternative(NSQuoteAlternative)
   - CRMScript.NetServer.NSQuoteContext.SetCRMQuoteLine(NSQuoteLine)
   - CRMScript.NetServer.NSQuoteContext.SetCRMQuoteVersion(NSQuoteVersion)
-  - CRMScript.NetServer.NSQuoteContext.SetCRMSale()
+  - CRMScript.NetServer.NSQuoteContext.SetCRMSale(NSSale)
   - CRMScript.NetServer.NSQuoteContext.SetUserLanguageCode(String)
   name: NSQuoteContext
   nameWithType: NSQuoteContext
@@ -25,121 +25,6 @@ items:
   type: Class
   summary: 
   example: 
-- uid: CRMScript.NetServer.NSQuoteContext.GetCRMAssociate()
-  commentId: M:CRMScript.NetServer.NSQuoteContext.GetCRMAssociate()
-  id: 'GetCRMAssociate()'
-  so.intellisense: NSQuoteContext.GetCRMAssociate
-  langs:
-  - crmscript
-  name: 'GetCRMAssociate()'
-  nameWithType: NSQuoteContext.GetCRMAssociate()
-  fullName: CRMScript.NetServer.NSQuoteContext.GetCRMAssociate()
-  type: Method
-  summary: "\nThe associate (salesman) that is logged into the CRM system.\n"
-  remarks: 
-  syntax: 
-    content: NSAssociate GetCRMAssociate()
-    parameters: []
-    return:
-      type: CRMScript.NetServer.NSAssociate
-  example: 
-  - "\n<pre><code>NSQuoteContext thing;\nNSAssociate cRMAssociate = thing.GetCRMAssociate();</code></pre>\n"
-- uid: CRMScript.NetServer.NSQuoteContext.GetCRMQuoteAlternative()
-  commentId: M:CRMScript.NetServer.NSQuoteContext.GetCRMQuoteAlternative()
-  id: 'GetCRMQuoteAlternative()'
-  so.intellisense: NSQuoteContext.GetCRMQuoteAlternative
-  langs:
-  - crmscript
-  name: 'GetCRMQuoteAlternative()'
-  nameWithType: NSQuoteContext.GetCRMQuoteAlternative()
-  fullName: CRMScript.NetServer.NSQuoteContext.GetCRMQuoteAlternative()
-  type: Method
-  summary: "\nThe relevant or current alternative of the quote in the CRM system, if applicable.\n"
-  remarks: 
-  syntax: 
-    content: NSQuoteAlternative GetCRMQuoteAlternative()
-    parameters: []
-    return:
-      type: CRMScript.NetServer.NSQuoteAlternative
-  example: 
-  - "\n<pre><code>NSQuoteContext thing;\nNSQuoteAlternative cRMQuoteAlternative = thing.GetCRMQuoteAlternative();</code></pre>\n"
-- uid: CRMScript.NetServer.NSQuoteContext.GetCRMQuoteLine()
-  commentId: M:CRMScript.NetServer.NSQuoteContext.GetCRMQuoteLine()
-  id: 'GetCRMQuoteLine()'
-  so.intellisense: NSQuoteContext.GetCRMQuoteLine
-  langs:
-  - crmscript
-  name: 'GetCRMQuoteLine()'
-  nameWithType: NSQuoteContext.GetCRMQuoteLine()
-  fullName: CRMScript.NetServer.NSQuoteContext.GetCRMQuoteLine()
-  type: Method
-  summary: "\nThe relevant or current quote line of the quote in the CRM system, if applicable.\n"
-  remarks: 
-  syntax: 
-    content: NSQuoteLine GetCRMQuoteLine()
-    parameters: []
-    return:
-      type: CRMScript.NetServer.NSQuoteLine
-  example: 
-  - "\n<pre><code>NSQuoteContext thing;\nNSQuoteLine cRMQuoteLine = thing.GetCRMQuoteLine();</code></pre>\n"
-- uid: CRMScript.NetServer.NSQuoteContext.GetCRMQuoteVersion()
-  commentId: M:CRMScript.NetServer.NSQuoteContext.GetCRMQuoteVersion()
-  id: 'GetCRMQuoteVersion()'
-  so.intellisense: NSQuoteContext.GetCRMQuoteVersion
-  langs:
-  - crmscript
-  name: 'GetCRMQuoteVersion()'
-  nameWithType: NSQuoteContext.GetCRMQuoteVersion()
-  fullName: CRMScript.NetServer.NSQuoteContext.GetCRMQuoteVersion()
-  type: Method
-  summary: "\nThe relevant or current revision of the quote in the CRM system, if applicable.\n"
-  remarks: 
-  syntax: 
-    content: NSQuoteVersion GetCRMQuoteVersion()
-    parameters: []
-    return:
-      type: CRMScript.NetServer.NSQuoteVersion
-  example: 
-  - "\n<pre><code>NSQuoteContext thing;\nNSQuoteVersion cRMQuoteVersion = thing.GetCRMQuoteVersion();</code></pre>\n"
-- uid: CRMScript.NetServer.NSQuoteContext.GetCRMSale()
-  commentId: M:CRMScript.NetServer.NSQuoteContext.GetCRMSale()
-  id: 'GetCRMSale()'
-  so.intellisense: NSQuoteContext.GetCRMSale
-  langs:
-  - crmscript
-  name: 'GetCRMSale()'
-  nameWithType: NSQuoteContext.GetCRMSale()
-  fullName: CRMScript.NetServer.NSQuoteContext.GetCRMSale()
-  type: Method
-  summary: "\nThe sale the quote is registered in the CRM system.\n"
-  remarks: 
-  syntax: 
-    content: NSSale GetCRMSale()
-    parameters: []
-    return:
-      type: CRMScript.NetServer.NSSale
-  example: 
-  - "\n<pre><code>NSQuoteContext thing;\nNSSale cRMSale = thing.GetCRMSale();</code></pre>\n"
-- uid: CRMScript.NetServer.NSQuoteContext.GetUserLanguageCode()
-  commentId: M:CRMScript.NetServer.NSQuoteContext.GetUserLanguageCode()
-  id: 'GetUserLanguageCode()'
-  so.intellisense: NSQuoteContext.GetUserLanguageCode
-  langs:
-  - crmscript
-  name: 'GetUserLanguageCode()'
-  nameWithType: NSQuoteContext.GetUserLanguageCode()
-  fullName: CRMScript.NetServer.NSQuoteContext.GetUserLanguageCode()
-  type: Method
-  summary: "\nThe iso language code of the language the user is using in the crm system. Use this language when replying, if possible.\n"
-  remarks: 
-  syntax: 
-    content: String GetUserLanguageCode()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSQuoteContext thing;\nString userLanguageCode = thing.GetUserLanguageCode();</code></pre>\n"
 - uid: CRMScript.NetServer.NSQuoteContext.#ctor
   commentId: M:CRMScript.NetServer.NSQuoteContext.#ctor
   id: '#ctor'
@@ -155,38 +40,168 @@ items:
   syntax: 
     content: NSQuoteContext
   example: 
-- uid: CRMScript.NetServer.NSQuoteContext.SetCRMAssociate()
-  commentId: M:CRMScript.NetServer.NSQuoteContext.SetCRMAssociate()
-  id: 'SetCRMAssociate()'
+- uid: CRMScript.NetServer.NSQuoteContext.GetCRMAssociate()
+  commentId: M:CRMScript.NetServer.NSQuoteContext.GetCRMAssociate()
+  id: 'GetCRMAssociate()'
+  so.intellisense: NSQuoteContext.GetCRMAssociate
+  langs:
+  - crmscript
+  name: 'GetCRMAssociate()'
+  nameWithType: NSQuoteContext.GetCRMAssociate()
+  fullName: CRMScript.NetServer.NSQuoteContext.GetCRMAssociate()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: NSAssociate GetCRMAssociate()
+    parameters: []
+    return:
+      type: CRMScript.NetServer.NSAssociate
+      description: The associate (salesman) that is logged into the CRM system.
+  example: 
+  - "\n<pre><code>NSQuoteContext thing;\nNSAssociate cRMAssociate = thing.GetCRMAssociate();</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuoteContext.GetCRMQuoteAlternative()
+  commentId: M:CRMScript.NetServer.NSQuoteContext.GetCRMQuoteAlternative()
+  id: 'GetCRMQuoteAlternative()'
+  so.intellisense: NSQuoteContext.GetCRMQuoteAlternative
+  langs:
+  - crmscript
+  name: 'GetCRMQuoteAlternative()'
+  nameWithType: NSQuoteContext.GetCRMQuoteAlternative()
+  fullName: CRMScript.NetServer.NSQuoteContext.GetCRMQuoteAlternative()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: NSQuoteAlternative GetCRMQuoteAlternative()
+    parameters: []
+    return:
+      type: CRMScript.NetServer.NSQuoteAlternative
+      description: The relevant or current alternative of the quote in the CRM system, if applicable.
+  example: 
+  - "\n<pre><code>NSQuoteContext thing;\nNSQuoteAlternative cRMQuoteAlternative = thing.GetCRMQuoteAlternative();</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuoteContext.GetCRMQuoteLine()
+  commentId: M:CRMScript.NetServer.NSQuoteContext.GetCRMQuoteLine()
+  id: 'GetCRMQuoteLine()'
+  so.intellisense: NSQuoteContext.GetCRMQuoteLine
+  langs:
+  - crmscript
+  name: 'GetCRMQuoteLine()'
+  nameWithType: NSQuoteContext.GetCRMQuoteLine()
+  fullName: CRMScript.NetServer.NSQuoteContext.GetCRMQuoteLine()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: NSQuoteLine GetCRMQuoteLine()
+    parameters: []
+    return:
+      type: CRMScript.NetServer.NSQuoteLine
+      description: The relevant or current quote line of the quote in the CRM system, if applicable.
+  example: 
+  - "\n<pre><code>NSQuoteContext thing;\nNSQuoteLine cRMQuoteLine = thing.GetCRMQuoteLine();</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuoteContext.GetCRMQuoteVersion()
+  commentId: M:CRMScript.NetServer.NSQuoteContext.GetCRMQuoteVersion()
+  id: 'GetCRMQuoteVersion()'
+  so.intellisense: NSQuoteContext.GetCRMQuoteVersion
+  langs:
+  - crmscript
+  name: 'GetCRMQuoteVersion()'
+  nameWithType: NSQuoteContext.GetCRMQuoteVersion()
+  fullName: CRMScript.NetServer.NSQuoteContext.GetCRMQuoteVersion()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: NSQuoteVersion GetCRMQuoteVersion()
+    parameters: []
+    return:
+      type: CRMScript.NetServer.NSQuoteVersion
+      description: The relevant or current revision of the quote in the CRM system, if applicable.
+  example: 
+  - "\n<pre><code>NSQuoteContext thing;\nNSQuoteVersion cRMQuoteVersion = thing.GetCRMQuoteVersion();</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuoteContext.GetCRMSale()
+  commentId: M:CRMScript.NetServer.NSQuoteContext.GetCRMSale()
+  id: 'GetCRMSale()'
+  so.intellisense: NSQuoteContext.GetCRMSale
+  langs:
+  - crmscript
+  name: 'GetCRMSale()'
+  nameWithType: NSQuoteContext.GetCRMSale()
+  fullName: CRMScript.NetServer.NSQuoteContext.GetCRMSale()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: NSSale GetCRMSale()
+    parameters: []
+    return:
+      type: CRMScript.NetServer.NSSale
+      description: The sale the quote is registered in the CRM system.
+  example: 
+  - "\n<pre><code>NSQuoteContext thing;\nNSSale cRMSale = thing.GetCRMSale();</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuoteContext.GetUserLanguageCode()
+  commentId: M:CRMScript.NetServer.NSQuoteContext.GetUserLanguageCode()
+  id: 'GetUserLanguageCode()'
+  so.intellisense: NSQuoteContext.GetUserLanguageCode
+  langs:
+  - crmscript
+  name: 'GetUserLanguageCode()'
+  nameWithType: NSQuoteContext.GetUserLanguageCode()
+  fullName: CRMScript.NetServer.NSQuoteContext.GetUserLanguageCode()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetUserLanguageCode()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: The iso language code of the language the user is using in the crm system. Use this language when replying, if possible.
+  example: 
+  - "\n<pre><code>NSQuoteContext thing;\nString userLanguageCode = thing.GetUserLanguageCode();</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuoteContext.SetCRMAssociate(NSAssociate)
+  commentId: M:CRMScript.NetServer.NSQuoteContext.SetCRMAssociate(NSAssociate)
+  id: 'SetCRMAssociate(NSAssociate)'
   so.intellisense: NSQuoteContext.SetCRMAssociate
   langs:
   - crmscript
-  name: 'SetCRMAssociate()'
-  nameWithType: NSQuoteContext.SetCRMAssociate()
-  fullName: CRMScript.NetServer.NSQuoteContext.SetCRMAssociate()
+  name: 'SetCRMAssociate(NSAssociate)'
+  nameWithType: NSQuoteContext.SetCRMAssociate(NSAssociate)
+  fullName: CRMScript.NetServer.NSQuoteContext.SetCRMAssociate(NSAssociate)
   type: Method
-  summary: "\nThe associate (salesman) that is logged into the CRM system.\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetCRMAssociate(NSAssociate cRMAssociate)
     parameters:
+    - id: cRMAssociate
+      type: CRMScript.NetServer.NSAssociate
+      description: The associate (salesman) that is logged into the CRM system.
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSQuoteContext thing;\nNSAssociate cRMAssociate;\nthing.SetCRMAssociate(cRMAssociate);</code></pre>\n"
-- uid: CRMScript.NetServer.NSQuoteContext.SetCRMQuoteAlternative()
-  commentId: M:CRMScript.NetServer.NSQuoteContext.SetCRMQuoteAlternative()
-  id: 'SetCRMQuoteAlternative()'
+- uid: CRMScript.NetServer.NSQuoteContext.SetCRMQuoteAlternative(NSQuoteAlternative)
+  commentId: M:CRMScript.NetServer.NSQuoteContext.SetCRMQuoteAlternative(NSQuoteAlternative)
+  id: 'SetCRMQuoteAlternative(NSQuoteAlternative)'
   so.intellisense: NSQuoteContext.SetCRMQuoteAlternative
   langs:
   - crmscript
-  name: 'SetCRMQuoteAlternative()'
-  nameWithType: NSQuoteContext.SetCRMQuoteAlternative()
-  fullName: CRMScript.NetServer.NSQuoteContext.SetCRMQuoteAlternative()
+  name: 'SetCRMQuoteAlternative(NSQuoteAlternative)'
+  nameWithType: NSQuoteContext.SetCRMQuoteAlternative(NSQuoteAlternative)
+  fullName: CRMScript.NetServer.NSQuoteContext.SetCRMQuoteAlternative(NSQuoteAlternative)
   type: Method
-  summary: "\nThe relevant or current alternative of the quote in the CRM system, if applicable.\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetCRMQuoteAlternative(NSQuoteAlternative cRMQuoteAlternative)
     parameters:
+    - id: cRMQuoteAlternative
+      type: CRMScript.NetServer.NSQuoteAlternative
+      description: The relevant or current alternative of the quote in the CRM system, if applicable.
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSQuoteContext thing;\nNSQuoteAlternative cRMQuoteAlternative;\nthing.SetCRMQuoteAlternative(cRMQuoteAlternative);</code></pre>\n"
 - uid: CRMScript.NetServer.NSQuoteContext.SetCRMQuoteLine(NSQuoteLine)
@@ -199,14 +214,14 @@ items:
   nameWithType: NSQuoteContext.SetCRMQuoteLine(NSQuoteLine)
   fullName: CRMScript.NetServer.NSQuoteContext.SetCRMQuoteLine(NSQuoteLine)
   type: Method
-  summary: "\nThe relevant or current quote line of the quote in the CRM system, if applicable.\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetCRMQuoteLine(NSQuoteLine cRMQuoteLine)
     parameters:
     - id: cRMQuoteLine
       type: CRMScript.NetServer.NSQuoteLine
-      description: 
+      description: The relevant or current quote line of the quote in the CRM system, if applicable.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -221,33 +236,38 @@ items:
   nameWithType: NSQuoteContext.SetCRMQuoteVersion(NSQuoteVersion)
   fullName: CRMScript.NetServer.NSQuoteContext.SetCRMQuoteVersion(NSQuoteVersion)
   type: Method
-  summary: "\nThe relevant or current revision of the quote in the CRM system, if applicable.\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetCRMQuoteVersion(NSQuoteVersion cRMQuoteVersion)
     parameters:
     - id: cRMQuoteVersion
       type: CRMScript.NetServer.NSQuoteVersion
-      description: 
+      description: The relevant or current revision of the quote in the CRM system, if applicable.
     return:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSQuoteContext thing;\nNSQuoteVersion cRMQuoteVersion;\nthing.SetCRMQuoteVersion(cRMQuoteVersion);</code></pre>\n"
-- uid: CRMScript.NetServer.NSQuoteContext.SetCRMSale()
-  commentId: M:CRMScript.NetServer.NSQuoteContext.SetCRMSale()
-  id: 'SetCRMSale()'
+- uid: CRMScript.NetServer.NSQuoteContext.SetCRMSale(NSSale)
+  commentId: M:CRMScript.NetServer.NSQuoteContext.SetCRMSale(NSSale)
+  id: 'SetCRMSale(NSSale)'
   so.intellisense: NSQuoteContext.SetCRMSale
   langs:
   - crmscript
-  name: 'SetCRMSale()'
-  nameWithType: NSQuoteContext.SetCRMSale()
-  fullName: CRMScript.NetServer.NSQuoteContext.SetCRMSale()
+  name: 'SetCRMSale(NSSale)'
+  nameWithType: NSQuoteContext.SetCRMSale(NSSale)
+  fullName: CRMScript.NetServer.NSQuoteContext.SetCRMSale(NSSale)
   type: Method
-  summary: "\nThe sale the quote is registered in the CRM system.\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetCRMSale(NSSale cRMSale)
     parameters:
+    - id: cRMSale
+      type: CRMScript.NetServer.NSSale
+      description: The sale the quote is registered in the CRM system.
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSQuoteContext thing;\nNSSale cRMSale;\nthing.SetCRMSale(cRMSale);</code></pre>\n"
 - uid: CRMScript.NetServer.NSQuoteContext.SetUserLanguageCode(String)
@@ -260,14 +280,14 @@ items:
   nameWithType: NSQuoteContext.SetUserLanguageCode(String)
   fullName: CRMScript.NetServer.NSQuoteContext.SetUserLanguageCode(String)
   type: Method
-  summary: "\nThe iso language code of the language the user is using in the crm system. Use this language when replying, if possible.\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetUserLanguageCode(String userLanguageCode)
     parameters:
     - id: userLanguageCode
       type: CRMScript.Global.String
-      description: 
+      description: The iso language code of the language the user is using in the crm system. Use this language when replying, if possible.
     return:
       type: CRMScript.Global.Void
   example: 

@@ -6,12 +6,12 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSQuoteAlternativeRecalculated.#ctor
   - CRMScript.NetServer.NSQuoteAlternativeRecalculated.GetChangedQuoteAlternative()
   - CRMScript.NetServer.NSQuoteAlternativeRecalculated.GetChanges()
   - CRMScript.NetServer.NSQuoteAlternativeRecalculated.GetQuoteLinesHasChanged()
-  - CRMScript.NetServer.NSQuoteAlternativeRecalculated.#ctor
-  - CRMScript.NetServer.NSQuoteAlternativeRecalculated.SetChangedQuoteAlternative()
-  - CRMScript.NetServer.NSQuoteAlternativeRecalculated.SetChanges()
+  - CRMScript.NetServer.NSQuoteAlternativeRecalculated.SetChangedQuoteAlternative(NSQuoteAlternative)
+  - CRMScript.NetServer.NSQuoteAlternativeRecalculated.SetChanges(NSChangedData)
   - CRMScript.NetServer.NSQuoteAlternativeRecalculated.SetQuoteLinesHasChanged(Bool)
   name: NSQuoteAlternativeRecalculated
   nameWithType: NSQuoteAlternativeRecalculated
@@ -19,64 +19,6 @@ items:
   type: Class
   summary: 
   example: 
-- uid: CRMScript.NetServer.NSQuoteAlternativeRecalculated.GetChangedQuoteAlternative()
-  commentId: M:CRMScript.NetServer.NSQuoteAlternativeRecalculated.GetChangedQuoteAlternative()
-  id: 'GetChangedQuoteAlternative()'
-  so.intellisense: NSQuoteAlternativeRecalculated.GetChangedQuoteAlternative
-  langs:
-  - crmscript
-  name: 'GetChangedQuoteAlternative()'
-  nameWithType: NSQuoteAlternativeRecalculated.GetChangedQuoteAlternative()
-  fullName: CRMScript.NetServer.NSQuoteAlternativeRecalculated.GetChangedQuoteAlternative()
-  type: Method
-  summary: "\nThe recalculated NSQuoteAlternative\n"
-  remarks: 
-  syntax: 
-    content: NSQuoteAlternative GetChangedQuoteAlternative()
-    parameters: []
-    return:
-      type: CRMScript.NetServer.NSQuoteAlternative
-  example: 
-  - "\n<pre><code>NSQuoteAlternativeRecalculated thing;\nNSQuoteAlternative changedQuoteAlternative = thing.GetChangedQuoteAlternative();</code></pre>\n"
-- uid: CRMScript.NetServer.NSQuoteAlternativeRecalculated.GetChanges()
-  commentId: M:CRMScript.NetServer.NSQuoteAlternativeRecalculated.GetChanges()
-  id: 'GetChanges()'
-  so.intellisense: NSQuoteAlternativeRecalculated.GetChanges
-  langs:
-  - crmscript
-  name: 'GetChanges()'
-  nameWithType: NSQuoteAlternativeRecalculated.GetChanges()
-  fullName: CRMScript.NetServer.NSQuoteAlternativeRecalculated.GetChanges()
-  type: Method
-  summary: "\nTablename/recordid of data changed by this method\n"
-  remarks: 
-  syntax: 
-    content: NSChangedData GetChanges()
-    parameters: []
-    return:
-      type: CRMScript.NetServer.NSChangedData
-  example: 
-  - "\n<pre><code>NSQuoteAlternativeRecalculated thing;\nNSChangedData changes = thing.GetChanges();</code></pre>\n"
-- uid: CRMScript.NetServer.NSQuoteAlternativeRecalculated.GetQuoteLinesHasChanged()
-  commentId: M:CRMScript.NetServer.NSQuoteAlternativeRecalculated.GetQuoteLinesHasChanged()
-  id: 'GetQuoteLinesHasChanged()'
-  so.intellisense: NSQuoteAlternativeRecalculated.GetQuoteLinesHasChanged
-  langs:
-  - crmscript
-  name: 'GetQuoteLinesHasChanged()'
-  nameWithType: NSQuoteAlternativeRecalculated.GetQuoteLinesHasChanged()
-  fullName: CRMScript.NetServer.NSQuoteAlternativeRecalculated.GetQuoteLinesHasChanged()
-  type: Method
-  summary: "\nIf true any of the quotelines for the alternative has been changed.\n"
-  remarks: 
-  syntax: 
-    content: Bool GetQuoteLinesHasChanged()
-    parameters: []
-    return:
-      type: CRMScript.Global.Bool
-      description:
-  example: 
-  - "\n<pre><code>NSQuoteAlternativeRecalculated thing;\nBool quoteLinesHasChanged = thing.GetQuoteLinesHasChanged();</code></pre>\n"
 - uid: CRMScript.NetServer.NSQuoteAlternativeRecalculated.#ctor
   commentId: M:CRMScript.NetServer.NSQuoteAlternativeRecalculated.#ctor
   id: '#ctor'
@@ -92,38 +34,108 @@ items:
   syntax: 
     content: NSQuoteAlternativeRecalculated
   example: 
-- uid: CRMScript.NetServer.NSQuoteAlternativeRecalculated.SetChangedQuoteAlternative()
-  commentId: M:CRMScript.NetServer.NSQuoteAlternativeRecalculated.SetChangedQuoteAlternative()
-  id: 'SetChangedQuoteAlternative()'
+- uid: CRMScript.NetServer.NSQuoteAlternativeRecalculated.GetChangedQuoteAlternative()
+  commentId: M:CRMScript.NetServer.NSQuoteAlternativeRecalculated.GetChangedQuoteAlternative()
+  id: 'GetChangedQuoteAlternative()'
+  so.intellisense: NSQuoteAlternativeRecalculated.GetChangedQuoteAlternative
+  langs:
+  - crmscript
+  name: 'GetChangedQuoteAlternative()'
+  nameWithType: NSQuoteAlternativeRecalculated.GetChangedQuoteAlternative()
+  fullName: CRMScript.NetServer.NSQuoteAlternativeRecalculated.GetChangedQuoteAlternative()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: NSQuoteAlternative GetChangedQuoteAlternative()
+    parameters: []
+    return:
+      type: CRMScript.NetServer.NSQuoteAlternative
+      description: The recalculated NSQuoteAlternative
+  example: 
+  - "\n<pre><code>NSQuoteAlternativeRecalculated thing;\nNSQuoteAlternative changedQuoteAlternative = thing.GetChangedQuoteAlternative();</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuoteAlternativeRecalculated.GetChanges()
+  commentId: M:CRMScript.NetServer.NSQuoteAlternativeRecalculated.GetChanges()
+  id: 'GetChanges()'
+  so.intellisense: NSQuoteAlternativeRecalculated.GetChanges
+  langs:
+  - crmscript
+  name: 'GetChanges()'
+  nameWithType: NSQuoteAlternativeRecalculated.GetChanges()
+  fullName: CRMScript.NetServer.NSQuoteAlternativeRecalculated.GetChanges()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: NSChangedData GetChanges()
+    parameters: []
+    return:
+      type: CRMScript.NetServer.NSChangedData
+      description: Table name or record ID of data changed by this method
+  example: 
+  - "\n<pre><code>NSQuoteAlternativeRecalculated thing;\nNSChangedData changes = thing.GetChanges();</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuoteAlternativeRecalculated.GetQuoteLinesHasChanged()
+  commentId: M:CRMScript.NetServer.NSQuoteAlternativeRecalculated.GetQuoteLinesHasChanged()
+  id: 'GetQuoteLinesHasChanged()'
+  so.intellisense: NSQuoteAlternativeRecalculated.GetQuoteLinesHasChanged
+  langs:
+  - crmscript
+  name: 'GetQuoteLinesHasChanged()'
+  nameWithType: NSQuoteAlternativeRecalculated.GetQuoteLinesHasChanged()
+  fullName: CRMScript.NetServer.NSQuoteAlternativeRecalculated.GetQuoteLinesHasChanged()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Bool GetQuoteLinesHasChanged()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: If true any of the quote lines for the alternative has been changed.
+  example: 
+  - "\n<pre><code>NSQuoteAlternativeRecalculated thing;\nBool quoteLinesHasChanged = thing.GetQuoteLinesHasChanged();</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuoteAlternativeRecalculated.SetChangedQuoteAlternative(NSQuoteAlternative)
+  commentId: M:CRMScript.NetServer.NSQuoteAlternativeRecalculated.SetChangedQuoteAlternative(NSQuoteAlternative)
+  id: 'SetChangedQuoteAlternative(NSQuoteAlternative)'
   so.intellisense: NSQuoteAlternativeRecalculated.SetChangedQuoteAlternative
   langs:
   - crmscript
-  name: 'SetChangedQuoteAlternative()'
-  nameWithType: NSQuoteAlternativeRecalculated.SetChangedQuoteAlternative()
-  fullName: CRMScript.NetServer.NSQuoteAlternativeRecalculated.SetChangedQuoteAlternative()
+  name: 'SetChangedQuoteAlternative(NSQuoteAlternative)'
+  nameWithType: NSQuoteAlternativeRecalculated.SetChangedQuoteAlternative(NSQuoteAlternative)
+  fullName: CRMScript.NetServer.NSQuoteAlternativeRecalculated.SetChangedQuoteAlternative(NSQuoteAlternative)
   type: Method
-  summary: "\nThe recalculated NSQuoteAlternative\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetChangedQuoteAlternative(NSQuoteAlternative changedQuoteAlternative)
     parameters:
+    - id: changedQuoteAlternative
+      type: CRMScript.NetServer.NSQuoteAlternative
+      description: The recalculated NSQuoteAlternative
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSQuoteAlternativeRecalculated thing;\nNSQuoteAlternative changedQuoteAlternative;\nthing.SetChangedQuoteAlternative(changedQuoteAlternative);</code></pre>\n"
-- uid: CRMScript.NetServer.NSQuoteAlternativeRecalculated.SetChanges()
-  commentId: M:CRMScript.NetServer.NSQuoteAlternativeRecalculated.SetChanges()
-  id: 'SetChanges()'
+- uid: CRMScript.NetServer.NSQuoteAlternativeRecalculated.SetChanges(NSChangedData)
+  commentId: M:CRMScript.NetServer.NSQuoteAlternativeRecalculated.SetChanges(NSChangedData)
+  id: 'SetChanges(NSChangedData)'
   so.intellisense: NSQuoteAlternativeRecalculated.SetChanges
   langs:
   - crmscript
-  name: 'SetChanges()'
-  nameWithType: NSQuoteAlternativeRecalculated.SetChanges()
-  fullName: CRMScript.NetServer.NSQuoteAlternativeRecalculated.SetChanges()
+  name: 'SetChanges(NSChangedData)'
+  nameWithType: NSQuoteAlternativeRecalculated.SetChanges(NSChangedData)
+  fullName: CRMScript.NetServer.NSQuoteAlternativeRecalculated.SetChanges(NSChangedData)
   type: Method
-  summary: "\nTablename/recordid of data changed by this method\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetChanges(NSChangedData changes)
     parameters:
+    - id: changes
+      type: CRMScript.NetServer.NSChangedData
+      description: Table name or record ID of data changed by this method
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSQuoteAlternativeRecalculated thing;\nNSChangedData changes;\nthing.SetChanges(changes);</code></pre>\n"
 - uid: CRMScript.NetServer.NSQuoteAlternativeRecalculated.SetQuoteLinesHasChanged(Bool)
@@ -136,14 +148,14 @@ items:
   nameWithType: NSQuoteAlternativeRecalculated.SetQuoteLinesHasChanged(Bool)
   fullName: CRMScript.NetServer.NSQuoteAlternativeRecalculated.SetQuoteLinesHasChanged(Bool)
   type: Method
-  summary: "\nIf true any of the quotelines for the alternative has been changed.\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetQuoteLinesHasChanged(Bool quoteLinesHasChanged)
     parameters:
     - id: quoteLinesHasChanged
       type: CRMScript.Global.Bool
-      description: 
+      description:  If true any of the quote lines for the alternative has been changed.
     return:
       type: CRMScript.Global.Void
   example: 

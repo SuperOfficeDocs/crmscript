@@ -6,6 +6,7 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSQuotePublishDocuments.#ctor
   - CRMScript.NetServer.NSQuotePublishDocuments.GetErrorMessage()
   - CRMScript.NetServer.NSQuotePublishDocuments.GetMailBody()
   - CRMScript.NetServer.NSQuotePublishDocuments.GetMailSubject()
@@ -14,7 +15,6 @@ items:
   - CRMScript.NetServer.NSQuotePublishDocuments.GetQuotedProductsId()
   - CRMScript.NetServer.NSQuotePublishDocuments.GetToEmail()
   - CRMScript.NetServer.NSQuotePublishDocuments.GetToFullName()
-  - CRMScript.NetServer.NSQuotePublishDocuments.#ctor
   - CRMScript.NetServer.NSQuotePublishDocuments.SetErrorMessage(String)
   - CRMScript.NetServer.NSQuotePublishDocuments.SetMailBody(String)
   - CRMScript.NetServer.NSQuotePublishDocuments.SetMailSubject(String)
@@ -29,166 +29,6 @@ items:
   type: Class
   summary: 
   example: 
-- uid: CRMScript.NetServer.NSQuotePublishDocuments.GetErrorMessage()
-  commentId: M:CRMScript.NetServer.NSQuotePublishDocuments.GetErrorMessage()
-  id: 'GetErrorMessage()'
-  so.intellisense: NSQuotePublishDocuments.GetErrorMessage
-  langs:
-  - crmscript
-  name: 'GetErrorMessage()'
-  nameWithType: NSQuotePublishDocuments.GetErrorMessage()
-  fullName: CRMScript.NetServer.NSQuotePublishDocuments.GetErrorMessage()
-  type: Method
-  summary: "\nIf something went wrong, show this message and do not continue\n"
-  remarks: 
-  syntax: 
-    content: String GetErrorMessage()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSQuotePublishDocuments thing;\nString errorMessage = thing.GetErrorMessage();</code></pre>\n"
-- uid: CRMScript.NetServer.NSQuotePublishDocuments.GetMailBody()
-  commentId: M:CRMScript.NetServer.NSQuotePublishDocuments.GetMailBody()
-  id: 'GetMailBody()'
-  so.intellisense: NSQuotePublishDocuments.GetMailBody
-  langs:
-  - crmscript
-  name: 'GetMailBody()'
-  nameWithType: NSQuotePublishDocuments.GetMailBody()
-  fullName: CRMScript.NetServer.NSQuotePublishDocuments.GetMailBody()
-  type: Method
-  summary: "\nThe string that is the content of the mail body; this is the result of merging the mail body template with the current template variable values\n"
-  remarks: 
-  syntax: 
-    content: String GetMailBody()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSQuotePublishDocuments thing;\nString mailBody = thing.GetMailBody();</code></pre>\n"
-- uid: CRMScript.NetServer.NSQuotePublishDocuments.GetMailSubject()
-  commentId: M:CRMScript.NetServer.NSQuotePublishDocuments.GetMailSubject()
-  id: 'GetMailSubject()'
-  so.intellisense: NSQuotePublishDocuments.GetMailSubject
-  langs:
-  - crmscript
-  name: 'GetMailSubject()'
-  nameWithType: NSQuotePublishDocuments.GetMailSubject()
-  fullName: CRMScript.NetServer.NSQuotePublishDocuments.GetMailSubject()
-  type: Method
-  summary: "\nThe string that is the mail subject; done by merging the text resource SR_QUOTE_PUBLISH_MAILHEADING with the current template variable values\n"
-  remarks: 
-  syntax: 
-    content: String GetMailSubject()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSQuotePublishDocuments thing;\nString mailSubject = thing.GetMailSubject();</code></pre>\n"
-- uid: CRMScript.NetServer.NSQuotePublishDocuments.GetQuoteAttachmentIds()
-  commentId: M:CRMScript.NetServer.NSQuotePublishDocuments.GetQuoteAttachmentIds()
-  id: 'GetQuoteAttachmentIds()'
-  so.intellisense: NSQuotePublishDocuments.GetQuoteAttachmentIds
-  langs:
-  - crmscript
-  name: 'GetQuoteAttachmentIds()'
-  nameWithType: NSQuotePublishDocuments.GetQuoteAttachmentIds()
-  fullName: CRMScript.NetServer.NSQuotePublishDocuments.GetQuoteAttachmentIds()
-  type: Method
-  summary: "\nArray of id's of any attachments (standard + custom for this version)\n"
-  remarks: 
-  syntax: 
-    content: Integer[] GetQuoteAttachmentIds()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer[]
-      description:
-  example: 
-  - "\n<pre><code>NSQuotePublishDocuments thing;\nInteger[] quoteAttachmentIds = thing.GetQuoteAttachmentIds();</code></pre>\n"
-- uid: CRMScript.NetServer.NSQuotePublishDocuments.GetQuoteDocumentId()
-  commentId: M:CRMScript.NetServer.NSQuotePublishDocuments.GetQuoteDocumentId()
-  id: 'GetQuoteDocumentId()'
-  so.intellisense: NSQuotePublishDocuments.GetQuoteDocumentId
-  langs:
-  - crmscript
-  name: 'GetQuoteDocumentId()'
-  nameWithType: NSQuotePublishDocuments.GetQuoteDocumentId()
-  fullName: CRMScript.NetServer.NSQuotePublishDocuments.GetQuoteDocumentId()
-  type: Method
-  summary: "\nQuote document, as PDF; may be zero if there is no document specified for the version\n"
-  remarks: 
-  syntax: 
-    content: Integer GetQuoteDocumentId()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSQuotePublishDocuments thing;\nInteger quoteDocumentId = thing.GetQuoteDocumentId();</code></pre>\n"
-- uid: CRMScript.NetServer.NSQuotePublishDocuments.GetQuotedProductsId()
-  commentId: M:CRMScript.NetServer.NSQuotePublishDocuments.GetQuotedProductsId()
-  id: 'GetQuotedProductsId()'
-  so.intellisense: NSQuotePublishDocuments.GetQuotedProductsId
-  langs:
-  - crmscript
-  name: 'GetQuotedProductsId()'
-  nameWithType: NSQuotePublishDocuments.GetQuotedProductsId()
-  fullName: CRMScript.NetServer.NSQuotePublishDocuments.GetQuotedProductsId()
-  type: Method
-  summary: "\nQuoted products (quote lines or confirmation lines) document, as PDF\n"
-  remarks: 
-  syntax: 
-    content: Integer GetQuotedProductsId()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSQuotePublishDocuments thing;\nInteger quotedProductsId = thing.GetQuotedProductsId();</code></pre>\n"
-- uid: CRMScript.NetServer.NSQuotePublishDocuments.GetToEmail()
-  commentId: M:CRMScript.NetServer.NSQuotePublishDocuments.GetToEmail()
-  id: 'GetToEmail()'
-  so.intellisense: NSQuotePublishDocuments.GetToEmail
-  langs:
-  - crmscript
-  name: 'GetToEmail()'
-  nameWithType: NSQuotePublishDocuments.GetToEmail()
-  fullName: CRMScript.NetServer.NSQuotePublishDocuments.GetToEmail()
-  type: Method
-  summary: "\nThe email address of the recipient, taken from the sale's person\n"
-  remarks: 
-  syntax: 
-    content: String GetToEmail()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSQuotePublishDocuments thing;\nString toEmail = thing.GetToEmail();</code></pre>\n"
-- uid: CRMScript.NetServer.NSQuotePublishDocuments.GetToFullName()
-  commentId: M:CRMScript.NetServer.NSQuotePublishDocuments.GetToFullName()
-  id: 'GetToFullName()'
-  so.intellisense: NSQuotePublishDocuments.GetToFullName
-  langs:
-  - crmscript
-  name: 'GetToFullName()'
-  nameWithType: NSQuotePublishDocuments.GetToFullName()
-  fullName: CRMScript.NetServer.NSQuotePublishDocuments.GetToFullName()
-  type: Method
-  summary: "\nThe full name of the recipient, taken from the sale's person\n"
-  remarks: 
-  syntax: 
-    content: String GetToFullName()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSQuotePublishDocuments thing;\nString toFullName = thing.GetToFullName();</code></pre>\n"
 - uid: CRMScript.NetServer.NSQuotePublishDocuments.#ctor
   commentId: M:CRMScript.NetServer.NSQuotePublishDocuments.#ctor
   id: '#ctor'
@@ -204,6 +44,166 @@ items:
   syntax: 
     content: NSQuotePublishDocuments
   example: 
+- uid: CRMScript.NetServer.NSQuotePublishDocuments.GetErrorMessage()
+  commentId: M:CRMScript.NetServer.NSQuotePublishDocuments.GetErrorMessage()
+  id: 'GetErrorMessage()'
+  so.intellisense: NSQuotePublishDocuments.GetErrorMessage
+  langs:
+  - crmscript
+  name: 'GetErrorMessage()'
+  nameWithType: NSQuotePublishDocuments.GetErrorMessage()
+  fullName: CRMScript.NetServer.NSQuotePublishDocuments.GetErrorMessage()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetErrorMessage()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: If something went wrong, show this message and do not continue
+  example: 
+  - "\n<pre><code>NSQuotePublishDocuments thing;\nString errorMessage = thing.GetErrorMessage();</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuotePublishDocuments.GetMailBody()
+  commentId: M:CRMScript.NetServer.NSQuotePublishDocuments.GetMailBody()
+  id: 'GetMailBody()'
+  so.intellisense: NSQuotePublishDocuments.GetMailBody
+  langs:
+  - crmscript
+  name: 'GetMailBody()'
+  nameWithType: NSQuotePublishDocuments.GetMailBody()
+  fullName: CRMScript.NetServer.NSQuotePublishDocuments.GetMailBody()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetMailBody()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: The string that is the content of the mail body; this is the result of merging the mail body template with the current template variable values
+  example: 
+  - "\n<pre><code>NSQuotePublishDocuments thing;\nString mailBody = thing.GetMailBody();</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuotePublishDocuments.GetMailSubject()
+  commentId: M:CRMScript.NetServer.NSQuotePublishDocuments.GetMailSubject()
+  id: 'GetMailSubject()'
+  so.intellisense: NSQuotePublishDocuments.GetMailSubject
+  langs:
+  - crmscript
+  name: 'GetMailSubject()'
+  nameWithType: NSQuotePublishDocuments.GetMailSubject()
+  fullName: CRMScript.NetServer.NSQuotePublishDocuments.GetMailSubject()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetMailSubject()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: The string that is the mail subject; done by merging the text resource SR_QUOTE_PUBLISH_MAILHEADING with the current template variable values
+  example: 
+  - "\n<pre><code>NSQuotePublishDocuments thing;\nString mailSubject = thing.GetMailSubject();</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuotePublishDocuments.GetQuoteAttachmentIds()
+  commentId: M:CRMScript.NetServer.NSQuotePublishDocuments.GetQuoteAttachmentIds()
+  id: 'GetQuoteAttachmentIds()'
+  so.intellisense: NSQuotePublishDocuments.GetQuoteAttachmentIds
+  langs:
+  - crmscript
+  name: 'GetQuoteAttachmentIds()'
+  nameWithType: NSQuotePublishDocuments.GetQuoteAttachmentIds()
+  fullName: CRMScript.NetServer.NSQuotePublishDocuments.GetQuoteAttachmentIds()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Integer[] GetQuoteAttachmentIds()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer[]
+      description: Array of IDs of any attachments (standard + custom for this version)
+  example: 
+  - "\n<pre><code>NSQuotePublishDocuments thing;\nInteger[] quoteAttachmentIds = thing.GetQuoteAttachmentIds();</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuotePublishDocuments.GetQuoteDocumentId()
+  commentId: M:CRMScript.NetServer.NSQuotePublishDocuments.GetQuoteDocumentId()
+  id: 'GetQuoteDocumentId()'
+  so.intellisense: NSQuotePublishDocuments.GetQuoteDocumentId
+  langs:
+  - crmscript
+  name: 'GetQuoteDocumentId()'
+  nameWithType: NSQuotePublishDocuments.GetQuoteDocumentId()
+  fullName: CRMScript.NetServer.NSQuotePublishDocuments.GetQuoteDocumentId()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Integer GetQuoteDocumentId()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: Quote document, as PDF; may be zero if there is no document specified for the version
+  example: 
+  - "\n<pre><code>NSQuotePublishDocuments thing;\nInteger quoteDocumentId = thing.GetQuoteDocumentId();</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuotePublishDocuments.GetQuotedProductsId()
+  commentId: M:CRMScript.NetServer.NSQuotePublishDocuments.GetQuotedProductsId()
+  id: 'GetQuotedProductsId()'
+  so.intellisense: NSQuotePublishDocuments.GetQuotedProductsId
+  langs:
+  - crmscript
+  name: 'GetQuotedProductsId()'
+  nameWithType: NSQuotePublishDocuments.GetQuotedProductsId()
+  fullName: CRMScript.NetServer.NSQuotePublishDocuments.GetQuotedProductsId()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Integer GetQuotedProductsId()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: Quoted products (quote lines or confirmation lines) document, as PDF
+  example: 
+  - "\n<pre><code>NSQuotePublishDocuments thing;\nInteger quotedProductsId = thing.GetQuotedProductsId();</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuotePublishDocuments.GetToEmail()
+  commentId: M:CRMScript.NetServer.NSQuotePublishDocuments.GetToEmail()
+  id: 'GetToEmail()'
+  so.intellisense: NSQuotePublishDocuments.GetToEmail
+  langs:
+  - crmscript
+  name: 'GetToEmail()'
+  nameWithType: NSQuotePublishDocuments.GetToEmail()
+  fullName: CRMScript.NetServer.NSQuotePublishDocuments.GetToEmail()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetToEmail()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: The email address of the recipient, taken from the sale's person
+  example: 
+  - "\n<pre><code>NSQuotePublishDocuments thing;\nString toEmail = thing.GetToEmail();</code></pre>\n"
+- uid: CRMScript.NetServer.NSQuotePublishDocuments.GetToFullName()
+  commentId: M:CRMScript.NetServer.NSQuotePublishDocuments.GetToFullName()
+  id: 'GetToFullName()'
+  so.intellisense: NSQuotePublishDocuments.GetToFullName
+  langs:
+  - crmscript
+  name: 'GetToFullName()'
+  nameWithType: NSQuotePublishDocuments.GetToFullName()
+  fullName: CRMScript.NetServer.NSQuotePublishDocuments.GetToFullName()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetToFullName()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: The full name of the recipient, taken from the sale's person
+  example: 
+  - "\n<pre><code>NSQuotePublishDocuments thing;\nString toFullName = thing.GetToFullName();</code></pre>\n"
 - uid: CRMScript.NetServer.NSQuotePublishDocuments.SetErrorMessage(String)
   commentId: M:CRMScript.NetServer.NSQuotePublishDocuments.SetErrorMessage(String)
   id: 'SetErrorMessage(String)'
@@ -214,14 +214,14 @@ items:
   nameWithType: NSQuotePublishDocuments.SetErrorMessage(String)
   fullName: CRMScript.NetServer.NSQuotePublishDocuments.SetErrorMessage(String)
   type: Method
-  summary: "\nIf something went wrong, show this message and do not continue\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetErrorMessage(String errorMessage)
     parameters:
     - id: errorMessage
       type: CRMScript.Global.String
-      description: 
+      description:  If something went wrong, show this message and do not continue
     return:
       type: CRMScript.Global.Void
   example: 
@@ -236,14 +236,14 @@ items:
   nameWithType: NSQuotePublishDocuments.SetMailBody(String)
   fullName: CRMScript.NetServer.NSQuotePublishDocuments.SetMailBody(String)
   type: Method
-  summary: "\nThe string that is the content of the mail body; this is the result of merging the mail body template with the current template variable values\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetMailBody(String mailBody)
     parameters:
     - id: mailBody
       type: CRMScript.Global.String
-      description: 
+      description: The string that is the content of the mail body; this is the result of merging the mail body template with the current template variable values
     return:
       type: CRMScript.Global.Void
   example: 
@@ -258,14 +258,14 @@ items:
   nameWithType: NSQuotePublishDocuments.SetMailSubject(String)
   fullName: CRMScript.NetServer.NSQuotePublishDocuments.SetMailSubject(String)
   type: Method
-  summary: "\nThe string that is the mail subject; done by merging the text resource SR_QUOTE_PUBLISH_MAILHEADING with the current template variable values\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetMailSubject(String mailSubject)
     parameters:
     - id: mailSubject
       type: CRMScript.Global.String
-      description: 
+      description: The string that is the mail subject; done by merging the text resource SR_QUOTE_PUBLISH_MAILHEADING with the current template variable values
     return:
       type: CRMScript.Global.Void
   example: 
@@ -280,14 +280,14 @@ items:
   nameWithType: NSQuotePublishDocuments.SetQuoteAttachmentIds(Integer[])
   fullName: CRMScript.NetServer.NSQuotePublishDocuments.SetQuoteAttachmentIds(Integer[])
   type: Method
-  summary: "\nArray of id's of any attachments (standard + custom for this version)\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetQuoteAttachmentIds(Integer[] quoteAttachmentIds)
     parameters:
     - id: quoteAttachmentIds
       type: CRMScript.Global.Integer[]
-      description: 
+      description: Array of IDs of any attachments (standard + custom for this version)
     return:
       type: CRMScript.Global.Void
   example: 
@@ -302,14 +302,14 @@ items:
   nameWithType: NSQuotePublishDocuments.SetQuoteDocumentId(Integer)
   fullName: CRMScript.NetServer.NSQuotePublishDocuments.SetQuoteDocumentId(Integer)
   type: Method
-  summary: "\nQuote document, as PDF; may be zero if there is no document specified for the version\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetQuoteDocumentId(Integer quoteDocumentId)
     parameters:
     - id: quoteDocumentId
       type: CRMScript.Global.Integer
-      description: 
+      description: Quote document, as PDF; may be zero if there is no document specified for the version
     return:
       type: CRMScript.Global.Void
   example: 
@@ -324,14 +324,14 @@ items:
   nameWithType: NSQuotePublishDocuments.SetQuotedProductsId(Integer)
   fullName: CRMScript.NetServer.NSQuotePublishDocuments.SetQuotedProductsId(Integer)
   type: Method
-  summary: "\nQuoted products (quote lines or confirmation lines) document, as PDF\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetQuotedProductsId(Integer quotedProductsId)
     parameters:
     - id: quotedProductsId
       type: CRMScript.Global.Integer
-      description: 
+      description: Quoted products (quote lines or confirmation lines) document, as PDF
     return:
       type: CRMScript.Global.Void
   example: 
@@ -346,14 +346,14 @@ items:
   nameWithType: NSQuotePublishDocuments.SetToEmail(String)
   fullName: CRMScript.NetServer.NSQuotePublishDocuments.SetToEmail(String)
   type: Method
-  summary: "\nThe email address of the recipient, taken from the sale's person\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetToEmail(String toEmail)
     parameters:
     - id: toEmail
       type: CRMScript.Global.String
-      description: 
+      description: The email address of the recipient, taken from the sale's person
     return:
       type: CRMScript.Global.Void
   example: 
@@ -368,14 +368,14 @@ items:
   nameWithType: NSQuotePublishDocuments.SetToFullName(String)
   fullName: CRMScript.NetServer.NSQuotePublishDocuments.SetToFullName(String)
   type: Method
-  summary: "\nThe full name of the recipient, taken from the sale's person\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetToFullName(String toFullName)
     parameters:
     - id: toFullName
       type: CRMScript.Global.String
-      description: 
+      description: The full name of the recipient, taken from the sale's person
     return:
       type: CRMScript.Global.Void
   example: 

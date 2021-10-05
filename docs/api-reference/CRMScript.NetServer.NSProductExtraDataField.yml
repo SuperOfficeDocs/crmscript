@@ -6,10 +6,10 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSProductExtraDataField.#ctor
   - CRMScript.NetServer.NSProductExtraDataField.GetName()
   - CRMScript.NetServer.NSProductExtraDataField.GetType()
   - CRMScript.NetServer.NSProductExtraDataField.GetValue()
-  - CRMScript.NetServer.NSProductExtraDataField.#ctor
   - CRMScript.NetServer.NSProductExtraDataField.SetName(String)
   - CRMScript.NetServer.NSProductExtraDataField.SetType(Integer)
   - CRMScript.NetServer.NSProductExtraDataField.SetValue(String)
@@ -19,66 +19,6 @@ items:
   type: Class
   summary: 
   example: 
-- uid: CRMScript.NetServer.NSProductExtraDataField.GetName()
-  commentId: M:CRMScript.NetServer.NSProductExtraDataField.GetName()
-  id: 'GetName()'
-  so.intellisense: NSProductExtraDataField.GetName
-  langs:
-  - crmscript
-  name: 'GetName()'
-  nameWithType: NSProductExtraDataField.GetName()
-  fullName: CRMScript.NetServer.NSProductExtraDataField.GetName()
-  type: Method
-  summary: "\nLabel for the field\n"
-  remarks: 
-  syntax: 
-    content: String GetName()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSProductExtraDataField thing;\nString name = thing.GetName();</code></pre>\n"
-- uid: CRMScript.NetServer.NSProductExtraDataField.GetType()
-  commentId: M:CRMScript.NetServer.NSProductExtraDataField.GetType()
-  id: 'GetType()'
-  so.intellisense: NSProductExtraDataField.GetType
-  langs:
-  - crmscript
-  name: 'GetType()'
-  nameWithType: NSProductExtraDataField.GetType()
-  fullName: CRMScript.NetServer.NSProductExtraDataField.GetType()
-  type: Method
-  summary: "\nString, url, image. How the value should be interpreted.<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<ul><li>Enum: 0 = String</li><li>Enum: 1 = Url</li><li>Enum: 2 = Image</li></ul><pre><code>NSProductExtraDataField thing;\nInteger type = thing.GetType();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: Integer GetType()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSProductExtraDataField thing;\nInteger type = thing.GetType();</code></pre>\n"
-- uid: CRMScript.NetServer.NSProductExtraDataField.GetValue()
-  commentId: M:CRMScript.NetServer.NSProductExtraDataField.GetValue()
-  id: 'GetValue()'
-  so.intellisense: NSProductExtraDataField.GetValue
-  langs:
-  - crmscript
-  name: 'GetValue()'
-  nameWithType: NSProductExtraDataField.GetValue()
-  fullName: CRMScript.NetServer.NSProductExtraDataField.GetValue()
-  type: Method
-  summary: "\nValue for the field. If type is string, it can contain formatspecifiers (use this for displaying numbers correctly as the user's computer is set up).\n"
-  remarks: 
-  syntax: 
-    content: String GetValue()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSProductExtraDataField thing;\nString value = thing.GetValue();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProductExtraDataField.#ctor
   commentId: M:CRMScript.NetServer.NSProductExtraDataField.#ctor
   id: '#ctor'
@@ -94,6 +34,66 @@ items:
   syntax: 
     content: NSProductExtraDataField
   example: 
+- uid: CRMScript.NetServer.NSProductExtraDataField.GetName()
+  commentId: M:CRMScript.NetServer.NSProductExtraDataField.GetName()
+  id: 'GetName()'
+  so.intellisense: NSProductExtraDataField.GetName
+  langs:
+  - crmscript
+  name: 'GetName()'
+  nameWithType: NSProductExtraDataField.GetName()
+  fullName: CRMScript.NetServer.NSProductExtraDataField.GetName()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetName()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Label for the field
+  example: 
+  - "\n<pre><code>NSProductExtraDataField thing;\nString name = thing.GetName();</code></pre>\n"
+- uid: CRMScript.NetServer.NSProductExtraDataField.GetType()
+  commentId: M:CRMScript.NetServer.NSProductExtraDataField.GetType()
+  id: 'GetType()'
+  so.intellisense: NSProductExtraDataField.GetType
+  langs:
+  - crmscript
+  name: 'GetType()'
+  nameWithType: NSProductExtraDataField.GetType()
+  fullName: CRMScript.NetServer.NSProductExtraDataField.GetType()
+  type: Method
+  summary: "\n<ul><li>Enum: 0 = String</li><li>Enum: 1 = Url</li><li>Enum: 2 = Image</li></ul>\n"
+  remarks: 
+  syntax: 
+    content: Integer GetType()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: String, url, image. How the value should be interpreted.
+  example: 
+  - "\n<pre><code>NSProductExtraDataField thing;\nInteger type = thing.GetType();</code></pre>\n"
+- uid: CRMScript.NetServer.NSProductExtraDataField.GetValue()
+  commentId: M:CRMScript.NetServer.NSProductExtraDataField.GetValue()
+  id: 'GetValue()'
+  so.intellisense: NSProductExtraDataField.GetValue
+  langs:
+  - crmscript
+  name: 'GetValue()'
+  nameWithType: NSProductExtraDataField.GetValue()
+  fullName: CRMScript.NetServer.NSProductExtraDataField.GetValue()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetValue()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Value for the field. If type is string, it can contain format specifiers (use this for displaying numbers correctly as the user's computer is set up).
+  example: 
+  - "\n<pre><code>NSProductExtraDataField thing;\nString value = thing.GetValue();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProductExtraDataField.SetName(String)
   commentId: M:CRMScript.NetServer.NSProductExtraDataField.SetName(String)
   id: 'SetName(String)'
@@ -104,14 +104,14 @@ items:
   nameWithType: NSProductExtraDataField.SetName(String)
   fullName: CRMScript.NetServer.NSProductExtraDataField.SetName(String)
   type: Method
-  summary: "\nLabel for the field\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetName(String name)
     parameters:
     - id: name
       type: CRMScript.Global.String
-      description: 
+      description: Label for the field
     return:
       type: CRMScript.Global.Void
   example: 
@@ -126,14 +126,14 @@ items:
   nameWithType: NSProductExtraDataField.SetType(Integer)
   fullName: CRMScript.NetServer.NSProductExtraDataField.SetType(Integer)
   type: Method
-  summary: "\nString, url, image. How the value should be interpreted.\n"
-  remarks: "\n<p>See enum type.</p>\n"
+  summary: ""
+  remarks: ""
   syntax: 
     content: Void SetType(Integer type)
     parameters:
     - id: type
       type: CRMScript.Global.Integer
-      description: 
+      description: String, url, image. How the value should be interpreted. See enum type.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -148,14 +148,14 @@ items:
   nameWithType: NSProductExtraDataField.SetValue(String)
   fullName: CRMScript.NetServer.NSProductExtraDataField.SetValue(String)
   type: Method
-  summary: "\nValue for the field. If type is string, it can contain formatspecifiers (use this for displaying numbers correctly as the user's computer is set up).\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetValue(String value)
     parameters:
     - id: value
       type: CRMScript.Global.String
-      description: 
+      description: Value for the field. If type is string, it can contain format specifiers (use this for displaying numbers correctly as the user's computer is set up).
     return:
       type: CRMScript.Global.Void
   example: 

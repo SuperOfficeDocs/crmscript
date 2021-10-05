@@ -6,6 +6,7 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSProject.#ctor
   - CRMScript.NetServer.NSProject.GetActiveErpLinks()
   - CRMScript.NetServer.NSProject.GetAssociateFullName()
   - CRMScript.NetServer.NSProject.GetAssociateId()
@@ -24,7 +25,6 @@ items:
   - CRMScript.NetServer.NSProject.GetUpdated()
   - CRMScript.NetServer.NSProject.GetURL()
   - CRMScript.NetServer.NSProject.GetURLName()
-  - CRMScript.NetServer.NSProject.#ctor
   - CRMScript.NetServer.NSProject.SetActiveErpLinks(Integer)
   - CRMScript.NetServer.NSProject.SetAssociateFullName(String)
   - CRMScript.NetServer.NSProject.SetAssociateId(Integer)
@@ -33,14 +33,14 @@ items:
   - CRMScript.NetServer.NSProject.SetName(String)
   - CRMScript.NetServer.NSProject.SetProjectId(Integer)
   - CRMScript.NetServer.NSProject.SetProjectNumber(String)
-  - CRMScript.NetServer.NSProject.SetPublishFrom()
-  - CRMScript.NetServer.NSProject.SetPublishTo()
+  - CRMScript.NetServer.NSProject.SetPublishFrom(DateTime)
+  - CRMScript.NetServer.NSProject.SetPublishTo(DateTime)
   - CRMScript.NetServer.NSProject.SetStatus(String)
   - CRMScript.NetServer.NSProject.SetStatusId(Integer)
   - CRMScript.NetServer.NSProject.SetTextId(Integer)
   - CRMScript.NetServer.NSProject.SetType(String)
   - CRMScript.NetServer.NSProject.SetTypeId(Integer)
-  - CRMScript.NetServer.NSProject.SetUpdated()
+  - CRMScript.NetServer.NSProject.SetUpdated(DateTime)
   - CRMScript.NetServer.NSProject.SetURL(String)
   - CRMScript.NetServer.NSProject.SetURLName(String)
   name: NSProject
@@ -48,6 +48,21 @@ items:
   fullName: CRMScript.NetServer.NSProject
   type: Class
   summary: 
+  example: 
+- uid: CRMScript.NetServer.NSProject.#ctor
+  commentId: M:CRMScript.NetServer.NSProject.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSProject
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSProject.#ctor
+  fullName: CRMScript.NetServer.NSProject.#ctor
+  type: Constructor
+  summary: 
+  remarks: 
+  syntax: 
+    content: NSProject
   example: 
 - uid: CRMScript.NetServer.NSProject.GetActiveErpLinks()
   commentId: M:CRMScript.NetServer.NSProject.GetActiveErpLinks()
@@ -59,14 +74,14 @@ items:
   nameWithType: NSProject.GetActiveErpLinks()
   fullName: CRMScript.NetServer.NSProject.GetActiveErpLinks()
   type: Method
-  summary: "\nThe number of active erp links\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Integer GetActiveErpLinks()
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description:
+      description: The number of active ERP links
   example: 
   - "\n<pre><code>NSProject thing;\nInteger activeErpLinks = thing.GetActiveErpLinks();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProject.GetAssociateFullName()
@@ -79,14 +94,14 @@ items:
   nameWithType: NSProject.GetAssociateFullName()
   fullName: CRMScript.NetServer.NSProject.GetAssociateFullName()
   type: Method
-  summary: "\nThe project owner\n"
+  summary: ""
   remarks: 
   syntax: 
     content: String GetAssociateFullName()
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: The project owner
   example: 
   - "\n<pre><code>NSProject thing;\nString associateFullName = thing.GetAssociateFullName();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProject.GetAssociateId()
@@ -99,14 +114,14 @@ items:
   nameWithType: NSProject.GetAssociateId()
   fullName: CRMScript.NetServer.NSProject.GetAssociateId()
   type: Method
-  summary: "\nThe project owner id (associate id)\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Integer GetAssociateId()
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description:
+      description: The project owner ID (associate ID)
   example: 
   - "\n<pre><code>NSProject thing;\nInteger associateId = thing.GetAssociateId();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProject.GetDescription()
@@ -119,14 +134,14 @@ items:
   nameWithType: NSProject.GetDescription()
   fullName: CRMScript.NetServer.NSProject.GetDescription()
   type: Method
-  summary: "\nThe projects description\n"
+  summary: ""
   remarks: 
   syntax: 
     content: String GetDescription()
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: The projects description
   example: 
   - "\n<pre><code>NSProject thing;\nString description = thing.GetDescription();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProject.GetIsPublished()
@@ -159,14 +174,14 @@ items:
   nameWithType: NSProject.GetName()
   fullName: CRMScript.NetServer.NSProject.GetName()
   type: Method
-  summary: "\nProject name\n"
+  summary: ""
   remarks: 
   syntax: 
     content: String GetName()
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: Project name
   example: 
   - "\n<pre><code>NSProject thing;\nString name = thing.GetName();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProject.GetProjectId()
@@ -179,14 +194,14 @@ items:
   nameWithType: NSProject.GetProjectId()
   fullName: CRMScript.NetServer.NSProject.GetProjectId()
   type: Method
-  summary: "\nPrimary key\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Integer GetProjectId()
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description:
+      description: Primary key
   example: 
   - "\n<pre><code>NSProject thing;\nInteger projectId = thing.GetProjectId();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProject.GetProjectNumber()
@@ -199,14 +214,14 @@ items:
   nameWithType: NSProject.GetProjectNumber()
   fullName: CRMScript.NetServer.NSProject.GetProjectNumber()
   type: Method
-  summary: "\nAutomatically generated number\n"
+  summary: ""
   remarks: 
   syntax: 
     content: String GetProjectNumber()
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: Automatically generated number
   example: 
   - "\n<pre><code>NSProject thing;\nString projectNumber = thing.GetProjectNumber();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProject.GetPublishFrom()
@@ -219,14 +234,14 @@ items:
   nameWithType: NSProject.GetPublishFrom()
   fullName: CRMScript.NetServer.NSProject.GetPublishFrom()
   type: Method
-  summary: "\nPublication valid from (inclusive)\n"
+  summary: ""
   remarks: 
   syntax: 
     content: DateTime GetPublishFrom()
     parameters: []
     return:
       type: CRMScript.Global.DateTime
-      description:
+      description: Publication valid from (inclusive)
   example: 
   - "\n<pre><code>NSProject thing;\nDateTime publishFrom = thing.GetPublishFrom();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProject.GetPublishTo()
@@ -239,14 +254,14 @@ items:
   nameWithType: NSProject.GetPublishTo()
   fullName: CRMScript.NetServer.NSProject.GetPublishTo()
   type: Method
-  summary: "\nPublication valid to (inclusive)\n"
+  summary: ""
   remarks: 
   syntax: 
     content: DateTime GetPublishTo()
     parameters: []
     return:
       type: CRMScript.Global.DateTime
-      description:
+      description: Publication valid to (inclusive)
   example: 
   - "\n<pre><code>NSProject thing;\nDateTime publishTo = thing.GetPublishTo();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProject.GetStatus()
@@ -259,14 +274,14 @@ items:
   nameWithType: NSProject.GetStatus()
   fullName: CRMScript.NetServer.NSProject.GetStatus()
   type: Method
-  summary: "\nThe projects status\n"
+  summary: ""
   remarks: 
   syntax: 
     content: String GetStatus()
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: The projects status
   example: 
   - "\n<pre><code>NSProject thing;\nString status = thing.GetStatus();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProject.GetStatusId()
@@ -279,14 +294,14 @@ items:
   nameWithType: NSProject.GetStatusId()
   fullName: CRMScript.NetServer.NSProject.GetStatusId()
   type: Method
-  summary: "\nThe projects status ID\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Integer GetStatusId()
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description:
+      description: The projects status ID
   example: 
   - "\n<pre><code>NSProject thing;\nInteger statusId = thing.GetStatusId();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProject.GetTextId()
@@ -299,14 +314,14 @@ items:
   nameWithType: NSProject.GetTextId()
   fullName: CRMScript.NetServer.NSProject.GetTextId()
   type: Method
-  summary: "\nThe ID of the description\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Integer GetTextId()
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description:
+      description: The ID of the description
   example: 
   - "\n<pre><code>NSProject thing;\nInteger textId = thing.GetTextId();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProject.GetType()
@@ -319,14 +334,14 @@ items:
   nameWithType: NSProject.GetType()
   fullName: CRMScript.NetServer.NSProject.GetType()
   type: Method
-  summary: "\nThe project type.\n"
+  summary: ""
   remarks: 
   syntax: 
     content: String GetType()
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: The project type.
   example: 
   - "\n<pre><code>NSProject thing;\nString type = thing.GetType();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProject.GetTypeId()
@@ -359,14 +374,14 @@ items:
   nameWithType: NSProject.GetUpdated()
   fullName: CRMScript.NetServer.NSProject.GetUpdated()
   type: Method
-  summary: "\nLast updated date\n"
+  summary: ""
   remarks: 
   syntax: 
     content: DateTime GetUpdated()
     parameters: []
     return:
       type: CRMScript.Global.DateTime
-      description:
+      description: Last updated date
   example: 
   - "\n<pre><code>NSProject thing;\nDateTime updated = thing.GetUpdated();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProject.GetURL()
@@ -379,14 +394,14 @@ items:
   nameWithType: NSProject.GetURL()
   fullName: CRMScript.NetServer.NSProject.GetURL()
   type: Method
-  summary: "\nURL address\n"
+  summary: ""
   remarks: 
   syntax: 
     content: String GetURL()
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: URL address
   example: 
   - "\n<pre><code>NSProject thing;\nString uRL = thing.GetURL();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProject.GetURLName()
@@ -399,31 +414,16 @@ items:
   nameWithType: NSProject.GetURLName()
   fullName: CRMScript.NetServer.NSProject.GetURLName()
   type: Method
-  summary: "\nVisible field\n"
+  summary: ""
   remarks: 
   syntax: 
     content: String GetURLName()
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: Visible field
   example: 
   - "\n<pre><code>NSProject thing;\nString uRLName = thing.GetURLName();</code></pre>\n"
-- uid: CRMScript.NetServer.NSProject.#ctor
-  commentId: M:CRMScript.NetServer.NSProject.#ctor
-  id: '#ctor'
-  so.intellisense: Void.NSProject
-  langs:
-  - crmscript
-  name: '#ctor'
-  nameWithType: NSProject.#ctor
-  fullName: CRMScript.NetServer.NSProject.#ctor
-  type: Constructor
-  summary: 
-  remarks: 
-  syntax: 
-    content: NSProject
-  example: 
 - uid: CRMScript.NetServer.NSProject.SetActiveErpLinks(Integer)
   commentId: M:CRMScript.NetServer.NSProject.SetActiveErpLinks(Integer)
   id: 'SetActiveErpLinks(Integer)'
@@ -434,14 +434,14 @@ items:
   nameWithType: NSProject.SetActiveErpLinks(Integer)
   fullName: CRMScript.NetServer.NSProject.SetActiveErpLinks(Integer)
   type: Method
-  summary: "\nThe number of active erp links\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetActiveErpLinks(Integer activeErpLinks)
     parameters:
     - id: activeErpLinks
       type: CRMScript.Global.Integer
-      description: 
+      description: The number of active ERP links
     return:
       type: CRMScript.Global.Void
   example: 
@@ -456,14 +456,14 @@ items:
   nameWithType: NSProject.SetAssociateFullName(String)
   fullName: CRMScript.NetServer.NSProject.SetAssociateFullName(String)
   type: Method
-  summary: "\nThe project owner\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetAssociateFullName(String associateFullName)
     parameters:
     - id: associateFullName
       type: CRMScript.Global.String
-      description: 
+      description: The project owner
     return:
       type: CRMScript.Global.Void
   example: 
@@ -478,14 +478,14 @@ items:
   nameWithType: NSProject.SetAssociateId(Integer)
   fullName: CRMScript.NetServer.NSProject.SetAssociateId(Integer)
   type: Method
-  summary: "\nThe project owner id (associate id)\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetAssociateId(Integer associateId)
     parameters:
     - id: associateId
       type: CRMScript.Global.Integer
-      description: 
+      description: The project owner ID (associate ID)
     return:
       type: CRMScript.Global.Void
   example: 
@@ -500,14 +500,14 @@ items:
   nameWithType: NSProject.SetDescription(String)
   fullName: CRMScript.NetServer.NSProject.SetDescription(String)
   type: Method
-  summary: "\nThe projects description\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetDescription(String description)
     parameters:
     - id: description
       type: CRMScript.Global.String
-      description: 
+      description: The projects description
     return:
       type: CRMScript.Global.Void
   example: 
@@ -544,14 +544,14 @@ items:
   nameWithType: NSProject.SetName(String)
   fullName: CRMScript.NetServer.NSProject.SetName(String)
   type: Method
-  summary: "\nProject name\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetName(String name)
     parameters:
     - id: name
       type: CRMScript.Global.String
-      description: 
+      description: Project name
     return:
       type: CRMScript.Global.Void
   example: 
@@ -566,14 +566,14 @@ items:
   nameWithType: NSProject.SetProjectId(Integer)
   fullName: CRMScript.NetServer.NSProject.SetProjectId(Integer)
   type: Method
-  summary: "\nPrimary key\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetProjectId(Integer projectId)
     parameters:
     - id: projectId
       type: CRMScript.Global.Integer
-      description: 
+      description: Primary key
     return:
       type: CRMScript.Global.Void
   example: 
@@ -588,50 +588,60 @@ items:
   nameWithType: NSProject.SetProjectNumber(String)
   fullName: CRMScript.NetServer.NSProject.SetProjectNumber(String)
   type: Method
-  summary: "\nAutomatically generated number\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetProjectNumber(String projectNumber)
     parameters:
     - id: projectNumber
       type: CRMScript.Global.String
-      description: 
+      description: Automatically generated number
     return:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProject thing;\nString projectNumber;\nthing.SetProjectNumber(projectNumber);</code></pre>\n"
-- uid: CRMScript.NetServer.NSProject.SetPublishFrom()
-  commentId: M:CRMScript.NetServer.NSProject.SetPublishFrom()
-  id: 'SetPublishFrom()'
+- uid: CRMScript.NetServer.NSProject.SetPublishFrom(DateTime)
+  commentId: M:CRMScript.NetServer.NSProject.SetPublishFrom(DateTime)
+  id: 'SetPublishFrom(DateTime)'
   so.intellisense: NSProject.SetPublishFrom
   langs:
   - crmscript
-  name: 'SetPublishFrom()'
-  nameWithType: NSProject.SetPublishFrom()
-  fullName: CRMScript.NetServer.NSProject.SetPublishFrom()
+  name: 'SetPublishFrom(DateTime)'
+  nameWithType: NSProject.SetPublishFrom(DateTime)
+  fullName: CRMScript.NetServer.NSProject.SetPublishFrom(DateTime)
   type: Method
-  summary: "\nPublication valid from (inclusive)\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetPublishFrom(DateTime publishFrom)
     parameters:
+    - id: publishFrom
+      type: CRMScript.Global.DateTime
+      description: Publication valid from (inclusive)
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProject thing;\nDateTime publishFrom;\nthing.SetPublishFrom(publishFrom);</code></pre>\n"
-- uid: CRMScript.NetServer.NSProject.SetPublishTo()
-  commentId: M:CRMScript.NetServer.NSProject.SetPublishTo()
-  id: 'SetPublishTo()'
+- uid: CRMScript.NetServer.NSProject.SetPublishTo(DateTime)
+  commentId: M:CRMScript.NetServer.NSProject.SetPublishTo(DateTime)
+  id: 'SetPublishTo(DateTime)'
   so.intellisense: NSProject.SetPublishTo
   langs:
   - crmscript
-  name: 'SetPublishTo()'
-  nameWithType: NSProject.SetPublishTo()
-  fullName: CRMScript.NetServer.NSProject.SetPublishTo()
+  name: 'SetPublishTo(DateTime)'
+  nameWithType: NSProject.SetPublishTo(DateTime)
+  fullName: CRMScript.NetServer.NSProject.SetPublishTo(DateTime)
   type: Method
-  summary: "\nPublication valid to (inclusive)\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetPublishTo(DateTime publishTo)
     parameters:
+    - id: publishTo
+      type: CRMScript.Global.DateTime
+      description: Publication valid to (inclusive)
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProject thing;\nDateTime publishTo;\nthing.SetPublishTo(publishTo);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProject.SetStatus(String)
@@ -644,14 +654,14 @@ items:
   nameWithType: NSProject.SetStatus(String)
   fullName: CRMScript.NetServer.NSProject.SetStatus(String)
   type: Method
-  summary: "\nThe projects status\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetStatus(String status)
     parameters:
     - id: status
       type: CRMScript.Global.String
-      description: 
+      description: The projects status
     return:
       type: CRMScript.Global.Void
   example: 
@@ -666,14 +676,14 @@ items:
   nameWithType: NSProject.SetStatusId(Integer)
   fullName: CRMScript.NetServer.NSProject.SetStatusId(Integer)
   type: Method
-  summary: "\nThe projects status ID\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetStatusId(Integer statusId)
     parameters:
     - id: statusId
       type: CRMScript.Global.Integer
-      description: 
+      description: The projects status ID
     return:
       type: CRMScript.Global.Void
   example: 
@@ -688,14 +698,14 @@ items:
   nameWithType: NSProject.SetTextId(Integer)
   fullName: CRMScript.NetServer.NSProject.SetTextId(Integer)
   type: Method
-  summary: "\nThe ID of the description\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetTextId(Integer textId)
     parameters:
     - id: textId
       type: CRMScript.Global.Integer
-      description: 
+      description: The ID of the description
     return:
       type: CRMScript.Global.Void
   example: 
@@ -710,14 +720,14 @@ items:
   nameWithType: NSProject.SetType(String)
   fullName: CRMScript.NetServer.NSProject.SetType(String)
   type: Method
-  summary: "\nThe project type.\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetType(String type)
     parameters:
     - id: type
       type: CRMScript.Global.String
-      description: 
+      description: The project type.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -744,21 +754,26 @@ items:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProject thing;\nInteger typeId;\nthing.SetTypeId(typeId);</code></pre>\n"
-- uid: CRMScript.NetServer.NSProject.SetUpdated()
-  commentId: M:CRMScript.NetServer.NSProject.SetUpdated()
-  id: 'SetUpdated()'
+- uid: CRMScript.NetServer.NSProject.SetUpdated(DateTime)
+  commentId: M:CRMScript.NetServer.NSProject.SetUpdated(DateTime)
+  id: 'SetUpdated(DateTime)'
   so.intellisense: NSProject.SetUpdated
   langs:
   - crmscript
-  name: 'SetUpdated()'
-  nameWithType: NSProject.SetUpdated()
-  fullName: CRMScript.NetServer.NSProject.SetUpdated()
+  name: 'SetUpdated(DateTime)'
+  nameWithType: NSProject.SetUpdated(DateTime)
+  fullName: CRMScript.NetServer.NSProject.SetUpdated(DateTime)
   type: Method
-  summary: "\nLast updated date\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetUpdated(DateTime updated)
     parameters:
+    - id: updated
+      type: CRMScript.Global.DateTime
+      description: Last updated date
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProject thing;\nDateTime updated;\nthing.SetUpdated(updated);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProject.SetURL(String)
@@ -771,14 +786,14 @@ items:
   nameWithType: NSProject.SetURL(String)
   fullName: CRMScript.NetServer.NSProject.SetURL(String)
   type: Method
-  summary: "\nURL address\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetURL(String uRL)
     parameters:
     - id: uRL
       type: CRMScript.Global.String
-      description: 
+      description: URL address
     return:
       type: CRMScript.Global.Void
   example: 
@@ -793,14 +808,14 @@ items:
   nameWithType: NSProject.SetURLName(String)
   fullName: CRMScript.NetServer.NSProject.SetURLName(String)
   type: Method
-  summary: "\nVisible field\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetURLName(String uRLName)
     parameters:
     - id: uRLName
       type: CRMScript.Global.String
-      description: 
+      description: Visible field
     return:
       type: CRMScript.Global.Void
   example: 

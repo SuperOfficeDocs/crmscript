@@ -6,6 +6,7 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSProjectEvent.#ctor
   - CRMScript.NetServer.NSProjectEvent.GetAssociateFullName()
   - CRMScript.NetServer.NSProjectEvent.GetAssociateId()
   - CRMScript.NetServer.NSProjectEvent.GetDescription()
@@ -28,12 +29,11 @@ items:
   - CRMScript.NetServer.NSProjectEvent.GetSignOnTaskId()
   - CRMScript.NetServer.NSProjectEvent.GetSignOnText()
   - CRMScript.NetServer.NSProjectEvent.GetSignOnTriggersAssign()
-  - CRMScript.NetServer.NSProjectEvent.#ctor
   - CRMScript.NetServer.NSProjectEvent.SetAssociateFullName(String)
   - CRMScript.NetServer.NSProjectEvent.SetAssociateId(Integer)
   - CRMScript.NetServer.NSProjectEvent.SetDescription(String)
   - CRMScript.NetServer.NSProjectEvent.SetEnabled(Bool)
-  - CRMScript.NetServer.NSProjectEvent.SetEventDate()
+  - CRMScript.NetServer.NSProjectEvent.SetEventDate(DateTime)
   - CRMScript.NetServer.NSProjectEvent.SetEventName(String)
   - CRMScript.NetServer.NSProjectEvent.SetIsSignedOn(Bool)
   - CRMScript.NetServer.NSProjectEvent.SetProjectId(Integer)
@@ -57,446 +57,6 @@ items:
   type: Class
   summary: 
   example: 
-- uid: CRMScript.NetServer.NSProjectEvent.GetAssociateFullName()
-  commentId: M:CRMScript.NetServer.NSProjectEvent.GetAssociateFullName()
-  id: 'GetAssociateFullName()'
-  so.intellisense: NSProjectEvent.GetAssociateFullName
-  langs:
-  - crmscript
-  name: 'GetAssociateFullName()'
-  nameWithType: NSProjectEvent.GetAssociateFullName()
-  fullName: CRMScript.NetServer.NSProjectEvent.GetAssociateFullName()
-  type: Method
-  summary: "\nName of the person that ows the event (i.e. project)\n"
-  remarks: 
-  syntax: 
-    content: String GetAssociateFullName()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSProjectEvent thing;\nString associateFullName = thing.GetAssociateFullName();</code></pre>\n"
-- uid: CRMScript.NetServer.NSProjectEvent.GetAssociateId()
-  commentId: M:CRMScript.NetServer.NSProjectEvent.GetAssociateId()
-  id: 'GetAssociateId()'
-  so.intellisense: NSProjectEvent.GetAssociateId
-  langs:
-  - crmscript
-  name: 'GetAssociateId()'
-  nameWithType: NSProjectEvent.GetAssociateId()
-  fullName: CRMScript.NetServer.NSProjectEvent.GetAssociateId()
-  type: Method
-  summary: "\nID of the person that ows the event (i.e. project)\n"
-  remarks: 
-  syntax: 
-    content: Integer GetAssociateId()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSProjectEvent thing;\nInteger associateId = thing.GetAssociateId();</code></pre>\n"
-- uid: CRMScript.NetServer.NSProjectEvent.GetDescription()
-  commentId: M:CRMScript.NetServer.NSProjectEvent.GetDescription()
-  id: 'GetDescription()'
-  so.intellisense: NSProjectEvent.GetDescription
-  langs:
-  - crmscript
-  name: 'GetDescription()'
-  nameWithType: NSProjectEvent.GetDescription()
-  fullName: CRMScript.NetServer.NSProjectEvent.GetDescription()
-  type: Method
-  summary: "\nThe event description (i.e. the project text)\n"
-  remarks: 
-  syntax: 
-    content: String GetDescription()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSProjectEvent thing;\nString description = thing.GetDescription();</code></pre>\n"
-- uid: CRMScript.NetServer.NSProjectEvent.GetEnabled()
-  commentId: M:CRMScript.NetServer.NSProjectEvent.GetEnabled()
-  id: 'GetEnabled()'
-  so.intellisense: NSProjectEvent.GetEnabled
-  langs:
-  - crmscript
-  name: 'GetEnabled()'
-  nameWithType: NSProjectEvent.GetEnabled()
-  fullName: CRMScript.NetServer.NSProjectEvent.GetEnabled()
-  type: Method
-  summary: "\nIf true the event is enabled (visible)\n"
-  remarks: 
-  syntax: 
-    content: Bool GetEnabled()
-    parameters: []
-    return:
-      type: CRMScript.Global.Bool
-      description:
-  example: 
-  - "\n<pre><code>NSProjectEvent thing;\nBool enabled = thing.GetEnabled();</code></pre>\n"
-- uid: CRMScript.NetServer.NSProjectEvent.GetEventDate()
-  commentId: M:CRMScript.NetServer.NSProjectEvent.GetEventDate()
-  id: 'GetEventDate()'
-  so.intellisense: NSProjectEvent.GetEventDate
-  langs:
-  - crmscript
-  name: 'GetEventDate()'
-  nameWithType: NSProjectEvent.GetEventDate()
-  fullName: CRMScript.NetServer.NSProjectEvent.GetEventDate()
-  type: Method
-  summary: "\nDate of the event. Event is not visible after this date.\n"
-  remarks: 
-  syntax: 
-    content: DateTime GetEventDate()
-    parameters: []
-    return:
-      type: CRMScript.Global.DateTime
-      description:
-  example: 
-  - "\n<pre><code>NSProjectEvent thing;\nDateTime eventDate = thing.GetEventDate();</code></pre>\n"
-- uid: CRMScript.NetServer.NSProjectEvent.GetEventName()
-  commentId: M:CRMScript.NetServer.NSProjectEvent.GetEventName()
-  id: 'GetEventName()'
-  so.intellisense: NSProjectEvent.GetEventName
-  langs:
-  - crmscript
-  name: 'GetEventName()'
-  nameWithType: NSProjectEvent.GetEventName()
-  fullName: CRMScript.NetServer.NSProjectEvent.GetEventName()
-  type: Method
-  summary: "\nThe name of the event (i.e. the project name)\n"
-  remarks: 
-  syntax: 
-    content: String GetEventName()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSProjectEvent thing;\nString eventName = thing.GetEventName();</code></pre>\n"
-- uid: CRMScript.NetServer.NSProjectEvent.GetIsSignedOn()
-  commentId: M:CRMScript.NetServer.NSProjectEvent.GetIsSignedOn()
-  id: 'GetIsSignedOn()'
-  so.intellisense: NSProjectEvent.GetIsSignedOn
-  langs:
-  - crmscript
-  name: 'GetIsSignedOn()'
-  nameWithType: NSProjectEvent.GetIsSignedOn()
-  fullName: CRMScript.NetServer.NSProjectEvent.GetIsSignedOn()
-  type: Method
-  summary: "\nTrue if the current user is signed on to the event (i.e. is project member)\n"
-  remarks: 
-  syntax: 
-    content: Bool GetIsSignedOn()
-    parameters: []
-    return:
-      type: CRMScript.Global.Bool
-      description:
-  example: 
-  - "\n<pre><code>NSProjectEvent thing;\nBool isSignedOn = thing.GetIsSignedOn();</code></pre>\n"
-- uid: CRMScript.NetServer.NSProjectEvent.GetProjectId()
-  commentId: M:CRMScript.NetServer.NSProjectEvent.GetProjectId()
-  id: 'GetProjectId()'
-  so.intellisense: NSProjectEvent.GetProjectId
-  langs:
-  - crmscript
-  name: 'GetProjectId()'
-  nameWithType: NSProjectEvent.GetProjectId()
-  fullName: CRMScript.NetServer.NSProjectEvent.GetProjectId()
-  type: Method
-  summary: "\nID of the project that represents the event\n"
-  remarks: 
-  syntax: 
-    content: Integer GetProjectId()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSProjectEvent thing;\nInteger projectId = thing.GetProjectId();</code></pre>\n"
-- uid: CRMScript.NetServer.NSProjectEvent.GetSignOff()
-  commentId: M:CRMScript.NetServer.NSProjectEvent.GetSignOff()
-  id: 'GetSignOff()'
-  so.intellisense: NSProjectEvent.GetSignOff
-  langs:
-  - crmscript
-  name: 'GetSignOff()'
-  nameWithType: NSProjectEvent.GetSignOff()
-  fullName: CRMScript.NetServer.NSProjectEvent.GetSignOff()
-  type: Method
-  summary: "\nIf true, it is possible to sign off the event.\n"
-  remarks: 
-  syntax: 
-    content: Bool GetSignOff()
-    parameters: []
-    return:
-      type: CRMScript.Global.Bool
-      description:
-  example: 
-  - "\n<pre><code>NSProjectEvent thing;\nBool signOff = thing.GetSignOff();</code></pre>\n"
-- uid: CRMScript.NetServer.NSProjectEvent.GetSignOffConfirmationText()
-  commentId: M:CRMScript.NetServer.NSProjectEvent.GetSignOffConfirmationText()
-  id: 'GetSignOffConfirmationText()'
-  so.intellisense: NSProjectEvent.GetSignOffConfirmationText
-  langs:
-  - crmscript
-  name: 'GetSignOffConfirmationText()'
-  nameWithType: NSProjectEvent.GetSignOffConfirmationText()
-  fullName: CRMScript.NetServer.NSProjectEvent.GetSignOffConfirmationText()
-  type: Method
-  summary: "\nText shown as confirmation text before accepting sign off.\n"
-  remarks: 
-  syntax: 
-    content: String GetSignOffConfirmationText()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSProjectEvent thing;\nString signOffConfirmationText = thing.GetSignOffConfirmationText();</code></pre>\n"
-- uid: CRMScript.NetServer.NSProjectEvent.GetSignOffPersonId()
-  commentId: M:CRMScript.NetServer.NSProjectEvent.GetSignOffPersonId()
-  id: 'GetSignOffPersonId()'
-  so.intellisense: NSProjectEvent.GetSignOffPersonId
-  langs:
-  - crmscript
-  name: 'GetSignOffPersonId()'
-  nameWithType: NSProjectEvent.GetSignOffPersonId()
-  fullName: CRMScript.NetServer.NSProjectEvent.GetSignOffPersonId()
-  type: Method
-  summary: "\nIf 0, the signOn Activity should go into the persons Our Contact; if not 0, this is the Person whose diary should get the activity\n"
-  remarks: 
-  syntax: 
-    content: Integer GetSignOffPersonId()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSProjectEvent thing;\nInteger signOffPersonId = thing.GetSignOffPersonId();</code></pre>\n"
-- uid: CRMScript.NetServer.NSProjectEvent.GetSignOffTaskEnable()
-  commentId: M:CRMScript.NetServer.NSProjectEvent.GetSignOffTaskEnable()
-  id: 'GetSignOffTaskEnable()'
-  so.intellisense: NSProjectEvent.GetSignOffTaskEnable
-  langs:
-  - crmscript
-  name: 'GetSignOffTaskEnable()'
-  nameWithType: NSProjectEvent.GetSignOffTaskEnable()
-  fullName: CRMScript.NetServer.NSProjectEvent.GetSignOffTaskEnable()
-  type: Method
-  summary: "\nIf true, a task should be created when the external user signs off an event\n"
-  remarks: 
-  syntax: 
-    content: Bool GetSignOffTaskEnable()
-    parameters: []
-    return:
-      type: CRMScript.Global.Bool
-      description:
-  example: 
-  - "\n<pre><code>NSProjectEvent thing;\nBool signOffTaskEnable = thing.GetSignOffTaskEnable();</code></pre>\n"
-- uid: CRMScript.NetServer.NSProjectEvent.GetSignOffTaskId()
-  commentId: M:CRMScript.NetServer.NSProjectEvent.GetSignOffTaskId()
-  id: 'GetSignOffTaskId()'
-  so.intellisense: NSProjectEvent.GetSignOffTaskId
-  langs:
-  - crmscript
-  name: 'GetSignOffTaskId()'
-  nameWithType: NSProjectEvent.GetSignOffTaskId()
-  fullName: CRMScript.NetServer.NSProjectEvent.GetSignOffTaskId()
-  type: Method
-  summary: "\nIf not 0, sign off should cause an Activity of this type to be registered\n"
-  remarks: 
-  syntax: 
-    content: Integer GetSignOffTaskId()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSProjectEvent thing;\nInteger signOffTaskId = thing.GetSignOffTaskId();</code></pre>\n"
-- uid: CRMScript.NetServer.NSProjectEvent.GetSignOffText()
-  commentId: M:CRMScript.NetServer.NSProjectEvent.GetSignOffText()
-  id: 'GetSignOffText()'
-  so.intellisense: NSProjectEvent.GetSignOffText
-  langs:
-  - crmscript
-  name: 'GetSignOffText()'
-  nameWithType: NSProjectEvent.GetSignOffText()
-  fullName: CRMScript.NetServer.NSProjectEvent.GetSignOffText()
-  type: Method
-  summary: "\nDefault text for the activity created when signing off.\n"
-  remarks: 
-  syntax: 
-    content: String GetSignOffText()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSProjectEvent thing;\nString signOffText = thing.GetSignOffText();</code></pre>\n"
-- uid: CRMScript.NetServer.NSProjectEvent.GetSignOffTriggersAssign()
-  commentId: M:CRMScript.NetServer.NSProjectEvent.GetSignOffTriggersAssign()
-  id: 'GetSignOffTriggersAssign()'
-  so.intellisense: NSProjectEvent.GetSignOffTriggersAssign
-  langs:
-  - crmscript
-  name: 'GetSignOffTriggersAssign()'
-  nameWithType: NSProjectEvent.GetSignOffTriggersAssign()
-  fullName: CRMScript.NetServer.NSProjectEvent.GetSignOffTriggersAssign()
-  type: Method
-  summary: "\nIf true, the sign off task should be created as an Assigned task, triggering the invitation dialog\n"
-  remarks: 
-  syntax: 
-    content: Bool GetSignOffTriggersAssign()
-    parameters: []
-    return:
-      type: CRMScript.Global.Bool
-      description:
-  example: 
-  - "\n<pre><code>NSProjectEvent thing;\nBool signOffTriggersAssign = thing.GetSignOffTriggersAssign();</code></pre>\n"
-- uid: CRMScript.NetServer.NSProjectEvent.GetSignOn()
-  commentId: M:CRMScript.NetServer.NSProjectEvent.GetSignOn()
-  id: 'GetSignOn()'
-  so.intellisense: NSProjectEvent.GetSignOn
-  langs:
-  - crmscript
-  name: 'GetSignOn()'
-  nameWithType: NSProjectEvent.GetSignOn()
-  fullName: CRMScript.NetServer.NSProjectEvent.GetSignOn()
-  type: Method
-  summary: "\nIf true, it is possible to sign on the event.\n"
-  remarks: 
-  syntax: 
-    content: Bool GetSignOn()
-    parameters: []
-    return:
-      type: CRMScript.Global.Bool
-      description:
-  example: 
-  - "\n<pre><code>NSProjectEvent thing;\nBool signOn = thing.GetSignOn();</code></pre>\n"
-- uid: CRMScript.NetServer.NSProjectEvent.GetSignOnConfirmationText()
-  commentId: M:CRMScript.NetServer.NSProjectEvent.GetSignOnConfirmationText()
-  id: 'GetSignOnConfirmationText()'
-  so.intellisense: NSProjectEvent.GetSignOnConfirmationText
-  langs:
-  - crmscript
-  name: 'GetSignOnConfirmationText()'
-  nameWithType: NSProjectEvent.GetSignOnConfirmationText()
-  fullName: CRMScript.NetServer.NSProjectEvent.GetSignOnConfirmationText()
-  type: Method
-  summary: "\nText shown as confirmation text before accepting sign on.\n"
-  remarks: 
-  syntax: 
-    content: String GetSignOnConfirmationText()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSProjectEvent thing;\nString signOnConfirmationText = thing.GetSignOnConfirmationText();</code></pre>\n"
-- uid: CRMScript.NetServer.NSProjectEvent.GetSignOnPersonId()
-  commentId: M:CRMScript.NetServer.NSProjectEvent.GetSignOnPersonId()
-  id: 'GetSignOnPersonId()'
-  so.intellisense: NSProjectEvent.GetSignOnPersonId
-  langs:
-  - crmscript
-  name: 'GetSignOnPersonId()'
-  nameWithType: NSProjectEvent.GetSignOnPersonId()
-  fullName: CRMScript.NetServer.NSProjectEvent.GetSignOnPersonId()
-  type: Method
-  summary: "\nIf 0, the signOn Activity should go into the persons Our Contact; if not 0, this is the Person whose diary should get the activity\n"
-  remarks: 
-  syntax: 
-    content: Integer GetSignOnPersonId()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSProjectEvent thing;\nInteger signOnPersonId = thing.GetSignOnPersonId();</code></pre>\n"
-- uid: CRMScript.NetServer.NSProjectEvent.GetSignOnTaskEnable()
-  commentId: M:CRMScript.NetServer.NSProjectEvent.GetSignOnTaskEnable()
-  id: 'GetSignOnTaskEnable()'
-  so.intellisense: NSProjectEvent.GetSignOnTaskEnable
-  langs:
-  - crmscript
-  name: 'GetSignOnTaskEnable()'
-  nameWithType: NSProjectEvent.GetSignOnTaskEnable()
-  fullName: CRMScript.NetServer.NSProjectEvent.GetSignOnTaskEnable()
-  type: Method
-  summary: "\nIf true, a task should be created when the external user signs on an event\n"
-  remarks: 
-  syntax: 
-    content: Bool GetSignOnTaskEnable()
-    parameters: []
-    return:
-      type: CRMScript.Global.Bool
-      description:
-  example: 
-  - "\n<pre><code>NSProjectEvent thing;\nBool signOnTaskEnable = thing.GetSignOnTaskEnable();</code></pre>\n"
-- uid: CRMScript.NetServer.NSProjectEvent.GetSignOnTaskId()
-  commentId: M:CRMScript.NetServer.NSProjectEvent.GetSignOnTaskId()
-  id: 'GetSignOnTaskId()'
-  so.intellisense: NSProjectEvent.GetSignOnTaskId
-  langs:
-  - crmscript
-  name: 'GetSignOnTaskId()'
-  nameWithType: NSProjectEvent.GetSignOnTaskId()
-  fullName: CRMScript.NetServer.NSProjectEvent.GetSignOnTaskId()
-  type: Method
-  summary: "\nIf not 0, sign on should cause an Activity of this type to be registered\n"
-  remarks: 
-  syntax: 
-    content: Integer GetSignOnTaskId()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSProjectEvent thing;\nInteger signOnTaskId = thing.GetSignOnTaskId();</code></pre>\n"
-- uid: CRMScript.NetServer.NSProjectEvent.GetSignOnText()
-  commentId: M:CRMScript.NetServer.NSProjectEvent.GetSignOnText()
-  id: 'GetSignOnText()'
-  so.intellisense: NSProjectEvent.GetSignOnText
-  langs:
-  - crmscript
-  name: 'GetSignOnText()'
-  nameWithType: NSProjectEvent.GetSignOnText()
-  fullName: CRMScript.NetServer.NSProjectEvent.GetSignOnText()
-  type: Method
-  summary: "\nDefault text for the activity created when signing on.\n"
-  remarks: 
-  syntax: 
-    content: String GetSignOnText()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSProjectEvent thing;\nString signOnText = thing.GetSignOnText();</code></pre>\n"
-- uid: CRMScript.NetServer.NSProjectEvent.GetSignOnTriggersAssign()
-  commentId: M:CRMScript.NetServer.NSProjectEvent.GetSignOnTriggersAssign()
-  id: 'GetSignOnTriggersAssign()'
-  so.intellisense: NSProjectEvent.GetSignOnTriggersAssign
-  langs:
-  - crmscript
-  name: 'GetSignOnTriggersAssign()'
-  nameWithType: NSProjectEvent.GetSignOnTriggersAssign()
-  fullName: CRMScript.NetServer.NSProjectEvent.GetSignOnTriggersAssign()
-  type: Method
-  summary: "\nIf true, the sign on task should be created as an Assigned task, triggering the invitation dialog\n"
-  remarks: 
-  syntax: 
-    content: Bool GetSignOnTriggersAssign()
-    parameters: []
-    return:
-      type: CRMScript.Global.Bool
-      description:
-  example: 
-  - "\n<pre><code>NSProjectEvent thing;\nBool signOnTriggersAssign = thing.GetSignOnTriggersAssign();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectEvent.#ctor
   commentId: M:CRMScript.NetServer.NSProjectEvent.#ctor
   id: '#ctor'
@@ -512,6 +72,446 @@ items:
   syntax: 
     content: NSProjectEvent
   example: 
+- uid: CRMScript.NetServer.NSProjectEvent.GetAssociateFullName()
+  commentId: M:CRMScript.NetServer.NSProjectEvent.GetAssociateFullName()
+  id: 'GetAssociateFullName()'
+  so.intellisense: NSProjectEvent.GetAssociateFullName
+  langs:
+  - crmscript
+  name: 'GetAssociateFullName()'
+  nameWithType: NSProjectEvent.GetAssociateFullName()
+  fullName: CRMScript.NetServer.NSProjectEvent.GetAssociateFullName()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetAssociateFullName()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Name of the person that ows the event (project)
+  example: 
+  - "\n<pre><code>NSProjectEvent thing;\nString associateFullName = thing.GetAssociateFullName();</code></pre>\n"
+- uid: CRMScript.NetServer.NSProjectEvent.GetAssociateId()
+  commentId: M:CRMScript.NetServer.NSProjectEvent.GetAssociateId()
+  id: 'GetAssociateId()'
+  so.intellisense: NSProjectEvent.GetAssociateId
+  langs:
+  - crmscript
+  name: 'GetAssociateId()'
+  nameWithType: NSProjectEvent.GetAssociateId()
+  fullName: CRMScript.NetServer.NSProjectEvent.GetAssociateId()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Integer GetAssociateId()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: ID of the person that ows the event (project)
+  example: 
+  - "\n<pre><code>NSProjectEvent thing;\nInteger associateId = thing.GetAssociateId();</code></pre>\n"
+- uid: CRMScript.NetServer.NSProjectEvent.GetDescription()
+  commentId: M:CRMScript.NetServer.NSProjectEvent.GetDescription()
+  id: 'GetDescription()'
+  so.intellisense: NSProjectEvent.GetDescription
+  langs:
+  - crmscript
+  name: 'GetDescription()'
+  nameWithType: NSProjectEvent.GetDescription()
+  fullName: CRMScript.NetServer.NSProjectEvent.GetDescription()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetDescription()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: The event description (the project text)
+  example: 
+  - "\n<pre><code>NSProjectEvent thing;\nString description = thing.GetDescription();</code></pre>\n"
+- uid: CRMScript.NetServer.NSProjectEvent.GetEnabled()
+  commentId: M:CRMScript.NetServer.NSProjectEvent.GetEnabled()
+  id: 'GetEnabled()'
+  so.intellisense: NSProjectEvent.GetEnabled
+  langs:
+  - crmscript
+  name: 'GetEnabled()'
+  nameWithType: NSProjectEvent.GetEnabled()
+  fullName: CRMScript.NetServer.NSProjectEvent.GetEnabled()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Bool GetEnabled()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: If true the event is enabled (visible)
+  example: 
+  - "\n<pre><code>NSProjectEvent thing;\nBool enabled = thing.GetEnabled();</code></pre>\n"
+- uid: CRMScript.NetServer.NSProjectEvent.GetEventDate()
+  commentId: M:CRMScript.NetServer.NSProjectEvent.GetEventDate()
+  id: 'GetEventDate()'
+  so.intellisense: NSProjectEvent.GetEventDate
+  langs:
+  - crmscript
+  name: 'GetEventDate()'
+  nameWithType: NSProjectEvent.GetEventDate()
+  fullName: CRMScript.NetServer.NSProjectEvent.GetEventDate()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: DateTime GetEventDate()
+    parameters: []
+    return:
+      type: CRMScript.Global.DateTime
+      description: Date of the event. Event is not visible after this date.
+  example: 
+  - "\n<pre><code>NSProjectEvent thing;\nDateTime eventDate = thing.GetEventDate();</code></pre>\n"
+- uid: CRMScript.NetServer.NSProjectEvent.GetEventName()
+  commentId: M:CRMScript.NetServer.NSProjectEvent.GetEventName()
+  id: 'GetEventName()'
+  so.intellisense: NSProjectEvent.GetEventName
+  langs:
+  - crmscript
+  name: 'GetEventName()'
+  nameWithType: NSProjectEvent.GetEventName()
+  fullName: CRMScript.NetServer.NSProjectEvent.GetEventName()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetEventName()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: The name of the event (the project name)
+  example: 
+  - "\n<pre><code>NSProjectEvent thing;\nString eventName = thing.GetEventName();</code></pre>\n"
+- uid: CRMScript.NetServer.NSProjectEvent.GetIsSignedOn()
+  commentId: M:CRMScript.NetServer.NSProjectEvent.GetIsSignedOn()
+  id: 'GetIsSignedOn()'
+  so.intellisense: NSProjectEvent.GetIsSignedOn
+  langs:
+  - crmscript
+  name: 'GetIsSignedOn()'
+  nameWithType: NSProjectEvent.GetIsSignedOn()
+  fullName: CRMScript.NetServer.NSProjectEvent.GetIsSignedOn()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Bool GetIsSignedOn()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: True if the current user is signed on to the event (is project member)
+  example: 
+  - "\n<pre><code>NSProjectEvent thing;\nBool isSignedOn = thing.GetIsSignedOn();</code></pre>\n"
+- uid: CRMScript.NetServer.NSProjectEvent.GetProjectId()
+  commentId: M:CRMScript.NetServer.NSProjectEvent.GetProjectId()
+  id: 'GetProjectId()'
+  so.intellisense: NSProjectEvent.GetProjectId
+  langs:
+  - crmscript
+  name: 'GetProjectId()'
+  nameWithType: NSProjectEvent.GetProjectId()
+  fullName: CRMScript.NetServer.NSProjectEvent.GetProjectId()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Integer GetProjectId()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: ID of the project that represents the event
+  example: 
+  - "\n<pre><code>NSProjectEvent thing;\nInteger projectId = thing.GetProjectId();</code></pre>\n"
+- uid: CRMScript.NetServer.NSProjectEvent.GetSignOff()
+  commentId: M:CRMScript.NetServer.NSProjectEvent.GetSignOff()
+  id: 'GetSignOff()'
+  so.intellisense: NSProjectEvent.GetSignOff
+  langs:
+  - crmscript
+  name: 'GetSignOff()'
+  nameWithType: NSProjectEvent.GetSignOff()
+  fullName: CRMScript.NetServer.NSProjectEvent.GetSignOff()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Bool GetSignOff()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: If true, it is possible to sign off the event.
+  example: 
+  - "\n<pre><code>NSProjectEvent thing;\nBool signOff = thing.GetSignOff();</code></pre>\n"
+- uid: CRMScript.NetServer.NSProjectEvent.GetSignOffConfirmationText()
+  commentId: M:CRMScript.NetServer.NSProjectEvent.GetSignOffConfirmationText()
+  id: 'GetSignOffConfirmationText()'
+  so.intellisense: NSProjectEvent.GetSignOffConfirmationText
+  langs:
+  - crmscript
+  name: 'GetSignOffConfirmationText()'
+  nameWithType: NSProjectEvent.GetSignOffConfirmationText()
+  fullName: CRMScript.NetServer.NSProjectEvent.GetSignOffConfirmationText()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetSignOffConfirmationText()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Text shown as confirmation text before accepting sign off.
+  example: 
+  - "\n<pre><code>NSProjectEvent thing;\nString signOffConfirmationText = thing.GetSignOffConfirmationText();</code></pre>\n"
+- uid: CRMScript.NetServer.NSProjectEvent.GetSignOffPersonId()
+  commentId: M:CRMScript.NetServer.NSProjectEvent.GetSignOffPersonId()
+  id: 'GetSignOffPersonId()'
+  so.intellisense: NSProjectEvent.GetSignOffPersonId
+  langs:
+  - crmscript
+  name: 'GetSignOffPersonId()'
+  nameWithType: NSProjectEvent.GetSignOffPersonId()
+  fullName: CRMScript.NetServer.NSProjectEvent.GetSignOffPersonId()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Integer GetSignOffPersonId()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: If 0, the signOn Activity should go into the persons Our Contact; if not 0, this is the Person whose diary should get the activity
+  example: 
+  - "\n<pre><code>NSProjectEvent thing;\nInteger signOffPersonId = thing.GetSignOffPersonId();</code></pre>\n"
+- uid: CRMScript.NetServer.NSProjectEvent.GetSignOffTaskEnable()
+  commentId: M:CRMScript.NetServer.NSProjectEvent.GetSignOffTaskEnable()
+  id: 'GetSignOffTaskEnable()'
+  so.intellisense: NSProjectEvent.GetSignOffTaskEnable
+  langs:
+  - crmscript
+  name: 'GetSignOffTaskEnable()'
+  nameWithType: NSProjectEvent.GetSignOffTaskEnable()
+  fullName: CRMScript.NetServer.NSProjectEvent.GetSignOffTaskEnable()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Bool GetSignOffTaskEnable()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: If true, a task should be created when the external user signs off an event
+  example: 
+  - "\n<pre><code>NSProjectEvent thing;\nBool signOffTaskEnable = thing.GetSignOffTaskEnable();</code></pre>\n"
+- uid: CRMScript.NetServer.NSProjectEvent.GetSignOffTaskId()
+  commentId: M:CRMScript.NetServer.NSProjectEvent.GetSignOffTaskId()
+  id: 'GetSignOffTaskId()'
+  so.intellisense: NSProjectEvent.GetSignOffTaskId
+  langs:
+  - crmscript
+  name: 'GetSignOffTaskId()'
+  nameWithType: NSProjectEvent.GetSignOffTaskId()
+  fullName: CRMScript.NetServer.NSProjectEvent.GetSignOffTaskId()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Integer GetSignOffTaskId()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: If not 0, sign off should cause an Activity of this type to be registered
+  example: 
+  - "\n<pre><code>NSProjectEvent thing;\nInteger signOffTaskId = thing.GetSignOffTaskId();</code></pre>\n"
+- uid: CRMScript.NetServer.NSProjectEvent.GetSignOffText()
+  commentId: M:CRMScript.NetServer.NSProjectEvent.GetSignOffText()
+  id: 'GetSignOffText()'
+  so.intellisense: NSProjectEvent.GetSignOffText
+  langs:
+  - crmscript
+  name: 'GetSignOffText()'
+  nameWithType: NSProjectEvent.GetSignOffText()
+  fullName: CRMScript.NetServer.NSProjectEvent.GetSignOffText()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetSignOffText()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Default text for the activity created when signing off.
+  example: 
+  - "\n<pre><code>NSProjectEvent thing;\nString signOffText = thing.GetSignOffText();</code></pre>\n"
+- uid: CRMScript.NetServer.NSProjectEvent.GetSignOffTriggersAssign()
+  commentId: M:CRMScript.NetServer.NSProjectEvent.GetSignOffTriggersAssign()
+  id: 'GetSignOffTriggersAssign()'
+  so.intellisense: NSProjectEvent.GetSignOffTriggersAssign
+  langs:
+  - crmscript
+  name: 'GetSignOffTriggersAssign()'
+  nameWithType: NSProjectEvent.GetSignOffTriggersAssign()
+  fullName: CRMScript.NetServer.NSProjectEvent.GetSignOffTriggersAssign()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Bool GetSignOffTriggersAssign()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: If true, the sign off task should be created as an Assigned task, triggering the invitation dialog
+  example: 
+  - "\n<pre><code>NSProjectEvent thing;\nBool signOffTriggersAssign = thing.GetSignOffTriggersAssign();</code></pre>\n"
+- uid: CRMScript.NetServer.NSProjectEvent.GetSignOn()
+  commentId: M:CRMScript.NetServer.NSProjectEvent.GetSignOn()
+  id: 'GetSignOn()'
+  so.intellisense: NSProjectEvent.GetSignOn
+  langs:
+  - crmscript
+  name: 'GetSignOn()'
+  nameWithType: NSProjectEvent.GetSignOn()
+  fullName: CRMScript.NetServer.NSProjectEvent.GetSignOn()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Bool GetSignOn()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: If true, it is possible to sign on the event.
+  example: 
+  - "\n<pre><code>NSProjectEvent thing;\nBool signOn = thing.GetSignOn();</code></pre>\n"
+- uid: CRMScript.NetServer.NSProjectEvent.GetSignOnConfirmationText()
+  commentId: M:CRMScript.NetServer.NSProjectEvent.GetSignOnConfirmationText()
+  id: 'GetSignOnConfirmationText()'
+  so.intellisense: NSProjectEvent.GetSignOnConfirmationText
+  langs:
+  - crmscript
+  name: 'GetSignOnConfirmationText()'
+  nameWithType: NSProjectEvent.GetSignOnConfirmationText()
+  fullName: CRMScript.NetServer.NSProjectEvent.GetSignOnConfirmationText()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetSignOnConfirmationText()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Text shown as confirmation text before accepting sign on.
+  example: 
+  - "\n<pre><code>NSProjectEvent thing;\nString signOnConfirmationText = thing.GetSignOnConfirmationText();</code></pre>\n"
+- uid: CRMScript.NetServer.NSProjectEvent.GetSignOnPersonId()
+  commentId: M:CRMScript.NetServer.NSProjectEvent.GetSignOnPersonId()
+  id: 'GetSignOnPersonId()'
+  so.intellisense: NSProjectEvent.GetSignOnPersonId
+  langs:
+  - crmscript
+  name: 'GetSignOnPersonId()'
+  nameWithType: NSProjectEvent.GetSignOnPersonId()
+  fullName: CRMScript.NetServer.NSProjectEvent.GetSignOnPersonId()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Integer GetSignOnPersonId()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: If 0, the signOn Activity should go into the persons Our Contact; if not 0, this is the Person whose diary should get the activity
+  example: 
+  - "\n<pre><code>NSProjectEvent thing;\nInteger signOnPersonId = thing.GetSignOnPersonId();</code></pre>\n"
+- uid: CRMScript.NetServer.NSProjectEvent.GetSignOnTaskEnable()
+  commentId: M:CRMScript.NetServer.NSProjectEvent.GetSignOnTaskEnable()
+  id: 'GetSignOnTaskEnable()'
+  so.intellisense: NSProjectEvent.GetSignOnTaskEnable
+  langs:
+  - crmscript
+  name: 'GetSignOnTaskEnable()'
+  nameWithType: NSProjectEvent.GetSignOnTaskEnable()
+  fullName: CRMScript.NetServer.NSProjectEvent.GetSignOnTaskEnable()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Bool GetSignOnTaskEnable()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: If true, a task should be created when the external user signs on an event
+  example: 
+  - "\n<pre><code>NSProjectEvent thing;\nBool signOnTaskEnable = thing.GetSignOnTaskEnable();</code></pre>\n"
+- uid: CRMScript.NetServer.NSProjectEvent.GetSignOnTaskId()
+  commentId: M:CRMScript.NetServer.NSProjectEvent.GetSignOnTaskId()
+  id: 'GetSignOnTaskId()'
+  so.intellisense: NSProjectEvent.GetSignOnTaskId
+  langs:
+  - crmscript
+  name: 'GetSignOnTaskId()'
+  nameWithType: NSProjectEvent.GetSignOnTaskId()
+  fullName: CRMScript.NetServer.NSProjectEvent.GetSignOnTaskId()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Integer GetSignOnTaskId()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: If not 0, sign on should cause an Activity of this type to be registered
+  example: 
+  - "\n<pre><code>NSProjectEvent thing;\nInteger signOnTaskId = thing.GetSignOnTaskId();</code></pre>\n"
+- uid: CRMScript.NetServer.NSProjectEvent.GetSignOnText()
+  commentId: M:CRMScript.NetServer.NSProjectEvent.GetSignOnText()
+  id: 'GetSignOnText()'
+  so.intellisense: NSProjectEvent.GetSignOnText
+  langs:
+  - crmscript
+  name: 'GetSignOnText()'
+  nameWithType: NSProjectEvent.GetSignOnText()
+  fullName: CRMScript.NetServer.NSProjectEvent.GetSignOnText()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetSignOnText()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Default text for the activity created when signing on.
+  example: 
+  - "\n<pre><code>NSProjectEvent thing;\nString signOnText = thing.GetSignOnText();</code></pre>\n"
+- uid: CRMScript.NetServer.NSProjectEvent.GetSignOnTriggersAssign()
+  commentId: M:CRMScript.NetServer.NSProjectEvent.GetSignOnTriggersAssign()
+  id: 'GetSignOnTriggersAssign()'
+  so.intellisense: NSProjectEvent.GetSignOnTriggersAssign
+  langs:
+  - crmscript
+  name: 'GetSignOnTriggersAssign()'
+  nameWithType: NSProjectEvent.GetSignOnTriggersAssign()
+  fullName: CRMScript.NetServer.NSProjectEvent.GetSignOnTriggersAssign()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Bool GetSignOnTriggersAssign()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: If true, the sign on task should be created as an Assigned task, triggering the invitation dialog
+  example: 
+  - "\n<pre><code>NSProjectEvent thing;\nBool signOnTriggersAssign = thing.GetSignOnTriggersAssign();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectEvent.SetAssociateFullName(String)
   commentId: M:CRMScript.NetServer.NSProjectEvent.SetAssociateFullName(String)
   id: 'SetAssociateFullName(String)'
@@ -522,14 +522,14 @@ items:
   nameWithType: NSProjectEvent.SetAssociateFullName(String)
   fullName: CRMScript.NetServer.NSProjectEvent.SetAssociateFullName(String)
   type: Method
-  summary: "\nName of the person that ows the event (i.e. project)\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetAssociateFullName(String associateFullName)
     parameters:
     - id: associateFullName
       type: CRMScript.Global.String
-      description: 
+      description:  Name of the person that ows the event (project)
     return:
       type: CRMScript.Global.Void
   example: 
@@ -544,14 +544,14 @@ items:
   nameWithType: NSProjectEvent.SetAssociateId(Integer)
   fullName: CRMScript.NetServer.NSProjectEvent.SetAssociateId(Integer)
   type: Method
-  summary: "\nID of the person that ows the event (i.e. project)\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetAssociateId(Integer associateId)
     parameters:
     - id: associateId
       type: CRMScript.Global.Integer
-      description: 
+      description:  ID of the person that ows the event (project)
     return:
       type: CRMScript.Global.Void
   example: 
@@ -566,14 +566,14 @@ items:
   nameWithType: NSProjectEvent.SetDescription(String)
   fullName: CRMScript.NetServer.NSProjectEvent.SetDescription(String)
   type: Method
-  summary: "\nThe event description (i.e. the project text)\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetDescription(String description)
     parameters:
     - id: description
       type: CRMScript.Global.String
-      description: 
+      description:  The event description (the project text)
     return:
       type: CRMScript.Global.Void
   example: 
@@ -588,33 +588,38 @@ items:
   nameWithType: NSProjectEvent.SetEnabled(Bool)
   fullName: CRMScript.NetServer.NSProjectEvent.SetEnabled(Bool)
   type: Method
-  summary: "\nIf true the event is enabled (visible)\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetEnabled(Bool enabled)
     parameters:
     - id: enabled
       type: CRMScript.Global.Bool
-      description: 
+      description:  If true the event is enabled (visible)
     return:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProjectEvent thing;\nBool enabled;\nthing.SetEnabled(enabled);</code></pre>\n"
-- uid: CRMScript.NetServer.NSProjectEvent.SetEventDate()
-  commentId: M:CRMScript.NetServer.NSProjectEvent.SetEventDate()
-  id: 'SetEventDate()'
+- uid: CRMScript.NetServer.NSProjectEvent.SetEventDate(DateTime)
+  commentId: M:CRMScript.NetServer.NSProjectEvent.SetEventDate(DateTime)
+  id: 'SetEventDate(DateTime)'
   so.intellisense: NSProjectEvent.SetEventDate
   langs:
   - crmscript
-  name: 'SetEventDate()'
-  nameWithType: NSProjectEvent.SetEventDate()
-  fullName: CRMScript.NetServer.NSProjectEvent.SetEventDate()
+  name: 'SetEventDate(DateTime)'
+  nameWithType: NSProjectEvent.SetEventDate(DateTime)
+  fullName: CRMScript.NetServer.NSProjectEvent.SetEventDate(DateTime)
   type: Method
-  summary: "\nDate of the event. Event is not visible after this date.\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetEventDate(DateTime eventDate)
     parameters:
+    - id: eventDate
+      type: CRMScript.Global.DateTime
+      description: Date of the event. Event is not visible after this date.
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProjectEvent thing;\nDateTime eventDate;\nthing.SetEventDate(eventDate);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProjectEvent.SetEventName(String)
@@ -627,14 +632,14 @@ items:
   nameWithType: NSProjectEvent.SetEventName(String)
   fullName: CRMScript.NetServer.NSProjectEvent.SetEventName(String)
   type: Method
-  summary: "\nThe name of the event (i.e. the project name)\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetEventName(String eventName)
     parameters:
     - id: eventName
       type: CRMScript.Global.String
-      description: 
+      description: The name of the event (the project name)
     return:
       type: CRMScript.Global.Void
   example: 
@@ -649,14 +654,14 @@ items:
   nameWithType: NSProjectEvent.SetIsSignedOn(Bool)
   fullName: CRMScript.NetServer.NSProjectEvent.SetIsSignedOn(Bool)
   type: Method
-  summary: "\nTrue if the current user is signed on to the event (i.e. is project member)\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetIsSignedOn(Bool isSignedOn)
     parameters:
     - id: isSignedOn
       type: CRMScript.Global.Bool
-      description: 
+      description:  True if the current user is signed on to the event (is project member)
     return:
       type: CRMScript.Global.Void
   example: 
@@ -671,14 +676,14 @@ items:
   nameWithType: NSProjectEvent.SetProjectId(Integer)
   fullName: CRMScript.NetServer.NSProjectEvent.SetProjectId(Integer)
   type: Method
-  summary: "\nID of the project that represents the event\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetProjectId(Integer projectId)
     parameters:
     - id: projectId
       type: CRMScript.Global.Integer
-      description: 
+      description: ID of the project that represents the event
     return:
       type: CRMScript.Global.Void
   example: 
@@ -693,14 +698,14 @@ items:
   nameWithType: NSProjectEvent.SetSignOff(Bool)
   fullName: CRMScript.NetServer.NSProjectEvent.SetSignOff(Bool)
   type: Method
-  summary: "\nIf true, it is possible to sign off the event.\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetSignOff(Bool signOff)
     parameters:
     - id: signOff
       type: CRMScript.Global.Bool
-      description: 
+      description: If true, it is possible to sign off the event.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -715,14 +720,14 @@ items:
   nameWithType: NSProjectEvent.SetSignOffConfirmationText(String)
   fullName: CRMScript.NetServer.NSProjectEvent.SetSignOffConfirmationText(String)
   type: Method
-  summary: "\nText shown as confirmation text before accepting sign off.\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetSignOffConfirmationText(String signOffConfirmationText)
     parameters:
     - id: signOffConfirmationText
       type: CRMScript.Global.String
-      description: 
+      description: Text shown as confirmation text before accepting sign off.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -737,14 +742,14 @@ items:
   nameWithType: NSProjectEvent.SetSignOffPersonId(Integer)
   fullName: CRMScript.NetServer.NSProjectEvent.SetSignOffPersonId(Integer)
   type: Method
-  summary: "\nIf 0, the signOn Activity should go into the persons Our Contact; if not 0, this is the Person whose diary should get the activity\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetSignOffPersonId(Integer signOffPersonId)
     parameters:
     - id: signOffPersonId
       type: CRMScript.Global.Integer
-      description: 
+      description: If 0, the signOn Activity should go into the persons Our Contact; if not 0, this is the Person whose diary should get the activity
     return:
       type: CRMScript.Global.Void
   example: 
@@ -759,14 +764,14 @@ items:
   nameWithType: NSProjectEvent.SetSignOffTaskEnable(Bool)
   fullName: CRMScript.NetServer.NSProjectEvent.SetSignOffTaskEnable(Bool)
   type: Method
-  summary: "\nIf true, a task should be created when the external user signs off an event\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetSignOffTaskEnable(Bool signOffTaskEnable)
     parameters:
     - id: signOffTaskEnable
       type: CRMScript.Global.Bool
-      description: 
+      description: If true, a task should be created when the external user signs off an event
     return:
       type: CRMScript.Global.Void
   example: 
@@ -781,14 +786,14 @@ items:
   nameWithType: NSProjectEvent.SetSignOffTaskId(Integer)
   fullName: CRMScript.NetServer.NSProjectEvent.SetSignOffTaskId(Integer)
   type: Method
-  summary: "\nIf not 0, sign off should cause an Activity of this type to be registered\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetSignOffTaskId(Integer signOffTaskId)
     parameters:
     - id: signOffTaskId
       type: CRMScript.Global.Integer
-      description: 
+      description: If not 0, sign off should cause an Activity of this type to be registered
     return:
       type: CRMScript.Global.Void
   example: 
@@ -803,14 +808,14 @@ items:
   nameWithType: NSProjectEvent.SetSignOffText(String)
   fullName: CRMScript.NetServer.NSProjectEvent.SetSignOffText(String)
   type: Method
-  summary: "\nDefault text for the activity created when signing off.\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetSignOffText(String signOffText)
     parameters:
     - id: signOffText
       type: CRMScript.Global.String
-      description: 
+      description: Default text for the activity created when signing off.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -825,14 +830,14 @@ items:
   nameWithType: NSProjectEvent.SetSignOffTriggersAssign(Bool)
   fullName: CRMScript.NetServer.NSProjectEvent.SetSignOffTriggersAssign(Bool)
   type: Method
-  summary: "\nIf true, the sign off task should be created as an Assigned task, triggering the invitation dialog\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetSignOffTriggersAssign(Bool signOffTriggersAssign)
     parameters:
     - id: signOffTriggersAssign
       type: CRMScript.Global.Bool
-      description: 
+      description: If true, the sign off task should be created as an Assigned task, triggering the invitation dialog
     return:
       type: CRMScript.Global.Void
   example: 
@@ -847,14 +852,14 @@ items:
   nameWithType: NSProjectEvent.SetSignOn(Bool)
   fullName: CRMScript.NetServer.NSProjectEvent.SetSignOn(Bool)
   type: Method
-  summary: "\nIf true, it is possible to sign on the event.\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetSignOn(Bool signOn)
     parameters:
     - id: signOn
       type: CRMScript.Global.Bool
-      description: 
+      description: If true, it is possible to sign on the event.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -869,14 +874,14 @@ items:
   nameWithType: NSProjectEvent.SetSignOnConfirmationText(String)
   fullName: CRMScript.NetServer.NSProjectEvent.SetSignOnConfirmationText(String)
   type: Method
-  summary: "\nText shown as confirmation text before accepting sign on.\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetSignOnConfirmationText(String signOnConfirmationText)
     parameters:
     - id: signOnConfirmationText
       type: CRMScript.Global.String
-      description: 
+      description: Text shown as confirmation text before accepting sign on.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -891,14 +896,14 @@ items:
   nameWithType: NSProjectEvent.SetSignOnPersonId(Integer)
   fullName: CRMScript.NetServer.NSProjectEvent.SetSignOnPersonId(Integer)
   type: Method
-  summary: "\nIf 0, the signOn Activity should go into the persons Our Contact; if not 0, this is the Person whose diary should get the activity\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetSignOnPersonId(Integer signOnPersonId)
     parameters:
     - id: signOnPersonId
       type: CRMScript.Global.Integer
-      description: 
+      description: If 0, the signOn Activity should go into the persons Our Contact; if not 0, this is the Person whose diary should get the activity
     return:
       type: CRMScript.Global.Void
   example: 
@@ -913,14 +918,14 @@ items:
   nameWithType: NSProjectEvent.SetSignOnTaskEnable(Bool)
   fullName: CRMScript.NetServer.NSProjectEvent.SetSignOnTaskEnable(Bool)
   type: Method
-  summary: "\nIf true, a task should be created when the external user signs on an event\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetSignOnTaskEnable(Bool signOnTaskEnable)
     parameters:
     - id: signOnTaskEnable
       type: CRMScript.Global.Bool
-      description: 
+      description: If true, a task should be created when the external user signs on an event
     return:
       type: CRMScript.Global.Void
   example: 
@@ -935,14 +940,14 @@ items:
   nameWithType: NSProjectEvent.SetSignOnTaskId(Integer)
   fullName: CRMScript.NetServer.NSProjectEvent.SetSignOnTaskId(Integer)
   type: Method
-  summary: "\nIf not 0, sign on should cause an Activity of this type to be registered\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetSignOnTaskId(Integer signOnTaskId)
     parameters:
     - id: signOnTaskId
       type: CRMScript.Global.Integer
-      description: 
+      description: If not 0, sign on should cause an Activity of this type to be registered
     return:
       type: CRMScript.Global.Void
   example: 
@@ -957,14 +962,14 @@ items:
   nameWithType: NSProjectEvent.SetSignOnText(String)
   fullName: CRMScript.NetServer.NSProjectEvent.SetSignOnText(String)
   type: Method
-  summary: "\nDefault text for the activity created when signing on.\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetSignOnText(String signOnText)
     parameters:
     - id: signOnText
       type: CRMScript.Global.String
-      description: 
+      description: Default text for the activity created when signing on.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -979,14 +984,14 @@ items:
   nameWithType: NSProjectEvent.SetSignOnTriggersAssign(Bool)
   fullName: CRMScript.NetServer.NSProjectEvent.SetSignOnTriggersAssign(Bool)
   type: Method
-  summary: "\nIf true, the sign on task should be created as an Assigned task, triggering the invitation dialog\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetSignOnTriggersAssign(Bool signOnTriggersAssign)
     parameters:
     - id: signOnTriggersAssign
       type: CRMScript.Global.Bool
-      description: 
+      description: If true, the sign on task should be created as an Assigned task, triggering the invitation dialog
     return:
       type: CRMScript.Global.Void
   example: 

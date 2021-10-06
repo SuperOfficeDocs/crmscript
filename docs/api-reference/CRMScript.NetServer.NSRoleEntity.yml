@@ -6,6 +6,7 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSRoleEntity.#ctor
   - CRMScript.NetServer.NSRoleEntity.GetCreated()
   - CRMScript.NetServer.NSRoleEntity.GetCreatedBy()
   - CRMScript.NetServer.NSRoleEntity.GetDataRights()
@@ -18,18 +19,17 @@ items:
   - CRMScript.NetServer.NSRoleEntity.GetUpdated()
   - CRMScript.NetServer.NSRoleEntity.GetUpdatedBy()
   - CRMScript.NetServer.NSRoleEntity.GetUseCategories()
-  - CRMScript.NetServer.NSRoleEntity.#ctor
-  - CRMScript.NetServer.NSRoleEntity.SetCreated()
-  - CRMScript.NetServer.NSRoleEntity.SetCreatedBy()
-  - CRMScript.NetServer.NSRoleEntity.SetDataRights()
+  - CRMScript.NetServer.NSRoleEntity.SetCreated(DateTime)
+  - CRMScript.NetServer.NSRoleEntity.SetCreatedBy(NSAssociate)
+  - CRMScript.NetServer.NSRoleEntity.SetDataRights(NSDataRights)
   - CRMScript.NetServer.NSRoleEntity.SetDeleted(Integer)
   - CRMScript.NetServer.NSRoleEntity.SetName(String)
   - CRMScript.NetServer.NSRoleEntity.SetRank(Integer)
   - CRMScript.NetServer.NSRoleEntity.SetRoleId(Integer)
   - CRMScript.NetServer.NSRoleEntity.SetRoleType(Integer)
   - CRMScript.NetServer.NSRoleEntity.SetTooltip(String)
-  - CRMScript.NetServer.NSRoleEntity.SetUpdated()
-  - CRMScript.NetServer.NSRoleEntity.SetUpdatedBy()
+  - CRMScript.NetServer.NSRoleEntity.SetUpdated(DateTime)
+  - CRMScript.NetServer.NSRoleEntity.SetUpdatedBy(NSAssociate)
   - CRMScript.NetServer.NSRoleEntity.SetUseCategories(Integer)
   name: NSRoleEntity
   nameWithType: NSRoleEntity
@@ -37,243 +37,6 @@ items:
   type: Class
   summary: 
   example: 
-- uid: CRMScript.NetServer.NSRoleEntity.GetCreated()
-  commentId: M:CRMScript.NetServer.NSRoleEntity.GetCreated()
-  id: 'GetCreated()'
-  so.intellisense: NSRoleEntity.GetCreated
-  langs:
-  - crmscript
-  name: 'GetCreated()'
-  nameWithType: NSRoleEntity.GetCreated()
-  fullName: CRMScript.NetServer.NSRoleEntity.GetCreated()
-  type: Method
-  summary: "\nRegistered when\n"
-  remarks: 
-  syntax: 
-    content: DateTime GetCreated()
-    parameters: []
-    return:
-      type: CRMScript.Global.DateTime
-      description:
-  example: 
-  - "\n<pre><code>NSRoleEntity thing;\nDateTime created = thing.GetCreated();</code></pre>\n"
-- uid: CRMScript.NetServer.NSRoleEntity.GetCreatedBy()
-  commentId: M:CRMScript.NetServer.NSRoleEntity.GetCreatedBy()
-  id: 'GetCreatedBy()'
-  so.intellisense: NSRoleEntity.GetCreatedBy
-  langs:
-  - crmscript
-  name: 'GetCreatedBy()'
-  nameWithType: NSRoleEntity.GetCreatedBy()
-  fullName: CRMScript.NetServer.NSRoleEntity.GetCreatedBy()
-  type: Method
-  summary: "\nCreated by user\n"
-  remarks: 
-  syntax: 
-    content: NSAssociate GetCreatedBy()
-    parameters: []
-    return:
-      type: CRMScript.NetServer.NSAssociate
-  example: 
-  - "\n<pre><code>NSRoleEntity thing;\nNSAssociate createdBy = thing.GetCreatedBy();</code></pre>\n"
-- uid: CRMScript.NetServer.NSRoleEntity.GetDataRights()
-  commentId: M:CRMScript.NetServer.NSRoleEntity.GetDataRights()
-  id: 'GetDataRights()'
-  so.intellisense: NSRoleEntity.GetDataRights
-  langs:
-  - crmscript
-  name: 'GetDataRights()'
-  nameWithType: NSRoleEntity.GetDataRights()
-  fullName: CRMScript.NetServer.NSRoleEntity.GetDataRights()
-  type: Method
-  summary: "\nData rights matrix* defines role's access to data owned by current user, users in same group, and other users.\n"
-  remarks: 
-  syntax: 
-    content: DataRights GetDataRights()
-    parameters: []
-    return:
-      type: CRMScript.Native.DataRights
-  example: 
-  - "\n<pre><code>NSRoleEntity thing;\nDataRights dataRights = thing.GetDataRights();</code></pre>\n"
-- uid: CRMScript.NetServer.NSRoleEntity.GetDeleted()
-  commentId: M:CRMScript.NetServer.NSRoleEntity.GetDeleted()
-  id: 'GetDeleted()'
-  so.intellisense: NSRoleEntity.GetDeleted
-  langs:
-  - crmscript
-  name: 'GetDeleted()'
-  nameWithType: NSRoleEntity.GetDeleted()
-  fullName: CRMScript.NetServer.NSRoleEntity.GetDeleted()
-  type: Method
-  summary: "\n1 if role has been deleted (we do not actually delete)\n"
-  remarks: 
-  syntax: 
-    content: Integer GetDeleted()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSRoleEntity thing;\nInteger deleted = thing.GetDeleted();</code></pre>\n"
-- uid: CRMScript.NetServer.NSRoleEntity.GetName()
-  commentId: M:CRMScript.NetServer.NSRoleEntity.GetName()
-  id: 'GetName()'
-  so.intellisense: NSRoleEntity.GetName
-  langs:
-  - crmscript
-  name: 'GetName()'
-  nameWithType: NSRoleEntity.GetName()
-  fullName: CRMScript.NetServer.NSRoleEntity.GetName()
-  type: Method
-  summary: "\nVisible role name\n"
-  remarks: 
-  syntax: 
-    content: String GetName()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSRoleEntity thing;\nString name = thing.GetName();</code></pre>\n"
-- uid: CRMScript.NetServer.NSRoleEntity.GetRank()
-  commentId: M:CRMScript.NetServer.NSRoleEntity.GetRank()
-  id: 'GetRank()'
-  so.intellisense: NSRoleEntity.GetRank
-  langs:
-  - crmscript
-  name: 'GetRank()'
-  nameWithType: NSRoleEntity.GetRank()
-  fullName: CRMScript.NetServer.NSRoleEntity.GetRank()
-  type: Method
-  summary: "\nSorting rank of this role in lists\n"
-  remarks: 
-  syntax: 
-    content: Integer GetRank()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSRoleEntity thing;\nInteger rank = thing.GetRank();</code></pre>\n"
-- uid: CRMScript.NetServer.NSRoleEntity.GetRoleId()
-  commentId: M:CRMScript.NetServer.NSRoleEntity.GetRoleId()
-  id: 'GetRoleId()'
-  so.intellisense: NSRoleEntity.GetRoleId
-  langs:
-  - crmscript
-  name: 'GetRoleId()'
-  nameWithType: NSRoleEntity.GetRoleId()
-  fullName: CRMScript.NetServer.NSRoleEntity.GetRoleId()
-  type: Method
-  summary: "\nPrimary key\n"
-  remarks: 
-  syntax: 
-    content: Integer GetRoleId()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSRoleEntity thing;\nInteger roleId = thing.GetRoleId();</code></pre>\n"
-- uid: CRMScript.NetServer.NSRoleEntity.GetRoleType()
-  commentId: M:CRMScript.NetServer.NSRoleEntity.GetRoleType()
-  id: 'GetRoleType()'
-  so.intellisense: NSRoleEntity.GetRoleType
-  langs:
-  - crmscript
-  name: 'GetRoleType()'
-  nameWithType: NSRoleEntity.GetRoleType()
-  fullName: CRMScript.NetServer.NSRoleEntity.GetRoleType()
-  type: Method
-  summary: "\nThe role type. Note that changing this field has no effect, so treat this as a read-only field.<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<ul><li>Enum: 0 = Employee</li><li>Enum: 1 = ExternalUser</li><li>Enum: 2 = Anonymous</li><li>Enum: 3 = System</li></ul><pre><code>NSRoleEntity thing;\nInteger roleType = thing.GetRoleType();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: Integer GetRoleType()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSRoleEntity thing;\nInteger roleType = thing.GetRoleType();</code></pre>\n"
-- uid: CRMScript.NetServer.NSRoleEntity.GetTooltip()
-  commentId: M:CRMScript.NetServer.NSRoleEntity.GetTooltip()
-  id: 'GetTooltip()'
-  so.intellisense: NSRoleEntity.GetTooltip
-  langs:
-  - crmscript
-  name: 'GetTooltip()'
-  nameWithType: NSRoleEntity.GetTooltip()
-  fullName: CRMScript.NetServer.NSRoleEntity.GetTooltip()
-  type: Method
-  summary: "\nDescription of the role.\n"
-  remarks: 
-  syntax: 
-    content: String GetTooltip()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSRoleEntity thing;\nString tooltip = thing.GetTooltip();</code></pre>\n"
-- uid: CRMScript.NetServer.NSRoleEntity.GetUpdated()
-  commentId: M:CRMScript.NetServer.NSRoleEntity.GetUpdated()
-  id: 'GetUpdated()'
-  so.intellisense: NSRoleEntity.GetUpdated
-  langs:
-  - crmscript
-  name: 'GetUpdated()'
-  nameWithType: NSRoleEntity.GetUpdated()
-  fullName: CRMScript.NetServer.NSRoleEntity.GetUpdated()
-  type: Method
-  summary: "\nLast updated when\n"
-  remarks: 
-  syntax: 
-    content: DateTime GetUpdated()
-    parameters: []
-    return:
-      type: CRMScript.Global.DateTime
-      description:
-  example: 
-  - "\n<pre><code>NSRoleEntity thing;\nDateTime updated = thing.GetUpdated();</code></pre>\n"
-- uid: CRMScript.NetServer.NSRoleEntity.GetUpdatedBy()
-  commentId: M:CRMScript.NetServer.NSRoleEntity.GetUpdatedBy()
-  id: 'GetUpdatedBy()'
-  so.intellisense: NSRoleEntity.GetUpdatedBy
-  langs:
-  - crmscript
-  name: 'GetUpdatedBy()'
-  nameWithType: NSRoleEntity.GetUpdatedBy()
-  fullName: CRMScript.NetServer.NSRoleEntity.GetUpdatedBy()
-  type: Method
-  summary: "\nLast updated by user\n"
-  remarks: 
-  syntax: 
-    content: NSAssociate GetUpdatedBy()
-    parameters: []
-    return:
-      type: CRMScript.NetServer.NSAssociate
-  example: 
-  - "\n<pre><code>NSRoleEntity thing;\nNSAssociate updatedBy = thing.GetUpdatedBy();</code></pre>\n"
-- uid: CRMScript.NetServer.NSRoleEntity.GetUseCategories()
-  commentId: M:CRMScript.NetServer.NSRoleEntity.GetUseCategories()
-  id: 'GetUseCategories()'
-  so.intellisense: NSRoleEntity.GetUseCategories
-  langs:
-  - crmscript
-  name: 'GetUseCategories()'
-  nameWithType: NSRoleEntity.GetUseCategories()
-  fullName: CRMScript.NetServer.NSRoleEntity.GetUseCategories()
-  type: Method
-  summary: "\nApply role category membership to users\n"
-  remarks: 
-  syntax: 
-    content: Integer GetUseCategories()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSRoleEntity thing;\nInteger useCategories = thing.GetUseCategories();</code></pre>\n"
 - uid: CRMScript.NetServer.NSRoleEntity.#ctor
   commentId: M:CRMScript.NetServer.NSRoleEntity.#ctor
   id: '#ctor'
@@ -289,57 +52,312 @@ items:
   syntax: 
     content: NSRoleEntity
   example: 
-- uid: CRMScript.NetServer.NSRoleEntity.SetCreated()
-  commentId: M:CRMScript.NetServer.NSRoleEntity.SetCreated()
-  id: 'SetCreated()'
+- uid: CRMScript.NetServer.NSRoleEntity.GetCreated()
+  commentId: M:CRMScript.NetServer.NSRoleEntity.GetCreated()
+  id: 'GetCreated()'
+  so.intellisense: NSRoleEntity.GetCreated
+  langs:
+  - crmscript
+  name: 'GetCreated()'
+  nameWithType: NSRoleEntity.GetCreated()
+  fullName: CRMScript.NetServer.NSRoleEntity.GetCreated()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: DateTime GetCreated()
+    parameters: []
+    return:
+      type: CRMScript.Global.DateTime
+      description: Registered when
+  example: 
+  - "\n<pre><code>NSRoleEntity thing;\nDateTime created = thing.GetCreated();</code></pre>\n"
+- uid: CRMScript.NetServer.NSRoleEntity.GetCreatedBy()
+  commentId: M:CRMScript.NetServer.NSRoleEntity.GetCreatedBy()
+  id: 'GetCreatedBy()'
+  so.intellisense: NSRoleEntity.GetCreatedBy
+  langs:
+  - crmscript
+  name: 'GetCreatedBy()'
+  nameWithType: NSRoleEntity.GetCreatedBy()
+  fullName: CRMScript.NetServer.NSRoleEntity.GetCreatedBy()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: NSAssociate GetCreatedBy()
+    parameters: []
+    return:
+      type: CRMScript.NetServer.NSAssociate
+      description: Created by user
+  example: 
+  - "\n<pre><code>NSRoleEntity thing;\nNSAssociate createdBy = thing.GetCreatedBy();</code></pre>\n"
+- uid: CRMScript.NetServer.NSRoleEntity.GetDataRights()
+  commentId: M:CRMScript.NetServer.NSRoleEntity.GetDataRights()
+  id: 'GetDataRights()'
+  so.intellisense: NSRoleEntity.GetDataRights
+  langs:
+  - crmscript
+  name: 'GetDataRights()'
+  nameWithType: NSRoleEntity.GetDataRights()
+  fullName: CRMScript.NetServer.NSRoleEntity.GetDataRights()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: DataRights GetDataRights()
+    parameters: []
+    return:
+      type: CRMScript.Native.DataRights
+      description: Data rights matrix, defines role's access to data owned by current user, users in same group, and other users.
+  example: 
+  - "\n<pre><code>NSRoleEntity thing;\nDataRights dataRights = thing.GetDataRights();</code></pre>\n"
+- uid: CRMScript.NetServer.NSRoleEntity.GetDeleted()
+  commentId: M:CRMScript.NetServer.NSRoleEntity.GetDeleted()
+  id: 'GetDeleted()'
+  so.intellisense: NSRoleEntity.GetDeleted
+  langs:
+  - crmscript
+  name: 'GetDeleted()'
+  nameWithType: NSRoleEntity.GetDeleted()
+  fullName: CRMScript.NetServer.NSRoleEntity.GetDeleted()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Integer GetDeleted()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: 1 if role has been deleted (we do not actually delete)
+  example: 
+  - "\n<pre><code>NSRoleEntity thing;\nInteger deleted = thing.GetDeleted();</code></pre>\n"
+- uid: CRMScript.NetServer.NSRoleEntity.GetName()
+  commentId: M:CRMScript.NetServer.NSRoleEntity.GetName()
+  id: 'GetName()'
+  so.intellisense: NSRoleEntity.GetName
+  langs:
+  - crmscript
+  name: 'GetName()'
+  nameWithType: NSRoleEntity.GetName()
+  fullName: CRMScript.NetServer.NSRoleEntity.GetName()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetName()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Visible role name
+  example: 
+  - "\n<pre><code>NSRoleEntity thing;\nString name = thing.GetName();</code></pre>\n"
+- uid: CRMScript.NetServer.NSRoleEntity.GetRank()
+  commentId: M:CRMScript.NetServer.NSRoleEntity.GetRank()
+  id: 'GetRank()'
+  so.intellisense: NSRoleEntity.GetRank
+  langs:
+  - crmscript
+  name: 'GetRank()'
+  nameWithType: NSRoleEntity.GetRank()
+  fullName: CRMScript.NetServer.NSRoleEntity.GetRank()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Integer GetRank()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: Sorting rank of this role in lists
+  example: 
+  - "\n<pre><code>NSRoleEntity thing;\nInteger rank = thing.GetRank();</code></pre>\n"
+- uid: CRMScript.NetServer.NSRoleEntity.GetRoleId()
+  commentId: M:CRMScript.NetServer.NSRoleEntity.GetRoleId()
+  id: 'GetRoleId()'
+  so.intellisense: NSRoleEntity.GetRoleId
+  langs:
+  - crmscript
+  name: 'GetRoleId()'
+  nameWithType: NSRoleEntity.GetRoleId()
+  fullName: CRMScript.NetServer.NSRoleEntity.GetRoleId()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Integer GetRoleId()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: Primary key
+  example: 
+  - "\n<pre><code>NSRoleEntity thing;\nInteger roleId = thing.GetRoleId();</code></pre>\n"
+- uid: CRMScript.NetServer.NSRoleEntity.GetRoleType()
+  commentId: M:CRMScript.NetServer.NSRoleEntity.GetRoleType()
+  id: 'GetRoleType()'
+  so.intellisense: NSRoleEntity.GetRoleType
+  langs:
+  - crmscript
+  name: 'GetRoleType()'
+  nameWithType: NSRoleEntity.GetRoleType()
+  fullName: CRMScript.NetServer.NSRoleEntity.GetRoleType()
+  type: Method
+  summary: "\n<ul><li>Enum: 0 = Employee</li><li>Enum: 1 = ExternalUser</li><li>Enum: 2 = Anonymous</li><li>Enum: 3 = System</li></ul>\n"
+  remarks: "\nChanging this field has no effect, so treat this as a read-only field.\n"
+  syntax: 
+    content: Integer GetRoleType()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: The role type. 
+  example: 
+  - "\n<pre><code>NSRoleEntity thing;\nInteger roleType = thing.GetRoleType();</code></pre>\n"
+- uid: CRMScript.NetServer.NSRoleEntity.GetTooltip()
+  commentId: M:CRMScript.NetServer.NSRoleEntity.GetTooltip()
+  id: 'GetTooltip()'
+  so.intellisense: NSRoleEntity.GetTooltip
+  langs:
+  - crmscript
+  name: 'GetTooltip()'
+  nameWithType: NSRoleEntity.GetTooltip()
+  fullName: CRMScript.NetServer.NSRoleEntity.GetTooltip()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetTooltip()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Description of the role.
+  example: 
+  - "\n<pre><code>NSRoleEntity thing;\nString tooltip = thing.GetTooltip();</code></pre>\n"
+- uid: CRMScript.NetServer.NSRoleEntity.GetUpdated()
+  commentId: M:CRMScript.NetServer.NSRoleEntity.GetUpdated()
+  id: 'GetUpdated()'
+  so.intellisense: NSRoleEntity.GetUpdated
+  langs:
+  - crmscript
+  name: 'GetUpdated()'
+  nameWithType: NSRoleEntity.GetUpdated()
+  fullName: CRMScript.NetServer.NSRoleEntity.GetUpdated()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: DateTime GetUpdated()
+    parameters: []
+    return:
+      type: CRMScript.Global.DateTime
+      description: Last updated when
+  example: 
+  - "\n<pre><code>NSRoleEntity thing;\nDateTime updated = thing.GetUpdated();</code></pre>\n"
+- uid: CRMScript.NetServer.NSRoleEntity.GetUpdatedBy()
+  commentId: M:CRMScript.NetServer.NSRoleEntity.GetUpdatedBy()
+  id: 'GetUpdatedBy()'
+  so.intellisense: NSRoleEntity.GetUpdatedBy
+  langs:
+  - crmscript
+  name: 'GetUpdatedBy()'
+  nameWithType: NSRoleEntity.GetUpdatedBy()
+  fullName: CRMScript.NetServer.NSRoleEntity.GetUpdatedBy()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: NSAssociate GetUpdatedBy()
+    parameters: []
+    return:
+      type: CRMScript.NetServer.NSAssociate
+      describing: Last updated by user
+  example: 
+  - "\n<pre><code>NSRoleEntity thing;\nNSAssociate updatedBy = thing.GetUpdatedBy();</code></pre>\n"
+- uid: CRMScript.NetServer.NSRoleEntity.GetUseCategories()
+  commentId: M:CRMScript.NetServer.NSRoleEntity.GetUseCategories()
+  id: 'GetUseCategories()'
+  so.intellisense: NSRoleEntity.GetUseCategories
+  langs:
+  - crmscript
+  name: 'GetUseCategories()'
+  nameWithType: NSRoleEntity.GetUseCategories()
+  fullName: CRMScript.NetServer.NSRoleEntity.GetUseCategories()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Integer GetUseCategories()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: Apply role category membership to users
+  example: 
+  - "\n<pre><code>NSRoleEntity thing;\nInteger useCategories = thing.GetUseCategories();</code></pre>\n"
+- uid: CRMScript.NetServer.NSRoleEntity.SetCreated(DateTime)
+  commentId: M:CRMScript.NetServer.NSRoleEntity.SetCreated(DateTime)
+  id: 'SetCreated(DateTime)'
   so.intellisense: NSRoleEntity.SetCreated
   langs:
   - crmscript
-  name: 'SetCreated()'
-  nameWithType: NSRoleEntity.SetCreated()
-  fullName: CRMScript.NetServer.NSRoleEntity.SetCreated()
+  name: 'SetCreated(DateTime)'
+  nameWithType: NSRoleEntity.SetCreated(DateTime)
+  fullName: CRMScript.NetServer.NSRoleEntity.SetCreated(DateTime)
   type: Method
-  summary: "\nRegistered when\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetCreated(DateTime created)
     parameters:
+    - id: created
+      type: CRMScript.Global.DateTime
+      description: Registered when
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSRoleEntity thing;\nDateTime created;\nthing.SetCreated(created);</code></pre>\n"
-- uid: CRMScript.NetServer.NSRoleEntity.SetCreatedBy()
-  commentId: M:CRMScript.NetServer.NSRoleEntity.SetCreatedBy()
-  id: 'SetCreatedBy()'
+- uid: CRMScript.NetServer.NSRoleEntity.SetCreatedBy(NSAssociate)
+  commentId: M:CRMScript.NetServer.NSRoleEntity.SetCreatedBy(NSAssociate)
+  id: 'SetCreatedBy(NSAssociate)'
   so.intellisense: NSRoleEntity.SetCreatedBy
   langs:
   - crmscript
-  name: 'SetCreatedBy()'
-  nameWithType: NSRoleEntity.SetCreatedBy()
-  fullName: CRMScript.NetServer.NSRoleEntity.SetCreatedBy()
+  name: 'SetCreatedBy(NSAssociate)'
+  nameWithType: NSRoleEntity.SetCreatedBy(NSAssociate)
+  fullName: CRMScript.NetServer.NSRoleEntity.SetCreatedBy(NSAssociate)
   type: Method
-  summary: "\nCreated by user\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetCreatedBy(NSAssociate createdBy)
     parameters:
+    - id: createdBy
+      type: CRMScript.NetServer.NSAssociate
+      description: Created by user
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSRoleEntity thing;\nNSAssociate createdBy;\nthing.SetCreatedBy(createdBy);</code></pre>\n"
-- uid: CRMScript.NetServer.NSRoleEntity.SetDataRights()
-  commentId: M:CRMScript.NetServer.NSRoleEntity.SetDataRights()
-  id: 'SetDataRights()'
+- uid: CRMScript.NetServer.NSRoleEntity.SetDataRights(NSDataRights)
+  commentId: M:CRMScript.NetServer.NSRoleEntity.SetDataRights(NSDataRights)
+  id: 'SetDataRights(NSDataRights)'
   so.intellisense: NSRoleEntity.SetDataRights
   langs:
   - crmscript
-  name: 'SetDataRights()'
-  nameWithType: NSRoleEntity.SetDataRights()
-  fullName: CRMScript.NetServer.NSRoleEntity.SetDataRights()
+  name: 'SetDataRights(NSDataRights)'
+  nameWithType: NSRoleEntity.SetDataRights(NSDataRights)
+  fullName: CRMScript.NetServer.NSRoleEntity.SetDataRights(NSDataRights)
   type: Method
-  summary: "\nData rights matrix* defines role's access to data owned by current user, users in same group, and other users.\n"
+  summary: ""
   remarks: 
   syntax: 
-    content: Void SetDataRights(DataRights dataRights)
+    content: Void SetDataRights(NSDataRights dataRights)
     parameters:
+    - id: dataRights
+      type: CRMScript.NetServer.NSDataRights
+      description: Data rights matrix, defines role's access to data owned by current user, users in same group, and other users.
+    return:
+      type: CRMScript.Global.Void
   example: 
-  - "\n<pre><code>NSRoleEntity thing;\nDataRights dataRights;\nthing.SetDataRights(dataRights);</code></pre>\n"
+  - "\n<pre><code>NSRoleEntity thing;\nNSDataRights dataRights;\nthing.SetDataRights(dataRights);</code></pre>\n"
 - uid: CRMScript.NetServer.NSRoleEntity.SetDeleted(Integer)
   commentId: M:CRMScript.NetServer.NSRoleEntity.SetDeleted(Integer)
   id: 'SetDeleted(Integer)'
@@ -350,14 +368,14 @@ items:
   nameWithType: NSRoleEntity.SetDeleted(Integer)
   fullName: CRMScript.NetServer.NSRoleEntity.SetDeleted(Integer)
   type: Method
-  summary: "\n1 if role has been deleted (we do not actually delete)\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetDeleted(Integer deleted)
     parameters:
     - id: deleted
       type: CRMScript.Global.Integer
-      description: 
+      description: 1 if role has been deleted (we do not actually delete)
     return:
       type: CRMScript.Global.Void
   example: 
@@ -372,14 +390,14 @@ items:
   nameWithType: NSRoleEntity.SetName(String)
   fullName: CRMScript.NetServer.NSRoleEntity.SetName(String)
   type: Method
-  summary: "\nVisible role name\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetName(String name)
     parameters:
     - id: name
       type: CRMScript.Global.String
-      description: 
+      description: Visible role name
     return:
       type: CRMScript.Global.Void
   example: 
@@ -394,14 +412,14 @@ items:
   nameWithType: NSRoleEntity.SetRank(Integer)
   fullName: CRMScript.NetServer.NSRoleEntity.SetRank(Integer)
   type: Method
-  summary: "\nSorting rank of this role in lists\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetRank(Integer rank)
     parameters:
     - id: rank
       type: CRMScript.Global.Integer
-      description: 
+      description: Sorting rank of this role in lists
     return:
       type: CRMScript.Global.Void
   example: 
@@ -416,14 +434,14 @@ items:
   nameWithType: NSRoleEntity.SetRoleId(Integer)
   fullName: CRMScript.NetServer.NSRoleEntity.SetRoleId(Integer)
   type: Method
-  summary: "\nPrimary key\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetRoleId(Integer roleId)
     parameters:
     - id: roleId
       type: CRMScript.Global.Integer
-      description: 
+      description: Primary key
     return:
       type: CRMScript.Global.Void
   example: 
@@ -438,14 +456,14 @@ items:
   nameWithType: NSRoleEntity.SetRoleType(Integer)
   fullName: CRMScript.NetServer.NSRoleEntity.SetRoleType(Integer)
   type: Method
-  summary: "\nThe role type. Note that changing this field has no effect, so treat this as a read-only field.\n"
-  remarks: "\n<p>See enum roleType.</p>\n"
+  summary: ""
+  remarks: ""
   syntax: 
     content: Void SetRoleType(Integer roleType)
     parameters:
     - id: roleType
       type: CRMScript.Global.Integer
-      description: 
+      description: The role type. Note that changing this field has no effect, so treat this as a read-only field. See enum roleType.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -460,50 +478,60 @@ items:
   nameWithType: NSRoleEntity.SetTooltip(String)
   fullName: CRMScript.NetServer.NSRoleEntity.SetTooltip(String)
   type: Method
-  summary: "\nDescription of the role.\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetTooltip(String tooltip)
     parameters:
     - id: tooltip
       type: CRMScript.Global.String
-      description: 
+      description: Description of the role.
     return:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSRoleEntity thing;\nString tooltip;\nthing.SetTooltip(tooltip);</code></pre>\n"
-- uid: CRMScript.NetServer.NSRoleEntity.SetUpdated()
-  commentId: M:CRMScript.NetServer.NSRoleEntity.SetUpdated()
-  id: 'SetUpdated()'
+- uid: CRMScript.NetServer.NSRoleEntity.SetUpdated(DateTime)
+  commentId: M:CRMScript.NetServer.NSRoleEntity.SetUpdated(DateTime)
+  id: 'SetUpdated(DateTime)'
   so.intellisense: NSRoleEntity.SetUpdated
   langs:
   - crmscript
-  name: 'SetUpdated()'
-  nameWithType: NSRoleEntity.SetUpdated()
-  fullName: CRMScript.NetServer.NSRoleEntity.SetUpdated()
+  name: 'SetUpdated(DateTime)'
+  nameWithType: NSRoleEntity.SetUpdated(DateTime)
+  fullName: CRMScript.NetServer.NSRoleEntity.SetUpdated(DateTime)
   type: Method
-  summary: "\nLast updated when\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetUpdated(DateTime updated)
     parameters:
+    - id: updated
+      type: CRMScript.Global.DateTime
+      description: Last updated when
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSRoleEntity thing;\nDateTime updated;\nthing.SetUpdated(updated);</code></pre>\n"
-- uid: CRMScript.NetServer.NSRoleEntity.SetUpdatedBy()
-  commentId: M:CRMScript.NetServer.NSRoleEntity.SetUpdatedBy()
-  id: 'SetUpdatedBy()'
+- uid: CRMScript.NetServer.NSRoleEntity.SetUpdatedBy(NSAssociate)
+  commentId: M:CRMScript.NetServer.NSRoleEntity.SetUpdatedBy(NSAssociate)
+  id: 'SetUpdatedBy(NSAssociate)'
   so.intellisense: NSRoleEntity.SetUpdatedBy
   langs:
   - crmscript
-  name: 'SetUpdatedBy()'
-  nameWithType: NSRoleEntity.SetUpdatedBy()
-  fullName: CRMScript.NetServer.NSRoleEntity.SetUpdatedBy()
+  name: 'SetUpdatedBy(NSAssociate)'
+  nameWithType: NSRoleEntity.SetUpdatedBy(NSAssociate)
+  fullName: CRMScript.NetServer.NSRoleEntity.SetUpdatedBy(NSAssociate)
   type: Method
-  summary: "\nLast updated by user\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetUpdatedBy(NSAssociate updatedBy)
     parameters:
+    - id: updatedBy
+      type: CRMScript.NetServer.NSAssociate
+      description: Last updated by user
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSRoleEntity thing;\nNSAssociate updatedBy;\nthing.SetUpdatedBy(updatedBy);</code></pre>\n"
 - uid: CRMScript.NetServer.NSRoleEntity.SetUseCategories(Integer)
@@ -516,14 +544,14 @@ items:
   nameWithType: NSRoleEntity.SetUseCategories(Integer)
   fullName: CRMScript.NetServer.NSRoleEntity.SetUseCategories(Integer)
   type: Method
-  summary: "\nApply role category membership to users\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetUseCategories(Integer useCategories)
     parameters:
     - id: useCategories
       type: CRMScript.Global.Integer
-      description: 
+      description: Apply role category membership to users
     return:
       type: CRMScript.Global.Void
   example: 
@@ -547,12 +575,12 @@ references:
   name: NSAssociate
   nameWithType: NSAssociate
   fullName: CRMScript.NetServer.NSAssociate
-- uid: CRMScript.Native.DataRights
-  commentId: T:CRMScript.Native.DataRights
+- uid: CRMScript.NetServer.NSDataRights
+  commentId: T:CRMScript.NetServer.NSDataRights
   isExternal: true
-  name: DataRights
-  nameWithType: DataRights
-  fullName: CRMScript.Native.DataRights
+  name: NSDataRights
+  nameWithType: NSDataRights
+  fullName: CRMScript.NetServer.NSDataRights
 - uid: CRMScript.Global.Integer
   commentId: T:CRMScript.Global.Integer
   isExternal: true

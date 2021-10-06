@@ -6,13 +6,13 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSRecurrenceDate.#ctor
   - CRMScript.NetServer.NSRecurrenceDate.GetDate()
   - CRMScript.NetServer.NSRecurrenceDate.GetDescription()
   - CRMScript.NetServer.NSRecurrenceDate.GetDescriptionStyleHint()
   - CRMScript.NetServer.NSRecurrenceDate.GetIsConflict()
   - CRMScript.NetServer.NSRecurrenceDate.GetTooltip()
-  - CRMScript.NetServer.NSRecurrenceDate.#ctor
-  - CRMScript.NetServer.NSRecurrenceDate.SetDate()
+  - CRMScript.NetServer.NSRecurrenceDate.SetDate(DateTime)
   - CRMScript.NetServer.NSRecurrenceDate.SetDescription(String)
   - CRMScript.NetServer.NSRecurrenceDate.SetDescriptionStyleHint(String)
   - CRMScript.NetServer.NSRecurrenceDate.SetIsConflict(Bool)
@@ -22,96 +22,6 @@ items:
   fullName: CRMScript.NetServer.NSRecurrenceDate
   type: Class
   summary: 
-  example: 
-- uid: CRMScript.NetServer.NSRecurrenceDate.GetDate()
-  commentId: M:CRMScript.NetServer.NSRecurrenceDate.GetDate()
-  id: 'GetDate()'
-  so.intellisense: NSRecurrenceDate.GetDate
-  langs:
-  - crmscript
-  name: 'GetDate()'
-  nameWithType: NSRecurrenceDate.GetDate()
-  fullName: CRMScript.NetServer.NSRecurrenceDate.GetDate()
-  type: Method
-  summary: "\nThe date of the recurring appointment.\n"
-  remarks: 
-  syntax: 
-    content: GetDate()
-    parameters: []
-    return:
-      type: CRMScript.Global.Void
-  example: 
-- uid: CRMScript.NetServer.NSRecurrenceDate.GetDescription()
-  commentId: M:CRMScript.NetServer.NSRecurrenceDate.GetDescription()
-  id: 'GetDescription()'
-  so.intellisense: NSRecurrenceDate.GetDescription
-  langs:
-  - crmscript
-  name: 'GetDescription()'
-  nameWithType: NSRecurrenceDate.GetDescription()
-  fullName: CRMScript.NetServer.NSRecurrenceDate.GetDescription()
-  type: Method
-  summary: "\nAny description, such as red letter day info, or marked dates\n"
-  remarks: 
-  syntax: 
-    content: GetDescription()
-    parameters: []
-    return:
-      type: CRMScript.Global.Void
-  example: 
-- uid: CRMScript.NetServer.NSRecurrenceDate.GetDescriptionStyleHint()
-  commentId: M:CRMScript.NetServer.NSRecurrenceDate.GetDescriptionStyleHint()
-  id: 'GetDescriptionStyleHint()'
-  so.intellisense: NSRecurrenceDate.GetDescriptionStyleHint
-  langs:
-  - crmscript
-  name: 'GetDescriptionStyleHint()'
-  nameWithType: NSRecurrenceDate.GetDescriptionStyleHint()
-  fullName: CRMScript.NetServer.NSRecurrenceDate.GetDescriptionStyleHint()
-  type: Method
-  summary: 
-  remarks: 
-  syntax: 
-    content: GetDescriptionStyleHint()
-    parameters: []
-    return:
-      type: CRMScript.Global.Void
-  example: 
-- uid: CRMScript.NetServer.NSRecurrenceDate.GetIsConflict()
-  commentId: M:CRMScript.NetServer.NSRecurrenceDate.GetIsConflict()
-  id: 'GetIsConflict()'
-  so.intellisense: NSRecurrenceDate.GetIsConflict
-  langs:
-  - crmscript
-  name: 'GetIsConflict()'
-  nameWithType: NSRecurrenceDate.GetIsConflict()
-  fullName: CRMScript.NetServer.NSRecurrenceDate.GetIsConflict()
-  type: Method
-  summary: "\nTrue if this date creates a conflict.\n"
-  remarks: 
-  syntax: 
-    content: GetIsConflict()
-    parameters: []
-    return:
-      type: CRMScript.Global.Void
-  example: 
-- uid: CRMScript.NetServer.NSRecurrenceDate.GetTooltip()
-  commentId: M:CRMScript.NetServer.NSRecurrenceDate.GetTooltip()
-  id: 'GetTooltip()'
-  so.intellisense: NSRecurrenceDate.GetTooltip
-  langs:
-  - crmscript
-  name: 'GetTooltip()'
-  nameWithType: NSRecurrenceDate.GetTooltip()
-  fullName: CRMScript.NetServer.NSRecurrenceDate.GetTooltip()
-  type: Method
-  summary: "\nTooltip describing any conflicts.\n"
-  remarks: 
-  syntax: 
-    content: GetTooltip()
-    parameters: []
-    return:
-      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSRecurrenceDate.#ctor
   commentId: M:CRMScript.NetServer.NSRecurrenceDate.#ctor
@@ -128,21 +38,120 @@ items:
   syntax: 
     content: NSRecurrenceDate
   example: 
-- uid: CRMScript.NetServer.NSRecurrenceDate.SetDate()
-  commentId: M:CRMScript.NetServer.NSRecurrenceDate.SetDate()
-  id: 'SetDate()'
+- uid: CRMScript.NetServer.NSRecurrenceDate.GetDate()
+  commentId: M:CRMScript.NetServer.NSRecurrenceDate.GetDate()
+  id: 'GetDate()'
+  so.intellisense: NSRecurrenceDate.GetDate
+  langs:
+  - crmscript
+  name: 'GetDate()'
+  nameWithType: NSRecurrenceDate.GetDate()
+  fullName: CRMScript.NetServer.NSRecurrenceDate.GetDate()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: DateTime GetDate()
+    parameters: []
+    return:
+      type: CRMScript.Global.DateTime
+      description: The date of the recurring appointment.
+  example: 
+- uid: CRMScript.NetServer.NSRecurrenceDate.GetDescription()
+  commentId: M:CRMScript.NetServer.NSRecurrenceDate.GetDescription()
+  id: 'GetDescription()'
+  so.intellisense: NSRecurrenceDate.GetDescription
+  langs:
+  - crmscript
+  name: 'GetDescription()'
+  nameWithType: NSRecurrenceDate.GetDescription()
+  fullName: CRMScript.NetServer.NSRecurrenceDate.GetDescription()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetDescription()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Any description, such as red-letter day info, or marked dates
+  example: 
+- uid: CRMScript.NetServer.NSRecurrenceDate.GetDescriptionStyleHint()
+  commentId: M:CRMScript.NetServer.NSRecurrenceDate.GetDescriptionStyleHint()
+  id: 'GetDescriptionStyleHint()'
+  so.intellisense: NSRecurrenceDate.GetDescriptionStyleHint
+  langs:
+  - crmscript
+  name: 'GetDescriptionStyleHint()'
+  nameWithType: NSRecurrenceDate.GetDescriptionStyleHint()
+  fullName: CRMScript.NetServer.NSRecurrenceDate.GetDescriptionStyleHint()
+  type: Method
+  summary: 
+  remarks: 
+  syntax: 
+    content: String GetDescriptionStyleHint()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+  example: 
+- uid: CRMScript.NetServer.NSRecurrenceDate.GetIsConflict()
+  commentId: M:CRMScript.NetServer.NSRecurrenceDate.GetIsConflict()
+  id: 'GetIsConflict()'
+  so.intellisense: NSRecurrenceDate.GetIsConflict
+  langs:
+  - crmscript
+  name: 'GetIsConflict()'
+  nameWithType: NSRecurrenceDate.GetIsConflict()
+  fullName: CRMScript.NetServer.NSRecurrenceDate.GetIsConflict()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Bool GetIsConflict()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: True if this date creates a conflict.
+  example: 
+- uid: CRMScript.NetServer.NSRecurrenceDate.GetTooltip()
+  commentId: M:CRMScript.NetServer.NSRecurrenceDate.GetTooltip()
+  id: 'GetTooltip()'
+  so.intellisense: NSRecurrenceDate.GetTooltip
+  langs:
+  - crmscript
+  name: 'GetTooltip()'
+  nameWithType: NSRecurrenceDate.GetTooltip()
+  fullName: CRMScript.NetServer.NSRecurrenceDate.GetTooltip()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetTooltip()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Tooltip describing any conflicts.
+  example: 
+- uid: CRMScript.NetServer.NSRecurrenceDate.SetDate(DateTime)
+  commentId: M:CRMScript.NetServer.NSRecurrenceDate.SetDate(DateTime)
+  id: 'SetDate(DateTime)'
   so.intellisense: NSRecurrenceDate.SetDate
   langs:
   - crmscript
-  name: 'SetDate()'
-  nameWithType: NSRecurrenceDate.SetDate()
-  fullName: CRMScript.NetServer.NSRecurrenceDate.SetDate()
+  name: 'SetDate(DateTime)'
+  nameWithType: NSRecurrenceDate.SetDate(DateTime)
+  fullName: CRMScript.NetServer.NSRecurrenceDate.SetDate(DateTime)
   type: Method
-  summary: "\nThe date of the recurring appointment.\n"
+  summary: ""
   remarks: 
   syntax: 
-    content: Void SetDate(DateTime p_0)
+    content: Void SetDate(DateTime date)
     parameters:
+    - id: date
+      type: CRMScript.Global.DateTime
+      description: The date of the recurring appointment.
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSRecurrenceDate.SetDescription(String)
   commentId: M:CRMScript.NetServer.NSRecurrenceDate.SetDescription(String)
@@ -154,14 +163,14 @@ items:
   nameWithType: NSRecurrenceDate.SetDescription(String)
   fullName: CRMScript.NetServer.NSRecurrenceDate.SetDescription(String)
   type: Method
-  summary: "\nAny description, such as red letter day info, or marked dates\n"
+  summary: ""
   remarks: 
   syntax: 
-    content: Void SetDescription(String p_0)
+    content: Void SetDescription(String description)
     parameters:
-    - id: p_0
+    - id: description
       type: CRMScript.Global.String
-      description: 
+      description: Any description, such as red-letter day info, or marked dates
     return:
       type: CRMScript.Global.Void
   example: 
@@ -178,9 +187,9 @@ items:
   summary: 
   remarks: 
   syntax: 
-    content: Void SetDescriptionStyleHint(String p_0)
+    content: Void SetDescriptionStyleHint(String hint)
     parameters:
-    - id: p_0
+    - id: hint
       type: CRMScript.Global.String
       description: 
     return:
@@ -196,14 +205,14 @@ items:
   nameWithType: NSRecurrenceDate.SetIsConflict(Bool)
   fullName: CRMScript.NetServer.NSRecurrenceDate.SetIsConflict(Bool)
   type: Method
-  summary: "\nTrue if this date creates a conflict.\n"
+  summary: ""
   remarks: 
   syntax: 
-    content: Void SetIsConflict(Bool p_0)
+    content: Void SetIsConflict(Bool isConflict)
     parameters:
-    - id: p_0
+    - id: isConflict
       type: CRMScript.Global.Bool
-      description: 
+      description: True if this date creates a conflict.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -217,14 +226,14 @@ items:
   nameWithType: NSRecurrenceDate.SetTooltip(String)
   fullName: CRMScript.NetServer.NSRecurrenceDate.SetTooltip(String)
   type: Method
-  summary: "\nTooltip describing any conflicts.\n"
+  summary: ""
   remarks: 
   syntax: 
-    content: Void SetTooltip(String p_0)
+    content: Void SetTooltip(String tooltip)
     parameters:
-    - id: p_0
+    - id: tooltip
       type: CRMScript.Global.String
-      description: 
+      description: Tooltip describing any conflicts.
     return:
       type: CRMScript.Global.Void
   example: 

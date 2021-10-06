@@ -6,20 +6,36 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSReplicationAgent.#ctor
   - CRMScript.NetServer.NSReplicationAgent.CreateDefaultSatellite()
   - CRMScript.NetServer.NSReplicationAgent.GetArea(Integer)
   - CRMScript.NetServer.NSReplicationAgent.GetAreaList(Integer[])
   - CRMScript.NetServer.NSReplicationAgent.GetCentralLicense()
   - CRMScript.NetServer.NSReplicationAgent.GetSatellite(Integer)
-  - CRMScript.NetServer.NSReplicationAgent.#ctor
   - CRMScript.NetServer.NSReplicationAgent.SaveCentralLicense(NSLicenseOwner[])
-  - CRMScript.NetServer.NSReplicationAgent.SaveSatellite()
+  - CRMScript.NetServer.NSReplicationAgent.SaveSatellite(NSSatellite)
   - CRMScript.NetServer.NSReplicationAgent.SetFreetextSearchEnabledOnArea(Integer,Bool)
   name: NSReplicationAgent
   nameWithType: NSReplicationAgent
   fullName: CRMScript.NetServer.NSReplicationAgent
   type: Class
   summary: "\nReplication/Travel administration.\n"
+  example: 
+  - "\n<pre><code>NSReplicationAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSReplicationAgent.#ctor
+  commentId: M:CRMScript.NetServer.NSReplicationAgent.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSReplicationAgent
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSReplicationAgent.#ctor
+  fullName: CRMScript.NetServer.NSReplicationAgent.#ctor
+  type: Constructor
+  summary: "\nReplication/Travel administration.\n"
+  remarks: 
+  syntax: 
+    content: NSReplicationAgent
   example: 
   - "\n<pre><code>NSReplicationAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSReplicationAgent.CreateDefaultSatellite()
@@ -73,14 +89,16 @@ items:
   nameWithType: NSReplicationAgent.GetAreaList(Integer[])
   fullName: CRMScript.NetServer.NSReplicationAgent.GetAreaList(Integer[])
   type: Method
-  summary: "\nCRMScript method in the NSReplicationAgent class that gets an array of NSArea objectsGets an array of NSArea objects.<p></p>\n<code>NSArea[] GetAreaList(Integer[] areaIds)</code>\n"
+  summary: "\nGets an array of NSArea objectsGets an array of NSArea objects.\n"
   remarks: 
   syntax: 
-    content: GetAreaList()
+    content: NSArea[] GetAreaList(Integer[] areaIds)
     parameters:
     - id: areaIds
       type: CRMScript.Global.Integer[]
       description: The identifiers of the NSArea objects
+    return:
+      type: CRMScript.NetServer.NSArea[]
   example: 
   - "\n<pre><code>Integer[] ids;\nNSReplicationAgent agent;\nagent.GetAreaList(ids);</code></pre>\n"
 - uid: CRMScript.NetServer.NSReplicationAgent.GetCentralLicense()
@@ -123,22 +141,6 @@ items:
       type: CRMScript.NetServer.NSSatellite
   example: 
   - "\n<pre><code>NSReplicationAgent agent;\nNSSatellite thing = agent.GetSatellite(123);</code></pre>\n"
-- uid: CRMScript.NetServer.NSReplicationAgent.#ctor
-  commentId: M:CRMScript.NetServer.NSReplicationAgent.#ctor
-  id: '#ctor'
-  so.intellisense: Void.NSReplicationAgent
-  langs:
-  - crmscript
-  name: '#ctor'
-  nameWithType: NSReplicationAgent.#ctor
-  fullName: CRMScript.NetServer.NSReplicationAgent.#ctor
-  type: Constructor
-  summary: "\nReplication/Travel administration.\n"
-  remarks: 
-  syntax: 
-    content: NSReplicationAgent
-  example: 
-  - "\n<pre><code>NSReplicationAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSReplicationAgent.SaveCentralLicense(NSLicenseOwner[])
   commentId: M:CRMScript.NetServer.NSReplicationAgent.SaveCentralLicense(NSLicenseOwner[])
   id: 'SaveCentralLicense(NSLicenseOwner[])'
@@ -160,23 +162,27 @@ items:
     return:
       type: CRMScript.NetServer.NSLicenseOwner[]
   example: 
-- uid: CRMScript.NetServer.NSReplicationAgent.SaveSatellite()
-  commentId: M:CRMScript.NetServer.NSReplicationAgent.SaveSatellite()
-  id: 'SaveSatellite()'
+- uid: CRMScript.NetServer.NSReplicationAgent.SaveSatellite(NSSatellite)
+  commentId: M:CRMScript.NetServer.NSReplicationAgent.SaveSatellite(NSSatellite)
+  id: 'SaveSatellite(NSSatellite)'
   so.intellisense: NSReplicationAgent.SaveSatellite
   langs:
   - crmscript
-  name: 'SaveSatellite()'
-  nameWithType: NSReplicationAgent.SaveSatellite()
-  fullName: CRMScript.NetServer.NSReplicationAgent.SaveSatellite()
+  name: 'SaveSatellite(NSSatellite)'
+  nameWithType: NSReplicationAgent.SaveSatellite(NSSatellite)
+  fullName: CRMScript.NetServer.NSReplicationAgent.SaveSatellite(NSSatellite)
   type: Method
-  summary: "\nCRMScript method in the NSReplicationAgent class that creates or updates a satelliteUpdates the existing NSSatellite or creates a new NSSatellite if the ID parameter is 0.<p></p>\nReturns the new or updated NSSatellite.<p></p>\n<code>NSSatellite SaveSatellite(NSSatellite satellite)</code>\n"
+  summary: "\nUpdates the existing NSSatellite or creates a new NSSatellite if the ID parameter is 0.\n"
   remarks: 
   syntax: 
-    content: SaveSatellite()
-    parameters: []
+    content: NSSatellite SaveSatellite(NSSatellite satellite)
+    parameters:
+    - id: satellite
+      type: CRMScript.NetServer.NSSatellite
+      description:
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.NetServer.NSSatellite
+      description: the new or updated NSSatellite.
   example: 
   - "\n<pre><code>NSReplication  agent;\nNSSatellite thing = agent.CreateDefaultSatellite();\nthing = agent.SaveSatellite(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSReplicationAgent.SetFreetextSearchEnabledOnArea(Integer,Bool)
@@ -189,7 +195,7 @@ items:
   nameWithType: NSReplicationAgent.SetFreetextSearchEnabledOnArea(Integer,Bool)
   fullName: CRMScript.NetServer.NSReplicationAgent.SetFreetextSearchEnabledOnArea(Integer,Bool)
   type: Method
-  summary: "\nEnable free-text search on this area\n"
+  summary: "\nEnables free-text search on this area\n"
   remarks: 
   syntax: 
     content: Void SetFreetextSearchEnabledOnArea(Integer areaId, Bool freetextEnabled)

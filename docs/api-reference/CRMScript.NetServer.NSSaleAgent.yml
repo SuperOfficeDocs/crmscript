@@ -6,7 +6,8 @@ items:
   langs:
   - crmscript
   children:
-  - CRMScript.NetServer.NSSaleAgent.AddSaleStakeholders(Integer)
+  - CRMScript.NetServer.NSSaleAgent.#ctor
+  - CRMScript.NetServer.NSSaleAgent.AddSaleStakeholders(Integer,NSSaleStakeholder[])
   - CRMScript.NetServer.NSSaleAgent.BatchUpdateNextDueDate()
   - CRMScript.NetServer.NSSaleAgent.CreateDefaultSaleEntity()
   - CRMScript.NetServer.NSSaleAgent.CreateDefaultSaleStakeholder()
@@ -23,29 +24,28 @@ items:
   - CRMScript.NetServer.NSSaleAgent.GetSale(Integer)
   - CRMScript.NetServer.NSSaleAgent.GetSaleEntity(Integer)
   - CRMScript.NetServer.NSSaleAgent.GetSaleList(Integer[])
-  - CRMScript.NetServer.NSSaleAgent.GetSalesByDate(Integer,Integer)
+  - CRMScript.NetServer.NSSaleAgent.GetSalesByDate(DateTime,DateTime,Integer,Integer)
   - CRMScript.NetServer.NSSaleAgent.GetSalesFromContact(Integer,Bool)
   - CRMScript.NetServer.NSSaleAgent.GetSalesFromPerson(Integer,Bool)
   - CRMScript.NetServer.NSSaleAgent.GetSaleStakeholder(Integer)
   - CRMScript.NetServer.NSSaleAgent.GetSaleStakeholderById(Integer[])
   - CRMScript.NetServer.NSSaleAgent.GetSaleStakeholderList(Integer[])
   - CRMScript.NetServer.NSSaleAgent.GetSaleStakeholders(Integer)
-  - CRMScript.NetServer.NSSaleAgent.GetSummaryByAssociate(Integer)
-  - CRMScript.NetServer.NSSaleAgent.GetSummaryByContact(Integer)
-  - CRMScript.NetServer.NSSaleAgent.GetSummaryByGroup(Integer)
+  - CRMScript.NetServer.NSSaleAgent.GetSummaryByAssociate(Integer,DateTime,DateTime)
+  - CRMScript.NetServer.NSSaleAgent.GetSummaryByContact(Integer,DateTime,DateTime)
+  - CRMScript.NetServer.NSSaleAgent.GetSummaryByGroup(Integer,DateTime,DateTime)
   - CRMScript.NetServer.NSSaleAgent.GetUpcomingSales(Integer,Integer)
   - CRMScript.NetServer.NSSaleAgent.HasGuide(Integer)
   - CRMScript.NetServer.NSSaleAgent.HasGuideActivities(Integer)
   - CRMScript.NetServer.NSSaleAgent.HasStakeholderSetting(Integer)
   - CRMScript.NetServer.NSSaleAgent.IsNumberValid(Integer,String)
-  - CRMScript.NetServer.NSSaleAgent.#ctor
   - CRMScript.NetServer.NSSaleAgent.OfferAutoNextStageOnApppointmentCompleted(Integer)
-  - CRMScript.NetServer.NSSaleAgent.SaveSaleEntity()
-  - CRMScript.NetServer.NSSaleAgent.SaveSaleStakeholder()
+  - CRMScript.NetServer.NSSaleAgent.SaveSaleEntity(NSSaleEntity)
+  - CRMScript.NetServer.NSSaleAgent.SaveSaleStakeholder(NSSaleStakeholder)
   - CRMScript.NetServer.NSSaleAgent.SetAsLost(Integer[])
   - CRMScript.NetServer.NSSaleAgent.SetAsSold(Integer[])
-  - CRMScript.NetServer.NSSaleAgent.UpdateSaleStakeholders()
-  - CRMScript.NetServer.NSSaleAgent.ValidateSaleEntity()
+  - CRMScript.NetServer.NSSaleAgent.UpdateSaleStakeholders(NSSaleStakeholder[])
+  - CRMScript.NetServer.NSSaleAgent.ValidateSaleEntity(NSSaleEntity)
   name: NSSaleAgent
   nameWithType: NSSaleAgent
   fullName: CRMScript.NetServer.NSSaleAgent
@@ -53,15 +53,31 @@ items:
   summary: "\nSale data services.\n"
   example: 
   - "\n<pre><code>NSSaleAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
-- uid: CRMScript.NetServer.NSSaleAgent.AddSaleStakeholders(Integer)
-  commentId: M:CRMScript.NetServer.NSSaleAgent.AddSaleStakeholders(Integer)
-  id: 'AddSaleStakeholders(Integer)'
+- uid: CRMScript.NetServer.NSSaleAgent.#ctor
+  commentId: M:CRMScript.NetServer.NSSaleAgent.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSSaleAgent
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSSaleAgent.#ctor
+  fullName: CRMScript.NetServer.NSSaleAgent.#ctor
+  type: Constructor
+  summary: "\nSale data services.\n"
+  remarks: 
+  syntax: 
+    content: NSSaleAgent
+  example: 
+  - "\n<pre><code>NSSaleAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSSaleAgent.AddSaleStakeholders(Integer,NSSaleStakeholder[])
+  commentId: M:CRMScript.NetServer.NSSaleAgent.AddSaleStakeholders(Integer,NSSaleStakeholder[])
+  id: 'AddSaleStakeholders(Integer,NSSaleStakeholder[])'
   so.intellisense: NSSaleAgent.AddSaleStakeholders
   langs:
   - crmscript
-  name: 'AddSaleStakeholders(Integer)'
-  nameWithType: NSSaleAgent.AddSaleStakeholders(Integer)
-  fullName: CRMScript.NetServer.NSSaleAgent.AddSaleStakeholders(Integer)
+  name: 'AddSaleStakeholders(Integer,NSSaleStakeholder[])'
+  nameWithType: NSSaleAgent.AddSaleStakeholders(Integer,NSSaleStakeholder[])
+  fullName: CRMScript.NetServer.NSSaleAgent.AddSaleStakeholders(Integer,NSSaleStakeholder[])
   type: Method
   summary: 
   remarks: 
@@ -70,6 +86,9 @@ items:
     parameters:
     - id: saleId
       type: CRMScript.Global.Integer
+      description: 
+    - id: saleStakeholders
+      type: CRMScript.NetServer.NSSaleStakeholder[]
       description: 
     return:
       type: CRMScript.Global.Void
@@ -84,7 +103,7 @@ items:
   nameWithType: NSSaleAgent.BatchUpdateNextDueDate()
   fullName: CRMScript.NetServer.NSSaleAgent.BatchUpdateNextDueDate()
   type: Method
-  summary: "\nRe-calculate all the next due dates\n"
+  summary: "\nRe-calculates all the next due dates\n"
   remarks: 
   syntax: 
     content: Void BatchUpdateNextDueDate()
@@ -246,8 +265,8 @@ items:
   nameWithType: NSSaleAgent.GetNextDueDate(Integer)
   fullName: CRMScript.NetServer.NSSaleAgent.GetNextDueDate(Integer)
   type: Method
-  summary: "\nGets the next due date for a sale. The next due date is the next future appointment that is not completed.\n"
-  remarks: 
+  summary: "\nGets the next due date for a sale.\n"
+  remarks: "\nThe next due date is the next future appointment that is not completed.\n"
   syntax: 
     content: DateTime GetNextDueDate(Integer saleId)
     parameters:
@@ -269,7 +288,7 @@ items:
   nameWithType: NSSaleAgent.GetNextSaleStage(Integer,Bool)
   fullName: CRMScript.NetServer.NSSaleAgent.GetNextSaleStage(Integer,Bool)
   type: Method
-  summary: "\nGets the next (not deleted) sale stage id if the current stage is deleted. If the current stage is not deleted, the CurrentStageId is returned\n"
+  summary: "\nGets the next (not deleted) sale stage ID if the current stage is deleted. If the current stage is not deleted, the CurrentStageId is returned.\n"
   remarks: 
   syntax: 
     content: Integer GetNextSaleStage(Integer saleId, Bool includeCurrentStage)
@@ -339,19 +358,20 @@ items:
   nameWithType: NSSaleAgent.GetRecentSales(Integer,Integer)
   fullName: CRMScript.NetServer.NSSaleAgent.GetRecentSales(Integer,Integer)
   type: Method
-  summary: "\nReturns the latest sales (that are sold) limited by their amount. The result is sorted descending with the latest first. If the amount is -1, the amount restriction is omitted.\n"
+  summary: "\nReturns the latest sales (that are sold) limited by their amount.\n"
   remarks: 
   syntax: 
     content: NSSale[] GetRecentSales(Integer amountLimit, Integer count)
     parameters:
     - id: amountLimit
       type: CRMScript.Global.Integer
-      description: 
+      description: If the amount is -1, the amount restriction is omitted.
     - id: count
       type: CRMScript.Global.Integer
       description: 
     return:
       type: CRMScript.NetServer.NSSale[]
+      description: The result is sorted descending with the latest first.
   example: 
   - "\n<pre><code>NSSaleAgent agent;\nInteger amountLimit;\nInteger count;\nNSSale[] res = agent.GetRecentSales(amountLimit, count);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSaleAgent.GetSale(Integer)
@@ -420,21 +440,27 @@ items:
       type: CRMScript.NetServer.NSSale[]
   example: 
   - "\n<pre><code>Integer[] ids;\nNSSaleAgent agent;\nagent.GetSaleList(ids);</code></pre>\n"
-- uid: CRMScript.NetServer.NSSaleAgent.GetSalesByDate(Integer,Integer)
-  commentId: M:CRMScript.NetServer.NSSaleAgent.GetSalesByDate(Integer,Integer)
-  id: 'GetSalesByDate(Integer,Integer)'
+- uid: CRMScript.NetServer.NSSaleAgent.GetSalesByDate(DateTime,DateTime,Integer,Integer)
+  commentId: M:CRMScript.NetServer.NSSaleAgent.GetSalesByDate(DateTime,DateTime,Integer,Integer)
+  id: 'GetSalesByDate(DateTime,DateTime,Integer,Integer)'
   so.intellisense: NSSaleAgent.GetSalesByDate
   langs:
   - crmscript
-  name: 'GetSalesByDate(Integer,Integer)'
-  nameWithType: NSSaleAgent.GetSalesByDate(Integer,Integer)
-  fullName: CRMScript.NetServer.NSSaleAgent.GetSalesByDate(Integer,Integer)
+  name: 'GetSalesByDate(DateTime,DateTime,Integer,Integer)'
+  nameWithType: NSSaleAgent.GetSalesByDate(DateTime,DateTime,Integer,Integer)
+  fullName: CRMScript.NetServer.NSSaleAgent.GetSalesByDate(DateTime,DateTime,Integer,Integer)
   type: Method
   summary: "\nReturns all sales within a time period. The sales array can be limited by amount and status.\n"
-  remarks: "\n<p>See enum status.</p>\n"
+  remarks: ""
   syntax: 
     content: NSSale[] GetSalesByDate(DateTime fromDate, DateTime toDate, Integer amountLimit, Integer status)
     parameters:
+    - id: fromDate
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: toDate
+      type: CRMScript.Global.DateTime
+      description: 
     - id: amountLimit
       type: CRMScript.Global.Integer
       description: 
@@ -527,7 +553,7 @@ items:
   nameWithType: NSSaleAgent.GetSaleStakeholderById(Integer[])
   fullName: CRMScript.NetServer.NSSaleAgent.GetSaleStakeholderById(Integer[])
   type: Method
-  summary: "\n<strong>Returns:</strong>NSSaleStakeholder[]\n"
+  summary: ""
   remarks: 
   syntax: 
     content: NSSaleStakeholder[] GetSaleStakeholderById(Integer[] saleStakeholderIds)
@@ -570,7 +596,7 @@ items:
   nameWithType: NSSaleAgent.GetSaleStakeholders(Integer)
   fullName: CRMScript.NetServer.NSSaleAgent.GetSaleStakeholders(Integer)
   type: Method
-  summary: "\n<strong>Returns:</strong>NSSaleStakeholder[]\n"
+  summary: ""
   remarks: 
   syntax: 
     content: NSSaleStakeholder[] GetSaleStakeholders(Integer saleId)
@@ -581,17 +607,17 @@ items:
     return:
       type: CRMScript.NetServer.NSSaleStakeholder[]
   example: 
-- uid: CRMScript.NetServer.NSSaleAgent.GetSummaryByAssociate(Integer)
-  commentId: M:CRMScript.NetServer.NSSaleAgent.GetSummaryByAssociate(Integer)
-  id: 'GetSummaryByAssociate(Integer)'
+- uid: CRMScript.NetServer.NSSaleAgent.GetSummaryByAssociate(Integer,DateTime,DateTime)
+  commentId: M:CRMScript.NetServer.NSSaleAgent.GetSummaryByAssociate(Integer,DateTime,DateTime)
+  id: 'GetSummaryByAssociate(Integer,DateTime,DateTime)'
   so.intellisense: NSSaleAgent.GetSummaryByAssociate
   langs:
   - crmscript
-  name: 'GetSummaryByAssociate(Integer)'
-  nameWithType: NSSaleAgent.GetSummaryByAssociate(Integer)
-  fullName: CRMScript.NetServer.NSSaleAgent.GetSummaryByAssociate(Integer)
+  name: 'GetSummaryByAssociate(Integer,DateTime,DateTime)'
+  nameWithType: NSSaleAgent.GetSummaryByAssociate(Integer,DateTime,DateTime)
+  fullName: CRMScript.NetServer.NSSaleAgent.GetSummaryByAssociate(Integer,DateTime,DateTime)
   type: Method
-  summary: "\n<strong>Returns:</strong>NSSaleSummary\n"
+  summary: ""
   remarks: 
   syntax: 
     content: NSSaleSummary GetSummaryByAssociate(Integer associateId, DateTime fromDate, DateTime toDate)
@@ -599,20 +625,26 @@ items:
     - id: associateId
       type: CRMScript.Global.Integer
       description: 
+    - id: fromDate
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: toDate
+      type: CRMScript.Global.DateTime
+      description: 
     return:
       type: CRMScript.NetServer.NSSaleSummary
   example: 
-- uid: CRMScript.NetServer.NSSaleAgent.GetSummaryByContact(Integer)
-  commentId: M:CRMScript.NetServer.NSSaleAgent.GetSummaryByContact(Integer)
-  id: 'GetSummaryByContact(Integer)'
+- uid: CRMScript.NetServer.NSSaleAgent.GetSummaryByContact(Integer,DateTime,DateTime)
+  commentId: M:CRMScript.NetServer.NSSaleAgent.GetSummaryByContact(Integer,DateTime,DateTime)
+  id: 'GetSummaryByContact(Integer,DateTime,DateTime)'
   so.intellisense: NSSaleAgent.GetSummaryByContact
   langs:
   - crmscript
-  name: 'GetSummaryByContact(Integer)'
-  nameWithType: NSSaleAgent.GetSummaryByContact(Integer)
-  fullName: CRMScript.NetServer.NSSaleAgent.GetSummaryByContact(Integer)
+  name: 'GetSummaryByContact(Integer,DateTime,DateTime)'
+  nameWithType: NSSaleAgent.GetSummaryByContact(Integer,DateTime,DateTime)
+  fullName: CRMScript.NetServer.NSSaleAgent.GetSummaryByContact(Integer,DateTime,DateTime)
   type: Method
-  summary: "\n<strong>Returns:</strong>NSSaleSummary\n"
+  summary: ""
   remarks: 
   syntax: 
     content: NSSaleSummary GetSummaryByContact(Integer contactId, DateTime fromDate, DateTime toDate)
@@ -620,26 +652,38 @@ items:
     - id: contactId
       type: CRMScript.Global.Integer
       description: 
+    - id: fromDate
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: toDate
+      type: CRMScript.Global.DateTime
+      description: 
     return:
       type: CRMScript.NetServer.NSSaleSummary
   example: 
-- uid: CRMScript.NetServer.NSSaleAgent.GetSummaryByGroup(Integer)
-  commentId: M:CRMScript.NetServer.NSSaleAgent.GetSummaryByGroup(Integer)
-  id: 'GetSummaryByGroup(Integer)'
+- uid: CRMScript.NetServer.NSSaleAgent.GetSummaryByGroup(Integer,DateTime,DateTime)
+  commentId: M:CRMScript.NetServer.NSSaleAgent.GetSummaryByGroup(Integer,DateTime,DateTime)
+  id: 'GetSummaryByGroup(Integer,DateTime,DateTime)'
   so.intellisense: NSSaleAgent.GetSummaryByGroup
   langs:
   - crmscript
-  name: 'GetSummaryByGroup(Integer)'
-  nameWithType: NSSaleAgent.GetSummaryByGroup(Integer)
-  fullName: CRMScript.NetServer.NSSaleAgent.GetSummaryByGroup(Integer)
+  name: 'GetSummaryByGroup(Integer,DateTime,DateTime)'
+  nameWithType: NSSaleAgent.GetSummaryByGroup(Integer,DateTime,DateTime)
+  fullName: CRMScript.NetServer.NSSaleAgent.GetSummaryByGroup(Integer,DateTime,DateTime)
   type: Method
-  summary: "\n<strong>Returns:</strong>NSSaleSummary\n"
+  summary: ""
   remarks: 
   syntax: 
     content: NSSaleSummary GetSummaryByGroup(Integer groupId, DateTime fromDate, DateTime toDate)
     parameters:
     - id: groupId
       type: CRMScript.Global.Integer
+      description: 
+    - id: fromDate
+      type: CRMScript.Global.DateTime
+      description: 
+    - id: toDate
+      type: CRMScript.Global.DateTime
       description: 
     return:
       type: CRMScript.NetServer.NSSaleSummary
@@ -654,14 +698,14 @@ items:
   nameWithType: NSSaleAgent.GetUpcomingSales(Integer,Integer)
   fullName: CRMScript.NetServer.NSSaleAgent.GetUpcomingSales(Integer,Integer)
   type: Method
-  summary: "\nReturns all open sales, sorted descending with the latest first.  If the weigthed amount is -1, the amount restriction is omitted.\n"
+  summary: "\nReturns all open sales, sorted descending with the latest first.\n"
   remarks: 
   syntax: 
     content: NSSale[] GetUpcomingSales(Integer weightedAmountLimit, Integer count)
     parameters:
     - id: weightedAmountLimit
       type: CRMScript.Global.Integer
-      description: 
+      description: If the weighted amount is -1, the amount restriction is omitted.
     - id: count
       type: CRMScript.Global.Integer
       description: 
@@ -702,7 +746,7 @@ items:
   nameWithType: NSSaleAgent.HasGuideActivities(Integer)
   fullName: CRMScript.NetServer.NSSaleAgent.HasGuideActivities(Integer)
   type: Method
-  summary: "\n<strong>Returns:</strong>Bool\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Bool HasGuideActivities(Integer saleId)
@@ -724,7 +768,7 @@ items:
   nameWithType: NSSaleAgent.HasStakeholderSetting(Integer)
   fullName: CRMScript.NetServer.NSSaleAgent.HasStakeholderSetting(Integer)
   type: Method
-  summary: "\n<strong>Returns:</strong>Bool\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Bool HasStakeholderSetting(Integer saleId)
@@ -746,8 +790,8 @@ items:
   nameWithType: NSSaleAgent.IsNumberValid(Integer,String)
   fullName: CRMScript.NetServer.NSSaleAgent.IsNumberValid(Integer,String)
   type: Method
-  summary: "\nChecks if the number is unique or required.  The setting is configured from admin under system options.\n"
-  remarks: 
+  summary: "\nChecks if the number is unique or required.\n"
+  remarks: "\nThe setting is configured from admin under system options.\n"
   syntax: 
     content: Bool IsNumberValid(Integer contactId, String number)
     parameters:
@@ -762,22 +806,6 @@ items:
       description:
   example: 
   - "\n<pre><code>NSSaleAgent agent;\nInteger contactId;\nString number;\nBool res = agent.IsNumberValid(contactId, number);</code></pre>\n"
-- uid: CRMScript.NetServer.NSSaleAgent.#ctor
-  commentId: M:CRMScript.NetServer.NSSaleAgent.#ctor
-  id: '#ctor'
-  so.intellisense: Void.NSSaleAgent
-  langs:
-  - crmscript
-  name: '#ctor'
-  nameWithType: NSSaleAgent.#ctor
-  fullName: CRMScript.NetServer.NSSaleAgent.#ctor
-  type: Constructor
-  summary: "\nSale data services.\n"
-  remarks: 
-  syntax: 
-    content: NSSaleAgent
-  example: 
-  - "\n<pre><code>NSSaleAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSaleAgent.OfferAutoNextStageOnApppointmentCompleted(Integer)
   commentId: M:CRMScript.NetServer.NSSaleAgent.OfferAutoNextStageOnApppointmentCompleted(Integer)
   id: 'OfferAutoNextStageOnApppointmentCompleted(Integer)'
@@ -788,7 +816,7 @@ items:
   nameWithType: NSSaleAgent.OfferAutoNextStageOnApppointmentCompleted(Integer)
   fullName: CRMScript.NetServer.NSSaleAgent.OfferAutoNextStageOnApppointmentCompleted(Integer)
   type: Method
-  summary: "\n<strong>Returns:</strong>Bool\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Bool OfferAutoNextStageOnApppointmentCompleted(Integer appointmentId)
@@ -800,40 +828,47 @@ items:
       type: CRMScript.Global.Bool
       description:
   example: 
-- uid: CRMScript.NetServer.NSSaleAgent.SaveSaleEntity()
-  commentId: M:CRMScript.NetServer.NSSaleAgent.SaveSaleEntity()
-  id: 'SaveSaleEntity()'
+- uid: CRMScript.NetServer.NSSaleAgent.SaveSaleEntity(NSSaleEntity)
+  commentId: M:CRMScript.NetServer.NSSaleAgent.SaveSaleEntity(NSSaleEntity)
+  id: 'SaveSaleEntity(NSSaleEntity)'
   so.intellisense: NSSaleAgent.SaveSaleEntity
   langs:
   - crmscript
-  name: 'SaveSaleEntity()'
-  nameWithType: NSSaleAgent.SaveSaleEntity()
-  fullName: CRMScript.NetServer.NSSaleAgent.SaveSaleEntity()
+  name: 'SaveSaleEntity(NSSaleEntity)'
+  nameWithType: NSSaleAgent.SaveSaleEntity(NSSaleEntity)
+  fullName: CRMScript.NetServer.NSSaleAgent.SaveSaleEntity(NSSaleEntity)
   type: Method
-  summary: "\nCRMScript method in the NSSaleAgent class that creates or updates an NSSaleEntityUpdates the existing NSSaleEntity or creates a new NSSaleEntity if the ID parameter is 0.<p></p>\nReturns the new or updated NSSaleEntity<p></p>\n<code>NSSaleEntity SaveSaleEntity(NSSaleEntity saleEntity)</code>\n"
+  summary: "\nUpdates the existing NSSaleEntity or creates a new NSSaleEntity if the ID parameter is 0.\n"
   remarks: 
   syntax: 
-    content: SaveSaleEntity()
-    parameters: []
+    content: NSSaleEntity SaveSaleEntity(NSSaleEntity saleEntity)
+    parameters:
+    - id: saleEntity
+      type:  CRMScript.NetServer.NSSaleEntity
+      description:
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.NetServer.NSSaleEntity
+      description: the new or updated NSSaleEntity
   example: 
   - "\n<pre><code>NSSale  agent;\nNSSaleEntity thing = agent.CreateDefaultSaleEntity();\nthing = agent.SaveSaleEntity(thing);</code></pre>\n"
-- uid: CRMScript.NetServer.NSSaleAgent.SaveSaleStakeholder()
-  commentId: M:CRMScript.NetServer.NSSaleAgent.SaveSaleStakeholder()
-  id: 'SaveSaleStakeholder()'
+- uid: CRMScript.NetServer.NSSaleAgent.SaveSaleStakeholder(NSSaleStakeholder)
+  commentId: M:CRMScript.NetServer.NSSaleAgent.SaveSaleStakeholder(NSSaleStakeholder)
+  id: 'SaveSaleStakeholder(NSSaleStakeholder)'
   so.intellisense: NSSaleAgent.SaveSaleStakeholder
   langs:
   - crmscript
-  name: 'SaveSaleStakeholder()'
-  nameWithType: NSSaleAgent.SaveSaleStakeholder()
-  fullName: CRMScript.NetServer.NSSaleAgent.SaveSaleStakeholder()
+  name: 'SaveSaleStakeholder(NSSaleStakeholder)'
+  nameWithType: NSSaleAgent.SaveSaleStakeholder(NSSaleStakeholder)
+  fullName: CRMScript.NetServer.NSSaleAgent.SaveSaleStakeholder(NSSaleStakeholder)
   type: Method
-  summary: "\nUpdates the existing NSSaleStakeholder or creates a new NSSaleStakeholder if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>saleStakeholder</strong>The NSSaleStakeholder to save.</li></ul>\n"
+  summary: "\nUpdates the existing NSSaleStakeholder or creates a new NSSaleStakeholder if the id parameter is 0\n"
   remarks: 
   syntax: 
     content: NSSaleStakeholder SaveSaleStakeholder(NSSaleStakeholder saleStakeholder)
     parameters:
+    - id: saleStakeholder
+      type:  CRMScript.NetServer.NSSaleStakeholder
+      description: The NSSaleStakeholder to save.
     return:
       type: CRMScript.NetServer.NSSaleStakeholder
   example: 
@@ -848,8 +883,8 @@ items:
   nameWithType: NSSaleAgent.SetAsLost(Integer[])
   fullName: CRMScript.NetServer.NSSaleAgent.SetAsLost(Integer[])
   type: Method
-  summary: "\nChange the status of one or more sales to Lost. Note that this does not affect the Completed state of the sale.\n"
-  remarks: 
+  summary: "\nChanges the status of one or more sales to Lost.\n"
+  remarks: "\nThis does not affect the Completed state of the sale.\n"
   syntax: 
     content: Void SetAsLost(Integer[] saleIds)
     parameters:
@@ -869,8 +904,8 @@ items:
   nameWithType: NSSaleAgent.SetAsSold(Integer[])
   fullName: CRMScript.NetServer.NSSaleAgent.SetAsSold(Integer[])
   type: Method
-  summary: "\nChange the status of one or more Sales to Sold. Note that this does not mark them as Completed.\n"
-  remarks: 
+  summary: "\nChanges the status of one or more Sales to Sold.\n"
+  remarks: "\nThis does not mark them as Completed.\n"
   syntax: 
     content: Void SetAsSold(Integer[] saleIds)
     parameters:
@@ -880,39 +915,45 @@ items:
     return:
       type: CRMScript.Global.Void
   example: 
-- uid: CRMScript.NetServer.NSSaleAgent.UpdateSaleStakeholders()
-  commentId: M:CRMScript.NetServer.NSSaleAgent.UpdateSaleStakeholders()
-  id: 'UpdateSaleStakeholders()'
+- uid: CRMScript.NetServer.NSSaleAgent.UpdateSaleStakeholders(NSSaleStakeholder[])
+  commentId: M:CRMScript.NetServer.NSSaleAgent.UpdateSaleStakeholders(NSSaleStakeholder[])
+  id: 'UpdateSaleStakeholders(NSSaleStakeholder[])'
   so.intellisense: NSSaleAgent.UpdateSaleStakeholders
   langs:
   - crmscript
-  name: 'UpdateSaleStakeholders()'
-  nameWithType: NSSaleAgent.UpdateSaleStakeholders()
-  fullName: CRMScript.NetServer.NSSaleAgent.UpdateSaleStakeholders()
+  name: 'UpdateSaleStakeholders(NSSaleStakeholder[])'
+  nameWithType: NSSaleAgent.UpdateSaleStakeholders(NSSaleStakeholder[])
+  fullName: CRMScript.NetServer.NSSaleAgent.UpdateSaleStakeholders(NSSaleStakeholder[])
   type: Method
-  summary: "\n<strong>Returns:</strong>NSSaleStakeholder[]\n"
+  summary: ""
   remarks: 
   syntax: 
     content: NSSaleStakeholder[] UpdateSaleStakeholders(NSSaleStakeholder[] stakeholders)
     parameters:
+    - id: stakeholders
+      type: CRMScript.NetServer.NSSaleStakeholder[]
+      description:
     return:
       type: CRMScript.NetServer.NSSaleStakeholder[]
   example: 
-- uid: CRMScript.NetServer.NSSaleAgent.ValidateSaleEntity()
-  commentId: M:CRMScript.NetServer.NSSaleAgent.ValidateSaleEntity()
-  id: 'ValidateSaleEntity()'
+- uid: CRMScript.NetServer.NSSaleAgent.ValidateSaleEntity(NSSaleEntity)
+  commentId: M:CRMScript.NetServer.NSSaleAgent.ValidateSaleEntity(NSSaleEntity)
+  id: 'ValidateSaleEntity(NSSaleEntity)'
   so.intellisense: NSSaleAgent.ValidateSaleEntity
   langs:
   - crmscript
-  name: 'ValidateSaleEntity()'
-  nameWithType: NSSaleAgent.ValidateSaleEntity()
-  fullName: CRMScript.NetServer.NSSaleAgent.ValidateSaleEntity()
+  name: 'ValidateSaleEntity(NSSaleEntity)'
+  nameWithType: NSSaleAgent.ValidateSaleEntity(NSSaleEntity)
+  fullName: CRMScript.NetServer.NSSaleAgent.ValidateSaleEntity(NSSaleEntity)
   type: Method
   summary: "\nChecks that entity is ready for saving, return error messages by field.\n"
   remarks: 
   syntax: 
     content: Map ValidateSaleEntity(NSSaleEntity saleEntity)
     parameters:
+    - id: saleEntity
+      type: CRMScript.NetServer.NSSaleEntity
+      description:
     return:
       type: CRMScript.Global.Map
       description:

@@ -6,6 +6,7 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSSaintConfiguration.#ctor
   - CRMScript.NetServer.NSSaintConfiguration.GetEnabled()
   - CRMScript.NetServer.NSSaintConfiguration.GetGenerationEnd()
   - CRMScript.NetServer.NSSaintConfiguration.GetGenerationStart()
@@ -14,10 +15,9 @@ items:
   - CRMScript.NetServer.NSSaintConfiguration.GetPeriod2()
   - CRMScript.NetServer.NSSaintConfiguration.GetPeriod3()
   - CRMScript.NetServer.NSSaintConfiguration.GetRowsGenerated()
-  - CRMScript.NetServer.NSSaintConfiguration.#ctor
   - CRMScript.NetServer.NSSaintConfiguration.SetEnabled(Bool)
-  - CRMScript.NetServer.NSSaintConfiguration.SetGenerationEnd()
-  - CRMScript.NetServer.NSSaintConfiguration.SetGenerationStart()
+  - CRMScript.NetServer.NSSaintConfiguration.SetGenerationEnd(DateTime)
+  - CRMScript.NetServer.NSSaintConfiguration.SetGenerationStart(DateTime)
   - CRMScript.NetServer.NSSaintConfiguration.SetOwnerTable(Integer)
   - CRMScript.NetServer.NSSaintConfiguration.SetPeriod1(Integer)
   - CRMScript.NetServer.NSSaintConfiguration.SetPeriod2(Integer)
@@ -29,166 +29,6 @@ items:
   type: Class
   summary: 
   example: 
-- uid: CRMScript.NetServer.NSSaintConfiguration.GetEnabled()
-  commentId: M:CRMScript.NetServer.NSSaintConfiguration.GetEnabled()
-  id: 'GetEnabled()'
-  so.intellisense: NSSaintConfiguration.GetEnabled
-  langs:
-  - crmscript
-  name: 'GetEnabled()'
-  nameWithType: NSSaintConfiguration.GetEnabled()
-  fullName: CRMScript.NetServer.NSSaintConfiguration.GetEnabled()
-  type: Method
-  summary: "\nOn/off switch for Saint functionality for this entity\n"
-  remarks: 
-  syntax: 
-    content: Bool GetEnabled()
-    parameters: []
-    return:
-      type: CRMScript.Global.Bool
-      description:
-  example: 
-  - "\n<pre><code>NSSaintConfiguration thing;\nBool enabled = thing.GetEnabled();</code></pre>\n"
-- uid: CRMScript.NetServer.NSSaintConfiguration.GetGenerationEnd()
-  commentId: M:CRMScript.NetServer.NSSaintConfiguration.GetGenerationEnd()
-  id: 'GetGenerationEnd()'
-  so.intellisense: NSSaintConfiguration.GetGenerationEnd
-  langs:
-  - crmscript
-  name: 'GetGenerationEnd()'
-  nameWithType: NSSaintConfiguration.GetGenerationEnd()
-  fullName: CRMScript.NetServer.NSSaintConfiguration.GetGenerationEnd()
-  type: Method
-  summary: "\nWhen was the last regeneration finished\n"
-  remarks: 
-  syntax: 
-    content: DateTime GetGenerationEnd()
-    parameters: []
-    return:
-      type: CRMScript.Global.DateTime
-      description:
-  example: 
-  - "\n<pre><code>NSSaintConfiguration thing;\nDateTime generationEnd = thing.GetGenerationEnd();</code></pre>\n"
-- uid: CRMScript.NetServer.NSSaintConfiguration.GetGenerationStart()
-  commentId: M:CRMScript.NetServer.NSSaintConfiguration.GetGenerationStart()
-  id: 'GetGenerationStart()'
-  so.intellisense: NSSaintConfiguration.GetGenerationStart
-  langs:
-  - crmscript
-  name: 'GetGenerationStart()'
-  nameWithType: NSSaintConfiguration.GetGenerationStart()
-  fullName: CRMScript.NetServer.NSSaintConfiguration.GetGenerationStart()
-  type: Method
-  summary: "\nWhen was the last regeneration started\n"
-  remarks: 
-  syntax: 
-    content: DateTime GetGenerationStart()
-    parameters: []
-    return:
-      type: CRMScript.Global.DateTime
-      description:
-  example: 
-  - "\n<pre><code>NSSaintConfiguration thing;\nDateTime generationStart = thing.GetGenerationStart();</code></pre>\n"
-- uid: CRMScript.NetServer.NSSaintConfiguration.GetOwnerTable()
-  commentId: M:CRMScript.NetServer.NSSaintConfiguration.GetOwnerTable()
-  id: 'GetOwnerTable()'
-  so.intellisense: NSSaintConfiguration.GetOwnerTable
-  langs:
-  - crmscript
-  name: 'GetOwnerTable()'
-  nameWithType: NSSaintConfiguration.GetOwnerTable()
-  fullName: CRMScript.NetServer.NSSaintConfiguration.GetOwnerTable()
-  type: Method
-  summary: "\nThe table that is the owning entity\n"
-  remarks: 
-  syntax: 
-    content: Integer GetOwnerTable()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSSaintConfiguration thing;\nInteger ownerTable = thing.GetOwnerTable();</code></pre>\n"
-- uid: CRMScript.NetServer.NSSaintConfiguration.GetPeriod1()
-  commentId: M:CRMScript.NetServer.NSSaintConfiguration.GetPeriod1()
-  id: 'GetPeriod1()'
-  so.intellisense: NSSaintConfiguration.GetPeriod1
-  langs:
-  - crmscript
-  name: 'GetPeriod1()'
-  nameWithType: NSSaintConfiguration.GetPeriod1()
-  fullName: CRMScript.NetServer.NSSaintConfiguration.GetPeriod1()
-  type: Method
-  summary: "\nLength of the first counter period\n"
-  remarks: 
-  syntax: 
-    content: Integer GetPeriod1()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSSaintConfiguration thing;\nInteger period1 = thing.GetPeriod1();</code></pre>\n"
-- uid: CRMScript.NetServer.NSSaintConfiguration.GetPeriod2()
-  commentId: M:CRMScript.NetServer.NSSaintConfiguration.GetPeriod2()
-  id: 'GetPeriod2()'
-  so.intellisense: NSSaintConfiguration.GetPeriod2
-  langs:
-  - crmscript
-  name: 'GetPeriod2()'
-  nameWithType: NSSaintConfiguration.GetPeriod2()
-  fullName: CRMScript.NetServer.NSSaintConfiguration.GetPeriod2()
-  type: Method
-  summary: "\nLength of the second counter period\n"
-  remarks: 
-  syntax: 
-    content: Integer GetPeriod2()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSSaintConfiguration thing;\nInteger period2 = thing.GetPeriod2();</code></pre>\n"
-- uid: CRMScript.NetServer.NSSaintConfiguration.GetPeriod3()
-  commentId: M:CRMScript.NetServer.NSSaintConfiguration.GetPeriod3()
-  id: 'GetPeriod3()'
-  so.intellisense: NSSaintConfiguration.GetPeriod3
-  langs:
-  - crmscript
-  name: 'GetPeriod3()'
-  nameWithType: NSSaintConfiguration.GetPeriod3()
-  fullName: CRMScript.NetServer.NSSaintConfiguration.GetPeriod3()
-  type: Method
-  summary: "\nLength of the third counter period\n"
-  remarks: 
-  syntax: 
-    content: Integer GetPeriod3()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSSaintConfiguration thing;\nInteger period3 = thing.GetPeriod3();</code></pre>\n"
-- uid: CRMScript.NetServer.NSSaintConfiguration.GetRowsGenerated()
-  commentId: M:CRMScript.NetServer.NSSaintConfiguration.GetRowsGenerated()
-  id: 'GetRowsGenerated()'
-  so.intellisense: NSSaintConfiguration.GetRowsGenerated
-  langs:
-  - crmscript
-  name: 'GetRowsGenerated()'
-  nameWithType: NSSaintConfiguration.GetRowsGenerated()
-  fullName: CRMScript.NetServer.NSSaintConfiguration.GetRowsGenerated()
-  type: Method
-  summary: "\nNumber of CounterValue rows generated for this entity\n"
-  remarks: 
-  syntax: 
-    content: Integer GetRowsGenerated()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSSaintConfiguration thing;\nInteger rowsGenerated = thing.GetRowsGenerated();</code></pre>\n"
 - uid: CRMScript.NetServer.NSSaintConfiguration.#ctor
   commentId: M:CRMScript.NetServer.NSSaintConfiguration.#ctor
   id: '#ctor'
@@ -204,6 +44,166 @@ items:
   syntax: 
     content: NSSaintConfiguration
   example: 
+- uid: CRMScript.NetServer.NSSaintConfiguration.GetEnabled()
+  commentId: M:CRMScript.NetServer.NSSaintConfiguration.GetEnabled()
+  id: 'GetEnabled()'
+  so.intellisense: NSSaintConfiguration.GetEnabled
+  langs:
+  - crmscript
+  name: 'GetEnabled()'
+  nameWithType: NSSaintConfiguration.GetEnabled()
+  fullName: CRMScript.NetServer.NSSaintConfiguration.GetEnabled()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Bool GetEnabled()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: On/off switch for Saint functionality for this entity
+  example: 
+  - "\n<pre><code>NSSaintConfiguration thing;\nBool enabled = thing.GetEnabled();</code></pre>\n"
+- uid: CRMScript.NetServer.NSSaintConfiguration.GetGenerationEnd()
+  commentId: M:CRMScript.NetServer.NSSaintConfiguration.GetGenerationEnd()
+  id: 'GetGenerationEnd()'
+  so.intellisense: NSSaintConfiguration.GetGenerationEnd
+  langs:
+  - crmscript
+  name: 'GetGenerationEnd()'
+  nameWithType: NSSaintConfiguration.GetGenerationEnd()
+  fullName: CRMScript.NetServer.NSSaintConfiguration.GetGenerationEnd()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: DateTime GetGenerationEnd()
+    parameters: []
+    return:
+      type: CRMScript.Global.DateTime
+      description: When was the last regeneration finished
+  example: 
+  - "\n<pre><code>NSSaintConfiguration thing;\nDateTime generationEnd = thing.GetGenerationEnd();</code></pre>\n"
+- uid: CRMScript.NetServer.NSSaintConfiguration.GetGenerationStart()
+  commentId: M:CRMScript.NetServer.NSSaintConfiguration.GetGenerationStart()
+  id: 'GetGenerationStart()'
+  so.intellisense: NSSaintConfiguration.GetGenerationStart
+  langs:
+  - crmscript
+  name: 'GetGenerationStart()'
+  nameWithType: NSSaintConfiguration.GetGenerationStart()
+  fullName: CRMScript.NetServer.NSSaintConfiguration.GetGenerationStart()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: DateTime GetGenerationStart()
+    parameters: []
+    return:
+      type: CRMScript.Global.DateTime
+      description: When was the last regeneration started
+  example: 
+  - "\n<pre><code>NSSaintConfiguration thing;\nDateTime generationStart = thing.GetGenerationStart();</code></pre>\n"
+- uid: CRMScript.NetServer.NSSaintConfiguration.GetOwnerTable()
+  commentId: M:CRMScript.NetServer.NSSaintConfiguration.GetOwnerTable()
+  id: 'GetOwnerTable()'
+  so.intellisense: NSSaintConfiguration.GetOwnerTable
+  langs:
+  - crmscript
+  name: 'GetOwnerTable()'
+  nameWithType: NSSaintConfiguration.GetOwnerTable()
+  fullName: CRMScript.NetServer.NSSaintConfiguration.GetOwnerTable()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Integer GetOwnerTable()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: The table that is the owning entity
+  example: 
+  - "\n<pre><code>NSSaintConfiguration thing;\nInteger ownerTable = thing.GetOwnerTable();</code></pre>\n"
+- uid: CRMScript.NetServer.NSSaintConfiguration.GetPeriod1()
+  commentId: M:CRMScript.NetServer.NSSaintConfiguration.GetPeriod1()
+  id: 'GetPeriod1()'
+  so.intellisense: NSSaintConfiguration.GetPeriod1
+  langs:
+  - crmscript
+  name: 'GetPeriod1()'
+  nameWithType: NSSaintConfiguration.GetPeriod1()
+  fullName: CRMScript.NetServer.NSSaintConfiguration.GetPeriod1()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Integer GetPeriod1()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: Length of the first counter period
+  example: 
+  - "\n<pre><code>NSSaintConfiguration thing;\nInteger period1 = thing.GetPeriod1();</code></pre>\n"
+- uid: CRMScript.NetServer.NSSaintConfiguration.GetPeriod2()
+  commentId: M:CRMScript.NetServer.NSSaintConfiguration.GetPeriod2()
+  id: 'GetPeriod2()'
+  so.intellisense: NSSaintConfiguration.GetPeriod2
+  langs:
+  - crmscript
+  name: 'GetPeriod2()'
+  nameWithType: NSSaintConfiguration.GetPeriod2()
+  fullName: CRMScript.NetServer.NSSaintConfiguration.GetPeriod2()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Integer GetPeriod2()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: Length of the second counter period
+  example: 
+  - "\n<pre><code>NSSaintConfiguration thing;\nInteger period2 = thing.GetPeriod2();</code></pre>\n"
+- uid: CRMScript.NetServer.NSSaintConfiguration.GetPeriod3()
+  commentId: M:CRMScript.NetServer.NSSaintConfiguration.GetPeriod3()
+  id: 'GetPeriod3()'
+  so.intellisense: NSSaintConfiguration.GetPeriod3
+  langs:
+  - crmscript
+  name: 'GetPeriod3()'
+  nameWithType: NSSaintConfiguration.GetPeriod3()
+  fullName: CRMScript.NetServer.NSSaintConfiguration.GetPeriod3()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Integer GetPeriod3()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: Length of the third counter period
+  example: 
+  - "\n<pre><code>NSSaintConfiguration thing;\nInteger period3 = thing.GetPeriod3();</code></pre>\n"
+- uid: CRMScript.NetServer.NSSaintConfiguration.GetRowsGenerated()
+  commentId: M:CRMScript.NetServer.NSSaintConfiguration.GetRowsGenerated()
+  id: 'GetRowsGenerated()'
+  so.intellisense: NSSaintConfiguration.GetRowsGenerated
+  langs:
+  - crmscript
+  name: 'GetRowsGenerated()'
+  nameWithType: NSSaintConfiguration.GetRowsGenerated()
+  fullName: CRMScript.NetServer.NSSaintConfiguration.GetRowsGenerated()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Integer GetRowsGenerated()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: Number of CounterValue rows generated for this entity
+  example: 
+  - "\n<pre><code>NSSaintConfiguration thing;\nInteger rowsGenerated = thing.GetRowsGenerated();</code></pre>\n"
 - uid: CRMScript.NetServer.NSSaintConfiguration.SetEnabled(Bool)
   commentId: M:CRMScript.NetServer.NSSaintConfiguration.SetEnabled(Bool)
   id: 'SetEnabled(Bool)'
@@ -214,50 +214,60 @@ items:
   nameWithType: NSSaintConfiguration.SetEnabled(Bool)
   fullName: CRMScript.NetServer.NSSaintConfiguration.SetEnabled(Bool)
   type: Method
-  summary: "\nOn/off switch for Saint functionality for this entity\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetEnabled(Bool enabled)
     parameters:
     - id: enabled
       type: CRMScript.Global.Bool
-      description: 
+      description:  On/off switch for Saint functionality for this entity
     return:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSSaintConfiguration thing;\nBool enabled;\nthing.SetEnabled(enabled);</code></pre>\n"
-- uid: CRMScript.NetServer.NSSaintConfiguration.SetGenerationEnd()
-  commentId: M:CRMScript.NetServer.NSSaintConfiguration.SetGenerationEnd()
-  id: 'SetGenerationEnd()'
+- uid: CRMScript.NetServer.NSSaintConfiguration.SetGenerationEnd(DateTime)
+  commentId: M:CRMScript.NetServer.NSSaintConfiguration.SetGenerationEnd(DateTime)
+  id: 'SetGenerationEnd(DateTime)'
   so.intellisense: NSSaintConfiguration.SetGenerationEnd
   langs:
   - crmscript
-  name: 'SetGenerationEnd()'
-  nameWithType: NSSaintConfiguration.SetGenerationEnd()
-  fullName: CRMScript.NetServer.NSSaintConfiguration.SetGenerationEnd()
+  name: 'SetGenerationEnd(DateTime)'
+  nameWithType: NSSaintConfiguration.SetGenerationEnd(DateTime)
+  fullName: CRMScript.NetServer.NSSaintConfiguration.SetGenerationEnd(DateTime)
   type: Method
-  summary: "\nWhen was the last regeneration finished\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetGenerationEnd(DateTime generationEnd)
     parameters:
+    - id: generationEnd
+      type: CRMScript.Global.DateTime
+      description: When was the last regeneration finished
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSSaintConfiguration thing;\nDateTime generationEnd;\nthing.SetGenerationEnd(generationEnd);</code></pre>\n"
-- uid: CRMScript.NetServer.NSSaintConfiguration.SetGenerationStart()
-  commentId: M:CRMScript.NetServer.NSSaintConfiguration.SetGenerationStart()
-  id: 'SetGenerationStart()'
+- uid: CRMScript.NetServer.NSSaintConfiguration.SetGenerationStart(DateTime)
+  commentId: M:CRMScript.NetServer.NSSaintConfiguration.SetGenerationStart(DateTime)
+  id: 'SetGenerationStart(DateTime)'
   so.intellisense: NSSaintConfiguration.SetGenerationStart
   langs:
   - crmscript
-  name: 'SetGenerationStart()'
-  nameWithType: NSSaintConfiguration.SetGenerationStart()
-  fullName: CRMScript.NetServer.NSSaintConfiguration.SetGenerationStart()
+  name: 'SetGenerationStart(DateTime)'
+  nameWithType: NSSaintConfiguration.SetGenerationStart(DateTime)
+  fullName: CRMScript.NetServer.NSSaintConfiguration.SetGenerationStart(DateTime)
   type: Method
-  summary: "\nWhen was the last regeneration started\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetGenerationStart(DateTime generationStart)
     parameters:
+    - id: generationStart
+      type: CRMScript.Global.DateTime
+      description: When was the last regeneration started
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSSaintConfiguration thing;\nDateTime generationStart;\nthing.SetGenerationStart(generationStart);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSaintConfiguration.SetOwnerTable(Integer)
@@ -270,14 +280,14 @@ items:
   nameWithType: NSSaintConfiguration.SetOwnerTable(Integer)
   fullName: CRMScript.NetServer.NSSaintConfiguration.SetOwnerTable(Integer)
   type: Method
-  summary: "\nThe table that is the owning entity\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetOwnerTable(Integer ownerTable)
     parameters:
     - id: ownerTable
       type: CRMScript.Global.Integer
-      description: 
+      description: The table that is the owning entity
     return:
       type: CRMScript.Global.Void
   example: 
@@ -292,14 +302,14 @@ items:
   nameWithType: NSSaintConfiguration.SetPeriod1(Integer)
   fullName: CRMScript.NetServer.NSSaintConfiguration.SetPeriod1(Integer)
   type: Method
-  summary: "\nLength of the first counter period\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetPeriod1(Integer period1)
     parameters:
     - id: period1
       type: CRMScript.Global.Integer
-      description: 
+      description: Length of the first counter period
     return:
       type: CRMScript.Global.Void
   example: 
@@ -314,14 +324,14 @@ items:
   nameWithType: NSSaintConfiguration.SetPeriod2(Integer)
   fullName: CRMScript.NetServer.NSSaintConfiguration.SetPeriod2(Integer)
   type: Method
-  summary: "\nLength of the second counter period\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetPeriod2(Integer period2)
     parameters:
     - id: period2
       type: CRMScript.Global.Integer
-      description: 
+      description: Length of the second counter period
     return:
       type: CRMScript.Global.Void
   example: 
@@ -336,14 +346,14 @@ items:
   nameWithType: NSSaintConfiguration.SetPeriod3(Integer)
   fullName: CRMScript.NetServer.NSSaintConfiguration.SetPeriod3(Integer)
   type: Method
-  summary: "\nLength of the third counter period\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetPeriod3(Integer period3)
     parameters:
     - id: period3
       type: CRMScript.Global.Integer
-      description: 
+      description: Length of the third counter period
     return:
       type: CRMScript.Global.Void
   example: 
@@ -358,14 +368,14 @@ items:
   nameWithType: NSSaintConfiguration.SetRowsGenerated(Integer)
   fullName: CRMScript.NetServer.NSSaintConfiguration.SetRowsGenerated(Integer)
   type: Method
-  summary: "\nNumber of CounterValue rows generated for this entity\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetRowsGenerated(Integer rowsGenerated)
     parameters:
     - id: rowsGenerated
       type: CRMScript.Global.Integer
-      description: 
+      description: Number of CounterValue rows generated for this entity
     return:
       type: CRMScript.Global.Void
   example: 

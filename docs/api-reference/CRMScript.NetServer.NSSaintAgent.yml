@@ -6,6 +6,7 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSSaintAgent.#ctor
   - CRMScript.NetServer.NSSaintAgent.CreateDefaultSaintConfiguration()
   - CRMScript.NetServer.NSSaintAgent.CreateDefaultStatusMonitor()
   - CRMScript.NetServer.NSSaintAgent.CreateDefaultStatusMonitorPeriods()
@@ -13,19 +14,34 @@ items:
   - CRMScript.NetServer.NSSaintAgent.GetStatusMonitor(Integer)
   - CRMScript.NetServer.NSSaintAgent.GetStatusMonitorPeriods()
   - CRMScript.NetServer.NSSaintAgent.GetStatusMonitors(Integer,String)
-  - CRMScript.NetServer.NSSaintAgent.#ctor
   - CRMScript.NetServer.NSSaintAgent.RegenerateCounters(Bool)
   - CRMScript.NetServer.NSSaintAgent.RegenerateStatusMonitor(Integer)
   - CRMScript.NetServer.NSSaintAgent.RegenerateStatusMonitors(Bool)
-  - CRMScript.NetServer.NSSaintAgent.SaveSaintConfiguration()
-  - CRMScript.NetServer.NSSaintAgent.SaveStatusMonitor()
-  - CRMScript.NetServer.NSSaintAgent.SaveStatusMonitorPeriods()
+  - CRMScript.NetServer.NSSaintAgent.SaveSaintConfiguration(NSSaintConfiguration)
+  - CRMScript.NetServer.NSSaintAgent.SaveStatusMonitor(NSStatusMonitor)
+  - CRMScript.NetServer.NSSaintAgent.SaveStatusMonitorPeriods(NSStatusMonitorPeriods)
   - CRMScript.NetServer.NSSaintAgent.SetRankOnStatusMonitors(String,Integer[])
   name: NSSaintAgent
   nameWithType: NSSaintAgent
   fullName: CRMScript.NetServer.NSSaintAgent
   type: Class
   summary: "\nAdministration and maintenance of SAINT counters and statuses.\n"
+  example: 
+  - "\n<pre><code>NSSaintAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSSaintAgent.#ctor
+  commentId: M:CRMScript.NetServer.NSSaintAgent.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSSaintAgent
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSSaintAgent.#ctor
+  fullName: CRMScript.NetServer.NSSaintAgent.#ctor
+  type: Constructor
+  summary: "\nAdministration and maintenance of SAINT counters and statuses.\n"
+  remarks: 
+  syntax: 
+    content: NSSaintAgent
   example: 
   - "\n<pre><code>NSSaintAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSaintAgent.CreateDefaultSaintConfiguration()
@@ -95,13 +111,14 @@ items:
   nameWithType: NSSaintAgent.GetSaintConfigurations()
   fullName: CRMScript.NetServer.NSSaintAgent.GetSaintConfigurations()
   type: Method
-  summary: "\nReturns the NSStatusMonitorPeriods entity.<p></p>\n<strong>Returns:</strong>NSSaintConfiguration[]<p></p>\n<pre><code>NSSaintAgent agent;\nNSSaintConfiguration[] res = agent.GetSaintConfigurations();</code></pre>\n"
+  summary: "\nReturns the NSStatusMonitorPeriods entity.\n"
   remarks: 
   syntax: 
     content: NSSaintConfiguration[] GetSaintConfigurations()
     parameters: []
     return:
       type: CRMScript.NetServer.NSSaintConfiguration[]
+      description: 
   example: 
   - "\n<pre><code>NSSaintAgent agent;\nNSSaintConfiguration[] res = agent.GetSaintConfigurations();</code></pre>\n"
 - uid: CRMScript.NetServer.NSSaintAgent.GetStatusMonitor(Integer)
@@ -170,22 +187,6 @@ items:
       type: CRMScript.NetServer.NSStatusMonitor[]
   example: 
   - "\n<pre><code>NSSaintAgent agent;\nInteger id;\nString type;\nNSStatusMonitor[] res = agent.GetStatusMonitors(id, type);</code></pre>\n"
-- uid: CRMScript.NetServer.NSSaintAgent.#ctor
-  commentId: M:CRMScript.NetServer.NSSaintAgent.#ctor
-  id: '#ctor'
-  so.intellisense: Void.NSSaintAgent
-  langs:
-  - crmscript
-  name: '#ctor'
-  nameWithType: NSSaintAgent.#ctor
-  fullName: CRMScript.NetServer.NSSaintAgent.#ctor
-  type: Constructor
-  summary: "\nAdministration and maintenance of SAINT counters and statuses.\n"
-  remarks: 
-  syntax: 
-    content: NSSaintAgent
-  example: 
-  - "\n<pre><code>NSSaintAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSaintAgent.RegenerateCounters(Bool)
   commentId: M:CRMScript.NetServer.NSSaintAgent.RegenerateCounters(Bool)
   id: 'RegenerateCounters(Bool)'
@@ -196,7 +197,7 @@ items:
   nameWithType: NSSaintAgent.RegenerateCounters(Bool)
   fullName: CRMScript.NetServer.NSSaintAgent.RegenerateCounters(Bool)
   type: Method
-  summary: "\nRegenerate the Saint counters* this can take several minutes\n"
+  summary: "\nRegenerates the Saint counters* this can take several minutes\n"
   remarks: 
   syntax: 
     content: NSBatchTaskInfo RegenerateCounters(Bool runAsBatch)
@@ -218,7 +219,7 @@ items:
   nameWithType: NSSaintAgent.RegenerateStatusMonitor(Integer)
   fullName: CRMScript.NetServer.NSSaintAgent.RegenerateStatusMonitor(Integer)
   type: Method
-  summary: "\nRegenerate the given status monitor\n"
+  summary: "\nRegenerates the given status monitor\n"
   remarks: 
   syntax: 
     content: Void RegenerateStatusMonitor(Integer statusMonitorId)
@@ -240,7 +241,7 @@ items:
   nameWithType: NSSaintAgent.RegenerateStatusMonitors(Bool)
   fullName: CRMScript.NetServer.NSSaintAgent.RegenerateStatusMonitors(Bool)
   type: Method
-  summary: "\nRegenerate status monitors\n"
+  summary: "\nRegenerates status monitors\n"
   remarks: 
   syntax: 
     content: NSBatchTaskInfo RegenerateStatusMonitors(Bool runAsBatch)
@@ -252,59 +253,68 @@ items:
       type: CRMScript.NetServer.NSBatchTaskInfo
   example: 
   - "\n<pre><code>NSSaintAgent agent;\nBool runAsBatch;\nNSBatchTaskInfo res = agent.RegenerateStatusMonitors(runAsBatch);</code></pre>\n"
-- uid: CRMScript.NetServer.NSSaintAgent.SaveSaintConfiguration()
-  commentId: M:CRMScript.NetServer.NSSaintAgent.SaveSaintConfiguration()
-  id: 'SaveSaintConfiguration()'
+- uid: CRMScript.NetServer.NSSaintAgent.SaveSaintConfiguration(NSSaintConfiguration)
+  commentId: M:CRMScript.NetServer.NSSaintAgent.SaveSaintConfiguration(NSSaintConfiguration)
+  id: 'SaveSaintConfiguration(NSSaintConfiguration)'
   so.intellisense: NSSaintAgent.SaveSaintConfiguration
   langs:
   - crmscript
-  name: 'SaveSaintConfiguration()'
-  nameWithType: NSSaintAgent.SaveSaintConfiguration()
-  fullName: CRMScript.NetServer.NSSaintAgent.SaveSaintConfiguration()
+  name: 'SaveSaintConfiguration(NSSaintConfiguration)'
+  nameWithType: NSSaintAgent.SaveSaintConfiguration(NSSaintConfiguration)
+  fullName: CRMScript.NetServer.NSSaintAgent.SaveSaintConfiguration(NSSaintConfiguration)
   type: Method
-  summary: "\nUpdates the existing NSSaintConfiguration or creates a new NSSaintConfiguration if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>saintConfiguration</strong>The NSSaintConfiguration to save.</li></ul>\n"
+  summary: "\nUpdates the existing NSSaintConfiguration or creates a new NSSaintConfiguration if the id parameter is 0.\n"
   remarks: 
   syntax: 
     content: NSSaintConfiguration SaveSaintConfiguration(NSSaintConfiguration saintConfiguration)
     parameters:
+    - id: saintConfiguration
+      type: CRMScript.NetServer.NSSaintConfiguration
+      description: The NSSaintConfiguration to save.
     return:
       type: CRMScript.NetServer.NSSaintConfiguration
   example: 
   - "\n<pre><code>NSSaint  agent;\nNSSaintConfiguration thing = agent.CreateDefaultSaintConfiguration();\nthing = agent.SaveSaintConfiguration(thing);</code></pre>\n"
-- uid: CRMScript.NetServer.NSSaintAgent.SaveStatusMonitor()
-  commentId: M:CRMScript.NetServer.NSSaintAgent.SaveStatusMonitor()
-  id: 'SaveStatusMonitor()'
+- uid: CRMScript.NetServer.NSSaintAgent.SaveStatusMonitor(NSStatusMonitor)
+  commentId: M:CRMScript.NetServer.NSSaintAgent.SaveStatusMonitor(NSStatusMonitor)
+  id: 'SaveStatusMonitor(NSStatusMonitor)'
   so.intellisense: NSSaintAgent.SaveStatusMonitor
   langs:
   - crmscript
-  name: 'SaveStatusMonitor()'
-  nameWithType: NSSaintAgent.SaveStatusMonitor()
-  fullName: CRMScript.NetServer.NSSaintAgent.SaveStatusMonitor()
+  name: 'SaveStatusMonitor(NSStatusMonitor)'
+  nameWithType: NSSaintAgent.SaveStatusMonitor(NSStatusMonitor)
+  fullName: CRMScript.NetServer.NSSaintAgent.SaveStatusMonitor(NSStatusMonitor)
   type: Method
-  summary: "\nUpdates the existing NSStatusMonitor or creates a new NSStatusMonitor if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>statusMonitor</strong>The NSStatusMonitor to save.</li></ul>\n"
+  summary: "\nUpdates the existing NSStatusMonitor or creates a new NSStatusMonitor if the id parameter is 0\n"
   remarks: 
   syntax: 
     content: NSStatusMonitor SaveStatusMonitor(NSStatusMonitor statusMonitor)
     parameters:
+    - id: statusMonitor
+      type: CRMScript.NetServer.NSStatusMonitor
+      description: The NSStatusMonitor to save.
     return:
       type: CRMScript.NetServer.NSStatusMonitor
   example: 
   - "\n<pre><code>NSSaint  agent;\nNSStatusMonitor thing = agent.CreateDefaultStatusMonitor();\nthing = agent.SaveStatusMonitor(thing);</code></pre>\n"
-- uid: CRMScript.NetServer.NSSaintAgent.SaveStatusMonitorPeriods()
-  commentId: M:CRMScript.NetServer.NSSaintAgent.SaveStatusMonitorPeriods()
-  id: 'SaveStatusMonitorPeriods()'
+- uid: CRMScript.NetServer.NSSaintAgent.SaveStatusMonitorPeriods(NSStatusMonitorPeriods)
+  commentId: M:CRMScript.NetServer.NSSaintAgent.SaveStatusMonitorPeriods(NSStatusMonitorPeriods)
+  id: 'SaveStatusMonitorPeriods(NSStatusMonitorPeriods)'
   so.intellisense: NSSaintAgent.SaveStatusMonitorPeriods
   langs:
   - crmscript
-  name: 'SaveStatusMonitorPeriods()'
-  nameWithType: NSSaintAgent.SaveStatusMonitorPeriods()
-  fullName: CRMScript.NetServer.NSSaintAgent.SaveStatusMonitorPeriods()
+  name: 'SaveStatusMonitorPeriods(NSStatusMonitorPeriods)'
+  nameWithType: NSSaintAgent.SaveStatusMonitorPeriods(NSStatusMonitorPeriods)
+  fullName: CRMScript.NetServer.NSSaintAgent.SaveStatusMonitorPeriods(NSStatusMonitorPeriods)
   type: Method
-  summary: "\nUpdates the existing NSStatusMonitorPeriods or creates a new NSStatusMonitorPeriods if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>statusMonitorPeriods</strong>The NSStatusMonitorPeriods to save.</li></ul>\n"
+  summary: "\nUpdates the existing NSStatusMonitorPeriods or creates a new NSStatusMonitorPeriods if the id parameter is 0\n"
   remarks: 
   syntax: 
     content: NSStatusMonitorPeriods SaveStatusMonitorPeriods(NSStatusMonitorPeriods statusMonitorPeriods)
     parameters:
+    - id: statusMonitorPeriods
+      type: CRMScript.NetServer.NSStatusMonitorPeriods
+      description: The NSStatusMonitorPeriods to save.
     return:
       type: CRMScript.NetServer.NSStatusMonitorPeriods
   example: 

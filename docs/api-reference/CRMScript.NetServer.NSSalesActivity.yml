@@ -6,11 +6,11 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSSalesActivity.#ctor
   - CRMScript.NetServer.NSSalesActivity.GetRequestedContacts()
   - CRMScript.NetServer.NSSalesActivity.GetRequestedPerson()
   - CRMScript.NetServer.NSSalesActivity.GetSalesRep()
-  - CRMScript.NetServer.NSSalesActivity.#ctor
-  - CRMScript.NetServer.NSSalesActivity.SetRequestedContacts()
+  - CRMScript.NetServer.NSSalesActivity.SetRequestedContacts(NSContact[])
   - CRMScript.NetServer.NSSalesActivity.SetRequestedPerson(NSPerson)
   - CRMScript.NetServer.NSSalesActivity.SetSalesRep(NSPerson)
   name: NSSalesActivity
@@ -19,63 +19,6 @@ items:
   type: Class
   summary: 
   example: 
-- uid: CRMScript.NetServer.NSSalesActivity.GetRequestedContacts()
-  commentId: M:CRMScript.NetServer.NSSalesActivity.GetRequestedContacts()
-  id: 'GetRequestedContacts()'
-  so.intellisense: NSSalesActivity.GetRequestedContacts
-  langs:
-  - crmscript
-  name: 'GetRequestedContacts()'
-  nameWithType: NSSalesActivity.GetRequestedContacts()
-  fullName: CRMScript.NetServer.NSSalesActivity.GetRequestedContacts()
-  type: Method
-  summary: "\nThe companies that match the request<p></p>\n<strong>Returns:</strong>NSContact[]<p></p>\n<pre><code>NSSalesActivity thing;\nNSContact[] requestedContacts = thing.GetRequestedContacts();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: NSContact[] GetRequestedContacts()
-    parameters: []
-    return:
-      type: CRMScript.NetServer.NSContact[]
-  example: 
-  - "\n<pre><code>NSSalesActivity thing;\nNSContact[] requestedContacts = thing.GetRequestedContacts();</code></pre>\n"
-- uid: CRMScript.NetServer.NSSalesActivity.GetRequestedPerson()
-  commentId: M:CRMScript.NetServer.NSSalesActivity.GetRequestedPerson()
-  id: 'GetRequestedPerson()'
-  so.intellisense: NSSalesActivity.GetRequestedPerson
-  langs:
-  - crmscript
-  name: 'GetRequestedPerson()'
-  nameWithType: NSSalesActivity.GetRequestedPerson()
-  fullName: CRMScript.NetServer.NSSalesActivity.GetRequestedPerson()
-  type: Method
-  summary: "\nThe person that matches the request.\n"
-  remarks: 
-  syntax: 
-    content: NSPerson GetRequestedPerson()
-    parameters: []
-    return:
-      type: CRMScript.NetServer.NSPerson
-  example: 
-  - "\n<pre><code>NSSalesActivity thing;\nNSPerson requestedPerson = thing.GetRequestedPerson();</code></pre>\n"
-- uid: CRMScript.NetServer.NSSalesActivity.GetSalesRep()
-  commentId: M:CRMScript.NetServer.NSSalesActivity.GetSalesRep()
-  id: 'GetSalesRep()'
-  so.intellisense: NSSalesActivity.GetSalesRep
-  langs:
-  - crmscript
-  name: 'GetSalesRep()'
-  nameWithType: NSSalesActivity.GetSalesRep()
-  fullName: CRMScript.NetServer.NSSalesActivity.GetSalesRep()
-  type: Method
-  summary: "\nThe sales representative for the person that matches the request.\n"
-  remarks: 
-  syntax: 
-    content: NSPerson GetSalesRep()
-    parameters: []
-    return:
-      type: CRMScript.NetServer.NSPerson
-  example: 
-  - "\n<pre><code>NSSalesActivity thing;\nNSPerson salesRep = thing.GetSalesRep();</code></pre>\n"
 - uid: CRMScript.NetServer.NSSalesActivity.#ctor
   commentId: M:CRMScript.NetServer.NSSalesActivity.#ctor
   id: '#ctor'
@@ -91,21 +34,86 @@ items:
   syntax: 
     content: NSSalesActivity
   example: 
-- uid: CRMScript.NetServer.NSSalesActivity.SetRequestedContacts()
-  commentId: M:CRMScript.NetServer.NSSalesActivity.SetRequestedContacts()
-  id: 'SetRequestedContacts()'
+- uid: CRMScript.NetServer.NSSalesActivity.GetRequestedContacts()
+  commentId: M:CRMScript.NetServer.NSSalesActivity.GetRequestedContacts()
+  id: 'GetRequestedContacts()'
+  so.intellisense: NSSalesActivity.GetRequestedContacts
+  langs:
+  - crmscript
+  name: 'GetRequestedContacts()'
+  nameWithType: NSSalesActivity.GetRequestedContacts()
+  fullName: CRMScript.NetServer.NSSalesActivity.GetRequestedContacts()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: NSContact[] GetRequestedContacts()
+    parameters: []
+    return:
+      type: CRMScript.NetServer.NSContact[]
+      description: The companies that match the request
+  example: 
+  - "\n<pre><code>NSSalesActivity thing;\nNSContact[] requestedContacts = thing.GetRequestedContacts();</code></pre>\n"
+- uid: CRMScript.NetServer.NSSalesActivity.GetRequestedPerson()
+  commentId: M:CRMScript.NetServer.NSSalesActivity.GetRequestedPerson()
+  id: 'GetRequestedPerson()'
+  so.intellisense: NSSalesActivity.GetRequestedPerson
+  langs:
+  - crmscript
+  name: 'GetRequestedPerson()'
+  nameWithType: NSSalesActivity.GetRequestedPerson()
+  fullName: CRMScript.NetServer.NSSalesActivity.GetRequestedPerson()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: NSPerson GetRequestedPerson()
+    parameters: []
+    return:
+      type: CRMScript.NetServer.NSPerson
+      description: The person that matches the request.
+  example: 
+  - "\n<pre><code>NSSalesActivity thing;\nNSPerson requestedPerson = thing.GetRequestedPerson();</code></pre>\n"
+- uid: CRMScript.NetServer.NSSalesActivity.GetSalesRep()
+  commentId: M:CRMScript.NetServer.NSSalesActivity.GetSalesRep()
+  id: 'GetSalesRep()'
+  so.intellisense: NSSalesActivity.GetSalesRep
+  langs:
+  - crmscript
+  name: 'GetSalesRep()'
+  nameWithType: NSSalesActivity.GetSalesRep()
+  fullName: CRMScript.NetServer.NSSalesActivity.GetSalesRep()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: NSPerson GetSalesRep()
+    parameters: []
+    return:
+      type: CRMScript.NetServer.NSPerson
+      description: The sales representative for the person that matches the request.
+  example: 
+  - "\n<pre><code>NSSalesActivity thing;\nNSPerson salesRep = thing.GetSalesRep();</code></pre>\n"
+- uid: CRMScript.NetServer.NSSalesActivity.SetRequestedContacts(NSContact[])
+  commentId: M:CRMScript.NetServer.NSSalesActivity.SetRequestedContacts(NSContact[])
+  id: 'SetRequestedContacts(NSContact[])'
   so.intellisense: NSSalesActivity.SetRequestedContacts
   langs:
   - crmscript
-  name: 'SetRequestedContacts()'
-  nameWithType: NSSalesActivity.SetRequestedContacts()
-  fullName: CRMScript.NetServer.NSSalesActivity.SetRequestedContacts()
+  name: 'SetRequestedContacts(NSContact[])'
+  nameWithType: NSSalesActivity.SetRequestedContacts(NSContact[])
+  fullName: CRMScript.NetServer.NSSalesActivity.SetRequestedContacts(NSContact[])
   type: Method
-  summary: "\nThe companies that match the request\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetRequestedContacts(NSContact[] requestedContacts)
     parameters:
+    - id:  requestedContacts
+      type: CRMScript.NetServer.NSContact[]
+      description: The companies that match the request
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSSalesActivity thing;\nNSContact[] requestedContacts;\nthing.SetRequestedContacts(requestedContacts);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSalesActivity.SetRequestedPerson(NSPerson)
@@ -118,14 +126,14 @@ items:
   nameWithType: NSSalesActivity.SetRequestedPerson(NSPerson)
   fullName: CRMScript.NetServer.NSSalesActivity.SetRequestedPerson(NSPerson)
   type: Method
-  summary: "\nThe person that matches the request.\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetRequestedPerson(NSPerson requestedPerson)
     parameters:
     - id: requestedPerson
       type: CRMScript.NetServer.NSPerson
-      description: 
+      description: The person that matches the request.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -140,14 +148,14 @@ items:
   nameWithType: NSSalesActivity.SetSalesRep(NSPerson)
   fullName: CRMScript.NetServer.NSSalesActivity.SetSalesRep(NSPerson)
   type: Method
-  summary: "\nThe sales representative for the person that matches the request.\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetSalesRep(NSPerson salesRep)
     parameters:
     - id: salesRep
       type: CRMScript.NetServer.NSPerson
-      description: 
+      description: The sales representative for the person that matches the request.
     return:
       type: CRMScript.Global.Void
   example: 

@@ -6,14 +6,14 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSSmsConfig.#ctor
   - CRMScript.NetServer.NSSmsConfig.GetDefaultSmsCountry()
   - CRMScript.NetServer.NSSmsConfig.GetNetServerSmsProvider()
   - CRMScript.NetServer.NSSmsConfig.GetNsPluginConfig()
   - CRMScript.NetServer.NSSmsConfig.GetNsPluginSender()
-  - CRMScript.NetServer.NSSmsConfig.#ctor
   - CRMScript.NetServer.NSSmsConfig.SetDefaultSmsCountry(String)
   - CRMScript.NetServer.NSSmsConfig.SetNetServerSmsProvider(String)
-  - CRMScript.NetServer.NSSmsConfig.SetNsPluginConfig()
+  - CRMScript.NetServer.NSSmsConfig.SetNsPluginConfig(Map)
   - CRMScript.NetServer.NSSmsConfig.SetNsPluginSender(String)
   name: NSSmsConfig
   nameWithType: NSSmsConfig
@@ -21,86 +21,6 @@ items:
   type: Class
   summary: 
   example: 
-- uid: CRMScript.NetServer.NSSmsConfig.GetDefaultSmsCountry()
-  commentId: M:CRMScript.NetServer.NSSmsConfig.GetDefaultSmsCountry()
-  id: 'GetDefaultSmsCountry()'
-  so.intellisense: NSSmsConfig.GetDefaultSmsCountry
-  langs:
-  - crmscript
-  name: 'GetDefaultSmsCountry()'
-  nameWithType: NSSmsConfig.GetDefaultSmsCountry()
-  fullName: CRMScript.NetServer.NSSmsConfig.GetDefaultSmsCountry()
-  type: Method
-  summary: "\nPhone prefix, will default to the current users HomeCountryId.\n"
-  remarks: 
-  syntax: 
-    content: String GetDefaultSmsCountry()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSSmsConfig thing;\nString defaultSmsCountry = thing.GetDefaultSmsCountry();</code></pre>\n"
-- uid: CRMScript.NetServer.NSSmsConfig.GetNetServerSmsProvider()
-  commentId: M:CRMScript.NetServer.NSSmsConfig.GetNetServerSmsProvider()
-  id: 'GetNetServerSmsProvider()'
-  so.intellisense: NSSmsConfig.GetNetServerSmsProvider
-  langs:
-  - crmscript
-  name: 'GetNetServerSmsProvider()'
-  nameWithType: NSSmsConfig.GetNetServerSmsProvider()
-  fullName: CRMScript.NetServer.NSSmsConfig.GetNetServerSmsProvider()
-  type: Method
-  summary: "\nName of the selected provider, i.e. CM, Compaya SMS (cpsms.dk), Intelecom SMS, PSWinCom SMS, SMS Teknik or TXTLocal.\n"
-  remarks: 
-  syntax: 
-    content: String GetNetServerSmsProvider()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSSmsConfig thing;\nString netServerSmsProvider = thing.GetNetServerSmsProvider();</code></pre>\n"
-- uid: CRMScript.NetServer.NSSmsConfig.GetNsPluginConfig()
-  commentId: M:CRMScript.NetServer.NSSmsConfig.GetNsPluginConfig()
-  id: 'GetNsPluginConfig()'
-  so.intellisense: NSSmsConfig.GetNsPluginConfig
-  langs:
-  - crmscript
-  name: 'GetNsPluginConfig()'
-  nameWithType: NSSmsConfig.GetNsPluginConfig()
-  fullName: CRMScript.NetServer.NSSmsConfig.GetNsPluginConfig()
-  type: Method
-  summary: "\nConfiguration settings provided by the SMS provider. Typically contains newline-delimited settings such as username and password.\n"
-  remarks: 
-  syntax: 
-    content: Map GetNsPluginConfig()
-    parameters: []
-    return:
-      type: CRMScript.Global.Map
-      description:
-  example: 
-  - "\n<pre><code>NSSmsConfig thing;\nMap nsPluginConfig = thing.GetNsPluginConfig();</code></pre>\n"
-- uid: CRMScript.NetServer.NSSmsConfig.GetNsPluginSender()
-  commentId: M:CRMScript.NetServer.NSSmsConfig.GetNsPluginSender()
-  id: 'GetNsPluginSender()'
-  so.intellisense: NSSmsConfig.GetNsPluginSender
-  langs:
-  - crmscript
-  name: 'GetNsPluginSender()'
-  nameWithType: NSSmsConfig.GetNsPluginSender()
-  fullName: CRMScript.NetServer.NSSmsConfig.GetNsPluginSender()
-  type: Method
-  summary: "\nThe sender of the SMS messages. This text will appear on the recipient's mobile phone.\n"
-  remarks: 
-  syntax: 
-    content: String GetNsPluginSender()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSSmsConfig thing;\nString nsPluginSender = thing.GetNsPluginSender();</code></pre>\n"
 - uid: CRMScript.NetServer.NSSmsConfig.#ctor
   commentId: M:CRMScript.NetServer.NSSmsConfig.#ctor
   id: '#ctor'
@@ -116,6 +36,86 @@ items:
   syntax: 
     content: NSSmsConfig
   example: 
+- uid: CRMScript.NetServer.NSSmsConfig.GetDefaultSmsCountry()
+  commentId: M:CRMScript.NetServer.NSSmsConfig.GetDefaultSmsCountry()
+  id: 'GetDefaultSmsCountry()'
+  so.intellisense: NSSmsConfig.GetDefaultSmsCountry
+  langs:
+  - crmscript
+  name: 'GetDefaultSmsCountry()'
+  nameWithType: NSSmsConfig.GetDefaultSmsCountry()
+  fullName: CRMScript.NetServer.NSSmsConfig.GetDefaultSmsCountry()
+  type: Method
+  summary: "\nP\n"
+  remarks: 
+  syntax: 
+    content: String GetDefaultSmsCountry()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: hone prefix, will default to the current users HomeCountryId.
+  example: 
+  - "\n<pre><code>NSSmsConfig thing;\nString defaultSmsCountry = thing.GetDefaultSmsCountry();</code></pre>\n"
+- uid: CRMScript.NetServer.NSSmsConfig.GetNetServerSmsProvider()
+  commentId: M:CRMScript.NetServer.NSSmsConfig.GetNetServerSmsProvider()
+  id: 'GetNetServerSmsProvider()'
+  so.intellisense: NSSmsConfig.GetNetServerSmsProvider
+  langs:
+  - crmscript
+  name: 'GetNetServerSmsProvider()'
+  nameWithType: NSSmsConfig.GetNetServerSmsProvider()
+  fullName: CRMScript.NetServer.NSSmsConfig.GetNetServerSmsProvider()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetNetServerSmsProvider()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Name of the selected provider, i.e. CM, Compaya SMS (cpsms.dk), Intelecom SMS, PSWinCom SMS, SMS Teknik or TXTLocal.
+  example: 
+  - "\n<pre><code>NSSmsConfig thing;\nString netServerSmsProvider = thing.GetNetServerSmsProvider();</code></pre>\n"
+- uid: CRMScript.NetServer.NSSmsConfig.GetNsPluginConfig()
+  commentId: M:CRMScript.NetServer.NSSmsConfig.GetNsPluginConfig()
+  id: 'GetNsPluginConfig()'
+  so.intellisense: NSSmsConfig.GetNsPluginConfig
+  langs:
+  - crmscript
+  name: 'GetNsPluginConfig()'
+  nameWithType: NSSmsConfig.GetNsPluginConfig()
+  fullName: CRMScript.NetServer.NSSmsConfig.GetNsPluginConfig()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Map GetNsPluginConfig()
+    parameters: []
+    return:
+      type: CRMScript.Global.Map
+      description: Configuration settings provided by the SMS provider. Typically contains newline-delimited settings such as username and password.
+  example: 
+  - "\n<pre><code>NSSmsConfig thing;\nMap nsPluginConfig = thing.GetNsPluginConfig();</code></pre>\n"
+- uid: CRMScript.NetServer.NSSmsConfig.GetNsPluginSender()
+  commentId: M:CRMScript.NetServer.NSSmsConfig.GetNsPluginSender()
+  id: 'GetNsPluginSender()'
+  so.intellisense: NSSmsConfig.GetNsPluginSender
+  langs:
+  - crmscript
+  name: 'GetNsPluginSender()'
+  nameWithType: NSSmsConfig.GetNsPluginSender()
+  fullName: CRMScript.NetServer.NSSmsConfig.GetNsPluginSender()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: String GetNsPluginSender()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: The sender of the SMS messages. This text will appear on the recipient's mobile phone.
+  example: 
+  - "\n<pre><code>NSSmsConfig thing;\nString nsPluginSender = thing.GetNsPluginSender();</code></pre>\n"
 - uid: CRMScript.NetServer.NSSmsConfig.SetDefaultSmsCountry(String)
   commentId: M:CRMScript.NetServer.NSSmsConfig.SetDefaultSmsCountry(String)
   id: 'SetDefaultSmsCountry(String)'
@@ -126,14 +126,14 @@ items:
   nameWithType: NSSmsConfig.SetDefaultSmsCountry(String)
   fullName: CRMScript.NetServer.NSSmsConfig.SetDefaultSmsCountry(String)
   type: Method
-  summary: "\nPhone prefix, will default to the current users HomeCountryId.\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetDefaultSmsCountry(String defaultSmsCountry)
     parameters:
     - id: defaultSmsCountry
       type: CRMScript.Global.String
-      description: 
+      description:  Phone prefix, will default to the current users HomeCountryId.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -148,33 +148,38 @@ items:
   nameWithType: NSSmsConfig.SetNetServerSmsProvider(String)
   fullName: CRMScript.NetServer.NSSmsConfig.SetNetServerSmsProvider(String)
   type: Method
-  summary: "\nName of the selected provider, i.e. CM, Compaya SMS (cpsms.dk), Intelecom SMS, PSWinCom SMS, SMS Teknik or TXTLocal.\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetNetServerSmsProvider(String netServerSmsProvider)
     parameters:
     - id: netServerSmsProvider
       type: CRMScript.Global.String
-      description: 
+      description:  Name of the selected provider, i.e. CM, Compaya SMS (cpsms.dk), Intelecom SMS, PSWinCom SMS, SMS Teknik or TXTLocal.
     return:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSSmsConfig thing;\nString netServerSmsProvider;\nthing.SetNetServerSmsProvider(netServerSmsProvider);</code></pre>\n"
-- uid: CRMScript.NetServer.NSSmsConfig.SetNsPluginConfig()
-  commentId: M:CRMScript.NetServer.NSSmsConfig.SetNsPluginConfig()
-  id: 'SetNsPluginConfig()'
+- uid: CRMScript.NetServer.NSSmsConfig.SetNsPluginConfig(Map)
+  commentId: M:CRMScript.NetServer.NSSmsConfig.SetNsPluginConfig(Map)
+  id: 'SetNsPluginConfig(Map)'
   so.intellisense: NSSmsConfig.SetNsPluginConfig
   langs:
   - crmscript
-  name: 'SetNsPluginConfig()'
-  nameWithType: NSSmsConfig.SetNsPluginConfig()
-  fullName: CRMScript.NetServer.NSSmsConfig.SetNsPluginConfig()
+  name: 'SetNsPluginConfig(Map)'
+  nameWithType: NSSmsConfig.SetNsPluginConfig(Map)
+  fullName: CRMScript.NetServer.NSSmsConfig.SetNsPluginConfig(Map)
   type: Method
-  summary: "\nConfiguration settings provided by the SMS provider. Typically contains newline-delimited settings such as username and password.\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetNsPluginConfig(Map nsPluginConfig)
     parameters:
+    - id: nsPluginConfig
+      type: CRMScript.Global.Map
+      description: Configuration settings provided by the SMS provider. Typically contains newline-delimited settings such as username and password.
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSSmsConfig thing;\nMap nsPluginConfig;\nthing.SetNsPluginConfig(nsPluginConfig);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSmsConfig.SetNsPluginSender(String)
@@ -187,14 +192,14 @@ items:
   nameWithType: NSSmsConfig.SetNsPluginSender(String)
   fullName: CRMScript.NetServer.NSSmsConfig.SetNsPluginSender(String)
   type: Method
-  summary: "\nThe sender of the SMS messages. This text will appear on the recipient's mobile phone.\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetNsPluginSender(String nsPluginSender)
     parameters:
     - id: nsPluginSender
       type: CRMScript.Global.String
-      description: 
+      description: The sender of the SMS messages. This text will appear on the recipient's mobile phone.
     return:
       type: CRMScript.Global.Void
   example: 

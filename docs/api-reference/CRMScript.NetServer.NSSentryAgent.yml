@@ -6,6 +6,7 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSSentryAgent.#ctor
   - CRMScript.NetServer.NSSentryAgent.CanCreateAppointmentInAllDiaries()
   - CRMScript.NetServer.NSSentryAgent.CanCreateAppointmentInAssociateDiaries(Integer[])
   - CRMScript.NetServer.NSSentryAgent.GetFunctionRights()
@@ -13,12 +14,27 @@ items:
   - CRMScript.NetServer.NSSentryAgent.GetTableRightByContactOwnership(String,Integer)
   - CRMScript.NetServer.NSSentryAgent.GetTableRightByOwnership(String,Integer,Integer)
   - CRMScript.NetServer.NSSentryAgent.HasFunctionRight(String)
-  - CRMScript.NetServer.NSSentryAgent.#ctor
   name: NSSentryAgent
   nameWithType: NSSentryAgent
   fullName: CRMScript.NetServer.NSSentryAgent
   type: Class
   summary: "\nData and function right queries.\n"
+  example: 
+  - "\n<pre><code>NSSentryAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSSentryAgent.#ctor
+  commentId: M:CRMScript.NetServer.NSSentryAgent.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSSentryAgent
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSSentryAgent.#ctor
+  fullName: CRMScript.NetServer.NSSentryAgent.#ctor
+  type: Constructor
+  summary: "\nData and function right queries.\n"
+  remarks: 
+  syntax: 
+    content: NSSentryAgent
   example: 
   - "\n<pre><code>NSSentryAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSentryAgent.CanCreateAppointmentInAllDiaries()
@@ -31,7 +47,7 @@ items:
   nameWithType: NSSentryAgent.CanCreateAppointmentInAllDiaries()
   fullName: CRMScript.NetServer.NSSentryAgent.CanCreateAppointmentInAllDiaries()
   type: Method
-  summary: "\nCanCreateAppointmentInAllDiaries will check if the current associate can create appointments in diaries belonging all other associates. CanCreateAppointmentInAssociateDiaries will only check against associates that are diary owners.\n"
+  summary: "\nChecks if the current associate can create appointments in diaries belonging all other associates. It checks only against associates that are diary owners.\n"
   remarks: 
   syntax: 
     content: Bool CanCreateAppointmentInAllDiaries()
@@ -51,7 +67,7 @@ items:
   nameWithType: NSSentryAgent.CanCreateAppointmentInAssociateDiaries(Integer[])
   fullName: CRMScript.NetServer.NSSentryAgent.CanCreateAppointmentInAssociateDiaries(Integer[])
   type: Method
-  summary: "\nCanCreateAppointmentInAssociateDiaries will check if the current associate can create appointments in diaries belonging to the associates listed in associateIds. CanCreateAppointmentInAssociateDiaries will only check against associates that are diary owners. If none of the associates listed in the associateIds parameter is a diary owner, the method will return true.\n"
+  summary: "\nChecks if the current associate can create appointments in diaries belonging to the associates listed in associateIds. Checks only against associates that are diary owners.\n"
   remarks: 
   syntax: 
     content: Bool CanCreateAppointmentInAssociateDiaries(Integer[] associateIds)
@@ -61,7 +77,7 @@ items:
       description: 
     return:
       type: CRMScript.Global.Bool
-      description:
+      description: If none of the associates listed in the associateIds parameter is a diary owner, the method will return true.
   example: 
   - "\n<pre><code>NSSentryAgent agent;\nInteger[] associateIds;\nBool res = agent.CanCreateAppointmentInAssociateDiaries(associateIds);</code></pre>\n"
 - uid: CRMScript.NetServer.NSSentryAgent.GetFunctionRights()
@@ -74,7 +90,7 @@ items:
   nameWithType: NSSentryAgent.GetFunctionRights()
   fullName: CRMScript.NetServer.NSSentryAgent.GetFunctionRights()
   type: Method
-  summary: "\nGets a string array of all functions rights for the role of the current associate.<p></p>\n<strong>Returns:</strong>String[]<p></p>\n<pre><code>NSSentryAgent agent;\nString[] res = agent.GetFunctionRights();</code></pre>\n"
+  summary: "\nGets a string array of all functions rights for the role of the current associate.\n"
   remarks: 
   syntax: 
     content: String[] GetFunctionRights()
@@ -181,22 +197,6 @@ items:
       type: CRMScript.Global.Bool
       description:
   example: 
-- uid: CRMScript.NetServer.NSSentryAgent.#ctor
-  commentId: M:CRMScript.NetServer.NSSentryAgent.#ctor
-  id: '#ctor'
-  so.intellisense: Void.NSSentryAgent
-  langs:
-  - crmscript
-  name: '#ctor'
-  nameWithType: NSSentryAgent.#ctor
-  fullName: CRMScript.NetServer.NSSentryAgent.#ctor
-  type: Constructor
-  summary: "\nData and function right queries.\n"
-  remarks: 
-  syntax: 
-    content: NSSentryAgent
-  example: 
-  - "\n<pre><code>NSSentryAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 references:
 - uid: CRMScript.NetServer.NSSentryAgent
   commentId: T:CRMScript.NetServer.NSSentryAgent

@@ -42,14 +42,14 @@ items:
   - CRMScript.NetServer.NSDocumentTemplateEntity.SetFilename(String)
   - CRMScript.NetServer.NSDocumentTemplateEntity.SetIncludeSignature(Bool)
   - CRMScript.NetServer.NSDocumentTemplateEntity.SetIntentId(Integer)
-  - CRMScript.NetServer.NSDocumentTemplateEntity.SetInvitationDocType()
+  - CRMScript.NetServer.NSDocumentTemplateEntity.SetInvitationDocType(Integer)
   - CRMScript.NetServer.NSDocumentTemplateEntity.SetIsDefaultPublished(Bool)
   - CRMScript.NetServer.NSDocumentTemplateEntity.SetIsInUseInGuides(Bool)
   - CRMScript.NetServer.NSDocumentTemplateEntity.SetLoadTemplateFromPlugin(Integer)
   - CRMScript.NetServer.NSDocumentTemplateEntity.SetMimeType(String)
   - CRMScript.NetServer.NSDocumentTemplateEntity.SetName(String)
   - CRMScript.NetServer.NSDocumentTemplateEntity.SetPrivacyDocType()
-  - CRMScript.NetServer.NSDocumentTemplateEntity.SetQuoteDocType(NSDocTmplQuoteType)
+  - CRMScript.NetServer.NSDocumentTemplateEntity.SetQuoteDocType(Integer)
   - CRMScript.NetServer.NSDocumentTemplateEntity.SetRank(Integer)
   - CRMScript.NetServer.NSDocumentTemplateEntity.SetRecordType(NSDocTmplType)
   - CRMScript.NetServer.NSDocumentTemplateEntity.SetSaveInDb(Integer)
@@ -133,16 +133,16 @@ items:
   nameWithType: NSDocumentTemplateEntity.GetDirection()
   fullName: CRMScript.NetServer.NSDocumentTemplateEntity.GetDirection()
   type: Method
-  summary: "\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Incoming</li><li>Enum: 2 = Outgoing</li><li>Enum: 3 = SaintAll</li></ul>\n"
+  summary: ""
   remarks: 
   syntax: 
-    content: NSDocTmplDirection GetDirection()
+    content: Integer GetDirection()
     parameters: []
     return:
-      type: CRMScript.NetServer.NSDocTmplDirection
-      description: 1 = incoming, 2 = outgoing, see EAppntDirection
+      type: CRMScript.Global.Integer
+      description: 1 = incoming, 2 = outgoing. See <xref href=\"TaskDirection\" data-throw-if-not-resolved=\"false\"></xref>
   example: 
-  - "\n<pre><code>NSDocumentTemplateEntity thing;\nNSDocTmplDirection direction = thing.GetDirection();</code></pre>\n"
+  - "\n<pre><code>NSDocumentTemplateEntity thing;\nInteger direction = thing.GetDirection();</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentTemplateEntity.GetDocumentTemplateId()
   commentId: M:CRMScript.NetServer.NSDocumentTemplateEntity.GetDocumentTemplateId()
   id: 'GetDocumentTemplateId()'
@@ -273,16 +273,16 @@ items:
   nameWithType: NSDocumentTemplateEntity.GetInvitationDocType()
   fullName: CRMScript.NetServer.NSDocumentTemplateEntity.GetInvitationDocType()
   type: Method
-  summary: "\nType for sending email meeting invitation.\n"
-  remarks: "<ul><li>Enum: 0 = None</li><li>Enum: 1 = New</li><li>Enum: 2 = Changed</li><li>Enum: 3 = Cancelled</li></ul>"
+  summary: ""
+  remarks: ""
   syntax: 
-    content: NSDocTmplInvitationType GetInvitationDocType()
+    content: Integer GetInvitationDocType()
     parameters: []
     return:
-      type: CRMScript.NetServer.NSDocTmplInvitationType
-      description: Not an invitation type template = 0, New = 1, Changed = 2, Cancelled = 3
+      type: CRMScript.Global.Integer
+      description: Type for sending email meeting invitation. See <xref href=\"DocTmplInvitationType\" data-throw-if-not-resolved=\"false\"></xref>
   example: 
-  - "\n<pre><code>NSDocumentTemplateEntity thing;\nNSDocTmplInvitationType invitationDocType = thing.GetInvitationDocType();</code></pre>\n"
+  - "\n<pre><code>NSDocumentTemplateEntity thing;\nInteger invitationDocType = thing.GetInvitationDocType();</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentTemplateEntity.GetIsDefaultPublished()
   commentId: M:CRMScript.NetServer.NSDocumentTemplateEntity.GetIsDefaultPublished()
   id: 'GetIsDefaultPublished()'
@@ -393,15 +393,16 @@ items:
   nameWithType: NSDocumentTemplateEntity.GetPrivacyDocType()
   fullName: CRMScript.NetServer.NSDocumentTemplateEntity.GetPrivacyDocType()
   type: Method
-  summary: "\nIndicator that this document template has a functional role, related to privacy/GDPR\n"
-  remarks: "\n<ul><li>Enum: 0 = None</li><li>Enum: 1 = PersonRegistered</li></ul>\n"
+  summary: ""
+  remarks: ""
   syntax: 
-    content: NSDocTmplPrivacyType GetPrivacyDocType()
+    content: Integer GetPrivacyDocType()
     parameters: []
     return:
-      type: CRMScript.NetServer.NSDocTmplPrivacyType
+      type: CRMScript.Global.Integer
+      description: Indicator that this document template has a functional role, related to privacy/GDPR. See <xref href=\"DocTmplPrivacyType\" data-throw-if-not-resolved=\"false\"></xref>
   example: 
-  - "\n<pre><code>NSDocumentTemplateEntity thing;\nNSDocTmplPrivacyType privacyDocType = thing.GetPrivacyDocType();</code></pre>\n"
+  - "\n<pre><code>NSDocumentTemplateEntity thing;\nInteger privacyDocType = thing.GetPrivacyDocType();</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentTemplateEntity.GetQuoteDocType()
   commentId: M:CRMScript.NetServer.NSDocumentTemplateEntity.GetQuoteDocType()
   id: 'GetQuoteDocType()'
@@ -412,15 +413,16 @@ items:
   nameWithType: NSDocumentTemplateEntity.GetQuoteDocType()
   fullName: CRMScript.NetServer.NSDocumentTemplateEntity.GetQuoteDocType()
   type: Method
-  summary: "\nThe role this document plays in the Quote system, if any\n"
-  remarks: "<ul><li>Enum: 0 = None</li><li>Enum: 1 = MailBody</li><li>Enum: 2 = MainDocument</li><li>Enum: 3 = QuoteLines</li><li>Enum: 4 = ConfirmationMailBody</li><li>Enum: 5 = ConfirmationLines</li></ul>"
+  summary: ""
+  remarks: ""
   syntax: 
-    content: NSDocTmplQuoteType GetQuoteDocType()
+    content: Integer GetQuoteDocType()
     parameters: []
     return:
-      type: CRMScript.NetServer.NSDocTmplQuoteType
+      type: CRMScript.Global.Integer
+      description: The role this document plays in the Quote system, if any. See <xref href=\"DocTmplQuoteType\" data-throw-if-not-resolved=\"false\"></xref>
   example: 
-  - "\n<pre><code>NSDocumentTemplateEntity thing;\nNSDocTmplQuoteType quoteDocType = thing.GetQuoteDocType();</code></pre>\n"
+  - "\n<pre><code>NSDocumentTemplateEntity thing;\nInteger quoteDocType = thing.GetQuoteDocType();</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentTemplateEntity.GetRank()
   commentId: M:CRMScript.NetServer.NSDocumentTemplateEntity.GetRank()
   id: 'GetRank()'
@@ -491,7 +493,7 @@ items:
   nameWithType: NSDocumentTemplateEntity.GetSenderEmailAddress()
   fullName: CRMScript.NetServer.NSDocumentTemplateEntity.GetSenderEmailAddress()
   type: Method
-  summary: "\nIf email template, default senderaddress when template is of type quote email or privacy email.\n"
+  summary: "\nIf email template, default sender address when template is of type quote email or privacy email.\n"
   remarks: 
   syntax: 
     content: String GetSenderEmailAddress()
@@ -511,15 +513,16 @@ items:
   nameWithType: NSDocumentTemplateEntity.GetSenderEmailMode()
   fullName: CRMScript.NetServer.NSDocumentTemplateEntity.GetSenderEmailMode()
   type: Method
-  summary: "\nIf email template, when DocType is Privacy or quote email, it is possible to make sender address like our contact, or our support contact, or always one address\n"
-  remarks: "\n<ul><li>Enum: 0 = UseDefaultSender</li><li>Enum: 1 = UseOurContact</li><li>Enum: 2 = UseSupportContact</li><li>Enum: 3 = UseLoggedInUser</li></ul>\n"
+  summary: ""
+  remarks: ""
   syntax: 
-    content: NSSenderMailMode GetSenderEmailMode()
+    content: Integer GetSenderEmailMode()
     parameters: []
     return:
-      type: CRMScript.NetServer.NSSenderMailMode
+      type: CRMScript.Global.Integer
+      description: If email template, when DocType is Privacy or quote email, it is possible to make sender address like our contact, or our support contact, or always one address. See <xref href=\"SenderMailMode\" data-throw-if-not-resolved=\"false\"></xref>
   example: 
-  - "\n<pre><code>NSDocumentTemplateEntity thing;\nNSSenderMailMode senderEmailMode = thing.GetSenderEmailMode();</code></pre>\n"
+  - "\n<pre><code>NSDocumentTemplateEntity thing;\nInteger senderEmailMode = thing.GetSenderEmailMode();</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentTemplateEntity.GetShowCurrents()
   commentId: M:CRMScript.NetServer.NSDocumentTemplateEntity.GetShowCurrents()
   id: 'GetShowCurrents()'
@@ -651,15 +654,18 @@ items:
   nameWithType: NSDocumentTemplateEntity.SetDirection()
   fullName: CRMScript.NetServer.NSDocumentTemplateEntity.SetDirection()
   type: Method
-  summary: "\nSets the direction of a document template\n"
+  summary: "\nSets the direction of a document template.\n"
   remarks: 
   syntax: 
-    content: Void SetDirection()
-    parameters: []
+    content: Void SetDirection(Integer direction)
+    parameters:
+    - id: direction
+      type: CRMScript.Global.Integer
+      description: See <xref href=\"TaskDirection\" data-throw-if-not-resolved=\"false\"></xref>
     return:
       type: CRMScript.Global.Void
   example: 
-  - "\n<pre><code>NSDocumentTemplateEntity thing;\nNSDocTmplDirection direction;\nthing.SetDirection(direction);</code></pre>\n"
+  - "\n<pre><code>NSDocumentTemplateEntity thing;\nInteger direction;\nthing.SetDirection(direction);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentTemplateEntity.SetDocumentTemplateId(Integer)
   commentId: M:CRMScript.NetServer.NSDocumentTemplateEntity.SetDocumentTemplateId(Integer)
   id: 'SetDocumentTemplateId(Integer)'
@@ -792,23 +798,28 @@ items:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSDocumentTemplateEntity thing;\nInteger intentId;\nthing.SetIntentId(intentId);</code></pre>\n"
-- uid: CRMScript.NetServer.NSDocumentTemplateEntity.SetInvitationDocType()
-  commentId: M:CRMScript.NetServer.NSDocumentTemplateEntity.SetInvitationDocType()
-  id: 'SetInvitationDocType()'
+- uid: CRMScript.NetServer.NSDocumentTemplateEntity.SetInvitationDocType(Integer)
+  commentId: M:CRMScript.NetServer.NSDocumentTemplateEntity.SetInvitationDocType(Integer)
+  id: 'SetInvitationDocType(Integer)'
   so.intellisense: NSDocumentTemplateEntity.SetInvitationDocType
   langs:
   - crmscript
-  name: 'SetInvitationDocType()'
-  nameWithType: NSDocumentTemplateEntity.SetInvitationDocType()
-  fullName: CRMScript.NetServer.NSDocumentTemplateEntity.SetInvitationDocType()
+  name: 'SetInvitationDocType(Integer)'
+  nameWithType: NSDocumentTemplateEntity.SetInvitationDocType(Integer)
+  fullName: CRMScript.NetServer.NSDocumentTemplateEntity.SetInvitationDocType(Integer)
   type: Method
-  summary: "\nType for sending email meeting invitation. Not an invitation type template = 0, New = 1, Changed = 2, Cancelled = 3\n"
-  remarks: "\nSee enum invitationDocType.\n"
+  summary: ""
+  remarks: ""
   syntax: 
-    content: Void SetInvitationDocType(NSDocTmplInvitationType invitationDocType)
+    content: Void SetInvitationDocType(Integer invitationDocType)
     parameters:
+    - id: invitationDocType
+      type: CRMScript.Global.Integer
+      description: The role this document plays in the Quote system, if any. See <xref href=\"DocTmplQuoteType\" data-throw-if-not-resolved=\"false\"></xref>
+    return:
+      type: CRMScript.Global.Void
   example: 
-  - "\n<pre><code>NSDocumentTemplateEntity thing;\nNSDocTmplInvitationType invitationDocType;\nthing.SetInvitationDocType(invitationDocType);</code></pre>\n"
+  - "\n<pre><code>NSDocumentTemplateEntity thing;\nInteger invitationDocType;\nthing.SetInvitationDocType(invitationDocType);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentTemplateEntity.SetIsDefaultPublished(Bool)
   commentId: M:CRMScript.NetServer.NSDocumentTemplateEntity.SetIsDefaultPublished(Bool)
   id: 'SetIsDefaultPublished(Bool)'
@@ -929,35 +940,40 @@ items:
   nameWithType: NSDocumentTemplateEntity.SetPrivacyDocType()
   fullName: CRMScript.NetServer.NSDocumentTemplateEntity.SetPrivacyDocType()
   type: Method
-  summary: "\nIndicator that this document template has a functional role, related to privacy/GDPR\n"
-  remarks: "\nSee enum privacyDocType.\n"
+  summary: ""
+  remarks: ""
   syntax: 
-    content: Void SetPrivacyDocType(NSDocTmplPrivacyType privacyDocType)
+    content: Void SetPrivacyDocType(Integer privacyDocType)
     parameters:
-  example: 
-  - "\n<pre><code>NSDocumentTemplateEntity thing;\nNSDocTmplPrivacyType privacyDocType;\nthing.SetPrivacyDocType(privacyDocType);</code></pre>\n"
-- uid: CRMScript.NetServer.NSDocumentTemplateEntity.SetQuoteDocType(NSDocTmplQuoteType)
-  commentId: M:CRMScript.NetServer.NSDocumentTemplateEntity.SetQuoteDocType(NSDocTmplQuoteType)
-  id: 'SetQuoteDocType(NSDocTmplQuoteType)'
-  so.intellisense: NSDocumentTemplateEntity.SetQuoteDocType
-  langs:
-  - crmscript
-  name: 'SetQuoteDocType(NSDocTmplQuoteType)'
-  nameWithType: NSDocumentTemplateEntity.SetQuoteDocType(NSDocTmplQuoteType)
-  fullName: CRMScript.NetServer.NSDocumentTemplateEntity.SetQuoteDocType(NSDocTmplQuoteType)
-  type: Method
-  summary: "\nThe role this document plays in the Quote system, if any\n"
-  remarks: "\nSee enum quoteDocType.\n"
-  syntax: 
-    content: Void SetQuoteDocType(NSDocTmplQuoteType quoteDocType)
-    parameters:
-    - id: quoteDocType
-      type: CRMScript.NetServer.NSDocTmplQuoteType
-      description: 
+    - id: privacyDocType
+      type: CRMScript.Global.Integer
+      description: Indicator that this document template has a functional role, related to privacy/GDPR. See <xref href=\"DocTmplPrivacyType\" data-throw-if-not-resolved=\"false\"></xref>
     return:
       type: CRMScript.Global.Void
   example: 
-  - "\n<pre><code>NSDocumentTemplateEntity thing;\nNSDocTmplQuoteType quoteDocType;\nthing.SetQuoteDocType(quoteDocType);</code></pre>\n"
+  - "\n<pre><code>NSDocumentTemplateEntity thing;\nInteger privacyDocType;\nthing.SetPrivacyDocType(privacyDocType);</code></pre>\n"
+- uid: CRMScript.NetServer.NSDocumentTemplateEntity.SetQuoteDocType(Integer)
+  commentId: M:CRMScript.NetServer.NSDocumentTemplateEntity.SetQuoteDocType(Integer)
+  id: 'SetQuoteDocType(Integer)'
+  so.intellisense: NSDocumentTemplateEntity.SetQuoteDocType
+  langs:
+  - crmscript
+  name: 'SetQuoteDocType(Integer)'
+  nameWithType: NSDocumentTemplateEntity.SetQuoteDocType(Integer)
+  fullName: CRMScript.NetServer.NSDocumentTemplateEntity.SetQuoteDocType(Integer)
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: Void SetQuoteDocType(Integer quoteDocType)
+    parameters:
+    - id: quoteDocType
+      type: CRMScript.Global.Integer
+      description: The role this document plays in the Quote system, if any. See <xref href=\"DocTmplQuoteType\" data-throw-if-not-resolved=\"false\"></xref>
+    return:
+      type: CRMScript.Global.Void
+  example: 
+  - "\n<pre><code>NSDocumentTemplateEntity thing;\nInteger quoteDocType;\nthing.SetQuoteDocType(quoteDocType);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentTemplateEntity.SetRank(Integer)
   commentId: M:CRMScript.NetServer.NSDocumentTemplateEntity.SetRank(Integer)
   id: 'SetRank(Integer)'
@@ -990,7 +1006,7 @@ items:
   nameWithType: NSDocumentTemplateEntity.SetRecordType(NSDocTmplType)
   fullName: CRMScript.NetServer.NSDocumentTemplateEntity.SetRecordType(NSDocTmplType)
   type: Method
-  summary: "\n1 = app, 2 = doc, 3 = email, 4 = fax, 5 = phone, 6 = todo See <xref href=\"CRMScript.NetServer.TaskType\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  summary: "\n1 = app, 2 = doc, 3 = email, 4 = fax, 5 = phone, 6 = todo\n"
   remarks: "\nSee <xref href=\"CRMScript.NetServer.TaskType\" data-throw-if-not-resolved=\"false\"></xref>\n"
   syntax: 
     content: Void SetRecordType(NSDocTmplType recordType)
@@ -1056,13 +1072,18 @@ items:
   nameWithType: NSDocumentTemplateEntity.SetSenderEmailMode()
   fullName: CRMScript.NetServer.NSDocumentTemplateEntity.SetSenderEmailMode()
   type: Method
-  summary: "\nIf email template, when DocType is Privacy or quote email, it is possible to make sender address like our contact, or our support contact, or always one address\n"
-  remarks: "\nSee enum senderEmailMode.\n"
+  summary: ""
+  remarks: ""
   syntax: 
-    content: Void SetSenderEmailMode(NSSenderMailMode senderEmailMode)
+    content: Void SetSenderEmailMode(Integer senderEmailMode)
     parameters:
+    - id: senderEmailMode
+      type: CRMScript.Global.Integer
+      description: If email template, when DocType is Privacy or quote email, it is possible to make sender address like our contact, or our support contact, or always one address. See <xref href=\"SenderMailMode\" data-throw-if-not-resolved=\"false\"></xref>
+    return:
+      type: CRMScript.Global.Void
   example: 
-  - "\n<pre><code>NSDocumentTemplateEntity thing;\nNSSenderMailMode senderEmailMode;\nthing.SetSenderEmailMode(senderEmailMode);</code></pre>\n"
+  - "\n<pre><code>NSDocumentTemplateEntity thing;\nInteger senderEmailMode;\nthing.SetSenderEmailMode(senderEmailMode);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentTemplateEntity.SetShowCurrents(Bool)
   commentId: M:CRMScript.NetServer.NSDocumentTemplateEntity.SetShowCurrents(Bool)
   id: 'SetShowCurrents(Bool)'
@@ -1132,42 +1153,12 @@ references:
   name: Bool
   nameWithType: Bool
   fullName: CRMScript.Global.Bool
-- uid: CRMScript.NetServer.NSDocTmplDirection
-  commentId: T:CRMScript.NetServer.NSDocTmplDirection
-  isExternal: true
-  name: NSDocTmplDirection
-  nameWithType: NSDocTmplDirection
-  fullName: CRMScript.NetServer.NSDocTmplDirection
-- uid: CRMScript.NetServer.NSDocTmplInvitationType
-  commentId: T:CRMScript.NetServer.NSDocTmplInvitationType
-  isExternal: true
-  name: NSDocTmplInvitationType
-  nameWithType: NSDocTmplInvitationType
-  fullName: CRMScript.NetServer.NSDocTmplInvitationType
-- uid: CRMScript.NetServer.NSDocTmplPrivacyType
-  commentId: T:CRMScript.NetServer.NSDocTmplPrivacyType
-  isExternal: true
-  name: NSDocTmplPrivacyType
-  nameWithType: NSDocTmplPrivacyType
-  fullName: CRMScript.NetServer.NSDocTmplPrivacyType
-- uid: CRMScript.NetServer.NSDocTmplQuoteType
-  commentId: T:CRMScript.NetServer.NSDocTmplQuoteType
-  isExternal: true
-  name: NSDocTmplQuoteType
-  nameWithType: NSDocTmplQuoteType
-  fullName: CRMScript.NetServer.NSDocTmplQuoteType
 - uid: CRMScript.NetServer.NSDocTmplType
   commentId: T:CRMScript.NetServer.NSDocTmplType
   isExternal: true
   name: NSDocTmplType
   nameWithType: NSDocTmplType
   fullName: CRMScript.NetServer.NSDocTmplType
-- uid: CRMScript.NetServer.NSSenderMailMode
-  commentId: T:CRMScript.NetServer.NSSenderMailMode
-  isExternal: true
-  name: NSSenderMailMode
-  nameWithType: NSSenderMailMode
-  fullName: CRMScript.NetServer.NSSenderMailMode
 - uid: CRMScript.NetServer.TaskType
   commentId: T:CRMScript.NetServer.TaskType
   isExternal: true
@@ -1180,3 +1171,27 @@ references:
   name: Void
   nameWithType: Void
   fullName: CRMScript.Global.Void
+- uid: CRMScript.NetServer.DocTmplQuoteType
+  commentId: T:CRMScript.NetServer.DocTmplQuoteType
+  isExternal: true
+  name: DocTmplQuoteType
+  nameWithType: DocTmplQuoteType
+  fullName: CRMScript.NetServer.DocTmplQuoteType
+- uid: CRMScript.NetServer.DocTmplInvitationType
+  commentId: T:CRMScript.NetServer.DocTmplInvitationType
+  isExternal: true
+  name: DocTmplInvitationType
+  nameWithType: DocTmplInvitationType
+  fullName: CRMScript.NetServer.DocTmplInvitationType
+- uid: CRMScript.NetServer.DocTmplPrivacyType
+  commentId: T:CRMScript.NetServer.DocTmplPrivacyType
+  isExternal: true
+  name: DocTmplPrivacyType
+  nameWithType: DocTmplPrivacyType
+  fullName: CRMScript.NetServer.DocTmplPrivacyType
+- uid: CRMScript.NetServer.SenderMailMode
+  commentId: T:CRMScript.NetServer.SenderMailMode
+  isExternal: true
+  name: SenderMailMode
+  nameWithType: SenderMailMode
+  fullName: CRMScript.NetServer.SenderMailMode

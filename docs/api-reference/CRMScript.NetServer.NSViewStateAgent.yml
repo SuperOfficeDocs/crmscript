@@ -6,6 +6,7 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSViewStateAgent.#ctor
   - CRMScript.NetServer.NSViewStateAgent.DeleteHistory(String,Integer)
   - CRMScript.NetServer.NSViewStateAgent.GetCurrent(String)
   - CRMScript.NetServer.NSViewStateAgent.GetHistories()
@@ -16,7 +17,6 @@ items:
   - CRMScript.NetServer.NSViewStateAgent.GetHistoryLengthPrefValue()
   - CRMScript.NetServer.NSViewStateAgent.GetNextCurrent(String,Integer)
   - CRMScript.NetServer.NSViewStateAgent.GetPreviousCurrent(String,Integer)
-  - CRMScript.NetServer.NSViewStateAgent.#ctor
   - CRMScript.NetServer.NSViewStateAgent.SaveCurrent(NSHistory)
   - CRMScript.NetServer.NSViewStateAgent.SaveCurrents(NSHistory[])
   - CRMScript.NetServer.NSViewStateAgent.SaveHistories(String,NSHistory[])
@@ -26,6 +26,22 @@ items:
   fullName: CRMScript.NetServer.NSViewStateAgent
   type: Class
   summary: "\nUser interface view state, history, currentXXX values.\n"
+  example: 
+  - "\n<pre><code>NSViewStateAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSViewStateAgent.#ctor
+  commentId: M:CRMScript.NetServer.NSViewStateAgent.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSViewStateAgent
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSViewStateAgent.#ctor
+  fullName: CRMScript.NetServer.NSViewStateAgent.#ctor
+  type: Constructor
+  summary: "\nUser interface view state, history, currentXXX values.\n"
+  remarks: 
+  syntax: 
+    content: NSViewStateAgent
   example: 
   - "\n<pre><code>NSViewStateAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSViewStateAgent.DeleteHistory(String,Integer)
@@ -62,8 +78,8 @@ items:
   nameWithType: NSViewStateAgent.GetCurrent(String)
   fullName: CRMScript.NetServer.NSViewStateAgent.GetCurrent(String)
   type: Method
-  summary: "\nGets the current (most recent) value of the history list. This is the item with rank = 1. If no item exists a default value is returned. This is usually the first item in the table representing the history list.\n"
-  remarks: 
+  summary: "\nGets the current (most recent) value of the history list.\n"
+  remarks: "\nThis is the item with rank = 1. If no item exists a default value is returned. This is usually the first item in the table representing the history list.\n"
   syntax: 
     content: NSHistory GetCurrent(String historyName)
     parameters:
@@ -84,7 +100,7 @@ items:
   nameWithType: NSViewStateAgent.GetHistories()
   fullName: CRMScript.NetServer.NSViewStateAgent.GetHistories()
   type: Method
-  summary: "\nReturns all history items that belong to the currently logged in user<p></p>\n<strong>Returns:</strong>NSHistory[]<p></p>\n<pre><code>NSViewStateAgent agent;\nNSHistory[] res = agent.GetHistories();</code></pre>\n"
+  summary: "\nReturns all history items that belong to the currently logged in user\n"
   remarks: 
   syntax: 
     content: NSHistory[] GetHistories()
@@ -147,14 +163,14 @@ items:
   nameWithType: NSViewStateAgent.GetHistoriesByNamesAndIds(NSHistoryRequest[])
   fullName: CRMScript.NetServer.NSViewStateAgent.GetHistoriesByNamesAndIds(NSHistoryRequest[])
   type: Method
-  summary: "\nReturns history data for the named entities and the given ids* which may not directly correspond to the current history records in the database.<para/>Use this method if you know exactly which items you need, regardless of whether they are in the current history or not.<para/>The history in the database is not changed or even looked at by this method.<p></p>\n<ul><li><strong>Requests</strong>Array of request objects that define what entities we are requesting history information for</li></ul><strong>Returns:</strong>NSHistory[]<p></p>\n<pre><code>NSViewStateAgent agent;\nNSHistoryRequest[] requests;\nNSHistory[] res = agent.GetHistoriesByNamesAndIds(requests);</code></pre>\n"
+  summary: "\nReturns history data for the named entities and the given IDs, which may not directly correspond to the current history records in the database.<para/>Use this method if you know exactly which items you need, regardless of whether they are in the current history or not.<para/>The history in the database is not changed or even looked at by this method.\n"
   remarks: 
   syntax: 
     content: NSHistory[] GetHistoriesByNamesAndIds(NSHistoryRequest[] requests)
     parameters:
     - id: requests
       type: CRMScript.NetServer.NSHistoryRequest[]
-      description: 
+      description: Array of request objects that define what entities we are requesting history information for
     return:
       type: CRMScript.NetServer.NSHistory[]
   example: 
@@ -211,8 +227,8 @@ items:
   nameWithType: NSViewStateAgent.GetNextCurrent(String,Integer)
   fullName: CRMScript.NetServer.NSViewStateAgent.GetNextCurrent(String,Integer)
   type: Method
-  summary: "\nReturns the next current item. If no item exists a default value is returned. This is usually the first item in the table representing the history list.\n"
-  remarks: 
+  summary: "\nReturns the next current item. If no item exists a default value is returned.\n"
+  remarks: "\nThis is usually the first item in the table representing the history list.\n"
   syntax: 
     content: NSHistory GetNextCurrent(String historyName, Integer id)
     parameters:
@@ -236,8 +252,8 @@ items:
   nameWithType: NSViewStateAgent.GetPreviousCurrent(String,Integer)
   fullName: CRMScript.NetServer.NSViewStateAgent.GetPreviousCurrent(String,Integer)
   type: Method
-  summary: "\nReturns the previous current item. If no item exists a default value is returned. This is usually the first item in the table representing the history list.\n"
-  remarks: 
+  summary: "\nReturns the previous current item. If no item exists a default value is returned.\n"
+  remarks: "\nThis is usually the first item in the table representing the history list.\n"
   syntax: 
     content: NSHistory GetPreviousCurrent(String historyName, Integer id)
     parameters:
@@ -251,22 +267,6 @@ items:
       type: CRMScript.NetServer.NSHistory
   example: 
   - "\n<pre><code>NSViewStateAgent agent;\nString historyName;\nInteger id;\nNSHistory res = agent.GetPreviousCurrent(historyName, id);</code></pre>\n"
-- uid: CRMScript.NetServer.NSViewStateAgent.#ctor
-  commentId: M:CRMScript.NetServer.NSViewStateAgent.#ctor
-  id: '#ctor'
-  so.intellisense: Void.NSViewStateAgent
-  langs:
-  - crmscript
-  name: '#ctor'
-  nameWithType: NSViewStateAgent.#ctor
-  fullName: CRMScript.NetServer.NSViewStateAgent.#ctor
-  type: Constructor
-  summary: "\nUser interface view state, history, currentXXX values.\n"
-  remarks: 
-  syntax: 
-    content: NSViewStateAgent
-  example: 
-  - "\n<pre><code>NSViewStateAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSViewStateAgent.SaveCurrent(NSHistory)
   commentId: M:CRMScript.NetServer.NSViewStateAgent.SaveCurrent(NSHistory)
   id: 'SaveCurrent(NSHistory)'
@@ -277,8 +277,8 @@ items:
   nameWithType: NSViewStateAgent.SaveCurrent(NSHistory)
   fullName: CRMScript.NetServer.NSViewStateAgent.SaveCurrent(NSHistory)
   type: Method
-  summary: "\nSaving the current history item. This history item is saved with Rank = 1, and all the remaining elements rank values are shifted one down. The list is maintained with the max lenght of the History list length preference.\n"
-  remarks: 
+  summary: "\nSaves the current history item.\n"
+  remarks: "\nThis history item is saved with Rank = 1, and all the remaining elements rank values are shifted one down.<p></p>\nThe list is maintained with the max lenght of the History list length preference.\n"
   syntax: 
     content: NSHistory SaveCurrent(NSHistory current)
     parameters:
@@ -321,7 +321,7 @@ items:
   nameWithType: NSViewStateAgent.SaveHistories(String,NSHistory[])
   fullName: CRMScript.NetServer.NSViewStateAgent.SaveHistories(String,NSHistory[])
   type: Method
-  summary: "\nReplaces the existing history-list for the currently logged-in user. All elements must belong to the same history list. If not they are ignored.<p></p>\n<strong>Returns:</strong>NSHistory[]\n"
+  summary: "\nReplaces the existing history-list for the currently logged-in user. All elements must belong to the same history list. If not they are ignored.\n"
   remarks: 
   syntax: 
     content: NSHistory[] SaveHistories(String historyName, NSHistory[] history)

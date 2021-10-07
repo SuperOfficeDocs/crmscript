@@ -6,10 +6,10 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSTokenManagementInfo.#ctor
   - CRMScript.NetServer.NSTokenManagementInfo.GetAccessToken()
   - CRMScript.NetServer.NSTokenManagementInfo.GetProvider()
   - CRMScript.NetServer.NSTokenManagementInfo.GetRefreshToken()
-  - CRMScript.NetServer.NSTokenManagementInfo.#ctor
   - CRMScript.NetServer.NSTokenManagementInfo.SetAccessToken(String)
   - CRMScript.NetServer.NSTokenManagementInfo.SetProvider(String)
   - CRMScript.NetServer.NSTokenManagementInfo.SetRefreshToken(String)
@@ -19,66 +19,6 @@ items:
   type: Class
   summary: 
   example: 
-- uid: CRMScript.NetServer.NSTokenManagementInfo.GetAccessToken()
-  commentId: M:CRMScript.NetServer.NSTokenManagementInfo.GetAccessToken()
-  id: 'GetAccessToken()'
-  so.intellisense: NSTokenManagementInfo.GetAccessToken
-  langs:
-  - crmscript
-  name: 'GetAccessToken()'
-  nameWithType: NSTokenManagementInfo.GetAccessToken()
-  fullName: CRMScript.NetServer.NSTokenManagementInfo.GetAccessToken()
-  type: Method
-  summary: "\nAccess token\n"
-  remarks: 
-  syntax: 
-    content: String GetAccessToken()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSTokenManagementInfo thing;\nString accessToken = thing.GetAccessToken();</code></pre>\n"
-- uid: CRMScript.NetServer.NSTokenManagementInfo.GetProvider()
-  commentId: M:CRMScript.NetServer.NSTokenManagementInfo.GetProvider()
-  id: 'GetProvider()'
-  so.intellisense: NSTokenManagementInfo.GetProvider
-  langs:
-  - crmscript
-  name: 'GetProvider()'
-  nameWithType: NSTokenManagementInfo.GetProvider()
-  fullName: CRMScript.NetServer.NSTokenManagementInfo.GetProvider()
-  type: Method
-  summary: "\nThe provider these tokens belong to\n"
-  remarks: 
-  syntax: 
-    content: String GetProvider()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSTokenManagementInfo thing;\nString provider = thing.GetProvider();</code></pre>\n"
-- uid: CRMScript.NetServer.NSTokenManagementInfo.GetRefreshToken()
-  commentId: M:CRMScript.NetServer.NSTokenManagementInfo.GetRefreshToken()
-  id: 'GetRefreshToken()'
-  so.intellisense: NSTokenManagementInfo.GetRefreshToken
-  langs:
-  - crmscript
-  name: 'GetRefreshToken()'
-  nameWithType: NSTokenManagementInfo.GetRefreshToken()
-  fullName: CRMScript.NetServer.NSTokenManagementInfo.GetRefreshToken()
-  type: Method
-  summary: "\nRefresh token\n"
-  remarks: 
-  syntax: 
-    content: String GetRefreshToken()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSTokenManagementInfo thing;\nString refreshToken = thing.GetRefreshToken();</code></pre>\n"
 - uid: CRMScript.NetServer.NSTokenManagementInfo.#ctor
   commentId: M:CRMScript.NetServer.NSTokenManagementInfo.#ctor
   id: '#ctor'
@@ -94,6 +34,66 @@ items:
   syntax: 
     content: NSTokenManagementInfo
   example: 
+- uid: CRMScript.NetServer.NSTokenManagementInfo.GetAccessToken()
+  commentId: M:CRMScript.NetServer.NSTokenManagementInfo.GetAccessToken()
+  id: 'GetAccessToken()'
+  so.intellisense: NSTokenManagementInfo.GetAccessToken
+  langs:
+  - crmscript
+  name: 'GetAccessToken()'
+  nameWithType: NSTokenManagementInfo.GetAccessToken()
+  fullName: CRMScript.NetServer.NSTokenManagementInfo.GetAccessToken()
+  type: Method
+  summary: 
+  remarks: 
+  syntax: 
+    content: String GetAccessToken()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Access token
+  example: 
+  - "\n<pre><code>NSTokenManagementInfo thing;\nString accessToken = thing.GetAccessToken();</code></pre>\n"
+- uid: CRMScript.NetServer.NSTokenManagementInfo.GetProvider()
+  commentId: M:CRMScript.NetServer.NSTokenManagementInfo.GetProvider()
+  id: 'GetProvider()'
+  so.intellisense: NSTokenManagementInfo.GetProvider
+  langs:
+  - crmscript
+  name: 'GetProvider()'
+  nameWithType: NSTokenManagementInfo.GetProvider()
+  fullName: CRMScript.NetServer.NSTokenManagementInfo.GetProvider()
+  type: Method
+  summary: 
+  remarks: 
+  syntax: 
+    content: String GetProvider()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: The provider these tokens belong to
+  example: 
+  - "\n<pre><code>NSTokenManagementInfo thing;\nString provider = thing.GetProvider();</code></pre>\n"
+- uid: CRMScript.NetServer.NSTokenManagementInfo.GetRefreshToken()
+  commentId: M:CRMScript.NetServer.NSTokenManagementInfo.GetRefreshToken()
+  id: 'GetRefreshToken()'
+  so.intellisense: NSTokenManagementInfo.GetRefreshToken
+  langs:
+  - crmscript
+  name: 'GetRefreshToken()'
+  nameWithType: NSTokenManagementInfo.GetRefreshToken()
+  fullName: CRMScript.NetServer.NSTokenManagementInfo.GetRefreshToken()
+  type: Method
+  summary: 
+  remarks: 
+  syntax: 
+    content: String GetRefreshToken()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Refresh token
+  example: 
+  - "\n<pre><code>NSTokenManagementInfo thing;\nString refreshToken = thing.GetRefreshToken();</code></pre>\n"
 - uid: CRMScript.NetServer.NSTokenManagementInfo.SetAccessToken(String)
   commentId: M:CRMScript.NetServer.NSTokenManagementInfo.SetAccessToken(String)
   id: 'SetAccessToken(String)'
@@ -104,14 +104,14 @@ items:
   nameWithType: NSTokenManagementInfo.SetAccessToken(String)
   fullName: CRMScript.NetServer.NSTokenManagementInfo.SetAccessToken(String)
   type: Method
-  summary: "\nAccess token\n"
+  summary: 
   remarks: 
   syntax: 
     content: Void SetAccessToken(String accessToken)
     parameters:
     - id: accessToken
       type: CRMScript.Global.String
-      description: 
+      description: Access token
     return:
       type: CRMScript.Global.Void
   example: 
@@ -126,14 +126,14 @@ items:
   nameWithType: NSTokenManagementInfo.SetProvider(String)
   fullName: CRMScript.NetServer.NSTokenManagementInfo.SetProvider(String)
   type: Method
-  summary: "\nThe provider these tokens belong to\n"
+  summary: 
   remarks: 
   syntax: 
     content: Void SetProvider(String provider)
     parameters:
     - id: provider
       type: CRMScript.Global.String
-      description: 
+      description: The provider these tokens belong to
     return:
       type: CRMScript.Global.Void
   example: 
@@ -148,14 +148,14 @@ items:
   nameWithType: NSTokenManagementInfo.SetRefreshToken(String)
   fullName: CRMScript.NetServer.NSTokenManagementInfo.SetRefreshToken(String)
   type: Method
-  summary: "\nRefresh token\n"
+  summary: 
   remarks: 
   syntax: 
     content: Void SetRefreshToken(String refreshToken)
     parameters:
     - id: refreshToken
       type: CRMScript.Global.String
-      description: 
+      description: Refresh token
     return:
       type: CRMScript.Global.Void
   example: 

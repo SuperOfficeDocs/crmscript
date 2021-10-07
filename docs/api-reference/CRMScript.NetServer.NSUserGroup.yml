@@ -6,12 +6,12 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSUserGroup.#ctor
   - CRMScript.NetServer.NSUserGroup.GetDeleted()
   - CRMScript.NetServer.NSUserGroup.GetId()
   - CRMScript.NetServer.NSUserGroup.GetRank()
   - CRMScript.NetServer.NSUserGroup.GetTooltip()
   - CRMScript.NetServer.NSUserGroup.GetValue()
-  - CRMScript.NetServer.NSUserGroup.#ctor
   - CRMScript.NetServer.NSUserGroup.SetDeleted()
   - CRMScript.NetServer.NSUserGroup.SetId(Integer)
   - CRMScript.NetServer.NSUserGroup.SetRank(Integer)
@@ -23,106 +23,6 @@ items:
   type: Class
   summary: 
   example: 
-- uid: CRMScript.NetServer.NSUserGroup.GetDeleted()
-  commentId: M:CRMScript.NetServer.NSUserGroup.GetDeleted()
-  id: 'GetDeleted()'
-  so.intellisense: NSUserGroup.GetDeleted
-  langs:
-  - crmscript
-  name: 'GetDeleted()'
-  nameWithType: NSUserGroup.GetDeleted()
-  fullName: CRMScript.NetServer.NSUserGroup.GetDeleted()
-  type: Method
-  summary: "\nDeleted equal to true means that this is a user group that no longer can be selected by the user.  It is not permitted to delete a UserGroup.\n"
-  remarks: 
-  syntax: 
-    content: Bool GetDeleted()
-    parameters: []
-    return:
-      type: CRMScript.Global.Bool
-      description:
-  example: 
-  - "\n<pre><code>NSUserGroup thing;\nBool deleted = thing.GetDeleted();</code></pre>\n"
-- uid: CRMScript.NetServer.NSUserGroup.GetId()
-  commentId: M:CRMScript.NetServer.NSUserGroup.GetId()
-  id: 'GetId()'
-  so.intellisense: NSUserGroup.GetId
-  langs:
-  - crmscript
-  name: 'GetId()'
-  nameWithType: NSUserGroup.GetId()
-  fullName: CRMScript.NetServer.NSUserGroup.GetId()
-  type: Method
-  summary: "\nPrimary key\n"
-  remarks: 
-  syntax: 
-    content: Integer GetId()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSUserGroup thing;\nInteger id = thing.GetId();</code></pre>\n"
-- uid: CRMScript.NetServer.NSUserGroup.GetRank()
-  commentId: M:CRMScript.NetServer.NSUserGroup.GetRank()
-  id: 'GetRank()'
-  so.intellisense: NSUserGroup.GetRank
-  langs:
-  - crmscript
-  name: 'GetRank()'
-  nameWithType: NSUserGroup.GetRank()
-  fullName: CRMScript.NetServer.NSUserGroup.GetRank()
-  type: Method
-  summary: "\nRank order\n"
-  remarks: 
-  syntax: 
-    content: Integer GetRank()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSUserGroup thing;\nInteger rank = thing.GetRank();</code></pre>\n"
-- uid: CRMScript.NetServer.NSUserGroup.GetTooltip()
-  commentId: M:CRMScript.NetServer.NSUserGroup.GetTooltip()
-  id: 'GetTooltip()'
-  so.intellisense: NSUserGroup.GetTooltip
-  langs:
-  - crmscript
-  name: 'GetTooltip()'
-  nameWithType: NSUserGroup.GetTooltip()
-  fullName: CRMScript.NetServer.NSUserGroup.GetTooltip()
-  type: Method
-  summary: "\nTooltip or other description\n"
-  remarks: 
-  syntax: 
-    content: String GetTooltip()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSUserGroup thing;\nString tooltip = thing.GetTooltip();</code></pre>\n"
-- uid: CRMScript.NetServer.NSUserGroup.GetValue()
-  commentId: M:CRMScript.NetServer.NSUserGroup.GetValue()
-  id: 'GetValue()'
-  so.intellisense: NSUserGroup.GetValue
-  langs:
-  - crmscript
-  name: 'GetValue()'
-  nameWithType: NSUserGroup.GetValue()
-  fullName: CRMScript.NetServer.NSUserGroup.GetValue()
-  type: Method
-  summary: "\nUserGroup name\n"
-  remarks: 
-  syntax: 
-    content: String GetValue()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSUserGroup thing;\nString value = thing.GetValue();</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserGroup.#ctor
   commentId: M:CRMScript.NetServer.NSUserGroup.#ctor
   id: '#ctor'
@@ -138,6 +38,106 @@ items:
   syntax: 
     content: NSUserGroup
   example: 
+- uid: CRMScript.NetServer.NSUserGroup.GetDeleted()
+  commentId: M:CRMScript.NetServer.NSUserGroup.GetDeleted()
+  id: 'GetDeleted()'
+  so.intellisense: NSUserGroup.GetDeleted
+  langs:
+  - crmscript
+  name: 'GetDeleted()'
+  nameWithType: NSUserGroup.GetDeleted()
+  fullName: CRMScript.NetServer.NSUserGroup.GetDeleted()
+  type: Method
+  summary: ""
+  remarks: "\nIt is not permitted to delete a UserGroup.\n"
+  syntax: 
+    content: Bool GetDeleted()
+    parameters: []
+    return:
+      type: CRMScript.Global.Bool
+      description: true means that this is a user group that no longer can be selected by the user.
+  example: 
+  - "\n<pre><code>NSUserGroup thing;\nBool deleted = thing.GetDeleted();</code></pre>\n"
+- uid: CRMScript.NetServer.NSUserGroup.GetId()
+  commentId: M:CRMScript.NetServer.NSUserGroup.GetId()
+  id: 'GetId()'
+  so.intellisense: NSUserGroup.GetId
+  langs:
+  - crmscript
+  name: 'GetId()'
+  nameWithType: NSUserGroup.GetId()
+  fullName: CRMScript.NetServer.NSUserGroup.GetId()
+  type: Method
+  summary: 
+  remarks: 
+  syntax: 
+    content: Integer GetId()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: Primary key
+  example: 
+  - "\n<pre><code>NSUserGroup thing;\nInteger id = thing.GetId();</code></pre>\n"
+- uid: CRMScript.NetServer.NSUserGroup.GetRank()
+  commentId: M:CRMScript.NetServer.NSUserGroup.GetRank()
+  id: 'GetRank()'
+  so.intellisense: NSUserGroup.GetRank
+  langs:
+  - crmscript
+  name: 'GetRank()'
+  nameWithType: NSUserGroup.GetRank()
+  fullName: CRMScript.NetServer.NSUserGroup.GetRank()
+  type: Method
+  summary: 
+  remarks: 
+  syntax: 
+    content: Integer GetRank()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: Rank order
+  example: 
+  - "\n<pre><code>NSUserGroup thing;\nInteger rank = thing.GetRank();</code></pre>\n"
+- uid: CRMScript.NetServer.NSUserGroup.GetTooltip()
+  commentId: M:CRMScript.NetServer.NSUserGroup.GetTooltip()
+  id: 'GetTooltip()'
+  so.intellisense: NSUserGroup.GetTooltip
+  langs:
+  - crmscript
+  name: 'GetTooltip()'
+  nameWithType: NSUserGroup.GetTooltip()
+  fullName: CRMScript.NetServer.NSUserGroup.GetTooltip()
+  type: Method
+  summary: 
+  remarks: 
+  syntax: 
+    content: String GetTooltip()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Tooltip or other description
+  example: 
+  - "\n<pre><code>NSUserGroup thing;\nString tooltip = thing.GetTooltip();</code></pre>\n"
+- uid: CRMScript.NetServer.NSUserGroup.GetValue()
+  commentId: M:CRMScript.NetServer.NSUserGroup.GetValue()
+  id: 'GetValue()'
+  so.intellisense: NSUserGroup.GetValue
+  langs:
+  - crmscript
+  name: 'GetValue()'
+  nameWithType: NSUserGroup.GetValue()
+  fullName: CRMScript.NetServer.NSUserGroup.GetValue()
+  type: Method
+  summary: 
+  remarks: 
+  syntax: 
+    content: String GetValue()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: UserGroup name
+  example: 
+  - "\n<pre><code>NSUserGroup thing;\nString value = thing.GetValue();</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserGroup.SetDeleted()
   commentId: M:CRMScript.NetServer.NSUserGroup.SetDeleted()
   id: 'SetDeleted()'
@@ -148,11 +148,14 @@ items:
   nameWithType: NSUserGroup.SetDeleted()
   fullName: CRMScript.NetServer.NSUserGroup.SetDeleted()
   type: Method
-  summary: "\nCRMScript method in the NSUserGroup class that marks a user groupDeleted equal to true means that this is a user group that no longer can be selected by the user. It is not permitted to delete a UserGroup.<p></p>\n<code>SetDeleted(Bool deleted)</code>\n"
-  remarks: 
+  summary: "\nMarks a user group.\n"
+  remarks: "\nIt is not permitted to delete a UserGroup.\n"
   syntax: 
-    content: Void SetDeleted()
-    parameters: []
+    content: Void SetDeleted(Bool deleted)
+    parameters:
+    - id: deleted
+      type: CRMScript.Global.Bool
+      description: true means that this is a user group that no longer can be selected by the user.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -167,14 +170,14 @@ items:
   nameWithType: NSUserGroup.SetId(Integer)
   fullName: CRMScript.NetServer.NSUserGroup.SetId(Integer)
   type: Method
-  summary: "\nPrimary key\n"
+  summary: 
   remarks: 
   syntax: 
     content: Void SetId(Integer id)
     parameters:
     - id: id
       type: CRMScript.Global.Integer
-      description: 
+      description:  Primary key
     return:
       type: CRMScript.Global.Void
   example: 
@@ -189,14 +192,14 @@ items:
   nameWithType: NSUserGroup.SetRank(Integer)
   fullName: CRMScript.NetServer.NSUserGroup.SetRank(Integer)
   type: Method
-  summary: "\nRank order\n"
+  summary: 
   remarks: 
   syntax: 
     content: Void SetRank(Integer rank)
     parameters:
     - id: rank
       type: CRMScript.Global.Integer
-      description: 
+      description: Rank order
     return:
       type: CRMScript.Global.Void
   example: 
@@ -211,14 +214,14 @@ items:
   nameWithType: NSUserGroup.SetTooltip(String)
   fullName: CRMScript.NetServer.NSUserGroup.SetTooltip(String)
   type: Method
-  summary: "\nTooltip or other description\n"
+  summary: 
   remarks: 
   syntax: 
     content: Void SetTooltip(String tooltip)
     parameters:
     - id: tooltip
       type: CRMScript.Global.String
-      description: 
+      description: Tooltip or other description
     return:
       type: CRMScript.Global.Void
   example: 
@@ -233,14 +236,14 @@ items:
   nameWithType: NSUserGroup.SetValue(String)
   fullName: CRMScript.NetServer.NSUserGroup.SetValue(String)
   type: Method
-  summary: "\nUserGroup name\n"
+  summary: 
   remarks: 
   syntax: 
     content: Void SetValue(String value)
     parameters:
     - id: value
       type: CRMScript.Global.String
-      description: 
+      description: UserGroup name
     return:
       type: CRMScript.Global.Void
   example: 

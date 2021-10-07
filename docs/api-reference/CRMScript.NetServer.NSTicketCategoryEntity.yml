@@ -6,6 +6,7 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSTicketCategoryEntity.#ctor
   - CRMScript.NetServer.NSTicketCategoryEntity.GetAssignmentLag()
   - CRMScript.NetServer.NSTicketCategoryEntity.GetCategoryMaster()
   - CRMScript.NetServer.NSTicketCategoryEntity.GetClosingStatus()
@@ -21,15 +22,14 @@ items:
   - CRMScript.NetServer.NSTicketCategoryEntity.GetParentId()
   - CRMScript.NetServer.NSTicketCategoryEntity.GetReplyTemplate()
   - CRMScript.NetServer.NSTicketCategoryEntity.GetTicketCategoryId()
-  - CRMScript.NetServer.NSTicketCategoryEntity.#ctor
   - CRMScript.NetServer.NSTicketCategoryEntity.SetAssignmentLag(Integer)
   - CRMScript.NetServer.NSTicketCategoryEntity.SetCategoryMaster(Integer)
   - CRMScript.NetServer.NSTicketCategoryEntity.SetClosingStatus(Integer)
-  - CRMScript.NetServer.NSTicketCategoryEntity.SetCustomFields()
+  - CRMScript.NetServer.NSTicketCategoryEntity.SetCustomFields(Map)
   - CRMScript.NetServer.NSTicketCategoryEntity.SetDelegateMethod(Integer)
   - CRMScript.NetServer.NSTicketCategoryEntity.SetExternalName(String)
-  - CRMScript.NetServer.NSTicketCategoryEntity.SetExtraFields()
-  - CRMScript.NetServer.NSTicketCategoryEntity.SetFlags()
+  - CRMScript.NetServer.NSTicketCategoryEntity.SetExtraFields(Map)
+  - CRMScript.NetServer.NSTicketCategoryEntity.SetFlags(Integer)
   - CRMScript.NetServer.NSTicketCategoryEntity.SetFullname(String)
   - CRMScript.NetServer.NSTicketCategoryEntity.SetMsgClosingStatus(Integer)
   - CRMScript.NetServer.NSTicketCategoryEntity.SetName(String)
@@ -43,6 +43,21 @@ items:
   type: Class
   summary: 
   example: 
+- uid: CRMScript.NetServer.NSTicketCategoryEntity.#ctor
+  commentId: M:CRMScript.NetServer.NSTicketCategoryEntity.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSTicketCategoryEntity
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSTicketCategoryEntity.#ctor
+  fullName: CRMScript.NetServer.NSTicketCategoryEntity.#ctor
+  type: Constructor
+  summary: 
+  remarks: 
+  syntax: 
+    content: NSTicketCategoryEntity
+  example: 
 - uid: CRMScript.NetServer.NSTicketCategoryEntity.GetAssignmentLag()
   commentId: M:CRMScript.NetServer.NSTicketCategoryEntity.GetAssignmentLag()
   id: 'GetAssignmentLag()'
@@ -53,14 +68,14 @@ items:
   nameWithType: NSTicketCategoryEntity.GetAssignmentLag()
   fullName: CRMScript.NetServer.NSTicketCategoryEntity.GetAssignmentLag()
   type: Method
-  summary: "\nNumber of minutes we shall override the assignment if a customer sends consecutive messages to this category\n"
+  summary: 
   remarks: 
   syntax: 
     content: Integer GetAssignmentLag()
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description:
+      description: Number of minutes we shall override the assignment if a customer sends consecutive messages to this category
   example: 
   - "\n<pre><code>NSTicketCategoryEntity thing;\nInteger assignmentLag = thing.GetAssignmentLag();</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketCategoryEntity.GetCategoryMaster()
@@ -73,14 +88,14 @@ items:
   nameWithType: NSTicketCategoryEntity.GetCategoryMaster()
   fullName: CRMScript.NetServer.NSTicketCategoryEntity.GetCategoryMaster()
   type: Method
-  summary: "\nThe user associated with this category.\n"
+  summary: 
   remarks: 
   syntax: 
     content: Integer GetCategoryMaster()
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description:
+      description: The user associated with this category.
   example: 
   - "\n<pre><code>NSTicketCategoryEntity thing;\nInteger categoryMaster = thing.GetCategoryMaster();</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketCategoryEntity.GetClosingStatus()
@@ -93,14 +108,14 @@ items:
   nameWithType: NSTicketCategoryEntity.GetClosingStatus()
   fullName: CRMScript.NetServer.NSTicketCategoryEntity.GetClosingStatus()
   type: Method
-  summary: "\nAn integer indicating if new requests should have the 'close request' in this category checked as default, or if the users preferences should be selected.<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<ul><li>Enum: 0 = UserDefined</li><li>Enum: 1 = Active</li><li>Enum: 2 = Closed</li><li>Enum: 3 = Postponed</li></ul><pre><code>NSTicketCategoryEntity thing;\nInteger closingStatus = thing.GetClosingStatus();</code></pre>\n"
+  summary: "\n<ul><li>Enum: 0 = UserDefined</li><li>Enum: 1 = Active</li><li>Enum: 2 = Closed</li><li>Enum: 3 = Postponed</li></ul>\n"
   remarks: 
   syntax: 
     content: Integer GetClosingStatus()
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description:
+      description: An integer indicating if new requests should have the 'close request' in this category checked as default, or if the users preferences should be selected.
   example: 
   - "\n<pre><code>NSTicketCategoryEntity thing;\nInteger closingStatus = thing.GetClosingStatus();</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketCategoryEntity.GetCustomFields()
@@ -133,14 +148,14 @@ items:
   nameWithType: NSTicketCategoryEntity.GetDelegateMethod()
   fullName: CRMScript.NetServer.NSTicketCategoryEntity.GetDelegateMethod()
   type: Method
-  summary: "\nAn integer indicating the delegation method for this category.<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Even</li><li>Enum: 2 = Weighted</li><li>Enum: 3 = Unfair</li><li>Enum: 4 = Not</li></ul><pre><code>NSTicketCategoryEntity thing;\nInteger delegateMethod = thing.GetDelegateMethod();</code></pre>\n"
+  summary: "\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Even</li><li>Enum: 2 = Weighted</li><li>Enum: 3 = Unfair</li><li>Enum: 4 = Not</li></ul>\n"
   remarks: 
   syntax: 
     content: Integer GetDelegateMethod()
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description:
+      description: An integer indicating the delegation method for this category.
   example: 
   - "\n<pre><code>NSTicketCategoryEntity thing;\nInteger delegateMethod = thing.GetDelegateMethod();</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketCategoryEntity.GetExternalName()
@@ -153,14 +168,14 @@ items:
   nameWithType: NSTicketCategoryEntity.GetExternalName()
   fullName: CRMScript.NetServer.NSTicketCategoryEntity.GetExternalName()
   type: Method
-  summary: "\nThe external name for this category, used for the customer frontend.\n"
+  summary: 
   remarks: 
   syntax: 
     content: String GetExternalName()
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: The external name for this category, used for the customer frontend.
   example: 
   - "\n<pre><code>NSTicketCategoryEntity thing;\nString externalName = thing.GetExternalName();</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketCategoryEntity.GetExtraFields()
@@ -173,14 +188,14 @@ items:
   nameWithType: NSTicketCategoryEntity.GetExtraFields()
   fullName: CRMScript.NetServer.NSTicketCategoryEntity.GetExtraFields()
   type: Method
-  summary: "\nGets the extra fields on NSTicketCategoryEntity as a map.<p></p>\n<strong>Returns:</strong>Map containing extra field values by field name.<p></p>\n<pre><code>NSTicketCategoryEntity thing;\nMap extras = thing.GetExtraFields();\nlog( extras[&quot;x_abc&quot;] ); // &quot;[I:123]&quot;* integer or list item id\nlog( extras[&quot;x_abc:DisplayText&quot;] ); // &quot;bla bla&quot;* list item value\nlog( extras[&quot;x_bla&quot;] ); // &quot;foobar&quot;* string value</code></pre>\n"
+  summary: "\nGets the extra fields on NSTicketCategoryEntity as a map.\n"
   remarks: 
   syntax: 
     content: Map GetExtraFields()
     parameters: []
     return:
       type: CRMScript.Global.Map
-      description:
+      description: Map containing extra field values by field name.
   example: 
   - "\n<pre><code>NSTicketCategoryEntity thing;\nMap extras = thing.GetExtraFields();\nlog( extras[&quot;x_abc&quot;] ); // &quot;[I:123]&quot;* integer or list item id\nlog( extras[&quot;x_abc:DisplayText&quot;] ); // &quot;bla bla&quot;* list item value\nlog( extras[&quot;x_bla&quot;] ); // &quot;foobar&quot;* string value</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketCategoryEntity.GetFlags()
@@ -193,15 +208,16 @@ items:
   nameWithType: NSTicketCategoryEntity.GetFlags()
   fullName: CRMScript.NetServer.NSTicketCategoryEntity.GetFlags()
   type: Method
-  summary: "\nA bitmask representing flags for this category.<p></p>\n<strong>Returns:</strong>TicketCategoryFlags<p></p>\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Internal</li><li>Enum: 2 = OnlyLoggedInUsers</li><li>Enum: 4 = DefaultToCategoryMaster</li><li>Enum: 8 = ListInMain</li><li>Enum: 16 = RedelegateNewMsg</li><li>Enum: 32 = DelegateToOurContact</li><li>Enum: 64 = PropagateReplyTemplate</li><li>Enum: 128 = MembersOnly</li><li>Enum: 256 = NotifyMembers</li><li>Enum: 512 = AcceptWhenReplying</li></ul><pre><code>NSTicketCategoryEntity thing;\nTicketCategoryFlags flags = thing.GetFlags();</code></pre>\n"
+  summary: "\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Internal</li><li>Enum: 2 = OnlyLoggedInUsers</li><li>Enum: 4 = DefaultToCategoryMaster</li><li>Enum: 8 = ListInMain</li><li>Enum: 16 = RedelegateNewMsg</li><li>Enum: 32 = DelegateToOurContact</li><li>Enum: 64 = PropagateReplyTemplate</li><li>Enum: 128 = MembersOnly</li><li>Enum: 256 = NotifyMembers</li><li>Enum: 512 = AcceptWhenReplying</li></ul>\n"
   remarks: 
   syntax: 
-    content: TicketCategoryFlags GetFlags()
+    content: Integer GetFlags()
     parameters: []
     return:
-      type: CRMScript.Native.TicketCategoryFlags
+      type: CRMScript.Native.Integer
+      description: A bitmask representing flags for this category.
   example: 
-  - "\n<pre><code>NSTicketCategoryEntity thing;\nTicketCategoryFlags flags = thing.GetFlags();</code></pre>\n"
+  - "\n<pre><code>NSTicketCategoryEntity thing;\nInteger flags = thing.GetFlags();</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketCategoryEntity.GetFullname()
   commentId: M:CRMScript.NetServer.NSTicketCategoryEntity.GetFullname()
   id: 'GetFullname()'
@@ -212,14 +228,14 @@ items:
   nameWithType: NSTicketCategoryEntity.GetFullname()
   fullName: CRMScript.NetServer.NSTicketCategoryEntity.GetFullname()
   type: Method
-  summary: "\nThe fullname (compiled from parents' names) for this category. E.g. 'norway/product A/support'.\n"
+  summary: 
   remarks: 
   syntax: 
     content: String GetFullname()
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: "The fullname (compiled from parents' names) for this category. E.g. 'norway/product A/support'."
   example: 
   - "\n<pre><code>NSTicketCategoryEntity thing;\nString fullname = thing.GetFullname();</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketCategoryEntity.GetMsgClosingStatus()
@@ -232,14 +248,14 @@ items:
   nameWithType: NSTicketCategoryEntity.GetMsgClosingStatus()
   fullName: CRMScript.NetServer.NSTicketCategoryEntity.GetMsgClosingStatus()
   type: Method
-  summary: "\nAn integer indicating if new messages should have the 'close request' in this category checked as default, or if the users preferences should be selected.<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<ul><li>Enum: 0 = UserDefined</li><li>Enum: 1 = Active</li><li>Enum: 2 = Closed</li><li>Enum: 3 = Postponed</li></ul><pre><code>NSTicketCategoryEntity thing;\nInteger msgClosingStatus = thing.GetMsgClosingStatus();</code></pre>\n"
+  summary: "\n<ul><li>Enum: 0 = UserDefined</li><li>Enum: 1 = Active</li><li>Enum: 2 = Closed</li><li>Enum: 3 = Postponed</li></ul>\n"
   remarks: 
   syntax: 
     content: Integer GetMsgClosingStatus()
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description:
+      description: An integer indicating if new messages should have the 'close request' in this category checked as default, or if the users preferences should be selected.
   example: 
   - "\n<pre><code>NSTicketCategoryEntity thing;\nInteger msgClosingStatus = thing.GetMsgClosingStatus();</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketCategoryEntity.GetName()
@@ -252,14 +268,14 @@ items:
   nameWithType: NSTicketCategoryEntity.GetName()
   fullName: CRMScript.NetServer.NSTicketCategoryEntity.GetName()
   type: Method
-  summary: "\nThe (short) name of this category. E.g. 'support'.\n"
+  summary: 
   remarks: 
   syntax: 
     content: String GetName()
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: "The (short) name of this category. E.g. 'support'."
   example: 
   - "\n<pre><code>NSTicketCategoryEntity thing;\nString name = thing.GetName();</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketCategoryEntity.GetNotificationEmail()
@@ -272,14 +288,14 @@ items:
   nameWithType: NSTicketCategoryEntity.GetNotificationEmail()
   fullName: CRMScript.NetServer.NSTicketCategoryEntity.GetNotificationEmail()
   type: Method
-  summary: "\nComma separated list of addresses to notify when requests are redelegated to (unassigned) in this category.\n"
+  summary: 
   remarks: 
   syntax: 
     content: String GetNotificationEmail()
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: Comma-separated list of addresses to notify when requests are re-delegated to (unassigned) in this category.
   example: 
   - "\n<pre><code>NSTicketCategoryEntity thing;\nString notificationEmail = thing.GetNotificationEmail();</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketCategoryEntity.GetParentId()
@@ -292,14 +308,14 @@ items:
   nameWithType: NSTicketCategoryEntity.GetParentId()
   fullName: CRMScript.NetServer.NSTicketCategoryEntity.GetParentId()
   type: Method
-  summary: "\nThe parent category for this category. -1 if this is a toplevel category.\n"
+  summary: 
   remarks: 
   syntax: 
     content: Integer GetParentId()
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description:
+      description: The parent category for this category. -1 if this is a top-level category.
   example: 
   - "\n<pre><code>NSTicketCategoryEntity thing;\nInteger parentId = thing.GetParentId();</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketCategoryEntity.GetReplyTemplate()
@@ -312,14 +328,14 @@ items:
   nameWithType: NSTicketCategoryEntity.GetReplyTemplate()
   fullName: CRMScript.NetServer.NSTicketCategoryEntity.GetReplyTemplate()
   type: Method
-  summary: "\nReply template to merge with messages posted in this category\n"
+  summary: 
   remarks: 
   syntax: 
     content: Integer GetReplyTemplate()
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description:
+      description: Reply template to merge with messages posted in this category
   example: 
   - "\n<pre><code>NSTicketCategoryEntity thing;\nInteger replyTemplate = thing.GetReplyTemplate();</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketCategoryEntity.GetTicketCategoryId()
@@ -332,31 +348,16 @@ items:
   nameWithType: NSTicketCategoryEntity.GetTicketCategoryId()
   fullName: CRMScript.NetServer.NSTicketCategoryEntity.GetTicketCategoryId()
   type: Method
-  summary: "\nThe ID of the ticket category. (primary key)\n"
+  summary: 
   remarks: 
   syntax: 
     content: Integer GetTicketCategoryId()
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description:
+      description: The ID of the ticket category. (primary key)
   example: 
   - "\n<pre><code>NSTicketCategoryEntity thing;\nInteger ticketCategoryId = thing.GetTicketCategoryId();</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketCategoryEntity.#ctor
-  commentId: M:CRMScript.NetServer.NSTicketCategoryEntity.#ctor
-  id: '#ctor'
-  so.intellisense: Void.NSTicketCategoryEntity
-  langs:
-  - crmscript
-  name: '#ctor'
-  nameWithType: NSTicketCategoryEntity.#ctor
-  fullName: CRMScript.NetServer.NSTicketCategoryEntity.#ctor
-  type: Constructor
-  summary: 
-  remarks: 
-  syntax: 
-    content: NSTicketCategoryEntity
-  example: 
 - uid: CRMScript.NetServer.NSTicketCategoryEntity.SetAssignmentLag(Integer)
   commentId: M:CRMScript.NetServer.NSTicketCategoryEntity.SetAssignmentLag(Integer)
   id: 'SetAssignmentLag(Integer)'
@@ -367,14 +368,14 @@ items:
   nameWithType: NSTicketCategoryEntity.SetAssignmentLag(Integer)
   fullName: CRMScript.NetServer.NSTicketCategoryEntity.SetAssignmentLag(Integer)
   type: Method
-  summary: "\nNumber of minutes we shall override the assignment if a customer sends consecutive messages to this category\n"
+  summary: 
   remarks: 
   syntax: 
     content: Void SetAssignmentLag(Integer assignmentLag)
     parameters:
     - id: assignmentLag
       type: CRMScript.Global.Integer
-      description: 
+      description:  Number of minutes we shall override the assignment if a customer sends consecutive messages to this category
     return:
       type: CRMScript.Global.Void
   example: 
@@ -389,14 +390,14 @@ items:
   nameWithType: NSTicketCategoryEntity.SetCategoryMaster(Integer)
   fullName: CRMScript.NetServer.NSTicketCategoryEntity.SetCategoryMaster(Integer)
   type: Method
-  summary: "\nThe user associated with this category.\n"
+  summary: 
   remarks: 
   syntax: 
     content: Void SetCategoryMaster(Integer categoryMaster)
     parameters:
     - id: categoryMaster
       type: CRMScript.Global.Integer
-      description: 
+      description:  The user associated with this category.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -411,33 +412,36 @@ items:
   nameWithType: NSTicketCategoryEntity.SetClosingStatus(Integer)
   fullName: CRMScript.NetServer.NSTicketCategoryEntity.SetClosingStatus(Integer)
   type: Method
-  summary: "\nAn integer indicating if new requests should have the 'close request' in this category checked as default, or if the users preferences should be selected.\n"
-  remarks: "\n<p>See enum closingStatus.</p>\n"
+  summary: 
+  remarks: 
   syntax: 
     content: Void SetClosingStatus(Integer closingStatus)
     parameters:
     - id: closingStatus
       type: CRMScript.Global.Integer
-      description: 
+      description: An integer indicating if new requests should have the 'close request' in this category checked as default, or if the users preferences should be selected. See enum closingStatus.
     return:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTicketCategoryEntity thing;\nInteger closingStatus;\nthing.SetClosingStatus(closingStatus);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketCategoryEntity.SetCustomFields()
-  commentId: M:CRMScript.NetServer.NSTicketCategoryEntity.SetCustomFields()
-  id: 'SetCustomFields()'
+- uid: CRMScript.NetServer.NSTicketCategoryEntity.SetCustomFields(Map)
+  commentId: M:CRMScript.NetServer.NSTicketCategoryEntity.SetCustomFields(Map)
+  id: 'SetCustomFields(Map)'
   so.intellisense: NSTicketCategoryEntity.SetCustomFields
   langs:
   - crmscript
-  name: 'SetCustomFields()'
-  nameWithType: NSTicketCategoryEntity.SetCustomFields()
-  fullName: CRMScript.NetServer.NSTicketCategoryEntity.SetCustomFields()
+  name: 'SetCustomFields(Map)'
+  nameWithType: NSTicketCategoryEntity.SetCustomFields(Map)
+  fullName: CRMScript.NetServer.NSTicketCategoryEntity.SetCustomFields(Map)
   type: Method
   summary: "\nSets the user-defined and extra fields on an NSTicketCategoryEntity with a map.\n"
   remarks: 
   syntax: 
     content: Void SetCustomFields(Map udefs)
     parameters:
+    - id: udefs
+      type: CRMScript.Global.Map
+      description:
   example: 
   - "\n<pre><code>NSTicketCategoryEntity thing;\nMap udefs;\nudefs[&quot;SuperOffice:1&quot;] = &quot;[I:123]&quot;;\nudefs[&quot;SuperOffice:1&quot;] = &quot;123&quot;; // this will also work, but beware of decimal point variations in different languages\nudefs[&quot;custom.progid&quot;] = &quot;foobar&quot;;\nudefs[&quot;x_foo&quot;] = &quot;foobar&quot;;\nudefs[&quot;x_bar&quot;] = &quot;456&quot;; // List item id\nthing.SetCustomFields(udefs);</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketCategoryEntity.SetDelegateMethod(Integer)
@@ -450,14 +454,14 @@ items:
   nameWithType: NSTicketCategoryEntity.SetDelegateMethod(Integer)
   fullName: CRMScript.NetServer.NSTicketCategoryEntity.SetDelegateMethod(Integer)
   type: Method
-  summary: "\nAn integer indicating the delegation method for this category.\n"
-  remarks: "\n<p>See enum delegateMethod.</p>\n"
+  summary: 
+  remarks: 
   syntax: 
     content: Void SetDelegateMethod(Integer delegateMethod)
     parameters:
     - id: delegateMethod
       type: CRMScript.Global.Integer
-      description: 
+      description: An integer indicating the delegation method for this category. See enum delegateMethod.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -472,52 +476,60 @@ items:
   nameWithType: NSTicketCategoryEntity.SetExternalName(String)
   fullName: CRMScript.NetServer.NSTicketCategoryEntity.SetExternalName(String)
   type: Method
-  summary: "\nThe external name for this category, used for the customer frontend.\n"
+  summary: 
   remarks: 
   syntax: 
     content: Void SetExternalName(String externalName)
     parameters:
     - id: externalName
       type: CRMScript.Global.String
-      description: 
+      description:  The external name for this category, used for the customer frontend.
     return:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTicketCategoryEntity thing;\nString externalName;\nthing.SetExternalName(externalName);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketCategoryEntity.SetExtraFields()
-  commentId: M:CRMScript.NetServer.NSTicketCategoryEntity.SetExtraFields()
-  id: 'SetExtraFields()'
+- uid: CRMScript.NetServer.NSTicketCategoryEntity.SetExtraFields(Map)
+  commentId: M:CRMScript.NetServer.NSTicketCategoryEntity.SetExtraFields(Map)
+  id: 'SetExtraFields(Map)'
   so.intellisense: NSTicketCategoryEntity.SetExtraFields
   langs:
   - crmscript
-  name: 'SetExtraFields()'
-  nameWithType: NSTicketCategoryEntity.SetExtraFields()
-  fullName: CRMScript.NetServer.NSTicketCategoryEntity.SetExtraFields()
+  name: 'SetExtraFields(Map)'
+  nameWithType: NSTicketCategoryEntity.SetExtraFields(Map)
+  fullName: CRMScript.NetServer.NSTicketCategoryEntity.SetExtraFields(Map)
   type: Method
   summary: "\nSets the extra field values on NSTicketCategoryEntity with a map.\n"
   remarks: 
   syntax: 
     content: Void SetExtraFields(Map extras)
     parameters:
+    - id: extras
+      type: CRMScript.Global.Map
+      description:
   example: 
   - "\n<pre><code>NSTicketCategoryEntity thing;\nMap extras;\nextras[&quot;SuperOffice:1&quot;] = &quot;[I:123]&quot;;\nextras[&quot;SuperOffice:1&quot;] = &quot;123&quot;; // this will also work, but beware of decimal point variations in different languages\nextras[&quot;custom.progid&quot;] = &quot;foobar&quot;;\nthing.SetExtraFields(extras);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketCategoryEntity.SetFlags()
-  commentId: M:CRMScript.NetServer.NSTicketCategoryEntity.SetFlags()
-  id: 'SetFlags()'
+- uid: CRMScript.NetServer.NSTicketCategoryEntity.SetFlags(Integer)
+  commentId: M:CRMScript.NetServer.NSTicketCategoryEntity.SetFlags(Integer)
+  id: 'SetFlags(Integer)'
   so.intellisense: NSTicketCategoryEntity.SetFlags
   langs:
   - crmscript
-  name: 'SetFlags()'
-  nameWithType: NSTicketCategoryEntity.SetFlags()
-  fullName: CRMScript.NetServer.NSTicketCategoryEntity.SetFlags()
+  name: 'SetFlags(Integer)'
+  nameWithType: NSTicketCategoryEntity.SetFlags(Integer)
+  fullName: CRMScript.NetServer.NSTicketCategoryEntity.SetFlags(Integer)
   type: Method
-  summary: "\nA bitmask representing flags for this category.\n"
-  remarks: "\n<p>See enum</p>\n"
+  summary: 
+  remarks: 
   syntax: 
-    content: Void SetFlags(TicketCategoryFlags flags)
+    content: Void SetFlags(Integer flags)
     parameters:
+    - id: flags
+      type: CRMScript.Global.Integer
+      description: A bitmask representing flags for this category. See enum
+    return:
+      type: CRMScript.Global.Void
   example: 
-  - "\n<pre><code>NSTicketCategoryEntity thing;\nTicketCategoryFlags flags;\nthing.SetFlags(flags);</code></pre>\n"
+  - "\n<pre><code>NSTicketCategoryEntity thing;\nInteger flags;\nthing.SetFlags(flags);</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketCategoryEntity.SetFullname(String)
   commentId: M:CRMScript.NetServer.NSTicketCategoryEntity.SetFullname(String)
   id: 'SetFullname(String)'
@@ -528,14 +540,14 @@ items:
   nameWithType: NSTicketCategoryEntity.SetFullname(String)
   fullName: CRMScript.NetServer.NSTicketCategoryEntity.SetFullname(String)
   type: Method
-  summary: "\nThe fullname (compiled from parents' names) for this category. E.g. 'norway/product A/support'.\n"
+  summary: 
   remarks: 
   syntax: 
     content: Void SetFullname(String fullname)
     parameters:
     - id: fullname
       type: CRMScript.Global.String
-      description: 
+      description:  The fullname (compiled from parents' names) for this category. E.g. 'norway/product A/support'.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -550,14 +562,14 @@ items:
   nameWithType: NSTicketCategoryEntity.SetMsgClosingStatus(Integer)
   fullName: CRMScript.NetServer.NSTicketCategoryEntity.SetMsgClosingStatus(Integer)
   type: Method
-  summary: "\nAn integer indicating if new messages should have the 'close request' in this category checked as default, or if the users preferences should be selected.\n"
-  remarks: "\n<p>See enum msgClosingStatus.</p>\n"
+  summary: 
+  remarks: 
   syntax: 
     content: Void SetMsgClosingStatus(Integer msgClosingStatus)
     parameters:
     - id: msgClosingStatus
       type: CRMScript.Global.Integer
-      description: 
+      description:  An integer indicating if new messages should have the 'close request' in this category checked as default, or if the users preferences should be selected. See enum msgClosingStatus.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -572,14 +584,14 @@ items:
   nameWithType: NSTicketCategoryEntity.SetName(String)
   fullName: CRMScript.NetServer.NSTicketCategoryEntity.SetName(String)
   type: Method
-  summary: "\nThe (short) name of this category. E.g. 'support'.\n"
+  summary: 
   remarks: 
   syntax: 
     content: Void SetName(String name)
     parameters:
     - id: name
       type: CRMScript.Global.String
-      description: 
+      description: The (short) name of this category. E.g. 'support'.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -594,14 +606,14 @@ items:
   nameWithType: NSTicketCategoryEntity.SetNotificationEmail(String)
   fullName: CRMScript.NetServer.NSTicketCategoryEntity.SetNotificationEmail(String)
   type: Method
-  summary: "\nComma separated list of addresses to notify when requests are redelegated to (unassigned) in this category.\n"
+  summary: 
   remarks: 
   syntax: 
     content: Void SetNotificationEmail(String notificationEmail)
     parameters:
     - id: notificationEmail
       type: CRMScript.Global.String
-      description: 
+      description: Comma-separated list of addresses to notify when requests are re-delegated to (unassigned) in this category.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -616,14 +628,14 @@ items:
   nameWithType: NSTicketCategoryEntity.SetParentId(Integer)
   fullName: CRMScript.NetServer.NSTicketCategoryEntity.SetParentId(Integer)
   type: Method
-  summary: "\nThe parent category for this category. -1 if this is a toplevel category.\n"
+  summary: 
   remarks: 
   syntax: 
     content: Void SetParentId(Integer parentId)
     parameters:
     - id: parentId
       type: CRMScript.Global.Integer
-      description: 
+      description: The parent category for this category. -1 if this is a top-level category.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -638,14 +650,14 @@ items:
   nameWithType: NSTicketCategoryEntity.SetReplyTemplate(Integer)
   fullName: CRMScript.NetServer.NSTicketCategoryEntity.SetReplyTemplate(Integer)
   type: Method
-  summary: "\nReply template to merge with messages posted in this category\n"
+  summary: 
   remarks: 
   syntax: 
     content: Void SetReplyTemplate(Integer replyTemplate)
     parameters:
     - id: replyTemplate
       type: CRMScript.Global.Integer
-      description: 
+      description: Reply template to merge with messages posted in this category
     return:
       type: CRMScript.Global.Void
   example: 
@@ -660,14 +672,14 @@ items:
   nameWithType: NSTicketCategoryEntity.SetTicketCategoryId(Integer)
   fullName: CRMScript.NetServer.NSTicketCategoryEntity.SetTicketCategoryId(Integer)
   type: Method
-  summary: "\nThe ID of the ticket category. (primary key)\n"
+  summary: 
   remarks: 
   syntax: 
     content: Void SetTicketCategoryId(Integer ticketCategoryId)
     parameters:
     - id: ticketCategoryId
       type: CRMScript.Global.Integer
-      description: 
+      description:  The ID of the ticket category. (primary key)
     return:
       type: CRMScript.Global.Void
   example: 
@@ -697,12 +709,12 @@ references:
   name: String
   nameWithType: String
   fullName: CRMScript.Global.String
-- uid: CRMScript.Native.TicketCategoryFlags
-  commentId: T:CRMScript.Native.TicketCategoryFlags
+- uid: CRMScript.Native.Integer
+  commentId: T:CRMScript.Native.Integer
   isExternal: true
-  name: TicketCategoryFlags
-  nameWithType: TicketCategoryFlags
-  fullName: CRMScript.Native.TicketCategoryFlags
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Native.Integer
 - uid: CRMScript.NetServer.ChatSessionFlags
   commentId: T:CRMScript.NetServer.ChatSessionFlags
   isExternal: true

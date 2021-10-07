@@ -45,7 +45,7 @@ items:
   - CRMScript.NetServer.NSTicketMessageEntity.SetMessageId(String)
   - CRMScript.NetServer.NSTicketMessageEntity.SetPerson(NSPerson)
   - CRMScript.NetServer.NSTicketMessageEntity.SetSearchTitle(String)
-  - CRMScript.NetServer.NSTicketMessageEntity.SetSlevel(TicketSecurityLevel)
+  - CRMScript.NetServer.NSTicketMessageEntity.SetSlevel(Integer)
   - CRMScript.NetServer.NSTicketMessageEntity.SetTicket(NSTicket)
   - CRMScript.NetServer.NSTicketMessageEntity.SetTimeSpent(Integer)
   - CRMScript.NetServer.NSTicketMessageEntity.SetType()
@@ -401,15 +401,15 @@ items:
   nameWithType: NSTicketMessageEntity.GetSlevel()
   fullName: CRMScript.NetServer.NSTicketMessageEntity.GetSlevel()
   type: Method
-  summary: "\nThe securitylevel of the message.<p></p>\n<strong>Returns:</strong>TicketSecurityLevel<p></p>\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Internal</li><li>Enum: 2 = External</li></ul><pre><code>NSTicketMessageEntity thing;\nTicketSecurityLevel slevel = thing.GetSlevel();</code></pre>\n"
+  summary: "\nThe securitylevel of the message.<p></p>\n<strong>Returns:</strong>Integer<p></p>\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Internal</li><li>Enum: 2 = External</li></ul><pre><code>NSTicketMessageEntity thing;\nInteger slevel = thing.GetSlevel();</code></pre>\n"
   remarks: 
   syntax: 
-    content: TicketSecurityLevel GetSlevel()
+    content: Integer GetSlevel()
     parameters: []
     return:
-      type: CRMScript.Native.TicketSecurityLevel
+      type: CRMScript.Global.Integer
   example: 
-  - "\n<pre><code>NSTicketMessageEntity thing;\nTicketSecurityLevel slevel = thing.GetSlevel();</code></pre>\n"
+  - "\n<pre><code>NSTicketMessageEntity thing;\nInteger slevel = thing.GetSlevel();</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketMessageEntity.GetTicket()
   commentId: M:CRMScript.NetServer.NSTicketMessageEntity.GetTicket()
   id: 'GetTicket()'
@@ -827,28 +827,28 @@ items:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTicketMessageEntity thing;\nString searchTitle;\nthing.SetSearchTitle(searchTitle);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketMessageEntity.SetSlevel(TicketSecurityLevel)
-  commentId: M:CRMScript.NetServer.NSTicketMessageEntity.SetSlevel(TicketSecurityLevel)
-  id: 'SetSlevel(TicketSecurityLevel)'
+- uid: CRMScript.NetServer.NSTicketMessageEntity.SetSlevel(Integer)
+  commentId: M:CRMScript.NetServer.NSTicketMessageEntity.SetSlevel(Integer)
+  id: 'SetSlevel(Integer)'
   so.intellisense: NSTicketMessageEntity.SetSlevel
   langs:
   - crmscript
-  name: 'SetSlevel(TicketSecurityLevel)'
-  nameWithType: NSTicketMessageEntity.SetSlevel(TicketSecurityLevel)
-  fullName: CRMScript.NetServer.NSTicketMessageEntity.SetSlevel(TicketSecurityLevel)
+  name: 'SetSlevel(Integer)'
+  nameWithType: NSTicketMessageEntity.SetSlevel(Integer)
+  fullName: CRMScript.NetServer.NSTicketMessageEntity.SetSlevel(Integer)
   type: Method
   summary: "\nThe securitylevel of the message.\n"
   remarks: "\n<p>See enum slevel.</p>\n"
   syntax: 
-    content: Void SetSlevel(TicketSecurityLevel slevel)
+    content: Void SetSlevel(Integer slevel)
     parameters:
     - id: slevel
-      type: CRMScript.Native.TicketSecurityLevel
+      type: CRMScript.Global.Integer
       description: 
     return:
       type: CRMScript.Global.Void
   example: 
-  - "\n<pre><code>NSTicketMessageEntity thing;\nTicketSecurityLevel slevel;\nthing.SetSlevel(slevel);</code></pre>\n"
+  - "\n<pre><code>NSTicketMessageEntity thing;\nInteger slevel;\nthing.SetSlevel(slevel);</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketMessageEntity.SetTicket(NSTicket)
   commentId: M:CRMScript.NetServer.NSTicketMessageEntity.SetTicket(NSTicket)
   id: 'SetTicket(NSTicket)'
@@ -985,12 +985,12 @@ references:
   name: NSPerson
   nameWithType: NSPerson
   fullName: CRMScript.NetServer.NSPerson
-- uid: CRMScript.Native.TicketSecurityLevel
-  commentId: T:CRMScript.Native.TicketSecurityLevel
+- uid: CRMScript.Global.Integer
+  commentId: T:CRMScript.Global.Integer
   isExternal: true
-  name: TicketSecurityLevel
-  nameWithType: TicketSecurityLevel
-  fullName: CRMScript.Native.TicketSecurityLevel
+  name: Integer
+  nameWithType: Integer
+  fullName: CRMScript.Global.Integer
 - uid: CRMScript.NetServer.NSTicket
   commentId: T:CRMScript.NetServer.NSTicket
   isExternal: true

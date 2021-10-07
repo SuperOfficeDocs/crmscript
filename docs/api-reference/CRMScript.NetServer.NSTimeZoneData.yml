@@ -6,6 +6,7 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSTimeZoneData.#ctor
   - CRMScript.NetServer.NSTimeZoneData.GetIsoNumber()
   - CRMScript.NetServer.NSTimeZoneData.GetName()
   - CRMScript.NetServer.NSTimeZoneData.GetTimeZoneDSTRules()
@@ -13,11 +14,10 @@ items:
   - CRMScript.NetServer.NSTimeZoneData.GetTZLocationCities()
   - CRMScript.NetServer.NSTimeZoneData.GetTZLocationCode()
   - CRMScript.NetServer.NSTimeZoneData.GetTZLocationID()
-  - CRMScript.NetServer.NSTimeZoneData.#ctor
   - CRMScript.NetServer.NSTimeZoneData.SetIsoNumber(Integer)
   - CRMScript.NetServer.NSTimeZoneData.SetName(String)
-  - CRMScript.NetServer.NSTimeZoneData.SetTimeZoneDSTRules()
-  - CRMScript.NetServer.NSTimeZoneData.SetTimeZoneSTDRules()
+  - CRMScript.NetServer.NSTimeZoneData.SetTimeZoneDSTRules(Map)
+  - CRMScript.NetServer.NSTimeZoneData.SetTimeZoneSTDRules(Map)
   - CRMScript.NetServer.NSTimeZoneData.SetTZLocationCities(String)
   - CRMScript.NetServer.NSTimeZoneData.SetTZLocationCode(String)
   - CRMScript.NetServer.NSTimeZoneData.SetTZLocationID(Integer)
@@ -26,6 +26,21 @@ items:
   fullName: CRMScript.NetServer.NSTimeZoneData
   type: Class
   summary: 
+  example: 
+- uid: CRMScript.NetServer.NSTimeZoneData.#ctor
+  commentId: M:CRMScript.NetServer.NSTimeZoneData.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSTimeZoneData
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSTimeZoneData.#ctor
+  fullName: CRMScript.NetServer.NSTimeZoneData.#ctor
+  type: Constructor
+  summary: 
+  remarks: 
+  syntax: 
+    content: NSTimeZoneData
   example: 
 - uid: CRMScript.NetServer.NSTimeZoneData.GetIsoNumber()
   commentId: M:CRMScript.NetServer.NSTimeZoneData.GetIsoNumber()
@@ -57,14 +72,14 @@ items:
   nameWithType: NSTimeZoneData.GetName()
   fullName: CRMScript.NetServer.NSTimeZoneData.GetName()
   type: Method
-  summary: "\nName associated with the location\n"
+  summary: 
   remarks: 
   syntax: 
     content: String GetName()
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: Name associated with the location
   example: 
   - "\n<pre><code>NSTimeZoneData thing;\nString name = thing.GetName();</code></pre>\n"
 - uid: CRMScript.NetServer.NSTimeZoneData.GetTimeZoneDSTRules()
@@ -77,13 +92,14 @@ items:
   nameWithType: NSTimeZoneData.GetTimeZoneDSTRules()
   fullName: CRMScript.NetServer.NSTimeZoneData.GetTimeZoneDSTRules()
   type: Method
-  summary: "\nRules for daylight savings time\n"
+  summary: 
   remarks: 
   syntax: 
     content: Map GetTimeZoneDSTRules()
     parameters: []
     return:
       type: CRMScript.NetServer.Map
+      description: Rules for daylight savings time
   example: 
   - "\n<pre><code>NSTimeZoneData thing;\nMap timeZoneDSTRules = thing.GetTimeZoneDSTRules();</code></pre>\n"
 - uid: CRMScript.NetServer.NSTimeZoneData.GetTimeZoneSTDRules()
@@ -96,13 +112,14 @@ items:
   nameWithType: NSTimeZoneData.GetTimeZoneSTDRules()
   fullName: CRMScript.NetServer.NSTimeZoneData.GetTimeZoneSTDRules()
   type: Method
-  summary: "\nRules for standard time\n"
+  summary: 
   remarks: 
   syntax: 
     content: Map GetTimeZoneSTDRules()
     parameters: []
     return:
       type: CRMScript.NetServer.Map
+      description: Rules for standard time
   example: 
   - "\n<pre><code>NSTimeZoneData thing;\nMap timeZoneSTDRules = thing.GetTimeZoneSTDRules();</code></pre>\n"
 - uid: CRMScript.NetServer.NSTimeZoneData.GetTZLocationCities()
@@ -115,14 +132,14 @@ items:
   nameWithType: NSTimeZoneData.GetTZLocationCities()
   fullName: CRMScript.NetServer.NSTimeZoneData.GetTZLocationCities()
   type: Method
-  summary: "\nCities associated with location\n"
+  summary: 
   remarks: 
   syntax: 
     content: String GetTZLocationCities()
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: Cities associated with location
   example: 
   - "\n<pre><code>NSTimeZoneData thing;\nString tZLocationCities = thing.GetTZLocationCities();</code></pre>\n"
 - uid: CRMScript.NetServer.NSTimeZoneData.GetTZLocationCode()
@@ -135,14 +152,14 @@ items:
   nameWithType: NSTimeZoneData.GetTZLocationCode()
   fullName: CRMScript.NetServer.NSTimeZoneData.GetTZLocationCode()
   type: Method
-  summary: "\nCode associated with location\n"
+  summary: 
   remarks: 
   syntax: 
     content: String GetTZLocationCode()
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: Code associated with location
   example: 
   - "\n<pre><code>NSTimeZoneData thing;\nString tZLocationCode = thing.GetTZLocationCode();</code></pre>\n"
 - uid: CRMScript.NetServer.NSTimeZoneData.GetTZLocationID()
@@ -155,31 +172,16 @@ items:
   nameWithType: NSTimeZoneData.GetTZLocationID()
   fullName: CRMScript.NetServer.NSTimeZoneData.GetTZLocationID()
   type: Method
-  summary: "\nTimezone location ID\n"
+  summary: 
   remarks: 
   syntax: 
     content: Integer GetTZLocationID()
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description:
-  example: 
+      description: Timezone location ID
+  example:  
   - "\n<pre><code>NSTimeZoneData thing;\nInteger tZLocationID = thing.GetTZLocationID();</code></pre>\n"
-- uid: CRMScript.NetServer.NSTimeZoneData.#ctor
-  commentId: M:CRMScript.NetServer.NSTimeZoneData.#ctor
-  id: '#ctor'
-  so.intellisense: Void.NSTimeZoneData
-  langs:
-  - crmscript
-  name: '#ctor'
-  nameWithType: NSTimeZoneData.#ctor
-  fullName: CRMScript.NetServer.NSTimeZoneData.#ctor
-  type: Constructor
-  summary: 
-  remarks: 
-  syntax: 
-    content: NSTimeZoneData
-  example: 
 - uid: CRMScript.NetServer.NSTimeZoneData.SetIsoNumber(Integer)
   commentId: M:CRMScript.NetServer.NSTimeZoneData.SetIsoNumber(Integer)
   id: 'SetIsoNumber(Integer)'
@@ -212,50 +214,60 @@ items:
   nameWithType: NSTimeZoneData.SetName(String)
   fullName: CRMScript.NetServer.NSTimeZoneData.SetName(String)
   type: Method
-  summary: "\nName associated with the location\n"
+  summary: 
   remarks: 
   syntax: 
     content: Void SetName(String name)
     parameters:
     - id: name
       type: CRMScript.Global.String
-      description: 
+      description:  Name associated with the location
     return:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTimeZoneData thing;\nString name;\nthing.SetName(name);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTimeZoneData.SetTimeZoneDSTRules()
-  commentId: M:CRMScript.NetServer.NSTimeZoneData.SetTimeZoneDSTRules()
-  id: 'SetTimeZoneDSTRules()'
+- uid: CRMScript.NetServer.NSTimeZoneData.SetTimeZoneDSTRules(Map)
+  commentId: M:CRMScript.NetServer.NSTimeZoneData.SetTimeZoneDSTRules(Map)
+  id: 'SetTimeZoneDSTRules(Map)'
   so.intellisense: NSTimeZoneData.SetTimeZoneDSTRules
   langs:
   - crmscript
-  name: 'SetTimeZoneDSTRules()'
-  nameWithType: NSTimeZoneData.SetTimeZoneDSTRules()
-  fullName: CRMScript.NetServer.NSTimeZoneData.SetTimeZoneDSTRules()
+  name: 'SetTimeZoneDSTRules(Map)'
+  nameWithType: NSTimeZoneData.SetTimeZoneDSTRules(Map)
+  fullName: CRMScript.NetServer.NSTimeZoneData.SetTimeZoneDSTRules(Map)
   type: Method
-  summary: "\nRules for daylight savings time\n"
+  summary: 
   remarks: 
   syntax: 
     content: Void SetTimeZoneDSTRules(Map timeZoneDSTRules)
     parameters:
+    - id: timeZoneDSTRules
+      type: CRMScript.Global.Map
+      description: Rules for daylight savings time
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTimeZoneData thing;\nMap timeZoneDSTRules;\nthing.SetTimeZoneDSTRules(timeZoneDSTRules);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTimeZoneData.SetTimeZoneSTDRules()
-  commentId: M:CRMScript.NetServer.NSTimeZoneData.SetTimeZoneSTDRules()
-  id: 'SetTimeZoneSTDRules()'
+- uid: CRMScript.NetServer.NSTimeZoneData.SetTimeZoneSTDRules(Map)
+  commentId: M:CRMScript.NetServer.NSTimeZoneData.SetTimeZoneSTDRules(Map)
+  id: 'SetTimeZoneSTDRules(Map)'
   so.intellisense: NSTimeZoneData.SetTimeZoneSTDRules
   langs:
   - crmscript
-  name: 'SetTimeZoneSTDRules()'
-  nameWithType: NSTimeZoneData.SetTimeZoneSTDRules()
-  fullName: CRMScript.NetServer.NSTimeZoneData.SetTimeZoneSTDRules()
+  name: 'SetTimeZoneSTDRules(Map)'
+  nameWithType: NSTimeZoneData.SetTimeZoneSTDRules(Map)
+  fullName: CRMScript.NetServer.NSTimeZoneData.SetTimeZoneSTDRules(Map)
   type: Method
   summary: "\nRules for standard time\n"
   remarks: 
   syntax: 
     content: Void SetTimeZoneSTDRules(Map timeZoneSTDRules)
     parameters:
+    - id: timeZoneSTDRules
+      type: CRMScript.Global.Map
+      description: Rules for standard time
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTimeZoneData thing;\nMap timeZoneSTDRules;\nthing.SetTimeZoneSTDRules(timeZoneSTDRules);</code></pre>\n"
 - uid: CRMScript.NetServer.NSTimeZoneData.SetTZLocationCities(String)
@@ -268,14 +280,14 @@ items:
   nameWithType: NSTimeZoneData.SetTZLocationCities(String)
   fullName: CRMScript.NetServer.NSTimeZoneData.SetTZLocationCities(String)
   type: Method
-  summary: "\nCities associated with location\n"
+  summary: 
   remarks: 
   syntax: 
     content: Void SetTZLocationCities(String tZLocationCities)
     parameters:
     - id: tZLocationCities
       type: CRMScript.Global.String
-      description: 
+      description: Cities associated with location
     return:
       type: CRMScript.Global.Void
   example: 
@@ -290,14 +302,14 @@ items:
   nameWithType: NSTimeZoneData.SetTZLocationCode(String)
   fullName: CRMScript.NetServer.NSTimeZoneData.SetTZLocationCode(String)
   type: Method
-  summary: "\nCode associated with location\n"
+  summary: 
   remarks: 
   syntax: 
     content: Void SetTZLocationCode(String tZLocationCode)
     parameters:
     - id: tZLocationCode
       type: CRMScript.Global.String
-      description: 
+      description: Code associated with location
     return:
       type: CRMScript.Global.Void
   example: 
@@ -312,14 +324,14 @@ items:
   nameWithType: NSTimeZoneData.SetTZLocationID(Integer)
   fullName: CRMScript.NetServer.NSTimeZoneData.SetTZLocationID(Integer)
   type: Method
-  summary: "\nTimezone location ID\n"
+  summary: 
   remarks: 
   syntax: 
     content: Void SetTZLocationID(Integer tZLocationID)
     parameters:
     - id: tZLocationID
       type: CRMScript.Global.Integer
-      description: 
+      description: Timezone location ID
     return:
       type: CRMScript.Global.Void
   example: 

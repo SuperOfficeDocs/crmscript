@@ -6,8 +6,8 @@ items:
   langs:
   - crmscript
   children:
-  - CRMScript.NetServer.NSTooltipsAgent.GetTooltip(String)
   - CRMScript.NetServer.NSTooltipsAgent.#ctor
+  - CRMScript.NetServer.NSTooltipsAgent.GetTooltip(String)
   name: NSTooltipsAgent
   nameWithType: NSTooltipsAgent
   fullName: CRMScript.NetServer.NSTooltipsAgent
@@ -15,28 +15,6 @@ items:
   summary: "\nTooltip system, hint to text transformation.\n"
   example: 
   - "\n<pre><code>NSTooltipsAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTooltipsAgent.GetTooltip(String)
-  commentId: M:CRMScript.NetServer.NSTooltipsAgent.GetTooltip(String)
-  id: 'GetTooltip(String)'
-  so.intellisense: NSTooltipsAgent.GetTooltip
-  langs:
-  - crmscript
-  name: 'GetTooltip(String)'
-  nameWithType: NSTooltipsAgent.GetTooltip(String)
-  fullName: CRMScript.NetServer.NSTooltipsAgent.GetTooltip(String)
-  type: Method
-  summary: "\nParse a tooltip hint and return a tooltip. The returned tooltip string may contain resource string identifiers (in square brackets), to be processed by the resource manager.<p></p>\nThe tooltip hint is either a literal text, representing itself or a set of key/value pairs enclosed in curly braces. Each key is separated from its value by an equals sign, and each pair from the next by an ampersand, according to usual conventions.<p></p>\nA typical tooltip hint could be<code>{contact_id=123}</code>or {<code>appointment_id=222 &amp; mode=simple</code>}<p></p>\n<strong>Parameters:</strong>\n"
-  remarks: 
-  syntax: 
-    content: String GetTooltip(String tooltipHint)
-    parameters:
-    - id: tooltipHint
-      type: CRMScript.Global.String
-      description: 
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
 - uid: CRMScript.NetServer.NSTooltipsAgent.#ctor
   commentId: M:CRMScript.NetServer.NSTooltipsAgent.#ctor
   id: '#ctor'
@@ -53,6 +31,28 @@ items:
     content: NSTooltipsAgent
   example: 
   - "\n<pre><code>NSTooltipsAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
+- uid: CRMScript.NetServer.NSTooltipsAgent.GetTooltip(String)
+  commentId: M:CRMScript.NetServer.NSTooltipsAgent.GetTooltip(String)
+  id: 'GetTooltip(String)'
+  so.intellisense: NSTooltipsAgent.GetTooltip
+  langs:
+  - crmscript
+  name: 'GetTooltip(String)'
+  nameWithType: NSTooltipsAgent.GetTooltip(String)
+  fullName: CRMScript.NetServer.NSTooltipsAgent.GetTooltip(String)
+  type: Method
+  summary: "\nParses a tooltip hint and return a tooltip.\n"
+  remarks: "\nEach key is separated from its value by an equals sign, and each pair from the next by an ampersand, according to usual conventions.<p></p>\nA typical tooltip hint could be<code>{contact_id=123}</code>or {<code>appointment_id=222 &amp; mode=simple</code>}\n"
+  syntax: 
+    content: String GetTooltip(String tooltipHint)
+    parameters:
+    - id: tooltipHint
+      type: CRMScript.Global.String
+      description: 
+    return:
+      type: CRMScript.Global.String
+      description: either a literal text, representing itself or a set of key/value pairs enclosed in curly braces.  may contain resource string identifiers (in square brackets), to be processed by the resource manager.
+  example: 
 references:
 - uid: CRMScript.NetServer.NSTooltipsAgent
   commentId: T:CRMScript.NetServer.NSTooltipsAgent

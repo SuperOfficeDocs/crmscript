@@ -6,13 +6,14 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSAAAMockAgent.#ctor
   - CRMScript.NetServer.NSAAAMockAgent.ArrayBoolInput(Bool[])
   - CRMScript.NetServer.NSAAAMockAgent.ArrayIdInput(Integer[])
   - CRMScript.NetServer.NSAAAMockAgent.ArrayIntInput(Integer[])
   - CRMScript.NetServer.NSAAAMockAgent.ArrayQuoteLineInput(NSQuoteLine[])
   - CRMScript.NetServer.NSAAAMockAgent.BoolInput(Bool)
-  - CRMScript.NetServer.NSAAAMockAgent.DateInput()
-  - CRMScript.NetServer.NSAAAMockAgent.DictionarFieldMetadataInput()
+  - CRMScript.NetServer.NSAAAMockAgent.DateInput(DateTime)
+  - CRMScript.NetServer.NSAAAMockAgent.DictionarFieldMetadataInput(Map)
   - CRMScript.NetServer.NSAAAMockAgent.DoNada()
   - CRMScript.NetServer.NSAAAMockAgent.EnumInput(Integer)
   - CRMScript.NetServer.NSAAAMockAgent.GetAAATestClassForModeling(Integer)
@@ -32,7 +33,6 @@ items:
   - CRMScript.NetServer.NSAAAMockAgent.InputId(Integer,Some)
   - CRMScript.NetServer.NSAAAMockAgent.IntInput(Integer)
   - CRMScript.NetServer.NSAAAMockAgent.LotsAStandardParameters(Bool,Integer,String)
-  - CRMScript.NetServer.NSAAAMockAgent.#ctor
   - CRMScript.NetServer.NSAAAMockAgent.QuoteLineInput(NSQuoteLine)
   - CRMScript.NetServer.NSAAAMockAgent.StringInput(String)
   name: NSAAAMockAgent
@@ -40,6 +40,21 @@ items:
   fullName: CRMScript.NetServer.NSAAAMockAgent
   type: Class
   summary: 
+  example: 
+- uid: CRMScript.NetServer.NSAAAMockAgent.#ctor
+  commentId: M:CRMScript.NetServer.NSAAAMockAgent.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSAAAMockAgent
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSAAAMockAgent.#ctor
+  fullName: CRMScript.NetServer.NSAAAMockAgent.#ctor
+  type: Constructor
+  summary: 
+  remarks: 
+  syntax: 
+    content: NSAAAMockAgent
   example: 
 - uid: CRMScript.NetServer.NSAAAMockAgent.ArrayBoolInput(Bool[])
   commentId: M:CRMScript.NetServer.NSAAAMockAgent.ArrayBoolInput(Bool[])
@@ -51,14 +66,14 @@ items:
   nameWithType: NSAAAMockAgent.ArrayBoolInput(Bool[])
   fullName: CRMScript.NetServer.NSAAAMockAgent.ArrayBoolInput(Bool[])
   type: Method
-  summary: "\nTest bool array input<p></p>\n<ul><li><strong>boolArrayArgument:</strong>Some bool array argument</li></ul>\n"
+  summary: "\nTest bool array input\n"
   remarks: 
   syntax: 
-    content: ArrayBoolInput(Bool[] p_0)
+    content: ArrayBoolInput(Bool[] boolArrayArgument)
     parameters:
-    - id: p_0
+    - id: boolArrayArgument
       type: CRMScript.Global.Bool[]
-      description: 
+      description: Some bool array argument
     return:
       type: CRMScript.Global.Void
   example: 
@@ -72,14 +87,14 @@ items:
   nameWithType: NSAAAMockAgent.ArrayIdInput(Integer[])
   fullName: CRMScript.NetServer.NSAAAMockAgent.ArrayIdInput(Integer[])
   type: Method
-  summary: "\nTest id array input<p></p>\n<ul><li><strong>intArrayArgumentIds:</strong>Some id array argument</li><li><strong>Returns:</strong>A void return</li></ul>\n"
+  summary: "\nTest ID array input\n"
   remarks: 
   syntax: 
-    content: ArrayIdInput(Integer[] p_0)
+    content: ArrayIdInput(Integer[] intArrayArgumentIds)
     parameters:
-    - id: p_0
+    - id: intArrayArgumentIds
       type: CRMScript.Global.Integer[]
-      description: 
+      description: Some ID array argument
     return:
       type: CRMScript.Global.Void
   example: 
@@ -93,14 +108,14 @@ items:
   nameWithType: NSAAAMockAgent.ArrayIntInput(Integer[])
   fullName: CRMScript.NetServer.NSAAAMockAgent.ArrayIntInput(Integer[])
   type: Method
-  summary: "\nTest integer array input<p></p>\n<ul><li><strong>intArrayArgument:</strong>Some integer array argument</li><li><strong>Returns:</strong>A void return</li></ul>\n"
+  summary: "\nTest integer array input\n"
   remarks: 
   syntax: 
-    content: ArrayIntInput(Integer[] p_0)
+    content: ArrayIntInput(Integer[] intArrayArgument)
     parameters:
-    - id: p_0
+    - id: intArrayArgument
       type: CRMScript.Global.Integer[]
-      description: 
+      description: Some integer array argument
     return:
       type: CRMScript.Global.Void
   example: 
@@ -114,14 +129,14 @@ items:
   nameWithType: NSAAAMockAgent.ArrayQuoteLineInput(NSQuoteLine[])
   fullName: CRMScript.NetServer.NSAAAMockAgent.ArrayQuoteLineInput(NSQuoteLine[])
   type: Method
-  summary: "\nTest QuoteLine array input<p></p>\n<ul><li><strong>quoteLineArrayArgument:</strong>Some QuoteLine array argument</li><li><strong>Returns:</strong>A void return</li></ul>\n"
+  summary: "\nTest QuoteLine array input\n"
   remarks: 
   syntax: 
-    content: ArrayQuoteLineInput(NSQuoteLine[] p_0)
+    content: ArrayQuoteLineInput(NSQuoteLine[] quoteLineArrayArgument)
     parameters:
-    - id: p_0
+    - id: quoteLineArrayArgument
       type: CRMScript.NetServer.NSQuoteLine[]
-      description: 
+      description: Some QuoteLine array argument
     return:
       type: CRMScript.Global.Void
   example: 
@@ -135,48 +150,58 @@ items:
   nameWithType: NSAAAMockAgent.BoolInput(Bool)
   fullName: CRMScript.NetServer.NSAAAMockAgent.BoolInput(Bool)
   type: Method
-  summary: "\nTest bool input<p></p>\n<ul><li><strong>boolArgument:</strong>Some bool argument</li><li><strong>Returns:</strong>A void return</li></ul>\n"
+  summary: "\nTest bool input\n"
   remarks: 
   syntax: 
-    content: BoolInput(Bool p_0)
+    content: BoolInput(Bool boolArgument)
     parameters:
-    - id: p_0
+    - id: boolArgument
       type: CRMScript.Global.Bool
+      description: Some bool argument
+    return:
+      type: CRMScript.Global.Void
+  example: 
+- uid: CRMScript.NetServer.NSAAAMockAgent.DateInput(DateTime)
+  commentId: M:CRMScript.NetServer.NSAAAMockAgent.DateInput(DateTime)
+  id: 'DateInput(DateTime)'
+  so.intellisense: NSAAAMockAgent.DateInput
+  langs:
+  - crmscript
+  name: 'DateInput(DateTime)'
+  nameWithType: NSAAAMockAgent.DateInput(DateTime)
+  fullName: CRMScript.NetServer.NSAAAMockAgent.DateInput(DateTime)
+  type: Method
+  summary: "\nTest date input\n"
+  remarks: 
+  syntax: 
+    content: DateInput(DateTime dateArgument)
+    parameters:
+    - id: dateArgument
+      type: CRMScript.Global.DateTime
       description: 
     return:
       type: CRMScript.Global.Void
   example: 
-- uid: CRMScript.NetServer.NSAAAMockAgent.DateInput()
-  commentId: M:CRMScript.NetServer.NSAAAMockAgent.DateInput()
-  id: 'DateInput()'
-  so.intellisense: NSAAAMockAgent.DateInput
-  langs:
-  - crmscript
-  name: 'DateInput()'
-  nameWithType: NSAAAMockAgent.DateInput()
-  fullName: CRMScript.NetServer.NSAAAMockAgent.DateInput()
-  type: Method
-  summary: "\nTest date input<p></p>\n<ul><li><strong>dateArgument:</strong>Some date argument</li><li><strong>Returns:</strong>A void return</li></ul>\n"
-  remarks: 
-  syntax: 
-    content: DateInput(DateTime p_0)
-    parameters:
-  example: 
-- uid: CRMScript.NetServer.NSAAAMockAgent.DictionarFieldMetadataInput()
-  commentId: M:CRMScript.NetServer.NSAAAMockAgent.DictionarFieldMetadataInput()
-  id: 'DictionarFieldMetadataInput()'
+- uid: CRMScript.NetServer.NSAAAMockAgent.DictionarFieldMetadataInput(Map)
+  commentId: M:CRMScript.NetServer.NSAAAMockAgent.DictionarFieldMetadataInput(Map)
+  id: 'DictionarFieldMetadataInput(Map)'
   so.intellisense: NSAAAMockAgent.DictionarFieldMetadataInput
   langs:
   - crmscript
-  name: 'DictionarFieldMetadataInput()'
-  nameWithType: NSAAAMockAgent.DictionarFieldMetadataInput()
-  fullName: CRMScript.NetServer.NSAAAMockAgent.DictionarFieldMetadataInput()
+  name: 'DictionarFieldMetadataInput(Map)'
+  nameWithType: NSAAAMockAgent.DictionarFieldMetadataInput(Map)
+  fullName: CRMScript.NetServer.NSAAAMockAgent.DictionarFieldMetadataInput(Map)
   type: Method
-  summary: "\nTest NSFieldMetadata Dictionary input<p></p>\n<ul><li><strong>fieldMetadataDictionaryArgument:</strong>Some NSFieldMetadata Dictionary argument</li></ul>\n"
+  summary: "\nTest NSFieldMetadata Dictionary input<p></p>\n<ul><li><strong>:</strong>Some NSFieldMetadata Dictionary argument</li></ul>\n"
   remarks: 
   syntax: 
-    content: DictionarFieldMetadataInput(FieldMetadataDictionary p_0)
+    content: DictionarFieldMetadataInput(Map fieldMetadataDictionaryArgument)
     parameters:
+    - id: fieldMetadataDictionaryArgument
+      type: CRMScript.Global.Map
+      description:
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSAAAMockAgent.DoNada()
   commentId: M:CRMScript.NetServer.NSAAAMockAgent.DoNada()
@@ -188,7 +213,7 @@ items:
   nameWithType: NSAAAMockAgent.DoNada()
   fullName: CRMScript.NetServer.NSAAAMockAgent.DoNada()
   type: Method
-  summary: "\nTest void return<p></p>\n<ul><li><strong>Returns:</strong>A void return</li></ul>\n"
+  summary: "\nTest void return\n"
   remarks: 
   syntax: 
     content: DoNada()
@@ -206,14 +231,14 @@ items:
   nameWithType: NSAAAMockAgent.EnumInput(Integer)
   fullName: CRMScript.NetServer.NSAAAMockAgent.EnumInput(Integer)
   type: Method
-  summary: "\nTest enum input<p></p>\n<ul><li><strong>enumArgument:</strong>Some enum argument</li><li><strong>Returns:</strong>A void return</li></ul>\n"
+  summary: "\nTest enum input\n"
   remarks: 
   syntax: 
-    content: EnumInput(Integer p_0)
+    content: EnumInput(Integer enumArgument)
     parameters:
-    - id: p_0
+    - id: enumArgument
       type: CRMScript.Global.Integer
-      description: 
+      description: Some enum argument
     return:
       type: CRMScript.Global.Void
   example: 
@@ -230,13 +255,13 @@ items:
   summary: "\nGets a AAATestClassForModeling object.\n"
   remarks: 
   syntax: 
-    content: GetAAATestClassForModeling(Integer p_0)
+    content: AAATestClassForModeling GetAAATestClassForModeling(Integer p_0)
     parameters:
     - id: p_0
       type: CRMScript.Global.Integer
       description: 
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.NetServer.AAATestClassForModeling
   example: 
 - uid: CRMScript.NetServer.NSAAAMockAgent.GetArrayOfBytes()
   commentId: M:CRMScript.NetServer.NSAAAMockAgent.GetArrayOfBytes()
@@ -248,13 +273,13 @@ items:
   nameWithType: NSAAAMockAgent.GetArrayOfBytes()
   fullName: CRMScript.NetServer.NSAAAMockAgent.GetArrayOfBytes()
   type: Method
-  summary: "\nGets some bytes<p></p>\n<ul><li><strong>Returns:</strong>Some bytes</li></ul>\n"
+  summary: "\nGets some bytes\n"
   remarks: 
   syntax: 
-    content: GetArrayOfBytes()
+    content: Byte[] GetArrayOfBytes()
     parameters: []
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.Byte[]
   example: 
 - uid: CRMScript.NetServer.NSAAAMockAgent.GetArrayOfDoubles()
   commentId: M:CRMScript.NetServer.NSAAAMockAgent.GetArrayOfDoubles()
@@ -266,13 +291,14 @@ items:
   nameWithType: NSAAAMockAgent.GetArrayOfDoubles()
   fullName: CRMScript.NetServer.NSAAAMockAgent.GetArrayOfDoubles()
   type: Method
-  summary: "\nGets some doubles<p></p>\n<ul><li><strong>Returns:</strong>Some doubles</li></ul>\n"
+  summary: "\nGets some doubles\n"
   remarks: 
   syntax: 
-    content: GetArrayOfDoubles()
+    content: Float[] GetArrayOfDoubles()
     parameters: []
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.Float[]
+      description: Some doubles
   example: 
 - uid: CRMScript.NetServer.NSAAAMockAgent.GetArrayOfIntegers()
   commentId: M:CRMScript.NetServer.NSAAAMockAgent.GetArrayOfIntegers()
@@ -284,13 +310,14 @@ items:
   nameWithType: NSAAAMockAgent.GetArrayOfIntegers()
   fullName: CRMScript.NetServer.NSAAAMockAgent.GetArrayOfIntegers()
   type: Method
-  summary: "\nGets some ints<p></p>\n<ul><li><strong>Returns:</strong>Some ints</li></ul>\n"
+  summary: "\nGets some ints.\n"
   remarks: 
   syntax: 
-    content: GetArrayOfIntegers()
+    content: Integer[] GetArrayOfIntegers()
     parameters: []
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.Integer[]
+      description: Some ints
   example: 
 - uid: CRMScript.NetServer.NSAAAMockAgent.GetArrayOfQuoteLines()
   commentId: M:CRMScript.NetServer.NSAAAMockAgent.GetArrayOfQuoteLines()
@@ -302,13 +329,13 @@ items:
   nameWithType: NSAAAMockAgent.GetArrayOfQuoteLines()
   fullName: CRMScript.NetServer.NSAAAMockAgent.GetArrayOfQuoteLines()
   type: Method
-  summary: "\nGets some QuoteLines<p></p>\n<ul><li><strong>Returns:</strong>Some QuoteLines</li></ul>\n"
+  summary: "\nGets some QuoteLines\n"
   remarks: 
   syntax: 
-    content: GetArrayOfQuoteLines()
+    content: NSQuoteLine[] GetArrayOfQuoteLines()
     parameters: []
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.NetServer.QuoteLine[]
   example: 
 - uid: CRMScript.NetServer.NSAAAMockAgent.GetArrayOfStrings()
   commentId: M:CRMScript.NetServer.NSAAAMockAgent.GetArrayOfStrings()
@@ -320,13 +347,14 @@ items:
   nameWithType: NSAAAMockAgent.GetArrayOfStrings()
   fullName: CRMScript.NetServer.NSAAAMockAgent.GetArrayOfStrings()
   type: Method
-  summary: "\nGets some strings<p></p>\n<ul><li><strong>Returns:</strong>Some strings</li></ul>\n"
+  summary: "\nGets some strings\n"
   remarks: 
   syntax: 
-    content: GetArrayOfStrings()
+    content: String[] GetArrayOfStrings()
     parameters: []
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.String[]
+      description: Some strings
   example: 
 - uid: CRMScript.NetServer.NSAAAMockAgent.GetBool()
   commentId: M:CRMScript.NetServer.NSAAAMockAgent.GetBool()
@@ -338,13 +366,14 @@ items:
   nameWithType: NSAAAMockAgent.GetBool()
   fullName: CRMScript.NetServer.NSAAAMockAgent.GetBool()
   type: Method
-  summary: "\nGets some bool value<p></p>\n<ul><li><strong>Returns:</strong>Some bool value</li></ul>\n"
+  summary: "\nGets some bool value\n"
   remarks: 
   syntax: 
-    content: GetBool()
+    content: Bool GetBool()
     parameters: []
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.Bool
+      description: Some bool value
   example: 
 - uid: CRMScript.NetServer.NSAAAMockAgent.GetDate()
   commentId: M:CRMScript.NetServer.NSAAAMockAgent.GetDate()
@@ -356,13 +385,14 @@ items:
   nameWithType: NSAAAMockAgent.GetDate()
   fullName: CRMScript.NetServer.NSAAAMockAgent.GetDate()
   type: Method
-  summary: "\nGets some date<p></p>\n<ul><li><strong>Returns:</strong>Some date</li></ul>\n"
+  summary: "\nGets some date\n"
   remarks: 
   syntax: 
-    content: GetDate()
+    content: DateTime GetDate()
     parameters: []
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.DateTime
+      description: Some date
   example: 
 - uid: CRMScript.NetServer.NSAAAMockAgent.GetDictionaryOfFieldMetadata()
   commentId: M:CRMScript.NetServer.NSAAAMockAgent.GetDictionaryOfFieldMetadata()
@@ -377,10 +407,10 @@ items:
   summary: 
   remarks: 
   syntax: 
-    content: GetDictionaryOfFieldMetadata()
+    content: Map GetDictionaryOfFieldMetadata()
     parameters: []
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.Map
   example: 
 - uid: CRMScript.NetServer.NSAAAMockAgent.GetDouble()
   commentId: M:CRMScript.NetServer.NSAAAMockAgent.GetDouble()
@@ -392,13 +422,14 @@ items:
   nameWithType: NSAAAMockAgent.GetDouble()
   fullName: CRMScript.NetServer.NSAAAMockAgent.GetDouble()
   type: Method
-  summary: "\nGets some double number.<p></p>\n<ul><li><strong>Returns:</strong>Some double number</li></ul>\n"
+  summary: "\nGets some double number.\n"
   remarks: 
   syntax: 
-    content: GetDouble()
+    content: Float GetDouble()
     parameters: []
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.Float
+      description: Some double number
   example: 
 - uid: CRMScript.NetServer.NSAAAMockAgent.GetInteger()
   commentId: M:CRMScript.NetServer.NSAAAMockAgent.GetInteger()
@@ -410,13 +441,14 @@ items:
   nameWithType: NSAAAMockAgent.GetInteger()
   fullName: CRMScript.NetServer.NSAAAMockAgent.GetInteger()
   type: Method
-  summary: "\nGets some number. C# int -&gt; C++ long<p></p>\n<ul><li><strong>Returns:</strong>Some number</li></ul>\n"
+  summary: "\nGets some number. C# int -&gt; C++ long\n"
   remarks: 
   syntax: 
-    content: GetInteger()
+    content: Integer GetInteger()
     parameters: []
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.Integer
+      description: Some number
   example: 
 - uid: CRMScript.NetServer.NSAAAMockAgent.GetQuoteLine()
   commentId: M:CRMScript.NetServer.NSAAAMockAgent.GetQuoteLine()
@@ -428,13 +460,13 @@ items:
   nameWithType: NSAAAMockAgent.GetQuoteLine()
   fullName: CRMScript.NetServer.NSAAAMockAgent.GetQuoteLine()
   type: Method
-  summary: "\nGets some QuoteLine<p></p>\n<ul><li><strong>Returns:</strong>Some QuoteLine</li></ul>\n"
+  summary: "\nGets some QuoteLine\n"
   remarks: 
   syntax: 
-    content: GetQuoteLine()
+    content: NSQuoteLine GetQuoteLine()
     parameters: []
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.NetServer.NSQuoteLine
   example: 
 - uid: CRMScript.NetServer.NSAAAMockAgent.GetSomeId()
   commentId: M:CRMScript.NetServer.NSAAAMockAgent.GetSomeId()
@@ -446,13 +478,13 @@ items:
   nameWithType: NSAAAMockAgent.GetSomeId()
   fullName: CRMScript.NetServer.NSAAAMockAgent.GetSomeId()
   type: Method
-  summary: "\nGets some id. C# int when the name ends with 'Id' -&gt; C++ longid<p></p>\n<ul><li><strong>Returns:</strong>Some id</li></ul>\n"
+  summary: "\nGets some ID. C# int when the name ends with 'Id' -&gt; C++ longid\n"
   remarks: 
   syntax: 
-    content: GetSomeId()
+    content: Integer GetSomeId()
     parameters: []
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.Integer
   example: 
 - uid: CRMScript.NetServer.NSAAAMockAgent.GetString()
   commentId: M:CRMScript.NetServer.NSAAAMockAgent.GetString()
@@ -464,13 +496,13 @@ items:
   nameWithType: NSAAAMockAgent.GetString()
   fullName: CRMScript.NetServer.NSAAAMockAgent.GetString()
   type: Method
-  summary: "\nGets some string<p></p>\n<ul><li><strong>Returns:</strong>Some string</li></ul>\n"
+  summary: "\nGets some string\n"
   remarks: 
   syntax: 
-    content: GetString()
+    content: String GetString()
     parameters: []
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.String
   example: 
 - uid: CRMScript.NetServer.NSAAAMockAgent.InputId(Integer,Some)
   commentId: M:CRMScript.NetServer.NSAAAMockAgent.InputId(Integer,Some)
@@ -482,7 +514,7 @@ items:
   nameWithType: NSAAAMockAgent.InputId(Integer,Some)
   fullName: CRMScript.NetServer.NSAAAMockAgent.InputId(Integer,Some)
   type: Method
-  summary: "\nTest input of an int with name that ends with 'Id'. Should generate a longid argument in C++.\n"
+  summary: "\nTests input of an int with name that ends with 'Id'. Should generate a longid argument in C++.\n"
   remarks: 
   syntax: 
     content: InputId(Integer p_0)
@@ -543,21 +575,6 @@ items:
       description: 
     return:
       type: CRMScript.Global.Void
-  example: 
-- uid: CRMScript.NetServer.NSAAAMockAgent.#ctor
-  commentId: M:CRMScript.NetServer.NSAAAMockAgent.#ctor
-  id: '#ctor'
-  so.intellisense: Void.NSAAAMockAgent
-  langs:
-  - crmscript
-  name: '#ctor'
-  nameWithType: NSAAAMockAgent.#ctor
-  fullName: CRMScript.NetServer.NSAAAMockAgent.#ctor
-  type: Constructor
-  summary: 
-  remarks: 
-  syntax: 
-    content: NSAAAMockAgent
   example: 
 - uid: CRMScript.NetServer.NSAAAMockAgent.QuoteLineInput(NSQuoteLine)
   commentId: M:CRMScript.NetServer.NSAAAMockAgent.QuoteLineInput(NSQuoteLine)

@@ -6,6 +6,7 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSTypicalSearch.#ctor
   - CRMScript.NetServer.NSTypicalSearch.GetEntityName()
   - CRMScript.NetServer.NSTypicalSearch.GetIncludePerson()
   - CRMScript.NetServer.NSTypicalSearch.GetIsEntityDefault()
@@ -15,11 +16,10 @@ items:
   - CRMScript.NetServer.NSTypicalSearch.GetTooltip()
   - CRMScript.NetServer.NSTypicalSearch.GetTypicalSearchId()
   - CRMScript.NetServer.NSTypicalSearch.GetVersionNumber()
-  - CRMScript.NetServer.NSTypicalSearch.#ctor
   - CRMScript.NetServer.NSTypicalSearch.SetEntityName(String)
   - CRMScript.NetServer.NSTypicalSearch.SetIncludePerson(Integer)
   - CRMScript.NetServer.NSTypicalSearch.SetIsEntityDefault(Integer)
-  - CRMScript.NetServer.NSTypicalSearch.SetRestrictionGroups()
+  - CRMScript.NetServer.NSTypicalSearch.SetRestrictionGroups(NSArchiveRestrictionGroup[])
   - CRMScript.NetServer.NSTypicalSearch.SetSource(String)
   - CRMScript.NetServer.NSTypicalSearch.SetTitle(String)
   - CRMScript.NetServer.NSTypicalSearch.SetTooltip(String)
@@ -31,185 +31,6 @@ items:
   type: Class
   summary: 
   example: 
-- uid: CRMScript.NetServer.NSTypicalSearch.GetEntityName()
-  commentId: M:CRMScript.NetServer.NSTypicalSearch.GetEntityName()
-  id: 'GetEntityName()'
-  so.intellisense: NSTypicalSearch.GetEntityName
-  langs:
-  - crmscript
-  name: 'GetEntityName()'
-  nameWithType: NSTypicalSearch.GetEntityName()
-  fullName: CRMScript.NetServer.NSTypicalSearch.GetEntityName()
-  type: Method
-  summary: "\nThe name of the entity the typical search links to\n"
-  remarks: 
-  syntax: 
-    content: String GetEntityName()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSTypicalSearch thing;\nString entityName = thing.GetEntityName();</code></pre>\n"
-- uid: CRMScript.NetServer.NSTypicalSearch.GetIncludePerson()
-  commentId: M:CRMScript.NetServer.NSTypicalSearch.GetIncludePerson()
-  id: 'GetIncludePerson()'
-  so.intellisense: NSTypicalSearch.GetIncludePerson
-  langs:
-  - crmscript
-  name: 'GetIncludePerson()'
-  nameWithType: NSTypicalSearch.GetIncludePerson()
-  fullName: CRMScript.NetServer.NSTypicalSearch.GetIncludePerson()
-  type: Method
-  summary: "\nFor selection-of-company: state of the Include Main Contact checkbox\n"
-  remarks: 
-  syntax: 
-    content: Integer GetIncludePerson()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSTypicalSearch thing;\nInteger includePerson = thing.GetIncludePerson();</code></pre>\n"
-- uid: CRMScript.NetServer.NSTypicalSearch.GetIsEntityDefault()
-  commentId: M:CRMScript.NetServer.NSTypicalSearch.GetIsEntityDefault()
-  id: 'GetIsEntityDefault()'
-  so.intellisense: NSTypicalSearch.GetIsEntityDefault
-  langs:
-  - crmscript
-  name: 'GetIsEntityDefault()'
-  nameWithType: NSTypicalSearch.GetIsEntityDefault()
-  fullName: CRMScript.NetServer.NSTypicalSearch.GetIsEntityDefault()
-  type: Method
-  summary: "\nIndicates if this is the default set of criteria for an entity\n"
-  remarks: 
-  syntax: 
-    content: Integer GetIsEntityDefault()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSTypicalSearch thing;\nInteger isEntityDefault = thing.GetIsEntityDefault();</code></pre>\n"
-- uid: CRMScript.NetServer.NSTypicalSearch.GetRestrictionGroups()
-  commentId: M:CRMScript.NetServer.NSTypicalSearch.GetRestrictionGroups()
-  id: 'GetRestrictionGroups()'
-  so.intellisense: NSTypicalSearch.GetRestrictionGroups
-  langs:
-  - crmscript
-  name: 'GetRestrictionGroups()'
-  nameWithType: NSTypicalSearch.GetRestrictionGroups()
-  fullName: CRMScript.NetServer.NSTypicalSearch.GetRestrictionGroups()
-  type: Method
-  summary: "\nThe restrictions (can be multiple groups) that make up the TypicalSearch<p></p>\n<strong>Returns:</strong>NSArchiveRestrictionGroup[]<p></p>\n<pre><code>NSTypicalSearch thing;\nNSArchiveRestrictionGroup[] restrictionGroups = thing.GetRestrictionGroups();</code></pre>\n"
-  remarks: 
-  syntax: 
-    content: NSArchiveRestrictionGroup[] GetRestrictionGroups()
-    parameters: []
-    return:
-      type: CRMScript.NetServer.NSArchiveRestrictionGroup[]
-  example: 
-  - "\n<pre><code>NSTypicalSearch thing;\nNSArchiveRestrictionGroup[] restrictionGroups = thing.GetRestrictionGroups();</code></pre>\n"
-- uid: CRMScript.NetServer.NSTypicalSearch.GetSource()
-  commentId: M:CRMScript.NetServer.NSTypicalSearch.GetSource()
-  id: 'GetSource()'
-  so.intellisense: NSTypicalSearch.GetSource
-  langs:
-  - crmscript
-  name: 'GetSource()'
-  nameWithType: NSTypicalSearch.GetSource()
-  fullName: CRMScript.NetServer.NSTypicalSearch.GetSource()
-  type: Method
-  summary: "\nName of organization that sources and maintains this TypicalSearch. Allows for both SuperOffice and partners to maintain sets of typical searches without conflict\n"
-  remarks: 
-  syntax: 
-    content: String GetSource()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSTypicalSearch thing;\nString source = thing.GetSource();</code></pre>\n"
-- uid: CRMScript.NetServer.NSTypicalSearch.GetTitle()
-  commentId: M:CRMScript.NetServer.NSTypicalSearch.GetTitle()
-  id: 'GetTitle()'
-  so.intellisense: NSTypicalSearch.GetTitle
-  langs:
-  - crmscript
-  name: 'GetTitle()'
-  nameWithType: NSTypicalSearch.GetTitle()
-  fullName: CRMScript.NetServer.NSTypicalSearch.GetTitle()
-  type: Method
-  summary: "\nThe title of the typical search (multilingual)\n"
-  remarks: 
-  syntax: 
-    content: String GetTitle()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSTypicalSearch thing;\nString title = thing.GetTitle();</code></pre>\n"
-- uid: CRMScript.NetServer.NSTypicalSearch.GetTooltip()
-  commentId: M:CRMScript.NetServer.NSTypicalSearch.GetTooltip()
-  id: 'GetTooltip()'
-  so.intellisense: NSTypicalSearch.GetTooltip
-  langs:
-  - crmscript
-  name: 'GetTooltip()'
-  nameWithType: NSTypicalSearch.GetTooltip()
-  fullName: CRMScript.NetServer.NSTypicalSearch.GetTooltip()
-  type: Method
-  summary: "\nThe tooltip for the typical search (multilingual)\n"
-  remarks: 
-  syntax: 
-    content: String GetTooltip()
-    parameters: []
-    return:
-      type: CRMScript.Global.String
-      description:
-  example: 
-  - "\n<pre><code>NSTypicalSearch thing;\nString tooltip = thing.GetTooltip();</code></pre>\n"
-- uid: CRMScript.NetServer.NSTypicalSearch.GetTypicalSearchId()
-  commentId: M:CRMScript.NetServer.NSTypicalSearch.GetTypicalSearchId()
-  id: 'GetTypicalSearchId()'
-  so.intellisense: NSTypicalSearch.GetTypicalSearchId
-  langs:
-  - crmscript
-  name: 'GetTypicalSearchId()'
-  nameWithType: NSTypicalSearch.GetTypicalSearchId()
-  fullName: CRMScript.NetServer.NSTypicalSearch.GetTypicalSearchId()
-  type: Method
-  summary: "\nPrimary key\n"
-  remarks: 
-  syntax: 
-    content: Integer GetTypicalSearchId()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSTypicalSearch thing;\nInteger typicalSearchId = thing.GetTypicalSearchId();</code></pre>\n"
-- uid: CRMScript.NetServer.NSTypicalSearch.GetVersionNumber()
-  commentId: M:CRMScript.NetServer.NSTypicalSearch.GetVersionNumber()
-  id: 'GetVersionNumber()'
-  so.intellisense: NSTypicalSearch.GetVersionNumber
-  langs:
-  - crmscript
-  name: 'GetVersionNumber()'
-  nameWithType: NSTypicalSearch.GetVersionNumber()
-  fullName: CRMScript.NetServer.NSTypicalSearch.GetVersionNumber()
-  type: Method
-  summary: "\nThe current downloaded version of this typical search\n"
-  remarks: 
-  syntax: 
-    content: Integer GetVersionNumber()
-    parameters: []
-    return:
-      type: CRMScript.Global.Integer
-      description:
-  example: 
-  - "\n<pre><code>NSTypicalSearch thing;\nInteger versionNumber = thing.GetVersionNumber();</code></pre>\n"
 - uid: CRMScript.NetServer.NSTypicalSearch.#ctor
   commentId: M:CRMScript.NetServer.NSTypicalSearch.#ctor
   id: '#ctor'
@@ -225,6 +46,186 @@ items:
   syntax: 
     content: NSTypicalSearch
   example: 
+- uid: CRMScript.NetServer.NSTypicalSearch.GetEntityName()
+  commentId: M:CRMScript.NetServer.NSTypicalSearch.GetEntityName()
+  id: 'GetEntityName()'
+  so.intellisense: NSTypicalSearch.GetEntityName
+  langs:
+  - crmscript
+  name: 'GetEntityName()'
+  nameWithType: NSTypicalSearch.GetEntityName()
+  fullName: CRMScript.NetServer.NSTypicalSearch.GetEntityName()
+  type: Method
+  summary: 
+  remarks: 
+  syntax: 
+    content: String GetEntityName()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: The name of the entity the typical search links to
+  example: 
+  - "\n<pre><code>NSTypicalSearch thing;\nString entityName = thing.GetEntityName();</code></pre>\n"
+- uid: CRMScript.NetServer.NSTypicalSearch.GetIncludePerson()
+  commentId: M:CRMScript.NetServer.NSTypicalSearch.GetIncludePerson()
+  id: 'GetIncludePerson()'
+  so.intellisense: NSTypicalSearch.GetIncludePerson
+  langs:
+  - crmscript
+  name: 'GetIncludePerson()'
+  nameWithType: NSTypicalSearch.GetIncludePerson()
+  fullName: CRMScript.NetServer.NSTypicalSearch.GetIncludePerson()
+  type: Method
+  summary: 
+  remarks: 
+  syntax: 
+    content: Integer GetIncludePerson()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: For selection-of-company, state of the Include Main Contact checkbox
+  example: 
+  - "\n<pre><code>NSTypicalSearch thing;\nInteger includePerson = thing.GetIncludePerson();</code></pre>\n"
+- uid: CRMScript.NetServer.NSTypicalSearch.GetIsEntityDefault()
+  commentId: M:CRMScript.NetServer.NSTypicalSearch.GetIsEntityDefault()
+  id: 'GetIsEntityDefault()'
+  so.intellisense: NSTypicalSearch.GetIsEntityDefault
+  langs:
+  - crmscript
+  name: 'GetIsEntityDefault()'
+  nameWithType: NSTypicalSearch.GetIsEntityDefault()
+  fullName: CRMScript.NetServer.NSTypicalSearch.GetIsEntityDefault()
+  type: Method
+  summary: "\ny\n"
+  remarks: 
+  syntax: 
+    content: Integer GetIsEntityDefault()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: Indicates if this is the default set of criteria for an entit
+  example: 
+  - "\n<pre><code>NSTypicalSearch thing;\nInteger isEntityDefault = thing.GetIsEntityDefault();</code></pre>\n"
+- uid: CRMScript.NetServer.NSTypicalSearch.GetRestrictionGroups()
+  commentId: M:CRMScript.NetServer.NSTypicalSearch.GetRestrictionGroups()
+  id: 'GetRestrictionGroups()'
+  so.intellisense: NSTypicalSearch.GetRestrictionGroups
+  langs:
+  - crmscript
+  name: 'GetRestrictionGroups()'
+  nameWithType: NSTypicalSearch.GetRestrictionGroups()
+  fullName: CRMScript.NetServer.NSTypicalSearch.GetRestrictionGroups()
+  type: Method
+  summary: ""
+  remarks: 
+  syntax: 
+    content: NSArchiveRestrictionGroup[] GetRestrictionGroups()
+    parameters: []
+    return:
+      type: CRMScript.NetServer.NSArchiveRestrictionGroup[]
+      description: The restrictions (can be multiple groups) that make up the TypicalSearch
+  example: 
+  - "\n<pre><code>NSTypicalSearch thing;\nNSArchiveRestrictionGroup[] restrictionGroups = thing.GetRestrictionGroups();</code></pre>\n"
+- uid: CRMScript.NetServer.NSTypicalSearch.GetSource()
+  commentId: M:CRMScript.NetServer.NSTypicalSearch.GetSource()
+  id: 'GetSource()'
+  so.intellisense: NSTypicalSearch.GetSource
+  langs:
+  - crmscript
+  name: 'GetSource()'
+  nameWithType: NSTypicalSearch.GetSource()
+  fullName: CRMScript.NetServer.NSTypicalSearch.GetSource()
+  type: Method
+  summary: ""
+  remarks: "\nAllows for both SuperOffice and partners to maintain sets of typical searches without conflict\n"
+  syntax: 
+    content: String GetSource()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: Name of organization that sources and maintains this TypicalSearch.
+  example: 
+  - "\n<pre><code>NSTypicalSearch thing;\nString source = thing.GetSource();</code></pre>\n"
+- uid: CRMScript.NetServer.NSTypicalSearch.GetTitle()
+  commentId: M:CRMScript.NetServer.NSTypicalSearch.GetTitle()
+  id: 'GetTitle()'
+  so.intellisense: NSTypicalSearch.GetTitle
+  langs:
+  - crmscript
+  name: 'GetTitle()'
+  nameWithType: NSTypicalSearch.GetTitle()
+  fullName: CRMScript.NetServer.NSTypicalSearch.GetTitle()
+  type: Method
+  summary: 
+  remarks: 
+  syntax: 
+    content: String GetTitle()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: The title of the typical search (multilingual)
+  example: 
+  - "\n<pre><code>NSTypicalSearch thing;\nString title = thing.GetTitle();</code></pre>\n"
+- uid: CRMScript.NetServer.NSTypicalSearch.GetTooltip()
+  commentId: M:CRMScript.NetServer.NSTypicalSearch.GetTooltip()
+  id: 'GetTooltip()'
+  so.intellisense: NSTypicalSearch.GetTooltip
+  langs:
+  - crmscript
+  name: 'GetTooltip()'
+  nameWithType: NSTypicalSearch.GetTooltip()
+  fullName: CRMScript.NetServer.NSTypicalSearch.GetTooltip()
+  type: Method
+  summary: 
+  remarks: 
+  syntax: 
+    content: String GetTooltip()
+    parameters: []
+    return:
+      type: CRMScript.Global.String
+      description: The tooltip for the typical search (multilingual)
+  example: 
+  - "\n<pre><code>NSTypicalSearch thing;\nString tooltip = thing.GetTooltip();</code></pre>\n"
+- uid: CRMScript.NetServer.NSTypicalSearch.GetTypicalSearchId()
+  commentId: M:CRMScript.NetServer.NSTypicalSearch.GetTypicalSearchId()
+  id: 'GetTypicalSearchId()'
+  so.intellisense: NSTypicalSearch.GetTypicalSearchId
+  langs:
+  - crmscript
+  name: 'GetTypicalSearchId()'
+  nameWithType: NSTypicalSearch.GetTypicalSearchId()
+  fullName: CRMScript.NetServer.NSTypicalSearch.GetTypicalSearchId()
+  type: Method
+  summary: 
+  remarks: 
+  syntax: 
+    content: Integer GetTypicalSearchId()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: Primary key
+  example: 
+  - "\n<pre><code>NSTypicalSearch thing;\nInteger typicalSearchId = thing.GetTypicalSearchId();</code></pre>\n"
+- uid: CRMScript.NetServer.NSTypicalSearch.GetVersionNumber()
+  commentId: M:CRMScript.NetServer.NSTypicalSearch.GetVersionNumber()
+  id: 'GetVersionNumber()'
+  so.intellisense: NSTypicalSearch.GetVersionNumber
+  langs:
+  - crmscript
+  name: 'GetVersionNumber()'
+  nameWithType: NSTypicalSearch.GetVersionNumber()
+  fullName: CRMScript.NetServer.NSTypicalSearch.GetVersionNumber()
+  type: Method
+  summary: 
+  remarks: 
+  syntax: 
+    content: Integer GetVersionNumber()
+    parameters: []
+    return:
+      type: CRMScript.Global.Integer
+      description: The current downloaded version of this typical search
+  example: 
+  - "\n<pre><code>NSTypicalSearch thing;\nInteger versionNumber = thing.GetVersionNumber();</code></pre>\n"
 - uid: CRMScript.NetServer.NSTypicalSearch.SetEntityName(String)
   commentId: M:CRMScript.NetServer.NSTypicalSearch.SetEntityName(String)
   id: 'SetEntityName(String)'
@@ -235,14 +236,14 @@ items:
   nameWithType: NSTypicalSearch.SetEntityName(String)
   fullName: CRMScript.NetServer.NSTypicalSearch.SetEntityName(String)
   type: Method
-  summary: "\nThe name of the entity the typical search links to\n"
+  summary: 
   remarks: 
   syntax: 
     content: Void SetEntityName(String entityName)
     parameters:
     - id: entityName
       type: CRMScript.Global.String
-      description: 
+      description:  The name of the entity the typical search links to
     return:
       type: CRMScript.Global.Void
   example: 
@@ -257,14 +258,14 @@ items:
   nameWithType: NSTypicalSearch.SetIncludePerson(Integer)
   fullName: CRMScript.NetServer.NSTypicalSearch.SetIncludePerson(Integer)
   type: Method
-  summary: "\nFor selection-of-company: state of the Include Main Contact checkbox\n"
+  summary: 
   remarks: 
   syntax: 
     content: Void SetIncludePerson(Integer includePerson)
     parameters:
     - id: includePerson
       type: CRMScript.Global.Integer
-      description: 
+      description:  For selection-of-company, state of the Include Main Contact checkbox
     return:
       type: CRMScript.Global.Void
   example: 
@@ -279,33 +280,38 @@ items:
   nameWithType: NSTypicalSearch.SetIsEntityDefault(Integer)
   fullName: CRMScript.NetServer.NSTypicalSearch.SetIsEntityDefault(Integer)
   type: Method
-  summary: "\nIndicates if this is the default set of criteria for an entity\n"
+  summary: 
   remarks: 
   syntax: 
     content: Void SetIsEntityDefault(Integer isEntityDefault)
     parameters:
     - id: isEntityDefault
       type: CRMScript.Global.Integer
-      description: 
+      description:  Indicates if this is the default set of criteria for an entity
     return:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTypicalSearch thing;\nInteger isEntityDefault;\nthing.SetIsEntityDefault(isEntityDefault);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTypicalSearch.SetRestrictionGroups()
-  commentId: M:CRMScript.NetServer.NSTypicalSearch.SetRestrictionGroups()
-  id: 'SetRestrictionGroups()'
+- uid: CRMScript.NetServer.NSTypicalSearch.SetRestrictionGroups(NSArchiveRestrictionGroup[])
+  commentId: M:CRMScript.NetServer.NSTypicalSearch.SetRestrictionGroups(NSArchiveRestrictionGroup[])
+  id: 'SetRestrictionGroups(NSArchiveRestrictionGroup[])'
   so.intellisense: NSTypicalSearch.SetRestrictionGroups
   langs:
   - crmscript
-  name: 'SetRestrictionGroups()'
-  nameWithType: NSTypicalSearch.SetRestrictionGroups()
-  fullName: CRMScript.NetServer.NSTypicalSearch.SetRestrictionGroups()
+  name: 'SetRestrictionGroups(NSArchiveRestrictionGroup[])'
+  nameWithType: NSTypicalSearch.SetRestrictionGroups(NSArchiveRestrictionGroup[])
+  fullName: CRMScript.NetServer.NSTypicalSearch.SetRestrictionGroups(NSArchiveRestrictionGroup[])
   type: Method
-  summary: "\nThe restrictions (can be multiple groups) that make up the TypicalSearch\n"
+  summary: 
   remarks: 
   syntax: 
     content: Void SetRestrictionGroups(NSArchiveRestrictionGroup[] restrictionGroups)
     parameters:
+    - id: restrictionGroups
+      type: CRMScript.NetServer.NSArchiveRestrictionGroup[]
+      description: The restrictions (can be multiple groups) that make up the TypicalSearch
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTypicalSearch thing;\nNSArchiveRestrictionGroup[] restrictionGroups;\nthing.SetRestrictionGroups(restrictionGroups);</code></pre>\n"
 - uid: CRMScript.NetServer.NSTypicalSearch.SetSource(String)
@@ -318,14 +324,14 @@ items:
   nameWithType: NSTypicalSearch.SetSource(String)
   fullName: CRMScript.NetServer.NSTypicalSearch.SetSource(String)
   type: Method
-  summary: "\nName of organization that sources and maintains this TypicalSearch. Allows for both SuperOffice and partners to maintain sets of typical searches without conflict\n"
-  remarks: 
+  summary: ""
+  remarks: "\nAllows for both SuperOffice and partners to maintain sets of typical searches without conflict\n"
   syntax: 
     content: Void SetSource(String source)
     parameters:
     - id: source
       type: CRMScript.Global.String
-      description: 
+      description: Name of organization that sources and maintains this TypicalSearch.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -340,14 +346,14 @@ items:
   nameWithType: NSTypicalSearch.SetTitle(String)
   fullName: CRMScript.NetServer.NSTypicalSearch.SetTitle(String)
   type: Method
-  summary: "\nThe title of the typical search (multilingual)\n"
+  summary: 
   remarks: 
   syntax: 
     content: Void SetTitle(String title)
     parameters:
     - id: title
       type: CRMScript.Global.String
-      description: 
+      description: The title of the typical search (multilingual)
     return:
       type: CRMScript.Global.Void
   example: 
@@ -362,14 +368,14 @@ items:
   nameWithType: NSTypicalSearch.SetTooltip(String)
   fullName: CRMScript.NetServer.NSTypicalSearch.SetTooltip(String)
   type: Method
-  summary: "\nThe tooltip for the typical search (multilingual)\n"
+  summary: 
   remarks: 
   syntax: 
     content: Void SetTooltip(String tooltip)
     parameters:
     - id: tooltip
       type: CRMScript.Global.String
-      description: 
+      description: The tooltip for the typical search (multilingual)
     return:
       type: CRMScript.Global.Void
   example: 
@@ -384,14 +390,14 @@ items:
   nameWithType: NSTypicalSearch.SetTypicalSearchId(Integer)
   fullName: CRMScript.NetServer.NSTypicalSearch.SetTypicalSearchId(Integer)
   type: Method
-  summary: "\nPrimary key\n"
+  summary: 
   remarks: 
   syntax: 
     content: Void SetTypicalSearchId(Integer typicalSearchId)
     parameters:
     - id: typicalSearchId
       type: CRMScript.Global.Integer
-      description: 
+      description: Primary key
     return:
       type: CRMScript.Global.Void
   example: 
@@ -406,14 +412,14 @@ items:
   nameWithType: NSTypicalSearch.SetVersionNumber(Integer)
   fullName: CRMScript.NetServer.NSTypicalSearch.SetVersionNumber(Integer)
   type: Method
-  summary: "\nThe current downloaded version of this typical search\n"
+  summary: 
   remarks: 
   syntax: 
     content: Void SetVersionNumber(Integer versionNumber)
     parameters:
     - id: versionNumber
       type: CRMScript.Global.Integer
-      description: 
+      description: The current downloaded version of this typical search
     return:
       type: CRMScript.Global.Void
   example: 

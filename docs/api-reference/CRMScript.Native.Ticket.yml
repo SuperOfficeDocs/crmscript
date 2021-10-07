@@ -83,7 +83,7 @@ items:
   nameWithType: Ticket.buildEmailSubject()
   fullName: CRMScript.Native.Ticket.buildEmailSubject()
   type: Method
-  summary: "\nreturns a String composed by the Mail tag, the ticketId and the title of the ticket<p></p>\n<ul><li><strong>Returns:</strong>a String composed by the Mail tag, the ticketId and the title of the ticket</li></ul>\n"
+  summary: "\nreturns a String composed by the Mail tag, the ticketId and the title of the ticket\n"
   remarks: 
   syntax: 
     content: String buildEmailSubject()
@@ -123,7 +123,7 @@ items:
   nameWithType: Ticket.delegate()
   fullName: CRMScript.Native.Ticket.delegate()
   type: Method
-  summary: "\nCRMScript method in the Ticket class that delegates a ticket to a user according to the rules on the category.<p></p>\nFor this function to take effect, you have to call<code>Ticket.save()</code>.\n"
+  summary: "\nDelegates a ticket to a user according to the rules on the category.<p></p>\nFor this function to take effect, you have to call<code>Ticket.save()</code>.\n"
   remarks: 
   syntax: 
     content: delegate()
@@ -141,7 +141,7 @@ items:
   nameWithType: Ticket.delegate(Integer)
   fullName: CRMScript.Native.Ticket.delegate(Integer)
   type: Method
-  summary: "\nCRMScript method in the Ticket class that delegates a ticket to a user according to the rules on the category. You can optionally specify a user ID<strong>not</strong>to delegate to.<p></p>\nFor this function to take effect, you have to call<code>Ticket.save()</code>.\n"
+  summary: "\nDelegates a ticket to a user according to the rules on the category. You can optionally specify a user ID not to delegate to.<p></p>\nFor this function to take effect, you have to call<code>Ticket.save()</code>.\n"
   remarks: 
   syntax: 
     content: delegate(Integer notUser)
@@ -282,7 +282,7 @@ items:
   nameWithType: Ticket.log(String)
   fullName: CRMScript.Native.Ticket.log(String)
   type: Method
-  summary: "\nCRMScript method in the Ticket class that writes a message to the ticket log. Used for logging changes and events on a ticket\n"
+  summary: "\nWrites a message to the ticket log. Used for logging changes and events on a ticket\n"
   remarks: 
   syntax: 
     content: log(String message)
@@ -304,7 +304,7 @@ items:
   nameWithType: Ticket.log(String,String)
   fullName: CRMScript.Native.Ticket.log(String,String)
   type: Method
-  summary: "\nCRMScript method in the Ticket class that writes a message to the ticket log. Used for logging changes and events on a ticket\n"
+  summary: "\nWrites a message to the ticket log. Used for logging changes and events on a ticket\n"
   remarks: 
   syntax: 
     content: log(String who, String message)
@@ -351,7 +351,7 @@ items:
   nameWithType: Ticket.save()
   fullName: CRMScript.Native.Ticket.save()
   type: Method
-  summary: "\nCRMScript method in the Ticket class that saves the ticket and returns the database ID of the stored ticket.\n"
+  summary: "\nSaves the ticket and returns the database ID of the stored ticket.\n"
   remarks: 
   syntax: 
     content: Integer save()
@@ -370,7 +370,7 @@ items:
   nameWithType: Ticket.save(String)
   fullName: CRMScript.Native.Ticket.save(String)
   type: Method
-  summary: "\nCRMScript method in the Ticket class that saves the ticket and returns the database ID of the stored ticket.\n"
+  summary: "\nSaves the ticket and returns the database ID of the stored ticket.\n"
   remarks: 
   syntax: 
     content: Integer save(String log)
@@ -392,7 +392,7 @@ items:
   nameWithType: Ticket.save(Bool,Bool)
   fullName: CRMScript.Native.Ticket.save(Bool,Bool)
   type: Method
-  summary: "\nCRMScript method in the Ticket class that saves the ticket and returns the database ID of the stored ticket.\n"
+  summary: "\nSaves the ticket and returns the database ID of the stored ticket.\n"
   remarks: 
   syntax: 
     content: Integer save(Bool setReadStatus,Bool doNotCheckEscalating)
@@ -417,7 +417,7 @@ items:
   nameWithType: Ticket.save(String,Bool,Bool)
   fullName: CRMScript.Native.Ticket.save(String,Bool,Bool)
   type: Method
-  summary: "\nCRMScript method in the Ticket class that saves the ticket and returns the database ID of the stored ticket.\n"
+  summary: "\nSaves the ticket and returns the database ID of the stored ticket.\n"
   remarks: 
   syntax: 
     content: Integer save(String log,Bool setReadStatus,Bool doNotCheckEscalating)
@@ -482,8 +482,8 @@ items:
   nameWithType: Ticket.setValue(String,String)
   fullName: CRMScript.Native.Ticket.setValue(String,String)
   type: Method
-  summary: "\nSets column colName to the given value.\nObs: For this to actually affect the ticket, you will have to use the function<code>save()</code>after you have set all the values you want.\n"
-  remarks: "\n<p>Possible values are the extrafields on the ticket and the following:</p><ul><li>title</li><li>category: the category id</li><li>ownedBy: (owned_by), the ID of the user who owns the ticket</li><li>slevel: the security level of the ticket, 1 is internal, 2 is external</li><li>priority: the id</li><li>status: 1 = active, 2 = closed, 3 = postponed, 4 = deleted, 5 = composed</li><li>ticketStatus: (ticket_status), the ID of the custom status field</li><li>custId: the ID of the primary customer</li><li>customers: comma-separated list of customer ids</li><li>createdBy: the ID of the user who posted the ticket, 1 if the ticket is posted into the system</li><li>author: a string containing the name of the ticket author</li><li>activate: the datetime when the ticket was activated</li><li>createdAt: (created_at), the datetime when the ticket was created</li><li>repliedAt: (replied_at), the datetime when the ticket first was replied at</li><li>stopEscalation</li><li>readStatus (read_status)</li><li>deadline</li><li>filterAddress</li><li>timeToClose</li><li>realTimeToClose</li><li>dbiAgentId</li><li>dbiKey</li><li>dbiLastModified</li></ul>\n"
+  summary: "\nSets column colName to the given value.\nObs: For this to actually affect the ticket, you will have to use the function save() after you have set all the values you want.\n"
+  remarks: "\nPossible values are the extrafields on the ticket and the following:</p><ul><li>title</li><li>category: the category id</li><li>ownedBy: (owned_by), the ID of the user who owns the ticket</li><li>slevel: the security level of the ticket, 1 is internal, 2 is external</li><li>priority: the id</li><li>status: 1 = active, 2 = closed, 3 = postponed, 4 = deleted, 5 = composed</li><li>ticketStatus: (ticket_status), the ID of the custom status field</li><li>custId: the ID of the primary customer</li><li>customers: comma-separated list of customer ids</li><li>createdBy: the ID of the user who posted the ticket, 1 if the ticket is posted into the system</li><li>author: a string containing the name of the ticket author</li><li>activate: the datetime when the ticket was activated</li><li>createdAt: (created_at), the datetime when the ticket was created</li><li>repliedAt: (replied_at), the datetime when the ticket first was replied at</li><li>stopEscalation</li><li>readStatus (read_status)</li><li>deadline</li><li>filterAddress</li><li>timeToClose</li><li>realTimeToClose</li><li>dbiAgentId</li><li>dbiKey</li><li>dbiLastModified</li></ul>\n"
   syntax: 
     content: Void setValue(String colName, String value)
     parameters:
@@ -507,7 +507,7 @@ items:
   nameWithType: Ticket.toParser()
   fullName: CRMScript.Native.Ticket.toParser(Parser)
   type: Method
-  summary: "\nThis function will fill the variable space of the Parser with all values of the ticket.\nAs opposed to the function<code>toParserRaw()</code>, the String variables title and author are in html.\n"
+  summary: "\nThis function will fill the variable space of the Parser with all values of the ticket.\nAs opposed to the function toParserRaw(), the String variables title and author are in html.\n"
   remarks: 
   syntax: 
     content: Void toParser(Parser theParser)
@@ -529,7 +529,7 @@ items:
   nameWithType: Ticket.toParserRaw(Parser)
   fullName: CRMScript.Native.Ticket.toParserRaw(Parser)
   type: Method
-  summary: "\nThis function fills the Parser with the values of the ticket.\nAs opposed to the function<code>toParser()</code>who set several of the String-values as html, all these variables will be in plain text.\n"
+  summary: "\nThis function fills the Parser with the values of the ticket.\nAs opposed to the function toParser() who set several of the String-values as html, all these variables will be in plain text.\n"
   remarks: 
   syntax: 
     content: toParserRaw(Parser theParser)

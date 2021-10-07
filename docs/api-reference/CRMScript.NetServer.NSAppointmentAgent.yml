@@ -91,8 +91,8 @@ items:
   - CRMScript.NetServer.NSAppointmentAgent.RejectWithSmtpEmailConfirmation(Integer,String,Integer)
   - CRMScript.NetServer.NSAppointmentAgent.RequestForInfo(Integer,String,String,String,String,String,String,String)
   - CRMScript.NetServer.NSAppointmentAgent.Save(Integer,Bool)
-  - CRMScript.NetServer.NSAppointmentAgent.SaveAppointmentEntity()
-  - CRMScript.NetServer.NSAppointmentAgent.SaveSuggestedAppointmentEntity()
+  - CRMScript.NetServer.NSAppointmentAgent.SaveAppointmentEntity(NSAppointmentEntity)
+  - CRMScript.NetServer.NSAppointmentAgent.SaveSuggestedAppointmentEntity(NSSuggestedAppointmentEntity)
   - CRMScript.NetServer.NSAppointmentAgent.SaveTaskListItem()
   - CRMScript.NetServer.NSAppointmentAgent.SetActivityStatus(String[],Integer)
   - CRMScript.NetServer.NSAppointmentAgent.SetSeen(Integer,Integer)
@@ -1006,7 +1006,7 @@ items:
     parameters:
     - id: taskHeadingId
       type: CRMScript.Global.Integer
-      description:  The heading represents a grouping or filtering of tasks.
+      description: The heading represents a grouping or filtering of tasks.
     return:
       type: CRMScript.NetServer.NSAppointment[]
       description:
@@ -2283,7 +2283,7 @@ items:
   nameWithType: NSAppointmentAgent.GetUIDFromAppointmentId(Integer,Bool)
   fullName: CRMScript.NetServer.NSAppointmentAgent.GetUIDFromAppointmentId(Integer,Bool)
   type: Method
-  summary: "\nGets the UID associated with the appointment id in the Invitation table.<p></p>\n<strong>Returns:</strong>The associated UID, or null if none exist.\n"
+  summary: "\nGets the UID associated with the appointment id in the Invitation table.\n"
   remarks: 
   syntax: 
     content: String GetUIDFromAppointmentId(Integer appointmentId, Bool useMotherId)
@@ -2296,7 +2296,7 @@ items:
       description: 
     return:
       type: CRMScript.Global.String
-      description:
+      description: The associated UID, or null if none exist.
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nInteger appointmentId;\nBool useMotherId;\nString res = agent.GetUIDFromAppointmentId(appointmentId, useMotherId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.Move(Integer,Integer)
@@ -2310,7 +2310,7 @@ items:
   fullName: CRMScript.NetServer.NSAppointmentAgent.Move(Integer,Integer)
   type: Method
   summary: "\nMoving a booking to another start time.\n"
-  remarks: "\n<p>See <xref href=\"CRMScript.NetServer.RecurrenceUpdateMode\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+  remarks: "\nSee <xref href=\"CRMScript.NetServer.RecurrenceUpdateMode\" data-throw-if-not-resolved=\"false\"></xref>\n"
   syntax: 
     content: NSAppointmentEntity Move(Integer appointmentId, DateTime newStartTime, Integer updateMode)
     parameters:
@@ -2335,7 +2335,7 @@ items:
   fullName: CRMScript.NetServer.NSAppointmentAgent.Reject(Integer,String,Integer)
   type: Method
   summary: "\nRejecting an appointment invitation\n"
-  remarks: "\n<p>See <xref href=\"CRMScript.NetServer.RecurrenceUpdateMode\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+  remarks: "\nSee <xref href=\"CRMScript.NetServer.RecurrenceUpdateMode\" data-throw-if-not-resolved=\"false\"></xref>\n"
   syntax: 
     content: Void Reject(Integer appointmentId, String rejectReason, Integer updateMode)
     parameters:
@@ -2363,7 +2363,7 @@ items:
   fullName: CRMScript.NetServer.NSAppointmentAgent.RejectWithEmailConfirmation(Integer,String,Integer)
   type: Method
   summary: "\nRejecting an appointment invitation and send an email confirmation to the meeting organizer.\n"
-  remarks: "\n<p>See <xref href=\"CRMScript.NetServer.RecurrenceUpdateMode\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+  remarks: "\nSee <xref href=\"CRMScript.NetServer.RecurrenceUpdateMode\" data-throw-if-not-resolved=\"false\"></xref>\n"
   syntax: 
     content: Void RejectWithEmailConfirmation(Integer appointmentId, String rejectReason, Integer updateMode)
     parameters:
@@ -2391,7 +2391,7 @@ items:
   fullName: CRMScript.NetServer.NSAppointmentAgent.RejectWithSmtpEmailConfirmation(Integer,String,Integer)
   type: Method
   summary: "\nRejecting an appointment invitation and send an email confirmation to the meeting organizer.\n"
-  remarks: "\n<p>See <xref href=\"CRMScript.NetServer.RecurrenceUpdateMode\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+  remarks: "\nSee <xref href=\"CRMScript.NetServer.RecurrenceUpdateMode\" data-throw-if-not-resolved=\"false\"></xref>\n"
   syntax: 
     content: Void RejectWithSmtpEmailConfirmation(Integer appointmentId, String rejectReason, Integer updateMode, NSEMailConnectionInfo smtpEMailConnectionInfo)
     parameters:
@@ -2461,7 +2461,7 @@ items:
   nameWithType: NSAppointmentAgent.Save(Integer,Bool)
   fullName: CRMScript.NetServer.NSAppointmentAgent.Save(Integer,Bool)
   type: Method
-  summary: "\nSaving a booking.<p></p>\n<strong>Returns:</strong>NSAppointmentEntity\n"
+  summary: "\nSaving a booking.\n"
   remarks: 
   syntax: 
     content: NSAppointmentEntity Save(NSAppointmentEntity appointmentEntity, Integer updateMode, Bool sendEmailToParticipants, NSEMailConnectionInfo smtpEMailConnectionInfo, NSEMailConnectionInfo imapEMailConnectionInfo)
@@ -2476,42 +2476,50 @@ items:
       type: CRMScript.NetServer.NSAppointmentEntity
   example: 
   - "\n<pre><code>NSAppointmentAgent agent;\nNSAppointmentEntity appointmentEntity;\nInteger updateMode;\nBool sendEmailToParticipants;\nNSEMailConnectionInfo smtpEMailConnectionInfo;\nNSEMailConnectionInfo imapEMailConnectionInfo;\nNSAppointmentEntity res = agent.Save(appointmentEntity, updateMode, sendEmailToParticipants, smtpEMailConnectionInfo, imapEMailConnectionInfo);</code></pre>\n"
-- uid: CRMScript.NetServer.NSAppointmentAgent.SaveAppointmentEntity()
-  commentId: M:CRMScript.NetServer.NSAppointmentAgent.SaveAppointmentEntity()
-  id: 'SaveAppointmentEntity()'
+- uid: CRMScript.NetServer.NSAppointmentAgent.SaveAppointmentEntity(NSAppointmentEntity)
+  commentId: M:CRMScript.NetServer.NSAppointmentAgent.SaveAppointmentEntity(NSAppointmentEntity)
+  id: 'SaveAppointmentEntity(NSAppointmentEntity)'
   so.intellisense: NSAppointmentAgent.SaveAppointmentEntity
   langs:
   - crmscript
-  name: 'SaveAppointmentEntity()'
-  nameWithType: NSAppointmentAgent.SaveAppointmentEntity()
-  fullName: CRMScript.NetServer.NSAppointmentAgent.SaveAppointmentEntity()
+  name: 'SaveAppointmentEntity(NSAppointmentEntity)'
+  nameWithType: NSAppointmentAgent.SaveAppointmentEntity(NSAppointmentEntity)
+  fullName: CRMScript.NetServer.NSAppointmentAgent.SaveAppointmentEntity(NSAppointmentEntity)
   type: Method
-  summary: "\nCRMScript method in the NSAppointmentAgent class that saves an appointmentUpdates the existing NSAppointmentEntity or creates a new NSAppointmentEntity if the ID parameter is 0.<p></p>\nReturns the new or updated NSAppointmentEntity.<p></p>\n<code>NSAppointmentEntity SaveAppointmentEntity(NSAppointmentEntity appointmentEntity)</code>\n"
+  summary: "\nSaves an appointmentUpdates the existing NSAppointmentEntity or creates a new NSAppointmentEntity if the ID parameter is 0.\n"
   remarks: 
   syntax: 
-    content: SaveAppointmentEntity()
-    parameters: []
+    content: NSAppointmentEntity SaveAppointmentEntity(NSAppointmentEntity appointmentEntity)
+    parameters:
+    - id: appointmentEntity
+      type: CRMScript.NetServer.NSAppointmentEntity
+      description:
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.NetServer.NSAppointmentEntity
+      description: the new or updated NSAppointmentEntity.
   example: 
   - "\n<pre><code>NSAppointment  agent;\nNSAppointmentEntity thing = agent.CreateDefaultAppointmentEntity();\nthing = agent.SaveAppointmentEntity(thing);</code></pre>\n"
-- uid: CRMScript.NetServer.NSAppointmentAgent.SaveSuggestedAppointmentEntity()
-  commentId: M:CRMScript.NetServer.NSAppointmentAgent.SaveSuggestedAppointmentEntity()
-  id: 'SaveSuggestedAppointmentEntity()'
+- uid: CRMScript.NetServer.NSAppointmentAgent.SaveSuggestedAppointmentEntity(NSSuggestedAppointmentEntity)
+  commentId: M:CRMScript.NetServer.NSAppointmentAgent.SaveSuggestedAppointmentEntity(NSSuggestedAppointmentEntity)
+  id: 'SaveSuggestedAppointmentEntity(NSSuggestedAppointmentEntity)'
   so.intellisense: NSAppointmentAgent.SaveSuggestedAppointmentEntity
   langs:
   - crmscript
-  name: 'SaveSuggestedAppointmentEntity()'
-  nameWithType: NSAppointmentAgent.SaveSuggestedAppointmentEntity()
-  fullName: CRMScript.NetServer.NSAppointmentAgent.SaveSuggestedAppointmentEntity()
+  name: 'SaveSuggestedAppointmentEntity(NSSuggestedAppointmentEntity)'
+  nameWithType: NSAppointmentAgent.SaveSuggestedAppointmentEntity(NSSuggestedAppointmentEntity)
+  fullName: CRMScript.NetServer.NSAppointmentAgent.SaveSuggestedAppointmentEntity(NSSuggestedAppointmentEntity)
   type: Method
-  summary: "\nUpdates the existing NSSuggestedAppointmentEntity or creates a new NSSuggestedAppointmentEntity if the id parameter is 0<p></p>\n<strong>Parameters</strong>:<p></p>\n<ul><li><strong>suggestedAppointmentEntity</strong>The NSSuggestedAppointmentEntity to save.</li></ul><strong>Returns:</strong>New or updated NSSuggestedAppointmentEntity<p></p>\n<pre><code>NSAppointment  agent;\nNSSuggestedAppointmentEntity thing = agent.CreateDefaultSuggestedAppointmentEntity();\nthing = agent.SaveSuggestedAppointmentEntity(thing);</code></pre>\n"
+  summary: "\nUpdates the existing NSSuggestedAppointmentEntity or creates a new NSSuggestedAppointmentEntity if the id parameter is 0\n"
   remarks: 
   syntax: 
     content: NSSuggestedAppointmentEntity SaveSuggestedAppointmentEntity(NSSuggestedAppointmentEntity suggestedAppointmentEntity)
     parameters:
+    - id: suggestedAppointmentEntity
+      type: CRMScript.NetServer.NSSuggestedAppointmentEntity
+      description: The NSSuggestedAppointmentEntity to save.
     return:
       type: CRMScript.NetServer.NSSuggestedAppointmentEntity
+      description: New or updated NSSuggestedAppointmentEntity
   example: 
   - "\n<pre><code>NSAppointment  agent;\nNSSuggestedAppointmentEntity thing = agent.CreateDefaultSuggestedAppointmentEntity();\nthing = agent.SaveSuggestedAppointmentEntity(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.SaveTaskListItem()

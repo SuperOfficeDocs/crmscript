@@ -34,7 +34,7 @@ items:
   - CRMScript.NetServer.NSForeignSystemAgent.GetKeyValue(String,String,String,String,Integer)
   - CRMScript.NetServer.NSForeignSystemAgent.GetKeyValueOnDeviceIdentifier(String,String,String,String,String,Integer)
   - CRMScript.NetServer.NSForeignSystemAgent.SaveDeviceByIdentifier(String,String,String,NSForeignDevice)
-  - CRMScript.NetServer.NSForeignSystemAgent.SaveForeignAppEntity()
+  - CRMScript.NetServer.NSForeignSystemAgent.SaveForeignAppEntity(NSForeignAppEntit)
   - CRMScript.NetServer.NSForeignSystemAgent.SaveForeignDevice(NSForeignDevice,String)
   - CRMScript.NetServer.NSForeignSystemAgent.SaveForeignKey(NSForeignKey,String,String,String)
   name: NSForeignSystemAgent
@@ -843,23 +843,27 @@ items:
       type: CRMScript.NetServer.NSForeignDevice
   example: 
   - "\n<pre><code>NSForeignSystemAgent agent;\nString applicationName;\nString deviceName;\nString deviceIdentifier;\nNSForeignDevice foreignDevice;\nNSForeignDevice res = agent.SaveDeviceByIdentifier(applicationName, deviceName, deviceIdentifier, foreignDevice);</code></pre>\n"
-- uid: CRMScript.NetServer.NSForeignSystemAgent.SaveForeignAppEntity()
-  commentId: M:CRMScript.NetServer.NSForeignSystemAgent.SaveForeignAppEntity()
-  id: 'SaveForeignAppEntity()'
+- uid: CRMScript.NetServer.NSForeignSystemAgent.SaveForeignAppEntity(NSForeignAppEntit)
+  commentId: M:CRMScript.NetServer.NSForeignSystemAgent.SaveForeignAppEntity(NSForeignAppEntit)
+  id: 'SaveForeignAppEntity(NSForeignAppEntit)'
   so.intellisense: NSForeignSystemAgent.SaveForeignAppEntity
   langs:
   - crmscript
-  name: 'SaveForeignAppEntity()'
-  nameWithType: NSForeignSystemAgent.SaveForeignAppEntity()
-  fullName: CRMScript.NetServer.NSForeignSystemAgent.SaveForeignAppEntity()
+  name: 'SaveForeignAppEntity(NSForeignAppEntit)'
+  nameWithType: NSForeignSystemAgent.SaveForeignAppEntity(NSForeignAppEntit)
+  fullName: CRMScript.NetServer.NSForeignSystemAgent.SaveForeignAppEntity(NSForeignAppEntit)
   type: Method
-  summary: "\nCRMScript method in the NSForeignSystemAgent class that creates or updates an NSForeignAppEntityUpdates the existing NSForeignAppEntity or creates a new NSForeignAppEntity if the ID parameter is 0.<p></p>\nReturns the new or updated NSForeignAppEntity.<p></p>\n<code>NSForeignAppEntity SaveForeignAppEntity(NSForeignAppEntity foreignAppEntity)</code>\n"
+  summary: "\nyUpdates the existing NSForeignAppEntity or creates a new NSForeignAppEntity if the ID parameter is 0.\n"
   remarks: 
   syntax: 
-    content: SaveForeignAppEntity()
-    parameters: []
+    content: NSForeignAppEntity SaveForeignAppEntity(NSForeignAppEntity foreignAppEntity)
+    parameters:
+    - id: foreignAppEntity
+      type: CRMScript.NetServer.NSForeignAppEntity
+      description:
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.NetServer.NSForeignAppEntity
+      description: the new or updated NSForeignAppEntity
   example: 
   - "\n<pre><code>NSForeignSystem  agent;\nNSForeignAppEntity thing = agent.CreateDefaultForeignAppEntity();\nthing = agent.SaveForeignAppEntity(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSForeignSystemAgent.SaveForeignDevice(NSForeignDevice,String)

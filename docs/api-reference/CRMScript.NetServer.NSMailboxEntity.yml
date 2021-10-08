@@ -152,14 +152,14 @@ items:
   nameWithType: NSMailboxEntity.GetServerType()
   fullName: CRMScript.NetServer.NSMailboxEntity.GetServerType()
   type: Method
-  summary: "<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Pop</li><li>Enum: 2 = Imap</li><li>Enum: 3 = Mapi</li><li>Enum: 4 = Facebook</li><li>Enum: 5 = Pops</li><li>Enum: 6 = Imaps</li><li>Enum: 7 = SmsPlugin</li><li>Enum: 8 = Mailgun</li><li>Enum: 9 = ImapOAuth</li></ul>"
+  summary: ""
   remarks: 
   syntax: 
     content: Integer GetServerType()
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description: Enum indicating the protocol to use (POP/IMAP).
+      description: The protocol to use (POP/IMAP). See <xref href=\"MailboxType\" data-throw-if-not-resolved=\"false\"></xref>
   example: 
   - "\n<pre><code>NSMailboxEntity thing;\nInteger serverType = thing.GetServerType();</code></pre>\n"
 - uid: CRMScript.NetServer.NSMailboxEntity.GetUsername()
@@ -309,7 +309,7 @@ items:
     parameters:
     - id: serverType
       type: CRMScript.Global.Integer
-      description: Enum indicating the protocol to use (POP/IMAP). See enum serverType.
+      description: The protocol to use (POP/IMAP). See <xref href=\"MailboxType\" data-throw-if-not-resolved=\"false\"></xref>
     return:
       type: CRMScript.Global.Void
   example: 
@@ -361,3 +361,9 @@ references:
   name: Void
   nameWithType: Void
   fullName: CRMScript.Global.Void
+- uid: CRMScript.NetServer.MailboxType
+  commentId: T:CRMScript.NetServer.MailboxType
+  isExternal: true
+  name: MailboxType
+  nameWithType: MailboxType
+  fullName: CRMScript.NetServer.MailboxType

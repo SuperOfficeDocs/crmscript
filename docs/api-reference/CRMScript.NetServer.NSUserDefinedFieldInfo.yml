@@ -213,7 +213,7 @@ items:
   syntax: 
     content: Integer GetFieldTop()
     parameters: []
-    return:
+    return: 
       type: CRMScript.Global.Integer
       description: Y pixel coordinate of field
   example: 
@@ -228,14 +228,14 @@ items:
   nameWithType: NSUserDefinedFieldInfo.GetFieldType()
   fullName: CRMScript.NetServer.NSUserDefinedFieldInfo.GetFieldType()
   type: Method
-  summary: "\n<ul><li>Enum: 1 = Number</li><li>Enum: 2 = ShortText</li><li>Enum: 3 = LongText</li><li>Enum: 4 = Date</li><li>Enum: 5 = UnlimitedDate</li><li>Enum: 6 = Checkbox</li><li>Enum: 7 = List</li><li>Enum: 8 = Decimal</li></ul>\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Integer GetFieldType()
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description: Field type 0 = leadtext only, 1 = Edit, 2 = CheckBox, 3 = dropdown, 4 = listbox
+      description: See <xref href=\"UDefFieldType\" data-throw-if-not-resolved=\"false\"></xref>
   example: 
   - "\n<pre><code>NSUserDefinedFieldInfo thing;\nInteger fieldType = thing.GetFieldType();</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserDefinedFieldInfo.GetFieldWidth()
@@ -335,7 +335,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.Bool
-      description: Is this field indexed? 0 if no, index no. if yes
+      description: Is this field indexed? true if yes; false if no
   example: 
   - "\n<pre><code>NSUserDefinedFieldInfo thing;\nBool isIndexed = thing.GetIsIndexed();</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserDefinedFieldInfo.GetIsMandatory()
@@ -946,7 +946,7 @@ items:
     parameters:
     - id: fieldType
       type: CRMScript.Global.Integer
-      description: 0 = leadtext only, 1 = Edit, 2 = CheckBox, 3 = dropdown, 4 = listbox See enum fieldType.
+      description: See <xref href=\"UDefFieldType\" data-throw-if-not-resolved=\"false\"></xref>
     return:
       type: CRMScript.Global.Void
   example: 
@@ -1056,7 +1056,7 @@ items:
     parameters:
     - id: isIndexed
       type: CRMScript.Global.Bool
-      description: Is this field indexed? 0 if no, index no. if yes
+      description: Is this field indexed? true if yes; false if no
     return:
       type: CRMScript.Global.Void
   example: 
@@ -1603,3 +1603,9 @@ references:
   name: Void
   nameWithType: Void
   fullName: CRMScript.Global.Void
+- uid: CRMScript.NetServer.UDefFieldType
+  commentId: T:CRMScript.NetServer.UDefFieldType
+  isExternal: true
+  name: UDefFieldType
+  nameWithType: UDefFieldType
+  fullName: CRMScript.NetServer.UDefFieldType

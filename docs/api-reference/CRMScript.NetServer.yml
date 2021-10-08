@@ -9,7 +9,6 @@ items:
   - CRMScript.NetServer.access
   - CRMScript.NetServer.accessFlags
   - CRMScript.NetServer.action
-  - CRMScript.NetServer.active
   - CRMScript.NetServer.ActivityStatus
   - CRMScript.NetServer.actorType
   - CRMScript.NetServer.AddressType
@@ -54,6 +53,7 @@ items:
   - CRMScript.NetServer.displayType
   - CRMScript.NetServer.domain
   - CRMScript.NetServer.durationUnit
+  - CRMScript.NetServer.EMailMergeTargetType
   - CRMScript.NetServer.entity
   - CRMScript.NetServer.entityId
   - CRMScript.NetServer.erpActorType
@@ -62,17 +62,14 @@ items:
   - CRMScript.NetServer.expires
   - CRMScript.NetServer.externalUserInfoModification
   - CRMScript.NetServer.fieldKeys
-  - CRMScript.NetServer.fieldLineNo
-  - CRMScript.NetServer.fieldType
+  - CRMScript.NetServer.FieldMetadataType
   - CRMScript.NetServer.freeTextOperator
   - CRMScript.NetServer.GeneratorEncoding
   - CRMScript.NetServer.InvitationStatus
-  - CRMScript.NetServer.isIndexed
   - CRMScript.NetServer.justification
   - CRMScript.NetServer.languageId
   - CRMScript.NetServer.level
   - CRMScript.NetServer.LicenseStatus
-  - CRMScript.NetServer.mailMergeDeliveryType
   - CRMScript.NetServer.maxLevel
   - CRMScript.NetServer.messageCategory
   - CRMScript.NetServer.msgClosingStatus
@@ -443,7 +440,6 @@ items:
   - CRMScript.NetServer.orientation
   - CRMScript.NetServer.origin
   - CRMScript.NetServer.ownerId
-  - CRMScript.NetServer.ownerType
   - CRMScript.NetServer.participantStatus
   - CRMScript.NetServer.path
   - CRMScript.NetServer.personId
@@ -451,7 +447,6 @@ items:
   - CRMScript.NetServer.prefLevel
   - CRMScript.NetServer.priority
   - CRMScript.NetServer.publishType
-  - CRMScript.NetServer.rankedFieldsIds
   - CRMScript.NetServer.readStatus
   - CRMScript.NetServer.recaptchaMode
   - CRMScript.NetServer.RecurrencePattern
@@ -462,10 +457,6 @@ items:
   - CRMScript.NetServer.ReturnType
   - CRMScript.NetServer.roleType
   - CRMScript.NetServer.scope
-  - CRMScript.NetServer.searchModeCompany
-  - CRMScript.NetServer.searchModeDepartment
-  - CRMScript.NetServer.searchModeFirstname
-  - CRMScript.NetServer.searchModeLastname
   - CRMScript.NetServer.selectionType
   - CRMScript.NetServer.selectionUnionType
   - CRMScript.NetServer.SenderMailMode
@@ -477,6 +468,7 @@ items:
   - CRMScript.NetServer.state
   - CRMScript.NetServer.status
   - CRMScript.NetServer.statusFilter
+  - CRMScript.NetServer.StringSearchType
   - CRMScript.NetServer.sysMaxLevel
   - CRMScript.NetServer.tableRights
   - CRMScript.NetServer.TaskType
@@ -486,8 +478,9 @@ items:
   - CRMScript.NetServer.ticketNewinfo
   - CRMScript.NetServer.ticketRead
   - CRMScript.NetServer.timeCounter
+  - CRMScript.NetServer.UDefFieldType
+  - CRMScript.NetServer.UDefType
   - CRMScript.NetServer.urlEncoding
-  - CRMScript.NetServer.userGroupId
   - CRMScript.NetServer.userValueOverride
   - CRMScript.NetServer.valueType
   - CRMScript.NetServer.visibility
@@ -1380,12 +1373,12 @@ references:
   name: access
   nameWithType: access
   fullName: CRMScript.NetServer.access
-- uid: CRMScript.NetServer.fieldType
-  commentId: T:CRMScript.NetServer.fieldType
+- uid: CRMScript.NetServer.FieldMetadataType
+  commentId: T:CRMScript.NetServer.FieldMetadataType
   isExternal: true
-  name: fieldType
-  nameWithType: fieldType
-  fullName: CRMScript.NetServer.fieldType
+  name: FieldMetadataType
+  nameWithType: FieldMetadataType
+  fullName: CRMScript.NetServer.FieldMetadataType
 - uid: CRMScript.NetServer.NSEventData
   commentId: T:CRMScript.NetServer.NSEventData
   isExternal: true
@@ -1866,12 +1859,12 @@ references:
   name: NSMailMergeSettings
   nameWithType: NSMailMergeSettings
   fullName: CRMScript.NetServer.NSMailMergeSettings
-- uid: CRMScript.NetServer.mailMergeDeliveryType
-  commentId: T:CRMScript.NetServer.mailMergeDeliveryType
+- uid: CRMScript.NetServer.EMailMergeTargetType
+  commentId: T:CRMScript.NetServer.EMailMergeTargetType
   isExternal: true
-  name: mailMergeDeliveryType
-  nameWithType: mailMergeDeliveryType
-  fullName: CRMScript.NetServer.mailMergeDeliveryType
+  name: EMailMergeTargetType
+  nameWithType: EMailMergeTargetType
+  fullName: CRMScript.NetServer.EMailMergeTargetType
 - uid: CRMScript.NetServer.NSMailMergeTask
   commentId: T:CRMScript.NetServer.NSMailMergeTask
   isExternal: true
@@ -2040,30 +2033,12 @@ references:
   name: NSPhoneListPreferences
   nameWithType: NSPhoneListPreferences
   fullName: CRMScript.NetServer.NSPhoneListPreferences
-- uid: CRMScript.NetServer.searchModeCompany
-  commentId: T:CRMScript.NetServer.searchModeCompany
+- uid: CRMScript.NetServer.StringSearchType
+  commentId: T:CRMScript.NetServer.StringSearchType
   isExternal: true
-  name: searchModeCompany
-  nameWithType: searchModeCompany
-  fullName: CRMScript.NetServer.searchModeCompany
-- uid: CRMScript.NetServer.searchModeDepartment
-  commentId: T:CRMScript.NetServer.searchModeDepartment
-  isExternal: true
-  name: searchModeDepartment
-  nameWithType: searchModeDepartment
-  fullName: CRMScript.NetServer.searchModeDepartment
-- uid: CRMScript.NetServer.searchModeFirstname
-  commentId: T:CRMScript.NetServer.searchModeFirstname
-  isExternal: true
-  name: searchModeFirstname
-  nameWithType: searchModeFirstname
-  fullName: CRMScript.NetServer.searchModeFirstname
-- uid: CRMScript.NetServer.searchModeLastname
-  commentId: T:CRMScript.NetServer.searchModeLastname
-  isExternal: true
-  name: searchModeLastname
-  nameWithType: searchModeLastname
-  fullName: CRMScript.NetServer.searchModeLastname
+  name: StringSearchType
+  nameWithType: StringSearchType
+  fullName: CRMScript.NetServer.StringSearchType
 - uid: CRMScript.NetServer.NSPluginResponse
   commentId: T:CRMScript.NetServer.NSPluginResponse
   isExternal: true
@@ -3294,42 +3269,18 @@ references:
   name: NSUserDefinedFieldInfoAgent
   nameWithType: NSUserDefinedFieldInfoAgent
   fullName: CRMScript.NetServer.NSUserDefinedFieldInfoAgent
-- uid: CRMScript.NetServer.isIndexed
-  commentId: T:CRMScript.NetServer.isIndexed
+- uid: CRMScript.NetServer.UDefFieldType
+  commentId: T:CRMScript.NetServer.UDefFieldType
   isExternal: true
-  name: isIndexed
-  nameWithType: isIndexed
-  fullName: CRMScript.NetServer.isIndexed
-- uid: CRMScript.NetServer.ownerType
-  commentId: T:CRMScript.NetServer.ownerType
+  name: UDefFieldType
+  nameWithType: UDefFieldType
+  fullName: CRMScript.NetServer.UDefFieldType
+- uid: CRMScript.NetServer.UDefType
+  commentId: T:CRMScript.NetServer.UDefType
   isExternal: true
-  name: ownerType
-  nameWithType: ownerType
-  fullName: CRMScript.NetServer.ownerType
-- uid: CRMScript.NetServer.userGroupId
-  commentId: T:CRMScript.NetServer.userGroupId
-  isExternal: true
-  name: userGroupId
-  nameWithType: userGroupId
-  fullName: CRMScript.NetServer.userGroupId
-- uid: CRMScript.NetServer.active
-  commentId: T:CRMScript.NetServer.active
-  isExternal: true
-  name: active
-  nameWithType: active
-  fullName: CRMScript.NetServer.active
-- uid: CRMScript.NetServer.rankedFieldsIds
-  commentId: T:CRMScript.NetServer.rankedFieldsIds
-  isExternal: true
-  name: rankedFieldsIds
-  nameWithType: rankedFieldsIds
-  fullName: CRMScript.NetServer.rankedFieldsIds
-- uid: CRMScript.NetServer.fieldLineNo
-  commentId: T:CRMScript.NetServer.fieldLineNo
-  isExternal: true
-  name: fieldLineNo
-  nameWithType: fieldLineNo
-  fullName: CRMScript.NetServer.fieldLineNo
+  name: UDefType
+  nameWithType: UDefType
+  fullName: CRMScript.NetServer.UDefType
 - uid: CRMScript.NetServer.NSUserGroup
   commentId: T:CRMScript.NetServer.NSUserGroup
   isExternal: true

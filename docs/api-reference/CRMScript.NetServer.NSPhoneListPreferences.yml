@@ -121,7 +121,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.Bool
-      description: True if you want to search for Persons by their lastname.
+      description: True if you want to search for Persons by their last name.
   example: 
   - "\n<pre><code>NSPhoneListPreferences thing;\nBool searchLastname = thing.GetSearchLastname();</code></pre>\n"
 - uid: CRMScript.NetServer.NSPhoneListPreferences.GetSearchModeCompany()
@@ -134,16 +134,16 @@ items:
   nameWithType: NSPhoneListPreferences.GetSearchModeCompany()
   fullName: CRMScript.NetServer.NSPhoneListPreferences.GetSearchModeCompany()
   type: Method
-  summary: "\n<ul><li>Enum: 0 = Exact</li><li>Enum: 1 = BeginsWith</li><li>Enum: 2 = EndsWith</li><li>Enum: 3 = Contains</li></ul>\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Integer GetSearchModeCompany()
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description: The Company name search type, e.g. BeginsWith, Contains, Endswith, Matches
+      description: See <xref href=\"StringSearchType\" data-throw-if-not-resolved=\"false\"></xref>
   example: 
-  - "\n<pre><code>NSPhoneListPreferences thing;\nInteger searchModeCompany = thing.GetSearchModeCompany();</code></pre>\n"
+  - "\n<pre><code>NSPhoneListPreferences thing;\nInteger searchMode = thing.GetSearchModeCompany();</code></pre>\n"
 - uid: CRMScript.NetServer.NSPhoneListPreferences.GetSearchModeDepartment()
   commentId: M:CRMScript.NetServer.NSPhoneListPreferences.GetSearchModeDepartment()
   id: 'GetSearchModeDepartment()'
@@ -154,16 +154,16 @@ items:
   nameWithType: NSPhoneListPreferences.GetSearchModeDepartment()
   fullName: CRMScript.NetServer.NSPhoneListPreferences.GetSearchModeDepartment()
   type: Method
-  summary: "\n<ul><li>Enum: 0 = Exact</li><li>Enum: 1 = BeginsWith</li><li>Enum: 2 = EndsWith</li><li>Enum: 3 = Contains</li></ul>\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Integer GetSearchModeDepartment()
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description: The Department search type, e.g. BeginsWith, Contains, Endswith, Matches
+      description: See <xref href=\"StringSearchType\" data-throw-if-not-resolved=\"false\"></xref>
   example: 
-  - "\n<pre><code>NSPhoneListPreferences thing;\nInteger searchModeDepartment = thing.GetSearchModeDepartment();</code></pre>\n"
+  - "\n<pre><code>NSPhoneListPreferences thing;\nInteger searchMode = thing.GetSearchModeDepartment();</code></pre>\n"
 - uid: CRMScript.NetServer.NSPhoneListPreferences.GetSearchModeFirstname()
   commentId: M:CRMScript.NetServer.NSPhoneListPreferences.GetSearchModeFirstname()
   id: 'GetSearchModeFirstname()'
@@ -174,16 +174,16 @@ items:
   nameWithType: NSPhoneListPreferences.GetSearchModeFirstname()
   fullName: CRMScript.NetServer.NSPhoneListPreferences.GetSearchModeFirstname()
   type: Method
-  summary: "\n<ul><li>Enum: 0 = Exact</li><li>Enum: 1 = BeginsWith</li><li>Enum: 2 = EndsWith</li><li>Enum: 3 = Contains</li></ul>\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Integer GetSearchModeFirstname()
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description: The firstname search type, e.g. BeginsWith, Contains, Endswith, Matches
+      description: See <xref href=\"StringSearchType\" data-throw-if-not-resolved=\"false\"></xref>
   example: 
-  - "\n<pre><code>NSPhoneListPreferences thing;\nInteger searchModeFirstname = thing.GetSearchModeFirstname();</code></pre>\n"
+  - "\n<pre><code>NSPhoneListPreferences thing;\nInteger searchMode = thing.GetSearchModeFirstname();</code></pre>\n"
 - uid: CRMScript.NetServer.NSPhoneListPreferences.GetSearchModeLastname()
   commentId: M:CRMScript.NetServer.NSPhoneListPreferences.GetSearchModeLastname()
   id: 'GetSearchModeLastname()'
@@ -194,16 +194,16 @@ items:
   nameWithType: NSPhoneListPreferences.GetSearchModeLastname()
   fullName: CRMScript.NetServer.NSPhoneListPreferences.GetSearchModeLastname()
   type: Method
-  summary: "\n<ul><li>Enum: 0 = Exact</li><li>Enum: 1 = BeginsWith</li><li>Enum: 2 = EndsWith</li><li>Enum: 3 = Contains</li></ul>\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Integer GetSearchModeLastname()
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description: The lastname search type, e.g. BeginsWith, Contains, Endswith, Matches
+      description: See <xref href=\"StringSearchType\" data-throw-if-not-resolved=\"false\"></xref>
   example: 
-  - "\n<pre><code>NSPhoneListPreferences thing;\nInteger searchModeLastname = thing.GetSearchModeLastname();</code></pre>\n"
+  - "\n<pre><code>NSPhoneListPreferences thing;\nInteger searchMode = thing.GetSearchModeLastname();</code></pre>\n"
 - uid: CRMScript.NetServer.NSPhoneListPreferences.SetSearchCompany(Bool)
   commentId: M:CRMScript.NetServer.NSPhoneListPreferences.SetSearchCompany(Bool)
   id: 'SetSearchCompany(Bool)'
@@ -287,7 +287,7 @@ items:
     parameters:
     - id: searchLastname
       type: CRMScript.Global.Bool
-      description: True if you want to search for Persons by their lastname.
+      description: True if you want to search for Persons by their last name.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -305,15 +305,15 @@ items:
   summary: ""
   remarks: ""
   syntax: 
-    content: Void SetSearchModeCompany(Integer searchModeCompany)
+    content: Void SetSearchModeCompany(Integer searchMode)
     parameters:
-    - id: searchModeCompany
+    - id: searchMode
       type: CRMScript.Global.Integer
-      description: The Company name search type, e.g. BeginsWith, Contains, Endswith, Matches. See enum searchModeCompany.
+      description: See <xref href=\"StringSearchType\" data-throw-if-not-resolved=\"false\"></xref>
     return:
       type: CRMScript.Global.Void
   example: 
-  - "\n<pre><code>NSPhoneListPreferences thing;\nInteger searchModeCompany;\nthing.SetSearchModeCompany(searchModeCompany);</code></pre>\n"
+  - "\n<pre><code>NSPhoneListPreferences thing;\nInteger searchMode;\nthing.SetSearchModeCompany(searchMode);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPhoneListPreferences.SetSearchModeDepartment(Integer)
   commentId: M:CRMScript.NetServer.NSPhoneListPreferences.SetSearchModeDepartment(Integer)
   id: 'SetSearchModeDepartment(Integer)'
@@ -327,15 +327,15 @@ items:
   summary: ""
   remarks: ""
   syntax: 
-    content: Void SetSearchModeDepartment(Integer searchModeDepartment)
+    content: Void SetSearchModeDepartment(Integer searchMode)
     parameters:
-    - id: searchModeDepartment
+    - id: searchMode
       type: CRMScript.Global.Integer
-      description: The Department search type, e.g. BeginsWith, Contains, Endswith, Matches. See enum searchModeDepartment.
+      description: See <xref href=\"StringSearchType\" data-throw-if-not-resolved=\"false\"></xref>
     return:
       type: CRMScript.Global.Void
   example: 
-  - "\n<pre><code>NSPhoneListPreferences thing;\nInteger searchModeDepartment;\nthing.SetSearchModeDepartment(searchModeDepartment);</code></pre>\n"
+  - "\n<pre><code>NSPhoneListPreferences thing;\nInteger searchMode;\nthing.SetSearchModeDepartment(searchMode);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPhoneListPreferences.SetSearchModeFirstname(Integer)
   commentId: M:CRMScript.NetServer.NSPhoneListPreferences.SetSearchModeFirstname(Integer)
   id: 'SetSearchModeFirstname(Integer)'
@@ -349,15 +349,15 @@ items:
   summary: ""
   remarks: ""
   syntax: 
-    content: Void SetSearchModeFirstname(Integer searchModeFirstname)
+    content: Void SetSearchModeFirstname(Integer searchMode)
     parameters:
-    - id: searchModeFirstname
+    - id: searchMode
       type: CRMScript.Global.Integer
-      description: The firstname search type, e.g. BeginsWith, Contains, Endswith, Matches. See enum searchModeFirstname.
+      description: See <xref href=\"StringSearchType\" data-throw-if-not-resolved=\"false\"></xref>
     return:
       type: CRMScript.Global.Void
   example: 
-  - "\n<pre><code>NSPhoneListPreferences thing;\nInteger searchModeFirstname;\nthing.SetSearchModeFirstname(searchModeFirstname);</code></pre>\n"
+  - "\n<pre><code>NSPhoneListPreferences thing;\nInteger searchMode;\nthing.SetSearchModeFirstname(searchMode);</code></pre>\n"
 - uid: CRMScript.NetServer.NSPhoneListPreferences.SetSearchModeLastname(Integer)
   commentId: M:CRMScript.NetServer.NSPhoneListPreferences.SetSearchModeLastname(Integer)
   id: 'SetSearchModeLastname(Integer)'
@@ -371,15 +371,15 @@ items:
   summary: ""
   remarks: ""
   syntax: 
-    content: Void SetSearchModeLastname(Integer searchModeLastname)
+    content: Void SetSearchModeLastname(Integer searchMode)
     parameters:
-    - id: searchModeLastname
+    - id: searchMode
       type: CRMScript.Global.Integer
-      description: The lastname search type, e.g. BeginsWith, Contains, Endswith, Matches. See enum searchModeLastname.
+      description: See <xref href=\"StringSearchType\" data-throw-if-not-resolved=\"false\"></xref>
     return:
       type: CRMScript.Global.Void
   example: 
-  - "\n<pre><code>NSPhoneListPreferences thing;\nInteger searchModeLastname;\nthing.SetSearchModeLastname(searchModeLastname);</code></pre>\n"
+  - "\n<pre><code>NSPhoneListPreferences thing;\nInteger searchMode;\nthing.SetSearchModeLastname(searchMode);</code></pre>\n"
 references:
 - uid: CRMScript.NetServer.NSPhoneListPreferences
   commentId: T:CRMScript.NetServer.NSPhoneListPreferences
@@ -405,3 +405,9 @@ references:
   name: Void
   nameWithType: Void
   fullName: CRMScript.Global.Void
+- uid: CRMScript.NetServer.StringSearchType
+  commentId: T:CRMScript.NetServer.StringSearchType
+  isExternal: true
+  name: StringSearchType
+  nameWithType: StringSearchType
+  fullName: CRMScript.NetServer.StringSearchType

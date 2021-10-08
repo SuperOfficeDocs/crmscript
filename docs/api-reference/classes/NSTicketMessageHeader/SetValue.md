@@ -1,14 +1,17 @@
 ---
 uid: crmscript_ref_NSTicketMessageHeader_SetValue
-title: Void SetValue()
+title: Void SetValue(String value)
 intellisense: NSTicketMessageHeader.SetValue
 keywords: NSTicketMessageHeader, SetValue
 so.topic: reference
 ---
 
-# Void SetValue()
+# Void SetValue(String value)
 
 The value of the header.
+
+**Parameter:** 
+ - **value** String
 
 **Returns:** Void
 

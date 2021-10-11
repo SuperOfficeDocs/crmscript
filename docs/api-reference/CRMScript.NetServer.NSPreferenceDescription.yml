@@ -154,14 +154,14 @@ items:
   nameWithType: NSPreferenceDescription.GetMaxLevel()
   fullName: CRMScript.NetServer.NSPreferenceDescription.GetMaxLevel()
   type: Method
-  summary: "\n<ul><li>Enum: 0 = Undefined</li><li>Enum: 1 = HardDefault</li><li>Enum: 2 = SystemWide</li><li>Enum: 3 = Database</li><li>Enum: 4 = Group</li><li>Enum: 5 = Individual</li><li>Enum: 6 = PC</li></ul>\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Integer GetMaxLevel()
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description: Lowest allowed setting level, set by user, but not lower than sysMaxLevel
+      description: Lowest allowed setting level, set by user, but not lower than enum <xref href=\"PreferenceLevel\" data-throw-if-not-resolved=\"false\"></xref>
   example: 
   - "\n<pre><code>NSPreferenceDescription thing;\nInteger maxLevel = thing.GetMaxLevel();</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreferenceDescription.GetMaxValue()
@@ -354,14 +354,14 @@ items:
   nameWithType: NSPreferenceDescription.GetSysMaxLevel()
   fullName: CRMScript.NetServer.NSPreferenceDescription.GetSysMaxLevel()
   type: Method
-  summary: "\n<ul><li>Enum: 0 = Undefined</li><li>Enum: 1 = HardDefault</li><li>Enum: 2 = SystemWide</li><li>Enum: 3 = Database</li><li>Enum: 4 = Group</li><li>Enum: 5 = Individual</li><li>Enum: 6 = PC</li></ul>\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Integer GetSysMaxLevel()
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description: Lowest allowed setting level, set by SuperOffice
+      description: Lowest allowed setting level, set by SuperOffice. See <xref href=\"PreferenceLevel\" data-throw-if-not-resolved=\"false\"></xref>
   example: 
   - "\n<pre><code>NSPreferenceDescription thing;\nInteger sysMaxLevel = thing.GetSysMaxLevel();</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreferenceDescription.GetTableName()
@@ -529,7 +529,7 @@ items:
     parameters:
     - id: maxLevel
       type: CRMScript.Global.Integer
-      description: Lowest allowed setting level, set by user, but not lower than sysMaxLevel. See enum maxLevel.
+      description: Lowest allowed setting level, set by user, but not lower than sysMaxLevel. See <xref href=\"PreferenceLevel\" data-throw-if-not-resolved=\"false\"></xref>
     return:
       type: CRMScript.Global.Void
   example: 
@@ -749,7 +749,7 @@ items:
     parameters:
     - id: sysMaxLevel
       type: CRMScript.Global.Integer
-      description: Lowest allowed setting level, set by SuperOffice. See enum sysMaxLevel.
+      description: Lowest allowed setting level, set by SuperOffice. See <xref href=\"PreferenceLevel\" data-throw-if-not-resolved=\"false\"></xref>
     return:
       type: CRMScript.Global.Void
   example: 
@@ -851,3 +851,9 @@ references:
   name: Void
   nameWithType: Void
   fullName: CRMScript.Global.Void
+- uid: CRMScript.NetServer.PreferenceLevel
+  commentId: T:CRMScript.NetServer.PreferenceLevel
+  isExternal: true
+  name: PreferenceLevel
+  nameWithType: PreferenceLevel
+  fullName: CRMScript.NetServer.PreferenceLevel

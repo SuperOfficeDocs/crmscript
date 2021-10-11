@@ -88,14 +88,14 @@ items:
   nameWithType: NSTicketStatusEntity.GetStatus()
   fullName: CRMScript.NetServer.NSTicketStatusEntity.GetStatus()
   type: Method
-  summary: "\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Active</li><li>Enum: 2 = Closed</li><li>Enum: 3 = Postponed</li><li>Enum: 4 = Deleted</li><li>Enum: 5 = Merged</li></ul>\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Integer GetStatus()
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description: The 'classic' ticket status. I.e. active/closed/postponed/deleted
+      description: The classic ticket status (active/closed/postponed/deleted). See <xref href=\"TicketBaseStatus\" data-throw-if-not-resolved=\"false\"></xref>.
   example: 
   - "\n<pre><code>NSTicketStatusEntity thing;\nInteger status = thing.GetStatus();</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketStatusEntity.GetTicketStatusId()
@@ -199,7 +199,7 @@ items:
     parameters:
     - id: status
       type: CRMScript.Global.Integer
-      description: The 'classic' ticket status. I.e. active/closed/postponed/deleted. See enum status.
+      description: The classic ticket status (active/closed/postponed/deleted). See <xref href=\"TicketBaseStatus\" data-throw-if-not-resolved=\"false\"></xref>.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -279,3 +279,9 @@ references:
   name: Void
   nameWithType: Void
   fullName: CRMScript.Global.Void
+- uid: CRMScript.NetServer.TicketBaseStatus
+  commentId: T:CRMScript.NetServer.TicketBaseStatus
+  isExternal: true
+  name: TicketBaseStatus
+  nameWithType: TicketBaseStatus
+  fullName: CRMScript.NetServer.TicketBaseStatus

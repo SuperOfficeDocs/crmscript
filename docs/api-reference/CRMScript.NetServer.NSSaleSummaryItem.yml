@@ -238,14 +238,14 @@ items:
   nameWithType: NSSaleSummaryItem.GetStatus()
   fullName: CRMScript.NetServer.NSSaleSummaryItem.GetStatus()
   type: Method
-  summary: "\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Open</li><li>Enum: 2 = Sold</li><li>Enum: 3 = Lost</li><li>Enum: 4 = Stalled</li><li>Enum: 1000 = SaintAll</li></ul>\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Integer GetStatus()
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description: The sale's status, indicating whether the sale is open(1), sold(2) or lost(3).
+      description: The sale's status, indicating whether the sale is open(1), sold(2) or lost(3). See <xref href=\"SaleStatus\" data-throw-if-not-resolved=\"false\"></xref>.
   example: 
   - "\n<pre><code>NSSaleSummaryItem thing;\nInteger status = thing.GetStatus();</code></pre>\n"
 - uid: CRMScript.NetServer.NSSaleSummaryItem.SetAmount(Float)
@@ -463,7 +463,7 @@ items:
     parameters:
     - id: status
       type: CRMScript.Global.Integer
-      description: The sale's status, indicating whether the sale is open(1), sold(2) or lost(3). See enum status.
+      description: The sale's status, indicating whether the sale is open(1), sold(2) or lost(3). See <xref href=\"SaleStatus\" data-throw-if-not-resolved=\"false\"></xref>.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -505,3 +505,10 @@ references:
   name: Void
   nameWithType: Void
   fullName: CRMScript.Global.Void
+- uid: CRMScript.NetServer.SaleStatus
+  commentId: T:CRMScript.NetServer.SaleStatus
+  parent: SuperOffice.Data
+  isExternal: true
+  name: SaleStatus
+  nameWithType: SaleStatus
+  fullName: CRMScript.NetServer.SaleStatus

@@ -204,14 +204,14 @@ items:
   nameWithType: NSWebhook.GetState()
   fullName: CRMScript.NetServer.NSWebhook.GetState()
   type: Method
-  summary: "\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Active</li><li>Enum: 2 = Stopped</li><li>Enum: 3 = TooManyErrors</li></ul>\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Integer GetState()
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description: Webhook status, should we post events to the URL? 1=Active, 2=Stopped or 3=TooManyErrors
+      description: Webhook status, should we post events to the URL? See <xref href=\"WebhookState\" data-throw-if-not-resolved=\"false\"></xref>.
   example: 
   - "\n<pre><code>NSWebhook thing;\nInteger state = thing.GetState();</code></pre>\n"
 - uid: CRMScript.NetServer.NSWebhook.GetTargetUrl()
@@ -485,7 +485,7 @@ items:
     parameters:
     - id: state
       type: CRMScript.Global.Integer
-      description: Webhook status* should we post events to the URL? 1=Active, 2=Stopped or 3=TooManyErrors. See enum state.
+      description: Webhook status. Should we post events to the URL? See <xref href=\"WebhookState\" data-throw-if-not-resolved=\"false\"></xref>.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -633,18 +633,6 @@ references:
   name: Map
   nameWithType: Map
   fullName: CRMScript.Global.Map
-- uid: CRMScript.Global.String
-  commentId: T:CRMScript.Global.String
-  isExternal: true
-  name: String
-  nameWithType: String
-  fullName: CRMScript.Global.String
-- uid: CRMScript.Global.Map
-  commentId: T:CRMScript.Global.Map
-  isExternal: true
-  name: Map
-  nameWithType: Map
-  fullName: CRMScript.Global.Map
 - uid: CRMScript.Global.DateTime
   commentId: T:CRMScript.Global.DateTime
   isExternal: true
@@ -669,3 +657,9 @@ references:
   name: Void
   nameWithType: Void
   fullName: CRMScript.Global.Void
+- uid: CRMScript.NetServer.WebhookState
+  commentId: T:CRMScript.NetServer.WebhookState
+  isExternal: true
+  name: WebhookState
+  nameWithType: WebhookState
+  fullName: CRMScript.NetServer.WebhookState

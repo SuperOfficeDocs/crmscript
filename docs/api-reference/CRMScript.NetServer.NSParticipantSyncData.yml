@@ -2,7 +2,7 @@
 items:
 - uid: CRMScript.NetServer.NSParticipantSyncData
   commentId: T:CRMScript.NetServer.NSParticipantSyncData
-  id: NSParticipantSyncData
+  id: NSParticipantSyncData 
   langs:
   - crmscript
   children:
@@ -324,14 +324,14 @@ items:
   nameWithType: NSParticipantSyncData.GetParticipantStatus()
   fullName: CRMScript.NetServer.NSParticipantSyncData.GetParticipantStatus()
   type: Method
-  summary: "\n<h3>participantStatus</h3><ul><li>Enum: 0 = UnknownOrPostIt</li><li>Enum: 1 = NotStarted</li><li>Enum: 2 = Started</li><li>Enum: 3 = Completed</li><li>Enum: 4 = Hidden</li><li>Enum: 5 = Booking</li><li>Enum: 6 = BookingMoved</li><li>Enum: 7 = BookingSeen</li><li>Enum: 8 = BookingMovedSeen</li><li>Enum: 9 = BookingDeclined</li><li>Enum: 10 = BookingDeleted</li><li>Enum: 11 = Assignment</li><li>Enum: 12 = AssignmentSeen</li><li>Enum: 13 = AssignmentDeclined</li></ul>\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Integer GetParticipantStatus()
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description: The appointment status for this participant.
+      description: The appointment status for this participant. See <xref href=\"AppointmentStatus\" data-throw-if-not-resolved=\"false\"></xref>
   example: 
   - "\n<pre><code>NSParticipantSyncData thing;\nInteger participantStatus = thing.GetParticipantStatus();</code></pre>\n"
 - uid: CRMScript.NetServer.NSParticipantSyncData.GetPersonAcademicTitle()
@@ -1012,7 +1012,7 @@ items:
     parameters:
     - id: participantStatus
       type: CRMScript.Global.Integer
-      description: The appointment status for this participant. See enum participantStatus.
+      description: The appointment status for this participant. See <xref href=\"AppointmentStatus\" data-throw-if-not-resolved=\"false\"></xref>.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -1497,12 +1497,6 @@ references:
   - name: '[]'
     nameWithType: '[]'
     fullName: '[]'
-- uid: CRMScript.Global.String
-  commentId: T:CRMScript.Global.String
-  isExternal: true
-  name: String
-  nameWithType: String
-  fullName: CRMScript.Global.String
 - uid: CRMScript.NetServer.NSAddressSyncData
   commentId: T:CRMScript.NetServer.NSAddressSyncData
   isExternal: true
@@ -1515,3 +1509,9 @@ references:
   name: Void
   nameWithType: Void
   fullName: CRMScript.Global.Void
+- uid: CRMScript.NetServer.AppointmentStatus
+  commentId: T:CRMScript.NetServer.AppointmentStatus
+  isExternal: true
+  name: AppointmentStatus
+  nameWithType: AppointmentStatus
+  fullName: CRMScript.NetServer.AppointmentStatus

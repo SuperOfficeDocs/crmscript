@@ -348,14 +348,14 @@ items:
   nameWithType: NSPreviewMailingHeader.GetStatus()
   fullName: CRMScript.NetServer.NSPreviewMailingHeader.GetStatus()
   type: Method
-  summary: "\n<ul><li>Enum: 0 = None</li><li>Enum: 1 = Ok</li><li>Enum: 2 = Canceled</li><li>Enum: 3 = Waiting</li><li>Enum: 4 = Started</li><li>Enum: 5 = StatusFailed</li><li>Enum: 6 = Retry</li><li>Enum: 7 = Populating</li><li>Enum: 8 = Deleted</li><li>Enum: 9 = AwaitPopulate</li><li>Enum: 10 = PopulatingOnly</li><li>Enum: 11 = PopulateAborted</li><li>Enum: 12 = PopulateError</li><li>Enum: 13 = TooManyRecipients</li></ul>\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Integer GetStatus()
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description: Sending/stopped/failed etc.
+      description: Sending/stopped/failed etc. See <xref href=\"ShipmentStatus\" data-throw-if-not-resolved=\"false\"></xref>.
   example: 
   - "\n<pre><code>NSPreviewMailingHeader thing;\nInteger status = thing.GetStatus();</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreviewMailingHeader.SetDocumentMessageId(Integer)
@@ -683,7 +683,7 @@ items:
     parameters:
     - id: status
       type: CRMScript.Global.Integer
-      description: Sending/stopped/failed etc. See enum status.
+      description: Sending/stopped/failed etc. See <xref href=\"ShipmentStatus\" data-throw-if-not-resolved=\"false\"></xref>.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -719,3 +719,9 @@ references:
   name: Void
   nameWithType: Void
   fullName: CRMScript.Global.Void
+- uid: CRMScript.NetServer.ShipmentStatus
+  commentId: T:CRMScript.NetServer.ShipmentStatus
+  isExternal: true
+  name: ShipmentStatus
+  nameWithType: ShipmentStatus
+  fullName: CRMScript.NetServer.ShipmentStatus

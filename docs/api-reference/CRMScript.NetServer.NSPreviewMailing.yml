@@ -348,14 +348,14 @@ items:
   nameWithType: NSPreviewMailing.GetStatus()
   fullName: CRMScript.NetServer.NSPreviewMailing.GetStatus()
   type: Method
-  summary: "\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Ready</li><li>Enum: 2 = Duplicate</li><li>Enum: 3 = Blocked</li><li>Enum: 4 = Sent</li><li>Enum: 5 = Bounced</li><li>Enum: 6 = Opened</li><li>Enum: 7 = Clicked</li><li>Enum: 8 = SoftBounced</li><li>Enum: 9 = NoSubscription</li><li>Enum: 10 = Complained</li><li>Enum: 11 = TooManyBounces</li></ul>\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Integer GetStatus()
     parameters: []
     return:
-      type: CRMScript.Native.Integer
-      description: Status for sending to this particular recipient
+      type: CRMScript.Global.Integer
+      description: Status for sending to this particular recipient. See <xref href=\"ShipmentAddrStatus\" data-throw-if-not-resolved=\"false\"></xref>.
   example: 
   - "\n<pre><code>NSPreviewMailing thing;\nInteger status = thing.GetStatus();</code></pre>\n"
 - uid: CRMScript.NetServer.NSPreviewMailing.SetContactId(Integer)
@@ -682,8 +682,8 @@ items:
     content: Void SetStatus(Integer status)
     parameters:
     - id: status
-      type: 
-      description: Status for sending to this particular recipient. See enum ShipmentAddrStatus
+      type: CRMScript.Global.Integer
+      description: Status for sending to this particular recipient. See <xref href=\"ShipmentAddrStatus\" data-throw-if-not-resolved=\"false\"></xref>.
   example: 
   - "\n<pre><code>NSPreviewMailing thing;\nInteger status;\nthing.SetStatus(status);</code></pre>\n"
 references:
@@ -717,3 +717,10 @@ references:
   name: Void
   nameWithType: Void
   fullName: CRMScript.Global.Void
+- uid: CRMScript.NetServer.ShipmentAddrStatus
+  commentId: T:CRMScript.NetServer.ShipmentAddrStatus
+  parent: CRMScript.NetServer
+  isExternal: true
+  name: ShipmentAddrStatus
+  nameWithType: ShipmentAddrStatus
+  fullName: CRMScript.NetServer.ShipmentAddrStatus

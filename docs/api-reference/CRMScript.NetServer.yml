@@ -13,11 +13,11 @@ items:
   - CRMScript.NetServer.actorType
   - CRMScript.NetServer.AddressType
   - CRMScript.NetServer.AppointmentPrivate
+  - CRMScript.NetServer.AppointmentStatus
   - CRMScript.NetServer.AppointmentType
   - CRMScript.NetServer.archivedState
   - CRMScript.NetServer.AssignmentStatus
   - CRMScript.NetServer.AssociateType
-  - CRMScript.NetServer.baseStatus
   - CRMScript.NetServer.BatchTaskState
   - CRMScript.NetServer.BookingType
   - CRMScript.NetServer.calReplyStatus
@@ -31,7 +31,6 @@ items:
   - CRMScript.NetServer.checkEscalating
   - CRMScript.NetServer.CheckoutState
   - CRMScript.NetServer.children
-  - CRMScript.NetServer.closingStatus
   - CRMScript.NetServer.colorIndex
   - CRMScript.NetServer.ConfigType
   - CRMScript.NetServer.ContactAction
@@ -63,6 +62,7 @@ items:
   - CRMScript.NetServer.externalUserInfoModification
   - CRMScript.NetServer.fieldKeys
   - CRMScript.NetServer.FieldMetadataType
+  - CRMScript.NetServer.FormSubmissionStatus
   - CRMScript.NetServer.FreeTextOperator
   - CRMScript.NetServer.GeneratorEncoding
   - CRMScript.NetServer.InvitationStatus
@@ -71,7 +71,6 @@ items:
   - CRMScript.NetServer.LicenseStatus
   - CRMScript.NetServer.MailboxType
   - CRMScript.NetServer.messageCategory
-  - CRMScript.NetServer.msgClosingStatus
   - CRMScript.NetServer.name
   - CRMScript.NetServer.Navigation
   - CRMScript.NetServer.NSAccessGatewayInfo
@@ -437,7 +436,6 @@ items:
   - CRMScript.NetServer.operation
   - CRMScript.NetServer.orientation
   - CRMScript.NetServer.origin
-  - CRMScript.NetServer.participantStatus
   - CRMScript.NetServer.path
   - CRMScript.NetServer.personId
   - CRMScript.NetServer.platform
@@ -452,19 +450,21 @@ items:
   - CRMScript.NetServer.reportLayout
   - CRMScript.NetServer.ReturnType
   - CRMScript.NetServer.roleType
+  - CRMScript.NetServer.SaleStatus
   - CRMScript.NetServer.scope
   - CRMScript.NetServer.selectionType
   - CRMScript.NetServer.selectionUnionType
   - CRMScript.NetServer.SenderMailMode
+  - CRMScript.NetServer.ShipmentAddrStatus
+  - CRMScript.NetServer.ShipmentStatus
   - CRMScript.NetServer.ShowState
   - CRMScript.NetServer.slevel
   - CRMScript.NetServer.source
-  - CRMScript.NetServer.state
-  - CRMScript.NetServer.status
-  - CRMScript.NetServer.statusFilter
   - CRMScript.NetServer.StringSearchType
   - CRMScript.NetServer.tableRights
   - CRMScript.NetServer.TaskType
+  - CRMScript.NetServer.TicketBaseStatus
+  - CRMScript.NetServer.TicketCategoryClosingStatus
   - CRMScript.NetServer.ticketChangedPriority
   - CRMScript.NetServer.ticketClosed
   - CRMScript.NetServer.ticketNew
@@ -477,6 +477,7 @@ items:
   - CRMScript.NetServer.userValueOverride
   - CRMScript.NetServer.valueType
   - CRMScript.NetServer.visibility
+  - CRMScript.NetServer.WebhookState
   - CRMScript.NetServer.WidgetRequiredFields
   - CRMScript.NetServer.WidgetTheme
   name: CRMScript.NetServer
@@ -1396,6 +1397,18 @@ references:
   name: ExecuteOnEvent
   nameWithType: ExecuteOnEvent
   fullName: CRMScript.NetServer.ExecuteOnEvent
+- uid: CRMScript.NetServer.ShipmentAddrStatus
+  commentId: T:CRMScript.NetServer.ShipmentAddrStatus
+  isExternal: true
+  name: ShipmentAddrStatus
+  nameWithType: ShipmentAddrStatus
+  fullName: CRMScript.NetServer.ShipmentAddrStatus
+- uid: CRMScript.NetServer.ShipmentStatus
+  commentId: T:CRMScript.NetServer.ShipmentStatus
+  isExternal: true
+  name: ShipmentStatus
+  nameWithType: ShipmentStatus
+  fullName: CRMScript.NetServer.ShipmentStatus
 - uid: CRMScript.NetServer.ShowState
   commentId: T:CRMScript.NetServer.ShowState
   isExternal: true
@@ -1600,12 +1613,12 @@ references:
   name: NSFormSubmissionEntity
   nameWithType: NSFormSubmissionEntity
   fullName: CRMScript.NetServer.NSFormSubmissionEntity
-- uid: CRMScript.NetServer.status
-  commentId: T:CRMScript.NetServer.status
+- uid: CRMScript.NetServer.FormSubmissionStatus
+  commentId: T:CRMScript.NetServer.FormSubmissionStatus
   isExternal: true
-  name: status
-  nameWithType: status
-  fullName: CRMScript.NetServer.status
+  name: FormSubmissionStatus
+  nameWithType: FormSubmissionStatus
+  fullName: CRMScript.NetServer.FormSubmissionStatus
 - uid: CRMScript.NetServer.NSFreeText
   commentId: T:CRMScript.NetServer.NSFreeText
   isExternal: true
@@ -1942,12 +1955,12 @@ references:
   name: NSParticipantSyncData
   nameWithType: NSParticipantSyncData
   fullName: CRMScript.NetServer.NSParticipantSyncData
-- uid: CRMScript.NetServer.participantStatus
-  commentId: T:CRMScript.NetServer.participantStatus
+- uid: CRMScript.NetServer.AppointmentStatus
+  commentId: T:CRMScript.NetServer.AppointmentStatus
   isExternal: true
-  name: participantStatus
-  nameWithType: participantStatus
-  fullName: CRMScript.NetServer.participantStatus
+  name: AppointmentStatus
+  nameWithType: AppointmentStatus
+  fullName: CRMScript.NetServer.AppointmentStatus
 - uid: CRMScript.NetServer.NSPaymentTerm
   commentId: T:CRMScript.NetServer.NSPaymentTerm
   isExternal: true
@@ -2374,12 +2387,6 @@ references:
   name: archivedState
   nameWithType: archivedState
   fullName: CRMScript.NetServer.archivedState
-- uid: CRMScript.NetServer.state
-  commentId: T:CRMScript.NetServer.state
-  isExternal: true
-  name: state
-  nameWithType: state
-  fullName: CRMScript.NetServer.state
 - uid: CRMScript.NetServer.NSQuoteVersionAttachment
   commentId: T:CRMScript.NetServer.NSQuoteVersionAttachment
   isExternal: true
@@ -2896,6 +2903,12 @@ references:
   name: NSSystemEventEntity
   nameWithType: NSSystemEventEntity
   fullName: CRMScript.NetServer.NSSystemEventEntity
+- uid: CRMScript.NetServer.SaleStatus
+  commentId: T:CRMScript.NetServer.SaleStatus
+  isExternal: true
+  name: SaleStatus
+  nameWithType: SaleStatus
+  fullName: CRMScript.NetServer.SaleStatus
 - uid: CRMScript.NetServer.scope
   commentId: T:CRMScript.NetServer.scope
   isExternal: true
@@ -2968,12 +2981,12 @@ references:
   name: NSTicket
   nameWithType: NSTicket
   fullName: CRMScript.NetServer.NSTicket
-- uid: CRMScript.NetServer.baseStatus
-  commentId: T:CRMScript.NetServer.baseStatus
+- uid: CRMScript.NetServer.TicketBaseStatus
+  commentId: T:CRMScript.NetServer.TicketBaseStatus
   isExternal: true
-  name: baseStatus
-  nameWithType: baseStatus
-  fullName: CRMScript.NetServer.baseStatus
+  name: TicketBaseStatus
+  nameWithType: TicketBaseStatus
+  fullName: CRMScript.NetServer.TicketBaseStatus
 - uid: CRMScript.NetServer.origin
   commentId: T:CRMScript.NetServer.origin
   isExternal: true
@@ -3016,24 +3029,18 @@ references:
   name: NSTicketCategoryEntity
   nameWithType: NSTicketCategoryEntity
   fullName: CRMScript.NetServer.NSTicketCategoryEntity
-- uid: CRMScript.NetServer.closingStatus
-  commentId: T:CRMScript.NetServer.closingStatus
+- uid: CRMScript.NetServer.TicketCategoryClosingStatus
+  commentId: T:CRMScript.NetServer.TicketCategoryClosingStatus
   isExternal: true
-  name: closingStatus
-  nameWithType: closingStatus
-  fullName: CRMScript.NetServer.closingStatus
+  name: TicketCategoryClosingStatus
+  nameWithType: TicketCategoryClosingStatus
+  fullName: CRMScript.NetServer.TicketCategoryClosingStatus
 - uid: CRMScript.NetServer.delegateMethod
   commentId: T:CRMScript.NetServer.delegateMethod
   isExternal: true
   name: delegateMethod
   nameWithType: delegateMethod
   fullName: CRMScript.NetServer.delegateMethod
-- uid: CRMScript.NetServer.msgClosingStatus
-  commentId: T:CRMScript.NetServer.msgClosingStatus
-  isExternal: true
-  name: msgClosingStatus
-  nameWithType: msgClosingStatus
-  fullName: CRMScript.NetServer.msgClosingStatus
 - uid: CRMScript.NetServer.NSTicketEntity
   commentId: T:CRMScript.NetServer.NSTicketEntity
   isExternal: true
@@ -3298,12 +3305,12 @@ references:
   name: NSWebhookAgent
   nameWithType: NSWebhookAgent
   fullName: CRMScript.NetServer.NSWebhookAgent
-- uid: CRMScript.NetServer.statusFilter
-  commentId: T:CRMScript.NetServer.statusFilter
+- uid: CRMScript.NetServer.WebhookState
+  commentId: T:CRMScript.NetServer.WebhookState
   isExternal: true
-  name: statusFilter
-  nameWithType: statusFilter
-  fullName: CRMScript.NetServer.statusFilter
+  name: WebhookState
+  nameWithType: WebhookState
+  fullName: CRMScript.NetServer.WebhookState
 - uid: CRMScript.NetServer.NSWebhookResult
   commentId: T:CRMScript.NetServer.NSWebhookResult
   isExternal: true

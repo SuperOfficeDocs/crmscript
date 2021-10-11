@@ -1056,14 +1056,14 @@ items:
   nameWithType: NSQuoteLine.GetUserValueOverride()
   fullName: CRMScript.NetServer.NSQuoteLine.GetUserValueOverride()
   type: Method
-  summary: "<ul><li>Enum: 0 = None</li><li>Enum: 1 = Total</li><li>Enum: 2 = DiscountPercent</li><li>Enum: 3 = DiscountAmount</li><li>Enum: 4 = EarningPercent</li><li>Enum: 5 = EarningAmount</li></ul>\n"
+  summary: ""
   remarks: "\nIf the user has filled out the discountpercentage field, then the UserValueOverride field is set to OverridePercent. (The DiscountAmount, EarningPercent, EarningAmount and TotalPrice fields are calculated based on the DiscountPercent.)\n"
   syntax: 
     content: Integer GetUserValueOverride()
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description: Has the pre-calculated (from ERP) price information been overridden, and how.
+      description: Has the pre-calculated (from ERP) price information been overridden, and how. See <xref href=\"ValueOverride\" data-throw-if-not-resolved=\"false\"></xref>.
   example: 
   - "\n<pre><code>NSQuoteLine thing;\nInteger userValueOverride = thing.GetUserValueOverride();</code></pre>\n"
 - uid: CRMScript.NetServer.NSQuoteLine.GetVAT()
@@ -2129,13 +2129,13 @@ items:
   fullName: CRMScript.NetServer.NSQuoteLine.SetUserValueOverride(Integer)
   type: Method
   summary: ""
-  remarks: ""
+  remarks: "\nIf the user has filled out the discountpercentage field, then the UserValueOverride field is set to OverridePercent. (The DiscountAmount, EarningPercent, EarningAmount and TotalPrice fields are calculated based on the DiscountPercent.)\n"
   syntax: 
     content: Void SetUserValueOverride(Integer userValueOverride)
     parameters:
     - id: userValueOverride
       type: CRMScript.Global.Integer
-      description: Has the pre-calculated (from ERP) price information been overridden, and how. If the user has filled out the discountpercentage field, then the UserValueOverride field is set to OverridePercent. (The DiscountAmount, EarningPercent, EarningAmount and TotalPrice fields are calculated based on the DiscountPercent.) See enum userValueOverride.
+      description: Has the pre-calculated (from ERP) price information been overridden, and how. See <xref href=\"ValueOverride\" data-throw-if-not-resolved=\"false\"></xref>
     return:
       type: CRMScript.Global.Void
   example: 
@@ -2247,3 +2247,9 @@ references:
   name: Void
   nameWithType: Void
   fullName: CRMScript.Global.Void
+- uid: CRMScript.NetServer.ValueOverride
+  commentId: T:CRMScript.NetServer.ValueOverride
+  isExternal: true
+  name: ValueOverride
+  nameWithType: ValueOverride
+  fullName: CRMScript.NetServer.ValueOverride

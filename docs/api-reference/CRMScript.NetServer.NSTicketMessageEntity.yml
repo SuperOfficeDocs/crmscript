@@ -381,7 +381,7 @@ items:
   nameWithType: NSTicketMessageEntity.GetSearchTitle()
   fullName: CRMScript.NetServer.NSTicketMessageEntity.GetSearchTitle()
   type: Method
-  summary: "\nA copy of the title of the ticket, for search optimisation and simpler reporting.\n"
+  summary: "\nA copy of the title of the ticket, for search optimization and simpler reporting.\n"
   remarks: 
   syntax: 
     content: String GetSearchTitle()
@@ -401,13 +401,14 @@ items:
   nameWithType: NSTicketMessageEntity.GetSlevel()
   fullName: CRMScript.NetServer.NSTicketMessageEntity.GetSlevel()
   type: Method
-  summary: "\nThe security level of the message.\n"
-  remarks: "<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Internal</li><li>Enum: 2 = External</li></ul>"
+  summary: ""
+  remarks: ""
   syntax: 
     content: Integer GetSlevel()
     parameters: []
     return:
       type: CRMScript.Global.Integer
+      description: The security level of the message. See <xref href=\"TicketSecurityLevel\" data-throw-if-not-resolved=\"false\"></xref>.
   example: 
   - "\n<pre><code>NSTicketMessageEntity thing;\nInteger slevel = thing.GetSlevel();</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketMessageEntity.GetTicket()
@@ -837,14 +838,14 @@ items:
   nameWithType: NSTicketMessageEntity.SetSlevel(Integer)
   fullName: CRMScript.NetServer.NSTicketMessageEntity.SetSlevel(Integer)
   type: Method
-  summary: "\nThe securitylevel of the message.\n"
-  remarks: "\nSee enum slevel.\n"
+  summary: ""
+  remarks: ""
   syntax: 
     content: Void SetSlevel(Integer slevel)
     parameters:
     - id: slevel
       type: CRMScript.Global.Integer
-      description: 
+      description: The security level of the message. See <xref href=\"TicketSecurityLevel\" data-throw-if-not-resolved=\"false\"></xref>.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -985,12 +986,6 @@ references:
   name: NSPerson
   nameWithType: NSPerson
   fullName: CRMScript.NetServer.NSPerson
-- uid: CRMScript.Global.Integer
-  commentId: T:CRMScript.Global.Integer
-  isExternal: true
-  name: Integer
-  nameWithType: Integer
-  fullName: CRMScript.Global.Integer
 - uid: CRMScript.NetServer.NSTicket
   commentId: T:CRMScript.NetServer.NSTicket
   isExternal: true
@@ -1009,3 +1004,9 @@ references:
   name: Void
   nameWithType: Void
   fullName: CRMScript.Global.Void
+- uid: CRMScript.NetServer.TicketSecurityLevel
+  commentId: T:CRMScript.NetServer.TicketSecurityLevel
+  isExternal: true
+  name: TicketSecurityLevel
+  nameWithType: TicketSecurityLevel
+  fullName: CRMScript.NetServer.TicketSecurityLevel

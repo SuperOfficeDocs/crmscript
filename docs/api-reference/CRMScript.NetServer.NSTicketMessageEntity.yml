@@ -40,7 +40,7 @@ items:
   - CRMScript.NetServer.NSTicketMessageEntity.SetHtmlBody(String)
   - CRMScript.NetServer.NSTicketMessageEntity.SetImportant(Bool)
   - CRMScript.NetServer.NSTicketMessageEntity.SetMailSorter(String)
-  - CRMScript.NetServer.NSTicketMessageEntity.SetMessageCategory()
+  - CRMScript.NetServer.NSTicketMessageEntity.SetMessageCategory(Integer)
   - CRMScript.NetServer.NSTicketMessageEntity.SetMessageHeaders()
   - CRMScript.NetServer.NSTicketMessageEntity.SetMessageId(String)
   - CRMScript.NetServer.NSTicketMessageEntity.SetPerson(NSPerson)
@@ -304,15 +304,16 @@ items:
   nameWithType: NSTicketMessageEntity.GetMessageCategory()
   fullName: CRMScript.NetServer.NSTicketMessageEntity.GetMessageCategory()
   type: Method
-  summary: "\nDefines what kind of message this is.\n"
-  remarks: "<ul><li>Enum: 0 = Message</li><li>Enum: 1 = Bounce</li><li>Enum: 2 = OutboxFailed</li></ul>"
+  summary: ""
+  remarks: ""
   syntax: 
-    content: TicketMessageCategory GetMessageCategory()
+    content: Integer GetMessageCategory()
     parameters: []
     return:
-      type: CRMScript.Native.TicketMessageCategory
+      type: CRMScript.Global.Integer
+      description: Defines what kind of message this is. See <xref href=\"TicketMessageCategory\" data-throw-if-not-resolved=\"false\"></xref>.
   example: 
-  - "\n<pre><code>NSTicketMessageEntity thing;\nTicketMessageCategory messageCategory = thing.GetMessageCategory();</code></pre>\n"
+  - "\n<pre><code>NSTicketMessageEntity thing;\nInteger messageCategory = thing.GetMessageCategory();</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketMessageEntity.GetMessageHeaders()
   commentId: M:CRMScript.NetServer.NSTicketMessageEntity.GetMessageHeaders()
   id: 'GetMessageHeaders()'
@@ -728,23 +729,26 @@ items:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTicketMessageEntity thing;\nString mailSorter;\nthing.SetMailSorter(mailSorter);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketMessageEntity.SetMessageCategory()
-  commentId: M:CRMScript.NetServer.NSTicketMessageEntity.SetMessageCategory()
-  id: 'SetMessageCategory()'
+- uid: CRMScript.NetServer.NSTicketMessageEntity.SetMessageCategory(Integer)
+  commentId: M:CRMScript.NetServer.NSTicketMessageEntity.SetMessageCategory(Integer)
+  id: 'SetMessageCategory(Integer)'
   so.intellisense: NSTicketMessageEntity.SetMessageCategory
   langs:
   - crmscript
-  name: 'SetMessageCategory()'
-  nameWithType: NSTicketMessageEntity.SetMessageCategory()
-  fullName: CRMScript.NetServer.NSTicketMessageEntity.SetMessageCategory()
+  name: 'SetMessageCategory(Integer)'
+  nameWithType: NSTicketMessageEntity.SetMessageCategory(Integer)
+  fullName: CRMScript.NetServer.NSTicketMessageEntity.SetMessageCategory(Integer)
   type: Method
-  summary: "\nDefines what kind of message this is.\n"
-  remarks: "\nSee enum messageCategory.\n"
+  summary: ""
+  remarks: ""
   syntax: 
-    content: Void SetMessageCategory(TicketMessageCategory messageCategory)
+    content: Void SetMessageCategory(Integer messageCategory)
     parameters:
+    - id: messageCategory
+      type: CRMScript.Global.Integer
+      description: Defines what kind of message this is. See <xref href=\"TicketMessageCategory\" data-throw-if-not-resolved=\"false\"></xref>.
   example: 
-  - "\n<pre><code>NSTicketMessageEntity thing;\nTicketMessageCategory messageCategory;\nthing.SetMessageCategory(messageCategory);</code></pre>\n"
+  - "\n<pre><code>NSTicketMessageEntity thing;\nInteger messageCategory;\nthing.SetMessageCategory(messageCategory);</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketMessageEntity.SetMessageHeaders()
   commentId: M:CRMScript.NetServer.NSTicketMessageEntity.SetMessageHeaders()
   id: 'SetMessageHeaders()'
@@ -954,12 +958,6 @@ references:
   name: Bool
   nameWithType: Bool
   fullName: CRMScript.Global.Bool
-- uid: CRMScript.Native.TicketMessageCategory
-  commentId: T:CRMScript.Native.TicketMessageCategory
-  isExternal: true
-  name: TicketMessageCategory
-  nameWithType: TicketMessageCategory
-  fullName: CRMScript.Native.TicketMessageCategory
 - uid: CRMScript.Native.TicketMessageHeader[]
   isExternal: true
   name: TicketMessageHeader[]
@@ -1010,3 +1008,9 @@ references:
   name: TicketSecurityLevel
   nameWithType: TicketSecurityLevel
   fullName: CRMScript.NetServer.TicketSecurityLevel
+- uid: CRMScript.NetServer.TicketMessageCategory
+  commentId: T:CRMScript.NetServer.TicketMessageCategory
+  isExternal: true
+  name: TicketMessageCategory
+  nameWithType: TicketMessageCategory
+  fullName: CRMScript.NetServer.TicketMessageCategory

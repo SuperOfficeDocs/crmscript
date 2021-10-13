@@ -193,13 +193,13 @@ items:
   fullName: CRMScript.NetServer.NSQuoteVersion.GetArchivedState()
   type: Method
   summary: ""
-  remarks: "\nIn this way we can show what happened before the archiving.<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Draft</li><li>Enum: 2 = DraftNotCalculated</li><li>Enum: 3 = DraftNeedsApproval</li><li>Enum: 4 = DraftApproved</li><li>Enum: 5 = DraftNotApproved</li><li>Enum: 6 = Sent</li><li>Enum: 7 = Archived</li><li>Enum: 8 = Lost</li><li>Enum: 9 = Sold</li></ul>\n"
+  remarks: "\nIn this way we can show what happened before the archiving.\n"
   syntax: 
     content: Integer GetArchivedState()
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description: State that this quote version had, right before it was changed to Archived
+      description: State that this quote version had, right before it was changed to Archived. See <xref href=\"QuoteVersionState\" data-throw-if-not-resolved=\"false\"></xref>.
   example: 
   - "\n<pre><code>NSQuoteVersion thing;\nInteger archivedState = thing.GetArchivedState();</code></pre>\n"
 - uid: CRMScript.NetServer.NSQuoteVersion.GetDeliveryCountryId()
@@ -947,7 +947,7 @@ items:
     parameters:
     - id: archivedState
       type: CRMScript.Global.Integer
-      description: State that this quote version had, right before it was changed to Archived; in this way we can show what happened before the archiving. See enum archivedState.
+      description: State that this quote version had, right before it was changed to Archived; in this way we can show what happened before the archiving. See <xref href=\"QuoteVersionState\" data-throw-if-not-resolved=\"false\"></xref>.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -1713,3 +1713,9 @@ references:
   name: Void
   nameWithType: Void
   fullName: CRMScript.Global.Void
+- uid: CRMScript.NetServer.QuoteVersionState
+  commentId: T:CRMScript.NetServer.QuoteVersionState
+  isExternal: true
+  name: QuoteVersionState
+  nameWithType: QuoteVersionState
+  fullName: CRMScript.NetServer.QuoteVersionState

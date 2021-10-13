@@ -707,14 +707,14 @@ items:
   nameWithType: NSUserDefinedFieldInfo.GetType()
   fullName: CRMScript.NetServer.NSUserDefinedFieldInfo.GetType()
   type: Method
-  summary: "\n<ul><li>Enum: 0 = Invalid</li><li>Enum: 7 = Contact</li><li>Enum: 8 = Person</li><li>Enum: 9 = Project</li><li>Enum: 10 = Sale</li><li>Enum: 11 = Temp</li><li>Enum: 12 = Appointment</li><li>Enum: 13 = Document</li><li>Enum: 14 = None</li></ul>\n"
-  remarks: 
+  summary: ""
+  remarks: "\nThis is not the actual tableNumber, rather it's an enum.\n"
   syntax: 
     content: Integer GetType()
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description: ID of owning table (contact, person, project)* this is not the actual tableNumber, rather it's an enum
+      description: ID of owning table (contact, person, project). See <xref href=\"UDefType\" data-throw-if-not-resolved=\"false\"></xref>.
   example: 
   - "\n<pre><code>NSUserDefinedFieldInfo thing;\nInteger type = thing.GetType();</code></pre>\n"
 - uid: CRMScript.NetServer.NSUserDefinedFieldInfo.GetUDefFieldId()
@@ -1467,13 +1467,13 @@ items:
   fullName: CRMScript.NetServer.NSUserDefinedFieldInfo.SetType(Integer)
   type: Method
   summary: 
-  remarks: 
+  remarks: "\nThis is not the actual tableNumber, rather it's an enum.\n"
   syntax: 
     content: Void SetType(Integer type)
     parameters:
     - id: type
       type: CRMScript.Global.Integer
-      description: ID of owning table (contact, person, project)* this is not the actual tableNumber, rather it's an enum See enum type.
+      description: ID of owning table (contact, person, project). See <xref href=\"UDefType\" data-throw-if-not-resolved=\"false\"></xref>.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -1591,12 +1591,6 @@ references:
   name: Bool
   nameWithType: Bool
   fullName: CRMScript.Global.Bool
-- uid: CRMScript.Global.Integer
-  commentId: T:CRMScript.Global.Integer
-  isExternal: true
-  name: Integer
-  nameWithType: Integer
-  fullName: CRMScript.Global.Integer
 - uid: CRMScript.Global.Void
   commentId: T:CRMScript.Global.Void
   isExternal: true
@@ -1615,3 +1609,9 @@ references:
   name: UdefJustification
   nameWithType: UdefJustification
   fullName: CRMScript.NetServer.UdefJustification
+- uid: CRMScript.NetServer.UDefType
+  commentId: T:CRMScript.NetServer.UDefType
+  isExternal: true
+  name: UDefType
+  nameWithType: UDefType
+  fullName: CRMScript.NetServer.UDefType

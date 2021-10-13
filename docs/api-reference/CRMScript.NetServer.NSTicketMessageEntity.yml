@@ -461,15 +461,16 @@ items:
   nameWithType: NSTicketMessageEntity.GetType()
   fullName: CRMScript.NetServer.NSTicketMessageEntity.GetType()
   type: Method
-  summary: "\nThe type of the message (plaintext/html).\n"
-  remarks: "<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Plain</li><li>Enum: 2 = Html</li></ul>"
+  summary: ""
+  remarks: 
   syntax: 
-    content: TicketMessageType GetType()
+    content: Integer GetType()
     parameters: []
     return:
-      type: CRMScript.Native.TicketMessageType
+      type: CRMScript.Global.Integer
+      description: The type of the message (plaintext/html). See <xref href=\"TicketMessageType\" data-throw-if-not-resolved=\"false\"></xref>.
   example: 
-  - "\n<pre><code>NSTicketMessageEntity thing;\nTicketMessageType type = thing.GetType();</code></pre>\n"
+  - "\n<pre><code>NSTicketMessageEntity thing;\nInteger type = thing.GetType();</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketMessageEntity.#ctor
   commentId: M:CRMScript.NetServer.NSTicketMessageEntity.#ctor
   id: '#ctor'
@@ -908,13 +909,16 @@ items:
   nameWithType: NSTicketMessageEntity.SetType()
   fullName: CRMScript.NetServer.NSTicketMessageEntity.SetType()
   type: Method
-  summary: "\nThe type of the message (plaintext/html).\n"
-  remarks: "\nSee enum type.\n"
+  summary: ""
+  remarks: ""
   syntax: 
-    content: Void SetType(TicketMessageType type) 
+    content: Void SetType(Integer type)
     parameters:
+    - id: type
+      type: CRMScript.Global.Integer
+      description: The type of the message (plaintext/html). See <xref href=\"TicketMessageType\" data-throw-if-not-resolved=\"false\"></xref>.
   example: 
-  - "\n<pre><code>NSTicketMessageEntity thing;\nTicketMessageType type;\nthing.SetType(type);</code></pre>\n"
+  - "\n<pre><code>NSTicketMessageEntity thing;\nInteger type;\nthing.SetType(type);</code></pre>\n"
 references:
 - uid: CRMScript.NetServer.NSTicketMessageEntity
   commentId: T:CRMScript.NetServer.NSTicketMessageEntity
@@ -990,12 +994,6 @@ references:
   name: NSTicket
   nameWithType: NSTicket
   fullName: CRMScript.NetServer.NSTicket
-- uid: CRMScript.Native.TicketMessageType
-  commentId: T:CRMScript.Native.TicketMessageType
-  isExternal: true
-  name: TicketMessageType
-  nameWithType: TicketMessageType
-  fullName: CRMScript.Native.TicketMessageType
 - uid: CRMScript.Global.Void
   commentId: T:CRMScript.Global.Void
   isExternal: true
@@ -1014,3 +1012,9 @@ references:
   name: TicketMessageCategory
   nameWithType: TicketMessageCategory
   fullName: CRMScript.NetServer.TicketMessageCategory
+- uid: CRMScript.NetServer.TicketMessageType
+  commentId: T:CRMScript.NetServer.TicketMessageType
+  isExternal: true
+  name: TicketMessageType
+  nameWithType: TicketMessageType
+  fullName: CRMScript.NetServer.TicketMessageType

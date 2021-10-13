@@ -31,10 +31,8 @@ items:
   - CRMScript.NetServer.ConfigType
   - CRMScript.NetServer.ContactAction
   - CRMScript.NetServer.ContactSourceType
-  - CRMScript.NetServer.copyMembers
   - CRMScript.NetServer.countryId
   - CRMScript.NetServer.CredentialControlType
-  - CRMScript.NetServer.dataRightValue
   - CRMScript.NetServer.defaultVideomeetingStatus
   - CRMScript.NetServer.description
   - CRMScript.NetServer.designtype
@@ -49,6 +47,7 @@ items:
   - CRMScript.NetServer.EMailMergeTargetType
   - CRMScript.NetServer.entityId
   - CRMScript.NetServer.erpActorType
+  - CRMScript.NetServer.EMailPriority
   - CRMScript.NetServer.ETableRight
   - CRMScript.NetServer.EventHandlerType
   - CRMScript.NetServer.ExecuteOnEvent
@@ -427,35 +426,34 @@ items:
   - CRMScript.NetServer.NSWebhookResult
   - CRMScript.NetServer.NSWebPanelEntity
   - CRMScript.NetServer.NSWindowPosSize
-  - CRMScript.NetServer.orientation
-  - CRMScript.NetServer.origin
   - CRMScript.NetServer.PrefDescAccessFlags
   - CRMScript.NetServer.PrefDescValueType
   - CRMScript.NetServer.PreferenceLevel
-  - CRMScript.NetServer.priority
   - CRMScript.NetServer.PublishType
   - CRMScript.NetServer.RecurrencePattern
   - CRMScript.NetServer.RecurrenceUpdateMode
   - CRMScript.NetServer.RelationTarget
-  - CRMScript.NetServer.relationToOwner
-  - CRMScript.NetServer.reportCategory
-  - CRMScript.NetServer.reportLayout
+  - CRMScript.NetServer.ReportCategory
+  - CRMScript.NetServer.ReportLayout
+  - CRMScript.NetServer.ReportPaperOrientation
   - CRMScript.NetServer.ReturnType
-  - CRMScript.NetServer.roleType
+  - CRMScript.NetServer.RoleRelationToOwner
+  - CRMScript.NetServer.RoleType
   - CRMScript.NetServer.SaleStatus
-  - CRMScript.NetServer.scope
-  - CRMScript.NetServer.selectionType
-  - CRMScript.NetServer.selectionUnionType
+  - CRMScript.NetServer.SelectionType
+  - CRMScript.NetServer.SelectionUnionType
   - CRMScript.NetServer.SenderMailMode
   - CRMScript.NetServer.ShipmentAddrStatus
   - CRMScript.NetServer.ShipmentStatus
   - CRMScript.NetServer.ShowState
   - CRMScript.NetServer.StringSearchType
+  - CRMScript.NetServer.SystemEventScope
   - CRMScript.NetServer.TaskType
   - CRMScript.NetServer.TemporaryKeyDomain
   - CRMScript.NetServer.TicketBaseStatus
   - CRMScript.NetServer.TicketCategoryClosingStatus
   - CRMScript.NetServer.TicketCategoryDelegateMethod
+  - CRMScript.NetServer.TicketOrigin
   - CRMScript.NetServer.TicketPriorityEscalateEvent
   - CRMScript.NetServer.TicketReadStatus
   - CRMScript.NetServer.TicketSecurityLevel
@@ -1307,12 +1305,12 @@ references:
   name: calReplyStatus
   nameWithType: calReplyStatus
   fullName: CRMScript.NetServer.calReplyStatus
-- uid: CRMScript.NetServer.priority
-  commentId: T:CRMScript.NetServer.priority
+- uid: CRMScript.NetServer.EMailPriority
+  commentId: T:CRMScript.NetServer.EMailPriority
   isExternal: true
-  name: priority
-  nameWithType: priority
-  fullName: CRMScript.NetServer.priority
+  name: EMailPriority
+  nameWithType: EMailPriority
+  fullName: CRMScript.NetServer.EMailPriority
 - uid: CRMScript.NetServer.NSEntityElement
   commentId: T:CRMScript.NetServer.NSEntityElement
   isExternal: true
@@ -2513,30 +2511,30 @@ references:
   name: NSReportEntity
   nameWithType: NSReportEntity
   fullName: CRMScript.NetServer.NSReportEntity
-- uid: CRMScript.NetServer.reportCategory
-  commentId: T:CRMScript.NetServer.reportCategory
+- uid: CRMScript.NetServer.ReportCategory
+  commentId: T:CRMScript.NetServer.ReportCategory
   isExternal: true
-  name: reportCategory
-  nameWithType: reportCategory
-  fullName: CRMScript.NetServer.reportCategory
-- uid: CRMScript.NetServer.reportLayout
-  commentId: T:CRMScript.NetServer.reportLayout
+  name: ReportCategory
+  nameWithType: ReportCategory
+  fullName: CRMScript.NetServer.ReportCategory
+- uid: CRMScript.NetServer.ReportLayout
+  commentId: T:CRMScript.NetServer.ReportLayout
   isExternal: true
-  name: reportLayout
-  nameWithType: reportLayout
-  fullName: CRMScript.NetServer.reportLayout
+  name: ReportLayout
+  nameWithType: ReportLayout
+  fullName: CRMScript.NetServer.ReportLayout
 - uid: CRMScript.NetServer.NSReportLabelLayoutEntity
   commentId: T:CRMScript.NetServer.NSReportLabelLayoutEntity
   isExternal: true
   name: NSReportLabelLayoutEntity
   nameWithType: NSReportLabelLayoutEntity
   fullName: CRMScript.NetServer.NSReportLabelLayoutEntity
-- uid: CRMScript.NetServer.orientation
-  commentId: T:CRMScript.NetServer.orientation
+- uid: CRMScript.NetServer.ReportPaperOrientation
+  commentId: T:CRMScript.NetServer.ReportPaperOrientation
   isExternal: true
-  name: orientation
-  nameWithType: orientation
-  fullName: CRMScript.NetServer.orientation
+  name: ReportPaperOrientation
+  nameWithType: ReportPaperOrientation
+  fullName: CRMScript.NetServer.ReportPaperOrientation
 - uid: CRMScript.NetServer.NSResolvedPerson
   commentId: T:CRMScript.NetServer.NSResolvedPerson
   isExternal: true
@@ -2585,12 +2583,12 @@ references:
   name: NSRoleEntity
   nameWithType: NSRoleEntity
   fullName: CRMScript.NetServer.NSRoleEntity
-- uid: CRMScript.NetServer.roleType
-  commentId: T:CRMScript.NetServer.roleType
+- uid: CRMScript.NetServer.RoleType
+  commentId: T:CRMScript.NetServer.RoleType
   isExternal: true
-  name: roleType
-  nameWithType: roleType
-  fullName: CRMScript.NetServer.roleType
+  name: RoleType
+  nameWithType: RoleType
+  fullName: CRMScript.NetServer.RoleType
 - uid: CRMScript.NetServer.NSSaintAgent
   commentId: T:CRMScript.NetServer.NSSaintAgent
   isExternal: true
@@ -2687,12 +2685,6 @@ references:
   name: NSSelectionAgent
   nameWithType: NSSelectionAgent
   fullName: CRMScript.NetServer.NSSelectionAgent
-- uid: CRMScript.NetServer.copyMembers
-  commentId: T:CRMScript.NetServer.copyMembers
-  isExternal: true
-  name: copyMembers
-  nameWithType: copyMembers
-  fullName: CRMScript.NetServer.copyMembers
 - uid: CRMScript.NetServer.NSSelectionCategory
   commentId: T:CRMScript.NetServer.NSSelectionCategory
   isExternal: true
@@ -2705,18 +2697,18 @@ references:
   name: NSSelectionEntity
   nameWithType: NSSelectionEntity
   fullName: CRMScript.NetServer.NSSelectionEntity
-- uid: CRMScript.NetServer.selectionType
-  commentId: T:CRMScript.NetServer.selectionType
+- uid: CRMScript.NetServer.SelectionType
+  commentId: T:CRMScript.NetServer.SelectionType
   isExternal: true
-  name: selectionType
-  nameWithType: selectionType
-  fullName: CRMScript.NetServer.selectionType
-- uid: CRMScript.NetServer.selectionUnionType
-  commentId: T:CRMScript.NetServer.selectionUnionType
+  name: SelectionType
+  nameWithType: SelectionType
+  fullName: CRMScript.NetServer.SelectionType
+- uid: CRMScript.NetServer.SelectionUnionType
+  commentId: T:CRMScript.NetServer.SelectionUnionType
   isExternal: true
-  name: selectionUnionType
-  nameWithType: selectionUnionType
-  fullName: CRMScript.NetServer.selectionUnionType
+  name: SelectionUnionType
+  nameWithType: SelectionUnionType
+  fullName: CRMScript.NetServer.SelectionUnionType
 - uid: CRMScript.NetServer.NSSelectionForFind
   commentId: T:CRMScript.NetServer.NSSelectionForFind
   isExternal: true
@@ -2861,12 +2853,12 @@ references:
   name: SaleStatus
   nameWithType: SaleStatus
   fullName: CRMScript.NetServer.SaleStatus
-- uid: CRMScript.NetServer.scope
-  commentId: T:CRMScript.NetServer.scope
+- uid: CRMScript.NetServer.SystemEventScope
+  commentId: T:CRMScript.NetServer.SystemEventScope
   isExternal: true
-  name: scope
-  nameWithType: scope
-  fullName: CRMScript.NetServer.scope
+  name: SystemEventScope
+  nameWithType: SystemEventScope
+  fullName: CRMScript.NetServer.SystemEventScope
 - uid: CRMScript.NetServer.NSTableRight
   commentId: T:CRMScript.NetServer.NSTableRight
   isExternal: true
@@ -2939,12 +2931,12 @@ references:
   name: TicketBaseStatus
   nameWithType: TicketBaseStatus
   fullName: CRMScript.NetServer.TicketBaseStatus
-- uid: CRMScript.NetServer.origin
-  commentId: T:CRMScript.NetServer.origin
+- uid: CRMScript.NetServer.TicketOrigin
+  commentId: T:CRMScript.NetServer.TicketOrigin
   isExternal: true
-  name: origin
-  nameWithType: origin
-  fullName: CRMScript.NetServer.origin
+  name: TicketOrigin
+  nameWithType: TicketOrigin
+  fullName: CRMScript.NetServer.TicketOrigin
 - uid: CRMScript.NetServer.TicketReadStatus
   commentId: T:CRMScript.NetServer.TicketReadStatus
   isExternal: true
@@ -3113,18 +3105,12 @@ references:
   name: NSUserAgent
   nameWithType: NSUserAgent
   fullName: CRMScript.NetServer.NSUserAgent
-- uid: CRMScript.NetServer.relationToOwner
-  commentId: T:CRMScript.NetServer.relationToOwner
+- uid: CRMScript.NetServer.RoleRelationToOwner
+  commentId: T:CRMScript.NetServer.RoleRelationToOwner
   isExternal: true
-  name: relationToOwner
-  nameWithType: relationToOwner
-  fullName: CRMScript.NetServer.relationToOwner
-- uid: CRMScript.NetServer.dataRightValue
-  commentId: T:CRMScript.NetServer.dataRightValue
-  isExternal: true
-  name: dataRightValue
-  nameWithType: dataRightValue
-  fullName: CRMScript.NetServer.dataRightValue
+  name: RoleRelationToOwner
+  nameWithType: RoleRelationToOwner
+  fullName: CRMScript.NetServer.RoleRelationToOwner
 - uid: CRMScript.NetServer.externalUserInfoModification
   commentId: T:CRMScript.NetServer.externalUserInfoModification
   isExternal: true

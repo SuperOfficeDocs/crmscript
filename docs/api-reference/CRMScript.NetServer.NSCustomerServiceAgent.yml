@@ -536,16 +536,16 @@ items:
   fullName: CRMScript.NetServer.NSCustomerServiceAgent.GetStatistics()
   type: Method
   summary: "\nGets the calculated results for the required statistics for the Service Status page\n"
-  remarks: "\n<h3>Functions</h3><table><thead><tr><th>Enum</th><th>Function</th></tr></thead><tbody><tr><td>0</td><td>None</td></tr><tr><td>1</td><td>OpenRequestsPerCategory</td></tr><tr><td>2</td><td>OpenRequestsPerTopCategory</td></tr><tr><td>3</td><td>OpenRequestsPerUser</td></tr><tr><td>4</td><td>OpenRequestsPerUserGroup</td></tr><tr><td>5</td><td>OpenRequestsPerPriority</td></tr><tr><td>6</td><td>OpenRequestsPerStatus</td></tr><tr><td>7</td><td>OpenRequestsPerOrigin</td></tr><tr><td>11</td><td>NumberOfCreatedRequestsPerDay</td></tr><tr><td>12</td><td>NumberOfCreatedRequestsPerWeek</td></tr><tr><td>13</td><td>NumberOfCreatedRequestsPerMonth</td></tr><tr><td>21</td><td>UserResponseTimePerDay</td></tr><tr><td>22</td><td>UserReponseTimePerWeek</td></tr><tr><td>23</td><td>UserResponseTimePerMonth</td></tr><tr><td>101</td><td>OwnOpenRequests</td></tr><tr><td>102</td><td>UnassignedRequests</td></tr><tr><td>103</td><td>Hotlist</td></tr><tr><td>111</td><td>StatusScreen</td></tr></tbody></table>\n"
+  remarks: ""
   syntax: 
     content: CRMScript.NetServer.NSStatisticsDataSet[] GetStatistics(Integer[] functions)
     parameters: 
     - id: functions
       type: CRMScript.Global.Integer
-      description: List of functions to calculate and return
+      description: List of functions to calculate and return. See <xref href=\"CRMScript.NetServer.StatusScreenPanelType\" data-throw-if-not-resolved=\"false\"></xref>.
     return:
       type: CRMScript.NetServer.NSStatisticsDataSet[]
-      description: Array of StatisticsDataSet
+      description: Array of StatisticsDataSet.
   example: 
   - "\n<pre><code>NSCustomerServiceAgent agent;\nInteger[] functions;\nNSStatisticsDataSet[] res = agent.GetStatistics(functions);</code></pre>\n"
 - uid: CRMScript.NetServer.NSCustomerServiceAgent.HasChatNotify()
@@ -938,3 +938,9 @@ references:
   name: Void
   nameWithType: Void
   fullName: CRMScript.Global.Void
+- uid: CRMScript.NetServer.StatusScreenPanelType
+  commentId: T:CRMScript.NetServer.StatusScreenPanelType
+  isExternal: true
+  name: StatusScreenPanelType
+  nameWithType: StatusScreenPanelType
+  fullName: CRMScript.NetServer.StatusScreenPanelType

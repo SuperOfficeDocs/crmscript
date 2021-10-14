@@ -772,14 +772,14 @@ items:
   nameWithType: NSQuoteVersion.GetState()
   fullName: CRMScript.NetServer.NSQuoteVersion.GetState()
   type: Method
-  summary: "\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Draft</li><li>Enum: 2 = DraftNotCalculated</li><li>Enum: 3 = DraftNeedsApproval</li><li>Enum: 4 = DraftApproved</li><li>Enum: 5 = DraftNotApproved</li><li>Enum: 6 = Sent</li><li>Enum: 7 = Archived</li><li>Enum: 8 = Lost</li><li>Enum: 9 = Sold</li></ul>\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Integer GetState()
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description: Current state of this quote version.
+      description: Current state of this quote version. See <xref href=\"QuoteVersionState\" data-throw-if-not-resolved=\"false\"></xref>.
   example: 
   - "\n<pre><code>NSQuoteVersion thing;\nInteger state = thing.GetState();</code></pre>\n"
 - uid: CRMScript.NetServer.NSQuoteVersion.GetStatus()
@@ -792,14 +792,14 @@ items:
   nameWithType: NSQuoteVersion.GetStatus()
   fullName: CRMScript.NetServer.NSQuoteVersion.GetStatus()
   type: Method
-  summary: "\n<ul><li>Enum: 0 = Ok</li><li>Enum: 1 = OkWithInfo</li><li>Enum: 2 = Warning</li><li>Enum: 3 = Error</li></ul>\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Integer GetStatus()
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description: If there was a problem with for instance calculation, this field is set to warning or error.
+      description: If there was a problem with for instance calculation, this field is set to warning or error. See <xref href=\"QuoteStatus\" data-throw-if-not-resolved=\"false\"></xref>.
   example: 
   - "\n<pre><code>NSQuoteVersion thing;\nInteger status = thing.GetStatus();</code></pre>\n"
 - uid: CRMScript.NetServer.NSQuoteVersion.GetUpdated()
@@ -1585,7 +1585,7 @@ items:
     parameters:
     - id: state
       type: CRMScript.Global.Integer
-      description: Current state of this quote version. See enum state.
+      description: Current state of this quote version. See <xref href=\"QuoteVersionState\" data-throw-if-not-resolved=\"false\"></xref>.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -1607,7 +1607,7 @@ items:
     parameters:
     - id: status
       type: CRMScript.Global.Integer
-      description: If there was a problem with for instance calculation, this field is set to warning or error. See enum status.
+      description: If there was a problem with for instance calculation, this field is set to warning or error. See <xref href=\"QuoteStatus\" data-throw-if-not-resolved=\"false\"></xref>.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -1719,3 +1719,9 @@ references:
   name: QuoteVersionState
   nameWithType: QuoteVersionState
   fullName: CRMScript.NetServer.QuoteVersionState
+- uid: CRMScript.NetServer.QuoteStatus
+  commentId: T:CRMScript.NetServer.QuoteStatus
+  isExternal: true
+  name: QuoteStatus
+  nameWithType: QuoteStatus
+  fullName: CRMScript.NetServer.QuoteStatus

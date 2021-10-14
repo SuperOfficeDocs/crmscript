@@ -208,14 +208,14 @@ items:
   nameWithType: NSTicketCategoryEntity.GetFlags()
   fullName: CRMScript.NetServer.NSTicketCategoryEntity.GetFlags()
   type: Method
-  summary: "\n<ul><li>Enum: 0 = Unknown</li><li>Enum: 1 = Internal</li><li>Enum: 2 = OnlyLoggedInUsers</li><li>Enum: 4 = DefaultToCategoryMaster</li><li>Enum: 8 = ListInMain</li><li>Enum: 16 = RedelegateNewMsg</li><li>Enum: 32 = DelegateToOurContact</li><li>Enum: 64 = PropagateReplyTemplate</li><li>Enum: 128 = MembersOnly</li><li>Enum: 256 = NotifyMembers</li><li>Enum: 512 = AcceptWhenReplying</li></ul>\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Integer GetFlags()
     parameters: []
     return:
       type: CRMScript.Native.Integer
-      description: A bitmask representing flags for this category.
+      description: A bitmask representing flags for this category. See <xref href=\"CRMScript.NetServer.TicketCategoryFlags\" data-throw-if-not-resolved=\"false\"></xref>.
   example: 
   - "\n<pre><code>NSTicketCategoryEntity thing;\nInteger flags = thing.GetFlags();</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketCategoryEntity.GetFullname()
@@ -248,14 +248,14 @@ items:
   nameWithType: NSTicketCategoryEntity.GetMsgClosingStatus()
   fullName: CRMScript.NetServer.NSTicketCategoryEntity.GetMsgClosingStatus()
   type: Method
-  summary: "enum closingStatus"
+  summary: ""
   remarks: 
   syntax: 
     content: Integer GetMsgClosingStatus()
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description: Should new messages have the 'close request' in this category checked as default, or should the users preferences be selected? See <xref href=\"TicketCategoryClosingStatus\" data-throw-if-not-resolved=\"false\"></xref>
+      description: Should new messages have the 'close request' in this category checked as default, or should the users preferences be selected? See <xref href=\"TicketCategoryClosingStatus\" data-throw-if-not-resolved=\"false\"></xref>.
   example: 
   - "\n<pre><code>NSTicketCategoryEntity thing;\nInteger msgClosingStatus = thing.GetMsgClosingStatus();</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketCategoryEntity.GetName()
@@ -419,7 +419,7 @@ items:
     parameters:
     - id: closingStatus
       type: CRMScript.Global.Integer
-      description: Should new requests have the 'close request' in this category checked as default, or should the users preferences be selected. See enum closingStatus? See <xref href=\"TicketCategoryClosingStatus\" data-throw-if-not-resolved=\"false\"></xref>
+      description: Should new requests have the 'close request' in this category checked as default, or should the users preferences be selected. See <xref href=\"TicketCategoryClosingStatus\" data-throw-if-not-resolved=\"false\"></xref>.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -525,7 +525,7 @@ items:
     parameters:
     - id: flags
       type: CRMScript.Global.Integer
-      description: A bitmask representing flags for this category. See enum
+      description: A bitmask representing flags for this category. See <xref href=\"CRMScript.NetServer.TicketCategoryFlags\" data-throw-if-not-resolved=\"false\"></xref>.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -739,3 +739,9 @@ references:
   name: TicketCategoryDelegateMethod
   nameWithType: TicketCategoryDelegateMethod
   fullName: CRMScript.NetServer.TicketCategoryDelegateMethod
+- uid: CRMScript.NetServer.TicketCategoryFlags
+  commentId: T:SuperOffice.Data.TicketCategoryFlags
+  isExternal: true
+  name: TicketCategoryFlags
+  nameWithType: TicketCategoryFlags
+  fullName: CRMScript.NetServer.TicketCategoryFlags

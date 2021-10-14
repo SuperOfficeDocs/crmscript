@@ -9,9 +9,16 @@ items:
   children:
   - CRMScript.Global.Void.addAction(String,String,Bool)
   - CRMScript.Global.Void.addChatMessage(Integer,String,Integer,String,Integer,String)
-  - CRMScript.Global.Void.addHtmlElement(Integer,String,Integer)
+  - CRMScript.Global.Void.addChatMessage(Integer,String,Integer,String,Integer,String,DateTime)
+  - CRMScript.Global.Void.addHtmlElement(Integer,String,Integer,Map)
+  - CRMScript.Global.Void.addHtmlElement(Integer,String,Integer,Map,Integer)
+  - CRMScript.Global.Void.addHtmlElement(Integer,String,Integer,String)
+  - CRMScript.Global.Void.addHtmlElement(Integer,String,Integer,String,Integer)
   - CRMScript.Global.Void.assert(Bool)
-  - CRMScript.Global.Void.assertEquals(Bool,Bool,String,String,Integer)
+  - CRMScript.Global.Void.assertEquals(Bool,Bool)
+  - CRMScript.Global.Void.assertEquals(Float,Float)
+  - CRMScript.Global.Void.assertEquals(Integer,Integer)
+  - CRMScript.Global.Void.assertEquals(String,String)
   - CRMScript.Global.Void.buildUrl()
   - CRMScript.Global.Void.cgiWasPost()
   - CRMScript.Global.Void.checkReply(String)
@@ -24,6 +31,9 @@ items:
   - CRMScript.Global.Void.decodeDBValue(String)
   - CRMScript.Global.Void.enableDebug(String)
   - CRMScript.Global.Void.encodeBase64(Byte[])
+  - CRMScript.Global.Void.encodeBase64(Byte[],Bool)
+  - CRMScript.Global.Void.encodeBase64(NSStream)
+  - CRMScript.Global.Void.encodeBase64(NSStream,Bool)
   - CRMScript.Global.Void.encodeHMACSHA1(String,String)
   - CRMScript.Global.Void.encodeHMACSHA256(String,String)
   - CRMScript.Global.Void.encodeHMACSHA512(String,String)
@@ -34,7 +44,7 @@ items:
   - CRMScript.Global.Void.executeScript(String,Map)
   - CRMScript.Global.Void.executeSQLQuery(String)
   - CRMScript.Global.Void.exitWithMessage(String)
-  - CRMScript.Global.Void.faqSearch(Integer,Integer,String,Integer)
+  - CRMScript.Global.Void.faqSearch(Integer,Integer,String,Parser,Integer)
   - CRMScript.Global.Void.findReplyTemplateToMerge(Integer)
   - CRMScript.Global.Void.flushCaches()
   - CRMScript.Global.Void.forwardMail(String,String,Integer)
@@ -83,14 +93,17 @@ items:
   - CRMScript.Global.Void.getHtmlElementName(Integer)
   - CRMScript.Global.Void.getHttpHeader(String)
   - CRMScript.Global.Void.getLanguageVariable(String)
+  - CRMScript.Global.Void.getLanguageVariable(String,String)
   - CRMScript.Global.Void.getLocalTimeZone()
   - CRMScript.Global.Void.getMainMenu()
   - CRMScript.Global.Void.getNtUser()
   - CRMScript.Global.Void.getNumHtmlElements()
   - CRMScript.Global.Void.getParser()
   - CRMScript.Global.Void.getParserParameter(String)
+  - CRMScript.Global.Void.getParserParameter(String,Integer)
   - CRMScript.Global.Void.getParserParameterCount(String)
   - CRMScript.Global.Void.getParserVariable(String)
+  - CRMScript.Global.Void.getParserVariable(String,Integer)
   - CRMScript.Global.Void.getParserVariableAsCSV(String,Bool)
   - CRMScript.Global.Void.getParserVariableCount(String)
   - CRMScript.Global.Void.getPID()
@@ -131,12 +144,10 @@ items:
   - CRMScript.Global.Void.invoiceTypesExists()
   - CRMScript.Global.Void.isValidPhoneNumber(String,Bool)
   - CRMScript.Global.Void.langToId(String)
-  - CRMScript.Global.Void.License(String,String)
   - CRMScript.Global.Void.log(String)
   - CRMScript.Global.Void.logMessage(String)
-  - CRMScript.Global.Void.MacroParameter(String,String,String,String,Bool,String)
-  - CRMScript.Global.Void.MacroReturnValue(String,String)
   - CRMScript.Global.Void.makePassword(Integer)
+  - CRMScript.Global.Void.makePassword(Integer,String)
   - CRMScript.Global.Void.mapValue(String)
   - CRMScript.Global.Void.modulo(Integer,Integer)
   - CRMScript.Global.Void.parseJSON(String)
@@ -144,7 +155,8 @@ items:
   - CRMScript.Global.Void.parseXML(String)
   - CRMScript.Global.Void.pow()
   - CRMScript.Global.Void.print(String)
-  - CRMScript.Global.Void.printBinary()
+  - CRMScript.Global.Void.printBinary(Byte[])
+  - CRMScript.Global.Void.printBinary(NSStream)
   - CRMScript.Global.Void.printDebug(String)
   - CRMScript.Global.Void.printLine(String)
   - CRMScript.Global.Void.rand(Integer,Integer)
@@ -152,6 +164,7 @@ items:
   - CRMScript.Global.Void.removeHtmlElement(Integer)
   - CRMScript.Global.Void.resetChat(Integer)
   - CRMScript.Global.Void.runProgram(String)
+  - CRMScript.Global.Void.runProgram(String,String)
   - CRMScript.Global.Void.saveAllCgiAttachments(String)
   - CRMScript.Global.Void.saveCgiAttachment(String)
   - CRMScript.Global.Void.setChatStatus(Integer,Integer)
@@ -165,7 +178,7 @@ items:
   - CRMScript.Global.Void.setPageRefresh(Integer)
   - CRMScript.Global.Void.setPageTitle(String)
   - CRMScript.Global.Void.setParserVariable(String,String)
-  - CRMScript.Global.Void.setSessionVariable(String)
+  - CRMScript.Global.Void.setSessionVariable(String,String)
   - CRMScript.Global.Void.setUserIsTyping(Integer,Bool)
   - CRMScript.Global.Void.setVariable(String,String)
   - CRMScript.Global.Void.simpleTwoWay(Byte[])
@@ -186,20 +199,20 @@ items:
   nameWithType: Void.addAction(String,String,Bool)
   fullName: CRMScript.Global.Void.addAction(String,String,Bool)
   type: Method
-  summary: "\nAdds an action to the Screen definition associated with this script (i.e. when the script is the load script for a Screen). An action is essentially a connection between a button with a given name and a script. When a button in the screen is pressed, the list of actions is checked, and the action with the matching button name (e.g. &quot;ok&quot;, &quot;cancel&quot;, &quot;addSomething&quot;) will be found and the script will be executed.\n"
-  remarks: 
+  summary: "\nAdds an action to the Screen definition associated with this script (when the script is the load script for a Screen). An action is essentially a connection between a button with a given name and a script. When a button in the screen is pressed, the list of actions is checked, and the action with the matching button name (e.g. &quot;ok&quot;, &quot;cancel&quot;, &quot;addSomething&quot;) will be found and the script will be executed.\n"
+  remarks: "\nNormally, doCheck should be True for buttons that submit the form, and False for buttons that add lines to grids, and so on.\n"
   syntax: 
     content: Void addAction(String button, String script, Bool doCheck)
     parameters:
     - id: button
       type: CRMScript.Global.String
-      description: 
+      description: The name of the associated button, such as <strong>OK</strong>.
     - id: script
       type: CRMScript.Global.String
-      description: 
+      description: The script code to execute for this action.
     - id: doCheck
       type: CRMScript.Global.Bool
-      description: 
+      description: If True, the contents of all input elements will be checked for validity before the action is executed.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -214,9 +227,9 @@ items:
   fullName: CRMScript.Global.Void.addChatMessage(Integer,String,Integer,String,Integer,String)
   type: Method
   summary: "\nAdds a message to a chat session.\n"
-  remarks: "\nYou can optionally pass a<code>DateTime</code>to set when the message will show up. This variant of<code>addChatMessage</code>is especially used for ChatBot-integrations.\n"
+  remarks: "\nYou can optionally pass a <code>DateTime</code> to set when the message will show up.\n"
   syntax: 
-    content: Integer addChatMessage()
+    content: Integer addChatMessage(Integer sessionId, String message, Integer type, String author, Integer specialType, String specialParams)
     parameters:
     - id: sessionId
       type: CRMScript.Global.Integer
@@ -232,7 +245,7 @@ items:
       description: The string used as the author of the message. Placed above the message bubble.
     - id: specialType
       type: CRMScript.Global.Integer
-      description: Mostly internally used. 0 = no special type; 16 =  the message is from a chatbot
+      description: Mostly internally used. 0 = no special type; 16the message is from a chatbot
     - id: specialParams
       type: CRMScript.Global.String
       description: Various params based on the specialType. Specifically, for specialType=16, you can add showAt=&lt;datetime&gt; to specify when the message should show up to create a delay before the bot message is shown.
@@ -240,20 +253,60 @@ items:
       type: CRMScript.Global.Integer
       description:
   example: 
-- uid: CRMScript.Global.Void.addHtmlElement(Integer,String,Integer)
-  commentId: M:CRMScript.Global.Void.addHtmlElement(Integer,String,Integer)
-  id: 'addHtmlElement(Integer,String,Integer)'
+- uid: CRMScript.Global.Void.addChatMessage(Integer,String,Integer,String,Integer,String,DateTime)
+  commentId: M:CRMScript.Global.Void.addChatMessage(Integer,String,Integer,String,Integer,String,DateTime)
+  id: 'addChatMessage(Integer,String,Integer,String,Integer,String,DateTime)'
+  so.intellisense: Void.addChatMessage
+  langs:
+  - crmscript
+  name: 'addChatMessage(Integer,String,Integer,String,Integer,String,DateTime)'
+  nameWithType: Void.addChatMessage(Integer,String,Integer,String,Integer,String,DateTime)
+  fullName: CRMScript.Global.Void.addChatMessage(Integer,String,Integer,String,Integer,String,DateTime)
+  type: Method
+  summary: "\nAdds a message to a chat session and sets when the message will show up.\n"
+  remarks: "\nThis variant of addChatMessage() is especially used for ChatBot-integrations.\n"
+  syntax: 
+    content: Integer addChatMessage(Integer sessionId, String message, Integer type, String author, Integer specialType, String specialParams, DateTime whenPosted)
+    parameters:
+    - id: sessionId
+      type: CRMScript.Global.Integer
+      description: The ID of the chat session.
+    - id: message
+      type: CRMScript.Global.String
+      description: The text of the message you want to add in HTML format. A few tags, such as &lt;b&gt;, &lt;i&gt;, &lt;ul&gt; are allowed. Other tags and attributes will be removed.
+    - id: type
+      type: CRMScript.Global.Integer
+      description: 1 to indicate the message is to the customer.
+    - id: author
+      type: CRMScript.Global.String
+      description: The string used as the author of the message. Placed above the message bubble.
+    - id: specialType
+      type: CRMScript.Global.Integer
+      description: Mostly internally used. 0 = no special type; 16 = the message is from a chatbot
+    - id: specialParams
+      type: CRMScript.Global.String
+      description: Various params based on the specialType. Specifically, for specialType=16, you can add showAt=&lt;datetime&gt; to specify when the message should show up to create a delay before the bot message is shown.
+    - id: whenPosted
+      type: CRMScript.Global.DateTime
+      description: If not null, this is when the message will show up in the clients and also the sorting field for messages.
+    return:
+      type: CRMScript.Global.Integer
+      description: 
+  example: 
+- uid: CRMScript.Global.Void.addHtmlElement(Integer,String,Integer,Map)
+  commentId: M:CRMScript.Global.Void.addHtmlElement(Integer,String,Integer,Map)
+  id: 'addHtmlElement(Integer,String,Integer,Map)'
   so.intellisense: Void.addHtmlElement
   langs:
   - crmscript
-  name: 'addHtmlElement(Integer,String,Integer)'
-  nameWithType: Void.addHtmlElement(Integer,String,Integer)
-  fullName: CRMScript.Global.Void.addHtmlElement(Integer,String,Integer)
+  name: 'addHtmlElement(Integer,String,Integer,Map)'
+  nameWithType: Void.addHtmlElement(Integer,String,Integer,Map)
+  fullName: CRMScript.Global.Void.addHtmlElement(Integer,String,Integer,Map)
   type: Method
-  summary: "\nAdds an HTML element to the associated screen when this script is executed as the load script for a screen.<p></p>\nThe configuration for the HTML element can be provided as a String or a Map.\n"
+  summary: "\nAdds an HTML element to the associated screen when this script is executed as the load script for a screen.\n"
   remarks: "\nYou can optionally provide the zero-based position of the element in the list of elements for the screen.\n"
   syntax: 
-    content: HtmlElement addHtmlElement()
+    content: HtmlElement addHtmlElement(Integer id, String name, Integer type, Map config)
     parameters:
     - id: id
       type: CRMScript.Global.Integer
@@ -264,9 +317,111 @@ items:
     - id: type
       type: CRMScript.Global.Integer
       description: The type of this element. Types are documented under bLogic.
+    - id: config
+      type: CRMScript.Global.Map
+      description: The map containing the configuration for the HTML element.
     return:
       type: CRMScript.Native.HtmlElement
-      description: the element that was added
+      description: The element that was added
+  example: 
+- uid: CRMScript.Global.Void.addHtmlElement(Integer,String,Integer,Map,Integer)
+  commentId: M:CRMScript.Global.Void.addHtmlElement(Integer,String,Integer,Map,Integer)
+  id: 'addHtmlElement(Integer,String,Integer,Map,Integer)'
+  so.intellisense: Void.addHtmlElement
+  langs:
+  - crmscript
+  name: 'addHtmlElement(Integer,String,Integer,Map,Integer)'
+  nameWithType: Void.addHtmlElement(Integer,String,Integer,Map,Integer)
+  fullName: CRMScript.Global.Void.addHtmlElement(Integer,String,Integer,Map,Integer)
+  type: Method
+  summary: "\nAdds an HTML element to the associated screen with a zero-based position when this script is executed as the load script for a screen.\n"
+  remarks: ""
+  syntax: 
+    content: HtmlElement addHtmlElement(Integer id, String name, Integer type, Map config, Integer position)
+    parameters:
+    - id: id
+      type: CRMScript.Global.Integer
+      description: The ID of this HTML element. Normally not relevant.
+    - id: name
+      type: CRMScript.Global.String
+      description: The unique name of this HTML element. Used for accessing it later.
+    - id: type
+      type: CRMScript.Global.Integer
+      description: The type of this element. Types are documented under bLogic.
+    - id: config
+      type: CRMScript.Global.Map
+      description: The map containing the configuration for the HTML element.
+    - id: position
+      type: CRMScript.Global.Integer
+      description: The zero-based position of the element in the list of elements for the screen.
+    return:
+      type: CRMScript.Native.HtmlElement
+      description: The element that was added
+  example: 
+- uid: CRMScript.Global.Void.addHtmlElement(Integer,String,Integer,String)
+  commentId: M:CRMScript.Global.Void.addHtmlElement(Integer,String,Integer,String)
+  id: 'addHtmlElement(Integer,String,Integer,String)'
+  so.intellisense: Void.addHtmlElement
+  langs:
+  - crmscript
+  name: 'addHtmlElement(Integer,String,Integer,String)'
+  nameWithType: Void.addHtmlElement(Integer,String,Integer,String)
+  fullName: CRMScript.Global.Void.addHtmlElement(Integer,String,Integer,String)
+  type: Method
+  summary: "\nAdds an HTML element to the associated screen when this script is executed as the load script for a screen.\n"
+  remarks: "\nYou can optionally provide the zero-based position of the element in the list of elements for the screen.\n"
+  syntax: 
+    content: HtmlElement addHtmlElement(Integer id, String name, Integer type, String config)
+    parameters:
+    - id: id
+      type: CRMScript.Global.Integer
+      description: The ID of this HTML element. Normally not relevant.
+    - id: name
+      type: CRMScript.Global.String
+      description: The unique name of this HTML element. Used for accessing it later.
+    - id: type
+      type: CRMScript.Global.Integer
+      description: The type of this element. Types are documented under bLogic.
+    - id: config
+      type: CRMScript.Global.String
+      description: The configuration string for the HTML element. Line-based, same as configuration text for elements in Screen definition.
+    return:
+      type: CRMScript.Native.HtmlElement
+      description: The element that was added
+  example: 
+- uid: CRMScript.Global.Void.addHtmlElement(Integer,String,Integer,String,Integer)
+  commentId: M:CRMScript.Global.Void.addHtmlElement(Integer,String,Integer,String,Integer)
+  id: 'addHtmlElement(Integer,String,Integer,String,Integer)'
+  so.intellisense: Void.addHtmlElement
+  langs:
+  - crmscript
+  name: 'addHtmlElement(Integer,String,Integer,String,Integer)'
+  nameWithType: Void.addHtmlElement(Integer,String,Integer,String,Integer)
+  fullName: CRMScript.Global.Void.addHtmlElement(Integer,String,Integer,String,Integer)
+  type: Method
+  summary: "\nAdds an HTML element to the associated screen with a zero-based position when this script is executed as the load script for a screen.\n"
+  remarks: ""
+  syntax: 
+    content: HtmlElement addHtmlElement(Integer id, String name, Integer type, String config, Integer position)
+    parameters:
+    - id: id
+      type: CRMScript.Global.Integer
+      description: The ID of this HTML element. Normally not relevant.
+    - id: name
+      type: CRMScript.Global.String
+      description: The unique name of this HTML element. Used for accessing it later.
+    - id: type
+      type: CRMScript.Global.Integer
+      description: The type of this element. Types are documented under bLogic.
+    - id: config
+      type: CRMScript.Global.String
+      description: The configuration string for the HTML element. Line-based, same as configuration text for elements in Screen definition.
+    - id: position
+      type: CRMScript.Global.Integer
+      description: The zero-based position of the element in the list of elements for the screen.
+    return:
+      type: CRMScript.Native.HtmlElement
+      description: The element that was added
   example: 
 - uid: CRMScript.Global.Void.assert(Bool)
   commentId: M:CRMScript.Global.Void.assert(Bool)
@@ -289,36 +444,99 @@ items:
     return:
       type: CRMScript.Global.Void
   example: 
-- uid: CRMScript.Global.Void.assertEquals(Bool,Bool,String,String,Integer)
-  commentId: M:CRMScript.Global.Void.assertEquals(Bool,Bool,String,String,Integer)
-  id: 'assertEquals(Bool,Bool,String,String,Integer)'
+- uid: CRMScript.Global.Void.assertEquals(Bool,Bool)
+  commentId: M:CRMScript.Global.Void.assertEquals(Bool,Bool)
+  id: 'assertEquals(Bool,Bool)'
   so.intellisense: Void.assertEquals
   langs:
   - crmscript
-  name: 'assertEquals(Bool,Bool,String,String,Integer)'
-  nameWithType: Void.assertEquals(Bool,Bool,String,String,Integer)
-  fullName: CRMScript.Global.Void.assertEquals(Bool,Bool,String,String,Integer)
+  name: 'assertEquals(Bool,Bool)'
+  nameWithType: Void.assertEquals(Bool,Bool)
+  fullName: CRMScript.Global.Void.assertEquals(Bool,Bool)
   type: Method
-  summary: "\nThrows an AssertException if the 2 parameters are not equal.Specifically:<p></p>\n<ul><li>if bool1!=bool2</li><li>if float1!=float2</li><li>if string1!=string2</li><li>if integer1!=integer2</li></ul>The exception contains the line number where the assert occurred.\n"
+  summary: "\nThrows an AssertException if the two parameters are not equal. Specifically: if bool1!=bool2. The exception contains the line number where the assert occurred.\n"
   remarks: "\nUsed primarily with unit testing.\n"
   syntax: 
-    content: Void assertEquals()
+    content: Void assertEquals(Bool bool1, Bool bool2)
     parameters:
     - id: bool1
       type: CRMScript.Global.Bool
-      description: The first bool to test
+      description: The first value to test
     - id: bool2
       type: CRMScript.Global.Bool
-      description: The second bool to test
-    - id: string1
-      type: CRMScript.Global.String
-      description: The first string to test
-    - id: string2
-      type: CRMScript.Global.String
-      description: The second string to test
+      description: The second value to test
+    return:
+      type: CRMScript.Global.Void
+  example: 
+- uid: CRMScript.Global.Void.assertEquals(Float,Float)
+  commentId: M:CRMScript.Global.Void.assertEquals(Float,Float)
+  id: 'assertEquals(Float,Float)'
+  so.intellisense: Void.assertEquals
+  langs:
+  - crmscript
+  name: 'assertEquals(Float,Float)'
+  nameWithType: Void.assertEquals(Float,Float)
+  fullName: CRMScript.Global.Void.assertEquals(Float,Float)
+  type: Method
+  summary: "\nThrows an AssertException if the two parameters are not equal. Specifically: if float1!=float2. The exception contains the line number where the assert occurred.\n"
+  remarks: "\nUsed primarily with unit testing.\n"
+  syntax: 
+    content: Void assertEquals(Float float1, Float float2)
+    parameters:
+    - id: float1
+      type: CRMScript.Global.Float
+      description: The first value to test
+    - id: float2
+      type: CRMScript.Global.Float
+      description: The second value to test
+    return:
+      type: CRMScript.Global.Void
+  example: 
+- uid: CRMScript.Global.Void.assertEquals(Integer,Integer)
+  commentId: M:CRMScript.Global.Void.assertEquals(Integer,Integer)
+  id: 'assertEquals(Integer,Integer)'
+  so.intellisense: Void.assertEquals
+  langs:
+  - crmscript
+  name: 'assertEquals(Integer,Integer)'
+  nameWithType: Void.assertEquals(Integer,Integer)
+  fullName: CRMScript.Global.Void.assertEquals(Integer,Integer)
+  type: Method
+  summary: "\nThrows an AssertException if the two parameters are not equal. Specifically: if integer1!=integer2. The exception contains the line number where the assert occurred.\n"
+  remarks: "\nUsed primarily with unit testing.\n"
+  syntax: 
+    content: Void assertEquals(Integer integer1, Integer integer2)
+    parameters:
     - id: integer1
       type: CRMScript.Global.Integer
-      description: The first integer to test
+      description: The first value to test
+    - id: integer2
+      type: CRMScript.Global.Integer
+      description: The second value to test
+    return:
+      type: CRMScript.Global.Void
+  example: 
+- uid: CRMScript.Global.Void.assertEquals(String,String)
+  commentId: M:CRMScript.Global.Void.assertEquals(String,String)
+  id: 'assertEquals(String,String)'
+  so.intellisense: Void.assertEquals
+  langs:
+  - crmscript
+  name: 'assertEquals(String,String)'
+  nameWithType: Void.assertEquals(String,String)
+  fullName: CRMScript.Global.Void.assertEquals(String,String)
+  type: Method
+  summary: "\nThrows an AssertException if the two parameters are not equal. Specifically: if string1!=string2. The exception contains the line number where the assert occurred.\n"
+  remarks: "\nUsed primarily with unit testing.\n"
+  syntax: 
+    content: Void assertEquals(String string1, String string2)
+    parameters:
+    - id: string1
+      type: CRMScript.Global.String
+      description: The first value to test
+    - id: string2
+      type: CRMScript.Global.String
+      description: The second value to test
     return:
       type: CRMScript.Global.Void
   example: 
@@ -332,14 +550,14 @@ items:
   nameWithType: Void.buildUrl()
   fullName: CRMScript.Global.Void.buildUrl()
   type: Method
-  summary: ""
+  summary: "\nReturns all POST and GET variables for the current URL.\n"
   remarks: 
   syntax: 
     content: String buildUrl()
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: All POST and GET variables for the current URL.
   example: 
 - uid: CRMScript.Global.Void.cgiWasPost()
   commentId: M:CRMScript.Global.Void.cgiWasPost()
@@ -351,8 +569,8 @@ items:
   nameWithType: Void.cgiWasPost()
   fullName: CRMScript.Global.Void.cgiWasPost()
   type: Method
-  summary: ""
-  remarks: 
+  summary: "\nChecks if the CGI HTTP request was of type POST.\n"
+  remarks: "\nService uses only GET and POST. POST is used when submitting most forms, a GET request is usually someone clicking a link, first time entering the bLogic screen.\n"
   syntax: 
     content: Bool cgiWasPost()
     parameters: []
@@ -370,17 +588,17 @@ items:
   nameWithType: Void.checkReply(String)
   fullName: CRMScript.Global.Void.checkReply(String)
   type: Method
-  summary: "\nReturns true if it is ok to send a receipt to the indicated email address, false otherwise.\n"
-  remarks: 
+  summary: "\nChecks if it is ok to send a receipt to the indicated email address.\n"
+  remarks: "\nEvery time this method is called, it records that an email has been sent to the email address. If this is done too often within a specified time interval (specified in config table), you should not send an email to the email address to prevent swamping.\n"
   syntax: 
     content: Bool checkReply(String email)
     parameters:
     - id: email
       type: CRMScript.Global.String
-      description: 
+      description: Address to check
     return:
       type: CRMScript.Global.Bool
-      description:
+      description: True if it is ok to send a receipt to the indicated email address; otherwise, false.
   example: 
 - uid: CRMScript.Global.Void.combineHtmlStrings(Vector)
   commentId: M:CRMScript.Global.Void.combineHtmlStrings(Vector)
@@ -399,10 +617,10 @@ items:
     parameters:
     - id: htmlStrings
       type: CRMScript.Global.Vector
-      description: 
+      description: Multiple strings, each containing an HTML document
     return:
       type: CRMScript.Global.String
-      description:
+      description: HTML string
   example: 
 - uid: CRMScript.Global.Void.convertStatus(Integer)
   commentId: M:CRMScript.Global.Void.convertStatus(Integer)
@@ -414,17 +632,17 @@ items:
   nameWithType: Void.convertStatus(Integer)
   fullName: CRMScript.Global.Void.convertStatus(Integer)
   type: Method
-  summary: ""
-  remarks: 
+  summary: "\nConverts a status given by its integer identifier to its string representation.\n"
+  remarks: "\nThe method is language-dependent.\n"
   syntax: 
     content: String convertStatus(Integer status)
     parameters:
     - id: status
       type: CRMScript.Global.Integer
-      description: 
+      description: The status to convert.
     return:
       type: CRMScript.Global.String
-      description:
+      description: The status as a string
   example: 
 - uid: CRMScript.Global.Void.copyCRMDocumentToAttachment(Integer)
   commentId: M:CRMScript.Global.Void.copyCRMDocumentToAttachment(Integer)
@@ -436,17 +654,17 @@ items:
   nameWithType: Void.copyCRMDocumentToAttachment(Integer)
   fullName: CRMScript.Global.Void.copyCRMDocumentToAttachment(Integer)
   type: Method
-  summary: "\nCopies the content of a CRM Document, given the ID, to a new Service Attachment. There is no sync between these two, so only a copy at the point of time is made.\n"
-  remarks: 
+  summary: "\nCopies the content of a CRM Document, given the ID, to a new Service attachment.\n"
+  remarks: "\nThere is no sync between these two, so only a copy at the point of time is made.\n"
   syntax: 
     content: Integer copyCRMDocumentToAttachment(Integer crmDocId)
     parameters:
     - id: crmDocId
       type: CRMScript.Global.Integer
-      description: 
+      description: The ID of the CRM Document to copy.
     return:
       type: CRMScript.Global.Integer
-      description:
+      description: The ID of the newly created Service attachment.
   example: 
 - uid: CRMScript.Global.Void.debugWait(String)
   commentId: M:CRMScript.Global.Void.debugWait(String)
@@ -458,14 +676,14 @@ items:
   nameWithType: Void.debugWait(String)
   fullName: CRMScript.Global.Void.debugWait(String)
   type: Method
-  summary: "\nPauses the script if it is in debug mode (see enableDebug). The info string will be stored in the database entry for the current debug session so that it can be viewed in the debugger.\n"
+  summary: "\nPauses the script if it is in debug mode (see enableDebug). Stores the info string in the database entry for the current debug session so that it can be viewed in the debugger.\n"
   remarks: 
   syntax: 
-    content: debugWait(String info)
+    content: Void debugWait(String info)
     parameters:
     - id: info
       type: CRMScript.Global.String
-      description: 
+      description: String to display in the debugger.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -479,16 +697,17 @@ items:
   nameWithType: Void.decodeBase64(String)
   fullName: CRMScript.Global.Void.decodeBase64(String)
   type: Method
-  summary: "\nDecodes a base64 encoded string into a byte array.\n"
+  summary: "\nDecodes a base64-encoded string into a byte array.\n"
   remarks: 
   syntax: 
     content: Byte[] decodeBase64(String base64)
     parameters:
     - id: base64
       type: CRMScript.Global.String
-      description: 
+      description: A base64 encoded string
     return:
       type: CRMScript.Global.Byte[]
+      description: Decoded byte array.
   example: 
 - uid: CRMScript.Global.Void.decodeBase64AsStream(String)
   commentId: M:CRMScript.Global.Void.decodeBase64AsStream(String)
@@ -500,16 +719,17 @@ items:
   nameWithType: Void.decodeBase64AsStream(String)
   fullName: CRMScript.Global.Void.decodeBase64AsStream(String)
   type: Method
-  summary: "\nDecodes a base64 encoded string into an NSStream.\n"
+  summary: "\nDecodes a base64-encoded string into an NSStream.\n"
   remarks: 
   syntax: 
     content: NSStream decodeBase64AsStream(String base64)
     parameters:
     - id: base64
       type: CRMScript.Global.String
-      description: 
+      description: A base64-encoded string
     return:
       type: CRMScript.NetServer.NSStream
+      description:
   example: 
 - uid: CRMScript.Global.Void.decodeDBValue(String)
   commentId: M:CRMScript.Global.Void.decodeDBValue(String)
@@ -521,14 +741,14 @@ items:
   nameWithType: Void.decodeDBValue(String)
   fullName: CRMScript.Global.Void.decodeDBValue(String)
   type: Method
-  summary: ""
-  remarks: 
+  summary: "\nDecodes the value returned by for example NetServer archives, i.e [I:23], and returns the value as a string.\n"
+  remarks: "\nYou must convert it into the preferred type if used as anything else than a string.\n"
   syntax: 
     content: String decodeDBValue(String dbValue)
     parameters:
     - id: dbValue
       type: CRMScript.Global.String
-      description: 
+      description: The value, including the prefix, that is returned by NetServer archives.
     return:
       type: CRMScript.Global.String
       description:
@@ -543,14 +763,14 @@ items:
   nameWithType: Void.enableDebug(String)
   fullName: CRMScript.Global.Void.enableDebug(String)
   type: Method
-  summary: "\nEnables debugging for the current script, with the given debugId. If the executing environment contains the same debugId, then this script will enter debug mode. To set the debugId in a browser, use the &quot;?action=debug&quot; parameter. This functionality is designed to allow for debugging scripts which are operative. I.e. it is possible to debug a script, while it will continue to run as normal for other users.\n"
-  remarks: 
+  summary: "\nEnables debugging for the current script, with the given ID. If the executing environment contains the same debugId, then this script will enter debug mode.\n"
+  remarks: "\nTo set the debugId in a browser, use the &quot;?action=debug&quot; parameter. It is possible to debug a script, while it will continue to run as normal for other users.\n"
   syntax: 
-    content: enableDebug(String debugId)
+    content: Void enableDebug(String debugId)
     parameters:
     - id: debugId
       type: CRMScript.Global.String
-      description: 
+      description: A string that will be compared with the debugId in the executing environment.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -564,14 +784,86 @@ items:
   nameWithType: Void.encodeBase64(Byte[])
   fullName: CRMScript.Global.Void.encodeBase64(Byte[])
   type: Method
-  summary: "\nEncodes bytes to a base 64 stringEncode bytes to a base 64 string.\n"
-  remarks: "\nYou can pass the data to encode as either Byte[] or NSStream. You can optionally pass a<code>Bool</code>to control if the encoded data should be wrapped with new lines or not.\n"
+  summary: "\nEncodes bytes to a base 64 string.\n"
+  remarks: "\nYou can optionally pass a Bool to control if the encoded data should be wrapped with new lines or not.\n"
   syntax: 
-    content: String encodeBase64()
+    content: String encodeBase64(Byte[] data)
     parameters:
     - id: data
       type: CRMScript.Global.Byte[]
       description: Data to encode
+    return:
+      type: CRMScript.Global.String
+      description: A Base64-encoded string.
+  example: 
+- uid: CRMScript.Global.Void.encodeBase64(Byte[],Bool)
+  commentId: M:CRMScript.Global.Void.encodeBase64(Byte[],Bool)
+  id: 'encodeBase64(Byte[],Bool)'
+  so.intellisense: Void.encodeBase64
+  langs:
+  - crmscript
+  name: 'encodeBase64(Byte[],Bool)'
+  nameWithType: Void.encodeBase64(Byte[],Bool)
+  fullName: CRMScript.Global.Void.encodeBase64(Byte[],Bool)
+  type: Method
+  summary: "\nEncodes bytes to a base 64 string specifying if the encoded data should be wrapped with new lines or not.\n"
+  remarks: ""
+  syntax: 
+    content: String encodeBase64(Byte[] data, bool wrapLines)
+    parameters:
+    - id: data
+      type: CRMScript.Global.Byte[]
+      description: Data to encode
+    - id: wrapLines
+      type: CRMScript.Global.Bool
+      description: Controls if the encoded data should be wrapped with new lines.
+    return:
+      type: CRMScript.Global.String
+      description: A Base64-encoded string.
+  example: 
+- uid: CRMScript.Global.Void.encodeBase64(NSStream)
+  commentId: M:CRMScript.Global.Void.encodeBase64(NSStream)
+  id: 'encodeBase64(NSStream)'
+  so.intellisense: Void.encodeBase64
+  langs:
+  - crmscript
+  name: 'encodeBase64(NSStream)'
+  nameWithType: Void.encodeBase64(NSStream)
+  fullName: CRMScript.Global.Void.encodeBase64(NSStream)
+  type: Method
+  summary: "\nEncodes bytes to a base 64 string.\n"
+  remarks: "\nYou can optionally pass a Bool to control if the encoded data should be wrapped with new lines or not.\n"
+  syntax: 
+    content: String encodeBase64(NSStream data)
+    parameters:
+    - id: data
+      type: CRMScript.NetServer.NSStream
+      description: Data to encode
+    return:
+      type: CRMScript.Global.String
+      description: A Base64-encoded string.
+  example: 
+- uid: CRMScript.Global.Void.encodeBase64(NSStream,Bool)
+  commentId: M:CRMScript.Global.Void.encodeBase64(NSStream,Bool)
+  id: 'encodeBase64(NSStream,Bool)'
+  so.intellisense: Void.encodeBase64
+  langs:
+  - crmscript
+  name: 'encodeBase64(NSStream,Bool)'
+  nameWithType: Void.encodeBase64(NSStream,Bool)
+  fullName: CRMScript.Global.Void.encodeBase64(NSStream,Bool)
+  type: Method
+  summary: "\nEncodes bytes to a base 64 string specifying if the encoded data should be wrapped with new lines or not.\n"
+  remarks: ""
+  syntax: 
+    content: String encodeBase64(NSStream data, bool wrapLines)
+    parameters:
+    - id: data
+      type: CRMScript.NetServer.NSStream
+      description: Data to encode
+    - id: wrapLines
+      type: CRMScript.Global.Bool
+      description: Controls if the encoded data should be wrapped with new lines.
     return:
       type: CRMScript.Global.String
       description: A Base64-encoded string.
@@ -586,20 +878,20 @@ items:
   nameWithType: Void.encodeHMACSHA1(String,String)
   fullName: CRMScript.Global.Void.encodeHMACSHA1(String,String)
   type: Method
-  summary: "\nGenerates and returns a hash from a specified key-value pair using the HMAC SHA1 encoding algorithm. This can be used to ensure data integrity. (The hash cannot be decrypted back)\n"
-  remarks: 
+  summary: "\nGenerates and returns a hash from a specified key-value pair using the HMAC SHA1 encoding algorithm.\n"
+  remarks: "\nThis can be used to ensure data integrity. The hash cannot be decrypted back.\n"
   syntax: 
     content: String encodeHMACSHA1(String key, String value)
     parameters:
     - id: key
       type: CRMScript.Global.String
-      description: 
+      description: The key used to creating the hash
     - id: value
       type: CRMScript.Global.String
-      description: 
+      description: The value to be hashed
     return:
       type: CRMScript.Global.String
-      description:
+      description: The generated hash
   example: 
 - uid: CRMScript.Global.Void.encodeHMACSHA256(String,String)
   commentId: M:CRMScript.Global.Void.encodeHMACSHA256(String,String)
@@ -611,43 +903,46 @@ items:
   nameWithType: Void.encodeHMACSHA256(String,String)
   fullName: CRMScript.Global.Void.encodeHMACSHA256(String,String)
   type: Method
-  summary: ""
-  remarks: 
+  summary: "\nGenerates and returns a hash from a specified key-value pair using the HMAC SHA256 encoding algorithm.\n"
+  remarks: "\nThis can be used to ensure data integrity. The hash cannot be decrypted back.\n"
   syntax: 
     content: Byte[] encodeHMACSHA256(String key, String value)
     parameters:
     - id: key
       type: CRMScript.Global.String
-      description: 
+      description: The key used to creating the hash
     - id: value
       type: CRMScript.Global.String
-      description: 
+      description: The value to be hashed
     return:
       type: CRMScript.Global.Byte[]
+      description: The generated hash
   example: 
 - uid: CRMScript.Global.Void.encodeHMACSHA512(String,String)
   commentId: M:CRMScript.Global.Void.encodeHMACSHA512(String,String)
   id: 'encodeHMACSHA512(String,String)'
   so.intellisense: Void.encodeHMACSHA512
+  so.version: 9.2 R11
   langs:
   - crmscript
   name: 'encodeHMACSHA512(String,String)'
   nameWithType: Void.encodeHMACSHA512(String,String)
   fullName: CRMScript.Global.Void.encodeHMACSHA512(String,String)
   type: Method
-  summary: ""
-  remarks: 
+  summary: "\nGenerates and returns a hash from a specified key-value pair using the HMAC SHA512 encoding algorithm.\n"
+  remarks: "\nThis can be used to ensure data integrity. The hash cannot be decrypted back.\n"
   syntax: 
     content: Byte[] encodeHMACSHA512(String key, String value)
     parameters:
     - id: key
       type: CRMScript.Global.String
-      description: 
+      description: The key used to creating the hash
     - id: value
       type: CRMScript.Global.String
-      description: 
+      description: The value to be hashed
     return:
       type: CRMScript.Global.Byte[]
+      description: The generated hash
   example: 
 - uid: CRMScript.Global.Void.encodeSHA1(String)
   commentId: M:CRMScript.Global.Void.encodeSHA1(String)
@@ -659,19 +954,19 @@ items:
   nameWithType: Void.encodeSHA1(String)
   fullName: CRMScript.Global.Void.encodeSHA1(String)
   type: Method
-  summary: "\nGenerates and returns a hash from a specified value using the SHA1 encoding algorithm. This can be used to ensure data integrity. (The hash cannot be decrypted back)\n"
-  remarks: 
+  summary: "\nGenerates and returns a hash from a specified value using the SHA1 encoding algorithm.\n"
+  remarks: "\nThis can be used to ensure data integrity. The hash cannot be decrypted back.\n"
   syntax: 
     content: String encodeSHA1(String value)
     parameters:
     - id: value
       type: CRMScript.Global.String
-      description: 
+      description: The value to be hashed
     return:
       type: CRMScript.Global.String
-      description:
+      description: The generated hash. The same value always returns the same hash (formatted as hex).
   example: 
-  - "\n<pre><code>String s = &quot;Hello world!&quot;;\n\nprintLine(encodeSHA1(&quot;Hello there!&quot;)); // Prints &quot;6b19cb3790b6da8f7c34b4d8895d78a56d078624&quot;\nprintLine(encodeSHA1(&quot;Hello world!&quot;)); // Prints &quot;d3486ae9136e7856bc42212385ea797094475802&quot;\nprintLine(encodeSHA1(s));              // Prints &quot;d3486ae9136e7856bc42212385ea797094475802&quot;\n\n// Notice that the same value always returns the same hash (formatted as hex)</code></pre>\n"
+  - "\n<pre><code>String s = &quot;Hello world!&quot;;\n\nprintLine(encodeSHA1(&quot;Hello there!&quot;)); // Prints &quot;6b19cb3790b6da8f7c34b4d8895d78a56d078624&quot;\nprintLine(encodeSHA1(&quot;Hello world!&quot;)); // Prints &quot;d3486ae9136e7856bc42212385ea797094475802&quot;\nprintLine(encodeSHA1(s));              // Prints &quot;d3486ae9136e7856bc42212385ea797094475802&quot;</code></pre>\n"
 - uid: CRMScript.Global.Void.encodeSHA256(String,String)
   commentId: M:CRMScript.Global.Void.encodeSHA256(String,String)
   id: 'encodeSHA256(String,String)'
@@ -682,22 +977,22 @@ items:
   nameWithType: Void.encodeSHA256(String,String)
   fullName: CRMScript.Global.Void.encodeSHA256(String,String)
   type: Method
-  summary: "\nGenerates and returns a hash from a specified key-value pair using the SHA256 encoding algorithm. This can be used to ensure data integrity. (The hash cannot be decrypted back)\n"
-  remarks: 
+  summary: "\nGenerates and returns a hash from a specified key-value pair using the SHA256 encoding algorithm.\n"
+  remarks: "\nThis can be used to ensure data integrity. The hash cannot be decrypted back.\n"
   syntax: 
     content: String encodeSHA256(String key, String value)
     parameters:
     - id: key
       type: CRMScript.Global.String
-      description: 
+      description: The key used to creating the hash
     - id: value
       type: CRMScript.Global.String
-      description: 
+      description: The value to be hashed
     return:
       type: CRMScript.Global.String
-      description:
+      description: The generated hash. The same key-value pair always returns the same hash (formatted as hex).
   example: 
-  - "\n<pre><code>String s = &quot;Hello world!&quot;;\n\nprintLine(encodeSHA256(&quot;test&quot;, &quot;Hello there!&quot;)); // Prints &quot;39bf407008986fa79eac9cb0b3c8da3fb46acdd6f71721e38e6c4bbf1d14c222&quot;\nprintLine(encodeSHA256(&quot;test&quot;, &quot;Hello world!&quot;)); // Prints &quot;1700f488c1e47cf1a8e8337c0a51d176291a5b4a200fe9bab866765a86edc0a4&quot;\nprintLine(encodeSHA256(&quot;test&quot;, s));              // Prints &quot;1700f488c1e47cf1a8e8337c0a51d176291a5b4a200fe9bab866765a86edc0a4&quot;\n\n// Notice that the same key-value pair always returns the same hash (formatted as hex)</code></pre>\n"
+  - "\n<pre><code>String s = &quot;Hello world!&quot;;\n\nprintLine(encodeSHA256(&quot;test&quot;, &quot;Hello there!&quot;)); // Prints &quot;39bf407008986fa79eac9cb0b3c8da3fb46acdd6f71721e38e6c4bbf1d14c222&quot;\nprintLine(encodeSHA256(&quot;test&quot;, &quot;Hello world!&quot;)); // Prints &quot;1700f488c1e47cf1a8e8337c0a51d176291a5b4a200fe9bab866765a86edc0a4&quot;\nprintLine(encodeSHA256(&quot;test&quot;, s));              // Prints &quot;1700f488c1e47cf1a8e8337c0a51d176291a5b4a200fe9bab866765a86edc0a4&quot;</code></pre>\n"
 - uid: CRMScript.Global.Void.executeDbiAgentSchedule(Integer,Map)
   commentId: M:CRMScript.Global.Void.executeDbiAgentSchedule(Integer,Map)
   id: 'executeDbiAgentSchedule(Integer,Map)'
@@ -711,14 +1006,14 @@ items:
   summary: "\nManually starts a DBI agent schedule. It is possible to supply a map of parameter values used by the schedule.\n"
   remarks: 
   syntax: 
-    content: executeDbiAgentSchedule(Integer scheduleId, Map values)
+    content: Void executeDbiAgentSchedule(Integer scheduleId, Map values)
     parameters:
     - id: scheduleId
       type: CRMScript.Global.Integer
-      description: 
+      description: The ID of the schedule to run
     - id: values
       type: CRMScript.Global.Map
-      description:
+      description: Name-value pairs with parameters
     return:
       type: CRMScript.Global.Void
   example: 
@@ -735,11 +1030,11 @@ items:
   summary: "\nThe outermost function for executing a macro.\n"
   remarks: 
   syntax: 
-    content: String executeMacro(String p0)
+    content: String executeMacro(String parameters)
     parameters:
-    - id: p0
+    - id: parameters
       type: CRMScript.Global.String
-      description: 
+      description: input parameters
     return:
       type: CRMScript.Global.String
       description:
@@ -757,9 +1052,9 @@ items:
   summary: ""
   remarks: 
   syntax: 
-    content: String executeScript(String p0, Map values)
+    content: String executeScript(String script, Map values)
     parameters:
-    - id: values
+    - id: script
       type: CRMScript.Global.String
       description: 
     - id: values
@@ -779,16 +1074,17 @@ items:
   nameWithType: Void.executeSQLQuery(String)
   fullName: CRMScript.Global.Void.executeSQLQuery(String)
   type: Method
-  summary: ""
-  remarks: 
+  summary: "\nExecutes the specified SQL statement. <strong>This function is not available in CRM Online!</strong>\n"
+  remarks: "\nIn case of an error in the SQL statement, an exception will be thrown.\n"
   syntax: 
-    content: executeSQLQuery(String sql)
+    content: Void executeSQLQuery(String sql)
     parameters:
     - id: sql
       type: CRMScript.Global.String
-      description: 
+      description: SQL statement to run
     return:
       type: CRMScript.Global.Void
+      description: Does not return anything!
   example: 
 - uid: CRMScript.Global.Void.exitWithMessage(String)
   commentId: M:CRMScript.Global.Void.exitWithMessage(String)
@@ -801,43 +1097,46 @@ items:
   fullName: CRMScript.Global.Void.exitWithMessage(String)
   type: Method
   summary: "\nExits running the rest of the script and displays a message with text from the parameter.\n"
-  remarks: 
+  remarks: "\nUseful for exiting a script when for example detecting that the current user doesn't have access to a ticket.\n"
   syntax: 
-    content: exitWithMessage(String message)
+    content: Void exitWithMessage(String message)
     parameters:
     - id: message
       type: CRMScript.Global.String
-      description: 
+      description: The message to display
     return:
       type: CRMScript.Global.Void
   example: 
-- uid: CRMScript.Global.Void.faqSearch(Integer,Integer,String,Integer)
-  commentId: M:CRMScript.Global.Void.faqSearch(Integer,Integer,String,Integer)
-  id: 'faqSearch(Integer,Integer,String,Integer)'
+- uid: CRMScript.Global.Void.faqSearch(Integer,Integer,String,Parser,Integer)
+  commentId: M:CRMScript.Global.Void.faqSearch(Integer,Integer,String,Parser,Integer)
+  id: 'faqSearch(Integer,Integer,String,Parser,Integer)'
   so.intellisense: Void.faqSearch
   langs:
   - crmscript
-  name: 'faqSearch(Integer,Integer,String,Integer)'
-  nameWithType: Void.faqSearch(Integer,Integer,String,Integer)
-  fullName: CRMScript.Global.Void.faqSearch(Integer,Integer,String,Integer)
+  name: 'faqSearch(Integer,Integer,String,Parser,Integer)'
+  nameWithType: Void.faqSearch(Integer,Integer,String,Parser,Integer)
+  fullName: CRMScript.Global.Void.faqSearch(Integer,Integer,String,Parser,Integer)
   type: Method
-  summary: "\nSearches FAQ using the same search engine as the customer pages do. It will fill the parser with the result.\n"
-  remarks: "The following parser variables are available (sorted, where the top most is the best hit):"
+  summary: "\nSearches FAQ using the same search engine as the customer pages do and fills the parser with the result.\n"
+  remarks: "\nAvailable parser variables (sorted, where the top most is the best hit):\n<h3>Category parser array</h3><ul><li>faq.categoryId - the id of the matching category</li><li>faq.categoryName - the name of the matching category</li><li>faq.categoryLink - a URL to the customer pages to the matching category</li><li>faq.categoryDescription - the description of the matching category</li><li>faq.categoryScore - the score of the matching category, given in percentage with 2 decimals precision</li></ul><h3>Entry parser array</h3><ul><li>faq.entryId - the ID of the matching entry</li><li>faq.entryName - the name of the matching entry</li><li>faq.entryLink - a URL to the customer pages to the matching entry</li><li>faq.entryQuestion - the question part of the matching entry</li><li>faq.entryScore - the score of the matching entry, given in percentage with 2 decimals precision</li></ul>\n"
   syntax: 
     content: Parser faqSearch(Integer root, Integer access, String message, Parser p, Integer max)
     parameters:
     - id: root
       type: CRMScript.Global.Integer
-      description: 
+      description: The ID of the category folder where you want to search from. -1 for the whole tree
     - id: access
       type: CRMScript.Global.Integer
-      description: 
+      description: The minimum access one needs for this search. AccessPrivate = 1; AccessInternal = 2; AccessRegisteredCustomers = 3; AccessPublic = 4
     - id: message
       type: CRMScript.Global.String
-      description: 
+      description: The words to search for. It will search for words containing one or more of these. Better hits gets a better score
+    - id:
+      type: CRMScript.Native.Parser
+      description: A parser with a script for checking further access. Use an empty parser if you do not want this. The script is in the same format as used in the GUI.
     - id: max
       type: CRMScript.Global.Integer
-      description: 
+      description: The max number of hits
     return:
       type: CRMScript.Native.Parser
   example: 
@@ -851,17 +1150,17 @@ items:
   nameWithType: Void.findReplyTemplateToMerge(Integer)
   fullName: CRMScript.Global.Void.findReplyTemplateToMerge(Integer)
   type: Method
-  summary: ""
+  summary: "\nIf you have configured any categories to use specified ReplyTemplates, use this method to calculate the ReplyTemplate ID.\n"
   remarks: 
   syntax: 
     content: Integer findReplyTemplateToMerge(Integer categoryId)
     parameters:
     - id: categoryId
       type: CRMScript.Global.Integer
-      description: 
+      description: The category ID to locate the reply template for.
     return:
       type: CRMScript.Global.Integer
-      description:
+      description: The ID of the reply template to use.
   example: 
 - uid: CRMScript.Global.Void.flushCaches()
   commentId: M:CRMScript.Global.Void.flushCaches()
@@ -873,7 +1172,7 @@ items:
   nameWithType: Void.flushCaches()
   fullName: CRMScript.Global.Void.flushCaches()
   type: Method
-  summary: ""
+  summary: "\nFlushes the caches in NetServer.\n"
   remarks: 
   syntax: 
     content: Void flushCaches()
@@ -891,7 +1190,7 @@ items:
   nameWithType: Void.forwardMail(String,String,Integer)
   fullName: CRMScript.Global.Void.forwardMail(String,String,Integer)
   type: Method
-  summary: "Forwards preformatted email\n"
+  summary: "Forwards preformatted email.\n"
   remarks: 
   syntax: 
     content: Void forwardMail(String mail, String to, Integer ticketId)
@@ -904,7 +1203,7 @@ items:
       description: Pre-formatted mail
     - id: ticketId
       type: CRMScript.Global.Integer
-      description: 
+      description: Tag
     return:
       type: CRMScript.Global.Void
   example: 
@@ -918,13 +1217,14 @@ items:
   nameWithType: Void.getActiveUser()
   fullName: CRMScript.Global.Void.getActiveUser()
   type: Method
-  summary: ""
+  summary: "\nReturns a reference to the active user instance.\n"
   remarks: 
   syntax: 
     content: User getActiveUser()
     parameters: []
     return:
       type: CRMScript.Native.User
+      description: a reference to the active user instance
   example: 
 - uid: CRMScript.Global.Void.getAgentId(String)
   commentId: M:CRMScript.Global.Void.getAgentId(String)
@@ -936,17 +1236,17 @@ items:
   nameWithType: Void.getAgentId(String)
   fullName: CRMScript.Global.Void.getAgentId(String)
   type: Method
-  summary: "\nReturns the ID of the agent matching the parameter\n"
+  summary: "\nReturns the ID of the agent matching the parameter.\n"
   remarks: 
   syntax: 
     content: Integer getAgentId(String idString)
     parameters:
     - id: idString
       type: CRMScript.Global.String
-      description: The id string of the agent
+      description: The ID string of the agent.
     return:
       type: CRMScript.Global.Integer
-      description:
+      description: The ID of the agent matching the parameter; null if no match found.
   example: 
 - uid: CRMScript.Global.Void.getAgentScheduleId(String)
   commentId: M:CRMScript.Global.Void.getAgentScheduleId(String)
@@ -958,7 +1258,7 @@ items:
   nameWithType: Void.getAgentScheduleId(String)
   fullName: CRMScript.Global.Void.getAgentScheduleId(String)
   type: Method
-  summary: "\nReturns the ID of the agent schedule with the given name. -1 if no agent schedule was found\n"
+  summary: "\nReturns the ID of the agent schedule with the given name.\n"
   remarks: 
   syntax: 
     content: Integer getAgentScheduleId(String name)
@@ -968,7 +1268,7 @@ items:
       description: Name of the agent schedule
     return:
       type: CRMScript.Global.Integer
-      description:
+      description: The ID of the agent schedule with the given name; -1 if no agent schedule was found.
   example: 
 - uid: CRMScript.Global.Void.getAttachmentsSize(Integer[])
   commentId: M:CRMScript.Global.Void.getAttachmentsSize(Integer[])
@@ -987,10 +1287,10 @@ items:
     parameters:
     - id: attachmentIds
       type: CRMScript.Global.Integer[]
-      description: 
+      description: An array of IDs to the attachment you want to compute the size for.
     return:
       type: CRMScript.Global.Integer
-      description:
+      description: The total size of the specified attachments.
   example: 
 - uid: CRMScript.Global.Void.getCategoryIdFromFullname(String)
   commentId: M:CRMScript.Global.Void.getCategoryIdFromFullname(String)
@@ -1009,10 +1309,10 @@ items:
     parameters:
     - id: name
       type: CRMScript.Global.String
-      description: 
+      description: Full name of category
     return:
       type: CRMScript.Global.Integer
-      description:
+      description: ID of category
   example: 
 - uid: CRMScript.Global.Void.getCgiContent()
   commentId: M:CRMScript.Global.Void.getCgiContent()
@@ -1024,14 +1324,14 @@ items:
   nameWithType: Void.getCgiContent()
   fullName: CRMScript.Global.Void.getCgiContent()
   type: Method
-  summary: ""
+  summary: "\nReturns the raw content of the HTTP request.\n"
   remarks: 
   syntax: 
     content: String getCgiContent()
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: The raw content of the HTTP request.
   example: 
 - uid: CRMScript.Global.Void.getCgiUrl()
   commentId: M:CRMScript.Global.Void.getCgiUrl()
@@ -1043,14 +1343,14 @@ items:
   nameWithType: Void.getCgiUrl()
   fullName: CRMScript.Global.Void.getCgiUrl()
   type: Method
-  summary: "\nReturns the cgiUrl value from the config table. Used for creating URLs.\n"
-  remarks: 
+  summary: "\nReturns the cgiUrl value from the config table. For example, http://ejournal.company.com\n"
+  remarks: "\nUsed for creating URLs.\n"
   syntax: 
     content: String getCgiUrl()
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: The string stored as the cgiUrl.
   example: 
 - uid: CRMScript.Global.Void.getCgiVariable(String)
   commentId: M:CRMScript.Global.Void.getCgiVariable(String)
@@ -1069,10 +1369,10 @@ items:
     parameters:
     - id: varName
       type: CRMScript.Global.String
-      description: 
+      description: The name of the CGI variable to return.
     return:
       type: CRMScript.Global.String
-      description:
+      description: The CGI variable with the given name
   example: 
 - uid: CRMScript.Global.Void.getCgiVariableArray(String)
   commentId: M:CRMScript.Global.Void.getCgiVariableArray(String)
@@ -1094,7 +1394,7 @@ items:
       description: of the CGI variables to match
     return:
       type: CRMScript.Global.String[]
-      description:
+      description: All CGI variables matching the given name.
   example: 
 - uid: CRMScript.Global.Void.getCgiVariables()
   commentId: M:CRMScript.Global.Void.getCgiVariables()
@@ -1106,14 +1406,14 @@ items:
   nameWithType: Void.getCgiVariables()
   fullName: CRMScript.Global.Void.getCgiVariables()
   type: Method
-  summary: "\nReturns a map of all CGI variables\n"
+  summary: "\nReturns a map of all CGI variables.\n"
   remarks: 
   syntax: 
     content: Map getCgiVariables()
     parameters: []
     return:
       type: CRMScript.Global.Map
-      description:
+      description: Map containing all CGI variables
   example: 
 - uid: CRMScript.Global.Void.getCookie(String)
   commentId: M:CRMScript.Global.Void.getCookie(String)
@@ -1125,17 +1425,17 @@ items:
   nameWithType: Void.getCookie(String)
   fullName: CRMScript.Global.Void.getCookie(String)
   type: Method
-  summary: "\nReturns the CGI cookie with the given name.\n"
+  summary: "\nReturns the CGI cookie with the given name. <strong>This method is not available in CRM Online.</strong>\n"
   remarks: 
   syntax: 
     content: String getCookie(String name)
     parameters:
     - id: name
       type: CRMScript.Global.String
-      description: 
+      description: The name of the cookie to return.
     return:
       type: CRMScript.Global.String
-      description:
+      description: The CGI cookie with the given name
   example: 
 - uid: CRMScript.Global.Void.getCurrent(String)
   commentId: M:CRMScript.Global.Void.getCurrent(String)
@@ -1154,10 +1454,10 @@ items:
     parameters:
     - id: key
       type: CRMScript.Global.String
-      description: 
+      description: The key to get the value for
     return:
       type: CRMScript.Global.String
-      description:
+      description: The corresponding value.
   example: 
 - uid: CRMScript.Global.Void.getCurrentDate()
   commentId: M:CRMScript.Global.Void.getCurrentDate()
@@ -1176,9 +1476,9 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.Date
-      description:
+      description: The current date.
   example: 
-  - "\n<pre><code>print(getCurrentDate().toString());</code></pre>\n"
+  - "\n<pre><code>print(getCurrentDate().toString());</code></pre>Prints the date in YYYY-MM-DD format.\n"
 - uid: CRMScript.Global.Void.getCurrentDateTime()
   commentId: M:CRMScript.Global.Void.getCurrentDateTime()
   id: 'getCurrentDateTime()'
@@ -1198,7 +1498,7 @@ items:
       type: CRMScript.Global.DateTime
       description:
   example: 
-  - "\n<pre><code>print(getCurrentDateTime().toString());</code></pre>\n"
+  - "\n<pre><code>print(getCurrentDateTime().toString());</code></pre>Prints the date and time in YYYY-MM-DD XX:XX:XX format.\n"
 - uid: CRMScript.Global.Void.getCurrentTime()
   commentId: M:CRMScript.Global.Void.getCurrentTime()
   id: 'getCurrentTime()'
@@ -1216,7 +1516,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.Time
-      description:
+      description: The current time.
   example: 
 - uid: CRMScript.Global.Void.getCustomerMainEmail(Integer)
   commentId: M:CRMScript.Global.Void.getCustomerMainEmail(Integer)
@@ -1235,7 +1535,7 @@ items:
     parameters:
     - id: custId
       type: CRMScript.Global.Integer
-      description: 
+      description: The ID of the customer or person.
     return:
       type: CRMScript.Global.String
       description: An empty string is returned if the customer does not have an email address or the customer does not exist.
@@ -1257,6 +1557,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Native.DbiControl
+      description: The global dbi control object.
   example: 
 - uid: CRMScript.Global.Void.getDefaultElementConfig(Integer,String,String)
   commentId: M:CRMScript.Global.Void.getDefaultElementConfig(Integer,String,String)
@@ -1275,16 +1576,16 @@ items:
     parameters:
     - id: type
       type: CRMScript.Global.Integer
-      description: 
+      description: Type of element. Can be 14 (GenericGrid), 15 (InfoField), or 140 (Where)
     - id: table
       type: CRMScript.Global.String
-      description: 
+      description: The table for the config (usually ticket, customer, company, or the name of an extratable)
     - id: language
       type: CRMScript.Global.String
-      description: 
+      description: The language of the config
     return:
       type: CRMScript.Global.String
-      description:
+      description: The config as a string with name = value lines
   example: 
 - uid: CRMScript.Global.Void.getDocumentId(String)
   commentId: M:CRMScript.Global.Void.getDocumentId(String)
@@ -1296,7 +1597,7 @@ items:
   nameWithType: Void.getDocumentId(String)
   fullName: CRMScript.Global.Void.getDocumentId(String)
   type: Method
-  summary: "\nReturns the ID of the document with the given name. -1 if no agent schedule was found.\n"
+  summary: "\nReturns the ID of the document with the given name.\n"
   remarks: 
   syntax: 
     content: Integer getDocumentId(String name)
@@ -1306,7 +1607,7 @@ items:
       description: Name of the document
     return:
       type: CRMScript.Global.Integer
-      description:
+      description: The ID of the document; -1 if no agent schedule was found.
   example: 
 - uid: CRMScript.Global.Void.getEnvVariable(String)
   commentId: M:CRMScript.Global.Void.getEnvVariable(String)
@@ -1318,17 +1619,17 @@ items:
   nameWithType: Void.getEnvVariable(String)
   fullName: CRMScript.Global.Void.getEnvVariable(String)
   type: Method
-  summary: "\nReturns the OS environment variable with the given name.\n"
+  summary: "\nReturns the OS environment variable with the given name. <strong>This method is not available in CRM Online.</strong>\n"
   remarks: 
   syntax: 
     content: String getEnvVariable(String name)
     parameters:
     - id: name
       type: CRMScript.Global.String
-      description: 
+      description: The name of the variable.
     return:
       type: CRMScript.Global.String
-      description:
+      description: The OS environment variable with the given name.
   example: 
 - uid: CRMScript.Global.Void.getEventData()
   commentId: M:CRMScript.Global.Void.getEventData()
@@ -1340,7 +1641,7 @@ items:
   nameWithType: Void.getEventData()
   fullName: CRMScript.Global.Void.getEventData()
   type: Method
-  summary: ""
+  summary: "\nReturns an EventData object connected to the current event.\n"
   remarks: 
   syntax: 
     content: EventData getEventData()
@@ -1358,7 +1659,7 @@ items:
   nameWithType: Void.getExecutable()
   fullName: CRMScript.Global.Void.getExecutable()
   type: Method
-  summary: ""
+  summary: "\nReturns the executable with the full path that the current script is running in.\n"
   remarks: 
   syntax: 
     content: String getExecutable()
@@ -1377,17 +1678,17 @@ items:
   nameWithType: Void.getExternalProgram(Integer)
   fullName: CRMScript.Global.Void.getExternalProgram(Integer)
   type: Method
-  summary: "\nReturns the URL of the program module specified by progId. As indicated by the name, this will return the external URL, ie when accessed from the Internet (if available). progId can be:\n"
-  remarks: "<ul><li>modNull = 0x00000000,</li><li>modTicket = 0x00000001,</li><li>modAdmin = 0x00000002,</li><li>modDocument = 0x00000004,</li><li>modHelp = 0x00000008,</li><li>modCustomer = 0x00000010,</li><li>modKnowledge = 0x00000020,</li><li>modPlanner = 0x00000040,</li><li>modAds = 0x00000080,</li><li>modSchedule = 0x00000100,</li><li>modStat = 0x00000200,</li><li>modRms = 0x00000400,</li><li>modCustLang = 0x00000800,</li><li>modExtDb = 0x00001000,</li><li>modAdvancedFAQ = 0x00002000,</li><li>modChat = 0x00004000,</li><li>modSpm = 0x00008000,</li><li>modSoap = 0x00010000,</li><li>modSoapPublic = 0x00020000,</li><li>modSms = 0x00040000,</li><li>modBlogic = 0x00080000,</li><li>modRetail = 0x00100000</li></ul>These numbers are in hexadecimal notation. Convert to decimal before use.<p></p>\n<ul><li>Integer modTicket = 1;</li><li>Integer modAdmin = 2;</li><li>Integer modDocument = 4;</li><li>Integer modHelp = 8;</li><li>Integer modCustomer = 16;</li><li>Integer modKnowledge = 32;</li><li>Integer modPlanner = 64;</li><li>Integer modAds = 128;</li><li>Integer modSchedule = 256;</li><li>Integer modStat = 512;</li><li>Integer modRms = 1024;</li><li>Integer modCustLang = 2048;</li><li>Integer modExtDb = 4096;</li><li>Integer modAdvancedFAQ = 8192;</li><li>Integer modChat = 16384;</li><li>Integer modSpm = 32768;</li><li>Integer modSoap = 65536;</li><li>Integer modSoapPublic = 131072;</li><li>Integer modSms = 262144;</li><li>Integer modBlogic = 524288;</li><li>Integer modRetail = 1048576;</li></ul>"
+  summary: "\nReturns the external URL of the program module specified by progId (if available).\n"
+  remarks: "\n<h3>progId</h3><table><thead><tr><td>progId</td><td>Integer</td><td>Hex</td></tr></thead><tbody><tr><td>modNull</td><td>0</td><td>0x00000000</td></tr><tr><td>modTicket</td><td>1</td><td>0x00000001</td></tr><tr><td>modAdmin</td><td>2</td><td>0x00000002</td></tr><tr><td>modDocument</td><td>4</td><td>0x00000004</td></tr><tr><td>modHelp</td><td>8</td><td>0x00000008</td></tr><tr><td>modCustomer</td><td>16</td><td>0x00000010</td></tr><tr><td>modKnowledge</td><td>32</td><td>0x00000020</td></tr><tr><td>modPlanner</td><td>64</td><td>0x00000040</td></tr><tr><td>modAds</td><td>128</td><td>0x00000080</td></tr><tr><td>modSchedule</td><td>256</td><td>0x00000100</td></tr><tr><td>modStat</td><td>512</td><td>0x00000200</td></tr><tr><td>modRms</td><td>1024</td><td>0x00000400</td></tr><tr><td>modCustLang</td><td>2048</td><td>0x00000800</td></tr><tr><td>modExtDb</td><td>4096</td><td>0x00001000</td></tr><tr><td>modAdvancedFAQ</td><td>8192</td><td>0x00002000</td></tr><tr><td>modChat</td><td>16384</td><td>0x00004000</td></tr><tr><td>modSpm</td><td>32768</td><td>0x00008000</td></tr><tr><td>modSoap</td><td>65536</td><td>0x00010000</td></tr><tr><td>modSoapPublic</td><td>131072</td><td>0x00020000</td></tr><tr><td>modSms</td><td>26214</td><td>0x00040000</td></tr><tr><td>modBlogic</td><td>524288</td><td>0x00080000</td></tr><tr><td>modRetail</td><td>1048576</td><td>0x00100000</tr></body></table>"
   syntax: 
     content: String getExternalProgram(Integer progId)
     parameters:
     - id: progId
       type: CRMScript.Global.Integer
-      description: 
+      description: The ID of the program to return.
     return:
       type: CRMScript.Global.String
-      description:
+      description: The URL for the given program.
   example: 
 - uid: CRMScript.Global.Void.getExternalProgramAdmin()
   commentId: M:CRMScript.Global.Void.getExternalProgramAdmin()
@@ -1406,7 +1707,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: The external URL for the given program.
   example: 
 - uid: CRMScript.Global.Void.getExternalProgramAjax()
   commentId: M:CRMScript.Global.Void.getExternalProgramAjax()
@@ -1425,7 +1726,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: The external URL for the given program.
   example: 
 - uid: CRMScript.Global.Void.getExternalProgramBlogic()
   commentId: M:CRMScript.Global.Void.getExternalProgramBlogic()
@@ -1444,7 +1745,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: The external URL for the given program.
   example: 
 - uid: CRMScript.Global.Void.getExternalProgramChat()
   commentId: M:CRMScript.Global.Void.getExternalProgramChat()
@@ -1482,7 +1783,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: The external URL for the given program.
   example: 
 - uid: CRMScript.Global.Void.getExternalProgramDocument()
   commentId: M:CRMScript.Global.Void.getExternalProgramDocument()
@@ -1501,7 +1802,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: The external URL for the given program.
   example: 
 - uid: CRMScript.Global.Void.getExternalProgramHelp()
   commentId: M:CRMScript.Global.Void.getExternalProgramHelp()
@@ -1520,7 +1821,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: The external URL for the given program.
   example: 
 - uid: CRMScript.Global.Void.getExternalProgramKnowledge()
   commentId: M:CRMScript.Global.Void.getExternalProgramKnowledge()
@@ -1539,7 +1840,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: The external URL for the given program.
   example: 
 - uid: CRMScript.Global.Void.getExternalProgramRms()
   commentId: M:CRMScript.Global.Void.getExternalProgramRms()
@@ -1558,7 +1859,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: The external URL for the given program.
   example: 
 - uid: CRMScript.Global.Void.getExternalProgramSoap()
   commentId: M:CRMScript.Global.Void.getExternalProgramSoap()
@@ -1577,7 +1878,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: The external URL for the given program.
   example: 
 - uid: CRMScript.Global.Void.getExternalProgramStat()
   commentId: M:CRMScript.Global.Void.getExternalProgramStat()
@@ -1596,7 +1897,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: The external URL for the given program.
   example: 
 - uid: CRMScript.Global.Void.getExternalProgramTicket()
   commentId: M:CRMScript.Global.Void.getExternalProgramTicket()
@@ -1615,7 +1916,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: The external URL for the given program.
   example: 
 - uid: CRMScript.Global.Void.getExtraTable(String)
   commentId: M:CRMScript.Global.Void.getExtraTable(String)
@@ -1627,16 +1928,17 @@ items:
   nameWithType: Void.getExtraTable(String)
   fullName: CRMScript.Global.Void.getExtraTable(String)
   type: Method
-  summary: "\nReturns the ExtraTable instance for the given name. The name is the unique name of the table, such as &quot;y_102&quot;, &quot;y_inventory&quot;.\n"
+  summary: "\nReturns the ExtraTable instance for the given name.\n"
   remarks: "\nThrows an exception if the table does not exist.\n"
   syntax: 
     content: ExtraTable getExtraTable(String name)
     parameters:
     - id: name
       type: CRMScript.Global.String
-      description: 
+      description: The unique name of the table, such as &quot;y_102&quot;, &quot;y_inventory&quot;.
     return:
       type: CRMScript.Native.ExtraTable
+      description: The ExtraTable.
   example: 
 - uid: CRMScript.Global.Void.getFavourites(String)
   commentId: M:CRMScript.Global.Void.getFavourites(String)
@@ -1655,10 +1957,10 @@ items:
     parameters:
     - id: table
       type: CRMScript.Global.String
-      description: 
+      description: Name of the table
     return:
       type: CRMScript.Global.Integer[]
-      description:
+      description: array containing IDs of favorites
   example: 
 - uid: CRMScript.Global.Void.getFunctionList()
   commentId: M:CRMScript.Global.Void.getFunctionList()
@@ -1677,6 +1979,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String[][]
+      description: Double String array with the description of all CRMScript functions. The inner array contains 0 - class name; 1 - return type; 2 - function name; 3 - parameter list; 4 - author
   example: 
 - uid: CRMScript.Global.Void.getGlobalStaticMap()
   commentId: M:CRMScript.Global.Void.getGlobalStaticMap()
@@ -1688,8 +1991,8 @@ items:
   nameWithType: Void.getGlobalStaticMap()
   fullName: CRMScript.Global.Void.getGlobalStaticMap()
   type: Method
-  summary: ""
-  remarks: 
+  summary: "\nReturns a global and static map.\n"
+  remarks: "\nUseful to eliminate the need to fetch the same info several times within one run of the app, bLogic events and ticket save especially.\n"
   syntax: 
     content: Map getGlobalStaticMap()
     parameters: []
@@ -1707,14 +2010,14 @@ items:
   nameWithType: Void.getGlobalVariable(String)
   fullName: CRMScript.Global.Void.getGlobalVariable(String)
   type: Method
-  summary: "\nGets a value from the global variables (used for communication between the script different scripts).\n"
-  remarks: 
+  summary: "\nGets a value from the global variables.\n"
+  remarks: "\nUsed for communication between different scripts.\n"
   syntax: 
     content: String getGlobalVariable(String name)
     parameters:
     - id: name
       type: CRMScript.Global.String
-      description: 
+      description: The name of the variable to receive.
     return:
       type: CRMScript.Global.String
       description:
@@ -1736,9 +2039,10 @@ items:
     parameters:
     - id: name
       type: CRMScript.Global.String
-      description: 
+      description: The name of the element to return.
     return:
       type: CRMScript.Native.HtmlElement
+      description: The HtmlElement with the given name.
   example: 
 - uid: CRMScript.Global.Void.getHtmlElementIndex(String)
   commentId: M:CRMScript.Global.Void.getHtmlElementIndex(String)
@@ -1757,10 +2061,10 @@ items:
     parameters:
     - id: name
       type: CRMScript.Global.String
-      description: 
+      description: The name of the HTML element you want to retrieve the index of.
     return:
       type: CRMScript.Global.Integer
-      description:
+      description: The index of the specified element.
   example: 
 - uid: CRMScript.Global.Void.getHtmlElementName(Integer)
   commentId: M:CRMScript.Global.Void.getHtmlElementName(Integer)
@@ -1772,7 +2076,7 @@ items:
   nameWithType: Void.getHtmlElementName(Integer)
   fullName: CRMScript.Global.Void.getHtmlElementName(Integer)
   type: Method
-  summary: "\nReturns the name of the element with the given index\n"
+  summary: "\nReturns the name of the element with the given index.\n"
   remarks: 
   syntax: 
     content: String getHtmlElementName(Integer index)
@@ -1782,7 +2086,7 @@ items:
       description: Index of the element
     return:
       type: CRMScript.Global.String
-      description:
+      description:  The name of the element
   example: 
 - uid: CRMScript.Global.Void.getHttpHeader(String)
   commentId: M:CRMScript.Global.Void.getHttpHeader(String)
@@ -1795,13 +2099,13 @@ items:
   fullName: CRMScript.Global.Void.getHttpHeader(String)
   type: Method
   summary: "\nReturns the value of the specified header name.\n"
-  remarks: "\n<h3>Values</h3><ul><li>ACCEPT-*</li><li>ACCESS-CONTROL-REQUEST-METHOD</li><li>ACCESS-CONTROL-REQUEST-HEADERS</li><li>CACHE-CONTROL</li><li>CONTENT-LENGTH</li><li>CONTENT-TYPE</li><li>DATE</li><li>DNT</li><li>EXPECT</li><li>IF-*</li><li>ORIGIN</li><li>PRAGMA</li><li>RANGE</li><li>REFERER</li><li>REQUEST-METHOD</li><li>REQUEST-URI</li><li>TE</li><li>USER-AGENT</li><li>X-CRMSCRIPT-*</li><li>X-FORWARDED-FOR</li><li>X-REQUESTED-WITH</li><li>X-SUPEROFFICE-EVENT</li><li>X-SUPEROFFICE-EVENTID</li><li>X-SUPEROFFICE-RETRY</li></ul>\n"
+  remarks: "\n<h3>Header names</h3><ul><li>ACCEPT-*</li><li>ACCESS-CONTROL-REQUEST-METHOD</li><li>ACCESS-CONTROL-REQUEST-HEADERS</li><li>CACHE-CONTROL</li><li>CONTENT-LENGTH</li><li>CONTENT-TYPE</li><li>DATE</li><li>DNT</li><li>EXPECT</li><li>IF-*</li><li>ORIGIN</li><li>PRAGMA</li><li>RANGE</li><li>REFERER</li><li>REQUEST-METHOD</li><li>REQUEST-URI</li><li>TE</li><li>USER-AGENT</li><li>X-CRMSCRIPT-*</li><li>X-FORWARDED-FOR</li><li>X-REQUESTED-WITH</li><li>X-SUPEROFFICE-EVENT</li><li>X-SUPEROFFICE-EVENTID</li><li>X-SUPEROFFICE-RETRY</li></ul>\n"
   syntax: 
     content: String getHttpHeader(String headerName)
     parameters:
     - id: headerName
       type: CRMScript.Global.String
-      description: 
+      description: Name of the header
     return:
       type: CRMScript.Global.String
       description: The header value
@@ -1817,17 +2121,42 @@ items:
   nameWithType: Void.getLanguageVariable(String)
   fullName: CRMScript.Global.Void.getLanguageVariable(String)
   type: Method
-  summary: "\nReturns the language variable in the language given by language code or of the current userConverts a language variable to a string in the language of the current user or, if provided, corresponding to a specific language code. Passing the language code is optional.<p></p>\nIt will search in the language variables for the current screen in addition to the common language variables.\n"
-  remarks: 
+  summary: "\nConverts a language variable to a string in the language of the current user or, if provided, corresponding to a specific language code.\n"
+  remarks: "\nSearches in the language variables for the current screen in addition to the common language variables.\n"
   syntax: 
-    content: String getLanguageVariable()
+    content: String getLanguageVariable(String langVar)
     parameters:
     - id: langVar
       type: CRMScript.Global.String
       description: The language variable, for example, lang_global_global_okSave
     return:
       type: CRMScript.Global.String
-      description: the language variable in the language given.
+      description: The language variable in the language given by language code or of the current user. 
+  example: 
+- uid: CRMScript.Global.Void.getLanguageVariable(String,String)
+  commentId: M:CRMScript.Global.Void.getLanguageVariable(String,String)
+  id: 'getLanguageVariable(String,String)'
+  so.intellisense: Void.getLanguageVariable
+  langs:
+  - crmscript
+  name: 'getLanguageVariable(String,String)'
+  nameWithType: Void.getLanguageVariable(String,String)
+  fullName: CRMScript.Global.Void.getLanguageVariable(String,String)
+  type: Method
+  summary: "\nConverts a language variable to a string in the language of the current user or, if provided, corresponding to a specific language code.\n"
+  remarks: "\nSearches in the language variables for the current screen in addition to the common language variables.\n"
+  syntax: 
+    content: String getLanguageVariable(String langVar, String langCode)
+    parameters:
+    - id: langVar
+      type: CRMScript.Global.String
+      description: The language variable, for example, lang_global_global_okSave
+    - id: langCode
+      type: CRMScript.Global.String
+      description: The language code.
+    return:
+      type: CRMScript.Global.String
+      description: The language variable in the language given by language code or of the current user.
   example: 
 - uid: CRMScript.Global.Void.getLocalTimeZone()
   commentId: M:CRMScript.Global.Void.getLocalTimeZone()
@@ -1846,6 +2175,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.TimeZone
+      description: The local timezone.
   example: 
 - uid: CRMScript.Global.Void.getMainMenu()
   commentId: M:CRMScript.Global.Void.getMainMenu()
@@ -1857,13 +2187,14 @@ items:
   nameWithType: Void.getMainMenu()
   fullName: CRMScript.Global.Void.getMainMenu()
   type: Method
-  summary: "\nReturn a reference to the global MainMenu instance.\n"
+  summary: "\nReturns a reference to the global MainMenu instance.\n"
   remarks: "\nUsed for changing the left-hand menu in the system.\n"
   syntax: 
     content: MainMenu getMainMenu()
     parameters: []
     return:
       type: CRMScript.Native.MainMenu
+      description: The global MainMenu instance.
   example: 
 - uid: CRMScript.Global.Void.getNtUser()
   commentId: M:CRMScript.Global.Void.getNtUser()
@@ -1882,7 +2213,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: nt user name
   example: 
 - uid: CRMScript.Global.Void.getNumHtmlElements()
   commentId: M:CRMScript.Global.Void.getNumHtmlElements()
@@ -1894,14 +2225,14 @@ items:
   nameWithType: Void.getNumHtmlElements()
   fullName: CRMScript.Global.Void.getNumHtmlElements()
   type: Method
-  summary: ""
+  summary: "\nReturns the current number of the HtmlElements in the current screen.\n"
   remarks: 
   syntax: 
     content: Integer getNumHtmlElements()
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description:
+      description: The current number of the HtmlElements in the current screen.
   example: 
 - uid: CRMScript.Global.Void.getParser()
   commentId: M:CRMScript.Global.Void.getParser()
@@ -1920,6 +2251,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Native.Parser
+      description: The reference to the Parser instance.
   example: 
 - uid: CRMScript.Global.Void.getParserParameter(String)
   commentId: M:CRMScript.Global.Void.getParserParameter(String)
@@ -1931,17 +2263,42 @@ items:
   nameWithType: Void.getParserParameter(String)
   fullName: CRMScript.Global.Void.getParserParameter(String)
   type: Method
-  summary: "\nGets the value of the given parameter from the global Parser instanceReturns the value of the given parameter in the global Parser instance.\n"
+  summary: "\nReturns the value of the given parameter in the global Parser instance.\n"
   remarks: "\nYou can optionally pass the zero-based index of the value.\n"
   syntax: 
-    content: String getParserParameter()
+    content: String getParserParameter(String name)
     parameters:
     - id: name
       type: CRMScript.Global.String
       description: The name of the parameter
     return:
       type: CRMScript.Global.String
-      description:
+      description: The value of the given parameter in the global Parser instance.
+  example: 
+- uid: CRMScript.Global.Void.getParserParameter(String,Integer)
+  commentId: M:CRMScript.Global.Void.getParserParameter(String,Integer)
+  id: 'getParserParameter(String,Integer)'
+  so.intellisense: Void.getParserParameter
+  langs:
+  - crmscript
+  name: 'getParserParameter(String,Integer)'
+  nameWithType: Void.getParserParameter(String,Integer)
+  fullName: CRMScript.Global.Void.getParserParameter(String,Integer)
+  type: Method
+  summary: "\nReturns the value of the given parameter at the zero-based index in the global Parser instance.\n"
+  remarks: ""
+  syntax: 
+    content: String getParserParameter(String name, Integer index)
+    parameters:
+    - id: name
+      type: CRMScript.Global.String
+      description: The name of the parameter
+    - id: index
+      type: CRMScript.Global.Integer
+      description: The zero-based index of the value to return
+    return:
+      type: CRMScript.Global.String
+      description: The value of the given parameter in the global Parser instance.
   example: 
 - uid: CRMScript.Global.Void.getParserParameterCount(String)
   commentId: M:CRMScript.Global.Void.getParserParameterCount(String)
@@ -1960,10 +2317,10 @@ items:
     parameters:
     - id: paramName
       type: CRMScript.Global.String
-      description: 
+      description: The name of the parameter
     return:
       type: CRMScript.Global.Integer
-      description:
+      description: The number of values for the parameter the Parser.
   example: 
 - uid: CRMScript.Global.Void.getParserVariable(String)
   commentId: M:CRMScript.Global.Void.getParserVariable(String)
@@ -1975,14 +2332,39 @@ items:
   nameWithType: Void.getParserVariable(String)
   fullName: CRMScript.Global.Void.getParserVariable(String)
   type: Method
-  summary: "\nGets the value of the given variable from the global Parser instanceReturns the (first) value for the given variable from the global Parser instance.\n"
+  summary: "\nReturns the (first) value for the given variable from the global Parser instance.\n"
   remarks: "\nYou can optionally pass the zero-based row of the parser-query result set.\n"
   syntax: 
-    content: String getParserVariable()
+    content: String getParserVariable(String varName)
     parameters:
     - id: varName
       type: CRMScript.Global.String
       description: The name of the variable
+    return:
+      type: CRMScript.Global.String
+      description:
+  example: 
+- uid: CRMScript.Global.Void.getParserVariable(String,Integer)
+  commentId: M:CRMScript.Global.Void.getParserVariable(String,Integer)
+  id: 'getParserVariable(String,Integer)'
+  so.intellisense: Void.getParserVariable
+  langs:
+  - crmscript
+  name: 'getParserVariable(String,Integer)'
+  nameWithType: Void.getParserVariable(String,Integer)
+  fullName: CRMScript.Global.Void.getParserVariable(String,Integer)
+  type: Method
+  summary: "\nReturns the (first) value for the given variable from the global Parser instance at the zero-based row of the parser-query result set.\n"
+  remarks: ""
+  syntax: 
+    content: String getParserVariable(String varName, Integer row)
+    parameters:
+    - id: varName
+      type: CRMScript.Global.String
+      description: The name of the variable
+    - id: row
+      type: CRMScript.Global.Integer
+      description: The zero-based index of the value to return.
     return:
       type: CRMScript.Global.String
       description:
@@ -2004,13 +2386,13 @@ items:
     parameters:
     - id: paramName
       type: CRMScript.Global.String
-      description: 
+      description: The name of the variable to return.
     - id: forceQuoting
       type: CRMScript.Global.Bool
       description: 
     return:
       type: CRMScript.Global.String
-      description:
+      description: If True, then each element will be quoted. If false, only elements that need to be quoted (i.e. when they contain a comma) will be quoted.
   example: 
 - uid: CRMScript.Global.Void.getParserVariableCount(String)
   commentId: M:CRMScript.Global.Void.getParserVariableCount(String)
@@ -2029,10 +2411,10 @@ items:
     parameters:
     - id: varName
       type: CRMScript.Global.String
-      description: 
+      description: The name of the variable.
     return:
       type: CRMScript.Global.Integer
-      description:
+      description: The number of values for the variable.
   example: 
 - uid: CRMScript.Global.Void.getPID()
   commentId: M:CRMScript.Global.Void.getPID()
@@ -2044,14 +2426,14 @@ items:
   nameWithType: Void.getPID()
   fullName: CRMScript.Global.Void.getPID()
   type: Method
-  summary: ""
+  summary: "\nReturns the PID of the executable that the script is running in.\n"
   remarks: 
   syntax: 
     content: Integer getPID()
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description:
+      description: The PID of the executable that the script is running in
   example: 
 - uid: CRMScript.Global.Void.getPriorityIdFromName(String)
   commentId: M:CRMScript.Global.Void.getPriorityIdFromName(String)
@@ -2066,14 +2448,14 @@ items:
   summary: "\nReturns the ID of the priority with the given name.\n"
   remarks: 
   syntax: 
-    content: Integer getPriorityIdFromName(String p0)
+    content: Integer getPriorityIdFromName(String name)
     parameters:
-    - id: p0
+    - id: name
       type: CRMScript.Global.String
-      description: 
+      description:  Name of the document
     return:
       type: CRMScript.Global.Integer
-      description:
+      description: The ID of the priority
   example: 
 - uid: CRMScript.Global.Void.getProgram(Integer)
   commentId: M:CRMScript.Global.Void.getProgram(Integer)
@@ -2086,7 +2468,7 @@ items:
   fullName: CRMScript.Global.Void.getProgram(Integer)
   type: Method
   summary: "\nReturns the URL of the program module specified by progId.\n"
-  remarks: "\nprogId can be:<p></p>\n<ul><li>modNull = 0x00000000,</li><li>modTicket = 0x00000001,</li><li>modAdmin = 0x00000002,</li><li>modDocument = 0x00000004,</li><li>modHelp = 0x00000008,</li><li>modCustomer = 0x00000010,</li><li>modKnowledge = 0x00000020,</li><li>modPlanner = 0x00000040,</li><li>modAds = 0x00000080,</li><li>modSchedule = 0x00000100,</li><li>modStat = 0x00000200,</li><li>modRms = 0x00000400,</li><li>modCustLang = 0x00000800,</li><li>modExtDb = 0x00001000,</li><li>modAdvancedFAQ = 0x00002000,</li><li>modChat = 0x00004000,</li><li>modSpm = 0x00008000,</li><li>modSoap = 0x00010000,</li><li>modSoapPublic = 0x00020000,</li><li>modSms = 0x00040000,</li><li>modBlogic = 0x00080000,</li><li>modRetail = 0x00100000</li></ul>These numbers are in hexadecimal notation. Convert to decimal before use.<p></p>\n<ul><li>Integer modTicket = 1;</li><li>Integer modAdmin = 2;</li><li>Integer modDocument = 4;</li><li>Integer modHelp = 8;</li><li>Integer modCustomer = 16;</li><li>Integer modKnowledge = 32;</li><li>Integer modPlanner = 64;</li><li>Integer modAds = 128;</li><li>Integer modSchedule = 256;</li><li>Integer modStat = 512;</li><li>Integer modRms = 1024;</li><li>Integer modCustLang = 2048;</li><li>Integer modExtDb = 4096;</li><li>Integer modAdvancedFAQ = 8192;</li><li>Integer modChat = 16384;</li><li>Integer modSpm = 32768;</li><li>Integer modSoap = 65536;</li><li>Integer modSoapPublic = 131072;</li><li>Integer modSms = 262144;</li><li>Integer modBlogic = 524288;</li><li>Integer modRetail = 1048576;</li></ul>\n"
+  remarks: "\n<h3>progId</h3><table><thead><tr><td>progId</td><td>Integer</td><td>Hex</td></tr></thead><tbody><tr><td>modNull</td><td>0</td><td>0x00000000</td></tr><tr><td>modTicket</td><td>1</td><td>0x00000001</td></tr><tr><td>modAdmin</td><td>2</td><td>0x00000002</td></tr><tr><td>modDocument</td><td>4</td><td>0x00000004</td></tr><tr><td>modHelp</td><td>8</td><td>0x00000008</td></tr><tr><td>modCustomer</td><td>16</td><td>0x00000010</td></tr><tr><td>modKnowledge</td><td>32</td><td>0x00000020</td></tr><tr><td>modPlanner</td><td>64</td><td>0x00000040</td></tr><tr><td>modAds</td><td>128</td><td>0x00000080</td></tr><tr><td>modSchedule</td><td>256</td><td>0x00000100</td></tr><tr><td>modStat</td><td>512</td><td>0x00000200</td></tr><tr><td>modRms</td><td>1024</td><td>0x00000400</td></tr><tr><td>modCustLang</td><td>2048</td><td>0x00000800</td></tr><tr><td>modExtDb</td><td>4096</td><td>0x00001000</td></tr><tr><td>modAdvancedFAQ</td><td>8192</td><td>0x00002000</td></tr><tr><td>modChat</td><td>16384</td><td>0x00004000</td></tr><tr><td>modSpm</td><td>32768</td><td>0x00008000</td></tr><tr><td>modSoap</td><td>65536</td><td>0x00010000</td></tr><tr><td>modSoapPublic</td><td>131072</td><td>0x00020000</td></tr><tr><td>modSms</td><td>26214</td><td>0x00040000</td></tr><tr><td>modBlogic</td><td>524288</td><td>0x00080000</td></tr><tr><td>modRetail</td><td>1048576</td><td>0x00100000</tr></body></table>"
   syntax: 
     content: String getProgram(Integer progId)
     parameters:
@@ -2114,7 +2496,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: The URL for the given program.
   example: 
 - uid: CRMScript.Global.Void.getProgramAjax()
   commentId: M:CRMScript.Global.Void.getProgramAjax()
@@ -2133,7 +2515,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: The URL for the given program.
   example: 
 - uid: CRMScript.Global.Void.getProgramBlogic()
   commentId: M:CRMScript.Global.Void.getProgramBlogic()
@@ -2152,7 +2534,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: The URL for the given program.
   example: 
 - uid: CRMScript.Global.Void.getProgramChat()
   commentId: M:CRMScript.Global.Void.getProgramChat()
@@ -2171,7 +2553,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: The URL for the given program.
   example: 
 - uid: CRMScript.Global.Void.getProgramCustomer()
   commentId: M:CRMScript.Global.Void.getProgramCustomer()
@@ -2190,7 +2572,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: The URL for the given program.
   example: 
 - uid: CRMScript.Global.Void.getProgramDocument()
   commentId: M:CRMScript.Global.Void.getProgramDocument()
@@ -2209,7 +2591,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: The URL for the given program.
   example: 
 - uid: CRMScript.Global.Void.getProgramHelp()
   commentId: M:CRMScript.Global.Void.getProgramHelp()
@@ -2228,7 +2610,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: The URL for the given program.
   example: 
 - uid: CRMScript.Global.Void.getProgramKnowledge()
   commentId: M:CRMScript.Global.Void.getProgramKnowledge()
@@ -2240,14 +2622,14 @@ items:
   nameWithType: Void.getProgramKnowledge()
   fullName: CRMScript.Global.Void.getProgramKnowledge()
   type: Method
-  summary: ""
+  summary: "\nReturns the URL of the knowledge base (document.exe).\n"
   remarks: 
   syntax: 
     content: String getProgramKnowledge()
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: The URL of the knowledge base (document.exe)
   example: 
 - uid: CRMScript.Global.Void.getProgramRms()
   commentId: M:CRMScript.Global.Void.getProgramRms()
@@ -2266,7 +2648,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: The URL for the given program.
   example: 
 - uid: CRMScript.Global.Void.getProgramSoap()
   commentId: M:CRMScript.Global.Void.getProgramSoap()
@@ -2285,7 +2667,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: The URL for the given program.
   example: 
 - uid: CRMScript.Global.Void.getProgramStat()
   commentId: M:CRMScript.Global.Void.getProgramStat()
@@ -2304,7 +2686,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: The URL for the given program.
   example: 
 - uid: CRMScript.Global.Void.getProgramTicket()
   commentId: M:CRMScript.Global.Void.getProgramTicket()
@@ -2323,7 +2705,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: The URL for the given program.
   example: 
 - uid: CRMScript.Global.Void.getReplyTemplateBody(Integer,Bool,Integer)
   commentId: M:CRMScript.Global.Void.getReplyTemplateBody(Integer,Bool,Integer)
@@ -2342,13 +2724,13 @@ items:
     parameters:
     - id: id
       type: CRMScript.Global.Integer
-      description: 
+      description: The database ID of the template.
     - id: useHTML
       type: CRMScript.Global.Bool
-      description: 
+      description: the HTML or plain text version?
     - id: langId
       type: CRMScript.Global.Integer
-      description: 
+      description: The preferred language; -1 specifies default.
     return:
       type: CRMScript.Global.String
       description:
@@ -2370,10 +2752,10 @@ items:
     parameters:
     - id: id
       type: CRMScript.Global.Integer
-      description: 
+      description: The database ID of the template.
     - id: langId
       type: CRMScript.Global.Integer
-      description: 
+      description: The preferred language; -1 specifies default.
     return:
       type: CRMScript.Global.String
       description:
@@ -2388,17 +2770,17 @@ items:
   nameWithType: Void.getScreenElementConfig(Integer)
   fullName: CRMScript.Global.Void.getScreenElementConfig(Integer)
   type: Method
-  summary: "\nReturns the config of the screen element with the given index in the current screen definition.<p></p>\nThe index can be retrieved with getHtmlElementIndex(elementName).\n"
+  summary: "\nReturns the config of the screen element with the given index in the current screen definition.\n"
   remarks: "\nCan only be called from a screen definition, it will fail if called from a regular script.\n"
   syntax: 
     content: Map getScreenElementConfig(Integer index)
     parameters:
     - id: index
       type: CRMScript.Global.Integer
-      description: 
+      description: The index of the element. Can be retrieved with getHtmlElementIndex(elementName).
     return:
       type: CRMScript.Global.Map
-      description:
+      description: A map containing the config of the element
   example: 
 - uid: CRMScript.Global.Void.getScreenElementId(Integer)
   commentId: M:CRMScript.Global.Void.getScreenElementId(Integer)
@@ -2410,17 +2792,17 @@ items:
   nameWithType: Void.getScreenElementId(Integer)
   fullName: CRMScript.Global.Void.getScreenElementId(Integer)
   type: Method
-  summary: "\nReturns the ID of the screen element with the given index in the current screen definition.<p></p>\nThe index can be retrieved with<code>getHtmlElementIndex(elementName)</code>.\n"
+  summary: "\nReturns the ID of the screen element with the given index in the current screen definition.\n"
   remarks: "\nCan only be called from a screen definition, it will fail if called from a regular script.\n"
   syntax: 
     content: Integer getScreenElementId(Integer index)
     parameters:
     - id: index
       type: CRMScript.Global.Integer
-      description: 
+      description: The index of the element. Can be retrieved with getHtmlElementIndex(elementName).
     return:
       type: CRMScript.Global.Integer
-      description:
+      description: The ID of the element
   example: 
 - uid: CRMScript.Global.Void.getScreenElementName(Integer)
   commentId: M:CRMScript.Global.Void.getScreenElementName(Integer)
@@ -2432,17 +2814,17 @@ items:
   nameWithType: Void.getScreenElementName(Integer)
   fullName: CRMScript.Global.Void.getScreenElementName(Integer)
   type: Method
-  summary: "\nReturns the name of the screen element with the given index in the current screen definition.<p></p>\nThe index can be retrieved with<code>getHtmlElementIndex(elementName)</code>.\n"
+  summary: "\nReturns the name of the screen element with the given index in the current screen definition.\n"
   remarks: "\nCan only be called from a screen definition, it will fail if called from a regular script.\n"
   syntax: 
     content: String getScreenElementName(Integer index)
     parameters:
     - id: index
       type: CRMScript.Global.Integer
-      description: 
+      description: The index of the element. Can be retrieved with getHtmlElementIndex(elementName).
     return:
       type: CRMScript.Global.String
-      description:
+      description: An integer defining the type of the element
   example: 
 - uid: CRMScript.Global.Void.getScreenElementType(Integer)
   commentId: M:CRMScript.Global.Void.getScreenElementType(Integer)
@@ -2454,14 +2836,14 @@ items:
   nameWithType: Void.getScreenElementType(Integer)
   fullName: CRMScript.Global.Void.getScreenElementType(Integer)
   type: Method
-  summary: "\nReturns the type of the screen element with the given index in the current screen definition.<p></p>\nThe index can be retrieved with<code>getHtmlElementIndex(elementName)</code>.\n"
-  remarks: "\nCan only be called from a screen definition, it will fail if called from a regular script.\n"
+  summary: "\nReturns the type of the screen element with the given index in the current screen definition.\n"
+  remarks: "\nCan only be called from a screen definition, it will fail if called from a regular script.\n<h3>Simple elements</h3><ul><li>TypeAnchorLine = 1,</li><li>TypeInfoFields = 2,</li><li>TypeGrid = 3,</li><li>TypeHR = 4,</li><li>TypeBR = 5,</li><li>TypeSubHeader = 6,</li><li>TypeParserCode = 7,</li><li>TypeMessages = 8,</li><li>TypeEjScript = 9,</li><li>TypeHtmlGrid = 10,</li><li>TypePlanner = 11,</li><li>TypeStaticGrid = 12,</li><li>TypeDrillDown = 13,</li><li>TypeGenericGrid = 14,</li><li>TypeInfoFields2 = 15,</li><li>TypeExtraTableEntriesGrid = 16,</li><li>TypeDirectedAcyclicGraph = 17,</li></ul><h>Form elements</h3><ul><li>TypeText = 101,</li><li>TypeTextarea = 102,</li><li>TypeSelectCategory = 103,</li><li>TypeSelectCustomer = 104,</li><li>TypeSelectCompany = 105,</li><li>TypeSelectDate = 106,</li><li>TypeSelectDateTime = 107,</li><li>TypeSelectTime = 108,</li><li>TypeButtonRow = 109,</li><li>TypeCheckbox = 110,</li><li>TypeEditor = 111,</li><li>TypeInvoice = 112,</li><li>TypeSelectUser = 113,</li><li>TypeSelectExtraField = 114,</li><li>TypeSelect = 115,</li><li>TypeSendTo = 116,</li><li>TypeSelectReplyTemplate = 117,</li><li>TypeSelectTimeSpan = 118,</li><li>TypeSelectRelation = 119,</li><li>TypeSelectPriority = 120,</li><li>TypeCc = 121,</li><li>TypeAttachment = 122,</li><li>TypeSelectSlevel = 123,</li><li>TypeCustomers = 124,</li><li>TypeSelectFaq = 125,</li><li>TypeSelectDictionaryLang = 126,</li><li>TypeButton = 127,</li><li>TypeSelectMultipleRelations = 128,</li><li>TypeTreeExplorer = 129,</li><li>TypePinEdit = 130,</li><li>TypeContactRecipients = 131,</li><li>TypeTicketStatus = 132,</li><li>TypeSelectMessage = 133,</li><li>TypeCategoryMembership = 134,</li><li>TypeAddressBook = 135,</li><li>TypeRelatedDropdowns = 136,</li><li>TypeSelectTicketStatus = 137,</li><li>TypeSelectTable = 138,</li><li>TypeFckEdit = 139,</li><li>TypeWhere = 140,</li><li>TypeSelectInsertText = 141,</li><li>TypeRadioButtons = 142,</li></ul><h3>Groups</h3><ul><li>TypeFieldset = 201,</li><li>TypeLayoutTable = 202,</li><li>TypePanes = 203,</li><li>TypePane = 204,</li><li>TypeVerticalTable = 205,</li></ul><h3>Group end marker</h3><ul><li>TypeGroupEnd = 301</li></ul>\n"
   syntax: 
     content: Integer getScreenElementType(Integer index)
     parameters:
     - id: index
       type: CRMScript.Global.Integer
-      description: 
+      description: The index of the element. Can be retrieved with getHtmlElementIndex(elementName).
     return:
       type: CRMScript.Global.Integer
       description:
@@ -2486,7 +2868,7 @@ items:
       description: The ID string of the script
     return:
       type: CRMScript.Global.Integer
-      description:
+      description: The ID of the script matching the parameter; null if no match found. 
   example: 
 - uid: CRMScript.Global.Void.getSelectionIds(Integer)
   commentId: M:CRMScript.Global.Void.getSelectionIds(Integer)
@@ -2501,14 +2883,14 @@ items:
   summary: "\nReturns the IDs of the objects in the selection with the given ID.\n"
   remarks: 
   syntax: 
-    content: Integer[] getSelectionIds(Integer p0)
+    content: Integer[] getSelectionIds(Integer id)
     parameters:
-    - id: p0
+    - id: id
       type: CRMScript.Global.Integer
-      description: 
+      description: ID of the selection
     return:
       type: CRMScript.Global.Integer[]
-      description:
+      description: The IDs of the objects in the selection
   example: 
 - uid: CRMScript.Global.Void.getSessionVariable(String)
   commentId: M:CRMScript.Global.Void.getSessionVariable(String)
@@ -2527,10 +2909,10 @@ items:
     parameters:
     - id: name
       type: CRMScript.Global.String
-      description: 
+      description: Name of variable to read
     return:
       type: CRMScript.Global.String
-      description:
+      description: String value if found
   example: 
 - uid: CRMScript.Global.Void.getSessionVariables()
   commentId: M:CRMScript.Global.Void.getSessionVariables()
@@ -2542,14 +2924,14 @@ items:
   nameWithType: Void.getSessionVariables()
   fullName: CRMScript.Global.Void.getSessionVariables()
   type: Method
-  summary: ""
+  summary: "\nReturns a map containing all session variables for the current session.\n"
   remarks: 
   syntax: 
     content: Map getSessionVariables()
     parameters: []
     return:
       type: CRMScript.Global.Map
-      description:
+      description: all session variables for the current session.
   example: 
 - uid: CRMScript.Global.Void.getStatusIdFromName(String)
   commentId: M:CRMScript.Global.Void.getStatusIdFromName(String)
@@ -2564,14 +2946,14 @@ items:
   summary: "\nReturns the ID of the status with the given name.\n"
   remarks: 
   syntax: 
-    content: Integer getStatusIdFromName(String p0)
+    content: Integer getStatusIdFromName(String name)
     parameters:
-    - id: p0
+    - id: name
       type: CRMScript.Global.String
-      description: 
+      description: Name of the document
     return:
       type: CRMScript.Global.Integer
-      description:
+      description: The ID of the status
   example: 
 - uid: CRMScript.Global.Void.getSystemFlags()
   commentId: M:CRMScript.Global.Void.getSystemFlags()
@@ -2590,7 +2972,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description:
+      description: flags
   example: 
 - uid: CRMScript.Global.Void.getSystemLang()
   commentId: M:CRMScript.Global.Void.getSystemLang()
@@ -2602,14 +2984,14 @@ items:
   nameWithType: Void.getSystemLang()
   fullName: CRMScript.Global.Void.getSystemLang()
   type: Method
-  summary: ""
+  summary: "\nReturns the active system language.\n"
   remarks: 
   syntax: 
     content: String getSystemLang()
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: The active system language
   example: 
 - uid: CRMScript.Global.Void.getUserLang()
   commentId: M:CRMScript.Global.Void.getUserLang()
@@ -2621,14 +3003,14 @@ items:
   nameWithType: Void.getUserLang()
   fullName: CRMScript.Global.Void.getUserLang()
   type: Method
-  summary: ""
+  summary: "\nReturns the active user language.\n"
   remarks: 
   syntax: 
     content: String getUserLang()
     parameters: []
     return:
       type: CRMScript.Global.String
-      description:
+      description: The active user language.
   example: 
 - uid: CRMScript.Global.Void.getUsername(Integer)
   commentId: M:CRMScript.Global.Void.getUsername(Integer)
@@ -2647,10 +3029,10 @@ items:
     parameters:
     - id: userId
       type: CRMScript.Global.Integer
-      description: 
+      description: The user ID.
     return:
       type: CRMScript.Global.String
-      description:
+      description: Username
   example: 
 - uid: CRMScript.Global.Void.getVariable(String)
   commentId: M:CRMScript.Global.Void.getVariable(String)
@@ -2672,7 +3054,7 @@ items:
       description: The name of the variable.
     return:
       type: CRMScript.Global.String
-      description:
+      description: The value of the variable.
   example: 
 - uid: CRMScript.Global.Void.getVariables()
   commentId: M:CRMScript.Global.Void.getVariables()
@@ -2684,14 +3066,14 @@ items:
   nameWithType: Void.getVariables()
   fullName: CRMScript.Global.Void.getVariables()
   type: Method
-  summary: ""
+  summary: "\nReturns a map containing all run time environment variables (available through getVariable()).\n"
   remarks: 
   syntax: 
     content: Map getVariables()
     parameters: []
     return:
       type: CRMScript.Global.Map
-      description:
+      description: all run time environment variables
   example: 
 - uid: CRMScript.Global.Void.getWarnings()
   commentId: M:CRMScript.Global.Void.getWarnings()
@@ -2703,14 +3085,14 @@ items:
   nameWithType: Void.getWarnings()
   fullName: CRMScript.Global.Void.getWarnings()
   type: Method
-  summary: "\nReturns a list of the current system warnings. Warnings are messages intended for system administrators, such as email failure warnings, expired FAQ entries, etc. They are normally listed on the status screen.\n"
-  remarks: 
+  summary: "\nReturns a map of the current system warnings.\n"
+  remarks: "\nWarnings are messages intended for system administrators, such as email failure warnings, expired FAQ entries, etc. They are normally listed on the status screen.\n"
   syntax: 
     content: Map getWarnings()
     parameters: []
     return:
       type: CRMScript.Global.Map
-      description:
+      description: The current system warnings
   example: 
 - uid: CRMScript.Global.Void.htmlConvToText(String)
   commentId: M:CRMScript.Global.Void.htmlConvToText(String)
@@ -2729,10 +3111,10 @@ items:
     parameters:
     - id: text
       type: CRMScript.Global.String
-      description: 
+      description: An HTML text.
     return:
       type: CRMScript.Global.String
-      description:
+      description: A textual version of the HTML text.
   example: 
 - uid: CRMScript.Global.Void.idToLang(Integer)
   commentId: M:CRMScript.Global.Void.idToLang(Integer)
@@ -2751,10 +3133,10 @@ items:
     parameters:
     - id: langId
       type: CRMScript.Global.Integer
-      description: 
+      description: Language ID
     return:
       type: CRMScript.Global.String
-      description:
+      description: Language code of the given language ID
   example: 
 - uid: CRMScript.Global.Void.invoiceTypesExists()
   commentId: M:CRMScript.Global.Void.invoiceTypesExists()
@@ -2766,14 +3148,14 @@ items:
   nameWithType: Void.invoiceTypesExists()
   fullName: CRMScript.Global.Void.invoiceTypesExists()
   type: Method
-  summary: "\nChecks if invoice types exist in the database\n"
+  summary: "\nChecks if invoice types exist in the database.\n"
   remarks: 
   syntax: 
     content: Bool invoiceTypesExists()
     parameters: []
     return:
       type: CRMScript.Global.Bool
-      description:
+      description: True if there are invoice types; otherwise, False.
   example: 
 - uid: CRMScript.Global.Void.isValidPhoneNumber(String,Bool)
   commentId: M:CRMScript.Global.Void.isValidPhoneNumber(String,Bool)
@@ -2792,13 +3174,13 @@ items:
     parameters:
     - id: nr
       type: CRMScript.Global.String
-      description: 
+      description: Number to check
     - id: isMultiple
       type: CRMScript.Global.Bool
-      description: 
+      description: True if more than one phone number (comma separated)
     return:
       type: CRMScript.Global.Bool
-      description:
+      description: True if valid phone number; otherwise, false.
   example: 
 - uid: CRMScript.Global.Void.langToId(String)
   commentId: M:CRMScript.Global.Void.langToId(String)
@@ -2817,34 +3199,10 @@ items:
     parameters:
     - id: langCode
       type: CRMScript.Global.String
-      description: 
+      description: Language code
     return:
       type: CRMScript.Global.Integer
-      description: If no match, it returns 0 (which is Norwegian)
-  example: 
-- uid: CRMScript.Global.Void.License(String,String)
-  commentId: M:CRMScript.Global.Void.License(String,String)
-  id: 'License(String,String)'
-  so.intellisense: Void.License
-  langs:
-  - crmscript
-  name: 'License(String,String)'
-  nameWithType: Void.License(String,String)
-  fullName: CRMScript.Global.Void.License(String,String)
-  type: Method
-  summary: "\nDeprecated in 7.1.<p></p>\nLicense constructor.\n"
-  remarks: 
-  syntax: 
-    content: License License(String host, String license)
-    parameters:
-    - id: host
-      type: CRMScript.Global.String
-      description: 
-    - id: license
-      type: CRMScript.Global.String
-      description: 
-    return:
-      type: CRMScript.Native.License
+      description: ID of the given language code. If no match, it returns 0 (which is Norwegian).
   example: 
 - uid: CRMScript.Global.Void.log(String)
   commentId: M:CRMScript.Global.Void.log(String)
@@ -2863,7 +3221,7 @@ items:
     parameters:
     - id: msg
       type: CRMScript.Global.String
-      description: 
+      description: The message to write.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -2877,76 +3235,16 @@ items:
   nameWithType: Void.logMessage(String)
   fullName: CRMScript.Global.Void.logMessage(String)
   type: Method
-  summary: "\nThis function will write a message to the log file.\n"
+  summary: "\nWrites a message to the log file.\n"
   remarks: 
   syntax: 
     content: Void logMessage(String message)
     parameters:
     - id: message
       type: CRMScript.Global.String
-      description: 
+      description: The message to log.
     return:
       type: CRMScript.Global.Void
-  example: 
-- uid: CRMScript.Global.Void.MacroParameter(String,String,String,String,Bool,String)
-  commentId: M:CRMScript.Global.Void.MacroParameter(String,String,String,String,Bool,String)
-  id: 'MacroParameter(String,String,String,String,Bool,String)'
-  so.intellisense: Void.MacroParameter
-  langs:
-  - crmscript
-  name: 'MacroParameter(String,String,String,String,Bool,String)'
-  nameWithType: Void.MacroParameter(String,String,String,String,Bool,String)
-  fullName: CRMScript.Global.Void.MacroParameter(String,String,String,String,Bool,String)
-  type: Method
-  summary: "\nMacroParameter constructor. You can optionally pass a default value and specify whether or not it is fixed.<p></p>\nThe Map control-configuration values the type of the parameter allow is also optional.\n"
-  remarks: 
-  syntax: 
-    content: MacroParameter MacroParameter()
-    parameters:
-    - id: name
-      type: CRMScript.Global.String
-      description: The name of the parameter.
-    - id: type
-      type: CRMScript.Global.String
-      description: The type of the parameter.
-    - id: label
-      type: CRMScript.Global.String
-      description: The label of the parameter.
-    - id: description
-      type: CRMScript.Global.String
-      description: A longer description of the parameter.
-    - id: isOptional
-      type: CRMScript.Global.Bool
-      description: Whether the parameter is optional.
-    - id: defaultValue
-      type: CRMScript.Global.String
-      description: 
-    return:
-      type: CRMScript.Native.MacroParameter
-  example: 
-- uid: CRMScript.Global.Void.MacroReturnValue(String,String)
-  commentId: M:CRMScript.Global.Void.MacroReturnValue(String,String)
-  id: 'MacroReturnValue(String,String)'
-  so.intellisense: Void.MacroReturnValue
-  langs:
-  - crmscript
-  name: 'MacroReturnValue(String,String)'
-  nameWithType: Void.MacroReturnValue(String,String)
-  fullName: CRMScript.Global.Void.MacroReturnValue(String,String)
-  type: Method
-  summary: "\nCreates and returns a macro return value.\n"
-  remarks: 
-  syntax: 
-    content: MacroReturnValue MacroReturnValue(String p0, String p1)
-    parameters:
-    - id: p0
-      type: CRMScript.Global.String
-      description: 
-    - id: p1
-      type: CRMScript.Global.String
-      description: 
-    return:
-      type: CRMScript.Native.MacroReturnValue
   example: 
 - uid: CRMScript.Global.Void.makePassword(Integer)
   commentId: M:CRMScript.Global.Void.makePassword(Integer)
@@ -2961,14 +3259,39 @@ items:
   summary: "\nUsed to create a random password of length p, with the given seed charactersCreates and returns a random password of the given length. You can optionally pass the given seed characters.\n"
   remarks: 
   syntax: 
-    content: String makePassword()
+    content: String makePassword(Integer length)
     parameters:
     - id: length
       type: CRMScript.Global.Integer
       description: Length of password
     return:
       type: CRMScript.Global.String
-      description:
+      description: A random password of the given length
+  example: 
+- uid: CRMScript.Global.Void.makePassword(Integer,String)
+  commentId: M:CRMScript.Global.Void.makePassword(Integer,String)
+  id: 'makePassword(Integer,String)'
+  so.intellisense: Void.makePassword
+  langs:
+  - crmscript
+  name: 'makePassword(Integer,String)'
+  nameWithType: Void.makePassword(Integer,String)
+  fullName: CRMScript.Global.Void.makePassword(Integer,String)
+  type: Method
+  summary: "\nUsed to create a random password of length p, with the given seed charactersCreates and returns a random password of the given length.\n"
+  remarks: 
+  syntax: 
+    content: String makePassword(Integer length, String seed)
+    parameters:
+    - id: length
+      type: CRMScript.Global.Integer
+      description: Length of password
+    - id: seed
+      type: CRMScript.Global.String
+      description: Valid characters
+    return:
+      type: CRMScript.Global.String
+      description: A random password of the given length.
   example: 
 - uid: CRMScript.Global.Void.mapValue(String)
   commentId: M:CRMScript.Global.Void.mapValue(String)
@@ -2990,7 +3313,7 @@ items:
       description: 
     return:
       type: CRMScript.Global.Map
-      description:
+      description: A map containing the value.
   example: 
 - uid: CRMScript.Global.Void.modulo(Integer,Integer)
   commentId: M:CRMScript.Global.Void.modulo(Integer,Integer)
@@ -3009,13 +3332,13 @@ items:
     parameters:
     - id: a
       type: CRMScript.Global.Integer
-      description: 
+      description: The number to divide.
     - id: b
       type: CRMScript.Global.Integer
-      description: 
+      description: The number to divide by.
     return:
       type: CRMScript.Global.Integer
-      description:
+      description: The result of a modulo b
   example: 
 - uid: CRMScript.Global.Void.parseJSON(String)
   commentId: M:CRMScript.Global.Void.parseJSON(String)
@@ -3078,9 +3401,10 @@ items:
     parameters:
     - id: xmlDocument
       type: CRMScript.Global.String
-      description: 
+      description: The XML document
     return:
       type: CRMScript.Global.XMLNode
+      description: The root XMLNode.
   example: 
 - uid: CRMScript.Global.Void.pow()
   commentId: M:CRMScript.Global.Void.pow()
@@ -3092,14 +3416,20 @@ items:
   nameWithType: Void.pow()
   fullName: CRMScript.Global.Void.pow()
   type: Method
-  summary: "\nThe pow function returns base raised to the expth power.<p></p>\nIf the base is zero and exp is less than or equal to zero, or the base is negative and exp is not an integer, an invalid float like -1.#IND0 will be returned<p></p>\nIf the result is too large an invalid float like 1.#INF0 will be returned.\n"
+  summary: "\nThe pow function returns base raised to the expth power.\n"
   remarks: 
   syntax: 
     content: Float pow(Float base, Float exp)
     parameters:
+    - id: base
+      type: CRMScript.Global.Float
+      description: The base.
+    - id: exp
+      type: CRMScript.Global.Float
+      description: The exponent.
     return:
       type: CRMScript.Global.Float
-      description:
+      description: The base raised to the expth power. If the base is zero and exp is less than or equal to zero, or the base is negative and exp is not an integer, an invalid float like -1.#IND0 will be returned. If the result is too large an invalid float like 1.#INF0 will be returned.
   example: 
 - uid: CRMScript.Global.Void.print(String)
   commentId: M:CRMScript.Global.Void.print(String)
@@ -3111,32 +3441,58 @@ items:
   nameWithType: Void.print(String)
   fullName: CRMScript.Global.Void.print(String)
   type: Method
-  summary: "\nPrints the string to the screen. Will only work in certain contexts (i.e. when there is a screen to print to).\n"
-  remarks: 
+  summary: "\nPrints the string to the screen.\n"
+  remarks: "\nWill only work in certain contexts (when there is a screen to print to).\n"
   syntax: 
     content: Void print(String s)
     parameters:
     - id: s
       type: CRMScript.Global.String
-      description: 
+      description: The string to print.
     return:
       type: CRMScript.Global.Void
   example: 
-- uid: CRMScript.Global.Void.printBinary()
-  commentId: M:CRMScript.Global.Void.printBinary()
-  id: 'printBinary()'
+- uid: CRMScript.Global.Void.printBinary(Byte[])
+  commentId: M:CRMScript.Global.Void.printBinary(Byte[])
+  id: 'printBinary(Byte[])'
   so.intellisense: Void.printBinary
   langs:
   - crmscript
-  name: 'printBinary()'
-  nameWithType: Void.printBinary()
-  fullName: CRMScript.Global.Void.printBinary()
+  name: 'printBinary(Byte[])'
+  nameWithType: Void.printBinary(Byte[])
+  fullName: CRMScript.Global.Void.printBinary(Byte[])
   type: Method
-  summary: "\nOutputs the bytes to the standard output streamOutput the bytes to the standard output stream. You can pass the data to encode as either Byte[] or NSStream.\n"
+  summary: "\nOutputs the bytes to the standard output stream. You can pass the data to encode as either Byte[] or NSStream.\n"
   remarks: 
   syntax: 
-    content: Void printBinary(Byte[]), printBinary(NSStream)
+    content: Void printBinary(Byte[])
     parameters:
+    - id: data
+      type: CRMScript.Global.Byte[]
+      description: The binary data to output
+    return:
+      type: CRMScript.Global.Void
+  example: 
+- uid: CRMScript.Global.Void.printBinary(NSStream)
+  commentId: M:CRMScript.Global.Void.printBinary(NSStream)
+  id: 'printBinary(NSStream)'
+  so.intellisense: Void.printBinary
+  langs:
+  - crmscript
+  name: 'printBinary(NSStream)'
+  nameWithType: Void.printBinary(NSStream)
+  fullName: CRMScript.Global.Void.printBinary(NSStream)
+  type: Method
+  summary: "\nOutputs the bytes to the standard output stream. You can pass the data to encode as either Byte[] or NSStream.\n"
+  remarks: 
+  syntax: 
+    content: Void printBinary(NSStream)
+    parameters:
+    - id: data
+      type: CRMScript.NetServer.NSStream
+      description: The binary data to output
+    return:
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.Global.Void.printDebug(String)
   commentId: M:CRMScript.Global.Void.printDebug(String)
@@ -3155,7 +3511,7 @@ items:
     parameters:
     - id: debug
       type: CRMScript.Global.String
-      description: 
+      description: the string to print
     return:
       type: CRMScript.Global.Void
   example: 
@@ -3169,14 +3525,14 @@ items:
   nameWithType: Void.printLine(String)
   fullName: CRMScript.Global.Void.printLine(String)
   type: Method
-  summary: ""
+  summary: "\nPrints lines into standard output without appending \\r\\n in p_line.\n"
   remarks: 
   syntax: 
     content: Void printLine(String line)
     parameters:
     - id: line
       type: CRMScript.Global.String
-      description: 
+      description:  The line to print.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -3197,13 +3553,13 @@ items:
     parameters:
     - id: min
       type: CRMScript.Global.Integer
-      description: 
+      description: The minimum value to return.
     - id: max
       type: CRMScript.Global.Integer
-      description: 
+      description: The maximum value to return.
     return:
       type: CRMScript.Global.Integer
-      description:
+      description: A random value min &lt;= r &lt;= max
   example: 
 - uid: CRMScript.Global.Void.reloadAndSendShipment(Integer)
   commentId: M:CRMScript.Global.Void.reloadAndSendShipment(Integer)
@@ -3215,8 +3571,8 @@ items:
   nameWithType: Void.reloadAndSendShipment(Integer)
   fullName: CRMScript.Global.Void.reloadAndSendShipment(Integer)
   type: Method
-  summary: "\nReloads mailings selections and schedule to send again immediately. Used when you have added more people to the selection and want to send to them as well.\n"
-  remarks: 
+  summary: "\nReloads mailings selections and schedule to send again immediately.\n"
+  remarks: "\nUsed when you have added more people to the selection and want to send to them as well.\n"
   syntax: 
     content: Bool reloadAndSendShipment(Integer shipmentId)
     parameters:
@@ -3225,7 +3581,7 @@ items:
       description: 
     return:
       type: CRMScript.Global.Bool
-      description: True if it worked. False if it did not work, because the mailing was in an illegal state for this operation.
+      description: True if it worked; False if it did not work, because the mailing was in an illegal state for this operation.
   example: 
 - uid: CRMScript.Global.Void.removeHtmlElement(Integer)
   commentId: M:CRMScript.Global.Void.removeHtmlElement(Integer)
@@ -3244,7 +3600,7 @@ items:
     parameters:
     - id: index
       type: CRMScript.Global.Integer
-      description: 
+      description: The index of the element to remove
     return:
       type: CRMScript.Global.Void
   example: 
@@ -3258,8 +3614,8 @@ items:
   nameWithType: Void.resetChat(Integer)
   fullName: CRMScript.Global.Void.resetChat(Integer)
   type: Method
-  summary: ""
-  remarks: 
+  summary: "\nResets a chat session and places it in queue/pre-chat-form/offline-form depending on the topic's settings.\n"
+  remarks: "\nTypically called when a Bot wants to transfer a chat session to a human user agent.\n"
   syntax: 
     content: Void resetChat(Integer sessionId)
     parameters:
@@ -3279,14 +3635,39 @@ items:
   nameWithType: Void.runProgram(String)
   fullName: CRMScript.Global.Void.runProgram(String)
   type: Method
-  summary: "\nExecutes a command and returns the output (stdout)Executes the program (given command) and returns what was sent to stdout. You can optionally pass the codepage used.<p></p>\nThe owner of the process running the CRMScript needs permissions to execute the program.\n"
-  remarks: 
+  summary: "\nExecutes the program (given command) and returns what was sent to stdout. <strong>This method is not available in CRM Online.</strong>\n"
+  remarks: "\nThe owner of the process running the CRMScript needs permissions to execute the program. You can optionally pass the codepage used.\n"
   syntax: 
-    content: String runProgram()
+    content: String runProgram(String command)
     parameters:
     - id: command
       type: CRMScript.Global.String
       description: Command line  path to program and parameters
+    return:
+      type: CRMScript.Global.String
+      description:
+  example: 
+- uid: CRMScript.Global.Void.runProgram(String,String)
+  commentId: M:CRMScript.Global.Void.runProgram(String,String)
+  id: 'runProgram(String,String)'
+  so.intellisense: Void.runProgram
+  langs:
+  - crmscript
+  name: 'runProgram(String,String)'
+  nameWithType: Void.runProgram(String,String)
+  fullName: CRMScript.Global.Void.runProgram(String,String)
+  type: Method
+  summary: "\nExecutes the program (given command) with a codepage and returns what was sent to stdout. <strong>This method is not available in CRM Online.</strong>\n"
+  remarks: "\nThe owner of the process running the CRMScript needs permissions to execute the program.\n"
+  syntax: 
+    content: String runProgram(String command, String codepage)
+    parameters:
+    - id: command
+      type: CRMScript.Global.String
+      description: Command line  path to program and parameters
+    - id: codepage
+      type: CRMScript.Global.String
+      description: The codepage used
     return:
       type: CRMScript.Global.String
       description:
@@ -3308,10 +3689,10 @@ items:
     parameters:
     - id: name
       type: CRMScript.Global.String
-      description: 
+      description: The name of attachments to be saved.
     return:
       type: CRMScript.Global.Integer[]
-      description:
+      description: An array containing the attachment IDs of all the saved attachments.
   example: 
 - uid: CRMScript.Global.Void.saveCgiAttachment(String)
   commentId: M:CRMScript.Global.Void.saveCgiAttachment(String)
@@ -3323,17 +3704,17 @@ items:
   nameWithType: Void.saveCgiAttachment(String)
   fullName: CRMScript.Global.Void.saveCgiAttachment(String)
   type: Method
-  summary: "\nSaves the attachment in cgi variable with the name given in p_varName and return the ID of the attachment record in the attachment table.\n"
+  summary: "\nSaves the attachment in cgi variable with the name given and returns the ID of the attachment record in the attachment table.\n"
   remarks: 
   syntax: 
-    content: Integer saveCgiAttachment(String p_varName)
+    content: Integer saveCgiAttachment(String varName)
     parameters:
-    - id: p_varName
+    - id: varName
       type: CRMScript.Global.String
-      description: 
+      description: The name of cgi variable
     return:
       type: CRMScript.Global.Integer
-      description:
+      description: The ID of the saved attachment
   example: 
 - uid: CRMScript.Global.Void.setChatStatus(Integer,Integer)
   commentId: M:CRMScript.Global.Void.setChatStatus(Integer,Integer)
@@ -3345,8 +3726,8 @@ items:
   nameWithType: Void.setChatStatus(Integer,Integer)
   fullName: CRMScript.Global.Void.setChatStatus(Integer,Integer)
   type: Method
-  summary: "\nChanges the status of a chat session. The available statuses are:<p></p>\n<ul><li>StatusInvalid = 0,</li><li>StatusPreChatForm = 1,</li><li>StatusFaq = 2,</li><li>StatusOfflineForm = 3,</li><li>StatusInQueue = 4,</li><li>StatusCustomerLast = 5,</li><li>StatusUserLast = 6,</li><li>StatusFinished = 7,</li><li>StatusDeleted = 8,</li><li>StatusClosed = 9,</li><li>StatusRequestPosted = 10,</li></ul>\n"
-  remarks: 
+  summary: "\nChanges the status of a chat session.\n"
+  remarks: "\nThe available statuses are:<p></p>\n<ul><li>StatusInvalid = 0,</li><li>StatusPreChatForm = 1,</li><li>StatusFaq = 2,</li><li>StatusOfflineForm = 3,</li><li>StatusInQueue = 4,</li><li>StatusCustomerLast = 5,</li><li>StatusUserLast = 6,</li><li>StatusFinished = 7,</li><li>StatusDeleted = 8,</li><li>StatusClosed = 9,</li><li>StatusRequestPosted = 10,</li></ul>\n"
   syntax: 
     content: Void SetChatStatus(Integer sessionId, Integer status)
     parameters:
@@ -3369,8 +3750,8 @@ items:
   nameWithType: Void.setCookie(String,String,Bool)
   fullName: CRMScript.Global.Void.setCookie(String,String,Bool)
   type: Method
-  summary: ""
-  remarks: 
+  summary: "\n<strong>This method is not available in CRM Online.</strong>\n"
+  remarks: "\nNB! Doesn't work in the customer center, use parser variable with an underscore (_) instead.\n"
   syntax: 
     content: Void setCookie(String name, String value, Bool persistent)
     parameters:
@@ -3420,8 +3801,8 @@ items:
   nameWithType: Void.setFromCgi()
   fullName: CRMScript.Global.Void.setFromCgi()
   type: Method
-  summary: ""
-  remarks: 
+  summary: "\nSets all the elements of the associated screen from the global CGI instance. This is normally done when a screen is loaded/reloaded but after the load script."
+  remarks: "\nThis function allows one to force this element initialization in the script, so that values may be accessed.n\n"
   syntax: 
     content: Void SetFromCgi()
     parameters: []
@@ -3445,10 +3826,10 @@ items:
     parameters:
     - id: name
       type: CRMScript.Global.String
-      description: 
+      description: The name of the variable.
     - id: value
       type: CRMScript.Global.String
-      description: 
+      description: The value of the variable.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -3469,10 +3850,10 @@ items:
     parameters:
     - id: name
       type: CRMScript.Global.String
-      description: 
+      description: The name of the variable.
     - id: value
       type: CRMScript.Global.String
-      description: 
+      description: The value of the variable.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -3528,14 +3909,14 @@ items:
   nameWithType: Void.setPageRefresh(Integer)
   fullName: CRMScript.Global.Void.setPageRefresh(Integer)
   type: Method
-  summary: "\nSets the page meta refresh to the specified seconds, thus making the screen refresh. If this method is used in a script that is not connected to a screen, nothing will happen.\n"
-  remarks: 
+  summary: "\nSets the page meta refresh to the specified seconds, thus making the screen refresh.\n"
+  remarks: "\nIf this method is used in a script that is not connected to a screen, nothing will happen.\n"
   syntax: 
-    content: Void SetPageRefresh(Integer p_seconds)
+    content: Void SetPageRefresh(Integer seconds)
     parameters:
-    - id: p_seconds
+    - id: seconds
       type: CRMScript.Global.Integer
-      description: 
+      description: Number of seconds for the refresh
     return:
       type: CRMScript.Global.Void
   example: 
@@ -3549,7 +3930,7 @@ items:
   nameWithType: Void.setPageTitle(String)
   fullName: CRMScript.Global.Void.setPageTitle(String)
   type: Method
-  summary: ""
+  summary: "\nAlters the page title. You will be able to set the text after the version information.\n"
   remarks: 
   syntax: 
     content: Void SetPageTitle(String title)
@@ -3577,31 +3958,34 @@ items:
     parameters:
     - id: name
       type: CRMScript.Global.String
-      description: 
+      description: The name of the variable.
     - id: value
       type: CRMScript.Global.String
-      description: 
+      description: The value of the variable.
     return:
       type: CRMScript.Global.Void
   example: 
-- uid: CRMScript.Global.Void.setSessionVariable(String)
-  commentId: M:CRMScript.Global.Void.setSessionVariable(String)
-  id: 'setSessionVariable(String)'
+- uid: CRMScript.Global.Void.setSessionVariable(String,String)
+  commentId: M:CRMScript.Global.Void.setSessionVariable(String,String)
+  id: 'setSessionVariable(String,String)'
   so.intellisense: Void.setSessionVariable
   langs:
   - crmscript
-  name: 'setSessionVariable(String)'
-  nameWithType: Void.setSessionVariable(String)
-  fullName: CRMScript.Global.Void.setSessionVariable(String)
+  name: 'setSessionVariable(String,String)'
+  nameWithType: Void.setSessionVariable(String,String)
+  fullName: CRMScript.Global.Void.setSessionVariable(String,String)
   type: Method
-  summary: "\nWrites a SessionObject entry to the databaseWrites a SessionObject entry to the database. This function makes it possible to store variables in the database which the web application can use as long as a session lives. That is until a user logs out.\n"
-  remarks: 
+  summary: "\nWrites a SessionObject entry to the databaseWrites a SessionObject entry to the database.\n"
+  remarks: "\nStores variables in the database that the web application can use as long as a session lives (until a user logs out).\n"
   syntax: 
-    content: String setSessionVariable()
+    content: String setSessionVariable(String name, String value)
     parameters:
     - id: name
       type: CRMScript.Global.String
-      description: Entry name. May be empty, in which case the ID of the first row will be used.
+      description: Name of variable. May be empty, in which case the ID of the first row will be used.
+    - id: value
+      type: CRMScript.Global.String
+      description: Value to store.
     return:
       type: CRMScript.Global.String
       description:
@@ -3616,7 +4000,7 @@ items:
   nameWithType: Void.setUserIsTyping(Integer,Bool)
   fullName: CRMScript.Global.Void.setUserIsTyping(Integer,Bool)
   type: Method
-  summary: ""
+  summary: "\nSets or clears the &quot;User is typing&quot; flag of a chat session.\n"
   remarks: 
   syntax: 
     content: Void SetUserIsTyping(Integer sessionId, Bool isTyping)
@@ -3647,10 +4031,10 @@ items:
     parameters:
     - id: name
       type: CRMScript.Global.String
-      description: 
+      description: The name of the variable.
     - id: value
       type: CRMScript.Global.String
-      description: 
+      description: The value of the variable.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -3664,16 +4048,17 @@ items:
   nameWithType: Void.simpleTwoWay(Byte[])
   fullName: CRMScript.Global.Void.simpleTwoWay(Byte[])
   type: Method
-  summary: "\nSimple two-way data encryption.<p></p>\nThe functions works both ways. Data -&gt; Encrypted data -&gt; data<p></p>\n<ul><li><strong>data:</strong>Byte array to encrypt/decrypt.</li></ul>\n"
+  summary: "\nSimple two-way data encryption.  Data -&gt; Encrypted data -&gt; data\n"
   remarks: 
   syntax: 
     content: Byte[] simpleTwoWay(Byte[] data)
     parameters:
     - id: data
       type: CRMScript.Global.Byte[]
-      description: 
+      description: Byte array to encrypt/decrypt.
     return:
       type: CRMScript.Global.Byte[]
+      description: Byte array with encrypted/decrypted data.
   example: 
 - uid: CRMScript.Global.Void.sleep()
   commentId: M:CRMScript.Global.Void.sleep()
@@ -3685,11 +4070,16 @@ items:
   nameWithType: Void.sleep()
   fullName: CRMScript.Global.Void.sleep()
   type: Method
-  summary: "\nSleeps (give up CPU) for some time. Useful in some CPU-intensive loops to maintain a responsive system.\n"
-  remarks: 
+  summary: "\nSleeps (give up CPU) for some time.\n"
+  remarks: "\nUseful in some CPU-intensive loops to maintain a responsive system.\n"
   syntax: 
     content: Void sleep(Float seconds)
     parameters:
+    - id: second
+      type: CRMScript.Global.Float
+      description: Number of seconds to sleep.
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>sleep(01); //sleeps for about one-tenth of a second.</code></pre>\n"
 references:
@@ -3723,12 +4113,6 @@ references:
   name: HtmlElement
   nameWithType: HtmlElement
   fullName: CRMScript.Native.HtmlElement
-- uid: CRMScript.Global.Void
-  commentId: T:CRMScript.Global.Void
-  isExternal: true
-  name: Void
-  nameWithType: Void
-  fullName: CRMScript.Global.Void
 - uid: CRMScript.Global.Vector
   commentId: T:CRMScript.Global.Vector
   isExternal: true
@@ -3781,12 +4165,6 @@ references:
   - name: '[]'
     nameWithType: '[]'
     fullName: '[]'
-- uid: CRMScript.Global.Integer
-  commentId: T:CRMScript.Global.Integer
-  isExternal: true
-  name: Integer
-  nameWithType: Integer
-  fullName: CRMScript.Global.Integer
 - uid: CRMScript.Global.String[]
   isExternal: true
   name: String[]
@@ -3801,12 +4179,6 @@ references:
   - name: '[]'
     nameWithType: '[]'
     fullName: '[]'
-- uid: CRMScript.Global.String
-  commentId: T:CRMScript.Global.String
-  isExternal: true
-  name: String
-  nameWithType: String
-  fullName: CRMScript.Global.String
 - uid: CRMScript.Global.Map
   commentId: T:CRMScript.Global.Map
   isExternal: true
@@ -3863,26 +4235,6 @@ references:
   - name: '[]'
     nameWithType: '[]'
     fullName: '[]'
-- uid: CRMScript.Global.String[]
-  isExternal: true
-  name: String[]
-  nameWithType: String[]
-  fullName: CRMScript.Global.String[]
-  spec.crmscript:
-  - uid: CRMScript.Global.String
-    isExternal: true
-    name: String
-    nameWithType: String
-    fullName: CRMScript.Global.String
-  - name: '[]'
-    nameWithType: '[]'
-    fullName: '[]'
-- uid: CRMScript.Global.String
-  commentId: T:CRMScript.Global.String
-  isExternal: true
-  name: String
-  nameWithType: String
-  fullName: CRMScript.Global.String
 - uid: CRMScript.Global.TimeZone
   commentId: T:CRMScript.Global.TimeZone
   isExternal: true
@@ -3895,24 +4247,6 @@ references:
   name: MainMenu
   nameWithType: MainMenu
   fullName: CRMScript.Native.MainMenu
-- uid: CRMScript.Native.License
-  commentId: T:CRMScript.Native.License
-  isExternal: true
-  name: License
-  nameWithType: License
-  fullName: CRMScript.Native.License
-- uid: CRMScript.Native.MacroParameter
-  commentId: T:CRMScript.Native.MacroParameter
-  isExternal: true
-  name: MacroParameter
-  nameWithType: MacroParameter
-  fullName: CRMScript.Native.MacroParameter
-- uid: CRMScript.Native.MacroReturnValue
-  commentId: T:CRMScript.Native.MacroReturnValue
-  isExternal: true
-  name: MacroReturnValue
-  nameWithType: MacroReturnValue
-  fullName: CRMScript.Native.MacroReturnValue
 - uid: CRMScript.Global.XMLNode
   commentId: T:CRMScript.Global.XMLNode
   isExternal: true

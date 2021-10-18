@@ -49,7 +49,7 @@ items:
   - CRMScript.NetServer.NSAppointmentSyncData.SetIsInvitation(Bool)
   - CRMScript.NetServer.NSAppointmentSyncData.SetIsTentative(Bool)
   - CRMScript.NetServer.NSAppointmentSyncData.SetLocation(String)
-  - CRMScript.NetServer.NSAppointmentSyncData.SetParticipants()
+  - CRMScript.NetServer.NSAppointmentSyncData.SetParticipants(NSParticipantSyncData[])
   - CRMScript.NetServer.NSAppointmentSyncData.SetPersonFormalName(String)
   - CRMScript.NetServer.NSAppointmentSyncData.SetPersonFullName(String)
   - CRMScript.NetServer.NSAppointmentSyncData.SetPersonId(Integer)
@@ -413,13 +413,13 @@ items:
   summary: ""
   remarks: 
   syntax: 
-    content: ParticipantSyncData[] GetParticipants()
+    content: NSParticipantSyncData[] GetParticipants()
     parameters: []
     return:
-      type: CRMScript.Native.ParticipantSyncData[]
+      type: CRMScript.NetServer.NSParticipantSyncData[]
       description:
   example: 
-  - "\n<pre><code>NSAppointmentSyncData thing;\nParticipantSyncData[] participants = thing.GetParticipants();</code></pre>\n"
+  - "\n<pre><code>NSAppointmentSyncData thing;\nNSParticipantSyncData[] participants = thing.GetParticipants();</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentSyncData.GetPersonFormalName()
   commentId: M:CRMScript.NetServer.NSAppointmentSyncData.GetPersonFormalName()
   id: 'GetPersonFormalName()'
@@ -952,28 +952,28 @@ items:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSAppointmentSyncData thing;\nString location;\nthing.SetLocation(location);</code></pre>\n"
-- uid: CRMScript.NetServer.NSAppointmentSyncData.SetParticipants()
-  commentId: M:CRMScript.NetServer.NSAppointmentSyncData.SetParticipants()
-  id: 'SetParticipants()'
+- uid: CRMScript.NetServer.NSAppointmentSyncData.SetParticipants(NSParticipantSyncData[])
+  commentId: M:CRMScript.NetServer.NSAppointmentSyncData.SetParticipants(NSParticipantSyncData[])
+  id: 'SetParticipants(NSParticipantSyncData[])'
   so.intellisense: NSAppointmentSyncData.SetParticipants
   langs:
   - crmscript
-  name: 'SetParticipants()'
-  nameWithType: NSAppointmentSyncData.SetParticipants()
-  fullName: CRMScript.NetServer.NSAppointmentSyncData.SetParticipants()
+  name: 'SetParticipants(NSParticipantSyncData[])'
+  nameWithType: NSAppointmentSyncData.SetParticipants(NSParticipantSyncData[])
+  fullName: CRMScript.NetServer.NSAppointmentSyncData.SetParticipants(NSParticipantSyncData[])
   type: Method
   summary: 
   remarks: 
   syntax: 
-    content: Void SetParticipants(ParticipantSyncData[] participants)
+    content: Void SetParticipants(NSParticipantSyncData[] participants)
     parameters:
     - id: participants
-      type: ParticipantSyncData[]
+      type: CRMScript.NetServer.NSParticipantSyncData[]
       description:
     return:
       type: CRMScript.Global.Void
   example: 
-  - "\n<pre><code>NSAppointmentSyncData thing;\nParticipantSyncData[] participants;\nthing.SetParticipants(participants);</code></pre>\n"
+  - "\n<pre><code>NSAppointmentSyncData thing;\nNSParticipantSyncData[] participants;\nthing.SetParticipants(participants);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentSyncData.SetPersonFormalName(String)
   commentId: M:CRMScript.NetServer.NSAppointmentSyncData.SetPersonFormalName(String)
   id: 'SetPersonFormalName(String)'
@@ -1203,26 +1203,26 @@ references:
   name: Bool
   nameWithType: Bool
   fullName: CRMScript.Global.Bool
-- uid: CRMScript.Native.ParticipantSyncData[]
+- uid: CRMScript.NetServer.NSParticipantSyncData[]
   isExternal: true
-  name: ParticipantSyncData[]
-  nameWithType: ParticipantSyncData[]
-  fullName: CRMScript.Native.ParticipantSyncData[]
+  name: NSParticipantSyncData[]
+  nameWithType: NSParticipantSyncData[]
+  fullName: CRMScript.NetServer.NSParticipantSyncData[]
   spec.crmscript:
-  - uid: CRMScript.Native.ParticipantSyncData
+  - uid: CRMScript.NetServer.NSParticipantSyncData
     isExternal: true
-    name: ParticipantSyncData
-    nameWithType: ParticipantSyncData
-    fullName: CRMScript.Native.ParticipantSyncData
+    name: NSParticipantSyncData
+    nameWithType: NSParticipantSyncData
+    fullName: CRMScript.NetServer.NSParticipantSyncData
   - name: '[]'
     nameWithType: '[]'
     fullName: '[]'
-- uid: CRMScript.Native.ParticipantSyncData
-  commentId: T:CRMScript.Native.ParticipantSyncData
+- uid: CRMScript.NetServer.NSParticipantSyncData
+  commentId: T:CRMScript.NetServer.NSParticipantSyncData
   isExternal: true
-  name: ParticipantSyncData
-  nameWithType: ParticipantSyncData
-  fullName: CRMScript.Native.ParticipantSyncData
+  name: NSParticipantSyncData
+  nameWithType: NSParticipantSyncData
+  fullName: CRMScript.NetServer.NSParticipantSyncData
 - uid: CRMScript.Global.Void
   commentId: T:CRMScript.Global.Void
   isExternal: true

@@ -93,7 +93,7 @@ items:
   - CRMScript.NetServer.NSAppointmentAgent.Save(Integer,Bool)
   - CRMScript.NetServer.NSAppointmentAgent.SaveAppointmentEntity(NSAppointmentEntity)
   - CRMScript.NetServer.NSAppointmentAgent.SaveSuggestedAppointmentEntity(NSSuggestedAppointmentEntity)
-  - CRMScript.NetServer.NSAppointmentAgent.SaveTaskListItem()
+  - CRMScript.NetServer.NSAppointmentAgent.SaveTaskListItem(NSTaskListItem)
   - CRMScript.NetServer.NSAppointmentAgent.SetActivityStatus(String[],Integer)
   - CRMScript.NetServer.NSAppointmentAgent.SetSeen(Integer,Integer)
   - CRMScript.NetServer.NSAppointmentAgent.ToggleActivities(String[])
@@ -1414,7 +1414,7 @@ items:
   summary: "\nReturns a specified number of appointments within a time range. The appointments belong to the currently logged-on user.\n"
   remarks: 
   syntax: 
-    content: AppointmentSyncData[] GetMySyncAppointments(DateTime startTime, DateTime endTime)
+    content: NSAppointmentSyncData[] GetMySyncAppointments(DateTime startTime, DateTime endTime)
     parameters:
     - id: startTime
       type: CRMScript.Global.DateTime
@@ -1423,10 +1423,10 @@ items:
       type: CRMScript.Global.DateTime
       description:
     return:
-      type: CRMScript.Native.AppointmentSyncData[]
+      type: CRMScript.NetServer.NSAppointmentSyncData[]
       description:
   example: 
-  - "\n<pre><code>NSAppointmentAgent agent;\nDateTime startTime;\nDateTime endTime;\nAppointmentSyncData[] res = agent.GetMySyncAppointments(startTime, endTime);</code></pre>\n"
+  - "\n<pre><code>NSAppointmentAgent agent;\nDateTime startTime;\nDateTime endTime;\nNSAppointmentSyncData[] res = agent.GetMySyncAppointments(startTime, endTime);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetMyTasks(Integer)
   commentId: M:CRMScript.NetServer.NSAppointmentAgent.GetMyTasks(Integer)
   id: 'GetMyTasks(Integer)'
@@ -1463,7 +1463,7 @@ items:
   summary: "\nGets the next suggested appointment for a given sale (or rather a given sales guide).\n"
   remarks: 
   syntax: 
-    content: SuggestedAppointment GetNextSuggestedAppointmentBySale(Integer saleId, Integer currentAppointmentId, Bool skipCompleteCheck)
+    content: NSSuggestedAppointment GetNextSuggestedAppointmentBySale(Integer saleId, Integer currentAppointmentId, Bool skipCompleteCheck)
     parameters:
     - id: saleId
       type: CRMScript.Global.Integer
@@ -1475,10 +1475,10 @@ items:
       type: CRMScript.Global.Bool
       description: 
     return:
-      type: CRMScript.Native.SuggestedAppointment
+      type: CRMScript.NetServer.NSSuggestedAppointment
       description:
   example: 
-  - "\n<pre><code>NSAppointmentAgent agent;\nInteger saleId;\nInteger currentAppointmentId;\nBool skipCompleteCheck;\nSuggestedAppointment res = agent.GetNextSuggestedAppointmentBySale(saleId, currentAppointmentId, skipCompleteCheck);</code></pre>\n"
+  - "\n<pre><code>NSAppointmentAgent agent;\nInteger saleId;\nInteger currentAppointmentId;\nBool skipCompleteCheck;\nNSSuggestedAppointment res = agent.GetNextSuggestedAppointmentBySale(saleId, currentAppointmentId, skipCompleteCheck);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentAgent.GetOrganizerName(Integer)
   commentId: M:CRMScript.NetServer.NSAppointmentAgent.GetOrganizerName(Integer)
   id: 'GetOrganizerName(Integer)'
@@ -2522,24 +2522,24 @@ items:
       description: New or updated NSSuggestedAppointmentEntity
   example: 
   - "\n<pre><code>NSAppointment  agent;\nNSSuggestedAppointmentEntity thing = agent.CreateDefaultSuggestedAppointmentEntity();\nthing = agent.SaveSuggestedAppointmentEntity(thing);</code></pre>\n"
-- uid: CRMScript.NetServer.NSAppointmentAgent.SaveTaskListItem()
-  commentId: M:CRMScript.NetServer.NSAppointmentAgent.SaveTaskListItem()
-  id: 'SaveTaskListItem()'
+- uid: CRMScript.NetServer.NSAppointmentAgent.SaveTaskListItem(NSTaskListItem)
+  commentId: M:CRMScript.NetServer.NSAppointmentAgent.SaveTaskListItem(NSTaskListItem)
+  id: 'SaveTaskListItem(NSTaskListItem)'
   so.intellisense: NSAppointmentAgent.SaveTaskListItem
   langs:
   - crmscript
-  name: 'SaveTaskListItem()'
-  nameWithType: NSAppointmentAgent.SaveTaskListItem()
-  fullName: CRMScript.NetServer.NSAppointmentAgent.SaveTaskListItem()
+  name: 'SaveTaskListItem(NSTaskListItem)'
+  nameWithType: NSAppointmentAgent.SaveTaskListItem(NSTaskListItem)
+  fullName: CRMScript.NetServer.NSAppointmentAgent.SaveTaskListItem(NSTaskListItem)
   type: Method
-  summary: "\nUpdates the existing NSTaskListItem or creates a new NSTaskListItem if the ID0 parameter is 0.\n"
+  summary: "\nUpdates the existing NSTaskListItem or creates a new NSTaskListItem if the ID parameter is 0.\n"
   remarks: 
   syntax: 
     content: NSTaskListItem SaveTaskListItem(NSTaskListItem taskListItem)
     parameters:
     - id: taskListItem
       type: CRMScript.NetServer.NSTaskListItem
-      description: The NSTaskListItem to save.
+      description: The item to save.
     return:
       type: CRMScript.NetServer.NSTaskListItem
       description:
@@ -2903,12 +2903,6 @@ references:
   name: NSSuggestedAppointmentEntity
   nameWithType: NSSuggestedAppointmentEntity
   fullName: CRMScript.NetServer.NSSuggestedAppointmentEntity
-- uid: CRMScript.NetServer.NSTaskListItem
-  commentId: T:CRMScript.NetServer.NSTaskListItem
-  isExternal: true
-  name: NSTaskListItem
-  nameWithType: NSTaskListItem
-  fullName: CRMScript.NetServer.NSTaskListItem
 - uid: CRMScript.NetServer.NSSalesActivity
   commentId: T:CRMScript.NetServer.NSSalesActivity
   isExternal: true
@@ -2987,32 +2981,26 @@ references:
   name: NSDayInformationListItem
   nameWithType: NSDayInformationListItem
   fullName: CRMScript.NetServer.NSDayInformationListItem
-- uid: CRMScript.Native.AppointmentSyncData[]
+- uid: CRMScript.NetServer.NSAppointmentSyncData[]
   isExternal: true
-  name: AppointmentSyncData[]
-  nameWithType: AppointmentSyncData[]
-  fullName: CRMScript.Native.AppointmentSyncData[]
+  name: NSAppointmentSyncData[]
+  nameWithType: NSAppointmentSyncData[]
+  fullName: CRMScript.NetServer.NSAppointmentSyncData[]
   spec.crmscript:
-  - uid: CRMScript.Native.AppointmentSyncData
+  - uid: CRMScript.NetServer.NSAppointmentSyncData
     isExternal: true
-    name: AppointmentSyncData
-    nameWithType: AppointmentSyncData
-    fullName: CRMScript.Native.AppointmentSyncData
+    name: NSAppointmentSyncData
+    nameWithType: NSAppointmentSyncData
+    fullName: CRMScript.NetServer.NSAppointmentSyncData
   - name: '[]'
     nameWithType: '[]'
     fullName: '[]'
-- uid: CRMScript.Native.AppointmentSyncData
-  commentId: T:CRMScript.Native.AppointmentSyncData
+- uid: CRMScript.NetServer.NSAppointmentSyncData
+  commentId: T:CRMScript.NetServer.NSAppointmentSyncData
   isExternal: true
-  name: AppointmentSyncData
-  nameWithType: AppointmentSyncData
-  fullName: CRMScript.Native.AppointmentSyncData
-- uid: CRMScript.Native.SuggestedAppointment
-  commentId: T:CRMScript.Native.SuggestedAppointment
-  isExternal: true
-  name: SuggestedAppointment
-  nameWithType: SuggestedAppointment
-  fullName: CRMScript.Native.SuggestedAppointment
+  name: NSAppointmentSyncData
+  nameWithType: NSAppointmentSyncData
+  fullName: CRMScript.NetServer.NSAppointmentSyncData
 - uid: CRMScript.NetServer.NSRedLetterInformationListItem[]
   isExternal: true
   name: NSRedLetterInformationListItem[]

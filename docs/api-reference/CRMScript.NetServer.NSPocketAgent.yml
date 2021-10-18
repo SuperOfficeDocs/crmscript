@@ -10,7 +10,7 @@ items:
   - CRMScript.NetServer.NSPocketAgent.GetPocketStartupData(String[])
   - CRMScript.NetServer.NSPocketAgent.GetPushNotificationTagsForDevice(String)
   - CRMScript.NetServer.NSPocketAgent.GetRegisteredDevices(Integer)
-  - CRMScript.NetServer.NSPocketAgent.RegisterDeviceForPushNotification(PocketDeviceInfo)
+  - CRMScript.NetServer.NSPocketAgent.RegisterDeviceForPushNotification(NSPocketDeviceInfo)
   - CRMScript.NetServer.NSPocketAgent.RunAppointmentAlarmBroker()
   - CRMScript.NetServer.NSPocketAgent.SendPushNotification(Integer[],PocketNotificationMessage)
   - CRMScript.NetServer.NSPocketAgent.SetPushNotificationTagsForDevice(String,String)
@@ -99,31 +99,31 @@ items:
   summary: "\nRetrieves all registered devices for an associate\n"
   remarks: 
   syntax: 
-    content: PocketDeviceInfo[] GetRegisteredDevices(Integer associateId)
+    content: NSPocketDeviceInfo[] GetRegisteredDevices(Integer associateId)
     parameters:
     - id: associateId
       type: CRMScript.Global.Integer
       description: 
     return:
-      type: CRMScript.Native.PocketDeviceInfo[]
+      type: CRMScript.NetServer.NSPocketDeviceInfo[]
   example: 
-- uid: CRMScript.NetServer.NSPocketAgent.RegisterDeviceForPushNotification(PocketDeviceInfo)
-  commentId: M:CRMScript.NetServer.NSPocketAgent.RegisterDeviceForPushNotification(PocketDeviceInfo)
-  id: 'RegisterDeviceForPushNotification(PocketDeviceInfo)'
+- uid: CRMScript.NetServer.NSPocketAgent.RegisterDeviceForPushNotification(NSPocketDeviceInfo)
+  commentId: M:CRMScript.NetServer.NSPocketAgent.RegisterDeviceForPushNotification(NSPocketDeviceInfo)
+  id: 'RegisterDeviceForPushNotification(NSPocketDeviceInfo)'
   so.intellisense: NSPocketAgent.RegisterDeviceForPushNotification
   langs:
   - crmscript
-  name: 'RegisterDeviceForPushNotification(PocketDeviceInfo)'
-  nameWithType: NSPocketAgent.RegisterDeviceForPushNotification(PocketDeviceInfo)
-  fullName: CRMScript.NetServer.NSPocketAgent.RegisterDeviceForPushNotification(PocketDeviceInfo)
+  name: 'RegisterDeviceForPushNotification(NSPocketDeviceInfo)'
+  nameWithType: NSPocketAgent.RegisterDeviceForPushNotification(NSPocketDeviceInfo)
+  fullName: CRMScript.NetServer.NSPocketAgent.RegisterDeviceForPushNotification(NSPocketDeviceInfo)
   type: Method
   summary: "\nRegisters a device that should receive push notifications when notable events occur\n"
   remarks: 
   syntax: 
-    content: Void RegisterDeviceForPushNotification(PocketDeviceInfo deviceInfo)
+    content: Void RegisterDeviceForPushNotification(NSPocketDeviceInfo deviceInfo)
     parameters:
     - id: deviceInfo
-      type: CRMScript.Native.PocketDeviceInfo
+      type: CRMScript.NetServer.NSPocketDeviceInfo
       description: 
     return:
       type: CRMScript.Global.Void
@@ -251,44 +251,32 @@ references:
   name: NSPocketStartupData
   nameWithType: NSPocketStartupData
   fullName: CRMScript.NetServer.NSPocketStartupData
-- uid: CRMScript.Global.String
-  commentId: T:CRMScript.Global.String
-  isExternal: true
-  name: String
-  nameWithType: String
-  fullName: CRMScript.Global.String
 - uid: CRMScript.Global.Integer
   commentId: T:CRMScript.Global.Integer
   isExternal: true
   name: Integer
   nameWithType: Integer
   fullName: CRMScript.Global.Integer
-- uid: CRMScript.Native.PocketDeviceInfo[]
+- uid: CRMScript.NetServer.NSPocketDeviceInfo[]
   isExternal: true
-  name: PocketDeviceInfo[]
-  nameWithType: PocketDeviceInfo[]
-  fullName: CRMScript.Native.PocketDeviceInfo[]
+  name: NSPocketDeviceInfo[]
+  nameWithType: NSPocketDeviceInfo[]
+  fullName: CRMScript.NetServer.NSPocketDeviceInfo[]
   spec.crmscript:
-  - uid: CRMScript.Native.PocketDeviceInfo
+  - uid: CRMScript.NetServer.NSPocketDeviceInfo
     isExternal: true
-    name: PocketDeviceInfo
-    nameWithType: PocketDeviceInfo
-    fullName: CRMScript.Native.PocketDeviceInfo
+    name: NSPocketDeviceInfo
+    nameWithType: NSPocketDeviceInfo
+    fullName: CRMScript.NetServer.NSPocketDeviceInfo
   - name: '[]'
     nameWithType: '[]'
     fullName: '[]'
-- uid: CRMScript.Native.PocketDeviceInfo
-  commentId: T:CRMScript.Native.PocketDeviceInfo
+- uid: CRMScript.NetServer.NSPocketDeviceInfo
+  commentId: T:CRMScript.NetServer.NSPocketDeviceInfo
   isExternal: true
-  name: PocketDeviceInfo
-  nameWithType: PocketDeviceInfo
-  fullName: CRMScript.Native.PocketDeviceInfo
-- uid: CRMScript.Native.PocketDeviceInfo
-  commentId: T:CRMScript.Native.PocketDeviceInfo
-  isExternal: true
-  name: PocketDeviceInfo
-  nameWithType: PocketDeviceInfo
-  fullName: CRMScript.Native.PocketDeviceInfo
+  name: NSPocketDeviceInfo
+  nameWithType: NSPocketDeviceInfo
+  fullName: CRMScript.NetServer.NSPocketDeviceInfo
 - uid: CRMScript.Global.Void
   commentId: T:CRMScript.Global.Void
   isExternal: true
@@ -309,15 +297,3 @@ references:
   - name: '[]'
     nameWithType: '[]'
     fullName: '[]'
-- uid: CRMScript.Global.Integer
-  commentId: T:CRMScript.Global.Integer
-  isExternal: true
-  name: Integer
-  nameWithType: Integer
-  fullName: CRMScript.Global.Integer
-- uid: CRMScript.Global.Void
-  commentId: T:CRMScript.Global.Void
-  isExternal: true
-  name: Void
-  nameWithType: Void
-  fullName: CRMScript.Global.Void

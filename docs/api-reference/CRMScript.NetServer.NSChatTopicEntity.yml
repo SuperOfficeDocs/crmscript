@@ -31,7 +31,7 @@ items:
   - CRMScript.NetServer.NSChatTopicEntity.GetWelcomeMessage()
   - CRMScript.NetServer.NSChatTopicEntity.GetWidget()
   - CRMScript.NetServer.NSChatTopicEntity.SetAlertRecipient(String)
-  - CRMScript.NetServer.NSChatTopicEntity.SetAlertTemplate(ReplyTemplate)
+  - CRMScript.NetServer.NSChatTopicEntity.SetAlertTemplate(NSReplyTemplate)
   - CRMScript.NetServer.NSChatTopicEntity.SetBadgeHeader(String)
   - CRMScript.NetServer.NSChatTopicEntity.SetBotEnabled(Bool)
   - CRMScript.NetServer.NSChatTopicEntity.SetBotSettings(NSChatBotSettings)
@@ -107,13 +107,13 @@ items:
   summary: ""
   remarks: 
   syntax: 
-    content: ReplyTemplate GetAlertTemplate()
+    content: NSReplyTemplate GetAlertTemplate()
     parameters: []
     return:
-      type: CRMScript.Native.ReplyTemplate
+      type: CRMScript.NetServer.NSReplyTemplate
       description: Template to use for alerts.
   example: 
-  - "\n<pre><code>NSChatTopicEntity thing;\nReplyTemplate alertTemplate = thing.GetAlertTemplate();</code></pre>\n"
+  - "\n<pre><code>NSChatTopicEntity thing;\nNSReplyTemplate alertTemplate = thing.GetAlertTemplate();</code></pre>\n"
 - uid: CRMScript.NetServer.NSChatTopicEntity.GetBadgeHeader()
   commentId: M:CRMScript.NetServer.NSChatTopicEntity.GetBadgeHeader()
   id: 'GetBadgeHeader()'
@@ -556,28 +556,28 @@ items:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSChatTopicEntity thing;\nString alertRecipient;\nthing.SetAlertRecipient(alertRecipient);</code></pre>\n"
-- uid: CRMScript.NetServer.NSChatTopicEntity.SetAlertTemplate(ReplyTemplate)
-  commentId: M:CRMScript.NetServer.NSChatTopicEntity.SetAlertTemplate(ReplyTemplate)
-  id: 'SetAlertTemplate(ReplyTemplate)'
+- uid: CRMScript.NetServer.NSChatTopicEntity.SetAlertTemplate(NSReplyTemplate)
+  commentId: M:CRMScript.NetServer.NSChatTopicEntity.SetAlertTemplate(NSReplyTemplate)
+  id: 'SetAlertTemplate(NSReplyTemplate)'
   so.intellisense: NSChatTopicEntity.SetAlertTemplate
   langs:
   - crmscript
-  name: 'SetAlertTemplate(ReplyTemplate)'
-  nameWithType: NSChatTopicEntity.SetAlertTemplate(ReplyTemplate)
-  fullName: CRMScript.NetServer.NSChatTopicEntity.SetAlertTemplate(ReplyTemplate)
+  name: 'SetAlertTemplate(NSReplyTemplate)'
+  nameWithType: NSChatTopicEntity.SetAlertTemplate(NSReplyTemplate)
+  fullName: CRMScript.NetServer.NSChatTopicEntity.SetAlertTemplate(NSReplyTemplate)
   type: Method
   summary: ""
   remarks: 
   syntax: 
-    content: Void SetAlertTemplate(ReplyTemplate alertTemplate)
+    content: Void SetAlertTemplate(NSReplyTemplate alertTemplate)
     parameters:
     - id: alertTemplate
-      type: CRMScript.NetServer.ReplyTemplate
+      type: CRMScript.NetServer.NSReplyTemplate
       description: Template to use for alerts.
     return:
       type: CRMScript.Global.Void
   example: 
-  - "\n<pre><code>NSChatTopicEntity thing;\nReplyTemplate alertTemplate;\nthing.SetAlertTemplate(alertTemplate);</code></pre>\n"
+  - "\n<pre><code>NSChatTopicEntity thing;\nNSReplyTemplate alertTemplate;\nthing.SetAlertTemplate(alertTemplate);</code></pre>\n"
 - uid: CRMScript.NetServer.NSChatTopicEntity.SetBadgeHeader(String)
   commentId: M:CRMScript.NetServer.NSChatTopicEntity.SetBadgeHeader(String)
   id: 'SetBadgeHeader(String)'
@@ -1053,12 +1053,12 @@ references:
   name: String
   nameWithType: String
   fullName: CRMScript.Global.String
-- uid: CRMScript.Native.ReplyTemplate
-  commentId: T:CRMScript.Native.ReplyTemplate
+- uid: CRMScript.NetServer.NSReplyTemplate
+  commentId: T:CRMScript.NetServer.NSReplyTemplate
   isExternal: true
-  name: ReplyTemplate
-  nameWithType: ReplyTemplate
-  fullName: CRMScript.Native.ReplyTemplate
+  name: NSReplyTemplate
+  nameWithType: NSReplyTemplate
+  fullName: CRMScript.NetServer.NSReplyTemplate
 - uid: CRMScript.Global.Bool
   commentId: T:CRMScript.Global.Bool
   isExternal: true

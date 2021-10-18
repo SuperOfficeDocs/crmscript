@@ -28,7 +28,7 @@ items:
   - CRMScript.NetServer.NSMailMergeTask.SetSingleEntryOnEachCompany(Bool)
   - CRMScript.NetServer.NSMailMergeTask.SetStartDate(DateTime)
   - CRMScript.NetServer.NSMailMergeTask.SetTypeId(Integer)
-  - CRMScript.NetServer.NSMailMergeTask.SetVisibleFor(VisibleFor)
+  - CRMScript.NetServer.NSMailMergeTask.SetVisibleFor(NSVisibleFor)
   name: NSMailMergeTask
   nameWithType: NSMailMergeTask
   fullName: CRMScript.NetServer.NSMailMergeTask
@@ -263,13 +263,13 @@ items:
   summary: ""
   remarks: 
   syntax: 
-    content: VisibleFor GetVisibleFor()
+    content: NSVisibleFor GetVisibleFor()
     parameters: []
     return:
-      type: CRMScript.Native.VisibleFor
+      type: CRMScript.NetServer.NSVisibleFor
       description: Who the task should be visible for
   example: 
-  - "\n<pre><code>NSMailMergeTask thing;\nVisibleFor visibleFor = thing.GetVisibleFor();</code></pre>\n"
+  - "\n<pre><code>NSMailMergeTask thing;\nNSVisibleFor visibleFor = thing.GetVisibleFor();</code></pre>\n"
 - uid: CRMScript.NetServer.NSMailMergeTask.SetCompleted(Integer)
   commentId: M:CRMScript.NetServer.NSMailMergeTask.SetCompleted(Integer)
   id: 'SetCompleted(Integer)'
@@ -488,28 +488,28 @@ items:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSMailMergeTask thing;\nInteger typeId;\nthing.SetTypeId(typeId);</code></pre>\n"
-- uid: CRMScript.NetServer.NSMailMergeTask.SetVisibleFor(VisibleFor)
-  commentId: M:CRMScript.NetServer.NSMailMergeTask.SetVisibleFor(VisibleFor)
-  id: 'SetVisibleFor(VisibleFor)'
+- uid: CRMScript.NetServer.NSMailMergeTask.SetVisibleFor(NSVisibleFor)
+  commentId: M:CRMScript.NetServer.NSMailMergeTask.SetVisibleFor(NSVisibleFor)
+  id: 'SetVisibleFor(NSVisibleFor)'
   so.intellisense: NSMailMergeTask.SetVisibleFor
   langs:
   - crmscript
-  name: 'SetVisibleFor(VisibleFor)'
-  nameWithType: NSMailMergeTask.SetVisibleFor(VisibleFor)
-  fullName: CRMScript.NetServer.NSMailMergeTask.SetVisibleFor(VisibleFor)
+  name: 'SetVisibleFor(NSVisibleFor)'
+  nameWithType: NSMailMergeTask.SetVisibleFor(NSVisibleFor)
+  fullName: CRMScript.NetServer.NSMailMergeTask.SetVisibleFor(NSVisibleFor)
   type: Method
   summary: ""
   remarks: 
   syntax: 
-    content: Void SetVisibleFor(VisibleFor visibleFor)
+    content: Void SetVisibleFor(NSVisibleFor visibleFor)
     parameters:
     - id: visibleFor
-      type: CRMScript.Native.VisibleFor
+      type: CRMScript.NetServer.NSVisibleFor
       description: Who the task should be visible for
     return:
       type: CRMScript.Global.Void
   example: 
-  - "\n<pre><code>NSMailMergeTask thing;\nVisibleFor visibleFor;\nthing.SetVisibleFor(visibleFor);</code></pre>\n"
+  - "\n<pre><code>NSMailMergeTask thing;\nNSVisibleFor visibleFor;\nthing.SetVisibleFor(visibleFor);</code></pre>\n"
 references:
 - uid: CRMScript.NetServer.NSMailMergeTask
   commentId: T:CRMScript.NetServer.NSMailMergeTask
@@ -541,12 +541,12 @@ references:
   name: DateTime
   nameWithType: DateTime
   fullName: CRMScript.Global.DateTime
-- uid: CRMScript.Native.VisibleFor
-  commentId: T:CRMScript.Native.VisibleFor
+- uid: CRMScript.NetServer.NSVisibleFor
+  commentId: T:CRMScript.NetServer.NSVisibleFor
   isExternal: true
-  name: VisibleFor
-  nameWithType: VisibleFor
-  fullName: CRMScript.Native.VisibleFor
+  name: NSVisibleFor
+  nameWithType: NSVisibleFor
+  fullName: CRMScript.NetServer.NSVisibleFor
 - uid: CRMScript.Global.Void
   commentId: T:CRMScript.Global.Void
   isExternal: true

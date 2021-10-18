@@ -11,7 +11,7 @@ items:
   - CRMScript.NetServer.NSNumberAllocationAgent.DeleteRefCountEntity(Integer)
   - CRMScript.NetServer.NSNumberAllocationAgent.GetNumberEachTemplate()
   - CRMScript.NetServer.NSNumberAllocationAgent.GetRefCountEntity(Integer)
-  - CRMScript.NetServer.NSNumberAllocationAgent.SaveDefaultNumbering(RefCountEntity)
+  - CRMScript.NetServer.NSNumberAllocationAgent.SaveDefaultNumbering(NSRefCountEntity)
   - CRMScript.NetServer.NSNumberAllocationAgent.SaveRefCountEntity(NSRefCountEntity)
   - CRMScript.NetServer.NSNumberAllocationAgent.SetNumberEachTemplate(Bool)
   name: NSNumberAllocationAgent
@@ -120,28 +120,28 @@ items:
       type: CRMScript.NetServer.NSRefCountEntity
   example: 
   - "\n<pre><code>NSNumberAllocationAgent agent;\nNSRefCountEntity thing = agent.GetRefCountEntity(123);</code></pre>\n"
-- uid: CRMScript.NetServer.NSNumberAllocationAgent.SaveDefaultNumbering(RefCountEntity)
-  commentId: M:CRMScript.NetServer.NSNumberAllocationAgent.SaveDefaultNumbering(RefCountEntity)
-  id: 'SaveDefaultNumbering(RefCountEntity)'
+- uid: CRMScript.NetServer.NSNumberAllocationAgent.SaveDefaultNumbering(NSRefCountEntity)
+  commentId: M:CRMScript.NetServer.NSNumberAllocationAgent.SaveDefaultNumbering(NSRefCountEntity)
+  id: 'SaveDefaultNumbering(NSRefCountEntity)'
   so.intellisense: NSNumberAllocationAgent.SaveDefaultNumbering
   langs:
   - crmscript
-  name: 'SaveDefaultNumbering(RefCountEntity)'
-  nameWithType: NSNumberAllocationAgent.SaveDefaultNumbering(RefCountEntity)
-  fullName: CRMScript.NetServer.NSNumberAllocationAgent.SaveDefaultNumbering(RefCountEntity)
+  name: 'SaveDefaultNumbering(NSRefCountEntity)'
+  nameWithType: NSNumberAllocationAgent.SaveDefaultNumbering(NSRefCountEntity)
+  fullName: CRMScript.NetServer.NSNumberAllocationAgent.SaveDefaultNumbering(NSRefCountEntity)
   type: Method
   summary: "\nSaves default numbering values in preferences\n"
   remarks: 
   syntax: 
-    content: Void SaveDefaultNumbering(RefCountEntity refCountEntity)
+    content: Void SaveDefaultNumbering(NSRefCountEntity refCountEntity)
     parameters:
     - id: refCountEntity
-      type: CRMScript.Native.RefCountEntity
-      description: The refCountEntity that holds the values that will be saved
+      type: CRMScript.NetServer.NSRefCountEntity
+      description: The entity that holds the values that will be saved
     return:
       type: CRMScript.Global.Void
   example: 
-  - "\n<pre><code>NSNumberAllocationAgent agent;\nRefCountEntity refCountEntity;\nagent.SaveDefaultNumbering(refCountEntity);</code></pre>\n"
+  - "\n<pre><code>NSNumberAllocationAgent agent;\nNSRefCountEntity refCountEntity;\nagent.SaveDefaultNumbering(NSRefCountEntity);</code></pre>\n"
 - uid: CRMScript.NetServer.NSNumberAllocationAgent.SaveRefCountEntity(NSRefCountEntity)
   commentId: M:CRMScript.NetServer.NSNumberAllocationAgent.SaveRefCountEntity(NSRefCountEntity)
   id: 'SaveRefCountEntity(NSRefCountEntity)'
@@ -211,12 +211,6 @@ references:
   name: Bool
   nameWithType: Bool
   fullName: CRMScript.Global.Bool
-- uid: CRMScript.Native.RefCountEntity
-  commentId: T:CRMScript.Native.RefCountEntity
-  isExternal: true
-  name: RefCountEntity
-  nameWithType: RefCountEntity
-  fullName: CRMScript.Native.RefCountEntity
 - uid: CRMScript.Global.Void
   commentId: T:CRMScript.Global.Void
   isExternal: true

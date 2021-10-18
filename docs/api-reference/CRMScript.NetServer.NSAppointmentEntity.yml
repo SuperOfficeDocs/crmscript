@@ -115,7 +115,7 @@ items:
   - CRMScript.NetServer.NSAppointmentEntity.SetSale()
   - CRMScript.NetServer.NSAppointmentEntity.SetStartDate()
   - CRMScript.NetServer.NSAppointmentEntity.SetSuggestedAppointmentId(Integer)
-  - CRMScript.NetServer.NSAppointmentEntity.SetTask()
+  - CRMScript.NetServer.NSAppointmentEntity.SetTask(NSTaskListItem)
   - CRMScript.NetServer.NSAppointmentEntity.SetType(Integer)
   - CRMScript.NetServer.NSAppointmentEntity.SetUpdatedBy()
   - CRMScript.NetServer.NSAppointmentEntity.SetUpdatedDate()
@@ -1169,13 +1169,13 @@ items:
   summary: ""
   remarks: 
   syntax: 
-    content: TaskListItem GetTask()
+    content: NSTaskListItem GetTask()
     parameters: []
     return:
-      type: CRMScript.Native.TaskListItem
+      type: CRMScript.NetServer.NSTaskListItem
       description: Task comprises the different types of activities, such as Phone call or Meeting
   example: 
-  - "\n<pre><code>NSAppointmentEntity thing;\nTaskListItem task = thing.GetTask();</code></pre>\n"
+  - "\n<pre><code>NSAppointmentEntity thing;\nNSTaskListItem task = thing.GetTask();</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentEntity.GetType()
   commentId: M:CRMScript.NetServer.NSAppointmentEntity.GetType()
   id: 'GetType()'
@@ -2390,15 +2390,15 @@ items:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSAppointmentEntity thing;\nInteger suggestedAppointmentId;\nthing.SetSuggestedAppointmentId(suggestedAppointmentId);</code></pre>\n"
-- uid: CRMScript.NetServer.NSAppointmentEntity.SetTask()
-  commentId: M:CRMScript.NetServer.NSAppointmentEntity.SetTask()
-  id: 'SetTask()'
+- uid: CRMScript.NetServer.NSAppointmentEntity.SetTask(NSTaskListItem)
+  commentId: M:CRMScript.NetServer.NSAppointmentEntity.SetTask(NSTaskListItem)
+  id: 'SetTask(NSTaskListItem)'
   so.intellisense: NSAppointmentEntity.SetTask
   langs:
   - crmscript
-  name: 'SetTask()'
-  nameWithType: NSAppointmentEntity.SetTask()
-  fullName: CRMScript.NetServer.NSAppointmentEntity.SetTask()
+  name: 'SetTask(NSTaskListItem)'
+  nameWithType: NSAppointmentEntity.SetTask(NSTaskListItem)
+  fullName: CRMScript.NetServer.NSAppointmentEntity.SetTask(NSTaskListItem)
   type: Method
   summary: ""
   remarks: 
@@ -2647,12 +2647,12 @@ references:
   name: NSSale
   nameWithType: NSSale
   fullName: CRMScript.NetServer.NSSale
-- uid: CRMScript.Native.TaskListItem
-  commentId: T:CRMScript.Native.TaskListItem
+- uid: CRMScript.NetServer.NSTaskListItem
+  commentId: T:CRMScript.NetServer.NSTaskListItem
   isExternal: true
-  name: TaskListItem
-  nameWithType: TaskListItem
-  fullName: CRMScript.Native.TaskListItem
+  name: NSTaskListItem
+  nameWithType: NSTaskListItem
+  fullName: CRMScript.NetServer.NSTaskListItem
 - uid: CRMScript.NetServer.NSVisibleFor[]
   isExternal: true
   name: NSVisibleFor[]

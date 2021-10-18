@@ -7,7 +7,7 @@ items:
   - crmscript
   children:
   - CRMScript.NetServer.NSDiagnosticsAgent.#ctor
-  - CRMScript.NetServer.NSDiagnosticsAgent.AddWebAppUsage(WebAppUsage[])
+  - CRMScript.NetServer.NSDiagnosticsAgent.AddWebAppUsage(NSWebAppUsage[])
   - CRMScript.NetServer.NSDiagnosticsAgent.ChangeLogSettings(Bool,Bool,Bool,Bool,Bool,Bool,Bool,Bool)
   - CRMScript.NetServer.NSDiagnosticsAgent.CollectDataAdditions()
   - CRMScript.NetServer.NSDiagnosticsAgent.CollectTableSizes()
@@ -16,11 +16,11 @@ items:
   - CRMScript.NetServer.NSDiagnosticsAgent.FlushCaches()
   - CRMScript.NetServer.NSDiagnosticsAgent.FlushCachesByName(String[])
   - CRMScript.NetServer.NSDiagnosticsAgent.GetCacheNames()
-  - CRMScript.NetServer.NSDiagnosticsAgent.GetWebAppUsagesForPeriod(String)
+  - CRMScript.NetServer.NSDiagnosticsAgent.GetWebAppUsagesForPeriod(DateTime,DateTime,String)
   - CRMScript.NetServer.NSDiagnosticsAgent.LogViewState(String)
   - CRMScript.NetServer.NSDiagnosticsAgent.PerformTasksAfterUpgrade()
   - CRMScript.NetServer.NSDiagnosticsAgent.ResyncUsers()
-  - CRMScript.NetServer.NSDiagnosticsAgent.WebAppUsageExistsInPeriod(Integer,String)
+  - CRMScript.NetServer.NSDiagnosticsAgent.WebAppUsageExistsInPeriod(Integer,String,DateTime)
   name: NSDiagnosticsAgent
   nameWithType: NSDiagnosticsAgent
   fullName: CRMScript.NetServer.NSDiagnosticsAgent
@@ -44,23 +44,23 @@ items:
     content: NSDiagnosticsAgent
   example: 
   - "\n<pre><code>NSDiagnosticsAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
-- uid: CRMScript.NetServer.NSDiagnosticsAgent.AddWebAppUsage(WebAppUsage[])
-  commentId: M:CRMScript.NetServer.NSDiagnosticsAgent.AddWebAppUsage(WebAppUsage[])
-  id: 'AddWebAppUsage(WebAppUsage[])'
+- uid: CRMScript.NetServer.NSDiagnosticsAgent.AddWebAppUsage(NSWebAppUsage[])
+  commentId: M:CRMScript.NetServer.NSDiagnosticsAgent.AddWebAppUsage(NSWebAppUsage[])
+  id: 'AddWebAppUsage(NSWebAppUsage[])'
   so.intellisense: NSDiagnosticsAgent.AddWebAppUsage
   langs:
   - crmscript
-  name: 'AddWebAppUsage(WebAppUsage[])'
-  nameWithType: NSDiagnosticsAgent.AddWebAppUsage(WebAppUsage[])
-  fullName: CRMScript.NetServer.NSDiagnosticsAgent.AddWebAppUsage(WebAppUsage[])
+  name: 'AddWebAppUsage(NSWebAppUsage[])'
+  nameWithType: NSDiagnosticsAgent.AddWebAppUsage(NSWebAppUsage[])
+  fullName: CRMScript.NetServer.NSDiagnosticsAgent.AddWebAppUsage(NSWebAppUsage[])
   type: Method
-  summary: "\nAdds WebApp usage to existing log\n"
+  summary: "\nAdds WebApp usage to existing log.\n"
   remarks: 
   syntax: 
-    content: Void AddWebAppUsage(WebAppUsage[] webAppUsages)
+    content: Void AddWebAppUsage(NSWebAppUsage[] webAppUsages)
     parameters:
     - id: webAppUsages
-      type: CRMScript.NetServer.WebAppUsage[]
+      type: CRMScript.NetServer.NSWebAppUsage[]
       description:
     return:
       type: CRMScript.Global.Void
@@ -243,26 +243,32 @@ items:
       description:
   example: 
   - "\n<pre><code>NSDiagnosticsAgent agent;\nString[] res = agent.GetCacheNames();</code></pre>\n"
-- uid: CRMScript.NetServer.NSDiagnosticsAgent.GetWebAppUsagesForPeriod(String)
-  commentId: M:CRMScript.NetServer.NSDiagnosticsAgent.GetWebAppUsagesForPeriod(String)
-  id: 'GetWebAppUsagesForPeriod(String)'
+- uid: CRMScript.NetServer.NSDiagnosticsAgent.GetWebAppUsagesForPeriod(DateTime,DateTime,String)
+  commentId: M:CRMScript.NetServer.NSDiagnosticsAgent.GetWebAppUsagesForPeriod(DateTime,DateTime,String)
+  id: 'GetWebAppUsagesForPeriod(DateTime,DateTime,String)'
   so.intellisense: NSDiagnosticsAgent.GetWebAppUsagesForPeriod
   langs:
   - crmscript
-  name: 'GetWebAppUsagesForPeriod(String)'
-  nameWithType: NSDiagnosticsAgent.GetWebAppUsagesForPeriod(String)
-  fullName: CRMScript.NetServer.NSDiagnosticsAgent.GetWebAppUsagesForPeriod(String)
+  name: 'GetWebAppUsagesForPeriod(DateTime,DateTime,String)'
+  nameWithType: NSDiagnosticsAgent.GetWebAppUsagesForPeriod(DateTime,DateTime,String)
+  fullName: CRMScript.NetServer.NSDiagnosticsAgent.GetWebAppUsagesForPeriod(DateTime,DateTime,String)
   type: Method
   summary: "\nGets all WebAppUsages for a given period, that match an optional search term\n"
   remarks: 
   syntax: 
-    content: WebAppUsage[] GetWebAppUsagesForPeriod(DateTime fromDate, DateTime toDate, String searchTerm)
+    content: NSWebAppUsage[] GetWebAppUsagesForPeriod(DateTime fromDate, DateTime toDate, String searchTerm)
     parameters:
+    - id: fromDate
+      type: CRMScript.Global.DateTime
+      description:
+    - id: toDate
+      type: CRMScript.Global.DateTime
+      description:
     - id: searchTerm
       type: CRMScript.Global.String
       description: 
     return:
-      type: CRMScript.Native.WebAppUsage[]
+      type: CRMScript.NetServer.NSWebAppUsage[]
   example: 
 - uid: CRMScript.NetServer.NSDiagnosticsAgent.LogViewState(String)
   commentId: M:CRMScript.NetServer.NSDiagnosticsAgent.LogViewState(String)
@@ -324,15 +330,15 @@ items:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSDiagnosticsAgent agent;\nagent.ResyncUsers();</code></pre>\n"
-- uid: CRMScript.NetServer.NSDiagnosticsAgent.WebAppUsageExistsInPeriod(Integer,String)
-  commentId: M:CRMScript.NetServer.NSDiagnosticsAgent.WebAppUsageExistsInPeriod(Integer,String)
-  id: 'WebAppUsageExistsInPeriod(Integer,String)'
+- uid: CRMScript.NetServer.NSDiagnosticsAgent.WebAppUsageExistsInPeriod(Integer,String,DateTime)
+  commentId: M:CRMScript.NetServer.NSDiagnosticsAgent.WebAppUsageExistsInPeriod(Integer,String,DateTime)
+  id: 'WebAppUsageExistsInPeriod(Integer,String,DateTime)'
   so.intellisense: NSDiagnosticsAgent.WebAppUsageExistsInPeriod
   langs:
   - crmscript
-  name: 'WebAppUsageExistsInPeriod(Integer,String)'
-  nameWithType: NSDiagnosticsAgent.WebAppUsageExistsInPeriod(Integer,String)
-  fullName: CRMScript.NetServer.NSDiagnosticsAgent.WebAppUsageExistsInPeriod(Integer,String)
+  name: 'WebAppUsageExistsInPeriod(Integer,String,DateTime)'
+  nameWithType: NSDiagnosticsAgent.WebAppUsageExistsInPeriod(Integer,String,DateTime)
+  fullName: CRMScript.NetServer.NSDiagnosticsAgent.WebAppUsageExistsInPeriod(Integer,String,DateTime)
   type: Method
   summary: ""
   remarks: 
@@ -345,6 +351,9 @@ items:
     - id: viewState
       type: CRMScript.Global.String
       description: 
+    - id: fromDate
+      type: CRMScript.Global.DateTime
+      description:
     return:
       type: CRMScript.Global.Bool
       description: true if viewState has been clicked at least once since FromDate, if asscoiateId &lt; 0 or FromDate is DateTime.MinValue no restriction given for those parameters
@@ -389,41 +398,29 @@ references:
   name: String
   nameWithType: String
   fullName: CRMScript.Global.String
-- uid: CRMScript.Global.String
-  commentId: T:CRMScript.Global.String
+- uid: CRMScript.NetServer.NSWebAppUsage[]
   isExternal: true
-  name: String
-  nameWithType: String
-  fullName: CRMScript.Global.String
-- uid: CRMScript.Native.WebAppUsage[]
-  isExternal: true
-  name: WebAppUsage[]
-  nameWithType: WebAppUsage[]
-  fullName: CRMScript.Native.WebAppUsage[]
+  name: NSWebAppUsage[]
+  nameWithType: NSWebAppUsage[]
+  fullName: CRMScript.NetServer.NSWebAppUsage[]
   spec.crmscript:
-  - uid: CRMScript.Native.WebAppUsage
+  - uid: CRMScript.NetServer.NSWebAppUsage
     isExternal: true
-    name: WebAppUsage
-    nameWithType: WebAppUsage
-    fullName: CRMScript.Native.WebAppUsage
+    name: NSWebAppUsage
+    nameWithType: NSWebAppUsage
+    fullName: CRMScript.NetServer.NSWebAppUsage
   - name: '[]'
     nameWithType: '[]'
     fullName: '[]'
-- uid: CRMScript.Native.WebAppUsage
-  commentId: T:CRMScript.Native.WebAppUsage
+- uid: CRMScript.NetServer.NSWebAppUsage
+  commentId: T:CRMScript.NetServer.NSWebAppUsage
   isExternal: true
-  name: WebAppUsage
-  nameWithType: WebAppUsage
-  fullName: CRMScript.Native.WebAppUsage
+  name: NSWebAppUsage
+  nameWithType: NSWebAppUsage
+  fullName: CRMScript.NetServer.NSWebAppUsage
 - uid: CRMScript.Global.Integer
   commentId: T:CRMScript.Global.Integer
   isExternal: true
   name: Integer
   nameWithType: Integer
   fullName: CRMScript.Global.Integer
-- uid: CRMScript.Global.Void
-  commentId: T:CRMScript.Global.Void
-  isExternal: true
-  name: Void
-  nameWithType: Void
-  fullName: CRMScript.Global.Void

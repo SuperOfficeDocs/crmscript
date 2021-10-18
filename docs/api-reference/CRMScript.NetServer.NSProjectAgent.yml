@@ -56,7 +56,7 @@ items:
   - CRMScript.NetServer.NSProjectAgent.SetDuplicateRulesStatus(NSDuplicateRule[])
   - CRMScript.NetServer.NSProjectAgent.SetProjectImage(Integer,NSImage)
   - CRMScript.NetServer.NSProjectAgent.UpdateProjectMember(NSProjectMember)
-  - CRMScript.NetServer.NSProjectAgent.ValidateProjectEntity(ProjectEntity)
+  - CRMScript.NetServer.NSProjectAgent.ValidateProjectEntity(NSProjectEntity)
   name: NSProjectAgent
   nameWithType: NSProjectAgent
   fullName: CRMScript.NetServer.NSProjectAgent
@@ -1011,7 +1011,7 @@ items:
   summary: "\nUpdates the existing NSProjectEntity or creates a new NSProjectEntity if the  ID parameter is 0.\n"
   remarks: 
   syntax: 
-    content: NSProjectEntity SaveProjectEntity()
+    content: NSProjectEntity SaveProjectEntity(NSProjectEntity projectEntity)
     parameters:
     - id: projectEntity
       type: CRMScript.NetServer.NSProjectEntity
@@ -1160,29 +1160,29 @@ items:
       type: CRMScript.NetServer.NSProjectMember
   example: 
   - "\n<pre><code>NSProjectAgent agent;\nNSProjectMember projectMember;\nNSProjectMember res = agent.UpdateProjectMember(projectMember);</code></pre>\n"
-- uid: CRMScript.NetServer.NSProjectAgent.ValidateProjectEntity(ProjectEntity)
-  commentId: M:CRMScript.NetServer.NSProjectAgent.ValidateProjectEntity(ProjectEntity)
-  id: 'ValidateProjectEntity(ProjectEntity)'
+- uid: CRMScript.NetServer.NSProjectAgent.ValidateProjectEntity(NSProjectEntity)
+  commentId: M:CRMScript.NetServer.NSProjectAgent.ValidateProjectEntity(NSProjectEntity)
+  id: 'ValidateProjectEntity(NSProjectEntity)'
   so.intellisense: NSProjectAgent.ValidateProjectEntity
   langs:
   - crmscript
-  name: 'ValidateProjectEntity(ProjectEntity)'
-  nameWithType: NSProjectAgent.ValidateProjectEntity(ProjectEntity)
-  fullName: CRMScript.NetServer.NSProjectAgent.ValidateProjectEntity(ProjectEntity)
+  name: 'ValidateProjectEntity(NSProjectEntity)'
+  nameWithType: NSProjectAgent.ValidateProjectEntity(NSProjectEntity)
+  fullName: CRMScript.NetServer.NSProjectAgent.ValidateProjectEntity(NSProjectEntity)
   type: Method
   summary: "\nChecks that entity is ready for saving, return error messages by field.\n"
   remarks: 
   syntax: 
-    content: Map ValidateProjectEntity(ProjectEntity projectEntity)
+    content: Map ValidateProjectEntity(NSProjectEntity projectEntity)
     parameters:
     - id: projectEntity
-      type: CRMScript.Native.ProjectEntity
+      type: CRMScript.NetServer.NSProjectEntity
       description: 
     return:
       type: CRMScript.Global.Map
       description:
   example: 
-  - "\n<pre><code>NSProjectAgent agent;\nProjectEntity projectEntity;\nMap res = agent.ValidateProjectEntity(projectEntity);</code></pre>\n"
+  - "\n<pre><code>NSProjectAgent agent;\nNSProjectEntity projectEntity;\nMap res = agent.ValidateProjectEntity(NSProjectEntity);</code></pre>\n"
 references:
 - uid: CRMScript.NetServer.NSProjectAgent
   commentId: T:CRMScript.NetServer.NSProjectAgent
@@ -1190,12 +1190,6 @@ references:
   name: NSProjectAgent
   nameWithType: NSProjectAgent
   fullName: CRMScript.NetServer.NSProjectAgent
-- uid: CRMScript.Global.Integer
-  commentId: T:CRMScript.Global.Integer
-  isExternal: true
-  name: Integer
-  nameWithType: Integer
-  fullName: CRMScript.Global.Integer
 - uid: CRMScript.NetServer.NSProjectMember[]
   isExternal: true
   name: NSProjectMember[]
@@ -1234,12 +1228,6 @@ references:
   name: NSProjectEventEntity
   nameWithType: NSProjectEventEntity
   fullName: CRMScript.NetServer.NSProjectEventEntity
-- uid: CRMScript.NetServer.NSProjectMember
-  commentId: T:CRMScript.NetServer.NSProjectMember
-  isExternal: true
-  name: NSProjectMember
-  nameWithType: NSProjectMember
-  fullName: CRMScript.NetServer.NSProjectMember
 - uid: CRMScript.Global.Integer[]
   isExternal: true
   name: Integer[]
@@ -1364,33 +1352,15 @@ references:
   name: NSProject
   nameWithType: NSProject
   fullName: CRMScript.NetServer.NSProject
-- uid: CRMScript.NetServer.NSProjectEvent
-  commentId: T:CRMScript.NetServer.NSProjectEvent
-  isExternal: true
-  name: NSProjectEvent
-  nameWithType: NSProjectEvent
-  fullName: CRMScript.NetServer.NSProjectEvent
 - uid: CRMScript.NetServer.NSImage
   commentId: T:CRMScript.NetServer.NSImage
   isExternal: true
   name: NSImage
   nameWithType: NSImage
   fullName: CRMScript.NetServer.NSImage
-- uid: CRMScript.Native.ProjectEntity
-  commentId: T:CRMScript.Native.ProjectEntity
-  isExternal: true
-  name: ProjectEntity
-  nameWithType: ProjectEntity
-  fullName: CRMScript.Native.ProjectEntity
 - uid: CRMScript.Global.Map
   commentId: T:CRMScript.Global.Map
   isExternal: true
   name: Map
   nameWithType: Map
   fullName: CRMScript.Global.Map
-- uid: CRMScript.Global.Void
-  commentId: T:CRMScript.Global.Void
-  isExternal: true
-  name: Void
-  nameWithType: Void
-  fullName: CRMScript.Global.Void

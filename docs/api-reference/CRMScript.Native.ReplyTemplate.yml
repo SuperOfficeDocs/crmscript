@@ -54,7 +54,7 @@ items:
     parameters:
     - id: lang
       type: CRMScript.Global.Integer
-      description: The reply template to get attachments for
+      description: Language as an integer
     return:
       type: CRMScript.Global.Integer[]
       description: attachment IDs belonging to a reply template
@@ -69,17 +69,17 @@ items:
   nameWithType: ReplyTemplate.getHtmlBody(Integer)
   fullName: CRMScript.Native.ReplyTemplate.getHtmlBody(Integer)
   type: Method
-  summary: "\nReturns the reply template HTML body, in the language given by language\n"
-  remarks: 
+  summary: "\nReturns the reply template HTML body, in the language given by language. If language does not exists it will return default language.\n"
+  remarks: "\nSupported languages depend on configuration.\n"
   syntax: 
     content: String getHtmlBody(Integer language)
     parameters:
     - id: language
       type: CRMScript.Global.Integer
-      description: language as an integer
+      description: Language as an integer
     return:
       type: CRMScript.Global.String
-      description: the reply template HTML body, in the language given
+      description: The reply template HTML body, in the language given.
   example: 
 - uid: CRMScript.Native.ReplyTemplate.getName()
   commentId: M:CRMScript.Native.ReplyTemplate.getName()
@@ -91,14 +91,14 @@ items:
   nameWithType: ReplyTemplate.getName()
   fullName: CRMScript.Native.ReplyTemplate.getName()
   type: Method
-  summary: "\nReturns the name of the Reply Template\n"
+  summary: "\nReturns the name of the reply template.\n"
   remarks: 
   syntax: 
     content: String getName()
     parameters: []
     return:
       type: CRMScript.Global.String
-      description: the name of the Reply Template
+      description: The name of the reply template.
   example: 
 - uid: CRMScript.Native.ReplyTemplate.getPlainBody(Integer)
   commentId: M:CRMScript.Native.ReplyTemplate.getPlainBody(Integer)
@@ -110,17 +110,17 @@ items:
   nameWithType: ReplyTemplate.getPlainBody(Integer)
   fullName: CRMScript.Native.ReplyTemplate.getPlainBody(Integer)
   type: Method
-  summary: "\nReturns the Reply template plain text body in the given language (if available).\n"
+  summary: "\nReturns the reply template plain text body in the given language (if available). If language does not exists, it will return default language.\n"
   remarks: 
   syntax: 
     content: String getPlainBody(Integer language)
     parameters:
     - id: language
       type: CRMScript.Global.Integer
-      description: language as an integer
+      description: Language as an integer
     return:
       type: CRMScript.Global.String
-      description: the Reply template plain text body in the given language
+      description: The reply template plain text body in the given language.
   example: 
 - uid: CRMScript.Native.ReplyTemplate.getSmsBody(Integer)
   commentId: M:CRMScript.Native.ReplyTemplate.getSmsBody(Integer)
@@ -132,17 +132,17 @@ items:
   nameWithType: ReplyTemplate.getSmsBody(Integer)
   fullName: CRMScript.Native.ReplyTemplate.getSmsBody(Integer)
   type: Method
-  summary: "\nReturns the reply template SMS body, in the language given by language ID.\n"
+  summary: "\nReturns the reply template SMS body, in the language given by language ID. If language does not exists it will return default language.\n"
   remarks: 
   syntax: 
     content: String getSmsBody(Integer language)
     parameters:
     - id: language
       type: CRMScript.Global.Integer
-      description: language as an integer
+      description: Language as an integer.
     return:
       type: CRMScript.Global.String
-      description: the Reply template SMS body in the language given
+      description: The reply template SMS body in the language given.
   example: 
 - uid: CRMScript.Native.ReplyTemplate.getSubject(Integer)
   commentId: M:CRMScript.Native.ReplyTemplate.getSubject(Integer)
@@ -154,17 +154,17 @@ items:
   nameWithType: ReplyTemplate.getSubject(Integer)
   fullName: CRMScript.Native.ReplyTemplate.getSubject(Integer)
   type: Method
-  summary: "\nReturns the reply template subject, in the language given by language.\n"
-  remarks: 
+  summary: "\nReturns the reply template subject, in the language given by language. If language does not exists it will return default language.\n"
+  remarks: "\nSupported languages depend on configuration.\n"
   syntax: 
     content: String getSubject(Integer language)
     parameters:
     - id: language
       type: CRMScript.Global.Integer
-      description: language as an integer
+      description: Language as an integer.
     return:
       type: CRMScript.Global.String
-      description: the reply template plain-text subject in the language given
+      description: The reply template plain-text subject in the language given.
   example: 
 - uid: CRMScript.Native.ReplyTemplate.load(Integer)
   commentId: M:CRMScript.Native.ReplyTemplate.load(Integer)
@@ -183,10 +183,10 @@ items:
     parameters:
     - id: id
       type: CRMScript.Global.Integer
-      description: Reply template ID
+      description: Reply template ID.
     return:
       type: CRMScript.Global.Bool
-      description: true if reply template with given ID loaded successfully; otherwise, false
+      description: True if reply template with given ID loaded successfully; otherwise, false.
   example: 
 references:
 - uid: CRMScript.Native.ReplyTemplate

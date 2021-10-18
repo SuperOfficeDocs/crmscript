@@ -58,8 +58,8 @@ items:
   - CRMScript.NetServer.NSAppointment.GetTask()
   - CRMScript.NetServer.NSAppointment.GetTaskType()
   - CRMScript.NetServer.NSAppointment.GetType()
-  - CRMScript.NetServer.NSAppointment.SetActiveDate()
-  - CRMScript.NetServer.NSAppointment.SetAlarmLeadTime()
+  - CRMScript.NetServer.NSAppointment.SetActiveDate(DateTime)
+  - CRMScript.NetServer.NSAppointment.SetAlarmLeadTime(TimeSpan)
   - CRMScript.NetServer.NSAppointment.SetAlldayEvent(Integer)
   - CRMScript.NetServer.NSAppointment.SetAppointmentId(Integer)
   - CRMScript.NetServer.NSAppointment.SetAssignedBy(Integer)
@@ -69,7 +69,7 @@ items:
   - CRMScript.NetServer.NSAppointment.SetAssociateId(Integer)
   - CRMScript.NetServer.NSAppointment.SetAssociateName(String)
   - CRMScript.NetServer.NSAppointment.SetBookingType(Integer)
-  - CRMScript.NetServer.NSAppointment.SetCautionWarning()
+  - CRMScript.NetServer.NSAppointment.SetCautionWarning(Integer)
   - CRMScript.NetServer.NSAppointment.SetColorIndex(Integer)
   - CRMScript.NetServer.NSAppointment.SetCompleted(Integer)
   - CRMScript.NetServer.NSAppointment.SetContactId(Integer)
@@ -77,9 +77,9 @@ items:
   - CRMScript.NetServer.NSAppointment.SetCreatedBy(String)
   - CRMScript.NetServer.NSAppointment.SetCreatedByAssociateId(Integer)
   - CRMScript.NetServer.NSAppointment.SetCreatedByFullName(String)
-  - CRMScript.NetServer.NSAppointment.SetCreatedDate()
+  - CRMScript.NetServer.NSAppointment.SetCreatedDate(DateTime)
   - CRMScript.NetServer.NSAppointment.SetDescription(String)
-  - CRMScript.NetServer.NSAppointment.SetEndDate()
+  - CRMScript.NetServer.NSAppointment.SetEndDate(DateTime)
   - CRMScript.NetServer.NSAppointment.SetFreeBusy(Integer)
   - CRMScript.NetServer.NSAppointment.SetHasAlarm(Bool)
   - CRMScript.NetServer.NSAppointment.SetInvitationStatus(Integer)
@@ -96,16 +96,16 @@ items:
   - CRMScript.NetServer.NSAppointment.SetPersonId(Integer)
   - CRMScript.NetServer.NSAppointment.SetPriorityId(Integer)
   - CRMScript.NetServer.NSAppointment.SetPriorityName(String)
-  - CRMScript.NetServer.NSAppointment.SetPrivate()
+  - CRMScript.NetServer.NSAppointment.SetPrivate(Integer)
   - CRMScript.NetServer.NSAppointment.SetProjectId(Integer)
   - CRMScript.NetServer.NSAppointment.SetProjectName(String)
-  - CRMScript.NetServer.NSAppointment.SetRecurringEndDate()
+  - CRMScript.NetServer.NSAppointment.SetRecurringEndDate(DateTime)
   - CRMScript.NetServer.NSAppointment.SetRecurringPattern(Integer)
-  - CRMScript.NetServer.NSAppointment.SetRecurringStartDate()
+  - CRMScript.NetServer.NSAppointment.SetRecurringStartDate(DateTime)
   - CRMScript.NetServer.NSAppointment.SetRejectReason(String)
   - CRMScript.NetServer.NSAppointment.SetSaleId(Integer)
   - CRMScript.NetServer.NSAppointment.SetSaleName(String)
-  - CRMScript.NetServer.NSAppointment.SetStartDate()
+  - CRMScript.NetServer.NSAppointment.SetStartDate(DateTime)
   - CRMScript.NetServer.NSAppointment.SetTask(String)
   - CRMScript.NetServer.NSAppointment.SetTaskType(Integer)
   - CRMScript.NetServer.NSAppointment.SetType(Integer)
@@ -1148,15 +1148,15 @@ items:
       description: The different types of appointment, if the appointment is supposed to be shown in the diary or checklist, or if it's a document.
   example: 
   - "\n<pre><code>NSAppointment thing;\nInteger type = thing.GetType();</code></pre>\n"
-- uid: CRMScript.NetServer.NSAppointment.SetActiveDate()
-  commentId: M:CRMScript.NetServer.NSAppointment.SetActiveDate()
-  id: 'SetActiveDate()'
+- uid: CRMScript.NetServer.NSAppointment.SetActiveDate(DateTime)
+  commentId: M:CRMScript.NetServer.NSAppointment.SetActiveDate(DateTime)
+  id: 'SetActiveDate(DateTime)'
   so.intellisense: NSAppointment.SetActiveDate
   langs:
   - crmscript
-  name: 'SetActiveDate()'
-  nameWithType: NSAppointment.SetActiveDate()
-  fullName: CRMScript.NetServer.NSAppointment.SetActiveDate()
+  name: 'SetActiveDate(DateTime)'
+  nameWithType: NSAppointment.SetActiveDate(DateTime)
+  fullName: CRMScript.NetServer.NSAppointment.SetActiveDate(DateTime)
   type: Method
   summary: ""
   remarks: 
@@ -1170,15 +1170,15 @@ items:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSAppointment thing;\nDateTime activeDate;\nthing.SetActiveDate(activeDate);</code></pre>\n"
-- uid: CRMScript.NetServer.NSAppointment.SetAlarmLeadTime()
-  commentId: M:CRMScript.NetServer.NSAppointment.SetAlarmLeadTime()
-  id: 'SetAlarmLeadTime()'
+- uid: CRMScript.NetServer.NSAppointment.SetAlarmLeadTime(TimeSpan)
+  commentId: M:CRMScript.NetServer.NSAppointment.SetAlarmLeadTime(TimeSpan)
+  id: 'SetAlarmLeadTime(TimeSpan)'
   so.intellisense: NSAppointment.SetAlarmLeadTime
   langs:
   - crmscript
-  name: 'SetAlarmLeadTime()'
-  nameWithType: NSAppointment.SetAlarmLeadTime()
-  fullName: CRMScript.NetServer.NSAppointment.SetAlarmLeadTime()
+  name: 'SetAlarmLeadTime(TimeSpan)'
+  nameWithType: NSAppointment.SetAlarmLeadTime(TimeSpan)
+  fullName: CRMScript.NetServer.NSAppointment.SetAlarmLeadTime(TimeSpan)
   type: Method
   summary: ""
   remarks: 
@@ -1389,15 +1389,15 @@ items:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSAppointment thing;\nInteger bookingType;\nthing.SetBookingType(bookingType);</code></pre>\n"
-- uid: CRMScript.NetServer.NSAppointment.SetCautionWarning()
-  commentId: M:CRMScript.NetServer.NSAppointment.SetCautionWarning()
-  id: 'SetCautionWarning()'
+- uid: CRMScript.NetServer.NSAppointment.SetCautionWarning(Integer)
+  commentId: M:CRMScript.NetServer.NSAppointment.SetCautionWarning(Integer)
+  id: 'SetCautionWarning(Integer)'
   so.intellisense: NSAppointment.SetCautionWarning
   langs:
   - crmscript
-  name: 'SetCautionWarning()'
-  nameWithType: NSAppointment.SetCautionWarning()
-  fullName: CRMScript.NetServer.NSAppointment.SetCautionWarning()
+  name: 'SetCautionWarning(Integer)'
+  nameWithType: NSAppointment.SetCautionWarning(Integer)
+  fullName: CRMScript.NetServer.NSAppointment.SetCautionWarning(Integer)
   type: Method
   summary: ""
   remarks: ""
@@ -1565,15 +1565,15 @@ items:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSAppointment thing;\nString createdByFullName;\nthing.SetCreatedByFullName(createdByFullName);</code></pre>\n"
-- uid: CRMScript.NetServer.NSAppointment.SetCreatedDate()
-  commentId: M:CRMScript.NetServer.NSAppointment.SetCreatedDate()
-  id: 'SetCreatedDate()'
+- uid: CRMScript.NetServer.NSAppointment.SetCreatedDate(DateTime)
+  commentId: M:CRMScript.NetServer.NSAppointment.SetCreatedDate(DateTime)
+  id: 'SetCreatedDate(DateTime)'
   so.intellisense: NSAppointment.SetCreatedDate
   langs:
   - crmscript
-  name: 'SetCreatedDate()'
-  nameWithType: NSAppointment.SetCreatedDate()
-  fullName: CRMScript.NetServer.NSAppointment.SetCreatedDate()
+  name: 'SetCreatedDate(DateTime)'
+  nameWithType: NSAppointment.SetCreatedDate(DateTime)
+  fullName: CRMScript.NetServer.NSAppointment.SetCreatedDate(DateTime)
   type: Method
   summary: ""
   remarks: 
@@ -1609,15 +1609,15 @@ items:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSAppointment thing;\nString description;\nthing.SetDescription(description);</code></pre>\n"
-- uid: CRMScript.NetServer.NSAppointment.SetEndDate()
-  commentId: M:CRMScript.NetServer.NSAppointment.SetEndDate()
-  id: 'SetEndDate()'
+- uid: CRMScript.NetServer.NSAppointment.SetEndDate(DateTime)
+  commentId: M:CRMScript.NetServer.NSAppointment.SetEndDate(DateTime)
+  id: 'SetEndDate(DateTime)'
   so.intellisense: NSAppointment.SetEndDate
   langs:
   - crmscript
-  name: 'SetEndDate()'
-  nameWithType: NSAppointment.SetEndDate()
-  fullName: CRMScript.NetServer.NSAppointment.SetEndDate()
+  name: 'SetEndDate(DateTime)'
+  nameWithType: NSAppointment.SetEndDate(DateTime)
+  fullName: CRMScript.NetServer.NSAppointment.SetEndDate(DateTime)
   type: Method
   summary: ""
   remarks: 
@@ -1982,15 +1982,15 @@ items:
       type: CRMScript.Global.Void'
   example: 
   - "\n<pre><code>NSAppointment thing;\nString priorityName;\nthing.SetPriorityName(priorityName);</code></pre>\n"
-- uid: CRMScript.NetServer.NSAppointment.SetPrivate()
-  commentId: M:CRMScript.NetServer.NSAppointment.SetPrivate()
-  id: 'SetPrivate()'
+- uid: CRMScript.NetServer.NSAppointment.SetPrivate(Integer)
+  commentId: M:CRMScript.NetServer.NSAppointment.SetPrivate(Integer)
+  id: 'SetPrivate(Integer)'
   so.intellisense: NSAppointment.SetPrivate
   langs:
   - crmscript
-  name: 'SetPrivate()'
-  nameWithType: NSAppointment.SetPrivate()
-  fullName: CRMScript.NetServer.NSAppointment.SetPrivate()
+  name: 'SetPrivate(Integer)'
+  nameWithType: NSAppointment.SetPrivate(Integer)
+  fullName: CRMScript.NetServer.NSAppointment.SetPrivate(Integer)
   type: Method
   summary: "\nObsolete, but still maintained field for appointment privacy.\n"
   remarks: ""
@@ -2048,15 +2048,15 @@ items:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSAppointment thing;\nString projectName;\nthing.SetProjectName(projectName);</code></pre>\n"
-- uid: CRMScript.NetServer.NSAppointment.SetRecurringEndDate()
-  commentId: M:CRMScript.NetServer.NSAppointment.SetRecurringEndDate()
-  id: 'SetRecurringEndDate()'
+- uid: CRMScript.NetServer.NSAppointment.SetRecurringEndDate(DateTime)
+  commentId: M:CRMScript.NetServer.NSAppointment.SetRecurringEndDate(DateTime)
+  id: 'SetRecurringEndDate(DateTime)'
   so.intellisense: NSAppointment.SetRecurringEndDate
   langs:
   - crmscript
-  name: 'SetRecurringEndDate()'
-  nameWithType: NSAppointment.SetRecurringEndDate()
-  fullName: CRMScript.NetServer.NSAppointment.SetRecurringEndDate()
+  name: 'SetRecurringEndDate(DateTime)'
+  nameWithType: NSAppointment.SetRecurringEndDate(DateTime)
+  fullName: CRMScript.NetServer.NSAppointment.SetRecurringEndDate(DateTime)
   type: Method
   summary: 
   remarks: 
@@ -2092,15 +2092,15 @@ items:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSAppointment thing;\nInteger pattern;\nthing.SetRecurringPattern(pattern);</code></pre>\n"
-- uid: CRMScript.NetServer.NSAppointment.SetRecurringStartDate()
-  commentId: M:CRMScript.NetServer.NSAppointment.SetRecurringStartDate()
-  id: 'SetRecurringStartDate()'
+- uid: CRMScript.NetServer.NSAppointment.SetRecurringStartDate(DateTime)
+  commentId: M:CRMScript.NetServer.NSAppointment.SetRecurringStartDate(DateTime)
+  id: 'SetRecurringStartDate(DateTime)'
   so.intellisense: NSAppointment.SetRecurringStartDate
   langs:
   - crmscript
-  name: 'SetRecurringStartDate()'
-  nameWithType: NSAppointment.SetRecurringStartDate()
-  fullName: CRMScript.NetServer.NSAppointment.SetRecurringStartDate()
+  name: 'SetRecurringStartDate(DateTime)'
+  nameWithType: NSAppointment.SetRecurringStartDate(DateTime)
+  fullName: CRMScript.NetServer.NSAppointment.SetRecurringStartDate(DateTime)
   type: Method
   summary: 
   remarks: 
@@ -2180,15 +2180,15 @@ items:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSAppointment thing;\nString saleName;\nthing.SetSaleName(saleName);</code></pre>\n"
-- uid: CRMScript.NetServer.NSAppointment.SetStartDate()
-  commentId: M:CRMScript.NetServer.NSAppointment.SetStartDate()
-  id: 'SetStartDate()'
+- uid: CRMScript.NetServer.NSAppointment.SetStartDate(DateTime)
+  commentId: M:CRMScript.NetServer.NSAppointment.SetStartDate(DateTime)
+  id: 'SetStartDate(DateTime)'
   so.intellisense: NSAppointment.SetStartDate
   langs:
   - crmscript
-  name: 'SetStartDate()'
-  nameWithType: NSAppointment.SetStartDate()
-  fullName: CRMScript.NetServer.NSAppointment.SetStartDate()
+  name: 'SetStartDate(DateTime)'
+  nameWithType: NSAppointment.SetStartDate(DateTime)
+  fullName: CRMScript.NetServer.NSAppointment.SetStartDate(DateTime)
   type: Method
   summary: ""
   remarks: 

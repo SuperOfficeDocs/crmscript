@@ -61,9 +61,9 @@ items:
   - CRMScript.NetServer.NSTicketEntity.SetConnectId(Integer)
   - CRMScript.NetServer.NSTicketEntity.SetCreatedAt(DateTime)
   - CRMScript.NetServer.NSTicketEntity.SetCreatedBy(NSAssociate)
-  - CRMScript.NetServer.NSTicketEntity.SetCustomFields()
+  - CRMScript.NetServer.NSTicketEntity.SetCustomFields(Map)
   - CRMScript.NetServer.NSTicketEntity.SetDeadline(DateTime)
-  - CRMScript.NetServer.NSTicketEntity.SetExtraFields()
+  - CRMScript.NetServer.NSTicketEntity.SetExtraFields(Map)
   - CRMScript.NetServer.NSTicketEntity.SetFirstReadByUser(DateTime)
   - CRMScript.NetServer.NSTicketEntity.SetFromAddress(String)
   - CRMScript.NetServer.NSTicketEntity.SetHasAttachment(Bool)
@@ -1208,15 +1208,15 @@ items:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTicketEntity thing;\nNSAssociate createdBy;\nthing.SetCreatedBy(createdBy);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketEntity.SetCustomFields()
-  commentId: M:CRMScript.NetServer.NSTicketEntity.SetCustomFields()
-  id: 'SetCustomFields()'
+- uid: CRMScript.NetServer.NSTicketEntity.SetCustomFields(Map)
+  commentId: M:CRMScript.NetServer.NSTicketEntity.SetCustomFields(Map)
+  id: 'SetCustomFields(Map)'
   so.intellisense: NSTicketEntity.SetCustomFields
   langs:
   - crmscript
-  name: 'SetCustomFields()'
-  nameWithType: NSTicketEntity.SetCustomFields()
-  fullName: CRMScript.NetServer.NSTicketEntity.SetCustomFields()
+  name: 'SetCustomFields(Map)'
+  nameWithType: NSTicketEntity.SetCustomFields(Map)
+  fullName: CRMScript.NetServer.NSTicketEntity.SetCustomFields(Map)
   type: Method
   summary: "\nSets the user-defined and extra fields on a TicketEntity with a map.\n"
   remarks: 
@@ -1247,21 +1247,26 @@ items:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTicketEntity thing;\nDateTime deadline;\nthing.SetDeadline(deadline);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketEntity.SetExtraFields()
-  commentId: M:CRMScript.NetServer.NSTicketEntity.SetExtraFields()
-  id: 'SetExtraFields()'
+- uid: CRMScript.NetServer.NSTicketEntity.SetExtraFields(Map)
+  commentId: M:CRMScript.NetServer.NSTicketEntity.SetExtraFields(Map)
+  id: 'SetExtraFields(Map)'
   so.intellisense: NSTicketEntity.SetExtraFields
   langs:
   - crmscript
-  name: 'SetExtraFields()'
-  nameWithType: NSTicketEntity.SetExtraFields()
-  fullName: CRMScript.NetServer.NSTicketEntity.SetExtraFields()
+  name: 'SetExtraFields(Map)'
+  nameWithType: NSTicketEntity.SetExtraFields(Map)
+  fullName: CRMScript.NetServer.NSTicketEntity.SetExtraFields(Map)
   type: Method
   summary: "\nSets the extra field values on TicketEntity with a map.\n"
   remarks: 
   syntax: 
     content: Void SetExtraFields(Map extras)
     parameters:
+    - id: extras
+      type: CRMScript.Global.Map
+      description:
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTicketEntity thing;\nMap extras;\nextras[&quot;SuperOffice:1&quot;] = &quot;[I:123]&quot;;\nextras[&quot;SuperOffice:1&quot;] = &quot;123&quot;; // this will also work, but beware of decimal point variations in different languages\nextras[&quot;custom.progid&quot;] = &quot;foobar&quot;;\nthing.SetExtraFields(extras);</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketEntity.SetFirstReadByUser(DateTime)

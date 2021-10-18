@@ -70,7 +70,7 @@ items:
   - CRMScript.NetServer.NSProduct.SetSupplier(String)
   - CRMScript.NetServer.NSProduct.SetSupplierCode(String)
   - CRMScript.NetServer.NSProduct.SetUnitCost(Float)
-  - CRMScript.NetServer.NSProduct.SetUnitListPrice()
+  - CRMScript.NetServer.NSProduct.SetUnitListPrice(Float)
   - CRMScript.NetServer.NSProduct.SetUnitMinimumPrice(Float)
   - CRMScript.NetServer.NSProduct.SetUrl(String)
   - CRMScript.NetServer.NSProduct.SetVAT(Float)
@@ -1414,23 +1414,23 @@ items:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProduct thing;\nFloat unitCost;\nthing.SetUnitCost(unitCost);</code></pre>\n"
-- uid: CRMScript.NetServer.NSProduct.SetUnitListPrice()
-  commentId: M:CRMScript.NetServer.NSProduct.SetUnitListPrice()
-  id: 'SetUnitListPrice()'
+- uid: CRMScript.NetServer.NSProduct.SetUnitListPrice(Float)
+  commentId: M:CRMScript.NetServer.NSProduct.SetUnitListPrice(Float)
+  id: 'SetUnitListPrice(Float)'
   so.intellisense: NSProduct.SetUnitListPrice
   langs:
   - crmscript
-  name: 'SetUnitListPrice()'
-  nameWithType: NSProduct.SetUnitListPrice()
-  fullName: CRMScript.NetServer.NSProduct.SetUnitListPrice()
+  name: 'SetUnitListPrice(Float)'
+  nameWithType: NSProduct.SetUnitListPrice(Float)
+  fullName: CRMScript.NetServer.NSProduct.SetUnitListPrice(Float)
   type: Method
   summary: ""
   remarks: "\nThe ListPrice will stay the same even when a larger amount is ordered.\n"
   syntax: 
     content: Void SetUnitListPrice(Float unitListPrice)
     parameters:
-    - id:
-      type: 
+    - id: unitListPrice
+      type: CRMScript.Global.Float
       description: the basic/normal/standard price from which the discount is computed from
     return:
       type: CRMScript.Global.Void

@@ -30,13 +30,13 @@ items:
   - CRMScript.NetServer.NSTicketMessageEntity.#ctor
   - CRMScript.NetServer.NSTicketMessageEntity.SetAuthor(String)
   - CRMScript.NetServer.NSTicketMessageEntity.SetBody(String)
-  - CRMScript.NetServer.NSTicketMessageEntity.SetCreatedAt()
-  - CRMScript.NetServer.NSTicketMessageEntity.SetCreatedBy()
-  - CRMScript.NetServer.NSTicketMessageEntity.SetCustomFields()
+  - CRMScript.NetServer.NSTicketMessageEntity.SetCreatedAt(DateTime)
+  - CRMScript.NetServer.NSTicketMessageEntity.SetCreatedBy(NSAssociate)
+  - CRMScript.NetServer.NSTicketMessageEntity.SetCustomFields(Map)
   - CRMScript.NetServer.NSTicketMessageEntity.SetDebugInfo(String)
   - CRMScript.NetServer.NSTicketMessageEntity.SetEjMessageId(Integer)
   - CRMScript.NetServer.NSTicketMessageEntity.SetEmailHeader(String)
-  - CRMScript.NetServer.NSTicketMessageEntity.SetExtraFields()
+  - CRMScript.NetServer.NSTicketMessageEntity.SetExtraFields(Map)
   - CRMScript.NetServer.NSTicketMessageEntity.SetHtmlBody(String)
   - CRMScript.NetServer.NSTicketMessageEntity.SetImportant(Bool)
   - CRMScript.NetServer.NSTicketMessageEntity.SetMailSorter(String)
@@ -48,7 +48,7 @@ items:
   - CRMScript.NetServer.NSTicketMessageEntity.SetSlevel(Integer)
   - CRMScript.NetServer.NSTicketMessageEntity.SetTicket(NSTicket)
   - CRMScript.NetServer.NSTicketMessageEntity.SetTimeSpent(Integer)
-  - CRMScript.NetServer.NSTicketMessageEntity.SetType()
+  - CRMScript.NetServer.NSTicketMessageEntity.SetType(Integer)
   name: NSTicketMessageEntity
   nameWithType: NSTicketMessageEntity
   fullName: CRMScript.NetServer.NSTicketMessageEntity
@@ -531,15 +531,15 @@ items:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTicketMessageEntity thing;\nString body;\nthing.SetBody(body);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketMessageEntity.SetCreatedAt()
-  commentId: M:CRMScript.NetServer.NSTicketMessageEntity.SetCreatedAt()
-  id: 'SetCreatedAt()'
+- uid: CRMScript.NetServer.NSTicketMessageEntity.SetCreatedAt(DateTime)
+  commentId: M:CRMScript.NetServer.NSTicketMessageEntity.SetCreatedAt(DateTime)
+  id: 'SetCreatedAt(DateTime)'
   so.intellisense: NSTicketMessageEntity.SetCreatedAt
   langs:
   - crmscript
-  name: 'SetCreatedAt()'
-  nameWithType: NSTicketMessageEntity.SetCreatedAt()
-  fullName: CRMScript.NetServer.NSTicketMessageEntity.SetCreatedAt()
+  name: 'SetCreatedAt(DateTime)'
+  nameWithType: NSTicketMessageEntity.SetCreatedAt(DateTime)
+  fullName: CRMScript.NetServer.NSTicketMessageEntity.SetCreatedAt(DateTime)
   type: Method
   summary: "\nWhen the message was posted.\n"
   remarks: 
@@ -548,15 +548,15 @@ items:
     parameters:
   example: 
   - "\n<pre><code>NSTicketMessageEntity thing;\nDateTime createdAt;\nthing.SetCreatedAt(createdAt);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketMessageEntity.SetCreatedBy()
-  commentId: M:CRMScript.NetServer.NSTicketMessageEntity.SetCreatedBy()
-  id: 'SetCreatedBy()'
+- uid: CRMScript.NetServer.NSTicketMessageEntity.SetCreatedBy(NSAssociate)
+  commentId: M:CRMScript.NetServer.NSTicketMessageEntity.SetCreatedBy(NSAssociate)
+  id: 'SetCreatedBy(NSAssociate)'
   so.intellisense: NSTicketMessageEntity.SetCreatedBy
   langs:
   - crmscript
-  name: 'SetCreatedBy()'
-  nameWithType: NSTicketMessageEntity.SetCreatedBy()
-  fullName: CRMScript.NetServer.NSTicketMessageEntity.SetCreatedBy()
+  name: 'SetCreatedBy(NSAssociate)'
+  nameWithType: NSTicketMessageEntity.SetCreatedBy(NSAssociate)
+  fullName: CRMScript.NetServer.NSTicketMessageEntity.SetCreatedBy(NSAssociate)
   type: Method
   summary: "\nThe associate who created this ticket message\n"
   remarks: 
@@ -565,21 +565,26 @@ items:
     parameters:
   example: 
   - "\n<pre><code>NSTicketMessageEntity thing;\nNSAssociate createdBy;\nthing.SetCreatedBy(createdBy);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketMessageEntity.SetCustomFields()
-  commentId: M:CRMScript.NetServer.NSTicketMessageEntity.SetCustomFields()
-  id: 'SetCustomFields()'
+- uid: CRMScript.NetServer.NSTicketMessageEntity.SetCustomFields(Map)
+  commentId: M:CRMScript.NetServer.NSTicketMessageEntity.SetCustomFields(Map)
+  id: 'SetCustomFields(Map)'
   so.intellisense: NSTicketMessageEntity.SetCustomFields
   langs:
   - crmscript
-  name: 'SetCustomFields()'
-  nameWithType: NSTicketMessageEntity.SetCustomFields()
-  fullName: CRMScript.NetServer.NSTicketMessageEntity.SetCustomFields()
+  name: 'SetCustomFields(Map)'
+  nameWithType: NSTicketMessageEntity.SetCustomFields(Map)
+  fullName: CRMScript.NetServer.NSTicketMessageEntity.SetCustomFields(Map)
   type: Method
   summary: "\nSets the user-defined and extra fields on a TicketMessageEntity with a map.\n"
   remarks: 
   syntax: 
     content: Void SetCustomFields(Map udefs)
     parameters:
+    - id: udefs
+      type: CRMScript.Global.Map
+      description:
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTicketMessageEntity thing;\nMap udefs;\nudefs[&quot;SuperOffice:1&quot;] = &quot;[I:123]&quot;;\nudefs[&quot;SuperOffice:1&quot;] = &quot;123&quot;; // this will also work, but beware of decimal point variations in different languages\nudefs[&quot;custom.progid&quot;] = &quot;foobar&quot;;\nudefs[&quot;x_foo&quot;] = &quot;foobar&quot;;\nudefs[&quot;x_bar&quot;] = &quot;456&quot;; // List item id\nthing.SetCustomFields(udefs);</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketMessageEntity.SetDebugInfo(String)
@@ -648,21 +653,26 @@ items:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTicketMessageEntity thing;\nString emailHeader;\nthing.SetEmailHeader(emailHeader);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketMessageEntity.SetExtraFields()
-  commentId: M:CRMScript.NetServer.NSTicketMessageEntity.SetExtraFields()
-  id: 'SetExtraFields()'
+- uid: CRMScript.NetServer.NSTicketMessageEntity.SetExtraFields(Map)
+  commentId: M:CRMScript.NetServer.NSTicketMessageEntity.SetExtraFields(Map)
+  id: 'SetExtraFields(Map)'
   so.intellisense: NSTicketMessageEntity.SetExtraFields
   langs:
   - crmscript
-  name: 'SetExtraFields()'
-  nameWithType: NSTicketMessageEntity.SetExtraFields()
-  fullName: CRMScript.NetServer.NSTicketMessageEntity.SetExtraFields()
+  name: 'SetExtraFields(Map)'
+  nameWithType: NSTicketMessageEntity.SetExtraFields(Map)
+  fullName: CRMScript.NetServer.NSTicketMessageEntity.SetExtraFields(Map)
   type: Method
   summary: "\nSets the extra field values on TicketMessageEntity with a map.\n"
   remarks: 
   syntax: 
     content: Void SetExtraFields(Map extras)
     parameters:
+    - id: extras
+      type: CRMScript.Global.Map
+      description:
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTicketMessageEntity thing;\nMap extras;\nextras[&quot;SuperOffice:1&quot;] = &quot;[I:123]&quot;;\nextras[&quot;SuperOffice:1&quot;] = &quot;123&quot;; // this will also work, but beware of decimal point variations in different languages\nextras[&quot;custom.progid&quot;] = &quot;foobar&quot;;\nthing.SetExtraFields(extras);</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketMessageEntity.SetHtmlBody(String)
@@ -905,15 +915,15 @@ items:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTicketMessageEntity thing;\nInteger timeSpent;\nthing.SetTimeSpent(timeSpent);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketMessageEntity.SetType()
-  commentId: M:CRMScript.NetServer.NSTicketMessageEntity.SetType()
-  id: 'SetType()'
+- uid: CRMScript.NetServer.NSTicketMessageEntity.SetType(Integer)
+  commentId: M:CRMScript.NetServer.NSTicketMessageEntity.SetType(Integer)
+  id: 'SetType(Integer)'
   so.intellisense: NSTicketMessageEntity.SetType
   langs:
   - crmscript
-  name: 'SetType()'
-  nameWithType: NSTicketMessageEntity.SetType()
-  fullName: CRMScript.NetServer.NSTicketMessageEntity.SetType()
+  name: 'SetType(Integer)'
+  nameWithType: NSTicketMessageEntity.SetType(Integer)
+  fullName: CRMScript.NetServer.NSTicketMessageEntity.SetType(Integer)
   type: Method
   summary: ""
   remarks: ""

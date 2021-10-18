@@ -1,10 +1,11 @@
 ---
 uid: crmscript_reply_template
 title: Reply templates
+description: A reply template is a blueprint for an email. It consists of regular text and template variables.
 author:
 so.date:
-keywords:
-so.topic:
+keywords: crmscript, reply template, service, template
+so.topic: concept
 ---
 
 # Reply templates
@@ -56,16 +57,7 @@ You can [look up specific fields][1] in the database reference.
 
 ### Translation
 
-Many templates are available in several languages.
-
-| Language  | Code (ID) |
-|-----------|:---------:|
-| Norwegian | 0         |
-|  English  | 1         |
-| German    | 2         |
-| Swedish   | 3         |
-| Danish    | 4         |
-| Dutch     | 5         |
+If customer languages are configured, it is possible to create language-specific versions of each reply template. More information about this can be found in embedded help under [working with customer languages][5].
 
 ## Template variables
 
@@ -191,3 +183,4 @@ htmlBody = p.parseString(htmlBody);
 [2]: https://community.superoffice.com/documentation/help/EN/CRM/8.5/UserHelp/index.htm#t=Service%2Ftopics%2FTemplate_variables.html
 [3]: https://community.superoffice.com/en/technical/documentation/older-versions/documentation-7/cs/parser-variables/
 [4]: parser.md
+[5]: https://community.superoffice.com/Documentation/Help/en/CRM/9.2/UserHelp/index.htm#t=Service%2Ftopics%2Fadmin.listCustLangs.editCustLang.html

@@ -41,7 +41,7 @@ items:
   - CRMScript.NetServer.NSTicketMessageEntity.SetImportant(Bool)
   - CRMScript.NetServer.NSTicketMessageEntity.SetMailSorter(String)
   - CRMScript.NetServer.NSTicketMessageEntity.SetMessageCategory(Integer)
-  - CRMScript.NetServer.NSTicketMessageEntity.SetMessageHeaders()
+  - CRMScript.NetServer.NSTicketMessageEntity.SetMessageHeaders(NSTicketMessageHeader[])
   - CRMScript.NetServer.NSTicketMessageEntity.SetMessageId(String)
   - CRMScript.NetServer.NSTicketMessageEntity.SetPerson(NSPerson)
   - CRMScript.NetServer.NSTicketMessageEntity.SetSearchTitle(String)
@@ -324,13 +324,14 @@ items:
   nameWithType: NSTicketMessageEntity.GetMessageHeaders()
   fullName: CRMScript.NetServer.NSTicketMessageEntity.GetMessageHeaders()
   type: Method
-  summary: "\nContains the message headers, like To, Cc, Bcc information, or custom headers\n"
+  summary: ""
   remarks: 
   syntax: 
-    content: TicketMessageHeader[] GetMessageHeaders()
+    content: NSTicketMessageHeader[] GetMessageHeaders()
     parameters: []
     return:
-      type: CRMScript.Native.TicketMessageHeader[]
+      type: CRMScript.NetServer.NSTicketMessageHeader[]
+      description: Contains the message headers, like To, Cc, Bcc information, or custom headers
   example: 
   - "\n<pre><code>NSTicketMessageEntity thing;\nTicketMessageHeader[] messageHeaders = thing.GetMessageHeaders();</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketMessageEntity.GetMessageId()
@@ -750,23 +751,28 @@ items:
       description: Defines what kind of message this is. See <xref href=\"CRMScript.NetServer.TicketMessageCategory\" data-throw-if-not-resolved=\"false\"></xref>.
   example: 
   - "\n<pre><code>NSTicketMessageEntity thing;\nInteger messageCategory;\nthing.SetMessageCategory(messageCategory);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketMessageEntity.SetMessageHeaders()
-  commentId: M:CRMScript.NetServer.NSTicketMessageEntity.SetMessageHeaders()
-  id: 'SetMessageHeaders()'
+- uid: CRMScript.NetServer.NSTicketMessageEntity.SetMessageHeaders(NSTicketMessageHeader[])
+  commentId: M:CRMScript.NetServer.NSTicketMessageEntity.SetMessageHeaders(NSTicketMessageHeader[])
+  id: 'SetMessageHeaders(NSTicketMessageHeader[])'
   so.intellisense: NSTicketMessageEntity.SetMessageHeaders
   langs:
   - crmscript
-  name: 'SetMessageHeaders()'
-  nameWithType: NSTicketMessageEntity.SetMessageHeaders()
-  fullName: CRMScript.NetServer.NSTicketMessageEntity.SetMessageHeaders()
+  name: 'SetMessageHeaders(NSTicketMessageHeader[])'
+  nameWithType: NSTicketMessageEntity.SetMessageHeaders(NSTicketMessageHeader[])
+  fullName: CRMScript.NetServer.NSTicketMessageEntity.SetMessageHeaders(NSTicketMessageHeader[])
   type: Method
-  summary: "\nContains the message headers, like To, Cc, Bcc information, or custom headers\n"
+  summary: ""
   remarks: 
   syntax: 
-    content: Void SetMessageHeaders(TicketMessageHeader[] messageHeaders)
+    content: Void SetMessageHeaders(NSTicketMessageHeader[] messageHeaders)
     parameters:
+    - id: messageHeaders
+      type: CRMScript.NetServer.NSTicketMessageHeader[]
+      description: Contains the message headers, like To, Cc, Bcc information, or custom headers
+    return:
+      type: CRMScript.Global.Void
   example: 
-  - "\n<pre><code>NSTicketMessageEntity thing;\nTicketMessageHeader[] messageHeaders;\nthing.SetMessageHeaders(messageHeaders);</code></pre>\n"
+  - "\n<pre><code>NSTicketMessageEntity thing;\nNSTicketMessageHeader[] messageHeaders;\nthing.SetMessageHeaders(messageHeaders);</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketMessageEntity.SetMessageId(String)
   commentId: M:CRMScript.NetServer.NSTicketMessageEntity.SetMessageId(String)
   id: 'SetMessageId(String)'
@@ -962,26 +968,26 @@ references:
   name: Bool
   nameWithType: Bool
   fullName: CRMScript.Global.Bool
-- uid: CRMScript.Native.TicketMessageHeader[]
+- uid: CRMScript.NetServer.NSTicketMessageHeader[]
   isExternal: true
-  name: TicketMessageHeader[]
-  nameWithType: TicketMessageHeader[]
-  fullName: CRMScript.Native.TicketMessageHeader[]
+  name: NSTicketMessageHeader[]
+  nameWithType: NSTicketMessageHeader[]
+  fullName: CRMScript.NetServer.NSTicketMessageHeader[]
   spec.crmscript:
-  - uid: CRMScript.Native.TicketMessageHeader
+  - uid: CRMScript.NetServer.NSTicketMessageHeader
     isExternal: true
-    name: TicketMessageHeader
-    nameWithType: TicketMessageHeader
-    fullName: CRMScript.Native.TicketMessageHeader
+    name: NSTicketMessageHeader
+    nameWithType: NSTicketMessageHeader
+    fullName: CRMScript.NetServer.NSTicketMessageHeader
   - name: '[]'
     nameWithType: '[]'
     fullName: '[]'
-- uid: CRMScript.Native.TicketMessageHeader
-  commentId: T:CRMScript.Native.TicketMessageHeader
+- uid: CRMScript.NetServer.NSTicketMessageHeader
+  commentId: T:CRMScript.NetServer.NSTicketMessageHeader
   isExternal: true
-  name: TicketMessageHeader
-  nameWithType: TicketMessageHeader
-  fullName: CRMScript.Native.TicketMessageHeader
+  name: NSTicketMessageHeader
+  nameWithType: NSTicketMessageHeader
+  fullName: CRMScript.NetServer.NSTicketMessageHeader
 - uid: CRMScript.NetServer.NSPerson
   commentId: T:CRMScript.NetServer.NSPerson
   isExternal: true

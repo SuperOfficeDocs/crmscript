@@ -9,6 +9,7 @@ items:
   - CRMScript.Native.Notify.#ctor
   - CRMScript.Native.Notify.sendCustomMessage(Integer,String)
   - CRMScript.Native.Notify.sendNewTicket(Integer)
+  - CRMScript.Native.Notify.sendNewTicket(Integer,Bool)
   - CRMScript.Native.Notify.sendNewTicketMessage(Integer,Bool)
   - CRMScript.Native.Notify.sendTicketActivated(Integer)
   - CRMScript.Native.Notify.sendTicketTakenOver(Integer,Integer,Integer)
@@ -75,6 +76,30 @@ items:
     - id: ticketId
       type: CRMScript.Global.Integer
       description: The ID of the ticket to notify about
+    return:
+      type: CRMScript.Global.Void
+  example: 
+- uid: CRMScript.Native.Notify.sendNewTicket(Integer,Bool)
+  commentId: M:CRMScript.Native.Notify.sendNewTicket(Integer,Bool)
+  id: 'sendNewTicket(Integer,Bool)'
+  so.intellisense: Notify.sendNewTicket
+  langs:
+  - crmscript
+  name: 'sendNewTicket(Integer,Bool)'
+  nameWithType: Notify.sendNewTicket(Integer,Bool)
+  fullName: CRMScript.Native.Notify.sendNewTicket(Integer,Bool)
+  type: Method
+  summary: "\nSends a notification about a new request according to the user's notify configuration. By setting the parameter skipCategoryMemberNotification, this method will not notify members of the category (if set up) or the email address free-text field on the category.\n"
+  remarks: 
+  syntax: 
+    content: Void sendNewTicket(Integer ticketId, Bool skipCategoryMemberNotification)
+    parameters:
+    - id: ticketId
+      type: CRMScript.Global.Integer
+      description: The ID of the ticket to notify about
+    - id: skipCategoryMemberNotification
+      type: CRMScript.Global.Bool
+      description: do not notify members or the email notification address set up on the category
     return:
       type: CRMScript.Global.Void
   example: 

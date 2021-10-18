@@ -100,7 +100,7 @@ items:
   - CRMScript.NetServer.NSAppointmentEntity.SetLocation(String)
   - CRMScript.NetServer.NSAppointmentEntity.SetMotherAssociate()
   - CRMScript.NetServer.NSAppointmentEntity.SetMotherId(Integer)
-  - CRMScript.NetServer.NSAppointmentEntity.SetParticipants()
+  - CRMScript.NetServer.NSAppointmentEntity.SetParticipants(NSParticipantInfo[])
   - CRMScript.NetServer.NSAppointmentEntity.SetPerson(NSPerson)
   - CRMScript.NetServer.NSAppointmentEntity.SetPreferredTZLocation(Integer)
   - CRMScript.NetServer.NSAppointmentEntity.SetPriority(NSPriority)
@@ -872,13 +872,13 @@ items:
   summary: ""
   remarks: 
   syntax: 
-    content: ParticipantInfo[] GetParticipants()
+    content: NSParticipantInfo[] GetParticipants()
     parameters: []
     return:
-      type: CRMScript.Native.ParticipantInfo[]
+      type: CRMScript.NetServer.NSParticipantInfo[]
       description: List of IDs of the participants to this appointment.
   example: 
-  - "\n<pre><code>NSAppointmentEntity thing;\nParticipantInfo[] participants = thing.GetParticipants();</code></pre>\n"
+  - "\n<pre><code>NSAppointmentEntity thing;\nNSParticipantInfo[] participants = thing.GetParticipants();</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentEntity.GetPerson()
   commentId: M:CRMScript.NetServer.NSAppointmentEntity.GetPerson()
   id: 'GetPerson()'
@@ -2065,28 +2065,28 @@ items:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSAppointmentEntity thing;\nInteger motherId;\nthing.SetMotherId(motherId);</code></pre>\n"
-- uid: CRMScript.NetServer.NSAppointmentEntity.SetParticipants()
-  commentId: M:CRMScript.NetServer.NSAppointmentEntity.SetParticipants()
-  id: 'SetParticipants()'
+- uid: CRMScript.NetServer.NSAppointmentEntity.SetParticipants(NSParticipantInfo[])
+  commentId: M:CRMScript.NetServer.NSAppointmentEntity.SetParticipants(NSParticipantInfo[])
+  id: 'SetParticipants(NSParticipantInfo[])'
   so.intellisense: NSAppointmentEntity.SetParticipants
   langs:
   - crmscript
-  name: 'SetParticipants()'
-  nameWithType: NSAppointmentEntity.SetParticipants()
-  fullName: CRMScript.NetServer.NSAppointmentEntity.SetParticipants()
+  name: 'SetParticipants(NSParticipantInfo[])'
+  nameWithType: NSAppointmentEntity.SetParticipants(NSParticipantInfo[])
+  fullName: CRMScript.NetServer.NSAppointmentEntity.SetParticipants(NSParticipantInfo[])
   type: Method
   summary: ""
   remarks: 
   syntax: 
-    content: Void SetParticipants(ParticipantInfo[] participants)
+    content: Void SetParticipants(NSParticipantInfo[] participants)
     parameters:
     - id: participants
-      type: CRMScript.NetServer.ParticipantInfo[]
+      type: CRMScript.NetServer.NSParticipantInfo[]
       description: List of IDs of the participants to this appointment.
     return:
       type: CRMScript.Global.Void
   example: 
-  - "\n<pre><code>NSAppointmentEntity thing;\nParticipantInfo[] participants;\nthing.SetParticipants(participants);</code></pre>\n"
+  - "\n<pre><code>NSAppointmentEntity thing;\nNSParticipantInfo[] participants;\nthing.SetParticipants(participants);</code></pre>\n"
 - uid: CRMScript.NetServer.NSAppointmentEntity.SetPerson(NSPerson)
   commentId: M:CRMScript.NetServer.NSAppointmentEntity.SetPerson(NSPerson)
   id: 'SetPerson(NSPerson)'
@@ -2603,26 +2603,26 @@ references:
   name: NSLink
   nameWithType: NSLink
   fullName: CRMScript.NetServer.NSLink
-- uid: CRMScript.Native.ParticipantInfo[]
+- uid: CRMScript.NetServer.NSParticipantInfo[]
   isExternal: true
-  name: ParticipantInfo[]
-  nameWithType: ParticipantInfo[]
-  fullName: CRMScript.Native.ParticipantInfo[]
+  name: NSParticipantInfo[]
+  nameWithType: NSParticipantInfo[]
+  fullName: CRMScript.NetServer.NSParticipantInfo[]
   spec.crmscript:
-  - uid: CRMScript.Native.ParticipantInfo
+  - uid: CRMScript.NetServer.NSParticipantInfo
     isExternal: true
-    name: ParticipantInfo
-    nameWithType: ParticipantInfo
-    fullName: CRMScript.Native.ParticipantInfo
+    name: NSParticipantInfo
+    nameWithType: NSParticipantInfo
+    fullName: CRMScript.NetServer.NSParticipantInfo
   - name: '[]'
     nameWithType: '[]'
     fullName: '[]'
-- uid: CRMScript.Native.ParticipantInfo
-  commentId: T:CRMScript.Native.ParticipantInfo
+- uid: CRMScript.NetServer.NSParticipantInfo
+  commentId: T:CRMScript.NetServer.NSParticipantInfo
   isExternal: true
-  name: ParticipantInfo
-  nameWithType: ParticipantInfo
-  fullName: CRMScript.Native.ParticipantInfo
+  name: NSParticipantInfo
+  nameWithType: NSParticipantInfo
+  fullName: CRMScript.NetServer.NSParticipantInfo
 - uid: CRMScript.NetServer.NSPriority
   commentId: T:CRMScript.NetServer.NSPriority
   isExternal: true

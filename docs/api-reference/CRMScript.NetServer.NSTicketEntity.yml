@@ -6,6 +6,7 @@ items:
   langs:
   - crmscript
   children:
+  - CRMScript.NetServer.NSTicketEntity.#ctor
   - CRMScript.NetServer.NSTicketEntity.GetActivate()
   - CRMScript.NetServer.NSTicketEntity.GetAlertLevel()
   - CRMScript.NetServer.NSTicketEntity.GetAlertTimeout()
@@ -50,44 +51,43 @@ items:
   - CRMScript.NetServer.NSTicketEntity.GetTimeToClose()
   - CRMScript.NetServer.NSTicketEntity.GetTimeToReply()
   - CRMScript.NetServer.NSTicketEntity.GetTitle()
-  - CRMScript.NetServer.NSTicketEntity.#ctor
-  - CRMScript.NetServer.NSTicketEntity.SetActivate()
+  - CRMScript.NetServer.NSTicketEntity.SetActivate(DateTime)
   - CRMScript.NetServer.NSTicketEntity.SetAlertLevel(Integer)
-  - CRMScript.NetServer.NSTicketEntity.SetAlertTimeout()
+  - CRMScript.NetServer.NSTicketEntity.SetAlertTimeout(DateTime)
   - CRMScript.NetServer.NSTicketEntity.SetAuthor(String)
   - CRMScript.NetServer.NSTicketEntity.SetBaseStatus(Integer)
-  - CRMScript.NetServer.NSTicketEntity.SetCategory()
-  - CRMScript.NetServer.NSTicketEntity.SetClosedAt()
+  - CRMScript.NetServer.NSTicketEntity.SetCategory(NSTicketCategoryEntity)
+  - CRMScript.NetServer.NSTicketEntity.SetClosedAt(DateTime)
   - CRMScript.NetServer.NSTicketEntity.SetConnectId(Integer)
-  - CRMScript.NetServer.NSTicketEntity.SetCreatedAt()
-  - CRMScript.NetServer.NSTicketEntity.SetCreatedBy()
+  - CRMScript.NetServer.NSTicketEntity.SetCreatedAt(DateTime)
+  - CRMScript.NetServer.NSTicketEntity.SetCreatedBy(NSAssociate)
   - CRMScript.NetServer.NSTicketEntity.SetCustomFields()
-  - CRMScript.NetServer.NSTicketEntity.SetDeadline()
+  - CRMScript.NetServer.NSTicketEntity.SetDeadline(DateTime)
   - CRMScript.NetServer.NSTicketEntity.SetExtraFields()
-  - CRMScript.NetServer.NSTicketEntity.SetFirstReadByUser()
+  - CRMScript.NetServer.NSTicketEntity.SetFirstReadByUser(DateTime)
   - CRMScript.NetServer.NSTicketEntity.SetFromAddress(String)
   - CRMScript.NetServer.NSTicketEntity.SetHasAttachment(Bool)
-  - CRMScript.NetServer.NSTicketEntity.SetLastChanged()
-  - CRMScript.NetServer.NSTicketEntity.SetMessages()
+  - CRMScript.NetServer.NSTicketEntity.SetLastChanged(DateTime)
+  - CRMScript.NetServer.NSTicketEntity.SetMessages(NSTicketMessage[])
   - CRMScript.NetServer.NSTicketEntity.SetNumMessages(Integer)
   - CRMScript.NetServer.NSTicketEntity.SetNumReplies(Integer)
   - CRMScript.NetServer.NSTicketEntity.SetOrigin(Integer)
-  - CRMScript.NetServer.NSTicketEntity.SetOwnedBy()
+  - CRMScript.NetServer.NSTicketEntity.SetOwnedBy(NSAssociate)
   - CRMScript.NetServer.NSTicketEntity.SetPerson(NSPerson)
   - CRMScript.NetServer.NSTicketEntity.SetPriority(NSTicketPriorityEntity)
-  - CRMScript.NetServer.NSTicketEntity.SetReadByCustomer()
-  - CRMScript.NetServer.NSTicketEntity.SetReadByOwner()
+  - CRMScript.NetServer.NSTicketEntity.SetReadByCustomer(DateTime)
+  - CRMScript.NetServer.NSTicketEntity.SetReadByOwner(DateTime)
   - CRMScript.NetServer.NSTicketEntity.SetReadStatus(Integer)
   - CRMScript.NetServer.NSTicketEntity.SetRealTimeSpentExternally(Integer)
   - CRMScript.NetServer.NSTicketEntity.SetRealTimeSpentInternally(Integer)
   - CRMScript.NetServer.NSTicketEntity.SetRealTimeSpentQueue(Integer)
   - CRMScript.NetServer.NSTicketEntity.SetRealTimeToClose(Integer)
   - CRMScript.NetServer.NSTicketEntity.SetRealTimeToReply(Integer)
-  - CRMScript.NetServer.NSTicketEntity.SetRepliedAt()
+  - CRMScript.NetServer.NSTicketEntity.SetRepliedAt(DateTime)
   - CRMScript.NetServer.NSTicketEntity.SetSecondaryPersons(NSPerson[])
   - CRMScript.NetServer.NSTicketEntity.SetSlevel(Integer)
-  - CRMScript.NetServer.NSTicketEntity.SetStatus()
-  - CRMScript.NetServer.NSTicketEntity.SetTags()
+  - CRMScript.NetServer.NSTicketEntity.SetStatus(NSTicketStatusEntity)
+  - CRMScript.NetServer.NSTicketEntity.SetTags(NSTag[])
   - CRMScript.NetServer.NSTicketEntity.SetTicketId(Integer)
   - CRMScript.NetServer.NSTicketEntity.SetTimeSpentExternally(Integer)
   - CRMScript.NetServer.NSTicketEntity.SetTimeSpentInternally(Integer)
@@ -100,6 +100,21 @@ items:
   fullName: CRMScript.NetServer.NSTicketEntity
   type: Class
   summary: 
+  example: 
+- uid: CRMScript.NetServer.NSTicketEntity.#ctor
+  commentId: M:CRMScript.NetServer.NSTicketEntity.#ctor
+  id: '#ctor'
+  so.intellisense: Void.NSTicketEntity
+  langs:
+  - crmscript
+  name: '#ctor'
+  nameWithType: NSTicketEntity.#ctor
+  fullName: CRMScript.NetServer.NSTicketEntity.#ctor
+  type: Constructor
+  summary: 
+  remarks: 
+  syntax: 
+    content: NSTicketEntity
   example: 
 - uid: CRMScript.NetServer.NSTicketEntity.GetActivate()
   commentId: M:CRMScript.NetServer.NSTicketEntity.GetActivate()
@@ -449,15 +464,16 @@ items:
   nameWithType: NSTicketEntity.GetMessages()
   fullName: CRMScript.NetServer.NSTicketEntity.GetMessages()
   type: Method
-  summary: "\nTicketMessageId, CreatedAt, SLevel, and Important for all the messages connected to this ticket. For message body see the TicketMessageEntity or the TicketMessage archive.\n"
-  remarks: 
+  summary: ""
+  remarks: "\nFor message body, see the NSTicketMessageEntity or the NSTicketMessage archive.\n"
   syntax: 
-    content: TicketMessage[] GetMessages()
+    content: NSTicketMessage[] GetMessages()
     parameters: []
     return:
-      type: CRMScript.Native.TicketMessage[]
+      type: CRMScript.NetServer.NSTicketMessage[]
+      description: TicketMessageId, CreatedAt, SLevel, and Important for all the messages connected to this ticket.
   example: 
-  - "\n<pre><code>NSTicketEntity thing;\nTicketMessage[] messages = thing.GetMessages();</code></pre>\n"
+  - "\n<pre><code>NSTicketEntity thing;\nNSTicketMessage[] messages = thing.GetMessages();</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketEntity.GetNumMessages()
   commentId: M:CRMScript.NetServer.NSTicketEntity.GetNumMessages()
   id: 'GetNumMessages()'
@@ -823,15 +839,15 @@ items:
   nameWithType: NSTicketEntity.GetTags()
   fullName: CRMScript.NetServer.NSTicketEntity.GetTags()
   type: Method
-  summary: "\nAn array containing the tags assigned to this request\n"
+  summary: "\nAn array containing the tags assigned to this request.\n"
   remarks: 
   syntax: 
-    content: Tag[] GetTags()
+    content: NSTag[] GetTags()
     parameters: []
     return:
-      type: CRMScript.Native.Tag[]
+      type: CRMScript.NetServer.NSTag[]
   example: 
-  - "\n<pre><code>NSTicketEntity thing;\nTag[] tags = thing.GetTags();</code></pre>\n"
+  - "\n<pre><code>NSTicketEntity thing;\nNSTag[] tags = thing.GetTags();</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketEntity.GetTicketId()
   commentId: M:CRMScript.NetServer.NSTicketEntity.GetTicketId()
   id: 'GetTicketId()'
@@ -972,36 +988,26 @@ items:
       description:
   example: 
   - "\n<pre><code>NSTicketEntity thing;\nString title = thing.GetTitle();</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketEntity.#ctor
-  commentId: M:CRMScript.NetServer.NSTicketEntity.#ctor
-  id: '#ctor'
-  so.intellisense: Void.NSTicketEntity
-  langs:
-  - crmscript
-  name: '#ctor'
-  nameWithType: NSTicketEntity.#ctor
-  fullName: CRMScript.NetServer.NSTicketEntity.#ctor
-  type: Constructor
-  summary: 
-  remarks: 
-  syntax: 
-    content: NSTicketEntity
-  example: 
-- uid: CRMScript.NetServer.NSTicketEntity.SetActivate()
-  commentId: M:CRMScript.NetServer.NSTicketEntity.SetActivate()
-  id: 'SetActivate()'
+- uid: CRMScript.NetServer.NSTicketEntity.SetActivate(DateTime)
+  commentId: M:CRMScript.NetServer.NSTicketEntity.SetActivate(DateTime)
+  id: 'SetActivate(DateTime)'
   so.intellisense: NSTicketEntity.SetActivate
   langs:
   - crmscript
-  name: 'SetActivate()'
-  nameWithType: NSTicketEntity.SetActivate()
-  fullName: CRMScript.NetServer.NSTicketEntity.SetActivate()
+  name: 'SetActivate(DateTime)'
+  nameWithType: NSTicketEntity.SetActivate(DateTime)
+  fullName: CRMScript.NetServer.NSTicketEntity.SetActivate(DateTime)
   type: Method
   summary: "\nWhen the ticket should be activated, if it is postponed.\n"
   remarks: 
   syntax: 
     content: Void SetActivate(DateTime activate)
     parameters:
+    - id: activate
+      type: CRMScript.Global.DateTime
+      description:
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTicketEntity thing;\nDateTime activate;\nthing.SetActivate(activate);</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketEntity.SetAlertLevel(Integer)
@@ -1026,21 +1032,26 @@ items:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTicketEntity thing;\nInteger alertLevel;\nthing.SetAlertLevel(alertLevel);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketEntity.SetAlertTimeout()
-  commentId: M:CRMScript.NetServer.NSTicketEntity.SetAlertTimeout()
-  id: 'SetAlertTimeout()'
+- uid: CRMScript.NetServer.NSTicketEntity.SetAlertTimeout(DateTime)
+  commentId: M:CRMScript.NetServer.NSTicketEntity.SetAlertTimeout(DateTime)
+  id: 'SetAlertTimeout(DateTime)'
   so.intellisense: NSTicketEntity.SetAlertTimeout
   langs:
   - crmscript
-  name: 'SetAlertTimeout()'
-  nameWithType: NSTicketEntity.SetAlertTimeout()
-  fullName: CRMScript.NetServer.NSTicketEntity.SetAlertTimeout()
+  name: 'SetAlertTimeout(DateTime)'
+  nameWithType: NSTicketEntity.SetAlertTimeout(DateTime)
+  fullName: CRMScript.NetServer.NSTicketEntity.SetAlertTimeout(DateTime)
   type: Method
-  summary: "\nThe datetime for when the ticket should jump to the next alert_level.\n"
+  summary: "\nThe datetime for when the ticket should jump to the next alert level.\n"
   remarks: 
   syntax: 
     content: Void SetAlertTimeout(DateTime alertTimeout)
     parameters:
+    - id: alertTimeout
+      type: CRMScript.Global.DateTime
+      description:
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTicketEntity thing;\nDateTime alertTimeout;\nthing.SetAlertTimeout(alertTimeout);</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketEntity.SetAuthor(String)
@@ -1087,38 +1098,48 @@ items:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTicketEntity thing;\nInteger baseStatus;\nthing.SetBaseStatus(baseStatus);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketEntity.SetCategory()
-  commentId: M:CRMScript.NetServer.NSTicketEntity.SetCategory()
-  id: 'SetCategory()'
+- uid: CRMScript.NetServer.NSTicketEntity.SetCategory(NSTicketCategoryEntity)
+  commentId: M:CRMScript.NetServer.NSTicketEntity.SetCategory(NSTicketCategoryEntity)
+  id: 'SetCategory(NSTicketCategoryEntity)'
   so.intellisense: NSTicketEntity.SetCategory
   langs:
   - crmscript
-  name: 'SetCategory()'
-  nameWithType: NSTicketEntity.SetCategory()
-  fullName: CRMScript.NetServer.NSTicketEntity.SetCategory()
+  name: 'SetCategory(NSTicketCategoryEntity)'
+  nameWithType: NSTicketEntity.SetCategory(NSTicketCategoryEntity)
+  fullName: CRMScript.NetServer.NSTicketEntity.SetCategory(NSTicketCategoryEntity)
   type: Method
-  summary: "\nThe ticket category entity which this ticket is connected to\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetCategory(NSTicketCategoryEntity category)
     parameters:
+    - id: category
+      type: CRMScript.NetServer.NSTicketCategoryEntity
+      description: The ticket category entity which this ticket is connected to.
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTicketEntity thing;\nNSTicketCategoryEntity category;\nthing.SetCategory(category);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketEntity.SetClosedAt()
-  commentId: M:CRMScript.NetServer.NSTicketEntity.SetClosedAt()
-  id: 'SetClosedAt()'
+- uid: CRMScript.NetServer.NSTicketEntity.SetClosedAt(DateTime)
+  commentId: M:CRMScript.NetServer.NSTicketEntity.SetClosedAt(DateTime)
+  id: 'SetClosedAt(DateTime)'
   so.intellisense: NSTicketEntity.SetClosedAt
   langs:
   - crmscript
-  name: 'SetClosedAt()'
-  nameWithType: NSTicketEntity.SetClosedAt()
-  fullName: CRMScript.NetServer.NSTicketEntity.SetClosedAt()
+  name: 'SetClosedAt(DateTime)'
+  nameWithType: NSTicketEntity.SetClosedAt(DateTime)
+  fullName: CRMScript.NetServer.NSTicketEntity.SetClosedAt(DateTime)
   type: Method
-  summary: "\nWhen the ticket was closed.\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetClosedAt(DateTime closedAt)
     parameters:
+    - id: closedAt
+      type: CRMScript.Global.DateTime
+      description: When the ticket was closed.
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTicketEntity thing;\nDateTime closedAt;\nthing.SetClosedAt(closedAt);</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketEntity.SetConnectId(Integer)
@@ -1143,38 +1164,48 @@ items:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTicketEntity thing;\nInteger connectId;\nthing.SetConnectId(connectId);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketEntity.SetCreatedAt()
-  commentId: M:CRMScript.NetServer.NSTicketEntity.SetCreatedAt()
-  id: 'SetCreatedAt()'
+- uid: CRMScript.NetServer.NSTicketEntity.SetCreatedAt(DateTime)
+  commentId: M:CRMScript.NetServer.NSTicketEntity.SetCreatedAt(DateTime)
+  id: 'SetCreatedAt(DateTime)'
   so.intellisense: NSTicketEntity.SetCreatedAt
   langs:
   - crmscript
-  name: 'SetCreatedAt()'
-  nameWithType: NSTicketEntity.SetCreatedAt()
-  fullName: CRMScript.NetServer.NSTicketEntity.SetCreatedAt()
+  name: 'SetCreatedAt(DateTime)'
+  nameWithType: NSTicketEntity.SetCreatedAt(DateTime)
+  fullName: CRMScript.NetServer.NSTicketEntity.SetCreatedAt(DateTime)
   type: Method
   summary: "\nWhen the ticket was created.\n"
   remarks: 
   syntax: 
     content: Void SetCreatedAt(DateTime createdAt)
     parameters:
+    - id: createdAt
+      type: CRMScript.Global.DateTime
+      description:
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTicketEntity thing;\nDateTime createdAt;\nthing.SetCreatedAt(createdAt);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketEntity.SetCreatedBy()
-  commentId: M:CRMScript.NetServer.NSTicketEntity.SetCreatedBy()
-  id: 'SetCreatedBy()'
+- uid: CRMScript.NetServer.NSTicketEntity.SetCreatedBy(NSAssociate)
+  commentId: M:CRMScript.NetServer.NSTicketEntity.SetCreatedBy(NSAssociate)
+  id: 'SetCreatedBy(NSAssociate)'
   so.intellisense: NSTicketEntity.SetCreatedBy
   langs:
   - crmscript
-  name: 'SetCreatedBy()'
-  nameWithType: NSTicketEntity.SetCreatedBy()
-  fullName: CRMScript.NetServer.NSTicketEntity.SetCreatedBy()
+  name: 'SetCreatedBy(NSAssociate)'
+  nameWithType: NSTicketEntity.SetCreatedBy(NSAssociate)
+  fullName: CRMScript.NetServer.NSTicketEntity.SetCreatedBy(NSAssociate)
   type: Method
-  summary: "\nThe associate who created this ticket\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetCreatedBy(NSAssociate createdBy)
     parameters:
+    - id: createdBy
+      type: CRMScript.NetServer.NSAssociate
+      description: The associate who created this ticket.
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTicketEntity thing;\nNSAssociate createdBy;\nthing.SetCreatedBy(createdBy);</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketEntity.SetCustomFields()
@@ -1194,21 +1225,26 @@ items:
     parameters:
   example: 
   - "\n<pre><code>NSTicketEntity thing;\nMap udefs;\nudefs[&quot;SuperOffice:1&quot;] = &quot;[I:123]&quot;;\nudefs[&quot;SuperOffice:1&quot;] = &quot;123&quot;; // this will also work, but beware of decimal point variations in different languages\nudefs[&quot;custom.progid&quot;] = &quot;foobar&quot;;\nudefs[&quot;x_foo&quot;] = &quot;foobar&quot;;\nudefs[&quot;x_bar&quot;] = &quot;456&quot;; // List item id\nthing.SetCustomFields(udefs);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketEntity.SetDeadline()
-  commentId: M:CRMScript.NetServer.NSTicketEntity.SetDeadline()
-  id: 'SetDeadline()'
+- uid: CRMScript.NetServer.NSTicketEntity.SetDeadline(DateTime)
+  commentId: M:CRMScript.NetServer.NSTicketEntity.SetDeadline(DateTime)
+  id: 'SetDeadline(DateTime)'
   so.intellisense: NSTicketEntity.SetDeadline
   langs:
   - crmscript
-  name: 'SetDeadline()'
-  nameWithType: NSTicketEntity.SetDeadline()
-  fullName: CRMScript.NetServer.NSTicketEntity.SetDeadline()
+  name: 'SetDeadline(DateTime)'
+  nameWithType: NSTicketEntity.SetDeadline(DateTime)
+  fullName: CRMScript.NetServer.NSTicketEntity.SetDeadline(DateTime)
   type: Method
-  summary: "\nDeadline for ticket.\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetDeadline(DateTime deadline)
     parameters:
+    - id: deadline
+      type: CRMScript.Global.DateTime
+      description: Deadline for ticket.
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTicketEntity thing;\nDateTime deadline;\nthing.SetDeadline(deadline);</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketEntity.SetExtraFields()
@@ -1228,21 +1264,26 @@ items:
     parameters:
   example: 
   - "\n<pre><code>NSTicketEntity thing;\nMap extras;\nextras[&quot;SuperOffice:1&quot;] = &quot;[I:123]&quot;;\nextras[&quot;SuperOffice:1&quot;] = &quot;123&quot;; // this will also work, but beware of decimal point variations in different languages\nextras[&quot;custom.progid&quot;] = &quot;foobar&quot;;\nthing.SetExtraFields(extras);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketEntity.SetFirstReadByUser()
-  commentId: M:CRMScript.NetServer.NSTicketEntity.SetFirstReadByUser()
-  id: 'SetFirstReadByUser()'
+- uid: CRMScript.NetServer.NSTicketEntity.SetFirstReadByUser(DateTime)
+  commentId: M:CRMScript.NetServer.NSTicketEntity.SetFirstReadByUser(DateTime)
+  id: 'SetFirstReadByUser(DateTime)'
   so.intellisense: NSTicketEntity.SetFirstReadByUser
   langs:
   - crmscript
-  name: 'SetFirstReadByUser()'
-  nameWithType: NSTicketEntity.SetFirstReadByUser()
-  fullName: CRMScript.NetServer.NSTicketEntity.SetFirstReadByUser()
+  name: 'SetFirstReadByUser(DateTime)'
+  nameWithType: NSTicketEntity.SetFirstReadByUser(DateTime)
+  fullName: CRMScript.NetServer.NSTicketEntity.SetFirstReadByUser(DateTime)
   type: Method
-  summary: "\nThe datetime for when the ticket first was read by a user.\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetFirstReadByUser(DateTime firstReadByUser)
     parameters:
+    - id: firstReadByUser
+      type: CRMScript.Global.DateTime
+      description: The datetime for when the ticket first was read by a user.
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTicketEntity thing;\nDateTime firstReadByUser;\nthing.SetFirstReadByUser(firstReadByUser);</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketEntity.SetFromAddress(String)
@@ -1289,40 +1330,50 @@ items:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTicketEntity thing;\nBool hasAttachment;\nthing.SetHasAttachment(hasAttachment);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketEntity.SetLastChanged()
-  commentId: M:CRMScript.NetServer.NSTicketEntity.SetLastChanged()
-  id: 'SetLastChanged()'
+- uid: CRMScript.NetServer.NSTicketEntity.SetLastChanged(DateTime)
+  commentId: M:CRMScript.NetServer.NSTicketEntity.SetLastChanged(DateTime)
+  id: 'SetLastChanged(DateTime)'
   so.intellisense: NSTicketEntity.SetLastChanged
   langs:
   - crmscript
-  name: 'SetLastChanged()'
-  nameWithType: NSTicketEntity.SetLastChanged()
-  fullName: CRMScript.NetServer.NSTicketEntity.SetLastChanged()
+  name: 'SetLastChanged(DateTime)'
+  nameWithType: NSTicketEntity.SetLastChanged(DateTime)
+  fullName: CRMScript.NetServer.NSTicketEntity.SetLastChanged(DateTime)
   type: Method
-  summary: "\nThe last time the ticket was modified.\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetLastChanged(DateTime lastChanged)
     parameters:
+    - id: lastChanged
+      type: CRMScript.Global.DateTime
+      description: The last time the ticket was modified.
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTicketEntity thing;\nDateTime lastChanged;\nthing.SetLastChanged(lastChanged);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketEntity.SetMessages()
-  commentId: M:CRMScript.NetServer.NSTicketEntity.SetMessages()
-  id: 'SetMessages()'
+- uid: CRMScript.NetServer.NSTicketEntity.SetMessages(NSTicketMessage[])
+  commentId: M:CRMScript.NetServer.NSTicketEntity.SetMessages(NSTicketMessage[])
+  id: 'SetMessages(NSTicketMessage[])'
   so.intellisense: NSTicketEntity.SetMessages
   langs:
   - crmscript
-  name: 'SetMessages()'
-  nameWithType: NSTicketEntity.SetMessages()
-  fullName: CRMScript.NetServer.NSTicketEntity.SetMessages()
+  name: 'SetMessages(NSTicketMessage[])'
+  nameWithType: NSTicketEntity.SetMessages(NSTicketMessage[])
+  fullName: CRMScript.NetServer.NSTicketEntity.SetMessages(NSTicketMessage[])
   type: Method
-  summary: "\nTicketMessageId,CreatedAt,SLevel and Important for all the messages connected to this ticket. For message body see the TicketMessageEntity or the TicketMessage archive.\n"
-  remarks: 
+  summary: ""
+  remarks: "\nFor message body, see the NSTicketMessageEntity or the NSTicketMessage archive.\n"
   syntax: 
-    content: Void SetMessages(TicketMessage[] messages)
+    content: Void SetMessages(NSTicketMessage[] messages)
     parameters:
+    - id: messages
+      type: CRMScript.NetServer.NSTicketMessage[]
+      description: TicketMessageId,CreatedAt,SLevel and Important for all the messages connected to this ticket.
+    return:
+      type: CRMScript.Global.Void
   example: 
-  - "\n<pre><code>NSTicketEntity thing;\nTicketMessage[] messages;\nthing.SetMessages(messages);</code></pre>\n"
+  - "\n<pre><code>NSTicketEntity thing;\nNSTicketMessage[] messages;\nthing.SetMessages(messages);</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketEntity.SetNumMessages(Integer)
   commentId: M:CRMScript.NetServer.NSTicketEntity.SetNumMessages(Integer)
   id: 'SetNumMessages(Integer)'
@@ -1389,21 +1440,26 @@ items:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTicketEntity thing;\nInteger origin;\nthing.SetOrigin(origin);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketEntity.SetOwnedBy()
-  commentId: M:CRMScript.NetServer.NSTicketEntity.SetOwnedBy()
-  id: 'SetOwnedBy()'
+- uid: CRMScript.NetServer.NSTicketEntity.SetOwnedBy(NSAssociate)
+  commentId: M:CRMScript.NetServer.NSTicketEntity.SetOwnedBy(NSAssociate)
+  id: 'SetOwnedBy(NSAssociate)'
   so.intellisense: NSTicketEntity.SetOwnedBy
   langs:
   - crmscript
-  name: 'SetOwnedBy()'
-  nameWithType: NSTicketEntity.SetOwnedBy()
-  fullName: CRMScript.NetServer.NSTicketEntity.SetOwnedBy()
+  name: 'SetOwnedBy(NSAssociate)'
+  nameWithType: NSTicketEntity.SetOwnedBy(NSAssociate)
+  fullName: CRMScript.NetServer.NSTicketEntity.SetOwnedBy(NSAssociate)
   type: Method
-  summary: "\nThe associate who owns this ticket\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetOwnedBy(NSAssociate ownedBy)
     parameters:
+    - id: ownedBy
+      type: CRMScript.NetServer.NSAssociate
+      description: The associate who owns this ticket.
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTicketEntity thing;\nNSAssociate ownedBy;\nthing.SetOwnedBy(ownedBy);</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketEntity.SetPerson(NSPerson)
@@ -1450,38 +1506,48 @@ items:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTicketEntity thing;\nNSTicketPriorityEntity priority;\nthing.SetPriority(priority);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketEntity.SetReadByCustomer()
-  commentId: M:CRMScript.NetServer.NSTicketEntity.SetReadByCustomer()
-  id: 'SetReadByCustomer()'
+- uid: CRMScript.NetServer.NSTicketEntity.SetReadByCustomer(DateTime)
+  commentId: M:CRMScript.NetServer.NSTicketEntity.SetReadByCustomer(DateTime)
+  id: 'SetReadByCustomer(DateTime)'
   so.intellisense: NSTicketEntity.SetReadByCustomer
   langs:
   - crmscript
-  name: 'SetReadByCustomer()'
-  nameWithType: NSTicketEntity.SetReadByCustomer()
-  fullName: CRMScript.NetServer.NSTicketEntity.SetReadByCustomer()
+  name: 'SetReadByCustomer(DateTime)'
+  nameWithType: NSTicketEntity.SetReadByCustomer(DateTime)
+  fullName: CRMScript.NetServer.NSTicketEntity.SetReadByCustomer(DateTime)
   type: Method
-  summary: "\nThe datetime for when the ticket was read by the customer.\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetReadByCustomer(DateTime readByCustomer)
     parameters:
+    - id: readByCustomer
+      type: CRMScript.Global.DateTime
+      description: The datetime for when the ticket was read by the customer.
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTicketEntity thing;\nDateTime readByCustomer;\nthing.SetReadByCustomer(readByCustomer);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketEntity.SetReadByOwner()
-  commentId: M:CRMScript.NetServer.NSTicketEntity.SetReadByOwner()
-  id: 'SetReadByOwner()'
+- uid: CRMScript.NetServer.NSTicketEntity.SetReadByOwner(DateTime)
+  commentId: M:CRMScript.NetServer.NSTicketEntity.SetReadByOwner(DateTime)
+  id: 'SetReadByOwner(DateTime)'
   so.intellisense: NSTicketEntity.SetReadByOwner
   langs:
   - crmscript
-  name: 'SetReadByOwner()'
-  nameWithType: NSTicketEntity.SetReadByOwner()
-  fullName: CRMScript.NetServer.NSTicketEntity.SetReadByOwner()
+  name: 'SetReadByOwner(DateTime)'
+  nameWithType: NSTicketEntity.SetReadByOwner(DateTime)
+  fullName: CRMScript.NetServer.NSTicketEntity.SetReadByOwner(DateTime)
   type: Method
-  summary: "\nThe datetime for when the ticket last was read by the owner.\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetReadByOwner(DateTime readByOwner)
     parameters:
+    - id: readByOwner
+      type: CRMScript.Global.DateTime
+      description: The datetime for when the ticket was read by the owner.
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTicketEntity thing;\nDateTime readByOwner;\nthing.SetReadByOwner(readByOwner);</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketEntity.SetReadStatus(Integer)
@@ -1616,21 +1682,26 @@ items:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTicketEntity thing;\nInteger realTimeToReply;\nthing.SetRealTimeToReply(realTimeToReply);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketEntity.SetRepliedAt()
-  commentId: M:CRMScript.NetServer.NSTicketEntity.SetRepliedAt()
-  id: 'SetRepliedAt()'
+- uid: CRMScript.NetServer.NSTicketEntity.SetRepliedAt(DateTime)
+  commentId: M:CRMScript.NetServer.NSTicketEntity.SetRepliedAt(DateTime)
+  id: 'SetRepliedAt(DateTime)'
   so.intellisense: NSTicketEntity.SetRepliedAt
   langs:
   - crmscript
-  name: 'SetRepliedAt()'
-  nameWithType: NSTicketEntity.SetRepliedAt()
-  fullName: CRMScript.NetServer.NSTicketEntity.SetRepliedAt()
+  name: 'SetRepliedAt(DateTime)'
+  nameWithType: NSTicketEntity.SetRepliedAt(DateTime)
+  fullName: CRMScript.NetServer.NSTicketEntity.SetRepliedAt(DateTime)
   type: Method
-  summary: "\nThe datetime for when the ticket was replied to. I.e. the first external message added to the ticket.\n"
+  summary: "\nThe datetime for when the ticket was replied to (when the first external message added to the ticket).\n"
   remarks: 
   syntax: 
     content: Void SetRepliedAt(DateTime repliedAt)
     parameters:
+    - id: repliedAt
+      type: CRMScript.Global.DateTime
+      description: When the ticket was replied to.
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTicketEntity thing;\nDateTime repliedAt;\nthing.SetRepliedAt(repliedAt);</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketEntity.SetSecondaryPersons(NSPerson[])
@@ -1677,40 +1748,50 @@ items:
       type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTicketEntity thing;\nInteger slevel;\nthing.SetSlevel(slevel);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketEntity.SetStatus()
-  commentId: M:CRMScript.NetServer.NSTicketEntity.SetStatus()
-  id: 'SetStatus()'
+- uid: CRMScript.NetServer.NSTicketEntity.SetStatus(NSTicketStatusEntity)
+  commentId: M:CRMScript.NetServer.NSTicketEntity.SetStatus(NSTicketStatusEntity)
+  id: 'SetStatus(NSTicketStatusEntity)'
   so.intellisense: NSTicketEntity.SetStatus
   langs:
   - crmscript
-  name: 'SetStatus()'
-  nameWithType: NSTicketEntity.SetStatus()
-  fullName: CRMScript.NetServer.NSTicketEntity.SetStatus()
+  name: 'SetStatus(NSTicketStatusEntity)'
+  nameWithType: NSTicketEntity.SetStatus(NSTicketStatusEntity)
+  fullName: CRMScript.NetServer.NSTicketEntity.SetStatus(NSTicketStatusEntity)
   type: Method
-  summary: "\nThe ticket status entity which this ticket is connected to\n"
+  summary: ""
   remarks: 
   syntax: 
     content: Void SetStatus(NSTicketStatusEntity status)
     parameters:
+    - id: status
+      type: CRMScript.NetServer.NSTicketStatusEntity
+      description: The ticket status entity which this ticket is connected to
+    return:
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSTicketEntity thing;\nNSTicketStatusEntity status;\nthing.SetStatus(status);</code></pre>\n"
-- uid: CRMScript.NetServer.NSTicketEntity.SetTags()
-  commentId: M:CRMScript.NetServer.NSTicketEntity.SetTags()
-  id: 'SetTags()'
+- uid: CRMScript.NetServer.NSTicketEntity.SetTags(NSTag[])
+  commentId: M:CRMScript.NetServer.NSTicketEntity.SetTags(NSTag[])
+  id: 'SetTags(NSTag[])'
   so.intellisense: NSTicketEntity.SetTags
   langs:
   - crmscript
-  name: 'SetTags()'
-  nameWithType: NSTicketEntity.SetTags()
-  fullName: CRMScript.NetServer.NSTicketEntity.SetTags()
+  name: 'SetTags(NSTag[])'
+  nameWithType: NSTicketEntity.SetTags(NSTag[])
+  fullName: CRMScript.NetServer.NSTicketEntity.SetTags(NSTag[])
   type: Method
   summary: "\nAn array containing the tags assigned to this request\n"
   remarks: 
   syntax: 
-    content: Void SetTags(Tag[] tags)
+    content: Void SetTags(NSTag[] tags)
     parameters:
+    - id: tags
+      type: CRMScript.NetServer.NSTag[]
+      description:
+    return:
+      type: CRMScript.Global.Void
   example: 
-  - "\n<pre><code>NSTicketEntity thing;\nTag[] tags;\nthing.SetTags(tags);</code></pre>\n"
+  - "\n<pre><code>NSTicketEntity thing;\nNSTag[] tags;\nthing.SetTags(tags);</code></pre>\n"
 - uid: CRMScript.NetServer.NSTicketEntity.SetTicketId(Integer)
   commentId: M:CRMScript.NetServer.NSTicketEntity.SetTicketId(Integer)
   id: 'SetTicketId(Integer)'
@@ -1914,26 +1995,26 @@ references:
   name: Bool
   nameWithType: Bool
   fullName: CRMScript.Global.Bool
-- uid: CRMScript.Native.TicketMessage[]
+- uid: CRMScript.NetServer.NSTicketMessage[]
   isExternal: true
-  name: TicketMessage[]
-  nameWithType: TicketMessage[]
-  fullName: CRMScript.Native.TicketMessage[]
+  name: NSTicketMessage[]
+  nameWithType: NSTicketMessage[]
+  fullName: CRMScript.NetServer.NSTicketMessage[]
   spec.crmscript:
-  - uid: CRMScript.Native.TicketMessage
+  - uid: CRMScript.NetServer.NSTicketMessage
     isExternal: true
-    name: TicketMessage
-    nameWithType: TicketMessage
-    fullName: CRMScript.Native.TicketMessage
+    name: NSTicketMessage
+    nameWithType: NSTicketMessage
+    fullName: CRMScript.NetServer.NSTicketMessage
   - name: '[]'
     nameWithType: '[]'
     fullName: '[]'
-- uid: CRMScript.Native.TicketMessage
-  commentId: T:CRMScript.Native.TicketMessage
+- uid: CRMScript.NetServer.NSTicketMessage
+  commentId: T:CRMScript.NetServer.NSTicketMessage
   isExternal: true
-  name: TicketMessage
-  nameWithType: TicketMessage
-  fullName: CRMScript.Native.TicketMessage
+  name: NSTicketMessage
+  nameWithType: NSTicketMessage
+  fullName: CRMScript.NetServer.NSTicketMessage
 - uid: CRMScript.Global.Integer
   commentId: T:CRMScript.Global.Integer
   isExternal: true
@@ -1984,26 +2065,26 @@ references:
   name: NSTicketStatusEntity
   nameWithType: NSTicketStatusEntity
   fullName: CRMScript.NetServer.NSTicketStatusEntity
-- uid: CRMScript.Native.Tag[]
+- uid: CRMScript.Native.NSTag[]
   isExternal: true
-  name: Tag[]
-  nameWithType: Tag[]
-  fullName: CRMScript.Native.Tag[]
+  name: NSTag[]
+  nameWithType: NSTag[]
+  fullName: CRMScript.Native.NSTag[]
   spec.crmscript:
-  - uid: CRMScript.Native.Tag
+  - uid: CRMScript.NetServer.NSTag
     isExternal: true
-    name: Tag
-    nameWithType: Tag
-    fullName: CRMScript.Native.Tag
+    name: NSTag
+    nameWithType: NSTag
+    fullName: CRMScript.NetServer.NSTag
   - name: '[]'
     nameWithType: '[]'
     fullName: '[]'
-- uid: CRMScript.Native.Tag
-  commentId: T:CRMScript.Native.Tag
+- uid: CRMScript.NetServer.NSTag
+  commentId: T:CRMScript.NetServer.NSTag
   isExternal: true
-  name: Tag
-  nameWithType: Tag
-  fullName: CRMScript.Native.Tag
+  name: NSTag
+  nameWithType: NSTag
+  fullName: CRMScript.NetServer.NSTag
 - uid: CRMScript.Global.Void
   commentId: T:CRMScript.Global.Void
   isExternal: true

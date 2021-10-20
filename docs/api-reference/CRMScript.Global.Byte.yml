@@ -16,7 +16,7 @@ items:
   nameWithType: Byte
   fullName: CRMScript.Global.Byte
   type: Class
-  summary: "\nThis class represents a byte. A byte can only contain integer values between 0 and 255. Large values will be masked.\n"
+  summary: "\nRepresents a byte. A byte can only contain integer values between 0 and 255. Large values will be masked.\n"
 - uid: CRMScript.Global.Byte.#ctor(Integer)
   commentId: M:CRMScript.Global.Byte.#ctor(Integer)
   id: '#ctor(Integer)'
@@ -24,13 +24,13 @@ items:
   langs:
   - crmscript
   parent: CRMScript.Global.Byte
-  name: Byte(Integer)
-  nameWithType: Byte.Byte(Integer)
-  fullName: CRMScript.Global.Byte.Byte(Integer)
+  name: '#ctor(Integer)'
+  nameWithType: Byte.#ctor(Integer)
+  fullName: CRMScript.Global.Byte.#ctor(Integer)
   type: Constructor
   summary: "\nPass a number to copy into a new object.\n"
   syntax:
-    content: Byte Byte(Byte value)
+    content: Byte Byte(Integer value)
     parameters:
     - id: value
       type: CRMScript.Global.Integer
@@ -49,12 +49,13 @@ items:
   fullName: CRMScript.Global.Byte.toHex()
   type: Method
   summary: "\nConvert the value of the current byte to a hexadecimal representation of the byte. For example, 10 will return &quot;a&quot;, 11 will return &quot;b&quot;, and so on.\n"
-  remarks: "\nIt is optional to provide the number of padding zeros.\n"
+  remarks: "\nUse toHex(Integer) to provide the number of padding zeros.\n"
   syntax:
     content: String toHex()
     parameters: []
     return:
       type: CRMScript.Global.String
+      description: hexadecimal representation of the byte
 - uid: CRMScript.Global.Byte.toHex(Integer)
   commentId: M:CRMScript.Global.Byte.toHex(Integer)
   id: toHex(Integer)
@@ -66,16 +67,17 @@ items:
   nameWithType: Byte.toHex(Integer)
   fullName: CRMScript.Global.Byte.toHex(Integer)
   type: Method
-  summary: "\nConvert the value of the current byte to a hexadecimal representation of the byte. For example, 10 will return &quot;a&quot;, 11 will return &quot;b&quot;, and so on.\n"
-  remarks: "\nIt is optional to provide the number of padding zeros.\n"
+  summary: "\nConvert the value of the current byte to a hexadecimal representation of the byte with padding zeros. For example, 10 will return &quot;a&quot;, 11 will return &quot;b&quot;, and so on.\n"
+  remarks: 
   syntax:
     content: String toHex(Integer padding)
     parameters:
     - id: padding
       type: CRMScript.Global.Integer
-      description: The number of padding zeros. Optional.
+      description: The number of padding zeros.
     return:
       type: CRMScript.Global.String
+      description: hexadecimal representation of the byte with padding zeros
 - uid: CRMScript.Global.Byte.toString()
   commentId: M:CRMScript.Global.Byte.toString()
   id: toString()
@@ -110,6 +112,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.Integer
+      description: integer representation (0 - 255)
 - uid: CRMScript.Global.Byte.toBool()
   commentId: M:CRMScript.Global.Byte.toBool()
   id: toBool()

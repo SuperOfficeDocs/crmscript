@@ -6,6 +6,7 @@ items:
   langs:
   - crmscript
   children:
+    - CRMScript.Global.Bool.#ctor
     - CRMScript.Global.Bool.#ctor(Bool)
     - CRMScript.Global.Bool.toInteger()
     - CRMScript.Global.Bool.toString()
@@ -14,6 +15,21 @@ items:
   fullName: CRMScript.Global.Bool
   type: Class
   summary: "\nRepresents booleans as objects. True/false.<p></p>\nVariables of this type are commonly used in comparisons and conditional statements.\n"
+- uid: CRMScript.Global.Bool.#ctor
+  commentId: M:CRMScript.Global.Bool.#ctor
+  id: '#ctor'
+  so.intellisense: Void.Bool
+  langs:
+  - crmscript
+  parent: CRMScript.Global.Bool
+  name: Bool()
+  nameWithType: Bool.Bool()
+  fullName: CRMScript.Global.Bool.Bool()
+  type: Constructor
+  summary: "\nDefault constructor.\n"
+  syntax:
+    content: Bool Bool()
+  example:
 - uid: CRMScript.Global.Bool.#ctor(Bool)
   commentId: M:CRMScript.Global.Bool.#ctor(Bool)
   id: '#ctor(Bool)'
@@ -27,7 +43,7 @@ items:
   type: Constructor
   summary: "\nPass a boolean value to copy into a new object.\n"
   syntax:
-    content: Bool Bool(Bool value)."
+    content: Bool Bool(Bool value)
   example:
   - "<pre><code>Bool isWellFormed = true;\nBool isValid = Bool(isWellFormed);\nBool isCertified = Bool(false);</code></pre>"
 - uid: CRMScript.Global.Bool.toInteger()
@@ -47,7 +63,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description: False equals 0; true equals 1."
+      description: "False equals 0; true equals 1."
 - uid: CRMScript.Global.Bool.toString()
   commentId: M:CRMScript.Global.Bool.toString()
   id: toString()

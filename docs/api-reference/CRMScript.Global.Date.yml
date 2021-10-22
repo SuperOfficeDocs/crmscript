@@ -6,6 +6,7 @@ items:
   langs:
   - crmscript
   children:
+    - CRMScript.Global.Date.#ctor
     - CRMScript.Global.Date.#ctor(Date)
     - CRMScript.Global.Date.#ctor(String)
     - CRMScript.Global.Date.toString()
@@ -25,6 +26,25 @@ items:
   summary: "\nDate is a complex data type representing a day, month, and year on ISO format YYYY-MM-DD. The default value is now.<p></p>\nBefore a Date is initialized, it has no value. This is commonly written as NULL, NUL, or NIL in other programming languages. CRMScript automatically initializes Date objects when declared to the current date. Thus this situation is uncommon.\n"
   example:
   - "\n<pre><code>Date d;\nprint(d.toString());</code></pre>\n"
+- uid: CRMScript.Global.Date.#ctor
+  commentId: M:CRMScript.Global.Date.#ctor
+  id: '#ctor(Date)'
+  so.intellisense: Void.Date
+  langs:
+  - crmscript
+  parent: CRMScript.Global.Date
+  name: Date()
+  nameWithType: Date.Date()
+  fullName: CRMScript.Global.Date.Date()
+  type: Constructor
+  summary: "\nDefault constructor.\n"
+  remarks: "\nThe default value is now.\n"
+  example:
+  syntax:
+    content: Date Date()
+    parameters: []
+    return:
+      type: CRMScript.Global.Date
 - uid: CRMScript.Global.Date.#ctor(Date)
   commentId: M:CRMScript.Global.Date.#ctor(Date)
   id: '#ctor(Date)'
@@ -45,7 +65,7 @@ items:
     parameters:
     - id: value
       type: CRMScript.Global.Date
-      description: Date object."
+      description: "Date object."
     return:
       type: CRMScript.Global.Date
 - uid: CRMScript.Global.Date.#ctor(String)
@@ -110,7 +130,7 @@ items:
     parameters:
     - id: num
       type: CRMScript.Global.Integer
-      description: Number of days to add."
+      description: "Number of days to add."
     return:
       type: CRMScript.Global.Date
 - uid: CRMScript.Global.Date.addMonth(Integer)
@@ -156,7 +176,7 @@ items:
     parameters:
     - id: num
       type: CRMScript.Global.Integer
-      description: Number of years to add."
+      description: "Number of years to add."
     return:
       type: CRMScript.Global.Date
 - uid: CRMScript.Global.Date.getMDay()

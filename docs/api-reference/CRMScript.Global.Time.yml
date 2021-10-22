@@ -6,6 +6,7 @@ items:
   langs:
   - crmscript
   children:
+    - CRMScript.Global.Time.#ctor
     - CRMScript.Global.Time.#ctor(Time)
     - CRMScript.Global.Time.#ctor(String)
     - CRMScript.Global.Time.toString()
@@ -23,6 +24,24 @@ items:
   summary: "\nA class for representing time as objects. Time is a complex data type representing the time of the day in hours, minutes, and seconds. The default value is now. ISO 8601 uses the 24-hour clock system. Format: hh:mm:ss\n"
   example:
   - "\n<pre><code>Time t;\nprint(t.toString());</code></pre>\n"
+- uid: CRMScript.Global.Time.#ctor
+  commentId: M:CRMScript.Global.Time.#ctor
+  id: '#ctor'
+  so.intellisense: Void.Time
+  langs:
+  - crmscript
+  parent: CRMScript.Global.Time
+  name: Time()
+  nameWithType: Time.Time()
+  fullName: CRMScript.Global.Time.Time()
+  type: Constructor
+  summary: "\nDefault constructor.\n"
+  example:
+  syntax:
+    content: Time Time()
+    parameters: []
+    return:
+      type: CRMScript.Global.Time
 - uid: CRMScript.Global.Time.#ctor(Time)
   commentId: M:CRMScript.Global.Time.#ctor(Time)
   id: '#ctor(Time)'
@@ -42,7 +61,7 @@ items:
     parameters:
     - id: value
       type: CRMScript.Global.Time
-      description: Time object."
+      description: "Time object."
     return:
       type: CRMScript.Global.Time
 - uid: CRMScript.Global.Time.#ctor(String)
@@ -106,7 +125,7 @@ items:
     parameters:
     - id: hour
       type: CRMScript.Global.Integer
-      description: Number of hours, 0-23."
+      description: "Number of hours, 0-23."
     return:
 - uid: CRMScript.Global.Time.setMin(Integer)
   commentId: M:CRMScript.Global.Time.setMin(Integer)
@@ -128,7 +147,7 @@ items:
     parameters:
     - id: min
       type: CRMScript.Global.Integer
-      description: Number of minutes, 0-59."
+      description: "Number of minutes, 0-59."
     return:
 - uid: CRMScript.Global.Time.setSec(Integer)
   commentId: M:CRMScript.Global.Time.setSec(Integer)
@@ -150,7 +169,7 @@ items:
     parameters:
     - id: sec
       type: CRMScript.Global.Integer
-      description: Number of seconds, 0-59."
+      description: "Number of seconds, 0-59."
     return:
 - uid: CRMScript.Global.Time.getHour()
   commentId: M:CRMScript.Global.Time.getHour()

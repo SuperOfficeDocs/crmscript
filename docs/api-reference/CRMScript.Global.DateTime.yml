@@ -7,6 +7,7 @@ items:
   langs:
   - crmscript 
   children:
+    - CRMScript.Global.DateTime.#ctor
     - CRMScript.Global.DateTime.#ctor(DateTime)
     - CRMScript.Global.DateTime.#ctor(Integer, Integer, Integer, Integer, Integer, Integer)
     - CRMScript.Global.DateTime.#ctor(String)
@@ -50,6 +51,24 @@ items:
   summary: "\nDateTime is a complex data type representing a timestamp with both date and time elements on ISO format YYYY-MM-DD. The default value is now.<p></p>\nBefore a Date is initialized, it has no value. This is commonly written as NULL, NUL, or NIL in other programming languages. CRMScript automatically initializes Date objects when declared to the current date. Thus this situation is uncommon.\n"
   example:
   - "\n<pre><code>DateTime dt;\nprint(dt.toString());</code></pre>\n"
+- uid: CRMScript.Global.DateTime.#ctor
+  commentId: M:CRMScript.Global.DateTime.#ctor
+  id: '#ctor'
+  so.intellisense: Void.DateTime
+  langs:
+  - crmscript
+  parent: CRMScript.Global.DateTime
+  name: DateTime()
+  nameWithType: DateTime.DateTime()
+  fullName: CRMScript.Global.DateTime.DateTime()
+  type: Constructor
+  summary: "\nDefault constructor.\n"
+  example:
+  syntax:
+    content: DateTime DateTime()
+    parameters: []
+    return:
+      type: CRMScript.Global.DateTime
 - uid: CRMScript.Global.DateTime.#ctor(DateTime)
   commentId: M:CRMScript.Global.DateTime.#ctor(DateTime)
   id: '#ctor(DateTime)'
@@ -59,7 +78,7 @@ items:
   parent: CRMScript.Global.DateTime
   name: DateTime(DateTime)
   nameWithType: DateTime.DateTime(DateTime)
-  fullName: CRMScript.Global.DateTime.#ctor(DateTime)
+  fullName: CRMScript.Global.DateTime.DateTime(DateTime)
   type: Constructor
   summary: "\nPass a value to copy into a new object.\n"
   example:
@@ -69,7 +88,7 @@ items:
     parameters:
     - id: value
       type: CRMScript.Global.DateTime
-      description: DateTime object."
+      description: "DateTime object."
     return:
       type: CRMScript.Global.DateTime
 - uid: CRMScript.Global.DateTime.#ctor(Integer, Integer, Integer, Integer, Integer, Integer)
@@ -81,7 +100,7 @@ items:
   parent: CRMScript.Global.DateTime
   name: DateTime(Integer, Integer, Integer, Integer, Integer, Integer)
   nameWithType: DateTime.DateTime(Integer, Integer, Integer, Integer, Integer, Integer)
-  fullName: CRMScript.Global.DateTime
+  fullName: CRMScript.Global.DateTime(Integer, Integer, Integer, Integer, Integer, Integer)
   type: Constructor
   summary: "\nSpecify all elements of a DateTime individually. It accepts 6 integer values, representing year, month (1-12), day-of-month (1-31), hour (0-23), minute (0-59), and second (0-59). The constructor automatically calculates the weekday.\n"
   example:
@@ -222,13 +241,13 @@ items:
     parameters:
     - id: mode
       type: CRMScript.Global.Integer
-      description: 0-16."
+      description: "0-16."
     - id: language
       type: CRMScript.Global.Integer
-      description: 0 = Norwegian; 1 = English; 2 = German; 3 = Swedish; 4 = Danish; 5 = Dutch"
+      description: "0 = Norwegian; 1 = English; 2 = German; 3 = Swedish; 4 = Danish; 5 = Dutch"
     - id: 24HourMode
       type: CRMScript.Global.Bool
-      description: Indicator for 12- or 24-hour clock. True = 24h, false = 12h."
+      description: "Indicator for 12- or 24-hour clock. True = 24h, false = 12h."
     return:
       type: CRMScript.Global.String
 - uid: CRMScript.Global.DateTime.addDay(Integer)
@@ -250,7 +269,7 @@ items:
     parameters:
     - id: num
       type: CRMScript.Global.Integer
-      description: Number of days to add."
+      description: "Number of days to add."
     return:
       type: CRMScript.Global.DateTime
 - uid: CRMScript.Global.DateTime.addMonth(Integer)
@@ -273,7 +292,7 @@ items:
     parameters:
     - id: num
       type: CRMScript.Global.Integer
-      description: Number of months to add."
+      description: "Number of months to add."
     return:
       type: CRMScript.Global.DateTime
 - uid: CRMScript.Global.DateTime.addYear(Integer)
@@ -295,7 +314,7 @@ items:
     parameters:
     - id: num
       type: CRMScript.Global.Integer
-      description: Number of years to add."
+      description: "Number of years to add."
     return:
       type: CRMScript.Global.DateTime
 - uid: CRMScript.Global.DateTime.addHour(Integer)
@@ -317,7 +336,7 @@ items:
     parameters:
     - id: num
       type: CRMScript.Global.Integer
-      description: Number of hours to add."
+      description: "Number of hours to add."
     return:
       type: CRMScript.Global.DateTime
 - uid: CRMScript.Global.DateTime.addMin(Integer)
@@ -339,7 +358,7 @@ items:
     parameters:
     - id: num
       type: CRMScript.Global.Integer
-      description: Number of minutes to add."
+      description: "Number of minutes to add."
     return:
       type: CRMScript.Global.DateTime
 - uid: CRMScript.Global.DateTime.addSec(Integer)
@@ -361,7 +380,7 @@ items:
     parameters:
     - id: num
       type: CRMScript.Global.Integer
-      description: Number of seconds to add."
+      description: "Number of seconds to add."
     return:
       type: CRMScript.Global.DateTime
 - uid: CRMScript.Global.DateTime.setTime(Time)
@@ -558,7 +577,7 @@ items:
   type: Method
   summary: "\nReturns the date and time to the number of the seconds since 01.01.1970 00:00:00.\n"
   syntax:
-    content: Integer getUnix()."
+    content: Integer getUnix()
     return:
       type: CRMScript.Global.Integer
 - uid: CRMScript.Global.DateTime.isNull()

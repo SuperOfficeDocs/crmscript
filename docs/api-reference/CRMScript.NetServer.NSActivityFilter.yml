@@ -21,7 +21,7 @@ items:
   nameWithType: NSActivityFilter
   fullName: CRMScript.NetServer.NSActivityFilter
   type: Class
-  summary: "\nActivity list filter information.\n"
+  summary: "\nActivity list filter information. Carrier object for ActivityFilter.\n"
   example: 
 - uid: CRMScript.NetServer.NSActivityFilter.#ctor
   commentId: M:CRMScript.NetServer.NSActivityFilter.#ctor
@@ -68,14 +68,14 @@ items:
   nameWithType: NSActivityFilter.GetFromDate()
   fullName: CRMScript.NetServer.NSActivityFilter.GetFromDate()
   type: Method
-  summary: "\nThe filtering From date.\n"
+  summary: "\nReturns the date to filter from.\n"
   remarks: 
   syntax: 
     content: DateTime GetFromDate()
     parameters: []
     return:
       type: CRMScript.Global.DateTime
-      description:
+      description: The date to filter from.
   example: 
   - "\n<pre><code>NSActivityFilter thing;\nDateTime fromDate = thing.GetFromDate();</code></pre>\n"
 - uid: CRMScript.NetServer.NSActivityFilter.GetFutureDateList()
@@ -115,7 +115,7 @@ items:
     parameters: []
     return:
       type: CRMScript.NetServer.NSSelectableMDOListItem[]
-      description:
+      description: The list of groups to filter on.
   example: 
   - "\n<pre><code>NSActivityFilter thing;\nNSSelectableMDOListItem[] groupList = thing.GetGroupList();</code></pre>\n"
 - uid: CRMScript.NetServer.NSActivityFilter.GetToDate()
@@ -128,14 +128,14 @@ items:
   nameWithType: NSActivityFilter.GetToDate()
   fullName: CRMScript.NetServer.NSActivityFilter.GetToDate()
   type: Method
-  summary: "\nReturns the filtering To date.\n"
+  summary: "\nReturns the date to filter to.\n"
   remarks: 
   syntax: 
     content: DateTime GetToDate()
     parameters: []
     return:
       type: CRMScript.Global.DateTime
-      description:
+      description: The date to filter to
   example: 
   - "\n<pre><code>NSActivityFilter thing;\nDateTime toDate = thing.GetToDate();</code></pre>\n"
 - uid: CRMScript.NetServer.NSActivityFilter.SetAssociateList(NSSelectableMDOListItem[])
@@ -170,14 +170,14 @@ items:
   nameWithType: NSActivityFilter.SetFromDate(DateTime)
   fullName: CRMScript.NetServer.NSActivityFilter.SetFromDate(DateTime)
   type: Method
-  summary: "\nSets the filtering From date.\n"
+  summary: "\nSets the date to filter from.\n"
   remarks: 
   syntax: 
     content: Void SetFromDate(DateTime fromDate)
     parameters:
     - id: fromDate
       type: CRMScript.Global.DateTime
-      description: date to filter from
+      description: The date to filter from.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -199,7 +199,7 @@ items:
     parameters:
     - id: futureDateList
       type: CRMScript.NetServer.NSMDOListItem[]
-      description: A static MDO list with standard values.
+      description: The list of future date selections. A static MDO list with standard values.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -221,7 +221,7 @@ items:
     parameters:
     - id: groupList
       type: CRMScript.NetServer.NSSelectableMDOListItem[]
-      description: list of groups to filter on
+      description: The list of groups to filter on.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -236,14 +236,14 @@ items:
   nameWithType: NSActivityFilter.SetToDate(DateTime)
   fullName: CRMScript.NetServer.NSActivityFilter.SetToDate(DateTime)
   type: Method
-  summary: "\nSets the filtering To date.\n"
+  summary: "\nSets the date to filter to.\n"
   remarks: 
   syntax: 
     content: Void SetToDate(DateTime toDate)
     parameters:
     - id: toDate
       type: CRMScript.Global.DateTime
-      description: date to filter to
+      description: The date to filter to.
     return:
       type: CRMScript.Global.Void
   example: 

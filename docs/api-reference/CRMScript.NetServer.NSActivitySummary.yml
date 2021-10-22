@@ -17,7 +17,7 @@ items:
   nameWithType: NSActivitySummary
   fullName: CRMScript.NetServer.NSActivitySummary
   type: Class
-  summary: "\nActivity information summary - number of free and busy activities.\n"
+  summary: "\nActivity information summary - number of free and busy activities. Carrier object for ActivitySummary.\n"
   example: 
 - uid: CRMScript.NetServer.NSActivitySummary.#ctor
   commentId: M:CRMScript.NetServer.NSActivitySummary.#ctor
@@ -51,7 +51,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description: the number of activities and tasks in the diary of type busy
+      description: The number of activities and tasks in the diary of type busy.
   example: 
   - "\n<pre><code>NSActivitySummary thing;\nInteger numBusyActivities = thing.GetNumBusyActivities();</code></pre>\n"
 - uid: CRMScript.NetServer.NSActivitySummary.GetNumFreeActivities()
@@ -71,7 +71,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description: the number of activities of type free
+      description: The number of activities of type free.
   example: 
   - "\n<pre><code>NSActivitySummary thing;\nInteger numFreeActivities = thing.GetNumFreeActivities();</code></pre>\n"
 - uid: CRMScript.NetServer.NSActivitySummary.GetPercentageBusy()
@@ -90,7 +90,8 @@ items:
     content: Integer GetPercentageBusy()
     parameters: []
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.Integer
+      description: How much of the active work-day that is booked in appointments.
   example: 
   - "\n<pre><code>NSActivitySummary thing;\nInteger percentageBusy = thing.GetPercentageBusy();</code></pre>\n"
 - uid: CRMScript.NetServer.NSActivitySummary.SetNumBusyActivities(Integer)
@@ -104,13 +105,13 @@ items:
   fullName: CRMScript.NetServer.NSActivitySummary.SetNumBusyActivities(Integer)
   type: Method
   summary: "\nSets the number of activities and tasks in the diary that are of type 'busy'.\n"
-  remarks: "\n Sales and documents are not activities in this case, only diary appointments and tasks.\n"
+  remarks: "\nSales and documents are not activities in this case, only diary appointments and tasks.\n"
   syntax: 
     content: Void SetNumBusyActivities(Integer numBusyActivities)
     parameters:
     - id: numBusyActivities
       type: CRMScript.Global.Integer
-      description: 
+      description: The number of activities and tasks in the diary that are of type busy.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -132,7 +133,7 @@ items:
     parameters:
     - id: numFreeActivities
       type: CRMScript.Global.Integer
-      description: 
+      description: The number of activities of the type free.
     return:
       type: CRMScript.Global.Void
   example: 
@@ -147,14 +148,14 @@ items:
   nameWithType: NSActivitySummary.SetPercentageBusy(Integer)
   fullName: CRMScript.NetServer.NSActivitySummary.SetPercentageBusy(Integer)
   type: Method
-  summary: "\nSets how much of the active work-day which is booked in appointments.\n"
+  summary: "\nSets how much of the active work-day that is booked in appointments.\n"
   remarks: 
   syntax: 
     content: Void SetPercentageBusy(Integer percentageBusy)
     parameters:
     - id: percentageBusy
       type: CRMScript.Global.Integer
-      description:
+      description: How much of the active work-day that is booked in appointments.
     return:
       type: CRMScript.Global.Void 
   example: 

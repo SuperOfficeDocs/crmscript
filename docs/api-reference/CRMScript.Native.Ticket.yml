@@ -49,7 +49,7 @@ items:
   summary: "\nClass for representing an SuperOffice Service Ticket.\n"
   remarks: 
   syntax: 
-    content: Ticket
+    content: Ticket."
   example: 
   - "\n<pre><code>Ticket t;\n\nt.load(2); // Loads the ticket with id = 2\nprint(t.getValue(&quot;ticketStatus&quot;));\nt.setValue(&quot;title&quot;, &quot;Test&quot;);\nt.setValue(&quot;status&quot;, &quot;1&quot;);\nDateTime d; // Default value for DateTime is now\nt.setValue(&quot;dbiLastModified&quot;, d.toString());\nprint(t.getOwnerEmail()); // Prints name and email of owner</code></pre>\n"
 - uid: CRMScript.Native.Ticket.addSecondaryCustomers(Vector)
@@ -69,9 +69,9 @@ items:
     parameters:
     - id: ids
       type: CRMScript.Native.Vector
-      description: an array of Strings containing the customerIds to add as secondary customers on the ticket
+      description: "An array of Strings containing the customerIds to add as secondary customers on the ticket."
     return: 
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.Void."
   example: 
 - uid: CRMScript.Native.Ticket.buildEmailSubject()
   commentId: M:CRMScript.Native.Ticket.buildEmailSubject()
@@ -90,7 +90,7 @@ items:
     parameters:
     return:
       type: CRMScript.Global.String
-      description: a String composed by the Mail tag, the ticketId and the title of the ticket
+      description: "A String composed by the Mail tag, the ticketId and the title of the ticket."
   example: 
 - uid: CRMScript.Native.Ticket.checkEscalating(Integer)
   commentId: M:CRMScript.Native.Ticket.checkEscalating(Integer)
@@ -109,9 +109,9 @@ items:
     parameters:
     - id: action
       type: CRMScript.Global.Integer
-      description: as an Integer
+      description: "As an Integer."
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.Void."
   example: 
 - uid: CRMScript.Native.Ticket.delegate()
   commentId: M:CRMScript.Native.Ticket.delegate()
@@ -129,7 +129,7 @@ items:
     content: delegate()
     parameters: []
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.Void."
   example: 
 - uid: CRMScript.Native.Ticket.delegate(Integer)
   commentId: M:CRMScript.Native.Ticket.delegate(Integer)
@@ -148,9 +148,9 @@ items:
     parameters:
     - id: notUser
       type: CRMScript.Global.Integer
-      description: The ID of a user you do not want to delegate to
+      description: "The ID of a user you do not want to delegate to."
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.Void."
   example: 
 - uid: CRMScript.Native.Ticket.getInvolvedOnly()
   commentId: M:CRMScript.Native.Ticket.getInvolvedOnly()
@@ -169,7 +169,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description: a comma-separated list of email-addresses
+      description: "A comma-separated list of email-addresses."
   example: 
 - uid: CRMScript.Native.Ticket.getMailFrom()
   commentId: M:CRMScript.Native.Ticket.getMailFrom()
@@ -188,7 +188,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description: The most appropriate from-address specified on with address, the ticket has arrived on, the category, etc
+      description: "The most appropriate from-address specified on with address, the ticket has arrived on, the category, etc."
   example: 
 - uid: CRMScript.Native.Ticket.getOwnerEmail()
   commentId: M:CRMScript.Native.Ticket.getOwnerEmail()
@@ -207,7 +207,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description: the owners name and email-address
+      description: "The owners name and email-address."
   example: 
 - uid: CRMScript.Native.Ticket.getOwnerSms()
   commentId: M:CRMScript.Native.Ticket.getOwnerSms()
@@ -226,7 +226,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description: The cellphone number of the owner of the ticket as a String.
+      description: "The cellphone number of the owner of the ticket as a String."
   example: 
 - uid: CRMScript.Native.Ticket.getValue(String)
   commentId: M:CRMScript.Native.Ticket.getValue(String)
@@ -245,10 +245,10 @@ items:
     parameters:
     - id: colName
       type: CRMScript.Global.String
-      description: The name of the wanted column
+      description: "The name of the wanted column."
     return:
       type: CRMScript.Global.String
-      description: Returns a string representation of the wanted value
+      description: Returns a string representation of the wanted value."
   example: 
 - uid: CRMScript.Native.Ticket.load(Integer)
   commentId: M:CRMScript.Native.Ticket.load(Integer)
@@ -289,7 +289,7 @@ items:
     parameters:
     - id: message
       type: CRMScript.Global.String
-      description: The message to log
+      description: "The message to log."
     return:
       type: CRMScript.Global.Void
       description:
@@ -311,10 +311,10 @@ items:
     parameters:
     - id: who
       type: CRMScript.Global.String
-      description: The name of the user that made the change to log
+      description: "The name of the user that made the change to log"
     - id: message
       type: CRMScript.Global.String
-      description: The message to log
+      description: "The message to log."
     return:
       type: CRMScript.Global.Void
       description:
@@ -336,7 +336,7 @@ items:
     parameters:
     - id: replyTemplateId
       type: CRMScript.Global.Integer
-      description: The ID of the replyTemplate you want to send.
+      description: "The ID of the replyTemplate you want to send."
     return:
       type: CRMScript.Global.Bool
       description:
@@ -358,7 +358,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description: the ID of the saved ticket
+      description: "The ID of the saved ticket."
   example: 
 - uid: CRMScript.Native.Ticket.save(String)
   commentId: M:CRMScript.Native.Ticket.save(String)
@@ -377,10 +377,10 @@ items:
     parameters:
     - id: log
       type: CRMScript.Global.String
-      description: A String that will be saved in the log of the ticket
+      description: "A String that will be saved in the log of the ticket."
     return:
       type: CRMScript.Global.Integer
-      description: the ID of the saved ticket
+      description: "The ID of the saved ticket."
   example:
 - uid: CRMScript.Native.Ticket.save(Bool,Bool)
   commentId: M:CRMScript.Native.Ticket.save(Bool,Bool)
@@ -399,13 +399,13 @@ items:
     parameters:
     - id: setReadStatus
       type: CRMScript.Global.Bool
-      description: Whether to calculate and set the read status on save. True = yes
+      description: Whether to calculate and set the read status on save. True = yes"
     - id: doNotCheckEscalating
       type: CRMScript.Global.Bool
-      description: True if you do NOT want the changes done on the ticket to result in a possible escalation, otherwise false
+      description: True if you do NOT want the changes done on the ticket to result in a possible escalation, otherwise false."
     return:
       type: CRMScript.Global.Integer
-      description: the ID of the saved ticket
+      description: "The ID of the saved ticket."
   example:
 - uid: CRMScript.Native.Ticket.save(String,Bool,Bool)
   commentId: M:CRMScript.Native.Ticket.save(String,Bool,Bool)
@@ -424,16 +424,16 @@ items:
     parameters:
     - id: log
       type: CRMScript.Global.String
-      description: A String that will be saved in the log of the ticket
+      description: "A String that will be saved in the log of the ticket"
     - id: setReadStatus
       type: CRMScript.Global.Bool
-      description: Whether to calculate and set the read status on save. True = yes
+      description: Whether to calculate and set the read status on save. True = yes"
     - id: doNotCheckEscalating
       type: CRMScript.Global.Bool
-      description: True if you do NOT want the changes done on the ticket to result in a possible escalation, otherwise false
+      description: True if you do NOT want the changes done on the ticket to result in a possible escalation, otherwise false."
     return:
       type: CRMScript.Global.Integer
-      description: the ID of the saved ticket
+      description: "The ID of the saved ticket."
   example: 
 - uid: CRMScript.Native.Ticket.sendMessages(String,StringMatrix,Bool,String,Integer,String)
   commentId: M:CRMScript.Native.Ticket.sendMessages(String,StringMatrix,Bool,String,Integer,String)
@@ -452,22 +452,22 @@ items:
     parameters:
     - id: subject
       type: CRMScript.Global.String
-      description: The mail subject, maybe ticket.title.
+      description: "The mail subject, maybe ticket.title."
     - id: recipients
       type: CRMScript.Native.StringMatrix
-      description: String matrix with recipients
+      description: String matrix with recipients"
     - id: fromCust
       type: CRMScript.Global.Bool
-      description: Email address from ticket or customer
+      description: Email address from ticket or customer"
     - id: messages
       type: CRMScript.Global.String
-      description: Comma-separated list of message id's to forward
+      description: Comma-separated list of message id's to forward"
     - id: msgId
       type: CRMScript.Global.Integer
       description: ID of added "forward" message or "-1"
     - id: comment
       type: CRMScript.Global.String
-      description: A comment that will be above the forwarded messages.
+      description: "A comment that will be above the forwarded messages."
     return:
       type: CRMScript.Global.Bool
       description:
@@ -514,7 +514,7 @@ items:
     parameters:
       - id: theParser
         type: CRMScript.Native.Parser
-        description: The parser who will be filled with ticket-values
+        description: "The parser who will be filled with ticket-values."
     return:
       type: CRMScript.Global.Void
       description:
@@ -536,7 +536,7 @@ items:
     parameters:
       - id: theParser
         type: CRMScript.Native.Parser
-        description: The parser who will be filled with ticket-values
+        description: "The parser who will be filled with ticket-values."
     return:
       type: CRMScript.Global.Void
       description:

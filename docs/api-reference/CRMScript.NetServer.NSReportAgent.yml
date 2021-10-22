@@ -40,7 +40,7 @@ items:
   summary: "\nRun reports, set favorites, labels.\n"
   remarks: 
   syntax: 
-    content: NSReportAgent
+    content: NSReportAgent."
   example: 
   - "\n<pre><code>NSReportAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSReportAgent.CreateDefaultReportEntity()
@@ -59,7 +59,7 @@ items:
     content: NSReportEntity CreateDefaultReportEntity()
     parameters: []
     return:
-      type: CRMScript.NetServer.NSReportEntity
+      type: CRMScript.NetServer.NSReportEntity."
   example: 
   - "\n<pre><code>NSReportAgent agent;\nNSReportEntity thing = agent.CreateDefaultReportEntity();\nthing = agent.SaveReportEntity(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSReportAgent.CreateDefaultReportLabelLayoutEntity()
@@ -78,7 +78,7 @@ items:
     content: NSReportLabelLayoutEntity CreateDefaultReportLabelLayoutEntity()
     parameters: []
     return:
-      type: CRMScript.NetServer.NSReportLabelLayoutEntity
+      type: CRMScript.NetServer.NSReportLabelLayoutEntity."
   example: 
   - "\n<pre><code>NSReportAgent agent;\nNSReportLabelLayoutEntity thing = agent.CreateDefaultReportLabelLayoutEntity();\nthing = agent.SaveReportLabelLayoutEntity(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSReportAgent.CreateFavorite(Integer,String,String)
@@ -98,7 +98,7 @@ items:
     parameters:
     - id: sourceId
       type: CRMScript.Global.Integer
-      description: the key to the report that the favorite is based on.
+      description: "The key to the report that the favorite is based on."
     - id: name
       type: CRMScript.Global.String
       description: 
@@ -106,7 +106,7 @@ items:
       type: CRMScript.Global.String
       description: 
     return:
-      type: CRMScript.NetServer.NSReportEntity
+      type: CRMScript.NetServer.NSReportEntity."
   example: 
   - "\n<pre><code>NSReportAgent agent;\nInteger sourceId;\nString name;\nString description;\nNSReportEntity res = agent.CreateFavorite(sourceId, name, description);</code></pre>\n"
 - uid: CRMScript.NetServer.NSReportAgent.DeleteFavorite(Integer)
@@ -128,7 +128,7 @@ items:
       type: CRMScript.Global.Integer
       description: 
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.Void."
   example: 
 - uid: CRMScript.NetServer.NSReportAgent.DeleteReport(Integer)
   commentId: M:CRMScript.NetServer.NSReportAgent.DeleteReport(Integer)
@@ -147,7 +147,7 @@ items:
     parameters:
     - id: reportId
       type: CRMScript.Global.Integer
-      description: The ID of the report to delete
+      description: "The ID of the report to delete."
     return:
       type: CRMScript.Global.Bool
       description:
@@ -170,9 +170,9 @@ items:
     parameters:
     - id: reportLabelLayoutEntity
       type: CRMScript.Global.Integer
-      description: The identity of the ReportLabelLayoutEntity to delete.
+      description: "The identity of the ReportLabelLayoutEntity to delete."
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.Void."
   example: 
   - "\n<pre><code>NSReportAgent agent;\nagent.DeleteReportLabelLayoutEntity(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSReportAgent.GenerateReport(Integer,Integer,String,String,String,NSArchiveRestrictionInfo[])
@@ -192,22 +192,22 @@ items:
     parameters:
     - id: reportId
       type: CRMScript.Global.Integer
-      description: The ID of the report.
+      description: "The ID of the report."
     - id: labelLayoutId
       type: CRMScript.Global.Integer
-      description: The ID of the label layout. Use 0 if the report isn't of type label.
+      description: "The ID of the label layout. Use 0 if the report isn't of type label."
     - id: filename
       type: CRMScript.Global.String
-      description: Filename of the report.
+      description: Filename of the report."
     - id: language
       type: CRMScript.Global.String
-      description: Language to use when generating the report.
+      description: Language to use when generating the report."
     - id: fileType
       type: CRMScript.Global.String
       description: 
     - id: restrictions
       type: CRMScript.NetServer.NSArchiveRestrictionInfo[]
-      description: Use restrictions to provide additional restrictions when generating the report.
+      description: Use restrictions to provide additional restrictions when generating the report."
     return:
       type: CRMScript.Global.String
       description:
@@ -230,9 +230,9 @@ items:
     parameters:
     - id: reportEntityId
       type: CRMScript.Global.Integer
-      description: The identifier of the NSReportEntity object
+      description: "The identifier of the NSReportEntity object."
     return:
-      type: CRMScript.NetServer.NSReportEntity
+      type: CRMScript.NetServer.NSReportEntity."
   example: 
   - "\n<pre><code>NSReportAgent agent;\nNSReportEntity thing = agent.GetReportEntity(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSReportAgent.GetReportLabelLayoutEntity(Integer)
@@ -252,9 +252,9 @@ items:
     parameters:
     - id: reportLabelLayoutEntityId
       type: CRMScript.Global.Integer
-      description: The identifier of the NSReportLabelLayoutEntity object
+      description: "The identifier of the NSReportLabelLayoutEntity object."
     return:
-      type: CRMScript.NetServer.NSReportLabelLayoutEntity
+      type: CRMScript.NetServer.NSReportLabelLayoutEntity."
   example: 
   - "\n<pre><code>NSReportAgent agent;\nNSReportLabelLayoutEntity thing = agent.GetReportLabelLayoutEntity(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSReportAgent.ImportReport(String)
@@ -274,7 +274,7 @@ items:
     parameters:
     - id: report
       type: CRMScript.Global.String
-      description: The report to import in a correct XML format
+      description: "The report to import in a correct XML format."
     return:
       type: CRMScript.Global.Integer
       description:
@@ -297,9 +297,9 @@ items:
     parameters:
     - id: reportEntity
       type: CRMScript.NetServer.NSReportEntity
-      description: The NSReportEntity to save.
+      description: "The NSReportEntity to save."
     return:
-      type: CRMScript.NetServer.NSReportEntity
+      type: CRMScript.NetServer.NSReportEntity."
   example: 
   - "\n<pre><code>NSReport  agent;\nNSReportEntity thing = agent.CreateDefaultReportEntity();\nthing = agent.SaveReportEntity(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSReportAgent.SaveReportLabelLayoutEntity(NSReportLabelLayoutEntity)
@@ -322,7 +322,7 @@ items:
       description: 
     return:
       type: CRMScript.NetServer.NSReportLabelLayoutEntity
-      description: the new or updated NSReportLabelLayoutEntity.
+      description: "The new or updated NSReportLabelLayoutEntity."
   example: 
   - "\n<pre><code>NSReport  agent;\nNSReportLabelLayoutEntity thing = agent.CreateDefaultReportLabelLayoutEntity();\nthing = agent.SaveReportLabelLayoutEntity(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSReportAgent.UpdateFavorite(NSReportEntity)
@@ -342,9 +342,9 @@ items:
     parameters:
     - id: reportEntity
       type: CRMScript.NetServer.NSReportEntity
-      description: ReportEntity carrier containing updated data.
+      description: ReportEntity carrier containing updated data."
     return:
-      type: CRMScript.NetServer.NSReportEntity
+      type: CRMScript.NetServer.NSReportEntity."
   example: 
   - "\n<pre><code>NSReportAgent agent;\nNSReportEntity reportEntity;\nNSReportEntity res = agent.UpdateFavorite(reportEntity);</code></pre>\n"
 references:

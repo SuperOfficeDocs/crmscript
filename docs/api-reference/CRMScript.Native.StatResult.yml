@@ -35,7 +35,7 @@ items:
   summary: "\nInitializes a new instance of the StatResult class.\n"
   remarks: 
   syntax: 
-    content: StatResult
+    content: StatResult."
   example: 
 - uid: CRMScript.Native.StatResult.atGroupBegin(Integer)
   commentId: M:CRMScript.Native.StatResult.atGroupBegin(Integer)
@@ -54,10 +54,10 @@ items:
     parameters:
     - id: column
       type: CRMScript.Global.Integer
-      description: The column which identifies the group.
+      description: "The column which identifies the group."
     return:
       type: CRMScript.Global.Bool
-      description: True if we're at the first row for this group; otherwise, false
+      description: True if we're at the first row for this group; otherwise, false."
   example: 
 - uid: CRMScript.Native.StatResult.atGroupEnd(Integer)
   commentId: M:CRMScript.Native.StatResult.atGroupEnd(Integer)
@@ -76,10 +76,10 @@ items:
     parameters:
     - id: column
       type: CRMScript.Global.Integer
-      description: The column which identifies the group.
+      description: "The column which identifies the group."
     return:
       type: CRMScript.Global.Bool
-      description: True if we're at the last row for this group; otherwise, false
+      description: True if we're at the last row for this group; otherwise, false."
   example: 
 - uid: CRMScript.Native.StatResult.dumpParser()
   commentId: M:CRMScript.Native.StatResult.dumpParser()
@@ -98,7 +98,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description: A string with everything in the StatResult parser listed.
+      description: "A string with everything in the StatResult parser listed."
   example: 
 - uid: CRMScript.Native.StatResult.eof()
   commentId: M:CRMScript.Native.StatResult.eof()
@@ -117,7 +117,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.Bool
-      description: true if the internal iterator is past the last element; otherwise, false
+      description: true if the internal iterator is past the last element; otherwise, false."
   example: 
 - uid: CRMScript.Native.StatResult.getField(Integer)
   commentId: M:CRMScript.Native.StatResult.getField(Integer)
@@ -136,10 +136,10 @@ items:
     parameters:
     - id: column
       type: CRMScript.Global.Integer
-      description: The zero-based index of columns.
+      description: "The zero-based index of columns."
     return: 
       type: CRMScript.Global.String
-      description: the value for the given column at the current row
+      description: "The value for the given column at the current row."
   example: 
 - uid: CRMScript.Native.StatResult.getField(String)
   commentId: M:CRMScript.Native.StatResult.getField(String)
@@ -158,10 +158,10 @@ items:
     parameters:
     - id: field
       type: CRMScript.Global.String
-      description: The name of the field to retrieve.
+      description: "The name of the field to retrieve."
     return: 
       type: CRMScript.Global.String
-      description: the value for the given field at the current row
+      description: "The value for the given field at the current row."
   example: 
 - uid: CRMScript.Native.StatResult.next()
   commentId: M:CRMScript.Native.StatResult.next()
@@ -180,7 +180,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.Bool
-      description: eof() after move
+      description: eof() after move."
   example: 
 - uid: CRMScript.Native.StatResult.rewind()
   commentId: M:CRMScript.Native.StatResult.rewind()
@@ -198,7 +198,7 @@ items:
     content: Void rewind()
     parameters: []
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.Void."
   example: 
 - uid: CRMScript.Native.StatResult.saveAsResult(Integer,Integer,Integer)
   commentId: M:CRMScript.Native.StatResult.saveAsResult(Integer,Integer,Integer)
@@ -217,16 +217,16 @@ items:
     parameters:
     - id: column
       type: CRMScript.Global.Integer
-      description: What column to use as ID field
+      description: What column to use as ID field"
     - id: ownerId
       type: CRMScript.Global.Integer
-      description: ID of the owner of the result set (so it can be deleted at logout time)
+      description: ID of the owner of the result set (so it can be deleted at logout time)"
     - id: maxRows
       type: CRMScript.Global.Integer
-      description: Maximum number wanted in the result set
+      description: Maximum number wanted in the result set."
     return:
       type: CRMScript.Global.Integer
-      description: A reference to the result set
+      description: "A reference to the result set."
   example: 
   - "\nThe result set reference can be used like this to display tickets in the result set (if the result set references tickets):<pre><code>setVariable(&quot;url&quot;, getProgram(1) + &quot;&amp;action=listTickets&amp;special=11&amp;resultKey=&quot; + resKey .toString());</code></pre>\n"
 references:

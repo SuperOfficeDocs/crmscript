@@ -32,7 +32,7 @@ items:
   summary: "\nString resource substitution management.\n"
   remarks: 
   syntax: 
-    content: NSResourceAgent
+    content: NSResourceAgent."
   example: 
   - "\n<pre><code>NSResourceAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSResourceAgent.ActivateResourceSubstitution(String,String,Bool)
@@ -52,15 +52,15 @@ items:
     parameters:
     - id: resourceName
       type: CRMScript.Global.String
-      description: The name of the resource, without any brackets; if blank then this is the MASTER SWITCH for the override system
+      description: "The name of the resource, without any brackets; if blank then this is the MASTER SWITCH for the override system"
     - id: culture
       type: CRMScript.Global.String
-      description: The .NET culture string; if blank, then ALL substitutions for this resource will be affected
+      description: "The .NET culture string; if blank, then ALL substitutions for this resource will be affected"
     - id: isActive
       type: CRMScript.Global.Bool
-      description: New status of override
+      description: New status of override."
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.Void."
   example: 
   - "\n<pre><code>NSResourceAgent agent;\nString resourceName;\nString culture;\nBool isActive;\nagent.ActivateResourceSubstitution(resourceName, culture, isActive);</code></pre>\n"
 - uid: CRMScript.NetServer.NSResourceAgent.DeleteResourceSubstitution(String,String)
@@ -80,12 +80,12 @@ items:
     parameters:
     - id: resourceName
       type: CRMScript.Global.String
-      description: The name of the resource, without any brackets
+      description: "The name of the resource, without any brackets"
     - id: culture
       type: CRMScript.Global.String
-      description: The .NET culture string; if blank, then ALL substitutions for this resource will be dropped
+      description: "The .NET culture string; if blank, then ALL substitutions for this resource will be dropped."
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.Void."
   example: 
   - "\n<pre><code>NSResourceAgent agent;\nString resourceName;\nString culture;\nagent.DeleteResourceSubstitution(resourceName, culture);</code></pre>\n"
 - uid: CRMScript.NetServer.NSResourceAgent.GetResourceSubstitutions(String[],String,Bool)
@@ -105,13 +105,13 @@ items:
     parameters:
     - id: resourceNames
       type: CRMScript.Global.String[]
-      description: Array of names of resources for which overrides are sought; if empty, then get all
+      description: "Array of names of resources for which overrides are sought; if empty, then get all"
     - id: culture
       type: CRMScript.Global.String
-      description: .NET culture string; if empty, then get all
+      description: .NET culture string; if empty, then get all"
     - id: activeOnly
       type: CRMScript.Global.Bool
-      description: If true, then only resources with active substitutions will be returned; if false then ALL existing overrides will be returned
+      description: If true, then only resources with active substitutions will be returned; if false then ALL existing overrides will be returned."
     return:
       type: CRMScript.NetServer.NSResourceOverride[]
   example: 
@@ -133,10 +133,10 @@ items:
     parameters:
     - id: resourceNames
       type: CRMScript.Global.String[]
-      description: Array of names of resources for which overrides are sought; if empty, then get the MASTER on/off
+      description: "Array of names of resources for which overrides are sought; if empty, then get the MASTER on/off"
     - id: culture
       type: CRMScript.Global.String
-      description: .NET culture string; if empty, then get for all cultures (unless resourceName)
+      description: .NET culture string; if empty, then get for all cultures (unless resourceName)."
     return:
       type: CRMScript.NetServer.NSResourceOverride[]
   example: 
@@ -158,18 +158,18 @@ items:
     parameters:
     - id: resourceName
       type: CRMScript.Global.String
-      description: The name of the resource, without any brackets
+      description: "The name of the resource, without any brackets"
     - id: resourceValues
       type: CRMScript.Global.String
-      description: The new value of the resource
+      description: "The new value of the resource"
     - id: culture
       type: CRMScript.Global.String
-      description: The .NET culture string
+      description: "The .NET culture string"
     - id: isActive
       type: CRMScript.Global.Bool
-      description: Is the substitution now active
+      description: Is the substitution now active."
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.Void."
   example: 
   - "\n<pre><code>NSResourceAgent agent;\nString resourceName;\nString resourceValues;\nString culture;\nBool isActive;\nagent.SetResourceSubstitution(resourceName, resourceValues, culture, isActive);</code></pre>\n"
 references:

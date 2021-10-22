@@ -38,7 +38,7 @@ items:
   summary: "\nInitializes a new instance of the Company class.\n"
   remarks: 
   syntax: 
-    content: Company
+    content: Company."
   example: 
   - "\n<pre><code>Company c;\n\nc.load(2);</code></pre>\n"
 - uid: CRMScript.Native.Company.checkFieldRights(String,String)
@@ -52,19 +52,19 @@ items:
   fullName: CRMScript.Native.Company.checkFieldRights(String,String)
   type: Method
   summary: "\nChecks if the current user has access to the field.\n"
-  remarks: ""
+  remarks:
   syntax: 
     content: Bool checkFieldRights(String field, String fieldRight)
     parameters:
     - id: field
       type: CRMScript.Global.String
-      description: The field to check.
+      description: "The field to check."
     - id: fieldRight
       type: CRMScript.Global.String
-      description: Type of access to check for - read or write
+      description: Type of access to check for - read or write."
     return:
       type: CRMScript.Global.Bool
-      description: true if the current user has access to the field; otherwise, false.
+      description: true if the current user has access to the field; otherwise, false."
   example: 
   - "\n<pre><code>Company c;\n\nc.load(3);\nBool b = c.checkFieldRights(&quot;contact&quot;, &quot;read&quot;);\nprint(b.toString());</code></pre>\n"
 - uid: CRMScript.Native.Company.checkTableRights(String)
@@ -78,16 +78,16 @@ items:
   fullName: CRMScript.Native.Company.checkTableRights(String)
   type: Method
   summary: "\nChecks if the current user has access to this company.\n"
-  remarks: ""
+  remarks:
   syntax: 
     content: Bool checkTableRights(String tableRight)
     parameters:
     - id: tableRight
       type: CRMScript.Global.String
-      description: Type of access to check for - select, update, or insert
+      description: Type of access to check for - select, update, or insert."
     return:
       type: CRMScript.Global.Bool
-      description: true if the current user has access to the company; otherwise, false.
+      description: true if the current user has access to the company; otherwise, false."
   example: 
   - "\n<pre><code>Company c;\n\nc.load(3);\nBool b = c.checkTableRights(&quot;select&quot;);\nprint(b.toString());</code></pre>\n"
 - uid: CRMScript.Native.Company.findFromDomain(String)
@@ -107,10 +107,10 @@ items:
     parameters:
     - id: domain
       type: CRMScript.Global.String
-      description: Domain of the company.
+      description: Domain of the company."
     return:
       type: CRMScript.Global.Bool
-      description: true if successfully loaded; otherwise, false.
+      description: true if successfully loaded; otherwise, false."
   example: 
 - uid: CRMScript.Native.Company.getFormattedAddress()
   commentId: M:CRMScript.Native.Company.getFormattedAddress()
@@ -129,7 +129,7 @@ items:
     parameters: []
     return:
       type: CRMScript.NetServer.NSLocalizedField[][]
-      description: The formatted company address.
+      description: "The formatted company address."
   example: 
 - uid: CRMScript.Native.Company.getValue(String)
   commentId: M:CRMScript.Native.Company.getValue(String)
@@ -148,10 +148,10 @@ items:
     parameters:
     - id: colName
       type: CRMScript.Global.String
-      description: The column to get data from.
+      description: "The column to get data from."
     return:
       type: CRMScript.Global.String
-      description: A string value of the given column.
+      description: "A string value of the given column."
   example: 
   - "\n<pre><code>Company c;\n\nc.load(3);\nprint(c.getValue(&quot;name&quot;));</code></pre>\n"
 - uid: CRMScript.Native.Company.load(Integer)
@@ -171,10 +171,10 @@ items:
     parameters:
     - id: id
       type: CRMScript.Global.Integer
-      description: The ID of the company.
+      description: "The ID of the company."
     return: 
       type: CRMScript.Global.Bool
-      description: true if successfully loaded; otherwise, false.
+      description: true if successfully loaded; otherwise, false."
   example: 
   - "\n<pre><code>Company c;\n\nBool b = c.load(3);\nprint(b.toString());</code></pre>\n"
 - uid: CRMScript.Native.Company.loadFromAgentAndKey(Integer,String)
@@ -194,13 +194,13 @@ items:
     parameters:
     - id: agent
       type: CRMScript.Global.Integer
-      description: The ID of the agent that owns this company.
+      description: "The ID of the agent that owns this company."
     - id: key
       type: CRMScript.Global.String
-      description: The external key of this company.
+      description: "The external key of this company."
     return: 
       type: CRMScript.Global.Bool
-      description: true if successfully loaded; false if the company does not exist.
+      description: true if successfully loaded; false if the company does not exist."
   example: 
 - uid: CRMScript.Native.Company.save()
   commentId: M:CRMScript.Native.Company.save()
@@ -219,7 +219,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description: The company ID.
+      description: "The company ID."
   example: 
 - uid: CRMScript.Native.Company.setFormattedAddress(NSLocalizedField[][])
   commentId: M:CRMScript.Native.Company.setFormattedAddress(NSLocalizedField[][])
@@ -238,9 +238,9 @@ items:
     parameters:
     - id: name
       type: CRMScript.NetServer.NSLocalizedField[][]
-      description: The new address.
+      description: "The new address."
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.Void."
   example: 
 - uid: CRMScript.Native.Company.setValue(String,String)
   commentId: M:CRMScript.Native.Company.setValue(String,String)
@@ -259,12 +259,12 @@ items:
     parameters:
     - id: colName
       type: CRMScript.Global.String
-      description: Column name.
+      description: Column name."
     - id: value
       type: CRMScript.Global.String
-      description: Value that should be stored.
+      description: Value that should be stored."
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.Void."
   example: 
   - "\n<pre><code>Company c;\n\nc.load(3);\nBool b = c.checkTableRights(&quot;select&quot;);\nprint(b.toString());\n\nc.setValue(&quot;name&quot;, &quot;Test&quot;);</code></pre>\n"
 - uid: CRMScript.Native.Company.toParser(Parser)
@@ -284,7 +284,7 @@ items:
     parameters:
     - id: parser
       type: CRMScript.Native.Parser
-      description: The parser to put the field-value-pairs to.
+      description: "The parser to put the field-value-pairs to."
   example: 
 references:
 - uid: CRMScript.Native.Company

@@ -52,7 +52,7 @@ items:
   summary: "\nInitializes a new instance of the NSWebhook class.\n"
   remarks: 
   syntax: 
-    content: NSWebhook
+    content: NSWebhook."
   example: 
 - uid: CRMScript.NetServer.NSWebhook.GetEvents()
   commentId: M:CRMScript.NetServer.NSWebhook.GetEvents()
@@ -71,7 +71,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String[]
-      description: Array of event names that trigger this webhook ['contact.created', 'sale.changed']
+      description: "Array of event names that trigger this webhook ['contact.created', 'sale.changed']"
   example: 
   - "\n<pre><code>NSWebhook thing;\nString[] events = thing.GetEvents();</code></pre>\n"
 - uid: CRMScript.NetServer.NSWebhook.GetHeaders()
@@ -91,7 +91,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Native.Map
-      description: Custom HTTP Headers to add to webhook requests.
+      description: Custom HTTP Headers to add to webhook requests."
   example: 
   - "\n<pre><code>NSWebhook thing;\nMap headers = thing.GetHeaders();</code></pre>\n"
 - uid: CRMScript.NetServer.NSWebhook.GetName()
@@ -111,7 +111,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description: Name to identify this webhook. Does not have to be unique.
+      description: Name to identify this webhook. Does not have to be unique."
   example: 
   - "\n<pre><code>NSWebhook thing;\nString name = thing.GetName();</code></pre>\n"
 - uid: CRMScript.NetServer.NSWebhook.GetProperties()
@@ -131,7 +131,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Native.Map
-      description: Custom values to inject into JSON body of webhook call.
+      description: Custom values to inject into JSON body of webhook call."
   example: 
   - "\n<pre><code>NSWebhook thing;\nMap properties = thing.GetProperties();</code></pre>\n"
 - uid: CRMScript.NetServer.NSWebhook.GetRegistered()
@@ -151,7 +151,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.DateTime
-      description: Registered when
+      description: Registered when."
   example: 
   - "\n<pre><code>NSWebhook thing;\nDateTime registered = thing.GetRegistered();</code></pre>\n"
 - uid: CRMScript.NetServer.NSWebhook.GetRegisteredAssociate()
@@ -171,7 +171,7 @@ items:
     parameters: []
     return:
       type: CRMScript.NetServer.NSAssociate
-      description: The user that created the webhook.
+      description: "The user that created the webhook."
   example: 
   - "\n<pre><code>NSWebhook thing;\nNSAssociate registeredAssociate = thing.GetRegisteredAssociate();</code></pre>\n"
 - uid: CRMScript.NetServer.NSWebhook.GetSecret()
@@ -191,7 +191,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description: Shared secret key used for generating SHA256 HMAC signature, so that receiver can verify that call came from this server
+      description: Shared secret key used for generating SHA256 HMAC signature, so that receiver can verify that call came from this server."
   example: 
   - "\n<pre><code>NSWebhook thing;\nString secret = thing.GetSecret();</code></pre>\n"
 - uid: CRMScript.NetServer.NSWebhook.GetState()
@@ -211,7 +211,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description: Webhook status, should we post events to the URL? See <xref href=\"CRMScript.NetServer.WebhookState\" data-throw-if-not-resolved=\"false\"></xref>.
+      description: Webhook status, should we post events to the URL? See <xref href=\"CRMScript.NetServer.WebhookState\" data-throw-if-not-resolved=\"false\"></xref>."
   example: 
   - "\n<pre><code>NSWebhook thing;\nInteger state = thing.GetState();</code></pre>\n"
 - uid: CRMScript.NetServer.NSWebhook.GetTargetUrl()
@@ -231,7 +231,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description: Destination to POST event info to. URL for webhooks. ID for CRM scripts
+      description: Destination to POST event info to. URL for webhooks. ID for CRM scripts."
   example: 
   - "\n<pre><code>NSWebhook thing;\nString targetUrl = thing.GetTargetUrl();</code></pre>\n"
 - uid: CRMScript.NetServer.NSWebhook.GetType()
@@ -251,7 +251,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description: Name of plugin that handles this webhook. 'webhook' for webhooks, which are handled by the system plugin.
+      description: Name of plugin that handles this webhook. 'webhook' for webhooks, which are handled by the system plugin."
   example: 
   - "\n<pre><code>NSWebhook thing;\nString type = thing.GetType();</code></pre>\n"
 - uid: CRMScript.NetServer.NSWebhook.GetUpdated()
@@ -271,7 +271,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.DateTime
-      description: Last updated when
+      description: Last updated when."
   example: 
   - "\n<pre><code>NSWebhook thing;\nDateTime updated = thing.GetUpdated();</code></pre>\n"
 - uid: CRMScript.NetServer.NSWebhook.GetUpdatedAssociate()
@@ -291,7 +291,7 @@ items:
     parameters: []
     return:
       type: CRMScript.NetServer.NSAssociate
-      description: The user that last updated the webhook.
+      description: "The user that last updated the webhook."
   example: 
   - "\n<pre><code>NSWebhook thing;\nNSAssociate updatedAssociate = thing.GetUpdatedAssociate();</code></pre>\n"
 - uid: CRMScript.NetServer.NSWebhook.GetWebhookId()
@@ -311,7 +311,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description: Primary Key. Unique id for this webhook.
+      description: Primary Key. Unique id for this webhook."
   example: 
   - "\n<pre><code>NSWebhook thing;\nInteger webhookId = thing.GetWebhookId();</code></pre>\n"
 - uid: CRMScript.NetServer.NSWebhook.SetEvents(String[])
@@ -331,9 +331,9 @@ items:
     parameters:
     - id: events
       type: CRMScript.Global.String[]
-      description: Array of event names that trigger this webhook ['contact.created', 'sale.changed']
+      description: "Array of event names that trigger this webhook ['contact.created', 'sale.changed']"
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.Void."
   example: 
   - "\n<pre><code>NSWebhook thing;\nString[] events;\nthing.SetEvents(events);</code></pre>\n"
 - uid: CRMScript.NetServer.NSWebhook.SetHeaders(Map)
@@ -353,9 +353,9 @@ items:
     parameters:
     - id: headers
       type: CRMScript.Native.Map
-      description: Custom HTTP Headers to add to webhook requests.
+      description: Custom HTTP Headers to add to webhook requests."
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.Void."
   example: 
   - "\n<pre><code>NSWebhook thing;\nMap headers;\nthing.SetHeaders(headers);</code></pre>\n"
 - uid: CRMScript.NetServer.NSWebhook.SetName(String)
@@ -375,9 +375,9 @@ items:
     parameters:
     - id: name
       type: CRMScript.Global.String
-      description: Name to identify this webhook. Does not have to be unique.
+      description: Name to identify this webhook. Does not have to be unique."
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.Void."
   example: 
   - "\n<pre><code>NSWebhook thing;\nString name;\nthing.SetName(name);</code></pre>\n"
 - uid: CRMScript.NetServer.NSWebhook.SetProperties(Map)
@@ -397,9 +397,9 @@ items:
     parameters:
     - id: properties
       type: CRMScript.Native.Map
-      description: Custom values to inject into JSON body of webhook call.
+      description: Custom values to inject into JSON body of webhook call."
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.Void."
   example: 
   - "\n<pre><code>NSWebhook thing;\nMap properties;\nthing.SetProperties(properties);</code></pre>\n"
 - uid: CRMScript.NetServer.NSWebhook.SetRegistered(DateTime)
@@ -419,9 +419,9 @@ items:
     parameters:
     - id: registered
       type: CRMScript.Global.DateTime
-      description: Registered when
+      description: Registered when."
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.Void."
   example: 
   - "\n<pre><code>NSWebhook thing;\nDateTime registered;\nthing.SetRegistered(registered);</code></pre>\n"
 - uid: CRMScript.NetServer.NSWebhook.SetRegisteredAssociate(NSAssociate)
@@ -441,9 +441,9 @@ items:
     parameters:
     - id: registeredAssociate
       type: CRMScript.NetServer.NSAssociate
-      description: The user that created the webhook.
+      description: "The user that created the webhook."
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.Void."
   example: 
   - "\n<pre><code>NSWebhook thing;\nNSAssociate registeredAssociate;\nthing.SetRegisteredAssociate(registeredAssociate);</code></pre>\n"
 - uid: CRMScript.NetServer.NSWebhook.SetSecret(String)
@@ -463,9 +463,9 @@ items:
     parameters:
     - id: secret
       type: CRMScript.Global.String
-      description: Shared secret key used for generating SHA256 HMAC signature, so that receiver can verify that call came from this server
+      description: Shared secret key used for generating SHA256 HMAC signature, so that receiver can verify that call came from this server."
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.Void."
   example: 
   - "\n<pre><code>NSWebhook thing;\nString secret;\nthing.SetSecret(secret);</code></pre>\n"
 - uid: CRMScript.NetServer.NSWebhook.SetState(Integer)
@@ -479,15 +479,15 @@ items:
   fullName: CRMScript.NetServer.NSWebhook.SetState(Integer)
   type: Method
   summary: # TODO
-  remarks: ""
+  remarks:
   syntax: 
     content: Void SetState(Integer state)
     parameters:
     - id: state
       type: CRMScript.Global.Integer
-      description: Webhook status. Should we post events to the URL? See <xref href=\"CRMScript.NetServer.WebhookState\" data-throw-if-not-resolved=\"false\"></xref>.
+      description: Webhook status. Should we post events to the URL? See <xref href=\"CRMScript.NetServer.WebhookState\" data-throw-if-not-resolved=\"false\"></xref>."
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.Void."
   example: 
   - "\n<pre><code>NSWebhook thing;\nInteger state;\nthing.SetState(state);</code></pre>\n"
 - uid: CRMScript.NetServer.NSWebhook.SetTargetUrl(String)
@@ -507,9 +507,9 @@ items:
     parameters:
     - id: targetUrl
       type: CRMScript.Global.String
-      description: Destination to POST event info to. URL for webhooks. ID for CRM scripts
+      description: Destination to POST event info to. URL for webhooks. ID for CRM scripts."
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.Void."
   example: 
   - "\n<pre><code>NSWebhook thing;\nString targetUrl;\nthing.SetTargetUrl(targetUrl);</code></pre>\n"
 - uid: CRMScript.NetServer.NSWebhook.SetType(String)
@@ -529,9 +529,9 @@ items:
     parameters:
     - id: type
       type: CRMScript.Global.String
-      description: Name of plugin that handles this webhook. 'webhook' for webhooks, which are handled by the system plugin.
+      description: Name of plugin that handles this webhook. 'webhook' for webhooks, which are handled by the system plugin."
     return: 
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.Void."
   example: 
   - "\n<pre><code>NSWebhook thing;\nString type;\nthing.SetType(type);</code></pre>\n"
 - uid: CRMScript.NetServer.NSWebhook.SetUpdated(DateTime)
@@ -551,9 +551,9 @@ items:
     parameters:
     - id: updated
       type: CRMScript.Global.DateTime
-      description: Last updated when
+      description: Last updated when."
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.Void."
   example: 
   - "\n<pre><code>NSWebhook thing;\nDateTime updated;\nthing.SetUpdated(updated);</code></pre>\n"
 - uid: CRMScript.NetServer.NSWebhook.SetUpdatedAssociate(NSAssociate)
@@ -573,9 +573,9 @@ items:
     parameters:
     - id: updatedAssociate
       type: CRMScript.NetServer.NSAssociate
-      description: The user that last updated the webhook.
+      description: "The user that last updated the webhook."
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.Void."
   example: 
   - "\n<pre><code>NSWebhook thing;\nNSAssociate updatedAssociate;\nthing.SetUpdatedAssociate(updatedAssociate);</code></pre>\n"
 - uid: CRMScript.NetServer.NSWebhook.SetWebhookId(Integer)
@@ -595,9 +595,9 @@ items:
     parameters:
     - id: webhookId
       type: CRMScript.Global.Integer
-      description: Primary Key. Unique ID for this webhook.
+      description: Primary Key. Unique ID for this webhook."
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.Void."
   example: 
   - "\n<pre><code>NSWebhook thing;\nInteger webhookId;\nthing.SetWebhookId(webhookId);</code></pre>\n"
 references:

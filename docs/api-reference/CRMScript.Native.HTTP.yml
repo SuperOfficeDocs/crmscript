@@ -51,7 +51,7 @@ items:
   summary: "\nInitializes a new instance of the HTTP class.\n"
   remarks: 
   syntax: 
-    content: HTTP
+    content: HTTp."
   example: 
   - "\n<pre><code>HTTP h;\n\nByte[] b = h.open(&quot;https://httpbin.org/&quot;);\nprintLine(h.getValue(&quot;statusCode&quot;));\n\nif (h.hasError())\n  print(h.getErrorMessage());\nelse</code></pre>\n"
 - uid: CRMScript.Native.HTTP.addAttachmentData(Integer)
@@ -71,10 +71,10 @@ items:
     parameters:
     - id: attachmentId
       type: CRMScript.Global.Integer
-      description: The ID of the Service attachment you want to upload
+      description: "The ID of the Service attachment you want to upload."
     return:
       type: CRMScript.Global.Bool
-      description: true if the attachment was found; otherwise, false
+      description: true if the attachment was found; otherwise, false."
   example: 
   - "\n<pre><code>#setLanguageLevel 3;\n\nHTTP http;\n\nif(http.addAttachmentData(24))\n{\n  Byte[] res = http.post(&quot;https://httpbin.org/post&quot;);\n  if (!http.hasError())\n    print(String(res));\n  else\n    print(http.getErrorMessage());</code></pre>\n"
 - uid: CRMScript.Native.HTTP.addBinaryData(Byte[])
@@ -94,9 +94,9 @@ items:
     parameters:
     - id: binaryData
       type: CRMScript.Global.Byte[]
-      description: An array of Bytes containing the binary data you want to apply to the request body
+      description: "An array of Bytes containing the binary data you want to apply to the request body."
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.Void."
   example: 
   - "\n<pre><code>#setLanguageLevel 3;\n\nHTTP http;\nByte[] image = http.get(&quot;https://httpbin.org/image/png&quot;);\nif (!http.hasError())\n{\n  http.addBinaryData(image);\n  http.addHeader(&quot;Content-Type&quot;, &quot;image/png&quot;);\n  Byte[] res = http.post(&quot;https://httpbin.org/post&quot;);\n  print(String(res));\n}\nelse\n{\n  print(http.getErrorMessage());\n}</code></pre>\n"
 - uid: CRMScript.Native.HTTP.addDocumentData(Integer)
@@ -116,10 +116,10 @@ items:
     parameters:
     - id: documentId
       type: CRMScript.Global.Integer
-      description: The ID of the document you want to upload
+      description: "The ID of the document you want to upload."
     return:
       type: CRMScript.Global.Bool
-      description: true if the document was found; otherwise, false
+      description: true if the document was found; otherwise, false."
   example: 
   - "\n<pre><code>#setLanguageLevel 3;\n\nHTTP http;\n\nif(http.addDocumentData(24))\n{\n  Byte[] res = http.post(&quot;https://httpbin.org/post&quot;);\n  if (!http.hasError())\n    print(String(res));\n  else\n    print(http.getErrorMessage());\n}</code></pre>\n"
 - uid: CRMScript.Native.HTTP.addHeader(String,String)
@@ -139,10 +139,10 @@ items:
     parameters:
     - id: name
       type: CRMScript.Global.String
-      description: name of header
+      description: name of header"
     - id: value
       type: CRMScript.Global.String
-      description: value of header
+      description: value of header."
     return:
       type: CRMScript.Global.Void 
   example: 
@@ -164,10 +164,10 @@ items:
     parameters:
     - id: url
       type: CRMScript.Global.String
-      description: What to delete
+      description: What to delete."
     return:
       type: CRMScript.Global.Byte[]
-      descending: the result in a byte array
+      descending: the result in a byte array."
   example: 
   - "\n<pre><code>HTTP h;\n\nByte[] b = h.delete(&quot;https://httpbin.org/delete&quot;);\nif (h.hasError())\n  print(h.getErrorMessage());\nelse</code></pre>\n"
 - uid: CRMScript.Native.HTTP.deleteAsStream(String)
@@ -187,9 +187,9 @@ items:
     parameters:
     - id: url
       type: CRMScript.Global.String
-      description: What to delete
+      description: What to delete."
     return:
-      type: CRMScript.NetServer.NSStream
+      type: CRMScript.NetServer.NSStream."
   example: 
   - "\n<pre><code>HTTP h;\n\nNSStream b = h.deleteAsStream(&quot;https://httpbin.org/delete&quot;);\nif (h.hasError())\n  print(h.getErrorMessage());\nelse</code></pre>\n"
 - uid: CRMScript.Native.HTTP.get(String)
@@ -212,7 +212,7 @@ items:
       description: 
     return:
       type: CRMScript.Global.Byte[]
-      description: the result in a byte array
+      description: "The result in a byte array."
   example: 
   - "\n<pre><code>HTTP h;\n\nh.addHeader(&quot;header&quot;, &quot;test&quot;);\nh.setValue(&quot;key&quot;, &quot;value&quot;);\nh.setValue(&quot;key2&quot;, &quot;value2&quot;);\nh.setOption(&quot;followLocation&quot;, &quot;true&quot;);\nByte[] b = h.get(&quot;https://httpbin.org/get&quot;);\nif (h.hasError())\n  print(h.getErrorMessage());\nelse</code></pre>\n"
 - uid: CRMScript.Native.HTTP.getAsStream(String)
@@ -235,7 +235,7 @@ items:
       description: 
     return:
       type: CRMScript.NetServer.NSStream
-      description: the result
+      description: "The result."
   example: 
   - "\n<pre><code>HTTP h;\n\nh.addHeader(&quot;header&quot;, &quot;test&quot;);\nh.setValue(&quot;key&quot;, &quot;value&quot;);\nh.setValue(&quot;key2&quot;, &quot;value2&quot;);\nh.setOption(&quot;followLocation&quot;, &quot;true&quot;);\nNSStream b = h.getAsStream(&quot;https://httpbin.org/get&quot;);\nif (h.hasError())\n  print(h.getErrorMessage());\nelse</code></pre>\n"
 - uid: CRMScript.Native.HTTP.getDebug()
@@ -255,7 +255,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description: the debug output
+      description: "The debug output."
   example: 
 - uid: CRMScript.Native.HTTP.getErrorMessage()
   commentId: M:CRMScript.Native.HTTP.getErrorMessage()
@@ -274,7 +274,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description: the last error message
+      description: "The last error message."
   example: 
   - "\n<pre><code>HTTP h;\n\nh.addHeader(&quot;header&quot;, &quot;test&quot;);\nh.setValue(&quot;key&quot;, &quot;value&quot;);\nh.setValue(&quot;key2&quot;, &quot;value2&quot;);\nh.setOption(&quot;followLocation&quot;, &quot;true&quot;);\nByte[] b = h.put(&quot;https://httpbin.org/put&quot;);\n\nif (h.hasError())\n  print(h.getErrorMessage());\nelse</code></pre>\n"
 - uid: CRMScript.Native.HTTP.getResponseHeader(String)
@@ -294,10 +294,10 @@ items:
     parameters:
     - id: header
       type: CRMScript.Global.String
-      description: The header to get
+      description: "The header to get."
     return:
       type: CRMScript.Global.String
-      description: the header
+      description: "The header."
   example: 
 - uid: CRMScript.Native.HTTP.getResponseHeaders()
   commentId: M:CRMScript.Native.HTTP.getResponseHeaders()
@@ -316,7 +316,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Native.Map
-      description: a map of all the headers from the HTTP response headers after making a HTTP call
+      description: "A map of all the headers from the HTTP response headers after making a HTTP call."
   example: 
 - uid: CRMScript.Native.HTTP.getValue(String)
   commentId: M:CRMScript.Native.HTTP.getValue(String)
@@ -335,10 +335,10 @@ items:
     parameters:
     - id: name
       type: CRMScript.Global.String
-      description: What to get (statusCode)
+      description: What to get (statusCode)."
     return:
       type: CRMScript.Global.String
-      description: values from the instance
+      description: values from the instance."
   example: 
 - uid: CRMScript.Native.HTTP.hasError()
   commentId: M:CRMScript.Native.HTTP.hasError()
@@ -351,13 +351,13 @@ items:
   fullName: CRMScript.Native.HTTP.hasError()
   type: Method
   summary: "\nChecks if there was an error in the environment.\n"
-  remarks: ""
+  remarks:
   syntax: 
     content: Bool hasError()
     parameters: []
     return:
       type: CRMScript.Global.Bool
-      description: True if there was an error in the environment; otherwise, false.
+      description: True if there was an error in the environment; otherwise, false."
   example: 
 - uid: CRMScript.Native.HTTP.open(String)
   commentId: M:CRMScript.Native.HTTP.open(String)
@@ -376,10 +376,10 @@ items:
     parameters:
     - id: url
       type: CRMScript.Global.String
-      description: The URL to open. http://...
+      description: "The URL to open. http://..."
     return:
       type: CRMScript.Global.Byte[]
-      description: result as a Byte array
+      description: result as a Byte array."
   example: 
   - "\n<pre><code>HTTP h;\n\nByte[] b = h.open(&quot;https://httpbin.org/&quot;);\n\nif (h.hasError())\n  print(h.getErrorMessage());\nelse</code></pre>\n"
 - uid: CRMScript.Native.HTTP.openAsStream(String)
@@ -399,9 +399,9 @@ items:
     parameters:
     - id: url
       type: CRMScript.Global.String
-      description: The URL to open. http://...
+      description: "The URL to open. http://..."
     return:
-      type: CRMScript.NetServer.NSStream
+      type: CRMScript.NetServer.NSStream."
   example: 
   - "\n<pre><code>HTTP h;\n\nNSStream b = h.openAsStream(&quot;https://httpbin.org/&quot;);\n\nif (h.hasError())\n  print(h.getErrorMessage());\nelse</code></pre>\n"
 - uid: CRMScript.Native.HTTP.patch(String)
@@ -424,7 +424,7 @@ items:
       description: 
     return:
       type: CRMScript.Global.Byte[]
-      description: the result as a byte array
+      description: "The result as a byte array."
   example: 
   - "\n<pre><code>HTTP h;\n\nh.addHeader(&quot;header&quot;, &quot;test&quot;);\nh.setValue(&quot;key&quot;, &quot;value&quot;);\nh.setValue(&quot;key2&quot;, &quot;value2&quot;);\nh.setOption(&quot;followLocation&quot;, &quot;true&quot;);\nByte[] b = h.patch(&quot;https://httpbin.org/patch&quot;);\nif (h.hasError())\n  print(h.getErrorMessage());\nelse</code></pre>\n"
 - uid: CRMScript.Native.HTTP.patchAsStream(String)
@@ -447,7 +447,7 @@ items:
       description: 
     return:
       type: CRMScript.NetServer.NSStream
-      description: the result
+      description: "The result."
   example: 
   - "\n<pre><code>HTTP h;\n\nh.addHeader(&quot;header&quot;, &quot;test&quot;);\nh.setValue(&quot;key&quot;, &quot;value&quot;);\nh.setValue(&quot;key2&quot;, &quot;value2&quot;);\nh.setOption(&quot;followLocation&quot;, &quot;true&quot;);\nNSStream b = h.patchAsStream(&quot;https://httpbin.org/patch&quot;);\nif (h.hasError())\n  print(h.getErrorMessage());\nelse</code></pre>\n"
 - uid: CRMScript.Native.HTTP.post(String)
@@ -470,7 +470,7 @@ items:
       description: 
     return:
       type: CRMScript.Global.Byte[]
-      description: the result as a byte array
+      description: "The result as a byte array."
   example: 
   - "\n<pre><code>HTTP h;\n\nh.addHeader(&quot;header&quot;, &quot;test&quot;);\nh.setValue(&quot;key&quot;, &quot;value&quot;);\nh.setValue(&quot;key2&quot;, &quot;value2&quot;);\nh.setOption(&quot;followLocation&quot;, &quot;true&quot;);\nByte[] b = h.post(&quot;https://httpbin.org/post&quot;);\nif (h.hasError())\n  print(h.getErrorMessage());\nelse</code></pre>\n"
 - uid: CRMScript.Native.HTTP.postAsStream(String)
@@ -493,7 +493,7 @@ items:
       description: 
     return:
       type: CRMScript.NetServer.NSStream
-      description: the result
+      description: "The result."
   example: 
   - "\n<pre><code>HTTP h;\n\nh.addHeader(&quot;header&quot;, &quot;test&quot;);\nh.setValue(&quot;key&quot;, &quot;value&quot;);\nh.setValue(&quot;key2&quot;, &quot;value2&quot;);\nh.setOption(&quot;followLocation&quot;, &quot;true&quot;);\nNSStream b = h.postAsStream(&quot;https://httpbin.org/post&quot;);\nif (h.hasError())\n  print(h.getErrorMessage());\nelse</code></pre>\n"
 - uid: CRMScript.Native.HTTP.putAsStream(String)
@@ -516,7 +516,7 @@ items:
       description: 
     return:
       type: CRMScript.NetServer.NSStream
-      description: the result
+      description: "The result."
   example: 
   - "\n<pre><code>HTTP h;\n\nh.addHeader(&quot;header&quot;, &quot;test&quot;);\nh.setValue(&quot;key&quot;, &quot;value&quot;);\nh.setValue(&quot;key2&quot;, &quot;value2&quot;);\nh.setOption(&quot;followLocation&quot;, &quot;true&quot;);\nNSStream b = h.putAsStream(&quot;https://httpbin.org/put&quot;);\nif (h.hasError())\n  print(h.getErrorMessage());\nelse</code></pre>\n"
 - uid: CRMScript.Native.HTTP.setDebugMode()
@@ -536,9 +536,9 @@ items:
     parameters:
     - id: debug
       type: CRMScript.Global.Bool
-      description: true to turn debug on, false to turn it off
+      description: true to turn debug on, false to turn it off."
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.Void."
   example: 
 - uid: CRMScript.Native.HTTP.setOption(String,Bool)
   commentId: M:CRMScript.Native.HTTP.setOption(String,Bool)
@@ -560,9 +560,9 @@ items:
       description: 
     - id: value
       type: CRMScript.Global.String
-      description: see table
+      description: "See table."
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.Void."
   example: 
   - "\n<pre><code>HTTP h;\n\nh.addHeader(&quot;header&quot;, &quot;test&quot;);\nh.setValue(&quot;key&quot;, &quot;value&quot;);\nh.setValue(&quot;key2&quot;, &quot;value2&quot;);\nh.setOption(&quot;followLocation&quot;, &quot;true&quot;);\n\nByte[] b = h.post(&quot;https://httpbin.org/post&quot;);\n\nif (h.hasError())\n  print(h.getErrorMessage());\nelse\n  print(String(b));\n\n//Here is an example for creating an issue in JIRA, hosted by Atlassian\n\nHTTP h2;\nString json = &quot; {\n  &quot;fields&quot;: {\n    &quot;project&quot;: {\n      &quot;key&quot;: &quot;SUP&quot;\n    },\n&quot;summary&quot;: &quot;I have a problem!.&quot;,\n&quot;description&quot;: &quot;Thats awesome&quot;,\n    &quot;issuetype&quot;: {\n      &quot;name&quot;: &quot;Bug&quot;\n    }\n  }\n}&quot;;\n\nHTTP h;\nh.setOption(&quot;username&quot;, &quot;theUsername&quot;);\nh.setOption(&quot;password&quot;, &quot;thePassword&quot;);\nh.addHeader(&quot;Content-Type&quot;, &quot;application/json&quot;);\nh.setOption(&quot;parameters&quot;, json);\nprint(String(h.post(&quot;https://theInstance.atlassian.net/rest/api/2/issue/&quot;)));</code></pre>\n"
 - uid: CRMScript.Native.HTTP.setValue(String,String)
@@ -582,12 +582,12 @@ items:
     parameters:
     - id: cgiVariable
       type: CRMScript.Global.String
-      description: The variable to set
+      description: "The variable to set"
     - id: value
       type: CRMScript.Global.String
-      description: The value
+      description: "The value."
     return:
-      type: CRMScript.Global.Void
+      type: CRMScript.Global.Void."
   example: 
   - "\n<pre><code>HTTP h;\n\nh.addHeader(&quot;header&quot;, &quot;test&quot;);\nh.setValue(&quot;key&quot;, &quot;value&quot;);\nh.setValue(&quot;key2&quot;, &quot;value2&quot;);\nh.setOption(&quot;followLocation&quot;, &quot;true&quot;);\nByte[] b = h.put(&quot;https://httpbin.org/put&quot;);\nif (h.hasError())\n  print(h.getErrorMessage());\nelse</code></pre>\n"
 references:

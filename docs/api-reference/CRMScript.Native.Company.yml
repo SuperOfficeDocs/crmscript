@@ -38,7 +38,7 @@ items:
   summary: "\nInitializes a new instance of the Company class.\n"
   remarks: 
   syntax: 
-    content: Company."
+    content: Company
   example: 
   - "\n<pre><code>Company c;\n\nc.load(2);</code></pre>\n"
 - uid: CRMScript.Native.Company.checkFieldRights(String,String)
@@ -61,10 +61,10 @@ items:
       description: "The field to check."
     - id: fieldRight
       type: CRMScript.Global.String
-      description: Type of access to check for - read or write."
+      description: "Type of access to check for - read or write."
     return:
       type: CRMScript.Global.Bool
-      description: true if the current user has access to the field; otherwise, false."
+      description: "True if the current user has access to the field; otherwise, false."
   example: 
   - "\n<pre><code>Company c;\n\nc.load(3);\nBool b = c.checkFieldRights(&quot;contact&quot;, &quot;read&quot;);\nprint(b.toString());</code></pre>\n"
 - uid: CRMScript.Native.Company.checkTableRights(String)
@@ -84,10 +84,10 @@ items:
     parameters:
     - id: tableRight
       type: CRMScript.Global.String
-      description: Type of access to check for - select, update, or insert."
+      description: "Type of access to check for - select, update, or insert."
     return:
       type: CRMScript.Global.Bool
-      description: true if the current user has access to the company; otherwise, false."
+      description: "True if the current user has access to the company; otherwise, false."
   example: 
   - "\n<pre><code>Company c;\n\nc.load(3);\nBool b = c.checkTableRights(&quot;select&quot;);\nprint(b.toString());</code></pre>\n"
 - uid: CRMScript.Native.Company.findFromDomain(String)
@@ -107,10 +107,10 @@ items:
     parameters:
     - id: domain
       type: CRMScript.Global.String
-      description: Domain of the company."
+      description: "Domain of the company."
     return:
       type: CRMScript.Global.Bool
-      description: true if successfully loaded; otherwise, false."
+      description: "True if successfully loaded; otherwise, false."
   example: 
 - uid: CRMScript.Native.Company.getFormattedAddress()
   commentId: M:CRMScript.Native.Company.getFormattedAddress()
@@ -174,7 +174,7 @@ items:
       description: "The ID of the company."
     return: 
       type: CRMScript.Global.Bool
-      description: true if successfully loaded; otherwise, false."
+      description: "True if successfully loaded; otherwise, false."
   example: 
   - "\n<pre><code>Company c;\n\nBool b = c.load(3);\nprint(b.toString());</code></pre>\n"
 - uid: CRMScript.Native.Company.loadFromAgentAndKey(Integer,String)
@@ -200,7 +200,7 @@ items:
       description: "The external key of this company."
     return: 
       type: CRMScript.Global.Bool
-      description: true if successfully loaded; false if the company does not exist."
+      description: "True if successfully loaded; false if the company does not exist."
   example: 
 - uid: CRMScript.Native.Company.save()
   commentId: M:CRMScript.Native.Company.save()
@@ -240,7 +240,7 @@ items:
       type: CRMScript.NetServer.NSLocalizedField[][]
       description: "The new address."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.Native.Company.setValue(String,String)
   commentId: M:CRMScript.Native.Company.setValue(String,String)
@@ -259,12 +259,12 @@ items:
     parameters:
     - id: colName
       type: CRMScript.Global.String
-      description: Column name."
+      description: "Column name."
     - id: value
       type: CRMScript.Global.String
-      description: Value that should be stored."
+      description: "Value that should be stored."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>Company c;\n\nc.load(3);\nBool b = c.checkTableRights(&quot;select&quot;);\nprint(b.toString());\n\nc.setValue(&quot;name&quot;, &quot;Test&quot;);</code></pre>\n"
 - uid: CRMScript.Native.Company.toParser(Parser)

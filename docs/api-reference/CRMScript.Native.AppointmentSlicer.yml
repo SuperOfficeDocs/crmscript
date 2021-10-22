@@ -26,13 +26,13 @@ items:
   langs:
   - crmscript
   name: AppointmentSlicer()
-  nameWithType: AppointmentSlicer.#ctor
-  fullName: CRMScript.Native.AppointmentSlicer.#ctor
+  nameWithType: AppointmentSlicer.AppointmentSlicer()
+  fullName: CRMScript.Native.AppointmentSlicer.AppointmentSlicer()
   type: Constructor
-  summary: "\nInitializes a new instance of the AppointmentSlicer class.\n"
+  summary: "\nDefault constructor.\n"
   remarks: 
   syntax: 
-    content: AppointmentSlicer."
+    content: AppointmentSlicer
   example: 
   - "\n<pre><code>AppointmentSlicer a;\n\na.addAppointment(1, DateTime(2017, 4, 23, 8, 0, 0), DateTime(2017, 4, 23, 10, 30, 0), &quot;Meeting&quot;);</code></pre>\n"
 - uid: CRMScript.Native.AppointmentSlicer.addAppointment(Integer,DateTime,DateTime,String)
@@ -58,10 +58,10 @@ items:
       description: "The title of the appointment."
     - id: start
       type: CRMScript.Global.DateTime
-      description: When the appointment starts."
+      description: "When the appointment starts."
     - id: stop
       type: CRMScript.Global.String
-      description: When the appointment ends."
+      description: "When the appointment ends."
   example: 
 - uid: CRMScript.Native.AppointmentSlicer.clear()
   commentId: M:CRMScript.Native.AppointmentSlicer.clear()
@@ -79,7 +79,7 @@ items:
     content: clear()
     parameters: []
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.Native.AppointmentSlicer.eof()
   commentId: M:CRMScript.Native.AppointmentSlicer.eof()
@@ -98,7 +98,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.Bool
-      description: true if the internal iterator is past the appointments for the chosen day; otherwise, false."
+      description: "True if the internal iterator is past the appointments for the chosen day; otherwise, false."
   example: 
 - uid: CRMScript.Native.AppointmentSlicer.getLoadForDay(Date,Time,Time,Integer)
   commentId: M:CRMScript.Native.AppointmentSlicer.getLoadForDay(Date,Time,Time,Integer)
@@ -120,10 +120,10 @@ items:
       description: "The day to get the load for."
     - id: start
       type: CRMScript.Global.Time
-      description: When to start calculating."
+      description: "When to start calculating."
     - id: stop
       type: CRMScript.Global.Time
-      description: When to stop calculating."
+      description: "When to stop calculating."
     - id: max
       type: CRMScript.Global.Integer
       description: "The maximum time returned."
@@ -170,7 +170,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.Bool
-      description: false if eof(); otherwise, true."
+      description: "False if eof(); otherwise, true."
   example: 
 - uid: CRMScript.Native.AppointmentSlicer.setActiveDate(Date)
   commentId: M:CRMScript.Native.AppointmentSlicer.setActiveDate(Date)
@@ -191,7 +191,7 @@ items:
       type: CRMScript.Global.Date
       description: "The date to set the internal iterator to."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
 references:
 - uid: CRMScript.Native.AppointmentSlicer

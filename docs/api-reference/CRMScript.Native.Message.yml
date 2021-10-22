@@ -46,7 +46,7 @@ items:
   summary: "\nInitializes a new instance of the Message class.\n"
   remarks: 
   syntax: 
-    content: Message."
+    content: Message
   example: 
   - "\n<pre><code>Message m;\n\nm.load(2); // Loads message with id = 2\nm.setValue(&quot;emailHeader&quot;, &quot;Test&quot;);\nm.setValue(&quot;body&quot;, &quot;This is a test&quot;);\nm.save();</code></pre>\n"
 - uid: CRMScript.Native.Message.addHeader(String,String)
@@ -66,12 +66,12 @@ items:
     parameters:
     - id: type
       type: CRMScript.Global.String
-      description: Type of header as a String, examples are To, Cc, SMS, Bcc"
+      description: "Type of header as a String, examples are To, Cc, SMS, Bcc"
     - id: value
       type: CRMScript.Global.String
       description: "The header to add as a String, common values are recipients of the message as a comma-separated String."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.Native.Message.convertInlineImages()
   commentId: M:CRMScript.Native.Message.convertInlineImages()
@@ -89,7 +89,7 @@ items:
     content: Void convertInlineImages()
     parameters: []
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.Native.Message.getAttachments()
   commentId: M:CRMScript.Native.Message.getAttachments()
@@ -127,7 +127,7 @@ items:
     parameters:
     - id: colName
       type: CRMScript.Global.String
-      description: column name of the value."
+      description: "Column name of the value."
     return:
       type: CRMScript.Global.String
       description: "A string value of the column."
@@ -149,10 +149,10 @@ items:
     parameters:
     - id: id
       type: CRMScript.Global.Integer
-      description: ID of message."
+      description: "ID of message."
     return:
       type: CRMScript.Global.Bool
-      description: true if successful; otherwise, false."
+      description: "True if successful; otherwise, false."
   example: 
 - uid: CRMScript.Native.Message.save()
   commentId: M:CRMScript.Native.Message.save()
@@ -190,7 +190,7 @@ items:
     parameters:
     - id: log
       type: CRMScript.Global.String
-      description: Log entry to add to the ticket log that this message belongs to."
+      description: "Log entry to add to the ticket log that this message belongs to."
     return:
       type: CRMScript.Global.Integer
       description: "The database Id."
@@ -212,10 +212,10 @@ items:
     parameters:
     - id: log
       type: CRMScript.Global.String
-      description: Log entry to add to the ticket log that this message belongs to."
+      description: "Log entry to add to the ticket log that this message belongs to."
     - id: noNewInfo
       type: CRMScript.Global.Bool
-      description: Used in combination with log. Set it to false if your changes should turn the readStatus on ticket yellow (if the readStatus is green)."
+      description: "Used in combination with log. Set it to false if your changes should turn the readStatus on ticket yellow (if the readStatus is green)."
     return:
       type: CRMScript.Global.Integer
       description: "The database Id."
@@ -239,7 +239,7 @@ items:
       type: CRMScript.Global.String
       description: "A single email address for 1 recipient."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.Native.Message.saveInvolved(Vector)
   commentId: M:CRMScript.Native.Message.saveInvolved(Vector)
@@ -260,7 +260,7 @@ items:
       type: CRMScript.Native.Vector
       description: "A collection of email addresses for multiple recipients."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.Native.Message.send(Vector,Vector,Vector)
   commentId: M:CRMScript.Native.Message.send(Vector,Vector,Vector)
@@ -288,7 +288,7 @@ items:
       description: "The bcc-recipients in the email."
     return:
       type: CRMScript.Global.Bool
-      description: true if everything is OK; otherwise, false."
+      description: "True if everything is OK; otherwise, false."
   example: 
 - uid: CRMScript.Native.Message.send(Vector,Vector,Vector,Integer)
   commentId: M:CRMScript.Native.Message.send(Vector,Vector,Vector,Integer
@@ -319,7 +319,7 @@ items:
       description: "The ID of the category to check for reply template merge. Alternative to subject."
     return:
       type: CRMScript.Global.Bool
-      description: true if everything is OK; otherwise, false."
+      description: "True if everything is OK; otherwise, false."
   example: 
 - uid: CRMScript.Native.Message.send(Vector,Vector,Vector,String)
   commentId: M:CRMScript.Native.Message.send(Vector,Vector,Vector,String)
@@ -350,7 +350,7 @@ items:
       description: "The subject in the email. Alternative to categoryId."
     return:
       type: CRMScript.Global.Bool
-      description: true if everything is OK; otherwise, false."
+      description: "True if everything is OK; otherwise, false."
   example: 
 - uid: CRMScript.Native.Message.send(Vector,Vector,Vector,String,String)
   commentId: M:CRMScript.Native.Message.send(Vector,Vector,Vector,String,String)
@@ -384,7 +384,7 @@ items:
       description: "The body heading. Used with subject."
     return:
       type: CRMScript.Global.Bool
-      description: true if everything is OK; otherwise, false."
+      description: "True if everything is OK; otherwise, false."
   example: 
 - uid: CRMScript.Native.Message.sendFacebook()
   commentId: M:CRMScript.Native.Message.sendFacebook()
@@ -402,7 +402,7 @@ items:
     content: Void sendFacebook()
     parameters: []
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.Native.Message.sendSms(Vector)
   commentId: M:CRMScript.Native.Message.sendSms(Vector)
@@ -424,7 +424,7 @@ items:
       description: "The numbers to send the message to."
     return:
       type: CRMScript.Global.Bool
-      description: true if successful; otherwise, false."
+      description: "True if successful; otherwise, false."
   example: 
 - uid: CRMScript.Native.Message.setAttachments(Vector)
   commentId: M:CRMScript.Native.Message.setAttachments(Vector)
@@ -445,7 +445,7 @@ items:
       type: CRMScript.Native.Vector
       description: "The IDs of the attachments."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.Native.Message.setValue(String,String)
   commentId: M:CRMScript.Native.Message.setValue(String,String)
@@ -464,12 +464,12 @@ items:
     parameters:
     - id: colName
       type: CRMScript.Global.String
-      description: column name of the value"
+      description: "Column name of the value"
     - id: value
       type: CRMScript.Global.String
-      description: value that should be stored in the column."
+      description: "Value that should be stored in the column."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.Native.Message.toParser(Parser)
   commentId: M:CRMScript.Native.Message.toParser(Parser)

@@ -41,7 +41,7 @@ items:
   summary: "\nInitializes a new instance of the EventData class.\n"
   remarks: 
   syntax: 
-    content: EventData."
+    content: EventData
   example: 
 - uid: CRMScript.Native.EventData.getBlockExecution()
   commentId: M:CRMScript.Native.EventData.getBlockExecution()
@@ -224,7 +224,7 @@ items:
       type: CRMScript.Global.Bool
       description: 
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.Native.EventData.setMessage(String)
   commentId: M:CRMScript.Native.EventData.setMessage(String)
@@ -245,7 +245,7 @@ items:
       type: CRMScript.Global.String
       description: 
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>EventData ed = getEventData();\nString orgNr = ed.getInputValue(&quot;ContactEntity.OrgNr&quot;);\nif(orgNr.isEmpty()) {\n  ed.setMessage(&quot;Please type an Org.Nr&quot;);\n}</code></pre>\n"
 - uid: CRMScript.Native.EventData.setNavigateTo(String)
@@ -267,7 +267,7 @@ items:
       type: CRMScript.Global.String
       description: 
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>EventData ed = getEventData();\ned.setNavigateTo(&quot;soprotocol:sale.document?document_id=0&quot;);</code></pre>\n"
 - uid: CRMScript.Native.EventData.setOutputValue(String,String)
@@ -292,7 +292,7 @@ items:
       type: CRMScript.Global.String
       description: 
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>Integer newOrgNr = 987654321;\nEventData ed = getEventData();\ned.setOutputValue(&quot;ContactEntity.OrgNr&quot;, newOrgNr);</code></pre><pre><code>EventData ed = getEventData();\nString projectId = ed.getInputValue(&quot;ProjectEntity.ProjectId&quot;);\n\nSearchEngine se;\nse.bypassNetServer(true);\nse.addField(&quot;sale.amount&quot;, &quot;sum&quot;);\nse.addCriteria(&quot;sale.project_id&quot;, &quot;Equals&quot;, projectId);\n\nif(se.select() &gt; 0) {\n  ed.setOutputValue(&quot;ProjectEntity.UserDefinedFields.SuperOffice:1&quot;, &quot;[F:&quot; + se.getField(0) + &quot;]&quot;);\n}</code></pre>\n"
 - uid: CRMScript.Native.EventData.setStateValue(String,String)
@@ -317,7 +317,7 @@ items:
       type: CRMScript.Global.String
       description: 
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.Native.EventData.setValidationMessage(String)
   commentId: M:CRMScript.Native.EventData.setValidationMessage(String)
@@ -338,7 +338,7 @@ items:
       type: CRMScript.Global.String
       description: 
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>EventData ed = getEventData();\nif(ed.getInputValue(&quot;x_invoice_no.value&quot;) == &quot;&quot;) {\n  getHtmlElement(&quot;x_invoice_no&quot;).setErrorMessage(&quot;Error&quot;);\n  ed.setBlockExecution(true);\n}\n\nString orgNr = ed.getInputValue(&quot;ContactEntity.OrgNr&quot;);\nif(orgNr.isEmpty()) {\n  ed.setValidationMessage(&quot;Please type in a Org.Nr&quot;);\n}\nelse if(!orgNr.isDigit() || orgNr.getLength() != 9) {\n  // ...\n}</code></pre>\n"
 references:

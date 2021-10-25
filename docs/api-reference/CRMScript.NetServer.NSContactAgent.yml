@@ -58,7 +58,7 @@ items:
   summary: "\nInitializes a new instance of the NSContactAgent class.\n"
   remarks: 
   syntax: 
-    content: NSContactAgent."
+    content: NSContactAgent
   example: 
   - "\n<pre><code>NSContactAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSContactAgent.AddPerson(Integer,NSPersonEntity)
@@ -78,13 +78,13 @@ items:
     parameters:
     - id: contactId
       type: CRMScript.Global.Integer
-      description: Contact to add person to"
+      description: "Contact to add person to"
     - id: newPersonEntity
       type: CRMScript.NetServer.NSPersonEntity
-      description: Person object to add."
+      description: "Person object to add."
     return:
       type: CRMScript.NetServer.NSPersonEntity
-      description: Updated person object."
+      description: "Updated person object."
   example: 
   - "\n<pre><code>NSContactAgent agent;\nInteger contactId;\nNSPersonEntity newPersonEntity;\nNSPersonEntity res = agent.AddPerson(contactId, newPersonEntity);</code></pre>\n"
 - uid: CRMScript.NetServer.NSContactAgent.ChangeCountry(NSContactEntity,Integer)
@@ -109,7 +109,7 @@ items:
       type: CRMScript.Global.Integer
       description: "The country to switch to."
     return:
-      type: CRMScript.NetServer.NSContactEntity."
+      type: CRMScript.NetServer.NSContactEntity
   example: 
 - uid: CRMScript.NetServer.NSContactAgent.Copy(Integer,String,String,Bool)
   commentId: M:CRMScript.NetServer.NSContactAgent.Copy(Integer,String,String,Bool)
@@ -137,10 +137,10 @@ items:
       description: "The department of the destination contact"
     - id: copyPersons
       type: CRMScript.Global.Bool
-      description: If true, persons will be copied from source contact."
+      description: "If true, persons will be copied from source contact."
     return:
       type: CRMScript.Global.Integer
-      description: ID of copied contact."
+      description: "ID of copied contact."
   example: 
   - "\n<pre><code>NSContactAgent agent;\nInteger sourceContactId;\nString destinationContactName;\nString destinationContactDepartment;\nBool copyPersons;\nInteger res = agent.Copy(sourceContactId, destinationContactName, destinationContactDepartment, copyPersons);</code></pre>\n"
 - uid: CRMScript.NetServer.NSContactAgent.CreateDefaultContactEntity()
@@ -160,7 +160,7 @@ items:
     parameters: []
     return:
       type: CRMScript.NetServer.NSContactEntity
-      description: New ContactEntity with default values."
+      description: "New ContactEntity with default values."
   example: 
   - "\n<pre><code>NSContactAgent agent;\nNSContactEntity thing = agent.CreateDefaultContactEntity();\nthing = agent.SaveContactEntity(thing);</code></pre>\n"
 - uid: CRMScript.NetServer.NSContactAgent.CreateNewEntry(NSDuplicateEntry)
@@ -205,7 +205,7 @@ items:
       type: CRMScript.Global.Integer
       description: "The identity of the ContactEntity."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSContactAgent agent;\nagent.DeleteContactEntity(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSContactAgent.DeleteExpired()
@@ -224,7 +224,7 @@ items:
     content: Void DeleteExpired()
     parameters: []
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSContactAgent.GetAddress(Integer)
   commentId: M:CRMScript.NetServer.NSContactAgent.GetAddress(Integer)
@@ -364,10 +364,10 @@ items:
       description: "The contact ID to summarize."
     - id: limit
       type: CRMScript.Global.Integer
-      description: Max number of items to include in summary lists."
+      description: "Max number of items to include in summary lists."
     return:
       type: CRMScript.NetServer.NSContactSummary
-      description: Summary of contact, with recent requests, sales, follow-ups, chats."
+      description: "Summary of contact, with recent requests, sales, follow-ups, chats."
   example: 
   - "\n<pre><code>NSContactAgent agent;\nInteger contactId;\nInteger limit;\nNSContactSummary res = agent.GetContactSummary(contactId, limit);</code></pre>\n"
 - uid: CRMScript.NetServer.NSContactAgent.GetContactWithPersons(Integer)
@@ -390,7 +390,7 @@ items:
       description: "The ID of the contact."
     return:
       type: CRMScript.NetServer.NSContactEntity
-      description: ContactEntity with all data and persons."
+      description: "ContactEntity with all data and persons."
   example: 
   - "\n<pre><code>NSContactAgent agent;\nInteger contactId;\nNSContactEntity res = agent.GetContactWithPersons(contactId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSContactAgent.GetDuplicateRules()
@@ -430,7 +430,7 @@ items:
     parameters:
     - id: name
       type: CRMScript.Global.String
-      description: Name used for lookup."
+      description: "Name used for lookup."
     return:
       type: CRMScript.NetServer.NSDuplicateEntry[]
       description: "Any records matching the specified name."
@@ -501,7 +501,7 @@ items:
     content: NSContactEntity GetMyContact()
     parameters: []
     return:
-      type: CRMScript.NetServer.NSContactEntity."
+      type: CRMScript.NetServer.NSContactEntity
   example: 
   - "\n<pre><code>NSContactAgent agent;\nNSContactEntity res = agent.GetMyContact();</code></pre>\n"
 - uid: CRMScript.NetServer.NSContactAgent.GetMyContacts()
@@ -564,10 +564,10 @@ items:
     parameters:
     - id: name
       type: CRMScript.Global.String
-      description: Name used for lookup"
+      description: "Name used for lookup"
     - id: department
       type: CRMScript.Global.String
-      description: Department used for lookup (if any)."
+      description: "Department used for lookup (if any)."
     return:
       type: CRMScript.NetServer.NSDuplicateEntry[]
       description: "Any records matching the specified name and department."
@@ -661,18 +661,18 @@ items:
     parameters:
     - id: sourceContactId
       type: CRMScript.Global.Integer
-      description: Source contact to merge from. This contact will disappear after the merge."
+      description: "Source contact to merge from. This contact will disappear after the merge."
     - id: destinationContactId
       type: CRMScript.Global.Integer
-      description: Destination contact to merge into"
+      description: "Destination contact to merge into"
     - id: mergeIdenticalPersons
       type: CRMScript.Global.Bool
-      description: Persons with identical names will be merged"
+      description: "Persons with identical names will be merged"
     - id: replaceEmptyFieldsOnDestination
       type: CRMScript.Global.Bool
-      description: If true, empty fields on destination will be replaced by values from source."
+      description: "If true, empty fields on destination will be replaced by values from source."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSContactAgent.SaveContactEntity(NSContactEntity)
   commentId: M:CRMScript.NetServer.NSContactAgent.SaveContactEntity(NSContactEntity)
@@ -720,7 +720,7 @@ items:
       description: "The address to save on the quote version."
     - id: addressType
       type: CRMScript.Global.Integer
-      description: Should be either QuoteBillingAddress or QuoteShippingAddress"
+      description: "Should be either QuoteBillingAddress or QuoteShippingAddress"
     - id: countryId
       type: CRMScript.Global.Integer
       description: "The country for the custom address."
@@ -746,9 +746,9 @@ items:
     parameters:
     - id: rules
       type: CRMScript.NetServer.NSDuplicateRule[]
-      description: Duplicate rules to update active status for."
+      description: "Duplicate rules to update active status for."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSContactAgent.Undelete(Integer)
   commentId: M:CRMScript.NetServer.NSContactAgent.Undelete(Integer)
@@ -769,7 +769,7 @@ items:
       type: CRMScript.Global.Integer
       description: "The primary key of the entity to un-delete."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSContactAgent agent;\nInteger id;\nagent.Undelete(id);</code></pre>\n"
 - uid: CRMScript.NetServer.NSContactAgent.ValidateContactEntity(NSContactEntity)

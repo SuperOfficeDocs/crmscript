@@ -52,7 +52,7 @@ items:
   summary: "\nInitializes a new instance of the NSBlobEntity class.\n"
   remarks: 
   syntax: 
-    content: NSBlobEntity."
+    content: NSBlobEntity
   example: 
 - uid: CRMScript.NetServer.NSBlobEntity.GetBlobId()
   commentId: M:CRMScript.NetServer.NSBlobEntity.GetBlobId()
@@ -71,7 +71,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description: Primary key."
+      description: "Primary key."
   example: 
   - "\n<pre><code>NSBlobEntity thing;\nInteger blobId = thing.GetBlobId();</code></pre>\n"
 - uid: CRMScript.NetServer.NSBlobEntity.GetBlobSize()
@@ -151,7 +151,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.DateTime
-      description: Registered when."
+      description: "Registered when."
   example: 
   - "\n<pre><code>NSBlobEntity thing;\nDateTime createdDate = thing.GetCreatedDate();</code></pre>\n"
 - uid: CRMScript.NetServer.NSBlobEntity.GetDescription()
@@ -191,7 +191,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description: Extra information, spare field, can be used for anything that makes sense."
+      description: "Extra information, spare field, can be used for anything that makes sense."
   example: 
   - "\n<pre><code>NSBlobEntity thing;\nString extraInfo = thing.GetExtraInfo();</code></pre>\n"
 - uid: CRMScript.NetServer.NSBlobEntity.GetIsEncrypted()
@@ -251,7 +251,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description: Mime type, describing the technical type (image/jpeg) of the data."
+      description: "Mime type, describing the technical type (image/jpeg) of the data."
   example: 
   - "\n<pre><code>NSBlobEntity thing;\nString mimeType = thing.GetMimeType();</code></pre>\n"
 - uid: CRMScript.NetServer.NSBlobEntity.GetOriginalSize()
@@ -271,7 +271,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description: Original size of the binary data, before encryption and/or zipping."
+      description: "Original size of the binary data, before encryption and/or zipping."
   example: 
   - "\n<pre><code>NSBlobEntity thing;\nInteger originalSize = thing.GetOriginalSize();</code></pre>\n"
 - uid: CRMScript.NetServer.NSBlobEntity.GetUpdatedBy()
@@ -311,7 +311,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.DateTime
-      description: Last updated when."
+      description: "Last updated when."
   example: 
   - "\n<pre><code>NSBlobEntity thing;\nDateTime updatedDate = thing.GetUpdatedDate();</code></pre>\n"
 - uid: CRMScript.NetServer.NSBlobEntity.SetBlobId(Integer)
@@ -331,9 +331,9 @@ items:
     parameters:
     - id: blobId
       type: CRMScript.Global.Integer
-      description: Primary key."
+      description: "Primary key."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSBlobEntity thing;\nInteger blobId;\nthing.SetBlobId(blobId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSBlobEntity.SetBlobSize(Integer)
@@ -355,7 +355,7 @@ items:
       type: CRMScript.Global.Integer
       description: "The length, in bytes, of the binary data AS STORED after any encryption and/or zipping. Important to get right, since some databases will not tell us just based on the blob itself!"
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSBlobEntity thing;\nInteger blobSize;\nthing.SetBlobSize(blobSize);</code></pre>\n"
 - uid: CRMScript.NetServer.NSBlobEntity.SetConceptualType(String)
@@ -377,7 +377,7 @@ items:
       type: CRMScript.Global.String
       description: "The type, for instance PHOTO, PERSONPHOTO, or whatever, that is descriptive of what kind of image or data this is."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSBlobEntity thing;\nString conceptualType;\nthing.SetConceptualType(conceptualType);</code></pre>\n"
 - uid: CRMScript.NetServer.NSBlobEntity.SetCreatedBy(NSAssociate)
@@ -399,7 +399,7 @@ items:
       type: CRMScript.NetServer.NSAssociate
       description: "The person that first created the document. The property is read-only."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSBlobEntity thing;\nNSAssociate createdBy;\nthing.SetCreatedBy(createdBy);</code></pre>\n"
 - uid: CRMScript.NetServer.NSBlobEntity.SetCreatedDate(DateTime)
@@ -419,9 +419,9 @@ items:
     parameters:
     - id: createdDate
       type: CRMScript.Global.DateTime
-      description: Registered when."
+      description: "Registered when."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSBlobEntity thing;\nDateTime createdDate;\nthing.SetCreatedDate(createdDate);</code></pre>\n"
 - uid: CRMScript.NetServer.NSBlobEntity.SetDescription(String)
@@ -443,7 +443,7 @@ items:
       type: CRMScript.Global.String
       description: "A description that is entered by the user, and visible to the user."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSBlobEntity thing;\nString description;\nthing.SetDescription(description);</code></pre>\n"
 - uid: CRMScript.NetServer.NSBlobEntity.SetExtraInfo(String)
@@ -463,9 +463,9 @@ items:
     parameters:
     - id: extraInfo
       type: CRMScript.Global.String
-      description: Extra information, spare field, can be used for anything that makes sense. Should not refer to any particular context, that is something for the BinaryObjectLInk."
+      description: "Extra information, spare field, can be used for anything that makes sense. Should not refer to any particular context, that is something for the BinaryObjectLInk."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSBlobEntity thing;\nString extraInfo;\nthing.SetExtraInfo(extraInfo);</code></pre>\n"
 - uid: CRMScript.NetServer.NSBlobEntity.SetIsEncrypted(Bool)
@@ -487,7 +487,7 @@ items:
       type: CRMScript.Global.Bool
       description: Has the data been encrypted?
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSBlobEntity thing;\nBool isEncrypted;\nthing.SetIsEncrypted(isEncrypted);</code></pre>\n"
 - uid: CRMScript.NetServer.NSBlobEntity.SetIsZipped(Bool)
@@ -509,7 +509,7 @@ items:
       type: CRMScript.Global.Bool
       description: Has the data been zipped?
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSBlobEntity thing;\nBool isZipped;\nthing.SetIsZipped(isZipped);</code></pre>\n"
 - uid: CRMScript.NetServer.NSBlobEntity.SetMimeType(String)
@@ -529,9 +529,9 @@ items:
     parameters:
     - id: mimeType
       type: CRMScript.Global.String
-      description: Mime type, describing the technical type (image/jpeg) of the data."
+      description: "Mime type, describing the technical type (image/jpeg) of the data."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSBlobEntity thing;\nString mimeType;\nthing.SetMimeType(mimeType);</code></pre>\n"
 - uid: CRMScript.NetServer.NSBlobEntity.SetOriginalSize(Integer)
@@ -551,9 +551,9 @@ items:
     parameters:
     - id: originalSize
       type: CRMScript.Global.Integer
-      description: Original size of the binary data, before encryption and/or zipping. This is what the ultimate client will get."
+      description: "Original size of the binary data, before encryption and/or zipping. This is what the ultimate client will get."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSBlobEntity thing;\nInteger originalSize;\nthing.SetOriginalSize(originalSize);</code></pre>\n"
 - uid: CRMScript.NetServer.NSBlobEntity.SetUpdatedBy(NSAssociate)
@@ -575,7 +575,7 @@ items:
       type: CRMScript.NetServer.NSAssociate
       description: "The person that last updated the appointment."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSBlobEntity thing;\nNSAssociate updatedBy;\nthing.SetUpdatedBy(updatedBy);</code></pre>\n"
 - uid: CRMScript.NetServer.NSBlobEntity.SetUpdatedDate(DateTime)
@@ -595,9 +595,9 @@ items:
     parameters:
     - id: updatedDate
       type: CRMScript.Global.DateTime
-      description: Last updated when."
+      description: "Last updated when."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSBlobEntity thing;\nDateTime updatedDate;\nthing.SetUpdatedDate(updatedDate);</code></pre>\n"
 references:

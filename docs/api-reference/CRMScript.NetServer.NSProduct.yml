@@ -94,7 +94,7 @@ items:
   summary: "\nInitializes a new instance of the NSProduct class.\n"
   remarks: 
   syntax: 
-    content: NSProduct."
+    content: NSProduct
   example: 
 - uid: CRMScript.NetServer.NSProduct.GetCode()
   commentId: M:CRMScript.NetServer.NSProduct.GetCode()
@@ -173,7 +173,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description: Foreign key to the price list that this product is a part of, or the primary key of the price list if this is a built-in list."
+      description: "Foreign key to the price list that this product is a part of, or the primary key of the price list if this is a built-in list."
   example: 
   - "\n<pre><code>NSProduct thing;\nString eRPPriceListKey = thing.GetERPPriceListKey();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.GetERPProductKey()
@@ -193,7 +193,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description: Reference/foreign key to the product in the given price list in the product supplier system, if it exists there."
+      description: "Reference/foreign key to the product in the given price list in the product supplier system, if it exists there."
   example: 
   - "\n<pre><code>NSProduct thing;\nString eRPProductKey = thing.GetERPProductKey();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.GetExtraField1()
@@ -313,7 +313,7 @@ items:
     parameters: []
     return:
       type: CRMScript.NetServer.NSProductExtraDataField[]
-      description: Extra information, supplied by QuoteConnector, used by a future dynamic GUI extension."
+      description: "Extra information, supplied by QuoteConnector, used by a future dynamic GUI extension."
   example: 
   - "\n<pre><code>NSProduct thing;\nNSProductExtraDataField[] extraInfo = thing.GetExtraInfo();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.GetInAssortment()
@@ -333,7 +333,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.Bool
-      description: True for products that should currently be offered, false when the product is discontinued and should not ordinarily be offered. When false the product no longer appears in search results."
+      description: "True for products that should currently be offered, false when the product is discontinued and should not ordinarily be offered. When false the product no longer appears in search results."
   example: 
   - "\n<pre><code>NSProduct thing;\nBool inAssortment = thing.GetInAssortment();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.GetInStock()
@@ -353,7 +353,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.Float
-      description: Negative numbers will be interpreted as how many is ordered. Might not be available."
+      description: "Negative numbers will be interpreted as how many is ordered. Might not be available."
   example: 
   - "\n<pre><code>NSProduct thing;\nFloat inStock = thing.GetInStock();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.GetIsSubscription()
@@ -393,7 +393,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description: Line item number, NOR «Postnummer». Specific numbers from some hierarchy, for instance &quot;1.4.3.2P&quot;."
+      description: "Line item number, NOR «Postnummer». Specific numbers from some hierarchy, for instance &quot;1.4.3.2P&quot;."
   example: 
   - "\n<pre><code>NSProduct thing;\nString itemNumber = thing.GetItemNumber();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.GetName()
@@ -433,7 +433,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description: What is the unit (meter, ton, bushel, microsecond, gradus, τρυβλίον, 五合枡, دونم or whatever); read-only for lines that originate in defined products."
+      description: "What is the unit (meter, ton, bushel, microsecond, gradus, τρυβλίον, 五合枡, دونم or whatever); read-only for lines that originate in defined products."
   example: 
   - "\n<pre><code>NSProduct thing;\nString priceUnit = thing.GetPriceUnit();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.GetProductCategoryKey()
@@ -453,7 +453,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description: Either a ListId to an ID from a connector provided list, or, if the connection doesn't support lists, a text with the actual product category."
+      description: "Either a ListId to an ID from a connector provided list, or, if the connection doesn't support lists, a text with the actual product category."
   example: 
   - "\n<pre><code>NSProduct thing;\nString productCategoryKey = thing.GetProductCategoryKey();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.GetProductFamilyKey()
@@ -473,7 +473,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description: Either a ListId to an ID from a connector provided list, or, if the connection doesn't support lists, a text with the actual product family."
+      description: "Either a ListId to an ID from a connector provided list, or, if the connection doesn't support lists, a text with the actual product family."
   example: 
   - "\n<pre><code>NSProduct thing;\nString productFamilyKey = thing.GetProductFamilyKey();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.GetProductId()
@@ -493,7 +493,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.Integer
-      description: Primary key."
+      description: "Primary key."
   example: 
   - "\n<pre><code>NSProduct thing;\nInteger productId = thing.GetProductId();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.GetProductTypeKey()
@@ -533,7 +533,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description: What is the unit (meter, ton, bushel, microsecond, gradus, τρυβλίον, 五合枡, دونم or whatever); Connector handles conversion relative to PriceUnit if they are different."
+      description: "What is the unit (meter, ton, bushel, microsecond, gradus, τρυβλίον, 五合枡, دونم or whatever); Connector handles conversion relative to PriceUnit if they are different."
   example: 
   - "\n<pre><code>NSProduct thing;\nString quantityUnit = thing.GetQuantityUnit();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.GetRawExtraInfo()
@@ -553,7 +553,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description: Read-only extra information in plain text, supplied by QuoteConnector, used by a future dynamic GUI extension."
+      description: "Read-only extra information in plain text, supplied by QuoteConnector, used by a future dynamic GUI extension."
   example: 
   - "\n<pre><code>NSProduct thing;\nString rawExtraInfo = thing.GetRawExtraInfo();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.GetRights()
@@ -573,7 +573,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description: Field1=right&amp;Field2=right, etc. of any fields that have non-standard field access rights. Rights can be one of N (=None or Hidden), R (=Read-only), W (=Writeable), M (=Mandatory). The fields will mostly be from the Quoteline table, but some added fields that are conceptually part of the quoteline, like Image will also be possibly to set rights on."
+      description: "Field1=right&amp;Field2=right, etc. of any fields that have non-standard field access rights. Rights can be one of N (=None or Hidden), R (=Read-only), W (=Writeable), M (=Mandatory). The fields will mostly be from the Quoteline table, but some added fields that are conceptually part of the quoteline, like Image will also be possibly to set rights on."
   example: 
   - "\n<pre><code>NSProduct thing;\nString rights = thing.GetRights();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.GetRule()
@@ -613,7 +613,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description: Either a ListId to an ID from a connector provided list, or, if the connection doesn't support lists, a text with the actual subscription unit."
+      description: "Either a ListId to an ID from a connector provided list, or, if the connection doesn't support lists, a text with the actual subscription unit."
   example: 
   - "\n<pre><code>NSProduct thing;\nString subscriptionUnit = thing.GetSubscriptionUnit();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.GetSupplier()
@@ -633,7 +633,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description: In SuperOffice, an ID from the contact table, when saved as an ERP cache, the name of the supplier."
+      description: "In SuperOffice, an ID from the contact table, when saved as an ERP cache, the name of the supplier."
   example: 
   - "\n<pre><code>NSProduct thing;\nString supplier = thing.GetSupplier();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.GetSupplierCode()
@@ -653,7 +653,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description: Suppliers part code/number or other key-like field."
+      description: "Suppliers part code/number or other key-like field."
   example: 
   - "\n<pre><code>NSProduct thing;\nString supplierCode = thing.GetSupplierCode();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.GetUnitCost()
@@ -733,7 +733,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description: URL to product information web page."
+      description: "URL to product information web page."
   example: 
   - "\n<pre><code>NSProduct thing;\nString url = thing.GetUrl();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.GetVAT()
@@ -753,7 +753,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.Float
-      description: Tax/VAT if available from ERP system. THIS IS A PERCENTAGE."
+      description: "Tax/VAT if available from ERP system. THIS IS A PERCENTAGE."
   example: 
   - "\n<pre><code>NSProduct thing;\nFloat vAT = thing.GetVAT();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.GetVATInfo()
@@ -773,7 +773,7 @@ items:
     parameters: []
     return:
       type: CRMScript.Global.String
-      description: VATInfo you need to show in the final quoteDocument, like the VAT type that is used."
+      description: "VATInfo you need to show in the final quoteDocument, like the VAT type that is used."
   example: 
   - "\n<pre><code>NSProduct thing;\nString vATInfo = thing.GetVATInfo();</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.SetCode(String)
@@ -795,7 +795,7 @@ items:
       type: CRMScript.Global.String
       description: "The product code / article number in the product supplier system."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProduct thing;\nString code;\nthing.SetCode(code);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.SetDefaultSubscriptionQuantity(Float)
@@ -817,7 +817,7 @@ items:
       type: CRMScript.Global.Float
       description: "The default number of SubscriptionUnits to suggest when creating quote lines from this product."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProduct thing;\nFloat defaultSubscriptionQuantity;\nthing.SetDefaultSubscriptionQuantity(defaultSubscriptionQuantity);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.SetDescription(String)
@@ -839,7 +839,7 @@ items:
       type: CRMScript.Global.String
       description: "The description to use, with potentially several lines. Will be used as tool-tip to use in the list user interface too."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProduct thing;\nString description;\nthing.SetDescription(description);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.SetERPPriceListKey(String)
@@ -859,9 +859,9 @@ items:
     parameters:
     - id: eRPPriceListKey
       type: CRMScript.Global.String
-      description: Foreign key to the price list that this product is a part of, or the primary key of the price list if this is a built-in list."
+      description: "Foreign key to the price list that this product is a part of, or the primary key of the price list if this is a built-in list."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProduct thing;\nString eRPPriceListKey;\nthing.SetERPPriceListKey(eRPPriceListKey);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.SetERPProductKey(String)
@@ -881,9 +881,9 @@ items:
     parameters:
     - id: eRPProductKey
       type: CRMScript.Global.String
-      description: Reference/foreign key to the product in the given price list in the product supplier system, if it exists there."
+      description: "Reference/foreign key to the product in the given price list in the product supplier system, if it exists there."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProduct thing;\nString eRPProductKey;\nthing.SetERPProductKey(eRPProductKey);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.SetExtraField1(String)
@@ -905,7 +905,7 @@ items:
       type: CRMScript.Global.String
       description: "A simple field for adding information that the Connector can provide, and that the quote document need to display."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProduct thing;\nString extraField1;\nthing.SetExtraField1(extraField1);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.SetExtraField2(String)
@@ -927,7 +927,7 @@ items:
       type: CRMScript.Global.String
       description: "A simple field for adding information that the Connector can provide, and that the quote document need to display."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProduct thing;\nString extraField2;\nthing.SetExtraField2(extraField2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.SetExtraField3(String)
@@ -949,7 +949,7 @@ items:
       type: CRMScript.Global.String
       description: "A simple field for adding information that the Connector can provide, and that the quote document need to display."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProduct thing;\nString extraField3;\nthing.SetExtraField3(extraField3);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.SetExtraField4(String)
@@ -971,7 +971,7 @@ items:
       type: CRMScript.Global.String
       description: "A simple field for adding information that the Connector can provide, and that the quote document need to display."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProduct thing;\nString extraField4;\nthing.SetExtraField4(extraField4);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.SetExtraField5(String)
@@ -993,7 +993,7 @@ items:
       type: CRMScript.Global.String
       description: "A simple field for adding information that the Connector can provide, and that the quote document need to display."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProduct thing;\nString extraField5;\nthing.SetExtraField5(extraField5);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.SetExtraInfo(NSProductExtraDataField[])
@@ -1013,9 +1013,9 @@ items:
     parameters:
     - id: extraInfo
       type: CRMScript.NetServer.NSProductExtraDataField[]
-      description: Extra information, supplied by QuoteConnector, used by a future dynamic GUI extension."
+      description: "Extra information, supplied by QuoteConnector, used by a future dynamic GUI extension."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProduct thing;\nNSProductExtraDataField[] extraInfo;\nthing.SetExtraInfo(extraInfo);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.SetInAssortment(Bool)
@@ -1035,9 +1035,9 @@ items:
     parameters:
     - id: inAssortment
       type: CRMScript.Global.Bool
-      description: True for products that should currently be offered, false when the product is discontinued and should not ordinarily be offered. When false the product no longer appears in search results."
+      description: "True for products that should currently be offered, false when the product is discontinued and should not ordinarily be offered. When false the product no longer appears in search results."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProduct thing;\nBool inAssortment;\nthing.SetInAssortment(inAssortment);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.SetInStock(Float)
@@ -1057,9 +1057,9 @@ items:
     parameters:
     - id: inStock
       type: CRMScript.Global.Float
-      description: Negative numbers will be interpreted as how many is ordered. Might not be available."
+      description: "Negative numbers will be interpreted as how many is ordered. Might not be available."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProduct thing;\nFloat inStock;\nthing.SetInStock(inStock);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.SetIsSubscription(Bool)
@@ -1081,7 +1081,7 @@ items:
       type: CRMScript.Global.Bool
       description: Is this a subscription product, sold in repeating intervals/amounts?
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProduct thing;\nBool isSubscription;\nthing.SetIsSubscription(isSubscription);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.SetItemNumber(String)
@@ -1101,9 +1101,9 @@ items:
     parameters:
     - id: itemNumber
       type: CRMScript.Global.String
-      description: Line item number, NOR «Postnummer». Specific numbers from some hierarchy, for instance &quot;1.4.3.2P&quot;."
+      description: "Line item number, NOR «Postnummer». Specific numbers from some hierarchy, for instance &quot;1.4.3.2P&quot;."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProduct thing;\nString itemNumber;\nthing.SetItemNumber(itemNumber);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.SetName(String)
@@ -1125,7 +1125,7 @@ items:
       type: CRMScript.Global.String
       description: "The name to use in the user interface."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProduct thing;\nString name;\nthing.SetName(name);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.SetPriceUnit(String)
@@ -1145,9 +1145,9 @@ items:
     parameters:
     - id: priceUnit
       type: CRMScript.Global.String
-      description: What is the unit (meter, ton, bushel, microsecond, gradus, τρυβλίον, 五合枡, دونم or whatever); read-only for lines that originate in defined products."
+      description: "What is the unit (meter, ton, bushel, microsecond, gradus, τρυβλίον, 五合枡, دونم or whatever); read-only for lines that originate in defined products."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProduct thing;\nString priceUnit;\nthing.SetPriceUnit(priceUnit);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.SetProductCategoryKey(String)
@@ -1167,9 +1167,9 @@ items:
     parameters:
     - id: productCategoryKey
       type: CRMScript.Global.String
-      description: Either a ListId to an ID from a connector provided list, or, if the connection doesn't support lists, a text with the actual product category."
+      description: "Either a ListId to an ID from a connector provided list, or, if the connection doesn't support lists, a text with the actual product category."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProduct thing;\nString productCategoryKey;\nthing.SetProductCategoryKey(productCategoryKey);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.SetProductFamilyKey(String)
@@ -1189,9 +1189,9 @@ items:
     parameters:
     - id: productFamilyKey
       type: CRMScript.Global.String
-      description: Either a ListId to an ID from a connector provided list, or, if the connection doesn't support lists, a text with the actual product family."
+      description: "Either a ListId to an ID from a connector provided list, or, if the connection doesn't support lists, a text with the actual product family."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProduct thing;\nString productFamilyKey;\nthing.SetProductFamilyKey(productFamilyKey);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.SetProductId(Integer)
@@ -1211,9 +1211,9 @@ items:
     parameters:
     - id: productId
       type: CRMScript.Global.Integer
-      description: Primary key."
+      description: "Primary key."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProduct thing;\nInteger productId;\nthing.SetProductId(productId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.SetProductTypeKey(String)
@@ -1233,9 +1233,9 @@ items:
     parameters:
     - id: productTypeKey
       type: CRMScript.Global.String
-      description: Either a ListId to an ID from a connector provided list, or, if the connection doesn't support lists, a text with the actual product type."
+      description: "Either a ListId to an ID from a connector provided list, or, if the connection doesn't support lists, a text with the actual product type."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProduct thing;\nString productTypeKey;\nthing.SetProductTypeKey(productTypeKey);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.SetQuantityUnit(String)
@@ -1255,9 +1255,9 @@ items:
     parameters:
     - id: quantityUnit
       type: CRMScript.Global.String
-      description: What is the unit (meter, ton, bushel, microsecond, gradus, τρυβλίον, 五合枡, دونم or whatever); Connector handles conversion relative to PriceUnit if they are different."
+      description: "What is the unit (meter, ton, bushel, microsecond, gradus, τρυβλίον, 五合枡, دونم or whatever); Connector handles conversion relative to PriceUnit if they are different."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProduct thing;\nString quantityUnit;\nthing.SetQuantityUnit(quantityUnit);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.SetRawExtraInfo(String)
@@ -1277,9 +1277,9 @@ items:
     parameters:
     - id: rawExtraInfo
       type: CRMScript.Global.String
-      description: Read-only extra information in plain text, supplied by QuoteConnector, used by a future dynamic GUI extension."
+      description: "Read-only extra information in plain text, supplied by QuoteConnector, used by a future dynamic GUI extension."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProduct thing;\nString rawExtraInfo;\nthing.SetRawExtraInfo(rawExtraInfo);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.SetRights(String)
@@ -1299,9 +1299,9 @@ items:
     parameters:
     - id: rights
       type: CRMScript.Global.String
-      description: Field1=right&amp;Field2=right, etc. of any fields that have non-standard field access rights. Rights can be one of N (=None or Hidden), R (=Read-only), W (=Writeable), M (=Mandatory). The fields will mostly be from the Quoteline table, but some added fields that are conceptually part of the quoteline, like Image will also be possibly to set rights on."
+      description: "Field1=right&amp;Field2=right, etc. of any fields that have non-standard field access rights. Rights can be one of N (=None or Hidden), R (=Read-only), W (=Writeable), M (=Mandatory). The fields will mostly be from the Quoteline table, but some added fields that are conceptually part of the quoteline, like Image will also be possibly to set rights on."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProduct thing;\nString rights;\nthing.SetRights(rights);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.SetRule(String)
@@ -1323,7 +1323,7 @@ items:
       type: CRMScript.Global.String
       description: "The names of one or more calculation rules that are in effect for this line, comma-separated case-insensitive."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProduct thing;\nString rule;\nthing.SetRule(rule);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.SetSubscriptionUnit(String)
@@ -1343,9 +1343,9 @@ items:
     parameters:
     - id: subscriptionUnit
       type: CRMScript.Global.String
-      description: Either a ListId to an ID from a connector provided list, or, if the connection doesn't support lists, a text with the actual subscription unit."
+      description: "Either a ListId to an ID from a connector provided list, or, if the connection doesn't support lists, a text with the actual subscription unit."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProduct thing;\nString subscriptionUnit;\nthing.SetSubscriptionUnit(subscriptionUnit);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.SetSupplier(String)
@@ -1365,9 +1365,9 @@ items:
     parameters:
     - id: supplier
       type: CRMScript.Global.String
-      description: In SuperOffice, an ID from the contact table, when saved as an ERP cache, the name of the supplier."
+      description: "In SuperOffice, an ID from the contact table, when saved as an ERP cache, the name of the supplier."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProduct thing;\nString supplier;\nthing.SetSupplier(supplier);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.SetSupplierCode(String)
@@ -1387,9 +1387,9 @@ items:
     parameters:
     - id: supplierCode
       type: CRMScript.Global.String
-      description: Suppliers part code/number or other key-like field."
+      description: "Suppliers part code/number or other key-like field."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProduct thing;\nString supplierCode;\nthing.SetSupplierCode(supplierCode);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.SetUnitCost(Float)
@@ -1411,7 +1411,7 @@ items:
       type: CRMScript.Global.Float
       description: "The cost price. Might not be given, use Decimal.MinValue to signal this."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProduct thing;\nFloat unitCost;\nthing.SetUnitCost(unitCost);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.SetUnitListPrice(Float)
@@ -1433,7 +1433,7 @@ items:
       type: CRMScript.Global.Float
       description: "The basic/normal/standard price from which the discount is computed from."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProduct thing;\nFloat unitListPrice;\nthing.SetUnitListPrice(unitListPrice);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.SetUnitMinimumPrice(Float)
@@ -1455,7 +1455,7 @@ items:
       type: CRMScript.Global.Float
       description: "The minimum price this salesman can offer to his customer. This might be cost price if there is no policy. Might not be given, use Decimal.MinValue to signal this."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProduct thing;\nFloat unitMinimumPrice;\nthing.SetUnitMinimumPrice(unitMinimumPrice);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.SetUrl(String)
@@ -1475,9 +1475,9 @@ items:
     parameters:
     - id: url
       type: CRMScript.Global.String
-      description: URL to product information web page."
+      description: "URL to product information web page."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProduct thing;\nString url;\nthing.SetUrl(url);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.SetVAT(Float)
@@ -1497,9 +1497,9 @@ items:
     parameters:
     - id: vAT
       type: CRMScript.Global.Float
-      description: Tax/VAT if available from ERP system. THIS IS A PERCENTAGE."
+      description: "Tax/VAT if available from ERP system. THIS IS A PERCENTAGE."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProduct thing;\nFloat vAT;\nthing.SetVAT(vAT);</code></pre>\n"
 - uid: CRMScript.NetServer.NSProduct.SetVATInfo(String)
@@ -1519,9 +1519,9 @@ items:
     parameters:
     - id: vATInfo
       type: CRMScript.Global.String
-      description: VATInfo you need to show in the final quoteDocument, like the VAT type that is used."
+      description: "VATInfo you need to show in the final quoteDocument, like the VAT type that is used."
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSProduct thing;\nString vATInfo;\nthing.SetVATInfo(vATInfo);</code></pre>\n"
 references:

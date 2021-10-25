@@ -110,7 +110,7 @@ items:
   summary: "\nCollection of all services that work with Document data. This is services for the document information, not the physical document themselves. These are handled by the BLOB service methods.\n"
   remarks: 
   syntax: 
-    content: NSDocumentAgent."
+    content: NSDocumentAgent
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.CheckinDocument(Integer,String[],String,String[])
@@ -505,7 +505,7 @@ items:
       type: CRMScript.Global.Integer
       description: 
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nagent.DeleteDocumentEntity(123);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.DeletePhysicalDocument(Integer,String[])
@@ -530,7 +530,7 @@ items:
       type: CRMScript.Global.String[]
       description: 
     return:
-      type: CRMScript.NetServer.NSReturnInfo."
+      type: CRMScript.NetServer.NSReturnInfo
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger documentId;\nString[] allowedReturnType;\nNSReturnInfo res = agent.DeletePhysicalDocument(documentId, allowedReturnType);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.DeleteTempFile(String)
@@ -552,7 +552,7 @@ items:
       type: CRMScript.Global.String
       description: 
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
 - uid: CRMScript.NetServer.NSDocumentAgent.ExecuteDocumentCommand(Integer,String,String[],String,String[])
   commentId: M:CRMScript.NetServer.NSDocumentAgent.ExecuteDocumentCommand(Integer,String,String[],String,String[])
@@ -585,7 +585,7 @@ items:
       type: CRMScript.Global.String[]
       description: 
     return:
-      type: CRMScript.NetServer.NSReturnInfo."
+      type: CRMScript.NetServer.NSReturnInfo
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger documentId;\nString versionId;\nString[] allowedReturnTypes;\nString command;\nString[] additionalData;\nNSReturnInfo res = agent.ExecuteDocumentCommand(documentId, versionId, allowedReturnTypes, command, additionalData);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetAppointmentDocuments(Integer)
@@ -1443,7 +1443,7 @@ items:
       type: CRMScript.Global.Integer
       description: 
     return:
-      type: CRMScript.NetServer.NSDocument."
+      type: CRMScript.NetServer.NSDocument
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger documentId;\nNSDocument res = agent.GetPublishedDocument(documentId);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.GetPublishedDocuments(Integer[])
@@ -2004,7 +2004,7 @@ items:
       type: CRMScript.NetServer.NSStream
       description:
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nString filename;\nBool personal;\nNSStream stream;\nagent.SetTemplateStream(filename, personal, stream);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.SubstituteMergeDocumentTemplateVariables(Integer,Integer,String[],String[])
@@ -2033,9 +2033,9 @@ items:
       description: 
     - id: customValues
       type: CRMScript.Global.String[]
-      description: Custom values will override values otherwise set."
+      description: "Custom values will override values otherwise set."
     return:
-      type: CRMScript.NetServer.NSStream."
+      type: CRMScript.NetServer.NSStream
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger documentId;\nInteger associateId;\nString[] customTags;\nString[] customValues;\nNSStream res = agent.SubstituteMergeDocumentTemplateVariables(documentId, associateId, customTags, customValues);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.SubstituteMergeDocumentTemplateVariables2(Integer,Integer,Map)
@@ -2063,7 +2063,7 @@ items:
       type: CRMScript.Native.Map
       description: "These tags will be available during substitution in addition to all the existing tags. Custom values will override values otherwise set."
     return:
-      type: CRMScript.NetServer.NSStream."
+      type: CRMScript.NetServer.NSStream
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger documentId;\nInteger associateId;\nMap customTags;\nNSStream res = agent.SubstituteMergeDocumentTemplateVariables2(documentId, associateId, customTags);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.SubstituteMergeDocumentTemplateVariablesEx(Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,String[],String[])
@@ -2110,7 +2110,7 @@ items:
       description: 
     - id: customValues
       type: CRMScript.Global.String[]
-      description: Custom values will override values otherwise set."
+      description: "Custom values will override values otherwise set."
     return:
       type: CRMScript.NetServer.NSStream
       description:
@@ -2159,7 +2159,7 @@ items:
       type: CRMScript.Native.Map
       description: "These tags will be available during substitution in addition to all the existing tags. Custom values will override values otherwise set."
     return:
-      type: CRMScript.NetServer.NSStream."
+      type: CRMScript.NetServer.NSStream
   example: 
   - "\n<pre><code>NSDocumentAgent agent;\nInteger mergeDocumentId;\nInteger contactId;\nInteger personId;\nInteger projectId;\nInteger selectionId;\nInteger appointmentId;\nInteger documentId;\nInteger saleId;\nMap customTags;\nNSStream res = agent.SubstituteMergeDocumentTemplateVariablesEx2(mergeDocumentId, contactId, personId, projectId, selectionId, appointmentId, documentId, saleId, customTags);</code></pre>\n"
 - uid: CRMScript.NetServer.NSDocumentAgent.SubstituteTemplateVariables(String,Integer,Integer,Integer,Integer,Integer,Integer,Integer,Integer,String)
@@ -2409,7 +2409,7 @@ items:
       type: CRMScript.Global.Integer
       description: 
     return:
-      type: CRMScript.Global.Void."
+      type: CRMScript.Global.Void
   example: 
 references:
 - uid: CRMScript.NetServer.NSDocumentAgent

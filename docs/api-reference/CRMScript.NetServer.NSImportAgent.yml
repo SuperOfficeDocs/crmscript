@@ -31,7 +31,7 @@ items:
   summary: "\nThis agent can be used to import data into the system.\n"
   remarks: 
   syntax: 
-    content: NSImportAgent."
+    content: NSImportAgent
   example: 
   - "\n<pre><code>NSImportAgent agent;\nagent.callMethod(arg1, arg2);</code></pre>\n"
 - uid: CRMScript.NetServer.NSImportAgent.CreateDefaultImportLine(Integer)
@@ -53,7 +53,7 @@ items:
       type: CRMScript.Global.Integer
       description: 
     return:
-      type: CRMScript.NetServer.NSImportLine."
+      type: CRMScript.NetServer.NSImportLine
   example: 
   - "\n<pre><code>NSImportAgent agent;\nInteger countColumns;\nNSImportLine res = agent.CreateDefaultImportLine(countColumns);</code></pre>\n"
 - uid: CRMScript.NetServer.NSImportAgent.CreateErpImportData(NSArchiveRestrictionInfo[],String[],Integer,Integer)
@@ -79,12 +79,12 @@ items:
       description: 
     - id: connectionId
       type: CRMScript.Global.Integer
-      description: Connection ID for ERP system"
+      description: "Connection ID for ERP system"
     - id: erpActorType
       type: CRMScript.Global.Integer
-      description: ERP actor type. See <xref href=\"CRMScript.NetServer.ErpActorType\" data-throw-if-not-resolved=\"false\"></xref>."
+      description: "ERP actor type. See <xref href=\"CRMScript.NetServer.ErpActorType\" data-throw-if-not-resolved=\"false\"></xref>."
     return:
-      type: CRMScript.NetServer.NSImportErpData."
+      type: CRMScript.NetServer.NSImportErpData
   example: 
   - "\n<pre><code>NSImportAgent agent;\nNSArchiveRestrictionInfo[] restriction;\nString[] columns;\nInteger connectionId;\nInteger erpActorType;\nNSImportErpData res = agent.CreateErpImportData(restriction, columns, connectionId, erpActorType);</code></pre>\n"
 - uid: CRMScript.NetServer.NSImportAgent.PreviewImport(NSImportLine[],String[],String,String)

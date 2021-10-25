@@ -10,7 +10,8 @@ items:
     - CRMScript.Global.String.#ctor(String)
     - CRMScript.Global.String.#ctor(Byte[])
     - CRMScript.Global.String.#ctor(Byte[], String)
-# todo: return to add more constructors from string-type.md after introducing NSStream
+    - CRMScript.Global.String.#ctor(NSStream)
+    - CRMScript.Global.String.#ctor(NSStream, String)
     - CRMScript.Global.String.getLength()
     - CRMScript.Global.String.toLower()
     - CRMScript.Global.String.toUpper()
@@ -142,7 +143,7 @@ items:
   syntax:
     content: String String(Byte[] byteArray)
     parameters:
-    - id: byteArray)
+    - id: byteArray
       type: CRMScript.Global.Byte[]
       description: "The bytes to copy into the new object."
     return:
@@ -166,6 +167,55 @@ items:
     parameters:
     - id: byteArray
       type: CRMScript.Global.Byte[]
+      description: "The bytes to copy into the new object."
+    - id: codePage
+      type: CRMScript.Global.String
+      description: "Code page identifier."
+    return:
+      type: CRMScript.Global.String
+      description: "A new String object."
+- uid: CRMScript.Global.String.#ctor(NSStream)
+  commentId: M:CRMScript.Global.String.#ctor(NSStream)
+  id: '#ctor(NSStream)'
+  so.intellisense: Void.String
+  langs:
+  - crmscript
+  parent: CRMScript.Global.String
+  name: String(NSStream)
+  nameWithType: String.String(NSStream)
+  fullName: CRMScript.Global.String.String(NSStream)
+  type: Constructor
+  summary: "\nPass a byte array to build a new object.\n"
+  remarks: "\nThis constructor doesn't support Unicode.\n"
+  example:
+  - "\n<pre><code>String hot = &quot;Ghost&quot;;\nNSStream stream = decodeBase64AsStream(encodeBase64(hot.toByteArray()));\nString hotPepper = String(stream);\nprintLine(&quot;Insanely hot chili pepper: &quot; + hotPepper);</code></pre>\n"
+  syntax:
+    content: String String(NSStream stream)
+    parameters:
+    - id: stream
+      type: CRMScript.NetServer.NSStream
+      description: "The bytes to copy into the new object."
+    return:
+      type: CRMScript.Global.String
+      description: "A new String object."
+- uid: CRMScript.Global.String.#ctor(NSStream, String)
+  commentId: M:CRMScript.Global.String.#ctor(NSStream, String)
+  id: '#ctor(NSStream, String)'
+  so.intellisense: Void.String
+  langs:
+  - crmscript
+  parent: CRMScript.Global.String
+  name: String(NSStream, String)
+  nameWithType: String.String(NSStream, String)
+  fullName: CRMScript.Global.String.String(NSStream, String)
+  type: Constructor
+  summary: "\nSame as String(NSStream), but also takes a code page identifier.\n"
+  remarks: "\nThis constructor doesn't support Unicode.\n"
+  syntax:
+    content: String String(Byte[] stream, String codePage)
+    parameters:
+    - id: stream
+      type: CRMScript.NetServer.NSStream
       description: "The bytes to copy into the new object."
     - id: codePage
       type: CRMScript.Global.String
@@ -1606,3 +1656,9 @@ references:
   name: Void
   nameWithType: Void
   fullName: CRMScript.Global.Void
+- uid: CRMScript.NetServer.NSStream
+  commentId: T:CRMScript.NetServer.NSStream
+  isExternal: true
+  name: NSStream
+  nameWithType: NSStream
+  fullName: CRMScript.NetServer.NSStream

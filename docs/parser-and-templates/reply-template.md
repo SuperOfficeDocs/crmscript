@@ -57,7 +57,7 @@ You can [look up specific fields][1] in the database reference.
 
 ### Translation
 
-If customer languages are configured, it is possible to create language-specific versions of each reply template. More information about this can be found in embedded help under [working with customer languages][5].
+If customer languages are configured it is possible to create language versions of each reply template. More information about this can be found in embedded help under [working with customer languages][5]
 
 ## Template variables
 

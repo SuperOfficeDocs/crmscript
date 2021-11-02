@@ -218,6 +218,6 @@ See the [full list of encodings][5].
 <!-- Referenced links -->
 [1]: ../parser-and-templates/reply-template.md
 [2]: ../../../database/docs/tables/heading.md
-[3]: https://community.superoffice.com/documentation/help/en/crm/8.5/userhelp/index.htm#t=StandardCRM%2Fchap02%2FTemplate_variables.htm
+[3]: ../../../superoffice-docs/docs/document/templates/index.md
 [4]: ../../../database/docs/tables/doctmpl.md
-[5]: https://community.superoffice.com/documentation/sdk/SO.NetServer.Web.Services/html/T_SuperOffice_Data_GeneratorEncoding.htm
+[5]: ../../../data-access/docs/api-reference/netserver/core/SuperOffice.Data.GeneratorEncoding.yml

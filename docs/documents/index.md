@@ -56,7 +56,7 @@ When working with documents, data will often intersect with the following entiti
 [3]: ../follow-ups/task.md
 [4]: ../follow-ups/call.md
 [5]: ../../../database/docs/tables/appointment.md
-[6]: https://community.superoffice.com/documentation/SDK/SO.Customer.Service.Support/html/CRMScript-Classes-NSAppointment-NSAppointment.htm
+[6]: ../api-reference/CRMScript.CRMScript.NetServer.NSAppointment.yml
 [7]: ../persons-and-organizations/company.md
 [8]: ../persons-and-organizations/customer.md
 [9]: ../follow-ups/index.md

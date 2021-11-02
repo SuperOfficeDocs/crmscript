@@ -277,7 +277,7 @@ For a complete list of fields, see the [database reference][4].
 | timeCharge | time_charge | Minutes to be invoiced for this message |
 
 <!-- Referenced links -->
-[1]: https://community.superoffice.com/documentation/SDK/SO.Customer.Service.Support/html/CRMScript-Classes-Message-setValue.htm
+[1]: <xref:CRMScript.Native.Message.setValue(String,String)>
 [2]: ../parser-and-templates/parser.md
 [3]: ../parser-and-templates/reply-template.md
 [4]: ../../../database/docs/tables/ej-message.md

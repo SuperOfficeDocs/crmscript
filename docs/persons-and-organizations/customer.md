@@ -267,6 +267,6 @@ viewPersonInterests(5);
 For a complete list of fields, see the [database reference][3].
 
 <!-- Referenced links -->
-[1]: https://community.superoffice.com/documentation/SDK/SO.Customer.Service.Support/html/CRMScript-Classes-Customer-setValue.htm
+[1]: <xref:CRMScript.Native.Customer.setValue(String,String)>
 [2]: ../parser-and-templates/reply-template.md
 [3]: ../../../database/docs/tables/person.md

@@ -237,7 +237,7 @@ For a complete list of fields, see the [database reference][5].
 > To request more than 1 action type, summarize the values. **63** means **include all**.
 
 <!-- Referenced links -->
-[1]: https://community.superoffice.com/documentation/SDK/SO.Customer.Service.Support/html/EJScript-Classes-Company-setValue.htm
+[1]: <xref:CRMScript.Native.Company.setValue(String,String)>
 [2]: ../parser-and-templates/reply-template.md
 [3]: addresses.md
 [4]: ../netserver/ns-agents-and-carriers.md

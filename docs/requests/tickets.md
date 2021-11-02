@@ -489,9 +489,9 @@ For a complete list of fields, see the [database reference][6].
 | 5      | Merged/Linked         |
 
 <!-- Referenced links -->
-[1]: https://community.superoffice.com/documentation/SDK/SO.Customer.Service.Support/html/CRMScript-Classes-Ticket-setValue.htm
-[2]: https://community.superoffice.com/documentation/SDK/SO.Customer.Service.Support/html/CRMScript-Classes-Vector-Vector.htm
-[3]: https://community.superoffice.com/documentation/SDK/SO.Customer.Service.Support/html/CRMScript-Classes-Ticket-getValue.htm
+[1]: <xref:CRMScript.Native.Ticket.setValue(String,String)>
+[2]: ../api-reference/CRMScript.Native.Vector.yml
+[3]: <xref:CRMScript.Native.Ticket.getValue(String)>
 [4]: ../parser-and-templates/reply-template.md
 [5]: ../parser-and-templates/parser.md
 [6]: ../../../database/docs/tables/ticket.md

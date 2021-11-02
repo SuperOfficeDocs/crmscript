@@ -222,4 +222,4 @@ For a complete list of fields, see the [database reference][8].
 [5]: quote-document.md
 [6]: quote-order.md
 [7]: ../../../database/docs/tables/quote.md
-[8]: ../../../database/docs/tables/quoteVersion.md
+[8]: ../../../database/docs/tables/quoteversion.md
